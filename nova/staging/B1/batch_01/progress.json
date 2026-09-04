@@ -2,8 +2,14 @@
   "course": "de-fa",
   "level": "B1",
   "batch": 1,
-  "chapter_range": [1, 8],
-  "series_range": [81, 88],
+  "chapter_range": [
+    1,
+    8
+  ],
+  "series_range": [
+    81,
+    88
+  ],
   "published": false,
   "production_state_advanced": false,
   "passed_chapters": [],
@@ -20,5 +26,10 @@
   "next_pending_series": 81,
   "cross_chapter_qa": "not_started",
   "batch_artifact": "nova/content/B1/batch_01_chapters_01_08.sql",
-  "batch_publish_condition": "all chapters 1-8 PASS and cross-chapter QA PASS"
+  "batch_publish_condition": "all chapters 1-8 PASS and cross-chapter QA PASS",
+  "status": "retry_authorized",
+  "canonical_database_revision": "v9.1.1",
+  "retry_from_scratch": true,
+  "retry_authorized_at": "2026-09-04T17:15:54.269Z",
+  "canonical_chapter_title": "Ich muss mich entscheiden"
 }

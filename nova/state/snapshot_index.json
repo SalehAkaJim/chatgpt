@@ -17,7 +17,7 @@
     "characters": 24,
     "storylines": 51
   },
-  "content_freeze": true,
+  "content_freeze": false,
   "next_level": "B1",
   "next_series": 81,
   "database_files": [
@@ -68,5 +68,7 @@
   },
   "database_revision": "v9.1.1",
   "database_audit": "../database/AUDIT_v9.md",
-  "restore_status": "ready_for_live_mysql_restore_test"
+  "restore_status": "ready_for_live_mysql_restore_test",
+  "production_status": "generating",
+  "resumed_at": "2026-09-04T17:15:54.269Z"
 }

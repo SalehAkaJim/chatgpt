@@ -8,7 +8,7 @@ and database artifacts.
 - A1 complete
 - A2 complete through Series 080
 - B1 starts at Series 081
-- Content generation is intentionally frozen while runtime/UI implementation is finalized
+- B1 content generation is active from Series 081 with one atomic chapter scheduled per hourly run
 - Database contract: v9 / implementation revision v9.1.1
 
 ## Reliability model
@@ -18,8 +18,9 @@ artifacts are batched into 5 files of 8 chapters each. A batch is committed only
 after all chapter-level and batch-level QA pass. `production_state.json` advances
 only after a successful batch commit.
 
-The freeze is machine-readable in both `production_state.json` and
-`pipeline_config.json`. B1 must not be generated until an explicit unfreeze.
+The explicit production resume is machine-readable in both `production_state.json` and
+`pipeline_config.json`. Every run must re-read GitHub, generate at most one atomic
+chapter, and keep published state unchanged until all eight chapters and batch QA pass.
 
 ## Database
 

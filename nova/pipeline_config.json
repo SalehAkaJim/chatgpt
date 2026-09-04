@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "course": "de-fa",
   "source_of_truth": "github",
   "database_revision": "v9.1.1",
@@ -11,10 +11,13 @@
     "scan_status": "passed"
   },
   "content_generation": {
-    "enabled": false,
-    "freeze_after_series": 80,
-    "reason": "database_runtime_and_ui_implementation",
-    "resume_requires_explicit_unfreeze": true
+    "enabled": true,
+    "resumed_after_series": 80,
+    "start_level": "B1",
+    "start_series": 81,
+    "reason": "explicit_content_production_resume_authorized",
+    "resume_requires_explicit_unfreeze": false,
+    "resumed_at": "2026-09-04T17:15:54.269Z"
   },
   "content_unit": {
     "atomic_generation_unit": "chapter",
@@ -65,5 +68,12 @@
   "recommendation": {
     "safe_default": "8 chapters per published artifact, generated and validated chapter-by-chapter",
     "do_not_do": "generate all 8 chapters as one unchecked monolithic content block"
+  },
+  "automation": {
+    "cadence": "hourly",
+    "max_atomic_chapters_per_run": 1,
+    "single_active_run": true,
+    "reread_github_state_before_each_run": true,
+    "retry_failed_chapter_without_advancing": true
   }
 }
