@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 2,
   "course": "de-fa",
   "source_of_truth": "github",
   "content_generation": {
-    "enabled": false,
+    "enabled": true,
     "freeze_after_series": 80,
-    "reason": "database_runtime_and_ui_implementation",
+    "reason": "explicit production resume authorized",
     "resume_requires_explicit_unfreeze": true
   },
   "content_unit": {
@@ -24,6 +24,11 @@
       "batch_04_chapters_25_32.sql",
       "batch_05_chapters_33_40.sql"
     ]
+  },
+  "staging": {
+    "progress_manifest_pattern": "nova/staging/{level}/batch_{batch_2d}/progress.json",
+    "chapter_directory_pattern": "nova/staging/{level}/batch_{batch_2d}/chapter_{chapter_2d}_series_{series_3d}",
+    "published_state_must_not_advance_before_batch_pass": true
   },
   "transaction_policy": {
     "chapter_is_atomic": true,
