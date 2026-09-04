@@ -6,13 +6,21 @@
   "last_completed_series": 80,
   "next_level": "B1",
   "next_series": 81,
-  "content_status": "frozen_for_implementation",
+  "content_status": "generating",
   "generation_mode": "atomic_chapter_generation_with_batched_artifacts",
   "batching": {
     "chapters_per_artifact": 8,
     "artifacts_per_level": 5,
     "atomic_unit": "chapter",
     "advance_state_only_after_full_batch_qa_pass": true
+  },
+  "current_work": {
+    "level": "B1",
+    "batch": 1,
+    "batch_chapter_range": [1, 8],
+    "pending_chapter": 1,
+    "pending_series": 81,
+    "status": "queued_for_generation"
   },
   "canonical_corrections": {
     "series_004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",
