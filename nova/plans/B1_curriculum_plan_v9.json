@@ -1,0 +1,146 @@
+{
+  "schema": "Nova v9.0",
+  "level": "B1",
+  "title": "Selbstständiger im Alltag",
+  "title_translation": "مستقل تر در زندگی روزمره",
+  "difficulty": [41, 60],
+  "status": "active",
+  "series_range": [81, 120],
+  "production_model": {
+    "chapters": 40,
+    "modules": 8,
+    "chapters_per_module": 5,
+    "chapters_per_batch_artifact": 8,
+    "batch_artifacts": 5,
+    "atomic_generation_unit": "chapter"
+  },
+  "modules": [
+    {
+      "order": 1,
+      "title": "Entscheidungen & Gründe",
+      "translation": "تصمیم ها و دلیل ها",
+      "difficulty": [41, 43],
+      "story_focus": "Mia discusses an important everyday decision with Sara and moves from uncertainty to a clear choice.",
+      "grammar_focus": ["reflexive sich entscheiden in context", "reasons with weil", "uncertainty and decision language"],
+      "chapters": [
+        {"global_order": 1, "series": 81, "title": "Ich muss mich entscheiden", "translation": "باید تصمیم بگیرم", "status": "pending"},
+        {"global_order": 2, "series": 82, "title": "Warum willst du das machen?", "translation": "چرا می خوای این کار رو انجام بدی؟", "status": "planned"},
+        {"global_order": 3, "series": 83, "title": "Weil ich etwas ändern möchte", "translation": "چون می خوام یه چیزی رو تغییر بدم", "status": "planned"},
+        {"global_order": 4, "series": 84, "title": "Ich bin mir noch nicht sicher", "translation": "هنوز مطمئن نیستم", "status": "planned"},
+        {"global_order": 5, "series": 85, "title": "Ich habe mich entschieden", "translation": "تصمیمم رو گرفتم", "status": "planned"}
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Arbeit & Zusammenarbeit",
+      "translation": "کار و همکاری",
+      "difficulty": [44, 46],
+      "story_focus": "Anna and Martin handle a work task that needs explanation, more time, cooperation, and a final solution.",
+      "grammar_focus": ["embedded questions", "dass clauses", "wenn clauses in practical work language"],
+      "chapters": [
+        {"global_order": 6, "series": 86, "title": "Wir müssen das heute fertig machen", "translation": "باید امروز تمومش کنیم", "status": "planned"},
+        {"global_order": 7, "series": 87, "title": "Kannst du mir erklären, wie das geht?", "translation": "می تونی توضیح بدی چطور انجام می شه؟", "status": "planned"},
+        {"global_order": 8, "series": 88, "title": "Ich glaube, dass wir mehr Zeit brauchen", "translation": "فکر می کنم وقت بیشتری لازم داریم", "status": "planned"},
+        {"global_order": 9, "series": 89, "title": "Wenn du willst, helfe ich dir", "translation": "اگه بخوای کمکت می کنم", "status": "planned"},
+        {"global_order": 10, "series": 90, "title": "Wir haben das Problem gelöst", "translation": "مشکل رو حل کردیم", "status": "planned"}
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Wohnen & Nachbarschaft",
+      "translation": "خانه و همسایه ها",
+      "difficulty": [47, 49],
+      "story_focus": "Anna and Jonas deal with a noisy neighbor and a repair in their building, using increasingly independent polite language.",
+      "grammar_focus": ["relative clauses", "seit clauses", "polite Konjunktiv II", "present passive in context"],
+      "chapters": [
+        {"global_order": 11, "series": 91, "title": "Der Nachbar, der oben wohnt", "translation": "همسایه ای که طبقه بالا زندگی می کنه", "status": "planned"},
+        {"global_order": 12, "series": 92, "title": "Seit wir hier wohnen, ist es ruhiger", "translation": "از وقتی اینجا زندگی می کنیم آروم تر شده", "status": "planned"},
+        {"global_order": 13, "series": 93, "title": "Könnten Sie bitte leiser sein?", "translation": "می شه لطفا آروم تر باشید؟", "status": "planned"},
+        {"global_order": 14, "series": 94, "title": "Die Heizung wird morgen repariert", "translation": "بخاری فردا تعمیر می شه", "status": "planned"},
+        {"global_order": 15, "series": 95, "title": "Jetzt ist alles wieder in Ordnung", "translation": "حالا دوباره همه چی روبراهه", "status": "planned"}
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Reisen & unerwartete Probleme",
+      "translation": "سفر و مشکلات غیرمنتظره",
+      "difficulty": [50, 52],
+      "story_focus": "Lena and Ben face a canceled connection and have to understand options, uncertainty, contrast, and a final arrival.",
+      "grammar_focus": ["ob clauses", "obwohl clauses", "preference with hätte lieber", "travel problem narration"],
+      "chapters": [
+        {"global_order": 16, "series": 96, "title": "Unser Zug ist ausgefallen", "translation": "قطارمون لغو شده", "status": "planned"},
+        {"global_order": 17, "series": 97, "title": "Wir wissen nicht, ob wir weiterfahren können", "translation": "نمی دونیم می تونیم ادامه بدیم یا نه", "status": "planned"},
+        {"global_order": 18, "series": 98, "title": "Obwohl es spät ist, fahren wir weiter", "translation": "با اینکه دیره، ادامه می دیم", "status": "planned"},
+        {"global_order": 19, "series": 99, "title": "Wir hätten lieber eine direkte Verbindung", "translation": "ترجیح می دیم مسیر مستقیم داشته باشیم", "status": "planned"},
+        {"global_order": 20, "series": 100, "title": "Am Ende sind wir doch angekommen", "translation": "آخرش بالاخره رسیدیم", "status": "planned"}
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Gesundheit & Alltag",
+      "translation": "سلامتی و زندگی روزمره",
+      "difficulty": [53, 55],
+      "story_focus": "Mia notices ongoing tiredness, follows medical advice, and changes a small daily habit.",
+      "grammar_focus": ["reported advice with dass", "sollen and sollte", "conditional wenn", "reflexive health language"],
+      "chapters": [
+        {"global_order": 21, "series": 101, "title": "Ich fühle mich seit ein paar Tagen müde", "translation": "چند روزه احساس خستگی می کنم", "status": "planned"},
+        {"global_order": 22, "series": 102, "title": "Der Arzt hat gesagt, dass ich mich ausruhen soll", "translation": "دکتر گفته باید استراحت کنم", "status": "planned"},
+        {"global_order": 23, "series": 103, "title": "Wenn es nicht besser wird, komme ich wieder", "translation": "اگه بهتر نشه دوباره میام", "status": "planned"},
+        {"global_order": 24, "series": 104, "title": "Ich sollte mehr schlafen", "translation": "باید بیشتر بخوابم", "status": "planned"},
+        {"global_order": 25, "series": 105, "title": "Jetzt achte ich besser auf mich", "translation": "حالا بیشتر مراقب خودم هستم", "status": "planned"}
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Medien & Kommunikation",
+      "translation": "رسانه و ارتباط",
+      "difficulty": [56, 57],
+      "story_focus": "Mia and Sara clear up a misunderstanding that started with a message and finish with better communication.",
+      "grammar_focus": ["embedded was clauses", "relative clauses", "dass clauses for opinions", "conversation repair"],
+      "chapters": [
+        {"global_order": 26, "series": 106, "title": "Hast du gesehen, was ich dir geschickt habe?", "translation": "دیدی چی برات فرستادم؟", "status": "planned"},
+        {"global_order": 27, "series": 107, "title": "Die Nachricht, die du mir geschickt hast", "translation": "پیامی که برام فرستادی", "status": "planned"},
+        {"global_order": 28, "series": 108, "title": "Ich glaube, dass das ein Missverständnis war", "translation": "فکر می کنم یه سوتفاهم بوده", "status": "planned"},
+        {"global_order": 29, "series": 109, "title": "Lass uns kurz darüber sprechen", "translation": "بیا یه کم درباره اش حرف بزنیم", "status": "planned"},
+        {"global_order": 30, "series": 110, "title": "Jetzt verstehen wir uns besser", "translation": "حالا همدیگه رو بهتر می فهمیم", "status": "planned"}
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Veränderungen & Zukunft",
+      "translation": "تغییرات و آینده",
+      "difficulty": [58, 59],
+      "story_focus": "Lena and Ben talk about a coming life change and move from a vague wish to a realistic future plan.",
+      "grammar_focus": ["future with werden", "wenn conditions", "hope with dass", "probability language"],
+      "chapters": [
+        {"global_order": 31, "series": 111, "title": "Nächstes Jahr möchte ich etwas Neues machen", "translation": "سال بعد می خوام یه کار تازه انجام بدم", "status": "planned"},
+        {"global_order": 32, "series": 112, "title": "Wenn alles klappt, ziehe ich um", "translation": "اگه همه چی خوب پیش بره اسباب کشی می کنم", "status": "planned"},
+        {"global_order": 33, "series": 113, "title": "Ich werde wahrscheinlich mehr arbeiten", "translation": "احتمالا بیشتر کار می کنم", "status": "planned"},
+        {"global_order": 34, "series": 114, "title": "Ich hoffe, dass es gut läuft", "translation": "امیدوارم خوب پیش بره", "status": "planned"},
+        {"global_order": 35, "series": 115, "title": "Mal sehen, was passiert", "translation": "ببینیم چی می شه", "status": "planned"}
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Erfahrungen erzählen",
+      "translation": "تعریف کردن تجربه ها",
+      "difficulty": [60, 60],
+      "story_focus": "The final B1 module turns familiar characters toward longer personal narration and integrates the level's core structures.",
+      "grammar_focus": ["als for past situations", "narrative Perfekt and Präteritum review", "relative clauses", "integrated B1 storytelling"],
+      "chapters": [
+        {"global_order": 36, "series": 116, "title": "Als ich jünger war", "translation": "وقتی جوان تر بودم", "status": "planned"},
+        {"global_order": 37, "series": 117, "title": "Damals habe ich viel gelernt", "translation": "اون موقع خیلی چیزها یاد گرفتم", "status": "planned"},
+        {"global_order": 38, "series": 118, "title": "Das war eine Erfahrung, die ich nie vergesse", "translation": "تجربه ای بود که هیچ وقت فراموش نمی کنم", "status": "planned"},
+        {"global_order": 39, "series": 119, "title": "Wenn ich zurückdenke", "translation": "وقتی به گذشته فکر می کنم", "status": "planned"},
+        {"global_order": 40, "series": 120, "title": "Jetzt kann ich meine Geschichte erzählen", "translation": "حالا می تونم داستانم رو تعریف کنم", "status": "planned"}
+      ]
+    }
+  ],
+  "batch_boundaries": [
+    {"batch": 1, "chapters": [1,8], "series": [81,88]},
+    {"batch": 2, "chapters": [9,16], "series": [89,96]},
+    {"batch": 3, "chapters": [17,24], "series": [97,104]},
+    {"batch": 4, "chapters": [25,32], "series": [105,112]},
+    {"batch": 5, "chapters": [33,40], "series": [113,120]}
+  ]
+}
