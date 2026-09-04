@@ -1,0 +1,124 @@
+{
+  "schema_version": "v9",
+  "database_revision": "v9.1.0",
+  "course": "de-fa",
+  "level": "B1",
+  "batch": 1,
+  "chapter_order": 1,
+  "series": 81,
+  "chapter_key": "B1-M01-C01",
+  "module_key": "B1-M01",
+  "title": "Warum komme ich später?",
+  "title_translation": "چرا دیرتر می رسم؟",
+  "description": "Lena und Ben sprechen über eine Zugverspätung und erklären Gründe mit weil und Folgen mit deshalb.",
+  "description_translation": "لنا و بن درباره تاخیر قطار حرف می زنند و با weil دلیل و با deshalb نتیجه را بیان می کنند.",
+  "difficulty_min": 41,
+  "difficulty_max": 42,
+  "storyline_key": "lena-ben-b1-delay-reasons",
+  "characters": ["Lena", "Ben"],
+  "new_lexical_items": [
+    {"lemma":"weil","display_form":"weil","pos":"conjunction","translation":"چون / زیرا","difficulty":41,"target":true},
+    {"lemma":"pünktlich","display_form":"pünktlich","pos":"adjective","translation":"سر وقت / به موقع","difficulty":41,"target":true},
+    {"lemma":"deshalb","display_form":"deshalb","pos":"adverb","translation":"برای همین / بنابراین","difficulty":42,"target":true},
+    {"lemma":"Grund","display_form":"Grund","pos":"noun","translation":"دلیل","difficulty":42,"target":true}
+  ],
+  "new_phrase_targets": [
+    {"lemma":"Ich komme später, weil der Zug Verspätung hat.","translation":"دیرتر می رسم، چون قطار تاخیر دارد.","difficulty":41},
+    {"lemma":"Ich kann nicht pünktlich sein, weil ich umsteigen muss.","translation":"نمی توانم سر وقت برسم، چون باید خط عوض کنم.","difficulty":41},
+    {"lemma":"Der Zug hat Verspätung. Deshalb komme ich später.","translation":"قطار تاخیر دارد. برای همین دیرتر می رسم.","difficulty":42},
+    {"lemma":"Der Grund ist die Verspätung.","translation":"دلیل، تاخیر قطار است.","difficulty":42}
+  ],
+  "lessons": [
+    {
+      "lesson_key":"B1-M01-C01-L01",
+      "storyline_order":1,
+      "title":"Eine Verspätung erklären",
+      "title_translation":"توضیح دادن یک تاخیر",
+      "objective":"Einen einfachen Grund mit weil nennen.",
+      "objective_translation":"با weil یک دلیل ساده بیان کن.",
+      "difficulty":41,
+      "prompt_character":"Lena",
+      "learner_character":"Ben",
+      "turns":[
+        {"order":1,"role":"character","speaker":"Lena","text":"Hallo Ben. Wo bist du?","translation":"سلام بن. کجایی؟"},
+        {"order":2,"role":"learner","speaker":"Ben","text":"Ich bin noch im Zug.","translation":"هنوز داخل قطارم.","speech_target":"Ich bin noch im Zug."},
+        {"order":3,"role":"character","speaker":"Lena","text":"Hat der Zug Verspätung?","translation":"قطار تاخیر دارد؟"},
+        {"order":4,"role":"learner","speaker":"Ben","text":"Ja. Ich komme später, weil der Zug Verspätung hat.","translation":"بله. دیرتر می رسم، چون قطار تاخیر دارد.","speech_target":"Ich komme später, weil der Zug Verspätung hat."},
+        {"order":5,"role":"character","speaker":"Lena","text":"Kein Problem. Sag mir bitte Bescheid.","translation":"مشکلی نیست. لطفا بهم خبر بده."},
+        {"order":6,"role":"learner","speaker":"Ben","text":"Ja, ich sage dir Bescheid.","translation":"بله، بهت خبر می دهم.","speech_target":"Ja, ich sage dir Bescheid."}
+      ],
+      "target":"Ich komme später, weil der Zug Verspätung hat.",
+      "reading_question":{"prompt":"Warum kommt Ben später?","translation":"چرا بن دیرتر می رسد؟","answer":"Weil der Zug Verspätung hat.","distractors":["Weil er im Büro arbeitet.","Weil er Kaffee macht."]}
+    },
+    {
+      "lesson_key":"B1-M01-C01-L02",
+      "storyline_order":2,
+      "title":"Nicht pünktlich",
+      "title_translation":"سر وقت نمی رسم",
+      "objective":"Mit weil einen zweiten Grund erklären und pünktlich verwenden.",
+      "objective_translation":"یک دلیل دیگر را با weil توضیح بده و pünktlich را استفاده کن.",
+      "difficulty":41,
+      "prompt_character":"Lena",
+      "learner_character":"Ben",
+      "turns":[
+        {"order":1,"role":"character","speaker":"Lena","text":"Kommst du pünktlich an?","translation":"سر وقت می رسی؟"},
+        {"order":2,"role":"learner","speaker":"Ben","text":"Nein, leider nicht.","translation":"نه، متاسفانه نه.","speech_target":"Nein, leider nicht."},
+        {"order":3,"role":"character","speaker":"Lena","text":"Warum nicht?","translation":"چرا نه؟"},
+        {"order":4,"role":"learner","speaker":"Ben","text":"Ich kann nicht pünktlich sein, weil ich umsteigen muss.","translation":"نمی توانم سر وقت برسم، چون باید خط عوض کنم.","speech_target":"Ich kann nicht pünktlich sein, weil ich umsteigen muss."},
+        {"order":5,"role":"character","speaker":"Lena","text":"Verstehe. Dann warte ich noch.","translation":"متوجه شدم. پس کمی بیشتر منتظر می مانم."},
+        {"order":6,"role":"learner","speaker":"Ben","text":"Danke. Ich rufe dich später an.","translation":"ممنون. بعدا بهت زنگ می زنم.","speech_target":"Danke. Ich rufe dich später an."}
+      ],
+      "target":"Ich kann nicht pünktlich sein, weil ich umsteigen muss.",
+      "reading_question":{"prompt":"Warum ist Ben nicht pünktlich?","translation":"چرا بن سر وقت نمی رسد؟","answer":"Weil er umsteigen muss.","distractors":["Weil er auschecken möchte.","Weil er krank ist."]}
+    },
+    {
+      "lesson_key":"B1-M01-C01-L03",
+      "storyline_order":3,
+      "title":"Deshalb komme ich später",
+      "title_translation":"برای همین دیرتر می رسم",
+      "objective":"Eine Folge mit deshalb ausdrücken.",
+      "objective_translation":"با deshalb نتیجه یک اتفاق را بیان کن.",
+      "difficulty":42,
+      "prompt_character":"Lena",
+      "learner_character":"Ben",
+      "turns":[
+        {"order":1,"role":"character","speaker":"Lena","text":"Ist der Zug immer noch spät?","translation":"قطار هنوز تاخیر دارد؟"},
+        {"order":2,"role":"learner","speaker":"Ben","text":"Ja, der Zug hat Verspätung.","translation":"بله، قطار تاخیر دارد.","speech_target":"Ja, der Zug hat Verspätung."},
+        {"order":3,"role":"character","speaker":"Lena","text":"Dann kommst du also später.","translation":"پس دیرتر می رسی."},
+        {"order":4,"role":"learner","speaker":"Ben","text":"Genau. Der Zug hat Verspätung. Deshalb komme ich später.","translation":"دقیقا. قطار تاخیر دارد. برای همین دیرتر می رسم.","speech_target":"Der Zug hat Verspätung. Deshalb komme ich später."},
+        {"order":5,"role":"character","speaker":"Lena","text":"Okay. Wir können später sprechen.","translation":"باشه. می توانیم بعدا صحبت کنیم."},
+        {"order":6,"role":"learner","speaker":"Ben","text":"Gut. Dann sprechen wir später.","translation":"خوب. پس بعدا صحبت می کنیم.","speech_target":"Gut. Dann sprechen wir später."}
+      ],
+      "target":"Der Zug hat Verspätung. Deshalb komme ich später.",
+      "reading_question":{"prompt":"Was ist die Folge der Verspätung?","translation":"نتیجه تاخیر چیست؟","answer":"Ben kommt später.","distractors":["Ben bleibt im Hotel.","Ben kauft eine Fahrkarte."]}
+    },
+    {
+      "lesson_key":"B1-M01-C01-L04",
+      "storyline_order":4,
+      "title":"Grund und Folge",
+      "title_translation":"دلیل و نتیجه",
+      "objective":"Grund und Folge in einer kurzen Nachricht unterscheiden.",
+      "objective_translation":"در یک پیام کوتاه دلیل و نتیجه را از هم تشخیص بده.",
+      "difficulty":42,
+      "prompt_character":"Lena",
+      "learner_character":"Ben",
+      "turns":[
+        {"order":1,"role":"character","speaker":"Lena","text":"Was ist der Grund für die Verspätung?","translation":"دلیل تاخیر چیست؟"},
+        {"order":2,"role":"learner","speaker":"Ben","text":"Der Grund ist die Verspätung auf der Strecke.","translation":"دلیل، تاخیر در مسیر است.","speech_target":"Der Grund ist die Verspätung."},
+        {"order":3,"role":"character","speaker":"Lena","text":"Und was passiert deshalb?","translation":"و برای همین چه اتفاقی می افتد؟"},
+        {"order":4,"role":"learner","speaker":"Ben","text":"Deshalb komme ich später an.","translation":"برای همین دیرتر می رسم.","speech_target":"Deshalb komme ich später an."},
+        {"order":5,"role":"character","speaker":"Lena","text":"Alles klar. Ich warte auf deine Nachricht.","translation":"باشه. منتظر پیامت می مانم."},
+        {"order":6,"role":"learner","speaker":"Ben","text":"Ich sage dir Bescheid, wenn ich ankomme.","translation":"وقتی برسم بهت خبر می دهم.","speech_target":"Ich sage dir Bescheid, wenn ich ankomme."}
+      ],
+      "target":"Der Grund ist die Verspätung.",
+      "reading_question":{"prompt":"Was ist in Bens Nachricht der Grund?","translation":"در پیام بن، دلیل چیست؟","answer":"Die Verspätung.","distractors":["Die Reservierung.","Die Tabletten."]}
+    }
+  ],
+  "qa_intent": {
+    "learner_turns_have_speech_target": true,
+    "reading_task_per_lesson": true,
+    "two_characters_per_lesson": true,
+    "new_grammar_scope": ["weil + Verb am Satzende", "deshalb + Verb an Position 2"],
+    "cross_chapter_qa": "deferred_until_chapters_01_08_pass"
+  }
+}
