@@ -1,0 +1,110 @@
+{
+  "course": "de-fa",
+  "schema_version": "v9",
+  "database_revision": "v9.1.0",
+  "level": "B1",
+  "batch": 1,
+  "chapter": 1,
+  "series": 81,
+  "status": "PASS",
+  "publishable_alone": false,
+  "chapter_artifacts": {
+    "content": "nova/staging/B1/batch_01/chapter_01_series_081/content.json",
+    "sql": "nova/staging/B1/batch_01/chapter_01_series_081/chapter.sql"
+  },
+  "counts": {
+    "lessons": 4,
+    "turns": 24,
+    "learner_turns": 12,
+    "learner_turns_with_speech_target": 12,
+    "reading_tasks": 4,
+    "characters_per_lesson": 2,
+    "new_lexical_items": 5,
+    "new_phrase_targets": 5
+  },
+  "checks": {
+    "german_naturalness_and_cefr": {
+      "status": "PASS",
+      "note": "B1 starts as a controlled bridge from A2: reasons with weil, consequences with deshalb, and no unrelated grammar expansion."
+    },
+    "persian_translation_and_orthography": {
+      "status": "PASS",
+      "note": "Natural conversational Persian; no unnecessary hamza forms; spacing follows project convention."
+    },
+    "two_characters_per_lesson": {
+      "status": "PASS",
+      "evidence": "All four lessons use only Lena and Ben; prompt and learner character IDs are distinct."
+    },
+    "storyline_continuity": {
+      "status": "PASS",
+      "evidence": "New B1 storyline lena-ben-b1-delay-reasons reserves orders 1-4. It follows their completed A2 train-trip context without mutating the old A2 storyline key."
+    },
+    "lemma_first_morphology": {
+      "status": "PASS",
+      "evidence": "Inflected forms map to canonical lemmas: hat->haben, bist/bin/ist->sein, kommst/komme->kommen or ankommen where separable, muss->müssen, rufe...an->anrufen, verstehst/verstehe->verstehen."
+    },
+    "clickable_token_coverage_100_percent": {
+      "status": "PASS",
+      "coverage_percent": 100,
+      "note": "Every lexical token in all 24 turn token arrays carries an explicit lemma mapping; punctuation is outside lexical token arrays. New lemmas are inserted in the same staging SQL and prior lemmas are resolved from canonical word state."
+    },
+    "learner_speech_target_coverage_100_percent": {
+      "status": "PASS",
+      "coverage_percent": 100,
+      "evidence": "12 learner turns; 12 non-empty speech_target values."
+    },
+    "activity_source_integrity": {
+      "status": "PASS",
+      "note": "Listen activities bind character turns; speak activities bind learner turns; new_word activities bind word IDs; reading activities are self-contained with answer and distractors."
+    },
+    "reading_has_task": {
+      "status": "PASS",
+      "evidence": "One reading_comprehension activity per lesson with explicit correct answer and two controlled distractors."
+    },
+    "distractor_quality": {
+      "status": "PASS",
+      "note": "Distractors reuse known domains such as office, hotel, health, ticketing and contrast connector meanings; no random unrelated strings."
+    },
+    "duplicate_target_avoidance": {
+      "status": "PASS",
+      "note": "The five new phrase targets do not occur in the canonical explicit-target history through Series 080; new lexical targets are B1 additions."
+    },
+    "canonical_word_tuple_reuse": {
+      "status": "PASS",
+      "note": "Existing A1/A2 lemmas are referenced rather than redefined. Only weil, pünktlich, deshalb, Grund, Folge and the new Series 081 phrase targets are inserted."
+    },
+    "dependency_audit": {
+      "status": "PASS",
+      "evidence": "GitHub canonical character state contains Lena and Ben; canonical state contains all reused course lemmas required by this chapter; SQL adds guards for missing course/character dependencies."
+    },
+    "status_enum_audit": {
+      "status": "PASS",
+      "evidence": "Uses level/module active, content batch generating, chapter draft, lessons validated: all are valid v9.1 enum values."
+    },
+    "chapter_empty_guard": {
+      "status": "PASS",
+      "evidence": "SQL asserts 4 lessons, 24 turns, 12 learner turns, 12 learner speech targets, 4 reading tasks and 4 valid two-character lesson pairs before COMMIT."
+    },
+    "no_unjustified_grammar_or_vocabulary_jump": {
+      "status": "PASS",
+      "note": "New grammar is limited to weil subordinate clauses and deshalb main-clause consequence; five lexical additions support exactly that concept."
+    },
+    "github_read_write_integrity": {
+      "status": "PASS",
+      "note": "All required canonical sources were read from SalehAkaJim/chatgpt and both staging artifacts were written successfully."
+    },
+    "batch_cross_chapter_duplicate_target_audit": {
+      "status": "DEFERRED",
+      "reason": "Requires Chapters 01-08."
+    },
+    "level_progression_audit": {
+      "status": "DEFERRED",
+      "reason": "Requires all 40 B1 chapters and five published batch artifacts."
+    }
+  },
+  "runtime_execution": {
+    "status": "NOT_RUN",
+    "reason": "No live MySQL runtime is part of the GitHub-only production source. SQL includes deterministic pre-COMMIT guards; executable integration validation remains part of batch publication audit."
+  },
+  "decision": "Atomic Chapter 01 passed chapter-level QA. Keep published production_state at Series 080; permit staging Chapter 02 next."
+}
