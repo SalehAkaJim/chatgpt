@@ -16,13 +16,13 @@
       "chapter": 1,
       "series": 81,
       "title": "Ich muss mich entscheiden",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 2,
       "series": 82,
       "title": "Warum willst du das machen?",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 3,
@@ -63,8 +63,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "regenerate_and_qa_chapter_01_series_081_from_scratch",
+  "next_action": "generate_and_qa_chapter_02_series_082",
   "resume_authorized_at": "2026-09-04T17:15:54.269Z",
   "database_revision": "v9.1.1",
-  "generation_cadence": "hourly"
+  "generation_cadence": "hourly",
+  "last_completed_atomic_unit": {
+    "chapter": 1,
+    "series": 81,
+    "status": "PASS"
+  }
 }
