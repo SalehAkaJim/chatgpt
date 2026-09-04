@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "course": "de-fa",
+  "source_of_truth": "github",
+  "content_unit": {
+    "atomic_generation_unit": "chapter",
+    "lessons_per_chapter": 4,
+    "chapters_per_level": 40
+  },
+  "artifact_batching": {
+    "artifacts_per_level": 5,
+    "chapters_per_artifact": 8,
+    "series_per_artifact": 8,
+    "artifact_names": [
+      "batch_01_chapters_01_08.sql",
+      "batch_02_chapters_09_16.sql",
+      "batch_03_chapters_17_24.sql",
+      "batch_04_chapters_25_32.sql",
+      "batch_05_chapters_33_40.sql"
+    ]
+  },
+  "transaction_policy": {
+    "chapter_is_atomic": true,
+    "batch_is_publish_atomic": true,
+    "advance_state_only_after_batch_qa_pass": true,
+    "on_failure": "do_not_advance_state_and_retry_failed_chapter"
+  },
+  "required_qa": [
+    "german_naturalness_and_cefr",
+    "persian_translation_and_orthography",
+    "two_characters_per_lesson",
+    "storyline_continuity",
+    "clickable_token_coverage_100_percent",
+    "learner_speech_target_coverage_100_percent",
+    "lemma_first_morphology",
+    "activity_source_integrity",
+    "reading_has_task",
+    "distractor_quality",
+    "dependency_audit",
+    "duplicate_lesson_words_audit",
+    "status_enum_audit",
+    "chapter_empty_guard",
+    "batch_cross_chapter_duplicate_target_audit",
+    "level_progression_audit"
+  ],
+  "recommendation": {
+    "safe_default": "8 chapters per published artifact, generated and validated chapter-by-chapter",
+    "do_not_do": "generate all 8 chapters as one unchecked monolithic content block"
+  }
+}
