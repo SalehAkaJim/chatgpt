@@ -31,7 +31,10 @@
       "nova/database/reset_all_v9.sql",
       "nova/database/schema_v9.sql",
       "nova/database/de_fa_base_seed_v9.sql",
-      "nova/database/runtime_lesson_query_v9.sql"
+      "nova/database/runtime_lesson_query_v9.sql",
+      "nova/database/runtime_catalog_queries_v9.sql",
+      "nova/database/validate_database_v9.sql",
+      "nova/database/AUDIT_v9.md"
     ]
   },
   "generation_invariants": [
@@ -56,5 +59,13 @@
     "series_004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
-  }
+  },
+  "database_revision": "v9.1.0",
+  "database_audit": {
+    "status": "complete",
+    "implementation_status": "ready",
+    "full_a1_a2_restore_test": "blocked_missing_canonical_artifacts",
+    "report": "nova/database/AUDIT_v9.md"
+  },
+  "content_generation_enabled": false
 }

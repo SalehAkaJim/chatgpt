@@ -2,11 +2,18 @@
   "project": "Nova",
   "course": "de-fa",
   "schema_version": "v9",
+  "database_revision": "v9.1.0",
   "last_completed_level": "A2",
   "last_completed_series": 80,
   "next_level": "B1",
   "next_series": 81,
-  "content_status": "generating",
+  "content_status": "frozen",
+  "content_freeze": {
+    "enabled": true,
+    "after_series": 80,
+    "reason": "database_runtime_and_ui_implementation",
+    "resume_requires_explicit_unfreeze": true
+  },
   "generation_mode": "atomic_chapter_generation_with_batched_artifacts",
   "batching": {
     "chapters_per_artifact": 8,
@@ -15,12 +22,19 @@
     "advance_state_only_after_full_batch_qa_pass": true
   },
   "current_work": {
+    "phase": "database_runtime_and_ui_implementation",
     "level": "B1",
     "batch": 1,
     "batch_chapter_range": [1, 8],
     "pending_chapter": 1,
     "pending_series": 81,
-    "status": "queued_for_generation"
+    "status": "frozen_before_generation"
+  },
+  "database": {
+    "revision": "v9.1.0",
+    "audit_status": "complete",
+    "implementation_status": "ready",
+    "full_a1_a2_restore_test": "blocked_missing_canonical_artifacts"
   },
   "canonical_corrections": {
     "series_004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",

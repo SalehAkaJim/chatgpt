@@ -2,6 +2,12 @@
   "version": 1,
   "course": "de-fa",
   "source_of_truth": "github",
+  "content_generation": {
+    "enabled": false,
+    "freeze_after_series": 80,
+    "reason": "database_runtime_and_ui_implementation",
+    "resume_requires_explicit_unfreeze": true
+  },
   "content_unit": {
     "atomic_generation_unit": "chapter",
     "lessons_per_chapter": 4,

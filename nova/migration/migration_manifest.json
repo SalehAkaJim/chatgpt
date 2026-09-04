@@ -3,21 +3,134 @@
   "source_archive": "nova_v9_production_series_001_080_fixed.zip",
   "source_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
   "batches": [
-    {"file":"nova_DE_FA_A1_batch_01_series_001_008.sql.gz.b64","level":"A1","series":[1,8],"raw_bytes":354312,"gzip_bytes":39718,"base64_chars":52960,"sha256_gzip":"50dbe9cc0fb8f5bc4797ee88feaf951c1da745df4deeca173a98295d47ebd107"},
-    {"file":"nova_DE_FA_A1_batch_02_series_009_016.sql.gz.b64","level":"A1","series":[9,16],"raw_bytes":319337,"gzip_bytes":37435,"base64_chars":49916,"sha256_gzip":"1e9cc8a5448e35c0fcfa59c196623f2532812e743c0371a4aa4769fff9097b72"},
-    {"file":"nova_DE_FA_A1_batch_03_series_017_024.sql.gz.b64","level":"A1","series":[17,24],"raw_bytes":303839,"gzip_bytes":34814,"base64_chars":46420,"sha256_gzip":"d9c345e0d9358cd07d7d4ae9641c8726df024f882e7da5b79b65355123ae28c4"},
-    {"file":"nova_DE_FA_A1_batch_04_series_025_032.sql.gz.b64","level":"A1","series":[25,32],"raw_bytes":329954,"gzip_bytes":37270,"base64_chars":49696,"sha256_gzip":"d28800b18ae81a9fe153043d2936a0ba282f3f9a0b7902ea63f3d5b80dd559e9"},
-    {"file":"nova_DE_FA_A1_batch_05_series_033_040.sql.gz.b64","level":"A1","series":[33,40],"raw_bytes":336308,"gzip_bytes":40131,"base64_chars":53508,"sha256_gzip":"c0fba1cb360de963be70957f8b1681dffa49d289199202868cb9ddcb5ea45ce2"},
-    {"file":"nova_DE_FA_A2_batch_01_series_041_048.sql.gz.b64","level":"A2","series":[41,48],"raw_bytes":385680,"gzip_bytes":43644,"base64_chars":58192,"sha256_gzip":"95148a50eb2324a40ecf5988e78f9b0b13f34f585b6084ee68bfc785629a22e7"},
-    {"file":"nova_DE_FA_A2_batch_02_series_049_056.sql.gz.b64","level":"A2","series":[49,56],"raw_bytes":385420,"gzip_bytes":45122,"base64_chars":60164,"sha256_gzip":"c0c64e5a6d74795d97ca65593652ed647548f5974250a73d4b34fffd93f74436"},
-    {"file":"nova_DE_FA_A2_batch_03_series_057_064.sql.gz.b64","level":"A2","series":[57,64],"raw_bytes":403129,"gzip_bytes":46529,"base64_chars":62040,"sha256_gzip":"86c28e00f7572420d4f20608b03dde6df12b4d6e11dbca0879ba31723324498e"},
-    {"file":"nova_DE_FA_A2_batch_04_series_065_072.sql.gz.b64","level":"A2","series":[65,72],"raw_bytes":360527,"gzip_bytes":42049,"base64_chars":56068,"sha256_gzip":"e4197f75a9385a01035072362209741b17202fef6862355c864398346b6de9b9"},
-    {"file":"nova_DE_FA_A2_batch_05_series_073_080.sql.gz.b64","level":"A2","series":[73,80],"raw_bytes":377361,"gzip_bytes":43945,"base64_chars":58596,"sha256_gzip":"0af595e50071bd5c2db51ffd789385dc3f73f17334a5920be48e44ff0938a90b"}
+    {
+      "file": "nova_DE_FA_A1_batch_01_series_001_008.sql.gz.b64",
+      "level": "A1",
+      "series": [
+        1,
+        8
+      ],
+      "raw_bytes": 354312,
+      "gzip_bytes": 39718,
+      "base64_chars": 52960,
+      "sha256_gzip": "50dbe9cc0fb8f5bc4797ee88feaf951c1da745df4deeca173a98295d47ebd107"
+    },
+    {
+      "file": "nova_DE_FA_A1_batch_02_series_009_016.sql.gz.b64",
+      "level": "A1",
+      "series": [
+        9,
+        16
+      ],
+      "raw_bytes": 319337,
+      "gzip_bytes": 37435,
+      "base64_chars": 49916,
+      "sha256_gzip": "1e9cc8a5448e35c0fcfa59c196623f2532812e743c0371a4aa4769fff9097b72"
+    },
+    {
+      "file": "nova_DE_FA_A1_batch_03_series_017_024.sql.gz.b64",
+      "level": "A1",
+      "series": [
+        17,
+        24
+      ],
+      "raw_bytes": 303839,
+      "gzip_bytes": 34814,
+      "base64_chars": 46420,
+      "sha256_gzip": "d9c345e0d9358cd07d7d4ae9641c8726df024f882e7da5b79b65355123ae28c4"
+    },
+    {
+      "file": "nova_DE_FA_A1_batch_04_series_025_032.sql.gz.b64",
+      "level": "A1",
+      "series": [
+        25,
+        32
+      ],
+      "raw_bytes": 329954,
+      "gzip_bytes": 37270,
+      "base64_chars": 49696,
+      "sha256_gzip": "d28800b18ae81a9fe153043d2936a0ba282f3f9a0b7902ea63f3d5b80dd559e9"
+    },
+    {
+      "file": "nova_DE_FA_A1_batch_05_series_033_040.sql.gz.b64",
+      "level": "A1",
+      "series": [
+        33,
+        40
+      ],
+      "raw_bytes": 336308,
+      "gzip_bytes": 40131,
+      "base64_chars": 53508,
+      "sha256_gzip": "c0fba1cb360de963be70957f8b1681dffa49d289199202868cb9ddcb5ea45ce2"
+    },
+    {
+      "file": "nova_DE_FA_A2_batch_01_series_041_048.sql.gz.b64",
+      "level": "A2",
+      "series": [
+        41,
+        48
+      ],
+      "raw_bytes": 385680,
+      "gzip_bytes": 43644,
+      "base64_chars": 58192,
+      "sha256_gzip": "95148a50eb2324a40ecf5988e78f9b0b13f34f585b6084ee68bfc785629a22e7"
+    },
+    {
+      "file": "nova_DE_FA_A2_batch_02_series_049_056.sql.gz.b64",
+      "level": "A2",
+      "series": [
+        49,
+        56
+      ],
+      "raw_bytes": 385420,
+      "gzip_bytes": 45122,
+      "base64_chars": 60164,
+      "sha256_gzip": "c0c64e5a6d74795d97ca65593652ed647548f5974250a73d4b34fffd93f74436"
+    },
+    {
+      "file": "nova_DE_FA_A2_batch_03_series_057_064.sql.gz.b64",
+      "level": "A2",
+      "series": [
+        57,
+        64
+      ],
+      "raw_bytes": 403129,
+      "gzip_bytes": 46529,
+      "base64_chars": 62040,
+      "sha256_gzip": "86c28e00f7572420d4f20608b03dde6df12b4d6e11dbca0879ba31723324498e"
+    },
+    {
+      "file": "nova_DE_FA_A2_batch_04_series_065_072.sql.gz.b64",
+      "level": "A2",
+      "series": [
+        65,
+        72
+      ],
+      "raw_bytes": 360527,
+      "gzip_bytes": 42049,
+      "base64_chars": 56068,
+      "sha256_gzip": "e4197f75a9385a01035072362209741b17202fef6862355c864398346b6de9b9"
+    },
+    {
+      "file": "nova_DE_FA_A2_batch_05_series_073_080.sql.gz.b64",
+      "level": "A2",
+      "series": [
+        73,
+        80
+      ],
+      "raw_bytes": 377361,
+      "gzip_bytes": 43945,
+      "base64_chars": 58596,
+      "sha256_gzip": "0af595e50071bd5c2db51ffd789385dc3f73f17334a5920be48e44ff0938a90b"
+    }
   ],
   "canonical_corrections": {
     "series_004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "recovery": "Base64 decode each .sql.gz.b64, then gunzip. Output is concatenated unchanged canonical SQL files with BEGIN/END headers."
+  "recovery": "Base64 decode each .sql.gz.b64, then gunzip. Output is concatenated unchanged canonical SQL files with BEGIN/END headers.",
+  "artifacts_present_in_repository": false,
+  "restore_status": "blocked_until_exact_artifacts_are_recovered",
+  "restore_requirement": "Recover the exact archive, verify source_archive_sha256, then add the ten listed .sql.gz.b64 text artifacts without regeneration."
 }

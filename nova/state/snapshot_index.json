@@ -3,8 +3,14 @@
   "schema_version": "v9",
   "course": "de-fa",
   "snapshot_purpose": "canonical generation-resume state",
-  "completed_levels": ["A1", "A2"],
-  "series_range": [1, 80],
+  "completed_levels": [
+    "A1",
+    "A2"
+  ],
+  "series_range": [
+    1,
+    80
+  ],
   "counts": {
     "words": 377,
     "explicit_targets": 244,
@@ -18,7 +24,9 @@
     "../database/reset_all_v9.sql",
     "../database/schema_v9.sql",
     "../database/de_fa_base_seed_v9.sql",
-    "../database/runtime_lesson_query_v9.sql"
+    "../database/runtime_lesson_query_v9.sql",
+    "../database/runtime_catalog_queries_v9.sql",
+    "../database/validate_database_v9.sql"
   ],
   "source_archive": {
     "filename": "nova_v9_production_series_001_080_fixed.zip",
@@ -51,5 +59,8 @@
     "chapters_per_batch_artifact": 8,
     "batch_artifacts_per_level": 5,
     "advance_state_only_after_batch_qa_pass": true
-  }
+  },
+  "database_revision": "v9.1.0",
+  "database_audit": "../database/AUDIT_v9.md",
+  "restore_status": "blocked_missing_canonical_a1_a2_artifacts"
 }
