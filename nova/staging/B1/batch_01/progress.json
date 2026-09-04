@@ -20,11 +20,19 @@
       "qa": "nova/staging/B1/batch_01/chapter_01_series_081/qa.json",
       "database_revision": "v9.1.1",
       "source_main_head": "03cc8c8098eb2f23936fed2657ba462b5f07a2dd"
+    },
+    {
+      "chapter": 2,
+      "series": 82,
+      "status": "PASS",
+      "qa": "nova/staging/B1/batch_01/chapter_02_series_082/qa.json",
+      "database_revision": "v9.1.1",
+      "source_main_head": "ad41cd1bd6a1ed30af634a0cac5098e9f2602c14"
     }
   ],
   "failed_chapters": [],
-  "next_pending_chapter": 2,
-  "next_pending_series": 82,
+  "next_pending_chapter": 3,
+  "next_pending_series": 83,
   "cross_chapter_qa": "not_ready",
   "batch_artifact": "nova/content/B1/batch_01_chapters_01_08.sql",
   "batch_publish_condition": "all chapters 1-8 PASS and cross-chapter QA PASS",
@@ -34,8 +42,8 @@
   "retry_authorized_at": "2026-09-04T17:15:54.269Z",
   "canonical_chapter_title": "Ich muss mich entscheiden",
   "last_completed_atomic_unit": {
-    "chapter": 1,
-    "series": 81,
+    "chapter": 2,
+    "series": 82,
     "status": "PASS"
   }
 }
