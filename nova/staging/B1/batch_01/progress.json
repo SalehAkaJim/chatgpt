@@ -6,19 +6,19 @@
   "series_range": [81, 88],
   "published": false,
   "production_state_advanced": false,
-  "passed_chapters": [
+  "passed_chapters": [],
+  "failed_chapters": [
     {
       "chapter": 1,
       "series": 81,
-      "status": "PASS",
-      "qa": "nova/staging/B1/batch_01/chapter_01_series_081/qa.json",
-      "sql": "nova/staging/B1/batch_01/chapter_01_series_081/chapter.sql"
+      "status": "FAIL",
+      "reason": "source_of_truth_changed_mid_run_from_v9.1.0_to_v9.1.1",
+      "qa": "nova/staging/B1/batch_01/chapter_01_series_081/qa.json"
     }
   ],
-  "failed_chapters": [],
-  "next_pending_chapter": 2,
-  "next_pending_series": 82,
-  "cross_chapter_qa": "pending",
+  "next_pending_chapter": 1,
+  "next_pending_series": 81,
+  "cross_chapter_qa": "not_started",
   "batch_artifact": "nova/content/B1/batch_01_chapters_01_08.sql",
   "batch_publish_condition": "all chapters 1-8 PASS and cross-chapter QA PASS"
 }
