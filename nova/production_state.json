@@ -1,0 +1,23 @@
+{
+  "project": "Nova",
+  "course": "de-fa",
+  "schema_version": "v9",
+  "last_completed_level": "A2",
+  "last_completed_series": 80,
+  "next_level": "B1",
+  "next_series": 81,
+  "content_status": "frozen_for_implementation",
+  "generation_mode": "atomic_chapter_generation_with_batched_artifacts",
+  "batching": {
+    "chapters_per_artifact": 8,
+    "artifacts_per_level": 5,
+    "atomic_unit": "chapter",
+    "advance_state_only_after_full_batch_qa_pass": true
+  },
+  "canonical_corrections": {
+    "series_004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",
+    "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
+    "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
+  },
+  "updated_at": "2026-09-04"
+}
