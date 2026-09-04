@@ -1,0 +1,21 @@
+{
+  "level": "B1",
+  "batch": 1,
+  "chapter_range": [1, 8],
+  "series_range": [81, 88],
+  "status": "active",
+  "published": false,
+  "chapters": [
+    {"chapter": 1, "series": 81, "title": "Ich muss mich entscheiden", "status": "pending"},
+    {"chapter": 2, "series": 82, "title": "Warum willst du das machen?", "status": "planned"},
+    {"chapter": 3, "series": 83, "title": "Weil ich etwas ändern möchte", "status": "planned"},
+    {"chapter": 4, "series": 84, "title": "Ich bin mir noch nicht sicher", "status": "planned"},
+    {"chapter": 5, "series": 85, "title": "Ich habe mich entschieden", "status": "planned"},
+    {"chapter": 6, "series": 86, "title": "Wir müssen das heute fertig machen", "status": "planned"},
+    {"chapter": 7, "series": 87, "title": "Kannst du mir erklären, wie das geht?", "status": "planned"},
+    {"chapter": 8, "series": 88, "title": "Ich glaube, dass wir mehr Zeit brauchen", "status": "planned"}
+  ],
+  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
+  "cross_chapter_qa_status": "not_ready",
+  "next_action": "generate_series_081"
+}
