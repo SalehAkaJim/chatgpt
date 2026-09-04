@@ -1,0 +1,24 @@
+{
+  "course": "de-fa",
+  "level": "B1",
+  "batch": 1,
+  "chapter_range": [1, 8],
+  "series_range": [81, 88],
+  "published": false,
+  "production_state_advanced": false,
+  "passed_chapters": [
+    {
+      "chapter": 1,
+      "series": 81,
+      "status": "PASS",
+      "qa": "nova/staging/B1/batch_01/chapter_01_series_081/qa.json",
+      "sql": "nova/staging/B1/batch_01/chapter_01_series_081/chapter.sql"
+    }
+  ],
+  "failed_chapters": [],
+  "next_pending_chapter": 2,
+  "next_pending_series": 82,
+  "cross_chapter_qa": "pending",
+  "batch_artifact": "nova/content/B1/batch_01_chapters_01_08.sql",
+  "batch_publish_condition": "all chapters 1-8 PASS and cross-chapter QA PASS"
+}
