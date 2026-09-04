@@ -1,73 +1,9 @@
 {
-  "schema_version": "v9.1",
-  "course": "de-fa",
-  "level": "B1",
-  "batch": 1,
-  "chapter": 1,
-  "series": 81,
-  "status": "validated_atomic",
-  "title": "Einen Termin verschieben",
-  "title_translation": "عوض کردن زمان قرار",
-  "description": "Mia und Sara müssen einen Termin neu planen und einigen sich auf eine passende Zeit.",
-  "description_translation": "میا و سارا باید زمان یک قرار را دوباره هماهنگ کنند و روی یک زمان مناسب به توافق برسند.",
-  "difficulty_min": 41,
-  "difficulty_max": 42,
-  "storyline": {"key":"mia-sara-b1-planning","orders":[1,2,3,4]},
-  "characters": ["Mia","Sara"],
-  "new_word_tuples": [
-    {"lemma":"verschieben","display_form":"verschieben","pos":"verb","translation":"عوض کردن زمان / به تعویق انداختن","introduced_series":81,"difficulty":41,"explicit_target_count":1,"first_target_series":81,"last_target_series":81},
-    {"lemma":"passen","display_form":"passen","pos":"verb","translation":"مناسب بودن / جور بودن","introduced_series":81,"difficulty":41,"explicit_target_count":0,"first_target_series":null,"last_target_series":null},
-    {"lemma":"leider","display_form":"leider","pos":"adverb","translation":"متاسفانه","introduced_series":81,"difficulty":41,"explicit_target_count":0,"first_target_series":null,"last_target_series":null},
-    {"lemma":"deshalb","display_form":"deshalb","pos":"adverb","translation":"برای همین / به همین دلیل","introduced_series":81,"difficulty":42,"explicit_target_count":1,"first_target_series":81,"last_target_series":81},
-    {"lemma":"vereinbaren","display_form":"vereinbaren","pos":"verb","translation":"هماهنگ کردن / قرار گذاشتن","introduced_series":81,"difficulty":42,"explicit_target_count":1,"first_target_series":81,"last_target_series":81},
-    {"lemma":"Können wir den Termin verschieben?","display_form":"Können wir den Termin verschieben?","pos":"phrase","translation":"می تونیم زمان قرار رو عوض کنیم؟","introduced_series":81,"difficulty":41,"explicit_target_count":1,"first_target_series":81,"last_target_series":81},
-    {"lemma":"Passt dir Donnerstag besser?","display_form":"Passt dir Donnerstag besser?","pos":"phrase","translation":"پنجشنبه برات بهتره؟","introduced_series":81,"difficulty":41,"explicit_target_count":1,"first_target_series":81,"last_target_series":81},
-    {"lemma":"Dann vereinbaren wir Donnerstag.","display_form":"Dann vereinbaren wir Donnerstag.","pos":"phrase","translation":"پس برای پنجشنبه هماهنگ می کنیم.","introduced_series":81,"difficulty":42,"explicit_target_count":1,"first_target_series":81,"last_target_series":81}
-  ],
-  "lessons": [
-    {
-      "sort_order":1,"title":"Der Termin passt nicht","title_translation":"زمان قرار مناسب نیست","storyline_order":1,"difficulty":41,
-      "prompt_character":"Sara","learner_character":"Mia","learning_objective":"Einen bestehenden Termin höflich verschieben.","learning_objective_translation":"درخواست مودبانه برای عوض کردن زمان یک قرار.",
-      "turns":[
-        {"order":1,"role":"character","character":"Sara","text":"Hallo Mia, bleibt es bei unserem Termin morgen?","translation":"سلام میا، قرارمون برای فردا سر جاشه؟","tokens":["Hallo","Mia",",","bleibt","es","bei","unserem","Termin","morgen","?"]},
-        {"order":2,"role":"learner","character":"Mia","text":"Leider passt es mir morgen nicht.","translation":"متاسفانه فردا برام مناسب نیست.","speech_target":"Leider passt es mir morgen nicht.","tokens":["Leider","passt","es","mir","morgen","nicht","."]},
-        {"order":3,"role":"character","character":"Sara","text":"Kein Problem. Was möchtest du machen?","translation":"مشکلی نیست. می خوای چیکار کنی؟","tokens":["Kein","Problem",".","Was","möchtest","du","machen","?"]},
-        {"order":4,"role":"learner","character":"Mia","text":"Können wir den Termin verschieben?","translation":"می تونیم زمان قرار رو عوض کنیم؟","speech_target":"Können wir den Termin verschieben?","tokens":["Können","wir","den","Termin","verschieben","?"]}
-      ],
-      "activities":[{"type":"speaking","source_turn":4,"target":"Können wir den Termin verschieben?"},{"type":"meaning_choice","source_turn":2,"target":"leider","distractors":["حتما","شاید","معمولا"]}]
-    },
-    {
-      "sort_order":2,"title":"Eine andere Zeit","title_translation":"یک زمان دیگه","storyline_order":2,"difficulty":41,
-      "prompt_character":"Sara","learner_character":"Mia","learning_objective":"Nach einer passenden Alternative fragen.","learning_objective_translation":"پرسیدن درباره یک زمان جایگزین مناسب.",
-      "turns":[
-        {"order":1,"role":"character","character":"Sara","text":"Natürlich. Passt dir Donnerstag besser?","translation":"حتما. پنجشنبه برات بهتره؟","tokens":["Natürlich",".","Passt","dir","Donnerstag","besser","?"]},
-        {"order":2,"role":"learner","character":"Mia","text":"Donnerstag passt mir gut.","translation":"پنجشنبه برام خوبه.","speech_target":"Donnerstag passt mir gut.","tokens":["Donnerstag","passt","mir","gut","."]},
-        {"order":3,"role":"character","character":"Sara","text":"Am Nachmittag habe ich allerdings einen Termin.","translation":"البته بعدازظهر یک قرار دارم.","tokens":["Am","Nachmittag","habe","ich","allerdings","einen","Termin","."]},
-        {"order":4,"role":"learner","character":"Mia","text":"Dann treffen wir uns am Vormittag.","translation":"پس صبح همدیگه رو می بینیم.","speech_target":"Dann treffen wir uns am Vormittag.","tokens":["Dann","treffen","wir","uns","am","Vormittag","."]}
-      ],
-      "activities":[{"type":"listening","source_turn":1,"target":"Donnerstag"},{"type":"speaking","source_turn":4,"target":"Dann treffen wir uns am Vormittag."}]
-    },
-    {
-      "sort_order":3,"title":"Der Grund","title_translation":"دلیل","storyline_order":3,"difficulty":42,
-      "prompt_character":"Sara","learner_character":"Mia","learning_objective":"Einen Grund nennen und mit deshalb verbinden.","learning_objective_translation":"گفتن دلیل و وصل کردن نتیجه با deshalb.",
-      "turns":[
-        {"order":1,"role":"character","character":"Sara","text":"Musst du morgen länger arbeiten?","translation":"فردا باید بیشتر سر کار بمونی؟","tokens":["Musst","du","morgen","länger","arbeiten","?"]},
-        {"order":2,"role":"learner","character":"Mia","text":"Ja, ich muss länger arbeiten.","translation":"آره، باید بیشتر سر کار بمونم.","speech_target":"Ja, ich muss länger arbeiten.","tokens":["Ja",",","ich","muss","länger","arbeiten","."]},
-        {"order":3,"role":"character","character":"Sara","text":"Dann verstehe ich, warum du keine Zeit hast.","translation":"پس می فهمم چرا وقت نداری.","tokens":["Dann","verstehe","ich",",","warum","du","keine","Zeit","hast","."]},
-        {"order":4,"role":"learner","character":"Mia","text":"Genau, deshalb möchte ich den Termin verschieben.","translation":"دقیقا، برای همین می خوام زمان قرار رو عوض کنم.","speech_target":"Genau, deshalb möchte ich den Termin verschieben.","tokens":["Genau",",","deshalb","möchte","ich","den","Termin","verschieben","."]}
-      ],
-      "activities":[{"type":"writing","source_turn":4,"target":"deshalb"},{"type":"speaking","source_turn":4,"target":"Genau, deshalb möchte ich den Termin verschieben."}]
-    },
-    {
-      "sort_order":4,"title":"Abgemacht","title_translation":"قرار شد","storyline_order":4,"difficulty":42,
-      "prompt_character":"Sara","learner_character":"Mia","learning_objective":"Eine neue Zeit verbindlich vereinbaren und bestätigen.","learning_objective_translation":"هماهنگ کردن و تایید قطعی یک زمان جدید.",
-      "turns":[
-        {"order":1,"role":"character","character":"Sara","text":"Also Donnerstag um zehn Uhr?","translation":"پس پنجشنبه ساعت ده؟","tokens":["Also","Donnerstag","um","zehn","Uhr","?"]},
-        {"order":2,"role":"learner","character":"Mia","text":"Ja, zehn Uhr passt perfekt.","translation":"آره، ساعت ده کاملا مناسبه.","speech_target":"Ja, zehn Uhr passt perfekt.","tokens":["Ja",",","zehn","Uhr","passt","perfekt","."]},
-        {"order":3,"role":"character","character":"Sara","text":"Gut, dann vereinbaren wir Donnerstag.","translation":"خوبه، پس برای پنجشنبه هماهنگ می کنیم.","tokens":["Gut",",","dann","vereinbaren","wir","Donnerstag","."]},
-        {"order":4,"role":"learner","character":"Mia","text":"Abgemacht. Danke für dein Verständnis.","translation":"قرار شد. ممنون که درک کردی.","speech_target":"Abgemacht. Danke für dein Verständnis.","tokens":["Abgemacht",".","Danke","für","dein","Verständnis","."]}
-      ],
-      "activities":[{"type":"reading","source_turns":[1,2,3,4],"task":"Welche Zeit haben Mia und Sara vereinbart?","task_translation":"میا و سارا چه زمانی را هماهنگ کردند؟","answer":"Donnerstag um zehn Uhr."},{"type":"speaking","source_turn":4,"target":"Abgemacht. Danke für dein Verständnis."}]
-    }
-  ]
+  "schema_version":"v9.1","course":"de-fa","level":"B1","batch":1,"chapter":1,"series":81,
+  "status":"qa_failed_retry_required",
+  "draft_commit":"90b96f4bafda86f7af339c2d93e51f30daafd930",
+  "title":"Einen Termin verschieben","title_translation":"عوض کردن زمان قرار",
+  "failure_reason":"The generated draft has surface token arrays but not canonical clickable token-to-word tuple mappings for every lexical token. clickable_token_coverage_100_percent therefore cannot be certified. Atomic chapter is not accepted and production state must not advance.",
+  "retry_requirements":["Resolve every lexical token to an existing canonical word tuple or create a new lemma-first tuple before acceptance.","Re-run explicit-target duplicate audit against all canonical word state files.","Re-run schema/activity/speech/Persian/storyline QA."],
+  "preserved_draft_summary":{"characters":["Mia","Sara"],"storyline_key":"mia-sara-b1-planning","lesson_count":4,"difficulty":[41,42]}
 }
