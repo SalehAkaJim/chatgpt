@@ -1,0 +1,40 @@
+{
+  "project": "Nova",
+  "schema_version": "v9",
+  "course": "de-fa",
+  "completed_levels": [
+    "A1",
+    "A2"
+  ],
+  "series_range": [
+    1,
+    80
+  ],
+  "counts": {
+    "words": 377,
+    "characters": 24,
+    "storylines": 51
+  },
+  "content_freeze": true,
+  "next_level": "B1",
+  "next_series": 81,
+  "source_archive": {
+    "filename": "nova_v9_production_series_001_080_fixed.zip",
+    "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "bytes": 502504
+  },
+  "state_files": [
+    "words_01.json",
+    "words_02.json",
+    "words_03.json",
+    "words_04.json",
+    "words_05.json",
+    "words_06.json",
+    "words_07.json",
+    "words_08.json",
+    "sources_01.json",
+    "sources_02.json",
+    "storylines_01.json",
+    "characters.json"
+  ]
+}
