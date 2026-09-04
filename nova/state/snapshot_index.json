@@ -2,39 +2,54 @@
   "project": "Nova",
   "schema_version": "v9",
   "course": "de-fa",
-  "completed_levels": [
-    "A1",
-    "A2"
-  ],
-  "series_range": [
-    1,
-    80
-  ],
+  "snapshot_purpose": "canonical generation-resume state",
+  "completed_levels": ["A1", "A2"],
+  "series_range": [1, 80],
   "counts": {
     "words": 377,
+    "explicit_targets": 244,
     "characters": 24,
     "storylines": 51
   },
   "content_freeze": true,
   "next_level": "B1",
   "next_series": 81,
+  "database_files": [
+    "../database/reset_all_v9.sql",
+    "../database/schema_v9.sql",
+    "../database/de_fa_base_seed_v9.sql",
+    "../database/runtime_lesson_query_v9.sql"
+  ],
   "source_archive": {
     "filename": "nova_v9_production_series_001_080_fixed.zip",
     "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
-    "bytes": 502504
+    "bytes": 502504,
+    "historical_sql_archive_uploaded_to_github": false
   },
   "state_files": [
-    "words_01.json",
-    "words_02.json",
-    "words_03.json",
-    "words_04.json",
-    "words_05.json",
-    "words_06.json",
-    "words_07.json",
-    "words_08.json",
-    "sources_01.json",
-    "sources_02.json",
-    "storylines_01.json",
-    "characters.json"
-  ]
+    "characters.json",
+    "storylines.json",
+    "words_state_01.json",
+    "words_state_02.json",
+    "words_state_03.json",
+    "words_state_04.json",
+    "words_state_05.json",
+    "words_state_06.json",
+    "words_state_07.json",
+    "words_state_08.json",
+    "words_state_09.json",
+    "words_state_10.json"
+  ],
+  "resume_contract": {
+    "github_is_source_of_truth_for_future_generation": true,
+    "sandbox_dependency_for_future_content_generation": false,
+    "preserve_exact_word_tuples": true,
+    "preserve_explicit_target_history": true,
+    "preserve_character_continuity": true,
+    "preserve_storyline_order_continuity": true,
+    "atomic_unit": "chapter",
+    "chapters_per_batch_artifact": 8,
+    "batch_artifacts_per_level": 5,
+    "advance_state_only_after_batch_qa_pass": true
+  }
 }
