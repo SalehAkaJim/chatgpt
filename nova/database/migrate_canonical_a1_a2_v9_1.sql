@@ -2,13 +2,62 @@
 -- NOVA v9.1.1 / canonical A1+A2 post-import migration
 --
 -- Run only after the exact Series 001-080 SQL files have been imported in
--- order. This migration backfills stable runtime keys, exact word-history
--- metadata, deterministic dictionary ordering, and ten content-batch records.
--- It is idempotent and aborts unless the complete canonical inventory exists.
+-- order AND the database has the v9.1.1 schema. For an existing v9.0 database,
+-- first run upgrade_existing_v9_0_to_v9_1_1.sql. This migration backfills
+-- stable runtime keys, exact word-history metadata, deterministic dictionary
+-- ordering, and ten content-batch records. It is idempotent and aborts unless
+-- both the required schema and complete canonical inventory exist.
 -- ============================================================================
 
 SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
 SET time_zone = '+00:00';
+
+DROP PROCEDURE IF EXISTS assert_nova_v9_1_1_schema;
+DELIMITER $$
+CREATE PROCEDURE assert_nova_v9_1_1_schema()
+BEGIN
+  DECLARE v_count INT UNSIGNED DEFAULT 0;
+
+  SELECT COUNT(*) INTO v_count
+  FROM information_schema.tables
+  WHERE table_schema = DATABASE()
+    AND table_name IN ('schema_versions','content_batches');
+  IF v_count <> 2 THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Nova v9.1.1 schema is missing. Run upgrade_existing_v9_0_to_v9_1_1.sql first.';
+  END IF;
+
+  SELECT COUNT(*) INTO v_count
+  FROM information_schema.columns
+  WHERE table_schema = DATABASE()
+    AND CONCAT(table_name,'.',column_name) IN (
+      'courses.course_key',
+      'levels.level_key',
+      'modules.module_key',
+      'chapters.batch_id',
+      'chapters.chapter_key',
+      'chapters.series_number',
+      'chapters.global_sort_order',
+      'characters.character_key',
+      'lessons.lesson_key',
+      'words.word_key',
+      'words.sense_key',
+      'words.identity_hash',
+      'words.introduced_series',
+      'words.explicit_target_count',
+      'turns.turn_key',
+      'lesson_words.sort_order',
+      'activities.activity_key'
+    );
+  IF v_count <> 17 THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Nova v9.1.1 columns are incomplete. Run the in-place schema upgrade before this migration.';
+  END IF;
+END$$
+DELIMITER ;
+
+CALL assert_nova_v9_1_1_schema();
+DROP PROCEDURE assert_nova_v9_1_1_schema;
 
 DROP PROCEDURE IF EXISTS migrate_nova_canonical_a1_a2_v9_1;
 DELIMITER $$

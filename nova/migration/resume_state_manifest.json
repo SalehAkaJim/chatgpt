@@ -33,6 +33,7 @@
       "nova/database/de_fa_base_seed_v9.sql",
       "nova/database/runtime_lesson_query_v9.sql",
       "nova/database/runtime_catalog_queries_v9.sql",
+      "nova/database/upgrade_existing_v9_0_to_v9_1_1.sql",
       "nova/database/migrate_canonical_a1_a2_v9_1.sql",
       "nova/database/validate_database_v9.sql",
       "nova/database/AUDIT_v9.md"
@@ -71,12 +72,14 @@
   "database_revision": "v9.1.1",
   "database_audit": {
     "status": "complete",
-    "implementation_status": "ready_for_live_mysql_restore_test_and_backend_implementation",
+    "implementation_status": "in_place_v9_0_upgrade_script_ready_for_live_execution",
     "canonical_archive_static_scan": "passed",
-    "full_a1_a2_restore_test": "ready_not_run_mysql_unavailable",
-    "report": "nova/database/AUDIT_v9.md"
+    "full_a1_a2_restore_test": "live_attempt_detected_v9_0_schema_upgrade_required",
+    "report": "nova/database/AUDIT_v9.md",
+    "last_live_error": "#1054 Unknown column courses.course_key during canonical migration",
+    "next_live_action": "run_upgrade_existing_v9_0_to_v9_1_1_then_migrate_and_validate"
   },
-  "content_generation_enabled": false,
+  "content_generation_enabled": true,
   "generation_status": "generating",
   "resumed_at": "2026-09-04T17:15:54.269Z",
   "resume_authorization": "explicit_user_authorization"

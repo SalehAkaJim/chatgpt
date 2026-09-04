@@ -11,7 +11,8 @@ hashes and `JSON_TABLE` validation.
 ## Recovered checkpoint
 
 - A1 and A2 are complete through Series 080.
-- B1 begins at Series 081, but content generation remains frozen.
+- B1 begins at Series 081. Its live generation status is controlled by
+  `nova/production_state.json`, not by this database audit snapshot.
 - The exact historical archive is now stored at
   `nova/archive/nova_v9_production_series_001_080_fixed.zip`.
 - Its SHA-256 is
@@ -131,9 +132,11 @@ Nova stores no password. `learners.auth_provider` plus
 authentication provider, keeping the data model independent from that product
 choice.
 
-## Restore and verification order
+## Installation, upgrade and verification order
 
-For a clean A1/A2 development database:
+### Clean installation
+
+For a new or intentionally reset A1/A2 development database:
 
 1. Run `reset_all_v9.sql` only when a destructive reset is explicitly intended.
 2. Run `schema_v9.sql`.
@@ -144,6 +147,26 @@ For a clean A1/A2 development database:
 6. Run `validate_database_v9.sql`; every violation count must be zero.
 7. Exercise `runtime_lesson_query_v9.sql` and
    `runtime_catalog_queries_v9.sql` with bound application parameters.
+
+### Existing v9.0 database with Series 001-080 already imported
+
+`schema_v9.sql` is a clean-install schema; it is not an in-place `ALTER`
+script. Running only `migrate_canonical_a1_a2_v9_1.sql` against a v9.0 schema
+fails because columns such as `courses.course_key` do not exist yet.
+
+For the existing canonical database, preserve the content and use this order:
+
+1. Take a database backup.
+2. Run `upgrade_existing_v9_0_to_v9_1_1.sql` once. It adds the v9.1.1
+   columns, keys, constraints, runtime views, content-batch table and empty
+   learner-progress tables without deleting A1/A2 content.
+3. Run `migrate_canonical_a1_a2_v9_1.sql` to backfill stable keys, Series and
+   batch lineage, dictionary order and exact word-target history.
+4. Run `validate_database_v9.sql`; every `violations` value must be zero.
+5. Exercise both runtime query files with bound application parameters.
+
+Do not apply isolated column fixes after a migration error: the v9.1.1
+migration depends on the complete schema bridge, not only `course_key`.
 
 The repository scanner and SQL parser checks pass. A live MySQL restore and
 execution of step 6 was not run in the current environment because no MySQL

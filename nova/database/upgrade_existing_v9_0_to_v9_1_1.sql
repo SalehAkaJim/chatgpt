@@ -1,108 +1,121 @@
 -- ============================================================================
--- NOVA DATABASE SCHEMA v9.1.1
+-- NOVA v9.0 -> v9.1.1 / IN-PLACE SCHEMA UPGRADE
 -- MySQL 8.0.21+
 --
--- Implementation-ready schema for:
---   1) language-agnostic course content,
---   2) deterministic lesson payloads,
---   3) content batch traceability, and
---   4) auth-provider-agnostic learner progress.
+-- Use this file only for an existing Nova v9.0 database that already contains
+-- the canonical A1/A2 Series 001-080 data. It preserves those content rows.
 --
--- Existing v9 content INSERTs remain compatible: newly added content columns
--- are nullable or have defaults, and the original table/column names remain.
--- This file is for a clean installation. To preserve an existing v9.0 database
--- with Series 001-080 already loaded, run
--- upgrade_existing_v9_0_to_v9_1_1.sql instead, then run the data migration.
+-- Required order for an existing database:
+--   1) Back up the database.
+--   2) Run this file once.
+--   3) Run migrate_canonical_a1_a2_v9_1.sql.
+--   4) Run validate_database_v9.sql and require every violations value to be 0.
+--
+-- Do not run schema_v9.sql first against an existing v9.0 database. That file
+-- is the clean-install schema, while this file is the in-place bridge.
 -- ============================================================================
 
 SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
 SET time_zone = '+00:00';
 
-CREATE TABLE schema_versions (
+-- Fail before any DDL if this is not the expected untouched v9.0 starting point.
+DROP PROCEDURE IF EXISTS assert_nova_v9_0_upgrade_source;
+DELIMITER $$
+CREATE PROCEDURE assert_nova_v9_0_upgrade_source()
+BEGIN
+  DECLARE v_count INT UNSIGNED DEFAULT 0;
+  DECLARE v_version_core VARCHAR(32);
+  DECLARE v_major INT UNSIGNED DEFAULT 0;
+  DECLARE v_minor INT UNSIGNED DEFAULT 0;
+  DECLARE v_patch INT UNSIGNED DEFAULT 0;
+
+  SET v_version_core = SUBSTRING_INDEX(VERSION(),'-',1);
+  SET v_major = CAST(SUBSTRING_INDEX(v_version_core,'.',1) AS UNSIGNED);
+  SET v_minor = CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(v_version_core,'.',2),'.',-1) AS UNSIGNED);
+  SET v_patch = CAST(SUBSTRING_INDEX(v_version_core,'.',-1) AS UNSIGNED);
+  IF LOCATE('MariaDB',VERSION()) > 0
+     OR v_major < 8
+     OR (v_major = 8 AND v_minor = 0 AND v_patch < 21) THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Nova v9.1.1 requires Oracle MySQL 8.0.21 or newer.';
+  END IF;
+
+  SELECT COUNT(*) INTO v_count
+  FROM information_schema.tables
+  WHERE table_schema = DATABASE()
+    AND table_name IN (
+      'courses','levels','modules','chapters','characters','lessons','words',
+      'turns','lesson_words','activities'
+    );
+  IF v_count <> 10 THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Expected the ten Nova v9.0 content tables in the selected database.';
+  END IF;
+
+  SELECT COUNT(*) INTO v_count
+  FROM information_schema.columns
+  WHERE table_schema = DATABASE()
+    AND table_name = 'courses'
+    AND column_name = 'course_key';
+  IF v_count <> 0 THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'course_key already exists. Do not rerun this one-time upgrade; inspect the current schema first.';
+  END IF;
+
+  SELECT COUNT(*) INTO v_count
+  FROM courses
+  WHERE learning_language = 'de' AND base_language = 'fa';
+  IF v_count <> 1 THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Expected exactly one canonical de-fa course before upgrade.';
+  END IF;
+END$$
+DELIMITER ;
+
+CALL assert_nova_v9_0_upgrade_source();
+DROP PROCEDURE assert_nova_v9_0_upgrade_source;
+
+CREATE TABLE IF NOT EXISTS schema_versions (
   version VARCHAR(32) PRIMARY KEY,
   description VARCHAR(255) NOT NULL,
   applied_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE courses (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  course_key VARCHAR(64) NULL,
-  learning_language VARCHAR(16) NOT NULL,
-  base_language VARCHAR(16) NOT NULL,
-  learning_locale VARCHAR(32) NULL,
-  base_locale VARCHAR(32) NULL,
-  learning_direction ENUM('ltr','rtl') NOT NULL DEFAULT 'ltr',
-  base_direction ENUM('ltr','rtl') NOT NULL DEFAULT 'ltr',
-  title VARCHAR(180) NOT NULL,
-  title_translation VARCHAR(180) NOT NULL,
-  description TEXT NULL,
-  description_translation TEXT NULL,
-  cover_image_url VARCHAR(1024) NULL,
-  status ENUM('planned','active','complete','archived') NOT NULL DEFAULT 'planned',
-  content_revision INT UNSIGNED NOT NULL DEFAULT 1,
-  metadata JSON NULL,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_courses_key (course_key),
-  UNIQUE KEY uq_courses_language_pair (learning_language,base_language),
-  CONSTRAINT chk_courses_distinct_languages CHECK (learning_language <> base_language),
-  CONSTRAINT chk_courses_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT')
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ALTER TABLE courses
+  ADD COLUMN course_key VARCHAR(64) NULL AFTER id,
+  ADD COLUMN learning_locale VARCHAR(32) NULL AFTER base_language,
+  ADD COLUMN base_locale VARCHAR(32) NULL AFTER learning_locale,
+  ADD COLUMN learning_direction ENUM('ltr','rtl') NOT NULL DEFAULT 'ltr' AFTER base_locale,
+  ADD COLUMN base_direction ENUM('ltr','rtl') NOT NULL DEFAULT 'ltr' AFTER learning_direction,
+  ADD COLUMN cover_image_url VARCHAR(1024) NULL AFTER description_translation,
+  ADD COLUMN content_revision INT UNSIGNED NOT NULL DEFAULT 1 AFTER status,
+  ADD UNIQUE KEY uq_courses_key (course_key),
+  ADD UNIQUE KEY uq_courses_language_pair (learning_language,base_language),
+  ADD CONSTRAINT chk_courses_distinct_languages CHECK (learning_language <> base_language),
+  ADD CONSTRAINT chk_courses_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT');
 
-CREATE TABLE levels (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  course_id BIGINT UNSIGNED NOT NULL,
-  level_key VARCHAR(32) NULL,
-  cefr_level VARCHAR(8) NOT NULL,
-  title VARCHAR(180) NOT NULL,
-  title_translation VARCHAR(180) NOT NULL,
-  description TEXT NULL,
-  description_translation TEXT NULL,
-  cover_image_url VARCHAR(1024) NULL,
-  difficulty_min TINYINT UNSIGNED NOT NULL,
-  difficulty_max TINYINT UNSIGNED NOT NULL,
-  sort_order INT UNSIGNED NOT NULL,
-  status ENUM('planned','active','complete','archived') NOT NULL DEFAULT 'planned',
-  metadata JSON NULL,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_levels_course_cefr (course_id,cefr_level),
-  UNIQUE KEY uq_levels_course_order (course_id,sort_order),
-  UNIQUE KEY uq_levels_course_key (course_id,level_key),
-  CONSTRAINT chk_levels_difficulty CHECK (difficulty_min <= difficulty_max),
-  CONSTRAINT chk_levels_sort_order CHECK (sort_order > 0),
-  CONSTRAINT chk_levels_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
-  CONSTRAINT fk_levels_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ALTER TABLE levels
+  ADD COLUMN level_key VARCHAR(32) NULL AFTER course_id,
+  ADD COLUMN cover_image_url VARCHAR(1024) NULL AFTER description_translation,
+  ADD UNIQUE KEY uq_levels_course_cefr (course_id,cefr_level),
+  ADD UNIQUE KEY uq_levels_course_order (course_id,sort_order),
+  ADD UNIQUE KEY uq_levels_course_key (course_id,level_key),
+  ADD CONSTRAINT chk_levels_difficulty CHECK (difficulty_min <= difficulty_max),
+  ADD CONSTRAINT chk_levels_sort_order CHECK (sort_order > 0),
+  ADD CONSTRAINT chk_levels_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT');
 
-CREATE TABLE modules (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  level_id BIGINT UNSIGNED NOT NULL,
-  module_key VARCHAR(64) NULL,
-  title VARCHAR(180) NOT NULL,
-  title_translation VARCHAR(180) NOT NULL,
-  description TEXT NULL,
-  description_translation TEXT NULL,
-  emoji VARCHAR(32) NULL,
-  cover_image_url VARCHAR(1024) NULL,
-  planned_chapter_count INT UNSIGNED NULL,
-  difficulty_min TINYINT UNSIGNED NOT NULL,
-  difficulty_max TINYINT UNSIGNED NOT NULL,
-  sort_order INT UNSIGNED NOT NULL,
-  status ENUM('planned','active','complete','archived') NOT NULL DEFAULT 'planned',
-  metadata JSON NULL,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_modules_level_order (level_id,sort_order),
-  UNIQUE KEY uq_modules_level_key (level_id,module_key),
-  CONSTRAINT chk_modules_difficulty CHECK (difficulty_min <= difficulty_max),
-  CONSTRAINT chk_modules_sort_order CHECK (sort_order > 0),
-  CONSTRAINT chk_modules_planned_count CHECK (planned_chapter_count IS NULL OR planned_chapter_count > 0),
-  CONSTRAINT chk_modules_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
-  CONSTRAINT fk_modules_level FOREIGN KEY(level_id) REFERENCES levels(id) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ALTER TABLE modules
+  ADD COLUMN module_key VARCHAR(64) NULL AFTER level_id,
+  ADD COLUMN cover_image_url VARCHAR(1024) NULL AFTER emoji,
+  ADD COLUMN planned_chapter_count INT UNSIGNED NULL AFTER cover_image_url,
+  ADD UNIQUE KEY uq_modules_level_order (level_id,sort_order),
+  ADD UNIQUE KEY uq_modules_level_key (level_id,module_key),
+  ADD CONSTRAINT chk_modules_difficulty CHECK (difficulty_min <= difficulty_max),
+  ADD CONSTRAINT chk_modules_sort_order CHECK (sort_order > 0),
+  ADD CONSTRAINT chk_modules_planned_count CHECK (planned_chapter_count IS NULL OR planned_chapter_count > 0),
+  ADD CONSTRAINT chk_modules_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT');
 
-CREATE TABLE content_batches (
+CREATE TABLE IF NOT EXISTS content_batches (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   level_id BIGINT UNSIGNED NOT NULL,
   batch_number TINYINT UNSIGNED NOT NULL,
@@ -130,150 +143,83 @@ CREATE TABLE content_batches (
   CONSTRAINT fk_content_batches_level FOREIGN KEY(level_id) REFERENCES levels(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE chapters (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  module_id BIGINT UNSIGNED NOT NULL,
-  batch_id BIGINT UNSIGNED NULL,
-  chapter_key VARCHAR(96) NULL,
-  series_number INT UNSIGNED NULL,
-  global_sort_order INT UNSIGNED NULL,
-  title VARCHAR(180) NOT NULL,
-  title_translation VARCHAR(180) NOT NULL,
-  description TEXT NULL,
-  description_translation TEXT NULL,
-  cover_image_url VARCHAR(1024) NULL,
-  planned_lesson_count INT UNSIGNED NULL,
-  estimated_duration_sec INT UNSIGNED NULL,
-  difficulty_min TINYINT UNSIGNED NOT NULL,
-  difficulty_max TINYINT UNSIGNED NOT NULL,
-  sort_order INT UNSIGNED NOT NULL,
-  status ENUM('planned','draft','validated','complete','archived') NOT NULL DEFAULT 'planned',
-  published_at TIMESTAMP NULL,
-  metadata JSON NULL,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_chapters_module_order (module_id,sort_order),
-  UNIQUE KEY uq_chapters_module_key (module_id,chapter_key),
-  UNIQUE KEY uq_chapters_batch_series (batch_id,series_number),
-  KEY idx_chapters_series (series_number),
-  KEY idx_chapters_global_order (global_sort_order),
-  CONSTRAINT chk_chapters_difficulty CHECK (difficulty_min <= difficulty_max),
-  CONSTRAINT chk_chapters_sort_order CHECK (sort_order > 0),
-  CONSTRAINT chk_chapters_global_order CHECK (global_sort_order IS NULL OR global_sort_order > 0),
-  CONSTRAINT chk_chapters_series CHECK (series_number IS NULL OR series_number > 0),
-  CONSTRAINT chk_chapters_planned_count CHECK (planned_lesson_count IS NULL OR planned_lesson_count > 0),
-  CONSTRAINT chk_chapters_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
-  CONSTRAINT fk_chapters_module FOREIGN KEY(module_id) REFERENCES modules(id) ON DELETE CASCADE,
-  CONSTRAINT fk_chapters_batch FOREIGN KEY(batch_id) REFERENCES content_batches(id) ON DELETE SET NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ALTER TABLE chapters
+  ADD COLUMN batch_id BIGINT UNSIGNED NULL AFTER module_id,
+  ADD COLUMN chapter_key VARCHAR(96) NULL AFTER batch_id,
+  ADD COLUMN series_number INT UNSIGNED NULL AFTER chapter_key,
+  ADD COLUMN global_sort_order INT UNSIGNED NULL AFTER series_number,
+  ADD COLUMN cover_image_url VARCHAR(1024) NULL AFTER description_translation,
+  ADD COLUMN estimated_duration_sec INT UNSIGNED NULL AFTER planned_lesson_count,
+  ADD COLUMN published_at TIMESTAMP NULL AFTER status,
+  ADD UNIQUE KEY uq_chapters_module_order (module_id,sort_order),
+  ADD UNIQUE KEY uq_chapters_module_key (module_id,chapter_key),
+  ADD UNIQUE KEY uq_chapters_batch_series (batch_id,series_number),
+  ADD KEY idx_chapters_series (series_number),
+  ADD KEY idx_chapters_global_order (global_sort_order),
+  ADD CONSTRAINT chk_chapters_difficulty CHECK (difficulty_min <= difficulty_max),
+  ADD CONSTRAINT chk_chapters_sort_order CHECK (sort_order > 0),
+  ADD CONSTRAINT chk_chapters_global_order CHECK (global_sort_order IS NULL OR global_sort_order > 0),
+  ADD CONSTRAINT chk_chapters_series CHECK (series_number IS NULL OR series_number > 0),
+  ADD CONSTRAINT chk_chapters_planned_count CHECK (planned_lesson_count IS NULL OR planned_lesson_count > 0),
+  ADD CONSTRAINT chk_chapters_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
+  ADD CONSTRAINT fk_chapters_batch FOREIGN KEY(batch_id) REFERENCES content_batches(id) ON DELETE SET NULL;
 
-CREATE TABLE characters (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  course_id BIGINT UNSIGNED NOT NULL,
-  character_key VARCHAR(64) NULL,
-  name VARCHAR(120) NOT NULL,
-  name_translation VARCHAR(120) NULL,
-  gender ENUM('female','male','nonbinary','unspecified') NOT NULL DEFAULT 'unspecified',
-  avatar_url VARCHAR(1024) NULL,
-  voice_key VARCHAR(128) NULL,
-  profile JSON NULL,
-  metadata JSON NULL,
-  is_active TINYINT(1) NOT NULL DEFAULT 1,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_characters_course_name (course_id,name),
-  UNIQUE KEY uq_characters_course_key (course_id,character_key),
-  CONSTRAINT chk_characters_profile CHECK (profile IS NULL OR JSON_TYPE(profile) = 'OBJECT'),
-  CONSTRAINT chk_characters_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
-  CONSTRAINT fk_characters_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ALTER TABLE characters
+  ADD COLUMN character_key VARCHAR(64) NULL AFTER course_id,
+  ADD COLUMN name_translation VARCHAR(120) NULL AFTER name,
+  ADD UNIQUE KEY uq_characters_course_name (course_id,name),
+  ADD UNIQUE KEY uq_characters_course_key (course_id,character_key),
+  ADD CONSTRAINT chk_characters_profile CHECK (profile IS NULL OR JSON_TYPE(profile) = 'OBJECT'),
+  ADD CONSTRAINT chk_characters_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT');
 
-CREATE TABLE lessons (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  chapter_id BIGINT UNSIGNED NOT NULL,
-  prompt_character_id BIGINT UNSIGNED NOT NULL,
-  learner_character_id BIGINT UNSIGNED NOT NULL,
-  lesson_key VARCHAR(96) NULL,
-  title VARCHAR(180) NOT NULL,
-  title_translation VARCHAR(180) NOT NULL,
-  description TEXT NULL,
-  description_translation TEXT NULL,
-  learning_objective TEXT NULL,
-  learning_objective_translation TEXT NULL,
-  lesson_type ENUM('story') NOT NULL DEFAULT 'story',
-  storyline_key VARCHAR(120) NULL,
-  storyline_order INT UNSIGNED NULL,
-  difficulty TINYINT UNSIGNED NOT NULL,
-  estimated_duration_sec INT UNSIGNED NULL,
-  full_audio_url VARCHAR(1024) NULL,
-  full_audio_duration_ms INT UNSIGNED NULL,
-  sort_order INT UNSIGNED NOT NULL,
-  status ENUM('draft','validated','published','archived') NOT NULL DEFAULT 'draft',
-  content_version INT UNSIGNED NOT NULL DEFAULT 1,
-  content_hash CHAR(64) NULL,
-  published_at TIMESTAMP NULL,
-  metadata JSON NULL,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_lessons_chapter_order (chapter_id,sort_order),
-  UNIQUE KEY uq_lessons_chapter_key (chapter_id,lesson_key),
-  KEY idx_lessons_storyline (storyline_key,storyline_order),
-  KEY idx_lessons_status (status),
-  CONSTRAINT chk_lessons_characters CHECK (prompt_character_id <> learner_character_id),
-  CONSTRAINT chk_lessons_sort_order CHECK (sort_order > 0),
-  CONSTRAINT chk_lessons_storyline_pair CHECK (
+ALTER TABLE lessons
+  ADD COLUMN lesson_key VARCHAR(96) NULL AFTER learner_character_id,
+  ADD COLUMN learning_objective TEXT NULL AFTER description_translation,
+  ADD COLUMN learning_objective_translation TEXT NULL AFTER learning_objective,
+  ADD COLUMN full_audio_url VARCHAR(1024) NULL AFTER estimated_duration_sec,
+  ADD COLUMN full_audio_duration_ms INT UNSIGNED NULL AFTER full_audio_url,
+  ADD COLUMN content_version INT UNSIGNED NOT NULL DEFAULT 1 AFTER status,
+  ADD COLUMN content_hash CHAR(64) NULL AFTER content_version,
+  ADD COLUMN published_at TIMESTAMP NULL AFTER content_hash,
+  ADD UNIQUE KEY uq_lessons_chapter_order (chapter_id,sort_order),
+  ADD UNIQUE KEY uq_lessons_chapter_key (chapter_id,lesson_key),
+  ADD KEY idx_lessons_status (status),
+  ADD CONSTRAINT chk_lessons_characters CHECK (prompt_character_id <> learner_character_id),
+  ADD CONSTRAINT chk_lessons_sort_order CHECK (sort_order > 0),
+  ADD CONSTRAINT chk_lessons_storyline_pair CHECK (
     (storyline_key IS NULL AND storyline_order IS NULL)
     OR (storyline_key IS NOT NULL AND storyline_order IS NOT NULL AND storyline_order > 0)
   ),
-  CONSTRAINT chk_lessons_content_hash CHECK (content_hash IS NULL OR content_hash REGEXP '^[0-9a-f]{64}$'),
-  CONSTRAINT chk_lessons_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
-  CONSTRAINT fk_lessons_chapter FOREIGN KEY(chapter_id) REFERENCES chapters(id) ON DELETE CASCADE,
-  CONSTRAINT fk_lessons_prompt_character FOREIGN KEY(prompt_character_id) REFERENCES characters(id),
-  CONSTRAINT fk_lessons_learner_character FOREIGN KEY(learner_character_id) REFERENCES characters(id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  ADD CONSTRAINT chk_lessons_content_hash CHECK (content_hash IS NULL OR content_hash REGEXP '^[0-9a-f]{64}$'),
+  ADD CONSTRAINT chk_lessons_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT');
 
-CREATE TABLE words (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  course_id BIGINT UNSIGNED NOT NULL,
-  word_key VARCHAR(96) NULL,
-  sense_key VARCHAR(64) NULL,
-  lemma VARCHAR(255) NOT NULL,
-  display_form VARCHAR(255) NOT NULL,
-  part_of_speech VARCHAR(48) NOT NULL,
-  translation VARCHAR(512) NOT NULL,
-  identity_hash CHAR(64)
+ALTER TABLE words
+  MODIFY COLUMN lemma VARCHAR(255) NOT NULL,
+  MODIFY COLUMN display_form VARCHAR(255) NOT NULL,
+  MODIFY COLUMN translation VARCHAR(512) NOT NULL,
+  ADD COLUMN word_key VARCHAR(96) NULL AFTER course_id,
+  ADD COLUMN sense_key VARCHAR(64) NULL AFTER word_key,
+  ADD COLUMN identity_hash CHAR(64)
     GENERATED ALWAYS AS (
       SHA2(CONCAT_WS(CHAR(31),lemma,part_of_speech,translation),256)
-    ) STORED,
-  pronunciation_hint VARCHAR(255) NULL,
-  romanization VARCHAR(255) NULL,
-  difficulty TINYINT UNSIGNED NOT NULL,
-  grammar JSON NULL,
-  distractors JSON NOT NULL,
-  related_words JSON NULL,
-  example_text TEXT NULL,
-  example_translation TEXT NULL,
-  audio_url VARCHAR(1024) NULL,
-  audio_duration_ms INT UNSIGNED NULL,
-  introduced_series INT UNSIGNED NULL,
-  explicit_target_count INT UNSIGNED NOT NULL DEFAULT 0,
-  first_target_series INT UNSIGNED NULL,
-  last_target_series INT UNSIGNED NULL,
-  metadata JSON NULL,
-  is_active TINYINT(1) NOT NULL DEFAULT 1,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_words_course_key (course_id,word_key),
-  UNIQUE KEY uq_words_course_sense (course_id,lemma,part_of_speech,sense_key),
-  UNIQUE KEY uq_words_course_identity (course_id,identity_hash),
-  KEY idx_words_course_lemma (course_id,lemma),
-  KEY idx_words_course_display (course_id,display_form),
-  KEY idx_words_difficulty (course_id,difficulty),
-  KEY idx_words_target_history (course_id,explicit_target_count,last_target_series),
-  CONSTRAINT chk_words_grammar CHECK (grammar IS NULL OR JSON_TYPE(grammar) = 'OBJECT'),
-  CONSTRAINT chk_words_distractors CHECK (JSON_TYPE(distractors) = 'ARRAY'),
-  CONSTRAINT chk_words_related CHECK (related_words IS NULL OR JSON_TYPE(related_words) = 'ARRAY'),
-  CONSTRAINT chk_words_target_history CHECK (
+    ) STORED AFTER translation,
+  ADD COLUMN pronunciation_hint VARCHAR(255) NULL AFTER identity_hash,
+  ADD COLUMN romanization VARCHAR(255) NULL AFTER pronunciation_hint,
+  ADD COLUMN related_words JSON NULL AFTER distractors,
+  ADD COLUMN introduced_series INT UNSIGNED NULL AFTER audio_duration_ms,
+  ADD COLUMN explicit_target_count INT UNSIGNED NOT NULL DEFAULT 0 AFTER introduced_series,
+  ADD COLUMN first_target_series INT UNSIGNED NULL AFTER explicit_target_count,
+  ADD COLUMN last_target_series INT UNSIGNED NULL AFTER first_target_series,
+  ADD COLUMN is_active TINYINT(1) NOT NULL DEFAULT 1 AFTER metadata,
+  ADD UNIQUE KEY uq_words_course_key (course_id,word_key),
+  ADD UNIQUE KEY uq_words_course_sense (course_id,lemma,part_of_speech,sense_key),
+  ADD UNIQUE KEY uq_words_course_identity (course_id,identity_hash),
+  ADD KEY idx_words_course_display (course_id,display_form),
+  ADD KEY idx_words_target_history (course_id,explicit_target_count,last_target_series),
+  ADD CONSTRAINT chk_words_grammar CHECK (grammar IS NULL OR JSON_TYPE(grammar) = 'OBJECT'),
+  ADD CONSTRAINT chk_words_distractors CHECK (JSON_TYPE(distractors) = 'ARRAY'),
+  ADD CONSTRAINT chk_words_related CHECK (related_words IS NULL OR JSON_TYPE(related_words) = 'ARRAY'),
+  ADD CONSTRAINT chk_words_target_history CHECK (
     (explicit_target_count = 0 AND first_target_series IS NULL AND last_target_series IS NULL)
     OR (
       explicit_target_count > 0
@@ -281,94 +227,53 @@ CREATE TABLE words (
       AND last_target_series IS NOT NULL
       AND first_target_series <= last_target_series
     )
-  ),
-  CONSTRAINT fk_words_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  );
 
-CREATE TABLE turns (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  lesson_id BIGINT UNSIGNED NOT NULL,
-  character_id BIGINT UNSIGNED NOT NULL,
-  turn_key VARCHAR(96) NULL,
-  sort_order INT UNSIGNED NOT NULL,
-  role ENUM('character','learner') NOT NULL,
-  text TEXT NOT NULL,
-  translation TEXT NOT NULL,
-  difficulty TINYINT UNSIGNED NOT NULL,
-  audio_url VARCHAR(1024) NULL,
-  audio_duration_ms INT UNSIGNED NULL,
-  speech_target TEXT NULL,
-  speech_alternatives JSON NULL,
-  tokens JSON NOT NULL,
-  grammar_title VARCHAR(255) NULL,
-  grammar_note TEXT NULL,
-  grammar_data JSON NULL,
-  metadata JSON NULL,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_turns_lesson_order (lesson_id,sort_order),
-  UNIQUE KEY uq_turns_lesson_key (lesson_id,turn_key),
-  KEY idx_turns_character (character_id),
-  KEY idx_turns_role (lesson_id,role),
-  CONSTRAINT chk_turns_sort_order CHECK (sort_order > 0),
-  CONSTRAINT chk_turns_speech_target CHECK (
+ALTER TABLE turns
+  ADD COLUMN turn_key VARCHAR(96) NULL AFTER character_id,
+  ADD UNIQUE KEY uq_turns_lesson_order (lesson_id,sort_order),
+  ADD UNIQUE KEY uq_turns_lesson_key (lesson_id,turn_key),
+  ADD KEY idx_turns_character (character_id),
+  ADD KEY idx_turns_role (lesson_id,role),
+  ADD CONSTRAINT chk_turns_sort_order CHECK (sort_order > 0),
+  ADD CONSTRAINT chk_turns_speech_target CHECK (
     role = 'character' OR (speech_target IS NOT NULL AND CHAR_LENGTH(TRIM(speech_target)) > 0)
   ),
-  CONSTRAINT chk_turns_speech_alternatives CHECK (
+  ADD CONSTRAINT chk_turns_speech_alternatives CHECK (
     speech_alternatives IS NULL OR JSON_TYPE(speech_alternatives) = 'ARRAY'
   ),
-  CONSTRAINT chk_turns_tokens CHECK (JSON_TYPE(tokens) = 'ARRAY'),
-  CONSTRAINT chk_turns_grammar_data CHECK (grammar_data IS NULL OR JSON_TYPE(grammar_data) = 'OBJECT'),
-  CONSTRAINT chk_turns_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
-  CONSTRAINT fk_turns_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
-  CONSTRAINT fk_turns_character FOREIGN KEY(character_id) REFERENCES characters(id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  ADD CONSTRAINT chk_turns_tokens CHECK (JSON_TYPE(tokens) = 'ARRAY'),
+  ADD CONSTRAINT chk_turns_grammar_data CHECK (grammar_data IS NULL OR JSON_TYPE(grammar_data) = 'OBJECT'),
+  ADD CONSTRAINT chk_turns_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT');
 
-CREATE TABLE lesson_words (
-  lesson_id BIGINT UNSIGNED NOT NULL,
-  word_id BIGINT UNSIGNED NOT NULL,
-  sort_order INT UNSIGNED NOT NULL DEFAULT 0,
-  learning_role ENUM('new','review','passive') NOT NULL,
-  is_target TINYINT(1) NOT NULL DEFAULT 0,
-  exposure_count INT UNSIGNED NOT NULL DEFAULT 1,
-  metadata JSON NULL,
-  PRIMARY KEY(lesson_id,word_id),
-  KEY idx_lesson_words_order (lesson_id,sort_order,word_id),
-  KEY idx_lesson_words_word (word_id,learning_role),
-  CONSTRAINT chk_lesson_words_exposure CHECK (exposure_count > 0),
-  CONSTRAINT chk_lesson_words_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
-  CONSTRAINT fk_lesson_words_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
-  CONSTRAINT fk_lesson_words_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ALTER TABLE lesson_words
+  ADD COLUMN sort_order INT UNSIGNED NOT NULL DEFAULT 0 AFTER word_id,
+  ADD COLUMN metadata JSON NULL AFTER exposure_count,
+  ADD KEY idx_lesson_words_order (lesson_id,sort_order,word_id),
+  ADD KEY idx_lesson_words_word (word_id,learning_role),
+  ADD CONSTRAINT chk_lesson_words_exposure CHECK (exposure_count > 0),
+  ADD CONSTRAINT chk_lesson_words_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT');
 
-CREATE TABLE activities (
-  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  lesson_id BIGINT UNSIGNED NOT NULL,
-  activity_key VARCHAR(96) NULL,
-  activity_type ENUM('listen','speak','new_word','meaning_choice','reading_comprehension','word_order') NOT NULL,
-  sort_order INT UNSIGNED NOT NULL,
-  turn_id BIGINT UNSIGNED NULL,
-  word_id BIGINT UNSIGNED NULL,
-  prompt TEXT NULL,
-  prompt_translation TEXT NULL,
-  instruction TEXT NULL,
-  instruction_translation TEXT NULL,
-  difficulty TINYINT UNSIGNED NOT NULL,
-  is_required TINYINT(1) NOT NULL DEFAULT 1,
-  max_score DECIMAL(7,2) UNSIGNED NOT NULL DEFAULT 100.00,
-  estimated_duration_sec INT UNSIGNED NULL,
-  config JSON NULL,
-  metadata JSON NULL,
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_activities_lesson_order (lesson_id,sort_order),
-  UNIQUE KEY uq_activities_lesson_key (lesson_id,activity_key),
-  KEY idx_activities_type (activity_type),
-  KEY idx_activities_turn (turn_id),
-  KEY idx_activities_word (word_id),
-  CONSTRAINT chk_activities_sort_order CHECK (sort_order > 0),
-  CONSTRAINT chk_activities_score CHECK (max_score > 0),
-  CONSTRAINT chk_activities_source CHECK (
+-- Replace the two v9.0 SET NULL rules with the v9.1.1 RESTRICT contract.
+ALTER TABLE activities
+  DROP FOREIGN KEY fk_activities_turn,
+  DROP FOREIGN KEY fk_activities_word;
+
+ALTER TABLE activities
+  ADD COLUMN activity_key VARCHAR(96) NULL AFTER lesson_id,
+  ADD COLUMN prompt_translation TEXT NULL AFTER prompt,
+  ADD COLUMN instruction_translation TEXT NULL AFTER instruction,
+  ADD COLUMN is_required TINYINT(1) NOT NULL DEFAULT 1 AFTER difficulty,
+  ADD COLUMN max_score DECIMAL(7,2) UNSIGNED NOT NULL DEFAULT 100.00 AFTER is_required,
+  ADD COLUMN estimated_duration_sec INT UNSIGNED NULL AFTER max_score,
+  ADD COLUMN updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP AFTER created_at,
+  ADD UNIQUE KEY uq_activities_lesson_order (lesson_id,sort_order),
+  ADD UNIQUE KEY uq_activities_lesson_key (lesson_id,activity_key),
+  ADD KEY idx_activities_turn (turn_id),
+  ADD KEY idx_activities_word (word_id),
+  ADD CONSTRAINT chk_activities_sort_order CHECK (sort_order > 0),
+  ADD CONSTRAINT chk_activities_score CHECK (max_score > 0),
+  ADD CONSTRAINT chk_activities_source CHECK (
     (
       activity_type IN ('listen','speak','word_order')
       AND turn_id IS NOT NULL AND word_id IS NULL
@@ -389,16 +294,14 @@ CREATE TABLE activities (
       AND turn_id IS NULL AND word_id IS NULL
     )
   ),
-  CONSTRAINT chk_activities_config CHECK (config IS NULL OR JSON_TYPE(config) = 'OBJECT'),
-  CONSTRAINT chk_activities_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
-  CONSTRAINT fk_activities_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
-  CONSTRAINT fk_activities_turn FOREIGN KEY(turn_id) REFERENCES turns(id) ON DELETE RESTRICT,
-  CONSTRAINT fk_activities_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE RESTRICT
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  ADD CONSTRAINT chk_activities_config CHECK (config IS NULL OR JSON_TYPE(config) = 'OBJECT'),
+  ADD CONSTRAINT chk_activities_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
+  ADD CONSTRAINT fk_activities_turn FOREIGN KEY(turn_id) REFERENCES turns(id) ON DELETE RESTRICT,
+  ADD CONSTRAINT fk_activities_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE RESTRICT;
 
--- Authentication remains outside Nova. `external_subject` stores the stable ID
--- from any chosen authentication provider and never stores a password.
-CREATE TABLE learners (
+-- Authentication remains outside Nova. These provider-neutral tables contain
+-- only learner state and start empty during the content-schema upgrade.
+CREATE TABLE IF NOT EXISTS learners (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   auth_provider VARCHAR(64) NOT NULL DEFAULT 'external',
   external_subject VARCHAR(191) NOT NULL,
@@ -414,7 +317,7 @@ CREATE TABLE learners (
   CONSTRAINT chk_learners_preferences CHECK (preferences IS NULL OR JSON_TYPE(preferences) = 'OBJECT')
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE course_enrollments (
+CREATE TABLE IF NOT EXISTS course_enrollments (
   learner_id BIGINT UNSIGNED NOT NULL,
   course_id BIGINT UNSIGNED NOT NULL,
   current_lesson_id BIGINT UNSIGNED NULL,
@@ -433,7 +336,7 @@ CREATE TABLE course_enrollments (
   CONSTRAINT fk_course_enrollments_lesson FOREIGN KEY(current_lesson_id) REFERENCES lessons(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE lesson_sessions (
+CREATE TABLE IF NOT EXISTS lesson_sessions (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   session_key CHAR(36) NOT NULL,
   learner_id BIGINT UNSIGNED NOT NULL,
@@ -459,7 +362,7 @@ CREATE TABLE lesson_sessions (
   CONSTRAINT fk_lesson_sessions_activity FOREIGN KEY(current_activity_id) REFERENCES activities(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE lesson_progress (
+CREATE TABLE IF NOT EXISTS lesson_progress (
   learner_id BIGINT UNSIGNED NOT NULL,
   lesson_id BIGINT UNSIGNED NOT NULL,
   last_session_id BIGINT UNSIGNED NULL,
@@ -480,7 +383,7 @@ CREATE TABLE lesson_progress (
   CONSTRAINT fk_lesson_progress_session FOREIGN KEY(last_session_id) REFERENCES lesson_sessions(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE activity_attempts (
+CREATE TABLE IF NOT EXISTS activity_attempts (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   session_id BIGINT UNSIGNED NOT NULL,
   learner_id BIGINT UNSIGNED NOT NULL,
@@ -517,7 +420,7 @@ CREATE TABLE activity_attempts (
   CONSTRAINT fk_activity_attempts_activity FOREIGN KEY(activity_id) REFERENCES activities(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE word_progress (
+CREATE TABLE IF NOT EXISTS word_progress (
   learner_id BIGINT UNSIGNED NOT NULL,
   word_id BIGINT UNSIGNED NOT NULL,
   status ENUM('new','learning','review','mastered') NOT NULL DEFAULT 'new',
@@ -540,7 +443,14 @@ CREATE TABLE word_progress (
   CONSTRAINT fk_word_progress_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Flat, deterministic path used by catalog, unlock and resume queries.
+-- Replace the v9.0 view and install the deterministic v9.1.1 runtime views.
+DROP VIEW IF EXISTS
+  v_lesson_runtime,
+  v_lesson_dictionary,
+  v_lesson_activities,
+  v_lesson_story,
+  v_lesson_path;
+
 CREATE VIEW v_lesson_path AS
 SELECT
   c.id AS course_id,
@@ -577,8 +487,6 @@ JOIN modules m ON m.level_id = lv.id
 JOIN chapters ch ON ch.module_id = m.id
 JOIN lessons l ON l.chapter_id = ch.id;
 
--- Windowed JSON aggregation guarantees turn ordering on MySQL 8 without the
--- GROUP_CONCAT size/truncation risk of the previous view.
 CREATE VIEW v_lesson_story AS
 SELECT lesson_id, story
 FROM (
@@ -687,8 +595,6 @@ FROM (
 ) ordered_dictionary
 WHERE row_num = 1;
 
--- One row is the complete immutable lesson content payload needed by the app.
--- Learner state is deliberately queried separately so this view remains cacheable.
 CREATE VIEW v_lesson_runtime AS
 SELECT
   p.course_id,
@@ -759,4 +665,12 @@ LEFT JOIN v_lesson_activities a ON a.lesson_id = l.id
 LEFT JOIN v_lesson_dictionary d ON d.lesson_id = l.id;
 
 INSERT INTO schema_versions(version,description)
-VALUES ('v9.1.1','Implementation-ready Nova v9 content, runtime, migration and learner-progress schema');
+VALUES (
+  'v9.1.1-schema',
+  'In-place Nova v9.0 to v9.1.1 schema bridge; canonical data backfill pending'
+)
+ON DUPLICATE KEY UPDATE description = VALUES(description);
+
+SELECT
+  'PASS' AS schema_upgrade_status,
+  'Now run migrate_canonical_a1_a2_v9_1.sql' AS next_step;

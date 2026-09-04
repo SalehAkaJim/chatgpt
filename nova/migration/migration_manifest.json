@@ -137,8 +137,15 @@
   },
   "legacy_batch_specs_note": "The ten gzip+base64 rows above preserve the previously calculated derived-batch checksums. They are not required now that the exact source ZIP and all 105 extracted members are stored in GitHub.",
   "legacy_gzip_base64_batches_present": false,
-  "recovery": "Verify the canonical ZIP checksum, then import the extracted Series SQL files in numeric order and run nova/database/migrate_canonical_a1_a2_v9_1.sql.",
+  "recovery": "For a clean database, use schema_v9.sql, seed and Series 001-080 before migration. For an existing canonical v9.0 database, back up and run nova/database/upgrade_existing_v9_0_to_v9_1_1.sql before migrate_canonical_a1_a2_v9_1.sql.",
   "artifacts_present_in_repository": true,
-  "restore_status": "ready_for_live_mysql_restore_test",
-  "restore_requirement": "Run the documented clean MySQL restore and nova/database/validate_database_v9.sql; static full-archive validation already passes."
+  "restore_status": "in_place_upgrade_script_ready_not_run",
+  "restore_requirement": "Back up the existing database; run the in-place upgrade, canonical migration and validator. Every violations value must be zero.",
+  "database_revision": "v9.1.1",
+  "existing_v9_0_upgrade": {
+    "path": "nova/database/upgrade_existing_v9_0_to_v9_1_1.sql",
+    "preserves_a1_a2_content": true,
+    "required_before": "nova/database/migrate_canonical_a1_a2_v9_1.sql",
+    "reported_error_fixed": "#1054 Unknown column courses.course_key"
+  }
 }

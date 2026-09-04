@@ -37,10 +37,13 @@
   },
   "database": {
     "revision": "v9.1.1",
-    "audit_status": "complete",
-    "implementation_status": "ready_for_live_mysql_restore_test_and_backend_implementation",
+    "audit_status": "complete_with_in_place_upgrade_path",
+    "implementation_status": "live_v9_0_detected_upgrade_script_ready",
     "canonical_archive_static_scan": "passed",
-    "full_a1_a2_restore_test": "ready_not_run_mysql_unavailable"
+    "full_a1_a2_restore_test": "blocked_until_in_place_schema_upgrade_runs",
+    "live_mysql_status": "schema_upgrade_required_before_canonical_migration",
+    "last_live_error": "#1054 Unknown column courses.course_key",
+    "next_live_action": "run_upgrade_existing_v9_0_to_v9_1_1_then_migrate_and_validate"
   },
   "canonical_archive": {
     "path": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
@@ -56,7 +59,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-04T17:15:54.269Z",
+  "updated_at": "2026-09-04T18:34:02.883Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",

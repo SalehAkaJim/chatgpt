@@ -25,8 +25,10 @@ chapter, and keep published state unchanged until all eight chapters and batch Q
 ## Database
 
 Database artifacts and the completed audit are in `nova/database/`. Start with
-`AUDIT_v9.md`, then use the schema, bootstrap seed, runtime examples and
-validation SQL in the documented order.
+`AUDIT_v9.md`. For a clean database use `schema_v9.sql`; for an existing v9.0
+database that already contains Series 001-080, first back it up and run
+`upgrade_existing_v9_0_to_v9_1_1.sql`, then run the canonical migration and
+validator.
 
 ## Canonical A1/A2 archive
 
@@ -41,9 +43,9 @@ The archive checksum, per-file checksums and complete independent scan are in:
 - `nova/archive/series_001_080_fixed/FULL_SCAN_REPORT.json`
 - `nova/tools/scan_canonical_archive.py`
 
-The static archive scan passes. The remaining database verification gate is a
-clean execution on MySQL 8.0.21+, followed by
-`nova/database/migrate_canonical_a1_a2_v9_1.sql` and
+The static archive scan passes. Live verification requires MySQL 8.0.21+.
+Both clean-install and existing-v9.0 upgrade orders are documented in
+`nova/database/AUDIT_v9.md`; either route ends with the canonical migration and
 `nova/database/validate_database_v9.sql`.
 
 No future production workflow may depend on temporary ChatGPT sandbox files.

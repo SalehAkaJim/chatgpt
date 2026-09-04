@@ -26,6 +26,7 @@
     "../database/de_fa_base_seed_v9.sql",
     "../database/runtime_lesson_query_v9.sql",
     "../database/runtime_catalog_queries_v9.sql",
+    "../database/upgrade_existing_v9_0_to_v9_1_1.sql",
     "../database/migrate_canonical_a1_a2_v9_1.sql",
     "../database/validate_database_v9.sql"
   ],
@@ -68,7 +69,12 @@
   },
   "database_revision": "v9.1.1",
   "database_audit": "../database/AUDIT_v9.md",
-  "restore_status": "ready_for_live_mysql_restore_test",
+  "restore_status": "in_place_v9_0_upgrade_ready_not_run",
   "production_status": "generating",
-  "resumed_at": "2026-09-04T17:15:54.269Z"
+  "resumed_at": "2026-09-04T17:15:54.269Z",
+  "live_mysql_verification": {
+    "status": "schema_upgrade_required",
+    "detected_error": "#1054 Unknown column courses.course_key",
+    "next_action": "run upgrade_existing_v9_0_to_v9_1_1.sql, then migrate and validate"
+  }
 }
