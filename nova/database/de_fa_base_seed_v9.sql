@@ -1,5 +1,5 @@
 -- ============================================================================
--- NOVA v9.1 / bootstrap seed for the German -> Persian course
+-- NOVA v9.1.1 / bootstrap seed for the German -> Persian course
 --
 -- This file is intentionally idempotent. It creates only the course and the
 -- original A1/M01 chapter scaffold expected before canonical content imports.

@@ -33,9 +33,14 @@
       "nova/database/de_fa_base_seed_v9.sql",
       "nova/database/runtime_lesson_query_v9.sql",
       "nova/database/runtime_catalog_queries_v9.sql",
+      "nova/database/migrate_canonical_a1_a2_v9_1.sql",
       "nova/database/validate_database_v9.sql",
       "nova/database/AUDIT_v9.md"
-    ]
+    ],
+    "canonical_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "canonical_archive_manifest": "nova/archive/series_001_080_fixed/manifest.json",
+    "canonical_archive_scan": "nova/archive/series_001_080_fixed/FULL_SCAN_REPORT.json",
+    "canonical_archive_scanner": "nova/tools/scan_canonical_archive.py"
   },
   "generation_invariants": [
     "Read GitHub state before generating a batch.",
@@ -52,19 +57,23 @@
     "canonical_archive": "nova_v9_production_series_001_080_fixed.zip",
     "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
     "bytes": 502504,
-    "archive_uploaded_to_github": false,
-    "note": "The connected GitHub writer accepts UTF-8 text files, not this binary ZIP. Exact A1/A2 historical executable SQL remains identified by checksum; future content generation no longer requires that archive because canonical resume state is stored as GitHub text resources."
+    "archive_uploaded_to_github": true,
+    "repository_path": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "extracted_root": "nova/archive/series_001_080_fixed/extracted",
+    "scan_status": "passed",
+    "note": "The exact checksum-matched ZIP and all 105 extracted members are stored in GitHub. Future continuation uses both the searchable state snapshots and the preserved historical SQL."
   },
   "canonical_legacy_corrections": {
     "series_004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "database_revision": "v9.1.0",
+  "database_revision": "v9.1.1",
   "database_audit": {
     "status": "complete",
-    "implementation_status": "ready",
-    "full_a1_a2_restore_test": "blocked_missing_canonical_artifacts",
+    "implementation_status": "ready_for_live_mysql_restore_test_and_backend_implementation",
+    "canonical_archive_static_scan": "passed",
+    "full_a1_a2_restore_test": "ready_not_run_mysql_unavailable",
     "report": "nova/database/AUDIT_v9.md"
   },
   "content_generation_enabled": false

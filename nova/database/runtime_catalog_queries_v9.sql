@@ -1,5 +1,5 @@
 -- ============================================================================
--- NOVA v9.1: catalog, path and resume queries
+-- NOVA v9.1.1: catalog, path and resume queries
 -- Replace session variables with bound parameters in application code.
 -- ============================================================================
 
@@ -88,8 +88,30 @@ ORDER BY
   p.lesson_order
 LIMIT 1;
 
--- 4) Dictionary drawer for one clicked token.
+-- 4) Dictionary drawer for one clicked token. Canonical v9 tokens are
+-- self-contained and identify their word by lemma + partOfSpeech + translation;
+-- they do not carry a numeric wordId. Supplying @word_id remains supported for
+-- callers that already resolved the lesson dictionary locally.
 SET @word_id = NULL;
+SET @token_lemma = NULL;
+SET @token_part_of_speech = NULL;
+SET @token_translation = NULL;
+
+SET @resolved_word_id = COALESCE(
+  @word_id,
+  (
+    SELECT w.id
+    FROM words w
+    JOIN courses c ON c.id = w.course_id
+    WHERE c.course_key = @course_key
+      AND w.lemma = @token_lemma
+      AND w.part_of_speech = @token_part_of_speech
+      AND w.translation = @token_translation
+      AND w.is_active = 1
+    ORDER BY w.id
+    LIMIT 1
+  )
+);
 
 SELECT
   w.id,
@@ -110,5 +132,5 @@ SELECT
   w.audio_url,
   w.audio_duration_ms
 FROM words w
-WHERE w.id = @word_id
+WHERE w.id = @resolved_word_id
   AND w.is_active = 1;

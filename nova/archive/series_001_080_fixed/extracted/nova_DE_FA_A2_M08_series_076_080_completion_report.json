@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "level": "A2",
+  "module": 8,
+  "moduleTitle": "Telefon & Nachrichten / تماس و پیام",
+  "seriesRange": "076-080",
+  "chapters": 5,
+  "moduleStatusAfterSeries080": "complete",
+  "levelStatusAfterSeries080": "complete",
+  "storyline": {
+    "key": "mia-sara-a2-communication",
+    "orders": "1-20",
+    "characters": [
+      "Mia",
+      "Sara"
+    ],
+    "resolution": "cannot talk now -> callback -> message -> missing reply -> reason -> Bescheid agreement -> tomorrow call -> Bis morgen"
+  },
+  "capabilities": [
+    "say Ich kann nicht sprechen.",
+    "ask Kann ich dich später anrufen?",
+    "say Ich habe dir eine Nachricht geschickt.",
+    "ask Warum hast du nicht geantwortet?",
+    "say Ich hatte keine Zeit.",
+    "say Sag mir bitte Bescheid.",
+    "say Ich sage dir Bescheid.",
+    "say Dann sprechen wir morgen.",
+    "say Ich rufe dich morgen an.",
+    "say Bis morgen."
+  ],
+  "statusQA": "PASS"
+}

@@ -1,9 +1,0 @@
-{
-  "schema_version":"v9.1","course":"de-fa","level":"B1","batch":1,"chapter":1,"series":81,
-  "status":"qa_failed_retry_required",
-  "draft_commit":"90b96f4bafda86f7af339c2d93e51f30daafd930",
-  "title":"Einen Termin verschieben","title_translation":"عوض کردن زمان قرار",
-  "failure_reason":"The generated draft has surface token arrays but not canonical clickable token-to-word tuple mappings for every lexical token. clickable_token_coverage_100_percent therefore cannot be certified. Atomic chapter is not accepted and production state must not advance.",
-  "retry_requirements":["Resolve every lexical token to an existing canonical word tuple or create a new lemma-first tuple before acceptance.","Re-run explicit-target duplicate audit against all canonical word state files.","Re-run schema/activity/speech/Persian/storyline QA."],
-  "preserved_draft_summary":{"characters":["Mia","Sara"],"storyline_key":"mia-sara-b1-planning","lesson_count":4,"difficulty":[41,42]}
-}

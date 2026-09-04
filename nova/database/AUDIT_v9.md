@@ -1,124 +1,155 @@
 # Nova Database v9 Audit
 
 Audit date: 2026-09-04  
-Canonical source reviewed: `SalehAkaJim/chatgpt` / `main`  
-Database revision produced by this audit: **v9.1.0**
+Canonical source: `SalehAkaJim/chatgpt` / `main`  
+Database implementation revision: **v9.1.1**
 
-Runtime requirement: **MySQL 8.0.21 or newer**. This baseline is required for
-enforced `CHECK` constraints, ordered window use with `JSON_ARRAYAGG`, and the
-current `JSON_TABLE` null/error behavior:
-
-- https://dev.mysql.com/doc/refman/8.0/en/create-table-check-constraints.html
-- https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html#function_json-arrayagg
-- https://dev.mysql.com/doc/refman/8.0/en/json-table-functions.html
+Runtime requirement: **MySQL 8.0.21 or newer**. The baseline is used for
+enforced `CHECK` constraints, windowed JSON aggregation, generated identity
+hashes and `JSON_TABLE` validation.
 
 ## Recovered checkpoint
 
 - A1 and A2 are complete through Series 080.
-- B1 begins at Series 081, but content production is frozen.
-- Production unit: one atomic chapter containing four lessons.
-- Publication unit: one SQL artifact containing eight chapters.
-- One level contains forty chapters in five artifacts.
-- Canonical resume state contains 377 word/phrase tuples, 244 explicit targets,
-  24 characters and 51 storylines.
+- B1 begins at Series 081, but content generation remains frozen.
+- The exact historical archive is now stored at
+  `nova/archive/nova_v9_production_series_001_080_fixed.zip`.
+- Its SHA-256 is
+  `11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2`
+  and its size is 502,504 bytes, exactly matching the prior canonical manifest.
+- All 105 archive members are also stored as searchable source files under
+  `nova/archive/series_001_080_fixed/extracted/`.
+
+The independent static scan in
+`nova/archive/series_001_080_fixed/FULL_SCAN_REPORT.json` passed with no errors
+or warnings. It verified safe ZIP paths, UTF-8/JSON readability, exact Series
+001-080 coverage, canonical revisions, transactional guards, ordered
+dependencies, lesson/turn/activity structure, token-to-dictionary matches and
+the bundled audit report.
+
+| Canonical content | Count |
+|---|---:|
+| Levels | 2 |
+| Modules | 16 |
+| Chapters / Series | 80 |
+| Lessons | 320 |
+| Turns | 1,524 |
+| Token objects | 3,826 |
+| Activities | 2,275 |
+| Lesson-word rows | 3,260 |
+| Explicit targets | 244 |
+| Unique word/phrase tuples | 377 |
+| Characters | 24 |
+| Storylines | 51 |
+
+The archive exactly matches all 377 word-state tuples and their target history,
+and all 24 character-state records. It also exposed two stale storyline summary
+rows: `anna-jonas-couple` and `lena-ben-language-class` begin at order 1 in
+Series 001, not order 3 in Series 004. Their GitHub snapshot rows are corrected
+in this revision without changing the storyline count or max order.
 
 ## Audit result
 
-The original v9.0 schema represented the content hierarchy, but was not ready to
-be the only contract used by a backend and UI. It lacked deterministic ordering
-constraints, stable optional keys, content-batch lineage, a complete one-row
-runtime payload, full-lesson audio, language direction/locale metadata, and all
-learner progress/attempt tables.
+The original v9.0 schema represented the course content, but was not sufficient
+as the only backend/UI contract. v9.1.1 preserves compatibility with all
+historical INSERTs and adds deterministic identity and ordering, archive/batch
+lineage, cacheable runtime payloads and provider-neutral learner progress.
 
-v9.1.0 keeps every original v9 table and column and adds the missing contracts.
-Legacy v9 content INSERTs remain structurally compatible because new content
-columns are nullable or have defaults.
-
-| Area | v9.0 finding | v9.1 resolution |
+| Area | v9.0 finding | v9.1.1 resolution |
 |---|---|---|
-| Hierarchy | Duplicate sibling `sort_order` values were possible | Unique sibling order keys and range checks |
-| Stable identity | Content relied mainly on auto-increment IDs | Optional stable keys for course, level, module, chapter, lesson, turn, activity and word |
-| Batch publishing | Five-by-eight artifact model was not represented | `content_batches` with ranges, checksum, commit, QA report and publish state |
-| Runtime story | `JSON_ARRAYAGG` order was undefined | Ordered window aggregation in `v_lesson_story` |
-| Runtime payload | Story repeated once per activity row | Cacheable one-row `v_lesson_runtime` payload |
-| Lesson audio | Only turn audio existed | Optional full-lesson audio URL and duration |
-| Dictionary | Related words, homographs and future scripts were incomplete | Related-word JSON, `sense_key`, pronunciation hint and romanization |
-| Activities | Missing translated UI fields and scoring metadata | Translation, required flag, score and duration fields |
-| Progress | No learner state existed | Provider-neutral learner, enrollment, session, lesson, activity and word progress tables |
-| Validation | QA rules lived only in pipeline text | Executable `validate_database_v9.sql` checks |
-| Runtime navigation | No catalog/resume queries | `v_lesson_path` and `runtime_catalog_queries_v9.sql` |
+| Hierarchy | Duplicate sibling order values were possible | Unique sibling order keys and range checks |
+| Stable identity | Most content relied on auto-increment IDs | Stable keys plus a generated canonical word-tuple hash |
+| Historical restore | Exact A1/A2 SQL was absent from GitHub | Exact ZIP, extracted sources, hashes, manifest and repeatable scanner |
+| Legacy metadata | Old INSERTs cannot populate new keys/history | Idempotent post-import migration with exact backfills |
+| Batch publishing | Five-by-eight lineage was not represented | Ten `content_batches` records linked to the canonical archive |
+| Runtime story | Aggregate order was undefined | Ordered window aggregation in `v_lesson_story` |
+| Runtime payload | Story content repeated for each activity | One-row `v_lesson_runtime` payload |
+| Token lookup | Initial v9.1 draft assumed nonexistent `wordId` tokens | Validator and lookup use the real tuple contract |
+| Activities | Source rules did not match canonical meaning-choice variants | Database and validator accept exactly one turn or word source |
+| Progress | No learner state existed | Learner, enrollment, session, lesson, activity and word progress tables |
+| Validation | QA lived only in generation reports | Executable cross-table validation in `validate_database_v9.sql` |
 
 ## Runtime contracts
 
-### Immutable content payload
+### Immutable lesson payload
 
-The backend loads one lesson with:
+The backend loads a complete, cacheable lesson row with:
 
 ```sql
 SELECT * FROM v_lesson_runtime WHERE lesson_id = ?;
 ```
 
-The row contains hierarchy labels, both declared characters, ordered story
-turns, ordered activities, and the lesson dictionary. Learner data is excluded
-so this payload can be cached by lesson ID and `content_version`.
+The payload includes the ordered hierarchy path, declared characters, turns,
+activities and lesson dictionary. Learner state is intentionally queried
+separately so content can be cached by lesson ID and `content_version`.
 
-### Token contract
+### Canonical token contract
 
-`turns.tokens` is a JSON array in display order. Every lexical token must have:
+`turns.tokens` is a display-order JSON array. Every token in Series 001-080 is
+self-contained and has these required fields:
 
 ```json
-{"text":"...","wordId":123}
+{
+  "surface": "habe",
+  "lemma": "haben",
+  "translation": "داشتن",
+  "partOfSpeech": "verb"
+}
 ```
 
-Punctuation-only tokens may omit `wordId` only when they contain
-`"isPunctuation": true`. `validate_database_v9.sql` verifies that lexical
-`wordId` values exist and belong to the same course.
+Observed optional fields are `meaning`, `form` and `suffix`. Punctuation is
+stored in `suffix`; there are no standalone punctuation tokens and no numeric
+`wordId` in the historical payload. A click resolves against the unique
+`(course, lemma, part_of_speech, translation)` identity. The lesson dictionary
+is already included in the runtime payload, and
+`runtime_catalog_queries_v9.sql` also demonstrates a server-side fallback.
 
 ### Activity source contract
 
-- `listen`, `speak`, and `word_order` reference a `turn_id`.
-- `new_word` and `meaning_choice` reference a `word_id`.
-- `speak` references a learner turn.
-- `reading_comprehension` has both a prompt and a learner instruction.
-- Every referenced activity word also exists in `lesson_words`.
+- `listen`, `speak` and `word_order` reference one `turn_id` and no `word_id`.
+- `new_word` references one `word_id` and no `turn_id`.
+- `meaning_choice` references exactly one of `turn_id` or `word_id`; the archive
+  contains both valid modes.
+- `reading_comprehension` references neither and carries its learner task in
+  `prompt` plus `config`.
+- Choice tasks require a question, at least two choices and an in-range
+  `correctIndex`.
+- A `speak` activity references a learner turn.
 
-### Word identity
+### Word identity and history
 
-Words are selected by numeric ID or stable `word_key`, never by lemma alone.
-`sense_key` distinguishes a lemma with multiple meanings or grammatical uses.
-This preserves the canonical tuples instead of incorrectly merging homographs.
+Words are never resolved by lemma alone. The schema generates a SHA-256 identity
+from the exact lemma, part of speech and translation tuple, and enforces its
+uniqueness within a course. `sense_key` remains available for application-level
+meaning labels. The post-import migration backfills the exact introduction and
+explicit-target history represented by the canonical state files.
 
 ### Learner identity
 
-Nova stores no password. The pair `learners.auth_provider` and
-`learners.external_subject` stores the stable identity issued by whichever
-authentication provider is selected during backend work. This keeps the
-database independent from that future decision.
+Nova stores no password. `learners.auth_provider` plus
+`learners.external_subject` stores the stable identity issued by the future
+authentication provider, keeping the data model independent from that product
+choice.
 
-## Import and verification order
+## Restore and verification order
 
-For a clean development database:
+For a clean A1/A2 development database:
 
-1. `reset_all_v9.sql` only when a destructive reset is explicitly intended.
-2. `schema_v9.sql`.
-3. `de_fa_base_seed_v9.sql`.
-4. Canonical A1/A2 batch artifacts in Series order.
-5. `validate_database_v9.sql`; every violation count must be zero.
-6. Use `runtime_lesson_query_v9.sql` and `runtime_catalog_queries_v9.sql` as
-   executable examples, replacing session variables with bound parameters.
+1. Run `reset_all_v9.sql` only when a destructive reset is explicitly intended.
+2. Run `schema_v9.sql`.
+3. Run `de_fa_base_seed_v9.sql`.
+4. Import the 80 canonical Series SQL files from the extracted archive in
+   numeric Series order, using the corrected r2/r3 files already present.
+5. Run `migrate_canonical_a1_a2_v9_1.sql`.
+6. Run `validate_database_v9.sql`; every violation count must be zero.
+7. Exercise `runtime_lesson_query_v9.sql` and
+   `runtime_catalog_queries_v9.sql` with bound application parameters.
 
-## Remaining restore blocker
+The repository scanner and SQL parser checks pass. A live MySQL restore and
+execution of step 6 was not run in the current environment because no MySQL
+server/client is available. This is the remaining database verification gate;
+it is no longer blocked by missing content artifacts.
 
-The repository manifest identifies ten canonical A1/A2 compressed batch files
-and their checksums, but those files and the source ZIP are not present in the
-GitHub tree. The GitHub state is sufficient to resume future generation, but a
-fresh database cannot restore the completed A1/A2 lessons from GitHub alone.
-
-Do not regenerate those lessons. The exact historical archive must be recovered,
-verified against SHA-256
-`11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2`, and
-then added as the ten text-safe `.sql.gz.b64` artifacts already named in
-`nova/migration/migration_manifest.json`.
-
-Until that happens, schema/runtime/UI implementation can proceed against fixture
-data, but full A1/A2 restore testing remains blocked.
+The archived `nova_schema_v9.sql`, seed, reset and runtime query under the
+extracted directory are historical v9.0 inputs. New implementation must use the
+current files in `nova/database/`.

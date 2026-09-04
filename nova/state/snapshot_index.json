@@ -26,13 +26,19 @@
     "../database/de_fa_base_seed_v9.sql",
     "../database/runtime_lesson_query_v9.sql",
     "../database/runtime_catalog_queries_v9.sql",
+    "../database/migrate_canonical_a1_a2_v9_1.sql",
     "../database/validate_database_v9.sql"
   ],
   "source_archive": {
     "filename": "nova_v9_production_series_001_080_fixed.zip",
     "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
     "bytes": 502504,
-    "historical_sql_archive_uploaded_to_github": false
+    "historical_sql_archive_uploaded_to_github": true,
+    "repository_path": "../archive/nova_v9_production_series_001_080_fixed.zip",
+    "extracted_root": "../archive/series_001_080_fixed/extracted",
+    "manifest": "../archive/series_001_080_fixed/manifest.json",
+    "full_scan_report": "../archive/series_001_080_fixed/FULL_SCAN_REPORT.json",
+    "static_scan_status": "passed"
   },
   "state_files": [
     "characters.json",
@@ -60,7 +66,7 @@
     "batch_artifacts_per_level": 5,
     "advance_state_only_after_batch_qa_pass": true
   },
-  "database_revision": "v9.1.0",
+  "database_revision": "v9.1.1",
   "database_audit": "../database/AUDIT_v9.md",
-  "restore_status": "blocked_missing_canonical_a1_a2_artifacts"
+  "restore_status": "ready_for_live_mysql_restore_test"
 }

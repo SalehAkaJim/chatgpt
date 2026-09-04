@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "level": "A2",
+  "module": 6,
+  "moduleTitle": "Gesundheit & Beschwerden / سلامتی و نشانه ها",
+  "seriesRange": "066-070",
+  "chapters": 5,
+  "moduleStatusAfterSeries070": "complete",
+  "levelStatusAfterSeries070": "active",
+  "storyline": {
+    "key": "mia-doctor-weber",
+    "orders": "4-23 in A2 continuation after A1 orders 1-3",
+    "characters": [
+      "Mia",
+      "Dr. Weber"
+    ],
+    "resolution": "fever -> duration -> cough -> tablet recommendation -> treatment review -> better/no fever"
+  },
+  "capabilities": [
+    "say Ich habe Fieber.",
+    "understand Haben Sie Fieber?",
+    "understand Seit wann sind Sie krank?",
+    "say Seit gestern.",
+    "say Ich habe Husten.",
+    "say Ich habe Fieber und Husten.",
+    "understand Nehmen Sie diese Tabletten.",
+    "say Ich nehme diese Tabletten.",
+    "say Mir geht es besser.",
+    "understand Geht es Ihnen besser?",
+    "say Ich habe kein Fieber mehr."
+  ],
+  "morphologyQA": {
+    "besser": {
+      "lemma": "gut",
+      "form": "comparative_adverbial"
+    },
+    "Mir": {
+      "lemma": "ich",
+      "form": "dative_1sg"
+    },
+    "Ihnen": {
+      "lemma": "Sie",
+      "form": "dative_formal"
+    },
+    "status": "PASS"
+  },
+  "nextSeries": 71
+}

@@ -1,4 +1,4 @@
--- NOVA v9.1 RESET (destructive: removes all Nova content and learner progress)
+-- NOVA v9.1.1 RESET (destructive: removes all Nova content and learner progress)
 SET FOREIGN_KEY_CHECKS = 0;
 
 DROP VIEW IF EXISTS v_lesson_runtime;

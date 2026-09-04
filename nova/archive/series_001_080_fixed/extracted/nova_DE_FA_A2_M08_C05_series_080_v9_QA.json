@@ -1,0 +1,152 @@
+{
+  "schema": "Nova v9.0",
+  "status": "PRODUCTION CONTENT",
+  "series": 80,
+  "level": "A2",
+  "module": "Telefon & Nachrichten / تماس و پیام",
+  "moduleOrder": 8,
+  "chapter": "Dann sprechen wir morgen / پس، فردا صحبت می کنیم",
+  "difficulty": [
+    40,
+    40
+  ],
+  "completesModule": 8,
+  "completesLevel": "A2",
+  "lessons": 4,
+  "turns": 20,
+  "activities": 30,
+  "activityCounts": {
+    "new_word": 3,
+    "listen": 10,
+    "speak": 10,
+    "meaning_choice": 4,
+    "word_order": 1,
+    "reading_comprehension": 2
+  },
+  "newExplicitTargets": 3,
+  "targetSequence": [
+    "Dann sprechen wir morgen.",
+    "Ich rufe dich morgen an.",
+    "Bis morgen."
+  ],
+  "newCharacters": [],
+  "reusedCharacters": [
+    "Mia",
+    "Sara"
+  ],
+  "newDictionaryItems": 3,
+  "newStandaloneLexicalItems": [],
+  "newPhraseRows": [
+    "Dann sprechen wir morgen.",
+    "Ich rufe dich morgen an.",
+    "Bis morgen."
+  ],
+  "grammarProgression": {
+    "newGrammarFamily": false,
+    "focus": "communication synthesis + tomorrow plan + natural closure",
+    "forms": [
+      {
+        "surface": "sprechen",
+        "lemma": "sprechen",
+        "form": "present_1pl"
+      },
+      {
+        "surface": "rufe",
+        "lemma": "anrufen",
+        "form": "separable_present_1sg_stem"
+      },
+      {
+        "surface": "an",
+        "lemma": "anrufen",
+        "form": "separable_prefix"
+      },
+      {
+        "surface": "dich",
+        "lemma": "du",
+        "form": "accusative_2sg"
+      },
+      {
+        "surface": "dir",
+        "lemma": "du",
+        "form": "dative_2sg"
+      },
+      {
+        "surface": "mir",
+        "lemma": "ich",
+        "form": "dative_1sg"
+      }
+    ],
+    "newTense": false,
+    "newModal": false,
+    "status": "PASS"
+  },
+  "moduleCompletion": {
+    "moduleOrder": 8,
+    "expectedChapters": 5,
+    "moduleStatusAfterImport": "complete"
+  },
+  "levelCompletion": {
+    "level": "A2",
+    "expectedModules": 8,
+    "allEightModulesCompleteRequired": true,
+    "levelStatusAfterImport": "complete"
+  },
+  "storyContinuity": {
+    "key": "mia-sara-a2-communication",
+    "previousSeries": 79,
+    "previousOrders": [
+      13,
+      14,
+      15,
+      16
+    ],
+    "newOrders": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "resolution": "Mia and Sara close the message/reply misunderstanding, agree to communicate clearly, and set a concrete call for tomorrow.",
+    "status": "PASS"
+  },
+  "persianTranslationCorrection": {
+    "german": "Dann sprechen wir morgen.",
+    "oldAmbiguous": "پس فردا صحبت می کنیم.",
+    "final": "پس، فردا صحبت می کنیم.",
+    "reason": "Without punctuation, Persian پس فردا can be read as the day after tomorrow."
+  },
+  "clickableCoveragePercent": 100,
+  "learnerSpeechTargetCoveragePercent": 100,
+  "readingAlwaysHasTask": true,
+  "persianOrthography": {
+    "status": "PASS",
+    "unapprovedOccurrences": 0
+  },
+  "lessonWordsPrimaryKeyQA": {
+    "status": "PASS",
+    "rowsByLessonVariable": {
+      "v_l_1": 10,
+      "v_l_2": 11,
+      "v_l_3": 12,
+      "v_l_4": 23
+    },
+    "duplicateSymbolicPairs": []
+  },
+  "canonicalAudit001To080": "PASS",
+  "canonicalCorrections": {
+    "Series004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",
+    "Series015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
+    "Series020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
+  },
+  "qaRules": [
+    "No new standalone vocabulary is introduced in the final A2 chapter; it is deliberately synthesis-first.",
+    "anrufen is reused from Series 058; rufe and an map lemma-first to anrufen.",
+    "sprechen is reused from Series 076 and used productively with wir.",
+    "Bis morgen. reuses canonical bis and morgen.",
+    "The Persian title uses punctuation to avoid confusing پس، فردا with پس فردا (the day after tomorrow).",
+    "A2 Module 08 becomes complete only when all 5 Chapters are validated/complete.",
+    "A2 becomes complete only when exactly 8 Modules exist and all 8 are complete.",
+    "Every displayed German lexical token is self-contained and clickable.",
+    "Canonical Series 001-080 passes dependency, status and duplicate lesson_words audits."
+  ]
+}

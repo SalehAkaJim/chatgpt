@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "level": "A2",
+  "module": 7,
+  "moduleTitle": "Reisen & Verkehr / سفر و رفت و آمد",
+  "seriesRange": "071-075",
+  "chapters": 5,
+  "moduleStatusAfterSeries075": "complete",
+  "levelStatusAfterSeries075": "active",
+  "storyline": {
+    "key": "lena-ben-a2-train-trip",
+    "orders": "1-20",
+    "characters": [
+      "Lena",
+      "Ben"
+    ],
+    "resolution": "delay -> platform -> transfer -> missed connection -> waiting -> arrival at eight"
+  },
+  "capabilities": [
+    "say Der Zug hat Verspätung.",
+    "ask Hat der Zug Verspätung?",
+    "ask Von welchem Gleis fährt der Zug?",
+    "understand Der Zug fährt von Gleis drei.",
+    "say Wir müssen umsteigen.",
+    "say Wir steigen um.",
+    "say Wir haben den Zug verpasst.",
+    "say Dann warten wir.",
+    "ask Wann kommen wir an?",
+    "say Wir kommen um acht Uhr an."
+  ],
+  "morphologyQA": {
+    "ankommen": {
+      "surfaceForms": [
+        "kommen",
+        "an"
+      ],
+      "forms": [
+        "separable_present_1pl_stem",
+        "separable_prefix"
+      ]
+    },
+    "status": "PASS"
+  },
+  "nextSeries": 76
+}

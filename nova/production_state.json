@@ -2,16 +2,16 @@
   "project": "Nova",
   "course": "de-fa",
   "schema_version": "v9",
-  "database_revision": "v9.1.0",
+  "database_revision": "v9.1.1",
   "last_completed_level": "A2",
   "last_completed_series": 80,
   "next_level": "B1",
   "next_series": 81,
-  "content_status": "generating",
+  "content_status": "frozen",
   "content_freeze": {
-    "enabled": false,
+    "enabled": true,
     "after_series": 80,
-    "reason": "explicit production resume authorized",
+    "reason": "database_runtime_and_ui_implementation",
     "resume_requires_explicit_unfreeze": true
   },
   "generation_mode": "atomic_chapter_generation_with_batched_artifacts",
@@ -22,20 +22,29 @@
     "advance_state_only_after_full_batch_qa_pass": true
   },
   "current_work": {
-    "phase": "content_generation",
+    "phase": "database_runtime_and_ui_implementation",
     "level": "B1",
     "batch": 1,
     "batch_chapter_range": [1, 8],
     "pending_chapter": 1,
     "pending_series": 81,
-    "status": "generating_atomic_chapters",
-    "staging_progress": "nova/staging/B1/batch_01/progress.json"
+    "status": "frozen_before_generation"
   },
   "database": {
-    "revision": "v9.1.0",
+    "revision": "v9.1.1",
     "audit_status": "complete",
-    "implementation_status": "ready",
-    "full_a1_a2_restore_test": "blocked_missing_canonical_artifacts"
+    "implementation_status": "ready_for_live_mysql_restore_test_and_backend_implementation",
+    "canonical_archive_static_scan": "passed",
+    "full_a1_a2_restore_test": "ready_not_run_mysql_unavailable"
+  },
+  "canonical_archive": {
+    "path": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "bytes": 502504,
+    "extracted_root": "nova/archive/series_001_080_fixed/extracted",
+    "files": 105,
+    "full_scan": "passed",
+    "scan_report": "nova/archive/series_001_080_fixed/FULL_SCAN_REPORT.json"
   },
   "canonical_corrections": {
     "series_004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",

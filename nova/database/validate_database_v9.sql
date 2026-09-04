@@ -1,14 +1,14 @@
 -- ============================================================================
--- NOVA v9.1 repository/content validation
+-- NOVA v9.1.1 repository/content validation
 -- Expected result: every `violations` value is 0.
 -- Run after schema + base seed + all canonical content batches are imported.
 -- ============================================================================
 
 SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-SELECT 'schema_version_v9_1' AS check_name,
+SELECT 'schema_version_v9_1_1' AS check_name,
        CASE WHEN EXISTS (
-         SELECT 1 FROM schema_versions WHERE version = 'v9.1.0'
+         SELECT 1 FROM schema_versions WHERE version = 'v9.1.1'
        ) THEN 0 ELSE 1 END AS violations
 
 UNION ALL
@@ -84,6 +84,13 @@ FROM (
 
 UNION ALL
 
+SELECT 'validated_chapter_has_batch_lineage',COUNT(*)
+FROM chapters
+WHERE status IN ('validated','complete')
+  AND batch_id IS NULL
+
+UNION ALL
+
 SELECT 'lesson_uses_two_declared_characters',COUNT(*)
 FROM (
   SELECT
@@ -138,8 +145,27 @@ UNION ALL
 
 SELECT 'activity_source_integrity',COUNT(*)
 FROM activities a
-WHERE (a.activity_type IN ('listen','speak','word_order') AND a.turn_id IS NULL)
-   OR (a.activity_type IN ('new_word','meaning_choice') AND a.word_id IS NULL)
+WHERE NOT (
+  (
+    a.activity_type IN ('listen','speak','word_order')
+    AND a.turn_id IS NOT NULL AND a.word_id IS NULL
+  )
+  OR (
+    a.activity_type = 'new_word'
+    AND a.turn_id IS NULL AND a.word_id IS NOT NULL
+  )
+  OR (
+    a.activity_type = 'meaning_choice'
+    AND (
+      (a.turn_id IS NOT NULL AND a.word_id IS NULL)
+      OR (a.turn_id IS NULL AND a.word_id IS NOT NULL)
+    )
+  )
+  OR (
+    a.activity_type = 'reading_comprehension'
+    AND a.turn_id IS NULL AND a.word_id IS NULL
+  )
+)
 
 UNION ALL
 
@@ -173,7 +199,25 @@ FROM activities a
 WHERE a.activity_type = 'reading_comprehension'
   AND (
     a.prompt IS NULL OR CHAR_LENGTH(TRIM(a.prompt)) = 0
-    OR a.instruction IS NULL OR CHAR_LENGTH(TRIM(a.instruction)) = 0
+    OR a.config IS NULL OR JSON_TYPE(a.config) <> 'OBJECT'
+  )
+
+UNION ALL
+
+SELECT 'choice_activity_config_is_valid',COUNT(*)
+FROM activities a
+WHERE a.activity_type IN ('meaning_choice','reading_comprehension')
+  AND (
+    a.config IS NULL
+    OR JSON_TYPE(a.config) <> 'OBJECT'
+    OR JSON_UNQUOTE(JSON_EXTRACT(a.config,'$.question')) IS NULL
+    OR CHAR_LENGTH(TRIM(JSON_UNQUOTE(JSON_EXTRACT(a.config,'$.question')))) = 0
+    OR JSON_TYPE(JSON_EXTRACT(a.config,'$.choices')) <> 'ARRAY'
+    OR JSON_LENGTH(JSON_EXTRACT(a.config,'$.choices')) < 2
+    OR JSON_EXTRACT(a.config,'$.correctIndex') IS NULL
+    OR JSON_TYPE(JSON_EXTRACT(a.config,'$.correctIndex')) NOT IN ('INTEGER','DOUBLE')
+    OR CAST(JSON_UNQUOTE(JSON_EXTRACT(a.config,'$.correctIndex')) AS UNSIGNED)
+       >= JSON_LENGTH(JSON_EXTRACT(a.config,'$.choices'))
   )
 
 UNION ALL
@@ -186,7 +230,14 @@ WHERE a.activity_type = 'meaning_choice'
 
 UNION ALL
 
-SELECT 'token_word_reference_is_valid',COUNT(*)
+SELECT 'turn_tokens_are_nonempty_arrays',COUNT(*)
+FROM turns
+WHERE JSON_TYPE(tokens) <> 'ARRAY'
+   OR JSON_LENGTH(tokens) = 0
+
+UNION ALL
+
+SELECT 'token_dictionary_tuple_is_valid',COUNT(*)
 FROM turns t
 JOIN lessons l ON l.id = t.lesson_id
 JOIN chapters ch ON ch.id = l.chapter_id
@@ -195,18 +246,26 @@ JOIN levels lv ON lv.id = m.level_id
 JOIN JSON_TABLE(
   t.tokens,
   '$[*]' COLUMNS (
-    token_text VARCHAR(255) PATH '$.text' NULL ON EMPTY NULL ON ERROR,
-    word_id BIGINT UNSIGNED PATH '$.wordId' NULL ON EMPTY NULL ON ERROR,
-    is_punctuation TINYINT PATH '$.isPunctuation' DEFAULT '0' ON EMPTY DEFAULT '0' ON ERROR
+    surface VARCHAR(255) PATH '$.surface',
+    lemma VARCHAR(255) PATH '$.lemma',
+    translation VARCHAR(512) PATH '$.translation',
+    part_of_speech VARCHAR(48) PATH '$.partOfSpeech'
   )
 ) token_rows
-LEFT JOIN words w ON w.id = token_rows.word_id
-WHERE token_rows.token_text IS NULL
-   OR CHAR_LENGTH(token_rows.token_text) = 0
-   OR (
-     token_rows.is_punctuation = 0
-     AND (token_rows.word_id IS NULL OR w.id IS NULL OR w.course_id <> lv.course_id)
-   )
+LEFT JOIN words w
+  ON w.course_id = lv.course_id
+ AND w.lemma = token_rows.lemma
+ AND w.part_of_speech = token_rows.part_of_speech
+ AND w.translation = token_rows.translation
+WHERE token_rows.surface IS NULL
+   OR CHAR_LENGTH(TRIM(token_rows.surface)) = 0
+   OR token_rows.lemma IS NULL
+   OR CHAR_LENGTH(TRIM(token_rows.lemma)) = 0
+   OR token_rows.translation IS NULL
+   OR CHAR_LENGTH(TRIM(token_rows.translation)) = 0
+   OR token_rows.part_of_speech IS NULL
+   OR CHAR_LENGTH(TRIM(token_rows.part_of_speech)) = 0
+   OR w.id IS NULL
 
 UNION ALL
 
@@ -245,6 +304,39 @@ FROM (
 
 UNION ALL
 
+SELECT 'content_stable_keys_are_backfilled',COUNT(*)
+FROM (
+  SELECT id FROM levels WHERE level_key IS NULL
+  UNION ALL SELECT id FROM modules WHERE module_key IS NULL
+  UNION ALL SELECT id FROM chapters WHERE chapter_key IS NULL OR series_number IS NULL OR global_sort_order IS NULL
+  UNION ALL SELECT id FROM characters WHERE character_key IS NULL
+  UNION ALL SELECT id FROM lessons WHERE lesson_key IS NULL
+  UNION ALL SELECT id FROM words WHERE word_key IS NULL OR sense_key IS NULL OR introduced_series IS NULL
+  UNION ALL SELECT id FROM turns WHERE turn_key IS NULL
+  UNION ALL SELECT id FROM activities WHERE activity_key IS NULL
+) missing_stable_keys
+
+UNION ALL
+
+SELECT 'word_target_history_matches_lessons',COUNT(*)
+FROM words w
+LEFT JOIN (
+  SELECT
+    lw.word_id,
+    SUM(lw.is_target) AS target_count,
+    MIN(CASE WHEN lw.is_target = 1 THEN ch.series_number END) AS first_target_series,
+    MAX(CASE WHEN lw.is_target = 1 THEN ch.series_number END) AS last_target_series
+  FROM lesson_words lw
+  JOIN lessons l ON l.id = lw.lesson_id
+  JOIN chapters ch ON ch.id = l.chapter_id
+  GROUP BY lw.word_id
+) actual ON actual.word_id = w.id
+WHERE w.explicit_target_count <> COALESCE(actual.target_count,0)
+   OR NOT (w.first_target_series <=> actual.first_target_series)
+   OR NOT (w.last_target_series <=> actual.last_target_series)
+
+UNION ALL
+
 SELECT 'related_words_has_exactly_5_when_present',COUNT(*)
 FROM words
 WHERE related_words IS NOT NULL
@@ -256,6 +348,22 @@ SELECT 'enrollment_current_lesson_matches_course',COUNT(*)
 FROM course_enrollments ce
 JOIN v_lesson_path p ON p.lesson_id = ce.current_lesson_id
 WHERE p.course_id <> ce.course_id
+
+UNION ALL
+
+SELECT 'lesson_session_current_activity_matches_lesson',COUNT(*)
+FROM lesson_sessions ls
+JOIN activities a ON a.id = ls.current_activity_id
+WHERE a.lesson_id <> ls.lesson_id
+
+UNION ALL
+
+SELECT 'activity_attempt_matches_session_owner_and_lesson',COUNT(*)
+FROM activity_attempts aa
+JOIN lesson_sessions ls ON ls.id = aa.session_id
+JOIN activities a ON a.id = aa.activity_id
+WHERE aa.learner_id <> ls.learner_id
+   OR a.lesson_id <> ls.lesson_id
 
 UNION ALL
 

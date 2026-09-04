@@ -1,0 +1,4193 @@
+{
+  "project": "Nova",
+  "scan_date": "2026-09-04",
+  "scope": "canonical A1/A2 Series 001-080 archive",
+  "scanner": "nova/tools/scan_canonical_archive.py",
+  "scan_kind": "static_full_archive_scan",
+  "mysql_execution_test": "not_run",
+  "status": "PASS",
+  "archive": {
+    "canonical_filename": "nova_v9_production_series_001_080_fixed.zip",
+    "expected_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "expected_bytes": 502504,
+    "uploaded_filename": "nova_v9_production_series_001_080_fixed.zip",
+    "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "bytes": 502504,
+    "zip_integrity": "PASS",
+    "members": 105,
+    "unsafe_paths": [],
+    "encrypted_members": [],
+    "symlink_members": [],
+    "extracted_content_match": "PASS",
+    "extracted_differences": []
+  },
+  "inventory": {
+    "files": 105,
+    "uncompressed_bytes": 3644695,
+    "sql_files": 84,
+    "series_sql_files": 80,
+    "support_sql_files": 4,
+    "json_files": 21,
+    "parsed_json_files": 21,
+    "series_range": [
+      1,
+      80
+    ],
+    "levels": {
+      "A1": 40,
+      "A2": 40
+    }
+  },
+  "canonical_revisions": {
+    "series_004": "r2",
+    "series_015": "r3",
+    "series_020": "r2"
+  },
+  "content_totals": {
+    "activities": 2275,
+    "explicit_targets": 244,
+    "inserted_characters": 24,
+    "inserted_words": 379,
+    "lesson_words": 3260,
+    "lessons": 320,
+    "selected_characters": 205,
+    "selected_words": 1377,
+    "tokens": 3826,
+    "turns": 1524
+  },
+  "activity_types": {
+    "listen": 764,
+    "meaning_choice": 274,
+    "new_word": 244,
+    "reading_comprehension": 152,
+    "speak": 760,
+    "word_order": 81
+  },
+  "dictionary": {
+    "unique_word_tuples_after_series_080": 377,
+    "unique_characters_after_series_080": 24,
+    "token_contract": {
+      "required": [
+        "surface",
+        "lemma",
+        "translation",
+        "partOfSpeech"
+      ],
+      "optional_observed": [
+        "meaning",
+        "form",
+        "suffix"
+      ],
+      "storage": "self-contained display-order JSON objects"
+    },
+    "unmatched_exact_token_dictionary_tuples": 0
+  },
+  "storylines": {
+    "unique": 51,
+    "gaps_or_duplicate_orders": {}
+  },
+  "bundled_audit_comparison": {
+    "present": true,
+    "status": "PASS",
+    "series_rows": 80,
+    "mismatches": []
+  },
+  "repository_state_crosscheck": {
+    "status": "PASS",
+    "word_state_files": 10,
+    "words": 377,
+    "characters": 24,
+    "storylines": 51,
+    "differences": []
+  },
+  "freeze": {
+    "content_through_series": 80,
+    "next_level": "B1",
+    "next_series": 81,
+    "generation_enabled": false
+  },
+  "errors": [],
+  "warnings": [],
+  "series": [
+    {
+      "series": 1,
+      "level": "A1",
+      "module": 1,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M01_C01_series_001_v9.sql",
+      "bytes": 48677,
+      "sha256": "f74861db806b31ebdf6b4fb2ab5e73569fb0a389bf46171be3282d49efcd538a",
+      "counts": {
+        "inserted_words": 20,
+        "selected_words": 20,
+        "inserted_characters": 4,
+        "selected_characters": 4,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 32,
+        "lesson_words": 24,
+        "explicit_targets": 8,
+        "activities": 32
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 8,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-language-class",
+          "order": 1
+        },
+        {
+          "key": "anna-jonas-couple",
+          "order": 1
+        },
+        {
+          "key": "lena-ben-language-class",
+          "order": 2
+        },
+        {
+          "key": "anna-jonas-couple",
+          "order": 2
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 2,
+      "level": "A1",
+      "module": 1,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M01_C02_series_002_v9.sql",
+      "bytes": 49164,
+      "sha256": "dab78e7a0cb75733438c3c292f3c04e97bb1d9fcfaa603d6bf407ec07c7f8a2b",
+      "counts": {
+        "inserted_words": 11,
+        "selected_words": 17,
+        "inserted_characters": 3,
+        "selected_characters": 6,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 57,
+        "lesson_words": 32,
+        "explicit_targets": 3,
+        "activities": 31
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-mia-language-class",
+          "order": 1
+        },
+        {
+          "key": "ben-paul-language-class",
+          "order": 1
+        },
+        {
+          "key": "mia-paul-language-class",
+          "order": 1
+        },
+        {
+          "key": "anna-sofia-neighbors",
+          "order": 1
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 3,
+      "level": "A1",
+      "module": 1,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M01_C03_series_003_v9.sql",
+      "bytes": 43434,
+      "sha256": "565bc81df07d5ee0c6842d832bbafea08f8ba3a913e79630b39bd39bc188c52a",
+      "counts": {
+        "inserted_words": 9,
+        "selected_words": 17,
+        "inserted_characters": 2,
+        "selected_characters": 4,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 44,
+        "lesson_words": 38,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 3,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-language-class",
+          "order": 1
+        },
+        {
+          "key": "paul-sara-language-class",
+          "order": 1
+        },
+        {
+          "key": "mia-max-language-class",
+          "order": 1
+        },
+        {
+          "key": "sara-max-language-class",
+          "order": 1
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 4,
+      "level": "A1",
+      "module": 1,
+      "chapter": 4,
+      "revision": "r2",
+      "file": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",
+      "bytes": 47041,
+      "sha256": "628e6392572ab5130d74ff5c8dfa71c03c862c34f6e08c0886655e5571724339",
+      "counts": {
+        "inserted_words": 7,
+        "selected_words": 24,
+        "inserted_characters": 0,
+        "selected_characters": 8,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 48,
+        "lesson_words": 43,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-language-class",
+          "order": 3
+        },
+        {
+          "key": "anna-jonas-couple",
+          "order": 3
+        },
+        {
+          "key": "mia-paul-language-class",
+          "order": 2
+        },
+        {
+          "key": "sara-max-language-class",
+          "order": 2
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 5,
+      "level": "A1",
+      "module": 1,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M01_C05_series_005_v9.sql",
+      "bytes": 40927,
+      "sha256": "726bd33e88a1af78acd5903c3d2ccb6b3821fcd903c252a222142131f5d0d06e",
+      "counts": {
+        "inserted_words": 9,
+        "selected_words": 20,
+        "inserted_characters": 0,
+        "selected_characters": 4,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 35,
+        "lesson_words": 30,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-paul-language-class",
+          "order": 3
+        },
+        {
+          "key": "mia-paul-language-class",
+          "order": 4
+        },
+        {
+          "key": "sara-max-language-class",
+          "order": 3
+        },
+        {
+          "key": "sara-max-language-class",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 6,
+      "level": "A1",
+      "module": 2,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M02_C01_series_006_v9.sql",
+      "bytes": 46082,
+      "sha256": "34167db3deef2086d1f3b072cfb463c077dd5df27f7f6253e41b00b85e412db5",
+      "counts": {
+        "inserted_words": 9,
+        "selected_words": 16,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 24,
+        "tokens": 37,
+        "lesson_words": 32,
+        "explicit_targets": 3,
+        "activities": 33
+      },
+      "activity_types": {
+        "listen": 12,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 12,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-nina-cafe",
+          "order": 1
+        },
+        {
+          "key": "sara-nina-cafe",
+          "order": 2
+        },
+        {
+          "key": "max-nina-cafe",
+          "order": 1
+        },
+        {
+          "key": "sara-nina-cafe",
+          "order": 3
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 7,
+      "level": "A1",
+      "module": 2,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M02_C02_series_007_v9.sql",
+      "bytes": 40814,
+      "sha256": "8e06b86ae9a121cc2af77d6aeba1ceefb6ac3de9258a1889afc1788c03b3132c",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 13,
+        "inserted_characters": 0,
+        "selected_characters": 4,
+        "lessons": 4,
+        "turns": 26,
+        "tokens": 41,
+        "lesson_words": 26,
+        "explicit_targets": 3,
+        "activities": 35
+      },
+      "activity_types": {
+        "listen": 13,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 13,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-nina-cafe",
+          "order": 4
+        },
+        {
+          "key": "max-nina-cafe",
+          "order": 2
+        },
+        {
+          "key": "mia-nina-cafe",
+          "order": 1
+        },
+        {
+          "key": "sara-nina-cafe",
+          "order": 5
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 8,
+      "level": "A1",
+      "module": 2,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M02_C03_series_008_v9.sql",
+      "bytes": 36935,
+      "sha256": "6435d970c6fdaac01a5e7d18b9be4b51541a0ef15098ba486d19b951638ca050",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 12,
+        "inserted_characters": 1,
+        "selected_characters": 4,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 33,
+        "lesson_words": 23,
+        "explicit_targets": 3,
+        "activities": 31
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-tom-restaurant",
+          "order": 1
+        },
+        {
+          "key": "max-tom-restaurant",
+          "order": 1
+        },
+        {
+          "key": "mia-tom-restaurant",
+          "order": 1
+        },
+        {
+          "key": "sara-tom-restaurant",
+          "order": 2
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 9,
+      "level": "A1",
+      "module": 2,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M02_C04_series_009_v9.sql",
+      "bytes": 37328,
+      "sha256": "172fde901233008ef1d8f1651ed62b273d430329a7194b6fa63399fa3517578e",
+      "counts": {
+        "inserted_words": 6,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 5,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 31,
+        "lesson_words": 29,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-tom-restaurant",
+          "order": 3
+        },
+        {
+          "key": "max-tom-restaurant",
+          "order": 2
+        },
+        {
+          "key": "mia-nina-cafe",
+          "order": 2
+        },
+        {
+          "key": "sara-tom-restaurant",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 10,
+      "level": "A1",
+      "module": 2,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M02_C05_series_010_v9.sql",
+      "bytes": 34233,
+      "sha256": "0cd12ebd59093ada73676031373fc9e4aa6a1d81fe0e45d8f78d18083789c60a",
+      "counts": {
+        "inserted_words": 5,
+        "selected_words": 14,
+        "inserted_characters": 1,
+        "selected_characters": 4,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 28,
+        "lesson_words": 26,
+        "explicit_targets": 3,
+        "activities": 25
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-eva-supermarket",
+          "order": 1
+        },
+        {
+          "key": "max-eva-supermarket",
+          "order": 1
+        },
+        {
+          "key": "mia-eva-supermarket",
+          "order": 1
+        },
+        {
+          "key": "sara-max-supermarket",
+          "order": 1
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 11,
+      "level": "A1",
+      "module": 3,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M03_C01_series_011_v9.sql",
+      "bytes": 48247,
+      "sha256": "f962c151dfede0e30a6c46f52a69894816bf589197de9b282658e20ce9c02700",
+      "counts": {
+        "inserted_words": 5,
+        "selected_words": 17,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 24,
+        "tokens": 49,
+        "lesson_words": 35,
+        "explicit_targets": 3,
+        "activities": 33
+      },
+      "activity_types": {
+        "listen": 12,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 12,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-couple",
+          "order": 4
+        },
+        {
+          "key": "anna-jonas-couple",
+          "order": 5
+        },
+        {
+          "key": "anna-jonas-couple",
+          "order": 6
+        },
+        {
+          "key": "anna-jonas-couple",
+          "order": 7
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 12,
+      "level": "A1",
+      "module": 3,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M03_C02_series_012_v9.sql",
+      "bytes": 40362,
+      "sha256": "8a8dea66f24ef858219bb125cfcdc648285b6d8536bb603f58435df8eac1d010",
+      "counts": {
+        "inserted_words": 7,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 4,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 45,
+        "lesson_words": 35,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-couple",
+          "order": 8
+        },
+        {
+          "key": "anna-jonas-couple",
+          "order": 9
+        },
+        {
+          "key": "lena-ben-language-class",
+          "order": 4
+        },
+        {
+          "key": "lena-ben-language-class",
+          "order": 5
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 13,
+      "level": "A1",
+      "module": 3,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M03_C03_series_013_v9.sql",
+      "bytes": 44904,
+      "sha256": "b8321c3c5273ed5c0ef18d6df843333da5961a00393878583a16c1bb84ec4da8",
+      "counts": {
+        "inserted_words": 8,
+        "selected_words": 21,
+        "inserted_characters": 1,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 50,
+        "lesson_words": 38,
+        "explicit_targets": 3,
+        "activities": 31
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-laura-office",
+          "order": 1
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 2
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 3
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 14,
+      "level": "A1",
+      "module": 3,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M03_C04_series_014_v9.sql",
+      "bytes": 39496,
+      "sha256": "263319dc2c5cbae4a4c95f6e99c24a5342b281b213b21a5e13710658f0d40ee8",
+      "counts": {
+        "inserted_words": 9,
+        "selected_words": 18,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 37,
+        "lesson_words": 34,
+        "explicit_targets": 3,
+        "activities": 25
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-language-class",
+          "order": 6
+        },
+        {
+          "key": "lena-ben-language-class",
+          "order": 7
+        },
+        {
+          "key": "lena-ben-language-class",
+          "order": 8
+        },
+        {
+          "key": "lena-ben-language-class",
+          "order": 9
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 15,
+      "level": "A1",
+      "module": 3,
+      "chapter": 5,
+      "revision": "r3",
+      "file": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
+      "bytes": 34779,
+      "sha256": "0be307eb01e30397c50b66f5a50e6eba7dd8cced7a2b7d5760a64ae5d4d5dafd",
+      "counts": {
+        "inserted_words": 7,
+        "selected_words": 15,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 28,
+        "lesson_words": 22,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 1
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 2
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 3
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 16,
+      "level": "A1",
+      "module": 4,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M04_C01_series_016_v9.sql",
+      "bytes": 38750,
+      "sha256": "093a7dd7e1669d9a032b2955e3854db3fec54b6c19067da6708a14ee029ebb57",
+      "counts": {
+        "inserted_words": 5,
+        "selected_words": 13,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 30,
+        "lesson_words": 27,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-felix-city-directions",
+          "order": 1
+        },
+        {
+          "key": "sara-felix-city-directions",
+          "order": 2
+        },
+        {
+          "key": "mia-felix-city-directions",
+          "order": 1
+        },
+        {
+          "key": "sara-felix-city-directions",
+          "order": 3
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 17,
+      "level": "A1",
+      "module": 4,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M04_C02_series_017_v9.sql",
+      "bytes": 33545,
+      "sha256": "15a896b0eb659de7f188b882c7448b74f088817f69327198e5865f1ecdb46e00",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 11,
+        "inserted_characters": 0,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 34,
+        "lesson_words": 29,
+        "explicit_targets": 3,
+        "activities": 25
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-felix-city-transport",
+          "order": 1
+        },
+        {
+          "key": "mia-felix-city-transport",
+          "order": 1
+        },
+        {
+          "key": "sara-felix-city-transport",
+          "order": 2
+        },
+        {
+          "key": "mia-felix-city-transport",
+          "order": 2
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 18,
+      "level": "A1",
+      "module": 4,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M04_C03_series_018_v9.sql",
+      "bytes": 38080,
+      "sha256": "630ad30e47bb2b423306e2af8238681e52d9779a8de692ea90a404c082193878",
+      "counts": {
+        "inserted_words": 6,
+        "selected_words": 17,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 30,
+        "lesson_words": 29,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-nora-ticket-counter",
+          "order": 1
+        },
+        {
+          "key": "mia-nora-ticket-counter",
+          "order": 1
+        },
+        {
+          "key": "sara-nora-ticket-counter",
+          "order": 2
+        },
+        {
+          "key": "sara-nora-ticket-counter",
+          "order": 3
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 19,
+      "level": "A1",
+      "module": 4,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M04_C04_series_019_v9.sql",
+      "bytes": 34398,
+      "sha256": "b4662a1670e6b446f42f95d07853f47165d8a4e19731ac4bc03f53e710c9a8e7",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 31,
+        "lesson_words": 27,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-mia-station",
+          "order": 1
+        },
+        {
+          "key": "sara-mia-station",
+          "order": 2
+        },
+        {
+          "key": "sara-nora-station",
+          "order": 1
+        },
+        {
+          "key": "sara-nora-station",
+          "order": 2
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 20,
+      "level": "A1",
+      "module": 4,
+      "chapter": 5,
+      "revision": "r2",
+      "file": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql",
+      "bytes": 35217,
+      "sha256": "18c2ab1305ef2c7dede76cf5c6913f85c3bb039606b5d3fbf8224edb67be6ce7",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 14,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 31,
+        "lesson_words": 25,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-mia-city-transport",
+          "order": 1
+        },
+        {
+          "key": "sara-markus-taxi",
+          "order": 1
+        },
+        {
+          "key": "mia-markus-taxi",
+          "order": 1
+        },
+        {
+          "key": "sara-markus-taxi",
+          "order": 2
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 21,
+      "level": "A1",
+      "module": 5,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M05_C01_series_021_v9.sql",
+      "bytes": 34835,
+      "sha256": "ff24bfe5b7990194b62c7f0721c73f04bd4c4046c8f22ea8b8567a9ea2aa42c0",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 11,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 29,
+        "lesson_words": 26,
+        "explicit_targets": 3,
+        "activities": 25
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 1
+        },
+        {
+          "key": "mia-julia-clothing-store",
+          "order": 1
+        },
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 2
+        },
+        {
+          "key": "mia-julia-clothing-store",
+          "order": 2
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 22,
+      "level": "A1",
+      "module": 5,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M05_C02_series_022_v9.sql",
+      "bytes": 38898,
+      "sha256": "00250b77a4b1cc1d7637cb3233b2df89aead0908b6223d3e12e65c7be9fa48a8",
+      "counts": {
+        "inserted_words": 7,
+        "selected_words": 17,
+        "inserted_characters": 0,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 32,
+        "lesson_words": 32,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 3
+        },
+        {
+          "key": "mia-julia-clothing-store",
+          "order": 3
+        },
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 4
+        },
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 5
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 23,
+      "level": "A1",
+      "module": 5,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M05_C03_series_023_v9.sql",
+      "bytes": 47870,
+      "sha256": "ddcecc826b70960361733969cd0196cd2901ae06bde5f9f325ec6f92f925a99f",
+      "counts": {
+        "inserted_words": 6,
+        "selected_words": 23,
+        "inserted_characters": 0,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 24,
+        "tokens": 48,
+        "lesson_words": 48,
+        "explicit_targets": 3,
+        "activities": 33
+      },
+      "activity_types": {
+        "listen": 12,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 12,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 6
+        },
+        {
+          "key": "mia-julia-clothing-store",
+          "order": 4
+        },
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 7
+        },
+        {
+          "key": "mia-julia-clothing-store",
+          "order": 5
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 24,
+      "level": "A1",
+      "module": 5,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M05_C04_series_024_v9.sql",
+      "bytes": 39758,
+      "sha256": "3708d3e918d7ea773f63dbb30bb9da1adad7254129c92938cfc54cd9a95e7ecc",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 18,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 37,
+        "lesson_words": 31,
+        "explicit_targets": 3,
+        "activities": 31
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-daniel-checkout",
+          "order": 1
+        },
+        {
+          "key": "mia-daniel-checkout",
+          "order": 1
+        },
+        {
+          "key": "sara-daniel-checkout",
+          "order": 2
+        },
+        {
+          "key": "sara-daniel-checkout",
+          "order": 3
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 25,
+      "level": "A1",
+      "module": 5,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M05_C05_series_025_v9.sql",
+      "bytes": 45890,
+      "sha256": "c175305c50c0213e9082addea3d0d472f569ec5052f7b145f3f0c9d87ef5a83d",
+      "counts": {
+        "inserted_words": 6,
+        "selected_words": 19,
+        "inserted_characters": 0,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 44,
+        "lesson_words": 39,
+        "explicit_targets": 3,
+        "activities": 31
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 8
+        },
+        {
+          "key": "mia-julia-clothing-store",
+          "order": 6
+        },
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 9
+        },
+        {
+          "key": "sara-julia-clothing-store",
+          "order": 10
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 26,
+      "level": "A1",
+      "module": 6,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M06_C01_series_026_v9.sql",
+      "bytes": 44588,
+      "sha256": "3dd4382893ff1a9ef7d7440b0b86e9561a9cecce09fddc1be08e046ad94ec33e",
+      "counts": {
+        "inserted_words": 7,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 44,
+        "lesson_words": 35,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 1
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 2
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 3
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 27,
+      "level": "A1",
+      "module": 6,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M06_C02_series_027_v9.sql",
+      "bytes": 38235,
+      "sha256": "34b92f8886c6255cfdd1692f0d6d27d08492df6d2acf4debb027338484794449",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 13,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 54,
+        "lesson_words": 33,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 5
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 6
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 7
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 8
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 28,
+      "level": "A1",
+      "module": 6,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M06_C03_series_028_v9.sql",
+      "bytes": 36945,
+      "sha256": "c970e9dd706a11cd5f095fd4267c188540f188b2eb4448fe8807a853e8241ccb",
+      "counts": {
+        "inserted_words": 5,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 44,
+        "lesson_words": 33,
+        "explicit_targets": 3,
+        "activities": 24
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-home-problem",
+          "order": 1
+        },
+        {
+          "key": "anna-jonas-home-problem",
+          "order": 2
+        },
+        {
+          "key": "anna-jonas-home-problem",
+          "order": 3
+        },
+        {
+          "key": "anna-jonas-home-problem",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 29,
+      "level": "A1",
+      "module": 6,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M06_C04_series_029_v9.sql",
+      "bytes": 32164,
+      "sha256": "2d4f3bc68aa5d0e3d8ed4e6647229e64b2293bce2b255c4861b88bc999c2d074",
+      "counts": {
+        "inserted_words": 2,
+        "selected_words": 15,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 26,
+        "lesson_words": 24,
+        "explicit_targets": 2,
+        "activities": 25
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 2,
+        "new_word": 2,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 9
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 10
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 11
+        },
+        {
+          "key": "anna-sofia-neighbors-home",
+          "order": 12
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 30,
+      "level": "A1",
+      "module": 6,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M06_C05_series_030_v9.sql",
+      "bytes": 42613,
+      "sha256": "41715ff44e784cdec845bf01f40bccc655a460f0a8e6c50254c0133a6c82691b",
+      "counts": {
+        "inserted_words": 5,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 52,
+        "lesson_words": 41,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-household",
+          "order": 1
+        },
+        {
+          "key": "anna-jonas-household",
+          "order": 2
+        },
+        {
+          "key": "anna-jonas-household",
+          "order": 3
+        },
+        {
+          "key": "anna-jonas-household",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 31,
+      "level": "A1",
+      "module": 7,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M07_C01_series_031_v9.sql",
+      "bytes": 45811,
+      "sha256": "2b63c731461e39f37016629be39b1081fe7723f3e6a7ae580e64c07d1f9a3d7b",
+      "counts": {
+        "inserted_words": 6,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 54,
+        "lesson_words": 39,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-sofia-family-photo",
+          "order": 1
+        },
+        {
+          "key": "anna-sofia-family-photo",
+          "order": 2
+        },
+        {
+          "key": "anna-sofia-family-photo",
+          "order": 3
+        },
+        {
+          "key": "anna-sofia-family-photo",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 32,
+      "level": "A1",
+      "module": 7,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M07_C02_series_032_v9.sql",
+      "bytes": 42476,
+      "sha256": "76420c18130e6e1582d7822654bd91fbfd9379730fddd6bfeb7faa71d0ece602",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 13,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 54,
+        "lesson_words": 39,
+        "explicit_targets": 3,
+        "activities": 31
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 5
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 6
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 7
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 8
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 33,
+      "level": "A1",
+      "module": 7,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M07_C03_series_033_v9.sql",
+      "bytes": 41354,
+      "sha256": "28c28075a83d1f152b995759c5b412745fc215926abd2a0bc34cdd660cca20c9",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 51,
+        "lesson_words": 44,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 9
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 10
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 11
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 12
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 34,
+      "level": "A1",
+      "module": 7,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M07_C04_series_034_v9.sql",
+      "bytes": 41475,
+      "sha256": "108afcc72ad28f221106138295b41df5db9ebe845fa74324b903d52718d9b66e",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 57,
+        "lesson_words": 36,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 13
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 14
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 15
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 16
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 35,
+      "level": "A1",
+      "module": 7,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M07_C05_series_035_v9.sql",
+      "bytes": 37872,
+      "sha256": "c5952da6acc3e8e740fb1a1ec573a35342e47faf5b2a3205f88f3de0e672a651",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 44,
+        "lesson_words": 39,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 17
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 18
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 19
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 20
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 36,
+      "level": "A1",
+      "module": 8,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M08_C01_series_036_v9.sql",
+      "bytes": 43523,
+      "sha256": "2d53701515a92a9625cc4a09aa6fdc92115b5d57d90971453bee552242560e8c",
+      "counts": {
+        "inserted_words": 7,
+        "selected_words": 17,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 45,
+        "lesson_words": 32,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-important-situations",
+          "order": 1
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 1
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 2
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 3
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 37,
+      "level": "A1",
+      "module": 8,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M08_C02_series_037_v9.sql",
+      "bytes": 42930,
+      "sha256": "98bfc4eeeecfb6f5c9dc4f6d703e3ec514ac5ea66b39b2bd3ce8e28044f70bc6",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 16,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 49,
+        "lesson_words": 36,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-important-situations",
+          "order": 2
+        },
+        {
+          "key": "mia-clara-pharmacy",
+          "order": 1
+        },
+        {
+          "key": "mia-clara-pharmacy",
+          "order": 2
+        },
+        {
+          "key": "mia-clara-pharmacy",
+          "order": 3
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 38,
+      "level": "A1",
+      "module": 8,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M08_C03_series_038_v9.sql",
+      "bytes": 46610,
+      "sha256": "18868c1e854f54958718719a996de957775d84fd86c5396c65a15381e460bb6f",
+      "counts": {
+        "inserted_words": 6,
+        "selected_words": 21,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 24,
+        "tokens": 48,
+        "lesson_words": 42,
+        "explicit_targets": 3,
+        "activities": 32
+      },
+      "activity_types": {
+        "listen": 12,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 12,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-markus-taxi",
+          "order": 2
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 1
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 2
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 3
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 39,
+      "level": "A1",
+      "module": 8,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M08_C04_series_039_v9.sql",
+      "bytes": 40601,
+      "sha256": "c668441f4b691f4a9ff3d6538ad521293d628c99eda604b76b4611770e96dec3",
+      "counts": {
+        "inserted_words": 6,
+        "selected_words": 15,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 40,
+        "lesson_words": 32,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-markus-taxi",
+          "order": 3
+        },
+        {
+          "key": "mia-david-airport",
+          "order": 1
+        },
+        {
+          "key": "mia-david-airport",
+          "order": 2
+        },
+        {
+          "key": "mia-david-airport",
+          "order": 3
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 40,
+      "level": "A1",
+      "module": 8,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A1_M08_C05_series_040_v9.sql",
+      "bytes": 40711,
+      "sha256": "b9c64d7a8481840d3f7d7f0e92f0c40032641be73f4a2c0ce015c04ec58c231f",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 39,
+        "lesson_words": 37,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-david-airport",
+          "order": 4
+        },
+        {
+          "key": "mia-david-airport",
+          "order": 5
+        },
+        {
+          "key": "mia-david-airport",
+          "order": 6
+        },
+        {
+          "key": "mia-david-airport",
+          "order": 7
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 41,
+      "level": "A2",
+      "module": 1,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M01_C01_series_041_v9.sql",
+      "bytes": 46838,
+      "sha256": "6cf3f7d58be35e0554084606b8caf12d026df446323a5184854f3914d1bab506",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 15,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 58,
+        "lesson_words": 43,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-laura-office",
+          "order": 5
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 6
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 7
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 8
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 42,
+      "level": "A2",
+      "module": 1,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M01_C02_series_042_v9.sql",
+      "bytes": 44704,
+      "sha256": "8b99fdeb9ae92d8e96c9415e658bd4ddba728b09e34943fffc6a8c203df1007b",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 17,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 52,
+        "lesson_words": 46,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-laura-office",
+          "order": 9
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 10
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 11
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 12
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 43,
+      "level": "A2",
+      "module": 1,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M01_C03_series_043_v9.sql",
+      "bytes": 49745,
+      "sha256": "ee836f2dab21eaf834083a24a190404437959f829bdcd23bde650d107dc95472",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 22,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 60,
+        "lesson_words": 57,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-laura-office",
+          "order": 13
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 14
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 15
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 16
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 44,
+      "level": "A2",
+      "module": 1,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M01_C04_series_044_v9.sql",
+      "bytes": 46926,
+      "sha256": "a7c37edce19cb3893d742215921c60c727a28f5d4ade8214c35617fb91f1ad3a",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 20,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 52,
+        "lesson_words": 51,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 21
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 22
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 23
+        },
+        {
+          "key": "lena-ben-weekend-plans",
+          "order": 24
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 45,
+      "level": "A2",
+      "module": 1,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M01_C05_series_045_v9.sql",
+      "bytes": 55969,
+      "sha256": "323150142fd023602165a1b4c7cda1af8e92a50819e2c0b70d2dddcb9f0e5df9",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 25,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 74,
+        "lesson_words": 68,
+        "explicit_targets": 3,
+        "activities": 29
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-laura-office",
+          "order": 17
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 18
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 19
+        },
+        {
+          "key": "anna-laura-office",
+          "order": 20
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 46,
+      "level": "A2",
+      "module": 2,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M02_C01_series_046_v9.sql",
+      "bytes": 44540,
+      "sha256": "056b4add8729f4659c34be472c29e2fc858f596517ba3ae2daa47a417d9e0362",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 49,
+        "lesson_words": 37,
+        "explicit_targets": 3,
+        "activities": 27
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 1,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 1
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 2
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 3
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 47,
+      "level": "A2",
+      "module": 2,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M02_C02_series_047_v9.sql",
+      "bytes": 43629,
+      "sha256": "87e0489ba9a4507bb545d8fef86c1e08a6b249c6fff32f4672fe191cf65a3f08",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 51,
+        "lesson_words": 45,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 5
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 6
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 7
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 8
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 48,
+      "level": "A2",
+      "module": 2,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M02_C03_series_048_v9.sql",
+      "bytes": 52097,
+      "sha256": "de2ed66f6f01849ce68d0bdcb2aab0b9ca46d39fcf42b7f8993a2c260eae36f2",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 23,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 22,
+        "tokens": 63,
+        "lesson_words": 59,
+        "explicit_targets": 3,
+        "activities": 31
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 3,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 11,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 9
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 10
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 11
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 12
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 49,
+      "level": "A2",
+      "module": 2,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M02_C04_series_049_v9.sql",
+      "bytes": 40264,
+      "sha256": "c48613fe4192e6d251da6a5f58dddbfa488b84df3ac609731d581bab5881e159",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 39,
+        "lesson_words": 38,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 13
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 14
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 15
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 16
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 50,
+      "level": "A2",
+      "module": 2,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M02_C05_series_050_v9.sql",
+      "bytes": 46869,
+      "sha256": "0c1a97289acfecf4b3fc6f258e29c9cd8b207feac85ec94033b427c464564159",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 19,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 52,
+        "lesson_words": 49,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 17
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 18
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 19
+        },
+        {
+          "key": "mia-sara-a2-appointments",
+          "order": 20
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 51,
+      "level": "A2",
+      "module": 3,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M03_C01_series_051_v9.sql",
+      "bytes": 48014,
+      "sha256": "c612ebdb2d5f0cffabcf9a9891f9335299b468f1a2cd17e2febaaf5c4eafb742",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 15,
+        "inserted_characters": 1,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 53,
+        "lesson_words": 49,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 1
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 2
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 3
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 52,
+      "level": "A2",
+      "module": 3,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M03_C02_series_052_v9.sql",
+      "bytes": 45495,
+      "sha256": "0a041ba7c11e35a64d94ded1b0541f718fc530b3247f417270c6f4defd77e13f",
+      "counts": {
+        "inserted_words": 2,
+        "selected_words": 19,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 52,
+        "lesson_words": 48,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 5
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 6
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 7
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 8
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 53,
+      "level": "A2",
+      "module": 3,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M03_C03_series_053_v9.sql",
+      "bytes": 40867,
+      "sha256": "b21e3966618fc3a239130f0682abc7d326f2a8ef24c798cbde3b738447c7b05f",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 39,
+        "lesson_words": 41,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 9
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 10
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 11
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 12
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 54,
+      "level": "A2",
+      "module": 3,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M03_C04_series_054_v9.sql",
+      "bytes": 52572,
+      "sha256": "3967f7d42215bdc396880ecf364b5dda02dd0022c0c4483f220c1c84f74c2e77",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 24,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 66,
+        "lesson_words": 61,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 13
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 14
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 15
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 16
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 55,
+      "level": "A2",
+      "module": 3,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M03_C05_series_055_v9.sql",
+      "bytes": 56381,
+      "sha256": "b7f1ea1fce04b4f21c2eb1efdacef61692e4ed799e4471e4091669cb1c69bfe2",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 29,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 67,
+        "lesson_words": 65,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 17
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 18
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 19
+        },
+        {
+          "key": "anna-martin-work-tasks",
+          "order": 20
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 56,
+      "level": "A2",
+      "module": 4,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M04_C01_series_056_v9.sql",
+      "bytes": 53726,
+      "sha256": "ffc3e2749328cbac90e88b0df5d2ee197a3a1dc2d28841e47d7c2a67539e16dc",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 24,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 55,
+        "lesson_words": 52,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 1
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 2
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 3
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 57,
+      "level": "A2",
+      "module": 4,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M04_C02_series_057_v9.sql",
+      "bytes": 54928,
+      "sha256": "6af447d017cef91c96a526f45112ce9b05a9ba1a6f6d6a0dc9e372616f63a281",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 20,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 21,
+        "tokens": 74,
+        "lesson_words": 66,
+        "explicit_targets": 3,
+        "activities": 31
+      },
+      "activity_types": {
+        "listen": 11,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 5
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 6
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 7
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 8
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 58,
+      "level": "A2",
+      "module": 4,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M04_C03_series_058_v9.sql",
+      "bytes": 51255,
+      "sha256": "1ef8af580db57fc56fed91b9522c257e72bec77e89e932f848c183d298724ad8",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 23,
+        "inserted_characters": 1,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 53,
+        "lesson_words": 47,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 9
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 10
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 11
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 12
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 59,
+      "level": "A2",
+      "module": 4,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M04_C04_series_059_v9.sql",
+      "bytes": 54799,
+      "sha256": "4f20fc17243847f34aa92acd22195a85104c2a099b242a0244b30c400bcea04f",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 25,
+        "inserted_characters": 0,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 65,
+        "lesson_words": 58,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 13
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 14
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 15
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 16
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 60,
+      "level": "A2",
+      "module": 4,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M04_C05_series_060_v9.sql",
+      "bytes": 49244,
+      "sha256": "6d67ad54fada26793e154ca12bed310881f045eea02279c8895e617a00e93f96",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 20,
+        "inserted_characters": 0,
+        "selected_characters": 3,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 51,
+        "lesson_words": 38,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 17
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 18
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 19
+        },
+        {
+          "key": "anna-jonas-a2-home-repairs",
+          "order": 20
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 61,
+      "level": "A2",
+      "module": 5,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M05_C01_series_061_v9.sql",
+      "bytes": 48575,
+      "sha256": "1b2a87450c87f02b90ac556eb5e6d664b3e1fcc80da784de1b29201d4d6e5ce6",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 51,
+        "lesson_words": 46,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-marie-hotel",
+          "order": 4
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 5
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 6
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 7
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 62,
+      "level": "A2",
+      "module": 5,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M05_C02_series_062_v9.sql",
+      "bytes": 51339,
+      "sha256": "770b8f8e9814ecb125b27cb4d1cf39482adb4134ff8f8e8a6940b6b126523271",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 18,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 69,
+        "lesson_words": 52,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-marie-hotel",
+          "order": 8
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 9
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 10
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 11
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 63,
+      "level": "A2",
+      "module": 5,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M05_C03_series_063_v9.sql",
+      "bytes": 50444,
+      "sha256": "a51c7c40f89501ab48a48d3946a1c25881b718135a5e82f0e917d63edf7d77a4",
+      "counts": {
+        "inserted_words": 5,
+        "selected_words": 21,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 57,
+        "lesson_words": 45,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-marie-hotel",
+          "order": 12
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 13
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 14
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 15
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 64,
+      "level": "A2",
+      "module": 5,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M05_C04_series_064_v9.sql",
+      "bytes": 41313,
+      "sha256": "51c4b1da8cb691ed0947ae7a5b5a8aa1fdb4affc990b7c206f5166c85d2de29a",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 13,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 42,
+        "lesson_words": 45,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-marie-hotel",
+          "order": 16
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 17
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 18
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 19
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 65,
+      "level": "A2",
+      "module": 5,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M05_C05_series_065_v9.sql",
+      "bytes": 42847,
+      "sha256": "1c86a4dca2e191b03f552491f6f2238a670d5720b3e54926219f3964a1549bc6",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 33,
+        "lesson_words": 36,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-marie-hotel",
+          "order": 20
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 21
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 22
+        },
+        {
+          "key": "mia-marie-hotel",
+          "order": 23
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 66,
+      "level": "A2",
+      "module": 6,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M06_C01_series_066_v9.sql",
+      "bytes": 42050,
+      "sha256": "6b48e36e062ce2cfff84583ec048f673d42c47533f6eb99741a8f09eb2c4ca7e",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 44,
+        "lesson_words": 37,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-doctor-weber",
+          "order": 4
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 5
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 6
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 7
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 67,
+      "level": "A2",
+      "module": 6,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M06_C02_series_067_v9.sql",
+      "bytes": 44393,
+      "sha256": "a475e379bb21d71cafff42fc29ce20407acfb1a72362bfe45475dd62a5befd10",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 17,
+        "tokens": 59,
+        "lesson_words": 50,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 2
+      },
+      "storylines": [
+        {
+          "key": "mia-doctor-weber",
+          "order": 8
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 9
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 10
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 11
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 68,
+      "level": "A2",
+      "module": 6,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M06_C03_series_068_v9.sql",
+      "bytes": 42598,
+      "sha256": "2750f0def2a13ba77d678590e199523f83bad87fd68a4e7aa373403bf628e201",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 15,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 55,
+        "lesson_words": 40,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-doctor-weber",
+          "order": 12
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 13
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 14
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 15
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 69,
+      "level": "A2",
+      "module": 6,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M06_C04_series_069_v9.sql",
+      "bytes": 49983,
+      "sha256": "b71d2307dd0e4e7a52862f48662ba85dad39d90ce7d378e2202d6e8a71b38b86",
+      "counts": {
+        "inserted_words": 5,
+        "selected_words": 20,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 55,
+        "lesson_words": 50,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-doctor-weber",
+          "order": 16
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 17
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 18
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 19
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 70,
+      "level": "A2",
+      "module": 6,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M06_C05_series_070_v9.sql",
+      "bytes": 51990,
+      "sha256": "c15afb850ae2f0d293e3f7c801a8d3efb46614f534d0b6fc68cc4a3e492e65f2",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 23,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 57,
+        "lesson_words": 51,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-doctor-weber",
+          "order": 20
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 21
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 22
+        },
+        {
+          "key": "mia-doctor-weber",
+          "order": 23
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 71,
+      "level": "A2",
+      "module": 7,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M07_C01_series_071_v9.sql",
+      "bytes": 43451,
+      "sha256": "49bc80494caaf1e5b743768559f4a6b739cb7d02359adfce0d402d10a854c670",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 12,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 54,
+        "lesson_words": 35,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 1
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 2
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 3
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 72,
+      "level": "A2",
+      "module": 7,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M07_C02_series_072_v9.sql",
+      "bytes": 41983,
+      "sha256": "2c6f549bf8f7cbce2eedad0b8986d176d1c24ce290be8926c836d06a9e933c70",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 14,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 55,
+        "lesson_words": 44,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 5
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 6
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 7
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 8
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 73,
+      "level": "A2",
+      "module": 7,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M07_C03_series_073_v9.sql",
+      "bytes": 46538,
+      "sha256": "b2860ba71ada85e3e4b494e0a84656fa1199f092884d605143c6225e2e2e13a3",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 19,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 54,
+        "lesson_words": 51,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 9
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 10
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 11
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 12
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 74,
+      "level": "A2",
+      "module": 7,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M07_C04_series_074_v9.sql",
+      "bytes": 44513,
+      "sha256": "8bca2ef250cccab275b50c5cf21a2dcf5bab16a0167669dcf8c2576ea412530a",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 17,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 45,
+        "lesson_words": 43,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 13
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 14
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 15
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 16
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 75,
+      "level": "A2",
+      "module": 7,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M07_C05_series_075_v9.sql",
+      "bytes": 49966,
+      "sha256": "4c8aff2235f29f9f86532cf4ccae718d70ac7d9a4359febc44d94245dfe9d61f",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 21,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 61,
+        "lesson_words": 54,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 17
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 18
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 19
+        },
+        {
+          "key": "lena-ben-a2-train-trip",
+          "order": 20
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 76,
+      "level": "A2",
+      "module": 8,
+      "chapter": 1,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M08_C01_series_076_v9.sql",
+      "bytes": 48525,
+      "sha256": "9a21747c6b8aa709d7f5b86622f39e4e637f672ee0cef8a9b33e5f795ad66a6f",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 47,
+        "lesson_words": 49,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 9,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 9,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 1
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 2
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 3
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 4
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 77,
+      "level": "A2",
+      "module": 8,
+      "chapter": 2,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M08_C02_series_077_v9.sql",
+      "bytes": 42111,
+      "sha256": "2d12e133fdb5237b27f7cbc441fea111c0894005c635604a4e993b0ac34e954b",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 12,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 18,
+        "tokens": 50,
+        "lesson_words": 38,
+        "explicit_targets": 3,
+        "activities": 28
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 5
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 6
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 7
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 8
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 78,
+      "level": "A2",
+      "module": 8,
+      "chapter": 3,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M08_C03_series_078_v9.sql",
+      "bytes": 46545,
+      "sha256": "e92a15dfece808a8aa409e889399b7ba0e617ebaac52f60f992eb97bde0f9efc",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 19,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 59,
+        "lesson_words": 52,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 9
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 10
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 11
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 12
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 79,
+      "level": "A2",
+      "module": 8,
+      "chapter": 4,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M08_C04_series_079_v9.sql",
+      "bytes": 43201,
+      "sha256": "a98bebc8dfe14ee7ebef613b33ef709c548fb17960f6e9d5ab6e94df85b01702",
+      "counts": {
+        "inserted_words": 4,
+        "selected_words": 16,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 16,
+        "tokens": 50,
+        "lesson_words": 46,
+        "explicit_targets": 3,
+        "activities": 26
+      },
+      "activity_types": {
+        "listen": 8,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 8,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 13
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 14
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 15
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 16
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "series": 80,
+      "level": "A2",
+      "module": 8,
+      "chapter": 5,
+      "revision": null,
+      "file": "nova_DE_FA_A2_M08_C05_series_080_v9.sql",
+      "bytes": 54730,
+      "sha256": "f43178b5c6c4792a8d0e13b51af83253f233860104a9066123cf3f37f762b4f4",
+      "counts": {
+        "inserted_words": 3,
+        "selected_words": 24,
+        "inserted_characters": 0,
+        "selected_characters": 2,
+        "lessons": 4,
+        "turns": 20,
+        "tokens": 62,
+        "lesson_words": 56,
+        "explicit_targets": 3,
+        "activities": 30
+      },
+      "activity_types": {
+        "listen": 10,
+        "meaning_choice": 4,
+        "new_word": 3,
+        "reading_comprehension": 2,
+        "speak": 10,
+        "word_order": 1
+      },
+      "storylines": [
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 17
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 18
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 19
+        },
+        {
+          "key": "mia-sara-a2-communication",
+          "order": 20
+        }
+      ],
+      "unmatched_token_word_tuples": 0,
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

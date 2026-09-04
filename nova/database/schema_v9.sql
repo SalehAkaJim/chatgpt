@@ -1,5 +1,5 @@
 -- ============================================================================
--- NOVA DATABASE SCHEMA v9.1
+-- NOVA DATABASE SCHEMA v9.1.1
 -- MySQL 8.0.21+
 --
 -- Implementation-ready schema for:
@@ -238,6 +238,10 @@ CREATE TABLE words (
   display_form VARCHAR(255) NOT NULL,
   part_of_speech VARCHAR(48) NOT NULL,
   translation VARCHAR(512) NOT NULL,
+  identity_hash CHAR(64)
+    GENERATED ALWAYS AS (
+      SHA2(CONCAT_WS(CHAR(31),lemma,part_of_speech,translation),256)
+    ) STORED,
   pronunciation_hint VARCHAR(255) NULL,
   romanization VARCHAR(255) NULL,
   difficulty TINYINT UNSIGNED NOT NULL,
@@ -258,6 +262,7 @@ CREATE TABLE words (
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   UNIQUE KEY uq_words_course_key (course_id,word_key),
   UNIQUE KEY uq_words_course_sense (course_id,lemma,part_of_speech,sense_key),
+  UNIQUE KEY uq_words_course_identity (course_id,identity_hash),
   KEY idx_words_course_lemma (course_id,lemma),
   KEY idx_words_course_display (course_id,display_form),
   KEY idx_words_difficulty (course_id,difficulty),
@@ -360,11 +365,32 @@ CREATE TABLE activities (
   KEY idx_activities_word (word_id),
   CONSTRAINT chk_activities_sort_order CHECK (sort_order > 0),
   CONSTRAINT chk_activities_score CHECK (max_score > 0),
+  CONSTRAINT chk_activities_source CHECK (
+    (
+      activity_type IN ('listen','speak','word_order')
+      AND turn_id IS NOT NULL AND word_id IS NULL
+    )
+    OR (
+      activity_type = 'new_word'
+      AND turn_id IS NULL AND word_id IS NOT NULL
+    )
+    OR (
+      activity_type = 'meaning_choice'
+      AND (
+        (turn_id IS NOT NULL AND word_id IS NULL)
+        OR (turn_id IS NULL AND word_id IS NOT NULL)
+      )
+    )
+    OR (
+      activity_type = 'reading_comprehension'
+      AND turn_id IS NULL AND word_id IS NULL
+    )
+  ),
   CONSTRAINT chk_activities_config CHECK (config IS NULL OR JSON_TYPE(config) = 'OBJECT'),
   CONSTRAINT chk_activities_metadata CHECK (metadata IS NULL OR JSON_TYPE(metadata) = 'OBJECT'),
   CONSTRAINT fk_activities_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
-  CONSTRAINT fk_activities_turn FOREIGN KEY(turn_id) REFERENCES turns(id) ON DELETE SET NULL,
-  CONSTRAINT fk_activities_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE SET NULL
+  CONSTRAINT fk_activities_turn FOREIGN KEY(turn_id) REFERENCES turns(id) ON DELETE RESTRICT,
+  CONSTRAINT fk_activities_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Authentication remains outside Nova. `external_subject` stores the stable ID
@@ -730,4 +756,4 @@ LEFT JOIN v_lesson_activities a ON a.lesson_id = l.id
 LEFT JOIN v_lesson_dictionary d ON d.lesson_id = l.id;
 
 INSERT INTO schema_versions(version,description)
-VALUES ('v9.1.0','Implementation-ready Nova v9 content, runtime and learner-progress schema');
+VALUES ('v9.1.1','Implementation-ready Nova v9 content, runtime, migration and learner-progress schema');

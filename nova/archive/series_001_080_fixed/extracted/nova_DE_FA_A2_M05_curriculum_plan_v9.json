@@ -1,0 +1,87 @@
+{
+  "schema": "Nova v9.0",
+  "level": "A2",
+  "levelDifficulty": [
+    21,
+    40
+  ],
+  "module": 5,
+  "title": "Im Hotel",
+  "titleTranslation": "در هتل",
+  "difficulty": [
+    33,
+    35
+  ],
+  "status": "active",
+  "characters": {
+    "primaryStoryline": [
+      "Mia",
+      "Marie"
+    ],
+    "relationship": "hotel guest and receptionist",
+    "continuityFromA1": "mia-marie-hotel orders 1-3"
+  },
+  "chapters": [
+    {
+      "order": 1,
+      "series": 61,
+      "title": "Das Zimmer ist zu laut",
+      "translation": "اتاق خیلی پر سر و صداست",
+      "difficulty": [
+        33,
+        33
+      ],
+      "status": "complete-in-series-061",
+      "focus": "laut + degree particle zu + formal help request"
+    },
+    {
+      "order": 2,
+      "series": 62,
+      "title": "Können Sie mir ein anderes Zimmer geben?",
+      "translation": "می تونید یک اتاق دیگه بهم بدید؟",
+      "difficulty": [
+        33,
+        34
+      ],
+      "status": "planned",
+      "focus": "geben + anderes Zimmer + concrete hotel solution request"
+    },
+    {
+      "order": 3,
+      "series": 63,
+      "title": "Ich bleibe eine Nacht länger",
+      "translation": "یک شب بیشتر می مونم",
+      "difficulty": [
+        34,
+        34
+      ],
+      "status": "planned",
+      "focus": "bleiben + Nacht + länger + extending a stay"
+    },
+    {
+      "order": 4,
+      "series": 64,
+      "title": "Wann ist das Frühstück?",
+      "translation": "صبحانه چه ساعتیه؟",
+      "difficulty": [
+        34,
+        35
+      ],
+      "status": "planned",
+      "focus": "asking for hotel service time + reuse Frühstück"
+    },
+    {
+      "order": 5,
+      "series": 65,
+      "title": "Ich möchte auschecken",
+      "translation": "می خوام اتاق را تحویل بدم",
+      "difficulty": [
+        35,
+        35
+      ],
+      "status": "planned",
+      "focus": "checkout + module synthesis"
+    }
+  ],
+  "pedagogy": "The module extends the A1 Mia-Marie hotel storyline into A2 service interactions: room complaint, concrete solution request, stay extension, hotel service times, and checkout."
+}

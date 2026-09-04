@@ -1,5 +1,5 @@
 -- ============================================================================
--- NOVA v9.1: one-row lesson runtime payload
+-- NOVA v9.1.1: one-row lesson runtime payload
 --
 -- Production usage:
 --   SELECT * FROM v_lesson_runtime WHERE lesson_id = ?;

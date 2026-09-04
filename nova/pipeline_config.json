@@ -2,10 +2,18 @@
   "version": 2,
   "course": "de-fa",
   "source_of_truth": "github",
+  "database_revision": "v9.1.1",
+  "canonical_history": {
+    "archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "extracted_root": "nova/archive/series_001_080_fixed/extracted",
+    "manifest": "nova/archive/series_001_080_fixed/manifest.json",
+    "scan_report": "nova/archive/series_001_080_fixed/FULL_SCAN_REPORT.json",
+    "scan_status": "passed"
+  },
   "content_generation": {
-    "enabled": true,
+    "enabled": false,
     "freeze_after_series": 80,
-    "reason": "explicit production resume authorized",
+    "reason": "database_runtime_and_ui_implementation",
     "resume_requires_explicit_unfreeze": true
   },
   "content_unit": {

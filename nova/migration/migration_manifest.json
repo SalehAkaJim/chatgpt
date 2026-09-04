@@ -1,7 +1,13 @@
 {
-  "format": "gzip+base64 canonical batches",
+  "format": "exact canonical ZIP plus extracted UTF-8 source files",
   "source_archive": "nova_v9_production_series_001_080_fixed.zip",
   "source_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+  "source_archive_bytes": 502504,
+  "canonical_archive_path": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+  "extracted_root": "nova/archive/series_001_080_fixed/extracted",
+  "extracted_manifest": "nova/archive/series_001_080_fixed/manifest.json",
+  "full_scan_report": "nova/archive/series_001_080_fixed/FULL_SCAN_REPORT.json",
+  "scanner": "nova/tools/scan_canonical_archive.py",
   "batches": [
     {
       "file": "nova_DE_FA_A1_batch_01_series_001_008.sql.gz.b64",
@@ -129,8 +135,10 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "recovery": "Base64 decode each .sql.gz.b64, then gunzip. Output is concatenated unchanged canonical SQL files with BEGIN/END headers.",
-  "artifacts_present_in_repository": false,
-  "restore_status": "blocked_until_exact_artifacts_are_recovered",
-  "restore_requirement": "Recover the exact archive, verify source_archive_sha256, then add the ten listed .sql.gz.b64 text artifacts without regeneration."
+  "legacy_batch_specs_note": "The ten gzip+base64 rows above preserve the previously calculated derived-batch checksums. They are not required now that the exact source ZIP and all 105 extracted members are stored in GitHub.",
+  "legacy_gzip_base64_batches_present": false,
+  "recovery": "Verify the canonical ZIP checksum, then import the extracted Series SQL files in numeric order and run nova/database/migrate_canonical_a1_a2_v9_1.sql.",
+  "artifacts_present_in_repository": true,
+  "restore_status": "ready_for_live_mysql_restore_test",
+  "restore_requirement": "Run the documented clean MySQL restore and nova/database/validate_database_v9.sql; static full-archive validation already passes."
 }
