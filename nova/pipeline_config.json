@@ -65,7 +65,9 @@
     "status_enum_audit",
     "chapter_empty_guard",
     "batch_cross_chapter_duplicate_target_audit",
-    "level_progression_audit"
+    "level_progression_audit",
+    "surface_token_spec_count_matches",
+    "separable_verb_surface_parts_mapped"
   ],
   "recommendation": {
     "safe_default": "8 chapters per published artifact, generated and validated chapter-by-chapter",
@@ -129,5 +131,44 @@
     "language_specific_TTS_preflight_required": true
   },
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-05T19:11:12.339Z"
+  "updated_at": "2026-09-05T20:18:01.660Z",
+  "token_mapping_policy": {
+    "version": 1,
+    "coverage": "one token object per visible whitespace-delimited German surface token",
+    "order": "exact sentence order",
+    "punctuation": "punctuation is stored in prefix or suffix while surface preserves the visible lexical token",
+    "separable_verbs": {
+      "collapse_visible_parts_into_one_token": false,
+      "finite_form_and_detached_prefix_are_separate_token_objects": true,
+      "both_parts_use_complete_verb_lemma": true,
+      "example": {
+        "text": "Dann steigen wir jetzt ein.",
+        "expected_surface_tokens": [
+          "Dann",
+          "steigen",
+          "wir",
+          "jetzt",
+          "ein"
+        ],
+        "verb_mappings": [
+          {
+            "surface": "steigen",
+            "lemma": "einsteigen",
+            "partOfSpeech": "verb"
+          },
+          {
+            "surface": "ein",
+            "lemma": "einsteigen",
+            "partOfSpeech": "verb",
+            "suffix": "."
+          }
+        ]
+      }
+    },
+    "pre_stage_assertions": [
+      "mapped token count equals visible surface token count",
+      "token surfaces preserve exact visible order",
+      "surface plus punctuation reconstructs the exact German source text"
+    ]
+  }
 }
