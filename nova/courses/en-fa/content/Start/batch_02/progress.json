@@ -60,18 +60,18 @@
       "chapter": 16,
       "series": 16,
       "title": "This is my room",
-      "status": "planned"
+      "status": "qa_passed_staged"
     }
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
-  "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_16_series_016",
+  "cross_chapter_qa_status": "pending",
+  "next_action": "run_batch_02_cross_chapter_qa_and_publish",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-05T20:39:50.000Z",
+  "updated_at": "2026-09-05T20:42:50.000Z",
   "last_completed_atomic_unit": {
-    "chapter": 15,
-    "series": 15,
+    "chapter": 16,
+    "series": 16,
     "status": "PASS"
   }
 }
