@@ -18,13 +18,13 @@
       "chapter": 9,
       "series": 9,
       "title": "I speak a little English",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 10,
       "series": 10,
       "title": "Can you say that again?",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 11,
@@ -65,9 +65,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_09_series_009",
+  "next_action": "generate_and_qa_chapter_10_series_010",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-05T16:47:00.000Z",
-  "last_completed_atomic_unit": null
+  "updated_at": "2026-09-05T17:39:00.000Z",
+  "last_completed_atomic_unit": {
+    "chapter": 9,
+    "series": 9,
+    "status": "PASS"
+  }
 }
