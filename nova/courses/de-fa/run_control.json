@@ -4,9 +4,15 @@
   "course": "de-fa",
   "expected_next_series": 101,
   "last_successful_series": 100,
-  "lease": null,
+  "lease": {
+    "run_id": "nova-de-fa-20260905T2259Z-s101",
+    "holder": "Nova German Production",
+    "acquired_at": "2026-09-05T23:00:57.733Z",
+    "expires_at": "2026-09-05T23:50:57.733Z",
+    "base_head": "5222f417082b3ba52de295ffe1a3d78516822f00"
+  },
   "lease_timeout_minutes": 50,
-  "state": "unlocked",
-  "updated_at": "2026-09-05T22:08:45.548Z",
+  "state": "locked",
+  "updated_at": "2026-09-05T23:00:57.733Z",
   "version": 1
 }
