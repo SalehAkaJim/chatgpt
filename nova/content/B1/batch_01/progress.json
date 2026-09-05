@@ -52,24 +52,24 @@
       "chapter": 7,
       "series": 87,
       "title": "Kannst du mir erklären, wie das geht?",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 8,
       "series": 88,
       "title": "Ich glaube, dass wir mehr Zeit brauchen",
-      "status": "planned"
+      "status": "pending"
     }
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_07_series_087",
+  "next_action": "generate_and_qa_chapter_08_series_088",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 6,
-    "series": 86,
+    "chapter": 7,
+    "series": 87,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T10:07:50.750Z"
+  "updated_at": "2026-09-05T11:07:48.766Z"
 }
