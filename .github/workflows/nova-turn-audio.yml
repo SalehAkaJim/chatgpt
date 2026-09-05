@@ -12,11 +12,6 @@ on:
           - plan
           - initial
           - after_series
-      confirm_paid_generation:
-        description: Confirm ElevenLabs quota usage
-        required: true
-        type: boolean
-        default: false
   push:
     branches:
       - main
@@ -52,12 +47,6 @@ jobs:
 
       - name: Validate repository SQL sources
         run: python nova/tts/nova_tts.py validate-sources
-
-      - name: Validate paid-run confirmation
-        if: github.event_name == 'workflow_dispatch' && inputs.mode != 'plan' && !inputs.confirm_paid_generation
-        run: |
-          echo "Paid generation was not confirmed."
-          exit 2
 
       - name: Assign distinct profile-matched German voices
         id: voices

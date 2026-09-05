@@ -50,7 +50,8 @@ ELEVENLABS_API_KEY
 ```
 
 سپس از بخش Actions، Workflow با نام `Nova Turn Audio` را با حالت `initial`
-و تأیید مصرف quota اجرا کن. Workflow این مراحل را انجام می‌دهد:
+اجرا کن. انتخاب این حالت به‌معنی شروع تولید و مصرف quota است. Workflow این
+مراحل را انجام می‌دهد:
 
 ```bash
 python nova/tts/nova_tts.py validate-sources
