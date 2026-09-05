@@ -1,0 +1,117 @@
+name: Nova Word Audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Run type
+        required: true
+        type: choice
+        default: plan
+        options:
+          - plan
+          - initial
+          - after_series
+  push:
+    branches:
+      - main
+    paths:
+      - "nova/archive/series_001_080_fixed/extracted/*series*_v9*.sql"
+      - "nova/staging/**/chapter.sql"
+      - "nova/tts/run-word-initial.txt"
+      - "nova/tts/nova_word_tts.py"
+      - "nova/tts/word_voice.json"
+      - "nova/tts/tests/test_nova_word_tts.py"
+      - ".github/workflows/nova-word-audio.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-word-audio
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      NOVA_WORD_TTS_CONCURRENCY: "2"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tests
+        run: python -m unittest discover -s nova/tts/tests -v
+
+      - name: Validate repository Word sources
+        run: python nova/tts/nova_word_tts.py validate-sources
+
+      - name: Assign the pinned female Lori voice
+        id: lori
+        if: >-
+          (github.event_name == 'workflow_dispatch' && inputs.mode == 'initial') ||
+          (github.event_name == 'push' && contains(github.event.head_commit.message, '[initial-word-audio]'))
+        continue-on-error: true
+        run: python nova/tts/nova_word_tts.py bootstrap-lori --yes
+
+      - name: Show Word generation plan
+        if: always()
+        run: python nova/tts/nova_word_tts.py plan
+
+      - name: Generate initial Word audio
+        id: initial_audio
+        if: >-
+          ((github.event_name == 'workflow_dispatch' && inputs.mode == 'initial') ||
+          (github.event_name == 'push' && contains(github.event.head_commit.message, '[initial-word-audio]'))) &&
+          steps.lori.outcome == 'success'
+        continue-on-error: true
+        run: python nova/tts/nova_word_tts.py generate --yes
+
+      - name: Generate Words added after a Series
+        id: series_audio
+        if: >-
+          (github.event_name == 'workflow_dispatch' && inputs.mode == 'after_series') ||
+          (github.event_name == 'push' && !contains(github.event.head_commit.message, '[initial-word-audio]'))
+        continue-on-error: true
+        run: python nova/tts/nova_word_tts.py generate --yes --after-series
+
+      - name: Commit resumable Word audio, manifest, and update SQL
+        if: always() && (github.event_name == 'push' || inputs.mode != 'plan')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- nova/tts/word_voice.json
+          for path in \
+            nova/audio/word_manifest.json \
+            nova/audio/last_word_generation_report.json \
+            nova/audio/update_word_audio.sql \
+            nova/audio/words
+          do
+            if [ -e "$path" ]; then
+              git add -- "$path"
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No Word TTS files changed."
+          else
+            git commit -m "Generate Nova word audio"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Fail after preserving resumable Word progress
+        if: >-
+          always() &&
+          (steps.lori.outcome == 'failure' ||
+          steps.initial_audio.outcome == 'failure' ||
+          steps.series_audio.outcome == 'failure')
+        run: |
+          echo "Lori assignment or Word audio generation was incomplete. Successful progress was committed; re-run to resume."
+          exit 2

@@ -1,5 +1,8 @@
 # Nova Turn Audio
 
+اتوماسیون تلفظ دیکشنری `words` با Voice ثابت Lori به‌صورت مستقل در
+[`README_WORD_AUDIO.md`](README_WORD_AUDIO.md) مستند شده است.
+
 این ابزار بدون هیچ اتصال دیتابیسی، Turnها را از SQLهای موجود در خود Repository
 می‌خواند و برای هر Turn با ElevenLabs فایل MP3 می‌سازد. خروجی‌ها موقتاً داخل
 GitHub در این ساختار نگه‌داری می‌شوند:
