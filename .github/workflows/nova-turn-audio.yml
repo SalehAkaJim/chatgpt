@@ -1,0 +1,94 @@
+name: Nova Turn Audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Run type
+        required: true
+        type: choice
+        default: plan
+        options:
+          - plan
+          - initial
+          - after_series
+      confirm_paid_generation:
+        description: Confirm ElevenLabs quota usage
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-turn-audio
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      NOVA_DB_HOST: ${{ secrets.NOVA_DB_HOST }}
+      NOVA_DB_PORT: ${{ secrets.NOVA_DB_PORT }}
+      NOVA_DB_USER: ${{ secrets.NOVA_DB_USER }}
+      NOVA_DB_PASSWORD: ${{ secrets.NOVA_DB_PASSWORD }}
+      NOVA_DB_NAME: ${{ secrets.NOVA_DB_NAME }}
+      NOVA_TTS_CONCURRENCY: "2"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: nova/tts/requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r nova/tts/requirements.txt
+
+      - name: Validate paid-run confirmation
+        if: inputs.mode != 'plan' && !inputs.confirm_paid_generation
+        run: |
+          echo "Paid generation was not confirmed."
+          exit 2
+
+      - name: Assign a distinct German voice to every character
+        id: voices
+        if: inputs.mode != 'plan' && inputs.confirm_paid_generation
+        continue-on-error: true
+        run: python nova/tts/nova_tts.py bootstrap-voices --yes
+
+      - name: Show generation plan
+        if: inputs.mode == 'plan' || steps.voices.outcome == 'success'
+        run: python nova/tts/nova_tts.py plan
+
+      - name: Generate missing or stale audio
+        id: audio
+        if: inputs.mode != 'plan' && inputs.confirm_paid_generation && steps.voices.outcome == 'success'
+        continue-on-error: true
+        run: python nova/tts/nova_tts.py generate --yes
+
+      - name: Commit resumable TTS state and generated audio
+        if: always() && inputs.mode != 'plan' && inputs.confirm_paid_generation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- nova/tts/voice_map.json nova/audio
+          if git diff --cached --quiet; then
+            echo "No TTS files changed."
+          else
+            git commit -m "Generate Nova turn audio (${{ inputs.mode }})"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Fail after preserving resumable progress
+        if: always() && inputs.mode != 'plan' && (steps.voices.outcome == 'failure' || steps.audio.outcome == 'failure')
+        run: |
+          echo "Voice assignment or audio generation was incomplete. Successful progress was committed; re-run to resume."
+          exit 2
