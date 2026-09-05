@@ -8,7 +8,7 @@ This repository is the persistent source of truth for Nova educational content a
 - The active database contract is the unchanged canonical Nova v9.0 contract from the preserved archive.
 - B1 Series 081 through 085 have passed chapter QA and are staged.
 - The next atomic generation unit is B1 Series 086.
-- Content is generated one chapter per hourly run. Published state advances only after all eight chapters and batch QA pass.
+- Content is generated as up to two strictly sequential chapters per hourly run. Each chapter is independently QA-checked and committed before the next chapter starts. Published state advances only after all eight chapters and batch QA pass.
 
 ## Canonical database
 

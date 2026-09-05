@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "course": "de-fa",
   "source_of_truth": "github",
   "database_revision": "v9.0",
@@ -73,13 +73,18 @@
   },
   "automation": {
     "cadence": "hourly",
-    "max_atomic_chapters_per_run": 1,
+    "max_atomic_chapters_per_run": 2,
     "single_active_run": true,
     "reread_github_state_before_each_run": true,
     "retry_failed_chapter_without_advancing": true,
     "required_database_revision": "v9.0",
     "schema_upgrade_allowed": false,
     "next_atomic_chapter": 8,
-    "next_series": 88
+    "next_series": 88,
+    "execution_mode": "strictly_sequential",
+    "reread_github_state_between_chapters": true,
+    "commit_each_chapter_after_qa_pass": true,
+    "stop_remaining_run_on_failure": true,
+    "never_generate_chapters_in_parallel": true
   }
 }

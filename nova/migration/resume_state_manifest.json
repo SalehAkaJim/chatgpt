@@ -7,7 +7,7 @@
   "content_freeze_after_series": 80,
   "resume_from": {
     "level": "B1",
-    "series": 82
+    "series": 88
   },
   "github_source_of_truth": {
     "production_state": "nova/production_state.json",
@@ -79,9 +79,24 @@
     "level": "B1",
     "batch": 1,
     "qa_passed_series": [
-      81
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
     ],
-    "next_series": 82
+    "next_series": 88
   },
-  "updated_at": "2026-09-05T05:19:22.170Z"
+  "updated_at": "2026-09-05T11:25:55.963Z",
+  "execution_policy": {
+    "cadence": "hourly",
+    "max_chapters_per_run": 2,
+    "execution_mode": "strictly_sequential",
+    "reread_github_state_between_chapters": true,
+    "commit_each_chapter_after_qa_pass": true,
+    "stop_remaining_run_on_failure": true,
+    "database_revision": "v9.0"
+  }
 }
