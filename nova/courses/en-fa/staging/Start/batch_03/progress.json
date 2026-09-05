@@ -12,13 +12,13 @@
   "database_level_code": "ST",
   "failed_chapters": [],
   "last_completed_atomic_unit": {
-    "chapter": 19,
-    "series": 19,
+    "chapter": 20,
+    "series": 20,
     "status": "PASS"
   },
   "level": "Start",
-  "next_pending_chapter": 20,
-  "next_pending_series": 20,
+  "next_pending_chapter": 21,
+  "next_pending_series": 21,
   "passed_chapters": [
     {
       "chapter": 17,
@@ -42,13 +42,23 @@
     },
     {
       "chapter": 19,
-      "series": 19,
-      "status": "PASS",
-      "sql": "nova/courses/en-fa/staging/Start/batch_03/chapter_19_series_019/chapter.sql",
-      "qa": "nova/courses/en-fa/staging/Start/batch_03/chapter_19_series_019/qa.json",
       "database_revision": "v9.0",
+      "qa": "nova/courses/en-fa/staging/Start/batch_03/chapter_19_series_019/qa.json",
+      "series": 19,
+      "source_head": "3220d7c8e5efd4efd8bbbc8de3628d8620e4fa9f",
+      "sql": "nova/courses/en-fa/staging/Start/batch_03/chapter_19_series_019/chapter.sql",
       "sql_sha256": "2d12c6adc2c5938704790d725417f7c3815e4fe33dbf4a9cc969816886f568b0",
-      "source_head": "3220d7c8e5efd4efd8bbbc8de3628d8620e4fa9f"
+      "status": "PASS"
+    },
+    {
+      "chapter": 20,
+      "series": 20,
+      "status": "PASS",
+      "sql": "nova/courses/en-fa/staging/Start/batch_03/chapter_20_series_020/chapter.sql",
+      "qa": "nova/courses/en-fa/staging/Start/batch_03/chapter_20_series_020/qa.json",
+      "database_revision": "v9.0",
+      "sql_sha256": "5211d71902b9046f68bda4bce19456fcd696d9533762233e5338060638a015e0",
+      "source_head": "19e30066760a3401ca1fd14e84c76c25a8f1bd42"
     }
   ],
   "production_state_advanced": false,
@@ -59,5 +69,5 @@
     24
   ],
   "status": "in_progress",
-  "updated_at": "2026-09-05T22:35:07.000Z"
+  "updated_at": "2026-09-05T22:38:21.000Z"
 }
