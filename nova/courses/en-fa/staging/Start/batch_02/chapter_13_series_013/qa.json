@@ -10,7 +10,7 @@
   "series": 13,
   "title": "What time is it?",
   "status": "PASS",
-  "generated_at": "2026-09-05T19:30:53.000Z",
+  "generated_at": "2026-09-05T19:37:12.000Z",
   "checks": {
     "english_naturalness_and_level_fit": true,
     "persian_translation_and_orthography": true,
@@ -37,6 +37,7 @@
     "curriculum_module_identity_exact": true,
     "audio_source_compatible": true,
     "word_audio_policy_v4_compatible": true,
+    "all_new_word_tuples_materialized": true,
     "approved_roster_only": true
   },
   "counts": {
@@ -44,9 +45,9 @@
     "characters": 2,
     "turns": 18,
     "learner_turns": 9,
-    "tokens": 43,
+    "tokens": 45,
     "activities": 34,
-    "lesson_words": 37,
+    "lesson_words": 39,
     "new_word_tuples": 13,
     "word_audio_eligible_new_rows": 9,
     "word_audio_ineligible_sentence_rows": 4,
@@ -93,12 +94,12 @@
     ]
   },
   "source": {
-    "main_head": "1a6ba1c63cd28dbf764c89f4966f5859a218fc1d",
+    "main_head": "4e60efaba5daff658e41ed2e672e60042d32632d",
     "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
     "sql": "chapter.sql",
-    "sql_bytes": 53322,
-    "sql_lines": 362,
-    "sql_sha256": "9cf3436c4df0bfba812a371a3bf7499573597668ae4db6ef3f1d01df5468cfda"
+    "sql_bytes": 55014,
+    "sql_lines": 374,
+    "sql_sha256": "aa46974b6d72cffa4d13db3b8c4e043c5f85660a4a0e634a81ad124e99e09489"
   },
   "verification": {
     "mode": "static_content_and_transactional_sql_audit",
