@@ -1,77 +1,77 @@
 {
-  "course": "en-fa",
-  "level": "Start",
-  "database_level_code": "ST",
   "batch": 3,
+  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "chapter_range": [
     17,
     24
   ],
+  "chapters": [
+    {
+      "chapter": 17,
+      "series": 17,
+      "status": "qa_passed_staged",
+      "title": "Where is my key?"
+    },
+    {
+      "chapter": 18,
+      "series": 18,
+      "status": "qa_passed_staged",
+      "title": "It's on the table"
+    },
+    {
+      "chapter": 19,
+      "series": 19,
+      "status": "planned",
+      "title": "I have a small kitchen"
+    },
+    {
+      "chapter": 20,
+      "series": 20,
+      "status": "planned",
+      "title": "There are two windows"
+    },
+    {
+      "chapter": 21,
+      "series": 21,
+      "status": "planned",
+      "title": "I wake up at seven"
+    },
+    {
+      "chapter": 22,
+      "series": 22,
+      "status": "planned",
+      "title": "I go to work"
+    },
+    {
+      "chapter": 23,
+      "series": 23,
+      "status": "planned",
+      "title": "I study in the evening"
+    },
+    {
+      "chapter": 24,
+      "series": 24,
+      "status": "planned",
+      "title": "I like tea"
+    }
+  ],
+  "course": "en-fa",
+  "cross_chapter_qa_status": "not_ready",
+  "database_level_code": "ST",
+  "database_revision": "v9.0",
+  "generation_cadence": "hourly_at_minute_59",
+  "last_completed_atomic_unit": {
+    "chapter": 18,
+    "series": 18,
+    "status": "PASS"
+  },
+  "level": "Start",
+  "next_action": "generate_and_qa_chapter_19_series_019",
+  "published": false,
   "series_range": [
     17,
     24
   ],
   "status": "in_progress",
-  "published": false,
-  "chapters": [
-    {
-      "chapter": 17,
-      "series": 17,
-      "title": "Where is my key?",
-      "status": "qa_passed_staged"
-    },
-    {
-      "chapter": 18,
-      "series": 18,
-      "title": "It's on the table",
-      "status": "planned"
-    },
-    {
-      "chapter": 19,
-      "series": 19,
-      "title": "I have a small kitchen",
-      "status": "planned"
-    },
-    {
-      "chapter": 20,
-      "series": 20,
-      "title": "There are two windows",
-      "status": "planned"
-    },
-    {
-      "chapter": 21,
-      "series": 21,
-      "title": "I wake up at seven",
-      "status": "planned"
-    },
-    {
-      "chapter": 22,
-      "series": 22,
-      "title": "I go to work",
-      "status": "planned"
-    },
-    {
-      "chapter": 23,
-      "series": 23,
-      "title": "I study in the evening",
-      "status": "planned"
-    },
-    {
-      "chapter": 24,
-      "series": 24,
-      "title": "I like tea",
-      "status": "planned"
-    }
-  ],
-  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
-  "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_18_series_018",
-  "database_revision": "v9.0",
-  "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-05T21:35:44.000Z",
-  "last_completed_atomic_unit": {
-    "chapter": 17,
-    "series": 17,
-    "status": "PASS"
-  }
+  "updated_at": "2026-09-05T21:39:52.000Z"
 }
