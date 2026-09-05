@@ -1,0 +1,100 @@
+{
+  "project": "Nova",
+  "course": "de-fa",
+  "level": "B1",
+  "module": 3,
+  "chapter": 12,
+  "series": 92,
+  "title": "Seit wir hier wohnen, ist es ruhiger",
+  "database_revision": "v9.0",
+  "schema_changes": false,
+  "status": "PASS",
+  "checks": {
+    "activity_source_integrity": true,
+    "archive_integrity": true,
+    "batch_cross_chapter_duplicate_target_audit": true,
+    "chapter_empty_guard": true,
+    "clickable_token_coverage_100_percent": true,
+    "dependency_audit": true,
+    "distractor_quality": true,
+    "duplicate_lesson_words_audit": true,
+    "forbidden_schema_ddl_absent": true,
+    "four_lessons": true,
+    "german_naturalness_and_b1_level": true,
+    "learner_speech_target_coverage_100_percent": true,
+    "lemma_first_morphology": true,
+    "level_progression_audit": true,
+    "persian_translation_and_orthography": true,
+    "reading_has_task": true,
+    "status_enum_audit": true,
+    "storyline_continuity": true,
+    "token_dictionary_mapping_100_percent": true,
+    "token_object_contract_v9_0": true,
+    "two_characters_per_lesson": true,
+    "v9_0_schema_compatibility": true
+  },
+  "counts": {
+    "lessons": 4,
+    "turns": 24,
+    "learner_turns": 12,
+    "activities": 32,
+    "tokens": 187,
+    "lesson_words": 156,
+    "new_word_tuples": 37,
+    "explicit_targets": 4,
+    "characters": 2,
+    "storyline_orders": 4
+  },
+  "explicit_targets": [
+    {
+      "lemma": "Seit Herr Weber den Teppich gekauft hat, ist es viel ruhiger.",
+      "part_of_speech": "phrase",
+      "translation": "از وقتی آقای وبر فرش رو خریده، خیلی آروم تر شده."
+    },
+    {
+      "lemma": "Ich fühle mich wohler, seit ich die Nachbarn kenne.",
+      "part_of_speech": "phrase",
+      "translation": "از وقتی همسایه ها رو می شناسم، احساس راحتی بیشتری دارم."
+    },
+    {
+      "lemma": "Seit ich früher aufstehe, habe ich morgens mehr Zeit.",
+      "part_of_speech": "phrase",
+      "translation": "از وقتی زودتر بیدار می شم، صبح ها وقت بیشتری دارم."
+    },
+    {
+      "lemma": "Seit wir offen miteinander sprechen, lösen wir Probleme schneller.",
+      "part_of_speech": "phrase",
+      "translation": "از وقتی با هم راحت حرف می زنیم، مشکل ها رو سریع تر حل می کنیم."
+    }
+  ],
+  "storyline": {
+    "key": "anna-jonas-b1-neighborhood",
+    "orders": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "characters": [
+      "Jonas",
+      "Anna"
+    ]
+  },
+  "source": {
+    "main_head": "d51f1d7aaa7ee97008fd32fcfdf5847efd6d4c99",
+    "canonical_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "sql": "chapter.sql",
+    "sql_bytes": 133446,
+    "sql_lines": 861,
+    "sql_sha256": "c1b440b716d966ed026f28f54257e1aedf4f40d844a973a2d80695928b72a41b"
+  },
+  "verification": {
+    "mode": "static_content_and_transactional_sql_audit",
+    "live_mysql_execution": "not_performed",
+    "runtime_guards_embedded": true
+  },
+  "errors": [],
+  "warnings": [],
+  "generated_at": "2026-09-05T16:03:11.562Z"
+}
