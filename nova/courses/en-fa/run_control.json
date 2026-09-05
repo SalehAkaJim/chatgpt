@@ -2,11 +2,16 @@
   "version": 1,
   "course": "en-fa",
   "automation_title": "Nova English Production",
-  "state": "unlocked",
-  "lease": null,
+  "state": "locked",
+  "lease": {
+    "run_id": "en-fa-20260905T183707Z-progress-fix",
+    "acquired_at": "2026-09-05T18:37:07.000Z",
+    "expires_at": "2026-09-05T19:27:07.000Z",
+    "base_head": "f9be54f8d67772873a178d693ae2cb101a0a0758"
+  },
   "expected_next_series": 13,
   "last_successful_series": 12,
   "compare_and_swap_required": true,
   "lease_timeout_minutes": 50,
-  "updated_at": "2026-09-05T18:36:16.000Z"
+  "updated_at": "2026-09-05T18:37:07.000Z"
 }
