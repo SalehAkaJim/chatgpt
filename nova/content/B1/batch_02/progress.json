@@ -22,13 +22,13 @@
       "chapter": 10,
       "series": 90,
       "title": "Wir haben das Problem gelöst",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 11,
       "series": 91,
       "title": "Der Nachbar, der oben wohnt",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 12,
@@ -63,13 +63,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_10_series_090",
+  "next_action": "generate_and_qa_chapter_11_series_091",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 9,
-    "series": 89,
+    "chapter": 10,
+    "series": 90,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T12:14:24.708Z"
+  "updated_at": "2026-09-05T14:02:45.354Z"
 }
