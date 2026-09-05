@@ -233,7 +233,25 @@ INSERT INTO nova_turn_audio_updates (cefr_level,module_order,chapter_order,lesso
 ('ST',3,2,4,3,'Maya','character','e8ba09e6814280d255cd0a6b5e9361ad893a729774f457ef4c549359b151bbd0','nova/audio/turns/en-fa/ST/m03/c02/l04/t03-maya-623e3d292473.mp3',604),
 ('ST',3,2,4,4,'Mina','learner','98670e4e2dd95ff023522fbbb6ec1efd6ed8eff2bf846ba241b9ac57db3d642d','nova/audio/turns/en-fa/ST/m03/c02/l04/t04-mina-91942f8d2f37.mp3',1300),
 ('ST',3,2,4,5,'Maya','character','154bdb1defadc88e4c62efa4c2e71b8977dabcb2592a8de4d3f0aa436db18e00','nova/audio/turns/en-fa/ST/m03/c02/l04/t05-maya-923609af4760.mp3',2508),
-('ST',3,2,4,6,'Mina','learner','154bdb1defadc88e4c62efa4c2e71b8977dabcb2592a8de4d3f0aa436db18e00','nova/audio/turns/en-fa/ST/m03/c02/l04/t06-mina-07681bd8a60b.mp3',2183);
+('ST',3,2,4,6,'Mina','learner','154bdb1defadc88e4c62efa4c2e71b8977dabcb2592a8de4d3f0aa436db18e00','nova/audio/turns/en-fa/ST/m03/c02/l04/t06-mina-07681bd8a60b.mp3',2183),
+('ST',3,3,1,1,'Ethan','character','cccea93e4f7aea6a9b968acc4d90aa3edd397e37798b4def303e0468c0a34649','nova/audio/turns/en-fa/ST/m03/c03/l01/t01-ethan-209899dcbb26.mp3',557),
+('ST',3,3,1,2,'Mina','learner','cd61bf0cc67fc2233111c91167e2abb3c652200bfe22059a166475d37366b7a8','nova/audio/turns/en-fa/ST/m03/c03/l01/t02-mina-9a9c33353458.mp3',1068),
+('ST',3,3,1,3,'Ethan','character','825abd55b198bce7f2b67c2c129df3af705889ace0158897288a1ba242b8546c','nova/audio/turns/en-fa/ST/m03/c03/l01/t03-ethan-033999bf259e.mp3',789),
+('ST',3,3,1,4,'Mina','learner','f51bead488e14b656af3a13e33eb1d6fa9580832cbb9d7a20061f84c4b1c160f','nova/audio/turns/en-fa/ST/m03/c03/l01/t04-mina-7ee0ef8a9d0d.mp3',697),
+('ST',3,3,2,1,'Ethan','character','cd61bf0cc67fc2233111c91167e2abb3c652200bfe22059a166475d37366b7a8','nova/audio/turns/en-fa/ST/m03/c03/l02/t01-ethan-984bb9d2f64e.mp3',1022),
+('ST',3,3,2,2,'Mina','learner','825abd55b198bce7f2b67c2c129df3af705889ace0158897288a1ba242b8546c','nova/audio/turns/en-fa/ST/m03/c03/l02/t02-mina-a4027b35099f.mp3',1347),
+('ST',3,3,2,3,'Ethan','character','5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da','nova/audio/turns/en-fa/ST/m03/c03/l02/t03-ethan-30d830ca848c.mp3',372),
+('ST',3,3,2,4,'Mina','learner','2c33dcef91e066247cc05cc403f99dcf572e5bb8f45656fec462270e689916b6','nova/audio/turns/en-fa/ST/m03/c03/l02/t04-mina-2829fa8a6ad6.mp3',604),
+('ST',3,3,3,1,'Ethan','character','8d48498e9a20340be9627cfe3d505ba56879fa1b07b238d842a1706cc4d1a039','nova/audio/turns/en-fa/ST/m03/c03/l03/t01-ethan-744f1b5016cc.mp3',789),
+('ST',3,3,3,2,'Mina','learner','8d48498e9a20340be9627cfe3d505ba56879fa1b07b238d842a1706cc4d1a039','nova/audio/turns/en-fa/ST/m03/c03/l03/t02-mina-ee5d6dc51eae.mp3',1486),
+('ST',3,3,3,3,'Ethan','character','278032c879d06682ffcd3f89cac24d8a3fa50ec4d128b2133d6c098c83721c87','nova/audio/turns/en-fa/ST/m03/c03/l03/t03-ethan-944ae37b70e0.mp3',743),
+('ST',3,3,3,4,'Mina','learner','f51bead488e14b656af3a13e33eb1d6fa9580832cbb9d7a20061f84c4b1c160f','nova/audio/turns/en-fa/ST/m03/c03/l03/t04-mina-dc0b77cb853e.mp3',604),
+('ST',3,3,4,1,'Ethan','character','0b25a95a4c3a280a3eb67bd1c3e49993e4cfdb6c6b5f7656cd028ce9215766f0','nova/audio/turns/en-fa/ST/m03/c03/l04/t01-ethan-5ac8708b323f.mp3',882),
+('ST',3,3,4,2,'Mina','learner','848116f835859e6af19e03c4563a338994c85de759f8d57cacbdc907fb448ec9','nova/audio/turns/en-fa/ST/m03/c03/l04/t02-mina-5eea91910f45.mp3',1440),
+('ST',3,3,4,3,'Ethan','character','a2543062dcbb83d8e45aadb6b237532eb9348c4ef718e42b6e517260e51ecffc','nova/audio/turns/en-fa/ST/m03/c03/l04/t03-ethan-3ae9ecfe8c0b.mp3',557),
+('ST',3,3,4,4,'Mina','learner','ec8b6401613e272089b2f46f37f0bbfd3939e297b057cc513538f60a16d0df81','nova/audio/turns/en-fa/ST/m03/c03/l04/t04-mina-efc1a1b11b5c.mp3',1718),
+('ST',3,3,4,5,'Ethan','character','9dc82ce50fd69863077000a81986ca43cc2978788b7f059e95bf7ac0d7552eb6','nova/audio/turns/en-fa/ST/m03/c03/l04/t05-ethan-f79f56e0847a.mp3',604),
+('ST',3,3,4,6,'Mina','learner','f51bead488e14b656af3a13e33eb1d6fa9580832cbb9d7a20061f84c4b1c160f','nova/audio/turns/en-fa/ST/m03/c03/l04/t06-mina-081cfd94fa49.mp3',697);
 
 DROP PROCEDURE IF EXISTS apply_nova_turn_audio;
 DELIMITER $$
