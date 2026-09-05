@@ -1,0 +1,101 @@
+{
+  "chapter": 4,
+  "checks": {
+    "activity_source_integrity": true,
+    "archive_integrity": true,
+    "batch_cross_chapter_duplicate_target_audit": true,
+    "chapter_empty_guard": true,
+    "clickable_token_coverage_100_percent": true,
+    "dependency_audit": true,
+    "distractor_quality": true,
+    "duplicate_lesson_words_audit": true,
+    "forbidden_schema_ddl_absent": true,
+    "four_lessons": true,
+    "german_naturalness_and_b1_level": true,
+    "learner_speech_target_coverage_100_percent": true,
+    "lemma_first_morphology": true,
+    "level_progression_audit": true,
+    "persian_translation_and_orthography": true,
+    "reading_has_task": true,
+    "status_enum_audit": true,
+    "storyline_continuity": true,
+    "token_dictionary_mapping_100_percent": true,
+    "token_object_contract_v9_0": true,
+    "two_characters_per_lesson": true,
+    "v9_0_schema_compatibility": true
+  },
+  "counts": {
+    "activities": 32,
+    "characters": 2,
+    "explicit_targets": 4,
+    "learner_turns": 12,
+    "lesson_words": 100,
+    "lessons": 4,
+    "new_word_tuples": 35,
+    "storyline_orders": 4,
+    "tokens": 131,
+    "turns": 24
+  },
+  "course": "de-fa",
+  "database_revision": "v9.0",
+  "errors": [],
+  "explicit_targets": [
+    {
+      "lemma": "Ich bin mir noch nicht sicher.",
+      "part_of_speech": "phrase",
+      "translation": "هنوز مطمئن نیستم."
+    },
+    {
+      "lemma": "Das weiß ich noch nicht genau.",
+      "part_of_speech": "phrase",
+      "translation": "هنوز دقیقا نمی دونم."
+    },
+    {
+      "lemma": "Ich kann beide Wohnungen noch einmal ansehen.",
+      "part_of_speech": "phrase",
+      "translation": "می تونم هر دو خونه رو یک بار دیگه ببینم."
+    },
+    {
+      "lemma": "Ich möchte noch eine Nacht darüber schlafen.",
+      "part_of_speech": "phrase",
+      "translation": "می خوام یک شب دیگه درباره اش فکر کنم."
+    }
+  ],
+  "generated_at": "2026-09-05T08:11:28.886Z",
+  "level": "B1",
+  "module": 1,
+  "project": "Nova",
+  "schema_changes": false,
+  "series": 84,
+  "source": {
+    "canonical_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "canonical_full_scan_status": "PASS",
+    "main_head": "29363722a24a9c394f36d295705e1807d8664a4e",
+    "sql": "chapter.sql",
+    "sql_bytes": 102732,
+    "sql_lines": 768,
+    "sql_sha256": "d17fe1c328cff7690fc55d98bf2999130ae9b30c2a8af97144c47660b6f130f9"
+  },
+  "status": "PASS",
+  "storyline": {
+    "characters": [
+      "Mia",
+      "Sara"
+    ],
+    "key": "mia-sara-b1-decisions",
+    "orders": [
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "title": "Ich bin mir noch nicht sicher",
+  "verification": {
+    "live_mysql_execution": "not_performed",
+    "mode": "static_content_and_transactional_sql_audit",
+    "runtime_guards_embedded": true
+  },
+  "warnings": []
+}
