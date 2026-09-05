@@ -28,13 +28,13 @@
       "chapter": 3,
       "series": 83,
       "title": "Weil ich etwas ändern möchte",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 4,
       "series": 84,
       "title": "Ich bin mir noch nicht sicher",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 5,
@@ -63,13 +63,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_03_series_083",
+  "next_action": "generate_and_qa_chapter_04_series_084",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 2,
-    "series": 82,
+    "chapter": 3,
+    "series": 83,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T06:12:12.867Z"
+  "updated_at": "2026-09-05T07:07:37.284Z"
 }
