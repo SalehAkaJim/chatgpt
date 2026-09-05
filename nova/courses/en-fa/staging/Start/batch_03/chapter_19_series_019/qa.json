@@ -1,0 +1,109 @@
+{
+  "project": "Nova",
+  "course": "en-fa",
+  "database_revision": "v9.0",
+  "schema_changes": false,
+  "level": "Start",
+  "database_level_code": "ST",
+  "module": 4,
+  "chapter": 19,
+  "series": 19,
+  "title": "I have a small kitchen",
+  "status": "PASS",
+  "generated_at": "2026-09-05T22:34:23.000Z",
+  "checks": {
+    "english_naturalness_and_level_fit": true,
+    "persian_translation_and_orthography": true,
+    "exactly_two_characters_per_lesson": true,
+    "storyline_continuity": true,
+    "clickable_token_coverage_100_percent": true,
+    "learner_speech_target_coverage_100_percent": true,
+    "activity_source_integrity": true,
+    "reading_has_task": true,
+    "distractor_quality": true,
+    "dependency_audit": true,
+    "duplicate_lesson_words_audit": true,
+    "chapter_empty_guard": true,
+    "batch_cross_chapter_duplicate_target_audit": true,
+    "level_progression_audit": true,
+    "v9_0_only_no_DDL": true,
+    "course_scope_audit": true,
+    "four_lessons": true,
+    "token_object_contract_v9_0": true,
+    "all_four_skills_per_lesson": true,
+    "exact_word_tuple_history": true,
+    "database_level_code_ST": true,
+    "curriculum_title_exact": true,
+    "curriculum_module_identity_exact": true,
+    "audio_source_compatible": true,
+    "word_audio_policy_v4_compatible": true,
+    "all_new_word_tuples_materialized": true,
+    "approved_roster_only": true
+  },
+  "counts": {
+    "lessons": 4,
+    "characters": 2,
+    "turns": 19,
+    "learner_turns": 9,
+    "tokens": 80,
+    "activities": 35,
+    "lesson_words": 42,
+    "new_word_tuples": 7,
+    "word_audio_eligible_new_rows": 3,
+    "word_audio_ineligible_sentence_rows": 4,
+    "cumulative_word_tuples": 200,
+    "explicit_targets": 4,
+    "cumulative_explicit_targets": 76,
+    "storyline_orders": 4
+  },
+  "explicit_targets": [
+    {
+      "lemma": "I have a small kitchen.",
+      "part_of_speech": "phrase",
+      "translation": "من یک آشپزخانه کوچک دارم."
+    },
+    {
+      "lemma": "Do you have a table?",
+      "part_of_speech": "phrase",
+      "translation": "تو میز داری؟"
+    },
+    {
+      "lemma": "Yes, I have a table.",
+      "part_of_speech": "phrase",
+      "translation": "بله، من میز دارم."
+    },
+    {
+      "lemma": "My kitchen is small.",
+      "part_of_speech": "phrase",
+      "translation": "آشپزخانه من کوچک است."
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "storyline": {
+    "key": "mina-chloe-room-picture",
+    "characters": [
+      "Chloe",
+      "Mina"
+    ],
+    "orders": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "source": {
+    "main_head": "3220d7c8e5efd4efd8bbbc8de3628d8620e4fa9f",
+    "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+    "sql": "chapter.sql",
+    "sql_bytes": 54764,
+    "sql_lines": 338,
+    "sql_sha256": "2d12c6adc2c5938704790d725417f7c3815e4fe33dbf4a9cc969816886f568b0"
+  },
+  "verification": {
+    "mode": "static_content_and_transactional_sql_audit",
+    "live_mysql_execution": "not_performed",
+    "runtime_guards_embedded": true
+  }
+}

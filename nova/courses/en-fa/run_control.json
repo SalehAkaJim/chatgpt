@@ -1,17 +1,17 @@
 {
-  "version": 1,
-  "course": "en-fa",
   "automation_title": "Nova English Production",
-  "state": "locked",
-  "lease": {
-    "run_id": "en-fa-20260905T223200Z-s019",
-    "acquired_at": "2026-09-05T22:32:00.000Z",
-    "expires_at": "2026-09-05T23:22:00.000Z",
-    "base_head": "02eb5e405f857d6bd44fb7ddbbef8598836da262"
-  },
-  "expected_next_series": 19,
-  "last_successful_series": 18,
   "compare_and_swap_required": true,
+  "course": "en-fa",
+  "expected_next_series": 20,
+  "last_successful_series": 19,
+  "lease": {
+    "acquired_at": "2026-09-05T22:32:00.000Z",
+    "base_head": "02eb5e405f857d6bd44fb7ddbbef8598836da262",
+    "expires_at": "2026-09-05T23:22:00.000Z",
+    "run_id": "en-fa-20260905T223200Z-s019"
+  },
   "lease_timeout_minutes": 50,
-  "updated_at": "2026-09-05T22:32:00.000Z"
+  "state": "locked",
+  "updated_at": "2026-09-05T22:35:07.000Z",
+  "version": 1
 }
