@@ -11,64 +11,64 @@
     9,
     16
   ],
-  "status": "in_progress",
-  "published": false,
+  "status": "complete",
+  "published": true,
   "chapters": [
     {
       "chapter": 9,
       "series": 9,
       "title": "I speak a little English",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 10,
       "series": 10,
       "title": "Can you say that again?",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 11,
       "series": 11,
       "title": "Numbers around us",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 12,
       "series": 12,
       "title": "What's your phone number?",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 13,
       "series": 13,
       "title": "What time is it?",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 14,
       "series": 14,
       "title": "Today is Monday",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 15,
       "series": 15,
       "title": "My birthday is in May",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 16,
       "series": 16,
       "title": "This is my room",
-      "status": "qa_passed_staged"
+      "status": "published"
     }
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
-  "cross_chapter_qa_status": "pending",
-  "next_action": "run_batch_02_cross_chapter_qa_and_publish",
+  "cross_chapter_qa_status": "PASS",
+  "next_action": "continue_with_batch_03_chapter_17_series_017",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-05T20:42:50.000Z",
+  "updated_at": "2026-09-05T20:46:33.000Z",
   "last_completed_atomic_unit": {
     "chapter": 16,
     "series": 16,

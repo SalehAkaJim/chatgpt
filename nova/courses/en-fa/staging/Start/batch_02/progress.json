@@ -11,8 +11,8 @@
     9,
     16
   ],
-  "published": false,
-  "production_state_advanced": false,
+  "published": true,
+  "production_state_advanced": true,
   "passed_chapters": [
     {
       "chapter": 9,
@@ -98,16 +98,17 @@
   "failed_chapters": [],
   "next_pending_chapter": null,
   "next_pending_series": null,
-  "cross_chapter_qa": "pending",
+  "cross_chapter_qa": "PASS",
   "batch_artifact": "nova/courses/en-fa/content/Start/batch_02_chapters_09_16.sql",
   "batch_publish_condition": "all chapters 9-16 PASS and cross-chapter QA PASS",
-  "status": "ready_for_cross_chapter_qa",
+  "status": "complete",
   "canonical_database_revision": "v9.0",
   "schema_changes_allowed": false,
-  "updated_at": "2026-09-05T20:42:50.000Z",
+  "updated_at": "2026-09-05T20:46:33.000Z",
   "last_completed_atomic_unit": {
     "chapter": 16,
     "series": 16,
     "status": "PASS"
-  }
+  },
+  "batch_artifact_sha256": "aa71a76d0dd77342893943b35d9d1c2f6feba55e4eb54f63cf31f84cfb622842"
 }
