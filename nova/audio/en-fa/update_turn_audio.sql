@@ -71,7 +71,25 @@ INSERT INTO nova_turn_audio_updates (cefr_level,module_order,chapter_order,lesso
 ('ST',1,3,4,1,'Ava','character','9c290689510ed939b883047afbb65d7015b5cc62e7cb1245f8455f488e7609b7','nova/audio/turns/en-fa/ST/m01/c03/l04/t01-ava-bbb39771dc55.mp3',1068),
 ('ST',1,3,4,2,'Mina','learner','48773d891056c30b987051c8df6143dde4eda1278f3730b45ee7072cd5565c55','nova/audio/turns/en-fa/ST/m01/c03/l04/t02-mina-8b287ec7fd97.mp3',1068),
 ('ST',1,3,4,3,'Ava','character','1df274edd580538a78b22db2830ff0c678df2d6ab91ea86bd356ede74810ef8b','nova/audio/turns/en-fa/ST/m01/c03/l04/t03-ava-a8893955546f.mp3',1115),
-('ST',1,3,4,4,'Mina','learner','29cba7161b4a2e0334249261c3630eb9c9a74f97c73165d8e013a65851854b80','nova/audio/turns/en-fa/ST/m01/c03/l04/t04-mina-a6657485687f.mp3',1300);
+('ST',1,3,4,4,'Mina','learner','29cba7161b4a2e0334249261c3630eb9c9a74f97c73165d8e013a65851854b80','nova/audio/turns/en-fa/ST/m01/c03/l04/t04-mina-a6657485687f.mp3',1300),
+('ST',1,4,1,1,'Ava','character','734411ae67654b1938925bd44a57acb9978fde736dc62f666f769035153a02ed','nova/audio/turns/en-fa/ST/m01/c04/l01/t01-ava-ba9fc0a47ff9.mp3',743),
+('ST',1,4,1,2,'Mina','learner','7cb19a4db62e98160544af71a8e5423119fc3ee93da67f6066dc16eefc5ed62f','nova/audio/turns/en-fa/ST/m01/c04/l01/t02-mina-3b390fecde6b.mp3',882),
+('ST',1,4,1,3,'Ava','character','68514b65884697a4725d4b231dd376aa745abfd4feb3cf9aaa21e4194e2b8acc','nova/audio/turns/en-fa/ST/m01/c04/l01/t03-ava-eaa680ba923f.mp3',789),
+('ST',1,4,1,4,'Mina','learner','b730320655ef331c86a45159cbcee93018d4076409350ad9ec2482ea8e38db55','nova/audio/turns/en-fa/ST/m01/c04/l01/t04-mina-261a14b4a42a.mp3',1207),
+('ST',1,4,2,1,'Ava','character','68514b65884697a4725d4b231dd376aa745abfd4feb3cf9aaa21e4194e2b8acc','nova/audio/turns/en-fa/ST/m01/c04/l02/t01-ava-fc55ff9d0cd8.mp3',975),
+('ST',1,4,2,2,'Mina','learner','b730320655ef331c86a45159cbcee93018d4076409350ad9ec2482ea8e38db55','nova/audio/turns/en-fa/ST/m01/c04/l02/t02-mina-1938ae7b2655.mp3',1486),
+('ST',1,4,2,3,'Ava','character','3765ea16037b1bc3a463f8fe8b02e133ab6d3eb72d7cb4748dacec664684bc1f','nova/audio/turns/en-fa/ST/m01/c04/l02/t03-ava-9ee4f9cf07ee.mp3',418),
+('ST',1,4,2,4,'Mina','learner','1aa7b1c1d5fb1fd6d299eae251a665c7898baeb43d48fb6b8a5b76da6c6ef739','nova/audio/turns/en-fa/ST/m01/c04/l02/t04-mina-95ce83d91487.mp3',743),
+('ST',1,4,3,1,'Ava','character','69022306d1d601e76385764a2a7bc0be5cf527ef3e3bc09209e376d6627125d2','nova/audio/turns/en-fa/ST/m01/c04/l03/t01-ava-93c8123ec7f2.mp3',743),
+('ST',1,4,3,2,'Mina','learner','b033b5adb451a8d9f27d0ee1abda06a211a490623fa848195dfa326fba103579','nova/audio/turns/en-fa/ST/m01/c04/l03/t02-mina-3767822c2c20.mp3',1022),
+('ST',1,4,3,3,'Ava','character','68514b65884697a4725d4b231dd376aa745abfd4feb3cf9aaa21e4194e2b8acc','nova/audio/turns/en-fa/ST/m01/c04/l03/t03-ava-5db6eb539738.mp3',836),
+('ST',1,4,3,4,'Mina','learner','c35ab2074f8a3df26da8a1b6379b1681f33aa7664241070920497208286e1a6d','nova/audio/turns/en-fa/ST/m01/c04/l03/t04-mina-c6cca628a752.mp3',1161),
+('ST',1,4,4,1,'Ava','character','734411ae67654b1938925bd44a57acb9978fde736dc62f666f769035153a02ed','nova/audio/turns/en-fa/ST/m01/c04/l04/t01-ava-4ac4e7a7d99e.mp3',789),
+('ST',1,4,4,2,'Mina','learner','b033b5adb451a8d9f27d0ee1abda06a211a490623fa848195dfa326fba103579','nova/audio/turns/en-fa/ST/m01/c04/l04/t02-mina-06819cdd6d63.mp3',743),
+('ST',1,4,4,3,'Ava','character','68514b65884697a4725d4b231dd376aa745abfd4feb3cf9aaa21e4194e2b8acc','nova/audio/turns/en-fa/ST/m01/c04/l04/t03-ava-9f64b25e7824.mp3',1207),
+('ST',1,4,4,4,'Mina','learner','1daca7c3572711a0a158fc1e21305eee8bc658761447a4440bbaf34b038093ab','nova/audio/turns/en-fa/ST/m01/c04/l04/t04-mina-ba1636d22738.mp3',2276),
+('ST',1,4,4,5,'Ava','character','3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f','nova/audio/turns/en-fa/ST/m01/c04/l04/t05-ava-265f200d218e.mp3',836),
+('ST',1,4,4,6,'Mina','learner','3d5d79652dc4770b0bc1ffbad055c6c5cd4fb1657d1d70e70af25776128590af','nova/audio/turns/en-fa/ST/m01/c04/l04/t06-mina-40c24021718d.mp3',975);
 
 DROP PROCEDURE IF EXISTS apply_nova_turn_audio;
 DELIMITER $$
