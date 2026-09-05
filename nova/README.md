@@ -42,8 +42,14 @@ No future production workflow may depend on temporary sandbox files.
 
 ## Turn audio
 
-The ElevenLabs automation is isolated under `nova/tts/`. It reads the unchanged v9.0 database, assigns one distinct verified German voice to every character, and stores generated MP3 files under `nova/audio/turns/` with a resumable Turn-to-file manifest.
+The ElevenLabs automation is isolated under `nova/tts/`. It never connects to a
+database: it parses canonical and staged repository SQL, assigns one distinct
+profile-matched German voice per character, and stores generated MP3 files under
+`nova/audio/turns/` with a resumable source-locator manifest.
 
-GitHub is temporary audio storage. The live database is not updated with private GitHub paths. After the audio is moved to a public host, `nova_tts.py export-sql` creates guarded URL updates for `characters.voice_key`, `turns.audio_url`, `turns.audio_duration_ms`, and TTS metadata.
+GitHub is temporary audio storage. The generated standalone file
+`nova/audio/update_turn_audio.sql` is run manually by the operator and updates
+only `turns.audio_url` and `turns.audio_duration_ms`, after validating every row
+against its hierarchy, character, role, and text hash.
 
 See `nova/tts/README.md` for the initial run and the command to run after each imported Series.

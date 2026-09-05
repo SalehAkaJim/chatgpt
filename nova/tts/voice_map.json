@@ -1,34 +1,303 @@
 {
-  "version": 1,
+  "version": 2,
   "provider": "elevenlabs",
   "model_id": "eleven_multilingual_v2",
   "language": "de",
-  "selection_policy": "one-distinct-verified-german-voice-per-character",
+  "selection_policy": {
+    "hard_constraints": [
+      "character gender must exactly equal ElevenLabs voice gender",
+      "voice must be verified for German on eleven_multilingual_v2",
+      "source and assigned voice IDs must be unique per character"
+    ],
+    "soft_constraints": [
+      "occupational or story role",
+      "conversation use case",
+      "age category when suggested by the role",
+      "matching descriptive traits"
+    ],
+    "age_note": "Nova source profiles do not define exact ages; age is never treated as an invented hard fact.",
+    "minimum_score": 20
+  },
+  "voice_archetypes": {
+    "friendly_learner": {
+      "preferred_ages": ["young", "middle_aged"],
+      "use_cases": ["conversational", "characters"],
+      "traits": ["friendly", "warm", "natural", "clear"]
+    },
+    "everyday_adult": {
+      "preferred_ages": ["young", "middle_aged"],
+      "use_cases": ["conversational", "characters"],
+      "traits": ["natural", "friendly", "warm", "grounded"]
+    },
+    "professional": {
+      "preferred_ages": ["young", "middle_aged"],
+      "use_cases": ["conversational", "informative", "educational"],
+      "traits": ["clear", "professional", "confident", "natural"]
+    },
+    "customer_service": {
+      "preferred_ages": ["young", "middle_aged"],
+      "use_cases": ["conversational", "characters"],
+      "traits": ["friendly", "helpful", "clear", "warm"]
+    },
+    "medical": {
+      "preferred_ages": ["middle_aged", "old"],
+      "use_cases": ["informative", "educational", "conversational"],
+      "traits": ["calm", "reassuring", "authoritative", "clear"]
+    },
+    "leadership": {
+      "preferred_ages": ["middle_aged", "old"],
+      "use_cases": ["professional", "conversational", "informative"],
+      "traits": ["confident", "authoritative", "clear", "professional"]
+    },
+    "skilled_trade": {
+      "preferred_ages": ["middle_aged", "old"],
+      "use_cases": ["conversational", "characters"],
+      "traits": ["grounded", "confident", "clear", "natural"]
+    }
+  },
   "updated_at": null,
   "characters": [
-    {"name": "Lena", "gender": "female", "introduced_series": 1, "voice_id": null},
-    {"name": "Ben", "gender": "male", "introduced_series": 1, "voice_id": null},
-    {"name": "Anna", "gender": "female", "introduced_series": 1, "voice_id": null},
-    {"name": "Jonas", "gender": "male", "introduced_series": 1, "voice_id": null},
-    {"name": "Mia", "gender": "female", "introduced_series": 2, "voice_id": null},
-    {"name": "Paul", "gender": "male", "introduced_series": 2, "voice_id": null},
-    {"name": "Sofia", "gender": "female", "introduced_series": 2, "voice_id": null},
-    {"name": "Sara", "gender": "female", "introduced_series": 3, "voice_id": null},
-    {"name": "Max", "gender": "male", "introduced_series": 3, "voice_id": null},
-    {"name": "Nina", "gender": "female", "introduced_series": 6, "voice_id": null},
-    {"name": "Tom", "gender": "male", "introduced_series": 8, "voice_id": null},
-    {"name": "Eva", "gender": "female", "introduced_series": 10, "voice_id": null},
-    {"name": "Laura", "gender": "female", "introduced_series": 13, "voice_id": null},
-    {"name": "Felix", "gender": "male", "introduced_series": 16, "voice_id": null},
-    {"name": "Nora", "gender": "female", "introduced_series": 18, "voice_id": null},
-    {"name": "Markus", "gender": "male", "introduced_series": 20, "voice_id": null},
-    {"name": "Julia", "gender": "female", "introduced_series": 21, "voice_id": null},
-    {"name": "Daniel", "gender": "male", "introduced_series": 24, "voice_id": null},
-    {"name": "Dr. Weber", "gender": "male", "introduced_series": 36, "voice_id": null},
-    {"name": "Clara", "gender": "female", "introduced_series": 37, "voice_id": null},
-    {"name": "Marie", "gender": "female", "introduced_series": 38, "voice_id": null},
-    {"name": "David", "gender": "male", "introduced_series": 39, "voice_id": null},
-    {"name": "Martin", "gender": "male", "introduced_series": 51, "voice_id": null},
-    {"name": "Herr Becker", "gender": "male", "introduced_series": 58, "voice_id": null}
+    {
+      "name": "Lena",
+      "gender": "female",
+      "role": "language_student",
+      "context": null,
+      "introduced_series": 1,
+      "profile_source": "nova_DE_FA_A1_M01_C01_series_001_v9.sql",
+      "voice_archetype": "friendly_learner",
+      "voice_id": null
+    },
+    {
+      "name": "Ben",
+      "gender": "male",
+      "role": "language_student",
+      "context": null,
+      "introduced_series": 1,
+      "profile_source": "nova_DE_FA_A1_M01_C01_series_001_v9.sql",
+      "voice_archetype": "friendly_learner",
+      "voice_id": null
+    },
+    {
+      "name": "Anna",
+      "gender": "female",
+      "role": "office_worker",
+      "context": null,
+      "introduced_series": 1,
+      "profile_source": "nova_DE_FA_A1_M01_C01_series_001_v9.sql",
+      "voice_archetype": "professional",
+      "voice_id": null
+    },
+    {
+      "name": "Jonas",
+      "gender": "male",
+      "role": "office_worker",
+      "context": null,
+      "introduced_series": 1,
+      "profile_source": "nova_DE_FA_A1_M01_C01_series_001_v9.sql",
+      "voice_archetype": "professional",
+      "voice_id": null
+    },
+    {
+      "name": "Mia",
+      "gender": "female",
+      "role": "language_student",
+      "context": "language_course",
+      "introduced_series": 2,
+      "profile_source": "nova_DE_FA_A1_M01_C02_series_002_v9.sql",
+      "voice_archetype": "friendly_learner",
+      "voice_id": null
+    },
+    {
+      "name": "Paul",
+      "gender": "male",
+      "role": "language_student",
+      "context": "language_course",
+      "introduced_series": 2,
+      "profile_source": "nova_DE_FA_A1_M01_C02_series_002_v9.sql",
+      "voice_archetype": "friendly_learner",
+      "voice_id": null
+    },
+    {
+      "name": "Sofia",
+      "gender": "female",
+      "role": "neighbor",
+      "context": "apartment_building",
+      "introduced_series": 2,
+      "profile_source": "nova_DE_FA_A1_M01_C02_series_002_v9.sql",
+      "voice_archetype": "everyday_adult",
+      "voice_id": null
+    },
+    {
+      "name": "Sara",
+      "gender": "female",
+      "role": "language_student",
+      "context": "language_course",
+      "origin_country": "Iran",
+      "introduced_series": 3,
+      "profile_source": "nova_DE_FA_A1_M01_C03_series_003_v9.sql",
+      "voice_archetype": "friendly_learner",
+      "voice_id": null
+    },
+    {
+      "name": "Max",
+      "gender": "male",
+      "role": "language_student",
+      "context": "language_course",
+      "origin_country": "Germany",
+      "introduced_series": 3,
+      "profile_source": "nova_DE_FA_A1_M01_C03_series_003_v9.sql",
+      "voice_archetype": "friendly_learner",
+      "voice_id": null
+    },
+    {
+      "name": "Nina",
+      "gender": "female",
+      "role": "barista",
+      "context": "cafe",
+      "introduced_series": 6,
+      "profile_source": "nova_DE_FA_A1_M02_C01_series_006_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "Tom",
+      "gender": "male",
+      "role": "waiter",
+      "context": "restaurant",
+      "introduced_series": 8,
+      "profile_source": "nova_DE_FA_A1_M02_C03_series_008_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "Eva",
+      "gender": "female",
+      "role": "supermarket_employee",
+      "context": "supermarket",
+      "introduced_series": 10,
+      "profile_source": "nova_DE_FA_A1_M02_C05_series_010_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "Laura",
+      "gender": "female",
+      "role": "office_colleague",
+      "context": "office",
+      "introduced_series": 13,
+      "profile_source": "nova_DE_FA_A1_M03_C03_series_013_v9.sql",
+      "voice_archetype": "professional",
+      "voice_id": null
+    },
+    {
+      "name": "Felix",
+      "gender": "male",
+      "role": "city_information_staff",
+      "context": "city_information_point",
+      "introduced_series": 16,
+      "profile_source": "nova_DE_FA_A1_M04_C01_series_016_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "Nora",
+      "gender": "female",
+      "role": "ticket_clerk",
+      "context": "ticket_counter",
+      "introduced_series": 18,
+      "profile_source": "nova_DE_FA_A1_M04_C03_series_018_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "Markus",
+      "gender": "male",
+      "role": "taxi_driver",
+      "context": "taxi",
+      "introduced_series": 20,
+      "profile_source": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql",
+      "voice_archetype": "everyday_adult",
+      "voice_id": null
+    },
+    {
+      "name": "Julia",
+      "gender": "female",
+      "role": "clothing_store_salesperson",
+      "context": "clothing_store",
+      "introduced_series": 21,
+      "profile_source": "nova_DE_FA_A1_M05_C01_series_021_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "Daniel",
+      "gender": "male",
+      "role": "cashier",
+      "context": "clothing_store_checkout",
+      "introduced_series": 24,
+      "profile_source": "nova_DE_FA_A1_M05_C04_series_024_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "Dr. Weber",
+      "gender": "male",
+      "role": "doctor",
+      "context": "doctor_office",
+      "introduced_series": 36,
+      "profile_source": "nova_DE_FA_A1_M08_C01_series_036_v9.sql",
+      "voice_archetype": "medical",
+      "voice_id": null
+    },
+    {
+      "name": "Clara",
+      "gender": "female",
+      "role": "pharmacist",
+      "context": "pharmacy",
+      "introduced_series": 37,
+      "profile_source": "nova_DE_FA_A1_M08_C02_series_037_v9.sql",
+      "voice_archetype": "medical",
+      "voice_id": null
+    },
+    {
+      "name": "Marie",
+      "gender": "female",
+      "role": "hotel_receptionist",
+      "context": "hotel_reception",
+      "introduced_series": 38,
+      "profile_source": "nova_DE_FA_A1_M08_C03_series_038_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "David",
+      "gender": "male",
+      "role": "airport_checkin_staff",
+      "context": "airport_checkin",
+      "introduced_series": 39,
+      "profile_source": "nova_DE_FA_A1_M08_C04_series_039_v9.sql",
+      "voice_archetype": "customer_service",
+      "voice_id": null
+    },
+    {
+      "name": "Martin",
+      "gender": "male",
+      "role": "office_team_lead",
+      "context": "office",
+      "introduced_series": 51,
+      "profile_source": "nova_DE_FA_A2_M03_C01_series_051_v9.sql",
+      "voice_archetype": "leadership",
+      "voice_id": null
+    },
+    {
+      "name": "Herr Becker",
+      "gender": "male",
+      "role": "heating_technician",
+      "context": "home_repair_service",
+      "introduced_series": 58,
+      "profile_source": "nova_DE_FA_A2_M04_C03_series_058_v9.sql",
+      "voice_archetype": "skilled_trade",
+      "voice_id": null
+    }
   ]
 }
