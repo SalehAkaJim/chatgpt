@@ -161,7 +161,25 @@ INSERT INTO nova_turn_audio_updates (cefr_level,module_order,chapter_order,lesso
 ('ST',2,3,4,3,'Liam','character','5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da','nova/audio/turns/en-fa/ST/m02/c03/l04/t03-liam-1464dbb2bb16.mp3',372),
 ('ST',2,3,4,4,'Mina','learner','5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1','nova/audio/turns/en-fa/ST/m02/c03/l04/t04-mina-4a6e82b441db.mp3',975),
 ('ST',2,3,4,5,'Liam','character','7065521701ce0942e6bef2dc1eceb3d24da804a0ddad509ba47c5a6047899065','nova/audio/turns/en-fa/ST/m02/c03/l04/t05-liam-5d267a93e8db.mp3',882),
-('ST',2,3,4,6,'Mina','learner','1aa7b1c1d5fb1fd6d299eae251a665c7898baeb43d48fb6b8a5b76da6c6ef739','nova/audio/turns/en-fa/ST/m02/c03/l04/t06-mina-c74caa8f5eb1.mp3',697);
+('ST',2,3,4,6,'Mina','learner','1aa7b1c1d5fb1fd6d299eae251a665c7898baeb43d48fb6b8a5b76da6c6ef739','nova/audio/turns/en-fa/ST/m02/c03/l04/t06-mina-c74caa8f5eb1.mp3',697),
+('ST',2,4,1,1,'Maya','character','734411ae67654b1938925bd44a57acb9978fde736dc62f666f769035153a02ed','nova/audio/turns/en-fa/ST/m02/c04/l01/t01-maya-0b44fa6a54f1.mp3',789),
+('ST',2,4,1,2,'Mina','learner','f0399e3dc4021a153d672663fda09ebd2512f736c65c77effd6f5287ac6986d3','nova/audio/turns/en-fa/ST/m02/c04/l01/t02-mina-f080a15f1271.mp3',882),
+('ST',2,4,1,3,'Maya','character','3fc4221e377659629fbcfbe4f77100f5049b34a20bd63af5ff36a2328f9b44cd','nova/audio/turns/en-fa/ST/m02/c04/l01/t03-maya-e35a7611facb.mp3',743),
+('ST',2,4,1,4,'Mina','learner','ad560d9357c8845dc44ad5e708feb5c7197143baf3c2e16ca2687886014172d7','nova/audio/turns/en-fa/ST/m02/c04/l01/t04-mina-518630365e26.mp3',1068),
+('ST',2,4,2,1,'Maya','character','1ff92a15a7d374ece750f9b80e754da25dcfc412adf1501987db4d5793ff6de7','nova/audio/turns/en-fa/ST/m02/c04/l02/t01-maya-7d2ba16eaefc.mp3',1440),
+('ST',2,4,2,2,'Mina','learner','45dada513a4c501d31d9c620de5f57cf80d1151c022c646cc8a1965e25f4a826','nova/audio/turns/en-fa/ST/m02/c04/l02/t02-mina-2eae4204720b.mp3',1997),
+('ST',2,4,2,3,'Maya','character','4e6abe605ee52423fc5b097f8dd0fbc3dcc913288ffa56fc687fb277aef927f9','nova/audio/turns/en-fa/ST/m02/c04/l02/t03-maya-a3f36afd4ca8.mp3',975),
+('ST',2,4,2,4,'Mina','learner','c363ad797d762a9e2ab2ebba4e87de3ba683734aa90e6362b4fbc2252a3f3689','nova/audio/turns/en-fa/ST/m02/c04/l02/t04-mina-1a9c56ca8789.mp3',1068),
+('ST',2,4,3,1,'Maya','character','b60cf54748a6de9c9be07de512690c404b3aee0b45516aad8a3c4bea11457e1e','nova/audio/turns/en-fa/ST/m02/c04/l03/t01-maya-391822d70b90.mp3',1347),
+('ST',2,4,3,2,'Mina','learner','eb2792b367c5c0866575319b1660481af2dcc8d3e350d4cb1eecad40dc96801d','nova/audio/turns/en-fa/ST/m02/c04/l03/t02-mina-4b5b3f15799d.mp3',1625),
+('ST',2,4,3,3,'Maya','character','a0d7ce8c360ce42ca16394929f14c0fcb116bae1a05f6f9c23ae7815f6ae7de7','nova/audio/turns/en-fa/ST/m02/c04/l03/t03-maya-1e98e4b9dd5c.mp3',604),
+('ST',2,4,3,4,'Mina','learner','1aa7b1c1d5fb1fd6d299eae251a665c7898baeb43d48fb6b8a5b76da6c6ef739','nova/audio/turns/en-fa/ST/m02/c04/l03/t04-mina-531dc3d62968.mp3',743),
+('ST',2,4,4,1,'Maya','character','1ff92a15a7d374ece750f9b80e754da25dcfc412adf1501987db4d5793ff6de7','nova/audio/turns/en-fa/ST/m02/c04/l04/t01-maya-b451b039c279.mp3',1625),
+('ST',2,4,4,2,'Mina','learner','fbcaa9506988ae6a2a08203299108d1ec94055cd9ec4b1f1d1c97ec3f5c35ffa','nova/audio/turns/en-fa/ST/m02/c04/l04/t02-mina-0335160ec386.mp3',2554),
+('ST',2,4,4,3,'Maya','character','b60cf54748a6de9c9be07de512690c404b3aee0b45516aad8a3c4bea11457e1e','nova/audio/turns/en-fa/ST/m02/c04/l04/t03-maya-51756b14431f.mp3',2136),
+('ST',2,4,4,4,'Mina','learner','c363ad797d762a9e2ab2ebba4e87de3ba683734aa90e6362b4fbc2252a3f3689','nova/audio/turns/en-fa/ST/m02/c04/l04/t04-mina-c678bcf898ad.mp3',1579),
+('ST',2,4,4,5,'Maya','character','3c3d3f612c47b7bb17c1289dec65e7d4234bce5eba71e138393cff4702906d6e','nova/audio/turns/en-fa/ST/m02/c04/l04/t05-maya-69d2f506dad2.mp3',697),
+('ST',2,4,4,6,'Mina','learner','87c1955b4797803dec743970e59f42d74a93e371c13e5d0f71bc8b8ee274d7cf','nova/audio/turns/en-fa/ST/m02/c04/l04/t06-mina-9ead71422579.mp3',882);
 
 DROP PROCEDURE IF EXISTS apply_nova_turn_audio;
 DELIMITER $$
