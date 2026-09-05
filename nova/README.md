@@ -56,16 +56,24 @@ See `nova/tts/README.md` for the initial run and the command to run after each i
 
 ## Language production roadmap
 
-Courses are produced strictly in this order:
+Nova now has ten courses in one fixed priority order:
 
-1. German → Persian (active)
-2. English → Persian
-3. French → Persian
-4. Italian → Persian
-5. Korean → Persian
+1. German → Persian — active
+2. English → Persian — active concurrently
+3. French → Persian — CEFR / DELF-DALF, A1-C2
+4. Italian → Persian — CEFR / CILS, A1-C2
+5. Korean → Persian — TOPIK 1-6
+6. Spanish → Persian — CEFR / DELE, A1-C2
+7. Turkish → Persian — CEFR / European Language Portfolio, A1-C2
+8. Arabic → Persian — CEFR-aligned Modern Standard Arabic, A1-C2, with controlled dialect exposure after the foundation
+9. Japanese → Persian — JLPT N5-N1
+10. Mandarin Chinese → Persian — HSK 3.0, HSK 1-9
 
-The machine-readable queue is stored in `nova/plans/language_production_queue.json`.
-Each language starts from absolute zero with an independently designed curriculum, word state, characters and storylines. Level names, count, ordering and final level are defined by that language's own curriculum; future courses are not forced into A1-C2. Later courses reuse only the Nova v9.0 content engine, and German content must not be translated or copied into them. The next curriculum and its language-specific audio configuration are prepared during the final eight chapters of the active course, but its content does not start until the active course passes its curriculum-defined final transition gate.
+Only German and English are active. All other courses remain queued and cannot generate content until an isolated course root, a complete independent curriculum, curriculum QA, language-specific turn voices and Word-pronunciation sample QA are ready. The concurrency limit remains two.
+
+The machine-readable queue is stored in `nova/plans/language_production_queue.json`, and the standard-selection plan and QA report are stored in `nova/plans/future_language_level_models_v9.json` and `nova/audits/future_language_level_models_qa.json`.
+
+Each language starts from absolute zero with an independently designed curriculum, word state, characters and storylines. Level names, count, ordering and final level follow that language's selected standard; future courses are not forced into A1-C2. Later courses reuse only the Nova v9.0 content engine, and German content must not be translated or copied into them. The next curriculum and its language-specific audio configuration are prepared during the final eight chapters before activation, but queued content does not start until the required transition gate passes.
 
 ## English master curriculum
 

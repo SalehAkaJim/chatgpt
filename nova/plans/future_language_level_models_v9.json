@@ -1,49 +1,62 @@
 {
-  "version": 5,
+  "version": 1,
   "project": "Nova",
-  "purpose": "ordered multi-course content production queue",
-  "base_language": {
-    "code": "fa",
-    "name": "Persian",
-    "name_fa": "فارسی"
-  },
   "database_revision": "v9.0",
-  "status": "active",
-  "active_course": {
-    "order": 0,
-    "learning_language": "de",
-    "course_key": "de-fa",
-    "name": "German",
-    "name_fa": "آلمانی",
-    "status": "in_progress",
-    "current_level": "B1",
-    "next_series": 90,
-    "level_model": {
-      "type": "CEFR",
-      "levels": [
-        "A1",
-        "A2",
-        "B1",
-        "B2",
-        "C1",
-        "C2"
-      ],
-      "final_level": "C2",
-      "status": "active_existing_german_model",
-      "database_level_codes": [
-        "A1",
-        "A2",
-        "B1",
-        "B2",
-        "C1",
-        "C2"
-      ]
-    }
+  "schema_changes_allowed": false,
+  "purpose": "standard-aligned level models for every queued course that did not already have a QA-approved master curriculum",
+  "status": "selected_pending_course_curriculum_design",
+  "updated_at": "2026-09-05T13:11:59.630Z",
+  "immutable_execution_constraints": {
+    "current_active_courses": [
+      "de-fa",
+      "en-fa"
+    ],
+    "max_concurrent_courses": 2,
+    "queue_changes_do_not_activate_content_generation": true,
+    "series_numbering_restarts_at_001_per_course": true,
+    "default_output_per_level": {
+      "chapters": 40,
+      "lessons_per_chapter": 4,
+      "batch_files": 5,
+      "chapters_per_batch_file": 8
+    },
+    "course_specific_QA_approved_plan_may_override_defaults": true,
+    "database_schema_remains_v9_0": true,
+    "audio_required_for_completion": true
   },
-  "queue": [
+  "ordered_courses": [
+    {
+      "order": 0,
+      "course_key": "de-fa",
+      "name": "German",
+      "name_fa": "آلمانی",
+      "status": "in_progress",
+      "level_model": {
+        "type": "CEFR",
+        "levels": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "final_level": "C2",
+        "status": "active_existing_german_model",
+        "database_level_codes": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ]
+      },
+      "level_model_status": "active_existing_german_model",
+      "audio_preflight": null
+    },
     {
       "order": 1,
-      "learning_language": "en",
       "course_key": "en-fa",
       "name": "English",
       "name_fa": "انگلیسی",
@@ -70,26 +83,10 @@
         ]
       },
       "level_model_status": "master_plan_ready_QA_passed",
-      "curriculum_plan": "nova/plans/en_fa_curriculum_master_plan_v9.json",
-      "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
-      "audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json",
-      "planned_series_range": [
-        1,
-        240
-      ],
-      "planned_chapters": 240,
-      "planned_lessons": 960,
-      "planned_batch_files": 30,
-      "current_level": "Start",
-      "current_database_level_code": "ST",
-      "next_series": 1,
-      "isolated_root": "nova/courses/en-fa",
-      "content_started": false,
-      "activation_authorization": "explicit_user_authorization_after_isolation"
+      "audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json"
     },
     {
       "order": 2,
-      "learning_language": "fr",
       "course_key": "fr-fa",
       "name": "French",
       "name_fa": "فرانسوی",
@@ -116,14 +113,6 @@
         "standard_source": "https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions"
       },
       "level_model_status": "standard_selected_curriculum_not_yet_designed",
-      "start_from_absolute_zero": true,
-      "curriculum_plan": null,
-      "activation_gate": {
-        "requires_QA_approved_curriculum": true,
-        "requires_isolated_course_root": true,
-        "requires_available_concurrency_slot": true,
-        "requires_audio_preflight": true
-      },
       "audio_preflight": {
         "required_before_activation": true,
         "pinned_lori_metadata_lists_language": false,
@@ -134,7 +123,6 @@
     },
     {
       "order": 3,
-      "learning_language": "it",
       "course_key": "it-fa",
       "name": "Italian",
       "name_fa": "ایتالیایی",
@@ -161,14 +149,6 @@
         "standard_source": "https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions"
       },
       "level_model_status": "standard_selected_curriculum_not_yet_designed",
-      "start_from_absolute_zero": true,
-      "curriculum_plan": null,
-      "activation_gate": {
-        "requires_QA_approved_curriculum": true,
-        "requires_isolated_course_root": true,
-        "requires_available_concurrency_slot": true,
-        "requires_audio_preflight": true
-      },
       "audio_preflight": {
         "required_before_activation": true,
         "pinned_lori_metadata_lists_language": true,
@@ -179,7 +159,6 @@
     },
     {
       "order": 4,
-      "learning_language": "ko",
       "course_key": "ko-fa",
       "name": "Korean",
       "name_fa": "کره‌ای",
@@ -219,14 +198,6 @@
         "curriculum_note": "Nova must add speaking objectives because the standard TOPIK I/II structure centers listening, reading and writing."
       },
       "level_model_status": "standard_selected_curriculum_not_yet_designed",
-      "start_from_absolute_zero": true,
-      "curriculum_plan": null,
-      "activation_gate": {
-        "requires_QA_approved_curriculum": true,
-        "requires_isolated_course_root": true,
-        "requires_available_concurrency_slot": true,
-        "requires_audio_preflight": true
-      },
       "audio_preflight": {
         "required_before_activation": true,
         "pinned_lori_metadata_lists_language": true,
@@ -237,7 +208,6 @@
     },
     {
       "order": 5,
-      "learning_language": "es",
       "course_key": "es-fa",
       "name": "Spanish",
       "name_fa": "اسپانیایی",
@@ -264,14 +234,6 @@
         "standard_source": "https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions"
       },
       "level_model_status": "standard_selected_curriculum_not_yet_designed",
-      "start_from_absolute_zero": true,
-      "curriculum_plan": null,
-      "activation_gate": {
-        "requires_QA_approved_curriculum": true,
-        "requires_isolated_course_root": true,
-        "requires_available_concurrency_slot": true,
-        "requires_audio_preflight": true
-      },
       "audio_preflight": {
         "required_before_activation": true,
         "pinned_lori_metadata_lists_language": true,
@@ -282,7 +244,6 @@
     },
     {
       "order": 6,
-      "learning_language": "tr",
       "course_key": "tr-fa",
       "name": "Turkish",
       "name_fa": "ترکی استانبولی",
@@ -312,14 +273,6 @@
         ]
       },
       "level_model_status": "standard_selected_curriculum_not_yet_designed",
-      "start_from_absolute_zero": true,
-      "curriculum_plan": null,
-      "activation_gate": {
-        "requires_QA_approved_curriculum": true,
-        "requires_isolated_course_root": true,
-        "requires_available_concurrency_slot": true,
-        "requires_audio_preflight": true
-      },
       "audio_preflight": {
         "required_before_activation": true,
         "pinned_lori_metadata_lists_language": true,
@@ -330,7 +283,6 @@
     },
     {
       "order": 7,
-      "learning_language": "ar",
       "course_key": "ar-fa",
       "name": "Arabic",
       "name_fa": "عربی",
@@ -358,14 +310,6 @@
         "language_specific_track": "Modern Standard Arabic is the core track; controlled dialect exposure begins only after the foundation is stable."
       },
       "level_model_status": "standard_selected_curriculum_not_yet_designed",
-      "start_from_absolute_zero": true,
-      "curriculum_plan": null,
-      "activation_gate": {
-        "requires_QA_approved_curriculum": true,
-        "requires_isolated_course_root": true,
-        "requires_available_concurrency_slot": true,
-        "requires_audio_preflight": true
-      },
       "audio_preflight": {
         "required_before_activation": true,
         "pinned_lori_metadata_lists_language": true,
@@ -376,7 +320,6 @@
     },
     {
       "order": 8,
-      "learning_language": "ja",
       "course_key": "ja-fa",
       "name": "Japanese",
       "name_fa": "ژاپنی",
@@ -402,14 +345,6 @@
         "curriculum_note": "Nova must cover speaking and writing explicitly because JLPT proficiency descriptions emphasize language knowledge, reading and listening."
       },
       "level_model_status": "standard_selected_curriculum_not_yet_designed",
-      "start_from_absolute_zero": true,
-      "curriculum_plan": null,
-      "activation_gate": {
-        "requires_QA_approved_curriculum": true,
-        "requires_isolated_course_root": true,
-        "requires_available_concurrency_slot": true,
-        "requires_audio_preflight": true
-      },
       "audio_preflight": {
         "required_before_activation": true,
         "pinned_lori_metadata_lists_language": false,
@@ -420,7 +355,6 @@
     },
     {
       "order": 9,
-      "learning_language": "zh",
       "course_key": "zh-fa",
       "name": "Mandarin Chinese",
       "name_fa": "چینی ماندارین",
@@ -470,14 +404,6 @@
         "standard_source": "https://www.chinesetest.cn/hsk"
       },
       "level_model_status": "standard_selected_curriculum_not_yet_designed",
-      "start_from_absolute_zero": true,
-      "curriculum_plan": null,
-      "activation_gate": {
-        "requires_QA_approved_curriculum": true,
-        "requires_isolated_course_root": true,
-        "requires_available_concurrency_slot": true,
-        "requires_audio_preflight": true
-      },
       "audio_preflight": {
         "required_before_activation": true,
         "pinned_lori_metadata_lists_language": false,
@@ -487,91 +413,19 @@
       }
     }
   ],
-  "course_contract": {
-    "level_model_policy": {
-      "course_specific": true,
-      "fixed_global_level_list": false,
-      "force_CEFR_A1_to_C2": false,
-      "level_names_count_order_and_final_level_defined_by_course_curriculum": true,
-      "pedagogical_coverage_must_be_complete_for_that_language": true
-    },
-    "production_unit_defaults": {
-      "chapters_per_level": 40,
-      "lessons_per_chapter": 4,
-      "batch_files_per_level": 5,
-      "chapters_per_batch_file": 8,
-      "may_be_overridden_only_by_an_explicit_QA_approved_course_plan": true
-    },
-    "series_numbering": "restart_at_001_for_each_course",
-    "start_from_absolute_zero": true,
-    "independent_curriculum_per_language": true,
-    "translate_or_copy_previous_course_content": false,
-    "course_specific_word_state": true,
-    "course_specific_characters_and_storylines": true,
-    "shared_content_engine_only": true
+  "sources": {
+    "cefr": "https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions",
+    "topik": "https://www.studyinkorea.go.kr/en/plan/examAndKoreanStudy.do",
+    "jlpt": "https://www.jlpt.jp/e/about/levelsummary.html",
+    "hsk": "https://www.chinesetest.cn/hsk",
+    "turkish": "https://www.yee.org.tr/en/turkce-ogretimi/materyaller"
   },
-  "execution_policy": {
-    "cadence": "hourly",
-    "max_chapters_per_run": 2,
-    "execution_mode": "strictly_sequential",
-    "qa_and_commit_each_chapter_before_next": true,
-    "stop_remaining_run_on_failure": true,
-    "concurrent_courses": 2,
-    "course_state_isolated": true,
-    "offset_minutes": 30
+  "design_notes": {
+    "CEFR": "Used for French, Italian, Spanish, Turkish and the CEFR-aligned Arabic curriculum; it defines six levels A1-C2.",
+    "Arabic": "The core learning track is Modern Standard Arabic, with dialect exposure introduced deliberately rather than mixing registers from the start.",
+    "Korean": "TOPIK 1-6 is retained; Nova adds productive speaking goals beyond the exam's core structure.",
+    "Japanese": "JLPT N5-N1 is retained; Nova adds explicit speaking and writing goals so the course is broader than test preparation.",
+    "Mandarin": "HSK 3.0 uses nine levels grouped into elementary, intermediate and advanced stages."
   },
-  "preparation_policy": {
-    "prepare_next_level_curriculum_when_remaining_chapters_lte": 8,
-    "prepare_next_course_curriculum_when_current_course_remaining_chapters_lte": 8,
-    "curriculum_must_define_its_own_level_model": true,
-    "curriculum_must_pass_qa_before_activation": true,
-    "generate_next_course_content_before_activation": false,
-    "prepare_language_specific_audio_configuration_before_activation": true
-  },
-  "transition_gate": {
-    "required_final_level": "defined_by_active_course_curriculum",
-    "require_all_chapter_qa_pass": true,
-    "require_all_batch_qa_pass": true,
-    "require_all_batch_artifacts_published": true,
-    "require_state_snapshot_complete": true,
-    "activate_only_next_queued_course": true,
-    "historical_completed_levels_may_use_canonical_archive": true,
-    "required_batch_artifact_policy": {
-      "future_courses": "curriculum_level_count_x_5_by_default",
-      "german_current_course": "20 new B1-C2 artifacts; canonical A1/A2 archive satisfies historical completion",
-      "overrides": "only from an explicit QA-approved course curriculum"
-    },
-    "require_turn_audio_coverage_100_percent": true,
-    "require_word_audio_coverage_100_percent": true,
-    "require_audio_update_sql": true
-  },
-  "queue_open_for_future_append": true,
-  "updated_at": "2026-09-05T13:11:59.630Z",
-  "authorization": "explicit_user_order_plus_explicit_append_five_languages",
-  "audio_policy_file": "nova/plans/audio_production_policy.json",
-  "production_mode": "isolated_concurrent_courses",
-  "max_concurrent_courses": 2,
-  "active_courses": [
-    "de-fa",
-    "en-fa"
-  ],
-  "shared_mutable_state_allowed": false,
-  "standard_selection_status": "all_queued_courses_have_a_selected_level_model",
-  "queue_summary": {
-    "total_courses_including_german": 10,
-    "active_courses": 2,
-    "waiting_courses": 8,
-    "queue_order": [
-      "de-fa",
-      "en-fa",
-      "fr-fa",
-      "it-fa",
-      "ko-fa",
-      "es-fa",
-      "tr-fa",
-      "ar-fa",
-      "ja-fa",
-      "zh-fa"
-    ]
-  }
+  "next_step": "Create and QA a full independent curriculum only when the course approaches activation; no queued course content is generated by this file."
 }

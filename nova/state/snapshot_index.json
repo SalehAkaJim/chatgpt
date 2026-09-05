@@ -76,7 +76,7 @@
     89,
     89
   ],
-  "updated_at": "2026-09-05T12:57:42.744Z",
+  "updated_at": "2026-09-05T13:11:59.630Z",
   "published_batches": [
     {
       "level": "B1",
@@ -97,9 +97,14 @@
     "en-fa",
     "fr-fa",
     "it-fa",
-    "ko-fa"
+    "ko-fa",
+    "es-fa",
+    "tr-fa",
+    "ar-fa",
+    "ja-fa",
+    "zh-fa"
   ],
-  "level_model_policy": "course_specific_curriculum_defined",
+  "level_model_policy": "course_specific_standard_selected_for_every_queued_course",
   "audio_policy_file": "../plans/audio_production_policy.json",
   "audio_checkpoint": {
     "turn_audio_entries": 1738,
@@ -136,5 +141,6 @@
     "en-fa"
   ],
   "english_snapshot": "../courses/en-fa/state/snapshot_index.json",
-  "shared_mutable_state": false
+  "shared_mutable_state": false,
+  "queue_total_courses_including_current": 10
 }

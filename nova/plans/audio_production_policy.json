@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "project": "Nova",
   "provider": "elevenlabs",
   "content_engine_revision": "v9.0",
@@ -41,7 +41,12 @@
       "en": true,
       "fr": false,
       "it": true,
-      "ko": true
+      "ko": true,
+      "es": true,
+      "tr": true,
+      "ar": true,
+      "ja": false,
+      "zh": false
     },
     "french_note": "Current pinned Lori metadata does not list French as verified. Run a pronunciation QA test before French activation; do not silently choose another voice.",
     "current_workflow": ".github/workflows/nova-word-audio.yml",
@@ -50,7 +55,15 @@
     "manifest_pattern": "nova/audio/{course}/word_manifest.json",
     "german_legacy_manifest": "nova/audio/word_manifest.json",
     "update_sql_pattern": "nova/audio/{course}/update_word_audio.sql",
-    "course_parameter_env": "NOVA_COURSE"
+    "course_parameter_env": "NOVA_COURSE",
+    "language_verification_notes": {
+      "fr": "Pinned Lori metadata does not list French. Pronunciation sample QA is mandatory; do not silently replace the voice.",
+      "ja": "Pinned Lori metadata does not list Japanese. Pronunciation sample QA is mandatory; do not silently replace the voice.",
+      "zh": "Pinned Lori metadata does not list Mandarin Chinese. Pronunciation and tone sample QA is mandatory; do not silently replace the voice.",
+      "es": "Pinned Lori metadata lists Spanish, but target-accent pronunciation sample QA is still mandatory.",
+      "tr": "Pinned Lori metadata lists Turkish, but pronunciation sample QA is still mandatory.",
+      "ar": "Pinned Lori metadata lists Modern Standard Arabic, but pronunciation sample QA is still mandatory."
+    }
   },
   "course_preflight": [
     "parameterize TTS source discovery by active course",
@@ -78,7 +91,7 @@
     },
     "status": "caught_up"
   },
-  "updated_at": "2026-09-05T12:57:42.744Z",
+  "updated_at": "2026-09-05T13:11:59.630Z",
   "authorization": "explicit_user_requirement",
   "concurrent_courses": {
     "enabled": true,
