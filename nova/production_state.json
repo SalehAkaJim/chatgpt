@@ -29,11 +29,11 @@
       9,
       16
     ],
-    "last_qa_passed_chapter": 14,
-    "last_qa_passed_series": 94,
-    "pending_chapter": 15,
-    "pending_series": 95,
-    "status": "series_094_qa_passed_staged",
+    "last_qa_passed_chapter": 15,
+    "last_qa_passed_series": 95,
+    "pending_chapter": 16,
+    "pending_series": 96,
+    "status": "series_095_qa_passed_staged",
     "retry_policy": "generate_against_exact_canonical_v9_0_only"
   },
   "database": {
@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T17:18:00.000Z",
+  "updated_at": "2026-09-05T18:03:45.389Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -66,7 +66,7 @@
     "source_of_truth": "github_main",
     "required_database_revision": "v9.0",
     "schema_changes_allowed": false,
-    "next_series": 95,
+    "next_series": 96,
     "advance_state_only_after_full_batch_qa_pass": true,
     "execution_mode": "strictly_sequential",
     "reread_github_state_between_chapters": true,
@@ -123,7 +123,7 @@
       "voice": "Lori",
       "voice_id": "TbMNBJ27fH2U0VgpSNko"
     },
-    "status": "pending_series_094_audio",
+    "status": "pending_series_095_audio",
     "future_courses_require_language_specific_preflight": true
   },
   "state_scope": "de-fa-exclusive-legacy",
