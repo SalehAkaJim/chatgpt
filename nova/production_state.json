@@ -1,82 +1,114 @@
 {
-  "project": "Nova",
-  "course": "de-fa",
-  "schema_version": "v9",
-  "database_revision": "v9.0",
-  "last_completed_level": "A2",
-  "last_completed_series": 96,
-  "next_level": "B1",
-  "next_series": 99,
-  "content_status": "generating",
-  "content_freeze": {
-    "enabled": false,
-    "after_series": 80,
-    "reason": "explicit_resume_from_exact_canonical_v9_0_archive",
-    "resume_requires_explicit_unfreeze": false
+  "audio": {
+    "future_courses_require_language_specific_preflight": true,
+    "generation_mode": "incremental_after_each_chapter",
+    "policy_file": "nova/plans/audio_production_policy.json",
+    "required_for_course_completion": true,
+    "status": "pending_series_099_audio",
+    "turn_audio": {
+      "entries": 1762,
+      "last_run_failed": 0,
+      "manifest": "nova/audio/manifest.json",
+      "through_series": 96
+    },
+    "word_audio": {
+      "entries": 637,
+      "last_run_failed": 0,
+      "manifest": "nova/audio/word_manifest.json",
+      "through_series": 96,
+      "voice": "Lori",
+      "voice_id": "TbMNBJ27fH2U0VgpSNko"
+    }
   },
-  "generation_mode": "atomic_chapter_generation_with_batched_artifacts",
+  "automation": {
+    "advance_state_only_after_full_batch_qa_pass": true,
+    "atomic_unit": "chapter",
+    "cadence": "hourly",
+    "commit_each_chapter_after_qa_pass": true,
+    "execution_mode": "strictly_sequential",
+    "max_chapters_per_run": 2,
+    "next_series": 100,
+    "required_database_revision": "v9.0",
+    "reread_github_state_between_chapters": true,
+    "schema_changes_allowed": false,
+    "source_of_truth": "github_main",
+    "stop_remaining_run_on_failure": true
+  },
   "batching": {
-    "chapters_per_artifact": 8,
+    "advance_state_only_after_full_batch_qa_pass": true,
     "artifacts_per_level": 5,
     "atomic_unit": "chapter",
-    "advance_state_only_after_full_batch_qa_pass": true
-  },
-  "current_work": {
-    "phase": "B1_content_generation",
-    "level": "B1",
-    "batch": 3,
-    "batch_chapter_range": [
-      17,
-      24
-    ],
-    "last_qa_passed_chapter": 18,
-    "last_qa_passed_series": 98,
-    "pending_chapter": 19,
-    "pending_series": 99,
-    "status": "chapter_18_qa_passed_staged",
-    "retry_policy": "generate_against_exact_canonical_v9_0_only"
-  },
-  "database": {
-    "revision": "v9.0",
-    "source_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
-    "archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
-    "active_schema": "nova/database/schema_v9.sql",
-    "repository_status": "canonical_v9_0_restored",
-    "live_mysql_status": "not_changed_by_this_commit"
+    "chapters_per_artifact": 8
   },
   "canonical_archive": {
-    "path": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
-    "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
     "bytes": 502504,
     "extracted_root": "nova/archive/series_001_080_fixed/extracted",
     "files": 105,
     "full_scan": "passed",
-    "scan_report": "nova/archive/series_001_080_fixed/FULL_SCAN_REPORT.json"
+    "path": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "scan_report": "nova/archive/series_001_080_fixed/FULL_SCAN_REPORT.json",
+    "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
   },
   "canonical_corrections": {
     "series_004": "nova_DE_FA_A1_M01_C04_series_004_v9_r2.sql",
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T21:02:24.851Z",
-  "automation": {
-    "cadence": "hourly",
-    "atomic_unit": "chapter",
-    "max_chapters_per_run": 2,
-    "source_of_truth": "github_main",
-    "required_database_revision": "v9.0",
-    "schema_changes_allowed": false,
-    "next_series": 99,
-    "advance_state_only_after_full_batch_qa_pass": true,
-    "execution_mode": "strictly_sequential",
-    "reread_github_state_between_chapters": true,
-    "commit_each_chapter_after_qa_pass": true,
-    "stop_remaining_run_on_failure": true
+  "concurrent_courses": [
+    "de-fa",
+    "en-fa"
+  ],
+  "content_freeze": {
+    "after_series": 80,
+    "enabled": false,
+    "reason": "explicit_resume_from_exact_canonical_v9_0_archive",
+    "resume_requires_explicit_unfreeze": false
   },
+  "content_status": "generating",
+  "course": "de-fa",
+  "current_work": {
+    "batch": 3,
+    "batch_chapter_range": [
+      17,
+      24
+    ],
+    "last_qa_passed_chapter": 19,
+    "last_qa_passed_series": 99,
+    "level": "B1",
+    "pending_chapter": 20,
+    "pending_series": 100,
+    "phase": "B1_content_generation",
+    "retry_policy": "generate_against_exact_canonical_v9_0_only",
+    "status": "chapter_19_qa_passed_staged"
+  },
+  "database": {
+    "active_schema": "nova/database/schema_v9.sql",
+    "archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "live_mysql_status": "not_changed_by_this_commit",
+    "repository_status": "canonical_v9_0_restored",
+    "revision": "v9.0",
+    "source_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip"
+  },
+  "database_revision": "v9.0",
+  "generation_mode": "atomic_chapter_generation_with_batched_artifacts",
   "language_roadmap": {
-    "queue_file": "nova/plans/language_production_queue.json",
+    "active_courses": [
+      "de-fa",
+      "en-fa"
+    ],
+    "concurrent_mode": "isolated_width_2",
     "current_course": "de-fa",
+    "english_audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json",
+    "english_curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+    "english_curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
+    "english_plan_status": "ready_QA_passed",
+    "english_state": "nova/courses/en-fa/production_state.json",
+    "force_CEFR_A1_to_C2": false,
+    "level_model_policy": "course_specific_standard_selected_for_every_queued_course",
     "next_course": "en-fa",
+    "queue_file": "nova/plans/language_production_queue.json",
+    "queue_open_for_future_append": true,
+    "queue_total_courses_including_current": 10,
     "queued_courses": [
       "en-fa",
       "fr-fa",
@@ -89,47 +121,15 @@
       "zh-fa"
     ],
     "transition_mode": "two_isolated_courses_active; future course activation requires an available slot and QA-approved plan",
-    "queue_open_for_future_append": true,
-    "level_model_policy": "course_specific_standard_selected_for_every_queued_course",
-    "force_CEFR_A1_to_C2": false,
-    "english_plan_status": "ready_QA_passed",
-    "english_curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
-    "english_curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
-    "english_audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json",
-    "active_courses": [
-      "de-fa",
-      "en-fa"
-    ],
-    "concurrent_mode": "isolated_width_2",
-    "english_state": "nova/courses/en-fa/production_state.json",
-    "queue_total_courses_including_current": 10,
     "waiting_courses": 8
   },
-  "audio": {
-    "required_for_course_completion": true,
-    "policy_file": "nova/plans/audio_production_policy.json",
-    "generation_mode": "incremental_after_each_chapter",
-    "turn_audio": {
-      "manifest": "nova/audio/manifest.json",
-      "entries": 1762,
-      "through_series": 96,
-      "last_run_failed": 0
-    },
-    "word_audio": {
-      "manifest": "nova/audio/word_manifest.json",
-      "entries": 637,
-      "through_series": 96,
-      "last_run_failed": 0,
-      "voice": "Lori",
-      "voice_id": "TbMNBJ27fH2U0VgpSNko"
-    },
-    "status": "pending_series_098_audio",
-    "future_courses_require_language_specific_preflight": true
-  },
+  "last_completed_level": "A2",
+  "last_completed_series": 96,
+  "next_level": "B1",
+  "next_series": 100,
+  "project": "Nova",
+  "schema_version": "v9",
+  "shared_mutable_state": false,
   "state_scope": "de-fa-exclusive-legacy",
-  "concurrent_courses": [
-    "de-fa",
-    "en-fa"
-  ],
-  "shared_mutable_state": false
+  "updated_at": "2026-09-05T22:04:12.927Z"
 }

@@ -1,46 +1,53 @@
 {
-  "course": "de-fa",
-  "level": "B1",
   "batch": 3,
+  "batch_artifact": "nova/content/B1/batch_03_chapters_17_24.sql",
+  "batch_publish_condition": "all chapters 17-24 PASS and cross-chapter QA PASS",
+  "canonical_database_revision": "v9.0",
   "chapter_range": [
     17,
     24
   ],
+  "course": "de-fa",
+  "cross_chapter_qa": "not_ready",
+  "failed_chapters": [],
+  "last_completed_atomic_unit": {
+    "chapter": 19,
+    "series": 99,
+    "status": "PASS"
+  },
+  "level": "B1",
+  "next_pending_chapter": 20,
+  "next_pending_series": 100,
+  "passed_chapters": [
+    {
+      "chapter": 17,
+      "qa": "chapter_17_series_097/qa.json",
+      "series": 97,
+      "status": "PASS",
+      "title": "Wir wissen nicht, ob wir weiterfahren können"
+    },
+    {
+      "chapter": 18,
+      "qa": "chapter_18_series_098/qa.json",
+      "series": 98,
+      "status": "PASS",
+      "title": "Obwohl es spät ist, fahren wir weiter"
+    },
+    {
+      "chapter": 19,
+      "series": 99,
+      "title": "Wir hätten lieber eine direkte Verbindung",
+      "status": "PASS",
+      "qa": "chapter_19_series_099/qa.json"
+    }
+  ],
+  "production_state_advanced": false,
+  "published": false,
+  "schema_changes_allowed": false,
   "series_range": [
     97,
     104
   ],
-  "published": false,
-  "production_state_advanced": false,
-  "passed_chapters": [
-    {
-      "chapter": 17,
-      "series": 97,
-      "title": "Wir wissen nicht, ob wir weiterfahren können",
-      "status": "PASS",
-      "qa": "chapter_17_series_097/qa.json"
-    },
-    {
-      "chapter": 18,
-      "series": 98,
-      "title": "Obwohl es spät ist, fahren wir weiter",
-      "status": "PASS",
-      "qa": "chapter_18_series_098/qa.json"
-    }
-  ],
-  "failed_chapters": [],
-  "next_pending_chapter": 19,
-  "next_pending_series": 99,
-  "cross_chapter_qa": "not_ready",
-  "batch_artifact": "nova/content/B1/batch_03_chapters_17_24.sql",
-  "batch_publish_condition": "all chapters 17-24 PASS and cross-chapter QA PASS",
   "status": "in_progress",
-  "canonical_database_revision": "v9.0",
-  "schema_changes_allowed": false,
-  "last_completed_atomic_unit": {
-    "chapter": 18,
-    "series": 98,
-    "status": "PASS"
-  },
-  "updated_at": "2026-09-05T21:02:24.851Z"
+  "updated_at": "2026-09-05T22:04:12.927Z"
 }

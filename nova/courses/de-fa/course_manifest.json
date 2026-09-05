@@ -1,11 +1,11 @@
 {
-  "version": 1,
-  "course": "de-fa",
-  "status": "in_progress",
-  "database_revision": "v9.0",
-  "schema_changes_allowed": false,
-  "namespace_mode": "legacy_exclusive",
   "concurrent_peer": "en-fa",
+  "course": "de-fa",
+  "database_revision": "v9.0",
+  "forbidden_paths": [
+    "nova/courses/en-fa",
+    "nova/plans/language_production_queue.json"
+  ],
   "mutable_paths": [
     "nova/production_state.json",
     "nova/pipeline_config.json",
@@ -20,11 +20,11 @@
     "nova/audio/turns/de-fa",
     "nova/audio/words/de-fa"
   ],
-  "forbidden_paths": [
-    "nova/courses/en-fa",
-    "nova/plans/language_production_queue.json"
-  ],
-  "next_series": 99,
+  "namespace_mode": "legacy_exclusive",
+  "next_series": 100,
   "run_control": "nova/courses/de-fa/run_control.json",
-  "updated_at": "2026-09-05T21:02:24.851Z"
+  "schema_changes_allowed": false,
+  "status": "in_progress",
+  "updated_at": "2026-09-05T22:04:12.927Z",
+  "version": 1
 }

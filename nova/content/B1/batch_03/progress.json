@@ -1,75 +1,75 @@
 {
-  "level": "B1",
   "batch": 3,
+  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "chapter_range": [
     17,
     24
   ],
+  "chapters": [
+    {
+      "chapter": 17,
+      "series": 97,
+      "status": "staged_qa_passed",
+      "title": "Wir wissen nicht, ob wir weiterfahren können"
+    },
+    {
+      "chapter": 18,
+      "series": 98,
+      "status": "staged_qa_passed",
+      "title": "Obwohl es spät ist, fahren wir weiter"
+    },
+    {
+      "chapter": 19,
+      "series": 99,
+      "status": "staged_qa_passed",
+      "title": "Wir hätten lieber eine direkte Verbindung"
+    },
+    {
+      "chapter": 20,
+      "series": 100,
+      "status": "pending",
+      "title": "Am Ende sind wir doch angekommen"
+    },
+    {
+      "chapter": 21,
+      "series": 101,
+      "status": "planned",
+      "title": "Ich fühle mich seit ein paar Tagen müde"
+    },
+    {
+      "chapter": 22,
+      "series": 102,
+      "status": "planned",
+      "title": "Der Arzt hat gesagt, dass ich mich ausruhen soll"
+    },
+    {
+      "chapter": 23,
+      "series": 103,
+      "status": "planned",
+      "title": "Wenn es nicht besser wird, komme ich wieder"
+    },
+    {
+      "chapter": 24,
+      "series": 104,
+      "status": "planned",
+      "title": "Ich sollte mehr schlafen"
+    }
+  ],
+  "cross_chapter_qa_status": "not_ready",
+  "database_revision": "v9.0",
+  "generation_cadence": "hourly",
+  "last_completed_atomic_unit": {
+    "chapter": 19,
+    "series": 99,
+    "status": "PASS"
+  },
+  "level": "B1",
+  "next_action": "generate_and_qa_chapter_20_series_100",
+  "published": false,
   "series_range": [
     97,
     104
   ],
   "status": "in_progress",
-  "published": false,
-  "chapters": [
-    {
-      "chapter": 17,
-      "series": 97,
-      "title": "Wir wissen nicht, ob wir weiterfahren können",
-      "status": "staged_qa_passed"
-    },
-    {
-      "chapter": 18,
-      "series": 98,
-      "title": "Obwohl es spät ist, fahren wir weiter",
-      "status": "staged_qa_passed"
-    },
-    {
-      "chapter": 19,
-      "series": 99,
-      "title": "Wir hätten lieber eine direkte Verbindung",
-      "status": "pending"
-    },
-    {
-      "chapter": 20,
-      "series": 100,
-      "title": "Am Ende sind wir doch angekommen",
-      "status": "planned"
-    },
-    {
-      "chapter": 21,
-      "series": 101,
-      "title": "Ich fühle mich seit ein paar Tagen müde",
-      "status": "planned"
-    },
-    {
-      "chapter": 22,
-      "series": 102,
-      "title": "Der Arzt hat gesagt, dass ich mich ausruhen soll",
-      "status": "planned"
-    },
-    {
-      "chapter": 23,
-      "series": 103,
-      "title": "Wenn es nicht besser wird, komme ich wieder",
-      "status": "planned"
-    },
-    {
-      "chapter": 24,
-      "series": 104,
-      "title": "Ich sollte mehr schlafen",
-      "status": "planned"
-    }
-  ],
-  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
-  "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_19_series_099",
-  "database_revision": "v9.0",
-  "generation_cadence": "hourly",
-  "last_completed_atomic_unit": {
-    "chapter": 18,
-    "series": 98,
-    "status": "PASS"
-  },
-  "updated_at": "2026-09-05T21:02:24.851Z"
+  "updated_at": "2026-09-05T22:04:12.927Z"
 }
