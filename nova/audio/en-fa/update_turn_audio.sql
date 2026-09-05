@@ -89,7 +89,25 @@ INSERT INTO nova_turn_audio_updates (cefr_level,module_order,chapter_order,lesso
 ('ST',1,4,4,3,'Ava','character','68514b65884697a4725d4b231dd376aa745abfd4feb3cf9aaa21e4194e2b8acc','nova/audio/turns/en-fa/ST/m01/c04/l04/t03-ava-9f64b25e7824.mp3',1207),
 ('ST',1,4,4,4,'Mina','learner','1daca7c3572711a0a158fc1e21305eee8bc658761447a4440bbaf34b038093ab','nova/audio/turns/en-fa/ST/m01/c04/l04/t04-mina-ba1636d22738.mp3',2276),
 ('ST',1,4,4,5,'Ava','character','3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f','nova/audio/turns/en-fa/ST/m01/c04/l04/t05-ava-265f200d218e.mp3',836),
-('ST',1,4,4,6,'Mina','learner','3d5d79652dc4770b0bc1ffbad055c6c5cd4fb1657d1d70e70af25776128590af','nova/audio/turns/en-fa/ST/m01/c04/l04/t06-mina-40c24021718d.mp3',975);
+('ST',1,4,4,6,'Mina','learner','3d5d79652dc4770b0bc1ffbad055c6c5cd4fb1657d1d70e70af25776128590af','nova/audio/turns/en-fa/ST/m01/c04/l04/t06-mina-40c24021718d.mp3',975),
+('ST',1,5,1,1,'Ava','character','68514b65884697a4725d4b231dd376aa745abfd4feb3cf9aaa21e4194e2b8acc','nova/audio/turns/en-fa/ST/m01/c05/l01/t01-ava-fc55ff9d0cd8.mp3',975),
+('ST',1,5,1,2,'Mina','learner','b730320655ef331c86a45159cbcee93018d4076409350ad9ec2482ea8e38db55','nova/audio/turns/en-fa/ST/m01/c05/l01/t02-mina-23b325bb16b8.mp3',1347),
+('ST',1,5,1,3,'Ava','character','e1334459649844666e910dcc273dbde5a37a83e8cd12b6c7ea9ee1d20ada4637','nova/audio/turns/en-fa/ST/m01/c05/l01/t03-ava-ac27103f3b67.mp3',743),
+('ST',1,5,1,4,'Mina','learner','3d5d79652dc4770b0bc1ffbad055c6c5cd4fb1657d1d70e70af25776128590af','nova/audio/turns/en-fa/ST/m01/c05/l01/t04-mina-54e3ecda5bf5.mp3',1022),
+('ST',1,5,2,1,'Ava','character','e1334459649844666e910dcc273dbde5a37a83e8cd12b6c7ea9ee1d20ada4637','nova/audio/turns/en-fa/ST/m01/c05/l02/t01-ava-f3d5c0ec2a66.mp3',836),
+('ST',1,5,2,2,'Mina','learner','3d5d79652dc4770b0bc1ffbad055c6c5cd4fb1657d1d70e70af25776128590af','nova/audio/turns/en-fa/ST/m01/c05/l02/t02-mina-578c7ccf6259.mp3',882),
+('ST',1,5,2,3,'Ava','character','6fa5881a15601e1a2a6c8d084f1f99637261f3ae5172a5963d2ff06fd4e77bc6','nova/audio/turns/en-fa/ST/m01/c05/l02/t03-ava-e5857e2904f6.mp3',836),
+('ST',1,5,2,4,'Mina','learner','6fa5881a15601e1a2a6c8d084f1f99637261f3ae5172a5963d2ff06fd4e77bc6','nova/audio/turns/en-fa/ST/m01/c05/l02/t04-mina-ebc46cd42f44.mp3',975),
+('ST',1,5,3,1,'Ava','character','57ab71dcb79904419832f8d4c8810b99b79d9bc2af94a733c1fdd2a57d47f874','nova/audio/turns/en-fa/ST/m01/c05/l03/t01-ava-f5a209a14a7b.mp3',650),
+('ST',1,5,3,2,'Mina','learner','57ab71dcb79904419832f8d4c8810b99b79d9bc2af94a733c1fdd2a57d47f874','nova/audio/turns/en-fa/ST/m01/c05/l03/t02-mina-fca56a4c60f2.mp3',929),
+('ST',1,5,3,3,'Ava','character','6fa5881a15601e1a2a6c8d084f1f99637261f3ae5172a5963d2ff06fd4e77bc6','nova/audio/turns/en-fa/ST/m01/c05/l03/t03-ava-65a35bb6547b.mp3',650),
+('ST',1,5,3,4,'Mina','learner','1cb7b221b7adda1cf4c4724b32369394580480c84ab835795d608ac59aa13002','nova/audio/turns/en-fa/ST/m01/c05/l03/t04-mina-56b9ad67fd22.mp3',743),
+('ST',1,5,4,1,'Ava','character','734411ae67654b1938925bd44a57acb9978fde736dc62f666f769035153a02ed','nova/audio/turns/en-fa/ST/m01/c05/l04/t01-ava-4ac4e7a7d99e.mp3',789),
+('ST',1,5,4,2,'Mina','learner','b033b5adb451a8d9f27d0ee1abda06a211a490623fa848195dfa326fba103579','nova/audio/turns/en-fa/ST/m01/c05/l04/t02-mina-06819cdd6d63.mp3',743),
+('ST',1,5,4,3,'Ava','character','68514b65884697a4725d4b231dd376aa745abfd4feb3cf9aaa21e4194e2b8acc','nova/audio/turns/en-fa/ST/m01/c05/l04/t03-ava-35807e03f548.mp3',836),
+('ST',1,5,4,4,'Mina','learner','b730320655ef331c86a45159cbcee93018d4076409350ad9ec2482ea8e38db55','nova/audio/turns/en-fa/ST/m01/c05/l04/t04-mina-b104b6a1acb6.mp3',1300),
+('ST',1,5,4,5,'Ava','character','8df96722ea691f709876899e4ba7d047e1f5c20891a34120f4506dfb65a536f1','nova/audio/turns/en-fa/ST/m01/c05/l04/t05-ava-798a4f50094e.mp3',929),
+('ST',1,5,4,6,'Mina','learner','f36c2a849a252c7ff7b82ae7b5a7c556b5614365a95e1474be26538f59505fa4','nova/audio/turns/en-fa/ST/m01/c05/l04/t06-mina-9be006aaaa86.mp3',1300);
 
 DROP PROCEDURE IF EXISTS apply_nova_turn_audio;
 DELIMITER $$
