@@ -1,0 +1,71 @@
+{
+  "level": "B1",
+  "batch": 2,
+  "chapter_range": [
+    9,
+    16
+  ],
+  "series_range": [
+    89,
+    96
+  ],
+  "status": "in_progress",
+  "published": false,
+  "chapters": [
+    {
+      "chapter": 9,
+      "series": 89,
+      "title": "Wenn du willst, helfe ich dir",
+      "status": "pending"
+    },
+    {
+      "chapter": 10,
+      "series": 90,
+      "title": "Wir haben das Problem gelöst",
+      "status": "planned"
+    },
+    {
+      "chapter": 11,
+      "series": 91,
+      "title": "Der Nachbar, der oben wohnt",
+      "status": "planned"
+    },
+    {
+      "chapter": 12,
+      "series": 92,
+      "title": "Seit wir hier wohnen, ist es ruhiger",
+      "status": "planned"
+    },
+    {
+      "chapter": 13,
+      "series": 93,
+      "title": "Könnten Sie bitte leiser sein?",
+      "status": "planned"
+    },
+    {
+      "chapter": 14,
+      "series": 94,
+      "title": "Die Heizung wird morgen repariert",
+      "status": "planned"
+    },
+    {
+      "chapter": 15,
+      "series": 95,
+      "title": "Jetzt ist alles wieder in Ordnung",
+      "status": "planned"
+    },
+    {
+      "chapter": 16,
+      "series": 96,
+      "title": "Unser Zug ist ausgefallen",
+      "status": "planned"
+    }
+  ],
+  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
+  "cross_chapter_qa_status": "not_ready",
+  "next_action": "generate_and_qa_chapter_09_series_089",
+  "database_revision": "v9.0",
+  "generation_cadence": "hourly",
+  "last_completed_atomic_unit": null,
+  "updated_at": "2026-09-05T12:05:16.338Z"
+}

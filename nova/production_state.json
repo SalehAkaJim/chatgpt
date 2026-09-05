@@ -4,9 +4,9 @@
   "schema_version": "v9",
   "database_revision": "v9.0",
   "last_completed_level": "A2",
-  "last_completed_series": 80,
+  "last_completed_series": 88,
   "next_level": "B1",
-  "next_series": 81,
+  "next_series": 89,
   "content_status": "generating",
   "content_freeze": {
     "enabled": false,
@@ -24,16 +24,16 @@
   "current_work": {
     "phase": "B1_content_generation",
     "level": "B1",
-    "batch": 1,
+    "batch": 2,
     "batch_chapter_range": [
-      1,
-      8
+      9,
+      16
     ],
-    "last_qa_passed_chapter": 7,
-    "last_qa_passed_series": 87,
-    "pending_chapter": 8,
-    "pending_series": 88,
-    "status": "series_087_qa_passed_staged",
+    "last_qa_passed_chapter": 8,
+    "last_qa_passed_series": 88,
+    "pending_chapter": 9,
+    "pending_series": 89,
+    "status": "batch_01_published_series_081_088",
     "retry_policy": "generate_against_exact_canonical_v9_0_only"
   },
   "database": {
@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T11:25:55.963Z",
+  "updated_at": "2026-09-05T12:05:16.338Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -66,7 +66,7 @@
     "source_of_truth": "github_main",
     "required_database_revision": "v9.0",
     "schema_changes_allowed": false,
-    "next_series": 88,
+    "next_series": 89,
     "advance_state_only_after_full_batch_qa_pass": true,
     "execution_mode": "strictly_sequential",
     "reread_github_state_between_chapters": true,

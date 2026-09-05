@@ -9,67 +9,68 @@
     81,
     88
   ],
-  "status": "in_progress",
-  "published": false,
+  "status": "complete",
+  "published": true,
   "chapters": [
     {
       "chapter": 1,
       "series": 81,
       "title": "Ich muss mich entscheiden",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 2,
       "series": 82,
       "title": "Warum willst du das machen?",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 3,
       "series": 83,
       "title": "Weil ich etwas ändern möchte",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 4,
       "series": 84,
       "title": "Ich bin mir noch nicht sicher",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 5,
       "series": 85,
       "title": "Ich habe mich entschieden",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 6,
       "series": 86,
       "title": "Wir müssen das heute fertig machen",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 7,
       "series": 87,
       "title": "Kannst du mir erklären, wie das geht?",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 8,
       "series": 88,
       "title": "Ich glaube, dass wir mehr Zeit brauchen",
-      "status": "pending"
+      "status": "published"
     }
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
-  "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_08_series_088",
+  "cross_chapter_qa_status": "PASS",
+  "next_action": "continue_with_batch_02_chapter_09_series_089",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 7,
-    "series": 87,
+    "chapter": 8,
+    "series": 88,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T11:07:48.766Z"
+  "updated_at": "2026-09-05T12:05:16.338Z",
+  "batch_artifact_sha256": "236dd2153005b48c0fa08545e99255ecab6608ffe59210965dcecf4eff508860"
 }

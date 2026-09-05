@@ -1,0 +1,78 @@
+{
+  "artifact": {
+    "bytes": 784918,
+    "path": "nova/content/B1/batch_01_chapters_01_08.sql",
+    "sha256": "236dd2153005b48c0fa08545e99255ecab6608ffe59210965dcecf4eff508860"
+  },
+  "batch": 1,
+  "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+  "chapter_range": [
+    1,
+    8
+  ],
+  "checks": {
+    "all_eight_chapter_qa_pass": true,
+    "canonical_archive_consistent": true,
+    "chapter_contiguous": true,
+    "database_revision_exact": true,
+    "explicit_targets_unique": true,
+    "lesson_counts_complete": true,
+    "level_progression": true,
+    "new_word_insert_tuples_unique": true,
+    "schema_ddl_absent": true,
+    "series_contiguous": true,
+    "storyline_continuity": true
+  },
+  "counts": {
+    "activities": 256,
+    "chapters": 8,
+    "explicit_targets": 31,
+    "lessons": 32,
+    "new_word_tuples": 210,
+    "tokens": 1032,
+    "turns": 190
+  },
+  "course": "de-fa",
+  "database_revision": "v9.0",
+  "errors": [],
+  "generated_at": "2026-09-05T12:05:16.338Z",
+  "level": "B1",
+  "project": "Nova",
+  "series_range": [
+    81,
+    88
+  ],
+  "source_main_head": "7bfefc13f4329d65ace5cd99e33d6de4b5ef1e8b",
+  "status": "PASS",
+  "storylines": [
+    {
+      "key": "mia-sara-b1-decisions",
+      "lessons": 20,
+      "orders": [
+        1,
+        20
+      ],
+      "series": [
+        81,
+        85
+      ]
+    },
+    {
+      "key": "anna-martin-b1-project",
+      "lessons": 12,
+      "orders": [
+        1,
+        12
+      ],
+      "series": [
+        86,
+        88
+      ]
+    }
+  ],
+  "verification": {
+    "all_chapter_runtime_guards_embedded": true,
+    "live_mysql_execution": "not_performed",
+    "mode": "static_cross_chapter_and_transactional_sql_audit"
+  }
+}

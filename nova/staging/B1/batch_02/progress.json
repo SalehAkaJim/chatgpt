@@ -1,0 +1,27 @@
+{
+  "course": "de-fa",
+  "level": "B1",
+  "batch": 2,
+  "chapter_range": [
+    9,
+    16
+  ],
+  "series_range": [
+    89,
+    96
+  ],
+  "published": false,
+  "production_state_advanced": false,
+  "passed_chapters": [],
+  "failed_chapters": [],
+  "next_pending_chapter": 9,
+  "next_pending_series": 89,
+  "cross_chapter_qa": "not_ready",
+  "batch_artifact": "nova/content/B1/batch_02_chapters_09_16.sql",
+  "batch_publish_condition": "all chapters 9-16 PASS and cross-chapter QA PASS",
+  "status": "in_progress",
+  "canonical_database_revision": "v9.0",
+  "schema_changes_allowed": false,
+  "last_completed_atomic_unit": null,
+  "updated_at": "2026-09-05T12:05:16.338Z"
+}
