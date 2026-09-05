@@ -46,13 +46,13 @@
       "chapter": 6,
       "series": 86,
       "title": "Wir müssen das heute fertig machen",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 7,
       "series": 87,
       "title": "Kannst du mir erklären, wie das geht?",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 8,
@@ -63,13 +63,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_06_series_086",
+  "next_action": "generate_and_qa_chapter_07_series_087",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 5,
-    "series": 85,
+    "chapter": 6,
+    "series": 86,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T09:02:35.869Z"
+  "updated_at": "2026-09-05T10:07:50.750Z"
 }
