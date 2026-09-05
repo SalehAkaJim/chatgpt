@@ -27,13 +27,13 @@
     {
       "chapter": 20,
       "series": 100,
-      "status": "pending",
+      "status": "staged_qa_passed",
       "title": "Am Ende sind wir doch angekommen"
     },
     {
       "chapter": 21,
       "series": 101,
-      "status": "planned",
+      "status": "pending",
       "title": "Ich fühle mich seit ein paar Tagen müde"
     },
     {
@@ -59,17 +59,17 @@
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 19,
-    "series": 99,
+    "chapter": 20,
+    "series": 100,
     "status": "PASS"
   },
   "level": "B1",
-  "next_action": "generate_and_qa_chapter_20_series_100",
+  "next_action": "generate_and_qa_chapter_21_series_101",
   "published": false,
   "series_range": [
     97,
     104
   ],
   "status": "in_progress",
-  "updated_at": "2026-09-05T22:04:12.927Z"
+  "updated_at": "2026-09-05T22:08:05.997Z"
 }

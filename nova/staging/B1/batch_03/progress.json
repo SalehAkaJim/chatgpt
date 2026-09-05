@@ -11,13 +11,13 @@
   "cross_chapter_qa": "not_ready",
   "failed_chapters": [],
   "last_completed_atomic_unit": {
-    "chapter": 19,
-    "series": 99,
+    "chapter": 20,
+    "series": 100,
     "status": "PASS"
   },
   "level": "B1",
-  "next_pending_chapter": 20,
-  "next_pending_series": 100,
+  "next_pending_chapter": 21,
+  "next_pending_series": 101,
   "passed_chapters": [
     {
       "chapter": 17,
@@ -35,10 +35,17 @@
     },
     {
       "chapter": 19,
+      "qa": "chapter_19_series_099/qa.json",
       "series": 99,
-      "title": "Wir hätten lieber eine direkte Verbindung",
       "status": "PASS",
-      "qa": "chapter_19_series_099/qa.json"
+      "title": "Wir hätten lieber eine direkte Verbindung"
+    },
+    {
+      "chapter": 20,
+      "series": 100,
+      "title": "Am Ende sind wir doch angekommen",
+      "status": "PASS",
+      "qa": "chapter_20_series_100/qa.json"
     }
   ],
   "production_state_advanced": false,
@@ -49,5 +56,5 @@
     104
   ],
   "status": "in_progress",
-  "updated_at": "2026-09-05T22:04:12.927Z"
+  "updated_at": "2026-09-05T22:08:05.997Z"
 }

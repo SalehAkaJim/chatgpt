@@ -62,7 +62,7 @@
   },
   "next_level": "B1",
   "next_queued_course": "en-fa",
-  "next_series": 100,
+  "next_series": 101,
   "production_status": "generating",
   "project": "Nova",
   "published_batches": [
@@ -153,13 +153,22 @@
       "status": "PASS"
     },
     {
-      "level": "B1",
       "batch": 3,
       "chapter": 19,
+      "level": "B1",
+      "qa": "nova/staging/B1/batch_03/chapter_19_series_099/qa.json",
       "series": 99,
-      "status": "PASS",
       "sql": "nova/staging/B1/batch_03/chapter_19_series_099/chapter.sql",
-      "qa": "nova/staging/B1/batch_03/chapter_19_series_099/qa.json"
+      "status": "PASS"
+    },
+    {
+      "level": "B1",
+      "batch": 3,
+      "chapter": 20,
+      "series": 100,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_20_series_100/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_20_series_100/qa.json"
     }
   ],
   "state_files": [
@@ -179,5 +188,5 @@
     "words_state_12.json"
   ],
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-05T22:04:12.927Z"
+  "updated_at": "2026-09-05T22:08:05.997Z"
 }
