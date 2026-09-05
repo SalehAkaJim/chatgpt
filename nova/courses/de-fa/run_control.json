@@ -4,18 +4,14 @@
   "course": "de-fa",
   "expected_next_series": 98,
   "last_successful_series": 97,
-  "lease": null,
+  "lease": {
+    "run_id": "nova-de-fa-20260905T205857323Z-s098",
+    "acquired_at": "2026-09-05T20:58:57.323Z",
+    "expires_at": "2026-09-05T21:48:57.323Z",
+    "base_head": "cae7b884395455f32f57b921a85285c0d9fc1c0d"
+  },
   "lease_timeout_minutes": 50,
-  "state": "unlocked",
-  "updated_at": "2026-09-05T20:06:35.017Z",
-  "version": 1,
-  "last_blocker": {
-    "series": 98,
-    "stage": "token_coverage_validation",
-    "code": "surface_token_spec_count_mismatch",
-    "text": "Dann steigen wir jetzt ein.",
-    "surface_tokens": 5,
-    "mapped_tokens": 4,
-    "action": "regenerate_same_series_with_complete_separable_verb_mapping"
-  }
+  "state": "locked",
+  "updated_at": "2026-09-05T20:58:57.323Z",
+  "version": 1
 }
