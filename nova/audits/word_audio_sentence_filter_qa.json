@@ -35,10 +35,10 @@
   "qa": {
     "word_tts_python_compile": "PASS",
     "word_tts_regression_tests": {
-      "passed": 23,
-      "skipped": 1,
+      "passed": 24,
+      "skipped": 0,
       "failed": 0,
-      "skip_reason": "canonical archive was not materialized in the local pre-commit checkout"
+      "environment": "GitHub Actions with canonical archive"
     },
     "workflow_yaml_parse": "PASS",
     "manifest_ineligible_entries_after_cleanup": 0,
@@ -46,5 +46,27 @@
     "exact_locator_guards_required_before_database_cleanup": true,
     "fast_forward_push_retries": 5
   },
-  "generated_at": "2026-09-05T16:36:00Z"
+  "post_commit_verification": {
+    "de-fa": {
+      "source_rows": 729,
+      "eligible_manifest_entries": 530,
+      "excluded_source_rows": 199,
+      "ineligible_manifest_entries": 0,
+      "billable_characters": 0,
+      "workflow_run_id": 33978935682,
+      "workflow_status": "success"
+    },
+    "en-fa": {
+      "content_through_series": 8,
+      "source_rows": 78,
+      "eligible_manifest_entries": 46,
+      "excluded_source_rows": 32,
+      "ineligible_manifest_entries": 0,
+      "new_eligible_audio_generated_for_series_008": 2,
+      "new_sentence_audio_generated_for_series_008": 0,
+      "workflow_run_id": 33978935725,
+      "workflow_status": "success"
+    }
+  },
+  "generated_at": "2026-09-05T16:49:00Z"
 }
