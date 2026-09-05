@@ -15,21 +15,31 @@ CREATE TEMPORARY TABLE nova_word_audio_updates (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO nova_word_audio_updates (word_key,lemma,display_form,part_of_speech,translation,text_sha256,audio_url,audio_duration_ms) VALUES
+('3b3ea45389ab1e82f5987dc28c4b7e75c54afaaa5b2430b72a2cd30b1b07b9aa','be','be','verb','بودن / هستم','46599c5bb5c33101f80cea8438e2228085513dbbb19b2f5ce97bd68494d3344d','nova/audio/words/en-fa/3b/be-c11bef294ba8.mp3',604),
 ('282f5f07f8146f8de4d0df25646bf990bca3bc7536072597e66fc59904db1a51','good','good','adjective','خوب','770e607624d689265ca6c44884d0807d9b054d23c473c106c72be9de08b7376c','nova/audio/words/en-fa/28/good-5f687d11b722.mp3',975),
 ('e020930607db5ab923298e27f3d15572e1de1ed91603d73472a71e5822718c76','goodbye','goodbye','interjection','خداحافظ','82e35a63ceba37e9646434c5dd412ea577147f1e4a41ccde1614253187e3dbf9','nova/audio/words/en-fa/e0/goodbye-85231a6a9cbd.mp3',975),
 ('d32182ea56349084c90dbe314d9bf8ac307b52f455b5c1854efa2d4d2ee2b8ee','hello','hello','interjection','سلام','2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824','nova/audio/words/en-fa/d3/hello-db4cb3e6e54d.mp3',1022),
 ('75e8ad78ac4c1f68cb54895571ffd4d9a0f280a7c2eec0b07ea8b4251bb40a59','Hello! I''m Mina.','Hello! I''m Mina.','phrase','سلام! من مینا هستم.','48773d891056c30b987051c8df6143dde4eda1278f3730b45ee7072cd5565c55','nova/audio/words/en-fa/75/hello-i-m-mina-9d2061a5b6c6.mp3',1718),
 ('6381dcffc0d982cadec623609206e4e13f7dc30cf5a576b874b6b53ec25ad988','Hello, Noah!','Hello, Noah!','phrase','سلام، نوآ!','7ece891b3313fa6f0fe325e0d3d472b919a4d20d5a92e0d55e8cee9a80f30f73','nova/audio/words/en-fa/63/hello-noah-c3a843a716fd.mp3',1161),
 ('e9ca9a0638b3e71b9a02aa9d710b06ae27ae6be1cea8b24c9a34330e24ef9839','hi','hi','interjection','سلام (خودمانی)','8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4','nova/audio/words/en-fa/e9/hi-b92bb310dab4.mp3',743),
+('32e43012356a0b0f04c2b7b5723284dbdac73cef7bd882928c15bc5f06e6c9e2','I','I','pronoun','من','a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c','nova/audio/words/en-fa/32/i-e2cdec2e9569.mp3',697),
 ('a595351ef8bb82e2b3700aed7c9e8c347efadfaf85698b5a57f9cbe7a2875789','I''m','I''m','phrase','من هستم','c9d7ed34ba7890f69090bd0612643736348055d85f90ae7bba6fd4175dc482c9','nova/audio/words/en-fa/a5/i-m-972e8dbd61d8.mp3',836),
+('5f77168d022cafd092f3634e1e5dfd697b8f374a6561f93f8753bb531d09d419','I''m Noah.','I''m Noah.','phrase','من نوآ هستم.','eaca3758421a2668e0e21a4789fec299f6fb1e9359f5f989cc29fc9104883b68','nova/audio/words/en-fa/5f/i-m-noah-aedb06e13e1c.mp3',1022),
 ('7d1b8e9f8ecc48e880d29731f7e7575d0ee31830793a51b8a1e232344d5aef6d','later','later','adverb','بعدا','1d9283d848ea941ace1fe0d2378ef8b70056a0d4d1648b95a322d90163e78285','nova/audio/words/en-fa/7d/later-36c0a7f889e6.mp3',882),
 ('e420c1cc1141cfa1736c078c92882dc2fcd2874d4cf54c24d35f5261a6ded7db','Mina','Mina','proper_noun','مینا (نام زنانه)','830449e3d5d3711c531223ac4f532a42fd100ef5691bcb8210b36d9a9df010d9','nova/audio/words/en-fa/e4/mina-f35fa0c4ab03.mp3',1068),
+('9a210f935a5aea1006eaa0c57b304fd7d576d869b29d2001ebcd10aa911a70da','my','my','determiner','من / ـم','038468518ad8122e13112743f890c7ba96ac5665b71de548eceb23e9ef237805','nova/audio/words/en-fa/9a/my-bbf6341d8cfd.mp3',604),
+('5b7b35928ddbc47cc23778612cbe5bedb8060de16383a2161dd0234c817021d2','My name is Mina.','My name is Mina.','phrase','اسم من میناست.','998dc661044d32a813dd5638440e680983f31bad4c356cfccdc82256ccef66be','nova/audio/words/en-fa/5b/my-name-is-mina-3c620ce43107.mp3',1300),
+('a7647878686232324e84c5515291da0f7abedd3184cc80ab85cbb198722af0e8','name','name','noun','اسم','82a3537ff0dbce7eec35d69edc3a189ee6f17d82f353a553f9aa96cb0be3ce89','nova/audio/words/en-fa/a7/name-bebd0d2d3aa5.mp3',836),
 ('3806e9ee7215f28f029f241d4592c5b5cd7e588922b39ea5f28ffb988b810b1d','Noah','Noah','proper_noun','نوآ (نام مردانه)','678202b3c0c345ef8e5ce5451dcd3b7b33d657bd9a1ff73b29ea20988bf5acb8','nova/audio/words/en-fa/38/noah-20b1b7a1dfa4.mp3',882),
 ('6c3bf3491fec5c3055bad239474c657762c51bcad195cafe44e07c1c85a05064','see','see','verb','دیدن','aa9e9b5c907d50feb410f2a84e81ab72c5ae6724d57ccc53650f9361d33dc734','nova/audio/words/en-fa/6c/see-cba26ce00746.mp3',743),
 ('be40c7f2f456b3da3fd4f0041a27af01c5a4556355777f3b3d5277c8532765ba','See you later!','See you later!','phrase','بعدا می‌بینمت!','47c1d6734534aed4b1591793d4e21f3d3cd915a31dc1984fb7dbb232870120d6','nova/audio/words/en-fa/be/see-you-later-4c968d323339.mp3',1068),
+('08fe3ff9a930057c626d409428e62d683098f3b7d25ac9445fe9d5484231d89d','what''s','what''s','phrase','چی هست / چه','10beaccfc7da1c3f63402e858c0c19856c0b6c125653c07a26910ac62f752df8','nova/audio/words/en-fa/08/what-s-6d9dee741daa.mp3',789),
+('77cd5000ec6bd919ef7d30d4070adce73fc8dd95ce470410e44888a210d9a188','What''s your name?','What''s your name?','phrase','اسمت چیه؟','56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724','nova/audio/words/en-fa/77/what-s-your-name-05c6c97cfe89.mp3',1022),
 ('57eb4e544ec31ac87e3e1662ede7028383c9e90707c36ce3cedadb7947fac042','yes','yes','interjection','بله / آره','8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d','nova/audio/words/en-fa/57/yes-f0b54ff0977f.mp3',836),
+('752c82226392cade5d2544a3a3a7847943ef1b4b66299a94ce3bd2084b37e5c8','Yes, I am.','Yes, I am.','phrase','بله، هستم.','cc07850c5e9229139005fd230419a5d512fb253e67cf4cfd4d58100b9d016a20','nova/audio/words/en-fa/75/yes-i-am-b7fc731065d9.mp3',1115),
 ('b9be459b46076f19bf1d9ea396321ec548a70ddfebcd1d702501c12562009d30','Yes, Mina.','Yes, Mina.','phrase','بله، مینا.','68082b613e502a457bcdc6b5309ac444ff6b1e90d9cde45d8c5d3d4a41c1b7d6','nova/audio/words/en-fa/b9/yes-mina-9d91a9b3f526.mp3',1068),
-('329158df57a3f7f23eb539b863394e6153788c42d03d0090680ba708f6c05278','you','you','pronoun','تو / شما','bb0347a468d97e98a9c00e37cebec1ab930f6f1221cae0f1fbb92b07e1900ba2','nova/audio/words/en-fa/32/you-2cc4bc175c70.mp3',697);
+('329158df57a3f7f23eb539b863394e6153788c42d03d0090680ba708f6c05278','you','you','pronoun','تو / شما','bb0347a468d97e98a9c00e37cebec1ab930f6f1221cae0f1fbb92b07e1900ba2','nova/audio/words/en-fa/32/you-2cc4bc175c70.mp3',697),
+('d3ef2f70bde8ffd792d12b20c0f41c0386daf317615a2c227ce601107980a2b9','your','your','determiner','تو / ـت','4d040d3f6466018c568aadf69a666d4257e5bb350a8e06f7198aedb6b12386fe','nova/audio/words/en-fa/d3/your-83c0605b9826.mp3',929);
 
 DROP PROCEDURE IF EXISTS apply_nova_word_audio;
 DELIMITER $$
