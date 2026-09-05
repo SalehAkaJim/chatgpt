@@ -1985,7 +1985,31 @@ INSERT INTO nova_turn_audio_updates (cefr_level,module_order,chapter_order,lesso
 ('B1',4,3,4,3,'Ben','character','e6309b8c565123665166af641b408d419845412844ab7af7ae690f59e7b7fffd','nova/audio/turns/de-fa/B1/m04/c03/l04/t03-ben-54320373eb91.mp3',2229),
 ('B1',4,3,4,4,'Lena','learner','4c9645422dec670db3189fabf00c151fc2c00354da2fc32f5b61d3e3f0875537','nova/audio/turns/de-fa/B1/m04/c03/l04/t04-lena-bc90d8c60871.mp3',3019),
 ('B1',4,3,4,5,'Ben','character','03ab342d14a62fe7ffa4623cbb2ef6b1125fc68a7f09ca9971dc66401e8f341c','nova/audio/turns/de-fa/B1/m04/c03/l04/t05-ben-d09c75f93d1c.mp3',1904),
-('B1',4,3,4,6,'Lena','learner','8b733551ba6ea5a67555a344ce0957e52700ecb5a6a2a916e6e50a17a11bfab3','nova/audio/turns/de-fa/B1/m04/c03/l04/t06-lena-c28ef6032780.mp3',3297);
+('B1',4,3,4,6,'Lena','learner','8b733551ba6ea5a67555a344ce0957e52700ecb5a6a2a916e6e50a17a11bfab3','nova/audio/turns/de-fa/B1/m04/c03/l04/t06-lena-c28ef6032780.mp3',3297),
+('B1',4,4,1,1,'Ben','character','ebe6710e5265907ccf9f394f779432a75dd9b47fcdaf5467f6eef980bf0b3260','nova/audio/turns/de-fa/B1/m04/c04/l01/t01-ben-d1e1ced6c3cb.mp3',2276),
+('B1',4,4,1,2,'Lena','learner','4ca3444cbf4caf71ef5db0fbd8ed6ae0aec15159f4a007d201eb7d721065899c','nova/audio/turns/de-fa/B1/m04/c04/l01/t02-lena-79b006a461ba.mp3',2090),
+('B1',4,4,1,3,'Ben','character','705e9c37165340bf7f2f15486107804afec596f1bb95de6925a766ba84e9f1aa','nova/audio/turns/de-fa/B1/m04/c04/l01/t03-ben-5ec87ed84ff9.mp3',1811),
+('B1',4,4,1,4,'Lena','learner','6950bf100f5a5edb12e173db17aafa0117ea1685182e5b6cd5203d772ed56f18','nova/audio/turns/de-fa/B1/m04/c04/l01/t04-lena-370877d07ccb.mp3',4040),
+('B1',4,4,1,5,'Ben','character','7fb29a579cd18b900177190c428f4b481d6d4aa2fd25f1f83c681398ef65a5e7','nova/audio/turns/de-fa/B1/m04/c04/l01/t05-ben-a4e9f7cae02c.mp3',1486),
+('B1',4,4,1,6,'Lena','learner','f834ab3730773f4ef16beb6f141a5bb1cef28266b5e4e4c294afd633c26bb144','nova/audio/turns/de-fa/B1/m04/c04/l01/t06-lena-f48f6246d51f.mp3',2368),
+('B1',4,4,2,1,'Ben','character','93b31b6b22c03d4ee22e259e5f5810c1aa62f49cc4bf573229c892b5c207dbf1','nova/audio/turns/de-fa/B1/m04/c04/l02/t01-ben-c66285289497.mp3',2508),
+('B1',4,4,2,2,'Lena','learner','4a7e10cf06c9a24fc0d23e2ae675f7bed98a4c6795fe51fa3ca32c4f14168461','nova/audio/turns/de-fa/B1/m04/c04/l02/t02-lena-c8fc09098791.mp3',2508),
+('B1',4,4,2,3,'Ben','character','9a5cd9423d95cabaf848f698a586b371b5e86c2d8b26718af837e84cb2331b56','nova/audio/turns/de-fa/B1/m04/c04/l02/t03-ben-29fb0aa69873.mp3',2647),
+('B1',4,4,2,4,'Lena','learner','1581f1363d10ef1c9a97d950b7202da534d7f438e68ae2eec2ab4463dc9172cd','nova/audio/turns/de-fa/B1/m04/c04/l02/t04-lena-01e3e45f14dc.mp3',2229),
+('B1',4,4,2,5,'Ben','character','c674bbaf126d5580ee0d47b04ab3505fc10edfd5ccac30edd41e53d7eca10490','nova/audio/turns/de-fa/B1/m04/c04/l02/t05-ben-41897118c5dd.mp3',2508),
+('B1',4,4,2,6,'Lena','learner','5d0a6aefd8984bc1412ccd7e1c6447bdb1413154dc5ee823f4101fea9daca574','nova/audio/turns/de-fa/B1/m04/c04/l02/t06-lena-ad4ae4fe1b96.mp3',2183),
+('B1',4,4,3,1,'Ben','character','60f89ca7715dc7fc2c31895deb039d8d7d0cb4be9e8054307c4f2861d5d47e8a','nova/audio/turns/de-fa/B1/m04/c04/l03/t01-ben-0aa41f67ab16.mp3',2276),
+('B1',4,4,3,2,'Lena','learner','62e64c3c4c7507c59da6cea431e9d1676674ee7d4d73c5e607374c357c5d4621','nova/audio/turns/de-fa/B1/m04/c04/l03/t02-lena-331897634151.mp3',2972),
+('B1',4,4,3,3,'Ben','character','53899f53bb13d688a81d51cd5319a4aebe8969f377797063447fb894e293c816','nova/audio/turns/de-fa/B1/m04/c04/l03/t03-ben-798d1602a74b.mp3',2136),
+('B1',4,4,3,4,'Lena','learner','51df87c297756bc69d52d9105ec5d8bd8ada7a497fceaa811db9128826505732','nova/audio/turns/de-fa/B1/m04/c04/l03/t04-lena-a5139c0fc690.mp3',2136),
+('B1',4,4,3,5,'Ben','character','6c7faaa4c25b3da473921725756524cb80fd2d71ccc00b94bb628c8d60a85756','nova/audio/turns/de-fa/B1/m04/c04/l03/t05-ben-12544cdc7f3e.mp3',2183),
+('B1',4,4,3,6,'Lena','learner','a0cf3e1f1b7a4c4d2582f042ca6a29e8e2380068240b2d8f10a12c3114b941ba','nova/audio/turns/de-fa/B1/m04/c04/l03/t06-lena-85877101c15f.mp3',2415),
+('B1',4,4,4,1,'Ben','character','1ce7e189ba00900c8a09bbf93ef0bfc8c2d9384870d0827ca899081863ce041e','nova/audio/turns/de-fa/B1/m04/c04/l04/t01-ben-02433272ac2e.mp3',2694),
+('B1',4,4,4,2,'Lena','learner','226b0e67b14dd26d7536a241ddf9b3d4e7765b9a0f50749978091ba729ff91e9','nova/audio/turns/de-fa/B1/m04/c04/l04/t02-lena-aa6ce9a850b7.mp3',2601),
+('B1',4,4,4,3,'Ben','character','0d15653300e5935675c7c1d03e8d5f7d3c1bf1f06beef078bc15d5440a7841a2','nova/audio/turns/de-fa/B1/m04/c04/l04/t03-ben-709358ac0b04.mp3',1672),
+('B1',4,4,4,4,'Lena','learner','ac4a086efb213996715ca883346e94209a56950ffc2ec96e1b0406a96b5ffb5b','nova/audio/turns/de-fa/B1/m04/c04/l04/t04-lena-a3072df7c9c3.mp3',2276),
+('B1',4,4,4,5,'Ben','character','a8098f888c5547237509786bd936347602333aec5c631c5feeabc2956f00cc30','nova/audio/turns/de-fa/B1/m04/c04/l04/t05-ben-c282081bf04a.mp3',1625),
+('B1',4,4,4,6,'Lena','learner','9194b2324d964e49fa56f4b972204143e4f59b3b40498d6303ac669f7e05fc66','nova/audio/turns/de-fa/B1/m04/c04/l04/t06-lena-01ae9502899a.mp3',1904);
 
 DROP PROCEDURE IF EXISTS apply_nova_turn_audio;
 DELIMITER $$
