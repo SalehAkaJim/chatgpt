@@ -42,7 +42,7 @@
       "chapter": 13,
       "series": 13,
       "title": "What time is it?",
-      "status": "planned"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 14,
@@ -65,13 +65,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_13_series_013",
+  "next_action": "generate_and_qa_chapter_14_series_014",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-05T18:34:50.000Z",
+  "updated_at": "2026-09-05T19:31:35.000Z",
   "last_completed_atomic_unit": {
-    "chapter": 12,
-    "series": 12,
+    "chapter": 13,
+    "series": 13,
     "status": "PASS"
   }
 }
