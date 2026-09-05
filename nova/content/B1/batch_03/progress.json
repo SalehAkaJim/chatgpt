@@ -16,13 +16,13 @@
       "chapter": 17,
       "series": 97,
       "title": "Wir wissen nicht, ob wir weiterfahren können",
-      "status": "pending"
+      "status": "staged_qa_passed"
     },
     {
       "chapter": 18,
       "series": 98,
       "title": "Obwohl es spät ist, fahren wir weiter",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 19,
@@ -63,13 +63,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_17_series_097",
+  "next_action": "generate_and_qa_chapter_18_series_098",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 16,
-    "series": 96,
+    "chapter": 17,
+    "series": 97,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T18:13:25.982Z"
+  "updated_at": "2026-09-05T19:11:12.339Z"
 }

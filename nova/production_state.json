@@ -6,7 +6,7 @@
   "last_completed_level": "A2",
   "last_completed_series": 96,
   "next_level": "B1",
-  "next_series": 97,
+  "next_series": 98,
   "content_status": "generating",
   "content_freeze": {
     "enabled": false,
@@ -29,11 +29,11 @@
       17,
       24
     ],
-    "last_qa_passed_chapter": 16,
-    "last_qa_passed_series": 96,
-    "pending_chapter": 17,
-    "pending_series": 97,
-    "status": "batch_02_published_cross_qa_passed",
+    "last_qa_passed_chapter": 17,
+    "last_qa_passed_series": 97,
+    "pending_chapter": 18,
+    "pending_series": 98,
+    "status": "chapter_17_qa_passed_staged",
     "retry_policy": "generate_against_exact_canonical_v9_0_only"
   },
   "database": {
@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T18:13:25.982Z",
+  "updated_at": "2026-09-05T19:11:12.339Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -66,7 +66,7 @@
     "source_of_truth": "github_main",
     "required_database_revision": "v9.0",
     "schema_changes_allowed": false,
-    "next_series": 97,
+    "next_series": 98,
     "advance_state_only_after_full_batch_qa_pass": true,
     "execution_mode": "strictly_sequential",
     "reread_github_state_between_chapters": true,
@@ -111,19 +111,19 @@
     "generation_mode": "incremental_after_each_chapter",
     "turn_audio": {
       "manifest": "nova/audio/manifest.json",
-      "entries": 1738,
-      "through_series": 95,
+      "entries": 1762,
+      "through_series": 96,
       "last_run_failed": 0
     },
     "word_audio": {
       "manifest": "nova/audio/word_manifest.json",
-      "entries": 606,
-      "through_series": 95,
+      "entries": 637,
+      "through_series": 96,
       "last_run_failed": 0,
       "voice": "Lori",
       "voice_id": "TbMNBJ27fH2U0VgpSNko"
     },
-    "status": "pending_series_096_audio",
+    "status": "pending_series_097_audio",
     "future_courses_require_language_specific_preflight": true
   },
   "state_scope": "de-fa-exclusive-legacy",

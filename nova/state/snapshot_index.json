@@ -19,7 +19,7 @@
   },
   "content_freeze": false,
   "next_level": "B1",
-  "next_series": 97,
+  "next_series": 98,
   "database_files": [
     "../database/reset_all_v9.sql",
     "../database/schema_v9.sql",
@@ -73,8 +73,18 @@
     "status": "not_changed_by_repository_commit",
     "note": "Repository restoration does not alter the Liara MySQL database."
   },
-  "staged_series": [],
-  "updated_at": "2026-09-05T18:13:25.982Z",
+  "staged_series": [
+    {
+      "level": "B1",
+      "batch": 3,
+      "chapter": 17,
+      "series": 97,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_17_series_097/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_17_series_097/qa.json"
+    }
+  ],
+  "updated_at": "2026-09-05T19:11:12.339Z",
   "published_batches": [
     {
       "level": "B1",
