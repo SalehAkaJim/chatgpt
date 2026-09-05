@@ -1,17 +1,17 @@
 {
-  "version": 1,
-  "course": "de-fa",
   "automation_title": "Nova German Production",
-  "state": "locked",
-  "lease": {
-    "run_id": "de-fa-20260905135833-4a9d3752",
-    "acquired_at": "2026-09-05T13:58:33.018Z",
-    "expires_at": "2026-09-05T14:48:33.018Z",
-    "base_head": "4a9d37529e4f284728943002bceecacb06e3fcf3"
-  },
-  "expected_next_series": 90,
-  "last_successful_series": 89,
   "compare_and_swap_required": true,
+  "course": "de-fa",
+  "expected_next_series": 91,
+  "last_successful_series": 90,
+  "lease": {
+    "run_id": null,
+    "acquired_at": null,
+    "expires_at": null,
+    "base_head": null
+  },
   "lease_timeout_minutes": 50,
-  "updated_at": "2026-09-05T13:58:33.018Z"
+  "state": "unlocked",
+  "updated_at": "2026-09-05T14:03:45.544Z",
+  "version": 1
 }
