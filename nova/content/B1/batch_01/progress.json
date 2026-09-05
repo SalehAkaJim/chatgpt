@@ -22,13 +22,13 @@
       "chapter": 2,
       "series": 82,
       "title": "Warum willst du das machen?",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 3,
       "series": 83,
       "title": "Weil ich etwas ändern möchte",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 4,
@@ -63,13 +63,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_02_series_082",
+  "next_action": "generate_and_qa_chapter_03_series_083",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 1,
-    "series": 81,
+    "chapter": 2,
+    "series": 82,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T05:19:22.170Z"
+  "updated_at": "2026-09-05T06:12:12.867Z"
 }

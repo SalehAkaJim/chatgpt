@@ -1,0 +1,101 @@
+{
+  "project": "Nova",
+  "course": "de-fa",
+  "level": "B1",
+  "module": 1,
+  "chapter": 2,
+  "series": 82,
+  "title": "Warum willst du das machen?",
+  "status": "PASS",
+  "database_revision": "v9.0",
+  "schema_changes": false,
+  "source": {
+    "main_head": "04ff5452faf5444c777a40021bc1ec5ce7816153",
+    "canonical_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "canonical_full_scan_status": "PASS",
+    "sql": "chapter.sql",
+    "sql_sha256": "b94cf917580038ebe85348bc8ebd065fc8ad7dd36a9a33b64ec6c379e5bbbdfa",
+    "sql_bytes": 97604,
+    "sql_lines": 744
+  },
+  "counts": {
+    "lessons": 4,
+    "turns": 24,
+    "learner_turns": 12,
+    "activities": 32,
+    "explicit_targets": 4,
+    "new_word_tuples": 32,
+    "tokens": 130,
+    "lesson_words": 98,
+    "characters": 2,
+    "storyline_orders": 4
+  },
+  "explicit_targets": [
+    {
+      "lemma": "Warum möchtest du in einer anderen Wohnung wohnen?",
+      "part_of_speech": "phrase",
+      "translation": "چرا می خوای در یک خونه دیگه زندگی کنی؟"
+    },
+    {
+      "lemma": "Die Straße ist laut.",
+      "part_of_speech": "phrase",
+      "translation": "خیابان پرسروصدا است."
+    },
+    {
+      "lemma": "Ich wünsche mir ein ruhiges Arbeitszimmer.",
+      "part_of_speech": "phrase",
+      "translation": "یک اتاق کار آرام می خوام."
+    },
+    {
+      "lemma": "Ich brauche mehr Platz und mehr Ruhe.",
+      "part_of_speech": "phrase",
+      "translation": "به فضای بیشتر و آرامش بیشتری نیاز دارم."
+    }
+  ],
+  "storyline": {
+    "key": "mia-sara-b1-decisions",
+    "characters": [
+      "Mia",
+      "Sara"
+    ],
+    "orders": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "checks": {
+    "archive_integrity": true,
+    "v9_0_schema_compatibility": true,
+    "forbidden_schema_ddl_absent": true,
+    "four_lessons": true,
+    "two_characters_per_lesson": true,
+    "german_naturalness_and_b1_level": true,
+    "persian_translation_and_orthography": true,
+    "storyline_continuity": true,
+    "clickable_token_coverage_100_percent": true,
+    "token_object_contract_v9_0": true,
+    "token_dictionary_mapping_100_percent": true,
+    "learner_speech_target_coverage_100_percent": true,
+    "lemma_first_morphology": true,
+    "activity_source_integrity": true,
+    "reading_has_task": true,
+    "distractor_quality": true,
+    "dependency_audit": true,
+    "duplicate_lesson_words_audit": true,
+    "status_enum_audit": true,
+    "chapter_empty_guard": true,
+    "batch_cross_chapter_duplicate_target_audit": true,
+    "level_progression_audit": true
+  },
+  "verification": {
+    "mode": "static_content_and_transactional_sql_audit",
+    "live_mysql_execution": "not_performed",
+    "runtime_guards_embedded": true
+  },
+  "errors": [],
+  "warnings": [],
+  "generated_at": "2026-09-05T06:12:12.867Z"
+}

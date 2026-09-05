@@ -29,11 +29,11 @@
       1,
       8
     ],
-    "last_qa_passed_chapter": 1,
-    "last_qa_passed_series": 81,
-    "pending_chapter": 2,
-    "pending_series": 82,
-    "status": "series_081_qa_passed_staged",
+    "last_qa_passed_chapter": 2,
+    "last_qa_passed_series": 82,
+    "pending_chapter": 3,
+    "pending_series": 83,
+    "status": "series_082_qa_passed_staged",
     "retry_policy": "generate_against_exact_canonical_v9_0_only"
   },
   "database": {
@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T05:19:22.170Z",
+  "updated_at": "2026-09-05T06:12:12.867Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -66,7 +66,7 @@
     "source_of_truth": "github_main",
     "required_database_revision": "v9.0",
     "schema_changes_allowed": false,
-    "next_series": 82,
+    "next_series": 83,
     "advance_state_only_after_full_batch_qa_pass": true
   }
 }
