@@ -76,7 +76,7 @@
     89,
     89
   ],
-  "updated_at": "2026-09-05T12:14:24.708Z",
+  "updated_at": "2026-09-05T12:18:57.360Z",
   "published_batches": [
     {
       "level": "B1",
@@ -89,5 +89,14 @@
       "qa": "../audits/B1/batch_01_cross_chapter_qa.json",
       "status": "PASS"
     }
+  ],
+  "language_queue_file": "../plans/language_production_queue.json",
+  "current_course": "de-fa",
+  "next_queued_course": "en-fa",
+  "queued_courses": [
+    "en-fa",
+    "fr-fa",
+    "it-fa",
+    "ko-fa"
   ]
 }

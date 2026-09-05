@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "course": "de-fa",
   "source_of_truth": "github",
   "database_revision": "v9.0",
@@ -86,5 +86,17 @@
     "commit_each_chapter_after_qa_pass": true,
     "stop_remaining_run_on_failure": true,
     "never_generate_chapters_in_parallel": true
+  },
+  "multi_course_generation": {
+    "enabled": true,
+    "queue_file": "nova/plans/language_production_queue.json",
+    "active_course": "de-fa",
+    "next_course": "en-fa",
+    "base_language": "fa",
+    "transition_mode": "strictly_sequential_after_full_course_completion",
+    "prepare_next_curriculum_before_transition": true,
+    "preparation_threshold_remaining_chapters": 8,
+    "require_transition_gate": true,
+    "do_not_translate_or_copy_previous_course": true
   }
 }

@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "project": "Nova",
+  "purpose": "ordered multi-course content production queue",
+  "base_language": {
+    "code": "fa",
+    "name": "Persian",
+    "name_fa": "فارسی"
+  },
+  "database_revision": "v9.0",
+  "status": "active",
+  "active_course": {
+    "order": 0,
+    "learning_language": "de",
+    "course_key": "de-fa",
+    "name": "German",
+    "name_fa": "آلمانی",
+    "status": "in_progress",
+    "current_level": "B1",
+    "next_series": 90
+  },
+  "queue": [
+    {
+      "order": 1,
+      "learning_language": "en",
+      "course_key": "en-fa",
+      "name": "English",
+      "name_fa": "انگلیسی",
+      "status": "queued"
+    },
+    {
+      "order": 2,
+      "learning_language": "fr",
+      "course_key": "fr-fa",
+      "name": "French",
+      "name_fa": "فرانسوی",
+      "status": "queued"
+    },
+    {
+      "order": 3,
+      "learning_language": "it",
+      "course_key": "it-fa",
+      "name": "Italian",
+      "name_fa": "ایتالیایی",
+      "status": "queued"
+    },
+    {
+      "order": 4,
+      "learning_language": "ko",
+      "course_key": "ko-fa",
+      "name": "Korean",
+      "name_fa": "کره‌ای",
+      "status": "queued"
+    }
+  ],
+  "course_contract": {
+    "cefr_levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2",
+      "C1",
+      "C2"
+    ],
+    "chapters_per_level": 40,
+    "lessons_per_chapter": 4,
+    "batch_files_per_level": 5,
+    "chapters_per_batch_file": 8,
+    "series_numbering": "restart_at_001_for_each_course",
+    "start_from_absolute_zero": true,
+    "independent_curriculum_per_language": true,
+    "translate_or_copy_previous_course_content": false,
+    "course_specific_word_state": true,
+    "course_specific_characters_and_storylines": true,
+    "shared_content_engine_only": true
+  },
+  "execution_policy": {
+    "cadence": "hourly",
+    "max_chapters_per_run": 2,
+    "execution_mode": "strictly_sequential",
+    "qa_and_commit_each_chapter_before_next": true,
+    "stop_remaining_run_on_failure": true
+  },
+  "preparation_policy": {
+    "prepare_next_level_curriculum_when_remaining_chapters_lte": 8,
+    "prepare_next_course_a1_curriculum_when_current_course_remaining_chapters_lte": 8,
+    "curriculum_must_pass_qa_before_activation": true,
+    "generate_next_course_content_before_activation": false
+  },
+  "transition_gate": {
+    "required_final_level": "C2",
+    "require_all_chapter_qa_pass": true,
+    "require_all_batch_qa_pass": true,
+    "require_all_batch_artifacts_published": true,
+    "require_state_snapshot_complete": true,
+    "activate_only_next_queued_course": true
+  },
+  "queue_open_for_future_append": true,
+  "updated_at": "2026-09-05T12:18:57.360Z",
+  "authorization": "explicit_user_order"
+}

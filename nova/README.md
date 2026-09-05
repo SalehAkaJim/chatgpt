@@ -53,3 +53,16 @@ only `turns.audio_url` and `turns.audio_duration_ms`, after validating every row
 against its hierarchy, character, role, and text hash.
 
 See `nova/tts/README.md` for the initial run and the command to run after each imported Series.
+
+## Language production roadmap
+
+Courses are produced strictly in this order:
+
+1. German → Persian (active)
+2. English → Persian
+3. French → Persian
+4. Italian → Persian
+5. Korean → Persian
+
+The machine-readable queue is stored in `nova/plans/language_production_queue.json`.
+Each language starts from absolute zero with an independently designed curriculum, word state, characters and storylines. Later courses reuse only the Nova v9.0 content engine; German content must not be translated or copied into them. The next curriculum is prepared during the final eight chapters of the active course, but its content does not start until the active course passes the complete C2 transition gate.

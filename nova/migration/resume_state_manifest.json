@@ -84,7 +84,7 @@
     ],
     "next_series": 90
   },
-  "updated_at": "2026-09-05T12:14:24.708Z",
+  "updated_at": "2026-09-05T12:18:57.360Z",
   "execution_policy": {
     "cadence": "hourly",
     "max_chapters_per_run": 2,
@@ -93,5 +93,16 @@
     "commit_each_chapter_after_qa_pass": true,
     "stop_remaining_run_on_failure": true,
     "database_revision": "v9.0"
+  },
+  "language_queue": {
+    "path": "nova/plans/language_production_queue.json",
+    "active_course": "de-fa",
+    "next_courses": [
+      "en-fa",
+      "fr-fa",
+      "it-fa",
+      "ko-fa"
+    ],
+    "transition_requires_full_course_QA": true
   }
 }

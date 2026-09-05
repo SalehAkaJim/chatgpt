@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T12:14:24.708Z",
+  "updated_at": "2026-09-05T12:18:57.360Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -72,5 +72,18 @@
     "reread_github_state_between_chapters": true,
     "commit_each_chapter_after_qa_pass": true,
     "stop_remaining_run_on_failure": true
+  },
+  "language_roadmap": {
+    "queue_file": "nova/plans/language_production_queue.json",
+    "current_course": "de-fa",
+    "next_course": "en-fa",
+    "queued_courses": [
+      "en-fa",
+      "fr-fa",
+      "it-fa",
+      "ko-fa"
+    ],
+    "transition_mode": "after_current_course_C2_and_all_batch_QA",
+    "queue_open_for_future_append": true
   }
 }
