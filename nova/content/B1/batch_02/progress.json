@@ -46,13 +46,13 @@
       "chapter": 14,
       "series": 94,
       "title": "Die Heizung wird morgen repariert",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 15,
       "series": 95,
       "title": "Jetzt ist alles wieder in Ordnung",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 16,
@@ -63,13 +63,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_14_series_094",
+  "next_action": "generate_and_qa_chapter_15_series_095",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 13,
-    "series": 93,
+    "chapter": 14,
+    "series": 94,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T17:08:00.000Z"
+  "updated_at": "2026-09-05T17:18:00.000Z"
 }
