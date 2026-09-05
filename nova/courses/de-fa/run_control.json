@@ -4,16 +4,14 @@
   "course": "de-fa",
   "expected_next_series": 98,
   "last_successful_series": 97,
-  "lease": null,
+  "lease": {
+    "run_id": "nova-de-fa-20260905T200256578Z-s098",
+    "acquired_at": "2026-09-05T20:02:56.578Z",
+    "expires_at": "2026-09-05T20:52:56.578Z",
+    "base_head": "2a79dbf831144a72b063ba2390a9af53c63350fc"
+  },
   "lease_timeout_minutes": 50,
-  "state": "unlocked",
-  "updated_at": "2026-09-05T19:13:21.563Z",
-  "version": 1,
-  "last_blocker": {
-    "series": 98,
-    "stage": "generation_validation",
-    "code": "missing_canonical_or_declared_tuple_mapping",
-    "tuple": "Fahrt|noun",
-    "action": "retry_same_series_without_advancing"
-  }
+  "state": "locked",
+  "updated_at": "2026-09-05T20:02:56.578Z",
+  "version": 1
 }
