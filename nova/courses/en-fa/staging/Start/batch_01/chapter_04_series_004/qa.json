@@ -1,0 +1,104 @@
+{
+  "project": "Nova",
+  "course": "en-fa",
+  "database_revision": "v9.0",
+  "schema_changes": false,
+  "level": "Start",
+  "database_level_code": "ST",
+  "module": 1,
+  "chapter": 4,
+  "series": 4,
+  "title": "How are you today?",
+  "status": "PASS",
+  "generated_at": "2026-09-05T14:39:15.000Z",
+  "checks": {
+    "english_naturalness_and_level_fit": true,
+    "persian_translation_and_orthography": true,
+    "exactly_two_characters_per_lesson": true,
+    "storyline_continuity": true,
+    "clickable_token_coverage_100_percent": true,
+    "learner_speech_target_coverage_100_percent": true,
+    "activity_source_integrity": true,
+    "reading_has_task": true,
+    "distractor_quality": true,
+    "dependency_audit": true,
+    "duplicate_lesson_words_audit": true,
+    "chapter_empty_guard": true,
+    "batch_cross_chapter_duplicate_target_audit": true,
+    "level_progression_audit": true,
+    "v9_0_only_no_DDL": true,
+    "course_scope_audit": true,
+    "four_lessons": true,
+    "token_object_contract_v9_0": true,
+    "all_four_skills_per_lesson": true,
+    "exact_word_tuple_history": true,
+    "database_level_code_ST": true,
+    "curriculum_title_exact": true,
+    "audio_source_compatible": true,
+    "approved_roster_only": true
+  },
+  "counts": {
+    "lessons": 4,
+    "characters": 2,
+    "turns": 18,
+    "learner_turns": 9,
+    "tokens": 48,
+    "activities": 34,
+    "lesson_words": 45,
+    "new_word_tuples": 10,
+    "cumulative_word_tuples": 44,
+    "explicit_targets": 4,
+    "cumulative_explicit_targets": 16,
+    "storyline_orders": 4
+  },
+  "explicit_targets": [
+    {
+      "lemma": "How are you today?",
+      "part_of_speech": "phrase",
+      "translation": "امروز حالت چطوره؟"
+    },
+    {
+      "lemma": "I'm fine, thanks.",
+      "part_of_speech": "phrase",
+      "translation": "خوبم، ممنون."
+    },
+    {
+      "lemma": "I'm great today.",
+      "part_of_speech": "phrase",
+      "translation": "امروز عالی‌ام."
+    },
+    {
+      "lemma": "Fine, thanks. And you?",
+      "part_of_speech": "phrase",
+      "translation": "خوبم، ممنون. تو چطور؟"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "storyline": {
+    "key": "mina-ava-english-class",
+    "characters": [
+      "Ava",
+      "Mina"
+    ],
+    "orders": [
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "source": {
+    "main_head": "582947a9aa0a0118407b27f673e5d146f855927c",
+    "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+    "sql": "chapter.sql",
+    "sql_bytes": 52747,
+    "sql_lines": 349,
+    "sql_sha256": "20520558eb1d019eda748a45df1e78118804a667f9211ee7103ad429a8b94d9f"
+  },
+  "verification": {
+    "mode": "static_content_and_transactional_sql_audit",
+    "live_mysql_execution": "not_performed",
+    "runtime_guards_embedded": true
+  }
+}
