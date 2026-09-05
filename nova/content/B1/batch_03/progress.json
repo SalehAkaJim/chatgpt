@@ -33,13 +33,13 @@
     {
       "chapter": 21,
       "series": 101,
-      "status": "pending",
+      "status": "staged_qa_passed",
       "title": "Ich fühle mich seit ein paar Tagen müde"
     },
     {
       "chapter": 22,
       "series": 102,
-      "status": "planned",
+      "status": "pending",
       "title": "Der Arzt hat gesagt, dass ich mich ausruhen soll"
     },
     {
@@ -59,17 +59,17 @@
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 20,
-    "series": 100,
+    "chapter": 21,
+    "series": 101,
     "status": "PASS"
   },
   "level": "B1",
-  "next_action": "generate_and_qa_chapter_21_series_101",
+  "next_action": "generate_and_qa_chapter_22_series_102",
   "published": false,
   "series_range": [
     97,
     104
   ],
   "status": "in_progress",
-  "updated_at": "2026-09-05T22:08:05.997Z"
+  "updated_at": "2026-09-05T23:05:41.844Z"
 }

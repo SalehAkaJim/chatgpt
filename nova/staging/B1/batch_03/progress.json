@@ -11,13 +11,13 @@
   "cross_chapter_qa": "not_ready",
   "failed_chapters": [],
   "last_completed_atomic_unit": {
-    "chapter": 20,
-    "series": 100,
+    "chapter": 21,
+    "series": 101,
     "status": "PASS"
   },
   "level": "B1",
-  "next_pending_chapter": 21,
-  "next_pending_series": 101,
+  "next_pending_chapter": 22,
+  "next_pending_series": 102,
   "passed_chapters": [
     {
       "chapter": 17,
@@ -42,10 +42,17 @@
     },
     {
       "chapter": 20,
+      "qa": "chapter_20_series_100/qa.json",
       "series": 100,
-      "title": "Am Ende sind wir doch angekommen",
       "status": "PASS",
-      "qa": "chapter_20_series_100/qa.json"
+      "title": "Am Ende sind wir doch angekommen"
+    },
+    {
+      "chapter": 21,
+      "series": 101,
+      "title": "Ich fühle mich seit ein paar Tagen müde",
+      "status": "PASS",
+      "qa": "chapter_21_series_101/qa.json"
     }
   ],
   "production_state_advanced": false,
@@ -56,5 +63,5 @@
     104
   ],
   "status": "in_progress",
-  "updated_at": "2026-09-05T22:08:05.997Z"
+  "updated_at": "2026-09-05T23:05:41.844Z"
 }

@@ -4,7 +4,7 @@
     "generation_mode": "incremental_after_each_chapter",
     "policy_file": "nova/plans/audio_production_policy.json",
     "required_for_course_completion": true,
-    "status": "pending_series_100_audio",
+    "status": "pending_series_101_audio",
     "turn_audio": {
       "entries": 1762,
       "last_run_failed": 0,
@@ -27,7 +27,7 @@
     "commit_each_chapter_after_qa_pass": true,
     "execution_mode": "strictly_sequential",
     "max_chapters_per_run": 2,
-    "next_series": 101,
+    "next_series": 102,
     "required_database_revision": "v9.0",
     "reread_github_state_between_chapters": true,
     "schema_changes_allowed": false,
@@ -72,14 +72,14 @@
       17,
       24
     ],
-    "last_qa_passed_chapter": 20,
-    "last_qa_passed_series": 100,
+    "last_qa_passed_chapter": 21,
+    "last_qa_passed_series": 101,
     "level": "B1",
-    "pending_chapter": 21,
-    "pending_series": 101,
+    "pending_chapter": 22,
+    "pending_series": 102,
     "phase": "B1_content_generation",
     "retry_policy": "generate_against_exact_canonical_v9_0_only",
-    "status": "chapter_20_qa_passed_staged"
+    "status": "chapter_21_qa_passed_staged"
   },
   "database": {
     "active_schema": "nova/database/schema_v9.sql",
@@ -126,10 +126,10 @@
   "last_completed_level": "A2",
   "last_completed_series": 96,
   "next_level": "B1",
-  "next_series": 101,
+  "next_series": 102,
   "project": "Nova",
   "schema_version": "v9",
   "shared_mutable_state": false,
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-05T22:08:05.997Z"
+  "updated_at": "2026-09-05T23:05:41.844Z"
 }
