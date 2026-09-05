@@ -45,6 +45,7 @@ INSERT INTO nova_word_audio_updates (word_key,lemma,display_form,part_of_speech,
 ('af5e584d824a6f56d5015cd6735e8e1b833ed80a9379b00534e97257e0b605fe','day','day','noun','روز','944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b','nova/audio/words/en-fa/af/day-c0cd49748b9c.mp3',836),
 ('0a9a3e914b426b720887f3edd8678dd970af33af55ffe24a6cb0b9c617bfb395','December','December','proper_noun','دسامبر','8fb204ca460968479407fe3f09b85a7500b2f4a20ca644e5f7822f53161f331a','nova/audio/words/en-fa/0a/december-8323ac71bfe5.mp3',1022),
 ('c74d73f8a726f2b68d849af272e5979a42afee3d5dc67f4daecf2911d39eefc6','do','do','auxiliary','فعل کمکی برای پرسش','ac0b52a2ae6ef99999bc08fb31e19188bf0085a4614204068e677e140e1458be','nova/audio/words/en-fa/c7/do-d5e2b71ddfd3.mp3',743),
+('116847b78adc1ec25c847e9fe042fddfe9ed716053a14449a19600e184c36f96','door','door','noun','در','2534e2de1dec24fedab4c00266b55ba9ba60dde03a349c5b5662189dd561ba9e','nova/audio/words/en-fa/11/door-90da4ae8ca16.mp3',1115),
 ('6a5b31033e05a74b26a41a548b46b8fb14b728b8a39cb1fb5e523fc39012af88','eight','eight','numeral','هشت','c195d2d8756234367242ba7616c5c60369bc25ced2dcb5b92808d31b58ef217a','nova/audio/words/en-fa/6a/eight-fe7f0e711e4a.mp3',789),
 ('755378bfe46d282eb05c1cf3ef501a65932e3377b281342dc76656958dc862c9','English','English','noun','زبان انگلیسی','ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06','nova/audio/words/en-fa/75/english-fb35f86b79a6.mp3',975),
 ('f231bff131681487c99028c5ac6a7d858754831f8ab714d68b80bb771211abd5','Ethan','Ethan','proper_noun','ایتن (نام مردانه)','13ae3ed6fe76d459c9c66fe38ff187593561a1f24d34cb22e06148c77e4cc02b','nova/audio/words/en-fa/f2/ethan-8042910d3a92.mp3',1022),
@@ -127,6 +128,7 @@ INSERT INTO nova_word_audio_updates (word_key,lemma,display_form,part_of_speech,
 ('7e7d53624fffb14403351d40ad33e432d4d57c2d67a394847e7feeca5bb72a6b','thanks','thanks','interjection','ممنون','a6a2729cbf6bcadce577a31f7f76201d5ce63c57d6c53318000d67714bb354ef','nova/audio/words/en-fa/7e/thanks-93b4a11f94cf.mp3',1022),
 ('2951eca1fda437d29ae051263109407ae8883444938f9d15f944b55b9d5aa3fd','that','that','pronoun','آن / آن را','8e7fc0236af43df9340685fc16f1efe36543cc1707051220a103ad99cf69a2df','nova/audio/words/en-fa/29/that-dac0e5de3689.mp3',836),
 ('00d5588a4387522ff86d1eeaea1edaa73281b961784250c1f693158e73899d0c','the','the','article','آن / ـِ مشخص','b9776d7ddf459c9ad5b0e1d6ac61e27befb5e99fd62446677600d7cacef544d0','nova/audio/words/en-fa/00/the-285f5d62fb5a.mp3',789),
+('5f65ce14a37be01050bbb1a906b7c6e986a4529118fd0a529ca53e9867a11a67','there','there','adverb','وجود دارد / آنجا','e244f187f696561d5fd7e00f618e7ba641dc52e3c137380f6fa23a854b773aac','nova/audio/words/en-fa/5f/there-84efc9803e2a.mp3',1068),
 ('820dd642b710d566bdf2680698e9398336d704e7f296f7b7f63424fa8c5397a9','this','this','pronoun','این','1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408','nova/audio/words/en-fa/82/this-0e5c0a81838c.mp3',882),
 ('afa67f647fd177faf4eec0ff3a760df82187b58a276553f5f3f2d8e62be16b4c','three','three','numeral','سه','8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f','nova/audio/words/en-fa/af/three-e137fba44897.mp3',1115),
 ('aaf7b7edd49aed85dcd3322a2f5c23ee2650b10db9ddeba8366fd985c0572913','Thursday','Thursday','proper_noun','پنجشنبه','fc2662062ffdef9610020183ea2b087c21d71150d78a7c7463be8a9050bd3ac9','nova/audio/words/en-fa/aa/thursday-0db8e1cad2e7.mp3',1022),
@@ -144,12 +146,14 @@ INSERT INTO nova_word_audio_updates (word_key,lemma,display_form,part_of_speech,
 ('08fe3ff9a930057c626d409428e62d683098f3b7d25ac9445fe9d5484231d89d','what''s','what''s','phrase','چی هست / چه','10beaccfc7da1c3f63402e858c0c19856c0b6c125653c07a26910ac62f752df8','nova/audio/words/en-fa/08/what-s-6d9dee741daa.mp3',789),
 ('0b1794b159bdb42d066f84b10b83b21506e9a31b1a83ac0f9cc136a905be3941','where','where','adverb','کجا','b48111c10c65fc119368edafb19f97451759ee90b3f44647368135ca47aa4753','nova/audio/words/en-fa/0b/where-6648160193c4.mp3',929),
 ('9ed0c494d09da1d23f708831e36da3b7f06b4af46321d27064c8c4a8bf8b41dd','who','who','pronoun','چه کسی / کی','6ed0337140bd32b4adc5000f76333bd8ca6b2b2c9e0bc354335cf341456290e8','nova/audio/words/en-fa/9e/who-460eda2c13d3.mp3',882),
+('e00e6a20173ded64c09021c1ba1966da692e5b30870473c0f7ac5e386ba17ca2','window','window','noun','پنجره','44ff7b02c80d38b26dd6aa31d9470aed81b32e10331a3c994fb1a9945fd847ba','nova/audio/words/en-fa/e0/window-1ba132ceb9da.mp3',975),
 ('57eb4e544ec31ac87e3e1662ede7028383c9e90707c36ce3cedadb7947fac042','yes','yes','interjection','بله / آره','8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d','nova/audio/words/en-fa/57/yes-f0b54ff0977f.mp3',836),
 ('329158df57a3f7f23eb539b863394e6153788c42d03d0090680ba708f6c05278','you','you','pronoun','تو / شما','bb0347a468d97e98a9c00e37cebec1ab930f6f1221cae0f1fbb92b07e1900ba2','nova/audio/words/en-fa/32/you-2cc4bc175c70.mp3',697),
 ('d3ef2f70bde8ffd792d12b20c0f41c0386daf317615a2c227ce601107980a2b9','your','your','determiner','تو / ـت','4d040d3f6466018c568aadf69a666d4257e5bb350a8e06f7198aedb6b12386fe','nova/audio/words/en-fa/d3/your-83c0605b9826.mp3',929),
 ('8413e24f243ed7a2db47e5b8f874aec906c6fdbfc66ee7e6a8e7d31e37068262','zero','zero','numeral','صفر','f9194e73f9e9459e3450ea10a179cdf77aafa695beecd3b9344a98d111622243','nova/audio/words/en-fa/84/zero-062f29561e6f.mp3',975);
 
 INSERT INTO nova_word_audio_exclusions (word_key,lemma,display_form,part_of_speech,translation,text_sha256) VALUES
+('f019d8e86e29a3e86586b614d5fc946835a46b7dc058ef8506b5615724294e68','Are there two chairs?','Are there two chairs?','phrase','دو صندلی وجود دارد؟','5d560c9e6be589dda016c81075a4422a0d2dce393a54cb4623ed58e047986146'),
 ('f37f63e2e3ce472b68a253f008d3f7be289fbffda17661876a7c47740021416e','Are you from London?','Are you from London?','phrase','تو اهل لندن هستی؟','a8cfdb71869956728cfded22891bd16467181bd6d342037e4bd96a262bc2eda9'),
 ('213dbd21e3d732d0a484449f5fe5a2dc44f9f5107debf14e29535f23d0847919','Bye for now!','Bye for now!','phrase','فعلا خداحافظ!','57ab71dcb79904419832f8d4c8810b99b79d9bc2af94a733c1fdd2a57d47f874'),
 ('6c4ee38fc45011af0d75cad5f5f252d91a8170250d459805d30c7f20c42c78b3','Can you say that again?','Can you say that again?','phrase','می‌تونی دوباره بگی؟','165c88e60f99892e51901991bb5dce7634b2474555d57f0df6f588e13db95ab2'),
@@ -207,6 +211,8 @@ INSERT INTO nova_word_audio_exclusions (word_key,lemma,display_form,part_of_spee
 ('79ee47677b9287f7f24b88b2eaaf98b6862cf7628cadf8b77b15e87ca8f362ee','Sorry, can you say that again?','Sorry, can you say that again?','phrase','ببخشید، می‌تونی دوباره بگی؟','11d091d2f54d0cec6a1b4efd8f979e5380682de5500ced67331177bac9655dfa'),
 ('003824973d8767c88207383cb18444d6019c1a72004d9e94c32c63157bed38e6','The key is on the table.','The key is on the table.','phrase','کلید روی میز است.','94d56a1bacc73b77d54cbe9ff9afed6f1f12b160967bcc0ead5a7e24a63a304c'),
 ('d7ce3036ddfb387814a8d620173336b52808c63a46b5c00c09aeab69bbe7782c','The key is under the chair.','The key is under the chair.','phrase','کلید زیر صندلی است.','ea08fce3c64b8f122d829482fdc4eea0e8fb0a2011fa0e4d50c5d19f0ad17895'),
+('ac2f480877660e66bc301395771668e5cdfee489ad4fe2943b13d16870e2c5cb','There are two windows.','There are two windows.','phrase','دو پنجره وجود دارد.','c2ce90dcb06d986234970af332eda77f51f43f86995e1594e8c77832cf42bc94'),
+('e460a5846cc63c5b707638520c12bb5f5233ada825f978d7e6f56eff09f20ce4','There is one door.','There is one door.','phrase','یک در وجود دارد.','dbb8824226a38282d8da9f3917f4fb02042da010835db316deb6986e8938e0c1'),
 ('54cdceafe91602ece073c009508efa89713ee441dc8cf43577d7eec2a058ef59','This is a bed.','This is a bed.','phrase','این یک تخت است.','d61bd9d40d8ef205c4947e700065700e502110de7957a96b767ce7c8d01490ba'),
 ('815d5e425f4514021ba50a209924130b8d0aa646a001dc77974bfdec5fe98f2a','This is a chair.','This is a chair.','phrase','این یک صندلی است.','0a6df2b59a1dadebb12e667428ce8c8d5fe6409529f76314a26c60f58d66f761'),
 ('c6fd6ea352c21fa35121c7f77f914df42c59da7fa93f97789b5ad2445454979c','This is a lamp.','This is a lamp.','phrase','این یک چراغ است.','461f02ff71d38311e48cea90c12c5527de35d03c58549cf89a6bf8e4e10c09d6'),
@@ -225,7 +231,8 @@ INSERT INTO nova_word_audio_exclusions (word_key,lemma,display_form,part_of_spee
 ('b0353fe12185be3a7e3903c8ad33f010ab54f01c1e4cdcbe740c80ecd8f0da4a','Yes, I have a table.','Yes, I have a table.','phrase','بله، من میز دارم.','8757e781898b2c177366edd714fddfddd36d75cc600ec0b384163bda880c68ca'),
 ('2f28d070bd9000d9e3362040e7a42e0c4f19fc89411b1907b94fa7f91236806c','Yes, I speak a little English.','Yes, I speak a little English.','phrase','بله، من کمی انگلیسی صحبت می‌کنم.','fbcaa9506988ae6a2a08203299108d1ec94055cd9ec4b1f1d1c97ec3f5c35ffa'),
 ('abcbe34accf61bac5d49b10f374dec93d3424118e824ee44914cc46c0262db88','Yes, I''m Iranian.','Yes, I''m Iranian.','phrase','بله، من ایرانی هستم.','cb27a343e5199c79b1a22ee236b6df25df7960a5a2f34d1e5351b5e7edd7ebb7'),
-('b9be459b46076f19bf1d9ea396321ec548a70ddfebcd1d702501c12562009d30','Yes, Mina.','Yes, Mina.','phrase','بله، مینا.','68082b613e502a457bcdc6b5309ac444ff6b1e90d9cde45d8c5d3d4a41c1b7d6');
+('b9be459b46076f19bf1d9ea396321ec548a70ddfebcd1d702501c12562009d30','Yes, Mina.','Yes, Mina.','phrase','بله، مینا.','68082b613e502a457bcdc6b5309ac444ff6b1e90d9cde45d8c5d3d4a41c1b7d6'),
+('1b4dc7d2892e050eb28d02a9733b40d1d3136f67d7e132e6b476b25445cb8cfb','Yes, there are two chairs.','Yes, there are two chairs.','phrase','بله، دو صندلی وجود دارد.','fb35d94d7ea93900487ce74c5a724323b0ab394c4c138aa569ee165d70433964');
 
 DROP PROCEDURE IF EXISTS apply_nova_word_audio;
 DELIMITER $$
