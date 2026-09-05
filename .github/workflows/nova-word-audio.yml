@@ -82,6 +82,10 @@ jobs:
         continue-on-error: true
         run: python nova/tts/nova_word_tts.py generate --yes --after-series
 
+      - name: Verify Word audio eligibility
+        if: always()
+        run: python nova/tts/nova_word_tts.py verify-manifest
+
       - name: Commit resumable Word audio, manifest, and update SQL
         if: always() && (github.event_name == 'push' || inputs.mode != 'plan')
         run: |
@@ -102,8 +106,19 @@ jobs:
             echo "No Word TTS files changed."
           else
             git commit -m "Generate Nova word audio"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            for attempt in 1 2 3 4 5
+            do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              if [ "$attempt" -eq 5 ]; then
+                echo "Word audio push failed after 5 fast-forward retries."
+                exit 1
+              fi
+              sleep $((attempt * 2))
+            done
           fi
 
       - name: Fail after preserving resumable Word progress

@@ -69,6 +69,14 @@ WORD_VOICE_SETTINGS = {
     "speed": WORD_SPEED,
 }
 
+# `words` also stores lesson-level phrase targets. Word pronunciation audio is
+# intentionally narrower: ordinary lexical entries plus short, unpunctuated
+# chunks. Complete sentences already have Turn audio and must not be billed or
+# published a second time as Word audio.
+MAX_SHORT_PHRASE_TOKENS = 3
+MAX_SHORT_PHRASE_CHARACTERS = 48
+SENTENCE_END_RE = re.compile(r"[.!?…][\"'»”’)]*$")
+
 COURSE_SLUG = COURSE.replace("-", "_")
 VOICE_CONFIG_PATH = SCRIPT_DIR / ("word_voice.json" if COURSE == "de-fa" else f"word_voice_{COURSE_SLUG}.json")
 MANIFEST_PATH = AUDIO_DIR / "word_manifest.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "word_manifest.json"
@@ -117,6 +125,37 @@ def word_fingerprint(*, text: str, voice_id: str) -> str:
         separators=(",", ":"),
     )
     return sha256_text(canonical)
+
+
+def phrase_token_count(value: str) -> int:
+    return len([token for token in re.split(r"\s+", value.strip()) if token])
+
+
+def word_audio_exclusion_reason(row: dict[str, Any]) -> str | None:
+    if str(row["part_of_speech"]).strip().casefold() != "phrase":
+        return None
+    text = str(row["display_form"]).strip()
+    if SENTENCE_END_RE.search(text):
+        return "sentence-ending punctuation"
+    if phrase_token_count(text) > MAX_SHORT_PHRASE_TOKENS:
+        return f"more than {MAX_SHORT_PHRASE_TOKENS} tokens"
+    if len(text) > MAX_SHORT_PHRASE_CHARACTERS:
+        return f"more than {MAX_SHORT_PHRASE_CHARACTERS} characters"
+    return None
+
+
+def is_word_audio_eligible(row: dict[str, Any]) -> bool:
+    return word_audio_exclusion_reason(row) is None
+
+
+def partition_word_audio_rows(
+    rows: Iterable[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    eligible: list[dict[str, Any]] = []
+    excluded: list[dict[str, Any]] = []
+    for row in rows:
+        (eligible if is_word_audio_eligible(row) else excluded).append(row)
+    return eligible, excluded
 
 
 def compact_voice_metadata(voice: dict[str, Any]) -> dict[str, Any]:
@@ -363,6 +402,59 @@ def load_manifest() -> dict[str, Any]:
     return manifest
 
 
+def _manifest_audio_path(entry: dict[str, Any]) -> Path:
+    relative = Path(str(entry.get("path") or ""))
+    target = (REPO_ROOT / relative).resolve()
+    allowed_root = (REPO_ROOT / "nova" / "audio" / "words" / COURSE).resolve()
+    if target == allowed_root or allowed_root not in target.parents:
+        raise NovaTtsError(
+            f"Refusing to remove Word audio outside {allowed_root}: {relative}"
+        )
+    return target
+
+
+def prune_ineligible_manifest_entries(
+    rows: list[dict[str, Any]], manifest: dict[str, Any]
+) -> list[dict[str, Any]]:
+    eligible, _ = partition_word_audio_rows(rows)
+    eligible_keys = {str(row["key"]) for row in eligible}
+    removed: list[dict[str, Any]] = []
+    for key in list(manifest["entries"]):
+        if key in eligible_keys:
+            continue
+        entry = manifest["entries"].pop(key)
+        target = _manifest_audio_path(entry)
+        if target.is_file():
+            target.unlink()
+        elif target.exists():
+            raise NovaTtsError(f"Word audio path is not a regular file: {target}")
+        removed.append(entry)
+    if removed:
+        manifest["updated_at"] = utc_now()
+        manifest["entries"] = dict(
+            sorted(manifest["entries"].items(), key=lambda item: word_sort_key(item[1]))
+        )
+        write_json_atomic(MANIFEST_PATH, manifest)
+    return removed
+
+
+def verify_manifest_eligibility(
+    rows: list[dict[str, Any]], manifest: dict[str, Any]
+) -> None:
+    eligible, _ = partition_word_audio_rows(rows)
+    eligible_keys = {str(row["key"]) for row in eligible}
+    invalid = [
+        entry
+        for key, entry in manifest["entries"].items()
+        if key not in eligible_keys
+    ]
+    if invalid:
+        examples = ", ".join(repr(entry.get("display_form")) for entry in invalid[:5])
+        raise NovaTtsError(
+            f"Word manifest contains {len(invalid)} ineligible or stale entries: {examples}"
+        )
+
+
 def is_initialized(config: dict[str, Any], manifest: dict[str, Any]) -> bool:
     return bool(
         config.get("voice_id")
@@ -377,7 +469,8 @@ def build_tasks(
     validate_word_voice(config, require_assigned=True)
     voice_id = str(config["voice_id"])
     tasks: list[dict[str, Any]] = []
-    for row in rows:
+    eligible_rows, _ = partition_word_audio_rows(rows)
+    for row in eligible_rows:
         text = str(row["display_form"])
         fingerprint = word_fingerprint(text=text, voice_id=voice_id)
         filename = f"{word_slug(text)}-{fingerprint[:12]}.mp3"
@@ -418,8 +511,11 @@ def print_plan(
     config: dict[str, Any],
 ) -> None:
     source_files = len({str(row["source_file"]) for row in rows})
+    eligible_rows, excluded_rows = partition_word_audio_rows(rows)
     print(f"Repository chapter SQL files: {source_files:,}")
     print(f"Unique repository words: {len(rows):,}")
+    print(f"Word-audio-eligible rows: {len(eligible_rows):,}")
+    print(f"Sentence-like phrase rows excluded from Word audio: {len(excluded_rows):,}")
     print(f"Word voice: {config.get('voice_name') or LORI_REQUESTED_NAME}")
     if tasks is None:
         if config.get("voice_id"):
@@ -428,10 +524,10 @@ def print_plan(
             print("Lori is awaiting validated assignment in ElevenLabs.")
         print(
             "Billable text characters after voice assignment: "
-            f"{sum(len(str(row['display_form'])) for row in rows):,}"
+            f"{sum(len(str(row['display_form'])) for row in eligible_rows):,}"
         )
         return
-    print(f"Up-to-date word audio files: {len(rows) - len(tasks):,}")
+    print(f"Up-to-date word audio files: {len(eligible_rows) - len(tasks):,}")
     print(f"Word audio files to generate: {len(tasks):,}")
     print(
         f"Billable text characters: {sum(len(str(task['text'])) for task in tasks):,}"
@@ -454,6 +550,17 @@ def command_plan() -> None:
         print_plan(rows, None, config)
         return
     print_plan(rows, build_tasks(rows, config, load_manifest()), config)
+
+
+def command_verify_manifest() -> None:
+    rows = load_source_words()
+    manifest = load_manifest()
+    verify_manifest_eligibility(rows, manifest)
+    eligible, excluded = partition_word_audio_rows(rows)
+    print(
+        f"Word manifest eligibility passed: {len(manifest['entries']):,} entries; "
+        f"{len(eligible):,} eligible source rows; {len(excluded):,} sentence-like phrases excluded."
+    )
 
 
 def synthesize_word(
@@ -528,13 +635,30 @@ def command_generate(
         return
     validate_word_voice(config, require_assigned=True)
     rows = load_source_words()
+    eligible_rows, excluded_rows = partition_word_audio_rows(rows)
+    pruned_entries = prune_ineligible_manifest_entries(rows, manifest)
+    cleanup_by_key = {str(row["key"]): row for row in excluded_rows}
+    for entry in pruned_entries:
+        cleanup_by_key.setdefault(str(entry["key"]), entry)
+    cleanup_rows = list(cleanup_by_key.values())
     tasks = build_tasks(rows, config, manifest)
     if limit is not None:
         tasks = tasks[:limit]
     print_plan(rows, tasks, config)
     if not tasks:
-        if manifest["entries"]:
-            write_update_sql(manifest)
+        if manifest["entries"] or cleanup_rows:
+            write_update_sql(manifest, excluded_rows=cleanup_rows)
+        report = {
+            "generated_at": utc_now(),
+            "requested": 0,
+            "completed": 0,
+            "failed": 0,
+            "failures": [],
+            "eligible_source_rows": len(eligible_rows),
+            "excluded_source_rows": len(excluded_rows),
+            "pruned_manifest_entries": len(pruned_entries),
+        }
+        write_json_atomic(REPORT_PATH, report)
         print("Nothing to generate.")
         return
     if not yes:
@@ -583,13 +707,17 @@ def command_generate(
         sorted(manifest["entries"].items(), key=lambda item: word_sort_key(item[1]))
     )
     write_json_atomic(MANIFEST_PATH, manifest)
-    write_update_sql(manifest)
+    verify_manifest_eligibility(rows, manifest)
+    write_update_sql(manifest, excluded_rows=cleanup_rows)
     report = {
         "generated_at": utc_now(),
         "requested": len(tasks),
         "completed": completed,
         "failed": len(failures),
         "failures": failures,
+        "eligible_source_rows": len(eligible_rows),
+        "excluded_source_rows": len(excluded_rows),
+        "pruned_manifest_entries": len(pruned_entries),
     }
     write_json_atomic(REPORT_PATH, report)
     print(f"Completed: {completed:,}; failed: {len(failures):,}.")
@@ -600,10 +728,13 @@ def command_generate(
 
 
 def render_update_sql(
-    entries: Iterable[dict[str, Any]], url_prefix: str | None = None
+    entries: Iterable[dict[str, Any]],
+    url_prefix: str | None = None,
+    excluded_entries: Iterable[dict[str, Any]] = (),
 ) -> str:
     ordered = sorted(entries, key=word_sort_key)
-    if not ordered:
+    excluded = sorted(excluded_entries, key=word_sort_key)
+    if not ordered and not excluded:
         raise NovaTtsError("The word audio manifest is empty.")
     lines = [
         "-- Generated by nova/tts/nova_word_tts.py. Do not edit by hand.",
@@ -620,6 +751,15 @@ def render_update_sql(
         "  text_sha256 CHAR(64) NOT NULL,",
         "  audio_url VARCHAR(1024) NOT NULL,",
         "  audio_duration_ms INT UNSIGNED NOT NULL",
+        ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;",
+        "DROP TEMPORARY TABLE IF EXISTS nova_word_audio_exclusions;",
+        "CREATE TEMPORARY TABLE nova_word_audio_exclusions (",
+        "  word_key CHAR(64) NOT NULL PRIMARY KEY,",
+        "  lemma VARCHAR(180) NOT NULL,",
+        "  display_form VARCHAR(180) NOT NULL,",
+        "  part_of_speech VARCHAR(48) NOT NULL,",
+        "  translation VARCHAR(255) NOT NULL,",
+        "  text_sha256 CHAR(64) NOT NULL",
         ") ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;",
         "",
     ]
@@ -650,6 +790,30 @@ def render_update_sql(
             )
         lines.append(",\n".join(values) + ";")
         lines.append("")
+    for start in range(0, len(excluded), 250):
+        chunk = excluded[start : start + 250]
+        lines.append(
+            "INSERT INTO nova_word_audio_exclusions "
+            "(word_key,lemma,display_form,part_of_speech,translation,text_sha256) VALUES"
+        )
+        values = []
+        for entry in chunk:
+            values.append(
+                "("
+                + ",".join(
+                    [
+                        sql_quote(str(entry["key"])),
+                        sql_quote(str(entry["lemma"])),
+                        sql_quote(str(entry["display_form"])),
+                        sql_quote(str(entry["part_of_speech"])),
+                        sql_quote(str(entry["translation"])),
+                        sql_quote(sha256_text(str(entry["display_form"]))),
+                    ]
+                )
+                + ")"
+            )
+        lines.append(",\n".join(values) + ";")
+        lines.append("")
     lines.extend(
         [
             "DROP PROCEDURE IF EXISTS apply_nova_word_audio;",
@@ -660,6 +824,9 @@ def render_update_sql(
             "  DECLARE v_expected INT UNSIGNED DEFAULT 0;",
             "  DECLARE v_invalid INT UNSIGNED DEFAULT 0;",
             "  DECLARE v_changed INT UNSIGNED DEFAULT 0;",
+            "  DECLARE v_excluded_expected INT UNSIGNED DEFAULT 0;",
+            "  DECLARE v_excluded_invalid INT UNSIGNED DEFAULT 0;",
+            "  DECLARE v_cleared INT UNSIGNED DEFAULT 0;",
             "  DECLARE EXIT HANDLER FOR SQLEXCEPTION",
             "  BEGIN",
             "    ROLLBACK;",
@@ -692,7 +859,40 @@ def render_update_sql(
             "      SET MESSAGE_TEXT='Audio update aborted: one or more Word locators did not match exactly once.';",
             "  END IF;",
             "",
+            "  SELECT COUNT(*) INTO v_excluded_expected FROM nova_word_audio_exclusions;",
+            "  SELECT COUNT(*) INTO v_excluded_invalid",
+            "  FROM (",
+            "    SELECT x.word_key,COUNT(w.id) AS matched_rows",
+            "    FROM nova_word_audio_exclusions AS x",
+            "    LEFT JOIN words AS w",
+            "      ON w.course_id=v_course",
+            "     AND BINARY w.lemma=BINARY x.lemma",
+            "     AND BINARY w.display_form=BINARY x.display_form",
+            "     AND BINARY w.part_of_speech=BINARY x.part_of_speech",
+            "     AND BINARY w.translation=BINARY x.translation",
+            "     AND SHA2(w.display_form,256)=x.text_sha256",
+            "    GROUP BY x.word_key",
+            "    HAVING COUNT(w.id)<>1",
+            "  ) AS invalid_exclusions;",
+            "  IF v_excluded_invalid<>0 THEN",
+            "    SIGNAL SQLSTATE '45000'",
+            "      SET MESSAGE_TEXT='Audio cleanup aborted: one or more excluded Word locators did not match exactly once.';",
+            "  END IF;",
+            "",
             "  START TRANSACTION;",
+            "  UPDATE words AS w",
+            "  JOIN nova_word_audio_exclusions AS x",
+            "    ON BINARY x.lemma=BINARY w.lemma",
+            "   AND BINARY x.display_form=BINARY w.display_form",
+            "   AND BINARY x.part_of_speech=BINARY w.part_of_speech",
+            "   AND BINARY x.translation=BINARY w.translation",
+            "   AND x.text_sha256=SHA2(w.display_form,256)",
+            "  SET w.audio_url=NULL,",
+            "      w.audio_duration_ms=NULL",
+            "  WHERE w.course_id=v_course",
+            "    AND (w.audio_url IS NOT NULL OR w.audio_duration_ms IS NOT NULL);",
+            "  SET v_cleared=ROW_COUNT();",
+            "",
             "  UPDATE words AS w",
             "  JOIN nova_word_audio_updates AS u",
             "    ON BINARY u.lemma=BINARY w.lemma",
@@ -705,12 +905,14 @@ def render_update_sql(
             "  WHERE w.course_id=v_course;",
             "  SET v_changed=ROW_COUNT();",
             "  COMMIT;",
-            "  SELECT v_expected AS verified_words, v_changed AS changed_words;",
+            "  SELECT v_expected AS verified_words, v_changed AS changed_words,",
+            "         v_excluded_expected AS excluded_words, v_cleared AS cleared_words;",
             "END$$",
             "DELIMITER ;",
             "CALL apply_nova_word_audio();",
             "DROP PROCEDURE IF EXISTS apply_nova_word_audio;",
             "DROP TEMPORARY TABLE IF EXISTS nova_word_audio_updates;",
+            "DROP TEMPORARY TABLE IF EXISTS nova_word_audio_exclusions;",
             "",
         ]
     )
@@ -718,16 +920,24 @@ def render_update_sql(
 
 
 def write_update_sql(
-    manifest: dict[str, Any], url_prefix: str | None = None
+    manifest: dict[str, Any],
+    url_prefix: str | None = None,
+    excluded_rows: Iterable[dict[str, Any]] = (),
 ) -> None:
     entries = list(manifest["entries"].values())
-    sql = render_update_sql(entries, url_prefix)
+    excluded = list(excluded_rows)
+    sql = render_update_sql(entries, url_prefix, excluded)
     write_text_atomic(SQL_PATH, sql)
-    print(f"Wrote {len(entries):,} guarded Word updates to {SQL_PATH}.")
+    print(
+        f"Wrote {len(entries):,} guarded Word updates and {len(excluded):,} "
+        f"guarded exclusions to {SQL_PATH}."
+    )
 
 
 def command_export_sql(url_prefix: str | None) -> None:
-    write_update_sql(load_manifest(), url_prefix)
+    rows = load_source_words()
+    _, excluded_rows = partition_word_audio_rows(rows)
+    write_update_sql(load_manifest(), url_prefix, excluded_rows)
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -745,6 +955,10 @@ def build_parser() -> argparse.ArgumentParser:
     )
     subparsers.add_parser(
         "plan", description="Inspect words and estimate missing audio generation."
+    )
+    subparsers.add_parser(
+        "verify-manifest",
+        description="Reject sentence-like phrase or stale entries in the Word manifest.",
     )
 
     generate = subparsers.add_parser(
@@ -778,6 +992,8 @@ def main() -> int:
             command_validate_sources()
         elif args.command == "plan":
             command_plan()
+        elif args.command == "verify-manifest":
+            command_verify_manifest()
         elif args.command == "generate":
             command_generate(
                 yes=args.yes,

@@ -11,6 +11,7 @@
     "export course-scoped update_turn_audio.sql and update_word_audio.sql",
     "run source validation and dry plan",
     "run pronunciation QA samples before paid generation",
+    "exclude sentence-like phrase rows from Word audio and use Turn audio for complete sentences",
     "confirm 100 percent Turn and Word coverage before course completion"
   ],
   "learning_language": "en",
@@ -43,6 +44,9 @@
     "voice_id": "TbMNBJ27fH2U0VgpSNko",
     "voice_name": "Lori - Happy, Sweet and Compassionate",
     "voice_config_path": "nova/tts/word_voice_en_fa.json",
+    "coverage_denominator": "all word-audio-eligible rows only",
+    "complete_sentence_audio_source": "turn_audio_only",
+    "sentence_like_phrase_policy_source": "nova/plans/audio_production_policy.json",
     "first_run": "verify pinned Lori metadata for English, run sample check, then generate missing Word audio"
   },
   "concurrent_content_generation_allowed": true,
@@ -57,5 +61,5 @@
     "dry_source_validation_before_generation": true,
     "paid_generation_only_after_validation": true
   },
-  "updated_at": "2026-09-05T12:57:42.744Z"
+  "updated_at": "2026-09-05T16:36:00Z"
 }

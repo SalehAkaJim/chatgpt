@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "project": "Nova",
   "provider": "elevenlabs",
   "content_engine_revision": "v9.0",
@@ -11,6 +11,7 @@
     "course_may_not_be_marked_complete_until_audio_catches_up": true,
     "turn_audio_coverage_required_percent": 100,
     "word_audio_coverage_required_percent": 100,
+    "word_audio_coverage_denominator": "all word-audio-eligible rows only",
     "failed_audio_must_be_resumable_and_retried": true,
     "update_sql_required": true,
     "manifest_required": true
@@ -34,7 +35,16 @@
     "output_format": "mp3_44100_64",
     "voice_name": "Lori - Happy, Sweet and Compassionate",
     "voice_id": "TbMNBJ27fH2U0VgpSNko",
-    "single_voice_for_all_words_and_phrases": true,
+    "single_voice_for_all_eligible_words_and_short_phrases": true,
+    "complete_sentence_audio_source": "turn_audio_only",
+    "sentence_like_phrase_policy": {
+      "part_of_speech": "phrase",
+      "exclude_if_sentence_ending_punctuation": true,
+      "exclude_if_token_count_greater_than": 3,
+      "exclude_if_character_count_greater_than": 48,
+      "manifest_entries_for_excluded_rows_allowed": false,
+      "database_audio_fields_for_excluded_rows": null
+    },
     "language_support_must_be_verified_before_course_activation": true,
     "current_verified_queue_languages": {
       "de": true,
@@ -70,6 +80,7 @@
     "create a course-specific turn voice map",
     "verify every selected turn voice for the target language",
     "verify Lori pronunciation for the target language",
+    "verify that sentence-like phrase rows are excluded from Word audio",
     "verify repository paths, manifests and SQL exporters are course-scoped",
     "run dry-run source validation before paid generation"
   ],
@@ -91,7 +102,7 @@
     },
     "status": "caught_up"
   },
-  "updated_at": "2026-09-05T13:11:59.630Z",
+  "updated_at": "2026-09-05T16:36:00Z",
   "authorization": "explicit_user_requirement",
   "concurrent_courses": {
     "enabled": true,

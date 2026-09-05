@@ -1,0 +1,50 @@
+{
+  "project": "Nova",
+  "audit": "word_audio_sentence_filter",
+  "version": 1,
+  "status": "PASS",
+  "database_revision": "v9.0",
+  "schema_changes": false,
+  "policy": {
+    "ordinary_lexical_rows": "eligible",
+    "short_phrase_max_tokens": 3,
+    "short_phrase_max_characters": 48,
+    "sentence_ending_punctuation_allowed_for_word_audio": false,
+    "complete_sentence_audio_source": "Turn Audio",
+    "word_audio_voice": "Lori"
+  },
+  "cleanup": {
+    "de-fa": {
+      "manifest_entries_before": 729,
+      "eligible_entries_after": 530,
+      "sentence_like_entries_removed": 199,
+      "approved_short_phrase_entries_kept": 5,
+      "database_cleanup_rows_in_update_sql": 199
+    },
+    "en-fa": {
+      "manifest_entries_before": 72,
+      "eligible_entries_after": 44,
+      "sentence_like_entries_removed": 28,
+      "approved_short_phrase_entries_kept": 2,
+      "database_cleanup_rows_in_update_sql": 28
+    },
+    "audio_files_removed": 227,
+    "turn_audio_modified": false,
+    "course_content_sql_modified": false
+  },
+  "qa": {
+    "word_tts_python_compile": "PASS",
+    "word_tts_regression_tests": {
+      "passed": 23,
+      "skipped": 1,
+      "failed": 0,
+      "skip_reason": "canonical archive was not materialized in the local pre-commit checkout"
+    },
+    "workflow_yaml_parse": "PASS",
+    "manifest_ineligible_entries_after_cleanup": 0,
+    "update_sql_changes_only_word_audio_fields": true,
+    "exact_locator_guards_required_before_database_cleanup": true,
+    "fast_forward_push_retries": 5
+  },
+  "generated_at": "2026-09-05T16:36:00Z"
+}
