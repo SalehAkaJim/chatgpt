@@ -4,9 +4,14 @@
   "course": "de-fa",
   "expected_next_series": 97,
   "last_successful_series": 96,
-  "lease": null,
+  "lease": {
+    "run_id": "nova-de-fa-20260905T190211837Z-s097",
+    "acquired_at": "2026-09-05T19:02:11.837Z",
+    "expires_at": "2026-09-05T19:52:11.837Z",
+    "base_head": "4e5c0777850cad219e8433027f63e25aea361b44"
+  },
   "lease_timeout_minutes": 50,
-  "state": "unlocked",
-  "updated_at": "2026-09-05T18:16:00.547Z",
+  "state": "locked",
+  "updated_at": "2026-09-05T19:02:11.837Z",
   "version": 1
 }
