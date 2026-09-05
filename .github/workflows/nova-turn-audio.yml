@@ -18,6 +18,7 @@ on:
     paths:
       - "nova/archive/series_001_080_fixed/extracted/*series*_v9*.sql"
       - "nova/staging/**/chapter.sql"
+      - "nova/tts/run-initial.txt"
 
 permissions:
   contents: write
