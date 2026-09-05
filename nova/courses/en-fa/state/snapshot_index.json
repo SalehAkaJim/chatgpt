@@ -10,14 +10,14 @@
     0
   ],
   "counts": {
-    "words": 0,
-    "explicit_targets": 0,
+    "words": 15,
+    "explicit_targets": 4,
     "characters": 12,
-    "storylines": 0
+    "storylines": 1
   },
   "next_level": "Start",
   "next_database_level_code": "ST",
-  "next_series": 1,
+  "next_series": 2,
   "production_status": "generating_concurrent",
   "state_files": [
     "characters.json",
@@ -28,12 +28,16 @@
   "audio": {
     "turn_manifest": "../../../audio/en-fa/turn_manifest.json",
     "word_manifest": "../../../audio/en-fa/word_manifest.json",
-    "status": "awaiting_first_chapter"
+    "status": "chapter_committed_audio_pending"
   },
   "isolation": {
     "root": "nova/courses/en-fa",
     "shared_mutable_state": false,
     "run_control": "../run_control.json"
   },
-  "updated_at": "2026-09-05T12:57:42.744Z"
+  "updated_at": "2026-09-05T13:40:00.000Z",
+  "staged_series": [
+    1,
+    1
+  ]
 }

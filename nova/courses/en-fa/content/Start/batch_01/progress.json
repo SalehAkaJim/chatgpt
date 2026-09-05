@@ -11,14 +11,14 @@
     1,
     8
   ],
-  "status": "ready",
+  "status": "in_progress",
   "published": false,
   "chapters": [
     {
       "chapter": 1,
       "series": 1,
       "title": "Hello! I'm Mina",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 2,
@@ -65,8 +65,8 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_01_series_001",
+  "next_action": "generate_and_qa_chapter_02_series_002",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-05T12:57:42.744Z"
+  "updated_at": "2026-09-05T13:40:00.000Z"
 }
