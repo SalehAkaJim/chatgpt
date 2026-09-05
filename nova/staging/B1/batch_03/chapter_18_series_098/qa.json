@@ -1,0 +1,112 @@
+{
+  "project": "Nova",
+  "course": "de-fa",
+  "level": "B1",
+  "module": 4,
+  "chapter": 18,
+  "series": 98,
+  "title": "Obwohl es spät ist, fahren wir weiter",
+  "database_revision": "v9.0",
+  "status": "PASS",
+  "generated_at": "2026-09-05T21:02:24.851Z",
+  "checks": {
+    "activity_source_integrity": true,
+    "archive_integrity": true,
+    "batch_cross_chapter_duplicate_target_audit": true,
+    "chapter_empty_guard": true,
+    "clickable_token_coverage_100_percent": true,
+    "dependency_audit": true,
+    "distractor_quality": true,
+    "duplicate_lesson_words_audit": true,
+    "forbidden_schema_ddl_absent": true,
+    "four_lessons": true,
+    "german_naturalness_and_b1_level": true,
+    "learner_speech_target_coverage_100_percent": true,
+    "lemma_first_morphology": true,
+    "level_progression_audit": true,
+    "literal_surface_token_count_equal": true,
+    "exact_sentence_reconstruction": true,
+    "persian_translation_and_orthography": true,
+    "reading_has_task": true,
+    "status_enum_audit": true,
+    "storyline_continuity": true,
+    "token_dictionary_mapping_100_percent": true,
+    "token_object_contract_v9_0": true,
+    "two_characters_per_lesson": true,
+    "v9_0_schema_compatibility": true,
+    "word_audio_eligibility_policy_v4": true,
+    "word_manifest_zero_ineligible_entries": true
+  },
+  "counts": {
+    "activities": 32,
+    "characters": 2,
+    "explicit_targets": 4,
+    "learner_turns": 12,
+    "lesson_words": 144,
+    "lessons": 4,
+    "new_word_tuples": 21,
+    "storyline_orders": 4,
+    "tokens": 177,
+    "turns": 24
+  },
+  "explicit_targets": [
+    {
+      "lemma": "Obwohl es spät ist, fahren wir weiter.",
+      "part_of_speech": "phrase",
+      "translation": "با اینکه دیر است، به مسیر ادامه می‌دهیم."
+    },
+    {
+      "lemma": "Obwohl wir müde sind, bleiben wir aufmerksam.",
+      "part_of_speech": "phrase",
+      "translation": "با اینکه خسته‌ایم، هوشیار می‌مانیم."
+    },
+    {
+      "lemma": "Obwohl die Umsteigezeit kurz ist, schaffen wir das.",
+      "part_of_speech": "phrase",
+      "translation": "با اینکه زمان تعویض قطار کوتاه است، از پسش برمی‌آییم."
+    },
+    {
+      "lemma": "Obwohl es spät ist, fahren wir weiter.",
+      "part_of_speech": "phrase",
+      "translation": "با اینکه دیر است، به مسیر ادامه می‌دهیم."
+    }
+  ],
+  "storyline": {
+    "key": "lena-ben-b1-travel-problems",
+    "orders": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "characters": [
+      "Ben",
+      "Lena"
+    ]
+  },
+  "source": {
+    "main_head": "e9f8f74dd9186dbc29af5698dceabbfcecbd6966",
+    "sql": "chapter.sql",
+    "sql_bytes": 118558,
+    "sql_lines": 688,
+    "sql_sha256": "53ca1c7a64df1cb7c1b0a63b0283c75be57713a3618c6a3a1c1c85f1635b1ab9",
+    "canonical_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+  },
+  "schema_changes": false,
+  "errors": [],
+  "warnings": [],
+  "word_audio_eligibility": {
+    "policy_version": 4,
+    "eligible_denominator": "word-audio-eligible rows only",
+    "new_phrase_targets_eligible": 0,
+    "new_phrase_targets_excluded": 4,
+    "current_manifest_ineligible_entries": 0
+  },
+  "verification": {
+    "mode": "static_content_and_transactional_sql_audit",
+    "runtime_guards_embedded": true,
+    "literal_surface_reconstruction": true,
+    "live_mysql_execution": "not_performed"
+  }
+}

@@ -19,7 +19,7 @@
   },
   "content_freeze": false,
   "next_level": "B1",
-  "next_series": 98,
+  "next_series": 99,
   "database_files": [
     "../database/reset_all_v9.sql",
     "../database/schema_v9.sql",
@@ -82,9 +82,18 @@
       "status": "PASS",
       "sql": "nova/staging/B1/batch_03/chapter_17_series_097/chapter.sql",
       "qa": "nova/staging/B1/batch_03/chapter_17_series_097/qa.json"
+    },
+    {
+      "level": "B1",
+      "batch": 3,
+      "chapter": 18,
+      "series": 98,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_18_series_098/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_18_series_098/qa.json"
     }
   ],
-  "updated_at": "2026-09-05T19:11:12.339Z",
+  "updated_at": "2026-09-05T21:02:24.851Z",
   "published_batches": [
     {
       "level": "B1",

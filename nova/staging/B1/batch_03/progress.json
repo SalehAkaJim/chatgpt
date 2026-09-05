@@ -19,11 +19,18 @@
       "title": "Wir wissen nicht, ob wir weiterfahren können",
       "status": "PASS",
       "qa": "chapter_17_series_097/qa.json"
+    },
+    {
+      "chapter": 18,
+      "series": 98,
+      "title": "Obwohl es spät ist, fahren wir weiter",
+      "status": "PASS",
+      "qa": "chapter_18_series_098/qa.json"
     }
   ],
   "failed_chapters": [],
-  "next_pending_chapter": 18,
-  "next_pending_series": 98,
+  "next_pending_chapter": 19,
+  "next_pending_series": 99,
   "cross_chapter_qa": "not_ready",
   "batch_artifact": "nova/content/B1/batch_03_chapters_17_24.sql",
   "batch_publish_condition": "all chapters 17-24 PASS and cross-chapter QA PASS",
@@ -31,9 +38,9 @@
   "canonical_database_revision": "v9.0",
   "schema_changes_allowed": false,
   "last_completed_atomic_unit": {
-    "chapter": 17,
-    "series": 97,
+    "chapter": 18,
+    "series": 98,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T19:11:12.339Z"
+  "updated_at": "2026-09-05T21:02:24.851Z"
 }
