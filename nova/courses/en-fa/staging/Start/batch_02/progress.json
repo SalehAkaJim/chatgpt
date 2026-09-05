@@ -23,21 +23,31 @@
       "database_revision": "v9.0",
       "sql_sha256": "ba30f06f123f7ae9d8b2fb12aa9c00938eb5f7df562ea99e265f14ecd259a720",
       "source_head": "04ce5249f25a5a6b32ee8eb9f7dd2fabf90472eb"
+    },
+    {
+      "chapter": 10,
+      "series": 10,
+      "status": "PASS",
+      "sql": "nova/courses/en-fa/staging/Start/batch_02/chapter_10_series_010/chapter.sql",
+      "qa": "nova/courses/en-fa/staging/Start/batch_02/chapter_10_series_010/qa.json",
+      "database_revision": "v9.0",
+      "sql_sha256": "406ff8fe6df04771cd6f70452637aaf7612543145cd3c11585ef9c9381b4e723",
+      "source_head": "9eab25b401ee13f9153741f55574b432ee2b071d"
     }
   ],
   "failed_chapters": [],
-  "next_pending_chapter": 10,
-  "next_pending_series": 10,
+  "next_pending_chapter": 11,
+  "next_pending_series": 11,
   "cross_chapter_qa": "not_ready",
   "batch_artifact": "nova/courses/en-fa/content/Start/batch_02_chapters_09_16.sql",
   "batch_publish_condition": "all chapters 9-16 PASS and cross-chapter QA PASS",
   "status": "in_progress",
   "canonical_database_revision": "v9.0",
   "schema_changes_allowed": false,
-  "updated_at": "2026-09-05T17:39:00.000Z",
+  "updated_at": "2026-09-05T17:41:17.000Z",
   "last_completed_atomic_unit": {
-    "chapter": 9,
-    "series": 9,
+    "chapter": 10,
+    "series": 10,
     "status": "PASS"
   }
 }
