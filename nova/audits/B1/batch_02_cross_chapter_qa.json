@@ -1,0 +1,99 @@
+{
+  "artifact": {
+    "bytes": 1013684,
+    "path": "nova/content/B1/batch_02_chapters_09_16.sql",
+    "sha256": "d3269e028aa4df47f1e67c503e8c566ee808809f6aaca540cabc9ed80153c3ce"
+  },
+  "batch": 2,
+  "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+  "chapter_range": [
+    9,
+    16
+  ],
+  "checks": {
+    "all_eight_chapter_qa_pass": true,
+    "canonical_archive_consistent": true,
+    "chapter_contiguous": true,
+    "database_revision_exact": true,
+    "explicit_targets_unique": true,
+    "lesson_counts_complete": true,
+    "level_progression": true,
+    "new_word_insert_tuples_unique": true,
+    "repeated_insert_declarations_guarded": true,
+    "schema_ddl_absent": true,
+    "series_contiguous": true,
+    "storyline_continuity": true,
+    "word_audio_eligibility_policy_v4": true,
+    "word_manifest_zero_ineligible_entries": true
+  },
+  "counts": {
+    "activities": 256,
+    "chapters": 8,
+    "explicit_targets": 32,
+    "lessons": 32,
+    "new_word_tuples": 265,
+    "tokens": 1363,
+    "turns": 192
+  },
+  "course": "de-fa",
+  "database_revision": "v9.0",
+  "errors": [],
+  "generated_at": "2026-09-05T18:13:25.982Z",
+  "level": "B1",
+  "project": "Nova",
+  "series_range": [
+    89,
+    96
+  ],
+  "source_main_head": "f1ab49224b0a4fd49ee2f2f2fc32d3f4ee7fe4b2",
+  "status": "PASS",
+  "storylines": [
+    {
+      "key": "anna-martin-b1-project",
+      "lessons": 8,
+      "orders": [
+        13,
+        20
+      ],
+      "series": [
+        89,
+        90
+      ]
+    },
+    {
+      "key": "anna-jonas-b1-neighborhood",
+      "lessons": 20,
+      "orders": [
+        1,
+        20
+      ],
+      "series": [
+        91,
+        95
+      ]
+    },
+    {
+      "key": "lena-ben-b1-travel-problems",
+      "lessons": 4,
+      "orders": [
+        1,
+        4
+      ],
+      "series": [
+        96,
+        96
+      ]
+    }
+  ],
+  "tuple_reconciliation": {
+    "canonical_translation": "خطا / اشتباه",
+    "key": "Fehler|noun",
+    "reconciled_series": 90,
+    "source_series": 89
+  },
+  "verification": {
+    "all_chapter_runtime_guards_embedded": true,
+    "live_mysql_execution": "not_performed",
+    "mode": "static_cross_chapter_and_transactional_sql_audit"
+  }
+}

@@ -9,17 +9,17 @@
   ],
   "series_range": [
     1,
-    88
+    96
   ],
   "counts": {
-    "words": 587,
-    "explicit_targets": 275,
+    "words": 852,
+    "explicit_targets": 307,
     "characters": 24,
-    "storylines": 53
+    "storylines": 55
   },
   "content_freeze": false,
   "next_level": "B1",
-  "next_series": 96,
+  "next_series": 97,
   "database_files": [
     "../database/reset_all_v9.sql",
     "../database/schema_v9.sql",
@@ -50,7 +50,8 @@
     "words_state_08.json",
     "words_state_09.json",
     "words_state_10.json",
-    "words_state_11.json"
+    "words_state_11.json",
+    "words_state_12.json"
   ],
   "resume_contract": {
     "github_is_source_of_truth_for_future_generation": true,
@@ -72,11 +73,8 @@
     "status": "not_changed_by_repository_commit",
     "note": "Repository restoration does not alter the Liara MySQL database."
   },
-  "staged_series": [
-    89,
-    95
-  ],
-  "updated_at": "2026-09-05T18:03:45.389Z",
+  "staged_series": [],
+  "updated_at": "2026-09-05T18:13:25.982Z",
   "published_batches": [
     {
       "level": "B1",
@@ -87,6 +85,17 @@
       ],
       "artifact": "../content/B1/batch_01_chapters_01_08.sql",
       "qa": "../audits/B1/batch_01_cross_chapter_qa.json",
+      "status": "PASS"
+    },
+    {
+      "level": "B1",
+      "batch": 2,
+      "series_range": [
+        89,
+        96
+      ],
+      "artifact": "../content/B1/batch_02_chapters_09_16.sql",
+      "qa": "../audits/B1/batch_02_cross_chapter_qa.json",
       "status": "PASS"
     }
   ],
@@ -108,9 +117,9 @@
   "audio_policy_file": "../plans/audio_production_policy.json",
   "audio_checkpoint": {
     "turn_audio_entries": 1738,
-    "word_audio_entries": 617,
-    "through_series": 89,
-    "status": "caught_up"
+    "word_audio_entries": 606,
+    "through_series": 95,
+    "status": "pending_series_096_audio"
   },
   "next_course_plan": {
     "course": "en-fa",

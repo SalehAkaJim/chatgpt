@@ -1,0 +1,75 @@
+{
+  "level": "B1",
+  "batch": 3,
+  "chapter_range": [
+    17,
+    24
+  ],
+  "series_range": [
+    97,
+    104
+  ],
+  "status": "in_progress",
+  "published": false,
+  "chapters": [
+    {
+      "chapter": 17,
+      "series": 97,
+      "title": "Wir wissen nicht, ob wir weiterfahren können",
+      "status": "pending"
+    },
+    {
+      "chapter": 18,
+      "series": 98,
+      "title": "Obwohl es spät ist, fahren wir weiter",
+      "status": "planned"
+    },
+    {
+      "chapter": 19,
+      "series": 99,
+      "title": "Wir hätten lieber eine direkte Verbindung",
+      "status": "planned"
+    },
+    {
+      "chapter": 20,
+      "series": 100,
+      "title": "Am Ende sind wir doch angekommen",
+      "status": "planned"
+    },
+    {
+      "chapter": 21,
+      "series": 101,
+      "title": "Ich fühle mich seit ein paar Tagen müde",
+      "status": "planned"
+    },
+    {
+      "chapter": 22,
+      "series": 102,
+      "title": "Der Arzt hat gesagt, dass ich mich ausruhen soll",
+      "status": "planned"
+    },
+    {
+      "chapter": 23,
+      "series": 103,
+      "title": "Wenn es nicht besser wird, komme ich wieder",
+      "status": "planned"
+    },
+    {
+      "chapter": 24,
+      "series": 104,
+      "title": "Ich sollte mehr schlafen",
+      "status": "planned"
+    }
+  ],
+  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
+  "cross_chapter_qa_status": "not_ready",
+  "next_action": "generate_and_qa_chapter_17_series_097",
+  "database_revision": "v9.0",
+  "generation_cadence": "hourly",
+  "last_completed_atomic_unit": {
+    "chapter": 16,
+    "series": 96,
+    "status": "PASS"
+  },
+  "updated_at": "2026-09-05T18:13:25.982Z"
+}

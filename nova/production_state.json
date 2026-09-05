@@ -4,9 +4,9 @@
   "schema_version": "v9",
   "database_revision": "v9.0",
   "last_completed_level": "A2",
-  "last_completed_series": 88,
+  "last_completed_series": 96,
   "next_level": "B1",
-  "next_series": 89,
+  "next_series": 97,
   "content_status": "generating",
   "content_freeze": {
     "enabled": false,
@@ -24,16 +24,16 @@
   "current_work": {
     "phase": "B1_content_generation",
     "level": "B1",
-    "batch": 2,
+    "batch": 3,
     "batch_chapter_range": [
-      9,
-      16
+      17,
+      24
     ],
-    "last_qa_passed_chapter": 15,
-    "last_qa_passed_series": 95,
-    "pending_chapter": 16,
-    "pending_series": 96,
-    "status": "series_095_qa_passed_staged",
+    "last_qa_passed_chapter": 16,
+    "last_qa_passed_series": 96,
+    "pending_chapter": 17,
+    "pending_series": 97,
+    "status": "batch_02_published_cross_qa_passed",
     "retry_policy": "generate_against_exact_canonical_v9_0_only"
   },
   "database": {
@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T18:03:45.389Z",
+  "updated_at": "2026-09-05T18:13:25.982Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -66,7 +66,7 @@
     "source_of_truth": "github_main",
     "required_database_revision": "v9.0",
     "schema_changes_allowed": false,
-    "next_series": 96,
+    "next_series": 97,
     "advance_state_only_after_full_batch_qa_pass": true,
     "execution_mode": "strictly_sequential",
     "reread_github_state_between_chapters": true,
@@ -112,18 +112,18 @@
     "turn_audio": {
       "manifest": "nova/audio/manifest.json",
       "entries": 1738,
-      "through_series": 89,
+      "through_series": 95,
       "last_run_failed": 0
     },
     "word_audio": {
       "manifest": "nova/audio/word_manifest.json",
-      "entries": 617,
-      "through_series": 89,
+      "entries": 606,
+      "through_series": 95,
       "last_run_failed": 0,
       "voice": "Lori",
       "voice_id": "TbMNBJ27fH2U0VgpSNko"
     },
-    "status": "pending_series_095_audio",
+    "status": "pending_series_096_audio",
     "future_courses_require_language_specific_preflight": true
   },
   "state_scope": "de-fa-exclusive-legacy",

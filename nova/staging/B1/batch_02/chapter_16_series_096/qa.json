@@ -1,10 +1,9 @@
 {
-  "chapter": 10,
+  "chapter": 16,
   "checks": {
     "activity_source_integrity": true,
     "archive_integrity": true,
     "batch_cross_chapter_duplicate_target_audit": true,
-    "canonical_tuple_reconciliation": true,
     "chapter_empty_guard": true,
     "clickable_token_coverage_100_percent": true,
     "dependency_audit": true,
@@ -23,18 +22,20 @@
     "token_dictionary_mapping_100_percent": true,
     "token_object_contract_v9_0": true,
     "two_characters_per_lesson": true,
-    "v9_0_schema_compatibility": true
+    "v9_0_schema_compatibility": true,
+    "word_audio_eligibility_policy_v4": true,
+    "word_manifest_zero_ineligible_entries": true
   },
   "counts": {
     "activities": 32,
     "characters": 2,
     "explicit_targets": 4,
     "learner_turns": 12,
-    "lesson_words": 128,
+    "lesson_words": 146,
     "lessons": 4,
-    "new_word_tuples": 42,
+    "new_word_tuples": 36,
     "storyline_orders": 4,
-    "tokens": 171,
+    "tokens": 170,
     "turns": 24
   },
   "course": "de-fa",
@@ -42,62 +43,67 @@
   "errors": [],
   "explicit_targets": [
     {
-      "lemma": "Bevor wir das tun, sichere ich noch eine Kopie.",
+      "lemma": "Unser Zug ist ausgefallen.",
       "part_of_speech": "phrase",
-      "translation": "پیش از اینکه این کار رو بکنیم، یک نسخه دیگه ذخیره می کنم."
+      "translation": "قطار ما لغو شده است."
     },
     {
-      "lemma": "Wenn wir das dokumentieren, passiert der Fehler nicht wieder.",
+      "lemma": "Dann könnten wir über Frankfurt weiterfahren.",
       "part_of_speech": "phrase",
-      "translation": "اگه این رو مستند کنیم، خطا دوباره پیش نمیاد."
+      "translation": "پس می‌توانیم از مسیر فرانکفورت ادامه بدهیم."
     },
     {
-      "lemma": "Sobald du die Nachricht geschickt hast, schicke ich sie ab.",
+      "lemma": "Ich weiß nicht, ob der Anschluss pünktlich abfährt.",
       "part_of_speech": "phrase",
-      "translation": "همین که پیام رو فرستادی، من فایل رو ارسال می کنم."
+      "translation": "نمی‌دانم قطار بعدی سر وقت حرکت می‌کند یا نه."
     },
     {
-      "lemma": "Wir haben das Problem gelöst.",
+      "lemma": "Obwohl unser erster Zug ausgefallen ist, kommen wir heute noch an.",
       "part_of_speech": "phrase",
-      "translation": "مشکل رو حل کردیم."
+      "translation": "با اینکه قطار اولمان لغو شده، امروز می‌رسیم."
     }
   ],
-  "generated_at": "2026-09-05T18:11:10.628Z",
+  "generated_at": "2026-09-05T18:09:04.033Z",
   "level": "B1",
-  "module": 2,
+  "module": 4,
   "project": "Nova",
   "schema_changes": false,
-  "series": 90,
+  "series": 96,
   "source": {
     "canonical_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
     "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
     "main_head": "f1ab49224b0a4fd49ee2f2f2fc32d3f4ee7fe4b2",
     "sql": "chapter.sql",
-    "sql_bytes": 121672,
-    "sql_lines": 817,
-    "sql_sha256": "44029c4c9223a5ce53bf9c5d957ee51b6617654497c58efca2b99dc4ff6e5be3"
+    "sql_bytes": 130403,
+    "sql_lines": 804,
+    "sql_sha256": "ddd5afe4478e5b876181aac089aecfaaec515ad5fd63bd6d450b4b3f2a24e952"
   },
   "status": "PASS",
   "storyline": {
     "characters": [
-      "Martin",
-      "Anna"
+      "Ben",
+      "Lena"
     ],
-    "key": "anna-martin-b1-project",
+    "key": "lena-ben-b1-travel-problems",
     "orders": [
-      17,
-      18,
-      19,
-      20
+      1,
+      2,
+      3,
+      4
     ]
   },
-  "title": "Wir haben das Problem gelöst",
+  "title": "Unser Zug ist ausgefallen",
   "verification": {
     "live_mysql_execution": "not_performed",
     "mode": "static_content_and_transactional_sql_audit",
     "runtime_guards_embedded": true
   },
-  "warnings": [
-    "Reconciled Fehler|noun to the first canonical Batch 02 tuple translation: خطا / اشتباه."
-  ]
+  "warnings": [],
+  "word_audio_eligibility": {
+    "current_manifest_ineligible_entries": 0,
+    "eligible_denominator": "word-audio-eligible rows only",
+    "new_phrase_targets_eligible": 0,
+    "new_phrase_targets_excluded": 4,
+    "policy_version": 4
+  }
 }

@@ -9,67 +9,67 @@
     89,
     96
   ],
-  "status": "in_progress",
-  "published": false,
+  "status": "published",
+  "published": true,
   "chapters": [
     {
       "chapter": 9,
       "series": 89,
       "title": "Wenn du willst, helfe ich dir",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 10,
       "series": 90,
       "title": "Wir haben das Problem gelöst",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 11,
       "series": 91,
       "title": "Der Nachbar, der oben wohnt",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 12,
       "series": 92,
       "title": "Seit wir hier wohnen, ist es ruhiger",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 13,
       "series": 93,
       "title": "Könnten Sie bitte leiser sein?",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 14,
       "series": 94,
       "title": "Die Heizung wird morgen repariert",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 15,
       "series": 95,
       "title": "Jetzt ist alles wieder in Ordnung",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 16,
       "series": 96,
       "title": "Unser Zug ist ausgefallen",
-      "status": "pending"
+      "status": "published"
     }
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
-  "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_16_series_096",
+  "cross_chapter_qa_status": "PASS",
+  "next_action": "generate_and_qa_chapter_17_series_097",
   "database_revision": "v9.0",
   "generation_cadence": "hourly",
   "last_completed_atomic_unit": {
-    "chapter": 15,
-    "series": 95,
+    "chapter": 16,
+    "series": 96,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T18:03:45.389Z"
+  "updated_at": "2026-09-05T18:13:25.982Z"
 }
