@@ -1,41 +1,35 @@
 {
-  "project": "Nova",
-  "course": "en-fa",
-  "schema_version": "v9",
-  "database_revision": "v9.0",
-  "snapshot_purpose": "course-scoped generation resume state",
-  "completed_levels": [],
-  "series_range": [
-    1,
-    16
-  ],
-  "counts": {
-    "words": 177,
-    "explicit_targets": 64,
-    "characters": 12,
-    "storylines": 7
-  },
-  "next_level": "Start",
-  "next_database_level_code": "ST",
-  "next_series": 17,
-  "production_status": "generating_concurrent",
-  "state_files": [
-    "characters.json",
-    "storylines.json",
-    "words_state_01.json"
-  ],
-  "curriculum": "../../../plans/en_fa_curriculum_master_plan_v9.json",
   "audio": {
+    "status": "incremental_generation_pending_or_in_progress",
     "turn_manifest": "../../../audio/en-fa/turn_manifest.json",
-    "word_manifest": "../../../audio/en-fa/word_manifest.json",
-    "status": "incremental_generation_pending_or_in_progress"
+    "word_manifest": "../../../audio/en-fa/word_manifest.json"
   },
+  "completed_levels": [],
+  "counts": {
+    "characters": 12,
+    "explicit_targets": 68,
+    "storylines": 7,
+    "words": 185
+  },
+  "course": "en-fa",
+  "curriculum": "../../../plans/en_fa_curriculum_master_plan_v9.json",
+  "database_revision": "v9.0",
   "isolation": {
     "root": "nova/courses/en-fa",
-    "shared_mutable_state": false,
-    "run_control": "../run_control.json"
+    "run_control": "../run_control.json",
+    "shared_mutable_state": false
   },
-  "updated_at": "2026-09-05T20:46:33.000Z",
+  "next_database_level_code": "ST",
+  "next_level": "Start",
+  "next_series": 18,
+  "production_status": "generating_concurrent",
+  "project": "Nova",
+  "schema_version": "v9",
+  "series_range": [
+    1,
+    17
+  ],
+  "snapshot_purpose": "course-scoped generation resume state",
   "staged_series": [
     1,
     2,
@@ -52,6 +46,13 @@
     13,
     14,
     15,
-    16
-  ]
+    16,
+    17
+  ],
+  "state_files": [
+    "characters.json",
+    "storylines.json",
+    "words_state_01.json"
+  ],
+  "updated_at": "2026-09-05T21:35:44.000Z"
 }

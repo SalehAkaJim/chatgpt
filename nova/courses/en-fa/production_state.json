@@ -1,17 +1,56 @@
 {
-  "project": "Nova",
-  "course": "en-fa",
-  "schema_version": "v9",
-  "database_revision": "v9.0",
-  "state_scope": "en-fa-exclusive",
-  "status": "generating_concurrent",
+  "audio": {
+    "required_for_completion": true,
+    "status": "incremental_generation_pending_or_in_progress",
+    "turn_manifest": "nova/audio/en-fa/turn_manifest.json",
+    "turn_voice_map": "nova/tts/voice_map_en_fa.json",
+    "word_manifest": "nova/audio/en-fa/word_manifest.json",
+    "word_voice": "nova/tts/word_voice_en_fa.json"
+  },
+  "authorization": "explicit_user_concurrent_activation",
+  "automation": {
+    "cadence": "hourly",
+    "commit_each_chapter_after_qa_pass": true,
+    "execution_mode": "strictly_sequential",
+    "max_chapters_per_run": 2,
+    "minute": 59,
+    "next_series": 18,
+    "run_control": "nova/courses/en-fa/run_control.json",
+    "stop_remaining_run_on_failure": true
+  },
   "content_started": true,
+  "course": "en-fa",
+  "current_work": {
+    "batch": 3,
+    "batch_chapter_range": [
+      17,
+      24
+    ],
+    "database_level_code": "ST",
+    "last_qa_passed_chapter": 17,
+    "last_qa_passed_series": 17,
+    "level": "Start",
+    "module": 4,
+    "pending_chapter": 18,
+    "pending_series": 18,
+    "phase": "Start_content_generation",
+    "status": "series_017_qa_passed_staged"
+  },
+  "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+  "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
+  "database_revision": "v9.0",
   "last_completed_level": null,
   "last_completed_series": 16,
-  "next_level": "Start",
-  "next_database_level_code": "ST",
-  "next_series": 17,
   "level_model": {
+    "database_codes": {
+      "Advanced": "AD",
+      "Confident": "CF",
+      "Everyday": "ED",
+      "Independent": "IN",
+      "Mastery": "MA",
+      "Start": "ST"
+    },
+    "final_level": "Mastery",
     "levels": [
       "Start",
       "Everyday",
@@ -19,61 +58,22 @@
       "Confident",
       "Advanced",
       "Mastery"
-    ],
-    "database_codes": {
-      "Start": "ST",
-      "Everyday": "ED",
-      "Independent": "IN",
-      "Confident": "CF",
-      "Advanced": "AD",
-      "Mastery": "MA"
-    },
-    "final_level": "Mastery"
+    ]
   },
-  "current_work": {
-    "phase": "Start_content_generation",
-    "level": "Start",
-    "database_level_code": "ST",
-    "module": 4,
-    "batch": 3,
-    "batch_chapter_range": [
-      17,
-      24
-    ],
-    "last_qa_passed_chapter": 16,
-    "last_qa_passed_series": 16,
-    "pending_chapter": 17,
-    "pending_series": 17,
-    "status": "batch_02_published_series_009_016"
-  },
+  "next_database_level_code": "ST",
+  "next_level": "Start",
+  "next_series": 17,
   "paths": {
+    "audio": "nova/audio/en-fa",
+    "audits": "nova/courses/en-fa/audits",
+    "content": "nova/courses/en-fa/content",
     "root": "nova/courses/en-fa",
     "staging": "nova/courses/en-fa/staging",
-    "content": "nova/courses/en-fa/content",
-    "audits": "nova/courses/en-fa/audits",
-    "state": "nova/courses/en-fa/state",
-    "audio": "nova/audio/en-fa"
+    "state": "nova/courses/en-fa/state"
   },
-  "automation": {
-    "cadence": "hourly",
-    "minute": 59,
-    "max_chapters_per_run": 2,
-    "execution_mode": "strictly_sequential",
-    "commit_each_chapter_after_qa_pass": true,
-    "stop_remaining_run_on_failure": true,
-    "run_control": "nova/courses/en-fa/run_control.json",
-    "next_series": 17
-  },
-  "audio": {
-    "required_for_completion": true,
-    "status": "incremental_generation_pending_or_in_progress",
-    "turn_manifest": "nova/audio/en-fa/turn_manifest.json",
-    "word_manifest": "nova/audio/en-fa/word_manifest.json",
-    "turn_voice_map": "nova/tts/voice_map_en_fa.json",
-    "word_voice": "nova/tts/word_voice_en_fa.json"
-  },
-  "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
-  "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
-  "updated_at": "2026-09-05T20:46:33.000Z",
-  "authorization": "explicit_user_concurrent_activation"
+  "project": "Nova",
+  "schema_version": "v9",
+  "state_scope": "en-fa-exclusive",
+  "status": "generating_concurrent",
+  "updated_at": "2026-09-05T21:35:44.000Z"
 }

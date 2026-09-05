@@ -18,7 +18,7 @@
       "chapter": 17,
       "series": 17,
       "title": "Where is my key?",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 18,
@@ -65,9 +65,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_17_series_017",
+  "next_action": "generate_and_qa_chapter_18_series_018",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-05T20:46:33.000Z",
-  "last_completed_atomic_unit": null
+  "updated_at": "2026-09-05T21:35:44.000Z",
+  "last_completed_atomic_unit": {
+    "chapter": 17,
+    "series": 17,
+    "status": "PASS"
+  }
 }
