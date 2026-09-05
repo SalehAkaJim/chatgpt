@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "project": "Nova",
   "purpose": "ordered multi-course content production queue",
   "base_language": {
@@ -39,7 +39,7 @@
       "course_key": "en-fa",
       "name": "English",
       "name_fa": "انگلیسی",
-      "status": "queued",
+      "status": "in_progress_concurrent",
       "level_model": {
         "name": "Nova English six-level model",
         "levels": [
@@ -63,7 +63,13 @@
       ],
       "planned_chapters": 240,
       "planned_lessons": 960,
-      "planned_batch_files": 30
+      "planned_batch_files": 30,
+      "current_level": "Start",
+      "current_database_level_code": "ST",
+      "next_series": 1,
+      "isolated_root": "nova/courses/en-fa",
+      "content_started": false,
+      "activation_authorization": "explicit_user_authorization_after_isolation"
     },
     {
       "order": 2,
@@ -124,7 +130,10 @@
     "max_chapters_per_run": 2,
     "execution_mode": "strictly_sequential",
     "qa_and_commit_each_chapter_before_next": true,
-    "stop_remaining_run_on_failure": true
+    "stop_remaining_run_on_failure": true,
+    "concurrent_courses": 2,
+    "course_state_isolated": true,
+    "offset_minutes": 30
   },
   "preparation_policy": {
     "prepare_next_level_curriculum_when_remaining_chapters_lte": 8,
@@ -152,7 +161,14 @@
     "require_audio_update_sql": true
   },
   "queue_open_for_future_append": true,
-  "updated_at": "2026-09-05T12:44:44.703Z",
+  "updated_at": "2026-09-05T12:57:42.744Z",
   "authorization": "explicit_user_order",
-  "audio_policy_file": "nova/plans/audio_production_policy.json"
+  "audio_policy_file": "nova/plans/audio_production_policy.json",
+  "production_mode": "isolated_concurrent_courses",
+  "max_concurrent_courses": 2,
+  "active_courses": [
+    "de-fa",
+    "en-fa"
+  ],
+  "shared_mutable_state_allowed": false
 }

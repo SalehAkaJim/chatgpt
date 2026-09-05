@@ -1,0 +1,346 @@
+{
+  "version": 2,
+  "provider": "elevenlabs",
+  "model_id": "eleven_multilingual_v2",
+  "course": "en-fa",
+  "language": "en",
+  "selection_policy": {
+    "hard_constraints": [
+      "character gender must exactly equal ElevenLabs voice gender",
+      "voice must be verified for English on eleven_multilingual_v2",
+      "source and assigned voice IDs must be unique per character"
+    ],
+    "soft_constraints": [
+      "occupational or story role",
+      "conversation use case",
+      "age category when suggested by the role",
+      "matching descriptive traits"
+    ],
+    "age_note": "Exact ages are not invented; age is never a hard fact.",
+    "minimum_score": 20
+  },
+  "voice_archetypes": {
+    "friendly_learner": {
+      "preferred_ages": [
+        "young",
+        "middle_aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "characters"
+      ],
+      "traits": [
+        "friendly",
+        "warm",
+        "natural",
+        "clear"
+      ]
+    },
+    "everyday_adult": {
+      "preferred_ages": [
+        "young",
+        "middle_aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "characters"
+      ],
+      "traits": [
+        "natural",
+        "friendly",
+        "warm",
+        "grounded"
+      ]
+    },
+    "professional": {
+      "preferred_ages": [
+        "young",
+        "middle_aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "informative",
+        "educational"
+      ],
+      "traits": [
+        "clear",
+        "professional",
+        "confident",
+        "natural"
+      ]
+    },
+    "customer_service": {
+      "preferred_ages": [
+        "young",
+        "middle_aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "characters"
+      ],
+      "traits": [
+        "friendly",
+        "helpful",
+        "clear",
+        "warm"
+      ]
+    },
+    "medical": {
+      "preferred_ages": [
+        "middle_aged",
+        "old"
+      ],
+      "use_cases": [
+        "informative",
+        "educational",
+        "conversational"
+      ],
+      "traits": [
+        "calm",
+        "reassuring",
+        "authoritative",
+        "clear"
+      ]
+    },
+    "leadership": {
+      "preferred_ages": [
+        "middle_aged",
+        "old"
+      ],
+      "use_cases": [
+        "professional",
+        "conversational",
+        "informative"
+      ],
+      "traits": [
+        "confident",
+        "authoritative",
+        "clear",
+        "professional"
+      ]
+    },
+    "skilled_trade": {
+      "preferred_ages": [
+        "middle_aged",
+        "old"
+      ],
+      "use_cases": [
+        "conversational",
+        "characters"
+      ],
+      "traits": [
+        "grounded",
+        "confident",
+        "clear",
+        "natural"
+      ]
+    }
+  },
+  "updated_at": null,
+  "characters": [
+    {
+      "name": "Mina",
+      "gender": "female",
+      "role": "language_learner",
+      "context": "starting English from absolute zero",
+      "introduced_series": 1,
+      "voice_archetype": "friendly_learner",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Noah",
+      "gender": "male",
+      "role": "friendly_neighbor",
+      "context": "simple everyday conversations",
+      "introduced_series": 1,
+      "voice_archetype": "everyday_adult",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Ava",
+      "gender": "female",
+      "role": "classmate",
+      "context": "practice and study situations",
+      "introduced_series": 3,
+      "voice_archetype": "friendly_learner",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Liam",
+      "gender": "male",
+      "role": "barista",
+      "context": "cafes and everyday service",
+      "introduced_series": 6,
+      "voice_archetype": "customer_service",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Maya",
+      "gender": "female",
+      "role": "teacher",
+      "context": "clear supportive explanations",
+      "introduced_series": 9,
+      "voice_archetype": "professional",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Ethan",
+      "gender": "male",
+      "role": "receptionist",
+      "context": "appointments and directions",
+      "introduced_series": 13,
+      "voice_archetype": "customer_service",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Chloe",
+      "gender": "female",
+      "role": "coworker",
+      "context": "friendly workplace conversations",
+      "introduced_series": 18,
+      "voice_archetype": "professional",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Daniel",
+      "gender": "male",
+      "role": "doctor",
+      "context": "health and wellbeing situations",
+      "introduced_series": 24,
+      "voice_archetype": "medical",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Grace",
+      "gender": "female",
+      "role": "manager",
+      "context": "workplace decisions and feedback",
+      "introduced_series": 42,
+      "voice_archetype": "leadership",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Leo",
+      "gender": "male",
+      "role": "traveler",
+      "context": "travel and intercultural situations",
+      "introduced_series": 51,
+      "voice_archetype": "everyday_adult",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Nora",
+      "gender": "female",
+      "role": "customer_service_agent",
+      "context": "help requests and problem solving",
+      "introduced_series": 67,
+      "voice_archetype": "customer_service",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Sam",
+      "gender": "male",
+      "role": "technician",
+      "context": "technology and practical troubleshooting",
+      "introduced_series": 83,
+      "voice_archetype": "skilled_trade",
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "public_owner_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    }
+  ]
+}

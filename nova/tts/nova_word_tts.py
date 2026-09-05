@@ -28,10 +28,14 @@ if str(CURRENT_DIR) not in sys.path:
 
 from nova_tts import (
     AUDIO_DIR,
+    BASE_LANGUAGE,
+    COURSE,
+    COURSE_AUDIO_DIR,
     MODEL_ID,
     OUTPUT_FORMAT,
     REPO_ROOT,
     SCRIPT_DIR,
+    TARGET_LANGUAGE,
     ElevenLabsClient,
     NovaTtsError,
     discover_source_files,
@@ -48,6 +52,7 @@ from nova_tts import (
     sql_quote,
     sql_unquote,
     utc_now,
+    voice_language_codes,
     write_json_atomic,
     write_text_atomic,
 )
@@ -64,10 +69,11 @@ WORD_VOICE_SETTINGS = {
     "speed": WORD_SPEED,
 }
 
-VOICE_CONFIG_PATH = SCRIPT_DIR / "word_voice.json"
-MANIFEST_PATH = AUDIO_DIR / "word_manifest.json"
-SQL_PATH = AUDIO_DIR / "update_word_audio.sql"
-REPORT_PATH = AUDIO_DIR / "last_word_generation_report.json"
+COURSE_SLUG = COURSE.replace("-", "_")
+VOICE_CONFIG_PATH = SCRIPT_DIR / ("word_voice.json" if COURSE == "de-fa" else f"word_voice_{COURSE_SLUG}.json")
+MANIFEST_PATH = AUDIO_DIR / "word_manifest.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "word_manifest.json"
+SQL_PATH = AUDIO_DIR / "update_word_audio.sql" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "update_word_audio.sql"
+REPORT_PATH = AUDIO_DIR / "last_word_generation_report.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "last_word_generation_report.json"
 
 
 def word_identity(row: dict[str, Any]) -> str:
@@ -169,6 +175,10 @@ def validate_word_voice(
         raise NovaTtsError("The assigned word voice is not auditable as Lori.")
     if str(metadata.get("gender") or "").casefold() != "female":
         raise NovaTtsError("The assigned Lori source voice is not female.")
+    if COURSE != "de-fa" and TARGET_LANGUAGE not in voice_language_codes(metadata):
+        raise NovaTtsError(
+            f"The assigned Lori source voice is not verified for {TARGET_LANGUAGE} on {MODEL_ID}."
+        )
 
 
 def find_lori_source(client: ElevenLabsClient) -> dict[str, Any]:
@@ -328,7 +338,7 @@ def new_manifest() -> dict[str, Any]:
         "asset_type": "word-pronunciation",
         "storage": "github-temporary",
         "path_mode": "repository-relative",
-        "course": "de-fa",
+        "course": COURSE,
         "source": "repository-sql-only",
         "provider": "elevenlabs",
         "model_id": MODEL_ID,
@@ -348,6 +358,8 @@ def load_manifest() -> dict[str, Any]:
         raise NovaTtsError(f"Unexpected asset type at {MANIFEST_PATH}.")
     if manifest.get("voice_source_id") != LORI_SOURCE_VOICE_ID:
         raise NovaTtsError("The word manifest was generated with a different voice.")
+    if manifest.get("course") != COURSE:
+        raise NovaTtsError(f"Word manifest course mismatch at {MANIFEST_PATH}.")
     return manifest
 
 
@@ -373,7 +385,7 @@ def build_tasks(
             Path("nova")
             / "audio"
             / "words"
-            / "de-fa"
+            / COURSE
             / str(row["key"])[:2]
             / filename
         )
@@ -655,9 +667,9 @@ def render_update_sql(
             "  END;",
             "",
             "  SELECT id INTO v_course FROM courses",
-            "  WHERE learning_language='de' AND base_language='fa' ORDER BY id LIMIT 1;",
+            f"  WHERE learning_language='{TARGET_LANGUAGE}' AND base_language='{BASE_LANGUAGE}' ORDER BY id LIMIT 1;",
             "  IF v_course IS NULL THEN",
-            "    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Nova de-fa course not found.';",
+            f"    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Nova {COURSE} course not found.';",
             "  END IF;",
             "",
             "  SELECT COUNT(*) INTO v_expected FROM nova_word_audio_updates;",

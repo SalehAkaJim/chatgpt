@@ -1,11 +1,13 @@
 {
   "activation_gate": {
-    "active_before_german_completion": false,
+    "active_before_german_completion": true,
     "requires_audio_preflight_pass": true,
     "requires_character_roster": true,
     "requires_curriculum_qa_pass": true,
-    "requires_de_fa_complete": true,
-    "requires_word_state_initialized": true
+    "requires_de_fa_complete": false,
+    "requires_word_state_initialized": true,
+    "concurrent_activation_authorized": true,
+    "authorization": "explicit_user_authorization_after_course_isolation"
   },
   "audio_contract": {
     "course_completion_requires_100_percent_audio_coverage": true,
@@ -566,7 +568,8 @@
         1,
         40
       ],
-      "status": "planned"
+      "status": "planned",
+      "database_level_code": "ST"
     },
     {
       "batch_boundaries": [
@@ -1072,7 +1075,8 @@
         41,
         80
       ],
-      "status": "planned"
+      "status": "planned",
+      "database_level_code": "ED"
     },
     {
       "batch_boundaries": [
@@ -1578,7 +1582,8 @@
         81,
         120
       ],
-      "status": "planned"
+      "status": "planned",
+      "database_level_code": "IN"
     },
     {
       "batch_boundaries": [
@@ -2084,7 +2089,8 @@
         121,
         160
       ],
-      "status": "planned"
+      "status": "planned",
+      "database_level_code": "CF"
     },
     {
       "batch_boundaries": [
@@ -2590,7 +2596,8 @@
         161,
         200
       ],
-      "status": "planned"
+      "status": "planned",
+      "database_level_code": "AD"
     },
     {
       "batch_boundaries": [
@@ -3096,7 +3103,8 @@
         201,
         240
       ],
-      "status": "planned"
+      "status": "planned",
+      "database_level_code": "MA"
     }
   ],
   "persian_speaker_priorities": [
@@ -3128,6 +3136,29 @@
   "status": "qa_passed_planned_waiting_for_de_fa_completion",
   "title": "English for Persian Speakers",
   "title_translation": "انگلیسی برای فارسی‌زبان‌ها",
-  "updated_at": "2026-09-05T12:42:52.855Z",
-  "version": 1
+  "updated_at": "2026-09-05T12:57:42.744Z",
+  "version": 1,
+  "database_level_codes": {
+    "Start": "ST",
+    "Everyday": "ED",
+    "Independent": "IN",
+    "Confident": "CF",
+    "Advanced": "AD",
+    "Mastery": "MA"
+  },
+  "database_compatibility": {
+    "revision": "v9.0",
+    "schema_change_required": false,
+    "storage_rule": "levels.cefr_level stores the short database code; levels.title stores the learner-facing level name",
+    "max_cefr_level_length": 8
+  },
+  "concurrent_production": {
+    "enabled": true,
+    "isolated_root": "nova/courses/en-fa",
+    "parallel_with": "de-fa",
+    "content_schedule_minute": 59,
+    "max_chapters_per_run": 2,
+    "commit_mode": "course-scoped optimistic compare-and-swap",
+    "shared_mutable_files_allowed": false
+  }
 }

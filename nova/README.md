@@ -69,7 +69,7 @@ Each language starts from absolute zero with an independently designed curriculu
 
 ## English master curriculum
 
-The English → Persian course is fully planned but remains queued until German passes its final content, batch, snapshot and audio gates. Its learner-facing levels are:
+The English → Persian course is fully planned and may run concurrently with German after the course-isolation contract passes. German keeps its legacy-exclusive paths; English writes only under `nova/courses/en-fa/` plus its own audio and TTS files. Its learner-facing levels are:
 
 1. Start (Series 001-040)
 2. Everyday (Series 041-080)
@@ -89,3 +89,11 @@ Machine-readable files:
 ## Audio production
 
 Turn audio and Word pronunciation are required for every course and are generated incrementally after each QA-passed chapter. Turn voices are distinct per character and verified for the target language. All dictionary Words and phrases use the pinned Lori voice (ID `TbMNBJ27fH2U0VgpSNko`) after language-specific pronunciation verification. Content generation may continue while audio jobs finish, but a course cannot be marked complete until both audio manifests reach 100% coverage and their update SQL files are ready. The machine-readable policy is `nova/plans/audio_production_policy.json`.
+
+## Concurrent course isolation
+
+German and English use two isolated content lanes on the same `main` branch. German retains the legacy Nova paths exclusively. English owns `nova/courses/en-fa/`, `nova/audio/en-fa/`, `nova/audio/turns/en-fa/`, `nova/audio/words/en-fa/`, and its two course-specific voice files. Course automations must not write the shared queue during a run and must use course-local leases plus fast-forward compare-and-swap commits.
+
+The unchanged v9.0 database stores short English level codes in `levels.cefr_level`: ST, ED, IN, CF, AD and MA. Learner-facing names remain Start, Everyday, Independent, Confident, Advanced and Mastery in `levels.title`.
+
+See `nova/plans/concurrent_course_isolation_v9.json` and `nova/audits/concurrent_course_isolation_qa.json`.

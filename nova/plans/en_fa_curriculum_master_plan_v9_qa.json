@@ -1,6 +1,6 @@
 {
   "artifact": "nova/plans/en_fa_curriculum_master_plan_v9.json",
-  "checked_at": "2026-09-05T12:42:52.855Z",
+  "checked_at": "2026-09-05T12:57:42.744Z",
   "checks": {
     "all_persian_titles_present": true,
     "audio_required": true,
@@ -9,13 +9,18 @@
     "five_chapters_per_module": true,
     "forty_chapters_per_level": true,
     "lori_pinned": true,
-    "no_active_english_content_before_turn": true,
     "sequential_series_001_240": true,
     "six_levels": true,
     "thirty_batch_files": true,
     "total_240_chapters": true,
     "total_960_lessons": true,
-    "unique_chapter_titles": true
+    "unique_chapter_titles": true,
+    "concurrent_activation_authorized": true,
+    "database_level_codes_unique": true,
+    "database_level_codes_fit_v9": true,
+    "learner_facing_names_preserved": true,
+    "course_namespace_isolated": true,
+    "audio_completion_gate_preserved": true
   },
   "counts": {
     "chapters": 240,
@@ -103,5 +108,13 @@
   ],
   "project": "Nova",
   "status": "PASS",
-  "warnings": []
+  "warnings": [],
+  "database_level_codes": {
+    "Start": "ST",
+    "Everyday": "ED",
+    "Independent": "IN",
+    "Confident": "CF",
+    "Advanced": "AD",
+    "Mastery": "MA"
+  }
 }

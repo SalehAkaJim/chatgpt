@@ -1,0 +1,78 @@
+{
+  "project": "Nova",
+  "course": "en-fa",
+  "schema_version": "v9",
+  "database_revision": "v9.0",
+  "state_scope": "en-fa-exclusive",
+  "status": "generating_concurrent",
+  "content_started": false,
+  "last_completed_level": null,
+  "last_completed_series": 0,
+  "next_level": "Start",
+  "next_database_level_code": "ST",
+  "next_series": 1,
+  "level_model": {
+    "levels": [
+      "Start",
+      "Everyday",
+      "Independent",
+      "Confident",
+      "Advanced",
+      "Mastery"
+    ],
+    "database_codes": {
+      "Start": "ST",
+      "Everyday": "ED",
+      "Independent": "IN",
+      "Confident": "CF",
+      "Advanced": "AD",
+      "Mastery": "MA"
+    },
+    "final_level": "Mastery"
+  },
+  "current_work": {
+    "phase": "Start_content_generation",
+    "level": "Start",
+    "database_level_code": "ST",
+    "module": 1,
+    "batch": 1,
+    "batch_chapter_range": [
+      1,
+      8
+    ],
+    "last_qa_passed_chapter": 0,
+    "last_qa_passed_series": 0,
+    "pending_chapter": 1,
+    "pending_series": 1,
+    "status": "ready_for_first_atomic_chapter"
+  },
+  "paths": {
+    "root": "nova/courses/en-fa",
+    "staging": "nova/courses/en-fa/staging",
+    "content": "nova/courses/en-fa/content",
+    "audits": "nova/courses/en-fa/audits",
+    "state": "nova/courses/en-fa/state",
+    "audio": "nova/audio/en-fa"
+  },
+  "automation": {
+    "cadence": "hourly",
+    "minute": 59,
+    "max_chapters_per_run": 2,
+    "execution_mode": "strictly_sequential",
+    "commit_each_chapter_after_qa_pass": true,
+    "stop_remaining_run_on_failure": true,
+    "run_control": "nova/courses/en-fa/run_control.json"
+  },
+  "audio": {
+    "required_for_completion": true,
+    "status": "implementation_ready_awaiting_first_chapter",
+    "turn_manifest": "nova/audio/en-fa/turn_manifest.json",
+    "word_manifest": "nova/audio/en-fa/word_manifest.json",
+    "turn_voice_map": "nova/tts/voice_map_en_fa.json",
+    "word_voice": "nova/tts/word_voice_en_fa.json"
+  },
+  "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+  "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
+  "updated_at": "2026-09-05T12:57:42.744Z",
+  "authorization": "explicit_user_concurrent_activation"
+}

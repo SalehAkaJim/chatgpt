@@ -1,0 +1,70 @@
+name: Nova English Turn Audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Run type
+        required: true
+        type: choice
+        default: plan
+        options: [plan, generate]
+  push:
+    branches: [main]
+    paths:
+      - "nova/courses/en-fa/staging/**/chapter.sql"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-en-fa-turn-audio
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      NOVA_COURSE: "en-fa"
+      NOVA_TTS_CONCURRENCY: "2"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run regression tests with canonical defaults
+        run: NOVA_COURSE=de-fa python -m unittest discover -s nova/tts/tests -v
+      - name: Validate English repository SQL sources
+        run: python nova/tts/nova_tts.py validate-sources
+      - name: Assign distinct English-verified voices
+        id: voices
+        if: github.event_name == 'push' || inputs.mode == 'generate'
+        continue-on-error: true
+        run: python nova/tts/nova_tts.py bootstrap-voices --yes
+      - name: Show English Turn generation plan
+        if: always()
+        run: python nova/tts/nova_tts.py plan
+      - name: Generate missing English Turn audio
+        id: audio
+        if: (github.event_name == 'push' || inputs.mode == 'generate') && steps.voices.outcome == 'success'
+        continue-on-error: true
+        run: python nova/tts/nova_tts.py generate --yes
+      - name: Commit only English Turn audio state
+        if: always() && (github.event_name == 'push' || inputs.mode == 'generate')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- nova/tts/voice_map_en_fa.json nova/audio/en-fa nova/audio/turns/en-fa
+          if git diff --cached --quiet; then
+            echo "No English Turn TTS files changed."
+          else
+            git commit -m "Generate Nova en-fa turn audio"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Fail after preserving resumable progress
+        if: always() && (steps.voices.outcome == 'failure' || steps.audio.outcome == 'failure')
+        run: exit 2

@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "course": "de-fa",
   "source_of_truth": "github",
   "database_revision": "v9.0",
@@ -93,7 +93,7 @@
     "active_course": "de-fa",
     "next_course": "en-fa",
     "base_language": "fa",
-    "transition_mode": "strictly_sequential_after_full_course_completion",
+    "transition_mode": "fill an available course slot only after explicit QA-approved course initialization",
     "prepare_next_curriculum_before_transition": true,
     "preparation_threshold_remaining_chapters": 8,
     "require_transition_gate": true,
@@ -104,7 +104,16 @@
     "next_course_plan_ready": true,
     "next_course_curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
     "next_course_curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
-    "next_course_audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json"
+    "next_course_audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json",
+    "mode": "isolated_parallel_width_2",
+    "max_active_courses": 2,
+    "active_courses": [
+      "de-fa",
+      "en-fa"
+    ],
+    "english_root": "nova/courses/en-fa",
+    "shared_mutable_state_allowed": false,
+    "course_local_compare_and_swap_required": true
   },
   "audio_generation": {
     "enabled": true,
@@ -118,5 +127,7 @@
     "word_voice_id": "TbMNBJ27fH2U0VgpSNko",
     "word_voice_name": "Lori",
     "language_specific_TTS_preflight_required": true
-  }
+  },
+  "state_scope": "de-fa-exclusive-legacy",
+  "updated_at": "2026-09-05T12:57:42.744Z"
 }

@@ -1,0 +1,39 @@
+{
+  "project": "Nova",
+  "course": "en-fa",
+  "schema_version": "v9",
+  "database_revision": "v9.0",
+  "snapshot_purpose": "course-scoped generation resume state",
+  "completed_levels": [],
+  "series_range": [
+    0,
+    0
+  ],
+  "counts": {
+    "words": 0,
+    "explicit_targets": 0,
+    "characters": 12,
+    "storylines": 0
+  },
+  "next_level": "Start",
+  "next_database_level_code": "ST",
+  "next_series": 1,
+  "production_status": "generating_concurrent",
+  "state_files": [
+    "characters.json",
+    "storylines.json",
+    "words_state_01.json"
+  ],
+  "curriculum": "../../../plans/en_fa_curriculum_master_plan_v9.json",
+  "audio": {
+    "turn_manifest": "../../../audio/en-fa/turn_manifest.json",
+    "word_manifest": "../../../audio/en-fa/word_manifest.json",
+    "status": "awaiting_first_chapter"
+  },
+  "isolation": {
+    "root": "nova/courses/en-fa",
+    "shared_mutable_state": false,
+    "run_control": "../run_control.json"
+  },
+  "updated_at": "2026-09-05T12:57:42.744Z"
+}

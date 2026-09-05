@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "project": "Nova",
   "provider": "elevenlabs",
   "content_engine_revision": "v9.0",
@@ -26,7 +26,8 @@
     "path_pattern": "nova/audio/turns/{course}/{level}/m{module}/c{chapter}/l{lesson}/t{turn}-{character}-{fingerprint}.mp3",
     "manifest_pattern": "nova/audio/{course}/turn_manifest.json",
     "german_legacy_manifest": "nova/audio/manifest.json",
-    "update_sql_pattern": "nova/audio/{course}/update_turn_audio.sql"
+    "update_sql_pattern": "nova/audio/{course}/update_turn_audio.sql",
+    "course_parameter_env": "NOVA_COURSE"
   },
   "word_audio": {
     "model_id": "eleven_multilingual_v2",
@@ -48,7 +49,8 @@
     "path_pattern": "nova/audio/words/{course}/{word-key-prefix}/{word}-{fingerprint}.mp3",
     "manifest_pattern": "nova/audio/{course}/word_manifest.json",
     "german_legacy_manifest": "nova/audio/word_manifest.json",
-    "update_sql_pattern": "nova/audio/{course}/update_word_audio.sql"
+    "update_sql_pattern": "nova/audio/{course}/update_word_audio.sql",
+    "course_parameter_env": "NOVA_COURSE"
   },
   "course_preflight": [
     "parameterize TTS source discovery by active course",
@@ -76,6 +78,15 @@
     },
     "status": "caught_up"
   },
-  "updated_at": "2026-09-05T12:30:51.603Z",
-  "authorization": "explicit_user_requirement"
+  "updated_at": "2026-09-05T12:57:42.744Z",
+  "authorization": "explicit_user_requirement",
+  "concurrent_courses": {
+    "enabled": true,
+    "max_active_courses": 2,
+    "isolation_contract": "nova/plans/concurrent_course_isolation_v9.json",
+    "content_roots": "nova/courses/{course}",
+    "mutable_state_must_be_course_scoped": true,
+    "audio_manifests_must_be_course_scoped": true,
+    "independent_workflow_concurrency_groups": true
+  }
 }

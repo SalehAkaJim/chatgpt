@@ -42,10 +42,18 @@ MIN_VOICE_MATCH_SCORE = 20
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[1]
-VOICE_MAP_PATH = SCRIPT_DIR / "voice_map.json"
+COURSE = os.environ.get("NOVA_COURSE", "de-fa").strip().casefold()
+if not re.fullmatch(r"[a-z]{2,3}-[a-z]{2,3}", COURSE):
+    raise RuntimeError("NOVA_COURSE must look like de-fa or en-fa.")
+TARGET_LANGUAGE, BASE_LANGUAGE = COURSE.split("-", 1)
+LANGUAGE_NAME = {"de": "German", "en": "English", "fr": "French", "it": "Italian", "ko": "Korean"}.get(TARGET_LANGUAGE, TARGET_LANGUAGE)
+COURSE_SLUG = COURSE.replace("-", "_")
 AUDIO_DIR = REPO_ROOT / "nova" / "audio"
-MANIFEST_PATH = AUDIO_DIR / "manifest.json"
-SQL_PATH = AUDIO_DIR / "update_turn_audio.sql"
+COURSE_AUDIO_DIR = AUDIO_DIR if COURSE == "de-fa" else AUDIO_DIR / COURSE
+VOICE_MAP_PATH = SCRIPT_DIR / ("voice_map.json" if COURSE == "de-fa" else f"voice_map_{COURSE_SLUG}.json")
+MANIFEST_PATH = AUDIO_DIR / "manifest.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "turn_manifest.json"
+SQL_PATH = AUDIO_DIR / "update_turn_audio.sql" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "update_turn_audio.sql"
+REPORT_PATH = AUDIO_DIR / "last_generation_report.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "last_generation_report.json"
 
 
 class NovaTtsError(RuntimeError):
@@ -166,7 +174,7 @@ def hard_voice_match(character: dict[str, Any], voice: dict[str, Any]) -> bool:
     return (
         required_gender in {"female", "male", "nonbinary"}
         and source_gender == required_gender
-        and "de" in voice_language_codes(voice)
+        and TARGET_LANGUAGE in voice_language_codes(voice)
         and bool(voice.get("voice_id"))
         and bool(voice.get("public_owner_id"))
     )
@@ -189,7 +197,7 @@ def character_voice_score(
     )
     category = str(voice.get("category") or "").casefold()
     score = {"professional": 18, "high_quality": 14, "famous": 8}.get(category, 4)
-    reasons = ["gender-exact", "german-verified"]
+    reasons = ["gender-exact", "german-verified" if TARGET_LANGUAGE == "de" else f"{TARGET_LANGUAGE}-verified"]
 
     preferred_ages = {
         normalize_words(value) for value in preferences.get("preferred_ages") or []
@@ -285,7 +293,7 @@ class ElevenLabsClient:
                 query={
                     "page_size": 100,
                     "page": page,
-                    "language": "de",
+                    "language": TARGET_LANGUAGE,
                     "gender": gender.casefold(),
                     "sort": "usage_character_count_1y",
                     "include_custom_rates": "false",
@@ -299,7 +307,7 @@ class ElevenLabsClient:
             voice
             for voice in voices
             if str(voice.get("gender") or "").casefold() == gender.casefold()
-            and "de" in voice_language_codes(voice)
+            and TARGET_LANGUAGE in voice_language_codes(voice)
             and voice.get("public_owner_id")
             and voice.get("voice_id")
         ]
@@ -402,8 +410,8 @@ def validate_voice_map(mapping: dict[str, Any], require_complete: bool = True) -
                 f"Voice gender mismatch for {name}: character={gender}, "
                 f"voice={metadata.get('gender')!r}."
             )
-        if "de" not in voice_language_codes(metadata):
-            raise NovaTtsError(f"The selected voice for {name} is not verified for German.")
+        if TARGET_LANGUAGE not in voice_language_codes(metadata):
+            raise NovaTtsError(f"The selected voice for {name} is not verified for {LANGUAGE_NAME}.")
         selection = character.get("selection") or {}
         if int(selection.get("score") or -10_000) < MIN_VOICE_MATCH_SCORE:
             raise NovaTtsError(f"The selected voice for {name} did not pass profile scoring.")
@@ -543,7 +551,7 @@ def parse_source_locator(path: Path, sql: str) -> dict[str, Any]:
         r"import_nova_series_(\d+)", sql, re.I
     )
     level_match = re.search(
-        r"SELECT\s+id\s+INTO\s+v_level\s+FROM\s+levels\b[^;]*?cefr_level\s*=\s*'([ABC][12])'",
+        r"SELECT\s+id\s+INTO\s+v_level\s+FROM\s+levels\b[^;]*?cefr_level\s*=\s*'([A-Za-z0-9_]{1,8})'",
         sql,
         re.I | re.S,
     )
@@ -576,7 +584,7 @@ def row_key(row: dict[str, Any]) -> str:
 
 
 def row_sort_key(row: dict[str, Any]) -> tuple[Any, ...]:
-    level_rank = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5, "C2": 6}
+    level_rank = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5, "C2": 6, "ST": 1, "ED": 2, "IN": 3, "CF": 4, "AD": 5, "MA": 6}
     return (
         level_rank.get(str(row["cefr_level"]), 99),
         int(row["module_order"]),
@@ -679,16 +687,21 @@ def parse_source_file(path: Path, repo_root: Path = REPO_ROOT) -> list[dict[str,
 
 
 def discover_source_files(repo_root: Path = REPO_ROOT) -> list[Path]:
-    candidates = list(
-        (
-            repo_root
-            / "nova"
-            / "archive"
-            / "series_001_080_fixed"
-            / "extracted"
-        ).glob("nova_DE_FA_*_series_*_v9*.sql")
+    candidates: list[Path] = []
+    if COURSE == "de-fa":
+        candidates.extend(
+            (
+                repo_root
+                / "nova"
+                / "archive"
+                / "series_001_080_fixed"
+                / "extracted"
+            ).glob("nova_DE_FA_*_series_*_v9*.sql")
+        )
+        candidates.extend((repo_root / "nova" / "staging").glob("**/chapter.sql"))
+    candidates.extend(
+        (repo_root / "nova" / "courses" / COURSE / "staging").glob("**/chapter.sql")
     )
-    candidates.extend((repo_root / "nova" / "staging").glob("**/chapter.sql"))
     located: dict[int, Path] = {}
     for path in candidates:
         if not path.is_file():
@@ -797,7 +810,7 @@ def bootstrap_voices(yes: bool) -> None:
         return
     if not yes:
         raise NovaTtsError(
-            f"This will add {len(missing)} German voices to ElevenLabs. Re-run with --yes."
+            f"This will add {len(missing)} {LANGUAGE_NAME} voices to ElevenLabs. Re-run with --yes."
         )
 
     client = ElevenLabsClient(required_env("ELEVENLABS_API_KEY"))
@@ -840,7 +853,7 @@ def bootstrap_voices(yes: bool) -> None:
         candidates.sort(key=lambda item: (-item[0], -item[1], item[2]))
         if not candidates or candidates[0][0] < MIN_VOICE_MATCH_SCORE:
             raise NovaTtsError(
-                f"No German {character['gender']} voice passed the profile threshold for "
+                f"No {LANGUAGE_NAME} {character['gender']} voice passed the profile threshold for "
                 f"{character['name']} ({character.get('role')})."
             )
         score, _usage, _source_id, source, reasons = candidates[0]
@@ -878,7 +891,7 @@ def bootstrap_voices(yes: bool) -> None:
         write_json_atomic(VOICE_MAP_PATH, mapping)
         print(
             f"Assigned {character['name']}: {source.get('name')} "
-            f"({character['gender']}, German verified, profile score {score})."
+            f"({character['gender']}, {LANGUAGE_NAME} verified, profile score {score})."
         )
     validate_voice_map(mapping, require_complete=True)
 
@@ -888,7 +901,7 @@ def new_manifest() -> dict[str, Any]:
         "version": 2,
         "storage": "github-temporary",
         "path_mode": "repository-relative",
-        "course": "de-fa",
+        "course": COURSE,
         "source": "repository-sql-only",
         "provider": "elevenlabs",
         "model_id": MODEL_ID,
@@ -904,6 +917,8 @@ def load_manifest() -> dict[str, Any]:
         return new_manifest()
     if manifest.get("version") != 2 or not isinstance(manifest.get("entries"), dict):
         raise NovaTtsError(f"Unsupported manifest at {MANIFEST_PATH}.")
+    if manifest.get("course") != COURSE:
+        raise NovaTtsError(f"Manifest course mismatch at {MANIFEST_PATH}.")
     return manifest
 
 
@@ -933,7 +948,7 @@ def build_tasks(
             Path("nova")
             / "audio"
             / "turns"
-            / "de-fa"
+            / COURSE
             / level
             / f"m{int(row['module_order']):02d}"
             / f"c{int(row['chapter_order']):02d}"
@@ -1119,7 +1134,7 @@ def command_generate(*, yes: bool, limit: int | None, concurrency: int) -> None:
         "failed": len(failures),
         "failures": failures,
     }
-    write_json_atomic(AUDIO_DIR / "last_generation_report.json", report)
+    write_json_atomic(REPORT_PATH, report)
     print(f"Completed: {completed:,}; failed: {len(failures):,}.")
     if failures:
         raise NovaTtsError(
@@ -1217,9 +1232,9 @@ def render_update_sql(
             "  END;",
             "",
             "  SELECT id INTO v_course FROM courses",
-            "  WHERE learning_language='de' AND base_language='fa' ORDER BY id LIMIT 1;",
+            f"  WHERE learning_language='{TARGET_LANGUAGE}' AND base_language='{BASE_LANGUAGE}' ORDER BY id LIMIT 1;",
             "  IF v_course IS NULL THEN",
-            "    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Nova de-fa course not found.';",
+            f"    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Nova {COURSE} course not found.';",
             "  END IF;",
             "",
             "  SELECT COUNT(*) INTO v_expected FROM nova_turn_audio_updates;",
@@ -1301,7 +1316,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     voices = subparsers.add_parser(
         "bootstrap-voices",
-        description="Assign one distinct profile-validated German voice per character.",
+        description=f"Assign one distinct profile-validated {LANGUAGE_NAME} voice per character.",
     )
     voices.add_argument("--yes", action="store_true")
 

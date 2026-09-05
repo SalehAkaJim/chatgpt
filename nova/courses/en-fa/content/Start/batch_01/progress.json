@@ -1,0 +1,72 @@
+{
+  "course": "en-fa",
+  "level": "Start",
+  "database_level_code": "ST",
+  "batch": 1,
+  "chapter_range": [
+    1,
+    8
+  ],
+  "series_range": [
+    1,
+    8
+  ],
+  "status": "ready",
+  "published": false,
+  "chapters": [
+    {
+      "chapter": 1,
+      "series": 1,
+      "title": "Hello! I'm Mina",
+      "status": "pending"
+    },
+    {
+      "chapter": 2,
+      "series": 2,
+      "title": "What's your name?",
+      "status": "pending"
+    },
+    {
+      "chapter": 3,
+      "series": 3,
+      "title": "Nice to meet you",
+      "status": "pending"
+    },
+    {
+      "chapter": 4,
+      "series": 4,
+      "title": "How are you today?",
+      "status": "pending"
+    },
+    {
+      "chapter": 5,
+      "series": 5,
+      "title": "Goodbye and see you soon",
+      "status": "pending"
+    },
+    {
+      "chapter": 6,
+      "series": 6,
+      "title": "This is my friend",
+      "status": "pending"
+    },
+    {
+      "chapter": 7,
+      "series": 7,
+      "title": "I'm from Iran",
+      "status": "pending"
+    },
+    {
+      "chapter": 8,
+      "series": 8,
+      "title": "Where are you from?",
+      "status": "pending"
+    }
+  ],
+  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
+  "cross_chapter_qa_status": "not_ready",
+  "next_action": "generate_and_qa_chapter_01_series_001",
+  "database_revision": "v9.0",
+  "generation_cadence": "hourly_at_minute_59",
+  "updated_at": "2026-09-05T12:57:42.744Z"
+}

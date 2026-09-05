@@ -1,0 +1,61 @@
+{
+  "project": "Nova",
+  "artifact": "nova/plans/concurrent_course_isolation_v9.json",
+  "checked_at": "2026-09-05T12:57:42.744Z",
+  "status": "PASS",
+  "checks": {
+    "database_v9_unchanged": true,
+    "two_active_courses": true,
+    "english_namespace": true,
+    "no_shared_english_mutable_paths": true,
+    "level_codes_fit_v9": true,
+    "plan_240": true,
+    "tts_course_parameterized": true,
+    "english_source_scoped": true,
+    "english_audio_workflows_isolated": true,
+    "english_audio_course_env": true,
+    "first_content_not_pretended": true,
+    "db_level_labels_preserved": true,
+    "audio_completion_gate": true
+  },
+  "errors": [],
+  "warnings": [
+    "Paid English audio generation was not executed during repository isolation; the first QA-passed English chapter triggers validated resumable generation."
+  ],
+  "verified_scope": {
+    "database_revision": "v9.0",
+    "database_files_modified": 0,
+    "active_courses": [
+      "de-fa",
+      "en-fa"
+    ],
+    "schedule_offset_minutes": 30
+  },
+  "tests": {
+    "python_compile": {
+      "status": "PASS",
+      "files": [
+        "nova/tts/nova_tts.py",
+        "nova/tts/nova_word_tts.py"
+      ]
+    },
+    "regression_unit_tests": {
+      "status": "PASS",
+      "passed": 18,
+      "skipped": 1,
+      "failed": 0
+    },
+    "english_course_paths": {
+      "status": "PASS"
+    },
+    "english_sample_source_validation": {
+      "status": "PASS",
+      "turns": 1,
+      "words": 1
+    },
+    "english_dry_plan": {
+      "status": "PASS",
+      "paid_generation_executed": false
+    }
+  }
+}

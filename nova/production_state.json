@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T12:44:44.703Z",
+  "updated_at": "2026-09-05T12:57:42.744Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -83,14 +83,20 @@
       "it-fa",
       "ko-fa"
     ],
-    "transition_mode": "after_current_course_C2_and_all_batch_QA",
+    "transition_mode": "two_isolated_courses_active; future course activation requires an available slot and QA-approved plan",
     "queue_open_for_future_append": true,
     "level_model_policy": "course_specific_curriculum_defined",
     "force_CEFR_A1_to_C2": false,
     "english_plan_status": "ready_QA_passed",
     "english_curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
     "english_curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
-    "english_audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json"
+    "english_audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json",
+    "active_courses": [
+      "de-fa",
+      "en-fa"
+    ],
+    "concurrent_mode": "isolated_width_2",
+    "english_state": "nova/courses/en-fa/production_state.json"
   },
   "audio": {
     "required_for_course_completion": true,
@@ -112,5 +118,11 @@
     },
     "status": "caught_up_with_series_089",
     "future_courses_require_language_specific_preflight": true
-  }
+  },
+  "state_scope": "de-fa-exclusive-legacy",
+  "concurrent_courses": [
+    "de-fa",
+    "en-fa"
+  ],
+  "shared_mutable_state": false
 }

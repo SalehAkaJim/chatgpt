@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "project": "Nova",
+  "database_revision": "v9.0",
+  "schema_changes_allowed": false,
+  "status": "active",
+  "authorized_at": "2026-09-05T12:57:42.744Z",
+  "authorization": "explicit_user_authorization",
+  "goal": "run de-fa and en-fa concurrently without sharing mutable course state",
+  "concurrency": {
+    "max_active_courses": 2,
+    "content_runs_per_course": "hourly",
+    "offset_minutes": 30,
+    "max_chapters_per_course_run": 2,
+    "chapters_strictly_sequential": true
+  },
+  "course_roots": {
+    "de-fa": {
+      "root": "nova",
+      "mode": "legacy_exclusive",
+      "production_state": "nova/production_state.json",
+      "pipeline_config": "nova/pipeline_config.json",
+      "snapshot": "nova/state/snapshot_index.json",
+      "staging": "nova/staging",
+      "content": "nova/content",
+      "audio_legacy": "nova/audio"
+    },
+    "en-fa": {
+      "root": "nova/courses/en-fa",
+      "mode": "fully_namespaced",
+      "production_state": "nova/courses/en-fa/production_state.json",
+      "pipeline_config": "nova/courses/en-fa/pipeline_config.json",
+      "snapshot": "nova/courses/en-fa/state/snapshot_index.json",
+      "staging": "nova/courses/en-fa/staging",
+      "content": "nova/courses/en-fa/content",
+      "audio": "nova/audio/en-fa"
+    }
+  },
+  "shared_read_only": [
+    "nova/database",
+    "nova/plans/en_fa_curriculum_master_plan_v9.json",
+    "nova/plans/audio_production_policy.json",
+    "nova/plans/concurrent_course_isolation_v9.json"
+  ],
+  "forbidden_shared_writes_by_course_runs": [
+    "nova/plans/language_production_queue.json"
+  ],
+  "commit_safety": {
+    "branch": "main",
+    "force_push": false,
+    "base_head_must_be_refetched": true,
+    "fast_forward_only": true,
+    "on_head_change": "discard proposed tree, re-read only that course state, revalidate, rebuild commit",
+    "course_local_lease_required": true,
+    "lease_timeout_minutes": 50,
+    "release_lease_after_run": true,
+    "expired_lease_may_be_recovered_only_after_head_and_course_state_recheck": true
+  },
+  "cross_course_invariants": [
+    "A course automation may write only inside its allowed mutable paths.",
+    "Series numbering is independent and restarts at 001 per course.",
+    "Words, characters, storylines, QA, content and audio manifests are never shared.",
+    "Database schema remains canonical v9.0.",
+    "No course completion without 100 percent Turn and Word audio coverage."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "course": "de-fa",
+  "status": "in_progress",
+  "database_revision": "v9.0",
+  "schema_changes_allowed": false,
+  "namespace_mode": "legacy_exclusive",
+  "concurrent_peer": "en-fa",
+  "mutable_paths": [
+    "nova/production_state.json",
+    "nova/pipeline_config.json",
+    "nova/state",
+    "nova/staging",
+    "nova/content",
+    "nova/audits",
+    "nova/audio/manifest.json",
+    "nova/audio/word_manifest.json",
+    "nova/audio/update_turn_audio.sql",
+    "nova/audio/update_word_audio.sql",
+    "nova/audio/turns/de-fa",
+    "nova/audio/words/de-fa"
+  ],
+  "forbidden_paths": [
+    "nova/courses/en-fa",
+    "nova/plans/language_production_queue.json"
+  ],
+  "next_series": 90,
+  "run_control": "nova/courses/de-fa/run_control.json",
+  "updated_at": "2026-09-05T12:57:42.744Z"
+}

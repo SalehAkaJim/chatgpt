@@ -76,7 +76,7 @@
     89,
     89
   ],
-  "updated_at": "2026-09-05T12:44:44.703Z",
+  "updated_at": "2026-09-05T12:57:42.744Z",
   "published_batches": [
     {
       "level": "B1",
@@ -129,5 +129,12 @@
     "planned_lessons": 960,
     "planned_batch_files": 30,
     "activation": "after_de_fa_full_completion_only"
-  }
+  },
+  "state_scope": "de-fa-exclusive-legacy",
+  "concurrent_courses": [
+    "de-fa",
+    "en-fa"
+  ],
+  "english_snapshot": "../courses/en-fa/state/snapshot_index.json",
+  "shared_mutable_state": false
 }

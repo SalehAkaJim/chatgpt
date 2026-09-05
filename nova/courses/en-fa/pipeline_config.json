@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "course": "en-fa",
+  "source_of_truth": "github_main",
+  "database_revision": "v9.0",
+  "schema_upgrade_allowed": false,
+  "content_generation": {
+    "enabled": true,
+    "start_level": "Start",
+    "start_database_level_code": "ST",
+    "start_series": 1,
+    "next_series": 1
+  },
+  "isolation": {
+    "contract": "nova/plans/concurrent_course_isolation_v9.json",
+    "root": "nova/courses/en-fa",
+    "shared_mutable_writes": false,
+    "allowed_mutable_prefixes": [
+      "nova/courses/en-fa/",
+      "nova/audio/en-fa/",
+      "nova/audio/turns/en-fa/",
+      "nova/audio/words/en-fa/",
+      "nova/tts/voice_map_en_fa.json",
+      "nova/tts/word_voice_en_fa.json"
+    ],
+    "forbidden_prefixes": [
+      "nova/staging/",
+      "nova/content/",
+      "nova/state/",
+      "nova/audio/manifest.json",
+      "nova/audio/word_manifest.json"
+    ]
+  },
+  "content_unit": {
+    "atomic_generation_unit": "chapter",
+    "lessons_per_chapter": 4,
+    "chapters_per_level": 40
+  },
+  "artifact_batching": {
+    "artifacts_per_level": 5,
+    "chapters_per_artifact": 8,
+    "series_per_artifact": 8
+  },
+  "transaction_policy": {
+    "chapter_is_atomic": true,
+    "batch_is_publish_atomic": true,
+    "advance_state_only_after_batch_qa_pass": true,
+    "on_failure": "do_not_advance_and_stop_run"
+  },
+  "automation": {
+    "cadence": "hourly",
+    "minute": 59,
+    "max_atomic_chapters_per_run": 2,
+    "execution_mode": "strictly_sequential",
+    "never_generate_chapters_in_parallel": true,
+    "reread_github_state_between_chapters": true,
+    "commit_each_chapter_after_qa_pass": true,
+    "stop_remaining_run_on_failure": true,
+    "run_control": "nova/courses/en-fa/run_control.json"
+  },
+  "database_level_storage": {
+    "column": "levels.cefr_level",
+    "codes": {
+      "Start": "ST",
+      "Everyday": "ED",
+      "Independent": "IN",
+      "Confident": "CF",
+      "Advanced": "AD",
+      "Mastery": "MA"
+    },
+    "learner_facing_name_column": "levels.title"
+  },
+  "first_series_bootstrap": {
+    "required": true,
+    "create_course_if_missing": true,
+    "create_target_level_module_and_chapter_from_curriculum_if_missing": true,
+    "seed_course_specific_characters_from_roster": true,
+    "never_modify_schema": true
+  },
+  "required_qa": [
+    "english_naturalness_and_level_fit",
+    "persian_translation_and_orthography",
+    "exactly_two_characters_per_lesson",
+    "storyline_continuity",
+    "clickable_token_coverage_100_percent",
+    "learner_speech_target_coverage_100_percent",
+    "activity_source_integrity",
+    "reading_has_task",
+    "distractor_quality",
+    "dependency_audit",
+    "duplicate_lesson_words_audit",
+    "chapter_empty_guard",
+    "batch_cross_chapter_duplicate_target_audit",
+    "level_progression_audit",
+    "v9_0_only_no_DDL",
+    "course_scope_audit"
+  ],
+  "audio_generation": {
+    "enabled": true,
+    "incremental_after_each_QA_passed_chapter": true,
+    "block_course_completion_until_100_percent_coverage": true,
+    "preflight": "nova/plans/en_fa_audio_preflight_v9.json"
+  },
+  "updated_at": "2026-09-05T12:57:42.744Z"
+}

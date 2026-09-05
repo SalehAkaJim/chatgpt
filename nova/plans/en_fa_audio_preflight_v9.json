@@ -3,7 +3,7 @@
   "content_source": "nova/plans/en_fa_curriculum_master_plan_v9.json",
   "course": "en-fa",
   "created_at": "2026-09-05T12:42:52.855Z",
-  "execute_when": "during the final eight chapters of de-fa",
+  "execute_when": "before and during the first QA-passed en-fa chapter",
   "implementation_requirements": [
     "parameterize source discovery for en-fa",
     "write audio only under course-scoped en-fa paths",
@@ -26,13 +26,14 @@
   "primary_locale": "en-US",
   "project": "Nova",
   "provider": "elevenlabs",
-  "status": "planned_pending_execution_before_course_activation",
+  "status": "implementation_ready_first_chapter_triggers_sample_and_incremental_audio",
   "turn_audio": {
     "course_specific_character_roster_required": true,
     "distinct_profile_matched_voice_per_character": true,
     "every_voice_must_be_verified_for_english": true,
     "required": true,
-    "voice_map_path": "nova/tts/voice_map_en_fa.json"
+    "voice_map_path": "nova/tts/voice_map_en_fa.json",
+    "first_run": "select English-verified voices, run sample checks, then generate missing Turn audio"
   },
   "version": 1,
   "word_audio": {
@@ -40,6 +41,21 @@
     "required": true,
     "verified_for_english_in_current_voice_metadata": true,
     "voice_id": "TbMNBJ27fH2U0VgpSNko",
-    "voice_name": "Lori - Happy, Sweet and Compassionate"
-  }
+    "voice_name": "Lori - Happy, Sweet and Compassionate",
+    "voice_config_path": "nova/tts/word_voice_en_fa.json",
+    "first_run": "verify pinned Lori metadata for English, run sample check, then generate missing Word audio"
+  },
+  "concurrent_content_generation_allowed": true,
+  "course_namespace": "nova/courses/en-fa",
+  "source_discovery_root": "nova/courses/en-fa/staging",
+  "implementation": {
+    "tts_scripts_course_parameterized": true,
+    "course_environment_variable": "NOVA_COURSE=en-fa",
+    "turn_workflow": ".github/workflows/nova-en-fa-turn-audio.yml",
+    "word_workflow": ".github/workflows/nova-en-fa-word-audio.yml",
+    "independent_concurrency_groups": true,
+    "dry_source_validation_before_generation": true,
+    "paid_generation_only_after_validation": true
+  },
+  "updated_at": "2026-09-05T12:57:42.744Z"
 }
