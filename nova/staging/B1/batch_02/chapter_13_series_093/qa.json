@@ -1,0 +1,114 @@
+{
+  "chapter": 13,
+  "checks": {
+    "activity_source_integrity": true,
+    "archive_integrity": true,
+    "batch_cross_chapter_duplicate_target_audit": true,
+    "chapter_empty_guard": true,
+    "clickable_token_coverage_100_percent": true,
+    "dependency_audit": true,
+    "distractor_quality": true,
+    "duplicate_lesson_words_audit": true,
+    "forbidden_schema_ddl_absent": true,
+    "four_lessons": true,
+    "german_naturalness_and_b1_level": true,
+    "learner_speech_target_coverage_100_percent": true,
+    "lemma_first_morphology": true,
+    "level_progression_audit": true,
+    "persian_translation_and_orthography": true,
+    "reading_has_task": true,
+    "status_enum_audit": true,
+    "storyline_continuity": true,
+    "token_dictionary_mapping_100_percent": true,
+    "token_object_contract_v9_0": true,
+    "two_characters_per_lesson": true,
+    "v9_0_schema_compatibility": true,
+    "word_audio_eligibility_policy_v4": true,
+    "word_manifest_zero_ineligible_entries": true
+  },
+  "counts": {
+    "activities": 32,
+    "characters": 2,
+    "explicit_targets": 4,
+    "learner_turns": 12,
+    "lesson_words": 148,
+    "lessons": 4,
+    "new_word_tuples": 31,
+    "storyline_orders": 4,
+    "tokens": 164,
+    "turns": 24
+  },
+  "course": "de-fa",
+  "database_revision": "v9.0",
+  "errors": [],
+  "explicit_targets": [
+    {
+      "lemma": "Könnten Sie bitte leiser sein?",
+      "part_of_speech": "phrase",
+      "translation": "می‌شود لطفاً آرام‌تر باشید؟"
+    },
+    {
+      "lemma": "So versteht er unser Problem, ohne sich angegriffen zu fühlen.",
+      "part_of_speech": "phrase",
+      "translation": "این‌طوری مشکل ما را می‌فهمد، بدون اینکه احساس کند به او حمله شده است."
+    },
+    {
+      "lemma": "Wir könnten diese Lösung eine Woche lang ausprobieren.",
+      "part_of_speech": "phrase",
+      "translation": "می‌توانیم این راه‌حل را یک هفته امتحان کنیم."
+    },
+    {
+      "lemma": "Höfliche Bitten helfen oft mehr als Beschwerden.",
+      "part_of_speech": "phrase",
+      "translation": "درخواست‌های مؤدبانه اغلب بیشتر از شکایت‌ها کمک می‌کنند."
+    }
+  ],
+  "generated_at": "2026-09-05T17:08:00.000Z",
+  "level": "B1",
+  "module": 3,
+  "project": "Nova",
+  "schema_changes": false,
+  "series": 93,
+  "source": {
+    "canonical_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "main_head": "37f0231bdd1df1a32ee8261e523cd80a9b77e508",
+    "sql": "chapter.sql",
+    "sql_bytes": 127561,
+    "sql_lines": 828,
+    "sql_sha256": "426a5774e0de77c6c262d92e4766a0632e537093be78952fc8df7a67c88f43de"
+  },
+  "status": "PASS",
+  "storyline": {
+    "characters": [
+      "Jonas",
+      "Anna"
+    ],
+    "key": "anna-jonas-b1-neighborhood",
+    "orders": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "title": "Könnten Sie bitte leiser sein?",
+  "verification": {
+    "live_mysql_execution": "not_performed",
+    "mode": "static_content_and_transactional_sql_audit",
+    "runtime_guards_embedded": true
+  },
+  "warnings": [],
+  "word_audio_eligibility": {
+    "current_manifest_entries": 530,
+    "current_manifest_ineligible_entries": 0,
+    "eligible_denominator": "word-audio-eligible rows only",
+    "exclusion_reasons": [
+      "sentence-ending punctuation",
+      "more than three whitespace-delimited tokens"
+    ],
+    "new_phrase_targets_eligible": 0,
+    "new_phrase_targets_excluded": 4,
+    "policy_version": 4
+  }
+}
