@@ -40,11 +40,11 @@
       1,
       8
     ],
-    "last_qa_passed_chapter": 2,
-    "last_qa_passed_series": 2,
-    "pending_chapter": 3,
-    "pending_series": 3,
-    "status": "series_002_qa_passed_staged"
+    "last_qa_passed_chapter": 3,
+    "last_qa_passed_series": 3,
+    "pending_chapter": 4,
+    "pending_series": 4,
+    "status": "series_003_qa_passed_staged"
   },
   "paths": {
     "root": "nova/courses/en-fa",
@@ -62,7 +62,7 @@
     "commit_each_chapter_after_qa_pass": true,
     "stop_remaining_run_on_failure": true,
     "run_control": "nova/courses/en-fa/run_control.json",
-    "next_series": 3
+    "next_series": 4
   },
   "audio": {
     "required_for_completion": true,
@@ -74,6 +74,6 @@
   },
   "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
   "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
-  "updated_at": "2026-09-05T13:49:00.000Z",
+  "updated_at": "2026-09-05T14:35:00.000Z",
   "authorization": "explicit_user_concurrent_activation"
 }
