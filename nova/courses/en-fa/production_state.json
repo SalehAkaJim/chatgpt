@@ -7,10 +7,10 @@
   "status": "generating_concurrent",
   "content_started": true,
   "last_completed_level": null,
-  "last_completed_series": 0,
+  "last_completed_series": 8,
   "next_level": "Start",
   "next_database_level_code": "ST",
-  "next_series": 1,
+  "next_series": 9,
   "level_model": {
     "levels": [
       "Start",
@@ -35,16 +35,16 @@
     "level": "Start",
     "database_level_code": "ST",
     "module": 2,
-    "batch": 1,
+    "batch": 2,
     "batch_chapter_range": [
-      1,
-      8
+      9,
+      16
     ],
-    "last_qa_passed_chapter": 7,
-    "last_qa_passed_series": 7,
-    "pending_chapter": 8,
-    "pending_series": 8,
-    "status": "series_007_qa_passed_staged"
+    "last_qa_passed_chapter": 8,
+    "last_qa_passed_series": 8,
+    "pending_chapter": 9,
+    "pending_series": 9,
+    "status": "batch_01_published_series_001_008"
   },
   "paths": {
     "root": "nova/courses/en-fa",
@@ -62,7 +62,7 @@
     "commit_each_chapter_after_qa_pass": true,
     "stop_remaining_run_on_failure": true,
     "run_control": "nova/courses/en-fa/run_control.json",
-    "next_series": 8
+    "next_series": 9
   },
   "audio": {
     "required_for_completion": true,
@@ -74,6 +74,6 @@
   },
   "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
   "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
-  "updated_at": "2026-09-05T16:38:00.000Z",
+  "updated_at": "2026-09-05T16:47:00.000Z",
   "authorization": "explicit_user_concurrent_activation"
 }

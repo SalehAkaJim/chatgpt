@@ -1,0 +1,73 @@
+{
+  "course": "en-fa",
+  "level": "Start",
+  "database_level_code": "ST",
+  "batch": 2,
+  "chapter_range": [
+    9,
+    16
+  ],
+  "series_range": [
+    9,
+    16
+  ],
+  "status": "in_progress",
+  "published": false,
+  "chapters": [
+    {
+      "chapter": 9,
+      "series": 9,
+      "title": "I speak a little English",
+      "status": "pending"
+    },
+    {
+      "chapter": 10,
+      "series": 10,
+      "title": "Can you say that again?",
+      "status": "planned"
+    },
+    {
+      "chapter": 11,
+      "series": 11,
+      "title": "Numbers around us",
+      "status": "planned"
+    },
+    {
+      "chapter": 12,
+      "series": 12,
+      "title": "What's your phone number?",
+      "status": "planned"
+    },
+    {
+      "chapter": 13,
+      "series": 13,
+      "title": "What time is it?",
+      "status": "planned"
+    },
+    {
+      "chapter": 14,
+      "series": 14,
+      "title": "Today is Monday",
+      "status": "planned"
+    },
+    {
+      "chapter": 15,
+      "series": 15,
+      "title": "My birthday is in May",
+      "status": "planned"
+    },
+    {
+      "chapter": 16,
+      "series": 16,
+      "title": "This is my room",
+      "status": "planned"
+    }
+  ],
+  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
+  "cross_chapter_qa_status": "not_ready",
+  "next_action": "generate_and_qa_chapter_09_series_009",
+  "database_revision": "v9.0",
+  "generation_cadence": "hourly_at_minute_59",
+  "updated_at": "2026-09-05T16:47:00.000Z",
+  "last_completed_atomic_unit": null
+}
