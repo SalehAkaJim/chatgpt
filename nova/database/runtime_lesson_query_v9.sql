@@ -1,102 +1,39 @@
--- ============================================================================
--- NOVA v9.1.1: one-row lesson runtime payload
---
--- Production usage:
---   SELECT * FROM v_lesson_runtime WHERE lesson_id = ?;
---
--- The variables below are an executable development example. Set @lesson_id to
--- a concrete ID, or leave it NULL to resolve a lesson by its ordered path.
--- ============================================================================
-
-SET @lesson_id = NULL;
-SET @course_key = 'de-fa';
-SET @level_order = 1;
-SET @module_order = 1;
-SET @chapter_order = 1;
-SET @lesson_order = 1;
-
-SET @resolved_lesson_id = COALESCE(
-  @lesson_id,
-  (
-    SELECT p.lesson_id
-    FROM v_lesson_path p
-    WHERE p.course_key = @course_key
-      AND p.level_order = @level_order
-      AND p.module_order = @module_order
-      AND p.chapter_order = @chapter_order
-      AND p.lesson_order = @lesson_order
-      AND p.lesson_status IN ('validated','published')
-    ORDER BY p.lesson_id
-    LIMIT 1
-  )
+-- NOVA v9: one-query lesson payload
+SET @lesson_id=(
+  SELECT l.id
+  FROM lessons l
+  JOIN chapters ch ON ch.id=l.chapter_id
+  JOIN modules m ON m.id=ch.module_id
+  JOIN levels lv ON lv.id=m.level_id
+  JOIN courses c ON c.id=lv.course_id
+  WHERE c.learning_language='de' AND c.base_language='fa'
+    AND lv.sort_order=1 AND m.sort_order=1 AND ch.sort_order=1 AND l.sort_order=1
+  ORDER BY l.id LIMIT 1
 );
 
 SELECT
-  course_id,
-  course_key,
-  learning_language,
-  base_language,
-  level_id,
-  cefr_level,
-  level_title,
-  level_title_translation,
-  level_order,
-  module_id,
-  module_title,
-  module_title_translation,
-  module_emoji,
-  module_order,
-  chapter_id,
-  series_number,
-  chapter_title,
-  chapter_title_translation,
-  chapter_order,
-  chapter_global_order,
-  lesson_id,
-  lesson_key,
-  title,
-  title_translation,
-  description,
-  description_translation,
-  learning_objective,
-  learning_objective_translation,
-  lesson_type,
-  storyline_key,
-  storyline_order,
-  difficulty,
-  estimated_duration_sec,
-  full_audio_url,
-  full_audio_duration_ms,
-  sort_order,
-  status,
-  content_version,
-  prompt_character,
-  learner_character,
-  story,
-  activities,
-  dictionary
-FROM v_lesson_runtime
-WHERE lesson_id = @resolved_lesson_id;
+  l.id AS lesson_id,l.title,l.title_translation,l.description,l.description_translation,
+  l.lesson_type,l.storyline_key,l.storyline_order,l.difficulty,
 
--- Optional learner state; execute with the same request when the screen needs
--- resume/progress data. Missing row means the lesson has not been started.
-SET @learner_id = NULL;
+  pc.id AS prompt_character_id,pc.name AS prompt_character_name,pc.gender AS prompt_character_gender,
+  lc.id AS learner_character_id,lc.name AS learner_character_name,lc.gender AS learner_character_gender,
 
-SELECT
-  lp.learner_id,
-  lp.lesson_id,
-  lp.status,
-  lp.completion_percent,
-  lp.best_score_percent,
-  lp.attempt_count,
-  lp.last_session_id,
-  ls.session_key,
-  ls.current_activity_id,
-  ls.status AS session_status,
-  ls.client_state,
-  ls.last_activity_at
-FROM lesson_progress lp
-LEFT JOIN lesson_sessions ls ON ls.id = lp.last_session_id
-WHERE @learner_id IS NOT NULL
-  AND lp.learner_id = @learner_id
-  AND lp.lesson_id = @resolved_lesson_id;
+  story.story AS canonical_story,
+
+  a.id AS activity_id,a.sort_order AS step_order,a.activity_type,a.prompt,a.instruction,a.config AS activity_config,
+
+  t.id AS turn_id,t.role AS turn_role,t.text AS turn_text,t.translation AS turn_translation,
+  t.audio_url AS turn_audio_url,t.speech_target,t.tokens AS clickable_tokens,t.grammar_title,t.grammar_note,
+
+  w.id AS word_id,w.display_form AS word_text,w.lemma AS word_lemma,w.translation AS word_translation,
+  w.part_of_speech,w.grammar AS word_grammar,w.distractors AS word_distractors,w.audio_url AS word_audio_url
+
+FROM lessons l
+JOIN characters pc ON pc.id=l.prompt_character_id
+JOIN characters lc ON lc.id=l.learner_character_id
+JOIN v_lesson_story story ON story.lesson_id=l.id
+JOIN activities a ON a.lesson_id=l.id
+LEFT JOIN turns t ON t.id=a.turn_id
+LEFT JOIN words w ON w.id=a.word_id
+WHERE l.id=@lesson_id
+ORDER BY a.sort_order;

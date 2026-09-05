@@ -8,11 +8,10 @@ This directory preserves the exact production history through Series 080.
 - Extracted files: 105 (84 SQL and 21 JSON)
 - Canonical Series SQL: 80 files, Series 001-080
 - Static scan status: PASS
+- Active database contract: Nova v9.0
 
 `extracted/` is a byte-for-byte extraction of the ZIP and must not be edited.
-The historical schema, seed, reset and runtime-query files inside it are v9.0
-archive members; implementation uses the current v9.1.1 files in
-`nova/database/`.
+The schema, seed, reset and runtime-query files in `nova/database/` are byte-for-byte copies of the v9.0 members from this archive.
 
 Canonical corrected Series files are:
 
@@ -32,6 +31,5 @@ python nova/tools/scan_canonical_archive.py \
 ```
 
 `manifest.json` contains a SHA-256 and byte count for every extracted member.
-`FULL_SCAN_REPORT.json` contains per-Series counts and validation results. A live
-MySQL restore remains a separate execution test and must follow the order in
-`nova/database/AUDIT_v9.md`.
+`FULL_SCAN_REPORT.json` contains per-Series counts and validation results.
+A live MySQL restore is a separate user-controlled operation.

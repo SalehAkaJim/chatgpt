@@ -19,16 +19,12 @@
   },
   "content_freeze": false,
   "next_level": "B1",
-  "next_series": 81,
+  "next_series": 82,
   "database_files": [
     "../database/reset_all_v9.sql",
     "../database/schema_v9.sql",
     "../database/de_fa_base_seed_v9.sql",
-    "../database/runtime_lesson_query_v9.sql",
-    "../database/runtime_catalog_queries_v9.sql",
-    "../database/upgrade_existing_v9_0_to_v9_1_1.sql",
-    "../database/migrate_canonical_a1_a2_v9_1.sql",
-    "../database/validate_database_v9.sql"
+    "../database/runtime_lesson_query_v9.sql"
   ],
   "source_archive": {
     "filename": "nova_v9_production_series_001_080_fixed.zip",
@@ -67,14 +63,17 @@
     "batch_artifacts_per_level": 5,
     "advance_state_only_after_batch_qa_pass": true
   },
-  "database_revision": "v9.1.1",
-  "database_audit": "../database/AUDIT_v9.md",
-  "restore_status": "in_place_v9_0_upgrade_ready_not_run",
+  "database_revision": "v9.0",
+  "restore_status": "canonical_v9_0_repository_files_active",
   "production_status": "generating",
   "resumed_at": "2026-09-04T17:15:54.269Z",
   "live_mysql_verification": {
-    "status": "schema_upgrade_required",
-    "detected_error": "#1054 Unknown column courses.course_key",
-    "next_action": "run upgrade_existing_v9_0_to_v9_1_1.sql, then migrate and validate"
-  }
+    "status": "not_changed_by_repository_commit",
+    "note": "Repository restoration does not alter the Liara MySQL database."
+  },
+  "staged_series": [
+    81,
+    81
+  ],
+  "updated_at": "2026-09-05T05:19:22.170Z"
 }

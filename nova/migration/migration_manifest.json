@@ -137,15 +137,21 @@
   },
   "legacy_batch_specs_note": "The ten gzip+base64 rows above preserve the previously calculated derived-batch checksums. They are not required now that the exact source ZIP and all 105 extracted members are stored in GitHub.",
   "legacy_gzip_base64_batches_present": false,
-  "recovery": "For a clean database, use schema_v9.sql, seed and Series 001-080 before migration. For an existing canonical v9.0 database, back up and run nova/database/upgrade_existing_v9_0_to_v9_1_1.sql before migrate_canonical_a1_a2_v9_1.sql.",
+  "recovery": "Restore the exact canonical v9.0 schema, seed, runtime query and Series 001-080 files preserved in the checksum-matched archive. No schema migration is part of the active continuation path.",
   "artifacts_present_in_repository": true,
-  "restore_status": "in_place_upgrade_script_ready_not_run",
-  "restore_requirement": "Back up the existing database; run the in-place upgrade, canonical migration and validator. Every violations value must be zero.",
-  "database_revision": "v9.1.1",
-  "existing_v9_0_upgrade": {
-    "path": "nova/database/upgrade_existing_v9_0_to_v9_1_1.sql",
-    "preserves_a1_a2_content": true,
-    "required_before": "nova/database/migrate_canonical_a1_a2_v9_1.sql",
-    "reported_error_fixed": "#1054 Unknown column courses.course_key"
+  "restore_status": "canonical_v9_0_repository_files_restored",
+  "restore_requirement": "Use the exact canonical v9.0 archive for a clean database restore; then apply only QA-passed v9.0 content Series in order.",
+  "database_revision": "v9.0",
+  "active_database_files": [
+    "nova/database/reset_all_v9.sql",
+    "nova/database/schema_v9.sql",
+    "nova/database/de_fa_base_seed_v9.sql",
+    "nova/database/runtime_lesson_query_v9.sql"
+  ],
+  "active_database_source": {
+    "archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "extraction": "nova/archive/series_001_080_fixed/extracted",
+    "policy": "byte_for_byte_v9_0_copies"
   }
 }

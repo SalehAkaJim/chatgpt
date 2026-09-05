@@ -1,8 +1,8 @@
 {
-  "version": 3,
+  "version": 4,
   "course": "de-fa",
   "source_of_truth": "github",
-  "database_revision": "v9.1.1",
+  "database_revision": "v9.0",
   "canonical_history": {
     "archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
     "extracted_root": "nova/archive/series_001_080_fixed/extracted",
@@ -15,9 +15,11 @@
     "resumed_after_series": 80,
     "start_level": "B1",
     "start_series": 81,
-    "reason": "explicit_content_production_resume_authorized",
+    "reason": "explicit_resume_from_exact_canonical_v9_0_archive",
     "resume_requires_explicit_unfreeze": false,
-    "resumed_at": "2026-09-04T17:15:54.269Z"
+    "resumed_at": "2026-09-04T17:15:54.269Z",
+    "next_series": 82,
+    "restored_at": "2026-09-05T05:19:22.170Z"
   },
   "content_unit": {
     "atomic_generation_unit": "chapter",
@@ -74,6 +76,10 @@
     "max_atomic_chapters_per_run": 1,
     "single_active_run": true,
     "reread_github_state_before_each_run": true,
-    "retry_failed_chapter_without_advancing": true
+    "retry_failed_chapter_without_advancing": true,
+    "required_database_revision": "v9.0",
+    "schema_upgrade_allowed": false,
+    "next_atomic_chapter": 2,
+    "next_series": 82
   }
 }

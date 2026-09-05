@@ -1,239 +1,449 @@
--- NOVA v9.1.1 / de-fa / B1 / Batch 01 / Chapter 01 / Series 081
-
--- Regenerated from scratch. The quarantined v9.1.0 staging content is deleted and not reused.
-
--- Atomic staging unit. Do not publish or advance production_state from this file alone.
-
-SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
-
-SET time_zone = '+00:00';
-
-START TRANSACTION;
-
-SET @course_id=(SELECT id FROM courses WHERE course_key='de-fa' LIMIT 1);
-
-INSERT INTO levels (course_id,level_key,cefr_level,title,title_translation,description,description_translation,difficulty_min,difficulty_max,sort_order,status) VALUES (@course_id,'de-fa-b1','B1','Selbstständiger im Alltag','مستقل تر در زندگی روزمره','Selbstständig entscheiden, begründen und handeln.','تصمیم گرفتن، دلیل آوردن و عمل کردن به شکل مستقل.',41,60,3,'active') ON DUPLICATE KEY UPDATE id=LAST_INSERT_ID(id),title=VALUES(title),title_translation=VALUES(title_translation),difficulty_min=VALUES(difficulty_min),difficulty_max=VALUES(difficulty_max),status='active';
-
-SET @level_id=LAST_INSERT_ID();
-
-INSERT INTO modules (level_id,module_key,title,title_translation,description,description_translation,planned_chapter_count,difficulty_min,difficulty_max,sort_order,status) VALUES (@level_id,'de-fa-b1-m01','Entscheidungen & Gründe','تصمیم ها و دلیل ها','Mia wägt eine wichtige Entscheidung ab.','میا یک تصمیم مهم را سبک سنگین می کند.',5,41,43,1,'active') ON DUPLICATE KEY UPDATE id=LAST_INSERT_ID(id),title=VALUES(title),title_translation=VALUES(title_translation),status='active';
-
-SET @module_id=LAST_INSERT_ID();
-
-INSERT INTO content_batches (level_id,batch_number,chapter_order_from,chapter_order_to,series_from,series_to,artifact_name,status) VALUES (@level_id,1,1,8,81,88,'batch_01_chapters_01_08.sql','generating') ON DUPLICATE KEY UPDATE id=LAST_INSERT_ID(id),status='generating';
-
-SET @batch_id=LAST_INSERT_ID();
-
-INSERT INTO chapters (module_id,batch_id,chapter_key,series_number,global_sort_order,title,title_translation,description,description_translation,planned_lesson_count,difficulty_min,difficulty_max,sort_order,status,metadata) VALUES (@module_id,@batch_id,'de-fa-b1-c01',81,1,'Ich muss mich entscheiden','باید تصمیم بگیرم','Mia erzählt Sara von einem Jobangebot und plant, ihre Gründe geordnet abzuwägen.','میا درباره یک پیشنهاد شغلی با سارا حرف می زند و تصمیم می گیرد دلیل هایش را منظم بررسی کند.',4,41,42,1,'validated',JSON_OBJECT('databaseRevision','v9.1.1','staging',TRUE,'regeneratedFromScratch',TRUE)) ON DUPLICATE KEY UPDATE id=LAST_INSERT_ID(id),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),description_translation=VALUES(description_translation),status='validated',metadata=VALUES(metadata);
-
-SET @chapter_id=LAST_INSERT_ID();
-
-SET @mia_id=(SELECT id FROM characters WHERE course_id=@course_id AND name='Mia' LIMIT 1);
-
-SET @sara_id=(SELECT id FROM characters WHERE course_id=@course_id AND name='Sara' LIMIT 1);
-
--- Remove any prior Series 081 staging rows before the v9.1.1 regeneration.
-
-DELETE FROM lessons WHERE chapter_id=@chapter_id;
-
-DELETE FROM words WHERE course_id=@course_id AND word_key LIKE 'de-fa-b1-081-%';
-
--- New lexical tuples and four unique explicit targets.
-
-INSERT INTO words (course_id,word_key,sense_key,lemma,display_form,part_of_speech,translation,difficulty,grammar,distractors,related_words,introduced_series,explicit_target_count,first_target_series,last_target_series,metadata) VALUES
-
-(@course_id,'de-fa-b1-081-word-01','default','still','still','adjective','ساکت',41,NULL,JSON_ARRAY('پرسروصدا','بی قرار'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-02','default','los','los','adjective','پیش آمده / در جریان',42,NULL,JSON_ARRAY('تمام شده','آماده'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-03','default','sich entscheiden','sich entscheiden','verb','تصمیم گرفتن',41,NULL,JSON_ARRAY('منصرف شدن','صبر کردن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-04','default','worum','worum','pronoun','درباره چه چیزی',42,NULL,JSON_ARRAY('کجا','چه وقت'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-05','default','Jobangebot','Jobangebot','noun','پیشنهاد شغلی',41,NULL,JSON_ARRAY('پیشنهاد سفر','قرار پزشک'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-06','default','Leipzig','Leipzig','proper_noun','لایپزیگ',42,NULL,JSON_ARRAY('برلین','هامبورگ'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-07','default','bekommen','bekommen','verb','گرفتن / دریافت کردن',41,NULL,JSON_ARRAY('فرستادن','پس دادن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-08','default','klingen','klingen','verb','به نظر رسیدن',42,NULL,JSON_ARRAY('نوشتن','خریدن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-09','default','interessant','interessant','adjective','جالب',41,NULL,JSON_ARRAY('خسته کننده','بی اهمیت'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-10','default','sich freuen','sich freuen','verb','خوشحال بودن',42,NULL,JSON_ARRAY('نگران بودن','عصبانی بودن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-11','default','aber','aber','conjunction','اما / ولی',41,NULL,JSON_ARRAY('و','چون'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-12','default','auch','auch','adverb','هم / همچنین',42,NULL,JSON_ARRAY('فقط','هرگز'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-13','default','unsicher','unsicher','adjective','مردد / بدون اطمینان',41,NULL,JSON_ARRAY('با اطمینان','آماده'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-14','default','weil','weil','conjunction','چون / زیرا',42,NULL,JSON_ARRAY('بنابراین','اما'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-15','default','Stelle','Stelle','noun','موقعیت شغلی',41,NULL,JSON_ARRAY('تعطیلات','بلیت'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-16','default','weit','weit','adjective','دور',42,NULL,JSON_ARRAY('نزدیک','کوتاه'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-17','default','weg','weg','adverb','دور / آن طرف',41,NULL,JSON_ARRAY('اینجا','نزدیک'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-18','default','denn','denn','particle','پس / آخر',42,NULL,JSON_ARRAY('یا','با این حال'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-19','default','umziehen','umziehen','verb','اسباب کشی کردن',41,NULL,JSON_ARRAY('ماندن','برگشتن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-20','default','wissen','wissen','verb','دانستن',42,NULL,JSON_ARRAY('حدس زدن','فراموش کردن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-21','default','für','für','preposition','برای / به نفع',41,NULL,JSON_ARRAY('بدون','علیه'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-22','default','lernen','lernen','verb','یاد گرفتن',42,NULL,JSON_ARRAY('فراموش کردن','استراحت کردن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-23','default','verdienen','verdienen','verb','درآمد داشتن',41,NULL,JSON_ARRAY('خرج کردن','قرض گرفتن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-24','default','bei','bei','preposition','در / هنگام',42,NULL,JSON_ARRAY('بدون','دور از'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-25','default','Entscheidung','Entscheidung','noun','تصمیم',41,NULL,JSON_ARRAY('پرسش','پاسخ'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-26','default','wichtig','wichtig','adjective','مهم',42,NULL,JSON_ARRAY('بی اهمیت','ساده'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-27','default','Nähe','Nähe','noun','نزدیکی',41,NULL,JSON_ARRAY('دوری','بیرون'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-28','default','Freund','Freund','noun','دوست',42,NULL,JSON_ARRAY('غریبه','مدیر'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-29','default','neu','neu','adjective','جدید / تازه',41,NULL,JSON_ARRAY('قدیمی','قبلی'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-30','default','Arbeit','Arbeit','noun','کار',42,NULL,JSON_ARRAY('تعطیلات','استراحت'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-31','default','gefallen','gefallen','verb','خوش آمدن',41,NULL,JSON_ARRAY('ناراحت کردن','فراموش کردن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-32','default','Verantwortung','Verantwortung','noun','مسوولیت',42,NULL,JSON_ARRAY('تفریح','تصادف'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-33','default','beide','beide','pronoun','هر دو',41,NULL,JSON_ARRAY('هیچ کدام','فقط یکی'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-34','default','genau','genau','adverb','دقیقا',42,NULL,JSON_ARRAY('تقریبا','اشتباه'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-35','default','deshalb','deshalb','adverb','برای همین / بنابراین',41,NULL,JSON_ARRAY('با این حال','چون'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-36','default','wollen','wollen','verb','خواستن',42,NULL,JSON_ARRAY('توانستن','مجبور بودن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-37','default','aufschreiben','aufschreiben','verb','یادداشت کردن',41,NULL,JSON_ARRAY('پاک کردن','خواندن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-38','default','alle','alle','determiner','همه',42,NULL,JSON_ARRAY('بعضی','هیچ'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-39','default','Vorteil','Vorteil','noun','مزیت',41,NULL,JSON_ARRAY('عیب','مشکل'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-40','default','Nachteil','Nachteil','noun','عیب / نکته منفی',42,NULL,JSON_ARRAY('مزیت','فرصت'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-41','default','Idee','Idee','noun','ایده',41,NULL,JSON_ARRAY('مشکل','زمان'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-42','default','Ruhe','Ruhe','noun','آرامش',42,NULL,JSON_ARRAY('سروصدا','عجله'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-43','default','darüber','darüber','adverb','درباره آن',41,NULL,JSON_ARRAY('زیر آن','از آنجا'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-44','default','nachdenken','nachdenken','verb','فکر کردن',42,NULL,JSON_ARRAY('فراموش کردن','بی توجه بودن'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-word-45','default','dass','dass','conjunction','که',41,NULL,JSON_ARRAY('اگر','چون'),NULL,81,0,NULL,NULL,JSON_OBJECT('explicitTarget',FALSE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-target-01','default','Ich muss mich entscheiden.','Ich muss mich entscheiden.','phrase','باید تصمیم بگیرم.',41,NULL,JSON_ARRAY('Ich muss heute arbeiten.','Ich habe mich schon entschieden.'),NULL,81,1,81,81,JSON_OBJECT('explicitTarget',TRUE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-target-02','default','Ich könnte dort mehr lernen und mehr verdienen.','Ich könnte dort mehr lernen und mehr verdienen.','phrase','می توانم آنجا بیشتر یاد بگیرم و درآمد بیشتری داشته باشم.',41,NULL,JSON_ARRAY('Ich könnte dort weniger lernen.','Ich möchte dort nur Urlaub machen.'),NULL,81,1,81,81,JSON_OBJECT('explicitTarget',TRUE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-target-03','default','Ich möchte in der Nähe meiner Freunde bleiben.','Ich möchte in der Nähe meiner Freunde bleiben.','phrase','می خواهم نزدیک دوستانم بمانم.',42,NULL,JSON_ARRAY('Ich möchte weit von meinen Freunden wohnen.','Ich möchte die Stelle sofort ablehnen.'),NULL,81,1,81,81,JSON_OBJECT('explicitTarget',TRUE,'databaseRevision','v9.1.1')),
-(@course_id,'de-fa-b1-081-target-04','default','Ich schreibe zuerst alle Vorteile und Nachteile auf.','Ich schreibe zuerst alle Vorteile und Nachteile auf.','phrase','اول همه مزایا و معایب را یادداشت می کنم.',42,NULL,JSON_ARRAY('Ich schreibe nur die Vorteile auf.','Ich entscheide mich ohne eine Liste.'),NULL,81,1,81,81,JSON_OBJECT('explicitTarget',TRUE,'databaseRevision','v9.1.1'));
-
--- LESSON 1
-
-INSERT INTO lessons (chapter_id,prompt_character_id,learner_character_id,lesson_key,title,title_translation,learning_objective,learning_objective_translation,storyline_key,storyline_order,difficulty,estimated_duration_sec,sort_order,status,metadata) VALUES (@chapter_id,@sara_id,@mia_id,'B1-M01-C01-L01','Eine wichtige Entscheidung','یک تصمیم مهم','Über eine anstehende Entscheidung sprechen und sich entscheiden verwenden.','درباره یک تصمیم پیش رو حرف بزن و از sich entscheiden استفاده کن.','mia-sara-b1-decisions',1,41,300,1,'validated',JSON_OBJECT('staging',TRUE,'databaseRevision','v9.1.1'));
-
-SET @l1=LAST_INSERT_ID();
-
-INSERT INTO turns (lesson_id,character_id,turn_key,sort_order,role,text,translation,difficulty,speech_target,tokens,grammar_title,grammar_note,grammar_data) VALUES
-(@l1,@sara_id,'B1-081-L01-T01',1,'character','Du bist heute so still. Was ist los?','امروز خیلی ساکتی. چی شده؟',41,NULL,JSON_ARRAY(JSON_OBJECT('surface','Du','lemma','du','translation','تو','partOfSpeech','pronoun'),JSON_OBJECT('surface','bist','lemma','sein','translation','بودن','partOfSpeech','verb'),JSON_OBJECT('surface','heute','lemma','heute','translation','امروز','partOfSpeech','adverb'),JSON_OBJECT('surface','so','lemma','so','translation','این طور / آن طور','partOfSpeech','adverb'),JSON_OBJECT('surface','still','lemma','still','translation','ساکت','partOfSpeech','adjective','suffix','.'),JSON_OBJECT('surface','Was','lemma','was','translation','چی / چه','partOfSpeech','pronoun'),JSON_OBJECT('surface','ist','lemma','sein','translation','بودن','partOfSpeech','verb'),JSON_OBJECT('surface','los','lemma','los','translation','پیش آمده / در جریان','partOfSpeech','adjective','suffix','?')),NULL,NULL,NULL),
-(@l1,@mia_id,'B1-081-L01-T02',2,'learner','Ich muss mich entscheiden.','باید تصمیم بگیرم.',41,'Ich muss mich entscheiden.',JSON_ARRAY(JSON_OBJECT('surface','Ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','muss','lemma','müssen','translation','مجبور بودن / باید','partOfSpeech','verb'),JSON_OBJECT('surface','mich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','entscheiden','lemma','sich entscheiden','translation','تصمیم گرفتن','partOfSpeech','verb','suffix','.')),'sich entscheiden','Das reflexive Verb steht hier mit einem Reflexivpronomen.',JSON_OBJECT('focus','reflexive_verb')),
-(@l1,@sara_id,'B1-081-L01-T03',3,'character','Worum geht es?','موضوع چیه؟',41,NULL,JSON_ARRAY(JSON_OBJECT('surface','Worum','lemma','worum','translation','درباره چه چیزی','partOfSpeech','pronoun'),JSON_OBJECT('surface','geht','lemma','gehen','translation','رفتن','partOfSpeech','verb'),JSON_OBJECT('surface','es','lemma','es','translation','آن / این / ضمیر خنثی','partOfSpeech','pronoun','suffix','?')),NULL,NULL,NULL),
-(@l1,@mia_id,'B1-081-L01-T04',4,'learner','Ich habe ein Jobangebot in Leipzig bekommen.','یک پیشنهاد شغلی در لایپزیگ گرفته ام.',41,'Ich habe ein Jobangebot in Leipzig bekommen.',JSON_ARRAY(JSON_OBJECT('surface','Ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','habe','lemma','haben','translation','داشتن','partOfSpeech','verb'),JSON_OBJECT('surface','ein','lemma','ein','translation','یک / حرف تعریف نامعین','partOfSpeech','article'),JSON_OBJECT('surface','Jobangebot','lemma','Jobangebot','translation','پیشنهاد شغلی','partOfSpeech','noun'),JSON_OBJECT('surface','in','lemma','in','translation','در / داخل','partOfSpeech','preposition'),JSON_OBJECT('surface','Leipzig','lemma','Leipzig','translation','لایپزیگ','partOfSpeech','proper_noun'),JSON_OBJECT('surface','bekommen','lemma','bekommen','translation','گرفتن / دریافت کردن','partOfSpeech','verb','suffix','.')),NULL,NULL,NULL),
-(@l1,@sara_id,'B1-081-L01-T05',5,'character','Das klingt interessant. Freust du dich?','جالب به نظر می رسد. خوشحالی؟',41,NULL,JSON_ARRAY(JSON_OBJECT('surface','Das','lemma','das','translation','این / آن','partOfSpeech','pronoun'),JSON_OBJECT('surface','klingt','lemma','klingen','translation','به نظر رسیدن','partOfSpeech','verb'),JSON_OBJECT('surface','interessant','lemma','interessant','translation','جالب','partOfSpeech','adjective','suffix','.'),JSON_OBJECT('surface','Freust','lemma','sich freuen','translation','خوشحال بودن','partOfSpeech','verb'),JSON_OBJECT('surface','du','lemma','du','translation','تو','partOfSpeech','pronoun'),JSON_OBJECT('surface','dich','lemma','du','translation','تو','partOfSpeech','pronoun','suffix','?')),NULL,NULL,NULL),
-(@l1,@mia_id,'B1-081-L01-T06',6,'learner','Ja, aber ich bin auch unsicher.','آره، ولی کمی هم مرددم.',41,'Ja, aber ich bin auch unsicher.',JSON_ARRAY(JSON_OBJECT('surface','Ja','lemma','ja','translation','بله / آره','partOfSpeech','interjection','suffix',','),JSON_OBJECT('surface','aber','lemma','aber','translation','اما / ولی','partOfSpeech','conjunction'),JSON_OBJECT('surface','ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','bin','lemma','sein','translation','بودن','partOfSpeech','verb'),JSON_OBJECT('surface','auch','lemma','auch','translation','هم / همچنین','partOfSpeech','adverb'),JSON_OBJECT('surface','unsicher','lemma','unsicher','translation','مردد / بدون اطمینان','partOfSpeech','adjective','suffix','.')),NULL,NULL,NULL);
-
-INSERT INTO lesson_words (lesson_id,word_id,sort_order,learning_role,is_target,exposure_count) SELECT @l1,id,ROW_NUMBER() OVER (ORDER BY id),IF(introduced_series=81,'new','review'),0,1 FROM words WHERE course_id=@course_id AND ((lemma='du' AND part_of_speech='pronoun' AND translation='تو') OR (lemma='sein' AND part_of_speech='verb' AND translation='بودن') OR (lemma='heute' AND part_of_speech='adverb' AND translation='امروز') OR (lemma='so' AND part_of_speech='adverb' AND translation='این طور / آن طور') OR (lemma='still' AND part_of_speech='adjective' AND translation='ساکت') OR (lemma='was' AND part_of_speech='pronoun' AND translation='چی / چه') OR (lemma='los' AND part_of_speech='adjective' AND translation='پیش آمده / در جریان') OR (lemma='ich' AND part_of_speech='pronoun' AND translation='من') OR (lemma='müssen' AND part_of_speech='verb' AND translation='مجبور بودن / باید') OR (lemma='sich entscheiden' AND part_of_speech='verb' AND translation='تصمیم گرفتن') OR (lemma='worum' AND part_of_speech='pronoun' AND translation='درباره چه چیزی') OR (lemma='gehen' AND part_of_speech='verb' AND translation='رفتن') OR (lemma='es' AND part_of_speech='pronoun' AND translation='آن / این / ضمیر خنثی') OR (lemma='haben' AND part_of_speech='verb' AND translation='داشتن') OR (lemma='ein' AND part_of_speech='article' AND translation='یک / حرف تعریف نامعین') OR (lemma='Jobangebot' AND part_of_speech='noun' AND translation='پیشنهاد شغلی') OR (lemma='in' AND part_of_speech='preposition' AND translation='در / داخل') OR (lemma='Leipzig' AND part_of_speech='proper_noun' AND translation='لایپزیگ') OR (lemma='bekommen' AND part_of_speech='verb' AND translation='گرفتن / دریافت کردن') OR (lemma='das' AND part_of_speech='pronoun' AND translation='این / آن') OR (lemma='klingen' AND part_of_speech='verb' AND translation='به نظر رسیدن') OR (lemma='interessant' AND part_of_speech='adjective' AND translation='جالب') OR (lemma='sich freuen' AND part_of_speech='verb' AND translation='خوشحال بودن') OR (lemma='ja' AND part_of_speech='interjection' AND translation='بله / آره') OR (lemma='aber' AND part_of_speech='conjunction' AND translation='اما / ولی') OR (lemma='auch' AND part_of_speech='adverb' AND translation='هم / همچنین') OR (lemma='unsicher' AND part_of_speech='adjective' AND translation='مردد / بدون اطمینان')) ON DUPLICATE KEY UPDATE learning_role=VALUES(learning_role),is_target=0,exposure_count=VALUES(exposure_count);
-
-INSERT INTO lesson_words (lesson_id,word_id,sort_order,learning_role,is_target,exposure_count) SELECT @l1,id,999,'new',1,1 FROM words WHERE course_id=@course_id AND word_key='de-fa-b1-081-target-01' ON DUPLICATE KEY UPDATE learning_role='new',is_target=1,exposure_count=1;
-
-SET @l1t1=(SELECT id FROM turns WHERE lesson_id=@l1 AND sort_order=1);
-
-SET @l1t2=(SELECT id FROM turns WHERE lesson_id=@l1 AND sort_order=2);
-
-SET @l1new=(SELECT id FROM words WHERE course_id=@course_id AND lemma='sich entscheiden' AND part_of_speech='verb' AND translation='تصمیم گرفتن' LIMIT 1);
-
-INSERT INTO activities (lesson_id,activity_key,activity_type,sort_order,turn_id,word_id,prompt,prompt_translation,instruction,instruction_translation,difficulty,config) VALUES
-(@l1,'B1-081-L01-A01','listen',1,@l1t1,NULL,NULL,NULL,'Hör genau zu.','با دقت گوش کن.',41,NULL),
-(@l1,'B1-081-L01-A02','new_word',2,NULL,@l1new,'sich entscheiden','تصمیم گرفتن','Lerne den Ausdruck im Kontext.','این عبارت را در جمله یاد بگیر.',41,JSON_OBJECT('example','Ich muss mich entscheiden.')),
-(@l1,'B1-081-L01-A03','speak',3,@l1t2,NULL,NULL,NULL,'Sprich Mias Antwort.','پاسخ میا را با صدای بلند بگو.',41,NULL),
-(@l1,'B1-081-L01-A04','word_order',4,@l1t2,NULL,'Ich muss mich entscheiden.','باید تصمیم بگیرم.','Ordne die Wörter.','کلمه ها را مرتب کن.',41,JSON_OBJECT('tokens',JSON_ARRAY('Ich','muss','mich','entscheiden'))),
-(@l1,'B1-081-L01-A05','reading_comprehension',5,NULL,NULL,'Warum muss Mia sich entscheiden?','چرا میا باید تصمیم بگیرد؟','Wähle die richtige Antwort.','جواب درست را انتخاب کن.',41,JSON_OBJECT('question','Warum muss Mia sich entscheiden?','choices',JSON_ARRAY('Sie hat ein Jobangebot bekommen.','Sie möchte Kaffee bestellen.','Sie sucht ein Hotel.'),'correctIndex',0));
-
--- LESSON 2
-
-INSERT INTO lessons (chapter_id,prompt_character_id,learner_character_id,lesson_key,title,title_translation,learning_objective,learning_objective_translation,storyline_key,storyline_order,difficulty,estimated_duration_sec,sort_order,status,metadata) VALUES (@chapter_id,@sara_id,@mia_id,'B1-M01-C01-L02','Gründe abwägen','سبک سنگین کردن دلیل ها','Gründe mit weil erklären und Vor- und Nachteile einer Stelle nennen.','با weil دلیل بیاور و نکات مثبت و منفی یک موقعیت شغلی را بگو.','mia-sara-b1-decisions',2,41,300,2,'validated',JSON_OBJECT('staging',TRUE,'databaseRevision','v9.1.1'));
-
-SET @l2=LAST_INSERT_ID();
-
-INSERT INTO turns (lesson_id,character_id,turn_key,sort_order,role,text,translation,difficulty,speech_target,tokens,grammar_title,grammar_note,grammar_data) VALUES
-(@l2,@sara_id,'B1-081-L02-T01',1,'character','Warum bist du unsicher?','چرا مرددی؟',41,NULL,JSON_ARRAY(JSON_OBJECT('surface','Warum','lemma','warum','translation','چرا','partOfSpeech','adverb'),JSON_OBJECT('surface','bist','lemma','sein','translation','بودن','partOfSpeech','verb'),JSON_OBJECT('surface','du','lemma','du','translation','تو','partOfSpeech','pronoun'),JSON_OBJECT('surface','unsicher','lemma','unsicher','translation','مردد / بدون اطمینان','partOfSpeech','adjective','suffix','?')),NULL,NULL,NULL),
-(@l2,@mia_id,'B1-081-L02-T02',2,'learner','Weil die Stelle interessant ist, aber Leipzig weit weg ist.','چون موقعیت شغلی جالب است، ولی لایپزیگ خیلی دور است.',41,'Weil die Stelle interessant ist, aber Leipzig weit weg ist.',JSON_ARRAY(JSON_OBJECT('surface','Weil','lemma','weil','translation','چون / زیرا','partOfSpeech','conjunction'),JSON_OBJECT('surface','die','lemma','der','translation','حرف تعریف','partOfSpeech','article'),JSON_OBJECT('surface','Stelle','lemma','Stelle','translation','موقعیت شغلی','partOfSpeech','noun'),JSON_OBJECT('surface','interessant','lemma','interessant','translation','جالب','partOfSpeech','adjective'),JSON_OBJECT('surface','ist','lemma','sein','translation','بودن','partOfSpeech','verb','suffix',','),JSON_OBJECT('surface','aber','lemma','aber','translation','اما / ولی','partOfSpeech','conjunction'),JSON_OBJECT('surface','Leipzig','lemma','Leipzig','translation','لایپزیگ','partOfSpeech','proper_noun'),JSON_OBJECT('surface','weit','lemma','weit','translation','دور','partOfSpeech','adjective'),JSON_OBJECT('surface','weg','lemma','weg','translation','دور / آن طرف','partOfSpeech','adverb'),JSON_OBJECT('surface','ist','lemma','sein','translation','بودن','partOfSpeech','verb','suffix','.')),'weil + Nebensatz','Nach weil steht das konjugierte Verb am Ende.',JSON_OBJECT('focus','verb_final')),
-(@l2,@sara_id,'B1-081-L02-T03',3,'character','Möchtest du denn umziehen?','پس می خواهی اسباب کشی کنی؟',41,NULL,JSON_ARRAY(JSON_OBJECT('surface','Möchtest','lemma','möchten','translation','خواستن / مایل بودن','partOfSpeech','verb'),JSON_OBJECT('surface','du','lemma','du','translation','تو','partOfSpeech','pronoun'),JSON_OBJECT('surface','denn','lemma','denn','translation','پس / آخر','partOfSpeech','particle'),JSON_OBJECT('surface','umziehen','lemma','umziehen','translation','اسباب کشی کردن','partOfSpeech','verb','suffix','?')),NULL,NULL,NULL),
-(@l2,@mia_id,'B1-081-L02-T04',4,'learner','Das weiß ich noch nicht.','هنوز نمی دانم.',41,'Das weiß ich noch nicht.',JSON_ARRAY(JSON_OBJECT('surface','Das','lemma','das','translation','این / آن','partOfSpeech','pronoun'),JSON_OBJECT('surface','weiß','lemma','wissen','translation','دانستن','partOfSpeech','verb'),JSON_OBJECT('surface','ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','noch','lemma','noch','translation','هنوز','partOfSpeech','adverb'),JSON_OBJECT('surface','nicht','lemma','nicht','translation','نه / نیست','partOfSpeech','particle','suffix','.')),NULL,NULL,NULL),
-(@l2,@sara_id,'B1-081-L02-T05',5,'character','Was spricht für die Stelle?','چه چیزی به نفع این موقعیت شغلی است؟',41,NULL,JSON_ARRAY(JSON_OBJECT('surface','Was','lemma','was','translation','چی / چه','partOfSpeech','pronoun'),JSON_OBJECT('surface','spricht','lemma','sprechen','translation','صحبت کردن / حرف زدن','partOfSpeech','verb'),JSON_OBJECT('surface','für','lemma','für','translation','برای / به نفع','partOfSpeech','preposition'),JSON_OBJECT('surface','die','lemma','der','translation','حرف تعریف','partOfSpeech','article'),JSON_OBJECT('surface','Stelle','lemma','Stelle','translation','موقعیت شغلی','partOfSpeech','noun','suffix','?')),NULL,NULL,NULL),
-(@l2,@mia_id,'B1-081-L02-T06',6,'learner','Ich könnte dort mehr lernen und mehr verdienen.','می توانم آنجا بیشتر یاد بگیرم و درآمد بیشتری داشته باشم.',41,'Ich könnte dort mehr lernen und mehr verdienen.',JSON_ARRAY(JSON_OBJECT('surface','Ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','könnte','lemma','können','translation','توانستن / بتوان','partOfSpeech','verb'),JSON_OBJECT('surface','dort','lemma','dort','translation','آنجا','partOfSpeech','adverb'),JSON_OBJECT('surface','mehr','lemma','mehr','translation','دیگه / بیشتر','partOfSpeech','adverb'),JSON_OBJECT('surface','lernen','lemma','lernen','translation','یاد گرفتن','partOfSpeech','verb'),JSON_OBJECT('surface','und','lemma','und','translation','و','partOfSpeech','conjunction'),JSON_OBJECT('surface','mehr','lemma','mehr','translation','دیگه / بیشتر','partOfSpeech','adverb'),JSON_OBJECT('surface','verdienen','lemma','verdienen','translation','درآمد داشتن','partOfSpeech','verb','suffix','.')),'könnte','Mit könnte klingt eine Möglichkeit vorsichtiger.',JSON_OBJECT('focus','konjunktiv_ii'));
-
-INSERT INTO lesson_words (lesson_id,word_id,sort_order,learning_role,is_target,exposure_count) SELECT @l2,id,ROW_NUMBER() OVER (ORDER BY id),IF(introduced_series=81,'new','review'),0,1 FROM words WHERE course_id=@course_id AND ((lemma='warum' AND part_of_speech='adverb' AND translation='چرا') OR (lemma='sein' AND part_of_speech='verb' AND translation='بودن') OR (lemma='du' AND part_of_speech='pronoun' AND translation='تو') OR (lemma='unsicher' AND part_of_speech='adjective' AND translation='مردد / بدون اطمینان') OR (lemma='weil' AND part_of_speech='conjunction' AND translation='چون / زیرا') OR (lemma='der' AND part_of_speech='article' AND translation='حرف تعریف') OR (lemma='Stelle' AND part_of_speech='noun' AND translation='موقعیت شغلی') OR (lemma='interessant' AND part_of_speech='adjective' AND translation='جالب') OR (lemma='aber' AND part_of_speech='conjunction' AND translation='اما / ولی') OR (lemma='Leipzig' AND part_of_speech='proper_noun' AND translation='لایپزیگ') OR (lemma='weit' AND part_of_speech='adjective' AND translation='دور') OR (lemma='weg' AND part_of_speech='adverb' AND translation='دور / آن طرف') OR (lemma='möchten' AND part_of_speech='verb' AND translation='خواستن / مایل بودن') OR (lemma='denn' AND part_of_speech='particle' AND translation='پس / آخر') OR (lemma='umziehen' AND part_of_speech='verb' AND translation='اسباب کشی کردن') OR (lemma='das' AND part_of_speech='pronoun' AND translation='این / آن') OR (lemma='wissen' AND part_of_speech='verb' AND translation='دانستن') OR (lemma='ich' AND part_of_speech='pronoun' AND translation='من') OR (lemma='noch' AND part_of_speech='adverb' AND translation='هنوز') OR (lemma='nicht' AND part_of_speech='particle' AND translation='نه / نیست') OR (lemma='was' AND part_of_speech='pronoun' AND translation='چی / چه') OR (lemma='sprechen' AND part_of_speech='verb' AND translation='صحبت کردن / حرف زدن') OR (lemma='für' AND part_of_speech='preposition' AND translation='برای / به نفع') OR (lemma='können' AND part_of_speech='verb' AND translation='توانستن / بتوان') OR (lemma='dort' AND part_of_speech='adverb' AND translation='آنجا') OR (lemma='mehr' AND part_of_speech='adverb' AND translation='دیگه / بیشتر') OR (lemma='lernen' AND part_of_speech='verb' AND translation='یاد گرفتن') OR (lemma='und' AND part_of_speech='conjunction' AND translation='و') OR (lemma='verdienen' AND part_of_speech='verb' AND translation='درآمد داشتن')) ON DUPLICATE KEY UPDATE learning_role=VALUES(learning_role),is_target=0,exposure_count=VALUES(exposure_count);
-
-INSERT INTO lesson_words (lesson_id,word_id,sort_order,learning_role,is_target,exposure_count) SELECT @l2,id,999,'new',1,1 FROM words WHERE course_id=@course_id AND word_key='de-fa-b1-081-target-02' ON DUPLICATE KEY UPDATE learning_role='new',is_target=1,exposure_count=1;
-
-SET @l2t1=(SELECT id FROM turns WHERE lesson_id=@l2 AND sort_order=1);
-
-SET @l2t2=(SELECT id FROM turns WHERE lesson_id=@l2 AND sort_order=2);
-
-SET @l2new=(SELECT id FROM words WHERE course_id=@course_id AND lemma='weil' AND part_of_speech='conjunction' AND translation='چون / زیرا' LIMIT 1);
-
-INSERT INTO activities (lesson_id,activity_key,activity_type,sort_order,turn_id,word_id,prompt,prompt_translation,instruction,instruction_translation,difficulty,config) VALUES
-(@l2,'B1-081-L02-A01','listen',1,@l2t1,NULL,NULL,NULL,'Hör genau zu.','با دقت گوش کن.',41,NULL),
-(@l2,'B1-081-L02-A02','new_word',2,NULL,@l2new,'weil','چون / زیرا','Lerne den Ausdruck im Kontext.','این عبارت را در جمله یاد بگیر.',41,JSON_OBJECT('example','Weil die Stelle interessant ist, aber Leipzig weit weg ist.')),
-(@l2,'B1-081-L02-A03','speak',3,@l2t2,NULL,NULL,NULL,'Sprich Mias Antwort.','پاسخ میا را با صدای بلند بگو.',41,NULL),
-(@l2,'B1-081-L02-A04','word_order',4,@l2t2,NULL,'Weil die Stelle interessant ist, aber Leipzig weit weg ist.','چون موقعیت شغلی جالب است، ولی لایپزیگ خیلی دور است.','Ordne die Wörter.','کلمه ها را مرتب کن.',41,JSON_OBJECT('tokens',JSON_ARRAY('Weil','die','Stelle','interessant','ist','aber','Leipzig','weit','weg','ist'))),
-(@l2,'B1-081-L02-A05','reading_comprehension',5,NULL,NULL,'Warum ist Mia unsicher?','چرا میا مردد است؟','Wähle die richtige Antwort.','جواب درست را انتخاب کن.',41,JSON_OBJECT('question','Warum ist Mia unsicher?','choices',JSON_ARRAY('Die Stelle ist langweilig.','Leipzig ist weit weg.','Sara zieht heute um.'),'correctIndex',1));
-
--- LESSON 3
-
-INSERT INTO lessons (chapter_id,prompt_character_id,learner_character_id,lesson_key,title,title_translation,learning_objective,learning_objective_translation,storyline_key,storyline_order,difficulty,estimated_duration_sec,sort_order,status,metadata) VALUES (@chapter_id,@sara_id,@mia_id,'B1-M01-C01-L03','Was ist mir wichtig?','چه چیزی برایم مهم است؟','Persönliche Prioritäten ausdrücken und eine Unsicherheit begründen.','اولویت های شخصی را بیان کن و برای تردیدت دلیل بیاور.','mia-sara-b1-decisions',3,42,300,3,'validated',JSON_OBJECT('staging',TRUE,'databaseRevision','v9.1.1'));
-
-SET @l3=LAST_INSERT_ID();
-
-INSERT INTO turns (lesson_id,character_id,turn_key,sort_order,role,text,translation,difficulty,speech_target,tokens,grammar_title,grammar_note,grammar_data) VALUES
-(@l3,@sara_id,'B1-081-L03-T01',1,'character','Was ist dir bei der Entscheidung wichtig?','در این تصمیم چه چیزی برایت مهم است؟',42,NULL,JSON_ARRAY(JSON_OBJECT('surface','Was','lemma','was','translation','چی / چه','partOfSpeech','pronoun'),JSON_OBJECT('surface','ist','lemma','sein','translation','بودن','partOfSpeech','verb'),JSON_OBJECT('surface','dir','lemma','du','translation','تو','partOfSpeech','pronoun'),JSON_OBJECT('surface','bei','lemma','bei','translation','در / هنگام','partOfSpeech','preposition'),JSON_OBJECT('surface','der','lemma','der','translation','حرف تعریف','partOfSpeech','article'),JSON_OBJECT('surface','Entscheidung','lemma','Entscheidung','translation','تصمیم','partOfSpeech','noun'),JSON_OBJECT('surface','wichtig','lemma','wichtig','translation','مهم','partOfSpeech','adjective','suffix','?')),NULL,NULL,NULL),
-(@l3,@mia_id,'B1-081-L03-T02',2,'learner','Ich möchte in der Nähe meiner Freunde bleiben.','می خواهم نزدیک دوستانم بمانم.',42,'Ich möchte in der Nähe meiner Freunde bleiben.',JSON_ARRAY(JSON_OBJECT('surface','Ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','möchte','lemma','möchten','translation','خواستن / مایل بودن','partOfSpeech','verb'),JSON_OBJECT('surface','in','lemma','in','translation','در / داخل','partOfSpeech','preposition'),JSON_OBJECT('surface','der','lemma','der','translation','حرف تعریف','partOfSpeech','article'),JSON_OBJECT('surface','Nähe','lemma','Nähe','translation','نزدیکی','partOfSpeech','noun'),JSON_OBJECT('surface','meiner','lemma','mein','translation','مال من / من','partOfSpeech','determiner'),JSON_OBJECT('surface','Freunde','lemma','Freund','translation','دوست','partOfSpeech','noun'),JSON_OBJECT('surface','bleiben','lemma','bleiben','translation','ماندن','partOfSpeech','verb','suffix','.')),NULL,NULL,NULL),
-(@l3,@sara_id,'B1-081-L03-T03',3,'character','Und was ist mit der neuen Arbeit?','پس کار جدید چی؟',42,NULL,JSON_ARRAY(JSON_OBJECT('surface','Und','lemma','und','translation','و','partOfSpeech','conjunction'),JSON_OBJECT('surface','was','lemma','was','translation','چی / چه','partOfSpeech','pronoun'),JSON_OBJECT('surface','ist','lemma','sein','translation','بودن','partOfSpeech','verb'),JSON_OBJECT('surface','mit','lemma','mit','translation','با','partOfSpeech','preposition'),JSON_OBJECT('surface','der','lemma','der','translation','حرف تعریف','partOfSpeech','article'),JSON_OBJECT('surface','neuen','lemma','neu','translation','جدید / تازه','partOfSpeech','adjective'),JSON_OBJECT('surface','Arbeit','lemma','Arbeit','translation','کار','partOfSpeech','noun','suffix','?')),NULL,NULL,NULL),
-(@l3,@mia_id,'B1-081-L03-T04',4,'learner','Die Arbeit gefällt mir, weil ich dort mehr Verantwortung hätte.','از کار خوشم می آید، چون آنجا مسوولیت بیشتری خواهم داشت.',42,'Die Arbeit gefällt mir, weil ich dort mehr Verantwortung hätte.',JSON_ARRAY(JSON_OBJECT('surface','Die','lemma','der','translation','حرف تعریف','partOfSpeech','article'),JSON_OBJECT('surface','Arbeit','lemma','Arbeit','translation','کار','partOfSpeech','noun'),JSON_OBJECT('surface','gefällt','lemma','gefallen','translation','خوش آمدن','partOfSpeech','verb'),JSON_OBJECT('surface','mir','lemma','ich','translation','من','partOfSpeech','pronoun','suffix',','),JSON_OBJECT('surface','weil','lemma','weil','translation','چون / زیرا','partOfSpeech','conjunction'),JSON_OBJECT('surface','ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','dort','lemma','dort','translation','آنجا','partOfSpeech','adverb'),JSON_OBJECT('surface','mehr','lemma','mehr','translation','دیگه / بیشتر','partOfSpeech','adverb'),JSON_OBJECT('surface','Verantwortung','lemma','Verantwortung','translation','مسوولیت','partOfSpeech','noun'),JSON_OBJECT('surface','hätte','lemma','haben','translation','داشتن','partOfSpeech','verb','suffix','.')),'hätte','Mit hätte beschreibt Mia eine vorgestellte Möglichkeit.',JSON_OBJECT('focus','konjunktiv_ii')),
-(@l3,@sara_id,'B1-081-L03-T05',5,'character','Beides ist wichtig.','هر دو مهم اند.',42,NULL,JSON_ARRAY(JSON_OBJECT('surface','Beides','lemma','beide','translation','هر دو','partOfSpeech','pronoun'),JSON_OBJECT('surface','ist','lemma','sein','translation','بودن','partOfSpeech','verb'),JSON_OBJECT('surface','wichtig','lemma','wichtig','translation','مهم','partOfSpeech','adjective','suffix','.')),NULL,NULL,NULL),
-(@l3,@mia_id,'B1-081-L03-T06',6,'learner','Genau. Deshalb brauche ich noch Zeit.','دقیقا. برای همین هنوز به زمان نیاز دارم.',42,'Genau. Deshalb brauche ich noch Zeit.',JSON_ARRAY(JSON_OBJECT('surface','Genau','lemma','genau','translation','دقیقا','partOfSpeech','adverb','suffix','.'),JSON_OBJECT('surface','Deshalb','lemma','deshalb','translation','برای همین / بنابراین','partOfSpeech','adverb'),JSON_OBJECT('surface','brauche','lemma','brauchen','translation','نیاز داشتن / لازم داشتن','partOfSpeech','verb'),JSON_OBJECT('surface','ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','noch','lemma','noch','translation','هنوز','partOfSpeech','adverb'),JSON_OBJECT('surface','Zeit','lemma','Zeit','translation','وقت / زمان','partOfSpeech','noun','suffix','.')),NULL,NULL,NULL);
-
-INSERT INTO lesson_words (lesson_id,word_id,sort_order,learning_role,is_target,exposure_count) SELECT @l3,id,ROW_NUMBER() OVER (ORDER BY id),IF(introduced_series=81,'new','review'),0,1 FROM words WHERE course_id=@course_id AND ((lemma='was' AND part_of_speech='pronoun' AND translation='چی / چه') OR (lemma='sein' AND part_of_speech='verb' AND translation='بودن') OR (lemma='du' AND part_of_speech='pronoun' AND translation='تو') OR (lemma='bei' AND part_of_speech='preposition' AND translation='در / هنگام') OR (lemma='der' AND part_of_speech='article' AND translation='حرف تعریف') OR (lemma='Entscheidung' AND part_of_speech='noun' AND translation='تصمیم') OR (lemma='wichtig' AND part_of_speech='adjective' AND translation='مهم') OR (lemma='ich' AND part_of_speech='pronoun' AND translation='من') OR (lemma='möchten' AND part_of_speech='verb' AND translation='خواستن / مایل بودن') OR (lemma='in' AND part_of_speech='preposition' AND translation='در / داخل') OR (lemma='Nähe' AND part_of_speech='noun' AND translation='نزدیکی') OR (lemma='mein' AND part_of_speech='determiner' AND translation='مال من / من') OR (lemma='Freund' AND part_of_speech='noun' AND translation='دوست') OR (lemma='bleiben' AND part_of_speech='verb' AND translation='ماندن') OR (lemma='und' AND part_of_speech='conjunction' AND translation='و') OR (lemma='mit' AND part_of_speech='preposition' AND translation='با') OR (lemma='neu' AND part_of_speech='adjective' AND translation='جدید / تازه') OR (lemma='Arbeit' AND part_of_speech='noun' AND translation='کار') OR (lemma='gefallen' AND part_of_speech='verb' AND translation='خوش آمدن') OR (lemma='weil' AND part_of_speech='conjunction' AND translation='چون / زیرا') OR (lemma='dort' AND part_of_speech='adverb' AND translation='آنجا') OR (lemma='mehr' AND part_of_speech='adverb' AND translation='دیگه / بیشتر') OR (lemma='Verantwortung' AND part_of_speech='noun' AND translation='مسوولیت') OR (lemma='haben' AND part_of_speech='verb' AND translation='داشتن') OR (lemma='beide' AND part_of_speech='pronoun' AND translation='هر دو') OR (lemma='genau' AND part_of_speech='adverb' AND translation='دقیقا') OR (lemma='deshalb' AND part_of_speech='adverb' AND translation='برای همین / بنابراین') OR (lemma='brauchen' AND part_of_speech='verb' AND translation='نیاز داشتن / لازم داشتن') OR (lemma='noch' AND part_of_speech='adverb' AND translation='هنوز') OR (lemma='Zeit' AND part_of_speech='noun' AND translation='وقت / زمان')) ON DUPLICATE KEY UPDATE learning_role=VALUES(learning_role),is_target=0,exposure_count=VALUES(exposure_count);
-
-INSERT INTO lesson_words (lesson_id,word_id,sort_order,learning_role,is_target,exposure_count) SELECT @l3,id,999,'new',1,1 FROM words WHERE course_id=@course_id AND word_key='de-fa-b1-081-target-03' ON DUPLICATE KEY UPDATE learning_role='new',is_target=1,exposure_count=1;
-
-SET @l3t1=(SELECT id FROM turns WHERE lesson_id=@l3 AND sort_order=1);
-
-SET @l3t2=(SELECT id FROM turns WHERE lesson_id=@l3 AND sort_order=2);
-
-SET @l3new=(SELECT id FROM words WHERE course_id=@course_id AND lemma='Verantwortung' AND part_of_speech='noun' AND translation='مسوولیت' LIMIT 1);
-
-INSERT INTO activities (lesson_id,activity_key,activity_type,sort_order,turn_id,word_id,prompt,prompt_translation,instruction,instruction_translation,difficulty,config) VALUES
-(@l3,'B1-081-L03-A01','listen',1,@l3t1,NULL,NULL,NULL,'Hör genau zu.','با دقت گوش کن.',42,NULL),
-(@l3,'B1-081-L03-A02','new_word',2,NULL,@l3new,'Verantwortung','مسوولیت','Lerne den Ausdruck im Kontext.','این عبارت را در جمله یاد بگیر.',42,JSON_OBJECT('example','Die Arbeit gefällt mir, weil ich dort mehr Verantwortung hätte.')),
-(@l3,'B1-081-L03-A03','speak',3,@l3t2,NULL,NULL,NULL,'Sprich Mias Antwort.','پاسخ میا را با صدای بلند بگو.',42,NULL),
-(@l3,'B1-081-L03-A04','word_order',4,@l3t2,NULL,'Ich möchte in der Nähe meiner Freunde bleiben.','می خواهم نزدیک دوستانم بمانم.','Ordne die Wörter.','کلمه ها را مرتب کن.',42,JSON_OBJECT('tokens',JSON_ARRAY('Ich','möchte','in','der','Nähe','meiner','Freunde','bleiben'))),
-(@l3,'B1-081-L03-A05','reading_comprehension',5,NULL,NULL,'Was ist Mia besonders wichtig?','چه چیزی برای میا اهمیت ویژه دارد؟','Wähle die richtige Antwort.','جواب درست را انتخاب کن.',42,JSON_OBJECT('question','Was ist Mia besonders wichtig?','choices',JSON_ARRAY('In der Nähe ihrer Freunde zu bleiben.','Sofort ein Ticket zu kaufen.','Nur mehr Geld zu verdienen.'),'correctIndex',0));
-
--- LESSON 4
-
-INSERT INTO lessons (chapter_id,prompt_character_id,learner_character_id,lesson_key,title,title_translation,learning_objective,learning_objective_translation,storyline_key,storyline_order,difficulty,estimated_duration_sec,sort_order,status,metadata) VALUES (@chapter_id,@sara_id,@mia_id,'B1-M01-C01-L04','Eine Liste machen','درست کردن یک فهرست','Einen konkreten nächsten Schritt planen und Hilfe wertschätzen.','یک قدم بعدی مشخص برنامه ریزی کن و از کمک طرف مقابل تشکر کن.','mia-sara-b1-decisions',4,42,300,4,'validated',JSON_OBJECT('staging',TRUE,'databaseRevision','v9.1.1'));
-
-SET @l4=LAST_INSERT_ID();
-
-INSERT INTO turns (lesson_id,character_id,turn_key,sort_order,role,text,translation,difficulty,speech_target,tokens,grammar_title,grammar_note,grammar_data) VALUES
-(@l4,@sara_id,'B1-081-L04-T01',1,'character','Wie willst du dich entscheiden?','می خواهی چطور تصمیم بگیری؟',42,NULL,JSON_ARRAY(JSON_OBJECT('surface','Wie','lemma','wie','translation','چطور / چگونه','partOfSpeech','adverb'),JSON_OBJECT('surface','willst','lemma','wollen','translation','خواستن','partOfSpeech','verb'),JSON_OBJECT('surface','du','lemma','du','translation','تو','partOfSpeech','pronoun'),JSON_OBJECT('surface','dich','lemma','du','translation','تو','partOfSpeech','pronoun'),JSON_OBJECT('surface','entscheiden','lemma','sich entscheiden','translation','تصمیم گرفتن','partOfSpeech','verb','suffix','?')),NULL,NULL,NULL),
-(@l4,@mia_id,'B1-081-L04-T02',2,'learner','Ich schreibe zuerst alle Vorteile und Nachteile auf.','اول همه مزایا و معایب را یادداشت می کنم.',42,'Ich schreibe zuerst alle Vorteile und Nachteile auf.',JSON_ARRAY(JSON_OBJECT('surface','Ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','schreibe','lemma','aufschreiben','translation','یادداشت کردن','partOfSpeech','verb'),JSON_OBJECT('surface','zuerst','lemma','zuerst','translation','اول / ابتدا','partOfSpeech','adverb'),JSON_OBJECT('surface','alle','lemma','alle','translation','همه','partOfSpeech','determiner'),JSON_OBJECT('surface','Vorteile','lemma','Vorteil','translation','مزیت','partOfSpeech','noun'),JSON_OBJECT('surface','und','lemma','und','translation','و','partOfSpeech','conjunction'),JSON_OBJECT('surface','Nachteile','lemma','Nachteil','translation','عیب / نکته منفی','partOfSpeech','noun'),JSON_OBJECT('surface','auf','lemma','aufschreiben','translation','یادداشت کردن','partOfSpeech','verb','suffix','.')),NULL,NULL,NULL),
-(@l4,@sara_id,'B1-081-L04-T03',3,'character','Das ist eine gute Idee.','ایده خوبی است.',42,NULL,JSON_ARRAY(JSON_OBJECT('surface','Das','lemma','das','translation','این / آن','partOfSpeech','pronoun'),JSON_OBJECT('surface','ist','lemma','sein','translation','بودن','partOfSpeech','verb'),JSON_OBJECT('surface','eine','lemma','ein','translation','یک / حرف تعریف نامعین','partOfSpeech','article'),JSON_OBJECT('surface','gute','lemma','gut','translation','خوب','partOfSpeech','adjective'),JSON_OBJECT('surface','Idee','lemma','Idee','translation','ایده','partOfSpeech','noun','suffix','.')),NULL,NULL,NULL),
-(@l4,@mia_id,'B1-081-L04-T04',4,'learner','Danach kann ich in Ruhe darüber nachdenken.','بعد از آن می توانم با آرامش درباره اش فکر کنم.',42,'Danach kann ich in Ruhe darüber nachdenken.',JSON_ARRAY(JSON_OBJECT('surface','Danach','lemma','danach','translation','بعد از آن / بعدش','partOfSpeech','adverb'),JSON_OBJECT('surface','kann','lemma','können','translation','توانستن / بتوان','partOfSpeech','verb'),JSON_OBJECT('surface','ich','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','in','lemma','in','translation','در / داخل','partOfSpeech','preposition'),JSON_OBJECT('surface','Ruhe','lemma','Ruhe','translation','آرامش','partOfSpeech','noun'),JSON_OBJECT('surface','darüber','lemma','darüber','translation','درباره آن','partOfSpeech','adverb'),JSON_OBJECT('surface','nachdenken','lemma','nachdenken','translation','فکر کردن','partOfSpeech','verb','suffix','.')),NULL,NULL,NULL),
-(@l4,@sara_id,'B1-081-L04-T05',5,'character','Und wann sprechen wir wieder?','و کی دوباره حرف می زنیم؟',42,NULL,JSON_ARRAY(JSON_OBJECT('surface','Und','lemma','und','translation','و','partOfSpeech','conjunction'),JSON_OBJECT('surface','wann','lemma','wann','translation','کی / چه زمانی','partOfSpeech','adverb'),JSON_OBJECT('surface','sprechen','lemma','sprechen','translation','صحبت کردن / حرف زدن','partOfSpeech','verb'),JSON_OBJECT('surface','wir','lemma','wir','translation','ما','partOfSpeech','pronoun'),JSON_OBJECT('surface','wieder','lemma','wieder','translation','دوباره','partOfSpeech','adverb','suffix','?')),NULL,NULL,NULL),
-(@l4,@mia_id,'B1-081-L04-T06',6,'learner','Morgen. Danke, dass du mir hilfst.','فردا. ممنون که کمکم می کنی.',42,'Morgen. Danke, dass du mir hilfst.',JSON_ARRAY(JSON_OBJECT('surface','Morgen','lemma','morgen','translation','فردا','partOfSpeech','adverb','suffix','.'),JSON_OBJECT('surface','Danke','lemma','danke','translation','ممنون','partOfSpeech','interjection','suffix',','),JSON_OBJECT('surface','dass','lemma','dass','translation','که','partOfSpeech','conjunction'),JSON_OBJECT('surface','du','lemma','du','translation','تو','partOfSpeech','pronoun'),JSON_OBJECT('surface','mir','lemma','ich','translation','من','partOfSpeech','pronoun'),JSON_OBJECT('surface','hilfst','lemma','helfen','translation','کمک کردن','partOfSpeech','verb','suffix','.')),'dass + Nebensatz','Nach dass steht das konjugierte Verb am Ende.',JSON_OBJECT('focus','verb_final'));
-
-INSERT INTO lesson_words (lesson_id,word_id,sort_order,learning_role,is_target,exposure_count) SELECT @l4,id,ROW_NUMBER() OVER (ORDER BY id),IF(introduced_series=81,'new','review'),0,1 FROM words WHERE course_id=@course_id AND ((lemma='wie' AND part_of_speech='adverb' AND translation='چطور / چگونه') OR (lemma='wollen' AND part_of_speech='verb' AND translation='خواستن') OR (lemma='du' AND part_of_speech='pronoun' AND translation='تو') OR (lemma='sich entscheiden' AND part_of_speech='verb' AND translation='تصمیم گرفتن') OR (lemma='ich' AND part_of_speech='pronoun' AND translation='من') OR (lemma='aufschreiben' AND part_of_speech='verb' AND translation='یادداشت کردن') OR (lemma='zuerst' AND part_of_speech='adverb' AND translation='اول / ابتدا') OR (lemma='alle' AND part_of_speech='determiner' AND translation='همه') OR (lemma='Vorteil' AND part_of_speech='noun' AND translation='مزیت') OR (lemma='und' AND part_of_speech='conjunction' AND translation='و') OR (lemma='Nachteil' AND part_of_speech='noun' AND translation='عیب / نکته منفی') OR (lemma='das' AND part_of_speech='pronoun' AND translation='این / آن') OR (lemma='sein' AND part_of_speech='verb' AND translation='بودن') OR (lemma='ein' AND part_of_speech='article' AND translation='یک / حرف تعریف نامعین') OR (lemma='gut' AND part_of_speech='adjective' AND translation='خوب') OR (lemma='Idee' AND part_of_speech='noun' AND translation='ایده') OR (lemma='danach' AND part_of_speech='adverb' AND translation='بعد از آن / بعدش') OR (lemma='können' AND part_of_speech='verb' AND translation='توانستن / بتوان') OR (lemma='in' AND part_of_speech='preposition' AND translation='در / داخل') OR (lemma='Ruhe' AND part_of_speech='noun' AND translation='آرامش') OR (lemma='darüber' AND part_of_speech='adverb' AND translation='درباره آن') OR (lemma='nachdenken' AND part_of_speech='verb' AND translation='فکر کردن') OR (lemma='wann' AND part_of_speech='adverb' AND translation='کی / چه زمانی') OR (lemma='sprechen' AND part_of_speech='verb' AND translation='صحبت کردن / حرف زدن') OR (lemma='wir' AND part_of_speech='pronoun' AND translation='ما') OR (lemma='wieder' AND part_of_speech='adverb' AND translation='دوباره') OR (lemma='morgen' AND part_of_speech='adverb' AND translation='فردا') OR (lemma='danke' AND part_of_speech='interjection' AND translation='ممنون') OR (lemma='dass' AND part_of_speech='conjunction' AND translation='که') OR (lemma='helfen' AND part_of_speech='verb' AND translation='کمک کردن')) ON DUPLICATE KEY UPDATE learning_role=VALUES(learning_role),is_target=0,exposure_count=VALUES(exposure_count);
-
-INSERT INTO lesson_words (lesson_id,word_id,sort_order,learning_role,is_target,exposure_count) SELECT @l4,id,999,'new',1,1 FROM words WHERE course_id=@course_id AND word_key='de-fa-b1-081-target-04' ON DUPLICATE KEY UPDATE learning_role='new',is_target=1,exposure_count=1;
-
-SET @l4t1=(SELECT id FROM turns WHERE lesson_id=@l4 AND sort_order=1);
-
-SET @l4t2=(SELECT id FROM turns WHERE lesson_id=@l4 AND sort_order=2);
-
-SET @l4new=(SELECT id FROM words WHERE course_id=@course_id AND lemma='Vorteil' AND part_of_speech='noun' AND translation='مزیت' LIMIT 1);
-
-INSERT INTO activities (lesson_id,activity_key,activity_type,sort_order,turn_id,word_id,prompt,prompt_translation,instruction,instruction_translation,difficulty,config) VALUES
-(@l4,'B1-081-L04-A01','listen',1,@l4t1,NULL,NULL,NULL,'Hör genau zu.','با دقت گوش کن.',42,NULL),
-(@l4,'B1-081-L04-A02','new_word',2,NULL,@l4new,'Vorteil','مزیت','Lerne den Ausdruck im Kontext.','این عبارت را در جمله یاد بگیر.',42,JSON_OBJECT('example','Ich schreibe zuerst alle Vorteile und Nachteile auf.')),
-(@l4,'B1-081-L04-A03','speak',3,@l4t2,NULL,NULL,NULL,'Sprich Mias Antwort.','پاسخ میا را با صدای بلند بگو.',42,NULL),
-(@l4,'B1-081-L04-A04','word_order',4,@l4t2,NULL,'Ich schreibe zuerst alle Vorteile und Nachteile auf.','اول همه مزایا و معایب را یادداشت می کنم.','Ordne die Wörter.','کلمه ها را مرتب کن.',42,JSON_OBJECT('tokens',JSON_ARRAY('Ich','schreibe','zuerst','alle','Vorteile','und','Nachteile','auf'))),
-(@l4,'B1-081-L04-A05','reading_comprehension',5,NULL,NULL,'Was macht Mia als Nächstes?','میا در قدم بعدی چه کار می کند؟','Wähle die richtige Antwort.','جواب درست را انتخاب کن.',42,JSON_OBJECT('question','Was macht Mia als Nächstes?','choices',JSON_ARRAY('Sie sagt sofort ab.','Sie schreibt Vorteile und Nachteile auf.','Sie zieht noch heute um.'),'correctIndex',1));
-
--- Atomic v9.1.1 chapter guardrails.
-
-SET @lesson_count=(SELECT COUNT(*) FROM lessons WHERE chapter_id=@chapter_id);
-
-SET @turn_count=(SELECT COUNT(*) FROM turns WHERE lesson_id IN (@l1,@l2,@l3,@l4));
-
-SET @learner_turns=(SELECT COUNT(*) FROM turns WHERE lesson_id IN (@l1,@l2,@l3,@l4) AND role='learner');
-
-SET @learner_targets=(SELECT COUNT(*) FROM turns WHERE lesson_id IN (@l1,@l2,@l3,@l4) AND role='learner' AND speech_target IS NOT NULL AND CHAR_LENGTH(TRIM(speech_target))>0);
-
-SET @reading_count=(SELECT COUNT(*) FROM activities WHERE lesson_id IN (@l1,@l2,@l3,@l4) AND activity_type='reading_comprehension');
-
-SET @character_pair_count=(SELECT COUNT(*) FROM lessons WHERE chapter_id=@chapter_id AND prompt_character_id=@sara_id AND learner_character_id=@mia_id AND prompt_character_id<>learner_character_id);
-
-SET @bad_token_tuples=(SELECT COUNT(*) FROM turns t JOIN JSON_TABLE(t.tokens,'$[*]' COLUMNS (surface VARCHAR(255) PATH '$.surface',lemma VARCHAR(255) PATH '$.lemma',translation VARCHAR(512) PATH '$.translation',part_of_speech VARCHAR(48) PATH '$.partOfSpeech')) jt LEFT JOIN words w ON w.course_id=@course_id AND w.lemma=jt.lemma AND w.part_of_speech=jt.part_of_speech AND w.translation=jt.translation WHERE t.lesson_id IN (@l1,@l2,@l3,@l4) AND (jt.surface IS NULL OR w.id IS NULL));
-
-SELECT IF(@course_id IS NULL OR @mia_id IS NULL OR @sara_id IS NULL,1/0,1) AS dependency_guard;
-
-SELECT IF(@lesson_count<>4 OR @turn_count<>24 OR @learner_turns<>12 OR @learner_targets<>12 OR @reading_count<>4 OR @character_pair_count<>4 OR @bad_token_tuples<>0,1/0,1) AS chapter_guard;
-
-COMMIT;
+-- ===============================================================
+-- NOVA v9 / REAL DATA / SERIES 081
+-- B1 > Entscheidungen & Gründe > Ich muss mich entscheiden
+-- FIRST B1 CHAPTER
+-- Requires complete A1/A2 through Series 080.
+-- Creates B1 Level + B1 Module 01 skeleton when missing.
+-- Uses the unchanged Nova v9.0 schema from the canonical archive.
+-- ===============================================================
+SET NAMES utf8mb4;
+
+DROP PROCEDURE IF EXISTS import_nova_series_081_v9;
+DELIMITER $$
+CREATE PROCEDURE import_nova_series_081_v9()
+BEGIN
+  DECLARE v_course BIGINT UNSIGNED;
+  DECLARE v_a2 BIGINT UNSIGNED;
+  DECLARE v_level BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_module BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_chapter BIGINT UNSIGNED;
+  DECLARE v_count INT DEFAULT 0;
+  DECLARE v_c_mia BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_c_sara BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_moechten BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_du BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_in BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_ein BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_andere BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_wohnung BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_wohnen BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_dieser BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_oder BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_ich BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_muessen BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_koennen BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_heute BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_noch BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_nicht BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_nein BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_morgen BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_haben BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_zeit BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_ja BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_bis BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_dann BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_sprechen BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_wir BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_gut BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_sich_entscheiden BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_ich_muss_mich_entscheiden BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_w_ich_kann_mich_noch_nicht_entscheiden BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_l_1 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_l_2 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_l_3 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_l_4 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_1 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_2 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_3 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_4 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_5 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_6 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_7 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_8 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_9 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_10 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_11 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_12 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_13 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_14 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_15 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_16 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_17 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_18 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_19 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_20 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_21 BIGINT UNSIGNED DEFAULT NULL;
+  DECLARE v_t_22 BIGINT UNSIGNED DEFAULT NULL;
+
+  DECLARE EXIT HANDLER FOR SQLEXCEPTION
+  BEGIN
+    ROLLBACK;
+    RESIGNAL;
+  END;
+
+  START TRANSACTION;
+  SELECT id INTO v_course FROM courses WHERE learning_language='de' AND base_language='fa' ORDER BY id LIMIT 1;
+  IF v_course IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Run nova_DE_FA_base_seed_v9.sql first.'; END IF;
+
+  SELECT id INTO v_a2 FROM levels WHERE course_id=v_course AND cefr_level='A2' AND sort_order=2 ORDER BY id LIMIT 1;
+  IF v_a2 IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='A2 Level not found.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM levels WHERE id=v_a2 AND status='complete';
+  IF v_count<>1 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Import Series 080 and complete A2 before Series 081.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM chapters c JOIN modules m ON m.id=c.module_id WHERE m.level_id=v_a2 AND m.sort_order BETWEEN 1 AND 8 AND c.status IN ('validated','complete');
+  IF v_count<>40 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Series 081 requires all 40 A2 Chapters validated/complete.'; END IF;
+
+  SELECT id INTO v_level FROM levels WHERE course_id=v_course AND cefr_level='B1' AND sort_order=3 ORDER BY id LIMIT 1;
+  IF v_level IS NULL THEN
+    INSERT INTO levels(course_id,cefr_level,title,title_translation,description,description_translation,difficulty_min,difficulty_max,sort_order,status,metadata)
+    VALUES(v_course,'B1','Selbstständiger im Alltag','مستقل تر در زندگی روزمره','Alltägliche Entscheidungen erklären, Gründe nennen und längere praktische Gespräche selbstständig führen.','تصمیم های روزمره را توضیح بده، دلیل بیاور و گفت و گوهای کاربردی طولانی تر را مستقل تر پیش ببر.',41,60,3,'active','{"curriculum":"language-specific","startingPoint":"after-A2","storyFirst":true}');
+    SET v_level=LAST_INSERT_ID();
+  END IF;
+
+  SELECT id INTO v_module FROM modules WHERE level_id=v_level AND sort_order=1 ORDER BY id LIMIT 1;
+  IF v_module IS NULL THEN
+    INSERT INTO modules(level_id,title,title_translation,description,description_translation,emoji,difficulty_min,difficulty_max,sort_order,status,metadata)
+    VALUES(v_level,'Entscheidungen & Gründe','تصمیم ها و دلیل ها','Über eine wichtige Alltagsentscheidung sprechen, Unsicherheit ausdrücken und schrittweise Gründe nennen.','درباره یک تصمیم مهم روزمره صحبت کن، تردید را بیان کن و کم کم دلیل بیاور.','🤔',41,43,1,'active','{"focus":"decisions-and-reasons","grammarApproach":"context-first"}');
+    SET v_module=LAST_INSERT_ID();
+  END IF;
+
+  INSERT INTO chapters(module_id,title,title_translation,description,description_translation,planned_lesson_count,difficulty_min,difficulty_max,sort_order,status)
+  SELECT v_module,'Ich muss mich entscheiden','باید تصمیم بگیرم','Mit sich entscheiden ausdrücken, dass eine Wahl notwendig ist.','با ساختار sich entscheiden بگو که باید انتخاب کنی.',NULL,41,41,1,'draft' WHERE NOT EXISTS (SELECT 1 FROM chapters WHERE module_id=v_module AND sort_order=1);
+  INSERT INTO chapters(module_id,title,title_translation,description,description_translation,planned_lesson_count,difficulty_min,difficulty_max,sort_order,status)
+  SELECT v_module,'Warum willst du das machen?','چرا می خوای این کار رو انجام بدی؟','Nach dem Grund für eine Entscheidung fragen.','دلیل یک تصمیم را بپرس.',NULL,41,42,2,'planned' WHERE NOT EXISTS (SELECT 1 FROM chapters WHERE module_id=v_module AND sort_order=2);
+  INSERT INTO chapters(module_id,title,title_translation,description,description_translation,planned_lesson_count,difficulty_min,difficulty_max,sort_order,status)
+  SELECT v_module,'Weil ich etwas ändern möchte','چون می خوام یه چیزی رو تغییر بدم','Einen einfachen persönlichen Grund mit weil nennen.','با weil یک دلیل شخصی ساده بیان کن.',NULL,42,42,3,'planned' WHERE NOT EXISTS (SELECT 1 FROM chapters WHERE module_id=v_module AND sort_order=3);
+  INSERT INTO chapters(module_id,title,title_translation,description,description_translation,planned_lesson_count,difficulty_min,difficulty_max,sort_order,status)
+  SELECT v_module,'Ich bin mir noch nicht sicher','هنوز مطمئن نیستم','Unsicherheit genauer ausdrücken und Möglichkeiten vergleichen.','تردید را دقیق تر بیان کن و گزینه ها را مقایسه کن.',NULL,42,43,4,'planned' WHERE NOT EXISTS (SELECT 1 FROM chapters WHERE module_id=v_module AND sort_order=4);
+  INSERT INTO chapters(module_id,title,title_translation,description,description_translation,planned_lesson_count,difficulty_min,difficulty_max,sort_order,status)
+  SELECT v_module,'Ich habe mich entschieden','تصمیمم رو گرفتم','Eine Entscheidung mitteilen und das Gespräch klar abschließen.','تصمیمت را اعلام کن و گفت و گو را روشن به پایان ببر.',NULL,43,43,5,'planned' WHERE NOT EXISTS (SELECT 1 FROM chapters WHERE module_id=v_module AND sort_order=5);
+
+  SELECT id INTO v_chapter FROM chapters WHERE module_id=v_module AND sort_order=1 ORDER BY id LIMIT 1;
+  IF v_chapter IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='B1 Module 01 Chapter 01 not found.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM lessons WHERE chapter_id=v_chapter;
+  IF v_count<>0 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='B1 Module 01 Chapter 01 must be empty before Series 081 import.'; END IF;
+
+  SELECT id INTO v_c_mia FROM characters WHERE course_id=v_course AND name='Mia' AND gender='female' ORDER BY id LIMIT 1;
+  IF v_c_mia IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Character Mia not found.'; END IF;
+  SELECT id INTO v_c_sara FROM characters WHERE course_id=v_course AND name='Sara' AND gender='female' ORDER BY id LIMIT 1;
+  IF v_c_sara IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Character Sara not found.'; END IF;
+
+  SELECT id INTO v_w_moechten FROM words WHERE course_id=v_course AND lemma='möchten' AND part_of_speech='verb' AND translation='خواستن / مایل بودن' ORDER BY id LIMIT 1;
+  IF v_w_moechten IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word möchten not found.'; END IF;
+  SELECT id INTO v_w_du FROM words WHERE course_id=v_course AND lemma='du' AND part_of_speech='pronoun' AND translation='تو' ORDER BY id LIMIT 1;
+  IF v_w_du IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word du not found.'; END IF;
+  SELECT id INTO v_w_in FROM words WHERE course_id=v_course AND lemma='in' AND part_of_speech='preposition' AND translation='در / داخل' ORDER BY id LIMIT 1;
+  IF v_w_in IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word in not found.'; END IF;
+  SELECT id INTO v_w_ein FROM words WHERE course_id=v_course AND lemma='ein' AND part_of_speech='article' AND translation='یک / حرف تعریف نامعین' ORDER BY id LIMIT 1;
+  IF v_w_ein IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word ein not found.'; END IF;
+  SELECT id INTO v_w_andere FROM words WHERE course_id=v_course AND lemma='andere' AND part_of_speech='adjective' AND translation='دیگر / متفاوت' ORDER BY id LIMIT 1;
+  IF v_w_andere IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word andere not found.'; END IF;
+  SELECT id INTO v_w_wohnung FROM words WHERE course_id=v_course AND lemma='Wohnung' AND part_of_speech='noun' AND translation='خانه / آپارتمان' ORDER BY id LIMIT 1;
+  IF v_w_wohnung IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word Wohnung not found.'; END IF;
+  SELECT id INTO v_w_wohnen FROM words WHERE course_id=v_course AND lemma='wohnen' AND part_of_speech='verb' AND translation='زندگی کردن / ساکن بودن' ORDER BY id LIMIT 1;
+  IF v_w_wohnen IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word wohnen not found.'; END IF;
+  SELECT id INTO v_w_dieser FROM words WHERE course_id=v_course AND lemma='dieser' AND part_of_speech='determiner' AND translation='این' ORDER BY id LIMIT 1;
+  IF v_w_dieser IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word dieser not found.'; END IF;
+  SELECT id INTO v_w_oder FROM words WHERE course_id=v_course AND lemma='oder' AND part_of_speech='conjunction' AND translation='یا' ORDER BY id LIMIT 1;
+  IF v_w_oder IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word oder not found.'; END IF;
+  SELECT id INTO v_w_ich FROM words WHERE course_id=v_course AND lemma='ich' AND part_of_speech='pronoun' AND translation='من' ORDER BY id LIMIT 1;
+  IF v_w_ich IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word ich not found.'; END IF;
+  SELECT id INTO v_w_muessen FROM words WHERE course_id=v_course AND lemma='müssen' AND part_of_speech='verb' AND translation='مجبور بودن / باید' ORDER BY id LIMIT 1;
+  IF v_w_muessen IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word müssen not found.'; END IF;
+  SELECT id INTO v_w_koennen FROM words WHERE course_id=v_course AND lemma='können' AND part_of_speech='verb' AND translation='توانستن / بتوان' ORDER BY id LIMIT 1;
+  IF v_w_koennen IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word können not found.'; END IF;
+  SELECT id INTO v_w_heute FROM words WHERE course_id=v_course AND lemma='heute' AND part_of_speech='adverb' AND translation='امروز' ORDER BY id LIMIT 1;
+  IF v_w_heute IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word heute not found.'; END IF;
+  SELECT id INTO v_w_noch FROM words WHERE course_id=v_course AND lemma='noch' AND part_of_speech='adverb' AND translation='هنوز' ORDER BY id LIMIT 1;
+  IF v_w_noch IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word noch not found.'; END IF;
+  SELECT id INTO v_w_nicht FROM words WHERE course_id=v_course AND lemma='nicht' AND part_of_speech='particle' AND translation='نه / نیست' ORDER BY id LIMIT 1;
+  IF v_w_nicht IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word nicht not found.'; END IF;
+  SELECT id INTO v_w_nein FROM words WHERE course_id=v_course AND lemma='nein' AND part_of_speech='interjection' AND translation='نه' ORDER BY id LIMIT 1;
+  IF v_w_nein IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word nein not found.'; END IF;
+  SELECT id INTO v_w_morgen FROM words WHERE course_id=v_course AND lemma='morgen' AND part_of_speech='adverb' AND translation='فردا' ORDER BY id LIMIT 1;
+  IF v_w_morgen IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word morgen not found.'; END IF;
+  SELECT id INTO v_w_haben FROM words WHERE course_id=v_course AND lemma='haben' AND part_of_speech='verb' AND translation='داشتن' ORDER BY id LIMIT 1;
+  IF v_w_haben IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word haben not found.'; END IF;
+  SELECT id INTO v_w_zeit FROM words WHERE course_id=v_course AND lemma='Zeit' AND part_of_speech='noun' AND translation='وقت / زمان' ORDER BY id LIMIT 1;
+  IF v_w_zeit IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word Zeit not found.'; END IF;
+  SELECT id INTO v_w_ja FROM words WHERE course_id=v_course AND lemma='ja' AND part_of_speech='interjection' AND translation='بله / آره' ORDER BY id LIMIT 1;
+  IF v_w_ja IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word ja not found.'; END IF;
+  SELECT id INTO v_w_bis FROM words WHERE course_id=v_course AND lemma='bis' AND part_of_speech='preposition' AND translation='تا' ORDER BY id LIMIT 1;
+  IF v_w_bis IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word bis not found.'; END IF;
+  SELECT id INTO v_w_dann FROM words WHERE course_id=v_course AND lemma='dann' AND part_of_speech='adverb' AND translation='بعد / سپس' ORDER BY id LIMIT 1;
+  IF v_w_dann IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word dann not found.'; END IF;
+  SELECT id INTO v_w_sprechen FROM words WHERE course_id=v_course AND lemma='sprechen' AND part_of_speech='verb' AND translation='صحبت کردن / حرف زدن' ORDER BY id LIMIT 1;
+  IF v_w_sprechen IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word sprechen not found.'; END IF;
+  SELECT id INTO v_w_wir FROM words WHERE course_id=v_course AND lemma='wir' AND part_of_speech='pronoun' AND translation='ما' ORDER BY id LIMIT 1;
+  IF v_w_wir IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word wir not found.'; END IF;
+  SELECT id INTO v_w_gut FROM words WHERE course_id=v_course AND lemma='gut' AND part_of_speech='adjective' AND translation='خوب' ORDER BY id LIMIT 1;
+  IF v_w_gut IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Required existing Word gut not found.'; END IF;
+
+  SELECT id INTO v_w_sich_entscheiden FROM words WHERE course_id=v_course AND lemma='sich entscheiden' AND part_of_speech='verb' AND translation='تصمیم گرفتن' ORDER BY id LIMIT 1;
+  IF v_w_sich_entscheiden IS NULL THEN
+    INSERT INTO words(course_id,lemma,display_form,part_of_speech,translation,difficulty,grammar,distractors,example_text,example_translation,audio_url,audio_duration_ms,metadata)
+    VALUES(v_course,'sich entscheiden','sich entscheiden','verb','تصمیم گرفتن',41,'{"reflexive":true,"case":"accusative","pattern":"sich entscheiden"}','[{"text":"warten","translation":"منتظر ماندن"},{"text":"sprechen","translation":"صحبت کردن"},{"text":"fahren","translation":"رفتن با وسیله"},{"text":"arbeiten","translation":"کار کردن"},{"text":"helfen","translation":"کمک کردن"}]','Ich muss mich entscheiden.','باید تصمیم بگیرم.',NULL,NULL,'{"cefr":"B1","introducedInSeries":81}');
+    SET v_w_sich_entscheiden=LAST_INSERT_ID();
+  END IF;
+
+  SELECT id INTO v_w_ich_muss_mich_entscheiden FROM words WHERE course_id=v_course AND lemma='Ich muss mich entscheiden.' AND part_of_speech='phrase' AND translation='باید تصمیم بگیرم.' ORDER BY id LIMIT 1;
+  IF v_w_ich_muss_mich_entscheiden IS NULL THEN
+    INSERT INTO words(course_id,lemma,display_form,part_of_speech,translation,difficulty,grammar,distractors,example_text,example_translation,audio_url,audio_duration_ms,metadata)
+    VALUES(v_course,'Ich muss mich entscheiden.','Ich muss mich entscheiden.','phrase','باید تصمیم بگیرم.',41,NULL,'[{"text":"Ich muss arbeiten.","translation":"باید کار کنم."},{"text":"Ich kann morgen.","translation":"فردا می تونم."},{"text":"Ich habe noch Zeit.","translation":"هنوز وقت دارم."},{"text":"Wir sprechen morgen.","translation":"فردا صحبت می کنیم."},{"text":"Noch nicht.","translation":"هنوز نه."}]',NULL,NULL,NULL,NULL,'{"cefr":"B1","introducedInSeries":81}');
+    SET v_w_ich_muss_mich_entscheiden=LAST_INSERT_ID();
+  END IF;
+
+  SELECT id INTO v_w_ich_kann_mich_noch_nicht_entscheiden FROM words WHERE course_id=v_course AND lemma='Ich kann mich noch nicht entscheiden.' AND part_of_speech='phrase' AND translation='هنوز نمی تونم تصمیم بگیرم.' ORDER BY id LIMIT 1;
+  IF v_w_ich_kann_mich_noch_nicht_entscheiden IS NULL THEN
+    INSERT INTO words(course_id,lemma,display_form,part_of_speech,translation,difficulty,grammar,distractors,example_text,example_translation,audio_url,audio_duration_ms,metadata)
+    VALUES(v_course,'Ich kann mich noch nicht entscheiden.','Ich kann mich noch nicht entscheiden.','phrase','هنوز نمی تونم تصمیم بگیرم.',41,NULL,'[{"text":"Ich muss mich entscheiden.","translation":"باید تصمیم بگیرم."},{"text":"Ich kann morgen nicht.","translation":"فردا نمی تونم."},{"text":"Ich bin noch nicht fertig.","translation":"هنوز تمام نکرده ام."},{"text":"Ich habe noch Zeit.","translation":"هنوز وقت دارم."},{"text":"Wir sprechen morgen.","translation":"فردا صحبت می کنیم."}]',NULL,NULL,NULL,NULL,'{"cefr":"B1","introducedInSeries":81}');
+    SET v_w_ich_kann_mich_noch_nicht_entscheiden=LAST_INSERT_ID();
+  END IF;
+
+  INSERT INTO lessons(chapter_id,prompt_character_id,learner_character_id,title,title_translation,description,description_translation,lesson_type,storyline_key,storyline_order,difficulty,estimated_duration_sec,sort_order,status,metadata)
+  VALUES(v_chapter,v_c_sara,v_c_mia,'Eine Entscheidung','یک تصمیم','Sara fragt Mia, ob sie in einer anderen Wohnung wohnen möchte. Mia sagt, dass sie sich entscheiden muss.','سارا از میا می پرسد آیا می خواهد در خانه دیگری زندگی کند. میا می گوید که باید تصمیم بگیرد.','story','mia-sara-b1-decisions',1,41,120,1,'validated','{"relationship":"friends","context":"choosing-an-apartment","cefr":"B1","storyArc":"choice-uncertainty-time-next-step"}');
+  SET v_l_1=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_1,v_c_sara,1,'character','Möchtest du in einer anderen Wohnung wohnen?','می خوای در یک خونه دیگه زندگی کنی؟',41,NULL,NULL,NULL,NULL,'[{"surface":"Möchtest","lemma":"möchten","translation":"خواستن / مایل بودن","partOfSpeech":"verb","meaning":"می خوای","form":"present_2sg"},{"surface":"du","lemma":"du","translation":"تو","partOfSpeech":"pronoun"},{"surface":"in","lemma":"in","translation":"در / داخل","partOfSpeech":"preposition"},{"surface":"einer","lemma":"ein","translation":"یک / حرف تعریف نامعین","partOfSpeech":"article","meaning":"یک","form":"dative_feminine"},{"surface":"anderen","lemma":"andere","translation":"دیگر / متفاوت","partOfSpeech":"adjective","meaning":"دیگه","form":"dative_feminine"},{"surface":"Wohnung","lemma":"Wohnung","translation":"خانه / آپارتمان","partOfSpeech":"noun"},{"surface":"wohnen","lemma":"wohnen","translation":"زندگی کردن / ساکن بودن","partOfSpeech":"verb","suffix":"?"}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_1=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_1,v_c_mia,2,'learner','Ich muss mich entscheiden.','باید تصمیم بگیرم.',41,NULL,NULL,'ich muss mich entscheiden',NULL,'[{"surface":"Ich","lemma":"ich","translation":"من","partOfSpeech":"pronoun"},{"surface":"muss","lemma":"müssen","translation":"مجبور بودن / باید","partOfSpeech":"verb","meaning":"باید","form":"present_1sg"},{"surface":"mich","lemma":"ich","translation":"من","partOfSpeech":"pronoun","meaning":"خودم","form":"reflexive_accusative_1sg"},{"surface":"entscheiden","lemma":"sich entscheiden","translation":"تصمیم گرفتن","partOfSpeech":"verb","suffix":"."}]','فعل بازتابی sich entscheiden','برای ich از ضمیر بازتابی mich استفاده می کنیم: Ich entscheide mich. با فعل کمکی، entscheiden در پایان می آید.','{"pattern":"ich + modal + mich + entscheiden","reflexivePronoun":"mich"}','{"cefr":"B1"}');
+  SET v_t_2=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_1,v_c_sara,3,'character','Heute noch?','همین امروز؟',41,NULL,NULL,NULL,NULL,'[{"surface":"Heute","lemma":"heute","translation":"امروز","partOfSpeech":"adverb"},{"surface":"noch","lemma":"noch","translation":"هنوز","partOfSpeech":"adverb","meaning":"همین امروز","suffix":"?"}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_3=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_1,v_c_mia,4,'learner','Nein, morgen.','نه، فردا.',41,NULL,NULL,'nein morgen',NULL,'[{"surface":"Nein","lemma":"nein","translation":"نه","partOfSpeech":"interjection","suffix":","},{"surface":"morgen","lemma":"morgen","translation":"فردا","partOfSpeech":"adverb","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_4=LAST_INSERT_ID();
+
+  INSERT INTO lessons(chapter_id,prompt_character_id,learner_character_id,title,title_translation,description,description_translation,lesson_type,storyline_key,storyline_order,difficulty,estimated_duration_sec,sort_order,status,metadata)
+  VALUES(v_chapter,v_c_sara,v_c_mia,'Noch nicht entschieden','هنوز تصمیم نگرفتم','Sara fragt genauer nach. Mia drückt aus, dass die Entscheidung noch offen ist.','سارا دقیق تر می پرسد. میا می گوید که تصمیم هنوز باز است.','story','mia-sara-b1-decisions',2,41,120,2,'validated','{"relationship":"friends","context":"choosing-an-apartment","cefr":"B1","storyArc":"choice-uncertainty-time-next-step"}');
+  SET v_l_2=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_2,v_c_sara,1,'character','Kannst du dich entscheiden?','می تونی تصمیم بگیری؟',41,NULL,NULL,NULL,NULL,'[{"surface":"Kannst","lemma":"können","translation":"توانستن / بتوان","partOfSpeech":"verb","meaning":"می تونی","form":"present_2sg"},{"surface":"du","lemma":"du","translation":"تو","partOfSpeech":"pronoun"},{"surface":"dich","lemma":"du","translation":"تو","partOfSpeech":"pronoun","meaning":"خودت","form":"reflexive_accusative_2sg"},{"surface":"entscheiden","lemma":"sich entscheiden","translation":"تصمیم گرفتن","partOfSpeech":"verb","suffix":"?"}]','ضمیر بازتابی برای du','برای du از dich استفاده می کنیم: Du entscheidest dich. با können، شکل پایه entscheiden در پایان می آید.','{"pattern":"du + können + dich + entscheiden","reflexivePronoun":"dich"}','{"cefr":"B1"}');
+  SET v_t_5=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_2,v_c_mia,2,'learner','Ich kann mich noch nicht entscheiden.','هنوز نمی تونم تصمیم بگیرم.',41,NULL,NULL,'ich kann mich noch nicht entscheiden',NULL,'[{"surface":"Ich","lemma":"ich","translation":"من","partOfSpeech":"pronoun"},{"surface":"kann","lemma":"können","translation":"توانستن / بتوان","partOfSpeech":"verb","meaning":"می تونم","form":"present_1sg"},{"surface":"mich","lemma":"ich","translation":"من","partOfSpeech":"pronoun","meaning":"خودم","form":"reflexive_accusative_1sg"},{"surface":"noch","lemma":"noch","translation":"هنوز","partOfSpeech":"adverb"},{"surface":"nicht","lemma":"nicht","translation":"نه / نیست","partOfSpeech":"particle"},{"surface":"entscheiden","lemma":"sich entscheiden","translation":"تصمیم گرفتن","partOfSpeech":"verb","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_6=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_2,v_c_sara,3,'character','Diese Wohnung oder eine andere?','این خونه یا یک خونه دیگه؟',41,NULL,NULL,NULL,NULL,'[{"surface":"Diese","lemma":"dieser","translation":"این","partOfSpeech":"determiner","form":"nominative_feminine"},{"surface":"Wohnung","lemma":"Wohnung","translation":"خانه / آپارتمان","partOfSpeech":"noun"},{"surface":"oder","lemma":"oder","translation":"یا","partOfSpeech":"conjunction"},{"surface":"eine","lemma":"ein","translation":"یک / حرف تعریف نامعین","partOfSpeech":"article","meaning":"یک","form":"nominative_feminine"},{"surface":"andere","lemma":"andere","translation":"دیگر / متفاوت","partOfSpeech":"adjective","meaning":"خونه دیگه","suffix":"?"}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_7=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_2,v_c_mia,4,'learner','Noch nicht.','هنوز نه.',41,NULL,NULL,'noch nicht',NULL,'[{"surface":"Noch","lemma":"noch","translation":"هنوز","partOfSpeech":"adverb"},{"surface":"nicht","lemma":"nicht","translation":"نه / نیست","partOfSpeech":"particle","meaning":"نه","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_8=LAST_INSERT_ID();
+
+  INSERT INTO lessons(chapter_id,prompt_character_id,learner_character_id,title,title_translation,description,description_translation,lesson_type,storyline_key,storyline_order,difficulty,estimated_duration_sec,sort_order,status,metadata)
+  VALUES(v_chapter,v_c_sara,v_c_mia,'Diese oder eine andere?','این خانه یا یکی دیگر؟','Sara benennt die beiden Möglichkeiten. Mia nimmt sich bis morgen Zeit.','سارا دو گزینه را نام می برد. میا تا فردا به خودش فرصت می دهد.','story','mia-sara-b1-decisions',3,41,130,3,'validated','{"relationship":"friends","context":"choosing-an-apartment","cefr":"B1","storyArc":"choice-uncertainty-time-next-step"}');
+  SET v_l_3=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_3,v_c_sara,1,'character','Diese Wohnung oder eine andere?','این خونه یا یک خونه دیگه؟',41,NULL,NULL,NULL,NULL,'[{"surface":"Diese","lemma":"dieser","translation":"این","partOfSpeech":"determiner","form":"nominative_feminine"},{"surface":"Wohnung","lemma":"Wohnung","translation":"خانه / آپارتمان","partOfSpeech":"noun"},{"surface":"oder","lemma":"oder","translation":"یا","partOfSpeech":"conjunction"},{"surface":"eine","lemma":"ein","translation":"یک / حرف تعریف نامعین","partOfSpeech":"article","meaning":"یک","form":"nominative_feminine"},{"surface":"andere","lemma":"andere","translation":"دیگر / متفاوت","partOfSpeech":"adjective","meaning":"خونه دیگه","suffix":"?"}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_9=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_3,v_c_mia,2,'learner','Ich kann mich noch nicht entscheiden.','هنوز نمی تونم تصمیم بگیرم.',41,NULL,NULL,'ich kann mich noch nicht entscheiden',NULL,'[{"surface":"Ich","lemma":"ich","translation":"من","partOfSpeech":"pronoun"},{"surface":"kann","lemma":"können","translation":"توانستن / بتوان","partOfSpeech":"verb","meaning":"می تونم","form":"present_1sg"},{"surface":"mich","lemma":"ich","translation":"من","partOfSpeech":"pronoun","meaning":"خودم","form":"reflexive_accusative_1sg"},{"surface":"noch","lemma":"noch","translation":"هنوز","partOfSpeech":"adverb"},{"surface":"nicht","lemma":"nicht","translation":"نه / نیست","partOfSpeech":"particle"},{"surface":"entscheiden","lemma":"sich entscheiden","translation":"تصمیم گرفتن","partOfSpeech":"verb","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_10=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_3,v_c_sara,3,'character','Du hast noch Zeit.','هنوز وقت داری.',41,NULL,NULL,NULL,NULL,'[{"surface":"Du","lemma":"du","translation":"تو","partOfSpeech":"pronoun"},{"surface":"hast","lemma":"haben","translation":"داشتن","partOfSpeech":"verb","meaning":"داری","form":"present_2sg"},{"surface":"noch","lemma":"noch","translation":"هنوز","partOfSpeech":"adverb"},{"surface":"Zeit","lemma":"Zeit","translation":"وقت / زمان","partOfSpeech":"noun","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_11=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_3,v_c_mia,4,'learner','Ja, bis morgen.','بله، تا فردا.',41,NULL,NULL,'ja bis morgen',NULL,'[{"surface":"Ja","lemma":"ja","translation":"بله / آره","partOfSpeech":"interjection","suffix":","},{"surface":"bis","lemma":"bis","translation":"تا","partOfSpeech":"preposition"},{"surface":"morgen","lemma":"morgen","translation":"فردا","partOfSpeech":"adverb","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_12=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_3,v_c_sara,5,'character','Dann sprechen wir morgen.','پس فردا صحبت می کنیم.',41,NULL,NULL,NULL,NULL,'[{"surface":"Dann","lemma":"dann","translation":"بعد / سپس","partOfSpeech":"adverb","meaning":"پس"},{"surface":"sprechen","lemma":"sprechen","translation":"صحبت کردن / حرف زدن","partOfSpeech":"verb","form":"present_1pl"},{"surface":"wir","lemma":"wir","translation":"ما","partOfSpeech":"pronoun"},{"surface":"morgen","lemma":"morgen","translation":"فردا","partOfSpeech":"adverb","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_13=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_3,v_c_mia,6,'learner','Gut.','خوبه.',41,NULL,NULL,'gut',NULL,'[{"surface":"Gut","lemma":"gut","translation":"خوب","partOfSpeech":"adjective","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_14=LAST_INSERT_ID();
+
+  INSERT INTO lessons(chapter_id,prompt_character_id,learner_character_id,title,title_translation,description,description_translation,lesson_type,storyline_key,storyline_order,difficulty,estimated_duration_sec,sort_order,status,metadata)
+  VALUES(v_chapter,v_c_sara,v_c_mia,'Ich entscheide mich morgen','فردا تصمیم می گیرم','Mia führt das Gespräch vollständig und legt fest, wann sie ihre Entscheidung über die Wohnung trifft.','میا گفت و گو را کامل پیش می برد و مشخص می کند چه زمانی درباره خانه تصمیم می گیرد.','story','mia-sara-b1-decisions',4,41,150,4,'validated','{"relationship":"friends","context":"choosing-an-apartment","cefr":"B1","storyArc":"choice-uncertainty-time-next-step"}');
+  SET v_l_4=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_4,v_c_sara,1,'character','Möchtest du in einer anderen Wohnung wohnen?','می خوای در یک خونه دیگه زندگی کنی؟',41,NULL,NULL,NULL,NULL,'[{"surface":"Möchtest","lemma":"möchten","translation":"خواستن / مایل بودن","partOfSpeech":"verb","meaning":"می خوای","form":"present_2sg"},{"surface":"du","lemma":"du","translation":"تو","partOfSpeech":"pronoun"},{"surface":"in","lemma":"in","translation":"در / داخل","partOfSpeech":"preposition"},{"surface":"einer","lemma":"ein","translation":"یک / حرف تعریف نامعین","partOfSpeech":"article","meaning":"یک","form":"dative_feminine"},{"surface":"anderen","lemma":"andere","translation":"دیگر / متفاوت","partOfSpeech":"adjective","meaning":"دیگه","form":"dative_feminine"},{"surface":"Wohnung","lemma":"Wohnung","translation":"خانه / آپارتمان","partOfSpeech":"noun"},{"surface":"wohnen","lemma":"wohnen","translation":"زندگی کردن / ساکن بودن","partOfSpeech":"verb","suffix":"?"}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_15=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_4,v_c_mia,2,'learner','Ich muss mich entscheiden.','باید تصمیم بگیرم.',41,NULL,NULL,'ich muss mich entscheiden',NULL,'[{"surface":"Ich","lemma":"ich","translation":"من","partOfSpeech":"pronoun"},{"surface":"muss","lemma":"müssen","translation":"مجبور بودن / باید","partOfSpeech":"verb","meaning":"باید","form":"present_1sg"},{"surface":"mich","lemma":"ich","translation":"من","partOfSpeech":"pronoun","meaning":"خودم","form":"reflexive_accusative_1sg"},{"surface":"entscheiden","lemma":"sich entscheiden","translation":"تصمیم گرفتن","partOfSpeech":"verb","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_16=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_4,v_c_sara,3,'character','Kannst du dich noch nicht entscheiden?','هنوز نمی تونی تصمیم بگیری؟',41,NULL,NULL,NULL,NULL,'[{"surface":"Kannst","lemma":"können","translation":"توانستن / بتوان","partOfSpeech":"verb","meaning":"می تونی","form":"present_2sg"},{"surface":"du","lemma":"du","translation":"تو","partOfSpeech":"pronoun"},{"surface":"dich","lemma":"du","translation":"تو","partOfSpeech":"pronoun","meaning":"خودت","form":"reflexive_accusative_2sg"},{"surface":"noch","lemma":"noch","translation":"هنوز","partOfSpeech":"adverb"},{"surface":"nicht","lemma":"nicht","translation":"نه / نیست","partOfSpeech":"particle"},{"surface":"entscheiden","lemma":"sich entscheiden","translation":"تصمیم گرفتن","partOfSpeech":"verb","suffix":"?"}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_17=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_4,v_c_mia,4,'learner','Nein, noch nicht.','نه، هنوز نه.',41,NULL,NULL,'nein noch nicht',NULL,'[{"surface":"Nein","lemma":"nein","translation":"نه","partOfSpeech":"interjection","suffix":","},{"surface":"noch","lemma":"noch","translation":"هنوز","partOfSpeech":"adverb"},{"surface":"nicht","lemma":"nicht","translation":"نه / نیست","partOfSpeech":"particle","meaning":"نه","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_18=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_4,v_c_sara,5,'character','Du hast noch Zeit.','هنوز وقت داری.',41,NULL,NULL,NULL,NULL,'[{"surface":"Du","lemma":"du","translation":"تو","partOfSpeech":"pronoun"},{"surface":"hast","lemma":"haben","translation":"داشتن","partOfSpeech":"verb","meaning":"داری","form":"present_2sg"},{"surface":"noch","lemma":"noch","translation":"هنوز","partOfSpeech":"adverb"},{"surface":"Zeit","lemma":"Zeit","translation":"وقت / زمان","partOfSpeech":"noun","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_19=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_4,v_c_mia,6,'learner','Ja. Ich entscheide mich morgen.','بله. فردا تصمیم می گیرم.',41,NULL,NULL,'ja ich entscheide mich morgen',NULL,'[{"surface":"Ja","lemma":"ja","translation":"بله / آره","partOfSpeech":"interjection","suffix":"."},{"surface":"Ich","lemma":"ich","translation":"من","partOfSpeech":"pronoun"},{"surface":"entscheide","lemma":"sich entscheiden","translation":"تصمیم گرفتن","partOfSpeech":"verb","meaning":"تصمیم می گیرم","form":"present_1sg"},{"surface":"mich","lemma":"ich","translation":"من","partOfSpeech":"pronoun","meaning":"خودم","form":"reflexive_accusative_1sg"},{"surface":"morgen","lemma":"morgen","translation":"فردا","partOfSpeech":"adverb","suffix":"."}]','زمان حال برای برنامه نزدیک','در آلمانی برای برنامه مشخص آینده نزدیک می توان از زمان حال همراه morgen استفاده کرد.','{"pattern":"present + future-time adverb","timeAdverb":"morgen"}','{"cefr":"B1"}');
+  SET v_t_20=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_4,v_c_sara,7,'character','Dann sprechen wir morgen.','پس فردا صحبت می کنیم.',41,NULL,NULL,NULL,NULL,'[{"surface":"Dann","lemma":"dann","translation":"بعد / سپس","partOfSpeech":"adverb","meaning":"پس"},{"surface":"sprechen","lemma":"sprechen","translation":"صحبت کردن / حرف زدن","partOfSpeech":"verb","form":"present_1pl"},{"surface":"wir","lemma":"wir","translation":"ما","partOfSpeech":"pronoun"},{"surface":"morgen","lemma":"morgen","translation":"فردا","partOfSpeech":"adverb","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_21=LAST_INSERT_ID();
+  INSERT INTO turns(lesson_id,character_id,sort_order,role,text,translation,difficulty,audio_url,audio_duration_ms,speech_target,speech_alternatives,tokens,grammar_title,grammar_note,grammar_data,metadata)
+  VALUES(v_l_4,v_c_mia,8,'learner','Gut, bis morgen.','خوبه، تا فردا.',41,NULL,NULL,'gut bis morgen',NULL,'[{"surface":"Gut","lemma":"gut","translation":"خوب","partOfSpeech":"adjective","suffix":","},{"surface":"bis","lemma":"bis","translation":"تا","partOfSpeech":"preposition"},{"surface":"morgen","lemma":"morgen","translation":"فردا","partOfSpeech":"adverb","suffix":"."}]',NULL,NULL,NULL,'{"cefr":"B1"}');
+  SET v_t_22=LAST_INSERT_ID();
+
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_moechten,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_du,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_in,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_ein,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_andere,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_wohnung,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_wohnen,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_ich,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_muessen,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_sich_entscheiden,'new',1,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_ich_muss_mich_entscheiden,'new',1,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_heute,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_noch,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_nein,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_1,v_w_morgen,'review',0,1);
+
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_koennen,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_du,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_ich,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_sich_entscheiden,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_noch,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_nicht,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_dieser,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_wohnung,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_oder,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_ein,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_andere,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_2,v_w_ich_kann_mich_noch_nicht_entscheiden,'new',1,1);
+
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_dieser,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_wohnung,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_oder,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_ein,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_andere,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_ich,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_koennen,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_sich_entscheiden,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_noch,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_nicht,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_du,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_haben,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_zeit,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_ja,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_bis,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_morgen,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_dann,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_sprechen,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_wir,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_gut,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_3,v_w_ich_kann_mich_noch_nicht_entscheiden,'review',0,1);
+
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_moechten,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_du,'review',0,4);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_in,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_ein,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_andere,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_wohnung,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_wohnen,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_ich,'review',0,4);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_muessen,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_koennen,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_sich_entscheiden,'review',0,3);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_noch,'review',0,3);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_nicht,'review',0,2);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_nein,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_haben,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_zeit,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_ja,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_morgen,'review',0,3);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_dann,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_sprechen,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_wir,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_gut,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_bis,'review',0,1);
+  INSERT INTO lesson_words(lesson_id,word_id,learning_role,is_target,exposure_count) VALUES(v_l_4,v_w_ich_muss_mich_entscheiden,'review',0,1);
+
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_1,'new_word',1,NULL,v_w_sich_entscheiden,'فعل جدید',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_1,'new_word',2,NULL,v_w_ich_muss_mich_entscheiden,'عبارت جدید',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_1,'listen',3,v_t_1,NULL,'به سوال درباره خانه گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_1,'speak',4,v_t_2,NULL,'بگو باید تصمیم بگیری',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_1,'listen',5,v_t_3,NULL,'به سوال کوتاه سارا گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_1,'speak',6,v_t_4,NULL,'بگو فردا تصمیم می گیری',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_1,'meaning_choice',7,NULL,v_w_sich_entscheiden,'معنی درست را انتخاب کن',NULL,41,'{"mode":"word_translation","question":"sich entscheiden","choices":["تصمیم گرفتن","منتظر ماندن","صحبت کردن"],"correctIndex":0}','{"cefr":"B1"}');
+
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_2,'new_word',1,NULL,v_w_ich_kann_mich_noch_nicht_entscheiden,'عبارت جدید',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_2,'listen',2,v_t_5,NULL,'به سوال درباره تصمیم گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_2,'speak',3,v_t_6,NULL,'بگو هنوز نمی تونی تصمیم بگیری',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_2,'listen',4,v_t_7,NULL,'به دو گزینه خانه گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_2,'speak',5,v_t_8,NULL,'بگو هنوز نه',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_2,'meaning_choice',6,v_t_6,NULL,'معنی درست را انتخاب کن',NULL,41,'{"mode":"turn_translation","question":"«Ich kann mich noch nicht entscheiden.» یعنی چی؟","choices":["هنوز نمی تونم تصمیم بگیرم.","باید امروز تصمیم بگیرم.","فردا با قطار می رم."],"correctIndex":0}','{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_2,'word_order',7,v_t_6,NULL,'جمله تصمیم نگرفتن را به ترتیب درست بساز',NULL,41,'{"source":"turn_tokens","shuffle":true}','{"cefr":"B1"}');
+
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_3,'listen',1,v_t_9,NULL,'به دو گزینه خانه گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_3,'speak',2,v_t_10,NULL,'تردیدت را بیان کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_3,'listen',3,v_t_11,NULL,'به فرصت دادن سارا گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_3,'speak',4,v_t_12,NULL,'بگو تا فردا',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_3,'listen',5,v_t_13,NULL,'به قرار گفت و گو گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_3,'speak',6,v_t_14,NULL,'موافقت کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_3,'meaning_choice',7,v_t_10,NULL,'معنی درست را انتخاب کن',NULL,41,'{"mode":"turn_translation","question":"میا درباره تصمیمش چه می گوید؟","choices":["هنوز نمی تواند تصمیم بگیرد.","خانه فعلی را انتخاب کرده است.","خانه دیگری را انتخاب کرده است."],"correctIndex":0}','{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_3,'reading_comprehension',8,NULL,NULL,'مکالمه را بخوان و جواب بده',NULL,41,'{"source":"lesson_story","question":"میا تا چه زمانی برای تصمیم گرفتن وقت دارد؟","choices":["تا فردا","تا شنبه","فقط تا امروز"],"correctIndex":0}','{"cefr":"B1"}');
+
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'listen',1,v_t_15,NULL,'به سوال کامل سارا درباره خانه گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'speak',2,v_t_16,NULL,'بگو باید تصمیم بگیری',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'listen',3,v_t_17,NULL,'به سوال درباره تردید گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'speak',4,v_t_18,NULL,'بگو هنوز تصمیم نگرفتی',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'listen',5,v_t_19,NULL,'به فرصت دادن سارا گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'speak',6,v_t_20,NULL,'بگو فردا تصمیم می گیری',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'listen',7,v_t_21,NULL,'به قرار فردا گوش کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'speak',8,v_t_22,NULL,'گفت و گو را تمام کن',NULL,41,NULL,'{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'meaning_choice',9,v_t_20,NULL,'معنی درست را انتخاب کن',NULL,41,'{"mode":"turn_translation","question":"میا چه زمانی تصمیم می گیرد؟","choices":["فردا","امروز","شنبه"],"correctIndex":0}','{"cefr":"B1"}');
+  INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata)
+  VALUES(v_l_4,'reading_comprehension',10,NULL,NULL,'مکالمه را بخوان و جواب بده',NULL,41,'{"source":"lesson_story","question":"میا باید درباره چه چیزی تصمیم بگیرد؟","choices":["زندگی در خانه دیگری","رفتن با قطار یا اتوبوس","کار کردن یا استراحت کردن"],"correctIndex":0}','{"cefr":"B1"}');
+
+  SELECT COUNT(*) INTO v_count FROM lessons WHERE chapter_id=v_chapter;
+  IF v_count<>4 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Unexpected Series 081 lesson count.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM lessons WHERE chapter_id=v_chapter AND prompt_character_id=learner_character_id;
+  IF v_count<>0 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Every Lesson requires two different Characters.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM turns t JOIN lessons l ON l.id=t.lesson_id WHERE l.chapter_id=v_chapter;
+  IF v_count<>22 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Unexpected Series 081 turn count.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM turns t JOIN lessons l ON l.id=t.lesson_id WHERE l.chapter_id=v_chapter AND t.role='learner' AND (t.speech_target IS NULL OR TRIM(t.speech_target)='');
+  IF v_count<>0 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Learner Turn without speech_target.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM activities ac JOIN lessons l ON l.id=ac.lesson_id WHERE l.chapter_id=v_chapter;
+  IF v_count<>32 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Unexpected Series 081 activity count.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM activities ac JOIN lessons l ON l.id=ac.lesson_id WHERE l.chapter_id=v_chapter AND ac.activity_type='reading_comprehension' AND (ac.config IS NULL OR JSON_EXTRACT(ac.config,'$.question') IS NULL);
+  IF v_count<>0 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Reading Activity without task.'; END IF;
+  SELECT COUNT(*) INTO v_count FROM lesson_words lw JOIN lessons l ON l.id=lw.lesson_id WHERE l.chapter_id=v_chapter AND lw.is_target=1;
+  IF v_count<>3 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Unexpected Series 081 explicit-target count.'; END IF;
+  UPDATE chapters SET status='validated' WHERE id=v_chapter;
+  UPDATE levels SET status='active' WHERE id=v_level;
+  COMMIT;
+END$$
+DELIMITER ;
+
+CALL import_nova_series_081_v9();
+DROP PROCEDURE IF EXISTS import_nova_series_081_v9;

@@ -2,7 +2,7 @@
   "project": "Nova",
   "course": "de-fa",
   "schema_version": "v9",
-  "database_revision": "v9.1.1",
+  "database_revision": "v9.0",
   "last_completed_level": "A2",
   "last_completed_series": 80,
   "next_level": "B1",
@@ -11,9 +11,8 @@
   "content_freeze": {
     "enabled": false,
     "after_series": 80,
-    "reason": "explicit_content_production_resume_authorized",
-    "resume_requires_explicit_unfreeze": false,
-    "resumed_at": "2026-09-04T17:15:54.269Z"
+    "reason": "explicit_resume_from_exact_canonical_v9_0_archive",
+    "resume_requires_explicit_unfreeze": false
   },
   "generation_mode": "atomic_chapter_generation_with_batched_artifacts",
   "batching": {
@@ -30,20 +29,20 @@
       1,
       8
     ],
-    "pending_chapter": 1,
-    "pending_series": 81,
-    "status": "ready_for_hourly_atomic_generation",
-    "retry_policy": "regenerate_series_081_from_scratch_against_v9.1.1"
+    "last_qa_passed_chapter": 1,
+    "last_qa_passed_series": 81,
+    "pending_chapter": 2,
+    "pending_series": 82,
+    "status": "series_081_qa_passed_staged",
+    "retry_policy": "generate_against_exact_canonical_v9_0_only"
   },
   "database": {
-    "revision": "v9.1.1",
-    "audit_status": "complete_with_in_place_upgrade_path",
-    "implementation_status": "live_v9_0_detected_upgrade_script_ready",
-    "canonical_archive_static_scan": "passed",
-    "full_a1_a2_restore_test": "blocked_until_in_place_schema_upgrade_runs",
-    "live_mysql_status": "schema_upgrade_required_before_canonical_migration",
-    "last_live_error": "#1054 Unknown column courses.course_key",
-    "next_live_action": "run_upgrade_existing_v9_0_to_v9_1_1_then_migrate_and_validate"
+    "revision": "v9.0",
+    "source_archive": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
+    "archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+    "active_schema": "nova/database/schema_v9.sql",
+    "repository_status": "canonical_v9_0_restored",
+    "live_mysql_status": "not_changed_by_this_commit"
   },
   "canonical_archive": {
     "path": "nova/archive/nova_v9_production_series_001_080_fixed.zip",
@@ -59,12 +58,15 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-04T18:34:02.883Z",
+  "updated_at": "2026-09-05T05:19:22.170Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
     "max_chapters_per_run": 1,
     "source_of_truth": "github_main",
+    "required_database_revision": "v9.0",
+    "schema_changes_allowed": false,
+    "next_series": 82,
     "advance_state_only_after_full_batch_qa_pass": true
   }
 }

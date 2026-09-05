@@ -17,33 +17,26 @@
       "chapter": 1,
       "series": 81,
       "status": "PASS",
+      "sql": "nova/staging/B1/batch_01/chapter_01_series_081/chapter.sql",
       "qa": "nova/staging/B1/batch_01/chapter_01_series_081/qa.json",
-      "database_revision": "v9.1.1",
-      "source_main_head": "03cc8c8098eb2f23936fed2657ba462b5f07a2dd"
-    },
-    {
-      "chapter": 2,
-      "series": 82,
-      "status": "PASS",
-      "qa": "nova/staging/B1/batch_01/chapter_02_series_082/qa.json",
-      "database_revision": "v9.1.1",
-      "source_main_head": "ad41cd1bd6a1ed30af634a0cac5098e9f2602c14"
+      "database_revision": "v9.0",
+      "sql_sha256": "51da919f90a7980a25b71f35f042614e4ca9ffcfaa0e6b3bf50d839a189c9d26",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
     }
   ],
   "failed_chapters": [],
-  "next_pending_chapter": 3,
-  "next_pending_series": 83,
+  "next_pending_chapter": 2,
+  "next_pending_series": 82,
   "cross_chapter_qa": "not_ready",
   "batch_artifact": "nova/content/B1/batch_01_chapters_01_08.sql",
   "batch_publish_condition": "all chapters 1-8 PASS and cross-chapter QA PASS",
   "status": "in_progress",
-  "canonical_database_revision": "v9.1.1",
-  "retry_from_scratch": false,
-  "retry_authorized_at": "2026-09-04T17:15:54.269Z",
-  "canonical_chapter_title": "Ich muss mich entscheiden",
+  "canonical_database_revision": "v9.0",
+  "schema_changes_allowed": false,
   "last_completed_atomic_unit": {
-    "chapter": 2,
-    "series": 82,
+    "chapter": 1,
+    "series": 81,
     "status": "PASS"
-  }
+  },
+  "updated_at": "2026-09-05T05:19:22.170Z"
 }
