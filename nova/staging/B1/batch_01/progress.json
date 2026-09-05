@@ -52,11 +52,21 @@
       "database_revision": "v9.0",
       "sql_sha256": "d17fe1c328cff7690fc55d98bf2999130ae9b30c2a8af97144c47660b6f130f9",
       "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    },
+    {
+      "chapter": 5,
+      "series": 85,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_01/chapter_05_series_085/chapter.sql",
+      "qa": "nova/staging/B1/batch_01/chapter_05_series_085/qa.json",
+      "database_revision": "v9.0",
+      "sql_sha256": "a2c93813e117234cedf8a90f26ec6bc6ebae39d28e109eefe45f24870367d0ef",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
     }
   ],
   "failed_chapters": [],
-  "next_pending_chapter": 5,
-  "next_pending_series": 85,
+  "next_pending_chapter": 6,
+  "next_pending_series": 86,
   "cross_chapter_qa": "not_ready",
   "batch_artifact": "nova/content/B1/batch_01_chapters_01_08.sql",
   "batch_publish_condition": "all chapters 1-8 PASS and cross-chapter QA PASS",
@@ -64,9 +74,9 @@
   "canonical_database_revision": "v9.0",
   "schema_changes_allowed": false,
   "last_completed_atomic_unit": {
-    "chapter": 4,
-    "series": 84,
+    "chapter": 5,
+    "series": 85,
     "status": "PASS"
   },
-  "updated_at": "2026-09-05T08:11:28.886Z"
+  "updated_at": "2026-09-05T09:02:35.869Z"
 }
