@@ -19,7 +19,7 @@
   },
   "content_freeze": false,
   "next_level": "B1",
-  "next_series": 89,
+  "next_series": 90,
   "database_files": [
     "../database/reset_all_v9.sql",
     "../database/schema_v9.sql",
@@ -72,8 +72,11 @@
     "status": "not_changed_by_repository_commit",
     "note": "Repository restoration does not alter the Liara MySQL database."
   },
-  "staged_series": [],
-  "updated_at": "2026-09-05T12:05:16.338Z",
+  "staged_series": [
+    89,
+    89
+  ],
+  "updated_at": "2026-09-05T12:14:24.708Z",
   "published_batches": [
     {
       "level": "B1",
