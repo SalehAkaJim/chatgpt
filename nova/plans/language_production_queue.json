@@ -93,9 +93,15 @@
     "require_all_batch_qa_pass": true,
     "require_all_batch_artifacts_published": true,
     "require_state_snapshot_complete": true,
-    "activate_only_next_queued_course": true
+    "activate_only_next_queued_course": true,
+    "required_batch_artifacts": {
+      "future_courses": 30,
+      "german_current_course": 20,
+      "german_historical_A1_A2_gate": "checksum_matched_series_001_080_archive_and_PASS_scan"
+    },
+    "historical_completed_levels_may_use_canonical_archive": true
   },
   "queue_open_for_future_append": true,
-  "updated_at": "2026-09-05T12:18:57.360Z",
+  "updated_at": "2026-09-05T12:19:58.706Z",
   "authorization": "explicit_user_order"
 }
