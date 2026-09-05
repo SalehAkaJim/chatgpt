@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "course": "de-fa",
   "source_of_truth": "github",
   "database_revision": "v9.0",
@@ -100,7 +100,11 @@
     "do_not_translate_or_copy_previous_course": true,
     "level_model_policy": "defined_independently_by_each_course_curriculum",
     "force_CEFR_A1_to_C2": false,
-    "transition_gate_final_level": "read_from_active_course_curriculum"
+    "transition_gate_final_level": "read_from_active_course_curriculum",
+    "next_course_plan_ready": true,
+    "next_course_curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+    "next_course_curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
+    "next_course_audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json"
   },
   "audio_generation": {
     "enabled": true,

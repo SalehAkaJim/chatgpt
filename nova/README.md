@@ -6,8 +6,8 @@ This repository is the persistent source of truth for Nova educational content a
 
 - A1 and A2 are complete through Series 080.
 - The active database contract is the unchanged canonical Nova v9.0 contract from the preserved archive.
-- B1 Series 081 through 085 have passed chapter QA and are staged.
-- The next atomic generation unit is B1 Series 086.
+- B1 Series 081 through 089 have passed chapter QA; Batch 01 is published and later QA-passed chapters are staged.
+- The next atomic generation unit is B1 Series 090.
 - Content is generated as up to two strictly sequential chapters per hourly run. Each chapter is independently QA-checked and committed before the next chapter starts. Published state advances only after all eight chapters and batch QA pass.
 
 ## Canonical database
@@ -36,7 +36,7 @@ The archive and extracted Series 001-080 files must not be edited.
 
 ## B1 staging
 
-QA-passed chapters are stored under `nova/staging/B1/`. Series 081-085 are v9.0-only content INSERTs and contain no schema DDL. Series 086 is the next pending chapter.
+QA-passed chapters are stored under `nova/staging/B1/`. Series 081-089 are v9.0-only content INSERTs and contain no schema DDL. Series 090 is the next pending chapter.
 
 No future production workflow may depend on temporary sandbox files.
 
@@ -66,6 +66,25 @@ Courses are produced strictly in this order:
 
 The machine-readable queue is stored in `nova/plans/language_production_queue.json`.
 Each language starts from absolute zero with an independently designed curriculum, word state, characters and storylines. Level names, count, ordering and final level are defined by that language's own curriculum; future courses are not forced into A1-C2. Later courses reuse only the Nova v9.0 content engine, and German content must not be translated or copied into them. The next curriculum and its language-specific audio configuration are prepared during the final eight chapters of the active course, but its content does not start until the active course passes its curriculum-defined final transition gate.
+
+## English master curriculum
+
+The English → Persian course is fully planned but remains queued until German passes its final content, batch, snapshot and audio gates. Its learner-facing levels are:
+
+1. Start (Series 001-040)
+2. Everyday (Series 041-080)
+3. Independent (Series 081-120)
+4. Confident (Series 121-160)
+5. Advanced (Series 161-200)
+6. Mastery (Series 201-240)
+
+The plan contains 48 modules, 240 chapters, 960 planned lessons and 30 final eight-chapter SQL batch files. CEFR is retained only as internal alignment; the product uses the six names above. The curriculum is independent rather than a translation of German and includes priorities specific to Persian-speaking English learners.
+
+Machine-readable files:
+
+- `nova/plans/en_fa_curriculum_master_plan_v9.json`
+- `nova/plans/en_fa_curriculum_master_plan_v9_qa.json`
+- `nova/plans/en_fa_audio_preflight_v9.json`
 
 ## Audio production
 

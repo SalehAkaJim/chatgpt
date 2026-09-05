@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "project": "Nova",
   "purpose": "ordered multi-course content production queue",
   "base_language": {
@@ -40,8 +40,30 @@
       "name": "English",
       "name_fa": "انگلیسی",
       "status": "queued",
-      "level_model": "curriculum_defined",
-      "level_model_status": "to_be_designed_before_activation"
+      "level_model": {
+        "name": "Nova English six-level model",
+        "levels": [
+          "Start",
+          "Everyday",
+          "Independent",
+          "Confident",
+          "Advanced",
+          "Mastery"
+        ],
+        "final_level": "Mastery",
+        "internal_alignment": "Absolute zero through C2"
+      },
+      "level_model_status": "master_plan_ready_QA_passed",
+      "curriculum_plan": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+      "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
+      "audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json",
+      "planned_series_range": [
+        1,
+        240
+      ],
+      "planned_chapters": 240,
+      "planned_lessons": 960,
+      "planned_batch_files": 30
     },
     {
       "order": 2,
@@ -130,7 +152,7 @@
     "require_audio_update_sql": true
   },
   "queue_open_for_future_append": true,
-  "updated_at": "2026-09-05T12:30:51.603Z",
+  "updated_at": "2026-09-05T12:44:44.703Z",
   "authorization": "explicit_user_order",
   "audio_policy_file": "nova/plans/audio_production_policy.json"
 }

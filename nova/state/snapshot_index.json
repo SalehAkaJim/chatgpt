@@ -76,7 +76,7 @@
     89,
     89
   ],
-  "updated_at": "2026-09-05T12:30:51.603Z",
+  "updated_at": "2026-09-05T12:44:44.703Z",
   "published_batches": [
     {
       "level": "B1",
@@ -106,5 +106,28 @@
     "word_audio_entries": 617,
     "through_series": 89,
     "status": "caught_up"
+  },
+  "next_course_plan": {
+    "course": "en-fa",
+    "status": "ready_QA_passed",
+    "level_model": [
+      "Start",
+      "Everyday",
+      "Independent",
+      "Confident",
+      "Advanced",
+      "Mastery"
+    ],
+    "curriculum": "../plans/en_fa_curriculum_master_plan_v9.json",
+    "curriculum_qa": "../plans/en_fa_curriculum_master_plan_v9_qa.json",
+    "audio_preflight": "../plans/en_fa_audio_preflight_v9.json",
+    "planned_series_range": [
+      1,
+      240
+    ],
+    "planned_chapters": 240,
+    "planned_lessons": 960,
+    "planned_batch_files": 30,
+    "activation": "after_de_fa_full_completion_only"
   }
 }

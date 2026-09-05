@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T12:30:51.603Z",
+  "updated_at": "2026-09-05T12:44:44.703Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -86,7 +86,11 @@
     "transition_mode": "after_current_course_C2_and_all_batch_QA",
     "queue_open_for_future_append": true,
     "level_model_policy": "course_specific_curriculum_defined",
-    "force_CEFR_A1_to_C2": false
+    "force_CEFR_A1_to_C2": false,
+    "english_plan_status": "ready_QA_passed",
+    "english_curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+    "english_curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
+    "english_audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json"
   },
   "audio": {
     "required_for_course_completion": true,

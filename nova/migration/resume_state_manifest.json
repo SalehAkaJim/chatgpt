@@ -84,7 +84,7 @@
     ],
     "next_series": 90
   },
-  "updated_at": "2026-09-05T12:30:51.603Z",
+  "updated_at": "2026-09-05T12:44:44.703Z",
   "execution_policy": {
     "cadence": "hourly",
     "max_chapters_per_run": 2,
@@ -103,7 +103,23 @@
       "it-fa",
       "ko-fa"
     ],
-    "transition_requires_full_course_QA": true
+    "transition_requires_full_course_QA": true,
+    "next_course_preparation": {
+      "course": "en-fa",
+      "status": "master_plan_ready_QA_passed",
+      "level_model": [
+        "Start",
+        "Everyday",
+        "Independent",
+        "Confident",
+        "Advanced",
+        "Mastery"
+      ],
+      "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+      "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
+      "audio_preflight": "nova/plans/en_fa_audio_preflight_v9.json",
+      "content_activation_gate": "after_de_fa_full_completion_only"
+    }
   },
   "level_model_policy": "course_specific_curriculum_defined",
   "audio_policy": "nova/plans/audio_production_policy.json",

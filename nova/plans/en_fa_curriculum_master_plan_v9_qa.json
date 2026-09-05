@@ -1,0 +1,107 @@
+{
+  "artifact": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+  "checked_at": "2026-09-05T12:42:52.855Z",
+  "checks": {
+    "all_persian_titles_present": true,
+    "audio_required": true,
+    "eight_modules_per_level": true,
+    "exact_level_order": true,
+    "five_chapters_per_module": true,
+    "forty_chapters_per_level": true,
+    "lori_pinned": true,
+    "no_active_english_content_before_turn": true,
+    "sequential_series_001_240": true,
+    "six_levels": true,
+    "thirty_batch_files": true,
+    "total_240_chapters": true,
+    "total_960_lessons": true,
+    "unique_chapter_titles": true
+  },
+  "counts": {
+    "chapters": 240,
+    "final_sql_files": 30,
+    "levels": 6,
+    "modules": 48,
+    "planned_lessons": 960
+  },
+  "course": "en-fa",
+  "database_revision": "v9.0",
+  "errors": [],
+  "level_summary": [
+    {
+      "batch_files": 5,
+      "cefr_alignment": "Absolute zero to A1",
+      "chapters": 40,
+      "modules": 8,
+      "name": "Start",
+      "order": 1,
+      "series_range": [
+        1,
+        40
+      ]
+    },
+    {
+      "batch_files": 5,
+      "cefr_alignment": "A1+ to A2",
+      "chapters": 40,
+      "modules": 8,
+      "name": "Everyday",
+      "order": 2,
+      "series_range": [
+        41,
+        80
+      ]
+    },
+    {
+      "batch_files": 5,
+      "cefr_alignment": "A2+ to B1",
+      "chapters": 40,
+      "modules": 8,
+      "name": "Independent",
+      "order": 3,
+      "series_range": [
+        81,
+        120
+      ]
+    },
+    {
+      "batch_files": 5,
+      "cefr_alignment": "B1+ to B2",
+      "chapters": 40,
+      "modules": 8,
+      "name": "Confident",
+      "order": 4,
+      "series_range": [
+        121,
+        160
+      ]
+    },
+    {
+      "batch_files": 5,
+      "cefr_alignment": "B2+ to C1",
+      "chapters": 40,
+      "modules": 8,
+      "name": "Advanced",
+      "order": 5,
+      "series_range": [
+        161,
+        200
+      ]
+    },
+    {
+      "batch_files": 5,
+      "cefr_alignment": "C1+ to C2",
+      "chapters": 40,
+      "modules": 8,
+      "name": "Mastery",
+      "order": 6,
+      "series_range": [
+        201,
+        240
+      ]
+    }
+  ],
+  "project": "Nova",
+  "status": "PASS",
+  "warnings": []
+}

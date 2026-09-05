@@ -1,0 +1,45 @@
+{
+  "base_language": "fa",
+  "content_source": "nova/plans/en_fa_curriculum_master_plan_v9.json",
+  "course": "en-fa",
+  "created_at": "2026-09-05T12:42:52.855Z",
+  "execute_when": "during the final eight chapters of de-fa",
+  "implementation_requirements": [
+    "parameterize source discovery for en-fa",
+    "write audio only under course-scoped en-fa paths",
+    "create separate turn and Word manifests for en-fa",
+    "export course-scoped update_turn_audio.sql and update_word_audio.sql",
+    "run source validation and dry plan",
+    "run pronunciation QA samples before paid generation",
+    "confirm 100 percent Turn and Word coverage before course completion"
+  ],
+  "learning_language": "en",
+  "model_id": "eleven_multilingual_v2",
+  "output_paths": {
+    "turn_manifest": "nova/audio/en-fa/turn_manifest.json",
+    "turn_update_sql": "nova/audio/en-fa/update_turn_audio.sql",
+    "turns": "nova/audio/turns/en-fa/{level}/m{module}/c{chapter}/l{lesson}/",
+    "word_manifest": "nova/audio/en-fa/word_manifest.json",
+    "word_update_sql": "nova/audio/en-fa/update_word_audio.sql",
+    "words": "nova/audio/words/en-fa/{word-key-prefix}/"
+  },
+  "primary_locale": "en-US",
+  "project": "Nova",
+  "provider": "elevenlabs",
+  "status": "planned_pending_execution_before_course_activation",
+  "turn_audio": {
+    "course_specific_character_roster_required": true,
+    "distinct_profile_matched_voice_per_character": true,
+    "every_voice_must_be_verified_for_english": true,
+    "required": true,
+    "voice_map_path": "nova/tts/voice_map_en_fa.json"
+  },
+  "version": 1,
+  "word_audio": {
+    "pronunciation_sample_QA_required_before_paid_bulk_generation": true,
+    "required": true,
+    "verified_for_english_in_current_voice_metadata": true,
+    "voice_id": "TbMNBJ27fH2U0VgpSNko",
+    "voice_name": "Lori - Happy, Sweet and Compassionate"
+  }
+}
