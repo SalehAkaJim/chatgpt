@@ -58,7 +58,7 @@
     "series_015": "nova_DE_FA_A1_M03_C05_series_015_v9_r3.sql",
     "series_020": "nova_DE_FA_A1_M04_C05_series_020_v9_r2.sql"
   },
-  "updated_at": "2026-09-05T12:18:57.360Z",
+  "updated_at": "2026-09-05T12:30:51.603Z",
   "automation": {
     "cadence": "hourly",
     "atomic_unit": "chapter",
@@ -84,6 +84,29 @@
       "ko-fa"
     ],
     "transition_mode": "after_current_course_C2_and_all_batch_QA",
-    "queue_open_for_future_append": true
+    "queue_open_for_future_append": true,
+    "level_model_policy": "course_specific_curriculum_defined",
+    "force_CEFR_A1_to_C2": false
+  },
+  "audio": {
+    "required_for_course_completion": true,
+    "policy_file": "nova/plans/audio_production_policy.json",
+    "generation_mode": "incremental_after_each_chapter",
+    "turn_audio": {
+      "manifest": "nova/audio/manifest.json",
+      "entries": 1738,
+      "through_series": 89,
+      "last_run_failed": 0
+    },
+    "word_audio": {
+      "manifest": "nova/audio/word_manifest.json",
+      "entries": 617,
+      "through_series": 89,
+      "last_run_failed": 0,
+      "voice": "Lori",
+      "voice_id": "TbMNBJ27fH2U0VgpSNko"
+    },
+    "status": "caught_up_with_series_089",
+    "future_courses_require_language_specific_preflight": true
   }
 }

@@ -65,4 +65,8 @@ Courses are produced strictly in this order:
 5. Korean → Persian
 
 The machine-readable queue is stored in `nova/plans/language_production_queue.json`.
-Each language starts from absolute zero with an independently designed curriculum, word state, characters and storylines. Later courses reuse only the Nova v9.0 content engine; German content must not be translated or copied into them. The next curriculum is prepared during the final eight chapters of the active course, but its content does not start until the active course passes the complete C2 transition gate.
+Each language starts from absolute zero with an independently designed curriculum, word state, characters and storylines. Level names, count, ordering and final level are defined by that language's own curriculum; future courses are not forced into A1-C2. Later courses reuse only the Nova v9.0 content engine, and German content must not be translated or copied into them. The next curriculum and its language-specific audio configuration are prepared during the final eight chapters of the active course, but its content does not start until the active course passes its curriculum-defined final transition gate.
+
+## Audio production
+
+Turn audio and Word pronunciation are required for every course and are generated incrementally after each QA-passed chapter. Turn voices are distinct per character and verified for the target language. All dictionary Words and phrases use the pinned Lori voice (ID `TbMNBJ27fH2U0VgpSNko`) after language-specific pronunciation verification. Content generation may continue while audio jobs finish, but a course cannot be marked complete until both audio manifests reach 100% coverage and their update SQL files are ready. The machine-readable policy is `nova/plans/audio_production_policy.json`.

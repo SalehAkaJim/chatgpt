@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "project": "Nova",
+  "provider": "elevenlabs",
+  "content_engine_revision": "v9.0",
+  "status": "active",
+  "required_for_every_course": true,
+  "generation_mode": "incremental_after_each_QA_passed_chapter",
+  "completion_policy": {
+    "content_may_continue_while_audio_jobs_finish": true,
+    "course_may_not_be_marked_complete_until_audio_catches_up": true,
+    "turn_audio_coverage_required_percent": 100,
+    "word_audio_coverage_required_percent": 100,
+    "failed_audio_must_be_resumable_and_retried": true,
+    "update_sql_required": true,
+    "manifest_required": true
+  },
+  "turn_audio": {
+    "model_id": "eleven_multilingual_v2",
+    "output_format": "mp3_44100_64",
+    "voice_policy": "distinct profile-matched voice per character",
+    "language_support_must_be_verified_per_course": true,
+    "voice_map_must_be_course_specific": true,
+    "current_workflow": ".github/workflows/nova-turn-audio.yml",
+    "current_script": "nova/tts/nova_tts.py",
+    "path_pattern": "nova/audio/turns/{course}/{level}/m{module}/c{chapter}/l{lesson}/t{turn}-{character}-{fingerprint}.mp3",
+    "manifest_pattern": "nova/audio/{course}/turn_manifest.json",
+    "german_legacy_manifest": "nova/audio/manifest.json",
+    "update_sql_pattern": "nova/audio/{course}/update_turn_audio.sql"
+  },
+  "word_audio": {
+    "model_id": "eleven_multilingual_v2",
+    "output_format": "mp3_44100_64",
+    "voice_name": "Lori - Happy, Sweet and Compassionate",
+    "voice_id": "TbMNBJ27fH2U0VgpSNko",
+    "single_voice_for_all_words_and_phrases": true,
+    "language_support_must_be_verified_before_course_activation": true,
+    "current_verified_queue_languages": {
+      "de": true,
+      "en": true,
+      "fr": false,
+      "it": true,
+      "ko": true
+    },
+    "french_note": "Current pinned Lori metadata does not list French as verified. Run a pronunciation QA test before French activation; do not silently choose another voice.",
+    "current_workflow": ".github/workflows/nova-word-audio.yml",
+    "current_script": "nova/tts/nova_word_tts.py",
+    "path_pattern": "nova/audio/words/{course}/{word-key-prefix}/{word}-{fingerprint}.mp3",
+    "manifest_pattern": "nova/audio/{course}/word_manifest.json",
+    "german_legacy_manifest": "nova/audio/word_manifest.json",
+    "update_sql_pattern": "nova/audio/{course}/update_word_audio.sql"
+  },
+  "course_preflight": [
+    "parameterize TTS source discovery by active course",
+    "create a course-specific turn voice map",
+    "verify every selected turn voice for the target language",
+    "verify Lori pronunciation for the target language",
+    "verify repository paths, manifests and SQL exporters are course-scoped",
+    "run dry-run source validation before paid generation"
+  ],
+  "current_german_checkpoint": {
+    "content_through_series": 89,
+    "turn_audio_entries": 1738,
+    "word_audio_entries": 617,
+    "turn_audio_through_series": 89,
+    "word_audio_through_series": 89,
+    "last_turn_generation": {
+      "requested": 24,
+      "completed": 24,
+      "failed": 0
+    },
+    "last_word_generation": {
+      "requested": 30,
+      "completed": 30,
+      "failed": 0
+    },
+    "status": "caught_up"
+  },
+  "updated_at": "2026-09-05T12:30:51.603Z",
+  "authorization": "explicit_user_requirement"
+}

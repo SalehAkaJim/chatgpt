@@ -84,7 +84,7 @@
     ],
     "next_series": 90
   },
-  "updated_at": "2026-09-05T12:18:57.360Z",
+  "updated_at": "2026-09-05T12:30:51.603Z",
   "execution_policy": {
     "cadence": "hourly",
     "max_chapters_per_run": 2,
@@ -104,5 +104,8 @@
       "ko-fa"
     ],
     "transition_requires_full_course_QA": true
-  }
+  },
+  "level_model_policy": "course_specific_curriculum_defined",
+  "audio_policy": "nova/plans/audio_production_policy.json",
+  "course_completion_requires_audio": true
 }

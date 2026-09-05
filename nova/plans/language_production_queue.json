@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "project": "Nova",
   "purpose": "ordered multi-course content production queue",
   "base_language": {
@@ -17,7 +17,20 @@
     "name_fa": "آلمانی",
     "status": "in_progress",
     "current_level": "B1",
-    "next_series": 90
+    "next_series": 90,
+    "level_model": {
+      "type": "CEFR",
+      "levels": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ],
+      "final_level": "C2",
+      "status": "active_existing_german_model"
+    }
   },
   "queue": [
     {
@@ -26,7 +39,9 @@
       "course_key": "en-fa",
       "name": "English",
       "name_fa": "انگلیسی",
-      "status": "queued"
+      "status": "queued",
+      "level_model": "curriculum_defined",
+      "level_model_status": "to_be_designed_before_activation"
     },
     {
       "order": 2,
@@ -34,7 +49,9 @@
       "course_key": "fr-fa",
       "name": "French",
       "name_fa": "فرانسوی",
-      "status": "queued"
+      "status": "queued",
+      "level_model": "curriculum_defined",
+      "level_model_status": "to_be_designed_before_activation"
     },
     {
       "order": 3,
@@ -42,7 +59,9 @@
       "course_key": "it-fa",
       "name": "Italian",
       "name_fa": "ایتالیایی",
-      "status": "queued"
+      "status": "queued",
+      "level_model": "curriculum_defined",
+      "level_model_status": "to_be_designed_before_activation"
     },
     {
       "order": 4,
@@ -50,22 +69,26 @@
       "course_key": "ko-fa",
       "name": "Korean",
       "name_fa": "کره‌ای",
-      "status": "queued"
+      "status": "queued",
+      "level_model": "curriculum_defined",
+      "level_model_status": "to_be_designed_before_activation"
     }
   ],
   "course_contract": {
-    "cefr_levels": [
-      "A1",
-      "A2",
-      "B1",
-      "B2",
-      "C1",
-      "C2"
-    ],
-    "chapters_per_level": 40,
-    "lessons_per_chapter": 4,
-    "batch_files_per_level": 5,
-    "chapters_per_batch_file": 8,
+    "level_model_policy": {
+      "course_specific": true,
+      "fixed_global_level_list": false,
+      "force_CEFR_A1_to_C2": false,
+      "level_names_count_order_and_final_level_defined_by_course_curriculum": true,
+      "pedagogical_coverage_must_be_complete_for_that_language": true
+    },
+    "production_unit_defaults": {
+      "chapters_per_level": 40,
+      "lessons_per_chapter": 4,
+      "batch_files_per_level": 5,
+      "chapters_per_batch_file": 8,
+      "may_be_overridden_only_by_an_explicit_QA_approved_course_plan": true
+    },
     "series_numbering": "restart_at_001_for_each_course",
     "start_from_absolute_zero": true,
     "independent_curriculum_per_language": true,
@@ -83,25 +106,31 @@
   },
   "preparation_policy": {
     "prepare_next_level_curriculum_when_remaining_chapters_lte": 8,
-    "prepare_next_course_a1_curriculum_when_current_course_remaining_chapters_lte": 8,
+    "prepare_next_course_curriculum_when_current_course_remaining_chapters_lte": 8,
+    "curriculum_must_define_its_own_level_model": true,
     "curriculum_must_pass_qa_before_activation": true,
-    "generate_next_course_content_before_activation": false
+    "generate_next_course_content_before_activation": false,
+    "prepare_language_specific_audio_configuration_before_activation": true
   },
   "transition_gate": {
-    "required_final_level": "C2",
+    "required_final_level": "defined_by_active_course_curriculum",
     "require_all_chapter_qa_pass": true,
     "require_all_batch_qa_pass": true,
     "require_all_batch_artifacts_published": true,
     "require_state_snapshot_complete": true,
     "activate_only_next_queued_course": true,
-    "required_batch_artifacts": {
-      "future_courses": 30,
-      "german_current_course": 20,
-      "german_historical_A1_A2_gate": "checksum_matched_series_001_080_archive_and_PASS_scan"
+    "historical_completed_levels_may_use_canonical_archive": true,
+    "required_batch_artifact_policy": {
+      "future_courses": "curriculum_level_count_x_5_by_default",
+      "german_current_course": "20 new B1-C2 artifacts; canonical A1/A2 archive satisfies historical completion",
+      "overrides": "only from an explicit QA-approved course curriculum"
     },
-    "historical_completed_levels_may_use_canonical_archive": true
+    "require_turn_audio_coverage_100_percent": true,
+    "require_word_audio_coverage_100_percent": true,
+    "require_audio_update_sql": true
   },
   "queue_open_for_future_append": true,
-  "updated_at": "2026-09-05T12:19:58.706Z",
-  "authorization": "explicit_user_order"
+  "updated_at": "2026-09-05T12:30:51.603Z",
+  "authorization": "explicit_user_order",
+  "audio_policy_file": "nova/plans/audio_production_policy.json"
 }

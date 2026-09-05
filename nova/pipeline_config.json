@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "course": "de-fa",
   "source_of_truth": "github",
   "database_revision": "v9.0",
@@ -97,6 +97,22 @@
     "prepare_next_curriculum_before_transition": true,
     "preparation_threshold_remaining_chapters": 8,
     "require_transition_gate": true,
-    "do_not_translate_or_copy_previous_course": true
+    "do_not_translate_or_copy_previous_course": true,
+    "level_model_policy": "defined_independently_by_each_course_curriculum",
+    "force_CEFR_A1_to_C2": false,
+    "transition_gate_final_level": "read_from_active_course_curriculum"
+  },
+  "audio_generation": {
+    "enabled": true,
+    "policy_file": "nova/plans/audio_production_policy.json",
+    "trigger": "after_each_QA_passed_chapter_SQL_commit",
+    "run_in_parallel_with_content_pipeline": true,
+    "block_chapter_generation": false,
+    "block_course_completion_until_100_percent_coverage": true,
+    "turn_audio_required": true,
+    "word_audio_required": true,
+    "word_voice_id": "TbMNBJ27fH2U0VgpSNko",
+    "word_voice_name": "Lori",
+    "language_specific_TTS_preflight_required": true
   }
 }
