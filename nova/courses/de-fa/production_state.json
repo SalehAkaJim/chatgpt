@@ -1,61 +1,32 @@
 {
   "version": "2.1.0",
   "course": "de-fa",
-  "next_series": 3,
-  "last_completed_series": 2,
-  "last_validated_series": 2,
-  "last_audio_complete_series": 2,
-  "status": "audio_blocked",
+  "next_series": 5,
+  "last_completed_series": 4,
+  "last_validated_series": 4,
+  "last_audio_complete_series": 4,
+  "status": "ready",
   "active_batch": 1,
-  "updated_at": "2026-09-06T11:45:23Z",
-  "errors": [
-    {
-      "code": "audio_source_locator_failed",
-      "series": [
-        3,
-        4
-      ],
-      "message": "Turn and Word audio source validation could not identify level/module/chapter/series because the staged SQL lacks the direct SELECT id INTO locator statements required by the shared audio parsers.",
-      "content_commit": "69ad54c93ac2fe84fc0aa16e0482f458e6baab3d",
-      "mysql8_workflow_run_id": 34031117197,
-      "turn_audio_workflow_run_id": 34031117113,
-      "word_audio_workflow_run_id": 34031117104
-    }
-  ],
+  "updated_at": "2026-09-06T11:51:00Z",
+  "errors": [],
   "audio": {
     "turns": {
-      "expected": 64,
-      "generated": 64,
+      "expected": 160,
+      "generated": 160,
       "coverage": 1,
-      "workflow_run_id": 34027228350,
-      "verification_workflow_run_id": 34028448218
+      "workflow_run_id": 34031347957
     },
     "words": {
-      "eligible": 88,
-      "generated": 88,
+      "eligible": 180,
+      "generated": 180,
       "coverage": 1,
-      "workflow_run_id": 34027228394,
-      "verification_workflow_run_id": 34028448229
+      "workflow_run_id": 34031348050
     }
   },
   "contract_version": "2.1.0",
   "quality": {
     "status": "PASS",
-    "last_validated_series": 2,
-    "mysql8_workflow_run_id": 34028448146,
-    "pending_series_mysql8_pass": [
-      3,
-      4
-    ],
-    "pending_mysql8_workflow_run_id": 34031117197
-  },
-  "pending": {
-    "series": [
-      3,
-      4
-    ],
-    "content_commit": "69ad54c93ac2fe84fc0aa16e0482f458e6baab3d",
-    "content_quality": "PASS",
-    "audio": "FAILED_SOURCE_VALIDATION"
+    "last_validated_series": 4,
+    "mysql8_workflow_run_id": 34031347970
   }
 }
