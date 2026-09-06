@@ -1,33 +1,33 @@
 {
   "version": "2.1.0",
   "course": "de-fa",
-  "next_series": 15,
-  "last_completed_series": 14,
-  "last_validated_series": 14,
-  "last_audio_complete_series": 14,
+  "next_series": 16,
+  "last_completed_series": 15,
+  "last_validated_series": 15,
+  "last_audio_complete_series": 15,
   "status": "ready",
   "active_batch": 1,
-  "updated_at": "2026-09-06T17:38:00Z",
+  "updated_at": "2026-09-06T18:39:00Z",
   "errors": [],
   "audio": {
     "turns": {
-      "expected": 628,
-      "generated": 628,
+      "expected": 675,
+      "generated": 675,
       "coverage": 1,
-      "workflow_run_id": 34049146580
+      "workflow_run_id": 34052317309
     },
     "words": {
-      "eligible": 497,
-      "generated": 497,
+      "eligible": 526,
+      "generated": 526,
       "coverage": 1,
-      "workflow_run_id": 34049146574
+      "workflow_run_id": 34052317410
     }
   },
   "contract_version": "2.1.0",
   "quality": {
     "status": "PASS",
     "semantic_gate_version": 2,
-    "last_validated_series": 14,
-    "mysql8_workflow_run_id": 34049146592
+    "last_validated_series": 15,
+    "mysql8_workflow_run_id": 34052317359
   }
 }
