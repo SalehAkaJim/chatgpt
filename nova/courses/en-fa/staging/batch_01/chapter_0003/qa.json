@@ -6,8 +6,8 @@
   "series": 3,
   "chapter": 3,
   "batch": 1,
-  "status": "pending",
-  "audio_status": "pending",
+  "status": "PASS",
+  "audio_status": "complete",
   "counts": {
     "lessons": 4,
     "turns": 41,
@@ -61,10 +61,10 @@
     "review_intervals_1_2_4_8_16": true
   },
   "evidence": {
-    "validator": "PASS: python3 nova/validation/validate_content.py chapter.sql",
-    "mysql8": "pending rerun after nora|noun dependency repair",
-    "turn_audio": "PASS: 41/41, 0 failures, run 34034916601",
-    "word_audio_lori": "pending: nora|noun support row added; prior run covered 98/98 before repair",
+    "validator": "PASS: cross-chapter Word dependency gate and educational validator, run 34035449825",
+    "mysql8": "PASS: Nova Content Quality run 34035449825",
+    "turn_audio": "PASS: repository 117/117; Chapter 003 41/41, 0 failures, run 34035340770",
+    "word_audio_lori": "PASS: repository 99/99; Nora support audio added, 0 failures, run 34035340795",
     "manual_content_review": "independent London neighbor-and-family storyline reviewed against v2.1"
   }
 }

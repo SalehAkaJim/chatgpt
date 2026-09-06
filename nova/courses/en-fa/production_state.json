@@ -1,38 +1,31 @@
 {
   "version": "2.1.0",
   "course": "en-fa",
-  "next_series": 3,
-  "last_completed_series": 2,
-  "last_validated_series": 2,
-  "last_audio_complete_series": 2,
-  "status": "blocked",
+  "next_series": 4,
+  "last_completed_series": 3,
+  "last_validated_series": 3,
+  "last_audio_complete_series": 3,
+  "status": "ready",
   "active_batch": 1,
-  "updated_at": "2026-09-06T13:04:00Z",
-  "errors": [
-    {
-      "series": 3,
-      "gate": "mysql8",
-      "run_id": 34034916577,
-      "message": "Column word_id cannot be null: nora|noun was treated as previously published, but no earlier en-fa Chapter defines that Word tuple."
-    }
-  ],
+  "updated_at": "2026-09-06T13:15:00Z",
+  "errors": [],
   "audio": {
     "turns": {
       "expected": 117,
       "generated": 117,
       "coverage": 1,
-      "workflow_run_id": 34034916601
+      "workflow_run_id": 34035340770
     },
     "words": {
-      "eligible": 98,
-      "generated": 98,
+      "eligible": 99,
+      "generated": 99,
       "coverage": 1,
-      "workflow_run_id": 34034916556
+      "workflow_run_id": 34035340795
     }
   },
   "quality": {
-    "status": "FAIL",
-    "last_validated_series": 2,
-    "mysql8_workflow_run_id": 34034916577
+    "status": "PASS",
+    "last_validated_series": 3,
+    "mysql8_workflow_run_id": 34035449825
   }
 }
