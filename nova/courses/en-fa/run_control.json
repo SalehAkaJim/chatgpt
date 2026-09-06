@@ -7,6 +7,20 @@
   "lease": null,
   "lease_timeout_minutes": 50,
   "state": "unlocked",
-  "updated_at": "2026-09-06T05:33:00.000Z",
-  "version": 1
+  "updated_at": "2026-09-06T05:39:00.000Z",
+  "version": 1,
+  "last_blocker": {
+    "series": 24,
+    "chapter": 24,
+    "phase": "chapter_qa",
+    "code": "persian_orthography_disallowed_character",
+    "failed_checks": [
+      "persian_translation_and_orthography"
+    ],
+    "detail": "Draft text used Persian ئ in «جزئی»; Series 024 was not committed and must be regenerated from scratch with compliant Persian orthography.",
+    "content_advanced": false,
+    "retry_from_scratch": true,
+    "source_head": "c293f4f2ae817bccd07c8bb5a1fe3bc59652791b",
+    "recorded_at": "2026-09-06T05:39:00.000Z"
+  }
 }
