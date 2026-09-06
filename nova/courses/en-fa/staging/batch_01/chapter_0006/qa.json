@@ -4,8 +4,8 @@
   "semantic_gate_version": 2,
   "course": "en-fa",
   "series": 6,
-  "status": "STAGED",
-  "audio_status": "pending",
+  "status": "PASS",
+  "audio_status": "complete",
   "counts": {
     "lessons": 4,
     "turns": 42,
@@ -40,28 +40,28 @@
   "audio": {
     "turn_audio": {
       "required": 42,
-      "covered": 0,
-      "coverage": 0,
-      "status": "PENDING",
-      "workflow_run_id": null
+      "covered": 42,
+      "coverage": 1,
+      "status": "PASS",
+      "workflow_run_id": 34045146228
     },
     "word_audio": {
       "required": 15,
-      "covered": 0,
-      "coverage": 0,
-      "status": "PENDING",
+      "covered": 15,
+      "coverage": 1,
+      "status": "PASS",
       "voice": "Lori",
-      "workflow_run_id": null
+      "workflow_run_id": 34045146204
     }
   },
   "mysql8_execution": {
-    "status": "PENDING",
-    "workflow_run_id": null
+    "status": "PASS",
+    "workflow_run_id": 34045146227
   },
   "evidence": {
-    "validator": "PASS: local full-repository static gate before commit",
-    "mysql8": "PENDING: Nova Content Quality required",
-    "turn_audio": "PENDING",
-    "word_audio_lori": "PENDING"
+    "validator": "PASS: full repository static gate in Nova Content Quality run 34045146227",
+    "mysql8": "PASS: Nova Content Quality run 34045146227",
+    "turn_audio": "PASS: repository 241/241; Series 006 42/42, run 34045146228",
+    "word_audio_lori": "PASS: repository 144/144; Series 006 15/15, run 34045146204"
   }
 }
