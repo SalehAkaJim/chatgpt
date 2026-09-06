@@ -18,13 +18,13 @@
       "chapter": 25,
       "series": 25,
       "title": "I don't watch TV",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 26,
       "series": 26,
       "title": "I'd like some water",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 27,
@@ -65,9 +65,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_25_series_025",
+  "next_action": "generate_and_qa_chapter_26_series_026",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-06T06:56:42.000Z",
-  "last_completed_atomic_unit": null
+  "updated_at": "2026-09-06T07:40:57.000Z",
+  "last_completed_atomic_unit": {
+    "chapter": 25,
+    "series": 25,
+    "status": "PASS"
+  }
 }
