@@ -1,0 +1,110 @@
+{
+  "version": 2,
+  "course": "en-fa",
+  "provider": "elevenlabs",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_64",
+  "voice_archetypes": {
+    "learner_male": {
+      "preferred_ages": [
+        "young adult",
+        "middle aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "narration"
+      ],
+      "traits": [
+        "clear",
+        "natural",
+        "calm"
+      ]
+    },
+    "local_friend_female": {
+      "preferred_ages": [
+        "young adult",
+        "middle aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "narration"
+      ],
+      "traits": [
+        "warm",
+        "friendly",
+        "clear"
+      ]
+    },
+    "barista_female": {
+      "preferred_ages": [
+        "young adult",
+        "middle aged"
+      ],
+      "use_cases": [
+        "conversational"
+      ],
+      "traits": [
+        "bright",
+        "helpful",
+        "clear"
+      ]
+    },
+    "station_guide_male": {
+      "preferred_ages": [
+        "young adult",
+        "middle aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "narration"
+      ],
+      "traits": [
+        "helpful",
+        "grounded",
+        "clear"
+      ]
+    }
+  },
+  "characters": [
+    {
+      "name": "Arman",
+      "gender": "male",
+      "role": "زبان‌آموز و شخصیت اصلی",
+      "context": null,
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_archetype": "learner_male",
+      "voice_id": null
+    },
+    {
+      "name": "Maya",
+      "gender": "female",
+      "role": "دوست آرمان در لندن",
+      "context": null,
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_archetype": "local_friend_female",
+      "voice_id": null
+    },
+    {
+      "name": "Nora",
+      "gender": "female",
+      "role": "باریستای کافه",
+      "context": null,
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_archetype": "barista_female",
+      "voice_id": null
+    },
+    {
+      "name": "Daniel",
+      "gender": "male",
+      "role": "راهنمای ایستگاه",
+      "context": null,
+      "origin_country": null,
+      "profile_source": "chapter.sql",
+      "voice_archetype": "station_guide_male",
+      "voice_id": null
+    }
+  ]
+}
