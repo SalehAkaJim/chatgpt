@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "course": "de-fa",
   "next_series": 3,
   "last_completed_series": 2,
@@ -7,20 +7,28 @@
   "last_audio_complete_series": 2,
   "status": "ready",
   "active_batch": 1,
-  "updated_at": "2026-09-06T10:24:00Z",
+  "updated_at": "2026-09-06T10:49:23Z",
   "errors": [],
   "audio": {
     "turns": {
       "expected": 64,
       "generated": 64,
       "coverage": 1,
-      "workflow_run_id": 34027228350
+      "workflow_run_id": 34027228350,
+      "verification_workflow_run_id": 34028448218
     },
     "words": {
       "eligible": 88,
       "generated": 88,
       "coverage": 1,
-      "workflow_run_id": 34027228394
+      "workflow_run_id": 34027228394,
+      "verification_workflow_run_id": 34028448229
     }
+  },
+  "contract_version": "2.1.0",
+  "quality": {
+    "status": "PASS",
+    "last_validated_series": 2,
+    "mysql8_workflow_run_id": 34028448146
   }
 }

@@ -124,8 +124,9 @@
     ]
   },
   "notes": [
-    "Content rebuilt under contract v2.1. Turn texts and eligible Word lemmas are unchanged, so verified audio assets remain reusable.",
-    "Static quality validation passed; final PASS remains gated by the MySQL 8 execution workflow."
+    "Content rebuilt and statically validated under contract v2.1.",
+    "Schema and Chapters 001-002 executed sequentially on MySQL 8 in workflow run 34028448146.",
+    "Turn text and eligible Word lemmas did not change; audio verification workflows succeeded without paid regeneration."
   ],
   "audio": {
     "turn_audio": {
@@ -145,5 +146,14 @@
     "verified_at": "2026-09-06T10:24:00Z"
   },
   "contract_version": "2.1.0",
-  "qa_version": "2.1.0"
+  "qa_version": "2.1.0",
+  "mysql8_execution": {
+    "status": "PASS",
+    "workflow_run_id": 34028448146,
+    "workflow": "Nova Content Quality",
+    "schema_executed": true,
+    "chapter_executed": true,
+    "sequence_position": 1,
+    "verified_at": "2026-09-06T10:49:23Z"
+  }
 }
