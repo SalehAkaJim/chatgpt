@@ -34,6 +34,24 @@ SELECT COUNT(*),MIN(id) INTO v_count,v_chapter FROM chapters WHERE sort_order=3;
             "series": 3,
         })
 
+    def test_guarded_character_lookup(self):
+        sql = """-- SERIES 3
+SELECT COUNT(*),MIN(id) INTO v_count,v_level FROM levels WHERE cefr_level='A1';
+SELECT COUNT(*),MIN(id) INTO v_count,v_module FROM modules WHERE sort_order=1;
+SELECT COUNT(*),MIN(id) INTO v_count,v_chapter FROM chapters WHERE sort_order=3;
+SELECT COUNT(*),MIN(id) INTO v_count,v_c_lena FROM characters WHERE name='Lena' AND gender='female';
+INSERT INTO lessons (sort_order) VALUES (1);
+SET v_l_1=LAST_INSERT_ID();
+INSERT INTO turns (lesson_id,character_id,sort_order,role,text) VALUES (v_l_1,v_c_lena,1,'character','Hallo');
+"""
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            path = root / "chapter.sql"
+            path.write_text(sql, encoding="utf-8")
+            rows = M.parse_source_file(path, root)
+            self.assertEqual(rows[0]["character_name"], "Lena")
+            self.assertEqual(rows[0]["character_gender"], "female")
+
     def test_discovery_is_course_scoped(self):
         sql = """-- NOVA v9 / SERIES 001
 SELECT id INTO v_level FROM levels WHERE cefr_level='A1';
