@@ -1,3 +1,4 @@
+-- Audio pipeline retry after en-fa voice configuration fix (2026-09-06).
 -- NOVA INDEPENDENT EN-FA COURSE V2
 -- SERIES 1
 -- Stage: en-fa-a1-series-0001
