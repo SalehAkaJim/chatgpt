@@ -1,9 +1,9 @@
 {
   "audio_checkpoint": {
-    "status": "pending_series_104_audio",
-    "through_series": 103,
-    "turn_audio_entries": 1930,
-    "word_audio_entries": 767
+    "status": "pending_series_105_audio",
+    "through_series": 104,
+    "turn_audio_entries": 1954,
+    "word_audio_entries": 771
   },
   "audio_policy_file": "../plans/audio_production_policy.json",
   "completed_levels": [
@@ -62,7 +62,7 @@
   },
   "next_level": "B1",
   "next_queued_course": "en-fa",
-  "next_series": 105,
+  "next_series": 106,
   "production_status": "generating",
   "project": "Nova",
   "published_batches": [
@@ -144,7 +144,9 @@
     "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
     "static_scan_status": "passed"
   },
-  "staged_series": [],
+  "staged_series": [
+    105
+  ],
   "state_files": [
     "characters.json",
     "storylines.json",
@@ -162,5 +164,5 @@
     "words_state_12.json"
   ],
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-06T07:12:00.000Z"
+  "updated_at": "2026-09-06T08:10:00.000Z"
 }

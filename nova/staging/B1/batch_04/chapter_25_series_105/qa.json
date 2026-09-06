@@ -1,0 +1,107 @@
+{
+  "assertions": {
+    "exact_sentence_reconstruction": true,
+    "forbidden_course_paths_touched": false,
+    "schema_ddl_present": false,
+    "separable_examples": [
+      "Dann schalte ich das Handy aus.",
+      "Ja, ich gehe früher in das Bett und stehe ruhiger auf.",
+      "Dann bin ich geduldig mit mir und fange neu an.",
+      "Genau, ich passe jetzt besser auf mich auf."
+    ],
+    "surface_mapping_count_equal": true,
+    "used_minus_resolved_tuples": [],
+    "newly_defined_minus_used_tuples": [],
+    "authoritative_tuple_reuse": [
+      "Gewohnheit|noun",
+      "regelmäßig|adverb"
+    ],
+    "genuinely_new_tuples": [
+      "wirken|verb",
+      "essen|verb",
+      "Routine|noun",
+      "Energie|noun",
+      "stressig|adjective",
+      "schwer|adjective",
+      "Grenze|noun",
+      "Veränderung|noun",
+      "bewirken|verb",
+      "bewusst|adverb",
+      "geduldig|adjective",
+      "Einstellung|noun",
+      "aufpassen|verb",
+      "Ja, ich achte jetzt besser auf mich.|phrase",
+      "Ich höre auf meinen Körper und sage auch mal Nein.|phrase",
+      "Ich merke, dass kleine Veränderungen viel bewirken.|phrase",
+      "Genau, ich passe jetzt besser auf mich auf.|phrase"
+    ]
+  },
+  "chapter": 25,
+  "checks": {
+    "activity_source_integrity": "PASS",
+    "audio_turn_source_compatibility": "PASS",
+    "batch_cross_chapter_duplicate_target_audit": "PASS",
+    "canonical_tuple_preservation": "PASS",
+    "chapter_empty_guard": "PASS",
+    "clickable_token_coverage_100_percent": "PASS",
+    "course_isolation": "PASS",
+    "dependency_audit": "PASS",
+    "distractor_quality": "PASS",
+    "duplicate_lesson_words_audit": "PASS",
+    "exact_sentence_reconstruction": "PASS",
+    "explicit_target_history_unique": "PASS",
+    "german_naturalness_and_cefr": "PASS",
+    "learner_speech_target_coverage_100_percent": "PASS",
+    "lemma_first_morphology": "PASS",
+    "level_progression_audit": "PASS",
+    "literal_surface_token_count_equal": "PASS",
+    "persian_translation_and_orthography": "PASS",
+    "reading_has_task": "PASS",
+    "schema_unchanged_v9_0": "PASS",
+    "separable_verb_surface_parts_mapped": "PASS",
+    "status_enum_audit": "PASS",
+    "storyline_continuity": "PASS",
+    "surface_token_spec_count_matches": "PASS",
+    "two_characters_per_lesson": "PASS",
+    "word_audio_policy_v4_eligibility": "PASS",
+    "all_used_word_tuples_materialized": "PASS",
+    "new_word_definitions_complete": "PASS",
+    "tuple_set_differences_empty": "PASS"
+  },
+  "counts": {
+    "activities": 32,
+    "explicit_targets": 4,
+    "learner_turns": 12,
+    "lesson_words": 137,
+    "lessons": 4,
+    "new_word_tuples": 17,
+    "tokens": 162,
+    "turns": 24,
+    "unique_word_tuples": 99,
+    "word_audio_eligible_new_rows": 13,
+    "word_audio_ineligible_phrase_rows": 4
+  },
+  "course": "de-fa",
+  "database_revision": "v9.0",
+  "generated_at": "2026-09-06T08:10:00.000Z",
+  "level": "B1",
+  "module": 6,
+  "project": "Nova",
+  "series": 105,
+  "source_dependencies": {
+    "characters": [
+      "Sara",
+      "Mia"
+    ],
+    "curriculum": "nova/plans/B1_curriculum_plan_v9.json",
+    "prior_series": 104,
+    "prior_storyline_lessons": 16,
+    "authoritative_word_history": [
+      "nova/state/words_state_01.json ... words_state_12.json",
+      "QA-passed staged Batch 04 chapters (none before Series 105)"
+    ]
+  },
+  "status": "PASS",
+  "title": "Jetzt achte ich besser auf mich",
+  "title_translation": "حالا بیشتر مراقب خودم هستم"
+}

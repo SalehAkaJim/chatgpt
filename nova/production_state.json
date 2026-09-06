@@ -4,18 +4,18 @@
     "generation_mode": "incremental_after_each_chapter",
     "policy_file": "nova/plans/audio_production_policy.json",
     "required_for_course_completion": true,
-    "status": "pending_series_104_audio",
+    "status": "pending_series_105_audio",
     "turn_audio": {
-      "entries": 1930,
+      "entries": 1954,
       "last_run_failed": 0,
       "manifest": "nova/audio/manifest.json",
-      "through_series": 103
+      "through_series": 104
     },
     "word_audio": {
-      "entries": 767,
+      "entries": 771,
       "last_run_failed": 0,
       "manifest": "nova/audio/word_manifest.json",
-      "through_series": 103,
+      "through_series": 104,
       "voice": "Lori",
       "voice_id": "TbMNBJ27fH2U0VgpSNko"
     }
@@ -27,7 +27,7 @@
     "commit_each_chapter_after_qa_pass": true,
     "execution_mode": "strictly_sequential",
     "max_chapters_per_run": 2,
-    "next_series": 105,
+    "next_series": 106,
     "required_database_revision": "v9.0",
     "reread_github_state_between_chapters": true,
     "schema_changes_allowed": false,
@@ -72,14 +72,14 @@
       25,
       32
     ],
-    "last_qa_passed_chapter": 24,
-    "last_qa_passed_series": 104,
+    "last_qa_passed_chapter": 25,
+    "last_qa_passed_series": 105,
     "level": "B1",
-    "pending_chapter": 25,
-    "pending_series": 105,
+    "pending_chapter": 26,
+    "pending_series": 106,
     "phase": "B1_content_generation",
     "retry_policy": "generate_against_exact_canonical_v9_0_only",
-    "status": "batch_03_published_chapter_25_pending"
+    "status": "batch_04_staging_chapter_26_pending"
   },
   "database": {
     "active_schema": "nova/database/schema_v9.sql",
@@ -126,10 +126,10 @@
   "last_completed_level": "A2",
   "last_completed_series": 104,
   "next_level": "B1",
-  "next_series": 105,
+  "next_series": 106,
   "project": "Nova",
   "schema_version": "v9",
   "shared_mutable_state": false,
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-06T07:12:00.000Z"
+  "updated_at": "2026-09-06T08:10:00.000Z"
 }

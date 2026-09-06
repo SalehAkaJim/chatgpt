@@ -12,14 +12,23 @@
   ],
   "published": false,
   "production_state_advanced": false,
-  "passed_chapters": [],
+  "passed_chapters": [
+    {
+      "chapter": 25,
+      "series": 105,
+      "title": "Jetzt achte ich besser auf mich",
+      "qa": "PASS",
+      "sql": "nova/staging/B1/batch_04/chapter_25_series_105/chapter.sql",
+      "qa_file": "nova/staging/B1/batch_04/chapter_25_series_105/qa.json"
+    }
+  ],
   "failed_chapters": [],
-  "next_pending_chapter": 25,
-  "next_pending_series": 105,
+  "next_pending_chapter": 26,
+  "next_pending_series": 106,
   "cross_chapter_qa": "not_ready",
   "batch_artifact": "nova/content/B1/batch_04_chapters_25_32.sql",
-  "status": "planned",
+  "status": "staging",
   "canonical_database_revision": "v9.0",
   "schema_changes_allowed": false,
-  "updated_at": "2026-09-06T07:12:00.000Z"
+  "updated_at": "2026-09-06T08:10:00.000Z"
 }
