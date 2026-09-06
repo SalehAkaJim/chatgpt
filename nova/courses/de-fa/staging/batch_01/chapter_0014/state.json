@@ -308,5 +308,13 @@
         30
       ]
     }
-  ]
+  ],
+  "status": "complete",
+  "gates": {
+    "static_qa": "PASS",
+    "mysql8": "PASS",
+    "turn_audio": "PASS",
+    "word_audio": "PASS"
+  },
+  "semantic_gate_version": 2
 }
