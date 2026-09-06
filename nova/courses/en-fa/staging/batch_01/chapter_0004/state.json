@@ -1,0 +1,179 @@
+{
+  "course": "en-fa",
+  "series": 4,
+  "status": "validating",
+  "registry": {
+    "used_tuples": [
+      "arman|noun",
+      "be|verb",
+      "this|pronoun",
+      "your|determiner",
+      "phone|noun",
+      "yes|interjection",
+      "my|determiner",
+      "what|pronoun",
+      "number|noun",
+      "zero|noun",
+      "seven|noun",
+      "three|noun",
+      "four|noun",
+      "no|interjection",
+      "good|adjective",
+      "i|pronoun",
+      "know|verb",
+      "now|adverb",
+      "you|pronoun",
+      "time|noun",
+      "the|determiner",
+      "meeting|noun",
+      "at|adverb",
+      "eight|noun",
+      "it|pronoun",
+      "maya|noun",
+      "she|pronoun",
+      "nora|noun",
+      "here|adverb",
+      "two|noun",
+      "nine|noun",
+      "one|noun",
+      "hello|interjection",
+      "name|noun",
+      "where|adverb",
+      "from|adverb",
+      "iran|noun",
+      "do|function_word",
+      "live|verb",
+      "in|adverb",
+      "london|noun",
+      "who|pronoun",
+      "friend|noun"
+    ]
+  },
+  "story": {
+    "key": "london_new_start",
+    "summary_fa": "آرمان شماره تلفنش را با مایا بررسی می‌کند، زمان جلسه را از دنیل می‌گیرد و در سنجش خوشامدگویی اطلاعاتش را شفاهی بیان می‌کند."
+  },
+  "review_queue": [
+    {
+      "source_series": 4,
+      "due_series": 5,
+      "interval": 1,
+      "targets": [
+        "zero|noun",
+        "one|noun",
+        "two|noun",
+        "three|noun",
+        "four|noun",
+        "five|noun",
+        "six|noun",
+        "seven|noun",
+        "eight|noun",
+        "nine|noun",
+        "ten|noun",
+        "time|noun",
+        "at|adverb",
+        "meeting|noun",
+        "it|pronoun"
+      ]
+    },
+    {
+      "source_series": 4,
+      "due_series": 6,
+      "interval": 2,
+      "targets": [
+        "zero|noun",
+        "one|noun",
+        "two|noun",
+        "three|noun",
+        "four|noun",
+        "five|noun",
+        "six|noun",
+        "seven|noun",
+        "eight|noun",
+        "nine|noun",
+        "ten|noun",
+        "time|noun",
+        "at|adverb",
+        "meeting|noun",
+        "it|pronoun"
+      ]
+    },
+    {
+      "source_series": 4,
+      "due_series": 8,
+      "interval": 4,
+      "targets": [
+        "zero|noun",
+        "one|noun",
+        "two|noun",
+        "three|noun",
+        "four|noun",
+        "five|noun",
+        "six|noun",
+        "seven|noun",
+        "eight|noun",
+        "nine|noun",
+        "ten|noun",
+        "time|noun",
+        "at|adverb",
+        "meeting|noun",
+        "it|pronoun"
+      ]
+    },
+    {
+      "source_series": 4,
+      "due_series": 12,
+      "interval": 8,
+      "targets": [
+        "zero|noun",
+        "one|noun",
+        "two|noun",
+        "three|noun",
+        "four|noun",
+        "five|noun",
+        "six|noun",
+        "seven|noun",
+        "eight|noun",
+        "nine|noun",
+        "ten|noun",
+        "time|noun",
+        "at|adverb",
+        "meeting|noun",
+        "it|pronoun"
+      ]
+    },
+    {
+      "source_series": 4,
+      "due_series": 20,
+      "interval": 16,
+      "targets": [
+        "zero|noun",
+        "one|noun",
+        "two|noun",
+        "three|noun",
+        "four|noun",
+        "five|noun",
+        "six|noun",
+        "seven|noun",
+        "eight|noun",
+        "nine|noun",
+        "ten|noun",
+        "time|noun",
+        "at|adverb",
+        "meeting|noun",
+        "it|pronoun"
+      ]
+    }
+  ],
+  "audio": {
+    "turns": "pending",
+    "words_lori": "pending"
+  },
+  "semantic_gate_version": 2,
+  "gates": {
+    "static_qa": "PASS",
+    "mysql8": "PENDING",
+    "turn_audio": "PENDING",
+    "word_audio": "PENDING"
+  }
+}
