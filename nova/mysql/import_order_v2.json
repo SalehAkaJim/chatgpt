@@ -1,7 +1,7 @@
 {
   "version": "2.1.0",
-  "generated_at": "2026-09-06T12:46:11Z",
-  "generated_from_commit": "fe77f24e5f2c721443848c51a166195975c2b085",
+  "generated_at": "2026-09-06T13:35:05Z",
+  "generated_from_commit": "1f2929f6d2a9a10e3add7f58a328697ff5df20d8",
   "install_mode": "clean",
   "policy": {
     "source_of_truth": "GitHub main",
@@ -64,7 +64,7 @@
       "requires": [
         "CORE-SCHEMA-v9"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 32,
@@ -92,7 +92,7 @@
       "requires": [
         "DE-CH-0001"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 32,
@@ -120,7 +120,7 @@
       "requires": [
         "DE-CH-0002"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 46,
@@ -148,7 +148,7 @@
       "requires": [
         "DE-CH-0003"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 50,
@@ -176,7 +176,7 @@
       "requires": [
         "DE-CH-0004"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 46,
@@ -204,7 +204,7 @@
       "requires": [
         "DE-CH-0005"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 47,
@@ -232,7 +232,7 @@
       "requires": [
         "CORE-SCHEMA-v9"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 38,
@@ -260,7 +260,7 @@
       "requires": [
         "EN-CH-0001"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 38,
@@ -276,6 +276,34 @@
     },
     {
       "order": 11,
+      "stage_id": "EN-CH-0003",
+      "kind": "chapter",
+      "course": "en-fa",
+      "series": 3,
+      "path": "nova/courses/en-fa/staging/batch_01/chapter_0003/chapter.sql",
+      "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0003/qa.json",
+      "git_blob_sha": "94c9824c583462447fd9c9492290e733521be1a1",
+      "qa_blob_sha": "6efd8e217ad2e50311a24850342fcd658b0a2d3c",
+      "ready": true,
+      "requires": [
+        "EN-CH-0002"
+      ],
+      "quality_workflow_run_id": 34035532591,
+      "audio_coverage": {
+        "turn": {
+          "covered": 41,
+          "required": 41,
+          "ratio": 1
+        },
+        "eligible_word": {
+          "covered": 21,
+          "required": 21,
+          "ratio": 1
+        }
+      }
+    },
+    {
+      "order": 12,
       "stage_id": "DE-AUDIO-TURNS-v2",
       "kind": "turn_audio_update",
       "course": "de-fa",
@@ -294,7 +322,7 @@
       }
     },
     {
-      "order": 12,
+      "order": 13,
       "stage_id": "DE-AUDIO-WORDS-v2",
       "kind": "word_audio_update",
       "course": "de-fa",
@@ -313,40 +341,40 @@
       }
     },
     {
-      "order": 13,
+      "order": 14,
       "stage_id": "EN-AUDIO-TURNS-v2",
       "kind": "turn_audio_update",
       "course": "en-fa",
       "path": "nova/audio/en-fa/update_turn_audio.sql",
-      "git_blob_sha": "e1f08283c211428ed95708dcb19397948dfa6b7f",
+      "git_blob_sha": "523440094027be37ea2d016ec10f75f8e2faabaf",
       "manifest_path": "nova/audio/en-fa/turn_manifest.json",
-      "manifest_blob_sha": "94e8152db503846479d55091b1ca6856143b5bf6",
+      "manifest_blob_sha": "d8d840e95c5f078e168348ea8410668f9229f85f",
       "ready": true,
       "requires": [
-        "EN-CH-0002"
+        "EN-CH-0003"
       ],
       "coverage": {
-        "covered": 76,
-        "required": 76,
+        "covered": 117,
+        "required": 117,
         "ratio": 1
       }
     },
     {
-      "order": 14,
+      "order": 15,
       "stage_id": "EN-AUDIO-WORDS-v2",
       "kind": "word_audio_update",
       "course": "en-fa",
       "path": "nova/audio/en-fa/update_word_audio.sql",
-      "git_blob_sha": "c9f1f53cb82a87172d7225e689a600b69a2f8ca8",
+      "git_blob_sha": "7bdbf3c8d20d1af65ad383599a4dbacec672e491",
       "manifest_path": "nova/audio/en-fa/word_manifest.json",
-      "manifest_blob_sha": "7ecc6ddf1c9afc33a031c270af2e5518beadcdab",
+      "manifest_blob_sha": "7cea8a56afe6a104b1ab5d28e3ce4e5f6a8e9dd8",
       "ready": true,
       "requires": [
         "EN-AUDIO-TURNS-v2"
       ],
       "coverage": {
-        "covered": 78,
-        "required": 78,
+        "covered": 99,
+        "required": 99,
         "ratio": 1
       }
     }
@@ -366,7 +394,7 @@
       "requires": [
         "CORE-SCHEMA-v9"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 32,
@@ -394,7 +422,7 @@
       "requires": [
         "DE-CH-0001"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 32,
@@ -422,7 +450,7 @@
       "requires": [
         "DE-CH-0002"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 46,
@@ -450,7 +478,7 @@
       "requires": [
         "DE-CH-0003"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 50,
@@ -478,7 +506,7 @@
       "requires": [
         "DE-CH-0004"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 46,
@@ -506,7 +534,7 @@
       "requires": [
         "DE-CH-0005"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 47,
@@ -534,7 +562,7 @@
       "requires": [
         "CORE-SCHEMA-v9"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 38,
@@ -562,7 +590,7 @@
       "requires": [
         "EN-CH-0001"
       ],
-      "quality_workflow_run_id": 34033872370,
+      "quality_workflow_run_id": 34035532591,
       "audio_coverage": {
         "turn": {
           "covered": 38,
@@ -575,11 +603,39 @@
           "ratio": 1
         }
       }
+    },
+    {
+      "order": 11,
+      "stage_id": "EN-CH-0003",
+      "kind": "chapter",
+      "course": "en-fa",
+      "series": 3,
+      "path": "nova/courses/en-fa/staging/batch_01/chapter_0003/chapter.sql",
+      "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0003/qa.json",
+      "git_blob_sha": "94c9824c583462447fd9c9492290e733521be1a1",
+      "qa_blob_sha": "6efd8e217ad2e50311a24850342fcd658b0a2d3c",
+      "ready": true,
+      "requires": [
+        "EN-CH-0002"
+      ],
+      "quality_workflow_run_id": 34035532591,
+      "audio_coverage": {
+        "turn": {
+          "covered": 41,
+          "required": 41,
+          "ratio": 1
+        },
+        "eligible_word": {
+          "covered": 21,
+          "required": 21,
+          "ratio": 1
+        }
+      }
     }
   ],
   "audio_stages": [
     {
-      "order": 11,
+      "order": 12,
       "stage_id": "DE-AUDIO-TURNS-v2",
       "kind": "turn_audio_update",
       "course": "de-fa",
@@ -598,7 +654,7 @@
       }
     },
     {
-      "order": 12,
+      "order": 13,
       "stage_id": "DE-AUDIO-WORDS-v2",
       "kind": "word_audio_update",
       "course": "de-fa",
@@ -617,40 +673,40 @@
       }
     },
     {
-      "order": 13,
+      "order": 14,
       "stage_id": "EN-AUDIO-TURNS-v2",
       "kind": "turn_audio_update",
       "course": "en-fa",
       "path": "nova/audio/en-fa/update_turn_audio.sql",
-      "git_blob_sha": "e1f08283c211428ed95708dcb19397948dfa6b7f",
+      "git_blob_sha": "523440094027be37ea2d016ec10f75f8e2faabaf",
       "manifest_path": "nova/audio/en-fa/turn_manifest.json",
-      "manifest_blob_sha": "94e8152db503846479d55091b1ca6856143b5bf6",
+      "manifest_blob_sha": "d8d840e95c5f078e168348ea8410668f9229f85f",
       "ready": true,
       "requires": [
-        "EN-CH-0002"
+        "EN-CH-0003"
       ],
       "coverage": {
-        "covered": 76,
-        "required": 76,
+        "covered": 117,
+        "required": 117,
         "ratio": 1
       }
     },
     {
-      "order": 14,
+      "order": 15,
       "stage_id": "EN-AUDIO-WORDS-v2",
       "kind": "word_audio_update",
       "course": "en-fa",
       "path": "nova/audio/en-fa/update_word_audio.sql",
-      "git_blob_sha": "c9f1f53cb82a87172d7225e689a600b69a2f8ca8",
+      "git_blob_sha": "7bdbf3c8d20d1af65ad383599a4dbacec672e491",
       "manifest_path": "nova/audio/en-fa/word_manifest.json",
-      "manifest_blob_sha": "7ecc6ddf1c9afc33a031c270af2e5518beadcdab",
+      "manifest_blob_sha": "7cea8a56afe6a104b1ab5d28e3ce4e5f6a8e9dd8",
       "ready": true,
       "requires": [
         "EN-AUDIO-TURNS-v2"
       ],
       "coverage": {
-        "covered": 78,
-        "required": 78,
+        "covered": 99,
+        "required": 99,
         "ratio": 1
       }
     }
@@ -689,24 +745,26 @@
     "en-fa": {
       "candidate_series": [
         1,
-        2
+        2,
+        3
       ],
       "ready_series": [
         1,
-        2
+        2,
+        3
       ],
-      "last_contiguous_ready_series": 2,
+      "last_contiguous_ready_series": 3,
       "turn_audio": {
-        "covered": 76,
-        "required": 76,
+        "covered": 117,
+        "required": 117,
         "ratio": 1
       },
       "eligible_word_audio": {
-        "covered": 78,
-        "required": 78,
+        "covered": 99,
+        "required": 99,
         "ratio": 1
       }
     }
   },
-  "next_action": "Run stages 1 through 14 in exact order for a clean Nova v9 installation."
+  "next_action": "Run stages 1 through 15 in exact order for a clean Nova v9 installation."
 }

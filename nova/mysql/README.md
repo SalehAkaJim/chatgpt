@@ -27,24 +27,25 @@ mysql --default-character-set=utf8mb4 -h HOST -u USER -p DATABASE < "PATH"
 | 8 | `DE-CH-0006` | Chapter | [chapter.sql](../courses/de-fa/staging/batch_01/chapter_0006/chapter.sql) | `DE-CH-0005` | آماده — Turn 47/47، Word 37/37 |
 | 9 | `EN-CH-0001` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0001/chapter.sql) | `CORE-SCHEMA-v9` | آماده — Turn 38/38، Word 54/54 |
 | 10 | `EN-CH-0002` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0002/chapter.sql) | `EN-CH-0001` | آماده — Turn 38/38، Word 24/24 |
-| 11 | `DE-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/de-fa/update_turn_audio.sql) | `DE-CH-0006` | آماده — 253/253 |
-| 12 | `DE-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/de-fa/update_word_audio.sql) | `DE-AUDIO-TURNS-v2` | آماده — 248/248 |
-| 13 | `EN-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/en-fa/update_turn_audio.sql) | `EN-CH-0002` | آماده — 76/76 |
-| 14 | `EN-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/en-fa/update_word_audio.sql) | `EN-AUDIO-TURNS-v2` | آماده — 78/78 |
+| 11 | `EN-CH-0003` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0003/chapter.sql) | `EN-CH-0002` | آماده — Turn 41/41، Word 21/21 |
+| 12 | `DE-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/de-fa/update_turn_audio.sql) | `DE-CH-0006` | آماده — 253/253 |
+| 13 | `DE-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/de-fa/update_word_audio.sql) | `DE-AUDIO-TURNS-v2` | آماده — 248/248 |
+| 14 | `EN-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/en-fa/update_turn_audio.sql) | `EN-CH-0003` | آماده — 117/117 |
+| 15 | `EN-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/en-fa/update_word_audio.sql) | `EN-AUDIO-TURNS-v2` | آماده — 99/99 |
 
 ## پوشش تاییدشده
 
 - آلمانی: Chapterهای `0001–0006`، صوت Turn برابر `253/253` و Word برابر `248/248`.
-- انگلیسی: Chapterهای `0001–0002`، صوت Turn برابر `76/76` و Word برابر `78/78`.
+- انگلیسی: Chapterهای `0001–0003`، صوت Turn برابر `117/117` و Word برابر `99/99`.
 - قرارداد آموزشی: [independent_course_v2.md](../contracts/independent_course_v2.md)، نسخهٔ `2.1.0`.
 - Validator: [validate_content.py](../validation/validate_content.py).
-- آخرین اجرای موفق Validator و MySQL 8 روی همین محتوای `main`: [Nova Content Quality — Run 34033872370](https://github.com/SalehAkaJim/chatgpt/actions/runs/34033872370).
+- آخرین اجرای موفق Validator و MySQL 8 روی همین محتوای `main`: [Nova Content Quality — Run 34035532591](https://github.com/SalehAkaJim/chatgpt/actions/runs/34035532591).
 
 ## گزارش خطا
 
 ```text
-Stage ID: EN-CH-0002
-Last successful Stage ID: EN-CH-0001
+Stage ID: EN-CH-0003
+Last successful Stage ID: EN-CH-0002
 MySQL error: متن کامل خطا
 ```
 
