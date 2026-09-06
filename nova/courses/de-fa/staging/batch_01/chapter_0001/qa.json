@@ -6,7 +6,7 @@
   "chapter": 1,
   "batch": 1,
   "status": "PASS",
-  "audio_status": "blocked",
+  "audio_status": "complete",
   "counts": {
     "lessons": 4,
     "turns": 32,
@@ -95,18 +95,23 @@
     ]
   },
   "notes": [
-    "Content/static QA passed. Chapter is not complete because both required audio workflows failed before manifest generation."
+    "Content/static QA and required audio coverage passed. Chapter is complete."
   ],
-  "audio_blockers": [
-    {
-      "workflow": "Nova German Turn Audio",
-      "run_id": 34026959319,
-      "error": "voice_map_de_fa.json has an unexpected model_id"
+  "audio": {
+    "turn_audio": {
+      "expected": 32,
+      "generated": 32,
+      "coverage": 1,
+      "workflow_run_id": 34027228350,
+      "manifest": "nova/audio/de-fa/turn_manifest.json"
     },
-    {
-      "workflow": "Nova German Word Audio",
-      "run_id": 34026959364,
-      "error": "word_voice_de_fa.json is unsupported"
-    }
-  ]
+    "word_audio": {
+      "eligible": 51,
+      "generated": 51,
+      "coverage": 1,
+      "workflow_run_id": 34027228394,
+      "manifest": "nova/audio/de-fa/word_manifest.json"
+    },
+    "verified_at": "2026-09-06T10:24:00Z"
+  }
 }

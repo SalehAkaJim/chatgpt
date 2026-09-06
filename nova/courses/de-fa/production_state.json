@@ -2,32 +2,25 @@
   "version": "2.0.0",
   "course": "de-fa",
   "next_series": 3,
-  "last_completed_series": 0,
+  "last_completed_series": 2,
   "last_validated_series": 2,
-  "last_audio_complete_series": 0,
-  "status": "audio_blocked",
+  "last_audio_complete_series": 2,
+  "status": "ready",
   "active_batch": 1,
-  "updated_at": "2026-09-06T10:17:00Z",
-  "errors": [
-    {
-      "stage": "turn_audio",
-      "series": [
-        1,
-        2
-      ],
-      "workflow_run_id": 34026959319,
-      "error": "nova/tts/voice_map_de_fa.json has an unexpected model_id",
-      "retryable": true
+  "updated_at": "2026-09-06T10:24:00Z",
+  "errors": [],
+  "audio": {
+    "turns": {
+      "expected": 64,
+      "generated": 64,
+      "coverage": 1,
+      "workflow_run_id": 34027228350
     },
-    {
-      "stage": "word_audio",
-      "series": [
-        1,
-        2
-      ],
-      "workflow_run_id": 34026959364,
-      "error": "Unsupported word voice config at nova/tts/word_voice_de_fa.json",
-      "retryable": true
+    "words": {
+      "eligible": 88,
+      "generated": 88,
+      "coverage": 1,
+      "workflow_run_id": 34027228394
     }
-  ]
+  }
 }
