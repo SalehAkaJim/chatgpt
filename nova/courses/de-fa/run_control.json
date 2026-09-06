@@ -3,20 +3,27 @@
   "compare_and_swap_required": true,
   "course": "de-fa",
   "expected_next_series": 103,
-  "last_successful_series": 102,
-  "lease": null,
-  "lease_timeout_minutes": 50,
-  "state": "unlocked",
-  "updated_at": "2026-09-06T05:10:00.000Z",
-  "version": 1,
   "last_blocker": {
+    "action": "regenerate_same_series_and_define_only_genuinely_new_tuples_before_token_mapping",
+    "code": "word_tuple_definition_missing",
     "series": 103,
     "stage": "dependency_validation",
-    "code": "word_tuple_definition_missing",
     "tuples": [
       "bekommen|verb",
       "Telefon|noun"
-    ],
-    "action": "regenerate_same_series_and_define_only_genuinely_new_tuples_before_token_mapping"
-  }
+    ]
+  },
+  "last_successful_series": 102,
+  "lease": {
+    "run_id": "nova-de-fa-20260906T0557Z-s103",
+    "holder": "Nova German Production",
+    "acquired_at": "2026-09-06T05:57:00Z",
+    "expires_at": "2026-09-06T06:47:00Z",
+    "expected_next_series": 103,
+    "base_head": "d2b660a3a9a01b40e9accb2740027bd3e71cf5a3"
+  },
+  "lease_timeout_minutes": 50,
+  "state": "locked",
+  "updated_at": "2026-09-06T05:57:00Z",
+  "version": 1
 }
