@@ -1,12 +1,8 @@
 {
-  "automation_title": "Nova English Production",
-  "compare_and_swap_required": true,
-  "course": "en-fa",
-  "expected_next_series": 29,
-  "last_successful_series": 28,
-  "lease": null,
-  "lease_timeout_minutes": 50,
-  "state": "unlocked",
-  "updated_at": "2026-09-06T08:44:04.000Z",
-  "version": 1
+  "version": "2.0.0",
+  "paused": false,
+  "stop_requested": false,
+  "max_chapters_per_run": 2,
+  "on_failure": "stop_without_advancing_state",
+  "allow_series_gaps": false
 }

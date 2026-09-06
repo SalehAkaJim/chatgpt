@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "generated_at": "2026-09-06T00:00:00Z",
+  "install_mode": "clean",
+  "stages": [
+    {
+      "order": 1,
+      "stage_id": "CORE-RESET-v9",
+      "path": "nova/database/reset_all_v9.sql",
+      "destructive": true,
+      "ready": true
+    },
+    {
+      "order": 2,
+      "stage_id": "CORE-SCHEMA-v9",
+      "path": "nova/database/schema_v9.sql",
+      "destructive": false,
+      "ready": true
+    }
+  ],
+  "chapter_stages": [],
+  "audio_stages": [],
+  "next_action": "Wait for first validated chapter batch."
+}

@@ -1,30 +1,17 @@
-name: Nova Turn Audio
+name: Nova German Turn Audio
 
 on:
   workflow_dispatch:
-    inputs:
-      mode:
-        description: Run type
-        required: true
-        type: choice
-        default: plan
-        options:
-          - plan
-          - initial
-          - after_series
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
-      - "nova/archive/series_001_080_fixed/extracted/*series*_v9*.sql"
-      - "nova/staging/**/chapter.sql"
-      - "nova/tts/run-initial.txt"
+      - "nova/courses/de-fa/staging/**/chapter.sql"
 
 permissions:
   contents: write
 
 concurrency:
-  group: nova-turn-audio
+  group: nova-de-fa-turn-audio
   cancel-in-progress: false
 
 jobs:
@@ -32,55 +19,43 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      NOVA_COURSE: "de-fa"
       NOVA_TTS_CONCURRENCY: "2"
-
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Run tests
-        run: python -m unittest discover -s nova/tts/tests -v
-
-      - name: Validate repository SQL sources
+        run: NOVA_COURSE=de-fa python -m unittest discover -s nova/tts/tests -v
+      - name: Validate SQL sources
         run: python nova/tts/nova_tts.py validate-sources
-
-      - name: Assign distinct profile-matched German voices
+      - name: Prepare voices
         id: voices
-        if: github.event_name == 'push' || inputs.mode != 'plan'
         continue-on-error: true
         run: python nova/tts/nova_tts.py bootstrap-voices --yes
-
-      - name: Show generation plan
-        if: always()
-        run: python nova/tts/nova_tts.py plan
-
-      - name: Generate missing or stale audio
+      - name: Generate audio
         id: audio
-        if: (github.event_name == 'push' || inputs.mode != 'plan') && steps.voices.outcome == 'success'
+        if: steps.voices.outcome == 'success'
         continue-on-error: true
         run: python nova/tts/nova_tts.py generate --yes
-
-      - name: Commit resumable voices, audio, manifest, and update SQL
-        if: always() && (github.event_name == 'push' || inputs.mode != 'plan')
+      - name: Commit resumable audio
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- nova/tts/voice_map.json nova/audio
-          if git diff --cached --quiet; then
-            echo "No TTS files changed."
-          else
-            git commit -m "Generate Nova turn audio"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-
-      - name: Fail after preserving resumable progress
-        if: always() && (github.event_name == 'push' || inputs.mode != 'plan') && (steps.voices.outcome == 'failure' || steps.audio.outcome == 'failure')
-        run: |
-          echo "Voice assignment or audio generation was incomplete. Successful progress was committed; re-run to resume."
-          exit 2
+          git add -- nova/tts/voice_map_de_fa.json nova/audio/de-fa nova/audio/turns/de-fa
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Generate Nova de-fa turn audio"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            test "$attempt" -eq 5 && exit 1
+            sleep $((attempt * 2))
+          done
+      - name: Fail after preserving progress
+        if: always() && (steps.voices.outcome == 'failure' || steps.audio.outcome == 'failure')
+        run: exit 2

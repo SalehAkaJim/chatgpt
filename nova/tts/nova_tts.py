@@ -31,7 +31,7 @@ from urllib.request import Request, urlopen
 API_BASE = "https://api.elevenlabs.io"
 MODEL_ID = "eleven_multilingual_v2"
 OUTPUT_FORMAT = "mp3_44100_64"
-SPEED_BY_LEVEL = {"A1": 0.88, "A2": 0.94, "B1": 0.98}
+SPEED_BY_LEVEL = {"A1": 0.88, "A2": 0.94, "B1": 0.98, "B2": 1.0}
 VOICE_SETTINGS = {
     "stability": 0.55,
     "similarity_boost": 0.75,
@@ -49,11 +49,11 @@ TARGET_LANGUAGE, BASE_LANGUAGE = COURSE.split("-", 1)
 LANGUAGE_NAME = {"de": "German", "en": "English", "fr": "French", "it": "Italian", "ko": "Korean"}.get(TARGET_LANGUAGE, TARGET_LANGUAGE)
 COURSE_SLUG = COURSE.replace("-", "_")
 AUDIO_DIR = REPO_ROOT / "nova" / "audio"
-COURSE_AUDIO_DIR = AUDIO_DIR if COURSE == "de-fa" else AUDIO_DIR / COURSE
-VOICE_MAP_PATH = SCRIPT_DIR / ("voice_map.json" if COURSE == "de-fa" else f"voice_map_{COURSE_SLUG}.json")
-MANIFEST_PATH = AUDIO_DIR / "manifest.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "turn_manifest.json"
-SQL_PATH = AUDIO_DIR / "update_turn_audio.sql" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "update_turn_audio.sql"
-REPORT_PATH = AUDIO_DIR / "last_generation_report.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "last_generation_report.json"
+COURSE_AUDIO_DIR = AUDIO_DIR / COURSE
+VOICE_MAP_PATH = SCRIPT_DIR / f"voice_map_{COURSE_SLUG}.json"
+MANIFEST_PATH = COURSE_AUDIO_DIR / "turn_manifest.json"
+SQL_PATH = COURSE_AUDIO_DIR / "update_turn_audio.sql"
+REPORT_PATH = COURSE_AUDIO_DIR / "last_generation_report.json"
 
 
 class NovaTtsError(RuntimeError):
@@ -688,17 +688,6 @@ def parse_source_file(path: Path, repo_root: Path = REPO_ROOT) -> list[dict[str,
 
 def discover_source_files(repo_root: Path = REPO_ROOT) -> list[Path]:
     candidates: list[Path] = []
-    if COURSE == "de-fa":
-        candidates.extend(
-            (
-                repo_root
-                / "nova"
-                / "archive"
-                / "series_001_080_fixed"
-                / "extracted"
-            ).glob("nova_DE_FA_*_series_*_v9*.sql")
-        )
-        candidates.extend((repo_root / "nova" / "staging").glob("**/chapter.sql"))
     candidates.extend(
         (repo_root / "nova" / "courses" / COURSE / "staging").glob("**/chapter.sql")
     )

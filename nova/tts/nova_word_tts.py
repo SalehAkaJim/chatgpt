@@ -78,10 +78,10 @@ MAX_SHORT_PHRASE_CHARACTERS = 48
 SENTENCE_END_RE = re.compile(r"[.!?…][\"'»”’)]*$")
 
 COURSE_SLUG = COURSE.replace("-", "_")
-VOICE_CONFIG_PATH = SCRIPT_DIR / ("word_voice.json" if COURSE == "de-fa" else f"word_voice_{COURSE_SLUG}.json")
-MANIFEST_PATH = AUDIO_DIR / "word_manifest.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "word_manifest.json"
-SQL_PATH = AUDIO_DIR / "update_word_audio.sql" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "update_word_audio.sql"
-REPORT_PATH = AUDIO_DIR / "last_word_generation_report.json" if COURSE == "de-fa" else COURSE_AUDIO_DIR / "last_word_generation_report.json"
+VOICE_CONFIG_PATH = SCRIPT_DIR / f"word_voice_{COURSE_SLUG}.json"
+MANIFEST_PATH = COURSE_AUDIO_DIR / "word_manifest.json"
+SQL_PATH = COURSE_AUDIO_DIR / "update_word_audio.sql"
+REPORT_PATH = COURSE_AUDIO_DIR / "last_word_generation_report.json"
 
 
 def word_identity(row: dict[str, Any]) -> str:

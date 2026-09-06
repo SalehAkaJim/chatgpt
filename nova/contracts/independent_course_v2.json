@@ -1,0 +1,141 @@
+{
+  "version": "2.0.0",
+  "goal": "standalone_zero_to_B2_paid_course",
+  "base_language": "fa",
+  "courses": [
+    "de-fa",
+    "en-fa"
+  ],
+  "chapters_per_course": 240,
+  "lessons_per_chapter": 4,
+  "cefr_plan": [
+    {
+      "level": "A1",
+      "chapters": [
+        1,
+        48
+      ],
+      "new_items_per_lesson": [
+        4,
+        6
+      ]
+    },
+    {
+      "level": "A2",
+      "chapters": [
+        49,
+        104
+      ],
+      "new_items_per_lesson": [
+        4,
+        7
+      ]
+    },
+    {
+      "level": "B1",
+      "chapters": [
+        105,
+        168
+      ],
+      "new_items_per_lesson": [
+        3,
+        6
+      ]
+    },
+    {
+      "level": "B2",
+      "chapters": [
+        169,
+        240
+      ],
+      "new_items_per_lesson": [
+        3,
+        5
+      ]
+    }
+  ],
+  "lesson_requirements": {
+    "turns": [
+      8,
+      14
+    ],
+    "activities": [
+      12,
+      18
+    ],
+    "estimated_minutes": [
+      8,
+      15
+    ],
+    "allowed_activity_types": [
+      "listen",
+      "speak",
+      "new_word",
+      "meaning_choice",
+      "word_order"
+    ],
+    "forbidden": [
+      "typing",
+      "writing",
+      "dictation_by_keyboard",
+      "reading_comprehension_without_audio_or_speech"
+    ],
+    "required_modes": [
+      {
+        "activity_type": "listen",
+        "mode": "audio_first_transcript_after_attempt"
+      },
+      {
+        "activity_type": "speak",
+        "mode": "repeat_visible"
+      },
+      {
+        "activity_type": "speak",
+        "mode": "recall_hidden_answer"
+      },
+      {
+        "activity_type": "meaning_choice",
+        "mode": "sentence_blank_three_options"
+      },
+      {
+        "activity_type": "word_order",
+        "mode": "tap_tokens"
+      },
+      {
+        "activity_type": "speak",
+        "mode": "scenario_transfer"
+      }
+    ],
+    "minimum_independent_retrieval_ratio": 0.35
+  },
+  "review": {
+    "spacing_chapters": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "mastery_every_chapters": 4,
+    "cumulative_checkpoint_every_chapters": 16
+  },
+  "quality_gates": {
+    "story_continuity": true,
+    "independent_course_story_per_language": true,
+    "persian_translation_natural": true,
+    "distractors": "plausible_same_category_single_unambiguous_answer",
+    "no_unintroduced_grammar_in_scored_items": true,
+    "no_duplicate_activity_targets_within_lesson": true,
+    "all_turn_audio_required": true,
+    "all_eligible_word_audio_required": true,
+    "audio_is_publication_gate": true
+  },
+  "sql": {
+    "schema": "nova/database/schema_v9.sql",
+    "source_pattern": "nova/courses/{course}/staging/batch_{batch}/chapter_{series}/chapter.sql",
+    "qa_pattern": "nova/courses/{course}/staging/batch_{batch}/chapter_{series}/qa.json",
+    "immutable_stage_id_pattern": "{COURSE}-CH-{SERIES4}",
+    "idempotent": true,
+    "transaction_required": true
+  }
+}
