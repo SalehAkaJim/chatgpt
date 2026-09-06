@@ -1,0 +1,70 @@
+{
+  "schema_version": "v9.0",
+  "contract": "independent_course_v2",
+  "contract_version": "2.1.0",
+  "course": "en-fa",
+  "series": 3,
+  "chapter": 3,
+  "batch": 1,
+  "status": "PASS",
+  "audio_status": "pending",
+  "counts": {
+    "lessons": 4,
+    "turns": 41,
+    "activities": 72,
+    "tokens": 188,
+    "used_word_tuples": 50,
+    "new_word_definitions": 20
+  },
+  "lesson_stats": [
+    {
+      "lesson": 1,
+      "role": "exposure",
+      "turns": 8,
+      "activities": 18,
+      "new_units": 5
+    },
+    {
+      "lesson": 2,
+      "role": "grammar",
+      "turns": 10,
+      "activities": 18,
+      "new_units": 5
+    },
+    {
+      "lesson": 3,
+      "role": "recall",
+      "turns": 11,
+      "activities": 18,
+      "new_units": 5
+    },
+    {
+      "lesson": 4,
+      "role": "mastery",
+      "turns": 12,
+      "activities": 18,
+      "new_units": 5
+    }
+  ],
+  "invariants": {
+    "mysql_declaration_order": true,
+    "one_transaction_one_handler": true,
+    "answer_positions_not_fixed": true,
+    "recall_cues_complete": true,
+    "semantic_speech_alternatives": true,
+    "scenario_transfer_is_novel": true,
+    "explicit_word_teaching": true,
+    "explicit_micro_grammar": true,
+    "word_distractors_unique_same_pos": true,
+    "typing_forbidden": true,
+    "lesson_four_mastery": true,
+    "review_intervals_1_2_4_8_16": true
+  },
+  "evidence": {
+    "validator": "PASS: python3 nova/validation/validate_content.py chapter.sql",
+    "mysql8": "pending Nova Content Quality",
+    "turn_audio": "pending",
+    "word_audio_lori": "pending",
+    "manual_content_review": "independent London neighbor-and-family storyline reviewed against v2.1"
+  }
+}
