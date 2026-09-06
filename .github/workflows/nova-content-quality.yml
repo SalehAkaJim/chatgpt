@@ -1,0 +1,60 @@
+name: Nova Content Quality
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "nova/contracts/**"
+      - "nova/courses/**/chapter.sql"
+      - "nova/courses/**/qa.json"
+      - "nova/validation/**"
+      - ".github/workflows/nova-content-quality.yml"
+  pull_request:
+    paths:
+      - "nova/contracts/**"
+      - "nova/courses/**/chapter.sql"
+      - "nova/courses/**/qa.json"
+      - "nova/validation/**"
+
+jobs:
+  static-and-mysql8:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: nova_qa_root
+          MYSQL_DATABASE: nova_qa
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -pnova_qa_root"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Static educational quality gate
+        run: python3 nova/validation/validate_content.py
+      - name: Compile schema on MySQL 8
+        env:
+          MYSQL_PWD: nova_qa_root
+        run: mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/schema_v9.sql
+      - name: Execute German chapters sequentially
+        env:
+          MYSQL_PWD: nova_qa_root
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r file; do
+            mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
+          done < <(find nova/courses/de-fa/staging -name chapter.sql -type f | sort)
+      - name: Execute English chapters sequentially
+        env:
+          MYSQL_PWD: nova_qa_root
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r file; do
+            mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
+          done < <(find nova/courses/en-fa/staging -name chapter.sql -type f | sort)

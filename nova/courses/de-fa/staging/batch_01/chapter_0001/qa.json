@@ -10,7 +10,7 @@
   "counts": {
     "lessons": 4,
     "turns": 32,
-    "activities": 48,
+    "activities": 72,
     "tokens": 96,
     "used_word_tuples": 51,
     "new_word_definitions": 51
@@ -18,55 +18,67 @@
   "lesson_stats": [
     {
       "turns": 8,
-      "activities": 12,
+      "activities": 18,
       "new_units": 5,
       "modes": [
         "audio_first",
+        "word_teach",
+        "micro_grammar",
         "repeat_visible",
         "recall_hidden",
         "sentence_blank",
         "tap_tokens",
         "scenario_transfer"
-      ]
+      ],
+      "chapter_role": "audio_story_and_guided_exposure"
     },
     {
       "turns": 8,
-      "activities": 12,
+      "activities": 18,
       "new_units": 5,
       "modes": [
         "audio_first",
+        "word_teach",
+        "micro_grammar",
         "repeat_visible",
         "recall_hidden",
         "sentence_blank",
         "tap_tokens",
         "scenario_transfer"
-      ]
+      ],
+      "chapter_role": "explicit_grammar_and_controlled_practice"
     },
     {
       "turns": 8,
-      "activities": 12,
+      "activities": 18,
       "new_units": 5,
       "modes": [
         "audio_first",
+        "word_teach",
+        "micro_grammar",
         "repeat_visible",
         "recall_hidden",
         "sentence_blank",
         "tap_tokens",
         "scenario_transfer"
-      ]
+      ],
+      "chapter_role": "hidden_recall_and_independent_use"
     },
     {
       "turns": 8,
-      "activities": 12,
+      "activities": 18,
       "new_units": 5,
       "modes": [
         "audio_first",
+        "word_teach",
+        "micro_grammar",
         "repeat_visible",
         "recall_hidden",
         "sentence_blank",
         "tap_tokens",
         "scenario_transfer"
-      ]
+      ],
+      "chapter_role": "review_transfer_and_chapter_mastery"
     }
   ],
   "invariants": {
@@ -76,7 +88,7 @@
     "activity_quota": true,
     "required_modes": true,
     "no_typing_writing_dictation": true,
-    "independent_recall_transfer_ratio": 0.6667,
+    "independent_recall_transfer_ratio": 1,
     "minimum_ratio": 0.35,
     "new_units_per_lesson": true,
     "literal_surface_token_mapping": true,
@@ -87,7 +99,24 @@
     "three_option_distractors": true,
     "independent_german_story": true,
     "idempotent_sql": true,
-    "schema_changes": false
+    "schema_changes": false,
+    "mysql_declaration_order": true,
+    "sql_static_validation_pass": true,
+    "sql_mysql8_execution_required": true,
+    "answer_positions_not_fixed": true,
+    "answer_indices_used": [
+      0,
+      1,
+      2
+    ],
+    "recall_cues_complete": true,
+    "semantic_speech_alternatives": true,
+    "scenario_transfer_is_novel": true,
+    "explicit_word_teaching": true,
+    "explicit_micro_grammar": true,
+    "word_distractors_unique_same_pos": true,
+    "chapter_lesson_roles": true,
+    "ratio_basis": "scored_activities_only"
   },
   "review_schedule": {
     "+1": [
@@ -95,7 +124,8 @@
     ]
   },
   "notes": [
-    "Content/static QA and required audio coverage passed. Chapter is complete."
+    "Content rebuilt under contract v2.1. Turn texts and eligible Word lemmas are unchanged, so verified audio assets remain reusable.",
+    "Static quality validation passed; final PASS remains gated by the MySQL 8 execution workflow."
   ],
   "audio": {
     "turn_audio": {
@@ -113,5 +143,7 @@
       "manifest": "nova/audio/de-fa/word_manifest.json"
     },
     "verified_at": "2026-09-06T10:24:00Z"
-  }
+  },
+  "contract_version": "2.1.0",
+  "qa_version": "2.1.0"
 }
