@@ -644,6 +644,12 @@ def parse_source_file(path: Path, repo_root: Path = REPO_ROOT) -> list[dict[str,
     sql = path.read_text(encoding="utf-8")
     locator = parse_source_locator(path, sql)
     statements = split_sql_statements(remove_sql_line_comments(sql))
+    voice_characters = read_json(VOICE_MAP_PATH, {}).get("characters") or []
+    mapped_genders = {
+        str(item.get("name") or ""): str(item.get("gender") or "").casefold()
+        for item in voice_characters
+        if item.get("name") and item.get("gender")
+    }
     character_variables: dict[str, dict[str, str]] = {}
     for statement in statements:
         variable_match = re.search(
@@ -655,11 +661,18 @@ def parse_source_file(path: Path, repo_root: Path = REPO_ROOT) -> list[dict[str,
         gender_match = re.search(
             r"\bgender\s*=\s*('(?:''|\\.|[^'])*')", statement, re.I
         )
-        if name_match and gender_match:
-            character_variables[variable_match.group(1).casefold()] = {
-                "name": sql_unquote(name_match.group(1)),
-                "gender": sql_unquote(gender_match.group(1)).casefold(),
-            }
+        if name_match:
+            name = sql_unquote(name_match.group(1))
+            gender = (
+                sql_unquote(gender_match.group(1)).casefold()
+                if gender_match
+                else mapped_genders.get(name, "")
+            )
+            if gender:
+                character_variables[variable_match.group(1).casefold()] = {
+                    "name": name,
+                    "gender": gender,
+                }
 
     lessons: dict[str, dict[str, Any]] = {}
     latest_lesson: dict[str, Any] | None = None
