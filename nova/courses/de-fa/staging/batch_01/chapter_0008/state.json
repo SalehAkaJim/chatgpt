@@ -221,7 +221,9 @@
         "geradeaus|adverb",
         "Ecke|noun",
         "abbiegen|verb",
-        "Ziel|noun"
+        "Ziel|noun",
+        "Weg|noun",
+        "nächst|adjective"
       ],
       "review_due": [
         9,
@@ -238,7 +240,9 @@
         "Kreuzung|noun",
         "überqueren|verb",
         "gegenüber|preposition",
-        "Gehweg|noun"
+        "Gehweg|noun",
+        "Auto|noun",
+        "grün|adjective"
       ],
       "review_due": [
         9,
@@ -255,7 +259,9 @@
         "Bus|noun",
         "Schild|noun",
         "Linie|noun",
-        "fahren|verb"
+        "fahren|verb",
+        "Bahnhof|noun",
+        "fünf|numeral"
       ],
       "review_due": [
         9,
@@ -272,7 +278,9 @@
         "Automat|noun",
         "Richtung|noun",
         "einsteigen|verb",
-        "losfahren|verb"
+        "losfahren|verb",
+        "unser|determiner",
+        "weit|adjective"
       ],
       "review_due": [
         9,
@@ -283,11 +291,12 @@
       ]
     }
   ],
-  "status": "complete",
+  "status": "validating",
   "gates": {
     "static_qa": "PASS",
-    "mysql8": "PASS",
+    "mysql8": "PENDING",
     "turn_audio": "PASS",
     "word_audio": "PASS"
-  }
+  },
+  "semantic_gate_version": 2
 }

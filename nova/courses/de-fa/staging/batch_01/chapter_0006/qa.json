@@ -13,7 +13,8 @@
     "activities": 72,
     "tokens": 202,
     "used_word_tuples": 91,
-    "new_word_definitions": 37
+    "new_word_definitions": 37,
+    "explicit_word_teaching_activities": 28
   },
   "lesson_stats": [
     {
@@ -117,7 +118,11 @@
     "explicit_micro_grammar": true,
     "word_distractors_unique_same_pos": true,
     "chapter_lesson_roles": true,
-    "ratio_basis": "scored_activities_only"
+    "ratio_basis": "scored_activities_only",
+    "real_sentence_blanks": true,
+    "computed_transfer_novelty": true,
+    "distinct_lesson_descriptions": true,
+    "computed_teaching_coverage": true
   },
   "review_schedule": {
     "+1": [
@@ -164,5 +169,6 @@
     "workflow_run_id": 34033651029,
     "schema_executed": true,
     "chapter_executed": true
-  }
+  },
+  "semantic_gate_version": 2
 }

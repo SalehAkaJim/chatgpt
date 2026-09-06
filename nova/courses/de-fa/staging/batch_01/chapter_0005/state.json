@@ -207,7 +207,9 @@
         "hinten|adverb",
         "finden|verb",
         "Regal|noun",
-        "nehmen|verb"
+        "nehmen|verb",
+        "am|preposition",
+        "er|pronoun"
       ],
       "review_due": [
         6,
@@ -224,7 +226,9 @@
         "zwei|numeral",
         "Tomate|noun",
         "Kilo|noun",
-        "Stück|noun"
+        "Stück|noun",
+        "günstig|adjective",
+        "fast|adverb"
       ],
       "review_due": [
         6,
@@ -241,7 +245,9 @@
         "vorne|adverb",
         "neben|preposition",
         "stellen|verb",
-        "Tüte|noun"
+        "Tüte|noun",
+        "bezahlen|verb",
+        "zur|preposition"
       ],
       "review_due": [
         6,
@@ -258,7 +264,9 @@
         "Menge|noun",
         "leicht|adjective",
         "fehlen|verb",
-        "nichts|pronoun"
+        "nichts|pronoun",
+        "Einkauf|noun",
+        "voll|adjective"
       ],
       "review_due": [
         6,
@@ -269,11 +277,12 @@
       ]
     }
   ],
-  "status": "complete",
+  "status": "validating",
   "gates": {
     "static_qa": "PASS",
-    "mysql8": "PASS",
+    "mysql8": "PENDING",
     "turn_audio": "PASS",
     "word_audio": "PASS"
-  }
+  },
+  "semantic_gate_version": 2
 }

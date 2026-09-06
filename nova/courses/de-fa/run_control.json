@@ -1,8 +1,8 @@
 {
   "version": "2.0.0",
-  "paused": false,
+  "paused": true,
   "stop_requested": false,
-  "max_chapters_per_run": 2,
+  "max_chapters_per_run": 1,
   "on_failure": "stop_without_advancing_state",
   "allow_series_gaps": false
 }

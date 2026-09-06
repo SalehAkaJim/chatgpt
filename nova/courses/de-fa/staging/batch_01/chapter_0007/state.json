@@ -267,11 +267,12 @@
       ]
     }
   ],
-  "status": "complete",
+  "status": "validating",
   "gates": {
     "static_qa": "PASS",
-    "mysql8": "PASS",
+    "mysql8": "PENDING",
     "turn_audio": "PASS",
     "word_audio": "PASS"
-  }
+  },
+  "semantic_gate_version": 2
 }

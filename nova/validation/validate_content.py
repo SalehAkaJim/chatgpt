@@ -118,6 +118,13 @@ def validate_word_dependencies(paths: list[Path]) -> list[str]:
 
 def validate_file(path: Path) -> list[str]:
     rel = path.relative_to(ROOT)
+    course = rel.parts[2]
+    series_match = re.search(r"chapter_(\d+)", str(rel))
+    series = int(series_match.group(1)) if series_match else 0
+    # Semantic gate v2 starts at the first rebuilt chapters. Older published
+    # chapters stay installable, while every new chapter must satisfy it.
+    strict_semantic = ((course == "en-fa" and series >= 3) or
+                       (course == "de-fa" and series >= 5))
     sql = path.read_text(encoding="utf-8")
     errors: list[str] = []
     lines = sql.splitlines()
@@ -137,6 +144,8 @@ def validate_file(path: Path) -> list[str]:
 
     activities = [line for line in lines if "INSERT INTO activities " in line]
     by_lesson: dict[int, list[tuple[int, str, dict, list[str]]]] = defaultdict(list)
+    recalls_by_lesson: dict[int, list[set[str]]] = defaultdict(list)
+    transfers_by_lesson: dict[int, list[set[str]]] = defaultdict(list)
     choice_indices: list[int] = []
     for line in activities:
         try:
@@ -159,18 +168,29 @@ def validate_file(path: Path) -> list[str]:
                 errors.append(f"lesson {lesson} has invalid answer index")
             else:
                 choice_indices.append(index)
+            if strict_semantic:
+                prompt = unquote(values[5]) or ""
+                if prompt.count("___") != 1:
+                    errors.append(f"lesson {lesson} sentence_blank must contain one real blank")
+                if any(re.search(r"[\u0600-\u06ff]", str(option)) for option in options):
+                    errors.append(f"lesson {lesson} sentence_blank options must be target-language text")
         elif mode == "recall_hidden":
             accepted = config.get("accepted", [])
             if not config.get("cue_fa") or semantic_count(accepted) < 2:
                 errors.append(f"lesson {lesson} recall lacks cue or semantic alternatives")
             if config.get("audioReveal") != "after_attempt":
                 errors.append(f"lesson {lesson} recall may reveal answer audio too early")
+            recalls_by_lesson[lesson].append({PUNCT.sub("", item.lower()) for item in accepted})
         elif mode == "scenario_transfer":
-            accepted = config.get("accepted_intents", [])
+            accepted = config.get("accepted_intents", config.get("accepted", []))
+            scenario = config.get("scenario_fa", config.get("scenarioFa", ""))
             if not config.get("scenario_fa") or semantic_count(accepted) < 2:
                 errors.append(f"lesson {lesson} transfer lacks scenario or semantic intents")
             if unquote(values[5]) is None:
                 errors.append(f"lesson {lesson} transfer prompt is NULL")
+            if strict_semantic and re.search(r"در (?:موقعیتی|گفت.?وگویی) تازه", scenario):
+                errors.append(f"lesson {lesson} transfer uses a generic pseudo-scenario")
+            transfers_by_lesson[lesson].append({PUNCT.sub("", item.lower()) for item in accepted})
         elif mode == "repeat_visible":
             if config.get("evaluation") != "stt" or semantic_count(config.get("accepted", [])) < 1:
                 errors.append(f"lesson {lesson} visible speaking config incomplete")
@@ -185,9 +205,19 @@ def validate_file(path: Path) -> list[str]:
         modes = Counter(row[2].get("mode") for row in rows)
         if len(rows) != 18 or orders != list(range(1, 19)):
             errors.append(f"lesson {lesson} must have 18 unique ordered activities")
-        required = {"audio_first": 2, "word_teach": 5, "micro_grammar": 1, "repeat_visible": 2, "recall_hidden": 2, "sentence_blank": 2, "tap_tokens": 2, "scenario_transfer": 2}
-        if modes != Counter(required):
+        exact = {"micro_grammar": 1, "recall_hidden": 2, "sentence_blank": 2,
+                 "tap_tokens": 2, "scenario_transfer": 2}
+        distribution_ok = (all(modes[key] == value for key, value in exact.items()) and
+                           1 <= modes["audio_first"] <= 2 and
+                           5 <= modes["word_teach"] <= 7 and
+                           1 <= modes["repeat_visible"] <= 2 and
+                           sum(modes.values()) == 18)
+        if not distribution_ok:
             errors.append(f"lesson {lesson} mode distribution is {dict(modes)}")
+        if strict_semantic:
+            for transfer in transfers_by_lesson.get(lesson, []):
+                if transfer in recalls_by_lesson.get(lesson, []):
+                    errors.append(f"lesson {lesson} transfer duplicates a recall answer set")
     if set(choice_indices) != {0, 1, 2}:
         errors.append(f"answer positions must use 0, 1 and 2; found {sorted(set(choice_indices))}")
 
@@ -223,6 +253,68 @@ def validate_file(path: Path) -> list[str]:
     if sql.count("'focusPattern'") < 32:
         errors.append("explicit grammar focus is missing from turns")
 
+    if strict_semantic:
+        descriptions = []
+        for line in lines:
+            if "INSERT INTO lessons " in line:
+                descriptions.append(unquote(values_from(line)[5]) or "")
+        if len(descriptions) != 4 or len(set(descriptions)) != 4:
+            errors.append("all four lessons need distinct, content-specific descriptions")
+
+        # New definitions must be taught explicitly unless deliberately marked
+        # as a small support token set. This is computed from SQL, not trusted
+        # from a QA flag.
+        defined: dict[str, tuple[str, bool]] = {}
+        taught: set[str] = set()
+        for line in lines:
+            if "INSERT INTO words " in line:
+                values = values_from(line)
+                variable = re.search(r"SET (v_w_\d+)=LAST_INSERT_ID", line)
+                if variable:
+                    defined[variable.group(1)] = (
+                        unquote(values[1]) or "",
+                        bool(re.search(r"'supportToken',TRUE", line)),
+                    )
+            elif "INSERT INTO activities " in line and "'new_word'" in line:
+                values = values_from(line)
+                taught.add(values[4])
+        unsupported = [lemma for var, (lemma, support) in defined.items()
+                       if var not in taught and not support]
+        support_count = sum(1 for var, (_, support) in defined.items()
+                            if var not in taught and support)
+        if unsupported:
+            errors.append("defined words lack teaching/support: " + ", ".join(unsupported))
+        if support_count > 14:
+            errors.append(f"too many untaught support tokens: {support_count}")
+
+        # Closed-class token mappings must be literal. This catches fabricated
+        # mappings such as all→they, his→he, her→she and that→this.
+        for line_number, line in enumerate(lines, 1):
+            if "INSERT INTO turns " not in line:
+                continue
+            turn_values = values_from(line)
+            token_parts = re.findall(
+                r"'surface','((?:''|[^'])*)','prefix','((?:''|[^'])*)','suffix','((?:''|[^'])*)','lemma'",
+                turn_values[9],
+            )
+            rebuilt = " ".join(
+                prefix.replace("''", "'") + surface.replace("''", "'") + suffix.replace("''", "'")
+                for surface, prefix, suffix in token_parts
+            )
+            if rebuilt != (unquote(turn_values[4]) or ""):
+                errors.append(f"turn text does not reconstruct from tokens at line {line_number}")
+            if course != "en-fa":
+                continue
+            for surface, lemma, pos in re.findall(
+                r"'surface','((?:''|[^'])*)'.*?'lemma','((?:''|[^'])*)'.*?'partOfSpeech','((?:''|[^'])*)'",
+                line,
+            ):
+                if pos in {"pronoun", "determiner"} and surface.lower() != lemma.lower():
+                    errors.append(
+                        f"closed-class token mapping mismatch at line {line_number}: "
+                        f"{surface}→{lemma}"
+                    )
+
     qa_path = path.with_name("qa.json")
     if not qa_path.exists():
         errors.append("qa.json is missing")
@@ -232,6 +324,8 @@ def validate_file(path: Path) -> list[str]:
             errors.append("qa.json activity count does not match SQL")
         if qa.get("contract_version") != "2.1.0":
             errors.append("qa.json is not on contract 2.1.0")
+        if strict_semantic and qa.get("semantic_gate_version") != 2:
+            errors.append("qa.json is not on semantic gate 2")
         required_invariants = [
             "mysql_declaration_order", "answer_positions_not_fixed",
             "recall_cues_complete", "semantic_speech_alternatives",

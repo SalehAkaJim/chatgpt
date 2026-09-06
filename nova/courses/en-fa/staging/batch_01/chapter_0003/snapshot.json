@@ -7,12 +7,12 @@
   "stage_id": "en-fa-a1-series-0003",
   "title": "People Around Me",
   "title_translation": "آدم‌های اطراف من",
-  "status": "complete",
+  "status": "validated",
   "counts": {
     "lessons": 4,
     "turns": 41,
     "activities": 72,
-    "tokens": 188,
+    "tokens": 187,
     "used_word_tuples": 50,
     "new_word_definitions": 21
   },
@@ -29,5 +29,7 @@
     "recall",
     "mastery"
   ],
-  "audio_status": "complete"
+  "audio_status": "pending_regeneration",
+  "semantic_gate_version": 2,
+  "content_quality": "semantic_gate_2_static_pass"
 }

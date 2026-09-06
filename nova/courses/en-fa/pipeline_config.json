@@ -3,11 +3,11 @@
   "course": "en-fa",
   "contract": "nova/contracts/independent_course_v2.json",
   "curriculum": "nova/courses/en-fa/curriculum.json",
-  "max_chapters_per_run": 2,
+  "max_chapters_per_run": 1,
   "strict_sequential": true,
   "sql_schema": "v9",
   "qa_required": true,
   "audio_required": true,
   "writing_allowed": false,
-  "publish_batch_size": 2
+  "publish_batch_size": 1
 }

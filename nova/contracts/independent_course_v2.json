@@ -7,6 +7,7 @@
     "en-fa"
   ],
   "chapters_per_course": 240,
+  "max_chapters_per_run": 1,
   "lessons_per_chapter": 4,
   "cefr_plan": [
     {
@@ -155,6 +156,12 @@
     "audio_is_publication_gate": true,
     "mysql8_execution_required": true,
     "qa_false_positive_stops_shared_contract_production": true
+    ,"semantic_gate_version": 2
+    ,"real_sentence_blank_required": true
+    ,"computed_transfer_novelty_required": true
+    ,"distinct_lesson_descriptions_required": true
+    ,"computed_word_teaching_coverage_required": true
+    ,"exact_turn_token_reconstruction_required": true
   },
   "sql": {
     "schema": "nova/database/schema_v9.sql",

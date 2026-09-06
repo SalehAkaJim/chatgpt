@@ -5,7 +5,7 @@
   "last_completed_series": 3,
   "last_validated_series": 3,
   "last_audio_complete_series": 3,
-  "status": "ready",
+  "status": "quality_revalidation",
   "active_batch": 1,
   "updated_at": "2026-09-06T13:15:00Z",
   "errors": [],
@@ -24,7 +24,7 @@
     }
   },
   "quality": {
-    "status": "PASS",
+    "status": "PENDING_SEMANTIC_GATE_2",
     "last_validated_series": 3,
     "mysql8_workflow_run_id": 34035449825
   }

@@ -1,7 +1,7 @@
 {
   "course": "en-fa",
   "series": 3,
-  "status": "complete",
+  "status": "validating",
   "registry": {
     "used_tuples": [
       "arman|noun",
@@ -198,7 +198,13 @@
     }
   ],
   "audio": {
-    "turns": "complete",
+    "turns": "pending_regeneration",
     "words_lori": "complete"
+  },
+  "semantic_gate_version": 2,
+  "gates": {
+    "static_qa": "PASS",
+    "mysql8": "PENDING",
+    "turn_audio": "PENDING_REGENERATION"
   }
 }
