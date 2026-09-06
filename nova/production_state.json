@@ -79,7 +79,14 @@
     "pending_series": 106,
     "phase": "B1_content_generation",
     "retry_policy": "generate_against_exact_canonical_v9_0_only",
-    "status": "batch_04_staging_chapter_26_pending"
+    "status": "series_105_coordinate_corrected_chapter_26_pending",
+    "last_blocker": {
+      "detected_at": "2026-09-06T09:05:00.000Z",
+      "type": "staged_dependency_coordinate_mismatch",
+      "series": 105,
+      "details": "Series 105 SQL incorrectly selected Module 6 / Chapter 1; corrected to Module 5 / Chapter 5 and revalidated before Series 106 generation.",
+      "resolved": true
+    }
   },
   "database": {
     "active_schema": "nova/database/schema_v9.sql",
@@ -131,5 +138,5 @@
   "schema_version": "v9",
   "shared_mutable_state": false,
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-06T08:12:00.000Z"
+  "updated_at": "2026-09-06T09:06:00.000Z"
 }

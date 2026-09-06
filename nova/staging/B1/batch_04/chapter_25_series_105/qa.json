@@ -34,7 +34,12 @@
       "Ich höre auf meinen Körper und sage auch mal Nein.|phrase",
       "Ich merke, dass kleine Veränderungen viel bewirken.|phrase",
       "Genau, ich passe jetzt besser auf mich auf.|phrase"
-    ]
+    ],
+    "module_chapter_coordinate": {
+      "module_sort_order": 5,
+      "chapter_sort_order": 5,
+      "status": "PASS"
+    }
   },
   "chapter": 25,
   "checks": {
@@ -66,7 +71,8 @@
     "word_audio_policy_v4_eligibility": "PASS",
     "all_used_word_tuples_materialized": "PASS",
     "new_word_definitions_complete": "PASS",
-    "tuple_set_differences_empty": "PASS"
+    "tuple_set_differences_empty": "PASS",
+    "curriculum_module_chapter_coordinate": "PASS"
   },
   "counts": {
     "activities": 32,
@@ -83,9 +89,9 @@
   },
   "course": "de-fa",
   "database_revision": "v9.0",
-  "generated_at": "2026-09-06T08:10:00.000Z",
+  "generated_at": "2026-09-06T09:06:00.000Z",
   "level": "B1",
-  "module": 6,
+  "module": 5,
   "project": "Nova",
   "series": 105,
   "source_dependencies": {

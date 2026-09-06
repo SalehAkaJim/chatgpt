@@ -138,10 +138,10 @@ BEGIN
   START TRANSACTION;
   SELECT id INTO v_course FROM courses WHERE learning_language='de' AND base_language='fa' ORDER BY id LIMIT 1; IF v_course IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Canonical de-fa Course missing.'; END IF;
   SELECT id INTO v_level FROM levels WHERE course_id=v_course AND cefr_level='B1' AND sort_order=3 ORDER BY id LIMIT 1;
-  SELECT id INTO v_module FROM modules WHERE level_id=v_level AND sort_order=6 ORDER BY id LIMIT 1; IF v_level IS NULL OR v_module IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='B1 dependency missing.'; END IF;
+  SELECT id INTO v_module FROM modules WHERE level_id=v_level AND sort_order=5 ORDER BY id LIMIT 1; IF v_level IS NULL OR v_module IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='B1 dependency missing.'; END IF;
   SELECT COUNT(*) INTO v_count FROM chapters c JOIN modules m ON m.id=c.module_id WHERE m.level_id=v_level AND c.title='Ich sollte mehr schlafen' AND c.status IN ('validated','complete'); IF v_count<>1 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Series 104 must be validated.'; END IF;
   SELECT COUNT(*) INTO v_count FROM lessons WHERE storyline_key='mia-sara-b1-health-routine'; IF v_count<>16 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Health storyline must contain exactly sixteen prior lessons.'; END IF;
-  SELECT id INTO v_chapter FROM chapters WHERE module_id=v_module AND sort_order=1 ORDER BY id LIMIT 1; IF v_chapter IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Series 105 chapter missing.'; END IF;
+  SELECT id INTO v_chapter FROM chapters WHERE module_id=v_module AND sort_order=5 ORDER BY id LIMIT 1; IF v_chapter IS NULL THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Series 105 chapter missing.'; END IF;
   SELECT COUNT(*) INTO v_count FROM chapters WHERE id=v_chapter AND title='Jetzt achte ich besser auf mich' AND title_translation='حالا بیشتر مراقب خودم هستم'; IF v_count<>1 THEN SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='Series 105 canonical title mismatch.'; END IF;
   INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata) VALUES(v_l_1,'new_word',1,NULL,v_w_049,'عبارت کلیدی درس',NULL,56,NULL,'{"cefr":"B1","series":105}');
   INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata) VALUES(v_l_1,'new_word',2,NULL,v_w_077,'واژهٔ کلیدی درس',NULL,56,NULL,'{"cefr":"B1","series":105}');
