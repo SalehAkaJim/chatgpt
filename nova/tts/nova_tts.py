@@ -647,7 +647,7 @@ def parse_source_file(path: Path, repo_root: Path = REPO_ROOT) -> list[dict[str,
     character_variables: dict[str, dict[str, str]] = {}
     for statement in statements:
         variable_match = re.search(
-            r"SELECT\s+id\s+INTO\s+(v_c_[a-z0-9_]+)", statement, re.I
+            r"SELECT\b[^;]*?\bINTO\s+(?:v_count\s*,\s*)?(v_c_[a-z0-9_]+)", statement, re.I
         )
         if not variable_match or not re.search(r"\bFROM\s+characters\b", statement, re.I):
             continue
