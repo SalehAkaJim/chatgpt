@@ -308,3 +308,4 @@ END$$
 CALL import_nova_series_001()$$
 DROP PROCEDURE IF EXISTS import_nova_series_001$$
 DELIMITER ;
+-- Audio retry marker: parser/config fix 2026-09-06

@@ -1,0 +1,72 @@
+{
+  "version": 2,
+  "course": "de-fa",
+  "provider": "elevenlabs",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_64",
+  "voice_archetypes": {
+    "learner_female": {
+      "preferred_ages": ["young", "young adult", "middle aged"],
+      "use_cases": ["conversational", "narration"],
+      "traits": ["calm", "clear", "natural"]
+    },
+    "local_friend_female": {
+      "preferred_ages": ["young", "young adult", "middle aged"],
+      "use_cases": ["conversational", "narration"],
+      "traits": ["warm", "clear", "friendly"]
+    },
+    "local_driver_male": {
+      "preferred_ages": ["young adult", "middle aged"],
+      "use_cases": ["conversational", "narration"],
+      "traits": ["helpful", "clear", "grounded"]
+    }
+  },
+  "characters": [
+    {
+      "name": "Raha",
+      "gender": "female",
+      "role": "زبان‌آموز و شخصیت اصلی",
+      "context": "new arrival learning German in Berlin",
+      "origin_country": "Iran",
+      "profile_source": "chapter.sql",
+      "voice_archetype": "learner_female",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Lena",
+      "gender": "female",
+      "role": "دوست محلی رها",
+      "context": "Raha's local friend in Berlin",
+      "origin_country": "Germany",
+      "profile_source": "chapter.sql",
+      "voice_archetype": "local_friend_female",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    },
+    {
+      "name": "Jonas",
+      "gender": "male",
+      "role": "رانندهٔ تاکسی محلی",
+      "context": "local taxi driver in Berlin",
+      "origin_country": "Germany",
+      "profile_source": "chapter.sql",
+      "voice_archetype": "local_driver_male",
+      "voice_id": null,
+      "voice_name": null,
+      "source_voice_id": null,
+      "source_metadata": null,
+      "selection": null,
+      "assigned_at": null
+    }
+  ],
+  "updated_at": null
+}

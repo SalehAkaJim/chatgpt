@@ -529,6 +529,52 @@ def parse_insert(statement: str, table: str) -> dict[str, str] | None:
     return dict(zip(columns, values))
 
 
+def parse_json_expression(value: str, label: str) -> dict[str, Any]:
+    """Parse the flat JSON forms emitted by Nova chapter SQL."""
+    value = value.strip()
+    if value.startswith("'") and value.endswith("'"):
+        parsed = json.loads(sql_unquote(value))
+        if not isinstance(parsed, dict):
+            raise NovaTtsError(f"Expected JSON object for {label}.")
+        return parsed
+    cast_match = re.fullmatch(
+        r"CAST\s*\(\s*('(?:''|\\.|[^'])*')\s+AS\s+JSON\s*\)",
+        value,
+        re.I | re.S,
+    )
+    if cast_match:
+        parsed = json.loads(sql_unquote(cast_match.group(1)))
+        if not isinstance(parsed, dict):
+            raise NovaTtsError(f"Expected JSON object for {label}.")
+        return parsed
+    object_match = re.fullmatch(r"JSON_OBJECT\s*\((.*)\)", value, re.I | re.S)
+    if object_match:
+        fields = split_sql_csv(object_match.group(1))
+        if len(fields) % 2:
+            raise NovaTtsError(f"Odd JSON_OBJECT argument count for {label}.")
+        result: dict[str, Any] = {}
+        for index in range(0, len(fields), 2):
+            key = sql_unquote(fields[index])
+            raw = fields[index + 1].strip()
+            if raw.startswith("'") and raw.endswith("'"):
+                parsed_value: Any = sql_unquote(raw)
+            elif raw.upper() == "TRUE":
+                parsed_value = True
+            elif raw.upper() == "FALSE":
+                parsed_value = False
+            elif raw.upper() == "NULL":
+                parsed_value = None
+            elif re.fullmatch(r"-?[0-9]+", raw):
+                parsed_value = int(raw)
+            else:
+                raise NovaTtsError(
+                    f"Unsupported JSON_OBJECT value for {label}.{key}: {raw!r}."
+                )
+            result[key] = parsed_value
+        return result
+    raise NovaTtsError(f"Unsupported JSON expression for {label}: {value[:80]!r}.")
+
+
 def parse_int(value: str, label: str) -> int:
     value = value.strip()
     if not re.fullmatch(r"[0-9]+", value):
@@ -733,8 +779,8 @@ def load_source_character_profiles(
             if values is None:
                 continue
             name = sql_unquote(values["name"])
-            profile = json.loads(sql_unquote(values["profile"]))
-            metadata = json.loads(sql_unquote(values["metadata"]))
+            profile = parse_json_expression(values["profile"], "character profile")
+            metadata = parse_json_expression(values["metadata"], "character metadata")
             extracted = {
                 "gender": sql_unquote(values["gender"]).casefold(),
                 "role": profile.get("role"),
