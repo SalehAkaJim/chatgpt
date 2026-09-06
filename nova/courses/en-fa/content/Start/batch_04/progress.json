@@ -30,13 +30,13 @@
       "chapter": 27,
       "series": 27,
       "title": "How much is this?",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 28,
       "series": 28,
       "title": "A coffee, please",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 29,
@@ -65,13 +65,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_27_series_027",
+  "next_action": "generate_and_qa_chapter_28_series_028",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-06T07:49:25.000Z",
+  "updated_at": "2026-09-06T08:37:22.000Z",
   "last_completed_atomic_unit": {
-    "chapter": 26,
-    "series": 26,
+    "chapter": 27,
+    "series": 27,
     "status": "PASS"
   }
 }
