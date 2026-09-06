@@ -597,17 +597,17 @@ def parse_source_locator(path: Path, sql: str) -> dict[str, Any]:
         r"import_nova_series_(\d+)", sql, re.I
     )
     level_match = re.search(
-        r"SELECT\s+id\s+INTO\s+v_level\s+FROM\s+levels\b[^;]*?cefr_level\s*=\s*'([A-Za-z0-9_]{1,8})'",
+        r"SELECT\b[^;]*?\bINTO\s+(?:v_count\s*,\s*)?v_level\s+FROM\s+levels\b[^;]*?cefr_level\s*=\s*'([A-Za-z0-9_]{1,8})'",
         sql,
         re.I | re.S,
     )
     module_match = re.search(
-        r"SELECT\s+id\s+INTO\s+v_module\s+FROM\s+modules\b[^;]*?sort_order\s*=\s*(\d+)",
+        r"SELECT\b[^;]*?\bINTO\s+(?:v_count\s*,\s*)?v_module\s+FROM\s+modules\b[^;]*?sort_order\s*=\s*(\d+)",
         sql,
         re.I | re.S,
     )
     chapter_match = re.search(
-        r"SELECT\s+id\s+INTO\s+v_chapter\s+FROM\s+chapters\b[^;]*?sort_order\s*=\s*(\d+)",
+        r"SELECT\b[^;]*?\bINTO\s+(?:v_count\s*,\s*)?v_chapter\s+FROM\s+chapters\b[^;]*?sort_order\s*=\s*(\d+)",
         sql,
         re.I | re.S,
     )
