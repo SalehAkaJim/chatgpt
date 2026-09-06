@@ -1,0 +1,39 @@
+{
+  "project": "Nova",
+  "artifact": "nova/mysql/import_order_v9.json",
+  "database_revision": "v9.0",
+  "generated_from_commit": "b979c86c146b8743020ad79eab03221da0a1e24c",
+  "status": "PASS",
+  "checks": {
+    "stage_ids_unique": true,
+    "execution_order_contiguous": true,
+    "all_ready_paths_exist_on_main": true,
+    "all_recorded_git_blob_shas_match_main": true,
+    "canonical_german_series_001_080_contiguous": true,
+    "canonical_corrections_004_015_020_selected": true,
+    "published_german_batches_081_104_only": true,
+    "published_english_batches_001_024_only": true,
+    "staged_content_excluded_from_ready_order": true,
+    "destructive_reset_excluded": true,
+    "runtime_query_excluded": true,
+    "audio_updates_blocked_until_published_coverage_matches": true,
+    "schema_revision_unchanged": true
+  },
+  "counts": {
+    "ready_stages": 88,
+    "blocked_or_excluded_entries": 6,
+    "schema_stages": 1,
+    "seed_stages": 1,
+    "german_content_stages": 83,
+    "english_content_stages": 3
+  },
+  "ready_coverage": {
+    "de-fa": [1, 104],
+    "en-fa": [1, 24]
+  },
+  "errors": [],
+  "warnings": [
+    "German audio SQL currently includes staged Series 105 while published content ends at 104.",
+    "English audio SQL currently includes staged Series 025-026 while published content ends at 024."
+  ]
+}

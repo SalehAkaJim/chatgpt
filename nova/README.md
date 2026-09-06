@@ -2,6 +2,10 @@
 
 This repository is the persistent source of truth for Nova educational content and database artifacts.
 
+## MySQL import order
+
+Use [`nova/mysql/README.md`](mysql/README.md) as the single operator entry point for manual MySQL imports. It contains stable Stage IDs, exact execution order, direct SQL links, blocked staging/audio files, and the error-reporting format.
+
 ## Current checkpoint
 
 - A1 and A2 are complete through Series 080.
@@ -105,3 +109,4 @@ German and English use two isolated content lanes on the same `main` branch. Ger
 The unchanged v9.0 database stores short English level codes in `levels.cefr_level`: ST, ED, IN, CF, AD and MA. Learner-facing names remain Start, Everyday, Independent, Confident, Advanced and Mastery in `levels.title`.
 
 See `nova/plans/concurrent_course_isolation_v9.json` and `nova/audits/concurrent_course_isolation_qa.json`.
+
