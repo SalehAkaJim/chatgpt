@@ -1,12 +1,83 @@
 {
   "version": "2.0.0",
   "valid": true,
-  "checked_at": "2026-09-06T00:00:00Z",
+  "checked_at": "2026-09-06T10:26:00Z",
+  "checked_commit": "b05ad2eb2210356750eff13f3b55f5945791b452",
+  "manifest": "nova/mysql/import_order_v2.json",
   "checks": {
+    "core_stage_ids_preserved": true,
     "unique_stage_ids": true,
-    "all_paths_exist": true,
-    "strict_order": true,
-    "only_validated_chapters": true
+    "stage_order_contiguous": true,
+    "all_ready_paths_exist": true,
+    "dependencies_point_backward": true,
+    "deterministic_course_and_series_order": true,
+    "ready_chapter_series_gap_free": true,
+    "ready_chapter_qa_valid": true,
+    "ready_chapter_sql_static_validation_pass": true,
+    "ready_turn_audio_coverage_100_percent": true,
+    "ready_eligible_word_audio_coverage_100_percent": true,
+    "fully_covered_audio_without_ready_chapters_excluded": true,
+    "invalid_sql_candidates_excluded": true,
+    "no_duplicate_chapter_stage_ids": true,
+    "readme_manifest_qa_agree": true
   },
-  "chapter_count": 0
+  "counts": {
+    "core_stages": 2,
+    "ready_chapters": 0,
+    "ready_audio_stages": 0,
+    "blocked_chapters": 2,
+    "turn_audio_entries": 64,
+    "eligible_word_audio_entries": 88
+  },
+  "ready_coverage": {
+    "de-fa": [],
+    "en-fa": []
+  },
+  "candidate_audio_coverage": {
+    "de-fa": {
+      "turn": {
+        "covered": 64,
+        "required": 64,
+        "ratio": 1
+      },
+      "eligible_word": {
+        "covered": 88,
+        "required": 88,
+        "ratio": 1
+      }
+    },
+    "en-fa": {
+      "turn": {
+        "covered": 0,
+        "required": 0,
+        "ratio": null
+      },
+      "eligible_word": {
+        "covered": 0,
+        "required": 0,
+        "ratio": null
+      }
+    }
+  },
+  "blocked": [
+    {
+      "stage_id": "DE-CH-0001",
+      "reasons": [
+        "invalid_sql_declaration_order: DECLARE EXIT HANDLER and START TRANSACTION are duplicated; a DECLARE appears after START TRANSACTION",
+        "qa_sql_validation_false_positive: qa.json marks idempotent_sql true although the stored procedure is not syntactically runnable"
+      ]
+    },
+    {
+      "stage_id": "DE-CH-0002",
+      "reasons": [
+        "invalid_sql_declaration_order: DECLARE EXIT HANDLER and START TRANSACTION are duplicated; a DECLARE appears after START TRANSACTION",
+        "qa_sql_validation_false_positive: qa.json marks idempotent_sql true although the stored procedure is not syntactically runnable"
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "DE-CH-0001 and DE-CH-0002 have PASS QA and 100% audio coverage but are excluded because their stored procedures contain duplicated transaction/handler declarations.",
+    "The chapter QA idempotent_sql invariant is a false positive and must be regenerated after SQL repair."
+  ]
 }

@@ -1,24 +1,183 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-09-06T00:00:00Z",
+  "generated_at": "2026-09-06T10:26:00Z",
+  "generated_from_commit": "b05ad2eb2210356750eff13f3b55f5945791b452",
   "install_mode": "clean",
+  "policy": {
+    "source_of_truth": "GitHub main",
+    "immutable_core_stage_ids": true,
+    "chapter_stage_id_pattern": "<DE|EN>-CH-<four-digit series>",
+    "readiness_requires": [
+      "path_exists",
+      "sequential_no_gaps",
+      "qa_valid",
+      "sql_static_validation_pass",
+      "turn_audio_coverage_100_percent",
+      "eligible_word_audio_coverage_100_percent"
+    ],
+    "deterministic_order": [
+      "CORE-RESET-v9",
+      "CORE-SCHEMA-v9",
+      "ready de-fa chapters ascending",
+      "ready en-fa chapters ascending",
+      "de-fa turn audio",
+      "de-fa word audio",
+      "en-fa turn audio",
+      "en-fa word audio"
+    ]
+  },
   "stages": [
     {
       "order": 1,
       "stage_id": "CORE-RESET-v9",
+      "kind": "reset",
       "path": "nova/database/reset_all_v9.sql",
+      "git_blob_sha": "653176c91584a90ad46c84b5bdc1b198c052d351",
       "destructive": true,
-      "ready": true
+      "ready": true,
+      "requires": []
     },
     {
       "order": 2,
       "stage_id": "CORE-SCHEMA-v9",
+      "kind": "schema",
       "path": "nova/database/schema_v9.sql",
+      "git_blob_sha": "dbc918187331e8bd0b7fc1b6e9327abca7b91b60",
       "destructive": false,
-      "ready": true
+      "ready": true,
+      "requires": [
+        "CORE-RESET-v9"
+      ]
     }
   ],
   "chapter_stages": [],
   "audio_stages": [],
-  "next_action": "Wait for first validated chapter batch."
+  "blocked_chapters": [
+    {
+      "stage_id": "DE-CH-0001",
+      "course": "de-fa",
+      "series": 1,
+      "chapter_path": "nova/courses/de-fa/staging/batch_01/chapter_0001/chapter.sql",
+      "qa_path": "nova/courses/de-fa/staging/batch_01/chapter_0001/qa.json",
+      "chapter_blob_sha": "bc469d788e4f82dc5dbaddf1096d9f8546d06427",
+      "qa_blob_sha": "89ffd7a8461e35b5ad95f260239b1ae982e1ac10",
+      "ready": false,
+      "qa_status": "PASS",
+      "audio_status": "complete",
+      "audio_coverage": {
+        "turn": 1,
+        "eligible_word": 1
+      },
+      "blockers": [
+        "invalid_sql_declaration_order: DECLARE EXIT HANDLER and START TRANSACTION are duplicated; a DECLARE appears after START TRANSACTION",
+        "qa_sql_validation_false_positive: qa.json marks idempotent_sql true although the stored procedure is not syntactically runnable"
+      ]
+    },
+    {
+      "stage_id": "DE-CH-0002",
+      "course": "de-fa",
+      "series": 2,
+      "chapter_path": "nova/courses/de-fa/staging/batch_01/chapter_0002/chapter.sql",
+      "qa_path": "nova/courses/de-fa/staging/batch_01/chapter_0002/qa.json",
+      "chapter_blob_sha": "93c3bc34cfdecca746af6905c7b13f795e89a789",
+      "qa_blob_sha": "854d92605f411eabfb982c444121fa298879c7d8",
+      "ready": false,
+      "qa_status": "PASS",
+      "audio_status": "complete",
+      "audio_coverage": {
+        "turn": 1,
+        "eligible_word": 1
+      },
+      "blockers": [
+        "invalid_sql_declaration_order: DECLARE EXIT HANDLER and START TRANSACTION are duplicated; a DECLARE appears after START TRANSACTION",
+        "qa_sql_validation_false_positive: qa.json marks idempotent_sql true although the stored procedure is not syntactically runnable"
+      ]
+    }
+  ],
+  "available_but_not_runnable": [
+    {
+      "course": "de-fa",
+      "kind": "turn_manifest",
+      "path": "nova/audio/de-fa/turn_manifest.json",
+      "git_blob_sha": "b35adc9ccc46175c72e399bac52876119c25a7c1",
+      "coverage_series": [
+        1,
+        2
+      ],
+      "coverage": 1,
+      "reason": "No Chapter is ready; audio stages may run only after the corresponding ready Chapters."
+    },
+    {
+      "course": "de-fa",
+      "kind": "word_manifest",
+      "path": "nova/audio/de-fa/word_manifest.json",
+      "git_blob_sha": "637768e357b0ebb82468f090da7720a1a93bef83",
+      "coverage_series": [
+        1,
+        2
+      ],
+      "coverage": 1,
+      "reason": "No Chapter is ready; audio stages may run only after the corresponding ready Chapters."
+    },
+    {
+      "course": "de-fa",
+      "kind": "turn_sql",
+      "path": "nova/audio/de-fa/update_turn_audio.sql",
+      "git_blob_sha": "2d935ab4033e599b7ba9b4a046ce9a74e364a15e",
+      "coverage_series": [
+        1,
+        2
+      ],
+      "coverage": 1,
+      "reason": "No Chapter is ready; audio stages may run only after the corresponding ready Chapters."
+    },
+    {
+      "course": "de-fa",
+      "kind": "word_sql",
+      "path": "nova/audio/de-fa/update_word_audio.sql",
+      "git_blob_sha": "95772666a9619a8f050a9f5881e10c62c4b0b3f2",
+      "coverage_series": [
+        1,
+        2
+      ],
+      "coverage": 1,
+      "reason": "No Chapter is ready; audio stages may run only after the corresponding ready Chapters."
+    }
+  ],
+  "coverage": {
+    "de-fa": {
+      "candidate_series": [
+        1,
+        2
+      ],
+      "ready_series": [],
+      "last_contiguous_ready_series": 0,
+      "turn_audio": {
+        "covered": 64,
+        "required": 64,
+        "ratio": 1
+      },
+      "eligible_word_audio": {
+        "covered": 88,
+        "required": 88,
+        "ratio": 1
+      }
+    },
+    "en-fa": {
+      "candidate_series": [],
+      "ready_series": [],
+      "last_contiguous_ready_series": 0,
+      "turn_audio": {
+        "covered": 0,
+        "required": 0,
+        "ratio": null
+      },
+      "eligible_word_audio": {
+        "covered": 0,
+        "required": 0,
+        "ratio": null
+      }
+    }
+  },
+  "next_action": "Repair the duplicated handler/transaction declarations in DE-CH-0001 and DE-CH-0002, rerun SQL-aware QA, then add both Chapters followed by de-fa Turn and Word audio update stages."
 }
