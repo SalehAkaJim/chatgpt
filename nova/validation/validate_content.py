@@ -17,7 +17,7 @@ WORD_INSERT = re.compile(
     r"INSERT INTO words .*?VALUES \(v_course,'((?:''|[^'])*)','(?:''|[^']*)','((?:''|[^'])*)'"
 )
 WORD_LOOKUP = re.compile(
-    r"SELECT\s+(?:id|COUNT\(\*\)\s*,\s*MIN\(id\))\s+INTO\s+"
+    r"SELECT\s+(id|COUNT\(\*\)\s*,\s*MIN\(id\))\s+INTO\s+"
     r"(?:v_count\s*,\s*)?v_w_\d+\s+FROM words\s+WHERE\s+course_id=v_course\s+"
     r"AND\s+lemma='((?:''|[^'])*)'\s+AND\s+part_of_speech='((?:''|[^'])*)'"
 )
@@ -87,19 +87,28 @@ def validate_word_dependencies(paths: list[Path]) -> list[str]:
         rel = path.relative_to(ROOT)
         course = rel.parts[2]
         known = known_by_course[course]
-        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        lines = path.read_text(encoding="utf-8").splitlines()
+        for line_number, line in enumerate(lines, 1):
             inserted = WORD_INSERT.search(line)
             if inserted:
                 key = tuple(item.replace("''", "'") for item in inserted.groups())
-                if key in known and path.resolve() in targets:
-                    errors.append(
-                        f"{rel}: duplicate Word definition {key[0]}|{key[1]} at line {line_number}"
-                    )
                 known.add(key)
             lookup = WORD_LOOKUP.search(line)
             if lookup:
-                key = tuple(item.replace("''", "'") for item in lookup.groups())
-                if key not in known and path.resolve() in targets:
+                selector, lemma, part_of_speech = lookup.groups()
+                key = (lemma.replace("''", "'"), part_of_speech.replace("''", "'"))
+                guarded_fallback = False
+                if selector.startswith("COUNT"):
+                    for following in lines[line_number:line_number + 2]:
+                        candidate = WORD_INSERT.search(following)
+                        if candidate:
+                            candidate_key = tuple(
+                                item.replace("''", "'") for item in candidate.groups()
+                            )
+                            if candidate_key == key:
+                                guarded_fallback = True
+                                break
+                if key not in known and not guarded_fallback and path.resolve() in targets:
                     errors.append(
                         f"{rel}: unresolved prior Word dependency {key[0]}|{key[1]} "
                         f"at line {line_number}"
