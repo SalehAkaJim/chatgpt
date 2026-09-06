@@ -6,15 +6,15 @@
   "series": 3,
   "chapter": 3,
   "batch": 1,
-  "status": "FAIL",
-  "audio_status": "complete",
+  "status": "pending",
+  "audio_status": "pending",
   "counts": {
     "lessons": 4,
     "turns": 41,
     "activities": 72,
     "tokens": 188,
     "used_word_tuples": 50,
-    "new_word_definitions": 20
+    "new_word_definitions": 21
   },
   "lesson_stats": [
     {
@@ -62,9 +62,9 @@
   },
   "evidence": {
     "validator": "PASS: python3 nova/validation/validate_content.py chapter.sql",
-    "mysql8": "FAIL: Column 'word_id' cannot be null at chapter CALL; missing prerequisite tuple nora|noun, run 34034916577",
+    "mysql8": "pending rerun after nora|noun dependency repair",
     "turn_audio": "PASS: 41/41, 0 failures, run 34034916601",
-    "word_audio_lori": "PASS: 20/20 declared new definitions, 0 failures, run 34034916556",
+    "word_audio_lori": "pending: nora|noun support row added; prior run covered 98/98 before repair",
     "manual_content_review": "independent London neighbor-and-family storyline reviewed against v2.1"
   }
 }

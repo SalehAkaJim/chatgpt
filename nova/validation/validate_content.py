@@ -13,6 +13,14 @@ ROOT = Path(__file__).resolve().parents[2]
 CHAPTER_GLOB = "nova/courses/*/staging/batch_*/chapter_*/chapter.sql"
 PUNCT = re.compile(r"[\s.!?,،؛:]+")
 CAST_JSON = re.compile(r"CAST\('((?:''|[^'])*)' AS JSON\)")
+WORD_INSERT = re.compile(
+    r"INSERT INTO words .*?VALUES \(v_course,'((?:''|[^'])*)','(?:''|[^']*)','((?:''|[^'])*)'"
+)
+WORD_LOOKUP = re.compile(
+    r"SELECT\s+(?:id|COUNT\(\*\)\s*,\s*MIN\(id\))\s+INTO\s+"
+    r"(?:v_count\s*,\s*)?v_w_\d+\s+FROM words\s+WHERE\s+course_id=v_course\s+"
+    r"AND\s+lemma='((?:''|[^'])*)'\s+AND\s+part_of_speech='((?:''|[^'])*)'"
+)
 
 
 def split_top(value: str) -> list[str]:
@@ -68,6 +76,35 @@ def cast_json(value: str):
 
 def semantic_count(values: list[str]) -> int:
     return len({PUNCT.sub("", item.lower()) for item in values})
+
+
+def validate_word_dependencies(paths: list[Path]) -> list[str]:
+    """Ensure every cross-chapter Word lookup resolves before MySQL execution."""
+    targets = {path.resolve() for path in paths}
+    known_by_course: dict[str, set[tuple[str, str]]] = defaultdict(set)
+    errors: list[str] = []
+    for path in sorted(ROOT.glob(CHAPTER_GLOB)):
+        rel = path.relative_to(ROOT)
+        course = rel.parts[2]
+        known = known_by_course[course]
+        for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            inserted = WORD_INSERT.search(line)
+            if inserted:
+                key = tuple(item.replace("''", "'") for item in inserted.groups())
+                if key in known and path.resolve() in targets:
+                    errors.append(
+                        f"{rel}: duplicate Word definition {key[0]}|{key[1]} at line {line_number}"
+                    )
+                known.add(key)
+            lookup = WORD_LOOKUP.search(line)
+            if lookup:
+                key = tuple(item.replace("''", "'") for item in lookup.groups())
+                if key not in known and path.resolve() in targets:
+                    errors.append(
+                        f"{rel}: unresolved prior Word dependency {key[0]}|{key[1]} "
+                        f"at line {line_number}"
+                    )
+    return errors
 
 
 def validate_file(path: Path) -> list[str]:
@@ -208,9 +245,10 @@ def main() -> int:
     args = parser.parse_args()
     paths = args.paths or sorted(ROOT.glob(CHAPTER_GLOB))
     errors = []
+    paths = [path if path.is_absolute() else ROOT / path for path in paths]
     for path in paths:
-        path = path if path.is_absolute() else ROOT / path
         errors.extend(validate_file(path))
+    errors.extend(validate_word_dependencies(paths))
     if errors:
         print("\n".join(f"FAIL {item}" for item in errors), file=sys.stderr)
         return 1
