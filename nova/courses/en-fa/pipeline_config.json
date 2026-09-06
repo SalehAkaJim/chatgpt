@@ -93,7 +93,9 @@
     "batch_cross_chapter_duplicate_target_audit",
     "level_progression_audit",
     "v9_0_only_no_DDL",
-    "course_scope_audit"
+    "course_scope_audit",
+    "all_used_word_tuples_materialized",
+    "new_word_definitions_complete"
   ],
   "audio_generation": {
     "enabled": true,
@@ -101,5 +103,45 @@
     "block_course_completion_until_100_percent_coverage": true,
     "preflight": "nova/plans/en_fa_audio_preflight_v9.json"
   },
-  "updated_at": "2026-09-05T20:46:33.000Z"
+  "updated_at": "2026-09-06T06:10:00.000Z",
+  "vocabulary_definition_policy": {
+    "version": 1,
+    "tuple_identity": [
+      "lemma",
+      "part_of_speech"
+    ],
+    "authoritative_history": [
+      "published course word state",
+      "all QA-passed staged chapters in the current unpublished batch"
+    ],
+    "required_order": [
+      "collect every tuple used by visible tokens, lesson-word links, and explicit targets",
+      "compare collected tuples with authoritative course history",
+      "materialize every genuinely new tuple with a complete Word definition",
+      "resolve one Word id for every tuple",
+      "only then create token mappings and lesson-word links"
+    ],
+    "new_tuple_required_fields": [
+      "lemma",
+      "display_form",
+      "part_of_speech",
+      "translation",
+      "difficulty",
+      "grammar",
+      "distractors",
+      "example_text",
+      "example_translation",
+      "metadata"
+    ],
+    "existing_tuple_rule": "reuse the exact existing course tuple; never redefine, duplicate, or silently change its translation or part of speech",
+    "insertion_rule": "use an idempotent exact lookup followed by INSERT only when a genuinely new tuple is absent",
+    "pre_stage_assertions": [
+      "every tuple referenced by a token has exactly one resolvable Word definition",
+      "every tuple referenced by a lesson-word link or explicit target has exactly one resolvable Word definition",
+      "used tuples minus existing and newly materialized tuples is empty",
+      "newly materialized tuples minus actually used tuples is empty",
+      "new definitions are persisted in chapter SQL and the course-scoped staged Word history"
+    ],
+    "failure_behavior": "reject the draft, keep state unchanged, release the lease, and regenerate the same Series; never let the validator invent a missing definition"
+  }
 }
