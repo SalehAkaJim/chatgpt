@@ -6,7 +6,7 @@
   "chapter": 6,
   "batch": 1,
   "status": "PASS",
-  "audio_status": "pending",
+  "audio_status": "complete",
   "counts": {
     "lessons": 4,
     "turns": 47,
@@ -138,28 +138,31 @@
   },
   "notes": [
     "Static evidence validated under contract 2.1.0.",
-    "MySQL 8 and both audio workflows are publication gates and remain pending for this content commit."
+    "MySQL 8 execution and both required audio workflows passed for content commit c825e19b4dc4ca2271a03ec848d2e734a07cff8c."
   ],
   "audio": {
     "turn_audio": {
       "expected": 47,
-      "generated": 0,
-      "coverage": 0,
-      "manifest": "nova/audio/de-fa/turn_manifest.json"
+      "generated": 47,
+      "coverage": 1,
+      "manifest": "nova/audio/de-fa/turn_manifest.json",
+      "workflow_run_id": 34033651039
     },
     "word_audio": {
       "eligible": 37,
-      "generated": 0,
-      "coverage": 0,
-      "manifest": "nova/audio/de-fa/word_manifest.json"
+      "generated": 37,
+      "coverage": 1,
+      "manifest": "nova/audio/de-fa/word_manifest.json",
+      "workflow_run_id": 34033651035
     }
   },
   "contract_version": "2.1.0",
   "qa_version": "2.1.0",
   "mysql8_execution": {
-    "status": "PENDING",
+    "status": "PASS",
     "workflow": "Nova Content Quality",
-    "schema_executed": false,
-    "chapter_executed": false
+    "workflow_run_id": 34033651029,
+    "schema_executed": true,
+    "chapter_executed": true
   }
 }
