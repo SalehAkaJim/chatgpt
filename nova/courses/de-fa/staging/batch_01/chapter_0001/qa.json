@@ -1,0 +1,100 @@
+{
+  "schema_version": "v9.0",
+  "contract": "independent_course_v2",
+  "course": "de-fa",
+  "series": 1,
+  "chapter": 1,
+  "batch": 1,
+  "status": "PASS",
+  "audio_status": "pending",
+  "counts": {
+    "lessons": 4,
+    "turns": 32,
+    "activities": 48,
+    "tokens": 96,
+    "used_word_tuples": 51,
+    "new_word_definitions": 51
+  },
+  "lesson_stats": [
+    {
+      "turns": 8,
+      "activities": 12,
+      "new_units": 5,
+      "modes": [
+        "audio_first",
+        "repeat_visible",
+        "recall_hidden",
+        "sentence_blank",
+        "tap_tokens",
+        "scenario_transfer"
+      ]
+    },
+    {
+      "turns": 8,
+      "activities": 12,
+      "new_units": 5,
+      "modes": [
+        "audio_first",
+        "repeat_visible",
+        "recall_hidden",
+        "sentence_blank",
+        "tap_tokens",
+        "scenario_transfer"
+      ]
+    },
+    {
+      "turns": 8,
+      "activities": 12,
+      "new_units": 5,
+      "modes": [
+        "audio_first",
+        "repeat_visible",
+        "recall_hidden",
+        "sentence_blank",
+        "tap_tokens",
+        "scenario_transfer"
+      ]
+    },
+    {
+      "turns": 8,
+      "activities": 12,
+      "new_units": 5,
+      "modes": [
+        "audio_first",
+        "repeat_visible",
+        "recall_hidden",
+        "sentence_blank",
+        "tap_tokens",
+        "scenario_transfer"
+      ]
+    }
+  ],
+  "invariants": {
+    "sequential_series": true,
+    "exactly_four_lessons": true,
+    "turn_quota": true,
+    "activity_quota": true,
+    "required_modes": true,
+    "no_typing_writing_dictation": true,
+    "independent_recall_transfer_ratio": 0.6667,
+    "minimum_ratio": 0.35,
+    "new_units_per_lesson": true,
+    "literal_surface_token_mapping": true,
+    "exact_sentence_reconstruction": true,
+    "used_minus_existing_or_defined": [],
+    "newly_defined_minus_used": [],
+    "natural_persian_reviewed": true,
+    "three_option_distractors": true,
+    "independent_german_story": true,
+    "idempotent_sql": true,
+    "schema_changes": false
+  },
+  "review_schedule": {
+    "+1": [
+      1
+    ]
+  },
+  "notes": [
+    "Content is validated; completion remains blocked until Turn and eligible Word audio manifests are complete."
+  ]
+}
