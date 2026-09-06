@@ -3,34 +3,34 @@
     {
       "course": "de-fa",
       "coverage": {
-        "covered": 581,
+        "covered": 628,
         "ratio": 1,
-        "required": 581
+        "required": 628
       },
-      "git_blob_sha": "0822840ce9d6b5445bccf351de3d5090f6f5f10b",
+      "git_blob_sha": "b8ddff26e28c3a1fb4af6ebbc140e28bcbb39a1a",
       "kind": "turn_audio_update",
-      "manifest_blob_sha": "7f62fcc28275422541679ce03559bc376b78088e",
+      "manifest_blob_sha": "712c08e384d0f870ee48879a513a0890bcf24632",
       "manifest_path": "nova/audio/de-fa/turn_manifest.json",
-      "order": 22,
+      "order": 25,
       "path": "nova/audio/de-fa/update_turn_audio.sql",
       "ready": true,
       "requires": [
-        "DE-CH-0013"
+        "DE-CH-0014"
       ],
       "stage_id": "DE-AUDIO-TURNS-v2"
     },
     {
       "course": "de-fa",
       "coverage": {
-        "covered": 465,
+        "covered": 497,
         "ratio": 1,
-        "required": 465
+        "required": 497
       },
-      "git_blob_sha": "37f3c35c096f54b185e2f9c8872fe47b690b9128",
+      "git_blob_sha": "efa07dd2a0c1d5ff5ee0a2450726d500671ede2b",
       "kind": "word_audio_update",
-      "manifest_blob_sha": "07eab68c1e06ec1eb50446ec7fa839a235b44e7f",
+      "manifest_blob_sha": "9311f1d170d8b55de7515ac987efe802c9d66ce5",
       "manifest_path": "nova/audio/de-fa/word_manifest.json",
-      "order": 23,
+      "order": 26,
       "path": "nova/audio/de-fa/update_word_audio.sql",
       "ready": true,
       "requires": [
@@ -41,34 +41,34 @@
     {
       "course": "en-fa",
       "coverage": {
-        "covered": 241,
+        "covered": 325,
         "ratio": 1,
-        "required": 241
+        "required": 325
       },
-      "git_blob_sha": "bb8c803e0dedf3afa6bd0a92020099b7548c7fc2",
+      "git_blob_sha": "33ceff796e97470fec31c02ca8fcfe26668009a3",
       "kind": "turn_audio_update",
-      "manifest_blob_sha": "5bfb84ca16e734ee844bb7d1317ce7917ccb528b",
+      "manifest_blob_sha": "8cd094a21d7c7f5bd12da2f38e09bb0b0b234ac4",
       "manifest_path": "nova/audio/en-fa/turn_manifest.json",
-      "order": 24,
+      "order": 27,
       "path": "nova/audio/en-fa/update_turn_audio.sql",
       "ready": true,
       "requires": [
-        "EN-CH-0006"
+        "EN-CH-0008"
       ],
       "stage_id": "EN-AUDIO-TURNS-v2"
     },
     {
       "course": "en-fa",
       "coverage": {
-        "covered": 144,
+        "covered": 167,
         "ratio": 1,
-        "required": 144
+        "required": 167
       },
-      "git_blob_sha": "7477a33d7e1ed3f5f372b7a095a894d9680f9dc3",
+      "git_blob_sha": "347f073af8be6b8dbc7c4ee38452390cb24d4a1e",
       "kind": "word_audio_update",
-      "manifest_blob_sha": "38d1135d045f961c09f251f9055e2f09c18d5df8",
+      "manifest_blob_sha": "c34cd8b789a47bfafbf20eb8940e2923479b74a5",
       "manifest_path": "nova/audio/en-fa/word_manifest.json",
-      "order": 25,
+      "order": 28,
       "path": "nova/audio/en-fa/update_word_audio.sql",
       "ready": true,
       "requires": [
@@ -446,6 +446,34 @@
     {
       "audio_coverage": {
         "eligible_word": {
+          "covered": 32,
+          "required": 32,
+          "ratio": 1
+        },
+        "turn": {
+          "covered": 47,
+          "required": 47,
+          "ratio": 1
+        }
+      },
+      "course": "de-fa",
+      "git_blob_sha": "59cdf162c13e2a9d39d5560905ed4323a2b64924",
+      "kind": "chapter",
+      "order": 16,
+      "path": "nova/courses/de-fa/staging/batch_01/chapter_0014/chapter.sql",
+      "qa_blob_sha": "4d090043d387c7ab2d85faf60296d63bfe7b67f1",
+      "qa_path": "nova/courses/de-fa/staging/batch_01/chapter_0014/qa.json",
+      "quality_workflow_run_id": 34049146592,
+      "ready": true,
+      "requires": [
+        "DE-CH-0013"
+      ],
+      "series": 14,
+      "stage_id": "DE-CH-0014"
+    },
+    {
+      "audio_coverage": {
+        "eligible_word": {
           "covered": 54,
           "required": 54,
           "ratio": 1
@@ -459,7 +487,7 @@
       "course": "en-fa",
       "git_blob_sha": "a51639f00f60f9335862df3df971fd7a8c7d714d",
       "kind": "chapter",
-      "order": 16,
+      "order": 17,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0001/chapter.sql",
       "qa_blob_sha": "8afe5ae250be7764ce3749c7d3aefd61c64610d1",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0001/qa.json",
@@ -487,7 +515,7 @@
       "course": "en-fa",
       "git_blob_sha": "3cb20be5f56831f8583471e2e260d87be3f8131e",
       "kind": "chapter",
-      "order": 17,
+      "order": 18,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0002/chapter.sql",
       "qa_blob_sha": "285667a209f4685c106875ea5b468dcdbaf250d8",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0002/qa.json",
@@ -515,7 +543,7 @@
       "course": "en-fa",
       "git_blob_sha": "4b57fa6a45c42089962a3605e53d732b632d121e",
       "kind": "chapter",
-      "order": 18,
+      "order": 19,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0003/chapter.sql",
       "qa_blob_sha": "cb3ccadb0a29e96977b37d19b9ef03eeebcf2a74",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0003/qa.json",
@@ -543,7 +571,7 @@
       "course": "en-fa",
       "git_blob_sha": "11ef8cc7eadf3d9eef4379dd1e455fcd7ba8bb8d",
       "kind": "chapter",
-      "order": 19,
+      "order": 20,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0004/chapter.sql",
       "qa_blob_sha": "e71a5b31778ab766da1392ace67ba2d11bcdaf42",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0004/qa.json",
@@ -571,7 +599,7 @@
       "course": "en-fa",
       "git_blob_sha": "cd0461c761ba2c6fd5054cf1ba59806986748aed",
       "kind": "chapter",
-      "order": 20,
+      "order": 21,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0005/chapter.sql",
       "qa_blob_sha": "185a873b1a97ed02e58683ca423aac9eb1c7df27",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0005/qa.json",
@@ -599,7 +627,7 @@
       "course": "en-fa",
       "git_blob_sha": "4e592a84dd7c4eb83ad824f240981e95d1162706",
       "kind": "chapter",
-      "order": 21,
+      "order": 22,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0006/chapter.sql",
       "qa_blob_sha": "5b0987449701254dff7ff870c1287b4b202b500e",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0006/qa.json",
@@ -610,6 +638,62 @@
       ],
       "series": 6,
       "stage_id": "EN-CH-0006"
+    },
+    {
+      "audio_coverage": {
+        "eligible_word": {
+          "covered": 12,
+          "required": 12,
+          "ratio": 1
+        },
+        "turn": {
+          "covered": 42,
+          "required": 42,
+          "ratio": 1
+        }
+      },
+      "course": "en-fa",
+      "git_blob_sha": "42103d271a897f528831b95d400bf5ad50f0157c",
+      "kind": "chapter",
+      "order": 23,
+      "path": "nova/courses/en-fa/staging/batch_01/chapter_0007/chapter.sql",
+      "qa_blob_sha": "f3656b7182de7720fba6f1a97e9f96bb7ad67575",
+      "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0007/qa.json",
+      "quality_workflow_run_id": 34047934874,
+      "ready": true,
+      "requires": [
+        "EN-CH-0006"
+      ],
+      "series": 7,
+      "stage_id": "EN-CH-0007"
+    },
+    {
+      "audio_coverage": {
+        "eligible_word": {
+          "covered": 11,
+          "required": 11,
+          "ratio": 1
+        },
+        "turn": {
+          "covered": 42,
+          "required": 42,
+          "ratio": 1
+        }
+      },
+      "course": "en-fa",
+      "git_blob_sha": "e0dbfd63c1c3c840bc61f8ba71860914b3f97c87",
+      "kind": "chapter",
+      "order": 24,
+      "path": "nova/courses/en-fa/staging/batch_01/chapter_0008/chapter.sql",
+      "qa_blob_sha": "858b5b830a607eef0de8c4310f4dab8f4fe28e35",
+      "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0008/qa.json",
+      "quality_workflow_run_id": 34048239615,
+      "ready": true,
+      "requires": [
+        "EN-CH-0007"
+      ],
+      "series": 8,
+      "stage_id": "EN-CH-0008"
     }
   ],
   "coverage": {
@@ -627,7 +711,8 @@
         10,
         11,
         12,
-        13
+        13,
+        14
       ],
       "ready_series": [
         1,
@@ -642,17 +727,18 @@
         10,
         11,
         12,
-        13
+        13,
+        14
       ],
-      "last_contiguous_ready_series": 13,
+      "last_contiguous_ready_series": 14,
       "turn_audio": {
-        "covered": 581,
-        "required": 581,
+        "covered": 628,
+        "required": 628,
         "ratio": 1
       },
       "eligible_word_audio": {
-        "covered": 465,
-        "required": 465,
+        "covered": 497,
+        "required": 497,
         "ratio": 1
       }
     },
@@ -663,7 +749,9 @@
         3,
         4,
         5,
-        6
+        6,
+        7,
+        8
       ],
       "ready_series": [
         1,
@@ -671,25 +759,27 @@
         3,
         4,
         5,
-        6
+        6,
+        7,
+        8
       ],
-      "last_contiguous_ready_series": 6,
+      "last_contiguous_ready_series": 8,
       "turn_audio": {
-        "covered": 241,
-        "required": 241,
+        "covered": 325,
+        "required": 325,
         "ratio": 1
       },
       "eligible_word_audio": {
-        "covered": 144,
-        "required": 144,
+        "covered": 167,
+        "required": 167,
         "ratio": 1
       }
     }
   },
-  "generated_at": "2026-09-06T16:48:00Z",
-  "generated_from_commit": "e4cbb2b6527b3bd66aa9078d298c84cc62f71837",
+  "generated_at": "2026-09-06T17:48:00Z",
+  "generated_from_commit": "e76e2b6509bb157db0cf5e6720f2e639418edab1",
   "install_mode": "clean",
-  "next_action": "Run stages 1 through 25 in exact order for a clean Nova v9 installation.",
+  "next_action": "Run stages 1 through 28 in exact order for a clean Nova v9 installation.",
   "policy": {
     "chapter_stage_id_pattern": "<DE|EN>-CH-<four-digit series>",
     "deterministic_order": [
@@ -1104,6 +1194,34 @@
     {
       "audio_coverage": {
         "eligible_word": {
+          "covered": 32,
+          "required": 32,
+          "ratio": 1
+        },
+        "turn": {
+          "covered": 47,
+          "required": 47,
+          "ratio": 1
+        }
+      },
+      "course": "de-fa",
+      "git_blob_sha": "59cdf162c13e2a9d39d5560905ed4323a2b64924",
+      "kind": "chapter",
+      "order": 16,
+      "path": "nova/courses/de-fa/staging/batch_01/chapter_0014/chapter.sql",
+      "qa_blob_sha": "4d090043d387c7ab2d85faf60296d63bfe7b67f1",
+      "qa_path": "nova/courses/de-fa/staging/batch_01/chapter_0014/qa.json",
+      "quality_workflow_run_id": 34049146592,
+      "ready": true,
+      "requires": [
+        "DE-CH-0013"
+      ],
+      "series": 14,
+      "stage_id": "DE-CH-0014"
+    },
+    {
+      "audio_coverage": {
+        "eligible_word": {
           "covered": 54,
           "required": 54,
           "ratio": 1
@@ -1117,7 +1235,7 @@
       "course": "en-fa",
       "git_blob_sha": "a51639f00f60f9335862df3df971fd7a8c7d714d",
       "kind": "chapter",
-      "order": 16,
+      "order": 17,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0001/chapter.sql",
       "qa_blob_sha": "8afe5ae250be7764ce3749c7d3aefd61c64610d1",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0001/qa.json",
@@ -1145,7 +1263,7 @@
       "course": "en-fa",
       "git_blob_sha": "3cb20be5f56831f8583471e2e260d87be3f8131e",
       "kind": "chapter",
-      "order": 17,
+      "order": 18,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0002/chapter.sql",
       "qa_blob_sha": "285667a209f4685c106875ea5b468dcdbaf250d8",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0002/qa.json",
@@ -1173,7 +1291,7 @@
       "course": "en-fa",
       "git_blob_sha": "4b57fa6a45c42089962a3605e53d732b632d121e",
       "kind": "chapter",
-      "order": 18,
+      "order": 19,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0003/chapter.sql",
       "qa_blob_sha": "cb3ccadb0a29e96977b37d19b9ef03eeebcf2a74",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0003/qa.json",
@@ -1201,7 +1319,7 @@
       "course": "en-fa",
       "git_blob_sha": "11ef8cc7eadf3d9eef4379dd1e455fcd7ba8bb8d",
       "kind": "chapter",
-      "order": 19,
+      "order": 20,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0004/chapter.sql",
       "qa_blob_sha": "e71a5b31778ab766da1392ace67ba2d11bcdaf42",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0004/qa.json",
@@ -1229,7 +1347,7 @@
       "course": "en-fa",
       "git_blob_sha": "cd0461c761ba2c6fd5054cf1ba59806986748aed",
       "kind": "chapter",
-      "order": 20,
+      "order": 21,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0005/chapter.sql",
       "qa_blob_sha": "185a873b1a97ed02e58683ca423aac9eb1c7df27",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0005/qa.json",
@@ -1257,7 +1375,7 @@
       "course": "en-fa",
       "git_blob_sha": "4e592a84dd7c4eb83ad824f240981e95d1162706",
       "kind": "chapter",
-      "order": 21,
+      "order": 22,
       "path": "nova/courses/en-fa/staging/batch_01/chapter_0006/chapter.sql",
       "qa_blob_sha": "5b0987449701254dff7ff870c1287b4b202b500e",
       "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0006/qa.json",
@@ -1270,36 +1388,92 @@
       "stage_id": "EN-CH-0006"
     },
     {
+      "audio_coverage": {
+        "eligible_word": {
+          "covered": 12,
+          "required": 12,
+          "ratio": 1
+        },
+        "turn": {
+          "covered": 42,
+          "required": 42,
+          "ratio": 1
+        }
+      },
+      "course": "en-fa",
+      "git_blob_sha": "42103d271a897f528831b95d400bf5ad50f0157c",
+      "kind": "chapter",
+      "order": 23,
+      "path": "nova/courses/en-fa/staging/batch_01/chapter_0007/chapter.sql",
+      "qa_blob_sha": "f3656b7182de7720fba6f1a97e9f96bb7ad67575",
+      "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0007/qa.json",
+      "quality_workflow_run_id": 34047934874,
+      "ready": true,
+      "requires": [
+        "EN-CH-0006"
+      ],
+      "series": 7,
+      "stage_id": "EN-CH-0007"
+    },
+    {
+      "audio_coverage": {
+        "eligible_word": {
+          "covered": 11,
+          "required": 11,
+          "ratio": 1
+        },
+        "turn": {
+          "covered": 42,
+          "required": 42,
+          "ratio": 1
+        }
+      },
+      "course": "en-fa",
+      "git_blob_sha": "e0dbfd63c1c3c840bc61f8ba71860914b3f97c87",
+      "kind": "chapter",
+      "order": 24,
+      "path": "nova/courses/en-fa/staging/batch_01/chapter_0008/chapter.sql",
+      "qa_blob_sha": "858b5b830a607eef0de8c4310f4dab8f4fe28e35",
+      "qa_path": "nova/courses/en-fa/staging/batch_01/chapter_0008/qa.json",
+      "quality_workflow_run_id": 34048239615,
+      "ready": true,
+      "requires": [
+        "EN-CH-0007"
+      ],
+      "series": 8,
+      "stage_id": "EN-CH-0008"
+    },
+    {
       "course": "de-fa",
       "coverage": {
-        "covered": 581,
+        "covered": 628,
         "ratio": 1,
-        "required": 581
+        "required": 628
       },
-      "git_blob_sha": "0822840ce9d6b5445bccf351de3d5090f6f5f10b",
+      "git_blob_sha": "b8ddff26e28c3a1fb4af6ebbc140e28bcbb39a1a",
       "kind": "turn_audio_update",
-      "manifest_blob_sha": "7f62fcc28275422541679ce03559bc376b78088e",
+      "manifest_blob_sha": "712c08e384d0f870ee48879a513a0890bcf24632",
       "manifest_path": "nova/audio/de-fa/turn_manifest.json",
-      "order": 22,
+      "order": 25,
       "path": "nova/audio/de-fa/update_turn_audio.sql",
       "ready": true,
       "requires": [
-        "DE-CH-0013"
+        "DE-CH-0014"
       ],
       "stage_id": "DE-AUDIO-TURNS-v2"
     },
     {
       "course": "de-fa",
       "coverage": {
-        "covered": 465,
+        "covered": 497,
         "ratio": 1,
-        "required": 465
+        "required": 497
       },
-      "git_blob_sha": "37f3c35c096f54b185e2f9c8872fe47b690b9128",
+      "git_blob_sha": "efa07dd2a0c1d5ff5ee0a2450726d500671ede2b",
       "kind": "word_audio_update",
-      "manifest_blob_sha": "07eab68c1e06ec1eb50446ec7fa839a235b44e7f",
+      "manifest_blob_sha": "9311f1d170d8b55de7515ac987efe802c9d66ce5",
       "manifest_path": "nova/audio/de-fa/word_manifest.json",
-      "order": 23,
+      "order": 26,
       "path": "nova/audio/de-fa/update_word_audio.sql",
       "ready": true,
       "requires": [
@@ -1310,34 +1484,34 @@
     {
       "course": "en-fa",
       "coverage": {
-        "covered": 241,
+        "covered": 325,
         "ratio": 1,
-        "required": 241
+        "required": 325
       },
-      "git_blob_sha": "bb8c803e0dedf3afa6bd0a92020099b7548c7fc2",
+      "git_blob_sha": "33ceff796e97470fec31c02ca8fcfe26668009a3",
       "kind": "turn_audio_update",
-      "manifest_blob_sha": "5bfb84ca16e734ee844bb7d1317ce7917ccb528b",
+      "manifest_blob_sha": "8cd094a21d7c7f5bd12da2f38e09bb0b0b234ac4",
       "manifest_path": "nova/audio/en-fa/turn_manifest.json",
-      "order": 24,
+      "order": 27,
       "path": "nova/audio/en-fa/update_turn_audio.sql",
       "ready": true,
       "requires": [
-        "EN-CH-0006"
+        "EN-CH-0008"
       ],
       "stage_id": "EN-AUDIO-TURNS-v2"
     },
     {
       "course": "en-fa",
       "coverage": {
-        "covered": 144,
+        "covered": 167,
         "ratio": 1,
-        "required": 144
+        "required": 167
       },
-      "git_blob_sha": "7477a33d7e1ed3f5f372b7a095a894d9680f9dc3",
+      "git_blob_sha": "347f073af8be6b8dbc7c4ee38452390cb24d4a1e",
       "kind": "word_audio_update",
-      "manifest_blob_sha": "38d1135d045f961c09f251f9055e2f09c18d5df8",
+      "manifest_blob_sha": "c34cd8b789a47bfafbf20eb8940e2923479b74a5",
       "manifest_path": "nova/audio/en-fa/word_manifest.json",
-      "order": 25,
+      "order": 28,
       "path": "nova/audio/en-fa/update_word_audio.sql",
       "ready": true,
       "requires": [

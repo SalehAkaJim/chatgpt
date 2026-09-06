@@ -32,24 +32,27 @@ mysql --default-character-set=utf8mb4 -h HOST -u USER -p DATABASE < "PATH"
 | 13 | `DE-CH-0011` | Chapter | [chapter.sql](../courses/de-fa/staging/batch_01/chapter_0011/chapter.sql) | `DE-CH-0010` | آماده — Turn 47/47، Word 32/32 |
 | 14 | `DE-CH-0012` | Chapter | [chapter.sql](../courses/de-fa/staging/batch_01/chapter_0012/chapter.sql) | `DE-CH-0011` | آماده — Turn 47/47، Word 29/29 |
 | 15 | `DE-CH-0013` | Chapter | [chapter.sql](../courses/de-fa/staging/batch_01/chapter_0013/chapter.sql) | `DE-CH-0012` | آماده — Turn 47/47، Word 26/26 |
-| 16 | `EN-CH-0001` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0001/chapter.sql) | `CORE-SCHEMA-v9` | آماده — Turn 38/38، Word 54/54 |
-| 17 | `EN-CH-0002` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0002/chapter.sql) | `EN-CH-0001` | آماده — Turn 38/38، Word 24/24 |
-| 18 | `EN-CH-0003` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0003/chapter.sql) | `EN-CH-0002` | آماده — Turn 41/41، Word 21/21 |
-| 19 | `EN-CH-0004` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0004/chapter.sql) | `EN-CH-0003` | آماده — Turn 40/40، Word 15/15 |
-| 20 | `EN-CH-0005` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0005/chapter.sql) | `EN-CH-0004` | آماده — Turn 42/42، Word 15/15 |
-| 21 | `EN-CH-0006` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0006/chapter.sql) | `EN-CH-0005` | آماده — Turn 42/42، Word 15/15 |
-| 22 | `DE-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/de-fa/update_turn_audio.sql) | `DE-CH-0013` | آماده — 581/581 |
-| 23 | `DE-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/de-fa/update_word_audio.sql) | `DE-AUDIO-TURNS-v2` | آماده — 465/465 |
-| 24 | `EN-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/en-fa/update_turn_audio.sql) | `EN-CH-0006` | آماده — 241/241 |
-| 25 | `EN-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/en-fa/update_word_audio.sql) | `EN-AUDIO-TURNS-v2` | آماده — 144/144 |
+| 16 | `DE-CH-0014` | Chapter | [chapter.sql](../courses/de-fa/staging/batch_01/chapter_0014/chapter.sql) | `DE-CH-0013` | آماده — Turn 47/47، Word 32/32 |
+| 17 | `EN-CH-0001` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0001/chapter.sql) | `CORE-SCHEMA-v9` | آماده — Turn 38/38، Word 54/54 |
+| 18 | `EN-CH-0002` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0002/chapter.sql) | `EN-CH-0001` | آماده — Turn 38/38، Word 24/24 |
+| 19 | `EN-CH-0003` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0003/chapter.sql) | `EN-CH-0002` | آماده — Turn 41/41، Word 21/21 |
+| 20 | `EN-CH-0004` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0004/chapter.sql) | `EN-CH-0003` | آماده — Turn 40/40، Word 15/15 |
+| 21 | `EN-CH-0005` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0005/chapter.sql) | `EN-CH-0004` | آماده — Turn 42/42، Word 15/15 |
+| 22 | `EN-CH-0006` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0006/chapter.sql) | `EN-CH-0005` | آماده — Turn 42/42، Word 15/15 |
+| 23 | `EN-CH-0007` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0007/chapter.sql) | `EN-CH-0006` | آماده — Turn 42/42، Word 12/12 |
+| 24 | `EN-CH-0008` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0008/chapter.sql) | `EN-CH-0007` | آماده — Turn 42/42، Word 11/11 |
+| 25 | `DE-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/de-fa/update_turn_audio.sql) | `DE-CH-0014` | آماده — 628/628 |
+| 26 | `DE-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/de-fa/update_word_audio.sql) | `DE-AUDIO-TURNS-v2` | آماده — 497/497 |
+| 27 | `EN-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/en-fa/update_turn_audio.sql) | `EN-CH-0008` | آماده — 325/325 |
+| 28 | `EN-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/en-fa/update_word_audio.sql) | `EN-AUDIO-TURNS-v2` | آماده — 167/167 |
 
 ## پوشش تاییدشده
 
-- آلمانی: Chapterهای `0001–0013`، صوت Turn برابر `581/581` و Word برابر `465/465`.
-- انگلیسی: Chapterهای `0001–0006`، صوت Turn برابر `241/241` و Word برابر `144/144`.
+- آلمانی: Chapterهای `0001–0014`، صوت Turn برابر `628/628` و Word برابر `497/497`.
+- انگلیسی: Chapterهای `0001–0008`، صوت Turn برابر `325/325` و Word برابر `167/167`.
 - Chapterهای بازسازی‌شده با `semantic_gate_version=2` کنترل شده‌اند.
 - قرارداد آموزشی: [independent_course_v2.md](../contracts/independent_course_v2.md)، نسخهٔ `2.1.0`.
 - Validator: [validate_content.py](../validation/validate_content.py).
-- آخرین اجرای موفق Validator و MySQL 8: [Nova Content Quality — Run 34046509995](https://github.com/SalehAkaJim/chatgpt/actions/runs/34046509995).
+- آخرین اجرای موفق Validator و MySQL 8: [Nova Content Quality — Run 34049296373](https://github.com/SalehAkaJim/chatgpt/actions/runs/34049296373).
 
 Chapter فقط زمانی وارد این جدول می‌شود که SQL و QA معتبر، شمارهٔ Series متوالی، Semantic Gate، اجرای MySQL 8 و پوشش Turn/Word audio همگی PASS باشند.
