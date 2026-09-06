@@ -4,14 +4,17 @@
   "course": "de-fa",
   "expected_next_series": 106,
   "last_successful_series": 105,
-  "lease": {
-    "acquired_at": "2026-09-06T09:01:00.000Z",
-    "expires_at": "2026-09-06T09:51:00.000Z",
-    "holder": "nova-de-fa-20260906T0901Z-s106",
-    "series": 106
+  "last_blocker": {
+    "detected_at": "2026-09-06T09:05:00.000Z",
+    "resolved_at": "2026-09-06T09:08:00.000Z",
+    "type": "staged_dependency_coordinate_mismatch",
+    "series": 105,
+    "details": "Corrected Series 105 from Module 6 / Chapter 1 to canonical Module 5 / Chapter 5; Series 106 was not generated in this run.",
+    "resolved": true
   },
+  "lease": null,
   "lease_timeout_minutes": 50,
-  "state": "locked",
-  "updated_at": "2026-09-06T09:01:00.000Z",
+  "state": "unlocked",
+  "updated_at": "2026-09-06T09:08:00.000Z",
   "version": 1
 }
