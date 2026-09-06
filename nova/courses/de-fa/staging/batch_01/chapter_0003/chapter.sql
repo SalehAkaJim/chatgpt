@@ -1,3 +1,4 @@
+-- Audio pipeline retry after guarded character parser fix (2026-09-06).
 -- Audio pipeline retry after guarded locator parser fix (2026-09-06).
 -- NOVA INDEPENDENT DE-FA COURSE V2
 -- SERIES 3
