@@ -6,7 +6,7 @@
   "chapter": 11,
   "batch": 1,
   "status": "PASS",
-  "audio_status": "pending",
+  "audio_status": "complete",
   "counts": {
     "lessons": 4,
     "turns": 47,
@@ -137,20 +137,22 @@
     ]
   },
   "notes": [
-    "Static evidence validated under contract 2.1.0.",
-    "MySQL 8 and both audio workflows are publication gates and remain pending for this content commit."
+    "Semantic Gate v2 was computed from SQL by the repository validator.",
+    "MySQL 8, character Turn audio, and Lori Word audio passed after the content commit."
   ],
   "audio": {
     "turn_audio": {
       "expected": 47,
-      "generated": 0,
-      "coverage": 0,
+      "generated": 47,
+      "coverage": 1,
+      "workflow_run_id": 34043326719,
       "manifest": "nova/audio/de-fa/turn_manifest.json"
     },
     "word_audio": {
       "eligible": 32,
-      "generated": 0,
-      "coverage": 0,
+      "generated": 32,
+      "coverage": 1,
+      "workflow_run_id": 34043326680,
       "manifest": "nova/audio/de-fa/word_manifest.json"
     }
   },
@@ -158,9 +160,10 @@
   "qa_version": "2.1.0",
   "semantic_gate_version": 2,
   "mysql8_execution": {
-    "status": "PENDING",
+    "status": "PASS",
     "workflow": "Nova Content Quality",
-    "schema_executed": false,
-    "chapter_executed": false
+    "workflow_run_id": 34043326696,
+    "schema_executed": true,
+    "chapter_executed": true
   }
 }
