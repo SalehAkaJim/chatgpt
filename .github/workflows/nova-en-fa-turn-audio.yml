@@ -30,12 +30,13 @@ jobs:
           python-version: "3.12"
       - name: Run tests
         run: NOVA_COURSE=en-fa python -m unittest discover -s nova/tts/tests -v
-      - name: Validate SQL sources
-        run: python nova/tts/nova_tts.py validate-sources
       - name: Prepare voices
         id: voices
         continue-on-error: true
         run: python nova/tts/nova_tts.py bootstrap-voices --yes
+      - name: Validate SQL sources
+        if: steps.voices.outcome == 'success'
+        run: python nova/tts/nova_tts.py validate-sources
       - name: Generate audio
         id: audio
         if: steps.voices.outcome == 'success'
