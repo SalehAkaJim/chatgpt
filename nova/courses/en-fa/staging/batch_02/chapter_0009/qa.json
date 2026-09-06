@@ -1,0 +1,64 @@
+{
+  "contract": "independent_course_v2",
+  "contract_version": "2.1.0",
+  "semantic_gate_version": 2,
+  "course": "en-fa",
+  "series": 9,
+  "status": "STATIC_PASS_PENDING_RUNTIME",
+  "audio_status": "pending",
+  "counts": {
+    "lessons": 4,
+    "turns": 41,
+    "activities": 72,
+    "tokens": 186,
+    "used_word_tuples": 50,
+    "new_word_definitions": 12
+  },
+  "lesson_roles": [
+    "exposure",
+    "grammar",
+    "recall",
+    "mastery"
+  ],
+  "invariants": {
+    "mysql_declaration_order": true,
+    "sql_static_validation_pass": true,
+    "sql_mysql8_execution_required": true,
+    "answer_positions_not_fixed": true,
+    "recall_cues_complete": true,
+    "semantic_speech_alternatives": true,
+    "scenario_transfer_is_novel": true,
+    "explicit_word_teaching": true,
+    "explicit_micro_grammar": true,
+    "word_distractors_unique_same_pos": true,
+    "computed_teaching_coverage": true,
+    "exact_turn_token_reconstruction": true,
+    "closed_class_mapping_literal": true,
+    "no_keyboard_input": true,
+    "cumulative_mastery_checkpoint": false
+  },
+  "audio": {
+    "turn_audio": {
+      "required": 41,
+      "covered": 0,
+      "coverage": 0,
+      "status": "pending"
+    },
+    "word_audio": {
+      "required": 12,
+      "covered": 0,
+      "coverage": 0,
+      "status": "pending",
+      "voice": "Lori"
+    }
+  },
+  "mysql8_execution": {
+    "status": "pending"
+  },
+  "evidence": {
+    "validator": "PASS: full repository static gate before staging commit",
+    "mysql8": "pending: Nova Content Quality",
+    "turn_audio": "pending: English Turn Audio",
+    "word_audio_lori": "pending: English Word Audio with Lori"
+  }
+}
