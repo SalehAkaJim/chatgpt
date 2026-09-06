@@ -1,0 +1,98 @@
+{
+  "artifact": {
+    "bytes": 437907,
+    "path": "nova/courses/en-fa/content/Start/batch_03_chapters_17_24.sql",
+    "sha256": "23c925a331f1b1ebf8a3e738ac366f29aa5ce638d471ae0fe3f6d3627a24874b"
+  },
+  "batch": 3,
+  "chapter_range": [
+    17,
+    24
+  ],
+  "checks": {
+    "all_eight_chapter_qa_pass": true,
+    "all_new_word_tuples_materialized": true,
+    "all_used_word_tuples_materialized": true,
+    "new_word_definitions_complete": true,
+    "batch_sequential_importable": true,
+    "chapter_contiguous": true,
+    "course_scope_audit": true,
+    "curriculum_titles_exact": true,
+    "database_revision_exact": true,
+    "explicit_targets_unique": true,
+    "lesson_counts_complete": true,
+    "level_progression": true,
+    "new_word_insert_tuples_unique": true,
+    "schema_ddl_absent": true,
+    "series_contiguous": true,
+    "storyline_continuity": true,
+    "word_audio_policy_v4_compatible": true
+  },
+  "counts": {
+    "activities": 281,
+    "chapters": 8,
+    "explicit_targets": 32,
+    "learner_turns": 73,
+    "lessons": 32,
+    "new_word_tuples": 60,
+    "tokens": 552,
+    "turns": 153
+  },
+  "course": "en-fa",
+  "database_level_code": "ST",
+  "database_revision": "v9.0",
+  "errors": [],
+  "generated_at": "2026-09-06T06:56:42.000Z",
+  "level": "Start",
+  "project": "Nova",
+  "series_range": [
+    17,
+    24
+  ],
+  "source_main_head": "6ea769792e75621149a85bc37b94ceb362644d54",
+  "status": "PASS",
+  "storylines": [
+    {
+      "key": "mina-noah-room-tour",
+      "lessons": 4,
+      "orders": [
+        5,
+        8
+      ],
+      "series": [
+        17,
+        17
+      ]
+    },
+    {
+      "key": "mina-chloe-room-picture",
+      "lessons": 12,
+      "orders": [
+        1,
+        12
+      ],
+      "series": [
+        18,
+        20
+      ]
+    },
+    {
+      "key": "mina-noah-morning-routine",
+      "lessons": 16,
+      "orders": [
+        1,
+        16
+      ],
+      "series": [
+        21,
+        24
+      ]
+    }
+  ],
+  "verification": {
+    "all_chapter_runtime_guards_embedded": true,
+    "live_mysql_execution": "not_performed",
+    "mode": "static_cross_chapter_and_transactional_sql_audit"
+  },
+  "warnings": []
+}

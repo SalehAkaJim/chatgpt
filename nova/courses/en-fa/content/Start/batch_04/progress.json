@@ -1,0 +1,73 @@
+{
+  "course": "en-fa",
+  "level": "Start",
+  "database_level_code": "ST",
+  "batch": 4,
+  "chapter_range": [
+    25,
+    32
+  ],
+  "series_range": [
+    25,
+    32
+  ],
+  "status": "in_progress",
+  "published": false,
+  "chapters": [
+    {
+      "chapter": 25,
+      "series": 25,
+      "title": "I don't watch TV",
+      "status": "pending"
+    },
+    {
+      "chapter": 26,
+      "series": 26,
+      "title": "I'd like some water",
+      "status": "planned"
+    },
+    {
+      "chapter": 27,
+      "series": 27,
+      "title": "How much is this?",
+      "status": "planned"
+    },
+    {
+      "chapter": 28,
+      "series": 28,
+      "title": "A coffee, please",
+      "status": "planned"
+    },
+    {
+      "chapter": 29,
+      "series": 29,
+      "title": "Do you have bread?",
+      "status": "planned"
+    },
+    {
+      "chapter": 30,
+      "series": 30,
+      "title": "The bill, please",
+      "status": "planned"
+    },
+    {
+      "chapter": 31,
+      "series": 31,
+      "title": "Where is the station?",
+      "status": "planned"
+    },
+    {
+      "chapter": 32,
+      "series": 32,
+      "title": "Go straight ahead",
+      "status": "planned"
+    }
+  ],
+  "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
+  "cross_chapter_qa_status": "not_ready",
+  "next_action": "generate_and_qa_chapter_25_series_025",
+  "database_revision": "v9.0",
+  "generation_cadence": "hourly_at_minute_59",
+  "updated_at": "2026-09-06T06:56:42.000Z",
+  "last_completed_atomic_unit": null
+}

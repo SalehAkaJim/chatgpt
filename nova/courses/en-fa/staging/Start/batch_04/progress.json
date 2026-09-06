@@ -1,0 +1,28 @@
+{
+  "course": "en-fa",
+  "level": "Start",
+  "database_level_code": "ST",
+  "batch": 4,
+  "chapter_range": [
+    25,
+    32
+  ],
+  "series_range": [
+    25,
+    32
+  ],
+  "published": false,
+  "production_state_advanced": false,
+  "passed_chapters": [],
+  "failed_chapters": [],
+  "next_pending_chapter": 25,
+  "next_pending_series": 25,
+  "cross_chapter_qa": "not_ready",
+  "batch_artifact": "nova/courses/en-fa/content/Start/batch_04_chapters_25_32.sql",
+  "batch_publish_condition": "all chapters 25-32 PASS and cross-chapter QA PASS",
+  "status": "in_progress",
+  "canonical_database_revision": "v9.0",
+  "schema_changes_allowed": false,
+  "updated_at": "2026-09-06T06:56:42.000Z",
+  "last_completed_atomic_unit": null
+}

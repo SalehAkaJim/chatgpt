@@ -11,61 +11,61 @@
     17,
     24
   ],
-  "status": "in_progress",
-  "published": false,
+  "status": "complete",
+  "published": true,
   "chapters": [
     {
       "chapter": 17,
       "series": 17,
       "title": "Where is my key?",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 18,
       "series": 18,
       "title": "It's on the table",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 19,
       "series": 19,
       "title": "I have a small kitchen",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 20,
       "series": 20,
       "title": "There are two windows",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 21,
       "series": 21,
       "title": "I wake up at seven",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 22,
       "series": 22,
       "title": "I go to work",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 23,
       "series": 23,
       "title": "I study in the evening",
-      "status": "qa_passed_staged"
+      "status": "published"
     },
     {
       "chapter": 24,
       "series": 24,
       "title": "I like tea",
-      "status": "qa_passed_staged"
+      "status": "published"
     }
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
-  "cross_chapter_qa_status": "pending",
-  "next_action": "run_batch_03_cross_chapter_qa_and_publish",
+  "cross_chapter_qa_status": "PASS",
+  "next_action": "continue_with_batch_04_chapter_25_series_025",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
   "updated_at": "2026-09-06T06:56:42.000Z",
