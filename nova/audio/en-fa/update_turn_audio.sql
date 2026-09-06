@@ -423,7 +423,26 @@ INSERT INTO nova_turn_audio_updates (cefr_level,module_order,chapter_order,lesso
 ('ST',5,2,4,1,'Noah','character','f4781508b843c061637775f29521bf043b9b42fe651da74b9f35021806889e0f','nova/audio/turns/en-fa/ST/m05/c02/l04/t01-noah-5f57161c5314.mp3',1718),
 ('ST',5,2,4,2,'Mina','learner','c40c9fd3535211139d8df0568ae6515df025a65a1a57ec471fd5e6d1890a0f5f','nova/audio/turns/en-fa/ST/m05/c02/l04/t02-mina-198f7232aeb1.mp3',1533),
 ('ST',5,2,4,3,'Noah','character','2da1226fdd7cdfeb7492ac1a880d95542c46345fc1e82a19320d9ca2717dbccf','nova/audio/turns/en-fa/ST/m05/c02/l04/t03-noah-d2732e79cb04.mp3',650),
-('ST',5,2,4,4,'Mina','learner','6092f75e407a75dc9ceb7bc648cbd1b09d70ffaff6cebb6406474e2575d6b6c7','nova/audio/turns/en-fa/ST/m05/c02/l04/t04-mina-3d9027209d77.mp3',1022);
+('ST',5,2,4,4,'Mina','learner','6092f75e407a75dc9ceb7bc648cbd1b09d70ffaff6cebb6406474e2575d6b6c7','nova/audio/turns/en-fa/ST/m05/c02/l04/t04-mina-3d9027209d77.mp3',1022),
+('ST',5,3,1,1,'Noah','character','23c431e601e5ac27b191a10205818b3ccee8bdfe7bddd35e3939baa5bff742a6','nova/audio/turns/en-fa/ST/m05/c03/l01/t01-noah-3349c8aceac9.mp3',929),
+('ST',5,3,1,2,'Mina','learner','bf5ef5ca30647546d0facc0b5f962ccd472ad748d44d3b8d021ee48e9938c138','nova/audio/turns/en-fa/ST/m05/c03/l01/t02-mina-d84be4b60127.mp3',1486),
+('ST',5,3,1,3,'Noah','character','6f4d53b9f8dd3e39b39ae062549430e193d7bde1872f507c0d9b3da869d5da32','nova/audio/turns/en-fa/ST/m05/c03/l01/t03-noah-1541c5cfcbf1.mp3',650),
+('ST',5,3,1,4,'Mina','learner','5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da','nova/audio/turns/en-fa/ST/m05/c03/l01/t04-mina-cd996242cfcc.mp3',743),
+('ST',5,3,2,1,'Noah','character','bf5ef5ca30647546d0facc0b5f962ccd472ad748d44d3b8d021ee48e9938c138','nova/audio/turns/en-fa/ST/m05/c03/l02/t01-noah-89a6ee68d147.mp3',1486),
+('ST',5,3,2,2,'Mina','learner','c5d66f6c5e2be5033e2057c92c6a50e5a6857234896a854324937d568690fe19','nova/audio/turns/en-fa/ST/m05/c03/l02/t02-mina-e9cb407f8427.mp3',1718),
+('ST',5,3,2,3,'Noah','character','34b1a7c65603519906361fa63e77ab13c160e728f7cefb811ea9e7256b7bcea5','nova/audio/turns/en-fa/ST/m05/c03/l02/t03-noah-efceed66786d.mp3',1161),
+('ST',5,3,2,4,'Mina','learner','2da1226fdd7cdfeb7492ac1a880d95542c46345fc1e82a19320d9ca2717dbccf','nova/audio/turns/en-fa/ST/m05/c03/l02/t04-mina-51405dd365e3.mp3',975),
+('ST',5,3,2,5,'Noah','character','5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da','nova/audio/turns/en-fa/ST/m05/c03/l02/t05-noah-cc8ea9588d03.mp3',464),
+('ST',5,3,3,1,'Noah','character','36d655d395932f6fd2bc49ab84a42f503b423c89ad7f45a0917ed3b13382c53d','nova/audio/turns/en-fa/ST/m05/c03/l03/t01-noah-7e600993d43a.mp3',1347),
+('ST',5,3,3,2,'Mina','learner','d3a3f3366577ca17241256cc10a06f8a60df3501e107b1a555ee0473bcae5405','nova/audio/turns/en-fa/ST/m05/c03/l03/t02-mina-5ffc1ba99380.mp3',1950),
+('ST',5,3,3,3,'Noah','character','2da1226fdd7cdfeb7492ac1a880d95542c46345fc1e82a19320d9ca2717dbccf','nova/audio/turns/en-fa/ST/m05/c03/l03/t03-noah-254db879f924.mp3',650),
+('ST',5,3,3,4,'Mina','learner','9b366facfd92e49417411b5b909506b02a615d37d9d1de088a86137d2bbfbc71','nova/audio/turns/en-fa/ST/m05/c03/l03/t04-mina-95cb31a26bdc.mp3',1811),
+('ST',5,3,3,5,'Noah','character','6f4d53b9f8dd3e39b39ae062549430e193d7bde1872f507c0d9b3da869d5da32','nova/audio/turns/en-fa/ST/m05/c03/l03/t05-noah-2bf874554eee.mp3',650),
+('ST',5,3,3,6,'Mina','learner','5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da','nova/audio/turns/en-fa/ST/m05/c03/l03/t06-mina-cd996242cfcc.mp3',743),
+('ST',5,3,4,1,'Noah','character','d54292eaa72338ada9a2d31fb957ec7954f48d7610d2c1987a6f0135ac6ff8e7','nova/audio/turns/en-fa/ST/m05/c03/l04/t01-noah-52ac567d2f19.mp3',1440),
+('ST',5,3,4,2,'Mina','learner','6be2c0b450ef2daa38d76e9fd1d5bbbfa709573c1645b283454f24ab4ba5ae5c','nova/audio/turns/en-fa/ST/m05/c03/l04/t02-mina-6f329324a854.mp3',1811),
+('ST',5,3,4,3,'Noah','character','2da1226fdd7cdfeb7492ac1a880d95542c46345fc1e82a19320d9ca2717dbccf','nova/audio/turns/en-fa/ST/m05/c03/l04/t03-noah-fcfaa9f54e00.mp3',697),
+('ST',5,3,4,4,'Mina','learner','6092f75e407a75dc9ceb7bc648cbd1b09d70ffaff6cebb6406474e2575d6b6c7','nova/audio/turns/en-fa/ST/m05/c03/l04/t04-mina-3d9027209d77.mp3',1022);
 
 DROP PROCEDURE IF EXISTS apply_nova_turn_audio;
 DELIMITER $$
