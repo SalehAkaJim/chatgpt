@@ -5,8 +5,29 @@
   "last_completed_series": 0,
   "last_validated_series": 2,
   "last_audio_complete_series": 0,
-  "status": "audio_pending",
+  "status": "audio_blocked",
   "active_batch": 1,
-  "updated_at": "2026-09-06T10:06:24Z",
-  "errors": []
+  "updated_at": "2026-09-06T10:17:00Z",
+  "errors": [
+    {
+      "stage": "turn_audio",
+      "series": [
+        1,
+        2
+      ],
+      "workflow_run_id": 34026959319,
+      "error": "nova/tts/voice_map_de_fa.json has an unexpected model_id",
+      "retryable": true
+    },
+    {
+      "stage": "word_audio",
+      "series": [
+        1,
+        2
+      ],
+      "workflow_run_id": 34026959364,
+      "error": "Unsupported word voice config at nova/tts/word_voice_de_fa.json",
+      "retryable": true
+    }
+  ]
 }
