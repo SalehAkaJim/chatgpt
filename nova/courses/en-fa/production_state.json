@@ -5,8 +5,15 @@
   "last_completed_series": 1,
   "last_validated_series": 1,
   "last_audio_complete_series": 1,
-  "status": "ready",
+  "status": "blocked",
   "active_batch": 1,
-  "updated_at": "2026-09-06T11:35:00Z",
-  "errors": []
+  "updated_at": "2026-09-06T12:08:00Z",
+  "errors": [
+    {
+      "series": 2,
+      "gate": "turn_audio",
+      "run_id": 34032174194,
+      "message": "Unknown character variable v_c_daniel; character lookup must include the parser-compatible guarded name and gender predicate."
+    }
+  ]
 }

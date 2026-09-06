@@ -7,7 +7,7 @@
   "chapter": 2,
   "batch": 1,
   "status": "PASS",
-  "audio_status": "pending",
+  "audio_status": "blocked",
   "counts": {
     "lessons": 4,
     "turns": 38,
@@ -62,9 +62,9 @@
   },
   "evidence": {
     "validator": "PASS: python3 nova/validation/validate_content.py chapter.sql",
-    "mysql8": "pending Nova Content Quality",
-    "turn_audio": "pending",
-    "word_audio_lori": "pending",
+    "mysql8": "PASS: Nova Content Quality run 34032174193",
+    "turn_audio": "FAIL: unknown character variable v_c_daniel, run 34032174194",
+    "word_audio_lori": "PASS: 24/24 new entries, 0 failures, run 34032174183",
     "manual_content_review": "identity storyline, Persian cues, distractors, grammar and transfer reviewed against v2.1"
   }
 }
