@@ -4,9 +4,14 @@
   "course": "en-fa",
   "expected_next_series": 27,
   "last_successful_series": 26,
-  "lease": null,
+  "lease": {
+    "run_id": "en-fa-20260906T083030Z-s027",
+    "acquired_at": "2026-09-06T08:30:30.000Z",
+    "expires_at": "2026-09-06T09:20:30.000Z",
+    "source_head": "0e8e05192737dc927146e983b57ab39f2d4b472a"
+  },
   "lease_timeout_minutes": 50,
-  "state": "unlocked",
-  "updated_at": "2026-09-06T07:49:25.000Z",
+  "state": "locked",
+  "updated_at": "2026-09-06T08:30:30.000Z",
   "version": 1
 }
