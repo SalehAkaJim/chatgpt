@@ -7,7 +7,7 @@
     "en-fa"
   ],
   "chapters_per_course": 240,
-  "max_chapters_per_run": 1,
+  "max_chapters_per_run": 2,
   "lessons_per_chapter": 4,
   "cefr_plan": [
     {
@@ -155,13 +155,13 @@
     "all_eligible_word_audio_required": true,
     "audio_is_publication_gate": true,
     "mysql8_execution_required": true,
-    "qa_false_positive_stops_shared_contract_production": true
-    ,"semantic_gate_version": 2
-    ,"real_sentence_blank_required": true
-    ,"computed_transfer_novelty_required": true
-    ,"distinct_lesson_descriptions_required": true
-    ,"computed_word_teaching_coverage_required": true
-    ,"exact_turn_token_reconstruction_required": true
+    "qa_false_positive_stops_shared_contract_production": true,
+    "semantic_gate_version": 2,
+    "real_sentence_blank_required": true,
+    "computed_transfer_novelty_required": true,
+    "distinct_lesson_descriptions_required": true,
+    "computed_word_teaching_coverage_required": true,
+    "exact_turn_token_reconstruction_required": true
   },
   "sql": {
     "schema": "nova/database/schema_v9.sql",
@@ -172,5 +172,12 @@
     "transaction_required": true,
     "handler_count": 1,
     "mysql8_compile_gate": true
+  },
+  "repair_policy": {
+    "max_repair_cycles_per_run": 3,
+    "resume_same_series_next_run": true,
+    "pause_automation_on_failure": false,
+    "chapter_two_requires_chapter_one_all_gates_pass": true,
+    "advance_state_only_after_quality_mysql8_and_audio_pass": true
   }
 }

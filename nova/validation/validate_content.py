@@ -342,12 +342,41 @@ def validate_file(path: Path) -> list[str]:
     return []
 
 
+
+def validate_runtime_policy() -> list[str]:
+    """Keep the two-chapter self-healing policy from silently drifting."""
+    errors: list[str] = []
+    for course in ("de-fa", "en-fa"):
+        base = ROOT / "nova" / "courses" / course
+        run_control = json.loads((base / "run_control.json").read_text(encoding="utf-8"))
+        pipeline = json.loads((base / "pipeline_config.json").read_text(encoding="utf-8"))
+        if run_control.get("max_chapters_per_run") != 2:
+            errors.append(f"{course}: run_control must allow two chapters per run")
+        if pipeline.get("max_chapters_per_run") != 2 or pipeline.get("publish_batch_size") != 2:
+            errors.append(f"{course}: pipeline must use a two-chapter batch")
+        repair = run_control.get("repair_policy", {})
+        pipeline_repair = pipeline.get("repair_policy", {})
+        if run_control.get("on_failure") != "repair_same_series_without_pausing_automation":
+            errors.append(f"{course}: failure policy must repair the same series")
+        if repair.get("max_repair_cycles_per_run") != 3:
+            errors.append(f"{course}: repair cycle limit must be three")
+        if repair.get("resume_same_series_next_run") is not True:
+            errors.append(f"{course}: failed series must resume on the next run")
+        if repair.get("automation_must_remain_enabled") is not True:
+            errors.append(f"{course}: automation must remain enabled after content failure")
+        if pipeline.get("sequential_chapter_gate") is not True:
+            errors.append(f"{course}: chapter two must be gated by chapter one")
+        if pipeline_repair.get("pause_automation_on_failure") is not False:
+            errors.append(f"{course}: pipeline must not pause automation on failure")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("paths", nargs="*", type=Path)
     args = parser.parse_args()
     paths = args.paths or sorted(ROOT.glob(CHAPTER_GLOB))
-    errors = []
+    errors = validate_runtime_policy()
     paths = [path if path.is_absolute() else ROOT / path for path in paths]
     for path in paths:
         errors.extend(validate_file(path))

@@ -3,11 +3,18 @@
   "course": "en-fa",
   "contract": "nova/contracts/independent_course_v2.json",
   "curriculum": "nova/courses/en-fa/curriculum.json",
-  "max_chapters_per_run": 1,
+  "max_chapters_per_run": 2,
   "strict_sequential": true,
   "sql_schema": "v9",
   "qa_required": true,
   "audio_required": true,
   "writing_allowed": false,
-  "publish_batch_size": 1
+  "publish_batch_size": 2,
+  "sequential_chapter_gate": true,
+  "repair_policy": {
+    "max_repair_cycles_per_run": 3,
+    "resume_same_series_next_run": true,
+    "pause_automation_on_failure": false,
+    "advance_state_only_after_quality_mysql8_and_audio_pass": true
+  }
 }
