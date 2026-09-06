@@ -2,7 +2,7 @@
   "project": "Nova",
   "artifact": "nova/mysql/import_order_v9.json",
   "database_revision": "v9.0",
-  "generated_from_commit": "b979c86c146b8743020ad79eab03221da0a1e24c",
+  "generated_from_commit": "8692af396dbb7f69fe6ce79c068d17dd558a11b3",
   "status": "PASS",
   "checks": {
     "stage_ids_unique": true,
@@ -28,12 +28,18 @@
     "english_content_stages": 3
   },
   "ready_coverage": {
-    "de-fa": [1, 104],
-    "en-fa": [1, 24]
+    "de-fa": [
+      1,
+      104
+    ],
+    "en-fa": [
+      1,
+      24
+    ]
   },
   "errors": [],
   "warnings": [
     "German audio SQL currently includes staged Series 105 while published content ends at 104.",
-    "English audio SQL currently includes staged Series 025-026 while published content ends at 024."
+    "English audio SQL currently includes staged Series 025-028 while published content ends at 024."
   ]
 }

@@ -4,8 +4,8 @@
   "database_revision": "v9.0",
   "target_database": "nucertri_db_nova",
   "source_branch": "main",
-  "generated_from_commit": "b979c86c146b8743020ad79eab03221da0a1e24c",
-  "generated_at": "2026-09-06T08:20:24Z",
+  "generated_from_commit": "8692af396dbb7f69fe6ce79c068d17dd558a11b3",
+  "generated_at": "2026-09-06T09:18:29Z",
   "policy": {
     "source_of_truth": "GitHub main",
     "ready_list_contains_published_content_only": true,
@@ -43,9 +43,11 @@
       ],
       "qa_passed_but_unpublished_series": [
         25,
-        26
+        26,
+        27,
+        28
       ],
-      "next_pending_series": 27
+      "next_pending_series": 29
     }
   },
   "ready_stages": [
@@ -1791,25 +1793,29 @@
         105
       ],
       "path": "nova/staging/B1/batch_04/chapter_25_series_105/chapter.sql",
-      "git_blob_sha": "fe86d7493f3b09fe80198920ac6a10bc483f53a3",
+      "git_blob_sha": "a17c471a4e9e0009cc625c5b84489f092174030a",
       "reason": "Batch 04 (Series 105-112) is incomplete and unpublished."
     },
     {
-      "stage_id": "EN-0025-0026-STAGING",
+      "stage_id": "EN-0025-0028-STAGING",
       "course": "en-fa",
       "kind": "staged_content",
       "status": "do_not_run",
       "series_range": [
         25,
-        26
+        28
       ],
       "paths": [
         "nova/courses/en-fa/staging/Start/batch_04/chapter_25_series_025/chapter.sql",
-        "nova/courses/en-fa/staging/Start/batch_04/chapter_26_series_026/chapter.sql"
+        "nova/courses/en-fa/staging/Start/batch_04/chapter_26_series_026/chapter.sql",
+        "nova/courses/en-fa/staging/Start/batch_04/chapter_27_series_027/chapter.sql",
+        "nova/courses/en-fa/staging/Start/batch_04/chapter_28_series_028/chapter.sql"
       ],
       "git_blob_shas": [
         "559466995a3c767bf6fe539a9ef5afb361119e40",
-        "0bf1e2062e220870146e1cf00e74bf12160b7dd7"
+        "0bf1e2062e220870146e1cf00e74bf12160b7dd7",
+        "f174b61d2ffcee85ccfbf6c08bd9193f203bc40b",
+        "75fdc89442150b9a808e1a8d05d55a622be842e9"
       ],
       "reason": "Batch 04 (Series 025-032) is incomplete and unpublished."
     },
@@ -1819,7 +1825,7 @@
       "kind": "turn_audio_update",
       "status": "blocked",
       "path": "nova/audio/update_turn_audio.sql",
-      "git_blob_sha": "57c9da68f0a54da7d8573a422d5a6a3687b276e8",
+      "git_blob_sha": "9336e5955b90aa45b2e3cc008277aa9d3b24b31c",
       "audio_generated_through_series": 105,
       "published_content_through_series": 104,
       "reason": "Cumulative audio SQL includes staged Series through 105, but the latest published content ends at Series 104. Run only after the matching batch is published and this index marks the stage ready."
@@ -1841,10 +1847,10 @@
       "kind": "turn_audio_update",
       "status": "blocked",
       "path": "nova/audio/en-fa/update_turn_audio.sql",
-      "git_blob_sha": "b539bfda3feeab20741d107e97e4e2083f3a9c82",
-      "audio_generated_through_series": 26,
+      "git_blob_sha": "cf56c2e8a129fa6bb0650b267339db354a1a2a40",
+      "audio_generated_through_series": 28,
       "published_content_through_series": 24,
-      "reason": "Cumulative audio SQL includes staged Series through 026, but the latest published content ends at Series 024. Run only after the matching batch is published and this index marks the stage ready."
+      "reason": "Cumulative audio SQL includes staged Series through 028, but the latest published content ends at Series 024. Run only after the matching batch is published and this index marks the stage ready."
     },
     {
       "stage_id": "EN-AUDIO-WORD",
@@ -1852,10 +1858,10 @@
       "kind": "word_audio_update",
       "status": "blocked",
       "path": "nova/audio/en-fa/update_word_audio.sql",
-      "git_blob_sha": "5fa5e1e80df2ea69f5f7eab1139c602974db5487",
-      "audio_generated_through_series": 26,
+      "git_blob_sha": "14d60517bfcb022d4f5d4b965cbb9c181be0536c",
+      "audio_generated_through_series": 28,
       "published_content_through_series": 24,
-      "reason": "Cumulative audio SQL includes staged Series through 026, but the latest published content ends at Series 024. Run only after the matching batch is published and this index marks the stage ready."
+      "reason": "Cumulative audio SQL includes staged Series through 028, but the latest published content ends at Series 024. Run only after the matching batch is published and this index marks the stage ready."
     }
   ]
 }

@@ -31,7 +31,7 @@ MySQL error: متن کامل خطا
 
 ## ترتیب فعلی فایل‌های آماده
 
-این فهرست فقط محتوای **منتشرشده و آمادهٔ Import** را شامل می‌شود و به Commit `b979c86c146b8743020ad79eab03221da0a1e24c` از `main` مربوط است.
+این فهرست فقط محتوای **منتشرشده و آمادهٔ Import** را شامل می‌شود و به Commit `8692af396dbb7f69fe6ce79c068d17dd558a11b3` از `main` مربوط است.
 
 | ترتیب | Stage ID | مسیر دوره | Series | فایل |
 |---:|---|---|---:|---|
@@ -129,15 +129,15 @@ MySQL error: متن کامل خطا
 | Stage ID | وضعیت | فایل | علت |
 |---|---|---|---|
 | `DE-0105-STAGING` | do_not_run | [chapter.sql](../staging/B1/batch_04/chapter_25_series_105/chapter.sql) | Batch 04 (Series 105-112) is incomplete and unpublished. |
-| `EN-0025-0026-STAGING` | do_not_run | [chapter.sql](../courses/en-fa/staging/Start/batch_04/chapter_25_series_025/chapter.sql)<br>[chapter.sql](../courses/en-fa/staging/Start/batch_04/chapter_26_series_026/chapter.sql) | Batch 04 (Series 025-032) is incomplete and unpublished. |
+| `EN-0025-0028-STAGING` | do_not_run | [chapter.sql](../courses/en-fa/staging/Start/batch_04/chapter_25_series_025/chapter.sql)<br>[chapter.sql](../courses/en-fa/staging/Start/batch_04/chapter_26_series_026/chapter.sql)<br>[chapter.sql](../courses/en-fa/staging/Start/batch_04/chapter_27_series_027/chapter.sql)<br>[chapter.sql](../courses/en-fa/staging/Start/batch_04/chapter_28_series_028/chapter.sql) | Batch 04 (Series 025-032) is incomplete and unpublished. |
 | `DE-AUDIO-TURN` | blocked | [update_turn_audio.sql](../audio/update_turn_audio.sql) | Cumulative audio SQL includes staged Series through 105, but the latest published content ends at Series 104. Run only after the matching batch is published and this index marks the stage ready. |
 | `DE-AUDIO-WORD` | blocked | [update_word_audio.sql](../audio/update_word_audio.sql) | Cumulative audio SQL includes staged Series through 105, but the latest published content ends at Series 104. Run only after the matching batch is published and this index marks the stage ready. |
-| `EN-AUDIO-TURN` | blocked | [update_turn_audio.sql](../audio/en-fa/update_turn_audio.sql) | Cumulative audio SQL includes staged Series through 026, but the latest published content ends at Series 024. Run only after the matching batch is published and this index marks the stage ready. |
-| `EN-AUDIO-WORD` | blocked | [update_word_audio.sql](../audio/en-fa/update_word_audio.sql) | Cumulative audio SQL includes staged Series through 026, but the latest published content ends at Series 024. Run only after the matching batch is published and this index marks the stage ready. |
+| `EN-AUDIO-TURN` | blocked | [update_turn_audio.sql](../audio/en-fa/update_turn_audio.sql) | Cumulative audio SQL includes staged Series through 028, but the latest published content ends at Series 024. Run only after the matching batch is published and this index marks the stage ready. |
+| `EN-AUDIO-WORD` | blocked | [update_word_audio.sql](../audio/en-fa/update_word_audio.sql) | Cumulative audio SQL includes staged Series through 028, but the latest published content ends at Series 024. Run only after the matching batch is published and this index marks the stage ready. |
 
 ## پوشش فعلی
 
 - آلمانی: محتوای منتشرشدهٔ Series `001–104`
 - انگلیسی: محتوای منتشرشدهٔ Series `001–024`
-- آلمانی Series `105` و انگلیسی Series `025–026` QA PASS هستند، اما چون Batchهایشان کامل نشده، عمداً در صف اجرایی نیستند.
+- آلمانی Series `105` و انگلیسی Series `025–028` QA PASS هستند، اما چون Batchهایشان کامل نشده، عمداً در صف اجرایی نیستند.
 - SQLهای صوتی تجمعی‌اند و در حال حاضر دادهٔ staged را هم پوشش می‌دهند؛ بنابراین تا انتشار Batch متناظر در حالت `blocked` می‌مانند.
