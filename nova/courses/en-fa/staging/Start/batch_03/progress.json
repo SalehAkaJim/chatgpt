@@ -12,13 +12,13 @@
   "database_level_code": "ST",
   "failed_chapters": [],
   "last_completed_atomic_unit": {
-    "chapter": 22,
-    "series": 22,
+    "chapter": 23,
+    "series": 23,
     "status": "PASS"
   },
   "level": "Start",
-  "next_pending_chapter": 23,
-  "next_pending_series": 23,
+  "next_pending_chapter": 24,
+  "next_pending_series": 24,
   "passed_chapters": [
     {
       "chapter": 17,
@@ -79,6 +79,16 @@
       "database_revision": "v9.0",
       "sql_sha256": "012fdbdaab919f0eeb086f6df48d3bba720bd9c83e8a3f064389e9b99b341d95",
       "source_head": "e8cc28b0c1e0d2f1029bc86ec019969e297d1606"
+    },
+    {
+      "chapter": 23,
+      "series": 23,
+      "status": "PASS",
+      "sql": "nova/courses/en-fa/staging/Start/batch_03/chapter_23_series_023/chapter.sql",
+      "qa": "nova/courses/en-fa/staging/Start/batch_03/chapter_23_series_023/qa.json",
+      "database_revision": "v9.0",
+      "sql_sha256": "5c3c0308a4eb94084d0b2bed26478d6f84d70ee1ece08eea525e72b92bc0fc7a",
+      "source_head": "e2c875aa331ae1f97b14cc763c28a985f8aa25d6"
     }
   ],
   "production_state_advanced": false,
@@ -89,5 +99,5 @@
     24
   ],
   "status": "in_progress",
-  "updated_at": "2026-09-06T04:36:41.000Z"
+  "updated_at": "2026-09-06T05:33:00.000Z"
 }

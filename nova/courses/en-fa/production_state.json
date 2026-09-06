@@ -14,7 +14,7 @@
     "execution_mode": "strictly_sequential",
     "max_chapters_per_run": 2,
     "minute": 59,
-    "next_series": 23,
+    "next_series": 24,
     "run_control": "nova/courses/en-fa/run_control.json",
     "stop_remaining_run_on_failure": true
   },
@@ -27,14 +27,14 @@
       24
     ],
     "database_level_code": "ST",
-    "last_qa_passed_chapter": 22,
-    "last_qa_passed_series": 22,
+    "last_qa_passed_chapter": 23,
+    "last_qa_passed_series": 23,
     "level": "Start",
     "module": 5,
-    "pending_chapter": 23,
-    "pending_series": 23,
+    "pending_chapter": 24,
+    "pending_series": 24,
     "phase": "Start_content_generation",
-    "status": "series_022_qa_passed_staged"
+    "status": "series_023_qa_passed_staged"
   },
   "curriculum": "nova/plans/en_fa_curriculum_master_plan_v9.json",
   "curriculum_qa": "nova/plans/en_fa_curriculum_master_plan_v9_qa.json",
@@ -75,5 +75,5 @@
   "schema_version": "v9",
   "state_scope": "en-fa-exclusive",
   "status": "generating_concurrent",
-  "updated_at": "2026-09-06T04:36:41.000Z"
+  "updated_at": "2026-09-06T05:33:00.000Z"
 }
