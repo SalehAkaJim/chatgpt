@@ -6,19 +6,51 @@
   "output_format": "mp3_44100_64",
   "voice_archetypes": {
     "learner_female": {
-      "preferred_ages": ["young", "young adult", "middle aged"],
-      "use_cases": ["conversational", "narration"],
-      "traits": ["calm", "clear", "natural"]
+      "preferred_ages": [
+        "young",
+        "young adult",
+        "middle aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "narration"
+      ],
+      "traits": [
+        "calm",
+        "clear",
+        "natural"
+      ]
     },
     "local_friend_female": {
-      "preferred_ages": ["young", "young adult", "middle aged"],
-      "use_cases": ["conversational", "narration"],
-      "traits": ["warm", "clear", "friendly"]
+      "preferred_ages": [
+        "young",
+        "young adult",
+        "middle aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "narration"
+      ],
+      "traits": [
+        "warm",
+        "clear",
+        "friendly"
+      ]
     },
     "local_driver_male": {
-      "preferred_ages": ["young adult", "middle aged"],
-      "use_cases": ["conversational", "narration"],
-      "traits": ["helpful", "clear", "grounded"]
+      "preferred_ages": [
+        "young adult",
+        "middle aged"
+      ],
+      "use_cases": [
+        "conversational",
+        "narration"
+      ],
+      "traits": [
+        "helpful",
+        "clear",
+        "grounded"
+      ]
     }
   },
   "characters": [
@@ -30,12 +62,285 @@
       "origin_country": "Iran",
       "profile_source": "chapter.sql",
       "voice_archetype": "learner_female",
-      "voice_id": null,
-      "voice_name": null,
-      "source_voice_id": null,
-      "source_metadata": null,
-      "selection": null,
-      "assigned_at": null
+      "voice_id": "9w21nMuk8CWXIME31V1S",
+      "voice_name": "Simran - Young, Friendly and calm",
+      "source_voice_id": "9w21nMuk8CWXIME31V1S",
+      "source_metadata": {
+        "name": "Simran - Young, Friendly and calm",
+        "gender": "female",
+        "language": "hi",
+        "verified_languages": [
+          {
+            "language": "hi",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/ed9b05e6324c457685490352e9a1ec90/voices/9w21nMuk8CWXIME31V1S/9BloRka1jfhMYbjZl65e.mp3"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_v2_5_flash",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/ed9b05e6324c457685490352e9a1ec90/voices/9w21nMuk8CWXIME31V1S/9BloRka1jfhMYbjZl65e.mp3"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/ed9b05e6324c457685490352e9a1ec90/voices/9w21nMuk8CWXIME31V1S/9BloRka1jfhMYbjZl65e.mp3"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/ed9b05e6324c457685490352e9a1ec90/voices/9w21nMuk8CWXIME31V1S/9BloRka1jfhMYbjZl65e.mp3"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_multilingual_sts_v2",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/ed9b05e6324c457685490352e9a1ec90/voices/9w21nMuk8CWXIME31V1S/9BloRka1jfhMYbjZl65e.mp3"
+          },
+          {
+            "language": "ro",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ro-standard",
+            "locale": "ro-RO",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ro/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=6dfbc0ca0abe5ee9a5ec7dd66ecc7dfdcda85f2db3914a80640117eb9dda4e8ef21d196debec41aa66f5899f917494512b587ad82bb74a372c6fdd46a4d07194f9c7228d3229398ca8cfa1839150f825a6b2fc4cbb8fa19bd34bee6a282b9973dff92100e949c6b8c78e48e240379dae94d06c98e5fe2c77ddbd359dbd26d91f769d03d5d63660d4b6f95e711b1bf1ef8a225ea2d25cc720f24283d666f8842e9f07984d6aa008d95bed6dd497df6847b3736750a8bffa0b8f8dc4b8ec92a4236e5d981c2226e8deaed96c7b205fb8e64be7b308df8a17f96dc3099d7781efd186c314001876e2c0ef2c64cc814c78895c5830e9337ee12d630c195f84c72d82"
+          },
+          {
+            "language": "hu",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "hu-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/hu/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T024051Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=3e4c62916908e695e65a5a4f8bb6b9937cf2d3da29a9410f47958c5be41bc088a5f325d1d3fe58e0c058e0886493bb5be7e644c1a6c14493af51508617ebb5ccdbe1d5d9caa72893b1f29f2d843071d01ba666d1606209f4342ff1a60fb14db8750d09027c72ca61dad5aaea97ff209eb28358cdc2f23cbc9092e37bcef04aa8bc4469890741f25ae36f657ee4456675b205363d8ee8ad35b62ddf74be11854cf2fa58cc215a25c6b94fa6bc0dd1de14ed1a540fe796050fb9dedda06bceeb886048aa8ce2e6e11f5c3412bf0aabdb1f4b9678effe7642aae9e624489f3bfd41b6b6b8ac3fb5b9d5107164988036b3b3d9c8cd4f021ff081889e4d18fa2c0851"
+          },
+          {
+            "language": "fr",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "fr-quebec",
+            "locale": "fr-FR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/fr/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=888d8adda1cd0b0283e26d152fee7d6e8fae1bd079005a2d02b1a750804c6184a0e44f42fac40c27e76ed233b65e214da49029ee203e80296e31af4bdc3a814fd2ce75cd7c6019fb427e59164c02574e43fe0e479fbeea6934bfa93bb6915909d97a9f9cfc0a8c239022d50c025e1329861b14b2ce98a5db3f9c017a9f0c3ebd7c5f4bfef75e5e227bf2d3c7e9f93c305123975537c6e30bdce963ec658e00092d0aa774a15dea55ffe3b2120e1d5862c4bbb9114a9c2c8ab44060c5f9a5d8f7923e7220b192d1db07953033df642b604fb4bcb2be9aca995b5bf956bcab13790902e5eca2b72cd810378916ebab44eb8979be24caa6afdbc8705d921e2e773e"
+          },
+          {
+            "language": "hr",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "hr-zagreb",
+            "locale": "hr-HR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/hr/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=9196cf2c7c17e009cf5cf8d6ecb27717c2d44bc43e2ec21ddc2ec3f1c06130afca444acabdc092f186cff8ac7debd14eae9dca1ffa34dea89fafbd17eeaa3ced1275361eccfabcc90d4b65609d75f1e603dc8a0237e56b3402d83b9245f3b9e999e27d4175d37dd027af915fdaf25c7c2416fa50fbb2a4fadec67297baba11ffc8197fa100ad7a8bef4c461689e3a711b87191fea141187aa0456d8166f5029f7595de7ce7898d527feddfe58c0aceb468dc134d972cdb286e62d5f95d3e69d9343920288df5f34630ff4045f595f49e9ea180138e657cd0bfa0431c431fbd4d77f6df6109f7429056e89f5a77465863e9180e4ab455268d971e6e14e1827a3c"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "no-sørlandsk",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/no/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=7d1776513d4dba03eeaa162d39162d1b71b5fc99237fc6fec4ce6ce66ddf67f2164543b23eb43ed6624bca7e06d0a5d92cb82075282237c0fc02ab64ca1791511296592c1c8846099f1803f17bdd18273ba4f1f0ea35a39f76bbbe28b0c87d1423bc477aaf68a5c3198f298d3d24896cd524b0856f450a849a8ca2962b698b80eb103cebe8de4a61e69d6f96ad0ab16b1b7559870c1ed71adc2d001045dcc5809461196fdfde2fa85fdee94ce704c63d9548d35e292ef4375b8531736b103eee5282cb920444859fad5a1bb6a8601d44f4d05fc73fe3b39620f626bde30bb32f6b497261dcdcd4f86423a7b8deaf1f2e3c6451b996b6137a9fa22c0e6f9dc4f0"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "no-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/no/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055118Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=8c07caca4293db327baea837671df952b72e150573e983108e9194a4662ca62d1428bffb18172167f2555173ddfd964a6b4fbce8d545aaf3b53e173779f0c9d8a2796e4c64f65301632490483eaf1b1139923f0efbb8a911971b83ed77eb05ad2ffd92a1e10e7d49af3a7c949c18dce925078b087157b98a432a80595edd4b0f33f034533c54c473a8c5ceed0c2c96fff9f5962db90a420b7cfd0d00e0eaba93dbec074e69d6efd0b99ed4a7625d241d15843bfe09561249ca869fa6a4d22c84761bbfbfd8c72a2d621a31dbc215721e66ce6b2087fcd554a715c0ac50d51656161c4cc34b7f12d2af2dccfb5c6502ff9f3bf290bd677a75ca2681a364aa60b6"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "no-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/no/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=a9bb40c9580ff0ed1b31510418fa0e14718e993cdbf0d701480e02656afff86e3c80b70388f45c69e6b006dbb6f5c296e5729e44a082bb4d86a720f94ba4c37246d0f19adc06c96b933eb359e512a40c2bcc31901ea63074b10b8d5ea7e2237d3f9275660be3e8331655766f2bd3fc7757acbc5467fb9664633962c7fcee53f6e862ddcbd97ac0b3b4cd0268df04786251bc5f3d1789d4ed81b31e742f2e19a5a925d0979706f751f1249dd193e24283a3ab14938bcaaeb1f13d871104e6a6aa328aff82e8623a48b163ec53634959883c9c618e540d1430a7f49f55db3289814ac256a1ff692f621f3fe4985a5e70c3edebc96f1f9649f900b3e21b7ff6e7b5"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "ms-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ms/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=ade2722615b53ccb71e78e457bc0914012196a99e60a19c07ee821b33729613456055b02d857a80e33839fa066a50a3d2ec822b6c086adc26d20d63bcfd03f648ba1d2d64309c091160cbe38cc671322b323e784afd3140bc387cbb40195d6607065dd3fad0f3a66007012b517af525196efacb58794f3f1c5d944d995649be44629287088a566969a70beb20d1f9b97e5bb6b905053d346d1b405a88ba234e84d123cb13de7da55b4f35851cfa94870a557eacf5fa0ffcf4f2a19135e82bcadd4aabdcb66513448248e25f1c4f9296edfa5e86190c3cdcbcbc15969e62444e69e94371710f3ade76e982a51e0914a9d17fcf9a2a31082c2d56853e93f9af9d3"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ms-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ms/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=1a1617211eba0090b64c8589c29900dc873c942f71ee70727301e3f643255d20bfc70ee8e6c703bc49e408acdd320e787668e74eb80cecb2a844fcd4b80b9c83c0b30c0780b9d0c28f487a90b56d717b55238baac1a4e2e83e1a8f956e350a05d26b39b13fa14ff977afcdf7b902afea792b133b8ab573e975ad468ff2a5b4c36ca41913ce559f1f6f0c56d124399af0743c6eb282c864058a3ee76188bb79954c79d1da17e04bf05d30c9dfa7256bc3e2a3eb63d9ea9c782f904e5135bea9603e5c4354891728c306c45174fce02de37a3ea203896ab0645b7a7682726c6d393c5365540a070549b5afc573c5ad8a6b252ea5a5347002b1e8731ff2f6bb0ac3"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ms-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ms/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T032015Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=d47c86765c5052e85ab3f235d67508db9353e172ca0a73029ca8f6981bfc6a6092f3ba679724af2b71a3c12ab6059ecf9c4bbc3175b8885731c1092efc369210352d832958820480cc8ab28589e86ed617039ece00187040fcaf1b1de13615abdde0434b9b38e971c080eba7d56b080e0b600fdb0fc042210267bae7b9970d723e74775a9034c31b552741769659c1870271ae1f38014d6025ff5accd339ab589ecc7626a343e283ce02e9b2508df76acaaad35a01df9a90d3c71a35e988fb53f3d37cc3d5ab15387fc832ded464474681b08f518918e38d1b1119d9c598bd01d83088b12ce7df389539c20f6940ae42bdf3af2adda4947e98dd6be3b471ceb8"
+          },
+          {
+            "language": "ru",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ru-standard",
+            "locale": "ru-RU",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ru/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054908Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=8ab106b81acefd75e7207fa448bd11b14519b690d36575962481bb7f176f420dcc0963610d7fe6f503e427bcbaf39e2310477807396cd5f7e5e4bdc0dbd7ea306d7f8b0051613d862b0ecd1e1c84565c809f610ebc66a9759810dadf04edb374a13334d4c770b9fbc1558d65bd537c4a8e46153400e112f2d4fa163c2da47089fec3ab9d64537d56b97dcaf3cf7c814534328865894a48b1d5b2bd5a2dd57785ca73af403e760879b57852a6308a01824ea1cf532507494836b890b6bbadc8705620d01803819a8197d469fa422be6042349384b0fe92c755bb7b11dbb86aa2f7879d512ed82c2b36732eaf0eec30a4e74c78efa4e8cb9eddabacc2ac9091fe2"
+          },
+          {
+            "language": "vi",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "vi-northern",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/vi/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T032015Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=131da252c13b36088ac287b22984cb57797a6f83c78ef7cc1fee53c7627ddfbbb60a39a6e7becc4ee6f2492a6f83581688ad1be7a7ff1a573ddcd9aa325360565803e0efdfd4f9196f7a815e8739839e87181cef603c3613893115542f38a5a9f265c56d5e70809b2d3a7422f58cce87004d0452c719cd21f9bfcbee5d79858daf4a5c0acf67fd732393b7d0f56f12b8db1d5c3fd6b6cc1494fca7854b1196a170df60a46effed5fa142fa0366bce708ad177ae13236969ae9c89fc41627bba91208c89dc77da61fbcba51f8214d5ab64b74966cac353ecca0e8921739272af32abc98ad9b395b4cf798ef190d80a5edc6a4a90e80a02c784ddbcfeb4a97747b"
+          },
+          {
+            "language": "pl",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "pl-standard",
+            "locale": "pl-PL",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/pl/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T024051Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=66e5ff5ed09896685d1d777d16e2928405e7516990bb297071c5dee6eaa3d7ef379d1d4af153592e954cc32cbc509113d6405b7e9ed16113d856e420917430b3290447642a2097abd8550507b17e4e8a1e815a26b92a734ded1c8ea5cf8697837fbfdf6c7881e6b036c4d521bc6101c755504940c304f4f86b04380d8d4522e86cd8c3e42253d42980d8441f1264248826ab12d4883665dfd964ca06dfdce72856dc477d23b417bbc5fd49f5142d9ab9965504604fde476c3b4dce51cef2259f069b4b4aebcff6d85f360c5c45efe4bc976ad0eb574bab807d775cc67316e6779ead65134395525dc711c0e619178acf77b6e11e0342a1b84dca50c4c12dc612"
+          },
+          {
+            "language": "pl",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "pl-standard",
+            "locale": "pl-PL",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/pl/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055118Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=047ec6bae8c3f3c30387f45aafa74aa24aff289323fa81e0cd17d08e99cbdf521b676a56bc453873601ab95d60103be6f5b6698fa441cd4d296b8e2cfc7ff35dd983db8c0f5a853f3f30971ac71b687214337752f970706589a8dbc90ae4234c734cf9846642f491948507a8bd7289c89746d4a9d408f5924ac120e7f051b75f40fbafc881085ceadc6bb03cecb408233a87d6378d5d76a23c36e4e45ebd7200fdc073bfc40a44f3cc9d9989b902f237d6b040ac066cef9801816c08754672ffa599ed5d79abd15d32f472689b46a23a5b4b506f0d53d76d3d691a74aaa397b1480e9318d3a2c60cce64e7e316a6b248dcd0ac8e764dabbaef1ce4fe03c3d0e4"
+          },
+          {
+            "language": "ar",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "ar-modern-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ar/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T024051Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=8d8a5d0e8d0d604cd2bba2798449b3774fb6afe339c4431d1a62abfb6d23e6a46ac00703e88cf1f2d3241744c2a064522e4f05400c78be0bfd745206c5119c5d67ad7317e6bf25a3f4562c0a5e7e448d3600e36e4781ec4a47787995c4d84ad6c5c3fca1400d1b81570184080f72ad9b81063adabcb293634fb8d7e6236caffbc3e618906c9efc7e08bcaf8417ff179467d0046b437e3bb3181cd01b009766cb1e947a4c834b6b9db7419299c0b9b048d0227711381ade440a8788eb90555044933f578191a1d430a80c7ac014735314da9a77a733e1258071bf619d95441bd0dcbf5c491cd25d1b0c2f525d3d2ff53eae6316a1b943a1b33ec7b9199847065f"
+          },
+          {
+            "language": "ar",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ar-modern-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ar/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T032015Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=13d4d3e3a516a5d03ef58e99a4bf9344cf22245987fcfb1898a02671fe9579d799e8ecfb8bd0889f24264020499ee37887b637f902c4aa323663199fc3ea97c2a0756c923fed64f430d4b6e9219cb064b5487af1abc935bbc4c66758e28d0d46d407635ee643c46276df08524035a93519a10f18cc472803a45ed22ff4c4df0185285f6d1c0346f4ccf5c04fff8cc9448047ab4f6dcefbd54607f7c5023eca808aae93e97ef8ae83d11f58396a8a989fa7c234a10b5bd2620ba13f4064f709fdc26afc0e94fec3cce1627fe7dac43472fb93c694d2223cacf0c5672aa48feb8e2ba2788a0dadb231537e3f3e9056a49c3d6d19393a43eeb63dc474736ac396b2"
+          },
+          {
+            "language": "ar",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ar-modern-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ar/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=2419a3945a60f3feea1da29405ad5272ad73564dea2cb34500653f39234fa5e745533566827f4d90074aeae374e8a599060f137be4cb84b07968b91636e6d516bc6883c802fae444129023b161abb705bd199fdff372062d18b52dd58918c7c0e2e22c21eef540ca87aba6ae439103eb123c44dc9db4b6adf1e2501bae06f5c37dacec315502088a52dfd589437dc3223d2e22271bd5b626c2c6639efd31bc91662ea9c926368edc21336e73c00ebffa2f84f6cb3ed44f582fc868086af9e7a3e7ab0811e2a537c0ff29b24911e4e090c276fbee852ac852215de6df3f1413540d6a3b553fee40edca8e88ae8da20b8975bef028140bc105f5c878322a7693e1"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/tr/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=720ed9dca8eea68d397647b97760013f91d108fb8fa982e60110ffa2ed15e42cb1bde39d83c32c09e721804460062fec4fbeb0bd7bd5ecfd6644bc5504bf0062999e20ef7202df707ed080a10a5a2f9d513788fcb769ee251943b2107b5097dcd2abf1b4b69028ed209452e127caafc5070704694301b472c909c41b7858c4660e89c33253b957c869bf175e5027dd91a43e99a2b480870787e7b2b5edb165eacf22c8838f436c591955f4c922ec120747f83f5ad7002dfe0ff124eccf9bc4c1853d52af737a130b8352c7d96cb8c099375e25edba23d0bbc903226ee4328ccfde36f64d6dac50f0086eb50237a1f1f215ec770d6f0ab7c09854849385bc8319"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/tr/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=6a97495edf55bf975c65cca8e6728db827ed923e1eaab0c254d324a4955ebbf634c1c1c1f981b7e5e50affe4b8bf49f8027717fbd97a434141a7a7780f6d2010a47f77cadae056448c96a038a6e7766c076a2d50221e3159ac093d437b1293580b43587c065c15724383412dca0cdf49d45af7f20f4376fde0d15b50f8475218f93d96db0b42a9b8dd4d31245202dbb76c525f408886fca37e51108dec1302e78b2a0b6e2a0c9e0b6ce2e2579aece4fa6e7193b7fe2997ddc6d7c354683bf4855a59e8ce5a6ac6a8027a867143b0991ecf10fcbda7af5f2d306636227f46d0172ee49e599603efda87ae645808140871430d085527543aecb733e20a075b8f89"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/tr/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055303Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=3767242c72c6dbd3f5a1317faa83298c287e4a338cecf8dc78d4c9bd61091c9b44d35dca6e0c436e31c80328db9f1df98ccfec1df92cacf4c6625fdbc31e760fdba333bdfbef63e3db117e3bd6e8cc34a2f8a91872e27419ae81dd3b89a6dfc34ea681a698674841b79368bde2b9160b598abc6c97a17a40226bb249a7f96e906f224d639be0b919c729947f6b58b56ab528321ecaa2b8c096c7354e5f2f9456092333c7f114fc2c254133d49491744bc0266afa042f71bd264975cc15898082288df55de4564b75247288a44b247a5fad1d917f84bf7658f4518dc5a3b59b38a0f5d0d466a874948f610ba1ec57ce3f8bec49db39043085b42e08a5cc97c833"
+          },
+          {
+            "language": "uk",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "uk-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/uk/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4b8cd0bc31efbf130f6181a0b19a2b6b60b6e316604c228a3a89980776e7415c73f68e735f59a4a61e19b18cae8bcce64677c13f219029e5d8008e1967c5e951f041d30bec6912b5251ed6d417b22db475c7877c47c1a7d6a1407bea18faf08df1c65775de2bf7929e145b0c954caadb600a1705c9ef1fcb0a22f0c6fac798a7e63370a586fd881301f1a10dccf8d12e406eab4a5352c48f2b99c2742394ef827f6678b7f516264981438607b17d565f7048ab2e8aaf0401eb52496fd60117be8671f7c6510fa7161a998ca891c8838b652b438fa0911e16037ef1bad930afab3d98575814f8064dbe990bb85be5acc9b03f370cc6ce6d5e415c84c9a07a83c4"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "other",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/es/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T032015Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=b54663f6b829824aa239f423bdce0146110670aad410082afebebc98fcd332a393502dd962acee9b53c39064c7c6a92dc4d7498c86e6fbf832ef61867614ac5373909865c8041f9fff5a6a20b8f901ecea847fecf9bd9a609a4a3aedbca5340bcb1e2668e751963701154e45e82e649aab7560a45790c597b152b34d24fa16586a8ab0ce5df67d8635365558231fe965ac4cc2cda0117038478ae1f3d741172cb7a171f6b896137b83b00019278d86aef1d29401bd50ba7356295af257e07386500ddd12b0c129f55272f3a7a32ecb1c64087023d945ee1a27555b05f59e451f8143a2559b003e59a175abc86cb7cd6bbc72408d53de69edf67dc907b439226b"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "other",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/es/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=87aef93c6f07615ce60f51805e5f54ec08fd43c1a18360a93fc84c1fa6cd83fbf828eab2025dc530621b8aefda2c5a17580415822de38dc2a5cfa9b495af5a042b840ecd5a9ac9428ad7a179f95a74867e5ef3bf2d71a18cffbe116f4dd00c73c0e7ec3913f963e0f49dd5376e33b32419932bf9c6e2364e7104e515682bb5da8a184c364921923d0f3fb2a0f094fe5564248b8988e7d04a0208bdeba1ba70ca124759ac4abdf639a4daf6e62c6e645d9f5ba24fec95e41f61639f1a8b16caa829b9f3cb1975d2412f55bf2590c1839ebfbf3d3e86f719b076e7378c56acfbe37ef2d688a8a1c342cd2739905ca7e757fb0745473b8743340cb7545a5a5a08af"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "other",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/es/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T024051Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=b19643ed4b47f06de59af6e7ba7744624ab071cd1c08e46de5efd6ebfe83e8964cbd0492e6f736486cb0f650fd87fd4b8fbc8945e5a699f3e1644df88aa835586015ced73ce43337dd93bbf2f76edfb51722848abbae74fba237d1beecaff8ea0e8892816735bd2a0c6e5fc6989a779aac493103b104a93da90d236a84af3b4b0c957cecb11f794a96fc6484ad2652c86f4efcb5e21c927e7fc05208e1f970586f7469b57153ad4d441afec643a8e093d4e3040c54df7c755d47b6a68ebe56e505fa083b3bbe45c34f252ab37cafbde030a7cdc7526413f8db2fd7f28efd4b6c97a1155e99f1d84284fd520e7aff4d83cb7ab6b0781719254b62a022c8e51c07"
+          },
+          {
+            "language": "ko",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ko-standard",
+            "locale": "ko-KR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ko/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055118Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=55ba9e59d3d5cde857c83425f558a741f04e73c3dfa8a6f6c7ca972a9c8ab38c7db07caece1b908a80816379c61a768cc90a1776fffb32e22af682791c76d91f6a3531b9233121a46b82dc526dcc4316be04b354763733fca97465beb65787ee7f9002e1db3789eaa2c77cf0d2ede537bc547018a75368d52b05b6d660433c2710d461b58e5364fcd030d08a093dd460c84f6352a26089b3abc7c70e84cb37942b46bff10f8064dcb8dd0f08fd1ffe151d184c21d6bcb86071897253497dd3124b1e756cf668e303d7ded16829ff9bc430fa4c8c7e0397b273e4102cb6096dad1320612f60f996b2e545f04ef2ec1a9ed0fe1381d70b3762ce83a6ff135527d5"
+          },
+          {
+            "language": "ko",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ko-standard",
+            "locale": "ko-KR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/ko/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=d6763895308841cba9c50ef9ee0576426374baf9586493aae3493e26152573511308828edb67d9693595344b34cd1369fdb164106709d5c4d3260576ab5e7dfae3316a6081106f790306ecdd804a9524ee3b045ad1d62c8a57a388d687b84a3b70607931799208ab8c82913a38203f8465d778689d5520ef4fb2732177c76d970163856b9752429b9985aebba1638778e46cf363a9602544549935b0b85cd2013f1979bb0e8e5520a7113bbd511f1689a1fdf8d85a0a5088d2b359bb22a0fc27410a53361175dc14beade6e8acbc4238fa5a17d15e2d93ee3f30e67e2327d57976e7e887c750bd3941e6cbfb1488a037942b5132258464fe6ecf651081754ed5"
+          },
+          {
+            "language": "de",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "de-standard",
+            "locale": "de-DE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/de/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T032015Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=d464d9037784541e0b1f5d105a8f07de466d89d22620ffed88814fdc359c7f1e8c65743c3dcbfff97907d2b3f069aeaf7e48caf2c385ebddadf5efecdadc1ed8816e0e9a78f1ee091b73cf9a73fea04d361ed024ed22e4336e5a3fe7d5dbf298db241cfb5146d1506c2f7bdd93ff6a01078df1a46f0ee41732cb80d82bb31fa5fc953b5b6af3bbfaf87d523ab107489efa18fa74c5fb5777f40dee6c3ba2a1fbeea2a0bf75c085b46daddcf89fe014e4dfa536c13954a81346aeef08999d4b64727467f0360761f7c386c3e61c1dbe9bc1c98f9e641e8a8f33e57936d837ad9b4d7704f132994c6767b7a58e51ca24d7af7933d1bc9675378165359d0f39c3f3"
+          },
+          {
+            "language": "de",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "de-standard",
+            "locale": "de-DE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/de/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T032015Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=b891170954d73f4870cb11bb49d25d24263396ffc8bbbdd0b6ff0c014a56dd99a4020a5674c7142ddf6febc4cbd4fd1b77c9f898d7277e1a4a706eaa4719642bef3990847ff3d612c277444c01a43d9b6c7b511753d9e6b56fece7c8ae4b4dfeb3a7781f5bc8c2abd6d4ec811e4cfa9f833187f812e651b0e2d195f55ec0426c6765328f53d2e7f29acae82b35c5c9009c74054384b6ccf616987ea0b96fc81be96e36d42e1e7ac158eecbcc1e81061f580a58fd89fc664f930c53cf50d846bd228f00c3716219a2f4679a7609637427ab407062579048d897e3c62c43e9a231842cc5b7b589d3408309b5ce2fa84e8f756374e3d8ef8d53f2dd5cb5ae5420bc"
+          },
+          {
+            "language": "pt",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "pt-brazilian",
+            "locale": "pt-BR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/pt/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054949Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=d5a450a774f58c510b06c8e7bb76551978c4ae5b6d461005c7497aa243d09b5ba7f61378661d337f532b7c9356fbc023e87cfd8e25449717fed3410adca7d31544e21a2ad455c9f2022a5f318af70152529bfa0d513283aa4563ca9d0a2b2c7290917448621b68b4e9f4a6d074f0819d6b2f50111c9f66033f612b3a41aff99fa5e5f4301155bf3fe4348cec08eb4ad4a1d5f32db7bf5f076a344174bd815fa1198d57c442d6d75aa4310d68a7a1906dcb1c8a6dc1b6d8867d3640b225979da2bc679b9895d9e793c14734e95de7533fd5b607c949a358a85a62d7f4ad6b18570798bf62197d14e6b5d7912c4e01e9f42177dc0866dd713f666f520cbbc986ca"
+          },
+          {
+            "language": "pt",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "pt-brazilian",
+            "locale": "pt-BR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/9w21nMuk8CWXIME31V1S/lang_compat/pt/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T032015Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=db46307e1f879c6b67d354174e9205e99cc140f548069024c93702e70069aa1616cd466751c8ca1c3e4aaff76661e7834796a36c94c3e9c8158e8ce102649061237db56664a98696b2dd06f95050957e932bff8d2205dce44e908bdc3c46b50872e261fda1edd487a1dd3234270cffb42263d129e87da0de6e7674338128ca455af1b30afa8e14ef5c8fd7641c8648a67b93db1de772909069d144af734d8aa14cfde1adfb90f556e728575d608f45d909e2bcb01ab76f0a578155290e4c1bfc2e8cd3c161786bf72403c808d61e84c3326ffb03eb75851dfa5e0462278d1874ef765aab0d2469054c1d7d5d35ff8257651f12b38b75fec20421b523aa53139b"
+          }
+        ],
+        "age": "young",
+        "accent": "standard",
+        "descriptive": "upbeat",
+        "use_case": "conversational",
+        "category": "professional"
+      },
+      "selection": {
+        "score": 66,
+        "minimum_score": 20,
+        "reasons": [
+          "gender-exact",
+          "german-verified",
+          "age:young",
+          "use-case:conversational",
+          "traits:3",
+          "usage-proven"
+        ],
+        "matched_profile": {
+          "gender": "female",
+          "role": "زبان‌آموز و شخصیت اصلی",
+          "context": "new arrival learning German in Berlin"
+        }
+      },
+      "assigned_at": "2026-09-06T10:22:52+00:00",
+      "public_owner_id": "7398804d9eaf2f463899a907587c33a390591775784f87857b6d0e1e4e3e66f6"
     },
     {
       "name": "Lena",
@@ -45,12 +350,404 @@
       "origin_country": "Germany",
       "profile_source": "chapter.sql",
       "voice_archetype": "local_friend_female",
-      "voice_id": null,
-      "voice_name": null,
-      "source_voice_id": null,
-      "source_metadata": null,
-      "selection": null,
-      "assigned_at": null
+      "voice_id": "Ui0HFqLn4HkcAenlJJVJ",
+      "voice_name": "Devi - Approachable and Conversational",
+      "source_voice_id": "Ui0HFqLn4HkcAenlJJVJ",
+      "source_metadata": {
+        "name": "Devi - Approachable and Conversational",
+        "gender": "female",
+        "language": "hi",
+        "verified_languages": [
+          {
+            "language": "hi",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/Ui0HFqLn4HkcAenlJJVJ/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoicXBVQm1udmZHcUkzWmdQY0pUSVMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_v2_5_flash",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/Ui0HFqLn4HkcAenlJJVJ/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoicXBVQm1udmZHcUkzWmdQY0pUSVMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/Ui0HFqLn4HkcAenlJJVJ/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoicXBVQm1udmZHcUkzWmdQY0pUSVMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/Ui0HFqLn4HkcAenlJJVJ/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoicXBVQm1udmZHcUkzWmdQY0pUSVMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_multilingual_sts_v2",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/Ui0HFqLn4HkcAenlJJVJ/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoicXBVQm1udmZHcUkzWmdQY0pUSVMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "es-latin-american",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/es/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=c640e7bbb5291b34ff8b944b3b8128877cc43c25a04d7981bc8a6c0b1dd5f1722be7c38385d65b997f0817b281fca428c4b67f0bf79c1b822966aa2b92ec373959a4fae94b9c4b85fed55fb4840bedb80985e01f16fbd695e2d7d0cf57d4643586c96e9f77b5bb940c9883d84aa058549b030cffb357634ccc9aab69e127f7b3ac2f0bcc0132389970f223f9ec5a12252803f8ac49b917a4f0e48b3f4cf70d3781ffef7b32d09c71000f3d96de6f81d1e79276fcd5a5640e40272e4247a7ea09eecf3ca762fd620e84ff5225c3ddd8e550f6e783b52e309a71ed5fefa9ae71736833c2113396fae146bb123b7bdb4d7f656ceed8060a33f1e1c9c1e6e8818f27"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "es-latin-american",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/es/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=ce4320295e8e5e642baf27802e7e9fa9720ed9218afdd0742a562e403d6931025daf398ec722c33c7907c1e5064d46d61d474f2b71c2cae4b8d9e8171a3f04dd510af8b8d33942fdede441a0d1bfe0ff136f5060feb43c1c4c73d4500dce09687ad0f319556dca6235b962af618a79433b2b86f64f8b4a354fd4afd28187b993181019d5c871e19bc7e9825c551a15a852b59f6d1106c887a2602ce0a05d6c283609441040bd7d296b6ebddd72dc5f73b83dd7b45417f13a81b6a131397a055ce594d053ac85200979e9d3b3e233316dd53aece09a3b7221c5395a1e9b8a4b4cae4386207e0e9a1104e942c19d0e99887d14de95f63f2f46365e522977910334"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "es-latin-american",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/es/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4f434f486e6b49e5f2c6aa557338fd508b10e18049a46b1d605a2bb5ea31148bde74a2072afea52c05afe36bb3bba42c2b6fa0575ccb41fdf2aaf0aff8ddbf3d98550f72916caae5c81a12336a61d7b752f9bfc3e3a1fdb32da76ddbe6c3018a06ea987ad85920486da41db3b90e9be16744572b1821221afeff7a977792ab0c3908f2e41cbea26550f2368c9f41080462949516d0187ec6265bd7a1f3d2e74bb63deef784ccce85588b8fb1ab86f0c9a35b0127bfb4713b3864b05c2c8168f65ba92b129548aa933f71eec14cb64f2d9093a65d30087bdc00fa9b1cae1962a6fa509aaeaf8d664ef50451ec8d4f63f18f1ddac9cd24fe20f0feeed53fb5208e"
+          },
+          {
+            "language": "nl",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "nl-standard",
+            "locale": "nl-NL",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/nl/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=d09307d36cf00718994d327b2f1c37b421d08f1dd89b52dd2ccd0b0a1bb5c5060ec1ddf985fee74026008b6505d441a861ae498d0f26d60a3e810f899cde92f37693409bc25c49b3e3157b8e8df2015d864ca5e9489bc6d706391efa9606cc75390d347362d0bd5b4a44235b7238f85156faf41ca28b84e48154684e9b766afcb020d131d50c9bdbc21a88e5d9f7280fe43f18b1d8e983d8fd6e55b2c4da709f4b29a1af291bf9ebf3cedb8d64325d4d54dd3fcc27152e053a3e035f4fb680cfe1d05062005ae720be7e93da4609a46f432495e97d559168b92b5282c975fa3e729e6b0e3fc13e06f7626c5cd49f3e7ca6145c5b2fc67c7a10a46ab50b7c956f"
+          },
+          {
+            "language": "nl",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "nl-standard",
+            "locale": "nl-NL",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/nl/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=5ef56f1cfde28299aec49444e661cf49e7b588459a03c8d0e1a0b0d2834b9ccd648a4c0cfccb54721e5d22cd533f7fa1e48c5cfe7c388d7f121e3757b8d54ada25bddd813e5a161bbc1a6effe0367642667d90da600efdcc26e17e16865ff35f35f37e516102b25da0a3da3ab09905e709039ffc7d5750c244c292878855c76e2fb2190c44ab2ff431816213eac0910a05929d111e28b821199b6e46072132e223a54339cafad57106d714560de0672ecf785858e6252b2106defc4ed4e905c486acfaf4fcc1976db92975380803639cccb556d908f672b6e81961c29e7856317a62bf34405b0277c3764395d06087a781af693342c1abb2ce1b3314318bc40f"
+          },
+          {
+            "language": "nl",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "nl-standard",
+            "locale": "nl-NL",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/nl/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=0e3d4f2e381337b7394d419a35b55a2df2689e9eec8d2648c05560310ca50ab183b1c65ed5812310eb36fda8bc29c2378288f7cd85808d64a1de33b2f8ebf458b6459dd3e90cd69da2c92a1e3e6ba6415044f35442b834f5a7b30da12b7299d9f440479819c26ef9b1d17dc74b9328fed1fddd68e60b864bf884eaed5859f2b069c81c5358e8a26a5592807dbf54907667d5cf00e47002fce832c4d61952bf4174c925f02bed93402bcc932920e2e3e4d092f8e9b4ca777796d5e1cf6398046b0a23082b7159cd7e1adc7328868a329c428383abd7f8789373008edb1c4b0a10551bdcb549ff4b48bbbaddcbb6a5ed9d97aee96d8a06a4e120b9cdcc353d03a1"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "ms-malaysian",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/ms/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=5d7ce1579308ccea43bc554ce2697eb9318174c889b24b4b9209a5d19218a1e96fd0f7178b9ee851d0d38fccfe09da352e42e738fd5765b0a1c065404f28b181bf67cb0861b32014f966643f51c95c814edecf2c3b6ac430283e0e7189f519ad0cbc75cf231713063da9c35e2e912c31c0fbe267e7728dd5b1397876cfc7928e60dd2750bcb5e1e656ce0e09951ef64c0c6719723f73a1a3e32a362f281042bbeddafc0ba10aafe709b5a404dff7e855f5cd9ace6b9a7738fb720d728797c09e192296ed708015c730136b377b9889bc02bbb2237b50ee1f98e24c89bf4afc4bf6497b454ba16690435214402426223219b8f76c0ca15153c193b9319e2b7611"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ms-malaysian",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/ms/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4497aea71ab436680ac0367649d1ce789bb7f197e8a96def0870cb5b2855aa70a618356b7eaf9a5c9644c75d2c29e197b19466012f8233520adb76fb6d403a9f90060bd08729eb8ba36df20cba6a2cad594bc1a48f0ae1c414d7aaa3142f744e5d806a55a35ad296ff9574dbb5acf5768e5fcf42131f8646612bcce33b4ec35fc3ae691255eddec4945ceaeae8a7f36c007a440926c0441de3360eaa6361686100d3cd503316e77aaaf0ca4619b5e03648fe5ee383b9611cbf23b0881ee680edd21a24271cf01ecabefd43d83e323a49a5542d6792a4a0d315bd03a2733498c45839f33ed15071ff174a337d269de5b06174a2757681ebd0eed4d62522463446"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ms-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/ms/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=39f9d9beef633efda6d27dfc1072c1a371c33645767fadb5d8387f049a73c77c66471cd4adac0e2427430c2dc6475cb242266e22dfb1f81f3991314d9779d11ae7e11ac192489b07cce3a2b625e0988ed6c9663796144eb98773cda8a8a9b48b7c6f81a7b1963dc05c36ebb4b5ac2f70bc289e7afbc45023986e387503f3388171cbbbf1a02f8ffc5e36e1d1bfeebe24ec0032b621ab8531a948e3c8de3a51bf12435126846c1b6da52c4264034a2338249ccfada994eb90bb0dea5f341a3063449ae0c6a90ed500ccaf7d74e085e4c741d1be331e80d5b7cb27a4394089d0b4e29bf8677451fdb7c3370f1ad5edd1ae719f9547bef218586f5e553272a1b908"
+          },
+          {
+            "language": "uk",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "uk-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/uk/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=959e3af823f75b436a07106b8c3efeba94e8aaba280beefc77730f89f6e394e113458a705a2d113a8d4dd8eb75bca99120f65eb93c6eab1b6271864bbbe4085a59b5f46ef2d9548a5642df01c7e2c00644c799c51d3e5330e6d847996075af029e20cfea96d5092fbe057aef2aa0e3bcef5a6b7f8e691d70b1122dd5818e3107892b79c8ef492dbeeb3a0ec55d6d3e1f9bc8b4df69e33f2f6a602973a294f053b9c56de3d99bf66ce18fa3a0275887fcd048ada37ccb0b561beca71c0344b88edc428d325b179a2679f5b1ebaeb22c273f64bf3d2a26f5dbd952e66c54de1a103e237dfe4356da7956bee82ad6bf2d99ce01db32683c9b55509e81057fee5012"
+          },
+          {
+            "language": "id",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "id-standard",
+            "locale": "id-ID",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/id/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T035902Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4505e12757f2e239ebe6ce1eedea4a879235e493cae36ca7e3d8261d2293296347f3de77fe546883c7011ddfe196735a1b2a9fc2d16f4feff35687a647fd48b583ec678efded58632560e20890bfccd8d0f21dd8f522aad0d3cc277f2e9ad2de19fd40905787413bc93b3cecc8bdf505a43fe4e930ffa5036118cdb2bb5c84bbab3da1584f34db6f7490033fc467aa6dfeb68cc24b2691031e35ec81b568b24dd75598dd8395ab84ab5e6d580ba970ddb03663b0502ef529d3d9908d95de78583f568fada6445cb0a15d7f9fa607b407e94033672bc4f854f87ccc8009e62abee19332a7a17a016edab22149736ef8b13e8aeb362af0e4b4cae0fdd8fb5ade1b"
+          },
+          {
+            "language": "id",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "id-standard",
+            "locale": "id-ID",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/id/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=d5219fa885b61ac4fceaec613da64da917fa1b4f85de2239ae267a1174137fbddb4c1f1ff328f98dc82519a2a6d29a19e0478e08b88a2aafe355c1080d32b1bb7354d21786fefd272c00cad68a7de35d817403829c17a0e0288a06bdd4c77f2a38daa92ad0be64f0c9777761558772407d846b4e5d3120ba9eeab25296b8b22b7d040a2883f9bff3bd5db27f1d458694211c54d2a1d76a17560fc23676b215aad08582706c0e16f5c2e4a5e512ee0dab553ca114e0ecedd0fe971e2aa3b3740145e3a561ae52000acacb769d95190a285feac2892ad36e00d2e447f152454be628e6e4f5eb301951b49106e6bf20bd8e2f33e528314cf89639668dc375d14fca"
+          },
+          {
+            "language": "id",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "id-standard",
+            "locale": "id-ID",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/id/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055514Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=aa1e6c87bee06ad68072880ecabad75353dd409d4f948c9073be5d582a7cc630ad9318324a911a0b9626774fc20050786e83c1dbb04f3d4b1a98c31097c03f45c7a7cade19816a5087fdb1eaa4975bfabb672cb920e0ea3675c398e9e599dadff5d06de544d35f01878074b6a0d744e87ac0a18e1f5965c0bcf8756799704d5c7f332bb7a6adf5d14968c8fef2631db4e78226a2a901814b384a8def28a7413be43dd2a13e6536a3087ad663db82b3a73e3f1a50a15d0d892c094e0a415673c6baeaea3182f97dadf3a78620623ff6defde155e88f4b2e5a1bcd3c3c9e2a2feae1646a344980f5930fe1d0f039ffa714a1ee269033888dc04d9ecbc84a77842c"
+          },
+          {
+            "language": "ko",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "ko-standard",
+            "locale": "ko-KR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/ko/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=72159282a852b07bdeb066cb1dd90fd64f6d5cf3a3f8d56fc2f3bc5c3f0f192ec6a0b3dfe2c52dc676728b60e15c483895102ff84bbf0bd2f0cc045c65d6bafb68ed92b3bbeb9865eea676a122ee43d7624394f9bfd77f607bc8bf9b9f04ca211e5bee809565ff697dddfe20fedc4cfe88501ff983f12fe9d1e992750834fe4ac7e1d49721188423e6a97c94453c0d334dc291a079605bb5344ceddd4b60992c873f8fc2bc4253d301a118b3137ac1abb0ca392af75698d10a0a45e8e96d240d5f58dc476cded3b514bc42b2e225a74d594851289e7c089249466b969fb745f9646e305bfaaf4c1a09b77c477d0dacf0a09d980174e87a455a4c9ae473859e0b"
+          },
+          {
+            "language": "ko",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ko-standard",
+            "locale": "ko-KR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/ko/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055514Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=8303a2b8d083bae3b3b5ff36786b5ee7bf6587be3b73e2537edd852815f76aaf79b9b9b19cae104fe6bc0e1da3ced957964360cf0a8c026b25521e8ab558afd7b2f7597626bb0b2be8a9277c9a276a794b663045ec533faafe7f76518f53f4fb050543bb45e12efc0e28b81aeb671abdb50743b14b3cd5a112cb8b58205f4a1a2c4fb30c5d954865f48d3dcb6e63541cdeac71cd623c7c865adc825db4c0fca30aa7cfae00c99a5492beb46c181c35322695ed7f6c7763fa7c9078189b7d9f2547ec96c3ef29f982367f64df7fa5a57df2a42fbcb0be88e62272a0cfbd67f673dd7c1925aa57dfbe07da00d3b213c3cc24dad3bacaaf4ab86bcb80790281fd7e"
+          },
+          {
+            "language": "ko",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ko-standard",
+            "locale": "ko-KR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/ko/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=10e8f98c9ada1d65cb637c2ea505401384d98b36a1b5245f202bf69c2318eb0ab9f86d2a6b048fe1e04b2bef5769ce96b9303b846244ac5a47c4aee353c8a983394b1577be45e93d5bf033ae40c28d4a064ad64fcb76ffc44ef727e3b843f2289f8d777e8bdebbb41380addd8aa8b3f392d7e3aa21e77ef0e4903ea24b5e09225370bcbbe20ab3f6f862b59a7f11f369126bb1853a87f35b8a6a3cb01602aa0ded187f5eb23a6f8bb234b8b9ee75dc896bd634a0bfc16175e779f2639e11fb91ca3ae66e80d1e08ab2649d7bab55badade63dd0507921fff60dfb0a6ec36f3292d0a71ef62f6f7bea9a3c360a8da1ae708d36013c0131e1d53f0e4fdc0841c70"
+          },
+          {
+            "language": "it",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "it-standard",
+            "locale": "it-IT",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/it/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=a08ed635733aa1067786481e5035aa0c2d1ace5e00079db12a46085ca7a415f7d5ebea7bac5116b7787bc19e2c8204a185e07c174137d5fe7dd9a1aec69910a7fb243f2ecee7434992759d7ec22d11856f58bd286a460b4849ae66cf23d2a4b5ccb5484b029ec0a0659cbad8735b94358cda57cf9f6fc2f79939090dfce726412e9e39aba03873fd31d42388da0281c2d590c2745793cefefd7f99757fa74b9ea08ee25d422e0b3625110c72ef1296328adf0d9509fc2af93c6bf082241c696bccc8d83bc7427fd059dcdc844415a7ff0d0f1bc9c46643de5e635322e56b8601bab2fcdc3fa6dc744750a2fbdd29b6f605be075c82fb6ca761841648be8f9a71"
+          },
+          {
+            "language": "it",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "it-standard",
+            "locale": "it-IT",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/it/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T035902Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=bfde71cf73408044cc404a472611c8633dd94674f08aea6a3ea98e83dc82cb956d5dc0c61ef7b247eb706755569cab38e94f92ba1ed72606e3c9845b63a7c259eff567e4508a11fbdf4b0e4a8c9234d81495d446529c54601a4d1353bb3b3da1da858377d4dc69ec4724d1acbd7e6eaaad9c58e2f9a3d13c7308c56f5c29fa151a15b11caa0a8a86497d7b49e3c85c06283798a2404b71631cb4b3afce8b831996ecffb047fd4688d99df267feee5e028de1dedab106db620a9c9b75fd3e847773c29076e7e1856ad6bacff2285c6e9e89ad64aabae4dbbe06ce62df4fdd3acd79b2021dd0b0e9db2e8208722f561efb3c467d67df64a2fb1b6734ed87d43234"
+          },
+          {
+            "language": "it",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "it-standard",
+            "locale": "it-IT",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/it/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=c0ae44445005667fa200c366cffde5c19113a2663da3bd5a64c73f03087859b47cfe0316ab4031bea125eea5dc8513da88c905b57f5da225edaf13f4d5718fe957ae2a4800fcfd313253c79b9d9f30ad25147d08a3cab54e6254639695a507f2291e7a69f5c4d1bb7cd1b6bff5783c3c97064dca444b2a01b1d74114c723abacccba367b7d87f5dd4b36b0582fcf3e4cb92f09e619a82533e4099ced79672fc5233e2ecd0a0cc4b7b5f3979fe00fb9bb11c9ae8a665f1e0510cf6cf4fe0f036b09c1062cce8d18be554d160f60405c1a30e5386e4af2c60bb6caeef419dc90b915aa77fa1594318aff4c5903279e8b0f1a7228955006ce0883e16743215d799b"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/tr/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=3d91f12f4764c707caf7bc9946982888c9465478d09e8e4aea9f7d83716b483243d7e0be2bd8f1c8447ac37041d8ff5d15be558ec500435d478c1a33d2d477697f50cbb0332de41545ad62324e96069f5c0360a987ee002521fa672512d7d3822c241785eb07897e65a4827406c10cb3bf7d1a241eaf19458898f8d7b4582c231c2e5f09d35a71910d4c6968d893812e07a9238c7082f89640f8fd61e71ceffe4577b0bd9b38d6464a723d85bfddff1091e50f4a1a0f7e1e5c393b92421191692f64299cf42b44787d5ffb706986509d2f925b242e88e5bd2ec504e4c61088ae683a9874d2dd8a3cec60bba4c3de401a17148b0f5e5994de3d6e87e3f605e740"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/tr/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055514Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=748cc09dc0d80aa300b7b65dc1a319c3cd667162ccd8cf0c9f721d2b3099af1199f40fce2bef433721f26f6387a8ec38cee784a2c1dbda9ba126ca448ffcfca92b9b1806f1e3f3c76344f51182370259df850752607070b125a68539f2408ec60b2368d39088c118ba412921b0fcce6a698513ae2c8469aefcbaa2caeeca84234c949b85d6f88df1c657f7fb8e316d5053c5e501059bb1177e6c9b87d1e1ee0b07a1bb2ab2355d33b48704a86b27cb3ae23a2d65ced15ead92b804e57f15c886129322afea4f1f0dc3dcb84aa4e8391e56d4d7099a4b449d890363a2df133e3bbde6a8025e2db2a8977d8ed0a9c3ecc5cdedb7e48cd3242ac0ee5626e0ee2cc0"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/tr/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=257b4ee9905246a633e7353298aded61b5f48ee2e6f338825e0f7eca874df3ef3f5f9211d6d9ff7f0b5489756e1edec2fcf0339bdce7ca2466e9a2092c0e9563858d2ac2e7de65cceaca0c8b5c57ff7a18e64c5d1e8799b7b6259a4f3983f7067f4a19527639c0822cfe1a94ca574a3de5a133dd0a40a813acd76d6bce1b0299ecc6444fc95ab749bf60168727e635c4e52dfa405280e4aa3ce56b8bb9fe27bf45be9bae4eedc61fffb60dd22f3a6e36f546e0d62e7421dc94dcf92688824de1844d9937351d1fd1295ee7ebbf8505a2c9641df4542ff3ec793842801ab4d89736634513902f39a45b0afcb8d0e23f54c22d22e4931bc7ec31393e8e785afb0f"
+          },
+          {
+            "language": "vi",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "vi-northern",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/vi/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=b2d8eb0ea9a2076d7cc00a17177ebc61b69f5654dcc61206809cdd248b31251292fc47700bac31c2aeae4a7b1d440e8dea8c14c19112dabde5852763720a165823404f85e224a26a9ff720c08b9dfbbaafbbf76b90e3203a70671f9d7d787786825cd7573e3756d2db937c8345ac6e3f2e9ac1ed384da6b674b162ef2a755fcb1016849b681776063a568d59cb0f2654acfd4c3cf9a4fd8d2a84b9f36f33db05d4f0d9a6f559af879a18cec8c832710b487c9f717c3db04cc19e113a65fdce793ecac5fbaac623bd68d8ac40cee2878cc54d1efcff9f9d791dd12823474189b696034821bc652896cc12c96c9b71517d4217aedf717ef344b8d1e284b3a2d3a1"
+          },
+          {
+            "language": "cs",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "cs-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/cs/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=41291e5252e1a406fe4d338394c4626cbe27f41d489d6bd5a569f29f56c2a7394bc871b0331fa303027cb18e99f11f0ad09feeff43238e9228468d5eec9744b6732eaf73c73a9e7f02483fccddc30bcabed3c81c6dd8a87103ba0875e5647f78db5c23ae60dc8fab448d2362eaa2fa2068ede6c3b249bf1cf3b50b2874ef604ae32327a5deb420afd999b7dd752f3d61a4c81a674f016987cc6e1452681f8242186c3c9cc874ae9eb7f44e5a7f3968adaae768ab053e4cfe31911d605abf87adf1484ed9ebe3d21f686c87f1bcf9b9c8a8edd4baa50a6b85d194424a70f2b15474897583a1049c5291589cebfb211e0f718ab5b75217dcfb2ac05184ce271d62"
+          },
+          {
+            "language": "cs",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "cs-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/cs/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=d04045dbc6326caa7490a697b24d587d367eb7bdcda532f0394e57de7d8c84522711ad7bb85ea66777f32decc60bca6de27ca74c64fcfe813d9f6bd7cbc1251889b0f7980512f2b129b771bf192b8ca151eb458c1a59fa6d1a2dc4e825eee6790a940b9ad639cecddbb6c09ae5a668bfdfafd44595473b15065a52a96517c627fab8059f13e0991a14ec2e9ee20545052d6c373abb81ee3e613b6a38ed1f6567218ff07ac2c468f078003cb3792581e988b4ab2fab7eded9e43e853ce13c32f06d928252337669a8225f284a51a5abf840315dd7af89ff6bbe914d7069544d7d10e1241dee136f1eb30a01ae99bf464ab547c0fbc2c36a0c72bf5d614cea7922"
+          },
+          {
+            "language": "cs",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "cs-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/cs/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=c7b70ad02700d97bf43ca082b164938224b51c1d3d635f6b7131e47fe7cc9197eba9fb0892a9d441d8aa026d6e2f2180b27c601cf7dc156b5d85c6ab6f652b412262efc5354efc9b4c568d2404e5d0ec5cc1e01966082870b521b4b6ee7542fde4e5fc567fa35001c557cebc7bc56464a1c50e29b8727fd58b1d7391021a8ab78484de6d0cc7603443bd5f84a5a9db72a142519aa138276ab93f0901010cec88fbe127ee8315c6ff1b96debb5195415a6e1f30317097f277ac7b70db62cdf2ad383cf3504eb1a31246c7433a305d545c68ef7e2ea015482f11b2150b4cbea744d9e7bf342dfb5febfe2ecc8bf60e4c74e4619c7791a6c5ba2f6946e0e2f1a7fe"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "no-sørlandsk",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/no/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=8b00c3c724e266685cf7ec37962754bf0a100f54ee7c79afbf30a72afdb36f1cfc332ae1acfef474e795751eb9abecff8c68d4a4d402a63e1dddd8dd54cfbb69d2093723ad986de25050c6146178f82f6e1757a11dc46757129dd6d90e1a681d0e332327cd83870755dd716cb9fc003df92905062005241cb068c6cf32eafc14dc593270443872bc54dc4855f5c4e4a41f2c26f3ab48839c88f935ed0603520cafb99b24bd3ddd20ef1a2dd1fbc3ba0feb63ce197895551f828a692ae4bb8c9d78a6c71b3d18572ac0e806454463ce6a424d5ef75e7bc401d42810339a645de99b0a53ef513a0d8d9db7f1c7dbf5fab4569122eb4d0ac23d06a8cfa6592a6b5b"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "no-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/no/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4fff397629208692777a2a4dc02e82093e3144dfcc25a5c4bb779851fb761c2522f9a0935cab009e5d7cec45147ab89bedf146d2d972e602d98faca1eab786e8fedaacbc1d4f425fc749457cf17a90fe33493d9df1ce10483eca7cb6fd561ae4d330a58e9b6857b0e4564b1cd46a5e367509f3d291db6c36297d4be512e1880edb18685595f1ffaa27989de6bafe4b16330fb121cd3e4e2b837d108f40a7f1b04b7f8854ea346e29bf108033d3830ce04f2215e10dea53d6d2717dc75f5e802ea0f60f2fe8bb74927022743e6661a036e6a8e06d5fb7ea80b1f01ba9d0e873259c282f4b5b00b4d0b6a07bd5a19effb3c17694c382022624e5d4d27ac3115342"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "no-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/no/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4f3e9cdb6f237d7ba3cc9a4e8f14313ea715c9f8196f2825097bd179b34ad71b79409e69b84a7b59e14833ef098cf1dce0665dabcb0254a9e64aa2cbb121130baea8cc74856d9c6b6f6500b9332d3b1e31d2cc674a715c7bff251c69a3745df24d3b1bf0f444a4cb9b3eed6426fe9d12586b67310161c3cf488d3982a3bcdad6749ed6d3973ab094dac39c875896ca0b0417339354383efab44641f141098c7e28227295dfff75091e19dafef66586a79b674fa6d62688698cac682ccc940b09c75f5b953ac32782ec847d391f80cc1a139dc67618fc0f758117a73fa22cc9379b288b52696d1de43be78b16bc38f62a9a536113534a7b4385b6c6ef34eb3bdd"
+          },
+          {
+            "language": "hr",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "hr-standard",
+            "locale": "hr-HR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/hr/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=5c35a0337a3a3f5a431701e100eab4a35d100040d0df9f1b073be99a9e1dcf311d1cfdd45eb426aa011bee1fd1e5a6d13ceab0c94889f8a5899f95a319cccac84086a07c88350227d91e2003f9f7c2d36c2af71563162595e52668c86b3c9f8fad25fba9bf6710a8f8ddcee4567c2341bef0a854a1c7a317954379a767cc3c937e75156c06ff6283916328bc4d49f99787e52971832cb935016244beb7e37039ac207d4ecc4ad5aa952b098765612c3c84cd3681b02e10187546361ef56582c22d5a1cecda32ed2ebd89de22f8ebefb5b60d112e8f204f6489a21268a0f6d546d57b0a0b3fab5fd1ed45d28e09cea1cf1c92117a37df6d4f5bcac4dc2be820b2"
+          },
+          {
+            "language": "hr",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "hr-standard",
+            "locale": "hr-HR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/hr/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=b69ad6df5067fe203f82eb65e66d8bdee7fa29f5694e546ec612559a2e952367462d767eea8c43a2163f2084ce2248f93f6aacd45095a855d1b19edcd7a1dfd397c95addffb387d08ce090b7d00099e158d5c7b76b746d79dbabed75e7fefcdaec0e9c55a5be6cfe0e4477bafdd10e815857a89e1a9ef3c0921e3b4e5122d20fa44041c8dd3b95f51045728225c7984dfc0c7fea7290ffcebbb2d922db013f4ad1eb4f847af23a8da098510a6afe0339926e7b9ac3abf6e5688a041ada8f30f64a120232e17870c14dacc1852f27d95f6050287df286681a450e616fddc965ab1fe7f4e0212c4121aca8a36e8bb445d3895361af3ca04d1161eb6b0cf9fe2a46"
+          },
+          {
+            "language": "fr",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "fr-quebec",
+            "locale": "fr-FR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/fr/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=a83d570682093d84239c555bb12b4166440bad195dd27a190473c5388b4e08aeca9d50a2dddf786c7e70dc0bdae315ad7c40ec697418719d5f13eceb3a56b1837190053173666236ef6cb880c60e5c779a43949e2f26058d835f6152a659ed8c3c048c4a9aca25fe1028629fb3d78b5b353673afd36025ba3b1ed1688afc03a8705888184a8fc267524b948b8d4c2b555620ee7ade468d4d164a8f6ce2938117f1c2e4513d27eb1a89c7aab47db56c1ae2e5b476ca7ea068da25028ae5f2608f49699a4defc0f4cf76088b7d8189d075ac8efa74fa9229f56ca758e17ce9de6ac88916d27745b5f9787e9f7ef6500a75371bd0fd0272232ab750f12b90c20625"
+          },
+          {
+            "language": "fr",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "fr-quebec",
+            "locale": "fr-FR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/fr/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4c92e0255a0d386bd6b6efcf63884100fcb49fc36dcf6a523617179c214506856054a4722f6967970efb437f5ee30fd2c278e4cb6f3767a260bee8609faac2f4321470317fe0f72d6fe64fa333981d3ceac783846468433037b42f09a597978cff5570041a3bd5f83e69b1513abe3aeeb4a7e9d6b9a6ffd1bfe97be86ffdb4248b3580bd87e581090c397e76d6335cc4a53356fe64f4761314cc0990da23773535ccb5419bce8ec55da14eda09cb9de70e0d86a9222ec065a9ee67058489ac4aa1e18e89bd5fe854d93dea2d460ce2b7ef0bd2030d73dded0c06ca581d46c784c39653f34cf6f8b6731677dcd6edf11690d264c32fc1d6e0c4cdc27eb9397c9c"
+          },
+          {
+            "language": "en",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "en-indian",
+            "locale": "en-US",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/en/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=c4d64805130822f79aacfc8526f7313051fd09039d9fd5e40027f67c60b0b3d86df8d76cd6789b75ddb3cece3c1458d2af17b634783d63e6b1898ea8f0196d2f6cea302de7a452c1f7271d61cd277ea799200aea7f6693784f81489ffb938a3ab73ada34a4883baf696a72ce0f47fbda3863a60cda07fd40c327bb44d78cccf7b4c87e530e61a345c98a34e7c3c176e948771f987a2608009599e444dca48ae56b0014b81bedfaaf57f1ce574a096f5dba66eaf59618e78f9d5cc914e95787a47ea818d5646917de4fb011d0ea28028bfe135a9edfe535fd3e7c99b3c55c51da2871f88a867ad3d52b7387171f253c8fb76b09a5458f51a9d625f8d50bbdf271"
+          },
+          {
+            "language": "en",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "en-indian",
+            "locale": "en-US",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/en/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=a92db561d0d6230a4163b7de47016893b8bea34eb89832b0a223fed3ed17862006277297e74da2a26c4216fa9de40ee9e1a684147d25b5c7ffbc0b9f7251624847f34cae7820eaf0e1b337d3bea281d14af970976826fdc5ffe8f0da4b7398f0f523af357cb107193b55289b8f863d2628ec7222d5030dc88b3e1a894b70729fcc937b40afd8daa559b7c2945858fb8d5ec57b259420ff2820d0bcb51cc838b5210d58ef153ab1ac45482f7fa3815cb0fc7ee9c6002abe1581402f80f0613e740459f7e744976750d73bd43562e11886506f1c84519fe4706e1705f6777c0ce61700cdc607f905e12bf02bdfeec6b1b5250ecae580bd41b36807f695c780cb55"
+          },
+          {
+            "language": "en",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "en-indian",
+            "locale": "en-US",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/en/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=62dfb85fa4be0cf21647d4e6c22ba1f7ef8ab67ace70774990862f1cde1d6454129442ab4eec2dec6d32850e411fbc2bb856913b91dc7f136798d131309052d3abf1eaedf2cb91959caafebd2f57a3d282ef5c4fca4095b7054ef2817fb68fa864f2c1fcd940e3d97c9eff8929e92379b1bdcfbbb9b9a8a4828c1508f98412fc137bad5b9119207be797887305857d1d216915a4432601feaf697c015b9bf0be2403d30dfe50290d23a1a27e6897d722aa2296fe0c4058b671f862ed77e8e3bc59a071272227cc9b6396396c55c1c092cd11893d4089c2d0fe4c8059f814d676dd75b1d89e0ad8d42b6bace755eabd3873c5efd8e83b49a0166301962b6737b5"
+          },
+          {
+            "language": "ro",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "ro-standard",
+            "locale": "ro-RO",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/ro/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=9d63062e3ee3704b56da660bc84e14d9deebc8fb91119befd18e503ca8aa01ece8b2645f6bdb440795830124675e7062f68bc8c15b10d7c46b0a23271597cfa1c00b08a824326f07eb806880a4ae6088253ba0a8cc75cfeb9c7c95fbfee67507ef85ec93ef6d58037ee3171e78a6c94cdf31094b3f049c8ae3cc9bb937e469ef25c5016230c0952e74394f35d69351e5331321f590a9a146dfe4407544cb7ab83998a13ef9e681c20338a39f70dff59de312e2a9189fbb0bdbdea0858c48335a08422f78ddc2e476f4d23c1c03fec281d0fa8722ddf9ad79ea71d54a6599872d6bac1ae99f54c395e53decf93cd9bb816cd0c78e7351d5cf91a10efc3c5d8f0a"
+          },
+          {
+            "language": "ro",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ro-standard",
+            "locale": "ro-RO",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/ro/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=3438e93f36a5fbb421474ebf24d70e23bbfc693837942306910c053f6815fff1e337f0a3f3f496a1255b30bd72cf6e5e1966491e99fda660e62e01228ca902b539f2fa36073c47289ce9cd5bc226aca90bec91562be02ac8e83a94b0118379e5afb28ba20fee4d2d27bc2c2d4f7fcdeeccb9d987055aebd509f15f50448ef461c65e761a489c98f0733742b20fff88971d1512b9a53dba74cbc493b4ef6ad9dff4fb0f77687086e11712ff71d94adf471a905d27b81ac525c9f29898c4cdc45c5ae606bcb6864c0c06f575ecc3b9c728407a181f97a5051f3f14db83106250f4d1abed8706376c431d9f78266b7deac2a2ee22edaeda0ba7fa08466d414e8832"
+          },
+          {
+            "language": "hu",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "hu-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/hu/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=c9e64f2785eb90516c9839d655ed61d32abc0bf8a290483298918bb047c3498bbc236c683df447664172e94e2f145627207825f07c8d0f11c7e0531dde60a6e0f9f32841e5fddd1ffd3e2bede4fdf2dac14bf624d0814481e807086e5e05d2c1ae27fc05c2064babd9bde78470650fa4bce64fcf05c78f442075bdc5bcd23faec9656bdbce9198cc6fe4629a344ed8ce860be79aeb30898fd7ea6eb29236c588d8689b1dd54d64a26e10d073a73f28f2cb4b514c55d190d9c53cb6addab32f91c8af2901be504bc7f5172f588ac8c5437dbf71a432a9f239fc7e4ab9d0e2416146d7853f13910f2c9bfad79a16a2a9e8b821a2713fd586cb05dd87351a9a73c5"
+          },
+          {
+            "language": "sv",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "sv-standard",
+            "locale": "sv-SE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/sv/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=9c150bd92742bf29f9235e31227a2c15bf0c9b142a6216d071669daa7423fffa0384e70e8c6d74a9bbe120a1258d603e0b6f0aa63bc32cd8206382e973dfede2e66212b0c5731807bd6e41db1e172fc096e572a8cac08871ea5cf0342fb1acc9c64423e9dd767d684363b7c3f38c75e879f597ba9b6d7634647f5d14774af823fe87dc0475ab5a673b491ec8ac2c4e1fba1ed28b0546b128cf8ff45ea480c53046b71bafa1c07acfdad5f424e76a73226b4a48d5ea837571bf6413e184cb45780763fda55d384908701f8f9e5c2caf1b4f684e2f47831bf7176627a09ea4f7d7b8db8c19a0871e980021cf15120757c890a25928f29a2e2777b2109b7fa783bb"
+          },
+          {
+            "language": "sv",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "sv-stockholm",
+            "locale": "sv-SE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/sv/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=567fa734e5b6e4140e504de3d373f2f2314ab9739a9b025b7ac6c6478f5139688098537576d1b9afe4ee3053e99fe902d426d446dafa35526d607a2fdd00e87bd3234adcfcd3c9c2dd28217c4d003da50a50c213c429f95ee82ddf031d02bfec211cd7b038b65f3b0f4ce71abece321b54b16b31b96ce520cb28552a56336d40c35489ca5d4268495c56d029230aa5d82d1b84e631d878a379b24a827fa271371e8d79ee438e33acb251dadf53ffbf4c542ecd5c21d8523566b378fc7336382540650a72757fc59537ef1aa241fccb628e04f676b97ef0085827aec4034c85e836bb04bf61ee3ab1b9965ba6da754142db56c758342be9e725a3e139a3b8cb51"
+          },
+          {
+            "language": "sv",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "sv-standard",
+            "locale": "sv-SE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/sv/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=7fa9abd24b81c62a912750f9fb249f7bffdf2cb83b1a6969294f213c07327eef81c51a05b508ca54187516206d9e7bdbda98ff023e96765939aea93b7802a6bd77618418ed95f90dfb45ed6ad2d14106429eaffd2f4ad2d29cc0f57d242b26168d7f2bf6baa4570e1d008f39131e4a6c18d90b0f7d0d03caf492246fc89ddfd6e7b787815ce4101ac40ed5e63697299304aae8035af439baef8e691026a0782fdaf7b549913edb32f46c941d6901793ba803471e30dd2e64f51a2da622d8bd35c82c63996583e58352238c7b963a5c185b3958c59fc9033ad15e66fb51e3377a16ce6bd1dac09b9ea13a87579fa1e21a6f8838b0a210560f3d79f063c05831f4"
+          },
+          {
+            "language": "de",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "other",
+            "locale": "de-DE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/de/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=92b717a3b7a267d9cc38e8dd36fd779daca6fc70c2db553e6e5b0c4dd92dc75498dbf2c6048bbfb11388c42a5ed3ac0a5d7a43053f0f5bf8418a531486ab4aebdd6f3cf2ad1044d0733c9bc82f0119f357d0b0308846d4a8a1ae6c389a8b52e507bc3783b4679a99f22dab0252bd50aadc7ef4f2012ebd68285d35e8e2750a32cda393f7fc44ee9e5f88f22c41891045b36144d0a1536df9bf3a4d8f7ba44871ae9f9036ffb4186110f0d4ba7d27016740acf3a07dc0c257904a681fac498e8f9d8b4ee94909c7aa098afaf7e6c14ef15f28a3de76e9de38d16d90471ec0dca8260b9793f78228d53be0a3c63dc15689c8e0ac30a29cf02dfd09214e104cc176"
+          },
+          {
+            "language": "de",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "other",
+            "locale": "de-DE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/de/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031836Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=334ec66eb2434a2e5cb67662ac5f28c59a39bda32b5c9812059f1bd0a657d893e4a5674f1a5f08d2b34ee79276b8460b4094ea7c00deb73a27ad0d8b76316bf797ce2853ab59fc4272d4d08f3fe4e40fdbe89881bfaee4d04bb2fa8085575439a465b166ef9ef2592a8ff04400510120f815989701363cca249cbd395d435317a8026057d5a4a47200210b4ffde1372340089a77a5230d42a7f86d8f00131f30fbc8faa840127951d1d296b1e8362551bd10d0a71f4636b35bb3cd0caffe8149808f3bacc670944fbff29381d7852a31def61b164990c8b2c22d508280555c2dd040106243e32b248a0d612b366b8db72e228de8df46099e82c1d294e4a23b2a"
+          },
+          {
+            "language": "pt",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "pt-brazilian",
+            "locale": "pt-BR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/pt/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055331Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=84faedeb264efeaffdc09df41c167422fc7834079ec0cbaff07924c9a57bd34d3ec275dd7f186350dc63b522b190829d854db900734dfa090baee2e4685e2b0c944809fd66a490287bd9d7fd4df1010a83cbebd37063d3d11b65e1d9b0d476738c61d094d2e6dce8db8bb9f50697825ccf456cbd4acadb5dd1105fdd8f3c382e752dcee0ac75f82ba5dc9db431815273012463fcc582efe396d8bd9e6e2c70f5319674550a7a59d46dd3e58a068040fd543304ed7a8a7623e9c38ecb0b752f0b5bdda6743ffd4958bfaaf37d983f6b1e9372e3b070eda2f7d17f6d67ab45f4ed31202eb80549fc6f8f538d5d4f5990e8d2d3de099b0f43f05c886100ee5f39ba"
+          },
+          {
+            "language": "pt",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "pt-brazilian",
+            "locale": "pt-BR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/pt/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=1049cca31faba3f228a2c137ada808c0a6d6e6225f2a125ad6184cac7805f23665a4cf632b01ea63a3193f32d3932144d393b4ce14f46a9dc23f0f040ff6a1ccd4be3835359ec4571c7884ae9583ed17c1b95fcbaf0c917dd9bb461a7fcab1964ec90cb1eae5cac500aaf968a587ee42c00e4e003c17a33b88b3001b75b69f0f8dc483b7c22587c30d88a6d9830d174ab3031a718c7acf77e9f8f20e9aa8231c9c15b67da2e7dd9dd13f2488ed057c606f07e6a7d408deb2542c6f6cdd7621970ab7a6e771ef2fd032e12ba90582f7f440c7bfd04a8798195bb7162e336982e4c0f00ea4208313262781bca30fb6b703d4da89e2c0e456578193f7ce586adc7c"
+          },
+          {
+            "language": "pt",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "pt-brazilian",
+            "locale": "pt-BR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/Ui0HFqLn4HkcAenlJJVJ/lang_compat/pt/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055010Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=1f27e1f4e02714388eecf48d54658532ee3af5d92115e5e1616fb552bfd76c3c9202fc138029ced774eb12ec4b40def9fb233add48d10faf057c8f83462a0fb0466896346c47bb6f47c6a8d28f2ce174d5ed6905ef01d01b0fee2092d9ea3ddad4dba1034521a61252520679edd5d700c6d442bca7e7edfc09871ae1365a2b3f420ba4e28788306e6a0247f8d500d1c5036c56e9dbd86fc1d1b5d4e65f7e39e4027c736e2557c7d6263141511e55334a34846315c08547807b46ca7575c3e2b3a9b03ca20b6319f73ab0f81f8212ad51a320f470f39c441d2ca8b2ee0d40f6ec3bcdc95b7e83270ab27ab654c4dc1fe7b481eb425a265be70b0a8ae71fd508ba"
+          }
+        ],
+        "age": "young",
+        "accent": "standard",
+        "descriptive": "professional",
+        "use_case": "conversational",
+        "category": "professional"
+      },
+      "selection": {
+        "score": 64,
+        "minimum_score": 20,
+        "reasons": [
+          "gender-exact",
+          "german-verified",
+          "age:young",
+          "use-case:conversational",
+          "traits:3",
+          "usage-proven"
+        ],
+        "matched_profile": {
+          "gender": "female",
+          "role": "دوست محلی رها",
+          "context": "Raha's local friend in Berlin"
+        }
+      },
+      "assigned_at": "2026-09-06T10:22:52+00:00",
+      "public_owner_id": "7398804d9eaf2f463899a907587c33a390591775784f87857b6d0e1e4e3e66f6"
     },
     {
       "name": "Jonas",
@@ -60,13 +757,328 @@
       "origin_country": "Germany",
       "profile_source": "chapter.sql",
       "voice_archetype": "local_driver_male",
-      "voice_id": null,
-      "voice_name": null,
-      "source_voice_id": null,
-      "source_metadata": null,
-      "selection": null,
-      "assigned_at": null
+      "voice_id": "6Iq2c772ZFrYvSuWijYS",
+      "voice_name": "Taksh - Deep, Encouraging and Clear",
+      "source_voice_id": "6Iq2c772ZFrYvSuWijYS",
+      "source_metadata": {
+        "name": "Taksh - Deep, Encouraging and Clear",
+        "gender": "male",
+        "language": "hi",
+        "verified_languages": [
+          {
+            "language": "hi",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/6Iq2c772ZFrYvSuWijYS/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoiNEJaOXhwalBWbk5ST1Qzc0VObmMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_v2_5_flash",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/6Iq2c772ZFrYvSuWijYS/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoiNEJaOXhwalBWbk5ST1Qzc0VObmMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/6Iq2c772ZFrYvSuWijYS/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoiNEJaOXhwalBWbk5ST1Qzc0VObmMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/6Iq2c772ZFrYvSuWijYS/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoiNEJaOXhwalBWbk5ST1Qzc0VObmMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_multilingual_sts_v2",
+            "accent": "standard",
+            "locale": "hi-IN",
+            "preview_url": "https://api.us.elevenlabs.io/v1/voices/6Iq2c772ZFrYvSuWijYS/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlZDliMDVlNjMyNGM0NTc2ODU0OTAzNTJlOWExZWM5MCIsImZpbGVuYW1lIjoiNEJaOXhwalBWbk5ST1Qzc0VObmMubXAzIiwidGltZXN0YW1wIjoxNzg4Njg4ODAwMDAwMDAwfQ%3D%3D"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "hi-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/hi/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031726Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=1b61baef589a66b0dc1252c73cb3de639123428ed43683fe74970df30e04c5a1d0da843e586a31b97dc01b57963d8fc466abaaec885d76adcd388d2bbcf5531b7e07b09ec593f8e5a628abe6bb367705317dda818217a7cd20406ca56425da44256d141cf05b08196d73e1e89e31eabb32c76636138c151e8b85dc86762441976e9b1e7004fd5793c8369fb444c746d5d933fadc85bc9c31bd49b21453b379d7dffcb80f295c1ec0dc12569a7dda1b84533a5d8238b8180d1696c03155d6be2b2ed227a055c42bed0d5495f9cc1f9ff90726b5a2a1797eed83d9f3cf9b2272d01c17d98c2f66f5a9f95f4e8beb8b3f495b24ba5470784e8f943dbd00067c06e8"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "hi-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/hi/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=1cb4295bc9ad7aab33eff625776c491b83514edf35c5584cd4ba0c642d9a6d4df17213e00b1d93ec328408b31940fc3a7684028ac80bc1b35dceb769e6acbe84115e32afe0afb07c7fd26fb245f185cf389804d7b092a8f47e1fdc8b92a18cfeb4e3afd76d8a25e2c6b944ab2ec513180f10d03a263a825cf40d3a3a688a808bb89c8a21f8f19d2b5c422c4c7ac0e6c14dd4ff8b401e3c91da71a684306bbf444334955ba84dab4c5c80367a46605aef48cee459d90fe9e29b0939890dc620837486a3712ffeb9ba233ea828958531dd9200c1d57ae5b45f528d6c1665e379f31702d2f3a6d10dbc3e8674b83f0afc8341131a9df38e08c900e68cfc3415db96"
+          },
+          {
+            "language": "hi",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "hi-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/hi/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054844Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=21b55ce3651476ce3f5692011e30e6e8b8ebf96b0fc39c42e2c1843fb58e38b87212616f954ef80d2b1716ea754132e0ac829a37834023dc9735546fb7ad21163e901f84737b32cbe678524848c1f4fdc76d60249636568b20ed99a6f6878dabfb1b32f811e5be8dc54a332503e440105110fb5cd20db57959df618bbf187ad4c817b6ac66f689cd8d30bb15eb4bd8e9d1a2c4aad2e6f7d5dc43d0f26b644719cb365374d17cfc91dd85d538474315bc3ead3bc38018434b2dd4e5eb9c5101f7e518dfd5558ab9c80550d1252a4860f6144ba844541496515bf4bfe83db8c4781d1edc11781d7fcfd6167ca51431f631e699b994153f09623eba8462536a7288"
+          },
+          {
+            "language": "hu",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "hu-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/hu/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=1e838c56e486856bfef9d024a67e6cb297fd9752348206cfa5c19d5f80fc54a843876c88c505606021e409d4ef482eca584ff7ed18da0e00a2fc855820932d6f13acce1ca5256db9bfa7cc154c1db76c8fb828982159b1e7d7aee4d727497d20bde112371fd4ac991d977701735fc4a8bd7f6ec76a1d6ef5a3a4581772585efdaf87ea0084b7442566edbedd5e1f9f90aa965ecff9855effec594bf45947104f00531d6a7c442d7953fa63d116f184e2bc5a6245c3ce40326d61cf93e9df6167787f63dee9c54dcfdd55436f4ae9466d1e597bb729b39bf59f2e3673fd6469a4b216f04b697e938a55a92b9ba1b5445e9e788d0ea82e9b251179e260ab56e701"
+          },
+          {
+            "language": "ta",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ta-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ta/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031726Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=34b0f8e8578e67d77b59579f4c515688bd19850ea864bf4a73342895bf7adcf7bc05fe5c7f75466eb66d04ee6e9525c5e05d2303732d505e1122c521ae06f60aef3eb0faebdb07fe2713b765abe984faf77be336e31e92e3993507cbcace9c4501bf12f73a44dd77be966181912987238c33c4db69da36e8dfdacd6266e8d6c9e5accf7dcef159913c0daf7628f850c077622ed50f1808c402cc5111bda8ae791de814b175fee093c039b0d30e2fdfea59ae0931f05ee71a6dacf94db235d552321110df8d8713faa320f123579fc9d8331ceba8c22a6cb4c71ea33af9804e99f9e000322a62a0707778e3dd98e752f95786f45ae1df864174af580914db99df"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "no-sørlandsk",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/no/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054845Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=78ebb66e3349cc64f4638ce021fbf29e8081859274e276321fb4e5df9818b01e0b66ce3ad5fe9622950a8d530d41facdbdd98d0272baf34f2b4c9acddcde8a2c6043d33796fd33c8e5d919b1c047cd8b6cb982f0796326fd60faaeebdb5a65c2e43083ec393a66f3354674fcbf05ece2c21bd087e07278739bdf97ae1459aa18ad21076794eb4b7c45977c93ab365f7d244e2891c0a0a1bf359f1efa953e0482e5c77ebc3ce41dcc60319129fc968845ea29dff3268e2b9ec0c1ae648dfe8974cff41703a3dfcb15cc89feeb16a278f6b3ffe9a38127e343c543f957a6c0872a3180b46d767c2a362e80e9a6e44e526dbb8ee0a6f982c9d73521be5e071da1f9"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "no-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/no/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054845Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=705e0f7a6ba70ae475da90c8e439c90b69d15d997f3d7317a51a4d1ba48ac5687018707145b925ff9a826bd09bb8b3582a4f2edd198e5ebfe12fe7e932aadccb7dc1c7240858a8ca38c46b93ef46ab0dbcf63bd2deac0991f7e049a90d0bf1dcd69a9202e4037697b0f4d00eabe30f865e2c193e6719d71d660db7c8c2e12052c3776f4b64a0f751004499929f40fb795ec5c849efd8c923279fa6c62ca86df575052323bd72df7310a9ea699f5da27f5c8d79265789fd71450bf34f22e5c8c0b2390dacc53fa64ae0fa7bb19e30e9b414bd71b424a9f18321d8ea90b737732a51707fc6ac2c7159750e4b3cc4c9df88da336c40e7be752a470e020cf9cae6f9"
+          },
+          {
+            "language": "no",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "no-oslo",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/no/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=59d64399fc8a0d183562a75098915f75c94a563d7f459bb6caf552a4cd756b7f2a8e9a4bea4dd0d4dd0e9d8f60db9c0b307c7d5688e9f3b3569072d61efc656b1c36b077f7adf6219a1d3bc569c7eda174ae45e057731b00eb2708bf26cd3993a986be1d524955649d6c02e4ebdc74256107cac3f1ea4b8ce9ff4569db9cfc9b8286f2fc0f425ccdfa054afc38fa4ee3117b6416788d20cafc0d77f20314ed066b64c6dce4c40efd8992d4c318c3cd8541bccb092965e87c8a6fbb01a7880540639353690b31ac79b1294921a93bfdab7d06c04d2425b4987a3272a853bb15b163d63534196c171e89e1f68199b5c267283553b4ad624e2531fafc6b90db4e1c"
+          },
+          {
+            "language": "vi",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "vi-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/vi/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=367ebc0486a985e9227427e3ef3c023f079c5d147424abbe6caa28a87791fb28ab7cc058a971fda5c4b8824ee34ae8654aa3f6169c7671dd8355eaf37ce6de0ffa23ed166bb17130fb4f7734ef0568e60e145923c673bfc574aa16e46fcea730677ba6d8dd8a047a705512f27e7fd0e7c3efdd76120e96a9fb65bb3f2f0982482baac517bb7ce1c3a98f6247312fde165ba05c3094d2414ea5452fbd227a97018250371b8ddba9413e35c28c66d177babf782c301d52434d887ff106c3be3528a4d83e0743ec29be72eb5c6e4352a5ccd81e4cc6c7b3f791be2bc9c17fe36b5f459704469304f58577fa1f1a49e1e54aa82b5cd6799ec73cc9b53af09d2d22f7"
+          },
+          {
+            "language": "ro",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "ro-standard",
+            "locale": "ro-RO",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ro/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T055042Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4cb934303be07b37a35f55d1aca6693562e6559efc0c90c16237e3ee2025c6f60deb533932fda10b08579cea5ab13462e5d32270c7bd1f78ead4052393c4a6a213be75212b04fca5d11a6170e8acd45ec8b4cc607d06b4a9765762b115be389cb19b088789ae94149ec3b54d9bb8831e4aed289526174c6547a0c53db5b656da7a5b9b78626d9d04dc1089312ff34513916748cf3f5c4f25819beab6bac012e8bfc634c0f55dfe604a2e2915e84b3f83f11802664cd4722fb12eca601d05a2e29df6993c3dcf1ab3fa610b0047dea7fb752b2e55d4b5c58ba852c3ee03e010ed4068d2b50599c445c2f86fb750582a507b6a698d8aa160f31513c9b05f14c74f"
+          },
+          {
+            "language": "ro",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ro-standard",
+            "locale": "ro-RO",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ro/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054845Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=3747840fc738e3023b1ef1d0b35429e1b779154c4ec4ce776420c4db63782e8f7f7d73bda35c6c0eba491c5c57b78de70d01b2df8acf40e8efff2fe7e3d893865475f1333979a9d0fae5d10d14ff8405493ad40a15fb28594912cd5adba61c500b38f5b9bb42e8967da5b4ef8b652a4e2fe9e0aa6598e512cafa895d27145f61291f0a7579cb9c85182bb02455fe578a1550fb6741cdd056ad50dbb5ae342147e2c9bffa23d01b5c5a75e03e97ed4651890ca58f9e3268563bc80c957a63e33a2235ffeb8fbee7b7f59e2825f7889400be2bcfcf1894217bb1635d972f73c5f1e8ca570fefb87684e65b902ba8033b7e0be423e3fdb53ac85dfa80c5838eb9c0"
+          },
+          {
+            "language": "ro",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ro-standard",
+            "locale": "ro-RO",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ro/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054845Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=859aa8144b0f007d5bc1d7e05805560cad19a9180e0b90ecb97b274867a2c4440466683a91b5c52143e824c14fad6d2c74de4280079564c93b45fdb6e8949055c5b2bc634c2a160f17d7c32a7109961dba41a3d5cb04da097a991ef84cfe215758a54652e0acd03f8681bc352dcfee5746c350502aab00501eb29fcd0e2c2a46d2f6c1f4db14734223320a68aa42e5915f94610aeb741f615ac399fe091cf63f1b2bb7a4ac2791d6f8c3d771f26a12f2d1adad7007175d448d5a8c7e49cd2fd346091074f6d5c60c14b06ae7cefa17a9559bab666083cd89f8a71b2580eeb2a176939a3f998d9b30f8f1cdf1784f4a7e7db993cc175ed3ee2eecbeff0d83d631"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/tr/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=9904ab295582fd0a1a739d2e422e7abafd71cac62a0303884c9a7e3b51ec7c67acb423ebf47ac4138c2173cdc2ca71772b84778af5635fe1dfbf5d1790f70a07b70951d6ee43b4b8d22b6bc3cd38ecd34b15b31e8a231b713a1839bc9a1605c67b2b7285da1098cb17fd17b6e5a99414e3fd369977d2dd8089f97a89f87332fcf73cebcb6471d0e6aad1659d113d19f68d1058e85d6bccb7b79811e596b31eb0d7a6f56d605bd8438fe881e5e7efd24197dae77bebd7c03f5d7d6e5cf7f346bdc35e665b09636124d7648e69254a2a6376396ae34d64362bb6549082ed06e9b4d7f6c67df4d72a74312421247a5f73004978c6b67c7f9785c2ff712154c3d75a"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/tr/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031751Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=86e032e427dbc6ed5649291066cea58b6c1062768571a6e8d51b64fecefa51fc14951d236137db3448a443e9dba0b051c9297ccd709f69afda84bbad6e95235013a7f671c21949ce50711bf7af23fc541e2311db117ff99c48a869775a0b036c88f32a18a4c26ef301fb903140d3b4a0630c9b0e521cba0544cab922c829d08ef14065bb44474d136ed0eb4aa83f9a5e5a38824296e695612701ece2e210d20f56b0a566bbfcf23150c2179907a41378b373d1cbcd3943466f1084ccafcbe90a605aa6b751df553ea2d6dff138c9d1a1b8051d0e96a9705e89a0cf43ab5c21b5f9c62dd7eae84d74408b3068089d080134acba124691d451ebd0878db6df25a8"
+          },
+          {
+            "language": "tr",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "tr-standard",
+            "locale": "tr-TR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/tr/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=54c66cd3ac171a99e6474b13ecc6939f9dd034b72a93011ed8dfd628cbc5d0ce05fb79df7059bfe82f72407171ce76252595e90f5730881b49493bfaa034634cec75e53f92d59f715171e15bae2828e79d7bfb04153769b09c79ec63f9e16ebb994e1431279ebed4f27951ec5e4c66c4bba02605c0ba51c97aa19d39d6a78f839a75965a9ec4951b4625765ef98fafea94a1291b75bae47f73d6a8d219ab757b8e8ad7774a2ec38b46c499128615934f80d86e6cb4f4cb9222805418319a8d1ae122a394973ba57f038e789f7214203375af6e1e18fa8f3328200aa01bb4efc2921933ae4992a761050e29bf0178679dca12e6e8ce44fb13ff8d34bdbebf613a"
+          },
+          {
+            "language": "id",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "id-standard",
+            "locale": "id-ID",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/id/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=0426886acd0bf8a3e21cf3fe6d530b79dcfbbdabf70afc958c062881624fcae58454f54b01188607d84a8d78eebf8ffec4404f1bfc6097bf08c5d0a36723a3ae4555c121ec36725c37a020b3d3615dbaefc3676d243d23dfbd9bb2eac78a1ec1a94df7f81be0033f5dbe6227f0668412b1ee84922af44143773a2f3a00a6e9fa70b62bd051ffb37a37c6a2363c9dddf4718c9527137e08f76642bdd8101158a691d390d3010f695b26bccea2415b3ea92061d4b0df3d584257911ac6b30c32b668866c63261831deb27831c22f1ef18a967551fa35131909b222ebbcb95e8e87dddccae36fb3ed3fc37ae0f86b0767c015c6d46e1170b59303ff03cc8a52c62a"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "ms-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ms/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=7eeb3c43351e3d2d9a3189d4d133d8f55146dfc428638fc0a4048b0f98ede92ac6a94c16d8ff85f362951416d4f07fda46c130a9cf39d11f141ff0c0542d3dc8b901586c44f4b320343423adfd733cf74a9e9ec410582eaeb77427a307a5bf2d3fbe745535887527a840e17426e5764ec84f1db94ad73c81edc3e197de2cad5c0c7f85b094e01379cbebc5480d768d1cb8e98c5de5596140dca1363a04905a6e0fea96c63aad6acf0139a52c8809d1b31469a0755313cbebbc8f403817845abcafecd7561d70f4a75d84d8a21fff3d9c468a4a48596599ec13dd8db394d2fb3a250663c7efed05354ce372884cf31a865241e99682178b62014a19b6644c37a2"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ms-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ms/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031726Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=6fb3eb2f4bc11634274387295dbb987aa3c254446a42458e157212a8f683b46c50890ddde19c7442d193c8f0bd392e94261d9df74ad50d56bd239a826636e71cb5150a87e1df0527ac6574a10666a094d72559bcd0c9bca566ef15a34190ba5c6741a6fc9db8ecc7f70b4ecd2201f4db65ba2554a25ed3c8464401834ef7c528eb3d0708affd3ccb48106ef1042649028fa8dfd18f9dffa9d4821be7f465d3804dfd6191873c6a1cdb1d59bc0977154728644959d373926cebe9b381841ddb1703697b52ce5f81fcff49e3e96f4a2d6465911b39ad06106764b33ab9421e8d2761a323e0fbdc140722ad6586e997f441aa44f7f9780348b08e9dd0baea8e3023"
+          },
+          {
+            "language": "ms",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ms-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ms/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031751Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=4774ba5eb68ff062789b635aa7cd58ca4f49341928c8cee647867bd6b4a00664b1115d18a9b13995a325f42c735d64c31e31688cff5bbf1b1bf7890a7a8d409ed4c98d4c81f229ed9f17f975ec26f58934eac866fc8ecf62c78bcaca72911459733876c91860efe9bfe7d4898d57f8c115f62e86cdc633ac936bbf8a2f2215007a0221cd624f097845d2391091a302a810a9d8cbc6e98b8736e9ae797d1339eaee4739024575d4b0f3af44d19d74a925f79a629633a9e236cf2cb1a90f0537befe3995883608ebf7152a48fed8bea79d41099fbc651d30ecdf5059b99c43c09eb6917a67db50efebd2157bb705b5ca15f9983b1d5ffa0b07d33cc08a714dbbb4"
+          },
+          {
+            "language": "ar",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "ar-modern-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ar/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031751Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=98873e0a02e4633f03e1d148d2a05804832ef9844ccb4cae80636c476ad3bc439bbdfdc5a227cdb209a0d6974791a644c3a5901d641b9f7ac49f77e5e12a1c9684e412346dcf37536e36e0d7ef7222c18e5a88dfb03e7176a6f4a4d0668b2ebc32fdcdd4a382425f9fc4331676992536dbaa3915582291a2bc7951dc34984452261c5f84d2e2981915ab62397436c23572031f6c1746110d73914dc142df965fe43f4ecfbc7541726908e7fdb911adeadd521b2a2001184a152fd0abd3bb41e20e7183a2fda0f20bd14496f88ae44bc0a94168ff2665a4e93bcce38cb2df721067ca063806a366b35f71dd5678179831bc449a6e69ad3e42adee599613fe8782"
+          },
+          {
+            "language": "ar",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "ar-modern-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ar/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031726Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=566faefaef4500608ede8a6c9188e1eecd952cc6104acf9d52905d67ac943f42cc869c8fa4a786908e264e3b39a82e742b4c3ce27af44cfaa491031cfb15946a86bc4045eb47337bc3066f1b90782a49e3e19511cec6182cb2b4d64acd21ef837494cd5a57cc7b291008639b84306f7f250b286cbecd40f364c62641d859188adafc364f02e5843029cd0586fd5cbe872d062b65e89b6cfe98cc99ed55f2d8f80ed99435d0bad2cecf3663c73283f2240148d2c99d7417eabd26989e45ee99c8c56214cf014092120ab750c093e315fca86676212ef8ed648022cc0d36c77c6d781899ae04e3827a58ec2d744243a868f259e32dfe4b73715e7265dc385944e1"
+          },
+          {
+            "language": "ar",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "ar-modern-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/ar/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=208e660b7625d847931c8e4b3d68d59b485e7cf0f70f37c3caf5999dca82fa308d1a6d2ed6fb02681bfdc483bd765bf35b5bc713b6cd1bab87306c64aa598892c2e5dbb2ec9091258eba87900e11859b399c766af03811fe5da6993d840b4ceee52b8fded24a24bbe0fcced8c4221fccec399baf7a277266a0b17cb9e8ce7a68052b3ba96183ca6921d0d5e594e40ecfd309ce8bf2320b646cbc23ece4a59e481c2377aaf213ef8b2d5f4a6ec20799f9ceb8fbb5d7a8012dd31e8c7aaaa63bd92a9c6a0f289f181a9b5ef4eeb8b8cbd0f7be4618dace7cb8010e9ccb40a57f8c49b7cf5341c506830f0ae38151efc3ce8307af50320371513c5e293341b6fbe0"
+          },
+          {
+            "language": "pl",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "pl-standard",
+            "locale": "pl-PL",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/pl/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031751Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=c603d86cd2f677112ad91dc0577159fdca1869f9e3225c818737aa44a27a9b64895cab39412ba4b907cc8e3d46bc717093109f82997a890570ee4582ea9f0351b5f62b99a26aab9c8416b1ab95a4f9869585fa238b948763886eed5f8bea7cb23c47d0e5a8f72ce54e796a685d95ab523780fcf576108fa0e53ce7ba2ed3d26889ebef0463dec7abf5b4b4ddf5b0bc9201f5280959ef8e26275379d74f4890ae48572b750ccac688c61f00d98834fef5ef843f9a6141947438d2292300a4999bd6f2419164fcd6cd15deca46ead200025d03c47229949dce81e69c1f682f57ee4fddd5eb0b6651bee98c7899f8ea65379828c8c6541749ac94bdca046e634a0c"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "other",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/es/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031751Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=b7f41484ca996bb30608a37670ebb8b4976927bad910d29449786d2fafbf39469f6e1e2f8109780bead382a911d015c30f6ba60b6467d5b0298d7c1eed27b1f748a23fc9ad9fb3276b655269d6d86ed68736b0368599372a5a98a833fa1688a2340a39114bfb0ac93a441b9ec88a5e449e2dd960b711110810d2931a5669c226a0d0c2a273921b710baefef73dcf34e3875a4fdd0a8f77781a8f94808eb16ddc60731a4f5f87cc564ed98cde5e143e5e78b21be2ae1756fe08f75e96b7bc631190aae66c330bc7f488f0d6c74a3dde80ba708f9fe694848dfc2b684d5474f92431a25dba6587c70e1ce092f3340ecdeb0fcb49101bc9bcf324bb49e65419686a"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "other",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/es/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054845Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=0ed41defca8d4c251573b4e43050c4c69f3716c8825bb9e00811444cb742cf413af497b7167ef3db663310cbb5b52b341cbdf23d029dfea2ead3e554426fbcc9dc6fa3cd0332d042fde91cebcb0175af884946965ad92f46ef85a75be0130abefdac644cbd6e8c5d621e05b421c433408577744bde1db4ac5c782791cb56fdaca618440a8cf5b66801936bcebd0a7a56294908c9827e9aea8fd9512036e9ec861da600eb5f7ca6c884c90786a60eb7f76373752dac7dad46e5fc5d9806df3d9891bb1581ab93dfcd53b15fdc1b958dd8ac18fe439d09e5591de65e67bfc15481a0486a67051bb39f84fec4bc89ff39052e17e64f7a507ad07b503b17ce391444"
+          },
+          {
+            "language": "es",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "other",
+            "locale": "es-ES",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/es/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054947Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=7fb7f29d1e521282c0edbd39f104984050a2dd8242a507728262aff5d2c1788b5b74c6f1ec908ec9b2ebd96f67b892cc719b786f5f16236b6adbe138bd7a958698d51d9df2b9a2cfb8d70b20d5dc052bf9244f6725df702484a8c1b94a91e165c5e9302bcefc873c5a6d4f342bfefc5bdcadcb0770df1b8aa6dcbf03aaa8872bada8fe03d0a5950ad2fbaebc965d76ca35838228fc9abb6b96812e0762347b7f113f1701138aa60296567bde0a2ec418ff9b2fb63b219ebfcd7083508808c6f789f8fddf870907314a6223a48345c4677fe94e9430e7e9c9641467d869dca51d4f9bfc91fd531f6f4ba86fa1a428a399f4a77ece4120a81acd4c575e5a95d934"
+          },
+          {
+            "language": "zh",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "zh-standard",
+            "locale": null,
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/zh/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054845Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=5e16231794a4054515a4a45bcbc73a54b963ab59643929418b8b32155cb509a7980801dcd3792c6d1e9fd7a321494142d9507a1b425d5d7b853cfed97015929b3c2306344cbb5bdff7b17bd18728db3bead558db1585275bfa9d18d8dc380dcffd244d069547395447e715092f7f3c4c47e8925d0ac73e00ce81d5c469c917b8555450846a0ce96db1a9a354a014867729ad0af98cda918b6d88d48589c42c59bbb5241e80e89b5a57d9b0600e6a482725d94e6912f2d4325faf52d58c2b0ddde4d3ffc257b5395e0c6f3e0b96373f8e7d5526f9d7c7a3a8c3cd862e71c37d1fecfbf8e7bffeeb1947b000aee58cca8a5054cad4e0072763bd50061216abc577"
+          },
+          {
+            "language": "en",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "en-indian",
+            "locale": "en-US",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/en/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031751Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=a504e2b82f4007774b648a1f85823ee84c840da4823169d6846f16f6db792d2ee5bac7b5f63cb7b8301cd45cf3112dfa10f1a86aa49e32abbce019be980832fdc276904d681dc4f56c2fb1198290dca5224ea72494220a8a93bb3dbe6c560812976a496f6d738ed662d95cb60ea5ad1e75a3a75949f96d4fef3b95f8c6d3768e064934a9f668ee112d62bdc7a78193a236f5169f3031eada3b48a54921bcc2a8a17f4c2f0217b89f635e6c4a88a8737dbbccd27ae8bdcbdfe93fd5689729d9ad28a1f1e70796c02ede300a865ba613839df42b2634035180c82ec580182819826a43fc6e5200f31957af4a140c7960ab739f96a84bf3fa5530b3cbe2ea4c20b5"
+          },
+          {
+            "language": "en",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "en-indian",
+            "locale": "en-US",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/en/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054951Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=2a030855a1a78a5384e5ea31e2a82293a9c7aeb565183000f28911e6a56580130061c3c3642bdcc25b99a8c7dfb4915c6751591ddadd0137887f26423f51c3a7f089d6e8cd8e62ab0788976ebb8dad5962a978551665f7381813f5ac62d957f6fceef1b420c3f2e2a6edbcabdab4244d82490a0d01148f13918eb2eaea6ccdf3c5ec22b7aeb88027c292b7ed68d4a59023af83ba91f71954c29c4940daf3476f1cdf12c6bef034690b0744bd6eefe03656c5b3188b796c279a1384304d4e00fa1d504b43801740c7e39cc4903f782ac50437a239a4b663fcee3c70554fbcc5ec2b863c19d956e833cd48015f0988a019fce0f4b817be7080724072093f3e3525"
+          },
+          {
+            "language": "nl",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "other",
+            "locale": "nl-NL",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/nl/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054845Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=aff6ead3cb43b00f5de3c567bb64d1bf1ba3a7189c3da2dd3383dbe1e362eb63db6510272a7090629004c322a207d6cad350402bb2eb46ff5b3a6598ace0e0a598fcd80396b51ba61765400d017fb8cc7079187adc83a91b03e9c64731e074054c77444066e69f6a519535be2c4f82415c0ec82da03de53520f33d7aa8eb7d76e2fb3ddaf0dbc957e49bd8e5a8ebbd2d23fbaef44a3384907595517a6d8732ae771c9c12621f24eefaa2d6c5a092d41caf780666fe0af245eeb6216802166db66feefc77fdd30399923d7930cda20f93856324f3c875403890e0d0ebf40b1e0398f4694b3b47f10bfdfc49ade4be5d74aa2130c6a35321a292893e0d2b6e4805"
+          },
+          {
+            "language": "de",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "de-standard",
+            "locale": "de-DE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/de/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260905%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260905T031751Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=391cf83a4f4d0956bd70620c256f4f2cbeacb66271d53a6a937aa023ba8e3382d509f5f7864b74c263fd55af46545027850d0d0b222c6f997da71792ab0e28fa603d2e944a9998aa3e1a99a1dccbecc6e9ed028c909c5801766846121587e2d52c354866649ff0608a68e33f1eed91d8a59c3ecfc2719c18055cd89cf53f4eec99bb5434749f549954773085733e1482c455d8145c15a93737e185dd019608a86a4726d77f665d60d9978f73b9c61a95a35d5c28d4b269b187663d47ec16020a738b695099add83bb989ca94602a2310b542eda95404794f334caa8b9701cf3866f660fa589ec611285e1fd464ad710506f56cfda226bab27f190dd3532f4614"
+          },
+          {
+            "language": "de",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "other",
+            "locale": "de-DE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/de/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054951Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=27b4fbcc96cad391bd96202e21251942e41f0181f9608029aeea5b95075cf28bae5abd967c3f5bf0feeb8fb8a90e6b3121bc4735cd9519e1f1f654df2572b8a725b4998a530beb440cc5c4338b15c4cda593031c62a1f3a5239874c697aa9a8d2583da74334012675fcefb3e4801706c7ab96836dc2b8ef97a257466bdd0d751aeacc4234e96cd7340cf007faf4d4c54805ab1201c69c3f292eac4452566fe521549ef03107e4b645df386c54b3491701f3beb668130f1b0da5d9d437b30681906b6a28954c9f4492ae4b03f2c8a14f078b95df1a427c88b124ad32e6132d56275e744a78143b39f93d9bc1178bb59f5e27a8d45a52843fc12e2078f64f98fef"
+          },
+          {
+            "language": "de",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "de-standard",
+            "locale": "de-DE",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/de/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054951Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=db347397d0749ca837ba579c3272b093bdb7575db4f86f3ccbc61fff3d1a79df68781eedf640cf4f4b84d3d2331c1ea74af7c35de6d0b04c638d3166b759209f5d46230f427a094826a4083c0b6414ec0917b6727751f7a43a0bb9d8d3fa0f31c30d59daa78d217ba3e18fe652d2a32a6a26f803435ce3be12da05cef854a7cbfac1790683d4e604af3df0702d01d10d72cee0f9cfb0a66c5ce9656f7421b4dc3e08f3b1f727f06e8ffa7efa8bc2ae52676c53c64c5c3f775fbd78ec46902b98e06bbe2f02a4f6b0b42c6601324e90399f7cd191deeabf7eb2de48c38c8c9305eb29e238640210493454f052a0099d38ee5f657514b5d4a30fcec6b1d19ff0fb"
+          },
+          {
+            "language": "pt",
+            "model_id": "eleven_multilingual_v2",
+            "accent": "pt-brazilian",
+            "locale": "pt-BR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/pt/eleven_multilingual_v2/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054951Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=ccefa1765a978b24a6bcfcd8a21490a02cc6bec0966fb4acbcd4ee42c687b88cfcde503a204e8ba2602af688ea7556512923435035ac419a50ec444507a84ca71d4ecb5abe3fa374fb24ef862c730f45a38ae5f1459132a8967c716048268a61735eecb878e3067bedfe4a2c67c8745b1ca72560ab219e8bc894723853e61e3ddcda4f5d08adf4bbe88cf1d410575aba2ec93ae3d519f9cee43a94b77bd584d76b36e3aae493a0e55a5756184a5def3c10a13daf883f0aef21882c6bc5f12977bb5a5162b4b3f8a72496c97948c876fa06917e3bf709a5727cc2749ed9ace961d55a622163044e4fab9581eb8e78483b5de5766f76a2319b6c4bbdff1aff5635"
+          },
+          {
+            "language": "pt",
+            "model_id": "eleven_flash_v2_5",
+            "accent": "pt-brazilian",
+            "locale": "pt-BR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/pt/eleven_flash_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054951Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=78e0f7bc5ee0d8a503b22ab786b1354db96e5f091537119b2b6febbf8bd18d70f34042ffe94ad9853484434183fb108f58e812b756de42df29e77c217331de311e0bb4f23a851d10037b764ea1d43020e7e715a68107e56fa3a20d68a4efb4bf097a256a1299c94fa2cc9c7896c70caa50e66928a4a0d8b9e3174a256116cb3718c4648dba5d416c5933c4efff274a4487cb5668bfd6c5fb7ac35336f6bd6c445c2e4b1fb8370b8c002ea1dcdcfe66e53627aee2a837de713de5cb931dcf08d0a2fbc447a0f708c212b9471591bc0f21db7f6b0ef7d7f342d7b4015cb5fef7e042e7d12131914578cc2cdf8bf39b5f47f8941c2dcf99dd9e17b9cb7a8c9ae077"
+          },
+          {
+            "language": "pt",
+            "model_id": "eleven_turbo_v2_5",
+            "accent": "pt-brazilian",
+            "locale": "pt-BR",
+            "preview_url": "https://storage.googleapis.com/xi-productions-voice-labelling/voice_labelling/6Iq2c772ZFrYvSuWijYS/lang_compat/pt/eleven_turbo_v2_5/audio.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20260904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260904T054951Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=host&X-Goog-Signature=8f35b2b0980a9ca7835f292a25aa0af4837253d11a741806439d0330aff53d071474f1ad4d4ccd9f8eb954fa6c9b7c214179af13b01eede08fd6cb1850d3d9d64fccfa48ba423097faf3b98cdcbf2bfec512f96daacf6973f25c5a4380328f87098d43edf991e968772f29ddce3045c04329062dc08ad05b9153f7eb68753dd52b0dbf2487a5b7ef9d93859b723baabace8656fd27e44c55c5ebee06dd85c650d9c4f70b315fce6bda5e4c4d5c4c71297b2819e4596ace4c92a95d25d840c10852c4afbff0b8af089aebfc1c6cd5a18d6bc3da573136143911fd65ff40ad213fb202a0f4a5c6ac1338186d54c16a25dbba4e18974cf82d7756b6f0876a4a5b37"
+          }
+        ],
+        "age": "middle_aged",
+        "accent": "standard",
+        "descriptive": "deep",
+        "use_case": "entertainment_tv",
+        "category": "professional"
+      },
+      "selection": {
+        "score": 59,
+        "minimum_score": 20,
+        "reasons": [
+          "gender-exact",
+          "german-verified",
+          "age:middle aged",
+          "use-case:narration",
+          "traits:2",
+          "usage-proven"
+        ],
+        "matched_profile": {
+          "gender": "male",
+          "role": "رانندهٔ تاکسی محلی",
+          "context": "local taxi driver in Berlin"
+        }
+      },
+      "assigned_at": "2026-09-06T10:22:55+00:00",
+      "public_owner_id": "7398804d9eaf2f463899a907587c33a390591775784f87857b6d0e1e4e3e66f6"
     }
   ],
-  "updated_at": null
+  "updated_at": "2026-09-06T10:22:55+00:00"
 }
