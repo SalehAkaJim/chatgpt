@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 os.environ.setdefault("NOVA_COURSE", "de-fa")
 P = Path(__file__).resolve().parents[1] / "nova_tts.py"
@@ -51,6 +52,30 @@ INSERT INTO turns (lesson_id,character_id,sort_order,role,text) VALUES (v_l_1,v_
             rows = M.parse_source_file(path, root)
             self.assertEqual(rows[0]["character_name"], "Lena")
             self.assertEqual(rows[0]["character_gender"], "female")
+
+    def test_character_gender_falls_back_to_voice_map(self):
+        sql = """-- SERIES 2
+SELECT COUNT(*),MIN(id) INTO v_count,v_level FROM levels WHERE cefr_level='A1';
+SELECT COUNT(*),MIN(id) INTO v_count,v_module FROM modules WHERE sort_order=1;
+SELECT COUNT(*),MIN(id) INTO v_count,v_chapter FROM chapters WHERE sort_order=2;
+SELECT COUNT(*),MIN(id) INTO v_count,v_c_daniel FROM characters WHERE name='Daniel';
+INSERT INTO lessons (sort_order) VALUES (1);
+SET v_l_1=LAST_INSERT_ID();
+INSERT INTO turns (lesson_id,character_id,sort_order,role,text) VALUES (v_l_1,v_c_daniel,1,'character','Hello');
+"""
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            path = root / "chapter.sql"
+            voice_map = root / "voice_map.json"
+            path.write_text(sql, encoding="utf-8")
+            voice_map.write_text(
+                '{"characters":[{"name":"Daniel","gender":"male"}]}',
+                encoding="utf-8",
+            )
+            with patch.object(M, "VOICE_MAP_PATH", voice_map):
+                rows = M.parse_source_file(path, root)
+            self.assertEqual(rows[0]["character_name"], "Daniel")
+            self.assertEqual(rows[0]["character_gender"], "male")
 
     def test_discovery_is_course_scoped(self):
         sql = """-- NOVA v9 / SERIES 001
