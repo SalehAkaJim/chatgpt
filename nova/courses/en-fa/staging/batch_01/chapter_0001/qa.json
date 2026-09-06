@@ -7,7 +7,7 @@
   "chapter": 1,
   "batch": 1,
   "status": "PASS",
-  "audio_status": "pending",
+  "audio_status": "complete",
   "counts": {
     "lessons": 4,
     "turns": 38,
@@ -62,9 +62,9 @@
   },
   "evidence": {
     "validator": "PASS: python3 nova/validation/validate_content.py chapter.sql",
-    "mysql8": "pending CI execution",
-    "turn_audio": "pending workflow",
-    "word_audio_lori": "pending workflow",
+    "mysql8": "PASS: Nova Content Quality run 34030603742",
+    "turn_audio": "PASS: 38/38, 0 failures, run 34030603756",
+    "word_audio_lori": "PASS: 54/54, 0 failures, run 34030603806",
     "manual_content_review": "dialogue, cues, distractors, grammar and transfer reviewed against v2.1"
   }
 }
