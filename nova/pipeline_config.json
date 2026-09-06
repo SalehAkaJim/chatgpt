@@ -18,7 +18,7 @@
     "reason": "explicit_resume_from_exact_canonical_v9_0_archive",
     "resume_requires_explicit_unfreeze": false,
     "resumed_at": "2026-09-04T17:15:54.269Z",
-    "next_series": 99,
+    "next_series": 105,
     "restored_at": "2026-09-05T05:19:22.170Z"
   },
   "content_unit": {
@@ -83,8 +83,8 @@
     "retry_failed_chapter_without_advancing": true,
     "required_database_revision": "v9.0",
     "schema_upgrade_allowed": false,
-    "next_atomic_chapter": 19,
-    "next_series": 99,
+    "next_atomic_chapter": 25,
+    "next_series": 105,
     "execution_mode": "strictly_sequential",
     "reread_github_state_between_chapters": true,
     "commit_each_chapter_after_qa_pass": true,
@@ -133,7 +133,7 @@
     "language_specific_TTS_preflight_required": true
   },
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-06T06:10:00.000Z",
+  "updated_at": "2026-09-06T07:12:00.000Z",
   "token_mapping_policy": {
     "version": 1,
     "coverage": "one token object per visible whitespace-delimited German surface token",

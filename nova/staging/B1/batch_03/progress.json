@@ -1,81 +1,104 @@
 {
+  "course": "de-fa",
+  "level": "B1",
   "batch": 3,
-  "batch_artifact": "nova/content/B1/batch_03_chapters_17_24.sql",
-  "batch_publish_condition": "all chapters 17-24 PASS and cross-chapter QA PASS",
-  "canonical_database_revision": "v9.0",
   "chapter_range": [
     17,
     24
   ],
-  "course": "de-fa",
-  "cross_chapter_qa": "not_ready",
-  "failed_chapters": [],
-  "last_completed_atomic_unit": {
-    "chapter": 23,
-    "series": 103,
-    "status": "PASS"
-  },
-  "level": "B1",
-  "next_pending_chapter": 24,
-  "next_pending_series": 104,
-  "passed_chapters": [
-    {
-      "chapter": 17,
-      "qa": "chapter_17_series_097/qa.json",
-      "series": 97,
-      "status": "PASS",
-      "title": "Wir wissen nicht, ob wir weiterfahren können"
-    },
-    {
-      "chapter": 18,
-      "qa": "chapter_18_series_098/qa.json",
-      "series": 98,
-      "status": "PASS",
-      "title": "Obwohl es spät ist, fahren wir weiter"
-    },
-    {
-      "chapter": 19,
-      "qa": "chapter_19_series_099/qa.json",
-      "series": 99,
-      "status": "PASS",
-      "title": "Wir hätten lieber eine direkte Verbindung"
-    },
-    {
-      "chapter": 20,
-      "qa": "chapter_20_series_100/qa.json",
-      "series": 100,
-      "status": "PASS",
-      "title": "Am Ende sind wir doch angekommen"
-    },
-    {
-      "chapter": 21,
-      "qa": "chapter_21_series_101/qa.json",
-      "series": 101,
-      "status": "PASS",
-      "title": "Ich fühle mich seit ein paar Tagen müde"
-    },
-    {
-      "chapter": 22,
-      "qa": "chapter_22_series_102/qa.json",
-      "series": 102,
-      "status": "PASS",
-      "title": "Der Arzt hat gesagt, dass ich mich ausruhen soll"
-    },
-    {
-      "chapter": 23,
-      "series": 103,
-      "title": "Wenn es nicht besser wird, komme ich wieder",
-      "status": "PASS",
-      "qa": "chapter_23_series_103/qa.json"
-    }
-  ],
-  "production_state_advanced": false,
-  "published": false,
-  "schema_changes_allowed": false,
   "series_range": [
     97,
     104
   ],
-  "status": "in_progress",
-  "updated_at": "2026-09-06T06:07:00.000Z"
+  "published": true,
+  "production_state_advanced": true,
+  "passed_chapters": [
+    {
+      "chapter": 17,
+      "series": 97,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_17_series_097/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_17_series_097/qa.json",
+      "database_revision": "v9.0",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    },
+    {
+      "chapter": 18,
+      "series": 98,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_18_series_098/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_18_series_098/qa.json",
+      "database_revision": "v9.0",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    },
+    {
+      "chapter": 19,
+      "series": 99,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_19_series_099/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_19_series_099/qa.json",
+      "database_revision": "v9.0",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    },
+    {
+      "chapter": 20,
+      "series": 100,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_20_series_100/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_20_series_100/qa.json",
+      "database_revision": "v9.0",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    },
+    {
+      "chapter": 21,
+      "series": 101,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_21_series_101/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_21_series_101/qa.json",
+      "database_revision": "v9.0",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    },
+    {
+      "chapter": 22,
+      "series": 102,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_22_series_102/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_22_series_102/qa.json",
+      "database_revision": "v9.0",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    },
+    {
+      "chapter": 23,
+      "series": 103,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_23_series_103/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_23_series_103/qa.json",
+      "database_revision": "v9.0",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    },
+    {
+      "chapter": 24,
+      "series": 104,
+      "status": "PASS",
+      "sql": "nova/staging/B1/batch_03/chapter_24_series_104/chapter.sql",
+      "qa": "nova/staging/B1/batch_03/chapter_24_series_104/qa.json",
+      "database_revision": "v9.0",
+      "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2"
+    }
+  ],
+  "failed_chapters": [],
+  "next_pending_chapter": null,
+  "next_pending_series": null,
+  "cross_chapter_qa": "PASS",
+  "batch_artifact": "nova/content/B1/batch_03_chapters_17_24.sql",
+  "batch_publish_condition": "all chapters 17-24 PASS and cross-chapter QA PASS",
+  "status": "PASS",
+  "canonical_database_revision": "v9.0",
+  "schema_changes_allowed": false,
+  "last_completed_atomic_unit": {
+    "chapter": 24,
+    "series": 104,
+    "status": "PASS"
+  },
+  "updated_at": "2026-09-06T07:12:00.000Z"
 }

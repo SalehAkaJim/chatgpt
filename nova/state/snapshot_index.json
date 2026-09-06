@@ -1,9 +1,9 @@
 {
   "audio_checkpoint": {
-    "status": "pending_series_096_audio",
-    "through_series": 95,
-    "turn_audio_entries": 1738,
-    "word_audio_entries": 606
+    "status": "pending_series_104_audio",
+    "through_series": 103,
+    "turn_audio_entries": 1930,
+    "word_audio_entries": 767
   },
   "audio_policy_file": "../plans/audio_production_policy.json",
   "completed_levels": [
@@ -17,9 +17,9 @@
   "content_freeze": false,
   "counts": {
     "characters": 24,
-    "explicit_targets": 307,
-    "storylines": 55,
-    "words": 852
+    "explicit_targets": 339,
+    "storylines": 56,
+    "words": 1017
   },
   "course": "de-fa",
   "current_course": "de-fa",
@@ -62,7 +62,7 @@
   },
   "next_level": "B1",
   "next_queued_course": "en-fa",
-  "next_series": 104,
+  "next_series": 105,
   "production_status": "generating",
   "project": "Nova",
   "published_batches": [
@@ -85,6 +85,17 @@
       "series_range": [
         89,
         96
+      ],
+      "status": "PASS"
+    },
+    {
+      "artifact": "../content/B1/batch_03_chapters_17_24.sql",
+      "batch": 3,
+      "level": "B1",
+      "qa": "../audits/B1/batch_03_cross_chapter_qa.json",
+      "series_range": [
+        97,
+        104
       ],
       "status": "PASS"
     }
@@ -118,7 +129,7 @@
   "schema_version": "v9",
   "series_range": [
     1,
-    96
+    104
   ],
   "shared_mutable_state": false,
   "snapshot_purpose": "canonical generation-resume state",
@@ -133,71 +144,7 @@
     "sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
     "static_scan_status": "passed"
   },
-  "staged_series": [
-    {
-      "batch": 3,
-      "chapter": 17,
-      "level": "B1",
-      "qa": "nova/staging/B1/batch_03/chapter_17_series_097/qa.json",
-      "series": 97,
-      "sql": "nova/staging/B1/batch_03/chapter_17_series_097/chapter.sql",
-      "status": "PASS"
-    },
-    {
-      "batch": 3,
-      "chapter": 18,
-      "level": "B1",
-      "qa": "nova/staging/B1/batch_03/chapter_18_series_098/qa.json",
-      "series": 98,
-      "sql": "nova/staging/B1/batch_03/chapter_18_series_098/chapter.sql",
-      "status": "PASS"
-    },
-    {
-      "batch": 3,
-      "chapter": 19,
-      "level": "B1",
-      "qa": "nova/staging/B1/batch_03/chapter_19_series_099/qa.json",
-      "series": 99,
-      "sql": "nova/staging/B1/batch_03/chapter_19_series_099/chapter.sql",
-      "status": "PASS"
-    },
-    {
-      "batch": 3,
-      "chapter": 20,
-      "level": "B1",
-      "qa": "nova/staging/B1/batch_03/chapter_20_series_100/qa.json",
-      "series": 100,
-      "sql": "nova/staging/B1/batch_03/chapter_20_series_100/chapter.sql",
-      "status": "PASS"
-    },
-    {
-      "batch": 3,
-      "chapter": 21,
-      "level": "B1",
-      "qa": "nova/staging/B1/batch_03/chapter_21_series_101/qa.json",
-      "series": 101,
-      "sql": "nova/staging/B1/batch_03/chapter_21_series_101/chapter.sql",
-      "status": "PASS"
-    },
-    {
-      "batch": 3,
-      "chapter": 22,
-      "level": "B1",
-      "qa": "nova/staging/B1/batch_03/chapter_22_series_102/qa.json",
-      "series": 102,
-      "sql": "nova/staging/B1/batch_03/chapter_22_series_102/chapter.sql",
-      "status": "PASS"
-    },
-    {
-      "batch": 3,
-      "chapter": 23,
-      "level": "B1",
-      "qa": "nova/staging/B1/batch_03/chapter_23_series_103/qa.json",
-      "series": 103,
-      "sql": "nova/staging/B1/batch_03/chapter_23_series_103/chapter.sql",
-      "status": "PASS"
-    }
-  ],
+  "staged_series": [],
   "state_files": [
     "characters.json",
     "storylines.json",
@@ -215,5 +162,5 @@
     "words_state_12.json"
   ],
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-06T06:07:00.000Z"
+  "updated_at": "2026-09-06T07:12:00.000Z"
 }

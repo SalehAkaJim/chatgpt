@@ -1,0 +1,84 @@
+{
+  "artifact": {
+    "bytes": 913130,
+    "path": "nova/content/B1/batch_03_chapters_17_24.sql",
+    "sha256": "501a83d71dacef2df81e4a01f2f38ef453f53bed5156820dfe44ff923fc18939"
+  },
+  "batch": 3,
+  "canonical_archive_sha256": "11e5b8834dcee6002ccf6981650069309ba9df0bdb10063b82fcc5dfb293e8c2",
+  "chapter_range": [
+    17,
+    24
+  ],
+  "checks": {
+    "all_eight_chapter_qa_pass": true,
+    "canonical_archive_consistent": true,
+    "chapter_contiguous": true,
+    "database_revision_exact": true,
+    "explicit_targets_unique": true,
+    "lesson_counts_complete": true,
+    "level_progression": true,
+    "new_word_insert_tuples_unique": true,
+    "repeated_insert_declarations_guarded": true,
+    "schema_ddl_absent": true,
+    "series_contiguous": true,
+    "storyline_continuity": true,
+    "word_audio_eligibility_policy_v4": true,
+    "word_manifest_zero_ineligible_entries": true,
+    "all_used_word_tuples_materialized": true,
+    "new_word_definitions_complete": true,
+    "tuple_set_differences_empty": true
+  },
+  "counts": {
+    "activities": 256,
+    "chapters": 8,
+    "explicit_targets": 32,
+    "lessons": 32,
+    "new_word_tuples": 165,
+    "tokens": 1314,
+    "turns": 192
+  },
+  "course": "de-fa",
+  "database_revision": "v9.0",
+  "errors": [],
+  "generated_at": "2026-09-06T07:12:00.000Z",
+  "level": "B1",
+  "project": "Nova",
+  "series_range": [
+    97,
+    104
+  ],
+  "source_main_head": "724a9771a6f5a2cb181067f2609abad005587ba8",
+  "status": "PASS",
+  "storylines": [
+    {
+      "key": "lena-ben-b1-travel-problems",
+      "lessons": 16,
+      "orders": [
+        5,
+        20
+      ],
+      "series": [
+        97,
+        100
+      ]
+    },
+    {
+      "key": "mia-sara-b1-health-routine",
+      "lessons": 16,
+      "orders": [
+        1,
+        16
+      ],
+      "series": [
+        101,
+        104
+      ]
+    }
+  ],
+  "verification": {
+    "all_chapter_runtime_guards_embedded": true,
+    "live_mysql_execution": "not_performed",
+    "mode": "static_cross_chapter_transactional_sql_and_tuple_registry_audit"
+  }
+}
