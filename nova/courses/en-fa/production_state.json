@@ -1,32 +1,32 @@
 {
   "version": "2.1.0",
   "course": "en-fa",
-  "next_series": 4,
-  "last_completed_series": 3,
-  "last_validated_series": 3,
-  "last_audio_complete_series": 3,
-  "status": "validating",
+  "next_series": 5,
+  "last_completed_series": 4,
+  "last_validated_series": 4,
+  "last_audio_complete_series": 4,
+  "status": "ready",
   "active_batch": 1,
-  "updated_at": "2026-09-06T14:58:00Z",
+  "updated_at": "2026-09-06T15:11:00Z",
   "errors": [],
   "audio": {
     "turns": {
       "expected": 157,
-      "generated": 117,
-      "coverage": 0.7452229299363057,
-      "workflow_run_id": 34038255242
+      "generated": 157,
+      "coverage": 1,
+      "workflow_run_id": 34041435137
     },
     "words": {
       "eligible": 114,
-      "generated": 99,
-      "coverage": 0.868421052631579,
-      "workflow_run_id": 34038255255
+      "generated": 114,
+      "coverage": 1,
+      "workflow_run_id": 34041435289
     }
   },
   "quality": {
-    "status": "PENDING",
+    "status": "PASS",
     "semantic_gate_version": 2,
-    "last_validated_series": 3,
-    "mysql8_workflow_run_id": 34038255257
+    "last_validated_series": 4,
+    "mysql8_workflow_run_id": 34041435263
   }
 }
