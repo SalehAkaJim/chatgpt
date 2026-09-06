@@ -8,11 +8,274 @@
   "requested_name": "Lori - Happy and Sweet",
   "required_profile": {
     "gender": "female",
-    "style": ["happy", "sweet", "clear"]
+    "style": [
+      "happy",
+      "sweet",
+      "clear"
+    ]
   },
-  "voice_id": null,
-  "voice_name": null,
-  "source_metadata": null,
-  "assigned_at": null,
-  "updated_at": null
+  "voice_id": "TbMNBJ27fH2U0VgpSNko",
+  "voice_name": "Lori - Happy, Sweet and Compassionate",
+  "source_metadata": {
+    "name": "Lori - Happy, Sweet and Compassionate",
+    "gender": "female",
+    "language": "en",
+    "accent": "american",
+    "age": "young",
+    "descriptive": "upbeat",
+    "description": "Optimistic, smiling, and carefree young woman! Even a slight vocal fry! Perfect for anything!",
+    "use_case": "conversational",
+    "category": "professional",
+    "verified_languages": [
+      {
+        "language": "en",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_v2_flash",
+        "accent": "american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_flash_v2",
+        "accent": "american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_multilingual_sts_v2",
+        "accent": "american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_turbo_v2",
+        "accent": "american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_v2_5_flash",
+        "accent": "american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "american",
+        "locale": "en-US"
+      },
+      {
+        "language": "el",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "el-standard"
+      },
+      {
+        "language": "el",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "el-standard"
+      },
+      {
+        "language": "el",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "el-standard"
+      },
+      {
+        "language": "no",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "no-sørlandsk"
+      },
+      {
+        "language": "no",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "no-standard"
+      },
+      {
+        "language": "no",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "no-standard"
+      },
+      {
+        "language": "ta",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "ta-standard"
+      },
+      {
+        "language": "ta",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "ta-standard"
+      },
+      {
+        "language": "ta",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "ta-standard"
+      },
+      {
+        "language": "cs",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "cs-standard"
+      },
+      {
+        "language": "vi",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "vi-southern"
+      },
+      {
+        "language": "vi",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "vi-southern"
+      },
+      {
+        "language": "uk",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "uk-standard"
+      },
+      {
+        "language": "uk",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "uk-standard"
+      },
+      {
+        "language": "uk",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "uk-standard"
+      },
+      {
+        "language": "it",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "it-standard",
+        "locale": "it-IT"
+      },
+      {
+        "language": "it",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "it-standard",
+        "locale": "it-IT"
+      },
+      {
+        "language": "ko",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "ko-standard",
+        "locale": "ko-KR"
+      },
+      {
+        "language": "ko",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "ko-standard",
+        "locale": "ko-KR"
+      },
+      {
+        "language": "ko",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "ko-standard",
+        "locale": "ko-KR"
+      },
+      {
+        "language": "es",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "es-mexican",
+        "locale": "es-ES"
+      },
+      {
+        "language": "es",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "es-mexican",
+        "locale": "es-ES"
+      },
+      {
+        "language": "es",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "es-latin-american",
+        "locale": "es-ES"
+      },
+      {
+        "language": "ar",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "ar-modern-standard"
+      },
+      {
+        "language": "ar",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "ar-modern-standard"
+      },
+      {
+        "language": "nl",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "other",
+        "locale": "nl-NL"
+      },
+      {
+        "language": "nl",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "other",
+        "locale": "nl-NL"
+      },
+      {
+        "language": "tr",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "tr-standard",
+        "locale": "tr-TR"
+      },
+      {
+        "language": "tr",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "tr-standard",
+        "locale": "tr-TR"
+      },
+      {
+        "language": "tr",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "tr-standard",
+        "locale": "tr-TR"
+      },
+      {
+        "language": "ru",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "ru-standard",
+        "locale": "ru-RU"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_turbo_v2_5",
+        "accent": "en-american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "en-american",
+        "locale": "en-US"
+      },
+      {
+        "language": "en",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "en-american",
+        "locale": "en-US"
+      },
+      {
+        "language": "de",
+        "model_id": "eleven_multilingual_v2",
+        "accent": "de-standard",
+        "locale": "de-DE"
+      },
+      {
+        "language": "de",
+        "model_id": "eleven_flash_v2_5",
+        "accent": "de-standard",
+        "locale": "de-DE"
+      }
+    ]
+  },
+  "assigned_at": "2026-09-06T10:22:26+00:00",
+  "updated_at": "2026-09-06T10:22:26+00:00"
 }
