@@ -1,3 +1,4 @@
+-- Audio pipeline retry after implicit character gender fix (2026-09-06).
 -- NOVA INDEPENDENT EN-FA COURSE V2
 -- SERIES 2
 -- Stage: en-fa-a1-series-0002
