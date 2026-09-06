@@ -4,18 +4,18 @@
     "generation_mode": "incremental_after_each_chapter",
     "policy_file": "nova/plans/audio_production_policy.json",
     "required_for_course_completion": true,
-    "status": "pending_series_105_audio",
+    "status": "complete_through_series_105",
     "turn_audio": {
-      "entries": 1954,
+      "entries": 1978,
       "last_run_failed": 0,
       "manifest": "nova/audio/manifest.json",
-      "through_series": 104
+      "through_series": 105
     },
     "word_audio": {
-      "entries": 771,
+      "entries": 784,
       "last_run_failed": 0,
       "manifest": "nova/audio/word_manifest.json",
-      "through_series": 104,
+      "through_series": 105,
       "voice": "Lori",
       "voice_id": "TbMNBJ27fH2U0VgpSNko"
     }
@@ -131,5 +131,5 @@
   "schema_version": "v9",
   "shared_mutable_state": false,
   "state_scope": "de-fa-exclusive-legacy",
-  "updated_at": "2026-09-06T08:10:00.000Z"
+  "updated_at": "2026-09-06T08:12:00.000Z"
 }
