@@ -11,13 +11,13 @@
   "cross_chapter_qa": "not_ready",
   "failed_chapters": [],
   "last_completed_atomic_unit": {
-    "chapter": 22,
-    "series": 102,
+    "chapter": 23,
+    "series": 103,
     "status": "PASS"
   },
   "level": "B1",
-  "next_pending_chapter": 23,
-  "next_pending_series": 103,
+  "next_pending_chapter": 24,
+  "next_pending_series": 104,
   "passed_chapters": [
     {
       "chapter": 17,
@@ -49,17 +49,24 @@
     },
     {
       "chapter": 21,
+      "qa": "chapter_21_series_101/qa.json",
       "series": 101,
-      "title": "Ich fühle mich seit ein paar Tagen müde",
       "status": "PASS",
-      "qa": "chapter_21_series_101/qa.json"
+      "title": "Ich fühle mich seit ein paar Tagen müde"
     },
     {
       "chapter": 22,
+      "qa": "chapter_22_series_102/qa.json",
       "series": 102,
-      "title": "Der Arzt hat gesagt, dass ich mich ausruhen soll",
       "status": "PASS",
-      "qa": "chapter_22_series_102/qa.json"
+      "title": "Der Arzt hat gesagt, dass ich mich ausruhen soll"
+    },
+    {
+      "chapter": 23,
+      "series": 103,
+      "title": "Wenn es nicht besser wird, komme ich wieder",
+      "status": "PASS",
+      "qa": "chapter_23_series_103/qa.json"
     }
   ],
   "production_state_advanced": false,
@@ -70,5 +77,5 @@
     104
   ],
   "status": "in_progress",
-  "updated_at": "2026-09-06T04:06:00.000Z"
+  "updated_at": "2026-09-06T06:07:00.000Z"
 }
