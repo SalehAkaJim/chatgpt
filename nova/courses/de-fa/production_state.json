@@ -5,28 +5,29 @@
   "last_completed_series": 8,
   "last_validated_series": 8,
   "last_audio_complete_series": 8,
-  "status": "quality_revalidation",
+  "status": "ready",
   "active_batch": 1,
-  "updated_at": "2026-09-06T13:44:00Z",
+  "updated_at": "2026-09-06T14:12:53Z",
   "errors": [],
   "audio": {
     "turns": {
       "expected": 346,
       "generated": 346,
       "coverage": 1,
-      "workflow_run_id": 34036900289
+      "workflow_run_id": 34038255246
     },
     "words": {
       "eligible": 314,
       "generated": 314,
       "coverage": 1,
-      "workflow_run_id": 34036900287
+      "workflow_run_id": 34038255221
     }
   },
   "contract_version": "2.1.0",
   "quality": {
-    "status": "PENDING_SEMANTIC_GATE_2",
+    "status": "PASS",
+    "semantic_gate_version": 2,
     "last_validated_series": 8,
-    "mysql8_workflow_run_id": 34036900286
+    "mysql8_workflow_run_id": 34038255257
   }
 }

@@ -1,11 +1,11 @@
 {
   "version": "2.1.0",
   "valid": true,
-  "checked_at": "2026-09-06T13:35:05Z",
-  "checked_commit": "1f2929f6d2a9a10e3add7f58a328697ff5df20d8",
+  "checked_at": "2026-09-06T14:12:53Z",
+  "checked_commit": "51b1d15938173b545d1e7248e52c12ee776c14d3",
   "manifest": "nova/mysql/import_order_v2.json",
-  "quality_workflow_run_id": 34035532591,
-  "quality_workflow_url": "https://github.com/SalehAkaJim/chatgpt/actions/runs/34035532591",
+  "quality_workflow_run_id": 34038255257,
+  "quality_workflow_url": "https://github.com/SalehAkaJim/chatgpt/actions/runs/34038255257",
   "checks": {
     "core_stage_ids_preserved": true,
     "unique_stage_ids": true,
@@ -15,6 +15,7 @@
     "deterministic_course_and_series_order": true,
     "ready_chapter_series_gap_free": true,
     "ready_chapter_qa_contract_v2_1_pass": true,
+    "ready_chapter_semantic_gate_v2_pass": true,
     "ready_chapter_static_content_validation_pass": true,
     "ready_chapter_mysql8_execution_pass": true,
     "ready_turn_audio_coverage_100_percent": true,
@@ -25,11 +26,11 @@
   },
   "counts": {
     "core_stages": 2,
-    "ready_chapters": 9,
+    "ready_chapters": 11,
     "ready_audio_stages": 4,
     "blocked_chapters": 0,
-    "turn_audio_entries": 370,
-    "eligible_word_audio_entries": 347
+    "turn_audio_entries": 463,
+    "eligible_word_audio_entries": 413
   },
   "ready_coverage": {
     "de-fa": [
@@ -38,7 +39,9 @@
       3,
       4,
       5,
-      6
+      6,
+      7,
+      8
     ],
     "en-fa": [
       1,
