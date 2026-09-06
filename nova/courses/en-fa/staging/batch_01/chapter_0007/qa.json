@@ -4,8 +4,8 @@
   "semantic_gate_version": 2,
   "course": "en-fa",
   "series": 7,
-  "status": "STATIC_PASS_PENDING_RUNTIME",
-  "audio_status": "pending",
+  "status": "PASS",
+  "audio_status": "complete",
   "counts": {
     "lessons": 4,
     "turns": 42,
@@ -40,25 +40,28 @@
   "audio": {
     "turn_audio": {
       "required": 42,
-      "covered": 0,
-      "coverage": 0,
-      "status": "PENDING"
+      "covered": 42,
+      "coverage": 1,
+      "status": "PASS",
+      "workflow_run_id": 34047934879
     },
     "word_audio": {
       "required": 12,
-      "covered": 0,
-      "coverage": 0,
-      "status": "PENDING",
-      "voice": "Lori"
+      "covered": 12,
+      "coverage": 1,
+      "status": "PASS",
+      "voice": "Lori",
+      "workflow_run_id": 34047934963
     }
   },
   "mysql8_execution": {
-    "status": "PENDING"
+    "status": "PASS",
+    "workflow_run_id": 34047934874
   },
   "evidence": {
-    "validator": "PASS: proposed Series 007 checked against repository validator rules before commit",
-    "mysql8": "PENDING: Nova Content Quality must execute on MySQL 8 after commit",
-    "turn_audio": "PENDING: character-voice workflow must cover 42/42 turns",
-    "word_audio_lori": "PENDING: Lori workflow must cover 12/12 eligible words"
+    "validator": "PASS: full repository static gate in Nova Content Quality run 34047934874",
+    "mysql8": "PASS: Nova Content Quality run 34047934874",
+    "turn_audio": "PASS: repository 283/283; Series 007 42/42, run 34047934879",
+    "word_audio_lori": "PASS: repository 156/156; Series 007 12/12, run 34047934963"
   }
 }
