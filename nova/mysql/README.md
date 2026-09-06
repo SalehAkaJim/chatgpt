@@ -41,18 +41,19 @@ mysql --default-character-set=utf8mb4 -h HOST -u USER -p DATABASE < "PATH"
 | 22 | `EN-CH-0006` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0006/chapter.sql) | `EN-CH-0005` | آماده — Turn 42/42، Word 15/15 |
 | 23 | `EN-CH-0007` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0007/chapter.sql) | `EN-CH-0006` | آماده — Turn 42/42، Word 12/12 |
 | 24 | `EN-CH-0008` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_01/chapter_0008/chapter.sql) | `EN-CH-0007` | آماده — Turn 42/42، Word 11/11 |
-| 25 | `DE-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/de-fa/update_turn_audio.sql) | `DE-CH-0014` | آماده — 628/628 |
-| 26 | `DE-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/de-fa/update_word_audio.sql) | `DE-AUDIO-TURNS-v2` | آماده — 497/497 |
-| 27 | `EN-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/en-fa/update_turn_audio.sql) | `EN-CH-0008` | آماده — 325/325 |
-| 28 | `EN-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/en-fa/update_word_audio.sql) | `EN-AUDIO-TURNS-v2` | آماده — 167/167 |
+| 25 | `EN-CH-0009` | Chapter | [chapter.sql](../courses/en-fa/staging/batch_02/chapter_0009/chapter.sql) | `EN-CH-0008` | آماده — Turn 41/41، Word 12/12 |
+| 26 | `DE-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/de-fa/update_turn_audio.sql) | `DE-CH-0014` | آماده — 628/628 |
+| 27 | `DE-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/de-fa/update_word_audio.sql) | `DE-AUDIO-TURNS-v2` | آماده — 497/497 |
+| 28 | `EN-AUDIO-TURNS-v2` | Turn Audio | [update_turn_audio.sql](../audio/en-fa/update_turn_audio.sql) | `EN-CH-0009` | آماده — 366/366 |
+| 29 | `EN-AUDIO-WORDS-v2` | Word Audio | [update_word_audio.sql](../audio/en-fa/update_word_audio.sql) | `EN-AUDIO-TURNS-v2` | آماده — 179/179 |
 
 ## پوشش تاییدشده
 
 - آلمانی: Chapterهای `0001–0014`، صوت Turn برابر `628/628` و Word برابر `497/497`.
-- انگلیسی: Chapterهای `0001–0008`، صوت Turn برابر `325/325` و Word برابر `167/167`.
+- انگلیسی: Chapterهای `0001–0009`، صوت Turn برابر `366/366` و Word برابر `179/179`.
 - Chapterهای بازسازی‌شده با `semantic_gate_version=2` کنترل شده‌اند.
 - قرارداد آموزشی: [independent_course_v2.md](../contracts/independent_course_v2.md)، نسخهٔ `2.1.0`.
 - Validator: [validate_content.py](../validation/validate_content.py).
-- آخرین اجرای موفق Validator و MySQL 8: [Nova Content Quality — Run 34049296373](https://github.com/SalehAkaJim/chatgpt/actions/runs/34049296373).
+- آخرین اجرای موفق Validator و MySQL 8: [Nova Content Quality — Run 34050799217](https://github.com/SalehAkaJim/chatgpt/actions/runs/34050799217).
 
 Chapter فقط زمانی وارد این جدول می‌شود که SQL و QA معتبر، شمارهٔ Series متوالی، Semantic Gate، اجرای MySQL 8 و پوشش Turn/Word audio همگی PASS باشند.

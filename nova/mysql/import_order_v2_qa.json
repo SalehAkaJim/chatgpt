@@ -1,11 +1,11 @@
 {
   "version": "2.1.0",
   "valid": true,
-  "checked_at": "2026-09-06T17:48:00Z",
-  "checked_commit": "e76e2b6509bb157db0cf5e6720f2e639418edab1",
+  "checked_at": "2026-09-06T18:22:21Z",
+  "checked_commit": "b354bf2d72ce50e0a37c4765f61eec26f22854d9",
   "manifest": "nova/mysql/import_order_v2.json",
-  "quality_workflow_run_id": 34049296373,
-  "quality_workflow_url": "https://github.com/SalehAkaJim/chatgpt/actions/runs/34049296373",
+  "quality_workflow_run_id": 34050799217,
+  "quality_workflow_url": "https://github.com/SalehAkaJim/chatgpt/actions/runs/34050799217",
   "checks": {
     "core_stage_ids_preserved": true,
     "unique_stage_ids": true,
@@ -26,11 +26,11 @@
   },
   "counts": {
     "core_stages": 2,
-    "ready_chapters": 22,
+    "ready_chapters": 23,
     "ready_audio_stages": 4,
     "blocked_chapters": 0,
-    "turn_audio_entries": 953,
-    "eligible_word_audio_entries": 664
+    "turn_audio_entries": 994,
+    "eligible_word_audio_entries": 676
   },
   "ready_coverage": {
     "de-fa": [
@@ -57,7 +57,8 @@
       5,
       6,
       7,
-      8
+      8,
+      9
     ]
   },
   "errors": [],
