@@ -36,13 +36,13 @@
       "chapter": 28,
       "series": 28,
       "title": "A coffee, please",
-      "status": "pending"
+      "status": "qa_passed_staged"
     },
     {
       "chapter": 29,
       "series": 29,
       "title": "Do you have bread?",
-      "status": "planned"
+      "status": "pending"
     },
     {
       "chapter": 30,
@@ -65,13 +65,13 @@
   ],
   "chapter_qa_policy": "all required checks must pass before marking a chapter complete",
   "cross_chapter_qa_status": "not_ready",
-  "next_action": "generate_and_qa_chapter_28_series_028",
+  "next_action": "generate_and_qa_chapter_29_series_029",
   "database_revision": "v9.0",
   "generation_cadence": "hourly_at_minute_59",
-  "updated_at": "2026-09-06T08:37:22.000Z",
+  "updated_at": "2026-09-06T08:44:04.000Z",
   "last_completed_atomic_unit": {
-    "chapter": 27,
-    "series": 27,
+    "chapter": 28,
+    "series": 28,
     "status": "PASS"
   }
 }
