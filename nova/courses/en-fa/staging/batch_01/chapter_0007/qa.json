@@ -1,0 +1,64 @@
+{
+  "contract": "independent_course_v2",
+  "contract_version": "2.1.0",
+  "semantic_gate_version": 2,
+  "course": "en-fa",
+  "series": 7,
+  "status": "STATIC_PASS_PENDING_RUNTIME",
+  "audio_status": "pending",
+  "counts": {
+    "lessons": 4,
+    "turns": 42,
+    "activities": 72,
+    "tokens": 207,
+    "used_word_tuples": 50,
+    "new_word_definitions": 12
+  },
+  "lesson_roles": [
+    "exposure",
+    "grammar",
+    "recall",
+    "mastery"
+  ],
+  "invariants": {
+    "mysql_declaration_order": true,
+    "sql_static_validation_pass": true,
+    "sql_mysql8_execution_required": true,
+    "answer_positions_not_fixed": true,
+    "recall_cues_complete": true,
+    "semantic_speech_alternatives": true,
+    "scenario_transfer_is_novel": true,
+    "explicit_word_teaching": true,
+    "explicit_micro_grammar": true,
+    "word_distractors_unique_same_pos": true,
+    "computed_teaching_coverage": true,
+    "exact_turn_token_reconstruction": true,
+    "closed_class_mapping_literal": true,
+    "no_keyboard_input": true,
+    "cumulative_mastery_checkpoint": false
+  },
+  "audio": {
+    "turn_audio": {
+      "required": 42,
+      "covered": 0,
+      "coverage": 0,
+      "status": "PENDING"
+    },
+    "word_audio": {
+      "required": 12,
+      "covered": 0,
+      "coverage": 0,
+      "status": "PENDING",
+      "voice": "Lori"
+    }
+  },
+  "mysql8_execution": {
+    "status": "PENDING"
+  },
+  "evidence": {
+    "validator": "PASS: proposed Series 007 checked against repository validator rules before commit",
+    "mysql8": "PENDING: Nova Content Quality must execute on MySQL 8 after commit",
+    "turn_audio": "PENDING: character-voice workflow must cover 42/42 turns",
+    "word_audio_lori": "PENDING: Lori workflow must cover 12/12 eligible words"
+  }
+}
