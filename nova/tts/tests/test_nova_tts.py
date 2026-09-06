@@ -19,6 +19,21 @@ class TestTts(unittest.TestCase):
     def test_b2_speed(self):
         self.assertGreaterEqual(M.speed_for_level("B2"), M.speed_for_level("B1"))
 
+    def test_guarded_count_min_locator(self):
+        sql = """-- NOVA INDEPENDENT DE-FA COURSE V2
+-- SERIES 3
+SELECT COUNT(*),MIN(id) INTO v_count,v_level FROM levels WHERE cefr_level='A1';
+SELECT COUNT(*),MIN(id) INTO v_count,v_module FROM modules WHERE sort_order=1;
+SELECT COUNT(*),MIN(id) INTO v_count,v_chapter FROM chapters WHERE sort_order=3;
+"""
+        locator = M.parse_source_locator(Path("chapter.sql"), sql)
+        self.assertEqual(locator, {
+            "cefr_level": "A1",
+            "module_order": 1,
+            "chapter_order": 3,
+            "series": 3,
+        })
+
     def test_discovery_is_course_scoped(self):
         sql = """-- NOVA v9 / SERIES 001
 SELECT id INTO v_level FROM levels WHERE cefr_level='A1';
