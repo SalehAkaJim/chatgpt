@@ -7,7 +7,7 @@
   "stage_id": "de-fa-a1-series-0012",
   "title": "Wann treffen wir uns?",
   "title_translation": "چه زمانی همدیگر را می‌بینیم؟",
-  "status": "validated_pending_workflows",
+  "status": "complete",
   "counts": {
     "lessons": 4,
     "turns": 47,
@@ -22,7 +22,8 @@
     "Lena"
   ],
   "next_series": 13,
-  "audio_status": "pending",
+  "audio_status": "complete",
   "contract_version": "2.1.0",
-  "content_quality": "static_validated"
+  "content_quality": "semantic_gate_2_mysql8_pass",
+  "semantic_gate_version": 2
 }
