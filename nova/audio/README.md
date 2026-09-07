@@ -1,10 +1,5 @@
-# Nova audio — native v3.2
+# Nova Audio
 
-Canonical audio locators are written directly into Chapter SQL rows before TTS runs.
+All previously generated language-learning audio was removed in the September 2026 content reset.
 
-- Turns: `nova/audio/turns/{course}/{level}/sNNNN/lNN/tNN.mp3`
-- Words: `nova/audio/words/{course}/{sha256(display_form)}.mp3`
-
-TTS materializes files at the locator already stored in the row. It must not emit or require post-import audio UPDATE SQL.
-
-Audio manifests and MP3 files are generated artifacts. A fresh foundation reset may delete them; publication remains blocked until the current source rows have complete matching audio again.
+This directory will contain only audio generated from the rebuilt, approved course content.
