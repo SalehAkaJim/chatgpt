@@ -3,12 +3,15 @@
   "activeCourse": "en-fa",
   "activeLevel": "A1",
   "bulkGenerationEnabled": false,
-  "audioGenerationEnabled": false,
+  "audioGenerationEnabled": true,
+  "audioRequiredForPilotCompletion": true,
   "pilotChapterTarget": 3,
   "publishedChapters": 0,
   "nextChapter": 1,
   "schemaRevisionComplete": true,
-  "mysql8ValidationRequiredBeforeChapter1": true,
-  "canonicalValidatorReady": true,
-  "englishAuditRendererReady": true
+  "mysqlTargetVersion": "9.0.1",
+  "mysqlValidationRequiredBeforeChapter1Completion": true,
+  "canonicalValidatorReady": false,
+  "englishAuditRendererReady": false,
+  "audioManifestValidatorReady": false
 }
