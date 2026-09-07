@@ -23,12 +23,16 @@ Published through Series **2**. Generated through Series **2**. Next generated S
 ## English → Persian published Chapters
 
 1. EN-CH-0001 — [`chapter_0001/chapter.sql`](../courses/en-fa/staging/batch_01/chapter_0001/chapter.sql)
+2. EN-CH-0002 — [`chapter_0002/chapter.sql`](../courses/en-fa/staging/batch_01/chapter_0002/chapter.sql)
+3. EN-CH-0003 — [`chapter_0003/chapter.sql`](../courses/en-fa/staging/batch_01/chapter_0003/chapter.sql)
 
-Published through Series **1**. Generated through Series **1**. Next generated Series is **2**.
+Published through Series **3**. Generated through Series **3**. Next generated Series is **4**.
 
 ## Publication evidence
 
 Publication requires the complete native-v3.2 package plus clean linguistic/acquisition/curriculum/review gates, real MySQL8 execution, complete Turn audio, and complete eligible Word/Learning-unit audio. File presence or QA flags alone do not advance the manifest.
+
+Latest English publication evidence through Series 3: Content Quality run `34115419086`, MySQL8 job `101721002208`, English Audio run `34115547548`.
 
 ## Maintenance rules
 
