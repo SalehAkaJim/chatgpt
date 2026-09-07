@@ -21,8 +21,25 @@
     "tts_materializes_source_row_locator": true
   },
   "courses": {
-    "de-fa": {"active_level":"A1","generated_through_series":0,"published_through_series":0,"published_chapters":[],"generated_chapters_pending_publication":[]},
-    "en-fa": {"active_level":"A1","generated_through_series":0,"published_through_series":0,"published_chapters":[],"generated_chapters_pending_publication":[]}
+    "de-fa": {
+      "active_level": "A1",
+      "generated_through_series": 2,
+      "published_through_series": 2,
+      "published_chapters": [
+        {"id":"DE-CH-0001","series":1,"path":"nova/courses/de-fa/staging/batch_01/chapter_0001/chapter.sql"},
+        {"id":"DE-CH-0002","series":2,"path":"nova/courses/de-fa/staging/batch_01/chapter_0002/chapter.sql"}
+      ],
+      "generated_chapters_pending_publication": []
+    },
+    "en-fa": {
+      "active_level": "A1",
+      "generated_through_series": 1,
+      "published_through_series": 1,
+      "published_chapters": [
+        {"id":"EN-CH-0001","series":1,"path":"nova/courses/en-fa/staging/batch_01/chapter_0001/chapter.sql"}
+      ],
+      "generated_chapters_pending_publication": []
+    }
   },
   "metadata_policy": {
     "foundation_seed_precedes_chapters": true,
