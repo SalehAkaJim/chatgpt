@@ -1,7 +1,8 @@
 -- ===============================================================
 -- NOVA CONTENT SYSTEM v1 — CORE SCHEMA
 -- English -> Persian pilot first; language-agnostic structure retained.
--- Content authoring source is canonical JSON, not SQL.
+-- Deployment/test target: MySQL Server 9.0.1.
+-- Canonical JSON is the authoring source; SQL is derived.
 -- ===============================================================
 SET NAMES utf8mb4;
 
@@ -123,14 +124,15 @@ CREATE TABLE lessons (
   CONSTRAINT fk_lessons_interlocutor FOREIGN KEY(interlocutor_character_id) REFERENCES characters(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE words (
+CREATE TABLE lexical_items (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   course_id BIGINT UNSIGNED NOT NULL,
-  word_key VARCHAR(255) NOT NULL,
-  lemma VARCHAR(180) NOT NULL,
-  display_form VARCHAR(80) NOT NULL,
-  part_of_speech VARCHAR(48) NOT NULL,
-  sense_key VARCHAR(120) NOT NULL,
+  lexical_key VARCHAR(255) NOT NULL,
+  item_type ENUM('word','multiword_expression') NOT NULL,
+  lemma VARCHAR(255) NOT NULL,
+  display_form VARCHAR(255) NOT NULL,
+  part_of_speech VARCHAR(64) NOT NULL,
+  sense_key VARCHAR(160) NOT NULL,
   translation VARCHAR(500) NOT NULL,
   grammar JSON NULL,
   example_text TEXT NULL,
@@ -140,14 +142,12 @@ CREATE TABLE words (
   metadata JSON NULL,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_words_course_key (course_id,word_key),
-  KEY idx_words_course_lemma (course_id,lemma),
-  KEY idx_words_course_form (course_id,display_form),
-  CONSTRAINT fk_words_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE,
-  CONSTRAINT chk_words_single_token CHECK (
-    CHAR_LENGTH(TRIM(display_form)) > 0
-    AND display_form = TRIM(display_form)
-    AND display_form NOT REGEXP '[[:space:]]'
+  UNIQUE KEY uq_lexical_items_course_key (course_id,lexical_key),
+  KEY idx_lexical_items_course_lemma (course_id,lemma),
+  KEY idx_lexical_items_course_form (course_id,display_form),
+  CONSTRAINT fk_lexical_items_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE,
+  CONSTRAINT chk_lexical_display_form CHECK (
+    CHAR_LENGTH(TRIM(display_form)) > 0 AND display_form = TRIM(display_form)
   )
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -178,30 +178,45 @@ CREATE TABLE turns (
   )
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE lesson_words (
+CREATE TABLE turn_lexical_items (
+  turn_id BIGINT UNSIGNED NOT NULL,
+  lexical_item_id BIGINT UNSIGNED NOT NULL,
+  occurrence_index SMALLINT UNSIGNED NOT NULL DEFAULT 1,
+  start_token_index SMALLINT UNSIGNED NULL,
+  end_token_index SMALLINT UNSIGNED NULL,
+  surface_text VARCHAR(255) NOT NULL,
+  metadata JSON NULL,
+  PRIMARY KEY(turn_id,lexical_item_id,occurrence_index),
+  KEY idx_turn_lexical_items_item (lexical_item_id),
+  CONSTRAINT fk_tli_turn FOREIGN KEY(turn_id) REFERENCES turns(id) ON DELETE CASCADE,
+  CONSTRAINT fk_tli_item FOREIGN KEY(lexical_item_id) REFERENCES lexical_items(id) ON DELETE CASCADE,
+  CONSTRAINT chk_tli_span CHECK (
+    (start_token_index IS NULL AND end_token_index IS NULL)
+    OR (start_token_index IS NOT NULL AND end_token_index IS NOT NULL AND end_token_index >= start_token_index)
+  )
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE lesson_lexical_items (
   lesson_id BIGINT UNSIGNED NOT NULL,
-  word_id BIGINT UNSIGNED NOT NULL,
+  lexical_item_id BIGINT UNSIGNED NOT NULL,
   learning_role ENUM('target','review','support','incidental') NOT NULL,
   exposure_count INT UNSIGNED NOT NULL DEFAULT 1,
   metadata JSON NULL,
-  PRIMARY KEY(lesson_id,word_id),
-  KEY idx_lesson_words_role (lesson_id,learning_role),
-  CONSTRAINT fk_lesson_words_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
-  CONSTRAINT fk_lesson_words_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE CASCADE
+  PRIMARY KEY(lesson_id,lexical_item_id),
+  KEY idx_lesson_lexical_items_role (lesson_id,learning_role),
+  CONSTRAINT fk_lli_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
+  CONSTRAINT fk_lli_item FOREIGN KEY(lexical_item_id) REFERENCES lexical_items(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE activities (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   lesson_id BIGINT UNSIGNED NOT NULL,
   activity_key VARCHAR(32) NOT NULL,
-  activity_type ENUM(
-    'listen','speak','meaning_choice','word_order','reading','writing',
-    'pronunciation','unit_teach','response_choice'
-  ) NOT NULL,
+  activity_type ENUM('listen','speak','meaning_choice','word_order','reading','writing','pronunciation','unit_teach','response_choice') NOT NULL,
   purpose ENUM('exposure','noticing','supported','retrieval','transfer','mastery') NOT NULL,
   sort_order INT UNSIGNED NOT NULL,
   turn_id BIGINT UNSIGNED NULL,
-  word_id BIGINT UNSIGNED NULL,
+  lexical_item_id BIGINT UNSIGNED NULL,
   prompt TEXT NULL,
   instruction TEXT NOT NULL,
   config JSON NULL,
@@ -212,26 +227,15 @@ CREATE TABLE activities (
   KEY idx_activities_type_purpose (activity_type,purpose),
   CONSTRAINT fk_activities_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
   CONSTRAINT fk_activities_turn FOREIGN KEY(turn_id) REFERENCES turns(id) ON DELETE SET NULL,
-  CONSTRAINT fk_activities_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE SET NULL
+  CONSTRAINT fk_activities_lexical_item FOREIGN KEY(lexical_item_id) REFERENCES lexical_items(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE VIEW v_lesson_turns AS
 SELECT
-  l.id AS lesson_id,
-  l.lesson_key,
-  t.id AS turn_id,
-  t.turn_key,
-  t.sort_order,
-  t.role,
-  t.character_id,
-  c.name AS character_name,
-  c.gender AS character_gender,
-  t.text,
-  t.translation,
-  t.audio_url,
-  t.speech_target,
-  t.speech_alternatives,
-  t.tokens
+  l.id AS lesson_id,l.lesson_key,
+  t.id AS turn_id,t.turn_key,t.sort_order,t.role,t.character_id,
+  c.name AS character_name,c.gender AS character_gender,
+  t.text,t.translation,t.audio_url,t.speech_target,t.speech_alternatives,t.tokens
 FROM lessons l
 JOIN turns t ON t.lesson_id=l.id
 LEFT JOIN characters c ON c.id=t.character_id;
