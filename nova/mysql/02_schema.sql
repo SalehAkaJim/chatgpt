@@ -113,12 +113,12 @@ CREATE TABLE lesson_turns (
   UNIQUE KEY uq_turns_lesson_key (lesson_id,turn_key),
   UNIQUE KEY uq_turns_lesson_order (lesson_id,sort_order),
   CONSTRAINT fk_turns_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
-  CONSTRAINT fk_turns_character FOREIGN KEY(character_id) REFERENCES characters(id) ON DELETE SET NULL,
-  CONSTRAINT chk_turn_role_character CHECK (
-    (role='character' AND character_id IS NOT NULL)
-    OR (role IN ('learner','system') AND character_id IS NULL)
-  )
+  CONSTRAINT fk_turns_character FOREIGN KEY(character_id) REFERENCES characters(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- character/role consistency is enforced by canonical validation rather than a
+-- DB CHECK because MySQL 9.0.1 rejects a CHECK on a column participating in a
+-- foreign key referential action.
 
 CREATE TABLE activities (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -140,7 +140,6 @@ CREATE TABLE activities (
   CONSTRAINT fk_activities_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Runtime helper: one row per activity with the Lesson metadata needed by the app.
 CREATE VIEW v_lesson_payload AS
 SELECT
   c.course_key,
