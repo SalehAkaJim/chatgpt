@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Foundation gate for the fresh native-v3 Nova dataset."""
+"""Foundation gate for the fresh native-v3 Nova dataset.
+
+A chapter may exist on main while it is still waiting for CI/audio. Repository
+presence is therefore staging evidence, not completion evidence. The production
+state advances only after all publication gates pass.
+"""
 from __future__ import annotations
 import json, re, sys
 from pathlib import Path
@@ -41,9 +46,20 @@ def main():
         seq=chapter_series(course); nums=[n for n,_ in seq]
         expected=list(range(1,(max(nums) if nums else 0)+1))
         if nums!=expected: fail(e,f"{course}: Series must be contiguous from 1; found {nums}")
-        last=max(nums) if nums else 0
-        if prod.get("last_completed_series")!=last or prod.get("next_series")!=last+1:
-            fail(e,f"{course}: production_state does not match repository Series")
+        last_staged=max(nums) if nums else 0
+        last_completed=int(prod.get("last_completed_series",0))
+        next_series=int(prod.get("next_series",1))
+        if next_series!=last_completed+1:
+            fail(e,f"{course}: next_series must be last_completed_series + 1")
+        if last_completed>last_staged:
+            fail(e,f"{course}: completed state is ahead of repository")
+        if last_staged>next_series:
+            fail(e,f"{course}: more than the current uncompleted Series is staged")
+        if last_staged==next_series:
+            folder=dict(seq)[next_series]
+            q=load(folder/"qa.json") if (folder/"qa.json").exists() else {}
+            if q.get("status") not in ("READY_FOR_CI","BLOCKED","COMPLETE"):
+                fail(e,f"{course} Series {next_series:03d}: staged chapter needs an explicit lifecycle status")
         if prod.get("archive_branch")!=ARCHIVE or prod.get("quality",{}).get("legacy_content_allowed") is not False:
             fail(e,f"{course}: legacy dataset must remain archive-only")
         if run.get("allow_new_chapters") is not True or run.get("paused") is not False:
