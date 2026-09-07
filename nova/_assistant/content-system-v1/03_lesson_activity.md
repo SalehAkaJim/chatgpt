@@ -48,9 +48,17 @@ STT checks expected wording or valid alternatives. STT alone is not treated as a
 
 State what the learner listens for. Begin with short clear speech. Transcript/translation may be visible for teaching activities or revealed after an attempt when comprehension is being tested.
 
-## Sentence order
+## Sentence order — audio-first
 
-Tokens must reconstruct one exact natural target sentence. Shuffling must not change/add/remove tokens. Do not use punctuation/tokenization tricks as difficulty.
+Sentence-order tasks are listening + reconstruction activities, not merely visual puzzles.
+
+- The exact natural target sentence must be available as audio before and during the attempt.
+- The learner hears the sentence and reconstructs it from shuffled tokens.
+- Do not display the completed target sentence before the first attempt.
+- Audio replay must be available.
+- The audio source must resolve to the same canonical English sentence as `answerEn`.
+- Tokens must reconstruct one exact natural target sentence; shuffling must not change/add/remove tokens.
+- Do not use punctuation/tokenization tricks as difficulty.
 
 ## Fill blank
 
@@ -63,7 +71,16 @@ At absolute zero, clarity outranks artificial distractor difficulty.
 
 ## Dialogue comprehension
 
-Use a real short dialogue or listening source. Ask a concrete question whose answer is available from the source. Provide two or three unambiguous options.
+Use a real short dialogue or listening source. Ask a question that requires understanding the target-language message.
+
+A comprehension question fails QA if the answer can be obtained reliably without understanding the audio, for example from:
+- speaker gender or avatar;
+- who speaks first/last;
+- visible names or UI metadata;
+- obvious answer wording or option patterns;
+- information already revealed by the question itself.
+
+Prefer questions about meaning, intention, request, response, or a concrete detail carried by the target-language utterance. Provide two or three unambiguous options. At beginner level, Persian answer options are allowed when the skill being tested is listening comprehension rather than English reading.
 
 ## Reading / writing
 

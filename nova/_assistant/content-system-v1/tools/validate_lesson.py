@@ -94,10 +94,19 @@ def main() -> int:
             tokens = cfg.get('tokensEn')
             answer_tokens = cfg.get('answerTokensEn')
             answer = cfg.get('answerEn')
+            audio_turn_key = cfg.get('audioSourceTurnKey')
             if not isinstance(tokens, list) or not isinstance(answer_tokens, list) or not answer:
                 errors.append(f'{label}: sentence_order requires tokensEn, answerTokensEn and answerEn')
             elif sorted(tokens) != sorted(answer_tokens):
                 errors.append(f'{label}: shuffled tokens differ from answer tokens')
+            if not audio_turn_key:
+                errors.append(f'{label}: sentence_order requires audioSourceTurnKey')
+            elif audio_turn_key not in turn_by_key:
+                errors.append(f'{label}: sentence_order audioSourceTurnKey is unknown: {audio_turn_key}')
+            elif turn_by_key[audio_turn_key].get('textEn') != answer:
+                errors.append(f'{label}: sentence_order audio text must exactly equal answerEn')
+            if cfg.get('showAnswerTextBeforeAttempt') is not False:
+                errors.append(f'{label}: sentence_order must hide completed answer before attempt')
         elif typ == 'fill_blank':
             sentence = cfg.get('sentenceEn', '')
             options = cfg.get('optionsEn')
@@ -112,6 +121,8 @@ def main() -> int:
             keys = cfg.get('sourceTurnKeys')
             options = cfg.get('options')
             idx = cfg.get('answerIndex')
+            if not str(activity.get('promptFa') or '').strip():
+                errors.append(f'{label}: comprehension requires promptFa')
             if not isinstance(keys, list) or not keys:
                 errors.append(f'{label}: comprehension requires sourceTurnKeys')
             else:
@@ -135,12 +146,7 @@ def main() -> int:
     if lesson.get('metadata', {}).get('pilot') is True and missing:
         errors.append('pilot lesson is missing product interaction types: ' + ', '.join(sorted(missing)))
 
-    report = {
-        'status': 'PASS' if not errors else 'FAIL',
-        'lessonKey': lesson.get('lessonKey'),
-        'errors': errors,
-        'warnings': warnings
-    }
+    report = {'status':'PASS' if not errors else 'FAIL','lessonKey':lesson.get('lessonKey'),'errors':errors,'warnings':warnings}
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not errors else 2
 

@@ -48,6 +48,8 @@ def probe(path: Path) -> tuple[bool,int]:
     ffprobe = shutil.which('ffprobe')
     if not ffprobe:
         raise RuntimeError('ffprobe is required')
+    if not path.is_file() or path.stat().st_size == 0:
+        return False,0
     p = subprocess.run(
         [ffprobe,'-v','error','-show_entries','format=duration','-of','default=noprint_wrappers=1:nokey=1',str(path)],
         capture_output=True,text=True
@@ -71,13 +73,7 @@ def collect(lesson: dict, voices: dict):
     items = []
     for item in lesson.get('lexicalItems', []):
         if item.get('audioEligible') is True:
-            items.append({
-                'sourceKey': item['lexicalKey'],
-                'audioClass': 'lexical_item',
-                'sourceText': item['displayForm'],
-                'voiceSpec': voices['lexicalVoice'],
-                'path': lexical_path(course,item['lexicalKey'])
-            })
+            items.append({'sourceKey':item['lexicalKey'],'audioClass':'lexical_item','sourceText':item['displayForm'],'voiceSpec':voices['lexicalVoice'],'path':lexical_path(course,item['lexicalKey'])})
     for turn in lesson.get('turns', []):
         if turn.get('audioRequired') is not True:
             continue
@@ -89,14 +85,22 @@ def collect(lesson: dict, voices: dict):
             spec = voices['learnerReferenceVoice']
         else:
             spec = voices['systemVoice']
-        items.append({
-            'sourceKey': turn['turnKey'],
-            'audioClass': 'turn',
-            'sourceText': turn['textEn'],
-            'voiceSpec': spec,
-            'path': f"nova/audio/turns/{course}/{lesson_key}/{turn['turnKey']}.mp3"
-        })
+        items.append({'sourceKey':turn['turnKey'],'audioClass':'turn','sourceText':turn['textEn'],'voiceSpec':spec,'path':f"nova/audio/turns/{course}/{lesson_key}/{turn['turnKey']}.mp3"})
     return items
+
+
+def can_reuse(previous: dict | None, previous_model: str | None, item: dict, voice_id: str, model_id: str, output: Path) -> tuple[bool,bool,int,str]:
+    if not previous or previous_model != model_id:
+        return False,False,0,''
+    if previous.get('sourceText') != item['sourceText'] or previous.get('voiceId') != voice_id or previous.get('path') != item['path']:
+        return False,False,0,''
+    if not output.is_file() or not previous.get('fileSha256'):
+        return False,False,0,''
+    file_sha = hashlib.sha256(output.read_bytes()).hexdigest()
+    if file_sha != previous.get('fileSha256'):
+        return False,False,0,file_sha
+    decoded,duration_ms = probe(output)
+    return decoded and duration_ms > 0,decoded,duration_ms,file_sha
 
 
 def main() -> int:
@@ -118,27 +122,36 @@ def main() -> int:
     voices = load(args.voices)
     model_id = voices.get('modelId') or 'eleven_multilingual_v2'
 
+    previous_manifest = {}
+    if args.manifest.is_file():
+        try:
+            previous_manifest = load(args.manifest)
+        except Exception:
+            previous_manifest = {}
+    previous_items = {x.get('sourceKey'):x for x in previous_manifest.get('items', []) if x.get('sourceKey')}
+    previous_model = previous_manifest.get('modelId')
+
     manifest_items = []
+    reused_count = 0
+    generated_count = 0
     for item in collect(lesson, voices):
         voice_id, voice_name = resolve_voice(item.pop('voiceSpec'), api_key)
         output = args.repo_root / item['path']
-        synthesize(item['sourceText'], voice_id, api_key, output, model_id)
-        decoded,duration_ms = probe(output)
-        file_sha = hashlib.sha256(output.read_bytes()).hexdigest() if output.is_file() else ''
+        reusable,decoded,duration_ms,file_sha = can_reuse(previous_items.get(item['sourceKey']), previous_model, item, voice_id, model_id, output)
+        if reusable:
+            reused_count += 1
+        else:
+            synthesize(item['sourceText'], voice_id, api_key, output, model_id)
+            generated_count += 1
+            decoded,duration_ms = probe(output)
+            file_sha = hashlib.sha256(output.read_bytes()).hexdigest() if output.is_file() else ''
         status = 'PASS' if decoded and duration_ms > 0 and file_sha else 'FAIL'
-        manifest_items.append({
-            **item,'voiceKey':voice_name,'voiceId':voice_id,'sourceHash':source_hash,
-            'fileSha256':file_sha,'durationMs':duration_ms,'decoded':decoded,'status':status
-        })
+        manifest_items.append({**item,'voiceKey':voice_name,'voiceId':voice_id,'sourceHash':source_hash,'fileSha256':file_sha,'durationMs':duration_ms,'decoded':decoded,'reused':reusable,'status':status})
 
-    manifest = {
-        'version':'2.0.0','lessonKey':lesson['lessonKey'],'sourceHash':source_hash,
-        'provider':'ElevenLabs','modelId':model_id,'items':manifest_items,
-        'status':'PASS' if manifest_items and all(x['status']=='PASS' for x in manifest_items) else 'FAIL'
-    }
+    manifest = {'version':'2.1.0','lessonKey':lesson['lessonKey'],'sourceHash':source_hash,'provider':'ElevenLabs','modelId':model_id,'items':manifest_items,'status':'PASS' if manifest_items and all(x['status']=='PASS' for x in manifest_items) else 'FAIL'}
     args.manifest.parent.mkdir(parents=True, exist_ok=True)
     args.manifest.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps({'status':manifest['status'],'count':len(manifest_items),'manifest':str(args.manifest)},indent=2))
+    print(json.dumps({'status':manifest['status'],'count':len(manifest_items),'reused':reused_count,'generated':generated_count,'manifest':str(args.manifest)},indent=2))
     return 0 if manifest['status']=='PASS' else 2
 
 
