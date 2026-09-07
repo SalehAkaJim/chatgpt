@@ -1,0 +1,39 @@
+{
+  "version": "3.2.0",
+  "purpose": "Hard publication policy for clear, target-language character voices.",
+  "provider": "elevenlabs",
+  "model_id": "eleven_multilingual_v2",
+  "rules": {
+    "target_language_verification_required": true,
+    "target_locale_required": true,
+    "unrelated_or_other_accent_forbidden": true,
+    "clarity_metadata_required": true,
+    "distinct_character_voices_required": true,
+    "invalid_existing_assignment_must_be_reselected": true,
+    "voice_change_must_regenerate_affected_turn_audio": true
+  },
+  "languages": {
+    "de": {
+      "allowed_locales": ["de-DE"],
+      "allowed_accents": ["de-standard"],
+      "description": "Use clear Standard German for instruction; unrelated, generic other, or non-German accent labels do not pass."
+    },
+    "en": {
+      "allowed_locale_prefixes": ["en-"],
+      "allowed_accents": ["american", "british", "australian", "canadian", "irish", "new zealand", "standard"],
+      "allowed_accent_prefixes": ["en-"],
+      "description": "Use a clearly identified English accent; unrelated or generic other accents do not pass."
+    }
+  },
+  "clarity": {
+    "preferred_categories": ["professional", "high_quality"],
+    "accepted_metadata_terms": ["clear", "natural", "conversational", "narration", "narrative", "professional", "articulate", "friendly", "warm", "calm", "grounded"],
+    "minimum_metadata_matches": 1
+  },
+  "synthesis": {
+    "stability": 0.68,
+    "similarity_boost": 0.78,
+    "style": 0.0,
+    "use_speaker_boost": true
+  }
+}
