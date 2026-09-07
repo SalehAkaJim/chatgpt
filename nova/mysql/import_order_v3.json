@@ -90,11 +90,20 @@
       ]
     }
   },
+  "post_chapter_repairs": [
+    "nova/mysql/course_metadata_v3.sql"
+  ],
+  "metadata_policy": {
+    "target_language_title_and_description_required": true,
+    "persian_translation_fields_required": true,
+    "structural_descriptions_must_not_be_null": true,
+    "repair_is_idempotent": true
+  },
   "human_readable_index": {
     "path": "nova/mysql/README.md",
     "update_with_manifest": true,
     "sql_links_must_be_clickable_relative_markdown": true,
     "plain_backticked_sql_paths_allowed": false
   },
-  "rule": "Append only fully published native-v3 chapters in strict Series order; keep nova/mysql/README.md synchronized in the same change set with clickable relative Markdown links for every SQL entry; level boundaries are determined by curriculum mastery, never by a fixed number. Archive content is never active input."
+  "rule": "Append only fully published native-v3 chapters in strict Series order; apply the localized metadata repair after Chapter SQL files and before audio updates; keep nova/mysql/README.md synchronized with clickable relative Markdown links for every SQL entry; level boundaries are determined by curriculum mastery, never by a fixed number. Archive content is never active input."
 }
