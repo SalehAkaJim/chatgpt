@@ -1,103 +1,56 @@
 {
-  "version": "3.0.0-fresh",
+  "version": "3.1.0-foundation-rewrite",
   "dynamic_course": true,
   "fixed_chapter_count": false,
   "archive_branch": "archive/nova-pre-v3-reset-2026-09-07",
   "core": [
     "nova/database/reset_all_v10.sql",
     "nova/database/schema_v9.sql",
-    "nova/database/semantic_layer_v10.sql"
+    "nova/database/semantic_layer_v10.sql",
+    "nova/database/foundation_seed_v3.sql",
+    "nova/database/audio_contract_v3.sql"
   ],
+  "semantic_schema": {
+    "physical_table_prefix": "sem_",
+    "legacy_series_1_3_aliases_are_views_only": true,
+    "series_4_plus_requires_sem_prefix": true
+  },
+  "audio_contract": {
+    "mode": "deterministic_url_on_insert",
+    "post_import_audio_update_sql": false,
+    "turn_path_template": "nova/audio/turns/{course}/{level}/s{series4}/l{lesson2}/t{turn2}.mp3",
+    "word_path_template": "nova/audio/words/{course}/{sha256_display_form}.mp3",
+    "tts_materializes_existing_database_locator": true
+  },
   "courses": {
     "de-fa": {
       "active_level": "A1",
-      "published_through_series": 1,
-      "chapters": [
-        {
-          "id": "DE-CH-0001",
-          "series": 1,
-          "level": "A1",
-          "sql": "nova/courses/de-fa/staging/batch_01/chapter_0001/chapter.sql",
-          "contract_version": "3.0.0",
-          "publication_evidence": {
-            "content_quality_run_id": 34090158719,
-            "mysql8": "PASS",
-            "linguistic_audit": "PASS",
-            "review_unfulfilled_due": [],
-            "turn_audio_run_id": 34089994146,
-            "learning_unit_audio_run_id": 34089994007
-          }
-        }
-      ],
-      "audio_updates": [
-        "nova/audio/de-fa/update_turn_audio.sql",
-        "nova/audio/de-fa/update_word_audio.sql"
+      "generated_through_series": 3,
+      "published_through_series": 0,
+      "published_chapters": [],
+      "generated_chapters_pending_revalidation": [
+        {"id":"DE-CH-0001","series":1,"level":"A1","sql":"nova/courses/de-fa/staging/batch_01/chapter_0001/chapter.sql"},
+        {"id":"DE-CH-0002","series":2,"level":"A1","sql":"nova/courses/de-fa/staging/batch_01/chapter_0002/chapter.sql"},
+        {"id":"DE-CH-0003","series":3,"level":"A1","sql":"nova/courses/de-fa/staging/batch_01/chapter_0003/chapter.sql"}
       ]
     },
     "en-fa": {
       "active_level": "A1",
-      "published_through_series": 3,
-      "chapters": [
-        {
-          "id": "EN-CH-0001",
-          "series": 1,
-          "level": "A1",
-          "sql": "nova/courses/en-fa/staging/batch_01/chapter_0001/chapter.sql",
-          "contract_version": "3.0.0",
-          "publication_evidence": {
-            "content_quality_run_id": 34090158719,
-            "mysql8": "PASS",
-            "linguistic_audit": "PASS",
-            "review_unfulfilled_due": [],
-            "turn_audio_run_id": 34089994015,
-            "learning_unit_audio_run_id": 34089994058
-          }
-        },
-        {
-          "id": "EN-CH-0002",
-          "series": 2,
-          "level": "A1",
-          "sql": "nova/courses/en-fa/staging/batch_01/chapter_0002/chapter.sql",
-          "contract_version": "3.0.0",
-          "publication_evidence": {
-            "content_quality_run_id": 34090158719,
-            "mysql8": "PASS",
-            "linguistic_audit": "PASS",
-            "review_unfulfilled_due": [],
-            "turn_audio_run_id": 34089994015,
-            "learning_unit_audio_run_id": 34089994058
-          }
-        },
-        {
-          "id": "EN-CH-0003",
-          "series": 3,
-          "level": "A1",
-          "sql": "nova/courses/en-fa/staging/batch_01/chapter_0003/chapter.sql",
-          "contract_version": "3.0.0",
-          "publication_evidence": {
-            "content_quality_run_id": 34090158719,
-            "mysql8": "PASS",
-            "linguistic_audit": "PASS",
-            "review_unfulfilled_due": [],
-            "turn_audio_run_id": 34089994015,
-            "learning_unit_audio_run_id": 34089994058
-          }
-        }
-      ],
-      "audio_updates": [
-        "nova/audio/en-fa/update_turn_audio.sql",
-        "nova/audio/en-fa/update_word_audio.sql"
+      "generated_through_series": 3,
+      "published_through_series": 0,
+      "published_chapters": [],
+      "generated_chapters_pending_revalidation": [
+        {"id":"EN-CH-0001","series":1,"level":"A1","sql":"nova/courses/en-fa/staging/batch_01/chapter_0001/chapter.sql"},
+        {"id":"EN-CH-0002","series":2,"level":"A1","sql":"nova/courses/en-fa/staging/batch_01/chapter_0002/chapter.sql"},
+        {"id":"EN-CH-0003","series":3,"level":"A1","sql":"nova/courses/en-fa/staging/batch_01/chapter_0003/chapter.sql"}
       ]
     }
   },
-  "post_chapter_repairs": [
-    "nova/mysql/course_metadata_v3.sql"
-  ],
   "metadata_policy": {
+    "foundation_seed_precedes_chapters": true,
     "target_language_title_and_description_required": true,
     "persian_translation_fields_required": true,
-    "structural_descriptions_must_not_be_null": true,
-    "repair_is_idempotent": true
+    "structural_descriptions_must_not_be_null": true
   },
   "human_readable_index": {
     "path": "nova/mysql/README.md",
@@ -105,5 +58,5 @@
     "sql_links_must_be_clickable_relative_markdown": true,
     "plain_backticked_sql_paths_allowed": false
   },
-  "rule": "Append only fully published native-v3 chapters in strict Series order; apply the localized metadata repair after Chapter SQL files and before audio updates; keep nova/mysql/README.md synchronized with clickable relative Markdown links for every SQL entry; level boundaries are determined by curriculum mastery, never by a fixed number. Archive content is never active input."
+  "rule": "Publication was intentionally reset after the v3.1 foundation rewrite. Generated Series remain staged and contiguous. Re-advance published pointers only after the rewritten foundation passes Content Quality, MySQL8, deterministic Turn audio and eligible Word/Learning-unit audio in strict Series order."
 }
