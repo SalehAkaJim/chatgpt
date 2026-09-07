@@ -8,7 +8,19 @@ on:
     paths: ["nova/**", ".github/workflows/nova-content-quality.yml"]
 
 jobs:
-  native-v3-and-mysql8:
+  foundation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fresh v3 foundation gate
+        run: python3 nova/validation/validate_migration_v3.py
+      - name: Native v3 pedagogical structure gate
+        run: python3 nova/validation/validate_content_v3.py
+      - name: TTS parser unit tests
+        run: python -m unittest discover -s nova/tts/tests -v
+
+  en-fa-mysql8:
+    needs: foundation
     runs-on: ubuntu-latest
     services:
       mysql:
@@ -22,37 +34,69 @@ jobs:
           --health-interval=10s --health-timeout=5s --health-retries=12
     steps:
       - uses: actions/checkout@v4
-      - name: Fresh v3 foundation gate
-        run: python3 nova/validation/validate_migration_v3.py
-      - name: Native v3 pedagogical structure gate
-        run: python3 nova/validation/validate_content_v3.py
-      - name: Validate TTS source compatibility
+      - name: Validate English TTS sources
         shell: bash
         run: |
           set -euo pipefail
-          python -m unittest discover -s nova/tts/tests -v
-          for course in de-fa en-fa; do
-            if find "nova/courses/$course/staging" -name chapter.sql -type f 2>/dev/null | grep -q .; then
-              NOVA_COURSE="$course" python nova/tts/nova_tts.py validate-sources
-              NOVA_COURSE="$course" python nova/tts/nova_word_tts.py validate-sources
-            else
-              echo "$course: fresh dataset has no chapter SQL yet; TTS source validation is not applicable."
-            fi
-          done
+          if find nova/courses/en-fa/staging -name chapter.sql -type f 2>/dev/null | grep -q .; then
+            NOVA_COURSE=en-fa python nova/tts/nova_tts.py validate-sources
+            NOVA_COURSE=en-fa python nova/tts/nova_word_tts.py validate-sources
+          else
+            echo "en-fa: no chapter SQL yet"
+          fi
       - name: Compile schemas on MySQL 8
         env: {MYSQL_PWD: nova_qa_root}
         run: |
           mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/schema_v9.sql
           mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/semantic_layer_v10.sql
-      - name: Execute all native v3 chapters and repairs sequentially
+      - name: Execute English native v3 chapters
         env: {MYSQL_PWD: nova_qa_root}
         shell: bash
         run: |
           set -euo pipefail
-          for course in de-fa en-fa; do
-            while IFS= read -r file; do
-              mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
-              repair="$(dirname "$file")/v3_repair.sql"
-              [[ ! -f "$repair" ]] || mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
-            done < <(find "nova/courses/$course/staging" -name chapter.sql -type f 2>/dev/null | sort)
-          done
+          while IFS= read -r file; do
+            mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
+            repair="$(dirname "$file")/v3_repair.sql"
+            [[ ! -f "$repair" ]] || mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
+          done < <(find nova/courses/en-fa/staging -name chapter.sql -type f 2>/dev/null | sort)
+
+  de-fa-mysql8:
+    needs: foundation
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: nova_qa_root
+          MYSQL_DATABASE: nova_qa
+        ports: ["3306:3306"]
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -pnova_qa_root"
+          --health-interval=10s --health-timeout=5s --health-retries=12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate German TTS sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          if find nova/courses/de-fa/staging -name chapter.sql -type f 2>/dev/null | grep -q .; then
+            NOVA_COURSE=de-fa python nova/tts/nova_tts.py validate-sources
+            NOVA_COURSE=de-fa python nova/tts/nova_word_tts.py validate-sources
+          else
+            echo "de-fa: no chapter SQL yet"
+          fi
+      - name: Compile schemas on MySQL 8
+        env: {MYSQL_PWD: nova_qa_root}
+        run: |
+          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/schema_v9.sql
+          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/semantic_layer_v10.sql
+      - name: Execute German native v3 chapters
+        env: {MYSQL_PWD: nova_qa_root}
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r file; do
+            mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
+            repair="$(dirname "$file")/v3_repair.sql"
+            [[ ! -f "$repair" ]] || mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
+          done < <(find nova/courses/de-fa/staging -name chapter.sql -type f 2>/dev/null | sort)
