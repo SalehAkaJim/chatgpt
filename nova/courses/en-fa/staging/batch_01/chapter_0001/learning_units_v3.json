@@ -1,0 +1,26 @@
+{
+  "version":"3.0.0",
+  "course":"en-fa",
+  "series":1,
+  "level":"A1",
+  "learning_units":[
+    {"unit_key":"en:a1:hello:greeting","type":"word_sense","display_form":"hello","translation_fa":"سلام","pos":"interjection","role":"target","introduced_lesson":1,"review_offsets":[1,2,4,8,16]},
+    {"unit_key":"en:a1:goodbye:parting","type":"word_sense","display_form":"goodbye","translation_fa":"خداحافظ","pos":"interjection","role":"target","introduced_lesson":4,"review_offsets":[1,2,4,8,16]},
+    {"unit_key":"en:a1:name:person-name","type":"word_sense","display_form":"name","translation_fa":"نام","pos":"noun","role":"target","introduced_lesson":2,"review_offsets":[1,2,4,8,16]},
+    {"unit_key":"en:a1:my-name-is","type":"chunk","display_form":"My name is ...","translation_fa":"اسم من ... است","role":"target","introduced_lesson":2,"review_offsets":[1,2,4,8,16]},
+    {"unit_key":"en:a1:nice-to-meet-you","type":"chunk","display_form":"Nice to meet you.","translation_fa":"از آشنایی با شما خوشحالم.","role":"target","introduced_lesson":1,"review_offsets":[1,2,4,8,16]},
+    {"unit_key":"en:a1:how-are-you","type":"chunk","display_form":"How are you?","translation_fa":"حالت چطور است؟","role":"target","introduced_lesson":3,"review_offsets":[1,2,4,8,16]},
+    {"unit_key":"en:a1:pron:hello-stress","type":"pronunciation","display_form":"hello — stress on second syllable","role":"target","introduced_lesson":1,"review_offsets":[1,2,4,8,16]}
+  ],
+  "curriculum_outcomes":[
+    {"key":"can_do:greet_part","type":"can_do","status":"in_progress","evidence":["L1 scenario_transfer","L4 mastery"]},
+    {"key":"can_do:introduce_name","type":"can_do","status":"in_progress","evidence":["L2 scenario_transfer","L4 mastery"]},
+    {"key":"reading:short_identity","type":"reading","status":"in_progress","evidence":["L1/L2/L4 target-language reading"]},
+    {"key":"pron:basic_word_stress","type":"pronunciation","status":"in_progress","evidence":["L1 sound_notice","L4 shadowing"]}
+  ],
+  "design_notes":[
+    "Multiword expressions are stored as chunks rather than misleading token translations.",
+    "A1 begins from absolute zero; scored production follows explicit exposure.",
+    "The chapter does not claim completion of any A1 outcome after a single encounter."
+  ]
+}
