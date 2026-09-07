@@ -1,10 +1,12 @@
 # Nova assistant internals
 
-This folder contains implementation details maintained for ChatGPT-assisted Nova development.
+Only `content-system-v1/` is an active authority for new Nova content.
 
-User-facing project directories live one level up:
-- `mysql/` — database setup and future import files
-- `audio/` — generated audio outputs
-- `courses/` — generated course content
+Old content contracts, old validators, old policies, old workflow definitions, and previous content-specific voice maps are intentionally removed from the active tree so the rebuild cannot silently inherit legacy assumptions.
 
-Internal contracts, policies, validation, TTS tooling, and disabled workflow definitions stay here to keep the Nova root uncluttered.
+The user-facing Nova directories remain:
+- `../mysql/`
+- `../audio/`
+- `../courses/`
+
+Reusable infrastructure may be reintroduced under this folder only after it is adapted to Content System v1.
