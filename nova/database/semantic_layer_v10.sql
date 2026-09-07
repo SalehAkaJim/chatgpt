@@ -1,9 +1,7 @@
 -- ===============================================================
--- NOVA SEMANTIC LEARNING LAYER v10.1
--- Additive migration over schema_v9.sql.
--- All physical semantic tables use the sem_ prefix.
--- Series 1-3 compatibility aliases are updatable views only; Series 4+
--- canonical SQL must reference sem_* names directly.
+-- NOVA SEMANTIC LEARNING LAYER v10.2 / native-v3.2
+-- Physical semantic objects use the sem_ prefix only.
+-- No legacy compatibility views are created.
 -- ===============================================================
 SET NAMES utf8mb4;
 
@@ -126,17 +124,3 @@ SELECT
 FROM sem_review_obligations ro
 JOIN sem_learning_units lu ON lu.id=ro.learning_unit_id
 WHERE ro.status='due';
-
--- -----------------------------------------------------------------
--- Native-v3 Series 1-3 source compatibility.
--- These are VIEWS, not physical semantic tables. They let the already
--- generated historical packages import into the sem_* physical schema.
--- Series 4+ validators reject these legacy identifiers in chapter SQL.
--- -----------------------------------------------------------------
-CREATE OR REPLACE VIEW learning_units AS SELECT * FROM sem_learning_units;
-CREATE OR REPLACE VIEW learning_unit_words AS SELECT * FROM sem_learning_unit_words;
-CREATE OR REPLACE VIEW lesson_learning_units AS SELECT * FROM sem_lesson_learning_units;
-CREATE OR REPLACE VIEW turn_learning_units AS SELECT * FROM sem_turn_learning_units;
-CREATE OR REPLACE VIEW review_obligations AS SELECT * FROM sem_review_obligations;
-CREATE OR REPLACE VIEW curriculum_outcomes AS SELECT * FROM sem_curriculum_outcomes;
-CREATE OR REPLACE VIEW v_due_reviews AS SELECT * FROM sem_due_reviews;
