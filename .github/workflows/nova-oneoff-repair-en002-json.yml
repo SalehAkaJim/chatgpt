@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Repair multiline MySQL JSON and add regression gate
+      - name: Repair MySQL-unsafe JSON escapes and add regression gate
         shell: bash
         run: |
           set -euo pipefail
@@ -25,12 +25,13 @@ jobs:
           chapter = Path('nova/courses/en-fa/staging/batch_01/chapter_0002/chapter.sql')
           s = chapter.read_text(encoding='utf-8')
 
-          # Two JSON reading configs contain a literal backslash followed by a physical newline.
-          if s.count('\\\n') != 2:
-              raise SystemExit(f'Expected exactly 2 backslash-newline sequences, found {s.count(chr(92)+chr(10))}')
-          s = s.replace('\\\n', ' — ')
+          # MySQL consumes literal \n inside a SQL string before CAST(... AS JSON), producing invalid JSON.
+          unsafe = r'\n'
+          if s.count(unsafe) != 2:
+              raise SystemExit(f'Expected exactly 2 literal \\n sequences, found {s.count(unsafe)}')
+          s = s.replace(unsafe, ' — ')
 
-          # Their learner-facing prompts are also physical multiline SQL strings; keep them single-line too.
+          # Keep the matching learner-facing prompt strings single-line as well.
           prompt_repairs = {
               "Maya: Where are you from?\nArman: I''m from Iran.": "Maya: Where are you from? — Arman: I''m from Iran.",
               "Daniel: Do you speak English?\nArman: A little. I speak Persian too.": "Daniel: Do you speak English? — Arman: A little. I speak Persian too.",
@@ -44,15 +45,16 @@ jobs:
           validator = Path('nova/validation/validate_content_v3.py')
           v = validator.read_text(encoding='utf-8')
           anchor = '    if re.search(r"placeholder|todo|anders\\d",sql,re.I): errors.append("placeholder-like content found")\n'
-          addition = '''    # MySQL consumes escapes before CAST(... AS JSON); physical newlines inside JSON string literals are unsafe.\n    for m in re.finditer(r"CAST\\s*\\(\\s*'(?:''|[^'])*'\\s+AS\\s+JSON\\s*\\)", sql, re.I|re.S):\n        if "\\n" in m.group(0):\n            errors.append("MySQL-unsafe physical newline inside CAST(... AS JSON); use JSON_OBJECT/JSON_ARRAY or single-line JSON")\n            break\n'''
+          addition = '''    # MySQL consumes raw control escapes before CAST(... AS JSON), making the resulting JSON invalid.\n    for m in re.finditer(r"CAST\\s*\\(\\s*'(?:''|[^'])*'\\s+AS\\s+JSON\\s*\\)", sql, re.I|re.S):\n        expr=m.group(0)\n        if any(x in expr for x in (r"\\n", r"\\r", r"\\t")):\n            errors.append("MySQL-unsafe raw control escape inside CAST(... AS JSON); use JSON_OBJECT/JSON_ARRAY or a single-line safe value")\n            break\n'''
           if addition not in v:
               if anchor not in v:
                   raise SystemExit('Validator insertion anchor not found')
               v = v.replace(anchor, anchor + addition)
               validator.write_text(v, encoding='utf-8')
 
-          if '\\\n' in chapter.read_text(encoding='utf-8'):
-              raise SystemExit('Backslash-newline remains in EN-002')
+          repaired = chapter.read_text(encoding='utf-8')
+          if any(x in repaired for x in (r'\n', r'\r', r'\t')):
+              raise SystemExit('Unsafe raw control escape remains in EN-002')
           PY
           python3 nova/validation/validate_content_v3.py
           git config user.name 'github-actions[bot]'
