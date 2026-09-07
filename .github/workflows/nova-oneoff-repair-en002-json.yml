@@ -25,39 +25,34 @@ jobs:
           chapter = Path('nova/courses/en-fa/staging/batch_01/chapter_0002/chapter.sql')
           s = chapter.read_text(encoding='utf-8')
 
-          replacements = {
+          # Two JSON reading configs contain a literal backslash followed by a physical newline.
+          if s.count('\\\n') != 2:
+              raise SystemExit(f'Expected exactly 2 backslash-newline sequences, found {s.count(chr(92)+chr(10))}')
+          s = s.replace('\\\n', ' — ')
+
+          # Their learner-facing prompts are also physical multiline SQL strings; keep them single-line too.
+          prompt_repairs = {
               "Maya: Where are you from?\nArman: I''m from Iran.": "Maya: Where are you from? — Arman: I''m from Iran.",
-              "Maya: Where are you from?\\\nArman: I''m from Iran.": "Maya: Where are you from? — Arman: I''m from Iran.",
               "Daniel: Do you speak English?\nArman: A little. I speak Persian too.": "Daniel: Do you speak English? — Arman: A little. I speak Persian too.",
-              "Daniel: Do you speak English?\\\nArman: A little. I speak Persian too.": "Daniel: Do you speak English? — Arman: A little. I speak Persian too.",
           }
-          applied = 0
-          for old, new in replacements.items():
-              n = s.count(old)
-              if n != 1:
-                  raise SystemExit(f'Expected exactly one EN-002 occurrence for {old!r}, found {n}')
+          for old, new in prompt_repairs.items():
+              if s.count(old) != 1:
+                  raise SystemExit(f'Expected one multiline prompt {old!r}, found {s.count(old)}')
               s = s.replace(old, new)
-              applied += 1
-          if applied != 4:
-              raise SystemExit(f'Expected four replacements, got {applied}')
           chapter.write_text(s, encoding='utf-8')
 
           validator = Path('nova/validation/validate_content_v3.py')
           v = validator.read_text(encoding='utf-8')
           anchor = '    if re.search(r"placeholder|todo|anders\\d",sql,re.I): errors.append("placeholder-like content found")\n'
-          addition = '''    # MySQL consumes backslash escapes before CAST(... AS JSON). Raw/newline-continuation JSON strings are unsafe.\n    for m in re.finditer(r"CAST\\s*\\(\\s*'(?:''|[^'])*'\\s+AS\\s+JSON\\s*\\)", sql, re.I|re.S):\n        expr=m.group(0)\n        if "\\\\\\n" in expr or "\\n" in expr:\n            errors.append("MySQL-unsafe multiline/newline escape inside CAST(... AS JSON); use JSON_OBJECT/JSON_ARRAY or single-line JSON")\n            break\n'''
+          addition = '''    # MySQL consumes escapes before CAST(... AS JSON); physical newlines inside JSON string literals are unsafe.\n    for m in re.finditer(r"CAST\\s*\\(\\s*'(?:''|[^'])*'\\s+AS\\s+JSON\\s*\\)", sql, re.I|re.S):\n        if "\\n" in m.group(0):\n            errors.append("MySQL-unsafe physical newline inside CAST(... AS JSON); use JSON_OBJECT/JSON_ARRAY or single-line JSON")\n            break\n'''
           if addition not in v:
               if anchor not in v:
                   raise SystemExit('Validator insertion anchor not found')
               v = v.replace(anchor, anchor + addition)
               validator.write_text(v, encoding='utf-8')
 
-          # Sanity: repaired EN-002 must contain no physical newline inside a CAST JSON string.
-          import re
-          repaired = chapter.read_text(encoding='utf-8')
-          for m in re.finditer(r"CAST\\s*\\(\\s*'(?:''|[^'])*'\\s+AS\\s+JSON\\s*\\)", repaired, re.I|re.S):
-              if '\n' in m.group(0):
-                  raise SystemExit('Unsafe multiline CAST JSON remains in EN-002')
+          if '\\\n' in chapter.read_text(encoding='utf-8'):
+              raise SystemExit('Backslash-newline remains in EN-002')
           PY
           python3 nova/validation/validate_content_v3.py
           git config user.name 'github-actions[bot]'
