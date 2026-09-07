@@ -1,13 +1,13 @@
 -- ===============================================================
 -- NOVA CONTENT SYSTEM v1 — SEMANTIC LEARNING LAYER
--- Separates communicative outcomes from enabling language units.
+-- Deployment/test target: MySQL Server 9.0.1.
 -- ===============================================================
 SET NAMES utf8mb4;
 
 CREATE TABLE sem_learning_units (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   course_id BIGINT UNSIGNED NOT NULL,
-  unit_type ENUM('word_sense','chunk','construction','grammar','pronunciation') NOT NULL,
+  unit_type ENUM('lexical_item','construction','grammar','pronunciation') NOT NULL,
   unit_key VARCHAR(255) NOT NULL,
   display_form VARCHAR(255) NOT NULL,
   translation VARCHAR(500) NULL,
@@ -23,16 +23,16 @@ CREATE TABLE sem_learning_units (
   CONSTRAINT fk_sem_learning_units_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE sem_learning_unit_words (
+CREATE TABLE sem_learning_unit_lexical_items (
   learning_unit_id BIGINT UNSIGNED NOT NULL,
-  word_id BIGINT UNSIGNED NOT NULL,
+  lexical_item_id BIGINT UNSIGNED NOT NULL,
   sort_order INT UNSIGNED NOT NULL DEFAULT 1,
   component_role ENUM('head','component','optional','surface_example') NOT NULL DEFAULT 'component',
   metadata JSON NULL,
-  PRIMARY KEY(learning_unit_id,word_id,sort_order),
-  KEY idx_sem_learning_unit_words_word (word_id),
-  CONSTRAINT fk_sem_luw_unit FOREIGN KEY(learning_unit_id) REFERENCES sem_learning_units(id) ON DELETE CASCADE,
-  CONSTRAINT fk_sem_luw_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE CASCADE
+  PRIMARY KEY(learning_unit_id,lexical_item_id,sort_order),
+  KEY idx_sem_luli_item (lexical_item_id),
+  CONSTRAINT fk_sem_luli_unit FOREIGN KEY(learning_unit_id) REFERENCES sem_learning_units(id) ON DELETE CASCADE,
+  CONSTRAINT fk_sem_luli_item FOREIGN KEY(lexical_item_id) REFERENCES lexical_items(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE sem_lesson_learning_units (
@@ -119,19 +119,13 @@ CREATE TABLE sem_review_obligations (
 
 CREATE VIEW sem_open_review_windows AS
 SELECT
-  ro.id,
-  ro.course_id,
-  ro.learning_unit_id,
-  lu.unit_type,
-  lu.unit_key,
-  lu.display_form,
-  lu.translation,
+  ro.id,ro.course_id,ro.learning_unit_id,
+  lu.unit_type,lu.unit_key,lu.display_form,lu.translation,
   ch.chapter_key AS origin_chapter_key,
   ch.course_sequence AS origin_sequence,
   ch.course_sequence + ro.min_chapter_gap AS not_before_sequence,
   ch.course_sequence + ro.max_chapter_gap AS due_by_sequence,
-  ro.priority,
-  ro.status
+  ro.priority,ro.status
 FROM sem_review_obligations ro
 JOIN sem_learning_units lu ON lu.id=ro.learning_unit_id
 JOIN chapters ch ON ch.id=ro.origin_chapter_id
