@@ -92,22 +92,30 @@ jobs:
           --health-interval=10s --health-timeout=5s --health-retries=12
     steps:
       - uses: actions/checkout@v4
-      - name: Normalize German v3 source locators
+      - name: Normalize German native-v3 TTS metadata
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
-          import re
+          import json, re
+          voice_map = json.loads(Path("nova/tts/voice_map_de_fa.json").read_text(encoding="utf-8"))
+          canonical_roles = {str(x.get("name")): str(x.get("role")) for x in voice_map.get("characters", []) if x.get("name") and x.get("role")}
           for path in Path("nova/courses/de-fa/staging").glob("batch_*/chapter_*/chapter.sql"):
               text = path.read_text(encoding="utf-8")
-              if re.search(r"(?im)^--\s*SERIES\s+\d+\s*$", text[:1200]):
-                  continue
-              match = re.fullmatch(r"chapter_(\d+)", path.parent.name)
-              if not match:
-                  raise SystemExit(f"Cannot infer Series from {path}")
-              series = int(match.group(1))
-              path.write_text(f"-- SERIES {series}\n{text}", encoding="utf-8")
-              print(f"Injected temporary TTS locator for {path}: SERIES {series}")
+              if not re.search(r"(?im)^--\s*SERIES\s+\d+\s*$", text[:1200]):
+                  match = re.fullmatch(r"chapter_(\d+)", path.parent.name)
+                  if not match:
+                      raise SystemExit(f"Cannot infer Series from {path}")
+                  text = f"-- SERIES {int(match.group(1))}\n{text}"
+              lines = []
+              for line in text.splitlines():
+                  if "INSERT INTO characters" in line:
+                      name_match = re.search(r"VALUES\s*\([^,]+,'([^']+)'", line)
+                      if name_match and name_match.group(1) in canonical_roles:
+                          role = canonical_roles[name_match.group(1)].replace("'", "''")
+                          line = re.sub(r"JSON_OBJECT\('role','[^']*'", f"JSON_OBJECT('role','{role}'", line, count=1)
+                  lines.append(line)
+              path.write_text("\n".join(lines) + "\n", encoding="utf-8")
           PY
       - name: Validate German TTS sources
         shell: bash
