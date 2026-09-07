@@ -19,80 +19,66 @@ PASS requires:
 
 Review every learner-visible English Turn, prompt, option, answer, example and lexical item.
 
-BLOCK on:
-- grammar error;
-- unnatural/awkward wording;
-- wrong register;
-- ambiguous scored answer;
-- advanced unexplained language;
-- dialogue created mainly to repeat a target;
-- inconsistent spelling/usage baseline;
-- accepted answer a fluent speaker would not naturally use.
+BLOCK on grammar error, unnatural wording, wrong register, ambiguous scored answers, unexplained advanced language, drill-like dialogue, inconsistent baseline usage, or unnatural accepted speech.
 
 ## Gate C — Persian learner support
 
-BLOCK on:
-- wrong meaning;
-- misleading literal translation;
-- Persian explanation that teaches a false English rule;
-- ambiguity that changes what the learner is expected to do;
-- unnecessarily technical wording for a beginner.
+BLOCK on wrong meaning, misleading literal translation, false rules, task ambiguity or unnecessarily technical beginner explanations.
 
 ## Gate D — learning design
 
 PASS requires evidence that new target units move beyond exposure.
 
-BLOCK when:
-- learner is scored on untaught material;
-- activities are repetitive without a changed cognitive demand;
-- correct answer can be guessed from formatting rather than language;
-- transfer is only a cosmetic rewrite;
-- listening at zero level is blind guessing;
-- a Lesson is padded to satisfy a count;
-- story naturalness is sacrificed for drilling.
+BLOCK when the learner is scored on untaught material, activities repeat without changed cognitive demand, answers are guessable from formatting, transfer is cosmetic, beginner listening becomes blind guessing, content is padded for a count, or naturalness is sacrificed for drilling.
 
 ## Gate E — lexical/data integrity
 
 BLOCK when:
-- any `words` record contains whitespace or sentence-like content;
-- POS/sense does not match the source context;
-- token reconstruction differs from canonical Turn text;
-- punctuation becomes a lexical entry;
-- a target/support/review classification is missing where required;
-- chunk/construction/word types are conflated.
+- a supposed lexical item is actually a sentence/clause, arbitrary Turn fragment, construction or tokenization accident;
+- lexical atomicity/use cannot justify treating the item as one learnable vocabulary unit;
+- POS/sense does not match source context;
+- token/span reconstruction differs from canonical Turn text;
+- punctuation becomes a lexical item;
+- target/support/review/incidental classification is missing where required.
+
+Whitespace alone must never make an item pass or fail.
 
 ## Gate F — activities
 
-Each scored Activity must have:
-- one unambiguous task goal;
-- valid source evidence/prerequisite;
-- correct answer(s) that are natural;
-- distractors appropriate to the exact distinction when choices are used;
-- no answer-position/template artifacts.
+Each scored Activity must have one unambiguous task goal, valid prerequisites, natural correct answer(s), context-appropriate distractors when used, and no answer-position/template artifacts.
 
-Speaking accepted alternatives must be meaningfully different valid forms, not punctuation/case duplicates.
+Speaking alternatives must be genuinely valid variants, not punctuation/case duplicates.
 
 ## Gate G — database
 
-PASS requires real MySQL 8 execution from a clean test database.
+The deployment target is **MySQL Server 9.0.1**.
+
+PASS requires real execution against a clean MySQL 9.0.1 test database, using the same setup/import order intended for production.
 
 Test both:
-1. candidate Chapter in the expected contiguous course state;
-2. representative runtime retrieval for Lesson/Turn/Activity/Word data.
+1. schema + semantic layer + candidate Chapter in the expected contiguous course state;
+2. representative runtime retrieval for Lesson, Turn, Activity and lexical-item data.
 
-A SQL file that parses visually but has not executed does not pass.
+A SQL file that only looks valid or was tested on another major version does not pass the production gate.
 
-## Gate H — audio
+## Gate H — audio — mandatory
 
-Audio runs only after Gates A–G pass.
+Audio is part of the product, not an optional post-processing step. No Pilot Chapter can be complete/publishable without generated and tested audio.
+
+Audio generation happens from the validated canonical source and is rerun whenever relevant source text/voice metadata changes.
 
 PASS requires:
-- exact source hash match;
-- correct voice/locale policy;
+- exact canonical source/hash match;
+- correct language/locale and intended character voice;
 - every required Turn audio present;
-- every eligible single-token Word audio present;
-- zero phrase/sentence records routed through Word TTS;
-- no stale audio after source text changes.
+- every audio-eligible lexical item present, including valid multiword lexical items;
+- files decode successfully and are non-empty;
+- duration/output sanity checks pass;
+- spoken content corresponds to the exact intended canonical item;
+- no stale file remains after text changes;
+- no sentence is misrouted into lexical-item audio merely because of a data-classification bug.
+
+For the English Pilot, an audio manifest must expose source text, item type, voice, path and QA status so failures can be traced directly.
 
 ## Pilot human audit
 
@@ -100,12 +86,13 @@ For the initial English pilot, publication additionally requires a human-review 
 
 Pilot rule:
 - one Chapter generated at a time;
-- human audit before publication;
+- English audit before publication;
+- audio generated and QA-tested before Chapter completion;
 - defects are categorized and converted into validator/generator rules where possible;
-- after a meaningful defect-free streak, the manual gate may be reconsidered, but never silently removed.
+- after a meaningful defect-free streak, the manual text gate may be reconsidered, but the audio gate remains mandatory.
 
 ## Failure behavior
 
-A failed Chapter does not advance `next_chapter`.
+A failed Chapter does not advance `nextChapter`.
 
-Repair the canonical source, regenerate all dependent outputs, and rerun every affected gate. Never patch a derivative and call the source fixed.
+Repair the canonical source, regenerate every dependent output (including audio where affected), and rerun all affected gates. Never patch a derivative and call the source fixed.
