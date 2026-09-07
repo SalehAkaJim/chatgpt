@@ -5,6 +5,12 @@
 -- ===============================================================
 SET NAMES utf8mb4;
 
+ALTER TABLE activities
+  MODIFY activity_type ENUM(
+    'listen','speak','new_word','meaning_choice','reading_comprehension','word_order',
+    'reading','writing','pronunciation','chunk'
+  ) NOT NULL;
+
 CREATE TABLE IF NOT EXISTS learning_units (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   course_id BIGINT UNSIGNED NOT NULL,
