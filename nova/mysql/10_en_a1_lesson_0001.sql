@@ -1,6 +1,6 @@
 -- Generated from canonical Lesson source. Do not edit by hand.
 -- lessonKey: EN-A1-L-0001
--- sourceHash: 49a5cffa1956a83f6c0527e30227f3d87fd62fb4afd6895a079dc33323d2b529
+-- sourceHash: 6b35b94dcec43438b37a729ef090cf7fb84d559233cda738244afe4862593f0e
 SET NAMES utf8mb4;
 START TRANSACTION;
 
@@ -14,7 +14,7 @@ VALUES (@course_id,'maya','Maya','female','vexa','{"roleFa":"شخصیت اصلی
 ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
 
 INSERT INTO lessons (course_id,lesson_key,sort_order,title,title_translation,description,cefr_level,primary_outcome_key,estimated_duration_sec,source_hash,status,metadata)
-VALUES (@course_id,'EN-A1-L-0001',1,'Hello! What''s your name?','سلام! اسمت چیه؟','اولین مکالمه کوتاه: سلام کردن و گفتن یا پرسیدن اسم.','A1','A1-INTERACTION-GREET-NAME',420,'49a5cffa1956a83f6c0527e30227f3d87fd62fb4afd6895a079dc33323d2b529','validated','{"outcomeFa":"زبان‌آموز می‌تواند سلام کند، اسم خودش را بگوید و اسم طرف مقابل را بپرسد یا بفهمد.","scenarioFa":"برای اولین بار با مایا آشنا می‌شوی.","prerequisiteOutcomeKeys":[],"curriculum":{"startingKnowledge":"absolute_zero","targetConstructions":[{"key":"EN-CONSTR-IM-NAME","form":"I''m + name","meaningFa":"برای معرفی کوتاه اسم"},{"key":"EN-CONSTR-WHATS-YOUR-NAME","form":"What''s your name?","meaningFa":"برای پرسیدن اسم طرف مقابل"},{"key":"EN-CONSTR-MY-NAME-IS","form":"My name is + name","meaningFa":"برای گفتن اسم"}],"supportLanguage":["Nice to meet you."],"assessmentBoundary":"Support language is not required for scored success in this Lesson."},"pilot":true,"audioRequired":true,"humanEnglishAuditRequired":true}')
+VALUES (@course_id,'EN-A1-L-0001',1,'Hello! What''s your name?','سلام! اسمت چیه؟','اولین مکالمه کوتاه: سلام کردن و گفتن یا پرسیدن اسم.','A1','A1-INTERACTION-GREET-NAME',420,'6b35b94dcec43438b37a729ef090cf7fb84d559233cda738244afe4862593f0e','validated','{"outcomeFa":"زبان‌آموز می‌تواند سلام کند، اسم خودش را بگوید و اسم طرف مقابل را بپرسد یا بفهمد.","scenarioFa":"برای اولین بار با مایا آشنا می‌شوی.","prerequisiteOutcomeKeys":[],"curriculum":{"startingKnowledge":"absolute_zero","targetConstructions":[{"key":"EN-CONSTR-IM-NAME","form":"I''m + name","meaningFa":"برای معرفی کوتاه اسم"},{"key":"EN-CONSTR-WHATS-YOUR-NAME","form":"What''s your name?","meaningFa":"برای پرسیدن اسم طرف مقابل"},{"key":"EN-CONSTR-MY-NAME-IS","form":"My name is + name","meaningFa":"برای گفتن اسم"}],"supportLanguage":["Nice to meet you."],"assessmentBoundary":"Support language is not required for scored success in this Lesson."},"pilot":true,"audioRequired":true,"humanEnglishAuditRequired":true}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),cefr_level=VALUES(cefr_level),primary_outcome_key=VALUES(primary_outcome_key),estimated_duration_sec=VALUES(estimated_duration_sec),source_hash=VALUES(source_hash),status=VALUES(status),metadata=VALUES(metadata);
 SET @lesson_id=(SELECT id FROM lessons WHERE course_id=@course_id AND lesson_key='EN-A1-L-0001' LIMIT 1);
 DELETE FROM activities WHERE lesson_id=@lesson_id;
@@ -59,11 +59,11 @@ VALUES (@lesson_id,'A02',2,'lexical_teach','این دو کلمه اصلی را �
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
 VALUES (@lesson_id,'A03',3,'speak','متن را ببین و با صدای بلند بخوان.',NULL,'{"mode":"repeat_visible","sourceTurnKey":"T02","textEn":"Hello! I''m Alex.","acceptedAnswersEn":["Hello! I''m Alex."],"evaluation":"stt"}','{}');
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
-VALUES (@lesson_id,'A04',4,'sentence_order','کلمه‌ها را مرتب کن تا جمله درست ساخته شود.',NULL,'{"tokensEn":["Alex.","is","My","name"],"answerTokensEn":["My","name","is","Alex."],"answerEn":"My name is Alex."}','{}');
+VALUES (@lesson_id,'A04',4,'sentence_order','به جمله گوش کن و بعد کلمه‌ها را به همان ترتیب بچین.',NULL,'{"audioSourceTurnKey":"T04","tokensEn":["Alex.","is","My","name"],"answerTokensEn":["My","name","is","Alex."],"answerEn":"My name is Alex.","showAnswerTextBeforeAttempt":false,"allowAudioReplay":true}','{}');
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
 VALUES (@lesson_id,'A05',5,'fill_blank','گزینه درست را برای جای خالی انتخاب کن.',NULL,'{"sentenceEn":"My ___ is Alex.","optionsEn":["name","hello","Maya"],"answerIndex":0}','{}');
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
-VALUES (@lesson_id,'A06',6,'comprehension','مکالمه را گوش کن و جواب درست را انتخاب کن.','اسم دختری که اول صحبت می‌کند چیست؟','{"sourceTurnKeys":["T01","T02","T03","T04","T05","T06"],"options":["Maya","Alex"],"answerIndex":0,"transcriptAfterAttempt":true}','{}');
+VALUES (@lesson_id,'A06',6,'comprehension','مکالمه را گوش کن و به معنی آن توجه کن.','مایا از الکس چه چیزی می‌پرسد؟','{"sourceTurnKeys":["T01","T02","T03","T04","T05","T06"],"options":["اسمش را","حالش را","اهل کجاست"],"answerIndex":0,"transcriptAfterAttempt":true}','{}');
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
 VALUES (@lesson_id,'A07',7,'speak','این سوال را با صدای بلند بخوان.',NULL,'{"mode":"repeat_visible","sourceTurnKey":"T03","textEn":"What''s your name?","acceptedAnswersEn":["What''s your name?"],"evaluation":"stt"}','{}');
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)

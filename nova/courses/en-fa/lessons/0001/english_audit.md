@@ -70,7 +70,7 @@ Nice to meet you too.
 
 **A06 · comprehension**
 
-- **options:** Maya | Alex
+- **options:** اسمش را | حالش را | اهل کجاست
 
 **A07 · speak**
 
