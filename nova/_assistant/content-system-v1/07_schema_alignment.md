@@ -1,38 +1,27 @@
-# 07 — Database/schema alignment findings
+# 07 — Database/schema alignment
 
-The surviving pre-reset database schema is infrastructure, but several old content assumptions conflict with Content System v1 and must be changed before Chapter 1.
+Content System v1 now treats the database as an implementation of the learning model, not a constraint that dictates pedagogy.
 
-## Blocking mismatches found
+## Active decisions
 
-1. `lessons.lesson_type` currently allows only `story`.
-   - v1 explicitly allows dialogue, scenario, reading, listening, practice, review or mixed lesson structures.
+1. Lesson structure is flexible (`dialogue`, `scenario`, `listening`, `reading`, `practice`, `review`, `mixed`).
+2. A Lesson does not require a forced two-character story model.
+3. The old `words` abstraction is replaced by **lexical items**.
+   - A lexical item may be a single word or a conventional multiword expression.
+   - whitespace count is not a global validity rule.
+   - sentence/clause/arbitrary-fragment rejection belongs to canonical validation and lexical atomicity checks.
+4. Distractors are Activity-specific, not lexical-entry properties.
+5. Learning roles are explicitly `target`, `review`, `support`, `incidental`.
+6. Review uses windows/priority rather than fixed 1/2/4/8/16 Chapter offsets.
+7. Communicative curriculum outcomes are separate from enabling lexical/grammar/pronunciation units.
+8. Visible Turn text is canonical; tokenization and lexical spans are derived artifacts.
+9. Audio metadata belongs to the canonical Turn/lexical item and is a mandatory publication dependency.
+10. The production database target is **MySQL Server 9.0.1**. SQL is not considered validated until it executes on that exact target version.
 
-2. Lessons currently require both `prompt_character_id` and `learner_character_id`.
-   - v1 needs a clear interlocutor model but must not force every learning experience into a two-character story representation.
+## Lexical span requirement
 
-3. `words` has no database invariant preventing phrases/sentences.
-   - v1 requires single orthographic tokens only and needs a hard DB/validator guard against whitespace/sentence-like values.
+A multiword lexical item may map to multiple Turn tokens while remaining one dictionary/teaching/audio unit. The data model must therefore support lexical-item-to-token/span evidence rather than assuming one token equals one vocabulary entry.
 
-4. `words.distractors` stores distractors as a Word property.
-   - distractors belong to a specific Activity/context and should not be canonical lexical data.
+## Status
 
-5. `lesson_words.learning_role` uses `new/review/passive` plus a separate `is_target` flag.
-   - v1 uses explicit roles `target/review/support/incidental`; duplicated role semantics should be removed.
-
-6. the semantic review table stores exact `due_series` and `spacing_offset` values.
-   - v1 review uses recurrence windows/priority and meaningful reuse, not fixed 1/2/4/8/16-style offsets.
-
-7. curriculum outcome types mix communicative skills with grammar/lexical categories.
-   - v1 separates communicative outcomes from enabling language units.
-
-8. numeric difficulty fields are widespread.
-   - they may remain as optional operational metadata, but v1 validation cannot use one number as a substitute for communicative, lexical, listening, reading, pronunciation and support-load dimensions.
-
-9. Turn `tokens` are persisted as required authored data.
-   - v1 treats visible Turn text as canonical and tokenization as a derived artifact that must reconstruct it exactly.
-
-## Decision
-
-Do not create Chapter 1 against the old schema unchanged.
-
-The MySQL foundation will be revised after the canonical Chapter schema is locked so database structure follows content design rather than forcing content back into legacy assumptions.
+Schema revision is part of the Content System v1 foundation and must be validated on MySQL 9.0.1 before Chapter 1 can be marked complete.
