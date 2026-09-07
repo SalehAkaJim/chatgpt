@@ -1,13 +1,16 @@
 # English → Persian
 
-Status: curriculum rebuild in progress.
-
-This is the only active Nova course during Content System v1 design and pilot validation.
+This is the only active Nova course during the clean Content System v1 Pilot.
 
 - Learning language: English (`en`)
 - Base/UI language: Persian (`fa`)
 - Starting proficiency: absolute zero
-- First production scope: A1 only
-- No Chapter is publishable until the new Content System v1 rules, canonical schema, validator, and pilot audit are complete.
+- Current scope: A1
+- Product runtime: `Course → Lesson → Activity`
+- First Pilot window: 3 Lessons, one at a time
+- MySQL target: 9.0.1
+- Audio is mandatory before a Pilot Lesson is complete
 
-No content from previous Nova English or German builds is an active source for this course.
+Canonical course data lives in `course.source.json` and each Lesson in `lessons/NNNN/lesson.source.json`.
+
+No previous English or German Nova content is an active source for this course.
