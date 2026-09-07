@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "requiredForPilotCompletion": true,
+  "provider": "ElevenLabs",
+  "learningLanguage": "en",
+  "turnAudio": {
+    "requiredByDefault": true,
+    "voiceMode": "character_voice_key",
+    "pathTemplate": "nova/audio/turns/{course}/{level}/{chapter}/{lesson}/{turn}.mp3"
+  },
+  "lexicalAudio": {
+    "enabled": true,
+    "voiceMode": "fixed_course_lexical_voice",
+    "voiceName": "Lori",
+    "allowSingleWord": true,
+    "allowValidatedMultiwordExpression": true,
+    "pathTemplate": "nova/audio/lexical/{course}/{lexical_key_hash}.mp3"
+  },
+  "qa": {
+    "manifestRequired": true,
+    "exactSourceHashRequired": true,
+    "decodeCheckRequired": true,
+    "durationCheckRequired": true,
+    "voiceCheckRequired": true,
+    "staleAudioCheckRequired": true,
+    "sourceTextMatchRequired": true
+  }
+}
