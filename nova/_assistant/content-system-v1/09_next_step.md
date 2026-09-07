@@ -1,12 +1,16 @@
-# 09 — Next implementation step
+# 09 — Active Pilot execution
 
-Before authoring Chapter 1:
+The architecture phase is complete enough to test with real content.
 
-1. revise MySQL foundation to match Content System v1;
-2. build a validator for `chapter.source.schema.json` plus semantic rules;
-3. create the English-Persian A1 course foundation and outcome records;
-4. create Chapter 1 as canonical source only;
-5. render learner-visible English for human audit;
-6. compile/import only after content passes.
+Current execution order for Lesson 0001:
 
-Bulk generation and audio remain disabled until the three-Chapter pilot exit criteria are met.
+1. validate `lesson.source.json`;
+2. render `english_audit.md`;
+3. compile runtime SQL;
+4. execute reset/schema/Lesson import/runtime retrieval on MySQL Server 9.0.1;
+5. generate all required ElevenLabs Turn + lexical-item audio;
+6. decode/duration/hash-check every audio file;
+7. validate the audio manifest against the exact Lesson source hash;
+8. keep the Lesson unpublished if any gate fails.
+
+After Lesson 0001 is reviewed, repair rules/schema/content based on real defects before producing Lesson 0002.
