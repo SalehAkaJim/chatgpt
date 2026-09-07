@@ -8,6 +8,7 @@ on:
       - "nova/courses/de-fa/staging/**/chapter.sql"
       - ".github/workflows/nova-de-fa-audio.yml"
       - "nova/tts/**"
+      - "nova/policies/voice_quality_v3.json"
 
 permissions:
   contents: write
@@ -45,31 +46,31 @@ jobs:
       - name: Validate source locators
         if: steps.source.outputs.present == 'true'
         run: |
-          python nova/tts/v3_tts_runner.py turn validate-sources
-          python nova/tts/v3_tts_runner.py word validate-sources
-      - name: Prepare turn voices
+          python nova/tts/strict_voice_runner.py turn validate-sources
+          python nova/tts/strict_voice_runner.py word validate-sources
+      - name: Enforce clear Standard German character voices
         id: turn_voices
         if: steps.source.outputs.present == 'true'
         continue-on-error: true
-        run: python nova/tts/v3_tts_runner.py turn bootstrap-voices --yes
+        run: python nova/tts/strict_voice_runner.py turn bootstrap-voices --yes
       - name: Generate turn audio
         id: turn_audio
         if: steps.source.outputs.present == 'true' && steps.turn_voices.outcome == 'success'
         continue-on-error: true
-        run: python nova/tts/v3_tts_runner.py turn generate --yes
+        run: python nova/tts/strict_voice_runner.py turn generate --yes
       - name: Prepare Lori word voice
         id: word_voice
         if: steps.source.outputs.present == 'true'
         continue-on-error: true
-        run: python nova/tts/v3_tts_runner.py word bootstrap-lori --yes
+        run: python nova/tts/strict_voice_runner.py word bootstrap-lori --yes
       - name: Generate word audio
         id: word_audio
         if: steps.source.outputs.present == 'true' && steps.word_voice.outcome == 'success'
         continue-on-error: true
-        run: python nova/tts/v3_tts_runner.py word generate --yes
+        run: python nova/tts/strict_voice_runner.py word generate --yes
       - name: Verify word manifest
         if: steps.source.outputs.present == 'true' && steps.word_audio.outcome == 'success'
-        run: python nova/tts/v3_tts_runner.py word verify-manifest
+        run: python nova/tts/strict_voice_runner.py word verify-manifest
       - name: Commit resumable audio once
         if: always()
         shell: bash
