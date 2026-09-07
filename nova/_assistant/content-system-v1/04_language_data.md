@@ -32,59 +32,63 @@ Translation is sense- and context-specific.
 
 ## Lexical model
 
-The system distinguishes:
+The core dictionary/audio object is a **lexical item**, not necessarily one whitespace-delimited token.
 
-1. **word token** — one orthographic token such as `hello`, `name`, `I'm`;
-2. **lexeme/sense** — a word in a particular meaning/POS;
-3. **chunk** — a multiword conventional expression such as `thank you`;
-4. **construction** — a reusable pattern such as `I'm + name/adjective`;
-5. **grammar concept** — an explanatory abstraction used only when useful;
-6. **pronunciation target** — a sound/stress/linking/intelligibility feature;
-7. **communicative outcome** — what the learner can do.
+A lexical item may be:
+- a single orthographic word;
+- a contraction or language-specific bound-looking form that is taught as one unit;
+- a phrasal verb;
+- a fixed or semi-fixed multiword expression;
+- another language-specific lexical unit whose meaning/use is conventionally learned as a unit.
 
-These are not interchangeable records.
+Examples in English include `hello`, `thank you`, `of course`, and phrasal-verb senses such as `wake up` when the multiword form is the actual lexical target.
 
-## Critical `words` rule
+The system separately represents:
+1. **lexical item / sense** — a conventional learnable vocabulary unit, single- or multiword;
+2. **construction** — a productive pattern such as `I'm + name/adjective`;
+3. **grammar concept** — an explanatory abstraction used only when useful;
+4. **pronunciation target** — a sound/stress/linking/intelligibility feature;
+5. **communicative outcome** — what the learner can do.
 
-The `words` table is for single orthographic tokens only.
+## Lexical-item atomicity rule
 
-A `words.display_form` must not contain whitespace. Apostrophes/hyphens that are part of one normal English token are allowed.
+Whitespace count is never the acceptance criterion.
 
-Hard reject from `words`:
-- sentences;
-- phrases/chunks with spaces;
-- full questions;
-- clauses;
-- punctuation-delimited utterances;
-- strings created by accidental tokenization/concatenation.
+A candidate is a lexical item only when it is reasonable to teach, retrieve, translate and pronounce as one conventional vocabulary unit in that language/context.
 
-Multiword expressions belong to the learning-unit/chunk layer and may have phrase/turn audio, but they must never masquerade as a Word record.
+Hard reject as lexical items:
+- full sentences or clauses created for one Lesson;
+- arbitrary fragments copied from a Turn;
+- accidental concatenations/tokenization errors;
+- strings whose only reason for existing is to route Turn audio through lexical audio;
+- productive sentence patterns that belong in the construction layer.
 
-This is a blocking invariant because Word TTS operates only on validated Word records.
+There is deliberately no global one-, two-, or three-token limit because Nova must remain language-agnostic.
 
-## Word sense rules
+## Lexical sense rules
 
-A Word/lexeme occurrence must preserve:
-- surface form;
-- normalized lemma where applicable;
-- POS in the actual context;
+Each lexical item occurrence must preserve where applicable:
+- canonical display form;
+- normalized lemma/head form;
+- lexical kind (`word` or `multiword_expression`) as operational metadata, not as a quality judgment;
+- POS/function in the actual context;
 - sense-specific Persian meaning;
-- source sentence/turn reference;
-- whether the item is target, review, or transparent support.
+- source sentence/Turn reference;
+- whether the item is target, review, support or incidental.
 
 Do not infer a fake lemma/POS mapping merely to satisfy a schema.
 
-## Tokenization
+## Tokenization and lexical spans
 
-Turn text is canonical. Token records must reconstruct the exact visible Turn text when combined with their stored spacing/punctuation metadata.
+Turn text is canonical. Tokenization must reconstruct the exact learner-visible Turn text.
 
-Tokenization must never alter learner-visible English.
+A lexical item may map to one token or a span of multiple tokens. Token boundaries therefore do not define vocabulary boundaries.
 
-Punctuation is not a Word. Whitespace is not a Word. A tokenizer failure is blocking and must not be repaired by inventing lexical entries.
+Punctuation and whitespace are not lexical items by themselves. A tokenizer/span-mapping failure is blocking and must not be repaired by inventing lexical entries.
 
 ## New vs support language
 
-Every first meaningful occurrence of an unfamiliar item is classified as:
+Every first meaningful occurrence of an unfamiliar unit is classified as:
 - `target` — intentionally learned now;
 - `support` — needed for context but meaning is immediately supplied and it is not assessed yet;
 - `incidental` — allowed only when comprehension does not depend on learning it.
@@ -93,11 +97,11 @@ A scored answer cannot require an incidental item.
 
 ## Audio eligibility
 
-Word audio eligibility begins only after lexical validation passes.
+Audio eligibility begins only after lexical validation passes.
 
-- single validated word token → Word audio eligible;
-- multiword chunk → separate chunk/utterance audio if product needs it;
+- validated lexical item, single- or multiword → lexical-item audio eligible when useful to the learner;
 - full sentence/Turn → Turn audio;
+- construction → example/Turn audio unless a dedicated construction example is intentionally authored;
 - punctuation/metadata → never audio.
 
-Audio generation must consume validated canonical records, not infer unit type from arbitrary strings.
+Audio generation must consume validated canonical records and explicit unit type. It must never guess unit type from whitespace or arbitrary strings.
