@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """Run Nova TTS against native-v3 SQL without weakening the SQL contract.
 
-The original TTS parser predates native-v3 and assumes:
-1) one VALUES tuple per INSERT INTO turns statement,
-2) character lookup variables are named v_c_*, and
-3) words are inserted with VALUES rather than the idempotent
-   INSERT ... SELECT ... WHERE NOT EXISTS form used by v3.
+The original TTS parser predates native-v3 and assumes mostly one VALUES tuple
+per INSERT and lesson variables assigned immediately with LAST_INSERT_ID().
+Native-v3 intentionally emits compact/idempotent SQL, including multi-row
+lessons/turns/words and lesson-id lookups after insertion.
 
-This adapter normalizes only the parser view. It does not change canonical SQL,
-MySQL execution semantics, or publication state.
+This adapter normalizes only the parser view. It never rewrites canonical SQL on
+disk and does not change MySQL execution semantics or publication state.
 """
 from __future__ import annotations
 
@@ -24,6 +23,7 @@ import nova_tts
 
 _ORIGINAL_SPLIT_STATEMENTS = nova_tts.split_sql_statements
 _ORIGINAL_PARSE_INSERT = nova_tts.parse_insert
+_MULTIROW_TABLES = {"lessons", "turns", "words"}
 
 
 def _split_values_rows(payload: str) -> list[str]:
@@ -77,7 +77,7 @@ def _normalize_character_variables(sql: str) -> str:
     """Alias native-v3 character variables to the legacy v_c_* parser convention."""
     variables: list[str] = []
     for match in re.finditer(
-        r"SELECT\b[^;]*?\bINTO\s+(v_[a-z0-9_]+)\s+FROM\s+characters\b[^;]*?\bname\s*=\s*'(?:''|\\.|[^'])*'",
+        r"SELECT\b[^;]*?\bINTO\s+(?:v_count\s*,\s*)?(v_[a-z0-9_]+)\s+FROM\s+characters\b[^;]*?\bname\s*=\s*'(?:''|\\.|[^'])*'",
         sql,
         flags=re.IGNORECASE | re.DOTALL,
     ):
@@ -92,25 +92,90 @@ def _normalize_character_variables(sql: str) -> str:
     return sql
 
 
+def _lesson_variable_map(sql: str) -> dict[int, str]:
+    """Map lesson sort_order to v_l_* for native-v3 post-insert lookups."""
+    result: dict[int, str] = {}
+    for match in re.finditer(
+        r"SELECT\s+id\s+INTO\s+(v_l_[a-z0-9_]+)\s+FROM\s+lessons\b[^;]*?\bsort_order\s*=\s*(\d+)",
+        sql,
+        flags=re.IGNORECASE | re.DOTALL,
+    ):
+        order = int(match.group(2))
+        variable = match.group(1)
+        previous = result.get(order)
+        if previous and previous.casefold() != variable.casefold():
+            raise nova_tts.NovaTtsError(
+                f"Conflicting native-v3 lesson variables for sort_order {order}: {previous}, {variable}."
+            )
+        result[order] = variable
+    return result
+
+
+def _row_values(row: str) -> list[str]:
+    row = row.strip()
+    if not (row.startswith("(") and row.endswith(")")):
+        raise nova_tts.NovaTtsError(f"Expected parenthesized VALUES row, got {row[:80]!r}.")
+    return nova_tts.split_sql_csv(row[1:-1])
+
+
 def compat_split_sql_statements(sql: str) -> list[str]:
+    """Expand native-v3 compact INSERTs into the legacy parser's statement view."""
     sql = _normalize_character_variables(sql)
+    lesson_vars = _lesson_variable_map(sql)
     expanded: list[str] = []
+
     for statement in _ORIGINAL_SPLIT_STATEMENTS(sql):
         match = re.match(
-            r"^\s*(INSERT\s+INTO\s+turns\s*\((.*?)\)\s*VALUES\s*)(.*)\s*$",
+            r"^\s*(INSERT\s+INTO\s+(lessons|turns|words)\s*\((.*?)\)\s*VALUES\s*)(.*)\s*$",
             statement,
             flags=re.IGNORECASE | re.DOTALL,
         )
         if not match:
             expanded.append(statement)
             continue
+
         prefix = match.group(1)
-        payload = match.group(3).strip()
+        table = match.group(2).casefold()
+        columns = [c.strip().strip("`").casefold() for c in nova_tts.split_sql_csv(match.group(3))]
+        payload = match.group(4).strip()
         rows = _split_values_rows(payload)
-        if len(rows) <= 1:
+        if not rows:
             expanded.append(statement)
             continue
-        expanded.extend(prefix + row for row in rows)
+
+        # Native-v3 target tables currently use pure VALUES lists. Refuse to
+        # silently discard future top-level suffixes such as ON DUPLICATE KEY.
+        last_end = payload.rfind(rows[-1]) + len(rows[-1])
+        suffix = payload[last_end:].strip().lstrip(",").strip()
+        if suffix:
+            raise nova_tts.NovaTtsError(
+                f"Unsupported suffix after native-v3 multi-row {table} INSERT: {suffix[:80]!r}."
+            )
+
+        for row in rows:
+            expanded.append(prefix + row)
+            if table != "lessons" or not lesson_vars:
+                continue
+            if "sort_order" not in columns:
+                raise nova_tts.NovaTtsError("Native-v3 lessons INSERT is missing sort_order.")
+            values = _row_values(row)
+            if len(values) != len(columns):
+                raise nova_tts.NovaTtsError(
+                    f"Column/value mismatch while normalizing native-v3 lessons: {len(columns)} != {len(values)}."
+                )
+            raw_order = values[columns.index("sort_order")].strip()
+            if not re.fullmatch(r"\d+", raw_order):
+                raise nova_tts.NovaTtsError(
+                    f"Native-v3 lesson sort_order must be an integer, got {raw_order!r}."
+                )
+            order = int(raw_order)
+            variable = lesson_vars.get(order)
+            if variable:
+                # The legacy turn parser records the most recently parsed lesson
+                # when it sees SET v_l_*=LAST_INSERT_ID(). This is a parser-only
+                # synthetic statement; canonical SQL remains unchanged.
+                expanded.append(f"SET {variable}=LAST_INSERT_ID()")
+
     return expanded
 
 
