@@ -1,39 +1,39 @@
 # Nova Content System v1
 
-This directory is the only active content-generation rule set after the September 2026 reset.
+This directory is the only active rule/tool set for the clean Nova rebuild.
 
 ## Scope
 
-- Active course: English → Persian (`en-fa`)
+- Active Course: English → Persian (`en-fa`)
 - Learner: Persian speaker starting from absolute zero
-- First curriculum scope: A1 only
-- Previous Nova curriculum, Chapter packages, production state, validators, and content contracts are not active inputs.
+- Current curriculum scope: A1
+- Runtime product model: `Course → Lesson → Activity`
+- Authoring source: one rich `lesson.source.json` per Lesson
+- Database target: MySQL Server 9.0.1
+- Audio: mandatory before Pilot completion
 
-## Design principle
+## Core separation
 
-Learning outcomes drive the structure. Counts do not.
+**Canonical source may be pedagogically rich; Runtime MySQL stays product-simple.**
 
-There is no fixed number of Chapters per Level, Lessons per Chapter, Turns per Lesson, or Activities per Lesson. A unit exists only when it contributes evidence toward a communicative outcome.
+CEFR, outcomes, prerequisites, constructions, support language, lexical roles and QA metadata may exist in source/curriculum files without becoming runtime hierarchy tables.
 
-## Files
+## Active files
 
-1. `01_principles.md` — non-negotiable pedagogical and product principles
-2. `02_curriculum.md` — CEFR-aligned outcome planning and A1 completion rules
-3. `03_lesson_activity.md` — Lesson and Activity construction rules
-4. `04_language_data.md` — English, Persian, lexical-unit, token, and audio-data rules
-5. `05_canonical_pipeline.md` — canonical source → validation → SQL → audio → publication
-6. `06_qa_publication.md` — blocking QA gates and pilot requirements
-7. `A1_OUTCOMES.md` — initial A1 communicative outcome map; chapter count remains dynamic
+- `01_principles.md` — pedagogical/product principles
+- `02_curriculum.md` — outcome and sequence planning
+- `03_lesson_activity.md` — Lesson/Activity construction
+- `04_language_data.md` — language + lexical model
+- `05_canonical_pipeline.md` — source → validation → SQL → MySQL → audio
+- `06_qa_publication.md` — blocking gates
+- `07_schema_alignment.md` — simple runtime architecture
+- `08_pilot.md` — three-Lesson Pilot protocol
+- `09_next_step.md` — current execution order
+- `10_status.json` — machine-readable state
+- `lesson.source.schema.json` — canonical Lesson schema
+- `tools/` — validator, audit renderer, SQL compiler and audio tools
+- `A1_OUTCOMES.md` — curriculum planning reference; it does not define runtime tables
 
-## External framework
+## Rule change
 
-CEFR is used as an outcome framework, not as a ready-made syllabus. The Council of Europe explicitly describes CEFR descriptors as adaptable to specific learning contexts and defines proficiency through communicative language activities / can-do performance.
-
-Primary reference:
-- Council of Europe, CEFR Companion Volume (2020)
-- https://www.coe.int/en/web/common-european-framework-reference-languages/home
-- https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors
-
-## Version rule
-
-No generator or validator may silently encode a rule that is absent from this directory. Any rule change increments the Content System version and is reviewed before new content is published.
+No generator/validator may silently introduce a content rule absent from this active system. Repeated Pilot defects must become explicit rule/tool/schema improvements before scale-up.
