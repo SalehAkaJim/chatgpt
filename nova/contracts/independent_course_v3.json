@@ -1,0 +1,109 @@
+{
+  "version": "3.0.0",
+  "goal": "independent_outcome_driven_language_course",
+  "base_language": "fa",
+  "courses": ["de-fa", "en-fa"],
+  "chapter_count_policy": {
+    "mode": "dynamic",
+    "fixed_course_total": false,
+    "fixed_level_ranges": false,
+    "series_is_sequence_only": true,
+    "rule": "A level continues until its required outcomes, grammar/functions, lexical units, pronunciation targets, receptive skills, productive skills, review obligations and mastery criteria are satisfied. Chapter count is an output of curriculum coverage, never an input quota."
+  },
+  "levels": ["A1", "A2", "B1", "B2"],
+  "level_transition": {
+    "all_required_can_do_outcomes": true,
+    "all_required_grammar_functions": true,
+    "all_required_core_lexical_units": true,
+    "all_required_pronunciation_targets": true,
+    "all_required_reading_listening_targets": true,
+    "review_debt_must_be_zero": true,
+    "checkpoint_mastery_min": 0.8,
+    "independent_transfer_mastery_min": 0.75,
+    "no_fixed_chapter_minimum_or_maximum": true
+  },
+  "chapter_structure": {
+    "lessons_per_chapter": 4,
+    "lesson_roles": [
+      "audio_story_and_guided_exposure",
+      "explicit_form_and_controlled_practice",
+      "retrieval_and_independent_use",
+      "review_transfer_and_mastery"
+    ],
+    "turns_per_lesson": [8, 14],
+    "activities_per_lesson": [12, 18],
+    "activity_count_must_vary_with_learning_need": true,
+    "new_learning_units_per_lesson": [3, 7]
+  },
+  "learning_unit_model": {
+    "token_words_are_not_the_primary_pedagogical_unit": true,
+    "allowed_unit_types": ["word_sense", "chunk", "construction", "grammar", "pronunciation", "can_do"],
+    "sense_specific_translation_required": true,
+    "sense_example_alignment_required": true,
+    "multiword_chunks_first_class": true,
+    "examples": ["warten auf + Akk.", "zu Hause", "Nice to meet you", "be from", "need help"]
+  },
+  "skills": {
+    "speaking": {"required": true, "from_level": "A1"},
+    "listening": {"required": true, "from_level": "A1"},
+    "reading": {"required": true, "from_level": "A1", "must_include_target_language_text": true},
+    "writing": {"required": true, "from_level": "A2", "a1_optional_micro_output": true},
+    "pronunciation": {"required": true, "from_level": "A1", "stt_alone_is_not_pronunciation_scoring": true}
+  },
+  "activity_modes": {
+    "core": ["audio_first", "word_teach", "chunk_teach", "micro_grammar", "repeat_visible", "recall_hidden", "sentence_blank", "tap_tokens", "scenario_transfer"],
+    "reading": ["reading_input", "reading_comprehension", "reading_inference"],
+    "writing": ["guided_write", "short_response", "functional_write"],
+    "pronunciation": ["sound_notice", "minimal_pair", "stress_rhythm", "shadowing"],
+    "rule": "Not every lesson must contain every mode. Activity selection follows the lesson objective; total count remains 12-18."
+  },
+  "review": {
+    "spacing_chapters": [1, 2, 4, 8, 16],
+    "due_review_is_obligation_not_suggestion": true,
+    "due_unit_requires_evidence_activity": true,
+    "unfulfilled_due_review_blocks_chapter_pass": true,
+    "chapter_mastery_in_lesson_4": true,
+    "cumulative_mastery_every_chapters": 4,
+    "large_checkpoint_every_chapters": 16,
+    "checkpoint_intervals_may_be_adjusted_by_level_curriculum": true
+  },
+  "linguistic_quality": {
+    "target_language_naturalness_required": true,
+    "persian_translation_naturalness_required": true,
+    "part_of_speech_context_correctness_required": true,
+    "sense_and_example_alignment_required": true,
+    "accepted_speech_must_be_natural_not_merely_understandable": true,
+    "grammar_explanation_and_scored_item_alignment_required": true,
+    "cefr_appropriateness_required": true,
+    "second_pass_linguistic_audit_required": true,
+    "known_bad_patterns_block_pass": [
+      "contextual preposition meaning stored as an unrelated standalone translation",
+      "multiword expression split into misleading token meanings",
+      "unnatural accepted answer",
+      "incorrect Persian ezafe or malformed translation",
+      "review_due declared without review evidence"
+    ]
+  },
+  "publication_gates": {
+    "structural_validator": true,
+    "linguistic_audit": true,
+    "curriculum_prerequisite_gate": true,
+    "review_ledger_gate": true,
+    "mysql8_execution": true,
+    "turn_audio": true,
+    "learning_unit_audio_where_eligible": true,
+    "all_required_gates_must_pass": true
+  },
+  "migration": {
+    "from": "2.1.0",
+    "existing_chapters_require_reaudit": true,
+    "new_content_frozen_until_existing_audit_passes": true,
+    "de_fa_existing_series": [1, 15],
+    "en_fa_existing_series": [1, 9]
+  },
+  "repair_policy": {
+    "repair_existing_before_generate_new": true,
+    "no_series_gap": true,
+    "advance_state_only_after_all_gates_pass": true
+  }
+}
