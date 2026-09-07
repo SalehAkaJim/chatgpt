@@ -11,7 +11,9 @@
   "schemaRevisionComplete": true,
   "mysqlTargetVersion": "9.0.1",
   "mysqlValidationRequiredBeforeChapter1Completion": true,
-  "canonicalValidatorReady": false,
-  "englishAuditRendererReady": false,
-  "audioManifestValidatorReady": false
+  "canonicalValidatorReady": true,
+  "englishAuditRendererReady": true,
+  "audioGeneratorReady": true,
+  "audioManifestValidatorReady": true,
+  "chapter1TurnVoiceMapReady": false
 }
