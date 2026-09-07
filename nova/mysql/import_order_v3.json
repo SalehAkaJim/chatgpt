@@ -1,1 +1,100 @@
-{"version":"3.0.0-fresh","dynamic_course":true,"fixed_chapter_count":false,"archive_branch":"archive/nova-pre-v3-reset-2026-09-07","core":["nova/database/reset_all_v10.sql","nova/database/schema_v9.sql","nova/database/semantic_layer_v10.sql"],"courses":{"de-fa":{"chapters":[],"audio_updates":[]},"en-fa":{"chapters":[],"audio_updates":[]}},"rule":"Append only fully published native-v3 chapters in strict Series order; level boundaries are determined by curriculum mastery, never by a fixed number."}
+{
+  "version": "3.0.0-fresh",
+  "dynamic_course": true,
+  "fixed_chapter_count": false,
+  "archive_branch": "archive/nova-pre-v3-reset-2026-09-07",
+  "core": [
+    "nova/database/reset_all_v10.sql",
+    "nova/database/schema_v9.sql",
+    "nova/database/semantic_layer_v10.sql"
+  ],
+  "courses": {
+    "de-fa": {
+      "active_level": "A1",
+      "published_through_series": 1,
+      "chapters": [
+        {
+          "id": "DE-CH-0001",
+          "series": 1,
+          "level": "A1",
+          "sql": "nova/courses/de-fa/staging/batch_01/chapter_0001/chapter.sql",
+          "contract_version": "3.0.0",
+          "publication_evidence": {
+            "content_quality_run_id": 34090158719,
+            "mysql8": "PASS",
+            "linguistic_audit": "PASS",
+            "review_unfulfilled_due": [],
+            "turn_audio_run_id": 34089994146,
+            "learning_unit_audio_run_id": 34089994007
+          }
+        }
+      ],
+      "audio_updates": [
+        "nova/audio/de-fa/update_turn_audio.sql",
+        "nova/audio/de-fa/update_word_audio.sql"
+      ]
+    },
+    "en-fa": {
+      "active_level": "A1",
+      "published_through_series": 3,
+      "chapters": [
+        {
+          "id": "EN-CH-0001",
+          "series": 1,
+          "level": "A1",
+          "sql": "nova/courses/en-fa/staging/batch_01/chapter_0001/chapter.sql",
+          "contract_version": "3.0.0",
+          "publication_evidence": {
+            "content_quality_run_id": 34090158719,
+            "mysql8": "PASS",
+            "linguistic_audit": "PASS",
+            "review_unfulfilled_due": [],
+            "turn_audio_run_id": 34089994015,
+            "learning_unit_audio_run_id": 34089994058
+          }
+        },
+        {
+          "id": "EN-CH-0002",
+          "series": 2,
+          "level": "A1",
+          "sql": "nova/courses/en-fa/staging/batch_01/chapter_0002/chapter.sql",
+          "contract_version": "3.0.0",
+          "publication_evidence": {
+            "content_quality_run_id": 34090158719,
+            "mysql8": "PASS",
+            "linguistic_audit": "PASS",
+            "review_unfulfilled_due": [],
+            "turn_audio_run_id": 34089994015,
+            "learning_unit_audio_run_id": 34089994058
+          }
+        },
+        {
+          "id": "EN-CH-0003",
+          "series": 3,
+          "level": "A1",
+          "sql": "nova/courses/en-fa/staging/batch_01/chapter_0003/chapter.sql",
+          "contract_version": "3.0.0",
+          "publication_evidence": {
+            "content_quality_run_id": 34090158719,
+            "mysql8": "PASS",
+            "linguistic_audit": "PASS",
+            "review_unfulfilled_due": [],
+            "turn_audio_run_id": 34089994015,
+            "learning_unit_audio_run_id": 34089994058
+          }
+        }
+      ],
+      "audio_updates": [
+        "nova/audio/en-fa/update_turn_audio.sql",
+        "nova/audio/en-fa/update_word_audio.sql"
+      ],
+      "state_mismatch": {
+        "production_state_published_through_series": 1,
+        "course_learning_state_published_through_series": 1,
+        "manifest_published_through_series": 3,
+        "reason": "EN-CH-0002 and EN-CH-0003 now have clean native-v3 audit/review evidence, complete Turn/eligible learning-unit audio manifests, and passed the latest real MySQL8/content-quality run; the course publication pointers have not yet been advanced."
+      }
+    }
+  },
+  "rule": "Append only fully published native-v3 chapters in strict Series order; level boundaries are determined by curriculum mastery, never by a fixed number. Archive content is never active input."
+}
