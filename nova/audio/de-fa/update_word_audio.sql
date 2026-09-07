@@ -24,6 +24,8 @@ CREATE TEMPORARY TABLE nova_word_audio_exclusions (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO nova_word_audio_updates (word_key,lemma,display_form,part_of_speech,translation,text_sha256,audio_url,audio_duration_ms) VALUES
+('a6c899261463d473e2f1541944e07d31b86883068f22ae614981b681f371e146','aus','aus','preposition','از / اهلِ','2337c37f0721980bcb9acc9fd678f19226f71959ea0f7fae447be7ada79a6a49','nova/audio/words/de-fa/a6/aus-00084d613f0a.mp3',743),
+('b7343ecec962719b995acee1c4979cc336aa17dfb6ebd5d47e11fc6ffe96b452','Berlin','Berlin','proper_noun','برلین','dad114b6ed7342bac65c79575f6c7ff761ec26b52c1f5f7a9110532973d05df2','nova/audio/words/de-fa/b7/berlin-4606d60337b7.mp3',1115),
 ('1366bdf5283c221d21f5ae2f41afc34abf3f402e81db81a2bf3394260f2f7e5b','danke','Danke','interjection','ممنون','dd5e148117aaa5f86dfb224b060fbaa2b71e8053f2f3321929b3d637ea340519','nova/audio/words/de-fa/13/danke-27a8c76a890a.mp3',975),
 ('bb6bd200ca400740a5bc3472453cb70d9fdb6768cd0944446b93b20f012627c5','du','du','pronoun','تو','601b2c2473811afea7864a21e4b965a970afa4ce9eaf85dbdf01414bca66c12c','nova/audio/words/de-fa/bb/du-7a9dcf25ace8.mp3',650),
 ('d19ac4069364a82345ca317b0faad6b15a338b6c3311da46e0e6b5ae1b626816','Freut mich','Freut mich','phrase','از آشنایی خوشحالم','e20e590f16aefd697adafff5f97304a2300ce5bc92d435620d6dd276dcdc4a5b','nova/audio/words/de-fa/d1/freut-mich-5be4dba41517.mp3',1022),
@@ -31,8 +33,12 @@ INSERT INTO nova_word_audio_updates (word_key,lemma,display_form,part_of_speech,
 ('410e266d81b856de41b18e869ebe34062d569cafaa1a73f061b5354743fef428','Hallo','Hallo','interjection','سلام','753692ec36adb4c794c973945eb2a99c1649703ea6f76bf259abb4fb838e013e','nova/audio/words/de-fa/41/hallo-fdccb32fe549.mp3',1068),
 ('5b509ac6d228137b14f0a9ab8a1f39e5b64eb22b4c98fd34ee5f428ceebe1dcf','heißen','heiße','verb','نام داشتن / نامیده شدن','fcc6a3fa3c70cf9fb7f939357c0a5917f96f86f3b87d4ad88119388da5f42f55','nova/audio/words/de-fa/5b/heisse-d7563b4671de.mp3',1161),
 ('7338b1d9234e415bcce9d5ae2bb51be9e2998e04697356ed430c4c7767e7fd97','ich','ich','pronoun','من','84c92d8abf326bdb52f1fc6cd6856c41ae9bc1ef4f6056c2672e3d9d301782e1','nova/audio/words/de-fa/73/ich-4d924e30779b.mp3',882),
+('7d611f75f38cd6412472fba80a84fafa76a0a07adf535f6f367f6bad180911e0','in','in','preposition','در','582967534d0f909d196b97f9e6921342777aea87b46fa52df165389db1fb8ccf','nova/audio/words/de-fa/7d/in-1027ff46c930.mp3',743),
+('a9a57703d51295ba9b3976d7440abbcabf2a6b8c9469f37995488c6a28328bde','Iran','Iran','proper_noun','ایران','18d4e170765cc48842d847de1d0545a2e379e9c87b2af2a6f761681309939ce5','nova/audio/words/de-fa/a9/iran-73a39a4005c1.mp3',836),
+('28677af948a849b55cc75f28606bb56f51c2649e7f11d46805c1c8eb3e76b9f8','kommen','komme','verb','آمدن؛ در «aus ... kommen» اهل جایی بودن','ce42862c13e958d4ea10b49b355882a892642acc53ed6438a61d28a244b9afbf','nova/audio/words/de-fa/28/komme-70e75e16d979.mp3',975),
 ('5b5713fd3b98410616a88b071864b34a82777b9dcef92c1735569e06173ff19c','Tschüss','Tschüss','interjection','خداحافظ','ae04312b91230acc75758bd35f9494d969718c47d62d16993902e01a83abd6f8','nova/audio/words/de-fa/5b/tschuess-a5c2a2418a08.mp3',1022),
-('e8f46a5314e141bcf465d7c742682ac354bb69b33ac535fa547cc6351c4a4a82','wie','Wie','adverb','چطور / چگونه','91fd41108f1fbf8ac2e5b7b2de9ec1e44bdd07af9892b8bf37ae3c4a8e64dd1d','nova/audio/words/de-fa/e8/wie-c232007982d9.mp3',929);
+('e8f46a5314e141bcf465d7c742682ac354bb69b33ac535fa547cc6351c4a4a82','wie','Wie','adverb','چطور / چگونه','91fd41108f1fbf8ac2e5b7b2de9ec1e44bdd07af9892b8bf37ae3c4a8e64dd1d','nova/audio/words/de-fa/e8/wie-c232007982d9.mp3',929),
+('4ac31a431bc70d6bf9a17aecce41178bb9a3c92dab604a882e5197084eed98ac','wohnen','wohne','verb','زندگی کردن / ساکن بودن','d91591fc9ae9e78bbcaec537e98a926604733e0402bfc8623dfd902bb4806eb4','nova/audio/words/de-fa/4a/wohne-6b01ab4eb735.mp3',1022);
 
 DROP PROCEDURE IF EXISTS apply_nova_word_audio;
 DELIMITER $$
