@@ -1,31 +1,21 @@
-# Nova Audio — Content System v1
+# Nova Audio — Lesson Pilot
 
-All pre-reset audio was removed. Audio is now an active, mandatory part of the rebuilt English → Persian pilot.
+All pre-reset audio was removed. Audio is mandatory in the rebuilt English → Persian Pilot.
 
-## Publication rule
+## Completion rule
 
-A Chapter cannot be `complete` or publishable until all required audio has been generated and its audio manifest passes QA.
+A Pilot Lesson cannot be complete until every required audio asset is generated and the manifest passes QA against the exact canonical `lesson.source.json` hash.
 
 ## Audio classes
 
-- **Turn audio** — exact canonical Turn text, using the assigned character voice where applicable.
-- **Lexical-item audio** — exact validated lexical item, whether single-word or a legitimate multiword expression, using the course lexical voice policy.
-- **Construction/example audio** — only when explicitly authored; otherwise use the relevant Turn/example audio.
+- **Turn audio** — exact canonical Turn text, using the assigned character/learner-reference voice.
+- **Lexical-item audio** — exact validated lexical item, including justified multiword expressions, using the course lexical voice.
+
+## Paths
+
+- Turn: `nova/audio/turns/{course}/{lessonKey}/{turnKey}.mp3`
+- Lexical item: `nova/audio/lexical/{course}/{sha256(lexicalKey)}.mp3`
 
 ## Required QA
 
-Every generated asset must be traceable to canonical source text/hash and record:
-- source key and exact text;
-- audio class;
-- language/locale;
-- voice key;
-- output path;
-- file/hash metadata;
-- decode/non-empty check;
-- duration sanity status;
-- source-match/staleness status;
-- final PASS/FAIL.
-
-A file merely existing at the expected path is not enough.
-
-Audio generation is enabled for the Pilot, but no asset is generated until its canonical Chapter content is ready for the audio gate.
+Every asset records source key/text/hash, audio class, voice, path, file hash, decode result, duration and PASS/FAIL. File existence alone is never sufficient.
