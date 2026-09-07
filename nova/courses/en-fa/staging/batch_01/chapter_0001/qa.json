@@ -1,8 +1,0 @@
-{
-  "schema_version":"v9+semantic_v10","contract":"independent_course_v3","contract_version":"3.0.0","course":"en-fa","series":1,"level":"A1","status":"COMPLETE",
-  "counts":{"lessons":4,"turns":32,"activities":48,"learning_units":7,"word_audio_units":3},
-  "lesson_stats":[{"lesson":1,"turns":8,"activities":12,"role":"exposure"},{"lesson":2,"turns":8,"activities":12,"role":"explicit_form"},{"lesson":3,"turns":8,"activities":12,"role":"retrieval"},{"lesson":4,"turns":8,"activities":12,"role":"mastery"}],
-  "publication_gates":{"structural":true,"linguistic_audit":true,"curriculum":true,"review_ledger":true,"mysql8":true,"turn_audio":true,"learning_unit_audio":true},
-  "evidence":{"foundation":"PASS run 34086804784","native_v3_validator":"PASS","linguistic_audit":"clean PASS","review_ledger":"unfulfilled_due=[]","curriculum":"A1 outcomes mapped","mysql8":"PASS en-fa-mysql8 run 34086804784","turn_audio":"32/32, 0 failures, run 34086691825","word_audio_lori":"3/3 eligible rows present in Lori manifest"},
-  "level_complete":false,"level_completion_reason":"A1 continues dynamically; required outcomes, grammar/functions, lexical domains, pronunciation, receptive skills and future review obligations remain."
-}

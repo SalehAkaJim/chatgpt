@@ -1,32 +1,41 @@
-# Nova independent-course contract v3.0
+# Nova Independent Course Contract — native v3 / foundation 3.2
 
-این قرارداد مرجع قطعی تولید محتوای فعال Nova است. دیتای پیش از reset روی branch `archive/nova-pre-v3-reset-2026-09-07` آرشیو شده و روی `main` هیچ اعتبار تولیدی ندارد. هر دوره از Series 001 به‌صورت native v3 ساخته می‌شود.
+`main` is the only active source of truth. `archive/nova-pre-v3.2-clean-reset-2026-09-07` is archive-only and must never be reused for active generation.
 
-## تعداد Chapter پویاست
-هیچ Course یا Level تعداد Chapter ثابت ندارد. `Series` فقط ترتیب تولید/import است. A1/A2/B1/B2 وقتی تمام می‌شوند که outcomeهای آموزشی همان Level واقعاً پوشش داده و mastery شوند؛ نه وقتی شماره Chapter به عددی خاص برسد.
+## Core model
 
-Level completion فقط با پوشش Can-Doها، grammar/functionها، lexical word-sense/chunk/constructionها، pronunciation، listening/reading و از A2 به بعد writing، صفر بودن review debt و عبور از checkpoint mastery مجاز است.
+- Each language course is authored independently for Persian speakers.
+- Series numbers are ordering only. Course and Level chapter totals are dynamic.
+- A Chapter has exactly 4 pedagogical phases: exposure, explicit form, retrieval, mastery.
+- Each Lesson has 8–14 Turns and 12–18 Activities according to learning need.
+- Speaking, listening, reading and pronunciation begin at A1. Writing becomes a completion requirement from A2.
+- Reviews use deterministic offsets 1/2/4/8/16 and real evidence.
 
-## ساختار Chapter
-برای ثبات UX هر Chapter فعلاً 4 Lesson دارد: exposure، explicit form، retrieval، mastery. هر Lesson 8–14 Turn و 12–18 Activity دارد؛ تعداد و modeها باید بر اساس نیاز آموزشی انتخاب شوند و 18 ثابت ممنوع است.
+## Semantic storage
 
-## واحد آموزشی
-Token فقط برای surface/dictionary/audio است. واحد آموزشی اصلی یکی از `word_sense`, `chunk`, `construction`, `grammar`, `pronunciation`, `can_do` است. ترجمه و مثال باید متعلق به همان sense باشند. شکستن عبارت‌هایی مثل `zu Hause`, `warten auf + Akk.`, `Nice to meet you`, `be from`, `need help` به ترجمه‌های token-level گمراه‌کننده ممنوع است.
+All physical semantic tables use the `sem_` prefix:
 
-## مهارت‌ها
-Speaking و Listening از A1 الزامی‌اند. Reading واقعی زبان مقصد از A1 الزامی است. Writing در A1 می‌تواند micro-output باشد و از A2 جزو completion gate است. Pronunciation syllabus مستقل از A1 لازم است و STT به تنهایی pronunciation assessment نیست.
+`sem_learning_units`, `sem_learning_unit_words`, `sem_lesson_learning_units`, `sem_turn_learning_units`, `sem_review_obligations`, `sem_curriculum_outcomes`.
 
-## Spaced review
-فاصله‌های پایه 1/2/4/8/16 حفظ می‌شوند. هر learning unit تازه obligation می‌سازد. وقتی due شد باید activity evidence واقعی از retrieval/production/transfer/reading/writing/mastery داشته باشد؛ حضور تصادفی token در Turn مرور محسوب نمی‌شود. review debt مانع PASS است.
+Unprefixed semantic compatibility tables/views are not part of the active foundation and new Chapter SQL must never reference them.
 
-## Linguistic gate
-Structural PASS کافی نیست. هر Chapter second-pass audit مستقل لازم دارد: naturalness زبان مقصد، ترجمه فارسی، POS در context، sense-example alignment، chunk/construction mapping، accepted-answer naturalness، grammar/item alignment، CEFR appropriateness و prerequisiteها. پاسخ قابل فهم اما غیرطبیعی accepted answer نیست.
+## Audio
 
-## Curriculum
-هر زبان Curriculum مستقل دارد و برای هر Level باید Can-Do، communication functions، grammar inventory، lexical domains + core chunks/constructions، pronunciation، listening، reading، writing و mastery evidence تعریف کند. Theme به تنهایی curriculum نیست.
+Audio locators are declared directly in the original source rows.
 
-## Publication gate
-Chapter فقط با PASS کامل structural validator + linguistic audit + curriculum prerequisite + deterministic review ledger + MySQL 8 + Turn audio + learning-unit audio واجد شرایط publish است. هیچ QA flag ادعایی جای evidence واقعی را نمی‌گیرد.
+- Turn: `nova/audio/turns/{course}/{level}/s{series4}/l{lesson2}/t{turn2}.mp3`
+- Word: `nova/audio/words/{course}/{sha256_display_form}.mp3`
 
-## خطا و سرعت تولید
-در هر اجرا حداکثر دو Chapter متوالی مجاز است و Chapter دوم فقط بعد از PASS کامل اول ساخته می‌شود. خطا automation را Pause نمی‌کند؛ همان Series repair می‌شود و state تا PASS جلو نمی‌رود. هیچ gap مجاز نیست.
+No database trigger and no post-import `update_*_audio.sql` is allowed. TTS only materializes the MP3 at the path already stored in `turns.audio_url` or `words.audio_url`. `audio_duration_ms` may remain NULL at import time.
+
+## Acquisition-quality gate — mandatory from Series 1
+
+1. Story dialogue must sound like a real conversation; drill belongs mainly in Activities.
+2. Target units need surface variation and transfer, not repetition only.
+3. Pronunciation is taught through listen → notice → produce; learner understanding must not depend on phonetic metalanguage.
+4. Persian-speaker contrasts are taught when relevant.
+5. Lesson 4 mastery must use a genuinely new context and independent recombination.
+
+## Publication
+
+Generation and publication are separate. `generated_through_series` advances after deterministic local gates pass. `published_through_series` advances only after Content Quality/MySQL8, Turn audio and eligible Word/Learning-unit audio all pass contiguously.
