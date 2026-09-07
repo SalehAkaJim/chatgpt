@@ -1,92 +1,82 @@
-# 05 — Canonical content pipeline
+# 05 — Canonical Lesson pipeline
 
 ## Goal
 
-Prevent drift between authored content, lexical data, QA files, SQL, manifests and audio.
+Prevent drift between authored content, runtime SQL, QA files, manifests and audio while keeping MySQL simple.
 
 ## Single canonical source
 
-Each Chapter starts from one canonical source file:
+Each product Lesson starts from one rich source file:
 
-`courses/en-fa/A1/chapter_XXXX/chapter.source.json`
+`nova/courses/{course}/lessons/{lesson-number}/lesson.source.json`
 
-This file contains the authored learner experience and semantic annotations needed to derive database rows.
-
-Generated files are disposable outputs and must never be manually edited as a second source of truth.
+Curriculum and QA detail may be richer than the runtime database. Generated files are disposable outputs and must never be edited as a second source of truth.
 
 ## Pipeline
 
-1. **Curriculum plan**
-   - select one primary communicative outcome;
+1. **Curriculum decision**
+   - select the Lesson learning job/outcome;
    - verify prerequisites;
-   - define intended transfer evidence.
+   - define what may be scored and what is support only.
 
-2. **Author canonical Chapter source**
-   - contexts;
-   - Lessons;
-   - learner/interlocutor Turns;
+2. **Author canonical Lesson source**
+   - learner scenario;
+   - dialogue/Turns when useful;
    - Activities;
    - English text;
-   - Persian learner support;
-   - target/support/review learning units;
-   - accepted responses.
+   - Persian support;
+   - lexical items and their learning roles;
+   - curriculum annotations and accepted speech.
 
-3. **Canonical structural validation**
-   - schema validity;
+3. **Canonical validation**
+   - JSON schema;
    - IDs/order/references;
-   - activity requirements;
-   - single-token `words` invariant;
-   - no missing prerequisite classification;
-   - exact Turn/token reconstruction.
+   - lexical atomicity;
+   - Activity-specific requirements;
+   - no hidden prerequisite in scored tasks;
+   - Pilot interaction coverage when the Lesson is marked as Pilot.
 
 4. **Linguistic/pedagogical audit**
-   - English naturalness and correctness;
+   - English correctness/naturalness;
    - Persian accuracy;
-   - level/load/prerequisite fit;
-   - distractor quality;
-   - accepted-answer quality;
-   - meaningful transfer;
-   - pronunciation relevance.
+   - beginner load and sequencing;
+   - option/distractor quality;
+   - accepted speech quality;
+   - meaningful learning progression.
 
 5. **Compiler output**
-   - deterministic SQL generated from canonical data;
-   - derived lexical/semantic rows;
-   - machine-readable QA report.
+   - deterministic runtime SQL generated from the canonical Lesson;
+   - only product-needed fields are compiled to MySQL;
+   - curriculum detail may remain source-only.
 
 6. **Database validation**
-   - reset/create schema in MySQL 8 test database;
-   - import foundation and all published Chapters contiguously;
-   - import candidate Chapter;
-   - run integrity assertions and representative runtime queries.
+   - reset/create a clean **MySQL Server 9.0.1** database;
+   - apply the simple runtime schema;
+   - import the candidate Lesson SQL;
+   - execute representative Lesson/Activity/Turn/lexical retrieval queries.
 
-7. **Human English audit during pilot**
-   - render all learner-visible English in a compact review file;
-   - human can review the actual text without reading SQL/JSON internals;
-   - any text correction is made in canonical source, then all derivatives regenerate.
+7. **Human English audit during Pilot**
+   - render all learner-visible English into `english_audit.md`;
+   - corrections are made only in `lesson.source.json`, then derivatives regenerate.
 
-8. **Audio generation**
-   - only after text/lexical/database gates pass;
-   - TTS receives typed validated units;
-   - Word TTS cannot receive chunks or sentences;
-   - content change invalidates corresponding audio deterministically.
+8. **Audio generation — mandatory**
+   - generate from the exact validated Lesson source;
+   - route character, learner-reference and lexical-item audio by explicit type/voice mapping;
+   - generate valid multiword lexical-item audio when the item is truly one vocabulary unit;
+   - full Turn sentences stay Turn audio;
+   - decode/duration/hash checks and manifest validation are mandatory.
 
-9. **Publication gate**
-   - publish only when canonical validation, linguistic audit, MySQL validation and required audio all pass for the exact same content hash.
+9. **Completion gate**
+   - a Pilot Lesson is complete only when canonical validation, language audit, MySQL 9.0.1 execution and required audio pass for the same source hash.
 
-## Hash/version integrity
+## Hash integrity
 
-Every derived output stores the canonical Chapter content hash.
+SQL, audit metadata and audio manifest are tied to the SHA-256 of the canonical Lesson source. A mismatched derivative is stale.
 
-A QA report, SQL file or audio manifest whose source hash differs from the current canonical source is stale and cannot satisfy publication.
+## Repair rule
 
-## No repair SQL as content workflow
+Fix learner-visible or semantic content in canonical source and regenerate. Do not patch generated SQL/audio as the normal unpublished-content workflow.
 
-If learner-visible text or semantic content is wrong, fix canonical source and regenerate.
+## Batch rule
 
-Patch/repair SQL is reserved for true database migrations after released production data; it is not the normal way to correct unpublished course content.
-
-## Generation batch rule
-
-During pilot, generate one candidate Chapter at a time.
-
-After the system proves stable, batching may increase, but validation remains Chapter-isolated first and contiguous-course second. A failure never advances the course pointer past the failed Chapter.
+During Pilot, build one Lesson at a time. A failure blocks advancement to the next Lesson. After repeated clean Pilot results, generation can be batched without changing quality gates.
