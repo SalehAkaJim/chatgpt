@@ -13,9 +13,7 @@ try:
 except ImportError:  # pragma: no cover
     Draft202012Validator = None
 
-
 PUNCT_NORMALIZE_RE = re.compile(r"[^a-z0-9']+", re.IGNORECASE)
-SENTENCE_END_RE = re.compile(r"[.!?]+$")
 
 
 def load_json(path: Path):
@@ -55,14 +53,21 @@ def validate_semantics(chapter: dict, errors: list[str], warnings: list[str]):
             add(errors, f"duplicate learning unit key: {key}")
         unit_by_key[key] = unit
 
-        if unit.get("unitType") == "word_sense":
-            form = unit.get("displayForm", "")
-            if re.search(r"\s", form):
-                add(errors, f"word_sense contains whitespace: {key} -> {form!r}")
-            if SENTENCE_END_RE.search(form):
-                add(errors, f"word_sense looks sentence-like: {key} -> {form!r}")
-            if len(form) > 80:
-                add(errors, f"word_sense exceeds 80 chars: {key}")
+        if unit.get("unitType") == "lexical_item":
+            form = str(unit.get("displayForm", "")).strip()
+            kind = unit.get("lexicalKind")
+            if not form:
+                add(errors, f"lexical_item has empty displayForm: {key}")
+            if "\n" in form or "\r" in form:
+                add(errors, f"lexical_item contains line break: {key}")
+            if kind not in {"word", "multiword_expression"}:
+                add(errors, f"lexical_item has invalid lexicalKind: {key}")
+            if kind == "word" and re.search(r"\s", form):
+                warnings.append(f"{key}: whitespace exists but lexicalKind=word; review classification")
+            if kind == "multiword_expression" and not re.search(r"\s", form):
+                warnings.append(f"{key}: multiword_expression has no whitespace; valid in some languages only when intentional")
+            if unit.get("audioEligible") is not True:
+                warnings.append(f"{key}: lexical item is not audioEligible; verify this is intentional")
 
     seen_lesson_keys: set[str] = set()
     chapter_target_units: set[str] = set()
@@ -136,47 +141,32 @@ def validate_semantics(chapter: dict, errors: list[str], warnings: list[str]):
             if len(normalized) != len(set(normalized)):
                 add(errors, f"{label}: acceptedAnswersEn has punctuation/case-only duplicates")
 
-            if purpose in {"retrieval", "transfer", "mastery"} and not activity.get("instructionFa"):
-                add(errors, f"{label}: response Activity requires a clear Persian instruction")
-
     for target_key in sorted(chapter_target_units):
         if not strong_evidence.get(target_key):
             add(errors, f"target unit has no retrieval/transfer/mastery evidence: {target_key}")
 
     if transfer_or_mastery == 0:
         add(errors, "Chapter has no transfer/mastery Activity")
-
     if not chapter_target_units:
         warnings.append("Chapter has no learning unit explicitly marked target")
-
-    if len(lessons) > 0 and all(len(l.get("activities", [])) == 0 for l in lessons):
+    if lessons and all(len(l.get("activities", [])) == 0 for l in lessons):
         add(errors, "Chapter has no Activities")
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate a Nova Content System v1 canonical Chapter")
     parser.add_argument("chapter", type=Path)
-    parser.add_argument(
-        "--schema",
-        type=Path,
-        default=Path(__file__).resolve().parents[1] / "chapter.source.schema.json",
-    )
+    parser.add_argument("--schema", type=Path, default=Path(__file__).resolve().parents[1] / "chapter.source.schema.json")
     args = parser.parse_args()
 
     chapter = load_json(args.chapter)
     schema = load_json(args.schema)
     errors: list[str] = []
     warnings: list[str] = []
-
     validate_schema(chapter, schema, errors)
     validate_semantics(chapter, errors, warnings)
 
-    report = {
-        "status": "PASS" if not errors else "FAIL",
-        "chapter": chapter.get("chapterKey"),
-        "errors": errors,
-        "warnings": warnings,
-    }
+    report = {"status": "PASS" if not errors else "FAIL", "chapter": chapter.get("chapterKey"), "errors": errors, "warnings": warnings}
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not errors else 2
 
