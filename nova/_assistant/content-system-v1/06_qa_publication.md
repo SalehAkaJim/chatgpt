@@ -1,98 +1,37 @@
 # 06 — QA and publication
 
-## Philosophy
-
-QA must fail loudly when content is questionable. Passing structural counts is never enough.
-
-The candidate Chapter remains unpublished until every blocking gate below refers to the same canonical content hash.
+QA must fail loudly when content is questionable. A candidate Lesson is not complete until all blocking gates refer to the same canonical Lesson source/hash.
 
 ## Gate A — curriculum
+PASS requires a clear instructional/communicative job, valid prerequisites, appropriate early-A1 load, useful target language and honest assessment boundaries.
 
-PASS requires:
-- one clear primary communicative outcome;
-- prerequisites already available or explicitly scaffolded;
-- instructional load appropriate to current A1 stage;
-- target language selected for usefulness/frequency/context, not variety for its own sake;
-- a real transfer requirement defined.
+## Gate B — English
+Review every learner-visible Turn, prompt, option, answer, example and lexical item. BLOCK grammar errors, unnatural wording, wrong register, ambiguous answers, unexplained advanced language, drill-like dialogue or unnatural accepted speech.
 
-## Gate B — English language
-
-Review every learner-visible English Turn, prompt, option, answer, example and lexical item.
-
-BLOCK on grammar error, unnatural wording, wrong register, ambiguous scored answers, unexplained advanced language, drill-like dialogue, inconsistent baseline usage, or unnatural accepted speech.
-
-## Gate C — Persian learner support
-
-BLOCK on wrong meaning, misleading literal translation, false rules, task ambiguity or unnecessarily technical beginner explanations.
+## Gate C — Persian support
+BLOCK wrong meaning, misleading literal translation, false teaching rules, task ambiguity or unnecessarily technical beginner explanations.
 
 ## Gate D — learning design
-
-PASS requires evidence that new target units move beyond exposure.
-
-BLOCK when the learner is scored on untaught material, activities repeat without changed cognitive demand, answers are guessable from formatting, transfer is cosmetic, beginner listening becomes blind guessing, content is padded for a count, or naturalness is sacrificed for drilling.
+BLOCK scoring on untaught language, repetitive interactions without changed learning demand, blind-guess listening, padded content or fake transfer. Pilot interaction coverage tests the product; it is not a permanent Lesson template.
 
 ## Gate E — lexical/data integrity
+BLOCK when a supposed lexical item is actually a sentence/clause/arbitrary Turn fragment/tokenization accident, when its lexical atomicity is unjustified, or when role/sense is misleading. A valid multiword expression may be one lexical item. Whitespace alone never decides validity.
 
-BLOCK when:
-- a supposed lexical item is actually a sentence/clause, arbitrary Turn fragment, construction or tokenization accident;
-- lexical atomicity/use cannot justify treating the item as one learnable vocabulary unit;
-- POS/sense does not match source context;
-- token/span reconstruction differs from canonical Turn text;
-- punctuation becomes a lexical item;
-- target/support/review/incidental classification is missing where required.
-
-Whitespace alone must never make an item pass or fail.
-
-## Gate F — activities
-
-Each scored Activity must have one unambiguous task goal, valid prerequisites, natural correct answer(s), context-appropriate distractors when used, and no answer-position/template artifacts.
-
-Speaking alternatives must be genuinely valid variants, not punctuation/case duplicates.
+## Gate F — Activities
+Every scored Activity needs one clear task, valid prerequisites, a natural unambiguous correct response and suitable options. Speaking alternatives must be genuine alternatives, not formatting duplicates.
 
 ## Gate G — database
-
 The deployment target is **MySQL Server 9.0.1**.
 
-PASS requires real execution against a clean MySQL 9.0.1 test database, using the same setup/import order intended for production.
-
-Test both:
-1. schema + semantic layer + candidate Chapter in the expected contiguous course state;
-2. representative runtime retrieval for Lesson, Turn, Activity and lexical-item data.
-
-A SQL file that only looks valid or was tested on another major version does not pass the production gate.
+PASS requires real execution of reset → runtime schema → generated Lesson SQL → representative runtime retrieval on a clean MySQL 9.0.1 database. Looking valid is not enough.
 
 ## Gate H — audio — mandatory
+No Pilot Lesson is complete without generated and tested audio.
 
-Audio is part of the product, not an optional post-processing step. No Pilot Chapter can be complete/publishable without generated and tested audio.
-
-Audio generation happens from the validated canonical source and is rerun whenever relevant source text/voice metadata changes.
-
-PASS requires:
-- exact canonical source/hash match;
-- correct language/locale and intended character voice;
-- every required Turn audio present;
-- every audio-eligible lexical item present, including valid multiword lexical items;
-- files decode successfully and are non-empty;
-- duration/output sanity checks pass;
-- spoken content corresponds to the exact intended canonical item;
-- no stale file remains after text changes;
-- no sentence is misrouted into lexical-item audio merely because of a data-classification bug.
-
-For the English Pilot, an audio manifest must expose source text, item type, voice, path and QA status so failures can be traced directly.
+PASS requires exact source-hash match, correct voice routing, every required Turn audio, every audio-eligible lexical item (including valid multiword items), successful decode, nonzero duration, correct source text and no stale files. The manifest exposes source text/type/voice/path/hash/status.
 
 ## Pilot human audit
-
-For the initial English pilot, publication additionally requires a human-review artifact containing all learner-visible English in presentation order.
-
-Pilot rule:
-- one Chapter generated at a time;
-- English audit before publication;
-- audio generated and QA-tested before Chapter completion;
-- defects are categorized and converted into validator/generator rules where possible;
-- after a meaningful defect-free streak, the manual text gate may be reconsidered, but the audio gate remains mandatory.
+The first English Pilot additionally produces `english_audit.md` with learner-visible English in presentation order. Corrections are made in `lesson.source.json` and all derivatives regenerate.
 
 ## Failure behavior
-
-A failed Chapter does not advance `nextChapter`.
-
-Repair the canonical source, regenerate every dependent output (including audio where affected), and rerun all affected gates. Never patch a derivative and call the source fixed.
+A failed Lesson does not advance `nextLesson`. Repair canonical source or the relevant generator/validator, regenerate affected outputs and rerun gates. Never patch a derivative and call the source fixed.
