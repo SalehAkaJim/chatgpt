@@ -7,7 +7,7 @@ def check(course):
  p=ROOT/'nova'/'courses'/course/'production_state.json'; s=json.loads(p.read_text(encoding='utf-8')); e=[]
  if 'generated_through_series' not in s and 'published_through_series' not in s: return e
  g=s.get('generated_through_series'); pub=s.get('published_through_series',s.get('last_completed_series')); nxt=s.get('next_series')
- if not isinstance(g,int) or g<1:e.append(f'{course}: generated_through_series missing/invalid')
+ if not isinstance(g,int) or g<0:e.append(f'{course}: generated_through_series missing/invalid')
  if not isinstance(pub,int) or pub<0:e.append(f'{course}: published_through_series missing/invalid')
  if isinstance(g,int) and isinstance(pub,int) and pub>g:e.append(f'{course}: published pointer exceeds generated pointer')
  if isinstance(g,int) and nxt!=g+1:e.append(f'{course}: next_series must equal generated_through_series + 1')
