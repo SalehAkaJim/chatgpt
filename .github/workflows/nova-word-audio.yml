@@ -7,6 +7,7 @@ on:
     paths:
       - "nova/courses/de-fa/staging/**/chapter.sql"
       - ".github/workflows/nova-word-audio.yml"
+      - "nova/tts/v3_tts_runner.py"
 
 permissions:
   contents: write
@@ -47,25 +48,25 @@ jobs:
                   raise SystemExit(f"Cannot infer Series from {path}")
               series = int(match.group(1))
               path.write_text(f"-- SERIES {series}\n{text}", encoding="utf-8")
-              print(f"Injected temporary TTS locator for {path}: SERIES {series}")
           PY
       - name: Validate SQL sources
-        run: python nova/tts/nova_word_tts.py validate-sources
+        run: python nova/tts/v3_tts_runner.py word validate-sources
       - name: Prepare voices
         id: voices
         continue-on-error: true
-        run: python nova/tts/nova_word_tts.py bootstrap-lori --yes
+        run: python nova/tts/v3_tts_runner.py word bootstrap-lori --yes
       - name: Generate audio
         id: audio
         if: steps.voices.outcome == 'success'
         continue-on-error: true
-        run: python nova/tts/nova_word_tts.py generate --yes
+        run: python nova/tts/v3_tts_runner.py word generate --yes
       - name: Verify manifest
         if: steps.audio.outcome == 'success'
-        run: python nova/tts/nova_word_tts.py verify-manifest
+        run: python nova/tts/v3_tts_runner.py word verify-manifest
       - name: Commit resumable audio
         if: always()
         run: |
+          git checkout -- nova/courses/de-fa/staging || true
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [ -e "nova/tts/word_voice_de_fa.json" ]; then git add -A -- "nova/tts/word_voice_de_fa.json"; fi
