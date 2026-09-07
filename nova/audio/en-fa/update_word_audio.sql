@@ -24,8 +24,13 @@ CREATE TEMPORARY TABLE nova_word_audio_exclusions (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO nova_word_audio_updates (word_key,lemma,display_form,part_of_speech,translation,text_sha256,audio_url,audio_duration_ms) VALUES
+('637e5ac5976c7153a092d2d9c179f4c3d45cd3417e05df5f7eb154e59a36a457','from','from','preposition','از / اهلِ','75857a45899985be4c4d941e90b6b396d6c92a4c7437aaf0bf102089fe21379d','nova/audio/words/en-fa/63/from-522be2cc6c75.mp3',1022),
 ('e020930607db5ab923298e27f3d15572e1de1ed91603d73472a71e5822718c76','goodbye','goodbye','interjection','خداحافظ','82e35a63ceba37e9646434c5dd412ea577147f1e4a41ccde1614253187e3dbf9','nova/audio/words/en-fa/e0/goodbye-85231a6a9cbd.mp3',975),
 ('d32182ea56349084c90dbe314d9bf8ac307b52f455b5c1854efa2d4d2ee2b8ee','hello','hello','interjection','سلام','2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824','nova/audio/words/en-fa/d3/hello-db4cb3e6e54d.mp3',1022),
+('7d611f75f38cd6412472fba80a84fafa76a0a07adf535f6f367f6bad180911e0','in','in','preposition','در','582967534d0f909d196b97f9e6921342777aea87b46fa52df165389db1fb8ccf','nova/audio/words/en-fa/7d/in-1027ff46c930.mp3',743),
+('a9a57703d51295ba9b3976d7440abbcabf2a6b8c9469f37995488c6a28328bde','Iran','Iran','proper_noun','ایران','18d4e170765cc48842d847de1d0545a2e379e9c87b2af2a6f761681309939ce5','nova/audio/words/en-fa/a9/iran-73a39a4005c1.mp3',836),
+('06d98444c73c6c3d67cb9929de9b5aea2acf0425ab92c96f46a4890810f95444','live','live','verb','زندگی کردن','247610f4dedd4ab7247d07dbda19c81ca9817f85820742cad49d407ffae9e4ed','nova/audio/words/en-fa/06/live-7af9df819a15.mp3',882),
+('4e9f6277ee776a246e51be037da058839d80150c52e20b962136c4c2481a37eb','London','London','proper_noun','لندن','ecc0e7dc084f141b29479058967d0bc07dee25d9690a98ee4e6fdad5168274d7','nova/audio/words/en-fa/4e/london-b53b42fd3b89.mp3',975),
 ('27edb390033d1d8b34b461c66f387a87e9a9849d36083226a64662fe4119a671','name','name','noun','نام','82a3537ff0dbce7eec35d69edc3a189ee6f17d82f353a553f9aa96cb0be3ce89','nova/audio/words/en-fa/27/name-bebd0d2d3aa5.mp3',836);
 
 DROP PROCEDURE IF EXISTS apply_nova_word_audio;
