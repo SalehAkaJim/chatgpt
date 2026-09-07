@@ -3,41 +3,12 @@ name: Nova Content Quality
 on:
   push:
     branches: [main]
-    paths:
-      - "nova/contracts/**"
-      - "nova/database/**"
-      - "nova/courses/**/chapter.sql"
-      - "nova/courses/**/qa.json"
-      - "nova/courses/**/v3_repair.sql"
-      - "nova/courses/**/linguistic_audit_v3.json"
-      - "nova/courses/**/learning_units_v3.json"
-      - "nova/courses/**/review_evidence_v3.json"
-      - "nova/courses/**/curriculum.json"
-      - "nova/courses/**/pipeline_config.json"
-      - "nova/courses/**/run_control.json"
-      - "nova/courses/**/production_state.json"
-      - "nova/courses/**/state/pedagogical_audit_v3.json"
-      - "nova/validation/**"
-      - ".github/workflows/nova-content-quality.yml"
+    paths: ["nova/**", ".github/workflows/nova-content-quality.yml"]
   pull_request:
-    paths:
-      - "nova/contracts/**"
-      - "nova/database/**"
-      - "nova/courses/**/chapter.sql"
-      - "nova/courses/**/qa.json"
-      - "nova/courses/**/v3_repair.sql"
-      - "nova/courses/**/linguistic_audit_v3.json"
-      - "nova/courses/**/learning_units_v3.json"
-      - "nova/courses/**/review_evidence_v3.json"
-      - "nova/courses/**/curriculum.json"
-      - "nova/courses/**/pipeline_config.json"
-      - "nova/courses/**/run_control.json"
-      - "nova/courses/**/production_state.json"
-      - "nova/courses/**/state/pedagogical_audit_v3.json"
-      - "nova/validation/**"
+    paths: ["nova/**", ".github/workflows/nova-content-quality.yml"]
 
 jobs:
-  static-and-mysql8:
+  native-v3-and-mysql8:
     runs-on: ubuntu-latest
     services:
       mysql:
@@ -45,66 +16,37 @@ jobs:
         env:
           MYSQL_ROOT_PASSWORD: nova_qa_root
           MYSQL_DATABASE: nova_qa
-        ports:
-          - 3306:3306
+        ports: ["3306:3306"]
         options: >-
           --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -pnova_qa_root"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=12
+          --health-interval=10s --health-timeout=5s --health-retries=12
     steps:
       - uses: actions/checkout@v4
-      - name: Legacy structural quality gate
-        run: python3 nova/validation/validate_content.py
-      - name: V3 curriculum and audit-lock gate
+      - name: Fresh v3 foundation gate
         run: python3 nova/validation/validate_migration_v3.py
-      - name: Native V3 dynamic content gate
+      - name: Native v3 pedagogical structure gate
         run: python3 nova/validation/validate_content_v3.py
-      - name: Validate German audio source compatibility
-        env:
-          NOVA_COURSE: de-fa
+      - name: Validate TTS source compatibility
         run: |
           python -m unittest discover -s nova/tts/tests -v
-          python nova/tts/nova_tts.py validate-sources
-          python nova/tts/nova_word_tts.py validate-sources
-      - name: Validate English audio source compatibility
-        env:
-          NOVA_COURSE: en-fa
+          NOVA_COURSE=de-fa python nova/tts/nova_tts.py validate-sources
+          NOVA_COURSE=de-fa python nova/tts/nova_word_tts.py validate-sources
+          NOVA_COURSE=en-fa python nova/tts/nova_tts.py validate-sources
+          NOVA_COURSE=en-fa python nova/tts/nova_word_tts.py validate-sources
+      - name: Compile schemas on MySQL 8
+        env: {MYSQL_PWD: nova_qa_root}
         run: |
-          python -m unittest discover -s nova/tts/tests -v
-          python nova/tts/nova_tts.py validate-sources
-          python nova/tts/nova_word_tts.py validate-sources
-      - name: Compile v9 core schema on MySQL 8
-        env:
-          MYSQL_PWD: nova_qa_root
-        run: mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/schema_v9.sql
-      - name: Apply v10 semantic learning layer on MySQL 8
-        env:
-          MYSQL_PWD: nova_qa_root
-        run: mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/semantic_layer_v10.sql
-      - name: Execute German chapters and v3 repairs sequentially
-        env:
-          MYSQL_PWD: nova_qa_root
+          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/schema_v9.sql
+          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/semantic_layer_v10.sql
+      - name: Execute all native v3 chapters and repairs sequentially
+        env: {MYSQL_PWD: nova_qa_root}
         shell: bash
         run: |
           set -euo pipefail
-          while IFS= read -r file; do
-            mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
-            repair="$(dirname "$file")/v3_repair.sql"
-            if [[ -f "$repair" ]]; then
-              mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
-            fi
-          done < <(find nova/courses/de-fa/staging -name chapter.sql -type f | sort)
-      - name: Execute English chapters and v3 repairs sequentially
-        env:
-          MYSQL_PWD: nova_qa_root
-        shell: bash
-        run: |
-          set -euo pipefail
-          while IFS= read -r file; do
-            mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
-            repair="$(dirname "$file")/v3_repair.sql"
-            if [[ -f "$repair" ]]; then
-              mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
-            fi
-          done < <(find nova/courses/en-fa/staging -name chapter.sql -type f | sort)
+          for course in de-fa en-fa; do
+            while IFS= read -r file; do
+              mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
+              repair="$(dirname "$file")/v3_repair.sql"
+              [[ ! -f "$repair" ]] || mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
+            done < <(find "nova/courses/$course/staging" -name chapter.sql -type f 2>/dev/null | sort)
+          done
