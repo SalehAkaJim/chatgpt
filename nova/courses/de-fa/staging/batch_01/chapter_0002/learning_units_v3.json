@@ -1,0 +1,21 @@
+{
+  "version":"3.0.0","course":"de-fa","series":2,"level":"A1",
+  "learning_units":[
+    {"unit_key":"de:a1:woher-kommst-du","unit_type":"chunk","display_form":"Woher kommst du?","translation":"اهل کجا هستی؟","status":"new","review_offsets":[1,2,4,8,16],"context":"پرسش غیررسمی درباره مبدأ شخص"},
+    {"unit_key":"de:a1:ich-komme-aus","unit_type":"chunk","display_form":"Ich komme aus ...","translation":"من اهل ... هستم","status":"new","review_offsets":[1,2,4,8,16],"context":"الگوی طبیعی برای گفتن مبدأ"},
+    {"unit_key":"de:a1:wo-wohnst-du","unit_type":"chunk","display_form":"Wo wohnst du?","translation":"کجا زندگی می‌کنی؟","status":"new","review_offsets":[1,2,4,8,16],"context":"پرسش غیررسمی درباره محل زندگی"},
+    {"unit_key":"de:a1:ich-wohne-in","unit_type":"chunk","display_form":"Ich wohne in ...","translation":"من در ... زندگی می‌کنم","status":"new","review_offsets":[1,2,4,8,16],"context":"الگوی پایه برای گفتن محل زندگی"},
+    {"unit_key":"de:a1:aus:origin","unit_type":"word_sense","display_form":"aus","translation":"از / اهلِ","status":"new","review_offsets":[1,2,4,8,16],"context":"aus در ساخت بیان مبدأ","data":{"pos":"preposition","sense":"origin"}},
+    {"unit_key":"de:a1:origin-vs-residence","unit_type":"construction","display_form":"aus + Herkunft / in + Wohnort","translation":"از برای مبدأ / در برای محل زندگی","status":"new","review_offsets":[1,2,4,8,16],"context":"تمایز کاربردی مبدأ و محل زندگی"},
+    {"unit_key":"de:a1:pron:w-v","unit_type":"pronunciation","display_form":"w in Wo / wohnen","translation":null,"status":"new","review_offsets":[1,2,4,8,16],"context":"w آلمانی در Wo و wohnen مانند v شنیده می‌شود"},
+    {"unit_key":"de:a1:can-do:origin-residence","unit_type":"can_do","display_form":"ask and state origin and residence","translation":null,"status":"new","review_offsets":[1,2,4,8,16],"context":"مبدأ و محل زندگی را بپرسد و بگوید"}
+  ],
+  "curriculum_outcomes":[
+    {"outcome_key":"can_do:origin_residence","type":"can_do","status":"covered","evidence":{"series":2,"lessons":[1,2,3,4]}},
+    {"outcome_key":"grammar:origin_residence_chunks","type":"grammar","status":"covered","evidence":{"series":2,"lessons":[2,3,4]}},
+    {"outcome_key":"reading:identity_origin_residence","type":"reading","status":"covered","evidence":{"series":2,"lessons":[1,2,3,4]}},
+    {"outcome_key":"listening:origin_residence","type":"listening","status":"covered","evidence":{"series":2,"lessons":[1,2,3,4]}},
+    {"outcome_key":"pron:w_v","type":"pronunciation","status":"covered","evidence":{"series":2,"lessons":[1,2,3,4]}}
+  ],
+  "pedagogical_scope":{"new_units":8,"absolute_beginner":true,"level_complete":false}
+}
