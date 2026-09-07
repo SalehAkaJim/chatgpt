@@ -179,7 +179,7 @@ CREATE TABLE lesson_words (
 CREATE TABLE activities (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   lesson_id BIGINT UNSIGNED NOT NULL,
-  activity_type ENUM('listen','speak','new_word','meaning_choice','reading_comprehension','word_order') NOT NULL,
+  activity_type ENUM('listen','speak','new_word','meaning_choice','reading','reading_comprehension','word_order','pronunciation','writing') NOT NULL,
   sort_order INT UNSIGNED NOT NULL,
   turn_id BIGINT UNSIGNED NULL,
   word_id BIGINT UNSIGNED NULL,
