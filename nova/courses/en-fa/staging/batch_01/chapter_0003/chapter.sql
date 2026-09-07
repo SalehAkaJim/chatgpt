@@ -134,7 +134,7 @@ BEGIN
 (v_l_1,'new_word',5,NULL,NULL,'I live near ...','الگوی near را یاد بگیر.',1,CAST('{"mode":"chunk_teach","unit_key":"en:a1:i-live-near","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',3)),
 (v_l_1,'speak',6,NULL,NULL,'بگو در لندن زندگی می‌کنی.','از حافظه بگو.',1,CAST('{"mode":"recall_hidden","cue_fa":"بگو در لندن زندگی می‌کنی.","accepted":["I live in London.","I live in London now."],"input":"speech","scored":true}' AS JSON),JSON_OBJECT('series',3)),
 (v_l_1,'meaning_choice',7,NULL,NULL,'I ___ in London.','گزینه درست را انتخاب کن.',1,CAST('{"mode":"sentence_blank","options":["live","speak","from"],"answer_index":0,"input":"tap_choice","scored":true}' AS JSON),JSON_OBJECT('series',3)),
-(v_l_1,'reading',8,NULL,NULL,'Maya: Where do you live?\nArman: I live in London.','بخوان.',1,CAST('{"mode":"reading_input","text":"Maya: Where do you live?\nArman: I live in London.","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',3)),
+(v_l_1,'reading',8,NULL,NULL,'Maya: Where do you live? — Arman: I live in London.','بخوان.',1,CAST('{"mode":"reading_input","text":"Maya: Where do you live? — Arman: I live in London.","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',3)),
 (v_l_1,'reading_comprehension',9,NULL,NULL,'Where does Arman live?','پاسخ درست را انتخاب کن.',1,CAST('{"mode":"reading_inference","options":["London","Iran","Persian"],"answer_index":0,"input":"tap_choice","scored":true}' AS JSON),JSON_OBJECT('series',3)),
 (v_l_1,'word_order',10,NULL,NULL,'I live in London','مرتب کن.',1,CAST('{"mode":"tap_tokens","tokens":["London","in","live","I"],"answer":["I","live","in","London"],"input":"tap_tokens","scored":true}' AS JSON),JSON_OBJECT('series',3)),
 (v_l_1,'speak',11,NULL,NULL,'یک نفر می‌پرسد کجا زندگی می‌کنی. جواب بده.','طبیعی جواب بده.',1,CAST('{"mode":"scenario_transfer","scenario_fa":"یک نفر می‌پرسد کجا زندگی می‌کنی. جواب بده.","accepted_intents":["I live in London.","I live near here."],"input":"speech","scored":true}' AS JSON),JSON_OBJECT('series',3)),
@@ -170,7 +170,7 @@ BEGIN
 
     INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata) VALUES
 (v_l_4,'listen',1,NULL,NULL,'What''s your address?','موقعیت تازه را گوش کن.',1,CAST('{"mode":"audio_first","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',3)),
-(v_l_4,'reading',2,NULL,NULL,'Daniel: What''s your address?\nArman: I live near the station.','بخوان.',1,CAST('{"mode":"reading_input","text":"Daniel: What''s your address?\nArman: I live near the station.","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',3)),
+(v_l_4,'reading',2,NULL,NULL,'Daniel: What''s your address? — Arman: I live near the station.','بخوان.',1,CAST('{"mode":"reading_input","text":"Daniel: What''s your address? — Arman: I live near the station.","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',3)),
 (v_l_4,'new_word',3,NULL,NULL,'address','واژه آدرس را در موقعیت تحویل بسته یاد بگیر.',1,CAST('{"mode":"word_teach","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',3)),
 (v_l_4,'pronunciation',4,NULL,NULL,'where','w را بدون تبدیل به v تولید کن.',1,CAST('{"mode":"sound_notice","target":"w_where_mastery","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',3)),
 (v_l_4,'speak',5,NULL,NULL,'خودت را معرفی کن.','بدون مدل پاسخ بده.',1,CAST('{"mode":"recall_hidden","cue_fa":"خودت را معرفی کن.","accepted":["I''m Arman.","My name is Arman."],"input":"speech","scored":true}' AS JSON),JSON_OBJECT('series',3)),
