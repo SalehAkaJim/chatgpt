@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
-"""Run Nova TTS against native-v3 SQL without weakening the SQL contract.
+"""Native-v3 TTS adapter with deterministic database-first audio locators.
 
-The original TTS parser predates native-v3 and assumes mostly one VALUES tuple
-per INSERT and lesson variables assigned immediately with LAST_INSERT_ID().
-Native-v3 intentionally emits compact/idempotent SQL, including multi-row
-lessons/turns/words and lesson-id lookups after insertion.
-
-This adapter normalizes only the parser view. It never rewrites canonical SQL on
-disk and does not change MySQL execution semantics or publication state.
+Canonical Chapter SQL is the source of text. Database triggers assign stable
+repository-relative audio_url values at INSERT time. TTS materializes MP3 files
+at exactly those paths. No post-import audio UPDATE SQL is part of native-v3.
 """
 from __future__ import annotations
 
@@ -23,11 +19,10 @@ import nova_tts
 
 _ORIGINAL_SPLIT_STATEMENTS = nova_tts.split_sql_statements
 _ORIGINAL_PARSE_INSERT = nova_tts.parse_insert
-_MULTIROW_TABLES = {"lessons", "turns", "words"}
+_ORIGINAL_TURN_BUILD_TASKS = nova_tts.build_tasks
 
 
 def _split_values_rows(payload: str) -> list[str]:
-    """Split `(a,b),(c,d)` into complete top-level row tuples."""
     rows: list[str] = []
     start: int | None = None
     depth = 0
@@ -74,7 +69,6 @@ def _split_values_rows(payload: str) -> list[str]:
 
 
 def _normalize_character_variables(sql: str) -> str:
-    """Alias native-v3 character variables to the legacy v_c_* parser convention."""
     variables: list[str] = []
     for match in re.finditer(
         r"SELECT\b[^;]*?\bINTO\s+(?:v_count\s*,\s*)?(v_[a-z0-9_]+)\s+FROM\s+characters\b[^;]*?\bname\s*=\s*'(?:''|\\.|[^'])*'",
@@ -93,7 +87,6 @@ def _normalize_character_variables(sql: str) -> str:
 
 
 def _lesson_variable_map(sql: str) -> dict[int, str]:
-    """Map lesson sort_order to v_l_* for native-v3 post-insert lookups."""
     result: dict[int, str] = {}
     for match in re.finditer(
         r"SELECT\s+id\s+INTO\s+(v_l_[a-z0-9_]+)\s+FROM\s+lessons\b[^;]*?\bsort_order\s*=\s*(\d+)",
@@ -119,11 +112,9 @@ def _row_values(row: str) -> list[str]:
 
 
 def compat_split_sql_statements(sql: str) -> list[str]:
-    """Expand native-v3 compact INSERTs into the legacy parser's statement view."""
     sql = _normalize_character_variables(sql)
     lesson_vars = _lesson_variable_map(sql)
     expanded: list[str] = []
-
     for statement in _ORIGINAL_SPLIT_STATEMENTS(sql):
         match = re.match(
             r"^\s*(INSERT\s+INTO\s+(lessons|turns|words)\s*\((.*?)\)\s*VALUES\s*)(.*)\s*$",
@@ -133,7 +124,6 @@ def compat_split_sql_statements(sql: str) -> list[str]:
         if not match:
             expanded.append(statement)
             continue
-
         prefix = match.group(1)
         table = match.group(2).casefold()
         columns = [c.strip().strip("`").casefold() for c in nova_tts.split_sql_csv(match.group(3))]
@@ -142,16 +132,12 @@ def compat_split_sql_statements(sql: str) -> list[str]:
         if not rows:
             expanded.append(statement)
             continue
-
-        # Native-v3 target tables currently use pure VALUES lists. Refuse to
-        # silently discard future top-level suffixes such as ON DUPLICATE KEY.
         last_end = payload.rfind(rows[-1]) + len(rows[-1])
         suffix = payload[last_end:].strip().lstrip(",").strip()
         if suffix:
             raise nova_tts.NovaTtsError(
                 f"Unsupported suffix after native-v3 multi-row {table} INSERT: {suffix[:80]!r}."
             )
-
         for row in rows:
             expanded.append(prefix + row)
             if table != "lessons" or not lesson_vars:
@@ -168,14 +154,9 @@ def compat_split_sql_statements(sql: str) -> list[str]:
                 raise nova_tts.NovaTtsError(
                     f"Native-v3 lesson sort_order must be an integer, got {raw_order!r}."
                 )
-            order = int(raw_order)
-            variable = lesson_vars.get(order)
+            variable = lesson_vars.get(int(raw_order))
             if variable:
-                # The legacy turn parser records the most recently parsed lesson
-                # when it sees SET v_l_*=LAST_INSERT_ID(). This is a parser-only
-                # synthetic statement; canonical SQL remains unchanged.
                 expanded.append(f"SET {variable}=LAST_INSERT_ID()")
-
     return expanded
 
 
@@ -190,10 +171,7 @@ def compat_parse_insert(statement: str, table: str) -> dict[str, str] | None:
     )
     if not match:
         return None
-    columns = [
-        column.strip().strip("`").casefold()
-        for column in nova_tts.split_sql_csv(match.group(1))
-    ]
+    columns = [column.strip().strip("`").casefold() for column in nova_tts.split_sql_csv(match.group(1))]
     values = nova_tts.split_sql_csv(match.group(2))
     if len(columns) != len(values):
         raise nova_tts.NovaTtsError(
@@ -202,26 +180,87 @@ def compat_parse_insert(statement: str, table: str) -> dict[str, str] | None:
     return dict(zip(columns, values))
 
 
+def _stable_turn_relative(task: dict) -> Path:
+    return (
+        Path("nova") / "audio" / "turns" / nova_tts.COURSE / str(task["level"]).upper()
+        / f"s{int(task['series']):04d}"
+        / f"l{int(task['lesson_order']):02d}"
+        / f"t{int(task['turn_order']):02d}.mp3"
+    )
+
+
+def stable_turn_build_tasks(rows, mapping, manifest):
+    candidates = _ORIGINAL_TURN_BUILD_TASKS(rows, mapping, manifest)
+    tasks = []
+    for task in candidates:
+        relative = _stable_turn_relative(task)
+        target = nova_tts.REPO_ROOT / relative
+        existing = manifest.get("entries", {}).get(str(task["key"])) or {}
+        if (
+            existing.get("fingerprint") == task.get("fingerprint")
+            and existing.get("path") == relative.as_posix()
+            and target.is_file()
+            and target.stat().st_size >= 100
+        ):
+            continue
+        task["relative_path"] = relative.as_posix()
+        task["target_path"] = target
+        tasks.append(task)
+    return tasks
+
+
+def _no_audio_update_sql(*_args, **_kwargs) -> None:
+    """Native-v3 stores audio_url during INSERT; standalone UPDATE SQL is obsolete."""
+    return None
+
+
 def _install_compatibility() -> None:
     nova_tts.split_sql_statements = compat_split_sql_statements
     nova_tts.parse_insert = compat_parse_insert
+    nova_tts.build_tasks = stable_turn_build_tasks
+    nova_tts.write_update_sql = _no_audio_update_sql
 
 
 def main() -> int:
     if len(sys.argv) < 3 or sys.argv[1] not in {"turn", "word"}:
-        print(
-            "Usage: python nova/tts/v3_tts_runner.py {turn|word} <tts-command> [args...]",
-            file=sys.stderr,
-        )
+        print("Usage: python nova/tts/v3_tts_runner.py {turn|word} <tts-command> [args...]", file=sys.stderr)
         return 2
     mode = sys.argv[1]
     sys.argv = [sys.argv[0], *sys.argv[2:]]
     _install_compatibility()
     if mode == "turn":
         return nova_tts.main()
+
     import nova_word_tts
+    original_word_build_tasks = nova_word_tts.build_tasks
+
+    def stable_word_build_tasks(rows, config, manifest):
+        candidates = original_word_build_tasks(rows, config, manifest)
+        tasks = []
+        for task in candidates:
+            text = str(task["display_form"])
+            relative = (
+                Path("nova") / "audio" / "words" / nova_tts.COURSE
+                / f"{nova_tts.sha256_text(text)}.mp3"
+            )
+            target = nova_tts.REPO_ROOT / relative
+            existing = manifest.get("entries", {}).get(str(task["key"])) or {}
+            if (
+                existing.get("fingerprint") == task.get("fingerprint")
+                and existing.get("path") == relative.as_posix()
+                and target.is_file()
+                and target.stat().st_size >= 100
+            ):
+                continue
+            task["relative_path"] = relative.as_posix()
+            task["target_path"] = target
+            tasks.append(task)
+        return tasks
+
     nova_word_tts.split_sql_statements = compat_split_sql_statements
     nova_word_tts.parse_insert = compat_parse_insert
+    nova_word_tts.build_tasks = stable_word_build_tasks
+    nova_word_tts.write_update_sql = _no_audio_update_sql
     return nova_word_tts.main()
 
 
