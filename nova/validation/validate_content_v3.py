@@ -83,10 +83,12 @@ def validate_native(path: Path) -> list[str]:
                 values=split_top(raw)
                 lesson_match=re.search(r"v_l_(\d+)",values[0])
                 if not lesson_match: raise ValueError("lesson variable missing")
-                lesson=int(lesson_match.group(1)); order=int(values[2]); activity_type=unquote(values[1]) or ""
+                lesson=int(lesson_match.group(1)); order=int(values[2]); activity_type=unquote(values[1]) or ""; prompt=unquote(values[3]) or ""
                 # config is penultimate column in current v3 activity INSERTs.
                 config_index=-2
                 config=cast_json(values[config_index]) if "CAST(" in values[config_index] else {}
+                if config.get("mode")=="sentence_blank" and prompt.count("___")!=1:
+                    errors.append(f"lesson {lesson}: sentence_blank prompt must contain exactly one ___")
                 by_lesson[lesson].append((order,activity_type,config))
             except Exception as exc: errors.append(f"cannot parse activity: {exc}")
 
