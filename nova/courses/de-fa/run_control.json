@@ -6,11 +6,12 @@
   "allow_new_chapters": false,
   "resume_generation_condition": "all_existing_chapters_pass_v3_linguistic_curriculum_review_gates",
   "max_chapters_per_run": 2,
-  "on_failure": "repair_same_series_without_advancing",
+  "on_failure": "repair_same_series_without_pausing_automation",
   "allow_series_gaps": false,
   "repair_policy": {
     "max_repair_cycles_per_run": 3,
     "resume_same_series_next_run": true,
+    "automation_must_remain_enabled": true,
     "automation_must_remain_enabled_during_repair_mode": true,
     "advance_state_only_after_all_gates_pass": true
   }
