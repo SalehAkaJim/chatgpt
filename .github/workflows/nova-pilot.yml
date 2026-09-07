@@ -1,0 +1,105 @@
+name: Nova Lesson Pilot
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'nova/courses/en-fa/course.source.json'
+      - 'nova/courses/en-fa/audio_voices.json'
+      - 'nova/courses/en-fa/lessons/**/lesson.source.json'
+      - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
+      - 'nova/_assistant/content-system-v1/tools/**'
+      - 'nova/mysql/01_reset_all.sql'
+      - 'nova/mysql/02_schema.sql'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate-pilot:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: nova_test
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h localhost -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=12
+
+    env:
+      COURSE: nova/courses/en-fa/course.source.json
+      LESSON: nova/courses/en-fa/lessons/0001/lesson.source.json
+      LESSON_DIR: nova/courses/en-fa/lessons/0001
+      VOICES: nova/courses/en-fa/audio_voices.json
+      SQL_OUT: nova/mysql/10_en_a1_lesson_0001.sql
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validation dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg default-mysql-client
+          python -m pip install --upgrade pip
+          pip install -r nova/_assistant/content-system-v1/tools/requirements.txt
+
+      - name: Validate canonical Lesson
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_lesson.py "$LESSON" | tee "$LESSON_DIR/validation.json"
+
+      - name: Render English audit
+        run: |
+          python nova/_assistant/content-system-v1/tools/render_english_audit.py "$LESSON" -o "$LESSON_DIR/english_audit.md"
+
+      - name: Compile runtime SQL
+        run: |
+          python nova/_assistant/content-system-v1/tools/compile_lesson_sql.py "$COURSE" "$LESSON" -o "$SQL_OUT"
+
+      - name: Validate on MySQL 9.0.1
+        run: |
+          until mysqladmin ping -h 127.0.0.1 -uroot -proot --silent; do sleep 2; done
+          mysql -h 127.0.0.1 -uroot -proot nova_test < nova/mysql/01_reset_all.sql
+          mysql -h 127.0.0.1 -uroot -proot nova_test < nova/mysql/02_schema.sql
+          mysql -h 127.0.0.1 -uroot -proot nova_test < "$SQL_OUT"
+          mysql -h 127.0.0.1 -uroot -proot --batch --raw nova_test < nova/mysql/03_runtime_lesson_query.sql > "$LESSON_DIR/runtime_smoke.txt"
+          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM lessons WHERE lesson_key='EN-A1-L-0001';")" = "1"
+          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.lesson_key='EN-A1-L-0001';")" = "8"
+          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM lesson_turns t JOIN lessons l ON l.id=t.lesson_id WHERE l.lesson_key='EN-A1-L-0001';")" = "6"
+
+      - name: Require ElevenLabs secret
+        run: |
+          test -n "$ELEVENLABS_API_KEY" || (echo "ELEVENLABS_API_KEY secret is missing" && exit 2)
+
+      - name: Generate mandatory audio
+        run: |
+          python nova/_assistant/content-system-v1/tools/generate_audio.py "$LESSON" "$VOICES" --repo-root . --manifest "$LESSON_DIR/audio.manifest.json"
+
+      - name: Validate audio manifest and files
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_audio_manifest.py "$LESSON" "$LESSON_DIR/audio.manifest.json" --repo-root . | tee "$LESSON_DIR/audio_validation.json"
+
+      - name: Commit Pilot outputs
+        run: |
+          git config user.name "nova-pilot-bot"
+          git config user.email "nova-pilot-bot@users.noreply.github.com"
+          git add "$LESSON_DIR/validation.json" "$LESSON_DIR/english_audit.md" "$LESSON_DIR/runtime_smoke.txt" "$LESSON_DIR/audio.manifest.json" "$LESSON_DIR/audio_validation.json" "$SQL_OUT" nova/audio/
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Build Nova pilot lesson 0001"
+            git push
+          fi
