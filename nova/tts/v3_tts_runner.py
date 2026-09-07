@@ -2,8 +2,9 @@
 """Run Nova TTS against native-v3 SQL without weakening the SQL contract.
 
 The original TTS parser predates native-v3 and assumes:
-1) one VALUES tuple per INSERT INTO turns statement, and
-2) words are inserted with VALUES rather than the idempotent
+1) one VALUES tuple per INSERT INTO turns statement,
+2) character lookup variables are named v_c_*, and
+3) words are inserted with VALUES rather than the idempotent
    INSERT ... SELECT ... WHERE NOT EXISTS form used by v3.
 
 This adapter normalizes only the parser view. It does not change canonical SQL,
@@ -32,44 +33,67 @@ def _split_values_rows(payload: str) -> list[str]:
     depth = 0
     quote: str | None = None
     escape = False
-
-    for index, char in enumerate(payload):
+    index = 0
+    while index < len(payload):
+        char = payload[index]
         if quote is not None:
             if escape:
                 escape = False
+                index += 1
                 continue
             if char == "\\":
                 escape = True
+                index += 1
                 continue
             if char == quote:
-                # SQL escapes a quote by doubling it: '' or "".
                 if index + 1 < len(payload) and payload[index + 1] == quote:
+                    index += 2
                     continue
                 quote = None
+            index += 1
             continue
-
         if char in ("'", '"'):
             quote = char
+            index += 1
             continue
         if char == "(":
             if depth == 0:
                 start = index
             depth += 1
-            continue
-        if char == ")":
+        elif char == ")":
             depth -= 1
             if depth < 0:
                 raise nova_tts.NovaTtsError("Unbalanced VALUES tuple in native-v3 SQL.")
             if depth == 0 and start is not None:
                 rows.append(payload[start : index + 1].strip())
                 start = None
-
+        index += 1
     if quote is not None or depth != 0:
         raise nova_tts.NovaTtsError("Unbalanced quoted/parenthesized VALUES payload in native-v3 SQL.")
     return rows
 
 
+def _normalize_character_variables(sql: str) -> str:
+    """Alias native-v3 character variables to the legacy v_c_* parser convention."""
+    variables: list[str] = []
+    for match in re.finditer(
+        r"SELECT\b[^;]*?\bINTO\s+(v_[a-z0-9_]+)\s+FROM\s+characters\b[^;]*?\bname\s*=\s*'(?:''|\\.|[^'])*'",
+        sql,
+        flags=re.IGNORECASE | re.DOTALL,
+    ):
+        variable = match.group(1)
+        if variable.casefold().startswith("v_c_"):
+            continue
+        variables.append(variable)
+    for variable in sorted(set(variables), key=len, reverse=True):
+        suffix = re.sub(r"[^a-z0-9_]+", "_", variable[2:].casefold()).strip("_")
+        alias = f"v_c_{suffix or 'character'}"
+        sql = re.sub(rf"\b{re.escape(variable)}\b", alias, sql, flags=re.IGNORECASE)
+    return sql
+
+
 def compat_split_sql_statements(sql: str) -> list[str]:
+    sql = _normalize_character_variables(sql)
     expanded: list[str] = []
     for statement in _ORIGINAL_SPLIT_STATEMENTS(sql):
         match = re.match(
@@ -80,7 +104,6 @@ def compat_split_sql_statements(sql: str) -> list[str]:
         if not match:
             expanded.append(statement)
             continue
-
         prefix = match.group(1)
         payload = match.group(3).strip()
         rows = _split_values_rows(payload)
@@ -95,8 +118,6 @@ def compat_parse_insert(statement: str, table: str) -> dict[str, str] | None:
     parsed = _ORIGINAL_PARSE_INSERT(statement, table)
     if parsed is not None or table.casefold() != "words":
         return parsed
-
-    # Native-v3 uses idempotent INSERT ... SELECT ... WHERE NOT EXISTS for words.
     match = re.search(
         r"INSERT\s+INTO\s+words\s*\((.*?)\)\s*SELECT\s+(.*?)\s+WHERE\s+NOT\s+EXISTS\b",
         statement,
@@ -104,7 +125,6 @@ def compat_parse_insert(statement: str, table: str) -> dict[str, str] | None:
     )
     if not match:
         return None
-
     columns = [
         column.strip().strip("`").casefold()
         for column in nova_tts.split_sql_csv(match.group(1))
@@ -129,18 +149,12 @@ def main() -> int:
             file=sys.stderr,
         )
         return 2
-
     mode = sys.argv[1]
     sys.argv = [sys.argv[0], *sys.argv[2:]]
     _install_compatibility()
-
     if mode == "turn":
         return nova_tts.main()
-
-    # Import only after patching so `from nova_tts import parse_insert, ...`
-    # captures the compatibility functions.
     import nova_word_tts
-
     nova_word_tts.split_sql_statements = compat_split_sql_statements
     nova_word_tts.parse_insert = compat_parse_insert
     return nova_word_tts.main()
