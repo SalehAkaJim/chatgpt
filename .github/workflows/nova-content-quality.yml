@@ -12,15 +12,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fresh v3 foundation gate
+      - name: Fresh v3.2 foundation gate
         run: python3 nova/validation/validate_migration_v3.py
-      - name: Native v3 pedagogical structure gate
+      - name: Native v3.2 pedagogical gate
         run: python3 nova/validation/validate_content_v3.py
       - name: TTS parser unit tests
         run: python -m unittest discover -s nova/tts/tests -v
 
-  en-fa-mysql8:
+  mysql8:
     needs: foundation
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - course: en-fa
+            lang: en
+          - course: de-fa
+            lang: de
     runs-on: ubuntu-latest
     services:
       mysql:
@@ -34,127 +42,33 @@ jobs:
           --health-interval=10s --health-timeout=5s --health-retries=12
     steps:
       - uses: actions/checkout@v4
-      - name: Normalize English v3 source locators
-        shell: bash
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          for path in Path("nova/courses/en-fa/staging").glob("batch_*/chapter_*/chapter.sql"):
-              text = path.read_text(encoding="utf-8")
-              if re.search(r"(?im)^--\s*SERIES\s+\d+\s*$", text[:1200]):
-                  continue
-              match = re.fullmatch(r"chapter_(\d+)", path.parent.name)
-              if not match:
-                  raise SystemExit(f"Cannot infer Series from {path}")
-              path.write_text(f"-- SERIES {int(match.group(1))}\n{text}", encoding="utf-8")
-          PY
-      - name: Validate English TTS sources
+      - name: Validate TTS sources when present
         shell: bash
         run: |
           set -euo pipefail
-          if find nova/courses/en-fa/staging -name chapter.sql -type f 2>/dev/null | grep -q .; then
-            NOVA_COURSE=en-fa python nova/tts/v3_tts_runner.py turn validate-sources
-            NOVA_COURSE=en-fa python nova/tts/v3_tts_runner.py word validate-sources
+          if find "nova/courses/${{ matrix.course }}/staging" -name chapter.sql -type f 2>/dev/null | grep -q .; then
+            NOVA_COURSE=${{ matrix.course }} python nova/tts/v3_tts_runner.py turn validate-sources
+            NOVA_COURSE=${{ matrix.course }} python nova/tts/v3_tts_runner.py word validate-sources
           else
-            echo "en-fa: no chapter SQL yet"
+            echo "${{ matrix.course }}: no chapter SQL yet"
           fi
-      - name: Restore canonical English SQL after TTS parser validation
-        run: git checkout -- nova/courses/en-fa/staging || true
-      - name: Compile complete v3.1 foundation on MySQL 8
+      - name: Compile clean v3.2 foundation on MySQL 8
         env: {MYSQL_PWD: nova_qa_root}
         run: |
+          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/reset_all_v10.sql
           mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/schema_v9.sql
           mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/semantic_layer_v10.sql
           mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/foundation_seed_v3.sql
-          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/audio_contract_v3.sql
-      - name: Execute English native v3 chapters
+      - name: Execute native v3.2 chapters
         env: {MYSQL_PWD: nova_qa_root}
         shell: bash
         run: |
           set -euo pipefail
           while IFS= read -r file; do
             mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
-            repair="$(dirname "$file")/v3_repair.sql"
-            [[ ! -f "$repair" ]] || mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
-          done < <(find nova/courses/en-fa/staging -name chapter.sql -type f 2>/dev/null | sort)
-      - name: Verify deterministic English audio URLs are populated
+          done < <(find "nova/courses/${{ matrix.course }}/staging" -name chapter.sql -type f 2>/dev/null | sort)
+      - name: Verify source rows own audio locators
         env: {MYSQL_PWD: nova_qa_root}
         run: |
-          test "$(mysql --batch --skip-column-names --protocol=TCP -h 127.0.0.1 -uroot nova_qa -e "SELECT COUNT(*) FROM words w JOIN courses c ON c.id=w.course_id WHERE c.learning_language='en' AND c.base_language='fa' AND (w.audio_url IS NULL OR w.audio_url='');")" = "0"
-          test "$(mysql --batch --skip-column-names --protocol=TCP -h 127.0.0.1 -uroot nova_qa -e "SELECT COUNT(*) FROM turns t JOIN lessons l ON l.id=t.lesson_id JOIN chapters ch ON ch.id=l.chapter_id JOIN modules m ON m.id=ch.module_id JOIN levels lv ON lv.id=m.level_id JOIN courses c ON c.id=lv.course_id WHERE c.learning_language='en' AND c.base_language='fa' AND (t.audio_url IS NULL OR t.audio_url='');")" = "0"
-
-  de-fa-mysql8:
-    needs: foundation
-    runs-on: ubuntu-latest
-    services:
-      mysql:
-        image: mysql:8.0
-        env:
-          MYSQL_ROOT_PASSWORD: nova_qa_root
-          MYSQL_DATABASE: nova_qa
-        ports: ["3306:3306"]
-        options: >-
-          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -pnova_qa_root"
-          --health-interval=10s --health-timeout=5s --health-retries=12
-    steps:
-      - uses: actions/checkout@v4
-      - name: Normalize German native-v3 TTS metadata
-        shell: bash
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json, re
-          voice_map = json.loads(Path("nova/tts/voice_map_de_fa.json").read_text(encoding="utf-8"))
-          canonical_roles = {str(x.get("name")): str(x.get("role")) for x in voice_map.get("characters", []) if x.get("name") and x.get("role")}
-          for path in Path("nova/courses/de-fa/staging").glob("batch_*/chapter_*/chapter.sql"):
-              text = path.read_text(encoding="utf-8")
-              if not re.search(r"(?im)^--\s*SERIES\s+\d+\s*$", text[:1200]):
-                  match = re.fullmatch(r"chapter_(\d+)", path.parent.name)
-                  if not match:
-                      raise SystemExit(f"Cannot infer Series from {path}")
-                  text = f"-- SERIES {int(match.group(1))}\n{text}"
-              lines = []
-              for line in text.splitlines():
-                  if "INSERT INTO characters" in line:
-                      name_match = re.search(r"VALUES\s*\([^,]+,'([^']+)'", line)
-                      if name_match and name_match.group(1) in canonical_roles:
-                          role = canonical_roles[name_match.group(1)].replace("'", "''")
-                          line = re.sub(r"JSON_OBJECT\('role','[^']*'", f"JSON_OBJECT('role','{role}'", line, count=1)
-                  lines.append(line)
-              path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-          PY
-      - name: Validate German TTS sources
-        shell: bash
-        run: |
-          set -euo pipefail
-          if find nova/courses/de-fa/staging -name chapter.sql -type f 2>/dev/null | grep -q .; then
-            NOVA_COURSE=de-fa python nova/tts/v3_tts_runner.py turn validate-sources
-            NOVA_COURSE=de-fa python nova/tts/v3_tts_runner.py word validate-sources
-          else
-            echo "de-fa: no chapter SQL yet"
-          fi
-      - name: Restore canonical German SQL after TTS parser validation
-        run: git checkout -- nova/courses/de-fa/staging || true
-      - name: Compile complete v3.1 foundation on MySQL 8
-        env: {MYSQL_PWD: nova_qa_root}
-        run: |
-          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/schema_v9.sql
-          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/semantic_layer_v10.sql
-          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/foundation_seed_v3.sql
-          mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/audio_contract_v3.sql
-      - name: Execute German native v3 chapters
-        env: {MYSQL_PWD: nova_qa_root}
-        shell: bash
-        run: |
-          set -euo pipefail
-          while IFS= read -r file; do
-            mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
-            repair="$(dirname "$file")/v3_repair.sql"
-            [[ ! -f "$repair" ]] || mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
-          done < <(find nova/courses/de-fa/staging -name chapter.sql -type f 2>/dev/null | sort)
-      - name: Verify deterministic German audio URLs are populated
-        env: {MYSQL_PWD: nova_qa_root}
-        run: |
-          test "$(mysql --batch --skip-column-names --protocol=TCP -h 127.0.0.1 -uroot nova_qa -e "SELECT COUNT(*) FROM words w JOIN courses c ON c.id=w.course_id WHERE c.learning_language='de' AND c.base_language='fa' AND (w.audio_url IS NULL OR w.audio_url='');")" = "0"
-          test "$(mysql --batch --skip-column-names --protocol=TCP -h 127.0.0.1 -uroot nova_qa -e "SELECT COUNT(*) FROM turns t JOIN lessons l ON l.id=t.lesson_id JOIN chapters ch ON ch.id=l.chapter_id JOIN modules m ON m.id=ch.module_id JOIN levels lv ON lv.id=m.level_id JOIN courses c ON c.id=lv.course_id WHERE c.learning_language='de' AND c.base_language='fa' AND (t.audio_url IS NULL OR t.audio_url='');")" = "0"
+          test "$(mysql --batch --skip-column-names --protocol=TCP -h 127.0.0.1 -uroot nova_qa -e "SELECT COUNT(*) FROM words w JOIN courses c ON c.id=w.course_id WHERE c.learning_language='${{ matrix.lang }}' AND c.base_language='fa' AND (w.audio_url IS NULL OR w.audio_url='');")" = "0"
+          test "$(mysql --batch --skip-column-names --protocol=TCP -h 127.0.0.1 -uroot nova_qa -e "SELECT COUNT(*) FROM turns t JOIN lessons l ON l.id=t.lesson_id JOIN chapters ch ON ch.id=l.chapter_id JOIN modules m ON m.id=ch.module_id JOIN levels lv ON lv.id=m.level_id JOIN courses c ON c.id=lv.course_id WHERE c.learning_language='${{ matrix.lang }}' AND c.base_language='fa' AND (t.audio_url IS NULL OR t.audio_url='');")" = "0"
