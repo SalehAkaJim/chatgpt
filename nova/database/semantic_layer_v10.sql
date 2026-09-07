@@ -1,7 +1,9 @@
 -- ===============================================================
--- NOVA SEMANTIC LEARNING LAYER v10.0
--- Additive migration over schema_v9.sql. Existing chapter SQL remains
--- executable, while v3 content gains sense/chunk/outcome/review semantics.
+-- NOVA SEMANTIC LEARNING LAYER v10.1
+-- Additive migration over schema_v9.sql.
+-- All physical semantic tables use the sem_ prefix.
+-- Series 1-3 compatibility aliases are updatable views only; Series 4+
+-- canonical SQL must reference sem_* names directly.
 -- ===============================================================
 SET NAMES utf8mb4;
 
@@ -11,7 +13,7 @@ ALTER TABLE activities
     'reading','writing','pronunciation','chunk'
   ) NOT NULL;
 
-CREATE TABLE IF NOT EXISTS learning_units (
+CREATE TABLE IF NOT EXISTS sem_learning_units (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   course_id BIGINT UNSIGNED NOT NULL,
   unit_type ENUM('word_sense','chunk','construction','grammar','pronunciation','can_do') NOT NULL,
@@ -25,25 +27,25 @@ CREATE TABLE IF NOT EXISTS learning_units (
   metadata JSON NULL,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_learning_unit_course_key (course_id,unit_key),
-  KEY idx_learning_units_course_type (course_id,unit_type),
-  KEY idx_learning_units_course_level (course_id,cefr_level),
-  CONSTRAINT fk_learning_units_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE
+  UNIQUE KEY uq_sem_learning_unit_course_key (course_id,unit_key),
+  KEY idx_sem_learning_units_course_type (course_id,unit_type),
+  KEY idx_sem_learning_units_course_level (course_id,cefr_level),
+  CONSTRAINT fk_sem_learning_units_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS learning_unit_words (
+CREATE TABLE IF NOT EXISTS sem_learning_unit_words (
   learning_unit_id BIGINT UNSIGNED NOT NULL,
   word_id BIGINT UNSIGNED NOT NULL,
   sort_order INT UNSIGNED NOT NULL DEFAULT 1,
   component_role ENUM('head','component','optional','surface_example') NOT NULL DEFAULT 'component',
   metadata JSON NULL,
   PRIMARY KEY(learning_unit_id,word_id,sort_order),
-  KEY idx_learning_unit_words_word (word_id),
-  CONSTRAINT fk_luw_unit FOREIGN KEY(learning_unit_id) REFERENCES learning_units(id) ON DELETE CASCADE,
-  CONSTRAINT fk_luw_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE CASCADE
+  KEY idx_sem_learning_unit_words_word (word_id),
+  CONSTRAINT fk_sem_luw_unit FOREIGN KEY(learning_unit_id) REFERENCES sem_learning_units(id) ON DELETE CASCADE,
+  CONSTRAINT fk_sem_luw_word FOREIGN KEY(word_id) REFERENCES words(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS lesson_learning_units (
+CREATE TABLE IF NOT EXISTS sem_lesson_learning_units (
   lesson_id BIGINT UNSIGNED NOT NULL,
   learning_unit_id BIGINT UNSIGNED NOT NULL,
   learning_role ENUM('new','review','passive','mastery') NOT NULL,
@@ -52,23 +54,23 @@ CREATE TABLE IF NOT EXISTS lesson_learning_units (
   evidence_activity_ids JSON NULL,
   metadata JSON NULL,
   PRIMARY KEY(lesson_id,learning_unit_id),
-  KEY idx_lesson_learning_units_unit (learning_unit_id),
-  CONSTRAINT fk_llu_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
-  CONSTRAINT fk_llu_unit FOREIGN KEY(learning_unit_id) REFERENCES learning_units(id) ON DELETE CASCADE
+  KEY idx_sem_lesson_learning_units_unit (learning_unit_id),
+  CONSTRAINT fk_sem_llu_lesson FOREIGN KEY(lesson_id) REFERENCES lessons(id) ON DELETE CASCADE,
+  CONSTRAINT fk_sem_llu_unit FOREIGN KEY(learning_unit_id) REFERENCES sem_learning_units(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS turn_learning_units (
+CREATE TABLE IF NOT EXISTS sem_turn_learning_units (
   turn_id BIGINT UNSIGNED NOT NULL,
   learning_unit_id BIGINT UNSIGNED NOT NULL,
   evidence_type ENUM('exposure','example','production','transfer','mastery') NOT NULL DEFAULT 'exposure',
   metadata JSON NULL,
   PRIMARY KEY(turn_id,learning_unit_id),
-  KEY idx_turn_learning_units_unit (learning_unit_id),
-  CONSTRAINT fk_tlu_turn FOREIGN KEY(turn_id) REFERENCES turns(id) ON DELETE CASCADE,
-  CONSTRAINT fk_tlu_unit FOREIGN KEY(learning_unit_id) REFERENCES learning_units(id) ON DELETE CASCADE
+  KEY idx_sem_turn_learning_units_unit (learning_unit_id),
+  CONSTRAINT fk_sem_tlu_turn FOREIGN KEY(turn_id) REFERENCES turns(id) ON DELETE CASCADE,
+  CONSTRAINT fk_sem_tlu_unit FOREIGN KEY(learning_unit_id) REFERENCES sem_learning_units(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS review_obligations (
+CREATE TABLE IF NOT EXISTS sem_review_obligations (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   course_id BIGINT UNSIGNED NOT NULL,
   learning_unit_id BIGINT UNSIGNED NOT NULL,
@@ -81,16 +83,16 @@ CREATE TABLE IF NOT EXISTS review_obligations (
   metadata JSON NULL,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_review_obligation (learning_unit_id,origin_chapter_id,spacing_offset),
-  KEY idx_review_course_due (course_id,due_series,status),
-  CONSTRAINT fk_review_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE,
-  CONSTRAINT fk_review_unit FOREIGN KEY(learning_unit_id) REFERENCES learning_units(id) ON DELETE CASCADE,
-  CONSTRAINT fk_review_origin_chapter FOREIGN KEY(origin_chapter_id) REFERENCES chapters(id) ON DELETE CASCADE,
-  CONSTRAINT fk_review_fulfilled_chapter FOREIGN KEY(fulfilled_chapter_id) REFERENCES chapters(id) ON DELETE SET NULL,
-  CONSTRAINT fk_review_evidence_activity FOREIGN KEY(evidence_activity_id) REFERENCES activities(id) ON DELETE SET NULL
+  UNIQUE KEY uq_sem_review_obligation (learning_unit_id,origin_chapter_id,spacing_offset),
+  KEY idx_sem_review_course_due (course_id,due_series,status),
+  CONSTRAINT fk_sem_review_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE,
+  CONSTRAINT fk_sem_review_unit FOREIGN KEY(learning_unit_id) REFERENCES sem_learning_units(id) ON DELETE CASCADE,
+  CONSTRAINT fk_sem_review_origin_chapter FOREIGN KEY(origin_chapter_id) REFERENCES chapters(id) ON DELETE CASCADE,
+  CONSTRAINT fk_sem_review_fulfilled_chapter FOREIGN KEY(fulfilled_chapter_id) REFERENCES chapters(id) ON DELETE SET NULL,
+  CONSTRAINT fk_sem_review_evidence_activity FOREIGN KEY(evidence_activity_id) REFERENCES activities(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS curriculum_outcomes (
+CREATE TABLE IF NOT EXISTS sem_curriculum_outcomes (
   id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   course_id BIGINT UNSIGNED NOT NULL,
   cefr_level VARCHAR(8) NOT NULL,
@@ -104,12 +106,12 @@ CREATE TABLE IF NOT EXISTS curriculum_outcomes (
   metadata JSON NULL,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  UNIQUE KEY uq_curriculum_outcome (course_id,cefr_level,outcome_key),
-  KEY idx_curriculum_outcome_status (course_id,cefr_level,status),
-  CONSTRAINT fk_curriculum_outcomes_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE
+  UNIQUE KEY uq_sem_curriculum_outcome (course_id,cefr_level,outcome_key),
+  KEY idx_sem_curriculum_outcome_status (course_id,cefr_level,status),
+  CONSTRAINT fk_sem_curriculum_outcomes_course FOREIGN KEY(course_id) REFERENCES courses(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE OR REPLACE VIEW v_due_reviews AS
+CREATE OR REPLACE VIEW sem_due_reviews AS
 SELECT
   ro.id,
   ro.course_id,
@@ -121,6 +123,20 @@ SELECT
   ro.due_series,
   ro.spacing_offset,
   ro.status
-FROM review_obligations ro
-JOIN learning_units lu ON lu.id=ro.learning_unit_id
+FROM sem_review_obligations ro
+JOIN sem_learning_units lu ON lu.id=ro.learning_unit_id
 WHERE ro.status='due';
+
+-- -----------------------------------------------------------------
+-- Native-v3 Series 1-3 source compatibility.
+-- These are VIEWS, not physical semantic tables. They let the already
+-- generated historical packages import into the sem_* physical schema.
+-- Series 4+ validators reject these legacy identifiers in chapter SQL.
+-- -----------------------------------------------------------------
+CREATE OR REPLACE VIEW learning_units AS SELECT * FROM sem_learning_units;
+CREATE OR REPLACE VIEW learning_unit_words AS SELECT * FROM sem_learning_unit_words;
+CREATE OR REPLACE VIEW lesson_learning_units AS SELECT * FROM sem_lesson_learning_units;
+CREATE OR REPLACE VIEW turn_learning_units AS SELECT * FROM sem_turn_learning_units;
+CREATE OR REPLACE VIEW review_obligations AS SELECT * FROM sem_review_obligations;
+CREATE OR REPLACE VIEW curriculum_outcomes AS SELECT * FROM sem_curriculum_outcomes;
+CREATE OR REPLACE VIEW v_due_reviews AS SELECT * FROM sem_due_reviews;
