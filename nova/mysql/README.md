@@ -1,6 +1,6 @@
 # Nova MySQL import order — native v3.2 clean foundation
 
-The active dataset on `main` starts from zero. The archive branch is backup only and is never an active input.
+The active dataset on `main` is fresh native-v3.2 only. Archive branches are backup-only and are never active inputs.
 
 ## Core — always first
 
@@ -13,17 +13,22 @@ The active dataset on `main` starts from zero. The archive branch is backup only
 
 Audio URLs are stored directly in each `words` and `turns` row by `chapter.sql`. TTS only materializes MP3 files at those deterministic paths. There is no audio trigger file and no post-import audio UPDATE SQL.
 
-## German → Persian staging
+## German → Persian published Chapters
 
-No active Chapter yet. The next generated Series is **1**.
+1. DE-CH-0001 — [`chapter_0001/chapter.sql`](../courses/de-fa/staging/batch_01/chapter_0001/chapter.sql)
+2. DE-CH-0002 — [`chapter_0002/chapter.sql`](../courses/de-fa/staging/batch_01/chapter_0002/chapter.sql)
 
-## English → Persian staging
+Published through Series **2**. Generated through Series **2**. Next generated Series is **3**.
 
-No active Chapter yet. The next generated Series is **1**.
+## English → Persian published Chapters
 
-## Publication state
+1. EN-CH-0001 — [`chapter_0001/chapter.sql`](../courses/en-fa/staging/batch_01/chapter_0001/chapter.sql)
 
-Both courses are reset to `generated_through_series = 0`, `published_through_series = 0`, and `next_series = 1`.
+Published through Series **1**. Generated through Series **1**. Next generated Series is **2**.
+
+## Publication evidence
+
+Publication requires the complete native-v3.2 package plus clean linguistic/acquisition/curriculum/review gates, real MySQL8 execution, complete Turn audio, and complete eligible Word/Learning-unit audio. File presence or QA flags alone do not advance the manifest.
 
 ## Maintenance rules
 
