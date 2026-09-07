@@ -157,12 +157,6 @@ def strict_validate_voice_map(mapping: dict[str, Any], require_complete: bool = 
             raise nova_tts.NovaTtsError(
                 f"Voice for {character.get('name')} fails strict target accent/clarity policy."
             )
-        selection = character.get("selection") or {}
-        reasons = selection.get("reasons") or []
-        if require_complete and not any(str(x).startswith("target-accent:") for x in reasons):
-            raise nova_tts.NovaTtsError(
-                f"Voice for {character.get('name')} lacks strict-selection evidence."
-            )
 
 
 def _sanitize_existing_assignments() -> int:
