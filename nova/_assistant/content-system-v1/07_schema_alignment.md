@@ -1,27 +1,40 @@
 # 07 — Database/schema alignment
 
-Content System v1 now treats the database as an implementation of the learning model, not a constraint that dictates pedagogy.
+The runtime database models the product, not the full curriculum-planning process.
 
-## Active decisions
+## Active runtime decision
 
-1. Lesson structure is flexible (`dialogue`, `scenario`, `listening`, `reading`, `practice`, `review`, `mixed`).
-2. A Lesson does not require a forced two-character story model.
-3. The old `words` abstraction is replaced by **lexical items**.
-   - A lexical item may be a single word or a conventional multiword expression.
-   - whitespace count is not a global validity rule.
-   - sentence/clause/arbitrary-fragment rejection belongs to canonical validation and lexical atomicity checks.
-4. Distractors are Activity-specific, not lexical-entry properties.
-5. Learning roles are explicitly `target`, `review`, `support`, `incidental`.
-6. Review uses windows/priority rather than fixed 1/2/4/8/16 Chapter offsets.
-7. Communicative curriculum outcomes are separate from enabling lexical/grammar/pronunciation units.
-8. Visible Turn text is canonical; tokenization and lexical spans are derived artifacts.
-9. Audio metadata belongs to the canonical Turn/lexical item and is a mandatory publication dependency.
-10. The production database target is **MySQL Server 9.0.1**. SQL is not considered validated until it executes on that exact target version.
+`Course → Lesson → Activity`
 
-## Lexical span requirement
+Core content tables:
+- `courses`
+- `characters`
+- `lessons`
+- `activities`
+- `lesson_turns`
+- `lexical_items`
+- `lesson_lexical_items`
 
-A multiword lexical item may map to multiple Turn tokens while remaining one dictionary/teaching/audio unit. The data model must therefore support lexical-item-to-token/span evidence rather than assuming one token equals one vocabulary entry.
+There are no runtime `levels`, `modules`, `chapters`, semantic-learning-unit tables or review-obligation tables in the Pilot foundation.
 
-## Status
+## Why this does not constrain content
 
-Schema revision is part of the Content System v1 foundation and must be validated on MySQL 9.0.1 before Chapter 1 can be marked complete.
+The canonical `lesson.source.json` may contain richer curriculum data: CEFR, outcomes, prerequisites, constructions, support language, lexical roles, QA annotations and future planning metadata. Only the subset the application needs is compiled into MySQL.
+
+`activities.config` stores interaction-specific payload, so adding a new Activity interaction usually does not require a new table.
+
+## Lexical model
+
+`lexical_items` represents conventional learnable vocabulary units, including justified multiword expressions. Token count does not define lexical validity.
+
+## Audio
+
+Turn and lexical-item audio are first-class runtime fields and mandatory Pilot dependencies.
+
+## Database target
+
+Production/test target: **MySQL Server 9.0.1**. Lesson SQL is not validated until it executes on that exact target.
+
+## Future product data
+
+User progress, learned-item state, bookmarks, flashcards and review scheduling will be added separately after the content/runtime Pilot. They should extend this model rather than complicate the core content hierarchy prematurely.
