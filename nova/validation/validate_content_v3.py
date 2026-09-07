@@ -109,6 +109,12 @@ def validate(path):
     if sql.count("START TRANSACTION")!=1:errors.append("expected exactly one START TRANSACTION")
     if not re.search(rf"(?im)^--\s*SERIES\s+{series}\s*$",sql[:1200]):errors.append("missing canonical -- SERIES locator")
     if re.search(r"placeholder|todo|anders\d",sql,re.I):errors.append("placeholder-like content found")
+    # MySQL consumes raw control escapes before CAST(... AS JSON), making the resulting JSON invalid.
+    for m in re.finditer(r"CAST\s*\(\s*'(?:''|[^'])*'\s+AS\s+JSON\s*\)",sql,re.I|re.S):
+        expr=m.group(0)
+        if any(x in expr for x in (r"\n",r"\r",r"\t")):
+            errors.append("MySQL-unsafe raw control escape inside CAST(... AS JSON); use JSON_OBJECT/JSON_ARRAY or a single-line safe value")
+            break
     for table in("courses","levels","modules"):
         if re.search(rf"\b(?:INSERT\s+INTO|UPDATE)\s+{table}\b",sql,re.I):errors.append(f"structural metadata must not be written by Chapter SQL: {table}")
     for legacy in FORBIDDEN_SEM:

@@ -147,8 +147,7 @@ BEGIN
 (v_l_1,'new_word',5,NULL,NULL,'Do you speak English?','این سؤال را به صورت یک عبارت کاربردی یاد بگیر.',1,CAST('{"mode":"chunk_teach","unit_key":"en:a1:do-you-speak","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',2)),
 (v_l_1,'speak',6,NULL,NULL,'بگو اهل ایران هستی.','از حافظه بگو.',1,CAST('{"mode":"recall_hidden","cue_fa":"بگو اهل ایران هستی.","accepted":["I''m from Iran.","I am from Iran."],"input":"speech","scored":true}' AS JSON),JSON_OBJECT('series',2)),
 (v_l_1,'meaning_choice',7,NULL,NULL,'I''m ___ Iran.','گزینه درست را انتخاب کن.',1,CAST('{"mode":"sentence_blank","options":["from","speak","where"],"answer_index":0,"input":"tap_choice","scored":true}' AS JSON),JSON_OBJECT('series',2)),
-(v_l_1,'reading',8,NULL,NULL,'Maya: Where are you from?
-Arman: I''m from Iran.','متن کوتاه را بخوان.',1,CAST('{"mode":"reading_input","text":"Maya: Where are you from?\nArman: I''m from Iran.","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',2)),
+(v_l_1,'reading',8,NULL,NULL,'Maya: Where are you from? — Arman: I''m from Iran.','متن کوتاه را بخوان.',1,CAST('{"mode":"reading_input","text":"Maya: Where are you from? — Arman: I''m from Iran.","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',2)),
 (v_l_1,'reading_comprehension',9,NULL,NULL,'Where is Arman from?','پاسخ درست را انتخاب کن.',1,CAST('{"mode":"reading_inference","options":["Iran","London","English"],"answer_index":0,"input":"tap_choice","scored":true}' AS JSON),JSON_OBJECT('series',2)),
 (v_l_1,'word_order',10,NULL,NULL,'I''m from Iran','کلمات را مرتب کن.',1,CAST('{"mode":"tap_tokens","tokens":["Iran","from","I''m"],"answer":["I''m","from","Iran"],"input":"tap_tokens","scored":true}' AS JSON),JSON_OBJECT('series',2)),
 (v_l_1,'speak',11,NULL,NULL,'یک نفر از تو می‌پرسد اهل کجایی. پاسخ بده.','با یک جمله طبیعی جواب بده.',1,CAST('{"mode":"scenario_transfer","scenario_fa":"یک نفر از تو می‌پرسد اهل کجایی. پاسخ بده.","accepted_intents":["I''m from Iran.","I am from Iran."],"input":"speech","scored":true}' AS JSON),JSON_OBJECT('series',2)),
@@ -184,8 +183,7 @@ Arman: I''m from Iran.','متن کوتاه را بخوان.',1,CAST('{"mode":"re
 
     INSERT INTO activities(lesson_id,activity_type,sort_order,turn_id,word_id,prompt,instruction,difficulty,config,metadata) VALUES
 (v_l_4,'listen',1,NULL,NULL,'Hello. I''m Daniel. Where are you from?','اول دیالوگ تازه را گوش کن.',1,CAST('{"mode":"audio_first","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',2)),
-(v_l_4,'reading',2,NULL,NULL,'Daniel: Do you speak English?
-Arman: A little. I speak Persian too.','متن موقعیت تازه را بخوان.',1,CAST('{"mode":"reading_input","text":"Daniel: Do you speak English?\nArman: A little. I speak Persian too.","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',2)),
+(v_l_4,'reading',2,NULL,NULL,'Daniel: Do you speak English? — Arman: A little. I speak Persian too.','متن موقعیت تازه را بخوان.',1,CAST('{"mode":"reading_input","text":"Daniel: Do you speak English? — Arman: A little. I speak Persian too.","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',2)),
 (v_l_4,'new_word',3,NULL,NULL,'Nice to meet you.','عبارت Series 1 را در موقعیت تازه مرور کن.',1,CAST('{"mode":"chunk_teach","unit_key":"en:a1:nice-to-meet-you","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',2)),
 (v_l_4,'pronunciation',4,NULL,NULL,'I speak Persian too.','واژه‌های اصلی را واضح و بدون کشیدن اضافه بگو.',1,CAST('{"mode":"sound_notice","target":"clear_content_words","input":"none","scored":false}' AS JSON),JSON_OBJECT('series',2)),
 (v_l_4,'speak',5,NULL,NULL,'خودت را معرفی کن و کشورت را بگو.','بدون مدل پاسخ بده.',1,CAST('{"mode":"recall_hidden","cue_fa":"خودت را معرفی کن و کشورت را بگو.","accepted":["I''m Arman. I''m from Iran.","My name is Arman. I''m from Iran."],"input":"speech","scored":true}' AS JSON),JSON_OBJECT('series',2)),
