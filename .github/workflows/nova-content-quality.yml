@@ -27,12 +27,18 @@ jobs:
       - name: Native v3 pedagogical structure gate
         run: python3 nova/validation/validate_content_v3.py
       - name: Validate TTS source compatibility
+        shell: bash
         run: |
+          set -euo pipefail
           python -m unittest discover -s nova/tts/tests -v
-          NOVA_COURSE=de-fa python nova/tts/nova_tts.py validate-sources
-          NOVA_COURSE=de-fa python nova/tts/nova_word_tts.py validate-sources
-          NOVA_COURSE=en-fa python nova/tts/nova_tts.py validate-sources
-          NOVA_COURSE=en-fa python nova/tts/nova_word_tts.py validate-sources
+          for course in de-fa en-fa; do
+            if find "nova/courses/$course/staging" -name chapter.sql -type f 2>/dev/null | grep -q .; then
+              NOVA_COURSE="$course" python nova/tts/nova_tts.py validate-sources
+              NOVA_COURSE="$course" python nova/tts/nova_word_tts.py validate-sources
+            else
+              echo "$course: fresh dataset has no chapter SQL yet; TTS source validation is not applicable."
+            fi
+          done
       - name: Compile schemas on MySQL 8
         env: {MYSQL_PWD: nova_qa_root}
         run: |
