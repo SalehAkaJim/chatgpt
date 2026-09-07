@@ -1,32 +1,33 @@
 {
-  "version": "2.1.0",
+  "version": "3.0.0-migration",
   "course": "en-fa",
   "next_series": 10,
+  "next_series_locked": true,
   "last_completed_series": 9,
-  "last_validated_series": 9,
+  "last_validated_series_v2": 9,
   "last_audio_complete_series": 9,
-  "status": "ready",
+  "status": "pedagogical_audit",
+  "production_allowed": false,
   "active_batch": 2,
-  "updated_at": "2026-09-06T18:07:11Z",
-  "errors": [],
+  "contract_target_version": "3.0.0",
+  "audit": {
+    "required": true,
+    "series_start": 1,
+    "series_end": 9,
+    "audit_state": "nova/courses/en-fa/state/pedagogical_audit_v3.json",
+    "unlock_condition": "all_9_series_pass_v3_linguistic_curriculum_review_gates"
+  },
+  "errors": [
+    "v2 structural PASS is not sufficient for v3 publication; existing chapters require linguistic and review audit"
+  ],
   "audio": {
-    "turns": {
-      "expected": 366,
-      "generated": 366,
-      "coverage": 1,
-      "workflow_run_id": 34050656515
-    },
-    "words": {
-      "eligible": 179,
-      "generated": 179,
-      "coverage": 1,
-      "workflow_run_id": 34050656512
-    }
+    "turns": {"expected": 366, "generated": 366, "coverage": 1, "workflow_run_id": 34050656515},
+    "words": {"eligible": 179, "generated": 179, "coverage": 1, "workflow_run_id": 34050656512}
   },
   "quality": {
-    "status": "PASS",
-    "semantic_gate_version": 2,
-    "last_validated_series": 9,
-    "mysql8_workflow_run_id": 34050656523
+    "status": "REVIEW_REQUIRED",
+    "previous_semantic_gate_version": 2,
+    "required_contract_version": "3.0.0",
+    "required_gates": ["structural", "linguistic", "curriculum", "review_ledger", "mysql8", "audio"]
   }
 }
