@@ -1,0 +1,32 @@
+{
+  "version":"3.0.0",
+  "course":"en-fa",
+  "series":1,
+  "status":"PASS",
+  "blocking_issues":[],
+  "checks":{
+    "target_language_naturalness":"PASS",
+    "persian_translation":"PASS",
+    "part_of_speech_in_context":"PASS",
+    "sense_example_alignment":"PASS",
+    "chunk_construction_mapping":"PASS",
+    "accepted_speech_naturalness":"PASS",
+    "grammar_scored_item_alignment":"PASS",
+    "cefr_prerequisites":"PASS",
+    "review_due_vs_evidence":"PASS",
+    "curriculum_outcome_mapping":"PASS",
+    "reading_evidence":"PASS",
+    "pronunciation_evidence":"PASS"
+  },
+  "evidence":{
+    "naturalness":"Model utterances are standard beginner English: Hello, My name is Arman, Nice to meet you, How are you, Goodbye.",
+    "persian":"Translations use natural conversational Persian and avoid malformed ezafe forms.",
+    "pos":"hello/goodbye are interjections and name is a noun; multiword functions are represented as chunks rather than assigning false POS to component tokens.",
+    "chunks":"Nice to meet you and My name is ... are taught as complete functional units.",
+    "accepted_answers":"Alternatives are natural beginner responses; no merely understandable but awkward forms are accepted.",
+    "prerequisites":"Every scored target is exposed or explicitly taught earlier in the same lesson/chapter.",
+    "reading":"Three short target-language reading inputs require extraction or interpretation of name/greeting meaning.",
+    "pronunciation":"Word stress, contraction shadowing and question intonation are explicitly noticed or practiced."
+  },
+  "review_note":"Series 001 has no obligations due from an earlier series. New obligations begin at Series 002."
+}
