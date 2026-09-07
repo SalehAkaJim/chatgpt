@@ -8,8 +8,10 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 GLOB="nova/courses/*/staging/batch_*/chapter_*/chapter.sql"
 ACQ=("natural_story_dialogue","surface_variation_transfer","learner_facing_pronunciation","persian_speaker_contrast","novel_context_mastery")
+DEEP=("story_continuity","token_coverage","learner_speech_targets","distractor_quality","lesson_metadata")
 FORBIDDEN_SEM=("learning_units","learning_unit_words","lesson_learning_units","turn_learning_units","review_obligations","curriculum_outcomes")
 REQUIRED_SEM=("sem_learning_units","sem_learning_unit_words","sem_lesson_learning_units","sem_turn_learning_units","sem_review_obligations","sem_curriculum_outcomes")
+EXPECTED_ROLES={1:"exposure",2:"explicit_form",3:"retrieval",4:"mastery"}
 
 def load(p): return json.loads(p.read_text(encoding="utf-8"))
 
@@ -19,11 +21,9 @@ def split_top(value):
         ch=value[i]
         if quote:
             current.append(ch)
-            if ch=="\\" and i+1<len(value):
-                current.append(value[i+1]); i+=2; continue
+            if ch=="\\" and i+1<len(value): current.append(value[i+1]); i+=2; continue
             if ch==quote:
-                if i+1<len(value) and value[i+1]==quote:
-                    current.append(value[i+1]); i+=2; continue
+                if i+1<len(value) and value[i+1]==quote: current.append(value[i+1]); i+=2; continue
                 quote=None
         else:
             if ch in ("'",'"'): quote=ch; current.append(ch)
@@ -51,16 +51,15 @@ def split_tuples(payload):
                 depth+=1
             elif ch==")":
                 depth-=1
-                if depth==0 and start is not None:
-                    out.append(payload[start:i]); start=None
+                if depth==0 and start is not None: out.append(payload[start:i]); start=None
         i+=1
     return out
 
 def unquote(v):
+    if v is None: return None
     v=v.strip()
     if v.upper()=="NULL": return None
-    if len(v)>=2 and v[0]=="'" and v[-1]=="'":
-        return v[1:-1].replace("''","'").replace("\\\\","\\")
+    if len(v)>=2 and v[0]=="'" and v[-1]=="'": return v[1:-1].replace("''","'").replace("\\\\","\\")
     return v
 
 def parse_insert_statements(sql,table):
@@ -75,40 +74,71 @@ def parse_insert_statements(sql,table):
     return rows
 
 def parse_json_expr(v):
+    if not v: return {}
     m=re.search(r"CAST\s*\(\s*('(?:''|\\.|[^'])*')\s+AS\s+JSON\s*\)",v,re.I|re.S)
     if not m: return {}
     return json.loads(unquote(m.group(1)))
 
+def parse_json_array(v):
+    if not v: return []
+    v=v.strip()
+    cast=re.fullmatch(r"CAST\s*\(\s*('(?:''|\\.|[^'])*')\s+AS\s+JSON\s*\)",v,re.I|re.S)
+    if cast:
+        x=json.loads(unquote(cast.group(1))); return x if isinstance(x,list) else []
+    arr=re.fullmatch(r"JSON_ARRAY\s*\((.*)\)",v,re.I|re.S)
+    if arr:
+        body=arr.group(1).strip()
+        if not body: return []
+        out=[]
+        for item in split_top(body):
+            q=unquote(item)
+            if q is not None: out.append(q)
+        return out
+    return []
+
 def validate(path):
-    folder=path.parent
-    qa=load(folder/"qa.json")
+    folder=path.parent; qa=load(folder/"qa.json")
     if qa.get("contract_version")!="3.0.0": return []
     course=qa["course"]; series=int(qa["series"]); level=qa["level"]
-    sql=path.read_text(encoding="utf-8")
-    errors=[]
-    rel=path.relative_to(ROOT)
+    strict=series>=3 or qa.get("quality_revision")=="3.2.1"
+    sql=path.read_text(encoding="utf-8"); errors=[]; rel=path.relative_to(ROOT)
     if sql.count("DECLARE EXIT HANDLER")!=1: errors.append("expected exactly one SQLEXCEPTION handler")
     if sql.count("START TRANSACTION")!=1: errors.append("expected exactly one START TRANSACTION")
     if not re.search(rf"(?im)^--\s*SERIES\s+{series}\s*$",sql[:1200]): errors.append("missing canonical -- SERIES locator")
     if re.search(r"placeholder|todo|anders\d",sql,re.I): errors.append("placeholder-like content found")
     for table in ("courses","levels","modules"):
-        if re.search(rf"\b(?:INSERT\s+INTO|UPDATE)\s+{table}\b",sql,re.I):
-            errors.append(f"structural metadata must not be written by Chapter SQL: {table}")
+        if re.search(rf"\b(?:INSERT\s+INTO|UPDATE)\s+{table}\b",sql,re.I): errors.append(f"structural metadata must not be written by Chapter SQL: {table}")
     for legacy in FORBIDDEN_SEM:
-        if re.search(rf"\b(?:INSERT\s+INTO|UPDATE|DELETE\s+FROM|FROM|JOIN)\s+{legacy}\b",sql,re.I):
-            errors.append(f"legacy semantic identifier forbidden: {legacy}")
+        if re.search(rf"\b(?:INSERT\s+INTO|UPDATE|DELETE\s+FROM|FROM|JOIN)\s+{legacy}\b",sql,re.I): errors.append(f"legacy semantic identifier forbidden: {legacy}")
     for table in REQUIRED_SEM:
         if not re.search(rf"\b{table}\b",sql): errors.append(f"missing semantic table usage: {table}")
 
-    turns=parse_insert_statements(sql,"turns")
-    by_lesson=defaultdict(list)
+    lessons=parse_insert_statements(sql,"lessons")
+    if strict:
+        if len(lessons)!=4: errors.append(f"strict quality requires 4 lesson rows, found {len(lessons)}")
+        for row in lessons:
+            try: li=int(row.get("sort_order","0"))
+            except ValueError: li=0
+            for field in ("title","title_translation","description","description_translation"):
+                if not (unquote(row.get(field)) or "").strip(): errors.append(f"lesson {li}: {field} must be localized and non-empty")
+            meta=row.get("metadata","")
+            expected=EXPECTED_ROLES.get(li)
+            if expected and expected not in meta: errors.append(f"lesson {li}: pedagogicalRole must be {expected}")
+
+    turns=parse_insert_statements(sql,"turns"); by_lesson=defaultdict(list)
     for row in turns:
         lm=re.fullmatch(r"v_l_(\d+)",row["lesson_id"].strip(),re.I)
         if not lm: errors.append("turn lesson variable must be v_l_N"); continue
         li=int(lm.group(1)); order=int(row["sort_order"]); by_lesson[li].append(order)
-        audio=unquote(row.get("audio_url",""))
-        expected=f"nova/audio/turns/{course}/{level}/s{series:04d}/l{li:02d}/t{order:02d}.mp3"
+        audio=unquote(row.get("audio_url","")); expected=f"nova/audio/turns/{course}/{level}/s{series:04d}/l{li:02d}/t{order:02d}.mp3"
         if audio!=expected: errors.append(f"lesson {li} turn {order}: audio_url must equal {expected}")
+        if strict:
+            tokens=parse_json_array(row.get("tokens"))
+            if not tokens: errors.append(f"lesson {li} turn {order}: tokens must be non-empty for clickable-word support")
+            if unquote(row.get("role"))=="learner":
+                target=(unquote(row.get("speech_target")) or "").strip(); alts=parse_json_array(row.get("speech_alternatives"))
+                if not target: errors.append(f"lesson {li} turn {order}: learner speech_target required")
+                if len(alts)<2: errors.append(f"lesson {li} turn {order}: learner speech_alternatives needs >=2 accepted forms")
     if set(by_lesson)!={1,2,3,4}: errors.append(f"expected four lessons of turns, found {sorted(by_lesson)}")
     for li,orders in by_lesson.items():
         if not 8<=len(orders)<=14: errors.append(f"lesson {li}: turn count {len(orders)} outside 8-14")
@@ -116,34 +146,28 @@ def validate(path):
 
     words=parse_insert_statements(sql,"words")
     for row in words:
-        display=unquote(row["display_form"])
-        audio=unquote(row.get("audio_url",""))
-        expected=f"nova/audio/words/{course}/{hashlib.sha256(display.encode('utf-8')).hexdigest()}.mp3"
+        display=unquote(row["display_form"]); audio=unquote(row.get("audio_url","")); expected=f"nova/audio/words/{course}/{hashlib.sha256(display.encode('utf-8')).hexdigest()}.mp3"
         if audio!=expected: errors.append(f"word {display!r}: deterministic audio_url mismatch")
+        if strict:
+            ds=parse_json_array(row.get("distractors")); translation=unquote(row.get("translation"))
+            if len(ds)<3 or len(set(map(str,ds)))<3: errors.append(f"word {display!r}: needs >=3 distinct distractors")
+            if translation in ds: errors.append(f"word {display!r}: distractors must not include the correct translation")
+            if not (unquote(row.get("example_text")) or "").strip() or not (unquote(row.get("example_translation")) or "").strip(): errors.append(f"word {display!r}: example and translation required")
 
-    activities=parse_insert_statements(sql,"activities")
-    acts=defaultdict(list)
+    activities=parse_insert_statements(sql,"activities"); acts=defaultdict(list)
     for row in activities:
         lm=re.fullmatch(r"v_l_(\d+)",row["lesson_id"].strip(),re.I)
         if not lm: errors.append("activity lesson variable must be v_l_N"); continue
-        li=int(lm.group(1)); order=int(row["sort_order"])
-        cfg=parse_json_expr(row.get("config",""))
-        prompt=unquote(row.get("prompt","")) or ""
-        acts[li].append((order,cfg,prompt))
-        if cfg.get("mode")=="sentence_blank" and prompt.count("___")!=1:
-            errors.append(f"lesson {li}: sentence_blank must contain exactly one ___")
+        li=int(lm.group(1)); order=int(row["sort_order"]); cfg=parse_json_expr(row.get("config","")); prompt=unquote(row.get("prompt","")) or ""; acts[li].append((order,cfg,prompt))
+        if strict and not (unquote(row.get("instruction")) or "").strip(): errors.append(f"lesson {li} activity {order}: learner-facing instruction required")
         if cfg.get("mode")=="sentence_blank":
+            if prompt.count("___")!=1: errors.append(f"lesson {li}: sentence_blank must contain exactly one ___")
             opts=cfg.get("options",[]); idx=cfg.get("answer_index")
-            if len(opts)!=3 or len(set(opts))!=3 or idx not in (0,1,2):
-                errors.append(f"lesson {li}: invalid sentence_blank")
-        if cfg.get("mode")=="recall_hidden":
-            if not cfg.get("cue_fa") or len(cfg.get("accepted",[]))<2:
-                errors.append(f"lesson {li}: recall_hidden needs cue_fa and >=2 accepted")
+            if len(opts)!=3 or len(set(opts))!=3 or idx not in (0,1,2): errors.append(f"lesson {li}: invalid sentence_blank")
+        if cfg.get("mode")=="recall_hidden" and (not cfg.get("cue_fa") or len(cfg.get("accepted",[]))<2): errors.append(f"lesson {li}: recall_hidden needs cue_fa and >=2 accepted")
         if cfg.get("mode")=="scenario_transfer":
             accepted=cfg.get("accepted_intents",cfg.get("accepted",[]))
-            if not cfg.get("scenario_fa") or len(accepted)<2:
-                errors.append(f"lesson {li}: scenario_transfer incomplete")
-
+            if not cfg.get("scenario_fa") or len(accepted)<2: errors.append(f"lesson {li}: scenario_transfer incomplete")
     if set(acts)!={1,2,3,4}: errors.append(f"expected four lessons of activities, found {sorted(acts)}")
     for li,rows in acts.items():
         orders=sorted(x[0] for x in rows)
@@ -151,29 +175,31 @@ def validate(path):
         if orders!=list(range(1,len(rows)+1)): errors.append(f"lesson {li}: activity order not contiguous")
         modes={x[1].get("mode") for x in rows}
         if "audio_first" not in modes: errors.append(f"lesson {li}: missing audio_first")
-        if not modes.intersection({"word_teach","chunk_teach","micro_grammar","reading_input","sound_notice"}):
-            errors.append(f"lesson {li}: missing guided learning input")
-        if not modes.intersection({"recall_hidden","scenario_transfer","short_response","functional_write","reading_inference"}):
-            errors.append(f"lesson {li}: missing retrieval/transfer")
-        if li==4 and "scenario_transfer" not in modes:
-            errors.append("lesson 4 mastery requires novel-context scenario_transfer")
+        if not modes.intersection({"word_teach","chunk_teach","micro_grammar","reading_input","sound_notice"}): errors.append(f"lesson {li}: missing guided learning input")
+        if not modes.intersection({"recall_hidden","scenario_transfer","short_response","functional_write","reading_inference"}): errors.append(f"lesson {li}: missing retrieval/transfer")
+        if li==4 and "scenario_transfer" not in modes: errors.append("lesson 4 mastery requires novel-context scenario_transfer")
 
     for name in ("linguistic_audit_v3.json","learning_units_v3.json","review_evidence_v3.json","snapshot.json"):
         if not (folder/name).exists(): errors.append(f"missing {name}")
     ling=load(folder/"linguistic_audit_v3.json")
     if ling.get("status")!="PASS" or ling.get("blocking_issues")!=[]: errors.append("linguistic audit is not clean PASS")
-    aq=ling.get("acquisition_quality",{})
+    aq=ling.get("acquisition_quality",{}); evidence=[]
     for gate in ACQ:
         item=aq.get(gate,{})
-        if item.get("status")!="PASS" or not item.get("evidence"):
-            errors.append(f"acquisition-quality gate {gate} must PASS with evidence")
+        if item.get("status")!="PASS" or not item.get("evidence"): errors.append(f"acquisition-quality gate {gate} must PASS with evidence")
+        else: evidence.append(str(item.get("evidence")))
+    if strict:
+        if len(set(evidence))!=len(evidence): errors.append("acquisition-quality evidence must be gate-specific, not duplicated boilerplate")
+        deep=ling.get("deep_checks",{})
+        for gate in DEEP:
+            item=deep.get(gate,{})
+            if item.get("status")!="PASS" or len(str(item.get("evidence") or ""))<30: errors.append(f"deep quality check {gate} must PASS with concrete evidence")
     review=load(folder/"review_evidence_v3.json")
     if review.get("unfulfilled_due",[])!=[]: errors.append("review debt remains")
     units=load(folder/"learning_units_v3.json")
     if not units.get("learning_units") or not units.get("curriculum_outcomes"): errors.append("learning unit/outcome mapping empty")
     counts=qa.get("counts",{})
-    if counts.get("lessons")!=4 or counts.get("turns")!=len(turns) or counts.get("activities")!=len(activities) or counts.get("words")!=len(words):
-        errors.append("qa counts do not match SQL")
+    if counts.get("lessons")!=4 or counts.get("turns")!=len(turns) or counts.get("activities")!=len(activities) or counts.get("words")!=len(words): errors.append("qa counts do not match SQL")
     gates=qa.get("local_gates",{})
     for gate in ("structural","linguistic","curriculum","review_ledger","sql_source","tts_source_parse","acquisition_quality","deterministic_audio_locator","semantic_prefix","metadata_localization"):
         if gates.get(gate) is not True: errors.append(f"qa.local_gates.{gate} must be true")
@@ -194,5 +220,4 @@ def main():
     print(f"PASS Nova native v3.2 content gate ({count} chapter(s))")
     return 0
 
-if __name__=="__main__":
-    raise SystemExit(main())
+if __name__=="__main__": raise SystemExit(main())
