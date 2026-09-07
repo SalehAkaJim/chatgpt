@@ -5,15 +5,35 @@ on:
     branches: [main]
     paths:
       - "nova/contracts/**"
+      - "nova/database/**"
       - "nova/courses/**/chapter.sql"
       - "nova/courses/**/qa.json"
+      - "nova/courses/**/v3_repair.sql"
+      - "nova/courses/**/linguistic_audit_v3.json"
+      - "nova/courses/**/learning_units_v3.json"
+      - "nova/courses/**/review_evidence_v3.json"
+      - "nova/courses/**/curriculum.json"
+      - "nova/courses/**/pipeline_config.json"
+      - "nova/courses/**/run_control.json"
+      - "nova/courses/**/production_state.json"
+      - "nova/courses/**/state/pedagogical_audit_v3.json"
       - "nova/validation/**"
       - ".github/workflows/nova-content-quality.yml"
   pull_request:
     paths:
       - "nova/contracts/**"
+      - "nova/database/**"
       - "nova/courses/**/chapter.sql"
       - "nova/courses/**/qa.json"
+      - "nova/courses/**/v3_repair.sql"
+      - "nova/courses/**/linguistic_audit_v3.json"
+      - "nova/courses/**/learning_units_v3.json"
+      - "nova/courses/**/review_evidence_v3.json"
+      - "nova/courses/**/curriculum.json"
+      - "nova/courses/**/pipeline_config.json"
+      - "nova/courses/**/run_control.json"
+      - "nova/courses/**/production_state.json"
+      - "nova/courses/**/state/pedagogical_audit_v3.json"
       - "nova/validation/**"
 
 jobs:
@@ -34,8 +54,10 @@ jobs:
           --health-retries=12
     steps:
       - uses: actions/checkout@v4
-      - name: Static educational quality gate
+      - name: Legacy structural quality gate
         run: python3 nova/validation/validate_content.py
+      - name: V3 curriculum and audit-lock gate
+        run: python3 nova/validation/validate_migration_v3.py
       - name: Validate German audio source compatibility
         env:
           NOVA_COURSE: de-fa
@@ -50,11 +72,15 @@ jobs:
           python -m unittest discover -s nova/tts/tests -v
           python nova/tts/nova_tts.py validate-sources
           python nova/tts/nova_word_tts.py validate-sources
-      - name: Compile schema on MySQL 8
+      - name: Compile v9 core schema on MySQL 8
         env:
           MYSQL_PWD: nova_qa_root
         run: mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/schema_v9.sql
-      - name: Execute German chapters sequentially
+      - name: Apply v10 semantic learning layer on MySQL 8
+        env:
+          MYSQL_PWD: nova_qa_root
+        run: mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < nova/database/semantic_layer_v10.sql
+      - name: Execute German chapters and v3 repairs sequentially
         env:
           MYSQL_PWD: nova_qa_root
         shell: bash
@@ -62,8 +88,12 @@ jobs:
           set -euo pipefail
           while IFS= read -r file; do
             mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
+            repair="$(dirname "$file")/v3_repair.sql"
+            if [[ -f "$repair" ]]; then
+              mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
+            fi
           done < <(find nova/courses/de-fa/staging -name chapter.sql -type f | sort)
-      - name: Execute English chapters sequentially
+      - name: Execute English chapters and v3 repairs sequentially
         env:
           MYSQL_PWD: nova_qa_root
         shell: bash
@@ -71,4 +101,8 @@ jobs:
           set -euo pipefail
           while IFS= read -r file; do
             mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$file"
+            repair="$(dirname "$file")/v3_repair.sql"
+            if [[ -f "$repair" ]]; then
+              mysql --protocol=TCP -h 127.0.0.1 -uroot nova_qa < "$repair"
+            fi
           done < <(find nova/courses/en-fa/staging -name chapter.sql -type f | sort)
