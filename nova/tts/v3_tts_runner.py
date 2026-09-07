@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Native-v3 TTS adapter with deterministic database-first audio locators.
+"""Native-v3.2 TTS adapter for explicit deterministic audio locators.
 
-Canonical Chapter SQL is the source of text. Database triggers assign stable
-repository-relative audio_url values at INSERT time. TTS materializes MP3 files
-at exactly those paths. No post-import audio UPDATE SQL is part of native-v3.
+Canonical Chapter SQL is the text source and already stores final repository-
+relative audio_url values. This adapter materializes MP3 files at the exact same
+stable paths. It never emits post-import audio UPDATE SQL and does not couple
+content-story metadata to voice-map role/context labels.
 """
 from __future__ import annotations
 
@@ -180,6 +181,25 @@ def compat_parse_insert(statement: str, table: str) -> dict[str, str] | None:
     return dict(zip(columns, values))
 
 
+def stable_validate_source_roster(rows, mapping, repo_root=None) -> None:
+    """Content metadata may evolve; TTS only requires a mapped name + exact gender."""
+    profiles = {str(item.get("name") or ""): item for item in mapping.get("characters", [])}
+    source_names = {str(row["character_name"]) for row in rows}
+    missing = sorted(name for name in source_names if name not in profiles)
+    if missing:
+        raise nova_tts.NovaTtsError(
+            "Source characters missing from voice map: " + ", ".join(missing)
+        )
+    for row in rows:
+        profile = profiles[str(row["character_name"])]
+        expected = str(row.get("character_gender") or "").casefold()
+        actual = str(profile.get("gender") or "").casefold()
+        if expected != actual:
+            raise nova_tts.NovaTtsError(
+                f"Gender mismatch for {row['character_name']}: SQL={expected!r}, voice_map={actual!r}."
+            )
+
+
 def _stable_turn_relative(task: dict) -> Path:
     return (
         Path("nova") / "audio" / "turns" / nova_tts.COURSE / str(task["level"]).upper()
@@ -210,13 +230,14 @@ def stable_turn_build_tasks(rows, mapping, manifest):
 
 
 def _no_audio_update_sql(*_args, **_kwargs) -> None:
-    """Native-v3 stores audio_url during INSERT; standalone UPDATE SQL is obsolete."""
+    """Native-v3.2 stores audio_url in source rows; standalone UPDATE SQL is forbidden."""
     return None
 
 
 def _install_compatibility() -> None:
     nova_tts.split_sql_statements = compat_split_sql_statements
     nova_tts.parse_insert = compat_parse_insert
+    nova_tts.validate_source_roster = stable_validate_source_roster
     nova_tts.build_tasks = stable_turn_build_tasks
     nova_tts.write_update_sql = _no_audio_update_sql
 
