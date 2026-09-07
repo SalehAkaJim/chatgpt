@@ -1,5 +1,6 @@
 -- ===============================================================
 -- NOVA CONTENT SYSTEM v1 — CLEAN RESET
+-- Deployment/test target: MySQL Server 9.0.1.
 -- Drops current and known pre-reset content-engine objects.
 -- ===============================================================
 SET FOREIGN_KEY_CHECKS=0;
@@ -14,6 +15,7 @@ DROP TABLE IF EXISTS sem_review_obligations;
 DROP TABLE IF EXISTS sem_chapter_outcomes;
 DROP TABLE IF EXISTS sem_turn_learning_units;
 DROP TABLE IF EXISTS sem_lesson_learning_units;
+DROP TABLE IF EXISTS sem_learning_unit_lexical_items;
 DROP TABLE IF EXISTS sem_learning_unit_words;
 DROP TABLE IF EXISTS sem_curriculum_outcomes;
 DROP TABLE IF EXISTS sem_learning_units;
@@ -22,13 +24,17 @@ DROP TABLE IF EXISTS sem_learning_units;
 DROP TABLE IF EXISTS review_obligations;
 DROP TABLE IF EXISTS turn_learning_units;
 DROP TABLE IF EXISTS lesson_learning_units;
+DROP TABLE IF EXISTS learning_unit_lexical_items;
 DROP TABLE IF EXISTS learning_unit_words;
 DROP TABLE IF EXISTS curriculum_outcomes;
 DROP TABLE IF EXISTS learning_units;
 
 DROP TABLE IF EXISTS activities;
+DROP TABLE IF EXISTS lesson_lexical_items;
 DROP TABLE IF EXISTS lesson_words;
+DROP TABLE IF EXISTS turn_lexical_items;
 DROP TABLE IF EXISTS turns;
+DROP TABLE IF EXISTS lexical_items;
 DROP TABLE IF EXISTS words;
 DROP TABLE IF EXISTS lessons;
 DROP TABLE IF EXISTS characters;
