@@ -6,6 +6,11 @@ metadata-backed clarity proxy. Existing assignments that no longer satisfy the
 policy are cleared during bootstrap so the normal ElevenLabs selector must pick
 a new compliant voice. A changed voice_id changes the TTS fingerprint, so all
 affected turn audio is regenerated at the same deterministic paths.
+
+The active SQL is also the canonical character roster. New native-v3.2
+characters are synchronized into the voice map before source validation. This
+only creates an unassigned profile entry; strict bootstrap still has to select
+a verified target-language voice before synthesis can proceed.
 """
 from __future__ import annotations
 
@@ -159,6 +164,60 @@ def strict_validate_voice_map(mapping: dict[str, Any], require_complete: bool = 
             )
 
 
+def _default_archetype(mapping: dict[str, Any], gender: str, role: Any) -> str:
+    archetypes = mapping.get("voice_archetypes") or {}
+    role_norm = _norm(role)
+    preferred: list[str] = []
+    if gender == "female":
+        if "learner" in role_norm or "زبان‌آموز" in role_norm:
+            preferred.append("learner_female")
+        preferred.extend(["local_friend_female", "professional_female"])
+    elif gender == "male":
+        preferred.extend(["professional_male", "local_driver_male"])
+    elif gender == "nonbinary":
+        preferred.extend(["professional_nonbinary", "local_friend_nonbinary"])
+    for key in preferred:
+        if key in archetypes:
+            return key
+    raise nova_tts.NovaTtsError(
+        f"No voice archetype is configured for new {gender} character role {role!r}."
+    )
+
+
+def _sync_source_roster() -> int:
+    """Add canonical SQL characters to the map without assigning a voice."""
+    path = nova_tts.VOICE_MAP_PATH
+    mapping = nova_tts.read_json(path, {})
+    characters = mapping.get("characters")
+    if not isinstance(characters, list):
+        raise nova_tts.NovaTtsError(f"{path} has no characters list.")
+    profiles = nova_tts.load_source_character_profiles()
+    by_name = {str(item.get("name") or ""): item for item in characters}
+    added = 0
+    for name, source in sorted(profiles.items()):
+        if name in by_name:
+            continue
+        gender = str(source.get("gender") or "").casefold()
+        entry = {
+            "name": name,
+            "gender": gender,
+            "role": source.get("role"),
+            "context": source.get("context"),
+            "origin_country": source.get("origin_country"),
+            "profile_source": source.get("profile_source"),
+            "voice_archetype": _default_archetype(mapping, gender, source.get("role")),
+        }
+        characters.append(entry)
+        by_name[name] = entry
+        added += 1
+    if added:
+        mapping["voice_quality_policy"] = "nova/policies/voice_quality_v3.json"
+        mapping["updated_at"] = nova_tts.utc_now()
+        nova_tts.write_json_atomic(path, mapping)
+        print(f"Added {added} canonical source character(s) to strict voice roster.")
+    return added
+
+
 def _sanitize_existing_assignments() -> int:
     path = nova_tts.VOICE_MAP_PATH
     mapping = nova_tts.read_json(path, {})
@@ -208,8 +267,10 @@ def _install_strict_policy() -> None:
 
 def main() -> int:
     _install_strict_policy()
-    if len(sys.argv) >= 3 and sys.argv[1] == "turn" and sys.argv[2] == "bootstrap-voices":
-        _sanitize_existing_assignments()
+    if len(sys.argv) >= 3 and sys.argv[1] == "turn":
+        _sync_source_roster()
+        if sys.argv[2] == "bootstrap-voices":
+            _sanitize_existing_assignments()
     return v3_tts_runner.main()
 
 
