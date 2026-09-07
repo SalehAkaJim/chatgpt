@@ -87,14 +87,14 @@
       "audio_updates": [
         "nova/audio/en-fa/update_turn_audio.sql",
         "nova/audio/en-fa/update_word_audio.sql"
-      ],
-      "state_mismatch": {
-        "production_state_published_through_series": 1,
-        "course_learning_state_published_through_series": 1,
-        "manifest_published_through_series": 3,
-        "reason": "EN-CH-0002 and EN-CH-0003 now have clean native-v3 audit/review evidence, complete Turn/eligible learning-unit audio manifests, and passed the latest real MySQL8/content-quality run; the course publication pointers have not yet been advanced."
-      }
+      ]
     }
   },
-  "rule": "Append only fully published native-v3 chapters in strict Series order; level boundaries are determined by curriculum mastery, never by a fixed number. Archive content is never active input."
+  "human_readable_index": {
+    "path": "nova/mysql/README.md",
+    "update_with_manifest": true,
+    "sql_links_must_be_clickable_relative_markdown": true,
+    "plain_backticked_sql_paths_allowed": false
+  },
+  "rule": "Append only fully published native-v3 chapters in strict Series order; keep nova/mysql/README.md synchronized in the same change set with clickable relative Markdown links for every SQL entry; level boundaries are determined by curriculum mastery, never by a fixed number. Archive content is never active input."
 }
