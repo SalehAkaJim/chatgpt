@@ -9,6 +9,8 @@ The new system does not begin with bulk generation.
 - One Chapter at a time
 - First pilot window: 3 Chapters
 - Human English audit required before publication
+- Audio generation and Audio QA required for every Pilot Chapter
+- Database execution target: MySQL Server 9.0.1
 
 ## Pilot goals
 
@@ -23,9 +25,10 @@ Measure defects in these categories:
 - ambiguous distractor/answer;
 - weak transfer;
 - bad lexical classification;
-- Word-vs-chunk tokenization error;
-- audio routing/voice issue;
-- schema/compiler/MySQL inconsistency.
+- lexical-item/span mapping error;
+- audio routing/voice/source mismatch;
+- stale, corrupt or missing audio;
+- schema/compiler/MySQL 9.0.1 inconsistency.
 
 ## Defect-to-rule loop
 
@@ -34,18 +37,21 @@ Every meaningful defect must cause one of:
 2. generator rule change, when pattern-based;
 3. validator rule change, when mechanically detectable;
 4. curriculum/prerequisite change, when sequencing is wrong;
-5. schema change, when the data model encourages the error.
+5. schema change, when the data model encourages the error;
+6. audio pipeline rule change, when routing/voice/source validation failed.
 
 Do not repeatedly repair the same defect class manually.
 
 ## Exit criteria for pilot
 
 Bulk generation remains disabled until:
-- three consecutive Chapters pass structural, linguistic, pedagogical and MySQL gates;
+- three consecutive Chapters pass structural, linguistic, pedagogical and MySQL 9.0.1 gates;
 - the human audit finds no blocking English defect in the final candidate versions;
-- zero sentence/phrase has entered the Word pipeline;
+- lexical items contain only justified vocabulary units, including valid multiword expressions where appropriate;
+- no sentence/clause is misclassified as a lexical item;
 - all corrections regenerate cleanly from canonical source;
-- audio generation can be rerun without changing content state;
-- cumulative review/transfer from earlier pilot Chapters works naturally.
+- every required Turn and lexical-item audio asset passes manifest QA;
+- audio regeneration is deterministic with respect to source/voice/path state;
+- cumulative review/transfer from earlier Pilot Chapters works naturally.
 
 After this, production cadence may be increased gradually. Quality gates remain unchanged.
