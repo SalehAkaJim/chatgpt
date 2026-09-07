@@ -1,1 +1,25 @@
-{"version":"3.0.0","course":"de-fa","active_level":"A1","completed_series":[],"learning_units":[],"review_obligations":[],"outcomes_covered":[],"pronunciation_targets_covered":[],"reading_targets_covered":[],"listening_targets_covered":[],"writing_targets_covered":[],"review_debt":0,"level_complete":false}
+{
+  "version":"3.0.0",
+  "course":"de-fa",
+  "active_level":"A1",
+  "completed_series":[1],
+  "learning_units":[
+    "de:a1:hallo:greeting","de:a1:danke:thanks","de:a1:tschuss:parting","de:a1:ich-heisse","de:a1:wie-heisst-du","de:a1:freut-mich","de:a1:guten-morgen","de:a1:grammar:ich-du-heissen","de:a1:pron:initial-h","de:a1:pron:question-intonation","de:a1:can-do:greet-introduce"
+  ],
+  "review_obligations":[
+    {"origin_series":1,"due_series":2,"units":"all_series_1_learning_units","status":"due"},
+    {"origin_series":1,"due_series":3,"units":"all_series_1_learning_units","status":"due"},
+    {"origin_series":1,"due_series":5,"units":"all_series_1_learning_units","status":"due"},
+    {"origin_series":1,"due_series":9,"units":"all_series_1_learning_units","status":"due"},
+    {"origin_series":1,"due_series":17,"units":"all_series_1_learning_units","status":"due"}
+  ],
+  "outcomes_covered":["can_do:greet_part","can_do:introduce_name","reading:short_identity","listening:first_contact"],
+  "outcomes_in_progress":["grammar:name_patterns"],
+  "pronunciation_targets_covered":["pron:initial_h","pron:question_intonation"],
+  "reading_targets_covered":["reading:short_identity"],
+  "listening_targets_covered":["listening:first_contact"],
+  "writing_targets_covered":[],
+  "review_debt":0,
+  "level_complete":false,
+  "last_publication_evidence":{"content_quality_run_id":34087163797,"turn_audio_run_id":34087137254,"word_audio_run_id":34087174542}
+}

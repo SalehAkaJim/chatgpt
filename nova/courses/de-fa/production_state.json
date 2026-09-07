@@ -1,8 +1,8 @@
 {
   "version": "3.0.0-fresh",
   "course": "de-fa",
-  "next_series": 1,
-  "last_completed_series": 0,
+  "next_series": 2,
+  "last_completed_series": 1,
   "status": "ready",
   "production_allowed": true,
   "next_series_locked": false,
@@ -10,6 +10,13 @@
   "level_completion_mode": "dynamic_outcome_mastery",
   "review_debt": 0,
   "contract_version": "3.0.0",
-  "quality": {"required_gates": ["structural", "linguistic", "curriculum", "review_ledger", "mysql8", "audio"], "legacy_content_allowed": false},
+  "quality": {
+    "required_gates": ["structural", "linguistic", "curriculum", "review_ledger", "mysql8", "audio"],
+    "legacy_content_allowed": false,
+    "last_complete_series": 1,
+    "last_content_quality_run_id": 34087163797,
+    "last_turn_audio_run_id": 34087137254,
+    "last_word_audio_run_id": 34087174542
+  },
   "archive_branch": "archive/nova-pre-v3-reset-2026-09-07"
 }
