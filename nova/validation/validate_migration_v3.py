@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """Foundation gate for the fresh native-v3 Nova dataset.
 
-A chapter may exist on main while it is still waiting for CI/audio. Repository
-presence is therefore staging evidence, not completion evidence. The production
-state advances only after all publication gates pass.
+Native-v3 deliberately separates content generation from publication:
+- generated_through_series: last contiguous, locally validated chapter package
+- published_through_series / last_completed_series: last contiguous chapter that
+  also passed asynchronous MySQL/audio publication gates
+- next_series: generated_through_series + 1
+
+A generated chapter may therefore exist on main while it is still waiting for
+CI/audio. Repository presence is staging evidence, not publication evidence.
 """
 from __future__ import annotations
 import json, re, sys
@@ -47,30 +52,46 @@ def main():
         expected=list(range(1,(max(nums) if nums else 0)+1))
         if nums!=expected: fail(e,f"{course}: Series must be contiguous from 1; found {nums}")
         last_staged=max(nums) if nums else 0
+
+        # Backwards-compatible defaults allow an untouched zero-state course to
+        # migrate cleanly, while all active dual-state courses are checked using
+        # the explicit generated/published pointers.
         last_completed=int(prod.get("last_completed_series",0))
-        next_series=int(prod.get("next_series",1))
-        if next_series!=last_completed+1:
-            fail(e,f"{course}: next_series must be last_completed_series + 1")
-        if last_completed>last_staged:
-            fail(e,f"{course}: completed state is ahead of repository")
-        if last_staged>next_series:
-            fail(e,f"{course}: more than the current uncompleted Series is staged")
-        if last_staged==next_series:
-            folder=dict(seq)[next_series]
-            q=load(folder/"qa.json") if (folder/"qa.json").exists() else {}
+        generated=int(prod.get("generated_through_series", last_staged if last_staged else last_completed))
+        published=int(prod.get("published_through_series", last_completed))
+        next_series=int(prod.get("next_series", generated+1))
+
+        if next_series!=generated+1:
+            fail(e,f"{course}: next_series must be generated_through_series + 1")
+        if last_completed!=published:
+            fail(e,f"{course}: last_completed_series must equal published_through_series")
+        if not (0 <= published <= generated <= last_staged):
+            fail(e,f"{course}: require 0 <= published <= generated <= staged; got published={published}, generated={generated}, staged={last_staged}")
+        if generated!=last_staged:
+            fail(e,f"{course}: generated_through_series must match the last contiguous staged Series")
+
+        # Every generated package must have an explicit lifecycle state. A
+        # BLOCKED package is allowed to remain staged while publication is
+        # repaired, but it must not move the published pointer.
+        for n,folder in seq:
+            qa_path=folder/"qa.json"
+            if not qa_path.exists():
+                fail(e,f"{course} Series {n:03d}: missing qa.json")
+                continue
+            q=load(qa_path)
+            if q.get("contract_version")!="3.0.0":
+                fail(e,f"{course} Series {n:03d}: legacy/non-v3 chapter on main")
             if q.get("status") not in ("READY_FOR_CI","BLOCKED","COMPLETE"):
-                fail(e,f"{course} Series {next_series:03d}: staged chapter needs an explicit lifecycle status")
+                fail(e,f"{course} Series {n:03d}: staged chapter needs an explicit lifecycle status")
+            if n <= published and q.get("status") == "BLOCKED":
+                fail(e,f"{course} Series {n:03d}: published Series cannot be BLOCKED")
+
         if prod.get("archive_branch")!=ARCHIVE or prod.get("quality",{}).get("legacy_content_allowed") is not False:
             fail(e,f"{course}: legacy dataset must remain archive-only")
         if run.get("allow_new_chapters") is not True or run.get("paused") is not False:
             fail(e,f"{course}: fresh production must be enabled")
         if pipe.get("new_chapter_generation_enabled") is not True or pipe.get("fixed_course_total") is not False or pipe.get("fixed_level_ranges") is not False:
             fail(e,f"{course}: pipeline must be native-v3 dynamic production")
-        for n,folder in seq:
-            qa=folder/"qa.json"
-            if not qa.exists(): fail(e,f"{course} Series {n:03d}: missing qa.json"); continue
-            q=load(qa)
-            if q.get("contract_version")!="3.0.0": fail(e,f"{course} Series {n:03d}: legacy/non-v3 chapter on main")
     if e:
         print("\n".join("FAIL "+x for x in e),file=sys.stderr); return 1
     print("PASS Nova fresh native-v3 foundation gate")
