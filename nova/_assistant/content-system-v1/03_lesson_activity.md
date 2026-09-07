@@ -2,113 +2,81 @@
 
 ## Lesson purpose
 
-Every Lesson has one explicit instructional job. It may introduce, clarify, practice, retrieve or transfer language needed for its Chapter outcome.
+Every Lesson has one explicit instructional job. It may introduce, clarify, practice, retrieve or transfer language needed for a communicative outcome.
 
-Lesson length is determined by the job. There is no required Turn or Activity count.
+Lesson length is determined by that job. There is no required Turn or Activity count in normal production.
 
 ## Interaction model
 
-The learner should usually interact with one clear interlocutor at a time.
+The learner should usually interact with one clear interlocutor at a time in early A1.
 
-- Additional characters may exist in context, but simultaneous multi-speaker exchanges are avoided in early A1.
-- The learner's role must be stable and obvious.
-- Every prompt must make clear what the learner is expected to understand or do.
+- The learner role must be stable and obvious.
+- Every task must make clear what the learner should understand or do.
+- Dialogue exists for natural communication, not to manufacture repetition.
 
-## Activity selection
+## Product Activity types
 
-Choose the smallest useful set of activities from product-supported types.
+The runtime currently supports:
+- `dialogue`
+- `speak`
+- `sentence_order`
+- `fill_blank`
+- `comprehension`
+- `listen`
+- `reading`
+- `pronunciation`
+- `writing`
+- `lexical_teach`
+- `response_choice`
 
-Possible purposes include:
-- listen for meaning;
-- notice a word/chunk/form/sound;
-- match meaning;
-- repeat with visible support;
-- answer from a cue;
-- choose a context-appropriate response;
-- reconstruct word order;
-- read for a simple purpose;
-- produce or complete written language through supported UI;
-- pronounce an intelligibility-critical item;
-- transfer previously learned language to a changed situation.
-
-An activity type is never mandatory just because it exists in the app.
+Normal Lessons use only the smallest useful set. The first Pilot Lesson deliberately includes the five core interactions requested for product testing: dialogue, speak/STT, sentence order, three-option fill blank, and dialogue comprehension.
 
 ## Exposure
 
-New English first appears in a context where meaning is recoverable.
-
-At absolute zero, audio-first tasks must include enough contextual/Persian support that they measure attention rather than blind guessing.
-
-Do not hide all support simply to make a task look difficult.
+New English first appears where meaning is recoverable. At absolute zero, listening must include enough Persian/contextual support to avoid blind guessing.
 
 ## Speaking
 
-Separate three purposes:
+Speaking may serve:
+1. modelled production with visible target;
+2. retrieval from a clear cue;
+3. transfer to a changed context.
 
-1. **modelled production** — learner can see/hear the target;
-2. **retrieval** — learner receives a clear meaning/context cue but not the exact answer;
-3. **transfer** — learner must adapt known language to a changed context.
+STT checks expected wording or valid alternatives. STT alone is not treated as an exact pronunciation score.
 
-STT can verify expected wording or broad accepted alternatives, but STT alone is not a reliable pronunciation score.
+## Listening and comprehension
 
-Accepted answers must be genuinely natural alternatives, not punctuation variants or artificial paraphrases created to inflate coverage.
+State what the learner listens for. Begin with short clear speech. Transcript/translation may be visible for teaching activities or revealed after an attempt when comprehension is being tested.
 
-## Listening
+## Sentence order
 
-Listening tasks state what the learner is listening for.
+Tokens must reconstruct one exact natural target sentence. Shuffling must not change/add/remove tokens. Do not use punctuation/tokenization tricks as difficulty.
 
-Begin with short clear speech and meaningful context. Increase length, speed, reduction and information density gradually.
+## Fill blank
 
-A transcript may be revealed after an attempt or provided as scaffold when the learning goal is not listening assessment.
+- exactly one meaningful blank;
+- exactly three options for the current product interaction;
+- one unambiguous correct answer;
+- distractors should test the intended distinction rather than randomness when learner prerequisites allow it.
 
-## Reading
+At absolute zero, clarity outranks artificial distractor difficulty.
 
-Reading must involve reading actual target-language text for a purpose.
+## Dialogue comprehension
 
-A Persian grammar explanation is not a reading activity.
+Use a real short dialogue or listening source. Ask a concrete question whose answer is available from the source. Provide two or three unambiguous options.
 
-Early reading may use names, labels, buttons, signs, messages and very short exchanges before connected text.
+## Reading / writing
 
-## Writing
+Reading uses actual target-language text for a purpose. Writing may begin with arranging/selecting/completing language before free typing is introduced.
 
-Writing skill is not globally banned at A1.
+## Grammar and constructions
 
-The product may begin with low-friction written-language tasks such as selecting, arranging or completing visible language. Free typing is introduced only when the UI and learning goal justify it.
-
-Do not confuse 'no keyboard typing' with 'no writing development'.
-
-## Grammar
-
-Grammar is taught only when it helps the learner understand or produce the current language.
-
-- prefer examples and contrasts before terminology;
-- Persian explanation should be short and concrete;
-- do not create a mandatory micro-grammar block for every Lesson;
-- a scored grammar-dependent task must have adequate prior explanation or exposure;
-- teach constructions/chunks as usable patterns when that is more helpful than abstract rules.
+Explain grammar only when it helps comprehension or production. Prefer examples and usable constructions before terminology. A scored grammar-dependent task requires prior exposure or explanation.
 
 ## Pronunciation
 
-Pronunciation follows listen → notice/contrast → produce when instruction is needed.
+Teach pronunciation through listen → notice/contrast → produce when relevant. Focus on intelligibility, including predictable Persian-speaker difficulties, not accent elimination.
 
-Focus on intelligibility and predictable Persian-speaker difficulties rather than accent elimination.
+## Transfer
 
-Do not require IPA or technical phonetic vocabulary for learner success.
-
-## Distractors
-
-Distractors must be plausible enough to test the intended distinction but clearly wrong in the exact context.
-
-Reject:
-- random unrelated options;
-- nonsense;
-- duplicate meanings;
-- multiple defensible correct answers;
-- systematic answer-position patterns;
-- placeholders or generated numbering artifacts.
-
-## Transfer requirement
-
-Before a Chapter can claim mastery, at least one task must require use of the target outcome in a context that is meaningfully different from the original model.
-
-Changing only a person's name or punctuation is not transfer.
+Across the Lesson sequence, important outcomes must eventually be used beyond the original memorized model. This can occur in the same Lesson or a later Lesson depending on instructional load. Changing only a name or punctuation is not meaningful transfer.
