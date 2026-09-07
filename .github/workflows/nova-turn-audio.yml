@@ -7,6 +7,7 @@ on:
     paths:
       - "nova/courses/de-fa/staging/**/chapter.sql"
       - ".github/workflows/nova-turn-audio.yml"
+      - "nova/tts/v3_tts_runner.py"
 
 permissions:
   contents: write
@@ -58,16 +59,16 @@ jobs:
               path.write_text("\n".join(lines) + "\n", encoding="utf-8")
           PY
       - name: Validate SQL sources
-        run: python nova/tts/nova_tts.py validate-sources
+        run: python nova/tts/v3_tts_runner.py turn validate-sources
       - name: Prepare voices
         id: voices
         continue-on-error: true
-        run: python nova/tts/nova_tts.py bootstrap-voices --yes
+        run: python nova/tts/v3_tts_runner.py turn bootstrap-voices --yes
       - name: Generate audio
         id: audio
         if: steps.voices.outcome == 'success'
         continue-on-error: true
-        run: python nova/tts/nova_tts.py generate --yes
+        run: python nova/tts/v3_tts_runner.py turn generate --yes
       - name: Commit resumable audio
         if: always()
         run: |
