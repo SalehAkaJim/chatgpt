@@ -3,6 +3,7 @@
 
 The validator accepts either one-row or multi-row INSERT statements. v3 keeps
 12-18 objective-driven activities per lesson rather than a fixed template.
+Series 4+ also enforces acquisition-quality evidence and novel-context mastery.
 """
 from __future__ import annotations
 import json, re, sys
@@ -13,6 +14,13 @@ ROOT = Path(__file__).resolve().parents[2]
 GLOB = "nova/courses/*/staging/batch_*/chapter_*/chapter.sql"
 CAST_JSON = re.compile(r"CAST\('((?:''|[^'])*)' AS JSON\)")
 ACTIVITY_INSERT = re.compile(r"INSERT INTO activities\s*\([^;]*?\)\s*VALUES\s*(.*?);", re.S | re.I)
+ACQUISITION_GATES = (
+    "natural_story_dialogue",
+    "surface_variation_transfer",
+    "learner_facing_pronunciation",
+    "persian_speaker_contrast",
+    "novel_context_mastery",
+)
 
 def split_top(value: str) -> list[str]:
     items, current, quoted, depth = [], [], False, 0
@@ -64,11 +72,40 @@ def cast_json(value: str):
 
 def load(path: Path): return json.loads(path.read_text(encoding="utf-8"))
 
+def evidence_present(value) -> bool:
+    if value is None: return False
+    if isinstance(value, str): return bool(value.strip())
+    if isinstance(value, (list, dict, tuple, set)): return len(value) > 0
+    return True
+
+def validate_acquisition_quality(ling: dict, series: int, errors: list[str]) -> None:
+    if series < 4:
+        return
+    aq=ling.get("acquisition_quality")
+    if not isinstance(aq, dict):
+        errors.append("Series 4+ requires linguistic_audit_v3.acquisition_quality")
+        return
+    for gate in ACQUISITION_GATES:
+        item=aq.get(gate)
+        if not isinstance(item, dict):
+            errors.append(f"Series 4+ missing acquisition-quality gate: {gate}")
+            continue
+        status=str(item.get("status","")).upper()
+        if gate=="persian_speaker_contrast" and status=="NOT_APPLICABLE":
+            if not evidence_present(item.get("reason")):
+                errors.append("persian_speaker_contrast NOT_APPLICABLE requires reason")
+            continue
+        if status!="PASS":
+            errors.append(f"acquisition-quality gate {gate} is not PASS")
+        if not evidence_present(item.get("evidence")):
+            errors.append(f"acquisition-quality gate {gate} requires concrete evidence")
+
 def validate_native(path: Path) -> list[str]:
     rel=path.relative_to(ROOT); folder=path.parent; qa_path=folder/"qa.json"
     if not qa_path.exists(): return []
     qa=load(qa_path)
     if qa.get("contract_version")!="3.0.0": return []
+    series=int(qa.get("series",0) or 0)
     sql=path.read_text(encoding="utf-8"); errors=[]
     if sql.count("DECLARE EXIT HANDLER")!=1: errors.append("expected exactly one SQLEXCEPTION handler")
     if sql.count("START TRANSACTION")!=1: errors.append("expected exactly one START TRANSACTION")
@@ -84,7 +121,6 @@ def validate_native(path: Path) -> list[str]:
                 lesson_match=re.search(r"v_l_(\d+)",values[0])
                 if not lesson_match: raise ValueError("lesson variable missing")
                 lesson=int(lesson_match.group(1)); order=int(values[2]); activity_type=unquote(values[1]) or ""; prompt=unquote(values[3]) or ""
-                # config is penultimate column in current v3 activity INSERTs.
                 config_index=-2
                 config=cast_json(values[config_index]) if "CAST(" in values[config_index] else {}
                 if config.get("mode")=="sentence_blank" and prompt.count("___")!=1:
@@ -101,6 +137,8 @@ def validate_native(path: Path) -> list[str]:
         if "audio_first" not in modes: errors.append(f"lesson {lesson}: missing audio_first exposure")
         if not modes.intersection({"word_teach","chunk_teach","micro_grammar","reading_input","sound_notice"}): errors.append(f"lesson {lesson}: missing explicit/guided learning input")
         if not modes.intersection({"recall_hidden","scenario_transfer","short_response","functional_write","reading_inference"}): errors.append(f"lesson {lesson}: missing independent retrieval/transfer")
+        if series>=4 and lesson==4 and "scenario_transfer" not in modes:
+            errors.append("Series 4+ lesson 4 mastery requires scenario_transfer in a novel context")
         for _,_,config in rows:
             mode=config.get("mode")
             if mode=="sentence_blank":
@@ -118,6 +156,7 @@ def validate_native(path: Path) -> list[str]:
     if ling_path.exists():
         ling=load(ling_path)
         if ling.get("status")!="PASS" or ling.get("blocking_issues",[])!=[]: errors.append("linguistic audit is not clean PASS")
+        validate_acquisition_quality(ling,series,errors)
     review_path=folder/"review_evidence_v3.json"
     if review_path.exists() and load(review_path).get("unfulfilled_due",[])!=[]: errors.append("review debt remains in this chapter")
     units_path=folder/"learning_units_v3.json"
@@ -129,6 +168,8 @@ def validate_native(path: Path) -> list[str]:
     if qa.get("publication_gates",{}).get("linguistic_audit") is not True: errors.append("qa must require linguistic_audit publication gate")
     if qa.get("publication_gates",{}).get("review_ledger") is not True: errors.append("qa must require review_ledger publication gate")
     if qa.get("publication_gates",{}).get("curriculum") is not True: errors.append("qa must require curriculum publication gate")
+    if series>=4 and qa.get("local_gates",{}).get("acquisition_quality") is not True:
+        errors.append("Series 4+ qa.local_gates.acquisition_quality must be true")
     return [f"{rel}: {item}" for item in errors]
 
 def main():
