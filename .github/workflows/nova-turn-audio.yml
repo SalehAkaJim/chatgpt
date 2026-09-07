@@ -71,6 +71,8 @@ jobs:
       - name: Commit resumable audio
         if: always()
         run: |
+          # TTS normalization above is validation-only; never include it in canonical content commits.
+          git checkout -- nova/courses/de-fa/staging || true
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [ -e "nova/tts/voice_map_de_fa.json" ]; then git add -A -- "nova/tts/voice_map_de_fa.json"; fi
