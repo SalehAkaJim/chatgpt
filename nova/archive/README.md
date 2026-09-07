@@ -1,3 +1,7 @@
-# Archived Nova v9
+# Nova archives
 
-تمام محتوای قبل از بازسازی در branch `archive/nova-v9-before-independent-rebuild-20260906` محفوظ است. این پوشه عمداً فقط یک اشاره‌گر دارد تا `main` شلوغ نشود.
+The complete dataset that existed before the native-v3 fresh reset on 2026-09-07 is preserved on branch:
+
+`archive/nova-pre-v3-reset-2026-09-07`
+
+Do not use that branch as the source of truth for current production.

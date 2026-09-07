@@ -1,33 +1,15 @@
 {
-  "version": "3.0.0-migration",
+  "version": "3.0.0-fresh",
   "course": "de-fa",
-  "next_series": 16,
-  "next_series_locked": true,
-  "last_completed_series": 15,
-  "last_validated_series_v2": 15,
-  "last_audio_complete_series": 15,
-  "status": "pedagogical_audit",
-  "production_allowed": false,
-  "active_batch": 1,
-  "contract_target_version": "3.0.0",
-  "audit": {
-    "required": true,
-    "series_start": 1,
-    "series_end": 15,
-    "audit_state": "nova/courses/de-fa/state/pedagogical_audit_v3.json",
-    "unlock_condition": "all_15_series_pass_v3_linguistic_curriculum_review_gates"
-  },
-  "errors": [
-    "v2 structural PASS is not sufficient for v3 publication; existing chapters require linguistic and review audit"
-  ],
-  "audio": {
-    "turns": {"expected": 675, "generated": 675, "coverage": 1, "workflow_run_id": 34052317309},
-    "words": {"eligible": 526, "generated": 526, "coverage": 1, "workflow_run_id": 34052317410}
-  },
-  "quality": {
-    "status": "REVIEW_REQUIRED",
-    "previous_semantic_gate_version": 2,
-    "required_contract_version": "3.0.0",
-    "required_gates": ["structural", "linguistic", "curriculum", "review_ledger", "mysql8", "audio"]
-  }
+  "next_series": 1,
+  "last_completed_series": 0,
+  "status": "ready",
+  "production_allowed": true,
+  "next_series_locked": false,
+  "active_level": "A1",
+  "level_completion_mode": "dynamic_outcome_mastery",
+  "review_debt": 0,
+  "contract_version": "3.0.0",
+  "quality": {"required_gates": ["structural", "linguistic", "curriculum", "review_ledger", "mysql8", "audio"], "legacy_content_allowed": false},
+  "archive_branch": "archive/nova-pre-v3-reset-2026-09-07"
 }
