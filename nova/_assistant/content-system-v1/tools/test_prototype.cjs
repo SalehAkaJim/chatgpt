@@ -22,9 +22,10 @@ async function page(number, stale=false, mutate=null, review=false) {
   virtualConsole.on('jsdomError', error => errors.push(error.message));
   const dom = new JSDOM(html, {url:`https://nova.test/nova/prototype/index.html${number ? `?course=en-fa&lesson=${lessonNumbers[number-1]}${review ? '&test=1' : ''}` : ''}`, runScripts:'outside-only', virtualConsole});
   const w = dom.window;
+  w.testAudioUrls = [];
   Object.defineProperty(w, 'crypto', {value:webcrypto}); w.TextEncoder = TextEncoder;
   class Audio extends w.EventTarget {
-    constructor(src) { super(); this.src=src; }
+    constructor(src) { super(); this.src=src; w.testAudioUrls.push(src); }
     async play() { queueMicrotask(() => { if(this.onended)this.onended(); }); }
     pause() {}
   }
@@ -49,8 +50,8 @@ async function page(number, stale=false, mutate=null, review=false) {
       const lesson=lessons[catalog.indexOf(entry)];
       const source=JSON.stringify(lesson);
       data=relative===entry.lessonSource?lesson:{lessonKey:lesson.lessonKey,status:'PASS',sourceHash:stale?'bad':createHash('sha256').update(source).digest('hex'),items:[
-        ...lesson.turns.filter(x=>x.audioRequired).map(x=>({sourceKey:x.turnKey,audioClass:'turn',path:`nova/audio/turns/en-fa/${lesson.lessonKey}/${x.turnKey}.mp3`})),
-        ...lesson.lexicalItems.filter(x=>x.audioEligible).map(x=>({sourceKey:x.lexicalKey,audioClass:'lexical_item',path:`nova/audio/lexical/en-fa/${x.lexicalKey}.mp3`}))]};
+        ...lesson.turns.filter(x=>x.audioRequired).map(x=>({sourceKey:x.turnKey,audioClass:'turn',fileSha256:'a'.repeat(64),path:`nova/audio/turns/en-fa/${lesson.lessonKey}/${x.turnKey}.mp3`})),
+        ...lesson.lexicalItems.filter(x=>x.audioEligible).map(x=>({sourceKey:x.lexicalKey,audioClass:'lexical_item',fileSha256:'a'.repeat(64),path:`nova/audio/lexical/en-fa/${x.lexicalKey}.mp3`}))]};
     }
     return {ok:true,json:async()=>structuredClone(data),text:async()=>JSON.stringify(data)};
   };
@@ -78,6 +79,8 @@ async function complete(number, mutate=null, review=false) {
       const prompt = lesson.turns.find(t=>t.turnKey===exchange.promptTurnKey);
       assert.equal(shown,course.characters.find(c=>c.characterKey===prompt.characterKey).name,'Canonical character identity must survive navigation');
       assert.equal(d.querySelector('.response').dataset.characterKey,lesson.curriculum.story.learnerRoleKey,'Played role must belong to this Lesson');
+      d.querySelector('.speaker .play')?.click();
+      d.querySelector('.bubble.you .play')?.click();
       d.querySelector(review ? '.test-pass' : '.mic').click();continue;
     }
     if(activity.type==='lexical_teach') {d.querySelector('#screens .play')?.click();d.getElementById('nextBtn').click();continue;}
@@ -90,6 +93,7 @@ async function complete(number, mutate=null, review=false) {
       if(!didWrongOrder) {assert.ok(d.getElementById('feedbackPanel').classList.contains('bad'));d.getElementById('feedbackContinue').click();d.querySelector('.reset').click();didWrongOrder=true;}
       continue;
     }
+    if(activity.type==='comprehension') d.querySelector('#screens .play')?.click();
     const options=[...d.querySelectorAll('.options .option')];
     const index=didWrongChoice?activity.config.answerIndex:(activity.config.answerIndex+1)%options.length;
     options[index].click();d.getElementById('nextBtn').click();
@@ -102,6 +106,8 @@ async function complete(number, mutate=null, review=false) {
   assert.ok(d.querySelector('.lesson-link.completed .lesson-state').textContent.includes(review ? 'مرور شد' : 'تمرین شد'));
   assert.ok(d.getElementById('screens').textContent.includes(lesson.outcomeFa));
   assert.deepEqual(errors,[]);
+  assert.ok(w.testAudioUrls.length>0);
+  assert.ok(w.testAudioUrls.every(url=>new URL(url).searchParams.get('sha256')==='a'.repeat(64)),'Audio URLs must change with the verified file hash after a role/voice edit');
   // Changing the selector reloads another canonical Lesson without retained answers.
   const other=number===sources.length?0:sources.length-1;
   const select=d.getElementById('lessonSelect');select.value=String(other);select.dispatchEvent(new w.Event('change'));await settle();

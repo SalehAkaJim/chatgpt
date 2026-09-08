@@ -23,6 +23,11 @@ function button(text, action, className = 'option') {
   return node;
 }
 const novaUrl = path => new URL(document.documentElement.dataset.novaRoot + path.replace(/^nova\//, ''), location.href).href;
+const audioUrl = item => {
+  const url = new URL(novaUrl(item.path));
+  if (item.fileSha256) url.searchParams.set('sha256', item.fileSha256);
+  return url.href;
+};
 const speechNorm = text => String(text || '').toLowerCase().replaceAll('’', "'").replace(/[^a-z0-9']/g, ' ').replace(/\s+/g, ' ').trim();
 function stopMedia() {
   mediaGeneration++;
@@ -35,7 +40,7 @@ async function playAudio(sourceKey, kind = 'turn') {
   const item = audioItems.get(kind + ':' + sourceKey);
   if (!item) { audioError(); return; }
   const current = generation;
-  const audio = new Audio(novaUrl(item.path)); playback = audio;
+  const audio = new Audio(audioUrl(item)); playback = audio;
   audio.onerror = () => { if (current === generation && playback === audio) audioError(); };
   try { await audio.play(); } catch { if (current === generation && playback === audio) audioError(); }
 }
@@ -45,7 +50,7 @@ async function playSequence(keys) {
     if (current !== generation || mediaToken !== mediaGeneration) return;
     const item = audioItems.get('turn:' + key);
     if (!item) { audioError(); return; }
-    const audio = new Audio(novaUrl(item.path)); playback = audio;
+    const audio = new Audio(audioUrl(item)); playback = audio;
     const ended = new Promise(resolve => {
       audio.onended = () => resolve(true);
       audio.onerror = () => resolve(false);
