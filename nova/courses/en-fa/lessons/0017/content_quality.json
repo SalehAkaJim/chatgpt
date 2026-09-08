@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "lessonKey": "EN-A1-L-0017",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 100,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [],
+  "manualReview": {
+    "version": 1,
+    "lessonKey": "EN-A1-L-0017",
+    "sourceHash": "4bffdf375666bb5b888f2888027533c03ba512e0301ae4bd0330ed1de8e530e6",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-08",
+    "scope": "Model/editor text and pedagogy pass for the owner-authorized Lessons 0014–0020 extension; not an independent human review.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "'What day?', 'On Monday.', and 'Monday or Tuesday?' are concise and natural in a known event-planning context."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Checked every Persian title, instruction, turn translation, prompt and option explanation against the intended English meaning; wording stays simple and avoids forbidden Arabic orthographic forms."
+      },
+      "pedagogicalClarity": {
+        "score": 4,
+        "evidence": "Day vocabulary follows the prior time Lesson and keeps the planning task limited to two weekdays."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Choices separate day answers from a known clock-time answer, forcing the learner to distinguish day from time."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "Liam and Leo continue the library program story by scheduling the next session rather than repeating the refreshment episode."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "Monday and Tuesday are introduced with the already familiar or pattern and a single on + day frame."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "Guided practice uses Monday; hidden retrieval changes to Tuesday."
+      },
+      "transferQuality": {
+        "score": 4,
+        "evidence": "The prior time-question pattern is extended from time of day to day of week while preserving a clear scheduling context."
+      },
+      "overallCoherence": {
+        "score": 4,
+        "evidence": "The Lesson has one job: understand and state the day of a simple event."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "Static content-flow review only: prompts, explicit help and per-option feedback reduce dead ends, but no real learner, microphone, timing or perception test has been performed."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "Real learner outcomes and delayed retention have not been measured.",
+      "Generated audio has not received a perceptual or prosody review.",
+      "Exact-match retrieval recognizes bounded patterns; valid alternative English can fall outside its answer list."
+    ],
+    "resolvedFindings": [
+      "Day vocabulary follows the prior time Lesson and keeps the planning task limited to two weekdays.",
+      "The prior time-question pattern is extended from time of day to day of week while preserving a clear scheduling context.",
+      "The Lesson has one job: understand and state the day of a simple event."
+    ],
+    "status": "PASS",
+    "average": 4.0,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 4,
+    "targetConstructions": 2,
+    "activities": 5,
+    "learnerTurns": 3,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "4bffdf375666bb5b888f2888027533c03ba512e0301ae4bd0330ed1de8e530e6"
+}
