@@ -58,12 +58,28 @@ jobs:
             --report-output /tmp/a1-lesson-reference-report.json
       - name: Resolve external gaps with Nova curated supplement
         run: |
+          set +e
           python nova/_assistant/content-system-v1/tools/curated_supplement.py \
             --pool /tmp/reference.a1.production.json \
             --lessons-root nova/courses/en-fa/lessons \
             --status nova/_assistant/content-system-v1/10_status.json \
             --output /tmp/reference.a1.local-supplement.json \
             --coverage-output /tmp/a1-resolved-coverage.json
+          code=$?
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          s=json.loads(Path('/tmp/reference.a1.local-supplement.json').read_text(encoding='utf-8'))
+          c=json.loads(Path('/tmp/a1-resolved-coverage.json').read_text(encoding='utf-8'))
+          print('NOT_ELIGIBLE_SUPPLEMENT_ITEMS')
+          for item in s['items']:
+              if not item['eligibleForReference']:
+                  print(json.dumps(item, ensure_ascii=False))
+          print('UNRESOLVED_CANONICAL_ITEMS')
+          for item in c['unresolved']:
+              print(json.dumps(item, ensure_ascii=False))
+          PY
+          exit $code
       - name: Prepare versioned production files
         run: |
           mkdir -p nova/reference/snapshots/en-fa/a1 nova/reference/reports/en-fa
