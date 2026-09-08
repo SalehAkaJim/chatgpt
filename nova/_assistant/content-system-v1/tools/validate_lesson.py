@@ -65,6 +65,8 @@ def main() -> int:
             errors.append(f'{key}: acceptedSpeechEn contains formatting-only duplicates')
 
     seen_activities: set[str] = set()
+    guided_dialogue_found = False
+
     for activity in lesson.get('activities', []):
         key = activity.get('activityKey')
         if key in seen_activities:
@@ -79,17 +81,57 @@ def main() -> int:
                 errors.append(f'{label}: unknown turnKey {k}')
 
         if typ == 'dialogue':
-            keys = cfg.get('turnKeys')
-            if not isinstance(keys, list) or not keys:
-                errors.append(f'{label}: dialogue requires non-empty turnKeys')
+            if cfg.get('mode') != 'guided_exchange':
+                errors.append(f'{label}: dialogue must use mode=guided_exchange')
+            exchanges = cfg.get('exchanges')
+            if not isinstance(exchanges, list) or not exchanges:
+                errors.append(f'{label}: guided dialogue requires non-empty exchanges')
             else:
-                for k in keys: require_turn(k)
+                guided_dialogue_found = True
+                exchange_keys = []
+                response_keys = []
+                for ex in exchanges:
+                    ex_key = ex.get('exchangeKey')
+                    prompt_key = ex.get('promptTurnKey')
+                    response_key = ex.get('responseTurnKey')
+                    exchange_keys.append(ex_key)
+                    response_keys.append(response_key)
+                    if not ex_key:
+                        errors.append(f'{label}: every exchange requires exchangeKey')
+                    if not prompt_key or not response_key:
+                        errors.append(f'{label}/{ex_key or "?"}: promptTurnKey and responseTurnKey are required')
+                        continue
+                    require_turn(prompt_key)
+                    require_turn(response_key)
+                    prompt = turn_by_key.get(prompt_key)
+                    response = turn_by_key.get(response_key)
+                    if prompt and prompt.get('role') != 'character':
+                        errors.append(f'{label}/{ex_key}: prompt turn must be a character turn')
+                    if response and response.get('role') != 'learner':
+                        errors.append(f'{label}/{ex_key}: response turn must be a learner turn')
+                    if prompt and prompt.get('audioRequired') is not True:
+                        errors.append(f'{label}/{ex_key}: prompt turn audio is required')
+                    if response:
+                        if not response.get('speechTargetEn'):
+                            errors.append(f'{label}/{ex_key}: learner response requires speechTargetEn')
+                        accepted = response.get('acceptedSpeechEn')
+                        if not isinstance(accepted, list) or not accepted:
+                            errors.append(f'{label}/{ex_key}: learner response requires acceptedSpeechEn')
+                        if ex.get('allowResponseModelAudio') is True and response.get('audioRequired') is not True:
+                            errors.append(f'{label}/{ex_key}: response model audio requested but response audioRequired is false')
+                    if ex.get('responseEvaluation') not in {'stt','practice_only'}:
+                        errors.append(f'{label}/{ex_key}: responseEvaluation must be stt or practice_only')
+                if len(exchange_keys) != len(set(exchange_keys)):
+                    errors.append(f'{label}: duplicate exchangeKey')
+                if len(response_keys) != len(set(response_keys)):
+                    errors.append(f'{label}: learner response turn reused across exchanges')
         elif typ == 'speak':
             text = cfg.get('textEn')
             accepted = cfg.get('acceptedAnswersEn')
             if not text or not isinstance(accepted, list) or not accepted:
                 errors.append(f'{label}: speak requires textEn and acceptedAnswersEn')
-            if cfg.get('sourceTurnKey'): require_turn(cfg['sourceTurnKey'])
+            if cfg.get('sourceTurnKey'):
+                require_turn(cfg['sourceTurnKey'])
         elif typ == 'sentence_order':
             tokens = cfg.get('tokensEn')
             answer_tokens = cfg.get('answerTokensEn')
@@ -126,7 +168,8 @@ def main() -> int:
             if not isinstance(keys, list) or not keys:
                 errors.append(f'{label}: comprehension requires sourceTurnKeys')
             else:
-                for k in keys: require_turn(k)
+                for k in keys:
+                    require_turn(k)
             if not isinstance(options, list) or len(options) not in {2,3}:
                 errors.append(f'{label}: comprehension must have 2 or 3 options')
             if not isinstance(idx, int) or not options or idx < 0 or idx >= len(options):
@@ -140,13 +183,20 @@ def main() -> int:
                     if k not in lexical_keys:
                         errors.append(f'{label}: unknown lexicalKey {k}')
 
-    required_types = {'dialogue','speak','sentence_order','fill_blank','comprehension'}
+    required_types = {'dialogue','sentence_order','fill_blank','comprehension'}
     actual_types = {a.get('type') for a in lesson.get('activities', [])}
     missing = required_types - actual_types
     if lesson.get('metadata', {}).get('pilot') is True and missing:
         errors.append('pilot lesson is missing product interaction types: ' + ', '.join(sorted(missing)))
+    if lesson.get('metadata', {}).get('pilot') is True and not guided_dialogue_found:
+        errors.append('pilot lesson requires a guided_exchange dialogue with integrated learner speaking')
 
-    report = {'status':'PASS' if not errors else 'FAIL','lessonKey':lesson.get('lessonKey'),'errors':errors,'warnings':warnings}
+    report = {
+        'status':'PASS' if not errors else 'FAIL',
+        'lessonKey':lesson.get('lessonKey'),
+        'errors':errors,
+        'warnings':warnings
+    }
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not errors else 2
 
