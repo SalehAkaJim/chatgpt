@@ -3,8 +3,8 @@
 
 Policy is intentionally forward-only. Existing Lessons 1–20 predate the reference
 layer and remain valid. From Lesson 21 onward, every newly taught single-word target
-must have an exact lemma+POS production-eligible record at the Lesson's CEFR level.
-Multiword expressions remain Nova-authored lexical units.
+must point to one exact, production-eligible reference sense via
+`lexicalItem.metadata.referenceKey`. Multiword expressions remain Nova-authored units.
 """
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 
 from reference_catalog import ReferenceCatalog
-from reference_data import normalize_lemma, normalize_pos
+from reference_data import normalize_lemma, normalize_persian, normalize_pos
 
 DEFAULT_ENFORCE_FROM_SORT_ORDER = 21
 
@@ -38,12 +38,15 @@ def validate_lesson_reference(
         lexical_key = lexical.get("lexicalKey")
         lemma = normalize_lemma(lexical.get("lemma") or lexical.get("displayForm"))
         pos = normalize_pos(lexical.get("partOfSpeech"))
+        metadata = lexical.get("metadata") if isinstance(lexical.get("metadata"), dict) else {}
+        selected_reference_key = metadata.get("referenceKey")
         row = {
             "lexicalKey": lexical_key,
             "role": role,
             "itemType": item_type,
             "lemma": lemma or None,
             "partOfSpeech": pos,
+            "selectedReferenceKey": selected_reference_key,
             "status": "not_required",
             "referenceKeys": [],
         }
@@ -67,11 +70,52 @@ def validate_lesson_reference(
         ) if level and lemma else []
 
         if exact_production:
-            row["status"] = "exact_production_match"
-            row["referenceKeys"] = [x.get("referenceKey") for x in exact_production]
+            candidate_by_key = {
+                x.get("referenceKey"): x for x in exact_production if x.get("referenceKey")
+            }
+            row["referenceKeys"] = list(candidate_by_key)
             row["referenceTranslationsFa"] = sorted({
                 x.get("translationFa") for x in exact_production if x.get("translationFa")
             })
+
+            if role == "target" and enforced:
+                if not selected_reference_key:
+                    row["status"] = "missing_reference_link"
+                    errors.append(
+                        f"{lesson_key}: target word {lexical_key} ({lemma}/{pos or 'unknown POS'}) "
+                        "must set metadata.referenceKey to the intended production reference sense"
+                    )
+                elif selected_reference_key not in candidate_by_key:
+                    row["status"] = "invalid_reference_link"
+                    errors.append(
+                        f"{lesson_key}: target word {lexical_key} referenceKey {selected_reference_key} "
+                        f"does not resolve to an exact production-eligible {level} {lemma}/{pos or 'unknown POS'} sense"
+                    )
+                else:
+                    selected = candidate_by_key[selected_reference_key]
+                    row["status"] = "linked_exact_production_match"
+                    row["selectedReference"] = {
+                        "referenceKey": selected_reference_key,
+                        "translationFa": selected.get("translationFa"),
+                        "definitionEn": selected.get("definitionEn"),
+                        "senseId": selected.get("senseId"),
+                        "qualityScore": selected.get("qualityScore"),
+                    }
+                    authored_translation = normalize_persian(lexical.get("translationFa"))
+                    reference_translation = normalize_persian(selected.get("translationFa"))
+                    if authored_translation and reference_translation and authored_translation != reference_translation:
+                        warnings.append(
+                            f"{lesson_key}: target word {lexical_key} authored Persian meaning differs from "
+                            f"selected reference meaning; confirm context-specific translation"
+                        )
+                        row["translationReview"] = "authored_differs_from_reference"
+            else:
+                row["status"] = "exact_production_match"
+                if selected_reference_key and selected_reference_key in candidate_by_key:
+                    row["selectedReference"] = {
+                        "referenceKey": selected_reference_key,
+                        "translationFa": candidate_by_key[selected_reference_key].get("translationFa"),
+                    }
         else:
             # Get review-only exact records for diagnostics. This never satisfies
             # the target-word production gate.
@@ -109,7 +153,7 @@ def validate_lesson_reference(
         items.append(row)
 
     return {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "lessonKey": lesson_key,
         "levelKey": level,
         "sortOrder": sort_order,
