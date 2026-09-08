@@ -1,0 +1,18 @@
+{
+  "status": "FAIL",
+  "checked": [
+    "nova/courses/en-fa/course.source.json",
+    "nova/courses/en-fa/lessons/0001/lesson.source.json",
+    "nova/prototype/index.html"
+  ],
+  "errors": [
+    {
+      "source": "nova/prototype/index.html",
+      "line": 85,
+      "column": 36,
+      "character": "ً",
+      "codepoint": "U+064B",
+      "reason": "Arabic diacritic / tanwin / tashkeel"
+    }
+  ]
+}
