@@ -1,7 +1,7 @@
-<!-- sourceHash: f53935739905a22112468a2d00661327edd7576d20768dc28c2cb7a0b00d575e -->
+<!-- sourceHash: d28f62e7d54f3b90267367737b1fa1966cabedd53f3e74628a24eb24dde19f21 -->
 # English Audit — EN-A1-L-0013
 
-**Lesson:** Get ready for class
+**Lesson:** Borrowing between neighbors
 **Outcome:** A1-INTERACTION-REVIEW-REQUEST-REPAIR
 
 ## Lexical items
@@ -20,40 +20,40 @@
 
 **T01 · nora**
 
-Hello, Alex!
+Hello, Owen!
 
-**T02 · learner**
+**T02 · owen**
 
-Hello! Can I have a pen, please?
+Hello! Can I have a book, please?
 
-- **Speech target:** Hello! Can I have a pen, please?
-- **Accepted speech:** Hello! Can I have a pen, please?
+- **Speech target:** Hello! Can I have a book, please?
+- **Accepted speech:** Hello! Can I have a book, please?
 
 **T03 · nora**
 
-A book?
+A pen?
 
-**T04 · learner**
+**T04 · owen**
 
-No, a pen, please.
+No, a book, please.
 
-- **Speech target:** No, a pen, please.
-- **Accepted speech:** No, a pen, please.
+- **Speech target:** No, a book, please.
+- **Accepted speech:** No, a book, please.
 
 **T05 · nora**
 
 Here you go.
 
-**T06 · learner**
+**T06 · owen**
 
 Thanks!
 
 - **Speech target:** Thanks!
 - **Accepted speech:** Thanks!
 
-**T07 · maya**
+**T07 · nora**
 
-Can I have a book, please?
+Can I have a pen, please?
 
 **T08 · nora**
 
@@ -67,7 +67,7 @@ It's on the table.
 
 **A02 · response_choice**
 
-- **optionsEn:** Can I have a pen, please? | Where's my pen? | Can I have a book, please?
+- **optionsEn:** Can I have a pen, please? | Where's my book? | Can I have a book, please?
 
 **A03 · dialogue**
 

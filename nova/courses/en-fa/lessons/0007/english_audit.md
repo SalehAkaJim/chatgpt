@@ -1,4 +1,4 @@
-<!-- sourceHash: ca761f2e3a442937c4d29e4a7f2fb47ebe4159e99768d3d8450c6ae72d76cca1 -->
+<!-- sourceHash: 504820d040e97bbe4fc82c609d105416701f88c4e01309ea75b37801616900a6 -->
 # English Audit — EN-A1-L-0007
 
 **Lesson:** Ask for a pen
@@ -15,29 +15,29 @@
 
 ## Dialogue turns
 
-**T01 · maya**
+**T01 · nora**
 
-Hello, Alex.
+Hello, Owen.
 
-**T02 · learner**
+**T02 · owen**
 
 Can I have a pen, please?
 
 - **Speech target:** Can I have a pen, please?
 - **Accepted speech:** Can I have a pen, please?
 
-**T03 · maya**
+**T03 · nora**
 
 Here you go.
 
-**T04 · learner**
+**T04 · owen**
 
 Thanks!
 
 - **Speech target:** Thanks!
 - **Accepted speech:** Thanks!
 
-**T05 · maya**
+**T05 · nora**
 
 Can I have a book, please?
 

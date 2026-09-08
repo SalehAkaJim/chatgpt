@@ -1,4 +1,4 @@
-<!-- sourceHash: 3e1d600dfd46bfb3bdc8084393f15353fa736969e853fcbc86bb73bd63ece3c6 -->
+<!-- sourceHash: 42d4717e7d525dc5b89afa857c3676f50374257a02d229951f2c0e0499f0d7af -->
 # English Audit — EN-A1-L-0011
 
 **Lesson:** Accept or decline
@@ -17,33 +17,33 @@
 
 ## Dialogue turns
 
-**T01 · nora**
+**T01 · leo**
 
 Coffee?
 
-**T02 · learner**
+**T02 · liam**
 
 No, thanks. Water, please.
 
 - **Speech target:** No, thanks. Water, please.
 - **Accepted speech:** No, thanks. Water, please.
 
-**T03 · nora**
+**T03 · leo**
 
 Here you go.
 
-**T04 · learner**
+**T04 · liam**
 
 Thanks!
 
 - **Speech target:** Thanks!
 - **Accepted speech:** Thanks!
 
-**T05 · nora**
+**T05 · leo**
 
 Tea?
 
-**T06 · learner**
+**T06 · liam**
 
 Yes, please.
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 912b2a24c5e3e359e856ac41121569e35e2de790aec47f805e7927686420717b -->
+<!-- sourceHash: 00eb54cada1410727b8cb29fc97015c400d06b88b8adf66a35130843f8bab7cf -->
 # English Audit — EN-A1-L-0005
 
 **Lesson:** Where are you from?
@@ -14,22 +14,22 @@
 
 ## Dialogue turns
 
-**T01 · nora**
+**T01 · sara**
 
 Where are you from?
 
-**T02 · learner**
+**T02 · ruby**
 
 I'm from Iran.
 
 - **Speech target:** I'm from Iran.
 - **Accepted speech:** I'm from Iran.
 
-**T03 · nora**
+**T03 · sara**
 
 I'm from Canada.
 
-**T04 · learner**
+**T04 · ruby**
 
 Nice!
 

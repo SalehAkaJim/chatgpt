@@ -1,7 +1,7 @@
-<!-- sourceHash: 721f1c5a102582926f96e672a5db61eaf30024fda3ee9c1f2016937e32495c33 -->
+<!-- sourceHash: 1a880caa430a86fc9582f6b5572bee442bc44803ca1576a8f8a1131c13086132 -->
 # English Audit — EN-A1-L-0010
 
-**Lesson:** Choose a drink
+**Lesson:** Drinks after the walk
 **Outcome:** A1-INTERACTION-CHOOSE-DRINK
 
 ## Lexical items
@@ -16,29 +16,29 @@
 
 ## Dialogue turns
 
-**T01 · ben**
+**T01 · sara**
 
 Tea or coffee?
 
-**T02 · learner**
+**T02 · ruby**
 
 Tea, please.
 
 - **Speech target:** Tea, please.
 - **Accepted speech:** Tea, please.
 
-**T03 · ben**
+**T03 · sara**
 
 Here you go.
 
-**T04 · learner**
+**T04 · ruby**
 
 Thanks.
 
 - **Speech target:** Thanks.
 - **Accepted speech:** Thanks.
 
-**T05 · ben**
+**T05 · sara**
 
 Water or tea?
 

@@ -1,7 +1,7 @@
-<!-- sourceHash: c4fc2810ec151c4736d55ccca24848aaca51e5f553a17c83a2b501de51eb906f -->
+<!-- sourceHash: e6ec130a9205eee1ada2474f826e06101709c4bcfa7a850df2f487d160ca5479 -->
 # English Audit — EN-A1-L-0012
 
-**Lesson:** Correct the order
+**Lesson:** Correct the classroom request
 **Outcome:** A1-INTERACTION-CORRECT-REQUEST
 
 ## Lexical items
@@ -17,22 +17,22 @@
 
 ## Dialogue turns
 
-**T01 · ben**
+**T01 · maya**
 
-Coffee?
+A book?
 
-**T02 · learner**
+**T02 · alex**
 
-No, tea, please.
+No, a pen, please.
 
-- **Speech target:** No, tea, please.
-- **Accepted speech:** No, tea, please.
+- **Speech target:** No, a pen, please.
+- **Accepted speech:** No, a pen, please.
 
-**T03 · ben**
+**T03 · maya**
 
-Sorry! Tea.
+Sorry! A pen.
 
-**T04 · learner**
+**T04 · alex**
 
 Thanks!
 
@@ -49,7 +49,7 @@ Thanks!
 
 **A03 · comprehension**
 
-- **options:** عذرخواهی می کند و نوشیدنی را درست می کند | می خواهد اسم تو را بداند | می خواهد جمله ات را دوباره بشنود
+- **options:** عذرخواهی می کند و وسیله درست را می دهد | می خواهد اسم تو را بداند | می خواهد جمله ات را دوباره بشنود
 
 **A04 · response_choice**
 

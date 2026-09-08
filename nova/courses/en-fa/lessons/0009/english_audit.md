@@ -1,4 +1,4 @@
-<!-- sourceHash: eb6403df4375ceccedb2317ebd4a8991c7592c1e9e5bbac38045c47bdb6396e9 -->
+<!-- sourceHash: 6e7be88d256adfc13bd490bab49e396b53186ab0a58d97d2e7c095955aaf792d -->
 # English Audit — EN-A1-L-0009
 
 **Lesson:** First stop at the cafe
@@ -20,7 +20,7 @@
 
 Hello!
 
-**T02 · learner**
+**T02 · ava**
 
 Hello! Can I have water, please?
 
@@ -31,7 +31,7 @@ Hello! Can I have water, please?
 
 Here you go.
 
-**T04 · learner**
+**T04 · ava**
 
 Thanks!
 

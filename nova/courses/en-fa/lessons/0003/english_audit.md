@@ -1,7 +1,7 @@
-<!-- sourceHash: d498804f6aded17e2a10253e452407f07a1af290b0160f490ddf02051e615033 -->
+<!-- sourceHash: fb41f774035427300f9b97d96a5adc44ba758569b701015c37f617138c82a296 -->
 # English Audit — EN-A1-L-0003
 
-**Lesson:** A quick chat before class
+**Lesson:** A quick chat at the community center
 **Outcome:** A1-INTERACTION-GREET-STATE-CLOSE
 
 ## Lexical items
@@ -16,33 +16,33 @@
 
 ## Dialogue turns
 
-**T01 · maya**
+**T01 · iris**
 
-Hello, Alex! How are you?
+Hello, Nina! How are you?
 
-**T02 · learner**
+**T02 · nina**
 
 I'm fine, thanks. How are you?
 
 - **Speech target:** I'm fine, thanks. How are you?
 - **Accepted speech:** I'm fine, thanks. How are you?
 
-**T03 · maya**
+**T03 · iris**
 
 I'm fine, thanks.
 
-**T04 · learner**
+**T04 · nina**
 
 Good!
 
 - **Speech target:** Good!
 - **Accepted speech:** Good!
 
-**T05 · maya**
+**T05 · iris**
 
 See you!
 
-**T06 · learner**
+**T06 · nina**
 
 See you!
 

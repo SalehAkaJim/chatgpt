@@ -1,4 +1,4 @@
-<!-- sourceHash: d3117cef200e6b7d7904f36b2399b6331665a922472e61fb232001040f303453 -->
+<!-- sourceHash: c31e8a8a7c364cfdaf5e219ca70a2dc3b38534ac91900baa60e8b016e61072e0 -->
 # English Audit — EN-A1-L-0008
 
 **Lesson:** Find the book
@@ -16,29 +16,29 @@
 
 ## Dialogue turns
 
-**T01 · nora**
+**T01 · iris**
 
 Where's my book?
 
-**T02 · learner**
+**T02 · nina**
 
 It's on the table.
 
 - **Speech target:** It's on the table.
 - **Accepted speech:** It's on the table.
 
-**T03 · nora**
+**T03 · iris**
 
-Thanks, Alex!
+Thanks, Nina!
 
-**T04 · learner**
+**T04 · nina**
 
 Here you go.
 
 - **Speech target:** Here you go.
 - **Accepted speech:** Here you go.
 
-**T05 · nora**
+**T05 · iris**
 
 Where's my pen?
 

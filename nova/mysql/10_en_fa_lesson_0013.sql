@@ -1,8 +1,8 @@
 -- Generated from canonical Course/Level/Lesson source. Do not edit by hand.
 -- lessonKey: EN-A1-L-0013
 -- levelKey: A1
--- sourceHash: f53935739905a22112468a2d00661327edd7576d20768dc28c2cb7a0b00d575e
--- courseSourceHash: fd843ed93d678519367b0c70ec3a0c0d9d4642994421943e702d63c88dec4d61
+-- sourceHash: d28f62e7d54f3b90267367737b1fa1966cabedd53f3e74628a24eb24dde19f21
+-- courseSourceHash: 3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e
 SET NAMES utf8mb4;
 START TRANSACTION;
 
@@ -18,19 +18,55 @@ ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),title=VALUES(title),title_
 SET @level_id=(SELECT id FROM levels WHERE course_id=@course_id AND level_key='A1' LIMIT 1);
 
 INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
-VALUES (@course_id,'maya','Maya','female','vexa','{"roleFa":"همکلاسی الکس؛ از روز اول با او آشناست"}',1)
+VALUES (@course_id,'maya','Maya','female','vexa','{"roleFa":"همکلاسی الکس"}',1)
 ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
 
 INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
-VALUES (@course_id,'nora','Nora','female','lori','{"roleFa":"همکلاسی تازه الکس؛ اهل کانادا و همراه او در کلاس و کافه"}',1)
+VALUES (@course_id,'alex','Alex','male','brent','{"roleFa":"همکلاسی مایا"}',1)
 ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
 
 INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
-VALUES (@course_id,'ben','Ben','male','adam','{"roleFa":"کارمند کافه نزدیک کلاس؛ سفارش الکس را می گیرد"}',1)
+VALUES (@course_id,'nora','Nora','female','lori','{"roleFa":"همسایه اوون در ساختمان"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'owen','Owen','male','brian','{"roleFa":"همسایه نورا در ساختمان"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'iris','Iris','female','rachel','{"roleFa":"پذیرش مرکز محله؛ نینا را از قبل می شناسد"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'nina','Nina','female','vexa','{"roleFa":"به برنامه های مرکز محله می رود و آیریس را می شناسد"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'leo','Leo','male','adam','{"roleFa":"کتابدار؛ در برنامه های کتابخانه کمک می کند"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'liam','Liam','male','brent','{"roleFa":"مراجعه کننده کتابخانه"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'sara','Sara','female','lori','{"roleFa":"عضو گروه پیاده روی؛ اهل کانادا"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'ruby','Ruby','female','rachel','{"roleFa":"عضو تازه گروه پیاده روی؛ اهل ایران"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'ben','Ben','male','adam','{"roleFa":"کارمند کافه"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'ava','Ava','female','lori','{"roleFa":"مشتری کافه"}',1)
 ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
 
 INSERT INTO lessons (level_id,lesson_key,sort_order,title,title_translation,description,primary_outcome_key,estimated_duration_sec,source_hash,status,metadata)
-VALUES (@level_id,'EN-A1-L-0013',13,'Get ready for class','مرور: آماده شدن برای کلاس','به کلاس برگشته ای. اول به درخواست مایا گوش می دهی، بعد از نورا خودکار می خواهی. نورا اول اشتباه می شنود. نقش تو الکس است.','A1-INTERACTION-REVIEW-REQUEST-REPAIR',420,'f53935739905a22112468a2d00661327edd7576d20768dc28c2cb7a0b00d575e','validated','{"outcomeFa":"می توانی درخواست یک وسیله، اصلاح اشتباه و فهمیدن درخواست دیگران را در کنار هم به کار ببری.","scenarioFa":"به کلاس برگشته ای. اول به درخواست مایا گوش می دهی، بعد از نورا خودکار می خواهی. نورا اول اشتباه می شنود. نقش تو الکس است.","prerequisiteOutcomeKeys":["A1-INTERACTION-CORRECT-REQUEST","A1-INTERACTION-LOCATE-OBJECT"],"curriculum":{"startingKnowledge":"early_a1_after_greetings","targetConstructions":[],"supportLanguage":[],"assessmentBoundary":"Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.","transferPlan":{"mode":"same_lesson","intent":"An opening task precedes the guided model, and the final repair requires a different object."},"story":{"arcKey":"EN-A1-CLASS-AND-CAFE","sceneKey":"EN-A1-SCENE-0013","learnerRoleKey":"alex","participants":["nora","maya"],"firstMeetings":[],"dependsOnLessonKeys":["EN-A1-L-0007","EN-A1-L-0008","EN-A1-L-0011","EN-A1-L-0012"],"settingFa":"کلاس، پیش از نوشتن","storyBeatFa":"الکس درخواست و اصلاح را با نورا ترکیب می کند؛ مایا هم یک درخواست جدا دارد. در هر لحظه یک گوینده روشن است."},"reviewLinks":[{"lessonKey":"EN-A1-L-0007","activityKeys":["A01","A02"],"learningDemand":"retrieval","note":"Retrieve a practical request before the visible dialogue."},{"lessonKey":"EN-A1-L-0008","activityKeys":["A04"],"learningDemand":"retrieval","note":"Recall a known location after a delay."},{"lessonKey":"EN-A1-L-0012","activityKeys":["A05"],"learningDemand":"transfer","note":"Transfer correction back to classroom materials and change the intended item."}]},"pilot":false,"batchKey":"EN-A1-STORY-10-01","audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange"}')
+VALUES (@level_id,'EN-A1-L-0013',13,'Borrowing between neighbors','مرور: کمک به همسایه','چند روز بعد دوباره نورا را می بینی. اول به درخواستش گوش می دهی، بعد خودت چیزی از او می خواهی و یک اشتباه را روشن می کنی.','A1-INTERACTION-REVIEW-REQUEST-REPAIR',420,'d28f62e7d54f3b90267367737b1fa1966cabedd53f3e74628a24eb24dde19f21','validated','{"outcomeFa":"می توانی درخواست یک وسیله، اصلاح اشتباه و فهمیدن درخواست دیگران را در کنار هم به کار ببری.","scenarioFa":"چند روز بعد دوباره نورا را می بینی. اول به درخواستش گوش می دهی، بعد خودت چیزی از او می خواهی و یک اشتباه را روشن می کنی. نقش تو اوون است.","prerequisiteOutcomeKeys":["A1-INTERACTION-CORRECT-REQUEST","A1-INTERACTION-LOCATE-OBJECT"],"curriculum":{"startingKnowledge":"early_a1_after_greetings","targetConstructions":[],"supportLanguage":[],"assessmentBoundary":"Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.","transferPlan":{"mode":"same_lesson","intent":"Retrieve a request before the model, then correct a different intended object with a neighbor; reuse classroom language in another story and another learner role."},"story":{"arcKey":"EN-A1-NEIGHBORS","sceneKey":"EN-A1-SCENE-0013","learnerRoleKey":"owen","participants":["owen","nora"],"introducedCharacterKeys":[],"relationshipState":"already_known","continuesLessonKey":"EN-A1-L-0007","dependsOnLessonKeys":["EN-A1-L-0007"],"settingFa":"ساختمان، قرض دادن وسایل به همسایه","storyBeatFa":"اوون و نورا بعد از کمک قبلی، این بار درخواست و اصلاح را در قرض دادن وسایل به هم به کار می برند."},"reviewLinks":[{"lessonKey":"EN-A1-L-0007","activityKeys":["A01","A02"],"learningDemand":"retrieval","note":"Retrieve a practical request before the visible dialogue."},{"lessonKey":"EN-A1-L-0008","activityKeys":["A04"],"learningDemand":"retrieval","note":"Recall a known location after a delay."},{"lessonKey":"EN-A1-L-0012","activityKeys":["A05"],"learningDemand":"transfer","note":"Apply the classroom correction pattern to borrowing from a neighbor with different characters."}]},"pilot":false,"batchKey":"EN-A1-STORY-10-01","audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange"}')
 ON DUPLICATE KEY UPDATE level_id=VALUES(level_id),sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),primary_outcome_key=VALUES(primary_outcome_key),estimated_duration_sec=VALUES(estimated_duration_sec),source_hash=VALUES(source_hash),status=VALUES(status),metadata=VALUES(metadata);
 SET @lesson_id=(SELECT id FROM lessons WHERE level_id=@level_id AND lesson_key='EN-A1-L-0013' LIMIT 1);
 DELETE FROM lesson_lexical_items WHERE lesson_id=@lesson_id;
@@ -100,44 +136,44 @@ SET @lex_id=(SELECT id FROM lexical_items WHERE course_id=@course_id AND lexical
 INSERT INTO lesson_lexical_items (lesson_id,lexical_item_id,learning_role,sort_order,metadata) VALUES (@lesson_id,@lex_id,'review',9,'{}');
 
 INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)
-VALUES (@lesson_id,'T01',1,'character',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='nora' LIMIT 1),'Hello, Alex!','سلام الکس!','nova/audio/turns/en-fa/EN-A1-L-0013/T01.mp3','1149',NULL,NULL,NULL,'{}')
+VALUES (@lesson_id,'T01',1,'character',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='nora' LIMIT 1),'Hello, Owen!','سلام اوون!','nova/audio/turns/en-fa/EN-A1-L-0013/T01.mp3','1097',NULL,NULL,NULL,'{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);
 INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)
-VALUES (@lesson_id,'T02',2,'learner',NULL,'Hello! Can I have a pen, please?','سلام! می شه لطفا یک خودکار به من بدی؟','nova/audio/turns/en-fa/EN-A1-L-0013/T02.mp3','2168','Hello! Can I have a pen, please?','["Hello! Can I have a pen, please?"]',NULL,'{}')
+VALUES (@lesson_id,'T02',2,'learner',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='owen' LIMIT 1),'Hello! Can I have a book, please?','سلام! می شه لطفا یک کتاب به من بدی؟','nova/audio/turns/en-fa/EN-A1-L-0013/T02.mp3','2168','Hello! Can I have a book, please?','["Hello! Can I have a book, please?"]',NULL,'{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);
 INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)
-VALUES (@lesson_id,'T03',3,'character',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='nora' LIMIT 1),'A book?','یک کتاب؟','nova/audio/turns/en-fa/EN-A1-L-0013/T03.mp3','783',NULL,NULL,NULL,'{}')
+VALUES (@lesson_id,'T03',3,'character',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='nora' LIMIT 1),'A pen?','یک خودکار؟','nova/audio/turns/en-fa/EN-A1-L-0013/T03.mp3','783',NULL,NULL,NULL,'{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);
 INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)
-VALUES (@lesson_id,'T04',4,'learner',NULL,'No, a pen, please.','نه، یک خودکار لطفا.','nova/audio/turns/en-fa/EN-A1-L-0013/T04.mp3','1697','No, a pen, please.','["No, a pen, please."]',NULL,'{}')
+VALUES (@lesson_id,'T04',4,'learner',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='owen' LIMIT 1),'No, a book, please.','نه، یک کتاب لطفا.','nova/audio/turns/en-fa/EN-A1-L-0013/T04.mp3','1619','No, a book, please.','["No, a book, please."]',NULL,'{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);
 INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)
 VALUES (@lesson_id,'T05',5,'character',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='nora' LIMIT 1),'Here you go.','بفرما.','nova/audio/turns/en-fa/EN-A1-L-0013/T05.mp3','966',NULL,NULL,NULL,'{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);
 INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)
-VALUES (@lesson_id,'T06',6,'learner',NULL,'Thanks!','ممنون!','nova/audio/turns/en-fa/EN-A1-L-0013/T06.mp3','783','Thanks!','["Thanks!"]',NULL,'{}')
+VALUES (@lesson_id,'T06',6,'learner',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='owen' LIMIT 1),'Thanks!','ممنون!','nova/audio/turns/en-fa/EN-A1-L-0013/T06.mp3','862','Thanks!','["Thanks!"]',NULL,'{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);
 INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)
-VALUES (@lesson_id,'T07',7,'character',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='maya' LIMIT 1),'Can I have a book, please?','می شه لطفا یک کتاب به من بدی؟','nova/audio/turns/en-fa/EN-A1-L-0013/T07.mp3','1515',NULL,NULL,NULL,'{}')
+VALUES (@lesson_id,'T07',7,'character',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='nora' LIMIT 1),'Can I have a pen, please?','می شه لطفا یک خودکار به من بدی؟','nova/audio/turns/en-fa/EN-A1-L-0013/T07.mp3','1436',NULL,NULL,NULL,'{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);
 INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)
 VALUES (@lesson_id,'T08',8,'character',(SELECT id FROM characters WHERE course_id=@course_id AND character_key='nora' LIMIT 1),'It''s on the table.','روی میزه.','nova/audio/turns/en-fa/EN-A1-L-0013/T08.mp3','1253',NULL,NULL,NULL,'{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);
 
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
-VALUES (@lesson_id,'A01',1,'comprehension','گوش کن و با توجه به چیزی که شنیدی پاسخ بده.','پیش از گفت و گوی خودت، گوش کن: مایا چه چیزی می خواهد؟','{"sourceTurnKeys":["T07"],"options":["خودکار","کتاب","چای"],"answerIndex":1,"transcriptAfterAttempt":true}','{"learningDemand":"retrieval","purpose":"Delayed listening with no visible model; request comes from a different familiar person."}')
+VALUES (@lesson_id,'A01',1,'comprehension','گوش کن و با توجه به چیزی که شنیدی پاسخ بده.','پیش از گفت و گوی خودت، گوش کن: نورا چه چیزی می خواهد؟','{"sourceTurnKeys":["T07"],"options":["خودکار","کتاب","چای"],"answerIndex":0,"transcriptAfterAttempt":true}','{"learningDemand":"retrieval","purpose":"Delayed listening with no visible model; request comes from a different familiar person."}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),activity_type=VALUES(activity_type),instruction=VALUES(instruction),prompt=VALUES(prompt),config=VALUES(config),metadata=VALUES(metadata);
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
-VALUES (@lesson_id,'A02',2,'response_choice','با توجه به موقعیت، گزینه مناسب را انتخاب کن.','خودکار نداری و می خواهی از همکلاسی ات یک خودکار بگیری. چه می گویی؟','{"optionsEn":["Can I have a pen, please?","Where''s my pen?","Can I have a book, please?"],"answerIndex":0}','{"learningDemand":"changed_context","purpose":"Select a request before its guided model is displayed."}')
+VALUES (@lesson_id,'A02',2,'response_choice','با توجه به موقعیت، گزینه مناسب را انتخاب کن.','برای مطالعه می خواهی یک کتاب از همسایه ات بگیری. چه می گویی؟','{"optionsEn":["Can I have a pen, please?","Where''s my book?","Can I have a book, please?"],"answerIndex":2}','{"learningDemand":"changed_context","purpose":"Select a request before its guided model is displayed."}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),activity_type=VALUES(activity_type),instruction=VALUES(instruction),prompt=VALUES(prompt),config=VALUES(config),metadata=VALUES(metadata);
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
-VALUES (@lesson_id,'A03',3,'dialogue','گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.',NULL,'{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E02","promptTurnKey":"T03","responseTurnKey":"T04","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E03","promptTurnKey":"T05","responseTurnKey":"T06","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}','{}')
+VALUES (@lesson_id,'A03',3,'dialogue','حرف نورا را گوش کن و پاسخ اوون را با صدای بلند بگو.',NULL,'{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E02","promptTurnKey":"T03","responseTurnKey":"T04","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E03","promptTurnKey":"T05","responseTurnKey":"T06","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}','{}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),activity_type=VALUES(activity_type),instruction=VALUES(instruction),prompt=VALUES(prompt),config=VALUES(config),metadata=VALUES(metadata);
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
 VALUES (@lesson_id,'A04',4,'comprehension','گوش کن و با توجه به چیزی که شنیدی پاسخ بده.','کمی بعد نورا درباره جای یک وسیله چه می گوید؟','{"sourceTurnKeys":["T08"],"options":["روی میز","درباره جایش چیزی نمی گوید"],"answerIndex":0,"transcriptAfterAttempt":true}','{"learningDemand":"retrieval","purpose":"Delayed recognition of the location pattern, without showing the earlier Lesson 0008 model."}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),activity_type=VALUES(activity_type),instruction=VALUES(instruction),prompt=VALUES(prompt),config=VALUES(config),metadata=VALUES(metadata);
 INSERT INTO activities (lesson_id,activity_key,sort_order,activity_type,instruction,prompt,config,metadata)
-VALUES (@lesson_id,'A05',5,'response_choice','با توجه به موقعیت، گزینه مناسب را انتخاب کن.','این بار خودکار داری و کتاب می خواهی، اما نورا خودکار تعارف می کند. چه می گویی؟','{"optionsEn":["No, a book, please.","Yes, please.","No, a pen, please."],"answerIndex":0}','{"learningDemand":"changed_context","purpose":"Change the intended object after the supported dialogue; no new language."}')
+VALUES (@lesson_id,'A05',5,'response_choice','با توجه به موقعیت، گزینه مناسب را انتخاب کن.','این بار خودکار می خواهی، اما نورا کتاب تعارف می کند. چه می گویی؟','{"optionsEn":["No, a book, please.","Yes, please.","No, a pen, please."],"answerIndex":2}','{"learningDemand":"changed_context","purpose":"Change the intended object after the supported dialogue; no new language."}')
 ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),activity_type=VALUES(activity_type),instruction=VALUES(instruction),prompt=VALUES(prompt),config=VALUES(config),metadata=VALUES(metadata);
 
 COMMIT;

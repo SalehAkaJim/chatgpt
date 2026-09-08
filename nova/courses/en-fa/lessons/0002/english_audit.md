@@ -1,7 +1,7 @@
-<!-- sourceHash: db6dbb23c9aa561f707144e5395403ffb5208bb76e9817c820572dac459ce4d6 -->
+<!-- sourceHash: dbc545d3a17b52ed405781808a06c427686a47870262a483bcd47a9e168f8834 -->
 # English Audit — EN-A1-L-0002
 
-**Lesson:** Meeting someone in class
+**Lesson:** Meeting a neighbor
 **Outcome:** A1-INTERACTION-FIRST-MEETING
 
 ## Lexical items
@@ -17,18 +17,18 @@
 
 Hello! What's your name?
 
-**T02 · learner**
+**T02 · owen**
 
-My name is Alex.
+My name is Owen.
 
-- **Speech target:** My name is Alex.
-- **Accepted speech:** My name is Alex.
+- **Speech target:** My name is Owen.
+- **Accepted speech:** My name is Owen.
 
 **T03 · nora**
 
 I'm Nora. Nice to meet you.
 
-**T04 · learner**
+**T04 · owen**
 
 Nice to meet you, too.
 
@@ -45,22 +45,22 @@ Nice to meet you, too.
 
 **A03 · sentence_order**
 
-- **answerEn:** My name is Alex.
-- **tokensEn:** is | Alex. | My | name
-- **answerTokensEn:** My | name | is | Alex.
+- **answerEn:** My name is Owen.
+- **tokensEn:** is | Owen. | My | name
+- **answerTokensEn:** My | name | is | Owen.
 
 **A04 · fill_blank**
 
-- **sentenceEn:** My ___ is Alex.
+- **sentenceEn:** My ___ is Owen.
 - **optionsEn:** hello | name | too
 
 **A05 · comprehension**
 
-- **options:** می خواهد خداحافظی کند | اسم الکس را دوباره می پرسد | از آشنایی با الکس خوشحال است
+- **options:** می خواهد خداحافظی کند | اسم اوون را دوباره می پرسد | از آشنایی با اوون خوشحال است
 
 **A06 · response_choice**
 
-- **optionsEn:** My name is Alex. | What's your name? | Nice to meet you.
+- **optionsEn:** My name is Owen. | What's your name? | Nice to meet you.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

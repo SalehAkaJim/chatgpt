@@ -1,4 +1,4 @@
-<!-- sourceHash: c49818a3df8c59e420f93b6d64e0f22caeb87852693955c24f11ed279168e699 -->
+<!-- sourceHash: 8512735907affdea66aa88aa24ab83ceb6e66d9a254a032046f52d15c1ec418e -->
 # English Audit — EN-A1-L-0001
 
 **Lesson:** Hello! What's your name?
@@ -15,7 +15,7 @@
 
 Hello! I'm Maya.
 
-**T02 · learner**
+**T02 · alex**
 
 Hello!
 
@@ -26,7 +26,7 @@ Hello!
 
 What's your name?
 
-**T04 · learner**
+**T04 · alex**
 
 I'm Alex.
 
