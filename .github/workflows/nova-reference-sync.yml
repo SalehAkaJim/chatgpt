@@ -58,5 +58,7 @@ jobs:
             echo "Reference snapshot already matches pinned sources."
           else
             git commit -m "Sync Nova production reference data"
+            git fetch origin "${GITHUB_REF_NAME}"
+            git rebase "origin/${GITHUB_REF_NAME}"
             git push origin HEAD:${GITHUB_REF_NAME}
           fi
