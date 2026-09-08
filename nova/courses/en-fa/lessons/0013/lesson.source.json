@@ -1,16 +1,16 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0013",
   "sortOrder": 13,
-  "titleEn": "Get ready for class",
-  "titleFa": "مرور: آماده شدن برای کلاس",
-  "descriptionFa": "به کلاس برگشته ای. اول به درخواست مایا گوش می دهی، بعد از نورا خودکار می خواهی. نورا اول اشتباه می شنود. نقش تو الکس است.",
+  "titleEn": "Borrowing between neighbors",
+  "titleFa": "مرور: کمک به همسایه",
+  "descriptionFa": "چند روز بعد دوباره نورا را می بینی. اول به درخواستش گوش می دهی، بعد خودت چیزی از او می خواهی و یک اشتباه را روشن می کنی.",
   "primaryOutcomeKey": "A1-INTERACTION-REVIEW-REQUEST-REPAIR",
   "outcomeFa": "می توانی درخواست یک وسیله، اصلاح اشتباه و فهمیدن درخواست دیگران را در کنار هم به کار ببری.",
-  "scenarioFa": "به کلاس برگشته ای. اول به درخواست مایا گوش می دهی، بعد از نورا خودکار می خواهی. نورا اول اشتباه می شنود. نقش تو الکس است.",
+  "scenarioFa": "چند روز بعد دوباره نورا را می بینی. اول به درخواستش گوش می دهی، بعد خودت چیزی از او می خواهی و یک اشتباه را روشن می کنی. نقش تو اوون است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-CORRECT-REQUEST",
     "A1-INTERACTION-LOCATE-OBJECT"
@@ -22,25 +22,24 @@
     "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "An opening task precedes the guided model, and the final repair requires a different object."
+      "intent": "Retrieve a request before the model, then correct a different intended object with a neighbor; reuse classroom language in another story and another learner role."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-NEIGHBORS",
       "sceneKey": "EN-A1-SCENE-0013",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "owen",
       "participants": [
-        "nora",
-        "maya"
+        "owen",
+        "nora"
       ],
-      "firstMeetings": [],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0007",
       "dependsOnLessonKeys": [
-        "EN-A1-L-0007",
-        "EN-A1-L-0008",
-        "EN-A1-L-0011",
-        "EN-A1-L-0012"
+        "EN-A1-L-0007"
       ],
-      "settingFa": "کلاس، پیش از نوشتن",
-      "storyBeatFa": "الکس درخواست و اصلاح را با نورا ترکیب می کند؛ مایا هم یک درخواست جدا دارد. در هر لحظه یک گوینده روشن است."
+      "settingFa": "ساختمان، قرض دادن وسایل به همسایه",
+      "storyBeatFa": "اوون و نورا بعد از کمک قبلی، این بار درخواست و اصلاح را در قرض دادن وسایل به هم به کار می برند."
     },
     "reviewLinks": [
       {
@@ -66,7 +65,7 @@
           "A05"
         ],
         "learningDemand": "transfer",
-        "note": "Transfer correction back to classroom materials and change the intended item."
+        "note": "Apply the classroom correction pattern to borrowing from a neighbor with different characters."
       }
     ]
   },
@@ -158,40 +157,42 @@
     {
       "turnKey": "T01",
       "role": "character",
-      "textEn": "Hello, Alex!",
-      "translationFa": "سلام الکس!",
+      "textEn": "Hello, Owen!",
+      "translationFa": "سلام اوون!",
       "audioRequired": true,
       "characterKey": "nora"
     },
     {
       "turnKey": "T02",
       "role": "learner",
-      "textEn": "Hello! Can I have a pen, please?",
-      "translationFa": "سلام! می شه لطفا یک خودکار به من بدی؟",
+      "textEn": "Hello! Can I have a book, please?",
+      "translationFa": "سلام! می شه لطفا یک کتاب به من بدی؟",
       "audioRequired": true,
-      "speechTargetEn": "Hello! Can I have a pen, please?",
+      "speechTargetEn": "Hello! Can I have a book, please?",
       "acceptedSpeechEn": [
-        "Hello! Can I have a pen, please?"
-      ]
+        "Hello! Can I have a book, please?"
+      ],
+      "characterKey": "owen"
     },
     {
       "turnKey": "T03",
       "role": "character",
-      "textEn": "A book?",
-      "translationFa": "یک کتاب؟",
+      "textEn": "A pen?",
+      "translationFa": "یک خودکار؟",
       "audioRequired": true,
       "characterKey": "nora"
     },
     {
       "turnKey": "T04",
       "role": "learner",
-      "textEn": "No, a pen, please.",
-      "translationFa": "نه، یک خودکار لطفا.",
+      "textEn": "No, a book, please.",
+      "translationFa": "نه، یک کتاب لطفا.",
       "audioRequired": true,
-      "speechTargetEn": "No, a pen, please.",
+      "speechTargetEn": "No, a book, please.",
       "acceptedSpeechEn": [
-        "No, a pen, please."
-      ]
+        "No, a book, please."
+      ],
+      "characterKey": "owen"
     },
     {
       "turnKey": "T05",
@@ -210,15 +211,16 @@
       "speechTargetEn": "Thanks!",
       "acceptedSpeechEn": [
         "Thanks!"
-      ]
+      ],
+      "characterKey": "owen"
     },
     {
       "turnKey": "T07",
       "role": "character",
-      "textEn": "Can I have a book, please?",
-      "translationFa": "می شه لطفا یک کتاب به من بدی؟",
+      "textEn": "Can I have a pen, please?",
+      "translationFa": "می شه لطفا یک خودکار به من بدی؟",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "nora"
     },
     {
       "turnKey": "T08",
@@ -242,10 +244,10 @@
           "کتاب",
           "چای"
         ],
-        "answerIndex": 1,
+        "answerIndex": 0,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "پیش از گفت و گوی خودت، گوش کن: مایا چه چیزی می خواهد؟",
+      "promptFa": "پیش از گفت و گوی خودت، گوش کن: نورا چه چیزی می خواهد؟",
       "metadata": {
         "learningDemand": "retrieval",
         "purpose": "Delayed listening with no visible model; request comes from a different familiar person."
@@ -258,12 +260,12 @@
       "config": {
         "optionsEn": [
           "Can I have a pen, please?",
-          "Where's my pen?",
+          "Where's my book?",
           "Can I have a book, please?"
         ],
-        "answerIndex": 0
+        "answerIndex": 2
       },
-      "promptFa": "خودکار نداری و می خواهی از همکلاسی ات یک خودکار بگیری. چه می گویی؟",
+      "promptFa": "برای مطالعه می خواهی یک کتاب از همسایه ات بگیری. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
         "purpose": "Select a request before its guided model is displayed."
@@ -272,7 +274,7 @@
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف نورا را گوش کن و پاسخ اوون را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -338,9 +340,9 @@
           "Yes, please.",
           "No, a pen, please."
         ],
-        "answerIndex": 0
+        "answerIndex": 2
       },
-      "promptFa": "این بار خودکار داری و کتاب می خواهی، اما نورا خودکار تعارف می کند. چه می گویی؟",
+      "promptFa": "این بار خودکار می خواهی، اما نورا کتاب تعارف می کند. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
         "purpose": "Change the intended object after the supported dialogue; no new language."

@@ -133,7 +133,9 @@ function renderExchange(activity, exchange, host) {
   if (exchange.allowPromptReplay !== false) promptBubble.append(button('▶', () => playAudio(prompt.turnKey), 'play small'));
   row.append(promptBubble); card.append(row);
   const responseBox = el('div', 'response');
-  responseBox.append(el('div', 'response-label', 'جواب تو'));
+  const learnerCharacter = course.characters.find(c => c.characterKey === response.characterKey);
+  responseBox.append(el('div', 'response-label', 'پاسخ تو در نقش ' + (learnerCharacter?.metadata?.nameFa || learnerCharacter?.name || '')));
+  responseBox.dataset.characterKey = response.characterKey;
   const responseBubble = turnBubble(response, true, config);
   if (exchange.allowResponseModelAudio) responseBubble.append(button('▶', () => playAudio(response.turnKey), 'play'));
   responseBox.append(responseBubble); card.append(responseBox);
@@ -228,6 +230,10 @@ function showStep(index) {
   const {activity, exchange} = steps[step];
   host.dataset.activityKey = activity.activityKey;
   host.append(el('div', 'tag', lesson.titleFa));
+  const learnerCharacter = course.characters.find(c => c.characterKey === lesson.curriculum.story.learnerRoleKey);
+  const roleLabel = el('div', 'role-label', 'نقش تو: ' + (learnerCharacter?.metadata?.nameFa || learnerCharacter?.name || ''));
+  roleLabel.dataset.characterKey = lesson.curriculum.story.learnerRoleKey;
+  host.append(roleLabel);
   if (step === 0) host.append(el('p', 'explanation story-context', lesson.scenarioFa));
   host.append(el('p', 'sub', activity.instructionFa));
   if (activity.promptFa || activity.promptEn) host.append(el('div', activity.promptFa ? 'question' : 'en', activity.promptFa || activity.promptEn));

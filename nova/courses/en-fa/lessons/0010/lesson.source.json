@@ -1,16 +1,16 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0010",
   "sortOrder": 10,
-  "titleEn": "Choose a drink",
-  "titleFa": "چای یا قهوه؟",
-  "descriptionFa": "روز بعد دوباره به همان کافه می روی. بن دو نوشیدنی پیشنهاد می کند و تو یکی را انتخاب می کنی. نقش تو الکس است.",
+  "titleEn": "Drinks after the walk",
+  "titleFa": "استراحت بعد از پیاده روی",
+  "descriptionFa": "در دورهمی بعدی گروه پیاده روی، استراحت می کنید. سارا که قبلا با او آشنا شده ای از نوشیدنی های میز به تو پیشنهاد می دهد.",
   "primaryOutcomeKey": "A1-INTERACTION-CHOOSE-DRINK",
   "outcomeFa": "می توانی پیشنهاد دو نوشیدنی را بفهمی و انتخابت را کوتاه و مودبانه بگویی.",
-  "scenarioFa": "روز بعد دوباره به همان کافه می روی. بن دو نوشیدنی پیشنهاد می کند و تو یکی را انتخاب می کنی. نقش تو الکس است.",
+  "scenarioFa": "در دورهمی بعدی گروه پیاده روی، استراحت می کنید. سارا که قبلا با او آشنا شده ای از نوشیدنی های میز به تو پیشنهاد می دهد. نقش تو روبی است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-ORDER-DRINK"
   ],
@@ -27,21 +27,24 @@
     "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Select coffee in a social visit instead of repeating the tea order at the cafe."
+      "intent": "Select a different drink in the walking-group scene after a modeled tea choice; reuse cafe language without continuing the cafe story."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-WALKING-GROUP",
       "sceneKey": "EN-A1-SCENE-0010",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "ruby",
       "participants": [
-        "ben"
+        "ruby",
+        "sara"
       ],
-      "firstMeetings": [],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0005",
       "dependsOnLessonKeys": [
-        "EN-A1-L-0009"
+        "EN-A1-L-0005"
       ],
-      "settingFa": "همان کافه، روز بعد",
-      "storyBeatFa": "بن و الکس دوباره معامله ساده ای دارند؛ اسم هم را دوباره نمی پرسند."
+      "settingFa": "میز نوشیدنی گروه در پارک، بعد از پیاده روی",
+      "storyBeatFa": "روبی و سارا پس از آشنایی قبلی، زمان استراحت گروه را با هم می گذرانند."
     },
     "reviewLinks": [
       {
@@ -126,7 +129,7 @@
       "textEn": "Tea or coffee?",
       "translationFa": "چای یا قهوه؟",
       "audioRequired": true,
-      "characterKey": "ben"
+      "characterKey": "sara"
     },
     {
       "turnKey": "T02",
@@ -137,7 +140,8 @@
       "speechTargetEn": "Tea, please.",
       "acceptedSpeechEn": [
         "Tea, please."
-      ]
+      ],
+      "characterKey": "ruby"
     },
     {
       "turnKey": "T03",
@@ -145,7 +149,7 @@
       "textEn": "Here you go.",
       "translationFa": "بفرما.",
       "audioRequired": true,
-      "characterKey": "ben"
+      "characterKey": "sara"
     },
     {
       "turnKey": "T04",
@@ -156,7 +160,8 @@
       "speechTargetEn": "Thanks.",
       "acceptedSpeechEn": [
         "Thanks."
-      ]
+      ],
+      "characterKey": "ruby"
     },
     {
       "turnKey": "T05",
@@ -164,7 +169,7 @@
       "textEn": "Water or tea?",
       "translationFa": "آب یا چای؟",
       "audioRequired": true,
-      "characterKey": "ben"
+      "characterKey": "sara"
     }
   ],
   "activities": [
@@ -181,7 +186,7 @@
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف سارا را گوش کن و پاسخ روبی را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -224,7 +229,7 @@
         "answerIndex": 2,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "این بار بن بین کدام نوشیدنی ها حق انتخاب می دهد؟",
+      "promptFa": "این بار سارا بین کدام نوشیدنی ها حق انتخاب می دهد؟",
       "metadata": {
         "learningDemand": "retrieval",
         "purpose": "Unseen offer changes one drink and its order."
@@ -242,7 +247,7 @@
         ],
         "answerIndex": 0
       },
-      "promptFa": "در خانه یک دوست، بین چای و قهوه حق انتخاب داری و قهوه می خواهی. چه می گویی؟",
+      "promptFa": "کنار میز گروه، بین چای و قهوه حق انتخاب داری و قهوه می خواهی. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
         "purpose": "changed_context"

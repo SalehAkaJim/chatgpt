@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
@@ -7,10 +7,10 @@
   "sortOrder": 4,
   "titleEn": "When you miss a question",
   "titleFa": "وقتی حرفی را نمی شنوی",
-  "descriptionFa": "در راهروی شلوغ کلاس، نورا چیزی می پرسد و بار اول درست نمی شنوی. نقش تو الکس است.",
+  "descriptionFa": "وارد کتابخانه می شوی. لیو، کتابدار، چیزی می پرسد ولی صدای در نمی گذارد درست بشنوی.",
   "primaryOutcomeKey": "A1-INTERACTION-ASK-REPEAT",
   "outcomeFa": "می توانی با یک درخواست کوتاه از طرف مقابل بخواهی حرفش را تکرار کند.",
-  "scenarioFa": "در راهروی شلوغ کلاس، نورا چیزی می پرسد و بار اول درست نمی شنوی. نقش تو الکس است.",
+  "scenarioFa": "وارد کتابخانه می شوی. لیو، کتابدار، چیزی می پرسد ولی صدای در نمی گذارد درست بشنوی. نقش تو لیام است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-GREET-STATE-CLOSE"
   ],
@@ -21,22 +21,25 @@
     "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Select a repair request for an unheard message at a door."
+      "intent": "Choose a repair for an unheard library announcement."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-LIBRARY",
       "sceneKey": "EN-A1-SCENE-0004",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "liam",
       "participants": [
-        "nora"
+        "liam",
+        "leo"
       ],
-      "firstMeetings": [],
-      "dependsOnLessonKeys": [
-        "EN-A1-L-0002",
-        "EN-A1-L-0003"
+      "introducedCharacterKeys": [
+        "liam",
+        "leo"
       ],
-      "settingFa": "راهروی شلوغ کلاس",
-      "storyBeatFa": "الکس از نورا که قبلا با او آشنا شده می خواهد سوالش را تکرار کند."
+      "relationshipState": "first_meeting",
+      "continuesLessonKey": null,
+      "dependsOnLessonKeys": [],
+      "settingFa": "ورودی کتابخانه، کنار در پر سر و صدا",
+      "storyBeatFa": "لیام از کتابدار می خواهد سوالش را تکرار کند."
     },
     "reviewLinks": [
       {
@@ -93,7 +96,7 @@
       "textEn": "How are you?",
       "translationFa": "حالت چطوره؟",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "leo"
     },
     {
       "turnKey": "T02",
@@ -104,7 +107,8 @@
       "speechTargetEn": "Sorry?",
       "acceptedSpeechEn": [
         "Sorry?"
-      ]
+      ],
+      "characterKey": "liam"
     },
     {
       "turnKey": "T03",
@@ -112,7 +116,7 @@
       "textEn": "How are you?",
       "translationFa": "حالت چطوره؟",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "leo"
     },
     {
       "turnKey": "T04",
@@ -123,7 +127,8 @@
       "speechTargetEn": "I'm fine, thanks.",
       "acceptedSpeechEn": [
         "I'm fine, thanks."
-      ]
+      ],
+      "characterKey": "liam"
     }
   ],
   "activities": [
@@ -140,7 +145,7 @@
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف لیو را گوش کن و پاسخ لیام را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -183,7 +188,7 @@
         "answerIndex": 1,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "نورا بعد از درخواست تکرار چه چیزی می پرسد؟",
+      "promptFa": "لیو بعد از درخواست تکرار چه چیزی می پرسد؟",
       "metadata": {
         "learningDemand": "recognition",
         "purpose": "recognition"
@@ -201,10 +206,10 @@
         ],
         "answerIndex": 1
       },
-      "promptFa": "صدای کسی از پشت در می آید و حرفش را نمی شنوی. چه می گویی؟",
+      "promptFa": "صدای اعلام کتابخانه را درست نمی شنوی. از کتابدار می خواهی حرفش را تکرار کند. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "Use repair after an unheard message, not just the modeled wellbeing question."
+        "purpose": "Use a repeat request for an unheard announcement, not just the modeled greeting."
       },
       "activityKey": "A04"
     }

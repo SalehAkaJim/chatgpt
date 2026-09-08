@@ -138,6 +138,9 @@ def check(root, database, host, user):
         count(f'SELECT COUNT(*) FROM lessons l JOIN levels lv ON lv.id=l.level_id JOIN courses c ON c.id=lv.course_id WHERE c.course_key={code} AND lv.level_key={level} AND l.lesson_key={key};', 1)
         for table, field in [('activities', 'activities'), ('lesson_turns', 'turns'), ('lesson_lexical_items', 'lexicalItems')]:
             count(f'SELECT COUNT(*) FROM {table} WHERE {where};', len(lesson.get(field, [])))
+        for turn in lesson['turns']:
+            if turn.get('characterKey'):
+                count(f"SELECT COUNT(*) FROM lesson_turns t JOIN characters c ON c.id=t.character_id WHERE t.lesson_id={lesson_id} AND t.turn_key={q(turn['turnKey'])} AND t.role={q(turn['role'])} AND c.character_key={q(turn['characterKey'])};", 1)
         manifest = load(source.parent / 'audio.manifest.json')
         for item in manifest['items']:
             if item['audioClass'] == 'turn':
@@ -151,6 +154,8 @@ def check(root, database, host, user):
              'lessonKey': lesson['lessonKey'], 'sourceHash': hashlib.sha256(source.read_bytes()).hexdigest(),
              'courseSourceHash': hashlib.sha256(record['coursePath'].read_bytes()).hexdigest(),
              'activities': len(lesson['activities']), 'turns': len(lesson['turns']), 'reimportPassed': True,
+             'playedCharacterKey': lesson.get('curriculum', {}).get('story', {}).get('learnerRoleKey'),
+             'speakerIdentityPassed': True,
              'stableIdsPassed': True, 'stableIdChecks': ['identical_reimport', 'content_edit', 'reorder',
                  'insert', 'expanded_reimport', 'remove_absent_keys', 'sibling_isolation', 'foreign_key_references']})
     sql('DROP TABLE nova_test_identity_refs;')

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
@@ -7,10 +7,10 @@
   "sortOrder": 5,
   "titleEn": "Where are you from?",
   "titleFa": "اهل کجایی؟",
-  "descriptionFa": "وقت استراحت کلاس، نورا می خواهد بیشتر با تو آشنا شود. این بار درباره اهل کجا بودن حرف می زنید. نقش تو الکس است.",
+  "descriptionFa": "به یک گروه پیاده روی پیوسته ای. پیش از حرکت، سارا سر صحبت را باز می کند تا با تو آشنا شود.",
   "primaryOutcomeKey": "A1-INTERACTION-COUNTRY",
   "outcomeFa": "می توانی بگویی اهل کجایی و همین اطلاعات را درباره طرف مقابل بفهمی.",
-  "scenarioFa": "وقت استراحت کلاس، نورا می خواهد بیشتر با تو آشنا شود. این بار درباره اهل کجا بودن حرف می زنید. نقش تو الکس است.",
+  "scenarioFa": "به یک گروه پیاده روی پیوسته ای. پیش از حرکت، سارا سر صحبت را باز می کند تا با تو آشنا شود. نقش تو روبی است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-FIRST-MEETING",
     "A1-INTERACTION-ASK-REPEAT"
@@ -36,19 +36,22 @@
       "intent": "Choose the country question for an already named person in a different gathering."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-WALKING-GROUP",
       "sceneKey": "EN-A1-SCENE-0005",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "ruby",
       "participants": [
-        "nora"
+        "ruby",
+        "sara"
       ],
-      "firstMeetings": [],
-      "dependsOnLessonKeys": [
-        "EN-A1-L-0002",
-        "EN-A1-L-0004"
+      "introducedCharacterKeys": [
+        "ruby",
+        "sara"
       ],
-      "settingFa": "وقت استراحت کلاس",
-      "storyBeatFa": "نورا و الکس بعد از آشنایی قبلی، کشور خود را به هم می گویند."
+      "relationshipState": "first_meeting",
+      "continuesLessonKey": null,
+      "dependsOnLessonKeys": [],
+      "settingFa": "پارک، پیش از شروع پیاده روی گروهی",
+      "storyBeatFa": "روبی و سارا درباره اهل کجا بودن حرف می زنند."
     },
     "reviewLinks": [
       {
@@ -125,7 +128,7 @@
       "textEn": "Where are you from?",
       "translationFa": "اهل کجایی؟",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "sara"
     },
     {
       "turnKey": "T02",
@@ -136,7 +139,8 @@
       "speechTargetEn": "I'm from Iran.",
       "acceptedSpeechEn": [
         "I'm from Iran."
-      ]
+      ],
+      "characterKey": "ruby"
     },
     {
       "turnKey": "T03",
@@ -144,7 +148,7 @@
       "textEn": "I'm from Canada.",
       "translationFa": "من اهل کانادا هستم.",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "sara"
     },
     {
       "turnKey": "T04",
@@ -155,7 +159,8 @@
       "speechTargetEn": "Nice!",
       "acceptedSpeechEn": [
         "Nice!"
-      ]
+      ],
+      "characterKey": "ruby"
     }
   ],
   "activities": [
@@ -169,13 +174,13 @@
           "EN-LEX-CANADA-01",
           "EN-LEX-NICE-01"
         ],
-        "explanationFa": "Where are you from? یعنی اهل کجایی؟ در I'm from Iran بعد از from نام کشور می آید. در این داستان الکس اهل ایران است. Nice! فقط یک واکنش دوستانه است."
+        "explanationFa": "Where are you from? یعنی اهل کجایی؟ در I'm from Iran بعد از from نام کشور می آید. در این داستان روبی اهل ایران است. Nice! فقط یک واکنش دوستانه است."
       },
       "activityKey": "A01"
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف سارا را گوش کن و پاسخ روبی را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -252,7 +257,7 @@
         "answerIndex": 1,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "نورا درباره خودش چه می گوید؟",
+      "promptFa": "سارا درباره خودش چه می گوید؟",
       "metadata": {
         "learningDemand": "recognition",
         "purpose": "recognition"

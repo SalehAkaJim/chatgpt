@@ -1,16 +1,16 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0002",
   "sortOrder": 2,
-  "titleEn": "Meeting someone in class",
-  "titleFa": "معارفه در کلاس",
-  "descriptionFa": "در کلاس با نورا آشنا می شوی و به خوشحالی او از این آشنایی پاسخ می دهی.",
+  "titleEn": "Meeting a neighbor",
+  "titleFa": "آشنایی با همسایه",
+  "descriptionFa": "تازه به ساختمان آمده ای. نورا همسایه ات است و برای اولین بار با هم آشنا می شوید.",
   "primaryOutcomeKey": "A1-INTERACTION-FIRST-MEETING",
   "outcomeFa": "زبان آموز می تواند خودش را با My name is معرفی کند و به ابراز خوشحالی از آشنایی پاسخ بدهد.",
-  "scenarioFa": "در کلاس، همکلاسی تازه ای به نام نورا کنارت نشسته است. هنوز همدیگر را نمی شناسید. نقش تو الکس است.",
+  "scenarioFa": "تازه به ساختمان آمده ای. نورا همسایه ات است و برای اولین بار با هم آشنا می شوید. نقش تو اوون است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-GREET-NAME"
   ],
@@ -30,20 +30,22 @@
       "intent": "Select an appropriate introduction in response to a teacher, then reuse social interaction in Lesson 0003."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-NEIGHBORS",
       "sceneKey": "EN-A1-SCENE-0002",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "owen",
       "participants": [
+        "owen",
         "nora"
       ],
-      "firstMeetings": [
+      "introducedCharacterKeys": [
+        "owen",
         "nora"
       ],
-      "dependsOnLessonKeys": [
-        "EN-A1-L-0001"
-      ],
-      "settingFa": "داخل کلاس، روز اول",
-      "storyBeatFa": "الکس با نورا که همکلاسی تازه اوست آشنا می شود."
+      "relationshipState": "first_meeting",
+      "continuesLessonKey": null,
+      "dependsOnLessonKeys": [],
+      "settingFa": "راهروی ساختمان، اولین آشنایی",
+      "storyBeatFa": "اوون با همسایه اش نورا آشنا می شود."
     },
     "reviewLinks": [
       {
@@ -109,13 +111,14 @@
     {
       "turnKey": "T02",
       "role": "learner",
-      "textEn": "My name is Alex.",
-      "translationFa": "اسم من الکس است.",
+      "textEn": "My name is Owen.",
+      "translationFa": "اسم من اوون است.",
       "audioRequired": true,
-      "speechTargetEn": "My name is Alex.",
+      "speechTargetEn": "My name is Owen.",
       "acceptedSpeechEn": [
-        "My name is Alex."
-      ]
+        "My name is Owen."
+      ],
+      "characterKey": "owen"
     },
     {
       "turnKey": "T03",
@@ -134,14 +137,15 @@
       "speechTargetEn": "Nice to meet you, too.",
       "acceptedSpeechEn": [
         "Nice to meet you, too."
-      ]
+      ],
+      "characterKey": "owen"
     }
   ],
   "activities": [
     {
       "activityKey": "A01",
       "type": "dialogue",
-      "instructionFa": "حرف نورا را بخوان و گوش کن، بعد پاسخ آماده را با صدای بلند بازخوانی کن.",
+      "instructionFa": "حرف نورا را گوش کن و پاسخ اوون را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -177,7 +181,7 @@
           "EN-LEX-NICE-TO-MEET-YOU-01",
           "EN-LEX-TOO-01"
         ],
-        "explanationFa": "My name is Alex و I'm Alex هر دو برای معرفی اسم هستند. too در آخر پاسخ یعنی من هم همین حس را دارم."
+        "explanationFa": "My name is Owen و I'm Owen هر دو برای معرفی اسم هستند. too در آخر پاسخ یعنی من هم همین حس را دارم."
       }
     },
     {
@@ -188,7 +192,7 @@
         "audioSourceTurnKey": "T02",
         "tokensEn": [
           "is",
-          "Alex.",
+          "Owen.",
           "My",
           "name"
         ],
@@ -196,9 +200,9 @@
           "My",
           "name",
           "is",
-          "Alex."
+          "Owen."
         ],
-        "answerEn": "My name is Alex.",
+        "answerEn": "My name is Owen.",
         "showAnswerTextBeforeAttempt": false,
         "allowAudioReplay": true
       }
@@ -208,7 +212,7 @@
       "type": "fill_blank",
       "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
       "config": {
-        "sentenceEn": "My ___ is Alex.",
+        "sentenceEn": "My ___ is Owen.",
         "optionsEn": [
           "hello",
           "name",
@@ -227,8 +231,8 @@
         ],
         "options": [
           "می خواهد خداحافظی کند",
-          "اسم الکس را دوباره می پرسد",
-          "از آشنایی با الکس خوشحال است"
+          "اسم اوون را دوباره می پرسد",
+          "از آشنایی با اوون خوشحال است"
         ],
         "answerIndex": 2,
         "transcriptAfterAttempt": true
@@ -241,7 +245,7 @@
       "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
       "config": {
         "optionsEn": [
-          "My name is Alex.",
+          "My name is Owen.",
           "What's your name?",
           "Nice to meet you."
         ],

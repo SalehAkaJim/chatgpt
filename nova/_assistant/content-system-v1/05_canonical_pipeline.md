@@ -108,3 +108,6 @@ Fix learner-visible or semantic content in canonical source and regenerate. Do n
 ## Batch rule
 
 During Pilot, deterministic validation/import failures must be repaired before that Lesson is treated as valid. Pending product-owner decisions are explicitly exempt from stopping authoring of later Lessons. After repeated clean Pilot results, generation can be batched without changing quality gates.
+# Played characters
+
+Canonical schema 2.2.0 gives both character and learner Turns a `characterKey`. `role=learner` identifies the person the user plays in this Lesson; it is not a separate permanent character. The existing `lesson_turns.character_id` points to the corresponding character for both roles. No schema migration is required. The Lesson's `curriculum.story.learnerRoleKey` selects the played role, and every Turn uses that character's voice mapping. System Turns remain unassigned. Course-wide learner identity and voice defaults are not used for story Lessons.

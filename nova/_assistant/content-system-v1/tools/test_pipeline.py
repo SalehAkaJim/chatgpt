@@ -11,7 +11,7 @@ import unittest
 from unittest.mock import patch
 import compile_lesson_sql as compiler
 from build_pilot import discover, validate_sequence
-from generate_audio import generate, load, save
+from generate_audio import generate, load, save, collect
 from validate_audio_manifest import validate_audio
 from validate_lesson import validate
 from validate_story import validate_story
@@ -86,7 +86,7 @@ class StoryTests(unittest.TestCase):
         self.assertEqual(validate_story(self.records), [])
 
     def test_repeated_first_meeting_is_rejected(self):
-        self.records[2]['lesson']['curriculum']['story']['firstMeetings'] = ['maya']
+        self.records[5]['lesson']['curriculum']['story']['relationshipState'] = 'first_meeting'
         self.assertTrue(any('relationship reset' in e for e in validate_story(self.records)))
 
     def test_undeclared_speaker_and_role_drift_are_rejected(self):
@@ -95,7 +95,49 @@ class StoryTests(unittest.TestCase):
         story['learnerRoleKey'] = 'someone-else'
         errors = validate_story(self.records)
         self.assertTrue(any('Turn speakers' in e for e in errors))
-        self.assertTrue(any('role drift' in e for e in errors))
+        self.assertTrue(any('learner role' in e for e in errors))
+
+    def test_learner_persona_cannot_repeat_in_the_next_lesson(self):
+        lesson = self.records[1]['lesson']
+        lesson['curriculum']['story']['learnerRoleKey'] = 'alex'
+        lesson['curriculum']['story']['participants'][0] = 'alex'
+        for turn in lesson['turns']:
+            if turn['role'] == 'learner': turn['characterKey'] = 'alex'
+        self.assertTrue(any('character return is too soon: alex' in e for e in validate_story(self.records)))
+
+    def test_relabeling_arc_does_not_hide_repeated_speakers(self):
+        lesson = self.records[1]['lesson']
+        lesson['curriculum']['story']['participants'].append('maya')
+        lesson['turns'].append({'turnKey':'T99','role':'character','characterKey':'maya'})
+        self.assertTrue(any('character return is too soon: maya' in e for e in validate_story(self.records)))
+
+    def test_story_cannot_continue_early_with_a_new_cast(self):
+        self.records[1]['lesson']['curriculum']['story']['arcKey'] = self.records[0]['lesson']['curriculum']['story']['arcKey']
+        self.assertTrue(any('story arc return is too soon' in e for e in validate_story(self.records)))
+
+    def test_variable_returns_pass_and_reorder_is_rechecked(self):
+        self.assertEqual(validate_story(self.records), [])  # Existing gaps include 5, 6 and 7.
+        self.records[2], self.records[5] = self.records[5], self.records[2]
+        self.assertTrue(any('return is too soon' in e for e in validate_story(self.records)))
+
+    def test_played_character_is_validated_compiled_and_voiced(self):
+        record = self.records[1]; lesson, course = record['lesson'], record['course']
+        self.assertEqual(validate(lesson, course)['status'], 'PASS')
+        sql = compiler.compile_sql(course, lesson, 'a'*64)
+        self.assertIn("character_key='owen'", sql)
+        voices = load(ROOT/'nova/courses/en-fa/audio_voices.json')
+        turns = {t['turnKey']:t for t in lesson['turns']}
+        for item in collect(lesson, voices):
+            if item['audioClass']=='turn':
+                self.assertEqual(item['voiceSpec'], voices['characters'][turns[item['sourceKey']]['characterKey']])
+        learner = next(t for t in lesson['turns'] if t['role']=='learner')
+        learner['characterKey']='missing'
+        self.assertEqual(validate(lesson,course)['status'], 'FAIL')
+        with self.assertRaises(ValueError): collect(lesson,voices)
+
+    def test_no_course_wide_learner_fallback(self):
+        self.records[0]['course']['narrative']['learnerRoleKey']='alex'
+        self.assertTrue(any('Course-wide learner' in e for e in validate_story(self.records)))
 
     def test_future_dependency_and_invalid_review_are_rejected(self):
         lesson = self.records[1]['lesson']

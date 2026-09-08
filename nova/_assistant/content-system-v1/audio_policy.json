@@ -7,7 +7,12 @@
   "turnAudio": {
     "requiredByDefault": true,
     "voiceMode": "character_voice_key",
-    "pathTemplate": "nova/audio/turns/{course}/{lessonKey}/{turnKey}.mp3"
+    "pathTemplate": "nova/audio/turns/{course}/{lessonKey}/{turnKey}.mp3",
+    "characterIdentityRequiredForRoles": [
+      "character",
+      "learner"
+    ],
+    "courseWideLearnerVoiceAllowed": false
   },
   "lexicalAudio": {
     "enabled": true,

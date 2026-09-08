@@ -63,6 +63,7 @@ async function complete(number, mutate=null, review=false) {
   const lesson=lessons[number-1];
   assert.equal(d.querySelectorAll('#lessonSelect option').length,sources.length);
   assert.equal(d.querySelector('.story-context').textContent,lesson.scenarioFa);
+  assert.equal(d.querySelector('.role-label').dataset.characterKey,lesson.curriculum.story.learnerRoleKey);
   let didWrongChoice=false,didWrongOrder=false;
   for(let iteration=0;iteration<45;iteration++) {
     await settle();
@@ -76,6 +77,7 @@ async function complete(number, mutate=null, review=false) {
       const exchange = activity.config.exchanges.find(e => lesson.turns.find(t=>t.turnKey===e.responseTurnKey).textEn === d.querySelector('.bubble.you .en').textContent);
       const prompt = lesson.turns.find(t=>t.turnKey===exchange.promptTurnKey);
       assert.equal(shown,course.characters.find(c=>c.characterKey===prompt.characterKey).name,'Canonical character identity must survive navigation');
+      assert.equal(d.querySelector('.response').dataset.characterKey,lesson.curriculum.story.learnerRoleKey,'Played role must belong to this Lesson');
       d.querySelector(review ? '.test-pass' : '.mic').click();continue;
     }
     if(activity.type==='lexical_teach') {d.querySelector('#screens .play')?.click();d.getElementById('nextBtn').click();continue;}
@@ -105,6 +107,7 @@ async function complete(number, mutate=null, review=false) {
   const select=d.getElementById('lessonSelect');select.value=String(other);select.dispatchEvent(new w.Event('change'));await settle();
   for(let i=0;i<100 && d.querySelector('#screens .tag')?.textContent!==lessons[other].titleFa;i++)await settle();
   assert.equal(d.querySelector('#screens .tag')?.textContent,lessons[other].titleFa);
+  assert.equal(d.querySelector('.role-label').dataset.characterKey,lessons[other].curriculum.story.learnerRoleKey,'Changing Lessons must change the displayed played role');
   assert.equal(d.querySelector('#screens h1'),null);
   dom.window.close();
 }

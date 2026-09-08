@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
@@ -7,10 +7,10 @@
   "sortOrder": 11,
   "titleEn": "Accept or decline",
   "titleFa": "قبول یا رد کردن پیشنهاد",
-  "descriptionFa": "بعد از کلاس، با نورا در کافه نشسته ای. او از نوشیدنی های روی میز به تو تعارف می کند. نقش تو الکس است.",
+  "descriptionFa": "این بار برای یک برنامه کتابخوانی به کتابخانه برگشته ای. لیو کنار میز پذیرایی کمک می کند و به تو نوشیدنی تعارف می کند.",
   "primaryOutcomeKey": "A1-INTERACTION-ACCEPT-DECLINE",
   "outcomeFa": "می توانی یک پیشنهاد ساده را مودبانه قبول یا رد کنی و نوشیدنی دیگری بخواهی.",
-  "scenarioFa": "بعد از کلاس، با نورا در کافه نشسته ای. او از نوشیدنی های روی میز به تو تعارف می کند. نقش تو الکس است.",
+  "scenarioFa": "این بار برای یک برنامه کتابخوانی به کتابخانه برگشته ای. لیو کنار میز پذیرایی کمک می کند و به تو نوشیدنی تعارف می کند. نقش تو لیام است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-CHOOSE-DRINK",
     "A1-INTERACTION-FIRST-MEETING"
@@ -22,23 +22,24 @@
     "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Choose refusal and acceptance for a social visit; selection is distinct from guided speech."
+      "intent": "Choose acceptance and refusal at the library event; only recognition/selection is assessed."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-LIBRARY",
       "sceneKey": "EN-A1-SCENE-0011",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "liam",
       "participants": [
-        "nora"
+        "liam",
+        "leo"
       ],
-      "firstMeetings": [],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0004",
       "dependsOnLessonKeys": [
-        "EN-A1-L-0002",
-        "EN-A1-L-0009",
-        "EN-A1-L-0010"
+        "EN-A1-L-0004"
       ],
-      "settingFa": "میز کافه، بعد از کلاس",
-      "storyBeatFa": "نورا همکلاسی است و کنار الکس نشسته؛ او کارمند کافه نشده و از نوشیدنی های میز تعارف می کند."
+      "settingFa": "برنامه کتابخوانی کتابخانه، میز پذیرایی",
+      "storyBeatFa": "لیام کتابدار را در برنامه کتابخوانی دوباره می بیند و یک پیشنهاد را رد می کند."
     },
     "reviewLinks": [
       {
@@ -140,7 +141,7 @@
       "textEn": "Coffee?",
       "translationFa": "قهوه می خوای؟",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "leo"
     },
     {
       "turnKey": "T02",
@@ -151,7 +152,8 @@
       "speechTargetEn": "No, thanks. Water, please.",
       "acceptedSpeechEn": [
         "No, thanks. Water, please."
-      ]
+      ],
+      "characterKey": "liam"
     },
     {
       "turnKey": "T03",
@@ -159,7 +161,7 @@
       "textEn": "Here you go.",
       "translationFa": "بفرما.",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "leo"
     },
     {
       "turnKey": "T04",
@@ -170,7 +172,8 @@
       "speechTargetEn": "Thanks!",
       "acceptedSpeechEn": [
         "Thanks!"
-      ]
+      ],
+      "characterKey": "liam"
     },
     {
       "turnKey": "T05",
@@ -178,7 +181,7 @@
       "textEn": "Tea?",
       "translationFa": "چای می خوای؟",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "leo"
     },
     {
       "turnKey": "T06",
@@ -189,7 +192,8 @@
       "speechTargetEn": "Yes, please.",
       "acceptedSpeechEn": [
         "Yes, please."
-      ]
+      ],
+      "characterKey": "liam"
     }
   ],
   "activities": [
@@ -207,7 +211,7 @@
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف لیو را گوش کن و پاسخ لیام را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -265,7 +269,7 @@
         ],
         "answerIndex": 1
       },
-      "promptFa": "کسی در یک مهمانی چای تعارف می کند. نوشیدنی نمی خواهی. چه می گویی؟",
+      "promptFa": "کنار میز پذیرایی کتابخانه چای تعارف می کنند. نوشیدنی نمی خواهی. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
         "purpose": "changed_context"
@@ -283,7 +287,7 @@
         ],
         "answerIndex": 2
       },
-      "promptFa": "در همان مهمانی آب تعارف می کنند و این بار می خواهی قبول کنی. چه می گویی؟",
+      "promptFa": "کمی بعد در همان برنامه آب تعارف می کنند و این بار می خواهی قبول کنی. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
         "purpose": "changed_context"

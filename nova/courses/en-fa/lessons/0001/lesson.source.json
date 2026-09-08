@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
@@ -7,10 +7,10 @@
   "sortOrder": 1,
   "titleEn": "Hello! What's your name?",
   "titleFa": "سلام! اسمت چیه؟",
-  "descriptionFa": "اولین مکالمه کوتاه: سلام کردن، معرفی خود و پرسیدن اسم.",
+  "descriptionFa": "برای شروع کلاس آمده ای و با همکلاسی تازه ات مایا آشنا می شوی.",
   "primaryOutcomeKey": "A1-INTERACTION-GREET-NAME",
   "outcomeFa": "زبان آموز می تواند سلام کند، خودش را کوتاه معرفی کند و اسم طرف مقابل را بپرسد.",
-  "scenarioFa": "برای اولین بار با مایا آشنا می شوی.",
+  "scenarioFa": "برای شروع کلاس آمده ای و با همکلاسی تازه ات مایا آشنا می شوی. نقش تو الکس است.",
   "prerequisiteOutcomeKeys": [],
   "curriculum": {
     "startingKnowledge": "absolute_zero",
@@ -34,18 +34,22 @@
       "intent": "Reuse greeting and name language in a changed first-meeting context, then introduce My name is + name and polite first-meeting language."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-CLASSMATES",
       "sceneKey": "EN-A1-SCENE-0001",
       "learnerRoleKey": "alex",
       "participants": [
+        "alex",
         "maya"
       ],
-      "firstMeetings": [
+      "introducedCharacterKeys": [
+        "alex",
         "maya"
       ],
+      "relationshipState": "first_meeting",
+      "continuesLessonKey": null,
       "dependsOnLessonKeys": [],
-      "settingFa": "ورودی کلاس، روز اول",
-      "storyBeatFa": "الکس و مایا برای اولین بار اسم هم را می پرسند."
+      "settingFa": "ورودی کلاس، اولین آشنایی",
+      "storyBeatFa": "الکس و مایا برای اولین بار خودشان را معرفی می کنند."
     },
     "reviewLinks": []
   },
@@ -91,7 +95,8 @@
       "acceptedSpeechEn": [
         "Hello!"
       ],
-      "audioRequired": true
+      "audioRequired": true,
+      "characterKey": "alex"
     },
     {
       "turnKey": "T03",
@@ -110,14 +115,15 @@
       "acceptedSpeechEn": [
         "I'm Alex."
       ],
-      "audioRequired": true
+      "audioRequired": true,
+      "characterKey": "alex"
     }
   ],
   "activities": [
     {
       "activityKey": "A01",
       "type": "dialogue",
-      "instructionFa": "حرف مایا را بخوان و گوش کن، بعد جواب آماده را با صدای بلند بازخوانی کن.",
+      "instructionFa": "حرف مایا را گوش کن و پاسخ الکس را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [

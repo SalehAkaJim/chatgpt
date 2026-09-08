@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
@@ -7,10 +7,10 @@
   "sortOrder": 6,
   "titleEn": "Things on the desk",
   "titleFa": "وسایل روی میز",
-  "descriptionFa": "در یک تمرین کلاسی، مایا به وسایل اشاره می کند و تو اسمشان را می گویی. نقش تو الکس است.",
+  "descriptionFa": "دوباره به کلاس برگشته ای و این بار با مایا هم گروه هستی. در تمرین نام وسایل، او اشاره می کند و تو پاسخ می دهی.",
   "primaryOutcomeKey": "A1-INTERACTION-NAME-OBJECT",
   "outcomeFa": "می توانی نام یک وسیله ساده را بپرسی و خودکار و کتاب را معرفی کنی.",
-  "scenarioFa": "در یک تمرین کلاسی، مایا به وسایل اشاره می کند و تو اسمشان را می گویی. نقش تو الکس است.",
+  "scenarioFa": "دوباره به کلاس برگشته ای و این بار با مایا هم گروه هستی. در تمرین نام وسایل، او اشاره می کند و تو پاسخ می دهی. نقش تو الکس است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-GREET-NAME",
     "A1-INTERACTION-COUNTRY"
@@ -37,19 +37,21 @@
       "intent": "Use pen/book as objects of a real request rather than naming prompted objects."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-CLASSMATES",
       "sceneKey": "EN-A1-SCENE-0006",
       "learnerRoleKey": "alex",
       "participants": [
+        "alex",
         "maya"
       ],
-      "firstMeetings": [],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0001",
       "dependsOnLessonKeys": [
-        "EN-A1-L-0001",
-        "EN-A1-L-0005"
+        "EN-A1-L-0001"
       ],
-      "settingFa": "میز کلاس، تمرین دو نفره",
-      "storyBeatFa": "مایا در یک تمرین واقعی کلاسی از الکس نام دو وسیله را می پرسد."
+      "settingFa": "کلاس، تمرین دو نفره در جلسه بعدی",
+      "storyBeatFa": "آشنایی الکس و مایا به همکاری در یک تمرین کلاسی رسیده است."
     },
     "reviewLinks": [
       {
@@ -129,7 +131,8 @@
       "speechTargetEn": "It's a pen.",
       "acceptedSpeechEn": [
         "It's a pen."
-      ]
+      ],
+      "characterKey": "alex"
     },
     {
       "turnKey": "T03",
@@ -148,7 +151,8 @@
       "speechTargetEn": "It's a book.",
       "acceptedSpeechEn": [
         "It's a book."
-      ]
+      ],
+      "characterKey": "alex"
     }
   ],
   "activities": [
@@ -168,7 +172,7 @@
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف مایا را گوش کن و پاسخ الکس را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [

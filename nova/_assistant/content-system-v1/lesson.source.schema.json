@@ -10,7 +10,7 @@
     "outcomeFa","scenarioFa","lexicalItems","turns","activities"
   ],
   "properties": {
-    "schemaVersion": {"const": "2.1.0"},
+    "schemaVersion": {"const": "2.2.0"},
     "contentSystemVersion": {"const": "1"},
     "courseCode": {"type": "string", "minLength": 1},
     "levelKey": {"type": "string", "minLength": 1},
@@ -64,6 +64,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["turnKey","role","textEn","translationFa","audioRequired"],
+      "allOf": [{"if":{"properties":{"role":{"enum":["character","learner"]}}},"then":{"required":["characterKey"]}}],
       "properties": {
         "turnKey": {"type": "string", "pattern": "^T[0-9]{2,3}$"},
         "role": {"enum": ["character","learner","system"]},

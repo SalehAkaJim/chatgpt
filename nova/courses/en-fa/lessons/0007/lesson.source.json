@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
@@ -7,10 +7,10 @@
   "sortOrder": 7,
   "titleEn": "Ask for a pen",
   "titleFa": "یک خودکار می خوام",
-  "descriptionFa": "برای نوشتن در کلاس خودکار نداری. از مایا کمک می گیری؛ بعد او هم چیزی از تو می خواهد. نقش تو الکس است.",
+  "descriptionFa": "برای امضای رسید یک بسته خودکار نداری. از نورا که قبلا با او آشنا شده ای کمک می گیری؛ بعد او هم چیزی از تو می خواهد.",
   "primaryOutcomeKey": "A1-INTERACTION-REQUEST-OBJECT",
   "outcomeFa": "می توانی یک وسیله را مودبانه درخواست کنی و هنگام گرفتن آن تشکر کنی.",
-  "scenarioFa": "برای نوشتن در کلاس خودکار نداری. از مایا کمک می گیری؛ بعد او هم چیزی از تو می خواهد. نقش تو الکس است.",
+  "scenarioFa": "برای امضای رسید یک بسته خودکار نداری. از نورا که قبلا با او آشنا شده ای کمک می گیری؛ بعد او هم چیزی از تو می خواهد. نقش تو اوون است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-NAME-OBJECT",
     "A1-INTERACTION-GREET-STATE-CLOSE"
@@ -28,21 +28,24 @@
     "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Change pen to book and classroom peer to librarian while keeping a practical request."
+      "intent": "Change the requested object from a pen for a delivery receipt to a book borrowed from a neighbor."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-NEIGHBORS",
       "sceneKey": "EN-A1-SCENE-0007",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "owen",
       "participants": [
-        "maya"
+        "owen",
+        "nora"
       ],
-      "firstMeetings": [],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0002",
       "dependsOnLessonKeys": [
-        "EN-A1-L-0006"
+        "EN-A1-L-0002"
       ],
-      "settingFa": "کلاس، پیش از نوشتن",
-      "storyBeatFa": "الکس از مایا خودکار می گیرد؛ مایا سپس یک کتاب می خواهد."
+      "settingFa": "جلوی در همسایه، هنگام گرفتن یک بسته",
+      "storyBeatFa": "اوون برای امضای رسید از همسایه اش خودکار می گیرد."
     },
     "reviewLinks": [
       {
@@ -52,7 +55,7 @@
           "A05"
         ],
         "learningDemand": "transfer",
-        "note": "Recognize and request a different classroom object in a functional exchange."
+        "note": "Use classroom object names to make a practical request in a building."
       }
     ]
   },
@@ -117,10 +120,10 @@
     {
       "turnKey": "T01",
       "role": "character",
-      "textEn": "Hello, Alex.",
-      "translationFa": "سلام الکس.",
+      "textEn": "Hello, Owen.",
+      "translationFa": "سلام اوون.",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "nora"
     },
     {
       "turnKey": "T02",
@@ -131,7 +134,8 @@
       "speechTargetEn": "Can I have a pen, please?",
       "acceptedSpeechEn": [
         "Can I have a pen, please?"
-      ]
+      ],
+      "characterKey": "owen"
     },
     {
       "turnKey": "T03",
@@ -139,7 +143,7 @@
       "textEn": "Here you go.",
       "translationFa": "بفرما.",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "nora"
     },
     {
       "turnKey": "T04",
@@ -150,7 +154,8 @@
       "speechTargetEn": "Thanks!",
       "acceptedSpeechEn": [
         "Thanks!"
-      ]
+      ],
+      "characterKey": "owen"
     },
     {
       "turnKey": "T05",
@@ -158,7 +163,7 @@
       "textEn": "Can I have a book, please?",
       "translationFa": "می شه لطفا یک کتاب به من بدی؟",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "nora"
     }
   ],
   "activities": [
@@ -176,7 +181,7 @@
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف نورا را گوش کن و پاسخ اوون را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -246,7 +251,7 @@
         "answerIndex": 1,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "حالا مایا از تو چه چیزی می خواهد؟",
+      "promptFa": "حالا نورا از تو چه چیزی می خواهد؟",
       "metadata": {
         "learningDemand": "retrieval",
         "purpose": "A new request is heard only in this task, with the requested object changed."
@@ -264,7 +269,7 @@
         ],
         "answerIndex": 1
       },
-      "promptFa": "در کتابخانه می خواهی یک کتاب را از دست کتابدار بگیری. چه می گویی؟",
+      "promptFa": "در ساختمان می خواهی یک کتاب را از همسایه ات قرض بگیری. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
         "purpose": "changed_context"

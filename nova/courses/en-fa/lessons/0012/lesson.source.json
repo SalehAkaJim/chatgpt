@@ -1,16 +1,16 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0012",
   "sortOrder": 12,
-  "titleEn": "Correct the order",
-  "titleFa": "سفارشم چای بود",
-  "descriptionFa": "در مراجعه بعدی به کافه چای سفارش داده ای، ولی بن موقع تحویل، قهوه را جلو می آورد. سفارشت را روشن می کنی. نقش تو الکس است.",
+  "titleEn": "Correct the classroom request",
+  "titleFa": "خودکار خواستم، نه کتاب",
+  "descriptionFa": "دوباره کنار مایا در کلاس هستی. برای تمرین نوشتن خودکار خواسته ای، ولی او کتاب را به طرفت می گیرد. درخواستت را روشن می کنی.",
   "primaryOutcomeKey": "A1-INTERACTION-CORRECT-REQUEST",
   "outcomeFa": "می توانی یک برداشت اشتباه از درخواستت را با نه و نام چیز درست، مودبانه اصلاح کنی.",
-  "scenarioFa": "در مراجعه بعدی به کافه چای سفارش داده ای، ولی بن موقع تحویل، قهوه را جلو می آورد. سفارشت را روشن می کنی. نقش تو الکس است.",
+  "scenarioFa": "دوباره کنار مایا در کلاس هستی. برای تمرین نوشتن خودکار خواسته ای، ولی او کتاب را به طرفت می گیرد. درخواستت را روشن می کنی. نقش تو الکس است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-ACCEPT-DECLINE",
     "A1-INTERACTION-REQUEST-OBJECT"
@@ -27,24 +27,26 @@
     "supportLanguage": [],
     "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
     "transferPlan": {
-      "mode": "same_lesson",
-      "intent": "Repair a classroom pen request after learning to repair a drink order."
+      "mode": "deferred",
+      "targetLesson": "EN-A1-L-0013",
+      "intent": "Recombine a correction with a practical borrowing request between neighbors; a different pair plays the next scene."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-CLASSMATES",
       "sceneKey": "EN-A1-SCENE-0012",
       "learnerRoleKey": "alex",
       "participants": [
-        "ben"
+        "alex",
+        "maya"
       ],
-      "firstMeetings": [],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0006",
       "dependsOnLessonKeys": [
-        "EN-A1-L-0009",
-        "EN-A1-L-0010",
-        "EN-A1-L-0011"
+        "EN-A1-L-0006"
       ],
-      "settingFa": "همان کافه، مراجعه بعدی",
-      "storyBeatFa": "بن سفارش را اشتباه تحویل می دهد و پس از اصلاح الکس عذرخواهی می کند."
+      "settingFa": "کلاس، آماده شدن برای یک تمرین نوشتاری",
+      "storyBeatFa": "الکس و مایا پیش از نوشتن، اشتباه در دادن یک وسیله را برطرف می کنند."
     },
     "reviewLinks": [
       {
@@ -52,16 +54,16 @@
         "activityKeys": [
           "A04"
         ],
-        "learningDemand": "transfer",
-        "note": "Use a refusal to correct an object request."
+        "learningDemand": "retrieval",
+        "note": "Use no to correct a request rather than decline a drink."
       },
       {
         "lessonKey": "EN-A1-L-0007",
         "activityKeys": [
           "A04"
         ],
-        "learningDemand": "transfer",
-        "note": "Recombine object nouns and politeness in a request repair."
+        "learningDemand": "retrieval",
+        "note": "Retrieve book and pen while correcting the intended object."
       }
     ]
   },
@@ -143,29 +145,30 @@
     {
       "turnKey": "T01",
       "role": "character",
-      "textEn": "Coffee?",
-      "translationFa": "قهوه؟",
+      "textEn": "A book?",
+      "translationFa": "یک کتاب؟",
       "audioRequired": true,
-      "characterKey": "ben"
+      "characterKey": "maya"
     },
     {
       "turnKey": "T02",
       "role": "learner",
-      "textEn": "No, tea, please.",
-      "translationFa": "نه، چای لطفا.",
+      "textEn": "No, a pen, please.",
+      "translationFa": "نه، یک خودکار لطفا.",
       "audioRequired": true,
-      "speechTargetEn": "No, tea, please.",
+      "speechTargetEn": "No, a pen, please.",
       "acceptedSpeechEn": [
-        "No, tea, please."
-      ]
+        "No, a pen, please."
+      ],
+      "characterKey": "alex"
     },
     {
       "turnKey": "T03",
       "role": "character",
-      "textEn": "Sorry! Tea.",
-      "translationFa": "ببخشید! چای.",
+      "textEn": "Sorry! A pen.",
+      "translationFa": "ببخشید! یک خودکار.",
       "audioRequired": true,
-      "characterKey": "ben"
+      "characterKey": "maya"
     },
     {
       "turnKey": "T04",
@@ -176,7 +179,8 @@
       "speechTargetEn": "Thanks!",
       "acceptedSpeechEn": [
         "Thanks!"
-      ]
+      ],
+      "characterKey": "alex"
     }
   ],
   "activities": [
@@ -187,13 +191,13 @@
         "lexicalKeys": [
           "EN-LEX-SORRY-APOLOGY-01"
         ],
-        "explanationFa": "No, tea, please یعنی نه، چای لطفا. بن با Sorry! بابت اشتباهش عذرخواهی می کند. این کاربرد با Sorry? برای درخواست تکرار فرق دارد."
+        "explanationFa": "No, a pen, please یعنی نه، یک خودکار لطفا. مایا با Sorry! بابت اشتباهش عذرخواهی می کند. این کاربرد با Sorry? برای درخواست تکرار فرق دارد."
       },
       "activityKey": "A01"
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف مایا را گوش کن و پاسخ الکس را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -229,14 +233,14 @@
           "T03"
         ],
         "options": [
-          "عذرخواهی می کند و نوشیدنی را درست می کند",
+          "عذرخواهی می کند و وسیله درست را می دهد",
           "می خواهد اسم تو را بداند",
           "می خواهد جمله ات را دوباره بشنود"
         ],
         "answerIndex": 0,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "بن با این حرف چه کاری می کند؟",
+      "promptFa": "مایا با این حرف چه کاری می کند؟",
       "metadata": {
         "learningDemand": "recognition",
         "purpose": "recognition"
@@ -252,12 +256,12 @@
           "No, a pen, please.",
           "Yes, please."
         ],
-        "answerIndex": 1
+        "answerIndex": 0
       },
-      "promptFa": "در کلاس خودکار خواسته ای، ولی مایا کتاب را جلو آورده. چه می گویی؟",
+      "promptFa": "حالا برای تمرین بعدی کتاب می خواهی، اما مایا خودکار را جلو می آورد. چه می گویی؟",
       "metadata": {
-        "learningDemand": "changed_context",
-        "purpose": "Repair a different object request in the classroom, not a renamed cafe dialogue."
+        "learningDemand": "retrieval",
+        "purpose": "Change the intended classroom object after the modeled repair."
       },
       "activityKey": "A04"
     }

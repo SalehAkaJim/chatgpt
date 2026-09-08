@@ -79,12 +79,14 @@ def validate(lesson: dict, course: dict | None = None, schema: dict | None = Non
         errors.append('duplicate or missing turnKey')
     for key, turn in turn_by_key.items():
         role = turn.get('role')
-        if role == 'character' and course is not None and turn.get('characterKey') not in {x.get('characterKey') for x in course.get('characters', [])}:
+        if role in {'character','learner'} and course is not None and turn.get('characterKey') not in {x.get('characterKey') for x in course.get('characters', [])}:
             errors.append(f'{key}: unknown Course characterKey')
-        if role == 'character' and not turn.get('characterKey'):
-            errors.append(f'{key}: character turn requires characterKey')
-        if role != 'character' and turn.get('characterKey'):
-            errors.append(f'{key}: only character turns may carry characterKey')
+        if role in {'character','learner'} and not turn.get('characterKey'):
+            errors.append(f'{key}: every spoken story role requires characterKey')
+        if role == 'system' and turn.get('characterKey'):
+            errors.append(f'{key}: system turns cannot carry characterKey')
+        if role == 'learner' and turn.get('characterKey') != lesson.get('curriculum', {}).get('story', {}).get('learnerRoleKey'):
+            errors.append(f'{key}: learner character must match this Lesson learnerRoleKey')
         accepted = turn.get('acceptedSpeechEn') or []
         norms = [normalize(x) for x in accepted]
         if len(norms) != len(set(norms)):

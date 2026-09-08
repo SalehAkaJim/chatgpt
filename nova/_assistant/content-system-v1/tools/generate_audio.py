@@ -109,8 +109,10 @@ def collect(lesson, voices):
     for turn in lesson.get('turns', []):
         if not turn.get('audioRequired'):
             continue
-        if turn['role'] == 'character':
+        if turn.get('characterKey'):
             spec = voices.get('characters', {}).get(turn.get('characterKey'))
+        elif lesson.get('curriculum', {}).get('story') and turn['role'] in {'character','learner'}:
+            raise ValueError(f"Story Turn {turn['turnKey']} requires its own character voice; no global learner fallback")
         else:
             spec = voices.get('learnerReferenceVoice' if turn['role'] == 'learner' else 'systemVoice')
         if not spec:

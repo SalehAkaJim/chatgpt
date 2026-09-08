@@ -1,16 +1,16 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0003",
   "sortOrder": 3,
-  "titleEn": "A quick chat before class",
+  "titleEn": "A quick chat at the community center",
   "titleFa": "یک احوالپرسی کوتاه",
-  "descriptionFa": "در راهرو با مایا احوالپرسی می کنی و پیش از رفتن به کلاس خداحافظی می کنی.",
+  "descriptionFa": "برای یک برنامه به مرکز محله آمده ای. آیریس در پذیرش کار می کند و از قبل همدیگر را می شناسید. پیش از رفتن به داخل، احوالپرسی می کنید.",
   "primaryOutcomeKey": "A1-INTERACTION-GREET-STATE-CLOSE",
   "outcomeFa": "زبان آموز می تواند حال طرف مقابل را بپرسد، یک پاسخ کوتاه بدهد و گفت و گو را دوستانه تمام کند.",
-  "scenarioFa": "قبل از شروع کلاس، مایا را در راهرو می بینی. نقش تو الکس است.",
+  "scenarioFa": "برای یک برنامه به مرکز محله آمده ای. آیریس در پذیرش کار می کند و از قبل همدیگر را می شناسید. پیش از رفتن به داخل، احوالپرسی می کنید. نقش تو نینا است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-GREET-NAME",
     "A1-INTERACTION-FIRST-MEETING"
@@ -30,22 +30,25 @@
     "assessmentBoundary": "Guided speech remains practice. Independent tasks distinguish asking a name, asking about wellbeing, and closing an encounter.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Use a farewell in the changed context of leaving class; distinguish social functions using previously learned alternatives."
+      "intent": "Choose a closing expression when leaving reception for an activity, rather than answer a wellbeing question."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-COMMUNITY",
       "sceneKey": "EN-A1-SCENE-0003",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "nina",
       "participants": [
-        "maya"
+        "nina",
+        "iris"
       ],
-      "firstMeetings": [],
-      "dependsOnLessonKeys": [
-        "EN-A1-L-0001",
-        "EN-A1-L-0002"
+      "introducedCharacterKeys": [
+        "nina",
+        "iris"
       ],
-      "settingFa": "راهرو، پیش از کلاس بعدی",
-      "storyBeatFa": "مایا و الکس هم را می شناسند؛ فقط احوالپرسی می کنند."
+      "relationshipState": "already_known",
+      "continuesLessonKey": null,
+      "dependsOnLessonKeys": [],
+      "settingFa": "ورودی مرکز محله، پیش از رفتن به برنامه",
+      "storyBeatFa": "نینا با آیریس احوالپرسی می کند و بعد به برنامه می رود."
     },
     "reviewLinks": [
       {
@@ -129,10 +132,10 @@
     {
       "turnKey": "T01",
       "role": "character",
-      "textEn": "Hello, Alex! How are you?",
-      "translationFa": "سلام الکس! حالت چطوره؟",
+      "textEn": "Hello, Nina! How are you?",
+      "translationFa": "سلام نینا! حالت چطوره؟",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "iris"
     },
     {
       "turnKey": "T02",
@@ -143,7 +146,8 @@
       "speechTargetEn": "I'm fine, thanks. How are you?",
       "acceptedSpeechEn": [
         "I'm fine, thanks. How are you?"
-      ]
+      ],
+      "characterKey": "nina"
     },
     {
       "turnKey": "T03",
@@ -151,7 +155,7 @@
       "textEn": "I'm fine, thanks.",
       "translationFa": "خوبم، ممنون.",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "iris"
     },
     {
       "turnKey": "T04",
@@ -162,7 +166,8 @@
       "speechTargetEn": "Good!",
       "acceptedSpeechEn": [
         "Good!"
-      ]
+      ],
+      "characterKey": "nina"
     },
     {
       "turnKey": "T05",
@@ -170,7 +175,7 @@
       "textEn": "See you!",
       "translationFa": "می بینمت!",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "iris"
     },
     {
       "turnKey": "T06",
@@ -181,14 +186,15 @@
       "speechTargetEn": "See you!",
       "acceptedSpeechEn": [
         "See you!"
-      ]
+      ],
+      "characterKey": "nina"
     }
   ],
   "activities": [
     {
       "activityKey": "A01",
       "type": "dialogue",
-      "instructionFa": "حرف مایا را بخوان و گوش کن، بعد پاسخ آماده را با صدای بلند بازخوانی کن.",
+      "instructionFa": "حرف آیریس را گوش کن و پاسخ نینا را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -288,7 +294,7 @@
         "answerIndex": 1,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "مایا در شروع گفت و گو چه چیزی از الکس می پرسد؟"
+      "promptFa": "آیریس در شروع گفت و گو چه چیزی از نینا می پرسد؟"
     },
     {
       "activityKey": "A06",
@@ -302,10 +308,10 @@
         ],
         "answerIndex": 1
       },
-      "promptFa": "کلاس تمام شده و می خواهی از دوستت جدا شوی. کدام جمله مناسب است؟",
+      "promptFa": "وقت احوالپرسی تمام شده و می خواهی به برنامه داخل مرکز بروی. کدام جمله برای جدا شدن مناسب است؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "Choose a farewell for leaving class rather than answering a greeting or name question."
+        "purpose": "Choose a closing expression before leaving reception."
       }
     }
   ],

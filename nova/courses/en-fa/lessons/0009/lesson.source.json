@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
@@ -7,10 +7,10 @@
   "sortOrder": 9,
   "titleEn": "First stop at the cafe",
   "titleFa": "اولین سفارش در کافه",
-  "descriptionFa": "بعد از کلاس به کافه نزدیک آن می روی. بن پشت پیشخوان کار می کند و اولین بار از او سفارش می گیری. نقش تو الکس است.",
+  "descriptionFa": "به یک کافه آمده ای. بن پشت پیشخوان است و می خواهی یک نوشیدنی سفارش بدهی.",
   "primaryOutcomeKey": "A1-INTERACTION-ORDER-DRINK",
   "outcomeFa": "می توانی یک نوشیدنی ساده را مودبانه سفارش بدهی.",
-  "scenarioFa": "بعد از کلاس به کافه نزدیک آن می روی. بن پشت پیشخوان کار می کند و اولین بار از او سفارش می گیری. نقش تو الکس است.",
+  "scenarioFa": "به یک کافه آمده ای. بن پشت پیشخوان است و می خواهی یک نوشیدنی سفارش بدهی. نقش تو آوا است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-REQUEST-OBJECT",
     "A1-INTERACTION-ASK-REPEAT"
@@ -25,21 +25,22 @@
       "intent": "Request a drink and choose repair in a new service setting."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-CAFE",
       "sceneKey": "EN-A1-SCENE-0009",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "ava",
       "participants": [
+        "ava",
         "ben"
       ],
-      "firstMeetings": [
+      "introducedCharacterKeys": [
+        "ava",
         "ben"
       ],
-      "dependsOnLessonKeys": [
-        "EN-A1-L-0007",
-        "EN-A1-L-0008"
-      ],
-      "settingFa": "کافه نزدیک کلاس، اولین مراجعه",
-      "storyBeatFa": "بن برای اولین بار به الکس سرویس می دهد؛ آشنایی شغلی از طریق سفارش شکل می گیرد، بدون معارفه اجباری."
+      "relationshipState": "first_meeting",
+      "continuesLessonKey": null,
+      "dependsOnLessonKeys": [],
+      "settingFa": "پیشخوان کافه، اولین سفارش",
+      "storyBeatFa": "آوا برای اولین بار از بن نوشیدنی می گیرد."
     },
     "reviewLinks": [
       {
@@ -145,7 +146,8 @@
       "speechTargetEn": "Hello! Can I have water, please?",
       "acceptedSpeechEn": [
         "Hello! Can I have water, please?"
-      ]
+      ],
+      "characterKey": "ava"
     },
     {
       "turnKey": "T03",
@@ -164,7 +166,8 @@
       "speechTargetEn": "Thanks!",
       "acceptedSpeechEn": [
         "Thanks!"
-      ]
+      ],
+      "characterKey": "ava"
     },
     {
       "turnKey": "T05",
@@ -191,7 +194,7 @@
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف بن را گوش کن و پاسخ آوا را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [

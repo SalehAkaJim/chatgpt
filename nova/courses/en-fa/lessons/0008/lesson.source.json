@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.1.0",
+  "schemaVersion": "2.2.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
   "levelKey": "A1",
@@ -7,10 +7,10 @@
   "sortOrder": 8,
   "titleEn": "Find the book",
   "titleFa": "کتاب کجاست؟",
-  "descriptionFa": "نورا در کلاس دنبال کتابش می گردد. تو آن را می بینی، جایش را می گویی و به او می دهی. نقش تو الکس است.",
+  "descriptionFa": "برای برنامه کتابخوانی دوباره به مرکز محله آمده ای. آیریس دنبال یکی از وسایلش می گردد و تو کمکش می کنی.",
   "primaryOutcomeKey": "A1-INTERACTION-LOCATE-OBJECT",
   "outcomeFa": "می توانی بفهمی کسی دنبال چه وسیله ای است و بگویی آن وسیله روی میز است.",
-  "scenarioFa": "نورا در کلاس دنبال کتابش می گردد. تو آن را می بینی، جایش را می گویی و به او می دهی. نقش تو الکس است.",
+  "scenarioFa": "برای برنامه کتابخوانی دوباره به مرکز محله آمده ای. آیریس دنبال یکی از وسایلش می گردد و تو کمکش می کنی. نقش تو نینا است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-NAME-OBJECT",
     "A1-INTERACTION-REQUEST-OBJECT"
@@ -37,20 +37,21 @@
       "intent": "Use a location question for a different familiar object; no A1 mastery claim from one location pattern."
     },
     "story": {
-      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "arcKey": "EN-A1-COMMUNITY",
       "sceneKey": "EN-A1-SCENE-0008",
-      "learnerRoleKey": "alex",
+      "learnerRoleKey": "nina",
       "participants": [
-        "nora"
+        "nina",
+        "iris"
       ],
-      "firstMeetings": [],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0003",
       "dependsOnLessonKeys": [
-        "EN-A1-L-0002",
-        "EN-A1-L-0006",
-        "EN-A1-L-0007"
+        "EN-A1-L-0003"
       ],
-      "settingFa": "کنار میز کلاس",
-      "storyBeatFa": "الکس کتاب نورا را روی میز پیدا می کند و به او می دهد؛ بعد نورا دنبال خودکارش می گردد."
+      "settingFa": "میز پذیرش مرکز محله، پیش از برنامه کتابخوانی",
+      "storyBeatFa": "نینا این بار به آیریس برای پیدا کردن وسایل روی میز کمک می کند."
     },
     "reviewLinks": [
       {
@@ -142,7 +143,7 @@
       "textEn": "Where's my book?",
       "translationFa": "کتابم کجاست؟",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "iris"
     },
     {
       "turnKey": "T02",
@@ -153,15 +154,16 @@
       "speechTargetEn": "It's on the table.",
       "acceptedSpeechEn": [
         "It's on the table."
-      ]
+      ],
+      "characterKey": "nina"
     },
     {
       "turnKey": "T03",
       "role": "character",
-      "textEn": "Thanks, Alex!",
-      "translationFa": "ممنون الکس!",
+      "textEn": "Thanks, Nina!",
+      "translationFa": "ممنون نینا!",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "iris"
     },
     {
       "turnKey": "T04",
@@ -172,7 +174,8 @@
       "speechTargetEn": "Here you go.",
       "acceptedSpeechEn": [
         "Here you go."
-      ]
+      ],
+      "characterKey": "nina"
     },
     {
       "turnKey": "T05",
@@ -180,7 +183,7 @@
       "textEn": "Where's my pen?",
       "translationFa": "خودکارم کجاست؟",
       "audioRequired": true,
-      "characterKey": "nora"
+      "characterKey": "iris"
     }
   ],
   "activities": [
@@ -199,7 +202,7 @@
     },
     {
       "type": "dialogue",
-      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "instructionFa": "حرف آیریس را گوش کن و پاسخ نینا را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -279,7 +282,7 @@
         "answerIndex": 1,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "کمی بعد نورا چه چیزی می پرسد؟",
+      "promptFa": "کمی بعد آیریس چه چیزی می پرسد؟",
       "metadata": {
         "learningDemand": "retrieval",
         "purpose": "New listening source changes the missing object without showing its transcript."

@@ -158,7 +158,7 @@ def compile_sql(course: dict, lesson: dict, source_hash: str, audio_manifest: di
 
     for idx, turn in enumerate(lesson.get('turns', []), 1):
         character_expr = 'NULL'
-        if turn.get('role') == 'character':
+        if turn.get('characterKey'):
             character_expr = f"(SELECT id FROM characters WHERE course_id=@course_id AND character_key={q(turn['characterKey'])} LIMIT 1)"
         record = audio_record('turn', turn['turnKey'])
         audio = record.get('path') if turn.get('audioRequired') else None

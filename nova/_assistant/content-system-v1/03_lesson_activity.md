@@ -10,7 +10,7 @@ Lesson length is determined by that job. There is no required Turn or Activity c
 
 The learner should usually interact with one clear interlocutor at a time in early A1.
 
-- The learner role must be stable and obvious.
+- The role played by the learner must be obvious and consistent within the current Lesson. It changes between adjacent Lessons along with the other characters; there is no permanent learner persona for the Course. Follow `12_story_continuity.md` for the spacing of returning casts and story arcs.
 - Every task must make clear what the learner should understand or do.
 - Dialogue exists for natural communication, not to manufacture repetition.
 

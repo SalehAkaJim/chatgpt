@@ -54,3 +54,5 @@ The importer temporarily moves retained child rows above both the existing and i
 No schema reset or migration is needed: import the regenerated Lesson SQL into an existing compatible database. Preserving IDs applies within that database; a destructive reset or importing into another database does not promise the same numeric IDs. MySQL may leave gaps in auto-increment sequences during upserts.
 
 Disposable MySQL 9.0.1 checks cover identical imports, edits, order reversal, insertion into an occupied position, removal of test-only keys, sibling isolation, and existing foreign-key references. The resulting evidence is recorded in each Lesson's `runtime_validation.json` under `stableIdsPassed` and `stableIdChecks`.
+
+Both learner and character Turns use the existing `lesson_turns.character_id`. `role=learner` selects the person played in that Lesson, not a permanent Course persona. No schema migration is needed; reimport the regenerated Lesson SQL.
