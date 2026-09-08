@@ -11,9 +11,12 @@ on:
       - 'nova/_assistant/content-system-v1/tools/reference_catalog.py'
       - 'nova/_assistant/content-system-v1/tools/sync_reference_data.py'
       - 'nova/_assistant/content-system-v1/tools/validate_reference_data.py'
+      - 'nova/_assistant/content-system-v1/tools/validate_lesson_reference.py'
+      - 'nova/_assistant/content-system-v1/tools/validate_all_lesson_references.py'
       - 'nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py'
       - 'nova/_assistant/content-system-v1/tools/test_reference_data.py'
       - 'nova/_assistant/content-system-v1/tools/test_reference_catalog.py'
+      - 'nova/_assistant/content-system-v1/tools/test_lesson_reference.py'
   schedule:
     - cron: '17 4 * * 1'
 
@@ -39,6 +42,7 @@ jobs:
         run: |
           python nova/_assistant/content-system-v1/tools/test_reference_data.py
           python nova/_assistant/content-system-v1/tools/test_reference_catalog.py
+          python nova/_assistant/content-system-v1/tools/test_lesson_reference.py
       - name: Sync pinned Openjam and CEFR-J data
         run: python nova/_assistant/content-system-v1/tools/sync_reference_data.py --repo-root .
       - name: Validate generated reference snapshot
@@ -49,6 +53,8 @@ jobs:
           python -c 'import json; p=json.load(open("/tmp/nova-reference-query.json")); assert p["count"] > 0'
       - name: Audit current Lesson lexical coverage
         run: python nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py --repo-root .
+      - name: Block snapshot changes that invalidate new Lessons
+        run: python nova/_assistant/content-system-v1/tools/validate_all_lesson_references.py --repo-root . --course en-fa
       - name: Commit deterministic reference snapshot
         run: |
           git config user.name "nova-reference-bot"

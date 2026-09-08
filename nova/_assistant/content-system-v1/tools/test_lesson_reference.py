@@ -27,6 +27,8 @@ class LessonReferencePolicyTests(unittest.TestCase):
                         "lemma": "water",
                         "partOfSpeech": "noun",
                         "translationFa": "آب",
+                        "definitionEn": "a clear liquid",
+                        "senseId": "water-1",
                         "topics": ["drink"],
                         "frequencyRank": 100,
                         "qualityScore": 100,
@@ -39,6 +41,8 @@ class LessonReferencePolicyTests(unittest.TestCase):
                         "lemma": "hello",
                         "partOfSpeech": "noun",
                         "translationFa": "سلام",
+                        "definitionEn": "an utterance of hello",
+                        "senseId": "hello-1",
                         "topics": [],
                         "frequencyRank": 200,
                         "qualityScore": 100,
@@ -67,7 +71,25 @@ class LessonReferencePolicyTests(unittest.TestCase):
             "lexicalItems": lexical_items,
         }
 
-    def test_lesson_21_target_word_requires_exact_production_match(self):
+    def test_lesson_21_target_word_requires_selected_reference_sense(self):
+        report = validate_lesson_reference(
+            self.lesson(21, [{
+                "lexicalKey": "EN-LEX-WATER-01",
+                "itemType": "word",
+                "displayForm": "water",
+                "lemma": "water",
+                "partOfSpeech": "noun",
+                "translationFa": "آب",
+                "role": "target",
+                "metadata": {"referenceKey": "EN-REF-WATER"},
+            }]),
+            self.catalog,
+        )
+        self.assertEqual(report["status"], "PASS")
+        self.assertEqual(report["items"][0]["status"], "linked_exact_production_match")
+        self.assertEqual(report["items"][0]["selectedReference"]["senseId"], "water-1")
+
+    def test_lesson_21_missing_reference_link_fails_even_when_candidate_exists(self):
         report = validate_lesson_reference(
             self.lesson(21, [{
                 "lexicalKey": "EN-LEX-WATER-01",
@@ -80,8 +102,26 @@ class LessonReferencePolicyTests(unittest.TestCase):
             }]),
             self.catalog,
         )
-        self.assertEqual(report["status"], "PASS")
-        self.assertEqual(report["items"][0]["status"], "exact_production_match")
+        self.assertEqual(report["status"], "FAIL")
+        self.assertEqual(report["items"][0]["status"], "missing_reference_link")
+        self.assertIn("metadata.referenceKey", report["errors"][0])
+
+    def test_lesson_21_wrong_reference_link_fails(self):
+        report = validate_lesson_reference(
+            self.lesson(21, [{
+                "lexicalKey": "EN-LEX-WATER-01",
+                "itemType": "word",
+                "displayForm": "water",
+                "lemma": "water",
+                "partOfSpeech": "noun",
+                "translationFa": "آب",
+                "role": "target",
+                "metadata": {"referenceKey": "EN-REF-OTHER"},
+            }]),
+            self.catalog,
+        )
+        self.assertEqual(report["status"], "FAIL")
+        self.assertEqual(report["items"][0]["status"], "invalid_reference_link")
 
     def test_lesson_21_pos_mismatch_fails_even_when_lemma_exists(self):
         report = validate_lesson_reference(
@@ -93,6 +133,7 @@ class LessonReferencePolicyTests(unittest.TestCase):
                 "partOfSpeech": "interjection",
                 "translationFa": "سلام",
                 "role": "target",
+                "metadata": {"referenceKey": "EN-REF-HELLO-REVIEW"},
             }]),
             self.catalog,
         )
