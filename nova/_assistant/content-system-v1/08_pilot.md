@@ -7,7 +7,7 @@
 - Runtime hierarchy: `Course → Level → Lesson → Activity`
 - One Lesson at a time for deterministic QA/import validation
 - First Pilot window: 3 Lessons
-- Current owner-authorized story evaluation: 10 additional Lessons (0004–0013), 13 total in the prototype; this bounded batch may proceed before final learner review.
+- Owner-authorized story evaluation currently extends through Lesson 0020. Lessons 0004–0013 formed the first 10-Lesson extension; Lessons 0014–0020 are the current 7-Lesson extension. These bounded batches may proceed before final learner review.
 - Human/model language and pedagogy audit required before final publish approval
 - Audio generation + Audio QA required for every Pilot Lesson
 - Automated content-quality score must be at least **90** before runtime import
@@ -38,7 +38,7 @@ If a Lesson raises a genuine product/pedagogy choice that needs the owner, recor
 
 ## Exit criteria
 
-Unattended bulk generation stays disabled until three consecutive Pilot Lessons:
+Unattended bulk generation stays disabled even while an owner-authorized bounded batch is being built. Every Lesson in the bounded batch must still:
 - pass canonical validation including Course/Level membership;
 - score at least 90 on automated Content Quality;
 - pass English/Persian/pedagogical audit for final publish approval;
@@ -48,4 +48,4 @@ Unattended bulk generation stays disabled until three consecutive Pilot Lessons:
 - have complete Turn + eligible lexical audio with manifest QA PASS;
 - demonstrate sensible reuse/progression across the Lesson sequence.
 
-After that, production cadence may increase gradually while the gates remain mandatory.
+Production cadence may increase gradually only while the gates remain mandatory. Final learner validation remains separate from technical completion.
