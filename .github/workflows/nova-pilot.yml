@@ -7,6 +7,7 @@ on:
       - 'nova/courses/en-fa/course.source.json'
       - 'nova/courses/en-fa/audio_voices.json'
       - 'nova/courses/en-fa/lessons/**/lesson.source.json'
+      - 'nova/prototype/**'
       - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
       - 'nova/_assistant/content-system-v1/tools/**'
       - 'nova/mysql/01_reset_all.sql'
@@ -37,6 +38,7 @@ jobs:
       COURSE: nova/courses/en-fa/course.source.json
       LESSON: nova/courses/en-fa/lessons/0001/lesson.source.json
       LESSON_DIR: nova/courses/en-fa/lessons/0001
+      PROTOTYPE: nova/prototype/index.html
       VOICES: nova/courses/en-fa/audio_voices.json
       SQL_OUT: nova/mysql/10_en_a1_lesson_0001.sql
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
@@ -56,6 +58,10 @@ jobs:
           sudo apt-get install -y ffmpeg default-mysql-client
           python -m pip install --upgrade pip
           pip install -r nova/_assistant/content-system-v1/tools/requirements.txt
+
+      - name: Validate Persian orthography
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_persian_text.py "$COURSE" "$LESSON" "$PROTOTYPE" | tee "$LESSON_DIR/persian_validation.json"
 
       - name: Validate canonical Lesson
         run: |
@@ -96,7 +102,7 @@ jobs:
         run: |
           git config user.name "nova-pilot-bot"
           git config user.email "nova-pilot-bot@users.noreply.github.com"
-          git add "$LESSON_DIR/validation.json" "$LESSON_DIR/english_audit.md" "$LESSON_DIR/runtime_smoke.txt" "$LESSON_DIR/audio.manifest.json" "$LESSON_DIR/audio_validation.json" "$SQL_OUT" nova/audio/
+          git add "$LESSON_DIR/persian_validation.json" "$LESSON_DIR/validation.json" "$LESSON_DIR/english_audit.md" "$LESSON_DIR/runtime_smoke.txt" "$LESSON_DIR/audio.manifest.json" "$LESSON_DIR/audio_validation.json" "$SQL_OUT" nova/audio/
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
           else
