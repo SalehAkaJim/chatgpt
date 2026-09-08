@@ -4,8 +4,8 @@ This specification separates **blocking facts** from **quality judgments**.
 
 A Lesson may pass structural/database/audio validation and still be weak content. Nova therefore uses three layers:
 
-1. **Hard Gates** — deterministic failures that block publication.
-2. **Quality Warnings + automated score** — measurable risk signals that do not automatically block.
+1. **Hard Gates** — deterministic failures that block runtime import.
+2. **Quality Warnings + automated score** — measurable risk signals; the final score must still meet the import threshold.
 3. **Human/model review dimensions** — judgments that should not be faked with brittle regex rules.
 
 The canonical Lesson JSON remains the only source of truth. Quality reports are derivative.
@@ -69,27 +69,30 @@ A task cannot be scored merely because the UI can display it.
 
 ## Quality Warnings
 
-Warnings lower the automated score but do not block v1 publication by themselves.
+Warnings reduce the automated score.
 
 - **CQ-W01 repetition pressure** — the same full target sentence is used as the answer in multiple scored activities.
 - **CQ-W02 weak transfer evidence** — controlled practice has no changed-context retrieval/transfer signal and no explicit curriculum plan deferring transfer to a later Lesson.
 - **CQ-W03 load near ceiling** — absolute-zero Lesson uses 4–5 target lexical items or all 3 construction slots.
-- **CQ-W04 support-language load** — support/incidental or practice-only responses occupy a large share of learner Turns.
+- **CQ-W04 support-language load** — support/incidental or practice-only responses dominate learner Turns without independent scored evidence afterward.
 - **CQ-W05 trivial distractor risk** — distractors are proper names or obviously different surface categories from the correct lexical answer. This is heuristic only.
 - **CQ-W06 long beginner speech** — a scored A1 learner response exceeds the configured word threshold.
 - **CQ-W07 activity-template repetition** — reserved for cross-Lesson sequence QA once multiple Lessons exist.
 - **CQ-W08 no review/transfer marker** — neither Activity metadata/config nor the curriculum contains an explicit transfer/review plan.
 
-## Automated score
+## Automated score — import threshold
 
 The automated score is **not a substitute for pedagogical review**.
 
-Start at 100 and subtract policy-defined warning penalties. Hard-gate failure makes the Lesson non-publishable regardless of score.
+Start at 100 and subtract policy-defined warning penalties. Hard-gate failure makes the Lesson non-importable regardless of score.
 
-Suggested interpretation:
-- 90–100: technically strong; still needs manual language/pedagogy review.
-- 80–89: usable Pilot quality with concrete warnings to inspect.
-- below 80: revise before human approval even when no hard gate failed.
+**Runtime import requires an automated score of at least 90/100.** A Lesson scoring 89 or lower must be revised before SQL compilation/import proceeds.
+
+Interpretation:
+- 90–100: eligible for runtime import after all hard gates pass;
+- below 90: do not import; revise the canonical Lesson and rerun QA.
+
+The threshold is enforced before SQL compilation/MySQL import in CI and is covered by a regression test.
 
 ## Human/model review dimensions
 
@@ -107,18 +110,16 @@ Each is reviewed 0–5:
 - overall coherence;
 - learner experience in the prototype.
 
-A Lesson should not be marked publish-ready until:
+A Lesson should not be marked final/published until:
 - all Hard Gates pass;
-- automated score is at least 80;
+- automated score is at least 90;
 - average human/model review score is at least 4.0/5;
 - no manual dimension is below 3/5;
 - database and audio gates also pass.
 
 ## QA resolution ownership
 
-The learner or product owner should not have to approve every routine QA correction Lesson by Lesson.
-
-Nova uses the following resolution policy:
+The product owner should not have to approve every routine QA correction Lesson by Lesson.
 
 ### Resolve autonomously
 The content owner/assistant should fix without requesting approval when the issue has a clear quality-preserving resolution, including:
@@ -133,14 +134,18 @@ The content owner/assistant should fix without requesting approval when the issu
 
 After the fix, rerun all affected gates and keep the generated report as evidence.
 
-### Escalate for product-owner approval
-Ask for explicit approval only when the correction would materially change one of these decisions:
+### Product-owner decisions are recorded, not blocking authoring
+Escalation is only needed when a choice would materially change:
 - the Lesson's primary communicative outcome;
-- the Course/Curriculum sequence or CEFR placement;
+- the Course/Curriculum sequence or Level placement;
 - addition/removal of a core product interaction type;
 - a deliberate product behavior or monetization/progression rule;
 - a pedagogical tradeoff where two materially different approaches are both defensible;
 - a recurring rule change that would alter many future Lessons.
+
+When such a choice appears, **do not stop content production**. Build the Lesson using the recommended defensible default, record the unresolved choice in `review.pendingDecisions`, run normal QA/derivative generation, and continue to later Lessons. The product owner can return to the file later and resolve the decision.
+
+`pendingDecisions` are authoring/review metadata and are not compiled into runtime Lesson rows. Their presence does not reduce the automated quality score and does not block test/runtime import when the Lesson otherwise scores at least 90. Final publication approval may still wait for resolution when the decision materially affects the released experience.
 
 ### Warning handling
 A warning is not automatically a question for the product owner. First determine whether it is a real defect, an intentional beginner scaffold, or a false-positive/over-broad heuristic. Fix clear defects autonomously. Keep intentional scaffolds documented. Change a QA heuristic only when its rationale and regression test are updated together.
