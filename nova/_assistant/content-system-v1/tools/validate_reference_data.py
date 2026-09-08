@@ -18,7 +18,7 @@ def validate(repo_root: Path, strict: bool = False) -> list[str]:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     threshold = int(manifest.get("qualityThreshold", 90))
     seen = set()
-    actual_counts = {"senses": 0, "productionEligible": 0, "reviewOnly": 0}
+    actual_counts = {"senses": 0, "records": 0, "profileOnly": 0, "curriculumEligible": 0, "productionEligible": 0, "reviewOnly": 0}
 
     for entry in manifest.get("files", []):
         path = root / entry["path"]
@@ -37,7 +37,9 @@ def validate(repo_root: Path, strict: bool = False) -> list[str]:
         if payload.get("level") != level:
             errors.append(f"wrong level header in {path}")
         for item in payload.get("items", []):
-            actual_counts["senses"] += 1
+            actual_counts["records"] += 1
+            if item.get("sourceType") == "openjam_sense":
+                actual_counts["senses"] += 1
             key = item.get("referenceKey")
             if not key or key in seen:
                 errors.append(f"missing/duplicate referenceKey in {level}: {key}")
@@ -52,17 +54,29 @@ def validate(repo_root: Path, strict: bool = False) -> list[str]:
                 errors.append(f"eligible record below threshold: {key}={score}")
             if eligible and (not item.get("translationFa") or not item.get("cefr")):
                 errors.append(f"eligible record missing required language data: {key}")
+            if item.get("curriculumEligible") and item.get("cefrSource") == "openjam_frequency_band":
+                errors.append(f"frequency-only CEFR cannot be curriculum eligible: {key}")
+            if item.get("sourceType") == "cefr_profile_only":
+                actual_counts["profileOnly"] += 1
+            if item.get("curriculumEligible"):
+                actual_counts["curriculumEligible"] += 1
             actual_counts["productionEligible" if eligible else "reviewOnly"] += 1
 
     unplaced = root / "lexical" / "UNPLACED.json"
     if unplaced.exists():
         payload = json.loads(unplaced.read_text(encoding="utf-8"))
         for item in payload.get("items", []):
-            actual_counts["senses"] += 1
+            actual_counts["records"] += 1
+            if item.get("sourceType") == "openjam_sense":
+                actual_counts["senses"] += 1
+            if item.get("sourceType") == "cefr_profile_only":
+                actual_counts["profileOnly"] += 1
+            if item.get("curriculumEligible"):
+                actual_counts["curriculumEligible"] += 1
             actual_counts["productionEligible" if item.get("productionEligible") else "reviewOnly"] += 1
 
     manifest_counts = manifest.get("counts", {})
-    for field in ("senses", "productionEligible", "reviewOnly"):
+    for field in ("senses", "records", "profileOnly", "curriculumEligible", "productionEligible", "reviewOnly"):
         if manifest_counts.get(field) != actual_counts[field]:
             errors.append(f"manifest count mismatch for {field}: {manifest_counts.get(field)} != {actual_counts[field]}")
 
