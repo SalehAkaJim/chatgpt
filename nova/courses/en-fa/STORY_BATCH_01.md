@@ -1,6 +1,6 @@
 # Story batch 01 — ten new Lessons
 
-Scope: Lessons 0004–0013, added to the original three for a private 13-Lesson evaluation. This is an early A1 slice, not a complete A1 course. Original Lesson/Turn/Activity keys are retained. Lesson 0002 introduces Nora rather than making Alex meet Maya twice.
+Scope: Lessons 0004–0013, added to the original three for a 13-Lesson evaluation. This is an early A1 slice, not a complete A1 course. Original Lesson/Turn/Activity keys are retained. Lesson 0002 introduces Nora rather than making Alex meet Maya twice.
 
 ## Cast
 

@@ -7,7 +7,7 @@
 - Runtime hierarchy: `Course → Level → Lesson → Activity`
 - One Lesson at a time for deterministic QA/import validation
 - First Pilot window: 3 Lessons
-- Current owner-authorized story evaluation: 10 additional Lessons (0004–0013), 13 total in the private prototype; this bounded batch may proceed before final learner review.
+- Current owner-authorized story evaluation: 10 additional Lessons (0004–0013), 13 total in the prototype; this bounded batch may proceed before final learner review.
 - Human/model language and pedagogy audit required before final publish approval
 - Audio generation + Audio QA required for every Pilot Lesson
 - Automated content-quality score must be at least **90** before runtime import

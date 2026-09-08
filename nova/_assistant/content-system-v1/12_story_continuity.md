@@ -33,4 +33,4 @@ Plan a short arc and its review links → author canonical Lessons → review th
 
 Keep quality thresholds and paid-audio checkpoints. Record failures and revise canonical source before regenerating derivatives. Do not call a technically passing batch pedagogically complete, and do not extrapolate whole-language production time from unmeasured per-Lesson estimates.
 
-The owner-authorized ten-Lesson batch may proceed while final learner review is pending. Broad unattended generation and final course publication remain separate from this private testing release.
+The owner-authorized ten-Lesson batch may proceed while final learner review is pending. Broad unattended generation and final course publication remain separate from this prototype testing release.
