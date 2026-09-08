@@ -12,6 +12,7 @@ DROP TABLE IF EXISTS lesson_turns;
 DROP TABLE IF EXISTS lexical_items;
 DROP TABLE IF EXISTS lessons;
 DROP TABLE IF EXISTS characters;
+DROP TABLE IF EXISTS levels;
 DROP TABLE IF EXISTS courses;
 
 -- Known previous Nova objects, kept here only so a clean reset also
@@ -42,6 +43,5 @@ DROP TABLE IF EXISTS turns;
 DROP TABLE IF EXISTS words;
 DROP TABLE IF EXISTS chapters;
 DROP TABLE IF EXISTS modules;
-DROP TABLE IF EXISTS levels;
 
 SET FOREIGN_KEY_CHECKS=1;
