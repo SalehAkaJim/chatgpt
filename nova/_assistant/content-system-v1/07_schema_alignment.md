@@ -4,10 +4,11 @@ The runtime database models the product, not the full curriculum-planning proces
 
 ## Active runtime decision
 
-`Course → Lesson → Activity`
+`Course → Level → Lesson → Activity`
 
 Core content tables:
 - `courses`
+- `levels`
 - `characters`
 - `lessons`
 - `activities`
@@ -15,11 +16,21 @@ Core content tables:
 - `lexical_items`
 - `lesson_lexical_items`
 
-There are no runtime `levels`, `modules`, `chapters`, semantic-learning-unit tables or review-obligation tables in the Pilot foundation.
+There are no runtime modules, chapters, semantic-learning-unit tables or review-obligation tables in the Pilot foundation.
 
-## Why this does not constrain content
+## Level ownership
 
-The canonical `lesson.source.json` may contain richer curriculum data: CEFR, outcomes, prerequisites, constructions, support language, lexical roles, QA annotations and future planning metadata. Only the subset the application needs is compiled into MySQL.
+A Course owns its Levels. A Lesson belongs to exactly one Level through `lessons.level_id`.
+
+Level-wide data such as display name, framework/standard code, ordering, description and status lives only in `levels`. It must not be duplicated in every Lesson row.
+
+The `lessons` table therefore does **not** store `course_id` or `cefr_level`. Course membership is derived through `levels.course_id`.
+
+This makes Level-level replacement explicit: deleting a Level cascades its Lessons and their dependent Activity/Turn/mapping rows without affecting sibling Levels.
+
+## Why this does not overcomplicate content
+
+The canonical Course source owns Level definitions. Each canonical `lesson.source.json` carries only `levelKey` as its parent reference plus Lesson-specific curriculum data such as outcomes, prerequisites, constructions, support language, lexical roles and QA annotations.
 
 `activities.config` stores interaction-specific payload, so adding a new Activity interaction usually does not require a new table.
 
