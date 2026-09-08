@@ -74,7 +74,7 @@ Warnings lower the automated score but do not block v1 publication by themselves
 - **CQ-W01 repetition pressure** — the same full target sentence is used as the answer in multiple scored activities.
 - **CQ-W02 weak transfer evidence** — controlled practice has no changed-context retrieval/transfer signal and no explicit curriculum plan deferring transfer to a later Lesson.
 - **CQ-W03 load near ceiling** — absolute-zero Lesson uses 4–5 target lexical items or all 3 construction slots.
-- **CQ-W04 support-language load** — support/incidental material occupies a large share of learner Turns.
+- **CQ-W04 support-language load** — support/incidental or practice-only responses occupy a large share of learner Turns.
 - **CQ-W05 trivial distractor risk** — distractors are proper names or obviously different surface categories from the correct lexical answer. This is heuristic only.
 - **CQ-W06 long beginner speech** — a scored A1 learner response exceeds the configured word threshold.
 - **CQ-W07 activity-template repetition** — reserved for cross-Lesson sequence QA once multiple Lessons exist.
@@ -113,6 +113,37 @@ A Lesson should not be marked publish-ready until:
 - average human/model review score is at least 4.0/5;
 - no manual dimension is below 3/5;
 - database and audio gates also pass.
+
+## QA resolution ownership
+
+The learner or product owner should not have to approve every routine QA correction Lesson by Lesson.
+
+Nova uses the following resolution policy:
+
+### Resolve autonomously
+The content owner/assistant should fix without requesting approval when the issue has a clear quality-preserving resolution, including:
+- duplicate or padded practice;
+- weak or trivially eliminable distractors;
+- answer leakage;
+- excessive beginner load when the same communicative outcome can be preserved with less material;
+- scored practice that is actually guided imitation rather than mastery evidence;
+- grammar, naturalness or translation errors with one clearly preferable correction;
+- stale/mismatched canonical, SQL, audio or prototype derivatives;
+- orthography and formatting violations.
+
+After the fix, rerun all affected gates and keep the generated report as evidence.
+
+### Escalate for product-owner approval
+Ask for explicit approval only when the correction would materially change one of these decisions:
+- the Lesson's primary communicative outcome;
+- the Course/Curriculum sequence or CEFR placement;
+- addition/removal of a core product interaction type;
+- a deliberate product behavior or monetization/progression rule;
+- a pedagogical tradeoff where two materially different approaches are both defensible;
+- a recurring rule change that would alter many future Lessons.
+
+### Warning handling
+A warning is not automatically a question for the product owner. First determine whether it is a real defect, an intentional beginner scaffold, or a false-positive/over-broad heuristic. Fix clear defects autonomously. Keep intentional scaffolds documented. Change a QA heuristic only when its rationale and regression test are updated together.
 
 ## Failure behavior
 
