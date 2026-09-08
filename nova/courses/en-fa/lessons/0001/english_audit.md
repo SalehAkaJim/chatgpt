@@ -7,7 +7,6 @@
 
 - `EN-LEX-HELLO-01` [word/target] — **hello**
 - `EN-LEX-NAME-01` [word/target] — **name**
-- `EN-LEX-NICE-TO-MEET-YOU-01` [formula/support] — **nice to meet you**
 
 ## Dialogue turns
 
@@ -28,21 +27,10 @@ What's your name?
 
 **T04 · learner**
 
-My name is Alex.
+I'm Alex.
 
-- **Speech target:** My name is Alex.
-- **Accepted speech:** My name is Alex.
-
-**T05 · maya**
-
-Nice to meet you, Alex.
-
-**T06 · learner**
-
-Nice to meet you too.
-
-- **Speech target:** Nice to meet you too.
-- **Accepted speech:** Nice to meet you too.
+- **Speech target:** I'm Alex.
+- **Accepted speech:** I'm Alex.
 
 ## Activities
 
@@ -54,14 +42,14 @@ Nice to meet you too.
 
 **A03 · sentence_order**
 
-- **answerEn:** My name is Alex.
-- **tokensEn:** Alex. | is | My | name
-- **answerTokensEn:** My | name | is | Alex.
+- **answerEn:** What's your name?
+- **tokensEn:** name? | What's | your
+- **answerTokensEn:** What's | your | name?
 
 **A04 · fill_blank**
 
-- **sentenceEn:** My ___ is Alex.
-- **optionsEn:** name | hello | Maya
+- **sentenceEn:** Hello! ___ Alex.
+- **optionsEn:** I'm | your | name
 
 **A05 · comprehension**
 
