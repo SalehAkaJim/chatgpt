@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "2.1.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0010",
+  "sortOrder": 10,
+  "titleEn": "Choose a drink",
+  "titleFa": "چای یا قهوه؟",
+  "descriptionFa": "روز بعد دوباره به همان کافه می روی. بن دو نوشیدنی پیشنهاد می کند و تو یکی را انتخاب می کنی. نقش تو الکس است.",
+  "primaryOutcomeKey": "A1-INTERACTION-CHOOSE-DRINK",
+  "outcomeFa": "می توانی پیشنهاد دو نوشیدنی را بفهمی و انتخابت را کوتاه و مودبانه بگویی.",
+  "scenarioFa": "روز بعد دوباره به همان کافه می روی. بن دو نوشیدنی پیشنهاد می کند و تو یکی را انتخاب می کنی. نقش تو الکس است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-ORDER-DRINK"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_after_greetings",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-ITEM-OR-ITEM",
+        "form": "item + or + item?",
+        "meaningFa": "پرسیدن انتخاب بین دو چیز"
+      }
+    ],
+    "supportLanguage": [],
+    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Select coffee in a social visit instead of repeating the tea order at the cafe."
+    },
+    "story": {
+      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "sceneKey": "EN-A1-SCENE-0010",
+      "learnerRoleKey": "alex",
+      "participants": [
+        "ben"
+      ],
+      "firstMeetings": [],
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0009"
+      ],
+      "settingFa": "همان کافه، روز بعد",
+      "storyBeatFa": "بن و الکس دوباره معامله ساده ای دارند؛ اسم هم را دوباره نمی پرسند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0009",
+        "activityKeys": [
+          "A03",
+          "A04"
+        ],
+        "learningDemand": "transfer",
+        "note": "Retrieve drink meanings in a changed offer and make a new choice."
+      }
+    ]
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-OR-01",
+      "itemType": "word",
+      "displayForm": "or",
+      "translationFa": "یا",
+      "role": "target",
+      "audioEligible": true,
+      "partOfSpeech": "conjunction"
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "itemType": "word",
+      "displayForm": "tea",
+      "translationFa": "چای",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "noun"
+    },
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "itemType": "word",
+      "displayForm": "coffee",
+      "translationFa": "قهوه",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "noun"
+    },
+    {
+      "lexicalKey": "EN-LEX-WATER-01",
+      "itemType": "word",
+      "displayForm": "water",
+      "translationFa": "آب",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "noun"
+    },
+    {
+      "lexicalKey": "EN-LEX-PLEASE-01",
+      "itemType": "word",
+      "displayForm": "please",
+      "translationFa": "لطفا",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "adverb"
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "itemType": "word",
+      "displayForm": "thanks",
+      "translationFa": "ممنون",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "interjection"
+    },
+    {
+      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
+      "itemType": "formula",
+      "displayForm": "here you go",
+      "translationFa": "بفرما؛ هنگام دادن چیزی",
+      "role": "review",
+      "audioEligible": true
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "textEn": "Tea or coffee?",
+      "translationFa": "چای یا قهوه؟",
+      "audioRequired": true,
+      "characterKey": "ben"
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "textEn": "Tea, please.",
+      "translationFa": "چای، لطفا.",
+      "audioRequired": true,
+      "speechTargetEn": "Tea, please.",
+      "acceptedSpeechEn": [
+        "Tea, please."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "textEn": "Here you go.",
+      "translationFa": "بفرما.",
+      "audioRequired": true,
+      "characterKey": "ben"
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "textEn": "Thanks.",
+      "translationFa": "ممنون.",
+      "audioRequired": true,
+      "speechTargetEn": "Thanks.",
+      "acceptedSpeechEn": [
+        "Thanks."
+      ]
+    },
+    {
+      "turnKey": "T05",
+      "role": "character",
+      "textEn": "Water or tea?",
+      "translationFa": "آب یا چای؟",
+      "audioRequired": true,
+      "characterKey": "ben"
+    }
+  ],
+  "activities": [
+    {
+      "type": "lexical_teach",
+      "instructionFa": "معنی و صدای این کلمه ها را یاد بگیر.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-OR-01"
+        ],
+        "explanationFa": "or یعنی یا. Tea or coffee? یعنی چای می خواهی یا قهوه؟ برای پاسخ کوتاه، نام نوشیدنی و please کافی است."
+      },
+      "activityKey": "A01"
+    },
+    {
+      "type": "dialogue",
+      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      },
+      "activityKey": "A02"
+    },
+    {
+      "type": "comprehension",
+      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "config": {
+        "sourceTurnKeys": [
+          "T05"
+        ],
+        "options": [
+          "آب و قهوه",
+          "چای و قهوه",
+          "آب و چای"
+        ],
+        "answerIndex": 2,
+        "transcriptAfterAttempt": true
+      },
+      "promptFa": "این بار بن بین کدام نوشیدنی ها حق انتخاب می دهد؟",
+      "metadata": {
+        "learningDemand": "retrieval",
+        "purpose": "Unseen offer changes one drink and its order."
+      },
+      "activityKey": "A03"
+    },
+    {
+      "type": "response_choice",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "optionsEn": [
+          "Coffee, please.",
+          "Water, please.",
+          "Tea, please."
+        ],
+        "answerIndex": 0
+      },
+      "promptFa": "در خانه یک دوست، بین چای و قهوه حق انتخاب داری و قهوه می خواهی. چه می گویی؟",
+      "metadata": {
+        "learningDemand": "changed_context",
+        "purpose": "changed_context"
+      },
+      "activityKey": "A04"
+    },
+    {
+      "type": "fill_blank",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "sentenceEn": "Tea ___ coffee?",
+        "optionsEn": [
+          "from",
+          "or",
+          "on"
+        ],
+        "answerIndex": 1
+      },
+      "activityKey": "A05"
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "batchKey": "EN-A1-STORY-10-01",
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange"
+  }
+}

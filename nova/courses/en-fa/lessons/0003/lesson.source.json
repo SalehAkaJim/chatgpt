@@ -31,7 +31,32 @@
     "transferPlan": {
       "mode": "same_lesson",
       "intent": "Use a farewell in the changed context of leaving class; distinguish social functions using previously learned alternatives."
-    }
+    },
+    "story": {
+      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "sceneKey": "EN-A1-SCENE-0003",
+      "learnerRoleKey": "alex",
+      "participants": [
+        "maya"
+      ],
+      "firstMeetings": [],
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0001",
+        "EN-A1-L-0002"
+      ],
+      "settingFa": "راهرو، پیش از کلاس بعدی",
+      "storyBeatFa": "مایا و الکس هم را می شناسند؛ فقط احوالپرسی می کنند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0002",
+        "activityKeys": [
+          "A05"
+        ],
+        "learningDemand": "recognition",
+        "note": "Distinguish a wellbeing question from the earlier name question."
+      }
+    ]
   },
   "lexicalItems": [
     {

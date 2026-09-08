@@ -227,7 +227,9 @@ function showStep(index) {
   $('bottomBar').hidden = false;
   const {activity, exchange} = steps[step];
   host.dataset.activityKey = activity.activityKey;
-  host.append(el('div', 'tag', lesson.titleFa), el('p', 'sub', activity.instructionFa));
+  host.append(el('div', 'tag', lesson.titleFa));
+  if (step === 0) host.append(el('p', 'explanation story-context', lesson.scenarioFa));
+  host.append(el('p', 'sub', activity.instructionFa));
   if (activity.promptFa || activity.promptEn) host.append(el('div', activity.promptFa ? 'question' : 'en', activity.promptFa || activity.promptEn));
   if (exchange) renderExchange(activity, exchange, host);
   else if (activity.type === 'lexical_teach') {
@@ -282,7 +284,7 @@ function showHome() {
   }) || catalog[0];
   $('nextLessonLabel').textContent = completed === catalog.length && !unfinished ? 'یک بار دیگه تمرین کن' : unfinished ? 'ادامه درس' : 'درس بعدی';
   $('nextLessonTitle').textContent = next.titleFa;
-  $('nextLessonSummary').textContent = completed === catalog.length && !unfinished ? 'هر سه درس رو دیدی؛ می‌تونی دوباره تمرینشون کنی.' : 'مکالمه، شنیدن و تمرین کوتاه';
+  $('nextLessonSummary').textContent = completed === catalog.length && !unfinished ? 'همه درس ها رو دیدی؛ می تونی دوباره تمرینشون کنی.' : 'مکالمه، شنیدن و تمرین کوتاه';
   $('startBtn').textContent = unfinished ? 'ادامه درس' : completed === catalog.length ? 'مرور دوباره' : 'شروع درس';
   $('startBtn').onclick = () => loadLesson(next);
   const list = $('lessonList'); list.replaceChildren();

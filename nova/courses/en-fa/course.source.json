@@ -25,8 +25,51 @@
       "characterKey": "maya",
       "name": "Maya",
       "gender": "female",
-      "roleFa": "شخصیت اصلی مکالمه های ابتدایی",
-      "voiceKey": "vexa"
+      "roleFa": "همکلاسی الکس؛ از روز اول با او آشناست",
+      "voiceKey": "vexa",
+      "metadata": {
+        "debutLessonKey": "EN-A1-L-0001",
+        "stableFacts": {
+          "relationship": "classmate"
+        }
+      }
+    },
+    {
+      "characterKey": "nora",
+      "name": "Nora",
+      "gender": "female",
+      "roleFa": "همکلاسی تازه الکس؛ اهل کانادا و همراه او در کلاس و کافه",
+      "voiceKey": "lori",
+      "metadata": {
+        "debutLessonKey": "EN-A1-L-0002",
+        "stableFacts": {
+          "relationship": "classmate",
+          "country": "Canada"
+        }
+      }
+    },
+    {
+      "characterKey": "ben",
+      "name": "Ben",
+      "gender": "male",
+      "roleFa": "کارمند کافه نزدیک کلاس؛ سفارش الکس را می گیرد",
+      "voiceKey": "adam",
+      "metadata": {
+        "debutLessonKey": "EN-A1-L-0009",
+        "stableFacts": {
+          "occupation": "cafe worker"
+        }
+      }
     }
-  ]
+  ],
+  "narrative": {
+    "version": 1,
+    "learnerRoleKey": "alex",
+    "learnerName": "Alex",
+    "premiseFa": "الکس در یک کلاس تازه دوستانی پیدا می کند و کارهای ساده روزمره را با کمک آن ها انجام می دهد.",
+    "stableFacts": {
+      "country": "Iran"
+    },
+    "rules": "nova/_assistant/content-system-v1/12_story_continuity.md"
+  }
 }

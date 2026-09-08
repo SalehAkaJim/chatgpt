@@ -7,9 +7,9 @@
   "bulkGenerationEnabled": false,
   "audioGenerationEnabled": true,
   "audioRequiredForPilotCompletion": true,
-  "pilotLessonTarget": 3,
+  "pilotLessonTarget": 13,
   "publishedLessons": 0,
-  "nextLesson": 4,
+  "nextLesson": 14,
   "mysqlTargetVersion": "9.0.1",
   "mysqlValidationRequiredBeforeLesson1Completion": true,
   "canonicalValidatorReady": true,
@@ -53,5 +53,13 @@
       "finalReviewComplete": false
     }
   ],
-  "technicallyCompleteLessons": 3
+  "technicallyCompleteLessons": 3,
+  "authorizedStoryBatch": {
+    "batchKey": "EN-A1-STORY-10-01",
+    "newLessonCount": 10,
+    "firstLessonKey": "EN-A1-L-0004",
+    "lastLessonKey": "EN-A1-L-0013",
+    "scope": "private_prototype_evaluation",
+    "ownerLearnerReview": "PENDING"
+  }
 }

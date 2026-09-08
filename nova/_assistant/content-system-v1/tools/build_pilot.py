@@ -13,6 +13,7 @@ from render_english_audit import render
 from validate_audio_manifest import validate_audio
 from validate_content_quality import evaluate
 from validate_lesson import validate
+from validate_story import validate_story
 
 SYSTEM = Path(__file__).resolve().parents[1]
 
@@ -61,7 +62,7 @@ def validate_sequence(records):
             target, source = plan['targetLesson'], record['lesson']['lessonKey']
             if target in positions and positions[target] <= positions[source]:
                 errors.append(f'{source}: deferred transfer target must be a later Lesson')
-    return errors
+    return errors + validate_story(records)
 
 
 def build(root, reuse_only=False):

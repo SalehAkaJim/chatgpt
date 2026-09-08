@@ -1,6 +1,6 @@
 # 09 — Active Pilot execution
 
-The first three Lessons exercise the complete pipeline with shared vocabulary and variable Activity/Turn counts.
+The first three Lessons exercise the complete pipeline with shared vocabulary and variable Activity/Turn counts. The owner has now authorized ten additional story Lessons (0004–0013) for private prototype testing. Story planning follows `12_story_continuity.md`; do not impose the initial product-pilot Activity checklist on every new Lesson.
 
 Run `tools/build_pilot.py --repo-root .` from the repository root. It discovers every Course/Lesson source, validates sequence and shared lexical definitions, runs canonical/Persian/quality gates, renders the English audit, generates or reuses audio, validates the manifest and compiles SQL. Each Lesson receives its own report. A failed Lesson does not prevent the other Lessons from being processed, but the overall build fails and final outputs are not published as successful.
 

@@ -1,0 +1,291 @@
+{
+  "schemaVersion": "2.1.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0005",
+  "sortOrder": 5,
+  "titleEn": "Where are you from?",
+  "titleFa": "اهل کجایی؟",
+  "descriptionFa": "وقت استراحت کلاس، نورا می خواهد بیشتر با تو آشنا شود. این بار درباره اهل کجا بودن حرف می زنید. نقش تو الکس است.",
+  "primaryOutcomeKey": "A1-INTERACTION-COUNTRY",
+  "outcomeFa": "می توانی بگویی اهل کجایی و همین اطلاعات را درباره طرف مقابل بفهمی.",
+  "scenarioFa": "وقت استراحت کلاس، نورا می خواهد بیشتر با تو آشنا شود. این بار درباره اهل کجا بودن حرف می زنید. نقش تو الکس است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-FIRST-MEETING",
+    "A1-INTERACTION-ASK-REPEAT"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_after_greetings",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-FROM-COUNTRY",
+        "form": "I'm from + country",
+        "meaningFa": "گفتن اهل کدام کشور بودن"
+      },
+      {
+        "key": "EN-CONSTR-ASK-COUNTRY",
+        "form": "Where are you from?",
+        "meaningFa": "پرسیدن اهل کجا بودن"
+      }
+    ],
+    "supportLanguage": [],
+    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Choose the country question for an already named person in a different gathering."
+    },
+    "story": {
+      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "sceneKey": "EN-A1-SCENE-0005",
+      "learnerRoleKey": "alex",
+      "participants": [
+        "nora"
+      ],
+      "firstMeetings": [],
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0002",
+        "EN-A1-L-0004"
+      ],
+      "settingFa": "وقت استراحت کلاس",
+      "storyBeatFa": "نورا و الکس بعد از آشنایی قبلی، کشور خود را به هم می گویند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0001",
+        "activityKeys": [
+          "A06"
+        ],
+        "learningDemand": "recognition",
+        "note": "Distinguish a country question from a name question."
+      },
+      {
+        "lessonKey": "EN-A1-L-0003",
+        "activityKeys": [
+          "A06"
+        ],
+        "learningDemand": "recognition",
+        "note": "Distinguish country from wellbeing."
+      }
+    ]
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-FROM-01",
+      "itemType": "word",
+      "displayForm": "from",
+      "translationFa": "از؛ برای گفتن اهل کجا بودن",
+      "role": "target",
+      "audioEligible": true,
+      "partOfSpeech": "preposition"
+    },
+    {
+      "lexicalKey": "EN-LEX-IRAN-01",
+      "itemType": "word",
+      "displayForm": "Iran",
+      "translationFa": "ایران",
+      "role": "target",
+      "audioEligible": true,
+      "partOfSpeech": "proper noun"
+    },
+    {
+      "lexicalKey": "EN-LEX-CANADA-01",
+      "itemType": "word",
+      "displayForm": "Canada",
+      "translationFa": "کانادا",
+      "role": "target",
+      "audioEligible": true,
+      "partOfSpeech": "proper noun"
+    },
+    {
+      "lexicalKey": "EN-LEX-NAME-01",
+      "itemType": "word",
+      "displayForm": "name",
+      "translationFa": "اسم",
+      "role": "review",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "senseKey": "personal_name",
+      "audioEligible": true
+    },
+    {
+      "lexicalKey": "EN-LEX-NICE-01",
+      "itemType": "word",
+      "displayForm": "nice",
+      "translationFa": "خوب؛ برای واکنش دوستانه",
+      "role": "support",
+      "audioEligible": true,
+      "partOfSpeech": "adjective"
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "textEn": "Where are you from?",
+      "translationFa": "اهل کجایی؟",
+      "audioRequired": true,
+      "characterKey": "nora"
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "textEn": "I'm from Iran.",
+      "translationFa": "اهل ایرانم.",
+      "audioRequired": true,
+      "speechTargetEn": "I'm from Iran.",
+      "acceptedSpeechEn": [
+        "I'm from Iran."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "textEn": "I'm from Canada.",
+      "translationFa": "من اهل کانادا هستم.",
+      "audioRequired": true,
+      "characterKey": "nora"
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "textEn": "Nice!",
+      "translationFa": "چه خوب!",
+      "audioRequired": true,
+      "speechTargetEn": "Nice!",
+      "acceptedSpeechEn": [
+        "Nice!"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "type": "lexical_teach",
+      "instructionFa": "معنی و صدای این کلمه ها را یاد بگیر.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-FROM-01",
+          "EN-LEX-IRAN-01",
+          "EN-LEX-CANADA-01",
+          "EN-LEX-NICE-01"
+        ],
+        "explanationFa": "Where are you from? یعنی اهل کجایی؟ در I'm from Iran بعد از from نام کشور می آید. در این داستان الکس اهل ایران است. Nice! فقط یک واکنش دوستانه است."
+      },
+      "activityKey": "A01"
+    },
+    {
+      "type": "dialogue",
+      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      },
+      "activityKey": "A02"
+    },
+    {
+      "type": "sentence_order",
+      "instructionFa": "گوش کن و کلمه ها را به همان ترتیب بچین.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "from",
+          "Iran.",
+          "I'm"
+        ],
+        "answerTokensEn": [
+          "I'm",
+          "from",
+          "Iran."
+        ],
+        "answerEn": "I'm from Iran.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true
+      },
+      "activityKey": "A03"
+    },
+    {
+      "type": "fill_blank",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "sentenceEn": "I'm ___ Canada.",
+        "optionsEn": [
+          "fine",
+          "from",
+          "name"
+        ],
+        "answerIndex": 1
+      },
+      "activityKey": "A04"
+    },
+    {
+      "type": "comprehension",
+      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "config": {
+        "sourceTurnKeys": [
+          "T03"
+        ],
+        "options": [
+          "ایران",
+          "کانادا"
+        ],
+        "answerIndex": 1,
+        "transcriptAfterAttempt": true
+      },
+      "promptFa": "نورا درباره خودش چه می گوید؟",
+      "metadata": {
+        "learningDemand": "recognition",
+        "purpose": "recognition"
+      },
+      "activityKey": "A05"
+    },
+    {
+      "type": "response_choice",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "optionsEn": [
+          "What's your name?",
+          "Where are you from?",
+          "How are you?"
+        ],
+        "answerIndex": 1
+      },
+      "promptFa": "در یک جمع تازه اسم کسی را می دانی و می خواهی کشورش را بدانی. چه می پرسی؟",
+      "metadata": {
+        "learningDemand": "changed_context",
+        "purpose": "changed_context"
+      },
+      "activityKey": "A06"
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "batchKey": "EN-A1-STORY-10-01",
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange"
+  }
+}

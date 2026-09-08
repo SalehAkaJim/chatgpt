@@ -7,10 +7,10 @@
   "sortOrder": 2,
   "titleEn": "Meeting someone in class",
   "titleFa": "معارفه در کلاس",
-  "descriptionFa": "در جلسه معارفه، اسمت را می گویی و به آشنایی با یک نفر پاسخ می دهی.",
+  "descriptionFa": "در کلاس با نورا آشنا می شوی و به خوشحالی او از این آشنایی پاسخ می دهی.",
   "primaryOutcomeKey": "A1-INTERACTION-FIRST-MEETING",
   "outcomeFa": "زبان آموز می تواند خودش را با My name is معرفی کند و به ابراز خوشحالی از آشنایی پاسخ بدهد.",
-  "scenarioFa": "در جلسه معارفه یک کلاس، مایا سر صحبت را باز می کند. نقش تو الکس است.",
+  "scenarioFa": "در کلاس، همکلاسی تازه ای به نام نورا کنارت نشسته است. هنوز همدیگر را نمی شناسید. نقش تو الکس است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-GREET-NAME"
   ],
@@ -28,7 +28,33 @@
     "transferPlan": {
       "mode": "same_lesson",
       "intent": "Select an appropriate introduction in response to a teacher, then reuse social interaction in Lesson 0003."
-    }
+    },
+    "story": {
+      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "sceneKey": "EN-A1-SCENE-0002",
+      "learnerRoleKey": "alex",
+      "participants": [
+        "nora"
+      ],
+      "firstMeetings": [
+        "nora"
+      ],
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0001"
+      ],
+      "settingFa": "داخل کلاس، روز اول",
+      "storyBeatFa": "الکس با نورا که همکلاسی تازه اوست آشنا می شود."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0001",
+        "activityKeys": [
+          "A06"
+        ],
+        "learningDemand": "transfer",
+        "note": "Name introduction is selected for a teacher context, not reintroduced to Maya."
+      }
+    ]
   },
   "lexicalItems": [
     {
@@ -78,7 +104,7 @@
       "textEn": "Hello! What's your name?",
       "translationFa": "سلام! اسمت چیه؟",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "nora"
     },
     {
       "turnKey": "T02",
@@ -94,10 +120,10 @@
     {
       "turnKey": "T03",
       "role": "character",
-      "textEn": "I'm Maya. Nice to meet you.",
-      "translationFa": "من مایا هستم. از آشنایی با تو خوشحالم.",
+      "textEn": "I'm Nora. Nice to meet you.",
+      "translationFa": "من نورا هستم. از آشنایی با تو خوشحالم.",
       "audioRequired": true,
-      "characterKey": "maya"
+      "characterKey": "nora"
     },
     {
       "turnKey": "T04",
@@ -115,7 +141,7 @@
     {
       "activityKey": "A01",
       "type": "dialogue",
-      "instructionFa": "حرف مایا را بخوان و گوش کن، بعد پاسخ آماده را با صدای بلند بازخوانی کن.",
+      "instructionFa": "حرف نورا را بخوان و گوش کن، بعد پاسخ آماده را با صدای بلند بازخوانی کن.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -207,7 +233,7 @@
         "answerIndex": 2,
         "transcriptAfterAttempt": true
       },
-      "promptFa": "مایا با جمله آخرش چه پیامی می دهد؟"
+      "promptFa": "نورا با جمله آخرش چه پیامی می دهد؟"
     },
     {
       "activityKey": "A06",

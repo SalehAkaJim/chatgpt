@@ -1,0 +1,361 @@
+{
+  "schemaVersion": "2.1.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0013",
+  "sortOrder": 13,
+  "titleEn": "Get ready for class",
+  "titleFa": "مرور: آماده شدن برای کلاس",
+  "descriptionFa": "به کلاس برگشته ای. اول به درخواست مایا گوش می دهی، بعد از نورا خودکار می خواهی. نورا اول اشتباه می شنود. نقش تو الکس است.",
+  "primaryOutcomeKey": "A1-INTERACTION-REVIEW-REQUEST-REPAIR",
+  "outcomeFa": "می توانی درخواست یک وسیله، اصلاح اشتباه و فهمیدن درخواست دیگران را در کنار هم به کار ببری.",
+  "scenarioFa": "به کلاس برگشته ای. اول به درخواست مایا گوش می دهی، بعد از نورا خودکار می خواهی. نورا اول اشتباه می شنود. نقش تو الکس است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-CORRECT-REQUEST",
+    "A1-INTERACTION-LOCATE-OBJECT"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_after_greetings",
+    "targetConstructions": [],
+    "supportLanguage": [],
+    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "An opening task precedes the guided model, and the final repair requires a different object."
+    },
+    "story": {
+      "arcKey": "EN-A1-CLASS-AND-CAFE",
+      "sceneKey": "EN-A1-SCENE-0013",
+      "learnerRoleKey": "alex",
+      "participants": [
+        "nora",
+        "maya"
+      ],
+      "firstMeetings": [],
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0007",
+        "EN-A1-L-0008",
+        "EN-A1-L-0011",
+        "EN-A1-L-0012"
+      ],
+      "settingFa": "کلاس، پیش از نوشتن",
+      "storyBeatFa": "الکس درخواست و اصلاح را با نورا ترکیب می کند؛ مایا هم یک درخواست جدا دارد. در هر لحظه یک گوینده روشن است."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0007",
+        "activityKeys": [
+          "A01",
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Retrieve a practical request before the visible dialogue."
+      },
+      {
+        "lessonKey": "EN-A1-L-0008",
+        "activityKeys": [
+          "A04"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Recall a known location after a delay."
+      },
+      {
+        "lessonKey": "EN-A1-L-0012",
+        "activityKeys": [
+          "A05"
+        ],
+        "learningDemand": "transfer",
+        "note": "Transfer correction back to classroom materials and change the intended item."
+      }
+    ]
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-HELLO-01",
+      "itemType": "word",
+      "displayForm": "hello",
+      "translationFa": "سلام",
+      "role": "review",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "senseKey": "greeting",
+      "audioEligible": true
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "itemType": "word",
+      "displayForm": "pen",
+      "translationFa": "خودکار",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "noun"
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "itemType": "word",
+      "displayForm": "book",
+      "translationFa": "کتاب",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "noun"
+    },
+    {
+      "lexicalKey": "EN-LEX-PLEASE-01",
+      "itemType": "word",
+      "displayForm": "please",
+      "translationFa": "لطفا",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "adverb"
+    },
+    {
+      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
+      "itemType": "formula",
+      "displayForm": "here you go",
+      "translationFa": "بفرما؛ هنگام دادن چیزی",
+      "role": "review",
+      "audioEligible": true
+    },
+    {
+      "lexicalKey": "EN-LEX-NO-01",
+      "itemType": "word",
+      "displayForm": "no",
+      "translationFa": "نه",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "interjection"
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "itemType": "word",
+      "displayForm": "thanks",
+      "translationFa": "ممنون",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "interjection"
+    },
+    {
+      "lexicalKey": "EN-LEX-ON-01",
+      "itemType": "word",
+      "displayForm": "on",
+      "translationFa": "روی",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "preposition"
+    },
+    {
+      "lexicalKey": "EN-LEX-TABLE-01",
+      "itemType": "word",
+      "displayForm": "table",
+      "translationFa": "میز",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "noun"
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "textEn": "Hello, Alex!",
+      "translationFa": "سلام الکس!",
+      "audioRequired": true,
+      "characterKey": "nora"
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "textEn": "Hello! Can I have a pen, please?",
+      "translationFa": "سلام! می شه لطفا یک خودکار به من بدی؟",
+      "audioRequired": true,
+      "speechTargetEn": "Hello! Can I have a pen, please?",
+      "acceptedSpeechEn": [
+        "Hello! Can I have a pen, please?"
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "textEn": "A book?",
+      "translationFa": "یک کتاب؟",
+      "audioRequired": true,
+      "characterKey": "nora"
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "textEn": "No, a pen, please.",
+      "translationFa": "نه، یک خودکار لطفا.",
+      "audioRequired": true,
+      "speechTargetEn": "No, a pen, please.",
+      "acceptedSpeechEn": [
+        "No, a pen, please."
+      ]
+    },
+    {
+      "turnKey": "T05",
+      "role": "character",
+      "textEn": "Here you go.",
+      "translationFa": "بفرما.",
+      "audioRequired": true,
+      "characterKey": "nora"
+    },
+    {
+      "turnKey": "T06",
+      "role": "learner",
+      "textEn": "Thanks!",
+      "translationFa": "ممنون!",
+      "audioRequired": true,
+      "speechTargetEn": "Thanks!",
+      "acceptedSpeechEn": [
+        "Thanks!"
+      ]
+    },
+    {
+      "turnKey": "T07",
+      "role": "character",
+      "textEn": "Can I have a book, please?",
+      "translationFa": "می شه لطفا یک کتاب به من بدی؟",
+      "audioRequired": true,
+      "characterKey": "maya"
+    },
+    {
+      "turnKey": "T08",
+      "role": "character",
+      "textEn": "It's on the table.",
+      "translationFa": "روی میزه.",
+      "audioRequired": true,
+      "characterKey": "nora"
+    }
+  ],
+  "activities": [
+    {
+      "type": "comprehension",
+      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "config": {
+        "sourceTurnKeys": [
+          "T07"
+        ],
+        "options": [
+          "خودکار",
+          "کتاب",
+          "چای"
+        ],
+        "answerIndex": 1,
+        "transcriptAfterAttempt": true
+      },
+      "promptFa": "پیش از گفت و گوی خودت، گوش کن: مایا چه چیزی می خواهد؟",
+      "metadata": {
+        "learningDemand": "retrieval",
+        "purpose": "Delayed listening with no visible model; request comes from a different familiar person."
+      },
+      "activityKey": "A01"
+    },
+    {
+      "type": "response_choice",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "optionsEn": [
+          "Can I have a pen, please?",
+          "Where's my pen?",
+          "Can I have a book, please?"
+        ],
+        "answerIndex": 0
+      },
+      "promptFa": "خودکار نداری و می خواهی از همکلاسی ات یک خودکار بگیری. چه می گویی؟",
+      "metadata": {
+        "learningDemand": "changed_context",
+        "purpose": "Select a request before its guided model is displayed."
+      },
+      "activityKey": "A02"
+    },
+    {
+      "type": "dialogue",
+      "instructionFa": "گوش کن، معنی را بخوان و پاسخ الکس را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E03",
+            "promptTurnKey": "T05",
+            "responseTurnKey": "T06",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      },
+      "activityKey": "A03"
+    },
+    {
+      "type": "comprehension",
+      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "config": {
+        "sourceTurnKeys": [
+          "T08"
+        ],
+        "options": [
+          "روی میز",
+          "درباره جایش چیزی نمی گوید"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true
+      },
+      "promptFa": "کمی بعد نورا درباره جای یک وسیله چه می گوید؟",
+      "metadata": {
+        "learningDemand": "retrieval",
+        "purpose": "Delayed recognition of the location pattern, without showing the earlier Lesson 0008 model."
+      },
+      "activityKey": "A04"
+    },
+    {
+      "type": "response_choice",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "optionsEn": [
+          "No, a book, please.",
+          "Yes, please.",
+          "No, a pen, please."
+        ],
+        "answerIndex": 0
+      },
+      "promptFa": "این بار خودکار داری و کتاب می خواهی، اما نورا خودکار تعارف می کند. چه می گویی؟",
+      "metadata": {
+        "learningDemand": "changed_context",
+        "purpose": "Change the intended object after the supported dialogue; no new language."
+      },
+      "activityKey": "A05"
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "batchKey": "EN-A1-STORY-10-01",
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange"
+  }
+}

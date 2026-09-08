@@ -32,9 +32,12 @@ Level identity and Level-wide metadata live once at the Course/Level layer. Less
 - `09_next_step.md` — current execution order
 - `10_status.json` — machine-readable state
 - `11_content_quality.md` — automated quality, review and decision policy
+- `12_story_continuity.md` — recurring cast, story state and bounded production rules
 - `lesson.source.schema.json` — canonical Lesson schema
 - `tools/` — validator, audit renderer, SQL compiler and audio tools
 - `A1_OUTCOMES.md` — curriculum planning reference
+
+Current owner-authorized evaluation batch: ten new Lessons (0004–0013), plus the original three. See `nova/courses/en-fa/STORY_BATCH_01.md` for the arc and testing limits.
 
 ## Decision handling
 

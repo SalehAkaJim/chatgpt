@@ -14,6 +14,7 @@ from build_pilot import discover, validate_sequence
 from generate_audio import generate, load, save
 from validate_audio_manifest import validate_audio
 from validate_lesson import validate
+from validate_story import validate_story
 
 ROOT = Path(__file__).resolve().parents[4]
 TOOLS = Path(__file__).parent
@@ -75,6 +76,38 @@ class CompilerTests(unittest.TestCase):
         common = records[0]['lesson']['lexicalItems'][0]
         records[1]['lesson']['lexicalItems'].append({**common, 'translationFa': 'conflicting meaning'})
         self.assertTrue(any('conflicting shared lexical' in e for e in validate_sequence(records)))
+
+
+class StoryTests(unittest.TestCase):
+    def setUp(self):
+        self.records = copy.deepcopy(discover(ROOT))
+
+    def test_current_story_passes(self):
+        self.assertEqual(validate_story(self.records), [])
+
+    def test_repeated_first_meeting_is_rejected(self):
+        self.records[2]['lesson']['curriculum']['story']['firstMeetings'] = ['maya']
+        self.assertTrue(any('relationship reset' in e for e in validate_story(self.records)))
+
+    def test_undeclared_speaker_and_role_drift_are_rejected(self):
+        story = self.records[2]['lesson']['curriculum']['story']
+        story['participants'] = ['nora']
+        story['learnerRoleKey'] = 'someone-else'
+        errors = validate_story(self.records)
+        self.assertTrue(any('Turn speakers' in e for e in errors))
+        self.assertTrue(any('role drift' in e for e in errors))
+
+    def test_future_dependency_and_invalid_review_are_rejected(self):
+        lesson = self.records[1]['lesson']
+        lesson['curriculum']['story']['dependsOnLessonKeys'] = [self.records[-1]['lesson']['lessonKey']]
+        lesson['curriculum']['reviewLinks'][0]['activityKeys'] = ['A999']
+        errors = validate_story(self.records)
+        self.assertTrue(any('dependencies' in e for e in errors))
+        self.assertTrue(any('Activity keys' in e for e in errors))
+
+    def test_wrong_debut_is_rejected(self):
+        self.records[0]['course']['characters'][0]['metadata']['debutLessonKey'] = 'EN-A1-L-9999'
+        self.assertTrue(any('incorrect declared debut' in e for e in validate_story(self.records)))
 
 
 class AudioTests(unittest.TestCase):
