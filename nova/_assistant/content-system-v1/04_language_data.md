@@ -30,20 +30,27 @@ Translation is sense- and context-specific.
 - When literal structure is pedagogically useful, store it as separate teaching metadata rather than corrupting the natural translation.
 - Persian explanation and translation must remain distinguishable fields.
 
-### Persian orthography — hard gate
+### Persian orthography — hard gate with explicit exceptions
 
-All Persian learner-facing text must use Persian orthography only. This is a blocking publication rule, not a style preference.
+All Persian learner-facing text uses Persian orthography by default. This is a blocking publication rule, not a style preference.
 
-Hard reject:
+Blocked by default:
 - standalone hamza and hamza-carrier forms such as `ء`, `ئ`, `ؤ`, `أ`, `إ`;
 - Arabic tanwin or vowel/reading marks such as `ً`, `ٌ`, `ٍ`, fatha, kasra, damma, shadda and sukun;
 - Arabic letter variants `ي` and `ك`; use Persian `ی` and `ک` instead;
 - Arabic-only forms such as `ة`, `ى`, `ٱ`, `ۀ` and tatweel;
 - Arabic presentation-form or Quranic annotation characters.
 
-When a borrowed word is normally written with one of the forbidden forms, rewrite it into the approved Persian spelling used by Nova rather than preserving the Arabic orthographic mark. Do not add pronunciation marks to Persian text.
+An exception is allowed only when the exact complete word genuinely requires the otherwise-blocked character for its correct intended spelling. Exceptions are stored in `persian_orthography_exceptions.json` and must include:
+- the exact complete `term`;
+- the exact `allowedCharacters` for that term;
+- a non-empty `reason` explaining why the spelling is required.
 
-This rule applies to Course data, Lesson data, translations, instructions, answer choices, UI copy and prototypes. Automated validation must fail before publication if any forbidden character is present.
+The exception is word-specific, not character-wide. Allowing a word such as `رئیس` does not make `ئ` valid anywhere else. Partial matches, related words, accidental variants and unlisted spellings still fail validation.
+
+Do not add an exception merely to make validation pass. Prefer the clean Persian spelling whenever both forms are acceptable. Add an exception only when changing the blocked character would make the intended word incorrect, nonstandard for the intended context, or materially change what is being represented.
+
+This rule applies to Course data, Lesson data, translations, instructions, answer choices, UI copy and prototypes. Automated validation must fail before publication if an unapproved forbidden character is present.
 
 ## Lexical model
 
