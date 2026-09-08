@@ -40,9 +40,26 @@ def main() -> int:
         if lesson.get('courseCode') != course.get('courseCode'):
             errors.append('lesson courseCode does not match Course source')
         levels = course.get('levels') or []
+        if not levels:
+            errors.append('Course source requires at least one Level')
         level_keys = [x.get('levelKey') for x in levels if x.get('levelKey')]
+        level_orders = [x.get('sortOrder') for x in levels if isinstance(x.get('sortOrder'), int)]
+        if len(level_keys) != len(levels):
+            errors.append('every Course Level requires levelKey')
         if len(level_keys) != len(set(level_keys)):
             errors.append('duplicate levelKey in Course source')
+        if len(level_orders) != len(levels):
+            errors.append('every Course Level requires integer sortOrder')
+        if len(level_orders) != len(set(level_orders)):
+            errors.append('duplicate Level sortOrder in Course source')
+        for level in levels:
+            key = level.get('levelKey') or '?'
+            if not str(level.get('title') or '').strip():
+                errors.append(f'Level {key} requires title')
+            if not str(level.get('titleFa') or '').strip():
+                errors.append(f'Level {key} requires titleFa')
+            if level.get('status') not in {'planned','active','complete','archived'}:
+                errors.append(f'Level {key} has invalid status')
         if lesson.get('levelKey') not in set(level_keys):
             errors.append(f"unknown levelKey for Course: {lesson.get('levelKey')}")
 
