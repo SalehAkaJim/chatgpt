@@ -1,0 +1,1106 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-09-08T16:47:46Z",
+  "courseCode": "en-fa",
+  "level": "A1",
+  "qualityThreshold": 90,
+  "policy": {
+    "authority": "Nova canonical lessons only",
+    "minimumSourceLessonQualityScore": 90,
+    "identity": "lemma + partOfSpeech + (senseKey || lexicalKey)",
+    "purpose": "fill external reference gaps without relaxing external quality rules",
+    "runtimeImport": "never writes runtime tables directly"
+  },
+  "summary": {
+    "items": 29,
+    "eligible": 29,
+    "notEligible": 0
+  },
+  "items": [
+    {
+      "lemma": "and",
+      "partOfSpeech": "conjunction",
+      "identityKey": "en-lex-and-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-AND-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "and"
+      ],
+      "translationFa": "و",
+      "translationVariantsFa": [
+        "و"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 35,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "at",
+      "partOfSpeech": "preposition",
+      "identityKey": "clock_time",
+      "senseKey": "clock_time",
+      "sourceLexicalKeys": [
+        "EN-LEX-AT-TIME-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "at"
+      ],
+      "translationFa": "در؛ برای ساعت مشخص",
+      "translationVariantsFa": [
+        "در؛ برای ساعت مشخص"
+      ],
+      "level": "A1",
+      "occurrenceCount": 2,
+      "sourceLessonKeys": [
+        "EN-A1-L-0016",
+        "EN-A1-L-0020"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 35,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "canada",
+      "partOfSpeech": "proper noun",
+      "identityKey": "en-lex-canada-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-CANADA-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "Canada"
+      ],
+      "translationFa": "کانادا",
+      "translationVariantsFa": [
+        "کانادا"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "five",
+      "partOfSpeech": "numeral",
+      "identityKey": "en-lex-five-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-FIVE-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "five"
+      ],
+      "translationFa": "پنج",
+      "translationVariantsFa": [
+        "پنج"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0015"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "from",
+      "partOfSpeech": "preposition",
+      "identityKey": "en-lex-from-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-FROM-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "from"
+      ],
+      "translationFa": "از؛ برای گفتن اهل کجا بودن",
+      "translationVariantsFa": [
+        "از؛ برای گفتن اهل کجا بودن"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 35,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "have",
+      "partOfSpeech": "verb",
+      "identityKey": "en-lex-have-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-HAVE-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "have"
+      ],
+      "translationFa": "داشتن",
+      "translationVariantsFa": [
+        "داشتن"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0018"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "identityKey": "greeting",
+      "senseKey": "greeting",
+      "sourceLexicalKeys": [
+        "EN-LEX-HELLO-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "hello"
+      ],
+      "translationFa": "سلام",
+      "translationVariantsFa": [
+        "سلام"
+      ],
+      "level": "A1",
+      "occurrenceCount": 6,
+      "sourceLessonKeys": [
+        "EN-A1-L-0001",
+        "EN-A1-L-0002",
+        "EN-A1-L-0003",
+        "EN-A1-L-0007",
+        "EN-A1-L-0009",
+        "EN-A1-L-0013"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "identityKey": "en-lex-here-you-go-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-HERE-YOU-GO-01"
+      ],
+      "itemType": "formula",
+      "displayForms": [
+        "here you go"
+      ],
+      "translationFa": "بفرما؛ هنگام دادن چیزی",
+      "translationVariantsFa": [
+        "بفرما؛ هنگام دادن چیزی"
+      ],
+      "level": "A1",
+      "occurrenceCount": 7,
+      "sourceLessonKeys": [
+        "EN-A1-L-0007",
+        "EN-A1-L-0008",
+        "EN-A1-L-0009",
+        "EN-A1-L-0010",
+        "EN-A1-L-0011",
+        "EN-A1-L-0013",
+        "EN-A1-L-0018"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "how are you",
+      "partOfSpeech": null,
+      "identityKey": "en-lex-how-are-you-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-HOW-ARE-YOU-01"
+      ],
+      "itemType": "formula",
+      "displayForms": [
+        "how are you"
+      ],
+      "translationFa": "حالت چطوره؟",
+      "translationVariantsFa": [
+        "حالت چطوره؟"
+      ],
+      "level": "A1",
+      "occurrenceCount": 2,
+      "sourceLessonKeys": [
+        "EN-A1-L-0003",
+        "EN-A1-L-0004"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "how much",
+      "partOfSpeech": null,
+      "identityKey": "en-lex-how-much-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-HOW-MUCH-01"
+      ],
+      "itemType": "formula",
+      "displayForms": [
+        "how much"
+      ],
+      "translationFa": "چقدر؛ برای پرسیدن قیمت",
+      "translationVariantsFa": [
+        "چقدر؛ برای پرسیدن قیمت"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0015"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "iran",
+      "partOfSpeech": "proper noun",
+      "identityKey": "en-lex-iran-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-IRAN-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "Iran"
+      ],
+      "translationFa": "ایران",
+      "translationVariantsFa": [
+        "ایران"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "nice to meet you",
+      "partOfSpeech": null,
+      "identityKey": "en-lex-nice-to-meet-you-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-NICE-TO-MEET-YOU-01"
+      ],
+      "itemType": "formula",
+      "displayForms": [
+        "nice to meet you"
+      ],
+      "translationFa": "از آشنایی با تو خوشحالم",
+      "translationVariantsFa": [
+        "از آشنایی با تو خوشحالم"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0002"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "no",
+      "partOfSpeech": "interjection",
+      "identityKey": "en-lex-no-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-NO-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "no"
+      ],
+      "translationFa": "نه",
+      "translationVariantsFa": [
+        "نه"
+      ],
+      "level": "A1",
+      "occurrenceCount": 3,
+      "sourceLessonKeys": [
+        "EN-A1-L-0011",
+        "EN-A1-L-0012",
+        "EN-A1-L-0013"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "identityKey": "day_time",
+      "senseKey": "day_time",
+      "sourceLexicalKeys": [
+        "EN-LEX-ON-DAY-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "on"
+      ],
+      "translationFa": "در؛ برای روز مشخص",
+      "translationVariantsFa": [
+        "در؛ برای روز مشخص"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0017"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 60,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "identityKey": "en-lex-on-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-ON-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "on"
+      ],
+      "translationFa": "روی",
+      "translationVariantsFa": [
+        "روی"
+      ],
+      "level": "A1",
+      "occurrenceCount": 2,
+      "sourceLessonKeys": [
+        "EN-A1-L-0008",
+        "EN-A1-L-0013"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 60,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "one",
+      "partOfSpeech": "numeral",
+      "identityKey": "en-lex-one-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-ONE-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "one"
+      ],
+      "translationFa": "یک",
+      "translationVariantsFa": [
+        "یک"
+      ],
+      "level": "A1",
+      "occurrenceCount": 2,
+      "sourceLessonKeys": [
+        "EN-A1-L-0014",
+        "EN-A1-L-0020"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "or",
+      "partOfSpeech": "conjunction",
+      "identityKey": "en-lex-or-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-OR-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "or"
+      ],
+      "translationFa": "یا",
+      "translationVariantsFa": [
+        "یا"
+      ],
+      "level": "A1",
+      "occurrenceCount": 2,
+      "sourceLessonKeys": [
+        "EN-A1-L-0010",
+        "EN-A1-L-0014"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 60,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "identityKey": "en-lex-please-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-PLEASE-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "please"
+      ],
+      "translationFa": "لطفا",
+      "translationVariantsFa": [
+        "لطفا"
+      ],
+      "level": "A1",
+      "occurrenceCount": 8,
+      "sourceLessonKeys": [
+        "EN-A1-L-0007",
+        "EN-A1-L-0009",
+        "EN-A1-L-0010",
+        "EN-A1-L-0011",
+        "EN-A1-L-0012",
+        "EN-A1-L-0013",
+        "EN-A1-L-0014",
+        "EN-A1-L-0015"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 60,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "see you",
+      "partOfSpeech": null,
+      "identityKey": "en-lex-see-you-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-SEE-YOU-01"
+      ],
+      "itemType": "formula",
+      "displayForms": [
+        "see you"
+      ],
+      "translationFa": "می بینمت؛ فعلا خداحافظ",
+      "translationVariantsFa": [
+        "می بینمت؛ فعلا خداحافظ"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0003"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "seven",
+      "partOfSpeech": "numeral",
+      "identityKey": "en-lex-seven-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-SEVEN-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "seven"
+      ],
+      "translationFa": "هفت",
+      "translationVariantsFa": [
+        "هفت"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0020"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "six",
+      "partOfSpeech": "numeral",
+      "identityKey": "en-lex-six-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-SIX-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "six"
+      ],
+      "translationFa": "شش",
+      "translationVariantsFa": [
+        "شش"
+      ],
+      "level": "A1",
+      "occurrenceCount": 2,
+      "sourceLessonKeys": [
+        "EN-A1-L-0016",
+        "EN-A1-L-0020"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "sorry",
+      "partOfSpeech": "interjection",
+      "identityKey": "en-lex-sorry-apology-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-SORRY-APOLOGY-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "sorry"
+      ],
+      "translationFa": "ببخشید؛ برای عذرخواهی",
+      "translationVariantsFa": [
+        "ببخشید؛ برای عذرخواهی"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0012"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "sorry",
+      "partOfSpeech": "interjection",
+      "identityKey": "en-lex-sorry-repeat-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-SORRY-REPEAT-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "sorry"
+      ],
+      "translationFa": "ببخشید؟ برای درخواست تکرار",
+      "translationVariantsFa": [
+        "ببخشید؟ برای درخواست تکرار"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0004"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "sure",
+      "partOfSpeech": "interjection",
+      "identityKey": "en-lex-sure-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-SURE-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "sure"
+      ],
+      "translationFa": "حتما؛ باشه",
+      "translationVariantsFa": [
+        "حتما؛ باشه"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0019"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "identityKey": "en-lex-thanks-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-THANKS-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "thanks"
+      ],
+      "translationFa": "ممنون",
+      "translationVariantsFa": [
+        "ممنون"
+      ],
+      "level": "A1",
+      "occurrenceCount": 11,
+      "sourceLessonKeys": [
+        "EN-A1-L-0003",
+        "EN-A1-L-0004",
+        "EN-A1-L-0007",
+        "EN-A1-L-0008",
+        "EN-A1-L-0009",
+        "EN-A1-L-0010",
+        "EN-A1-L-0011",
+        "EN-A1-L-0012",
+        "EN-A1-L-0013",
+        "EN-A1-L-0014",
+        "EN-A1-L-0015"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "this",
+      "partOfSpeech": "pronoun",
+      "identityKey": "en-lex-this-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-THIS-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "this"
+      ],
+      "translationFa": "این",
+      "translationVariantsFa": [
+        "این"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 35,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "two",
+      "partOfSpeech": "numeral",
+      "identityKey": "en-lex-two-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-TWO-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "two"
+      ],
+      "translationFa": "دو",
+      "translationVariantsFa": [
+        "دو"
+      ],
+      "level": "A1",
+      "occurrenceCount": 2,
+      "sourceLessonKeys": [
+        "EN-A1-L-0014",
+        "EN-A1-L-0020"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "where",
+      "partOfSpeech": "adverb",
+      "identityKey": "en-lex-where-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-WHERE-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "where"
+      ],
+      "translationFa": "کجا",
+      "translationVariantsFa": [
+        "کجا"
+      ],
+      "level": "A1",
+      "occurrenceCount": 1,
+      "sourceLessonKeys": [
+        "EN-A1-L-0008"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "review",
+      "externalReviewQualityScore": 35,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    },
+    {
+      "lemma": "yes",
+      "partOfSpeech": "interjection",
+      "identityKey": "en-lex-yes-01",
+      "senseKey": null,
+      "sourceLexicalKeys": [
+        "EN-LEX-YES-01"
+      ],
+      "itemType": "word",
+      "displayForms": [
+        "yes"
+      ],
+      "translationFa": "بله",
+      "translationVariantsFa": [
+        "بله"
+      ],
+      "level": "A1",
+      "occurrenceCount": 5,
+      "sourceLessonKeys": [
+        "EN-A1-L-0011",
+        "EN-A1-L-0016",
+        "EN-A1-L-0017",
+        "EN-A1-L-0018",
+        "EN-A1-L-0020"
+      ],
+      "minimumSourceLessonQualityScore": 100,
+      "externalStatus": "missing",
+      "externalReviewQualityScore": null,
+      "qualityScore": 100,
+      "qualitySignals": [
+        "canonical_lesson_quality_gate",
+        "stable_translation",
+        "stable_identity",
+        "pedagogical_identity",
+        "typed_lexical_unit",
+        "supporting_evidence"
+      ],
+      "eligibleForReference": true,
+      "eligibleForFutureAutoSelection": true
+    }
+  ]
+}
