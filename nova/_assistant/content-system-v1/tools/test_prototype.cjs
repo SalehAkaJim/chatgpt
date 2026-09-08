@@ -14,6 +14,11 @@ const html = fs.readFileSync(path.join(prototype, 'index.html'), 'utf8');
 const code = fs.readFileSync(path.join(prototype, 'app.js'), 'utf8');
 const tick = () => new Promise(resolve => setImmediate(resolve));
 async function settle() { for (let i=0;i<8;i++) await tick(); }
+async function waitUntil(predicate, message) {
+  const deadline=Date.now()+3000;
+  while(!predicate() && Date.now()<deadline) await new Promise(resolve=>setTimeout(resolve,5));
+  assert.ok(predicate(),message);
+}
 async function page(number, stale=false, mutate=null, review=false) {
   const lessons = structuredClone(sources);
   if (mutate) mutate(lessons[number - 1]);
@@ -32,7 +37,7 @@ async function page(number, stale=false, mutate=null, review=false) {
   w.Audio=Audio;
   w.SpeechRecognition=class {
     start() { queueMicrotask(() => {
-      const shown = w.document.querySelector('.bubble.you .en')?.textContent;
+      const shown = w.testSpeechTranscript ?? w.document.querySelector('.bubble.you .en')?.textContent;
       this.onresult({results:[[{transcript:shown}]]}); this.onend();
     }); }
     abort() { this.onend?.(); }
@@ -84,10 +89,18 @@ async function complete(number, mutate=null, review=false) {
       d.querySelector(review ? '.test-pass' : '.mic').click();continue;
     }
     if(activity.type==='lexical_teach') {d.querySelector('#screens .play')?.click();d.getElementById('nextBtn').click();continue;}
+    if(activity.type==='speak' && activity.config.mode==='retrieval') {
+      assert.equal(d.querySelector('.retrieval-model'),null,'No answer or model audio before explicit help');
+      if(review) { d.querySelector('.test-pass').click(); continue; }
+      if(number%2===0) { w.testSpeechTranscript=activity.config.acceptedAnswersEn.at(-1); d.querySelector('.retrieval .mic').click(); continue; }
+      const input=d.querySelector('.retrieval-input');
+      input.value=activity.config.acceptedAnswersEn.at(-1); input.dispatchEvent(new w.Event('input'));
+      d.getElementById('nextBtn').click(); continue;
+    }
     if(activity.type==='sentence_order') {
       const tokens=didWrongOrder?activity.config.answerTokensEn:[...activity.config.answerTokensEn].reverse();
       for(const text of tokens) {
-        const button=[...d.querySelectorAll('.bank .token')].find(b=>b.textContent===text&&!b.disabled);assert.ok(button);button.click();
+        const button=[...d.querySelectorAll('.bank .token')].find(b=>activity.config.tokensEn[Number(b.dataset.tokenIndex)]===text&&!b.disabled);assert.ok(button);button.click();
       }
       d.getElementById('nextBtn').click();
       if(!didWrongOrder) {assert.ok(d.getElementById('feedbackPanel').classList.contains('bad'));d.getElementById('feedbackContinue').click();d.querySelector('.reset').click();didWrongOrder=true;}
@@ -97,7 +110,7 @@ async function complete(number, mutate=null, review=false) {
     const options=[...d.querySelectorAll('.options .option')];
     const index=didWrongChoice?activity.config.answerIndex:(activity.config.answerIndex+1)%options.length;
     options[index].click();d.getElementById('nextBtn').click();
-    if(!didWrongChoice) {assert.ok(d.getElementById('feedbackPanel').classList.contains('bad'));d.getElementById('feedbackContinue').click();didWrongChoice=true;}
+    if(!didWrongChoice) {assert.ok(d.getElementById('feedbackPanel').classList.contains('bad'));assert.equal(d.getElementById('feedbackText').textContent,activity.config.feedback.optionsFa[index]);d.getElementById('feedbackContinue').click();didWrongChoice=true;}
   }
   assert.equal(d.querySelector('#screens h1')?.textContent,review ? 'مرور درس تموم شد' : 'درس تموم شد');
   d.getElementById('homeBtn').click();
@@ -111,7 +124,7 @@ async function complete(number, mutate=null, review=false) {
   // Changing the selector reloads another canonical Lesson without retained answers.
   const other=number===sources.length?0:sources.length-1;
   const select=d.getElementById('lessonSelect');select.value=String(other);select.dispatchEvent(new w.Event('change'));await settle();
-  for(let i=0;i<100 && d.querySelector('#screens .tag')?.textContent!==lessons[other].titleFa;i++)await settle();
+  await waitUntil(()=>d.querySelector('#screens .tag')?.textContent===lessons[other].titleFa,'Selected Lesson should finish loading');
   assert.equal(d.querySelector('#screens .tag')?.textContent,lessons[other].titleFa);
   assert.equal(d.querySelector('.role-label').dataset.characterKey,lessons[other].curriculum.story.learnerRoleKey,'Changing Lessons must change the displayed played role');
   assert.equal(d.querySelector('#screens h1'),null);
@@ -120,6 +133,21 @@ async function complete(number, mutate=null, review=false) {
 (async()=>{
   for(let number=1;number<=sources.length;number++)await complete(number);
   await complete(1,null,true);
+  const help=await page(1,false,l=>{l.activities=[l.activities.at(-1)];});
+  const hd=help.w.document, hw=help.w;
+  assert.equal(hd.querySelector('.retrieval-model'),null);
+  assert.equal(hd.querySelector('#screens .play'),null,'Answer audio must not leak before help');
+  let field=hd.querySelector('.retrieval-input'); field.value='Not the requested meaning'; field.dispatchEvent(new hw.Event('input'));
+  hd.getElementById('nextBtn').click();
+  assert.ok(hd.getElementById('feedbackText').textContent.includes('ممکن است پاسخ دیگری هم درست باشد'));
+  hd.getElementById('feedbackContinue').click(); hd.querySelector('.retrieval .secondary').click();
+  assert.ok(hd.querySelector('.retrieval-model .en'));
+  field.value=help.lessons[0].activities[0].config.textEn;field.dispatchEvent(new hw.Event('input'));hd.getElementById('nextBtn').click();hd.getElementById('feedbackContinue').click();
+  assert.ok(hd.querySelector('.retrieval-summary').textContent.endsWith('۰ از ۱'),'Help/retry cannot become first-attempt independent evidence');
+  const retry=[...hd.querySelectorAll('.completion-actions button')].find(b=>b.textContent==='دوباره تمرین کن');retry.click();await settle();
+  for(let i=0;i<100 && !hd.querySelector('.retrieval-input');i++) await settle();
+  assert.equal(hd.querySelector('.retrieval-model'),null,'Starting a new attempt resets assistance state');
+  help.dom.window.close();
   const home=await page(null);
   assert.equal(home.w.document.getElementById('homeScreen').hidden,false);
   assert.equal(home.w.document.querySelectorAll('.lesson-link').length,sources.length);

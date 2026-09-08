@@ -7,10 +7,10 @@
   "sortOrder": 7,
   "titleEn": "Ask for a pen",
   "titleFa": "یک خودکار می خوام",
-  "descriptionFa": "برای امضای رسید یک بسته خودکار نداری. از نورا که قبلا با او آشنا شده ای کمک می گیری؛ بعد او هم چیزی از تو می خواهد.",
+  "descriptionFa": "تحویل بسته مشترک و دادن سهم همسایه",
   "primaryOutcomeKey": "A1-INTERACTION-REQUEST-OBJECT",
   "outcomeFa": "می توانی یک وسیله را مودبانه درخواست کنی و هنگام گرفتن آن تشکر کنی.",
-  "scenarioFa": "برای امضای رسید یک بسته خودکار نداری. از نورا که قبلا با او آشنا شده ای کمک می گیری؛ بعد او هم چیزی از تو می خواهد. نقش تو اوون است.",
+  "scenarioFa": "یک بسته کتاب مشترک برای تو و نورا رسیده است. برای امضای رسید از او خودکار می خواهی؛ بعد کتابی را که سهم اوست به او می دهی. نقش تو اوون است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-NAME-OBJECT",
     "A1-INTERACTION-GREET-STATE-CLOSE"
@@ -25,10 +25,10 @@
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Change the requested object from a pen for a delivery receipt to a book borrowed from a neighbor."
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-NEIGHBORS",
@@ -45,7 +45,7 @@
         "EN-A1-L-0002"
       ],
       "settingFa": "جلوی در همسایه، هنگام گرفتن یک بسته",
-      "storyBeatFa": "اوون برای امضای رسید از همسایه اش خودکار می گیرد."
+      "storyBeatFa": "اوون برای رسید خودکار می گیرد و نورا کتاب سهم خودش را درخواست می کند."
     },
     "reviewLinks": [
       {
@@ -57,7 +57,8 @@
         "learningDemand": "transfer",
         "note": "Use classroom object names to make a practical request in a building."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -164,6 +165,21 @@
       "translationFa": "می شه لطفا یک کتاب به من بدی؟",
       "audioRequired": true,
       "characterKey": "nora"
+    },
+    {
+      "turnKey": "T06",
+      "role": "learner",
+      "characterKey": "owen",
+      "textEn": "Can I have a book, please?",
+      "translationFa": "می شه لطفا یک کتاب به من بدی؟",
+      "speechTargetEn": "Can I have a book, please?",
+      "acceptedSpeechEn": [
+        "Can I have a book, please?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -232,9 +248,18 @@
         ],
         "answerEn": "Can I have a pen, please?",
         "showAnswerTextBeforeAttempt": false,
-        "allowAudioReplay": true
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: می شه لطفا یک خودکار به من بدی؟",
+          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: می شه لطفا یک خودکار به من بدی؟"
+        }
       },
-      "activityKey": "A03"
+      "activityKey": "A03",
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
     },
     {
       "type": "comprehension",
@@ -249,12 +274,21 @@
           "آب"
         ],
         "answerIndex": 1,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "نورا book می گوید؛ خودکار درخواست قبلی اوون بود.",
+            "این بار نورا کتاب سهم خودش را می خواهد.",
+            "در درخواست نورا book است؛ نوشیدنی نمی خواهد."
+          ],
+          "correctFa": "این بار نورا کتاب سهم خودش را می خواهد."
+        }
       },
       "promptFa": "حالا نورا از تو چه چیزی می خواهد؟",
       "metadata": {
         "learningDemand": "retrieval",
-        "purpose": "A new request is heard only in this task, with the requested object changed."
+        "purpose": "A new request is heard only in this task, with the requested object changed.",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A04"
     },
@@ -267,14 +301,50 @@
           "Can I have a book, please?",
           "See you!"
         ],
-        "answerIndex": 1
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "Here you go هنگام دادن چیزی یعنی بفرما.",
+            "این جمله چیزی را درخواست می کند؛ این بار داری کتاب را به نورا می دهی.",
+            "See you خداحافظی است؛ این موقعیت دادن کتاب است."
+          ],
+          "correctFa": "Here you go هنگام دادن چیزی یعنی بفرما."
+        }
       },
-      "promptFa": "در ساختمان می خواهی یک کتاب را از همسایه ات قرض بگیری. چه می گویی؟",
+      "promptFa": "نورا کتاب سهم خودش را می خواهد. موقع دادن کتاب به او چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "changed_context"
+        "purpose": "changed_context",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A05"
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "اوون هستی. برای مطالعه، کتاب سهم خودت را از نورا درخواست کن.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Can I have a book, please?",
+        "acceptedAnswersEn": [
+          "Can I have a book, please?"
+        ],
+        "sourceTurnKey": "T06",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "الگوی درخواست مودبانه را با نام کتاب بساز.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "الگوی درخواست مودبانه را با نام کتاب بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+      }
     }
   ],
   "review": {
@@ -285,6 +355,7 @@
     "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

@@ -19,10 +19,10 @@
     "startingKnowledge": "early_a1_after_greetings",
     "targetConstructions": [],
     "supportLanguage": [],
-    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Choose acceptance and refusal at the library event; only recognition/selection is assessed."
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-LIBRARY",
@@ -59,7 +59,8 @@
         "learningDemand": "transfer",
         "note": "Decide whether to accept an offer instead of selecting between two drinks."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -194,6 +195,21 @@
         "Yes, please."
       ],
       "characterKey": "liam"
+    },
+    {
+      "turnKey": "T07",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "No, thanks. Coffee, please.",
+      "translationFa": "نه، ممنون. قهوه، لطفا.",
+      "speechTargetEn": "No, thanks. Coffee, please.",
+      "acceptedSpeechEn": [
+        "No, thanks. Coffee, please."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -243,20 +259,33 @@
       "type": "sentence_order",
       "instructionFa": "گوش کن و کلمه ها را به همان ترتیب بچین.",
       "config": {
-        "audioSourceTurnKey": "T06",
+        "audioSourceTurnKey": "T02",
         "tokensEn": [
           "please.",
-          "Yes,"
+          "No,",
+          "Water,",
+          "thanks."
         ],
         "answerTokensEn": [
-          "Yes,",
+          "No,",
+          "thanks.",
+          "Water,",
           "please."
         ],
-        "answerEn": "Yes, please.",
+        "answerEn": "No, thanks. Water, please.",
         "showAnswerTextBeforeAttempt": false,
-        "allowAudioReplay": true
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: نه، ممنون. آب، لطفا.",
+          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: نه، ممنون. آب، لطفا."
+        }
       },
-      "activityKey": "A03"
+      "activityKey": "A03",
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
     },
     {
       "type": "response_choice",
@@ -267,12 +296,21 @@
           "No, thanks.",
           "Here you go."
         ],
-        "answerIndex": 1
+        "answerIndex": 1,
+        "feedback": {
+          "optionsFa": [
+            "Yes, please پیشنهاد را قبول می کند؛ تو نوشیدنی نمی خواهی.",
+            "No, thanks پیشنهاد را مودبانه رد می کند.",
+            "Here you go وقتی چیزی می دهی به کار می رود؛ اینجا باید پیشنهاد را رد کنی."
+          ],
+          "correctFa": "No, thanks پیشنهاد را مودبانه رد می کند."
+        }
       },
       "promptFa": "کنار میز پذیرایی کتابخانه چای تعارف می کنند. نوشیدنی نمی خواهی. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "changed_context"
+        "purpose": "changed_context",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A04"
     },
@@ -285,14 +323,51 @@
           "No, thanks.",
           "Yes, please."
         ],
-        "answerIndex": 2
+        "answerIndex": 2,
+        "feedback": {
+          "optionsFa": [
+            "این عبارت برای دادن چیزی است؛ این بار می خواهی پیشنهاد را قبول کنی.",
+            "این پاسخ پیشنهاد را رد می کند؛ الان آب می خواهی.",
+            "Yes, please پیشنهاد آب را مودبانه قبول می کند."
+          ],
+          "correctFa": "Yes, please پیشنهاد آب را مودبانه قبول می کند."
+        }
       },
       "promptFa": "کمی بعد در همان برنامه آب تعارف می کنند و این بار می خواهی قبول کنی. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "changed_context"
+        "purpose": "changed_context",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A05"
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "لیام هستی. چای پیشنهاد شده؛ چای را مودبانه رد کن و به جایش قهوه بخواه.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "No, thanks. Coffee, please.",
+        "acceptedAnswersEn": [
+          "No, thanks. Coffee, please.",
+          "No, thank you. Coffee, please."
+        ],
+        "sourceTurnKey": "T07",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "اول پیشنهاد را رد کن، بعد نوشیدنی مورد نظرت را بگو.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "اول پیشنهاد را رد کن، بعد نوشیدنی مورد نظرت را بگو."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+      }
     }
   ],
   "review": {
@@ -303,6 +378,7 @@
     "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

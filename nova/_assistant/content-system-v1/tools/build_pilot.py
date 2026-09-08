@@ -7,6 +7,9 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import time
+from concurrent.futures import ThreadPoolExecutor
+from validate_pedagogy_review import read_review
 from compile_lesson_sql import compile_sql
 from generate_audio import generate, load, save
 from render_english_audit import render
@@ -65,7 +68,62 @@ def validate_sequence(records):
     return errors + validate_story(records)
 
 
-def build(root, reuse_only=False):
+def check_text(root, record, policy):
+    lesson, course, source = record['lesson'], record['course'], record['source']
+    lesson_dir = source.parent
+    source_hash = hashlib.sha256(source.read_bytes()).hexdigest()
+    course_hash = hashlib.sha256(record['coursePath'].read_bytes()).hexdigest()
+    canonical = validate(lesson, course)
+    canonical['sourceHash'] = source_hash
+    canonical['courseSourceHash'] = course_hash
+    save(lesson_dir / 'validation.json', canonical)
+    if canonical['status'] != 'PASS':
+        raise ValueError('; '.join(canonical['errors']))
+    quality = evaluate(lesson, policy)
+    quality['sourceHash'] = source_hash
+    save(lesson_dir / 'content_quality.json', quality)
+    if not quality['publishableByAutomatedQualityGate']:
+        raise ValueError(f"Content quality score={quality['automatedScore']}: {quality['errors']}")
+    persian = subprocess.run([sys.executable, str(SYSTEM / 'tools/validate_persian_text.py'),
+        '--exceptions', str(SYSTEM / 'persian_orthography_exceptions.json'), str(record['coursePath']),
+        str(source), str(root / 'nova/prototype/index.html'), str(root / 'nova/prototype/app.js')],
+        capture_output=True, text=True)
+    report = json.loads(persian.stdout)
+    report['sourceHash'] = source_hash
+    save(lesson_dir / 'persian_validation.json', report)
+    if persian.returncode:
+        raise ValueError('Persian orthography failed')
+    audit = f'<!-- sourceHash: {source_hash} -->\n' + render(lesson)
+    (lesson_dir / 'english_audit.md').write_text(audit, encoding='utf-8')
+    semantic = read_review(source, record['coursePath'], policy)
+    quality['manualReview'] = semantic
+    save(lesson_dir / 'content_quality.json', quality)
+    if semantic['status'] != 'PASS':
+        raise ValueError('Semantic review: ' + '; '.join(semantic['errors']))
+    return quality
+
+
+def text_phase(root, records, policy, workers):
+    started = time.monotonic()
+    def one(record):
+        start = time.monotonic()
+        try:
+            check_text(root, record, policy)
+            result = {'lessonKey': record['lesson']['lessonKey'], 'status': 'PASS'}
+        except Exception as error:
+            result = {'lessonKey': record['lesson']['lessonKey'], 'status': 'FAIL', 'error': str(error)}
+        result['validationSeconds'] = round(time.monotonic() - start, 3)
+        return result
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        results = list(executor.map(one, records))
+    report = {'status': 'PASS' if all(x['status'] == 'PASS' for x in results) else 'FAIL',
+              'phase': 'text_validation', 'workers': workers, 'seconds': round(time.monotonic() - started, 3),
+              'measuresAuthoringTime': False, 'lessons': results}
+    save(root / 'nova/_assistant/content-system-v1/text_build_report.json', report)
+    return report
+
+
+def build(root, reuse_only=False, text_only=False, text_workers=4):
     records = discover(root)
     if not records:
         raise ValueError('No canonical Lessons found')
@@ -74,6 +132,9 @@ def build(root, reuse_only=False):
         raise ValueError('; '.join(sequence_errors))
     summaries, catalog, imports = [], [], []
     policy = load(SYSTEM / 'content_quality.policy.json')
+    preflight = text_phase(root, records, policy, text_workers)
+    if text_only or preflight['status'] != 'PASS':
+        return preflight
     for record in records:
         lesson, course, source = record['lesson'], record['course'], record['source']
         lesson_dir = source.parent
@@ -81,28 +142,7 @@ def build(root, reuse_only=False):
         course_hash = hashlib.sha256(record['coursePath'].read_bytes()).hexdigest()
         summary = {'lessonKey': lesson['lessonKey'], 'sourceHash': source_hash, 'status': 'FAIL'}
         try:
-            canonical = validate(lesson, course)
-            canonical['sourceHash'] = source_hash
-            canonical['courseSourceHash'] = course_hash
-            save(lesson_dir / 'validation.json', canonical)
-            if canonical['status'] != 'PASS':
-                raise ValueError('; '.join(canonical['errors']))
-            quality = evaluate(lesson, policy)
-            quality['sourceHash'] = source_hash
-            save(lesson_dir / 'content_quality.json', quality)
-            if not quality['publishableByAutomatedQualityGate']:
-                raise ValueError(f"Content quality score={quality['automatedScore']}: {quality['errors']}")
-            persian = subprocess.run([sys.executable, str(SYSTEM / 'tools/validate_persian_text.py'),
-                '--exceptions', str(SYSTEM / 'persian_orthography_exceptions.json'), str(record['coursePath']),
-                str(source), str(root / 'nova/prototype/index.html'), str(root / 'nova/prototype/app.js')],
-                capture_output=True, text=True)
-            report = json.loads(persian.stdout)
-            report['sourceHash'] = source_hash
-            save(lesson_dir / 'persian_validation.json', report)
-            if persian.returncode:
-                raise ValueError('Persian orthography failed')
-            audit = f'<!-- sourceHash: {source_hash} -->\n' + render(lesson)
-            (lesson_dir / 'english_audit.md').write_text(audit, encoding='utf-8')
+            quality = load(lesson_dir / 'content_quality.json')
             voices = record['coursePath'].parent / 'audio_voices.json'
             manifest = lesson_dir / 'audio.manifest.json'
             audio = generate(source, voices, root, manifest, reuse_only)
@@ -146,9 +186,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--repo-root', type=Path, default=Path('.'))
     parser.add_argument('--reuse-only', action='store_true')
+    parser.add_argument('--text-only', action='store_true', help='Validate the full batch before generating any paid audio')
+    parser.add_argument('--text-workers', type=int, choices=range(1,9), default=4)
     args = parser.parse_args()
     try:
-        report = build(args.repo_root.resolve(), args.reuse_only)
+        report = build(args.repo_root.resolve(), args.reuse_only, args.text_only, args.text_workers)
     except (ValueError, OSError) as error:
         parser.exit(2, str(error) + '\n')
     return 0 if report['status'] == 'PASS' else 2

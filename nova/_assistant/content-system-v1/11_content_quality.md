@@ -155,3 +155,7 @@ A warning is not automatically a question for the product owner. First determine
 Fix the canonical source, never the generated quality report.
 Warnings should be resolved when they indicate a real quality problem; do not silence them by weakening the validator.
 Policy thresholds may change only with an explicit rationale and a validator test.
+
+## Pedagogy v2 extension
+
+[13_pedagogy_v2.md](13_pedagogy_v2.md) adds CQ-H13–H15, complete option feedback, hidden-answer retrieval, source-bound semantic review and an all-text preflight before paid audio. Current review records explicitly distinguish model text review from unperformed teacher, learner and perceptual-audio validation.

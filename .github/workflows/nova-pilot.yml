@@ -8,7 +8,9 @@ on:
       - 'nova/courses/**/course.source.json'
       - 'nova/courses/**/audio_voices.json'
       - 'nova/courses/**/lessons/**/lesson.source.json'
+      - 'nova/courses/**/lessons/**/pedagogy.review.json'
       - 'nova/prototype/**'
+      - 'nova/calibration/**'
       - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
       - 'nova/_assistant/content-system-v1/persian_orthography_exceptions.json'
       - 'nova/_assistant/content-system-v1/content_quality.policy.json'
@@ -65,6 +67,9 @@ jobs:
           python nova/_assistant/content-system-v1/tools/test_content_quality.py
           python nova/_assistant/content-system-v1/tools/test_persian_orthography_exceptions.py
           python -m unittest discover -s nova/_assistant/content-system-v1/tools -p 'test_pipeline.py' -v
+          python -m unittest discover -s nova/_assistant/content-system-v1/tools -p 'test_pedagogy.py' -v
+          python nova/_assistant/content-system-v1/tools/validate_calibration.py
+          python nova/_assistant/content-system-v1/tools/validate_persian_text.py --exceptions nova/_assistant/content-system-v1/persian_orthography_exceptions.json nova/calibration/en-fa/*.json
           node --check nova/prototype/app.js
           node nova/_assistant/content-system-v1/tools/test_prototype.cjs
       - name: Build and validate every canonical Lesson
@@ -81,6 +86,7 @@ jobs:
           name: nova-pilot-evidence
           path: |
             nova/_assistant/content-system-v1/build_report.json
+            nova/_assistant/content-system-v1/text_build_report.json
             nova/courses/**/lessons/**/*.json
             nova/courses/**/lessons/**/english_audit.md
             nova/courses/**/lessons/**/runtime_smoke.txt
@@ -94,7 +100,7 @@ jobs:
           fi
           git config user.name "nova-pilot-bot"
           git config user.email "nova-pilot-bot@users.noreply.github.com"
-          git add nova/courses/ nova/audio/ nova/mysql/ nova/_assistant/content-system-v1/10_status.json nova/_assistant/content-system-v1/build_report.json
+          git add nova/courses/ nova/audio/ nova/mysql/ nova/_assistant/content-system-v1/10_status.json nova/_assistant/content-system-v1/build_report.json nova/_assistant/content-system-v1/text_build_report.json
           if git diff --cached --quiet; then
             echo "No generated changes."
           else

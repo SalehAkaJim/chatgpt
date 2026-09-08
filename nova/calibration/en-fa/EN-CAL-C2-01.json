@@ -1,0 +1,117 @@
+{
+  "format": "nova-calibration-1",
+  "sampleKey": "EN-CAL-C2-01",
+  "level": "C2",
+  "status": "authoring_sample",
+  "runtimeEligible": false,
+  "titleEn": "Reconcile two editorial accounts",
+  "titleFa": "ترکیب دو روایت تحریریه",
+  "outcomeEn": "Synthesize divergent accounts while preserving stance, implication and evidential limits.",
+  "prerequisiteKnowledge": [
+    "C1 source synthesis",
+    "Rhetorical qualification",
+    "Precise attribution"
+  ],
+  "contextFa": "الکس و مایا برای نشریه کلاسی باید دو روایت از یک طرح آزمایشی را ترکیب کنند؛ بی طرفی نباید به میانگین گرفتن از دو ادعا تبدیل شود.",
+  "story": {
+    "learnerRoleKey": "alex",
+    "participants": [
+      "alex",
+      "maya"
+    ],
+    "continues": "EN-CAL-B1-01",
+    "calibrationPosition": 24
+  },
+  "turns": [
+    {
+      "speakerKey": "maya",
+      "textEn": "The editorial calls the scheme a success, but its examples mostly concern the people who were already taking part."
+    },
+    {
+      "speakerKey": "alex",
+      "textEn": "The response is equally selective: it treats every unresolved concern as evidence that the scheme failed."
+    },
+    {
+      "speakerKey": "maya",
+      "textEn": "We need a summary that doesn't split the difference merely to sound balanced."
+    },
+    {
+      "speakerKey": "alex",
+      "textEn": "Agreed. We should separate what each source establishes from the conclusions it invites us to draw."
+    }
+  ],
+  "activities": [
+    {
+      "type": "dialogue_read",
+      "instructionFa": "گفت و گو را بخوان و هدف هر نوبت را پیدا کن.",
+      "evidence": "supported_input"
+    },
+    {
+      "type": "chunk_notice",
+      "chunksEn": [
+        "the conclusions it invites us to draw",
+        "does not establish that ..."
+      ],
+      "instructionFa": "کاربرد این عبارت ها را در موقعیت بررسی کن.",
+      "evidence": "supported_noticing"
+    },
+    {
+      "type": "reading_choice",
+      "promptFa": "کدام روش با تصمیم نهایی آن ها سازگار است؟",
+      "optionsFa": [
+        "از هر ادعا نصفش را بپذیرند تا متن متعادل شود",
+        "برای هر نتیجه ببینند شواهد همان منبع چه چیزی را واقعا پشتیبانی می کند",
+        "منبع خوش بین را معتبر و پاسخ انتقادی را حذف کنند"
+      ],
+      "answerIndex": 1,
+      "feedbackFa": [
+        "تقسیم اختلاف به دو بخش، ارزیابی شواهد نیست.",
+        "الکس بر جدا کردن شواهد از نتیجه دعوت شده توسط متن تاکید می کند.",
+        "هیچ کدام اعتبار کامل یکی از دو منبع را پیشنهاد نمی کنند."
+      ],
+      "evidence": "source_comprehension"
+    },
+    {
+      "type": "production",
+      "promptFa": "از دو متن همراه، جمع بندی ۱۸۰ تا ۲۲۰ کلمه ای برای خواننده ای بنویس که اصل متن ها را ندیده است. توافق ها، اختلاف ها و یک ادعای حل نشده را با نسبت دادن دقیق به منبع حفظ کن.",
+      "mode": "extended_synthesis",
+      "exampleAnswerEn": "Both accounts acknowledge that attendance increased during the pilot and that regular participants value the sessions. Their disagreement concerns what those observations justify. The editorial treats the rise from eighteen to twenty-seven attendees, together with favourable comments, as a persuasive case for retention. It concedes that information about age and working patterns is missing, but frames that gap as a reason to refine evaluation rather than abandon the programme.\n\nThe response does not dispute the increase or call for immediate closure. Instead, it challenges the implication that benefits reported by participants establish success for the neighbourhood as a whole. It raises the possibility that caring responsibilities or evening work prevent others from attending, while acknowledging that retention could be reasonable if accompanied by a credible investigation of non-participation.\n\nThe sources therefore share more ground on provisional retention than their contrasting tones initially suggest. Neither establishes how representative the participants are, or why other residents stayed away. The unresolved issue is not whether attendance rose, but whether the programme's wider accessibility supports the stronger description of neighbourhood success. Further evaluation would need to address that distinction rather than merely collect additional favourable comments from existing users.",
+      "exampleVisibility": "after_submission_or_explicit_help",
+      "rubric": [
+        "Attribute claims precisely.",
+        "Preserve both common ground and disagreement.",
+        "Identify limits without manufacturing equal validity.",
+        "Use cohesive, nuanced prose and avoid stronger certainty than the sources."
+      ],
+      "evaluation": "model_or_teacher_required",
+      "evidence": "provisional_until_review",
+      "wordRange": [
+        180,
+        220
+      ]
+    }
+  ],
+  "review": {
+    "status": "model_text_reviewed_with_limits",
+    "learnerTested": false,
+    "audioGenerated": false,
+    "limitations": [
+      "These are samples for calibrating demand and review effort; level alignment is provisional.",
+      "Open-response example answers are illustrations, not exact-match answer keys.",
+      "Prerequisite lessons are not supplied by this sample set.",
+      "Generated speech, perceptual QA and human/learner validation are still required before release."
+    ]
+  },
+  "sources": [
+    {
+      "sourceKey": "S1",
+      "label": "Editorial",
+      "textEn": "The pilot has brought welcome energy to the neighbourhood. Attendance at the weekly sessions rose from an average of eighteen to twenty-seven, and participants repeatedly praised the opportunity to meet people outside their usual circles. These are modest figures, but they are not trivial. A programme should not have to solve every access problem before its achievements can be recognised. The case for retaining it is therefore persuasive, although a permanent schedule should remain open to adjustment. The organisers have not yet published a breakdown of attendance by age or working pattern. That gap should guide the next stage of evaluation rather than become a convenient reason to abandon a promising initiative."
+    },
+    {
+      "sourceKey": "S2",
+      "label": "Response",
+      "textEn": "Calling the pilot a neighbourhood success risks making the participants stand in for the neighbourhood. The rise in attendance is real, and no one disputes that several regular users value the sessions. What remains unclear is whether the timetable excludes residents with caring duties or those who work evenings. Nor do the enthusiastic comments tell us much about people who never came. This is not an argument for immediate closure. It is an argument against allowing a favourable headline to settle a question the available evidence cannot answer. Retention may be reasonable, but only if it comes with a credible plan to investigate who is missing and why."
+    }
+  ]
+}

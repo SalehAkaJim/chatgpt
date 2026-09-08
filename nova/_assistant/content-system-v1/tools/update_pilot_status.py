@@ -17,11 +17,16 @@ def update(root):
         technical = all(r.get('sourceHash') == digest and r.get('status') in ('PASS', 'PASS_WITH_WARNINGS') for r in reports.values())
         quality = reports['content_quality.json']
         technical = technical and quality['publishableByAutomatedQualityGate']
+        semantic = quality.get('manualReview', {})
         lessons.append({'lessonKey': record['lesson']['lessonKey'], 'sourceHash': digest,
                         'technicalComplete': technical, 'automatedQualityScore': quality['automatedScore'],
+                        'modelTextReviewComplete': semantic.get('status') == 'PASS' and semantic.get('reviewerType') == 'model' and semantic.get('sourceHash') == digest,
+                        'semanticReviewAverage': semantic.get('average'),
                         'pendingDecisionCount': len(quality['pendingDecisions']), 'finalReviewComplete': False})
     status.update(pilotLessons=lessons, technicallyCompleteLessons=sum(x['technicalComplete'] for x in lessons),
                   nextLesson=len(lessons) + 1, publishedLessons=0, bulkGenerationEnabled=False)
+    status['modelTextReviewedLessons'] = sum(x['modelTextReviewComplete'] for x in lessons)
+    status['learnerValidationComplete'] = False
     first = lessons[0]
     status.update(lesson1AutomatedQualityScore=first['automatedQualityScore'],
                   lesson1PendingDecisionCount=first['pendingDecisionCount'],

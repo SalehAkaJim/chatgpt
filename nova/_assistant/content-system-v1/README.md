@@ -46,3 +46,5 @@ A Lesson may record unresolved product-owner choices under `review.pendingDecisi
 ## Rule change
 
 No generator/validator may silently introduce a content rule absent from this active system. Repeated Pilot defects must become explicit rule/tool/schema improvements before scale-up.
+
+Current pedagogical production contract: [13_pedagogy_v2.md](13_pedagogy_v2.md). The six-level calibration set is authoring-only and does not extend the live beginner path.

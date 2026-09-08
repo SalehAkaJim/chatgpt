@@ -7,10 +7,10 @@
   "sortOrder": 13,
   "titleEn": "Borrowing between neighbors",
   "titleFa": "مرور: کمک به همسایه",
-  "descriptionFa": "چند روز بعد دوباره نورا را می بینی. اول به درخواستش گوش می دهی، بعد خودت چیزی از او می خواهی و یک اشتباه را روشن می کنی.",
+  "descriptionFa": "چیدن میز مطالعه مشترک ساختمان",
   "primaryOutcomeKey": "A1-INTERACTION-REVIEW-REQUEST-REPAIR",
   "outcomeFa": "می توانی درخواست یک وسیله، اصلاح اشتباه و فهمیدن درخواست دیگران را در کنار هم به کار ببری.",
-  "scenarioFa": "چند روز بعد دوباره نورا را می بینی. اول به درخواستش گوش می دهی، بعد خودت چیزی از او می خواهی و یک اشتباه را روشن می کنی. نقش تو اوون است.",
+  "scenarioFa": "تو و نورا چند کتاب و خودکار برای میز مطالعه مشترک ساختمان آورده اید. وسیله ها را به هم می دهید، یک اشتباه را روشن می کنی و جای کتابت را می پرسی. نقش تو اوون است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-CORRECT-REQUEST",
     "A1-INTERACTION-LOCATE-OBJECT"
@@ -19,10 +19,10 @@
     "startingKnowledge": "early_a1_after_greetings",
     "targetConstructions": [],
     "supportLanguage": [],
-    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Retrieve a request before the model, then correct a different intended object with a neighbor; reuse classroom language in another story and another learner role."
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-NEIGHBORS",
@@ -39,7 +39,7 @@
         "EN-A1-L-0007"
       ],
       "settingFa": "ساختمان، قرض دادن وسایل به همسایه",
-      "storyBeatFa": "اوون و نورا بعد از کمک قبلی، این بار درخواست و اصلاح را در قرض دادن وسایل به هم به کار می برند."
+      "storyBeatFa": "اوون و نورا وسایل میز مشترک را به هم می دهند و یک درخواست اشتباه شنیده شده را روشن می کنند."
     },
     "reviewLinks": [
       {
@@ -67,7 +67,8 @@
         "learningDemand": "transfer",
         "note": "Apply the classroom correction pattern to borrowing from a neighbor with different characters."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -229,6 +230,51 @@
       "translationFa": "روی میزه.",
       "audioRequired": true,
       "characterKey": "nora"
+    },
+    {
+      "turnKey": "T09",
+      "role": "learner",
+      "characterKey": "owen",
+      "textEn": "Where's my book?",
+      "translationFa": "کتابم کجاست؟",
+      "speechTargetEn": "Where's my book?",
+      "acceptedSpeechEn": [
+        "Where's my book?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
+    },
+    {
+      "turnKey": "T10",
+      "role": "learner",
+      "characterKey": "owen",
+      "textEn": "Here you go.",
+      "translationFa": "بفرما.",
+      "speechTargetEn": "Here you go.",
+      "acceptedSpeechEn": [
+        "Here you go."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
+    },
+    {
+      "turnKey": "T11",
+      "role": "learner",
+      "characterKey": "owen",
+      "textEn": "Where's my pen?",
+      "translationFa": "خودکارم کجاست؟",
+      "speechTargetEn": "Where's my pen?",
+      "acceptedSpeechEn": [
+        "Where's my pen?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -237,7 +283,8 @@
       "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
       "config": {
         "sourceTurnKeys": [
-          "T07"
+          "T07",
+          "T10"
         ],
         "options": [
           "خودکار",
@@ -245,12 +292,21 @@
           "چای"
         ],
         "answerIndex": 0,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "نورا pen می خواهد و اوون با Here you go آن را می دهد.",
+            "کتاب درخواست بعدی اوون است؛ این بخش درخواست نورا را می سنجد.",
+            "در این درخواست نوشیدنی مطرح نیست؛ به pen گوش کن."
+          ],
+          "correctFa": "نورا pen می خواهد و اوون با Here you go آن را می دهد."
+        }
       },
-      "promptFa": "پیش از گفت و گوی خودت، گوش کن: نورا چه چیزی می خواهد؟",
+      "promptFa": "برای چیدن میز، اول این درخواست و پاسخ را گوش کن. نورا چه چیزی می گیرد؟",
       "metadata": {
         "learningDemand": "retrieval",
-        "purpose": "Delayed listening with no visible model; request comes from a different familiar person."
+        "purpose": "Delayed listening with no visible model; request comes from a different familiar person.",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A01"
     },
@@ -263,12 +319,21 @@
           "Where's my book?",
           "Can I have a book, please?"
         ],
-        "answerIndex": 2
+        "answerIndex": 2,
+        "feedback": {
+          "optionsFa": [
+            "این جمله خودکار می خواهد؛ الان کتاب لازم داری.",
+            "این جمله جای کتاب خودت را می پرسد؛ از وسایل مشترک کتاب درخواست نمی کند.",
+            "این جمله یک کتاب را مودبانه درخواست می کند."
+          ],
+          "correctFa": "این جمله یک کتاب را مودبانه درخواست می کند."
+        }
       },
-      "promptFa": "برای مطالعه می خواهی یک کتاب از همسایه ات بگیری. چه می گویی؟",
+      "promptFa": "برای میز مطالعه یک کتاب از وسایل مشترک می خواهی. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "Select a request before its guided model is displayed."
+        "purpose": "Select a request before its guided model is displayed.",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A02"
     },
@@ -312,22 +377,33 @@
     },
     {
       "type": "comprehension",
-      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "instructionFa": "گوش کن و پاسخ را انتخاب کن.",
       "config": {
-        "sourceTurnKeys": [
-          "T08"
-        ],
         "options": [
-          "روی میز",
-          "درباره جایش چیزی نمی گوید"
+          "کتاب اوون",
+          "خودکار نورا",
+          "کتاب نورا"
         ],
         "answerIndex": 0,
-        "transcriptAfterAttempt": true
+        "sourceTurnKeys": [
+          "T09",
+          "T08"
+        ],
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "اوون اول می پرسد کتابم کجاست؛ پاسخ نورا جای همان کتاب را می گوید.",
+            "در سوال اوون book شنیده می شود، نه pen.",
+            "my را اوون می گوید؛ بنابراین سوال درباره کتاب اوون است."
+          ],
+          "correctFa": "اوون اول می پرسد کتابم کجاست؛ پاسخ نورا جای همان کتاب را می گوید."
+        }
       },
-      "promptFa": "کمی بعد نورا درباره جای یک وسیله چه می گوید؟",
+      "promptFa": "اوون و نورا در این بخش درباره جای چه چیزی حرف می زنند؟",
       "metadata": {
         "learningDemand": "retrieval",
-        "purpose": "Delayed recognition of the location pattern, without showing the earlier Lesson 0008 model."
+        "purpose": "Delayed recognition of the location pattern, without showing the earlier Lesson 0008 model.",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A04"
     },
@@ -340,14 +416,51 @@
           "Yes, please.",
           "No, a pen, please."
         ],
-        "answerIndex": 2
+        "answerIndex": 2,
+        "feedback": {
+          "optionsFa": [
+            "بعد از No باید وسیله مورد نظرت را بگویی؛ book همان پیشنهاد اشتباه است.",
+            "این جمله کتاب را قبول می کند؛ تو خودکار می خواهی.",
+            "با No اشتباه را رد می کنی و با a pen وسیله درست را مشخص می کنی."
+          ],
+          "correctFa": "با No اشتباه را رد می کنی و با a pen وسیله درست را مشخص می کنی."
+        }
       },
       "promptFa": "این بار خودکار می خواهی، اما نورا کتاب تعارف می کند. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "Change the intended object after the supported dialogue; no new language."
+        "purpose": "Change the intended object after the supported dialogue; no new language.",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A05"
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "اوون هستی. خودکارت را پیدا نمی کنی. از نورا بپرس کجاست؛ درخواست یک خودکار جدید نکن.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Where's my pen?",
+        "acceptedAnswersEn": [
+          "Where's my pen?",
+          "Where is my pen?"
+        ],
+        "sourceTurnKey": "T11",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "الگوی پرسیدن جای وسیله را از درس مرکز محله به یاد بیاور.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "الگوی پرسیدن جای وسیله را از درس مرکز محله به یاد بیاور."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+      }
     }
   ],
   "review": {
@@ -358,6 +471,7 @@
     "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

@@ -1,0 +1,127 @@
+{
+  "format": "nova-calibration-1",
+  "sampleKey": "EN-CAL-C2-02",
+  "level": "C2",
+  "status": "authoring_sample",
+  "runtimeEligible": false,
+  "titleEn": "Mediate a disagreement fairly",
+  "titleFa": "میانجیگری دقیق در اختلاف",
+  "outcomeEn": "Reformulate competing concerns for different audiences without erasing substantive disagreement.",
+  "prerequisiteKnowledge": [
+    "C1 mediation",
+    "Register control",
+    "Implicit stance and qualification"
+  ],
+  "contextFa": "اوون و نورا می خواهند پیام میانجی برای ساکنان و برگزارکننده یک برنامه محلی بنویسند. هر طرف از حرف دیگری برداشتی شدیدتر کرده است.",
+  "story": {
+    "learnerRoleKey": "owen",
+    "participants": [
+      "owen",
+      "nora"
+    ],
+    "continues": "EN-CAL-B1-02",
+    "calibrationPosition": 25
+  },
+  "turns": [
+    {
+      "speakerKey": "nora",
+      "textEn": "The event organiser hears 'fewer evening sessions' as 'your work isn't welcome'. That's not what the residents' note says."
+    },
+    {
+      "speakerKey": "owen",
+      "textEn": "And the organiser's reply sounds as if anyone who objects to noise opposes community activities altogether."
+    },
+    {
+      "speakerKey": "nora",
+      "textEn": "Could we propose a trial without implying that everyone has already agreed to it?"
+    },
+    {
+      "speakerKey": "owen",
+      "textEn": "Yes, but the message must still acknowledge that quieter hours and more evening access may pull in different directions."
+    }
+  ],
+  "activities": [
+    {
+      "type": "dialogue_read",
+      "instructionFa": "گفت و گو را بخوان و هدف هر نوبت را پیدا کن.",
+      "evidence": "supported_input"
+    },
+    {
+      "type": "chunk_notice",
+      "chunksEn": [
+        "a proposal, not an agreement",
+        "may pull in different directions"
+      ],
+      "instructionFa": "کاربرد این عبارت ها را در موقعیت بررسی کن.",
+      "evidence": "supported_noticing"
+    },
+    {
+      "type": "reading_choice",
+      "promptFa": "پیام میانجی باید از کدام تحریف پرهیز کند؟",
+      "optionsFa": [
+        "پیشنهاد آزمایشی را به عنوان توافق نهایی همه اعلام کند",
+        "نیاز به سکوت و دسترسی عصر را همزمان بیان کند",
+        "برداشت های شدیدتر از متن اصلی را روشن کند"
+      ],
+      "answerIndex": 0,
+      "feedbackFa": [
+        "پیشنهاد هنوز توافق نیست و نباید حمایت همه را جعل کرد.",
+        "بیان هر دو نیاز بخشی از میانجیگری دقیق است.",
+        "روشن کردن برداشت های اغراق شده، اختلاف واقعی را قابل گفت و گو می کند."
+      ],
+      "evidence": "source_comprehension"
+    },
+    {
+      "type": "production",
+      "promptFa": "با استفاده از یادداشت های همراه، دو پیام ۹۰ تا ۱۲۰ کلمه ای بنویس: یکی برای ساکنان و یکی برای برگزارکننده. لحن را تطبیق بده، اما پیشنهاد و میزان قطعیت در هر دو یکسان بماند.",
+      "mode": "extended_mediation",
+      "exampleAnswerEn": "Thank you for distinguishing concerns about late departures from opposition to the programme itself. We propose discussing a four-week trial with fewer late weekday finishes and a clear process for reporting recurring noise. This is a proposal, not an agreement already reached. The trial would also need to consider people who can only attend in the evening. Before any change begins, we suggest agreeing the timings and the evidence that would inform the review. Please tell us which departures cause the greatest difficulty and whether this approach would help address your concerns without closing off useful evening activities.\n\nWe recognise that evening access matters to several volunteers and participants, and that reducing sessions could affect the programme's usefulness. Residents have raised a more specific concern about noisy late departures, rather than asked for the programme to end. Could we discuss a four-week trial with fewer late weekday finishes and a clear reporting process? No agreement should be implied before the timings and review criteria have been discussed. We suggest assessing both access and noise during the trial. Your input on workable timings and on how to capture changes in participation would be essential to a useful review.",
+      "exampleVisibility": "after_submission_or_explicit_help",
+      "rubric": [
+        "Keep factual content and uncertainty consistent across audiences.",
+        "Acknowledge the specific concern of each audience.",
+        "Do not turn criticism of timing into rejection of the whole programme.",
+        "Do not claim unanimous consent."
+      ],
+      "evaluation": "model_or_teacher_required",
+      "evidence": "provisional_until_review",
+      "exampleResponses": [
+        {
+          "audience": "Residents",
+          "textEn": "Thank you for distinguishing concerns about late departures from opposition to the programme itself. We propose discussing a four-week trial with fewer late weekday finishes and a clear process for reporting recurring noise. This is a proposal, not an agreement already reached. The trial would also need to consider people who can only attend in the evening. Before any change begins, we suggest agreeing the timings and the evidence that would inform the review. Please tell us which departures cause the greatest difficulty and whether this approach would help address your concerns without closing off useful evening activities."
+        },
+        {
+          "audience": "Organiser",
+          "textEn": "We recognise that evening access matters to several volunteers and participants, and that reducing sessions could affect the programme's usefulness. Residents have raised a more specific concern about noisy late departures, rather than asked for the programme to end. Could we discuss a four-week trial with fewer late weekday finishes and a clear reporting process? No agreement should be implied before the timings and review criteria have been discussed. We suggest assessing both access and noise during the trial. Your input on workable timings and on how to capture changes in participation would be essential to a useful review."
+        }
+      ],
+      "wordRange": [
+        90,
+        120
+      ]
+    }
+  ],
+  "review": {
+    "status": "model_text_reviewed_with_limits",
+    "learnerTested": false,
+    "audioGenerated": false,
+    "limitations": [
+      "These are samples for calibrating demand and review effort; level alignment is provisional.",
+      "Open-response example answers are illustrations, not exact-match answer keys.",
+      "Prerequisite lessons are not supplied by this sample set.",
+      "Generated speech, perceptual QA and human/learner validation are still required before release."
+    ]
+  },
+  "sources": [
+    {
+      "sourceKey": "S1",
+      "label": "Residents",
+      "textEn": "We support activities that help neighbours meet. Our concern is the number of sessions that finish late on weekdays, when noise from people leaving carries into nearby homes. We would welcome fewer late finishes and a clear way to report recurring problems. We are not asking for the programme to end, and we recognise that some residents can only attend in the evening."
+    },
+    {
+      "sourceKey": "S2",
+      "label": "Organiser",
+      "textEn": "Evening sessions are the only realistic option for several volunteers and participants. Reducing them could make the programme less useful to the people it was designed to reach. We accept that departures have sometimes been noisy and are willing to consider changes. A trial may help, but the timing and the criteria for reviewing it would need to be discussed first."
+    }
+  ]
+}

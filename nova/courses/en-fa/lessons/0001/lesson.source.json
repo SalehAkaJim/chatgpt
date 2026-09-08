@@ -27,11 +27,10 @@
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "Guided dialogue responses are practice only; mastery evidence comes from independent activities after the dialogue.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
-      "mode": "deferred",
-      "targetLesson": "EN-A1-L-0002",
-      "intent": "Reuse greeting and name language in a changed first-meeting context, then introduce My name is + name and polite first-meeting language."
+      "mode": "same_lesson",
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-CLASSMATES",
@@ -51,7 +50,8 @@
       "settingFa": "ورودی کلاس، اولین آشنایی",
       "storyBeatFa": "الکس و مایا برای اولین بار خودشان را معرفی می کنند."
     },
-    "reviewLinks": []
+    "reviewLinks": [],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -117,6 +117,21 @@
       ],
       "audioRequired": true,
       "characterKey": "alex"
+    },
+    {
+      "turnKey": "T05",
+      "role": "learner",
+      "characterKey": "alex",
+      "textEn": "Hello! I'm Alex.",
+      "translationFa": "سلام! من الکس هستم.",
+      "speechTargetEn": "Hello! I'm Alex.",
+      "acceptedSpeechEn": [
+        "Hello! I'm Alex."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -180,7 +195,16 @@
         ],
         "answerEn": "What's your name?",
         "showAnswerTextBeforeAttempt": false,
-        "allowAudioReplay": true
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: اسمت چیه؟",
+          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: اسمت چیه؟"
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
       }
     },
     {
@@ -194,7 +218,18 @@
           "your",
           "name"
         ],
-        "answerIndex": 0
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "I'm پیش از اسم برای معرفی خودت می آید.",
+            "your یعنی مال تو؛ به تنهایی جمله معرفی نمی سازد.",
+            "name یعنی اسم؛ برای معرفی باید بگویی من چه کسی هستم."
+          ],
+          "correctFa": "I'm پیش از اسم برای معرفی خودت می آید."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -215,7 +250,46 @@
           "اهل کجاست"
         ],
         "answerIndex": 0,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "name یعنی اسم؛ مایا اسم الکس را می پرسد.",
+            "برای پرسیدن حال از How are you استفاده می کنیم.",
+            "پرسیدن کشور با پرسیدن اسم فرق دارد؛ اینجا کلمه name را شنیدی."
+          ],
+          "correctFa": "name یعنی اسم؛ مایا اسم الکس را می پرسد."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "الکس هستی. این بار خودت گفت و گو را شروع کن: سلام کن و اسمت را بگو.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Hello! I'm Alex.",
+        "acceptedAnswersEn": [
+          "Hello! I'm Alex.",
+          "Hello! I am Alex."
+        ],
+        "sourceTurnKey": "T05",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "سلام را با معرفی اسم ترکیب کن.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "سلام را با معرفی اسم ترکیب کن."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
       }
     }
   ],
@@ -223,9 +297,10 @@
     "pendingDecisions": []
   },
   "metadata": {
-    "pilot": true,
+    "pilot": false,
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

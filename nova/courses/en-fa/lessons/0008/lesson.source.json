@@ -10,7 +10,7 @@
   "descriptionFa": "برای برنامه کتابخوانی دوباره به مرکز محله آمده ای. آیریس دنبال یکی از وسایلش می گردد و تو کمکش می کنی.",
   "primaryOutcomeKey": "A1-INTERACTION-LOCATE-OBJECT",
   "outcomeFa": "می توانی بفهمی کسی دنبال چه وسیله ای است و بگویی آن وسیله روی میز است.",
-  "scenarioFa": "برای برنامه کتابخوانی دوباره به مرکز محله آمده ای. آیریس دنبال یکی از وسایلش می گردد و تو کمکش می کنی. نقش تو نینا است.",
+  "scenarioFa": "برای برنامه کتابخوانی دوباره به مرکز محله آمده ای. آیریس کتابش را پیدا نمی کند. جای کتاب را می گویی و بعد آن را به دستش می دهی. نقش تو نینا است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-NAME-OBJECT",
     "A1-INTERACTION-REQUEST-OBJECT"
@@ -30,11 +30,10 @@
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
-      "mode": "deferred",
-      "targetLesson": "EN-A1-L-0014",
-      "intent": "Use a location question for a different familiar object; no A1 mastery claim from one location pattern."
+      "mode": "same_lesson",
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-COMMUNITY",
@@ -70,7 +69,8 @@
         "learningDemand": "transfer",
         "note": "Reuse giving an item in a lost-object context."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -184,6 +184,21 @@
       "translationFa": "خودکارم کجاست؟",
       "audioRequired": true,
       "characterKey": "iris"
+    },
+    {
+      "turnKey": "T06",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Where's my pen?",
+      "translationFa": "خودکارم کجاست؟",
+      "speechTargetEn": "Where's my pen?",
+      "acceptedSpeechEn": [
+        "Where's my pen?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -234,15 +249,27 @@
       "type": "fill_blank",
       "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
       "config": {
-        "sentenceEn": "It's ___ the table.",
+        "sentenceEn": "Where's my ___?",
         "optionsEn": [
-          "from",
-          "my",
-          "on"
+          "pen",
+          "book",
+          "table"
         ],
-        "answerIndex": 2
+        "answerIndex": 1,
+        "feedback": {
+          "optionsFa": [
+            "pen یعنی خودکار؛ در این موقعیت کتابت گم شده است.",
+            "book یعنی کتاب؛ Where's my book جای کتابت را می پرسد.",
+            "table یعنی میز؛ دنبال کتاب هستی، نه میز."
+          ],
+          "correctFa": "book یعنی کتاب؛ Where's my book جای کتابت را می پرسد."
+        }
       },
-      "activityKey": "A03"
+      "activityKey": "A03",
+      "promptFa": "کتابت را پیدا نمی کنی. سوال را کامل کن.",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
     },
     {
       "type": "sentence_order",
@@ -263,9 +290,18 @@
         ],
         "answerEn": "It's on the table.",
         "showAnswerTextBeforeAttempt": false,
-        "allowAudioReplay": true
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: روی میزه.",
+          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: روی میزه."
+        }
       },
-      "activityKey": "A04"
+      "activityKey": "A04",
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
     },
     {
       "type": "comprehension",
@@ -280,14 +316,51 @@
           "اسم تو را می پرسد"
         ],
         "answerIndex": 1,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "این بار pen را می شنوی؛ سوال قبلی درباره book بود.",
+            "my pen یعنی خودکار من؛ آیریس جای خودکارش را می پرسد.",
+            "Where's my pen درباره جای وسیله است؛ سوال اسم نیست."
+          ],
+          "correctFa": "my pen یعنی خودکار من؛ آیریس جای خودکارش را می پرسد."
+        }
       },
       "promptFa": "کمی بعد آیریس چه چیزی می پرسد؟",
       "metadata": {
         "learningDemand": "retrieval",
-        "purpose": "New listening source changes the missing object without showing its transcript."
+        "purpose": "New listening source changes the missing object without showing its transcript.",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A05"
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "نینا هستی. این بار خودکارت را پیدا نمی کنی. از آیریس بپرس کجاست.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Where's my pen?",
+        "acceptedAnswersEn": [
+          "Where's my pen?",
+          "Where is my pen?"
+        ],
+        "sourceTurnKey": "T06",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "سوال درباره جای وسیله خودت است؛ نام خودکار را به کار ببر.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "سوال درباره جای وسیله خودت است؛ نام خودکار را به کار ببر."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+      }
     }
   ],
   "review": {
@@ -298,6 +371,7 @@
     "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

@@ -160,6 +160,9 @@ def validate(lesson: dict, course: dict | None = None, schema: dict | None = Non
                 errors.append(f'{label}: speak requires textEn and acceptedAnswersEn')
             if cfg.get('sourceTurnKey'):
                 require_turn(cfg['sourceTurnKey'])
+                source = turn_by_key.get(cfg['sourceTurnKey'])
+                if source and (source.get('textEn') != text or not source.get('audioRequired') or source.get('role') != 'learner'):
+                    errors.append(f'{label}: speak model must match an audio-required learner Turn')
         elif typ == 'sentence_order':
             tokens = cfg.get('tokensEn')
             answer_tokens = cfg.get('answerTokensEn')

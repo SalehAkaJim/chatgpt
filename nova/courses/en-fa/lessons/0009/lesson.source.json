@@ -19,10 +19,10 @@
     "startingKnowledge": "early_a1_after_greetings",
     "targetConstructions": [],
     "supportLanguage": [],
-    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Request a drink and choose repair in a new service setting."
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-CAFE",
@@ -60,7 +60,8 @@
         "learningDemand": "transfer",
         "note": "Use a repair request with a service worker in a noisy cafe."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -176,6 +177,21 @@
       "translationFa": "قهوه؟",
       "audioRequired": true,
       "characterKey": "ben"
+    },
+    {
+      "turnKey": "T06",
+      "role": "learner",
+      "characterKey": "ava",
+      "textEn": "Can I have coffee, please?",
+      "translationFa": "می شه لطفا قهوه بدی؟",
+      "speechTargetEn": "Can I have coffee, please?",
+      "acceptedSpeechEn": [
+        "Can I have coffee, please?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -188,7 +204,7 @@
           "EN-LEX-TEA-01",
           "EN-LEX-COFFEE-01"
         ],
-        "explanationFa": "الگوی درخواست قبلی برای نوشیدنی هم به کار می رود: Can I have water, please? در این سفارش ساده، پیش از water و tea و coffee حرف a نمی گذاریم. Coffee? با آهنگ پرسشی یعنی قهوه می خواهی؟"
+        "explanationFa": "الگوی درخواست قبلی برای نوشیدنی هم به کار می رود: Can I have water, please? در این الگو نام نوشیدنی را بدون a می گوییم. در کافه a tea یا a coffee هم برای یک فنجان رایج است؛ این درس فعلا الگوی بدون a را تمرین می کند. Coffee? با آهنگ پرسشی یعنی قهوه می خواهی؟"
       },
       "activityKey": "A01"
     },
@@ -232,10 +248,21 @@
           "coffee",
           "tea"
         ],
-        "answerIndex": 2
+        "answerIndex": 2,
+        "feedback": {
+          "optionsFa": [
+            "water آب است؛ در این موقعیت چای می خواهی.",
+            "coffee قهوه است؛ نوشیدنی مورد نظرت چای است.",
+            "tea یعنی چای؛ با قرار دادن آن سفارش مورد نظرت ساخته می شود."
+          ],
+          "correctFa": "tea یعنی چای؛ با قرار دادن آن سفارش مورد نظرت ساخته می شود."
+        }
       },
       "promptFa": "برای خودت چای می خواهی. سفارش را کامل کن.",
-      "activityKey": "A03"
+      "activityKey": "A03",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
     },
     {
       "type": "comprehension",
@@ -250,12 +277,21 @@
           "قهوه"
         ],
         "answerIndex": 2,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "water آب است؛ بن Coffee? می گوید.",
+            "tea چای است؛ این بار قهوه پیشنهاد شده است.",
+            "Coffee? پیشنهاد قهوه است."
+          ],
+          "correctFa": "Coffee? پیشنهاد قهوه است."
+        }
       },
       "promptFa": "بن چه نوشیدنی ای پیشنهاد می کند؟",
       "metadata": {
         "learningDemand": "retrieval",
-        "purpose": "A separate offer is heard without a preceding visible transcript."
+        "purpose": "A separate offer is heard without a preceding visible transcript.",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A04"
     },
@@ -268,14 +304,52 @@
           "Thanks!",
           "See you!"
         ],
-        "answerIndex": 0
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "Sorry? نشان می دهد حرف را نشنیده ای و تکرار می خواهی.",
+            "Thanks تشکر است؛ مشکل نشنیدن سوال را نشان نمی دهد.",
+            "See you خداحافظی است؛ تو هنوز می خواهی سفارش را ادامه بدهی."
+          ],
+          "correctFa": "Sorry? نشان می دهد حرف را نشنیده ای و تکرار می خواهی."
+        }
       },
       "promptFa": "بن چیزی می پرسد، ولی صدای دستگاه کافه نمی گذارد بشنوی. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "changed_context"
+        "purpose": "changed_context",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A05"
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "آوا هستی. سفارش بعدی تو قهوه است. با الگوی درخواست مودبانه سفارش بده.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Can I have coffee, please?",
+        "acceptedAnswersEn": [
+          "Can I have coffee, please?",
+          "Can I have a coffee, please?",
+          "Can I have some coffee, please?"
+        ],
+        "sourceTurnKey": "T06",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "نام قهوه را در الگوی درخواست نوشیدنی قرار بده.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "نام قهوه را در الگوی درخواست نوشیدنی قرار بده."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+      }
     }
   ],
   "review": {
@@ -286,6 +360,7 @@
     "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

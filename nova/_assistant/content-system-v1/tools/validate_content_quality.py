@@ -52,6 +52,12 @@ def evaluate(l, p):
     cons=((l.get("curriculum") or {}).get("targetConstructions") or [])
     absolute=((l.get("curriculum") or {}).get("startingKnowledge")=="absolute_zero")
     pending_decisions=((l.get("review") or {}).get("pendingDecisions") or [])
+    pedagogy = "story" in (l.get("curriculum") or {})
+    if pedagogy and (l.get("curriculum") or {}).get("pedagogyVersion") != 2:
+        issue(E,"CQ-H13","Story Lessons require pedagogyVersion=2.")
+    retrievals = [a for a in acts if a.get('type') == 'speak' and a.get('config', {}).get('mode') == 'retrieval']
+    if pedagogy and not retrievals:
+        issue(E,"CQ-H13","Story Lessons require a meaning-cued hidden-answer retrieval task.")
 
     if not str(l.get("primaryOutcomeKey") or "").strip() or not str(l.get("outcomeFa") or "").strip():
         issue(E,"CQ-H01","Lesson requires one concrete primary communicative outcome.")
@@ -74,6 +80,22 @@ def evaluate(l, p):
     for act in acts:
         k=act.get("activityKey") or "?"; t=act.get("type"); c=act.get("config") or {}; is_scored=scored(act)
         ans=choice_answer(act)
+        if pedagogy and t in CHOICE_TYPES:
+            opts=c.get('optionsEn') if t=='fill_blank' else (c.get('options') or c.get('optionsEn') or [])
+            explanations=c.get('feedback', {}).get('optionsFa', [])
+            if len(explanations)!=len(opts or []) or not explanations or any(not str(x).strip() for x in explanations) or len(set(explanations))!=len(explanations):
+                issue(E,'CQ-H14','Each option requires its own nonempty teaching explanation.',activityKey=k)
+        if t=='speak' and c.get('mode')=='retrieval':
+            accepted=c.get('acceptedAnswersEn') or []
+            if c.get('showAnswerTextBeforeAttempt') is not False or c.get('modelAccess')!='explicit_help' or not str(act.get('promptFa') or act.get('promptEn') or '').strip():
+                issue(E,'CQ-H13','Retrieval needs a meaning prompt and answer/model hidden until explicit help.',activityKey=k)
+            if not accepted or len(accepted)>lim['maxAcceptedSpeechVariants'] or len({norm(x) for x in accepted})!=len(accepted) or norm(c.get('textEn')) not in {norm(x) for x in accepted}:
+                issue(E,'CQ-H09','Retrieval acceptance must contain its model and distinct bounded alternatives.',activityKey=k)
+            visible=norm(' '.join(str(act.get(x) or '') for x in ('instructionFa','promptFa','promptEn')))
+            if any(norm(x) and norm(x) in visible for x in accepted):
+                issue(E,'CQ-H05','Retrieval prompt leaks an accepted answer.',activityKey=k)
+            if c.get('evidenceKind')!='bounded_retrieval' or not c.get('hintFa') or not c.get('feedback',{}).get('retryFa'):
+                issue(E,'CQ-H13','Retrieval needs limited evidence semantics and educational feedback.',activityKey=k)
 
         if t in CHOICE_TYPES:
             opts=c.get("optionsEn") if t=="fill_blank" else (c.get("options") or c.get("optionsEn")); i=c.get("answerIndex")
@@ -112,6 +134,8 @@ def evaluate(l, p):
                 issue(E,"CQ-H05","Listening comprehension exposes transcript/translation before attempt.",activityKey=k)
 
         if t=="sentence_order":
+            if pedagogy and (len(c.get('tokensEn',[]))<3 or c.get('hideTokenSurfaceCues') is not True or c.get('practiceOnly') is not True):
+                issue(E,'CQ-H15','Reconstruction requires at least three pieces, neutral token labels and practice-only evidence.',activityKey=k)
             src=turns.get(c.get("audioSourceTurnKey"))
             if not src or src.get("audioRequired") is not True: issue(E,"CQ-H07","Sentence order requires an audio-required source Turn.",activityKey=k)
             elif src.get("textEn")!=c.get("answerEn"): issue(E,"CQ-H07","Sentence-order audio must exactly match answerEn.",activityKey=k)

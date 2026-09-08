@@ -89,7 +89,7 @@ function nextStep() {
   advancing = true;
   showStep(step + 1);
 }
-function startSpeech(turn, state, mic, accepted) {
+function startSpeech(turn, state, mic, accepted, onTranscript = null) {
   if (recognizer) return;
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!SR) { state.textContent = 'تشخیص گفتار روی این مرورگر در دسترس نیست. از خانه، مرور بدون میکروفن رو انتخاب کن.'; return; }
@@ -100,6 +100,7 @@ function startSpeech(turn, state, mic, accepted) {
   recognition.onresult = event => {
     if (current !== generation) return;
     const transcript = event.results[0][0].transcript;
+    if (onTranscript) { onTranscript(transcript, 'speech'); return; }
     const said = speechNorm(transcript);
     const ok = accepted.some(value => speechNorm(value) === said);
     state.replaceChildren(document.createTextNode(ok ? 'بازخوانی انجام شد ✓' : 'این رو شنیدم؛ دوباره امتحان کن:'), el('span', 'heard', transcript));
@@ -166,9 +167,11 @@ function renderOrder(activity, host) {
   const zone = el('div', 'zone'), bank = el('div', 'bank');
   const redraw = () => {
     zone.replaceChildren(); bank.replaceChildren();
-    for (const index of order) zone.append(button(config.tokensEn[index], () => { order = order.filter(i => i !== index); redraw(); }, 'token'));
+    const label = text => config.hideTokenSurfaceCues ? text.toLowerCase().replace(/[.,!?]/g, '') : text;
+    for (const index of order) zone.append(button(label(config.tokensEn[index]), () => { order = order.filter(i => i !== index); redraw(); }, 'token'));
     config.tokensEn.forEach((text, index) => {
-      const token = button(text, () => { if (!order.includes(index)) { order.push(index); redraw(); } }, 'token');
+      const token = button(label(text), () => { if (!order.includes(index)) { order.push(index); redraw(); } }, 'token');
+      token.dataset.tokenIndex = String(index);
       token.disabled = order.includes(index); token.classList.toggle('used', token.disabled); bank.append(token);
     });
     $('nextBtn').disabled = order.length !== config.tokensEn.length;
@@ -178,7 +181,7 @@ function renderOrder(activity, host) {
   check = () => {
     const answer = order.map(i => config.tokensEn[i]);
     const ok = JSON.stringify(answer) === JSON.stringify(config.answerTokensEn);
-    showFeedback(ok, ok ? 'ترتیب جمله درست بود.' : 'دوباره گوش کن و ترتیب کلمه ها را عوض کن.', ok ? nextStep : null);
+    showFeedback(ok, ok ? (config.feedback?.correctFa || 'ترتیب جمله درست بود.') : (config.feedback?.retryFa || 'دوباره گوش کن و ترتیب کلمه ها را عوض کن.'), ok ? nextStep : null);
   };
 }
 function renderChoice(activity, host) {
@@ -199,8 +202,41 @@ function renderChoice(activity, host) {
   check = () => {
     const ok = selected === config.answerIndex;
     revealTranscript(config, card);
-    showFeedback(ok, ok ? 'پاسخ درست بود.' : 'یک بار دیگر به جمله و معنی آن توجه کن.', ok ? nextStep : null);
+    showFeedback(ok, config.feedback?.optionsFa?.[selected] || (ok ? 'پاسخ درست بود.' : 'یک بار دیگر به جمله و معنی آن توجه کن.'), ok ? nextStep : null);
   };
+}
+function renderRetrieval(activity, host) {
+  const config = activity.config, card = el('div', 'card retrieval');
+  const records = activeSession.retrieval || (activeSession.retrieval = {});
+  const record = records[activity.activityKey] || (records[activity.activityKey] = {attempts: 0, helped: false});
+  const state = el('div', 'state', 'از روی معنی موقعیت جواب بده.');
+  const input = el('input', 'retrieval-input'); input.type = 'text'; input.lang = 'en'; input.dir = 'ltr';
+  input.autocomplete = 'off'; input.setAttribute('aria-label', 'پاسخ انگلیسی');
+  const submit = (text, method) => {
+    if (!speechNorm(text) || feedbackOpen) return;
+    const matched = config.acceptedAnswersEn.some(value => speechNorm(value) === speechNorm(text));
+    record.attempts++;
+    if (record.attempts === 1) record.firstAttempt = {matched, helped: record.helped, method};
+    record.lastAttempt = {matched, helped: record.helped, method};
+    state.textContent = text;
+    showFeedback(matched, matched ? config.feedback.correctFa : 'این پاسخ در الگوهای پذیرفته شده این تمرین نیست؛ ممکن است پاسخ دیگری هم درست باشد. ' + config.feedback.retryFa, matched ? nextStep : null);
+  };
+  const mic = button('🎙', () => startSpeech(null, state, mic, config.acceptedAnswersEn, submit), 'mic');
+  mic.setAttribute('aria-label', 'گفتن پاسخ از حافظه');
+  input.oninput = () => { $('nextBtn').disabled = !speechNorm(input.value); };
+  input.onkeydown = event => { if (event.key === 'Enter' && !feedbackOpen) submit(input.value, 'text'); };
+  const help = button('کمک می خوام', () => {
+    record.helped = true;
+    if (!card.querySelector('.retrieval-model')) {
+      const model = el('div', 'retrieval-model');
+      model.append(el('p', 'explanation', config.hintFa), el('p', 'en', config.textEn));
+      if (config.sourceTurnKey) model.append(button('▶', () => playAudio(config.sourceTurnKey), 'play'));
+      card.append(model);
+    }
+  }, 'secondary');
+  card.append(mic, el('p', 'small-note', 'می توانی پاسخ را بنویسی؛ در این حالت گفتار ارزیابی نمی شود.'), input, state, help);
+  host.append(card); $('nextBtn').disabled = true; check = () => submit(input.value, 'text');
+  if (testMode) card.append(button('ادامه مرور بدون ارزیابی این پاسخ', () => { record.skipped = true; skipSpeech(); }, 'test-pass'));
 }
 function showStep(index) {
   generation++; stopMedia(); step = index; advancing = false; selected = null; order = []; check = null;
@@ -224,6 +260,12 @@ function showStep(index) {
     host.classList.add('completion');
     host.append(el('div', 'tick', '✓'), el('h1', '', activeSession.skippedSpeech ? 'مرور درس تموم شد' : 'درس تموم شد'), el('p', 'sub', lesson.outcomeFa));
     if (activeSession.skippedSpeech) host.append(el('p', 'small-note', 'تمرین گفتاری در این مرور ارزیابی نشد.'));
+    const retrieval = Object.values(activeSession.retrieval || {});
+    if (retrieval.length) {
+      const independent = retrieval.filter(r => r.firstAttempt?.matched && !r.firstAttempt.helped && !r.skipped).length;
+      host.append(el('p', 'retrieval-summary', 'پاسخ مطابق الگو در تلاش اول و بدون کمک: ' + faNumber(independent) + ' از ' + faNumber(retrieval.length)));
+      host.append(el('p', 'small-note', 'این نتیجه تمرین همین جلسه است و تسلط بر زبان یا کیفیت تلفظ را نشان نمی دهد.'));
+    }
     const actions = el('div', 'completion-actions');
     const following = catalog[catalog.indexOf(activeEntry) + 1];
     if (following) actions.append(button('درس بعدی', () => loadLesson(following), 'next'));
@@ -256,6 +298,7 @@ function showStep(index) {
     host.append(words); $('nextBtn').textContent = 'ادامه'; check = nextStep;
   } else if (activity.type === 'sentence_order') renderOrder(activity, host);
   else if (['fill_blank', 'comprehension', 'response_choice'].includes(activity.type)) renderChoice(activity, host);
+  else if (activity.type === 'speak' && activity.config.mode === 'retrieval') renderRetrieval(activity, host);
   else if (activity.type === 'speak') {
     const state = el('div', 'state');
     host.append(el('div', 'en', activity.config.textEn));
@@ -338,7 +381,7 @@ async function loadLesson(entry, resume = true) {
     course = loadedCourse; lesson = loadedLesson;
     activeEntry = entry;
     const saved = sessions.get(entryKey(entry));
-    activeSession = saved?.sourceHash === hash ? {...saved} : {sourceHash: hash};
+    activeSession = resume && !saved?.finished && saved?.sourceHash === hash ? saved : {sourceHash: hash};
     audioItems = new Map(manifest.items.map(item => [item.audioClass + ':' + item.sourceKey, item]));
     steps = lesson.activities.flatMap(activity => activity.type === 'dialogue'
       ? activity.config.exchanges.map(exchange => ({activity, exchange})) : [{activity}]);

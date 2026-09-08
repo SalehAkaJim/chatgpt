@@ -1,0 +1,104 @@
+{
+  "format": "nova-calibration-1",
+  "sampleKey": "EN-CAL-A2-01",
+  "level": "A2",
+  "status": "authoring_sample",
+  "runtimeEligible": false,
+  "titleEn": "Move a library booking",
+  "titleFa": "جابه جایی زمان رزرو",
+  "outcomeEn": "Explain a simple scheduling problem and choose an available alternative.",
+  "prerequisiteKnowledge": [
+    "Past simple booked",
+    "Days and clock times",
+    "could for polite requests"
+  ],
+  "contextFa": "لیام برای رزرو اتاق مطالعه به کتابخانه برگشته است. شیفت کاری اش عوض شده و باید روز رزرو را تغییر دهد.",
+  "story": {
+    "learnerRoleKey": "liam",
+    "participants": [
+      "liam",
+      "leo"
+    ],
+    "continues": "EN-A1-L-0011",
+    "calibrationPosition": 16
+  },
+  "turns": [
+    {
+      "speakerKey": "liam",
+      "textEn": "I booked the study room for Tuesday, but I have to work that evening.",
+      "translationFa": "اتاق مطالعه را برای سه شنبه رزرو کردم، اما آن عصر باید کار کنم."
+    },
+    {
+      "speakerKey": "leo",
+      "textEn": "We have a free room on Wednesday at six or Thursday at seven.",
+      "translationFa": "چهارشنبه ساعت شش یا پنجشنبه ساعت هفت یک اتاق خالی داریم."
+    },
+    {
+      "speakerKey": "liam",
+      "textEn": "Wednesday is better. Could you change my booking, please?",
+      "translationFa": "چهارشنبه بهتر است. می شود لطفا رزرو مرا تغییر بدهی؟"
+    },
+    {
+      "speakerKey": "leo",
+      "textEn": "Of course. Your new booking is Wednesday at six.",
+      "translationFa": "حتما. رزرو تازه تو چهارشنبه ساعت شش است."
+    }
+  ],
+  "activities": [
+    {
+      "type": "dialogue_read",
+      "instructionFa": "گفت و گو را بخوان و هدف هر نوبت را پیدا کن.",
+      "evidence": "supported_input"
+    },
+    {
+      "type": "chunk_notice",
+      "chunksEn": [
+        "I booked ... but ...",
+        "Could you change ...?"
+      ],
+      "instructionFa": "کاربرد این عبارت ها را در موقعیت بررسی کن.",
+      "evidence": "supported_noticing"
+    },
+    {
+      "type": "reading_choice",
+      "promptFa": "بعد از این گفت و گو چه چیزی در رزرو تغییر کرده است؟",
+      "optionsFa": [
+        "رزرو به چهارشنبه ساعت شش منتقل شده",
+        "رزرو به پنجشنبه ساعت هفت منتقل شده",
+        "همان سه شنبه مانده است"
+      ],
+      "answerIndex": 0,
+      "feedbackFa": [
+        "لیام چهارشنبه را انتخاب کرد و لیو ساعت شش را تایید کرد.",
+        "پنجشنبه فقط یک گزینه پیشنهادی بود.",
+        "لیام گفته سه شنبه باید کار کند و رزرو عوض شد."
+      ],
+      "evidence": "source_comprehension"
+    },
+    {
+      "type": "production",
+      "promptFa": "برای تمرین تازه، چهارشنبه نمی توانی بیایی. روز پنجشنبه را درخواست کن و یک دلیل ساده بیاور.",
+      "mode": "short_open_response",
+      "exampleAnswerEn": "Could you change it to Thursday? I have to work on Wednesday.",
+      "exampleVisibility": "after_submission_or_explicit_help",
+      "rubric": [
+        "Request Thursday.",
+        "Give a coherent simple reason.",
+        "Keep the polite request clear."
+      ],
+      "evaluation": "model_or_teacher_required",
+      "evidence": "provisional_until_review"
+    }
+  ],
+  "review": {
+    "status": "model_text_reviewed_with_limits",
+    "learnerTested": false,
+    "audioGenerated": false,
+    "limitations": [
+      "These are samples for calibrating demand and review effort; level alignment is provisional.",
+      "Open-response example answers are illustrations, not exact-match answer keys.",
+      "Prerequisite lessons are not supplied by this sample set.",
+      "Generated speech, perceptual QA and human/learner validation are still required before release."
+    ]
+  }
+}

@@ -10,7 +10,7 @@ Nova maps each Level to learner actions such as reception, interaction and produ
 
 ## Scope control
 
-Only A1 is produced initially. A2/B1/B2 begin only after the A1 system and Pilot demonstrate acceptable quality.
+The active learner path starts with A1. Isolated A2–C2 text calibration samples are allowed to test task design under the approved six-level planning work; they do not activate those runtime Levels or count as completed curriculum coverage. See `nova/courses/en-fa/SIX_LEVEL_PLAN.md`.
 
 ## Outcome model
 

@@ -1,0 +1,100 @@
+{
+  "format": "nova-calibration-1",
+  "sampleKey": "EN-CAL-B1-01",
+  "level": "B1",
+  "status": "authoring_sample",
+  "runtimeEligible": false,
+  "titleEn": "Ask for a realistic extension",
+  "titleFa": "درخواست مهلت منطقی",
+  "outcomeEn": "Explain a difficulty, negotiate a deadline and commit to an action.",
+  "prerequisiteKnowledge": [
+    "Past simple and present perfect",
+    "because/so",
+    "will for commitment"
+  ],
+  "contextFa": "الکس و مایا برای ارایه کلاسی آماده می شوند. الکس عقب افتاده و باید برنامه قابل انجام پیشنهاد بدهد.",
+  "story": {
+    "learnerRoleKey": "alex",
+    "participants": [
+      "alex",
+      "maya"
+    ],
+    "continues": "EN-A1-L-0012",
+    "calibrationPosition": 18
+  },
+  "turns": [
+    {
+      "speakerKey": "alex",
+      "textEn": "I haven't finished our slides because I was ill over the weekend."
+    },
+    {
+      "speakerKey": "maya",
+      "textEn": "The presentation is Friday. Could you send a rough version tomorrow so I can check it?"
+    },
+    {
+      "speakerKey": "alex",
+      "textEn": "I can send the outline tomorrow, but the full draft will take until Wednesday."
+    },
+    {
+      "speakerKey": "maya",
+      "textEn": "That works, as long as we still have Thursday to practise."
+    }
+  ],
+  "activities": [
+    {
+      "type": "dialogue_read",
+      "instructionFa": "گفت و گو را بخوان و هدف هر نوبت را پیدا کن.",
+      "evidence": "supported_input"
+    },
+    {
+      "type": "chunk_notice",
+      "chunksEn": [
+        "I can ..., but ...",
+        "as long as ..."
+      ],
+      "instructionFa": "کاربرد این عبارت ها را در موقعیت بررسی کن.",
+      "evidence": "supported_noticing"
+    },
+    {
+      "type": "reading_choice",
+      "promptFa": "مایا با چه شرطی برنامه تازه را قبول می کند؟",
+      "optionsFa": [
+        "نسخه کامل فردا برسد",
+        "پنجشنبه برای تمرین باقی بماند",
+        "ارایه به هفته بعد منتقل شود"
+      ],
+      "answerIndex": 1,
+      "feedbackFa": [
+        "فردا فقط طرح اولیه می رسد؛ نسخه کامل چهارشنبه است.",
+        "مایا زمان تمرین پنجشنبه را شرط قبول می داند.",
+        "روز ارایه همچنان جمعه است."
+      ],
+      "evidence": "source_comprehension"
+    },
+    {
+      "type": "production",
+      "promptFa": "برنامه مورد توافق را در سه جمله برای مایا بنویس؛ وظیفه خودت و زمان هر بخش روشن باشد.",
+      "mode": "open_response",
+      "exampleAnswerEn": "I will send the outline tomorrow. The full draft will be ready on Wednesday. That leaves Thursday for us to practise before Friday.",
+      "exampleVisibility": "after_submission_or_explicit_help",
+      "rubric": [
+        "Preserve all three agreed milestones.",
+        "Use connected sentences.",
+        "Do not invent a changed presentation date."
+      ],
+      "evaluation": "model_or_teacher_required",
+      "evidence": "provisional_until_review"
+    }
+  ],
+  "review": {
+    "status": "model_text_reviewed_with_limits",
+    "learnerTested": false,
+    "audioGenerated": false,
+    "limitations": [
+      "These are samples for calibrating demand and review effort; level alignment is provisional.",
+      "Open-response example answers are illustrations, not exact-match answer keys.",
+      "Prerequisite lessons are not supplied by this sample set.",
+      "Generated speech, perceptual QA and human/learner validation are still required before release."
+    ]
+  }
+}

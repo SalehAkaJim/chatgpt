@@ -30,11 +30,10 @@
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
-      "mode": "deferred",
-      "targetLesson": "EN-A1-L-0007",
-      "intent": "Use pen/book as objects of a real request rather than naming prompted objects."
+      "mode": "same_lesson",
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-CLASSMATES",
@@ -62,7 +61,8 @@
         "learningDemand": "recognition",
         "note": "Compare asking a thing name with asking a person name."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -153,6 +153,21 @@
         "It's a book."
       ],
       "characterKey": "alex"
+    },
+    {
+      "turnKey": "T05",
+      "role": "learner",
+      "characterKey": "alex",
+      "textEn": "What's this?",
+      "translationFa": "این چیه؟",
+      "speechTargetEn": "What's this?",
+      "acceptedSpeechEn": [
+        "What's this?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -217,9 +232,18 @@
         ],
         "answerEn": "It's a book.",
         "showAnswerTextBeforeAttempt": false,
-        "allowAudioReplay": true
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: یک کتابه.",
+          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: یک کتابه."
+        }
       },
-      "activityKey": "A03"
+      "activityKey": "A03",
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
     },
     {
       "type": "fill_blank",
@@ -231,10 +255,21 @@
           "book",
           "name"
         ],
-        "answerIndex": 0
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "pen یعنی خودکار؛ به همین وسیله اشاره می کنی.",
+            "book یعنی کتاب؛ وسیله در دستت خودکار است.",
+            "name یعنی اسم و نام یک وسیله نیست."
+          ],
+          "correctFa": "pen یعنی خودکار؛ به همین وسیله اشاره می کنی."
+        }
       },
       "promptFa": "به خودکاری در دستت اشاره می کنی. جمله را کامل کن.",
-      "activityKey": "A04"
+      "activityKey": "A04",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
     },
     {
       "type": "comprehension",
@@ -249,14 +284,51 @@
           "میز"
         ],
         "answerIndex": 1,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "book یعنی کتاب؛ در صدا pen شنیده می شود.",
+            "pen یعنی خودکار.",
+            "table یعنی میز؛ در این پاسخ نام خودکار گفته می شود."
+          ],
+          "correctFa": "pen یعنی خودکار."
+        }
       },
       "promptFa": "در این پاسخ اسم چه چیزی گفته می شود؟",
       "metadata": {
         "learningDemand": "recognition",
-        "purpose": "recognition"
+        "purpose": "recognition",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A05"
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "الکس هستی. این بار مایا نام وسیله را می داند و تو نمی دانی. از او بپرس این چیست.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "What's this?",
+        "acceptedAnswersEn": [
+          "What's this?",
+          "What is this?"
+        ],
+        "sourceTurnKey": "T05",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "این بار سوال بپرس؛ نام وسیله را حدس نزن.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "این بار سوال بپرس؛ نام وسیله را حدس نزن."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+      }
     }
   ],
   "review": {
@@ -267,6 +339,7 @@
     "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

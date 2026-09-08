@@ -24,10 +24,10 @@
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "Guided responses are supported practice. Independent tasks check name introduction and first-meeting meaning.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Select an appropriate introduction in response to a teacher, then reuse social interaction in Lesson 0003."
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-NEIGHBORS",
@@ -51,12 +51,14 @@
       {
         "lessonKey": "EN-A1-L-0001",
         "activityKeys": [
-          "A06"
+          "A04",
+          "A07"
         ],
         "learningDemand": "transfer",
-        "note": "Name introduction is selected for a teacher context, not reintroduced to Maya."
+        "note": "Recombine the earlier greeting and name patterns for the played neighbor role; first-meeting response is practiced separately."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -94,7 +96,7 @@
       "itemType": "word",
       "displayForm": "too",
       "translationFa": "هم",
-      "role": "support",
+      "role": "target",
       "audioEligible": true,
       "partOfSpeech": "adverb"
     }
@@ -139,6 +141,21 @@
         "Nice to meet you, too."
       ],
       "characterKey": "owen"
+    },
+    {
+      "turnKey": "T05",
+      "role": "learner",
+      "characterKey": "owen",
+      "textEn": "Hello! My name is Owen.",
+      "translationFa": "سلام! اسم من اوون است.",
+      "speechTargetEn": "Hello! My name is Owen.",
+      "acceptedSpeechEn": [
+        "Hello! My name is Owen."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -204,21 +221,41 @@
         ],
         "answerEn": "My name is Owen.",
         "showAnswerTextBeforeAttempt": false,
-        "allowAudioReplay": true
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: اسم من اوون است.",
+          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: اسم من اوون است."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
       }
     },
     {
       "activityKey": "A04",
-      "type": "fill_blank",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "type": "response_choice",
+      "instructionFa": "به موقعیت توجه کن و پاسخ مناسب را انتخاب کن.",
       "config": {
-        "sentenceEn": "My ___ is Owen.",
         "optionsEn": [
-          "hello",
-          "name",
-          "too"
+          "My name is Owen.",
+          "What's your name?",
+          "Nice to meet you."
         ],
-        "answerIndex": 1
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "این جمله اسم اوون را به نورا می گوید.",
+            "این یک سوال درباره اسم طرف مقابل است؛ الان باید اسم خودت را بگویی.",
+            "این جمله احساس خوشحالی از آشنایی را می رساند و اسم تو را نمی گوید."
+          ],
+          "correctFa": "این جمله اسم اوون را به نورا می گوید."
+        }
+      },
+      "promptFa": "نورا اسم تو را می پرسد. در نقش اوون کدام پاسخ را می دهی؟",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -235,26 +272,75 @@
           "از آشنایی با اوون خوشحال است"
         ],
         "answerIndex": 2,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "Nice to meet you برای آشنایی است، نه خداحافظی.",
+            "نورا این بار اسمش را می گوید و از آشنایی خوشحال است؛ سوالی درباره اسم اوون ندارد.",
+            "Nice to meet you یعنی از آشنایی خوشحالم."
+          ],
+          "correctFa": "Nice to meet you یعنی از آشنایی خوشحالم."
+        }
       },
-      "promptFa": "نورا با جمله آخرش چه پیامی می دهد؟"
+      "promptFa": "نورا با جمله آخرش چه پیامی می دهد؟",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
     },
     {
       "activityKey": "A06",
       "type": "response_choice",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "instructionFa": "به موقعیت توجه کن و پاسخ مناسب را انتخاب کن.",
       "config": {
         "optionsEn": [
-          "My name is Owen.",
+          "Nice to meet you, too.",
           "What's your name?",
-          "Nice to meet you."
+          "My name is Owen."
         ],
-        "answerIndex": 0
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "too یعنی هم؛ این پاسخ احساس مشابه تو را نشان می دهد.",
+            "اسمتان را گفته اید؛ الان پاسخ به خوشحالی از آشنایی لازم است.",
+            "معرفی اسم پاسخی به احساس خوشحالی طرف مقابل نیست."
+          ],
+          "correctFa": "too یعنی هم؛ این پاسخ احساس مشابه تو را نشان می دهد."
+        }
       },
-      "promptFa": "معلم جدید می خواهد بداند اسمت چیست. کدام پاسخ مناسب است؟",
+      "promptFa": "نورا می گوید از آشنایی با تو خوشحال است. می خواهی بگویی تو هم همین حس را داری.",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "Choose an introduction by communicative intent rather than reconstructing an audio model."
+        "purpose": "Choose an introduction by communicative intent rather than reconstructing an audio model.",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A07",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "اوون هستی. همسایه نامش را گفته؛ حالا با سلام و معرفی اسم خودت جواب بده.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Hello! My name is Owen.",
+        "acceptedAnswersEn": [
+          "Hello! My name is Owen.",
+          "Hello! I'm Owen.",
+          "Hello! I am Owen."
+        ],
+        "sourceTurnKey": "T05",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "یک سلام و بعد یکی از دو الگوی معرفی اسم را به کار ببر.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "یک سلام و بعد یکی از دو الگوی معرفی اسم را به کار ببر."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
       }
     }
   ],
@@ -262,9 +348,10 @@
     "pendingDecisions": []
   },
   "metadata": {
-    "pilot": true,
+    "pilot": false,
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

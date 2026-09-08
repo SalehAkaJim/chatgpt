@@ -28,9 +28,18 @@ class CompilerTests(unittest.TestCase):
         self.lesson, self.course = load(SOURCE), load(COURSE)
 
     def test_below_90_blocks_function_and_cli_without_output(self):
-        self.lesson['curriculum'].pop('transferPlan', None)
-        for a in self.lesson['activities']:
-            a.get('metadata', {}).pop('learningDemand', None)
+        # Hidden retrieval now supplies a real transfer marker. Build a valid
+        # but over-repetitive fixture to exercise the score-only import gate.
+        for group, answer in enumerate(["Hello! I'm Alex.", "What's your name?", "I'm from Iran."]):
+            for repetition in range(2):
+                self.lesson['activities'].append({'activityKey': f'A{100+group*2+repetition}',
+                    'type':'response_choice','instructionFa':'انتخاب کن.',
+                    'promptFa':f'موقعیت آزمایشی {group} بخش {repetition}',
+                    'config':{'optionsEn':[answer,'Hello!','See you!'],'answerIndex':0,
+                              'feedback':{'optionsFa':['یک','دو','سه']}}})
+        quality = compiler.evaluate(self.lesson, load(TOOLS.parent / 'content_quality.policy.json'))
+        self.assertFalse(quality['errors'])
+        self.assertLess(quality['automatedScore'], 90)
         with self.assertRaisesRegex(ValueError, 'Content quality rejected'):
             compiler.compile_sql(self.course, self.lesson, '0' * 64)
         with tempfile.TemporaryDirectory() as td:

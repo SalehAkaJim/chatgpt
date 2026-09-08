@@ -27,10 +27,10 @@
     "supportLanguage": [
       "Good! is a supported acknowledgement, not scored mastery."
     ],
-    "assessmentBoundary": "Guided speech remains practice. Independent tasks distinguish asking a name, asking about wellbeing, and closing an encounter.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Choose a closing expression when leaving reception for an activity, rather than answer a wellbeing question."
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-COMMUNITY",
@@ -59,7 +59,8 @@
         "learningDemand": "recognition",
         "note": "Distinguish a wellbeing question from the earlier name question."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -188,6 +189,21 @@
         "See you!"
       ],
       "characterKey": "nina"
+    },
+    {
+      "turnKey": "T07",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "See you!",
+      "translationFa": "می بینمت!",
+      "speechTargetEn": "See you!",
+      "acceptedSpeechEn": [
+        "See you!"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -261,21 +277,41 @@
         ],
         "answerEn": "I'm fine, thanks.",
         "showAnswerTextBeforeAttempt": false,
-        "allowAudioReplay": true
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: خوبم، ممنون.",
+          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: خوبم، ممنون."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
       }
     },
     {
       "activityKey": "A04",
-      "type": "fill_blank",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "type": "response_choice",
+      "instructionFa": "به موقعیت توجه کن و پاسخ مناسب را انتخاب کن.",
       "config": {
-        "sentenceEn": "I'm ___, thanks.",
         "optionsEn": [
-          "name",
-          "hello",
-          "fine"
+          "I'm fine, thanks.",
+          "My name is Nina.",
+          "Nice to meet you."
         ],
-        "answerIndex": 2
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "fine حال خوب را بیان می کند و thanks تشکر است.",
+            "این جمله اسم را می گوید؛ آیریس درباره حالت پرسیده است.",
+            "این جمله برای اولین آشنایی است؛ شما همدیگر را می شناسید و احوالپرسی می کنید."
+          ],
+          "correctFa": "fine حال خوب را بیان می کند و thanks تشکر است."
+        }
+      },
+      "promptFa": "آیریس حالت را می پرسد. می خواهی بگویی خوب هستی.",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -292,9 +328,20 @@
           "اهل کجاست"
         ],
         "answerIndex": 1,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "پرسیدن اسم با name است؛ اینجا How are you را می شنوی.",
+            "How are you درباره حال طرف مقابل است.",
+            "این سوال درباره کشور یا شهر نیست؛ آیریس حال نینا را می پرسد."
+          ],
+          "correctFa": "How are you درباره حال طرف مقابل است."
+        }
       },
-      "promptFa": "آیریس در شروع گفت و گو چه چیزی از نینا می پرسد؟"
+      "promptFa": "آیریس در شروع گفت و گو چه چیزی از نینا می پرسد؟",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
     },
     {
       "activityKey": "A06",
@@ -306,12 +353,48 @@
           "See you!",
           "What's your name?"
         ],
-        "answerIndex": 1
+        "answerIndex": 1,
+        "feedback": {
+          "optionsFa": [
+            "این پاسخ احوالپرسی است و رفتن تو را نشان نمی دهد.",
+            "See you خداحافظی دوستانه برای پایان دیدار است.",
+            "اسمتان را می دانید؛ هدف این موقعیت خداحافظی است."
+          ],
+          "correctFa": "See you خداحافظی دوستانه برای پایان دیدار است."
+        }
       },
       "promptFa": "وقت احوالپرسی تمام شده و می خواهی به برنامه داخل مرکز بروی. کدام جمله برای جدا شدن مناسب است؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "Choose a closing expression before leaving reception."
+        "purpose": "Choose a closing expression before leaving reception.",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A07",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "نینا هستی. برنامه شروع شده و می خواهی از آیریس جدا شوی. کوتاه خداحافظی کن.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "See you!",
+        "acceptedAnswersEn": [
+          "See you!"
+        ],
+        "sourceTurnKey": "T07",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "عبارت خداحافظی دوستانه را به یاد بیاور.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "عبارت خداحافظی دوستانه را به یاد بیاور."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
       }
     }
   ],
@@ -319,9 +402,10 @@
     "pendingDecisions": []
   },
   "metadata": {
-    "pilot": true,
+    "pilot": false,
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

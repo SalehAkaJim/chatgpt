@@ -1,0 +1,100 @@
+{
+  "format": "nova-calibration-1",
+  "sampleKey": "EN-CAL-B1-02",
+  "level": "B1",
+  "status": "authoring_sample",
+  "runtimeEligible": false,
+  "titleEn": "Resolve the evening noise",
+  "titleFa": "حل مشکل صدای عصر",
+  "outcomeEn": "Describe a recurring problem and negotiate a practical compromise.",
+  "prerequisiteKnowledge": [
+    "Present perfect/simple past",
+    "would/could",
+    "frequency and time"
+  ],
+  "contextFa": "نورا مشکل صدای موسیقی را محترمانه مطرح می کند. اوون باید هم مشکل را بفهمد و هم راه حل بدهد.",
+  "story": {
+    "learnerRoleKey": "owen",
+    "participants": [
+      "owen",
+      "nora"
+    ],
+    "continues": "EN-A1-L-0013",
+    "calibrationPosition": 19
+  },
+  "turns": [
+    {
+      "speakerKey": "nora",
+      "textEn": "The music was quite loud last night. I couldn't hear my online class."
+    },
+    {
+      "speakerKey": "owen",
+      "textEn": "I'm sorry. I didn't realise the sound carried so far. What time are your classes?"
+    },
+    {
+      "speakerKey": "nora",
+      "textEn": "Usually from seven to eight. I don't mind music later, if it isn't too loud."
+    },
+    {
+      "speakerKey": "owen",
+      "textEn": "I'll use headphones during your classes and keep the speakers low afterwards."
+    }
+  ],
+  "activities": [
+    {
+      "type": "dialogue_read",
+      "instructionFa": "گفت و گو را بخوان و هدف هر نوبت را پیدا کن.",
+      "evidence": "supported_input"
+    },
+    {
+      "type": "chunk_notice",
+      "chunksEn": [
+        "I didn't realise ...",
+        "I'll ... during ..."
+      ],
+      "instructionFa": "کاربرد این عبارت ها را در موقعیت بررسی کن.",
+      "evidence": "supported_noticing"
+    },
+    {
+      "type": "reading_choice",
+      "promptFa": "راه حل نهایی اوون چیست؟",
+      "optionsFa": [
+        "همیشه موسیقی را قطع کند",
+        "فقط بعد از هشت هدفون بگذارد",
+        "هنگام کلاس هدفون بگذارد و بعد صدا را کم نگه دارد"
+      ],
+      "answerIndex": 2,
+      "feedbackFa": [
+        "نورا قطع همیشگی موسیقی نخواسته است.",
+        "زمان هدفون هنگام کلاس است، نه فقط بعد از آن.",
+        "این پاسخ هر دو بخش پیشنهاد اوون را حفظ می کند."
+      ],
+      "evidence": "source_comprehension"
+    },
+    {
+      "type": "production",
+      "promptFa": "در نقش اوون، یک عذرخواهی کوتاه و راه حل برای کلاس فردای نورا پیشنهاد بده. فرض کن فردا کلاس از شش تا هفت است.",
+      "mode": "open_response",
+      "exampleAnswerEn": "Sorry about the noise. Tomorrow I will use headphones from six to seven and keep the volume low afterwards.",
+      "exampleVisibility": "after_submission_or_explicit_help",
+      "rubric": [
+        "Acknowledge the inconvenience.",
+        "Adapt to six to seven.",
+        "Preserve a workable compromise."
+      ],
+      "evaluation": "model_or_teacher_required",
+      "evidence": "provisional_until_review"
+    }
+  ],
+  "review": {
+    "status": "model_text_reviewed_with_limits",
+    "learnerTested": false,
+    "audioGenerated": false,
+    "limitations": [
+      "These are samples for calibrating demand and review effort; level alignment is provisional.",
+      "Open-response example answers are illustrations, not exact-match answer keys.",
+      "Prerequisite lessons are not supplied by this sample set.",
+      "Generated speech, perceptual QA and human/learner validation are still required before release."
+    ]
+  }
+}

@@ -30,10 +30,10 @@
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Choose the country question for an already named person in a different gathering."
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-WALKING-GROUP",
@@ -70,7 +70,8 @@
         "learningDemand": "recognition",
         "note": "Distinguish country from wellbeing."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -161,6 +162,21 @@
         "Nice!"
       ],
       "characterKey": "ruby"
+    },
+    {
+      "turnKey": "T05",
+      "role": "learner",
+      "characterKey": "ruby",
+      "textEn": "Where are you from?",
+      "translationFa": "اهل کجایی؟",
+      "speechTargetEn": "Where are you from?",
+      "acceptedSpeechEn": [
+        "Where are you from?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -225,23 +241,43 @@
         ],
         "answerEn": "I'm from Iran.",
         "showAnswerTextBeforeAttempt": false,
-        "allowAudioReplay": true
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: اهل ایرانم.",
+          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: اهل ایرانم."
+        }
       },
-      "activityKey": "A03"
+      "activityKey": "A03",
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
     },
     {
-      "type": "fill_blank",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "type": "response_choice",
+      "instructionFa": "به موقعیت توجه کن و پاسخ مناسب را انتخاب کن.",
       "config": {
-        "sentenceEn": "I'm ___ Canada.",
         "optionsEn": [
-          "fine",
-          "from",
-          "name"
+          "I'm from Canada.",
+          "I'm from Iran.",
+          "Where are you from?"
         ],
-        "answerIndex": 1
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "در نقش سارا، بعد از from کشور کانادا را می گویی.",
+            "ایران کشور روبی است؛ این سوال از زبان سارا پاسخ می خواهد.",
+            "این جمله کشور طرف مقابل را می پرسد؛ کشور سارا را بیان نمی کند."
+          ],
+          "correctFa": "در نقش سارا، بعد از from کشور کانادا را می گویی."
+        }
       },
-      "activityKey": "A04"
+      "activityKey": "A04",
+      "promptFa": "این بار جمله ای را انتخاب کن که از زبان سارا، اهل کانادا، درست باشد.",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
     },
     {
       "type": "comprehension",
@@ -255,12 +291,20 @@
           "کانادا"
         ],
         "answerIndex": 1,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "ایران کشور روبی است. به صدای سارا توجه کن.",
+            "سارا می گوید از کاناداست."
+          ],
+          "correctFa": "سارا می گوید از کاناداست."
+        }
       },
       "promptFa": "سارا درباره خودش چه می گوید؟",
       "metadata": {
         "learningDemand": "recognition",
-        "purpose": "recognition"
+        "purpose": "recognition",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A05"
     },
@@ -269,18 +313,54 @@
       "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
       "config": {
         "optionsEn": [
-          "What's your name?",
-          "Where are you from?",
-          "How are you?"
+          "I'm from Iran.",
+          "I'm from Canada.",
+          "My name is Ruby."
         ],
-        "answerIndex": 1
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "روبی اهل ایران است؛ با from کشورش را می گوید.",
+            "کانادا کشور سارا است؛ الان از زبان روبی پاسخ می دهی.",
+            "این جمله اسم را می گوید؛ سوال درباره کشور است."
+          ],
+          "correctFa": "روبی اهل ایران است؛ با from کشورش را می گوید."
+        }
       },
-      "promptFa": "در یک جمع تازه اسم کسی را می دانی و می خواهی کشورش را بدانی. چه می پرسی؟",
+      "promptFa": "سارا از تو می پرسد اهل کجایی. در نقش روبی چه پاسخی می دهی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "changed_context"
+        "purpose": "changed_context",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A06"
+    },
+    {
+      "activityKey": "A07",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "روبی هستی. کشور خودت را گفته ای؛ حالا از سارا بپرس اهل کجاست.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Where are you from?",
+        "acceptedAnswersEn": [
+          "Where are you from?"
+        ],
+        "sourceTurnKey": "T05",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "الگویی را به کار ببر که درباره اهل کجا بودن می پرسد.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "الگویی را به کار ببر که درباره اهل کجا بودن می پرسد."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+      }
     }
   ],
   "review": {
@@ -291,6 +371,7 @@
     "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }

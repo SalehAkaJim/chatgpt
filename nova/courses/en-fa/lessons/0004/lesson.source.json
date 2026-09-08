@@ -18,10 +18,10 @@
     "startingKnowledge": "early_a1_after_greetings",
     "targetConstructions": [],
     "supportLanguage": [],
-    "assessmentBoundary": "Visible guided speech is supported reading practice, not mastery or pronunciation certification. Choice tasks assess only their stated recognition or selection demand; transcript recall is not unseen listening.",
+    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Choose a repair for an unheard library announcement."
+      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
     },
     "story": {
       "arcKey": "EN-A1-LIBRARY",
@@ -50,7 +50,8 @@
         "learningDemand": "recognition",
         "note": "Recognize the previously taught wellbeing question after a repair."
       }
-    ]
+    ],
+    "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
@@ -129,6 +130,21 @@
         "I'm fine, thanks."
       ],
       "characterKey": "liam"
+    },
+    {
+      "turnKey": "T05",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "Sorry?",
+      "translationFa": "ببخشید؟",
+      "speechTargetEn": "Sorry?",
+      "acceptedSpeechEn": [
+        "Sorry?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
     }
   ],
   "activities": [
@@ -186,12 +202,21 @@
           "خداحافظی می کند"
         ],
         "answerIndex": 1,
-        "transcriptAfterAttempt": true
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "در سوال لیو name نیست؛ How are you درباره حال است.",
+            "لیو همان سوال احوالپرسی را تکرار می کند.",
+            "لیو سوالش را تکرار می کند؛ See you نمی گوید."
+          ],
+          "correctFa": "لیو همان سوال احوالپرسی را تکرار می کند."
+        }
       },
       "promptFa": "لیو بعد از درخواست تکرار چه چیزی می پرسد؟",
       "metadata": {
         "learningDemand": "recognition",
-        "purpose": "recognition"
+        "purpose": "recognition",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A03"
     },
@@ -204,14 +229,50 @@
           "Sorry?",
           "I'm fine, thanks."
         ],
-        "answerIndex": 1
+        "answerIndex": 1,
+        "feedback": {
+          "optionsFa": [
+            "See you دیدار را تمام می کند و درخواست تکرار نیست.",
+            "Sorry? با آهنگ پرسشی از طرف مقابل می خواهد حرفش را تکرار کند.",
+            "هنوز حرف را نشنیده ای؛ پاسخ دادن درباره حالت مشکل شنیدن را حل نمی کند."
+          ],
+          "correctFa": "Sorry? با آهنگ پرسشی از طرف مقابل می خواهد حرفش را تکرار کند."
+        }
       },
       "promptFa": "صدای اعلام کتابخانه را درست نمی شنوی. از کتابدار می خواهی حرفش را تکرار کند. چه می گویی؟",
       "metadata": {
         "learningDemand": "changed_context",
-        "purpose": "Use a repeat request for an unheard announcement, not just the modeled greeting."
+        "purpose": "Use a repeat request for an unheard announcement, not just the modeled greeting.",
+        "evidenceKind": "recognition_or_selection"
       },
       "activityKey": "A04"
+    },
+    {
+      "activityKey": "A05",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "لیام هستی. این بار کتابدار چیزی درباره اسمت می پرسد، اما نمی شنوی. از او تکرار بخواه.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Sorry?",
+        "acceptedAnswersEn": [
+          "Sorry?"
+        ],
+        "sourceTurnKey": "T05",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "عبارت کوتاه را با آهنگ پرسشی بگو.",
+        "feedback": {
+          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
+          "retryFa": "عبارت کوتاه را با آهنگ پرسشی بگو."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+      }
     }
   ],
   "review": {
@@ -222,6 +283,7 @@
     "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
-    "dialogueRuntime": "guided_exchange"
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
   }
 }
