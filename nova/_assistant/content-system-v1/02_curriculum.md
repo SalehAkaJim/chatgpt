@@ -2,9 +2,11 @@
 
 ## CEFR usage
 
-CEFR is an outcome framework, not a database hierarchy or Lesson-count template.
+CEFR is an outcome framework, not a Lesson-count template.
 
-Nova maps the Course to learner actions such as reception, interaction and production. A CEFR stage ends when its required outcomes have enough learning and assessment evidence, not at a predefined Lesson number.
+Nova now has a lightweight runtime `Level` hierarchy for product/data management. A Level may map to a CEFR stage such as A1, but the Level row is only the product container; CEFR outcome planning remains richer than that row.
+
+Nova maps each Level to learner actions such as reception, interaction and production. A CEFR stage ends when its required outcomes have enough learning and assessment evidence, not at a predefined Lesson number.
 
 ## Scope control
 
@@ -12,7 +14,7 @@ Only A1 is produced initially. A2/B1/B2 begin only after the A1 system and Pilot
 
 ## Outcome model
 
-Curriculum planning may track, outside the runtime hierarchy:
+Curriculum planning may track, outside the runtime Level/Lesson hierarchy:
 - stable outcome ID;
 - learner-facing can-do statement in Persian;
 - CEFR mode(s);
@@ -24,11 +26,11 @@ Curriculum planning may track, outside the runtime hierarchy:
 - evidence/review needs;
 - planning status.
 
-These planning records may live in canonical curriculum files. They do not require runtime MySQL tables unless the product later needs them.
+These planning records may live in canonical curriculum files. They do not require additional runtime MySQL tables unless the product later needs them.
 
 ## Lesson sequence planning
 
-A Lesson has one coherent instructional job and may introduce or reinforce one or more tightly related outcome components.
+A Lesson belongs to exactly one Level and has one coherent instructional job. It may introduce or reinforce one or more tightly related outcome components.
 
 An outcome may span several Lessons when learning load requires it. Conversely, a compact Lesson may complete a small outcome when adequate practice is possible.
 
