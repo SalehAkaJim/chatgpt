@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0001",
+  "levelKey": "A1",
+  "sortOrder": 1,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0001: legacy target word EN-LEX-HELLO-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-HELLO-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-NAME-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-F7A6AD8E6587EDA3E40E",
+        "EN-REF-E4F6451340C7A9A05026"
+      ],
+      "referenceTranslationsFa": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    }
+  ],
+  "sourceHash": "bd1ff62238d1d95fd5408897ab389a84f1c783565738e10bdee7a0192dd6f51a"
+}

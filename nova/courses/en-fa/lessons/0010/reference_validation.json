@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0010",
+  "levelKey": "A1",
+  "sortOrder": 10,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0010: legacy target word EN-LEX-OR-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-OR-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "or",
+      "partOfSpeech": "conjunction",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-50ECEE439EA17F111DB9"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-50ECEE439EA17F111DB9",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C86BD7B12371D318284C",
+        "EN-REF-AA88F6860DE17814613F"
+      ],
+      "referenceTranslationsFa": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "coffee",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-DF86C36C215439FDE741",
+        "EN-REF-8061B958A613A2511A99"
+      ],
+      "referenceTranslationsFa": [
+        "درخت قهوه",
+        "قهوه"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-WATER-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "water",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-93033FDD55B1A504F831",
+        "EN-REF-DD54F822E90CB981E36E"
+      ],
+      "referenceTranslationsFa": [
+        "آب",
+        "آب‌های سطحی"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-PLEASE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C831E951A26056666929"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-C831E951A26056666929",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
+      "role": "review",
+      "itemType": "formula",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "status": "not_required",
+      "referenceKeys": []
+    }
+  ],
+  "sourceHash": "b33100bf6bacfcc7410602e6955e9c5eb0f4f8078bb52f82a8bc820eb542434a"
+}

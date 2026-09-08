@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0015",
+  "levelKey": "A1",
+  "sortOrder": 15,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0015: legacy target word EN-LEX-FIVE-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-HOW-MUCH-01",
+      "role": "target",
+      "itemType": "formula",
+      "lemma": "how much",
+      "partOfSpeech": null,
+      "status": "nova_authored_multiword",
+      "referenceKeys": []
+    },
+    {
+      "lexicalKey": "EN-LEX-FIVE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "five",
+      "partOfSpeech": "numeral",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-28C6E6A91F20F2CF2FD5"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-28C6E6A91F20F2CF2FD5",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-DOLLAR-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "dollar",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-BA1B384346FA3B2B141B",
+        "EN-REF-506E7EF1DAF118FFE317"
+      ],
+      "referenceTranslationsFa": [
+        "اسکناس یک دلاری",
+        "واحد پولی پایه در بسیاری از کشورها؛ برابر با ۱۰۰ سنت"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C86BD7B12371D318284C",
+        "EN-REF-AA88F6860DE17814613F"
+      ],
+      "referenceTranslationsFa": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-PLEASE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C831E951A26056666929"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-C831E951A26056666929",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    }
+  ],
+  "sourceHash": "12e67c96686093b30668df672014fe8f674b882f4b0586a3421975f571398903"
+}

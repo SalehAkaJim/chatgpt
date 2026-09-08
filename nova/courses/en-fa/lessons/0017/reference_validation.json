@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0017",
+  "levelKey": "A1",
+  "sortOrder": 17,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0017: legacy target word EN-LEX-ON-DAY-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-DAY-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "day",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-0A1B6C644EA3E00970D7",
+        "EN-REF-C97725EAE344D219D360"
+      ],
+      "referenceTranslationsFa": [
+        "روز"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-MONDAY-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "monday",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-511B8AEB352146D3828E"
+      ],
+      "referenceTranslationsFa": [
+        "دوشنبه"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-ON-DAY-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-F134FBB224795A6A216F"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-F134FBB224795A6A216F",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-YES-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "yes",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    }
+  ],
+  "sourceHash": "cad20e803594a4f22ed26488d37b6b0a5415ebbe3a9e7b44bcce33fc7ae41c96"
+}

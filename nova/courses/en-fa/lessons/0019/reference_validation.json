@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0019",
+  "levelKey": "A1",
+  "sortOrder": 19,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0019: legacy target word EN-LEX-SURE-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-HELP-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "help",
+      "partOfSpeech": "verb",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-76A0FAF42C7FB7906AA5",
+        "EN-REF-F7E093ADABBBFD618D01"
+      ],
+      "referenceTranslationsFa": [
+        "بهتر کردن",
+        "کمک کردن"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-SURE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "sure",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    }
+  ],
+  "sourceHash": "7722835cf0d5f226e896516912247d43aeed8116db831d18717c30eddffb56e7"
+}

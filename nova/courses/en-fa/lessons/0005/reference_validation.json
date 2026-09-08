@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0005",
+  "levelKey": "A1",
+  "sortOrder": 5,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0005: legacy target word EN-LEX-FROM-01 has no exact production reference match",
+    "EN-A1-L-0005: legacy target word EN-LEX-IRAN-01 has no exact production reference match",
+    "EN-A1-L-0005: legacy target word EN-LEX-CANADA-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-FROM-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "from",
+      "partOfSpeech": "preposition",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-1B91E701370D4AFC4AA8"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-1B91E701370D4AFC4AA8",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-IRAN-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "iran",
+      "partOfSpeech": "proper_noun",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-CANADA-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "canada",
+      "partOfSpeech": "proper_noun",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-NAME-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-F7A6AD8E6587EDA3E40E",
+        "EN-REF-E4F6451340C7A9A05026"
+      ],
+      "referenceTranslationsFa": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-NICE-01",
+      "role": "support",
+      "itemType": "word",
+      "lemma": "nice",
+      "partOfSpeech": "adjective",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-EF939C0218BF77734EE6",
+        "EN-REF-5A643820D50F1AABB580"
+      ],
+      "referenceTranslationsFa": [
+        "باادب، شریف",
+        "دلپذیر، خوشایند"
+      ]
+    }
+  ],
+  "sourceHash": "3496de88fd4d9d292d68af68fc96fdbf7f4509c9798c29ada72725fce2f814da"
+}

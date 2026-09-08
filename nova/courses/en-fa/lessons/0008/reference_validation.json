@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0008",
+  "levelKey": "A1",
+  "sortOrder": 8,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0008: legacy target word EN-LEX-WHERE-01 has no exact production reference match",
+    "EN-A1-L-0008: legacy target word EN-LEX-ON-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-WHERE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "where",
+      "partOfSpeech": "adverb",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-2C8645E99C791B4DB581"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-2C8645E99C791B4DB581",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-ON-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-F134FBB224795A6A216F"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-F134FBB224795A6A216F",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-TABLE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "table",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-D760115832F24D7F3074",
+        "EN-REF-DB96FA960706CF5AD234"
+      ],
+      "referenceTranslationsFa": [
+        "جدول",
+        "میز"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-950213E55A5DF7A7D1E1",
+        "EN-REF-6CB64DEA48DE0EFA4185"
+      ],
+      "referenceTranslationsFa": [
+        "اثر نوشته‌شده‌ای که منتشر شده است",
+        "کتاب (دفتری با صفحات متصل)"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "pen",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-E7158161767216455400",
+        "EN-REF-5EC7C57202D339DAB434"
+      ],
+      "referenceTranslationsFa": [
+        "آغل، قفس",
+        "خودکار"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
+      "role": "review",
+      "itemType": "formula",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "status": "not_required",
+      "referenceKeys": []
+    }
+  ],
+  "sourceHash": "7bb3946d0de8130c2aff4f323c36de1a40c15c99cf2f78a9f11275727b69fb2e"
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0009",
+  "levelKey": "A1",
+  "sortOrder": 9,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-WATER-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "water",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-93033FDD55B1A504F831",
+        "EN-REF-DD54F822E90CB981E36E"
+      ],
+      "referenceTranslationsFa": [
+        "آب",
+        "آب‌های سطحی"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C86BD7B12371D318284C",
+        "EN-REF-AA88F6860DE17814613F"
+      ],
+      "referenceTranslationsFa": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "coffee",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-DF86C36C215439FDE741",
+        "EN-REF-8061B958A613A2511A99"
+      ],
+      "referenceTranslationsFa": [
+        "درخت قهوه",
+        "قهوه"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-PLEASE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C831E951A26056666929"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-C831E951A26056666929",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
+      "role": "review",
+      "itemType": "formula",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "status": "not_required",
+      "referenceKeys": []
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-HELLO-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    }
+  ],
+  "sourceHash": "958ffdb620d54e874ac922f7ca32efc0837d523a4874e5fd4ac9a8b44cee6e70"
+}
