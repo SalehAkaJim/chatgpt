@@ -5,6 +5,8 @@ import unittest
 
 from reference_data import (
     build_cefr_indexes,
+    is_curriculum_eligible,
+    is_production_eligible,
     normalize_persian,
     parse_grammar_csv,
     parse_profile_csv,
@@ -21,12 +23,14 @@ class ReferenceDataTests(unittest.TestCase):
         r = resolve_cefr("bank", "noun", "A1", exact, lemma)
         self.assertEqual(r["level"], "B1")
         self.assertEqual(r["source"], "cefrj_exact_pos")
+        self.assertTrue(is_curriculum_eligible(r))
 
     def test_cefr_openjam_fallback_is_retained_but_not_production_confident(self):
         exact, lemma = build_cefr_indexes([])
         r = resolve_cefr("unlisted", "noun", "A2", exact, lemma)
         self.assertEqual(r["level"], "A2")
         self.assertEqual(r["source"], "openjam_frequency_band")
+        self.assertFalse(is_curriculum_eligible(r))
         record = {
             "translationFa": "نمونه",
             "definitionEn": "an example",
@@ -34,11 +38,39 @@ class ReferenceDataTests(unittest.TestCase):
             "cefr": r["level"],
             "cefrSource": r["source"],
             "cefrConflict": False,
+            "curriculumEligible": False,
         }
         score, flags = score_reference_record(record)
+        record["qualityScore"] = score
         self.assertEqual(score, 85)
         self.assertLess(score, 90)
         self.assertIn("cefr_frequency_fallback", flags)
+        self.assertFalse(is_production_eligible(record, 90))
+
+    def test_conflicting_exact_cefr_is_never_curriculum_or_production_eligible(self):
+        base = parse_profile_csv(
+            "headword,pos,CEFR\nexample,noun,A1\nexample,noun,A2\n",
+            source="cefrj",
+        )
+        exact, lemma = build_cefr_indexes(base)
+        r = resolve_cefr("example", "noun", "A1", exact, lemma)
+        self.assertTrue(r["conflict"])
+        self.assertEqual(r["evidenceLevels"], ["A1", "A2"])
+        self.assertFalse(is_curriculum_eligible(r))
+        record = {
+            "translationFa": "نمونه",
+            "definitionEn": "a representative instance",
+            "partOfSpeech": "noun",
+            "cefr": r["level"],
+            "cefrSource": r["source"],
+            "cefrConflict": True,
+            "curriculumEligible": False,
+        }
+        score, flags = score_reference_record(record)
+        record["qualityScore"] = score
+        self.assertEqual(score, 95)
+        self.assertIn("cefr_conflict", flags)
+        self.assertFalse(is_production_eligible(record, 90))
 
     def test_persian_normalization_and_gate(self):
         self.assertEqual(normalize_persian("كتاب يک"), "کتاب یک")

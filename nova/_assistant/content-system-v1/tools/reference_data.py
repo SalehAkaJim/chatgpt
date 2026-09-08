@@ -157,6 +157,29 @@ def score_reference_record(record: dict) -> tuple[int, list[str]]:
     return max(0, score), sorted(set(flags))
 
 
+def is_curriculum_eligible(cefr: dict) -> bool:
+    """True only when CEFR placement is evidence-backed and unambiguous."""
+    return bool(
+        cefr.get("level")
+        and cefr.get("source")
+        and cefr.get("source") != "openjam_frequency_band"
+        and not cefr.get("conflict")
+    )
+
+
+def is_production_eligible(record: dict, threshold: int = 90) -> bool:
+    """Hard production gate; scoring alone cannot override semantic ambiguity."""
+    score = record.get("qualityScore")
+    return bool(
+        record.get("curriculumEligible")
+        and isinstance(score, int)
+        and score >= threshold
+        and record.get("translationFa")
+        and record.get("cefr")
+        and not record.get("cefrConflict")
+    )
+
+
 def parse_grammar_csv(text: str) -> list[dict]:
     out = []
     for row in csv.DictReader(io.StringIO(text)):

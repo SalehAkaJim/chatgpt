@@ -48,17 +48,24 @@ def validate(repo_root: Path, strict: bool = False) -> list[str]:
                 errors.append(f"item {key} placed in {level} but says {item.get('cefr')}")
             score = item.get("qualityScore")
             eligible = bool(item.get("productionEligible"))
+            curriculum_eligible = bool(item.get("curriculumEligible"))
             if not isinstance(score, int) or not 0 <= score <= 100:
                 errors.append(f"invalid score for {key}: {score}")
             if eligible and score < threshold:
                 errors.append(f"eligible record below threshold: {key}={score}")
             if eligible and (not item.get("translationFa") or not item.get("cefr")):
                 errors.append(f"eligible record missing required language data: {key}")
-            if item.get("curriculumEligible") and item.get("cefrSource") == "openjam_frequency_band":
+            if eligible and not curriculum_eligible:
+                errors.append(f"production record is not curriculum eligible: {key}")
+            if curriculum_eligible and item.get("cefrSource") == "openjam_frequency_band":
                 errors.append(f"frequency-only CEFR cannot be curriculum eligible: {key}")
+            if curriculum_eligible and item.get("cefrConflict"):
+                errors.append(f"conflicting CEFR evidence cannot be curriculum eligible: {key}")
+            if eligible and item.get("cefrConflict"):
+                errors.append(f"conflicting CEFR evidence cannot be production eligible: {key}")
             if item.get("sourceType") == "cefr_profile_only":
                 actual_counts["profileOnly"] += 1
-            if item.get("curriculumEligible"):
+            if curriculum_eligible:
                 actual_counts["curriculumEligible"] += 1
             actual_counts["productionEligible" if eligible else "reviewOnly"] += 1
 

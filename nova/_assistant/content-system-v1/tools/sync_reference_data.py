@@ -13,6 +13,8 @@ from reference_data import (
     LEVELS,
     build_cefr_indexes,
     dump_json,
+    is_curriculum_eligible,
+    is_production_eligible,
     normalize_lemma,
     normalize_persian,
     normalize_pos,
@@ -120,7 +122,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                     "openjamLevel": word.get("level"),
                     "topics": topic_slugs,
                     "sourceType": "openjam_sense",
-                    "curriculumEligible": bool(cefr["level"] and cefr["source"] != "openjam_frequency_band"),
+                    "curriculumEligible": is_curriculum_eligible(cefr),
                     "qualityScore": None,
                     "productionEligible": False,
                     "flags": [],
@@ -136,7 +138,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 score, flags = score_reference_record(record)
                 record["qualityScore"] = score
                 record["flags"] = flags
-                record["productionEligible"] = score >= threshold and bool(record["translationFa"] and record["cefr"])
+                record["productionEligible"] = is_production_eligible(record, threshold)
                 if record["curriculumEligible"]:
                     counts["curriculumEligible"] += 1
                 counts["productionEligible" if record["productionEligible"] else "reviewOnly"] += 1
@@ -177,7 +179,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 "openjamLevel": None,
                 "topics": [],
                 "sourceType": "cefr_profile_only",
-                "curriculumEligible": True,
+                "curriculumEligible": is_curriculum_eligible(resolved),
                 "qualityScore": 0,
                 "productionEligible": False,
                 "flags": ["profile_only_no_dictionary_sense", "missing_persian_translation", "missing_english_definition"],
@@ -194,7 +196,8 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
             record["flags"] = sorted(set(record["flags"] + flags))
             counts["records"] += 1
             counts["profileOnly"] += 1
-            counts["curriculumEligible"] += 1
+            if record["curriculumEligible"]:
+                counts["curriculumEligible"] += 1
             counts["reviewOnly"] += 1
             by_level[record["cefr"]].append(record)
 
