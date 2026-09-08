@@ -1,8 +1,8 @@
 {
-  "schemaVersion": "2.0.0",
+  "schemaVersion": "2.1.0",
   "contentSystemVersion": "1",
   "courseCode": "en-fa",
-  "cefrLevel": "A1",
+  "levelKey": "A1",
   "lessonKey": "EN-A1-L-0001",
   "sortOrder": 1,
   "titleEn": "Hello! What's your name?",
@@ -39,5 +39,8 @@
     {"activityKey":"A04","type":"fill_blank","instructionFa":"گزینه درست را برای جای خالی انتخاب کن.","config":{"sentenceEn":"Hello! ___ Alex.","optionsEn":["I'm","your","name"],"answerIndex":0}},
     {"activityKey":"A05","type":"comprehension","instructionFa":"مکالمه را گوش کن و به معنی آن توجه کن.","promptFa":"مایا از الکس چه چیزی می پرسد؟","config":{"sourceTurnKeys":["T01","T02","T03","T04"],"options":["اسمش را","حالش را","اهل کجاست"],"answerIndex":0,"transcriptAfterAttempt":true}}
   ],
+  "review": {
+    "pendingDecisions": []
+  },
   "metadata": {"pilot":true,"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange"}
 }
