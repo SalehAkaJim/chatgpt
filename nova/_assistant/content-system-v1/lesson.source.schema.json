@@ -5,15 +5,15 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "schemaVersion","contentSystemVersion","courseCode","cefrLevel",
+    "schemaVersion","contentSystemVersion","courseCode","levelKey",
     "lessonKey","sortOrder","titleEn","titleFa","primaryOutcomeKey",
     "outcomeFa","scenarioFa","lexicalItems","turns","activities"
   ],
   "properties": {
-    "schemaVersion": {"const": "2.0.0"},
+    "schemaVersion": {"const": "2.1.0"},
     "contentSystemVersion": {"const": "1"},
     "courseCode": {"type": "string", "minLength": 1},
-    "cefrLevel": {"type": "string", "minLength": 1},
+    "levelKey": {"type": "string", "minLength": 1},
     "lessonKey": {"type": "string", "pattern": "^[A-Z0-9-]+$"},
     "sortOrder": {"type": "integer", "minimum": 1},
     "titleEn": {"type": "string", "minLength": 1, "maxLength": 180},
@@ -39,6 +39,7 @@
       "type": "array", "minItems": 1,
       "items": {"$ref": "#/$defs/activity"}
     },
+    "review": {"$ref": "#/$defs/review"},
     "metadata": {"type": "object"}
   },
   "$defs": {
@@ -95,6 +96,27 @@
         "promptEn": {"type": "string"},
         "config": {"type": "object"},
         "metadata": {"type": "object"}
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pendingDecisions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["decisionKey","question","recommendedOption","rationale"],
+            "properties": {
+              "decisionKey": {"type": "string", "minLength": 1},
+              "question": {"type": "string", "minLength": 1},
+              "options": {"type": "array", "items": {"type": "string", "minLength": 1}},
+              "recommendedOption": {"type": "string", "minLength": 1},
+              "rationale": {"type": "string", "minLength": 1}
+            }
+          }
+        }
       }
     }
   }
