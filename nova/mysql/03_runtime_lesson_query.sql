@@ -1,31 +1,38 @@
 -- ===============================================================
 -- NOVA LESSON RUNTIME — EXAMPLE RETRIEVAL
--- Run after Course/Lesson content has been imported.
+-- Run after Course/Level/Lesson content has been imported.
 -- ===============================================================
 SET @lesson_id=(
   SELECT l.id
   FROM lessons l
-  JOIN courses c ON c.id=l.course_id
+  JOIN levels lv ON lv.id=l.level_id
+  JOIN courses c ON c.id=lv.course_id
   WHERE c.course_key='en-fa'
-  ORDER BY l.sort_order
+  ORDER BY lv.sort_order,l.sort_order
   LIMIT 1
 );
 
--- Lesson header.
+-- Lesson header with parent Level.
 SELECT
   c.course_key,
+  lv.id AS level_id,
+  lv.level_key,
+  lv.sort_order AS level_order,
+  lv.title AS level_title,
+  lv.title_translation AS level_title_translation,
+  lv.standard_code AS level_standard_code,
   l.id AS lesson_id,
   l.lesson_key,
   l.sort_order,
   l.title,
   l.title_translation,
   l.description,
-  l.cefr_level,
   l.primary_outcome_key,
   l.estimated_duration_sec,
   l.status
 FROM lessons l
-JOIN courses c ON c.id=l.course_id
+JOIN levels lv ON lv.id=l.level_id
+JOIN courses c ON c.id=lv.course_id
 WHERE l.id=@lesson_id;
 
 -- Activities in presentation order.
