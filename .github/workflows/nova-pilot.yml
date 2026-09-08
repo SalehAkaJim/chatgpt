@@ -11,6 +11,7 @@ on:
       - 'nova/courses/**/lessons/**/pedagogy.review.json'
       - 'nova/prototype/**'
       - 'nova/calibration/**'
+      - 'nova/reference/**'
       - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
       - 'nova/_assistant/content-system-v1/persian_orthography_exceptions.json'
       - 'nova/_assistant/content-system-v1/content_quality.policy.json'
@@ -66,12 +67,16 @@ jobs:
         run: |
           python nova/_assistant/content-system-v1/tools/test_content_quality.py
           python nova/_assistant/content-system-v1/tools/test_persian_orthography_exceptions.py
+          python nova/_assistant/content-system-v1/tools/test_reference_data.py
+          python nova/_assistant/content-system-v1/tools/validate_reference_data.py --repo-root . --strict
           python -m unittest discover -s nova/_assistant/content-system-v1/tools -p 'test_pipeline.py' -v
           python -m unittest discover -s nova/_assistant/content-system-v1/tools -p 'test_pedagogy.py' -v
           python nova/_assistant/content-system-v1/tools/validate_calibration.py
           python nova/_assistant/content-system-v1/tools/validate_persian_text.py --exceptions nova/_assistant/content-system-v1/persian_orthography_exceptions.json nova/calibration/en-fa/*.json
           node --check nova/prototype/app.js
           node nova/_assistant/content-system-v1/tools/test_prototype.cjs
+      - name: Audit Lesson lexical coverage against reference snapshot
+        run: python nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py --repo-root . --output /tmp/nova_reference_lesson_coverage.json
       - name: Build and validate every canonical Lesson
         id: build
         run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root .
