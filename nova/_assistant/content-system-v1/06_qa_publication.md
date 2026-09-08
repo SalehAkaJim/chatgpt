@@ -9,7 +9,7 @@ PASS requires a clear instructional/communicative job, valid prerequisites, appr
 Review every learner-visible Turn, prompt, option, answer, example and lexical item. BLOCK grammar errors, unnatural wording, wrong register, ambiguous answers, unexplained advanced language, drill-like dialogue or unnatural accepted speech.
 
 ## Gate C — Persian support
-BLOCK wrong meaning, misleading literal translation, false teaching rules, task ambiguity or unnecessarily technical beginner explanations.
+BLOCK wrong meaning, misleading literal translation, false teaching rules, task ambiguity or unnecessarily technical beginner explanations. Persian orthography is separately enforced by the executable orthography gate and its exact-word exception policy.
 
 ## Gate D — learning design
 BLOCK scoring on untaught language, repetitive interactions without changed learning demand, blind-guess listening, padded content or fake transfer. Pilot interaction coverage tests the product; it is not a permanent Lesson template.
@@ -29,6 +29,17 @@ PASS requires real execution of reset → runtime schema → generated Lesson SQ
 No Pilot Lesson is complete without generated and tested audio.
 
 PASS requires exact source-hash match, correct voice routing, every required Turn audio, every audio-eligible lexical item (including valid multiword items), successful decode, nonzero duration, correct source text and no stale files. The manifest exposes source text/type/voice/path/hash/status.
+
+## Gate I — Content Quality v1
+`11_content_quality.md` defines the executable quality policy.
+
+Publication requires:
+- every deterministic Content Quality Hard Gate to pass;
+- automated quality score >= 80;
+- warnings to remain visible in `content_quality.json`, not silently suppressed;
+- human/model review dimensions to be completed before final publish approval.
+
+The automated gate deliberately does not pretend to judge semantic naturalness or pedagogy from regexes. Those dimensions remain explicit review work.
 
 ## Pilot human audit
 The first English Pilot additionally produces `english_audit.md` with learner-visible English in presentation order. Corrections are made in `lesson.source.json` and all derivatives regenerate.
