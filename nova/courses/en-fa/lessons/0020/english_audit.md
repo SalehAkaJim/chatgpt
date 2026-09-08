@@ -1,4 +1,4 @@
-<!-- sourceHash: 362710cb7dd645d4b5eebc745ce9051a5ed3f2d3f29eb2d2bd34d4a89c2b6582 -->
+<!-- sourceHash: 54a414be9c627b646cb7a599c67a9c44c686979f2a30d710dde4f4c53da61dcd -->
 # English Audit — EN-A1-L-0020
 
 **Lesson:** Room two at seven
@@ -6,70 +6,71 @@
 
 ## Lexical items
 
+- `EN-LEX-SEVEN-01` [word/target] — **seven**
 - `EN-LEX-ROOM-01` [word/review] — **room**
 - `EN-LEX-ONE-01` [word/review] — **one**
 - `EN-LEX-TWO-01` [word/review] — **two**
 - `EN-LEX-TIME-01` [word/review] — **time**
 - `EN-LEX-SIX-01` [word/review] — **six**
-- `EN-LEX-SEVEN-01` [word/review] — **seven**
 - `EN-LEX-AT-TIME-01` [word/review] — **at**
-- `EN-LEX-OR-01` [word/review] — **or**
+- `EN-LEX-YES-01` [word/review] — **yes**
 
 ## Dialogue turns
 
 **T01 · iris**
 
-Room one or room two?
+Room two. What time?
 
 **T02 · nina**
 
-Room one.
+At seven.
 
-- **Speech target:** Room one.
-- **Accepted speech:** Room one.
+- **Speech target:** At seven.
+- **Accepted speech:** At seven.
 
 **T03 · iris**
 
-What time?
+Room two at seven?
 
 **T04 · nina**
 
-At six.
+Yes.
 
-- **Speech target:** At six.
-- **Accepted speech:** At six.
+- **Speech target:** Yes.
+- **Accepted speech:** Yes.
 
-**T05 · iris**
+**T05 · nina**
 
-Room two. At seven.
+Room two at seven.
 
-**T06 · nina**
-
-Room two. At seven.
-
-- **Speech target:** Room two. At seven.
-- **Accepted speech:** Room two. At seven.
+- **Speech target:** Room two at seven.
+- **Accepted speech:** Room two at seven.
 
 ## Activities
 
 **A01 · lexical_teach**
 
 
-**A02 · dialogue**
+**A02 · response_choice**
+
+- **English prompt:** Community class
+Room two
+7:00
+- **options:** اتاق یک، ساعت هفت | اتاق دو، ساعت هفت | اتاق دو، ساعت شش
+
+**A03 · dialogue**
 
 
-**A03 · comprehension**
+**A04 · sentence_order**
 
-- **options:** اتاق یک، ساعت شش | اتاق دو، ساعت هفت | اتاق دو، ساعت شش
-
-**A04 · response_choice**
-
-- **optionsEn:** Room one. | At six. | On Tuesday.
+- **answerEn:** Room two at seven.
+- **tokensEn:** seven. | Room | at | two
+- **answerTokensEn:** Room | two | at | seven.
 
 **A05 · speak**
 
-- **textEn:** Room two. At seven.
-- **acceptedAnswersEn:** Room two. At seven.
+- **textEn:** Room two at seven.
+- **acceptedAnswersEn:** Room two at seven.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

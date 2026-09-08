@@ -14,74 +14,74 @@
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0017",
-    "sourceHash": "4bffdf375666bb5b888f2888027533c03ba512e0301ae4bd0330ed1de8e530e6",
+    "sourceHash": "cad20e803594a4f22ed26488d37b6b0a5415ebbe3a9e7b44bcce33fc7ae41c96",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
     "reviewerType": "model",
     "reviewedAt": "2026-09-08",
-    "scope": "Model/editor text and pedagogy pass for the owner-authorized Lessons 0014–0020 extension; not an independent human review.",
+    "scope": "Model/editor rewrite review for Lessons 0014–0020 after activity-variety, load, naturalness and skill-mix revisions; not an independent human review.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
-        "evidence": "'What day?', 'On Monday.', and 'Monday or Tuesday?' are concise and natural in a known event-planning context."
+        "evidence": "What day?, On Monday. and Monday. are natural short forms when the library program is already the topic."
       },
       "persianMeaningQuality": {
         "score": 5,
-        "evidence": "Checked every Persian title, instruction, turn translation, prompt and option explanation against the intended English meaning; wording stays simple and avoids forbidden Arabic orthographic forms."
+        "evidence": "Checked learner-facing Persian for meaning, clarity and current Nova orthography rules; wording stays colloquial and context-specific."
       },
       "pedagogicalClarity": {
         "score": 4,
-        "evidence": "Day vocabulary follows the prior time Lesson and keeps the planning task limited to two weekdays."
+        "evidence": "Only Monday is introduced in the first day Lesson; Tuesday is deferred to prevent an unnecessary load spike."
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Choices separate day answers from a known clock-time answer, forcing the learner to distinguish day from time."
+        "evidence": "The reading and controlled phrase tasks distinguish day, time and room information."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "Liam and Leo continue the library program story by scheduling the next session rather than repeating the refreshment episode."
+        "evidence": "Leo and Liam schedule the next library event in a short, context-supported exchange."
       },
       "difficultyFit": {
         "score": 4,
-        "evidence": "Monday and Tuesday are introduced with the already familiar or pattern and a single on + day frame."
+        "evidence": "Three new items replace the previous four-item/two-day load."
       },
       "repetitionUsefulness": {
         "score": 4,
-        "evidence": "Guided practice uses Monday; hidden retrieval changes to Tuesday."
+        "evidence": "Monday is read, heard, selected and produced without adding a second weekday."
       },
       "transferQuality": {
         "score": 4,
-        "evidence": "The prior time-question pattern is extended from time of day to day of week while preserving a clear scheduling context."
+        "evidence": "The question-answer pattern transfers directly from clock time to day while the semantic category changes."
       },
       "overallCoherence": {
         "score": 4,
-        "evidence": "The Lesson has one job: understand and state the day of a simple event."
+        "evidence": "The tasks consistently support understanding and stating one program day."
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Static content-flow review only: prompts, explicit help and per-option feedback reduce dead ends, but no real learner, microphone, timing or perception test has been performed."
+        "evidence": "Static flow review only. Activity order is more varied and help/feedback paths are present, but no real learner, microphone, timing or retention test has been performed."
       }
     },
     "learnerTested": false,
     "limitations": [
       "Real learner outcomes and delayed retention have not been measured.",
-      "Generated audio has not received a perceptual or prosody review.",
-      "Exact-match retrieval recognizes bounded patterns; valid alternative English can fall outside its answer list."
+      "Generated audio still requires perceptual/prosody review with human listeners.",
+      "Hidden-answer retrieval remains bounded and cannot certify open-ended language ability."
     ],
     "resolvedFindings": [
-      "Day vocabulary follows the prior time Lesson and keeps the planning task limited to two weekdays.",
-      "The prior time-question pattern is extended from time of day to day of week while preserving a clear scheduling context.",
-      "The Lesson has one job: understand and state the day of a simple event."
+      "Three new items replace the previous four-item/two-day load.",
+      "The question-answer pattern transfers directly from clock time to day while the semantic category changes.",
+      "The tasks consistently support understanding and stating one program day."
     ],
     "status": "PASS",
     "average": 4.0,
     "errors": []
   },
   "metrics": {
-    "targetLexicalItems": 4,
+    "targetLexicalItems": 3,
     "targetConstructions": 2,
     "activities": 5,
     "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "4bffdf375666bb5b888f2888027533c03ba512e0301ae4bd0330ed1de8e530e6"
+  "sourceHash": "cad20e803594a4f22ed26488d37b6b0a5415ebbe3a9e7b44bcce33fc7ae41c96"
 }

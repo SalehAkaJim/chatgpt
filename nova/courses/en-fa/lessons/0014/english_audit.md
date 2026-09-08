@@ -1,4 +1,4 @@
-<!-- sourceHash: d7bc0b10db6a0502e82abaf99efc07df606ffa0773ed340738444863aa4b23ff -->
+<!-- sourceHash: ae5032e899df32abf48d0bef82b8ce0b617d54dc7bd7501c502aa03fe36f67da -->
 # English Audit — EN-A1-L-0014
 
 **Lesson:** Choose the room
@@ -37,11 +37,7 @@ Thanks.
 - **Speech target:** Thanks.
 - **Accepted speech:** Thanks.
 
-**T05 · iris**
-
-Room one.
-
-**T06 · nina**
+**T05 · nina**
 
 Room one, please.
 
@@ -53,12 +49,13 @@ Room one, please.
 **A01 · lexical_teach**
 
 
-**A02 · dialogue**
+**A02 · response_choice**
 
+- **English prompt:** English group — Room two
+- **options:** اتاق یک | اتاق دو | کافه
 
-**A03 · comprehension**
+**A03 · dialogue**
 
-- **options:** اتاق یک | اتاق دو | میز
 
 **A04 · response_choice**
 
@@ -67,7 +64,7 @@ Room one, please.
 **A05 · speak**
 
 - **textEn:** Room one, please.
-- **acceptedAnswersEn:** Room one, please.
+- **acceptedAnswersEn:** Room one, please. | Room one.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

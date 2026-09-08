@@ -1,4 +1,4 @@
-<!-- sourceHash: 4bffdf375666bb5b888f2888027533c03ba512e0301ae4bd0330ed1de8e530e6 -->
+<!-- sourceHash: cad20e803594a4f22ed26488d37b6b0a5415ebbe3a9e7b44bcce33fc7ae41c96 -->
 # English Audit — EN-A1-L-0017
 
 **Lesson:** Which day?
@@ -8,9 +8,8 @@
 
 - `EN-LEX-DAY-01` [word/target] — **day**
 - `EN-LEX-MONDAY-01` [word/target] — **Monday**
-- `EN-LEX-TUESDAY-01` [word/target] — **Tuesday**
 - `EN-LEX-ON-DAY-01` [word/target] — **on**
-- `EN-LEX-OR-01` [word/review] — **or**
+- `EN-LEX-YES-01` [word/review] — **yes**
 
 ## Dialogue turns
 
@@ -27,25 +26,21 @@ On Monday.
 
 **T03 · leo**
 
-Monday or Tuesday?
+Monday?
 
 **T04 · liam**
 
-Monday.
+Yes.
 
-- **Speech target:** Monday.
-- **Accepted speech:** Monday.
+- **Speech target:** Yes.
+- **Accepted speech:** Yes.
 
-**T05 · leo**
+**T05 · liam**
 
-On Tuesday.
+On Monday.
 
-**T06 · liam**
-
-On Tuesday.
-
-- **Speech target:** On Tuesday.
-- **Accepted speech:** On Tuesday.
+- **Speech target:** On Monday.
+- **Accepted speech:** On Monday.
 
 ## Activities
 
@@ -55,18 +50,20 @@ On Tuesday.
 **A02 · dialogue**
 
 
-**A03 · comprehension**
+**A03 · response_choice**
 
-- **options:** دوشنبه | سه شنبه | جمعه
+- **English prompt:** Book club — Monday
+- **options:** دوشنبه | ساعت شش | اتاق یک
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** On Tuesday. | On Monday. | At six.
+- **sentenceEn:** On ___
+- **optionsEn:** Monday | six | room
 
 **A05 · speak**
 
-- **textEn:** On Tuesday.
-- **acceptedAnswersEn:** On Tuesday.
+- **textEn:** On Monday.
+- **acceptedAnswersEn:** On Monday. | Monday.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

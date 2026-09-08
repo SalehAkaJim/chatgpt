@@ -1,4 +1,4 @@
-<!-- sourceHash: 9c306c23d1222f5d2602a47bb2b63ce34b03a7d3a8ad1d6d962970f661cdb406 -->
+<!-- sourceHash: 11fbc7a38927534b3e341f3dabdaff2cc54b9a53d306ab61c247a4e5584b90c3 -->
 # English Audit — EN-A1-L-0018
 
 **Lesson:** Do you have a pen?
@@ -10,7 +10,6 @@
 - `EN-LEX-PEN-01` [word/review] — **pen**
 - `EN-LEX-BOOK-01` [word/review] — **book**
 - `EN-LEX-YES-01` [word/review] — **yes**
-- `EN-LEX-NO-01` [word/review] — **no**
 - `EN-LEX-HERE-YOU-GO-01` [formula/review] — **here you go**
 
 ## Dialogue turns
@@ -26,23 +25,19 @@ Yes. Here you go.
 - **Speech target:** Yes. Here you go.
 - **Accepted speech:** Yes. Here you go.
 
-**T03 · maya**
-
-Do you have a book?
-
-**T04 · alex**
-
-No.
-
-- **Speech target:** No.
-- **Accepted speech:** No.
-
-**T05 · alex**
+**T03 · alex**
 
 Do you have a book?
 
 - **Speech target:** Do you have a book?
 - **Accepted speech:** Do you have a book?
+
+**T04 · alex**
+
+Do you have a pen?
+
+- **Speech target:** Do you have a pen?
+- **Accepted speech:** Do you have a pen?
 
 ## Activities
 
@@ -54,16 +49,18 @@ Do you have a book?
 
 **A03 · comprehension**
 
-- **options:** کتاب | خودکار | میز
+- **options:** خودکار | کتاب | اتاق
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** No, thanks. | Yes. Here you go. | Where's my pen?
+- **answerEn:** Do you have a book?
+- **tokensEn:** book? | you | Do | a | have
+- **answerTokensEn:** Do | you | have | a | book?
 
 **A05 · speak**
 
-- **textEn:** Do you have a book?
-- **acceptedAnswersEn:** Do you have a book?
+- **textEn:** Do you have a pen?
+- **acceptedAnswersEn:** Do you have a pen?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

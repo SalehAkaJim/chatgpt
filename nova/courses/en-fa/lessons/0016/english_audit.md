@@ -1,4 +1,4 @@
-<!-- sourceHash: cbf05bbb0864e9b909689b06cc74f17cd9b86c92f8a80cfb2cb7b73e299c63df -->
+<!-- sourceHash: 3047b5ec3f95c6473d4cfd6841f493aeee86e0abbe67ec01a2b69f5e49c99f39 -->
 # English Audit — EN-A1-L-0016
 
 **Lesson:** What time?
@@ -8,9 +8,8 @@
 
 - `EN-LEX-TIME-01` [word/target] — **time**
 - `EN-LEX-SIX-01` [word/target] — **six**
-- `EN-LEX-SEVEN-01` [word/target] — **seven**
 - `EN-LEX-AT-TIME-01` [word/target] — **at**
-- `EN-LEX-OR-01` [word/review] — **or**
+- `EN-LEX-YES-01` [word/review] — **yes**
 
 ## Dialogue turns
 
@@ -27,46 +26,42 @@ At six.
 
 **T03 · sara**
 
-Six or seven?
+Six?
 
 **T04 · ruby**
 
-Six.
+Yes.
 
-- **Speech target:** Six.
-- **Accepted speech:** Six.
+- **Speech target:** Yes.
+- **Accepted speech:** Yes.
 
-**T05 · sara**
+**T05 · ruby**
 
-At seven.
+At six.
 
-**T06 · ruby**
-
-At seven.
-
-- **Speech target:** At seven.
-- **Accepted speech:** At seven.
+- **Speech target:** At six.
+- **Accepted speech:** At six.
 
 ## Activities
 
 **A01 · lexical_teach**
 
 
-**A02 · dialogue**
+**A02 · response_choice**
+
+- **English prompt:** Next walk — 6:00
+- **options:** ساعت پنج | ساعت شش | اتاق شش
+
+**A03 · dialogue**
 
 
-**A03 · comprehension**
+**A04 · lexical_teach**
 
-- **options:** شش | هفت | پنج
-
-**A04 · response_choice**
-
-- **optionsEn:** At seven. | At six. | Room two.
 
 **A05 · speak**
 
-- **textEn:** At seven.
-- **acceptedAnswersEn:** At seven.
+- **textEn:** At six.
+- **acceptedAnswersEn:** At six. | Six.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

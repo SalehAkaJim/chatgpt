@@ -1,4 +1,4 @@
-<!-- sourceHash: 18d35448760d76a8adf6f9f5108ee8384cedbd48e6d86eac6a16a29025f3fe8e -->
+<!-- sourceHash: 7722835cf0d5f226e896516912247d43aeed8116db831d18717c30eddffb56e7 -->
 # English Audit — EN-A1-L-0019
 
 **Lesson:** Can you help me?
@@ -6,8 +6,8 @@
 
 ## Lexical items
 
-- `EN-LEX-CAN-YOU-HELP-ME-01` [formula/target] — **can you help me**
-- `EN-LEX-YES-01` [word/review] — **yes**
+- `EN-LEX-HELP-01` [word/target] — **help**
+- `EN-LEX-SURE-01` [word/target] — **sure**
 
 ## Dialogue turns
 
@@ -17,10 +17,10 @@ Can you help me?
 
 **T02 · owen**
 
-Yes.
+Sure.
 
-- **Speech target:** Yes.
-- **Accepted speech:** Yes.
+- **Speech target:** Sure.
+- **Accepted speech:** Sure.
 
 **T03 · owen**
 
@@ -39,16 +39,18 @@ Can you help me?
 
 **A03 · comprehension**
 
-- **options:** کمک می خواهد | قیمت را می پرسد | دنبال کتابش می گردد
+- **options:** help | you | can
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** Yes. | No, thanks. | How much is it?
+- **answerEn:** Can you help me?
+- **tokensEn:** me? | you | help | Can
+- **answerTokensEn:** Can | you | help | me?
 
 **A05 · speak**
 
 - **textEn:** Can you help me?
-- **acceptedAnswersEn:** Can you help me?
+- **acceptedAnswersEn:** Can you help me? | Can you help?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

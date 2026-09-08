@@ -1,4 +1,4 @@
-<!-- sourceHash: 14ab7741292cd06040bc8c7927f9c503733fbff6671ac07823a705b874249522 -->
+<!-- sourceHash: 12e67c96686093b30668df672014fe8f674b882f4b0586a3421975f571398903 -->
 # English Audit — EN-A1-L-0015
 
 **Lesson:** Ask the price
@@ -10,39 +10,34 @@
 - `EN-LEX-FIVE-01` [word/target] — **five**
 - `EN-LEX-DOLLAR-01` [word/target] — **dollar**
 - `EN-LEX-TEA-01` [word/review] — **tea**
-- `EN-LEX-YES-01` [word/review] — **yes**
 - `EN-LEX-PLEASE-01` [word/review] — **please**
-- `EN-LEX-HERE-YOU-GO-01` [formula/review] — **here you go**
+- `EN-LEX-THANKS-01` [word/review] — **thanks**
 
 ## Dialogue turns
 
 **T01 · ben**
 
-Tea?
-
-**T02 · ava**
-
-Yes, please.
-
-- **Speech target:** Yes, please.
-- **Accepted speech:** Yes, please.
-
-**T03 · ben**
-
 Here you go.
 
-**T04 · ava**
+**T02 · ava**
 
 How much is it?
 
 - **Speech target:** How much is it?
 - **Accepted speech:** How much is it?
 
-**T05 · ben**
+**T03 · ben**
 
 Five dollars.
 
-**T06 · ava**
+**T04 · ava**
+
+Thanks.
+
+- **Speech target:** Thanks.
+- **Accepted speech:** Thanks.
+
+**T05 · ava**
 
 How much is it?
 
@@ -51,24 +46,25 @@ How much is it?
 
 ## Activities
 
-**A01 · lexical_teach**
+**A01 · response_choice**
 
-
-**A02 · dialogue**
-
-
-**A03 · comprehension**
-
+- **English prompt:** Tea — $5
 - **options:** دو دلار | پنج دلار | یک دلار
 
-**A04 · response_choice**
+**A02 · lexical_teach**
 
-- **optionsEn:** No, thanks. | Yes, please. | How much is it?
+
+**A03 · dialogue**
+
+
+**A04 · comprehension**
+
+- **options:** دو دلار | پنج دلار | یک دلار
 
 **A05 · speak**
 
 - **textEn:** How much is it?
-- **acceptedAnswersEn:** How much is it?
+- **acceptedAnswersEn:** How much is it? | How much?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.
