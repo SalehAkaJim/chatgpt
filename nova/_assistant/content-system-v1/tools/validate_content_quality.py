@@ -158,8 +158,9 @@ def main():
 
     learners=[x for x in turns_list if x.get("role")=="learner"]
     practice=sum(1 for act in acts if act.get("type")=="dialogue" for ex in ((act.get("config") or {}).get("exchanges") or []) if ex.get("responseEvaluation")=="practice_only")
-    if learners and practice/len(learners)>wt["supportTurnShare"]:
-        issue(W,"CQ-W04","Practice/support responses occupy a large share of learner Turns.",practiceOnlyResponses=practice,learnerTurns=len(learners))
+    independent_scored=any(scored(act) and act.get("type")!="dialogue" for act in acts)
+    if learners and practice/len(learners)>wt["supportTurnShare"] and not independent_scored:
+        issue(W,"CQ-W04","Practice/support responses dominate learner Turns without independent scored evidence.",practiceOnlyResponses=practice,learnerTurns=len(learners))
 
     for act in acts:
         if act.get("type")!="fill_blank": continue
