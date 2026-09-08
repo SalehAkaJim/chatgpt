@@ -22,6 +22,7 @@ def normalize(value: str) -> str:
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument('lesson', type=Path)
+    p.add_argument('--course', type=Path)
     p.add_argument('--schema', type=Path, default=Path(__file__).resolve().parents[1] / 'lesson.source.schema.json')
     args = p.parse_args()
 
@@ -33,6 +34,17 @@ def main() -> int:
     for err in sorted(Draft202012Validator(schema).iter_errors(lesson), key=lambda e: list(e.absolute_path)):
         where = '.'.join(str(x) for x in err.absolute_path) or '<root>'
         errors.append(f'schema:{where}: {err.message}')
+
+    if args.course:
+        course = load(args.course)
+        if lesson.get('courseCode') != course.get('courseCode'):
+            errors.append('lesson courseCode does not match Course source')
+        levels = course.get('levels') or []
+        level_keys = [x.get('levelKey') for x in levels if x.get('levelKey')]
+        if len(level_keys) != len(set(level_keys)):
+            errors.append('duplicate levelKey in Course source')
+        if lesson.get('levelKey') not in set(level_keys):
+            errors.append(f"unknown levelKey for Course: {lesson.get('levelKey')}")
 
     lexical = lesson.get('lexicalItems', [])
     lexical_keys = [x.get('lexicalKey') for x in lexical if x.get('lexicalKey')]
@@ -194,6 +206,7 @@ def main() -> int:
     report = {
         'status':'PASS' if not errors else 'FAIL',
         'lessonKey':lesson.get('lessonKey'),
+        'levelKey':lesson.get('levelKey'),
         'errors':errors,
         'warnings':warnings
     }
