@@ -147,7 +147,10 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
 
         # CEFR-J also carries function words/grammatical vocabulary that WordNet-based
         # Openjam intentionally omits. Preserve these as curriculum placement records.
-        for (lemma, pos), _evidence_rows in sorted(exact_index.items()):
+        for (lemma, pos), _evidence_rows in sorted(
+            exact_index.items(),
+            key=lambda item: (item[0][0], item[0][1] or ""),
+        ):
             if (lemma, pos) in seen_lemma_pos:
                 continue
             resolved = resolve_cefr(lemma, pos, None, exact_index, lemma_index)
