@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0014",
+  "sortOrder": 14,
+  "titleEn": "Choose the room",
+  "titleFa": "انتخاب اتاق",
+  "descriptionFa": "انتخاب شماره اتاق برنامه در مرکز محله",
+  "primaryOutcomeKey": "A1-INTERACTION-CHOOSE-ROOM",
+  "outcomeFa": "می توانی بین دو شماره اتاق انتخاب کنی و انتخابت را کوتاه و مودبانه بگویی.",
+  "scenarioFa": "برای یک برنامه کوچک به مرکز محله برگشته ای. آیریس بین دو اتاق به تو حق انتخاب می دهد. نقش تو نینا است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-LOCATE-OBJECT"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_after_greetings",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-ROOM-NUMBER",
+        "form": "Room + number",
+        "meaningFa": "گفتن شماره اتاق"
+      }
+    ],
+    "supportLanguage": [],
+    "assessmentBoundary": "Guided speech is supported read-aloud practice. Choice tasks assess recognition or selection. Final hidden-answer retrieval records bounded first-attempt evidence; exact text matching does not certify open-ended ability or pronunciation.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "End with a meaning-cued hidden-answer retrieval or recombination and continue delayed review in later stories."
+    },
+    "story": {
+      "arcKey": "EN-A1-COMMUNITY",
+      "sceneKey": "EN-A1-SCENE-0014",
+      "learnerRoleKey": "nina",
+      "participants": [
+        "nina",
+        "iris"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0008",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0008"
+      ],
+      "settingFa": "مرکز محله، انتخاب اتاق برای یک برنامه کوچک",
+      "storyBeatFa": "نینا دوباره آیریس را می بیند و این بار شماره اتاق برنامه را انتخاب و تایید می کند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0010",
+        "activityKeys": [
+          "A01",
+          "A04"
+        ],
+        "learningDemand": "transfer",
+        "note": "Reuse or and a short polite choice with room numbers instead of drinks."
+      },
+      {
+        "lessonKey": "EN-A1-L-0008",
+        "activityKeys": [
+          "A03"
+        ],
+        "learningDemand": "transfer",
+        "note": "Move from locating an object to recognizing a numbered room in the same community arc."
+      }
+    ],
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "itemType": "word",
+      "displayForm": "room",
+      "translationFa": "اتاق",
+      "role": "target",
+      "audioEligible": true,
+      "partOfSpeech": "noun"
+    },
+    {
+      "lexicalKey": "EN-LEX-ONE-01",
+      "itemType": "word",
+      "displayForm": "one",
+      "translationFa": "یک",
+      "role": "target",
+      "audioEligible": true,
+      "partOfSpeech": "numeral"
+    },
+    {
+      "lexicalKey": "EN-LEX-TWO-01",
+      "itemType": "word",
+      "displayForm": "two",
+      "translationFa": "دو",
+      "role": "target",
+      "audioEligible": true,
+      "partOfSpeech": "numeral"
+    },
+    {
+      "lexicalKey": "EN-LEX-OR-01",
+      "itemType": "word",
+      "displayForm": "or",
+      "translationFa": "یا",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "conjunction"
+    },
+    {
+      "lexicalKey": "EN-LEX-PLEASE-01",
+      "itemType": "word",
+      "displayForm": "please",
+      "translationFa": "لطفا",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "adverb"
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "itemType": "word",
+      "displayForm": "thanks",
+      "translationFa": "ممنون",
+      "role": "review",
+      "audioEligible": true,
+      "partOfSpeech": "interjection"
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Room one or room two?",
+      "translationFa": "اتاق یک یا اتاق دو؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Room two, please.",
+      "translationFa": "اتاق دو، لطفا.",
+      "audioRequired": true,
+      "speechTargetEn": "Room two, please.",
+      "acceptedSpeechEn": [
+        "Room two, please."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Room two.",
+      "translationFa": "اتاق دو.",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Thanks.",
+      "translationFa": "ممنون.",
+      "audioRequired": true,
+      "speechTargetEn": "Thanks.",
+      "acceptedSpeechEn": [
+        "Thanks."
+      ]
+    },
+    {
+      "turnKey": "T05",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Room one.",
+      "translationFa": "اتاق یک.",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T06",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Room one, please.",
+      "translationFa": "اتاق یک، لطفا.",
+      "audioRequired": true,
+      "speechTargetEn": "Room one, please.",
+      "acceptedSpeechEn": [
+        "Room one, please."
+      ],
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "lexical_teach",
+      "instructionFa": "معنی و صدای این کلمه ها و عبارت ها را یاد بگیر.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-ROOM-01",
+          "EN-LEX-ONE-01",
+          "EN-LEX-TWO-01",
+          "EN-LEX-OR-01"
+        ],
+        "explanationFa": "room یعنی اتاق. one یعنی یک و two یعنی دو. or یعنی یا و برای انتخاب بین دو اتاق به کار می رود."
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف آیریس را گوش کن و پاسخ را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "promptFa": "آیریس این بار کدام اتاق را می گوید؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T05"
+        ],
+        "options": [
+          "اتاق یک",
+          "اتاق دو",
+          "میز"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "Room one یعنی اتاق یک.",
+            "Room two اتاق دو است؛ این بار one را می شنوی.",
+            "table یعنی میز و در این صدا گفته نمی شود."
+          ],
+          "correctFa": "Room one یعنی اتاق یک."
+        }
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "purpose": "Recognize a room number in a fresh short listening clip.",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "promptFa": "آیریس بین اتاق یک و دو حق انتخاب می دهد. تو اتاق دو را می خواهی. چه می گویی؟",
+      "config": {
+        "optionsEn": [
+          "Room one, please.",
+          "Room two, please.",
+          "Thanks."
+        ],
+        "answerIndex": 1,
+        "feedback": {
+          "optionsFa": [
+            "این پاسخ اتاق یک را انتخاب می کند.",
+            "این پاسخ اتاق دو را مودبانه انتخاب می کند.",
+            "Thanks تشکر است و شماره اتاق را انتخاب نمی کند."
+          ],
+          "correctFa": "این پاسخ اتاق دو را مودبانه انتخاب می کند."
+        }
+      },
+      "metadata": {
+        "learningDemand": "changed_context",
+        "purpose": "changed_context",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "speak",
+      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
+      "promptFa": "نقش تو نینا است. این بار اتاق یک را انتخاب کن و کوتاه و مودبانه بگو.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Room one, please.",
+        "acceptedAnswersEn": [
+          "Room one, please."
+        ],
+        "sourceTurnKey": "T06",
+        "showAnswerTextBeforeAttempt": false,
+        "modelAccess": "explicit_help",
+        "hintFa": "نام اتاق و شماره یک را همراه please بگو.",
+        "feedback": {
+          "correctFa": "پاسخت با الگوی این تمرین هماهنگ است.",
+          "retryFa": "نام اتاق و شماره یک را همراه please بگو."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "purpose": "meaning_cued_hidden_answer",
+        "evidenceKind": "bounded_retrieval"
+      }
+    }
+  ],
+  "metadata": {
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange"
+  }
+}
