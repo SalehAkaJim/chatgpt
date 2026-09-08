@@ -64,11 +64,16 @@ The reference layer becomes a blocking build dependency for new English→Persia
 
 - every `target` lexical item with `itemType: word` must have an exact lemma + POS match at the Lesson level;
 - that reference record must be both `curriculumEligible` and `productionEligible`;
+- the authoring step must choose the intended sense and store its stable `referenceKey` in `lexicalItem.metadata.referenceKey`;
+- the stored `referenceKey` must resolve to one of the exact production-eligible candidates for that lemma + POS + level;
+- an authored context-specific Persian meaning may differ from the selected reference translation, but that difference is explicitly warned for review rather than silently replacing either value;
 - review/support language is audited but is not blocked by this forward-only target gate;
 - multiword expressions/formulas remain Nova-authored units and are not forced into a single-word dictionary model;
 - Lessons 1–20 are audited but are not retroactively invalidated.
 
 `build_pilot.py` writes `reference_validation.json` beside each canonical Lesson. A failing enforced target prevents the Lesson from reaching paid audio generation, SQL compilation or runtime import.
+
+Scheduled/reference-source syncs also validate every canonical Lesson before committing a changed snapshot, so an upstream data change cannot silently invalidate a Lesson 21+ target.
 
 ## Lesson coverage semantics
 
