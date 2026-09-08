@@ -8,7 +8,7 @@ VALIDATOR = Path(__file__).with_name("validate_content_quality.py")
 POLICY = ROOT / "content_quality.policy.json"
 
 BASE = {
-  "cefrLevel":"A1", "lessonKey":"TEST", "primaryOutcomeKey":"TEST-OUTCOME",
+  "levelKey":"A1", "lessonKey":"TEST", "primaryOutcomeKey":"TEST-OUTCOME",
   "outcomeFa":"کاربر می تواند سلام کند.",
   "curriculum":{"startingKnowledge":"absolute_zero","targetConstructions":[],"transferPlan":{"mode":"deferred","targetLesson":"TEST-2"}},
   "lexicalItems":[{"lexicalKey":"L1","displayForm":"hello","role":"target"}],
@@ -18,7 +18,8 @@ BASE = {
   ],
   "activities":[{"activityKey":"A01","type":"dialogue","instructionFa":"گوش کن و جواب بده.","config":{"exchanges":[
     {"exchangeKey":"E1","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"stt","allowResponseModelAudio":True}
-  ]}}]
+  ]}}],
+  "review":{"pendingDecisions":[]}
 }
 
 def run(obj):
@@ -45,7 +46,10 @@ def expect_no_warning(name,obj,unexpected):
     if code!=0 or unexpected in codes: raise AssertionError(f"{name} should not have warning {unexpected}: {report}")
 
 def main():
-    expect_pass("baseline",BASE)
+    baseline=expect_pass("baseline",BASE)
+    if baseline["minimumAutomatedScore"] != 90:
+        raise AssertionError(f"quality threshold must be 90: {baseline}")
+
     x=copy.deepcopy(BASE); x["primaryOutcomeKey"]=""; expect_fail("missing outcome",x,"CQ-H01")
     x=copy.deepcopy(BASE); x["lexicalItems"]=[{"lexicalKey":f"L{i}","displayForm":f"w{i}","role":"target"} for i in range(6)]; expect_fail("overload",x,"CQ-H02")
     x=copy.deepcopy(BASE); x["lexicalItems"].append({"lexicalKey":"S1","displayForm":"thanks","role":"support"}); x["activities"].append({"activityKey":"A02","type":"fill_blank","instructionFa":"انتخاب کن.","config":{"sentenceEn":"___","optionsEn":["thanks","hello","name"],"answerIndex":0}}); expect_fail("support assessed",x,"CQ-H03")
@@ -61,6 +65,24 @@ def main():
     x["activities"].append({"activityKey":"A02","type":"sentence_order","instructionFa":"مرتب کن.","config":{"audioSourceTurnKey":"T01","answerEn":"Hello.","showAnswerTextBeforeAttempt":False,"allowAudioReplay":True}})
     expect_no_warning("guided practice followed by independent assessment",x,"CQ-W04")
 
-    print(json.dumps({"status":"PASS","tests":8},ensure_ascii=False))
+    x=copy.deepcopy(BASE)
+    del x["curriculum"]["transferPlan"]
+    code,report=run(x)
+    if code==0 or report["automatedScore"] >= 90 or report["errors"]:
+        raise AssertionError(f"score below 90 must reject import without inventing a hard error: {report}")
+
+    x=copy.deepcopy(BASE)
+    x["review"]["pendingDecisions"]=[{
+        "decisionKey":"TEST-DECISION",
+        "question":"Which valid product direction should be chosen?",
+        "options":["A","B"],
+        "recommendedOption":"A",
+        "rationale":"Both are defensible; continue authoring while owner reviews."
+    }]
+    report=expect_pass("pending decision does not block authoring",x)
+    if not report["requiresUserDecision"] or report["authoringBlockedByPendingDecisions"]:
+        raise AssertionError(f"pending decision policy is wrong: {report}")
+
+    print(json.dumps({"status":"PASS","tests":10},ensure_ascii=False))
 
 if __name__=="__main__": main()
