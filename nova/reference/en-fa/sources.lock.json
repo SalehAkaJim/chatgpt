@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "qualityThreshold": 90,
+  "cefrPrecedence": [
+    "cefrj_exact_pos",
+    "octanove_exact_pos",
+    "cefrj_lemma_consensus",
+    "octanove_lemma_consensus",
+    "openjam_frequency_band"
+  ],
+  "sources": {
+    "openjam": {
+      "repository": "amirj4m/openjam",
+      "commit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+      "datasetVersion": "0.8.1",
+      "license": "MIT",
+      "files": {
+        "words": "data/json/words_en.json",
+        "translationsFa": "data/json/translations_fa.json",
+        "categories": "data/json/categories.json",
+        "wordCategories": "data/json/word_categories.json"
+      }
+    },
+    "cefrj": {
+      "repository": "openlanguageprofiles/olp-en-cefrj",
+      "commit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f",
+      "license": "free commercial use with attribution per project terms",
+      "files": {
+        "vocabulary": "cefrj-vocabulary-profile-1.5.csv",
+        "grammar": "cefrj-grammar-profile-20180315.csv",
+        "c1c2": "octanove-vocabulary-profile-c1c2-1.0.csv"
+      }
+    }
+  }
+}
