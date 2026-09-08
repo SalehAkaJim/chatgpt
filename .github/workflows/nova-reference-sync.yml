@@ -1,0 +1,54 @@
+name: Nova Reference Data Sync
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [production-reference-layer]
+    paths:
+      - '.github/workflows/nova-reference-sync.yml'
+      - 'nova/reference/en-fa/sources.lock.json'
+      - 'nova/_assistant/content-system-v1/tools/reference_data.py'
+      - 'nova/_assistant/content-system-v1/tools/sync_reference_data.py'
+      - 'nova/_assistant/content-system-v1/tools/validate_reference_data.py'
+      - 'nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py'
+      - 'nova/_assistant/content-system-v1/tools/test_reference_data.py'
+  schedule:
+    - cron: '17 4 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-reference-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  sync-reference-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run reference-layer unit tests
+        run: python nova/_assistant/content-system-v1/tools/test_reference_data.py
+      - name: Sync pinned Openjam and CEFR-J data
+        run: python nova/_assistant/content-system-v1/tools/sync_reference_data.py --repo-root .
+      - name: Validate generated reference snapshot
+        run: python nova/_assistant/content-system-v1/tools/validate_reference_data.py --repo-root . --strict
+      - name: Audit current Lesson lexical coverage
+        run: python nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py --repo-root .
+      - name: Commit deterministic reference snapshot
+        run: |
+          git config user.name "nova-reference-bot"
+          git config user.email "nova-reference-bot@users.noreply.github.com"
+          git add nova/reference/en-fa/
+          if git diff --cached --quiet; then
+            echo "Reference snapshot already matches pinned sources."
+          else
+            git commit -m "Sync Nova production reference data"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
