@@ -1,4 +1,4 @@
-<!-- sourceHash: 6e7be88d256adfc13bd490bab49e396b53186ab0a58d97d2e7c095955aaf792d -->
+<!-- sourceHash: 958ffdb620d54e874ac922f7ca32efc0837d523a4874e5fd4ac9a8b44cee6e70 -->
 # English Audit — EN-A1-L-0009
 
 **Lesson:** First stop at the cafe
@@ -42,6 +42,13 @@ Thanks!
 
 Coffee?
 
+**T06 · ava**
+
+Can I have coffee, please?
+
+- **Speech target:** Can I have coffee, please?
+- **Accepted speech:** Can I have coffee, please?
+
 ## Activities
 
 **A01 · lexical_teach**
@@ -62,6 +69,11 @@ Coffee?
 **A05 · response_choice**
 
 - **optionsEn:** Sorry? | Thanks! | See you!
+
+**A06 · speak**
+
+- **textEn:** Can I have coffee, please?
+- **acceptedAnswersEn:** Can I have coffee, please? | Can I have a coffee, please? | Can I have some coffee, please?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

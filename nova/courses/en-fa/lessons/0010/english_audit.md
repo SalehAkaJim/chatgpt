@@ -1,4 +1,4 @@
-<!-- sourceHash: 1a880caa430a86fc9582f6b5572bee442bc44803ca1576a8f8a1131c13086132 -->
+<!-- sourceHash: b33100bf6bacfcc7410602e6955e9c5eb0f4f8078bb52f82a8bc820eb542434a -->
 # English Audit — EN-A1-L-0010
 
 **Lesson:** Drinks after the walk
@@ -42,6 +42,13 @@ Thanks.
 
 Water or tea?
 
+**T06 · ruby**
+
+Water, please.
+
+- **Speech target:** Water, please.
+- **Accepted speech:** Water, please.
+
 ## Activities
 
 **A01 · lexical_teach**
@@ -61,7 +68,12 @@ Water or tea?
 **A05 · fill_blank**
 
 - **sentenceEn:** Tea ___ coffee?
-- **optionsEn:** from | or | on
+- **optionsEn:** and | or | from
+
+**A06 · speak**
+
+- **textEn:** Water, please.
+- **acceptedAnswersEn:** Water, please.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

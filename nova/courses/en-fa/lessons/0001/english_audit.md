@@ -1,4 +1,4 @@
-<!-- sourceHash: 8512735907affdea66aa88aa24ab83ceb6e66d9a254a032046f52d15c1ec418e -->
+<!-- sourceHash: bd1ff62238d1d95fd5408897ab389a84f1c783565738e10bdee7a0192dd6f51a -->
 # English Audit — EN-A1-L-0001
 
 **Lesson:** Hello! What's your name?
@@ -33,6 +33,13 @@ I'm Alex.
 - **Speech target:** I'm Alex.
 - **Accepted speech:** I'm Alex.
 
+**T05 · alex**
+
+Hello! I'm Alex.
+
+- **Speech target:** Hello! I'm Alex.
+- **Accepted speech:** Hello! I'm Alex.
+
 ## Activities
 
 **A01 · dialogue**
@@ -55,6 +62,11 @@ I'm Alex.
 **A05 · comprehension**
 
 - **options:** اسمش را | حالش را | اهل کجاست
+
+**A06 · speak**
+
+- **textEn:** Hello! I'm Alex.
+- **acceptedAnswersEn:** Hello! I'm Alex. | Hello! I am Alex.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

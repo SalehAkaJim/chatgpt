@@ -1,4 +1,4 @@
-<!-- sourceHash: c31e8a8a7c364cfdaf5e219ca70a2dc3b38534ac91900baa60e8b016e61072e0 -->
+<!-- sourceHash: 7bb3946d0de8130c2aff4f323c36de1a40c15c99cf2f78a9f11275727b69fb2e -->
 # English Audit — EN-A1-L-0008
 
 **Lesson:** Find the book
@@ -42,6 +42,13 @@ Here you go.
 
 Where's my pen?
 
+**T06 · nina**
+
+Where's my pen?
+
+- **Speech target:** Where's my pen?
+- **Accepted speech:** Where's my pen?
+
 ## Activities
 
 **A01 · lexical_teach**
@@ -52,8 +59,8 @@ Where's my pen?
 
 **A03 · fill_blank**
 
-- **sentenceEn:** It's ___ the table.
-- **optionsEn:** from | my | on
+- **sentenceEn:** Where's my ___?
+- **optionsEn:** pen | book | table
 
 **A04 · sentence_order**
 
@@ -64,6 +71,11 @@ Where's my pen?
 **A05 · comprehension**
 
 - **options:** دنبال کتابش می گردد | دنبال خودکارش می گردد | اسم تو را می پرسد
+
+**A06 · speak**
+
+- **textEn:** Where's my pen?
+- **acceptedAnswersEn:** Where's my pen? | Where is my pen?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

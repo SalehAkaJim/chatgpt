@@ -1,4 +1,4 @@
-<!-- sourceHash: 42d4717e7d525dc5b89afa857c3676f50374257a02d229951f2c0e0499f0d7af -->
+<!-- sourceHash: d9eb4517ec0adc1e08e5e8d2c48ba570560d5e64a38e1aace5f1183d91e968a9 -->
 # English Audit — EN-A1-L-0011
 
 **Lesson:** Accept or decline
@@ -50,6 +50,13 @@ Yes, please.
 - **Speech target:** Yes, please.
 - **Accepted speech:** Yes, please.
 
+**T07 · liam**
+
+No, thanks. Coffee, please.
+
+- **Speech target:** No, thanks. Coffee, please.
+- **Accepted speech:** No, thanks. Coffee, please.
+
 ## Activities
 
 **A01 · lexical_teach**
@@ -60,9 +67,9 @@ Yes, please.
 
 **A03 · sentence_order**
 
-- **answerEn:** Yes, please.
-- **tokensEn:** please. | Yes,
-- **answerTokensEn:** Yes, | please.
+- **answerEn:** No, thanks. Water, please.
+- **tokensEn:** please. | No, | Water, | thanks.
+- **answerTokensEn:** No, | thanks. | Water, | please.
 
 **A04 · response_choice**
 
@@ -71,6 +78,11 @@ Yes, please.
 **A05 · response_choice**
 
 - **optionsEn:** Here you go. | No, thanks. | Yes, please.
+
+**A06 · speak**
+
+- **textEn:** No, thanks. Coffee, please.
+- **acceptedAnswersEn:** No, thanks. Coffee, please. | No, thank you. Coffee, please.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

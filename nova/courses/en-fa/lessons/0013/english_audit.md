@@ -1,4 +1,4 @@
-<!-- sourceHash: d28f62e7d54f3b90267367737b1fa1966cabedd53f3e74628a24eb24dde19f21 -->
+<!-- sourceHash: cdc44154dfe3a279260b5a46b5224dee93f3b9f1c1ceca714027cb31da3f61f0 -->
 # English Audit — EN-A1-L-0013
 
 **Lesson:** Borrowing between neighbors
@@ -59,6 +59,27 @@ Can I have a pen, please?
 
 It's on the table.
 
+**T09 · owen**
+
+Where's my book?
+
+- **Speech target:** Where's my book?
+- **Accepted speech:** Where's my book?
+
+**T10 · owen**
+
+Here you go.
+
+- **Speech target:** Here you go.
+- **Accepted speech:** Here you go.
+
+**T11 · owen**
+
+Where's my pen?
+
+- **Speech target:** Where's my pen?
+- **Accepted speech:** Where's my pen?
+
 ## Activities
 
 **A01 · comprehension**
@@ -74,11 +95,16 @@ It's on the table.
 
 **A04 · comprehension**
 
-- **options:** روی میز | درباره جایش چیزی نمی گوید
+- **options:** کتاب اوون | خودکار نورا | کتاب نورا
 
 **A05 · response_choice**
 
 - **optionsEn:** No, a book, please. | Yes, please. | No, a pen, please.
+
+**A06 · speak**
+
+- **textEn:** Where's my pen?
+- **acceptedAnswersEn:** Where's my pen? | Where is my pen?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

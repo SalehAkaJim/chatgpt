@@ -1,4 +1,4 @@
-<!-- sourceHash: 2278305e0e6a32abba5cc8f94049642d1a65a6ac2fe76a2f073d1853f5c2c702 -->
+<!-- sourceHash: 2fa26b1af15ccf654b50b50891cda91652dac0c079520d6aaa7479f0def22275 -->
 # English Audit — EN-A1-L-0004
 
 **Lesson:** When you miss a question
@@ -35,6 +35,13 @@ I'm fine, thanks.
 - **Speech target:** I'm fine, thanks.
 - **Accepted speech:** I'm fine, thanks.
 
+**T05 · liam**
+
+Sorry?
+
+- **Speech target:** Sorry?
+- **Accepted speech:** Sorry?
+
 ## Activities
 
 **A01 · lexical_teach**
@@ -50,6 +57,11 @@ I'm fine, thanks.
 **A04 · response_choice**
 
 - **optionsEn:** See you! | Sorry? | I'm fine, thanks.
+
+**A05 · speak**
+
+- **textEn:** Sorry?
+- **acceptedAnswersEn:** Sorry?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

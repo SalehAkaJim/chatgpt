@@ -1,4 +1,4 @@
-<!-- sourceHash: 00eb54cada1410727b8cb29fc97015c400d06b88b8adf66a35130843f8bab7cf -->
+<!-- sourceHash: 3496de88fd4d9d292d68af68fc96fdbf7f4509c9798c29ada72725fce2f814da -->
 # English Audit — EN-A1-L-0005
 
 **Lesson:** Where are you from?
@@ -36,6 +36,13 @@ Nice!
 - **Speech target:** Nice!
 - **Accepted speech:** Nice!
 
+**T05 · ruby**
+
+Where are you from?
+
+- **Speech target:** Where are you from?
+- **Accepted speech:** Where are you from?
+
 ## Activities
 
 **A01 · lexical_teach**
@@ -50,10 +57,9 @@ Nice!
 - **tokensEn:** from | Iran. | I'm
 - **answerTokensEn:** I'm | from | Iran.
 
-**A04 · fill_blank**
+**A04 · response_choice**
 
-- **sentenceEn:** I'm ___ Canada.
-- **optionsEn:** fine | from | name
+- **optionsEn:** I'm from Canada. | I'm from Iran. | Where are you from?
 
 **A05 · comprehension**
 
@@ -61,7 +67,12 @@ Nice!
 
 **A06 · response_choice**
 
-- **optionsEn:** What's your name? | Where are you from? | How are you?
+- **optionsEn:** I'm from Iran. | I'm from Canada. | My name is Ruby.
+
+**A07 · speak**
+
+- **textEn:** Where are you from?
+- **acceptedAnswersEn:** Where are you from?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

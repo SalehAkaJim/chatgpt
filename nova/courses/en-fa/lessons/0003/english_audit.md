@@ -1,4 +1,4 @@
-<!-- sourceHash: fb41f774035427300f9b97d96a5adc44ba758569b701015c37f617138c82a296 -->
+<!-- sourceHash: 41267756512a3db83bef0e2101e5e70e70aa08e6b0ca472b22fa9e1f2b60bbe1 -->
 # English Audit — EN-A1-L-0003
 
 **Lesson:** A quick chat at the community center
@@ -49,6 +49,13 @@ See you!
 - **Speech target:** See you!
 - **Accepted speech:** See you!
 
+**T07 · nina**
+
+See you!
+
+- **Speech target:** See you!
+- **Accepted speech:** See you!
+
 ## Activities
 
 **A01 · dialogue**
@@ -63,10 +70,9 @@ See you!
 - **tokensEn:** thanks. | I'm | fine,
 - **answerTokensEn:** I'm | fine, | thanks.
 
-**A04 · fill_blank**
+**A04 · response_choice**
 
-- **sentenceEn:** I'm ___, thanks.
-- **optionsEn:** name | hello | fine
+- **optionsEn:** I'm fine, thanks. | My name is Nina. | Nice to meet you.
 
 **A05 · comprehension**
 
@@ -75,6 +81,11 @@ See you!
 **A06 · response_choice**
 
 - **optionsEn:** I'm fine, thanks. | See you! | What's your name?
+
+**A07 · speak**
+
+- **textEn:** See you!
+- **acceptedAnswersEn:** See you!
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

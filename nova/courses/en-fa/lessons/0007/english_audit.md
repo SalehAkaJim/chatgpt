@@ -1,4 +1,4 @@
-<!-- sourceHash: 504820d040e97bbe4fc82c609d105416701f88c4e01309ea75b37801616900a6 -->
+<!-- sourceHash: fa285633016c5e1935c3497d5fdfc6e47629f22f4746951d3c95869e267b7be2 -->
 # English Audit — EN-A1-L-0007
 
 **Lesson:** Ask for a pen
@@ -41,6 +41,13 @@ Thanks!
 
 Can I have a book, please?
 
+**T06 · owen**
+
+Can I have a book, please?
+
+- **Speech target:** Can I have a book, please?
+- **Accepted speech:** Can I have a book, please?
+
 ## Activities
 
 **A01 · lexical_teach**
@@ -62,6 +69,11 @@ Can I have a book, please?
 **A05 · response_choice**
 
 - **optionsEn:** Here you go. | Can I have a book, please? | See you!
+
+**A06 · speak**
+
+- **textEn:** Can I have a book, please?
+- **acceptedAnswersEn:** Can I have a book, please?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.
