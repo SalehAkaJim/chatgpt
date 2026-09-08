@@ -1,5 +1,5 @@
-course_key	lesson_id	lesson_key	sort_order	title	title_translation	description	cefr_level	primary_outcome_key	estimated_duration_sec	status
-en-fa	1	EN-A1-L-0001	1	Hello! What's your name?	سلام! اسمت چیه؟	اولین مکالمه کوتاه: سلام کردن، معرفی خود و پرسیدن اسم.	A1	A1-INTERACTION-GREET-NAME	420	validated
+course_key	level_id	level_key	level_order	level_title	level_title_translation	level_standard_code	lesson_id	lesson_key	sort_order	title	title_translation	description	primary_outcome_key	estimated_duration_sec	status
+en-fa	1	A1	1	A1	A1	CEFR-A1	1	EN-A1-L-0001	1	Hello! What's your name?	سلام! اسمت چیه؟	اولین مکالمه کوتاه: سلام کردن، معرفی خود و پرسیدن اسم.	A1-INTERACTION-GREET-NAME	420	validated
 id	activity_key	sort_order	activity_type	instruction	prompt	config	metadata
 1	A01	1	dialogue	حرف مایا را بخوان و گوش کن، بعد جواب آماده را با صدای بلند بازخوانی کن.	NULL	{"mode": "guided_exchange", "exchanges": [{"exchangeKey": "E01", "promptTurnKey": "T01", "responseTurnKey": "T02", "allowPromptReplay": true, "responseEvaluation": "practice_only", "allowResponseModelAudio": true}, {"exchangeKey": "E02", "promptTurnKey": "T03", "responseTurnKey": "T04", "allowPromptReplay": true, "responseEvaluation": "practice_only", "allowResponseModelAudio": true}], "showPromptText": true, "showResponseText": true, "showPromptTranslation": true, "showResponseTranslation": true}	{}
 2	A02	2	lexical_teach	این دو کلمه اصلی را یاد بگیر.	NULL	{"lexicalKeys": ["EN-LEX-HELLO-01", "EN-LEX-NAME-01"]}	{}
