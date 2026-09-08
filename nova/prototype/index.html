@@ -1,27 +1,35 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" data-nova-root="../">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Nova — Lesson Pilot</title>
-<style>
-:root{--bg:#f6f7fb;--card:#fff;--ink:#171a22;--muted:#747b88;--line:#e4e7ef;--brand:#5963f6;--soft:#eef0ff;--good:#14885d;--goodsoft:#eaf8f2;--bad:#c94753;--badsoft:#fff0f1}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Tahoma,Arial,sans-serif;color:var(--ink)}button{font:inherit}.app{max-width:480px;min-height:100vh;margin:auto;position:relative;padding-bottom:108px}.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;padding:16px;background:rgba(246,247,251,.95);backdrop-filter:blur(10px)}.back{width:40px;height:40px;border:1px solid var(--line);border-radius:13px;background:#fff;cursor:pointer}.track{flex:1;height:9px;border-radius:99px;background:#e4e7ed;overflow:hidden}.bar{height:100%;background:var(--brand);transition:.2s}.count{font-size:12px;color:var(--muted);direction:ltr}.screen{display:none;padding:8px 18px 30px}.screen.active{display:block}h1{font-size:27px;margin:7px 0}h2{font-size:22px;margin:7px 0}.tag{font-size:12px;color:var(--brand);font-weight:900}.sub{font-size:14px;color:var(--muted);line-height:1.8;margin:4px 0 18px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 32px rgba(36,41,67,.06)}.speaker{display:flex;gap:11px;align-items:flex-start}.avatar{width:44px;height:44px;border-radius:14px;background:var(--soft);display:grid;place-items:center;color:var(--brand);font-weight:900;flex:none}.bubble{flex:1;background:#f7f8fa;border:1px solid #eceef3;border-radius:18px;padding:14px}.bubble.you{background:var(--soft);border-color:#dde1ff}.en{direction:ltr;text-align:left;font:700 18px/1.5 Arial,sans-serif}.fa{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.6}.play{border:0;border-radius:50%;background:var(--soft);color:var(--brand);width:44px;height:44px;cursor:pointer}.play.small{width:32px;height:32px}.response{margin-top:16px}.response-label{font-size:12px;color:var(--muted);font-weight:800;margin-bottom:8px}.response-row{display:flex;gap:10px;align-items:center;direction:ltr}.response-text{flex:1;font:800 24px/1.35 Arial,sans-serif;text-align:left;direction:ltr}.mic-wrap{text-align:center;margin-top:22px}.mic{width:88px;height:88px;border:0;border-radius:50%;background:var(--brand);color:#fff;font-size:34px;cursor:pointer;box-shadow:0 12px 28px rgba(89,99,246,.25)}.mic.listening{transform:scale(1.04);box-shadow:0 0 0 12px rgba(89,99,246,.11),0 12px 28px rgba(89,99,246,.25)}.state{min-height:24px;font-size:13px;color:var(--muted);margin-top:12px}.test-pass{border:0;background:transparent;color:var(--brand);font-weight:900;cursor:pointer;margin-top:7px}.words{display:grid;grid-template-columns:1fr 1fr;gap:12px}.word-card{min-height:145px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer}.word{font:800 25px Arial,sans-serif;direction:ltr;text-align:left}.meaning{color:#505765}.audio-task{text-align:center;margin-bottom:12px}.play.big{width:78px;height:78px;background:var(--brand);color:#fff;font-size:27px;box-shadow:0 10px 26px rgba(89,99,246,.24)}.audio-label{display:block;font-size:13px;color:var(--muted);margin-top:8px}.zone{min-height:86px;border:2px dashed #d7dbe6;border-radius:16px;background:#fafbfc;padding:10px;display:flex;gap:8px;flex-wrap:wrap;direction:ltr;margin:16px 0}.bank{display:flex;gap:9px;flex-wrap:wrap;direction:ltr}.token{border:1px solid #dce0e9;background:#fff;border-radius:12px;padding:10px 13px;font:700 16px Arial,sans-serif;cursor:pointer}.token.used{opacity:.25;pointer-events:none}.reset{border:0;background:transparent;color:var(--muted);text-decoration:underline;margin-top:14px;cursor:pointer}.sentence{font:800 25px/1.5 Arial,sans-serif;text-align:center;direction:ltr;margin:8px 0 20px}.options{display:grid;gap:10px}.option{border:1px solid #dce0e9;background:#fff;border-radius:15px;padding:14px;font-weight:800;cursor:pointer}.option.selected{border-color:var(--brand);background:var(--soft);color:#3e47d7}.question{font-size:18px;font-weight:900;line-height:1.8;margin:18px 0 12px}.center{text-align:center}.bottom{position:absolute;bottom:0;left:0;right:0;padding:18px 18px max(16px,env(safe-area-inset-bottom));background:linear-gradient(transparent,#f6f7fb 32%)}.next{width:100%;border:0;border-radius:17px;background:var(--brand);color:white;padding:15px;font-weight:900;font-size:16px;cursor:pointer}.next:disabled{background:#c8cbd4;cursor:not-allowed}.feedback{position:absolute;left:0;right:0;bottom:0;z-index:20;padding:18px;background:#fff;border-radius:24px 24px 0 0;box-shadow:0 -12px 34px rgba(30,35,55,.14);transform:translateY(110%);transition:.22s}.feedback.show{transform:none}.feedback.good{background:var(--goodsoft)}.feedback.bad{background:var(--badsoft)}.feedback strong{display:block;font-size:18px;margin-bottom:5px}.feedback.good strong{color:var(--good)}.feedback.bad strong{color:var(--bad)}.feedback span{font-size:13px;color:#5f6672;line-height:1.7}.feedback button{width:100%;border:0;border-radius:13px;background:var(--ink);color:white;padding:12px;margin-top:12px;font-weight:800;cursor:pointer}.done{text-align:center;padding:34px 22px}.tick{width:76px;height:76px;border-radius:50%;background:var(--goodsoft);color:var(--good);display:grid;place-items:center;font-size:36px;margin:0 auto 14px}
-@media(min-width:700px){body{padding:28px}.app{min-height:820px;border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:0 25px 60px rgba(30,35,60,.1)}}
-.lesson-select{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);margin-bottom:12px}.screen{display:block}.status-error{color:var(--bad)}.transcript{margin-top:14px;text-align:right}.explanation{background:var(--soft);padding:12px;border-radius:12px;margin:12px 0;line-height:1.9}.en-button{direction:ltr;font-family:Arial,sans-serif}.app{overflow:hidden}.top{flex-wrap:wrap}.top .lesson-select{flex-basis:100%}.bottom,.feedback{position:fixed;max-width:480px;margin:auto}.feedback{transform:translateY(120%)}
-</style>
+<meta name="description" content="سه درس انگلیسی Nova با مکالمه، شنیدن و تمرین‌های تعاملی.">
+<meta name="theme-color" content="#5963f6">
+<title>Nova — تمرین انگلیسی</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="app">
-  <div class="top">
+  <header class="brandbar"><button id="homeBtn" class="brand" aria-label="خانهٔ Nova">nova<span>•</span></button><span class="preview-label">پیش‌نمایش درس‌ها</span></header>
+  <section id="homeScreen" class="home" hidden>
+    <p class="eyebrow">دارم یاد می‌گیرم</p>
+    <h1 id="languageTitle">انگلیسی</h1>
+    <div class="session-progress"><div class="progress-heading"><span>پیشرفت این جلسه</span><strong id="homeCount">۰ از ۳ درس</strong></div><div class="track"><div id="homeProgress" class="bar"></div></div></div>
+    <article class="next-lesson"><span class="eyebrow" id="nextLessonLabel">درس بعدی</span><h2 id="nextLessonTitle"></h2><p id="nextLessonSummary" class="sub"></p><button class="next" id="startBtn">شروع درس</button></article>
+    <div class="section-heading"><h2>درس‌ها</h2><span id="lessonTotal"></span></div>
+    <div id="lessonList" class="lesson-list"></div>
+    <label class="review-mode"><input type="checkbox" id="reviewMode"><span>مرور بدون میکروفن</span></label>
+    <p class="small-note">در حالت مرور می‌تونی از تمرین گفتاری عبور کنی. پیشرفت فقط تا وقتی این صفحه بازه نگه داشته می‌شه.</p>
+  </section>
+  <div class="top" id="lessonHeader" hidden>
     <select class="lesson-select" id="lessonSelect" aria-label="انتخاب درس"></select>
-    <button class="back" id="backBtn" aria-label="قبلی">‹</button>
-    <div class="track"><div class="bar" id="progressBar"></div></div>
+    <button class="back" id="backBtn" aria-label="مرحلهٔ قبلی">‹</button>
+    <div class="track" role="progressbar" aria-label="پیشرفت درس" aria-valuemin="0" aria-valuemax="100" id="lessonProgress"><div class="bar" id="progressBar"></div></div>
     <div class="count" id="stepCount"></div>
   </div>
-  <main id="screens" class="screen" aria-live="polite"><p>در حال دریافت درس...</p></main>
-  <div class="bottom" id="bottomBar"><button class="next" id="nextBtn" disabled>ادامه</button></div>
-  <div class="feedback" id="feedbackPanel"><strong id="feedbackTitle"></strong><span id="feedbackText"></span><button id="feedbackContinue">ادامه</button></div>
+  <main id="screens" class="screen" aria-live="polite"><p class="sub">در حال دریافت درس‌ها...</p></main>
+  <div class="bottom" id="bottomBar" hidden><button class="next" id="nextBtn" disabled>ادامه</button></div>
+  <div class="feedback" id="feedbackPanel" role="alertdialog" aria-modal="true" aria-labelledby="feedbackTitle" aria-describedby="feedbackText" hidden><strong id="feedbackTitle"></strong><span id="feedbackText"></span><button id="feedbackContinue">ادامه</button></div>
 </div>
 <script src="app.js" defer></script>
 </body>

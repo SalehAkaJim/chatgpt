@@ -3,20 +3,21 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {webcrypto, createHash} = require('node:crypto');
 const {JSDOM, VirtualConsole} = require('jsdom');
-const root = path.resolve(__dirname, '../../../..');
+const root = process.env.NOVA_CONTENT_ROOT || (fs.existsSync(path.resolve(__dirname, '../dist/nova/courses')) ? path.resolve(__dirname, '../dist') : path.resolve(__dirname, '../../../..'));
+const prototype = process.env.NOVA_PROTOTYPE_DIR || (fs.existsSync(path.join(root, 'index.html')) ? root : path.join(root, 'nova/prototype'));
 const course = JSON.parse(fs.readFileSync(path.join(root, 'nova/courses/en-fa/course.source.json')));
 const sources = [1, 2, 3].map(n => JSON.parse(fs.readFileSync(path.join(root, `nova/courses/en-fa/lessons/${String(n).padStart(4, '0')}/lesson.source.json`))));
-const html = fs.readFileSync(path.join(root, 'nova/prototype/index.html'), 'utf8');
-const code = fs.readFileSync(path.join(root, 'nova/prototype/app.js'), 'utf8');
+const html = fs.readFileSync(path.join(prototype, 'index.html'), 'utf8');
+const code = fs.readFileSync(path.join(prototype, 'app.js'), 'utf8');
 const tick = () => new Promise(resolve => setImmediate(resolve));
 async function settle() { for (let i=0;i<8;i++) await tick(); }
-async function page(number, stale=false, mutate=null) {
+async function page(number, stale=false, mutate=null, review=false) {
   const lessons = structuredClone(sources);
   if (mutate) mutate(lessons[number - 1]);
   const errors = [];
   const virtualConsole = new VirtualConsole();
   virtualConsole.on('jsdomError', error => errors.push(error.message));
-  const dom = new JSDOM(html, {url:`https://nova.test/nova/prototype/index.html?course=en-fa&lesson=000${number}`, runScripts:'outside-only', virtualConsole});
+  const dom = new JSDOM(html, {url:`https://nova.test/nova/prototype/index.html${number ? `?course=en-fa&lesson=000${number}${review ? '&test=1' : ''}` : ''}`, runScripts:'outside-only', virtualConsole});
   const w = dom.window;
   Object.defineProperty(w, 'crypto', {value:webcrypto}); w.TextEncoder = TextEncoder;
   class Audio extends w.EventTarget {
@@ -51,22 +52,22 @@ async function page(number, stale=false, mutate=null) {
     return {ok:true,json:async()=>structuredClone(data),text:async()=>JSON.stringify(data)};
   };
   w.eval(code);
-  for(let i=0;i<1000 && !w.document.querySelector('.bubble.you, .status-error');i++)await settle();
+  for(let i=0;i<1000 && !(number ? w.document.querySelector('.bubble.you, .status-error') : w.document.querySelector('.lesson-link, .status-error'));i++)await settle();
   return {dom,w,lessons,errors};
 }
-async function complete(number, mutate=null) {
-  const {dom,w,lessons,errors}=await page(number,false,mutate); const d=w.document;
+async function complete(number, mutate=null, review=false) {
+  const {dom,w,lessons,errors}=await page(number,false,mutate,review); const d=w.document;
   const lesson=lessons[number-1];
   assert.equal(d.querySelectorAll('#lessonSelect option').length,3);
-  assert.equal(d.querySelector('.test-pass'),null,'Normal flow must not contain a test bypass');
+  assert.equal(Boolean(d.querySelector('.test-pass')),review,'Only explicit review mode exposes a speech skip');
   let didWrongChoice=false,didWrongOrder=false;
   for(let iteration=0;iteration<45;iteration++) {
     await settle();
-    if(d.querySelector('h1')?.textContent==='درس تموم شد')break;
+    if(d.querySelector('#screens h1')?.textContent===(review ? 'مرور درس تموم شد' : 'درس تموم شد'))break;
     if(d.getElementById('feedbackPanel').classList.contains('show')) {d.getElementById('feedbackContinue').click();continue;}
     const activity=lesson.activities.find(a=>a.activityKey===d.getElementById('screens').dataset.activityKey);
     assert.ok(activity,'A canonical activity should be rendered');
-    if(activity.type==='dialogue') {d.querySelector('.mic').click();continue;}
+    if(activity.type==='dialogue') {d.querySelector(review ? '.test-pass' : '.mic').click();continue;}
     if(activity.type==='lexical_teach') {d.querySelector('#screens .play')?.click();d.getElementById('nextBtn').click();continue;}
     if(activity.type==='sentence_order') {
       const tokens=didWrongOrder?activity.config.answerTokensEn:[...activity.config.answerTokensEn].reverse();
@@ -82,22 +83,42 @@ async function complete(number, mutate=null) {
     options[index].click();d.getElementById('nextBtn').click();
     if(!didWrongChoice) {assert.ok(d.getElementById('feedbackPanel').classList.contains('bad'));d.getElementById('feedbackContinue').click();didWrongChoice=true;}
   }
-  assert.equal(d.querySelector('h1')?.textContent,'درس تموم شد');
+  assert.equal(d.querySelector('#screens h1')?.textContent,review ? 'مرور درس تموم شد' : 'درس تموم شد');
+  d.getElementById('homeBtn').click();
+  assert.equal(d.getElementById('homeScreen').hidden,false);
+  assert.equal(d.getElementById('homeCount').textContent,'۱ از ۳ درس');
+  assert.ok(d.querySelector('.lesson-link.completed .lesson-state').textContent.includes(review ? 'مرور شد' : 'تمرین شد'));
   assert.ok(d.getElementById('screens').textContent.includes(lesson.outcomeFa));
   assert.deepEqual(errors,[]);
   // Changing the selector reloads another canonical Lesson without retained answers.
   const select=d.getElementById('lessonSelect');select.value=String(number===3?0:2);select.dispatchEvent(new w.Event('change'));await settle();
   for(let i=0;i<30 && !d.querySelector('.bubble.you');i++)await settle();
   assert.ok(d.querySelector('.bubble.you'),d.getElementById('screens').textContent);
-  assert.equal(d.querySelector('h1'),null);
+  assert.equal(d.querySelector('#screens h1'),null);
   dom.window.close();
 }
 (async()=>{
   for(const number of [1,2,3])await complete(number);
+  await complete(1,null,true);
+  const home=await page(null);
+  assert.equal(home.w.document.getElementById('homeScreen').hidden,false);
+  assert.equal(home.w.document.querySelectorAll('.lesson-link').length,3);
+  assert.equal(home.w.document.getElementById('homeCount').textContent,'۰ از ۳ درس');
+  home.w.document.getElementById('startBtn').click();
+  for(let i=0;i<100 && !home.w.document.querySelector('.bubble.you');i++)await settle();
+  home.w.document.querySelector('.mic').click();await settle();
+  home.w.document.getElementById('feedbackContinue').click();
+  const response=home.w.document.querySelector('.bubble.you .en').textContent;
+  home.w.document.getElementById('homeBtn').click();
+  assert.equal(home.w.document.getElementById('startBtn').textContent,'ادامهٔ درس');
+  home.w.document.getElementById('startBtn').click();
+  for(let i=0;i<100 && !home.w.document.querySelector('.bubble.you');i++)await settle();
+  assert.equal(home.w.document.querySelector('.bubble.you .en').textContent,response,'Resume must retain the exchange, not restart the dialogue');
+  home.dom.window.close();
   await complete(1, lesson=>{lesson.titleFa='درس تغییر داده شده';const a=lesson.activities.find(a=>a.type==='fill_blank');a.config.optionsEn.reverse();a.config.answerIndex=a.config.optionsEn.length-1-a.config.answerIndex;});
   const stale=await page(1,true);
   assert.ok(stale.w.document.querySelector('.status-error').textContent.includes('صداهای این نسخه'));
   assert.equal(stale.w.document.querySelector('.mic'),null);
   stale.dom.window.close();
-  console.log('PASS: 3 complete Lessons, incorrect-answer recovery, changed canonical answers, Lesson selection, stale-manifest rejection. Speech/audio are mocked DOM tests.');
+  console.log('PASS: home, session progress, exact exchange resume, explicit review mode, 3 complete Lessons, incorrect-answer recovery, changed canonical answers, Lesson selection, stale-manifest rejection. Speech/audio are mocked DOM tests.');
 })().catch(error=>{console.error(error);process.exitCode=1;});
