@@ -1,7 +1,7 @@
 {
-  "version": "2.1.0",
+  "version": "2.2.0",
   "lessonKey": "EN-A1-L-0001",
-  "sourceHash": "cdafdfc129b528b171d879f4a6cea1e503483cc6ade4a11df5c2fad2f1589ccb",
+  "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262",
   "provider": "ElevenLabs",
   "modelId": "eleven_multilingual_v2",
   "items": [
@@ -10,13 +10,13 @@
       "audioClass": "lexical_item",
       "sourceText": "hello",
       "path": "nova/audio/lexical/en-fa/43cd0dd00a9bea0c54572e2140190981a5bfaddc71d5cb58e16ee2a1334a3d23.mp3",
+      "assetKey": "3b7f5b60ef6a83feebae7b78d2ce3423e7c063c9fe2773c4944ffaf30fe10b9e",
       "voiceKey": "Lori - Happy, Sweet and Compassionate",
       "voiceId": "TbMNBJ27fH2U0VgpSNko",
-      "sourceHash": "cdafdfc129b528b171d879f4a6cea1e503483cc6ade4a11df5c2fad2f1589ccb",
+      "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262",
       "fileSha256": "897b7c5a2964a7f9b0648d3b4b8e5bd47b01d8a4a0951a60479291f4e6601e26",
       "durationMs": 966,
       "decoded": true,
-      "reused": true,
       "status": "PASS"
     },
     {
@@ -24,13 +24,13 @@
       "audioClass": "lexical_item",
       "sourceText": "name",
       "path": "nova/audio/lexical/en-fa/59e6f2bcb4530dddb372d54401b66a7bf735760a788f310a848829fdeae4e303.mp3",
+      "assetKey": "1a8b6afbaf13a787037d2cb32382c311bea0662319be58f8bb8e0f83d4d52195",
       "voiceKey": "Lori - Happy, Sweet and Compassionate",
       "voiceId": "TbMNBJ27fH2U0VgpSNko",
-      "sourceHash": "cdafdfc129b528b171d879f4a6cea1e503483cc6ade4a11df5c2fad2f1589ccb",
+      "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262",
       "fileSha256": "1f3a6c244f55380d3a80cf7d8317c3bf99dcd8a6fc7d95f23943da8929341d8f",
       "durationMs": 862,
       "decoded": true,
-      "reused": true,
       "status": "PASS"
     },
     {
@@ -40,25 +40,23 @@
       "path": "nova/audio/turns/en-fa/EN-A1-L-0001/T01.mp3",
       "voiceKey": "Vexa - Friendly Customer Care Agent",
       "voiceId": "W1d4m7LAGL3h893M1atp",
-      "sourceHash": "cdafdfc129b528b171d879f4a6cea1e503483cc6ade4a11df5c2fad2f1589ccb",
+      "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262",
       "fileSha256": "75fdca40e40f934c18f7863d2e79ad2e40f5c164d0b516555ea3b9d1857c8084",
       "durationMs": 1515,
       "decoded": true,
-      "reused": true,
       "status": "PASS"
     },
     {
       "sourceKey": "T02",
       "audioClass": "turn",
-      "sourceText": "Hello! I'm Alex.",
+      "sourceText": "Hello!",
       "path": "nova/audio/turns/en-fa/EN-A1-L-0001/T02.mp3",
       "voiceKey": "Brent",
       "voiceId": "3RbK5MAeB6NkutT3d6qF",
-      "sourceHash": "cdafdfc129b528b171d879f4a6cea1e503483cc6ade4a11df5c2fad2f1589ccb",
-      "fileSha256": "e06f7e72ff80a874a920537da9ea3035f578c6d8f6b0161168d9b5456c47c3c3",
-      "durationMs": 1280,
+      "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262",
+      "fileSha256": "8950c37d4d7a65bcc7f7694266a7b5e87bbed1eef751a5342ceaa4e2e5a808a6",
+      "durationMs": 835,
       "decoded": true,
-      "reused": true,
       "status": "PASS"
     },
     {
@@ -68,11 +66,10 @@
       "path": "nova/audio/turns/en-fa/EN-A1-L-0001/T03.mp3",
       "voiceKey": "Vexa - Friendly Customer Care Agent",
       "voiceId": "W1d4m7LAGL3h893M1atp",
-      "sourceHash": "cdafdfc129b528b171d879f4a6cea1e503483cc6ade4a11df5c2fad2f1589ccb",
+      "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262",
       "fileSha256": "839145439825a27af0cc50797ab93d97420c8d9a40e6683a410168715f1d11ae",
       "durationMs": 1097,
       "decoded": true,
-      "reused": true,
       "status": "PASS"
     },
     {
@@ -82,11 +79,10 @@
       "path": "nova/audio/turns/en-fa/EN-A1-L-0001/T04.mp3",
       "voiceKey": "Brent",
       "voiceId": "3RbK5MAeB6NkutT3d6qF",
-      "sourceHash": "cdafdfc129b528b171d879f4a6cea1e503483cc6ade4a11df5c2fad2f1589ccb",
+      "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262",
       "fileSha256": "6aa6d786268de2ef55fc2120a3419825c5fa44eb08c120cf6c5ed8b3ef64fc9f",
       "durationMs": 966,
       "decoded": true,
-      "reused": true,
       "status": "PASS"
     }
   ],
