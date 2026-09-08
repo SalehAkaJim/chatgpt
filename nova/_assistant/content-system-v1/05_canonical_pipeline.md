@@ -28,6 +28,7 @@ Curriculum and QA detail may be richer than the runtime database. Generated file
    - learner scenario;
    - dialogue/Turns when useful;
    - Activities;
+   - stable `turnKey`/`activityKey` identities: preserve keys on edits/reordering, never renumber or reuse them for a different item;
    - English text;
    - Persian support;
    - lexical items and their learning roles;
@@ -71,6 +72,7 @@ Curriculum and QA detail may be richer than the runtime database. Generated file
    - compile audio paths and durations from the validated manifest;
    - compilation without an audio manifest emits a draft with null audio fields;
    - SQL records both Lesson and Course source hashes;
+   - update existing Turns/Activities in place by canonical key; stage child order slots before upserts so reordering preserves IDs;
    - review.pendingDecisions stays outside runtime rows.
 
 8. **Database validation**
@@ -78,6 +80,7 @@ Curriculum and QA detail may be richer than the runtime database. Generated file
    - import every generated Lesson and retrieve its actual parent/content/audio fields;
    - derive row expectations from canonical data, not a fixed Pilot count;
    - test repeated imports and Level deletion while preserving sibling Levels.
+   - verify child IDs and external test references survive edits, reordering and insertion; remove only absent keys from the imported Lesson.
 
 9. **Prototype and audit**
    - the prototype reads the selected canonical Lesson, Course and audio manifest;

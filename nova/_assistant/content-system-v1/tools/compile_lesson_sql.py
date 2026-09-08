@@ -23,6 +23,22 @@ def q(value):
     return "'" + value + "'"
 
 
+def prepare_child_import(table: str, key_column: str, keys: list[str]) -> list[str]:
+    """Keep matching identities and free final order slots before key-based upserts."""
+    keep = ' AND ' + key_column + ' NOT IN (' + ','.join(q(key) for key in keys) + ')' if keys else ''
+    return [
+        f'-- Keep existing {table} IDs; remove only keys absent from this Lesson source.',
+        f'DELETE FROM {table} WHERE lesson_id=@lesson_id{keep};',
+        # Both (lesson_id, key) and (lesson_id, sort_order) are unique. Moving all
+        # retained rows above the incoming range ensures an upsert can match only
+        # the canonical key, never another row that used to occupy its position.
+        # Descending updates also avoid transient collisions in the staging range.
+        f'SET @child_order_offset=(SELECT GREATEST(COALESCE(MAX(sort_order),0),{len(keys)}) FROM {table} WHERE lesson_id=@lesson_id);',
+        f'UPDATE {table} SET sort_order=sort_order+@child_order_offset WHERE lesson_id=@lesson_id ORDER BY sort_order DESC;',
+        ''
+    ]
+
+
 def compile_sql(course: dict, lesson: dict, source_hash: str, audio_manifest: dict | None = None, course_hash: str | None = None) -> str:
     canonical = validate(lesson, course)
     if canonical['status'] != 'PASS':
@@ -116,11 +132,11 @@ def compile_sql(course: dict, lesson: dict, source_hash: str, audio_manifest: di
         ]) + ')',
         'ON DUPLICATE KEY UPDATE level_id=VALUES(level_id),sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),primary_outcome_key=VALUES(primary_outcome_key),estimated_duration_sec=VALUES(estimated_duration_sec),source_hash=VALUES(source_hash),status=VALUES(status),metadata=VALUES(metadata);',
         f"SET @lesson_id=(SELECT id FROM lessons WHERE level_id=@level_id AND lesson_key={q(lesson['lessonKey'])} LIMIT 1);",
-        'DELETE FROM activities WHERE lesson_id=@lesson_id;',
-        'DELETE FROM lesson_turns WHERE lesson_id=@lesson_id;',
         'DELETE FROM lesson_lexical_items WHERE lesson_id=@lesson_id;',
         ''
     ]
+    lines += prepare_child_import('activities', 'activity_key', [a['activityKey'] for a in lesson['activities']])
+    lines += prepare_child_import('lesson_turns', 'turn_key', [t['turnKey'] for t in lesson.get('turns', [])])
 
     for idx, item in enumerate(lesson.get('lexicalItems', []), 1):
         record = audio_record('lexical_item', item['lexicalKey'])
@@ -151,7 +167,8 @@ def compile_sql(course: dict, lesson: dict, source_hash: str, audio_manifest: di
             'VALUES (' + ','.join([
                 '@lesson_id',q(turn['turnKey']),str(idx),q(turn['role']),character_expr,q(turn['textEn']),q(turn['translationFa']),
                 q(audio),q(record.get('durationMs')),q(turn.get('speechTargetEn')),q(turn.get('acceptedSpeechEn')), 'NULL', q(turn.get('metadata') or {})
-            ]) + ');'
+            ]) + ')',
+            'ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),role=VALUES(role),character_id=VALUES(character_id),text=VALUES(text),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),speech_target=VALUES(speech_target),accepted_speech=VALUES(accepted_speech),tokens=VALUES(tokens),metadata=VALUES(metadata);'
         ]
     lines.append('')
 
@@ -161,7 +178,8 @@ def compile_sql(course: dict, lesson: dict, source_hash: str, audio_manifest: di
             'VALUES (' + ','.join([
                 '@lesson_id',q(activity['activityKey']),str(idx),q(activity['type']),q(activity.get('instructionFa')),
                 q(activity.get('promptFa') or activity.get('promptEn')),q(activity.get('config') or {}),q(activity.get('metadata') or {})
-            ]) + ');'
+            ]) + ')',
+            'ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),activity_type=VALUES(activity_type),instruction=VALUES(instruction),prompt=VALUES(prompt),config=VALUES(config),metadata=VALUES(metadata);'
         ]
 
     lines += ['', 'COMMIT;', '']

@@ -42,3 +42,15 @@ Curriculum information such as can-do outcomes, prerequisites, review intent, te
 `activities.config` intentionally carries activity-specific payloads, so new activity types can be added without creating a new database table for each interaction.
 
 User progress, bookmarks and flashcards will be added as separate product tables after the content/runtime pilot proves this foundation.
+
+## Stable content identifiers
+
+Reimporting a Lesson preserves `lessons.id` and the IDs of existing `lesson_turns` and `activities`. Child rows are matched by `(lesson_id, turn_key)` and `(lesson_id, activity_key)`, then updated in place. Changing text, configuration or presentation order does not allocate a replacement ID.
+
+Canonical keys are identities, not positions: keep `lessonKey`, `turnKey` and `activityKey` unchanged when editing or reordering existing content. Use a new, previously unused key for a new item; never renumber existing keys to match array order. Array order alone determines child `sort_order`.
+
+The importer temporarily moves retained child rows above both the existing and incoming order ranges inside the transaction before assigning final positions. This prevents the unique order constraint from making an upsert match a different item. Newly added keys receive new IDs; keys absent from the incoming source are removed from that Lesson only. Deletion/archival policy for user-referenced content remains a separate future change.
+
+No schema reset or migration is needed: import the regenerated Lesson SQL into an existing compatible database. Preserving IDs applies within that database; a destructive reset or importing into another database does not promise the same numeric IDs. MySQL may leave gaps in auto-increment sequences during upserts.
+
+Disposable MySQL 9.0.1 checks cover identical imports, edits, order reversal, insertion into an occupied position, removal of test-only keys, sibling isolation, and existing foreign-key references. The resulting evidence is recorded in each Lesson's `runtime_validation.json` under `stableIdsPassed` and `stableIdChecks`.
