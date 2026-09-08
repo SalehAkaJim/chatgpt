@@ -9,7 +9,11 @@ from build_pilot import discover
 def check(root):
     directory=root/'nova/calibration/en-fa'
     index=json.loads((directory/'index.json').read_text())
-    canonical=discover(root)
+    # Freeze the calibration corpus; new runtime Lessons must not silently
+    # enter it or make the 25-sample benchmark block future authoring.
+    keys=index['canonicalLessonKeys']
+    by_key={r['lesson']['lessonKey']:r for r in discover(root)}
+    canonical=[by_key[key] for key in keys]
     seen={}; last={}; errors=[]; evidence=[]
     for position,record in enumerate(canonical,1):
         story=record['lesson']['curriculum']['story'];cast=set(story['participants'])

@@ -8,6 +8,7 @@ from unittest.mock import patch
 from build_pilot import build, discover
 from validate_content_quality import evaluate
 from validate_pedagogy_review import read_review
+from validate_calibration import check as check_calibration
 
 ROOT = Path(__file__).resolve().parents[4]
 SYSTEM = Path(__file__).resolve().parents[1]
@@ -67,6 +68,14 @@ class PedagogyTests(unittest.TestCase):
             self.assertEqual(report['status'], 'FAIL')
             self.assertFalse(report['measuresAuthoringTime'])
             audio.assert_not_called()
+
+    def test_new_runtime_lesson_does_not_change_calibration_corpus(self):
+        extra = copy.deepcopy(self.records[-1])
+        extra['lesson']['lessonKey'] = 'EN-A1-L-9999'
+        with patch('validate_calibration.discover', return_value=[*self.records,extra]):
+            report = check_calibration(ROOT)
+            self.assertEqual(report['status'], 'PASS')
+            self.assertEqual(report['canonicalLessons'], 13)
 
 
 if __name__ == '__main__':

@@ -27,6 +27,8 @@ def read_review(source, course_path, policy):
     average = sum(scores) / len(scores) if scores else 0
     if average < policy['manualReview']['minimumAverage'] or any(x < policy['manualReview']['minimumDimension'] for x in scores):
         errors.append('Semantic review is below the quality threshold.')
-    if not data.get('limitations') or data.get('learnerTested') is not False:
-        errors.append('This pilot requires explicit untested-learner limitations.')
+    if not data.get('limitations') or type(data.get('learnerTested')) is not bool:
+        errors.append('Review must state its limitations and whether learner testing occurred.')
+    if data.get('learnerTested') is True and not data.get('learnerEvidence'):
+        errors.append('A learner-tested claim requires explicit evidence.')
     return {**data, 'status': 'FAIL' if errors else 'PASS', 'average': round(average, 2), 'errors': errors}
