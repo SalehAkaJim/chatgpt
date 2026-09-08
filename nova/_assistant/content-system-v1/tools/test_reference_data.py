@@ -22,7 +22,7 @@ class ReferenceDataTests(unittest.TestCase):
         self.assertEqual(r["level"], "B1")
         self.assertEqual(r["source"], "cefrj_exact_pos")
 
-    def test_cefr_openjam_fallback_is_retained_but_lower_confidence(self):
+    def test_cefr_openjam_fallback_is_retained_but_not_production_confident(self):
         exact, lemma = build_cefr_indexes([])
         r = resolve_cefr("unlisted", "noun", "A2", exact, lemma)
         self.assertEqual(r["level"], "A2")
@@ -36,7 +36,8 @@ class ReferenceDataTests(unittest.TestCase):
             "cefrConflict": False,
         }
         score, flags = score_reference_record(record)
-        self.assertEqual(score, 95)
+        self.assertEqual(score, 85)
+        self.assertLess(score, 90)
         self.assertIn("cefr_frequency_fallback", flags)
 
     def test_persian_normalization_and_gate(self):
