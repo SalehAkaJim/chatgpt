@@ -1,6 +1,6 @@
 # 12 — Interleaved stories and variable played roles
 
-The owner clarified that **both sides of a conversation change between adjacent Lessons**, including the character played by the learner. A Course has no permanent learner persona. The previous fixed-Alex / consecutive-classroom-and-cafe interpretation is superseded. Apply this rule to the existing thirteen Lessons and all future story batches.
+The owner clarified that **both sides of a conversation change between adjacent Lessons**, including the character played by the learner. A Course has no permanent learner persona. The previous fixed-Alex / consecutive-classroom-and-cafe interpretation is superseded. Apply this rule to the existing twenty Lessons and all future story batches.
 
 ## Rotation rules
 
@@ -42,4 +42,4 @@ The sequence is checked in actual Course display order, so reordering content ca
 
 Plan alternating arcs and played roles → author canonical Lessons → review the full sequence and language progression → run gates → generate/reuse audio → import/retrieve on disposable MySQL 9.0.1 → test the prototype → collect learner feedback.
 
-The current authorized scope is the thirteen-Lesson evaluation, including correction of all roles and story placement. Pending owner decisions do not stop routine authoring/QA. Broad unattended generation and final educational approval remain separate from this testing release.
+The current owner-authorized bounded scope extends through Lesson 0020. Pending owner decisions do not stop routine authoring/QA. Broad unattended generation and final educational approval remain separate from this testing release.
