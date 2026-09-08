@@ -1,8 +1,9 @@
 {
   "contentSystemVersion": "1",
-  "runtimeModel": "course_lesson_activity",
+  "runtimeModel": "course_level_lesson_activity",
   "activeCourse": "en-fa",
   "activeLevel": "A1",
+  "minimumAutomatedQualityScore": 90,
   "bulkGenerationEnabled": false,
   "audioGenerationEnabled": true,
   "audioRequiredForPilotCompletion": true,
@@ -12,12 +13,18 @@
   "mysqlTargetVersion": "9.0.1",
   "mysqlValidationRequiredBeforeLesson1Completion": true,
   "canonicalValidatorReady": true,
+  "levelHierarchyReady": true,
+  "contentQualityValidatorReady": true,
   "englishAuditRendererReady": true,
   "lessonSqlCompilerReady": true,
   "audioGeneratorReady": true,
   "audioManifestValidatorReady": true,
   "lesson1TurnVoiceMapReady": true,
   "lesson1CanonicalSourceReady": true,
-  "lesson1MysqlValidated": false,
-  "lesson1AudioValidated": false
+  "lesson1LevelKey": "A1",
+  "lesson1AutomatedQualityScore": 100,
+  "lesson1PendingDecisionCount": 0,
+  "lesson1MysqlValidated": true,
+  "lesson1AudioValidated": true,
+  "lesson1FinalReviewComplete": false
 }
