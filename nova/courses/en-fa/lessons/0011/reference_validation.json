@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0011",
+  "levelKey": "A1",
+  "sortOrder": 11,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0011: legacy target word EN-LEX-NO-01 has no exact production reference match",
+    "EN-A1-L-0011: legacy target word EN-LEX-YES-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-NO-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "no",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-YES-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "yes",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "coffee",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-DF86C36C215439FDE741",
+        "EN-REF-8061B958A613A2511A99"
+      ],
+      "referenceTranslationsFa": [
+        "درخت قهوه",
+        "قهوه"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-WATER-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "water",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-93033FDD55B1A504F831",
+        "EN-REF-DD54F822E90CB981E36E"
+      ],
+      "referenceTranslationsFa": [
+        "آب",
+        "آب‌های سطحی"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C86BD7B12371D318284C",
+        "EN-REF-AA88F6860DE17814613F"
+      ],
+      "referenceTranslationsFa": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-PLEASE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C831E951A26056666929"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-C831E951A26056666929",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
+      "role": "review",
+      "itemType": "formula",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "status": "not_required",
+      "referenceKeys": []
+    }
+  ],
+  "sourceHash": "d9eb4517ec0adc1e08e5e8d2c48ba570560d5e64a38e1aace5f1183d91e968a9"
+}

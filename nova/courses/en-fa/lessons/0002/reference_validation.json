@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0002",
+  "levelKey": "A1",
+  "sortOrder": 2,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-HELLO-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-NAME-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-F7A6AD8E6587EDA3E40E",
+        "EN-REF-E4F6451340C7A9A05026"
+      ],
+      "referenceTranslationsFa": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-NICE-TO-MEET-YOU-01",
+      "role": "target",
+      "itemType": "formula",
+      "lemma": "nice to meet you",
+      "partOfSpeech": null,
+      "status": "nova_authored_multiword",
+      "referenceKeys": []
+    },
+    {
+      "lexicalKey": "EN-LEX-TOO-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "too",
+      "partOfSpeech": "adverb",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-234D92D643BA5834A127",
+        "EN-REF-3CC934352632C389E9E1"
+      ],
+      "referenceTranslationsFa": [
+        "بیش از حد",
+        "هم‌چنین، نیز"
+      ]
+    }
+  ],
+  "sourceHash": "5304e043d668dc193e0a54a6fdd528acfe5574fba3b784920cde109169c0e059"
+}

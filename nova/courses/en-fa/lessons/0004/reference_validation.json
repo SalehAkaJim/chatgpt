@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0004",
+  "levelKey": "A1",
+  "sortOrder": 4,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0004: legacy target word EN-LEX-SORRY-REPEAT-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-SORRY-REPEAT-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "sorry",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
+      "role": "review",
+      "itemType": "formula",
+      "lemma": "how are you",
+      "partOfSpeech": null,
+      "status": "not_required",
+      "referenceKeys": []
+    },
+    {
+      "lexicalKey": "EN-LEX-FINE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "fine",
+      "partOfSpeech": "adjective",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-7137372B44DB479296DD",
+        "EN-REF-0BEED048A4E41F3FFA9D"
+      ],
+      "referenceTranslationsFa": [
+        "خوب، رضایت‌بخش",
+        "دقیق، ریز"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    }
+  ],
+  "sourceHash": "2fa26b1af15ccf654b50b50891cda91652dac0c079520d6aaa7479f0def22275"
+}

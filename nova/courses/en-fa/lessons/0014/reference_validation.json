@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0014",
+  "levelKey": "A1",
+  "sortOrder": 14,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0014: legacy target word EN-LEX-ONE-01 has no exact production reference match",
+    "EN-A1-L-0014: legacy target word EN-LEX-TWO-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "room",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-D8B2B1429B2580871B77",
+        "EN-REF-920AB60876EB00716D0A"
+      ],
+      "referenceTranslationsFa": [
+        "اتاق",
+        "فضا"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-ONE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "one",
+      "partOfSpeech": "numeral",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-2D929CE4C80ED3AA4C38"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-2D929CE4C80ED3AA4C38",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-TWO-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "two",
+      "partOfSpeech": "numeral",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-9BF778266108C2D6AD3C"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-9BF778266108C2D6AD3C",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-OR-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "or",
+      "partOfSpeech": "conjunction",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-50ECEE439EA17F111DB9"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-50ECEE439EA17F111DB9",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-PLEASE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C831E951A26056666929"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-C831E951A26056666929",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    }
+  ],
+  "sourceHash": "ae5032e899df32abf48d0bef82b8ce0b617d54dc7bd7501c502aa03fe36f67da"
+}

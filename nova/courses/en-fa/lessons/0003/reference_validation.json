@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "lessonKey": "EN-A1-L-0003",
+  "levelKey": "A1",
+  "sortOrder": 3,
+  "enforceFromSortOrder": 21,
+  "enforced": false,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0003: legacy target word EN-LEX-THANKS-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-HELLO-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-NAME-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-F7A6AD8E6587EDA3E40E",
+        "EN-REF-E4F6451340C7A9A05026"
+      ],
+      "referenceTranslationsFa": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
+      "role": "target",
+      "itemType": "formula",
+      "lemma": "how are you",
+      "partOfSpeech": null,
+      "status": "nova_authored_multiword",
+      "referenceKeys": []
+    },
+    {
+      "lexicalKey": "EN-LEX-FINE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "fine",
+      "partOfSpeech": "adjective",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-7137372B44DB479296DD",
+        "EN-REF-0BEED048A4E41F3FFA9D"
+      ],
+      "referenceTranslationsFa": [
+        "خوب، رضایت‌بخش",
+        "دقیق، ریز"
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "status": "no_exact_production_match",
+      "referenceKeys": [],
+      "reviewOnlyCandidates": []
+    },
+    {
+      "lexicalKey": "EN-LEX-SEE-YOU-01",
+      "role": "target",
+      "itemType": "formula",
+      "lemma": "see you",
+      "partOfSpeech": null,
+      "status": "nova_authored_multiword",
+      "referenceKeys": []
+    },
+    {
+      "lexicalKey": "EN-LEX-GOOD-01",
+      "role": "support",
+      "itemType": "word",
+      "lemma": "good",
+      "partOfSpeech": "adjective",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-4431BF36CEE00F3BCAB5",
+        "EN-REF-403611B70C45C36B9FE0"
+      ],
+      "referenceTranslationsFa": [
+        "خوب، مطلوب",
+        "کافی، مناسب"
+      ]
+    }
+  ],
+  "sourceHash": "41267756512a3db83bef0e2101e5e70e70aa08e6b0ca472b22fa9e1f2b60bbe1"
+}
