@@ -49,7 +49,6 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
     with tempfile.TemporaryDirectory(prefix="nova-reference-") as td:
         cache = Path(source_cache) if source_cache else Path(td)
         cache.mkdir(parents=True, exist_ok=True)
-
         fetched = {}
         for source_name, source in lock["sources"].items():
             for logical_name, rel_path in source["files"].items():
@@ -63,7 +62,6 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
         translations = load_json(fetched[("openjam", "translationsFa")])
         categories = load_json(fetched[("openjam", "categories")])
         word_categories = load_json(fetched[("openjam", "wordCategories")])
-
         cefrj_text = fetched[("cefrj", "vocabulary")].read_text(encoding="utf-8-sig")
         octanove_text = fetched[("cefrj", "c1c2")].read_text(encoding="utf-8-sig")
         grammar_text = fetched[("cefrj", "grammar")].read_text(encoding="utf-8-sig")
@@ -71,10 +69,8 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
         cefrj_rows = parse_profile_csv(cefrj_text, source="cefrj")
         octanove_rows = parse_profile_csv(octanove_text, source="octanove")
         exact_index, lemma_index = build_cefr_indexes(cefrj_rows, octanove_rows)
-
         translation_by_sense = {
-            str(t.get("sense_id")): t
-            for t in translations
+            str(t.get("sense_id")): t for t in translations
             if t.get("language_code") == "fa" and t.get("sense_id")
         }
         category_by_id = {str(c["id"]): c for c in categories if c.get("id")}
@@ -85,7 +81,8 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
 
         by_level: dict[str, list[dict]] = {level: [] for level in LEVELS}
         unplaced: list[dict] = []
-        counts = {"words": len(words), "senses": 0, "productionEligible": 0, "reviewOnly": 0}
+        counts = {"words": len(words), "senses": 0, "records": 0, "profileOnly": 0, "curriculumEligible": 0, "productionEligible": 0, "reviewOnly": 0}
+        seen_lemma_pos: set[tuple[str, str | None]] = set()
 
         for word in words:
             lemma = normalize_lemma(word.get("english"))
@@ -95,16 +92,15 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 for cid in category_ids_by_word.get(word_id, [])
                 if cid in category_by_id and category_by_id[cid].get("slug")
             })
-
             for sense in word.get("senses") or []:
                 counts["senses"] += 1
+                counts["records"] += 1
                 sense_id = str(sense.get("id") or "")
                 pos = normalize_pos(sense.get("part_of_speech"))
                 tr = translation_by_sense.get(sense_id, {})
                 cefr = resolve_cefr(lemma, pos, word.get("level"), exact_index, lemma_index)
                 source_translation = (tr.get("meaning") or "").strip()
                 normalized_translation = normalize_persian(source_translation)
-
                 record = {
                     "referenceKey": stable_reference_key(lemma, pos, sense_id),
                     "lemma": lemma,
@@ -123,6 +119,8 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                     "cefrConflict": cefr["conflict"],
                     "openjamLevel": word.get("level"),
                     "topics": topic_slugs,
+                    "sourceType": "openjam_sense",
+                    "curriculumEligible": bool(cefr["level"] and cefr["source"] != "openjam_frequency_band"),
                     "qualityScore": None,
                     "productionEligible": False,
                     "flags": [],
@@ -134,28 +132,80 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                         "cefrJCommit": lock["sources"]["cefrj"]["commit"],
                     },
                 }
+                seen_lemma_pos.add((lemma, pos))
                 score, flags = score_reference_record(record)
                 record["qualityScore"] = score
                 record["flags"] = flags
                 record["productionEligible"] = score >= threshold and bool(record["translationFa"] and record["cefr"])
+                if record["curriculumEligible"]:
+                    counts["curriculumEligible"] += 1
                 counts["productionEligible" if record["productionEligible"] else "reviewOnly"] += 1
-
                 if record["cefr"] in by_level:
                     by_level[record["cefr"]].append(record)
                 else:
                     unplaced.append(record)
 
+        # CEFR-J also carries function words/grammatical vocabulary that WordNet-based
+        # Openjam intentionally omits. Preserve these as curriculum placement records.
+        for (lemma, pos), _evidence_rows in sorted(exact_index.items()):
+            if (lemma, pos) in seen_lemma_pos:
+                continue
+            resolved = resolve_cefr(lemma, pos, None, exact_index, lemma_index)
+            if not resolved["level"]:
+                continue
+            source_tag = resolved["source"] or "cefr_profile"
+            synthetic_id = f"profile:{source_tag}:{resolved['level']}"
+            record = {
+                "referenceKey": stable_reference_key(lemma, pos, synthetic_id),
+                "lemma": lemma,
+                "partOfSpeech": pos,
+                "senseId": None,
+                "senseOrder": None,
+                "definitionEn": None,
+                "exampleEn": None,
+                "translationFa": "",
+                "translationFaSource": None,
+                "exampleFa": None,
+                "frequencyRank": None,
+                "cefr": resolved["level"],
+                "cefrSource": source_tag,
+                "cefrEvidenceLevels": resolved["evidenceLevels"],
+                "cefrConflict": resolved["conflict"],
+                "openjamLevel": None,
+                "topics": [],
+                "sourceType": "cefr_profile_only",
+                "curriculumEligible": True,
+                "qualityScore": 0,
+                "productionEligible": False,
+                "flags": ["profile_only_no_dictionary_sense", "missing_persian_translation", "missing_english_definition"],
+                "provenance": {
+                    "openjamWordId": None,
+                    "openjamSenseId": None,
+                    "openjamTranslationId": None,
+                    "openjamCommit": lock["sources"]["openjam"]["commit"],
+                    "cefrJCommit": lock["sources"]["cefrj"]["commit"],
+                },
+            }
+            score, flags = score_reference_record(record)
+            record["qualityScore"] = score
+            record["flags"] = sorted(set(record["flags"] + flags))
+            counts["records"] += 1
+            counts["profileOnly"] += 1
+            counts["curriculumEligible"] += 1
+            counts["reviewOnly"] += 1
+            by_level[record["cefr"]].append(record)
+
         lexical_dir = root / "lexical"
         grammar_dir = root / "grammar"
         lexical_dir.mkdir(parents=True, exist_ok=True)
         grammar_dir.mkdir(parents=True, exist_ok=True)
-
         file_entries = []
         level_counts = {}
         for level in LEVELS:
             rows = sorted(
                 by_level[level],
                 key=lambda r: (
+                    not r.get("curriculumEligible", False),
                     not r["productionEligible"],
                     r["frequencyRank"] is None,
                     r["frequencyRank"] or 10**9,
@@ -168,6 +218,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
             dump_json(out, {"schemaVersion": 1, "courseCode": "en-fa", "level": level, "items": rows})
             level_counts[level] = {
                 "records": len(rows),
+                "curriculumEligible": sum(1 for r in rows if r.get("curriculumEligible")),
                 "productionEligible": sum(1 for r in rows if r["productionEligible"]),
             }
             file_entries.append({"path": str(out.relative_to(root)), "sha256": sha256_file(out), "records": len(rows)})
@@ -188,10 +239,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
             grammar_counts[level] = len(rows)
             file_entries.append({"path": str(out.relative_to(root)), "sha256": sha256_file(out), "records": len(rows)})
 
-        source_hashes = {}
-        for (source_name, logical_name), path in sorted(fetched.items()):
-            source_hashes[f"{source_name}.{logical_name}"] = sha256_file(path)
-
+        source_hashes = {f"{source_name}.{logical_name}": sha256_file(path) for (source_name, logical_name), path in sorted(fetched.items())}
         manifest = {
             "schemaVersion": 1,
             "courseCode": "en-fa",
