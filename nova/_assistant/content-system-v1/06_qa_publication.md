@@ -3,7 +3,7 @@
 QA must fail loudly when content is questionable. A candidate Lesson is not complete until all blocking gates refer to the same canonical Lesson source/hash.
 
 ## Gate A — curriculum
-PASS requires a clear instructional/communicative job, valid prerequisites, appropriate early-A1 load, useful target language and honest assessment boundaries.
+PASS requires a clear instructional/communicative job, valid parent Level, valid prerequisites, appropriate early-A1 load, useful target language and honest assessment boundaries.
 
 ## Gate B — English
 Review every learner-visible Turn, prompt, option, answer, example and lexical item. BLOCK grammar errors, unnatural wording, wrong register, ambiguous answers, unexplained advanced language, drill-like dialogue or unnatural accepted speech.
@@ -23,7 +23,9 @@ Every scored Activity needs one clear task, valid prerequisites, a natural unamb
 ## Gate G — database
 The deployment target is **MySQL Server 9.0.1**.
 
-PASS requires real execution of reset → runtime schema → generated Lesson SQL → representative runtime retrieval on a clean MySQL 9.0.1 database. Looking valid is not enough.
+PASS requires real execution of reset → runtime schema → generated Course/Level/Lesson SQL → representative runtime retrieval on a clean MySQL 9.0.1 database. Looking valid is not enough.
+
+The runtime hierarchy is `Course → Level → Lesson → Activity`. Level-wide fields must not be duplicated in Lesson rows.
 
 ## Gate H — audio — mandatory
 No Pilot Lesson is complete without generated and tested audio.
@@ -33,11 +35,14 @@ PASS requires exact source-hash match, correct voice routing, every required Tur
 ## Gate I — Content Quality v1
 `11_content_quality.md` defines the executable quality policy.
 
-Publication requires:
+Runtime import requires:
 - every deterministic Content Quality Hard Gate to pass;
-- automated quality score >= 80;
-- warnings to remain visible in `content_quality.json`, not silently suppressed;
-- human/model review dimensions to be completed before final publish approval.
+- automated quality score **>= 90**;
+- warnings to remain visible in `content_quality.json`, not silently suppressed.
+
+A score of 89 or lower stops SQL compilation/import until the canonical Lesson is revised.
+
+Human/model review dimensions remain required before final publish approval, but a product-owner decision recorded in `review.pendingDecisions` does not stop authoring or work on later Lessons. Use the recommended defensible default, record the open decision, and continue.
 
 The automated gate deliberately does not pretend to judge semantic naturalness or pedagogy from regexes. Those dimensions remain explicit review work.
 
@@ -45,4 +50,4 @@ The automated gate deliberately does not pretend to judge semantic naturalness o
 The first English Pilot additionally produces `english_audit.md` with learner-visible English in presentation order. Corrections are made in `lesson.source.json` and all derivatives regenerate.
 
 ## Failure behavior
-A failed Lesson does not advance `nextLesson`. Repair canonical source or the relevant generator/validator, regenerate affected outputs and rerun gates. Never patch a derivative and call the source fixed.
+A deterministic QA/import failure must be repaired before that Lesson is considered valid. Pending product-owner decisions are not deterministic failures and do not stop authoring of later Lessons. Never patch a derivative and call the source fixed.
