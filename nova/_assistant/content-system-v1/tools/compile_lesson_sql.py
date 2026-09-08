@@ -31,9 +31,18 @@ def turn_audio_path(course: str, lesson_key: str, turn_key: str) -> str:
 
 def compile_sql(course: dict, lesson: dict, source_hash: str) -> str:
     code = lesson['courseCode']
+    if code != course.get('courseCode'):
+        raise ValueError('Lesson courseCode does not match Course source')
+
+    levels = {x['levelKey']: x for x in course.get('levels', [])}
+    level_key = lesson['levelKey']
+    if level_key not in levels:
+        raise ValueError(f'Unknown levelKey for Course: {level_key}')
+
     lines = [
-        '-- Generated from canonical Lesson source. Do not edit by hand.',
+        '-- Generated from canonical Course/Level/Lesson source. Do not edit by hand.',
         f'-- lessonKey: {lesson["lessonKey"]}',
+        f'-- levelKey: {level_key}',
         f'-- sourceHash: {source_hash}',
         'SET NAMES utf8mb4;',
         'START TRANSACTION;',
@@ -46,6 +55,22 @@ def compile_sql(course: dict, lesson: dict, source_hash: str) -> str:
         ]) + ')',
         'ON DUPLICATE KEY UPDATE title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),status=VALUES(status),metadata=VALUES(metadata);',
         f"SET @course_id=(SELECT id FROM courses WHERE course_key={q(code)} LIMIT 1);",
+        ''
+    ]
+
+    for level in sorted(course.get('levels', []), key=lambda x: x['sortOrder']):
+        lines += [
+            'INSERT INTO levels (course_id,level_key,sort_order,title,title_translation,standard_code,description,status,metadata)',
+            'VALUES (' + ','.join([
+                '@course_id', q(level['levelKey']), str(level['sortOrder']), q(level['title']), q(level['titleFa']),
+                q(level.get('standardCode')), q(level.get('descriptionFa')), q(level.get('status','planned')), q(level.get('metadata') or {})
+            ]) + ')',
+            'ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),standard_code=VALUES(standard_code),description=VALUES(description),status=VALUES(status),metadata=VALUES(metadata);',
+            ''
+        ]
+
+    lines += [
+        f"SET @level_id=(SELECT id FROM levels WHERE course_id=@course_id AND level_key={q(level_key)} LIMIT 1);",
         ''
     ]
 
@@ -68,14 +93,14 @@ def compile_sql(course: dict, lesson: dict, source_hash: str) -> str:
         **(lesson.get('metadata') or {})
     }
     lines += [
-        'INSERT INTO lessons (course_id,lesson_key,sort_order,title,title_translation,description,cefr_level,primary_outcome_key,estimated_duration_sec,source_hash,status,metadata)',
+        'INSERT INTO lessons (level_id,lesson_key,sort_order,title,title_translation,description,primary_outcome_key,estimated_duration_sec,source_hash,status,metadata)',
         'VALUES (' + ','.join([
-            '@course_id',q(lesson['lessonKey']),str(lesson['sortOrder']),q(lesson['titleEn']),q(lesson['titleFa']),
-            q(lesson.get('descriptionFa')),q(lesson.get('cefrLevel')),q(lesson.get('primaryOutcomeKey')),
+            '@level_id',q(lesson['lessonKey']),str(lesson['sortOrder']),q(lesson['titleEn']),q(lesson['titleFa']),
+            q(lesson.get('descriptionFa')),q(lesson.get('primaryOutcomeKey')),
             str((lesson.get('metadata') or {}).get('estimatedDurationSec') or 420),q(source_hash),q('validated'),q(lesson_meta)
         ]) + ')',
-        'ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),cefr_level=VALUES(cefr_level),primary_outcome_key=VALUES(primary_outcome_key),estimated_duration_sec=VALUES(estimated_duration_sec),source_hash=VALUES(source_hash),status=VALUES(status),metadata=VALUES(metadata);',
-        f"SET @lesson_id=(SELECT id FROM lessons WHERE course_id=@course_id AND lesson_key={q(lesson['lessonKey'])} LIMIT 1);",
+        'ON DUPLICATE KEY UPDATE level_id=VALUES(level_id),sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),primary_outcome_key=VALUES(primary_outcome_key),estimated_duration_sec=VALUES(estimated_duration_sec),source_hash=VALUES(source_hash),status=VALUES(status),metadata=VALUES(metadata);',
+        f"SET @lesson_id=(SELECT id FROM lessons WHERE level_id=@level_id AND lesson_key={q(lesson['lessonKey'])} LIMIT 1);",
         'DELETE FROM activities WHERE lesson_id=@lesson_id;',
         'DELETE FROM lesson_turns WHERE lesson_id=@lesson_id;',
         'DELETE FROM lesson_lexical_items WHERE lesson_id=@lesson_id;',
