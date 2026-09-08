@@ -1,0 +1,788 @@
+{
+  "summary": {
+    "lessons": 20,
+    "uniqueCanonicalLexicalItems": 45,
+    "missingReferenceUnique": 19,
+    "referenceReviewUnique": 8,
+    "externalReferenceCoveragePercent": 57.78,
+    "translationMismatchesForReview": 25
+  },
+  "missingReference": [
+    {
+      "lessonKey": "EN-A1-L-0001",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": "greeting",
+      "translationFa": "سلام"
+    },
+    {
+      "lessonKey": "EN-A1-L-0002",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": "greeting",
+      "translationFa": "سلام"
+    },
+    {
+      "lessonKey": "EN-A1-L-0002",
+      "lemma": "nice to meet you",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "از آشنایی با تو خوشحالم"
+    },
+    {
+      "lessonKey": "EN-A1-L-0003",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": "greeting",
+      "translationFa": "سلام"
+    },
+    {
+      "lessonKey": "EN-A1-L-0003",
+      "lemma": "how are you",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "حالت چطوره؟"
+    },
+    {
+      "lessonKey": "EN-A1-L-0003",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0003",
+      "lemma": "see you",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "می بینمت؛ فعلا خداحافظ"
+    },
+    {
+      "lessonKey": "EN-A1-L-0004",
+      "lemma": "sorry",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ببخشید؟ برای درخواست تکرار"
+    },
+    {
+      "lessonKey": "EN-A1-L-0004",
+      "lemma": "how are you",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "حالت چطوره؟"
+    },
+    {
+      "lessonKey": "EN-A1-L-0004",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0005",
+      "lemma": "iran",
+      "partOfSpeech": "proper noun",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ایران"
+    },
+    {
+      "lessonKey": "EN-A1-L-0005",
+      "lemma": "canada",
+      "partOfSpeech": "proper noun",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "کانادا"
+    },
+    {
+      "lessonKey": "EN-A1-L-0007",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "بفرما؛ هنگام دادن چیزی"
+    },
+    {
+      "lessonKey": "EN-A1-L-0007",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": "greeting",
+      "translationFa": "سلام"
+    },
+    {
+      "lessonKey": "EN-A1-L-0007",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0008",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0008",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "بفرما؛ هنگام دادن چیزی"
+    },
+    {
+      "lessonKey": "EN-A1-L-0009",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "بفرما؛ هنگام دادن چیزی"
+    },
+    {
+      "lessonKey": "EN-A1-L-0009",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0009",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": "greeting",
+      "translationFa": "سلام"
+    },
+    {
+      "lessonKey": "EN-A1-L-0010",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0010",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "بفرما؛ هنگام دادن چیزی"
+    },
+    {
+      "lessonKey": "EN-A1-L-0011",
+      "lemma": "no",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "نه"
+    },
+    {
+      "lessonKey": "EN-A1-L-0011",
+      "lemma": "yes",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "بله"
+    },
+    {
+      "lessonKey": "EN-A1-L-0011",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0011",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "بفرما؛ هنگام دادن چیزی"
+    },
+    {
+      "lessonKey": "EN-A1-L-0012",
+      "lemma": "sorry",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ببخشید؛ برای عذرخواهی"
+    },
+    {
+      "lessonKey": "EN-A1-L-0012",
+      "lemma": "no",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "نه"
+    },
+    {
+      "lessonKey": "EN-A1-L-0012",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0013",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": "greeting",
+      "translationFa": "سلام"
+    },
+    {
+      "lessonKey": "EN-A1-L-0013",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "بفرما؛ هنگام دادن چیزی"
+    },
+    {
+      "lessonKey": "EN-A1-L-0013",
+      "lemma": "no",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "نه"
+    },
+    {
+      "lessonKey": "EN-A1-L-0013",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0014",
+      "lemma": "one",
+      "partOfSpeech": "numeral",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "یک"
+    },
+    {
+      "lessonKey": "EN-A1-L-0014",
+      "lemma": "two",
+      "partOfSpeech": "numeral",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "دو"
+    },
+    {
+      "lessonKey": "EN-A1-L-0014",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0015",
+      "lemma": "how much",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "چقدر؛ برای پرسیدن قیمت"
+    },
+    {
+      "lessonKey": "EN-A1-L-0015",
+      "lemma": "five",
+      "partOfSpeech": "numeral",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "پنج"
+    },
+    {
+      "lessonKey": "EN-A1-L-0015",
+      "lemma": "thanks",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "ممنون"
+    },
+    {
+      "lessonKey": "EN-A1-L-0016",
+      "lemma": "six",
+      "partOfSpeech": "numeral",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "شش"
+    },
+    {
+      "lessonKey": "EN-A1-L-0016",
+      "lemma": "yes",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "بله"
+    },
+    {
+      "lessonKey": "EN-A1-L-0017",
+      "lemma": "yes",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "بله"
+    },
+    {
+      "lessonKey": "EN-A1-L-0018",
+      "lemma": "have",
+      "partOfSpeech": "verb",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "داشتن"
+    },
+    {
+      "lessonKey": "EN-A1-L-0018",
+      "lemma": "yes",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "بله"
+    },
+    {
+      "lessonKey": "EN-A1-L-0018",
+      "lemma": "here you go",
+      "partOfSpeech": null,
+      "itemType": "formula",
+      "senseKey": null,
+      "translationFa": "بفرما؛ هنگام دادن چیزی"
+    },
+    {
+      "lessonKey": "EN-A1-L-0019",
+      "lemma": "sure",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "حتما؛ باشه"
+    },
+    {
+      "lessonKey": "EN-A1-L-0020",
+      "lemma": "seven",
+      "partOfSpeech": "numeral",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "هفت"
+    },
+    {
+      "lessonKey": "EN-A1-L-0020",
+      "lemma": "one",
+      "partOfSpeech": "numeral",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "یک"
+    },
+    {
+      "lessonKey": "EN-A1-L-0020",
+      "lemma": "two",
+      "partOfSpeech": "numeral",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "دو"
+    },
+    {
+      "lessonKey": "EN-A1-L-0020",
+      "lemma": "six",
+      "partOfSpeech": "numeral",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "شش"
+    },
+    {
+      "lessonKey": "EN-A1-L-0020",
+      "lemma": "yes",
+      "partOfSpeech": "interjection",
+      "itemType": "word",
+      "senseKey": null,
+      "translationFa": "بله"
+    }
+  ],
+  "referenceReview": [
+    {
+      "lessonKey": "EN-A1-L-0005",
+      "lemma": "from",
+      "partOfSpeech": "preposition",
+      "qualityScore": 35
+    },
+    {
+      "lessonKey": "EN-A1-L-0006",
+      "lemma": "this",
+      "partOfSpeech": "pronoun",
+      "qualityScore": 35
+    },
+    {
+      "lessonKey": "EN-A1-L-0006",
+      "lemma": "and",
+      "partOfSpeech": "conjunction",
+      "qualityScore": 35
+    },
+    {
+      "lessonKey": "EN-A1-L-0007",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0008",
+      "lemma": "where",
+      "partOfSpeech": "adverb",
+      "qualityScore": 35
+    },
+    {
+      "lessonKey": "EN-A1-L-0008",
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0009",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0010",
+      "lemma": "or",
+      "partOfSpeech": "conjunction",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0010",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0011",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0012",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0013",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0013",
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0014",
+      "lemma": "or",
+      "partOfSpeech": "conjunction",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0014",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0015",
+      "lemma": "please",
+      "partOfSpeech": "adverb",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0016",
+      "lemma": "at",
+      "partOfSpeech": "preposition",
+      "qualityScore": 35
+    },
+    {
+      "lessonKey": "EN-A1-L-0017",
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "qualityScore": 60
+    },
+    {
+      "lessonKey": "EN-A1-L-0020",
+      "lemma": "at",
+      "partOfSpeech": "preposition",
+      "qualityScore": 35
+    }
+  ],
+  "translationMismatchesForReview": [
+    {
+      "lessonKey": "EN-A1-L-0001",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "nova": "اسم",
+      "openjamCandidates": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0002",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "nova": "اسم",
+      "openjamCandidates": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0002",
+      "lemma": "too",
+      "partOfSpeech": "adverb",
+      "nova": "هم",
+      "openjamCandidates": [
+        "بیش از حد",
+        "هم‌چنین، نیز"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0003",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "nova": "اسم",
+      "openjamCandidates": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0003",
+      "lemma": "fine",
+      "partOfSpeech": "adjective",
+      "nova": "خوب",
+      "openjamCandidates": [
+        "خوب، رضایت‌بخش",
+        "دقیق، ریز"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0003",
+      "lemma": "good",
+      "partOfSpeech": "adjective",
+      "nova": "خوب",
+      "openjamCandidates": [
+        "خوب، مطلوب",
+        "کافی، مناسب"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0004",
+      "lemma": "fine",
+      "partOfSpeech": "adjective",
+      "nova": "خوب",
+      "openjamCandidates": [
+        "خوب، رضایت‌بخش",
+        "دقیق، ریز"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0005",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "nova": "اسم",
+      "openjamCandidates": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0005",
+      "lemma": "nice",
+      "partOfSpeech": "adjective",
+      "nova": "خوب؛ برای واکنش دوستانه",
+      "openjamCandidates": [
+        "باادب، شریف",
+        "دلپذیر، خوشایند"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0006",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "nova": "کتاب",
+      "openjamCandidates": [
+        "اثر نوشته‌شده‌ای که منتشر شده است",
+        "کتاب (دفتری با صفحات متصل)"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0006",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "nova": "اسم",
+      "openjamCandidates": [
+        "شهرت، آبرو",
+        "نام"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0007",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "nova": "کتاب",
+      "openjamCandidates": [
+        "اثر نوشته‌شده‌ای که منتشر شده است",
+        "کتاب (دفتری با صفحات متصل)"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0008",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "nova": "کتاب",
+      "openjamCandidates": [
+        "اثر نوشته‌شده‌ای که منتشر شده است",
+        "کتاب (دفتری با صفحات متصل)"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0009",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "nova": "چای",
+      "openjamCandidates": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0010",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "nova": "چای",
+      "openjamCandidates": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0011",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "nova": "چای",
+      "openjamCandidates": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0012",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "nova": "چای",
+      "openjamCandidates": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0012",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "nova": "کتاب",
+      "openjamCandidates": [
+        "اثر نوشته‌شده‌ای که منتشر شده است",
+        "کتاب (دفتری با صفحات متصل)"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0013",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "nova": "کتاب",
+      "openjamCandidates": [
+        "اثر نوشته‌شده‌ای که منتشر شده است",
+        "کتاب (دفتری با صفحات متصل)"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0015",
+      "lemma": "dollar",
+      "partOfSpeech": "noun",
+      "nova": "دلار",
+      "openjamCandidates": [
+        "اسکناس یک دلاری",
+        "واحد پولی پایه در بسیاری از کشورها؛ برابر با ۱۰۰ سنت"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0015",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "nova": "چای",
+      "openjamCandidates": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0016",
+      "lemma": "time",
+      "partOfSpeech": "noun",
+      "nova": "ساعت؛ زمان",
+      "openjamCandidates": [
+        "بار",
+        "وقت"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0018",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "nova": "کتاب",
+      "openjamCandidates": [
+        "اثر نوشته‌شده‌ای که منتشر شده است",
+        "کتاب (دفتری با صفحات متصل)"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0019",
+      "lemma": "help",
+      "partOfSpeech": "verb",
+      "nova": "کمک",
+      "openjamCandidates": [
+        "بهتر کردن",
+        "کمک کردن"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0020",
+      "lemma": "time",
+      "partOfSpeech": "noun",
+      "nova": "ساعت؛ زمان",
+      "openjamCandidates": [
+        "بار",
+        "وقت"
+      ]
+    }
+  ]
+}
