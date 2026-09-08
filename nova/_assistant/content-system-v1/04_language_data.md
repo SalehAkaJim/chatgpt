@@ -30,6 +30,21 @@ Translation is sense- and context-specific.
 - When literal structure is pedagogically useful, store it as separate teaching metadata rather than corrupting the natural translation.
 - Persian explanation and translation must remain distinguishable fields.
 
+### Persian orthography — hard gate
+
+All Persian learner-facing text must use Persian orthography only. This is a blocking publication rule, not a style preference.
+
+Hard reject:
+- standalone hamza and hamza-carrier forms such as `ء`, `ئ`, `ؤ`, `أ`, `إ`;
+- Arabic tanwin or vowel/reading marks such as `ً`, `ٌ`, `ٍ`, fatha, kasra, damma, shadda and sukun;
+- Arabic letter variants `ي` and `ك`; use Persian `ی` and `ک` instead;
+- Arabic-only forms such as `ة`, `ى`, `ٱ`, `ۀ` and tatweel;
+- Arabic presentation-form or Quranic annotation characters.
+
+When a borrowed word is normally written with one of the forbidden forms, rewrite it into the approved Persian spelling used by Nova rather than preserving the Arabic orthographic mark. Do not add pronunciation marks to Persian text.
+
+This rule applies to Course data, Lesson data, translations, instructions, answer choices, UI copy and prototypes. Automated validation must fail before publication if any forbidden character is present.
+
 ## Lexical model
 
 The core dictionary/audio object is a **lexical item**, not necessarily one whitespace-delimited token.
