@@ -1,3 +1,4 @@
+<!-- sourceHash: f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262 -->
 # English Audit — EN-A1-L-0001
 
 **Lesson:** Hello! What's your name?
@@ -16,10 +17,10 @@ Hello! I'm Maya.
 
 **T02 · learner**
 
-Hello! I'm Alex.
+Hello!
 
-- **Speech target:** Hello! I'm Alex.
-- **Accepted speech:** Hello! I'm Alex.
+- **Speech target:** Hello!
+- **Accepted speech:** Hello!
 
 **T03 · maya**
 

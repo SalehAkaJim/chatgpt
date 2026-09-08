@@ -1,16 +1,28 @@
 {
-  "status": "PASS",
-  "lessonKey": "EN-A1-L-0001",
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0002",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 100,
+  "automatedScore": 95,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "my name is alex",
+        "activityKeys": [
+          "A03",
+          "A06"
+        ]
+      }
+    }
+  ],
   "manualReview": {
     "status": "PENDING",
     "dimensions": {
@@ -29,11 +41,11 @@
     "minimumDimension": 3
   },
   "metrics": {
-    "targetLexicalItems": 2,
-    "targetConstructions": 2,
-    "activities": 5,
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262"
+  "sourceHash": "82b78bc377b0a9c357b9a4a1d51cfbd64b1fa8c46e1b086d5b9d0b69e07bb4e4"
 }

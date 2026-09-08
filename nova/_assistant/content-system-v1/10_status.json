@@ -9,7 +9,7 @@
   "audioRequiredForPilotCompletion": true,
   "pilotLessonTarget": 3,
   "publishedLessons": 0,
-  "nextLesson": 1,
+  "nextLesson": 4,
   "mysqlTargetVersion": "9.0.1",
   "mysqlValidationRequiredBeforeLesson1Completion": true,
   "canonicalValidatorReady": true,
@@ -26,5 +26,32 @@
   "lesson1PendingDecisionCount": 0,
   "lesson1MysqlValidated": true,
   "lesson1AudioValidated": true,
-  "lesson1FinalReviewComplete": false
+  "lesson1FinalReviewComplete": false,
+  "pilotLessons": [
+    {
+      "lessonKey": "EN-A1-L-0001",
+      "sourceHash": "f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262",
+      "technicalComplete": true,
+      "automatedQualityScore": 100,
+      "pendingDecisionCount": 0,
+      "finalReviewComplete": false
+    },
+    {
+      "lessonKey": "EN-A1-L-0002",
+      "sourceHash": "82b78bc377b0a9c357b9a4a1d51cfbd64b1fa8c46e1b086d5b9d0b69e07bb4e4",
+      "technicalComplete": true,
+      "automatedQualityScore": 95,
+      "pendingDecisionCount": 0,
+      "finalReviewComplete": false
+    },
+    {
+      "lessonKey": "EN-A1-L-0003",
+      "sourceHash": "2aafd351351c9684151258a119ca40ef2fdd41ea152331693fabf9bdf43f15d5",
+      "technicalComplete": true,
+      "automatedQualityScore": 100,
+      "pendingDecisionCount": 0,
+      "finalReviewComplete": false
+    }
+  ],
+  "technicallyCompleteLessons": 3
 }
