@@ -142,7 +142,7 @@ def score_reference_record(record: dict) -> tuple[int, list[str]]:
         flags.append("missing_cefr")
     source = record.get("cefrSource")
     if source == "openjam_frequency_band":
-        score -= 5
+        score -= 15
         flags.append("cefr_frequency_fallback")
     elif source and source.endswith("_lemma_consensus"):
         score -= 2
