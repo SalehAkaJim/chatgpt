@@ -30,10 +30,19 @@ def run(obj):
 def expect_pass(name,obj):
     code,report=run(obj)
     if code!=0: raise AssertionError(f"{name} should pass: {report}")
+    return report
 
 def expect_fail(name,obj,expected):
     code,report=run(obj); codes={x["code"] for x in report["errors"]}
     if code==0 or expected not in codes: raise AssertionError(f"{name} expected {expected}: {report}")
+
+def expect_warning(name,obj,expected):
+    code,report=run(obj); codes={x["code"] for x in report["warnings"]}
+    if code!=0 or expected not in codes: raise AssertionError(f"{name} expected warning {expected}: {report}")
+
+def expect_no_warning(name,obj,unexpected):
+    code,report=run(obj); codes={x["code"] for x in report["warnings"]}
+    if code!=0 or unexpected in codes: raise AssertionError(f"{name} should not have warning {unexpected}: {report}")
 
 def main():
     expect_pass("baseline",BASE)
@@ -42,6 +51,16 @@ def main():
     x=copy.deepcopy(BASE); x["lexicalItems"].append({"lexicalKey":"S1","displayForm":"thanks","role":"support"}); x["activities"].append({"activityKey":"A02","type":"fill_blank","instructionFa":"انتخاب کن.","config":{"sentenceEn":"___","optionsEn":["thanks","hello","name"],"answerIndex":0}}); expect_fail("support assessed",x,"CQ-H03")
     x=copy.deepcopy(BASE); x["activities"].append({"activityKey":"A02","type":"comprehension","instructionFa":"گوش کن.","promptFa":"جواب اسمش را انتخاب کن.","config":{"sourceTurnKeys":["T01"],"options":["اسمش را","حالش را"],"answerIndex":0}}); expect_fail("answer leakage",x,"CQ-H05")
     x=copy.deepcopy(BASE); x["activities"].append({"activityKey":"A02","type":"sentence_order","instructionFa":"مرتب کن.","config":{"audioSourceTurnKey":"T02","answerEn":"Different.","showAnswerTextBeforeAttempt":False,"allowAudioReplay":True}}); expect_fail("audio mismatch",x,"CQ-H07")
-    print(json.dumps({"status":"PASS","tests":5},ensure_ascii=False))
+
+    x=copy.deepcopy(BASE)
+    x["activities"][0]["config"]["exchanges"][0]["responseEvaluation"]="practice_only"
+    expect_warning("guided practice without assessment",x,"CQ-W04")
+
+    x=copy.deepcopy(BASE)
+    x["activities"][0]["config"]["exchanges"][0]["responseEvaluation"]="practice_only"
+    x["activities"].append({"activityKey":"A02","type":"sentence_order","instructionFa":"مرتب کن.","config":{"audioSourceTurnKey":"T01","answerEn":"Hello.","showAnswerTextBeforeAttempt":False,"allowAudioReplay":True}})
+    expect_no_warning("guided practice followed by independent assessment",x,"CQ-W04")
+
+    print(json.dumps({"status":"PASS","tests":8},ensure_ascii=False))
 
 if __name__=="__main__": main()
