@@ -1,0 +1,58 @@
+name: Nova Reference Layer
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'nova/_assistant/content-system-v1/tools/reference_layer.py'
+      - 'nova/_assistant/content-system-v1/tools/test_reference_layer.py'
+      - 'nova/reference/**'
+      - 'nova/courses/en-fa/lessons/**/lesson.source.json'
+      - '.github/workflows/nova-reference-layer.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reference layer unit tests
+        run: python nova/_assistant/content-system-v1/tools/test_reference_layer.py
+
+  live-a1-reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Sync Openjam + CEFR-J A1
+        run: |
+          python nova/_assistant/content-system-v1/tools/reference_layer.py sync \
+            --level A1 \
+            --output /tmp/reference.a1.json
+      - name: Validate live snapshot
+        run: |
+          python nova/_assistant/content-system-v1/tools/reference_layer.py validate \
+            --snapshot /tmp/reference.a1.json
+      - name: Compare current 20 A1 lessons
+        run: |
+          python nova/_assistant/content-system-v1/tools/reference_layer.py compare \
+            --level A1 \
+            --snapshot /tmp/reference.a1.json \
+            --lessons-root nova/courses/en-fa/lessons \
+            --output /tmp/a1-lesson-reference-report.json \
+            --fail-on-level-conflicts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nova-reference-a1
+          path: |
+            /tmp/reference.a1.json
+            /tmp/a1-lesson-reference-report.json
+          retention-days: 14
