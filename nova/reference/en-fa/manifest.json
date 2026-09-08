@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "generatorVersion": 1,
+  "qualityThreshold": 90,
+  "sourceLocks": {
+    "openjam": {
+      "repository": "amirj4m/openjam",
+      "commit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+      "license": "MIT"
+    },
+    "cefrj": {
+      "repository": "openlanguageprofiles/olp-en-cefrj",
+      "commit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f",
+      "license": "free commercial use with attribution per project terms"
+    }
+  },
+  "sourceSha256": {
+    "cefrj.c1c2": "18c33a407f2f89f7b8de9671c6d45fe3ea0bce45e7d2d7dcaab48d73e0f7b380",
+    "cefrj.grammar": "94953af376c1336166257e56c78d2139697b40ad8cf6f1235d8f9e89c2efc428",
+    "cefrj.vocabulary": "b0dd3c635f1c9a4fdf1490c7e5b7c48e8bbe55b652ad0c9860a95f98e10ae498",
+    "openjam.categories": "fd563d0ec50d82cc37098c912f650e3d6064e89f87144a83968b11055e768fd1",
+    "openjam.translationsFa": "861d78e6c7104a526b0da16fb108b0bff3ba2dece2ef4b2e520dca72081f0402",
+    "openjam.wordCategories": "731708b22e3aa550a4dd8d6ad8f1bc9542d0587fd5978d00246ae92d03e9435c",
+    "openjam.words": "e7ede9a28085228daba6c42c64e897d1fce8d77ceed83f74b2803a9706873c65"
+  },
+  "counts": {
+    "words": 20602,
+    "senses": 35204,
+    "productionEligible": 33301,
+    "reviewOnly": 1903
+  },
+  "lexicalByLevel": {
+    "A1": {
+      "records": 1816,
+      "productionEligible": 1772
+    },
+    "A2": {
+      "records": 2282,
+      "productionEligible": 2162
+    },
+    "B1": {
+      "records": 4092,
+      "productionEligible": 3906
+    },
+    "B2": {
+      "records": 4528,
+      "productionEligible": 4282
+    },
+    "C1": {
+      "records": 1842,
+      "productionEligible": 1750
+    },
+    "C2": {
+      "records": 20644,
+      "productionEligible": 19429
+    }
+  },
+  "grammarByLevel": {
+    "A1": 112,
+    "A2": 74,
+    "B1": 79,
+    "B2": 103,
+    "C1": 17,
+    "C2": 1
+  },
+  "files": [
+    {
+      "path": "lexical/A1.json",
+      "sha256": "87417525398ac1f7c08b5bafa1a2e70f97f88f55f37fc81e9acb42fc99f9226a",
+      "records": 1816
+    },
+    {
+      "path": "lexical/A2.json",
+      "sha256": "de3de891f43b6349b93cc51ce0beec1914a296752c25d684b959dd4b80e45309",
+      "records": 2282
+    },
+    {
+      "path": "lexical/B1.json",
+      "sha256": "c3a5c55bfdcfa9203ede02a3449354515ba2fd1605315892f012452be0b44708",
+      "records": 4092
+    },
+    {
+      "path": "lexical/B2.json",
+      "sha256": "7006366f224da328620dc47cbfc1ce2d62ee80a8e3c8aaf66aaa5ce9b1153687",
+      "records": 4528
+    },
+    {
+      "path": "lexical/C1.json",
+      "sha256": "dc026e8c51dd3d32efb666f53bb83c3fafe751dd9e8510c2918dc2dc9ee96e0b",
+      "records": 1842
+    },
+    {
+      "path": "lexical/C2.json",
+      "sha256": "d1d87dc568b56a40d6d2b8086652ae9ffbf2b4465a9e1fcb306363297261ae44",
+      "records": 20644
+    },
+    {
+      "path": "grammar/A1.json",
+      "sha256": "b7b484d5732c12347cd8449c1008e56af5855c38a1b7ae95fba8aa21b659ab8f",
+      "records": 112
+    },
+    {
+      "path": "grammar/A2.json",
+      "sha256": "5ae570bea8196f803bdbc2a02c2875ec296fd6e0ba6070cd220deb613366eddc",
+      "records": 74
+    },
+    {
+      "path": "grammar/B1.json",
+      "sha256": "c78b94f7200571140ab4af3a81bf302a816a1df9aa3c08de31c5af04d84d01ba",
+      "records": 79
+    },
+    {
+      "path": "grammar/B2.json",
+      "sha256": "ed40f98c68cdb595f5a6392b26ceba793f09932d574d188869e1fe0a0504c2df",
+      "records": 103
+    },
+    {
+      "path": "grammar/C1.json",
+      "sha256": "ae1ba9016ed5b2a6e62770b6bc1910444227b9b3987c47af1f624db4847d61ca",
+      "records": 17
+    },
+    {
+      "path": "grammar/C2.json",
+      "sha256": "4e0e043c72e949a35439833a1ded0d877df9f617861efa50706d080cbdb862e7",
+      "records": 1
+    }
+  ]
+}
