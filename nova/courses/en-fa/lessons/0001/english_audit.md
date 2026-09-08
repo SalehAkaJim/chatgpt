@@ -52,35 +52,20 @@ Nice to meet you too.
 **A02 · lexical_teach**
 
 
-**A03 · speak**
-
-- **textEn:** Hello! I'm Alex.
-- **acceptedAnswersEn:** Hello! I'm Alex.
-
-**A04 · sentence_order**
+**A03 · sentence_order**
 
 - **answerEn:** My name is Alex.
 - **tokensEn:** Alex. | is | My | name
 - **answerTokensEn:** My | name | is | Alex.
 
-**A05 · fill_blank**
+**A04 · fill_blank**
 
 - **sentenceEn:** My ___ is Alex.
 - **optionsEn:** name | hello | Maya
 
-**A06 · comprehension**
+**A05 · comprehension**
 
 - **options:** اسمش را | حالش را | اهل کجاست
-
-**A07 · speak**
-
-- **textEn:** What's your name?
-- **acceptedAnswersEn:** What's your name?
-
-**A08 · speak**
-
-- **textEn:** My name is Alex.
-- **acceptedAnswersEn:** My name is Alex.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.
