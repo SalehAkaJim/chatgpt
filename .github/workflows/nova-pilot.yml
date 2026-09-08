@@ -15,6 +15,7 @@ on:
       - 'nova/_assistant/content-system-v1/tools/**'
       - 'nova/mysql/01_reset_all.sql'
       - 'nova/mysql/02_schema.sql'
+      - 'nova/mysql/03_runtime_lesson_query.sql'
   workflow_dispatch:
 
 permissions:
@@ -77,12 +78,12 @@ jobs:
           set -o pipefail
           python nova/_assistant/content-system-v1/tools/validate_persian_text.py --exceptions "$PERSIAN_EXCEPTIONS" "$COURSE" "$LESSON" "$PROTOTYPE" | tee "$LESSON_DIR/persian_validation.json"
 
-      - name: Validate canonical Lesson
+      - name: Validate canonical Lesson and Level membership
         run: |
           set -o pipefail
-          python nova/_assistant/content-system-v1/tools/validate_lesson.py "$LESSON" | tee "$LESSON_DIR/validation.json"
+          python nova/_assistant/content-system-v1/tools/validate_lesson.py "$LESSON" --course "$COURSE" | tee "$LESSON_DIR/validation.json"
 
-      - name: Validate content quality
+      - name: Validate content quality before import
         run: |
           set -o pipefail
           python nova/_assistant/content-system-v1/tools/validate_content_quality.py "$LESSON" --policy "$QUALITY_POLICY" | tee "$LESSON_DIR/content_quality.json"
@@ -102,9 +103,12 @@ jobs:
           mysql -h 127.0.0.1 -uroot -proot nova_test < nova/mysql/02_schema.sql
           mysql -h 127.0.0.1 -uroot -proot nova_test < "$SQL_OUT"
           mysql -h 127.0.0.1 -uroot -proot --batch --raw nova_test < nova/mysql/03_runtime_lesson_query.sql > "$LESSON_DIR/runtime_smoke.txt"
-          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM lessons WHERE lesson_key='EN-A1-L-0001';")" = "1"
+          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM levels lv JOIN courses c ON c.id=lv.course_id WHERE c.course_key='en-fa' AND lv.level_key='A1';")" = "1"
+          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM lessons l JOIN levels lv ON lv.id=l.level_id JOIN courses c ON c.id=lv.course_id WHERE c.course_key='en-fa' AND lv.level_key='A1' AND l.lesson_key='EN-A1-L-0001';")" = "1"
+          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM information_schema.columns WHERE table_schema='nova_test' AND table_name='lessons' AND column_name IN ('course_id','cefr_level');")" = "0"
           test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.lesson_key='EN-A1-L-0001';")" = "5"
           test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM lesson_turns t JOIN lessons l ON l.id=t.lesson_id WHERE l.lesson_key='EN-A1-L-0001';")" = "4"
+          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "START TRANSACTION; DELETE lv FROM levels lv JOIN courses c ON c.id=lv.course_id WHERE c.course_key='en-fa' AND lv.level_key='A1'; SELECT COUNT(*) FROM lessons WHERE lesson_key='EN-A1-L-0001'; ROLLBACK;")" = "0"
 
       - name: Require ElevenLabs secret
         run: |
@@ -128,5 +132,6 @@ jobs:
             echo "No generated changes to commit."
           else
             git commit -m "Build Nova pilot lesson 0001"
+            git pull --rebase origin main
             git push
           fi
