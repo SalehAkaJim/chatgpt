@@ -9,6 +9,7 @@ on:
       - 'nova/courses/en-fa/lessons/**/lesson.source.json'
       - 'nova/prototype/**'
       - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
+      - 'nova/_assistant/content-system-v1/persian_orthography_exceptions.json'
       - 'nova/_assistant/content-system-v1/tools/**'
       - 'nova/mysql/01_reset_all.sql'
       - 'nova/mysql/02_schema.sql'
@@ -39,6 +40,7 @@ jobs:
       LESSON: nova/courses/en-fa/lessons/0001/lesson.source.json
       LESSON_DIR: nova/courses/en-fa/lessons/0001
       PROTOTYPE: nova/prototype/index.html
+      PERSIAN_EXCEPTIONS: nova/_assistant/content-system-v1/persian_orthography_exceptions.json
       VOICES: nova/courses/en-fa/audio_voices.json
       SQL_OUT: nova/mysql/10_en_a1_lesson_0001.sql
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
@@ -59,10 +61,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r nova/_assistant/content-system-v1/tools/requirements.txt
 
+      - name: Test Persian orthography exception isolation
+        run: |
+          python nova/_assistant/content-system-v1/tools/test_persian_orthography_exceptions.py
+
       - name: Validate Persian orthography
         run: |
           set -o pipefail
-          python nova/_assistant/content-system-v1/tools/validate_persian_text.py "$COURSE" "$LESSON" "$PROTOTYPE" | tee "$LESSON_DIR/persian_validation.json"
+          python nova/_assistant/content-system-v1/tools/validate_persian_text.py --exceptions "$PERSIAN_EXCEPTIONS" "$COURSE" "$LESSON" "$PROTOTYPE" | tee "$LESSON_DIR/persian_validation.json"
 
       - name: Validate canonical Lesson
         run: |
