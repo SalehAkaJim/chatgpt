@@ -69,6 +69,7 @@ jobs:
           python nova/_assistant/content-system-v1/tools/test_persian_orthography_exceptions.py
           python nova/_assistant/content-system-v1/tools/test_reference_data.py
           python nova/_assistant/content-system-v1/tools/test_reference_catalog.py
+          python nova/_assistant/content-system-v1/tools/test_lesson_reference.py
           python nova/_assistant/content-system-v1/tools/validate_reference_data.py --repo-root . --strict
           python nova/_assistant/content-system-v1/tools/reference_catalog.py --repo-root . --level A1 --limit 3 --recommend > /tmp/nova_reference_smoke.json
           python -c 'import json; p=json.load(open("/tmp/nova_reference_smoke.json")); assert p["count"] > 0'

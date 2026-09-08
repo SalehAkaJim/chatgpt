@@ -13,9 +13,10 @@ The sync pipeline pins upstream revisions, merges sense-specific Openjam Persian
 - Openjam supplies lemma, frequency, English sense, Persian sense translation and topic tags.
 - Records scoring below 90 remain available for review but are not `productionEligible`.
 - A frequency-only Openjam CEFR fallback is reference/review data, not a production curriculum decision.
-- `curriculumEligible` means the level placement has acceptable CEFR evidence.
+- Conflicting CEFR evidence is never `curriculumEligible` or `productionEligible` until resolved.
+- `curriculumEligible` means the level placement has acceptable, unambiguous CEFR evidence.
 - `productionEligible` means the complete lexical record also passes Nova's quality threshold.
-- External data never auto-publishes a Lesson. It constrains and supports authoring/QA.
+- External data never auto-publishes a Lesson or blindly overwrites an authored sense/translation. It constrains and supports authoring/QA.
 
 ## Generated files
 
@@ -56,6 +57,18 @@ python nova/_assistant/content-system-v1/tools/reference_catalog.py \
 ```
 
 By default queries return only `productionEligible` records. `--include-review` is an explicit author/research escape hatch and must not be used to bypass the Lesson quality gate.
+
+## Lesson 21+ production gate
+
+The reference layer becomes a blocking build dependency for new English→Persian Lessons starting at `sortOrder: 21`.
+
+- every `target` lexical item with `itemType: word` must have an exact lemma + POS match at the Lesson level;
+- that reference record must be both `curriculumEligible` and `productionEligible`;
+- review/support language is audited but is not blocked by this forward-only target gate;
+- multiword expressions/formulas remain Nova-authored units and are not forced into a single-word dictionary model;
+- Lessons 1–20 are audited but are not retroactively invalidated.
+
+`build_pilot.py` writes `reference_validation.json` beside each canonical Lesson. A failing enforced target prevents the Lesson from reaching paid audio generation, SQL compilation or runtime import.
 
 ## Lesson coverage semantics
 

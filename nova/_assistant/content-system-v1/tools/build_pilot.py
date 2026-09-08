@@ -17,6 +17,8 @@ from validate_audio_manifest import validate_audio
 from validate_content_quality import evaluate
 from validate_lesson import validate
 from validate_story import validate_story
+from reference_catalog import ReferenceCatalog
+from validate_lesson_reference import validate_lesson_reference
 
 SYSTEM = Path(__file__).resolve().parents[1]
 
@@ -68,7 +70,7 @@ def validate_sequence(records):
     return errors + validate_story(records)
 
 
-def check_text(root, record, policy):
+def check_text(root, record, policy, reference_catalogs):
     lesson, course, source = record['lesson'], record['course'], record['source']
     lesson_dir = source.parent
     source_hash = hashlib.sha256(source.read_bytes()).hexdigest()
@@ -79,6 +81,15 @@ def check_text(root, record, policy):
     save(lesson_dir / 'validation.json', canonical)
     if canonical['status'] != 'PASS':
         raise ValueError('; '.join(canonical['errors']))
+
+    reference_catalog = reference_catalogs.get(course['courseCode'])
+    if reference_catalog is not None:
+        reference_report = validate_lesson_reference(lesson, reference_catalog)
+        reference_report['sourceHash'] = source_hash
+        save(lesson_dir / 'reference_validation.json', reference_report)
+        if reference_report['status'] != 'PASS':
+            raise ValueError('Reference vocabulary: ' + '; '.join(reference_report['errors']))
+
     quality = evaluate(lesson, policy)
     quality['sourceHash'] = source_hash
     save(lesson_dir / 'content_quality.json', quality)
@@ -105,10 +116,17 @@ def check_text(root, record, policy):
 
 def text_phase(root, records, policy, workers):
     started = time.monotonic()
+    reference_catalogs = {}
+    for record in records:
+        code = record['course']['courseCode']
+        manifest = root / 'nova/reference' / code / 'manifest.json'
+        if code not in reference_catalogs and manifest.exists():
+            reference_catalogs[code] = ReferenceCatalog(root, code)
+
     def one(record):
         start = time.monotonic()
         try:
-            check_text(root, record, policy)
+            check_text(root, record, policy, reference_catalogs)
             result = {'lessonKey': record['lesson']['lessonKey'], 'status': 'PASS'}
         except Exception as error:
             result = {'lessonKey': record['lesson']['lessonKey'], 'status': 'FAIL', 'error': str(error)}
