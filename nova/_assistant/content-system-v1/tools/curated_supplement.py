@@ -7,8 +7,10 @@ can be missing or poorly represented. This tool promotes only lexical units
 already present in canonical Nova lessons whose automated quality score meets
 Nova's >=90 gate.
 
-Identity is lemma + partOfSpeech + senseKey so pedagogically distinct senses
-(e.g. two uses of "sorry") can coexist safely.
+Identity is lemma + partOfSpeech + pedagogical identity. `senseKey` is preferred;
+when older canonical items do not have one, their stable `lexicalKey` is used as
+the fallback. This keeps distinct uses such as SORRY-REPEAT and SORRY-APOLOGY
+separate without rewriting already-reviewed lesson copy.
 """
 from __future__ import annotations
 
@@ -52,16 +54,20 @@ def pos(value: str | None) -> str | None:
     return aliases.get(value, value) if value else None
 
 
+def pedagogical_identity(lex: dict[str, Any]) -> str | None:
+    return norm(lex.get("senseKey")) or norm(lex.get("lexicalKey")) or None
+
+
 def identity(lex: dict[str, Any]) -> tuple[str, str | None, str | None]:
     return (
         norm(lex.get("lemma") or lex.get("displayForm")),
         pos(lex.get("partOfSpeech")),
-        norm(lex.get("senseKey")) or None,
+        pedagogical_identity(lex),
     )
 
 
 def external_identity(lex: dict[str, Any]) -> tuple[str, str | None]:
-    return (norm(lex.get("lemma")), pos(lex.get("partOfSpeech")))
+    return (norm(lex.get("lemma") or lex.get("displayForm")), pos(lex.get("partOfSpeech")))
 
 
 def load_status_scores(path: Path) -> dict[str, int]:
@@ -89,8 +95,8 @@ def supplement_score(row: dict[str, Any]) -> tuple[int, list[str]]:
         score += 15; signals.append("stable_translation")
     if row["lemma"] and row.get("itemType"):
         score += 10; signals.append("stable_identity")
-    if row.get("senseKey"):
-        score += 10; signals.append("sense_key")
+    if row.get("identityKey"):
+        score += 10; signals.append("pedagogical_identity")
     if row.get("partOfSpeech") or row.get("itemType") == "formula":
         score += 5; signals.append("typed_lexical_unit")
     if row.get("externalStatus") == "review" or row["occurrenceCount"] > 1 or row.get("itemType") in {"formula", "word"}:
@@ -126,21 +132,27 @@ def build_supplement(pool: dict[str, Any], lessons_root: Path, status_path: Path
                 "lemma": lex.get("lemma") or lex.get("displayForm"),
                 "partOfSpeech": lex.get("partOfSpeech"),
                 "senseKey": lex.get("senseKey"),
+                "lexicalKey": lex.get("lexicalKey"),
+                "identityKey": pedagogical_identity(lex),
             })
 
     items: list[dict[str, Any]] = []
     for key, rows in sorted(occurrences.items(), key=lambda kv: (kv[0][0], kv[0][1] or "", kv[0][2] or "")):
-        lemma, part_of_speech, sense_key = key
+        lemma, part_of_speech, identity_key = key
         translations = sorted({r.get("translationFa") for r in rows if r.get("translationFa")})
         display_forms = sorted({r.get("displayForm") for r in rows if r.get("displayForm")})
         item_types = sorted({r.get("itemType") for r in rows if r.get("itemType")})
         lesson_keys = sorted({r["lessonKey"] for r in rows if r.get("lessonKey")})
         lesson_quality = [int(r.get("lessonQualityScore", 0)) for r in rows]
+        sense_keys = sorted({r.get("senseKey") for r in rows if r.get("senseKey")})
+        lexical_keys = sorted({r.get("lexicalKey") for r in rows if r.get("lexicalKey")})
         review = external_review.get((lemma, part_of_speech))
         row = {
             "lemma": lemma,
             "partOfSpeech": part_of_speech,
-            "senseKey": sense_key,
+            "identityKey": identity_key,
+            "senseKey": sense_keys[0] if len(sense_keys) == 1 else None,
+            "sourceLexicalKeys": lexical_keys,
             "itemType": item_types[0] if len(item_types) == 1 else (item_types or [None])[0],
             "displayForms": display_forms,
             "translationFa": translations[0] if len(translations) == 1 else None,
@@ -160,7 +172,7 @@ def build_supplement(pool: dict[str, Any], lessons_root: Path, status_path: Path
         items.append(row)
 
     return {
-        "schemaVersion": "1.0.0",
+        "schemaVersion": "1.1.0",
         "generatedAt": utc_now(),
         "courseCode": "en-fa",
         "level": level,
@@ -168,7 +180,7 @@ def build_supplement(pool: dict[str, Any], lessons_root: Path, status_path: Path
         "policy": {
             "authority": "Nova canonical lessons only",
             "minimumSourceLessonQualityScore": QUALITY_THRESHOLD,
-            "identity": "lemma + partOfSpeech + senseKey",
+            "identity": "lemma + partOfSpeech + (senseKey || lexicalKey)",
             "purpose": "fill external reference gaps without relaxing external quality rules",
             "runtimeImport": "never writes runtime tables directly",
         },
@@ -188,7 +200,7 @@ def coverage(pool: dict[str, Any], supplement: dict[str, Any], lessons_root: Pat
         for x in pool.get("eligibleVariants", [])
     }
     local = {
-        (norm(x["lemma"]), pos(x.get("partOfSpeech")), norm(x.get("senseKey")) or None)
+        (norm(x["lemma"]), pos(x.get("partOfSpeech")), norm(x.get("identityKey")) or None)
         for x in supplement.get("items", []) if x.get("eligibleForReference")
     }
     canonical: set[tuple[str, str | None, str | None]] = set()
@@ -202,13 +214,14 @@ def coverage(pool: dict[str, Any], supplement: dict[str, Any], lessons_root: Pat
             if (key[0], key[1]) not in external and key not in local:
                 unresolved.append({
                     "lessonKey": lesson.get("lessonKey"),
-                    "lemma": key[0], "partOfSpeech": key[1], "senseKey": key[2],
+                    "lemma": key[0], "partOfSpeech": key[1], "identityKey": key[2],
+                    "senseKey": lex.get("senseKey"), "lexicalKey": lex.get("lexicalKey"),
                     "translationFa": lex.get("translationFa"), "itemType": lex.get("itemType"),
                 })
     external_count = sum(1 for key in canonical if (key[0], key[1]) in external)
     resolved_count = sum(1 for key in canonical if (key[0], key[1]) in external or key in local)
     return {
-        "schemaVersion": "1.0.0",
+        "schemaVersion": "1.1.0",
         "generatedAt": utc_now(),
         "courseCode": "en-fa", "level": level,
         "summary": {
@@ -218,7 +231,7 @@ def coverage(pool: dict[str, Any], supplement: dict[str, Any], lessons_root: Pat
             "externalCoveragePercent": round(external_count / len(canonical) * 100, 2) if canonical else 100.0,
             "localSupplementResolved": resolved_count - external_count,
             "resolvedCoveragePercent": round(resolved_count / len(canonical) * 100, 2) if canonical else 100.0,
-            "unresolvedUnique": len({(x["lemma"], x["partOfSpeech"], x["senseKey"]) for x in unresolved}),
+            "unresolvedUnique": len({(x["lemma"], x["partOfSpeech"], x["identityKey"]) for x in unresolved}),
         },
         "unresolved": unresolved,
     }
