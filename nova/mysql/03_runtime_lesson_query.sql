@@ -2,12 +2,14 @@
 -- NOVA LESSON RUNTIME — EXAMPLE RETRIEVAL
 -- Run after Course/Level/Lesson content has been imported.
 -- ===============================================================
+SET @course_key=COALESCE(@course_key,'en-fa');
+SET @lesson_key=COALESCE(@lesson_key,'EN-A1-L-0001');
 SET @lesson_id=(
   SELECT l.id
   FROM lessons l
   JOIN levels lv ON lv.id=l.level_id
   JOIN courses c ON c.id=lv.course_id
-  WHERE c.course_key='en-fa'
+  WHERE c.course_key=@course_key AND l.lesson_key=@lesson_key
   ORDER BY lv.sort_order,l.sort_order
   LIMIT 1
 );

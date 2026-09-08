@@ -15,32 +15,196 @@
   "curriculum": {
     "startingKnowledge": "absolute_zero",
     "targetConstructions": [
-      {"key":"EN-CONSTR-IM-NAME","form":"I'm + name","meaningFa":"برای معرفی کوتاه اسم"},
-      {"key":"EN-CONSTR-WHATS-YOUR-NAME","form":"What's your name?","meaningFa":"برای پرسیدن اسم طرف مقابل"}
+      {
+        "key": "EN-CONSTR-IM-NAME",
+        "form": "I'm + name",
+        "meaningFa": "برای معرفی کوتاه اسم"
+      },
+      {
+        "key": "EN-CONSTR-WHATS-YOUR-NAME",
+        "form": "What's your name?",
+        "meaningFa": "برای پرسیدن اسم طرف مقابل"
+      }
     ],
     "supportLanguage": [],
     "assessmentBoundary": "Guided dialogue responses are practice only; mastery evidence comes from independent activities after the dialogue.",
-    "transferPlan": {"mode":"deferred","targetLesson":"EN-A1-L-0002","intent":"Reuse greeting and name language in a changed first-meeting context, then introduce My name is + name and polite first-meeting language."}
+    "transferPlan": {
+      "mode": "deferred",
+      "targetLesson": "EN-A1-L-0002",
+      "intent": "Reuse greeting and name language in a changed first-meeting context, then introduce My name is + name and polite first-meeting language."
+    }
   },
   "lexicalItems": [
-    {"lexicalKey":"EN-LEX-HELLO-01","itemType":"word","displayForm":"hello","translationFa":"سلام","role":"target","lemma":"hello","partOfSpeech":"interjection","senseKey":"greeting","audioEligible":true},
-    {"lexicalKey":"EN-LEX-NAME-01","itemType":"word","displayForm":"name","translationFa":"اسم","role":"target","lemma":"name","partOfSpeech":"noun","senseKey":"personal_name","audioEligible":true}
+    {
+      "lexicalKey": "EN-LEX-HELLO-01",
+      "itemType": "word",
+      "displayForm": "hello",
+      "translationFa": "سلام",
+      "role": "target",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "senseKey": "greeting",
+      "audioEligible": true
+    },
+    {
+      "lexicalKey": "EN-LEX-NAME-01",
+      "itemType": "word",
+      "displayForm": "name",
+      "translationFa": "اسم",
+      "role": "target",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "senseKey": "personal_name",
+      "audioEligible": true
+    }
   ],
   "turns": [
-    {"turnKey":"T01","role":"character","characterKey":"maya","textEn":"Hello! I'm Maya.","translationFa":"سلام! من مایا هستم.","audioRequired":true},
-    {"turnKey":"T02","role":"learner","textEn":"Hello! I'm Alex.","translationFa":"سلام! من الکس هستم.","speechTargetEn":"Hello! I'm Alex.","acceptedSpeechEn":["Hello! I'm Alex."],"audioRequired":true},
-    {"turnKey":"T03","role":"character","characterKey":"maya","textEn":"What's your name?","translationFa":"اسمت چیه؟","audioRequired":true},
-    {"turnKey":"T04","role":"learner","textEn":"I'm Alex.","translationFa":"من الکس هستم.","speechTargetEn":"I'm Alex.","acceptedSpeechEn":["I'm Alex."],"audioRequired":true}
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "maya",
+      "textEn": "Hello! I'm Maya.",
+      "translationFa": "سلام! من مایا هستم.",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "textEn": "Hello!",
+      "translationFa": "سلام!",
+      "speechTargetEn": "Hello!",
+      "acceptedSpeechEn": [
+        "Hello!"
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "maya",
+      "textEn": "What's your name?",
+      "translationFa": "اسمت چیه؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "textEn": "I'm Alex.",
+      "translationFa": "من الکس هستم.",
+      "speechTargetEn": "I'm Alex.",
+      "acceptedSpeechEn": [
+        "I'm Alex."
+      ],
+      "audioRequired": true
+    }
   ],
   "activities": [
-    {"activityKey":"A01","type":"dialogue","instructionFa":"حرف مایا را بخوان و گوش کن، بعد جواب آماده را با صدای بلند بازخوانی کن.","config":{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E02","promptTurnKey":"T03","responseTurnKey":"T04","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}},
-    {"activityKey":"A02","type":"lexical_teach","instructionFa":"این دو کلمه اصلی را یاد بگیر.","config":{"lexicalKeys":["EN-LEX-HELLO-01","EN-LEX-NAME-01"]}},
-    {"activityKey":"A03","type":"sentence_order","instructionFa":"به جمله گوش کن و بعد کلمه ها را به همان ترتیب بچین.","config":{"audioSourceTurnKey":"T03","tokensEn":["name?","What's","your"],"answerTokensEn":["What's","your","name?"],"answerEn":"What's your name?","showAnswerTextBeforeAttempt":false,"allowAudioReplay":true}},
-    {"activityKey":"A04","type":"fill_blank","instructionFa":"گزینه درست را برای جای خالی انتخاب کن.","config":{"sentenceEn":"Hello! ___ Alex.","optionsEn":["I'm","your","name"],"answerIndex":0}},
-    {"activityKey":"A05","type":"comprehension","instructionFa":"مکالمه را گوش کن و به معنی آن توجه کن.","promptFa":"مایا از الکس چه چیزی می پرسد؟","config":{"sourceTurnKeys":["T01","T02","T03","T04"],"options":["اسمش را","حالش را","اهل کجاست"],"answerIndex":0,"transcriptAfterAttempt":true}}
+    {
+      "activityKey": "A01",
+      "type": "dialogue",
+      "instructionFa": "حرف مایا را بخوان و گوش کن، بعد جواب آماده را با صدای بلند بازخوانی کن.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "lexical_teach",
+      "instructionFa": "این دو کلمه اصلی را یاد بگیر.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-HELLO-01",
+          "EN-LEX-NAME-01"
+        ],
+        "explanationFa": "برای معرفی خودت از I'm و بعد اسمت استفاده کن. برای پرسیدن اسم طرف مقابل بگو: What's your name?"
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "sentence_order",
+      "instructionFa": "به جمله گوش کن و بعد کلمه ها را به همان ترتیب بچین.",
+      "config": {
+        "audioSourceTurnKey": "T03",
+        "tokensEn": [
+          "name?",
+          "What's",
+          "your"
+        ],
+        "answerTokensEn": [
+          "What's",
+          "your",
+          "name?"
+        ],
+        "answerEn": "What's your name?",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "fill_blank",
+      "instructionFa": "گزینه درست را برای جای خالی انتخاب کن.",
+      "config": {
+        "sentenceEn": "Hello! ___ Alex.",
+        "optionsEn": [
+          "I'm",
+          "your",
+          "name"
+        ],
+        "answerIndex": 0
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "comprehension",
+      "instructionFa": "مکالمه را گوش کن و به معنی آن توجه کن.",
+      "promptFa": "مایا از الکس چه چیزی می پرسد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02",
+          "T03",
+          "T04"
+        ],
+        "options": [
+          "اسمش را",
+          "حالش را",
+          "اهل کجاست"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true
+      }
+    }
   ],
   "review": {
     "pendingDecisions": []
   },
-  "metadata": {"pilot":true,"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange"}
+  "metadata": {
+    "pilot": true,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange"
+  }
 }

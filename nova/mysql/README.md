@@ -8,10 +8,14 @@ The product database intentionally models the app, not the full curriculum-plann
 
 ## Run order
 
-1. `01_reset_all.sql`
-2. `02_schema.sql`
-3. generated Course/Level/Lesson import SQL in numeric order
-4. `03_runtime_lesson_query.sql` only when you want to test retrieval
+Use [IMPORT_ORDER.md](IMPORT_ORDER.md) for the generated, exact Lesson import list. It is refreshed after each successful Pilot build.
+
+- New/explicitly reset database: `02_schema.sql`, then the listed Lesson SQL files.
+- Existing compatible database: import the needed generated Lesson files.
+- `01_reset_all.sql` is a destructive clean reset, used automatically only in disposable CI tests.
+- `03_runtime_lesson_query.sql` accepts `@course_key` and `@lesson_key` to inspect a chosen Lesson.
+
+All generated SQL runs the compiler's canonical and >=90 quality gates. Audio paths and durations come from verified manifests. A compiler call without audio produces draft SQL; the full Pilot requires audio before runtime validation.
 
 ## Runtime content model
 

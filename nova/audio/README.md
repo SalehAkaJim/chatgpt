@@ -1,21 +1,17 @@
 # Nova Audio — Lesson Pilot
 
-All pre-reset audio was removed. Audio is mandatory in the rebuilt English → Persian Pilot.
+Audio is mandatory for technical Pilot completion. Every required Turn and eligible lexical item is generated from canonical text and an explicit Course voice map. Lexical items use Lori.
 
-## Completion rule
+## Shared lexical assets
 
-A Pilot Lesson cannot be complete until every required audio asset is generated and the manifest passes QA against the exact canonical `lesson.source.json` hash.
+`nova/audio/lexical/{course}/index.json` owns the verified Course audio registry. Asset identity includes source text, voice ID and model ID. A second Lesson reuses the same verified asset without another paid request. A text/voice/model change creates another path, preserving files referenced by earlier manifests.
 
-## Audio classes
+Existing lexical files and manifests are adopted after file-hash/decode checks, without renaming or regenerating them. Legacy lexical paths can therefore remain in the registry.
 
-- **Turn audio** — exact canonical Turn text, using the assigned character/learner-reference voice.
-- **Lexical-item audio** — exact validated lexical item, including justified multiword expressions, using the course lexical voice.
+Turn audio remains `nova/audio/turns/{course}/{lessonKey}/{turnKey}.mp3`.
 
-## Paths
+## Validation and recovery
 
-- Turn: `nova/audio/turns/{course}/{lessonKey}/{turnKey}.mp3`
-- Lexical item: `nova/audio/lexical/{course}/{sha256(lexicalKey)}.mp3`
+The manifest records exact Lesson source hash, text, voice, path, file SHA-256 and measured duration. Validation independently decodes the actual file and verifies the Course voice mapping. Merely declaring decoded=true never passes a corrupt file.
 
-## Required QA
-
-Every asset records source key/text/hash, audio class, voice, path, file hash, decode result, duration and PASS/FAIL. File existence alone is never sufficient.
+The generator checkpoints successful items during a run. `--reuse-only` permits verification/reuse without new paid synthesis. Runtime SQL obtains paths and durations from the validated manifest.

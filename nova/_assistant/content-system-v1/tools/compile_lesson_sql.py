@@ -6,6 +6,9 @@ import hashlib
 import json
 from pathlib import Path
 
+from validate_lesson import validate
+from validate_content_quality import evaluate
+
 
 def load(path: Path):
     return json.loads(path.read_text(encoding='utf-8'))
@@ -20,16 +23,27 @@ def q(value):
     return "'" + value + "'"
 
 
-def lexical_audio_path(course: str, key: str) -> str:
-    digest = hashlib.sha256(key.encode('utf-8')).hexdigest()
-    return f'nova/audio/lexical/{course}/{digest}.mp3'
+def compile_sql(course: dict, lesson: dict, source_hash: str, audio_manifest: dict | None = None, course_hash: str | None = None) -> str:
+    canonical = validate(lesson, course)
+    if canonical['status'] != 'PASS':
+        raise ValueError('Canonical validation failed: ' + '; '.join(canonical['errors']))
+    policy = load(Path(__file__).resolve().parents[1] / 'content_quality.policy.json')
+    quality = evaluate(lesson, policy)
+    if not quality['hardGatePass'] or quality['automatedScore'] < max(90, policy['minimumAutomatedScore']):
+        raise ValueError(f"Content quality rejected: score={quality['automatedScore']}, errors={quality['errors']}")
+    if audio_manifest is not None and (audio_manifest.get('sourceHash') != source_hash or audio_manifest.get('status') != 'PASS'):
+        raise ValueError('Audio manifest is stale or failed')
+    audio_items = {(x['audioClass'], x['sourceKey']): x for x in (audio_manifest or {}).get('items', [])}
+    def audio_record(kind, key):
+        return audio_items.get((kind, key), {})
+    if audio_manifest is not None:
+        for group, kind, required, key_field, text_field in [(lesson.get('turns', []), 'turn', 'audioRequired', 'turnKey', 'textEn'), (lesson.get('lexicalItems', []), 'lexical_item', 'audioEligible', 'lexicalKey', 'displayForm')]:
+            for item in group:
+                if item.get(required):
+                    record = audio_record(kind, item[key_field])
+                    if not record.get('path') or not record.get('durationMs') or record.get('sourceText') != item[text_field] or record.get('sourceHash') != source_hash:
+                        raise ValueError(f'Missing or stale required audio: {item[key_field]}')
 
-
-def turn_audio_path(course: str, lesson_key: str, turn_key: str) -> str:
-    return f'nova/audio/turns/{course}/{lesson_key}/{turn_key}.mp3'
-
-
-def compile_sql(course: dict, lesson: dict, source_hash: str) -> str:
     code = lesson['courseCode']
     if code != course.get('courseCode'):
         raise ValueError('Lesson courseCode does not match Course source')
@@ -44,6 +58,7 @@ def compile_sql(course: dict, lesson: dict, source_hash: str) -> str:
         f'-- lessonKey: {lesson["lessonKey"]}',
         f'-- levelKey: {level_key}',
         f'-- sourceHash: {source_hash}',
+        f'-- courseSourceHash: {course_hash or hashlib.sha256(json.dumps(course, sort_keys=True, ensure_ascii=False).encode()).hexdigest()}',
         'SET NAMES utf8mb4;',
         'START TRANSACTION;',
         '',
@@ -97,7 +112,7 @@ def compile_sql(course: dict, lesson: dict, source_hash: str) -> str:
         'VALUES (' + ','.join([
             '@level_id',q(lesson['lessonKey']),str(lesson['sortOrder']),q(lesson['titleEn']),q(lesson['titleFa']),
             q(lesson.get('descriptionFa')),q(lesson.get('primaryOutcomeKey')),
-            str((lesson.get('metadata') or {}).get('estimatedDurationSec') or 420),q(source_hash),q('validated'),q(lesson_meta)
+            str((lesson.get('metadata') or {}).get('estimatedDurationSec') or 420),q(source_hash),q('validated' if audio_manifest is not None else 'draft'),q(lesson_meta)
         ]) + ')',
         'ON DUPLICATE KEY UPDATE level_id=VALUES(level_id),sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),primary_outcome_key=VALUES(primary_outcome_key),estimated_duration_sec=VALUES(estimated_duration_sec),source_hash=VALUES(source_hash),status=VALUES(status),metadata=VALUES(metadata);',
         f"SET @lesson_id=(SELECT id FROM lessons WHERE level_id=@level_id AND lesson_key={q(lesson['lessonKey'])} LIMIT 1);",
@@ -108,15 +123,16 @@ def compile_sql(course: dict, lesson: dict, source_hash: str) -> str:
     ]
 
     for idx, item in enumerate(lesson.get('lexicalItems', []), 1):
-        audio = lexical_audio_path(code, item['lexicalKey']) if item.get('audioEligible') else None
+        record = audio_record('lexical_item', item['lexicalKey'])
+        audio = record.get('path') if item.get('audioEligible') else None
         meta = item.get('metadata') or {}
         lines += [
-            'INSERT INTO lexical_items (course_id,lexical_key,item_type,display_form,lemma,part_of_speech,sense_key,translation,audio_url,metadata)',
+            'INSERT INTO lexical_items (course_id,lexical_key,item_type,display_form,lemma,part_of_speech,sense_key,translation,audio_url,audio_duration_ms,metadata)',
             'VALUES (' + ','.join([
                 '@course_id',q(item['lexicalKey']),q(item['itemType']),q(item['displayForm']),q(item.get('lemma')),
-                q(item.get('partOfSpeech')),q(item.get('senseKey')),q(item['translationFa']),q(audio),q(meta)
+                q(item.get('partOfSpeech')),q(item.get('senseKey')),q(item['translationFa']),q(audio),q(record.get('durationMs')),q(meta)
             ]) + ')',
-            'ON DUPLICATE KEY UPDATE item_type=VALUES(item_type),display_form=VALUES(display_form),lemma=VALUES(lemma),part_of_speech=VALUES(part_of_speech),sense_key=VALUES(sense_key),translation=VALUES(translation),audio_url=VALUES(audio_url),metadata=VALUES(metadata);',
+            'ON DUPLICATE KEY UPDATE item_type=VALUES(item_type),display_form=VALUES(display_form),lemma=VALUES(lemma),part_of_speech=VALUES(part_of_speech),sense_key=VALUES(sense_key),translation=VALUES(translation),audio_url=VALUES(audio_url),audio_duration_ms=VALUES(audio_duration_ms),metadata=VALUES(metadata);',
             f"SET @lex_id=(SELECT id FROM lexical_items WHERE course_id=@course_id AND lexical_key={q(item['lexicalKey'])} LIMIT 1);",
             'INSERT INTO lesson_lexical_items (lesson_id,lexical_item_id,learning_role,sort_order,metadata) VALUES (' + ','.join([
                 '@lesson_id','@lex_id',q(item['role']),str(idx),q({})
@@ -128,12 +144,13 @@ def compile_sql(course: dict, lesson: dict, source_hash: str) -> str:
         character_expr = 'NULL'
         if turn.get('role') == 'character':
             character_expr = f"(SELECT id FROM characters WHERE course_id=@course_id AND character_key={q(turn['characterKey'])} LIMIT 1)"
-        audio = turn_audio_path(code, lesson['lessonKey'], turn['turnKey']) if turn.get('audioRequired') else None
+        record = audio_record('turn', turn['turnKey'])
+        audio = record.get('path') if turn.get('audioRequired') else None
         lines += [
-            'INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,speech_target,accepted_speech,tokens,metadata)',
+            'INSERT INTO lesson_turns (lesson_id,turn_key,sort_order,role,character_id,text,translation,audio_url,audio_duration_ms,speech_target,accepted_speech,tokens,metadata)',
             'VALUES (' + ','.join([
                 '@lesson_id',q(turn['turnKey']),str(idx),q(turn['role']),character_expr,q(turn['textEn']),q(turn['translationFa']),
-                q(audio),q(turn.get('speechTargetEn')),q(turn.get('acceptedSpeechEn')), 'NULL', q(turn.get('metadata') or {})
+                q(audio),q(record.get('durationMs')),q(turn.get('speechTargetEn')),q(turn.get('acceptedSpeechEn')), 'NULL', q(turn.get('metadata') or {})
             ]) + ');'
         ]
     lines.append('')
@@ -156,10 +173,22 @@ def main():
     p.add_argument('course', type=Path)
     p.add_argument('lesson', type=Path)
     p.add_argument('-o','--output', type=Path, required=True)
+    p.add_argument('--audio-manifest', type=Path)
+    p.add_argument('--repo-root', type=Path, default=Path('.'))
     args = p.parse_args()
     raw = args.lesson.read_bytes()
     lesson = json.loads(raw.decode('utf-8'))
-    result = compile_sql(load(args.course), lesson, hashlib.sha256(raw).hexdigest())
+    manifest = None
+    if args.audio_manifest:
+        from validate_audio_manifest import validate_audio
+        report = validate_audio(args.lesson, args.audio_manifest, args.repo_root, args.course.parent / 'audio_voices.json')
+        if report['status'] != 'PASS':
+            p.exit(2, json.dumps(report, ensure_ascii=False) + '\n')
+        manifest = load(args.audio_manifest)
+    try:
+        result = compile_sql(load(args.course), lesson, hashlib.sha256(raw).hexdigest(), manifest, hashlib.sha256(args.course.read_bytes()).hexdigest())
+    except ValueError as error:
+        p.exit(2, str(error) + '\n')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(result, encoding='utf-8')
     print(args.output)

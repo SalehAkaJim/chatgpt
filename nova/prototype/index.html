@@ -3,142 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Nova — Lesson 0001 Prototype</title>
+<title>Nova — Lesson Pilot</title>
 <style>
 :root{--bg:#f6f7fb;--card:#fff;--ink:#171a22;--muted:#747b88;--line:#e4e7ef;--brand:#5963f6;--soft:#eef0ff;--good:#14885d;--goodsoft:#eaf8f2;--bad:#c94753;--badsoft:#fff0f1}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Tahoma,Arial,sans-serif;color:var(--ink)}button{font:inherit}.app{max-width:480px;min-height:100vh;margin:auto;position:relative;padding-bottom:108px}.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;padding:16px;background:rgba(246,247,251,.95);backdrop-filter:blur(10px)}.back{width:40px;height:40px;border:1px solid var(--line);border-radius:13px;background:#fff;cursor:pointer}.track{flex:1;height:9px;border-radius:99px;background:#e4e7ed;overflow:hidden}.bar{height:100%;background:var(--brand);transition:.2s}.count{font-size:12px;color:var(--muted);direction:ltr}.screen{display:none;padding:8px 18px 30px}.screen.active{display:block}h1{font-size:27px;margin:7px 0}h2{font-size:22px;margin:7px 0}.tag{font-size:12px;color:var(--brand);font-weight:900}.sub{font-size:14px;color:var(--muted);line-height:1.8;margin:4px 0 18px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 32px rgba(36,41,67,.06)}.speaker{display:flex;gap:11px;align-items:flex-start}.avatar{width:44px;height:44px;border-radius:14px;background:var(--soft);display:grid;place-items:center;color:var(--brand);font-weight:900;flex:none}.bubble{flex:1;background:#f7f8fa;border:1px solid #eceef3;border-radius:18px;padding:14px}.bubble.you{background:var(--soft);border-color:#dde1ff}.en{direction:ltr;text-align:left;font:700 18px/1.5 Arial,sans-serif}.fa{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.6}.play{border:0;border-radius:50%;background:var(--soft);color:var(--brand);width:44px;height:44px;cursor:pointer}.play.small{width:32px;height:32px}.response{margin-top:16px}.response-label{font-size:12px;color:var(--muted);font-weight:800;margin-bottom:8px}.response-row{display:flex;gap:10px;align-items:center;direction:ltr}.response-text{flex:1;font:800 24px/1.35 Arial,sans-serif;text-align:left;direction:ltr}.mic-wrap{text-align:center;margin-top:22px}.mic{width:88px;height:88px;border:0;border-radius:50%;background:var(--brand);color:#fff;font-size:34px;cursor:pointer;box-shadow:0 12px 28px rgba(89,99,246,.25)}.mic.listening{transform:scale(1.04);box-shadow:0 0 0 12px rgba(89,99,246,.11),0 12px 28px rgba(89,99,246,.25)}.state{min-height:24px;font-size:13px;color:var(--muted);margin-top:12px}.test-pass{border:0;background:transparent;color:var(--brand);font-weight:900;cursor:pointer;margin-top:7px}.words{display:grid;grid-template-columns:1fr 1fr;gap:12px}.word-card{min-height:145px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer}.word{font:800 25px Arial,sans-serif;direction:ltr;text-align:left}.meaning{color:#505765}.audio-task{text-align:center;margin-bottom:12px}.play.big{width:78px;height:78px;background:var(--brand);color:#fff;font-size:27px;box-shadow:0 10px 26px rgba(89,99,246,.24)}.audio-label{display:block;font-size:13px;color:var(--muted);margin-top:8px}.zone{min-height:86px;border:2px dashed #d7dbe6;border-radius:16px;background:#fafbfc;padding:10px;display:flex;gap:8px;flex-wrap:wrap;direction:ltr;margin:16px 0}.bank{display:flex;gap:9px;flex-wrap:wrap;direction:ltr}.token{border:1px solid #dce0e9;background:#fff;border-radius:12px;padding:10px 13px;font:700 16px Arial,sans-serif;cursor:pointer}.token.used{opacity:.25;pointer-events:none}.reset{border:0;background:transparent;color:var(--muted);text-decoration:underline;margin-top:14px;cursor:pointer}.sentence{font:800 25px/1.5 Arial,sans-serif;text-align:center;direction:ltr;margin:8px 0 20px}.options{display:grid;gap:10px}.option{border:1px solid #dce0e9;background:#fff;border-radius:15px;padding:14px;font-weight:800;cursor:pointer}.option.selected{border-color:var(--brand);background:var(--soft);color:#3e47d7}.question{font-size:18px;font-weight:900;line-height:1.8;margin:18px 0 12px}.center{text-align:center}.bottom{position:absolute;bottom:0;left:0;right:0;padding:18px 18px max(16px,env(safe-area-inset-bottom));background:linear-gradient(transparent,#f6f7fb 32%)}.next{width:100%;border:0;border-radius:17px;background:var(--brand);color:white;padding:15px;font-weight:900;font-size:16px;cursor:pointer}.next:disabled{background:#c8cbd4;cursor:not-allowed}.feedback{position:absolute;left:0;right:0;bottom:0;z-index:20;padding:18px;background:#fff;border-radius:24px 24px 0 0;box-shadow:0 -12px 34px rgba(30,35,55,.14);transform:translateY(110%);transition:.22s}.feedback.show{transform:none}.feedback.good{background:var(--goodsoft)}.feedback.bad{background:var(--badsoft)}.feedback strong{display:block;font-size:18px;margin-bottom:5px}.feedback.good strong{color:var(--good)}.feedback.bad strong{color:var(--bad)}.feedback span{font-size:13px;color:#5f6672;line-height:1.7}.feedback button{width:100%;border:0;border-radius:13px;background:var(--ink);color:white;padding:12px;margin-top:12px;font-weight:800;cursor:pointer}.done{text-align:center;padding:34px 22px}.tick{width:76px;height:76px;border-radius:50%;background:var(--goodsoft);color:var(--good);display:grid;place-items:center;font-size:36px;margin:0 auto 14px}
 @media(min-width:700px){body{padding:28px}.app{min-height:820px;border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:0 25px 60px rgba(30,35,60,.1)}}
+.lesson-select{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);margin-bottom:12px}.screen{display:block}.status-error{color:var(--bad)}.transcript{margin-top:14px;text-align:right}.explanation{background:var(--soft);padding:12px;border-radius:12px;margin:12px 0;line-height:1.9}.en-button{direction:ltr;font-family:Arial,sans-serif}.app{overflow:hidden}.top{flex-wrap:wrap}.top .lesson-select{flex-basis:100%}.bottom,.feedback{position:fixed;max-width:480px;margin:auto}.feedback{transform:translateY(120%)}
 </style>
 </head>
 <body>
 <div class="app">
   <div class="top">
+    <select class="lesson-select" id="lessonSelect" aria-label="انتخاب درس"></select>
     <button class="back" id="backBtn" aria-label="قبلی">‹</button>
     <div class="track"><div class="bar" id="progressBar"></div></div>
     <div class="count" id="stepCount"></div>
   </div>
-
-  <main id="screens">
-    <section class="screen active" data-step="0" data-kind="exchange">
-      <div class="tag">مکالمه · ۱ از ۲</div>
-      <h1>بشنو و جواب بده</h1>
-      <p class="sub">حرف مایا را بخوان و گوش کن. بعد جواب آماده را با صدای بلند بازخوانی کن.</p>
-      <div class="card">
-        <div class="speaker"><div class="avatar">M</div><div class="bubble"><div class="en">Hello! I'm Maya. <button class="play small" onclick="playAudio('T01')">▶</button></div><div class="fa">سلام! من مایا هستم.</div></div></div>
-        <div class="response"><div class="response-label">جواب تو</div><div class="bubble you"><div class="response-row"><div class="response-text">Hello! I'm Alex.</div><button class="play" onclick="playAudio('T02')">▶</button></div><div class="fa">سلام! من الکس هستم.</div></div></div>
-        <div class="mic-wrap"><button class="mic" id="mic0" onclick="startSpeech(`Hello! I'm Alex.`,'mic0','state0',0)">🎙</button><div class="state" id="state0">برای بازخوانی روی میکروفن بزن</div><button class="test-pass" onclick="completeExchange(0)">حالت تست: خواندم ✓</button></div>
-      </div>
-    </section>
-
-    <section class="screen" data-step="1" data-kind="exchange">
-      <div class="tag">مکالمه · ۲ از ۲</div>
-      <h2>حالا جواب بده</h2>
-      <p class="sub">مایا اسمت را می پرسد. جواب آماده را بازخوانی کن.</p>
-      <div class="card">
-        <div class="speaker"><div class="avatar">M</div><div class="bubble"><div class="en">What's your name? <button class="play small" onclick="playAudio('T03')">▶</button></div><div class="fa">اسمت چیه؟</div></div></div>
-        <div class="response"><div class="response-label">جواب تو</div><div class="bubble you"><div class="response-row"><div class="response-text">I'm Alex.</div><button class="play" onclick="playAudio('T04')">▶</button></div><div class="fa">من الکس هستم.</div></div></div>
-        <div class="mic-wrap"><button class="mic" id="mic1" onclick="startSpeech(`I'm Alex.`,'mic1','state1',1)">🎙</button><div class="state" id="state1">برای بازخوانی روی میکروفن بزن</div><button class="test-pass" onclick="completeExchange(1)">حالت تست: خواندم ✓</button></div>
-      </div>
-    </section>
-
-    <section class="screen" data-step="2" data-kind="info">
-      <div class="tag">کلمه های اصلی</div>
-      <h2>دو کلمه اصلی</h2>
-      <p class="sub">روی هر کارت بزن و تلفظ را دوباره بشنو.</p>
-      <div class="words">
-        <div class="card word-card" onclick="playAudio('LEX_HELLO')"><div><div class="word">hello</div><div class="meaning">سلام</div></div><button class="play">▶</button></div>
-        <div class="card word-card" onclick="playAudio('LEX_NAME')"><div><div class="word">name</div><div class="meaning">اسم</div></div><button class="play">▶</button></div>
-      </div>
-    </section>
-
-    <section class="screen" data-step="3" data-kind="order">
-      <div class="tag">Listen & Build</div>
-      <h2>بشنو و جمله را بساز</h2>
-      <p class="sub">متن کامل را نمی بینی. جمله را گوش کن و کلمه ها را مرتب کن.</p>
-      <div class="card">
-        <div class="audio-task"><button class="play big" onclick="playAudio('T03')">▶</button><span class="audio-label">پخش جمله</span></div>
-        <div class="zone" id="answerZone"></div>
-        <div class="bank" id="tokenBank"></div>
-        <button class="reset" onclick="resetOrder()">از اول بچین</button>
-      </div>
-    </section>
-
-    <section class="screen" data-step="4" data-kind="choice">
-      <div class="tag">Fill in the blank</div>
-      <h2>کدام گزینه درست است؟</h2>
-      <div class="card">
-        <div class="sentence">Hello! ___ Alex.</div>
-        <div class="options" id="blankOptions">
-          <button class="option" data-correct="true">I'm</button>
-          <button class="option">your</button>
-          <button class="option">name</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="screen" data-step="5" data-kind="comprehension">
-      <div class="tag">Listening</div>
-      <h2>گوش کن و معنی را بفهم</h2>
-      <p class="sub">متن مکالمه را نمی بینی. به صدا گوش کن و جواب بده.</p>
-      <div class="card center">
-        <button class="play big" onclick="playConversation()">▶</button>
-        <div class="question">مایا از الکس چه چیزی می پرسد؟</div>
-        <div class="options" id="listenOptions">
-          <button class="option" data-correct="true">اسمش را</button>
-          <button class="option">حالش را</button>
-          <button class="option">اهل کجاست</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="screen" data-step="6" data-kind="done">
-      <div class="done"><div class="tick">✓</div><h1>درس تموم شد</h1><p class="sub">حالا می تونی سلام کنی، خودت را کوتاه معرفی کنی و اسم طرف مقابل را بپرسی.</p></div>
-    </section>
-  </main>
-
-  <div class="bottom" id="bottomBar"><button class="next" id="nextBtn">ادامه</button></div>
+  <main id="screens" class="screen" aria-live="polite"><p>در حال دریافت درس...</p></main>
+  <div class="bottom" id="bottomBar"><button class="next" id="nextBtn" disabled>ادامه</button></div>
   <div class="feedback" id="feedbackPanel"><strong id="feedbackTitle"></strong><span id="feedbackText"></span><button id="feedbackContinue">ادامه</button></div>
 </div>
-<script>
-const audioMap={
- T01:'../audio/turns/en-fa/EN-A1-L-0001/T01.mp3',
- T02:'../audio/turns/en-fa/EN-A1-L-0001/T02.mp3',
- T03:'../audio/turns/en-fa/EN-A1-L-0001/T03.mp3',
- T04:'../audio/turns/en-fa/EN-A1-L-0001/T04.mp3',
- LEX_HELLO:'../audio/lexical/en-fa/43cd0dd00a9bea0c54572e2140190981a5bfaddc71d5cb58e16ee2a1334a3d23.mp3',
- LEX_NAME:'../audio/lexical/en-fa/59e6f2bcb4530dddb372d54401b66a7bf735760a788f310a848829fdeae4e303.mp3'
-};
-const screens=[...document.querySelectorAll('.screen')];
-const nextBtn=document.getElementById('nextBtn');
-const backBtn=document.getElementById('backBtn');
-const progressBar=document.getElementById('progressBar');
-const stepCount=document.getElementById('stepCount');
-const bottomBar=document.getElementById('bottomBar');
-const feedbackPanel=document.getElementById('feedbackPanel');
-const feedbackTitle=document.getElementById('feedbackTitle');
-const feedbackText=document.getElementById('feedbackText');
-const feedbackContinue=document.getElementById('feedbackContinue');
-let step=0, pendingNext=false, selectedBlank=null, selectedListen=null;
-let orderAnswer=[];
-const orderTarget=["What's","your","name?"];
-const orderTokens=['name?',"What's",'your'];
-
-function showStep(n){step=Math.max(0,Math.min(n,screens.length-1));screens.forEach((s,i)=>s.classList.toggle('active',i===step));progressBar.style.width=((step+1)/screens.length*100)+'%';stepCount.textContent=(step+1)+' / '+screens.length;backBtn.style.visibility=step===0?'hidden':'visible';feedbackPanel.className='feedback';pendingNext=false;renderAction();if(step===3)resetOrder();}
-function renderAction(){const kind=screens[step].dataset.kind;bottomBar.style.display=kind==='done'?'none':'block';if(kind==='exchange'){nextBtn.style.display='none';return;}nextBtn.style.display='block';nextBtn.disabled=false;nextBtn.textContent=kind==='info'?'ادامه':kind==='done'?'':'بررسی';if(kind==='order')nextBtn.disabled=orderAnswer.length!==orderTarget.length;if(kind==='choice')nextBtn.disabled=!selectedBlank;if(kind==='comprehension')nextBtn.disabled=!selectedListen;}
-function playAudio(key){const src=audioMap[key];if(!src)return;const a=new Audio(src);a.play().catch(()=>{});}
-async function playConversation(){for(const key of ['T01','T02','T03','T04']){await new Promise(resolve=>{const a=new Audio(audioMap[key]);a.onended=resolve;a.onerror=resolve;a.play().catch(resolve);});}}
-function normalizeSpeech(s){return String(s||'').toLowerCase().replace(/[^a-z']/g,' ').replace(/\s+/g,' ').trim();}
-function startSpeech(expected,micId,stateId,exchangeIndex){const SR=window.SpeechRecognition||window.webkitSpeechRecognition;const state=document.getElementById(stateId);const mic=document.getElementById(micId);if(!SR){state.textContent='تشخیص صدا روی این مرورگر در دسترس نیست';return;}const r=new SR();r.lang='en-US';r.interimResults=false;mic.classList.add('listening');state.textContent='دارم گوش می کنم...';r.onresult=e=>{const said=e.results[0][0].transcript;const ok=normalizeSpeech(said)===normalizeSpeech(expected);state.textContent=ok?'خوبه، ادامه بده':'یک بار دیگه امتحان کن';if(ok)completeExchange(exchangeIndex);};r.onerror=()=>state.textContent='صدا دریافت نشد؛ دوباره امتحان کن';r.onend=()=>mic.classList.remove('listening');r.start();}
-function completeExchange(index){const state=document.getElementById('state'+index);if(state)state.textContent='انجام شد ✓';setTimeout(()=>showStep(step+1),180);}
-function resetOrder(){orderAnswer=[];const bank=document.getElementById('tokenBank');const zone=document.getElementById('answerZone');if(!bank||!zone)return;zone.innerHTML='';bank.innerHTML='';orderTokens.forEach((t,i)=>{const b=document.createElement('button');b.className='token';b.textContent=t;b.dataset.i=i;b.onclick=()=>{if(b.classList.contains('used'))return;b.classList.add('used');orderAnswer.push({t,i});renderOrder();};bank.appendChild(b);});renderAction();}
-function renderOrder(){const zone=document.getElementById('answerZone');zone.innerHTML='';orderAnswer.forEach((x,idx)=>{const b=document.createElement('button');b.className='token';b.textContent=x.t;b.onclick=()=>{orderAnswer.splice(idx,1);const src=document.querySelector(`#tokenBank [data-i="${x.i}"]`);if(src)src.classList.remove('used');renderOrder();};zone.appendChild(b);});renderAction();}
-function setChoice(containerId,setter){document.querySelectorAll('#'+containerId+' .option').forEach(b=>b.onclick=()=>{document.querySelectorAll('#'+containerId+' .option').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');setter(b);renderAction();});}
-setChoice('blankOptions',b=>selectedBlank=b);setChoice('listenOptions',b=>selectedListen=b);
-function showFeedback(ok,text){feedbackPanel.className='feedback show '+(ok?'good':'bad');feedbackTitle.textContent=ok?'درسته ✓':'دوباره امتحان کن';feedbackText.textContent=text;pendingNext=ok;feedbackContinue.textContent=ok?'ادامه':'باشه';}
-feedbackContinue.onclick=()=>{feedbackPanel.className='feedback';if(pendingNext)showStep(step+1);};
-nextBtn.onclick=()=>{const kind=screens[step].dataset.kind;if(kind==='info'){showStep(step+1);return;}if(kind==='order'){const ok=orderAnswer.map(x=>x.t).join('|')===orderTarget.join('|');showFeedback(ok,ok?'ترتیب جمله درست بود.':'دوباره به جمله گوش کن و ترتیب را عوض کن.');return;}if(kind==='choice'){const ok=selectedBlank?.dataset.correct==='true';showFeedback(ok,ok?"درسته: Hello! I'm Alex.":'به جمله معرفی خودت فکر کن.');return;}if(kind==='comprehension'){const ok=selectedListen?.dataset.correct==='true';showFeedback(ok,ok?'درست فهمیدی: مایا اسم الکس را می پرسد.':'یک بار دیگه مکالمه را گوش کن.');return;}};
-backBtn.onclick=()=>showStep(step-1);
-showStep(0);
-</script>
+<script src="app.js" defer></script>
 </body>
 </html>

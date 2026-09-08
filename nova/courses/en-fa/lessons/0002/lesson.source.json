@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "2.1.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0002",
+  "sortOrder": 2,
+  "titleEn": "Meeting someone in class",
+  "titleFa": "معارفه در کلاس",
+  "descriptionFa": "در جلسه معارفه، اسمت را می گویی و به آشنایی با یک نفر پاسخ می دهی.",
+  "primaryOutcomeKey": "A1-INTERACTION-FIRST-MEETING",
+  "outcomeFa": "زبان آموز می تواند خودش را با My name is معرفی کند و به ابراز خوشحالی از آشنایی پاسخ بدهد.",
+  "scenarioFa": "در جلسه معارفه یک کلاس، مایا سر صحبت را باز می کند. نقش تو الکس است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-GREET-NAME"
+  ],
+  "curriculum": {
+    "startingKnowledge": "greeting_and_name",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-MY-NAME-IS",
+        "form": "My name is + name",
+        "meaningFa": "یک روش دیگر برای گفتن اسم خودت"
+      }
+    ],
+    "supportLanguage": [],
+    "assessmentBoundary": "Guided responses are supported practice. Independent tasks check name introduction and first-meeting meaning.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Select an appropriate introduction in response to a teacher, then reuse social interaction in Lesson 0003."
+    }
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-HELLO-01",
+      "itemType": "word",
+      "displayForm": "hello",
+      "translationFa": "سلام",
+      "role": "review",
+      "lemma": "hello",
+      "partOfSpeech": "interjection",
+      "senseKey": "greeting",
+      "audioEligible": true
+    },
+    {
+      "lexicalKey": "EN-LEX-NAME-01",
+      "itemType": "word",
+      "displayForm": "name",
+      "translationFa": "اسم",
+      "role": "review",
+      "lemma": "name",
+      "partOfSpeech": "noun",
+      "senseKey": "personal_name",
+      "audioEligible": true
+    },
+    {
+      "lexicalKey": "EN-LEX-NICE-TO-MEET-YOU-01",
+      "itemType": "formula",
+      "displayForm": "nice to meet you",
+      "translationFa": "از آشنایی با تو خوشحالم",
+      "role": "target",
+      "audioEligible": true
+    },
+    {
+      "lexicalKey": "EN-LEX-TOO-01",
+      "itemType": "word",
+      "displayForm": "too",
+      "translationFa": "هم",
+      "role": "support",
+      "audioEligible": true,
+      "partOfSpeech": "adverb"
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "textEn": "Hello! What's your name?",
+      "translationFa": "سلام! اسمت چیه؟",
+      "audioRequired": true,
+      "characterKey": "maya"
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "textEn": "My name is Alex.",
+      "translationFa": "اسم من الکس است.",
+      "audioRequired": true,
+      "speechTargetEn": "My name is Alex.",
+      "acceptedSpeechEn": [
+        "My name is Alex."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "textEn": "I'm Maya. Nice to meet you.",
+      "translationFa": "من مایا هستم. از آشنایی با تو خوشحالم.",
+      "audioRequired": true,
+      "characterKey": "maya"
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "textEn": "Nice to meet you, too.",
+      "translationFa": "من هم از آشنایی با تو خوشحالم.",
+      "audioRequired": true,
+      "speechTargetEn": "Nice to meet you, too.",
+      "acceptedSpeechEn": [
+        "Nice to meet you, too."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "dialogue",
+      "instructionFa": "حرف مایا را بخوان و گوش کن، بعد پاسخ آماده را با صدای بلند بازخوانی کن.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "lexical_teach",
+      "instructionFa": "معنی این عبارت و کلمه را یاد بگیر.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-NICE-TO-MEET-YOU-01",
+          "EN-LEX-TOO-01"
+        ],
+        "explanationFa": "My name is Alex و I'm Alex هر دو برای معرفی اسم هستند. too در آخر پاسخ یعنی من هم همین حس را دارم."
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "sentence_order",
+      "instructionFa": "گوش کن و کلمه ها را به همان ترتیب بچین.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "is",
+          "Alex.",
+          "My",
+          "name"
+        ],
+        "answerTokensEn": [
+          "My",
+          "name",
+          "is",
+          "Alex."
+        ],
+        "answerEn": "My name is Alex.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "fill_blank",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "sentenceEn": "My ___ is Alex.",
+        "optionsEn": [
+          "hello",
+          "name",
+          "too"
+        ],
+        "answerIndex": 1
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "comprehension",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "sourceTurnKeys": [
+          "T03"
+        ],
+        "options": [
+          "می خواهد خداحافظی کند",
+          "اسم الکس را دوباره می پرسد",
+          "از آشنایی با الکس خوشحال است"
+        ],
+        "answerIndex": 2,
+        "transcriptAfterAttempt": true
+      },
+      "promptFa": "مایا با جمله آخرش چه پیامی می دهد؟"
+    },
+    {
+      "activityKey": "A06",
+      "type": "response_choice",
+      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "config": {
+        "optionsEn": [
+          "My name is Alex.",
+          "What's your name?",
+          "Nice to meet you."
+        ],
+        "answerIndex": 0
+      },
+      "promptFa": "معلم جدید می خواهد بداند اسمت چیست. کدام پاسخ مناسب است؟",
+      "metadata": {
+        "learningDemand": "changed_context",
+        "purpose": "Choose an introduction by communicative intent rather than reconstructing an audio model."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": true,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange"
+  }
+}

@@ -1,16 +1,12 @@
-# English → Persian
+# English → Persian Pilot
 
-This is the only active Nova course during the clean Content System v1 Pilot.
+Course/Level definitions: [course.source.json](course.source.json).
 
-- Learning language: English (`en`)
-- Base/UI language: Persian (`fa`)
-- Starting proficiency: absolute zero
-- Current scope: A1
-- Product runtime: `Course → Lesson → Activity`
-- First Pilot window: 3 Lessons, one at a time
-- MySQL target: 9.0.1
-- Audio is mandatory before a Pilot Lesson is complete
+Canonical Lessons:
+- [0001 — Greetings and names](lessons/0001/lesson.source.json)
+- [0002 — Meeting someone in class](lessons/0002/lesson.source.json)
+- [0003 — A quick chat before class](lessons/0003/lesson.source.json)
 
-Canonical course data lives in `course.source.json` and each Lesson in `lessons/NNNN/lesson.source.json`.
+Each Lesson has independent canonical, quality, Persian, audio and MySQL evidence. Pending owner decisions do not stop generation. Final educational review remains separate from technical completion.
 
-No previous English or German Nova content is an active source for this course.
+The prototype loads canonical sources and manifests through the generated Course catalog. It contains no copied dialogue, answers or audio paths.

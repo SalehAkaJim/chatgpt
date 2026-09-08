@@ -19,15 +19,8 @@ def normalize(value: str) -> str:
     return re.sub(r"[^a-z0-9']+", ' ', value, flags=re.I).strip()
 
 
-def main() -> int:
-    p = argparse.ArgumentParser()
-    p.add_argument('lesson', type=Path)
-    p.add_argument('--course', type=Path)
-    p.add_argument('--schema', type=Path, default=Path(__file__).resolve().parents[1] / 'lesson.source.schema.json')
-    args = p.parse_args()
-
-    lesson = load(args.lesson)
-    schema = load(args.schema)
+def validate(lesson: dict, course: dict | None = None, schema: dict | None = None) -> dict:
+    schema = schema or load(Path(__file__).resolve().parents[1] / 'lesson.source.schema.json')
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -35,8 +28,7 @@ def main() -> int:
         where = '.'.join(str(x) for x in err.absolute_path) or '<root>'
         errors.append(f'schema:{where}: {err.message}')
 
-    if args.course:
-        course = load(args.course)
+    if course is not None:
         if lesson.get('courseCode') != course.get('courseCode'):
             errors.append('lesson courseCode does not match Course source')
         levels = course.get('levels') or []
@@ -63,6 +55,9 @@ def main() -> int:
         if lesson.get('levelKey') not in set(level_keys):
             errors.append(f"unknown levelKey for Course: {lesson.get('levelKey')}")
 
+    if errors:
+        return {'status':'FAIL','lessonKey':lesson.get('lessonKey'),'errors':errors,'warnings':warnings}
+
     lexical = lesson.get('lexicalItems', [])
     lexical_keys = [x.get('lexicalKey') for x in lexical if x.get('lexicalKey')]
     if len(lexical_keys) != len(set(lexical_keys)):
@@ -84,6 +79,8 @@ def main() -> int:
         errors.append('duplicate or missing turnKey')
     for key, turn in turn_by_key.items():
         role = turn.get('role')
+        if role == 'character' and course is not None and turn.get('characterKey') not in {x.get('characterKey') for x in course.get('characters', [])}:
+            errors.append(f'{key}: unknown Course characterKey')
         if role == 'character' and not turn.get('characterKey'):
             errors.append(f'{key}: character turn requires characterKey')
         if role != 'character' and turn.get('characterKey'):
@@ -168,6 +165,8 @@ def main() -> int:
             audio_turn_key = cfg.get('audioSourceTurnKey')
             if not isinstance(tokens, list) or not isinstance(answer_tokens, list) or not answer:
                 errors.append(f'{label}: sentence_order requires tokensEn, answerTokensEn and answerEn')
+            elif ' '.join(answer_tokens) != answer:
+                errors.append(f'{label}: answerTokensEn must reconstruct answerEn exactly')
             elif sorted(tokens) != sorted(answer_tokens):
                 errors.append(f'{label}: shuffled tokens differ from answer tokens')
             if not audio_turn_key:
@@ -227,8 +226,18 @@ def main() -> int:
         'errors':errors,
         'warnings':warnings
     }
+    return report
+
+
+def main() -> int:
+    p = argparse.ArgumentParser()
+    p.add_argument('lesson', type=Path)
+    p.add_argument('--course', type=Path)
+    p.add_argument('--schema', type=Path, default=Path(__file__).resolve().parents[1] / 'lesson.source.schema.json')
+    args = p.parse_args()
+    report = validate(load(args.lesson), load(args.course) if args.course else None, load(args.schema))
     print(json.dumps(report, ensure_ascii=False, indent=2))
-    return 0 if not errors else 2
+    return 0 if report['status'] == 'PASS' else 2
 
 
 if __name__ == '__main__':

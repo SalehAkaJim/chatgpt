@@ -57,32 +57,38 @@ Curriculum and QA detail may be richer than the runtime database. Generated file
    - accepted speech quality;
    - meaningful learning progression.
 
-6. **Compiler output**
-   - deterministic runtime SQL generated from canonical Course/Level/Lesson data;
-   - Course-owned Level records are upserted before the Lesson;
-   - only product-needed fields are compiled to MySQL;
-   - Level-wide data is never duplicated into Lesson rows;
-   - authoring-only review decisions are not compiled into runtime metadata.
+6. **Audio generation and validation**
+   - route character, learner-reference and lexical audio from explicit voice mappings;
+   - reuse verified lexical assets across Lessons through the Course registry;
+   - text/voice/model changes get a distinct lexical asset identity and path;
+   - existing paid lexical assets are adopted from valid manifests without regeneration;
+   - validate actual decode, duration, voice, text, file hash and exact Lesson source hash;
+   - retain checkpoints when generation fails so a retry can reuse completed work.
 
-7. **Database validation**
-   - reset/create a clean **MySQL Server 9.0.1** database;
-   - apply the simple runtime schema;
-   - import the candidate Course/Level/Lesson SQL;
-   - execute representative Level/Lesson/Activity/Turn/lexical retrieval queries.
+7. **Compiler output**
+   - the compiler itself runs canonical/Course/Level and Content Quality gates;
+   - a score below 90 rejects both direct Python calls and command-line compilation;
+   - compile audio paths and durations from the validated manifest;
+   - compilation without an audio manifest emits a draft with null audio fields;
+   - SQL records both Lesson and Course source hashes;
+   - review.pendingDecisions stays outside runtime rows.
 
-8. **Human English audit during Pilot**
-   - render all learner-visible English into `english_audit.md`;
-   - corrections are made only in `lesson.source.json`, then derivatives regenerate.
+8. **Database validation**
+   - reset a disposable MySQL Server 9.0.1 test database;
+   - import every generated Lesson and retrieve its actual parent/content/audio fields;
+   - derive row expectations from canonical data, not a fixed Pilot count;
+   - test repeated imports and Level deletion while preserving sibling Levels.
 
-9. **Audio generation — mandatory**
-   - generate from the exact validated Lesson source;
-   - route character, learner-reference and lexical-item audio by explicit type/voice mapping;
-   - generate valid multiword lexical-item audio when the item is truly one vocabulary unit;
-   - full Turn sentences stay Turn audio;
-   - decode/duration/hash checks and manifest validation are mandatory.
+9. **Prototype and audit**
+   - the prototype reads the selected canonical Lesson, Course and audio manifest;
+   - generated courses/index.json enables Lesson selection without embedded content;
+   - stale source/audio pairs cannot be played as a current validated Lesson;
+   - english_audit.md records the Lesson source hash for the reviewed text.
 
 10. **Completion gate**
-   - a Pilot Lesson is technically complete only when canonical validation, quality score >=90, language audit, MySQL 9.0.1 execution and required audio pass for the same source hash.
+   - technical completion requires every gate for the same source hashes;
+   - manual/model review and final publication approval remain separate;
+   - bulk production stays disabled until the three-Lesson Pilot exit criteria pass.
 
 ## Pending owner decisions
 
@@ -90,7 +96,7 @@ A decision that needs product-owner input is not a reason to halt the content fa
 
 ## Hash integrity
 
-SQL, audit metadata and audio manifest are tied to the SHA-256 of the canonical Lesson source. A mismatched derivative is stale.
+SQL and database evidence record Course and Lesson SHA-256 hashes. Audit metadata and audio manifests record the exact Lesson source hash. A mismatched derivative is stale.
 
 ## Repair rule
 

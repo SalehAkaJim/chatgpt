@@ -44,12 +44,7 @@ def answer_signature(a, turns):
         return "|".join(out)
     return ""
 
-def main():
-    ap=argparse.ArgumentParser()
-    ap.add_argument("lesson",type=Path)
-    ap.add_argument("--policy",type=Path,required=True)
-    a=ap.parse_args()
-    l,p=load(a.lesson),load(a.policy)
+def evaluate(l, p):
     E,W=[],[]; lim=p["hardLimits"]; wt=p["warningThresholds"]
     turns_list=l.get("turns") or []; turns={x.get("turnKey"):x for x in turns_list if x.get("turnKey")}
     acts=l.get("activities") or []; lex=l.get("lexicalItems") or []
@@ -193,6 +188,15 @@ def main():
         "manualReview":{"status":"PENDING","dimensions":{x:None for x in p["manualReview"]["dimensions"]},"minimumAverage":p["manualReview"]["minimumAverage"],"minimumDimension":p["manualReview"]["minimumDimension"]},
         "metrics":{"targetLexicalItems":len(target),"targetConstructions":len(cons),"activities":len(acts),"learnerTurns":len(learners),"scoredGuidedLearnerTurns":len(scored_speech)}
     }
-    print(json.dumps(report,ensure_ascii=False,indent=2)); return 0 if ok else 2
+    return report
+
+def main():
+    ap=argparse.ArgumentParser()
+    ap.add_argument("lesson",type=Path)
+    ap.add_argument("--policy",type=Path,required=True)
+    a=ap.parse_args()
+    report=evaluate(load(a.lesson),load(a.policy))
+    print(json.dumps(report,ensure_ascii=False,indent=2))
+    return 0 if report["publishableByAutomatedQualityGate"] else 2
 
 if __name__=="__main__": sys.exit(main())
