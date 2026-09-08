@@ -6,5 +6,16 @@
   "courseSourceHash": "09146e3c4ae512c4e36bd64b2ba05ef6df3abac5908d79c982597c81ef6f1374",
   "activities": 5,
   "turns": 4,
-  "reimportPassed": true
+  "reimportPassed": true,
+  "stableIdsPassed": true,
+  "stableIdChecks": [
+    "identical_reimport",
+    "content_edit",
+    "reorder",
+    "insert",
+    "expanded_reimport",
+    "remove_absent_keys",
+    "sibling_isolation",
+    "foreign_key_references"
+  ]
 }
