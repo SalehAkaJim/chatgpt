@@ -5,7 +5,9 @@ on:
     branches: [main]
     paths:
       - 'nova/_assistant/content-system-v1/tools/reference_layer.py'
+      - 'nova/_assistant/content-system-v1/tools/reference_policy.py'
       - 'nova/_assistant/content-system-v1/tools/test_reference_layer.py'
+      - 'nova/_assistant/content-system-v1/tools/test_reference_policy.py'
       - 'nova/reference/**'
       - 'nova/courses/en-fa/lessons/**/lesson.source.json'
       - '.github/workflows/nova-reference-layer.yml'
@@ -22,8 +24,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Reference layer unit tests
+      - name: Reference ingestion tests
         run: python nova/_assistant/content-system-v1/tools/test_reference_layer.py
+      - name: Production reference policy tests
+        run: python nova/_assistant/content-system-v1/tools/test_reference_policy.py
 
   live-a1-reference:
     runs-on: ubuntu-latest
@@ -36,23 +40,23 @@ jobs:
         run: |
           python nova/_assistant/content-system-v1/tools/reference_layer.py sync \
             --level A1 \
-            --output /tmp/reference.a1.json
-      - name: Validate live snapshot
+            --output /tmp/reference.a1.raw.json
+      - name: Validate raw snapshot
         run: |
           python nova/_assistant/content-system-v1/tools/reference_layer.py validate \
-            --snapshot /tmp/reference.a1.json
-      - name: Compare current 20 A1 lessons
+            --snapshot /tmp/reference.a1.raw.json
+      - name: Build POS-safe production pool and compare lessons
         run: |
-          python nova/_assistant/content-system-v1/tools/reference_layer.py compare \
-            --level A1 \
-            --snapshot /tmp/reference.a1.json \
+          python nova/_assistant/content-system-v1/tools/reference_policy.py \
+            --snapshot /tmp/reference.a1.raw.json \
+            --pool-output /tmp/reference.a1.production.json \
             --lessons-root nova/courses/en-fa/lessons \
-            --output /tmp/a1-lesson-reference-report.json \
-            --fail-on-level-conflicts
+            --report-output /tmp/a1-lesson-reference-report.json
       - uses: actions/upload-artifact@v4
         with:
           name: nova-reference-a1
           path: |
-            /tmp/reference.a1.json
+            /tmp/reference.a1.raw.json
+            /tmp/reference.a1.production.json
             /tmp/a1-lesson-reference-report.json
           retention-days: 14
