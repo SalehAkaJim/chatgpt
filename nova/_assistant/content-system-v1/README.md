@@ -7,16 +7,17 @@ This directory is the only active rule/tool set for the clean Nova rebuild.
 - Active Course: English → Persian (`en-fa`)
 - Learner: Persian speaker starting from absolute zero
 - Current curriculum scope: A1
-- Runtime product model: `Course → Lesson → Activity`
-- Authoring source: one rich `lesson.source.json` per Lesson
+- Runtime product model: `Course → Level → Lesson → Activity`
+- Authoring source: Course source owns Level definitions; each Lesson source references one `levelKey`
 - Database target: MySQL Server 9.0.1
 - Audio: mandatory before Pilot completion
+- Automated Lesson quality score must be at least **90** before runtime import
 
 ## Core separation
 
 **Canonical source may be pedagogically rich; Runtime MySQL stays product-simple.**
 
-CEFR, outcomes, prerequisites, constructions, support language, lexical roles and QA metadata may exist in source/curriculum files without becoming runtime hierarchy tables.
+Level identity and Level-wide metadata live once at the Course/Level layer. Lessons store only their Level relationship, not duplicated CEFR/Level fields. Outcomes, prerequisites, constructions, support language, lexical roles and QA metadata may remain in canonical source without becoming extra runtime hierarchy tables.
 
 ## Active files
 
@@ -30,9 +31,14 @@ CEFR, outcomes, prerequisites, constructions, support language, lexical roles an
 - `08_pilot.md` — three-Lesson Pilot protocol
 - `09_next_step.md` — current execution order
 - `10_status.json` — machine-readable state
+- `11_content_quality.md` — automated quality, review and decision policy
 - `lesson.source.schema.json` — canonical Lesson schema
 - `tools/` — validator, audit renderer, SQL compiler and audio tools
-- `A1_OUTCOMES.md` — curriculum planning reference; it does not define runtime tables
+- `A1_OUTCOMES.md` — curriculum planning reference
+
+## Decision handling
+
+A Lesson may record unresolved product-owner choices under `review.pendingDecisions`. These decisions do **not** stop authoring, derivative generation, QA, or work on later Lessons. They remain visible for later review and are resolved when the product owner returns to them.
 
 ## Rule change
 
