@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   unit:
@@ -52,11 +52,48 @@ jobs:
             --pool-output /tmp/reference.a1.production.json \
             --lessons-root nova/courses/en-fa/lessons \
             --report-output /tmp/a1-lesson-reference-report.json
+      - name: Prepare versioned production files
+        run: |
+          mkdir -p nova/reference/snapshots/en-fa/a1 nova/reference/reports/en-fa
+          cp /tmp/reference.a1.production.json nova/reference/snapshots/en-fa/a1/lexical.production.json
+          cp /tmp/a1-lesson-reference-report.json nova/reference/reports/en-fa/a1-current-lessons.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          raw=json.loads(Path('/tmp/reference.a1.raw.json').read_text(encoding='utf-8'))
+          out={
+            'schemaVersion':'1.0.0',
+            'courseCode':'en-fa',
+            'level':'A1',
+            'sources':raw['sources'],
+            'sourcePolicy':raw['sourcePolicy'],
+            'grammarTargets':raw['grammarTargets'],
+          }
+          Path('nova/reference/snapshots/en-fa/a1/grammar.production.json').write_text(
+              json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: nova-reference-a1
           path: |
             /tmp/reference.a1.raw.json
-            /tmp/reference.a1.production.json
-            /tmp/a1-lesson-reference-report.json
+            nova/reference/snapshots/en-fa/a1/lexical.production.json
+            nova/reference/snapshots/en-fa/a1/grammar.production.json
+            nova/reference/reports/en-fa/a1-current-lessons.json
           retention-days: 14
+      - name: Commit validated snapshot to PR branch
+        if: github.event_name == 'pull_request' && github.actor != 'github-actions[bot]'
+        env:
+          BRANCH: ${{ github.head_ref }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$BRANCH"
+          git checkout "$BRANCH"
+          git add nova/reference/snapshots/en-fa/a1 nova/reference/reports/en-fa/a1-current-lessons.json
+          if git diff --cached --quiet; then
+            echo "Reference snapshot unchanged."
+          else
+            git commit -m "Snapshot Nova A1 reference data"
+            git push origin "$BRANCH"
+          fi
