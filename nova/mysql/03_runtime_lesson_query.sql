@@ -9,7 +9,8 @@ SET @lesson_id=(
   FROM lessons l
   JOIN levels lv ON lv.id=l.level_id
   JOIN courses c ON c.id=lv.course_id
-  WHERE c.course_key=@course_key AND l.lesson_key=@lesson_key
+  WHERE c.course_key=CONVERT(@course_key USING utf8mb4) COLLATE utf8mb4_unicode_ci
+    AND l.lesson_key=CONVERT(@lesson_key USING utf8mb4) COLLATE utf8mb4_unicode_ci
   ORDER BY lv.sort_order,l.sort_order
   LIMIT 1
 );
