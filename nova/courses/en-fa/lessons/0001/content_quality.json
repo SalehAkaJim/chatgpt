@@ -1,0 +1,66 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0001",
+  "hardGatePass": true,
+  "automatedScore": 88,
+  "minimumAutomatedScore": 80,
+  "publishableByAutomatedQualityGate": true,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "my name is alex",
+        "activityKeys": [
+          "A01",
+          "A03"
+        ]
+      }
+    },
+    {
+      "code": "CQ-W03",
+      "message": "Absolute-zero Lesson is near a configured new-material ceiling.",
+      "data": {
+        "targetLexical": 2,
+        "targetConstructions": 3
+      }
+    },
+    {
+      "code": "CQ-W05",
+      "message": "Fill-blank distractor may be trivially eliminable by proper-name/surface cue.",
+      "data": {
+        "activityKey": "A04",
+        "correct": "name",
+        "distractors": [
+          "hello",
+          "Maya"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "status": "PENDING",
+    "dimensions": {
+      "englishNaturalness": null,
+      "persianMeaningQuality": null,
+      "pedagogicalClarity": null,
+      "distractorQuality": null,
+      "dialoguePlausibility": null,
+      "difficultyFit": null,
+      "repetitionUsefulness": null,
+      "transferQuality": null,
+      "overallCoherence": null,
+      "learnerExperience": null
+    },
+    "minimumAverage": 4.0,
+    "minimumDimension": 3
+  },
+  "metrics": {
+    "targetLexicalItems": 2,
+    "targetConstructions": 3,
+    "activities": 5,
+    "learnerTurns": 3,
+    "scoredGuidedLearnerTurns": 2
+  }
+}
