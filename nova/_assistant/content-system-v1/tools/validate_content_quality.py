@@ -56,6 +56,7 @@ def main():
     target=[x for x in lex if x.get("role")=="target"]
     cons=((l.get("curriculum") or {}).get("targetConstructions") or [])
     absolute=((l.get("curriculum") or {}).get("startingKnowledge")=="absolute_zero")
+    pending_decisions=((l.get("review") or {}).get("pendingDecisions") or [])
 
     if not str(l.get("primaryOutcomeKey") or "").strip() or not str(l.get("outcomeFa") or "").strip():
         issue(E,"CQ-H01","Lesson requires one concrete primary communicative outcome.")
@@ -170,13 +171,28 @@ def main():
             if correct[:1].islower() and any(x[:1].isupper() for x in ds if x):
                 issue(W,"CQ-W05","Fill-blank distractor may be trivially eliminable by proper-name/surface cue.",activityKey=act.get("activityKey"),correct=correct,distractors=ds)
 
-    if str(l.get("cefrLevel") or "").upper()=="A1":
+    if str(l.get("levelKey") or "").upper()=="A1":
         for tk in scored_speech:
             wc=len(words((turns.get(tk) or {}).get("speechTargetEn")))
             if wc>lim["a1MaxScoredSpeechWords"]: issue(W,"CQ-W06","A1 scored speech target is long.",turnKey=tk,words=wc)
 
     penalties=p.get("warningPenalties") or {}; score=max(0,100-sum(penalties.get(x["code"],0) for x in W)); ok=not E and score>=p["minimumAutomatedScore"]
-    report={"status":"FAIL" if E else ("PASS_WITH_WARNINGS" if W else "PASS"),"lessonKey":l.get("lessonKey"),"hardGatePass":not E,"automatedScore":score,"minimumAutomatedScore":p["minimumAutomatedScore"],"publishableByAutomatedQualityGate":ok,"errors":E,"warnings":W,"manualReview":{"status":"PENDING","dimensions":{x:None for x in p["manualReview"]["dimensions"]},"minimumAverage":p["manualReview"]["minimumAverage"],"minimumDimension":p["manualReview"]["minimumDimension"]},"metrics":{"targetLexicalItems":len(target),"targetConstructions":len(cons),"activities":len(acts),"learnerTurns":len(learners),"scoredGuidedLearnerTurns":len(scored_speech)}}
+    report={
+        "status":"FAIL" if E else ("PASS_WITH_WARNINGS" if W else "PASS"),
+        "lessonKey":l.get("lessonKey"),
+        "levelKey":l.get("levelKey"),
+        "hardGatePass":not E,
+        "automatedScore":score,
+        "minimumAutomatedScore":p["minimumAutomatedScore"],
+        "publishableByAutomatedQualityGate":ok,
+        "requiresUserDecision":bool(pending_decisions),
+        "authoringBlockedByPendingDecisions":False,
+        "pendingDecisions":pending_decisions,
+        "errors":E,
+        "warnings":W,
+        "manualReview":{"status":"PENDING","dimensions":{x:None for x in p["manualReview"]["dimensions"]},"minimumAverage":p["manualReview"]["minimumAverage"],"minimumDimension":p["manualReview"]["minimumDimension"]},
+        "metrics":{"targetLexicalItems":len(target),"targetConstructions":len(cons),"activities":len(acts),"learnerTurns":len(learners),"scoredGuidedLearnerTurns":len(scored_speech)}
+    }
     print(json.dumps(report,ensure_ascii=False,indent=2)); return 0 if ok else 2
 
 if __name__=="__main__": sys.exit(main())
