@@ -110,7 +110,7 @@ async function complete(number, mutate=null, review=false) {
   home.w.document.getElementById('feedbackContinue').click();
   const response=home.w.document.querySelector('.bubble.you .en').textContent;
   home.w.document.getElementById('homeBtn').click();
-  assert.equal(home.w.document.getElementById('startBtn').textContent,'ادامهٔ درس');
+  assert.equal(home.w.document.getElementById('startBtn').textContent,'ادامه درس');
   home.w.document.getElementById('startBtn').click();
   for(let i=0;i<100 && !home.w.document.querySelector('.bubble.you');i++)await settle();
   assert.equal(home.w.document.querySelector('.bubble.you .en').textContent,response,'Resume must retain the exchange, not restart the dialogue');

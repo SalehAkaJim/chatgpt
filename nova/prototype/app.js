@@ -141,7 +141,7 @@ function renderExchange(activity, exchange, host) {
   const mic = button('🎙', () => startSpeech(response, state, mic, response.acceptedSpeechEn || [response.speechTargetEn]), 'mic');
   mic.setAttribute('aria-label', 'بازخوانی پاسخ');
   wrap.append(mic, state);
-  if (testMode) wrap.append(button('ادامهٔ مرور بدون میکروفن', skipSpeech, 'test-pass'));
+  if (testMode) wrap.append(button('ادامه مرور بدون میکروفن', skipSpeech, 'test-pass'));
   card.append(wrap); host.append(card); $('nextBtn').hidden = true;
 }
 function revealTranscript(config, host) {
@@ -250,7 +250,7 @@ function showStep(index) {
     const mic = button('🎙', () => startSpeech(null, state, mic, activity.config.acceptedAnswersEn), 'mic');
     mic.setAttribute('aria-label', 'بازخوانی پاسخ');
     host.append(mic, state); $('nextBtn').hidden = true;
-    if (testMode) host.append(button('ادامهٔ مرور بدون میکروفن', skipSpeech, 'test-pass'));
+    if (testMode) host.append(button('ادامه مرور بدون میکروفن', skipSpeech, 'test-pass'));
   } else { host.append(el('p', 'status-error', 'این نوع تمرین هنوز در نمایشگر پشتیبانی نمی شود.')); $('nextBtn').disabled = true; }
 }
 $('nextBtn').onclick = () => { if (!feedbackOpen && !advancing && !$('nextBtn').disabled && check) check(); };
@@ -280,10 +280,10 @@ function showHome() {
   const next = unfinished || catalog.find(entry => {
     const saved = sessions.get(entryKey(entry)); return !saved?.completedPractice && !saved?.reviewed;
   }) || catalog[0];
-  $('nextLessonLabel').textContent = completed === catalog.length && !unfinished ? 'یک بار دیگه تمرین کن' : unfinished ? 'ادامهٔ درس' : 'درس بعدی';
+  $('nextLessonLabel').textContent = completed === catalog.length && !unfinished ? 'یک بار دیگه تمرین کن' : unfinished ? 'ادامه درس' : 'درس بعدی';
   $('nextLessonTitle').textContent = next.titleFa;
   $('nextLessonSummary').textContent = completed === catalog.length && !unfinished ? 'هر سه درس رو دیدی؛ می‌تونی دوباره تمرینشون کنی.' : 'مکالمه، شنیدن و تمرین کوتاه';
-  $('startBtn').textContent = unfinished ? 'ادامهٔ درس' : completed === catalog.length ? 'مرور دوباره' : 'شروع درس';
+  $('startBtn').textContent = unfinished ? 'ادامه درس' : completed === catalog.length ? 'مرور دوباره' : 'شروع درس';
   $('startBtn').onclick = () => loadLesson(next);
   const list = $('lessonList'); list.replaceChildren();
   catalog.forEach((entry, index) => {
@@ -291,7 +291,7 @@ function showHome() {
     const completed = saved?.completedPractice || saved?.reviewed;
     const node = button('', () => loadLesson(entry), 'lesson-link' + (completed ? ' completed' : ''));
     const text = el('span', 'lesson-copy');
-    text.append(el('span', 'lesson-title', entry.titleFa), el('span', 'lesson-state', saved?.completedPractice ? 'تمرین شد' : saved?.reviewed ? 'مرور شد' : saved?.position ? 'ادامه بده' : 'آمادهٔ شروع'));
+    text.append(el('span', 'lesson-title', entry.titleFa), el('span', 'lesson-state', saved?.completedPractice ? 'تمرین شد' : saved?.reviewed ? 'مرور شد' : saved?.position ? 'ادامه بده' : 'آماده شروع'));
     node.append(el('span', 'lesson-number', completed ? '✓' : faNumber(index + 1)), text, el('span', 'lesson-arrow', '‹'));
     list.append(node);
   });
