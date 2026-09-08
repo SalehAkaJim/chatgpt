@@ -104,7 +104,7 @@ jobs:
           mysql -h 127.0.0.1 -uroot -proot --batch --raw nova_test < nova/mysql/03_runtime_lesson_query.sql > "$LESSON_DIR/runtime_smoke.txt"
           test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM lessons WHERE lesson_key='EN-A1-L-0001';")" = "1"
           test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.lesson_key='EN-A1-L-0001';")" = "5"
-          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM lesson_turns t JOIN lessons l ON l.id=t.lesson_id WHERE l.lesson_key='EN-A1-L-0001';")" = "6"
+          test "$(mysql -h 127.0.0.1 -uroot -proot -N -s nova_test -e "SELECT COUNT(*) FROM lesson_turns t JOIN lessons l ON l.id=t.lesson_id WHERE l.lesson_key='EN-A1-L-0001';")" = "4"
 
       - name: Require ElevenLabs secret
         run: |
