@@ -14,6 +14,29 @@ The learner should usually interact with one clear interlocutor at a time in ear
 - Every task must make clear what the learner should understand or do.
 - Dialogue exists for natural communication, not to manufacture repetition.
 
+## Guided dialogue — default conversation UX
+
+A dialogue is authored as canonical Turns but presented as a sequence of guided exchanges.
+
+Each exchange contains:
+1. one character prompt Turn;
+2. one learner response Turn.
+
+One exchange = one learner-facing step.
+
+For every guided exchange:
+- the character prompt is visible and available as audio;
+- Persian support may be shown when needed;
+- the learner response text is visible;
+- the learner may hear a model recording of the response;
+- the learner reads the response aloud;
+- STT checks the expected response or accepted alternatives when `responseEvaluation=stt`;
+- `practice_only` is allowed for support language that should be practised but not counted toward scored mastery.
+
+A three-exchange conversation therefore renders as three dialogue steps, not one long transcript screen.
+
+Do not add a separate `speak` Activity merely to repeat a learner response that was already practised inside guided dialogue. Standalone `speak` remains available only when it has a distinct pedagogical job such as later retrieval, transfer, or focused production.
+
 ## Product Activity types
 
 The runtime currently supports:
@@ -29,7 +52,7 @@ The runtime currently supports:
 - `lexical_teach`
 - `response_choice`
 
-Normal Lessons use only the smallest useful set. The first Pilot Lesson deliberately includes the five core interactions requested for product testing: dialogue, speak/STT, sentence order, three-option fill blank, and dialogue comprehension.
+Normal Lessons use only the smallest useful set. The first Pilot Lesson tests guided dialogue with integrated speaking/STT, sentence order, three-option fill blank, and dialogue comprehension.
 
 ## Exposure
 
@@ -37,10 +60,12 @@ New English first appears where meaning is recoverable. At absolute zero, listen
 
 ## Speaking
 
-Speaking may serve:
-1. modelled production with visible target;
-2. retrieval from a clear cue;
-3. transfer to a changed context.
+Speaking can be embedded in guided dialogue or used as a standalone Activity.
+
+Standalone speaking may serve:
+1. retrieval after support is reduced;
+2. transfer to a changed context;
+3. focused production that is not already covered by dialogue.
 
 STT checks expected wording or valid alternatives. STT alone is not treated as an exact pronunciation score.
 
