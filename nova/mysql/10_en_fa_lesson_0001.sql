@@ -1,8 +1,8 @@
 -- Generated from canonical Course/Level/Lesson source. Do not edit by hand.
 -- lessonKey: EN-A1-L-0001
 -- levelKey: A1
--- sourceHash: f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262
--- courseSourceHash: 09146e3c4ae512c4e36bd64b2ba05ef6df3abac5908d79c982597c81ef6f1374
+-- sourceHash: c49818a3df8c59e420f93b6d64e0f22caeb87852693955c24f11ed279168e699
+-- courseSourceHash: fd843ed93d678519367b0c70ec3a0c0d9d4642994421943e702d63c88dec4d61
 SET NAMES utf8mb4;
 START TRANSACTION;
 
@@ -18,11 +18,19 @@ ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),title=VALUES(title),title_
 SET @level_id=(SELECT id FROM levels WHERE course_id=@course_id AND level_key='A1' LIMIT 1);
 
 INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
-VALUES (@course_id,'maya','Maya','female','vexa','{"roleFa":"شخصیت اصلی مکالمه های ابتدایی"}',1)
+VALUES (@course_id,'maya','Maya','female','vexa','{"roleFa":"همکلاسی الکس؛ از روز اول با او آشناست"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'nora','Nora','female','lori','{"roleFa":"همکلاسی تازه الکس؛ اهل کانادا و همراه او در کلاس و کافه"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'ben','Ben','male','adam','{"roleFa":"کارمند کافه نزدیک کلاس؛ سفارش الکس را می گیرد"}',1)
 ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
 
 INSERT INTO lessons (level_id,lesson_key,sort_order,title,title_translation,description,primary_outcome_key,estimated_duration_sec,source_hash,status,metadata)
-VALUES (@level_id,'EN-A1-L-0001',1,'Hello! What''s your name?','سلام! اسمت چیه؟','اولین مکالمه کوتاه: سلام کردن، معرفی خود و پرسیدن اسم.','A1-INTERACTION-GREET-NAME',420,'f97afe16d37ad76a87d025c3ac2c8517123ac485d98fa60a5bc75153e504d262','validated','{"outcomeFa":"زبان آموز می تواند سلام کند، خودش را کوتاه معرفی کند و اسم طرف مقابل را بپرسد.","scenarioFa":"برای اولین بار با مایا آشنا می شوی.","prerequisiteOutcomeKeys":[],"curriculum":{"startingKnowledge":"absolute_zero","targetConstructions":[{"key":"EN-CONSTR-IM-NAME","form":"I''m + name","meaningFa":"برای معرفی کوتاه اسم"},{"key":"EN-CONSTR-WHATS-YOUR-NAME","form":"What''s your name?","meaningFa":"برای پرسیدن اسم طرف مقابل"}],"supportLanguage":[],"assessmentBoundary":"Guided dialogue responses are practice only; mastery evidence comes from independent activities after the dialogue.","transferPlan":{"mode":"deferred","targetLesson":"EN-A1-L-0002","intent":"Reuse greeting and name language in a changed first-meeting context, then introduce My name is + name and polite first-meeting language."}},"pilot":true,"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange"}')
+VALUES (@level_id,'EN-A1-L-0001',1,'Hello! What''s your name?','سلام! اسمت چیه؟','اولین مکالمه کوتاه: سلام کردن، معرفی خود و پرسیدن اسم.','A1-INTERACTION-GREET-NAME',420,'c49818a3df8c59e420f93b6d64e0f22caeb87852693955c24f11ed279168e699','validated','{"outcomeFa":"زبان آموز می تواند سلام کند، خودش را کوتاه معرفی کند و اسم طرف مقابل را بپرسد.","scenarioFa":"برای اولین بار با مایا آشنا می شوی.","prerequisiteOutcomeKeys":[],"curriculum":{"startingKnowledge":"absolute_zero","targetConstructions":[{"key":"EN-CONSTR-IM-NAME","form":"I''m + name","meaningFa":"برای معرفی کوتاه اسم"},{"key":"EN-CONSTR-WHATS-YOUR-NAME","form":"What''s your name?","meaningFa":"برای پرسیدن اسم طرف مقابل"}],"supportLanguage":[],"assessmentBoundary":"Guided dialogue responses are practice only; mastery evidence comes from independent activities after the dialogue.","transferPlan":{"mode":"deferred","targetLesson":"EN-A1-L-0002","intent":"Reuse greeting and name language in a changed first-meeting context, then introduce My name is + name and polite first-meeting language."},"story":{"arcKey":"EN-A1-CLASS-AND-CAFE","sceneKey":"EN-A1-SCENE-0001","learnerRoleKey":"alex","participants":["maya"],"firstMeetings":["maya"],"dependsOnLessonKeys":[],"settingFa":"ورودی کلاس، روز اول","storyBeatFa":"الکس و مایا برای اولین بار اسم هم را می پرسند."},"reviewLinks":[]},"pilot":true,"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange"}')
 ON DUPLICATE KEY UPDATE level_id=VALUES(level_id),sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),primary_outcome_key=VALUES(primary_outcome_key),estimated_duration_sec=VALUES(estimated_duration_sec),source_hash=VALUES(source_hash),status=VALUES(status),metadata=VALUES(metadata);
 SET @lesson_id=(SELECT id FROM lessons WHERE level_id=@level_id AND lesson_key='EN-A1-L-0001' LIMIT 1);
 DELETE FROM lesson_lexical_items WHERE lesson_id=@lesson_id;

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "mysqlVersion": "9.0.1",
+  "lessonKey": "EN-A1-L-0007",
+  "sourceHash": "ca761f2e3a442937c4d29e4a7f2fb47ebe4159e99768d3d8450c6ae72d76cca1",
+  "courseSourceHash": "fd843ed93d678519367b0c70ec3a0c0d9d4642994421943e702d63c88dec4d61",
+  "activities": 5,
+  "turns": 5,
+  "reimportPassed": true,
+  "stableIdsPassed": true,
+  "stableIdChecks": [
+    "identical_reimport",
+    "content_edit",
+    "reorder",
+    "insert",
+    "expanded_reimport",
+    "remove_absent_keys",
+    "sibling_isolation",
+    "foreign_key_references"
+  ]
+}

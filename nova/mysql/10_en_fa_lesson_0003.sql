@@ -1,8 +1,8 @@
 -- Generated from canonical Course/Level/Lesson source. Do not edit by hand.
 -- lessonKey: EN-A1-L-0003
 -- levelKey: A1
--- sourceHash: 2aafd351351c9684151258a119ca40ef2fdd41ea152331693fabf9bdf43f15d5
--- courseSourceHash: 09146e3c4ae512c4e36bd64b2ba05ef6df3abac5908d79c982597c81ef6f1374
+-- sourceHash: d498804f6aded17e2a10253e452407f07a1af290b0160f490ddf02051e615033
+-- courseSourceHash: fd843ed93d678519367b0c70ec3a0c0d9d4642994421943e702d63c88dec4d61
 SET NAMES utf8mb4;
 START TRANSACTION;
 
@@ -18,11 +18,19 @@ ON DUPLICATE KEY UPDATE sort_order=VALUES(sort_order),title=VALUES(title),title_
 SET @level_id=(SELECT id FROM levels WHERE course_id=@course_id AND level_key='A1' LIMIT 1);
 
 INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
-VALUES (@course_id,'maya','Maya','female','vexa','{"roleFa":"شخصیت اصلی مکالمه های ابتدایی"}',1)
+VALUES (@course_id,'maya','Maya','female','vexa','{"roleFa":"همکلاسی الکس؛ از روز اول با او آشناست"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'nora','Nora','female','lori','{"roleFa":"همکلاسی تازه الکس؛ اهل کانادا و همراه او در کلاس و کافه"}',1)
+ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
+
+INSERT INTO characters (course_id,character_key,name,gender,voice_key,profile,is_active)
+VALUES (@course_id,'ben','Ben','male','adam','{"roleFa":"کارمند کافه نزدیک کلاس؛ سفارش الکس را می گیرد"}',1)
 ON DUPLICATE KEY UPDATE name=VALUES(name),gender=VALUES(gender),voice_key=VALUES(voice_key),profile=VALUES(profile),is_active=1;
 
 INSERT INTO lessons (level_id,lesson_key,sort_order,title,title_translation,description,primary_outcome_key,estimated_duration_sec,source_hash,status,metadata)
-VALUES (@level_id,'EN-A1-L-0003',3,'A quick chat before class','یک احوالپرسی کوتاه','در راهرو با مایا احوالپرسی می کنی و پیش از رفتن به کلاس خداحافظی می کنی.','A1-INTERACTION-GREET-STATE-CLOSE',420,'2aafd351351c9684151258a119ca40ef2fdd41ea152331693fabf9bdf43f15d5','validated','{"outcomeFa":"زبان آموز می تواند حال طرف مقابل را بپرسد، یک پاسخ کوتاه بدهد و گفت و گو را دوستانه تمام کند.","scenarioFa":"قبل از شروع کلاس، مایا را در راهرو می بینی. نقش تو الکس است.","prerequisiteOutcomeKeys":["A1-INTERACTION-GREET-NAME","A1-INTERACTION-FIRST-MEETING"],"curriculum":{"startingKnowledge":"greetings_and_introductions","targetConstructions":[{"key":"EN-CONSTR-IM-STATE","form":"I''m + adjective","meaningFa":"گفتن حال خود با همان شروع آشنای معرفی"}],"supportLanguage":["Good! is a supported acknowledgement, not scored mastery."],"assessmentBoundary":"Guided speech remains practice. Independent tasks distinguish asking a name, asking about wellbeing, and closing an encounter.","transferPlan":{"mode":"same_lesson","intent":"Use a farewell in the changed context of leaving class; distinguish social functions using previously learned alternatives."}},"pilot":true,"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange"}')
+VALUES (@level_id,'EN-A1-L-0003',3,'A quick chat before class','یک احوالپرسی کوتاه','در راهرو با مایا احوالپرسی می کنی و پیش از رفتن به کلاس خداحافظی می کنی.','A1-INTERACTION-GREET-STATE-CLOSE',420,'d498804f6aded17e2a10253e452407f07a1af290b0160f490ddf02051e615033','validated','{"outcomeFa":"زبان آموز می تواند حال طرف مقابل را بپرسد، یک پاسخ کوتاه بدهد و گفت و گو را دوستانه تمام کند.","scenarioFa":"قبل از شروع کلاس، مایا را در راهرو می بینی. نقش تو الکس است.","prerequisiteOutcomeKeys":["A1-INTERACTION-GREET-NAME","A1-INTERACTION-FIRST-MEETING"],"curriculum":{"startingKnowledge":"greetings_and_introductions","targetConstructions":[{"key":"EN-CONSTR-IM-STATE","form":"I''m + adjective","meaningFa":"گفتن حال خود با همان شروع آشنای معرفی"}],"supportLanguage":["Good! is a supported acknowledgement, not scored mastery."],"assessmentBoundary":"Guided speech remains practice. Independent tasks distinguish asking a name, asking about wellbeing, and closing an encounter.","transferPlan":{"mode":"same_lesson","intent":"Use a farewell in the changed context of leaving class; distinguish social functions using previously learned alternatives."},"story":{"arcKey":"EN-A1-CLASS-AND-CAFE","sceneKey":"EN-A1-SCENE-0003","learnerRoleKey":"alex","participants":["maya"],"firstMeetings":[],"dependsOnLessonKeys":["EN-A1-L-0001","EN-A1-L-0002"],"settingFa":"راهرو، پیش از کلاس بعدی","storyBeatFa":"مایا و الکس هم را می شناسند؛ فقط احوالپرسی می کنند."},"reviewLinks":[{"lessonKey":"EN-A1-L-0002","activityKeys":["A05"],"learningDemand":"recognition","note":"Distinguish a wellbeing question from the earlier name question."}]},"pilot":true,"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange"}')
 ON DUPLICATE KEY UPDATE level_id=VALUES(level_id),sort_order=VALUES(sort_order),title=VALUES(title),title_translation=VALUES(title_translation),description=VALUES(description),primary_outcome_key=VALUES(primary_outcome_key),estimated_duration_sec=VALUES(estimated_duration_sec),source_hash=VALUES(source_hash),status=VALUES(status),metadata=VALUES(metadata);
 SET @lesson_id=(SELECT id FROM lessons WHERE level_id=@level_id AND lesson_key='EN-A1-L-0003' LIMIT 1);
 DELETE FROM lesson_lexical_items WHERE lesson_id=@lesson_id;

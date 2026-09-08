@@ -1,4 +1,4 @@
-<!-- sourceHash: 82b78bc377b0a9c357b9a4a1d51cfbd64b1fa8c46e1b086d5b9d0b69e07bb4e4 -->
+<!-- sourceHash: db6dbb23c9aa561f707144e5395403ffb5208bb76e9817c820572dac459ce4d6 -->
 # English Audit — EN-A1-L-0002
 
 **Lesson:** Meeting someone in class
@@ -13,7 +13,7 @@
 
 ## Dialogue turns
 
-**T01 · maya**
+**T01 · nora**
 
 Hello! What's your name?
 
@@ -24,9 +24,9 @@ My name is Alex.
 - **Speech target:** My name is Alex.
 - **Accepted speech:** My name is Alex.
 
-**T03 · maya**
+**T03 · nora**
 
-I'm Maya. Nice to meet you.
+I'm Nora. Nice to meet you.
 
 **T04 · learner**
 
