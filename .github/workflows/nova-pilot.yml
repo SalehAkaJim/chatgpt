@@ -61,10 +61,12 @@ jobs:
 
       - name: Validate Persian orthography
         run: |
+          set -o pipefail
           python nova/_assistant/content-system-v1/tools/validate_persian_text.py "$COURSE" "$LESSON" "$PROTOTYPE" | tee "$LESSON_DIR/persian_validation.json"
 
       - name: Validate canonical Lesson
         run: |
+          set -o pipefail
           python nova/_assistant/content-system-v1/tools/validate_lesson.py "$LESSON" | tee "$LESSON_DIR/validation.json"
 
       - name: Render English audit
@@ -96,6 +98,7 @@ jobs:
 
       - name: Validate audio manifest and files
         run: |
+          set -o pipefail
           python nova/_assistant/content-system-v1/tools/validate_audio_manifest.py "$LESSON" "$LESSON_DIR/audio.manifest.json" --repo-root . | tee "$LESSON_DIR/audio_validation.json"
 
       - name: Commit Pilot outputs
