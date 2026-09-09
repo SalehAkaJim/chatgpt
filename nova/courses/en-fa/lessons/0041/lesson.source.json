@@ -1,0 +1,368 @@
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0041",
+  "sortOrder": 41,
+  "titleEn": "I make coffee",
+  "titleFa": "قهوه درست می‌کنم",
+  "descriptionFa": "با make هدف کوتاه این درس را تمرین کن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0041",
+  "outcomeFa": "make را در یک موقعیت کوتاه و طبیعی به کار ببری.",
+  "scenarioFa": "لیام برای نشست کتاب قهوه و چای درست می‌کند و با make درباره کارش حرف می‌زند.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0040"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0041-MAKE",
+        "form": "I make + drink.",
+        "meaningFa": "گفتن این که یک نوشیدنی را آماده یا درست می‌کنی"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "What do you make?",
+        "meaningFa": "چی درست می‌کنی؟"
+      },
+      {
+        "form": "The coffee is here.",
+        "meaningFa": "قهوه اینجاست."
+      }
+    ],
+    "assessmentBoundary": "The Lesson introduces only the bounded A1 use of make shown here and does not claim broader sense mastery.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Recombine make in a second tightly controlled turn with familiar language."
+    },
+    "story": {
+      "arcKey": "EN-A1-LIBRARY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0041",
+      "learnerRoleKey": "liam",
+      "participants": [
+        "liam",
+        "leo"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0035",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0035"
+      ],
+      "settingFa": "کتابخانه، میز نوشیدنی نشست",
+      "storyBeatFa": "لیام برای نشست کتاب قهوه و چای درست می‌کند و با make درباره کارش حرف می‌زند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0035",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning arc is spaced and learner role is deliberately rotated."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0041",
+      "specHash": "27733cd7352e0da856abfbe64f57d8658a909061f826ed475f0443cade340659",
+      "grammarTargetKeys": [
+        "CEFRJ-GRAM-58"
+      ],
+      "reviewLexicalLemmas": [
+        "coffee",
+        "tea"
+      ],
+      "usageFallbacks": [
+        {
+          "query": "I make coffee",
+          "rationale": "Bounded natural A1 use selected for make."
+        },
+        {
+          "query": "I make tea too",
+          "rationale": "Same-Lesson transfer for make with familiar language."
+        },
+        {
+          "query": "do you make",
+          "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you make"
+        }
+      ]
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-MAKE-01",
+      "itemType": "word",
+      "displayForm": "make",
+      "translationFa": "انجام دادن",
+      "role": "target",
+      "lemma": "make",
+      "partOfSpeech": "verb",
+      "senseKey": "engage_in",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-39C6EB767664D6211984"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "itemType": "word",
+      "displayForm": "coffee",
+      "translationFa": "قهوه",
+      "role": "review",
+      "lemma": "coffee",
+      "partOfSpeech": "noun",
+      "senseKey": "coffee_beverage",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-DF86C36C215439FDE741"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "itemType": "word",
+      "displayForm": "tea",
+      "translationFa": "چای",
+      "role": "review",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "senseKey": "tea_beverage",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-C86BD7B12371D318284C"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "The coffee is here. What do you make?",
+      "translationFa": "قهوه اینجاست. چی درست می‌کنی؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "I make coffee.",
+      "translationFa": "قهوه درست می‌کنم.",
+      "audioRequired": true,
+      "speechTargetEn": "I make coffee.",
+      "acceptedSpeechEn": [
+        "I make coffee."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "And the tea?",
+      "translationFa": "و چای؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "I make tea too.",
+      "translationFa": "چای هم درست می‌کنم.",
+      "audioRequired": true,
+      "speechTargetEn": "I make tea too.",
+      "acceptedSpeechEn": [
+        "I make tea too."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی make را در جمله پیدا کن.",
+      "promptFa": "make در این درس چه معنی‌ای دارد؟",
+      "promptEn": "I make coffee.",
+      "config": {
+        "options": [
+          "انجام دادن",
+          "یک معنی نامربوط",
+          "نام یک شخص"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این کلمه نام شخص نیست."
+          ],
+          "correctFa": "انجام دادن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف‌های leo را گوش کن و جواب liam را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را گوش کن.",
+      "promptFa": "کدام جواب گفته شد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "قهوه درست می‌کنم.",
+          "چای هم درست می‌کنم.",
+          "هیچ‌کدام"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش دوم است.",
+            "یک جواب روشن گفته می‌شود."
+          ],
+          "correctFa": "قهوه درست می‌کنم."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "sentence_order",
+      "instructionFa": "جواب اول را گوش کن و جمله را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "coffee.",
+          "make",
+          "I"
+        ],
+        "answerTokensEn": [
+          "I",
+          "make",
+          "coffee."
+        ],
+        "answerEn": "I make coffee.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی.",
+          "retryFa": "دوباره به صدا گوش کن."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "و چای؟",
+      "config": {
+        "optionsEn": [
+          "I make tea too.",
+          "I make coffee.",
+          "People like coffee."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش اول است.",
+            "این جمله نامربوط است."
+          ],
+          "correctFa": "چای هم درست می‌کنم."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "liam هستی. بگو: چای هم درست می‌کنم.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "I make tea too.",
+        "acceptedAnswersEn": [
+          "I make tea too."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از make و کلمات آشنای درس استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ هدف را در موقعیت دوم بازیابی کردی.",
+          "retryFa": "جمله کوتاه همین گفت‌وگو را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval in a changed controlled context."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}

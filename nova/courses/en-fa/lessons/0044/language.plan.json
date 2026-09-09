@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0044",
+  "sortOrder": 44,
+  "levelKey": "A1",
+  "lessonSourceHash": "cf1d7b2a224982203f4fb96e6236fa7864e5be974da9f0a3a0a93b4e4385cea7",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0044-BACK",
+      "form": "Come back.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-BACK-01",
+      "lemma": "back",
+      "role": "target",
+      "referenceKey": "EN-REF-1A4E4A764F5FC7232175",
+      "spokenPriority": {
+        "lemma": "back",
+        "spokenRank": 85,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B AE1 K",
+        "arpabet": [
+          "B AE1 K"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "come back",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0044"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0044-BACK"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "here come back please",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0044"
+      ],
+      "lexicalLemmas": [
+        "back"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "here come back please",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: here come back please"
+      }
+    },
+    {
+      "query": "i come back",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0044"
+      ],
+      "lexicalLemmas": [
+        "back"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i come back",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: i come back"
+      }
+    },
+    {
+      "query": "yes come back with the",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0044"
+      ],
+      "lexicalLemmas": [
+        "back"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes come back with the",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: yes come back with the"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "b964cd96c2847e334f9fb2076e778b95d63008bd306abe8fb79b08eb1668b5f8"
+}

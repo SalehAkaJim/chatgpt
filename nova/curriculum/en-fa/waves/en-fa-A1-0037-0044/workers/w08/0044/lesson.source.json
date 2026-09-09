@@ -1,1 +1,351 @@
-{"schemaVersion":"2.2.0","contentSystemVersion":"1","courseCode":"en-fa","levelKey":"A1","lessonKey":"EN-A1-L-0044","sortOrder":44,"titleEn":"Come in","titleFa":"بیا داخل","descriptionFa":"آیریس برای راهنمایی نینا دو دستور مثبت و کوتاه و کاربردی می‌دهد.","primaryOutcomeKey":"A1-INTERACTION-AFFIRMATIVE-IMPERATIVE","outcomeFa":"زبان‌آموز می‌تواند با شکل ساده فعل یک دستور یا راهنمایی مثبت کوتاه بدهد.","scenarioFa":"نینا به اتاق برنامه رسیده و نمی‌داند کجا بنشیند. نقش تو آیریس است و با دو دستور دوستانه راهنمایی‌اش می‌کنی.","prerequisiteOutcomeKeys":[],"curriculum":{"startingKnowledge":"early_a1_canonical_prefix_36","targetConstructions":[{"key":"EN-CONSTR-COME-IN","form":"Come in.","meaningFa":"دعوت کردن کسی به داخل"},{"key":"EN-CONSTR-SIT-HERE","form":"Sit here.","meaningFa":"گفتن به کسی که اینجا بنشیند"}],"supportLanguage":[{"form":"Here?","meaningFa":"اینجا؟"},{"form":"Okay.","meaningFa":"باشه."}],"assessmentBoundary":"Score only the two short target patterns in this Lesson; surrounding story language is support and no new lexical item is scored.","transferPlan":{"mode":"same_lesson","intent":"Use the same grammar target in a second familiar micro-context with a different surface sentence."},"story":{"arcKey":"EN-A1-COMMUNITY","sceneKey":"EN-A1-FACTORY-SCENE-0044","learnerRoleKey":"iris","participants":["iris","nina"],"introducedCharacterKeys":[],"relationshipState":"already_known","continuesLessonKey":"EN-A1-L-0038","dependsOnLessonKeys":["EN-A1-L-0038"],"settingFa":"مرکز محله، ورودی اتاق برنامه","storyBeatFa":"نینا به اتاق برنامه رسیده و نمی‌داند کجا بنشیند. نقش تو آیریس است و با دو دستور دوستانه راهنمایی‌اش می‌کنی."},"reviewLinks":[{"lessonKey":"EN-A1-L-0038","activityKeys":["A02"],"learningDemand":"retrieval","note":"The story arc returns after the required spacing with the learner role varied from the prior scene where applicable."}],"languageReference":{"specKey":"en-fa-A1-LESSON-SPEC-0044","specHash":"932d52a25fa868c3871a197b53269db62980481dea74d39bdde557c60ebf9d3f","grammarTargetKeys":["CEFRJ-GRAM-117"],"reviewLexicalLemmas":[],"usageFallbacks":[{"query":"come in","rationale":"Short transparent A1 target pattern selected from the committed grammar candidate and practiced in a bounded story context."},{"query":"sit here","rationale":"Second same-Lesson example provides recombination/transfer without adding a scored lexical target."}]},"pedagogyVersion":2},"lexicalItems":[],"turns":[{"turnKey":"T01","role":"character","characterKey":"nina","textEn":"Here?","translationFa":"اینجا؟","audioRequired":true},{"turnKey":"T02","role":"learner","characterKey":"iris","textEn":"Come in.","translationFa":"بیا داخل.","audioRequired":true,"speechTargetEn":"Come in.","acceptedSpeechEn":["Come in."]},{"turnKey":"T03","role":"character","characterKey":"nina","textEn":"Okay.","translationFa":"باشه.","audioRequired":true},{"turnKey":"T04","role":"learner","characterKey":"iris","textEn":"Sit here.","translationFa":"اینجا بشین.","audioRequired":true,"speechTargetEn":"Sit here.","acceptedSpeechEn":["Sit here."],"metadata":{"usage":"changed_context_transfer"}}],"activities":[{"activityKey":"A01","type":"response_choice","instructionFa":"معنی ساختار اصلی را از موقعیت پیدا کن.","promptFa":"دعوت کردن کسی به داخل کدام است؟","config":{"options":["بیا داخل.","اینجا بشین.","یک معنی نامرتبط"],"answerIndex":0,"feedback":{"optionsFa":["درست است؛ این همان معنی جمله هدف است.","این جمله مربوط به مثال دوم درس است.","این معنی با موقعیت و ساختار هدف جور نیست."],"correctFa":"درست است."}},"metadata":{"learningDemand":"recognition","evidenceKind":"recognition_or_selection"}},{"activityKey":"A02","type":"dialogue","instructionFa":"جمله طرف مقابل را گوش کن و در نقش خودت جواب بده.","config":{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E02","promptTurnKey":"T03","responseTurnKey":"T04","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}},{"activityKey":"A03","type":"sentence_order","instructionFa":"با تکیه به صدا، جمله اول را دوباره بساز.","config":{"tokensEn":["in.","Come"],"answerTokensEn":["Come","in."],"answerEn":"Come in.","audioSourceTurnKey":"T02","showAnswerTextBeforeAttempt":false,"allowAudioReplay":true,"hideTokenSurfaceCues":true,"practiceOnly":true},"metadata":{"learningDemand":"reconstruction","evidenceKind":"practice_only"}},{"activityKey":"A04","type":"fill_blank","instructionFa":"گزینه‌ای را انتخاب کن که جمله درست ساخته شود.","promptFa":"جای خالی را کامل کن.","config":{"sentenceEn":"___ in.","optionsEn":["Comes","Come","Coming"],"answerIndex":1,"feedback":{"optionsFa":["این گزینه با ساختار هدف این جمله درست نیست.","این گزینه ساختار هدف را درست می‌سازد.","این گزینه در این جای جمله مناسب نیست."],"correctFa":"درست است؛ شکل هدف را انتخاب کردی."}},"metadata":{"learningDemand":"controlled_production","evidenceKind":"scored_selection"}},{"activityKey":"A05","type":"comprehension","instructionFa":"فقط به جمله اول طرف مقابل گوش کن.","promptFa":"نینا اول کجاست؟","config":{"sourceTurnKeys":["T01"],"options":["جلوی ورودی اتاق","کافه","کتابخانه"],"answerIndex":0,"showTranscript":false,"showTranslation":false,"transcriptBeforeAttempt":false,"feedback":{"optionsFa":["درست است؛ از همان سرنخ شنیداری می‌شود فهمید.","این گزینه در جمله شنیداری نبود.","این گزینه با موقعیت شنیده‌شده جور نیست."],"correctFa":"درست است."}},"metadata":{"learningDemand":"listening_comprehension","evidenceKind":"scored_listening"}},{"activityKey":"A06","type":"speak","instructionFa":"از روی معنی، جمله دوم را خودت بگو.","promptFa":"بگو اینجا بنشین، بدون دیدن جواب انگلیسی.","config":{"mode":"retrieval","textEn":"Sit here.","acceptedAnswersEn":["Sit here."],"showAnswerTextBeforeAttempt":false,"modelAccess":"explicit_help","evidenceKind":"bounded_retrieval","hintFa":"از الگوی اصلی همین درس استفاده کن.","feedback":{"retryFa":"یک بار دیگر با همان الگوی کوتاه امتحان کن."}},"metadata":{"learningDemand":"retrieval","purpose":"changed_context_transfer"}}],"metadata":{"pilot":true,"status":"draft","factoryWave":"en-fa-A1-0037-0044","authoringMode":"parallel-draft"}}
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0044",
+  "sortOrder": 44,
+  "titleEn": "Come back",
+  "titleFa": "برگرد",
+  "descriptionFa": "با back هدف کوتاه این درس را تمرین کن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0044",
+  "outcomeFa": "back را در یک موقعیت کوتاه و طبیعی به کار ببری.",
+  "scenarioFa": "بن برای برداشتن کتاب دور شده و آوا از او می‌خواهد به میز برگردد.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0043"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0044-BACK",
+        "form": "Come back.",
+        "meaningFa": "درخواست یا دستور برای برگشتن به جای قبلی"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Come back, please.",
+        "meaningFa": "لطفا برگرد."
+      },
+      {
+        "form": "The book is here.",
+        "meaningFa": "کتاب اینجاست."
+      }
+    ],
+    "assessmentBoundary": "The Lesson introduces only the bounded A1 use of back shown here and does not claim broader sense mastery.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Recombine back in a second tightly controlled turn with familiar language."
+    },
+    "story": {
+      "arcKey": "EN-A1-CAFE",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0044",
+      "learnerRoleKey": "ben",
+      "participants": [
+        "ben",
+        "ava"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0038",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0038"
+      ],
+      "settingFa": "کافه، میز کنار پنجره",
+      "storyBeatFa": "بن برای برداشتن کتاب دور شده و آوا از او می‌خواهد به میز برگردد."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0038",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning arc is spaced and learner role is deliberately rotated."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0044",
+      "specHash": "932d52a25fa868c3871a197b53269db62980481dea74d39bdde557c60ebf9d3f",
+      "grammarTargetKeys": [
+        "CEFRJ-GRAM-58"
+      ],
+      "reviewLexicalLemmas": [
+        "book"
+      ],
+      "usageFallbacks": [
+        {
+          "query": "Okay. I come back",
+          "rationale": "Bounded natural A1 use selected for back."
+        },
+        {
+          "query": "Yes. Come back with the book",
+          "rationale": "Same-Lesson transfer for back with familiar language."
+        }
+      ]
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-BACK-01",
+      "itemType": "word",
+      "displayForm": "back",
+      "translationFa": "برگشت به جای قبل",
+      "role": "target",
+      "lemma": "back",
+      "partOfSpeech": "adverb",
+      "senseKey": "toward_former_location",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-1A4E4A764F5FC7232175"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "itemType": "word",
+      "displayForm": "book",
+      "translationFa": "کتاب",
+      "role": "review",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "senseKey": "physical_book",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "ava",
+      "textEn": "The book is here. Come back, please.",
+      "translationFa": "کتاب اینجاست. لطفا برگرد.",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "ben",
+      "textEn": "Okay. I come back.",
+      "translationFa": "باشه. برمی‌گردم.",
+      "audioRequired": true,
+      "speechTargetEn": "Okay. I come back.",
+      "acceptedSpeechEn": [
+        "Okay. I come back."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "ava",
+      "textEn": "With the book?",
+      "translationFa": "با کتاب؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "ben",
+      "textEn": "Yes. Come back with the book.",
+      "translationFa": "بله. با کتاب برگرد.",
+      "audioRequired": true,
+      "speechTargetEn": "Yes. Come back with the book.",
+      "acceptedSpeechEn": [
+        "Yes. Come back with the book."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی back را در جمله پیدا کن.",
+      "promptFa": "back در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Okay. I come back.",
+      "config": {
+        "options": [
+          "برگشت به جای قبل",
+          "یک معنی نامربوط",
+          "نام یک شخص"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این کلمه نام شخص نیست."
+          ],
+          "correctFa": "برگشت به جای قبل"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف‌های ava را گوش کن و جواب ben را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را گوش کن.",
+      "promptFa": "کدام جواب گفته شد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "باشه. برمی‌گردم.",
+          "بله. با کتاب برگرد.",
+          "هیچ‌کدام"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش دوم است.",
+            "یک جواب روشن گفته می‌شود."
+          ],
+          "correctFa": "باشه. برمی‌گردم."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "sentence_order",
+      "instructionFa": "جواب اول را گوش کن و جمله را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "back.",
+          "come",
+          "I",
+          "Okay."
+        ],
+        "answerTokensEn": [
+          "Okay.",
+          "I",
+          "come",
+          "back."
+        ],
+        "answerEn": "Okay. I come back.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی.",
+          "retryFa": "دوباره به صدا گوش کن."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "با کتاب؟",
+      "config": {
+        "optionsEn": [
+          "Yes. Come back with the book.",
+          "Okay. I come back.",
+          "People like coffee."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش اول است.",
+            "این جمله نامربوط است."
+          ],
+          "correctFa": "بله. با کتاب برگرد."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "ben هستی. بگو: بله. با کتاب برگرد.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Yes. Come back with the book.",
+        "acceptedAnswersEn": [
+          "Yes. Come back with the book."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از back و کلمات آشنای درس استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ هدف را در موقعیت دوم بازیابی کردی.",
+          "retryFa": "جمله کوتاه همین گفت‌وگو را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval in a changed controlled context."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}

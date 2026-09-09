@@ -3,7 +3,7 @@
   "courseCode": "en-fa",
   "levelKey": "A1",
   "generatedLessonsMode": "auto",
-  "generatedLessonCount": 36,
+  "generatedLessonCount": 44,
   "generatedLessons": [
     1,
     2,
@@ -40,12 +40,20 @@
     33,
     34,
     35,
-    36
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
   ],
-  "lastLessonSortOrder": 36,
-  "nextLessonSortOrder": 37,
-  "nextSpecPath": "nova/curriculum/en-fa/specs/0037.json",
-  "nextSpecHash": "355ef01ba8394c8cdb92b8aa8198da906947ce215cd5939406cb1dabb8e4321e",
+  "lastLessonSortOrder": 44,
+  "nextLessonSortOrder": 45,
+  "nextSpecPath": "nova/curriculum/en-fa/specs/0045.json",
+  "nextSpecHash": "23eea3815e8c8dc70cfd8a7866d32db4d426dbdf620210984251a54ebcc5f6b3",
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
   "languagePlans": [
@@ -209,9 +217,9 @@
       "status": "PASS",
       "warnings": [
         "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
-        "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
+        "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
@@ -467,6 +475,86 @@
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 2,
       "usageEvidenceCount": 1
+    },
+    {
+      "lessonKey": "EN-A1-L-0037",
+      "sortOrder": 37,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 3,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0038",
+      "sortOrder": 38,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 4,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0039",
+      "sortOrder": 39,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 3,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0040",
+      "sortOrder": 40,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 3,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0041",
+      "sortOrder": 41,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 3,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0042",
+      "sortOrder": 42,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 3,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0043",
+      "sortOrder": 43,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 3,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0044",
+      "sortOrder": 44,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 2,
+      "usageEvidenceCount": 4
     }
   ],
   "curriculumSpecReports": [
@@ -605,6 +693,110 @@
       "status": "PASS",
       "errors": [],
       "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0037",
+      "sortOrder": 37,
+      "specKey": "en-fa-A1-LESSON-SPEC-0037",
+      "specHash": "355ef01ba8394c8cdb92b8aa8198da906947ce215cd5939406cb1dabb8e4321e",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'book' was not marked due by the curriculum engine",
+        "review lexical lemma 'pen' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0038",
+      "sortOrder": 38,
+      "specKey": "en-fa-A1-LESSON-SPEC-0038",
+      "specHash": "a3e9786bb9c76bf6a499630a2925f052a9c264cab64235db30d22acedadf29f2",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'book' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0039",
+      "sortOrder": 39,
+      "specKey": "en-fa-A1-LESSON-SPEC-0039",
+      "specHash": "eae538334436847eadf366f6afbeea1a7ba731fd50b56a2f7fd6e43bd19286ed",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'new' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0040",
+      "sortOrder": 40,
+      "specKey": "en-fa-A1-LESSON-SPEC-0040",
+      "specHash": "a8a5414ee76dab00cd66af7b638f5b58abea419a8b59dd216d3b61f1076593c7",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'book' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0041",
+      "sortOrder": 41,
+      "specKey": "en-fa-A1-LESSON-SPEC-0041",
+      "specHash": "27733cd7352e0da856abfbe64f57d8658a909061f826ed475f0443cade340659",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'tea' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0042",
+      "sortOrder": 42,
+      "specKey": "en-fa-A1-LESSON-SPEC-0042",
+      "specHash": "b638aded7684829bcb237c4c855ca93946ea404b3712452a67073f851b2159e4",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'book' was not marked due by the curriculum engine",
+        "review lexical lemma 'pen' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0043",
+      "sortOrder": 43,
+      "specKey": "en-fa-A1-LESSON-SPEC-0043",
+      "specHash": "91c6ccdc9450c7cfff93c2b8312d8c998650569485a7e55b62753eed52c6c804",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0044",
+      "sortOrder": 44,
+      "specKey": "en-fa-A1-LESSON-SPEC-0044",
+      "specHash": "bc5ff8c92eadfba710030bec0d446be3391b8818639e76c2fbb190412181c638",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'book' was not marked due by the curriculum engine"
+      ]
     }
   ],
   "status": "PASS",

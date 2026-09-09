@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0043",
+  "sortOrder": 43,
+  "levelKey": "A1",
+  "lessonSourceHash": "703101945db4c6b984cc2bd7bbb35478b3c73d6f190c5cfc3d6cd062625d6962",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0043-THEN",
+      "form": "action, then action",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-THEN-01",
+      "lemma": "then",
+      "role": "target",
+      "referenceKey": "EN-REF-BE697DC952E39C4808D0",
+      "spokenPriority": {
+        "lemma": "then",
+        "spokenRank": 46,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "DH EH1 N",
+        "arpabet": [
+          "DH EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-READ-01",
+      "lemma": "read",
+      "role": "review",
+      "referenceKey": "EN-REF-F4E87C743D4964D90BCD",
+      "spokenPriority": {
+        "lemma": "read",
+        "spokenRank": 153,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R EH1 D",
+        "arpabet": [
+          "R EH1 D",
+          "R IY1 D"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-HELP-01",
+      "lemma": "help",
+      "role": "review",
+      "referenceKey": "EN-REF-76A0FAF42C7FB7906AA5",
+      "spokenPriority": {
+        "lemma": "help",
+        "spokenRank": 209,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "HH EH1 L P",
+        "arpabet": [
+          "HH EH1 L P"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "action then action",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0043"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0043-THEN"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "then i help",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0043"
+      ],
+      "lexicalLemmas": [
+        "then"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "Then I help",
+        "rationale": "Bounded natural A1 use selected for then."
+      }
+    },
+    {
+      "query": "read then",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0043"
+      ],
+      "lexicalLemmas": [
+        "then"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "read then",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: read then"
+      }
+    },
+    {
+      "query": "read then help",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0043"
+      ],
+      "lexicalLemmas": [
+        "then"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "read then help",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: read then help"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "423356590ec216b54fd446a384b41a89b34890408d07d41b58e4866301fe8981"
+}

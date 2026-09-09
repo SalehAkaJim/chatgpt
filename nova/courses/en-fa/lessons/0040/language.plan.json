@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0040",
+  "sortOrder": 40,
+  "levelKey": "A1",
+  "lessonSourceHash": "63c8e3433f80a0432b4c944011f10d8b81b71ef13505b2fe32ec92935612569a",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0040-KNOW",
+      "form": "I know this + noun.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-KNOW-01",
+      "lemma": "know",
+      "role": "target",
+      "referenceKey": "EN-REF-D277A31EE85CEBDF62F6",
+      "spokenPriority": {
+        "lemma": "know",
+        "spokenRank": 17,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N OW1",
+        "arpabet": [
+          "N OW1"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "lemma": "pen",
+      "role": "review",
+      "referenceKey": "EN-REF-E7158161767216455400",
+      "spokenPriority": {
+        "lemma": "pen",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P EH1 N",
+        "arpabet": [
+          "P EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i know this",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0040"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0040-KNOW"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "do you know this book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0040"
+      ],
+      "lexicalLemmas": [
+        "know"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "do you know this book",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you know this book"
+      }
+    },
+    {
+      "query": "yes i know this book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0040"
+      ],
+      "lexicalLemmas": [
+        "know"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes i know this book",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: yes i know this book"
+      }
+    },
+    {
+      "query": "i know this pen",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0040"
+      ],
+      "lexicalLemmas": [
+        "know"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "I know this pen",
+        "rationale": "Same-Lesson transfer for know with familiar language."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "0e9bdf08befdd137870ed6c7d94a27252a12ccb09e9937a9299b25180621d0e8"
+}

@@ -1,1 +1,364 @@
-{"schemaVersion":"2.2.0","contentSystemVersion":"1","courseCode":"en-fa","levelKey":"A1","lessonKey":"EN-A1-L-0043","sortOrder":43,"titleEn":"I like walking","titleFa":"پیاده‌روی دوست دارم","descriptionFa":"نورا درباره کارهایی که دوست دارد با یک شکل -ing ساده حرف می‌زند.","primaryOutcomeKey":"A1-INTERACTION-LIKE-VING","outcomeFa":"زبان‌آموز می‌تواند بعد از like یک فعالیت ساده با شکل -ing بگوید.","scenarioFa":"اوون درباره برنامه بعدازظهر حرف می‌زند. نقش تو نورا است و دو فعالیت ساده‌ای را که دوست داری می‌گویی.","prerequisiteOutcomeKeys":[],"curriculum":{"startingKnowledge":"early_a1_canonical_prefix_36","targetConstructions":[{"key":"EN-CONSTR-I-LIKE-WALKING","form":"I like walking.","meaningFa":"گفتن این که پیاده‌روی را دوست داری"},{"key":"EN-CONSTR-I-LIKE-READING","form":"I like reading.","meaningFa":"گفتن این که مطالعه را دوست داری"}],"supportLanguage":[{"form":"Walking?","meaningFa":"پیاده‌روی؟"},{"form":"Reading?","meaningFa":"مطالعه؟"}],"assessmentBoundary":"Score only the two short target patterns in this Lesson; surrounding story language is support and no new lexical item is scored.","transferPlan":{"mode":"same_lesson","intent":"Use the same grammar target in a second familiar micro-context with a different surface sentence."},"story":{"arcKey":"EN-A1-NEIGHBORS","sceneKey":"EN-A1-FACTORY-SCENE-0043","learnerRoleKey":"nora","participants":["nora","owen"],"introducedCharacterKeys":[],"relationshipState":"already_known","continuesLessonKey":"EN-A1-L-0037","dependsOnLessonKeys":["EN-A1-L-0037"],"settingFa":"حیاط ساختمان، بعدازظهر","storyBeatFa":"اوون درباره برنامه بعدازظهر حرف می‌زند. نقش تو نورا است و دو فعالیت ساده‌ای را که دوست داری می‌گویی."},"reviewLinks":[{"lessonKey":"EN-A1-L-0037","activityKeys":["A02"],"learningDemand":"retrieval","note":"The story arc returns after the required spacing with the learner role varied from the prior scene where applicable."}],"languageReference":{"specKey":"en-fa-A1-LESSON-SPEC-0043","specHash":"e7853176e2da580a9aee40264bf001d7f0ac474507b5c15d8b06afae43f0b8c0","grammarTargetKeys":["CEFRJ-GRAM-105"],"reviewLexicalLemmas":[],"usageFallbacks":[{"query":"i like walking","rationale":"Short transparent A1 target pattern selected from the committed grammar candidate and practiced in a bounded story context."},{"query":"i like reading","rationale":"Second same-Lesson example provides recombination/transfer without adding a scored lexical target."}]},"pedagogyVersion":2},"lexicalItems":[],"turns":[{"turnKey":"T01","role":"character","characterKey":"owen","textEn":"Walking?","translationFa":"پیاده‌روی؟","audioRequired":true},{"turnKey":"T02","role":"learner","characterKey":"nora","textEn":"I like walking.","translationFa":"پیاده‌روی دوست دارم.","audioRequired":true,"speechTargetEn":"I like walking.","acceptedSpeechEn":["I like walking."]},{"turnKey":"T03","role":"character","characterKey":"owen","textEn":"Reading?","translationFa":"مطالعه؟","audioRequired":true},{"turnKey":"T04","role":"learner","characterKey":"nora","textEn":"I like reading.","translationFa":"مطالعه دوست دارم.","audioRequired":true,"speechTargetEn":"I like reading.","acceptedSpeechEn":["I like reading."],"metadata":{"usage":"changed_context_transfer"}}],"activities":[{"activityKey":"A01","type":"response_choice","instructionFa":"معنی ساختار اصلی را از موقعیت پیدا کن.","promptFa":"گفتن این که پیاده‌روی را دوست داری کدام است؟","config":{"options":["پیاده‌روی دوست دارم.","مطالعه دوست دارم.","یک معنی نامرتبط"],"answerIndex":0,"feedback":{"optionsFa":["درست است؛ این همان معنی جمله هدف است.","این جمله مربوط به مثال دوم درس است.","این معنی با موقعیت و ساختار هدف جور نیست."],"correctFa":"درست است."}},"metadata":{"learningDemand":"recognition","evidenceKind":"recognition_or_selection"}},{"activityKey":"A02","type":"dialogue","instructionFa":"جمله طرف مقابل را گوش کن و در نقش خودت جواب بده.","config":{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E02","promptTurnKey":"T03","responseTurnKey":"T04","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}},{"activityKey":"A03","type":"sentence_order","instructionFa":"با تکیه به صدا، جمله اول را دوباره بساز.","config":{"tokensEn":["like","walking.","I"],"answerTokensEn":["I","like","walking."],"answerEn":"I like walking.","audioSourceTurnKey":"T02","showAnswerTextBeforeAttempt":false,"allowAudioReplay":true,"hideTokenSurfaceCues":true,"practiceOnly":true},"metadata":{"learningDemand":"reconstruction","evidenceKind":"practice_only"}},{"activityKey":"A04","type":"fill_blank","instructionFa":"گزینه‌ای را انتخاب کن که جمله درست ساخته شود.","promptFa":"جای خالی را کامل کن.","config":{"sentenceEn":"I like ___.","optionsEn":["read","reading","reads"],"answerIndex":1,"feedback":{"optionsFa":["این گزینه با ساختار هدف این جمله درست نیست.","این گزینه ساختار هدف را درست می‌سازد.","این گزینه در این جای جمله مناسب نیست."],"correctFa":"درست است؛ شکل هدف را انتخاب کردی."}},"metadata":{"learningDemand":"controlled_production","evidenceKind":"scored_selection"}},{"activityKey":"A05","type":"comprehension","instructionFa":"فقط به جمله اول طرف مقابل گوش کن.","promptFa":"اوون اول درباره کدام فعالیت می‌پرسد؟","config":{"sourceTurnKeys":["T01"],"options":["پیاده‌روی","آشپزی","خرید"],"answerIndex":0,"showTranscript":false,"showTranslation":false,"transcriptBeforeAttempt":false,"feedback":{"optionsFa":["درست است؛ از همان سرنخ شنیداری می‌شود فهمید.","این گزینه در جمله شنیداری نبود.","این گزینه با موقعیت شنیده‌شده جور نیست."],"correctFa":"درست است."}},"metadata":{"learningDemand":"listening_comprehension","evidenceKind":"scored_listening"}},{"activityKey":"A06","type":"speak","instructionFa":"از روی معنی، جمله دوم را خودت بگو.","promptFa":"بگو مطالعه را دوست داری، بدون دیدن جواب انگلیسی.","config":{"mode":"retrieval","textEn":"I like reading.","acceptedAnswersEn":["I like reading."],"showAnswerTextBeforeAttempt":false,"modelAccess":"explicit_help","evidenceKind":"bounded_retrieval","hintFa":"از الگوی اصلی همین درس استفاده کن.","feedback":{"retryFa":"یک بار دیگر با همان الگوی کوتاه امتحان کن."}},"metadata":{"learningDemand":"retrieval","purpose":"changed_context_transfer"}}],"metadata":{"pilot":true,"status":"draft","factoryWave":"en-fa-A1-0037-0044","authoringMode":"parallel-draft"}}
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0043",
+  "sortOrder": 43,
+  "titleEn": "Read, then help",
+  "titleFa": "بخوان، بعد کمک کن",
+  "descriptionFa": "با then هدف کوتاه این درس را تمرین کن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0043",
+  "outcomeFa": "then را در یک موقعیت کوتاه و طبیعی به کار ببری.",
+  "scenarioFa": "آیریس ترتیب دو کار را می‌گوید و نینا با then کار بعدی را بیان می‌کند.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0042"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0043-THEN",
+        "form": "action, then action",
+        "meaningFa": "وصل کردن دو کار و نشان دادن این که دومی بعد از اولی است"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Read first. What next?",
+        "meaningFa": "اول بخوان. بعدش چی؟"
+      },
+      {
+        "form": "The book is here.",
+        "meaningFa": "کتاب اینجاست."
+      }
+    ],
+    "assessmentBoundary": "The Lesson introduces only the bounded A1 use of then shown here and does not claim broader sense mastery.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Recombine then in a second tightly controlled turn with familiar language."
+    },
+    "story": {
+      "arcKey": "EN-A1-COMMUNITY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0043",
+      "learnerRoleKey": "nina",
+      "participants": [
+        "nina",
+        "iris"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0037",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0037"
+      ],
+      "settingFa": "مرکز محله، میز برنامه گروه",
+      "storyBeatFa": "آیریس ترتیب دو کار را می‌گوید و نینا با then کار بعدی را بیان می‌کند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0037",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning arc is spaced and learner role is deliberately rotated."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0043",
+      "specHash": "e7853176e2da580a9aee40264bf001d7f0ac474507b5c15d8b06afae43f0b8c0",
+      "grammarTargetKeys": [
+        "CEFRJ-GRAM-58"
+      ],
+      "reviewLexicalLemmas": [
+        "read",
+        "help"
+      ],
+      "usageFallbacks": [
+        {
+          "query": "Then I help",
+          "rationale": "Bounded natural A1 use selected for then."
+        },
+        {
+          "query": "Read, then help",
+          "rationale": "Same-Lesson transfer for then with familiar language."
+        }
+      ]
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-THEN-01",
+      "itemType": "word",
+      "displayForm": "then",
+      "translationFa": "بعد، سپس",
+      "role": "target",
+      "lemma": "then",
+      "partOfSpeech": "adverb",
+      "senseKey": "subsequently",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-BE697DC952E39C4808D0"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-READ-01",
+      "itemType": "word",
+      "displayForm": "read",
+      "translationFa": "خواندن",
+      "role": "review",
+      "lemma": "read",
+      "partOfSpeech": "verb",
+      "senseKey": "interpret_written_text",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-F4E87C743D4964D90BCD"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-HELP-01",
+      "itemType": "word",
+      "displayForm": "help",
+      "translationFa": "کمک کردن",
+      "role": "review",
+      "lemma": "help",
+      "partOfSpeech": "verb",
+      "senseKey": "assist",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-76A0FAF42C7FB7906AA5"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "The book is here. Read first. What next?",
+      "translationFa": "کتاب اینجاست. اول بخوان. بعدش چی؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Then I help.",
+      "translationFa": "بعد کمک می‌کنم.",
+      "audioRequired": true,
+      "speechTargetEn": "Then I help.",
+      "acceptedSpeechEn": [
+        "Then I help."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Read, then...?",
+      "translationFa": "بخوان، بعد...؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Read, then help.",
+      "translationFa": "بخوان، بعد کمک کن.",
+      "audioRequired": true,
+      "speechTargetEn": "Read, then help.",
+      "acceptedSpeechEn": [
+        "Read, then help."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی then را در جمله پیدا کن.",
+      "promptFa": "then در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Then I help.",
+      "config": {
+        "options": [
+          "بعد، سپس",
+          "یک معنی نامربوط",
+          "نام یک شخص"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این کلمه نام شخص نیست."
+          ],
+          "correctFa": "بعد، سپس"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف‌های iris را گوش کن و جواب nina را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را گوش کن.",
+      "promptFa": "کدام جواب گفته شد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "بعد کمک می‌کنم.",
+          "بخوان، بعد کمک کن.",
+          "هیچ‌کدام"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش دوم است.",
+            "یک جواب روشن گفته می‌شود."
+          ],
+          "correctFa": "بعد کمک می‌کنم."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "sentence_order",
+      "instructionFa": "جواب اول را گوش کن و جمله را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "help.",
+          "I",
+          "Then"
+        ],
+        "answerTokensEn": [
+          "Then",
+          "I",
+          "help."
+        ],
+        "answerEn": "Then I help.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی.",
+          "retryFa": "دوباره به صدا گوش کن."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "بخوان، بعد...؟",
+      "config": {
+        "optionsEn": [
+          "Read, then help.",
+          "Then I help.",
+          "People like coffee."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش اول است.",
+            "این جمله نامربوط است."
+          ],
+          "correctFa": "بخوان، بعد کمک کن."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "nina هستی. بگو: بخوان، بعد کمک کن.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Read, then help.",
+        "acceptedAnswersEn": [
+          "Read, then help."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از then و کلمات آشنای درس استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ هدف را در موقعیت دوم بازیابی کردی.",
+          "retryFa": "جمله کوتاه همین گفت‌وگو را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval in a changed controlled context."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}

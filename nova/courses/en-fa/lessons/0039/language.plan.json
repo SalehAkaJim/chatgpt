@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0039",
+  "sortOrder": 39,
+  "levelKey": "A1",
+  "lessonSourceHash": "3a39aa13ae4044f2499c0bfe27c066f8109cc694c7fdb01b568fcf131e674a34",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0039-FIRST",
+      "form": "the first + noun",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-FIRST-01",
+      "lemma": "first",
+      "role": "target",
+      "referenceKey": "EN-REF-197973A0FC02917F1CE5",
+      "spokenPriority": {
+        "lemma": "first",
+        "spokenRank": 113,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "F ER1 S T",
+        "arpabet": [
+          "F ER1 S T"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "lemma": "room",
+      "role": "review",
+      "referenceKey": "EN-REF-D8B2B1429B2580871B77",
+      "spokenPriority": {
+        "lemma": "room",
+        "spokenRank": 301,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R UW1 M",
+        "arpabet": [
+          "R UW1 M"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-NEW-01",
+      "lemma": "new",
+      "role": "review",
+      "referenceKey": "EN-REF-B6BF7C8C4C3EA87A7547",
+      "spokenPriority": {
+        "lemma": "new",
+        "spokenRank": 177,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N UW1",
+        "arpabet": [
+          "N UW1",
+          "N Y UW1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the first",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0039"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0039-FIRST"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "is the first room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0039"
+      ],
+      "lexicalLemmas": [
+        "first"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is the first room",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: is the first room"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "4137fcaa98aece7946071efea3c4e739014457708aa606c282ec1f23e96f2b18"
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0044",
+  "levelKey": "A1",
+  "sortOrder": 44,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0044: target word EN-LEX-BACK-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-BACK-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "back",
+      "partOfSpeech": "adverb",
+      "selectedReferenceKey": "EN-REF-1A4E4A764F5FC7232175",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-1A4E4A764F5FC7232175",
+        "EN-REF-01F451BA3381EA0BB355"
+      ],
+      "referenceTranslationsFa": [
+        "بازگشت (به جای قبل)",
+        "به عقب"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-1A4E4A764F5FC7232175",
+        "translationFa": "بازگشت (به جای قبل)",
+        "definitionEn": "in or to or toward a former location",
+        "senseId": "38ce9006-bd77-53f1-8139-13c6218904e7",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-950213E55A5DF7A7D1E1",
+        "EN-REF-6CB64DEA48DE0EFA4185"
+      ],
+      "referenceTranslationsFa": [
+        "اثر نوشته‌شده‌ای که منتشر شده است",
+        "کتاب (دفتری با صفحات متصل)"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+        "translationFa": "کتاب (دفتری با صفحات متصل)"
+      }
+    }
+  ],
+  "sourceHash": "cf1d7b2a224982203f4fb96e6236fa7864e5be974da9f0a3a0a93b4e4385cea7"
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0042",
+  "sortOrder": 42,
+  "levelKey": "A1",
+  "lessonSourceHash": "55a3b891df3d934f24df421089dac3a2552f15e970afa3880ccbf095c2245153",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0042-THINK",
+      "form": "I think + clause.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-1",
+        "grammaticalItem": "I am",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.375,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-2",
+          "grammaticalItem": "Am I ...?",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-1",
+          "grammaticalItem": "I am not",
+          "matchScore": 0.35
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-3",
+          "grammaticalItem": "Am I not ...?",
+          "matchScore": 0.35
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-THINK-01",
+      "lemma": "think",
+      "role": "target",
+      "referenceKey": "EN-REF-32A9B1B4D1FA20FAC633",
+      "spokenPriority": {
+        "lemma": "think",
+        "spokenRank": 28,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "TH IH1 NG K",
+        "arpabet": [
+          "TH IH1 NG K"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "lemma": "pen",
+      "role": "review",
+      "referenceKey": "EN-REF-E7158161767216455400",
+      "spokenPriority": {
+        "lemma": "pen",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P EH1 N",
+        "arpabet": [
+          "P EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i think",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0042"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0042-THINK"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "do you think",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0042"
+      ],
+      "lexicalLemmas": [
+        "think"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "do you think",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you think"
+      }
+    },
+    {
+      "query": "i think there is",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0042"
+      ],
+      "lexicalLemmas": [
+        "think"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i think there is",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: i think there is"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "1f2648e6fbce49b817b61e538979415ac7c1205a72fe285e64a56beec96af02b"
+}

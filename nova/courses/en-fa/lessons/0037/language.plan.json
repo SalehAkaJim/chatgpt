@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0037",
+  "sortOrder": 37,
+  "levelKey": "A1",
+  "lessonSourceHash": "386b8057bc3ab1044329cdb1a171b1508e31cd9d964300799655bc0d2b09bbb9",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0037-GET",
+      "form": "I get a + item.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-GET-01",
+      "lemma": "get",
+      "role": "target",
+      "referenceKey": "EN-REF-151E514968A325F5CAA9",
+      "spokenPriority": {
+        "lemma": "get",
+        "spokenRank": 18,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "G EH1 T",
+        "arpabet": [
+          "G EH1 T",
+          "G IH1 T"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "lemma": "pen",
+      "role": "review",
+      "referenceKey": "EN-REF-E7158161767216455400",
+      "spokenPriority": {
+        "lemma": "pen",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P EH1 N",
+        "arpabet": [
+          "P EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i get a",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0037"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0037-GET"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "i get a book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0037"
+      ],
+      "lexicalLemmas": [
+        "get"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "I get a book",
+        "rationale": "Bounded natural A1 use selected for get."
+      }
+    },
+    {
+      "query": "i get a pen",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0037"
+      ],
+      "lexicalLemmas": [
+        "get"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "I get a pen",
+        "rationale": "Same-Lesson transfer for get with familiar language."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "2fbce9e2d921970ccb8e3f12e4aefc9ae0ae54ab30b6b43c459329fe84cdd937"
+}

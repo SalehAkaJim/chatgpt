@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0041",
+  "sortOrder": 41,
+  "levelKey": "A1",
+  "lessonSourceHash": "0e826523d6b6abadf8a3d640f5e9d376f6c082ed1f4a4f9f8fc24de5e7067544",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0041-MAKE",
+      "form": "I make + drink.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-1",
+        "grammaticalItem": "I am",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.375,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-2",
+          "grammaticalItem": "Am I ...?",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-1",
+          "grammaticalItem": "I am not",
+          "matchScore": 0.35
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-3",
+          "grammaticalItem": "Am I not ...?",
+          "matchScore": 0.35
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-MAKE-01",
+      "lemma": "make",
+      "role": "target",
+      "referenceKey": "EN-REF-39C6EB767664D6211984",
+      "spokenPriority": {
+        "lemma": "make",
+        "spokenRank": 69,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M EY1 K",
+        "arpabet": [
+          "M EY1 K"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "lemma": "coffee",
+      "role": "review",
+      "referenceKey": "EN-REF-DF86C36C215439FDE741",
+      "spokenPriority": {
+        "lemma": "coffee",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K AA1 F IY0",
+        "arpabet": [
+          "K AA1 F IY0",
+          "K AO1 F IY0"
+        ],
+        "stressPattern": "10"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "lemma": "tea",
+      "role": "review",
+      "referenceKey": "EN-REF-C86BD7B12371D318284C",
+      "spokenPriority": {
+        "lemma": "tea",
+        "spokenRank": 656,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T IY1",
+        "arpabet": [
+          "T IY1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i make",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0041"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0041-MAKE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "do you make",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0041"
+      ],
+      "lexicalLemmas": [
+        "make"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "do you make",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you make"
+      }
+    },
+    {
+      "query": "i make coffee",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0041"
+      ],
+      "lexicalLemmas": [
+        "make"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "I make coffee",
+        "rationale": "Bounded natural A1 use selected for make."
+      }
+    },
+    {
+      "query": "i make tea too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0041"
+      ],
+      "lexicalLemmas": [
+        "make"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "I make tea too",
+        "rationale": "Same-Lesson transfer for make with familiar language."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "38bd4556cfc981f0c492ebf8476dbc28b1169b41062c41e8d53f599685460679"
+}
