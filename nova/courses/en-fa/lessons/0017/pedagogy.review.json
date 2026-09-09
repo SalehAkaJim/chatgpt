@@ -1,1 +1,62 @@
-{"version":1,"lessonKey":"EN-A1-L-0017","sourceHash":"cad20e803594a4f22ed26488d37b6b0a5415ebbe3a9e7b44bcce33fc7ae41c96","courseSourceHash":"3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e","reviewerType":"model","reviewedAt":"2026-09-08","scope":"Model/editor rewrite review for Lessons 0014–0020 after activity-variety, load, naturalness and skill-mix revisions; not an independent human review.","dimensions":{"englishNaturalness":{"score":4,"evidence":"What day?, On Monday. and Monday. are natural short forms when the library program is already the topic."},"persianMeaningQuality":{"score":5,"evidence":"Checked learner-facing Persian for meaning, clarity and current Nova orthography rules; wording stays colloquial and context-specific."},"pedagogicalClarity":{"score":4,"evidence":"Only Monday is introduced in the first day Lesson; Tuesday is deferred to prevent an unnecessary load spike."},"distractorQuality":{"score":4,"evidence":"The reading and controlled phrase tasks distinguish day, time and room information."},"dialoguePlausibility":{"score":4,"evidence":"Leo and Liam schedule the next library event in a short, context-supported exchange."},"difficultyFit":{"score":4,"evidence":"Three new items replace the previous four-item/two-day load."},"repetitionUsefulness":{"score":4,"evidence":"Monday is read, heard, selected and produced without adding a second weekday."},"transferQuality":{"score":4,"evidence":"The question-answer pattern transfers directly from clock time to day while the semantic category changes."},"overallCoherence":{"score":4,"evidence":"The tasks consistently support understanding and stating one program day."},"learnerExperience":{"score":3,"evidence":"Static flow review only. Activity order is more varied and help/feedback paths are present, but no real learner, microphone, timing or retention test has been performed."}},"learnerTested":false,"limitations":["Real learner outcomes and delayed retention have not been measured.","Generated audio still requires perceptual/prosody review with human listeners.","Hidden-answer retrieval remains bounded and cannot certify open-ended language ability."],"resolvedFindings":["Three new items replace the previous four-item/two-day load.","The question-answer pattern transfers directly from clock time to day while the semantic category changes.","The tasks consistently support understanding and stating one program day."]}
+{
+  "version": 1,
+  "lessonKey": "EN-A1-L-0017",
+  "sourceHash": "4e759a95a9371bd5aa06960999fe88f4f41bbda9a66170be5754945321ab2084",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-09",
+  "scope": "Model/editor review after repairing the weekday word model and dechunking On Monday; not an independent human or learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 4,
+      "evidence": "What day? / On Monday. is a natural short schedule exchange when the program is already established, and Monday? / Yes. works as a brief confirmation."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "Persian instructions distinguish the day meaning from time and room information and explain on only in its bounded weekday use."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "on and Monday are now independent target words while On Monday remains a productive composition, removing the earlier hidden-chunk inconsistency."
+    },
+    "distractorQuality": {
+      "score": 4,
+      "evidence": "Reading and response choices contrast day, time and room meanings without relying on formatting tricks."
+    },
+    "dialoguePlausibility": {
+      "score": 4,
+      "evidence": "Leo and Liam are coordinating the already-established library event, so the elliptical day question is locally motivated."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "Only one weekday and its day preposition are taught; additional weekdays are deferred."
+    },
+    "repetitionUsefulness": {
+      "score": 4,
+      "evidence": "Monday is taught independently, read on a program card, heard in dialogue and then recombined with on in hidden retrieval."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The schedule question-answer idea transfers from clock time to weekday while preserving separate word units instead of memorizing one phrase row."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Word teaching, card reading, dialogue, selection and final retrieval all serve understanding and stating the program day."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "Static review only; the flow is short and clear, but real learner timing, speech recognition and delayed weekday retention remain untested."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "The Lesson establishes only Monday, not a general weekday inventory.",
+    "Final ElevenLabs prosody and delayed retention remain unmeasured."
+  ],
+  "resolvedFindings": [
+    "Monday is now an independent word rather than existing only inside On Monday.",
+    "on is separately represented for the scored weekday response, matching the words-layer rule.",
+    "On Monday remains a construction instance and is not inserted as a fake vocabulary row."
+  ]
+}
