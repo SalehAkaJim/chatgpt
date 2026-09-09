@@ -1,0 +1,58 @@
+name: Nova Content Factory Test
+
+on:
+  push:
+    branches: [test/content-factory-from-lesson-1]
+    paths:
+      - '.github/workflows/nova-content-factory-test.yml'
+      - 'nova/experiments/content-factory-from-lesson-1/**'
+      - 'nova/courses/en-fa/lessons/**/lesson.source.json'
+      - 'nova/_assistant/content-system-v1/tools/factory_probe.py'
+      - 'nova/_assistant/content-system-v1/tools/validate_factory_prefix.py'
+      - 'nova/_assistant/content-system-v1/tools/validate_lesson_reference.py'
+      - 'nova/reference/en-fa/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-content-factory-test
+  cancel-in-progress: false
+
+jobs:
+  test-prefix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: test/content-factory-from-lesson-1
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build compact A1 reference probe
+        run: |
+          python nova/_assistant/content-system-v1/tools/factory_probe.py \
+            --repo-root . \
+            --config nova/experiments/content-factory-from-lesson-1/probe_config.json \
+            --output nova/experiments/content-factory-from-lesson-1/reference_probe.json
+      - name: Validate generated factory prefix
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py \
+            --repo-root . \
+            --config nova/experiments/content-factory-from-lesson-1/probe_config.json \
+            --output nova/experiments/content-factory-from-lesson-1/prefix_validation.json
+      - name: Commit experiment evidence
+        run: |
+          git config user.name "nova-factory-test-bot"
+          git config user.email "nova-factory-test-bot@users.noreply.github.com"
+          git add nova/experiments/content-factory-from-lesson-1/
+          if git diff --cached --quiet; then
+            echo "No experiment evidence changes."
+          else
+            git commit -m "Refresh Nova content factory test evidence"
+            git fetch origin test/content-factory-from-lesson-1
+            git rebase origin/test/content-factory-from-lesson-1
+            git push origin HEAD:test/content-factory-from-lesson-1
+          fi
