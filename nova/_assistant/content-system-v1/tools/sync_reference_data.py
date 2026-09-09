@@ -27,6 +27,7 @@ from reference_data import (
 )
 
 USER_AGENT = "NovaReferenceSync/1.0 (+https://github.com/SalehAkaJim/chatgpt)"
+BASE_SOURCE_NAMES = ("openjam", "cefrj")
 
 
 def raw_github(repo: str, commit: str, path: str) -> str:
@@ -48,11 +49,26 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
     lock = load_json(root / "sources.lock.json")
     threshold = int(lock.get("qualityThreshold", 90))
 
+    # The production source lock also contains extension sources (CMUdict,
+    # NGSL-Spoken, Tatoeba). This builder owns only the deterministic base
+    # lexical/grammar layer. Extension sources are synced by
+    # sync_language_reference_extensions.py and must never be interpreted as
+    # Openjam/CEFR-J-style GitHub file bundles here.
+    sources = lock.get("sources", {})
+    missing_base = [name for name in BASE_SOURCE_NAMES if name not in sources]
+    if missing_base:
+        raise RuntimeError(f"Missing required base reference sources: {missing_base}")
+
     with tempfile.TemporaryDirectory(prefix="nova-reference-") as td:
         cache = Path(source_cache) if source_cache else Path(td)
         cache.mkdir(parents=True, exist_ok=True)
         fetched = {}
-        for source_name, source in lock["sources"].items():
+        for source_name in BASE_SOURCE_NAMES:
+            source = sources[source_name]
+            required = ("repository", "commit", "files")
+            missing = [key for key in required if not source.get(key)]
+            if missing:
+                raise RuntimeError(f"Base source {source_name} is missing fields: {missing}")
             for logical_name, rel_path in source["files"].items():
                 filename = f"{source_name}__{logical_name}__{Path(rel_path).name}"
                 dest = cache / filename
@@ -111,167 +127,180 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                     "senseOrder": sense.get("sense_order"),
                     "definitionEn": (sense.get("definition_en") or "").strip() or None,
                     "exampleEn": (sense.get("example_en") or "").strip() or None,
-                    "translationFa": normalized_translation,
-                    "translationFaSource": source_translation if source_translation != normalized_translation else None,
-                    "exampleFa": normalize_persian(tr.get("example")) if tr.get("example") else None,
+                    "translationFa": normalized_translation or None,
+                    "translationFaSource": source_translation or None,
+                    "exampleFa": (tr.get("example") or "").strip() or None,
                     "frequencyRank": word.get("frequency_rank"),
-                    "cefr": cefr["level"],
-                    "cefrSource": cefr["source"],
-                    "cefrEvidenceLevels": cefr["evidenceLevels"],
-                    "cefrConflict": cefr["conflict"],
+                    "cefr": cefr.level,
+                    "cefrSource": cefr.source,
+                    "cefrEvidenceLevels": list(cefr.evidence_levels),
+                    "cefrConflict": cefr.conflict,
                     "openjamLevel": word.get("level"),
                     "topics": topic_slugs,
                     "sourceType": "openjam_sense",
-                    "curriculumEligible": is_curriculum_eligible(cefr),
-                    "qualityScore": None,
-                    "productionEligible": False,
                     "flags": [],
                     "provenance": {
-                        "openjamWordId": word_id,
-                        "openjamSenseId": sense_id,
-                        "openjamTranslationId": tr.get("id"),
-                        "openjamCommit": lock["sources"]["openjam"]["commit"],
-                        "cefrJCommit": lock["sources"]["cefrj"]["commit"],
+                        "openjamWordId": word_id or None,
+                        "openjamSenseId": sense_id or None,
+                        "openjamTranslationId": str(tr.get("id")) if tr.get("id") else None,
+                        "openjamCommit": sources["openjam"]["commit"],
+                        "cefrJCommit": sources["cefrj"]["commit"],
                     },
                 }
-                seen_lemma_pos.add((lemma, pos))
-                score, flags = score_reference_record(record)
-                record["qualityScore"] = score
-                record["flags"] = flags
+                record["qualityScore"], score_flags = score_reference_record(record)
+                record["flags"] = sorted(set(record["flags"] + score_flags))
+                record["curriculumEligible"] = is_curriculum_eligible(record, threshold)
                 record["productionEligible"] = is_production_eligible(record, threshold)
                 if record["curriculumEligible"]:
                     counts["curriculumEligible"] += 1
-                counts["productionEligible" if record["productionEligible"] else "reviewOnly"] += 1
-                if record["cefr"] in by_level:
-                    by_level[record["cefr"]].append(record)
+                if record["productionEligible"]:
+                    counts["productionEligible"] += 1
+                else:
+                    counts["reviewOnly"] += 1
+                seen_lemma_pos.add((lemma, pos))
+                if cefr.level in by_level:
+                    by_level[cefr.level].append(record)
                 else:
                     unplaced.append(record)
 
-        # CEFR-J also carries function words/grammatical vocabulary that WordNet-based
-        # Openjam intentionally omits. Preserve these as curriculum placement records.
-        for (lemma, pos), _evidence_rows in sorted(
-            exact_index.items(),
-            key=lambda item: (item[0][0], item[0][1] or ""),
-        ):
-            if (lemma, pos) in seen_lemma_pos:
+        # Add CEFR profile-only rows so curriculum coverage is not limited to Openjam.
+        for profile_row in [*cefrj_rows, *octanove_rows]:
+            lemma = normalize_lemma(profile_row.get("lemma"))
+            pos = normalize_pos(profile_row.get("partOfSpeech"))
+            level = profile_row.get("level")
+            if not lemma or level not in by_level or (lemma, pos) in seen_lemma_pos:
                 continue
-            resolved = resolve_cefr(lemma, pos, None, exact_index, lemma_index)
-            if not resolved["level"]:
-                continue
-            source_tag = resolved["source"] or "cefr_profile"
-            synthetic_id = f"profile:{source_tag}:{resolved['level']}"
+            counts["records"] += 1
+            counts["profileOnly"] += 1
+            cefr = resolve_cefr(lemma, pos, None, exact_index, lemma_index)
             record = {
-                "referenceKey": stable_reference_key(lemma, pos, synthetic_id),
+                "referenceKey": stable_reference_key(lemma, pos, f"profile:{profile_row.get('source')}:{level}"),
                 "lemma": lemma,
                 "partOfSpeech": pos,
                 "senseId": None,
                 "senseOrder": None,
                 "definitionEn": None,
                 "exampleEn": None,
-                "translationFa": "",
+                "translationFa": None,
                 "translationFaSource": None,
                 "exampleFa": None,
                 "frequencyRank": None,
-                "cefr": resolved["level"],
-                "cefrSource": source_tag,
-                "cefrEvidenceLevels": resolved["evidenceLevels"],
-                "cefrConflict": resolved["conflict"],
+                "cefr": cefr.level or level,
+                "cefrSource": cefr.source or profile_row.get("source"),
+                "cefrEvidenceLevels": list(cefr.evidence_levels) or [level],
+                "cefrConflict": cefr.conflict,
                 "openjamLevel": None,
                 "topics": [],
                 "sourceType": "cefr_profile_only",
-                "curriculumEligible": is_curriculum_eligible(resolved),
-                "qualityScore": 0,
-                "productionEligible": False,
-                "flags": ["profile_only_no_dictionary_sense", "missing_persian_translation", "missing_english_definition"],
+                "flags": ["missing_persian", "missing_sense"],
                 "provenance": {
                     "openjamWordId": None,
                     "openjamSenseId": None,
                     "openjamTranslationId": None,
-                    "openjamCommit": lock["sources"]["openjam"]["commit"],
-                    "cefrJCommit": lock["sources"]["cefrj"]["commit"],
+                    "openjamCommit": sources["openjam"]["commit"],
+                    "cefrJCommit": sources["cefrj"]["commit"],
+                    "profileSource": profile_row.get("source"),
                 },
             }
-            score, flags = score_reference_record(record)
-            record["qualityScore"] = score
-            record["flags"] = sorted(set(record["flags"] + flags))
-            counts["records"] += 1
-            counts["profileOnly"] += 1
+            record["qualityScore"], score_flags = score_reference_record(record)
+            record["flags"] = sorted(set(record["flags"] + score_flags))
+            record["curriculumEligible"] = is_curriculum_eligible(record, threshold)
+            record["productionEligible"] = is_production_eligible(record, threshold)
             if record["curriculumEligible"]:
                 counts["curriculumEligible"] += 1
-            counts["reviewOnly"] += 1
-            by_level[record["cefr"]].append(record)
+            if record["productionEligible"]:
+                counts["productionEligible"] += 1
+            else:
+                counts["reviewOnly"] += 1
+            by_level[level].append(record)
+            seen_lemma_pos.add((lemma, pos))
 
-        lexical_dir = root / "lexical"
-        grammar_dir = root / "grammar"
-        lexical_dir.mkdir(parents=True, exist_ok=True)
-        grammar_dir.mkdir(parents=True, exist_ok=True)
-        file_entries = []
-        level_counts = {}
+        grammar_by_level = parse_grammar_csv(grammar_text)
+        file_records = []
+        lexical_summary = {}
+        grammar_summary = {}
         for level in LEVELS:
-            rows = sorted(
+            lexical_items = sorted(
                 by_level[level],
-                key=lambda r: (
-                    not r.get("curriculumEligible", False),
-                    not r["productionEligible"],
-                    r["frequencyRank"] is None,
-                    r["frequencyRank"] or 10**9,
-                    r["lemma"],
-                    r["partOfSpeech"] or "",
-                    r["senseOrder"] or 0,
+                key=lambda x: (
+                    x.get("frequencyRank") is None,
+                    x.get("frequencyRank") or 10**9,
+                    x.get("lemma") or "",
+                    x.get("partOfSpeech") or "",
+                    x.get("senseOrder") or 10**9,
+                    x.get("referenceKey") or "",
                 ),
             )
-            out = lexical_dir / f"{level}.json"
-            dump_json(out, {"schemaVersion": 1, "courseCode": "en-fa", "level": level, "items": rows})
-            level_counts[level] = {
-                "records": len(rows),
-                "curriculumEligible": sum(1 for r in rows if r.get("curriculumEligible")),
-                "productionEligible": sum(1 for r in rows if r["productionEligible"]),
+            lexical_path = root / "lexical" / f"{level}.json"
+            dump_json(lexical_path, {
+                "schemaVersion": 1,
+                "courseCode": "en-fa",
+                "level": level,
+                "items": lexical_items,
+            })
+            lexical_summary[level] = {
+                "records": len(lexical_items),
+                "curriculumEligible": sum(bool(x.get("curriculumEligible")) for x in lexical_items),
+                "productionEligible": sum(bool(x.get("productionEligible")) for x in lexical_items),
             }
-            file_entries.append({"path": str(out.relative_to(root)), "sha256": sha256_file(out), "records": len(rows)})
+            file_records.append({
+                "path": str(lexical_path.relative_to(root)),
+                "sha256": sha256_file(lexical_path),
+                "records": len(lexical_items),
+            })
 
-        if unplaced:
-            out = lexical_dir / "UNPLACED.json"
-            dump_json(out, {"schemaVersion": 1, "courseCode": "en-fa", "level": None, "items": unplaced})
-            file_entries.append({"path": str(out.relative_to(root)), "sha256": sha256_file(out), "records": len(unplaced)})
-        else:
-            (lexical_dir / "UNPLACED.json").unlink(missing_ok=True)
+            grammar_items = sorted(
+                grammar_by_level.get(level, []),
+                key=lambda x: (x.get("shorthandCode") or "", x.get("grammarKey") or ""),
+            )
+            grammar_path = root / "grammar" / f"{level}.json"
+            dump_json(grammar_path, {
+                "schemaVersion": 1,
+                "courseCode": "en-fa",
+                "level": level,
+                "items": grammar_items,
+            })
+            grammar_summary[level] = len(grammar_items)
+            file_records.append({
+                "path": str(grammar_path.relative_to(root)),
+                "sha256": sha256_file(grammar_path),
+                "records": len(grammar_items),
+            })
 
-        grammar_rows = parse_grammar_csv(grammar_text)
-        grammar_counts = {}
-        for level in LEVELS:
-            rows = [r for r in grammar_rows if r["cefr"] == level]
-            out = grammar_dir / f"{level}.json"
-            dump_json(out, {"schemaVersion": 1, "courseCode": "en-fa", "level": level, "items": rows})
-            grammar_counts[level] = len(rows)
-            file_entries.append({"path": str(out.relative_to(root)), "sha256": sha256_file(out), "records": len(rows)})
-
-        source_hashes = {f"{source_name}.{logical_name}": sha256_file(path) for (source_name, logical_name), path in sorted(fetched.items())}
+        source_sha = {
+            f"{source_name}.{logical_name}": sha256_file(path)
+            for (source_name, logical_name), path in sorted(fetched.items())
+        }
         manifest = {
             "schemaVersion": 1,
             "courseCode": "en-fa",
             "generatorVersion": 1,
             "qualityThreshold": threshold,
             "sourceLocks": {
-                name: {"repository": s["repository"], "commit": s["commit"], "license": s.get("license")}
-                for name, s in lock["sources"].items()
+                name: {
+                    "repository": sources[name]["repository"],
+                    "commit": sources[name]["commit"],
+                    "license": sources[name].get("license"),
+                }
+                for name in BASE_SOURCE_NAMES
             },
-            "sourceSha256": source_hashes,
+            "sourceSha256": source_sha,
             "counts": counts,
-            "lexicalByLevel": level_counts,
-            "grammarByLevel": grammar_counts,
-            "files": file_entries,
+            "lexicalByLevel": lexical_summary,
+            "grammarByLevel": grammar_summary,
+            "files": file_records,
         }
         dump_json(root / "manifest.json", manifest)
         return manifest
 
 
 def main() -> int:
-    p = argparse.ArgumentParser()
-    p.add_argument("--repo-root", default=".")
-    p.add_argument("--source-cache", default=None, help="Optional directory containing pre-downloaded source files")
-    args = p.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--repo-root", default=".")
+    parser.add_argument("--source-cache")
+    args = parser.parse_args()
     manifest = build_snapshot(Path(args.repo_root).resolve(), Path(args.source_cache) if args.source_cache else None)
-    print(json.dumps({"counts": manifest["counts"], "lexicalByLevel": manifest["lexicalByLevel"]}, ensure_ascii=False, indent=2))
+    print(json.dumps({"status": "PASS", "counts": manifest["counts"]}, ensure_ascii=False))
     return 0
 
 
