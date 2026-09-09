@@ -92,7 +92,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "action then action",
       "examples": [],
       "fallback": null
     },
@@ -107,7 +107,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "then i help",
       "examples": [],
       "fallback": {
         "query": "Then I help",
@@ -125,7 +125,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "read then help",
       "examples": [],
       "fallback": {
         "query": "read then",
@@ -143,7 +143,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "read then help",
       "examples": [],
       "fallback": {
         "query": "read then help",
@@ -154,5 +154,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "423356590ec216b54fd446a384b41a89b34890408d07d41b58e4866301fe8981"
+  "planHash": "e8724353c72ed83f8a9eb6dabbcff99d267690613555de53cd69fd0b99ca8bc5"
 }

@@ -91,7 +91,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes i know this book",
       "examples": [],
       "fallback": null
     },
@@ -104,10 +104,18 @@
       "lexicalLemmas": [
         "know"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 1,
+      "evidenceQuery": "do you know this book",
+      "examples": [
+        {
+          "id": 7780009,
+          "text": "Do you know this book?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "PokeGamers"
+        }
+      ],
       "fallback": {
         "query": "do you know this book",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you know this book"
@@ -124,7 +132,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes i know this book",
       "examples": [],
       "fallback": {
         "query": "yes i know this book",
@@ -142,7 +150,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i know this pen",
       "examples": [],
       "fallback": {
         "query": "I know this pen",
@@ -153,5 +161,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "0e9bdf08befdd137870ed6c7d94a27252a12ccb09e9937a9299b25180621d0e8"
+  "planHash": "c7149511a70801addc2571fa6e72d6ad1bd83a83cf65f9581ffca319e84e6a07"
 }

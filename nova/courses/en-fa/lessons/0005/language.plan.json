@@ -79,32 +79,10 @@
       "constructionKeys": [
         "EN-CONSTR-ASK-COUNTRY"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "where are you from",
-      "examples": [
-        {
-          "id": 370703,
-          "text": "Where are you from?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "saeb"
-        },
-        {
-          "id": 13372868,
-          "text": "Where are you from, passenger?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Igider"
-        },
-        {
-          "id": 8567415,
-          "text": "\"Where are you from?\" \"Algiers.\"",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null
     },
     {
@@ -126,5 +104,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "5049ece1a6ec331bcc580f31cffbaa550c3fa42a65ba9780f38e15d4f2871f50"
+  "planHash": "376cd0107ae64c34b348e5ffae0c0eeeb8b705cd1de9141c8aa91d7d40efa5e2"
 }

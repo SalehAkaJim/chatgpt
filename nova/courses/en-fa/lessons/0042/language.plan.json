@@ -112,10 +112,32 @@
       "constructionKeys": [
         "EN-CONSTR-0042-THINK"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i think there is",
+      "examples": [
+        {
+          "id": 8543312,
+          "text": "I think there is life on Mars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6841950,
+          "text": "I think there is someone in here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "lev4uk_pavel2"
+        },
+        {
+          "id": 1224950,
+          "text": "I think there is more to this.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
       "fallback": null
     },
     {
@@ -127,10 +149,32 @@
       "lexicalLemmas": [
         "think"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "do you think",
+      "examples": [
+        {
+          "id": 10664505,
+          "text": "Do you think?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 2648600,
+          "text": "Why do you think?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 914029,
+          "text": "What do you think?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Jane_Austen"
+        }
+      ],
       "fallback": {
         "query": "do you think",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you think"
@@ -145,10 +189,32 @@
       "lexicalLemmas": [
         "think"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i think there is",
+      "examples": [
+        {
+          "id": 8543312,
+          "text": "I think there is life on Mars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6841950,
+          "text": "I think there is someone in here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "lev4uk_pavel2"
+        },
+        {
+          "id": 1224950,
+          "text": "I think there is more to this.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
       "fallback": {
         "query": "i think there is",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: i think there is"
@@ -158,5 +224,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "1f2648e6fbce49b817b61e538979415ac7c1205a72fe285e64a56beec96af02b"
+  "planHash": "590596d2ec8624e4fd43901e3e251652749e4786838bc16da919d63a66f6bb53"
 }

@@ -82,32 +82,10 @@
       "constructionKeys": [
         "EN-CONSTR-NO-CORRECT-ITEM"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "no please",
-      "examples": [
-        {
-          "id": 6250585,
-          "text": "\"May I do that?\" \"No, please don't.\"",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11822012,
-          "text": "Igor distinctly heard Anna screaming: \"No! Please don't do that!\"",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
-        },
-        {
-          "id": 73593,
-          "text": "\"Do you mind if I use your phone?\" \"No, please go ahead.\"",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null
     }
   ],
@@ -116,5 +94,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "0f8abefeddfb1b81eb871a224dbbd0ba900d9577c14a76d034a26d488bedf5b2"
+  "planHash": "eab740d2d263af896fd65f5c25b300524fe56cd9112c5f1704e9d9cae43f0140"
 }

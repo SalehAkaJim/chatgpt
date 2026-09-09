@@ -121,7 +121,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "do people like coffee",
       "examples": [],
       "fallback": null
     },
@@ -157,7 +157,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "do people like coffee",
       "examples": [],
       "fallback": {
         "query": "do people like coffee",
@@ -175,7 +175,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes people like coffee",
       "examples": [],
       "fallback": {
         "query": "yes people like coffee",
@@ -186,5 +186,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "397faeac44f3930cb7e99a7c15163c30ecff7895c3717c7f838f9da78ae77c19"
+  "planHash": "4cf7dabb1db13e6628911f576b2c23022db01a57558049dac67ac3f192604267"
 }

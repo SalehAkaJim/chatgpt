@@ -115,7 +115,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i make tea too",
       "examples": [],
       "fallback": null
     },
@@ -128,10 +128,32 @@
       "lexicalLemmas": [
         "make"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "do you make",
+      "examples": [
+        {
+          "id": 511884,
+          "text": "What do you make?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13055504,
+          "text": "How do you make babies?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "menaud"
+        },
+        {
+          "id": 11171488,
+          "text": "How do you make this?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "SunnyMoon"
+        }
+      ],
       "fallback": {
         "query": "do you make",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you make"
@@ -146,10 +168,25 @@
       "lexicalLemmas": [
         "make"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 2,
+      "evidenceQuery": "i make coffee",
+      "examples": [
+        {
+          "id": 12133144,
+          "text": "Sit down while I make coffee.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 12818156,
+          "text": "Every morning I make coffee and savor its aroma.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
       "fallback": {
         "query": "I make coffee",
         "rationale": "Bounded natural A1 use selected for make."
@@ -166,7 +203,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i make tea too",
       "examples": [],
       "fallback": {
         "query": "I make tea too",
@@ -177,5 +214,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "38bd4556cfc981f0c492ebf8476dbc28b1169b41062c41e8d53f599685460679"
+  "planHash": "c22560c6565c44688136ee60662b7c8ce11ea97b4848694311e4a03c568a8582"
 }

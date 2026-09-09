@@ -81,6 +81,21 @@
   ],
   "usageEvidence": [
     {
+      "query": "or room two",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "two"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "one or room two",
+      "examples": [],
+      "fallback": null
+    },
+    {
       "query": "room one or room",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -118,21 +133,6 @@
       ],
       "lexicalLemmas": [
         "room"
-      ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": "one or room two",
-      "examples": [],
-      "fallback": null
-    },
-    {
-      "query": "or room two",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "two"
       ],
       "status": "no_evidence",
       "sampleCount": 0,
@@ -190,15 +190,15 @@
     }
   ],
   "warnings": [
+    "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "51516a974963ae44484d8cf0fe8b96e64b1af40472ab22afa79637ff14d3ec8e"
+  "planHash": "5ee6b0e6d4ecf1f2ff7f1ab63a232ae95be8bc1b2e4de5563046e1a23843dcf3"
 }

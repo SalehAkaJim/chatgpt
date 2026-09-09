@@ -71,7 +71,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes come back with the",
       "examples": [],
       "fallback": null
     },
@@ -86,7 +86,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "here come back please",
       "examples": [],
       "fallback": {
         "query": "here come back please",
@@ -102,10 +102,32 @@
       "lexicalLemmas": [
         "back"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i come back",
+      "examples": [
+        {
+          "id": 10695762,
+          "text": "When should I come back?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8358393,
+          "text": "Wait until I come back.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ergulis"
+        },
+        {
+          "id": 12204797,
+          "text": "Hide here until I come back.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "i come back",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: i come back"
@@ -122,7 +144,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes come back with the",
       "examples": [],
       "fallback": {
         "query": "yes come back with the",
@@ -133,5 +155,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "b964cd96c2847e334f9fb2076e778b95d63008bd306abe8fb79b08eb1668b5f8"
+  "planHash": "49491391cf9182e34392d16575357b3232845df698aa0adc32b60d8ad4f5d588"
 }

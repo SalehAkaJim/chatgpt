@@ -113,7 +113,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is the only new book",
       "examples": [],
       "fallback": null
     },
@@ -128,7 +128,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "reads the only new book",
       "examples": [],
       "fallback": {
         "query": "reads the only new book",
@@ -144,10 +144,32 @@
       "lexicalLemmas": [
         "only"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "only one",
+      "examples": [
+        {
+          "id": 1904289,
+          "text": "Take only one.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13054183,
+          "text": "There is only one.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 12678210,
+          "text": "Only one is missing.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "anzart"
+        }
+      ],
       "fallback": {
         "query": "only one",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: only one"
@@ -164,7 +186,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is the only new book",
       "examples": [],
       "fallback": {
         "query": "is the only new book",
@@ -175,5 +197,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "7369ef777df8135e8b74afb20dead7268ea3215b7e1b900380aa976182bb40bd"
+  "planHash": "ae44499b9dda94a390ed37f228bc32ee83e1af94a6a0182d36421300728f8bf3"
 }
