@@ -5,7 +5,6 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/nova-wave-45-52-repair.yml'
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -17,90 +16,32 @@ concurrency:
 jobs:
   repair-integrate:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install validator dependencies
-        run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
-      - name: Repair known provisional drift and local reconstruction gate
+      - run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
+      - name: Patch and diagnose Lesson 52
+        shell: bash
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-
-          wave = Path('nova/curriculum/en-fa/waves/en-fa-A1-0045-0052')
-
-          p49 = wave / 'workers/w05/0049/lesson.source.json'
-          l49 = json.loads(p49.read_text(encoding='utf-8'))
-          ref49 = l49['curriculum']['languageReference']
-          ref49['grammarTargetKeys'] = []
-          ref49['noNewGrammarReason'] = (
-              'Lexical-focus integration: the provisional grammar reservation was no longer available '
-              'in the live sequential curriculum spec, so this Lesson claims no new grammar.'
-          )
-          p49.write_text(json.dumps(l49, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-
-          p52 = wave / 'workers/w08/0052/lesson.source.json'
-          l52 = json.loads(p52.read_text(encoding='utf-8'))
-          a04 = next(a for a in l52['activities'] if a['activityKey'] == 'A04')
-          a04['config']['tokensEn'] = ['One', 'year', '.']
-          a04['config']['answerTokensEn'] = ['One', 'year', '.']
-          p52.write_text(json.dumps(l52, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          p=Path('nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w08/0052/lesson.source.json')
+          l=json.loads(p.read_text(encoding='utf-8'))
+          a=next(x for x in l['activities'] if x['activityKey']=='A04')
+          a['config']['tokensEn']=['One','year','.']
+          a['config']['answerTokensEn']=['One','year','.']
+          p.write_text(json.dumps(l,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
-      - name: Verify all eight staged local gates
-        run: |
-          for n in 45 46 47 48 49 50 51 52; do
-            worker=$(printf '%02d' $((n-44)))
-            python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py \
-              --repo-root . \
-              --config nova/curriculum/en-fa/factory.config.json \
-              --lesson "nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w${worker}/00${n}/lesson.source.json" \
-              --cache-dir .cache/nova-validation
-          done
-      - name: Integrate sequentially in isolated worktree and run full-prefix regression
-        run: |
-          PYTHONPATH=nova/_assistant/content-system-v1/tools python - <<'PY'
-          import json
-          from datetime import datetime, timezone
-          from pathlib import Path
-          from factory_wave import integrate_wave
-
-          root = Path('.').resolve()
-          wave = root / 'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/wave.json'
-          integrate_wave(root, wave, cache_dir=root / '.cache/nova-validation')
-          manifest = json.loads(wave.read_text(encoding='utf-8'))
-          manifest['status'] = 'INTEGRATED'
-          manifest['integratedAt'] = datetime.now(timezone.utc).isoformat()
-          manifest['fullPrefixRegression'] = 'PASS'
-          wave.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-          PY
-      - name: Build text-only QA and pedagogy evidence
-        run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only
-      - name: Verify final canonical prefix 52 PASS
-        run: |
-          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py \
-            --repo-root . \
-            --config nova/curriculum/en-fa/factory.config.json \
-            --output nova/curriculum/en-fa/factory_validation.json
-          python - <<'PY'
-          import json
-          p=json.load(open('nova/curriculum/en-fa/factory_validation.json', encoding='utf-8'))
-          assert p['status'] == 'PASS', p
-          assert p['passedPrefixLength'] == 52, p['passedPrefixLength']
-          print('Final canonical prefix PASS through Lesson 52.')
-          PY
-      - name: Publish only after all text gates pass
-        run: |
-          git config user.name 'nova-production-bot'
-          git config user.email 'nova-production-bot@users.noreply.github.com'
-          git add nova/courses/en-fa/lessons/0045 nova/courses/en-fa/lessons/0046 nova/courses/en-fa/lessons/0047 nova/courses/en-fa/lessons/0048 nova/courses/en-fa/lessons/0049 nova/courses/en-fa/lessons/0050 nova/courses/en-fa/lessons/0051 nova/courses/en-fa/lessons/0052
-          git add nova/curriculum/en-fa nova/_assistant/content-system-v1/text_build_report.json
-          git add nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers
-          git commit -m 'Integrate validated Nova wave 45-52'
-          git push origin HEAD:main
+          set +e
+          python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py \
+            --repo-root . --config nova/curriculum/en-fa/factory.config.json \
+            --lesson nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w08/0052/lesson.source.json \
+            --no-cache --output /tmp/l52.json
+          s=$?
+          cat /tmp/l52.json
+          exit $s
