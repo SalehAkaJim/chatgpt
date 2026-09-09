@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 # Integration is queued behind the production writer and starts only after a
 # production run has completed. Keeping the same group preserves single-writer
@@ -77,6 +78,7 @@ jobs:
             --repo-root . \
             --wave "${{ steps.wave.outputs.path }}"
       - name: Commit canonical wave only after integration PASS
+        id: publish
         if: steps.wave.outputs.ready == 'true'
         run: |
           git config user.name "nova-production-bot"
@@ -88,8 +90,15 @@ jobs:
           fi
           git add nova/courses/ nova/curriculum/
           if git diff --cached --quiet; then
+            echo "published=false" >> "$GITHUB_OUTPUT"
             echo "No canonical integration changes."
           else
             git commit -m "Integrate validated Nova authoring wave"
             git push origin HEAD:main
+            echo "published=true" >> "$GITHUB_OUTPUT"
           fi
+      - name: Trigger production for newly canonical prefix
+        if: steps.publish.outputs.published == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run nova-pilot.yml --ref main
