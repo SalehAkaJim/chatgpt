@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0018",
+  "sortOrder": 18,
+  "levelKey": "A1",
+  "lessonSourceHash": "f208530d120b4baaff250ae5f3a82af0e8db2670372ceaaab680340f4185d41c",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-DO-YOU-HAVE",
+      "form": "Do you have + item?",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-HAVE-01",
+      "lemma": "have",
+      "role": "target",
+      "referenceKey": "EN-REF-95D9B5A8DD21C690DAAE",
+      "spokenPriority": {
+        "lemma": "have",
+        "spokenRank": 8,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "HH AE1 V",
+        "arpabet": [
+          "HH AE1 V"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "lemma": "pen",
+      "role": "review",
+      "referenceKey": "EN-REF-E7158161767216455400",
+      "spokenPriority": {
+        "lemma": "pen",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P EH1 N",
+        "arpabet": [
+          "P EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "do you have",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0018"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-DO-YOU-HAVE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "do you have a book",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "do you have a pen",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0018"
+      ],
+      "lexicalLemmas": [
+        "have"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "do you have a pen",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "do you have a book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0018"
+      ],
+      "lexicalLemmas": [
+        "have"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "do you have a book",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0018: target collocation 'do you have a pen' has no committed Tatoeba evidence or explicit usage fallback",
+    "EN-A1-L-0018: target collocation 'do you have a book' has no committed Tatoeba evidence or explicit usage fallback"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "578a78c1b5151e6f45cb8c9724f7f311f0a8188fd37641ff6b1d0ca480ae7daf"
+}

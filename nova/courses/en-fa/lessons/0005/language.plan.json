@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0005",
+  "sortOrder": 5,
+  "levelKey": "A1",
+  "lessonSourceHash": "5a377ec3f47e3e7c16956313d94f05dfa980d62805c4a4e9ff3328676cc0b718",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-ASK-COUNTRY",
+      "form": "Where are you from?",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-2-2",
+        "grammaticalItem": "Are you ...?",
+        "cefr": "A1",
+        "cefrJLevel": "A1.3",
+        "matchScore": 0.675,
+        "prerequisiteKeys": [
+          "CEFRJ-GRAM-4"
+        ]
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-2-1",
+          "grammaticalItem": "You are not",
+          "matchScore": 0.395
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-FROM-PLACE",
+      "form": "I'm from + place",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [],
+  "usageEvidence": [
+    {
+      "query": "where are you from",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ASK-COUNTRY"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "where are you from",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "i'm from",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-FROM-PLACE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "i'm from",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0005: construction EN-CONSTR-FROM-PLACE has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "eb59e59bd58a799ea9906aab066bbbc5742299403e1a186b75512c0a9be8895d"
+}

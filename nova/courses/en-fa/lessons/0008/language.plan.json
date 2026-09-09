@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0008",
+  "sortOrder": 8,
+  "levelKey": "A1",
+  "lessonSourceHash": "5321379c8d4382d7038a9ea3ee98181e7ea2c568a55499e3cef9a5ce39c762f4",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-WHERES-MY",
+      "form": "Where's my + item?",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    },
+    {
+      "constructionKey": "EN-CONSTR-ON-THE-TABLE",
+      "form": "It's on the table.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "lemma": "pen",
+      "role": "review",
+      "referenceKey": "EN-REF-E7158161767216455400",
+      "spokenPriority": {
+        "lemma": "pen",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P EH1 N",
+        "arpabet": [
+          "P EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TABLE-01",
+      "lemma": "table",
+      "role": "target",
+      "referenceKey": "EN-REF-DB96FA960706CF5AD234",
+      "spokenPriority": {
+        "lemma": "table",
+        "spokenRank": 462,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T EY1 B AH0 L",
+        "arpabet": [
+          "T EY1 B AH0 L"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "where's my",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0008"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-WHERES-MY"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "where's my",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "it's on the table",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0008"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ON-THE-TABLE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "it's on the table",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "on the table",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0008"
+      ],
+      "lexicalLemmas": [
+        "table"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "it's on the table",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0008: construction EN-CONSTR-WHERES-MY has no confident CEFR-J grammar match",
+    "EN-A1-L-0008: target collocation 'on the table' has no committed Tatoeba evidence or explicit usage fallback"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "d3cffa607475231e410bb040fb98502feb3f6e8fcffd90ceb4423ee34d5d8aa3"
+}

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0006",
+  "sortOrder": 6,
+  "levelKey": "A1",
+  "lessonSourceHash": "692efa20fed455f693f19d3196058afa4182d5fb9c2ffd2c1d5573246a0d08ec",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-WHATS-THIS",
+      "form": "What's this?",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.35,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.35
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.35
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-ITS-A",
+      "form": "It's a + singular noun",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "lemma": "pen",
+      "role": "target",
+      "referenceKey": "EN-REF-E7158161767216455400",
+      "spokenPriority": {
+        "lemma": "pen",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P EH1 N",
+        "arpabet": [
+          "P EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "target",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "what's this",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-WHATS-THIS"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "what's this",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "it's a",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ITS-A"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "it's a book",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "it's a pen",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "lexicalLemmas": [
+        "pen"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "it's a pen",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "it's a book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "lexicalLemmas": [
+        "book"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "it's a book",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0006: construction EN-CONSTR-WHATS-THIS has no confident CEFR-J grammar match",
+    "EN-A1-L-0006: construction EN-CONSTR-ITS-A has no confident CEFR-J grammar match",
+    "EN-A1-L-0006: target collocation 'it's a pen' has no committed Tatoeba evidence or explicit usage fallback",
+    "EN-A1-L-0006: target collocation 'it's a book' has no committed Tatoeba evidence or explicit usage fallback"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "ada72813b43b2065dd38907555d9c0460451a65998fdccddef0c561c53a05d40"
+}

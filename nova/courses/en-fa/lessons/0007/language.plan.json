@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0007",
+  "sortOrder": 7,
+  "levelKey": "A1",
+  "lessonSourceHash": "d48decf7120de16849369d1f03c8bc6f59f33fccb5027049ef36cafced8356f5",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-CAN-I-HAVE",
+      "form": "Can I have + item, please?",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-253",
+        "grammaticalItem": "FUNCTIONAL QUESTION: Can I ...?",
+        "cefr": "A1",
+        "cefrJLevel": null,
+        "matchScore": 0.375,
+        "prerequisiteKeys": [
+          "CEFRJ-GRAM-1"
+        ]
+      },
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "lemma": "pen",
+      "role": "review",
+      "referenceKey": "EN-REF-E7158161767216455400",
+      "spokenPriority": {
+        "lemma": "pen",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P EH1 N",
+        "arpabet": [
+          "P EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "can i have please",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0007"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-CAN-I-HAVE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "can i have please",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0007: construction EN-CONSTR-CAN-I-HAVE has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "6ae806742323c592c900a8f3cd3af4b9a13304c16124728b1a8562c3215f82fb"
+}

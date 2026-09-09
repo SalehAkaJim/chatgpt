@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0001",
+  "sortOrder": 1,
+  "levelKey": "A1",
+  "lessonSourceHash": "9d22e01e26fe081c359792861af10b2fd1ac9ea92fdcee37edcf115f5e2f92d3",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-IM-NAME",
+      "form": "I'm + name",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    },
+    {
+      "constructionKey": "EN-CONSTR-WHATS-YOUR-NAME",
+      "form": "What's your name?",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-NAME-01",
+      "lemma": "name",
+      "role": "target",
+      "referenceKey": "EN-REF-F7A6AD8E6587EDA3E40E",
+      "spokenPriority": {
+        "lemma": "name",
+        "spokenRank": 223,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N EY1 M",
+        "arpabet": [
+          "N EY1 M"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "what's your",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0001"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-WHATS-YOUR-NAME"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "what's your name",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "what's your name",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0001"
+      ],
+      "lexicalLemmas": [
+        "name"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "what's your name",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0001: construction EN-CONSTR-IM-NAME has no confident CEFR-J grammar match",
+    "EN-A1-L-0001: construction EN-CONSTR-WHATS-YOUR-NAME has no confident CEFR-J grammar match",
+    "EN-A1-L-0001: target collocation 'what's your name' has no committed Tatoeba evidence or explicit usage fallback"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "255088898d3a7fef1d514d650182c8d526b18df39a1b33f2bb6fb5e7a5cdca1b"
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0017",
+  "sortOrder": 17,
+  "levelKey": "A1",
+  "lessonSourceHash": "6aa51722535788015ce87d7985f210553e3492b4d039c4a66eea17473c7720f2",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-WHAT-DAY",
+      "form": "What day?",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-239",
+        "grammaticalItem": "WH- QUESTION: What ...?",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.35,
+        "prerequisiteKeys": []
+      },
+      "alternatives": []
+    },
+    {
+      "constructionKey": "EN-CONSTR-ON-MONDAY",
+      "form": "On Monday.",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [],
+  "usageEvidence": [
+    {
+      "query": "on monday",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0017"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ON-MONDAY"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "on monday",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0017: construction EN-CONSTR-WHAT-DAY has no confident CEFR-J grammar match",
+    "EN-A1-L-0017: construction EN-CONSTR-ON-MONDAY has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "213e230e37d4f42d665d5c52e35356d66f11d8e82d19be589bc4bc0621f99c25"
+}

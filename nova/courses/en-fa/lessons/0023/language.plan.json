@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0023",
+  "sortOrder": 23,
+  "levelKey": "A1",
+  "lessonSourceHash": "6ddbf11d8a0a834ec9f74abccbf43611de417a10339dc7b7ec3ea4e8091731a8",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-I-READ-BOOKS",
+      "form": "I read books.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    },
+    {
+      "constructionKey": "EN-CONSTR-DO-YOU-READ-BOOKS",
+      "form": "Do you read books?",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-READ-01",
+      "lemma": "read",
+      "role": "target",
+      "referenceKey": "EN-REF-F4E87C743D4964D90BCD",
+      "spokenPriority": {
+        "lemma": "read",
+        "spokenRank": 153,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R EH1 D",
+        "arpabet": [
+          "R EH1 D",
+          "R IY1 D"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i read books",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0023"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-I-READ-BOOKS"
+      ],
+      "lexicalLemmas": [
+        "read"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "yes i read books",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "do you read books",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0023"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-DO-YOU-READ-BOOKS"
+      ],
+      "lexicalLemmas": [
+        "read"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "do you read books",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "yes i read books",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0023"
+      ],
+      "lexicalLemmas": [
+        "read"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "yes i read books",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0023: target collocation 'yes i read books' has no committed Tatoeba evidence or explicit usage fallback"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "7172eb2e1d28d201a295838f1f925caaa4cb88c0d787aec42dfc9efa4b1600c9"
+}

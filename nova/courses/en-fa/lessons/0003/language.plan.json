@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0003",
+  "sortOrder": 3,
+  "levelKey": "A1",
+  "lessonSourceHash": "e5fe62535cd1146de7c023e38a74346b46ba189a1c28318e12ec69de26dad13a",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-HOW-ARE-YOU",
+      "form": "How are you?",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-2-2",
+        "grammaticalItem": "Are you ...?",
+        "cefr": "A1",
+        "cefrJLevel": "A1.3",
+        "matchScore": 0.8167,
+        "prerequisiteKeys": [
+          "CEFRJ-GRAM-4"
+        ]
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-2-1",
+          "grammaticalItem": "You are not",
+          "matchScore": 0.5167
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-IM-FINE-THANKS",
+      "form": "I'm fine, thanks.",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [],
+  "usageEvidence": [
+    {
+      "query": "how are you",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0003"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-HOW-ARE-YOU"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "how are you",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "i'm fine thanks",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0003"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-IM-FINE-THANKS"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "i'm fine thanks",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0003: construction EN-CONSTR-IM-FINE-THANKS has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "e092539422473a6f40a66c7e10ff39fa7bcead6d85ba5497d884d158ec8cadf4"
+}

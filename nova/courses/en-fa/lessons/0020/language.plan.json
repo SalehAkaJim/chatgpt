@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0020",
+  "sortOrder": 20,
+  "levelKey": "A1",
+  "lessonSourceHash": "569a3671f677365c42778f18170a2fc76eafe89ecee8963ae8ab12dfcc3ddff5",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "lemma": "room",
+      "role": "review",
+      "referenceKey": "EN-REF-D8B2B1429B2580871B77",
+      "spokenPriority": {
+        "lemma": "room",
+        "spokenRank": 301,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R UW1 M",
+        "arpabet": [
+          "R UW1 M"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ONE-01",
+      "lemma": "one",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "one",
+        "spokenRank": 37,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "W AH1 N",
+        "arpabet": [
+          "W AH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TWO-01",
+      "lemma": "two",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "two",
+        "spokenRank": 71,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T UW1",
+        "arpabet": [
+          "T UW1"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-AT-TIME-01",
+      "lemma": "at",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "at",
+        "spokenRank": 40,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AE1 T",
+        "arpabet": [
+          "AE1 T"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-SIX-01",
+      "lemma": "six",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "six",
+        "spokenRank": 165,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "S IH1 K S",
+        "arpabet": [
+          "S IH1 K S"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-SEVEN-01",
+      "lemma": "seven",
+      "role": "target",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "seven",
+        "spokenRank": 234,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "S EH1 V AH0 N",
+        "arpabet": [
+          "S EH1 V AH0 N"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "at seven",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0020"
+      ],
+      "lexicalLemmas": [
+        "seven"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "two at seven",
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "two at seven",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0020"
+      ],
+      "lexicalLemmas": [
+        "seven"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "two at seven",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0020: target collocation 'at seven' has no committed Tatoeba evidence or explicit usage fallback",
+    "EN-A1-L-0020: target collocation 'two at seven' has no committed Tatoeba evidence or explicit usage fallback"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "b65724470b70f46dc8243041b55b3f6287e3c75f71e9f1643601095c88886b19"
+}
