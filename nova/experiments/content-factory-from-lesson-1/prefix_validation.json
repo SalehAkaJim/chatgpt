@@ -7,10 +7,11 @@
     2,
     3,
     4,
-    5
+    5,
+    6
   ],
   "passedPrefixLength": 5,
-  "status": "PASS",
+  "status": "FAIL",
   "lessonReports": [
     {
       "lessonKey": "EN-A1-L-0001",
@@ -65,8 +66,36 @@
       "referenceStatus": "PASS",
       "referenceWarnings": [],
       "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0006",
+      "sortOrder": 6,
+      "status": "FAIL",
+      "automatedScore": 100,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0006: target word EN-LEX-BOOK-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
+      "errors": [
+        {
+          "code": "CQ-H15",
+          "message": "Reconstruction requires at least three pieces, neutral token labels and practice-only evidence.",
+          "data": {
+            "activityKey": "A03"
+          }
+        }
+      ]
     }
   ],
   "storyErrors": [],
-  "errors": []
+  "errors": [
+    {
+      "code": "CQ-H15",
+      "message": "Reconstruction requires at least three pieces, neutral token labels and practice-only evidence.",
+      "data": {
+        "activityKey": "A03"
+      }
+    }
+  ]
 }
