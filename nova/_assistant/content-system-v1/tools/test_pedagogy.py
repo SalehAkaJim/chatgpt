@@ -25,8 +25,18 @@ class PedagogyTests(unittest.TestCase):
 
     def test_current_lessons_have_reviewed_hidden_retrieval(self):
         for record in self.records:
-            self.assertTrue(evaluate(record['lesson'], self.policy)['publishableByAutomatedQualityGate'])
-            self.assertEqual(read_review(record['source'], record['coursePath'], self.policy)['status'], 'PASS')
+            lesson_key = record['lesson']['lessonKey']
+            with self.subTest(lessonKey=lesson_key):
+                self.assertTrue(
+                    evaluate(record['lesson'], self.policy)['publishableByAutomatedQualityGate'],
+                    f'{lesson_key}: automated quality gate failed',
+                )
+                review = read_review(record['source'], record['coursePath'], self.policy)
+                self.assertEqual(
+                    review['status'],
+                    'PASS',
+                    f"{lesson_key}: pedagogy review failed: {review.get('errors', [])}",
+                )
 
     def test_no_retrieval_rejected(self):
         self.lesson['activities'] = self.lesson['activities'][:-1]
@@ -58,6 +68,7 @@ class PedagogyTests(unittest.TestCase):
             source.with_name('pedagogy.review.json').write_text(json.dumps(report))
             self.assertEqual(read_review(source, record['coursePath'], self.policy)['status'], 'FAIL')
             report['sourceHash'] = hashlib.sha256(source.read_bytes()).hexdigest()
+            source.with_name('pedagogy.review.json').write_text(json.dumps(report))
             report['dimensions']['distractorQuality']['score'] = 2
             source.with_name('pedagogy.review.json').write_text(json.dumps(report))
             self.assertEqual(read_review(source, record['coursePath'], self.policy)['status'], 'FAIL')
