@@ -10,8 +10,8 @@
   },
   "queryLimit": 80,
   "circuitOpened": false,
-  "queryCount": 54,
-  "evidenceQueryCount": 40,
+  "queryCount": 58,
+  "evidenceQueryCount": 43,
   "unavailableQueryCount": 0,
   "queries": [
     {
@@ -502,6 +502,20 @@
       "status": "evidence"
     },
     {
+      "query": "i'm not in room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "lexicalLemmas": [
+        "not"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+not+in+room%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
       "query": "it's a book",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -622,6 +636,56 @@
       "examples": [],
       "sampleCount": 0,
       "status": "no_hit"
+    },
+    {
+      "query": "no i'm not",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "lexicalLemmas": [
+        "not"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+i%27m+not%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 7283138,
+          "text": "No I'm not!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "gcaplan"
+        },
+        {
+          "id": 6607959,
+          "text": "No, I'm not.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "MaryJ"
+        },
+        {
+          "id": 12882283,
+          "text": "No, I'm not okay.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 11957977,
+          "text": "No, I'm not coming.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "zogwarg"
+        },
+        {
+          "id": 11126745,
+          "text": "No, I'm not cold.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "on the table",
@@ -1223,6 +1287,56 @@
       "status": "evidence"
     },
     {
+      "query": "i am not",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-I-AM-NOT"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+am+not%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2379436,
+          "text": "I am not.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13965920,
+          "text": "I am not here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Leglaine"
+        },
+        {
+          "id": 13897324,
+          "text": "I am not exhausted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kylewii"
+        },
+        {
+          "id": 13833683,
+          "text": "I am not Marcus.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Vortarulo"
+        },
+        {
+          "id": 12950353,
+          "text": "I am not superstitious.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "maaster"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
       "query": "i like",
       "kind": "construction",
       "lessonKeys": [
@@ -1470,6 +1584,56 @@
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "Adelpa"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "i'm not in",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-IM-NOT-IN-PLACE"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+not+in%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 5828923,
+          "text": "I'm not in.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11633398,
+          "text": "I'm not in prison.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11324274,
+          "text": "I'm not in China.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Luornu"
+        },
+        {
+          "id": 10863093,
+          "text": "I'm not in mourning.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 7860767,
+          "text": "I'm not in love.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
         }
       ],
       "sampleCount": 5,
