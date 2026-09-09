@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "courseCode": "en-fa",
   "levelKey": "A1",
   "sortOrder": 25,
@@ -12,7 +12,8 @@
     "reviewRequirement": "Reuse at least one due lexical or grammar item when pedagogically natural.",
     "usageRequirement": "Every new scored target collocation must have committed corpus evidence or an explicit Nova usage fallback with rationale.",
     "pronunciationRequirement": "Expose CMUdict evidence when present; missing CMUdict coverage does not invent a pronunciation.",
-    "wordSemantics": "Only true lexemes enter lexicalItems/words; compositional phrases remain constructions/turn text."
+    "wordSemantics": "Only true lexemes enter lexicalItems/words; compositional phrases remain constructions/turn text.",
+    "alreadyPracticedSurfaceRule": "A word already produced by the learner is not proposed as a brand-new lexical target merely because it was absent from lexicalItems metadata."
   },
   "grammarCandidates": [
     {
@@ -224,61 +225,6 @@
   ],
   "lexicalCandidates": [
     {
-      "referenceKey": "EN-REF-103B334E8B997B630D1C",
-      "lemma": "be",
-      "partOfSpeech": "verb",
-      "senseId": "50f09ea8-80c9-5aeb-8abf-4c6dcc4fcd94",
-      "senseOrder": 1,
-      "definitionEn": "have the quality of being; (copula, used with an adjective or a predicate noun)",
-      "exampleEn": "John is rich",
-      "translationFa": "بودن (صفت یا نام را دنبال می‌کند)",
-      "translationFaSource": null,
-      "exampleFa": "او خوب است.",
-      "frequencyRank": 8,
-      "cefr": "A1",
-      "cefrSource": "cefrj_lemma_consensus",
-      "cefrEvidenceLevels": [
-        "A1"
-      ],
-      "cefrConflict": false,
-      "openjamLevel": "A1",
-      "topics": [
-        "abstract",
-        "action"
-      ],
-      "sourceType": "openjam_sense",
-      "curriculumEligible": true,
-      "qualityScore": 98,
-      "productionEligible": true,
-      "flags": [
-        "cefr_lemma_only"
-      ],
-      "provenance": {
-        "openjamWordId": "3acee99a-3b3d-58ae-8396-e5a06880108f",
-        "openjamSenseId": "50f09ea8-80c9-5aeb-8abf-4c6dcc4fcd94",
-        "openjamTranslationId": "6c9543b6-1b09-535d-830f-36a1de35b799",
-        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
-        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
-      },
-      "spokenPriority": {
-        "lemma": "be",
-        "spokenRank": 1,
-        "spokenFrequency": null,
-        "generalFrequencyRank": 8,
-        "priorityTier": "core_spoken"
-      },
-      "pronunciation": {
-        "lemma": "be",
-        "arpabet": [
-          "B IY1",
-          "B IY0"
-        ],
-        "primaryArpabet": "B IY1",
-        "stressPattern": "1"
-      },
-      "curriculumScore": 104.0
-    },
-    {
       "referenceKey": "EN-REF-84D3F8ECE5F12EF40C83",
       "lemma": "not",
       "partOfSpeech": "adverb",
@@ -378,59 +324,6 @@
           "JH IH0 S T"
         ],
         "primaryArpabet": "JH AH1 S T",
-        "stressPattern": "1"
-      },
-      "curriculumScore": 104.0
-    },
-    {
-      "referenceKey": "EN-REF-C0DAF2371EE9631017A4",
-      "lemma": "do",
-      "partOfSpeech": "verb",
-      "senseId": "3b89aaec-3f3b-5102-b8f4-703a9a681047",
-      "senseOrder": 1,
-      "definitionEn": "engage in",
-      "exampleEn": "make love, not war",
-      "translationFa": "انجام دادن",
-      "translationFaSource": null,
-      "exampleFa": "من هر روز ورزش می‌کنم.",
-      "frequencyRank": 50,
-      "cefr": "A1",
-      "cefrSource": "cefrj_lemma_consensus",
-      "cefrEvidenceLevels": [
-        "A1"
-      ],
-      "cefrConflict": false,
-      "openjamLevel": "A1",
-      "topics": [
-        "action"
-      ],
-      "sourceType": "openjam_sense",
-      "curriculumEligible": true,
-      "qualityScore": 98,
-      "productionEligible": true,
-      "flags": [
-        "cefr_lemma_only"
-      ],
-      "provenance": {
-        "openjamWordId": "29c2daec-2ba6-5ea2-96cc-68c03a775f76",
-        "openjamSenseId": "3b89aaec-3f3b-5102-b8f4-703a9a681047",
-        "openjamTranslationId": "58b568d8-ec9c-5b2e-9ad0-92b3ab931438",
-        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
-        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
-      },
-      "spokenPriority": {
-        "lemma": "do",
-        "spokenRank": 10,
-        "spokenFrequency": null,
-        "generalFrequencyRank": 50,
-        "priorityTier": "core_spoken"
-      },
-      "pronunciation": {
-        "lemma": "do",
-        "arpabet": [
-          "D UW1"
-        ],
-        "primaryArpabet": "D UW1",
         "stressPattern": "1"
       },
       "curriculumScore": 104.0
@@ -748,58 +641,6 @@
       "curriculumScore": 104.0
     },
     {
-      "referenceKey": "EN-REF-4431BF36CEE00F3BCAB5",
-      "lemma": "good",
-      "partOfSpeech": "adjective",
-      "senseId": "b46d1050-7949-52ba-bb0a-0f8983b1a8f8",
-      "senseOrder": 1,
-      "definitionEn": "having desirable or positive qualities especially those suitable for a thing specified",
-      "exampleEn": "good news from the hospital",
-      "translationFa": "خوب، مطلوب",
-      "translationFaSource": null,
-      "exampleFa": "این یک کتاب خوب است.",
-      "frequencyRank": 78,
-      "cefr": "A1",
-      "cefrSource": "cefrj_exact_pos",
-      "cefrEvidenceLevels": [
-        "A1"
-      ],
-      "cefrConflict": false,
-      "openjamLevel": "A1",
-      "topics": [
-        "quality"
-      ],
-      "sourceType": "openjam_sense",
-      "curriculumEligible": true,
-      "qualityScore": 100,
-      "productionEligible": true,
-      "flags": [],
-      "provenance": {
-        "openjamWordId": "9ddac70a-d470-50f0-aa7b-932444805c74",
-        "openjamSenseId": "b46d1050-7949-52ba-bb0a-0f8983b1a8f8",
-        "openjamTranslationId": "350ef549-65fe-5b71-b78d-170151b98dd3",
-        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
-        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
-      },
-      "spokenPriority": {
-        "lemma": "good",
-        "spokenRank": 63,
-        "spokenFrequency": null,
-        "generalFrequencyRank": 78,
-        "priorityTier": "core_spoken"
-      },
-      "pronunciation": {
-        "lemma": "good",
-        "arpabet": [
-          "G UH1 D",
-          "G IH0 D"
-        ],
-        "primaryArpabet": "G UH1 D",
-        "stressPattern": "1"
-      },
-      "curriculumScore": 104.0
-    },
-    {
       "referenceKey": "EN-REF-F1D76C812E1EDA1B8F46",
       "lemma": "only",
       "partOfSpeech": "adjective",
@@ -955,57 +796,6 @@
       "curriculumScore": 104.0
     },
     {
-      "referenceKey": "EN-REF-4983E2C55576714D370E",
-      "lemma": "see",
-      "partOfSpeech": "verb",
-      "senseId": "8cf44e55-f95c-5b1c-9fd9-c9bf9976fae3",
-      "senseOrder": 1,
-      "definitionEn": "perceive by sight or have the power to perceive by sight",
-      "exampleEn": "You have to be a good observer to see all the details",
-      "translationFa": "دیدن",
-      "translationFaSource": null,
-      "exampleFa": "من از پنجره درختها را می‌دیدم.",
-      "frequencyRank": 85,
-      "cefr": "A1",
-      "cefrSource": "cefrj_exact_pos",
-      "cefrEvidenceLevels": [
-        "A1"
-      ],
-      "cefrConflict": false,
-      "openjamLevel": "A1",
-      "topics": [
-        "action"
-      ],
-      "sourceType": "openjam_sense",
-      "curriculumEligible": true,
-      "qualityScore": 100,
-      "productionEligible": true,
-      "flags": [],
-      "provenance": {
-        "openjamWordId": "9720f2ce-6160-5b24-aa79-b80019845eca",
-        "openjamSenseId": "8cf44e55-f95c-5b1c-9fd9-c9bf9976fae3",
-        "openjamTranslationId": "54dee202-50e9-56a1-9429-84f29c4a732a",
-        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
-        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
-      },
-      "spokenPriority": {
-        "lemma": "see",
-        "spokenRank": 54,
-        "spokenFrequency": null,
-        "generalFrequencyRank": 85,
-        "priorityTier": "core_spoken"
-      },
-      "pronunciation": {
-        "lemma": "see",
-        "arpabet": [
-          "S IY1"
-        ],
-        "primaryArpabet": "S IY1",
-        "stressPattern": "1"
-      },
-      "curriculumScore": 104.0
-    },
-    {
       "referenceKey": "EN-REF-39C6EB767664D6211984",
       "lemma": "make",
       "partOfSpeech": "verb",
@@ -1052,6 +842,214 @@
           "M EY1 K"
         ],
         "primaryArpabet": "M EY1 K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-32A9B1B4D1FA20FAC633",
+      "lemma": "think",
+      "partOfSpeech": "verb",
+      "senseId": "a63cb129-c8b8-5237-8c4c-502e34cf8936",
+      "senseOrder": 1,
+      "definitionEn": "judge or regard; look upon; judge",
+      "exampleEn": "I think he is very smart",
+      "translationFa": "قضاوت کردن، نظر دادن",
+      "translationFaSource": null,
+      "exampleFa": "من او را یک نفر باهوش می‌دانم.",
+      "frequencyRank": 89,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "439bfc22-6974-5ecc-a2c4-a7c317da370b",
+        "openjamSenseId": "a63cb129-c8b8-5237-8c4c-502e34cf8936",
+        "openjamTranslationId": "0749bcdb-de79-561c-925c-118c60c88e55",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "think",
+        "spokenRank": 28,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 89,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "think",
+        "arpabet": [
+          "TH IH1 NG K"
+        ],
+        "primaryArpabet": "TH IH1 NG K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-BE697DC952E39C4808D0",
+      "lemma": "then",
+      "partOfSpeech": "adverb",
+      "senseId": "e3cd4b08-264e-5f6a-907c-619e6dd23585",
+      "senseOrder": 1,
+      "definitionEn": "subsequently or soon afterward (often used as sentence connectors)",
+      "exampleEn": "then he left",
+      "translationFa": "سپس، بعد از آن",
+      "translationFaSource": null,
+      "exampleFa": "ما صبحانه خوردیم، سپس به مدرسه رفتیم.",
+      "frequencyRank": 91,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "time"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "59b15b35-f64b-5ab5-98df-377d93138836",
+        "openjamSenseId": "e3cd4b08-264e-5f6a-907c-619e6dd23585",
+        "openjamTranslationId": "51ffec22-e76f-5472-afdc-e03bbf7fae5c",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "then",
+        "spokenRank": 46,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 91,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "then",
+        "arpabet": [
+          "DH EH1 N"
+        ],
+        "primaryArpabet": "DH EH1 N",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-1A4E4A764F5FC7232175",
+      "lemma": "back",
+      "partOfSpeech": "adverb",
+      "senseId": "38ce9006-bd77-53f1-8139-13c6218904e7",
+      "senseOrder": 1,
+      "definitionEn": "in or to or toward a former location",
+      "exampleEn": "she went back to her parents' house",
+      "translationFa": "بازگشت (به جای قبل)",
+      "translationFaSource": null,
+      "exampleFa": "او بعد از سفر به خانه برگشت.",
+      "frequencyRank": 93,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "body"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "0dfcc20b-f927-5b6f-97c4-c87a86f1289c",
+        "openjamSenseId": "38ce9006-bd77-53f1-8139-13c6218904e7",
+        "openjamTranslationId": "65915df2-b41b-556b-935d-3e756f9a5d7d",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "back",
+        "spokenRank": 85,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 93,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "back",
+        "arpabet": [
+          "B AE1 K"
+        ],
+        "primaryArpabet": "B AE1 K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-D8F414A2604D92EB368F",
+      "lemma": "well",
+      "partOfSpeech": "adverb",
+      "senseId": "c57f95b8-e805-5c29-a901-495b548af2fc",
+      "senseOrder": 1,
+      "definitionEn": "(often used as a combining form) in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')",
+      "exampleEn": "the children behaved well",
+      "translationFa": "خوب، به خوبی",
+      "translationFaSource": null,
+      "exampleFa": "او کار را خیلی خوب انجام داد.",
+      "frequencyRank": 99,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "84183b70-9d1b-51f7-836e-2dc794cf6d76",
+        "openjamSenseId": "c57f95b8-e805-5c29-a901-495b548af2fc",
+        "openjamTranslationId": "cc719418-375b-5bc6-b968-91c71f2dc3e2",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "well",
+        "spokenRank": 36,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 99,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "well",
+        "arpabet": [
+          "W EH1 L"
+        ],
+        "primaryArpabet": "W EH1 L",
         "stressPattern": "1"
       },
       "curriculumScore": 104.0
@@ -1256,5 +1254,5 @@
       "Persian instructional copy"
     ]
   },
-  "specHash": "31c5af7a3e0919996bd057fe5815dd70c0bc4b20fd211307b142aad921dd6204"
+  "specHash": "233fd7da03439018212e938d814d42080bc134e43837d3243b7d8e61e0211b2b"
 }
