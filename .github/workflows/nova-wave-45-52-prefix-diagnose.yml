@@ -1,0 +1,52 @@
+name: Nova Wave 45-52 Prefix Diagnose
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/nova-wave-45-52-prefix-diagnose.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nova-production-main
+  cancel-in-progress: false
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
+      - name: Reproduce integration and print prefix errors
+        run: |
+          PYTHONPATH=nova/_assistant/content-system-v1/tools python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          import factory_wave
+
+          root=Path('.').resolve(); wave=root/'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/wave.json'
+          base_run=factory_wave._run
+          def diagnostic_run(cmd, *, cwd):
+              completed=subprocess.run(cmd,cwd=cwd,text=True)
+              if completed.returncode != 0:
+                  if any('validate_factory_prefix.py' in str(x) for x in cmd):
+                      try:
+                          out=Path(cmd[cmd.index('--output')+1])
+                          payload=json.loads(out.read_text(encoding='utf-8'))
+                          print('FULL_PREFIX_ERRORS=' + json.dumps(payload.get('errors',[]), ensure_ascii=False, indent=2))
+                          print('STORY_ERRORS=' + json.dumps(payload.get('storyErrors',[]), ensure_ascii=False, indent=2))
+                          print('DESIGN_ERRORS=' + json.dumps(payload.get('factoryDesignErrors',[]), ensure_ascii=False, indent=2))
+                      except Exception as e:
+                          print('Could not read prefix diagnostics:',e)
+                  raise RuntimeError(f"Command failed ({completed.returncode}): {' '.join(cmd)}")
+          factory_wave._run=diagnostic_run
+          factory_wave.integrate_wave(root,wave,cache_dir=root/'.cache/nova-validation')
+          PY
