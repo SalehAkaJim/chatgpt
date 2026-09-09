@@ -232,25 +232,27 @@
     {
       "activityKey": "A03",
       "type": "sentence_order",
-      "instructionFa": "سوال مایا را گوش کن و کلمه ها را مرتب کن.",
+      "instructionFa": "پاسخ الکس را گوش کن و سه بخش جمله را مرتب کن.",
       "config": {
-        "audioSourceTurnKey": "T01",
+        "audioSourceTurnKey": "T04",
         "tokensEn": [
-          "this?",
-          "What's"
+          "book.",
+          "It's",
+          "a"
         ],
         "answerTokensEn": [
-          "What's",
-          "this?"
+          "It's",
+          "a",
+          "book."
         ],
-        "answerEn": "What's this?",
+        "answerEn": "It's a book.",
         "showAnswerTextBeforeAttempt": false,
         "allowAudioReplay": true,
         "practiceOnly": true,
         "hideTokenSurfaceCues": true,
         "feedback": {
-          "correctFa": "درست چیدی؛ این سوال اسم وسیله را می پرسد.",
-          "retryFa": "دوباره گوش کن و دو بخش What's و this را پیدا کن."
+          "correctFa": "درست چیدی؛ It's a قبل از نام وسیله می آید.",
+          "retryFa": "دوباره گوش کن؛ جمله با It's شروع می شود."
         }
       },
       "metadata": {
