@@ -1,0 +1,89 @@
+name: Nova Ready Wave Integration
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/nova-wave-integrate.yml'
+      - 'nova/curriculum/en-fa/waves/**/workers/**/lesson.source.json'
+      - 'nova/_assistant/content-system-v1/tools/factory_wave.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-production-main
+  cancel-in-progress: false
+
+jobs:
+  integrate-ready-wave:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore reusable validation cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/nova-validation
+          key: nova-wave-validation-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            nova-wave-validation-${{ runner.os }}-
+            nova-validation-${{ runner.os }}-
+      - name: Install validator dependencies
+        run: pip install -r nova/_assistant/content-system-v1/tools/requirements.txt
+      - name: Find current ready wave
+        id: wave
+        shell: bash
+        run: |
+          WAVE=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          lessons = Path('nova/courses/en-fa/lessons')
+          current = sorted(
+              int(p.name) for p in lessons.iterdir()
+              if p.is_dir() and p.name.isdigit() and (p / 'lesson.source.json').exists()
+          )
+          for manifest_path in sorted(Path('nova/curriculum/en-fa/waves').glob('*/wave.json')):
+              manifest = json.load(open(manifest_path, encoding='utf-8'))
+              if manifest.get('status') not in {'PLANNED', 'STAGED'}:
+                  continue
+              if manifest.get('baseGeneratedLessons') != current:
+                  continue
+              packets = manifest.get('packets') or []
+              if packets and all(Path(p['stagingPath']).exists() for p in packets):
+                  print(manifest_path)
+                  break
+          PY
+          )
+          if [ -z "$WAVE" ]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "No ready wave for the current canonical prefix."
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "path=$WAVE" >> "$GITHUB_OUTPUT"
+            echo "Ready wave: $WAVE"
+          fi
+      - name: Integrate through single writer and full-prefix regression
+        if: steps.wave.outputs.ready == 'true'
+        run: |
+          python nova/_assistant/content-system-v1/tools/factory_wave.py integrate \
+            --repo-root . \
+            --wave "${{ steps.wave.outputs.path }}"
+      - name: Commit canonical wave only after integration PASS
+        if: steps.wave.outputs.ready == 'true'
+        run: |
+          git config user.name "nova-production-bot"
+          git config user.email "nova-production-bot@users.noreply.github.com"
+          git add nova/courses/ nova/curriculum/
+          if git diff --cached --quiet; then
+            echo "No canonical integration changes."
+          else
+            git commit -m "Integrate validated Nova authoring wave"
+            git push origin HEAD:main
+          fi
