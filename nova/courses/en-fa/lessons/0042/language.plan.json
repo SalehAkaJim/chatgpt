@@ -4,40 +4,17 @@
   "lessonKey": "EN-A1-L-0042",
   "sortOrder": 42,
   "levelKey": "A1",
-  "lessonSourceHash": "55a3b891df3d934f24df421089dac3a2552f15e970afa3880ccbf095c2245153",
+  "lessonSourceHash": "5dcc5d563e40a83cc2cb5bf2272568935f9c30e8e27690b94dae8f1134ad93df",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
     {
       "constructionKey": "EN-CONSTR-0042-THINK",
-      "form": "I think + clause.",
+      "form": "I think there is + thing.",
       "kind": "lexical_frame",
       "status": "PASS",
-      "bestGrammarMatch": {
-        "grammarKey": "CEFRJ-GRAM-1",
-        "grammaticalItem": "I am",
-        "cefr": "A1",
-        "cefrJLevel": "A1.1",
-        "matchScore": 0.375,
-        "prerequisiteKeys": []
-      },
-      "alternatives": [
-        {
-          "grammarKey": "CEFRJ-GRAM-1-2",
-          "grammaticalItem": "Am I ...?",
-          "matchScore": 0.375
-        },
-        {
-          "grammarKey": "CEFRJ-GRAM-1-1",
-          "grammaticalItem": "I am not",
-          "matchScore": 0.35
-        },
-        {
-          "grammarKey": "CEFRJ-GRAM-1-3",
-          "grammaticalItem": "Am I not ...?",
-          "matchScore": 0.35
-        }
-      ]
+      "bestGrammarMatch": null,
+      "alternatives": []
     }
   ],
   "lexicalEvidence": [
@@ -104,13 +81,16 @@
   ],
   "usageEvidence": [
     {
-      "query": "i think",
+      "query": "i think there is",
       "kind": "construction",
       "lessonKeys": [
         "EN-A1-L-0042"
       ],
       "constructionKeys": [
         "EN-CONSTR-0042-THINK"
+      ],
+      "lexicalLemmas": [
+        "think"
       ],
       "status": "corpus_evidence",
       "sampleCount": 5,
@@ -138,7 +118,10 @@
           "owner": "CM"
         }
       ],
-      "fallback": null
+      "fallback": {
+        "query": "i think there is",
+        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: i think there is"
+      }
     },
     {
       "query": "do you think",
@@ -179,50 +162,10 @@
         "query": "do you think",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you think"
       }
-    },
-    {
-      "query": "i think there is",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0042"
-      ],
-      "lexicalLemmas": [
-        "think"
-      ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "i think there is",
-      "examples": [
-        {
-          "id": 8543312,
-          "text": "I think there is life on Mars.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
-        },
-        {
-          "id": 6841950,
-          "text": "I think there is someone in here.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "lev4uk_pavel2"
-        },
-        {
-          "id": 1224950,
-          "text": "I think there is more to this.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CM"
-        }
-      ],
-      "fallback": {
-        "query": "i think there is",
-        "rationale": "Explicit bounded usage fallback for validated A1 target collocation: i think there is"
-      }
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "590596d2ec8624e4fd43901e3e251652749e4786838bc16da919d63a66f6bb53"
+  "planHash": "224be03e19145fe3bed905c069a46395c7aab67e0cce3052412ab5f1fed04b94"
 }
