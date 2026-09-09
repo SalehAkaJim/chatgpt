@@ -7,9 +7,9 @@
   "sortOrder": 17,
   "titleEn": "What day?",
   "titleFa": "چه روزی؟",
-  "descriptionFa": "لیام و لیو روز برنامه بعدی کتابخانه را هماهنگ می کنند و فقط Monday را در یک chunk ثابت یاد می گیرند.",
+  "descriptionFa": "لیام و لیو روز برنامه بعدی کتابخانه را هماهنگ می کنند؛ on و Monday دو کلمه مستقل هستند و در پاسخ On Monday کنار هم می آیند.",
   "primaryOutcomeKey": "A1-INTERACTION-CHOOSE-DAY",
-  "outcomeFa": "زبان آموز می تواند سوال کوتاه درباره روز را بفهمد و برای برنامه دوشنبه پاسخ کوتاه بدهد.",
+  "outcomeFa": "زبان آموز می تواند Monday را به عنوان یک روز مشخص تشخیص دهد و با on پاسخ کوتاه On Monday را برای برنامه دوشنبه بسازد.",
   "scenarioFa": "در کتابخانه، لیو درباره روز نشست بعدی می پرسد و کارت برنامه Monday را نشان می دهد. نقش تو لیام است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-ASK-TIME",
@@ -24,16 +24,16 @@
         "meaningFa": "پرسیدن روز وقتی موضوع برنامه روشن است"
       },
       {
-        "key": "EN-CONSTR-ON-MONDAY",
-        "form": "On Monday.",
-        "meaningFa": "گفتن یک روز ثابت برای برنامه"
+        "key": "EN-CONSTR-ON-WEEKDAY",
+        "form": "On + weekday.",
+        "meaningFa": "گفتن روز یک برنامه با on و نام روز"
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "The Lesson teaches Monday only inside a fixed schedule response, not general weekday vocabulary. Final retrieval is bounded to On Monday.",
+    "assessmentBoundary": "The Lesson introduces on in its day use and Monday as independent word units, then combines them in On Monday. It does not claim general weekday mastery beyond Monday.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Transfer the short schedule-question pattern from clock time to one weekday without expanding the weekday set."
+      "intent": "Transfer the short schedule-question pattern from clock time to day, learn on and Monday independently, and compose them in On Monday without creating a phrase row in the words layer."
     },
     "story": {
       "arcKey": "EN-A1-LIBRARY",
@@ -60,7 +60,7 @@
           "A05"
         ],
         "learningDemand": "transfer",
-        "note": "What time?/At six transfers to the parallel schedule pattern What day?/On Monday."
+        "note": "What time?/At six transfers to the parallel schedule pattern What day?/On Monday while the day words stay independent."
       },
       {
         "lessonKey": "EN-A1-L-0011",
@@ -73,7 +73,40 @@
     ],
     "pedagogyVersion": 2
   },
-  "lexicalItems": [],
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-ON-DAY-01",
+      "itemType": "word",
+      "displayForm": "on",
+      "translationFa": "در؛ برای روز مشخص",
+      "role": "target",
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "senseKey": "day_preposition",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_curriculum_word",
+        "referenceGap": true,
+        "referenceGapReason": "The current A1 production snapshot does not expose an exact selected record for on in this bounded weekday use."
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-MONDAY-01",
+      "itemType": "word",
+      "displayForm": "Monday",
+      "translationFa": "دوشنبه",
+      "role": "target",
+      "lemma": "Monday",
+      "partOfSpeech": "noun",
+      "senseKey": "weekday_monday",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_curriculum_word",
+        "referenceGap": true,
+        "referenceGapReason": "The current selected A1 production snapshot does not expose an exact Monday record for this Lesson, so the ordinary weekday lexeme remains Nova-authored instead of inventing a phrase entry."
+      }
+    }
+  ],
   "turns": [
     {
       "turnKey": "T01",
@@ -133,6 +166,18 @@
   ],
   "activities": [
     {
+      "activityKey": "A01",
+      "type": "lexical_teach",
+      "instructionFa": "دو کلمه on و Monday را جدا یاد بگیر و بعد ترکیبشان کن.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-ON-DAY-01",
+          "EN-LEX-MONDAY-01"
+        ],
+        "explanationFa": "Monday یعنی دوشنبه. on اینجا قبل از روز مشخص می آید. On Monday یک word تازه نیست؛ از دو کلمه مستقل on و Monday ساخته می شود."
+      }
+    },
+    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "سوال لیو را گوش کن و جواب لیام را با صدای بلند بگو.",
@@ -177,11 +222,11 @@
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است؛ Monday یعنی دوشنبه در این کارت برنامه.",
+            "درست است؛ Monday یعنی دوشنبه.",
             "این کارت روز را نشان می دهد، نه ساعت.",
             "این کارت روز را نشان می دهد، نه شماره اتاق."
           ],
-          "correctFa": "برنامه دوشنبه است."
+          "correctFa": "Monday را به عنوان نام روز تشخیص دادی."
         }
       },
       "metadata": {
@@ -194,7 +239,7 @@
     {
       "activityKey": "A04",
       "type": "response_choice",
-      "instructionFa": "پاسخ مناسب را برای سوال روز انتخاب کن.",
+      "instructionFa": "on و Monday را برای پاسخ روز کنار هم بگذار.",
       "promptFa": "لیو می پرسد What day? و کارت برنامه Monday را نشان می دهد. چه می گویی؟",
       "config": {
         "optionsEn": [
@@ -205,11 +250,11 @@
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است؛ این پاسخ روز برنامه را می گوید.",
+            "درست است؛ on + Monday روز برنامه را می گوید.",
             "این پاسخ ساعت را می گوید.",
             "این پاسخ اتاق را انتخاب می کند."
           ],
-          "correctFa": "On Monday یعنی دوشنبه."
+          "correctFa": "On Monday از دو word مستقل on و Monday ساخته شده است."
         }
       },
       "metadata": {
@@ -230,10 +275,10 @@
         ],
         "sourceTurnKey": "T05",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "از chunk روز این درس استفاده کن.",
+        "hintFa": "on را قبل از Monday بگذار.",
         "feedback": {
-          "correctFa": "درست است؛ روز برنامه را گفتی.",
-          "retryFa": "پاسخ این درس با On شروع می شود و Monday را دارد."
+          "correctFa": "درست است؛ دو کلمه مستقل را در پاسخ روز ترکیب کردی.",
+          "retryFa": "on + Monday را بساز."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -241,7 +286,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded recall of one fixed weekday; not general weekday mastery."
+        "assessmentLimit": "Same-session bounded composition of on + Monday; not general weekday mastery."
       }
     }
   ],
