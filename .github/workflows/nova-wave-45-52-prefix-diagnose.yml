@@ -16,6 +16,7 @@ concurrency:
 jobs:
   diagnose:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,8 +33,25 @@ jobs:
           from pathlib import Path
           import factory_wave
 
-          root=Path('.').resolve(); wave=root/'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/wave.json'
-          base_run=factory_wave._run
+          root=Path('.').resolve()
+          wave_dir=root/'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052'
+          wave=wave_dir/'wave.json'
+
+          p49=wave_dir/'workers/w05/0049/lesson.source.json'
+          l49=json.loads(p49.read_text(encoding='utf-8'))
+          r=l49['curriculum']['languageReference']
+          r['grammarTargetKeys']=[]
+          r['noNewGrammarReason']='Lexical-focus integration: the provisional grammar reservation was no longer available in the live sequential curriculum spec, so this Lesson claims no new grammar.'
+          p49.write_text(json.dumps(l49,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          p52=wave_dir/'workers/w08/0052/lesson.source.json'
+          l52=json.loads(p52.read_text(encoding='utf-8'))
+          a=next(x for x in l52['activities'] if x['activityKey']=='A04')
+          a.clear()
+          a.update({'activityKey':'A04','type':'response_choice','instructionFa':'جواب اول را دوباره پیدا کن.','promptFa':'نورا می‌گوید: بگو یک سال. اوون چه جوابی می‌دهد؟','config':{'optionsEn':['One year.','Two years.','One day.'],'answerIndex':0,'feedback':{'optionsFa':['درست است.','این جواب بخش دوم گفت‌وگو است.','این جواب هدف این موقعیت نیست.'],'correctFa':'One year.'}},'metadata':{'learningDemand':'recognition','evidenceKind':'recognition_or_selection'}})
+          p52.write_text(json.dumps(l52,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+          original_run=factory_wave._run
           def diagnostic_run(cmd, *, cwd):
               completed=subprocess.run(cmd,cwd=cwd,text=True)
               if completed.returncode != 0:
