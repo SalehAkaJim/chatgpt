@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 2,
+  "snapshotId": "en-fa-2026-09-09-d7a2a8402708",
+  "fingerprint": "d7a2a8402708fd300a00a3c549b9ce4a189ec53b50d48ce928e2c277eeaca374",
+  "courseCode": "en-fa",
+  "createdAt": "2026-09-09T08:04:50.899930+00:00",
+  "kind": "language-reference-snapshot",
+  "status": "validated",
+  "qualityThreshold": 90,
+  "storageModel": "immutable-git-commit-pointer",
+  "git": {
+    "repository": "SalehAkaJim/chatgpt",
+    "branchAtCapture": "main",
+    "commit": "2a62695ef622ccf846edfcca7400693e6196f194"
+  },
+  "canonicalRoot": "nova/reference/en-fa",
+  "controlFiles": {
+    "manifest": {
+      "path": "nova/reference/en-fa/manifest.json",
+      "gitBlobSha": "041e7ab0fc1fd23d161a529c886c3ee2f14c8a29",
+      "sha256": "050e3dea5439c63585b9fdcb030e9719a4c67651f32a5f36d250ce3169d0f38e"
+    },
+    "extensionsManifest": {
+      "path": "nova/reference/en-fa/extensions_manifest.json",
+      "gitBlobSha": "b4f66987bd600eb64d33ce04bffaf89b1720ce37",
+      "sha256": "dd69e9c005db08de3656c63590112e7b3c7b164ca74ffef0d90cb75e15c51d01"
+    },
+    "sourcesLock": {
+      "path": "nova/reference/en-fa/sources.lock.json",
+      "gitBlobSha": "4677620fb62e1526a695c6fcddb7c932c6aefb9c",
+      "sha256": "a7b6dbb8eaffb4c19f438b8d9b2acd826f1510a75d2740a98e70bf8215dc1e13"
+    }
+  },
+  "dataFamilies": {
+    "lexical": [
+      "nova/reference/en-fa/lexical/A1.json",
+      "nova/reference/en-fa/lexical/A2.json",
+      "nova/reference/en-fa/lexical/B1.json",
+      "nova/reference/en-fa/lexical/B2.json",
+      "nova/reference/en-fa/lexical/C1.json",
+      "nova/reference/en-fa/lexical/C2.json"
+    ],
+    "grammar": [
+      "nova/reference/en-fa/grammar/A1.json",
+      "nova/reference/en-fa/grammar/A2.json",
+      "nova/reference/en-fa/grammar/B1.json",
+      "nova/reference/en-fa/grammar/B2.json",
+      "nova/reference/en-fa/grammar/C1.json",
+      "nova/reference/en-fa/grammar/C2.json"
+    ],
+    "pronunciation": [
+      "nova/reference/en-fa/pronunciation/cmudict.json"
+    ],
+    "spokenFrequency": [
+      "nova/reference/en-fa/frequency/ngsl_spoken.json"
+    ],
+    "usage": [
+      "nova/reference/en-fa/usage/tatoeba.json"
+    ],
+    "coverage": [
+      "nova/reference/en-fa/lesson_coverage.json"
+    ]
+  },
+  "dataFiles": {
+    "nova/reference/en-fa/lexical/A1.json": {
+      "sha256": "a55d0954319df1093300ad4847d6748b18fa09e076ddb49a0ee869218e26b6b2",
+      "gitBlobSha": "a283d784384b82f6905a1de750d8d4be3b448ce6"
+    },
+    "nova/reference/en-fa/lexical/A2.json": {
+      "sha256": "953cb03cdbf9a169b40d35ebb0c7d2114bd1cdb97aa0689b4b443bf6599b8655",
+      "gitBlobSha": "e766175f4a01e01851146b55427184147d64202e"
+    },
+    "nova/reference/en-fa/lexical/B1.json": {
+      "sha256": "1ad7630700cd6858e9d68c840a39077c41b54c9931092d35603a6db46609c8b6",
+      "gitBlobSha": "694c2c6658d93ba534ca787fb9d5e2030ffd605e"
+    },
+    "nova/reference/en-fa/lexical/B2.json": {
+      "sha256": "50583d5c6316e454fbae5a1512b235ca577fc908027e009de11f5afb6cd8f58e",
+      "gitBlobSha": "9f00955b9039a92d4eb2d120e72113c93ecf7e24"
+    },
+    "nova/reference/en-fa/lexical/C1.json": {
+      "sha256": "80ea498830ff53b9f16fad20619bb9e0e13bd9eb745ade5c9d52e1a70d809784",
+      "gitBlobSha": "531e206deccb22844d9f55e8b1084f5992cb8a6a"
+    },
+    "nova/reference/en-fa/lexical/C2.json": {
+      "sha256": "e2d954dff25d38a70e5a9aadb19ce83d851626bca89e0e5e7498d082c9dff2d3",
+      "gitBlobSha": "4e60eda1bd90594f64f4a7fbd015f46bda9dbbdd"
+    },
+    "nova/reference/en-fa/grammar/A1.json": {
+      "sha256": "b7b484d5732c12347cd8449c1008e56af5855c38a1b7ae95fba8aa21b659ab8f",
+      "gitBlobSha": "4af307623c796bf1d2f38e2dfeef5415efd3fe5a"
+    },
+    "nova/reference/en-fa/grammar/A2.json": {
+      "sha256": "5ae570bea8196f803bdbc2a02c2875ec296fd6e0ba6070cd220deb613366eddc",
+      "gitBlobSha": "2825e6f1552cd24a2c5de637a15f618e01d04b09"
+    },
+    "nova/reference/en-fa/grammar/B1.json": {
+      "sha256": "c78b94f7200571140ab4af3a81bf302a816a1df9aa3c08de31c5af04d84d01ba",
+      "gitBlobSha": "dcb2ef8be0a665037f9f01b061a9b06cc61706e4"
+    },
+    "nova/reference/en-fa/grammar/B2.json": {
+      "sha256": "ed40f98c68cdb595f5a6392b26ceba793f09932d574d188869e1fe0a0504c2df",
+      "gitBlobSha": "45c5dc3dad8ef87ec7a11213db24161757a58e43"
+    },
+    "nova/reference/en-fa/grammar/C1.json": {
+      "sha256": "ae1ba9016ed5b2a6e62770b6bc1910444227b9b3987c47af1f624db4847d61ca",
+      "gitBlobSha": "cd63b9beb32d920a7a12a7ed7cb94a9e398d0ca6"
+    },
+    "nova/reference/en-fa/grammar/C2.json": {
+      "sha256": "4e0e043c72e949a35439833a1ded0d877df9f617861efa50706d080cbdb862e7",
+      "gitBlobSha": "195ee6024f88b2ff96a1b32d8a777d69af95a3fb"
+    },
+    "nova/reference/en-fa/pronunciation/cmudict.json": {
+      "sha256": "2b9e037e529dd033814a152cc1d3dfad9763f4293625ff97f7a1287985a4a128",
+      "gitBlobSha": "3f4ceabd87f4041ac3dff7b347213b9a62d505b1"
+    },
+    "nova/reference/en-fa/frequency/ngsl_spoken.json": {
+      "sha256": "4393ebc83206487d5b54e295812661fcd35e73ca2b759fd3f7488bb77731d46a",
+      "gitBlobSha": "34d2740f0a1e2d39807562626591e855428e8546"
+    },
+    "nova/reference/en-fa/usage/tatoeba.json": {
+      "sha256": "3f2fdc216fc476f68b39d934667cdc3409ff2aa4ccbd72ede92e17bd79b369cf",
+      "gitBlobSha": "9716fa7851a42e2d4daa6124236dd8495a039c2f"
+    },
+    "nova/reference/en-fa/lesson_coverage.json": {
+      "sha256": "aec04d59fe24267bdbedb051d92aa42d026e2ede493055d2c9596a656b7c5c32",
+      "gitBlobSha": "c7bb512cfe640fa17e9c3710bbc8dfe27147c823"
+    }
+  },
+  "sourceLockFingerprint": {
+    "sha256": "a7b6dbb8eaffb4c19f438b8d9b2acd826f1510a75d2740a98e70bf8215dc1e13",
+    "gitBlobSha": "4677620fb62e1526a695c6fcddb7c932c6aefb9c"
+  },
+  "sourceLocks": {
+    "openjam": {
+      "repository": "amirj4m/openjam",
+      "commit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+      "datasetVersion": "0.8.1",
+      "license": "MIT",
+      "files": {
+        "words": "data/json/words_en.json",
+        "translationsFa": "data/json/translations_fa.json",
+        "categories": "data/json/categories.json",
+        "wordCategories": "data/json/word_categories.json"
+      }
+    },
+    "cefrj": {
+      "repository": "openlanguageprofiles/olp-en-cefrj",
+      "commit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f",
+      "license": "free commercial use with attribution per project terms",
+      "files": {
+        "vocabulary": "cefrj-vocabulary-profile-1.5.csv",
+        "grammar": "cefrj-grammar-profile-20180315.csv",
+        "c1c2": "octanove-vocabulary-profile-c1c2-1.0.csv"
+      }
+    },
+    "cmudict": {
+      "repository": "cmusphinx/cmudict",
+      "commit": "74790861f652b15e4ac49015a90074ad62a27690",
+      "license": "CMUdict permissive license",
+      "files": {
+        "dictionary": "cmudict.dict"
+      }
+    },
+    "ngslSpoken": {
+      "datasetVersion": "1.2",
+      "sourceUrl": "https://charliebrownecompany.squarespace.com/s/NGSL-Spoken_12_stats.csv",
+      "license": "CC BY-SA 4.0",
+      "snapshotPolicy": "download-and-hash"
+    },
+    "tatoeba": {
+      "apiBase": "https://api.tatoeba.org/v1/sentences",
+      "apiSchema": "https://api.tatoeba.org/openapi.json",
+      "license": "per-sentence license retained in snapshot",
+      "snapshotPolicy": "query-and-pin-sentence-ids",
+      "filters": {
+        "lang": "eng",
+        "is_orphan": "no",
+        "is_unapproved": "no"
+      }
+    }
+  },
+  "summary": {
+    "referenceRecords": 37687,
+    "curriculumEligible": 16436,
+    "productionEligible": 13284,
+    "pronunciationMatchedLemmas": 7975,
+    "spokenFrequencyItems": 721,
+    "usageQueries": 58,
+    "usageQueriesWithEvidence": 43,
+    "usageUnavailableQueries": 0
+  },
+  "reuse": {
+    "recommended": "Resolve every data file from git.commit for exact reproducibility; never substitute mutable branch HEAD.",
+    "example": "git show 2a62695ef622ccf846edfcca7400693e6196f194:nova/reference/en-fa/lexical/A1.json"
+  }
+}
