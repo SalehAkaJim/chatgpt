@@ -16,32 +16,81 @@ concurrency:
 jobs:
   repair-integrate:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
-      - name: Patch and diagnose Lesson 52
-        shell: bash
+      - name: Patch staged drift and Lesson 52 quality issue
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          p=Path('nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w08/0052/lesson.source.json')
-          l=json.loads(p.read_text(encoding='utf-8'))
-          a=next(x for x in l['activities'] if x['activityKey']=='A04')
-          a['config']['tokensEn']=['One','year','.']
-          a['config']['answerTokensEn']=['One','year','.']
-          p.write_text(json.dumps(l,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          wave=Path('nova/curriculum/en-fa/waves/en-fa-A1-0045-0052')
+          p49=wave/'workers/w05/0049/lesson.source.json'
+          l49=json.loads(p49.read_text(encoding='utf-8'))
+          r=l49['curriculum']['languageReference']
+          r['grammarTargetKeys']=[]
+          r['noNewGrammarReason']='Lexical-focus integration: the provisional grammar reservation was no longer available in the live sequential curriculum spec, so this Lesson claims no new grammar.'
+          p49.write_text(json.dumps(l49,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          p52=wave/'workers/w08/0052/lesson.source.json'
+          l52=json.loads(p52.read_text(encoding='utf-8'))
+          a=next(x for x in l52['activities'] if x['activityKey']=='A04')
+          a.clear()
+          a.update({'activityKey':'A04','type':'response_choice','instructionFa':'جواب اول را دوباره پیدا کن.','promptFa':'نورا می‌گوید: بگو یک سال. اوون چه جوابی می‌دهد؟','config':{'optionsEn':['One year.','Two years.','One day.'],'answerIndex':0,'feedback':{'optionsFa':['درست است.','این جواب بخش دوم گفت‌وگو است.','این جواب هدف این موقعیت نیست.'],'correctFa':'One year.'}},'metadata':{'learningDemand':'recognition','evidenceKind':'recognition_or_selection'}})
+          p52.write_text(json.dumps(l52,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
-          set +e
-          python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py \
-            --repo-root . --config nova/curriculum/en-fa/factory.config.json \
-            --lesson nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w08/0052/lesson.source.json \
-            --no-cache --output /tmp/l52.json
-          s=$?
-          cat /tmp/l52.json
-          exit $s
+      - name: Verify all staged local gates
+        run: |
+          for n in 45 46 47 48 49 50 51 52; do
+            worker=$(printf '%02d' $((n-44)))
+            out="/tmp/l${n}.json"
+            set +e
+            python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson "nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w${worker}/00${n}/lesson.source.json" --no-cache --output "$out"
+            s=$?
+            cat "$out"
+            set -e
+            test "$s" -eq 0
+          done
+      - name: Integrate wave sequentially
+        run: |
+          PYTHONPATH=nova/_assistant/content-system-v1/tools python - <<'PY'
+          import json,re
+          from pathlib import Path
+          from factory_wave import integrate_wave
+          root=Path('.').resolve(); wave=root/'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/wave.json'
+          manifest=json.loads(wave.read_text(encoding='utf-8')); packets={int(p['sortOrder']):p for p in manifest['packets']}
+          for _ in range(8):
+              try:
+                  integrate_wave(root,wave,cache_dir=root/'.cache/nova-validation'); break
+              except RuntimeError as exc:
+                  m=re.search(r'Draft (\d{4}).*?grammarTargetKey ([^\s]+) is not in the committed grammar candidate set',str(exc),re.S)
+                  if not m: raise
+                  order=int(m.group(1)); stale=m.group(2); p=root/packets[order]['stagingPath']; l=json.loads(p.read_text(encoding='utf-8')); lr=l['curriculum']['languageReference']; lr['grammarTargetKeys']=[k for k in lr.get('grammarTargetKeys',[]) if k!=stale]
+                  if not lr['grammarTargetKeys']: lr['noNewGrammarReason']='Lexical-focus integration: the provisional grammar reservation was no longer available in the live sequential curriculum spec, so this Lesson claims no new grammar.'
+                  p.write_text(json.dumps(l,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          else: raise RuntimeError('integration did not converge')
+          PY
+      - name: Build text-only QA
+        run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only
+      - name: Full-prefix regression
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --output nova/curriculum/en-fa/factory_validation.json
+          python - <<'PY'
+          import json
+          p=json.load(open('nova/curriculum/en-fa/factory_validation.json',encoding='utf-8'))
+          assert p['status']=='PASS',p
+          assert p['passedPrefixLength']==52,p['passedPrefixLength']
+          PY
+      - name: Publish atomic wave
+        run: |
+          git config user.name nova-production-bot
+          git config user.email nova-production-bot@users.noreply.github.com
+          git add nova/courses/en-fa/lessons/0045 nova/courses/en-fa/lessons/0046 nova/courses/en-fa/lessons/0047 nova/courses/en-fa/lessons/0048 nova/courses/en-fa/lessons/0049 nova/courses/en-fa/lessons/0050 nova/courses/en-fa/lessons/0051 nova/courses/en-fa/lessons/0052 nova/curriculum/en-fa nova/_assistant/content-system-v1/text_build_report.json
+          git commit -m 'Integrate validated Nova wave 45-52'
+          git push origin HEAD:main
