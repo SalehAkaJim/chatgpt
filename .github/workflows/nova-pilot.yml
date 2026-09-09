@@ -69,12 +69,17 @@ jobs:
           key: nova-validation-${{ runner.os }}-${{ github.sha }}
           restore-keys: |
             nova-validation-${{ runner.os }}-
-      - name: Install dependencies
+      - name: Install system dependencies
+        timeout-minutes: 8
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg default-mysql-client
-          pip install -r nova/_assistant/content-system-v1/tools/requirements.txt
-          npm ci --prefix nova/_assistant/content-system-v1/tools --no-audit --no-fund
+          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg default-mysql-client
+      - name: Install Python dependencies
+        timeout-minutes: 5
+        run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
+      - name: Install Node dependencies
+        timeout-minutes: 5
+        run: npm ci --prefix nova/_assistant/content-system-v1/tools --no-audit --no-fund
       - name: Run regression tests
         run: |
           python nova/_assistant/content-system-v1/tools/test_content_quality.py
