@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0081",
+  "sortOrder": 81,
+  "levelKey": "A1",
+  "lessonSourceHash": "dd1456cd338a8a19fdaafefd819322cd313ba1cae2d8055e00cb5678740b06ce",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0081-FEEL",
+      "form": "I feel good",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-FEEL-01",
+      "lemma": "feel",
+      "role": "target",
+      "referenceKey": "EN-REF-A6C19DF651F9E7E2A898",
+      "spokenPriority": {
+        "lemma": "feel",
+        "spokenRank": 139,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "F IY1 L",
+        "arpabet": [
+          "F IY1 L"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i feel good",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0081"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0081-FEEL"
+      ],
+      "lexicalLemmas": [
+        "feel"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i feel good",
+        "rationale": "Exact bounded learner target."
+      }
+    },
+    {
+      "query": "i feel tired",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0081"
+      ],
+      "lexicalLemmas": [
+        "feel"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i feel tired",
+        "rationale": "Exact transfer target."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "f80d8687350d0e6a567876747280c732f87c698c8d51623fcc0f8b2a935f1cd7"
+}

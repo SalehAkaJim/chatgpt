@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0081",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "i feel tired",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0081; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "‘I feel good’ and ‘I feel tired’ are natural A1 statements of condition."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian translations preserve the emotional/state sense of feel without adding another target."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "One target verb is contrasted across two familiar states."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors remain semantically distinct from the target action."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "A quiet library check-in can naturally prompt brief statements about how someone feels."
+      },
+      "difficultyFit": {
+        "score": 5,
+        "evidence": "Both utterances are short, concrete and early-A1 appropriate."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "The stable frame supports retrieval while the adjective changes."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The learner transfers feel from good to tired."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Scenario, dialogue and activities support one bounded outcome."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; confidence is limited to model/editor review."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Only the bounded A1 state sense is reviewed.",
+      "Audio prosody is not evaluated at this stage."
+    ],
+    "resolvedFindings": [
+      "English target utterances are natural.",
+      "Persian meaning remains consistent.",
+      "Final production is hidden retrieval.",
+      "The library arc returns after required spacing with learner-role rotation."
+    ],
+    "lessonKey": "EN-A1-L-0081",
+    "sourceHash": "dd1456cd338a8a19fdaafefd819322cd313ba1cae2d8055e00cb5678740b06ce",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.6,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "dd1456cd338a8a19fdaafefd819322cd313ba1cae2d8055e00cb5678740b06ce"
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0078",
+  "sortOrder": 78,
+  "levelKey": "A1",
+  "lessonSourceHash": "5222852ec7d4363f7d7962f81fb2d077cc6cc1c0fba0dc8ee64b4f33819e48c0",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0078-AGAIN",
+      "form": "Say it again",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-AGAIN-01",
+      "lemma": "again",
+      "role": "target",
+      "referenceKey": "EN-REF-100DF030E95A3ABD1620",
+      "spokenPriority": {
+        "lemma": "again",
+        "spokenRank": 134,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AH0 G EH1 N",
+        "arpabet": [
+          "AH0 G EH1 N",
+          "AH0 G EY1 N"
+        ],
+        "stressPattern": "01"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "say it again",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0078"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0078-AGAIN"
+      ],
+      "lexicalLemmas": [
+        "again"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say it again",
+        "rationale": "Exact bounded learner target."
+      }
+    },
+    {
+      "query": "try again",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0078"
+      ],
+      "lexicalLemmas": [
+        "again"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "try again",
+        "rationale": "Exact transfer target."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "86d48390b4fe5b95cc755be7921f8053ce33638442f5b1a9a2d0603ac7b97797"
+}

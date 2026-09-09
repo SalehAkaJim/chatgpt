@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0080",
+  "sortOrder": 80,
+  "levelKey": "A1",
+  "lessonSourceHash": "cfa042bfd349541ef934767a234e5c03ca4d536bf104e3e4cf925ace10031eea",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0080-SHOW",
+      "form": "Show me the photo",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-SHOW-01",
+      "lemma": "show",
+      "role": "target",
+      "referenceKey": "EN-REF-470785EBFA119E25BB5E",
+      "spokenPriority": {
+        "lemma": "show",
+        "spokenRank": 225,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "SH OW1",
+        "arpabet": [
+          "SH OW1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "show me the photo",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0080"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0080-SHOW"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "show me the photo",
+        "rationale": "Exact bounded learner target."
+      }
+    },
+    {
+      "query": "show me the",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0080"
+      ],
+      "lexicalLemmas": [
+        "show"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "show me the",
+        "rationale": "Exact target-collocation window generated around show in both learner responses."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "9116b6eb6cc05713d4fd4bba562536044625dcbe7ad21a69a994ea81303f8da3"
+}

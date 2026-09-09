@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "lessonKey": "EN-A1-L-0078",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 100,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0078; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "‘Say it again’ and ‘Try again’ are natural, high-frequency A1 classroom utterances."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "دوباره directly preserves the selected sense of again in both learner responses."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The lesson isolates one adverb and practices it in two distinct imperative frames."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Meaning and sentence distractors remain clearly separable from the intended response."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "A pronunciation-practice scene naturally motivates repetition language."
+      },
+      "difficultyFit": {
+        "score": 5,
+        "evidence": "Both target utterances are short and appropriate for early A1 spoken practice."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "again recurs across listening, selection, guided production and hidden retrieval."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The learner moves from requesting repetition to encouraging another attempt."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Scenario, turns, activities and outcome share one clear communicative goal."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; confidence is limited to model/editor review."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "The review covers only the bounded A1 target sense.",
+      "Generated audio prosody is not evaluated at this text stage."
+    ],
+    "resolvedFindings": [
+      "English target language is idiomatic.",
+      "Persian meaning is stable across tasks.",
+      "The transfer response changes intent while retaining again.",
+      "The character pair and learner role differ from the adjacent lesson."
+    ],
+    "lessonKey": "EN-A1-L-0078",
+    "sourceHash": "5222852ec7d4363f7d7962f81fb2d077cc6cc1c0fba0dc8ee64b4f33819e48c0",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.7,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "5222852ec7d4363f7d7962f81fb2d077cc6cc1c0fba0dc8ee64b4f33819e48c0"
+}

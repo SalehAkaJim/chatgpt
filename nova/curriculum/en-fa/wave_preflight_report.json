@@ -1,25 +1,36 @@
 {
   "schemaVersion": 1,
-  "status": "FAIL",
-  "stage": "integration",
-  "inputHead": "30d53acd8fa75367fc52cee32961d702b5f92b4f",
-  "checkedAt": "2026-09-09T21:11:55.222534+00:00",
-  "errors": [
-    "Ordered single-writer integration did not pass."
-  ],
+  "status": "PASS",
+  "stage": "ready-to-publish",
+  "inputHead": "eeee8d01d73d64dea1c4058fca9523f8c6720e4d",
+  "checkedAt": "2026-09-09T21:19:03.994113+00:00",
+  "errors": [],
   "commands": [
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0077-0084/wave.json",
-      "returnCode": 1,
-      "stdoutTail": "HEAD is now at 30d53acd Retry Nova wave 77-84 after usage-evidence repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 77, \"nextLesson\": 78, \"nextSpecHash\": \"87b61d1a4ec2b560f711b69865cb5a2860757fb23610737c34a0d6e5a18c4936\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 78, \"nextLesson\": 79, \"nextSpecHash\": \"a31348077c1921d706d63dd36535e25574764821a57f8c75f0e5a30a06e35db9\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 79, \"nextLesson\": 80, \"nextSpecHash\": \"b171c77cb2a6ca3e47a3006c424530788a97a49ae5ee05b329876931ae7341ef\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 80, \"nextLesson\": 81, \"nextSpecHash\": \"2e0b976a56ffc8d451f4654c99ae43447cc2111f6d822e4d43f119248873c263\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 81, \"nextLesson\": 82, \"nextSpecHash\": \"89d1bc11c5cbb41b9d95a526e34ce58b34eeb258221a6960fa17a76676e8fa7c\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 82, \"nextLesson\": 83, \"nextSpecHash\": \"0f0c8e1bac02bba9f3c59a32281cc299d108d47ee4029c667fcc8f2b7d6ba7c4\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 83, \"nextLesson\": 84, \"nextSpecHash\": \"e36407bf118e91885d9c701bb25ad0f310c91c42ceb86c4931141b7ada95031b\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 84, \"nextLesson\": 85, \"nextSpecHash\": \"fe40e71435298a877b1ae8912cd6f60e628bb8da8d8ac0968022145d24304f42\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"FAIL\", \"generated\": 84, \"errors\": 33}\n",
-      "stderrTail": "Preparing worktree (detached HEAD 30d53acd)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 390, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-gl03ds6s/repo/nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root /tmp/nova-wave-gl03ds6s/repo --config /tmp/nova-wave-gl03ds6s/repo/nova/curriculum/en-fa/factory.config.json --output /tmp/nova-wave-gl03ds6s/repo/nova/curriculum/en-fa/factory_validation.json\n"
+      "returnCode": 0,
+      "stdoutTail": "HEAD is now at eeee8d01 Retry Nova wave 77-84 after story-rotation repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 77, \"nextLesson\": 78, \"nextSpecHash\": \"f72924b9f5ef533411d9e50a25ca8c9d56d2884c199cda61ea19cc7233a744fa\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 78, \"nextLesson\": 79, \"nextSpecHash\": \"1725fcd1505c8a562a6fcafd5fda5602088e67be6ee044a31b4d528c7c5ecf29\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 79, \"nextLesson\": 80, \"nextSpecHash\": \"3411803b4ea8800e18a5bafabe02eb0dafaa2781263e864c75d7ec5d5a0e6df5\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 80, \"nextLesson\": 81, \"nextSpecHash\": \"2cedf7bd454795d7a9c98c390f304558c6bde3eea988d93c7e4c24a434f7a41f\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 81, \"nextLesson\": 82, \"nextSpecHash\": \"c418489b9e066356c0776d6e174dbcf9b35ae06704c387fd1734c1c63ec1ec6d\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 82, \"nextLesson\": 83, \"nextSpecHash\": \"4da1cf317390fbc2b10ddcf1368471fc7e9a1e0466fc3ba4fe193d3e81240d45\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 83, \"nextLesson\": 84, \"nextSpecHash\": \"44505f598db1217d272afd2c79f386da702cc198dd593c0e9bc3dc8672f5652a\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 84, \"nextLesson\": 85, \"nextSpecHash\": \"1c066eebcf6d3d14ec6cf21fd6d70423176057d6527b1fd55f345996de664183\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 0}\n{\"status\": \"PASS\", \"generated\": 84, \"errors\": 0}\n{\"status\": \"PASS\", \"waveKey\": \"en-fa-A1-0077-0084\", \"integrated\": 8, \"fullPrefixRegression\": \"PASS\"}\n",
+      "stderrTail": "Preparing worktree (detached HEAD eeee8d01)\n"
+    },
+    {
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only",
+      "returnCode": 0,
+      "stdoutTail": "",
+      "stderrTail": ""
+    },
+    {
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --output nova/curriculum/en-fa/factory_validation.json",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"generated\": 84, \"errors\": 0}\n",
+      "stderrTail": ""
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0077-0084-20260910b",
+    "requestKey": "en-fa-A1-0077-0084-20260910c",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0077-0084/wave.json"
   },
   "waveKey": "en-fa-A1-0077-0084",
-  "expectedPrefix": 84
+  "expectedPrefix": 84,
+  "passedPrefixLength": 84
 }

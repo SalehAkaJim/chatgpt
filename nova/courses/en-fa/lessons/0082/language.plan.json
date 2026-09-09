@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0082",
+  "sortOrder": 82,
+  "levelKey": "A1",
+  "lessonSourceHash": "abdd58dd21b350f5969b4f9c6d33c19bc110861ced49ce00bcaa8f03ccef5aed",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0082-FAMILY",
+      "form": "This is my family",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-FAMILY-01",
+      "lemma": "family",
+      "role": "target",
+      "referenceKey": "EN-REF-D9CD7C6063EED6942890",
+      "spokenPriority": {
+        "lemma": "family",
+        "spokenRank": 274,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "F AE1 M AH0 L IY0",
+        "arpabet": [
+          "F AE1 M AH0 L IY0",
+          "F AE1 M L IY0"
+        ],
+        "stressPattern": "100"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this is my family",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0082"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0082-FAMILY"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this is my family",
+        "rationale": "Exact bounded learner target."
+      }
+    },
+    {
+      "query": "is my family",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0082"
+      ],
+      "lexicalLemmas": [
+        "family"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is my family",
+        "rationale": "Exact target-collocation window generated around family in the first learner response."
+      }
+    },
+    {
+      "query": "my family is here",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0082"
+      ],
+      "lexicalLemmas": [
+        "family"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "my family is here",
+        "rationale": "Exact transfer target and target-collocation window."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "60c10d3a156defab438243dd302f2f9b397cf0b4646609579243efabd2e45b51"
+}
