@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0090",
+  "sortOrder": 90,
+  "levelKey": "A1",
+  "lessonSourceHash": "5afa4d0c93bd9379813ed8e0af4b053bbf9fb2645d6fec43699689f16c787b22",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0090-NIGHT",
+      "form": "at night",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-NIGHT-01",
+      "lemma": "night",
+      "role": "target",
+      "referenceKey": "EN-REF-36C2D457AAB5FB3236FD",
+      "spokenPriority": {
+        "lemma": "night",
+        "spokenRank": 199,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N AY1 T",
+        "arpabet": [
+          "N AY1 T"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "at night",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0090"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0090-NIGHT"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "read at night",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0090"
+      ],
+      "lexicalLemmas": [
+        "night"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "read at night",
+        "rationale": "Exact target-collocation window produced by the committed usage validator."
+      }
+    },
+    {
+      "query": "study at night",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0090"
+      ],
+      "lexicalLemmas": [
+        "night"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "study at night",
+        "rationale": "Exact target-collocation window produced by the committed usage validator."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "ad2a36b16bda92b10e4e0e417100cf5e74fd96ca47ec10462202085332215a6a"
+}

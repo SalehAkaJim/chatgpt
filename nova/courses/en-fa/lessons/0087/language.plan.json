@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0087",
+  "sortOrder": 87,
+  "levelKey": "A1",
+  "lessonSourceHash": "dd019727f5ed36a898868a80c0d7a39de555a28e68e01f3f4abb0f1e321b48e8",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0087-AWAY",
+      "form": "It is far away",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.675,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
+          "matchScore": 0.395
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-AWAY-01",
+      "lemma": "away",
+      "role": "target",
+      "referenceKey": "EN-REF-E0D8A4E944AACAC75DCF",
+      "spokenPriority": {
+        "lemma": "away",
+        "spokenRank": 200,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AH0 W EY1",
+        "arpabet": [
+          "AH0 W EY1"
+        ],
+        "stressPattern": "01"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "it is far away",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0087"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0087-AWAY"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "it is far away",
+        "rationale": "Exact bounded learner target."
+      }
+    },
+    {
+      "query": "is far away",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0087"
+      ],
+      "lexicalLemmas": [
+        "away"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is far away",
+        "rationale": "Exact target-collocation window produced by the committed usage validator."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "444432d40d206aff50a260ffb8c67f17369d9afcd7a8d115884ea6302ffc32d4"
+}

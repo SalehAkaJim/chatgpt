@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0091",
+  "sortOrder": 91,
+  "levelKey": "A1",
+  "lessonSourceHash": "957a0b58d1c68c41a67d2480df13c369be783f6e6b0ef068e5acc1a89811011d",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0091-PLAY",
+      "form": "the play is good",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-PLAY-DRAMA-01",
+      "lemma": "play",
+      "role": "target",
+      "referenceKey": "EN-REF-EFE663DDBFF95909F18D",
+      "spokenPriority": {
+        "lemma": "play",
+        "spokenRank": 194,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P L EY1",
+        "arpabet": [
+          "P L EY1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the play is good",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0091"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0091-PLAY"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "the play is good",
+        "rationale": "Exact bounded learner target for the dramatic-work sense."
+      }
+    },
+    {
+      "query": "is the play good",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0091"
+      ],
+      "lexicalLemmas": [
+        "play"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is the play good",
+        "rationale": "Exact target-collocation window from the character prompt."
+      }
+    },
+    {
+      "query": "yes the play is good",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0091"
+      ],
+      "lexicalLemmas": [
+        "play"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes the play is good",
+        "rationale": "Exact target-collocation window from the learner response."
+      }
+    },
+    {
+      "query": "see the play",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0091"
+      ],
+      "lexicalLemmas": [
+        "play"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "see the play",
+        "rationale": "Exact changed-context target collocation."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "ae427fe6b47f8b19a1a8524a7e2e8366d1ca31a3fe280721285047fc2542a4ad"
+}

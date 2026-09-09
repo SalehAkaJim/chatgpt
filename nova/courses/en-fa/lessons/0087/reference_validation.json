@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0087",
+  "levelKey": "A1",
+  "sortOrder": 87,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0087: target word EN-LEX-AWAY-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-AWAY-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "away",
+      "partOfSpeech": "adverb",
+      "selectedReferenceKey": "EN-REF-E0D8A4E944AACAC75DCF",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-E0D8A4E944AACAC75DCF",
+        "EN-REF-1FCB64250B0814DB335F"
+      ],
+      "referenceTranslationsFa": [
+        "از دست، از داشتن",
+        "دور، از یک جا به جای دیگر"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-E0D8A4E944AACAC75DCF",
+        "translationFa": "دور، از یک جا به جای دیگر",
+        "definitionEn": "from a particular thing or place or position (`forth' is obsolete)",
+        "senseId": "7530dd55-eff3-5166-ad5d-eb9a3c2dc45a",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "dd019727f5ed36a898868a80c0d7a39de555a28e68e01f3f4abb0f1e321b48e8"
+}

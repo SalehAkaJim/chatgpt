@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0086",
+  "levelKey": "A1",
+  "sortOrder": 86,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0086: target word EN-LEX-SECOND-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-SECOND-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "second",
+      "partOfSpeech": "adjective",
+      "selectedReferenceKey": "EN-REF-5CB4601793BB8852E701",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-5CB4601793BB8852E701",
+        "EN-REF-AFDD44A49B8CB3C62A06"
+      ],
+      "referenceTranslationsFa": [
+        "دوم، دومی",
+        "صدای دوم، آواز پایین‌تر"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-5CB4601793BB8852E701",
+        "translationFa": "دوم، دومی",
+        "definitionEn": "coming next after the first in position in space or time or degree or magnitude",
+        "senseId": "3c927c2d-0642-5ddf-907d-f90325b10759",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "cb5c8e609fd8aad02640ffcc4131301a3a2a03930d95af20f32eba69d290ba9e"
+}

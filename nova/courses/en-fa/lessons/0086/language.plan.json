@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0086",
+  "sortOrder": 86,
+  "levelKey": "A1",
+  "lessonSourceHash": "cb5c8e609fd8aad02640ffcc4131301a3a2a03930d95af20f32eba69d290ba9e",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0086-SECOND",
+      "form": "the second stop",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-SECOND-01",
+      "lemma": "second",
+      "role": "target",
+      "referenceKey": "EN-REF-5CB4601793BB8852E701",
+      "spokenPriority": {
+        "lemma": "second",
+        "spokenRank": 260,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "S EH1 K AH0 N D",
+        "arpabet": [
+          "S EH1 K AH0 N D"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the second stop",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0086"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0086-SECOND"
+      ],
+      "lexicalLemmas": [
+        "second"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "the second stop",
+        "rationale": "Exact bounded learner target and target-collocation window."
+      }
+    },
+    {
+      "query": "take the second turn",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0086"
+      ],
+      "lexicalLemmas": [
+        "second"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "take the second turn",
+        "rationale": "Exact changed-context transfer target."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "fe2d682c905bde56e0b2c0c5603d21a8ae4b113959e25bb56629e63ec9ea827a"
+}

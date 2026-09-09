@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0091",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "i want to see the play",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0091; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "The play is good and I want to see the play are natural uses of play as a dramatic work."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian consistently preserves play as نمایشنامه rather than the verb بازی کردن."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The noun sense is explicitly bounded and contrasted from the common verb sense."
+      },
+      "distractorQuality": {
+        "score": 5,
+        "evidence": "The key distractor بازی کردن directly checks sense discrimination without ambiguity."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "The community-hall context supports discussing a play and seeing it tonight."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "The final want-to-see sentence is longer but remains controlled and familiar A1 language."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "The target moves through meaning recognition, evaluation and intention."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The target shifts from evaluating the play to expressing an intention to see it."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Scenario, bounded sense and all tasks align on dramatic work."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Only the dramatic-work noun sense is reviewed.",
+      "Audio prosody is not evaluated at this stage."
+    ],
+    "resolvedFindings": [
+      "The noun sense is kept distinct from the verb sense.",
+      "English and Persian meanings align.",
+      "Hidden retrieval is present.",
+      "Character and learner-role rotation are maintained."
+    ],
+    "lessonKey": "EN-A1-L-0091",
+    "sourceHash": "957a0b58d1c68c41a67d2480df13c369be783f6e6b0ef068e5acc1a89811011d",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.5,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "957a0b58d1c68c41a67d2480df13c369be783f6e6b0ef068e5acc1a89811011d"
+}

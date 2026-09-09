@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0088",
+  "sortOrder": 88,
+  "levelKey": "A1",
+  "lessonSourceHash": "41a857507bd4798ec2810f1b2caa537f8e10e2e1dcbf16457403afb0325d3172",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0088-LEAVE",
+      "form": "I leave at six",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-LEAVE-01",
+      "lemma": "leave",
+      "role": "target",
+      "referenceKey": "EN-REF-A8BCB5B3B72B1D8D4BC0",
+      "spokenPriority": {
+        "lemma": "leave",
+        "spokenRank": 155,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "L IY1 V",
+        "arpabet": [
+          "L IY1 V"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i leave at six",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0088"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0088-LEAVE"
+      ],
+      "lexicalLemmas": [
+        "leave"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "at six",
+      "examples": [
+        {
+          "id": 12862679,
+          "text": "She returned at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 7246548,
+          "text": "Sami died at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 7205946,
+          "text": "Sami left at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        }
+      ],
+      "fallback": {
+        "query": "i leave at six",
+        "rationale": "Exact bounded learner target."
+      }
+    },
+    {
+      "query": "i leave at seven",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0088"
+      ],
+      "lexicalLemmas": [
+        "leave"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "at seven",
+      "examples": [
+        {
+          "id": 7920844,
+          "text": "I dine at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "AlanF_US"
+        },
+        {
+          "id": 2393896,
+          "text": "They dine at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kuma"
+        },
+        {
+          "id": 10569629,
+          "text": "He arrived home at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
+      "fallback": {
+        "query": "i leave at seven",
+        "rationale": "Exact changed-context transfer target."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "7f5c04c4ec4c3435c71da56ce76abe51d81601c2fb30ed60b3d082a80ae8495e"
+}

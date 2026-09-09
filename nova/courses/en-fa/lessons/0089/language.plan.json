@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0089",
+  "sortOrder": 89,
+  "levelKey": "A1",
+  "lessonSourceHash": "f5dc333c4f55add0e8363e3b21d1572aa6b5e8045fffca576079aa6d10fe1255",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0089-NUMBER",
+      "form": "number five",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-NUMBER-01",
+      "lemma": "number",
+      "role": "target",
+      "referenceKey": "EN-REF-3EF0539547FA3D1A2914",
+      "spokenPriority": {
+        "lemma": "number",
+        "spokenRank": 162,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N AH1 M B ER0",
+        "arpabet": [
+          "N AH1 M B ER0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "table number five",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0089"
+      ],
+      "lexicalLemmas": [
+        "number"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "table number five",
+        "rationale": "Exact bounded learner target and target-collocation window."
+      }
+    },
+    {
+      "query": "room number two",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0089"
+      ],
+      "lexicalLemmas": [
+        "number"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "room number two",
+        "rationale": "Exact changed-context transfer target."
+      }
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0089: construction EN-CONSTR-0089-NUMBER has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "0932619c15a11213ca916972ecbacf606f9ec84c5a63a8610ced460d295e8d6e"
+}

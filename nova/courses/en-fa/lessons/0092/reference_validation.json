@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0092",
+  "levelKey": "A1",
+  "sortOrder": 92,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0092: target word EN-LEX-LET-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-LET-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "let",
+      "partOfSpeech": "verb",
+      "selectedReferenceKey": "EN-REF-822E2F6E42E9A097A5B1",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-822E2F6E42E9A097A5B1",
+        "EN-REF-2DB253A037F608153DDA"
+      ],
+      "referenceTranslationsFa": [
+        "اجازه دادن، امکان دادن",
+        "باعث شدن، سبب شدن"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-822E2F6E42E9A097A5B1",
+        "translationFa": "اجازه دادن، امکان دادن",
+        "definitionEn": "make it possible through a specific action or lack of action for something to happen",
+        "senseId": "a757aac8-3e09-5162-af4e-47963b00567d",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "040998f9167117cbd0a54306fa57e19e83ab5b69a59a33eb9381075bf599a66d"
+}

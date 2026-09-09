@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0088",
+  "levelKey": "A1",
+  "sortOrder": 88,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0088: target word EN-LEX-LEAVE-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-LEAVE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "leave",
+      "partOfSpeech": "verb",
+      "selectedReferenceKey": "EN-REF-A8BCB5B3B72B1D8D4BC0",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-A8BCB5B3B72B1D8D4BC0",
+        "EN-REF-92B193E22B2487BDDE55"
+      ],
+      "referenceTranslationsFa": [
+        "جا گذاشتن، ترک کردن",
+        "رفتن از یک جا"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-A8BCB5B3B72B1D8D4BC0",
+        "translationFa": "رفتن از یک جا",
+        "definitionEn": "go away from a place",
+        "senseId": "ccdd1a42-0a81-5891-aa43-7a05a9223b88",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "41a857507bd4798ec2810f1b2caa537f8e10e2e1dcbf16457403afb0325d3172"
+}
