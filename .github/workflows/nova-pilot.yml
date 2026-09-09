@@ -53,9 +53,24 @@ jobs:
             nova-validation-${{ runner.os }}-
       - name: Install system dependencies
         timeout-minutes: 8
+        shell: bash
         run: |
-          sudo apt-get update
-          sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg default-mysql-client
+          set -euo pipefail
+          APT_OPTS=(
+            -o Dir::Etc::sourcelist=/etc/apt/sources.list.d/ubuntu.sources
+            -o Dir::Etc::sourceparts=-
+          )
+          for attempt in 1 2 3; do
+            sudo rm -rf /var/lib/apt/lists/*
+            if sudo apt-get "${APT_OPTS[@]}" update && \
+               sudo env DEBIAN_FRONTEND=noninteractive apt-get "${APT_OPTS[@]}" install -y --no-install-recommends ffmpeg default-mysql-client; then
+              exit 0
+            fi
+            echo "Ubuntu package install attempt ${attempt} failed; retrying with fresh package lists."
+            sleep 3
+          done
+          echo "Ubuntu package installation failed after retries."
+          exit 1
       - name: Install Python dependencies
         timeout-minutes: 5
         run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
