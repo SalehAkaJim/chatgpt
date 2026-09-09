@@ -113,6 +113,28 @@ jobs:
             --repo-root . \
             --config nova/curriculum/en-fa/factory.config.json \
             --output nova/curriculum/en-fa/factory_validation.json
+      - name: Plan or reuse next parallel authoring wave
+        run: |
+          NEXT=$(python - <<'PY'
+          from pathlib import Path
+          root = Path('nova/courses/en-fa/lessons')
+          nums = [int(p.name) for p in root.iterdir() if p.is_dir() and p.name.isdigit() and (p / 'lesson.source.json').exists()]
+          print(max(nums, default=0) + 1)
+          PY
+          )
+          SIZE=$(python -c 'import json; print(json.load(open("nova/curriculum/en-fa/factory.config.json"))["waveSize"])')
+          LEVEL=$(python -c 'import json; print(json.load(open("nova/curriculum/en-fa/factory.config.json"))["level"])')
+          LAST=$((NEXT + SIZE - 1))
+          WAVE=$(printf 'nova/curriculum/en-fa/waves/en-fa-%s-%04d-%04d/wave.json' "$LEVEL" "$NEXT" "$LAST")
+          if [ -f "$WAVE" ]; then
+            echo "Reusing existing authoring wave: $WAVE"
+          else
+            python nova/_assistant/content-system-v1/tools/factory_wave.py plan \
+              --repo-root . \
+              --config nova/curriculum/en-fa/factory.config.json \
+              --workspace-dir nova/curriculum/en-fa \
+              --workers "$SIZE"
+          fi
       - name: Audit Lesson lexical coverage against reference snapshot
         run: python nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py --repo-root . --output /tmp/nova_reference_lesson_coverage.json
       - name: Build exact text QA evidence for every canonical Lesson
