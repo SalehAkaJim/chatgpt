@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Run Nova's source-driven curriculum pipeline for a generated Lesson prefix.
 
-Order of operations:
-1. Build current learner/curriculum state from canonical Lessons.
-2. Validate every enforced existing Lesson against the versioned spec that preceded it.
-3. Build per-Lesson language plans (grammar, usage, pronunciation, frequency evidence).
-4. Generate the immutable next-Lesson spec if it does not already exist.
+Order:
+1. Build learner/curriculum state from canonical Lessons.
+2. Validate enforced existing Lessons against their pre-authoring specs.
+3. Build per-Lesson language plans from committed source evidence.
+4. Generate/refresh the spec for the next unauthored Lesson.
 
-This makes the production flow explicit: spec -> authoring -> evidence plan -> QA.
+A spec becomes immutable as soon as its Lesson source exists. Before authoring, it
+may refresh when upstream reference snapshots or curriculum state improve.
 """
 from __future__ import annotations
 
@@ -44,9 +45,7 @@ def main() -> int:
     level = config.get("level", "A1")
     language_plan_enforce = int(config.get("languagePlanEnforceFromSortOrder", 25))
     spec_enforce = int(config.get("curriculumSpecEnforceFromSortOrder", 25))
-    exp = args.experiment_dir
-    if not exp.is_absolute():
-        exp = root / exp
+    exp = args.experiment_dir if args.experiment_dir.is_absolute() else root / args.experiment_dir
 
     catalog = LanguageReferenceCatalog(root, args.course)
     if not catalog.extensions_ready:
@@ -55,11 +54,8 @@ def main() -> int:
     state = build_curriculum_state(root, args.course, numbers, catalog)
     dump(exp / "curriculum_state.json", state)
 
-    spec_reports = []
-    language_reports = []
-    errors: list[str] = []
+    spec_reports, language_reports, errors = [], [], []
 
-    # Validate existing enforced Lessons against the spec that existed before authoring.
     for number in numbers:
         lesson_dir = root / "nova/courses" / args.course / "lessons" / f"{number:04d}"
         lesson_path = lesson_dir / "lesson.source.json"
@@ -98,22 +94,23 @@ def main() -> int:
     next_spec = build_next_spec(state=state, catalog=catalog, level=level)
     next_order = int(next_spec["sortOrder"])
     next_spec_path = exp / "specs" / f"{next_order:04d}.json"
-    if next_spec_path.exists():
+    next_lesson_path = root / "nova/courses" / args.course / "lessons" / f"{next_order:04d}" / "lesson.source.json"
+
+    if next_spec_path.exists() and next_lesson_path.exists():
         existing = load(next_spec_path)
-        # Existing spec is immutable once created. If the learner state has changed
-        # without the next Lesson being authored, surface the difference instead of
-        # silently rewriting the authoring contract.
         if existing.get("specHash") != next_spec.get("specHash"):
             errors.append(
-                f"Existing next spec {next_order:04d} is immutable but current curriculum state would produce a different specHash"
+                f"Curriculum spec {next_order:04d} is locked by an authored Lesson and cannot be regenerated with a different specHash"
             )
         emitted_spec = existing
     else:
+        # No authored Lesson is bound to this contract yet, so improvements to
+        # sources/state are allowed to refresh it deterministically.
         dump(next_spec_path, next_spec)
         emitted_spec = next_spec
 
     summary = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "courseCode": args.course,
         "levelKey": level,
         "generatedLessonCount": len(numbers),
@@ -134,6 +131,7 @@ def main() -> int:
         "lessons": len(numbers),
         "nextLesson": next_order,
         "nextSpecHash": emitted_spec.get("specHash"),
+        "introducedGrammar": len(state.get("introducedGrammar", [])),
         "languageWarnings": sum(len(x["warnings"]) for x in language_reports),
         "errors": len(errors),
     }, ensure_ascii=False))
