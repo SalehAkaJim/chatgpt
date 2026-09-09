@@ -4,6 +4,9 @@
 The archive stores pointers/hashes, not duplicate large data files. Git already
 stores the exact snapshot bytes at the recorded commit, so a descriptor is enough
 to reproduce the full reference tree without repository bloat.
+
+Snapshot identity is based on actual reference data files plus sources.lock.json.
+Volatile metadata such as generatedAt never creates a new snapshot by itself.
 """
 from __future__ import annotations
 
@@ -42,13 +45,41 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
-def current_matches_existing(root: Path, existing: dict, control: dict[str, Path]) -> bool:
-    existing_controls = existing.get("controlFiles") or {}
-    for key, path in control.items():
-        expected = (existing_controls.get(key) or {}).get("gitBlobSha")
-        if not expected or expected != blob_sha(root, path):
-            return False
-    return True
+def data_families(course: str) -> dict[str, list[str]]:
+    return {
+        "lexical": [f"nova/reference/{course}/lexical/{level}.json" for level in LEVELS],
+        "grammar": [f"nova/reference/{course}/grammar/{level}.json" for level in LEVELS],
+        "pronunciation": [f"nova/reference/{course}/pronunciation/cmudict.json"],
+        "spokenFrequency": [f"nova/reference/{course}/frequency/ngsl_spoken.json"],
+        "usage": [f"nova/reference/{course}/usage/tatoeba.json"],
+        "coverage": [f"nova/reference/{course}/lesson_coverage.json"],
+    }
+
+
+def data_file_fingerprint(root: Path, families: dict[str, list[str]], sources_lock: Path) -> tuple[str, dict]:
+    files: dict[str, dict] = {}
+    for paths in families.values():
+        for rel in paths:
+            path = root / rel
+            if not path.exists():
+                continue
+            files[rel] = {
+                "sha256": sha256_file(path),
+                "gitBlobSha": blob_sha(root, path),
+            }
+    source_record = {
+        "sha256": sha256_file(sources_lock),
+        "gitBlobSha": blob_sha(root, sources_lock),
+    }
+    payload = {
+        "sourcesLock": source_record["sha256"],
+        "dataFiles": {path: record["sha256"] for path, record in sorted(files.items())},
+    }
+    raw = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest(), {
+        "files": files,
+        "sourcesLock": source_record,
+    }
 
 
 def main() -> int:
@@ -66,49 +97,31 @@ def main() -> int:
         "extensionsManifest": ref_root / "extensions_manifest.json",
         "sourcesLock": ref_root / "sources.lock.json",
     }
-    missing = [str(p) for p in control.values() if not p.exists()]
+    missing = [str(path) for path in control.values() if not path.exists()]
     if missing:
         raise SystemExit(f"Cannot archive reference snapshot; missing control files: {missing}")
+
+    families = data_families(args.course)
+    fingerprint, file_records = data_file_fingerprint(root, families, control["sourcesLock"])
 
     latest_path = archive_root / "latest.json"
     if latest_path.exists():
         latest = load(latest_path)
-        previous_path = root / latest.get("snapshotPath", "")
-        if previous_path.exists():
-            previous = load(previous_path)
-            if current_matches_existing(root, previous, control):
-                print(json.dumps({"status": "UNCHANGED", "snapshotId": previous.get("snapshotId")}, ensure_ascii=False))
-                return 0
+        if latest.get("fingerprint") == fingerprint:
+            print(json.dumps({"status": "UNCHANGED", "snapshotId": latest.get("snapshotId")}, ensure_ascii=False))
+            return 0
 
     manifest = load(control["manifest"])
     extensions = load(control["extensionsManifest"])
     sources_lock = load(control["sourcesLock"])
     commit = git(root, "rev-parse", "HEAD")
 
-    fingerprint_input = {
-        key: {
-            "blob": blob_sha(root, path),
-            "sha256": sha256_file(path),
-        }
-        for key, path in control.items()
-    }
-    raw = json.dumps(fingerprint_input, sort_keys=True, separators=(",", ":"))
-    fingerprint = hashlib.sha256(raw.encode("utf-8")).hexdigest()
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     snapshot_id = f"{args.course}-{stamp}-{fingerprint[:12]}"
     snapshot_path = archive_root / snapshot_id / "snapshot.json"
 
-    data_families = {
-        "lexical": [f"nova/reference/{args.course}/lexical/{level}.json" for level in LEVELS],
-        "grammar": [f"nova/reference/{args.course}/grammar/{level}.json" for level in LEVELS],
-        "pronunciation": [f"nova/reference/{args.course}/pronunciation/cmudict.json"],
-        "spokenFrequency": [f"nova/reference/{args.course}/frequency/ngsl_spoken.json"],
-        "usage": [f"nova/reference/{args.course}/usage/tatoeba.json"],
-        "coverage": [f"nova/reference/{args.course}/lesson_coverage.json"],
-    }
-
     snapshot = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "snapshotId": snapshot_id,
         "fingerprint": fingerprint,
         "courseCode": args.course,
@@ -126,12 +139,14 @@ def main() -> int:
         "controlFiles": {
             key: {
                 "path": str(path.relative_to(root)),
-                "gitBlobSha": fingerprint_input[key]["blob"],
-                "sha256": fingerprint_input[key]["sha256"],
+                "gitBlobSha": blob_sha(root, path),
+                "sha256": sha256_file(path),
             }
             for key, path in control.items()
         },
-        "dataFamilies": data_families,
+        "dataFamilies": families,
+        "dataFiles": file_records["files"],
+        "sourceLockFingerprint": file_records["sourcesLock"],
         "sourceLocks": sources_lock.get("sources", {}),
         "summary": {
             "referenceRecords": (manifest.get("counts") or {}).get("records"),
@@ -153,7 +168,7 @@ def main() -> int:
         raise SystemExit(f"Snapshot path already exists unexpectedly: {snapshot_path}")
     dump(snapshot_path, snapshot)
     dump(latest_path, {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "courseCode": args.course,
         "snapshotId": snapshot_id,
         "snapshotPath": str(snapshot_path.relative_to(root)),
