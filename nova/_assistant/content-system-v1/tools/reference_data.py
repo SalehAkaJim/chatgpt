@@ -54,9 +54,15 @@ def normalize_persian(value: str | None) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def persian_orthography_flags(text: str) -> list[str]:
+def persian_orthography_flags(text: str | None) -> list[str]:
+    """Return orthography-review flags without treating missing Persian as text.
+
+    Missing translations are scored separately by `score_reference_record`; profile-
+    only/reference-gap records legitimately pass `None` here and should receive the
+    missing-translation penalty rather than crashing the deterministic sync.
+    """
     flags: list[str] = []
-    chars = sorted({ch for ch in text if ch in BLOCKED_PERSIAN_CHARS})
+    chars = sorted({ch for ch in (text or "") if ch in BLOCKED_PERSIAN_CHARS})
     if chars:
         flags.append("persian_orthography_review:" + "".join(chars))
     return flags
@@ -90,13 +96,13 @@ def parse_profile_csv(text: str, *, source: str) -> list[dict]:
     return rows
 
 
-def build_cefr_indexes(*profile_groups: Iterable[dict]) -> tuple[dict, dict]:
-    exact: dict[tuple[str, str | None], list[dict]] = defaultdict(list)
-    lemma_index: dict[str, list[dict]] = defaultdict(list)
-    for group in profile_groups:
-        for row in group:
-            exact[(row["lemma"], row.get("pos"))].append(row)
-            lemma_index[row["lemma"]].append(row)
+def build_cefr_indexes(*profiles: list[dict]) -> tuple[dict, dict]:
+    exact = defaultdict(list)
+    lemma_index = defaultdict(list)
+    for profile in profiles:
+        for row in profile:
+            exact[(normalize_lemma(row.get("lemma")), normalize_pos(row.get("pos")))].append(row)
+            lemma_index[normalize_lemma(row.get("lemma"))].append(row)
     return dict(exact), dict(lemma_index)
 
 
@@ -147,7 +153,7 @@ def score_reference_record(record: dict) -> tuple[int, list[str]]:
     elif source and source.endswith("_lemma_consensus"):
         score -= 2
         flags.append("cefr_lemma_only")
-    persian_flags = persian_orthography_flags(record.get("translationFa", ""))
+    persian_flags = persian_orthography_flags(record.get("translationFa"))
     if persian_flags:
         score -= 20
         flags.extend(persian_flags)
