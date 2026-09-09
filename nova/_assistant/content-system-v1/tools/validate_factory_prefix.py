@@ -5,6 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
+from factory_config import resolve_generated_lessons
 from reference_catalog import ReferenceCatalog
 from validate_content_quality import evaluate
 from validate_factory_design import validate_factory_design
@@ -27,6 +28,7 @@ def main() -> int:
     root = Path(args.repo_root).resolve()
     config = load(args.config)
     course_code = config.get("courseCode", "en-fa")
+    generated_lessons = resolve_generated_lessons(root, config, course_code)
     course_path = root / "nova/courses" / course_code / "course.source.json"
     course = load(course_path)
     policy = load(root / "nova/_assistant/content-system-v1/content_quality.policy.json")
@@ -39,7 +41,7 @@ def main() -> int:
     lesson_objects = []
     previous_order = 0
     errors = []
-    for number in config.get("generatedLessons", []):
+    for number in generated_lessons:
         lesson_path = root / "nova/courses" / course_code / "lessons" / f"{int(number):04d}" / "lesson.source.json"
         lesson = load(lesson_path)
         lesson_objects.append(lesson)
@@ -76,11 +78,12 @@ def main() -> int:
     errors.extend(e for r in reports for e in r["errors"])
     status = "PASS" if not errors else "FAIL"
     payload = {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "courseCode": course_code,
         "enforceFromSortOrder": enforce_from,
         "generativityMaxDelayLessons": max_dechunk_delay,
-        "generatedLessons": config.get("generatedLessons", []),
+        "generatedLessonsMode": config.get("generatedLessons", "auto"),
+        "generatedLessons": generated_lessons,
         "passedPrefixLength": sum(1 for r in reports if r["status"] == "PASS"),
         "status": status,
         "lessonReports": reports,
