@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "status": "FAIL",
   "stage": "integration",
-  "inputHead": "dde4fa91a7bad638fd41b9775aea444c1cf55e0e",
-  "checkedAt": "2026-09-09T22:15:19.872930+00:00",
+  "inputHead": "d0d15fb378546aa1e3b2a9ad1135217a95c0d76b",
+  "checkedAt": "2026-09-09T22:18:11.984621+00:00",
   "errors": [
     "Ordered single-writer integration did not pass."
   ],
@@ -11,13 +11,13 @@
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0085-0092/wave.json",
       "returnCode": 1,
-      "stdoutTail": "HEAD is now at dde4fa91 Request Nova wave 85-92 preflight\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"FAIL\", \"lessons\": 85, \"nextLesson\": 86, \"nextSpecHash\": \"23b0be04404742176079076b42c7e77bdaa1b8cf1bd36deab35c4994e0b6cbef\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 1}\n",
-      "stderrTail": "Preparing worktree (detached HEAD dde4fa91)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 381, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-8x0l1zf7/repo/nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py --repo-root /tmp/nova-wave-8x0l1zf7/repo --course en-fa --config /tmp/nova-wave-8x0l1zf7/repo/nova/curriculum/en-fa/factory.config.json --workspace-dir /tmp/nova-wave-8x0l1zf7/repo/nova/curriculum/en-fa\n"
+      "stdoutTail": "HEAD is now at d0d15fb3 Retry Nova wave 85-92 after live spec repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"FAIL\", \"lessons\": 85, \"nextLesson\": 86, \"nextSpecHash\": \"23b0be04404742176079076b42c7e77bdaa1b8cf1bd36deab35c4994e0b6cbef\", \"introducedGrammar\": 14, \"languageWarnings\": 42, \"errors\": 1}\n",
+      "stderrTail": "Preparing worktree (detached HEAD d0d15fb3)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 381, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-mvjj93u0/repo/nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py --repo-root /tmp/nova-wave-mvjj93u0/repo --course en-fa --config /tmp/nova-wave-mvjj93u0/repo/nova/curriculum/en-fa/factory.config.json --workspace-dir /tmp/nova-wave-mvjj93u0/repo/nova/curriculum/en-fa\n"
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0085-0092-20260910a",
+    "requestKey": "en-fa-A1-0085-0092-20260910b",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0085-0092/wave.json"
   },
   "waveKey": "en-fa-A1-0085-0092",
