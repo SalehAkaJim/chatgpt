@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0027",
+  "sortOrder": 27,
+  "levelKey": "A1",
+  "lessonSourceHash": "9bd4ae62492e3510d5b05b318af26fb45b3cec085af10351d47c225f58afc466",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-SHE-IS-NAME",
+      "form": "She is + name.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-3",
+        "grammaticalItem": "he/she is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.75,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-3-2",
+          "grammaticalItem": "Is he/she ...?",
+          "matchScore": 0.75
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-3-1",
+          "grammaticalItem": "he/she is not",
+          "matchScore": 0.7
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-3-3",
+          "grammaticalItem": "Isn't he/she ...?",
+          "matchScore": 0.7
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-HE-IS-NAME",
+      "form": "He is + name.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-3",
+        "grammaticalItem": "he/she is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.75,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-3-2",
+          "grammaticalItem": "Is he/she ...?",
+          "matchScore": 0.75
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-3-1",
+          "grammaticalItem": "he/she is not",
+          "matchScore": 0.7
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-3-3",
+          "grammaticalItem": "Isn't he/she ...?",
+          "matchScore": 0.7
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "lemma": "coffee",
+      "role": "review",
+      "referenceKey": "EN-REF-DF86C36C215439FDE741",
+      "spokenPriority": {
+        "lemma": "coffee",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K AA1 F IY0",
+        "arpabet": [
+          "K AA1 F IY0",
+          "K AO1 F IY0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "she is",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0027"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-SHE-IS-NAME"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "he is",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0027"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-HE-IS-NAME"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "1355befa7ae839357694ec5241805e43781c0ebaf01f17d6687b6858a43fc3d4"
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "courseCode": "en-fa",
-  "lastLessonSortOrder": 26,
+  "lastLessonSortOrder": 27,
   "knownLexical": [
     {
       "lemma": "name",
@@ -65,7 +65,7 @@
     {
       "lemma": "coffee",
       "firstLesson": 9,
-      "lastLesson": 21,
+      "lastLesson": 27,
       "roles": [
         "review",
         "target"
@@ -253,8 +253,8 @@
     {
       "lemma": "alex",
       "firstLesson": 1,
-      "lastLesson": 1,
-      "practiceCount": 2,
+      "lastLesson": 27,
+      "practiceCount": 3,
       "surfaceForms": [
         "alex"
       ]
@@ -262,8 +262,8 @@
     {
       "lemma": "be",
       "firstLesson": 1,
-      "lastLesson": 26,
-      "practiceCount": 25,
+      "lastLesson": 27,
+      "practiceCount": 28,
       "surfaceForms": [
         "am",
         "are",
@@ -291,8 +291,8 @@
     {
       "lemma": "maya",
       "firstLesson": 1,
-      "lastLesson": 1,
-      "practiceCount": 1,
+      "lastLesson": 27,
+      "practiceCount": 2,
       "surfaceForms": [
         "maya"
       ]
@@ -435,8 +435,8 @@
     {
       "lemma": "please",
       "firstLesson": 4,
-      "lastLesson": 14,
-      "practiceCount": 14,
+      "lastLesson": 27,
+      "practiceCount": 15,
       "surfaceForms": [
         "please"
       ]
@@ -642,8 +642,8 @@
     {
       "lemma": "yes",
       "firstLesson": 11,
-      "lastLesson": 25,
-      "practiceCount": 9,
+      "lastLesson": 27,
+      "practiceCount": 10,
       "surfaceForms": [
         "yes"
       ]
@@ -818,6 +818,33 @@
       "surfaceForms": [
         "we"
       ]
+    },
+    {
+      "lemma": "he",
+      "firstLesson": 27,
+      "lastLesson": 27,
+      "practiceCount": 1,
+      "surfaceForms": [
+        "he"
+      ]
+    },
+    {
+      "lemma": "sara",
+      "firstLesson": 27,
+      "lastLesson": 27,
+      "practiceCount": 1,
+      "surfaceForms": [
+        "sara"
+      ]
+    },
+    {
+      "lemma": "she",
+      "firstLesson": 27,
+      "lastLesson": 27,
+      "practiceCount": 2,
+      "surfaceForms": [
+        "she"
+      ]
     }
   ],
   "introducedGrammar": [
@@ -935,6 +962,17 @@
         "target_construction"
       ],
       "maxMatchScore": 0.8167
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-3",
+      "grammaticalItem": "he/she is",
+      "firstLesson": 27,
+      "lastLesson": 27,
+      "exposureCount": 2,
+      "evidenceKinds": [
+        "target_construction"
+      ],
+      "maxMatchScore": 0.75
     }
   ],
   "constructionHistory": [
@@ -1327,6 +1365,32 @@
           "lesson": 26
         }
       ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-HE-IS-NAME",
+      "form": "He is + name.",
+      "firstLesson": 27,
+      "lastLesson": 27,
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-3",
+          "matchScore": 0.75,
+          "lesson": 27
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-SHE-IS-NAME",
+      "form": "She is + name.",
+      "firstLesson": 27,
+      "lastLesson": 27,
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-3",
+          "matchScore": 0.75,
+          "lesson": 27
+        }
+      ]
     }
   ],
   "lessonHistory": [
@@ -1641,6 +1705,18 @@
       ],
       "arcKey": "EN-A1-COMMUNITY",
       "sourceHash": "89e91caffbe02f259488a9dd4868d83d8f9df838f3a8c6f15b6be7fd6d713ac8"
+    },
+    {
+      "lessonKey": "EN-A1-L-0027",
+      "sortOrder": 27,
+      "levelKey": "A1",
+      "primaryOutcomeKey": "A1-INTERACTION-IDENTIFY-PERSON",
+      "participants": [
+        "ava",
+        "ben"
+      ],
+      "arcKey": "EN-A1-CAFE",
+      "sourceHash": "9bd4ae62492e3510d5b05b318af26fb45b3cec085af10351d47c225f58afc466"
     }
   ]
 }
