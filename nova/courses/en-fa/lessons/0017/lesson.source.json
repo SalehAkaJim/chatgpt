@@ -7,9 +7,9 @@
   "sortOrder": 17,
   "titleEn": "What day?",
   "titleFa": "چه روزی؟",
-  "descriptionFa": "لیام و لیو روز برنامه بعدی کتابخانه را هماهنگ می کنند؛ on و Monday دو کلمه مستقل هستند و در پاسخ On Monday کنار هم می آیند.",
+  "descriptionFa": "لیام و لیو روز برنامه بعدی کتابخانه را هماهنگ می کنند؛ on و Monday دو کلمه مستقل هستند و فعلا در پاسخ ثابت On Monday کنار هم می آیند.",
   "primaryOutcomeKey": "A1-INTERACTION-CHOOSE-DAY",
-  "outcomeFa": "زبان آموز می تواند Monday را به عنوان یک روز مشخص تشخیص دهد و با on پاسخ کوتاه On Monday را برای برنامه دوشنبه بسازد.",
+  "outcomeFa": "زبان آموز می تواند Monday را به عنوان یک روز مشخص تشخیص دهد و پاسخ کوتاه On Monday را برای برنامه دوشنبه به کار ببرد.",
   "scenarioFa": "در کتابخانه، لیو درباره روز نشست بعدی می پرسد و کارت برنامه Monday را نشان می دهد. نقش تو لیام است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-ASK-TIME",
@@ -24,16 +24,16 @@
         "meaningFa": "پرسیدن روز وقتی موضوع برنامه روشن است"
       },
       {
-        "key": "EN-CONSTR-ON-WEEKDAY",
-        "form": "On + weekday.",
-        "meaningFa": "گفتن روز یک برنامه با on و نام روز"
+        "key": "EN-CONSTR-ON-MONDAY",
+        "form": "On Monday.",
+        "meaningFa": "پاسخ ثابت اولیه برای گفتن برنامه دوشنبه"
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "The Lesson introduces on in its day use and Monday as independent word units, then combines them in On Monday. It does not claim general weekday mastery beyond Monday.",
+    "assessmentBoundary": "The Lesson introduces on in its day use and Monday as independent word units, then practices the single fixed response On Monday. It does not yet claim a productive On + weekday construction; that generalization is deferred until a second weekday is introduced.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Transfer the short schedule-question pattern from clock time to day, learn on and Monday independently, and compose them in On Monday without creating a phrase row in the words layer."
+      "intent": "Transfer the short schedule-question idea from clock time to day, learn on and Monday independently, and use them together in one bounded Monday response without creating a phrase row in the words layer or claiming general weekday productivity."
     },
     "story": {
       "arcKey": "EN-A1-LIBRARY",
@@ -60,7 +60,7 @@
           "A05"
         ],
         "learningDemand": "transfer",
-        "note": "What time?/At six transfers to the parallel schedule pattern What day?/On Monday while the day words stay independent."
+        "note": "What time?/At six transfers to the parallel schedule question What day?, while Monday remains one bounded day response until a second weekday is introduced."
       },
       {
         "lessonKey": "EN-A1-L-0011",
@@ -168,13 +168,13 @@
     {
       "activityKey": "A01",
       "type": "lexical_teach",
-      "instructionFa": "دو کلمه on و Monday را جدا یاد بگیر و بعد ترکیبشان کن.",
+      "instructionFa": "دو کلمه on و Monday را جدا یاد بگیر و بعد در پاسخ این درس کنار هم به کار ببر.",
       "config": {
         "lexicalKeys": [
           "EN-LEX-ON-DAY-01",
           "EN-LEX-MONDAY-01"
         ],
-        "explanationFa": "Monday یعنی دوشنبه. on اینجا قبل از روز مشخص می آید. On Monday یک word تازه نیست؛ از دو کلمه مستقل on و Monday ساخته می شود."
+        "explanationFa": "Monday یعنی دوشنبه. on اینجا قبل از روز مشخص می آید. On Monday یک word تازه نیست؛ از دو کلمه مستقل on و Monday ساخته شده است. فعلا فقط همین روز را تمرین می کنی."
       }
     },
     {
@@ -239,7 +239,7 @@
     {
       "activityKey": "A04",
       "type": "response_choice",
-      "instructionFa": "on و Monday را برای پاسخ روز کنار هم بگذار.",
+      "instructionFa": "پاسخ مناسب را برای برنامه دوشنبه انتخاب کن.",
       "promptFa": "لیو می پرسد What day? و کارت برنامه Monday را نشان می دهد. چه می گویی؟",
       "config": {
         "optionsEn": [
@@ -250,11 +250,11 @@
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است؛ on + Monday روز برنامه را می گوید.",
+            "درست است؛ این پاسخ روز برنامه را می گوید.",
             "این پاسخ ساعت را می گوید.",
             "این پاسخ اتاق را انتخاب می کند."
           ],
-          "correctFa": "On Monday از دو word مستقل on و Monday ساخته شده است."
+          "correctFa": "On Monday پاسخ کوتاه این درس برای برنامه دوشنبه است."
         }
       },
       "metadata": {
@@ -277,8 +277,8 @@
         "showAnswerTextBeforeAttempt": false,
         "hintFa": "on را قبل از Monday بگذار.",
         "feedback": {
-          "correctFa": "درست است؛ دو کلمه مستقل را در پاسخ روز ترکیب کردی.",
-          "retryFa": "on + Monday را بساز."
+          "correctFa": "درست است؛ پاسخ برنامه دوشنبه را بدون دیدن جواب آماده گفتی.",
+          "retryFa": "on + Monday را به یاد بیاور."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -286,7 +286,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded composition of on + Monday; not general weekday mastery."
+        "assessmentLimit": "Same-session bounded recall of the Monday response; productive On + weekday generalization is deferred until another weekday is taught."
       }
     }
   ],
