@@ -1,18 +1,6 @@
 name: Nova Prototype Preview
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/nova-prototype-preview.yml'
-      - 'nova/prototype/**'
-      - 'nova/courses/**/course.source.json'
-      - 'nova/courses/**/lessons/**/lesson.source.json'
-      - 'nova/courses/**/lessons/**/validation.json'
-      - 'nova/courses/**/lessons/**/audio.manifest.json'
-      - 'nova/curriculum/**/factory_validation.json'
-      - 'nova/audio/**'
-      - 'nova/_assistant/content-system-v1/tools/build_prototype_preview.py'
   workflow_dispatch:
 
 permissions:
