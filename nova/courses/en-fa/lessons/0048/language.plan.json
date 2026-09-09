@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0048",
+  "sortOrder": 48,
+  "levelKey": "A1",
+  "lessonSourceHash": "870bdd073eaffe714835686698199b67dd5156f4a87d1c0f091b8c7012889fc2",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0048-VERY",
+      "form": "It is very good.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.675,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
+          "matchScore": 0.395
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-VERY-01",
+      "lemma": "very",
+      "role": "target",
+      "referenceKey": "EN-REF-8F90EB8DE235DBB793EC",
+      "spokenPriority": {
+        "lemma": "very",
+        "spokenRank": 67,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "V EH1 R IY0",
+        "arpabet": [
+          "V EH1 R IY0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "it is very good",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0048"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0048-VERY"
+      ],
+      "lexicalLemmas": [
+        "very"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "it is very good",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    },
+    {
+      "query": "it is very good too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0048"
+      ],
+      "lexicalLemmas": [
+        "very"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "it is very good too",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "a9c153a11e2ebc3bccc7c5afa59bc85c9c6868c6eac351f119e78bfd8e2ee772"
+}

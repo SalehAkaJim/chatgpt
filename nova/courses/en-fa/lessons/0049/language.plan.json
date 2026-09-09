@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0049",
+  "sortOrder": 49,
+  "levelKey": "A1",
+  "lessonSourceHash": "48fa32e48c8b43d8a5529351218aec6634df46a12af0c60a445aa8c17181d7ed",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0049-REALLY",
+      "form": "It is really good.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.675,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
+          "matchScore": 0.395
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-REALLY-01",
+      "lemma": "really",
+      "role": "target",
+      "referenceKey": "EN-REF-4B6D91F28ED1F1CF3053",
+      "spokenPriority": {
+        "lemma": "really",
+        "spokenRank": 58,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R IH1 L IY0",
+        "arpabet": [
+          "R IH1 L IY0",
+          "R IY1 L IY0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "it is really good",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0049"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0049-REALLY"
+      ],
+      "lexicalLemmas": [
+        "really"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "it is really good",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    },
+    {
+      "query": "it is really good too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0049"
+      ],
+      "lexicalLemmas": [
+        "really"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "it is really good too",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "217b972461f0c4d24eb7e937a085826981c3d7e5f917944158e12ca6490212f9"
+}

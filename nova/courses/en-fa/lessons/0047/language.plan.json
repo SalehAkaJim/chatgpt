@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0047",
+  "sortOrder": 47,
+  "levelKey": "A1",
+  "lessonSourceHash": "282a722a0a2d01e66c95525786b4f1576b9ff62ec33b41e68889183e24abbb54",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0047-WAY",
+      "form": "This way is good.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-WAY-01",
+      "lemma": "way",
+      "role": "target",
+      "referenceKey": "EN-REF-0D08F59231CEFD71D217",
+      "spokenPriority": {
+        "lemma": "way",
+        "spokenRank": 90,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "W EY1",
+        "arpabet": [
+          "W EY1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this way is good",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0047"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0047-WAY"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "this way",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0047"
+      ],
+      "lexicalLemmas": [
+        "way"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this way",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    },
+    {
+      "query": "yes this way is good",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0047"
+      ],
+      "lexicalLemmas": [
+        "way"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes this way is good",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    },
+    {
+      "query": "and that way",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0047"
+      ],
+      "lexicalLemmas": [
+        "way"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "and that way",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    },
+    {
+      "query": "that way is good",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0047"
+      ],
+      "lexicalLemmas": [
+        "way"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "that way is good",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "53f63e2c6e94bb866f776bedfd85eb204450c7836a9c4362fbf4f1377001949a"
+}

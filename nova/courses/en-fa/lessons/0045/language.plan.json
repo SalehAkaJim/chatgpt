@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0045",
+  "sortOrder": 45,
+  "levelKey": "A1",
+  "lessonSourceHash": "ca5bcae85eb039a5325a329ba50945e0835526eb4e888147306940e604d1ee48",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0045-WELL",
+      "form": "You read well.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-WELL-01",
+      "lemma": "well",
+      "role": "target",
+      "referenceKey": "EN-REF-D8F414A2604D92EB368F",
+      "spokenPriority": {
+        "lemma": "well",
+        "spokenRank": 36,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "W EH1 L",
+        "arpabet": [
+          "W EH1 L"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "you read well",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0045"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0045-WELL"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "read this well",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0045"
+      ],
+      "lexicalLemmas": [
+        "well"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "read this well",
+        "rationale": "Exact target-collocation fallback for the character model turn."
+      }
+    },
+    {
+      "query": "i read well",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0045"
+      ],
+      "lexicalLemmas": [
+        "well"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i read well",
+        "rationale": "Exact target-collocation fallback for the learner response."
+      }
+    },
+    {
+      "query": "read this well too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0045"
+      ],
+      "lexicalLemmas": [
+        "well"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "read this well too",
+        "rationale": "Exact target-collocation fallback for changed-context transfer."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "127bc94c9c500a8b256a2ddd2d217131589113c37b42a0cd914cc069f5522260"
+}

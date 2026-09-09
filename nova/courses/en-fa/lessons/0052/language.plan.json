@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0052",
+  "sortOrder": 52,
+  "levelKey": "A1",
+  "lessonSourceHash": "5e904ee55d7c35d9183f774b3f7d417f8aaf202a4d643c33119df7e5bcce37f8",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0052-YEAR",
+      "form": "one year",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-YEAR-01",
+      "lemma": "year",
+      "role": "target",
+      "referenceKey": "EN-REF-406B7051AEBFA5D0B922",
+      "spokenPriority": {
+        "lemma": "year",
+        "spokenRank": 86,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "Y IH1 R",
+        "arpabet": [
+          "Y IH1 R"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "one year",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0052"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0052-YEAR"
+      ],
+      "lexicalLemmas": [
+        "year"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "one year",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    },
+    {
+      "query": "time one year",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0052"
+      ],
+      "lexicalLemmas": [
+        "year"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "time one year",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "f0ffda2a215e9fb1e55c5c05a14490f2fc5691dda14b563b6c1259bddc0067b4"
+}

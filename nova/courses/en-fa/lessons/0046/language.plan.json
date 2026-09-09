@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0046",
+  "sortOrder": 46,
+  "levelKey": "A1",
+  "lessonSourceHash": "04ecaf067aa9415fac69cc5c7232d5d9200edd040c0b3edaaaa190fbdfba0c03",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0046-SAY",
+      "form": "She says hello.",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-SAY-01",
+      "lemma": "say",
+      "role": "target",
+      "referenceKey": "EN-REF-909372E9857B18CD5B47",
+      "spokenPriority": {
+        "lemma": "say",
+        "spokenRank": 32,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "S EY1",
+        "arpabet": [
+          "S EY1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "she says hello",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0046"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0046-SAY"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "does maya say",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0046"
+      ],
+      "lexicalLemmas": [
+        "say"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "does maya say",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0046: construction EN-CONSTR-0046-SAY has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "7b2a9db5e5f6f7188e4b98321fd5e5acc228621f83a8f09843e3b0c42a974c7b"
+}

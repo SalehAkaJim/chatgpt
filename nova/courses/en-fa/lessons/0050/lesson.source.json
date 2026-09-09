@@ -1,0 +1,332 @@
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0050",
+  "sortOrder": 50,
+  "titleEn": "The right side",
+  "titleFa": "سمت راست",
+  "descriptionFa": "با right هدف کوتاه این درس را تمرین کن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0050",
+  "outcomeFa": "right را در یک موقعیت کوتاه و طبیعی به کار ببری.",
+  "scenarioFa": "بن دو سمت میز را نشان می‌دهد و آوا سمت راست را مشخص می‌کند.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0049"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0050-RIGHT",
+        "form": "The right side.",
+        "meaningFa": "مشخص کردن سمت راست"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Which side?",
+        "meaningFa": "کدام سمت؟"
+      },
+      {
+        "form": "This side?",
+        "meaningFa": "این سمت؟"
+      }
+    ],
+    "assessmentBoundary": "The Lesson introduces only the bounded A1 use of right shown here and does not claim broader sense mastery.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Recombine right in a second tightly controlled turn with familiar language."
+    },
+    "story": {
+      "arcKey": "EN-A1-CAFE",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0050",
+      "learnerRoleKey": "ava",
+      "participants": [
+        "ava",
+        "ben"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0044",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0044"
+      ],
+      "settingFa": "کافه، کنار میز سفارش",
+      "storyBeatFa": "بن دو سمت میز را نشان می‌دهد و آوا سمت راست را مشخص می‌کند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0044",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning arc is spaced and learner role is deliberately rotated."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0050",
+      "specHash": "8a78614887c8548e21dc2f6e2d01b597474900769ea222eeca5da827e69dfa9a",
+      "grammarTargetKeys": [],
+      "reviewLexicalLemmas": [],
+      "usageFallbacks": [
+        {
+          "query": "the right side",
+          "rationale": "Exact target-collocation fallback for this bounded A1 use."
+        },
+        {
+          "query": "yes the right side",
+          "rationale": "Exact target-collocation fallback for this bounded A1 use."
+        }
+      ],
+      "noNewGrammarReason": "Lexical focus: right is practiced only for the physical right side; no new grammar target is added."
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-RIGHT-01",
+      "itemType": "word",
+      "displayForm": "right",
+      "translationFa": "راست",
+      "role": "target",
+      "lemma": "right",
+      "partOfSpeech": "adjective",
+      "senseKey": "right_side",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-A6142DB4FBBB0413B251"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "ben",
+      "textEn": "Which side?",
+      "translationFa": "کدام سمت؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "ava",
+      "textEn": "The right side.",
+      "translationFa": "سمت راست.",
+      "audioRequired": true,
+      "speechTargetEn": "The right side.",
+      "acceptedSpeechEn": [
+        "The right side."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "ben",
+      "textEn": "This side?",
+      "translationFa": "این سمت؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "ava",
+      "textEn": "Yes. The right side.",
+      "translationFa": "بله. سمت راست.",
+      "audioRequired": true,
+      "speechTargetEn": "Yes. The right side.",
+      "acceptedSpeechEn": [
+        "Yes. The right side."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی right را در جمله پیدا کن.",
+      "promptFa": "right در این درس چه معنی‌ای دارد؟",
+      "promptEn": "The right side.",
+      "config": {
+        "options": [
+          "راست",
+          "یک معنی نامربوط",
+          "نام یک شخص"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این کلمه نام شخص نیست."
+          ],
+          "correctFa": "راست"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف‌های ben را گوش کن و جواب ava را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را گوش کن.",
+      "promptFa": "کدام جواب گفته شد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "سمت راست.",
+          "بله. سمت راست.",
+          "هیچ‌کدام"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش دوم است.",
+            "یک جواب روشن گفته می‌شود."
+          ],
+          "correctFa": "سمت راست."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "sentence_order",
+      "instructionFa": "جواب اول را گوش کن و جمله را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "side.",
+          "right",
+          "The"
+        ],
+        "answerTokensEn": [
+          "The",
+          "right",
+          "side."
+        ],
+        "answerEn": "The right side.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی.",
+          "retryFa": "دوباره به صدا گوش کن."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "این سمت؟",
+      "config": {
+        "optionsEn": [
+          "Yes. The right side.",
+          "The right side.",
+          "People like coffee."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش اول است.",
+            "این جمله نامربوط است."
+          ],
+          "correctFa": "بله. سمت راست."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "ava هستی. بگو: بله. سمت راست.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Yes. The right side.",
+        "acceptedAnswersEn": [
+          "Yes. The right side."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از right و کلمات آشنای درس استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ هدف را در موقعیت دوم بازیابی کردی.",
+          "retryFa": "جمله کوتاه همین گفت‌وگو را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval in a changed controlled context."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}

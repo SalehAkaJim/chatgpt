@@ -1,0 +1,66 @@
+<!-- sourceHash: 8cd56294814d171499b20772b7e7cbefbee69bb8d32083b6ee00aa05c80d2f08 -->
+# English Audit — EN-A1-L-0051
+
+**Lesson:** Reading is work
+**Outcome:** EN-A1-OUTCOME-0051
+
+## Lexical items
+
+- `EN-LEX-WORK-01` [word/target] — **work**
+
+## Dialogue turns
+
+**T01 · sara**
+
+Is reading work?
+
+**T02 · ruby**
+
+Yes. Reading is work.
+
+- **Speech target:** Yes. Reading is work.
+- **Accepted speech:** Yes. Reading is work.
+
+**T03 · sara**
+
+And this?
+
+**T04 · ruby**
+
+Yes. This is work too.
+
+- **Speech target:** Yes. This is work too.
+- **Accepted speech:** Yes. This is work too.
+
+## Activities
+
+**A01 · response_choice**
+
+- **English prompt:** Yes. Reading is work.
+- **options:** فعالیت، کار | یک معنی نامربوط | نام یک شخص
+
+**A02 · dialogue**
+
+
+**A03 · comprehension**
+
+- **options:** بله. خواندن کار است. | بله. این هم کار است. | هیچ‌کدام
+
+**A04 · sentence_order**
+
+- **answerEn:** Yes. Reading is work.
+- **tokensEn:** work. | is | Reading | Yes.
+- **answerTokensEn:** Yes. | Reading | is | work.
+
+**A05 · response_choice**
+
+- **optionsEn:** Yes. This is work too. | Yes. Reading is work. | People like coffee.
+
+**A06 · speak**
+
+- **textEn:** Yes. This is work too.
+- **acceptedAnswersEn:** Yes. This is work too.
+
+---
+Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.
+Any correction belongs in `lesson.source.json`; this file is generated review output.

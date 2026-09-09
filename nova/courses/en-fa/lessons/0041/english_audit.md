@@ -1,4 +1,4 @@
-<!-- sourceHash: 0e826523d6b6abadf8a3d640f5e9d376f6c082ed1f4a4f9f8fc24de5e7067544 -->
+<!-- sourceHash: f4e705ad8725d81e88a04414d2330643b138fd72e1719ed901b487c7c0001cb6 -->
 # English Audit — EN-A1-L-0041
 
 **Lesson:** I make coffee
@@ -29,10 +29,10 @@ And the tea?
 
 **T04 · liam**
 
-I make tea too.
+I make tea.
 
-- **Speech target:** I make tea too.
-- **Accepted speech:** I make tea too.
+- **Speech target:** I make tea.
+- **Accepted speech:** I make tea.
 
 ## Activities
 
@@ -56,12 +56,12 @@ I make tea too.
 
 **A05 · response_choice**
 
-- **optionsEn:** I make tea too. | I make coffee. | People like coffee.
+- **optionsEn:** I make tea. | I make coffee. | People like coffee.
 
 **A06 · speak**
 
-- **textEn:** I make tea too.
-- **acceptedAnswersEn:** I make tea too.
+- **textEn:** I make tea.
+- **acceptedAnswersEn:** I make tea.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

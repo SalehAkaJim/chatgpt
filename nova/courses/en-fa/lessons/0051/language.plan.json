@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0051",
+  "sortOrder": 51,
+  "levelKey": "A1",
+  "lessonSourceHash": "8cd56294814d171499b20772b7e7cbefbee69bb8d32083b6ee00aa05c80d2f08",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0051-WORK",
+      "form": "Reading is work.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-WORK-01",
+      "lemma": "work",
+      "role": "target",
+      "referenceKey": "EN-REF-707276E9B50E98A64FDC",
+      "spokenPriority": {
+        "lemma": "work",
+        "spokenRank": 76,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "W ER1 K",
+        "arpabet": [
+          "W ER1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "reading is work",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0051"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0051-WORK"
+      ],
+      "lexicalLemmas": [
+        "work"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "reading is work",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    },
+    {
+      "query": "is reading work",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0051"
+      ],
+      "lexicalLemmas": [
+        "work"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is reading work",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    },
+    {
+      "query": "this is work too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0051"
+      ],
+      "lexicalLemmas": [
+        "work"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this is work too",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "f7895a568862bb061faa8ce50f1584f6b891fb18749a9509718671636e8d4386"
+}
