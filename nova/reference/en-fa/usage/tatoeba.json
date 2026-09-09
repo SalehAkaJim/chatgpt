@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "source": "tatoeba",
+  "apiBase": "https://api.tatoeba.org/v1/sentences",
+  "filters": {
+    "lang": "eng",
+    "is_orphan": "no",
+    "is_unapproved": "no"
+  },
+  "queryCount": 54,
+  "evidenceQueryCount": 0,
+  "queries": [
+    {
+      "query": "can i have please",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0007",
+        "EN-A1-L-0009"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-CAN-I-HAVE",
+        "EN-CONSTR-CAN-I-HAVE-DRINK"
+      ],
+      "lexicalLemmas": [],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+i+have+please%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "can you help me",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0019"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-CAN-YOU-HELP-ME"
+      ],
+      "lexicalLemmas": [
+        "help"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+you+help+me%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "can you repeat that please",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0004"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ASK-REPEAT-PLEASE"
+      ],
+      "lexicalLemmas": [
+        "repeat"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+you+repeat+that+please%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "do you have",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0018"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-DO-YOU-HAVE"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+have%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "do you like",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0021"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-DO-YOU-LIKE"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+like%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "do you read books",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0023"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-DO-YOU-READ-BOOKS"
+      ],
+      "lexicalLemmas": [
+        "read"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+read+books%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "how are you",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0003"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-HOW-ARE-YOU"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22how+are+you%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "how much is it",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0015"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-HOW-MUCH-IS-IT"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22how+much+is+it%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i like",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0021"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-I-LIKE"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+like%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i read books",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0023"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-I-READ-BOOKS"
+      ],
+      "lexicalLemmas": [
+        "read"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+read+books%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i want",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0022"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-I-WANT"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+want%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i'm fine thanks",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0003"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-IM-FINE-THANKS"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+fine+thanks%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i'm from",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-FROM-PLACE"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+from%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "is this your",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0024"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-IS-THIS-YOUR"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+this+your%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "it's a",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ITS-A"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "it's my",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0024"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ITS-MY"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+my%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "it's on the table",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0008"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ON-THE-TABLE"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+on+the+table%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "my is",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0002"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-MY-NAME-IS"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22my+is%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "no please",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0012"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-NO-CORRECT-ITEM"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+please%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "no thank you",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0011"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-NO-THANK-YOU"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+thank+you%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "on monday",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0017"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ON-MONDAY"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+monday%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "what's this",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-WHATS-THIS"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+this%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "what's your",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0001"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-WHATS-YOUR-NAME"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+your%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "where are you from",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ASK-COUNTRY"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22where+are+you+from%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "where's my",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0008"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-WHERES-MY"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22where%27s+my%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "yes please",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0011"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-YES-PLEASE"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+please%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "at seven",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0020"
+      ],
+      "lexicalLemmas": [
+        "seven"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+seven%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "at six",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0016"
+      ],
+      "lexicalLemmas": [
+        "at",
+        "six"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+six%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "do you have a book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0018"
+      ],
+      "lexicalLemmas": [
+        "have"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+have+a+book%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "do you have a pen",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0018"
+      ],
+      "lexicalLemmas": [
+        "have"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+have+a+pen%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "do you like coffee",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0021"
+      ],
+      "lexicalLemmas": [
+        "like"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+like+coffee%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "do you like tea",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0021"
+      ],
+      "lexicalLemmas": [
+        "like"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+like+tea%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "five dollars",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0015"
+      ],
+      "lexicalLemmas": [
+        "five"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22five+dollars%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i have coffee please",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0009"
+      ],
+      "lexicalLemmas": [
+        "coffee"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+have+coffee+please%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i have tea please",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0009"
+      ],
+      "lexicalLemmas": [
+        "tea"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+have+tea+please%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i like coffee",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0021"
+      ],
+      "lexicalLemmas": [
+        "like"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+like+coffee%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i like tea",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0021"
+      ],
+      "lexicalLemmas": [
+        "like"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+like+tea%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "i want tea",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0022"
+      ],
+      "lexicalLemmas": [
+        "want"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+want+tea%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "it's a book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "lexicalLemmas": [
+        "book"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a+book%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "it's a pen",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0006"
+      ],
+      "lexicalLemmas": [
+        "pen"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a+pen%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "it's at six",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0016"
+      ],
+      "lexicalLemmas": [
+        "at",
+        "six"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+at+six%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "no i want water",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0022"
+      ],
+      "lexicalLemmas": [
+        "want"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+i+want+water%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "on the table",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0008"
+      ],
+      "lexicalLemmas": [
+        "table"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+the+table%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "one or room two",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "room"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22one+or+room+two%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "or room two",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "two"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22or+room+two%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "room one or",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "room"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+or%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "room one or room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "one"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+or+room%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "room one please",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "one",
+        "room"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+please%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "room two",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "room",
+        "two"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "room two please",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "room",
+        "two"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two+please%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "two at seven",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0020"
+      ],
+      "lexicalLemmas": [
+        "seven"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22two+at+seven%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "what's your name",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0001"
+      ],
+      "lexicalLemmas": [
+        "name"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+your+name%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "yes i like tea",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0021"
+      ],
+      "lexicalLemmas": [
+        "like"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+i+like+tea%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    },
+    {
+      "query": "yes i read books",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0023"
+      ],
+      "lexicalLemmas": [
+        "read"
+      ],
+      "status": "unavailable",
+      "sampleCount": 0,
+      "examples": [],
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+i+read+books%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+    }
+  ]
+}
