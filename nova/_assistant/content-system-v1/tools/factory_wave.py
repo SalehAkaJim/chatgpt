@@ -2,7 +2,7 @@
 """Plan and integrate Nova authoring waves with up to eight parallel workers.
 
 Workers write only staged drafts. Canonical Lesson files remain single-writer:
-the integration phase applies drafts sequentially against the *current* canonical
+the integration phase applies drafts sequentially against the current canonical
 curriculum spec, then runs the uncached full-prefix regression in an isolated git
 worktree before copying validated outputs back to the active working tree.
 """
@@ -249,6 +249,22 @@ def wave_status(root: Path, manifest_path: Path) -> dict:
     }
 
 
+def reconcile_live_spec_metadata(lesson: dict, live_spec: dict) -> dict:
+    """Bind a staged draft to the live sequential spec without changing its target choices.
+
+    Parallel workers author against provisional specs. At integration time the exact
+    spec hash can differ because earlier drafts have become canonical and therefore
+    change story/review state. Only the contract identity is reconciled here; lexical
+    and grammar choices remain untouched and must still pass validate_against_spec.
+    """
+    reconciled = copy.deepcopy(lesson)
+    curriculum = reconciled.setdefault("curriculum", {})
+    language_ref = curriculum.setdefault("languageReference", {})
+    language_ref["specKey"] = live_spec.get("specKey")
+    language_ref["specHash"] = live_spec.get("specHash")
+    return reconciled
+
+
 def _run(cmd: list[str], *, cwd: Path) -> None:
     completed = subprocess.run(cmd, cwd=cwd, text=True)
     if completed.returncode != 0:
@@ -338,7 +354,7 @@ def integrate_wave(root: Path, manifest_path: Path, *, cache_dir: Path) -> None:
                         f"Integration order drift: live spec is {live_spec.get('sortOrder')} but draft is {order}"
                     )
 
-                lesson = load(draft_path)
+                lesson = reconcile_live_spec_metadata(load(draft_path), live_spec)
                 report = validate_against_spec(
                     lesson,
                     live_spec,
@@ -351,8 +367,7 @@ def integrate_wave(root: Path, manifest_path: Path, *, cache_dir: Path) -> None:
                     )
 
                 target = canonical_lesson_path(worktree, course_code, order)
-                target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copy2(draft_path, target)
+                dump(target, lesson)
 
                 _run([
                     sys.executable,
