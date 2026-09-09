@@ -5,86 +5,22 @@
   "generatedLessons": [
     1
   ],
-  "passedPrefixLength": 0,
-  "status": "FAIL",
+  "passedPrefixLength": 1,
+  "status": "PASS",
   "lessonReports": [
     {
       "lessonKey": "EN-A1-L-0001",
       "sortOrder": 1,
-      "status": "FAIL",
+      "status": "PASS",
       "automatedScore": 100,
-      "canonicalStatus": "FAIL",
+      "canonicalStatus": "PASS",
       "referenceStatus": "PASS",
       "referenceWarnings": [
         "EN-A1-L-0001: target word EN-LEX-NAME-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
       ],
-      "errors": [
-        "T02: acceptedSpeechEn contains formatting-only duplicates",
-        "T06: acceptedSpeechEn contains formatting-only duplicates",
-        "T07: acceptedSpeechEn contains formatting-only duplicates",
-        {
-          "code": "CQ-H09",
-          "message": "Accepted speech contains formatting-only duplicates.",
-          "data": {
-            "turnKey": "T02"
-          }
-        },
-        {
-          "code": "CQ-H09",
-          "message": "Accepted speech contains formatting-only duplicates.",
-          "data": {
-            "turnKey": "T06"
-          }
-        },
-        {
-          "code": "CQ-H09",
-          "message": "Accepted speech contains formatting-only duplicates.",
-          "data": {
-            "turnKey": "T07"
-          }
-        },
-        {
-          "code": "CQ-H09",
-          "message": "Retrieval acceptance must contain its model and distinct bounded alternatives.",
-          "data": {
-            "activityKey": "A06"
-          }
-        }
-      ]
+      "errors": []
     }
   ],
   "storyErrors": [],
-  "errors": [
-    "T02: acceptedSpeechEn contains formatting-only duplicates",
-    "T06: acceptedSpeechEn contains formatting-only duplicates",
-    "T07: acceptedSpeechEn contains formatting-only duplicates",
-    {
-      "code": "CQ-H09",
-      "message": "Accepted speech contains formatting-only duplicates.",
-      "data": {
-        "turnKey": "T02"
-      }
-    },
-    {
-      "code": "CQ-H09",
-      "message": "Accepted speech contains formatting-only duplicates.",
-      "data": {
-        "turnKey": "T06"
-      }
-    },
-    {
-      "code": "CQ-H09",
-      "message": "Accepted speech contains formatting-only duplicates.",
-      "data": {
-        "turnKey": "T07"
-      }
-    },
-    {
-      "code": "CQ-H09",
-      "message": "Retrieval acceptance must contain its model and distinct bounded alternatives.",
-      "data": {
-        "activityKey": "A06"
-      }
-    }
-  ]
+  "errors": []
 }
