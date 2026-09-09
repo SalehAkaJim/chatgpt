@@ -9,10 +9,10 @@
     "is_unapproved": "no"
   },
   "queryLimit": 80,
-  "circuitOpened": true,
+  "circuitOpened": false,
   "queryCount": 54,
-  "evidenceQueryCount": 0,
-  "unavailableQueryCount": 54,
+  "evidenceQueryCount": 40,
+  "unavailableQueryCount": 0,
   "queries": [
     {
       "query": "at seven",
@@ -23,10 +23,46 @@
       "lexicalLemmas": [
         "seven"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+seven%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+seven%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 7920844,
+          "text": "I dine at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "AlanF_US"
+        },
+        {
+          "id": 2393896,
+          "text": "They dine at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kuma"
+        },
+        {
+          "id": 10569629,
+          "text": "He arrived home at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 10569628,
+          "text": "He came home at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 9953928,
+          "text": "Yanni broke fast at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "at six",
@@ -38,10 +74,46 @@
         "at",
         "six"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+six%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+six%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 12862679,
+          "text": "She returned at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 7246548,
+          "text": "Sami died at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 7205946,
+          "text": "Sami left at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 3154682,
+          "text": "We eat at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2245263,
+          "text": "Dinner's at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "do you have a book",
@@ -52,10 +124,46 @@
       "lexicalLemmas": [
         "have"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+have+a+book%22&is_orphan=no&is_unapproved=no&limit=5&showtrans=none: HTTP Error 400: Bad Request"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+have+a+book%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2666720,
+          "text": "Do you have a book?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 9774597,
+          "text": "Do you have a book to read?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "helloroto"
+        },
+        {
+          "id": 7867767,
+          "text": "Do you have a book of Berber names?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 26363,
+          "text": "Do you have a book written in English?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "al_ex_an_der"
+        },
+        {
+          "id": 7809433,
+          "text": "Do you have a book to read on the airplane?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "do you have a pen",
@@ -66,10 +174,46 @@
       "lexicalLemmas": [
         "have"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+have+a+pen%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 33771,
+          "text": "Do you have a pen?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11937696,
+          "text": "Do you have a pen handy?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 3835710,
+          "text": "\"Do you have a pen?\" \"Yes.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Joseph"
+        },
+        {
+          "id": 9131522,
+          "text": "Do you have a pen for me?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "megamanenm"
+        },
+        {
+          "id": 8910294,
+          "text": "Do you have a pen with you?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "do you like coffee",
@@ -80,10 +224,39 @@
       "lexicalLemmas": [
         "like"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+like+coffee%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2739813,
+          "text": "Do you like coffee?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13320630,
+          "text": "Do you like coffee or tea?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 36465,
+          "text": "Why do you like coffee strong?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 5369891,
+          "text": "How do you like coffee — with or without sugar?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Objectivesea"
+        }
+      ],
+      "sampleCount": 4,
+      "status": "evidence"
     },
     {
       "query": "do you like tea",
@@ -94,10 +267,32 @@
       "lexicalLemmas": [
         "like"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+like+tea%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 1098230,
+          "text": "Do you like tea?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "cntrational"
+        },
+        {
+          "id": 70153,
+          "text": "Do you like tea or coffee?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 5863861,
+          "text": "Do you like tea with milk or lemon?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "peterius"
+        }
+      ],
+      "sampleCount": 3,
+      "status": "evidence"
     },
     {
       "query": "five dollars",
@@ -108,10 +303,46 @@
       "lexicalLemmas": [
         "five"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22five+dollars%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13897337,
+          "text": "Tom owes me five dollars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kylewii"
+        },
+        {
+          "id": 7588275,
+          "text": "You owe me five dollars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 5745274,
+          "text": "Do you have five dollars?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 2163149,
+          "text": "The book costs five dollars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Source_VOA"
+        },
+        {
+          "id": 1793247,
+          "text": "A pound was five dollars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "gleki"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "i have coffee please",
@@ -122,10 +353,10 @@
       "lexicalLemmas": [
         "coffee"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+have+coffee+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "i have tea please",
@@ -136,10 +367,10 @@
       "lexicalLemmas": [
         "tea"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+have+tea+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "i like coffee",
@@ -150,10 +381,46 @@
       "lexicalLemmas": [
         "like"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+like+coffee%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 3524072,
+          "text": "I like coffee.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "robbieheslop"
+        },
+        {
+          "id": 9741272,
+          "text": "I like coffee liqueur.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 62251,
+          "text": "I like coffee better.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 62235,
+          "text": "I like coffee hot.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 253437,
+          "text": "I like coffee very much.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "i like tea",
@@ -164,10 +431,46 @@
       "lexicalLemmas": [
         "like"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+like+tea%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 253293,
+          "text": "I like tea.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 9449021,
+          "text": "I like tea better than coffee.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adelpa"
+        },
+        {
+          "id": 4308739,
+          "text": "I like tea more than coffee.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "AlanF_US"
+        },
+        {
+          "id": 13757313,
+          "text": "I like tea, but I like coffee more.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ergulis"
+        },
+        {
+          "id": 13757312,
+          "text": "I like tea, but I like coffee better.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ergulis"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "i want tea",
@@ -178,10 +481,25 @@
       "lexicalLemmas": [
         "want"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+want+tea%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 9955302,
+          "text": "I want tea.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 12303697,
+          "text": "I want tea, toast and jam.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
+      "sampleCount": 2,
+      "status": "evidence"
     },
     {
       "query": "it's a book",
@@ -192,10 +510,46 @@
       "lexicalLemmas": [
         "book"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a+book%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 9473989,
+          "text": "It's a book.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13984217,
+          "text": "It's a book about him.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "mervert1"
+        },
+        {
+          "id": 9452167,
+          "text": "It's a book on health.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Nuel"
+        },
+        {
+          "id": 5948215,
+          "text": "It's a book of essays.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "mailohilohi"
+        },
+        {
+          "id": 5948214,
+          "text": "It's a book of poetry.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "mailohilohi"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "it's a pen",
@@ -206,10 +560,39 @@
       "lexicalLemmas": [
         "pen"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a+pen%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 3620812,
+          "text": "It's a pen.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ricardo14"
+        },
+        {
+          "id": 10037817,
+          "text": "That isn't a pencil. It's a pen.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8503615,
+          "text": "That's not a pencil. It's a pen.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8502928,
+          "text": "That's not a pencil; it's a pen.",
+          "lang": "eng",
+          "license": "CC0 1.0",
+          "owner": "shekitten"
+        }
+      ],
+      "sampleCount": 4,
+      "status": "evidence"
     },
     {
       "query": "it's at six",
@@ -221,10 +604,10 @@
         "at",
         "six"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+at+six%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "no i want water",
@@ -235,10 +618,10 @@
       "lexicalLemmas": [
         "want"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+i+want+water%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "on the table",
@@ -249,10 +632,46 @@
       "lexicalLemmas": [
         "table"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+the+table%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13718454,
+          "text": "What is on the table?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Th0th"
+        },
+        {
+          "id": 13698134,
+          "text": "I sit on the table.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 12891527,
+          "text": "They fell on the table.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ussis"
+        },
+        {
+          "id": 12668497,
+          "text": "Put supper on the table.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "anzart"
+        },
+        {
+          "id": 12343491,
+          "text": "Dinner's on the table.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "one or room two",
@@ -263,10 +682,10 @@
       "lexicalLemmas": [
         "room"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22one+or+room+two%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "or room two",
@@ -277,10 +696,10 @@
       "lexicalLemmas": [
         "two"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22or+room+two%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "room one or",
@@ -291,10 +710,10 @@
       "lexicalLemmas": [
         "room"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+or%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "room one or room",
@@ -305,10 +724,10 @@
       "lexicalLemmas": [
         "one"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+or+room%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "room one please",
@@ -320,10 +739,10 @@
         "one",
         "room"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "room two",
@@ -335,10 +754,18 @@
         "room",
         "two"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13650977,
+          "text": "On the small desk in my hotel room, two letters were awaiting me.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
+      "sampleCount": 1,
+      "status": "evidence"
     },
     {
       "query": "room two please",
@@ -350,10 +777,10 @@
         "room",
         "two"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "two at seven",
@@ -364,10 +791,10 @@
       "lexicalLemmas": [
         "seven"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22two+at+seven%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "what's your name",
@@ -378,10 +805,46 @@
       "lexicalLemmas": [
         "name"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+your+name%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 408293,
+          "text": "What's your name?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 10336861,
+          "text": "\"What's your name?\" \"Tom.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 10213805,
+          "text": "\"What's your name?\" \"Ziri.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 10064755,
+          "text": "\"What's your name?\" \"Yanni.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6088328,
+          "text": "What's your name, boy?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "yes i like tea",
@@ -392,10 +855,10 @@
       "lexicalLemmas": [
         "like"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+i+like+tea%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "yes i read books",
@@ -406,10 +869,10 @@
       "lexicalLemmas": [
         "read"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+i+read+books%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "can i have please",
@@ -423,10 +886,10 @@
         "EN-CONSTR-CAN-I-HAVE-DRINK"
       ],
       "lexicalLemmas": [],
-      "status": "unavailable",
-      "sampleCount": 0,
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+i+have+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "can you help me",
@@ -440,10 +903,46 @@
       "lexicalLemmas": [
         "help"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+you+help+me%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 434410,
+          "text": "Can you help me?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "lukaszpp"
+        },
+        {
+          "id": 12221216,
+          "text": "Miss, can you help me?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 12204390,
+          "text": "Mum, can you help me?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 10187642,
+          "text": "Can you help me translate?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "pan176"
+        },
+        {
+          "id": 9379604,
+          "text": "Tom, can you help me?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "can you repeat that please",
@@ -457,10 +956,18 @@
       "lexicalLemmas": [
         "repeat"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+you+repeat+that+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 3329632,
+          "text": "Can you repeat that, please?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 1,
+      "status": "evidence"
     },
     {
       "query": "do you have",
@@ -471,10 +978,46 @@
       "constructionKeys": [
         "EN-CONSTR-DO-YOU-HAVE"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+have%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13992370,
+          "text": "Do you have roommates?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "menaud"
+        },
+        {
+          "id": 13934780,
+          "text": "Do you have questions?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ioan_Cristian"
+        },
+        {
+          "id": 13658998,
+          "text": "Do you have fever?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "mervert1"
+        },
+        {
+          "id": 13650217,
+          "text": "Do you have accomodation?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "araneo"
+        },
+        {
+          "id": 13490550,
+          "text": "Do you have tickets?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "do you like",
@@ -485,10 +1028,46 @@
       "constructionKeys": [
         "EN-CONSTR-DO-YOU-LIKE"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+like%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13703548,
+          "text": "Do you like working?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13630924,
+          "text": "Do you like Spring?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "araneo"
+        },
+        {
+          "id": 13630501,
+          "text": "Do you like sumo?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13330397,
+          "text": "Do you like milk?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adelpa"
+        },
+        {
+          "id": 13186220,
+          "text": "Do you like almonds?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LdjuherTaqvaylit"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "do you read books",
@@ -502,10 +1081,46 @@
       "lexicalLemmas": [
         "read"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+read+books%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 9226785,
+          "text": "Do you read books?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11744393,
+          "text": "Do you read books like that?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 6265197,
+          "text": "How often do you read books?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 6252141,
+          "text": "Do you read books to your children?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 7118167,
+          "text": "How often do you read books in French?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "how are you",
@@ -516,10 +1131,46 @@
       "constructionKeys": [
         "EN-CONSTR-HOW-ARE-YOU"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22how+are+you%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 373320,
+          "text": "How are you?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11787822,
+          "text": "How are you two?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "terrynoti"
+        },
+        {
+          "id": 9934662,
+          "text": "How are you, Dad?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Nylez"
+        },
+        {
+          "id": 9819270,
+          "text": "How are you paying?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 9251400,
+          "text": "Well, how are you?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "how much is it",
@@ -530,10 +1181,46 @@
       "constructionKeys": [
         "EN-CONSTR-HOW-MUCH-IS-IT"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22how+much+is+it%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2418,
+          "text": "How much is it?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "brauliobezerra"
+        },
+        {
+          "id": 11038804,
+          "text": "How much is it altogether?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 5004168,
+          "text": "How much is it worth?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 9194846,
+          "text": "How much is it per month?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 5838290,
+          "text": "How much is it worth today?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "i like",
@@ -544,10 +1231,46 @@
       "constructionKeys": [
         "EN-CONSTR-I-LIKE"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+like%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 14039074,
+          "text": "I like wands.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 14039058,
+          "text": "I like rods.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13965931,
+          "text": "I like harbours.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Leglaine"
+        },
+        {
+          "id": 13910905,
+          "text": "I like sexting.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "menaud"
+        },
+        {
+          "id": 13808936,
+          "text": "I like vegetables.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "i read books",
@@ -561,10 +1284,46 @@
       "lexicalLemmas": [
         "read"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+read+books%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 1001623,
+          "text": "I read books.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Nihonkage"
+        },
+        {
+          "id": 13706909,
+          "text": "I read books every day.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 12332167,
+          "text": "I read books at night.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Aghanim"
+        },
+        {
+          "id": 8414668,
+          "text": "I read books about Islam.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 8410826,
+          "text": "I read books in French.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "i want",
@@ -575,10 +1334,46 @@
       "constructionKeys": [
         "EN-CONSTR-I-WANT"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+want%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13403491,
+          "text": "I want.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Thanuir"
+        },
+        {
+          "id": 8783279,
+          "text": "I wanted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "jimkillock"
+        },
+        {
+          "id": 13733679,
+          "text": "I want independence.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13545884,
+          "text": "I want dorayaki!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LeviHighway"
+        },
+        {
+          "id": 13409028,
+          "text": "I want it!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Aghanim"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "i'm fine thanks",
@@ -589,10 +1384,46 @@
       "constructionKeys": [
         "EN-CONSTR-IM-FINE-THANKS"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+fine+thanks%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 1919530,
+          "text": "I'm fine, thanks!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "gromenawer"
+        },
+        {
+          "id": 1564517,
+          "text": "I'm fine, thanks.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "cruzedu73"
+        },
+        {
+          "id": 1674428,
+          "text": "I'm fine, thank you!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "garydale"
+        },
+        {
+          "id": 65115,
+          "text": "I'm fine, thank you.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 3373158,
+          "text": "I'm fine, thanks for asking!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ricardo14"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "i'm from",
@@ -603,10 +1434,46 @@
       "constructionKeys": [
         "EN-CONSTR-FROM-PLACE"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+from%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13549228,
+          "text": "I'm from Transylvania.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13371450,
+          "text": "I'm from Kabylia.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Igider"
+        },
+        {
+          "id": 13255616,
+          "text": "I'm from Ohio.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13151362,
+          "text": "I'm from Mongolia.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "deniko"
+        },
+        {
+          "id": 13024114,
+          "text": "I'm from Türkiye.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adelpa"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "is this your",
@@ -617,10 +1484,46 @@
       "constructionKeys": [
         "EN-CONSTR-IS-THIS-YOUR"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+this+your%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 1436332,
+          "text": "Is this yours?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "marcelostockle"
+        },
+        {
+          "id": 13735781,
+          "text": "Is this your sock?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13558956,
+          "text": "Is this your bedroom?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LeviHighway"
+        },
+        {
+          "id": 13480477,
+          "text": "Is this your worker?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "epiphany"
+        },
+        {
+          "id": 13178949,
+          "text": "Is this your neighborhood?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "it's a",
@@ -631,10 +1534,46 @@
       "constructionKeys": [
         "EN-CONSTR-ITS-A"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 14033255,
+          "text": "It's a lupanar.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Myrano_"
+        },
+        {
+          "id": 14023202,
+          "text": "It's a puffin.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "araneo"
+        },
+        {
+          "id": 13981204,
+          "text": "It's a fake!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Vortarulo"
+        },
+        {
+          "id": 13816610,
+          "text": "It's a hospital.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13581993,
+          "text": "It's a hedgehog!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Native77"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "it's my",
@@ -645,10 +1584,46 @@
       "constructionKeys": [
         "EN-CONSTR-ITS-MY"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+my%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 14012331,
+          "text": "It's my platform.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13869248,
+          "text": "It's my business!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Nuel"
+        },
+        {
+          "id": 13629500,
+          "text": "It's my pencil.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13621281,
+          "text": "It's my pen.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13189642,
+          "text": "It's my bicycle.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ecorralest101"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "it's on the table",
@@ -659,10 +1634,46 @@
       "constructionKeys": [
         "EN-CONSTR-ON-THE-TABLE"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+on+the+table%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 1871551,
+          "text": "It's on the table.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Asma"
+        },
+        {
+          "id": 10576694,
+          "text": "\"Where's the book?\" \"It's on the table.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8741068,
+          "text": "\"Where is his book?\" \"It's on the table.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Solana"
+        },
+        {
+          "id": 717627,
+          "text": "\"Where is her book?\" \"It's on the table.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "papabear"
+        },
+        {
+          "id": 73574,
+          "text": "\"Where's his book?\" \"It's on the table.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "my is",
@@ -673,10 +1684,25 @@
       "constructionKeys": [
         "EN-CONSTR-MY-NAME-IS"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22my+is%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2683756,
+          "text": "My is it cloudy today!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "FeuDRenais2"
+        },
+        {
+          "id": 64837,
+          "text": "Oh my! Is she weeping for joy?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "blay_paul"
+        }
+      ],
+      "sampleCount": 2,
+      "status": "evidence"
     },
     {
       "query": "no please",
@@ -687,10 +1713,46 @@
       "constructionKeys": [
         "EN-CONSTR-NO-CORRECT-ITEM"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 6250585,
+          "text": "\"May I do that?\" \"No, please don't.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11822012,
+          "text": "Igor distinctly heard Anna screaming: \"No! Please don't do that!\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 73593,
+          "text": "\"Do you mind if I use your phone?\" \"No, please go ahead.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11030464,
+          "text": "\"This is your contract.\" \"Pinch me. Am I dreaming?\" \"No. Please sign here.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 1699350,
+          "text": "No, please go, both of you. Don't let me be the third wheel.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "marcelostockle"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "no thank you",
@@ -701,10 +1763,46 @@
       "constructionKeys": [
         "EN-CONSTR-NO-THANK-YOU"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+thank+you%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 14013751,
+          "text": "No thank you.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "zogwarg"
+        },
+        {
+          "id": 31390,
+          "text": "No, thank you.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8507083,
+          "text": "\"Thanks.\" \"No, thank YOU!\"",
+          "lang": "eng",
+          "license": "CC0 1.0",
+          "owner": "shekitten"
+        },
+        {
+          "id": 12682028,
+          "text": "\"Thank you!\" \"No, thank you!\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 12013239,
+          "text": "No, thank you very much.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "mayabe"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "on monday",
@@ -715,10 +1813,46 @@
       "constructionKeys": [
         "EN-CONSTR-ON-MONDAY"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+monday%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13489445,
+          "text": "Come on Monday.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 11913169,
+          "text": "Begin on Monday.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13447191,
+          "text": "She worked on Mondays.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13338690,
+          "text": "Everything else on Monday.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "artemlyubchenko"
+        },
+        {
+          "id": 11948708,
+          "text": "Tom works on Mondays.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "what's this",
@@ -729,10 +1863,46 @@
       "constructionKeys": [
         "EN-CONSTR-WHATS-THIS"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+this%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 413821,
+          "text": "What's this?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13612649,
+          "text": "What's this site?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Babelball"
+        },
+        {
+          "id": 13610068,
+          "text": "What's this nonsense?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Babelball"
+        },
+        {
+          "id": 13450035,
+          "text": "What's this stop?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "mraz"
+        },
+        {
+          "id": 12901582,
+          "text": "What's this here?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "what's your",
@@ -743,10 +1913,46 @@
       "constructionKeys": [
         "EN-CONSTR-WHATS-YOUR-NAME"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+your%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13745234,
+          "text": "What's your social?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adelpa"
+        },
+        {
+          "id": 13058957,
+          "text": "What's your religion?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adelpa"
+        },
+        {
+          "id": 12144740,
+          "text": "What's your business?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "GemMonkey"
+        },
+        {
+          "id": 11875779,
+          "text": "What's your postcode?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 11173242,
+          "text": "What's your rank?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "where are you from",
@@ -757,10 +1963,46 @@
       "constructionKeys": [
         "EN-CONSTR-ASK-COUNTRY"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22where+are+you+from%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 370703,
+          "text": "Where are you from?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "saeb"
+        },
+        {
+          "id": 13372868,
+          "text": "Where are you from, passenger?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Igider"
+        },
+        {
+          "id": 8567415,
+          "text": "\"Where are you from?\" \"Algiers.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 8103399,
+          "text": "\"Where are you from?\" \"Algeria.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 7084279,
+          "text": "Please, where are you from?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "AmarMecheri"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "where's my",
@@ -771,10 +2013,46 @@
       "constructionKeys": [
         "EN-CONSTR-WHERES-MY"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22where%27s+my%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13933715,
+          "text": "Where's my chocolate?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13858410,
+          "text": "Where's my belt?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13095637,
+          "text": "Where's my cat?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "araneo"
+        },
+        {
+          "id": 12886211,
+          "text": "Where's my crown?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Josephlingo"
+        },
+        {
+          "id": 12512437,
+          "text": "Where's my daughter?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     },
     {
       "query": "yes please",
@@ -785,10 +2063,46 @@
       "constructionKeys": [
         "EN-CONSTR-YES-PLEASE"
       ],
-      "status": "unavailable",
-      "sampleCount": 0,
-      "examples": [],
-      "syncWarning": "tatoeba_circuit_open_using_cached_evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 687874,
+          "text": "Yes, please.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "lukaszpp"
+        },
+        {
+          "id": 10196915,
+          "text": "\"Coffee?\" \"Yes, please.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 65364,
+          "text": "Yes, please come.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Luornu"
+        },
+        {
+          "id": 38584,
+          "text": "Yes, please do.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "shanghainese"
+        },
+        {
+          "id": 6273785,
+          "text": "Yes, please do that.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
     }
   ]
 }
