@@ -5,9 +5,10 @@
   "generatedLessons": [
     1,
     2,
-    3
+    3,
+    4
   ],
-  "passedPrefixLength": 3,
+  "passedPrefixLength": 4,
   "status": "PASS",
   "lessonReports": [
     {
@@ -40,6 +41,18 @@
       "canonicalStatus": "PASS",
       "referenceStatus": "PASS",
       "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0004",
+      "sortOrder": 4,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0004: target word EN-LEX-REPEAT-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
       "errors": []
     }
   ],
