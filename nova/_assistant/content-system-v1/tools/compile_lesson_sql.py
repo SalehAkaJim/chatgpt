@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 
+from language_units import is_word_unit, word_unit_errors
 from validate_lesson import validate
 from validate_content_quality import evaluate
 
@@ -29,10 +30,6 @@ def prepare_child_import(table: str, key_column: str, keys: list[str]) -> list[s
     return [
         f'-- Keep existing {table} IDs; remove only keys absent from this Lesson source.',
         f'DELETE FROM {table} WHERE lesson_id=@lesson_id{keep};',
-        # Both (lesson_id, key) and (lesson_id, sort_order) are unique. Moving all
-        # retained rows above the incoming range ensures an upsert can match only
-        # the canonical key, never another row that used to occupy its position.
-        # Descending updates also avoid transient collisions in the staging range.
         f'SET @child_order_offset=(SELECT GREATEST(COALESCE(MAX(sort_order),0),{len(keys)}) FROM {table} WHERE lesson_id=@lesson_id);',
         f'UPDATE {table} SET sort_order=sort_order+@child_order_offset WHERE lesson_id=@lesson_id ORDER BY sort_order DESC;',
         ''
@@ -43,6 +40,15 @@ def compile_sql(course: dict, lesson: dict, source_hash: str, audio_manifest: di
     canonical = validate(lesson, course)
     if canonical['status'] != 'PASS':
         raise ValueError('Canonical validation failed: ' + '; '.join(canonical['errors']))
+
+    for item in lesson.get('lexicalItems', []):
+        if not is_word_unit(item):
+            details = '; '.join(word_unit_errors(item)) or 'unit is not a reusable word/lexeme'
+            raise ValueError(
+                f"Non-word unit cannot be compiled into lexical_items: {item.get('lexicalKey')} "
+                f"({item.get('displayForm')}): {details}"
+            )
+
     policy = load(Path(__file__).resolve().parents[1] / 'content_quality.policy.json')
     quality = evaluate(lesson, policy)
     if not quality['hardGatePass'] or quality['automatedScore'] < max(90, policy['minimumAutomatedScore']):
@@ -53,7 +59,10 @@ def compile_sql(course: dict, lesson: dict, source_hash: str, audio_manifest: di
     def audio_record(kind, key):
         return audio_items.get((kind, key), {})
     if audio_manifest is not None:
-        for group, kind, required, key_field, text_field in [(lesson.get('turns', []), 'turn', 'audioRequired', 'turnKey', 'textEn'), (lesson.get('lexicalItems', []), 'lexical_item', 'audioEligible', 'lexicalKey', 'displayForm')]:
+        for group, kind, required, key_field, text_field in [
+            (lesson.get('turns', []), 'turn', 'audioRequired', 'turnKey', 'textEn'),
+            (lesson.get('lexicalItems', []), 'lexical_item', 'audioEligible', 'lexicalKey', 'displayForm')
+        ]:
             for item in group:
                 if item.get(required):
                     record = audio_record(kind, item[key_field])
