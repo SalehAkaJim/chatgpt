@@ -52,10 +52,11 @@ if ! git -C "$REPO_DIR" fetch --quiet origin main; then
   fail "sync کردن origin/main شکست خورد. اتصال اینترنت و GitHub authentication را بررسی کن."
 fi
 
-python3 "$REPO_DIR/nova/prototype/local_preview.py" "$@"
-STATUS=$?
-if [[ $STATUS -ne 0 ]]; then
+if python3 "$REPO_DIR/nova/prototype/local_preview.py" "$@"; then
+  exit 0
+else
+  STATUS=$?
   print -u2 "Nova Preview با خطا بسته شد. برای بستن این پنجره Enter بزن."
   read -r _
+  exit $STATUS
 fi
-exit $STATUS
