@@ -62,7 +62,8 @@
         }
       ],
       "sampleCount": 5,
-      "status": "evidence"
+      "status": "evidence",
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+seven%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "query": "at six",
@@ -806,7 +807,8 @@
       "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
       "sampleCount": 0,
-      "status": "no_hit"
+      "status": "no_hit",
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "query": "room two",
@@ -844,7 +846,8 @@
       "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
       "sampleCount": 0,
-      "status": "no_hit"
+      "status": "no_hit",
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "query": "two at seven",
@@ -908,7 +911,8 @@
         }
       ],
       "sampleCount": 5,
-      "status": "evidence"
+      "status": "evidence",
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+your+name%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "query": "yes i like tea",
@@ -1487,7 +1491,8 @@
         }
       ],
       "sampleCount": 5,
-      "status": "evidence"
+      "status": "evidence",
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+want%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 104] Connection reset by peer>"
     },
     {
       "query": "i'm fine thanks",
@@ -1537,7 +1542,8 @@
         }
       ],
       "sampleCount": 5,
-      "status": "evidence"
+      "status": "evidence",
+      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+fine+thanks%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 101] Network is unreachable>"
     },
     {
       "query": "i'm from",
