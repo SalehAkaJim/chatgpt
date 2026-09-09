@@ -1,1 +1,343 @@
-{"schemaVersion":"2.2.0","contentSystemVersion":"1","courseCode":"en-fa","levelKey":"A1","lessonKey":"EN-A1-L-0016","sortOrder":16,"titleEn":"What time?","titleFa":"چه ساعتی؟","descriptionFa":"هماهنگ کردن یک ساعت ساده برای پیاده روی بعدی","primaryOutcomeKey":"A1-INTERACTION-ASK-TIME","outcomeFa":"می توانی یک سوال خیلی کوتاه درباره ساعت را بفهمی، ساعت شش را از روی برنامه بخوانی و آن را بگویی.","scenarioFa":"پیاده روی تمام شده و سارا درباره ساعت دور بعد می پرسد. کارت برنامه هم زمان را نشان می دهد. نقش تو روبی است.","prerequisiteOutcomeKeys":["A1-INTERACTION-CHOOSE-ROOM"],"curriculum":{"startingKnowledge":"early_a1_after_greetings","targetConstructions":[{"key":"EN-CONSTR-WHAT-TIME","form":"What time?","meaningFa":"پرسیدن ساعت در یک موقعیت روشن"},{"key":"EN-CONSTR-AT-TIME","form":"At + time","meaningFa":"گفتن ساعت یک قرار"}],"supportLanguage":[],"assessmentBoundary":"Guided speech and reconstruction are supported practice. Choice tasks assess recognition or selection. The final hidden-answer task records bounded first-attempt evidence; accepted alternatives are included only when they are natural for the same context. This does not certify open-ended proficiency or pronunciation.","transferPlan":{"mode":"same_lesson","intent":"Keep the first time Lesson to one clock number, read a simple schedule, and accept a natural short answer without forcing the preposition."},"story":{"arcKey":"EN-A1-WALKING-GROUP","sceneKey":"EN-A1-SCENE-0016","learnerRoleKey":"ruby","participants":["ruby","sara"],"introducedCharacterKeys":[],"relationshipState":"already_known","continuesLessonKey":"EN-A1-L-0010","dependsOnLessonKeys":["EN-A1-L-0010"],"settingFa":"پایان پیاده روی، هماهنگ کردن ساعت دور بعد","storyBeatFa":"روبی و سارا زمان پیاده روی بعدی را هماهنگ می کنند؛ این درس فقط ساعت شش را وارد می کند."},"reviewLinks":[{"lessonKey":"EN-A1-L-0014","activityKeys":["A02"],"learningDemand":"transfer","note":"Move from reading a room label to reading one simple schedule time."},{"lessonKey":"EN-A1-L-0015","activityKeys":["A01"],"learningDemand":"recognition","note":"Reuse digit recognition in a new clock-time context."}],"pedagogyVersion":2},"lexicalItems":[{"lexicalKey":"EN-LEX-TIME-01","itemType":"word","displayForm":"time","translationFa":"ساعت؛ زمان","role":"target","audioEligible":true,"partOfSpeech":"noun"},{"lexicalKey":"EN-LEX-SIX-01","itemType":"word","displayForm":"six","translationFa":"شش","role":"target","audioEligible":true,"partOfSpeech":"numeral"},{"lexicalKey":"EN-LEX-AT-TIME-01","itemType":"word","displayForm":"at","translationFa":"در؛ برای ساعت مشخص","role":"target","audioEligible":true,"partOfSpeech":"preposition","senseKey":"clock_time"},{"lexicalKey":"EN-LEX-YES-01","itemType":"word","displayForm":"yes","translationFa":"بله","role":"review","audioEligible":true,"partOfSpeech":"interjection"}],"turns":[{"turnKey":"T01","role":"character","characterKey":"sara","textEn":"What time?","translationFa":"چه ساعتی؟","audioRequired":true},{"turnKey":"T02","role":"learner","characterKey":"ruby","textEn":"At six.","translationFa":"ساعت شش.","audioRequired":true,"speechTargetEn":"At six.","acceptedSpeechEn":["At six."]},{"turnKey":"T03","role":"character","characterKey":"sara","textEn":"Six?","translationFa":"شش؟","audioRequired":true},{"turnKey":"T04","role":"learner","characterKey":"ruby","textEn":"Yes.","translationFa":"بله.","audioRequired":true,"speechTargetEn":"Yes.","acceptedSpeechEn":["Yes."]},{"turnKey":"T05","role":"learner","characterKey":"ruby","textEn":"At six.","translationFa":"ساعت شش.","audioRequired":true,"speechTargetEn":"At six.","acceptedSpeechEn":["At six."],"metadata":{"usage":"retrieval_model_after_help"}}],"activities":[{"activityKey":"A01","type":"lexical_teach","instructionFa":"عبارت زمان و عدد این درس را یاد بگیر.","config":{"lexicalKeys":["EN-LEX-TIME-01","EN-LEX-SIX-01","EN-LEX-AT-TIME-01"],"explanationFa":"What time? یعنی چه ساعتی؟ six یعنی شش. برای جواب می توانی بگویی At six. این درس عمدا فقط یک ساعت جدید دارد."}},{"activityKey":"A02","type":"response_choice","instructionFa":"متن کوتاه انگلیسی را بخوان و پاسخ مناسب را انتخاب کن.","promptEn":"Next walk — 6:00","promptFa":"کارت برنامه را بخوان. پیاده روی بعدی چه ساعتی است؟","config":{"options":["ساعت پنج","ساعت شش","اتاق شش"],"answerIndex":1,"feedback":{"optionsFa":["روی کارت 5:00 نیست.","6:00 یعنی ساعت شش.","کارت درباره زمان است، نه شماره اتاق."],"correctFa":"6:00 یعنی ساعت شش."}},"metadata":{"learningDemand":"recognition","purpose":"reading_for_key_information","evidenceKind":"recognition_or_selection","skillFocus":"reading"}},{"activityKey":"A03","type":"dialogue","instructionFa":"سوال سارا را گوش کن و پاسخ روبی را بگو.","config":{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E02","promptTurnKey":"T03","responseTurnKey":"T04","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}},{"activityKey":"A04","type":"lexical_teach","instructionFa":"یک بار دیگر به صدای six گوش کن و آن را تقلید کن.","config":{"lexicalKeys":["EN-LEX-SIX-01"],"explanationFa":"در پایان six دو صدای /k/ و /s/ پشت سر هم شنیده می شوند. لازم نیست لهجه ات را عوض کنی؛ فقط سعی کن پایان کلمه را حذف نکنی."},"metadata":{"skillFocus":"pronunciation"}},{"activityKey":"A05","type":"speak","instructionFa":"این بار پاسخ آماده را نمی بینی. خودت جواب را بگو یا بنویس.","promptFa":"نقش تو روبی است. سارا می پرسد What time? و قرار ساعت شش است. جواب بده.","config":{"mode":"retrieval","textEn":"At six.","acceptedAnswersEn":["At six.","Six."],"sourceTurnKey":"T05","showAnswerTextBeforeAttempt":false,"modelAccess":"explicit_help","hintFa":"ساعت شش را بگو؛ در این موقعیت At six و Six هر دو طبیعی هستند.","feedback":{"correctFa":"پاسخت با یکی از پاسخ های طبیعی این موقعیت هماهنگ است.","retryFa":"ساعت شش را بگو؛ در این موقعیت At six و Six هر دو طبیعی هستند."},"evidenceKind":"bounded_retrieval","practiceOnly":false},"metadata":{"learningDemand":"retrieval","purpose":"meaning_cued_hidden_answer","evidenceKind":"bounded_retrieval","skillFocus":"speaking"}}],"review":{"pendingDecisions":[]},"metadata":{"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange","qualityStage":"model_reviewed_for_testing"}}
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0016",
+  "sortOrder": 16,
+  "titleEn": "What time?",
+  "titleFa": "چه ساعتی؟",
+  "descriptionFa": "روبی و سارا زمان پیاده روی بعدی را هماهنگ می کنند و این درس فقط یک زمان ثابت را وارد می کند.",
+  "primaryOutcomeKey": "A1-INTERACTION-ASK-TIME",
+  "outcomeFa": "زبان آموز می تواند سوال کوتاه درباره ساعت را بفهمد و برای ساعت شش پاسخ کوتاه بدهد.",
+  "scenarioFa": "پیاده روی تمام شده و سارا درباره زمان دور بعد می پرسد. کارت برنامه هم 6:00 را نشان می دهد. نقش تو روبی است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-CHOOSE-ROOM",
+    "A1-INTERACTION-CHOOSE-DRINK"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_label_reading_and_choice",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-WHAT-TIME",
+        "form": "What time?",
+        "meaningFa": "پرسیدن ساعت وقتی موضوع قرار روشن است"
+      },
+      {
+        "key": "EN-CONSTR-AT-SIX",
+        "form": "At six.",
+        "meaningFa": "گفتن یک زمان ثابت در این درس"
+      }
+    ],
+    "supportLanguage": [],
+    "assessmentBoundary": "The Lesson teaches one fixed clock-time response, At six, rather than standalone mastery of six or the preposition at. Final retrieval remains bounded to this time.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Transfer reading one compact label into reading a single schedule time and connect it to one short spoken time exchange."
+    },
+    "story": {
+      "arcKey": "EN-A1-WALKING-GROUP",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0016",
+      "learnerRoleKey": "ruby",
+      "participants": [
+        "ruby",
+        "sara"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0010",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0010"
+      ],
+      "settingFa": "پایان پیاده روی، هماهنگ کردن زمان دور بعد",
+      "storyBeatFa": "سارا و روبی بعد از نوشیدنی دور قبل، این بار زمان پیاده روی بعدی را روی کارت برنامه بررسی می کنند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0014",
+        "activityKeys": [
+          "A02",
+          "A04"
+        ],
+        "learningDemand": "transfer",
+        "note": "Reading a compact Room two label transfers to reading the compact schedule label 6:00."
+      },
+      {
+        "lessonKey": "EN-A1-L-0010",
+        "activityKeys": [
+          "A03"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Ruby and Sara return after five intervening Lessons with a new practical planning purpose."
+      }
+    ],
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-WHAT-TIME-01",
+      "itemType": "formula",
+      "displayForm": "What time?",
+      "translationFa": "چه ساعتی؟",
+      "role": "target",
+      "lemma": "what time",
+      "partOfSpeech": "formula",
+      "senseKey": "ask_clock_time",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_time_formula"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-AT-SIX-01",
+      "itemType": "formula",
+      "displayForm": "At six.",
+      "translationFa": "ساعت شش.",
+      "role": "target",
+      "lemma": "at six",
+      "partOfSpeech": "formula",
+      "senseKey": "fixed_clock_time_six",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_time_chunk"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-YES-FORMULA-01",
+      "itemType": "formula",
+      "displayForm": "Yes.",
+      "translationFa": "بله.",
+      "role": "review",
+      "lemma": "yes",
+      "partOfSpeech": "formula",
+      "senseKey": "brief_confirmation",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_social_formula"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "sara",
+      "textEn": "What time?",
+      "translationFa": "چه ساعتی؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "ruby",
+      "textEn": "At six.",
+      "translationFa": "ساعت شش.",
+      "speechTargetEn": "At six.",
+      "acceptedSpeechEn": [
+        "At six."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "sara",
+      "textEn": "Six?",
+      "translationFa": "شش؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "ruby",
+      "textEn": "Yes.",
+      "translationFa": "بله.",
+      "speechTargetEn": "Yes.",
+      "acceptedSpeechEn": [
+        "Yes."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T05",
+      "role": "learner",
+      "characterKey": "ruby",
+      "textEn": "At six.",
+      "translationFa": "ساعت شش.",
+      "speechTargetEn": "At six.",
+      "acceptedSpeechEn": [
+        "At six."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "lexical_teach",
+      "instructionFa": "سوال زمان و یک پاسخ ثابت را به صورت chunk یاد بگیر.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-WHAT-TIME-01",
+          "EN-LEX-AT-SIX-01"
+        ],
+        "explanationFa": "What time? یعنی چه ساعتی؟ At six. یعنی ساعت شش. فعلا six و at را به عنوان درس جداگانه گسترش نمی دهیم."
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "response_choice",
+      "instructionFa": "کارت برنامه را بخوان.",
+      "promptEn": "Next walk — 6:00",
+      "promptFa": "پیاده روی بعدی چه ساعتی است؟",
+      "config": {
+        "options": [
+          "ساعت شش",
+          "اتاق شش",
+          "پنج دلار"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ 6:00 در این کارت ساعت شش است.",
+            "این کارت زمان را نشان می دهد، نه شماره اتاق.",
+            "این کارت برنامه است، نه قیمت."
+          ],
+          "correctFa": "6:00 یعنی ساعت شش."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "purpose": "reading_for_key_information",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "reading"
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "dialogue",
+      "instructionFa": "سوال سارا را گوش کن و پاسخ روبی را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "sentence_order",
+      "instructionFa": "پاسخ زمان را گوش کن و سه بخش را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "six.",
+          "At",
+          ""
+        ],
+        "answerTokensEn": [
+          "At",
+          "six.",
+          ""
+        ],
+        "answerEn": "At six.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "پاسخ زمان را درست ساختی.",
+          "retryFa": "دوباره گوش کن؛ پاسخ با At شروع می شود."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "پاسخ مناسب را برای زمان انتخاب کن.",
+      "promptFa": "سارا می پرسد What time? و کارت برنامه 6:00 را نشان می دهد. چه می گویی؟",
+      "config": {
+        "optionsEn": [
+          "At six.",
+          "Room two, please.",
+          "Five dollars."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ این پاسخ زمان را می گوید.",
+            "این پاسخ انتخاب اتاق است.",
+            "این یک قیمت است."
+          ],
+          "correctFa": "At six یعنی ساعت شش."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی را نمی بینی. زمان را خودت بگو.",
+      "promptFa": "روبی هستی. سارا می پرسد چه ساعتی و قرار ساعت شش است. پاسخ کوتاه بده.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "At six.",
+        "acceptedAnswersEn": [
+          "At six."
+        ],
+        "sourceTurnKey": "T05",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از chunk کوتاه زمان این درس استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ زمان را کوتاه گفتی.",
+          "retryFa": "پاسخ زمان این درس با At شروع می شود."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded recall of one fixed time; not standalone number or general time mastery."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}
