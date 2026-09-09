@@ -81,8 +81,8 @@
           "rationale": "Bounded natural A1 use selected for make."
         },
         {
-          "query": "I make tea too",
-          "rationale": "Same-Lesson transfer for make with familiar language."
+          "query": "I make tea",
+          "rationale": "Same-Lesson transfer for make with familiar independently taught language."
         },
         {
           "query": "do you make",
@@ -169,12 +169,12 @@
       "turnKey": "T04",
       "role": "learner",
       "characterKey": "liam",
-      "textEn": "I make tea too.",
-      "translationFa": "چای هم درست می‌کنم.",
+      "textEn": "I make tea.",
+      "translationFa": "چای درست می‌کنم.",
       "audioRequired": true,
-      "speechTargetEn": "I make tea too.",
+      "speechTargetEn": "I make tea.",
       "acceptedSpeechEn": [
-        "I make tea too."
+        "I make tea."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -308,7 +308,7 @@
       "promptFa": "و چای؟",
       "config": {
         "optionsEn": [
-          "I make tea too.",
+          "I make tea.",
           "I make coffee.",
           "People like coffee."
         ],
@@ -319,7 +319,7 @@
             "این جواب بخش اول است.",
             "این جمله نامربوط است."
           ],
-          "correctFa": "چای هم درست می‌کنم."
+          "correctFa": "چای درست می‌کنم."
         }
       },
       "metadata": {
@@ -331,12 +331,12 @@
       "activityKey": "A06",
       "type": "speak",
       "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
-      "promptFa": "liam هستی. بگو: چای هم درست می‌کنم.",
+      "promptFa": "liam هستی. بگو: چای درست می‌کنم.",
       "config": {
         "mode": "retrieval",
-        "textEn": "I make tea too.",
+        "textEn": "I make tea.",
         "acceptedAnswersEn": [
-          "I make tea too."
+          "I make tea."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,
