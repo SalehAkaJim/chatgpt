@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0063",
+  "sortOrder": 63,
+  "levelKey": "A1",
+  "lessonSourceHash": "784d5723bd850b0e4d19cdda40536687cf557eff0d833fc79278894270015393",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0063-LOOK",
+      "form": "A happy look",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-LOOK-01",
+      "lemma": "look",
+      "role": "target",
+      "referenceKey": "EN-REF-CEC6E367709B460985A7",
+      "spokenPriority": {
+        "lemma": "look",
+        "spokenRank": 70,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "L UH1 K",
+        "arpabet": [
+          "L UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "a happy look",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0063"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0063-LOOK"
+      ],
+      "lexicalLemmas": [
+        "look"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a happy look",
+        "rationale": "Bounded noun-sense target phrase for facial expression."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "bd37aed3666945589fd584a4899c468200d2aae90b179b69868a86b65d135e4f"
+}

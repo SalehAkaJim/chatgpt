@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0066",
+  "sortOrder": 66,
+  "levelKey": "A1",
+  "lessonSourceHash": "596230bc8ce6df8705e62a4c11803d84b741af0fbfd1daa2645c3d24d559013e",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0066-ALWAYS",
+      "form": "I always read",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-ALWAYS-01",
+      "lemma": "always",
+      "role": "target",
+      "referenceKey": "EN-REF-D0D4EFB891F79DAA0D6A",
+      "spokenPriority": {
+        "lemma": "always",
+        "spokenRank": 146,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AO1 L W EY2 Z",
+        "arpabet": [
+          "AO1 L W EY2 Z",
+          "AO1 L W IY0 Z"
+        ],
+        "stressPattern": "12"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i always read",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0066"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0066-ALWAYS"
+      ],
+      "lexicalLemmas": [
+        "always"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i always read",
+        "rationale": "Exact learner frequency-adverb target phrase."
+      }
+    },
+    {
+      "query": "say i always read",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0066"
+      ],
+      "lexicalLemmas": [
+        "always"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i always read",
+        "rationale": "Exact turn-derived prompt collocation for the first model."
+      }
+    },
+    {
+      "query": "say i always read here",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0066"
+      ],
+      "lexicalLemmas": [
+        "always"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i always read here",
+        "rationale": "Exact turn-derived prompt collocation for the changed context."
+      }
+    },
+    {
+      "query": "i always read here",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0066"
+      ],
+      "lexicalLemmas": [
+        "always"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i always read here",
+        "rationale": "Changed-context learner target phrase preserving the same frequency sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "a94b1ffd00f38e875bc413e6c8ed410d566235813d0c0326e167b648256d861f"
+}

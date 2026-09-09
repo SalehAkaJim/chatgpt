@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0063",
+  "levelKey": "A1",
+  "sortOrder": 63,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0063: target word EN-LEX-LOOK-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-LOOK-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "look",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-CEC6E367709B460985A7",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-CEC6E367709B460985A7",
+        "EN-REF-F4E0EC7F0FF27F209AAA"
+      ],
+      "referenceTranslationsFa": [
+        "تعبیر چهره",
+        "نگاه"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-CEC6E367709B460985A7",
+        "translationFa": "تعبیر چهره",
+        "definitionEn": "the feelings expressed on a person's face",
+        "senseId": "f6e9abfd-d820-5db7-8474-004e5e7c9342",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "784d5723bd850b0e4d19cdda40536687cf557eff0d833fc79278894270015393"
+}

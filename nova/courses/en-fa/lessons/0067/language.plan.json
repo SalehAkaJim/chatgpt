@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0067",
+  "sortOrder": 67,
+  "levelKey": "A1",
+  "lessonSourceHash": "cd0582df839e558f5547b36c7078a33b756830b17996c0aac80e1920628b5805",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0067-FIND",
+      "form": "I find Iris here",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-FIND-01",
+      "lemma": "find",
+      "role": "target",
+      "referenceKey": "EN-REF-B0557BDAEBCC83C0BEEA",
+      "spokenPriority": {
+        "lemma": "find",
+        "spokenRank": 124,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "F AY1 N D",
+        "arpabet": [
+          "F AY1 N D"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i find iris here",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0067"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0067-FIND"
+      ],
+      "lexicalLemmas": [
+        "find"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i find iris here",
+        "rationale": "Exact learner encounter/find collocation in the first context."
+      }
+    },
+    {
+      "query": "say i find iris here",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0067"
+      ],
+      "lexicalLemmas": [
+        "find"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i find iris here",
+        "rationale": "Exact turn-derived prompt collocation in the first context."
+      }
+    },
+    {
+      "query": "say i find iris at",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0067"
+      ],
+      "lexicalLemmas": [
+        "find"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i find iris at",
+        "rationale": "Exact turn-derived target window in the changed-location prompt."
+      }
+    },
+    {
+      "query": "i find iris at",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0067"
+      ],
+      "lexicalLemmas": [
+        "find"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i find iris at",
+        "rationale": "Exact turn-derived target window in the changed-location learner response."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "36673265d0b877e145ab5fad8e57d93f748969488d32b36f0dd2d8a1b64c410d"
+}

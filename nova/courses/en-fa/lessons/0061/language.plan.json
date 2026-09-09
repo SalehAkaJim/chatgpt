@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0061",
+  "sortOrder": 61,
+  "levelKey": "A1",
+  "lessonSourceHash": "dd727a76cc16673cd15e9ede138c87fac69275216db2a44032bf70bef784a459",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0061-HOME",
+      "form": "My home",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-HOME-01",
+      "lemma": "home",
+      "role": "target",
+      "referenceKey": "EN-REF-AE18605505232625BC33",
+      "spokenPriority": {
+        "lemma": "home",
+        "spokenRank": 173,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "HH OW1 M",
+        "arpabet": [
+          "HH OW1 M"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "my home",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0061"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0061-HOME"
+      ],
+      "lexicalLemmas": [
+        "home"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "my home",
+        "rationale": "Exact bounded target phrase for the first learner response."
+      }
+    },
+    {
+      "query": "say my home",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0061"
+      ],
+      "lexicalLemmas": [
+        "home"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say my home",
+        "rationale": "Exact turn-derived prompt collocation containing the target."
+      }
+    },
+    {
+      "query": "is my home",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0061"
+      ],
+      "lexicalLemmas": [
+        "home"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is my home",
+        "rationale": "Exact turn-derived changed-context collocation containing the target."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "2df65baed053717a6259d15ced50baa291ee3e7227171d48e17c451a1816d2fa"
+}

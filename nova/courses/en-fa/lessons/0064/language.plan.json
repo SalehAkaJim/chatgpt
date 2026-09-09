@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0064",
+  "sortOrder": 64,
+  "levelKey": "A1",
+  "lessonSourceHash": "97025a68089e87c156309bb02043cce4bcbd41f0282d830eb482f6557cbcafec",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0064-USE",
+      "form": "I use this cup",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-USE-01",
+      "lemma": "use",
+      "role": "target",
+      "referenceKey": "EN-REF-C2EDF75499FF0145A82E",
+      "spokenPriority": {
+        "lemma": "use",
+        "spokenRank": 82,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "Y UW1 S",
+        "arpabet": [
+          "Y UW1 S",
+          "Y UW1 Z"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i use this cup",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0064"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0064-USE"
+      ],
+      "lexicalLemmas": [
+        "use"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i use this cup",
+        "rationale": "Exact learner target collocation for the selected service sense."
+      }
+    },
+    {
+      "query": "say i use this cup",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0064"
+      ],
+      "lexicalLemmas": [
+        "use"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i use this cup",
+        "rationale": "Exact turn-derived prompt collocation for the first model."
+      }
+    },
+    {
+      "query": "say i use this bag",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0064"
+      ],
+      "lexicalLemmas": [
+        "use"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i use this bag",
+        "rationale": "Exact turn-derived prompt collocation for the changed object."
+      }
+    },
+    {
+      "query": "i use this bag",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0064"
+      ],
+      "lexicalLemmas": [
+        "use"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i use this bag",
+        "rationale": "Changed-object learner target collocation preserving the same sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "9f1fb92cbf1896ca6efcfc7f6fce138c1ad77671ff0a28c8bf8d19e545819496"
+}

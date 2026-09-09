@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0062",
+  "sortOrder": 62,
+  "levelKey": "A1",
+  "lessonSourceHash": "afa81808877d9a735e456e6447a8b8b07a4669e146d9a51b7e403754d5e364ce",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0062-LONG",
+      "form": "A long day",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-LONG-01",
+      "lemma": "long",
+      "role": "target",
+      "referenceKey": "EN-REF-E61D9DF3C3BD1F428FCD",
+      "spokenPriority": {
+        "lemma": "long",
+        "spokenRank": 145,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "L AO1 NG",
+        "arpabet": [
+          "L AO1 NG"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "a long",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0062"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0062-LONG"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "say a long day",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0062"
+      ],
+      "lexicalLemmas": [
+        "long"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say a long day",
+        "rationale": "Exact turn-derived target collocation for the prompt model."
+      }
+    },
+    {
+      "query": "a long day",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0062"
+      ],
+      "lexicalLemmas": [
+        "long"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a long day",
+        "rationale": "Exact temporal target phrase."
+      }
+    },
+    {
+      "query": "is a long day",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0062"
+      ],
+      "lexicalLemmas": [
+        "long"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is a long day",
+        "rationale": "Exact turn-derived target collocation for the changed-context response."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "a21115001afed0376f77f6fa884e2099addd543cbdf76531934587d700d98c99"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0068",
+  "sortOrder": 68,
+  "levelKey": "A1",
+  "lessonSourceHash": "60425306ec337cb68ae28ac4172665c3b46ffab0b75ca1ea27e5f3ece954c35f",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0068-HIGH",
+      "form": "The price is high",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-HIGH-01",
+      "lemma": "high",
+      "role": "target",
+      "referenceKey": "EN-REF-6410B02A3BE2A57847DC",
+      "spokenPriority": {
+        "lemma": "high",
+        "spokenRank": 271,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "HH AY1",
+        "arpabet": [
+          "HH AY1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the price is high",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0068"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0068-HIGH"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "price is high",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0068"
+      ],
+      "lexicalLemmas": [
+        "high"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "price is high",
+        "rationale": "Exact turn-derived target collocation shared by both price contexts."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "5839ef17b3733491b330305965abd73ba68b7f01414207332dc790303972553d"
+}

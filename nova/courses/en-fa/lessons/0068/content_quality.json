@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0068",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "this price is high",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-09",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0068; not an independent human or learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "The price is high and This price is high are natural bounded degree/amount uses."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "بالا/زیاد preserves the greater-than-normal amount sense of high."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The target adjective remains stable while the demonstrative frame changes."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors contrast high with low and unrelated prior targets."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A menu-price scene gives a concrete reason to describe a high price."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "The target frame is short; price is the only contextual support noun."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "high repeats in two controlled be-frames."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "Final retrieval changes the noun phrase from the price to this price."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Cafe scene, amount sense and activities align."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "Model/editor review only; no learner test is claimed."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Only the bounded degree/amount sense of high is assessed.",
+      "Audio prosody is not reviewed before text gates pass."
+    ],
+    "resolvedFindings": [
+      "high matches the committed greater-than-normal degree/amount sense.",
+      "Persian meaning preserves the selected sense.",
+      "Cafe arc returns after six lessons with learner role rotated.",
+      "No new grammar mastery is claimed."
+    ],
+    "lessonKey": "EN-A1-L-0068",
+    "sourceHash": "60425306ec337cb68ae28ac4172665c3b46ffab0b75ca1ea27e5f3ece954c35f",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.4,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "60425306ec337cb68ae28ac4172665c3b46ffab0b75ca1ea27e5f3ece954c35f"
+}

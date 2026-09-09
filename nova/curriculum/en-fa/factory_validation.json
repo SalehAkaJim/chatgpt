@@ -64,9 +64,17 @@
     57,
     58,
     59,
-    60
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
   ],
-  "passedPrefixLength": 60,
+  "passedPrefixLength": 68,
   "status": "PASS",
   "lessonReports": [
     {
@@ -707,6 +715,96 @@
       "canonicalStatus": "PASS",
       "referenceStatus": "PASS",
       "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0061",
+      "sortOrder": 61,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0062",
+      "sortOrder": 62,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0062: target word EN-LEX-LONG-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0063",
+      "sortOrder": 63,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0063: target word EN-LEX-LOOK-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0064",
+      "sortOrder": 64,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0065",
+      "sortOrder": 65,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0065: target word EN-LEX-SAME-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0066",
+      "sortOrder": 66,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0067",
+      "sortOrder": 67,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0067: target word EN-LEX-FIND-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0068",
+      "sortOrder": 68,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0068: target word EN-LEX-HIGH-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
       "errors": []
     }
   ],
