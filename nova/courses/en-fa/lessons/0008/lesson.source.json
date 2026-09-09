@@ -5,39 +5,39 @@
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0008",
   "sortOrder": 8,
-  "titleEn": "Find the book",
-  "titleFa": "کتاب کجاست؟",
-  "descriptionFa": "برای برنامه کتابخوانی دوباره به مرکز محله آمده ای. آیریس دنبال یکی از وسایلش می گردد و تو کمکش می کنی.",
+  "titleEn": "Where's my book?",
+  "titleFa": "کتابم کجاست؟",
+  "descriptionFa": "نینا دوباره به مرکز محله آمده و این بار به آیریس کمک می کند کتابش را روی میز پیدا کند.",
   "primaryOutcomeKey": "A1-INTERACTION-LOCATE-OBJECT",
-  "outcomeFa": "می توانی بفهمی کسی دنبال چه وسیله ای است و بگویی آن وسیله روی میز است.",
-  "scenarioFa": "برای برنامه کتابخوانی دوباره به مرکز محله آمده ای. آیریس کتابش را پیدا نمی کند. جای کتاب را می گویی و بعد آن را به دستش می دهی. نقش تو نینا است.",
+  "outcomeFa": "زبان آموز می تواند بفهمد کسی دنبال چه وسیله ای است و بگوید آن وسیله روی میز است.",
+  "scenarioFa": "پیش از برنامه کتابخوانی، آیریس کتابش را پیدا نمی کند. نقش تو نینا است و جای کتاب را می گویی.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-NAME-OBJECT",
     "A1-INTERACTION-REQUEST-OBJECT"
   ],
   "curriculum": {
-    "startingKnowledge": "early_a1_after_greetings",
+    "startingKnowledge": "early_a1_objects_and_requests",
     "targetConstructions": [
       {
         "key": "EN-CONSTR-WHERES-MY",
         "form": "Where's my + item?",
-        "meaningFa": "پرسیدن جای وسیله خود؛ Where's کوتاه Where is است"
+        "meaningFa": "پرسیدن جای وسیله خود"
       },
       {
         "key": "EN-CONSTR-ON-THE-TABLE",
         "form": "It's on the table.",
-        "meaningFa": "گفتن جای وسیله روی میز مشخص"
+        "meaningFa": "گفتن جای وسیله روی میز"
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
+    "assessmentBoundary": "The Lesson teaches one fixed location phrase with a familiar object. Final retrieval measures same-session recall of that phrase, not general spatial-language ability.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
+      "intent": "Reuse book from the classroom and Here you go from the request Lesson inside a new lost-object situation."
     },
     "story": {
       "arcKey": "EN-A1-COMMUNITY",
-      "sceneKey": "EN-A1-SCENE-0008",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0008",
       "learnerRoleKey": "nina",
       "participants": [
         "nina",
@@ -50,46 +50,42 @@
         "EN-A1-L-0003"
       ],
       "settingFa": "میز پذیرش مرکز محله، پیش از برنامه کتابخوانی",
-      "storyBeatFa": "نینا این بار به آیریس برای پیدا کردن وسایل روی میز کمک می کند."
+      "storyBeatFa": "آیریس این بار از نینا برای پیدا کردن کتابش کمک می گیرد و نینا کتاب را روی میز پیدا می کند."
     },
     "reviewLinks": [
       {
         "lessonKey": "EN-A1-L-0006",
         "activityKeys": [
-          "A05"
+          "A04"
         ],
-        "learningDemand": "retrieval",
-        "note": "Distinguish book and pen inside a new location question."
+        "learningDemand": "transfer",
+        "note": "The book label from the desk Lesson is reused inside a location exchange."
       },
       {
         "lessonKey": "EN-A1-L-0007",
         "activityKeys": [
-          "A02"
+          "A05"
         ],
         "learningDemand": "transfer",
-        "note": "Reuse giving an item in a lost-object context."
+        "note": "Here you go is reused when Nina hands the found book to Iris."
       }
     ],
     "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-WHERE-01",
+      "lexicalKey": "EN-LEX-BOOK-01",
       "itemType": "word",
-      "displayForm": "where",
-      "translationFa": "کجا",
-      "role": "target",
+      "displayForm": "book",
+      "translationFa": "کتاب",
+      "role": "review",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "senseKey": "physical_book",
       "audioEligible": true,
-      "partOfSpeech": "adverb"
-    },
-    {
-      "lexicalKey": "EN-LEX-ON-01",
-      "itemType": "word",
-      "displayForm": "on",
-      "translationFa": "روی",
-      "role": "target",
-      "audioEligible": true,
-      "partOfSpeech": "preposition"
+      "metadata": {
+        "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185"
+      }
     },
     {
       "lexicalKey": "EN-LEX-TABLE-01",
@@ -97,103 +93,121 @@
       "displayForm": "table",
       "translationFa": "میز",
       "role": "target",
+      "lemma": "table",
+      "partOfSpeech": "noun",
+      "senseKey": "furniture_table",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "referenceKey": "EN-REF-DB96FA960706CF5AD234"
+      }
     },
     {
-      "lexicalKey": "EN-LEX-BOOK-01",
-      "itemType": "word",
-      "displayForm": "book",
-      "translationFa": "کتاب",
-      "role": "review",
+      "lexicalKey": "EN-LEX-WHERES-MY-01",
+      "itemType": "formula",
+      "displayForm": "Where's my ...?",
+      "translationFa": "... من کجاست؟",
+      "role": "target",
+      "lemma": "where's my",
+      "partOfSpeech": "formula",
+      "senseKey": "ask_own_item_location",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "source": "nova_authored_location_formula"
+      }
     },
     {
-      "lexicalKey": "EN-LEX-PEN-01",
-      "itemType": "word",
-      "displayForm": "pen",
-      "translationFa": "خودکار",
-      "role": "review",
+      "lexicalKey": "EN-LEX-ON-THE-TABLE-01",
+      "itemType": "formula",
+      "displayForm": "It's on the table.",
+      "translationFa": "روی میز است.",
+      "role": "target",
+      "lemma": "it's on the table",
+      "partOfSpeech": "formula",
+      "senseKey": "location_on_table",
       "audioEligible": true,
-      "partOfSpeech": "noun"
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "itemType": "word",
-      "displayForm": "thanks",
-      "translationFa": "ممنون",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "interjection"
+      "metadata": {
+        "source": "nova_authored_location_formula"
+      }
     },
     {
       "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
       "itemType": "formula",
-      "displayForm": "here you go",
-      "translationFa": "بفرما؛ هنگام دادن چیزی",
+      "displayForm": "Here you go.",
+      "translationFa": "بفرما.",
       "role": "review",
-      "audioEligible": true
+      "lemma": "here you go",
+      "partOfSpeech": "formula",
+      "senseKey": "giving_object",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_transaction_formula"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-THANKS-FORMULA-01",
+      "itemType": "formula",
+      "displayForm": "Thanks!",
+      "translationFa": "ممنون!",
+      "role": "review",
+      "lemma": "thanks",
+      "partOfSpeech": "formula",
+      "senseKey": "casual_thanks",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_social_formula"
+      }
     }
   ],
   "turns": [
     {
       "turnKey": "T01",
       "role": "character",
+      "characterKey": "iris",
       "textEn": "Where's my book?",
       "translationFa": "کتابم کجاست؟",
-      "audioRequired": true,
-      "characterKey": "iris"
+      "audioRequired": true
     },
     {
       "turnKey": "T02",
       "role": "learner",
+      "characterKey": "nina",
       "textEn": "It's on the table.",
-      "translationFa": "روی میزه.",
-      "audioRequired": true,
+      "translationFa": "روی میز است.",
       "speechTargetEn": "It's on the table.",
       "acceptedSpeechEn": [
         "It's on the table."
       ],
-      "characterKey": "nina"
+      "audioRequired": true
     },
     {
       "turnKey": "T03",
       "role": "character",
-      "textEn": "Thanks, Nina!",
-      "translationFa": "ممنون نینا!",
-      "audioRequired": true,
-      "characterKey": "iris"
+      "characterKey": "iris",
+      "textEn": "Thanks!",
+      "translationFa": "ممنون!",
+      "audioRequired": true
     },
     {
       "turnKey": "T04",
       "role": "learner",
+      "characterKey": "nina",
       "textEn": "Here you go.",
       "translationFa": "بفرما.",
-      "audioRequired": true,
       "speechTargetEn": "Here you go.",
       "acceptedSpeechEn": [
         "Here you go."
       ],
-      "characterKey": "nina"
+      "audioRequired": true
     },
     {
       "turnKey": "T05",
-      "role": "character",
-      "textEn": "Where's my pen?",
-      "translationFa": "خودکارم کجاست؟",
-      "audioRequired": true,
-      "characterKey": "iris"
-    },
-    {
-      "turnKey": "T06",
       "role": "learner",
       "characterKey": "nina",
-      "textEn": "Where's my pen?",
-      "translationFa": "خودکارم کجاست؟",
-      "speechTargetEn": "Where's my pen?",
+      "textEn": "It's on the table.",
+      "translationFa": "روی میز است.",
+      "speechTargetEn": "It's on the table.",
       "acceptedSpeechEn": [
-        "Where's my pen?"
+        "It's on the table."
       ],
       "audioRequired": true,
       "metadata": {
@@ -203,21 +217,22 @@
   ],
   "activities": [
     {
+      "activityKey": "A01",
       "type": "lexical_teach",
-      "instructionFa": "معنی و صدای این کلمه ها را یاد بگیر.",
+      "instructionFa": "کلمه میز و دو الگوی مکانی را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-WHERE-01",
-          "EN-LEX-ON-01",
-          "EN-LEX-TABLE-01"
+          "EN-LEX-TABLE-01",
+          "EN-LEX-WHERES-MY-01",
+          "EN-LEX-ON-THE-TABLE-01"
         ],
-        "explanationFa": "Where's my book? یعنی کتابم کجاست؟ my اینجا هم مثل My name is یعنی مال من. Where's کوتاه شده Where is است. It's on the table یعنی روی میزه؛ درباره همان میز مشخص حرف می زنیم."
-      },
-      "activityKey": "A01"
+        "explanationFa": "table یعنی میز. Where's my ...? برای پرسیدن جای وسیله خودت است و It's on the table. می گوید وسیله روی میز قرار دارد."
+      }
     },
     {
+      "activityKey": "A02",
       "type": "dialogue",
-      "instructionFa": "حرف آیریس را گوش کن و پاسخ نینا را با صدای بلند بگو.",
+      "instructionFa": "به آیریس گوش کن و جواب نینا را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -242,45 +257,19 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      },
-      "activityKey": "A02"
-    },
-    {
-      "type": "fill_blank",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
-      "config": {
-        "sentenceEn": "Where's my ___?",
-        "optionsEn": [
-          "pen",
-          "book",
-          "table"
-        ],
-        "answerIndex": 1,
-        "feedback": {
-          "optionsFa": [
-            "pen یعنی خودکار؛ در این موقعیت کتابت گم شده است.",
-            "book یعنی کتاب؛ Where's my book جای کتابت را می پرسد.",
-            "table یعنی میز؛ دنبال کتاب هستی، نه میز."
-          ],
-          "correctFa": "book یعنی کتاب؛ Where's my book جای کتابت را می پرسد."
-        }
-      },
-      "activityKey": "A03",
-      "promptFa": "کتابت را پیدا نمی کنی. سوال را کامل کن.",
-      "metadata": {
-        "evidenceKind": "recognition_or_selection"
       }
     },
     {
+      "activityKey": "A03",
       "type": "sentence_order",
-      "instructionFa": "گوش کن و کلمه ها را به همان ترتیب بچین.",
+      "instructionFa": "جمله مکان را گوش کن و کلمه ها را مرتب کن.",
       "config": {
         "audioSourceTurnKey": "T02",
         "tokensEn": [
-          "on",
-          "the",
           "table.",
-          "It's"
+          "on",
+          "It's",
+          "the"
         ],
         "answerTokensEn": [
           "It's",
@@ -294,64 +283,86 @@
         "practiceOnly": true,
         "hideTokenSurfaceCues": true,
         "feedback": {
-          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: روی میزه.",
-          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: روی میزه."
+          "correctFa": "درست چیدی؛ on the table یعنی روی میز.",
+          "retryFa": "دوباره گوش کن؛ جمله با It's شروع می شود."
         }
       },
-      "activityKey": "A04",
       "metadata": {
         "evidenceKind": "supported_reconstruction"
       }
     },
     {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "پاسخ مکانی مناسب را انتخاب کن.",
+      "promptFa": "آیریس کتابش را می خواهد و تو می بینی کتاب روی میز است. چه می گویی؟",
+      "config": {
+        "optionsEn": [
+          "It's on the table.",
+          "I'm from Canada.",
+          "Can I have a pen, please?"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ این جمله جای کتاب را می گوید.",
+            "این جمله درباره اهل کجا بودن است.",
+            "این جمله یک درخواست برای خودکار است."
+          ],
+          "correctFa": "It's on the table یعنی روی میز است."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "recognition_or_selection",
+        "learningDemand": "transfer"
+      }
+    },
+    {
+      "activityKey": "A05",
       "type": "comprehension",
-      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "instructionFa": "به سوال آیریس گوش کن و وسیله گمشده را تشخیص بده.",
+      "promptFa": "آیریس دنبال چه چیزی می گردد؟",
       "config": {
         "sourceTurnKeys": [
-          "T05"
+          "T01"
         ],
         "options": [
-          "دنبال کتابش می گردد",
-          "دنبال خودکارش می گردد",
-          "اسم تو را می پرسد"
+          "کتاب",
+          "خودکار",
+          "میز"
         ],
-        "answerIndex": 1,
+        "answerIndex": 0,
         "transcriptAfterAttempt": true,
         "feedback": {
           "optionsFa": [
-            "این بار pen را می شنوی؛ سوال قبلی درباره book بود.",
-            "my pen یعنی خودکار من؛ آیریس جای خودکارش را می پرسد.",
-            "Where's my pen درباره جای وسیله است؛ سوال اسم نیست."
+            "درست است؛ آیریس می گوید my book.",
+            "pen در این سوال شنیده نمی شود.",
+            "table جای وسیله است، نه وسیله ای که آیریس دنبالش می گردد."
           ],
-          "correctFa": "my pen یعنی خودکار من؛ آیریس جای خودکارش را می پرسد."
+          "correctFa": "book یعنی کتاب."
         }
       },
-      "promptFa": "کمی بعد آیریس چه چیزی می پرسد؟",
       "metadata": {
-        "learningDemand": "retrieval",
-        "purpose": "New listening source changes the missing object without showing its transcript.",
         "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A05"
+      }
     },
     {
       "activityKey": "A06",
       "type": "speak",
-      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
-      "promptFa": "نینا هستی. این بار خودکارت را پیدا نمی کنی. از آیریس بپرس کجاست.",
+      "instructionFa": "جواب انگلیسی را نمی بینی. جای کتاب را خودت بگو یا بنویس.",
+      "promptFa": "نینا هستی. کتاب آیریس را روی میز می بینی. بگو کتاب روی میز است.",
       "config": {
         "mode": "retrieval",
-        "textEn": "Where's my pen?",
+        "textEn": "It's on the table.",
         "acceptedAnswersEn": [
-          "Where's my pen?",
-          "Where is my pen?"
+          "It's on the table."
         ],
-        "sourceTurnKey": "T06",
+        "sourceTurnKey": "T05",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "سوال درباره جای وسیله خودت است؛ نام خودکار را به کار ببر.",
+        "hintFa": "با It's شروع کن و بعد on the table را اضافه کن.",
         "feedback": {
-          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
-          "retryFa": "سوال درباره جای وسیله خودت است؛ نام خودکار را به کار ببر."
+          "correctFa": "الگوی مکان را بدون پاسخ آماده به کار بردی.",
+          "retryFa": "It's + on the table را به یاد بیاور."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -359,7 +370,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+        "assessmentLimit": "Same-session bounded recall of one taught location phrase; not general spatial-language proficiency."
       }
     }
   ],
@@ -368,10 +379,9 @@
   },
   "metadata": {
     "pilot": false,
-    "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "factory_test_location_transfer"
   }
 }
