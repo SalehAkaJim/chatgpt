@@ -35,68 +35,22 @@ jobs:
           import json
           from pathlib import Path
           from factory_wave import prefix_hash
-
           root=Path('.').resolve()
-
-          # Lesson 41: keep the same meaning, but prevent "too" from being swallowed
-          # into the lexical filler. tea remains an independently taught word.
-          p41=root/'nova/courses/en-fa/lessons/0041/lesson.source.json'
-          l41=json.loads(p41.read_text(encoding='utf-8'))
+          p41=root/'nova/courses/en-fa/lessons/0041/lesson.source.json'; l41=json.loads(p41.read_text(encoding='utf-8'))
           for fallback in l41['curriculum']['languageReference'].get('usageFallbacks', []):
               if fallback.get('query') == 'I make tea too':
-                  fallback['query']='I make tea'
-                  fallback['rationale']='Same-Lesson transfer for make with familiar independently taught language.'
-          t04=next(t for t in l41['turns'] if t['turnKey']=='T04')
-          t04['textEn']='I make tea.'
-          t04['translationFa']='چای درست می‌کنم.'
-          t04['speechTargetEn']='I make tea.'
-          t04['acceptedSpeechEn']=['I make tea.']
-          a05=next(a for a in l41['activities'] if a['activityKey']=='A05')
-          a05['config']['optionsEn'][0]='I make tea.'
-          a05['config']['feedback']['correctFa']='چای درست می‌کنم.'
-          a06=next(a for a in l41['activities'] if a['activityKey']=='A06')
-          a06['promptFa']='liam هستی. بگو: چای درست می‌کنم.'
-          a06['config']['textEn']='I make tea.'
-          a06['config']['acceptedAnswersEn']=['I make tea.']
+                  fallback['query']='I make tea'; fallback['rationale']='Same-Lesson transfer for make with familiar independently taught language.'
+          t04=next(t for t in l41['turns'] if t['turnKey']=='T04'); t04.update(textEn='I make tea.',translationFa='چای درست می‌کنم.',speechTargetEn='I make tea.',acceptedSpeechEn=['I make tea.'])
+          a05=next(a for a in l41['activities'] if a['activityKey']=='A05'); a05['config']['optionsEn'][0]='I make tea.'; a05['config']['feedback']['correctFa']='چای درست می‌کنم.'
+          a06=next(a for a in l41['activities'] if a['activityKey']=='A06'); a06['promptFa']='liam هستی. بگو: چای درست می‌کنم.'; a06['config']['textEn']='I make tea.'; a06['config']['acceptedAnswersEn']=['I make tea.']
           p41.write_text(json.dumps(l41,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
-          # Lesson 42: make the productive slot explicit so book / pen are counted
-          # as the two independently taught fillers rather than a four-word clause.
-          p42=root/'nova/courses/en-fa/lessons/0042/lesson.source.json'
-          l42=json.loads(p42.read_text(encoding='utf-8'))
-          c42=next(c for c in l42['curriculum']['targetConstructions'] if c['key']=='EN-CONSTR-0042-THINK')
-          c42['form']='I think there is + thing.'
-          c42['meaningFa']='گفتن یک حدس ساده درباره چیزی که فکر می‌کنی آنجاست'
-          p42.write_text(json.dumps(l42,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
+          p42=root/'nova/courses/en-fa/lessons/0042/lesson.source.json'; l42=json.loads(p42.read_text(encoding='utf-8')); c42=next(c for c in l42['curriculum']['targetConstructions'] if c['key']=='EN-CONSTR-0042-THINK'); c42['form']='I think there is + thing.'; c42['meaningFa']='گفتن یک حدس ساده درباره چیزی که فکر می‌کنی آنجاست'; p42.write_text(json.dumps(l42,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           wave_dir=root/'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052'
-          p49=wave_dir/'workers/w05/0049/lesson.source.json'
-          l49=json.loads(p49.read_text(encoding='utf-8'))
-          r=l49['curriculum']['languageReference']
-          r['grammarTargetKeys']=[]
-          r['noNewGrammarReason']='Lexical-focus integration: the provisional grammar reservation was no longer available in the live sequential curriculum spec, so this Lesson claims no new grammar.'
-          p49.write_text(json.dumps(l49,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
-          p52=wave_dir/'workers/w08/0052/lesson.source.json'
-          l52=json.loads(p52.read_text(encoding='utf-8'))
-          a=next(x for x in l52['activities'] if x['activityKey']=='A04')
-          a.clear()
-          a.update({'activityKey':'A04','type':'response_choice','instructionFa':'جواب اول را دوباره پیدا کن.','promptFa':'نورا می‌گوید: بگو یک سال. اوون چه جوابی می‌دهد؟','config':{'optionsEn':['One year.','Two years.','One day.'],'answerIndex':0,'feedback':{'optionsFa':['درست است.','این جواب بخش دوم گفت‌وگو است.','این جواب هدف این موقعیت نیست.'],'correctFa':'One year.'}},'metadata':{'learningDemand':'recognition','evidenceKind':'recognition_or_selection'}})
-          p52.write_text(json.dumps(l52,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
-          # Rebind the immutable wave base to the repaired canonical 1..44 bytes.
-          wave_path=wave_dir/'wave.json'
-          wave=json.loads(wave_path.read_text(encoding='utf-8'))
-          base=[int(x) for x in wave['baseGeneratedLessons']]
-          wave['basePrefixHash']=prefix_hash(root,wave['courseCode'],base)
-          wave['baseRepair']='generativity-debt-0041-0042'
-          wave_path.write_text(json.dumps(wave,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          p49=wave_dir/'workers/w05/0049/lesson.source.json'; l49=json.loads(p49.read_text(encoding='utf-8')); r=l49['curriculum']['languageReference']; r['grammarTargetKeys']=[]; r['noNewGrammarReason']='Lexical-focus integration: the provisional grammar reservation was no longer available in the live sequential curriculum spec, so this Lesson claims no new grammar.'; p49.write_text(json.dumps(l49,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          p52=wave_dir/'workers/w08/0052/lesson.source.json'; l52=json.loads(p52.read_text(encoding='utf-8')); a=next(x for x in l52['activities'] if x['activityKey']=='A04'); a.clear(); a.update({'activityKey':'A04','type':'response_choice','instructionFa':'جواب اول را دوباره پیدا کن.','promptFa':'نورا می‌گوید: بگو یک سال. اوون چه جوابی می‌دهد؟','config':{'optionsEn':['One year.','Two years.','One day.'],'answerIndex':0,'feedback':{'optionsFa':['درست است.','این جواب بخش دوم گفت‌وگو است.','این جواب هدف این موقعیت نیست.'],'correctFa':'One year.'}},'metadata':{'learningDemand':'recognition','evidenceKind':'recognition_or_selection'}}); p52.write_text(json.dumps(l52,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          wave_path=wave_dir/'wave.json'; wave=json.loads(wave_path.read_text(encoding='utf-8')); base=[int(x) for x in wave['baseGeneratedLessons']]; wave['basePrefixHash']=prefix_hash(root,wave['courseCode'],base); wave['baseRepair']='generativity-debt-0041-0042'; wave_path.write_text(json.dumps(wave,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
-
-          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py \
-            --repo-root . --config nova/curriculum/en-fa/factory.config.json \
-            --output /tmp/base-prefix-validation.json
-
+          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --output /tmp/base-prefix-validation.json
           git config user.name nova-production-bot
           git config user.email nova-production-bot@users.noreply.github.com
           git add nova/courses/en-fa/lessons/0041/lesson.source.json nova/courses/en-fa/lessons/0042/lesson.source.json nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/wave.json
@@ -106,10 +60,7 @@ jobs:
         run: |
           for n in 45 46 47 48 49 50 51 52; do
             worker=$(printf '%02d' $((n-44)))
-            python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py \
-              --repo-root . --config nova/curriculum/en-fa/factory.config.json \
-              --lesson "nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w${worker}/00${n}/lesson.source.json" \
-              --no-cache --output "/tmp/local-${n}.json"
+            python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson "nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w${worker}/00${n}/lesson.source.json" --no-cache --output "/tmp/local-${n}.json"
           done
 
       - name: Integrate sequentially with live spec reconciliation
@@ -120,10 +71,7 @@ jobs:
           import json,re,subprocess
           from pathlib import Path
           import factory_wave
-
-          root=Path('.').resolve()
-          wave=root/'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/wave.json'
-
+          root=Path('.').resolve(); wave=root/'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/wave.json'
           def verbose_run(cmd, *, cwd):
               p=subprocess.run(cmd,cwd=cwd,text=True,capture_output=True)
               if p.stdout: print(p.stdout,end='')
@@ -132,56 +80,43 @@ jobs:
               if 'validate_factory_prefix.py' in joined and '--output' in cmd:
                   out=Path(cmd[cmd.index('--output')+1])
                   if out.exists():
-                      payload=json.loads(out.read_text(encoding='utf-8'))
-                      print('PREFIX_STATUS',payload.get('status'),'ERRORS',json.dumps(payload.get('errors',[]),ensure_ascii=False))
-              if p.returncode:
-                  raise RuntimeError(f"Command failed ({p.returncode}): {joined}\nSTDOUT:\n{p.stdout}\nSTDERR:\n{p.stderr}")
+                      payload=json.loads(out.read_text(encoding='utf-8')); print('PREFIX_STATUS',payload.get('status'),'ERRORS',json.dumps(payload.get('errors',[]),ensure_ascii=False))
+              if p.returncode: raise RuntimeError(f"Command failed ({p.returncode}): {joined}\nSTDOUT:\n{p.stdout}\nSTDERR:\n{p.stderr}")
           factory_wave._run=verbose_run
-
-          manifest=json.loads(wave.read_text(encoding='utf-8'))
-          packets={int(p['sortOrder']):p for p in manifest['packets']}
+          manifest=json.loads(wave.read_text(encoding='utf-8')); packets={int(p['sortOrder']):p for p in manifest['packets']}
           for _ in range(8):
               try:
-                  factory_wave.integrate_wave(root,wave,cache_dir=root/'.cache/nova-validation')
-                  break
+                  factory_wave.integrate_wave(root,wave,cache_dir=root/'.cache/nova-validation'); break
               except RuntimeError as exc:
                   m=re.search(r'Draft (\d{4}).*?grammarTargetKey ([^\s]+) is not in the committed grammar candidate set',str(exc),re.S)
-                  if not m:
-                      raise
-                  order=int(m.group(1)); stale=m.group(2)
-                  path=root/packets[order]['stagingPath']
-                  lesson=json.loads(path.read_text(encoding='utf-8'))
-                  lr=lesson['curriculum']['languageReference']
-                  lr['grammarTargetKeys']=[k for k in lr.get('grammarTargetKeys',[]) if k!=stale]
-                  if not lr['grammarTargetKeys']:
-                      lr['noNewGrammarReason']='Lexical-focus integration: the provisional grammar reservation was no longer available in the live sequential curriculum spec, so this Lesson claims no new grammar.'
+                  if not m: raise
+                  order=int(m.group(1)); stale=m.group(2); path=root/packets[order]['stagingPath']; lesson=json.loads(path.read_text(encoding='utf-8')); lr=lesson['curriculum']['languageReference']; lr['grammarTargetKeys']=[k for k in lr.get('grammarTargetKeys',[]) if k!=stale]
+                  if not lr['grammarTargetKeys']: lr['noNewGrammarReason']='Lexical-focus integration: the provisional grammar reservation was no longer available in the live sequential curriculum spec, so this Lesson claims no new grammar.'
                   path.write_text(json.dumps(lesson,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          else:
-              raise RuntimeError('Wave integration did not converge')
+          else: raise RuntimeError('Wave integration did not converge')
           PY
 
       - name: Build exact text and pedagogy QA evidence
-        run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only
+        run: |
+          set +e
+          python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only
+          status=$?
+          set -e
+          if [ -f nova/_assistant/content-system-v1/text_build_report.json ]; then
+            cat nova/_assistant/content-system-v1/text_build_report.json
+          fi
+          exit $status
 
       - name: Require full-prefix PASS through Lesson 52
         run: |
-          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py \
-            --repo-root . --config nova/curriculum/en-fa/factory.config.json \
-            --output nova/curriculum/en-fa/factory_validation.json
+          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --output nova/curriculum/en-fa/factory_validation.json
           python - <<'PY'
           import json
-          p=json.load(open('nova/curriculum/en-fa/factory_validation.json',encoding='utf-8'))
-          assert p['status']=='PASS',p['errors']
-          assert p['passedPrefixLength']==52,p['passedPrefixLength']
+          p=json.load(open('nova/curriculum/en-fa/factory_validation.json',encoding='utf-8')); assert p['status']=='PASS',p['errors']; assert p['passedPrefixLength']==52,p['passedPrefixLength']
           PY
 
       - name: Publish repaired base and atomic wave only after PASS
         run: |
-          git add nova/courses/en-fa/lessons/0041 nova/courses/en-fa/lessons/0042 \
-                  nova/courses/en-fa/lessons/0045 nova/courses/en-fa/lessons/0046 \
-                  nova/courses/en-fa/lessons/0047 nova/courses/en-fa/lessons/0048 \
-                  nova/courses/en-fa/lessons/0049 nova/courses/en-fa/lessons/0050 \
-                  nova/courses/en-fa/lessons/0051 nova/courses/en-fa/lessons/0052 \
-                  nova/curriculum/en-fa nova/_assistant/content-system-v1/text_build_report.json
+          git add nova/courses/en-fa/lessons/0041 nova/courses/en-fa/lessons/0042 nova/courses/en-fa/lessons/0045 nova/courses/en-fa/lessons/0046 nova/courses/en-fa/lessons/0047 nova/courses/en-fa/lessons/0048 nova/courses/en-fa/lessons/0049 nova/courses/en-fa/lessons/0050 nova/courses/en-fa/lessons/0051 nova/courses/en-fa/lessons/0052 nova/curriculum/en-fa nova/_assistant/content-system-v1/text_build_report.json
           git commit -m 'Integrate validated Nova wave 45-52'
           git push origin HEAD:main
