@@ -5,28 +5,34 @@
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0009",
   "sortOrder": 9,
-  "titleEn": "First stop at the cafe",
-  "titleFa": "اولین سفارش در کافه",
-  "descriptionFa": "به یک کافه آمده ای. بن پشت پیشخوان است و می خواهی یک نوشیدنی سفارش بدهی.",
+  "titleEn": "Order a drink",
+  "titleFa": "یک نوشیدنی سفارش بده",
+  "descriptionFa": "آوا برای اولین بار به کافه می آید و با همان الگوی درخواست قبلی، این بار یک نوشیدنی سفارش می دهد.",
   "primaryOutcomeKey": "A1-INTERACTION-ORDER-DRINK",
-  "outcomeFa": "می توانی یک نوشیدنی ساده را مودبانه سفارش بدهی.",
-  "scenarioFa": "به یک کافه آمده ای. بن پشت پیشخوان است و می خواهی یک نوشیدنی سفارش بدهی. نقش تو آوا است.",
+  "outcomeFa": "زبان آموز می تواند سه نوشیدنی ساده را تشخیص دهد و یکی از آن ها را مودبانه درخواست کند.",
+  "scenarioFa": "پشت پیشخوان کافه ایستاده ای و بن سفارش می گیرد. نقش تو آوا است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-REQUEST-OBJECT",
     "A1-INTERACTION-ASK-REPEAT"
   ],
   "curriculum": {
-    "startingKnowledge": "early_a1_after_greetings",
-    "targetConstructions": [],
+    "startingKnowledge": "early_a1_requests",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-CAN-I-HAVE-DRINK",
+        "form": "Can I have + drink, please?",
+        "meaningFa": "سفارش مودبانه یک نوشیدنی با الگوی درخواست آشنا"
+      }
+    ],
     "supportLanguage": [],
-    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
+    "assessmentBoundary": "The service exchange is tightly bounded to three taught drink labels and one known request frame. Final retrieval measures same-session transfer to a different drink.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
+      "intent": "Transfer Can I have ... please? from requesting a pen to ordering a drink and bind three concrete drink senses to Reference data."
     },
     "story": {
       "arcKey": "EN-A1-CAFE",
-      "sceneKey": "EN-A1-SCENE-0009",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0009",
       "learnerRoleKey": "ava",
       "participants": [
         "ava",
@@ -39,26 +45,26 @@
       "relationshipState": "first_meeting",
       "continuesLessonKey": null,
       "dependsOnLessonKeys": [],
-      "settingFa": "پیشخوان کافه، اولین سفارش",
-      "storyBeatFa": "آوا برای اولین بار از بن نوشیدنی می گیرد."
+      "settingFa": "پیشخوان کافه، اولین سفارش آوا",
+      "storyBeatFa": "آوا برای اولین بار از بن نوشیدنی می گیرد و الگوی درخواست آشنا را در محیط تازه استفاده می کند."
     },
     "reviewLinks": [
       {
         "lessonKey": "EN-A1-L-0007",
         "activityKeys": [
-          "A02",
-          "A03"
+          "A04",
+          "A06"
         ],
         "learningDemand": "transfer",
-        "note": "Transfer a classroom-object request to a cafe and adapt the noun pattern."
+        "note": "The polite object-request frame is reused with drink nouns in a service setting."
       },
       {
         "lessonKey": "EN-A1-L-0004",
         "activityKeys": [
           "A05"
         ],
-        "learningDemand": "transfer",
-        "note": "Use a repair request with a service worker in a noisy cafe."
+        "learningDemand": "recognition",
+        "note": "The learner remains prepared to recognize the repair strategy in a noisier service context."
       }
     ],
     "pedagogyVersion": 2
@@ -70,8 +76,13 @@
       "displayForm": "water",
       "translationFa": "آب",
       "role": "target",
+      "lemma": "water",
+      "partOfSpeech": "noun",
+      "senseKey": "drink_water",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "referenceKey": "EN-REF-93033FDD55B1A504F831"
+      }
     },
     {
       "lexicalKey": "EN-LEX-TEA-01",
@@ -79,8 +90,13 @@
       "displayForm": "tea",
       "translationFa": "چای",
       "role": "target",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "senseKey": "tea_beverage",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "referenceKey": "EN-REF-C86BD7B12371D318284C"
+      }
     },
     {
       "lexicalKey": "EN-LEX-COFFEE-01",
@@ -88,98 +104,58 @@
       "displayForm": "coffee",
       "translationFa": "قهوه",
       "role": "target",
+      "lemma": "coffee",
+      "partOfSpeech": "noun",
+      "senseKey": "coffee_beverage",
       "audioEligible": true,
-      "partOfSpeech": "noun"
-    },
-    {
-      "lexicalKey": "EN-LEX-PLEASE-01",
-      "itemType": "word",
-      "displayForm": "please",
-      "translationFa": "لطفا",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "adverb"
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "itemType": "formula",
-      "displayForm": "here you go",
-      "translationFa": "بفرما؛ هنگام دادن چیزی",
-      "role": "review",
-      "audioEligible": true
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "itemType": "word",
-      "displayForm": "thanks",
-      "translationFa": "ممنون",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "interjection"
-    },
-    {
-      "lexicalKey": "EN-LEX-HELLO-01",
-      "itemType": "word",
-      "displayForm": "hello",
-      "translationFa": "سلام",
-      "role": "review",
-      "lemma": "hello",
-      "partOfSpeech": "interjection",
-      "senseKey": "greeting",
-      "audioEligible": true
+      "metadata": {
+        "referenceKey": "EN-REF-DF86C36C215439FDE741"
+      }
     }
   ],
   "turns": [
     {
       "turnKey": "T01",
       "role": "character",
-      "textEn": "Hello!",
+      "characterKey": "ben",
+      "textEn": "Hi!",
       "translationFa": "سلام!",
-      "audioRequired": true,
-      "characterKey": "ben"
+      "audioRequired": true
     },
     {
       "turnKey": "T02",
       "role": "learner",
-      "textEn": "Hello! Can I have water, please?",
-      "translationFa": "سلام! می شه لطفا آب بدی؟",
-      "audioRequired": true,
-      "speechTargetEn": "Hello! Can I have water, please?",
+      "characterKey": "ava",
+      "textEn": "Hi! Can I have tea, please?",
+      "translationFa": "سلام! می شه لطفا چای بدی؟",
+      "speechTargetEn": "Hi! Can I have tea, please?",
       "acceptedSpeechEn": [
-        "Hello! Can I have water, please?"
+        "Hi! Can I have tea, please?"
       ],
-      "characterKey": "ava"
+      "audioRequired": true
     },
     {
       "turnKey": "T03",
       "role": "character",
+      "characterKey": "ben",
       "textEn": "Here you go.",
       "translationFa": "بفرما.",
-      "audioRequired": true,
-      "characterKey": "ben"
+      "audioRequired": true
     },
     {
       "turnKey": "T04",
       "role": "learner",
+      "characterKey": "ava",
       "textEn": "Thanks!",
       "translationFa": "ممنون!",
-      "audioRequired": true,
       "speechTargetEn": "Thanks!",
       "acceptedSpeechEn": [
         "Thanks!"
       ],
-      "characterKey": "ava"
+      "audioRequired": true
     },
     {
       "turnKey": "T05",
-      "role": "character",
-      "textEn": "Coffee?",
-      "translationFa": "قهوه؟",
-      "audioRequired": true,
-      "characterKey": "ben"
-    },
-    {
-      "turnKey": "T06",
       "role": "learner",
       "characterKey": "ava",
       "textEn": "Can I have coffee, please?",
@@ -196,21 +172,22 @@
   ],
   "activities": [
     {
+      "activityKey": "A01",
       "type": "lexical_teach",
-      "instructionFa": "معنی و صدای این کلمه ها را یاد بگیر.",
+      "instructionFa": "سه نوشیدنی این درس را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
           "EN-LEX-WATER-01",
           "EN-LEX-TEA-01",
           "EN-LEX-COFFEE-01"
         ],
-        "explanationFa": "الگوی درخواست قبلی برای نوشیدنی هم به کار می رود: Can I have water, please? در این الگو نام نوشیدنی را بدون a می گوییم. در کافه a tea یا a coffee هم برای یک فنجان رایج است؛ این درس فعلا الگوی بدون a را تمرین می کند. Coffee? با آهنگ پرسشی یعنی قهوه می خواهی؟"
-      },
-      "activityKey": "A01"
+        "explanationFa": "water یعنی آب، tea یعنی چای و coffee یعنی قهوه. هر سه در این درس به معنی نوشیدنی هستند و با همان الگوی درخواست قبلی استفاده می شوند."
+      }
     },
     {
+      "activityKey": "A02",
       "type": "dialogue",
-      "instructionFa": "حرف بن را گوش کن و پاسخ آوا را با صدای بلند بگو.",
+      "instructionFa": "به بن گوش کن و جواب آوا را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -235,112 +212,139 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      },
-      "activityKey": "A02"
+      }
     },
     {
-      "type": "fill_blank",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "activityKey": "A03",
+      "type": "sentence_order",
+      "instructionFa": "سفارش قهوه را گوش کن و کلمه ها را مرتب کن.",
       "config": {
-        "sentenceEn": "Can I have ___, please?",
-        "optionsEn": [
-          "water",
-          "coffee",
-          "tea"
+        "audioSourceTurnKey": "T05",
+        "tokensEn": [
+          "please?",
+          "coffee,",
+          "Can",
+          "have",
+          "I"
         ],
-        "answerIndex": 2,
+        "answerTokensEn": [
+          "Can",
+          "I",
+          "have",
+          "coffee,",
+          "please?"
+        ],
+        "answerEn": "Can I have coffee, please?",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
         "feedback": {
-          "optionsFa": [
-            "water آب است؛ در این موقعیت چای می خواهی.",
-            "coffee قهوه است؛ نوشیدنی مورد نظرت چای است.",
-            "tea یعنی چای؛ با قرار دادن آن سفارش مورد نظرت ساخته می شود."
-          ],
-          "correctFa": "tea یعنی چای؛ با قرار دادن آن سفارش مورد نظرت ساخته می شود."
+          "correctFa": "درست چیدی؛ فقط نام وسیله قبلی با نوشیدنی عوض شده.",
+          "retryFa": "اول Can I have را پیدا کن و نام نوشیدنی را قبل از please بگذار."
         }
       },
-      "promptFa": "برای خودت چای می خواهی. سفارش را کامل کن.",
-      "activityKey": "A03",
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "برای سفارش قهوه پاسخ مناسب را انتخاب کن.",
+      "promptFa": "آوا قهوه می خواهد. کدام جمله درخواست مناسبی است؟",
+      "config": {
+        "optionsEn": [
+          "Can I have coffee, please?",
+          "It's on the table.",
+          "Where are you from?"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ این همان الگوی درخواست با coffee است.",
+            "این جمله جای چیزی را می گوید.",
+            "این سوال درباره اهل کجا بودن است."
+          ],
+          "correctFa": "الگوی درخواست قبلی حالا با یک نوشیدنی استفاده شده."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "recognition_or_selection",
+        "learningDemand": "transfer"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "comprehension",
+      "instructionFa": "به سفارش اول آوا گوش کن و نوشیدنی را تشخیص بده.",
+      "promptFa": "آوا در گفت و گوی اصلی چه نوشیدنی سفارش می دهد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T02"
+        ],
+        "options": [
+          "چای",
+          "قهوه",
+          "آب"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ tea یعنی چای.",
+            "coffee در تمرین انتقال آخر استفاده می شود، نه سفارش اصلی.",
+            "water یکی از واژه های درس است اما در این جمله شنیده نمی شود."
+          ],
+          "correctFa": "آوا می گوید Can I have tea, please?"
+        }
+      },
       "metadata": {
         "evidenceKind": "recognition_or_selection"
       }
     },
     {
-      "type": "comprehension",
-      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "activityKey": "A06",
+      "type": "response_choice",
+      "instructionFa": "معنی درست واژه را انتخاب کن.",
+      "promptFa": "اگر روی منو water ببینی، کدام نوشیدنی است؟",
       "config": {
-        "sourceTurnKeys": [
-          "T05"
-        ],
         "options": [
           "آب",
           "چای",
           "قهوه"
         ],
-        "answerIndex": 2,
-        "transcriptAfterAttempt": true,
-        "feedback": {
-          "optionsFa": [
-            "water آب است؛ بن Coffee? می گوید.",
-            "tea چای است؛ این بار قهوه پیشنهاد شده است.",
-            "Coffee? پیشنهاد قهوه است."
-          ],
-          "correctFa": "Coffee? پیشنهاد قهوه است."
-        }
-      },
-      "promptFa": "بن چه نوشیدنی ای پیشنهاد می کند؟",
-      "metadata": {
-        "learningDemand": "retrieval",
-        "purpose": "A separate offer is heard without a preceding visible transcript.",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A04"
-    },
-    {
-      "type": "response_choice",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
-      "config": {
-        "optionsEn": [
-          "Sorry?",
-          "Thanks!",
-          "See you!"
-        ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "Sorry? نشان می دهد حرف را نشنیده ای و تکرار می خواهی.",
-            "Thanks تشکر است؛ مشکل نشنیدن سوال را نشان نمی دهد.",
-            "See you خداحافظی است؛ تو هنوز می خواهی سفارش را ادامه بدهی."
+            "درست است؛ water در این درس به معنی آب نوشیدنی است.",
+            "tea یعنی چای.",
+            "coffee یعنی قهوه."
           ],
-          "correctFa": "Sorry? نشان می دهد حرف را نشنیده ای و تکرار می خواهی."
+          "correctFa": "water یعنی آب."
         }
       },
-      "promptFa": "بن چیزی می پرسد، ولی صدای دستگاه کافه نمی گذارد بشنوی. چه می گویی؟",
       "metadata": {
-        "learningDemand": "changed_context",
-        "purpose": "changed_context",
         "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A05"
+      }
     },
     {
-      "activityKey": "A06",
+      "activityKey": "A07",
       "type": "speak",
-      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
-      "promptFa": "آوا هستی. سفارش بعدی تو قهوه است. با الگوی درخواست مودبانه سفارش بده.",
+      "instructionFa": "جواب انگلیسی را نمی بینی. این بار نوشیدنی دیگری سفارش بده.",
+      "promptFa": "آوا هستی و این بار قهوه می خواهی. مودبانه آن را سفارش بده.",
       "config": {
         "mode": "retrieval",
         "textEn": "Can I have coffee, please?",
         "acceptedAnswersEn": [
-          "Can I have coffee, please?",
-          "Can I have a coffee, please?",
-          "Can I have some coffee, please?"
+          "Can I have coffee, please?"
         ],
-        "sourceTurnKey": "T06",
+        "sourceTurnKey": "T05",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "نام قهوه را در الگوی درخواست نوشیدنی قرار بده.",
+        "hintFa": "همان الگوی درخواست قبلی را با coffee استفاده کن.",
         "feedback": {
-          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
-          "retryFa": "نام قهوه را در الگوی درخواست نوشیدنی قرار بده."
+          "correctFa": "الگوی درخواست را با یک واژه نوشیدنی تازه انتقال دادی.",
+          "retryFa": "Can I have + coffee + please را به یاد بیاور."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -348,7 +352,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+        "assessmentLimit": "Same-session bounded transfer of one known request frame to a taught drink word; not open-ended cafe proficiency."
       }
     }
   ],
@@ -357,10 +361,9 @@
   },
   "metadata": {
     "pilot": false,
-    "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "factory_test_reference_linked_drinks"
   }
 }

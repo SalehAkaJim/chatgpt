@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0015",
+  "sortOrder": 15,
+  "levelKey": "A1",
+  "lessonSourceHash": "a34473d2eb0254bcf6125b7b114a166d43d5fd97a2570d1578f2640affa3eb51",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-HOW-MUCH-IS-IT",
+      "form": "How much is it?",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.425,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
+          "matchScore": 0.395
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "lemma": "tea",
+      "role": "review",
+      "referenceKey": "EN-REF-C86BD7B12371D318284C",
+      "spokenPriority": {
+        "lemma": "tea",
+        "spokenRank": 656,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T IY1",
+        "arpabet": [
+          "T IY1"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-FIVE-01",
+      "lemma": "five",
+      "role": "target",
+      "referenceKey": "EN-REF-383E3A44F37F70D1A279",
+      "spokenPriority": {
+        "lemma": "five",
+        "spokenRank": 116,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "F AY1 V",
+        "arpabet": [
+          "F AY1 V"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-DOLLAR-01",
+      "lemma": "dollar",
+      "role": "target",
+      "referenceKey": "EN-REF-BA1B384346FA3B2B141B",
+      "spokenPriority": {
+        "lemma": "dollar",
+        "spokenRank": 437,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "D AA1 L ER0",
+        "arpabet": [
+          "D AA1 L ER0",
+          "D AO1 L ER0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "how much is it",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0015"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-HOW-MUCH-IS-IT"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "how much is it",
+      "examples": [
+        {
+          "id": 2418,
+          "text": "How much is it?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "brauliobezerra"
+        },
+        {
+          "id": 11038804,
+          "text": "How much is it altogether?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 5004168,
+          "text": "How much is it worth?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "fallback": null
+    },
+    {
+      "query": "five dollars",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0015"
+      ],
+      "lexicalLemmas": [
+        "five"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "five dollars",
+      "examples": [
+        {
+          "id": 13897337,
+          "text": "Tom owes me five dollars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kylewii"
+        },
+        {
+          "id": 7588275,
+          "text": "You owe me five dollars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 5745274,
+          "text": "Do you have five dollars?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0015: construction EN-CONSTR-HOW-MUCH-IS-IT has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "c6ee166fd56d26418f27febecbe7514ba596ea5b3b0bf060726710f1951c56fd"
+}

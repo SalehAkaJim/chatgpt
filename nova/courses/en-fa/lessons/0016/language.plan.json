@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0016",
+  "sortOrder": 16,
+  "levelKey": "A1",
+  "lessonSourceHash": "2842cd0a01ce661b683ce7d16e525800f8a5949aaba0f8684893c1ce5aefc70f",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-WHAT-TIME",
+      "form": "What time?",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-239",
+        "grammaticalItem": "WH- QUESTION: What ...?",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.35,
+        "prerequisiteKeys": []
+      },
+      "alternatives": []
+    },
+    {
+      "constructionKey": "EN-CONSTR-AT-NUMBER",
+      "form": "At + number.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-SIX-01",
+      "lemma": "six",
+      "role": "target",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "six",
+        "spokenRank": 165,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "S IH1 K S",
+        "arpabet": [
+          "S IH1 K S"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-AT-TIME-01",
+      "lemma": "at",
+      "role": "target",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "at",
+        "spokenRank": 40,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AE1 T",
+        "arpabet": [
+          "AE1 T"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "it's at six",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0016"
+      ],
+      "lexicalLemmas": [
+        "at",
+        "six"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "at six",
+      "examples": [
+        {
+          "id": 12862679,
+          "text": "She returned at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 7246548,
+          "text": "Sami died at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 7205946,
+          "text": "Sami left at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        }
+      ],
+      "fallback": null
+    },
+    {
+      "query": "at six",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0016"
+      ],
+      "lexicalLemmas": [
+        "at",
+        "six"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "it's at six",
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0016: construction EN-CONSTR-WHAT-TIME has no confident CEFR-J grammar match",
+    "EN-A1-L-0016: target collocation 'at six' has no committed Tatoeba evidence or explicit usage fallback"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "94646f09cea134afe24d90963f84f92ba8d0f1e5751f624b9ad42978bfdb2efe"
+}

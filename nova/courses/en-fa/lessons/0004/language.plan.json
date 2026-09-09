@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0004",
+  "sortOrder": 4,
+  "levelKey": "A1",
+  "lessonSourceHash": "5bb7b00e8ddf1e93ba7438918d1f3b11aa60d2a077c4198d685a49e049da7ea9",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-ASK-REPEAT-PLEASE",
+      "form": "Can you repeat that, please?",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-REPEAT-01",
+      "lemma": "repeat",
+      "role": "target",
+      "referenceKey": "EN-REF-A000AB30C5C7E31A0F7A",
+      "spokenPriority": {
+        "lemma": "repeat",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R IH0 P IY1 T",
+        "arpabet": [
+          "R IH0 P IY1 T",
+          "R IY0 P IY1 T"
+        ],
+        "stressPattern": "01"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "can you repeat that please",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0004"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ASK-REPEAT-PLEASE"
+      ],
+      "lexicalLemmas": [
+        "repeat"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 1,
+      "evidenceQuery": "can you repeat that please",
+      "examples": [
+        {
+          "id": 3329632,
+          "text": "Can you repeat that, please?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "fallback": null
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "b143bf5bc6cfb5c88ca2fa678181c6eb3e7c9a12b4e02c67b348631b8f8ef9f8"
+}

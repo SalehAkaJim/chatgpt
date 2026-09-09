@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0005",
+  "sortOrder": 5,
+  "levelKey": "A1",
+  "lessonSourceHash": "5a377ec3f47e3e7c16956313d94f05dfa980d62805c4a4e9ff3328676cc0b718",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-ASK-COUNTRY",
+      "form": "Where are you from?",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-2-2",
+        "grammaticalItem": "Are you ...?",
+        "cefr": "A1",
+        "cefrJLevel": "A1.3",
+        "matchScore": 0.675,
+        "prerequisiteKeys": [
+          "CEFRJ-GRAM-4"
+        ]
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-2-1",
+          "grammaticalItem": "You are not",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-2-3",
+          "grammaticalItem": "Aren't you ...?",
+          "matchScore": 0.395
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-FROM-PLACE",
+      "form": "I'm from + place",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-1",
+        "grammaticalItem": "I am",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.8167,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-2",
+          "grammaticalItem": "Am I ...?",
+          "matchScore": 0.5667
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-1",
+          "grammaticalItem": "I am not",
+          "matchScore": 0.5167
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-3",
+          "grammaticalItem": "Am I not ...?",
+          "matchScore": 0.5167
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [],
+  "usageEvidence": [
+    {
+      "query": "where are you from",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ASK-COUNTRY"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "where are you from",
+      "examples": [
+        {
+          "id": 370703,
+          "text": "Where are you from?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "saeb"
+        },
+        {
+          "id": 13372868,
+          "text": "Where are you from, passenger?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Igider"
+        },
+        {
+          "id": 8567415,
+          "text": "\"Where are you from?\" \"Algiers.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        }
+      ],
+      "fallback": null
+    },
+    {
+      "query": "i'm from",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0005"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-FROM-PLACE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "5049ece1a6ec331bcc580f31cffbaa550c3fa42a65ba9780f38e15d4f2871f50"
+}

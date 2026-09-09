@@ -5,27 +5,38 @@
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0004",
   "sortOrder": 4,
-  "titleEn": "When you miss a question",
-  "titleFa": "وقتی حرفی را نمی شنوی",
-  "descriptionFa": "وارد کتابخانه می شوی. لیو، کتابدار، چیزی می پرسد ولی صدای در نمی گذارد درست بشنوی.",
+  "titleEn": "Please say that again",
+  "titleFa": "لطفا دوباره بگو",
+  "descriptionFa": "در ورودی کتابخانه صدای در نمی گذارد سوال لیو را خوب بشنوی و باید از او بخواهی دوباره بگوید.",
   "primaryOutcomeKey": "A1-INTERACTION-ASK-REPEAT",
-  "outcomeFa": "می توانی با یک درخواست کوتاه از طرف مقابل بخواهی حرفش را تکرار کند.",
-  "scenarioFa": "وارد کتابخانه می شوی. لیو، کتابدار، چیزی می پرسد ولی صدای در نمی گذارد درست بشنوی. نقش تو لیام است.",
+  "outcomeFa": "زبان آموز می تواند وقتی چیزی را نشنیده، با یک عبارت کوتاه و مودبانه درخواست تکرار کند.",
+  "scenarioFa": "وارد کتابخانه می شوی و لیو، کتابدار، سوالی می پرسد که درست نمی شنوی. نقش تو لیام است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-GREET-STATE-CLOSE"
   ],
   "curriculum": {
     "startingKnowledge": "early_a1_after_greetings",
-    "targetConstructions": [],
-    "supportLanguage": [],
-    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-ASK-REPEAT-PLEASE",
+        "form": "Can you repeat that, please?",
+        "meaningFa": "درخواست مودبانه برای تکرار حرف"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Sorry?",
+        "meaningFa": "ببخشید؟ وقتی چیزی را درست نشنیده ای"
+      }
+    ],
+    "assessmentBoundary": "The repair phrase is first practiced with a familiar question. Final retrieval measures same-session recall of the taught repair request, not spontaneous conversational repair ability.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
+      "intent": "Use a familiar wellbeing question as the missed message so the new learning demand stays focused on conversational repair."
     },
     "story": {
       "arcKey": "EN-A1-LIBRARY",
-      "sceneKey": "EN-A1-SCENE-0004",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0004",
       "learnerRoleKey": "liam",
       "participants": [
         "liam",
@@ -39,107 +50,86 @@
       "continuesLessonKey": null,
       "dependsOnLessonKeys": [],
       "settingFa": "ورودی کتابخانه، کنار در پر سر و صدا",
-      "storyBeatFa": "لیام از کتابدار می خواهد سوالش را تکرار کند."
+      "storyBeatFa": "لیام سوال لیو را نمی شنود، درخواست تکرار می کند و بعد به سوال پاسخ می دهد."
     },
     "reviewLinks": [
       {
         "lessonKey": "EN-A1-L-0003",
         "activityKeys": [
-          "A03"
+          "A05"
         ],
-        "learningDemand": "recognition",
-        "note": "Recognize the previously taught wellbeing question after a repair."
+        "learningDemand": "transfer",
+        "note": "The message being repaired is the wellbeing question from Lesson 3, so old language becomes context for the new repair strategy."
       }
     ],
     "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-SORRY-REPEAT-01",
+      "lexicalKey": "EN-LEX-REPEAT-01",
       "itemType": "word",
-      "displayForm": "sorry",
-      "translationFa": "ببخشید؟ برای درخواست تکرار",
+      "displayForm": "repeat",
+      "translationFa": "دوباره گفتن",
       "role": "target",
+      "lemma": "repeat",
+      "partOfSpeech": "verb",
+      "senseKey": "say_again",
       "audioEligible": true,
-      "partOfSpeech": "interjection"
-    },
-    {
-      "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
-      "itemType": "formula",
-      "displayForm": "how are you",
-      "translationFa": "حالت چطوره؟",
-      "role": "review",
-      "audioEligible": true
-    },
-    {
-      "lexicalKey": "EN-LEX-FINE-01",
-      "itemType": "word",
-      "displayForm": "fine",
-      "translationFa": "خوب",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "adjective"
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "itemType": "word",
-      "displayForm": "thanks",
-      "translationFa": "ممنون",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "interjection"
+      "metadata": {
+        "referenceKey": "EN-REF-A000AB30C5C7E31A0F7A"
+      }
     }
   ],
   "turns": [
     {
       "turnKey": "T01",
       "role": "character",
+      "characterKey": "leo",
       "textEn": "How are you?",
       "translationFa": "حالت چطوره؟",
-      "audioRequired": true,
-      "characterKey": "leo"
+      "audioRequired": true
     },
     {
       "turnKey": "T02",
       "role": "learner",
-      "textEn": "Sorry?",
-      "translationFa": "ببخشید؟",
-      "audioRequired": true,
-      "speechTargetEn": "Sorry?",
+      "characterKey": "liam",
+      "textEn": "Sorry? Can you repeat that, please?",
+      "translationFa": "ببخشید؟ می شه لطفا دوباره بگی؟",
+      "speechTargetEn": "Sorry? Can you repeat that, please?",
       "acceptedSpeechEn": [
-        "Sorry?"
+        "Sorry? Can you repeat that, please?"
       ],
-      "characterKey": "liam"
+      "audioRequired": true
     },
     {
       "turnKey": "T03",
       "role": "character",
+      "characterKey": "leo",
       "textEn": "How are you?",
       "translationFa": "حالت چطوره؟",
-      "audioRequired": true,
-      "characterKey": "leo"
+      "audioRequired": true
     },
     {
       "turnKey": "T04",
       "role": "learner",
+      "characterKey": "liam",
       "textEn": "I'm fine, thanks.",
       "translationFa": "خوبم، ممنون.",
-      "audioRequired": true,
       "speechTargetEn": "I'm fine, thanks.",
       "acceptedSpeechEn": [
         "I'm fine, thanks."
       ],
-      "characterKey": "liam"
+      "audioRequired": true
     },
     {
       "turnKey": "T05",
       "role": "learner",
       "characterKey": "liam",
-      "textEn": "Sorry?",
-      "translationFa": "ببخشید؟",
-      "speechTargetEn": "Sorry?",
+      "textEn": "Can you repeat that, please?",
+      "translationFa": "می شه لطفا دوباره بگی؟",
+      "speechTargetEn": "Can you repeat that, please?",
       "acceptedSpeechEn": [
-        "Sorry?"
+        "Can you repeat that, please?"
       ],
       "audioRequired": true,
       "metadata": {
@@ -149,19 +139,20 @@
   ],
   "activities": [
     {
+      "activityKey": "A01",
       "type": "lexical_teach",
-      "instructionFa": "معنی و صدای این کلمه ها را یاد بگیر.",
+      "instructionFa": "کلمه و عبارت اصلی درخواست تکرار را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-SORRY-REPEAT-01"
+          "EN-LEX-REPEAT-01"
         ],
-        "explanationFa": "وقتی چیزی را درست نمی شنوی، Sorry? را با آهنگ پرسشی می گویی تا طرف مقابل تکرار کند. اینجا از اشتباهی عذرخواهی نمی کنی."
-      },
-      "activityKey": "A01"
+        "explanationFa": "repeat یعنی چیزی را دوباره گفتن یا انجام دادن. در این موقعیت Can you repeat that, please? یعنی از طرف مقابل می خواهی همان حرف را دوباره بگوید."
+      }
     },
     {
+      "activityKey": "A02",
       "type": "dialogue",
-      "instructionFa": "حرف لیو را گوش کن و پاسخ لیام را با صدای بلند بگو.",
+      "instructionFa": "به لیو گوش کن و پاسخ لیام را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -186,84 +177,115 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      },
-      "activityKey": "A02"
+      }
     },
     {
-      "type": "comprehension",
-      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "activityKey": "A03",
+      "type": "sentence_order",
+      "instructionFa": "درخواست تکرار را گوش کن و کلمه ها را مرتب کن.",
       "config": {
-        "sourceTurnKeys": [
-          "T03"
+        "audioSourceTurnKey": "T05",
+        "tokensEn": [
+          "please?",
+          "repeat",
+          "that,",
+          "Can",
+          "you"
         ],
-        "options": [
-          "اسم تو را می پرسد",
-          "حالت را می پرسد",
-          "خداحافظی می کند"
+        "answerTokensEn": [
+          "Can",
+          "you",
+          "repeat",
+          "that,",
+          "please?"
         ],
-        "answerIndex": 1,
-        "transcriptAfterAttempt": true,
+        "answerEn": "Can you repeat that, please?",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
         "feedback": {
-          "optionsFa": [
-            "در سوال لیو name نیست؛ How are you درباره حال است.",
-            "لیو همان سوال احوالپرسی را تکرار می کند.",
-            "لیو سوالش را تکرار می کند؛ See you نمی گوید."
-          ],
-          "correctFa": "لیو همان سوال احوالپرسی را تکرار می کند."
+          "correctFa": "درست چیدی؛ این یک درخواست مودبانه برای تکرار است.",
+          "retryFa": "دوباره گوش کن؛ جمله با Can you شروع می شود."
         }
       },
-      "promptFa": "لیو بعد از درخواست تکرار چه چیزی می پرسد؟",
       "metadata": {
-        "learningDemand": "recognition",
-        "purpose": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A03"
+        "evidenceKind": "supported_reconstruction"
+      }
     },
     {
+      "activityKey": "A04",
       "type": "response_choice",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "instructionFa": "در موقعیت پر سر و صدا پاسخ مناسب را انتخاب کن.",
+      "promptFa": "حرف طرف مقابل را نشنیدی. چه می گویی؟",
       "config": {
         "optionsEn": [
-          "See you!",
-          "Sorry?",
-          "I'm fine, thanks."
+          "Can you repeat that, please?",
+          "What's your name?",
+          "See you!"
         ],
-        "answerIndex": 1,
+        "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "See you دیدار را تمام می کند و درخواست تکرار نیست.",
-            "Sorry? با آهنگ پرسشی از طرف مقابل می خواهد حرفش را تکرار کند.",
-            "هنوز حرف را نشنیده ای؛ پاسخ دادن درباره حالت مشکل شنیدن را حل نمی کند."
+            "درست است؛ این جمله درخواست می کند حرف قبلی تکرار شود.",
+            "این سوال درباره اسم است و مشکل شنیدن را حل نمی کند.",
+            "این عبارت برای خداحافظی است."
           ],
-          "correctFa": "Sorry? با آهنگ پرسشی از طرف مقابل می خواهد حرفش را تکرار کند."
+          "correctFa": "این همان repair phrase اصلی درس است."
         }
       },
-      "promptFa": "صدای اعلام کتابخانه را درست نمی شنوی. از کتابدار می خواهی حرفش را تکرار کند. چه می گویی؟",
       "metadata": {
-        "learningDemand": "changed_context",
-        "purpose": "Use a repeat request for an unheard announcement, not just the modeled greeting.",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A04"
+        "evidenceKind": "recognition_or_selection",
+        "learningDemand": "changed_context"
+      }
     },
     {
       "activityKey": "A05",
+      "type": "comprehension",
+      "instructionFa": "به دو جمله لیو توجه کن.",
+      "promptFa": "چرا لیو یک سوال را دو بار می گوید؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T03"
+        ],
+        "options": [
+          "چون لیام درخواست تکرار کرده",
+          "چون اسم لیام را فراموش کرده",
+          "چون می خواهد خداحافظی کند"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ درخواست لیام باعث می شود لیو همان سوال را دوباره بگوید.",
+            "در این مکالمه درباره اسم حرفی نیست.",
+            "این بخش هنوز وسط مکالمه است، نه پایان آن."
+          ],
+          "correctFa": "repair request باعث شد پیام قبلی تکرار شود."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
       "type": "speak",
-      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
-      "promptFa": "لیام هستی. این بار کتابدار چیزی درباره اسمت می پرسد، اما نمی شنوی. از او تکرار بخواه.",
+      "instructionFa": "جواب انگلیسی را نمی بینی. خودت درخواست را بگو یا بنویس.",
+      "promptFa": "لیام هستی و حرف کتابدار را نشنیدی. مودبانه بخواه دوباره بگوید.",
       "config": {
         "mode": "retrieval",
-        "textEn": "Sorry?",
+        "textEn": "Can you repeat that, please?",
         "acceptedAnswersEn": [
-          "Sorry?"
+          "Can you repeat that, please?"
         ],
         "sourceTurnKey": "T05",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "عبارت کوتاه را با آهنگ پرسشی بگو.",
+        "hintFa": "با Can you شروع کن و از کلمه repeat استفاده کن.",
         "feedback": {
-          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
-          "retryFa": "عبارت کوتاه را با آهنگ پرسشی بگو."
+          "correctFa": "درخواست تکرار را بدون دیدن پاسخ آماده ساختی.",
+          "retryFa": "Can you + repeat + that + please را به ترتیب به یاد بیاور."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -271,7 +293,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+        "assessmentLimit": "Same-session bounded recall of one taught repair phrase; not general conversational repair proficiency."
       }
     }
   ],
@@ -280,10 +302,9 @@
   },
   "metadata": {
     "pilot": false,
-    "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "factory_test_reference_linked"
   }
 }

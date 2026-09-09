@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0019",
+  "sortOrder": 19,
+  "levelKey": "A1",
+  "lessonSourceHash": "7ffe0fa694c41f99a4e52c0359fcde286b26d8247fb1da9ecf18c4bad80cf74b",
+  "enforceFromSortOrder": 25,
+  "enforced": false,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-CAN-YOU-HELP-ME",
+      "form": "Can you help me?",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-HELP-01",
+      "lemma": "help",
+      "role": "target",
+      "referenceKey": "EN-REF-76A0FAF42C7FB7906AA5",
+      "spokenPriority": {
+        "lemma": "help",
+        "spokenRank": 209,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "HH EH1 L P",
+        "arpabet": [
+          "HH EH1 L P"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "can you help me",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0019"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-CAN-YOU-HELP-ME"
+      ],
+      "lexicalLemmas": [
+        "help"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "can you help me",
+      "examples": [
+        {
+          "id": 434410,
+          "text": "Can you help me?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "lukaszpp"
+        },
+        {
+          "id": 12221216,
+          "text": "Miss, can you help me?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 12204390,
+          "text": "Mum, can you help me?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
+      "fallback": null
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "b07deb4eb60fa88ee8e3ea57a7aad4454de6614bffb75a2305d8f5088791f824"
+}

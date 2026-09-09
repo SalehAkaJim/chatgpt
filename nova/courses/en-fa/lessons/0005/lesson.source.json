@@ -7,10 +7,10 @@
   "sortOrder": 5,
   "titleEn": "Where are you from?",
   "titleFa": "اهل کجایی؟",
-  "descriptionFa": "به یک گروه پیاده روی پیوسته ای. پیش از حرکت، سارا سر صحبت را باز می کند تا با تو آشنا شود.",
+  "descriptionFa": "پیش از شروع پیاده روی گروهی، سارا و روبی با یک سوال ساده درباره اهل کجا بودن آشنا می شوند.",
   "primaryOutcomeKey": "A1-INTERACTION-COUNTRY",
-  "outcomeFa": "می توانی بگویی اهل کجایی و همین اطلاعات را درباره طرف مقابل بفهمی.",
-  "scenarioFa": "به یک گروه پیاده روی پیوسته ای. پیش از حرکت، سارا سر صحبت را باز می کند تا با تو آشنا شود. نقش تو روبی است.",
+  "outcomeFa": "زبان آموز می تواند بپرسد کسی اهل کجاست و با یک جمله کوتاه بگوید خودش اهل کجاست.",
+  "scenarioFa": "به یک گروه پیاده روی در پارک پیوسته ای. سارا پیش از حرکت سر صحبت را باز می کند. نقش تو روبی است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-FIRST-MEETING",
     "A1-INTERACTION-ASK-REPEAT"
@@ -19,25 +19,30 @@
     "startingKnowledge": "early_a1_after_greetings",
     "targetConstructions": [
       {
-        "key": "EN-CONSTR-FROM-COUNTRY",
-        "form": "I'm from + country",
-        "meaningFa": "گفتن اهل کدام کشور بودن"
-      },
-      {
         "key": "EN-CONSTR-ASK-COUNTRY",
         "form": "Where are you from?",
         "meaningFa": "پرسیدن اهل کجا بودن"
+      },
+      {
+        "key": "EN-CONSTR-FROM-PLACE",
+        "form": "I'm from + place",
+        "meaningFa": "گفتن اهل کجا بودن"
       }
     ],
-    "supportLanguage": [],
-    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
+    "supportLanguage": [
+      {
+        "form": "Nice!",
+        "meaningFa": "چه خوب!"
+      }
+    ],
+    "assessmentBoundary": "The place names are fixed examples, not a test of geography. Final retrieval measures same-session recall of the taught where-from exchange with one model place.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
+      "intent": "Reuse greeting behavior from earlier Lessons, then shift the information question from name/wellbeing to origin."
     },
     "story": {
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sceneKey": "EN-A1-SCENE-0005",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0005",
       "learnerRoleKey": "ruby",
       "participants": [
         "ruby",
@@ -50,128 +55,100 @@
       "relationshipState": "first_meeting",
       "continuesLessonKey": null,
       "dependsOnLessonKeys": [],
-      "settingFa": "پارک، پیش از شروع پیاده روی گروهی",
-      "storyBeatFa": "روبی و سارا درباره اهل کجا بودن حرف می زنند."
+      "settingFa": "پارک، نقطه شروع پیاده روی گروهی",
+      "storyBeatFa": "سارا و روبی قبل از حرکت درباره اهل کجا بودن حرف می زنند."
     },
     "reviewLinks": [
       {
         "lessonKey": "EN-A1-L-0001",
         "activityKeys": [
-          "A06"
+          "A04"
         ],
         "learningDemand": "recognition",
-        "note": "Distinguish a country question from a name question."
+        "note": "The learner distinguishes a where-from question from the earlier name question."
       },
       {
         "lessonKey": "EN-A1-L-0003",
         "activityKeys": [
-          "A06"
+          "A05"
         ],
         "learningDemand": "recognition",
-        "note": "Distinguish country from wellbeing."
+        "note": "The learner distinguishes origin information from the earlier wellbeing exchange."
       }
     ],
     "pedagogyVersion": 2
   },
-  "lexicalItems": [
-    {
-      "lexicalKey": "EN-LEX-FROM-01",
-      "itemType": "word",
-      "displayForm": "from",
-      "translationFa": "از؛ برای گفتن اهل کجا بودن",
-      "role": "target",
-      "audioEligible": true,
-      "partOfSpeech": "preposition"
-    },
-    {
-      "lexicalKey": "EN-LEX-IRAN-01",
-      "itemType": "word",
-      "displayForm": "Iran",
-      "translationFa": "ایران",
-      "role": "target",
-      "audioEligible": true,
-      "partOfSpeech": "proper noun"
-    },
-    {
-      "lexicalKey": "EN-LEX-CANADA-01",
-      "itemType": "word",
-      "displayForm": "Canada",
-      "translationFa": "کانادا",
-      "role": "target",
-      "audioEligible": true,
-      "partOfSpeech": "proper noun"
-    },
-    {
-      "lexicalKey": "EN-LEX-NAME-01",
-      "itemType": "word",
-      "displayForm": "name",
-      "translationFa": "اسم",
-      "role": "review",
-      "lemma": "name",
-      "partOfSpeech": "noun",
-      "senseKey": "personal_name",
-      "audioEligible": true
-    },
-    {
-      "lexicalKey": "EN-LEX-NICE-01",
-      "itemType": "word",
-      "displayForm": "nice",
-      "translationFa": "خوب؛ برای واکنش دوستانه",
-      "role": "support",
-      "audioEligible": true,
-      "partOfSpeech": "adjective"
-    }
-  ],
+  "lexicalItems": [],
   "turns": [
     {
       "turnKey": "T01",
       "role": "character",
-      "textEn": "Where are you from?",
-      "translationFa": "اهل کجایی؟",
-      "audioRequired": true,
-      "characterKey": "sara"
+      "characterKey": "sara",
+      "textEn": "Hi! I'm Sara.",
+      "translationFa": "سلام! من سارا هستم.",
+      "audioRequired": true
     },
     {
       "turnKey": "T02",
       "role": "learner",
-      "textEn": "I'm from Iran.",
-      "translationFa": "اهل ایرانم.",
-      "audioRequired": true,
-      "speechTargetEn": "I'm from Iran.",
+      "characterKey": "ruby",
+      "textEn": "Hi! I'm Ruby.",
+      "translationFa": "سلام! من روبی هستم.",
+      "speechTargetEn": "Hi! I'm Ruby.",
       "acceptedSpeechEn": [
-        "I'm from Iran."
+        "Hi! I'm Ruby."
       ],
-      "characterKey": "ruby"
+      "audioRequired": true
     },
     {
       "turnKey": "T03",
       "role": "character",
-      "textEn": "I'm from Canada.",
-      "translationFa": "من اهل کانادا هستم.",
-      "audioRequired": true,
-      "characterKey": "sara"
+      "characterKey": "sara",
+      "textEn": "Where are you from?",
+      "translationFa": "اهل کجایی؟",
+      "audioRequired": true
     },
     {
       "turnKey": "T04",
       "role": "learner",
+      "characterKey": "ruby",
+      "textEn": "I'm from Iran.",
+      "translationFa": "اهل ایرانم.",
+      "speechTargetEn": "I'm from Iran.",
+      "acceptedSpeechEn": [
+        "I'm from Iran."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T05",
+      "role": "character",
+      "characterKey": "sara",
+      "textEn": "I'm from Canada.",
+      "translationFa": "من اهل کانادا هستم.",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T06",
+      "role": "learner",
+      "characterKey": "ruby",
       "textEn": "Nice!",
       "translationFa": "چه خوب!",
-      "audioRequired": true,
       "speechTargetEn": "Nice!",
       "acceptedSpeechEn": [
         "Nice!"
       ],
-      "characterKey": "ruby"
+      "audioRequired": true
     },
     {
-      "turnKey": "T05",
+      "turnKey": "T07",
       "role": "learner",
       "characterKey": "ruby",
-      "textEn": "Where are you from?",
-      "translationFa": "اهل کجایی؟",
-      "speechTargetEn": "Where are you from?",
+      "textEn": "I'm from Iran. Where are you from?",
+      "translationFa": "اهل ایرانم. تو اهل کجایی؟",
+      "speechTargetEn": "I'm from Iran. Where are you from?",
       "acceptedSpeechEn": [
-        "Where are you from?"
+        "I'm from Iran. Where are you from?"
       ],
       "audioRequired": true,
       "metadata": {
@@ -181,22 +158,9 @@
   ],
   "activities": [
     {
-      "type": "lexical_teach",
-      "instructionFa": "معنی و صدای این کلمه ها را یاد بگیر.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-FROM-01",
-          "EN-LEX-IRAN-01",
-          "EN-LEX-CANADA-01",
-          "EN-LEX-NICE-01"
-        ],
-        "explanationFa": "Where are you from? یعنی اهل کجایی؟ در I'm from Iran بعد از from نام کشور می آید. در این داستان روبی اهل ایران است. Nice! فقط یک واکنش دوستانه است."
-      },
-      "activityKey": "A01"
-    },
-    {
+      "activityKey": "A01",
       "type": "dialogue",
-      "instructionFa": "حرف سارا را گوش کن و پاسخ روبی را با صدای بلند بگو.",
+      "instructionFa": "به سارا گوش کن و جواب روبی را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -221,137 +185,137 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      },
-      "activityKey": "A02"
+      }
     },
     {
+      "activityKey": "A03",
       "type": "sentence_order",
-      "instructionFa": "گوش کن و کلمه ها را به همان ترتیب بچین.",
+      "instructionFa": "سوال را گوش کن و کلمه ها را مرتب کن.",
       "config": {
-        "audioSourceTurnKey": "T02",
+        "audioSourceTurnKey": "T03",
         "tokensEn": [
-          "from",
-          "Iran.",
-          "I'm"
+          "from?",
+          "you",
+          "Where",
+          "are"
         ],
         "answerTokensEn": [
-          "I'm",
-          "from",
-          "Iran."
+          "Where",
+          "are",
+          "you",
+          "from?"
         ],
-        "answerEn": "I'm from Iran.",
+        "answerEn": "Where are you from?",
         "showAnswerTextBeforeAttempt": false,
         "allowAudioReplay": true,
         "practiceOnly": true,
         "hideTokenSurfaceCues": true,
         "feedback": {
-          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: اهل ایرانم.",
-          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: اهل ایرانم."
+          "correctFa": "درست چیدی؛ این سوال درباره اهل کجا بودن است.",
+          "retryFa": "دوباره گوش کن؛ سوال با Where شروع می شود."
         }
       },
-      "activityKey": "A03",
       "metadata": {
         "evidenceKind": "supported_reconstruction"
       }
     },
     {
+      "activityKey": "A04",
       "type": "response_choice",
-      "instructionFa": "به موقعیت توجه کن و پاسخ مناسب را انتخاب کن.",
+      "instructionFa": "پاسخ مناسب را انتخاب کن.",
+      "promptFa": "سارا از روبی می پرسد اهل کجاست. کدام پاسخ مناسب است؟",
       "config": {
         "optionsEn": [
-          "I'm from Canada.",
           "I'm from Iran.",
-          "Where are you from?"
+          "My name is Ruby.",
+          "I'm fine, thanks."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "در نقش سارا، بعد از from کشور کانادا را می گویی.",
-            "ایران کشور روبی است؛ این سوال از زبان سارا پاسخ می خواهد.",
-            "این جمله کشور طرف مقابل را می پرسد؛ کشور سارا را بیان نمی کند."
+            "درست است؛ این جمله اطلاعات اهل کجا بودن را می دهد.",
+            "این جمله اسم را می گوید، نه اهل کجا بودن را.",
+            "این جمله درباره حال است، نه محل یا کشور."
           ],
-          "correctFa": "در نقش سارا، بعد از from کشور کانادا را می گویی."
+          "correctFa": "I'm from Iran پاسخ مستقیم به سوال Where are you from? است."
         }
       },
-      "activityKey": "A04",
-      "promptFa": "این بار جمله ای را انتخاب کن که از زبان سارا، اهل کانادا، درست باشد.",
+      "metadata": {
+        "evidenceKind": "recognition_or_selection",
+        "learningDemand": "transfer"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "comprehension",
+      "instructionFa": "به جمله سارا گوش کن و جواب بده.",
+      "promptFa": "سارا می گوید اهل کدام کشور است؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T05"
+        ],
+        "options": [
+          "کانادا",
+          "ایران",
+          "نامشخص"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ سارا می گوید I'm from Canada.",
+            "ایران مربوط به پاسخ روبی بود.",
+            "کشور سارا در جمله به طور مستقیم گفته شده."
+          ],
+          "correctFa": "Canada یعنی کانادا."
+        }
+      },
       "metadata": {
         "evidenceKind": "recognition_or_selection"
       }
     },
     {
-      "type": "comprehension",
-      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "activityKey": "A06",
+      "type": "fill_blank",
+      "instructionFa": "کلمه درست را برای الگوی پاسخ انتخاب کن.",
       "config": {
-        "sourceTurnKeys": [
-          "T03"
-        ],
-        "options": [
-          "ایران",
-          "کانادا"
-        ],
-        "answerIndex": 1,
-        "transcriptAfterAttempt": true,
-        "feedback": {
-          "optionsFa": [
-            "ایران کشور روبی است. به صدای سارا توجه کن.",
-            "سارا می گوید از کاناداست."
-          ],
-          "correctFa": "سارا می گوید از کاناداست."
-        }
-      },
-      "promptFa": "سارا درباره خودش چه می گوید؟",
-      "metadata": {
-        "learningDemand": "recognition",
-        "purpose": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A05"
-    },
-    {
-      "type": "response_choice",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
-      "config": {
+        "sentenceEn": "I'm ___ Iran.",
         "optionsEn": [
-          "I'm from Iran.",
-          "I'm from Canada.",
-          "My name is Ruby."
+          "from",
+          "name",
+          "fine"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "روبی اهل ایران است؛ با from کشورش را می گوید.",
-            "کانادا کشور سارا است؛ الان از زبان روبی پاسخ می دهی.",
-            "این جمله اسم را می گوید؛ سوال درباره کشور است."
+            "from در الگوی I'm from + place می آید.",
+            "name برای صحبت درباره اسم است و اینجا به این ساختار نمی خورد.",
+            "fine برای پاسخ درباره حال استفاده شده بود."
           ],
-          "correctFa": "روبی اهل ایران است؛ با from کشورش را می گوید."
+          "correctFa": "در این الگو بعد از I'm از from استفاده می کنیم."
         }
       },
-      "promptFa": "سارا از تو می پرسد اهل کجایی. در نقش روبی چه پاسخی می دهی؟",
       "metadata": {
-        "learningDemand": "changed_context",
-        "purpose": "changed_context",
         "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A06"
+      }
     },
     {
       "activityKey": "A07",
       "type": "speak",
-      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
-      "promptFa": "روبی هستی. کشور خودت را گفته ای؛ حالا از سارا بپرس اهل کجاست.",
+      "instructionFa": "جواب انگلیسی را نمی بینی. خودت دو بخش مکالمه را بگو یا بنویس.",
+      "promptFa": "روبی هستی. بگو اهل ایران هستی و بعد از سارا بپرس او اهل کجاست.",
       "config": {
         "mode": "retrieval",
-        "textEn": "Where are you from?",
+        "textEn": "I'm from Iran. Where are you from?",
         "acceptedAnswersEn": [
-          "Where are you from?"
+          "I'm from Iran. Where are you from?"
         ],
-        "sourceTurnKey": "T05",
+        "sourceTurnKey": "T07",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "الگویی را به کار ببر که درباره اهل کجا بودن می پرسد.",
+        "hintFa": "اول I'm from و اسم مکان؛ بعد سوال Where are you from?",
         "feedback": {
-          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
-          "retryFa": "الگویی را به کار ببر که درباره اهل کجا بودن می پرسد."
+          "correctFa": "هم اطلاعات خودت را گفتی و هم سوال را به طرف مقابل برگرداندی.",
+          "retryFa": "جمله اول با I'm from شروع می شود و جمله دوم با Where."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -359,7 +323,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+        "assessmentLimit": "Same-session bounded recall of one origin pattern with fixed example places; not general geographic or speaking proficiency."
       }
     }
   ],
@@ -368,10 +332,9 @@
   },
   "metadata": {
     "pilot": false,
-    "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "factory_test_reference_fallback"
   }
 }

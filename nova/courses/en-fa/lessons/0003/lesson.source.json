@@ -5,12 +5,12 @@
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0003",
   "sortOrder": 3,
-  "titleEn": "A quick chat at the community center",
-  "titleFa": "یک احوالپرسی کوتاه",
-  "descriptionFa": "برای یک برنامه به مرکز محله آمده ای. آیریس در پذیرش کار می کند و از قبل همدیگر را می شناسید. پیش از رفتن به داخل، احوالپرسی می کنید.",
+  "titleEn": "How are you?",
+  "titleFa": "حالت چطوره؟",
+  "descriptionFa": "نینا وارد مرکز محله می شود و پیش از رفتن به برنامه با آیریس یک احوالپرسی کوتاه دارد.",
   "primaryOutcomeKey": "A1-INTERACTION-GREET-STATE-CLOSE",
   "outcomeFa": "زبان آموز می تواند حال طرف مقابل را بپرسد، یک پاسخ کوتاه بدهد و گفت و گو را دوستانه تمام کند.",
-  "scenarioFa": "برای یک برنامه به مرکز محله آمده ای. آیریس در پذیرش کار می کند و از قبل همدیگر را می شناسید. پیش از رفتن به داخل، احوالپرسی می کنید. نقش تو نینا است.",
+  "scenarioFa": "در ورودی مرکز محله با آیریس روبه رو می شوی. نقش تو نینا است و یک احوالپرسی کوتاه انجام می دهی.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-GREET-NAME",
     "A1-INTERACTION-FIRST-MEETING"
@@ -19,22 +19,30 @@
     "startingKnowledge": "greetings_and_introductions",
     "targetConstructions": [
       {
-        "key": "EN-CONSTR-IM-STATE",
-        "form": "I'm + adjective",
-        "meaningFa": "گفتن حال خود با همان شروع آشنای معرفی"
+        "key": "EN-CONSTR-HOW-ARE-YOU",
+        "form": "How are you?",
+        "meaningFa": "پرسیدن حال طرف مقابل"
+      },
+      {
+        "key": "EN-CONSTR-IM-FINE-THANKS",
+        "form": "I'm fine, thanks.",
+        "meaningFa": "یک پاسخ کوتاه و مودبانه درباره حال خود"
       }
     ],
     "supportLanguage": [
-      "Good! is a supported acknowledgement, not scored mastery."
+      {
+        "form": "Good!",
+        "meaningFa": "خوبه!"
+      }
     ],
-    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
+    "assessmentBoundary": "Guided dialogue and reconstruction are practice. Choice tasks assess recognition of conversational intent. Final retrieval measures same-session recall of a short wellbeing exchange, not open-ended speaking proficiency.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
+      "intent": "Move from a familiar greeting into a new wellbeing exchange and end with hidden-answer recall of the response plus return question."
     },
     "story": {
       "arcKey": "EN-A1-COMMUNITY",
-      "sceneKey": "EN-A1-SCENE-0003",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0003",
       "learnerRoleKey": "nina",
       "participants": [
         "nina",
@@ -47,158 +55,112 @@
       "relationshipState": "already_known",
       "continuesLessonKey": null,
       "dependsOnLessonKeys": [],
-      "settingFa": "ورودی مرکز محله، پیش از رفتن به برنامه",
-      "storyBeatFa": "نینا با آیریس احوالپرسی می کند و بعد به برنامه می رود."
+      "settingFa": "ورودی مرکز محله، پیش از شروع برنامه",
+      "storyBeatFa": "نینا و آیریس یک احوالپرسی کوتاه می کنند و نینا به سمت برنامه می رود."
     },
     "reviewLinks": [
       {
         "lessonKey": "EN-A1-L-0002",
         "activityKeys": [
-          "A05"
+          "A04"
         ],
         "learningDemand": "recognition",
-        "note": "Distinguish a wellbeing question from the earlier name question."
+        "note": "The learner distinguishes a wellbeing question from the name question practiced in the previous introductions."
       }
     ],
     "pedagogyVersion": 2
   },
-  "lexicalItems": [
-    {
-      "lexicalKey": "EN-LEX-HELLO-01",
-      "itemType": "word",
-      "displayForm": "hello",
-      "translationFa": "سلام",
-      "role": "review",
-      "lemma": "hello",
-      "partOfSpeech": "interjection",
-      "senseKey": "greeting",
-      "audioEligible": true
-    },
-    {
-      "lexicalKey": "EN-LEX-NAME-01",
-      "itemType": "word",
-      "displayForm": "name",
-      "translationFa": "اسم",
-      "role": "review",
-      "lemma": "name",
-      "partOfSpeech": "noun",
-      "senseKey": "personal_name",
-      "audioEligible": true
-    },
-    {
-      "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
-      "itemType": "formula",
-      "displayForm": "how are you",
-      "translationFa": "حالت چطوره؟",
-      "role": "target",
-      "audioEligible": true
-    },
-    {
-      "lexicalKey": "EN-LEX-FINE-01",
-      "itemType": "word",
-      "displayForm": "fine",
-      "translationFa": "خوب",
-      "role": "target",
-      "audioEligible": true,
-      "partOfSpeech": "adjective"
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "itemType": "word",
-      "displayForm": "thanks",
-      "translationFa": "ممنون",
-      "role": "target",
-      "audioEligible": true,
-      "partOfSpeech": "interjection"
-    },
-    {
-      "lexicalKey": "EN-LEX-SEE-YOU-01",
-      "itemType": "formula",
-      "displayForm": "see you",
-      "translationFa": "می بینمت؛ فعلا خداحافظ",
-      "role": "target",
-      "audioEligible": true
-    },
-    {
-      "lexicalKey": "EN-LEX-GOOD-01",
-      "itemType": "word",
-      "displayForm": "good",
-      "translationFa": "خوب",
-      "role": "support",
-      "audioEligible": true,
-      "partOfSpeech": "adjective"
-    }
-  ],
+  "lexicalItems": [],
   "turns": [
     {
       "turnKey": "T01",
       "role": "character",
-      "textEn": "Hello, Nina! How are you?",
-      "translationFa": "سلام نینا! حالت چطوره؟",
-      "audioRequired": true,
-      "characterKey": "iris"
+      "characterKey": "iris",
+      "textEn": "Hi, Nina!",
+      "translationFa": "سلام نینا!",
+      "audioRequired": true
     },
     {
       "turnKey": "T02",
       "role": "learner",
-      "textEn": "I'm fine, thanks. How are you?",
-      "translationFa": "خوبم، ممنون. تو چطوری؟",
-      "audioRequired": true,
-      "speechTargetEn": "I'm fine, thanks. How are you?",
+      "characterKey": "nina",
+      "textEn": "Hi, Iris!",
+      "translationFa": "سلام آیریس!",
+      "speechTargetEn": "Hi, Iris!",
       "acceptedSpeechEn": [
-        "I'm fine, thanks. How are you?"
+        "Hi, Iris!"
       ],
-      "characterKey": "nina"
+      "audioRequired": true
     },
     {
       "turnKey": "T03",
       "role": "character",
-      "textEn": "I'm fine, thanks.",
-      "translationFa": "خوبم، ممنون.",
-      "audioRequired": true,
-      "characterKey": "iris"
+      "characterKey": "iris",
+      "textEn": "How are you?",
+      "translationFa": "حالت چطوره؟",
+      "audioRequired": true
     },
     {
       "turnKey": "T04",
       "role": "learner",
-      "textEn": "Good!",
-      "translationFa": "خوبه!",
-      "audioRequired": true,
-      "speechTargetEn": "Good!",
+      "characterKey": "nina",
+      "textEn": "I'm fine, thanks. How are you?",
+      "translationFa": "خوبم، ممنون. تو چطوری؟",
+      "speechTargetEn": "I'm fine, thanks. How are you?",
       "acceptedSpeechEn": [
-        "Good!"
+        "I'm fine, thanks. How are you?"
       ],
-      "characterKey": "nina"
+      "audioRequired": true
     },
     {
       "turnKey": "T05",
       "role": "character",
-      "textEn": "See you!",
-      "translationFa": "می بینمت!",
-      "audioRequired": true,
-      "characterKey": "iris"
+      "characterKey": "iris",
+      "textEn": "I'm good, thanks.",
+      "translationFa": "خوبم، ممنون.",
+      "audioRequired": true
     },
     {
       "turnKey": "T06",
       "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Good!",
+      "translationFa": "خوبه!",
+      "speechTargetEn": "Good!",
+      "acceptedSpeechEn": [
+        "Good!"
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T07",
+      "role": "character",
+      "characterKey": "iris",
       "textEn": "See you!",
-      "translationFa": "می بینمت!",
-      "audioRequired": true,
+      "translationFa": "فعلا خداحافظ!",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T08",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "See you!",
+      "translationFa": "فعلا خداحافظ!",
       "speechTargetEn": "See you!",
       "acceptedSpeechEn": [
         "See you!"
       ],
-      "characterKey": "nina"
+      "audioRequired": true
     },
     {
-      "turnKey": "T07",
+      "turnKey": "T09",
       "role": "learner",
       "characterKey": "nina",
-      "textEn": "See you!",
-      "translationFa": "می بینمت!",
-      "speechTargetEn": "See you!",
+      "textEn": "I'm fine, thanks. How are you?",
+      "translationFa": "خوبم، ممنون. تو چطوری؟",
+      "speechTargetEn": "I'm fine, thanks. How are you?",
       "acceptedSpeechEn": [
-        "See you!"
+        "I'm fine, thanks. How are you?"
       ],
       "audioRequired": true,
       "metadata": {
@@ -210,7 +172,7 @@
     {
       "activityKey": "A01",
       "type": "dialogue",
-      "instructionFa": "حرف آیریس را گوش کن و پاسخ نینا را با صدای بلند بگو.",
+      "instructionFa": "به آیریس گوش کن و جواب نینا را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -232,8 +194,8 @@
           },
           {
             "exchangeKey": "E03",
-            "promptTurnKey": "T05",
-            "responseTurnKey": "T06",
+            "promptTurnKey": "T07",
+            "responseTurnKey": "T08",
             "responseEvaluation": "practice_only",
             "allowPromptReplay": true,
             "allowResponseModelAudio": true
@@ -246,43 +208,29 @@
       }
     },
     {
-      "activityKey": "A02",
-      "type": "lexical_teach",
-      "instructionFa": "عبارت های احوالپرسی و خداحافظی را مرور کن.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-HOW-ARE-YOU-01",
-          "EN-LEX-FINE-01",
-          "EN-LEX-THANKS-01",
-          "EN-LEX-SEE-YOU-01"
-        ],
-        "explanationFa": "در I'm fine به جای اسم، حالت را می گویی. How are you برای پرسیدن حال است. See you یک خداحافظی دوستانه است."
-      }
-    },
-    {
       "activityKey": "A03",
       "type": "sentence_order",
-      "instructionFa": "گوش کن و کلمه ها را به همان ترتیب بچین.",
+      "instructionFa": "سوال را گوش کن و کلمه ها را به همان ترتیب بچین.",
       "config": {
         "audioSourceTurnKey": "T03",
         "tokensEn": [
-          "thanks.",
-          "I'm",
-          "fine,"
+          "you?",
+          "How",
+          "are"
         ],
         "answerTokensEn": [
-          "I'm",
-          "fine,",
-          "thanks."
+          "How",
+          "are",
+          "you?"
         ],
-        "answerEn": "I'm fine, thanks.",
+        "answerEn": "How are you?",
         "showAnswerTextBeforeAttempt": false,
         "allowAudioReplay": true,
         "practiceOnly": true,
         "hideTokenSurfaceCues": true,
         "feedback": {
-          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: خوبم، ممنون.",
-          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: خوبم، ممنون."
+          "correctFa": "درست چیدی؛ این سوال درباره حال طرف مقابل است.",
+          "retryFa": "دوباره گوش کن؛ سوال با How شروع می شود."
         }
       },
       "metadata": {
@@ -292,101 +240,75 @@
     {
       "activityKey": "A04",
       "type": "response_choice",
-      "instructionFa": "به موقعیت توجه کن و پاسخ مناسب را انتخاب کن.",
+      "instructionFa": "پاسخ مناسب را انتخاب کن.",
+      "promptFa": "آیریس حال تو را می پرسد. در نقش نینا چه پاسخی طبیعی است؟",
       "config": {
         "optionsEn": [
           "I'm fine, thanks.",
-          "My name is Nina.",
-          "Nice to meet you."
+          "What's your name?",
+          "See you!"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "fine حال خوب را بیان می کند و thanks تشکر است.",
-            "این جمله اسم را می گوید؛ آیریس درباره حالت پرسیده است.",
-            "این جمله برای اولین آشنایی است؛ شما همدیگر را می شناسید و احوالپرسی می کنید."
+            "درست است؛ این جمله به سوال درباره حال پاسخ می دهد.",
+            "این سوال درباره اسم است و پاسخ حال نیست.",
+            "این عبارت برای پایان گفت و گو است."
           ],
-          "correctFa": "fine حال خوب را بیان می کند و thanks تشکر است."
+          "correctFa": "I'm fine, thanks. یک پاسخ کوتاه و طبیعی است."
         }
       },
-      "promptFa": "آیریس حالت را می پرسد. می خواهی بگویی خوب هستی.",
       "metadata": {
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "recognition_or_selection",
+        "learningDemand": "recognition"
       }
     },
     {
       "activityKey": "A05",
       "type": "comprehension",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "instructionFa": "به جمله آخر آیریس گوش کن و منظورش را انتخاب کن.",
+      "promptFa": "آیریس با See you! چه کاری می کند؟",
       "config": {
         "sourceTurnKeys": [
-          "T01"
+          "T07"
         ],
         "options": [
-          "اسمش چیست",
-          "حالش چطور است",
-          "اهل کجاست"
+          "دوستانه خداحافظی می کند",
+          "حال نینا را می پرسد",
+          "اسم خودش را می گوید"
         ],
-        "answerIndex": 1,
+        "answerIndex": 0,
         "transcriptAfterAttempt": true,
         "feedback": {
           "optionsFa": [
-            "پرسیدن اسم با name است؛ اینجا How are you را می شنوی.",
-            "How are you درباره حال طرف مقابل است.",
-            "این سوال درباره کشور یا شهر نیست؛ آیریس حال نینا را می پرسد."
+            "درست است؛ See you! یک خداحافظی دوستانه است.",
+            "پرسیدن حال با How are you? انجام شد.",
+            "معرفی اسم در این جمله وجود ندارد."
           ],
-          "correctFa": "How are you درباره حال طرف مقابل است."
+          "correctFa": "See you! اینجا برای پایان دوستانه گفت و گو است."
         }
       },
-      "promptFa": "آیریس در شروع گفت و گو چه چیزی از نینا می پرسد؟",
       "metadata": {
         "evidenceKind": "recognition_or_selection"
       }
     },
     {
       "activityKey": "A06",
-      "type": "response_choice",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
-      "config": {
-        "optionsEn": [
-          "I'm fine, thanks.",
-          "See you!",
-          "What's your name?"
-        ],
-        "answerIndex": 1,
-        "feedback": {
-          "optionsFa": [
-            "این پاسخ احوالپرسی است و رفتن تو را نشان نمی دهد.",
-            "See you خداحافظی دوستانه برای پایان دیدار است.",
-            "اسمتان را می دانید؛ هدف این موقعیت خداحافظی است."
-          ],
-          "correctFa": "See you خداحافظی دوستانه برای پایان دیدار است."
-        }
-      },
-      "promptFa": "وقت احوالپرسی تمام شده و می خواهی به برنامه داخل مرکز بروی. کدام جمله برای جدا شدن مناسب است؟",
-      "metadata": {
-        "learningDemand": "changed_context",
-        "purpose": "Choose a closing expression before leaving reception.",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
-      "activityKey": "A07",
       "type": "speak",
-      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
-      "promptFa": "نینا هستی. برنامه شروع شده و می خواهی از آیریس جدا شوی. کوتاه خداحافظی کن.",
+      "instructionFa": "جواب انگلیسی را نمی بینی. خودت پاسخ را بگو یا بنویس.",
+      "promptFa": "نینا هستی. آیریس حالت را پرسیده؛ کوتاه جواب بده و بعد حال او را بپرس.",
       "config": {
         "mode": "retrieval",
-        "textEn": "See you!",
+        "textEn": "I'm fine, thanks. How are you?",
         "acceptedAnswersEn": [
-          "See you!"
+          "I'm fine, thanks. How are you?"
         ],
-        "sourceTurnKey": "T07",
+        "sourceTurnKey": "T09",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "عبارت خداحافظی دوستانه را به یاد بیاور.",
+        "hintFa": "اول حالت را بگو و تشکر کن؛ بعد همان سوال را برگردان.",
         "feedback": {
-          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
-          "retryFa": "عبارت خداحافظی دوستانه را به یاد بیاور."
+          "correctFa": "یک رفت و برگشت کوتاه احوالپرسی را بدون پاسخ آماده ساختی.",
+          "retryFa": "با I'm fine, thanks شروع کن و بعد سوال حال را برگردان."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -394,7 +316,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+        "assessmentLimit": "Same-session bounded recall of a taught wellbeing exchange; not open-ended speaking proficiency."
       }
     }
   ],
@@ -406,6 +328,6 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "factory_test_formula_first"
   }
 }

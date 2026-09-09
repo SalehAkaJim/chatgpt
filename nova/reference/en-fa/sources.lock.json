@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "courseCode": "en-fa",
   "qualityThreshold": 90,
   "cefrPrecedence": [
@@ -30,6 +30,31 @@
         "vocabulary": "cefrj-vocabulary-profile-1.5.csv",
         "grammar": "cefrj-grammar-profile-20180315.csv",
         "c1c2": "octanove-vocabulary-profile-c1c2-1.0.csv"
+      }
+    },
+    "cmudict": {
+      "repository": "cmusphinx/cmudict",
+      "commit": "74790861f652b15e4ac49015a90074ad62a27690",
+      "license": "CMUdict permissive license",
+      "files": {
+        "dictionary": "cmudict.dict"
+      }
+    },
+    "ngslSpoken": {
+      "datasetVersion": "1.2",
+      "sourceUrl": "https://charliebrownecompany.squarespace.com/s/NGSL-Spoken_12_stats.csv",
+      "license": "CC BY-SA 4.0",
+      "snapshotPolicy": "download-and-hash"
+    },
+    "tatoeba": {
+      "apiBase": "https://api.tatoeba.org/v1/sentences",
+      "apiSchema": "https://api.tatoeba.org/openapi.json",
+      "license": "per-sentence license retained in snapshot",
+      "snapshotPolicy": "query-and-pin-sentence-ids",
+      "filters": {
+        "lang": "eng",
+        "is_orphan": "no",
+        "is_unapproved": "no"
       }
     }
   }

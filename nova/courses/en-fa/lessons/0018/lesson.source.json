@@ -1,1 +1,325 @@
-{"schemaVersion":"2.2.0","contentSystemVersion":"1","courseCode":"en-fa","levelKey":"A1","lessonKey":"EN-A1-L-0018","sortOrder":18,"titleEn":"Do you have a pen?","titleFa":"خودکار داری؟","descriptionFa":"پرسیدن درباره داشتن یک وسیله آشنا در کلاس","primaryOutcomeKey":"A1-INTERACTION-HAVE-OBJECT","outcomeFa":"می توانی درباره داشتن یک وسیله آشنا سوال کنی و یک پاسخ کوتاه را بفهمی.","scenarioFa":"پیش از شروع تمرین، مایا دنبال خودکار است. بعد تو هم می خواهی درباره یک وسیله سوال کنی. نقش تو الکس است.","prerequisiteOutcomeKeys":["A1-INTERACTION-REQUEST-OBJECT"],"curriculum":{"startingKnowledge":"early_a1_after_greetings","targetConstructions":[{"key":"EN-CONSTR-DO-YOU-HAVE","form":"Do you have + item?","meaningFa":"پرسیدن این که طرف مقابل یک وسیله را دارد یا نه"}],"supportLanguage":[],"assessmentBoundary":"Guided speech and reconstruction are supported practice. Choice tasks assess recognition or selection. The final hidden-answer task records bounded first-attempt evidence; accepted alternatives are included only when they are natural for the same context. This does not certify open-ended proficiency or pronunciation.","transferPlan":{"mode":"same_lesson","intent":"Move familiar classroom nouns into a possession question and include sentence construction before hidden retrieval."},"story":{"arcKey":"EN-A1-CLASSMATES","sceneKey":"EN-A1-SCENE-0018","learnerRoleKey":"alex","participants":["alex","maya"],"introducedCharacterKeys":[],"relationshipState":"already_known","continuesLessonKey":"EN-A1-L-0012","dependsOnLessonKeys":["EN-A1-L-0012"],"settingFa":"کلاس، آماده شدن برای تمرین","storyBeatFa":"مایا از الکس درباره خودکار می پرسد و الکس بعدا همان الگو را برای پرسیدن درباره کتاب به کار می برد."},"reviewLinks":[{"lessonKey":"EN-A1-L-0007","activityKeys":["A03","A04"],"learningDemand":"transfer","note":"Reuse book and pen in a possession question instead of a request."},{"lessonKey":"EN-A1-L-0011","activityKeys":["A02"],"learningDemand":"retrieval","note":"Reuse yes as a short response in a new classroom purpose."}],"pedagogyVersion":2},"lexicalItems":[{"lexicalKey":"EN-LEX-HAVE-01","itemType":"word","displayForm":"have","translationFa":"داشتن","role":"target","audioEligible":true,"lemma":"have","partOfSpeech":"verb"},{"lexicalKey":"EN-LEX-PEN-01","itemType":"word","displayForm":"pen","translationFa":"خودکار","role":"review","audioEligible":true,"partOfSpeech":"noun"},{"lexicalKey":"EN-LEX-BOOK-01","itemType":"word","displayForm":"book","translationFa":"کتاب","role":"review","audioEligible":true,"partOfSpeech":"noun"},{"lexicalKey":"EN-LEX-YES-01","itemType":"word","displayForm":"yes","translationFa":"بله","role":"review","audioEligible":true,"partOfSpeech":"interjection"},{"lexicalKey":"EN-LEX-HERE-YOU-GO-01","itemType":"formula","displayForm":"here you go","translationFa":"بفرما؛ هنگام دادن چیزی","role":"review","audioEligible":true}],"turns":[{"turnKey":"T01","role":"character","characterKey":"maya","textEn":"Do you have a pen?","translationFa":"خودکار داری؟","audioRequired":true},{"turnKey":"T02","role":"learner","characterKey":"alex","textEn":"Yes. Here you go.","translationFa":"بله. بفرما.","audioRequired":true,"speechTargetEn":"Yes. Here you go.","acceptedSpeechEn":["Yes. Here you go."]},{"turnKey":"T03","role":"learner","characterKey":"alex","textEn":"Do you have a book?","translationFa":"کتاب داری؟","audioRequired":true,"speechTargetEn":"Do you have a book?","acceptedSpeechEn":["Do you have a book?"]},{"turnKey":"T04","role":"learner","characterKey":"alex","textEn":"Do you have a pen?","translationFa":"خودکار داری؟","audioRequired":true,"speechTargetEn":"Do you have a pen?","acceptedSpeechEn":["Do you have a pen?"],"metadata":{"usage":"retrieval_model_after_help"}}],"activities":[{"activityKey":"A01","type":"lexical_teach","instructionFa":"فعل اصلی این سوال را یاد بگیر.","config":{"lexicalKeys":["EN-LEX-HAVE-01"],"explanationFa":"have یعنی داشتن. Do you have a pen? یعنی خودکار داری؟ اسم وسیله را می توانی عوض کنی."}},{"activityKey":"A02","type":"dialogue","instructionFa":"سوال مایا را گوش کن و پاسخ الکس را بگو.","config":{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}},{"activityKey":"A03","type":"comprehension","instructionFa":"گوش کن و با توجه به چیزی که شنیدی پاسخ بده.","promptFa":"مایا درباره کدام وسیله می پرسد؟","config":{"sourceTurnKeys":["T01"],"options":["خودکار","کتاب","اتاق"],"answerIndex":0,"transcriptAfterAttempt":true,"feedback":{"optionsFa":["pen یعنی خودکار.","book یعنی کتاب؛ این بار pen را می شنوی.","room یعنی اتاق و در سوال نیست."],"correctFa":"pen یعنی خودکار."}},"metadata":{"learningDemand":"recognition","purpose":"listening_for_meaning","evidenceKind":"recognition_or_selection"}},{"activityKey":"A04","type":"sentence_order","instructionFa":"گوش کن و کلمه ها را به ترتیب درست بچین.","config":{"audioSourceTurnKey":"T03","tokensEn":["book?","you","Do","a","have"],"answerTokensEn":["Do","you","have","a","book?"],"answerEn":"Do you have a book?","showAnswerTextBeforeAttempt":false,"allowAudioReplay":true,"practiceOnly":true,"hideTokenSurfaceCues":true,"feedback":{"correctFa":"ترتیب درست را ساختی. معنی جمله: کتاب داری؟","retryFa":"یک بار دیگر صدا را پخش کن و ترتیب کلمه ها را از روی شنیدن جمله بساز."}},"metadata":{"evidenceKind":"supported_reconstruction","skillFocus":"writing"}},{"activityKey":"A05","type":"speak","instructionFa":"این بار پاسخ آماده را نمی بینی. خودت جواب را بگو یا بنویس.","promptFa":"نقش تو الکس است. این بار می خواهی بدانی مایا خودکار دارد یا نه. از او بپرس.","config":{"mode":"retrieval","textEn":"Do you have a pen?","acceptedAnswersEn":["Do you have a pen?"],"sourceTurnKey":"T04","showAnswerTextBeforeAttempt":false,"modelAccess":"explicit_help","hintFa":"با Do you have شروع کن و نام وسیله را در آخر بگو.","feedback":{"correctFa":"پاسخت با یکی از پاسخ های طبیعی این موقعیت هماهنگ است.","retryFa":"با Do you have شروع کن و نام وسیله را در آخر بگو."},"evidenceKind":"bounded_retrieval","practiceOnly":false},"metadata":{"learningDemand":"retrieval","purpose":"meaning_cued_hidden_answer","evidenceKind":"bounded_retrieval","skillFocus":"speaking"}}],"review":{"pendingDecisions":[]},"metadata":{"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange","qualityStage":"model_reviewed_for_testing"}}
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0018",
+  "sortOrder": 18,
+  "titleEn": "Do you have a pen?",
+  "titleFa": "خودکار داری؟",
+  "descriptionFa": "مایا و الکس قبل از تمرین درباره داشتن وسایل آشنای کلاس سوال می کنند.",
+  "primaryOutcomeKey": "A1-INTERACTION-HAVE-OBJECT",
+  "outcomeFa": "زبان آموز می تواند درباره داشتن یک وسیله آشنا سوال کند و پاسخ کوتاه را بفهمد.",
+  "scenarioFa": "پیش از شروع تمرین، مایا دنبال خودکار است. بعد تو هم درباره کتاب سوال می کنی. نقش تو الکس است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-CORRECT-REQUEST",
+    "A1-INTERACTION-ACCEPT-DECLINE"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_known_objects_and_short_responses",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-DO-YOU-HAVE",
+        "form": "Do you have + item?",
+        "meaningFa": "پرسیدن این که طرف مقابل یک وسیله را دارد یا نه"
+      }
+    ],
+    "supportLanguage": [],
+    "assessmentBoundary": "The Lesson introduces have in the possession sense with two already-known object nouns. Final retrieval changes the object but remains a bounded possession question.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Move pen and book from requesting/correcting objects into a possession question while keeping object vocabulary fully reviewed."
+    },
+    "story": {
+      "arcKey": "EN-A1-CLASSMATES",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0018",
+      "learnerRoleKey": "alex",
+      "participants": [
+        "alex",
+        "maya"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0012",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0012"
+      ],
+      "settingFa": "کلاس، آماده شدن برای تمرین",
+      "storyBeatFa": "مایا این بار به جای دادن وسیله اشتباه، از الکس می پرسد آیا خودکار دارد و الکس همان ساختار را برای کتاب به کار می برد."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0012",
+        "activityKeys": [
+          "A02",
+          "A04"
+        ],
+        "learningDemand": "transfer",
+        "note": "Pen and book move from correction targets to possession-question objects."
+      },
+      {
+        "lessonKey": "EN-A1-L-0011",
+        "activityKeys": [
+          "A03"
+        ],
+        "learningDemand": "retrieval",
+        "note": "A short positive response returns in a different classroom purpose."
+      }
+    ],
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-HAVE-01",
+      "itemType": "word",
+      "displayForm": "have",
+      "translationFa": "داشتن",
+      "role": "target",
+      "lemma": "have",
+      "partOfSpeech": "verb",
+      "senseKey": "possession",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-95D9B5A8DD21C690DAAE"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "itemType": "word",
+      "displayForm": "pen",
+      "translationFa": "خودکار",
+      "role": "review",
+      "lemma": "pen",
+      "partOfSpeech": "noun",
+      "senseKey": "writing_pen",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-E7158161767216455400"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "itemType": "word",
+      "displayForm": "book",
+      "translationFa": "کتاب",
+      "role": "review",
+      "lemma": "book",
+      "partOfSpeech": "noun",
+      "senseKey": "physical_book",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "maya",
+      "textEn": "Do you have a pen?",
+      "translationFa": "خودکار داری؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "alex",
+      "textEn": "Yes. Here you go.",
+      "translationFa": "بله. بفرما.",
+      "speechTargetEn": "Yes. Here you go.",
+      "acceptedSpeechEn": [
+        "Yes. Here you go."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T03",
+      "role": "learner",
+      "characterKey": "alex",
+      "textEn": "Do you have a book?",
+      "translationFa": "کتاب داری؟",
+      "speechTargetEn": "Do you have a book?",
+      "acceptedSpeechEn": [
+        "Do you have a book?"
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "alex",
+      "textEn": "Do you have a pen?",
+      "translationFa": "خودکار داری؟",
+      "speechTargetEn": "Do you have a pen?",
+      "acceptedSpeechEn": [
+        "Do you have a pen?"
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "lexical_teach",
+      "instructionFa": "فعل have و الگوی سوال داشتن را یاد بگیر.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-HAVE-01"
+        ],
+        "explanationFa": "have در این درس یعنی داشتن. Do you have a pen? یعنی خودکار داری؟ اسم وسیله را می توانی با یک وسیله آشنای دیگر عوض کنی."
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "سوال مایا را گوش کن و جواب الکس را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "به سوال مایا گوش کن.",
+      "promptFa": "مایا درباره کدام وسیله می پرسد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01"
+        ],
+        "options": [
+          "خودکار",
+          "کتاب",
+          "میز"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ pen یعنی خودکار.",
+            "book وسیله آشنای دیگری است، اما در سوال اول نیست.",
+            "table در این سوال شنیده نمی شود."
+          ],
+          "correctFa": "مایا درباره خودکار می پرسد."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "sentence_order",
+      "instructionFa": "سوال درباره کتاب را گوش کن و کلمه ها را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T03",
+        "tokensEn": [
+          "book?",
+          "have",
+          "Do",
+          "you",
+          "a"
+        ],
+        "answerTokensEn": [
+          "Do",
+          "you",
+          "have",
+          "a",
+          "book?"
+        ],
+        "answerEn": "Do you have a book?",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی؛ سوال داشتن کتاب را ساختی.",
+          "retryFa": "دوباره گوش کن؛ سوال با Do you have شروع می شود."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "سوال مناسب را برای موقعیت انتخاب کن.",
+      "promptFa": "می خواهی بدانی مایا کتاب دارد یا نه. چه می پرسی؟",
+      "config": {
+        "optionsEn": [
+          "Do you have a book?",
+          "Can I have a book, please?",
+          "Where's my book?"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ این سوال درباره داشتن کتاب است.",
+            "این جمله کتاب را درخواست می کند، نه اینکه بپرسد طرف مقابل آن را دارد یا نه.",
+            "این جمله جای کتاب را می پرسد."
+          ],
+          "correctFa": "Do you have a book? سوال داشتن است."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی را نمی بینی. خودت سوال داشتن را بساز.",
+      "promptFa": "الکس هستی. این بار می خواهی بدانی مایا خودکار دارد یا نه. از او بپرس.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Do you have a pen?",
+        "acceptedAnswersEn": [
+          "Do you have a pen?"
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "با Do you have شروع کن و نام وسیله را در آخر بگو.",
+        "feedback": {
+          "correctFa": "درست است؛ درباره داشتن خودکار پرسیدی.",
+          "retryFa": "با Do you have شروع کن و pen را در انتها قرار بده."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded possession-question recall with known object nouns."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}

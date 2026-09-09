@@ -5,33 +5,34 @@
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0010",
   "sortOrder": 10,
-  "titleEn": "Drinks after the walk",
-  "titleFa": "استراحت بعد از پیاده روی",
-  "descriptionFa": "در دورهمی بعدی گروه پیاده روی، استراحت می کنید. سارا که قبلا با او آشنا شده ای از نوشیدنی های میز به تو پیشنهاد می دهد.",
+  "titleEn": "Tea or coffee?",
+  "titleFa": "چای یا قهوه؟",
+  "descriptionFa": "روبی در دورهمی بعدی گروه پیاده روی دوباره سارا را می بیند و این بار بین نوشیدنی های روی میز انتخاب می کند.",
   "primaryOutcomeKey": "A1-INTERACTION-CHOOSE-DRINK",
-  "outcomeFa": "می توانی پیشنهاد دو نوشیدنی را بفهمی و انتخابت را کوتاه و مودبانه بگویی.",
-  "scenarioFa": "در دورهمی بعدی گروه پیاده روی، استراحت می کنید. سارا که قبلا با او آشنا شده ای از نوشیدنی های میز به تو پیشنهاد می دهد. نقش تو روبی است.",
+  "outcomeFa": "زبان آموز می تواند پیشنهاد دو نوشیدنی آشنا را بفهمد و انتخابش را کوتاه و مودبانه بگوید.",
+  "scenarioFa": "بعد از پیاده روی کنار میز نوشیدنی ایستاده ای. سارا بین دو نوشیدنی به تو حق انتخاب می دهد. نقش تو روبی است.",
   "prerequisiteOutcomeKeys": [
-    "A1-INTERACTION-ORDER-DRINK"
+    "A1-INTERACTION-ORDER-DRINK",
+    "A1-INTERACTION-COUNTRY"
   ],
   "curriculum": {
-    "startingKnowledge": "early_a1_after_greetings",
+    "startingKnowledge": "early_a1_drink_requests",
     "targetConstructions": [
       {
         "key": "EN-CONSTR-ITEM-OR-ITEM",
         "form": "item + or + item?",
-        "meaningFa": "پرسیدن انتخاب بین دو چیز"
+        "meaningFa": "پرسیدن انتخاب بین دو چیز آشنا"
       }
     ],
     "supportLanguage": [],
-    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
+    "assessmentBoundary": "The Lesson reuses three known drink labels and teaches one bounded either-or offer pattern. Final retrieval measures same-session selection language, not open-ended ordering ability.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
+      "intent": "Reuse the drink senses from Lesson 9 in a different social setting and change the task from requesting one drink to choosing between two."
     },
     "story": {
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sceneKey": "EN-A1-SCENE-0010",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0010",
       "learnerRoleKey": "ruby",
       "participants": [
         "ruby",
@@ -44,39 +45,44 @@
         "EN-A1-L-0005"
       ],
       "settingFa": "میز نوشیدنی گروه در پارک، بعد از پیاده روی",
-      "storyBeatFa": "روبی و سارا پس از آشنایی قبلی، زمان استراحت گروه را با هم می گذرانند."
+      "storyBeatFa": "روبی و سارا بعد از آشنایی قبلی دوباره همدیگر را می بینند و این بار سارا از روبی می خواهد بین نوشیدنی ها انتخاب کند."
     },
     "reviewLinks": [
       {
         "lessonKey": "EN-A1-L-0009",
         "activityKeys": [
           "A03",
-          "A04"
+          "A04",
+          "A06"
         ],
         "learningDemand": "transfer",
-        "note": "Retrieve drink meanings in a changed offer and make a new choice."
+        "note": "The same drink senses are reused in an offer-and-choice exchange instead of a cafe order."
+      },
+      {
+        "lessonKey": "EN-A1-L-0005",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "recognition",
+        "note": "The returning Ruby and Sara story is used to recognize that these are already-known characters while the language task remains a new drink-choice exchange."
       }
     ],
     "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-OR-01",
-      "itemType": "word",
-      "displayForm": "or",
-      "translationFa": "یا",
-      "role": "target",
-      "audioEligible": true,
-      "partOfSpeech": "conjunction"
-    },
-    {
       "lexicalKey": "EN-LEX-TEA-01",
       "itemType": "word",
       "displayForm": "tea",
       "translationFa": "چای",
       "role": "review",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "senseKey": "tea_beverage",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "referenceKey": "EN-REF-C86BD7B12371D318284C"
+      }
     },
     {
       "lexicalKey": "EN-LEX-COFFEE-01",
@@ -84,8 +90,13 @@
       "displayForm": "coffee",
       "translationFa": "قهوه",
       "role": "review",
+      "lemma": "coffee",
+      "partOfSpeech": "noun",
+      "senseKey": "coffee_beverage",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "referenceKey": "EN-REF-DF86C36C215439FDE741"
+      }
     },
     {
       "lexicalKey": "EN-LEX-WATER-01",
@@ -93,84 +104,63 @@
       "displayForm": "water",
       "translationFa": "آب",
       "role": "review",
+      "lemma": "water",
+      "partOfSpeech": "noun",
+      "senseKey": "drink_water",
       "audioEligible": true,
-      "partOfSpeech": "noun"
-    },
-    {
-      "lexicalKey": "EN-LEX-PLEASE-01",
-      "itemType": "word",
-      "displayForm": "please",
-      "translationFa": "لطفا",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "adverb"
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "itemType": "word",
-      "displayForm": "thanks",
-      "translationFa": "ممنون",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "interjection"
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "itemType": "formula",
-      "displayForm": "here you go",
-      "translationFa": "بفرما؛ هنگام دادن چیزی",
-      "role": "review",
-      "audioEligible": true
+      "metadata": {
+        "referenceKey": "EN-REF-93033FDD55B1A504F831"
+      }
     }
   ],
   "turns": [
     {
       "turnKey": "T01",
       "role": "character",
+      "characterKey": "sara",
       "textEn": "Tea or coffee?",
       "translationFa": "چای یا قهوه؟",
-      "audioRequired": true,
-      "characterKey": "sara"
+      "audioRequired": true
     },
     {
       "turnKey": "T02",
       "role": "learner",
+      "characterKey": "ruby",
       "textEn": "Tea, please.",
       "translationFa": "چای، لطفا.",
-      "audioRequired": true,
       "speechTargetEn": "Tea, please.",
       "acceptedSpeechEn": [
         "Tea, please."
       ],
-      "characterKey": "ruby"
+      "audioRequired": true
     },
     {
       "turnKey": "T03",
       "role": "character",
+      "characterKey": "sara",
       "textEn": "Here you go.",
       "translationFa": "بفرما.",
-      "audioRequired": true,
-      "characterKey": "sara"
+      "audioRequired": true
     },
     {
       "turnKey": "T04",
       "role": "learner",
-      "textEn": "Thanks.",
-      "translationFa": "ممنون.",
-      "audioRequired": true,
-      "speechTargetEn": "Thanks.",
+      "characterKey": "ruby",
+      "textEn": "Thanks!",
+      "translationFa": "ممنون!",
+      "speechTargetEn": "Thanks!",
       "acceptedSpeechEn": [
-        "Thanks."
+        "Thanks!"
       ],
-      "characterKey": "ruby"
+      "audioRequired": true
     },
     {
       "turnKey": "T05",
       "role": "character",
+      "characterKey": "sara",
       "textEn": "Water or tea?",
       "translationFa": "آب یا چای؟",
-      "audioRequired": true,
-      "characterKey": "sara"
+      "audioRequired": true
     },
     {
       "turnKey": "T06",
@@ -190,19 +180,22 @@
   ],
   "activities": [
     {
+      "activityKey": "A01",
       "type": "lexical_teach",
-      "instructionFa": "معنی و صدای این کلمه ها را یاد بگیر.",
+      "instructionFa": "الگوی انتخاب بین دو نوشیدنی را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-OR-01"
+          "EN-LEX-TEA-01",
+          "EN-LEX-COFFEE-01",
+          "EN-LEX-WATER-01"
         ],
-        "explanationFa": "or یعنی یا. Tea or coffee? یعنی چای می خواهی یا قهوه؟ برای پاسخ کوتاه، نام نوشیدنی و please کافی است."
-      },
-      "activityKey": "A01"
+        "explanationFa": "وقتی دو گزینه با or می آیند، باید یکی را انتخاب کنی. Tea or coffee? یعنی چای یا قهوه؟ برای جواب کوتاه می توانی نام نوشیدنی را با please بگویی."
+      }
     },
     {
+      "activityKey": "A02",
       "type": "dialogue",
-      "instructionFa": "حرف سارا را گوش کن و پاسخ روبی را با صدای بلند بگو.",
+      "instructionFa": "به سارا گوش کن و جواب روبی را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -227,97 +220,98 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      },
-      "activityKey": "A02"
+      }
     },
     {
+      "activityKey": "A03",
+      "type": "sentence_order",
+      "instructionFa": "پیشنهاد دوم را گوش کن و سه بخش را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T05",
+        "tokensEn": [
+          "tea?",
+          "Water",
+          "or"
+        ],
+        "answerTokensEn": [
+          "Water",
+          "or",
+          "tea?"
+        ],
+        "answerEn": "Water or tea?",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی؛ or بین دو گزینه قرار می گیرد.",
+          "retryFa": "دوباره گوش کن؛ نام دو نوشیدنی در دو طرف or هستند."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A04",
       "type": "comprehension",
-      "instructionFa": "گوش کن و با توجه به چیزی که شنیدی پاسخ بده.",
+      "instructionFa": "به پیشنهاد سارا گوش کن و دو گزینه را تشخیص بده.",
+      "promptFa": "سارا در پیشنهاد دوم بین کدام دو نوشیدنی حق انتخاب می دهد؟",
       "config": {
         "sourceTurnKeys": [
           "T05"
         ],
         "options": [
-          "آب و قهوه",
+          "آب و چای",
           "چای و قهوه",
-          "آب و چای"
+          "آب و قهوه"
         ],
-        "answerIndex": 2,
+        "answerIndex": 0,
         "transcriptAfterAttempt": true,
         "feedback": {
           "optionsFa": [
-            "coffee در این پیشنهاد نیست؛ به دو نام دو طرف or گوش کن.",
-            "این گزینه پیشنهاد دور قبل بود؛ این بار water را می شنوی.",
-            "Water or tea بین آب و چای حق انتخاب می دهد."
+            "درست است؛ Water or tea یعنی آب یا چای.",
+            "coffee در پیشنهاد دوم شنیده نمی شود.",
+            "tea در پیشنهاد دوم وجود دارد، نه coffee."
           ],
-          "correctFa": "Water or tea بین آب و چای حق انتخاب می دهد."
+          "correctFa": "Water or tea یعنی آب یا چای."
         }
       },
-      "promptFa": "در دور بعد پذیرایی، سارا این بار کدام دو نوشیدنی را پیشنهاد می کند؟",
-      "metadata": {
-        "learningDemand": "retrieval",
-        "purpose": "Unseen offer changes one drink and its order.",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A03"
-    },
-    {
-      "type": "response_choice",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
-      "config": {
-        "optionsEn": [
-          "Coffee, please.",
-          "Water, please.",
-          "Tea, please."
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "Coffee, please انتخاب مودبانه قهوه است.",
-            "این پاسخ آب می خواهد؛ در این موقعیت قهوه انتخاب توست.",
-            "این پاسخ چای می خواهد؛ به خواسته مشخص موقعیت توجه کن."
-          ],
-          "correctFa": "Coffee, please انتخاب مودبانه قهوه است."
-        }
-      },
-      "promptFa": "کنار میز گروه، بین چای و قهوه حق انتخاب داری و قهوه می خواهی. چه می گویی؟",
-      "metadata": {
-        "learningDemand": "changed_context",
-        "purpose": "changed_context",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A04"
-    },
-    {
-      "type": "fill_blank",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
-      "config": {
-        "sentenceEn": "Tea ___ coffee?",
-        "optionsEn": [
-          "and",
-          "or",
-          "from"
-        ],
-        "answerIndex": 1,
-        "feedback": {
-          "optionsFa": [
-            "and دو چیز را کنار هم می آورد؛ اینجا انتخاب بین دو چیز مطرح است.",
-            "or یعنی یا و انتخاب بین دو نوشیدنی را نشان می دهد.",
-            "from برای گفتن از کجا بودن بود؛ انتخاب بین نوشیدنی ها نمی سازد."
-          ],
-          "correctFa": "or یعنی یا و انتخاب بین دو نوشیدنی را نشان می دهد."
-        }
-      },
-      "activityKey": "A05",
       "metadata": {
         "evidenceKind": "recognition_or_selection"
       }
     },
     {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "انتخاب مناسب را با توجه به خواسته موقعیت پیدا کن.",
+      "promptFa": "بین چای و قهوه حق انتخاب داری و این بار قهوه می خواهی. چه می گویی؟",
+      "config": {
+        "optionsEn": [
+          "Coffee, please.",
+          "Water, please.",
+          "Where's my book?"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ این پاسخ قهوه را کوتاه و مودبانه انتخاب می کند.",
+            "این پاسخ آب را انتخاب می کند و با موقعیت هماهنگ نیست.",
+            "این جمله درباره پیدا کردن کتاب است، نه انتخاب نوشیدنی."
+          ],
+          "correctFa": "Coffee, please یعنی قهوه، لطفا."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "recognition_or_selection",
+        "learningDemand": "changed_context"
+      }
+    },
+    {
       "activityKey": "A06",
       "type": "speak",
-      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
-      "promptFa": "روبی هستی. این بار سارا آب یا چای پیشنهاد می کند و تو آب می خواهی. کوتاه و مودبانه انتخابت را بگو.",
+      "instructionFa": "جواب انگلیسی را نمی بینی. انتخابت را خودت بگو یا بنویس.",
+      "promptFa": "روبی هستی. سارا آب یا چای پیشنهاد می کند و تو آب می خواهی. کوتاه و مودبانه انتخابت را بگو.",
       "config": {
         "mode": "retrieval",
         "textEn": "Water, please.",
@@ -326,10 +320,10 @@
         ],
         "sourceTurnKey": "T06",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "نام نوشیدنی مورد نظرت را همراه عبارت مودبانه بگو.",
+        "hintFa": "نام نوشیدنی را با عبارت مودبانه ای که در درس های قبل دیده ای ترکیب کن.",
         "feedback": {
-          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
-          "retryFa": "نام نوشیدنی مورد نظرت را همراه عبارت مودبانه بگو."
+          "correctFa": "درست است؛ یک انتخاب کوتاه و مودبانه ساختی.",
+          "retryFa": "اول نام نوشیدنی مورد نظرت را بگو و بعد عبارت مودبانه را اضافه کن."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -337,7 +331,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+        "assessmentLimit": "Same-session bounded choice recall; not open-ended service interaction assessment."
       }
     }
   ],
@@ -346,7 +340,6 @@
   },
   "metadata": {
     "pilot": false,
-    "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",

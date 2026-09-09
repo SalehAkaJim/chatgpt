@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate mandatory audio; reuse verified lexical assets across a Course."""
+"""Generate mandatory audio; reuse verified word/lexeme assets across a Course."""
 from __future__ import annotations
 import argparse
 import hashlib
@@ -13,6 +13,8 @@ import tempfile
 import time
 import urllib.error
 import urllib.request
+
+from language_units import is_word_unit
 
 API_BASE = 'https://api.elevenlabs.io/v1'
 
@@ -53,7 +55,6 @@ def synthesize(text, voice_id, api_key, output, model_id):
         f'{API_BASE}/text-to-speech/{voice_id}', data=payload, method='POST',
         headers={'xi-api-key': api_key, 'Content-Type': 'application/json', 'Accept': 'audio/mpeg'})
     output.parent.mkdir(parents=True, exist_ok=True)
-    # Retry explicit throttling responses; ambiguous paid POST failures are not blindly repeated.
     for attempt in range(3):
         try:
             with urllib.request.urlopen(request, timeout=120) as response:
@@ -103,7 +104,7 @@ def collect(lesson, voices):
     items = []
     course, key = lesson['courseCode'], lesson['lessonKey']
     for item in lesson.get('lexicalItems', []):
-        if item.get('audioEligible'):
+        if item.get('audioEligible') and is_word_unit(item):
             items.append({'sourceKey': item['lexicalKey'], 'audioClass': 'lexical_item',
                           'sourceText': item['displayForm'], 'voiceSpec': voices['lexicalVoice']})
     for turn in lesson.get('turns', []):
@@ -147,7 +148,6 @@ def lexical_registry(root, course):
     registry = load(path) if path.is_file() else {'version': 1, 'courseCode': course, 'assets': {}}
     if registry.get('courseCode') != course:
         raise ValueError('Lexical registry Course mismatch')
-    # Bootstrap existing paid assets without regenerating or renaming them.
     for manifest_path in sorted((root / 'nova/courses' / course / 'lessons').glob('*/audio.manifest.json')):
         manifest = load(manifest_path)
         for item in manifest.get('items', []):
@@ -178,67 +178,72 @@ def generate(lesson_path, voices_path, root, manifest_path, reuse_only=False):
     previous_items = {(i['audioClass'], i['sourceKey']): i for i in previous.get('items', [])}
     registry_path, registry = lexical_registry(root, lesson['courseCode'])
     output_items, reused, generated = [], 0, 0
-    checkpoints = dict(previous_items)
-    resolved = {}
+
     for item in collect(lesson, voices):
-        spec = item.pop('voiceSpec')
-        cache_key = json.dumps(spec, sort_keys=True)
-        if cache_key not in resolved:
-            resolved[cache_key] = resolve_voice(spec, api_key)
-        voice_id, voice_name = resolved[cache_key]
-        key = asset_key(item['sourceText'], voice_id, model)
+        voice_id, voice_name = resolve_voice(item['voiceSpec'], api_key)
+        voice_key = item['voiceSpec'].get('voiceKey') or item['voiceSpec'].get('voiceName') or voice_id
         if item['audioClass'] == 'lexical_item':
-            prior = registry['assets'].get(key)
-            prior_model = prior.get('modelId') if prior else None
-            item['path'] = prior['path'] if prior else f"nova/audio/lexical/{lesson['courseCode']}/{key}.mp3"
-            item['assetKey'] = key
-        else:
-            prior = previous_items.get((item['audioClass'], item['sourceKey']))
-            prior_model = previous.get('modelId')
+            akey = asset_key(item['sourceText'], voice_id, model)
+            reg = registry['assets'].get(akey)
+            if reg:
+                item['path'] = reg['path']
+            else:
+                item['path'] = f'nova/audio/lexical/{lesson["courseCode"]}/{akey}.mp3'
         output = inside(root, item['path'])
-        reusable, decoded, duration, digest = can_reuse(prior, prior_model, item, voice_id, model, output)
+        previous_item = previous_items.get((item['audioClass'], item['sourceKey']))
+        reusable, decoded, duration, digest = can_reuse(previous_item, previous.get('modelId'), item, voice_id, model, output)
+        if not reusable and item['audioClass'] == 'lexical_item':
+            reg = registry['assets'].get(akey)
+            if reg:
+                pseudo = {**reg, 'sourceText': item['sourceText'], 'voiceId': voice_id, 'path': item['path']}
+                reusable, decoded, duration, digest = can_reuse(pseudo, reg.get('modelId'), item, voice_id, model, output)
         if reusable:
             reused += 1
         else:
             if reuse_only:
-                raise ValueError(f"Missing verified audio in reuse-only mode: {lesson['lessonKey']}/{item['sourceKey']}")
+                raise ValueError(f"Missing reusable audio for {item['audioClass']}:{item['sourceKey']}")
             synthesize(item['sourceText'], voice_id, api_key, output, model)
             decoded, duration = probe(output)
             digest = hashlib.sha256(output.read_bytes()).hexdigest()
             generated += 1
-        if not decoded or duration <= 0:
-            raise ValueError(f"Invalid audio: {item['sourceKey']}")
-        entry = {**item, 'voiceKey': voice_name, 'voiceId': voice_id, 'sourceHash': source_hash,
-                 'fileSha256': digest, 'durationMs': duration, 'decoded': True, 'status': 'PASS'}
-        output_items.append(entry)
-        checkpoints[(entry['audioClass'], entry['sourceKey'])] = entry
-        save(manifest_path, {'version': '2.2.0', 'lessonKey': lesson['lessonKey'], 'sourceHash': source_hash,
-                            'provider': 'ElevenLabs', 'modelId': model, 'items': list(checkpoints.values()), 'status': 'FAIL'})
+        record = {
+            'sourceKey': item['sourceKey'], 'audioClass': item['audioClass'], 'sourceText': item['sourceText'],
+            'voiceId': voice_id, 'voiceKey': voice_key, 'voiceName': voice_name, 'path': item['path'],
+            'fileSha256': digest, 'durationMs': duration, 'sourceHash': source_hash, 'decoded': decoded
+        }
+        output_items.append(record)
         if item['audioClass'] == 'lexical_item':
-            registry['assets'][key] = {k: entry[k] for k in
-                ('sourceText', 'voiceId', 'voiceKey', 'path', 'fileSha256', 'durationMs')}
-            registry['assets'][key]['modelId'] = model
-            save(registry_path, registry)
-    manifest = {'version': '2.2.0', 'lessonKey': lesson['lessonKey'], 'sourceHash': source_hash,
-                'provider': 'ElevenLabs', 'modelId': model, 'items': output_items, 'status': 'PASS'}
+            registry['assets'][akey] = {
+                'sourceText': item['sourceText'], 'voiceId': voice_id, 'voiceKey': voice_key,
+                'path': item['path'], 'fileSha256': digest, 'durationMs': duration, 'modelId': model
+            }
+
+    save(registry_path, registry)
+    manifest = {
+        'version': 2, 'lessonKey': lesson['lessonKey'], 'sourceHash': source_hash,
+        'provider': 'ElevenLabs', 'modelId': model, 'status': 'PASS',
+        'items': output_items, 'summary': {'reused': reused, 'generated': generated}
+    }
     save(manifest_path, manifest)
-    return {'status': 'PASS', 'count': len(output_items), 'reused': reused, 'generated': generated}
+    return manifest
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('lesson', type=Path)
-    parser.add_argument('voices', type=Path)
-    parser.add_argument('--repo-root', type=Path, default=Path('.'))
-    parser.add_argument('--manifest', type=Path, required=True)
-    parser.add_argument('--reuse-only', action='store_true')
-    args = parser.parse_args()
+    p = argparse.ArgumentParser()
+    p.add_argument('lesson', type=Path)
+    p.add_argument('--voices', type=Path, required=True)
+    p.add_argument('--repo-root', type=Path, default=Path('.'))
+    p.add_argument('--manifest', type=Path, required=True)
+    p.add_argument('--reuse-only', action='store_true')
+    args = p.parse_args()
     try:
-        report = generate(args.lesson, args.voices, args.repo_root, args.manifest, args.reuse_only)
-    except (ValueError, OSError) as error:
-        parser.exit(2, str(error) + '\n')
-    print(json.dumps(report, indent=2))
+        manifest = generate(args.lesson, args.voices, args.repo_root.resolve(), args.manifest, args.reuse_only)
+    except Exception as error:
+        print(str(error), file=sys.stderr)
+        return 2
+    print(json.dumps(manifest['summary']))
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())

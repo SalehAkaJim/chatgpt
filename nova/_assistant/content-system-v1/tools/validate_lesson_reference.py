@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Validate canonical Lesson vocabulary against Nova's production reference layer.
+"""Validate canonical Lesson words/lexemes against Nova's production reference layer.
 
-Policy is intentionally forward-only. Existing Lessons 1–20 predate the reference
-layer and remain valid. From Lesson 21 onward, every newly taught single-word target
-must point to one exact, production-eligible reference sense via
-`lexicalItem.metadata.referenceKey`. Multiword expressions remain Nova-authored units.
+Target words should resolve to one exact production reference sense whenever the
+reference layer has coverage. A real word does not stop being a word because a
+source snapshot has a gap: narrowly-scoped Nova-authored curriculum words may use
+an explicit, auditable reference-gap fallback. Phrases/constructions are not put
+in lexicalItems to work around missing reference data.
 """
 from __future__ import annotations
 
@@ -16,6 +17,16 @@ from reference_catalog import ReferenceCatalog
 from reference_data import normalize_lemma, normalize_persian, normalize_pos
 
 DEFAULT_ENFORCE_FROM_SORT_ORDER = 21
+
+
+def _reference_gap_fallback(metadata: dict) -> tuple[bool, str]:
+    allowed = (
+        metadata.get("source") == "nova_authored_curriculum_word"
+        and metadata.get("referenceGap") is True
+        and bool(str(metadata.get("referenceGapReason") or "").strip())
+        and not metadata.get("referenceKey")
+    )
+    return allowed, str(metadata.get("referenceGapReason") or "").strip()
 
 
 def validate_lesson_reference(
@@ -40,6 +51,7 @@ def validate_lesson_reference(
         pos = normalize_pos(lexical.get("partOfSpeech"))
         metadata = lexical.get("metadata") if isinstance(lexical.get("metadata"), dict) else {}
         selected_reference_key = metadata.get("referenceKey")
+        fallback_allowed, fallback_reason = _reference_gap_fallback(metadata)
         row = {
             "lexicalKey": lexical_key,
             "role": role,
@@ -51,15 +63,16 @@ def validate_lesson_reference(
             "referenceKeys": [],
         }
 
-        if item_type != "word":
-            if role == "target":
-                row["status"] = "nova_authored_multiword"
+        # Canonical schema should already guarantee that lexicalItems contains
+        # only true word/lexeme units. Reference validation is about sense/source
+        # evidence, not about allowing arbitrary formulas into the word layer.
+        if item_type not in {"word", "expression", "phrasal_verb"}:
+            row["status"] = "invalid_nonword_unit"
+            if enforced:
+                errors.append(f"{lesson_key}: non-word unit {lexical_key} cannot live in lexicalItems")
             items.append(row)
             continue
 
-        # Target words are the strict production boundary. Review/support words are
-        # audited but do not block because they may be inherited from pre-reference
-        # Lessons or intentionally supplied as contextual language.
         exact_production = catalog.query_lexical(
             levels=[level],
             lemma=lemma,
@@ -79,7 +92,12 @@ def validate_lesson_reference(
             })
 
             if role == "target" and enforced:
-                if not selected_reference_key:
+                if fallback_allowed:
+                    row["status"] = "unnecessary_reference_gap_fallback"
+                    errors.append(
+                        f"{lesson_key}: target word {lexical_key} declares a reference gap even though an exact production reference exists"
+                    )
+                elif not selected_reference_key:
                     row["status"] = "missing_reference_link"
                     errors.append(
                         f"{lesson_key}: target word {lexical_key} ({lemma}/{pos or 'unknown POS'}) "
@@ -117,8 +135,6 @@ def validate_lesson_reference(
                         "translationFa": candidate_by_key[selected_reference_key].get("translationFa"),
                     }
         else:
-            # Get review-only exact records for diagnostics. This never satisfies
-            # the target-word production gate.
             exact_any = catalog.query_lexical(
                 levels=[level],
                 lemma=lemma,
@@ -141,10 +157,18 @@ def validate_lesson_reference(
             ]
 
             if role == "target" and enforced:
-                errors.append(
-                    f"{lesson_key}: target word {lexical_key} ({lemma}/{pos or 'unknown POS'}) "
-                    f"has no exact production-eligible {level} reference record"
-                )
+                if fallback_allowed:
+                    row["status"] = "nova_authored_reference_gap_word"
+                    row["referenceGapReason"] = fallback_reason
+                    warnings.append(
+                        f"{lesson_key}: target word {lexical_key} uses explicit Nova reference-gap fallback: {fallback_reason}"
+                    )
+                else:
+                    errors.append(
+                        f"{lesson_key}: target word {lexical_key} ({lemma}/{pos or 'unknown POS'}) "
+                        f"has no exact production-eligible {level} reference record; use a real word row with explicit "
+                        "nova_authored_curriculum_word/referenceGap metadata only when the reference snapshot truly has a gap"
+                    )
             elif role == "target":
                 warnings.append(
                     f"{lesson_key}: legacy target word {lexical_key} has no exact production reference match"
@@ -153,7 +177,7 @@ def validate_lesson_reference(
         items.append(row)
 
     return {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "lessonKey": lesson_key,
         "levelKey": level,
         "sortOrder": sort_order,

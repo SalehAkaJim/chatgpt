@@ -1,1 +1,258 @@
-{"schemaVersion":"2.2.0","contentSystemVersion":"1","courseCode":"en-fa","levelKey":"A1","lessonKey":"EN-A1-L-0017","sortOrder":17,"titleEn":"Which day?","titleFa":"چه روزی؟","descriptionFa":"هماهنگ کردن یک روز ساده برای برنامه بعدی کتابخانه","primaryOutcomeKey":"A1-INTERACTION-CHOOSE-DAY","outcomeFa":"می توانی روز دوشنبه را از روی یک کارت کوتاه بفهمی و در پاسخ به سوال روز برنامه آن را بگویی.","scenarioFa":"برای نشست بعدی کتابخانه، لیو درباره روز برنامه می پرسد و کارت برنامه هم روز را نشان می دهد. نقش تو لیام است.","prerequisiteOutcomeKeys":["A1-INTERACTION-ASK-TIME"],"curriculum":{"startingKnowledge":"early_a1_after_greetings","targetConstructions":[{"key":"EN-CONSTR-WHAT-DAY","form":"What day?","meaningFa":"پرسیدن روز در یک موقعیت روشن"},{"key":"EN-CONSTR-ON-DAY","form":"On + day","meaningFa":"گفتن روز یک برنامه"}],"supportLanguage":[],"assessmentBoundary":"Guided speech and reconstruction are supported practice. Choice tasks assess recognition or selection. The final hidden-answer task records bounded first-attempt evidence; accepted alternatives are included only when they are natural for the same context. This does not certify open-ended proficiency or pronunciation.","transferPlan":{"mode":"same_lesson","intent":"Introduce only Monday in the first day Lesson, reuse the time-question pattern, and delay additional weekday vocabulary."},"story":{"arcKey":"EN-A1-LIBRARY","sceneKey":"EN-A1-SCENE-0017","learnerRoleKey":"liam","participants":["liam","leo"],"introducedCharacterKeys":[],"relationshipState":"already_known","continuesLessonKey":"EN-A1-L-0011","dependsOnLessonKeys":["EN-A1-L-0011"],"settingFa":"کتابخانه، هماهنگ کردن روز برنامه بعدی","storyBeatFa":"لیام و لیو روز نشست بعدی را هماهنگ می کنند؛ برای سبک ماندن درس فقط Monday وارد می شود."},"reviewLinks":[{"lessonKey":"EN-A1-L-0016","activityKeys":["A02","A05"],"learningDemand":"transfer","note":"Move from answering a time question to reading and answering a day question."},{"lessonKey":"EN-A1-L-0011","activityKeys":["A03"],"learningDemand":"retrieval","note":"Return to the library arc while using already familiar yes/no interaction."}],"pedagogyVersion":2},"lexicalItems":[{"lexicalKey":"EN-LEX-DAY-01","itemType":"word","displayForm":"day","translationFa":"روز","role":"target","audioEligible":true,"partOfSpeech":"noun"},{"lexicalKey":"EN-LEX-MONDAY-01","itemType":"word","displayForm":"Monday","translationFa":"دوشنبه","role":"target","audioEligible":true,"partOfSpeech":"noun","senseKey":"day_of_week"},{"lexicalKey":"EN-LEX-ON-DAY-01","itemType":"word","displayForm":"on","translationFa":"در؛ برای روز مشخص","role":"target","audioEligible":true,"partOfSpeech":"preposition","senseKey":"day_time"},{"lexicalKey":"EN-LEX-YES-01","itemType":"word","displayForm":"yes","translationFa":"بله","role":"review","audioEligible":true,"partOfSpeech":"interjection"}],"turns":[{"turnKey":"T01","role":"character","characterKey":"leo","textEn":"What day?","translationFa":"چه روزی؟","audioRequired":true},{"turnKey":"T02","role":"learner","characterKey":"liam","textEn":"On Monday.","translationFa":"دوشنبه.","audioRequired":true,"speechTargetEn":"On Monday.","acceptedSpeechEn":["On Monday."]},{"turnKey":"T03","role":"character","characterKey":"leo","textEn":"Monday?","translationFa":"دوشنبه؟","audioRequired":true},{"turnKey":"T04","role":"learner","characterKey":"liam","textEn":"Yes.","translationFa":"بله.","audioRequired":true,"speechTargetEn":"Yes.","acceptedSpeechEn":["Yes."]},{"turnKey":"T05","role":"learner","characterKey":"liam","textEn":"On Monday.","translationFa":"دوشنبه.","audioRequired":true,"speechTargetEn":"On Monday.","acceptedSpeechEn":["On Monday."],"metadata":{"usage":"retrieval_model_after_help"}}],"activities":[{"activityKey":"A01","type":"lexical_teach","instructionFa":"روز و عبارت اصلی این درس را یاد بگیر.","config":{"lexicalKeys":["EN-LEX-DAY-01","EN-LEX-MONDAY-01","EN-LEX-ON-DAY-01"],"explanationFa":"What day? یعنی چه روزی؟ Monday یعنی دوشنبه. برای گفتن روز برنامه می توانی بگویی On Monday. روزهای دیگر را فعلا اضافه نمی کنیم."}},{"activityKey":"A02","type":"dialogue","instructionFa":"سوال لیو را گوش کن و پاسخ لیام را بگو.","config":{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E02","promptTurnKey":"T03","responseTurnKey":"T04","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}},{"activityKey":"A03","type":"response_choice","instructionFa":"متن کوتاه انگلیسی را بخوان و پاسخ مناسب را انتخاب کن.","promptEn":"Book club — Monday","promptFa":"کارت برنامه کتابخانه را بخوان. برنامه چه روزی است؟","config":{"options":["دوشنبه","ساعت شش","اتاق یک"],"answerIndex":0,"feedback":{"optionsFa":["Monday یعنی دوشنبه.","روی کارت زمان نوشته نشده است.","روی کارت شماره اتاق نوشته نشده است."],"correctFa":"Monday یعنی دوشنبه."}},"metadata":{"learningDemand":"recognition","purpose":"reading_for_key_information","evidenceKind":"recognition_or_selection","skillFocus":"reading"}},{"activityKey":"A04","type":"fill_blank","instructionFa":"جمله کوتاه را با گزینه مناسب کامل کن.","config":{"sentenceEn":"On ___","optionsEn":["Monday","six","room"],"answerIndex":0,"feedback":{"optionsFa":["On Monday یعنی در روز دوشنبه.","six عدد شش است و با On برای روز این جمله را نمی سازد.","room یعنی اتاق و اینجا روز لازم است."],"correctFa":"On Monday یعنی در روز دوشنبه."}},"metadata":{"learningDemand":"recognition","purpose":"controlled_day_phrase","evidenceKind":"recognition_or_selection"}},{"activityKey":"A05","type":"speak","instructionFa":"این بار پاسخ آماده را نمی بینی. خودت جواب را بگو یا بنویس.","promptFa":"نقش تو لیام است. لیو می پرسد What day? و برنامه دوشنبه است. جواب بده.","config":{"mode":"retrieval","textEn":"On Monday.","acceptedAnswersEn":["On Monday.","Monday."],"sourceTurnKey":"T05","showAnswerTextBeforeAttempt":false,"modelAccess":"explicit_help","hintFa":"روز دوشنبه را بگو؛ در این موقعیت On Monday و Monday هر دو طبیعی هستند.","feedback":{"correctFa":"پاسخت با یکی از پاسخ های طبیعی این موقعیت هماهنگ است.","retryFa":"روز دوشنبه را بگو؛ در این موقعیت On Monday و Monday هر دو طبیعی هستند."},"evidenceKind":"bounded_retrieval","practiceOnly":false},"metadata":{"learningDemand":"retrieval","purpose":"meaning_cued_hidden_answer","evidenceKind":"bounded_retrieval","skillFocus":"speaking"}}],"review":{"pendingDecisions":[]},"metadata":{"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange","qualityStage":"model_reviewed_for_testing"}}
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0017",
+  "sortOrder": 17,
+  "titleEn": "What day?",
+  "titleFa": "چه روزی؟",
+  "descriptionFa": "لیام و لیو روز برنامه بعدی کتابخانه را هماهنگ می کنند و فقط Monday را در یک chunk ثابت یاد می گیرند.",
+  "primaryOutcomeKey": "A1-INTERACTION-CHOOSE-DAY",
+  "outcomeFa": "زبان آموز می تواند سوال کوتاه درباره روز را بفهمد و برای برنامه دوشنبه پاسخ کوتاه بدهد.",
+  "scenarioFa": "در کتابخانه، لیو درباره روز نشست بعدی می پرسد و کارت برنامه Monday را نشان می دهد. نقش تو لیام است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-ASK-TIME",
+    "A1-INTERACTION-ACCEPT-DECLINE"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_time_and_schedule_labels",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-WHAT-DAY",
+        "form": "What day?",
+        "meaningFa": "پرسیدن روز وقتی موضوع برنامه روشن است"
+      },
+      {
+        "key": "EN-CONSTR-ON-MONDAY",
+        "form": "On Monday.",
+        "meaningFa": "گفتن یک روز ثابت برای برنامه"
+      }
+    ],
+    "supportLanguage": [],
+    "assessmentBoundary": "The Lesson teaches Monday only inside a fixed schedule response, not general weekday vocabulary. Final retrieval is bounded to On Monday.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Transfer the short schedule-question pattern from clock time to one weekday without expanding the weekday set."
+    },
+    "story": {
+      "arcKey": "EN-A1-LIBRARY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0017",
+      "learnerRoleKey": "liam",
+      "participants": [
+        "liam",
+        "leo"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0011",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0011"
+      ],
+      "settingFa": "کتابخانه، هماهنگ کردن روز نشست بعدی",
+      "storyBeatFa": "لیام و لیو بعد از گفت و گوی پذیرایی قبلی، این بار یک روز ساده برای نشست بعدی هماهنگ می کنند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0016",
+        "activityKeys": [
+          "A03",
+          "A05"
+        ],
+        "learningDemand": "transfer",
+        "note": "What time?/At six transfers to the parallel schedule pattern What day?/On Monday."
+      },
+      {
+        "lessonKey": "EN-A1-L-0011",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "The library arc returns after five intervening Lessons with the same familiar pair in a new planning task."
+      }
+    ],
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "What day?",
+      "translationFa": "چه روزی؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "On Monday.",
+      "translationFa": "دوشنبه.",
+      "speechTargetEn": "On Monday.",
+      "acceptedSpeechEn": [
+        "On Monday."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "Monday?",
+      "translationFa": "دوشنبه؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "Yes.",
+      "translationFa": "بله.",
+      "speechTargetEn": "Yes.",
+      "acceptedSpeechEn": [
+        "Yes."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T05",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "On Monday.",
+      "translationFa": "دوشنبه.",
+      "speechTargetEn": "On Monday.",
+      "acceptedSpeechEn": [
+        "On Monday."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "سوال لیو را گوش کن و جواب لیام را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "response_choice",
+      "instructionFa": "کارت کوتاه برنامه را بخوان.",
+      "promptEn": "Book club — Monday",
+      "promptFa": "نشست کتاب چه روزی است؟",
+      "config": {
+        "options": [
+          "دوشنبه",
+          "ساعت شش",
+          "اتاق دو"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ Monday یعنی دوشنبه در این کارت برنامه.",
+            "این کارت روز را نشان می دهد، نه ساعت.",
+            "این کارت روز را نشان می دهد، نه شماره اتاق."
+          ],
+          "correctFa": "برنامه دوشنبه است."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "purpose": "reading_for_key_information",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "reading"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "پاسخ مناسب را برای سوال روز انتخاب کن.",
+      "promptFa": "لیو می پرسد What day? و کارت برنامه Monday را نشان می دهد. چه می گویی؟",
+      "config": {
+        "optionsEn": [
+          "On Monday.",
+          "At six.",
+          "Room two, please."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ این پاسخ روز برنامه را می گوید.",
+            "این پاسخ ساعت را می گوید.",
+            "این پاسخ اتاق را انتخاب می کند."
+          ],
+          "correctFa": "On Monday یعنی دوشنبه."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی را نمی بینی. روز برنامه را خودت بگو.",
+      "promptFa": "لیام هستی. لیو می پرسد برنامه چه روزی است و برنامه دوشنبه است. پاسخ کوتاه بده.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "On Monday.",
+        "acceptedAnswersEn": [
+          "On Monday."
+        ],
+        "sourceTurnKey": "T05",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از chunk روز این درس استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ روز برنامه را گفتی.",
+          "retryFa": "پاسخ این درس با On شروع می شود و Monday را دارد."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded recall of one fixed weekday; not general weekday mastery."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}
