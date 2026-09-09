@@ -1,11 +1,11 @@
 {
   "version": 1,
   "lessonKey": "EN-A1-L-0017",
-  "sourceHash": "28a9489e562544b88a90d291a150a123a1486c9dff43089a0c6b59b2fe9dc762",
+  "sourceHash": "04f08d17b6aae4b5f11402ce698698795acfbda7d3ab34b6c69c3cc25e21aa18",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "reviewerType": "model",
   "reviewedAt": "2026-09-09",
-  "scope": "Model/editor review after repairing the weekday word model while keeping the first weekday response intentionally bounded; not an independent human or learner test.",
+  "scope": "Model/editor review after repairing the weekday word model and binding Monday to its exact production Reference while keeping the first weekday response intentionally bounded; not an independent human or learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -17,7 +17,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "on and Monday are independent target words, while the Lesson explicitly limits practice to the fixed On Monday response and defers productive On + weekday generalization until a second weekday exists."
+      "evidence": "on and Monday are independent target words, Monday is bound to its exact production Reference, and the Lesson explicitly limits practice to the fixed On Monday response while deferring productive On + weekday generalization until a second weekday exists."
     },
     "distractorQuality": {
       "score": 4,
@@ -41,7 +41,7 @@
     },
     "overallCoherence": {
       "score": 5,
-      "evidence": "Word teaching, card reading, dialogue, selection and final retrieval all serve understanding and stating the Monday program day without overclaiming a general weekday construction."
+      "evidence": "Word teaching, Reference binding, card reading, dialogue, selection and final retrieval all serve understanding and stating the Monday program day without overclaiming a general weekday construction."
     },
     "learnerExperience": {
       "score": 3,
@@ -55,8 +55,8 @@
     "Final ElevenLabs prosody and delayed retention remain unmeasured."
   ],
   "resolvedFindings": [
-    "Monday is now an independent word rather than existing only inside On Monday.",
-    "on is separately represented in the word layer for this taught use.",
+    "Monday is an independent word and is now bound to exact production Reference EN-REF-511B8AEB352146D3828E.",
+    "on remains separately represented in the word layer with an explicit Reference-gap fallback because its exact bounded weekday use is not production-eligible in the current snapshot.",
     "The Lesson does not prematurely declare On + weekday productive; that generativity requirement starts when a second weekday is introduced.",
     "On Monday remains compositional lesson text and is not inserted as a fake vocabulary row."
   ]
