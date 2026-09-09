@@ -29,8 +29,8 @@
     23,
     24
   ],
-  "passedPrefixLength": 24,
-  "status": "PASS",
+  "passedPrefixLength": 23,
+  "status": "FAIL",
   "lessonReports": [
     {
       "lessonKey": "EN-A1-L-0001",
@@ -198,12 +198,33 @@
     {
       "lessonKey": "EN-A1-L-0016",
       "sortOrder": 16,
-      "status": "PASS",
+      "status": "FAIL",
       "automatedScore": 100,
       "canonicalStatus": "PASS",
       "referenceStatus": "PASS",
-      "referenceWarnings": [],
-      "errors": []
+      "referenceWarnings": [
+        "EN-A1-L-0016: target word EN-LEX-SIX-01 uses explicit Nova reference-gap fallback: The current A1 reference snapshot has no exact production record for the basic cardinal word six."
+      ],
+      "errors": [
+        {
+          "code": "CQ-H03",
+          "message": "Scored answer requires support/incidental material.",
+          "data": {
+            "activityKey": "A05",
+            "lexicalKey": "EN-LEX-AT-TIME-01",
+            "role": "support"
+          }
+        },
+        {
+          "code": "CQ-H03",
+          "message": "Scored answer requires support/incidental material.",
+          "data": {
+            "activityKey": "A06",
+            "lexicalKey": "EN-LEX-AT-TIME-01",
+            "role": "support"
+          }
+        }
+      ]
     },
     {
       "lessonKey": "EN-A1-L-0017",
@@ -291,7 +312,29 @@
     }
   ],
   "storyErrors": [],
-  "factoryDesignStatus": "PASS",
-  "factoryDesignErrors": [],
-  "errors": []
+  "factoryDesignStatus": "FAIL",
+  "factoryDesignErrors": [
+    "DG-H02 EN-A1-L-0016 EN-CONSTR-AT-NUMBER: filler 'seven' was used productively but no independent word/lexeme exists by Lesson 20"
+  ],
+  "errors": [
+    "DG-H02 EN-A1-L-0016 EN-CONSTR-AT-NUMBER: filler 'seven' was used productively but no independent word/lexeme exists by Lesson 20",
+    {
+      "code": "CQ-H03",
+      "message": "Scored answer requires support/incidental material.",
+      "data": {
+        "activityKey": "A05",
+        "lexicalKey": "EN-LEX-AT-TIME-01",
+        "role": "support"
+      }
+    },
+    {
+      "code": "CQ-H03",
+      "message": "Scored answer requires support/incidental material.",
+      "data": {
+        "activityKey": "A06",
+        "lexicalKey": "EN-LEX-AT-TIME-01",
+        "role": "support"
+      }
+    }
+  ]
 }
