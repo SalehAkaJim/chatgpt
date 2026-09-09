@@ -1,0 +1,141 @@
+name: Nova Language Reference Extensions Sync
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/nova-language-reference-sync.yml'
+      - 'nova/reference/en-fa/sources.lock.json'
+      - 'nova/reference/en-fa/manifest.json'
+      - 'nova/curriculum/en-fa/factory.config.json'
+      - 'nova/courses/en-fa/lessons/**/lesson.source.json'
+      - 'nova/_assistant/content-system-v1/tools/factory_config.py'
+      - 'nova/_assistant/content-system-v1/tools/sync_language_reference_extensions.py'
+      - 'nova/_assistant/content-system-v1/tools/register_reference_snapshot.py'
+  schedule:
+    - cron: '47 4 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-language-reference-main
+  cancel-in-progress: false
+
+jobs:
+  sync-language-reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Resolve canonical Lessons for corpus queries
+        run: |
+          PYTHONPATH=nova/_assistant/content-system-v1/tools python - <<'PY'
+          import json
+          from pathlib import Path
+          from factory_config import discover_lesson_numbers
+          root = Path('.').resolve()
+          numbers = discover_lesson_numbers(root, 'en-fa')
+          Path('/tmp/nova-language-sync-config.json').write_text(
+              json.dumps({'generatedLessons': numbers}, indent=2) + '\n', encoding='utf-8'
+          )
+          print({'lessonCount': len(numbers), 'lastLesson': numbers[-1] if numbers else 0})
+          PY
+      - name: Sync CMUdict, NGSL-Spoken, and Tatoeba evidence
+        run: |
+          python nova/_assistant/content-system-v1/tools/sync_language_reference_extensions.py \
+            --repo-root . \
+            --course en-fa \
+            --config /tmp/nova-language-sync-config.json
+      - name: Preserve generatedAt on semantic no-op syncs
+        run: |
+          python - <<'PY'
+          import json, pathlib, subprocess
+          path = pathlib.Path('nova/reference/en-fa/extensions_manifest.json')
+          current = json.loads(path.read_text())
+          try:
+              old_raw = subprocess.check_output(['git','show','HEAD:nova/reference/en-fa/extensions_manifest.json'], text=True)
+              old = json.loads(old_raw)
+          except Exception:
+              old = None
+          if old:
+              a = {k:v for k,v in current.items() if k != 'generatedAt'}
+              b = {k:v for k,v in old.items() if k != 'generatedAt'}
+              if a == b:
+                  current['generatedAt'] = old.get('generatedAt')
+                  path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Sanity check extension snapshots
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          root = pathlib.Path('nova/reference/en-fa')
+          p = json.loads((root/'pronunciation/cmudict.json').read_text())
+          f = json.loads((root/'frequency/ngsl_spoken.json').read_text())
+          u = json.loads((root/'usage/tatoeba.json').read_text())
+          assert p['matchedLemmaCount'] >= 500, p['matchedLemmaCount']
+          assert f['itemCount'] >= 500, f['itemCount']
+          if u['queryCount'] > 0:
+              assert u['evidenceQueryCount'] > 0, u
+          print({'pronunciation': p['matchedLemmaCount'], 'spoken': f['itemCount'], 'usageQueries': u['queryCount'], 'usageEvidence': u['evidenceQueryCount'], 'unavailable': u.get('unavailableQueryCount', 0)})
+          PY
+      - name: Commit pinned extension snapshots
+        run: |
+          git config user.name "nova-language-reference-bot"
+          git config user.email "nova-language-reference-bot@users.noreply.github.com"
+          git add nova/reference/en-fa/pronunciation nova/reference/en-fa/frequency nova/reference/en-fa/usage nova/reference/en-fa/extensions_manifest.json
+          if git diff --cached --quiet; then
+            echo "Language reference extensions unchanged."
+          else
+            git commit -m "Sync Nova language reference extensions"
+          fi
+      - name: Rebase and refresh extension evidence against latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+          PYTHONPATH=nova/_assistant/content-system-v1/tools python - <<'PY'
+          import json
+          from pathlib import Path
+          from factory_config import discover_lesson_numbers
+          root = Path('.').resolve()
+          numbers = discover_lesson_numbers(root, 'en-fa')
+          Path('/tmp/nova-language-sync-config.json').write_text(json.dumps({'generatedLessons': numbers}, indent=2) + '\n')
+          PY
+          python nova/_assistant/content-system-v1/tools/sync_language_reference_extensions.py \
+            --repo-root . \
+            --course en-fa \
+            --config /tmp/nova-language-sync-config.json
+          python - <<'PY'
+          import json, pathlib
+          root = pathlib.Path('nova/reference/en-fa')
+          p = json.loads((root/'pronunciation/cmudict.json').read_text())
+          f = json.loads((root/'frequency/ngsl_spoken.json').read_text())
+          u = json.loads((root/'usage/tatoeba.json').read_text())
+          assert p['matchedLemmaCount'] >= 500
+          assert f['itemCount'] >= 500
+          if u['queryCount'] > 0:
+              assert u['evidenceQueryCount'] > 0
+          PY
+          git add nova/reference/en-fa/pronunciation nova/reference/en-fa/frequency nova/reference/en-fa/usage nova/reference/en-fa/extensions_manifest.json
+          if ! git diff --cached --quiet; then
+            if git log -1 --pretty=%B | grep -q '^Sync Nova language reference extensions$'; then
+              git commit --amend --no-edit
+            else
+              git commit -m "Sync Nova language reference extensions"
+            fi
+          fi
+      - name: Register reusable immutable snapshot
+        run: |
+          python nova/_assistant/content-system-v1/tools/register_reference_snapshot.py --repo-root . --course en-fa
+          git add nova/reference-snapshots/en-fa/
+          if ! git diff --cached --quiet; then
+            git commit -m "Register Nova language reference snapshot"
+          fi
+      - name: Push validated extension snapshot and archive
+        run: git push origin HEAD:main
