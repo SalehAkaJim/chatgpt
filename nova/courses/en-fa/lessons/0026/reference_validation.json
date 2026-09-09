@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0026",
+  "levelKey": "A1",
+  "sortOrder": 26,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-AT-TIME-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "at",
+      "partOfSpeech": "preposition",
+      "selectedReferenceKey": null,
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-0D91DBC4EE67C22DB0BA"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-0D91DBC4EE67C22DB0BA",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-SIX-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "six",
+      "partOfSpeech": "numeral",
+      "selectedReferenceKey": null,
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-F68F2028439D23B07404"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-F68F2028439D23B07404",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "room",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-D8B2B1429B2580871B77",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-D8B2B1429B2580871B77",
+        "EN-REF-920AB60876EB00716D0A"
+      ],
+      "referenceTranslationsFa": [
+        "اتاق",
+        "فضا"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-D8B2B1429B2580871B77",
+        "translationFa": "اتاق"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ONE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "one",
+      "partOfSpeech": "numeral",
+      "selectedReferenceKey": null,
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-2D929CE4C80ED3AA4C38"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-2D929CE4C80ED3AA4C38",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-TWO-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "two",
+      "partOfSpeech": "numeral",
+      "selectedReferenceKey": null,
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-9BF778266108C2D6AD3C"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-9BF778266108C2D6AD3C",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "89e91caffbe02f259488a9dd4868d83d8f9df838f3a8c6f15b6be7fd6d713ac8"
+}

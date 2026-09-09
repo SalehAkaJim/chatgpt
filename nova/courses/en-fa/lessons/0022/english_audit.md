@@ -1,4 +1,4 @@
-<!-- sourceHash: 591ae4bc478b194de477846b04de49415f35c7223960a38a10af9a24c75d08f8 -->
+<!-- sourceHash: b199cd0fc54aaeff74c5d62eb8961fd6274069ee090c4901848cb3879842fb7a -->
 # English Audit — EN-A1-L-0022
 
 **Lesson:** I want water
@@ -54,7 +54,7 @@ I want tea.
 
 **A05 · response_choice**
 
-- **optionsEn:** I want tea. | I like tea. | Tea or coffee?
+- **optionsEn:** I want water. | I like water. | Water or tea?
 
 **A06 · speak**
 

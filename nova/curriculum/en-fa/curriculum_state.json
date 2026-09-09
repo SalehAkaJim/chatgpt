@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "courseCode": "en-fa",
-  "lastLessonSortOrder": 25,
+  "lastLessonSortOrder": 26,
   "knownLexical": [
     {
       "lemma": "name",
@@ -101,7 +101,7 @@
     {
       "lemma": "one",
       "firstLesson": 14,
-      "lastLesson": 25,
+      "lastLesson": 26,
       "roles": [
         "review",
         "target"
@@ -111,7 +111,7 @@
     {
       "lemma": "room",
       "firstLesson": 14,
-      "lastLesson": 25,
+      "lastLesson": 26,
       "roles": [
         "review",
         "target"
@@ -123,7 +123,7 @@
     {
       "lemma": "two",
       "firstLesson": 14,
-      "lastLesson": 25,
+      "lastLesson": 26,
       "roles": [
         "review",
         "target"
@@ -155,7 +155,7 @@
     {
       "lemma": "at",
       "firstLesson": 16,
-      "lastLesson": 20,
+      "lastLesson": 26,
       "roles": [
         "review",
         "target"
@@ -165,7 +165,7 @@
     {
       "lemma": "six",
       "firstLesson": 16,
-      "lastLesson": 20,
+      "lastLesson": 26,
       "roles": [
         "review",
         "target"
@@ -262,8 +262,8 @@
     {
       "lemma": "be",
       "firstLesson": 1,
-      "lastLesson": 25,
-      "practiceCount": 22,
+      "lastLesson": 26,
+      "practiceCount": 25,
       "surfaceForms": [
         "am",
         "are",
@@ -624,8 +624,8 @@
     {
       "lemma": "no",
       "firstLesson": 11,
-      "lastLesson": 25,
-      "practiceCount": 6,
+      "lastLesson": 26,
+      "practiceCount": 7,
       "surfaceForms": [
         "no"
       ]
@@ -651,8 +651,8 @@
     {
       "lemma": "one",
       "firstLesson": 14,
-      "lastLesson": 25,
-      "practiceCount": 3,
+      "lastLesson": 26,
+      "practiceCount": 4,
       "surfaceForms": [
         "one"
       ]
@@ -660,8 +660,8 @@
     {
       "lemma": "room",
       "firstLesson": 14,
-      "lastLesson": 25,
-      "practiceCount": 6,
+      "lastLesson": 26,
+      "practiceCount": 9,
       "surfaceForms": [
         "room"
       ]
@@ -669,8 +669,8 @@
     {
       "lemma": "two",
       "firstLesson": 14,
-      "lastLesson": 25,
-      "practiceCount": 3,
+      "lastLesson": 26,
+      "practiceCount": 5,
       "surfaceForms": [
         "two"
       ]
@@ -687,8 +687,8 @@
     {
       "lemma": "at",
       "firstLesson": 16,
-      "lastLesson": 20,
-      "practiceCount": 5,
+      "lastLesson": 26,
+      "practiceCount": 6,
       "surfaceForms": [
         "at"
       ]
@@ -696,8 +696,8 @@
     {
       "lemma": "six",
       "firstLesson": 16,
-      "lastLesson": 20,
-      "practiceCount": 3,
+      "lastLesson": 26,
+      "practiceCount": 4,
       "surfaceForms": [
         "six"
       ]
@@ -795,8 +795,8 @@
     {
       "lemma": "in",
       "firstLesson": 25,
-      "lastLesson": 25,
-      "practiceCount": 2,
+      "lastLesson": 26,
+      "practiceCount": 5,
       "surfaceForms": [
         "in"
       ]
@@ -808,6 +808,15 @@
       "practiceCount": 3,
       "surfaceForms": [
         "not"
+      ]
+    },
+    {
+      "lemma": "we",
+      "firstLesson": 26,
+      "lastLesson": 26,
+      "practiceCount": 3,
+      "surfaceForms": [
+        "we"
       ]
     }
   ],
@@ -915,6 +924,17 @@
         "target_construction"
       ],
       "maxMatchScore": 1.0
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-4",
+      "grammaticalItem": "we are",
+      "firstLesson": 26,
+      "lastLesson": 26,
+      "exposureCount": 1,
+      "evidenceKinds": [
+        "target_construction"
+      ],
+      "maxMatchScore": 0.8167
     }
   ],
   "constructionHistory": [
@@ -1294,6 +1314,19 @@
           "lesson": 25
         }
       ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-WE-ARE-IN-PLACE",
+      "form": "We are in + place.",
+      "firstLesson": 26,
+      "lastLesson": 26,
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-4",
+          "matchScore": 0.8167,
+          "lesson": 26
+        }
+      ]
     }
   ],
   "lessonHistory": [
@@ -1559,7 +1592,7 @@
         "sara"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "591ae4bc478b194de477846b04de49415f35c7223960a38a10af9a24c75d08f8"
+      "sourceHash": "b199cd0fc54aaeff74c5d62eb8961fd6274069ee090c4901848cb3879842fb7a"
     },
     {
       "lessonKey": "EN-A1-L-0023",
@@ -1596,6 +1629,18 @@
       ],
       "arcKey": "EN-A1-NEIGHBORS",
       "sourceHash": "23c5eadf9c254bf0259e5b039b7225a9dd9a0c010ef84d6f4e9d664e274b7f3e"
+    },
+    {
+      "lessonKey": "EN-A1-L-0026",
+      "sortOrder": 26,
+      "levelKey": "A1",
+      "primaryOutcomeKey": "A1-INTERACTION-STATE-GROUP-LOCATION",
+      "participants": [
+        "nina",
+        "iris"
+      ],
+      "arcKey": "EN-A1-COMMUNITY",
+      "sourceHash": "89e91caffbe02f259488a9dd4868d83d8f9df838f3a8c6f15b6be7fd6d713ac8"
     }
   ]
 }

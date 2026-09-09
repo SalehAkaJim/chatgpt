@@ -29,9 +29,10 @@
     22,
     23,
     24,
-    25
+    25,
+    26
   ],
-  "passedPrefixLength": 25,
+  "passedPrefixLength": 26,
   "status": "PASS",
   "lessonReports": [
     {
@@ -268,7 +269,7 @@
       "lessonKey": "EN-A1-L-0022",
       "sortOrder": 22,
       "status": "PASS",
-      "automatedScore": 95,
+      "automatedScore": 100,
       "canonicalStatus": "PASS",
       "referenceStatus": "PASS",
       "referenceWarnings": [
@@ -306,6 +307,16 @@
       "referenceWarnings": [
         "EN-A1-L-0025: target word EN-LEX-NOT-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
       ],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0026",
+      "sortOrder": 26,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
       "errors": []
     }
   ],

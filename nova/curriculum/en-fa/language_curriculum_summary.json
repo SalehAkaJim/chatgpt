@@ -3,7 +3,7 @@
   "courseCode": "en-fa",
   "levelKey": "A1",
   "generatedLessonsMode": "auto",
-  "generatedLessonCount": 25,
+  "generatedLessonCount": 26,
   "generatedLessons": [
     1,
     2,
@@ -29,12 +29,13 @@
     22,
     23,
     24,
-    25
+    25,
+    26
   ],
-  "lastLessonSortOrder": 25,
-  "nextLessonSortOrder": 26,
-  "nextSpecPath": "nova/curriculum/en-fa/specs/0026.json",
-  "nextSpecHash": "4a439dec8682d83acd9bdd343133379465f7d652e1012493c7cdcf3cdff8aca5",
+  "lastLessonSortOrder": 26,
+  "nextLessonSortOrder": 27,
+  "nextSpecPath": "nova/curriculum/en-fa/specs/0027.json",
+  "nextSpecHash": "891b28463e9bf059759a7ed3f6668e72c713e239b2a93c4e7678c01fb48129c8",
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
   "languagePlans": [
@@ -197,9 +198,9 @@
       "sortOrder": 14,
       "status": "PASS",
       "warnings": [
+        "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
-        "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
@@ -339,6 +340,16 @@
       "grammarEvidenceCount": 2,
       "lexicalEvidenceCount": 5,
       "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0026",
+      "sortOrder": 26,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 5,
+      "usageEvidenceCount": 1
     }
   ],
   "curriculumSpecReports": [
@@ -352,6 +363,21 @@
       "status": "PASS",
       "errors": [],
       "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0026",
+      "sortOrder": 26,
+      "specKey": "en-fa-A1-LESSON-SPEC-0026",
+      "specHash": "4a439dec8682d83acd9bdd343133379465f7d652e1012493c7cdcf3cdff8aca5",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'room' was not marked due by the curriculum engine",
+        "review lexical lemma 'one' was not marked due by the curriculum engine",
+        "review lexical lemma 'two' was not marked due by the curriculum engine"
+      ]
     }
   ],
   "status": "PASS",

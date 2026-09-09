@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0026",
+  "sortOrder": 26,
+  "levelKey": "A1",
+  "lessonSourceHash": "89e91caffbe02f259488a9dd4868d83d8f9df838f3a8c6f15b6be7fd6d713ac8",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-WE-ARE-IN-PLACE",
+      "form": "We are in + place.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-4",
+        "grammaticalItem": "we are",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.8167,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-4-2",
+          "grammaticalItem": "Are we ...?",
+          "matchScore": 0.5667
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-4-1",
+          "grammaticalItem": "we are not",
+          "matchScore": 0.5167
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-4-3",
+          "grammaticalItem": "Aren't we ...?",
+          "matchScore": 0.5167
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-AT-TIME-01",
+      "lemma": "at",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "at",
+        "spokenRank": 40,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AE1 T",
+        "arpabet": [
+          "AE1 T"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-SIX-01",
+      "lemma": "six",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "six",
+        "spokenRank": 165,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "S IH1 K S",
+        "arpabet": [
+          "S IH1 K S"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "lemma": "room",
+      "role": "review",
+      "referenceKey": "EN-REF-D8B2B1429B2580871B77",
+      "spokenPriority": {
+        "lemma": "room",
+        "spokenRank": 301,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R UW1 M",
+        "arpabet": [
+          "R UW1 M"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ONE-01",
+      "lemma": "one",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "one",
+        "spokenRank": 37,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "W AH1 N",
+        "arpabet": [
+          "W AH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TWO-01",
+      "lemma": "two",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "two",
+        "spokenRank": 71,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T UW1",
+        "arpabet": [
+          "T UW1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "we are in",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0026"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-WE-ARE-IN-PLACE"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "we are in",
+      "examples": [
+        {
+          "id": 11422037,
+          "text": "We are in.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Agestur"
+        },
+        {
+          "id": 11762551,
+          "text": "We are in July.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LdjuherTaqvaylit"
+        },
+        {
+          "id": 11445361,
+          "text": "We are in custody.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Agestur"
+        }
+      ],
+      "fallback": null
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "5a214ffc999557af8bc89b227168f22496ff06553eba795c53d90b21fe0b3409"
+}
