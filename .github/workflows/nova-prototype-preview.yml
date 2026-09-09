@@ -8,6 +8,7 @@ on:
       - 'nova/prototype/**'
       - 'nova/courses/**/course.source.json'
       - 'nova/courses/**/lessons/**/lesson.source.json'
+      - 'nova/courses/**/lessons/**/validation.json'
       - 'nova/courses/**/lessons/**/audio.manifest.json'
       - 'nova/curriculum/**/factory_validation.json'
       - 'nova/audio/**'
@@ -37,6 +38,31 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Require PASS evidence for the exact Lesson bytes
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+
+          root = Path('.')
+          factory = json.loads((root / 'nova/curriculum/en-fa/factory_validation.json').read_text(encoding='utf-8'))
+          assert factory.get('status') == 'PASS' and factory.get('factoryDesignStatus') == 'PASS'
+          reports = sorted((r for r in factory.get('lessonReports', []) if r.get('status') == 'PASS'), key=lambda r: r['sortOrder'])
+          assert len(reports) == factory.get('passedPrefixLength')
+          for report in reports:
+              number = f"{int(report['sortOrder']):04d}"
+              lesson_dir = root / 'nova/courses/en-fa/lessons' / number
+              source = lesson_dir / 'lesson.source.json'
+              evidence = lesson_dir / 'validation.json'
+              assert source.is_file() and evidence.is_file(), f'Missing current evidence for Lesson {number}'
+              current_hash = hashlib.sha256(source.read_bytes()).hexdigest()
+              validation = json.loads(evidence.read_text(encoding='utf-8'))
+              assert validation.get('status') == 'PASS', f'Lesson {number} validation is not PASS'
+              assert validation.get('lessonKey') == report.get('lessonKey'), f'Lesson {number} evidence key mismatch'
+              assert validation.get('sourceHash') == current_hash, f'Lesson {number} changed after its PASS evidence; preview publish blocked'
+          print(f'Exact-byte evidence confirmed for {len(reports)} Lessons')
+          PY
 
       - name: Build preview from committed PASS evidence
         run: |
