@@ -68,7 +68,13 @@
               "metadata": {
                 "anyOf": [
                   {"required": ["referenceKey"]},
-                  {"required": ["lexicalized"], "properties": {"lexicalized": {"const": true}}}
+                  {
+                    "required": ["lexicalized","lexicalizationEvidence"],
+                    "properties": {
+                      "lexicalized": {"const": true},
+                      "lexicalizationEvidence": {"type": "string", "minLength": 1}
+                    }
+                  }
                 ]
               }
             }
@@ -82,7 +88,13 @@
               "metadata": {
                 "anyOf": [
                   {"required": ["referenceKey"]},
-                  {"required": ["lexicalized"], "properties": {"lexicalized": {"const": true}}}
+                  {
+                    "required": ["lexicalized","lexicalizationEvidence"],
+                    "properties": {
+                      "lexicalized": {"const": true},
+                      "lexicalizationEvidence": {"type": "string", "minLength": 1}
+                    }
+                  }
                 ]
               }
             }
