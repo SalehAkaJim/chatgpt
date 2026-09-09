@@ -50,9 +50,7 @@ jobs:
       - name: Sync CMUdict, NGSL-Spoken, and Tatoeba evidence
         run: |
           python nova/_assistant/content-system-v1/tools/sync_language_reference_extensions.py \
-            --repo-root . \
-            --course en-fa \
-            --config /tmp/nova-language-sync-config.json
+            --repo-root . --course en-fa --config /tmp/nova-language-sync-config.json
       - name: Preserve generatedAt on semantic no-op syncs
         run: |
           python - <<'PY'
@@ -60,8 +58,7 @@ jobs:
           path = pathlib.Path('nova/reference/en-fa/extensions_manifest.json')
           current = json.loads(path.read_text())
           try:
-              old_raw = subprocess.check_output(['git','show','HEAD:nova/reference/en-fa/extensions_manifest.json'], text=True)
-              old = json.loads(old_raw)
+              old = json.loads(subprocess.check_output(['git','show','HEAD:nova/reference/en-fa/extensions_manifest.json'], text=True))
           except Exception:
               old = None
           if old:
@@ -108,12 +105,22 @@ jobs:
           Path('/tmp/nova-language-sync-config.json').write_text(json.dumps({'generatedLessons': numbers}, indent=2) + '\n')
           PY
           python nova/_assistant/content-system-v1/tools/sync_language_reference_extensions.py \
-            --repo-root . \
-            --course en-fa \
-            --config /tmp/nova-language-sync-config.json
+            --repo-root . --course en-fa --config /tmp/nova-language-sync-config.json
           python - <<'PY'
-          import json, pathlib
+          import json, pathlib, subprocess
           root = pathlib.Path('nova/reference/en-fa')
+          manifest = root/'extensions_manifest.json'
+          current = json.loads(manifest.read_text())
+          try:
+              old = json.loads(subprocess.check_output(['git','show','HEAD:nova/reference/en-fa/extensions_manifest.json'], text=True))
+          except Exception:
+              old = None
+          if old:
+              a = {k:v for k,v in current.items() if k != 'generatedAt'}
+              b = {k:v for k,v in old.items() if k != 'generatedAt'}
+              if a == b:
+                  current['generatedAt'] = old.get('generatedAt')
+                  manifest.write_text(json.dumps(current, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           p = json.loads((root/'pronunciation/cmudict.json').read_text())
           f = json.loads((root/'frequency/ngsl_spoken.json').read_text())
           u = json.loads((root/'usage/tatoeba.json').read_text())
