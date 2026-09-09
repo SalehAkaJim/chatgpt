@@ -10,21 +10,37 @@
 
 هیچ GitHub token داخل HTML یا JavaScript ذخیره نمی‌شود. launcher از credential عادی Git روی سیستم استفاده می‌کند.
 
-## Windows
-
-روی فایل زیر دابل‌کلیک کن:
-
-`nova/prototype/start-preview.bat`
-
-## macOS / Linux
+## Linux
 
 از ریشه repo اجرا کن:
 
 ```bash
-sh nova/prototype/start-preview.sh
+./nova/prototype/start-preview-linux.sh
 ```
 
-یا مستقیم:
+یا:
+
+```bash
+bash nova/prototype/start-preview-linux.sh
+```
+
+## macOS
+
+روی فایل زیر دابل‌کلیک کن:
+
+`nova/prototype/start-preview-macos.command`
+
+یا از Terminal اجرا کن:
+
+```bash
+./nova/prototype/start-preview-macos.command
+```
+
+اگر macOS به‌خاطر تنظیمات امنیتی اجرای فایل را مسدود کرد، یک بار از Finder روی فایل راست‌کلیک کن و `Open` را بزن.
+
+## اجرای مستقیم
+
+روی هر دو سیستم می‌توانی مستقیم launcher پایتون را اجرا کنی:
 
 ```bash
 python3 nova/prototype/local_preview.py
