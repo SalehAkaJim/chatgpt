@@ -1,16 +1,28 @@
 {
-  "status": "PASS",
+  "status": "PASS_WITH_WARNINGS",
   "lessonKey": "EN-A1-L-0007",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 100,
+  "automatedScore": 95,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "can i have a pen please",
+        "activityKeys": [
+          "A04",
+          "A07"
+        ]
+      }
+    }
+  ],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0007",
@@ -77,11 +89,11 @@
     "errors": []
   },
   "metrics": {
-    "targetLexicalItems": 2,
+    "targetLexicalItems": 0,
     "targetConstructions": 1,
     "activities": 6,
-    "learnerTurns": 3,
+    "learnerTurns": 4,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "fa285633016c5e1935c3497d5fdfc6e47629f22f4746951d3c95869e267b7be2"
+  "sourceHash": "d48decf7120de16849369d1f03c8bc6f59f33fccb5027049ef36cafced8356f5"
 }

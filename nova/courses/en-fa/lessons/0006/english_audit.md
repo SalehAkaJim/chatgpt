@@ -1,16 +1,13 @@
-<!-- sourceHash: af588e7cf9148b02560213db8e73aa3a0db4fc0cabf84357b0463882a16e06ea -->
+<!-- sourceHash: 692efa20fed455f693f19d3196058afa4182d5fb9c2ffd2c1d5573246a0d08ec -->
 # English Audit — EN-A1-L-0006
 
-**Lesson:** Things on the desk
+**Lesson:** What's this?
 **Outcome:** A1-INTERACTION-NAME-OBJECT
 
 ## Lexical items
 
 - `EN-LEX-PEN-01` [word/target] — **pen**
 - `EN-LEX-BOOK-01` [word/target] — **book**
-- `EN-LEX-THIS-01` [word/target] — **this**
-- `EN-LEX-NAME-01` [word/review] — **name**
-- `EN-LEX-AND-01` [word/support] — **and**
 
 ## Dialogue turns
 
@@ -38,10 +35,10 @@ It's a book.
 
 **T05 · alex**
 
-What's this?
+It's a book.
 
-- **Speech target:** What's this?
-- **Accepted speech:** What's this?
+- **Speech target:** It's a book.
+- **Accepted speech:** It's a book.
 
 ## Activities
 
@@ -54,22 +51,21 @@ What's this?
 **A03 · sentence_order**
 
 - **answerEn:** It's a book.
-- **tokensEn:** a | book. | It's
+- **tokensEn:** book. | It's | a
 - **answerTokensEn:** It's | a | book.
 
-**A04 · fill_blank**
+**A04 · response_choice**
 
-- **sentenceEn:** It's a ___.
-- **optionsEn:** pen | book | name
+- **optionsEn:** It's a pen. | It's a book. | I'm from Iran.
 
 **A05 · comprehension**
 
-- **options:** کتاب | خودکار | میز
+- **options:** کتاب | خودکار | کشور
 
 **A06 · speak**
 
-- **textEn:** What's this?
-- **acceptedAnswersEn:** What's this? | What is this?
+- **textEn:** It's a book.
+- **acceptedAnswersEn:** It's a book.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

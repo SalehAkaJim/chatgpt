@@ -1,16 +1,28 @@
 {
-  "status": "PASS",
+  "status": "PASS_WITH_WARNINGS",
   "lessonKey": "EN-A1-L-0013",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 100,
+  "automatedScore": 95,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "no a book please",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0013",
@@ -80,8 +92,8 @@
     "targetLexicalItems": 0,
     "targetConstructions": 0,
     "activities": 6,
-    "learnerTurns": 6,
+    "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "cdc44154dfe3a279260b5a46b5224dee93f3b9f1c1ceca714027cb31da3f61f0"
+  "sourceHash": "bcbb509152e3a66c832431903eeb3f7e1aa4e3e7dc25929eb05341c9943b2dfb"
 }

@@ -1,91 +1,85 @@
-<!-- sourceHash: 41267756512a3db83bef0e2101e5e70e70aa08e6b0ca472b22fa9e1f2b60bbe1 -->
+<!-- sourceHash: e5fe62535cd1146de7c023e38a74346b46ba189a1c28318e12ec69de26dad13a -->
 # English Audit — EN-A1-L-0003
 
-**Lesson:** A quick chat at the community center
+**Lesson:** How are you?
 **Outcome:** A1-INTERACTION-GREET-STATE-CLOSE
-
-## Lexical items
-
-- `EN-LEX-HELLO-01` [word/review] — **hello**
-- `EN-LEX-NAME-01` [word/review] — **name**
-- `EN-LEX-HOW-ARE-YOU-01` [formula/target] — **how are you**
-- `EN-LEX-FINE-01` [word/target] — **fine**
-- `EN-LEX-THANKS-01` [word/target] — **thanks**
-- `EN-LEX-SEE-YOU-01` [formula/target] — **see you**
-- `EN-LEX-GOOD-01` [word/support] — **good**
 
 ## Dialogue turns
 
 **T01 · iris**
 
-Hello, Nina! How are you?
+Hi, Nina!
 
 **T02 · nina**
+
+Hi, Iris!
+
+- **Speech target:** Hi, Iris!
+- **Accepted speech:** Hi, Iris!
+
+**T03 · iris**
+
+How are you?
+
+**T04 · nina**
 
 I'm fine, thanks. How are you?
 
 - **Speech target:** I'm fine, thanks. How are you?
 - **Accepted speech:** I'm fine, thanks. How are you?
 
-**T03 · iris**
+**T05 · iris**
 
-I'm fine, thanks.
+I'm good, thanks.
 
-**T04 · nina**
+**T06 · nina**
 
 Good!
 
 - **Speech target:** Good!
 - **Accepted speech:** Good!
 
-**T05 · iris**
+**T07 · iris**
 
 See you!
 
-**T06 · nina**
-
-See you!
-
-- **Speech target:** See you!
-- **Accepted speech:** See you!
-
-**T07 · nina**
+**T08 · nina**
 
 See you!
 
 - **Speech target:** See you!
 - **Accepted speech:** See you!
+
+**T09 · nina**
+
+I'm fine, thanks. How are you?
+
+- **Speech target:** I'm fine, thanks. How are you?
+- **Accepted speech:** I'm fine, thanks. How are you?
 
 ## Activities
 
 **A01 · dialogue**
 
 
-**A02 · lexical_teach**
-
-
 **A03 · sentence_order**
 
-- **answerEn:** I'm fine, thanks.
-- **tokensEn:** thanks. | I'm | fine,
-- **answerTokensEn:** I'm | fine, | thanks.
+- **answerEn:** How are you?
+- **tokensEn:** you? | How | are
+- **answerTokensEn:** How | are | you?
 
 **A04 · response_choice**
 
-- **optionsEn:** I'm fine, thanks. | My name is Nina. | Nice to meet you.
+- **optionsEn:** I'm fine, thanks. | What's your name? | See you!
 
 **A05 · comprehension**
 
-- **options:** اسمش چیست | حالش چطور است | اهل کجاست
+- **options:** دوستانه خداحافظی می کند | حال نینا را می پرسد | اسم خودش را می گوید
 
-**A06 · response_choice**
+**A06 · speak**
 
-- **optionsEn:** I'm fine, thanks. | See you! | What's your name?
-
-**A07 · speak**
-
-- **textEn:** See you!
-- **acceptedAnswersEn:** See you!
+- **textEn:** I'm fine, thanks. How are you?
+- **acceptedAnswersEn:** I'm fine, thanks. How are you?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

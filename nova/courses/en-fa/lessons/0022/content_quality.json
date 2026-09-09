@@ -1,0 +1,99 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0022",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "i want tea",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "lessonKey": "EN-A1-L-0022",
+    "sourceHash": "591ae4bc478b194de477846b04de49415f35c7223960a38a10af9a24c75d08f8",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-09",
+    "scope": "Model/editor semantic and pedagogy review of the current Lesson 0022 source after Naturalness and Reference fixes; not an independent human or learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "Tea? followed by No, I want water. is a plausible offer/correction exchange after a walk; I want tea. is direct but natural in the tightly specified immediate-choice context."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian clearly distinguishes خواستن now from دوست داشتن and keeps water/tea meanings accurate and conversational."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "Want is the only new lexical target and the lesson explicitly contrasts desire with the previously learned like meaning."
+      },
+      "distractorQuality": {
+        "score": 5,
+        "evidence": "The key response-choice contrasts want, like and a choice question, so all distractors are semantically related and diagnose intent rather than random word recognition."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A drink offer immediately after walking naturally licenses a correction to water and a statement of what each person wants."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "Known drink nouns carry the semantic load while a single new verb is introduced in one simple declarative frame."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "Water and tea are reused from earlier drink lessons but now perform a different communicative job, reducing rote repetition."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The learner must separate I want tea from I like tea and finally retrieve a want statement without seeing the English answer."
+      },
+      "overallCoherence": {
+        "score": 4,
+        "evidence": "The walking-group story, offer/correction, semantic contrast and retrieval all support immediate wants with no unrelated new content."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "Static model/editor review only; the flow is short and focused, but real learner confusion between like and want and speech-recognition behavior have not been measured."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or learner testing has been performed.",
+      "The lesson does not establish broader want constructions such as want + infinitive.",
+      "Final audio naturalness and learner response timing remain untested."
+    ],
+    "resolvedFindings": [
+      "Changed the earlier either-or prompt that unnaturally forced I want water into an offer/correction context where want is pragmatically licensed.",
+      "Want is locked to the desire Reference sense and not conflated with liking.",
+      "The assessment remains a bounded immediate-want statement with known drink vocabulary."
+    ],
+    "status": "PASS",
+    "average": 4.3,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "591ae4bc478b194de477846b04de49415f35c7223960a38a10af9a24c75d08f8"
+}

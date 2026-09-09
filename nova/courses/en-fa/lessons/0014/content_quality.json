@@ -1,16 +1,28 @@
 {
-  "status": "PASS",
+  "status": "PASS_WITH_WARNINGS",
   "lessonKey": "EN-A1-L-0014",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 100,
+  "automatedScore": 95,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "room one please",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0014",
@@ -79,9 +91,9 @@
   "metrics": {
     "targetLexicalItems": 3,
     "targetConstructions": 1,
-    "activities": 5,
+    "activities": 6,
     "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "ae5032e899df32abf48d0bef82b8ce0b617d54dc7bd7501c502aa03fe36f67da"
+  "sourceHash": "4e28c922e4e5053c6996e34420f309c035e4f2aa023ddb6c1900d945ed7713e8"
 }

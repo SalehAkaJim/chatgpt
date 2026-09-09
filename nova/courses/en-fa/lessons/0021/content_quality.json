@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "lessonKey": "EN-A1-L-0021",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 100,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [],
+  "manualReview": {
+    "version": 1,
+    "lessonKey": "EN-A1-L-0021",
+    "sourceHash": "5f27a3976dab799854889bdd7fe55371a625e5da40ddca69c1df38bba3a35b12",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-09",
+    "scope": "Model/editor semantic and pedagogy review of the current Lesson 0021 source after Naturalness and Reference fixes; not an independent human or learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "Do you like tea/coffee? followed by I like tea/coffee is a normal bounded preference exchange; the previous bare Coffee? pragmatics issue is no longer present."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian consistently distinguishes liking from ordering and preserves the intended enjoyable/preference sense of like in colloquial learner-facing language."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "One new lexical verb is introduced with two transparent constructions and already-known drink nouns, so the learning delta is easy to identify."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "The response-choice contrasts preference with ordering and price language, requiring the learner to select communicative intent rather than only recognize vocabulary."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A returning cafe pair discussing whether they like familiar drinks is contextually plausible, although intentionally short for early A1."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "The Lesson keeps sentence length and lexical load low while adding do-you-like and I-like forms within familiar vocabulary."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "Tea and coffee recur across dialogue, listening, reconstruction, meaning contrast and retrieval without adding unrelated vocabulary."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "Known drinks transfer from prior choosing, ordering and pricing situations into a new preference function, and the final prompt requires production of the preference statement."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Scenario, lexical explanation, dialogue, intent contrast and final retrieval all serve the same preference outcome and exact like sense."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "Static flow review only; the activity sequence is concise and supported, but no real learner timing, microphone behavior or delayed retention has been observed."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human language review or learner study has been performed.",
+      "Delayed retention and spontaneous transfer outside the bounded drink context are unmeasured.",
+      "Audio prosody still requires perceptual review when final ElevenLabs assets are used."
+    ],
+    "resolvedFindings": [
+      "Replaced the earlier pragmatically weak bare Coffee? prompt with the direct Do you like coffee? question.",
+      "Like is locked to the enjoyable/agreeable Reference sense rather than a desire/want sense.",
+      "Final retrieval remains bounded and does not overclaim free preference conversation ability."
+    ],
+    "status": "PASS",
+    "average": 4.3,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 2,
+    "activities": 6,
+    "learnerTurns": 3,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "5f27a3976dab799854889bdd7fe55371a625e5da40ddca69c1df38bba3a35b12"
+}

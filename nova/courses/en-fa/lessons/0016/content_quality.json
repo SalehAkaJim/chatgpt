@@ -14,10 +14,10 @@
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0016",
-    "sourceHash": "3047b5ec3f95c6473d4cfd6841f493aeee86e0abbe67ec01a2b69f5e49c99f39",
+    "sourceHash": "f4f276ff68a9d734e872a2481dabf8ca66c2bf8e5e4db1ac81b9a5edcc9bc0b5",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
     "reviewerType": "model",
-    "reviewedAt": "2026-09-08",
+    "reviewedAt": "2026-09-09",
     "scope": "Model/editor rewrite review for Lessons 0014–0020 after activity-variety, load, naturalness and skill-mix revisions; not an independent human review.",
     "dimensions": {
       "englishNaturalness": {
@@ -26,7 +26,7 @@
       },
       "persianMeaningQuality": {
         "score": 5,
-        "evidence": "Checked learner-facing Persian for meaning, clarity and current Nova orthography rules; wording stays colloquial and context-specific."
+        "evidence": "Learner-facing Persian preserves the intended meaning and now uses «بخش» instead of the hamza-bearing «جزء», matching Nova orthography rules without changing the task."
       },
       "pedagogicalClarity": {
         "score": 4,
@@ -70,18 +70,19 @@
     "resolvedFindings": [
       "The load was reduced to time, six and at; seven is deferred.",
       "Reading a simple schedule extends earlier label/number reading into time.",
-      "The Lesson has one communicative job: understand and state the next walk time."
+      "The Lesson has one communicative job: understand and state the next walk time.",
+      "Persian retrieval instruction was normalized from جزء to بخش without changing the learning task."
     ],
     "status": "PASS",
     "average": 4.0,
     "errors": []
   },
   "metrics": {
-    "targetLexicalItems": 3,
+    "targetLexicalItems": 2,
     "targetConstructions": 2,
-    "activities": 5,
+    "activities": 6,
     "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "3047b5ec3f95c6473d4cfd6841f493aeee86e0abbe67ec01a2b69f5e49c99f39"
+  "sourceHash": "f4f276ff68a9d734e872a2481dabf8ca66c2bf8e5e4db1ac81b9a5edcc9bc0b5"
 }

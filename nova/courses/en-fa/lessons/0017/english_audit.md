@@ -1,15 +1,8 @@
-<!-- sourceHash: cad20e803594a4f22ed26488d37b6b0a5415ebbe3a9e7b44bcce33fc7ae41c96 -->
+<!-- sourceHash: 6aa51722535788015ce87d7985f210553e3492b4d039c4a66eea17473c7720f2 -->
 # English Audit — EN-A1-L-0017
 
-**Lesson:** Which day?
+**Lesson:** What day?
 **Outcome:** A1-INTERACTION-CHOOSE-DAY
-
-## Lexical items
-
-- `EN-LEX-DAY-01` [word/target] — **day**
-- `EN-LEX-MONDAY-01` [word/target] — **Monday**
-- `EN-LEX-ON-DAY-01` [word/target] — **on**
-- `EN-LEX-YES-01` [word/review] — **yes**
 
 ## Dialogue turns
 
@@ -44,26 +37,22 @@ On Monday.
 
 ## Activities
 
-**A01 · lexical_teach**
-
-
 **A02 · dialogue**
 
 
 **A03 · response_choice**
 
 - **English prompt:** Book club — Monday
-- **options:** دوشنبه | ساعت شش | اتاق یک
+- **options:** دوشنبه | ساعت شش | اتاق دو
 
-**A04 · fill_blank**
+**A04 · response_choice**
 
-- **sentenceEn:** On ___
-- **optionsEn:** Monday | six | room
+- **optionsEn:** On Monday. | At six. | Room two, please.
 
 **A05 · speak**
 
 - **textEn:** On Monday.
-- **acceptedAnswersEn:** On Monday. | Monday.
+- **acceptedAnswersEn:** On Monday.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

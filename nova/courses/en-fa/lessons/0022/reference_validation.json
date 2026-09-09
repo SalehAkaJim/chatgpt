@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0022",
+  "levelKey": "A1",
+  "sortOrder": 22,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0022: target word EN-LEX-WANT-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-WANT-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "want",
+      "partOfSpeech": "verb",
+      "selectedReferenceKey": "EN-REF-CA08F7EB97E97D92177A",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-CA08F7EB97E97D92177A",
+        "EN-REF-10EB8D109823240273AD"
+      ],
+      "referenceTranslationsFa": [
+        "خواستن، تمایل داشتن",
+        "نیاز داشتن"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-CA08F7EB97E97D92177A",
+        "translationFa": "خواستن، تمایل داشتن",
+        "definitionEn": "feel or have a desire for; want strongly",
+        "senseId": "b5e73723-4daf-5db3-94e5-9db92d0384e5",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    },
+    {
+      "lexicalKey": "EN-LEX-WATER-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "water",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-93033FDD55B1A504F831",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-93033FDD55B1A504F831",
+        "EN-REF-DD54F822E90CB981E36E"
+      ],
+      "referenceTranslationsFa": [
+        "آب",
+        "آب‌های سطحی"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-93033FDD55B1A504F831",
+        "translationFa": "آب"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-C86BD7B12371D318284C",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C86BD7B12371D318284C",
+        "EN-REF-AA88F6860DE17814613F"
+      ],
+      "referenceTranslationsFa": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-C86BD7B12371D318284C",
+        "translationFa": "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود"
+      }
+    }
+  ],
+  "sourceHash": "591ae4bc478b194de477846b04de49415f35c7223960a38a10af9a24c75d08f8"
+}

@@ -1,16 +1,28 @@
 {
-  "status": "PASS",
+  "status": "PASS_WITH_WARNINGS",
   "lessonKey": "EN-A1-L-0004",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 100,
+  "automatedScore": 95,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "can you repeat that please",
+        "activityKeys": [
+          "A04",
+          "A06"
+        ]
+      }
+    }
+  ],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0004",
@@ -78,10 +90,10 @@
   },
   "metrics": {
     "targetLexicalItems": 1,
-    "targetConstructions": 0,
-    "activities": 5,
+    "targetConstructions": 1,
+    "activities": 6,
     "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "2fa26b1af15ccf654b50b50891cda91652dac0c079520d6aaa7479f0def22275"
+  "sourceHash": "5bb7b00e8ddf1e93ba7438918d1f3b11aa60d2a077c4198d685a49e049da7ea9"
 }

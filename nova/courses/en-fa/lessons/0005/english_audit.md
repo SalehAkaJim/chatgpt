@@ -1,78 +1,79 @@
-<!-- sourceHash: 3496de88fd4d9d292d68af68fc96fdbf7f4509c9798c29ada72725fce2f814da -->
+<!-- sourceHash: 5a377ec3f47e3e7c16956313d94f05dfa980d62805c4a4e9ff3328676cc0b718 -->
 # English Audit — EN-A1-L-0005
 
 **Lesson:** Where are you from?
 **Outcome:** A1-INTERACTION-COUNTRY
 
-## Lexical items
-
-- `EN-LEX-FROM-01` [word/target] — **from**
-- `EN-LEX-IRAN-01` [word/target] — **Iran**
-- `EN-LEX-CANADA-01` [word/target] — **Canada**
-- `EN-LEX-NAME-01` [word/review] — **name**
-- `EN-LEX-NICE-01` [word/support] — **nice**
-
 ## Dialogue turns
 
 **T01 · sara**
 
-Where are you from?
+Hi! I'm Sara.
 
 **T02 · ruby**
+
+Hi! I'm Ruby.
+
+- **Speech target:** Hi! I'm Ruby.
+- **Accepted speech:** Hi! I'm Ruby.
+
+**T03 · sara**
+
+Where are you from?
+
+**T04 · ruby**
 
 I'm from Iran.
 
 - **Speech target:** I'm from Iran.
 - **Accepted speech:** I'm from Iran.
 
-**T03 · sara**
+**T05 · sara**
 
 I'm from Canada.
 
-**T04 · ruby**
+**T06 · ruby**
 
 Nice!
 
 - **Speech target:** Nice!
 - **Accepted speech:** Nice!
 
-**T05 · ruby**
+**T07 · ruby**
 
-Where are you from?
+I'm from Iran. Where are you from?
 
-- **Speech target:** Where are you from?
-- **Accepted speech:** Where are you from?
+- **Speech target:** I'm from Iran. Where are you from?
+- **Accepted speech:** I'm from Iran. Where are you from?
 
 ## Activities
 
-**A01 · lexical_teach**
-
-
-**A02 · dialogue**
+**A01 · dialogue**
 
 
 **A03 · sentence_order**
 
-- **answerEn:** I'm from Iran.
-- **tokensEn:** from | Iran. | I'm
-- **answerTokensEn:** I'm | from | Iran.
+- **answerEn:** Where are you from?
+- **tokensEn:** from? | you | Where | are
+- **answerTokensEn:** Where | are | you | from?
 
 **A04 · response_choice**
 
-- **optionsEn:** I'm from Canada. | I'm from Iran. | Where are you from?
+- **optionsEn:** I'm from Iran. | My name is Ruby. | I'm fine, thanks.
 
 **A05 · comprehension**
 
-- **options:** ایران | کانادا
+- **options:** کانادا | ایران | نامشخص
 
-**A06 · response_choice**
+**A06 · fill_blank**
 
-- **optionsEn:** I'm from Iran. | I'm from Canada. | My name is Ruby.
+- **sentenceEn:** I'm ___ Iran.
+- **optionsEn:** from | name | fine
 
 **A07 · speak**
 
-- **textEn:** Where are you from?
-- **acceptedAnswersEn:** Where are you from?
+- **textEn:** I'm from Iran. Where are you from?
+- **acceptedAnswersEn:** I'm from Iran. Where are you from?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

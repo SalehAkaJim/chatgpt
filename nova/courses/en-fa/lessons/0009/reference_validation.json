@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "lessonKey": "EN-A1-L-0009",
   "levelKey": "A1",
   "sortOrder": 9,
@@ -15,7 +15,7 @@
       "itemType": "word",
       "lemma": "water",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-93033FDD55B1A504F831",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-93033FDD55B1A504F831",
@@ -24,7 +24,11 @@
       "referenceTranslationsFa": [
         "آب",
         "آب‌های سطحی"
-      ]
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-93033FDD55B1A504F831",
+        "translationFa": "آب"
+      }
     },
     {
       "lexicalKey": "EN-LEX-TEA-01",
@@ -32,7 +36,7 @@
       "itemType": "word",
       "lemma": "tea",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-C86BD7B12371D318284C",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-C86BD7B12371D318284C",
@@ -41,7 +45,11 @@
       "referenceTranslationsFa": [
         "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
         "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
-      ]
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-C86BD7B12371D318284C",
+        "translationFa": "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود"
+      }
     },
     {
       "lexicalKey": "EN-LEX-COFFEE-01",
@@ -49,7 +57,7 @@
       "itemType": "word",
       "lemma": "coffee",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-DF86C36C215439FDE741",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-DF86C36C215439FDE741",
@@ -58,65 +66,12 @@
       "referenceTranslationsFa": [
         "درخت قهوه",
         "قهوه"
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-PLEASE-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "please",
-      "partOfSpeech": "adverb",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [
-        "EN-REF-C831E951A26056666929"
       ],
-      "reviewOnlyCandidates": [
-        {
-          "referenceKey": "EN-REF-C831E951A26056666929",
-          "qualityScore": 30,
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "flags": [
-            "missing_english_definition",
-            "missing_persian_translation",
-            "profile_only_no_dictionary_sense"
-          ]
-        }
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "role": "review",
-      "itemType": "formula",
-      "lemma": "here you go",
-      "partOfSpeech": null,
-      "selectedReferenceKey": null,
-      "status": "not_required",
-      "referenceKeys": []
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "thanks",
-      "partOfSpeech": "interjection",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [],
-      "reviewOnlyCandidates": []
-    },
-    {
-      "lexicalKey": "EN-LEX-HELLO-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "hello",
-      "partOfSpeech": "interjection",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [],
-      "reviewOnlyCandidates": []
+      "selectedReference": {
+        "referenceKey": "EN-REF-DF86C36C215439FDE741",
+        "translationFa": "قهوه"
+      }
     }
   ],
-  "sourceHash": "958ffdb620d54e874ac922f7ca32efc0837d523a4874e5fd4ac9a8b44cee6e70"
+  "sourceHash": "6aca2dcaf1ea44bc03ac74cc945a9fd32203963a245565659e8554c245c4a4e4"
 }

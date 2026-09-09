@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0021",
+  "levelKey": "A1",
+  "sortOrder": 21,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0021: target word EN-LEX-LIKE-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-LIKE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "like",
+      "partOfSpeech": "verb",
+      "selectedReferenceKey": "EN-REF-9C19956E7CFA0CDAD30B",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-5937920730875C08EB9D",
+        "EN-REF-9C19956E7CFA0CDAD30B"
+      ],
+      "referenceTranslationsFa": [
+        "ترجیح دادن، دوست داشتن انجام کاری",
+        "لذت بردن از، خوشایند بودن"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-9C19956E7CFA0CDAD30B",
+        "translationFa": "لذت بردن از، خوشایند بودن",
+        "definitionEn": "find enjoyable or agreeable",
+        "senseId": "5cfb45df-1e52-59b5-93b6-fbc2900c7805",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-C86BD7B12371D318284C",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C86BD7B12371D318284C",
+        "EN-REF-AA88F6860DE17814613F"
+      ],
+      "referenceTranslationsFa": [
+        "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود",
+        "وعده ای سبک در بعد از ظهر با چای و ساندویچ یا کیک"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-C86BD7B12371D318284C",
+        "translationFa": "نوشیدنی که از دم کردن برگ های چای در آب تهیه می شود"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "coffee",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-DF86C36C215439FDE741",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-DF86C36C215439FDE741",
+        "EN-REF-8061B958A613A2511A99"
+      ],
+      "referenceTranslationsFa": [
+        "درخت قهوه",
+        "قهوه"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-DF86C36C215439FDE741",
+        "translationFa": "قهوه"
+      }
+    }
+  ],
+  "sourceHash": "5f27a3976dab799854889bdd7fe55371a625e5da40ddca69c1df38bba3a35b12"
+}

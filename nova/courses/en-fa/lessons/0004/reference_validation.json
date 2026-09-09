@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "lessonKey": "EN-A1-L-0004",
   "levelKey": "A1",
   "sortOrder": 4,
@@ -7,59 +7,29 @@
   "enforced": false,
   "status": "PASS",
   "errors": [],
-  "warnings": [
-    "EN-A1-L-0004: legacy target word EN-LEX-SORRY-REPEAT-01 has no exact production reference match"
-  ],
+  "warnings": [],
   "items": [
     {
-      "lexicalKey": "EN-LEX-SORRY-REPEAT-01",
+      "lexicalKey": "EN-LEX-REPEAT-01",
       "role": "target",
       "itemType": "word",
-      "lemma": "sorry",
-      "partOfSpeech": "interjection",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [],
-      "reviewOnlyCandidates": []
-    },
-    {
-      "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
-      "role": "review",
-      "itemType": "formula",
-      "lemma": "how are you",
-      "partOfSpeech": null,
-      "selectedReferenceKey": null,
-      "status": "not_required",
-      "referenceKeys": []
-    },
-    {
-      "lexicalKey": "EN-LEX-FINE-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "fine",
-      "partOfSpeech": "adjective",
-      "selectedReferenceKey": null,
+      "lemma": "repeat",
+      "partOfSpeech": "verb",
+      "selectedReferenceKey": "EN-REF-A000AB30C5C7E31A0F7A",
       "status": "exact_production_match",
       "referenceKeys": [
-        "EN-REF-7137372B44DB479296DD",
-        "EN-REF-0BEED048A4E41F3FFA9D"
+        "EN-REF-A000AB30C5C7E31A0F7A",
+        "EN-REF-097B619491322CF5DF81"
       ],
       "referenceTranslationsFa": [
-        "خوب، رضایت‌بخش",
-        "دقیق، ریز"
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "thanks",
-      "partOfSpeech": "interjection",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [],
-      "reviewOnlyCandidates": []
+        "دوباره انجام دادن، تکرار کردن",
+        "دوباره گفتن، بیان کردن"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-A000AB30C5C7E31A0F7A",
+        "translationFa": "دوباره گفتن، بیان کردن"
+      }
     }
   ],
-  "sourceHash": "2fa26b1af15ccf654b50b50891cda91652dac0c079520d6aaa7479f0def22275"
+  "sourceHash": "5bb7b00e8ddf1e93ba7438918d1f3b11aa60d2a077c4198d685a49e049da7ea9"
 }

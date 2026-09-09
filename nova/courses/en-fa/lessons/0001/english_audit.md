@@ -1,26 +1,25 @@
-<!-- sourceHash: bd1ff62238d1d95fd5408897ab389a84f1c783565738e10bdee7a0192dd6f51a -->
+<!-- sourceHash: 9d22e01e26fe081c359792861af10b2fd1ac9ea92fdcee37edcf115f5e2f92d3 -->
 # English Audit — EN-A1-L-0001
 
-**Lesson:** Hello! What's your name?
+**Lesson:** Your first hello
 **Outcome:** A1-INTERACTION-GREET-NAME
 
 ## Lexical items
 
-- `EN-LEX-HELLO-01` [word/target] — **hello**
 - `EN-LEX-NAME-01` [word/target] — **name**
 
 ## Dialogue turns
 
 **T01 · maya**
 
-Hello! I'm Maya.
+Hi! I'm Maya.
 
 **T02 · alex**
 
-Hello!
+Hi!
 
-- **Speech target:** Hello!
-- **Accepted speech:** Hello!
+- **Speech target:** Hi!
+- **Accepted speech:** Hi!
 
 **T03 · maya**
 
@@ -31,14 +30,25 @@ What's your name?
 I'm Alex.
 
 - **Speech target:** I'm Alex.
-- **Accepted speech:** I'm Alex.
+- **Accepted speech:** I'm Alex. | I am Alex.
 
-**T05 · alex**
+**T05 · maya**
 
-Hello! I'm Alex.
+Nice to meet you, Alex.
 
-- **Speech target:** Hello! I'm Alex.
-- **Accepted speech:** Hello! I'm Alex.
+**T06 · alex**
+
+Nice to meet you, Maya.
+
+- **Speech target:** Nice to meet you, Maya.
+- **Accepted speech:** Nice to meet you, Maya.
+
+**T07 · alex**
+
+Hi! I'm Alex.
+
+- **Speech target:** Hi! I'm Alex.
+- **Accepted speech:** Hi! I'm Alex. | Hi! I am Alex.
 
 ## Activities
 
@@ -51,22 +61,22 @@ Hello! I'm Alex.
 **A03 · sentence_order**
 
 - **answerEn:** What's your name?
-- **tokensEn:** name? | What's | your
+- **tokensEn:** your | name? | What's
 - **answerTokensEn:** What's | your | name?
 
 **A04 · fill_blank**
 
-- **sentenceEn:** Hello! ___ Alex.
+- **sentenceEn:** Hi! ___ Alex.
 - **optionsEn:** I'm | your | name
 
 **A05 · comprehension**
 
-- **options:** اسمش را | حالش را | اهل کجاست
+- **options:** اسم الکس | شهر الکس | سن الکس
 
 **A06 · speak**
 
-- **textEn:** Hello! I'm Alex.
-- **acceptedAnswersEn:** Hello! I'm Alex. | Hello! I am Alex.
+- **textEn:** Hi! I'm Alex.
+- **acceptedAnswersEn:** Hi! I'm Alex. | Hi! I am Alex.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

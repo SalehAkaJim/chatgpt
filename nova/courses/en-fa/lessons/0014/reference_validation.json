@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "lessonKey": "EN-A1-L-0014",
   "levelKey": "A1",
   "sortOrder": 14,
@@ -18,7 +18,7 @@
       "itemType": "word",
       "lemma": "room",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-D8B2B1429B2580871B77",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-D8B2B1429B2580871B77",
@@ -27,7 +27,11 @@
       "referenceTranslationsFa": [
         "اتاق",
         "فضا"
-      ]
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-D8B2B1429B2580871B77",
+        "translationFa": "اتاق"
+      }
     },
     {
       "lexicalKey": "EN-LEX-ONE-01",
@@ -78,68 +82,7 @@
           ]
         }
       ]
-    },
-    {
-      "lexicalKey": "EN-LEX-OR-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "or",
-      "partOfSpeech": "conjunction",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [
-        "EN-REF-50ECEE439EA17F111DB9"
-      ],
-      "reviewOnlyCandidates": [
-        {
-          "referenceKey": "EN-REF-50ECEE439EA17F111DB9",
-          "qualityScore": 30,
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "flags": [
-            "missing_english_definition",
-            "missing_persian_translation",
-            "profile_only_no_dictionary_sense"
-          ]
-        }
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-PLEASE-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "please",
-      "partOfSpeech": "adverb",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [
-        "EN-REF-C831E951A26056666929"
-      ],
-      "reviewOnlyCandidates": [
-        {
-          "referenceKey": "EN-REF-C831E951A26056666929",
-          "qualityScore": 30,
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "flags": [
-            "missing_english_definition",
-            "missing_persian_translation",
-            "profile_only_no_dictionary_sense"
-          ]
-        }
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "thanks",
-      "partOfSpeech": "interjection",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [],
-      "reviewOnlyCandidates": []
     }
   ],
-  "sourceHash": "ae5032e899df32abf48d0bef82b8ce0b617d54dc7bd7501c502aa03fe36f67da"
+  "sourceHash": "4e28c922e4e5053c6996e34420f309c035e4f2aa023ddb6c1900d945ed7713e8"
 }

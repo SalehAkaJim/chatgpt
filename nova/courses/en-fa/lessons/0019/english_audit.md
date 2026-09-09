@@ -1,4 +1,4 @@
-<!-- sourceHash: 7722835cf0d5f226e896516912247d43aeed8116db831d18717c30eddffb56e7 -->
+<!-- sourceHash: 7ffe0fa694c41f99a4e52c0359fcde286b26d8247fb1da9ecf18c4bad80cf74b -->
 # English Audit — EN-A1-L-0019
 
 **Lesson:** Can you help me?
@@ -7,7 +7,6 @@
 ## Lexical items
 
 - `EN-LEX-HELP-01` [word/target] — **help**
-- `EN-LEX-SURE-01` [word/target] — **sure**
 
 ## Dialogue turns
 
@@ -39,18 +38,22 @@ Can you help me?
 
 **A03 · comprehension**
 
-- **options:** help | you | can
+- **options:** کمک | خودکار | قیمت
 
 **A04 · sentence_order**
 
 - **answerEn:** Can you help me?
-- **tokensEn:** me? | you | help | Can
+- **tokensEn:** me? | help | Can | you
 - **answerTokensEn:** Can | you | help | me?
 
-**A05 · speak**
+**A05 · response_choice**
+
+- **optionsEn:** Sure. | No, a pen, please. | At six.
+
+**A06 · speak**
 
 - **textEn:** Can you help me?
-- **acceptedAnswersEn:** Can you help me? | Can you help?
+- **acceptedAnswersEn:** Can you help me?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

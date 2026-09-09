@@ -1,4 +1,4 @@
-<!-- sourceHash: 3047b5ec3f95c6473d4cfd6841f493aeee86e0abbe67ec01a2b69f5e49c99f39 -->
+<!-- sourceHash: f4f276ff68a9d734e872a2481dabf8ca66c2bf8e5e4db1ac81b9a5edcc9bc0b5 -->
 # English Audit — EN-A1-L-0016
 
 **Lesson:** What time?
@@ -6,10 +6,8 @@
 
 ## Lexical items
 
-- `EN-LEX-TIME-01` [word/target] — **time**
 - `EN-LEX-SIX-01` [word/target] — **six**
 - `EN-LEX-AT-TIME-01` [word/target] — **at**
-- `EN-LEX-YES-01` [word/review] — **yes**
 
 ## Dialogue turns
 
@@ -19,10 +17,10 @@ What time?
 
 **T02 · ruby**
 
-At six.
+It's at six.
 
-- **Speech target:** At six.
-- **Accepted speech:** At six.
+- **Speech target:** It's at six.
+- **Accepted speech:** It's at six.
 
 **T03 · sara**
 
@@ -50,18 +48,25 @@ At six.
 **A02 · response_choice**
 
 - **English prompt:** Next walk — 6:00
-- **options:** ساعت پنج | ساعت شش | اتاق شش
+- **options:** ساعت شش | اتاق شش | پنج دلار
 
 **A03 · dialogue**
 
 
-**A04 · lexical_teach**
+**A04 · sentence_order**
 
+- **answerEn:** It's at six.
+- **tokensEn:** six. | It's | at
+- **answerTokensEn:** It's | at | six.
 
-**A05 · speak**
+**A05 · response_choice**
+
+- **optionsEn:** At six. | Room two, please. | Five dollars.
+
+**A06 · speak**
 
 - **textEn:** At six.
-- **acceptedAnswersEn:** At six. | Six.
+- **acceptedAnswersEn:** At six.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

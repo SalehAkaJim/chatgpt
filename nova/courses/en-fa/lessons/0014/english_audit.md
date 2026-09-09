@@ -1,7 +1,7 @@
-<!-- sourceHash: ae5032e899df32abf48d0bef82b8ce0b617d54dc7bd7501c502aa03fe36f67da -->
+<!-- sourceHash: 4e28c922e4e5053c6996e34420f309c035e4f2aa023ddb6c1900d945ed7713e8 -->
 # English Audit — EN-A1-L-0014
 
-**Lesson:** Choose the room
+**Lesson:** Room one or room two?
 **Outcome:** A1-INTERACTION-CHOOSE-ROOM
 
 ## Lexical items
@@ -9,9 +9,6 @@
 - `EN-LEX-ROOM-01` [word/target] — **room**
 - `EN-LEX-ONE-01` [word/target] — **one**
 - `EN-LEX-TWO-01` [word/target] — **two**
-- `EN-LEX-OR-01` [word/review] — **or**
-- `EN-LEX-PLEASE-01` [word/review] — **please**
-- `EN-LEX-THANKS-01` [word/review] — **thanks**
 
 ## Dialogue turns
 
@@ -32,10 +29,10 @@ Room two.
 
 **T04 · nina**
 
-Thanks.
+Thanks!
 
-- **Speech target:** Thanks.
-- **Accepted speech:** Thanks.
+- **Speech target:** Thanks!
+- **Accepted speech:** Thanks!
 
 **T05 · nina**
 
@@ -57,14 +54,20 @@ Room one, please.
 **A03 · dialogue**
 
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** Room one, please. | Room two, please. | Thanks.
+- **answerEn:** Room two, please.
+- **tokensEn:** please. | Room | two,
+- **answerTokensEn:** Room | two, | please.
 
-**A05 · speak**
+**A05 · response_choice**
+
+- **optionsEn:** Room one, please. | Room two, please. | Water, please.
+
+**A06 · speak**
 
 - **textEn:** Room one, please.
-- **acceptedAnswersEn:** Room one, please. | Room one.
+- **acceptedAnswersEn:** Room one, please.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

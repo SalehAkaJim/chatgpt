@@ -1,7 +1,7 @@
-<!-- sourceHash: 958ffdb620d54e874ac922f7ca32efc0837d523a4874e5fd4ac9a8b44cee6e70 -->
+<!-- sourceHash: 6aca2dcaf1ea44bc03ac74cc945a9fd32203963a245565659e8554c245c4a4e4 -->
 # English Audit — EN-A1-L-0009
 
-**Lesson:** First stop at the cafe
+**Lesson:** Order a drink
 **Outcome:** A1-INTERACTION-ORDER-DRINK
 
 ## Lexical items
@@ -9,23 +9,19 @@
 - `EN-LEX-WATER-01` [word/target] — **water**
 - `EN-LEX-TEA-01` [word/target] — **tea**
 - `EN-LEX-COFFEE-01` [word/target] — **coffee**
-- `EN-LEX-PLEASE-01` [word/review] — **please**
-- `EN-LEX-HERE-YOU-GO-01` [formula/review] — **here you go**
-- `EN-LEX-THANKS-01` [word/review] — **thanks**
-- `EN-LEX-HELLO-01` [word/review] — **hello**
 
 ## Dialogue turns
 
 **T01 · ben**
 
-Hello!
+Hi!
 
 **T02 · ava**
 
-Hello! Can I have water, please?
+Hi! Can I have tea, please?
 
-- **Speech target:** Hello! Can I have water, please?
-- **Accepted speech:** Hello! Can I have water, please?
+- **Speech target:** Hi! Can I have tea, please?
+- **Accepted speech:** Hi! Can I have tea, please?
 
 **T03 · ben**
 
@@ -38,11 +34,7 @@ Thanks!
 - **Speech target:** Thanks!
 - **Accepted speech:** Thanks!
 
-**T05 · ben**
-
-Coffee?
-
-**T06 · ava**
+**T05 · ava**
 
 Can I have coffee, please?
 
@@ -57,23 +49,28 @@ Can I have coffee, please?
 **A02 · dialogue**
 
 
-**A03 · fill_blank**
+**A03 · sentence_order**
 
-- **sentenceEn:** Can I have ___, please?
-- **optionsEn:** water | coffee | tea
+- **answerEn:** Can I have coffee, please?
+- **tokensEn:** please? | coffee, | Can | have | I
+- **answerTokensEn:** Can | I | have | coffee, | please?
 
-**A04 · comprehension**
+**A04 · response_choice**
+
+- **optionsEn:** Can I have coffee, please? | It's on the table. | Where are you from?
+
+**A05 · comprehension**
+
+- **options:** چای | قهوه | آب
+
+**A06 · response_choice**
 
 - **options:** آب | چای | قهوه
 
-**A05 · response_choice**
-
-- **optionsEn:** Sorry? | Thanks! | See you!
-
-**A06 · speak**
+**A07 · speak**
 
 - **textEn:** Can I have coffee, please?
-- **acceptedAnswersEn:** Can I have coffee, please? | Can I have a coffee, please? | Can I have some coffee, please?
+- **acceptedAnswersEn:** Can I have coffee, please?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

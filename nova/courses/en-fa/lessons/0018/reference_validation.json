@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "lessonKey": "EN-A1-L-0018",
   "levelKey": "A1",
   "sortOrder": 18,
@@ -15,7 +15,7 @@
       "itemType": "word",
       "lemma": "have",
       "partOfSpeech": "verb",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-95D9B5A8DD21C690DAAE",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-95D9B5A8DD21C690DAAE",
@@ -23,7 +23,11 @@
       ],
       "referenceTranslationsFa": [
         "داشتن"
-      ]
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-95D9B5A8DD21C690DAAE",
+        "translationFa": "داشتن"
+      }
     },
     {
       "lexicalKey": "EN-LEX-PEN-01",
@@ -31,7 +35,7 @@
       "itemType": "word",
       "lemma": "pen",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-E7158161767216455400",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-E7158161767216455400",
@@ -40,7 +44,11 @@
       "referenceTranslationsFa": [
         "آغل، قفس",
         "خودکار"
-      ]
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-E7158161767216455400",
+        "translationFa": "خودکار"
+      }
     },
     {
       "lexicalKey": "EN-LEX-BOOK-01",
@@ -48,7 +56,7 @@
       "itemType": "word",
       "lemma": "book",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-950213E55A5DF7A7D1E1",
@@ -57,29 +65,12 @@
       "referenceTranslationsFa": [
         "اثر نوشته‌شده‌ای که منتشر شده است",
         "کتاب (دفتری با صفحات متصل)"
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-YES-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "yes",
-      "partOfSpeech": "interjection",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [],
-      "reviewOnlyCandidates": []
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "role": "review",
-      "itemType": "formula",
-      "lemma": "here you go",
-      "partOfSpeech": null,
-      "selectedReferenceKey": null,
-      "status": "not_required",
-      "referenceKeys": []
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+        "translationFa": "کتاب (دفتری با صفحات متصل)"
+      }
     }
   ],
-  "sourceHash": "11fbc7a38927534b3e341f3dabdaff2cc54b9a53d306ab61c247a4e5584b90c3"
+  "sourceHash": "f208530d120b4baaff250ae5f3a82af0e8db2670372ceaaab680340f4185d41c"
 }

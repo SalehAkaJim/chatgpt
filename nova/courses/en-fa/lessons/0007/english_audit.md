@@ -1,30 +1,26 @@
-<!-- sourceHash: fa285633016c5e1935c3497d5fdfc6e47629f22f4746951d3c95869e267b7be2 -->
+<!-- sourceHash: d48decf7120de16849369d1f03c8bc6f59f33fccb5027049ef36cafced8356f5 -->
 # English Audit — EN-A1-L-0007
 
-**Lesson:** Ask for a pen
+**Lesson:** Can I have a pen?
 **Outcome:** A1-INTERACTION-REQUEST-OBJECT
 
 ## Lexical items
 
-- `EN-LEX-PLEASE-01` [word/target] — **please**
-- `EN-LEX-HERE-YOU-GO-01` [formula/target] — **here you go**
 - `EN-LEX-PEN-01` [word/review] — **pen**
 - `EN-LEX-BOOK-01` [word/review] — **book**
-- `EN-LEX-HELLO-01` [word/review] — **hello**
-- `EN-LEX-THANKS-01` [word/review] — **thanks**
 
 ## Dialogue turns
 
 **T01 · nora**
 
-Hello, Owen.
+Hi, Owen.
 
 **T02 · owen**
 
-Can I have a pen, please?
+Hi! Can I have a pen, please?
 
-- **Speech target:** Can I have a pen, please?
-- **Accepted speech:** Can I have a pen, please?
+- **Speech target:** Hi! Can I have a pen, please?
+- **Accepted speech:** Hi! Can I have a pen, please?
 
 **T03 · nora**
 
@@ -39,19 +35,23 @@ Thanks!
 
 **T05 · nora**
 
-Can I have a book, please?
+Can I have the book, please?
 
 **T06 · owen**
 
-Can I have a book, please?
+Here you go.
 
-- **Speech target:** Can I have a book, please?
-- **Accepted speech:** Can I have a book, please?
+- **Speech target:** Here you go.
+- **Accepted speech:** Here you go.
+
+**T07 · owen**
+
+Can I have a pen, please?
+
+- **Speech target:** Can I have a pen, please?
+- **Accepted speech:** Can I have a pen, please?
 
 ## Activities
-
-**A01 · lexical_teach**
-
 
 **A02 · dialogue**
 
@@ -59,21 +59,25 @@ Can I have a book, please?
 **A03 · sentence_order**
 
 - **answerEn:** Can I have a pen, please?
-- **tokensEn:** I | have | a | pen, | please? | Can
+- **tokensEn:** pen, | please? | have | Can | a | I
 - **answerTokensEn:** Can | I | have | a | pen, | please?
 
-**A04 · comprehension**
+**A04 · response_choice**
 
-- **options:** خودکار | کتاب | آب
+- **optionsEn:** Can I have a pen, please? | What's this? | I'm from Iran.
 
-**A05 · response_choice**
+**A05 · comprehension**
 
-- **optionsEn:** Here you go. | Can I have a book, please? | See you!
+- **options:** کتاب | خودکار | اسم اوون
 
-**A06 · speak**
+**A06 · response_choice**
 
-- **textEn:** Can I have a book, please?
-- **acceptedAnswersEn:** Can I have a book, please?
+- **optionsEn:** Thanks! | Where are you from? | What's your name?
+
+**A07 · speak**
+
+- **textEn:** Can I have a pen, please?
+- **acceptedAnswersEn:** Can I have a pen, please?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

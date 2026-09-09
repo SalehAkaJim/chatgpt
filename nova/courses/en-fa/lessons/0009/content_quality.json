@@ -1,16 +1,28 @@
 {
-  "status": "PASS",
+  "status": "PASS_WITH_WARNINGS",
   "lessonKey": "EN-A1-L-0009",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 100,
+  "automatedScore": 95,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "can i have coffee please",
+        "activityKeys": [
+          "A04",
+          "A07"
+        ]
+      }
+    }
+  ],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0009",
@@ -78,10 +90,10 @@
   },
   "metrics": {
     "targetLexicalItems": 3,
-    "targetConstructions": 0,
-    "activities": 6,
+    "targetConstructions": 1,
+    "activities": 7,
     "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "958ffdb620d54e874ac922f7ca32efc0837d523a4874e5fd4ac9a8b44cee6e70"
+  "sourceHash": "6aca2dcaf1ea44bc03ac74cc945a9fd32203963a245565659e8554c245c4a4e4"
 }

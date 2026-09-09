@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0025",
+  "levelKey": "A1",
+  "sortOrder": 25,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0025: target word EN-LEX-NOT-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-NOT-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "not",
+      "partOfSpeech": "adverb",
+      "selectedReferenceKey": "EN-REF-84D3F8ECE5F12EF40C83",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-84D3F8ECE5F12EF40C83"
+      ],
+      "referenceTranslationsFa": [
+        "نه"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-84D3F8ECE5F12EF40C83",
+        "translationFa": "نه",
+        "definitionEn": "negation of a word or group of words",
+        "senseId": "743adb23-bd00-52db-8b38-3d4727643300",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    },
+    {
+      "lexicalKey": "EN-LEX-HELP-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "help",
+      "partOfSpeech": "verb",
+      "selectedReferenceKey": "EN-REF-76A0FAF42C7FB7906AA5",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-76A0FAF42C7FB7906AA5",
+        "EN-REF-F7E093ADABBBFD618D01"
+      ],
+      "referenceTranslationsFa": [
+        "بهتر کردن",
+        "کمک کردن"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-76A0FAF42C7FB7906AA5",
+        "translationFa": "کمک کردن"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "room",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-D8B2B1429B2580871B77",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-D8B2B1429B2580871B77",
+        "EN-REF-920AB60876EB00716D0A"
+      ],
+      "referenceTranslationsFa": [
+        "اتاق",
+        "فضا"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-D8B2B1429B2580871B77",
+        "translationFa": "اتاق"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ONE-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "one",
+      "partOfSpeech": "numeral",
+      "selectedReferenceKey": null,
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-2D929CE4C80ED3AA4C38"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-2D929CE4C80ED3AA4C38",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-TWO-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "two",
+      "partOfSpeech": "numeral",
+      "selectedReferenceKey": null,
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-9BF778266108C2D6AD3C"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-9BF778266108C2D6AD3C",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "23c5eadf9c254bf0259e5b039b7225a9dd9a0c010ef84d6f4e9d664e274b7f3e"
+}

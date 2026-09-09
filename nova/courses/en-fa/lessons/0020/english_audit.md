@@ -1,4 +1,4 @@
-<!-- sourceHash: 54a414be9c627b646cb7a599c67a9c44c686979f2a30d710dde4f4c53da61dcd -->
+<!-- sourceHash: 569a3671f677365c42778f18170a2fc76eafe89ecee8963ae8ab12dfcc3ddff5 -->
 # English Audit — EN-A1-L-0020
 
 **Lesson:** Room two at seven
@@ -6,14 +6,12 @@
 
 ## Lexical items
 
-- `EN-LEX-SEVEN-01` [word/target] — **seven**
 - `EN-LEX-ROOM-01` [word/review] — **room**
 - `EN-LEX-ONE-01` [word/review] — **one**
 - `EN-LEX-TWO-01` [word/review] — **two**
-- `EN-LEX-TIME-01` [word/review] — **time**
-- `EN-LEX-SIX-01` [word/review] — **six**
 - `EN-LEX-AT-TIME-01` [word/review] — **at**
-- `EN-LEX-YES-01` [word/review] — **yes**
+- `EN-LEX-SIX-01` [word/review] — **six**
+- `EN-LEX-SEVEN-01` [word/target] — **seven**
 
 ## Dialogue turns
 
@@ -46,6 +44,13 @@ Room two at seven.
 - **Speech target:** Room two at seven.
 - **Accepted speech:** Room two at seven.
 
+**T06 · nina**
+
+Room one at six.
+
+- **Speech target:** Room one at six.
+- **Accepted speech:** Room one at six.
+
 ## Activities
 
 **A01 · lexical_teach**
@@ -56,7 +61,7 @@ Room two at seven.
 - **English prompt:** Community class
 Room two
 7:00
-- **options:** اتاق یک، ساعت هفت | اتاق دو، ساعت هفت | اتاق دو، ساعت شش
+- **options:** اتاق دو، ساعت هفت | اتاق دو، ساعت شش | اتاق یک، ساعت هفت
 
 **A03 · dialogue**
 
@@ -67,10 +72,19 @@ Room two
 - **tokensEn:** seven. | Room | at | two
 - **answerTokensEn:** Room | two | at | seven.
 
-**A05 · speak**
+**A05 · response_choice**
+
+- **optionsEn:** At seven. | At six. | Room two, please.
+
+**A06 · speak**
 
 - **textEn:** Room two at seven.
 - **acceptedAnswersEn:** Room two at seven.
+
+**A07 · speak**
+
+- **textEn:** Room one at six.
+- **acceptedAnswersEn:** Room one at six.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

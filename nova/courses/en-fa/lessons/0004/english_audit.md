@@ -1,15 +1,12 @@
-<!-- sourceHash: 2fa26b1af15ccf654b50b50891cda91652dac0c079520d6aaa7479f0def22275 -->
+<!-- sourceHash: 5bb7b00e8ddf1e93ba7438918d1f3b11aa60d2a077c4198d685a49e049da7ea9 -->
 # English Audit — EN-A1-L-0004
 
-**Lesson:** When you miss a question
+**Lesson:** Please say that again
 **Outcome:** A1-INTERACTION-ASK-REPEAT
 
 ## Lexical items
 
-- `EN-LEX-SORRY-REPEAT-01` [word/target] — **sorry**
-- `EN-LEX-HOW-ARE-YOU-01` [formula/review] — **how are you**
-- `EN-LEX-FINE-01` [word/review] — **fine**
-- `EN-LEX-THANKS-01` [word/review] — **thanks**
+- `EN-LEX-REPEAT-01` [word/target] — **repeat**
 
 ## Dialogue turns
 
@@ -19,10 +16,10 @@ How are you?
 
 **T02 · liam**
 
-Sorry?
+Sorry? Can you repeat that, please?
 
-- **Speech target:** Sorry?
-- **Accepted speech:** Sorry?
+- **Speech target:** Sorry? Can you repeat that, please?
+- **Accepted speech:** Sorry? Can you repeat that, please?
 
 **T03 · leo**
 
@@ -37,10 +34,10 @@ I'm fine, thanks.
 
 **T05 · liam**
 
-Sorry?
+Can you repeat that, please?
 
-- **Speech target:** Sorry?
-- **Accepted speech:** Sorry?
+- **Speech target:** Can you repeat that, please?
+- **Accepted speech:** Can you repeat that, please?
 
 ## Activities
 
@@ -50,18 +47,24 @@ Sorry?
 **A02 · dialogue**
 
 
-**A03 · comprehension**
+**A03 · sentence_order**
 
-- **options:** اسم تو را می پرسد | حالت را می پرسد | خداحافظی می کند
+- **answerEn:** Can you repeat that, please?
+- **tokensEn:** please? | repeat | that, | Can | you
+- **answerTokensEn:** Can | you | repeat | that, | please?
 
 **A04 · response_choice**
 
-- **optionsEn:** See you! | Sorry? | I'm fine, thanks.
+- **optionsEn:** Can you repeat that, please? | What's your name? | See you!
 
-**A05 · speak**
+**A05 · comprehension**
 
-- **textEn:** Sorry?
-- **acceptedAnswersEn:** Sorry?
+- **options:** چون لیام درخواست تکرار کرده | چون اسم لیام را فراموش کرده | چون می خواهد خداحافظی کند
+
+**A06 · speak**
+
+- **textEn:** Can you repeat that, please?
+- **acceptedAnswersEn:** Can you repeat that, please?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

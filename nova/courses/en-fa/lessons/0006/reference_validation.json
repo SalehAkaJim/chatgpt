@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "lessonKey": "EN-A1-L-0006",
   "levelKey": "A1",
   "sortOrder": 6,
@@ -7,9 +7,7 @@
   "enforced": false,
   "status": "PASS",
   "errors": [],
-  "warnings": [
-    "EN-A1-L-0006: legacy target word EN-LEX-THIS-01 has no exact production reference match"
-  ],
+  "warnings": [],
   "items": [
     {
       "lexicalKey": "EN-LEX-PEN-01",
@@ -17,7 +15,7 @@
       "itemType": "word",
       "lemma": "pen",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-E7158161767216455400",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-E7158161767216455400",
@@ -26,7 +24,11 @@
       "referenceTranslationsFa": [
         "آغل، قفس",
         "خودکار"
-      ]
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-E7158161767216455400",
+        "translationFa": "خودکار"
+      }
     },
     {
       "lexicalKey": "EN-LEX-BOOK-01",
@@ -34,7 +36,7 @@
       "itemType": "word",
       "lemma": "book",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-950213E55A5DF7A7D1E1",
@@ -43,75 +45,12 @@
       "referenceTranslationsFa": [
         "اثر نوشته‌شده‌ای که منتشر شده است",
         "کتاب (دفتری با صفحات متصل)"
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-THIS-01",
-      "role": "target",
-      "itemType": "word",
-      "lemma": "this",
-      "partOfSpeech": "pronoun",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [
-        "EN-REF-F77CE44CAADBD9C5A9BC"
       ],
-      "reviewOnlyCandidates": [
-        {
-          "referenceKey": "EN-REF-F77CE44CAADBD9C5A9BC",
-          "qualityScore": 30,
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "flags": [
-            "missing_english_definition",
-            "missing_persian_translation",
-            "profile_only_no_dictionary_sense"
-          ]
-        }
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-NAME-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "name",
-      "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
-      "status": "exact_production_match",
-      "referenceKeys": [
-        "EN-REF-F7A6AD8E6587EDA3E40E",
-        "EN-REF-E4F6451340C7A9A05026"
-      ],
-      "referenceTranslationsFa": [
-        "شهرت، آبرو",
-        "نام"
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-AND-01",
-      "role": "support",
-      "itemType": "word",
-      "lemma": "and",
-      "partOfSpeech": "conjunction",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [
-        "EN-REF-4CC61FD8F301A7D9DCAA"
-      ],
-      "reviewOnlyCandidates": [
-        {
-          "referenceKey": "EN-REF-4CC61FD8F301A7D9DCAA",
-          "qualityScore": 30,
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "flags": [
-            "missing_english_definition",
-            "missing_persian_translation",
-            "profile_only_no_dictionary_sense"
-          ]
-        }
-      ]
+      "selectedReference": {
+        "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+        "translationFa": "کتاب (دفتری با صفحات متصل)"
+      }
     }
   ],
-  "sourceHash": "af588e7cf9148b02560213db8e73aa3a0db4fc0cabf84357b0463882a16e06ea"
+  "sourceHash": "692efa20fed455f693f19d3196058afa4182d5fb9c2ffd2c1d5573246a0d08ec"
 }

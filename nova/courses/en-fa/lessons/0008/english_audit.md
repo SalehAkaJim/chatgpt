@@ -1,18 +1,14 @@
-<!-- sourceHash: 7bb3946d0de8130c2aff4f323c36de1a40c15c99cf2f78a9f11275727b69fb2e -->
+<!-- sourceHash: 24a2433d5e3da92176db9b0c4a6f549922976fd2a97b538c76203ef57c2a3ab9 -->
 # English Audit — EN-A1-L-0008
 
-**Lesson:** Find the book
+**Lesson:** Where's my book?
 **Outcome:** A1-INTERACTION-LOCATE-OBJECT
 
 ## Lexical items
 
-- `EN-LEX-WHERE-01` [word/target] — **where**
-- `EN-LEX-ON-01` [word/target] — **on**
-- `EN-LEX-TABLE-01` [word/target] — **table**
 - `EN-LEX-BOOK-01` [word/review] — **book**
 - `EN-LEX-PEN-01` [word/review] — **pen**
-- `EN-LEX-THANKS-01` [word/review] — **thanks**
-- `EN-LEX-HERE-YOU-GO-01` [formula/review] — **here you go**
+- `EN-LEX-TABLE-01` [word/target] — **table**
 
 ## Dialogue turns
 
@@ -29,7 +25,7 @@ It's on the table.
 
 **T03 · iris**
 
-Thanks, Nina!
+Thanks!
 
 **T04 · nina**
 
@@ -38,16 +34,12 @@ Here you go.
 - **Speech target:** Here you go.
 - **Accepted speech:** Here you go.
 
-**T05 · iris**
+**T05 · nina**
 
-Where's my pen?
+It's on the table.
 
-**T06 · nina**
-
-Where's my pen?
-
-- **Speech target:** Where's my pen?
-- **Accepted speech:** Where's my pen?
+- **Speech target:** It's on the table.
+- **Accepted speech:** It's on the table.
 
 ## Activities
 
@@ -57,25 +49,24 @@ Where's my pen?
 **A02 · dialogue**
 
 
-**A03 · fill_blank**
-
-- **sentenceEn:** Where's my ___?
-- **optionsEn:** pen | book | table
-
-**A04 · sentence_order**
+**A03 · sentence_order**
 
 - **answerEn:** It's on the table.
-- **tokensEn:** on | the | table. | It's
+- **tokensEn:** table. | on | It's | the
 - **answerTokensEn:** It's | on | the | table.
+
+**A04 · response_choice**
+
+- **optionsEn:** Where's my pen? | Where's my book? | Can I have a pen, please?
 
 **A05 · comprehension**
 
-- **options:** دنبال کتابش می گردد | دنبال خودکارش می گردد | اسم تو را می پرسد
+- **options:** کتاب | خودکار | میز
 
 **A06 · speak**
 
-- **textEn:** Where's my pen?
-- **acceptedAnswersEn:** Where's my pen? | Where is my pen?
+- **textEn:** It's on the table.
+- **acceptedAnswersEn:** It's on the table.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

@@ -1,4 +1,4 @@
-<!-- sourceHash: 11fbc7a38927534b3e341f3dabdaff2cc54b9a53d306ab61c247a4e5584b90c3 -->
+<!-- sourceHash: f208530d120b4baaff250ae5f3a82af0e8db2670372ceaaab680340f4185d41c -->
 # English Audit — EN-A1-L-0018
 
 **Lesson:** Do you have a pen?
@@ -9,8 +9,6 @@
 - `EN-LEX-HAVE-01` [word/target] — **have**
 - `EN-LEX-PEN-01` [word/review] — **pen**
 - `EN-LEX-BOOK-01` [word/review] — **book**
-- `EN-LEX-YES-01` [word/review] — **yes**
-- `EN-LEX-HERE-YOU-GO-01` [formula/review] — **here you go**
 
 ## Dialogue turns
 
@@ -49,15 +47,19 @@ Do you have a pen?
 
 **A03 · comprehension**
 
-- **options:** خودکار | کتاب | اتاق
+- **options:** خودکار | کتاب | میز
 
 **A04 · sentence_order**
 
 - **answerEn:** Do you have a book?
-- **tokensEn:** book? | you | Do | a | have
+- **tokensEn:** book? | have | Do | you | a
 - **answerTokensEn:** Do | you | have | a | book?
 
-**A05 · speak**
+**A05 · response_choice**
+
+- **optionsEn:** Do you have a book? | Can I have a book, please? | Where's my book?
+
+**A06 · speak**
 
 - **textEn:** Do you have a pen?
 - **acceptedAnswersEn:** Do you have a pen?

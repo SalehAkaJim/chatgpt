@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "lessonKey": "EN-A1-L-0002",
   "levelKey": "A1",
   "sortOrder": 2,
@@ -10,23 +10,12 @@
   "warnings": [],
   "items": [
     {
-      "lexicalKey": "EN-LEX-HELLO-01",
-      "role": "review",
-      "itemType": "word",
-      "lemma": "hello",
-      "partOfSpeech": "interjection",
-      "selectedReferenceKey": null,
-      "status": "no_exact_production_match",
-      "referenceKeys": [],
-      "reviewOnlyCandidates": []
-    },
-    {
       "lexicalKey": "EN-LEX-NAME-01",
       "role": "review",
       "itemType": "word",
       "lemma": "name",
       "partOfSpeech": "noun",
-      "selectedReferenceKey": null,
+      "selectedReferenceKey": "EN-REF-F7A6AD8E6587EDA3E40E",
       "status": "exact_production_match",
       "referenceKeys": [
         "EN-REF-F7A6AD8E6587EDA3E40E",
@@ -35,35 +24,12 @@
       "referenceTranslationsFa": [
         "شهرت، آبرو",
         "نام"
-      ]
-    },
-    {
-      "lexicalKey": "EN-LEX-NICE-TO-MEET-YOU-01",
-      "role": "target",
-      "itemType": "formula",
-      "lemma": "nice to meet you",
-      "partOfSpeech": null,
-      "selectedReferenceKey": null,
-      "status": "nova_authored_multiword",
-      "referenceKeys": []
-    },
-    {
-      "lexicalKey": "EN-LEX-TOO-01",
-      "role": "target",
-      "itemType": "word",
-      "lemma": "too",
-      "partOfSpeech": "adverb",
-      "selectedReferenceKey": null,
-      "status": "exact_production_match",
-      "referenceKeys": [
-        "EN-REF-234D92D643BA5834A127",
-        "EN-REF-3CC934352632C389E9E1"
       ],
-      "referenceTranslationsFa": [
-        "بیش از حد",
-        "هم‌چنین، نیز"
-      ]
+      "selectedReference": {
+        "referenceKey": "EN-REF-F7A6AD8E6587EDA3E40E",
+        "translationFa": "نام"
+      }
     }
   ],
-  "sourceHash": "5304e043d668dc193e0a54a6fdd528acfe5574fba3b784920cde109169c0e059"
+  "sourceHash": "77f87ae41082b6e712e533eaab928e73ad93cab5462d49ec40834e183fdbdc4d"
 }

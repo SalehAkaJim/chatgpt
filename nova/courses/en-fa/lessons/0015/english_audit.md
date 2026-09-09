@@ -1,17 +1,14 @@
-<!-- sourceHash: 12e67c96686093b30668df672014fe8f674b882f4b0586a3421975f571398903 -->
+<!-- sourceHash: a34473d2eb0254bcf6125b7b114a166d43d5fd97a2570d1578f2640affa3eb51 -->
 # English Audit — EN-A1-L-0015
 
-**Lesson:** Ask the price
+**Lesson:** How much is it?
 **Outcome:** A1-INTERACTION-ASK-PRICE
 
 ## Lexical items
 
-- `EN-LEX-HOW-MUCH-01` [formula/target] — **how much**
+- `EN-LEX-TEA-01` [word/review] — **tea**
 - `EN-LEX-FIVE-01` [word/target] — **five**
 - `EN-LEX-DOLLAR-01` [word/target] — **dollar**
-- `EN-LEX-TEA-01` [word/review] — **tea**
-- `EN-LEX-PLEASE-01` [word/review] — **please**
-- `EN-LEX-THANKS-01` [word/review] — **thanks**
 
 ## Dialogue turns
 
@@ -32,10 +29,10 @@ Five dollars.
 
 **T04 · ava**
 
-Thanks.
+Thanks!
 
-- **Speech target:** Thanks.
-- **Accepted speech:** Thanks.
+- **Speech target:** Thanks!
+- **Accepted speech:** Thanks!
 
 **T05 · ava**
 
@@ -46,25 +43,31 @@ How much is it?
 
 ## Activities
 
-**A01 · response_choice**
+**A01 · lexical_teach**
+
+
+**A02 · response_choice**
 
 - **English prompt:** Tea — $5
-- **options:** دو دلار | پنج دلار | یک دلار
-
-**A02 · lexical_teach**
-
+- **options:** پنج دلار | دو دلار | اتاق پنج
 
 **A03 · dialogue**
 
 
-**A04 · comprehension**
+**A04 · sentence_order**
 
-- **options:** دو دلار | پنج دلار | یک دلار
+- **answerEn:** How much is it?
+- **tokensEn:** it? | How | is | much
+- **answerTokensEn:** How | much | is | it?
 
-**A05 · speak**
+**A05 · comprehension**
+
+- **options:** پنج دلار | دو دلار | شش دلار
+
+**A06 · speak**
 
 - **textEn:** How much is it?
-- **acceptedAnswersEn:** How much is it? | How much?
+- **acceptedAnswersEn:** How much is it?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "courseCode": "en-fa",
-  "lastLessonSortOrder": 24,
+  "lastLessonSortOrder": 25,
   "knownLexical": [
     {
       "lemma": "name",
@@ -101,7 +101,7 @@
     {
       "lemma": "one",
       "firstLesson": 14,
-      "lastLesson": 20,
+      "lastLesson": 25,
       "roles": [
         "review",
         "target"
@@ -111,7 +111,7 @@
     {
       "lemma": "room",
       "firstLesson": 14,
-      "lastLesson": 20,
+      "lastLesson": 25,
       "roles": [
         "review",
         "target"
@@ -123,7 +123,7 @@
     {
       "lemma": "two",
       "firstLesson": 14,
-      "lastLesson": 20,
+      "lastLesson": 25,
       "roles": [
         "review",
         "target"
@@ -186,8 +186,9 @@
     {
       "lemma": "help",
       "firstLesson": 19,
-      "lastLesson": 19,
+      "lastLesson": 25,
       "roles": [
+        "review",
         "target"
       ],
       "referenceKeys": [
@@ -235,6 +236,17 @@
       "referenceKeys": [
         "EN-REF-F4E87C743D4964D90BCD"
       ]
+    },
+    {
+      "lemma": "not",
+      "firstLesson": 25,
+      "lastLesson": 25,
+      "roles": [
+        "target"
+      ],
+      "referenceKeys": [
+        "EN-REF-84D3F8ECE5F12EF40C83"
+      ]
     }
   ],
   "practicedSurfaceVocabulary": [
@@ -250,8 +262,8 @@
     {
       "lemma": "be",
       "firstLesson": 1,
-      "lastLesson": 24,
-      "practiceCount": 19,
+      "lastLesson": 25,
+      "practiceCount": 22,
       "surfaceForms": [
         "am",
         "are",
@@ -270,8 +282,8 @@
     {
       "lemma": "i",
       "firstLesson": 1,
-      "lastLesson": 23,
-      "practiceCount": 18,
+      "lastLesson": 25,
+      "practiceCount": 21,
       "surfaceForms": [
         "i"
       ]
@@ -612,8 +624,8 @@
     {
       "lemma": "no",
       "firstLesson": 11,
-      "lastLesson": 22,
-      "practiceCount": 5,
+      "lastLesson": 25,
+      "practiceCount": 6,
       "surfaceForms": [
         "no"
       ]
@@ -630,8 +642,8 @@
     {
       "lemma": "yes",
       "firstLesson": 11,
-      "lastLesson": 24,
-      "practiceCount": 8,
+      "lastLesson": 25,
+      "practiceCount": 9,
       "surfaceForms": [
         "yes"
       ]
@@ -639,8 +651,8 @@
     {
       "lemma": "one",
       "firstLesson": 14,
-      "lastLesson": 20,
-      "practiceCount": 2,
+      "lastLesson": 25,
+      "practiceCount": 3,
       "surfaceForms": [
         "one"
       ]
@@ -648,8 +660,8 @@
     {
       "lemma": "room",
       "firstLesson": 14,
-      "lastLesson": 20,
-      "practiceCount": 4,
+      "lastLesson": 25,
+      "practiceCount": 6,
       "surfaceForms": [
         "room"
       ]
@@ -657,8 +669,8 @@
     {
       "lemma": "two",
       "firstLesson": 14,
-      "lastLesson": 20,
-      "practiceCount": 2,
+      "lastLesson": 25,
+      "practiceCount": 3,
       "surfaceForms": [
         "two"
       ]
@@ -779,6 +791,24 @@
       "surfaceForms": [
         "read"
       ]
+    },
+    {
+      "lemma": "in",
+      "firstLesson": 25,
+      "lastLesson": 25,
+      "practiceCount": 2,
+      "surfaceForms": [
+        "in"
+      ]
+    },
+    {
+      "lemma": "not",
+      "firstLesson": 25,
+      "lastLesson": 25,
+      "practiceCount": 3,
+      "surfaceForms": [
+        "not"
+      ]
     }
   ],
   "introducedGrammar": [
@@ -871,6 +901,18 @@
       "exposureCount": 1,
       "evidenceKinds": [
         "target_construction_pattern"
+      ],
+      "maxMatchScore": 1.0
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-1-1",
+      "grammaticalItem": "I am not",
+      "firstLesson": 25,
+      "lastLesson": 25,
+      "exposureCount": 3,
+      "evidenceKinds": [
+        "learner_practice",
+        "target_construction"
       ],
       "maxMatchScore": 1.0
     }
@@ -1226,6 +1268,32 @@
           "lesson": 24
         }
       ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-I-AM-NOT",
+      "form": "I am not",
+      "firstLesson": 25,
+      "lastLesson": 25,
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-1",
+          "matchScore": 1.0,
+          "lesson": 25
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-IM-NOT-IN-PLACE",
+      "form": "I'm not in + place.",
+      "firstLesson": 25,
+      "lastLesson": 25,
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-1",
+          "matchScore": 0.8875,
+          "lesson": 25
+        }
+      ]
     }
   ],
   "lessonHistory": [
@@ -1323,7 +1391,7 @@
         "iris"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "5321379c8d4382d7038a9ea3ee98181e7ea2c568a55499e3cef9a5ce39c762f4"
+      "sourceHash": "24a2433d5e3da92176db9b0c4a6f549922976fd2a97b538c76203ef57c2a3ab9"
     },
     {
       "lessonKey": "EN-A1-L-0009",
@@ -1419,7 +1487,7 @@
         "sara"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "2842cd0a01ce661b683ce7d16e525800f8a5949aaba0f8684893c1ce5aefc70f"
+      "sourceHash": "f4f276ff68a9d734e872a2481dabf8ca66c2bf8e5e4db1ac81b9a5edcc9bc0b5"
     },
     {
       "lessonKey": "EN-A1-L-0017",
@@ -1515,7 +1583,19 @@
         "maya"
       ],
       "arcKey": "EN-A1-CLASSMATES",
-      "sourceHash": "cd082f4cd8e45be319d16c947818b626840853ea2221730604f207265cd60de1"
+      "sourceHash": "2c0bae732b2a7e7c731eacc9df993e9976d5b96d8e435ee5608b9e2f659d580b"
+    },
+    {
+      "lessonKey": "EN-A1-L-0025",
+      "sortOrder": 25,
+      "levelKey": "A1",
+      "primaryOutcomeKey": "A1-INTERACTION-NEGATE-LOCATION",
+      "participants": [
+        "owen",
+        "nora"
+      ],
+      "arcKey": "EN-A1-NEIGHBORS",
+      "sourceHash": "23c5eadf9c254bf0259e5b039b7225a9dd9a0c010ef84d6f4e9d664e274b7f3e"
     }
   ]
 }

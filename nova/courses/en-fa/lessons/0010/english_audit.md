@@ -1,18 +1,14 @@
-<!-- sourceHash: b33100bf6bacfcc7410602e6955e9c5eb0f4f8078bb52f82a8bc820eb542434a -->
+<!-- sourceHash: 506d4473e064473f11cab8854d05afeeac166beb1677c08e492995ee9799d784 -->
 # English Audit — EN-A1-L-0010
 
-**Lesson:** Drinks after the walk
+**Lesson:** Tea or coffee?
 **Outcome:** A1-INTERACTION-CHOOSE-DRINK
 
 ## Lexical items
 
-- `EN-LEX-OR-01` [word/target] — **or**
 - `EN-LEX-TEA-01` [word/review] — **tea**
 - `EN-LEX-COFFEE-01` [word/review] — **coffee**
 - `EN-LEX-WATER-01` [word/review] — **water**
-- `EN-LEX-PLEASE-01` [word/review] — **please**
-- `EN-LEX-THANKS-01` [word/review] — **thanks**
-- `EN-LEX-HERE-YOU-GO-01` [formula/review] — **here you go**
 
 ## Dialogue turns
 
@@ -33,10 +29,10 @@ Here you go.
 
 **T04 · ruby**
 
-Thanks.
+Thanks!
 
-- **Speech target:** Thanks.
-- **Accepted speech:** Thanks.
+- **Speech target:** Thanks!
+- **Accepted speech:** Thanks!
 
 **T05 · sara**
 
@@ -57,18 +53,19 @@ Water, please.
 **A02 · dialogue**
 
 
-**A03 · comprehension**
+**A03 · sentence_order**
 
-- **options:** آب و قهوه | چای و قهوه | آب و چای
+- **answerEn:** Water or tea?
+- **tokensEn:** tea? | Water | or
+- **answerTokensEn:** Water | or | tea?
 
-**A04 · response_choice**
+**A04 · comprehension**
 
-- **optionsEn:** Coffee, please. | Water, please. | Tea, please.
+- **options:** آب و چای | چای و قهوه | آب و قهوه
 
-**A05 · fill_blank**
+**A05 · response_choice**
 
-- **sentenceEn:** Tea ___ coffee?
-- **optionsEn:** and | or | from
+- **optionsEn:** Coffee, please. | Water, please. | Where's my book?
 
 **A06 · speak**
 

@@ -1,19 +1,13 @@
-<!-- sourceHash: bc63e5579cbabaa3518c057cd99feaa69aef50b9b350d8be444aee8720f6800e -->
+<!-- sourceHash: 1b6b71fbeb97cac5343ff325eac6d74ffc67601654fdd14f488e34e2163b9bdd -->
 # English Audit — EN-A1-L-0012
 
-**Lesson:** Correct the classroom request
+**Lesson:** No, a pen, please.
 **Outcome:** A1-INTERACTION-CORRECT-REQUEST
 
 ## Lexical items
 
-- `EN-LEX-SORRY-APOLOGY-01` [word/target] — **sorry**
-- `EN-LEX-NO-01` [word/review] — **no**
-- `EN-LEX-TEA-01` [word/review] — **tea**
-- `EN-LEX-COFFEE-01` [word/review] — **coffee**
-- `EN-LEX-PLEASE-01` [word/review] — **please**
 - `EN-LEX-PEN-01` [word/review] — **pen**
 - `EN-LEX-BOOK-01` [word/review] — **book**
-- `EN-LEX-THANKS-01` [word/review] — **thanks**
 
 ## Dialogue turns
 
@@ -30,7 +24,7 @@ No, a pen, please.
 
 **T03 · maya**
 
-Sorry! A pen.
+Sorry. Here you go.
 
 **T04 · alex**
 
@@ -54,15 +48,21 @@ No, a book, please.
 **A02 · dialogue**
 
 
-**A03 · comprehension**
+**A03 · sentence_order**
 
-- **options:** اشتباهش را می پذیرد و نام وسیله درست را می گوید | از تو می خواهد درخواستت را تکرار کنی | همچنان همان وسیله اول را پیشنهاد می کند
+- **answerEn:** No, a pen, please.
+- **tokensEn:** pen, | please. | No, | a
+- **answerTokensEn:** No, | a | pen, | please.
 
-**A04 · response_choice**
+**A04 · comprehension**
 
-- **optionsEn:** No, a book, please. | No, a pen, please. | Yes, please.
+- **options:** کتاب | خودکار | میز
 
-**A05 · speak**
+**A05 · response_choice**
+
+- **optionsEn:** No, a pen, please. | Yes, please. | It's on the table.
+
+**A06 · speak**
 
 - **textEn:** No, a book, please.
 - **acceptedAnswersEn:** No, a book, please.

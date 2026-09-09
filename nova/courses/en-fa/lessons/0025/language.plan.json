@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0025",
+  "sortOrder": 25,
+  "levelKey": "A1",
+  "lessonSourceHash": "23c5eadf9c254bf0259e5b039b7225a9dd9a0c010ef84d6f4e9d664e274b7f3e",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-I-AM-NOT",
+      "form": "I am not",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-1-1",
+        "grammaticalItem": "I am not",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 1.0,
+        "prerequisiteKeys": [
+          "CEFRJ-GRAM-1"
+        ]
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-3",
+          "grammaticalItem": "Am I not ...?",
+          "matchScore": 0.85
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1",
+          "grammaticalItem": "I am",
+          "matchScore": 0.8167
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-2",
+          "grammaticalItem": "Am I ...?",
+          "matchScore": 0.5667
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-IM-NOT-IN-PLACE",
+      "form": "I'm not in + place.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-1-1",
+        "grammaticalItem": "I am not",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.8875,
+        "prerequisiteKeys": [
+          "CEFRJ-GRAM-1"
+        ]
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1",
+          "grammaticalItem": "I am",
+          "matchScore": 0.675
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-3",
+          "grammaticalItem": "Am I not ...?",
+          "matchScore": 0.6375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-2",
+          "grammaticalItem": "Am I ...?",
+          "matchScore": 0.425
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-NOT-01",
+      "lemma": "not",
+      "role": "target",
+      "referenceKey": "EN-REF-84D3F8ECE5F12EF40C83",
+      "spokenPriority": {
+        "lemma": "not",
+        "spokenRank": 11,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N AA1 T",
+        "arpabet": [
+          "N AA1 T"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-HELP-01",
+      "lemma": "help",
+      "role": "review",
+      "referenceKey": "EN-REF-76A0FAF42C7FB7906AA5",
+      "spokenPriority": {
+        "lemma": "help",
+        "spokenRank": 209,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "HH EH1 L P",
+        "arpabet": [
+          "HH EH1 L P"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "lemma": "room",
+      "role": "review",
+      "referenceKey": "EN-REF-D8B2B1429B2580871B77",
+      "spokenPriority": {
+        "lemma": "room",
+        "spokenRank": 301,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R UW1 M",
+        "arpabet": [
+          "R UW1 M"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ONE-01",
+      "lemma": "one",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "one",
+        "spokenRank": 37,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "W AH1 N",
+        "arpabet": [
+          "W AH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TWO-01",
+      "lemma": "two",
+      "role": "review",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "two",
+        "spokenRank": 71,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T UW1",
+        "arpabet": [
+          "T UW1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i am not",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-I-AM-NOT"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i am not",
+      "examples": [
+        {
+          "id": 2379436,
+          "text": "I am not.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13965920,
+          "text": "I am not here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Leglaine"
+        },
+        {
+          "id": 13897324,
+          "text": "I am not exhausted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kylewii"
+        }
+      ],
+      "fallback": null
+    },
+    {
+      "query": "i'm not in",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-IM-NOT-IN-PLACE"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i am not",
+      "examples": [
+        {
+          "id": 2379436,
+          "text": "I am not.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13965920,
+          "text": "I am not here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Leglaine"
+        },
+        {
+          "id": 13897324,
+          "text": "I am not exhausted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kylewii"
+        }
+      ],
+      "fallback": null
+    },
+    {
+      "query": "no i'm not",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "lexicalLemmas": [
+        "not"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i am not",
+      "examples": [
+        {
+          "id": 2379436,
+          "text": "I am not.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13965920,
+          "text": "I am not here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Leglaine"
+        },
+        {
+          "id": 13897324,
+          "text": "I am not exhausted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kylewii"
+        }
+      ],
+      "fallback": {
+        "query": "no i'm not",
+        "rationale": "A short No, I'm not. reply is the direct first-person negative answer to the immediately preceding Are you ...? question; the lesson keeps the meaning and discourse function explicit and bounded."
+      }
+    },
+    {
+      "query": "i'm not in room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "lexicalLemmas": [
+        "not"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i am not",
+      "examples": [
+        {
+          "id": 2379436,
+          "text": "I am not.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13965920,
+          "text": "I am not here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Leglaine"
+        },
+        {
+          "id": 13897324,
+          "text": "I am not exhausted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kylewii"
+        }
+      ],
+      "fallback": {
+        "query": "i'm not in room",
+        "rationale": "I'm not in room + number is a transparent A1 location negation built from the CEFR-J I am not pattern and previously taught room-number components; Naturalness and Generativity gates also test the changed room filler."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "543ef7de6ffcde457e113be9b471c3986901ba6ce3033dd78c8f55246060e773"
+}
