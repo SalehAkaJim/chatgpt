@@ -11,10 +11,11 @@
     6,
     7,
     8,
-    9
+    9,
+    10
   ],
-  "passedPrefixLength": 9,
-  "status": "PASS",
+  "passedPrefixLength": 10,
+  "status": "FAIL",
   "lessonReports": [
     {
       "lessonKey": "EN-A1-L-0001",
@@ -113,8 +114,22 @@
         "EN-A1-L-0009: target word EN-LEX-TEA-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
       ],
       "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0010",
+      "sortOrder": 10,
+      "status": "PASS",
+      "automatedScore": 100,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
     }
   ],
-  "storyErrors": [],
-  "errors": []
+  "storyErrors": [
+    "EN-A1-L-0010: review requires a learning demand and rationale"
+  ],
+  "errors": [
+    "EN-A1-L-0010: review requires a learning demand and rationale"
+  ]
 }
