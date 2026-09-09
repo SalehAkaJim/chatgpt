@@ -8,6 +8,7 @@ on:
       - '.github/workflows/nova-language-reference-sync-test.yml'
       - 'nova/reference/en-fa/sources.lock.json'
       - 'nova/_assistant/content-system-v1/tools/sync_language_reference_extensions.py'
+      - 'nova/_assistant/content-system-v1/tools/register_reference_snapshot.py'
       - 'nova/experiments/content-factory-from-lesson-1/probe_config.json'
       - 'nova/courses/en-fa/lessons/**/lesson.source.json'
 
@@ -57,6 +58,20 @@ jobs:
             echo "Language reference extensions unchanged."
           else
             git commit -m "Sync Nova language reference extensions"
+            git fetch origin test/content-factory-from-lesson-1
+            git rebase origin/test/content-factory-from-lesson-1
+            git push origin HEAD:test/content-factory-from-lesson-1
+          fi
+      - name: Register reusable immutable snapshot
+        run: |
+          python nova/_assistant/content-system-v1/tools/register_reference_snapshot.py \
+            --repo-root . \
+            --course en-fa
+          git add nova/reference-snapshots/en-fa/
+          if git diff --cached --quiet; then
+            echo "Reusable reference snapshot archive already matches current data."
+          else
+            git commit -m "Archive reusable Nova en-fa reference snapshot"
             git fetch origin test/content-factory-from-lesson-1
             git rebase origin/test/content-factory-from-lesson-1
             git push origin HEAD:test/content-factory-from-lesson-1
