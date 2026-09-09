@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "courseCode": "en-fa",
   "lastLessonSortOrder": 24,
   "knownLexical": [
@@ -251,6 +251,29 @@
       "maxMatchScore": 1.0
     },
     {
+      "grammarKey": "CEFRJ-GRAM-239",
+      "grammaticalItem": "WH- QUESTION: What ...?",
+      "firstLesson": 1,
+      "lastLesson": 17,
+      "exposureCount": 4,
+      "evidenceKinds": [
+        "target_construction_pattern"
+      ],
+      "maxMatchScore": 1.0
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-6",
+      "grammaticalItem": "my/our/your/her/their (except for 'his' and 'its')",
+      "firstLesson": 1,
+      "lastLesson": 24,
+      "exposureCount": 9,
+      "evidenceKinds": [
+        "learner_practice_pattern",
+        "target_construction_pattern"
+      ],
+      "maxMatchScore": 1.0
+    },
+    {
       "grammarKey": "CEFRJ-GRAM-2-2",
       "grammaticalItem": "Are you ...?",
       "firstLesson": 3,
@@ -262,6 +285,18 @@
       "maxMatchScore": 0.8167
     },
     {
+      "grammarKey": "CEFRJ-GRAM-123-2",
+      "grammaticalItem": "MODAL/AUX: can",
+      "firstLesson": 4,
+      "lastLesson": 19,
+      "exposureCount": 8,
+      "evidenceKinds": [
+        "learner_practice_pattern",
+        "target_construction_pattern"
+      ],
+      "maxMatchScore": 1.0
+    },
+    {
       "grammarKey": "CEFRJ-GRAM-10",
       "grammaticalItem": "It is",
       "firstLesson": 6,
@@ -271,6 +306,29 @@
         "target_construction"
       ],
       "maxMatchScore": 0.8167
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-59",
+      "grammaticalItem": "TENSE/ASPECT: PRESENT (lexical verbs)",
+      "firstLesson": 21,
+      "lastLesson": 23,
+      "exposureCount": 10,
+      "evidenceKinds": [
+        "learner_practice_pattern",
+        "target_construction_pattern"
+      ],
+      "maxMatchScore": 1.0
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-8-2",
+      "grammaticalItem": "Is this/that ...?",
+      "firstLesson": 24,
+      "lastLesson": 24,
+      "exposureCount": 1,
+      "evidenceKinds": [
+        "target_construction_pattern"
+      ],
+      "maxMatchScore": 1.0
     }
   ],
   "constructionHistory": [

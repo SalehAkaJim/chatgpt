@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "courseCode": "en-fa",
   "levelKey": "A1",
   "sortOrder": 25,
@@ -84,23 +84,6 @@
       "missingPrerequisiteKeys": []
     },
     {
-      "grammarKey": "CEFRJ-GRAM-59",
-      "shorthandCode": "TA.PRESENT.do.AFF",
-      "grammaticalItem": "TENSE/ASPECT: PRESENT (lexical verbs)",
-      "sentenceType": "AFF. DEC.",
-      "cefr": "A1",
-      "cefrJLevel": "A1.1",
-      "frequencyDispersionLevel": "A1",
-      "coreInventory": "A1",
-      "egp": "A1",
-      "gse": "A1",
-      "notes": "名詞句・代名詞に続く一般動詞(be/do/have以外)に限定",
-      "source": "cefrj_grammar_profile",
-      "curriculumScore": 127,
-      "prerequisiteKeys": [],
-      "missingPrerequisiteKeys": []
-    },
-    {
       "grammarKey": "CEFRJ-GRAM-60",
       "shorthandCode": "TA.PRESENT.does.AFF",
       "grammaticalItem": "TENSE/ASPECT: PRESENT (lexical verbs; third person & singular)",
@@ -131,23 +114,6 @@
       "notes": "文頭(相当)または接続詞直後の位置に限定",
       "source": "cefrj_grammar_profile",
       "curriculumScore": 127,
-      "prerequisiteKeys": [],
-      "missingPrerequisiteKeys": []
-    },
-    {
-      "grammarKey": "CEFRJ-GRAM-239",
-      "shorthandCode": "INT.what",
-      "grammaticalItem": "WH- QUESTION: What ...?",
-      "sentenceType": "AFF. INT./NEG. INT.",
-      "cefr": "A1",
-      "cefrJLevel": "A1.1",
-      "frequencyDispersionLevel": "A1",
-      "coreInventory": "A1-B1",
-      "egp": "A2-C1",
-      "gse": "A1",
-      "notes": "文頭(相当)または接続詞直後の位置・疑問符で終わる文に限定",
-      "source": "cefrj_grammar_profile",
-      "curriculumScore": 123,
       "prerequisiteKeys": [],
       "missingPrerequisiteKeys": []
     },
@@ -218,6 +184,40 @@
       "notes": "文頭(相当)または接続詞直後の位置に限定",
       "source": "cefrj_grammar_profile",
       "curriculumScore": 120,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-105",
+      "shorthandCode": "VG",
+      "grammaticalItem": "V-ING (not preceded by 'not')",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A2",
+      "egp": "B1-B2",
+      "gse": "B1",
+      "notes": "動名詞と現在分詞の区別はできないため現在分詞も含ま",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-117",
+      "shorthandCode": "IMP.V.AFF",
+      "grammaticalItem": "IMPERATIVE: AFFIRMATIVE (lexical verbs)",
+      "sentenceType": "AFF. IMP.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-A2",
+      "egp": "A2-C1",
+      "gse": "A1",
+      "notes": "カンマ後を除く文頭(相当)または接続詞直後の位置・途中に 句読点なし・終止符または感嘆符で終わる文に限定；do・ haveの場合は否定命令・強調命令・疑問文を除くためnot・ 動詞原形・you・we・theyが後続しないものに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
       "prerequisiteKeys": [],
       "missingPrerequisiteKeys": []
     }
@@ -1176,7 +1176,33 @@
         "gapLessons": 4
       }
     ],
-    "grammar": []
+    "grammar": [
+      {
+        "grammarKey": "CEFRJ-GRAM-239",
+        "grammaticalItem": "WH- QUESTION: What ...?",
+        "firstLesson": 1,
+        "lastLesson": 17,
+        "exposureCount": 4,
+        "evidenceKinds": [
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 8
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-123-2",
+        "grammaticalItem": "MODAL/AUX: can",
+        "firstLesson": 4,
+        "lastLesson": 19,
+        "exposureCount": 8,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 6
+      }
+    ]
   },
   "storyConstraints": {
     "doNotRepeatImmediateParticipants": [
@@ -1230,5 +1256,5 @@
       "Persian instructional copy"
     ]
   },
-  "specHash": "24b4458928406dcbbb24513ee026b308115b42775bf7040c1a2b46c7eda99607"
+  "specHash": "31c5af7a3e0919996bd057fe5815dd70c0bc4b20fd211307b142aad921dd6204"
 }
