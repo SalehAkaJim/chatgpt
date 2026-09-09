@@ -1,4 +1,4 @@
-name: Nova Reference Data Sync
+name: Nova Base Reference Data Sync
 
 on:
   workflow_dispatch:
@@ -53,18 +53,22 @@ jobs:
           python -c 'import json; p=json.load(open("/tmp/nova-reference-query.json")); assert p["count"] > 0'
       - name: Audit current Lesson lexical coverage
         run: python nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py --repo-root .
-      - name: Block snapshot changes that invalidate new Lessons
+      - name: Block snapshot changes that invalidate Lessons
         run: python nova/_assistant/content-system-v1/tools/validate_all_lesson_references.py --repo-root . --course en-fa
-      - name: Commit deterministic reference snapshot
+      - name: Commit deterministic base reference snapshot
         run: |
           git config user.name "nova-reference-bot"
           git config user.email "nova-reference-bot@users.noreply.github.com"
-          git add nova/reference/en-fa/
+          git add nova/reference/en-fa/lexical/ nova/reference/en-fa/grammar/ nova/reference/en-fa/manifest.json nova/reference/en-fa/lesson_coverage.json
           if git diff --cached --quiet; then
-            echo "Reference snapshot already matches pinned sources."
+            echo "Base reference snapshot already matches pinned sources."
           else
-            git commit -m "Sync Nova production reference data"
+            git commit -m "Sync Nova production base reference data"
             git fetch origin "${GITHUB_REF_NAME}"
             git rebase "origin/${GITHUB_REF_NAME}"
+            # Close the concurrent-Lesson race: validate again after rebase, against
+            # the exact tree that will be pushed rather than the pre-rebase tree.
+            python nova/_assistant/content-system-v1/tools/validate_reference_data.py --repo-root . --strict
+            python nova/_assistant/content-system-v1/tools/validate_all_lesson_references.py --repo-root . --course en-fa
             git push origin HEAD:${GITHUB_REF_NAME}
           fi
