@@ -9,7 +9,7 @@
   "audioRequiredForPilotCompletion": true,
   "pilotLessonTarget": 20,
   "publishedLessons": 0,
-  "nextLesson": 26,
+  "nextLesson": 27,
   "mysqlTargetVersion": "9.0.1",
   "mysqlValidationRequiredBeforeLesson1Completion": true,
   "canonicalValidatorReady": true,
@@ -240,11 +240,11 @@
     },
     {
       "lessonKey": "EN-A1-L-0022",
-      "sourceHash": "591ae4bc478b194de477846b04de49415f35c7223960a38a10af9a24c75d08f8",
+      "sourceHash": "b199cd0fc54aaeff74c5d62eb8961fd6274069ee090c4901848cb3879842fb7a",
       "technicalComplete": true,
-      "automatedQualityScore": 95,
+      "automatedQualityScore": 100,
       "modelTextReviewComplete": true,
-      "semanticReviewAverage": 4.3,
+      "semanticReviewAverage": 4.5,
       "pendingDecisionCount": 0,
       "finalReviewComplete": false
     },
@@ -277,9 +277,19 @@
       "semanticReviewAverage": 4.4,
       "pendingDecisionCount": 0,
       "finalReviewComplete": false
+    },
+    {
+      "lessonKey": "EN-A1-L-0026",
+      "sourceHash": "89e91caffbe02f259488a9dd4868d83d8f9df838f3a8c6f15b6be7fd6d713ac8",
+      "technicalComplete": true,
+      "automatedQualityScore": 95,
+      "modelTextReviewComplete": true,
+      "semanticReviewAverage": 4.5,
+      "pendingDecisionCount": 0,
+      "finalReviewComplete": false
     }
   ],
-  "technicallyCompleteLessons": 25,
+  "technicallyCompleteLessons": 26,
   "authorizedStoryBatch": {
     "batchKey": "EN-A1-STORY-14-20",
     "newLessonCount": 7,
@@ -288,6 +298,6 @@
     "scope": "prototype_evaluation",
     "ownerLearnerReview": "PENDING"
   },
-  "modelTextReviewedLessons": 6,
+  "modelTextReviewedLessons": 7,
   "learnerValidationComplete": false
 }
