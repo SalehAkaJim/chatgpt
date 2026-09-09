@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "courseCode": "en-fa",
   "levelKey": "A1",
   "sortOrder": 25,
@@ -15,40 +15,6 @@
     "wordSemantics": "Only true lexemes enter lexicalItems/words; compositional phrases remain constructions/turn text."
   },
   "grammarCandidates": [
-    {
-      "grammarKey": "CEFRJ-GRAM-1",
-      "shorthandCode": "PP.I_am",
-      "grammaticalItem": "I am",
-      "sentenceType": "AFF. DEC.",
-      "cefr": "A1",
-      "cefrJLevel": "A1.1",
-      "frequencyDispersionLevel": "A1",
-      "coreInventory": "A1",
-      "egp": "A1",
-      "gse": "A1",
-      "notes": null,
-      "source": "cefrj_grammar_profile",
-      "curriculumScore": 127,
-      "prerequisiteKeys": [],
-      "missingPrerequisiteKeys": []
-    },
-    {
-      "grammarKey": "CEFRJ-GRAM-10",
-      "shorthandCode": "PP.it_is",
-      "grammaticalItem": "It is",
-      "sentenceType": "AFF. DEC.",
-      "cefr": "A1",
-      "cefrJLevel": "A1.1",
-      "frequencyDispersionLevel": "A1",
-      "coreInventory": "A1",
-      "egp": "A1",
-      "gse": "A1",
-      "notes": "文頭(相当)または接続詞直後の位置に限定",
-      "source": "cefrj_grammar_profile",
-      "curriculumScore": 127,
-      "prerequisiteKeys": [],
-      "missingPrerequisiteKeys": []
-    },
     {
       "grammarKey": "CEFRJ-GRAM-3",
       "shorthandCode": "PP.he.she_is",
@@ -203,6 +169,25 @@
       "missingPrerequisiteKeys": []
     },
     {
+      "grammarKey": "CEFRJ-GRAM-1-1",
+      "shorthandCode": "PP.I_am_not",
+      "grammaticalItem": "I am not",
+      "sentenceType": "NEG. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1-A2, C1",
+      "gse": "A1",
+      "notes": null,
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 121,
+      "prerequisiteKeys": [
+        "CEFRJ-GRAM-1"
+      ],
+      "missingPrerequisiteKeys": []
+    },
+    {
       "grammarKey": "CEFRJ-GRAM-123",
       "shorthandCode": "MD.can.AFF",
       "grammaticalItem": "MODAL/AUX: can",
@@ -214,6 +199,23 @@
       "egp": "A1-C2",
       "gse": "A1",
       "notes": null,
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 120,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-146",
+      "shorthandCode": "EX.there.AFF",
+      "grammaticalItem": "there+be",
+      "sentenceType": "AFF. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.2",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1-B2",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置に限定",
       "source": "cefrj_grammar_profile",
       "curriculumScore": 120,
       "prerequisiteKeys": [],
@@ -1228,5 +1230,5 @@
       "Persian instructional copy"
     ]
   },
-  "specHash": "000b4ac118d094f41a162e60dd2a65ceca0c467f6f39c72d33ea3a1f69011d42"
+  "specHash": "24b4458928406dcbbb24513ee026b308115b42775bf7040c1a2b46c7eda99607"
 }

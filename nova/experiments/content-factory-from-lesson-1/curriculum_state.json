@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "courseCode": "en-fa",
   "lastLessonSortOrder": 24,
   "knownLexical": [
@@ -243,21 +243,34 @@
       "grammaticalItem": "I am",
       "firstLesson": 1,
       "lastLesson": 5,
-      "exposureCount": 3
+      "exposureCount": 4,
+      "evidenceKinds": [
+        "learner_practice",
+        "target_construction"
+      ],
+      "maxMatchScore": 1.0
     },
     {
       "grammarKey": "CEFRJ-GRAM-2-2",
       "grammaticalItem": "Are you ...?",
       "firstLesson": 3,
       "lastLesson": 5,
-      "exposureCount": 2
+      "exposureCount": 2,
+      "evidenceKinds": [
+        "target_construction"
+      ],
+      "maxMatchScore": 0.8167
     },
     {
       "grammarKey": "CEFRJ-GRAM-10",
       "grammaticalItem": "It is",
       "firstLesson": 6,
       "lastLesson": 24,
-      "exposureCount": 3
+      "exposureCount": 3,
+      "evidenceKinds": [
+        "target_construction"
+      ],
+      "maxMatchScore": 0.8167
     }
   ],
   "constructionHistory": [
