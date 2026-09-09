@@ -49,7 +49,7 @@
       "required": ["lexicalKey","itemType","displayForm","translationFa","role","audioEligible"],
       "properties": {
         "lexicalKey": {"type": "string", "minLength": 1},
-        "itemType": {"enum": ["word","expression","phrasal_verb","formula","other"]},
+        "itemType": {"enum": ["word","expression","phrasal_verb"]},
         "displayForm": {"type": "string", "minLength": 1, "maxLength": 255},
         "translationFa": {"type": "string", "minLength": 1, "maxLength": 500},
         "role": {"enum": ["target","review","support","incidental"]},
@@ -58,7 +58,37 @@
         "senseKey": {"type": "string", "maxLength": 160},
         "audioEligible": {"type": "boolean"},
         "metadata": {"type": "object"}
-      }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"itemType": {"enum": ["expression","phrasal_verb"]}}},
+          "then": {
+            "required": ["metadata"],
+            "properties": {
+              "metadata": {
+                "anyOf": [
+                  {"required": ["referenceKey"]},
+                  {"required": ["lexicalized"], "properties": {"lexicalized": {"const": true}}}
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {"properties": {"displayForm": {"pattern": "\\s"}}},
+          "then": {
+            "required": ["metadata"],
+            "properties": {
+              "metadata": {
+                "anyOf": [
+                  {"required": ["referenceKey"]},
+                  {"required": ["lexicalized"], "properties": {"lexicalized": {"const": true}}}
+                ]
+              }
+            }
+          }
+        }
+      ]
     },
     "turn": {
       "type": "object",
