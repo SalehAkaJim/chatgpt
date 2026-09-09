@@ -1,0 +1,63 @@
+name: Nova Language Reference Sync Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [test/content-factory-from-lesson-1]
+    paths:
+      - '.github/workflows/nova-language-reference-sync-test.yml'
+      - 'nova/reference/en-fa/sources.lock.json'
+      - 'nova/_assistant/content-system-v1/tools/sync_language_reference_extensions.py'
+      - 'nova/experiments/content-factory-from-lesson-1/probe_config.json'
+      - 'nova/courses/en-fa/lessons/**/lesson.source.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-language-reference-sync-test
+  cancel-in-progress: false
+
+jobs:
+  sync-language-reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: test/content-factory-from-lesson-1
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Sync CMUdict, NGSL-Spoken, and Tatoeba evidence
+        run: |
+          python nova/_assistant/content-system-v1/tools/sync_language_reference_extensions.py \
+            --repo-root . \
+            --course en-fa \
+            --config nova/experiments/content-factory-from-lesson-1/probe_config.json
+      - name: Sanity check extension snapshots
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          root = pathlib.Path('nova/reference/en-fa')
+          p = json.loads((root/'pronunciation/cmudict.json').read_text())
+          f = json.loads((root/'frequency/ngsl_spoken.json').read_text())
+          u = json.loads((root/'usage/tatoeba.json').read_text())
+          assert p['matchedLemmaCount'] >= 500, p['matchedLemmaCount']
+          assert f['itemCount'] >= 500, f['itemCount']
+          assert u['queryCount'] > 0, u['queryCount']
+          print({'pronunciation': p['matchedLemmaCount'], 'spoken': f['itemCount'], 'usageQueries': u['queryCount'], 'usageEvidence': u['evidenceQueryCount']})
+          PY
+      - name: Commit pinned extension snapshots
+        run: |
+          git config user.name "nova-language-reference-bot"
+          git config user.email "nova-language-reference-bot@users.noreply.github.com"
+          git add nova/reference/en-fa/pronunciation nova/reference/en-fa/frequency nova/reference/en-fa/usage nova/reference/en-fa/extensions_manifest.json
+          if git diff --cached --quiet; then
+            echo "Language reference extensions unchanged."
+          else
+            git commit -m "Sync Nova language reference extensions"
+            git fetch origin test/content-factory-from-lesson-1
+            git rebase origin/test/content-factory-from-lesson-1
+            git push origin HEAD:test/content-factory-from-lesson-1
+          fi
