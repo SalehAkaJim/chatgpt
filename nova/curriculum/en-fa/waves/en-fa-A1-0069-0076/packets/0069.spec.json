@@ -1,0 +1,1245 @@
+{
+  "schemaVersion": 4,
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "sortOrder": 69,
+  "specKey": "en-fa-A1-LESSON-SPEC-0069",
+  "policy": {
+    "minimumQualityScore": 90,
+    "maxNewLexicalTargets": 3,
+    "preferredNewLexicalTargets": 1,
+    "grammarSelection": "Choose at most one new CEFR-J grammar target unless the Lesson is explicitly consolidation-only.",
+    "reviewRequirement": "Reuse at least one due lexical or grammar item when pedagogically natural.",
+    "usageRequirement": "Every new scored target collocation must have committed corpus evidence or an explicit Nova usage fallback with rationale.",
+    "pronunciationRequirement": "Expose CMUdict evidence when present; missing CMUdict coverage does not invent a pronunciation.",
+    "wordSemantics": "Only true lexemes enter lexicalItems/words; compositional phrases remain constructions/turn text.",
+    "alreadyPracticedSurfaceRule": "A word already produced by the learner is not proposed as a brand-new lexical target merely because it was absent from lexicalItems metadata."
+  },
+  "grammarCandidates": [
+    {
+      "grammarKey": "CEFRJ-GRAM-58",
+      "shorthandCode": "TA.PRESENT.be.AFF",
+      "grammaticalItem": "TENSE/ASPECT: PRESENT (BE)",
+      "sentenceType": "AFF. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1",
+      "gse": "A1",
+      "notes": "名詞句・代名詞に続くものに限定;現在進行・受動態も含まれる",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 127,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-60",
+      "shorthandCode": "TA.PRESENT.does.AFF",
+      "grammaticalItem": "TENSE/ASPECT: PRESENT (lexical verbs; third person & singular)",
+      "sentenceType": "AFF. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1",
+      "gse": "A1",
+      "notes": "名詞句・代名詞に続く一般動詞(be/do/have以外)に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 127,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-247",
+      "shorthandCode": "INT.how_JJ.RB",
+      "grammaticalItem": "WH- QUESTION: How ADJ/ADV ...?",
+      "sentenceType": "AFF. INT./NEG. INT.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-(A2)-B1",
+      "egp": "N/A",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置・疑問符で終わる文に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 123,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-146",
+      "shorthandCode": "EX.there.AFF",
+      "grammaticalItem": "there+be",
+      "sentenceType": "AFF. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.2",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1-B2",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 120,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-105",
+      "shorthandCode": "VG",
+      "grammaticalItem": "V-ING (not preceded by 'not')",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A2",
+      "egp": "B1-B2",
+      "gse": "B1",
+      "notes": "動名詞と現在分詞の区別はできないため現在分詞も含ま",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-117",
+      "shorthandCode": "IMP.V.AFF",
+      "grammaticalItem": "IMPERATIVE: AFFIRMATIVE (lexical verbs)",
+      "sentenceType": "AFF. IMP.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-A2",
+      "egp": "A2-C1",
+      "gse": "A1",
+      "notes": "カンマ後を除く文頭(相当)または接続詞直後の位置・途中に 句読点なし・終止符または感嘆符で終わる文に限定；do・ haveの場合は否定命令・強調命令・疑問文を除くためnot・ 動詞原形・you・we・theyが後続しないものに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-13",
+      "shorthandCode": "DT.a.an",
+      "grammaticalItem": "INDEFINITE ARTICLES",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-B2",
+      "egp": "A1",
+      "gse": "A1",
+      "notes": null,
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-14",
+      "shorthandCode": "DT.the",
+      "grammaticalItem": "DEFINITE ARTICLES",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-B1",
+      "egp": "A1-A2",
+      "gse": "A1",
+      "notes": null,
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-15",
+      "shorthandCode": "DT.some.any",
+      "grammaticalItem": "DETERMINERS: some/any",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-A2",
+      "egp": "A1",
+      "gse": "A2",
+      "notes": "代名詞としての用法も含まれる",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-196",
+      "shorthandCode": "VP.SVO.AFF",
+      "grammaticalItem": "SENTENCE PATTERN: SUBJECT+V+OBJECT",
+      "sentenceType": "AFF. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": null,
+      "egp": "A1, B2",
+      "gse": "A1",
+      "notes": "名詞句・代名詞(+助動詞)+動詞+名詞句・代名詞のみから成る文に限定;単純相に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-21",
+      "shorthandCode": "IN.PREP.GENERAL",
+      "grammaticalItem": "PREPOSITIONS",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-A2",
+      "egp": "A1-C1",
+      "gse": "A1-A2",
+      "notes": "asとtoを除く主要な前置詞; aboard/about/above/across/after/against/along/alongside/amid/amidst/among/amongst/around/at/before/behind/below/beneath/beside/besides/between/beyond/by/despite/down/during/en/ere/except/for/from/in/inside/into/like/minus/near/nearer/nearest/notwithstanding/of/off/on/onto/opposite/out/outside/over/past/per/plus/re/reference/round/sans/save/since/than/through/throughout/till/toward/towards/under/underneath/unlike/until/up/upon/v./versus/via/vs./with/within/without/worthに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-33",
+      "shorthandCode": "RB.INT",
+      "grammaticalItem": "ADVERBS: INTENSIFIERS: extremely/greatly/really/so/terribly/too/unbelievably/very",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A2-B1",
+      "egp": "A1-C2",
+      "gse": "A2",
+      "notes": "extremely/greatly/really/so/terribly/too/unbelievably/veryに限定;形容詞または副詞が後続するものに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    }
+  ],
+  "lexicalCandidates": [
+    {
+      "referenceKey": "EN-REF-8505C5C9592D47604147",
+      "lemma": "little",
+      "partOfSpeech": "adjective",
+      "senseId": "dff2fcc1-e0a8-5fba-afd9-63af33728db1",
+      "senseOrder": 1,
+      "definitionEn": "limited or below average in number or quantity or magnitude or extent",
+      "exampleEn": "a little dining room",
+      "translationFa": "کوچک",
+      "translationFaSource": null,
+      "exampleFa": "او یک خانه کوچک دارد.",
+      "frequencyRank": 173,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "08ebeba1-fe94-58d6-96bb-6de010fc0446",
+        "openjamSenseId": "dff2fcc1-e0a8-5fba-afd9-63af33728db1",
+        "openjamTranslationId": "551c54a1-ab75-55ed-a859-9a52a4d93afa",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "little",
+        "spokenRank": 105,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 173,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "little",
+        "arpabet": [
+          "L IH1 T AH0 L"
+        ],
+        "primaryArpabet": "L IH1 T AH0 L",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-8CF327005C4F1FA1A2D3",
+      "lemma": "old",
+      "partOfSpeech": "adjective",
+      "senseId": "41e79be3-27c8-5f5e-aa0a-7bd19522659b",
+      "senseOrder": 1,
+      "definitionEn": "(used especially of persons) having lived for a relatively long time or attained a specific age",
+      "exampleEn": "his mother is very old",
+      "translationFa": "سالخورده، مسن",
+      "translationFaSource": null,
+      "exampleFa": "پدربزرگم یک مرد سالخورده است.",
+      "frequencyRank": 174,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "quality",
+        "time"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "44f8266b-a80d-56c3-9da7-8bbfc12b2fa3",
+        "openjamSenseId": "41e79be3-27c8-5f5e-aa0a-7bd19522659b",
+        "openjamTranslationId": "42d00afc-f4fa-5e6d-8a9e-5185dd908c99",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "old",
+        "spokenRank": 171,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 174,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "old",
+        "arpabet": [
+          "OW1 L D"
+        ],
+        "primaryArpabet": "OW1 L D",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-4D0DEC6F83600A07BAF4",
+      "lemma": "own",
+      "partOfSpeech": "adjective",
+      "senseId": "d23974df-97c3-5ce0-b672-23ac06e5879a",
+      "senseOrder": 1,
+      "definitionEn": "belonging to or on behalf of a specified person (especially yourself); preceded by a possessive",
+      "exampleEn": "for your own use",
+      "translationFa": "خود، شخصی",
+      "translationFaSource": null,
+      "exampleFa": "من می‌خواهم خانه خودم را بخرم.",
+      "frequencyRank": 178,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "2d77321d-f0e2-543d-bd4f-5184403e3083",
+        "openjamSenseId": "d23974df-97c3-5ce0-b672-23ac06e5879a",
+        "openjamTranslationId": "0d34453f-b1f8-5e2a-ab99-97060e9de811",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "own",
+        "spokenRank": 203,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 178,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "own",
+        "arpabet": [
+          "OW1 N"
+        ],
+        "primaryArpabet": "OW1 N",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-12ED98547672E939478B",
+      "lemma": "thing",
+      "partOfSpeech": "noun",
+      "senseId": "f920cf30-8a3c-54a0-bfec-0be59b0db0cd",
+      "senseOrder": 1,
+      "definitionEn": "a special situation",
+      "exampleEn": "this thing has got to end",
+      "translationFa": "وضعیت",
+      "translationFaSource": null,
+      "exampleFa": "این وضعیت واقعاً پیچیده است.",
+      "frequencyRank": 179,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "a834a585-fd38-5494-ac56-4662e2c6d139",
+        "openjamSenseId": "f920cf30-8a3c-54a0-bfec-0be59b0db0cd",
+        "openjamTranslationId": "f34b6097-3e29-5617-8df3-411b0c5cd967",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "thing",
+        "spokenRank": 55,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 179,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "thing",
+        "arpabet": [
+          "TH IH1 NG"
+        ],
+        "primaryArpabet": "TH IH1 NG",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-ED6CD50302AE2F03D0B0",
+      "lemma": "give",
+      "partOfSpeech": "verb",
+      "senseId": "97149be1-44e6-5d77-a307-3ab8042e4226",
+      "senseOrder": 1,
+      "definitionEn": "cause to have, in the abstract sense or physical sense",
+      "exampleEn": "She gave him a black eye",
+      "translationFa": "دادن",
+      "translationFaSource": null,
+      "exampleFa": "من به تو یک کتاب می‌دهم.",
+      "frequencyRank": 185,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "31034e56-546c-5acc-9781-bb9f2805f7ed",
+        "openjamSenseId": "97149be1-44e6-5d77-a307-3ab8042e4226",
+        "openjamTranslationId": "ea14396f-f81e-5027-b39b-0e8efca8d062",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "give",
+        "spokenRank": 93,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 185,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "give",
+        "arpabet": [
+          "G IH1 V"
+        ],
+        "primaryArpabet": "G IH1 V",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-ABFB0984D16C86BCF8C2",
+      "lemma": "house",
+      "partOfSpeech": "noun",
+      "senseId": "01870a90-1857-5103-b477-c1ea9d134208",
+      "senseOrder": 1,
+      "definitionEn": "a dwelling that serves as living quarters for one or more families",
+      "exampleEn": "he has a house on Cape Cod",
+      "translationFa": "خانه",
+      "translationFaSource": null,
+      "exampleFa": "خانه جدیدی در شهر خریدیم.",
+      "frequencyRank": 186,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "home",
+        "place"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "174ef5a7-f2b2-5e65-abe6-0133bb7e86cd",
+        "openjamSenseId": "01870a90-1857-5103-b477-c1ea9d134208",
+        "openjamTranslationId": "c906b163-3944-5215-8ff1-175a90400e7a",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "house",
+        "spokenRank": 176,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 186,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "house",
+        "arpabet": [
+          "HH AW1 S"
+        ],
+        "primaryArpabet": "HH AW1 S",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-1FA78A6293F189D7392A",
+      "lemma": "place",
+      "partOfSpeech": "noun",
+      "senseId": "562a0819-ebb9-5a38-814b-dd1f55813e0c",
+      "senseOrder": 1,
+      "definitionEn": "a point located with respect to surface features of some region",
+      "exampleEn": "this is a nice place for a picnic",
+      "translationFa": "مکان",
+      "translationFaSource": null,
+      "exampleFa": "این مکان بسیار زیبا است.",
+      "frequencyRank": 187,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "place"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "2339432a-1abd-5464-9d70-bb72ab4ab4f5",
+        "openjamSenseId": "562a0819-ebb9-5a38-814b-dd1f55813e0c",
+        "openjamTranslationId": "995d3010-ca7d-5cc6-817b-e832b0eada2a",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "place",
+        "spokenRank": 168,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 187,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "place",
+        "arpabet": [
+          "P L EY1 S"
+        ],
+        "primaryArpabet": "P L EY1 S",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-DB1056659882CF2630CB",
+      "lemma": "school",
+      "partOfSpeech": "noun",
+      "senseId": "bca3eacd-cea4-53db-9f1a-4541ca7e1c4e",
+      "senseOrder": 1,
+      "definitionEn": "an educational institution",
+      "exampleEn": "the school was founded in 1900",
+      "translationFa": "مدرسه",
+      "translationFaSource": null,
+      "exampleFa": "من هر روز به مدرسه می‌روم.",
+      "frequencyRank": 188,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "place",
+        "school"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "fdb7816e-748f-5f91-80bb-01fad59b2131",
+        "openjamSenseId": "bca3eacd-cea4-53db-9f1a-4541ca7e1c4e",
+        "openjamTranslationId": "fd17fe48-bb6c-5413-9c50-0de9e3057d9c",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "school",
+        "spokenRank": 147,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 188,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "school",
+        "arpabet": [
+          "S K UW1 L"
+        ],
+        "primaryArpabet": "S K UW1 L",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-100DF030E95A3ABD1620",
+      "lemma": "again",
+      "partOfSpeech": "adverb",
+      "senseId": "9c81059b-c75f-5b34-a19d-893a6a7a3f7f",
+      "senseOrder": 1,
+      "definitionEn": "anew",
+      "exampleEn": "she tried again",
+      "translationFa": "دوباره",
+      "translationFaSource": null,
+      "exampleFa": "لطفا این جمله را دوباره بخوان.",
+      "frequencyRank": 189,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "action",
+        "time"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "ef7d87e5-98e7-520a-bb72-415442a1eb8c",
+        "openjamSenseId": "9c81059b-c75f-5b34-a19d-893a6a7a3f7f",
+        "openjamTranslationId": "114e4e51-a08f-5765-adb5-b291a8f6cf24",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "again",
+        "spokenRank": 134,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 189,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "again",
+        "arpabet": [
+          "AH0 G EH1 N",
+          "AH0 G EY1 N"
+        ],
+        "primaryArpabet": "AH0 G EH1 N",
+        "stressPattern": "01"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-CD29E35FCD3254B05053",
+      "lemma": "end",
+      "partOfSpeech": "noun",
+      "senseId": "89ab3a8b-9283-592d-b70a-076a9df7cd7b",
+      "senseOrder": 1,
+      "definitionEn": "either extremity of something that has length",
+      "exampleEn": "the end of the pier",
+      "translationFa": "انتهای چیزی",
+      "translationFaSource": null,
+      "exampleFa": "انتهای این ریسمان پاره شده است.",
+      "frequencyRank": 196,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "time"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "7b74ffee-0d0a-507d-bc58-cc871b32a312",
+        "openjamSenseId": "89ab3a8b-9283-592d-b70a-076a9df7cd7b",
+        "openjamTranslationId": "aac1582c-e935-5451-9e80-a3bb8055f357",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "end",
+        "spokenRank": 161,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 196,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "end",
+        "arpabet": [
+          "EH1 N D"
+        ],
+        "primaryArpabet": "EH1 N D",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-470785EBFA119E25BB5E",
+      "lemma": "show",
+      "partOfSpeech": "verb",
+      "senseId": "cccea5b6-e954-5131-98ef-3fb93f66985e",
+      "senseOrder": 1,
+      "definitionEn": "give an exhibition of to an interested audience",
+      "exampleEn": "She shows her dogs frequently",
+      "translationFa": "نشان دادن",
+      "translationFaSource": null,
+      "exampleFa": "لطفاً می‌توانی به من نشان بدهی چگونه این ماشین کار می‌کند؟",
+      "frequencyRank": 199,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "arts",
+        "media"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "f34bcde9-93a3-5ac7-a376-b838b48e24e2",
+        "openjamSenseId": "cccea5b6-e954-5131-98ef-3fb93f66985e",
+        "openjamTranslationId": "7305087a-fd31-5607-bee7-9cbe245fcf33",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "show",
+        "spokenRank": 225,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 199,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "show",
+        "arpabet": [
+          "SH OW1"
+        ],
+        "primaryArpabet": "SH OW1",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-A6C19DF651F9E7E2A898",
+      "lemma": "feel",
+      "partOfSpeech": "verb",
+      "senseId": "9252c0d6-02c1-535d-b9b4-5a83e282a26f",
+      "senseOrder": 1,
+      "definitionEn": "undergo an emotional sensation or be in a particular state of mind",
+      "exampleEn": "She felt resentful",
+      "translationFa": "احساس کردن، احساس پیدا کردن",
+      "translationFaSource": null,
+      "exampleFa": "امروز خودم را خسته احساس می‌کنم.",
+      "frequencyRank": 201,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "emotion"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "3de5e858-10bf-55bf-86dc-b75fb413d44e",
+        "openjamSenseId": "9252c0d6-02c1-535d-b9b4-5a83e282a26f",
+        "openjamTranslationId": "a9b59cc3-d82d-5e2a-b35b-d9184807d489",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "feel",
+        "spokenRank": 139,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 201,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "feel",
+        "arpabet": [
+          "F IY1 L"
+        ],
+        "primaryArpabet": "F IY1 L",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-D9CD7C6063EED6942890",
+      "lemma": "family",
+      "partOfSpeech": "noun",
+      "senseId": "960096e7-cda5-583a-b1d5-f5d624d7a3fd",
+      "senseOrder": 1,
+      "definitionEn": "a social unit living together",
+      "exampleEn": "he moved his family to Virginia",
+      "translationFa": "خانواده",
+      "translationFaSource": null,
+      "exampleFa": "خانواده ما در یک خانه بزرگ زندگی می‌کنیم.",
+      "frequencyRank": 205,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "family",
+        "relationship",
+        "society"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "55eb41ad-230a-53dd-b006-05e46f19bc50",
+        "openjamSenseId": "960096e7-cda5-583a-b1d5-f5d624d7a3fd",
+        "openjamTranslationId": "ab1428c0-d602-50ef-a2d8-045fe5dbcff4",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "family",
+        "spokenRank": 274,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 205,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "family",
+        "arpabet": [
+          "F AE1 M AH0 L IY0",
+          "F AE1 M L IY0"
+        ],
+        "primaryArpabet": "F AE1 M AH0 L IY0",
+        "stressPattern": "100"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-0B89952F0FE20CEA2916",
+      "lemma": "keep",
+      "partOfSpeech": "verb",
+      "senseId": "85e368a8-9eda-5f7a-a3c6-6a84499d3003",
+      "senseOrder": 1,
+      "definitionEn": "keep in a certain state, position, or activity; e.g.,",
+      "exampleEn": "keep clean",
+      "translationFa": "نگه داشتن",
+      "translationFaSource": null,
+      "exampleFa": "او کتاب را روی میز نگه داشت.",
+      "frequencyRank": 206,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "47b1c1d9-ba7b-5f0b-93b7-6cab74be9088",
+        "openjamSenseId": "85e368a8-9eda-5f7a-a3c6-6a84499d3003",
+        "openjamTranslationId": "6d365dcc-1574-5f15-930c-be811a245b72",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "keep",
+        "spokenRank": 150,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 206,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "keep",
+        "arpabet": [
+          "K IY1 P"
+        ],
+        "primaryArpabet": "K IY1 P",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-C08A969D707F941CF713",
+      "lemma": "put",
+      "partOfSpeech": "verb",
+      "senseId": "ce411792-d0ef-5a79-bdab-2694fcb5b4d6",
+      "senseOrder": 1,
+      "definitionEn": "put into a certain place or abstract location",
+      "exampleEn": "Put your things here",
+      "translationFa": "گذاشتن، قرار دادن",
+      "translationFaSource": null,
+      "exampleFa": "کتاب را روی میز گذاشتم.",
+      "frequencyRank": 209,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "66d275c1-560a-5e78-8285-e5b3671f1273",
+        "openjamSenseId": "ce411792-d0ef-5a79-bdab-2694fcb5b4d6",
+        "openjamTranslationId": "02a415ad-6b60-55a1-85da-95a12c4554c3",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "put",
+        "spokenRank": 91,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 209,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "put",
+        "arpabet": [
+          "P UH1 T"
+        ],
+        "primaryArpabet": "P UH1 T",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-5A9814F5EA35560CF130",
+      "lemma": "money",
+      "partOfSpeech": "noun",
+      "senseId": "cdefb67c-7172-5282-9a04-0b46458153f4",
+      "senseOrder": 1,
+      "definitionEn": "the most common medium of exchange; functions as legal tender",
+      "exampleEn": "we tried to collect the money he owed us",
+      "translationFa": "پول",
+      "translationFaSource": null,
+      "exampleFa": "من پول کافی برای خرید این کتاب دارم.",
+      "frequencyRank": 210,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "money"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "25793f47-195c-5f4e-8620-12a105a7ad71",
+        "openjamSenseId": "cdefb67c-7172-5282-9a04-0b46458153f4",
+        "openjamTranslationId": "a6bf1172-50fa-50f5-874f-79b22fb379ec",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "money",
+        "spokenRank": 167,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 210,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "money",
+        "arpabet": [
+          "M AH1 N IY0"
+        ],
+        "primaryArpabet": "M AH1 N IY0",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 104.0
+    }
+  ],
+  "reviewDue": {
+    "lexical": [
+      {
+        "lemma": "man",
+        "firstLesson": 60,
+        "lastLesson": 60,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-2B7493A61CF4CDE6FD1B"
+        ],
+        "gapLessons": 9
+      },
+      {
+        "lemma": "home",
+        "firstLesson": 61,
+        "lastLesson": 61,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-AE18605505232625BC33"
+        ],
+        "gapLessons": 8
+      },
+      {
+        "lemma": "long",
+        "firstLesson": 62,
+        "lastLesson": 62,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-E61D9DF3C3BD1F428FCD"
+        ],
+        "gapLessons": 7
+      },
+      {
+        "lemma": "look",
+        "firstLesson": 63,
+        "lastLesson": 63,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-CEC6E367709B460985A7"
+        ],
+        "gapLessons": 6
+      },
+      {
+        "lemma": "use",
+        "firstLesson": 64,
+        "lastLesson": 64,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-C2EDF75499FF0145A82E"
+        ],
+        "gapLessons": 5
+      },
+      {
+        "lemma": "same",
+        "firstLesson": 65,
+        "lastLesson": 65,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-B35BB4DAF1028B912470"
+        ],
+        "gapLessons": 4
+      },
+      {
+        "lemma": "always",
+        "firstLesson": 66,
+        "lastLesson": 66,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-D0D4EFB891F79DAA0D6A"
+        ],
+        "gapLessons": 3
+      }
+    ],
+    "grammar": [
+      {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "firstLesson": 6,
+        "lastLesson": 59,
+        "exposureCount": 6,
+        "evidenceKinds": [
+          "learner_practice",
+          "target_construction"
+        ],
+        "maxMatchScore": 0.8167,
+        "gapLessons": 10
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-6",
+        "grammaticalItem": "my/our/your/her/their (except for 'his' and 'its')",
+        "firstLesson": 1,
+        "lastLesson": 61,
+        "exposureCount": 18,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 8
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "firstLesson": 31,
+        "lastLesson": 65,
+        "exposureCount": 9,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 4
+      }
+    ]
+  },
+  "storyConstraints": {
+    "doNotRepeatImmediateParticipants": [
+      "ben",
+      "ava"
+    ],
+    "recentParticipantSets": [
+      [
+        "owen",
+        "nora"
+      ],
+      [
+        "liam",
+        "leo"
+      ],
+      [
+        "maya",
+        "alex"
+      ],
+      [
+        "nina",
+        "iris"
+      ],
+      [
+        "ben",
+        "ava"
+      ]
+    ],
+    "recentArcs": [
+      "EN-A1-NEIGHBORS",
+      "EN-A1-LIBRARY",
+      "EN-A1-CLASSMATES",
+      "EN-A1-COMMUNITY",
+      "EN-A1-CAFE"
+    ],
+    "recurrenceGuidance": "A prior pair/arc may return after sufficient spacing when continuity adds value; never force recurrence for vocabulary convenience."
+  },
+  "authoringBoundary": {
+    "dataDecides": [
+      "CEFR grammar eligibility and candidate order",
+      "lexical sense eligibility and frequency priority",
+      "review due signals",
+      "pronunciation evidence",
+      "usage/collocation evidence requirements"
+    ],
+    "novaCreates": [
+      "scenario",
+      "characters/learner role choice within story rules",
+      "dialogue wording",
+      "activities",
+      "Persian instructional copy"
+    ]
+  },
+  "specHash": "3c2356bf4ea3800037d6386b72c4488c80c708574b9c2d18d73acadc403c5009",
+  "wavePlanning": {
+    "provisional": false,
+    "waveKey": "en-fa-A1-0069-0076",
+    "workerId": "w01",
+    "integrationRule": "The live canonical spec wins if sequential integration changes candidate order."
+  }
+}
