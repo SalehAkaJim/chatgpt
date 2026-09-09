@@ -216,7 +216,13 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
             by_level[profile_level].append(record)
             seen_lemma_pos.add((lemma, pos))
 
-        grammar_by_level = parse_grammar_csv(grammar_text)
+        grammar_rows = parse_grammar_csv(grammar_text)
+        grammar_by_level: dict[str, list[dict]] = {level: [] for level in LEVELS}
+        for grammar in grammar_rows:
+            level = grammar.get("cefr")
+            if level in grammar_by_level:
+                grammar_by_level[level].append(grammar)
+
         file_records = []
         lexical_summary = {}
         grammar_summary = {}
