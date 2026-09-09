@@ -5,12 +5,12 @@
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0023",
   "sortOrder": 23,
-  "titleEn": "I read books",
-  "titleFa": "کتاب می خونم",
-  "descriptionFa": "لیام و لیو در کتابخانه درباره خواندن کتاب حرف می زنند و فعل read را با یک موضوع کاملا آشنا یاد می گیرند.",
+  "titleEn": "Do you read books?",
+  "titleFa": "کتاب می خونی؟",
+  "descriptionFa": "لیام برای نشست کتاب وارد کتابخانه می شود و لیو هنگام هماهنگی ساده برنامه از او درباره کتاب خواندن می پرسد.",
   "primaryOutcomeKey": "A1-INTERACTION-READ-BOOKS",
-  "outcomeFa": "زبان آموز می تواند بگوید کتاب می خواند و سوال ساده درباره خواندن کتاب را بفهمد.",
-  "scenarioFa": "در کتابخانه، لیو درباره عادت ساده خواندن از تو می پرسد. نقش تو لیام است.",
+  "outcomeFa": "زبان آموز می تواند سوال ساده درباره کتاب خواندن را بفهمد و با read جواب کوتاه و طبیعی بدهد.",
+  "scenarioFa": "برای نشست کتاب وارد کتابخانه شده ای. لیو هنگام چک کردن برنامه یک سوال ساده درباره کتاب خواندن می پرسد. نقش تو لیام است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-HAVE-OBJECT",
     "A1-INTERACTION-CHOOSE-DAY"
@@ -29,11 +29,20 @@
         "meaningFa": "پرسیدن درباره همین فعالیت"
       }
     ],
-    "supportLanguage": [],
-    "assessmentBoundary": "The Lesson introduces read only in the written-text interpretation sense and keeps books as a familiar semantic domain. It does not introduce tense contrasts or reading frequency.",
+    "supportLanguage": [
+      {
+        "form": "Book club?",
+        "meaningFa": "برای نشست کتاب اومدی؟"
+      },
+      {
+        "form": "Nice!",
+        "meaningFa": "چه خوب!"
+      }
+    ],
+    "assessmentBoundary": "The Lesson introduces read only in the written-text interpretation sense and keeps books as a familiar semantic domain. It does not introduce tense contrasts or reading frequency. Final retrieval is a natural answer to the taught question, not an isolated sentence recital.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "Reuse the Do you ...? question shape from possession with a new lexical verb, then retrieve the matching I read books statement."
+      "intent": "Reuse the Do you ...? question shape from possession with the new verb read, then answer that question in a book-club context and contrast read with have and want."
     },
     "story": {
       "arcKey": "EN-A1-LIBRARY",
@@ -49,17 +58,18 @@
       "dependsOnLessonKeys": [
         "EN-A1-L-0017"
       ],
-      "settingFa": "کتابخانه، کنار قفسه کتاب ها",
-      "storyBeatFa": "لیام و لیو بعد از هماهنگ کردن روز نشست، این بار درباره خود خواندن کتاب حرف می زنند."
+      "settingFa": "کتابخانه، ورودی نشست کتاب",
+      "storyBeatFa": "لیام برای همان نشست دوشنبه به کتابخانه می آید. لیو هنگام هماهنگی ورود از او یک سوال کوتاه درباره کتاب خواندن می پرسد و بعد خودش هم جواب همان سوال را می دهد."
     },
     "reviewLinks": [
       {
         "lessonKey": "EN-A1-L-0018",
         "activityKeys": [
-          "A04"
+          "A04",
+          "A05"
         ],
         "learningDemand": "transfer",
-        "note": "The known Do you ...? question frame moves from have to the new verb read."
+        "note": "The known Do you ...? question shape moves from have to the new verb read."
       },
       {
         "lessonKey": "EN-A1-L-0017",
@@ -67,7 +77,7 @@
           "A02"
         ],
         "learningDemand": "retrieval",
-        "note": "The library pair returns after five intervening Lessons and stays in the same book-related domain."
+        "note": "The library pair returns after five intervening Lessons and the Monday book-club plan becomes the reason for the new exchange."
       }
     ],
     "pedagogyVersion": 2
@@ -107,30 +117,80 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "leo",
-      "textEn": "Do you read books?",
-      "translationFa": "کتاب می خونی؟",
+      "textEn": "Hi, Liam. Book club?",
+      "translationFa": "سلام لیام. برای نشست کتاب اومدی؟",
       "audioRequired": true
     },
     {
       "turnKey": "T02",
       "role": "learner",
       "characterKey": "liam",
-      "textEn": "Yes. I read books.",
-      "translationFa": "بله. کتاب می خونم.",
-      "speechTargetEn": "Yes. I read books.",
+      "textEn": "Yes.",
+      "translationFa": "بله.",
+      "speechTargetEn": "Yes.",
       "acceptedSpeechEn": [
-        "Yes. I read books."
+        "Yes."
       ],
       "audioRequired": true
     },
     {
       "turnKey": "T03",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "Do you read books?",
+      "translationFa": "کتاب می خونی؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
       "role": "learner",
       "characterKey": "liam",
-      "textEn": "I read books.",
-      "translationFa": "کتاب می خونم.",
-      "speechTargetEn": "I read books.",
+      "textEn": "Yes. I read books.",
+      "translationFa": "بله. کتاب می خونم.",
+      "speechTargetEn": "Yes. I read books.",
       "acceptedSpeechEn": [
+        "Yes. I read books.",
+        "I read books."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T05",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "Nice!",
+      "translationFa": "چه خوب!",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T06",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "Do you read books?",
+      "translationFa": "تو کتاب می خونی؟",
+      "speechTargetEn": "Do you read books?",
+      "acceptedSpeechEn": [
+        "Do you read books?"
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T07",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "Yes.",
+      "translationFa": "بله.",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T08",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "Yes. I read books.",
+      "translationFa": "بله. کتاب می خونم.",
+      "speechTargetEn": "Yes. I read books.",
+      "acceptedSpeechEn": [
+        "Yes. I read books.",
         "I read books."
       ],
       "audioRequired": true,
@@ -143,18 +203,18 @@
     {
       "activityKey": "A01",
       "type": "lexical_teach",
-      "instructionFa": "فعل read و دو الگوی کوتاه خواندن را یاد بگیر.",
+      "instructionFa": "فعل read و دو الگوی کوتاه این درس را یاد بگیر.",
       "config": {
         "lexicalKeys": [
           "EN-LEX-READ-01"
         ],
-        "explanationFa": "read در این درس یعنی متن یا کتاب را خواندن. I read books. یعنی کتاب می خونم. Do you read books? یعنی کتاب می خونی؟"
+        "explanationFa": "read در این درس یعنی متن یا کتاب را خواندن. Do you read books? یعنی کتاب می خونی؟ I read books. یعنی کتاب می خونم."
       }
     },
     {
       "activityKey": "A02",
       "type": "dialogue",
-      "instructionFa": "سوال لیو را گوش کن و جواب لیام را با صدای بلند بگو.",
+      "instructionFa": "گفت و گوی کوتاه ورودی نشست را گوش کن و جواب لیام را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -162,6 +222,22 @@
             "exchangeKey": "E01",
             "promptTurnKey": "T01",
             "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E03",
+            "promptTurnKey": "T05",
+            "responseTurnKey": "T06",
             "responseEvaluation": "practice_only",
             "allowPromptReplay": true,
             "allowResponseModelAudio": true
@@ -180,12 +256,12 @@
       "promptFa": "لیو درباره چه کاری می پرسد؟",
       "config": {
         "sourceTurnKeys": [
-          "T01"
+          "T03"
         ],
         "options": [
           "کتاب خواندن",
           "کتاب داشتن",
-          "کتاب پیدا کردن"
+          "کتاب خواستن"
         ],
         "answerIndex": 0,
         "transcriptAfterAttempt": true,
@@ -193,7 +269,7 @@
           "optionsFa": [
             "درست است؛ read یعنی خواندن.",
             "برای داشتن از have استفاده کردیم.",
-            "برای پیدا کردن قبلا سوال Where's my book? داشتیم."
+            "برای خواستن از want استفاده کردیم."
           ],
           "correctFa": "لیو درباره کتاب خواندن می پرسد."
         }
@@ -205,27 +281,29 @@
     {
       "activityKey": "A04",
       "type": "sentence_order",
-      "instructionFa": "جمله فعالیت خواندن را گوش کن و سه بخش را مرتب کن.",
+      "instructionFa": "سوال کتاب خواندن را گوش کن و چهار بخش را مرتب کن.",
       "config": {
-        "audioSourceTurnKey": "T03",
+        "audioSourceTurnKey": "T06",
         "tokensEn": [
-          "books.",
+          "books?",
+          "you",
           "read",
-          "I"
+          "Do"
         ],
         "answerTokensEn": [
-          "I",
+          "Do",
+          "you",
           "read",
-          "books."
+          "books?"
         ],
-        "answerEn": "I read books.",
+        "answerEn": "Do you read books?",
         "showAnswerTextBeforeAttempt": false,
         "allowAudioReplay": true,
         "practiceOnly": true,
         "hideTokenSurfaceCues": true,
         "feedback": {
-          "correctFa": "درست چیدی؛ فعالیت خواندن را ساختی.",
-          "retryFa": "دوباره گوش کن؛ I اول و read وسط جمله است."
+          "correctFa": "درست چیدی؛ این بار خودت سوال فعالیت خواندن را ساختی.",
+          "retryFa": "با Do شروع کن، بعد you و read books را اضافه کن."
         }
       },
       "metadata": {
@@ -236,7 +314,7 @@
       "activityKey": "A05",
       "type": "response_choice",
       "instructionFa": "فعل درست را از معنی موقعیت تشخیص بده.",
-      "promptFa": "می خواهی بگویی کتاب می خوانی، نه اینکه کتاب داری. چه می گویی؟",
+      "promptFa": "می خواهی بگویی کتاب می خوانی، نه اینکه کتاب داری یا کتاب می خواهی. چه می گویی؟",
       "config": {
         "optionsEn": [
           "I read books.",
@@ -261,20 +339,21 @@
     {
       "activityKey": "A06",
       "type": "speak",
-      "instructionFa": "جواب انگلیسی را نمی بینی. فعالیتت را خودت بگو.",
-      "promptFa": "لیام هستی. کوتاه بگو که کتاب می خوانی.",
+      "instructionFa": "جواب انگلیسی را نمی بینی. به سوال واقعی کوتاه جواب بده.",
+      "promptFa": "در نشست کتاب کسی از تو می پرسد Do you read books? جواب مثبت و کامل بده.",
       "config": {
         "mode": "retrieval",
-        "textEn": "I read books.",
+        "textEn": "Yes. I read books.",
         "acceptedAnswersEn": [
+          "Yes. I read books.",
           "I read books."
         ],
-        "sourceTurnKey": "T03",
+        "sourceTurnKey": "T08",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "I + read + books را بساز.",
+        "hintFa": "می توانی با Yes شروع کنی و بعد I + read + books را بسازی.",
         "feedback": {
-          "correctFa": "درست است؛ فعالیت خواندن را گفتی.",
-          "retryFa": "با I شروع کن و read books را اضافه کن."
+          "correctFa": "درست است؛ به سوال درباره خواندن با یک پاسخ طبیعی جواب دادی.",
+          "retryFa": "I + read + books را بساز."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -282,7 +361,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded reading-activity statement; not tense or frequency mastery."
+        "assessmentLimit": "Same-session bounded answer to Do you read books?; not tense, frequency or broad reading-habit mastery."
       }
     }
   ],
