@@ -7,16 +7,22 @@ on:
       - '.github/workflows/nova-content-factory-test.yml'
       - 'nova/experiments/content-factory-from-lesson-1/**'
       - 'nova/courses/en-fa/lessons/**/lesson.source.json'
+      - 'nova/courses/en-fa/lessons/**/language.plan.json'
       - 'nova/_assistant/content-system-v1/04_language_data.md'
       - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
       - 'nova/_assistant/content-system-v1/tools/compile_lesson_sql.py'
+      - 'nova/_assistant/content-system-v1/tools/curriculum_engine.py'
       - 'nova/_assistant/content-system-v1/tools/factory_probe.py'
       - 'nova/_assistant/content-system-v1/tools/generate_audio.py'
+      - 'nova/_assistant/content-system-v1/tools/language_reference_catalog.py'
       - 'nova/_assistant/content-system-v1/tools/language_units.py'
       - 'nova/_assistant/content-system-v1/tools/migrate_word_units.py'
+      - 'nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py'
+      - 'nova/_assistant/content-system-v1/tools/build_lesson_language_plans.py'
       - 'nova/_assistant/content-system-v1/tools/test_factory_design.py'
       - 'nova/_assistant/content-system-v1/tools/validate_factory_design.py'
       - 'nova/_assistant/content-system-v1/tools/validate_factory_prefix.py'
+      - 'nova/_assistant/content-system-v1/tools/validate_lesson_curriculum_spec.py'
       - 'nova/_assistant/content-system-v1/tools/validate_lesson_reference.py'
       - 'nova/reference/en-fa/**'
   workflow_dispatch:
@@ -56,6 +62,13 @@ jobs:
             --repo-root . \
             --config nova/experiments/content-factory-from-lesson-1/probe_config.json \
             --output nova/experiments/content-factory-from-lesson-1/reference_probe.json
+      - name: Build language plans and next curriculum spec
+        run: |
+          python nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py \
+            --repo-root . \
+            --course en-fa \
+            --config nova/experiments/content-factory-from-lesson-1/probe_config.json \
+            --experiment-dir nova/experiments/content-factory-from-lesson-1
       - name: Validate generated factory prefix
         id: prefix
         continue-on-error: true
@@ -86,16 +99,18 @@ jobs:
               ], check=True)
           print(f'Compiled {len(config["generatedLessons"])} Lessons with strict word/lexeme semantics.')
           PY
-      - name: Commit canonical cleanup and experiment evidence
+      - name: Commit canonical cleanup and source-driven evidence
         if: always()
         run: |
           git config user.name "nova-factory-test-bot"
           git config user.email "nova-factory-test-bot@users.noreply.github.com"
-          git add nova/courses/en-fa/lessons/*/lesson.source.json nova/experiments/content-factory-from-lesson-1/
+          git add nova/courses/en-fa/lessons/*/lesson.source.json \
+                  nova/courses/en-fa/lessons/*/language.plan.json \
+                  nova/experiments/content-factory-from-lesson-1/
           if git diff --cached --quiet; then
             echo "No factory changes."
           else
-            git commit -m "Apply Nova word-unit cleanup and refresh factory evidence"
+            git commit -m "Refresh Nova source-driven curriculum evidence"
             git fetch origin test/content-factory-from-lesson-1
             git rebase origin/test/content-factory-from-lesson-1
             git push origin HEAD:test/content-factory-from-lesson-1
