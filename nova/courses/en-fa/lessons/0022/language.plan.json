@@ -143,18 +143,32 @@
       "lexicalLemmas": [
         "want"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 2,
       "evidenceQuery": "i want tea",
-      "examples": [],
+      "examples": [
+        {
+          "id": 9955302,
+          "text": "I want tea.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 12303697,
+          "text": "I want tea, toast and jam.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
       "fallback": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0022: target collocation 'no i want water' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0022: target collocation 'i want tea' has no committed Tatoeba evidence or explicit usage fallback"
+    "EN-A1-L-0022: target collocation 'no i want water' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "207a17e4ba1ebfbea4e42f191ea39b22a5c5a042ce1e4a827dfa76c88e731063"
+  "planHash": "8e99fbea2abdc8bb2433422f2b37e8c28eb57525d47a3f0c2a12c06906e65dfa"
 }

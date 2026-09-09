@@ -239,11 +239,25 @@
   ],
   "introducedGrammar": [
     {
+      "grammarKey": "CEFRJ-GRAM-1",
+      "grammaticalItem": "I am",
+      "firstLesson": 1,
+      "lastLesson": 5,
+      "exposureCount": 3
+    },
+    {
       "grammarKey": "CEFRJ-GRAM-2-2",
       "grammaticalItem": "Are you ...?",
       "firstLesson": 3,
       "lastLesson": 5,
       "exposureCount": 2
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-10",
+      "grammaticalItem": "It is",
+      "firstLesson": 6,
+      "lastLesson": 24,
+      "exposureCount": 3
     }
   ],
   "constructionHistory": [
@@ -252,7 +266,13 @@
       "form": "I'm + name",
       "firstLesson": 1,
       "lastLesson": 1,
-      "grammarMatches": []
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1",
+          "matchScore": 1.0,
+          "lesson": 1
+        }
+      ]
     },
     {
       "constructionKey": "EN-CONSTR-WHATS-YOUR-NAME",
@@ -292,7 +312,13 @@
       "form": "I'm fine, thanks.",
       "firstLesson": 3,
       "lastLesson": 3,
-      "grammarMatches": []
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1",
+          "matchScore": 0.675,
+          "lesson": 3
+        }
+      ]
     },
     {
       "constructionKey": "EN-CONSTR-ASK-REPEAT-PLEASE",
@@ -319,14 +345,26 @@
       "form": "I'm from + place",
       "firstLesson": 5,
       "lastLesson": 5,
-      "grammarMatches": []
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1",
+          "matchScore": 0.8167,
+          "lesson": 5
+        }
+      ]
     },
     {
       "constructionKey": "EN-CONSTR-ITS-A",
       "form": "It's a + singular noun",
       "firstLesson": 6,
       "lastLesson": 6,
-      "grammarMatches": []
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10",
+          "matchScore": 0.8167,
+          "lesson": 6
+        }
+      ]
     },
     {
       "constructionKey": "EN-CONSTR-WHATS-THIS",
@@ -336,7 +374,7 @@
       "grammarMatches": [
         {
           "grammarKey": "CEFRJ-GRAM-8",
-          "matchScore": 0.35,
+          "matchScore": 0.5167,
           "lesson": 6
         }
       ]
@@ -359,7 +397,13 @@
       "form": "It's on the table.",
       "firstLesson": 8,
       "lastLesson": 8,
-      "grammarMatches": []
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10",
+          "matchScore": 0.59,
+          "lesson": 8
+        }
+      ]
     },
     {
       "constructionKey": "EN-CONSTR-WHERES-MY",
@@ -560,7 +604,13 @@
       "form": "It's my + item.",
       "firstLesson": 24,
       "lastLesson": 24,
-      "grammarMatches": []
+      "grammarMatches": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10",
+          "matchScore": 0.8167,
+          "lesson": 24
+        }
+      ]
     }
   ],
   "lessonHistory": [

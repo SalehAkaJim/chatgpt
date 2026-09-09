@@ -43,10 +43,32 @@
       "constructionKeys": [
         "EN-CONSTR-ON-MONDAY"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "on monday",
-      "examples": [],
+      "examples": [
+        {
+          "id": 13489445,
+          "text": "Come on Monday.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 11913169,
+          "text": "Begin on Monday.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13447191,
+          "text": "She worked on Mondays.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        }
+      ],
       "fallback": null
     }
   ],
@@ -56,5 +78,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "213e230e37d4f42d665d5c52e35356d66f11d8e82d19be589bc4bc0621f99c25"
+  "planHash": "547f4a982853aab02a988edce0d6bc833b10a91a12045276a4bb37db00390230"
 }

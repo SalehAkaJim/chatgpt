@@ -19,9 +19,16 @@
     {
       "constructionKey": "EN-CONSTR-ON-THE-TABLE",
       "form": "It's on the table.",
-      "kind": "lexical_frame",
+      "kind": "cefrj_grammar_backed",
       "status": "PASS",
-      "bestGrammarMatch": null,
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.59,
+        "prerequisiteKeys": []
+      },
       "alternatives": []
     }
   ],
@@ -99,7 +106,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "where's my",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     },
@@ -112,10 +119,32 @@
       "constructionKeys": [
         "EN-CONSTR-ON-THE-TABLE"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": "it's on the table",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "on the table",
+      "examples": [
+        {
+          "id": 13718454,
+          "text": "What is on the table?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Th0th"
+        },
+        {
+          "id": 13698134,
+          "text": "I sit on the table.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 12891527,
+          "text": "They fell on the table.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ussis"
+        }
+      ],
       "fallback": null
     },
     {
@@ -127,18 +156,39 @@
       "lexicalLemmas": [
         "table"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "it's on the table",
-      "examples": [],
+      "examples": [
+        {
+          "id": 1871551,
+          "text": "It's on the table.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Asma"
+        },
+        {
+          "id": 10576694,
+          "text": "\"Where's the book?\" \"It's on the table.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8741068,
+          "text": "\"Where is his book?\" \"It's on the table.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Solana"
+        }
+      ],
       "fallback": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0008: construction EN-CONSTR-WHERES-MY has no confident CEFR-J grammar match",
-    "EN-A1-L-0008: target collocation 'on the table' has no committed Tatoeba evidence or explicit usage fallback"
+    "EN-A1-L-0008: construction EN-CONSTR-WHERES-MY has no confident CEFR-J grammar match"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "d3cffa607475231e410bb040fb98502feb3f6e8fcffd90ceb4423ee34d5d8aa3"
+  "planHash": "941d69132751d4f7fc7e5dc52fb6bf8832f96cff5b6c3b2de19fbec706bc6711"
 }

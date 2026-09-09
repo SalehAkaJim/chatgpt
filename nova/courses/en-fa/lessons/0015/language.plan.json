@@ -21,7 +21,13 @@
         "matchScore": 0.425,
         "prerequisiteKeys": []
       },
-      "alternatives": []
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
+          "matchScore": 0.395
+        }
+      ]
     }
   ],
   "lexicalEvidence": [
@@ -97,10 +103,32 @@
       "constructionKeys": [
         "EN-CONSTR-HOW-MUCH-IS-IT"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "how much is it",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2418,
+          "text": "How much is it?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "brauliobezerra"
+        },
+        {
+          "id": 11038804,
+          "text": "How much is it altogether?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 5004168,
+          "text": "How much is it worth?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": null
     },
     {
@@ -112,18 +140,39 @@
       "lexicalLemmas": [
         "five"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "five dollars",
-      "examples": [],
+      "examples": [
+        {
+          "id": 13897337,
+          "text": "Tom owes me five dollars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kylewii"
+        },
+        {
+          "id": 7588275,
+          "text": "You owe me five dollars.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 5745274,
+          "text": "Do you have five dollars?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
       "fallback": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0015: construction EN-CONSTR-HOW-MUCH-IS-IT has no confident CEFR-J grammar match",
-    "EN-A1-L-0015: target collocation 'five dollars' has no committed Tatoeba evidence or explicit usage fallback"
+    "EN-A1-L-0015: construction EN-CONSTR-HOW-MUCH-IS-IT has no confident CEFR-J grammar match"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "1a87d474ee6593c8bdb8a13165b6a224e4ee7db618f2e28348d1ef4a69703d23"
+  "planHash": "c6ee166fd56d26418f27febecbe7514ba596ea5b3b0bf060726710f1951c56fd"
 }

@@ -28,16 +28,44 @@
           "grammarKey": "CEFRJ-GRAM-2-1",
           "grammaticalItem": "You are not",
           "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-2-3",
+          "grammaticalItem": "Aren't you ...?",
+          "matchScore": 0.395
         }
       ]
     },
     {
       "constructionKey": "EN-CONSTR-FROM-PLACE",
       "form": "I'm from + place",
-      "kind": "nova_construction",
-      "status": "REVIEW",
-      "bestGrammarMatch": null,
-      "alternatives": []
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-1",
+        "grammaticalItem": "I am",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.8167,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-2",
+          "grammaticalItem": "Am I ...?",
+          "matchScore": 0.5667
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-1",
+          "grammaticalItem": "I am not",
+          "matchScore": 0.5167
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-3",
+          "grammaticalItem": "Am I not ...?",
+          "matchScore": 0.5167
+        }
+      ]
     }
   ],
   "lexicalEvidence": [],
@@ -51,10 +79,32 @@
       "constructionKeys": [
         "EN-CONSTR-ASK-COUNTRY"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "where are you from",
-      "examples": [],
+      "examples": [
+        {
+          "id": 370703,
+          "text": "Where are you from?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "saeb"
+        },
+        {
+          "id": 13372868,
+          "text": "Where are you from, passenger?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Igider"
+        },
+        {
+          "id": 8567415,
+          "text": "\"Where are you from?\" \"Algiers.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        }
+      ],
       "fallback": null
     },
     {
@@ -68,15 +118,13 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "i'm from",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     }
   ],
-  "warnings": [
-    "EN-A1-L-0005: construction EN-CONSTR-FROM-PLACE has no confident CEFR-J grammar match"
-  ],
+  "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "eb59e59bd58a799ea9906aab066bbbc5742299403e1a186b75512c0a9be8895d"
+  "planHash": "5049ece1a6ec331bcc580f31cffbaa550c3fa42a65ba9780f38e15d4f2871f50"
 }

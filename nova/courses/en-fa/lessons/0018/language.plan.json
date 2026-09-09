@@ -89,10 +89,32 @@
       "constructionKeys": [
         "EN-CONSTR-DO-YOU-HAVE"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "do you have a book",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2666720,
+          "text": "Do you have a book?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 9774597,
+          "text": "Do you have a book to read?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "helloroto"
+        },
+        {
+          "id": 7867767,
+          "text": "Do you have a book of Berber names?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        }
+      ],
       "fallback": null
     },
     {
@@ -104,10 +126,32 @@
       "lexicalLemmas": [
         "have"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "do you have a pen",
-      "examples": [],
+      "examples": [
+        {
+          "id": 33771,
+          "text": "Do you have a pen?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11937696,
+          "text": "Do you have a pen handy?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 3835710,
+          "text": "\"Do you have a pen?\" \"Yes.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Joseph"
+        }
+      ],
       "fallback": null
     },
     {
@@ -119,18 +163,37 @@
       "lexicalLemmas": [
         "have"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "do you have a book",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2666720,
+          "text": "Do you have a book?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 9774597,
+          "text": "Do you have a book to read?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "helloroto"
+        },
+        {
+          "id": 7867767,
+          "text": "Do you have a book of Berber names?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        }
+      ],
       "fallback": null
     }
   ],
-  "warnings": [
-    "EN-A1-L-0018: target collocation 'do you have a pen' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0018: target collocation 'do you have a book' has no committed Tatoeba evidence or explicit usage fallback"
-  ],
+  "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "578a78c1b5151e6f45cb8c9724f7f311f0a8188fd37641ff6b1d0ca480ae7daf"
+  "planHash": "87dc9686dbe338a53ba2ef53f18f263c3dcb7118b8cfb3c42e289851b45a7673"
 }

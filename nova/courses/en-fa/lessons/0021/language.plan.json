@@ -121,10 +121,32 @@
       "constructionKeys": [
         "EN-CONSTR-DO-YOU-LIKE"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 4,
       "evidenceQuery": "do you like coffee",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2739813,
+          "text": "Do you like coffee?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13320630,
+          "text": "Do you like coffee or tea?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 36465,
+          "text": "Why do you like coffee strong?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
       "fallback": null
     },
     {
@@ -151,10 +173,32 @@
       "lexicalLemmas": [
         "like"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 3,
       "evidenceQuery": "do you like tea",
-      "examples": [],
+      "examples": [
+        {
+          "id": 1098230,
+          "text": "Do you like tea?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "cntrational"
+        },
+        {
+          "id": 70153,
+          "text": "Do you like tea or coffee?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 5863861,
+          "text": "Do you like tea with milk or lemon?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "peterius"
+        }
+      ],
       "fallback": null
     },
     {
@@ -181,10 +225,32 @@
       "lexicalLemmas": [
         "like"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 4,
       "evidenceQuery": "do you like coffee",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2739813,
+          "text": "Do you like coffee?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13320630,
+          "text": "Do you like coffee or tea?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 36465,
+          "text": "Why do you like coffee strong?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
       "fallback": null
     },
     {
@@ -196,10 +262,32 @@
       "lexicalLemmas": [
         "like"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "i like coffee",
-      "examples": [],
+      "examples": [
+        {
+          "id": 3524072,
+          "text": "I like coffee.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "robbieheslop"
+        },
+        {
+          "id": 9741272,
+          "text": "I like coffee liqueur.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 62251,
+          "text": "I like coffee better.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": null
     },
     {
@@ -219,13 +307,10 @@
     }
   ],
   "warnings": [
-    "EN-A1-L-0021: target collocation 'do you like tea' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0021: target collocation 'yes i like tea' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0021: target collocation 'do you like coffee' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0021: target collocation 'i like coffee' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0021: target collocation 'i like tea' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "85d9af30acda67240d58be749d5a21a799afacf3bb5a0bde6f80fd9a5022719b"
+  "planHash": "7966ed061ad0adda19e599119b8bd90405597cc4062994e73328020c65fecb0a"
 }

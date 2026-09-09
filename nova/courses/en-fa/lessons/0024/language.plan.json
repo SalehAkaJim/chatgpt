@@ -31,16 +31,34 @@
           "grammarKey": "CEFRJ-GRAM-8-1",
           "grammaticalItem": "This/That is not",
           "matchScore": 0.4867
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.4867
         }
       ]
     },
     {
       "constructionKey": "EN-CONSTR-ITS-MY",
       "form": "It's my + item.",
-      "kind": "nova_construction",
-      "status": "REVIEW",
-      "bestGrammarMatch": null,
-      "alternatives": []
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.8167,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
+          "matchScore": 0.5167
+        }
+      ]
     }
   ],
   "lexicalEvidence": [
@@ -95,10 +113,32 @@
       "constructionKeys": [
         "EN-CONSTR-IS-THIS-YOUR"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "is this your",
-      "examples": [],
+      "examples": [
+        {
+          "id": 1436332,
+          "text": "Is this yours?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "marcelostockle"
+        },
+        {
+          "id": 13735781,
+          "text": "Is this your sock?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 13558956,
+          "text": "Is this your bedroom?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LeviHighway"
+        }
+      ],
       "fallback": null
     },
     {
@@ -112,16 +152,15 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "it's my",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0024: construction EN-CONSTR-IS-THIS-YOUR has no confident CEFR-J grammar match",
-    "EN-A1-L-0024: construction EN-CONSTR-ITS-MY has no confident CEFR-J grammar match"
+    "EN-A1-L-0024: construction EN-CONSTR-IS-THIS-YOUR has no confident CEFR-J grammar match"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "333108eb8c4be8ef1dcfc637c5693bff2707b0815876aad71013c63c7ea8235f"
+  "planHash": "a2bb29b38e0da45586ea5c4f70e22a803f8c4b121df10822a30cedb2cc4f3250"
 }

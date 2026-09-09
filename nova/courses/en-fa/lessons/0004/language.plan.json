@@ -53,15 +53,23 @@
       "lexicalLemmas": [
         "repeat"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 1,
       "evidenceQuery": "can you repeat that please",
-      "examples": [],
+      "examples": [
+        {
+          "id": 3329632,
+          "text": "Can you repeat that, please?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": null
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "d378d93eaea412af292b3715f825831277af644a7a289820eb122b01b45d0dc0"
+  "planHash": "b143bf5bc6cfb5c88ca2fa678181c6eb3e7c9a12b4e02c67b348631b8f8ef9f8"
 }

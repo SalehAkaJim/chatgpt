@@ -11,10 +11,33 @@
     {
       "constructionKey": "EN-CONSTR-IM-NAME",
       "form": "I'm + name",
-      "kind": "nova_construction",
-      "status": "REVIEW",
-      "bestGrammarMatch": null,
-      "alternatives": []
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-1",
+        "grammaticalItem": "I am",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 1.0,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-2",
+          "grammaticalItem": "Am I ...?",
+          "matchScore": 0.85
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-1",
+          "grammaticalItem": "I am not",
+          "matchScore": 0.75
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-3",
+          "grammaticalItem": "Am I not ...?",
+          "matchScore": 0.75
+        }
+      ]
     },
     {
       "constructionKey": "EN-CONSTR-WHATS-YOUR-NAME",
@@ -59,7 +82,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "what's your name",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     },
@@ -74,17 +97,16 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "what's your name",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0001: construction EN-CONSTR-IM-NAME has no confident CEFR-J grammar match",
     "EN-A1-L-0001: construction EN-CONSTR-WHATS-YOUR-NAME has no confident CEFR-J grammar match",
     "EN-A1-L-0001: target collocation 'what's your name' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "255088898d3a7fef1d514d650182c8d526b18df39a1b33f2bb6fb5e7a5cdca1b"
+  "planHash": "349d6513ba112d5c4c4892f4d35d89c81ac43d24c34cae354b1b7cf436adbea8"
 }

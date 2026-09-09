@@ -105,10 +105,32 @@
       "constructionKeys": [
         "EN-CONSTR-YES-PLEASE"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "yes please",
-      "examples": [],
+      "examples": [
+        {
+          "id": 687874,
+          "text": "Yes, please.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "lukaszpp"
+        },
+        {
+          "id": 10196915,
+          "text": "\"Coffee?\" \"Yes, please.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 65364,
+          "text": "Yes, please come.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Luornu"
+        }
+      ],
       "fallback": null
     },
     {
@@ -120,10 +142,32 @@
       "constructionKeys": [
         "EN-CONSTR-NO-THANK-YOU"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "no thank you",
-      "examples": [],
+      "examples": [
+        {
+          "id": 14013751,
+          "text": "No thank you.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "zogwarg"
+        },
+        {
+          "id": 31390,
+          "text": "No, thank you.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8507083,
+          "text": "\"Thanks.\" \"No, thank YOU!\"",
+          "lang": "eng",
+          "license": "CC0 1.0",
+          "owner": "shekitten"
+        }
+      ],
       "fallback": null
     }
   ],
@@ -133,5 +177,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "bc89652dec462b34658932d74144fc0099bc951c46e2233b6c705a534c223a65"
+  "planHash": "7e49bda0d1e57aef85fa3210a7a3efe35b8b7194f7996684509351dacea66227"
 }

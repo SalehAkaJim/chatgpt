@@ -85,10 +85,32 @@
         "at",
         "six"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": "it's at six",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "at six",
+      "examples": [
+        {
+          "id": 12862679,
+          "text": "She returned at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 7246548,
+          "text": "Sami died at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 7205946,
+          "text": "Sami left at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        }
+      ],
       "fallback": null
     },
     {
@@ -110,10 +132,9 @@
   ],
   "warnings": [
     "EN-A1-L-0016: construction EN-CONSTR-WHAT-TIME has no confident CEFR-J grammar match",
-    "EN-A1-L-0016: target collocation 'it's at six' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0016: target collocation 'at six' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "9eb3189063a4ff15f933a6b741511448a24840f699b716f14a3e860675cfbf95"
+  "planHash": "94646f09cea134afe24d90963f84f92ba8d0f1e5751f624b9ad42978bfdb2efe"
 }

@@ -33,8 +33,8 @@
           "matchScore": 0.35
         },
         {
-          "grammarKey": "CEFRJ-GRAM-3-2",
-          "grammaticalItem": "Is he/she ...?",
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
           "matchScore": 0.35
         }
       ]
@@ -72,10 +72,25 @@
       "constructionKeys": [
         "EN-CONSTR-MY-NAME-IS"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 2,
       "evidenceQuery": "my is",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2683756,
+          "text": "My is it cloudy today!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "FeuDRenais2"
+        },
+        {
+          "id": 64837,
+          "text": "Oh my! Is she weeping for joy?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "blay_paul"
+        }
+      ],
       "fallback": null
     }
   ],
@@ -84,5 +99,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "d3e16f2b4fd6b25b217012d658ea1e7154f90e7871dbdff438ef14aee847923d"
+  "planHash": "9776fb74765aa68cfa78c117198c1eddb7e06ea651f361393810eb58832fdd71"
 }

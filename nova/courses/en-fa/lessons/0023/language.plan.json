@@ -99,10 +99,32 @@
       "lexicalLemmas": [
         "read"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "do you read books",
-      "examples": [],
+      "examples": [
+        {
+          "id": 9226785,
+          "text": "Do you read books?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11744393,
+          "text": "Do you read books like that?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 6265197,
+          "text": "How often do you read books?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": null
     },
     {
@@ -126,5 +148,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "7172eb2e1d28d201a295838f1f925caaa4cb88c0d787aec42dfc9efa4b1600c9"
+  "planHash": "1baf23699148ab8d91192dace385f0f7f958ba5d5ded9a06876a2be656c1f19d"
 }

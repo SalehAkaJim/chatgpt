@@ -18,29 +18,47 @@
         "grammaticalItem": "This/That is",
         "cefr": "A1",
         "cefrJLevel": "A1.1",
-        "matchScore": 0.35,
+        "matchScore": 0.5167,
         "prerequisiteKeys": []
       },
       "alternatives": [
         {
           "grammarKey": "CEFRJ-GRAM-8-2",
           "grammaticalItem": "Is this/that ...?",
-          "matchScore": 0.35
+          "matchScore": 0.5167
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.4867
         },
         {
           "grammarKey": "CEFRJ-GRAM-8-3",
           "grammaticalItem": "Isn't this/that ...?",
-          "matchScore": 0.35
+          "matchScore": 0.4867
         }
       ]
     },
     {
       "constructionKey": "EN-CONSTR-ITS-A",
       "form": "It's a + singular noun",
-      "kind": "nova_construction",
-      "status": "REVIEW",
-      "bestGrammarMatch": null,
-      "alternatives": []
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.8167,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
+          "matchScore": 0.5167
+        }
+      ]
     }
   ],
   "lexicalEvidence": [
@@ -97,7 +115,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "what's this",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     },
@@ -112,7 +130,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "it's a book",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     },
@@ -127,7 +145,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "it's a pen",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     },
@@ -142,18 +160,17 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "it's a book",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null
     }
   ],
   "warnings": [
     "EN-A1-L-0006: construction EN-CONSTR-WHATS-THIS has no confident CEFR-J grammar match",
-    "EN-A1-L-0006: construction EN-CONSTR-ITS-A has no confident CEFR-J grammar match",
     "EN-A1-L-0006: target collocation 'it's a pen' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0006: target collocation 'it's a book' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "ada72813b43b2065dd38907555d9c0460451a65998fdccddef0c561c53a05d40"
+  "planHash": "bde1927fa3c9f76d2a93b49ed984d13d78c0c5499fed40ff0ba974bae7fe61ff"
 }
