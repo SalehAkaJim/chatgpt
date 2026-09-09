@@ -16,6 +16,8 @@ from pathlib import Path
 from language_reference_catalog import LanguageReferenceCatalog
 from reference_data import normalize_lemma
 
+POSSESSIVE_DETERMINERS = {"my", "our", "your", "her", "their"}
+
 
 def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -54,6 +56,72 @@ def _record_grammar(grammar_history: dict[str, dict], match: dict, order: int, e
     record["maxMatchScore"] = max(float(record.get("maxMatchScore") or 0), float(match.get("matchScore") or 0))
 
 
+def _special_surface_matches(
+    catalog: LanguageReferenceCatalog,
+    *,
+    level: str,
+    text: str,
+    lesson_verbs: set[str],
+) -> list[dict]:
+    """Match CEFR-J meta-label grammar records against actual learner language.
+
+    Some CEFR-J rows are not literal forms (e.g. "MODAL/AUX: can" or
+    "TENSE/ASPECT: PRESENT (lexical verbs)"). Token similarity alone cannot
+    identify these safely, so we use their stable shorthand codes plus sentence
+    shape. This is evidence detection, not free-form grammar inference.
+    """
+    normalized = catalog.normalized_grammar_text(text)
+    tokens = normalized.split()
+    if not tokens:
+        return []
+    is_question = str(text).strip().endswith("?")
+    is_negative = "not" in tokens
+    first = tokens[0]
+    token_set = set(tokens)
+    matches = []
+
+    for item in catalog.grammar_items(level):
+        code = str(item.get("shorthandCode") or "")
+        matched = False
+
+        if code == "PGEN":
+            matched = bool(token_set & POSSESSIVE_DETERMINERS)
+        elif code == "INT.what":
+            matched = is_question and first == "what"
+        elif code == "MD.can.INT.AFF":
+            matched = is_question and first == "can" and not is_negative
+        elif code == "MD.can.AFF":
+            matched = (not is_question) and "can" in token_set and not is_negative
+        elif code == "TA.PRESENT.do.AFF":
+            matched = (not is_question) and not is_negative and bool(token_set & lesson_verbs)
+        elif code == "DT.is_this.that":
+            matched = is_question and len(tokens) >= 2 and tokens[0] == "is" and tokens[1] in {"this", "that"}
+        elif code == "DT.this.that_is":
+            matched = (not is_question) and len(tokens) >= 2 and tokens[0] in {"this", "that"} and tokens[1] == "is"
+
+        if matched:
+            matches.append({**item, "matchScore": 1.0, "matchedTokens": sorted(token_set), "matchMode": "cefrj_pattern"})
+    return matches
+
+
+def _record_surface_evidence(
+    grammar_history: dict[str, dict],
+    catalog: LanguageReferenceCatalog,
+    *,
+    level: str,
+    text: str,
+    order: int,
+    lesson_verbs: set[str],
+    evidence: str,
+) -> None:
+    generic = catalog.match_grammar(level=level, construction_form=text, limit=6)
+    for match in generic:
+        if (match.get("matchScore") or 0) >= 0.72:
+            _record_grammar(grammar_history, match, order, evidence)
+    for match in _special_surface_matches(catalog, level=level, text=text, lesson_verbs=lesson_verbs):
+        _record_grammar(grammar_history, match, order, evidence + "_pattern")
+
+
 def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog: LanguageReferenceCatalog) -> dict:
     known_lemmas: dict[str, dict] = {}
     grammar_history: dict[str, dict] = {}
@@ -66,6 +134,14 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
         lesson = load(path)
         order = int(lesson.get("sortOrder") or 0)
         level = lesson.get("levelKey")
+        lexical_items = lesson.get("lexicalItems", []) or []
+        lesson_verbs = {
+            normalize_lemma(x.get("lemma") or x.get("displayForm"))
+            for x in lexical_items
+            if str(x.get("partOfSpeech") or "").lower() == "verb"
+        }
+        lesson_verbs.discard("")
+
         lesson_history.append({
             "lessonKey": lesson.get("lessonKey"),
             "sortOrder": order,
@@ -76,7 +152,7 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
             "sourceHash": source_hash(path),
         })
 
-        for lexical in lesson.get("lexicalItems", []) or []:
+        for lexical in lexical_items:
             lemma = normalize_lemma(lexical.get("lemma") or lexical.get("displayForm"))
             if not lemma:
                 continue
@@ -94,14 +170,14 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
             if ref_key:
                 record["referenceKeys"] = sorted(set(record["referenceKeys"] + [ref_key]))
 
-        # Explicit target constructions are the strongest curriculum evidence.
         for construction in (lesson.get("curriculum") or {}).get("targetConstructions", []) or []:
-            ckey = construction.get("key") or construction.get("form")
-            matches = catalog.match_grammar(level=level, construction_form=construction.get("form") or "", limit=4)
+            form = construction.get("form") or ""
+            ckey = construction.get("key") or form
+            matches = catalog.match_grammar(level=level, construction_form=form, limit=4)
             best = matches[0] if matches else None
             history = construction_history.setdefault(ckey, {
                 "constructionKey": ckey,
-                "form": construction.get("form"),
+                "form": form,
                 "firstLesson": order,
                 "lastLesson": order,
                 "grammarMatches": [],
@@ -115,10 +191,9 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
                 })
                 if (best.get("matchScore") or 0) >= 0.55:
                     _record_grammar(grammar_history, best, order, "target_construction")
+            for special in _special_surface_matches(catalog, level=level, text=form, lesson_verbs=lesson_verbs):
+                _record_grammar(grammar_history, special, order, "target_construction_pattern")
 
-        # Canonical learner responses catch grammar actually practised even when
-        # old Lessons did not annotate it as a targetConstruction. This is critical
-        # for legacy/backfilled Lessons such as "I'm + name".
         seen_turn_signatures = set()
         for turn in lesson.get("turns", []) or []:
             if turn.get("role") != "learner":
@@ -128,14 +203,18 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
             if not normalized or normalized in seen_turn_signatures:
                 continue
             seen_turn_signatures.add(normalized)
-            matches = catalog.match_grammar(level=level, construction_form=text, limit=5)
-            for match in matches:
-                if (match.get("matchScore") or 0) < 0.72:
-                    continue
-                _record_grammar(grammar_history, match, order, "learner_practice")
+            _record_surface_evidence(
+                grammar_history,
+                catalog,
+                level=level,
+                text=text,
+                order=order,
+                lesson_verbs=lesson_verbs,
+                evidence="learner_practice",
+            )
 
     return {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "courseCode": course,
         "lastLessonSortOrder": max((x["sortOrder"] for x in lesson_history), default=0),
         "knownLexical": sorted(known_lemmas.values(), key=lambda x: (x["firstLesson"], x["lemma"])),
@@ -156,11 +235,7 @@ def review_due(items: list[dict], *, next_order: int, min_gap: int = 3, max_gap:
 
 
 def build_next_spec(
-    *,
-    state: dict,
-    catalog: LanguageReferenceCatalog,
-    level: str,
-    topic_hints: list[str] | None = None,
+    *, state: dict, catalog: LanguageReferenceCatalog, level: str, topic_hints: list[str] | None = None,
 ) -> dict:
     next_order = int(state.get("lastLessonSortOrder") or 0) + 1
     known_lemmas = {x["lemma"] for x in state.get("knownLexical", [])}
@@ -168,27 +243,18 @@ def build_next_spec(
     topics = topic_hints or []
 
     grammar_candidates = catalog.rank_grammar_candidates(
-        level=level,
-        introduced_keys=introduced_grammar,
-        desired_tokens=topics,
-        limit=12,
+        level=level, introduced_keys=introduced_grammar, desired_tokens=topics, limit=12,
     )
     lexical_candidates = catalog.recommend_lexical(
-        level=level,
-        count=16,
-        topics=topics,
-        exclude_lemmas=known_lemmas,
+        level=level, count=16, topics=topics, exclude_lemmas=known_lemmas,
     )
     lexical_review = review_due(state.get("knownLexical", []), next_order=next_order, limit=10)
     grammar_review = review_due(state.get("introducedGrammar", []), next_order=next_order, min_gap=4, max_gap=12, limit=8)
 
     latest = state.get("lessonHistory", [])[-1] if state.get("lessonHistory") else {}
     recent = state.get("lessonHistory", [])[-5:]
-    recent_participant_sets = [x.get("participants", []) for x in recent]
-    recent_arcs = [x.get("arcKey") for x in recent if x.get("arcKey")]
-
     spec = {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "courseCode": state.get("courseCode"),
         "levelKey": level,
         "sortOrder": next_order,
@@ -208,8 +274,8 @@ def build_next_spec(
         "reviewDue": {"lexical": lexical_review, "grammar": grammar_review},
         "storyConstraints": {
             "doNotRepeatImmediateParticipants": latest.get("participants", []),
-            "recentParticipantSets": recent_participant_sets,
-            "recentArcs": recent_arcs,
+            "recentParticipantSets": [x.get("participants", []) for x in recent],
+            "recentArcs": [x.get("arcKey") for x in recent if x.get("arcKey")],
             "recurrenceGuidance": "A prior pair/arc may return after sufficient spacing when continuity adds value; never force recurrence for vocabulary convenience.",
         },
         "authoringBoundary": {
@@ -220,13 +286,7 @@ def build_next_spec(
                 "pronunciation evidence",
                 "usage/collocation evidence requirements",
             ],
-            "novaCreates": [
-                "scenario",
-                "characters/learner role choice within story rules",
-                "dialogue wording",
-                "activities",
-                "Persian instructional copy",
-            ],
+            "novaCreates": ["scenario", "characters/learner role choice within story rules", "dialogue wording", "activities", "Persian instructional copy"],
         },
     }
     raw = json.dumps(spec, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
