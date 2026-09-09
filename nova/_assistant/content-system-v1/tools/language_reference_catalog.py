@@ -19,12 +19,35 @@ from pathlib import Path
 from typing import Iterable
 
 from reference_catalog import ReferenceCatalog
-from reference_data import LEVELS, normalize_lemma
+from reference_data import normalize_lemma
 
 WORD_RE = re.compile(r"[A-Za-z]+(?:'[A-Za-z]+)?")
 GRAMMAR_STOP = {
     "item", "object", "number", "name", "person", "place", "city", "country",
     "thing", "word", "noun", "verb", "drink", "location",
+}
+CONTRACTION_EXPANSIONS = {
+    "i'm": ["i", "am"],
+    "you're": ["you", "are"],
+    "he's": ["he", "is"],
+    "she's": ["she", "is"],
+    "it's": ["it", "is"],
+    "we're": ["we", "are"],
+    "they're": ["they", "are"],
+    "what's": ["what", "is"],
+    "where's": ["where", "is"],
+    "who's": ["who", "is"],
+    "how's": ["how", "is"],
+    "that's": ["that", "is"],
+    "this's": ["this", "is"],
+    "don't": ["do", "not"],
+    "doesn't": ["does", "not"],
+    "isn't": ["is", "not"],
+    "aren't": ["are", "not"],
+    "can't": ["can", "not"],
+    "haven't": ["have", "not"],
+    "hasn't": ["has", "not"],
+    "won't": ["will", "not"],
 }
 
 
@@ -35,7 +58,15 @@ def _load(path: Path, default: dict | None = None) -> dict:
 
 
 def _tokens(text: str | None) -> list[str]:
-    return [x.lower() for x in WORD_RE.findall(text or "")]
+    result = []
+    for raw in WORD_RE.findall((text or "").replace("’", "'")):
+        token = raw.lower()
+        expansion = CONTRACTION_EXPANSIONS.get(token)
+        if expansion:
+            result.extend(expansion)
+        else:
+            result.append(token)
+    return result
 
 
 def _sublevel_rank(value: str | None, level: str) -> int:
@@ -116,12 +147,16 @@ class LanguageReferenceCatalog:
         raw = re.sub(r"\+\s*[A-Za-z_]+", " ", form or "").replace("...", " ")
         return {x for x in _tokens(raw) if x not in GRAMMAR_STOP}
 
+    @staticmethod
+    def normalized_grammar_text(text: str) -> str:
+        return " ".join(_tokens(text))
+
     def match_grammar(self, *, level: str, construction_form: str, limit: int = 5) -> list[dict]:
         wanted = self.construction_tokens(construction_form)
         if not wanted:
             return []
         scored = []
-        form_norm = " ".join(_tokens(construction_form))
+        form_norm = self.normalized_grammar_text(construction_form)
         for item in self.grammar_items(level):
             got = self.grammar_tokens(item)
             if not got:
@@ -130,7 +165,7 @@ class LanguageReferenceCatalog:
             union = wanted | got
             jaccard = len(overlap) / len(union) if union else 0.0
             coverage = len(overlap) / len(wanted) if wanted else 0.0
-            item_norm = " ".join(_tokens(item.get("grammaticalItem")))
+            item_norm = self.normalized_grammar_text(item.get("grammaticalItem") or "")
             phrase_bonus = 0.25 if item_norm and (item_norm in form_norm or form_norm in item_norm) else 0.0
             score = min(1.0, 0.55 * coverage + 0.30 * jaccard + phrase_bonus)
             if score < 0.34:
@@ -140,11 +175,6 @@ class LanguageReferenceCatalog:
         return scored[: max(0, limit)]
 
     def infer_grammar_prerequisites(self, item: dict, level: str) -> list[str]:
-        """Infer conservative same-family prerequisites from CEFR-J records.
-
-        This is deliberately narrow: negative/interrogative forms may depend on a
-        simpler affirmative declarative sibling. We never invent cross-level grammar.
-        """
         sentence_type = str(item.get("sentenceType") or "").upper()
         if "NEG" not in sentence_type and "INT" not in sentence_type:
             return []
