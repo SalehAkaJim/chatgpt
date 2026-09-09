@@ -1,25 +1,20 @@
 name: Nova Ready Wave Integration
 
+# Manual recovery/debug utility only. Normal ready-wave integration now happens
+# inside Nova Lesson Production so there is a single queue and a single writer.
 on:
-  workflow_run:
-    workflows: ["Nova Lesson Production"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
   contents: write
   actions: write
 
-# Integration is queued behind the production writer and starts only after a
-# production run has completed. Keeping the same group preserves single-writer
-# ownership of curriculum state and canonical Lesson files.
 concurrency:
   group: nova-production-main
   cancel-in-progress: false
 
 jobs:
   integrate-ready-wave:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +33,8 @@ jobs:
             nova-wave-validation-${{ runner.os }}-
             nova-validation-${{ runner.os }}-
       - name: Install validator dependencies
-        run: pip install -r nova/_assistant/content-system-v1/tools/requirements.txt
+        timeout-minutes: 5
+        run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
       - name: Find current ready wave
         id: wave
         shell: bash
@@ -78,27 +74,19 @@ jobs:
             --repo-root . \
             --wave "${{ steps.wave.outputs.path }}"
       - name: Commit canonical wave only after integration PASS
-        id: publish
         if: steps.wave.outputs.ready == 'true'
         run: |
           git config user.name "nova-production-bot"
           git config user.email "nova-production-bot@users.noreply.github.com"
           git fetch origin main
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
-            echo "Main changed before canonical publication; a newer production completion will retry integration."
+            echo "Main changed before canonical publication; rerun against the latest main."
             exit 1
           fi
           git add nova/courses/ nova/curriculum/
           if git diff --cached --quiet; then
-            echo "published=false" >> "$GITHUB_OUTPUT"
             echo "No canonical integration changes."
           else
             git commit -m "Integrate validated Nova authoring wave"
             git push origin HEAD:main
-            echo "published=true" >> "$GITHUB_OUTPUT"
           fi
-      - name: Trigger production for newly canonical prefix
-        if: steps.publish.outputs.published == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run nova-pilot.yml --ref main
