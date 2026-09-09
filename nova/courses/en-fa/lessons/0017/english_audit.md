@@ -1,8 +1,13 @@
-<!-- sourceHash: 6aa51722535788015ce87d7985f210553e3492b4d039c4a66eea17473c7720f2 -->
+<!-- sourceHash: 04f08d17b6aae4b5f11402ce698698795acfbda7d3ab34b6c69c3cc25e21aa18 -->
 # English Audit — EN-A1-L-0017
 
 **Lesson:** What day?
 **Outcome:** A1-INTERACTION-CHOOSE-DAY
+
+## Lexical items
+
+- `EN-LEX-ON-DAY-01` [word/target] — **on**
+- `EN-LEX-MONDAY-01` [word/target] — **Monday**
 
 ## Dialogue turns
 
@@ -36,6 +41,9 @@ On Monday.
 - **Accepted speech:** On Monday.
 
 ## Activities
+
+**A01 · lexical_teach**
+
 
 **A02 · dialogue**
 

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0028",
+  "sortOrder": 28,
+  "levelKey": "A1",
+  "lessonSourceHash": "e63f8c5c162a3bf52b60ec48d149c2fe143a1ec32240b8ff1ee3a60321441986",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-THEY-ARE-FROM-PLACE",
+      "form": "They are from + place.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-5",
+        "grammaticalItem": "they are",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.8167,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-5-2",
+          "grammaticalItem": "Are they ...?",
+          "matchScore": 0.5667
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-5-1",
+          "grammaticalItem": "they are not",
+          "matchScore": 0.5167
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-5-3",
+          "grammaticalItem": "Aren't they ...?",
+          "matchScore": 0.5167
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [],
+  "usageEvidence": [
+    {
+      "query": "they are from",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0028"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-THEY-ARE-FROM-PLACE"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "they are from",
+      "examples": [
+        {
+          "id": 12073144,
+          "text": "They are from Russia.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ergulis"
+        },
+        {
+          "id": 10275114,
+          "text": "They are from Finland.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LimeGreenTeknii"
+        },
+        {
+          "id": 9988830,
+          "text": "They are from here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
+      "fallback": null
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "66e72957a5b2eaefb9ba2458f033decc9ecf4d45fc72aaf0df8a6e8d6bb0d37f"
+}

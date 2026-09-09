@@ -1,89 +1,99 @@
 {
-  "status": "PASS",
+  "status": "PASS_WITH_WARNINGS",
   "lessonKey": "EN-A1-L-0025",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 100,
+  "automatedScore": 95,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "no i'm not",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0025",
-    "sourceHash": "23c5eadf9c254bf0259e5b039b7225a9dd9a0c010ef84d6f4e9d664e274b7f3e",
+    "sourceHash": "dd0e4d190ac2f7aa92f06eede09a7f6c750feee819882001bcc19d6016325a68",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
     "reviewerType": "model",
     "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of the first production-generated Lesson 0025 from the source-driven curriculum spec, including the explicit room-two retrieval model turn; not an independent human or learner test.",
+    "scope": "Model/editor review after replacing forced full location-negation production with the natural short answer No, I'm not.; not an independent human or learner test.",
     "dimensions": {
       "englishNaturalness": {
-        "score": 4,
-        "evidence": "Are you in room two? / No, I'm not. and Can you help in room two? / Yes. are natural short coordination exchanges; I'm not in room one/two is acceptable when room numbers function as known labels."
+        "score": 5,
+        "evidence": "Are you in room two? / No, I'm not. is a natural adjacency pair, and Can you help me? / Sure. preserves a plausible neighbor coordination exchange."
       },
       "persianMeaningQuality": {
         "score": 5,
-        "evidence": "Persian clearly expresses first-person location negation and the help request while keeping room labels and the negative meaning explicit."
+        "evidence": "Persian clearly expresses the wrong location guess, negative answer and help request without adding an unnatural full negative sentence."
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "Not is the only new word and I am not/I'm not is bounded to first-person negation, while room, one, two and help are explicit reviews."
+        "evidence": "not is the only new lexical target and the scored form is the high-value No, I'm not. response rather than a sentence created only for a validator."
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "The response-choice contrasts the natural negative reply with affirmation and an unrelated request formula; comprehension also requires distinguishing room one from room two."
+        "evidence": "Choices contrast a negative answer, affirmation and room selection, so each error maps to a different communicative intent."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "Two known neighbors coordinating room setup naturally need to check location before asking for help; the exchange remains intentionally compact for A1."
+        "evidence": "Nora checking Owen's location before asking for help is a plausible short coordination call between established neighbors."
       },
       "difficultyFit": {
-        "score": 4,
-        "evidence": "The new negation pattern is introduced with familiar room labels and a previously known help request, keeping lexical and grammatical load controlled."
+        "score": 5,
+        "evidence": "The Lesson now isolates first-person be-negation in a short answer and avoids simultaneously teaching a new full location-negation construction."
       },
       "repetitionUsefulness": {
-        "score": 5,
-        "evidence": "Room one/two and help return after delay in a different communicative function, and the final task changes the room filler rather than repeating one memorized sentence."
+        "score": 4,
+        "evidence": "Room one/two provide changed question contexts while the learner practices the same useful negative response, and help returns naturally after delay."
       },
       "transferQuality": {
         "score": 5,
-        "evidence": "The lesson moves room-number language from choosing/identifying a room into correcting a false location guess and requires unseen recombination with room two in final retrieval."
+        "evidence": "Transfer is demonstrated by changing the guessed room in the question while preserving the natural answer function; generativity no longer depends on artificial full negative sentences."
       },
       "overallCoherence": {
         "score": 5,
-        "evidence": "The production spec, story, negative grammar, known room vocabulary, help review and changed-filler retrieval form one coherent coordination mini-story."
+        "evidence": "Scenario, grammar target, dialogue, comprehension, reconstruction and hidden retrieval all center on rejecting an incorrect guess naturally."
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Static model/editor review only; help paths and bounded speech are present, but no real learner has tested whether the room-label context or negative-response timing feels effortless."
+        "evidence": "Static review only; the flow is simpler and more natural, but real learner timing, room-language fatigue and speech-recognition behavior remain untested."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
-      "The lesson establishes only first-person be-negation, not general negation across persons or verbs.",
-      "Room-number naturalness depends on treating Room one/Room two as known labels in the building scenario.",
+      "The Lesson establishes only a bounded first-person negative short answer, not general negation.",
       "Final ElevenLabs prosody and delayed retention remain unmeasured."
     ],
     "resolvedFindings": [
-      "The lesson is generated from immutable production curriculum spec en-fa-A1-LESSON-SPEC-0025 rather than ad-hoc target selection.",
-      "Room, one and two remain independent word units; room-number phrases are constructions/context, not word-table entries.",
-      "The final hidden-answer task changes the room filler to demonstrate generativity instead of chunk memorization.",
-      "A dedicated audio-required learner model Turn now matches the final room-two retrieval exactly, instead of pointing at the room-one reconstruction model."
+      "Removed I'm not in room one/two as required scored production because those sentences were being generated mainly to satisfy filler variation.",
+      "Generativity now comes from changed question context while No, I'm not. remains the natural response.",
+      "The familiar help request is preserved without the less-natural Can you help in room two? wording."
     ],
     "status": "PASS",
-    "average": 4.4,
+    "average": 4.5,
     "errors": []
   },
   "metrics": {
     "targetLexicalItems": 1,
     "targetConstructions": 2,
     "activities": 6,
-    "learnerTurns": 4,
+    "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "23c5eadf9c254bf0259e5b039b7225a9dd9a0c010ef84d6f4e9d664e274b7f3e"
+  "sourceHash": "dd0e4d190ac2f7aa92f06eede09a7f6c750feee819882001bcc19d6016325a68"
 }

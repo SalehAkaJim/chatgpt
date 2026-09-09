@@ -7,7 +7,54 @@
   "enforced": false,
   "status": "PASS",
   "errors": [],
-  "warnings": [],
-  "items": [],
-  "sourceHash": "6aa51722535788015ce87d7985f210553e3492b4d039c4a66eea17473c7720f2"
+  "warnings": [
+    "EN-A1-L-0017: legacy target word EN-LEX-ON-DAY-01 has no exact production reference match"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-ON-DAY-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "on",
+      "partOfSpeech": "preposition",
+      "selectedReferenceKey": null,
+      "status": "no_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-F134FBB224795A6A216F"
+      ],
+      "reviewOnlyCandidates": [
+        {
+          "referenceKey": "EN-REF-F134FBB224795A6A216F",
+          "qualityScore": 30,
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "flags": [
+            "missing_english_definition",
+            "missing_persian_translation",
+            "profile_only_no_dictionary_sense"
+          ]
+        }
+      ]
+    },
+    {
+      "lexicalKey": "EN-LEX-MONDAY-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "monday",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-511B8AEB352146D3828E",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-511B8AEB352146D3828E"
+      ],
+      "referenceTranslationsFa": [
+        "دوشنبه"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-511B8AEB352146D3828E",
+        "translationFa": "دوشنبه"
+      }
+    }
+  ],
+  "sourceHash": "04f08d17b6aae4b5f11402ce698698795acfbda7d3ab34b6c69c3cc25e21aa18"
 }

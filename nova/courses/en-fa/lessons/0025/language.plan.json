@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0025",
   "sortOrder": 25,
   "levelKey": "A1",
-  "lessonSourceHash": "23c5eadf9c254bf0259e5b039b7225a9dd9a0c010ef84d6f4e9d664e274b7f3e",
+  "lessonSourceHash": "dd0e4d190ac2f7aa92f06eede09a7f6c750feee819882001bcc19d6016325a68",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "constructionKey": "EN-CONSTR-IM-NOT-IN-PLACE",
-      "form": "I'm not in + place.",
+      "constructionKey": "EN-CONSTR-NO-IM-NOT",
+      "form": "No, I'm not.",
       "kind": "cefrj_grammar_backed",
       "status": "PASS",
       "bestGrammarMatch": {
@@ -216,47 +216,13 @@
       "fallback": null
     },
     {
-      "query": "i'm not in",
+      "query": "no i'm not",
       "kind": "construction",
       "lessonKeys": [
         "EN-A1-L-0025"
       ],
       "constructionKeys": [
-        "EN-CONSTR-IM-NOT-IN-PLACE"
-      ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "i am not",
-      "examples": [
-        {
-          "id": 2379436,
-          "text": "I am not.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13965920,
-          "text": "I am not here.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Leglaine"
-        },
-        {
-          "id": 13897324,
-          "text": "I am not exhausted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "kylewii"
-        }
-      ],
-      "fallback": null
-    },
-    {
-      "query": "no i'm not",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0025"
+        "EN-CONSTR-NO-IM-NOT"
       ],
       "lexicalLemmas": [
         "not"
@@ -289,52 +255,12 @@
       ],
       "fallback": {
         "query": "no i'm not",
-        "rationale": "A short No, I'm not. reply is the direct first-person negative answer to the immediately preceding Are you ...? question; the lesson keeps the meaning and discourse function explicit and bounded."
-      }
-    },
-    {
-      "query": "i'm not in room",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0025"
-      ],
-      "lexicalLemmas": [
-        "not"
-      ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "i am not",
-      "examples": [
-        {
-          "id": 2379436,
-          "text": "I am not.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13965920,
-          "text": "I am not here.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Leglaine"
-        },
-        {
-          "id": 13897324,
-          "text": "I am not exhausted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "kylewii"
-        }
-      ],
-      "fallback": {
-        "query": "i'm not in room",
-        "rationale": "I'm not in room + number is a transparent A1 location negation built from the CEFR-J I am not pattern and previously taught room-number components; Naturalness and Generativity gates also test the changed room filler."
+        "rationale": "A short No, I'm not. reply is the direct natural first-person negative answer to the immediately preceding Are you ...? question. The Lesson intentionally does not force a longer negative sentence merely to demonstrate filler changes."
       }
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "543ef7de6ffcde457e113be9b471c3986901ba6ce3033dd78c8f55246060e773"
+  "planHash": "fa792eac107fb8d67eb04ff263b55b837221d9ec6265681b5d80d141d8129c76"
 }

@@ -3,7 +3,7 @@
   "courseCode": "en-fa",
   "levelKey": "A1",
   "generatedLessonsMode": "auto",
-  "generatedLessonCount": 27,
+  "generatedLessonCount": 28,
   "generatedLessons": [
     1,
     2,
@@ -31,12 +31,13 @@
     24,
     25,
     26,
-    27
+    27,
+    28
   ],
-  "lastLessonSortOrder": 27,
-  "nextLessonSortOrder": 28,
-  "nextSpecPath": "nova/curriculum/en-fa/specs/0028.json",
-  "nextSpecHash": "24cc3bfee91230dcfef8d77abb51f4dc4d85d072001b2e94e7c885d70902f119",
+  "lastLessonSortOrder": 28,
+  "nextLessonSortOrder": 29,
+  "nextSpecPath": "nova/curriculum/en-fa/specs/0029.json",
+  "nextSpecHash": "0c76d6bc931866a1967885017cd8d6090ddb5d02a0bf2bdad4624f35e4d63701",
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
   "languagePlans": [
@@ -199,10 +200,10 @@
       "sortOrder": 14,
       "status": "PASS",
       "warnings": [
-        "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
-        "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
+        "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
+        "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
@@ -242,12 +243,11 @@
       "sortOrder": 17,
       "status": "PASS",
       "warnings": [
-        "EN-A1-L-0017: construction EN-CONSTR-WHAT-DAY has no confident CEFR-J grammar match",
-        "EN-A1-L-0017: construction EN-CONSTR-ON-MONDAY has no confident CEFR-J grammar match"
+        "EN-A1-L-0017: construction EN-CONSTR-WHAT-DAY has no confident CEFR-J grammar match"
       ],
       "errors": [],
       "grammarEvidenceCount": 2,
-      "lexicalEvidenceCount": 0,
+      "lexicalEvidenceCount": 2,
       "usageEvidenceCount": 1
     },
     {
@@ -340,7 +340,7 @@
       "errors": [],
       "grammarEvidenceCount": 2,
       "lexicalEvidenceCount": 5,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0026",
@@ -361,6 +361,16 @@
       "grammarEvidenceCount": 2,
       "lexicalEvidenceCount": 1,
       "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0028",
+      "sortOrder": 28,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 0,
+      "usageEvidenceCount": 1
     }
   ],
   "curriculumSpecReports": [
@@ -396,6 +406,17 @@
       "sortOrder": 27,
       "specKey": "en-fa-A1-LESSON-SPEC-0027",
       "specHash": "891b28463e9bf059759a7ed3f6668e72c713e239b2a93c4e7678c01fb48129c8",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0028",
+      "sortOrder": 28,
+      "specKey": "en-fa-A1-LESSON-SPEC-0028",
+      "specHash": "24cc3bfee91230dcfef8d77abb51f4dc4d85d072001b2e94e7c885d70902f119",
       "enforced": true,
       "status": "PASS",
       "errors": [],

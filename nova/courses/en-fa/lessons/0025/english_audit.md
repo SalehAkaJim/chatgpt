@@ -1,4 +1,4 @@
-<!-- sourceHash: 23c5eadf9c254bf0259e5b039b7225a9dd9a0c010ef84d6f4e9d664e274b7f3e -->
+<!-- sourceHash: dd0e4d190ac2f7aa92f06eede09a7f6c750feee819882001bcc19d6016325a68 -->
 # English Audit — EN-A1-L-0025
 
 **Lesson:** No, I'm not
@@ -27,28 +27,21 @@ No, I'm not.
 
 **T03 · nora**
 
-Can you help in room two?
+Can you help me?
 
 **T04 · owen**
 
-Yes.
+Sure.
 
-- **Speech target:** Yes.
-- **Accepted speech:** Yes.
+- **Speech target:** Sure.
+- **Accepted speech:** Sure.
 
 **T05 · owen**
 
-I'm not in room one.
+No, I'm not.
 
-- **Speech target:** I'm not in room one.
-- **Accepted speech:** I'm not in room one.
-
-**T06 · owen**
-
-I'm not in room two.
-
-- **Speech target:** I'm not in room two.
-- **Accepted speech:** I'm not in room two.
+- **Speech target:** No, I'm not.
+- **Accepted speech:** No, I'm not.
 
 ## Activities
 
@@ -60,13 +53,13 @@ I'm not in room two.
 
 **A03 · comprehension**
 
-- **options:** اتاق یک | اتاق دو | کافه
+- **options:** نه، اوون آنجا نیست | بله، اوون در اتاق دو است | نورا درباره ساعت می پرسد
 
 **A04 · sentence_order**
 
-- **answerEn:** I'm not in room one.
-- **tokensEn:** room | I'm | one. | in | not
-- **answerTokensEn:** I'm | not | in | room | one.
+- **answerEn:** No, I'm not.
+- **tokensEn:** not. | No, | I'm
+- **answerTokensEn:** No, | I'm | not.
 
 **A05 · response_choice**
 
@@ -74,8 +67,8 @@ I'm not in room two.
 
 **A06 · speak**
 
-- **textEn:** I'm not in room two.
-- **acceptedAnswersEn:** I'm not in room two.
+- **textEn:** No, I'm not.
+- **acceptedAnswersEn:** No, I'm not.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

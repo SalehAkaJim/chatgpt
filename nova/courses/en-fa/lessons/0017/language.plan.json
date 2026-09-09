@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0017",
   "sortOrder": 17,
   "levelKey": "A1",
-  "lessonSourceHash": "6aa51722535788015ce87d7985f210553e3492b4d039c4a66eea17473c7720f2",
+  "lessonSourceHash": "04f08d17b6aae4b5f11402ce698698795acfbda7d3ab34b6c69c3cc25e21aa18",
   "enforceFromSortOrder": 25,
   "enforced": false,
   "grammarEvidence": [
@@ -26,13 +26,56 @@
     {
       "constructionKey": "EN-CONSTR-ON-MONDAY",
       "form": "On Monday.",
-      "kind": "nova_construction",
-      "status": "REVIEW",
+      "kind": "lexical_frame",
+      "status": "PASS",
       "bestGrammarMatch": null,
       "alternatives": []
     }
   ],
-  "lexicalEvidence": [],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-ON-DAY-01",
+      "lemma": "on",
+      "role": "target",
+      "referenceKey": null,
+      "spokenPriority": {
+        "lemma": "on",
+        "spokenRank": 23,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AA1 N",
+        "arpabet": [
+          "AA1 N",
+          "AO1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-MONDAY-01",
+      "lemma": "monday",
+      "role": "target",
+      "referenceKey": "EN-REF-511B8AEB352146D3828E",
+      "spokenPriority": {
+        "lemma": "monday",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M AH1 N D IY0",
+        "arpabet": [
+          "M AH1 N D IY0",
+          "M AH1 N D EY2"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
   "usageEvidence": [
     {
       "query": "on monday",
@@ -42,6 +85,10 @@
       ],
       "constructionKeys": [
         "EN-CONSTR-ON-MONDAY"
+      ],
+      "lexicalLemmas": [
+        "monday",
+        "on"
       ],
       "status": "corpus_evidence",
       "sampleCount": 5,
@@ -73,10 +120,9 @@
     }
   ],
   "warnings": [
-    "EN-A1-L-0017: construction EN-CONSTR-WHAT-DAY has no confident CEFR-J grammar match",
-    "EN-A1-L-0017: construction EN-CONSTR-ON-MONDAY has no confident CEFR-J grammar match"
+    "EN-A1-L-0017: construction EN-CONSTR-WHAT-DAY has no confident CEFR-J grammar match"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "547f4a982853aab02a988edce0d6bc833b10a91a12045276a4bb37db00390230"
+  "planHash": "2c649e924ba2316c01a6f15e1ebc56f9471ead6da0474fe97f7ea4fa94a09430"
 }

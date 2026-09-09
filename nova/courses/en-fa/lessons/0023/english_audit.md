@@ -1,7 +1,7 @@
-<!-- sourceHash: 6ddbf11d8a0a834ec9f74abccbf43611de417a10339dc7b7ec3ea4e8091731a8 -->
+<!-- sourceHash: 1b26eaecf33c224094b1223446ce1cf5a8233a5204ea7d31dedd550b48d58ad7 -->
 # English Audit — EN-A1-L-0023
 
-**Lesson:** I read books
+**Lesson:** Do you read books?
 **Outcome:** A1-INTERACTION-READ-BOOKS
 
 ## Lexical items
@@ -13,21 +13,47 @@
 
 **T01 · leo**
 
-Do you read books?
+Hi, Liam. Book club?
 
 **T02 · liam**
+
+Yes.
+
+- **Speech target:** Yes.
+- **Accepted speech:** Yes.
+
+**T03 · leo**
+
+Do you read books?
+
+**T04 · liam**
 
 Yes. I read books.
 
 - **Speech target:** Yes. I read books.
-- **Accepted speech:** Yes. I read books.
+- **Accepted speech:** Yes. I read books. | I read books.
 
-**T03 · liam**
+**T05 · leo**
 
-I read books.
+Nice!
 
-- **Speech target:** I read books.
-- **Accepted speech:** I read books.
+**T06 · liam**
+
+Do you read books?
+
+- **Speech target:** Do you read books?
+- **Accepted speech:** Do you read books?
+
+**T07 · leo**
+
+Yes.
+
+**T08 · liam**
+
+Yes. I read books.
+
+- **Speech target:** Yes. I read books.
+- **Accepted speech:** Yes. I read books. | I read books.
 
 ## Activities
 
@@ -39,13 +65,13 @@ I read books.
 
 **A03 · comprehension**
 
-- **options:** کتاب خواندن | کتاب داشتن | کتاب پیدا کردن
+- **options:** کتاب خواندن | کتاب داشتن | کتاب خواستن
 
 **A04 · sentence_order**
 
-- **answerEn:** I read books.
-- **tokensEn:** books. | read | I
-- **answerTokensEn:** I | read | books.
+- **answerEn:** Do you read books?
+- **tokensEn:** books? | you | read | Do
+- **answerTokensEn:** Do | you | read | books?
 
 **A05 · response_choice**
 
@@ -53,8 +79,8 @@ I read books.
 
 **A06 · speak**
 
-- **textEn:** I read books.
-- **acceptedAnswersEn:** I read books.
+- **textEn:** Yes. I read books.
+- **acceptedAnswersEn:** Yes. I read books. | I read books.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

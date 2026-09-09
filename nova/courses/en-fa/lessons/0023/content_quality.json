@@ -1,99 +1,87 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0023",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "i read books",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0023",
-    "sourceHash": "6ddbf11d8a0a834ec9f74abccbf43611de417a10339dc7b7ec3ea4e8091731a8",
+    "sourceHash": "1b26eaecf33c224094b1223446ce1cf5a8233a5204ea7d31dedd550b48d58ad7",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
     "reviewerType": "model",
     "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of the current Lesson 0023 source; not an independent human or learner test.",
+    "scope": "Model/editor review after rewriting the reading exchange around an actual book-club entry context; not an independent human or learner test.",
     "dimensions": {
       "englishNaturalness": {
-        "score": 4,
-        "evidence": "Do you read books? / Yes. I read books. is grammatical and natural enough for early A1, though deliberately more textbook-like than a richer real-world exchange."
+        "score": 5,
+        "evidence": "Book club? establishes why Leo asks Do you read books?, the learner answers that question directly, and then asks it back instead of reciting an isolated textbook sentence."
       },
       "persianMeaningQuality": {
         "score": 5,
-        "evidence": "Persian consistently expresses reading activity rather than possession or desire and matches the intended written-text sense of read."
+        "evidence": "Persian consistently distinguishes reading from having or wanting a book and keeps the support dialogue colloquial."
       },
       "pedagogicalClarity": {
-        "score": 4,
-        "evidence": "One new verb is introduced with a familiar noun domain and a matching statement/question pair; the boundary explicitly excludes tense and frequency contrasts."
+        "score": 5,
+        "evidence": "read is the only new lexical target; the familiar book domain and known Do you ...? shape keep the learning delta explicit."
       },
       "distractorQuality": {
         "score": 5,
-        "evidence": "Read, have and want contrasts reuse recently learned verbs around the same book noun, making distractors semantically close and diagnostically useful."
+        "evidence": "The semantic contrast between read, have and want uses the same book domain, so errors diagnose verb meaning rather than unrelated vocabulary recognition."
       },
       "dialoguePlausibility": {
-        "score": 3,
-        "evidence": "A library pair asking Do you read books? is plausible but somewhat textbook-like and less context-rich than the surrounding Nova mini-stories; it remains acceptable at this early A1 stage."
+        "score": 4,
+        "evidence": "A short reading question is plausible at entry to an established book-club event and now has a concrete conversational reason."
       },
       "difficultyFit": {
         "score": 4,
-        "evidence": "The known book domain and simple present form keep cognitive load controlled while introducing read and the related do-question."
+        "evidence": "One new verb plus one familiar question pattern is appropriate at this point in A1, while frequency and tense remain explicitly out of scope."
       },
       "repetitionUsefulness": {
         "score": 4,
-        "evidence": "Book is retrieved again but now as the object of reading rather than possession, location or ownership."
+        "evidence": "read appears in listening, reciprocal dialogue, question reconstruction, semantic contrast and a hidden natural answer without adding another noun domain."
       },
       "transferQuality": {
         "score": 5,
-        "evidence": "The activity set explicitly contrasts I read books with I have a book and I want a book, requiring semantic transfer across known verb frames."
+        "evidence": "The learner transfers the Do you ...? shape from have to read and then moves between asking the question and answering it."
       },
       "overallCoherence": {
-        "score": 4,
-        "evidence": "Library setting, read sense, comprehension, verb contrast and final retrieval consistently support the reading-activity outcome."
+        "score": 5,
+        "evidence": "The continued Monday book-club story, target sense, reciprocal dialogue and all scored tasks support one reading-activity outcome."
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Static review only. The lesson is clear and short, but its relatively textbook-like dialogue should be watched in learner testing and no retention data exists."
+        "evidence": "Static review only; the exchange is less textbook-like than before, but real learner timing, speech recognition and delayed retention are still unmeasured."
       }
     },
     "learnerTested": false,
     "limitations": [
-      "No independent human review or learner test has been performed.",
-      "Dialogue naturalness is acceptable but intentionally textbook-like; future lessons should broaden read into more contextual exchanges rather than repeat this form.",
-      "The lesson does not establish frequency, tense contrast or broader reading vocabulary."
+      "No independent human or real learner test has been performed.",
+      "The Lesson does not establish reading frequency, tense contrast or broader reading vocabulary.",
+      "Final ElevenLabs prosody and delayed retention remain unmeasured."
     ],
     "resolvedFindings": [
-      "Read is locked to the written-text interpretation Reference sense.",
-      "The response-choice uses the same noun with read/have/want to test meaning rather than surface vocabulary.",
-      "Assessment language explicitly limits claims to the bounded reading-activity statement."
+      "The previous context-light Do you read books? exchange now occurs at an actual book-club entry point.",
+      "The learner asks the reading question back, making the exchange reciprocal instead of one-directional textbook practice.",
+      "Final retrieval is now a natural answer to Do you read books? rather than an isolated sentence recital."
     ],
     "status": "PASS",
-    "average": 4.1,
+    "average": 4.5,
     "errors": []
   },
   "metrics": {
     "targetLexicalItems": 1,
     "targetConstructions": 2,
     "activities": 6,
-    "learnerTurns": 2,
+    "learnerTurns": 4,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "6ddbf11d8a0a834ec9f74abccbf43611de417a10339dc7b7ec3ea4e8091731a8"
+  "sourceHash": "1b26eaecf33c224094b1223446ce1cf5a8233a5204ea7d31dedd550b48d58ad7"
 }

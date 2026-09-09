@@ -104,10 +104,32 @@
       "constructionKeys": [
         "EN-CONSTR-SHE-IS-NAME"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "he is",
+      "examples": [
+        {
+          "id": 13788367,
+          "text": "He is fantastic.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Just_Balls"
+        },
+        {
+          "id": 13627422,
+          "text": "He is addicted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ahmd"
+        },
+        {
+          "id": 13530112,
+          "text": "He is Amazigh.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Abdaresrif"
+        }
+      ],
       "fallback": null
     },
     {
@@ -119,15 +141,37 @@
       "constructionKeys": [
         "EN-CONSTR-HE-IS-NAME"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "he is",
+      "examples": [
+        {
+          "id": 13788367,
+          "text": "He is fantastic.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Just_Balls"
+        },
+        {
+          "id": 13627422,
+          "text": "He is addicted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ahmd"
+        },
+        {
+          "id": 13530112,
+          "text": "He is Amazigh.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Abdaresrif"
+        }
+      ],
       "fallback": null
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "1355befa7ae839357694ec5241805e43781c0ebaf01f17d6687b6858a43fc3d4"
+  "planHash": "25ce97743622859b9af0dedd409893f81acc9a7db97473e2670984ca8fbaaedb"
 }
