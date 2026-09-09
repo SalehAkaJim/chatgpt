@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "en-fa-2026-09-09-source-driven-v1",
+  "courseCode": "en-fa",
+  "createdAt": "2026-09-09T07:26:35Z",
+  "kind": "language-reference-snapshot",
+  "status": "validated",
+  "qualityThreshold": 90,
+  "storageModel": "immutable-git-commit-pointer",
+  "git": {
+    "repository": "SalehAkaJim/chatgpt",
+    "branchAtCapture": "test/content-factory-from-lesson-1",
+    "commit": "aa98b8f3cc15b7488c8f7dadc76294fc592736b2"
+  },
+  "canonicalRoot": "nova/reference/en-fa",
+  "controlFiles": {
+    "manifest": {
+      "path": "nova/reference/en-fa/manifest.json",
+      "gitBlobSha": "041e7ab0fc1fd23d161a529c886c3ee2f14c8a29"
+    },
+    "extensionsManifest": {
+      "path": "nova/reference/en-fa/extensions_manifest.json",
+      "gitBlobSha": "1222c7efb46f2413f4c8ab3989753e740aec76f4"
+    },
+    "sourcesLock": {
+      "path": "nova/reference/en-fa/sources.lock.json",
+      "gitBlobSha": "4677620fb62e1526a695c6fcddb7c932c6aefb9c"
+    }
+  },
+  "dataFamilies": {
+    "lexical": [
+      "nova/reference/en-fa/lexical/A1.json",
+      "nova/reference/en-fa/lexical/A2.json",
+      "nova/reference/en-fa/lexical/B1.json",
+      "nova/reference/en-fa/lexical/B2.json",
+      "nova/reference/en-fa/lexical/C1.json",
+      "nova/reference/en-fa/lexical/C2.json"
+    ],
+    "grammar": [
+      "nova/reference/en-fa/grammar/A1.json",
+      "nova/reference/en-fa/grammar/A2.json",
+      "nova/reference/en-fa/grammar/B1.json",
+      "nova/reference/en-fa/grammar/B2.json",
+      "nova/reference/en-fa/grammar/C1.json",
+      "nova/reference/en-fa/grammar/C2.json"
+    ],
+    "pronunciation": [
+      "nova/reference/en-fa/pronunciation/cmudict.json"
+    ],
+    "spokenFrequency": [
+      "nova/reference/en-fa/frequency/ngsl_spoken.json"
+    ],
+    "usage": [
+      "nova/reference/en-fa/usage/tatoeba.json"
+    ],
+    "coverage": [
+      "nova/reference/en-fa/lesson_coverage.json"
+    ]
+  },
+  "sourceLocks": {
+    "openjam": {
+      "commit": "e05622665494f18d414190b5f738dc1eb4b414fa"
+    },
+    "cefrj": {
+      "commit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+    },
+    "cmudict": {
+      "commit": "74790861f652b15e4ac49015a90074ad62a27690"
+    },
+    "ngslSpoken": {
+      "datasetVersion": "1.2",
+      "sourceSha256": "07708940c50a07cac4f507fd1e87bdd50081d7b87713a66a99beb3c8c4d11ac8"
+    },
+    "tatoeba": {
+      "snapshotPolicy": "query-and-pin-sentence-ids"
+    }
+  },
+  "summary": {
+    "referenceRecords": 37687,
+    "curriculumEligible": 16436,
+    "productionEligible": 13284,
+    "pronunciationMatchedLemmas": 7975,
+    "spokenFrequencyItems": 721,
+    "usageQueries": 54,
+    "usageQueriesWithEvidence": 40,
+    "usageUnavailableQueries": 0
+  },
+  "reuse": {
+    "recommended": "Resolve every file from git.commit; do not read mutable branch HEAD when exact reproducibility matters.",
+    "example": "git show aa98b8f3cc15b7488c8f7dadc76294fc592736b2:nova/reference/en-fa/lexical/A1.json"
+  }
+}
