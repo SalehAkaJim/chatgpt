@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0031",
+  "sortOrder": 31,
+  "levelKey": "A1",
+  "lessonSourceHash": "49c291036eb211b8e2c325f53dd81f912b6e7c651a79489af12ac25e5627d0fc",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-THIS-IS-MY-ITEM",
+      "form": "This is my book.",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    },
+    {
+      "constructionKey": "EN-CONSTR-THAT-IS-YOUR-ITEM",
+      "form": "That is your pen.",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-PEN-01",
+      "lemma": "pen",
+      "role": "review",
+      "referenceKey": "EN-REF-E7158161767216455400",
+      "spokenPriority": {
+        "lemma": "pen",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P EH1 N",
+        "arpabet": [
+          "P EH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this is my book",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0031"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-THIS-IS-MY-ITEM"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this is my book",
+        "rationale": "This is my book is a transparent early-A1 demonstrative + be statement using previously taught my and book."
+      }
+    },
+    {
+      "query": "that is your pen",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0031"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-THAT-IS-YOUR-ITEM"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "that is your pen",
+        "rationale": "That is your pen transfers the same demonstrative + be pattern to that with previously taught your and pen."
+      }
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0031: construction EN-CONSTR-THIS-IS-MY-ITEM has no confident CEFR-J grammar match",
+    "EN-A1-L-0031: construction EN-CONSTR-THAT-IS-YOUR-ITEM has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "4fb1f12674543ba749f1f5ff12c2008c1dc206c6cb33a1789ee73828acbb20c7"
+}

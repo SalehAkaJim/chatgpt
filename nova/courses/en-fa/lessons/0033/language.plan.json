@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0033",
+  "sortOrder": 33,
+  "levelKey": "A1",
+  "lessonSourceHash": "6fc8551d1be11e17947116ada2bbc74cd6541be20050728f7c4cd4a86b216d7c",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-PEOPLE-LIKE-COFFEE",
+      "form": "People like coffee.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    },
+    {
+      "constructionKey": "EN-CONSTR-PEOPLE-READ-BOOKS",
+      "form": "People read books.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-PEOPLE-01",
+      "lemma": "people",
+      "role": "target",
+      "referenceKey": "EN-REF-457C441FDB6DEC1BED1E",
+      "spokenPriority": {
+        "lemma": "people",
+        "spokenRank": 66,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P IY1 P AH0 L",
+        "arpabet": [
+          "P IY1 P AH0 L"
+        ],
+        "stressPattern": "10"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-COFFEE-01",
+      "lemma": "coffee",
+      "role": "review",
+      "referenceKey": "EN-REF-DF86C36C215439FDE741",
+      "spokenPriority": {
+        "lemma": "coffee",
+        "spokenRank": null,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "low_or_unknown"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K AA1 F IY0",
+        "arpabet": [
+          "K AA1 F IY0",
+          "K AO1 F IY0"
+        ],
+        "stressPattern": "10"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-READ-01",
+      "lemma": "read",
+      "role": "review",
+      "referenceKey": "EN-REF-F4E87C743D4964D90BCD",
+      "spokenPriority": {
+        "lemma": "read",
+        "spokenRank": 153,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R EH1 D",
+        "arpabet": [
+          "R EH1 D",
+          "R IY1 D"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "people like coffee",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0033"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-PEOPLE-LIKE-COFFEE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "people read books",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0033"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-PEOPLE-READ-BOOKS"
+      ],
+      "lexicalLemmas": [
+        "people"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "people read books",
+        "rationale": "People read books transfers the same human-group noun to a second previously taught verb+noun frame."
+      }
+    },
+    {
+      "query": "do people like coffee",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0033"
+      ],
+      "lexicalLemmas": [
+        "people"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "do people like coffee",
+        "rationale": "Do people like coffee? is support language that naturally elicits the lexical target people in a familiar like-coffee frame."
+      }
+    },
+    {
+      "query": "yes people like coffee",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0033"
+      ],
+      "lexicalLemmas": [
+        "people"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes people like coffee",
+        "rationale": "Yes. People like coffee keeps the selected human-group sense of people with previously taught like and coffee."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "397faeac44f3930cb7e99a7c15163c30ecff7895c3717c7f838f9da78ae77c19"
+}

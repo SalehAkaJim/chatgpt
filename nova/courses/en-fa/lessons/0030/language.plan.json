@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0030",
+  "sortOrder": 30,
+  "levelKey": "A1",
+  "lessonSourceHash": "40c9fdb4705d591f36c8c3a510abb600499f5201350e537aa793cc1f34a4acc8",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-THIS-TIME-I-READ",
+      "form": "This time, I read.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    },
+    {
+      "constructionKey": "EN-CONSTR-THIS-TIME-I-READ-BOOKS",
+      "form": "This time, I read books.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-TIME-01",
+      "lemma": "time",
+      "role": "target",
+      "referenceKey": "EN-REF-129CF40E43D414BBF26F",
+      "spokenPriority": {
+        "lemma": "time",
+        "spokenRank": 65,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T AY1 M",
+        "arpabet": [
+          "T AY1 M"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-READ-01",
+      "lemma": "read",
+      "role": "review",
+      "referenceKey": "EN-REF-F4E87C743D4964D90BCD",
+      "spokenPriority": {
+        "lemma": "read",
+        "spokenRank": 153,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R EH1 D",
+        "arpabet": [
+          "R EH1 D",
+          "R IY1 D"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this i read",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0030"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-THIS-TIME-I-READ"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "this i read books",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0030"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-THIS-TIME-I-READ-BOOKS"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i read books",
+      "examples": [
+        {
+          "id": 1001623,
+          "text": "I read books.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Nihonkage"
+        },
+        {
+          "id": 13706909,
+          "text": "I read books every day.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 12332167,
+          "text": "I read books at night.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Aghanim"
+        }
+      ],
+      "fallback": null
+    },
+    {
+      "query": "this time i read",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0030"
+      ],
+      "lexicalLemmas": [
+        "time"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this time i read",
+        "rationale": "This time, I read is a transparent turn-taking use of time in the selected 'this occasion' sense with read already taught."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "cbd00ad49234d3369b1391edbb0dd47372f9715faaa8ce858f3cf4fd0410c2ca"
+}

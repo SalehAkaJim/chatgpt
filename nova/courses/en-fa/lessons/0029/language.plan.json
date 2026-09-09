@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0029",
+  "sortOrder": 29,
+  "levelKey": "A1",
+  "lessonSourceHash": "2c79864e4fb3ea4ad9ed985c731a2bd53345f9c4c4096b107f68c1dbd74df337",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-JUST-ONE-BOOK",
+      "form": "Just one book, please.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    },
+    {
+      "constructionKey": "EN-CONSTR-JUST-ONE",
+      "form": "Just one, please.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-JUST-01",
+      "lemma": "just",
+      "role": "target",
+      "referenceKey": "EN-REF-A098E62586DE3D66DADA",
+      "spokenPriority": {
+        "lemma": "just",
+        "spokenRank": 35,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "JH AH1 S T",
+        "arpabet": [
+          "JH AH1 S T",
+          "JH IH0 S T"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-BOOK-01",
+      "lemma": "book",
+      "role": "review",
+      "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185",
+      "spokenPriority": {
+        "lemma": "book",
+        "spokenRank": 222,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B UH1 K",
+        "arpabet": [
+          "B UH1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "just one book please",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0029"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-JUST-ONE-BOOK"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "just one please",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0029"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-JUST-ONE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "just one book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0029"
+      ],
+      "lexicalLemmas": [
+        "just"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "just one book",
+        "rationale": "Just one book is a transparent A1 quantity-limiting use of just in the selected 'and nothing more' sense, with one and book already familiar."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "9a13d66cbf76eb6957a6c3086fed2441d9d943199d8642c6b418315dde1fbc6e"
+}
