@@ -10,8 +10,8 @@
   },
   "queryLimit": 80,
   "circuitOpened": false,
-  "queryCount": 59,
-  "evidenceQueryCount": 45,
+  "queryCount": 60,
+  "evidenceQueryCount": 46,
   "unavailableQueryCount": 0,
   "queries": [
     {
@@ -2050,6 +2050,56 @@
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "Aghanim"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "they are from",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0028"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-THEY-ARE-FROM-PLACE"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22they+are+from%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 12073144,
+          "text": "They are from Russia.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ergulis"
+        },
+        {
+          "id": 10275114,
+          "text": "They are from Finland.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LimeGreenTeknii"
+        },
+        {
+          "id": 9988830,
+          "text": "They are from here.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 3125924,
+          "text": "They are from Italy.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CN"
+        },
+        {
+          "id": 10344282,
+          "text": "They are from Rima's school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
         }
       ],
       "sampleCount": 5,
