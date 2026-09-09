@@ -80,6 +80,37 @@ jobs:
       - name: Install Node dependencies
         timeout-minutes: 5
         run: npm ci --prefix nova/_assistant/content-system-v1/tools --no-audit --no-fund
+      - name: Integrate ready staged wave into this production run
+        shell: bash
+        run: |
+          WAVE=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          lessons = Path('nova/courses/en-fa/lessons')
+          current = sorted(
+              int(p.name) for p in lessons.iterdir()
+              if p.is_dir() and p.name.isdigit() and (p / 'lesson.source.json').exists()
+          )
+          for manifest_path in sorted(Path('nova/curriculum/en-fa/waves').glob('*/wave.json')):
+              manifest = json.load(open(manifest_path, encoding='utf-8'))
+              if manifest.get('status') not in {'PLANNED', 'STAGED'}:
+                  continue
+              if manifest.get('baseGeneratedLessons') != current:
+                  continue
+              packets = manifest.get('packets') or []
+              if packets and all(Path(p['stagingPath']).exists() for p in packets):
+                  print(manifest_path)
+                  break
+          PY
+          )
+          if [ -z "$WAVE" ]; then
+            echo "No ready staged wave for the current canonical prefix."
+          else
+            echo "Integrating ready wave inside production: $WAVE"
+            python nova/_assistant/content-system-v1/tools/factory_wave.py integrate \
+              --repo-root . \
+              --wave "$WAVE"
+          fi
       - name: Run regression tests
         run: |
           python nova/_assistant/content-system-v1/tools/test_content_quality.py
