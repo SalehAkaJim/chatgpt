@@ -1,4 +1,4 @@
-name: Nova Lesson Pilot
+name: Nova Lesson Production
 
 on:
   push:
@@ -9,9 +9,11 @@ on:
       - 'nova/courses/**/audio_voices.json'
       - 'nova/courses/**/lessons/**/lesson.source.json'
       - 'nova/courses/**/lessons/**/pedagogy.review.json'
+      - 'nova/curriculum/**'
       - 'nova/prototype/**'
       - 'nova/calibration/**'
       - 'nova/reference/**'
+      - 'nova/reference-snapshots/**'
       - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
       - 'nova/_assistant/content-system-v1/persian_orthography_exceptions.json'
       - 'nova/_assistant/content-system-v1/content_quality.policy.json'
@@ -19,18 +21,19 @@ on:
       - 'nova/mysql/01_reset_all.sql'
       - 'nova/mysql/02_schema.sql'
       - 'nova/mysql/03_runtime_lesson_query.sql'
+      - 'nova/mysql/04_cleanup_orphan_nonword_lexical_items.sql'
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# One writer owns the shared lexical registry and generated outputs.
+# One writer owns the shared curriculum state, lexical registry and generated outputs.
 concurrency:
-  group: nova-pilot-main
+  group: nova-production-main
   cancel-in-progress: false
 
 jobs:
-  validate-pilot:
+  validate-production:
     runs-on: ubuntu-latest
     services:
       mysql:
@@ -70,6 +73,7 @@ jobs:
           python nova/_assistant/content-system-v1/tools/test_reference_data.py
           python nova/_assistant/content-system-v1/tools/test_reference_catalog.py
           python nova/_assistant/content-system-v1/tools/test_lesson_reference.py
+          python -m unittest -v nova/_assistant/content-system-v1/tools/test_factory_design.py
           python nova/_assistant/content-system-v1/tools/validate_reference_data.py --repo-root . --strict
           python nova/_assistant/content-system-v1/tools/reference_catalog.py --repo-root . --level A1 --limit 3 --recommend > /tmp/nova_reference_smoke.json
           python -c 'import json; p=json.load(open("/tmp/nova_reference_smoke.json")); assert p["count"] > 0'
@@ -79,6 +83,19 @@ jobs:
           python nova/_assistant/content-system-v1/tools/validate_persian_text.py --exceptions nova/_assistant/content-system-v1/persian_orthography_exceptions.json nova/calibration/en-fa/*.json
           node --check nova/prototype/app.js
           node nova/_assistant/content-system-v1/tools/test_prototype.cjs
+      - name: Build source-driven curriculum state and next Lesson spec
+        run: |
+          python nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py \
+            --repo-root . \
+            --course en-fa \
+            --config nova/curriculum/en-fa/factory.config.json \
+            --workspace-dir nova/curriculum/en-fa
+      - name: Enforce Reference, Naturalness, Generativity, Story and quality gates
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py \
+            --repo-root . \
+            --config nova/curriculum/en-fa/factory.config.json \
+            --output nova/curriculum/en-fa/factory_validation.json
       - name: Audit Lesson lexical coverage against reference snapshot
         run: python nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py --repo-root . --output /tmp/nova_reference_lesson_coverage.json
       - name: Build and validate every canonical Lesson
@@ -86,16 +103,18 @@ jobs:
         run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root .
       - name: Import and retrieve all Lessons on MySQL 9.0.1
         run: python nova/_assistant/content-system-v1/tools/validate_runtime.py --repo-root . --database nova_test
-      - name: Refresh evidence-based Pilot status
+      - name: Refresh evidence-based production status
         run: python nova/_assistant/content-system-v1/tools/update_pilot_status.py --repo-root .
-      - name: Retain build evidence
+      - name: Retain production evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: nova-pilot-evidence
+          name: nova-production-evidence
           path: |
             nova/_assistant/content-system-v1/build_report.json
             nova/_assistant/content-system-v1/text_build_report.json
+            nova/curriculum/en-fa/*.json
+            nova/curriculum/en-fa/specs/*.json
             nova/courses/**/lessons/**/*.json
             nova/courses/**/lessons/**/english_audit.md
             nova/courses/**/lessons/**/runtime_smoke.txt
@@ -107,13 +126,13 @@ jobs:
             echo "Inputs changed during this run; the newer queued run will rebuild outputs."
             exit 0
           fi
-          git config user.name "nova-pilot-bot"
-          git config user.email "nova-pilot-bot@users.noreply.github.com"
-          git add nova/courses/ nova/audio/ nova/mysql/ nova/_assistant/content-system-v1/10_status.json nova/_assistant/content-system-v1/build_report.json nova/_assistant/content-system-v1/text_build_report.json
+          git config user.name "nova-production-bot"
+          git config user.email "nova-production-bot@users.noreply.github.com"
+          git add nova/courses/ nova/curriculum/ nova/audio/ nova/mysql/ nova/_assistant/content-system-v1/10_status.json nova/_assistant/content-system-v1/build_report.json nova/_assistant/content-system-v1/text_build_report.json
           if git diff --cached --quiet; then
             echo "No generated changes."
           else
-            git commit -m "Build and validate Nova pilot lessons"
+            git commit -m "Build and validate Nova production lessons"
             git push origin HEAD:main
           fi
       - name: Preserve paid audio checkpoints after a failed build
@@ -124,10 +143,10 @@ jobs:
             echo "Inputs changed; audio checkpoints remain available in the evidence artifact."
             exit 0
           fi
-          git config user.name "nova-pilot-bot"
-          git config user.email "nova-pilot-bot@users.noreply.github.com"
+          git config user.name "nova-production-bot"
+          git config user.email "nova-production-bot@users.noreply.github.com"
           git add nova/audio/ ':(glob)nova/courses/**/audio.manifest.json'
           if ! git diff --cached --quiet; then
-            git commit -m "Checkpoint Nova audio after failed pilot validation"
+            git commit -m "Checkpoint Nova audio after failed production validation"
             git push origin HEAD:main
           fi
