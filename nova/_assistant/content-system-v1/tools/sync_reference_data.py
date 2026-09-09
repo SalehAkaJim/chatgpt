@@ -49,11 +49,8 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
     lock = load_json(root / "sources.lock.json")
     threshold = int(lock.get("qualityThreshold", 90))
 
-    # The production source lock also contains extension sources (CMUdict,
-    # NGSL-Spoken, Tatoeba). This builder owns only the deterministic base
-    # lexical/grammar layer. Extension sources are synced by
-    # sync_language_reference_extensions.py and must never be interpreted as
-    # Openjam/CEFR-J-style GitHub file bundles here.
+    # This builder owns only the deterministic base lexical/grammar layer.
+    # CMUdict, NGSL-Spoken and Tatoeba are handled by the extension sync.
     sources = lock.get("sources", {})
     missing_base = [name for name in BASE_SOURCE_NAMES if name not in sources]
     if missing_base:
@@ -99,7 +96,10 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
 
         by_level: dict[str, list[dict]] = {level: [] for level in LEVELS}
         unplaced: list[dict] = []
-        counts = {"words": len(words), "senses": 0, "records": 0, "profileOnly": 0, "curriculumEligible": 0, "productionEligible": 0, "reviewOnly": 0}
+        counts = {
+            "words": len(words), "senses": 0, "records": 0, "profileOnly": 0,
+            "curriculumEligible": 0, "productionEligible": 0, "reviewOnly": 0,
+        }
         seen_lemma_pos: set[tuple[str, str | None]] = set()
 
         for word in words:
@@ -131,10 +131,10 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                     "translationFaSource": source_translation or None,
                     "exampleFa": (tr.get("example") or "").strip() or None,
                     "frequencyRank": word.get("frequency_rank"),
-                    "cefr": cefr.level,
-                    "cefrSource": cefr.source,
-                    "cefrEvidenceLevels": list(cefr.evidence_levels),
-                    "cefrConflict": cefr.conflict,
+                    "cefr": cefr.get("level"),
+                    "cefrSource": cefr.get("source"),
+                    "cefrEvidenceLevels": list(cefr.get("evidenceLevels") or []),
+                    "cefrConflict": bool(cefr.get("conflict")),
                     "openjamLevel": word.get("level"),
                     "topics": topic_slugs,
                     "sourceType": "openjam_sense",
@@ -149,7 +149,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 }
                 record["qualityScore"], score_flags = score_reference_record(record)
                 record["flags"] = sorted(set(record["flags"] + score_flags))
-                record["curriculumEligible"] = is_curriculum_eligible(record, threshold)
+                record["curriculumEligible"] = is_curriculum_eligible(cefr)
                 record["productionEligible"] = is_production_eligible(record, threshold)
                 if record["curriculumEligible"]:
                     counts["curriculumEligible"] += 1
@@ -158,23 +158,24 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 else:
                     counts["reviewOnly"] += 1
                 seen_lemma_pos.add((lemma, pos))
-                if cefr.level in by_level:
-                    by_level[cefr.level].append(record)
+                level = cefr.get("level")
+                if level in by_level:
+                    by_level[level].append(record)
                 else:
                     unplaced.append(record)
 
-        # Add CEFR profile-only rows so curriculum coverage is not limited to Openjam.
+        # Add profile-only rows so curriculum coverage is not limited to Openjam.
         for profile_row in [*cefrj_rows, *octanove_rows]:
             lemma = normalize_lemma(profile_row.get("lemma"))
             pos = normalize_pos(profile_row.get("partOfSpeech"))
-            level = profile_row.get("level")
-            if not lemma or level not in by_level or (lemma, pos) in seen_lemma_pos:
+            profile_level = profile_row.get("level")
+            if not lemma or profile_level not in by_level or (lemma, pos) in seen_lemma_pos:
                 continue
             counts["records"] += 1
             counts["profileOnly"] += 1
             cefr = resolve_cefr(lemma, pos, None, exact_index, lemma_index)
             record = {
-                "referenceKey": stable_reference_key(lemma, pos, f"profile:{profile_row.get('source')}:{level}"),
+                "referenceKey": stable_reference_key(lemma, pos, f"profile:{profile_row.get('source')}:{profile_level}"),
                 "lemma": lemma,
                 "partOfSpeech": pos,
                 "senseId": None,
@@ -185,10 +186,10 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 "translationFaSource": None,
                 "exampleFa": None,
                 "frequencyRank": None,
-                "cefr": cefr.level or level,
-                "cefrSource": cefr.source or profile_row.get("source"),
-                "cefrEvidenceLevels": list(cefr.evidence_levels) or [level],
-                "cefrConflict": cefr.conflict,
+                "cefr": cefr.get("level") or profile_level,
+                "cefrSource": cefr.get("source") or profile_row.get("source"),
+                "cefrEvidenceLevels": list(cefr.get("evidenceLevels") or []) or [profile_level],
+                "cefrConflict": bool(cefr.get("conflict")),
                 "openjamLevel": None,
                 "topics": [],
                 "sourceType": "cefr_profile_only",
@@ -204,7 +205,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
             }
             record["qualityScore"], score_flags = score_reference_record(record)
             record["flags"] = sorted(set(record["flags"] + score_flags))
-            record["curriculumEligible"] = is_curriculum_eligible(record, threshold)
+            record["curriculumEligible"] = is_curriculum_eligible(cefr)
             record["productionEligible"] = is_production_eligible(record, threshold)
             if record["curriculumEligible"]:
                 counts["curriculumEligible"] += 1
@@ -212,7 +213,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 counts["productionEligible"] += 1
             else:
                 counts["reviewOnly"] += 1
-            by_level[level].append(record)
+            by_level[profile_level].append(record)
             seen_lemma_pos.add((lemma, pos))
 
         grammar_by_level = parse_grammar_csv(grammar_text)
