@@ -181,7 +181,10 @@ class AudioTests(unittest.TestCase):
     def source(self, number, text='hello'):
         path = self.course_dir / 'lessons' / f'{number:04}' / 'lesson.source.json'
         save(path, {'courseCode': 'en-fa', 'lessonKey': f'EN-A1-L-{number:04}',
-                    'lexicalItems': [{'lexicalKey': 'HELLO', 'displayForm': text, 'audioEligible': True}], 'turns': []})
+                    'lexicalItems': [{'lexicalKey': 'HELLO', 'itemType': 'word', 'displayForm': text,
+                                      'translationFa': 'سلام', 'role': 'target', 'lemma': text,
+                                      'partOfSpeech': 'interjection', 'senseKey': 'test_fixture',
+                                      'audioEligible': True, 'metadata': {}}], 'turns': []})
         return path
 
     def run_audio(self, path):
