@@ -7,6 +7,7 @@ from pathlib import Path
 
 from reference_catalog import ReferenceCatalog
 from validate_content_quality import evaluate
+from validate_factory_design import validate_factory_design
 from validate_lesson import validate
 from validate_lesson_reference import validate_lesson_reference
 from validate_story import validate_story
@@ -31,14 +32,17 @@ def main() -> int:
     policy = load(root / "nova/_assistant/content-system-v1/content_quality.policy.json")
     catalog = ReferenceCatalog(root, course_code)
     enforce_from = int(config.get("enforceFromSortOrder", 1))
+    max_dechunk_delay = int(config.get("generativityMaxDelayLessons", 4))
 
     reports = []
     story_records = []
+    lesson_objects = []
     previous_order = 0
     errors = []
     for number in config.get("generatedLessons", []):
         lesson_path = root / "nova/courses" / course_code / "lessons" / f"{int(number):04d}" / "lesson.source.json"
         lesson = load(lesson_path)
+        lesson_objects.append(lesson)
         canonical = validate(lesson, course)
         reference = validate_lesson_reference(lesson, catalog, enforce_from_sort_order=enforce_from)
         quality = evaluate(lesson, policy)
@@ -65,18 +69,24 @@ def main() -> int:
         story_records.append({"course": course, "lesson": lesson, "source": lesson_path})
 
     story_errors = validate_story(story_records) if story_records else []
+    design = validate_factory_design(lesson_objects, max_delay=max_dechunk_delay)
+    design_errors = design.get("errors", [])
     errors.extend(story_errors)
+    errors.extend(design_errors)
     errors.extend(e for r in reports for e in r["errors"])
     status = "PASS" if not errors else "FAIL"
     payload = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "courseCode": course_code,
         "enforceFromSortOrder": enforce_from,
+        "generativityMaxDelayLessons": max_dechunk_delay,
         "generatedLessons": config.get("generatedLessons", []),
         "passedPrefixLength": sum(1 for r in reports if r["status"] == "PASS"),
         "status": status,
         "lessonReports": reports,
         "storyErrors": story_errors,
+        "factoryDesignStatus": design.get("status"),
+        "factoryDesignErrors": design_errors,
         "errors": errors,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
