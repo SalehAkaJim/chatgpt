@@ -40,12 +40,15 @@ jobs:
             --config nova/experiments/content-factory-from-lesson-1/probe_config.json \
             --output nova/experiments/content-factory-from-lesson-1/reference_probe.json
       - name: Validate generated factory prefix
+        id: prefix
+        continue-on-error: true
         run: |
           python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py \
             --repo-root . \
             --config nova/experiments/content-factory-from-lesson-1/probe_config.json \
             --output nova/experiments/content-factory-from-lesson-1/prefix_validation.json
       - name: Commit experiment evidence
+        if: always()
         run: |
           git config user.name "nova-factory-test-bot"
           git config user.email "nova-factory-test-bot@users.noreply.github.com"
@@ -58,3 +61,8 @@ jobs:
             git rebase origin/test/content-factory-from-lesson-1
             git push origin HEAD:test/content-factory-from-lesson-1
           fi
+      - name: Enforce factory prefix result
+        if: steps.prefix.outcome == 'failure'
+        run: |
+          cat nova/experiments/content-factory-from-lesson-1/prefix_validation.json
+          exit 2
