@@ -17,6 +17,10 @@ from language_reference_catalog import LanguageReferenceCatalog
 from reference_data import normalize_lemma
 
 POSSESSIVE_DETERMINERS = {"my", "our", "your", "her", "their"}
+SURFACE_LEMMA = {
+    "am": "be", "is": "be", "are": "be", "was": "be", "were": "be",
+    "has": "have", "had": "have", "does": "do", "did": "do",
+}
 
 
 def load(path: Path) -> dict:
@@ -34,6 +38,28 @@ def lesson_paths(root: Path, course: str, numbers: list[int]) -> list[Path]:
 
 def source_hash(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _surface_lemma(token: str) -> str:
+    token = normalize_lemma(token)
+    return SURFACE_LEMMA.get(token, token)
+
+
+def _record_surface_word(history: dict[str, dict], token: str, order: int) -> None:
+    lemma = _surface_lemma(token)
+    if not lemma:
+        return
+    record = history.setdefault(lemma, {
+        "lemma": lemma,
+        "firstLesson": order,
+        "lastLesson": order,
+        "practiceCount": 0,
+        "surfaceForms": [],
+    })
+    record["firstLesson"] = min(record["firstLesson"], order)
+    record["lastLesson"] = max(record["lastLesson"], order)
+    record["practiceCount"] += 1
+    record["surfaceForms"] = sorted(set(record["surfaceForms"] + [normalize_lemma(token)]))
 
 
 def _record_grammar(grammar_history: dict[str, dict], match: dict, order: int, evidence: str) -> None:
@@ -63,13 +89,7 @@ def _special_surface_matches(
     text: str,
     lesson_verbs: set[str],
 ) -> list[dict]:
-    """Match CEFR-J meta-label grammar records against actual learner language.
-
-    Some CEFR-J rows are not literal forms (e.g. "MODAL/AUX: can" or
-    "TENSE/ASPECT: PRESENT (lexical verbs)"). Token similarity alone cannot
-    identify these safely, so we use their stable shorthand codes plus sentence
-    shape. This is evidence detection, not free-form grammar inference.
-    """
+    """Match CEFR-J meta-label grammar records against actual learner language."""
     normalized = catalog.normalized_grammar_text(text)
     tokens = normalized.split()
     if not tokens:
@@ -124,6 +144,7 @@ def _record_surface_evidence(
 
 def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog: LanguageReferenceCatalog) -> dict:
     known_lemmas: dict[str, dict] = {}
+    practiced_surface: dict[str, dict] = {}
     grammar_history: dict[str, dict] = {}
     construction_history: dict[str, dict] = {}
     lesson_history = []
@@ -203,6 +224,8 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
             if not normalized or normalized in seen_turn_signatures:
                 continue
             seen_turn_signatures.add(normalized)
+            for token in normalized.split():
+                _record_surface_word(practiced_surface, token, order)
             _record_surface_evidence(
                 grammar_history,
                 catalog,
@@ -214,10 +237,11 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
             )
 
     return {
-        "schemaVersion": 3,
+        "schemaVersion": 4,
         "courseCode": course,
         "lastLessonSortOrder": max((x["sortOrder"] for x in lesson_history), default=0),
         "knownLexical": sorted(known_lemmas.values(), key=lambda x: (x["firstLesson"], x["lemma"])),
+        "practicedSurfaceVocabulary": sorted(practiced_surface.values(), key=lambda x: (x["firstLesson"], x["lemma"])),
         "introducedGrammar": sorted(grammar_history.values(), key=lambda x: (x["firstLesson"], x["grammarKey"])),
         "constructionHistory": sorted(construction_history.values(), key=lambda x: (x["firstLesson"], x["constructionKey"])),
         "lessonHistory": lesson_history,
@@ -239,6 +263,7 @@ def build_next_spec(
 ) -> dict:
     next_order = int(state.get("lastLessonSortOrder") or 0) + 1
     known_lemmas = {x["lemma"] for x in state.get("knownLexical", [])}
+    practiced_lemmas = {x["lemma"] for x in state.get("practicedSurfaceVocabulary", [])}
     introduced_grammar = {x["grammarKey"] for x in state.get("introducedGrammar", [])}
     topics = topic_hints or []
 
@@ -246,7 +271,10 @@ def build_next_spec(
         level=level, introduced_keys=introduced_grammar, desired_tokens=topics, limit=12,
     )
     lexical_candidates = catalog.recommend_lexical(
-        level=level, count=16, topics=topics, exclude_lemmas=known_lemmas,
+        level=level,
+        count=16,
+        topics=topics,
+        exclude_lemmas=known_lemmas | practiced_lemmas,
     )
     lexical_review = review_due(state.get("knownLexical", []), next_order=next_order, limit=10)
     grammar_review = review_due(state.get("introducedGrammar", []), next_order=next_order, min_gap=4, max_gap=12, limit=8)
@@ -254,7 +282,7 @@ def build_next_spec(
     latest = state.get("lessonHistory", [])[-1] if state.get("lessonHistory") else {}
     recent = state.get("lessonHistory", [])[-5:]
     spec = {
-        "schemaVersion": 3,
+        "schemaVersion": 4,
         "courseCode": state.get("courseCode"),
         "levelKey": level,
         "sortOrder": next_order,
@@ -268,6 +296,7 @@ def build_next_spec(
             "usageRequirement": "Every new scored target collocation must have committed corpus evidence or an explicit Nova usage fallback with rationale.",
             "pronunciationRequirement": "Expose CMUdict evidence when present; missing CMUdict coverage does not invent a pronunciation.",
             "wordSemantics": "Only true lexemes enter lexicalItems/words; compositional phrases remain constructions/turn text.",
+            "alreadyPracticedSurfaceRule": "A word already produced by the learner is not proposed as a brand-new lexical target merely because it was absent from lexicalItems metadata.",
         },
         "grammarCandidates": grammar_candidates,
         "lexicalCandidates": lexical_candidates,
@@ -319,6 +348,7 @@ def main() -> int:
         "lastLesson": state["lastLessonSortOrder"],
         "nextLesson": spec["sortOrder"],
         "knownLexical": len(state["knownLexical"]),
+        "practicedSurface": len(state["practicedSurfaceVocabulary"]),
         "introducedGrammar": len(state["introducedGrammar"]),
         "grammarCandidates": len(spec["grammarCandidates"]),
         "lexicalCandidates": len(spec["lexicalCandidates"]),
