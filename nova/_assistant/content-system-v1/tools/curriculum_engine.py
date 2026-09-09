@@ -34,6 +34,26 @@ def source_hash(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _record_grammar(grammar_history: dict[str, dict], match: dict, order: int, evidence: str) -> None:
+    key = match.get("grammarKey")
+    if not key:
+        return
+    record = grammar_history.setdefault(key, {
+        "grammarKey": key,
+        "grammaticalItem": match.get("grammaticalItem"),
+        "firstLesson": order,
+        "lastLesson": order,
+        "exposureCount": 0,
+        "evidenceKinds": [],
+        "maxMatchScore": 0.0,
+    })
+    record["firstLesson"] = min(record["firstLesson"], order)
+    record["lastLesson"] = max(record["lastLesson"], order)
+    record["exposureCount"] += 1
+    record["evidenceKinds"] = sorted(set(record["evidenceKinds"] + [evidence]))
+    record["maxMatchScore"] = max(float(record.get("maxMatchScore") or 0), float(match.get("matchScore") or 0))
+
+
 def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog: LanguageReferenceCatalog) -> dict:
     known_lemmas: dict[str, dict] = {}
     grammar_history: dict[str, dict] = {}
@@ -74,9 +94,10 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
             if ref_key:
                 record["referenceKeys"] = sorted(set(record["referenceKeys"] + [ref_key]))
 
+        # Explicit target constructions are the strongest curriculum evidence.
         for construction in (lesson.get("curriculum") or {}).get("targetConstructions", []) or []:
             ckey = construction.get("key") or construction.get("form")
-            matches = catalog.match_grammar(level=level, construction_form=construction.get("form") or "", limit=3)
+            matches = catalog.match_grammar(level=level, construction_form=construction.get("form") or "", limit=4)
             best = matches[0] if matches else None
             history = construction_history.setdefault(ckey, {
                 "constructionKey": ckey,
@@ -92,23 +113,29 @@ def build_curriculum_state(root: Path, course: str, numbers: list[int], catalog:
                     "matchScore": best.get("matchScore"),
                     "lesson": order,
                 })
-                # Only confident matches become grammar-state claims. Lexical frames
-                # remain constructions without pretending CEFR-J has an exact item.
                 if (best.get("matchScore") or 0) >= 0.55:
-                    gkey = best.get("grammarKey")
-                    g = grammar_history.setdefault(gkey, {
-                        "grammarKey": gkey,
-                        "grammaticalItem": best.get("grammaticalItem"),
-                        "firstLesson": order,
-                        "lastLesson": order,
-                        "exposureCount": 0,
-                    })
-                    g["firstLesson"] = min(g["firstLesson"], order)
-                    g["lastLesson"] = max(g["lastLesson"], order)
-                    g["exposureCount"] += 1
+                    _record_grammar(grammar_history, best, order, "target_construction")
+
+        # Canonical learner responses catch grammar actually practised even when
+        # old Lessons did not annotate it as a targetConstruction. This is critical
+        # for legacy/backfilled Lessons such as "I'm + name".
+        seen_turn_signatures = set()
+        for turn in lesson.get("turns", []) or []:
+            if turn.get("role") != "learner":
+                continue
+            text = turn.get("speechTargetEn") or turn.get("textEn") or ""
+            normalized = catalog.normalized_grammar_text(text)
+            if not normalized or normalized in seen_turn_signatures:
+                continue
+            seen_turn_signatures.add(normalized)
+            matches = catalog.match_grammar(level=level, construction_form=text, limit=5)
+            for match in matches:
+                if (match.get("matchScore") or 0) < 0.72:
+                    continue
+                _record_grammar(grammar_history, match, order, "learner_practice")
 
     return {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "courseCode": course,
         "lastLessonSortOrder": max((x["sortOrder"] for x in lesson_history), default=0),
         "knownLexical": sorted(known_lemmas.values(), key=lambda x: (x["firstLesson"], x["lemma"])),
@@ -161,7 +188,7 @@ def build_next_spec(
     recent_arcs = [x.get("arcKey") for x in recent if x.get("arcKey")]
 
     spec = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "courseCode": state.get("courseCode"),
         "levelKey": level,
         "sortOrder": next_order,
@@ -178,10 +205,7 @@ def build_next_spec(
         },
         "grammarCandidates": grammar_candidates,
         "lexicalCandidates": lexical_candidates,
-        "reviewDue": {
-            "lexical": lexical_review,
-            "grammar": grammar_review,
-        },
+        "reviewDue": {"lexical": lexical_review, "grammar": grammar_review},
         "storyConstraints": {
             "doNotRepeatImmediateParticipants": latest.get("participants", []),
             "recentParticipantSets": recent_participant_sets,
