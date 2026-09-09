@@ -168,6 +168,13 @@ def lexical_registry(root, course):
     return path, registry
 
 
+def _checkpoint(manifest_path, lesson, source_hash, model, items):
+    save(manifest_path, {
+        'version': '2.2.0', 'lessonKey': lesson['lessonKey'], 'sourceHash': source_hash,
+        'provider': 'ElevenLabs', 'modelId': model, 'items': list(items.values()), 'status': 'FAIL'
+    })
+
+
 def generate(lesson_path, voices_path, root, manifest_path, reuse_only=False):
     raw = lesson_path.read_bytes()
     lesson, voices = json.loads(raw), load(voices_path)
@@ -178,70 +185,79 @@ def generate(lesson_path, voices_path, root, manifest_path, reuse_only=False):
     previous_items = {(i['audioClass'], i['sourceKey']): i for i in previous.get('items', [])}
     registry_path, registry = lexical_registry(root, lesson['courseCode'])
     output_items, reused, generated = [], 0, 0
+    checkpoints = dict(previous_items)
 
-    for item in collect(lesson, voices):
-        voice_id, voice_name = resolve_voice(item['voiceSpec'], api_key)
-        voice_key = item['voiceSpec'].get('voiceKey') or item['voiceSpec'].get('voiceName') or voice_id
-        if item['audioClass'] == 'lexical_item':
-            akey = asset_key(item['sourceText'], voice_id, model)
-            reg = registry['assets'].get(akey)
-            if reg:
-                item['path'] = reg['path']
+    try:
+        for item in collect(lesson, voices):
+            voice_id, voice_name = resolve_voice(item['voiceSpec'], api_key)
+            voice_key = item['voiceSpec'].get('voiceKey') or item['voiceSpec'].get('voiceName') or voice_id
+            if item['audioClass'] == 'lexical_item':
+                akey = asset_key(item['sourceText'], voice_id, model)
+                reg = registry['assets'].get(akey)
+                item['path'] = reg['path'] if reg else f'nova/audio/lexical/{lesson["courseCode"]}/{akey}.mp3'
+                previous_item = reg
+                previous_model = reg.get('modelId') if reg else None
             else:
-                item['path'] = f'nova/audio/lexical/{lesson["courseCode"]}/{akey}.mp3'
-        output = inside(root, item['path'])
-        previous_item = previous_items.get((item['audioClass'], item['sourceKey']))
-        reusable, decoded, duration, digest = can_reuse(previous_item, previous.get('modelId'), item, voice_id, model, output)
-        if not reusable and item['audioClass'] == 'lexical_item':
-            reg = registry['assets'].get(akey)
-            if reg:
-                pseudo = {**reg, 'sourceText': item['sourceText'], 'voiceId': voice_id, 'path': item['path']}
-                reusable, decoded, duration, digest = can_reuse(pseudo, reg.get('modelId'), item, voice_id, model, output)
-        if reusable:
-            reused += 1
-        else:
-            if reuse_only:
-                raise ValueError(f"Missing reusable audio for {item['audioClass']}:{item['sourceKey']}")
-            synthesize(item['sourceText'], voice_id, api_key, output, model)
-            decoded, duration = probe(output)
-            digest = hashlib.sha256(output.read_bytes()).hexdigest()
-            generated += 1
-        record = {
-            'sourceKey': item['sourceKey'], 'audioClass': item['audioClass'], 'sourceText': item['sourceText'],
-            'voiceId': voice_id, 'voiceKey': voice_key, 'voiceName': voice_name, 'path': item['path'],
-            'fileSha256': digest, 'durationMs': duration, 'sourceHash': source_hash, 'decoded': decoded
-        }
-        output_items.append(record)
-        if item['audioClass'] == 'lexical_item':
-            registry['assets'][akey] = {
-                'sourceText': item['sourceText'], 'voiceId': voice_id, 'voiceKey': voice_key,
-                'path': item['path'], 'fileSha256': digest, 'durationMs': duration, 'modelId': model
-            }
+                previous_item = previous_items.get((item['audioClass'], item['sourceKey']))
+                previous_model = previous.get('modelId')
 
-    save(registry_path, registry)
+            output = inside(root, item['path'])
+            reusable, decoded, duration, digest = can_reuse(previous_item, previous_model, item, voice_id, model, output)
+            if reusable:
+                reused += 1
+            else:
+                if reuse_only:
+                    raise ValueError(f"Missing verified audio in reuse-only mode: {lesson['lessonKey']}/{item['sourceKey']}")
+                synthesize(item['sourceText'], voice_id, api_key, output, model)
+                decoded, duration = probe(output)
+                digest = hashlib.sha256(output.read_bytes()).hexdigest()
+                generated += 1
+            if not decoded or duration <= 0:
+                raise ValueError(f"Invalid audio: {item['sourceKey']}")
+
+            entry = {
+                'sourceKey': item['sourceKey'], 'audioClass': item['audioClass'], 'sourceText': item['sourceText'],
+                'voiceId': voice_id, 'voiceKey': voice_key, 'voiceName': voice_name, 'path': item['path'],
+                'fileSha256': digest, 'durationMs': duration, 'sourceHash': source_hash, 'decoded': True,
+                'status': 'PASS'
+            }
+            output_items.append(entry)
+            checkpoints[(entry['audioClass'], entry['sourceKey'])] = entry
+            _checkpoint(manifest_path, lesson, source_hash, model, checkpoints)
+
+            if item['audioClass'] == 'lexical_item':
+                registry['assets'][akey] = {
+                    'sourceText': item['sourceText'], 'voiceId': voice_id, 'voiceKey': voice_key,
+                    'path': item['path'], 'fileSha256': digest, 'durationMs': duration, 'modelId': model
+                }
+                save(registry_path, registry)
+    except Exception:
+        if checkpoints:
+            _checkpoint(manifest_path, lesson, source_hash, model, checkpoints)
+        raise
+
     manifest = {
-        'version': 2, 'lessonKey': lesson['lessonKey'], 'sourceHash': source_hash,
-        'provider': 'ElevenLabs', 'modelId': model, 'status': 'PASS',
-        'items': output_items, 'summary': {'reused': reused, 'generated': generated}
+        'version': '2.2.0', 'lessonKey': lesson['lessonKey'], 'sourceHash': source_hash,
+        'provider': 'ElevenLabs', 'modelId': model, 'items': output_items, 'status': 'PASS'
     }
     save(manifest_path, manifest)
-    return manifest
+    return {'status': 'PASS', 'count': len(output_items), 'reused': reused, 'generated': generated}
 
 
 def main():
-    p = argparse.ArgumentParser()
-    p.add_argument('lesson', type=Path)
-    p.add_argument('--voices', type=Path, required=True)
-    p.add_argument('--repo-root', type=Path, default=Path('.'))
-    p.add_argument('--manifest', type=Path, required=True)
-    p.add_argument('--reuse-only', action='store_true')
-    args = p.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('lesson', type=Path)
+    parser.add_argument('--voices', type=Path, required=True)
+    parser.add_argument('--repo-root', type=Path, default=Path('.'))
+    parser.add_argument('--manifest', type=Path, required=True)
+    parser.add_argument('--reuse-only', action='store_true')
+    args = parser.parse_args()
     try:
-        manifest = generate(args.lesson, args.voices, args.repo_root.resolve(), args.manifest, args.reuse_only)
+        report = generate(args.lesson, args.voices, args.repo_root.resolve(), args.manifest, args.reuse_only)
     except Exception as error:
         print(str(error), file=sys.stderr)
         return 2
-    print(json.dumps(manifest['summary']))
+    print(json.dumps(report))
     return 0
 
 
