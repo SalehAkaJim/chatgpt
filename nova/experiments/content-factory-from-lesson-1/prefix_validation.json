@@ -24,9 +24,12 @@
     18,
     19,
     20,
-    21
+    21,
+    22,
+    23,
+    24
   ],
-  "passedPrefixLength": 21,
+  "passedPrefixLength": 24,
   "status": "FAIL",
   "lessonReports": [
     {
@@ -248,6 +251,38 @@
         "EN-A1-L-0021: target word EN-LEX-LIKE-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
       ],
       "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0022",
+      "sortOrder": 22,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0022: target word EN-LEX-WANT-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0023",
+      "sortOrder": 23,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0024",
+      "sortOrder": 24,
+      "status": "PASS",
+      "automatedScore": 100,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
     }
   ],
   "storyErrors": [],
@@ -255,6 +290,7 @@
   "factoryDesignErrors": [
     "NF-H01 EN-A1-L-0021/A02/E02: bare-item offer/ellipsis cannot elicit a like-preference statement",
     "NF-H03 EN-A1-L-0021/A02/E02: preference answer is not pragmatically licensed by the prompt",
+    "NF-H02 EN-A1-L-0022/A02/E01: either-or offer unnaturally forces I want; use a natural choice or a want-eliciting context",
     "DG-H01 EN-A1-L-0002 EN-CONSTR-MY-NAME-IS: productive construction has fewer than two distinct fillers within 4 Lessons",
     "DG-H01 EN-A1-L-0006 EN-CONSTR-ITS-A: productive construction has fewer than two distinct fillers within 4 Lessons",
     "DG-H01 EN-A1-L-0008 EN-CONSTR-WHERES-MY: productive construction has fewer than two distinct fillers within 4 Lessons",
@@ -268,6 +304,7 @@
   "errors": [
     "NF-H01 EN-A1-L-0021/A02/E02: bare-item offer/ellipsis cannot elicit a like-preference statement",
     "NF-H03 EN-A1-L-0021/A02/E02: preference answer is not pragmatically licensed by the prompt",
+    "NF-H02 EN-A1-L-0022/A02/E01: either-or offer unnaturally forces I want; use a natural choice or a want-eliciting context",
     "DG-H01 EN-A1-L-0002 EN-CONSTR-MY-NAME-IS: productive construction has fewer than two distinct fillers within 4 Lessons",
     "DG-H01 EN-A1-L-0006 EN-CONSTR-ITS-A: productive construction has fewer than two distinct fillers within 4 Lessons",
     "DG-H01 EN-A1-L-0008 EN-CONSTR-WHERES-MY: productive construction has fewer than two distinct fillers within 4 Lessons",

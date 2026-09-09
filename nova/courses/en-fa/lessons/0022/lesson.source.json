@@ -1,1 +1,317 @@
-{"schemaVersion":"2.2.0","contentSystemVersion":"1","courseCode":"en-fa","levelKey":"A1","lessonKey":"EN-A1-L-0022","sortOrder":22,"titleEn":"I want water","titleFa":"آب می خوام","descriptionFa":"روبی و سارا بعد از پیاده روی این بار خواسته خود را مستقیم با want می گویند.","primaryOutcomeKey":"A1-INTERACTION-WANT-DRINK","outcomeFa":"زبان آموز می تواند با want یک نوشیدنی آشنا را بخواهد و خواسته طرف مقابل را بفهمد.","scenarioFa":"بعد از پیاده روی کنار میز نوشیدنی هستید. سارا می پرسد چه می خواهی و تو خواسته ات را می گویی. نقش تو روبی است.","prerequisiteOutcomeKeys":["A1-INTERACTION-LIKE-DRINK","A1-INTERACTION-CHOOSE-DRINK"],"curriculum":{"startingKnowledge":"early_a1_known_drinks_and_preferences","targetConstructions":[{"key":"EN-CONSTR-I-WANT","form":"I want + item.","meaningFa":"گفتن یک خواسته ساده و مستقیم"}],"supportLanguage":[],"assessmentBoundary":"The Lesson introduces want in the desire sense with already-known drink nouns. It does not teach broader want + infinitive patterns.","transferPlan":{"mode":"same_lesson","intent":"Contrast liking a drink with wanting one now, while reusing water and tea without adding new drink vocabulary."},"story":{"arcKey":"EN-A1-WALKING-GROUP","sceneKey":"EN-A1-FACTORY-SCENE-0022","learnerRoleKey":"ruby","participants":["ruby","sara"],"introducedCharacterKeys":[],"relationshipState":"already_known","continuesLessonKey":"EN-A1-L-0016","dependsOnLessonKeys":["EN-A1-L-0016"],"settingFa":"پارک، میز نوشیدنی بعد از پیاده روی","storyBeatFa":"روبی و سارا بعد از هماهنگ کردن زمان دور قبلی، این بار درباره نوشیدنی ای که الان می خواهند حرف می زنند."},"reviewLinks":[{"lessonKey":"EN-A1-L-0021","activityKeys":["A01","A05"],"learningDemand":"transfer","note":"Known drink nouns move from like-preferences to immediate wants."},{"lessonKey":"EN-A1-L-0010","activityKeys":["A02"],"learningDemand":"retrieval","note":"Water and tea return after a long delay in the walking-group arc."}],"pedagogyVersion":2},"lexicalItems":[{"lexicalKey":"EN-LEX-WANT-01","itemType":"word","displayForm":"want","translationFa":"خواستن","role":"target","lemma":"want","partOfSpeech":"verb","senseKey":"desire","audioEligible":true,"metadata":{"referenceKey":"EN-REF-CA08F7EB97E97D92177A"}},{"lexicalKey":"EN-LEX-I-WANT-01","itemType":"formula","displayForm":"I want ... .","translationFa":"... می خوام.","role":"target","lemma":"i want","partOfSpeech":"formula","senseKey":"state_simple_want","audioEligible":true,"metadata":{"source":"nova_authored_want_formula"}},{"lexicalKey":"EN-LEX-WATER-01","itemType":"word","displayForm":"water","translationFa":"آب","role":"review","lemma":"water","partOfSpeech":"noun","senseKey":"drink_water","audioEligible":true,"metadata":{"referenceKey":"EN-REF-93033FDD55B1A504F831"}},{"lexicalKey":"EN-LEX-TEA-01","itemType":"word","displayForm":"tea","translationFa":"چای","role":"review","lemma":"tea","partOfSpeech":"noun","senseKey":"tea_beverage","audioEligible":true,"metadata":{"referenceKey":"EN-REF-C86BD7B12371D318284C"}}],"turns":[{"turnKey":"T01","role":"character","characterKey":"sara","textEn":"Water or tea?","translationFa":"آب یا چای؟","audioRequired":true},{"turnKey":"T02","role":"learner","characterKey":"ruby","textEn":"I want water.","translationFa":"آب می خوام.","speechTargetEn":"I want water.","acceptedSpeechEn":["I want water."],"audioRequired":true},{"turnKey":"T03","role":"character","characterKey":"sara","textEn":"I want tea.","translationFa":"من چای می خوام.","audioRequired":true},{"turnKey":"T04","role":"learner","characterKey":"ruby","textEn":"I want tea.","translationFa":"چای می خوام.","speechTargetEn":"I want tea.","acceptedSpeechEn":["I want tea."],"audioRequired":true,"metadata":{"usage":"retrieval_model_after_help"}}],"activities":[{"activityKey":"A01","type":"lexical_teach","instructionFa":"فعل want و الگوی خواستن را یاد بگیر.","config":{"lexicalKeys":["EN-LEX-WANT-01","EN-LEX-I-WANT-01"],"explanationFa":"want در این درس یعنی چیزی را خواستن. I want water. یعنی آب می خوام. این با I like water فرق دارد؛ like درباره دوست داشتن است، want درباره چیزی است که الان می خواهی."}},{"activityKey":"A02","type":"dialogue","instructionFa":"پیشنهاد سارا را گوش کن و جواب روبی را با صدای بلند بگو.","config":{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}},{"activityKey":"A03","type":"comprehension","instructionFa":"به حرف آخر سارا گوش کن.","promptFa":"سارا چه نوشیدنی می خواهد؟","config":{"sourceTurnKeys":["T03"],"options":["چای","آب","قهوه"],"answerIndex":0,"transcriptAfterAttempt":true,"feedback":{"optionsFa":["درست است؛ I want tea یعنی چای می خواهم.","water در جمله سارا نیست.","coffee در جمله سارا نیست."],"correctFa":"سارا چای می خواهد."}},"metadata":{"evidenceKind":"recognition_or_selection"}},{"activityKey":"A04","type":"sentence_order","instructionFa":"جمله خواستن آب را گوش کن و سه بخش را مرتب کن.","config":{"audioSourceTurnKey":"T02","tokensEn":["water.","want","I"],"answerTokensEn":["I","want","water."],"answerEn":"I want water.","showAnswerTextBeforeAttempt":false,"allowAudioReplay":true,"practiceOnly":true,"hideTokenSurfaceCues":true,"feedback":{"correctFa":"درست چیدی؛ خواسته روبی را ساختی.","retryFa":"دوباره گوش کن؛ جمله با I شروع می شود و want وسط آن است."}},"metadata":{"evidenceKind":"supported_reconstruction"}},{"activityKey":"A05","type":"response_choice","instructionFa":"فرق دوست داشتن و خواستن را تشخیص بده.","promptFa":"الان چای می خواهی. کدام جمله درباره خواسته الان توست؟","config":{"optionsEn":["I want tea.","I like tea.","Tea or coffee?"],"answerIndex":0,"feedback":{"optionsFa":["درست است؛ want خواسته الان را می گوید.","این جمله می گوید چای را دوست داری، نه اینکه الان آن را می خواهی.","این جمله دو گزینه پیشنهاد می دهد."],"correctFa":"I want tea. خواسته الان را بیان می کند."}},"metadata":{"learningDemand":"transfer","evidenceKind":"recognition_or_selection"}},{"activityKey":"A06","type":"speak","instructionFa":"جواب انگلیسی را نمی بینی. خواسته ات را خودت بگو.","promptFa":"روبی هستی. این بار چای می خواهی. یک جمله کوتاه بگو.","config":{"mode":"retrieval","textEn":"I want tea.","acceptedAnswersEn":["I want tea."],"sourceTurnKey":"T04","showAnswerTextBeforeAttempt":false,"hintFa":"I + want + tea را بساز.","feedback":{"correctFa":"درست است؛ خواسته ات را مستقیم گفتی.","retryFa":"با I شروع کن، want را اضافه کن و tea را آخر بگو."},"evidenceKind":"bounded_retrieval","practiceOnly":false,"modelAccess":"explicit_help"},"metadata":{"learningDemand":"retrieval","assessmentLimit":"Same-session bounded want statement with known drink vocabulary."}}],"review":{"pendingDecisions":[]},"metadata":{"pilot":false,"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange","qualityStage":"model_reviewed_for_testing"}}
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0022",
+  "sortOrder": 22,
+  "titleEn": "I want water",
+  "titleFa": "آب می خوام",
+  "descriptionFa": "روبی و سارا بعد از پیاده روی این بار خواسته خود را مستقیم با want می گویند.",
+  "primaryOutcomeKey": "A1-INTERACTION-WANT-DRINK",
+  "outcomeFa": "زبان آموز می تواند با want یک نوشیدنی آشنا را بخواهد و خواسته طرف مقابل را بفهمد.",
+  "scenarioFa": "بعد از پیاده روی کنار میز نوشیدنی هستید. سارا می پرسد چه می خواهی و تو خواسته ات را می گویی. نقش تو روبی است.",
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-LIKE-DRINK",
+    "A1-INTERACTION-CHOOSE-DRINK"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_known_drinks_and_preferences",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-I-WANT",
+        "form": "I want + item.",
+        "meaningFa": "گفتن یک خواسته ساده و مستقیم"
+      }
+    ],
+    "supportLanguage": [],
+    "assessmentBoundary": "The Lesson introduces want in the desire sense with already-known drink nouns. It does not teach broader want + infinitive patterns.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Contrast liking a drink with wanting one now, while reusing water and tea without adding new drink vocabulary."
+    },
+    "story": {
+      "arcKey": "EN-A1-WALKING-GROUP",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0022",
+      "learnerRoleKey": "ruby",
+      "participants": [
+        "ruby",
+        "sara"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0016",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0016"
+      ],
+      "settingFa": "پارک، میز نوشیدنی بعد از پیاده روی",
+      "storyBeatFa": "روبی و سارا بعد از هماهنگ کردن زمان دور قبلی، این بار درباره نوشیدنی ای که الان می خواهند حرف می زنند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0021",
+        "activityKeys": [
+          "A01",
+          "A05"
+        ],
+        "learningDemand": "transfer",
+        "note": "Known drink nouns move from like-preferences to immediate wants."
+      },
+      {
+        "lessonKey": "EN-A1-L-0010",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Water and tea return after a long delay in the walking-group arc."
+      }
+    ],
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-WANT-01",
+      "itemType": "word",
+      "displayForm": "want",
+      "translationFa": "خواستن",
+      "role": "target",
+      "lemma": "want",
+      "partOfSpeech": "verb",
+      "senseKey": "desire",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-CA08F7EB97E97D92177A"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-WATER-01",
+      "itemType": "word",
+      "displayForm": "water",
+      "translationFa": "آب",
+      "role": "review",
+      "lemma": "water",
+      "partOfSpeech": "noun",
+      "senseKey": "drink_water",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-93033FDD55B1A504F831"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TEA-01",
+      "itemType": "word",
+      "displayForm": "tea",
+      "translationFa": "چای",
+      "role": "review",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "senseKey": "tea_beverage",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-C86BD7B12371D318284C"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "sara",
+      "textEn": "Water or tea?",
+      "translationFa": "آب یا چای؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "ruby",
+      "textEn": "I want water.",
+      "translationFa": "آب می خوام.",
+      "speechTargetEn": "I want water.",
+      "acceptedSpeechEn": [
+        "I want water."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "sara",
+      "textEn": "I want tea.",
+      "translationFa": "من چای می خوام.",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "ruby",
+      "textEn": "I want tea.",
+      "translationFa": "چای می خوام.",
+      "speechTargetEn": "I want tea.",
+      "acceptedSpeechEn": [
+        "I want tea."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "lexical_teach",
+      "instructionFa": "فعل want و الگوی خواستن را یاد بگیر.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-WANT-01"
+        ],
+        "explanationFa": "want در این درس یعنی چیزی را خواستن. I want water. یعنی آب می خوام. این با I like water فرق دارد؛ like درباره دوست داشتن است، want درباره چیزی است که الان می خواهی."
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "پیشنهاد سارا را گوش کن و جواب روبی را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "به حرف آخر سارا گوش کن.",
+      "promptFa": "سارا چه نوشیدنی می خواهد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T03"
+        ],
+        "options": [
+          "چای",
+          "آب",
+          "قهوه"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ I want tea یعنی چای می خواهم.",
+            "water در جمله سارا نیست.",
+            "coffee در جمله سارا نیست."
+          ],
+          "correctFa": "سارا چای می خواهد."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "sentence_order",
+      "instructionFa": "جمله خواستن آب را گوش کن و سه بخش را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "water.",
+          "want",
+          "I"
+        ],
+        "answerTokensEn": [
+          "I",
+          "want",
+          "water."
+        ],
+        "answerEn": "I want water.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی؛ خواسته روبی را ساختی.",
+          "retryFa": "دوباره گوش کن؛ جمله با I شروع می شود و want وسط آن است."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "فرق دوست داشتن و خواستن را تشخیص بده.",
+      "promptFa": "الان چای می خواهی. کدام جمله درباره خواسته الان توست؟",
+      "config": {
+        "optionsEn": [
+          "I want tea.",
+          "I like tea.",
+          "Tea or coffee?"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ want خواسته الان را می گوید.",
+            "این جمله می گوید چای را دوست داری، نه اینکه الان آن را می خواهی.",
+            "این جمله دو گزینه پیشنهاد می دهد."
+          ],
+          "correctFa": "I want tea. خواسته الان را بیان می کند."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی را نمی بینی. خواسته ات را خودت بگو.",
+      "promptFa": "روبی هستی. این بار چای می خواهی. یک جمله کوتاه بگو.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "I want tea.",
+        "acceptedAnswersEn": [
+          "I want tea."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "I + want + tea را بساز.",
+        "feedback": {
+          "correctFa": "درست است؛ خواسته ات را مستقیم گفتی.",
+          "retryFa": "با I شروع کن، want را اضافه کن و tea را آخر بگو."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded want statement with known drink vocabulary."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}
