@@ -47,8 +47,11 @@ def main() -> int:
             errors.append(f"{lesson.get('lessonKey')}: generated prefix is not strictly ordered")
         previous_order = order
         local_errors = list(canonical.get("errors", [])) + list(reference.get("errors", [])) + list(quality.get("errors", []))
-        if not quality.get("publishableByAutomatedQualityGate"):
-            local_errors.append(f"automated quality score {quality.get('automatedScore')} is below publish gate")
+        if quality.get("automatedScore", 0) < quality.get("minimumAutomatedScore", 90):
+            local_errors.append(
+                f"automated quality score {quality.get('automatedScore')} is below "
+                f"{quality.get('minimumAutomatedScore', 90)}"
+            )
         reports.append({
             "lessonKey": lesson.get("lessonKey"),
             "sortOrder": order,
