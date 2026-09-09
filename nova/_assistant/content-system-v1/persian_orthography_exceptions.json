@@ -1,5 +1,26 @@
 {
   "version": 1,
   "policy": "Forbidden Arabic/hamza characters remain blocked by default. An exception applies only to the exact complete Persian word listed here, and only to the explicitly allowed characters for that word.",
-  "exceptions": []
+  "exceptions": [
+    {
+      "term": "سؤال",
+      "reason": "Standard Persian spelling used in learner-facing instructional copy.",
+      "allowedCharacters": ["ؤ"]
+    },
+    {
+      "term": "لطفاً",
+      "reason": "Standard Persian adverb spelling used in natural dialogue and instructions.",
+      "allowedCharacters": ["ً"]
+    },
+    {
+      "term": "دقیقاً",
+      "reason": "Standard Persian adverb spelling used in learner feedback.",
+      "allowedCharacters": ["ً"]
+    },
+    {
+      "term": "توئه",
+      "reason": "Intentional colloquial Persian contraction used in learner-facing dialogue.",
+      "allowedCharacters": ["ئ"]
+    }
+  ]
 }
