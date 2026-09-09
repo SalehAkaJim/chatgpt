@@ -11,7 +11,7 @@
   "queryLimit": 80,
   "circuitOpened": false,
   "queryCount": 59,
-  "evidenceQueryCount": 44,
+  "evidenceQueryCount": 45,
   "unavailableQueryCount": 0,
   "queries": [
     {
@@ -502,20 +502,6 @@
       "status": "evidence"
     },
     {
-      "query": "i'm not in room",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0025"
-      ],
-      "lexicalLemmas": [
-        "not"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+not+in+room%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
       "query": "it's a book",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -638,50 +624,51 @@
       "status": "no_hit"
     },
     {
-      "query": "no i'm not",
+      "query": "on monday",
       "kind": "target_collocation",
       "lessonKeys": [
-        "EN-A1-L-0025"
+        "EN-A1-L-0017"
       ],
       "lexicalLemmas": [
-        "not"
+        "monday",
+        "on"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+i%27m+not%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+monday%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [
         {
-          "id": 7283138,
-          "text": "No I'm not!",
+          "id": 13489445,
+          "text": "Come on Monday.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "gcaplan"
+          "owner": "rul"
         },
         {
-          "id": 6607959,
-          "text": "No, I'm not.",
+          "id": 11913169,
+          "text": "Begin on Monday.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "MaryJ"
+          "owner": "CK"
         },
         {
-          "id": 12882283,
-          "text": "No, I'm not okay.",
+          "id": 13447191,
+          "text": "She worked on Mondays.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "frpzzd"
         },
         {
-          "id": 11957977,
-          "text": "No, I'm not coming.",
+          "id": 13338690,
+          "text": "Everything else on Monday.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "zogwarg"
+          "owner": "artemlyubchenko"
         },
         {
-          "id": 11126745,
-          "text": "No, I'm not cold.",
+          "id": 11948708,
+          "text": "Tom works on Mondays.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "sundown"
+          "owner": "CK"
         }
       ],
       "sampleCount": 5,
@@ -1187,6 +1174,56 @@
       "status": "evidence"
     },
     {
+      "query": "he is",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0027"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-HE-IS-NAME"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22he+is%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13788367,
+          "text": "He is fantastic.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Just_Balls"
+        },
+        {
+          "id": 13627422,
+          "text": "He is addicted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ahmd"
+        },
+        {
+          "id": 13530112,
+          "text": "He is Amazigh.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Abdaresrif"
+        },
+        {
+          "id": 13498600,
+          "text": "He is lucky.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "vowelharmony"
+        },
+        {
+          "id": 13400878,
+          "text": "He is closer.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "das_Ame"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
       "query": "how are you",
       "kind": "construction",
       "lessonKeys": [
@@ -1395,9 +1432,6 @@
       "constructionKeys": [
         "EN-CONSTR-I-READ-BOOKS"
       ],
-      "lexicalLemmas": [
-        "read"
-      ],
       "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+read+books%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [
         {
@@ -1584,56 +1618,6 @@
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "Adelpa"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i'm not in",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0025"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-IM-NOT-IN-PLACE"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+not+in%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 5828923,
-          "text": "I'm not in.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11633398,
-          "text": "I'm not in prison.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11324274,
-          "text": "I'm not in China.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Luornu"
-        },
-        {
-          "id": 10863093,
-          "text": "I'm not in mourning.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 7860767,
-          "text": "I'm not in love.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
         }
       ],
       "sampleCount": 5,
@@ -1869,6 +1853,59 @@
       "status": "evidence"
     },
     {
+      "query": "no i'm not",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0025"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-NO-IM-NOT"
+      ],
+      "lexicalLemmas": [
+        "not"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+i%27m+not%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 7283138,
+          "text": "No I'm not!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "gcaplan"
+        },
+        {
+          "id": 6607959,
+          "text": "No, I'm not.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "MaryJ"
+        },
+        {
+          "id": 12882283,
+          "text": "No, I'm not okay.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 11957977,
+          "text": "No, I'm not coming.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "zogwarg"
+        },
+        {
+          "id": 11126745,
+          "text": "No, I'm not cold.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
       "query": "no please",
       "kind": "construction",
       "lessonKeys": [
@@ -1969,50 +2006,50 @@
       "status": "evidence"
     },
     {
-      "query": "on monday",
+      "query": "she is",
       "kind": "construction",
       "lessonKeys": [
-        "EN-A1-L-0017"
+        "EN-A1-L-0027"
       ],
       "constructionKeys": [
-        "EN-CONSTR-ON-MONDAY"
+        "EN-CONSTR-SHE-IS-NAME"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+monday%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22she+is%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [
         {
-          "id": 13489445,
-          "text": "Come on Monday.",
+          "id": 13882085,
+          "text": "She is energetic.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "rul"
+          "owner": "Lumi"
         },
         {
-          "id": 11913169,
-          "text": "Begin on Monday.",
+          "id": 13646711,
+          "text": "She is guilty.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "CK"
+          "owner": "doemaar14"
         },
         {
-          "id": 13447191,
-          "text": "She worked on Mondays.",
+          "id": 13530111,
+          "text": "She is Amazigh.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
+          "owner": "Abdaresrif"
         },
         {
-          "id": 13338690,
-          "text": "Everything else on Monday.",
+          "id": 13400836,
+          "text": "She is moody.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "artemlyubchenko"
+          "owner": "das_Ame"
         },
         {
-          "id": 11948708,
-          "text": "Tom works on Mondays.",
+          "id": 13391525,
+          "text": "She is successful.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "CK"
+          "owner": "Aghanim"
         }
       ],
       "sampleCount": 5,
