@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "FAIL",
+  "stage": "integration",
+  "inputHead": "d1228e7ae432f0cae9ad7976e622f2dcfcea3c7c",
+  "checkedAt": "2026-09-09T18:07:14.391254+00:00",
+  "errors": [
+    "Ordered single-writer integration did not pass."
+  ],
+  "commands": [
+    {
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0053-0060/wave.json",
+      "returnCode": 1,
+      "stdoutTail": "HEAD is now at d1228e7a Request Nova wave 53-60 preflight publish\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"FAIL\", \"lessons\": 53, \"nextLesson\": 54, \"nextSpecHash\": \"cd4b7f8e4de5d9ceb6dc9f629bf7a4b3fd76cda00cee444e911fb28273083333\", \"introducedGrammar\": 14, \"languageWarnings\": 39, \"errors\": 1}\n",
+      "stderrTail": "Preparing worktree (detached HEAD d1228e7a)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 381, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-snvbp9a8/repo/nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py --repo-root /tmp/nova-wave-snvbp9a8/repo --course en-fa --config /tmp/nova-wave-snvbp9a8/repo/nova/curriculum/en-fa/factory.config.json --workspace-dir /tmp/nova-wave-snvbp9a8/repo/nova/curriculum/en-fa\n"
+    }
+  ],
+  "request": {
+    "schemaVersion": 1,
+    "requestKey": "en-fa-A1-0053-0060-20260909T1800Z",
+    "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0053-0060/wave.json"
+  },
+  "waveKey": "en-fa-A1-0053-0060",
+  "expectedPrefix": 60
+}
