@@ -27,6 +27,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 # One writer owns the shared curriculum state, lexical registry and generated outputs.
 concurrency:
@@ -118,6 +119,10 @@ jobs:
             git push origin HEAD:main
           fi
           echo "PUBLISH_HEAD=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Trigger exact-byte Prototype preview
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run nova-prototype-preview.yml --ref main
       - name: Build paid audio and SQL after text gates
         id: build
         run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root .
