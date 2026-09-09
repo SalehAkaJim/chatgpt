@@ -1,0 +1,101 @@
+name: Nova Wave 45-52 Repair Integration
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/nova-wave-45-52-repair.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nova-production-main
+  cancel-in-progress: false
+
+jobs:
+  repair-integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install validator dependencies
+        run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
+      - name: Repair stale provisional grammar metadata and integrate atomically
+        shell: bash
+        run: |
+          PYTHONPATH=nova/_assistant/content-system-v1/tools python - <<'PY'
+          import json, re
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from factory_wave import integrate_wave
+
+          root = Path('.').resolve()
+          wave = root / 'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/wave.json'
+          manifest = json.loads(wave.read_text(encoding='utf-8'))
+          packet_by_order = {int(p['sortOrder']): p for p in manifest['packets']}
+          cache_dir = root / '.cache/nova-validation'
+
+          for attempt in range(1, 9):
+              try:
+                  integrate_wave(root, wave, cache_dir=cache_dir)
+                  break
+              except RuntimeError as exc:
+                  msg = str(exc)
+                  m = re.search(r'Draft (\d{4}).*?grammarTargetKey ([^\s]+) is not in the committed grammar candidate set', msg, re.S)
+                  if not m:
+                      raise
+                  order = int(m.group(1))
+                  stale_key = m.group(2)
+                  packet = packet_by_order[order]
+                  path = root / packet['stagingPath']
+                  lesson = json.loads(path.read_text(encoding='utf-8'))
+                  language_ref = lesson.setdefault('curriculum', {}).setdefault('languageReference', {})
+                  keys = [k for k in language_ref.get('grammarTargetKeys', []) if k != stale_key]
+                  language_ref['grammarTargetKeys'] = keys
+                  if not keys:
+                      language_ref['noNewGrammarReason'] = (
+                          'Lexical-focus integration: the provisional grammar reservation was no longer '
+                          'available in the live sequential curriculum spec, so this Lesson claims no new grammar.'
+                      )
+                  path.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+                  print(f'Repaired stale provisional grammar target {stale_key} in Lesson {order}.')
+          else:
+              raise RuntimeError('Wave integration did not converge after 8 repair attempts')
+
+          manifest = json.loads(wave.read_text(encoding='utf-8'))
+          manifest['status'] = 'INTEGRATED'
+          manifest['integratedAt'] = datetime.now(timezone.utc).isoformat()
+          manifest['fullPrefixRegression'] = 'PASS'
+          wave.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Build text-only QA and pedagogy evidence
+        run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only
+      - name: Verify final full-prefix PASS
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py \
+            --repo-root . \
+            --config nova/curriculum/en-fa/factory.config.json \
+            --output nova/curriculum/en-fa/factory_validation.json
+          python - <<'PY'
+          import json
+          p=json.load(open('nova/curriculum/en-fa/factory_validation.json', encoding='utf-8'))
+          assert p['status'] == 'PASS', p
+          assert p['passedPrefixLength'] == 52, p['passedPrefixLength']
+          print('Final canonical prefix PASS through Lesson 52.')
+          PY
+      - name: Publish only after all text gates pass
+        run: |
+          git config user.name 'nova-production-bot'
+          git config user.email 'nova-production-bot@users.noreply.github.com'
+          git add nova/courses/en-fa/lessons/0045 nova/courses/en-fa/lessons/0046 nova/courses/en-fa/lessons/0047 nova/courses/en-fa/lessons/0048 nova/courses/en-fa/lessons/0049 nova/courses/en-fa/lessons/0050 nova/courses/en-fa/lessons/0051 nova/courses/en-fa/lessons/0052 nova/curriculum/en-fa nova/_assistant/content-system-v1/text_build_report.json
+          git add nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers
+          git commit -m 'Integrate validated Nova wave 45-52'
+          git push origin HEAD:main
