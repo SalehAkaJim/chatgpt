@@ -9,7 +9,7 @@
   "audioRequiredForPilotCompletion": true,
   "pilotLessonTarget": 20,
   "publishedLessons": 0,
-  "nextLesson": 27,
+  "nextLesson": 28,
   "mysqlTargetVersion": "9.0.1",
   "mysqlValidationRequiredBeforeLesson1Completion": true,
   "canonicalValidatorReady": true,
@@ -287,9 +287,19 @@
       "semanticReviewAverage": 4.5,
       "pendingDecisionCount": 0,
       "finalReviewComplete": false
+    },
+    {
+      "lessonKey": "EN-A1-L-0027",
+      "sourceHash": "9bd4ae62492e3510d5b05b318af26fb45b3cec085af10351d47c225f58afc466",
+      "technicalComplete": true,
+      "automatedQualityScore": 100,
+      "modelTextReviewComplete": true,
+      "semanticReviewAverage": 4.6,
+      "pendingDecisionCount": 0,
+      "finalReviewComplete": false
     }
   ],
-  "technicallyCompleteLessons": 26,
+  "technicallyCompleteLessons": 27,
   "authorizedStoryBatch": {
     "batchKey": "EN-A1-STORY-14-20",
     "newLessonCount": 7,
@@ -298,6 +308,6 @@
     "scope": "prototype_evaluation",
     "ownerLearnerReview": "PENDING"
   },
-  "modelTextReviewedLessons": 7,
+  "modelTextReviewedLessons": 8,
   "learnerValidationComplete": false
 }
