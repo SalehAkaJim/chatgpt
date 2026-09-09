@@ -10,8 +10,8 @@
   },
   "queryLimit": 80,
   "circuitOpened": false,
-  "queryCount": 58,
-  "evidenceQueryCount": 43,
+  "queryCount": 59,
+  "evidenceQueryCount": 44,
   "unavailableQueryCount": 0,
   "queries": [
     {
@@ -62,8 +62,7 @@
         }
       ],
       "sampleCount": 5,
-      "status": "evidence",
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+seven%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 101] Network is unreachable>"
+      "status": "evidence"
     },
     {
       "query": "at six",
@@ -807,8 +806,7 @@
       "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
       "sampleCount": 0,
-      "status": "no_hit",
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error _ssl.c:993: The handshake operation timed out>"
+      "status": "no_hit"
     },
     {
       "query": "room two",
@@ -846,8 +844,7 @@
       "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
       "sampleCount": 0,
-      "status": "no_hit",
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 101] Network is unreachable>"
+      "status": "no_hit"
     },
     {
       "query": "two at seven",
@@ -911,8 +908,7 @@
         }
       ],
       "sampleCount": 5,
-      "status": "evidence",
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+your+name%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 101] Network is unreachable>"
+      "status": "evidence"
     },
     {
       "query": "yes i like tea",
@@ -1491,8 +1487,7 @@
         }
       ],
       "sampleCount": 5,
-      "status": "evidence",
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+want%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 104] Connection reset by peer>"
+      "status": "evidence"
     },
     {
       "query": "i'm fine thanks",
@@ -1542,8 +1537,7 @@
         }
       ],
       "sampleCount": 5,
-      "status": "evidence",
-      "syncWarning": "failed to download https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+fine+thanks%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none: <urlopen error [Errno 101] Network is unreachable>"
+      "status": "evidence"
     },
     {
       "query": "i'm from",
@@ -2019,6 +2013,56 @@
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "we are in",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0026"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-WE-ARE-IN-PLACE"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22we+are+in%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 11422037,
+          "text": "We are in.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Agestur"
+        },
+        {
+          "id": 11762551,
+          "text": "We are in July.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LdjuherTaqvaylit"
+        },
+        {
+          "id": 11445361,
+          "text": "We are in custody.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Agestur"
+        },
+        {
+          "id": 11445346,
+          "text": "We are in prison.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Agestur"
+        },
+        {
+          "id": 11440002,
+          "text": "We are in trouble.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Agestur"
         }
       ],
       "sampleCount": 5,
