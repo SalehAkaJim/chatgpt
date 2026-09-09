@@ -1,23 +1,24 @@
 name: Nova Ready Wave Integration
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/nova-wave-integrate.yml'
-      - 'nova/curriculum/en-fa/waves/**/workers/**/lesson.source.json'
-      - 'nova/_assistant/content-system-v1/tools/factory_wave.py'
+  workflow_run:
+    workflows: ["Nova Lesson Production"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
   contents: write
 
+# Integration is queued behind the production writer and starts only after a
+# production run has completed. Keeping the same group preserves single-writer
+# ownership of curriculum state and canonical Lesson files.
 concurrency:
   group: nova-production-main
   cancel-in-progress: false
 
 jobs:
   integrate-ready-wave:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -80,6 +81,11 @@ jobs:
         run: |
           git config user.name "nova-production-bot"
           git config user.email "nova-production-bot@users.noreply.github.com"
+          git fetch origin main
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            echo "Main changed before canonical publication; a newer production completion will retry integration."
+            exit 1
+          fi
           git add nova/courses/ nova/curriculum/
           if git diff --cached --quiet; then
             echo "No canonical integration changes."
