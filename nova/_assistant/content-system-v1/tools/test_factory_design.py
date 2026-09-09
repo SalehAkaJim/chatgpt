@@ -15,6 +15,18 @@ class WordUnitTests(unittest.TestCase):
         self.assertFalse(is_word_unit(item))
         self.assertTrue(word_unit_errors(item))
 
+    def test_article_plus_noun_cannot_bypass_with_manual_lexicalized_flag(self):
+        item = {
+            "itemType": "word",
+            "displayForm": "a bus",
+            "metadata": {
+                "lexicalized": True,
+                "lexicalizationEvidence": "manual author assertion",
+            },
+        }
+        self.assertFalse(is_word_unit(item))
+        self.assertTrue(any("article-led phrase" in e for e in word_unit_errors(item)))
+
     def test_compositional_room_number_is_not_a_word(self):
         item = {"itemType": "formula", "displayForm": "room six", "metadata": {}}
         self.assertFalse(is_word_unit(item))
@@ -27,11 +39,19 @@ class WordUnitTests(unittest.TestCase):
             "metadata": {"referenceKey": "TEST-SENSE"},
         }))
 
-    def test_lexicalized_multi_token_word_is_allowed(self):
-        self.assertTrue(is_word_unit({
+    def test_lexicalized_multi_token_word_requires_auditable_evidence(self):
+        self.assertFalse(is_word_unit({
             "itemType": "word",
             "displayForm": "ice cream",
             "metadata": {"lexicalized": True},
+        }))
+        self.assertTrue(is_word_unit({
+            "itemType": "word",
+            "displayForm": "ice cream",
+            "metadata": {
+                "lexicalized": True,
+                "lexicalizationEvidence": "dictionary lexical entry for the complete compound",
+            },
         }))
 
 
