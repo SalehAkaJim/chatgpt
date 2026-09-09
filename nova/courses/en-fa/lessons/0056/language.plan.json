@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0056",
+  "sortOrder": 56,
+  "levelKey": "A1",
+  "lessonSourceHash": "d1cae638a5418d481f5974b804b018d2f40bf87a21736102b47c51964168d0d7",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0056-NEVER",
+      "form": "I never go there",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-NEVER-01",
+      "lemma": "never",
+      "role": "target",
+      "referenceKey": "EN-REF-6B546FF3BD937790B93A",
+      "spokenPriority": {
+        "lemma": "never",
+        "spokenRank": 136,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N EH1 V ER0",
+        "arpabet": [
+          "N EH1 V ER0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i never go there",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0056"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0056-NEVER"
+      ],
+      "lexicalLemmas": [
+        "never"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i never go there",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "say i never go there",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0056"
+      ],
+      "lexicalLemmas": [
+        "never"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i never go there",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "say i never eat there",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0056"
+      ],
+      "lexicalLemmas": [
+        "never"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i never eat there",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "i never eat there",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0056"
+      ],
+      "lexicalLemmas": [
+        "never"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i never eat there",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "2c3e778faea92f0521515f920c926e45b073cdf3b6f28fdf8661fafef014df93"
+}

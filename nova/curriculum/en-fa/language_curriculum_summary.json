@@ -3,7 +3,7 @@
   "courseCode": "en-fa",
   "levelKey": "A1",
   "generatedLessonsMode": "auto",
-  "generatedLessonCount": 52,
+  "generatedLessonCount": 60,
   "generatedLessons": [
     1,
     2,
@@ -56,12 +56,20 @@
     49,
     50,
     51,
-    52
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
   ],
-  "lastLessonSortOrder": 52,
-  "nextLessonSortOrder": 53,
-  "nextSpecPath": "nova/curriculum/en-fa/specs/0053.json",
-  "nextSpecHash": "dbcb1088b29ed0cc88c82728d9be9aac95b8ded4af13023d8d2f91321a801cb1",
+  "lastLessonSortOrder": 60,
+  "nextLessonSortOrder": 61,
+  "nextSpecPath": "nova/curriculum/en-fa/specs/0061.json",
+  "nextSpecHash": "8f034ea0e3b4d189ccc99611247b723381dc3863d4186a65f38cd07a3901c703",
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
   "languagePlans": [
@@ -645,6 +653,86 @@
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
       "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0053",
+      "sortOrder": 53,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0054",
+      "sortOrder": 54,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0055",
+      "sortOrder": 55,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0056",
+      "sortOrder": 56,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0057",
+      "sortOrder": 57,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 5
+    },
+    {
+      "lessonKey": "EN-A1-L-0058",
+      "sortOrder": 58,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0059",
+      "sortOrder": 59,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0060",
+      "sortOrder": 60,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
     }
   ],
   "curriculumSpecReports": [
@@ -971,6 +1059,94 @@
       "sortOrder": 52,
       "specKey": "en-fa-A1-LESSON-SPEC-0052",
       "specHash": "9d54194ede63584ae3d5aa2f0645be4c68cd89d15a1e2e46bd37d67eb1e58d97",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0053",
+      "sortOrder": 53,
+      "specKey": "en-fa-A1-LESSON-SPEC-0053",
+      "specHash": "dbcb1088b29ed0cc88c82728d9be9aac95b8ded4af13023d8d2f91321a801cb1",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0054",
+      "sortOrder": 54,
+      "specKey": "en-fa-A1-LESSON-SPEC-0054",
+      "specHash": "f2f4be267326c70d6166e96ed4eba0c7e2786473961dcfe717a0f4bd737134d5",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0055",
+      "sortOrder": 55,
+      "specKey": "en-fa-A1-LESSON-SPEC-0055",
+      "specHash": "59f8b26e38680c9a581d9a15f141fa429c86f697df1de9f86d7237bc99fa9473",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0056",
+      "sortOrder": 56,
+      "specKey": "en-fa-A1-LESSON-SPEC-0056",
+      "specHash": "84b0b1f0012ea5076e9632b8f12461638963d4f703375e3ce3ba9538502f12c5",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0057",
+      "sortOrder": 57,
+      "specKey": "en-fa-A1-LESSON-SPEC-0057",
+      "specHash": "26145de3e1a54e4e6204636e1d16428118b156b9a5ffd8d26954b88dac963960",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0058",
+      "sortOrder": 58,
+      "specKey": "en-fa-A1-LESSON-SPEC-0058",
+      "specHash": "073a637b944e7a9a9fe62e5bf57216c692a8a160a7206793f5b5457233effcc1",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0059",
+      "sortOrder": 59,
+      "specKey": "en-fa-A1-LESSON-SPEC-0059",
+      "specHash": "f633e085540a9ed4cbc49edb7f0783c5dc9d6267dcccce6cf9d1fd8dd3fc0ba2",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0060",
+      "sortOrder": 60,
+      "specKey": "en-fa-A1-LESSON-SPEC-0060",
+      "specHash": "a816c4a55a9ecfb496554b994d811c0b5ea00a28c64c97e569ae55eb5a81f6b5",
       "enforced": true,
       "status": "PASS",
       "errors": [],

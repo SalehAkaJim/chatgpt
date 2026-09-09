@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0058",
+  "sortOrder": 58,
+  "levelKey": "A1",
+  "lessonSourceHash": "16627ad08e4b54368ae80a568516b1aa603df07153e9495bbd6e7c5e55a9f21e",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0058-GREAT",
+      "form": "A great big room",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-GREAT-01",
+      "lemma": "great",
+      "role": "target",
+      "referenceKey": "EN-REF-6E0A0655B7792EC9F36A",
+      "spokenPriority": {
+        "lemma": "great",
+        "spokenRank": 195,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "G R EY1 T",
+        "arpabet": [
+          "G R EY1 T"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "a great big room",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0058"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0058-GREAT"
+      ],
+      "lexicalLemmas": [
+        "great"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a great big room",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "say a great big room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0058"
+      ],
+      "lexicalLemmas": [
+        "great"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say a great big room",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "say a great big bag",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0058"
+      ],
+      "lexicalLemmas": [
+        "great"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say a great big bag",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "a great big bag",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0058"
+      ],
+      "lexicalLemmas": [
+        "great"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a great big bag",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "8ec8ac6502aebea436fd970a49e5d98fad69a32711f557091cb1c72d358e530e"
+}

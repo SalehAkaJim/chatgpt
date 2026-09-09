@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0054",
+  "sortOrder": 54,
+  "levelKey": "A1",
+  "lessonSourceHash": "3a4d44652d8a8f6e80891d458b9db74c911612994335bc443746eb2014b85782",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0054-TAKE",
+      "form": "Take action",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-TAKE-01",
+      "lemma": "take",
+      "role": "target",
+      "referenceKey": "EN-REF-9A2CAA84954D0F700A83",
+      "spokenPriority": {
+        "lemma": "take",
+        "spokenRank": 72,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T EY1 K",
+        "arpabet": [
+          "T EY1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "take action",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0054"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0054-TAKE"
+      ],
+      "lexicalLemmas": [
+        "take"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "take action",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "say take action",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0054"
+      ],
+      "lexicalLemmas": [
+        "take"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say take action",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "say i take action",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0054"
+      ],
+      "lexicalLemmas": [
+        "take"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say i take action",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "i take action",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0054"
+      ],
+      "lexicalLemmas": [
+        "take"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i take action",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "dba39eb9ee987889063fae1be06319e5d7ec633dfbdc7f317d2705e6e2ef2e5e"
+}

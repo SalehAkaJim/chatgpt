@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0053",
+  "sortOrder": 53,
+  "levelKey": "A1",
+  "lessonSourceHash": "14d37989ea498703ad74b48ff24d3a4944f92f6bf946c21b157dcd0aeaf7cfa5",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0053-DAY",
+      "form": "One day",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-DAY-01",
+      "lemma": "day",
+      "role": "target",
+      "referenceKey": "EN-REF-0A1B6C644EA3E00970D7",
+      "spokenPriority": {
+        "lemma": "day",
+        "spokenRank": 106,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "D EY1",
+        "arpabet": [
+          "D EY1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "say one day",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0053"
+      ],
+      "lexicalLemmas": [
+        "day"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say one day",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "one day",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0053"
+      ],
+      "lexicalLemmas": [
+        "day"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "one day",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "f6a54e4db090d763f782ec3508450834efa6317faa86e423e53514a4d53452d7"
+}

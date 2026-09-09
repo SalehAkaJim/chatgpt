@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0058",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "a great big bag",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-09",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0058; not an independent human or learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "The two bounded target uses of great are short and contextually motivated for early A1."
+      },
+      "persianMeaningQuality": {
+        "score": 4,
+        "evidence": "Persian copy preserves the selected bounded meaning of great without claiming broader mastery."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "Recognition, guided exchange, changed-context selection and hidden retrieval align with the stated outcome."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors separate the first target response, the changed-context response, and an unrelated sentence."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "The authored scene gives great a concrete reason to be produced in a short exchange."
+      },
+      "difficultyFit": {
+        "score": 5,
+        "evidence": "Utterance length and activity load remain tightly controlled for early A1."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "The target is repeated for recognition and then recombined in a second controlled context."
+      },
+      "transferQuality": {
+        "score": 4,
+        "evidence": "The final response requires same-lesson changed-context retrieval rather than exact prompt copying."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Scenario, dialogue, activities, lexical target and bounded assessment claim align."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "Model/editor review only; no real learner test or independent human review is claimed."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Review is limited to the bounded A1 outcome.",
+      "Final audio prosody remains unreviewed until text gates pass."
+    ],
+    "resolvedFindings": [
+      "The selected great use is consistent with the committed reference sense for this Lesson.",
+      "Persian meaning preserves the intended bounded sense.",
+      "Activities align with the stated outcome and evidence boundary.",
+      "Character pair and learner role do not mechanically repeat the immediately previous Lesson."
+    ],
+    "lessonKey": "EN-A1-L-0058",
+    "sourceHash": "16627ad08e4b54368ae80a568516b1aa603df07153e9495bbd6e7c5e55a9f21e",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.2,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "16627ad08e4b54368ae80a568516b1aa603df07153e9495bbd6e7c5e55a9f21e"
+}

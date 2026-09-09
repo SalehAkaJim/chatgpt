@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0057",
+  "sortOrder": 57,
+  "levelKey": "A1",
+  "lessonSourceHash": "e0eb29dccf1d7b3b68edd8efb60bfe076a5b2b27ec0d8db9a1a091a6b610cc59",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0057-LIFE",
+      "form": "Life here is good",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-LIFE-01",
+      "lemma": "life",
+      "role": "target",
+      "referenceKey": "EN-REF-DFDB9BBAFFFAA468D0D5",
+      "spokenPriority": {
+        "lemma": "life",
+        "spokenRank": 250,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "L AY1 F",
+        "arpabet": [
+          "L AY1 F"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "life here is good",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0057"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0057-LIFE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "say life here is",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0057"
+      ],
+      "lexicalLemmas": [
+        "life"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say life here is",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "life here is",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0057"
+      ],
+      "lexicalLemmas": [
+        "life"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "life here is",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "say my life is good",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0057"
+      ],
+      "lexicalLemmas": [
+        "life"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say my life is good",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "my life is good",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0057"
+      ],
+      "lexicalLemmas": [
+        "life"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "my life is good",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "111ec98862e330a619f933c5194cc819c73aed4414e4bac5f922f16c9d2b6afb"
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0055",
+  "sortOrder": 55,
+  "levelKey": "A1",
+  "lessonSourceHash": "0bef9355051cb4fa4e75fefd76e4359e043372e3ad102dfd8e3de127929ee070",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0055-MANY",
+      "form": "Many books",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-MANY-01",
+      "lemma": "many",
+      "role": "target",
+      "referenceKey": "EN-REF-AF7CB28B0E5289AACE02",
+      "spokenPriority": {
+        "lemma": "many",
+        "spokenRank": 156,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M EH1 N IY0",
+        "arpabet": [
+          "M EH1 N IY0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "many books",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0055"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0055-MANY"
+      ],
+      "lexicalLemmas": [
+        "many"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "many books",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "say many books",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0055"
+      ],
+      "lexicalLemmas": [
+        "many"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "say many books",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "now say many cups",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0055"
+      ],
+      "lexicalLemmas": [
+        "many"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "now say many cups",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    },
+    {
+      "query": "many cups",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0055"
+      ],
+      "lexicalLemmas": [
+        "many"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "many cups",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "120f3862ea08a5b0763773d0cb8565e257bbe335f57a14edb38efaebc0766cab"
+}
