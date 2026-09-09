@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 import re
-from collections import defaultdict
 
 from language_units import is_word_unit, word_unit_errors
 
 WORD = re.compile(r"[A-Za-z]+(?:'[A-Za-z]+)?")
 NON_LEXICAL_FILLER_SLOTS = {"name", "person", "place", "city", "country"}
+SINGLE_TOKEN_SLOTS = {"number", "time", "day"}
 
 
 def norm(text: str) -> str:
@@ -42,48 +42,54 @@ def naturalness_errors(lesson: dict) -> list[str]:
             raw_prompt = str(prompt.get("textEn") or "").strip()
             label = f"{lesson.get('lessonKey')}/{activity.get('activityKey')}/{ex.get('exchangeKey')}"
 
-            # Bare noun offers such as "Coffee?" do not naturally elicit a
-            # preference statement such as "I like coffee.".
             if re.fullmatch(r"[A-Za-z]+\?", raw_prompt) and (r.startswith("i like ") or r.startswith("yes i like ")):
                 errors.append(f"NF-H01 {label}: bare-item offer/ellipsis cannot elicit a like-preference statement")
 
-            # An either-or offer normally elicits a choice. If the curriculum
-            # needs I want..., the context must explicitly license want or the
-            # learner must reject/correct the offered option first.
             if " or " in f" {p} " and r.startswith("i want "):
                 errors.append(f"NF-H02 {label}: either-or offer unnaturally forces I want; use a natural choice or a want-eliciting context")
 
-            # If an answer is explicitly a preference statement, a direct
-            # preference question is the clean beginner prompt unless the
-            # response is a correction/contrast.
             if r.startswith("i like ") and " like " not in f" {p} ":
                 errors.append(f"NF-H03 {label}: preference answer is not pragmatically licensed by the prompt")
     return errors
 
 
 def _construction_parts(form: str):
-    if "+" not in form:
+    # Only machine-enforce simple one-slot constructions. More complex forms
+    # such as "item + or + item" need an explicit authored test rather than a
+    # lossy parser.
+    if form.count("+") != 1:
         return None
     left, right = form.split("+", 1)
-    slot_match = re.search(r"[A-Za-z_]+", right)
-    if not slot_match:
+    m = re.fullmatch(r"\s*([A-Za-z_]+)\s*[?.!]?\s*", right)
+    if not m:
         return None
-    slot = slot_match.group(0).lower()
-    suffix = right[slot_match.end():]
-    return norm(left), slot, norm(suffix)
+    slot = m.group(1).lower()
+    return norm(left), slot
 
 
-def _extract_filler(text: str, prefix: str, suffix: str) -> str | None:
+def _extract_filler(text: str, prefix: str, slot: str) -> str | None:
     value = norm(text)
     if prefix and not value.startswith(prefix + " "):
         return None
-    if not prefix and not value:
-        return None
     middle = value[len(prefix):].strip() if prefix else value
-    if suffix:
-        if not middle.endswith(" " + suffix) and middle != suffix:
-            return None
-        middle = middle[: -len(suffix)].strip()
+    if not middle:
+        return None
+
+    # Common politeness and article material belongs to the construction, not
+    # to the word identity of the filler.
+    middle = re.sub(r"\s+please$", "", middle)
+    middle = re.sub(r"^(a|an|the)\s+", "", middle)
+
+    if slot in SINGLE_TOKEN_SLOTS:
+        return middle.split()[0] if middle else None
+
+    # Reject obvious compound-turn residue such as "one or room two". The
+    # construction parser should collect a filler, not swallow the rest of a
+    # dialogue turn.
+    if " or " in f" {middle} ":
+        return None
+    if len(middle.split()) > 3:
+        return None
     return middle or None
 
 
@@ -109,7 +115,12 @@ def generativity_errors(lessons: list[dict], max_delay: int = 4) -> list[str]:
             parsed = _construction_parts(str(construction.get("form") or ""))
             if not parsed:
                 continue
-            prefix, slot, suffix = parsed
+            prefix, slot = parsed
+            # Names/places can be proper nouns or contextual labels rather than
+            # reusable word-table entries; do not apply lexical-filler checks.
+            if slot in NON_LEXICAL_FILLER_SLOTS:
+                continue
+
             due = intro + max_delay
             if max_order < due:
                 continue
@@ -117,7 +128,7 @@ def generativity_errors(lessons: list[dict], max_delay: int = 4) -> list[str]:
             word_forms: set[str] = set()
             for order in range(intro, due + 1):
                 for text in texts_by_order.get(order, []):
-                    filler = _extract_filler(text, prefix, suffix)
+                    filler = _extract_filler(text, prefix, slot)
                     if filler:
                         fillers.add(filler)
                 word_forms |= word_forms_by_order.get(order, set())
@@ -129,16 +140,11 @@ def generativity_errors(lessons: list[dict], max_delay: int = 4) -> list[str]:
                 )
                 continue
 
-            if slot not in NON_LEXICAL_FILLER_SLOTS:
-                for filler in sorted(fillers):
-                    candidate = re.sub(r"^(a|an|the)\s+", "", filler)
-                    # A multiword filler may itself be a lexicalized word unit,
-                    # but an arbitrary phrase such as 'a bus' is never accepted
-                    # as the word merely because it filled the slot.
-                    if candidate not in word_forms and filler not in word_forms:
-                        errors.append(
-                            f"DG-H02 {lesson.get('lessonKey')} {key}: filler '{filler}' was used productively but no independent word/lexeme exists by Lesson {due}"
-                        )
+            for filler in sorted(fillers):
+                if filler not in word_forms:
+                    errors.append(
+                        f"DG-H02 {lesson.get('lessonKey')} {key}: filler '{filler}' was used productively but no independent word/lexeme exists by Lesson {due}"
+                    )
     return errors
 
 
