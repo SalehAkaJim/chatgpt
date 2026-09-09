@@ -17,4 +17,6 @@ jobs:
       - name: Cancel stale Nova production run
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh run cancel 34375589687 --repo SalehAkaJim/chatgpt
+        run: |
+          echo "Cancelling stale Nova production run 34375589687"
+          gh run cancel 34375589687 --repo SalehAkaJim/chatgpt
