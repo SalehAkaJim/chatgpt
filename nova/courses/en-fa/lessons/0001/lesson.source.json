@@ -64,20 +64,6 @@
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-HI-01",
-      "itemType": "formula",
-      "displayForm": "Hi!",
-      "translationFa": "سلام!",
-      "role": "target",
-      "lemma": "hi",
-      "partOfSpeech": "formula",
-      "senseKey": "greeting",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
       "lexicalKey": "EN-LEX-NAME-01",
       "itemType": "word",
       "displayForm": "name",
@@ -89,20 +75,6 @@
       "audioEligible": true,
       "metadata": {
         "referenceKey": "EN-REF-F7A6AD8E6587EDA3E40E"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-NICE-TO-MEET-YOU-01",
-      "itemType": "formula",
-      "displayForm": "Nice to meet you.",
-      "translationFa": "از آشنایی باهات خوشحالم.",
-      "role": "support",
-      "lemma": "nice to meet you",
-      "partOfSpeech": "formula",
-      "senseKey": "first_meeting_formula",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
       }
     }
   ],
@@ -230,7 +202,6 @@
       "instructionFa": "عبارت سلام و کلمه اصلی این درس را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-HI-01",
           "EN-LEX-NAME-01"
         ],
         "explanationFa": "Hi یک سلام کوتاه و رایج است. name یعنی اسم. برای گفتن اسمت از I'm و بعد اسم استفاده کن."

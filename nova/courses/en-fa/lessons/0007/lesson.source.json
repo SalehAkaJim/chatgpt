@@ -88,48 +88,6 @@
       "metadata": {
         "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185"
       }
-    },
-    {
-      "lexicalKey": "EN-LEX-CAN-I-HAVE-01",
-      "itemType": "formula",
-      "displayForm": "Can I have ..., please?",
-      "translationFa": "می شه لطفا ... بدی؟",
-      "role": "target",
-      "lemma": "can i have please",
-      "partOfSpeech": "formula",
-      "senseKey": "polite_object_request",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_request_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "itemType": "formula",
-      "displayForm": "Here you go.",
-      "translationFa": "بفرما.",
-      "role": "target",
-      "lemma": "here you go",
-      "partOfSpeech": "formula",
-      "senseKey": "giving_object",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_transaction_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-FORMULA-01",
-      "itemType": "formula",
-      "displayForm": "Thanks!",
-      "translationFa": "ممنون!",
-      "role": "target",
-      "lemma": "thanks",
-      "partOfSpeech": "formula",
-      "senseKey": "casual_thanks",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
     }
   ],
   "turns": [
@@ -210,19 +168,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "lexical_teach",
-      "instructionFa": "سه عبارت اصلی درخواست، دادن و تشکر را ببین و بشنو.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-CAN-I-HAVE-01",
-          "EN-LEX-HERE-YOU-GO-01",
-          "EN-LEX-THANKS-FORMULA-01"
-        ],
-        "explanationFa": "Can I have ... please? برای درخواست مودبانه یک چیز است. Here you go هنگام دادن چیزی به کار می رود و Thanks! یک تشکر کوتاه و طبیعی است."
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",

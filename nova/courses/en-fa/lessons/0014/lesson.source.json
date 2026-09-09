@@ -68,78 +68,7 @@
     ],
     "pedagogyVersion": 2
   },
-  "lexicalItems": [
-    {
-      "lexicalKey": "EN-LEX-ROOM-ONE-01",
-      "itemType": "formula",
-      "displayForm": "Room one",
-      "translationFa": "اتاق یک",
-      "role": "target",
-      "lemma": "room one",
-      "partOfSpeech": "formula",
-      "senseKey": "room_label_one",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_room_label"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-ROOM-TWO-01",
-      "itemType": "formula",
-      "displayForm": "Room two",
-      "translationFa": "اتاق دو",
-      "role": "target",
-      "lemma": "room two",
-      "partOfSpeech": "formula",
-      "senseKey": "room_label_two",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_room_label"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-OR-CHOICE-01",
-      "itemType": "formula",
-      "displayForm": "... or ...?",
-      "translationFa": "... یا ...؟",
-      "role": "review",
-      "lemma": "or choice",
-      "partOfSpeech": "formula",
-      "senseKey": "two_option_offer",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_choice_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-PLEASE-CHOICE-01",
-      "itemType": "formula",
-      "displayForm": "..., please.",
-      "translationFa": "...، لطفا.",
-      "role": "review",
-      "lemma": "please choice",
-      "partOfSpeech": "formula",
-      "senseKey": "polite_short_choice",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_politeness_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-FORMULA-01",
-      "itemType": "formula",
-      "displayForm": "Thanks!",
-      "translationFa": "ممنون!",
-      "role": "review",
-      "lemma": "thanks",
-      "partOfSpeech": "formula",
-      "senseKey": "casual_thanks",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    }
-  ],
+  "lexicalItems": [],
   "turns": [
     {
       "turnKey": "T01",
@@ -198,18 +127,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "lexical_teach",
-      "instructionFa": "دو برچسب اتاق را به صورت یک تکه یاد بگیر.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-ROOM-ONE-01",
-          "EN-LEX-ROOM-TWO-01"
-        ],
-        "explanationFa": "فعلا one و two را جداگانه حفظ نمی کنی؛ Room one یعنی اتاق یک و Room two یعنی اتاق دو."
-      }
-    },
     {
       "activityKey": "A02",
       "type": "response_choice",

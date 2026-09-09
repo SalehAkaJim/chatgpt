@@ -78,92 +78,7 @@
     ],
     "pedagogyVersion": 2
   },
-  "lexicalItems": [
-    {
-      "lexicalKey": "EN-LEX-HI-01",
-      "itemType": "formula",
-      "displayForm": "Hi!",
-      "translationFa": "سلام!",
-      "role": "review",
-      "lemma": "hi",
-      "partOfSpeech": "formula",
-      "senseKey": "greeting",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-WHERE-ARE-YOU-FROM-01",
-      "itemType": "formula",
-      "displayForm": "Where are you from?",
-      "translationFa": "اهل کجایی؟",
-      "role": "target",
-      "lemma": "where are you from",
-      "partOfSpeech": "formula",
-      "senseKey": "ask_origin",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_information_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-IM-FROM-PLACE-01",
-      "itemType": "formula",
-      "displayForm": "I'm from ...",
-      "translationFa": "من اهل ... هستم.",
-      "role": "target",
-      "lemma": "i'm from",
-      "partOfSpeech": "formula",
-      "senseKey": "state_origin",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_information_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-IRAN-01",
-      "itemType": "other",
-      "displayForm": "Iran",
-      "translationFa": "ایران",
-      "role": "target",
-      "lemma": "iran",
-      "partOfSpeech": "proper_noun",
-      "senseKey": "country_iran",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_proper_noun"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-CANADA-01",
-      "itemType": "other",
-      "displayForm": "Canada",
-      "translationFa": "کانادا",
-      "role": "target",
-      "lemma": "canada",
-      "partOfSpeech": "proper_noun",
-      "senseKey": "country_canada",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_proper_noun"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-NICE-ACK-01",
-      "itemType": "formula",
-      "displayForm": "Nice!",
-      "translationFa": "چه خوب!",
-      "role": "support",
-      "lemma": "nice",
-      "partOfSpeech": "formula",
-      "senseKey": "positive_acknowledgement",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    }
-  ],
+  "lexicalItems": [],
   "turns": [
     {
       "turnKey": "T01",
@@ -270,20 +185,6 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      }
-    },
-    {
-      "activityKey": "A02",
-      "type": "lexical_teach",
-      "instructionFa": "دو الگوی اصلی و دو اسم مکان نمونه را ببین و بشنو.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-WHERE-ARE-YOU-FROM-01",
-          "EN-LEX-IM-FROM-PLACE-01",
-          "EN-LEX-IRAN-01",
-          "EN-LEX-CANADA-01"
-        ],
-        "explanationFa": "Where are you from? برای پرسیدن اهل کجا بودن است. برای پاسخ از I'm from و بعد اسم مکان استفاده کن. Iran و Canada فقط دو نمونه برای تمرین این الگو هستند."
       }
     },
     {

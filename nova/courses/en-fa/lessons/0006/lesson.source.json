@@ -97,34 +97,6 @@
       "metadata": {
         "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185"
       }
-    },
-    {
-      "lexicalKey": "EN-LEX-WHATS-THIS-01",
-      "itemType": "formula",
-      "displayForm": "What's this?",
-      "translationFa": "این چیه؟",
-      "role": "target",
-      "lemma": "what's this",
-      "partOfSpeech": "formula",
-      "senseKey": "ask_near_object_name",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_object_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-ITS-A-01",
-      "itemType": "formula",
-      "displayForm": "It's a ...",
-      "translationFa": "این یک ... است.",
-      "role": "target",
-      "lemma": "it's a",
-      "partOfSpeech": "formula",
-      "senseKey": "name_single_object",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_object_formula"
-      }
     }
   ],
   "turns": [
@@ -192,9 +164,7 @@
       "config": {
         "lexicalKeys": [
           "EN-LEX-PEN-01",
-          "EN-LEX-BOOK-01",
-          "EN-LEX-WHATS-THIS-01",
-          "EN-LEX-ITS-A-01"
+          "EN-LEX-BOOK-01"
         ],
         "explanationFa": "pen یعنی خودکار و book یعنی کتاب. برای پرسیدن نام وسیله نزدیک از What's this? و برای جواب از It's a و نام وسیله استفاده کن."
       }

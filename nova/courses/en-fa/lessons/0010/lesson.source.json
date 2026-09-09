@@ -111,62 +111,6 @@
       "metadata": {
         "referenceKey": "EN-REF-93033FDD55B1A504F831"
       }
-    },
-    {
-      "lexicalKey": "EN-LEX-OR-CHOICE-01",
-      "itemType": "formula",
-      "displayForm": "... or ...?",
-      "translationFa": "... یا ...؟",
-      "role": "target",
-      "lemma": "or choice",
-      "partOfSpeech": "formula",
-      "senseKey": "two_option_offer",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_choice_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-PLEASE-CHOICE-01",
-      "itemType": "formula",
-      "displayForm": "..., please.",
-      "translationFa": "...، لطفا.",
-      "role": "review",
-      "lemma": "please choice",
-      "partOfSpeech": "formula",
-      "senseKey": "polite_short_choice",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_politeness_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "itemType": "formula",
-      "displayForm": "Here you go.",
-      "translationFa": "بفرما.",
-      "role": "review",
-      "lemma": "here you go",
-      "partOfSpeech": "formula",
-      "senseKey": "giving_object",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_transaction_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-FORMULA-01",
-      "itemType": "formula",
-      "displayForm": "Thanks!",
-      "translationFa": "ممنون!",
-      "role": "review",
-      "lemma": "thanks",
-      "partOfSpeech": "formula",
-      "senseKey": "casual_thanks",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
     }
   ],
   "turns": [
@@ -241,7 +185,6 @@
       "instructionFa": "الگوی انتخاب بین دو نوشیدنی را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-OR-CHOICE-01",
           "EN-LEX-TEA-01",
           "EN-LEX-COFFEE-01",
           "EN-LEX-WATER-01"

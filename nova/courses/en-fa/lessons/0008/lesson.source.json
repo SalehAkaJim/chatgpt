@@ -100,62 +100,6 @@
       "metadata": {
         "referenceKey": "EN-REF-DB96FA960706CF5AD234"
       }
-    },
-    {
-      "lexicalKey": "EN-LEX-WHERES-MY-01",
-      "itemType": "formula",
-      "displayForm": "Where's my ...?",
-      "translationFa": "... من کجاست؟",
-      "role": "target",
-      "lemma": "where's my",
-      "partOfSpeech": "formula",
-      "senseKey": "ask_own_item_location",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_location_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-ON-THE-TABLE-01",
-      "itemType": "formula",
-      "displayForm": "It's on the table.",
-      "translationFa": "روی میز است.",
-      "role": "target",
-      "lemma": "it's on the table",
-      "partOfSpeech": "formula",
-      "senseKey": "location_on_table",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_location_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "itemType": "formula",
-      "displayForm": "Here you go.",
-      "translationFa": "بفرما.",
-      "role": "review",
-      "lemma": "here you go",
-      "partOfSpeech": "formula",
-      "senseKey": "giving_object",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_transaction_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-FORMULA-01",
-      "itemType": "formula",
-      "displayForm": "Thanks!",
-      "translationFa": "ممنون!",
-      "role": "review",
-      "lemma": "thanks",
-      "partOfSpeech": "formula",
-      "senseKey": "casual_thanks",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
     }
   ],
   "turns": [
@@ -222,9 +166,7 @@
       "instructionFa": "کلمه میز و دو الگوی مکانی را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-TABLE-01",
-          "EN-LEX-WHERES-MY-01",
-          "EN-LEX-ON-THE-TABLE-01"
+          "EN-LEX-TABLE-01"
         ],
         "explanationFa": "table یعنی میز. Where's my ...? برای پرسیدن جای وسیله خودت است و It's on the table. می گوید وسیله روی میز قرار دارد."
       }

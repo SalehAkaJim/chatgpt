@@ -70,78 +70,7 @@
     ],
     "pedagogyVersion": 2
   },
-  "lexicalItems": [
-    {
-      "lexicalKey": "EN-LEX-HI-01",
-      "itemType": "formula",
-      "displayForm": "Hi!",
-      "translationFa": "سلام!",
-      "role": "review",
-      "lemma": "hi",
-      "partOfSpeech": "formula",
-      "senseKey": "greeting",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
-      "itemType": "formula",
-      "displayForm": "How are you?",
-      "translationFa": "حالت چطوره؟",
-      "role": "target",
-      "lemma": "how are you",
-      "partOfSpeech": "formula",
-      "senseKey": "wellbeing_question",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-IM-FINE-THANKS-01",
-      "itemType": "formula",
-      "displayForm": "I'm fine, thanks.",
-      "translationFa": "خوبم، ممنون.",
-      "role": "target",
-      "lemma": "i'm fine thanks",
-      "partOfSpeech": "formula",
-      "senseKey": "wellbeing_response",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-SEE-YOU-01",
-      "itemType": "formula",
-      "displayForm": "See you!",
-      "translationFa": "فعلا خداحافظ!",
-      "role": "target",
-      "lemma": "see you",
-      "partOfSpeech": "formula",
-      "senseKey": "casual_goodbye",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-GOOD-ACK-01",
-      "itemType": "formula",
-      "displayForm": "Good!",
-      "translationFa": "خوبه!",
-      "role": "support",
-      "lemma": "good",
-      "partOfSpeech": "formula",
-      "senseKey": "positive_acknowledgement",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    }
-  ],
+  "lexicalItems": [],
   "turns": [
     {
       "turnKey": "T01",
@@ -276,19 +205,6 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      }
-    },
-    {
-      "activityKey": "A02",
-      "type": "lexical_teach",
-      "instructionFa": "سه عبارت اصلی احوالپرسی را ببین و بشنو.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-HOW-ARE-YOU-01",
-          "EN-LEX-IM-FINE-THANKS-01",
-          "EN-LEX-SEE-YOU-01"
-        ],
-        "explanationFa": "How are you? برای پرسیدن حال است. I'm fine, thanks. یک پاسخ کوتاه و مودبانه است. See you! یک خداحافظی دوستانه و غیررسمی است."
       }
     },
     {

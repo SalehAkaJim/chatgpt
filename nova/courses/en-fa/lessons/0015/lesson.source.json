@@ -70,34 +70,6 @@
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-HOW-MUCH-IS-IT-01",
-      "itemType": "formula",
-      "displayForm": "How much is it?",
-      "translationFa": "قیمتش چقدره؟",
-      "role": "target",
-      "lemma": "how much is it",
-      "partOfSpeech": "formula",
-      "senseKey": "ask_price_context_item",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_price_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-FIVE-DOLLARS-01",
-      "itemType": "formula",
-      "displayForm": "Five dollars.",
-      "translationFa": "پنج دلار.",
-      "role": "target",
-      "lemma": "five dollars",
-      "partOfSpeech": "formula",
-      "senseKey": "fixed_price_five_dollars",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_price_chunk"
-      }
-    },
-    {
       "lexicalKey": "EN-LEX-TEA-01",
       "itemType": "word",
       "displayForm": "tea",
@@ -109,34 +81,6 @@
       "audioEligible": true,
       "metadata": {
         "referenceKey": "EN-REF-C86BD7B12371D318284C"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "itemType": "formula",
-      "displayForm": "Here you go.",
-      "translationFa": "بفرما.",
-      "role": "review",
-      "lemma": "here you go",
-      "partOfSpeech": "formula",
-      "senseKey": "giving_object",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_transaction_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-FORMULA-01",
-      "itemType": "formula",
-      "displayForm": "Thanks!",
-      "translationFa": "ممنون!",
-      "role": "review",
-      "lemma": "thanks",
-      "partOfSpeech": "formula",
-      "senseKey": "casual_thanks",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
       }
     }
   ],
@@ -225,18 +169,6 @@
         "purpose": "reading_for_key_information",
         "evidenceKind": "recognition_or_selection",
         "skillFocus": "reading"
-      }
-    },
-    {
-      "activityKey": "A02",
-      "type": "lexical_teach",
-      "instructionFa": "سوال قیمت و پاسخ ثابت این درس را به صورت chunk یاد بگیر.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-HOW-MUCH-IS-IT-01",
-          "EN-LEX-FIVE-DOLLARS-01"
-        ],
-        "explanationFa": "How much is it? یعنی قیمتش چقدره؟ Five dollars. یعنی پنج دلار. فعلا عدد و واحد پول را جداگانه گسترش نمی دهیم."
       }
     },
     {

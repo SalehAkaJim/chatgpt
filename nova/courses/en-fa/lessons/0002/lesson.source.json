@@ -67,20 +67,6 @@
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-HI-01",
-      "itemType": "formula",
-      "displayForm": "Hi!",
-      "translationFa": "سلام!",
-      "role": "review",
-      "lemma": "hi",
-      "partOfSpeech": "formula",
-      "senseKey": "greeting",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
       "lexicalKey": "EN-LEX-NAME-01",
       "itemType": "word",
       "displayForm": "name",
@@ -92,20 +78,6 @@
       "audioEligible": true,
       "metadata": {
         "referenceKey": "EN-REF-F7A6AD8E6587EDA3E40E"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-NICE-TO-MEET-YOU-01",
-      "itemType": "formula",
-      "displayForm": "Nice to meet you.",
-      "translationFa": "از آشنایی باهات خوشحالم.",
-      "role": "target",
-      "lemma": "nice to meet you",
-      "partOfSpeech": "formula",
-      "senseKey": "first_meeting_formula",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
       }
     }
   ],
@@ -196,17 +168,6 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      }
-    },
-    {
-      "activityKey": "A02",
-      "type": "lexical_teach",
-      "instructionFa": "عبارت جدید این آشنایی را ببین و بشنو.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-NICE-TO-MEET-YOU-01"
-        ],
-        "explanationFa": "Nice to meet you را وقتی برای اولین بار با کسی آشنا می شوی به کار می بری. اگر طرف مقابل اول این را گفت، می توانی بگویی Nice to meet you, too."
       }
     },
     {

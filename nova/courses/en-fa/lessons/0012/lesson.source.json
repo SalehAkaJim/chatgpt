@@ -99,62 +99,6 @@
       "metadata": {
         "referenceKey": "EN-REF-6CB64DEA48DE0EFA4185"
       }
-    },
-    {
-      "lexicalKey": "EN-LEX-CORRECT-ITEM-01",
-      "itemType": "formula",
-      "displayForm": "No, ..., please.",
-      "translationFa": "نه، ... لطفا.",
-      "role": "target",
-      "lemma": "no item please",
-      "partOfSpeech": "formula",
-      "senseKey": "polite_item_correction",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_repair_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-SORRY-REPAIR-01",
-      "itemType": "formula",
-      "displayForm": "Sorry.",
-      "translationFa": "ببخشید.",
-      "role": "support",
-      "lemma": "sorry",
-      "partOfSpeech": "formula",
-      "senseKey": "brief_apology_after_mistake",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-      "itemType": "formula",
-      "displayForm": "Here you go.",
-      "translationFa": "بفرما.",
-      "role": "review",
-      "lemma": "here you go",
-      "partOfSpeech": "formula",
-      "senseKey": "giving_object",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_transaction_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-THANKS-FORMULA-01",
-      "itemType": "formula",
-      "displayForm": "Thanks!",
-      "translationFa": "ممنون!",
-      "role": "review",
-      "lemma": "thanks",
-      "partOfSpeech": "formula",
-      "senseKey": "casual_thanks",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
     }
   ],
   "turns": [
@@ -221,7 +165,6 @@
       "instructionFa": "الگوی اصلاح کوتاه و مودبانه را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-CORRECT-ITEM-01",
           "EN-LEX-PEN-01",
           "EN-LEX-BOOK-01"
         ],

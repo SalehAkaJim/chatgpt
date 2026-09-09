@@ -75,34 +75,6 @@
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-YES-PLEASE-01",
-      "itemType": "formula",
-      "displayForm": "Yes, please.",
-      "translationFa": "بله، لطفا.",
-      "role": "target",
-      "lemma": "yes please",
-      "partOfSpeech": "formula",
-      "senseKey": "polite_acceptance",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-NO-THANK-YOU-01",
-      "itemType": "formula",
-      "displayForm": "No, thank you.",
-      "translationFa": "نه، ممنون.",
-      "role": "target",
-      "lemma": "no thank you",
-      "partOfSpeech": "formula",
-      "senseKey": "polite_refusal",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
       "lexicalKey": "EN-LEX-COFFEE-01",
       "itemType": "word",
       "displayForm": "coffee",
@@ -142,20 +114,6 @@
       "audioEligible": true,
       "metadata": {
         "referenceKey": "EN-REF-C86BD7B12371D318284C"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-CAN-I-HAVE-01",
-      "itemType": "formula",
-      "displayForm": "Can I have ..., please?",
-      "translationFa": "می شه لطفا ... بدی؟",
-      "role": "review",
-      "lemma": "can i have please",
-      "partOfSpeech": "formula",
-      "senseKey": "polite_object_request",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_request_formula"
       }
     }
   ],
@@ -217,18 +175,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "lexical_teach",
-      "instructionFa": "دو پاسخ کوتاه برای قبول و رد پیشنهاد را ببین و بشنو.",
-      "config": {
-        "lexicalKeys": [
-          "EN-LEX-YES-PLEASE-01",
-          "EN-LEX-NO-THANK-YOU-01"
-        ],
-        "explanationFa": "Yes, please. یک پیشنهاد را مودبانه قبول می کند. No, thank you. همان پیشنهاد را مودبانه رد می کند."
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",

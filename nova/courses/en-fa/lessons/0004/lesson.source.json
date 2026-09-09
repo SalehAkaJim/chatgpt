@@ -66,20 +66,6 @@
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
-      "itemType": "formula",
-      "displayForm": "How are you?",
-      "translationFa": "حالت چطوره؟",
-      "role": "review",
-      "lemma": "how are you",
-      "partOfSpeech": "formula",
-      "senseKey": "wellbeing_question",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_social_formula"
-      }
-    },
-    {
       "lexicalKey": "EN-LEX-REPEAT-01",
       "itemType": "word",
       "displayForm": "repeat",
@@ -91,34 +77,6 @@
       "audioEligible": true,
       "metadata": {
         "referenceKey": "EN-REF-A000AB30C5C7E31A0F7A"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-CAN-YOU-REPEAT-THAT-01",
-      "itemType": "formula",
-      "displayForm": "Can you repeat that, please?",
-      "translationFa": "می شه لطفا دوباره بگی؟",
-      "role": "target",
-      "lemma": "can you repeat that please",
-      "partOfSpeech": "formula",
-      "senseKey": "repair_request",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_repair_formula"
-      }
-    },
-    {
-      "lexicalKey": "EN-LEX-SORRY-REPAIR-01",
-      "itemType": "formula",
-      "displayForm": "Sorry?",
-      "translationFa": "ببخشید؟",
-      "role": "support",
-      "lemma": "sorry",
-      "partOfSpeech": "formula",
-      "senseKey": "did_not_hear",
-      "audioEligible": true,
-      "metadata": {
-        "source": "nova_authored_repair_formula"
       }
     }
   ],
@@ -186,8 +144,7 @@
       "instructionFa": "کلمه و عبارت اصلی درخواست تکرار را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-REPEAT-01",
-          "EN-LEX-CAN-YOU-REPEAT-THAT-01"
+          "EN-LEX-REPEAT-01"
         ],
         "explanationFa": "repeat یعنی چیزی را دوباره گفتن یا انجام دادن. در این موقعیت Can you repeat that, please? یعنی از طرف مقابل می خواهی همان حرف را دوباره بگوید."
       }
