@@ -66,6 +66,14 @@ For a new or explicitly reset database:
 59. [10_en_fa_lesson_0058.sql](10_en_fa_lesson_0058.sql) — EN-A1-L-0058
 60. [10_en_fa_lesson_0059.sql](10_en_fa_lesson_0059.sql) — EN-A1-L-0059
 61. [10_en_fa_lesson_0060.sql](10_en_fa_lesson_0060.sql) — EN-A1-L-0060
+62. [10_en_fa_lesson_0061.sql](10_en_fa_lesson_0061.sql) — EN-A1-L-0061
+63. [10_en_fa_lesson_0062.sql](10_en_fa_lesson_0062.sql) — EN-A1-L-0062
+64. [10_en_fa_lesson_0063.sql](10_en_fa_lesson_0063.sql) — EN-A1-L-0063
+65. [10_en_fa_lesson_0064.sql](10_en_fa_lesson_0064.sql) — EN-A1-L-0064
+66. [10_en_fa_lesson_0065.sql](10_en_fa_lesson_0065.sql) — EN-A1-L-0065
+67. [10_en_fa_lesson_0066.sql](10_en_fa_lesson_0066.sql) — EN-A1-L-0066
+68. [10_en_fa_lesson_0067.sql](10_en_fa_lesson_0067.sql) — EN-A1-L-0067
+69. [10_en_fa_lesson_0068.sql](10_en_fa_lesson_0068.sql) — EN-A1-L-0068
 
 Existing databases: import only the needed generated Lesson SQL after verifying schema compatibility.
 `01_reset_all.sql` deletes all content; use it only for an intentional clean reset.
