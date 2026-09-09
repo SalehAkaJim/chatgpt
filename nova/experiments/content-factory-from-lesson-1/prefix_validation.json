@@ -22,9 +22,10 @@
     17,
     18,
     19,
-    20
+    20,
+    21
   ],
-  "passedPrefixLength": 20,
+  "passedPrefixLength": 21,
   "status": "PASS",
   "lessonReports": [
     {
@@ -233,6 +234,18 @@
       "canonicalStatus": "PASS",
       "referenceStatus": "PASS",
       "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0021",
+      "sortOrder": 21,
+      "status": "PASS",
+      "automatedScore": 100,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0021: target word EN-LEX-LIKE-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
       "errors": []
     }
   ],
