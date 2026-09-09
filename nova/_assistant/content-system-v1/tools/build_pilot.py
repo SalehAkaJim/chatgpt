@@ -37,6 +37,23 @@ def discover(root):
     return sorted(records, key=lambda x: x['order'])
 
 
+def shared_lexical_identity(item):
+    """Return the stable semantic definition for a Course-scoped lexicalKey.
+
+    A committed Reference key is the authoritative sense identity. Local senseKey labels
+    are authoring aliases and may differ across legacy Lessons without changing meaning.
+    For Nova-authored reference-gap words, senseKey remains part of the identity.
+    """
+    metadata = item.get('metadata') or {}
+    reference_key = metadata.get('referenceKey')
+    stable_metadata = dict(metadata)
+    stable = {k: item.get(k) for k in ('itemType', 'displayForm', 'translationFa', 'lemma',
+                                       'partOfSpeech', 'audioEligible')}
+    stable['semanticIdentity'] = {'referenceKey': reference_key} if reference_key else {'senseKey': item.get('senseKey')}
+    stable['metadata'] = stable_metadata
+    return stable
+
+
 def validate_sequence(records):
     errors, keys, orders, lexical, outcomes = [], set(), set(), {}, {}
     for record in records:
@@ -54,8 +71,7 @@ def validate_sequence(records):
         earlier.add(lesson['primaryOutcomeKey'])
         for item in lesson.get('lexicalItems', []):
             identity = (code, item['lexicalKey'])
-            stable = {k: item.get(k) for k in ('itemType', 'displayForm', 'translationFa', 'lemma',
-                                               'partOfSpeech', 'senseKey', 'audioEligible', 'metadata')}
+            stable = shared_lexical_identity(item)
             if identity in lexical and lexical[identity] != stable:
                 errors.append(f'{key}: conflicting shared lexical definition: {item["lexicalKey"]}')
             lexical[identity] = stable
