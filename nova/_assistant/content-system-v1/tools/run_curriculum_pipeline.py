@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Run Nova's source-driven curriculum pipeline for a generated Lesson prefix.
+"""Run Nova's source-driven production curriculum pipeline.
 
 Order:
-1. Build learner/curriculum state from canonical Lessons.
-2. Validate enforced existing Lessons against their pre-authoring specs.
-3. Build per-Lesson language plans from committed source evidence.
-4. Generate/refresh the spec for the next unauthored Lesson.
+1. Resolve the canonical Lesson prefix (production auto-discovers lesson.source.json files).
+2. Build learner/curriculum state from canonical Lessons.
+3. Validate enforced existing Lessons against their pre-authoring specs.
+4. Build per-Lesson language plans from committed source evidence.
+5. Generate/refresh the spec for the next unauthored Lesson.
 
 A spec becomes immutable as soon as its Lesson source exists. Before authoring, it
 may refresh when upstream reference snapshots or curriculum state improve.
@@ -18,6 +19,7 @@ from pathlib import Path
 
 from build_lesson_language_plans import build_plan
 from curriculum_engine import build_curriculum_state, build_next_spec
+from factory_config import resolve_generated_lessons
 from language_reference_catalog import LanguageReferenceCatalog
 from validate_lesson_curriculum_spec import validate_against_spec
 
@@ -36,28 +38,29 @@ def main() -> int:
     p.add_argument("--repo-root", default=".")
     p.add_argument("--course", default="en-fa")
     p.add_argument("--config", type=Path, required=True)
-    p.add_argument("--experiment-dir", type=Path, required=True)
+    p.add_argument("--workspace-dir", "--experiment-dir", dest="workspace_dir", type=Path, required=True)
     args = p.parse_args()
 
     root = Path(args.repo_root).resolve()
     config = load(args.config)
-    numbers = [int(x) for x in config.get("generatedLessons", [])]
+    course_code = config.get("courseCode", args.course)
+    numbers = resolve_generated_lessons(root, config, course_code)
     level = config.get("level", "A1")
     language_plan_enforce = int(config.get("languagePlanEnforceFromSortOrder", 25))
     spec_enforce = int(config.get("curriculumSpecEnforceFromSortOrder", 25))
-    exp = args.experiment_dir if args.experiment_dir.is_absolute() else root / args.experiment_dir
+    workspace = args.workspace_dir if args.workspace_dir.is_absolute() else root / args.workspace_dir
 
-    catalog = LanguageReferenceCatalog(root, args.course)
+    catalog = LanguageReferenceCatalog(root, course_code)
     if not catalog.extensions_ready:
         raise SystemExit("Language reference extensions missing; sync them before curriculum planning")
 
-    state = build_curriculum_state(root, args.course, numbers, catalog)
-    dump(exp / "curriculum_state.json", state)
+    state = build_curriculum_state(root, course_code, numbers, catalog)
+    dump(workspace / "curriculum_state.json", state)
 
     spec_reports, language_reports, errors = [], [], []
 
     for number in numbers:
-        lesson_dir = root / "nova/courses" / args.course / "lessons" / f"{number:04d}"
+        lesson_dir = root / "nova/courses" / course_code / "lessons" / f"{number:04d}"
         lesson_path = lesson_dir / "lesson.source.json"
         lesson = load(lesson_path)
         order = int(lesson.get("sortOrder") or 0)
@@ -77,7 +80,7 @@ def main() -> int:
         errors.extend(plan["errors"])
 
         if order >= spec_enforce:
-            spec_path = exp / "specs" / f"{order:04d}.json"
+            spec_path = workspace / "specs" / f"{order:04d}.json"
             if not spec_path.exists():
                 report = {
                     "lessonKey": lesson.get("lessonKey"),
@@ -93,8 +96,8 @@ def main() -> int:
 
     next_spec = build_next_spec(state=state, catalog=catalog, level=level)
     next_order = int(next_spec["sortOrder"])
-    next_spec_path = exp / "specs" / f"{next_order:04d}.json"
-    next_lesson_path = root / "nova/courses" / args.course / "lessons" / f"{next_order:04d}" / "lesson.source.json"
+    next_spec_path = workspace / "specs" / f"{next_order:04d}.json"
+    next_lesson_path = root / "nova/courses" / course_code / "lessons" / f"{next_order:04d}" / "lesson.source.json"
 
     if next_spec_path.exists() and next_lesson_path.exists():
         existing = load(next_spec_path)
@@ -110,10 +113,12 @@ def main() -> int:
         emitted_spec = next_spec
 
     summary = {
-        "schemaVersion": 2,
-        "courseCode": args.course,
+        "schemaVersion": 3,
+        "courseCode": course_code,
         "levelKey": level,
+        "generatedLessonsMode": config.get("generatedLessons", "auto"),
         "generatedLessonCount": len(numbers),
+        "generatedLessons": numbers,
         "lastLessonSortOrder": state.get("lastLessonSortOrder", 0),
         "nextLessonSortOrder": next_order,
         "nextSpecPath": str(next_spec_path.relative_to(root)),
@@ -125,7 +130,7 @@ def main() -> int:
         "status": "PASS" if not errors else "FAIL",
         "errors": errors,
     }
-    dump(exp / "language_curriculum_summary.json", summary)
+    dump(workspace / "language_curriculum_summary.json", summary)
     print(json.dumps({
         "status": summary["status"],
         "lessons": len(numbers),
