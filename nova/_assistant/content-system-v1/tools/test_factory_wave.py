@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from factory_wave import advance_provisional_state
+from factory_wave import advance_provisional_state, reconcile_live_spec_metadata
 from validation_cache import ValidationCache, validation_key
 
 
@@ -51,6 +51,31 @@ class WaveReservationTests(unittest.TestCase):
         self.assertEqual(29, updated["lessonHistory"][-1]["sortOrder"])
         self.assertEqual([], state["knownLexical"])
         self.assertEqual([], state["introducedGrammar"])
+
+    def test_live_spec_reconciliation_changes_only_contract_identity(self):
+        draft = {
+            "lessonKey": "EN-A1-L-0030",
+            "curriculum": {
+                "languageReference": {
+                    "specKey": "provisional-0030",
+                    "specHash": "old-hash",
+                    "grammarTargetKeys": ["G2"],
+                    "reviewLexicalLemmas": ["coffee"],
+                }
+            },
+            "lexicalItems": [
+                {"lexicalKey": "L1", "role": "target", "metadata": {"referenceKey": "REF-COFFEE"}}
+            ],
+        }
+        live_spec = {"specKey": "live-0030", "specHash": "new-hash"}
+        reconciled = reconcile_live_spec_metadata(draft, live_spec)
+        ref = reconciled["curriculum"]["languageReference"]
+        self.assertEqual("live-0030", ref["specKey"])
+        self.assertEqual("new-hash", ref["specHash"])
+        self.assertEqual(["G2"], ref["grammarTargetKeys"])
+        self.assertEqual(["coffee"], ref["reviewLexicalLemmas"])
+        self.assertEqual("REF-COFFEE", reconciled["lexicalItems"][0]["metadata"]["referenceKey"])
+        self.assertEqual("old-hash", draft["curriculum"]["languageReference"]["specHash"])
 
 
 if __name__ == "__main__":
