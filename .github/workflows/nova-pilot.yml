@@ -62,6 +62,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Restore reusable local validation cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/nova-validation
+          key: nova-validation-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            nova-validation-${{ runner.os }}-
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -76,6 +83,7 @@ jobs:
           python nova/_assistant/content-system-v1/tools/test_reference_catalog.py
           python nova/_assistant/content-system-v1/tools/test_lesson_reference.py
           PYTHONPATH=nova/_assistant/content-system-v1/tools python -m unittest -v test_factory_design
+          PYTHONPATH=nova/_assistant/content-system-v1/tools python -m unittest -v test_factory_wave
           python nova/_assistant/content-system-v1/tools/validate_reference_data.py --repo-root . --strict
           python nova/_assistant/content-system-v1/tools/reference_catalog.py --repo-root . --level A1 --limit 3 --recommend > /tmp/nova_reference_smoke.json
           python -c 'import json; p=json.load(open("/tmp/nova_reference_smoke.json")); assert p["count"] > 0'
@@ -92,7 +100,14 @@ jobs:
             --course en-fa \
             --config nova/curriculum/en-fa/factory.config.json \
             --workspace-dir nova/curriculum/en-fa
-      - name: Enforce Reference, Naturalness, Generativity, Story and quality gates
+      - name: Run cacheable per-Lesson authoring gates
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py \
+            --repo-root . \
+            --config nova/curriculum/en-fa/factory.config.json \
+            --cache-dir .cache/nova-validation \
+            --output /tmp/nova_incremental_validation.json
+      - name: Run uncached full-prefix Reference, Naturalness, Generativity, Story and quality regression
         run: |
           python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py \
             --repo-root . \

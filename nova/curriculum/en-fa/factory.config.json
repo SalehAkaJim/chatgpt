@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "courseCode": "en-fa",
   "level": "A1",
   "generatedLessons": "auto",
@@ -7,5 +7,8 @@
   "generativityMaxDelayLessons": 4,
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
-  "minimumQualityScore": 90
+  "minimumQualityScore": 90,
+  "waveSize": 8,
+  "validationCacheDir": ".cache/nova-validation",
+  "fullPrefixRegressionAtWaveEnd": true
 }
