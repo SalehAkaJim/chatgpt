@@ -3,7 +3,7 @@
   "courseCode": "en-fa",
   "levelKey": "A1",
   "generatedLessonsMode": "auto",
-  "generatedLessonCount": 68,
+  "generatedLessonCount": 76,
   "generatedLessons": [
     1,
     2,
@@ -72,12 +72,20 @@
     65,
     66,
     67,
-    68
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76
   ],
-  "lastLessonSortOrder": 68,
-  "nextLessonSortOrder": 69,
-  "nextSpecPath": "nova/curriculum/en-fa/specs/0069.json",
-  "nextSpecHash": "3c2356bf4ea3800037d6386b72c4488c80c708574b9c2d18d73acadc403c5009",
+  "lastLessonSortOrder": 76,
+  "nextLessonSortOrder": 77,
+  "nextSpecPath": "nova/curriculum/en-fa/specs/0077.json",
+  "nextSpecHash": "88431c2900a24df59e5afa01f0dee65fd3a600daeb5ee2ccfd01c63b8b919993",
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
   "languagePlans": [
@@ -821,6 +829,90 @@
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
       "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0069",
+      "sortOrder": 69,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0070",
+      "sortOrder": 70,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0071",
+      "sortOrder": 71,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0072",
+      "sortOrder": 72,
+      "status": "PASS",
+      "warnings": [
+        "EN-A1-L-0072: construction EN-CONSTR-0072-BE-QUESTION has no confident CEFR-J grammar match"
+      ],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 0,
+      "usageEvidenceCount": 1
+    },
+    {
+      "lessonKey": "EN-A1-L-0073",
+      "sortOrder": 73,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0074",
+      "sortOrder": 74,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 5
+    },
+    {
+      "lessonKey": "EN-A1-L-0075",
+      "sortOrder": 75,
+      "status": "PASS",
+      "warnings": [
+        "EN-A1-L-0075: construction EN-CONSTR-0075-PLACE has no confident CEFR-J grammar match"
+      ],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0076",
+      "sortOrder": 76,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
     }
   ],
   "curriculumSpecReports": [
@@ -1323,6 +1415,96 @@
       "sortOrder": 68,
       "specKey": "en-fa-A1-LESSON-SPEC-0068",
       "specHash": "13037b2ac0e30a52eda7e36d18803b3aa1d0e17d8949c1517814fd2d477bfcf9",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0069",
+      "sortOrder": 69,
+      "specKey": "en-fa-A1-LESSON-SPEC-0069",
+      "specHash": "3c2356bf4ea3800037d6386b72c4488c80c708574b9c2d18d73acadc403c5009",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0070",
+      "sortOrder": 70,
+      "specKey": "en-fa-A1-LESSON-SPEC-0070",
+      "specHash": "bd175d8c5e9f05f0a1a35920968853bc492e7a6e70ffb64730fcf96742066714",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0071",
+      "sortOrder": 71,
+      "specKey": "en-fa-A1-LESSON-SPEC-0071",
+      "specHash": "ad1c8a2139d96067d143dab52ad14d2505d8a8069f0001845dca5509a7187a13",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0072",
+      "sortOrder": 72,
+      "specKey": "en-fa-A1-LESSON-SPEC-0072",
+      "specHash": "a5bd0bd4fcfd64bfea97cd7b9c1aeb63837dd20c0aa279f0bdfc41fc71b5f800",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0073",
+      "sortOrder": 73,
+      "specKey": "en-fa-A1-LESSON-SPEC-0073",
+      "specHash": "6730bca91462e6b7b617838a46bba80b9ad35d336adcfeeeac921d9423fd1f1e",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'coffee' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0074",
+      "sortOrder": 74,
+      "specKey": "en-fa-A1-LESSON-SPEC-0074",
+      "specHash": "557e532ac6055e54d7bd0b9f54f088a8031306797df9eb363ecbbff34bc0eee0",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0075",
+      "sortOrder": 75,
+      "specKey": "en-fa-A1-LESSON-SPEC-0075",
+      "specHash": "0d0b65a8a31769505d2d5585b2dedfcf2d3ef741d4c02abf98d24c1ff5f86e3d",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0076",
+      "sortOrder": 76,
+      "specKey": "en-fa-A1-LESSON-SPEC-0076",
+      "specHash": "94424787cc546923d8fe781467dc7b653e5606c7ad6b052ebee32169986d6e83",
       "enforced": true,
       "status": "PASS",
       "errors": [],

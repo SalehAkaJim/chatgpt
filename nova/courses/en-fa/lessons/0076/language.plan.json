@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0076",
+  "sortOrder": 76,
+  "levelKey": "A1",
+  "lessonSourceHash": "74440e2be69c9a343ef8859c70e519e85f1a88db852c5377eba0d624c228d0e2",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0076-SCHOOL",
+      "form": "I go to school",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-SCHOOL-01",
+      "lemma": "school",
+      "role": "target",
+      "referenceKey": "EN-REF-DB1056659882CF2630CB",
+      "spokenPriority": {
+        "lemma": "school",
+        "spokenRank": 147,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "S K UW1 L",
+        "arpabet": [
+          "S K UW1 L"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i go to school",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0076"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0076-SCHOOL"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i go to school",
+        "rationale": "Exact learner target or turn-derived collocation for this bounded Lesson use."
+      }
+    },
+    {
+      "query": "go to school",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0076"
+      ],
+      "lexicalLemmas": [
+        "school"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "go to school",
+        "rationale": "Exact target-collocation window generated around school in both learner responses."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "a6d7f86ad06f61a03338097999e59c517e282a1c55826af38c62aaa7ec40a461"
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0070",
+  "levelKey": "A1",
+  "sortOrder": 70,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0070: target word EN-LEX-OLD-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-OLD-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "old",
+      "partOfSpeech": "adjective",
+      "selectedReferenceKey": "EN-REF-8CF327005C4F1FA1A2D3",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-8CF327005C4F1FA1A2D3",
+        "EN-REF-CE451BE9C52B9246793B"
+      ],
+      "referenceTranslationsFa": [
+        "سالخورده، مسن",
+        "کهنه، قدیمی"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-8CF327005C4F1FA1A2D3",
+        "translationFa": "سالخورده، مسن",
+        "definitionEn": "(used especially of persons) having lived for a relatively long time or attained a specific age",
+        "senseId": "41e79be3-27c8-5f5e-aa0a-7bd19522659b",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "71c78d43c4f6b4c63c22e3aa2052412361f074aee2872b653ddaadf046800cc8"
+}

@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0069",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "that is a little room",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-09",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0069; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "“This is a little room” and “That is a little room” are natural short uses of little for physical size."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "کوچک consistently represents the selected small-size adjective sense of little."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The Lesson isolates one adjective sense and moves from recognition to a changed-demonstrative retrieval."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors contrast the target with a nearby earlier response or a clearly unrelated familiar sentence without creating a second plausible answer."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A walking-group rest-room context gives a concrete reason to compare two room sizes."
+      },
+      "difficultyFit": {
+        "score": 5,
+        "evidence": "Utterances remain short, reuse established A1 language, and add only the bounded target planned for this Lesson."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "The walking-group arc returns six Lessons after 0063 and switches the learner role from Ruby to Sara."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second response changes this to that while preserving little and the same size meaning."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Scenario, dialogue, activities, retrieval task, and stated outcome all point to the same bounded learning goal."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "This is model/editor review only; no real learner test is claimed, so learner-experience confidence is deliberately limited."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "The review is limited to the bounded A1 outcome and does not claim broad mastery of the target word or grammar.",
+      "Final generated audio prosody is not evaluated in this text-stage review."
+    ],
+    "resolvedFindings": [
+      "English target usage is contextually plausible for the authored scene.",
+      "Persian copy preserves the intended bounded meaning without adding a second target.",
+      "The final activity requires hidden retrieval in a changed controlled context.",
+      "Story-arc spacing and learner-role variation were checked against the recent canonical sequence."
+    ],
+    "lessonKey": "EN-A1-L-0069",
+    "sourceHash": "148b74f6ee0c3ae355cdf9d3f091de7eb20cb309c2e18c5c6206298aafa5d232",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.5,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "148b74f6ee0c3ae355cdf9d3f091de7eb20cb309c2e18c5c6206298aafa5d232"
+}

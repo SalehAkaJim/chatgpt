@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0075",
+  "sortOrder": 75,
+  "levelKey": "A1",
+  "lessonSourceHash": "fc54ab0f47da44a3357bda8ea8ef7623b90a008d85bd96a4b0a892d4a18a6457",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0075-PLACE",
+      "form": "This is a good place",
+      "kind": "nova_construction",
+      "status": "REVIEW",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-PLACE-01",
+      "lemma": "place",
+      "role": "target",
+      "referenceKey": "EN-REF-1FA78A6293F189D7392A",
+      "spokenPriority": {
+        "lemma": "place",
+        "spokenRank": 168,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P L EY1 S",
+        "arpabet": [
+          "P L EY1 S"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this is a good",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0075"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0075-PLACE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "a good place",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0075"
+      ],
+      "lexicalLemmas": [
+        "place"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a good place",
+        "rationale": "Exact target-collocation window generated around place in both learner responses."
+      }
+    }
+  ],
+  "warnings": [
+    "EN-A1-L-0075: construction EN-CONSTR-0075-PLACE has no confident CEFR-J grammar match"
+  ],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "b641bef5bdcc36a99d9535dbca8ff7effdb8c83810358cf35896a74be9768a94"
+}

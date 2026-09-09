@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0071",
+  "sortOrder": 71,
+  "levelKey": "A1",
+  "lessonSourceHash": "0e869795fe9bf208e917afc3b50e8985910601de71ca63d94011b19cf1ef4e24",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0071-OWN",
+      "form": "This is my own book",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-OWN-01",
+      "lemma": "own",
+      "role": "target",
+      "referenceKey": "EN-REF-4D0DEC6F83600A07BAF4",
+      "spokenPriority": {
+        "lemma": "own",
+        "spokenRank": 203,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "OW1 N",
+        "arpabet": [
+          "OW1 N"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this is my own book",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0071"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0071-OWN"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "is my own book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0071"
+      ],
+      "lexicalLemmas": [
+        "own"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is my own book",
+        "rationale": "Exact target-collocation window generated around own in the first learner response."
+      }
+    },
+    {
+      "query": "is your own book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0071"
+      ],
+      "lexicalLemmas": [
+        "own"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is your own book",
+        "rationale": "Exact target-collocation window generated around own in the changed-context learner response."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "3d0ea0aeff445c6bb1285c57febaf83c1cf3a57e31576667524351c5ac2c1703"
+}

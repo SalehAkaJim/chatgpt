@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0076",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "we go to school",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-09",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0076; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "“I go to school” and “We go to school” are highly natural A1 school-routine sentences."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "مدرسه directly matches the educational-institution sense selected by the reference."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The Lesson introduces one concrete noun inside a familiar daily-routine frame."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors contrast the target with a nearby earlier response or a clearly unrelated familiar sentence without creating a second plausible answer."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A morning route conversation makes going to school contextually immediate."
+      },
+      "difficultyFit": {
+        "score": 5,
+        "evidence": "Utterances remain short, reuse established A1 language, and add only the bounded target planned for this Lesson."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "The classmates arc returns ten Lessons after 0066 and rotates the learner role from Maya to Alex."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The learner changes the subject from I to we while preserving the school destination."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Scenario, dialogue, activities, retrieval task, and stated outcome all point to the same bounded learning goal."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "This is model/editor review only; no real learner test is claimed, so learner-experience confidence is deliberately limited."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "The review is limited to the bounded A1 outcome and does not claim broad mastery of the target word or grammar.",
+      "Final generated audio prosody is not evaluated in this text-stage review."
+    ],
+    "resolvedFindings": [
+      "English target usage is contextually plausible for the authored scene.",
+      "Persian copy preserves the intended bounded meaning without adding a second target.",
+      "The final activity requires hidden retrieval in a changed controlled context.",
+      "Story-arc spacing and learner-role variation were checked against the recent canonical sequence."
+    ],
+    "lessonKey": "EN-A1-L-0076",
+    "sourceHash": "74440e2be69c9a343ef8859c70e519e85f1a88db852c5377eba0d624c228d0e2",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.5,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "74440e2be69c9a343ef8859c70e519e85f1a88db852c5377eba0d624c228d0e2"
+}

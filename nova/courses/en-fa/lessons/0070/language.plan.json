@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0070",
+  "sortOrder": 70,
+  "levelKey": "A1",
+  "lessonSourceHash": "71c78d43c4f6b4c63c22e3aa2052412361f074aee2872b653ddaadf046800cc8",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0070-OLD",
+      "form": "He is old",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-3",
+        "grammaticalItem": "he/she is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.5167,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-3-2",
+          "grammaticalItem": "Is he/she ...?",
+          "matchScore": 0.5167
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-3-1",
+          "grammaticalItem": "he/she is not",
+          "matchScore": 0.4867
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-3-3",
+          "grammaticalItem": "Isn't he/she ...?",
+          "matchScore": 0.4867
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-OLD-01",
+      "lemma": "old",
+      "role": "target",
+      "referenceKey": "EN-REF-8CF327005C4F1FA1A2D3",
+      "spokenPriority": {
+        "lemma": "old",
+        "spokenRank": 171,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "OW1 L D",
+        "arpabet": [
+          "OW1 L D"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "he is old",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0070"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0070-OLD"
+      ],
+      "lexicalLemmas": [
+        "old"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "he is",
+      "examples": [
+        {
+          "id": 13788367,
+          "text": "He is fantastic.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Just_Balls"
+        },
+        {
+          "id": 13627422,
+          "text": "He is addicted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ahmd"
+        },
+        {
+          "id": 13530112,
+          "text": "He is Amazigh.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Abdaresrif"
+        }
+      ],
+      "fallback": {
+        "query": "he is old",
+        "rationale": "Exact target-collocation window generated around old in the first learner response."
+      }
+    },
+    {
+      "query": "leo is old",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0070"
+      ],
+      "lexicalLemmas": [
+        "old"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "leo is old",
+        "rationale": "Exact target-collocation window generated around old in the changed-context learner response."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "c97459b16832b401df7112a4c945ea39d1d0d499641f03afaf4ccabb05bea327"
+}
