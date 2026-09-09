@@ -39,6 +39,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Validate local preview launcher
+        run: python -m py_compile nova/prototype/local_preview.py
+
       - name: Require PASS evidence for the exact Lesson bytes
         run: |
           python - <<'PY'
