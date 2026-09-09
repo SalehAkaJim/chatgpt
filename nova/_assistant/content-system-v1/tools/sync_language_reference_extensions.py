@@ -280,7 +280,6 @@ def collect_usage_queries(root: Path, course_code: str, lesson_numbers: list[int
                 continue
             for key in ("lessonKeys", "constructionKeys", "lexicalLemmas"):
                 merged[query][key] = sorted(set(merged[query].get(key, []) + item.get(key, [])))
-    # Prefer target collocations over generic construction queries if the cap is hit.
     rows = sorted(merged.values(), key=lambda x: (0 if x.get("kind") == "target_collocation" else 1, x["query"]))
     return rows[:MAX_USAGE_QUERIES]
 
@@ -291,6 +290,7 @@ def tatoeba_search(api_base: str, query: str, filters: dict, limit: int = 5) -> 
         "q": f'"{query}"',
         "is_orphan": filters.get("is_orphan", "no"),
         "is_unapproved": filters.get("is_unapproved", "no"),
+        "sort": "relevance",
         "limit": str(limit),
         "showtrans": "none",
     }
