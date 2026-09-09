@@ -39,7 +39,7 @@ jobs:
       - name: Install validator dependencies
         run: pip install -r nova/_assistant/content-system-v1/tools/requirements.txt
       - name: Unit test word and factory design rules
-        run: python -m unittest -v nova/_assistant/content-system-v1/tools/test_factory_design.py
+        run: PYTHONPATH=nova/_assistant/content-system-v1/tools python -m unittest -v test_factory_design
       - name: Build production language plans and next curriculum spec
         run: |
           python nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py \
