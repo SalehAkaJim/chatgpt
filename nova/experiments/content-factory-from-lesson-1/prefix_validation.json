@@ -30,7 +30,7 @@
     24
   ],
   "passedPrefixLength": 24,
-  "status": "FAIL",
+  "status": "PASS",
   "lessonReports": [
     {
       "lessonKey": "EN-A1-L-0001",
@@ -174,10 +174,13 @@
       "lessonKey": "EN-A1-L-0014",
       "sortOrder": 14,
       "status": "PASS",
-      "automatedScore": 100,
+      "automatedScore": 95,
       "canonicalStatus": "PASS",
       "referenceStatus": "PASS",
-      "referenceWarnings": [],
+      "referenceWarnings": [
+        "EN-A1-L-0014: target word EN-LEX-ONE-01 uses explicit Nova reference-gap fallback: The current A1 reference snapshot has no exact production record for the basic cardinal word one.",
+        "EN-A1-L-0014: target word EN-LEX-TWO-01 uses explicit Nova reference-gap fallback: The current A1 reference snapshot has no exact production record for the basic cardinal word two."
+      ],
       "errors": []
     },
     {
@@ -286,13 +289,7 @@
     }
   ],
   "storyErrors": [],
-  "factoryDesignStatus": "FAIL",
-  "factoryDesignErrors": [
-    "DG-H02 EN-A1-L-0014 EN-CONSTR-ROOM-LABEL: filler 'one' was used productively but no independent word/lexeme exists by Lesson 18",
-    "DG-H02 EN-A1-L-0014 EN-CONSTR-ROOM-LABEL: filler 'two' was used productively but no independent word/lexeme exists by Lesson 18"
-  ],
-  "errors": [
-    "DG-H02 EN-A1-L-0014 EN-CONSTR-ROOM-LABEL: filler 'one' was used productively but no independent word/lexeme exists by Lesson 18",
-    "DG-H02 EN-A1-L-0014 EN-CONSTR-ROOM-LABEL: filler 'two' was used productively but no independent word/lexeme exists by Lesson 18"
-  ]
+  "factoryDesignStatus": "PASS",
+  "factoryDesignErrors": [],
+  "errors": []
 }
