@@ -3,5 +3,5 @@
   "courseCode": "en-fa",
   "requestedCanonicalPrefix": 52,
   "canonicalCommit": "3a9720daf18117f50698859f68e4102ad89cc32d",
-  "reason": "Wave 45-52 is canonical with text QA and full-prefix regression PASS. Run paid audio generation, MySQL 9.0.1 runtime validation, and verified production output publication for prefix 52."
+  "reason": "Retry validated prefix 52 after hardening system dependency installation to use official Ubuntu repositories only. Text QA and full-prefix regression are already PASS; continue through audio and MySQL runtime validation."
 }
