@@ -16,6 +16,7 @@ on:
       - 'nova/reference-snapshots/**'
       - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
       - 'nova/_assistant/content-system-v1/persian_orthography_exceptions.json'
+      - 'nova/_assistant/content-system-v1/pedagogy_review_migrations.json'
       - 'nova/_assistant/content-system-v1/content_quality.policy.json'
       - 'nova/_assistant/content-system-v1/tools/**'
       - 'nova/mysql/01_reset_all.sql'
@@ -98,7 +99,26 @@ jobs:
             --output nova/curriculum/en-fa/factory_validation.json
       - name: Audit Lesson lexical coverage against reference snapshot
         run: python nova/_assistant/content-system-v1/tools/audit_lesson_reference_coverage.py --repo-root . --output /tmp/nova_reference_lesson_coverage.json
-      - name: Build and validate every canonical Lesson
+      - name: Build exact text QA evidence for every canonical Lesson
+        id: text_build
+        run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only
+      - name: Publish validated text evidence for Prototype testing
+        run: |
+          git fetch origin main
+          if [ "$INPUT_HEAD" != "$(git rev-parse origin/main)" ]; then
+            echo "Inputs changed during text QA; a newer queued run will publish the current evidence."
+            echo "PUBLISH_HEAD=$INPUT_HEAD" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          git config user.name "nova-production-bot"
+          git config user.email "nova-production-bot@users.noreply.github.com"
+          git add nova/curriculum/ nova/courses/ nova/_assistant/content-system-v1/text_build_report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish validated Nova text preview evidence"
+            git push origin HEAD:main
+          fi
+          echo "PUBLISH_HEAD=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Build paid audio and SQL after text gates
         id: build
         run: python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root .
       - name: Import and retrieve all Lessons on MySQL 9.0.1
@@ -119,11 +139,11 @@ jobs:
             nova/courses/**/lessons/**/english_audit.md
             nova/courses/**/lessons/**/runtime_smoke.txt
             nova/audio/
-      - name: Commit verified outputs for the same input revision
+      - name: Commit verified audio/runtime outputs for the same text revision
         run: |
           git fetch origin main
-          if [ "$INPUT_HEAD" != "$(git rev-parse origin/main)" ]; then
-            echo "Inputs changed during this run; the newer queued run will rebuild outputs."
+          if [ "${PUBLISH_HEAD:-$INPUT_HEAD}" != "$(git rev-parse origin/main)" ]; then
+            echo "Inputs changed after text publication; the newer queued run will rebuild runtime outputs."
             exit 0
           fi
           git config user.name "nova-production-bot"
@@ -135,11 +155,11 @@ jobs:
             git commit -m "Build and validate Nova production lessons"
             git push origin HEAD:main
           fi
-      - name: Preserve paid audio checkpoints after a failed build
+      - name: Preserve paid audio checkpoints after a failed audio/runtime build
         if: failure() && steps.build.outcome != 'skipped'
         run: |
           git fetch origin main
-          if [ "$INPUT_HEAD" != "$(git rev-parse origin/main)" ]; then
+          if [ "${PUBLISH_HEAD:-$INPUT_HEAD}" != "$(git rev-parse origin/main)" ]; then
             echo "Inputs changed; audio checkpoints remain available in the evidence artifact."
             exit 0
           fi
