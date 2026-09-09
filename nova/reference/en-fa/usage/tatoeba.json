@@ -624,57 +624,6 @@
       "status": "no_hit"
     },
     {
-      "query": "on monday",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0017"
-      ],
-      "lexicalLemmas": [
-        "monday",
-        "on"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+monday%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13489445,
-          "text": "Come on Monday.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 11913169,
-          "text": "Begin on Monday.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 13447191,
-          "text": "She worked on Mondays.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13338690,
-          "text": "Everything else on Monday.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "artemlyubchenko"
-        },
-        {
-          "id": 11948708,
-          "text": "Tom works on Mondays.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
       "query": "on the table",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -2000,6 +1949,60 @@
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "mayabe"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "on monday",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0017"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-ON-MONDAY"
+      ],
+      "lexicalLemmas": [
+        "monday",
+        "on"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+monday%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13489445,
+          "text": "Come on Monday.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 11913169,
+          "text": "Begin on Monday.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13447191,
+          "text": "She worked on Mondays.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "frpzzd"
+        },
+        {
+          "id": 13338690,
+          "text": "Everything else on Monday.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "artemlyubchenko"
+        },
+        {
+          "id": 11948708,
+          "text": "Tom works on Mondays.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
         }
       ],
       "sampleCount": 5,
