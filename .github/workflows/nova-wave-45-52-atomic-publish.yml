@@ -56,7 +56,8 @@ jobs:
           wd=root/'nova/curriculum/en-fa/waves/en-fa-A1-0045-0052'
           p49=wd/'workers/w05/0049/lesson.source.json'
           l=json.loads(p49.read_text(encoding='utf-8'))
-          l=json.loads(json.dumps(l,ensure_ascii=False).replace('واقعاً','واقعا'))
+          text=json.dumps(l,ensure_ascii=False).replace('واقعاً','واقعا').replace('تأکید','تاکید')
+          l=json.loads(text)
           lr=l['curriculum']['languageReference']
           lr['grammarTargetKeys']=[]
           lr['noNewGrammarReason']='Lexical-focus integration: the provisional grammar reservation was no longer available in the live sequential curriculum spec, so this Lesson claims no new grammar.'
@@ -76,6 +77,7 @@ jobs:
           wp.write_text(json.dumps(w,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
 
+          python nova/_assistant/content-system-v1/tools/validate_persian_text.py --exceptions nova/_assistant/content-system-v1/persian_orthography_exceptions.json nova/curriculum/en-fa/waves/en-fa-A1-0045-0052/workers/w05/0049/lesson.source.json
           python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --output /tmp/base.json
           python - <<'PY'
           import json
