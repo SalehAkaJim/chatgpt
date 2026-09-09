@@ -1,0 +1,1312 @@
+{
+  "schemaVersion": 4,
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "sortOrder": 39,
+  "specKey": "en-fa-A1-LESSON-SPEC-0039",
+  "policy": {
+    "minimumQualityScore": 90,
+    "maxNewLexicalTargets": 3,
+    "preferredNewLexicalTargets": 1,
+    "grammarSelection": "Choose at most one new CEFR-J grammar target unless the Lesson is explicitly consolidation-only.",
+    "reviewRequirement": "Reuse at least one due lexical or grammar item when pedagogically natural.",
+    "usageRequirement": "Every new scored target collocation must have committed corpus evidence or an explicit Nova usage fallback with rationale.",
+    "pronunciationRequirement": "Expose CMUdict evidence when present; missing CMUdict coverage does not invent a pronunciation.",
+    "wordSemantics": "Only true lexemes enter lexicalItems/words; compositional phrases remain constructions/turn text.",
+    "alreadyPracticedSurfaceRule": "A word already produced by the learner is not proposed as a brand-new lexical target merely because it was absent from lexicalItems metadata."
+  },
+  "grammarCandidates": [
+    {
+      "grammarKey": "CEFRJ-GRAM-247",
+      "shorthandCode": "INT.how_JJ.RB",
+      "grammaticalItem": "WH- QUESTION: How ADJ/ADV ...?",
+      "sentenceType": "AFF. INT./NEG. INT.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-(A2)-B1",
+      "egp": "N/A",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置・疑問符で終わる文に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 123,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-58-2",
+      "shorthandCode": "TA.PRESENT.be.INT.AFF",
+      "grammaticalItem": "TENSE/ASPECT: PRESENT (BE)",
+      "sentenceType": "AFF. INT.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "N/A",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置・疑問符で終わる文に限定;現在進行・受動態も含まれる",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 123,
+      "prerequisiteKeys": [
+        "CEFRJ-GRAM-58"
+      ],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-58-1",
+      "shorthandCode": "TA.PRESENT.be.NEG",
+      "grammaticalItem": "TENSE/ASPECT: PRESENT (BE)",
+      "sentenceType": "NEG. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1",
+      "gse": "A1",
+      "notes": "名詞句・代名詞に続くものに限定;現在進行・受動態も含まれる",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 121,
+      "prerequisiteKeys": [
+        "CEFRJ-GRAM-58"
+      ],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-146",
+      "shorthandCode": "EX.there.AFF",
+      "grammaticalItem": "there+be",
+      "sentenceType": "AFF. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.2",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1-B2",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 120,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-105",
+      "shorthandCode": "VG",
+      "grammaticalItem": "V-ING (not preceded by 'not')",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A2",
+      "egp": "B1-B2",
+      "gse": "B1",
+      "notes": "動名詞と現在分詞の区別はできないため現在分詞も含ま",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-117",
+      "shorthandCode": "IMP.V.AFF",
+      "grammaticalItem": "IMPERATIVE: AFFIRMATIVE (lexical verbs)",
+      "sentenceType": "AFF. IMP.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-A2",
+      "egp": "A2-C1",
+      "gse": "A1",
+      "notes": "カンマ後を除く文頭(相当)または接続詞直後の位置・途中に 句読点なし・終止符または感嘆符で終わる文に限定；do・ haveの場合は否定命令・強調命令・疑問文を除くためnot・ 動詞原形・you・we・theyが後続しないものに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-13",
+      "shorthandCode": "DT.a.an",
+      "grammaticalItem": "INDEFINITE ARTICLES",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-B2",
+      "egp": "A1",
+      "gse": "A1",
+      "notes": null,
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-14",
+      "shorthandCode": "DT.the",
+      "grammaticalItem": "DEFINITE ARTICLES",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-B1",
+      "egp": "A1-A2",
+      "gse": "A1",
+      "notes": null,
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-15",
+      "shorthandCode": "DT.some.any",
+      "grammaticalItem": "DETERMINERS: some/any",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-A2",
+      "egp": "A1",
+      "gse": "A2",
+      "notes": "代名詞としての用法も含まれる",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-196",
+      "shorthandCode": "VP.SVO.AFF",
+      "grammaticalItem": "SENTENCE PATTERN: SUBJECT+V+OBJECT",
+      "sentenceType": "AFF. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": null,
+      "egp": "A1, B2",
+      "gse": "A1",
+      "notes": "名詞句・代名詞(+助動詞)+動詞+名詞句・代名詞のみから成る文に限定;単純相に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-21",
+      "shorthandCode": "IN.PREP.GENERAL",
+      "grammaticalItem": "PREPOSITIONS",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-A2",
+      "egp": "A1-C1",
+      "gse": "A1-A2",
+      "notes": "asとtoを除く主要な前置詞; aboard/about/above/across/after/against/along/alongside/amid/amidst/among/amongst/around/at/before/behind/below/beneath/beside/besides/between/beyond/by/despite/down/during/en/ere/except/for/from/in/inside/into/like/minus/near/nearer/nearest/notwithstanding/of/off/on/onto/opposite/out/outside/over/past/per/plus/re/reference/round/sans/save/since/than/through/throughout/till/toward/towards/under/underneath/unlike/until/up/upon/v./versus/via/vs./with/within/without/worthに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-33",
+      "shorthandCode": "RB.INT",
+      "grammaticalItem": "ADVERBS: INTENSIFIERS: extremely/greatly/really/so/terribly/too/unbelievably/very",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A2-B1",
+      "egp": "A1-C2",
+      "gse": "A2",
+      "notes": "extremely/greatly/really/so/terribly/too/unbelievably/veryに限定;形容詞または副詞が後続するものに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    }
+  ],
+  "lexicalCandidates": [
+    {
+      "referenceKey": "EN-REF-197973A0FC02917F1CE5",
+      "lemma": "first",
+      "partOfSpeech": "adjective",
+      "senseId": "e4de2955-978a-53c2-8e40-d3f9c10cb570",
+      "senseOrder": 1,
+      "definitionEn": "preceding all others in time or space or degree",
+      "exampleEn": "the first house on the right",
+      "translationFa": "اول، نخستین",
+      "translationFaSource": null,
+      "exampleFa": "این اولین بار است که به تهران می‌روم.",
+      "frequencyRank": 81,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "time"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "2bd1ffbe-6ebe-55a7-b835-b6d709e24fa0",
+        "openjamSenseId": "e4de2955-978a-53c2-8e40-d3f9c10cb570",
+        "openjamTranslationId": "352b67f7-34e6-5391-9bb0-b82019389bf4",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "first",
+        "spokenRank": 113,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 81,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "first",
+        "arpabet": [
+          "F ER1 S T"
+        ],
+        "primaryArpabet": "F ER1 S T",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-D277A31EE85CEBDF62F6",
+      "lemma": "know",
+      "partOfSpeech": "verb",
+      "senseId": "b132d144-098f-5b10-a03d-ff6f35a0c40f",
+      "senseOrder": 1,
+      "definitionEn": "be cognizant or aware of a fact or a specific piece of information; possess knowledge or information about",
+      "exampleEn": "I know that the President lied to the people",
+      "translationFa": "دانستن، آگاه بودن از",
+      "translationFaSource": null,
+      "exampleFa": "من نمی‌دانم او کجا رفته است.",
+      "frequencyRank": 84,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "1ea94745-d4cd-5d81-b832-9c5bfadcf2e1",
+        "openjamSenseId": "b132d144-098f-5b10-a03d-ff6f35a0c40f",
+        "openjamTranslationId": "c194775a-f8f4-5aff-b4bc-3ea912f8e8de",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "know",
+        "spokenRank": 17,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 84,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "know",
+        "arpabet": [
+          "N OW1"
+        ],
+        "primaryArpabet": "N OW1",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-39C6EB767664D6211984",
+      "lemma": "make",
+      "partOfSpeech": "verb",
+      "senseId": "c829cdad-351c-556d-987d-ffe047640c35",
+      "senseOrder": 1,
+      "definitionEn": "engage in",
+      "exampleEn": "make love, not war",
+      "translationFa": "انجام دادن",
+      "translationFaSource": null,
+      "exampleFa": "او هر روز ورزش می‌کند.",
+      "frequencyRank": 87,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "a19440ae-1de5-543f-8beb-f1007a93ebb2",
+        "openjamSenseId": "c829cdad-351c-556d-987d-ffe047640c35",
+        "openjamTranslationId": "77208acd-f7f8-5bd7-9410-d1ab7b892922",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "make",
+        "spokenRank": 69,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 87,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "make",
+        "arpabet": [
+          "M EY1 K"
+        ],
+        "primaryArpabet": "M EY1 K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-32A9B1B4D1FA20FAC633",
+      "lemma": "think",
+      "partOfSpeech": "verb",
+      "senseId": "a63cb129-c8b8-5237-8c4c-502e34cf8936",
+      "senseOrder": 1,
+      "definitionEn": "judge or regard; look upon; judge",
+      "exampleEn": "I think he is very smart",
+      "translationFa": "قضاوت کردن، نظر دادن",
+      "translationFaSource": null,
+      "exampleFa": "من او را یک نفر باهوش می‌دانم.",
+      "frequencyRank": 89,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "439bfc22-6974-5ecc-a2c4-a7c317da370b",
+        "openjamSenseId": "a63cb129-c8b8-5237-8c4c-502e34cf8936",
+        "openjamTranslationId": "0749bcdb-de79-561c-925c-118c60c88e55",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "think",
+        "spokenRank": 28,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 89,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "think",
+        "arpabet": [
+          "TH IH1 NG K"
+        ],
+        "primaryArpabet": "TH IH1 NG K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-BE697DC952E39C4808D0",
+      "lemma": "then",
+      "partOfSpeech": "adverb",
+      "senseId": "e3cd4b08-264e-5f6a-907c-619e6dd23585",
+      "senseOrder": 1,
+      "definitionEn": "subsequently or soon afterward (often used as sentence connectors)",
+      "exampleEn": "then he left",
+      "translationFa": "سپس، بعد از آن",
+      "translationFaSource": null,
+      "exampleFa": "ما صبحانه خوردیم، سپس به مدرسه رفتیم.",
+      "frequencyRank": 91,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "time"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "59b15b35-f64b-5ab5-98df-377d93138836",
+        "openjamSenseId": "e3cd4b08-264e-5f6a-907c-619e6dd23585",
+        "openjamTranslationId": "51ffec22-e76f-5472-afdc-e03bbf7fae5c",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "then",
+        "spokenRank": 46,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 91,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "then",
+        "arpabet": [
+          "DH EH1 N"
+        ],
+        "primaryArpabet": "DH EH1 N",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-1A4E4A764F5FC7232175",
+      "lemma": "back",
+      "partOfSpeech": "adverb",
+      "senseId": "38ce9006-bd77-53f1-8139-13c6218904e7",
+      "senseOrder": 1,
+      "definitionEn": "in or to or toward a former location",
+      "exampleEn": "she went back to her parents' house",
+      "translationFa": "بازگشت (به جای قبل)",
+      "translationFaSource": null,
+      "exampleFa": "او بعد از سفر به خانه برگشت.",
+      "frequencyRank": 93,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "body"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "0dfcc20b-f927-5b6f-97c4-c87a86f1289c",
+        "openjamSenseId": "38ce9006-bd77-53f1-8139-13c6218904e7",
+        "openjamTranslationId": "65915df2-b41b-556b-935d-3e756f9a5d7d",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "back",
+        "spokenRank": 85,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 93,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "back",
+        "arpabet": [
+          "B AE1 K"
+        ],
+        "primaryArpabet": "B AE1 K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-D8F414A2604D92EB368F",
+      "lemma": "well",
+      "partOfSpeech": "adverb",
+      "senseId": "c57f95b8-e805-5c29-a901-495b548af2fc",
+      "senseOrder": 1,
+      "definitionEn": "(often used as a combining form) in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')",
+      "exampleEn": "the children behaved well",
+      "translationFa": "خوب، به خوبی",
+      "translationFaSource": null,
+      "exampleFa": "او کار را خیلی خوب انجام داد.",
+      "frequencyRank": 99,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "84183b70-9d1b-51f7-836e-2dc794cf6d76",
+        "openjamSenseId": "c57f95b8-e805-5c29-a901-495b548af2fc",
+        "openjamTranslationId": "cc719418-375b-5bc6-b968-91c71f2dc3e2",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "well",
+        "spokenRank": 36,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 99,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "well",
+        "arpabet": [
+          "W EH1 L"
+        ],
+        "primaryArpabet": "W EH1 L",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-909372E9857B18CD5B47",
+      "lemma": "say",
+      "partOfSpeech": "verb",
+      "senseId": "3c8476be-cd48-5624-94b9-b2060b8b5ee4",
+      "senseOrder": 1,
+      "definitionEn": "express in words",
+      "exampleEn": "He said that he wanted to marry her",
+      "translationFa": "گفتن، بیان کردن",
+      "translationFaSource": null,
+      "exampleFa": "او گفت که فردا می‌آید.",
+      "frequencyRank": 100,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "080caf5a-e085-5c76-8beb-6a9ca2fee98f",
+        "openjamSenseId": "3c8476be-cd48-5624-94b9-b2060b8b5ee4",
+        "openjamTranslationId": "129a6992-ef72-524e-bcab-cfa756ecb2f2",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "say",
+        "spokenRank": 32,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 100,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "say",
+        "arpabet": [
+          "S EY1"
+        ],
+        "primaryArpabet": "S EY1",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-0D08F59231CEFD71D217",
+      "lemma": "way",
+      "partOfSpeech": "noun",
+      "senseId": "5846e162-22a1-5bac-8667-a87c224dc12f",
+      "senseOrder": 1,
+      "definitionEn": "how something is done or how it happens",
+      "exampleEn": "her dignified manner",
+      "translationFa": "روش، طریقه",
+      "translationFaSource": null,
+      "exampleFa": "این روش بهتری برای حل مسئله است.",
+      "frequencyRank": 101,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "cc604b64-d558-52bb-83a8-a849a9b33d60",
+        "openjamSenseId": "5846e162-22a1-5bac-8667-a87c224dc12f",
+        "openjamTranslationId": "62f3ee77-dcc3-53cd-9e62-119959d6ab6f",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "way",
+        "spokenRank": 90,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 101,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "way",
+        "arpabet": [
+          "W EY1"
+        ],
+        "primaryArpabet": "W EY1",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-8F90EB8DE235DBB793EC",
+      "lemma": "very",
+      "partOfSpeech": "adverb",
+      "senseId": "de5d6631-ff6b-5f9c-97b1-27900ace5785",
+      "senseOrder": 1,
+      "definitionEn": "used as intensifiers; `real' is sometimes used informally for `really'; `rattling' is informal",
+      "exampleEn": "she was very gifted",
+      "translationFa": "خیلی؛ بسیار",
+      "translationFaSource": null,
+      "exampleFa": "هوا امروز very گرم است.",
+      "frequencyRank": 106,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "77693239-97ce-588f-9bef-c117c0c1d8f9",
+        "openjamSenseId": "de5d6631-ff6b-5f9c-97b1-27900ace5785",
+        "openjamTranslationId": "beb2c3eb-8f21-5cf9-ae73-b727f7b87738",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "very",
+        "spokenRank": 67,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 106,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "very",
+        "arpabet": [
+          "V EH1 R IY0"
+        ],
+        "primaryArpabet": "V EH1 R IY0",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-4B6D91F28ED1F1CF3053",
+      "lemma": "really",
+      "partOfSpeech": "adverb",
+      "senseId": "dbb44de0-a0d2-5140-a362-554c62e99129",
+      "senseOrder": 2,
+      "definitionEn": "in actual fact",
+      "exampleEn": "to be nominally but not actually independent",
+      "translationFa": "در حقیقت، به طور عملی",
+      "translationFaSource": null,
+      "exampleFa": "این کار در حقیقت خیلی سخت‌تر از آن چه فکر می‌کردم است.",
+      "frequencyRank": 113,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "8886637d-6f18-5ef3-823b-97079f5d9fd6",
+        "openjamSenseId": "dbb44de0-a0d2-5140-a362-554c62e99129",
+        "openjamTranslationId": "2b5d7f00-090a-533d-a933-9b05aa751486",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "really",
+        "spokenRank": 58,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 113,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "really",
+        "arpabet": [
+          "R IH1 L IY0",
+          "R IY1 L IY0"
+        ],
+        "primaryArpabet": "R IH1 L IY0",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-A6142DB4FBBB0413B251",
+      "lemma": "right",
+      "partOfSpeech": "adjective",
+      "senseId": "3e849873-2577-5d97-94ce-c5fce2958f7c",
+      "senseOrder": 1,
+      "definitionEn": "being or located on or directed toward the side of the body to the east when facing north",
+      "exampleEn": "my right hand",
+      "translationFa": "راست",
+      "translationFaSource": null,
+      "exampleFa": "دستت راست را بالا کن.",
+      "frequencyRank": 115,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "8caa45e2-19f3-5f67-80ed-1d5f20821125",
+        "openjamSenseId": "3e849873-2577-5d97-94ce-c5fce2958f7c",
+        "openjamTranslationId": "cc3c28d8-4dc1-5df7-8bb1-502f9278001b",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "right",
+        "spokenRank": 48,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 115,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "right",
+        "arpabet": [
+          "R AY1 T"
+        ],
+        "primaryArpabet": "R AY1 T",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-707276E9B50E98A64FDC",
+      "lemma": "work",
+      "partOfSpeech": "noun",
+      "senseId": "fbb25077-5c38-5e1d-8148-8135bbb5ff6e",
+      "senseOrder": 1,
+      "definitionEn": "activity directed toward making or doing something",
+      "exampleEn": "she checked several points needing further work",
+      "translationFa": "فعالیت، کار",
+      "translationFaSource": null,
+      "exampleFa": "این کار نیاز به تمرکز زیادی دارد.",
+      "frequencyRank": 116,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "work"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "c9ad35ca-7630-58ce-9fa9-b74a96e1d26b",
+        "openjamSenseId": "fbb25077-5c38-5e1d-8148-8135bbb5ff6e",
+        "openjamTranslationId": "5b6b479b-057f-57bb-9aa3-6553d2f89bd7",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "work",
+        "spokenRank": 76,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 116,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "work",
+        "arpabet": [
+          "W ER1 K"
+        ],
+        "primaryArpabet": "W ER1 K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-406B7051AEBFA5D0B922",
+      "lemma": "year",
+      "partOfSpeech": "noun",
+      "senseId": "e2c2a1ca-757d-5435-a528-33c3b1c51450",
+      "senseOrder": 1,
+      "definitionEn": "a period of time containing 365 (or 366) days",
+      "exampleEn": "she is 4 years old",
+      "translationFa": "سال",
+      "translationFaSource": null,
+      "exampleFa": "سال جدید در اول ژانویه شروع می‌شود.",
+      "frequencyRank": 117,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "time"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "7804f00f-30ae-54db-8586-6de7523d5e6d",
+        "openjamSenseId": "e2c2a1ca-757d-5435-a528-33c3b1c51450",
+        "openjamTranslationId": "8b518e2d-f3f7-5981-99c9-a9d019900859",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "year",
+        "spokenRank": 86,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 117,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "year",
+        "arpabet": [
+          "Y IH1 R"
+        ],
+        "primaryArpabet": "Y IH1 R",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-0A1B6C644EA3E00970D7",
+      "lemma": "day",
+      "partOfSpeech": "noun",
+      "senseId": "9e3602c2-e5e0-5604-8452-7964bee6c7b6",
+      "senseOrder": 1,
+      "definitionEn": "time for Earth to make a complete rotation on its axis",
+      "exampleEn": "two days later they left",
+      "translationFa": "روز",
+      "translationFaSource": null,
+      "exampleFa": "زمین هر روز یک بار به دور خود می‌چرخد.",
+      "frequencyRank": 120,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "time"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "977c9798-7caa-5e32-8b15-0a47d0fe060f",
+        "openjamSenseId": "9e3602c2-e5e0-5604-8452-7964bee6c7b6",
+        "openjamTranslationId": "f3ef79b6-6739-5248-a56b-186be2efc059",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "day",
+        "spokenRank": 106,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 120,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "day",
+        "arpabet": [
+          "D EY1"
+        ],
+        "primaryArpabet": "D EY1",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    },
+    {
+      "referenceKey": "EN-REF-9A2CAA84954D0F700A83",
+      "lemma": "take",
+      "partOfSpeech": "verb",
+      "senseId": "c20af9d5-00b7-557a-9d0c-1ddc840ec8c1",
+      "senseOrder": 1,
+      "definitionEn": "carry out",
+      "exampleEn": "take action",
+      "translationFa": "انجام دادن",
+      "translationFaSource": null,
+      "exampleFa": "من یک تصمیم سخت را انجام دادم.",
+      "frequencyRank": 128,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "curriculumEligible": true,
+      "qualityScore": 100,
+      "productionEligible": true,
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "e656fb67-04b2-509b-a17d-bee8b4df775d",
+        "openjamSenseId": "c20af9d5-00b7-557a-9d0c-1ddc840ec8c1",
+        "openjamTranslationId": "bd36f501-0937-55da-9973-85c31ce2bc15",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "spokenPriority": {
+        "lemma": "take",
+        "spokenRank": 72,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 128,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "lemma": "take",
+        "arpabet": [
+          "T EY1 K"
+        ],
+        "primaryArpabet": "T EY1 K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 104.0
+    }
+  ],
+  "reviewDue": {
+    "lexical": [
+      {
+        "lemma": "time",
+        "firstLesson": 30,
+        "lastLesson": 30,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-129CF40E43D414BBF26F"
+        ],
+        "gapLessons": 9
+      },
+      {
+        "lemma": "room",
+        "firstLesson": 14,
+        "lastLesson": 32,
+        "roles": [
+          "review",
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-D8B2B1429B2580871B77"
+        ],
+        "gapLessons": 7
+      },
+      {
+        "lemma": "new",
+        "firstLesson": 32,
+        "lastLesson": 32,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-B6BF7C8C4C3EA87A7547"
+        ],
+        "gapLessons": 7
+      },
+      {
+        "lemma": "people",
+        "firstLesson": 33,
+        "lastLesson": 33,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-457C441FDB6DEC1BED1E"
+        ],
+        "gapLessons": 6
+      },
+      {
+        "lemma": "coffee",
+        "firstLesson": 9,
+        "lastLesson": 34,
+        "roles": [
+          "review",
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-DF86C36C215439FDE741"
+        ],
+        "gapLessons": 5
+      },
+      {
+        "lemma": "read",
+        "firstLesson": 23,
+        "lastLesson": 34,
+        "roles": [
+          "review",
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-F4E87C743D4964D90BCD"
+        ],
+        "gapLessons": 5
+      },
+      {
+        "lemma": "also",
+        "firstLesson": 34,
+        "lastLesson": 34,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-81113C4813B52A7DF5B0"
+        ],
+        "gapLessons": 5
+      },
+      {
+        "lemma": "help",
+        "firstLesson": 19,
+        "lastLesson": 35,
+        "roles": [
+          "review",
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-76A0FAF42C7FB7906AA5"
+        ],
+        "gapLessons": 4
+      },
+      {
+        "lemma": "book",
+        "firstLesson": 6,
+        "lastLesson": 36,
+        "roles": [
+          "review",
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-6CB64DEA48DE0EFA4185"
+        ],
+        "gapLessons": 3
+      },
+      {
+        "lemma": "pen",
+        "firstLesson": 6,
+        "lastLesson": 36,
+        "roles": [
+          "review",
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-E7158161767216455400"
+        ],
+        "gapLessons": 3
+      }
+    ],
+    "grammar": [
+      {
+        "grammarKey": "CEFRJ-GRAM-3",
+        "grammaticalItem": "he/she is",
+        "firstLesson": 27,
+        "lastLesson": 27,
+        "exposureCount": 2,
+        "evidenceKinds": [
+          "target_construction"
+        ],
+        "maxMatchScore": 0.75,
+        "gapLessons": 12
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-5",
+        "grammaticalItem": "they are",
+        "firstLesson": 28,
+        "lastLesson": 28,
+        "exposureCount": 1,
+        "evidenceKinds": [
+          "target_construction"
+        ],
+        "maxMatchScore": 0.8167,
+        "gapLessons": 11
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-6",
+        "grammaticalItem": "my/our/your/her/their (except for 'his' and 'its')",
+        "firstLesson": 1,
+        "lastLesson": 31,
+        "exposureCount": 14,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 8
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "firstLesson": 31,
+        "lastLesson": 31,
+        "exposureCount": 3,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 8
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-59",
+        "grammaticalItem": "TENSE/ASPECT: PRESENT (lexical verbs)",
+        "firstLesson": 21,
+        "lastLesson": 35,
+        "exposureCount": 21,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 4
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-123",
+        "grammaticalItem": "MODAL/AUX: can",
+        "firstLesson": 35,
+        "lastLesson": 35,
+        "exposureCount": 4,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 4
+      }
+    ]
+  },
+  "storyConstraints": {
+    "doNotRepeatImmediateParticipants": [],
+    "recentParticipantSets": [
+      [
+        "sara",
+        "ruby"
+      ],
+      [
+        "leo",
+        "liam"
+      ],
+      [
+        "alex",
+        "maya"
+      ],
+      [],
+      []
+    ],
+    "recentArcs": [
+      "EN-A1-WALKING-GROUP",
+      "EN-A1-LIBRARY",
+      "EN-A1-CLASSMATES"
+    ],
+    "recurrenceGuidance": "A prior pair/arc may return after sufficient spacing when continuity adds value; never force recurrence for vocabulary convenience."
+  },
+  "authoringBoundary": {
+    "dataDecides": [
+      "CEFR grammar eligibility and candidate order",
+      "lexical sense eligibility and frequency priority",
+      "review due signals",
+      "pronunciation evidence",
+      "usage/collocation evidence requirements"
+    ],
+    "novaCreates": [
+      "scenario",
+      "characters/learner role choice within story rules",
+      "dialogue wording",
+      "activities",
+      "Persian instructional copy"
+    ]
+  },
+  "specHash": "80f745d8693d140a00a855daa4dde0d8f78a42e13d5f8970a36c0858519de6e8",
+  "wavePlanning": {
+    "provisional": true,
+    "waveKey": "en-fa-A1-0037-0044",
+    "workerId": "w03",
+    "integrationRule": "The live canonical spec wins if sequential integration changes candidate order."
+  }
+}

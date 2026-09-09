@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "checked": [
+    "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/course.source.json",
+    "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0029/lesson.source.json",
+    "/home/runner/work/chatgpt/chatgpt/nova/prototype/index.html",
+    "/home/runner/work/chatgpt/chatgpt/nova/prototype/app.js"
+  ],
+  "exceptionsFile": "/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/persian_orthography_exceptions.json",
+  "allowedOccurrences": [
+    {
+      "source": "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0029/lesson.source.json",
+      "line": 136,
+      "column": 42,
+      "word": "لطفاً",
+      "character": "ً",
+      "codepoint": "U+064B",
+      "exceptionReason": "Standard Persian adverb spelling used in natural dialogue and instructions."
+    },
+    {
+      "source": "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0029/lesson.source.json",
+      "line": 156,
+      "column": 38,
+      "word": "لطفاً",
+      "character": "ً",
+      "codepoint": "U+064B",
+      "exceptionReason": "Standard Persian adverb spelling used in natural dialogue and instructions."
+    },
+    {
+      "source": "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0029/lesson.source.json",
+      "line": 220,
+      "column": 26,
+      "word": "سؤال",
+      "character": "ؤ",
+      "codepoint": "U+0624",
+      "exceptionReason": "Standard Persian spelling used in learner-facing instructional copy."
+    },
+    {
+      "source": "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0029/lesson.source.json",
+      "line": 311,
+      "column": 85,
+      "word": "لطفاً",
+      "character": "ً",
+      "codepoint": "U+064B",
+      "exceptionReason": "Standard Persian adverb spelling used in natural dialogue and instructions."
+    },
+    {
+      "source": "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0029/lesson.source.json",
+      "line": 323,
+      "column": 63,
+      "word": "لطفاً",
+      "character": "ً",
+      "codepoint": "U+064B",
+      "exceptionReason": "Standard Persian adverb spelling used in natural dialogue and instructions."
+    }
+  ],
+  "errors": [],
+  "sourceHash": "2c79864e4fb3ea4ad9ed985c731a2bd53345f9c4c4096b107f68c1dbd74df337"
+}

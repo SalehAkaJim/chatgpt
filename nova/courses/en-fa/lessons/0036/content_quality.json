@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0036",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "there is a pen",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "lessonKey": "EN-A1-L-0036",
+    "sourceHash": "96c6017dd0a556c7202fb2e0aadb8b2c6f30760c00b2f77d1eedbce790da2fe3",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-09",
+    "scope": "Model/editor semantic and pedagogy review of production Lesson 0036 authored from curriculum spec en-fa-A1-LESSON-SPEC-0036; not an independent human or learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "“What’s on the table?” → “There is a book.” and later “There is a pen.” are natural existence statements in a visible-object context."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian renders the existential meaning as یک ... هست without confusing there with a location word."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The construction There is a + item is the only new structure; book and pen are established vocabulary."
+      },
+      "distractorQuality": {
+        "score": 5,
+        "evidence": "Alternatives contrast the existential frame with ownership or action statements, exposing the intended grammatical choice."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A classroom table inventory before practice naturally prompts Alex to report what is present."
+      },
+      "difficultyFit": {
+        "score": 5,
+        "evidence": "The fixed existential frame with one familiar singular noun is a controlled and appropriate A1 introduction."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "The classmates arc returns with the learner role switched from Maya to Alex and a different classroom purpose."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "Learner first understands the frame with book, then transfers it to pen and retrieves the changed filler without visible English."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "The scene, two object fillers, ordering task and final retrieval demonstrate a productive “There is a + item” pattern."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "Static model/editor review only; the lesson flow is focused, but real learner comprehension, speech-recognition behavior and delayed retention remain untested."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Review is limited to the bounded A1 outcome encoded in this Lesson and does not claim mastery beyond that scope.",
+      "Final ElevenLabs prosody and speech-recognition behavior remain unreviewed until the text gate passes."
+    ],
+    "resolvedFindings": [
+      "English dialogue and target construction are contextually natural for the declared scenario.",
+      "Persian learner-facing meaning preserves the intended bounded sense without promoting a compositional phrase to a lexical word.",
+      "The final activity requires hidden retrieval and changes or extends context enough to provide transfer evidence.",
+      "Character/story continuity and learner-role assignment are consistent with the declared story metadata."
+    ],
+    "status": "PASS",
+    "average": 4.6,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 0,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "96c6017dd0a556c7202fb2e0aadb8b2c6f30760c00b2f77d1eedbce790da2fe3"
+}

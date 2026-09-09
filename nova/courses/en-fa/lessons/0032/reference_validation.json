@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0032",
+  "levelKey": "A1",
+  "sortOrder": 32,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0032: target word EN-LEX-NEW-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-NEW-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "new",
+      "partOfSpeech": "adjective",
+      "selectedReferenceKey": "EN-REF-B6BF7C8C4C3EA87A7547",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-B6BF7C8C4C3EA87A7547",
+        "EN-REF-F6BDBBC89D6EE768B600"
+      ],
+      "referenceTranslationsFa": [
+        "بی‌سابقه، نوآورانه",
+        "تازه، نو"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-B6BF7C8C4C3EA87A7547",
+        "translationFa": "تازه، نو",
+        "definitionEn": "not of long duration; having just (or relatively recently) come into being or been made or acquired or discovered",
+        "senseId": "c32492ee-6149-5386-b835-170f21cf9b22",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    },
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "role": "review",
+      "itemType": "word",
+      "lemma": "room",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-D8B2B1429B2580871B77",
+      "status": "exact_production_match",
+      "referenceKeys": [
+        "EN-REF-D8B2B1429B2580871B77",
+        "EN-REF-920AB60876EB00716D0A"
+      ],
+      "referenceTranslationsFa": [
+        "اتاق",
+        "فضا"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-D8B2B1429B2580871B77",
+        "translationFa": "اتاق"
+      }
+    }
+  ],
+  "sourceHash": "f75cc7eceaf834a924f50507d368c6884faecbaa7604c9bbc8e637dd1bd8bc15"
+}
