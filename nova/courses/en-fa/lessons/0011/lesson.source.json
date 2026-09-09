@@ -5,28 +5,39 @@
   "levelKey": "A1",
   "lessonKey": "EN-A1-L-0011",
   "sortOrder": 11,
-  "titleEn": "Accept or decline",
-  "titleFa": "قبول یا رد کردن پیشنهاد",
-  "descriptionFa": "این بار برای یک برنامه کتابخوانی به کتابخانه برگشته ای. لیو کنار میز پذیرایی کمک می کند و به تو نوشیدنی تعارف می کند.",
+  "titleEn": "Yes, please. No, thank you.",
+  "titleFa": "بله لطفا؛ نه ممنون",
+  "descriptionFa": "لیام در برنامه کتابخوانی دوباره لیو را می بیند و این بار یک نوشیدنی را قبول و یکی را مودبانه رد می کند.",
   "primaryOutcomeKey": "A1-INTERACTION-ACCEPT-DECLINE",
-  "outcomeFa": "می توانی یک پیشنهاد ساده را مودبانه قبول یا رد کنی و نوشیدنی دیگری بخواهی.",
-  "scenarioFa": "این بار برای یک برنامه کتابخوانی به کتابخانه برگشته ای. لیو کنار میز پذیرایی کمک می کند و به تو نوشیدنی تعارف می کند. نقش تو لیام است.",
+  "outcomeFa": "زبان آموز می تواند یک پیشنهاد ساده را مودبانه قبول یا رد کند و در صورت نیاز نوشیدنی دیگری بخواهد.",
+  "scenarioFa": "کنار میز پذیرایی کتابخانه ایستاده ای. لیو نوشیدنی تعارف می کند. نقش تو لیام است.",
   "prerequisiteOutcomeKeys": [
     "A1-INTERACTION-CHOOSE-DRINK",
-    "A1-INTERACTION-FIRST-MEETING"
+    "A1-INTERACTION-REQUEST-OBJECT"
   ],
   "curriculum": {
-    "startingKnowledge": "early_a1_after_greetings",
-    "targetConstructions": [],
+    "startingKnowledge": "early_a1_drinks_and_requests",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-YES-PLEASE",
+        "form": "Yes, please.",
+        "meaningFa": "قبول مودبانه پیشنهاد"
+      },
+      {
+        "key": "EN-CONSTR-NO-THANK-YOU",
+        "form": "No, thank you.",
+        "meaningFa": "رد مودبانه پیشنهاد"
+      }
+    ],
     "supportLanguage": [],
-    "assessmentBoundary": "Guided speech and audio reconstruction are practice. Choice tasks assess recognition/selection. Final hidden-answer retrieval records first attempt and help separately; exact text matching cannot certify open-ended language ability or pronunciation.",
+    "assessmentBoundary": "The Lesson teaches two bounded social responses to simple offers. Final retrieval measures same-session polite refusal, not free conversation or nuanced preference expression.",
     "transferPlan": {
       "mode": "same_lesson",
-      "intent": "End with meaning-cued recall without displayed English. Continue delayed review in later stories; this does not prove long-term retention."
+      "intent": "Move from choosing between drinks to explicitly accepting or declining one offer, while reusing the existing request frame for an alternative drink."
     },
     "story": {
       "arcKey": "EN-A1-LIBRARY",
-      "sceneKey": "EN-A1-SCENE-0011",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0011",
       "learnerRoleKey": "liam",
       "participants": [
         "liam",
@@ -38,48 +49,58 @@
       "dependsOnLessonKeys": [
         "EN-A1-L-0004"
       ],
-      "settingFa": "برنامه کتابخوانی کتابخانه، میز پذیرایی",
-      "storyBeatFa": "لیام کتابدار را در برنامه کتابخوانی دوباره می بیند و یک پیشنهاد را رد می کند."
+      "settingFa": "کتابخانه، میز پذیرایی برنامه کتابخوانی",
+      "storyBeatFa": "لیام بعد از برخورد قبلی با لیو، این بار در یک موقعیت آرام تر نوشیدنی پیشنهادی او را قبول یا رد می کند."
     },
     "reviewLinks": [
       {
-        "lessonKey": "EN-A1-L-0009",
-        "activityKeys": [
-          "A02"
-        ],
-        "learningDemand": "transfer",
-        "note": "Reuse drink requests in a peer interaction rather than a purchase."
-      },
-      {
         "lessonKey": "EN-A1-L-0010",
         "activityKeys": [
-          "A04",
+          "A02",
+          "A04"
+        ],
+        "learningDemand": "transfer",
+        "note": "Known drink labels move from either-or choice to single-offer acceptance and refusal."
+      },
+      {
+        "lessonKey": "EN-A1-L-0009",
+        "activityKeys": [
           "A05"
         ],
         "learningDemand": "transfer",
-        "note": "Decide whether to accept an offer instead of selecting between two drinks."
+        "note": "The known Can I have ... please? frame is reused to request an alternative after declining an offer."
       }
     ],
     "pedagogyVersion": 2
   },
   "lexicalItems": [
     {
-      "lexicalKey": "EN-LEX-NO-01",
-      "itemType": "word",
-      "displayForm": "no",
-      "translationFa": "نه",
+      "lexicalKey": "EN-LEX-YES-PLEASE-01",
+      "itemType": "formula",
+      "displayForm": "Yes, please.",
+      "translationFa": "بله، لطفا.",
       "role": "target",
+      "lemma": "yes please",
+      "partOfSpeech": "formula",
+      "senseKey": "polite_acceptance",
       "audioEligible": true,
-      "partOfSpeech": "interjection"
+      "metadata": {
+        "source": "nova_authored_social_formula"
+      }
     },
     {
-      "lexicalKey": "EN-LEX-YES-01",
-      "itemType": "word",
-      "displayForm": "yes",
-      "translationFa": "بله",
+      "lexicalKey": "EN-LEX-NO-THANK-YOU-01",
+      "itemType": "formula",
+      "displayForm": "No, thank you.",
+      "translationFa": "نه، ممنون.",
       "role": "target",
+      "lemma": "no thank you",
+      "partOfSpeech": "formula",
+      "senseKey": "polite_refusal",
       "audioEligible": true,
-      "partOfSpeech": "interjection"
+      "metadata": {
+        "source": "nova_authored_social_formula"
+      }
     },
     {
       "lexicalKey": "EN-LEX-COFFEE-01",
@@ -87,8 +108,13 @@
       "displayForm": "coffee",
       "translationFa": "قهوه",
       "role": "review",
+      "lemma": "coffee",
+      "partOfSpeech": "noun",
+      "senseKey": "coffee_beverage",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "referenceKey": "EN-REF-DF86C36C215439FDE741"
+      }
     },
     {
       "lexicalKey": "EN-LEX-WATER-01",
@@ -96,8 +122,13 @@
       "displayForm": "water",
       "translationFa": "آب",
       "role": "review",
+      "lemma": "water",
+      "partOfSpeech": "noun",
+      "senseKey": "drink_water",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "referenceKey": "EN-REF-93033FDD55B1A504F831"
+      }
     },
     {
       "lexicalKey": "EN-LEX-TEA-01",
@@ -105,106 +136,79 @@
       "displayForm": "tea",
       "translationFa": "چای",
       "role": "review",
+      "lemma": "tea",
+      "partOfSpeech": "noun",
+      "senseKey": "tea_beverage",
       "audioEligible": true,
-      "partOfSpeech": "noun"
+      "metadata": {
+        "referenceKey": "EN-REF-C86BD7B12371D318284C"
+      }
     },
     {
-      "lexicalKey": "EN-LEX-THANKS-01",
-      "itemType": "word",
-      "displayForm": "thanks",
-      "translationFa": "ممنون",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "interjection"
-    },
-    {
-      "lexicalKey": "EN-LEX-PLEASE-01",
-      "itemType": "word",
-      "displayForm": "please",
-      "translationFa": "لطفا",
-      "role": "review",
-      "audioEligible": true,
-      "partOfSpeech": "adverb"
-    },
-    {
-      "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
+      "lexicalKey": "EN-LEX-CAN-I-HAVE-01",
       "itemType": "formula",
-      "displayForm": "here you go",
-      "translationFa": "بفرما؛ هنگام دادن چیزی",
+      "displayForm": "Can I have ..., please?",
+      "translationFa": "می شه لطفا ... بدی؟",
       "role": "review",
-      "audioEligible": true
+      "lemma": "can i have please",
+      "partOfSpeech": "formula",
+      "senseKey": "polite_object_request",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_request_formula"
+      }
     }
   ],
   "turns": [
     {
       "turnKey": "T01",
       "role": "character",
+      "characterKey": "leo",
       "textEn": "Coffee?",
-      "translationFa": "قهوه می خوای؟",
-      "audioRequired": true,
-      "characterKey": "leo"
+      "translationFa": "قهوه؟",
+      "audioRequired": true
     },
     {
       "turnKey": "T02",
       "role": "learner",
-      "textEn": "No, thanks. Water, please.",
-      "translationFa": "نه، ممنون. آب، لطفا.",
-      "audioRequired": true,
-      "speechTargetEn": "No, thanks. Water, please.",
+      "characterKey": "liam",
+      "textEn": "No, thank you.",
+      "translationFa": "نه، ممنون.",
+      "speechTargetEn": "No, thank you.",
       "acceptedSpeechEn": [
-        "No, thanks. Water, please."
+        "No, thank you."
       ],
-      "characterKey": "liam"
+      "audioRequired": true
     },
     {
       "turnKey": "T03",
       "role": "character",
-      "textEn": "Here you go.",
-      "translationFa": "بفرما.",
-      "audioRequired": true,
-      "characterKey": "leo"
+      "characterKey": "leo",
+      "textEn": "Water?",
+      "translationFa": "آب؟",
+      "audioRequired": true
     },
     {
       "turnKey": "T04",
       "role": "learner",
-      "textEn": "Thanks!",
-      "translationFa": "ممنون!",
-      "audioRequired": true,
-      "speechTargetEn": "Thanks!",
-      "acceptedSpeechEn": [
-        "Thanks!"
-      ],
-      "characterKey": "liam"
-    },
-    {
-      "turnKey": "T05",
-      "role": "character",
-      "textEn": "Tea?",
-      "translationFa": "چای می خوای؟",
-      "audioRequired": true,
-      "characterKey": "leo"
-    },
-    {
-      "turnKey": "T06",
-      "role": "learner",
+      "characterKey": "liam",
       "textEn": "Yes, please.",
       "translationFa": "بله، لطفا.",
-      "audioRequired": true,
       "speechTargetEn": "Yes, please.",
       "acceptedSpeechEn": [
         "Yes, please."
       ],
-      "characterKey": "liam"
+      "audioRequired": true
     },
     {
-      "turnKey": "T07",
+      "turnKey": "T05",
       "role": "learner",
       "characterKey": "liam",
-      "textEn": "No, thanks. Coffee, please.",
-      "translationFa": "نه، ممنون. قهوه، لطفا.",
-      "speechTargetEn": "No, thanks. Coffee, please.",
+      "textEn": "No, thank you.",
+      "translationFa": "نه، ممنون.",
+      "speechTargetEn": "No, thank you.",
       "acceptedSpeechEn": [
-        "No, thanks. Coffee, please."
+        "No, thank you."
       ],
       "audioRequired": true,
       "metadata": {
@@ -214,20 +218,21 @@
   ],
   "activities": [
     {
+      "activityKey": "A01",
       "type": "lexical_teach",
-      "instructionFa": "معنی و صدای این کلمه ها را یاد بگیر.",
+      "instructionFa": "دو پاسخ کوتاه برای قبول و رد پیشنهاد را ببین و بشنو.",
       "config": {
         "lexicalKeys": [
-          "EN-LEX-NO-01",
-          "EN-LEX-YES-01"
+          "EN-LEX-YES-PLEASE-01",
+          "EN-LEX-NO-THANK-YOU-01"
         ],
-        "explanationFa": "برای قبول پیشنهاد Yes, please می گویی؛ برای رد مودبانه No, thanks. اگر چیز دیگری می خواهی، می توانی نامش را با please اضافه کنی."
-      },
-      "activityKey": "A01"
+        "explanationFa": "Yes, please. یک پیشنهاد را مودبانه قبول می کند. No, thank you. همان پیشنهاد را مودبانه رد می کند."
+      }
     },
     {
+      "activityKey": "A02",
       "type": "dialogue",
-      "instructionFa": "حرف لیو را گوش کن و پاسخ لیام را با صدای بلند بگو.",
+      "instructionFa": "پیشنهاد لیو را گوش کن و جواب لیام را با صدای بلند بگو.",
       "config": {
         "mode": "guided_exchange",
         "exchanges": [
@@ -252,113 +257,111 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
-      },
-      "activityKey": "A02"
+      }
     },
     {
+      "activityKey": "A03",
       "type": "sentence_order",
-      "instructionFa": "گوش کن و کلمه ها را به همان ترتیب بچین.",
+      "instructionFa": "پاسخ رد مودبانه را گوش کن و سه بخش را مرتب کن.",
       "config": {
         "audioSourceTurnKey": "T02",
         "tokensEn": [
-          "please.",
+          "you.",
           "No,",
-          "Water,",
-          "thanks."
+          "thank"
         ],
         "answerTokensEn": [
           "No,",
-          "thanks.",
-          "Water,",
-          "please."
+          "thank",
+          "you."
         ],
-        "answerEn": "No, thanks. Water, please.",
+        "answerEn": "No, thank you.",
         "showAnswerTextBeforeAttempt": false,
         "allowAudioReplay": true,
         "practiceOnly": true,
         "hideTokenSurfaceCues": true,
         "feedback": {
-          "correctFa": "ترتیب شنیده شده را ساختی. معنی جمله: نه، ممنون. آب، لطفا.",
-          "retryFa": "یک بار دیگر صدا را پخش کن. ترتیب را از شنیدن جمله پیدا کن؛ معنی جمله: نه، ممنون. آب، لطفا."
+          "correctFa": "درست چیدی؛ این پاسخ پیشنهاد را مودبانه رد می کند.",
+          "retryFa": "دوباره گوش کن؛ پاسخ با No شروع می شود و با thank you تمام می شود."
         }
       },
-      "activityKey": "A03",
       "metadata": {
         "evidenceKind": "supported_reconstruction"
       }
     },
     {
-      "type": "response_choice",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "activityKey": "A04",
+      "type": "comprehension",
+      "instructionFa": "به اولین پیشنهاد و جواب لیام گوش کن.",
+      "promptFa": "لیام کدام نوشیدنی را رد می کند؟",
       "config": {
-        "optionsEn": [
-          "Yes, please.",
-          "No, thanks.",
-          "Here you go."
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
         ],
-        "answerIndex": 1,
+        "options": [
+          "قهوه",
+          "آب",
+          "چای"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
         "feedback": {
           "optionsFa": [
-            "Yes, please پیشنهاد را قبول می کند؛ تو نوشیدنی نمی خواهی.",
-            "No, thanks پیشنهاد را مودبانه رد می کند.",
-            "Here you go وقتی چیزی می دهی به کار می رود؛ اینجا باید پیشنهاد را رد کنی."
+            "درست است؛ لیو Coffee? می گوید و لیام پاسخ منفی می دهد.",
+            "لیام آب را در پیشنهاد بعدی قبول می کند.",
+            "tea در گفت و گوی اصلی شنیده نمی شود."
           ],
-          "correctFa": "No, thanks پیشنهاد را مودبانه رد می کند."
+          "correctFa": "لیام پیشنهاد قهوه را رد می کند."
         }
       },
-      "promptFa": "کنار میز پذیرایی کتابخانه چای تعارف می کنند. نوشیدنی نمی خواهی. چه می گویی؟",
       "metadata": {
-        "learningDemand": "changed_context",
-        "purpose": "changed_context",
         "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A04"
+      }
     },
     {
+      "activityKey": "A05",
       "type": "response_choice",
-      "instructionFa": "با توجه به موقعیت، گزینه مناسب را انتخاب کن.",
+      "instructionFa": "بعد از رد پیشنهاد، درخواست مناسب را انتخاب کن.",
+      "promptFa": "قهوه نمی خواهی و ترجیح می دهی آب بگیری. کدام جمله آب را مودبانه درخواست می کند؟",
       "config": {
         "optionsEn": [
-          "Here you go.",
-          "No, thanks.",
-          "Yes, please."
+          "Can I have water, please?",
+          "Tea or coffee?",
+          "It's on the table."
         ],
-        "answerIndex": 2,
+        "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "این عبارت برای دادن چیزی است؛ این بار می خواهی پیشنهاد را قبول کنی.",
-            "این پاسخ پیشنهاد را رد می کند؛ الان آب می خواهی.",
-            "Yes, please پیشنهاد آب را مودبانه قبول می کند."
+            "درست است؛ این همان الگوی درخواست آشنا با water است.",
+            "این جمله بین دو نوشیدنی پیشنهاد می دهد و درخواست آب نیست.",
+            "این جمله جای یک وسیله را می گوید."
           ],
-          "correctFa": "Yes, please پیشنهاد آب را مودبانه قبول می کند."
+          "correctFa": "Can I have water, please? درخواست مودبانه آب است."
         }
       },
-      "promptFa": "کمی بعد در همان برنامه آب تعارف می کنند و این بار می خواهی قبول کنی. چه می گویی؟",
       "metadata": {
-        "learningDemand": "changed_context",
-        "purpose": "changed_context",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "activityKey": "A05"
+        "evidenceKind": "recognition_or_selection",
+        "learningDemand": "transfer"
+      }
     },
     {
       "activityKey": "A06",
       "type": "speak",
-      "instructionFa": "این بار پاسخ آماده نداری. خودت جمله را بگو یا بنویس.",
-      "promptFa": "لیام هستی. چای پیشنهاد شده؛ چای را مودبانه رد کن و به جایش قهوه بخواه.",
+      "instructionFa": "جواب انگلیسی را نمی بینی. خودت پیشنهاد را مودبانه رد کن.",
+      "promptFa": "لیام هستی. این بار لیو چای پیشنهاد می کند ولی تو چای نمی خواهی. مودبانه رد کن.",
       "config": {
         "mode": "retrieval",
-        "textEn": "No, thanks. Coffee, please.",
+        "textEn": "No, thank you.",
         "acceptedAnswersEn": [
-          "No, thanks. Coffee, please.",
-          "No, thank you. Coffee, please."
+          "No, thank you."
         ],
-        "sourceTurnKey": "T07",
+        "sourceTurnKey": "T05",
         "showAnswerTextBeforeAttempt": false,
-        "hintFa": "اول پیشنهاد را رد کن، بعد نوشیدنی مورد نظرت را بگو.",
+        "hintFa": "از پاسخ کوتاهی استفاده کن که هم نه دارد و هم تشکر.",
         "feedback": {
-          "correctFa": "پاسخت با یکی از الگوهای این تمرین هماهنگ است.",
-          "retryFa": "اول پیشنهاد را رد کن، بعد نوشیدنی مورد نظرت را بگو."
+          "correctFa": "درست است؛ پیشنهاد را مودبانه رد کردی.",
+          "retryFa": "اول نه بگو و بعد با تشکر پاسخ را نرم تر کن."
         },
         "evidenceKind": "bounded_retrieval",
         "practiceOnly": false,
@@ -366,7 +369,7 @@
       },
       "metadata": {
         "learningDemand": "retrieval",
-        "assessmentLimit": "Same-session bounded pattern recall; not open-ended proficiency or pronunciation assessment."
+        "assessmentLimit": "Same-session bounded polite-refusal recall; not open-ended preference assessment."
       }
     }
   ],
@@ -375,7 +378,6 @@
   },
   "metadata": {
     "pilot": false,
-    "batchKey": "EN-A1-STORY-10-01",
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
