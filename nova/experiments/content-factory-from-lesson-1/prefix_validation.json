@@ -263,7 +263,9 @@
       "automatedScore": 100,
       "canonicalStatus": "PASS",
       "referenceStatus": "PASS",
-      "referenceWarnings": [],
+      "referenceWarnings": [
+        "EN-A1-L-0020: target word EN-LEX-SEVEN-01 uses explicit Nova reference-gap fallback: The current A1 reference snapshot has no exact production record for the basic cardinal word seven."
+      ],
       "errors": []
     },
     {
@@ -312,12 +314,9 @@
     }
   ],
   "storyErrors": [],
-  "factoryDesignStatus": "FAIL",
-  "factoryDesignErrors": [
-    "DG-H02 EN-A1-L-0016 EN-CONSTR-AT-NUMBER: filler 'seven' was used productively but no independent word/lexeme exists by Lesson 20"
-  ],
+  "factoryDesignStatus": "PASS",
+  "factoryDesignErrors": [],
   "errors": [
-    "DG-H02 EN-A1-L-0016 EN-CONSTR-AT-NUMBER: filler 'seven' was used productively but no independent word/lexeme exists by Lesson 20",
     {
       "code": "CQ-H03",
       "message": "Scored answer requires support/incidental material.",
