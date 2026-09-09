@@ -4,25 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - '.github/workflows/nova-pilot.yml'
-      - 'nova/courses/**/course.source.json'
-      - 'nova/courses/**/audio_voices.json'
-      - 'nova/courses/**/lessons/**/lesson.source.json'
-      - 'nova/courses/**/lessons/**/pedagogy.review.json'
-      - 'nova/curriculum/**'
-      - 'nova/prototype/**'
-      - 'nova/calibration/**'
-      - 'nova/reference/**'
-      - 'nova/reference-snapshots/**'
-      - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
-      - 'nova/_assistant/content-system-v1/persian_orthography_exceptions.json'
-      - 'nova/_assistant/content-system-v1/pedagogy_review_migrations.json'
-      - 'nova/_assistant/content-system-v1/content_quality.policy.json'
-      - 'nova/_assistant/content-system-v1/tools/**'
-      - 'nova/mysql/01_reset_all.sql'
-      - 'nova/mysql/02_schema.sql'
-      - 'nova/mysql/03_runtime_lesson_query.sql'
-      - 'nova/mysql/04_cleanup_orphan_nonword_lexical_items.sql'
+      - 'nova/curriculum/en-fa/production.request.json'
   workflow_dispatch:
 
 permissions:
@@ -180,7 +162,7 @@ jobs:
         run: |
           git fetch origin main
           if [ "$INPUT_HEAD" != "$(git rev-parse origin/main)" ]; then
-            echo "Inputs changed during text QA; a newer queued run will publish the current evidence."
+            echo "Inputs changed during text QA; a newer requested run will publish the current evidence."
             echo "PUBLISH_HEAD=$INPUT_HEAD" >> "$GITHUB_ENV"
             exit 0
           fi
@@ -221,7 +203,7 @@ jobs:
         run: |
           git fetch origin main
           if [ "${PUBLISH_HEAD:-$INPUT_HEAD}" != "$(git rev-parse origin/main)" ]; then
-            echo "Inputs changed after text publication; the newer queued run will rebuild runtime outputs."
+            echo "Inputs changed after text publication; a newer requested run will rebuild runtime outputs."
             exit 0
           fi
           git config user.name "nova-production-bot"
