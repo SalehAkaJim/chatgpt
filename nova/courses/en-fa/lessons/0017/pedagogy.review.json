@@ -1,11 +1,11 @@
 {
   "version": 1,
   "lessonKey": "EN-A1-L-0017",
-  "sourceHash": "4e759a95a9371bd5aa06960999fe88f4f41bbda9a66170be5754945321ab2084",
+  "sourceHash": "28a9489e562544b88a90d291a150a123a1486c9dff43089a0c6b59b2fe9dc762",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "reviewerType": "model",
   "reviewedAt": "2026-09-09",
-  "scope": "Model/editor review after repairing the weekday word model and dechunking On Monday; not an independent human or learner test.",
+  "scope": "Model/editor review after repairing the weekday word model while keeping the first weekday response intentionally bounded; not an independent human or learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -17,7 +17,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "on and Monday are now independent target words while On Monday remains a productive composition, removing the earlier hidden-chunk inconsistency."
+      "evidence": "on and Monday are independent target words, while the Lesson explicitly limits practice to the fixed On Monday response and defers productive On + weekday generalization until a second weekday exists."
     },
     "distractorQuality": {
       "score": 4,
@@ -28,20 +28,20 @@
       "evidence": "Leo and Liam are coordinating the already-established library event, so the elliptical day question is locally motivated."
     },
     "difficultyFit": {
-      "score": 4,
-      "evidence": "Only one weekday and its day preposition are taught; additional weekdays are deferred."
+      "score": 5,
+      "evidence": "Only Monday and the bounded day use of on are introduced; the Lesson does not force a second weekday merely to satisfy a generativity rule."
     },
     "repetitionUsefulness": {
       "score": 4,
-      "evidence": "Monday is taught independently, read on a program card, heard in dialogue and then recombined with on in hidden retrieval."
+      "evidence": "Monday is taught independently, read on a program card, heard in dialogue and retrieved inside the short response."
     },
     "transferQuality": {
-      "score": 5,
-      "evidence": "The schedule question-answer idea transfers from clock time to weekday while preserving separate word units instead of memorizing one phrase row."
+      "score": 4,
+      "evidence": "The schedule-question idea transfers from clock time to weekday while the response remains appropriately bounded until another weekday is taught."
     },
     "overallCoherence": {
       "score": 5,
-      "evidence": "Word teaching, card reading, dialogue, selection and final retrieval all serve understanding and stating the program day."
+      "evidence": "Word teaching, card reading, dialogue, selection and final retrieval all serve understanding and stating the Monday program day without overclaiming a general weekday construction."
     },
     "learnerExperience": {
       "score": 3,
@@ -51,12 +51,13 @@
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
-    "The Lesson establishes only Monday, not a general weekday inventory.",
+    "The Lesson establishes only Monday and one bounded response, not a productive weekday inventory.",
     "Final ElevenLabs prosody and delayed retention remain unmeasured."
   ],
   "resolvedFindings": [
     "Monday is now an independent word rather than existing only inside On Monday.",
-    "on is separately represented for the scored weekday response, matching the words-layer rule.",
-    "On Monday remains a construction instance and is not inserted as a fake vocabulary row."
+    "on is separately represented in the word layer for this taught use.",
+    "The Lesson does not prematurely declare On + weekday productive; that generativity requirement starts when a second weekday is introduced.",
+    "On Monday remains compositional lesson text and is not inserted as a fake vocabulary row."
   ]
 }
