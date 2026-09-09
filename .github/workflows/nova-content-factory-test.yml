@@ -8,9 +8,12 @@ on:
       - 'nova/experiments/content-factory-from-lesson-1/**'
       - 'nova/courses/en-fa/lessons/**/lesson.source.json'
       - 'nova/_assistant/content-system-v1/04_language_data.md'
+      - 'nova/_assistant/content-system-v1/lesson.source.schema.json'
       - 'nova/_assistant/content-system-v1/tools/factory_probe.py'
+      - 'nova/_assistant/content-system-v1/tools/generate_audio.py'
       - 'nova/_assistant/content-system-v1/tools/language_units.py'
       - 'nova/_assistant/content-system-v1/tools/migrate_word_units.py'
+      - 'nova/_assistant/content-system-v1/tools/test_factory_design.py'
       - 'nova/_assistant/content-system-v1/tools/validate_factory_design.py'
       - 'nova/_assistant/content-system-v1/tools/validate_factory_prefix.py'
       - 'nova/_assistant/content-system-v1/tools/validate_lesson_reference.py'
@@ -37,6 +40,9 @@ jobs:
           python-version: '3.12'
       - name: Install validator dependencies
         run: pip install -r nova/_assistant/content-system-v1/tools/requirements.txt
+      - name: Unit test word and factory design rules
+        working-directory: nova/_assistant/content-system-v1/tools
+        run: python -m unittest -v test_factory_design.py
       - name: Remove non-word teaching units from word layer
         run: |
           python nova/_assistant/content-system-v1/tools/migrate_word_units.py \
