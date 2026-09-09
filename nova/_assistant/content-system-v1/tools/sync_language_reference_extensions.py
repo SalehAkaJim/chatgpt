@@ -31,6 +31,8 @@ SLOT_WORDS = {
     "item", "object", "number", "name", "person", "place", "city", "country",
     "drink", "noun", "verb", "time", "day", "thing", "word", "location",
 }
+MAX_USAGE_QUERIES = 80
+MAX_CONSECUTIVE_USAGE_FAILURES = 3
 
 
 def load_json(path: Path, default=None):
@@ -51,7 +53,7 @@ def http_get(url: str, *, timeout: int = 45, attempts: int = 3) -> bytes:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
             with urllib.request.urlopen(req, timeout=timeout) as response:
                 return response.read()
-        except Exception as exc:  # network sync must report upstream failures clearly
+        except Exception as exc:
             last = exc
             if attempt + 1 < attempts:
                 time.sleep(1.5 * (attempt + 1))
@@ -175,7 +177,7 @@ def parse_ngsl_spoken(text: str) -> list[dict]:
                 pass
         result.append({"lemma": word, "spokenRank": rank, "frequency": frequency})
         next_rank += 1
-    # Keep the best rank per lemma if source rows contain variants.
+
     best = {}
     for item in result:
         old = best.get(item["lemma"])
@@ -207,7 +209,6 @@ def words(text: str) -> list[str]:
 
 
 def construction_query(form: str) -> str | None:
-    # Remove '+ slot' tails and placeholders while preserving the stable phrase.
     raw = re.sub(r"\+\s*[A-Za-z_]+", " ", form or "")
     raw = raw.replace("...", " ")
     tokens = [x for x in words(raw) if x not in SLOT_WORDS]
@@ -279,7 +280,9 @@ def collect_usage_queries(root: Path, course_code: str, lesson_numbers: list[int
                 continue
             for key in ("lessonKeys", "constructionKeys", "lexicalLemmas"):
                 merged[query][key] = sorted(set(merged[query].get(key, []) + item.get(key, [])))
-    return sorted(merged.values(), key=lambda x: (x.get("kind", ""), x["query"]))
+    # Prefer target collocations over generic construction queries if the cap is hit.
+    rows = sorted(merged.values(), key=lambda x: (0 if x.get("kind") == "target_collocation" else 1, x["query"]))
+    return rows[:MAX_USAGE_QUERIES]
 
 
 def tatoeba_search(api_base: str, query: str, filters: dict, limit: int = 5) -> dict:
@@ -292,7 +295,7 @@ def tatoeba_search(api_base: str, query: str, filters: dict, limit: int = 5) -> 
         "showtrans": "none",
     }
     url = api_base + "?" + urllib.parse.urlencode(params)
-    raw = http_get(url, timeout=30, attempts=2)
+    raw = http_get(url, timeout=12, attempts=1)
     payload = json.loads(raw.decode("utf-8"))
     data = payload.get("data", []) if isinstance(payload, dict) else []
     examples = []
@@ -315,29 +318,45 @@ def build_usage_snapshot(
     previous_by_query = {x.get("query"): x for x in previous.get("queries", []) if x.get("query")}
     queries = collect_usage_queries(root, course_code, lesson_numbers)
     output = []
+    consecutive_failures = 0
+    circuit_open = False
+
     for index, item in enumerate(queries):
         query = item["query"]
+        old = previous_by_query.get(query)
+        if circuit_open:
+            if old:
+                output.append({**old, **item, "status": old.get("status", "cached"), "syncWarning": "tatoeba_circuit_open_using_cached_evidence"})
+            else:
+                output.append({**item, "status": "unavailable", "sampleCount": 0, "examples": [], "syncWarning": "tatoeba_circuit_open"})
+            continue
         try:
             evidence = tatoeba_search(source["apiBase"], query, source.get("filters", {}))
             status = "evidence" if evidence["sampleCount"] else "no_hit"
             output.append({**item, **evidence, "status": status})
+            consecutive_failures = 0
         except Exception as exc:
-            old = previous_by_query.get(query)
+            consecutive_failures += 1
             if old:
                 output.append({**old, **item, "status": old.get("status", "cached"), "syncWarning": str(exc)})
             else:
                 output.append({**item, "status": "unavailable", "sampleCount": 0, "examples": [], "syncWarning": str(exc)})
-        # Be a polite public API client.
-        if index + 1 < len(queries):
-            time.sleep(0.05)
+            if consecutive_failures >= MAX_CONSECUTIVE_USAGE_FAILURES:
+                circuit_open = True
+        if index + 1 < len(queries) and not circuit_open:
+            time.sleep(0.03)
+
     return {
         "schemaVersion": 1,
         "courseCode": course_code,
         "source": "tatoeba",
         "apiBase": source["apiBase"],
         "filters": source.get("filters", {}),
+        "queryLimit": MAX_USAGE_QUERIES,
+        "circuitOpened": circuit_open,
         "queryCount": len(output),
         "evidenceQueryCount": sum(1 for x in output if x.get("sampleCount", 0) > 0),
+        "unavailableQueryCount": sum(1 for x in output if x.get("status") == "unavailable"),
         "queries": output,
     }
 
@@ -396,6 +415,8 @@ def main() -> int:
             "lessonCount": len(lesson_numbers),
             "queryCount": usage.get("queryCount", 0) if usage else 0,
             "evidenceQueryCount": usage.get("evidenceQueryCount", 0) if usage else 0,
+            "unavailableQueryCount": usage.get("unavailableQueryCount", 0) if usage else 0,
+            "circuitOpened": usage.get("circuitOpened", False) if usage else False,
         },
     }
     dump_json(ref_root / "extensions_manifest.json", manifest)
