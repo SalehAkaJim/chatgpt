@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "waveKey": "en-fa-A1-0133-0140",
+  "workerId": "w07",
+  "sortOrder": 139,
+  "lessonKey": "EN-A1-L-0139",
+  "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/packets/0139.spec.json",
+  "provisionalSpecHash": "74da3283bbc8ccf69b9069a7097806e97cc2f0e499225f2bbd68c4a09cf02372",
+  "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/workers/w07/0139/lesson.source.json",
+  "canonicalPath": "nova/courses/en-fa/lessons/0139/lesson.source.json",
+  "authoringMode": "parallel-draft",
+  "rules": [
+    "Write only the stagingPath; never write canonical Lesson files from a worker.",
+    "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+    "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+    "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+    "Do not generate paid audio during worker authoring."
+  ]
+}
