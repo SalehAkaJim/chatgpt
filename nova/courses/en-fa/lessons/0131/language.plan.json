@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0131",
+  "sortOrder": 131,
+  "levelKey": "A1",
+  "lessonSourceHash": "e581fc9e5a49b5cf01c6c3a4e614f65d94adbbc6aa574efe9ad9cdaa8fe41e87",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0131-HOUR",
+      "form": "It takes an hour",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-HOUR-01",
+      "lemma": "hour",
+      "role": "target",
+      "referenceKey": "EN-REF-0BB648B61B43C2F09765",
+      "spokenPriority": {
+        "lemma": "hour",
+        "spokenRank": 239,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AW1 ER0",
+        "arpabet": [
+          "AW1 ER0",
+          "AW1 R"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "it takes an hour",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0131"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0131-HOUR"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "it takes an hour",
+      "examples": [],
+      "fallback": {
+        "query": "it takes an hour",
+        "rationale": "Bounded target construction for the intended time-unit noun sense of hour and the indefinite article before a vowel sound."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "takes an hour",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0131"
+      ],
+      "lexicalLemmas": [
+        "hour"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "it takes an hour",
+      "examples": [],
+      "fallback": {
+        "query": "it takes an hour",
+        "rationale": "Bounded target construction for the intended time-unit noun sense of hour and the indefinite article before a vowel sound."
+      },
+      "fallbackMatch": "compatible_phrase"
+    },
+    {
+      "query": "takes an hour too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0131"
+      ],
+      "lexicalLemmas": [
+        "hour"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "the walk takes an hour too",
+      "examples": [],
+      "fallback": {
+        "query": "the walk takes an hour too",
+        "rationale": "Changed-context learner response preserving the same bounded time-unit sense."
+      },
+      "fallbackMatch": "compatible_phrase"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "19378689f8a2752588003bee22c0f6605437acb906999e2660feafdd08b9d86f"
+}

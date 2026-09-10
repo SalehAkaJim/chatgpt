@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0127",
+  "sortOrder": 127,
+  "levelKey": "A1",
+  "lessonSourceHash": "5403404bb29ac960df04aa59228cb55524917f5ddf6367076bb45aeb4da5a4c3",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0127-TALK",
+      "form": "We can talk here",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-TALK-01",
+      "lemma": "talk",
+      "role": "target",
+      "referenceKey": "EN-REF-5BB1D818E803C3AAAD78",
+      "spokenPriority": {
+        "lemma": "talk",
+        "spokenRank": 99,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T AO1 K",
+        "arpabet": [
+          "T AO1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "we can talk here",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0127"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0127-TALK"
+      ],
+      "lexicalLemmas": [
+        "talk"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "we can talk here",
+      "examples": [],
+      "fallback": {
+        "query": "we can talk here",
+        "rationale": "Bounded target construction for the intended verb sense of talk."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "can we talk now",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0127"
+      ],
+      "lexicalLemmas": [
+        "talk"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "can we talk now",
+      "examples": [],
+      "fallback": {
+        "query": "can we talk now",
+        "rationale": "Natural A1 question using talk in the same bounded speak/exchange-thoughts sense before the learner responds."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "we can talk after class",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0127"
+      ],
+      "lexicalLemmas": [
+        "talk"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "we can talk after class",
+      "examples": [],
+      "fallback": {
+        "query": "we can talk after class",
+        "rationale": "Changed-context learner response preserving the same bounded target sense."
+      },
+      "fallbackMatch": "exact"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "d5f59cac782fda6c7798bb82e7fcd7e03e941f08170fcb38a1d9b5a28a22c27a"
+}

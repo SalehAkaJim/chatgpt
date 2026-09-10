@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0125",
+  "sortOrder": 125,
+  "levelKey": "A1",
+  "lessonSourceHash": "626db47b28eccc3c97e22e4a1cfb3694cea315b94e774a8672ca08eb80f31481",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0125-INFORMATION",
+      "form": "This information is for you",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-INFORMATION-01",
+      "lemma": "information",
+      "role": "target",
+      "referenceKey": "EN-REF-9853AFC7B0713F407C02",
+      "spokenPriority": {
+        "lemma": "information",
+        "spokenRank": 297,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "IH2 N F ER0 M EY1 SH AH0 N",
+        "arpabet": [
+          "IH2 N F ER0 M EY1 SH AH0 N",
+          "IH0 N F AO1 R M EY1 SH AH0 N"
+        ],
+        "stressPattern": "2010"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this information is for you",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0125"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0125-INFORMATION"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "this information is for you",
+      "examples": [],
+      "fallback": {
+        "query": "this information is for you",
+        "rationale": "Bounded target construction for the intended noun sense of information and a familiar present-be affirmative frame."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "have the information",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0125"
+      ],
+      "lexicalLemmas": [
+        "information"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "have the information",
+      "examples": [],
+      "fallback": {
+        "query": "have the information",
+        "rationale": "Natural collocation in the support question Do you have the information?"
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "yes this information is for",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0125"
+      ],
+      "lexicalLemmas": [
+        "information"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "yes this information is for",
+      "examples": [],
+      "fallback": {
+        "query": "yes this information is for",
+        "rationale": "Exact normalized collocation window from the guided learner response Yes. This information is for you."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "this information is for",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0125"
+      ],
+      "lexicalLemmas": [
+        "information"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "this information is for you",
+      "examples": [],
+      "fallback": {
+        "query": "this information is for you",
+        "rationale": "Bounded target construction for the intended noun sense of information and a familiar present-be affirmative frame."
+      },
+      "fallbackMatch": "compatible_phrase"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "37d1fc0de912953c4ea0b8c4c433363b546412e59b95767aa945ddfc8dc354de"
+}

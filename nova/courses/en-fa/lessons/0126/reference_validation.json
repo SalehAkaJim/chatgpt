@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0126",
+  "levelKey": "A1",
+  "sortOrder": 126,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0126: target word EN-LEX-AGO-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-AGO-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "ago",
+      "partOfSpeech": "adverb",
+      "selectedReferenceKey": "EN-REF-D2B9AD8BA5039FFACAA0",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-D2B9AD8BA5039FFACAA0"
+      ],
+      "referenceTranslationsFa": [
+        "در گذشته"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-D2B9AD8BA5039FFACAA0",
+        "translationFa": "در گذشته",
+        "definitionEn": "in the past",
+        "senseId": "c45a4f57-8927-5c05-b9a3-07e153768967",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "ab17e92a7d2b37a966ad803b2255afec5282df3d4814760b09af2f9fbdd39085"
+}

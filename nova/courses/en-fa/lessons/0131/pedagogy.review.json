@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor semantic and pedagogy review of Lesson 0131; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 5,
+      "evidence": "‘It takes an hour.’ and ‘The walk takes an hour too.’ are grammatical, natural duration statements; all English distractors are grammatical and natural alternatives."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "Persian copy consistently maps hour to «ساعت» and preserves the sixty-minute time-unit meaning."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "The learner first encounters the guided exchange, then listening recognition and a supported sentence reconstruction, and finally performs hidden-answer retrieval."
+    },
+    "distractorQuality": {
+      "score": 5,
+      "evidence": "A04 and A05 distractors contrast duration or intent without malformed English; each wrong English option has an explicit model audit and Persian contrast reason."
+    },
+    "dialoguePlausibility": {
+      "score": 5,
+      "evidence": "سارا و روبی در مسیر خانه زمان رفت‌وآمد با اتوبوس و پیاده را مقایسه می‌کنند."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "The target noun is concrete and frequent; the duration frame stays controlled while the familiar indefinite-article pattern an hour is explicitly recycled."
+    },
+    "repetitionUsefulness": {
+      "score": 5,
+      "evidence": "hour recurs across recognition, dialogue, listening, sentence reconstruction, transfer, and hidden retrieval."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The duration moves from the bus to walking while retaining the same time-unit sense."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Outcome, construction, scenario, learner turns, grammar focus, supported reconstruction, and final retrieval all align to the duration objective."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "Dependency order is internally sound, but no real learner test is claimed; perceived pacing and ease remain unverified."
+    },
+    "runtimeAssetGrounding": {
+      "score": 5,
+      "evidence": "No visual is claimed. A03 uses audio-required T01/T02 after A02 exposes them; A06 sentence_order uses audio-required T02 and permits replay."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "Only the bounded sixty-minute noun sense of hour and familiar an-hour article pattern are reviewed.",
+    "Generated audio pronunciation/prosody is not evaluated at this text stage."
+  ],
+  "resolvedFindings": [
+    "English grammar, accepted speech consistency, and all English distractors were checked.",
+    "Persian orthography and translation consistency were checked.",
+    "Reference key, part of speech, sense key, and provisional spec hash were cross-checked against the worker packet.",
+    "CEFRJ-GRAM-13 is used only with the attested an hour form.",
+    "Learner-context dependency order was checked: dialogue exposure precedes A03 and A06 audio-dependent work; final retrieval references already exposed T04.",
+    "No unsupported visual claim exists and every listening source is an audio-required turn.",
+    "Sentence reconstruction is practice-only, hides the completed answer, uses exact T02 audio, and allows replay.",
+    "Final retrieval keeps the answer hidden before attempt.",
+    "Walking-group story arc returns after 5 Lessons with the learner role switched."
+  ],
+  "lessonKey": "EN-A1-L-0131",
+  "sourceHash": "e581fc9e5a49b5cf01c6c3a4e614f65d94adbbc6aa574efe9ad9cdaa8fe41e87",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+}

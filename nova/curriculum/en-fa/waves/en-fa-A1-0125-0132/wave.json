@@ -139,14 +139,46 @@
   "workspaceDir": "nova/curriculum/en-fa",
   "fullPrefixRegressionRequired": true,
   "reservedTopCandidates": [
-    {"sortOrder": 125, "lexical": "information", "grammarKey": "CEFRJ-GRAM-58"},
-    {"sortOrder": 126, "lexical": "ago", "grammarKey": "CEFRJ-GRAM-60"},
-    {"sortOrder": 127, "lexical": "talk", "grammarKey": "CEFRJ-GRAM-247"},
-    {"sortOrder": 128, "lexical": "guy", "grammarKey": "CEFRJ-GRAM-58-2"},
-    {"sortOrder": 129, "lexical": "hand", "grammarKey": "CEFRJ-GRAM-58-1"},
-    {"sortOrder": 130, "lexical": "mind", "grammarKey": "CEFRJ-GRAM-146"},
-    {"sortOrder": 131, "lexical": "hour", "grammarKey": "CEFRJ-GRAM-105"},
-    {"sortOrder": 132, "lexical": "pay", "grammarKey": "CEFRJ-GRAM-117"}
+    {
+      "sortOrder": 125,
+      "lexical": "information",
+      "grammarKey": "CEFRJ-GRAM-58"
+    },
+    {
+      "sortOrder": 126,
+      "lexical": "ago",
+      "grammarKey": "CEFRJ-GRAM-60"
+    },
+    {
+      "sortOrder": 127,
+      "lexical": "talk",
+      "grammarKey": "CEFRJ-GRAM-247"
+    },
+    {
+      "sortOrder": 128,
+      "lexical": "guy",
+      "grammarKey": "CEFRJ-GRAM-58-2"
+    },
+    {
+      "sortOrder": 129,
+      "lexical": "hand",
+      "grammarKey": "CEFRJ-GRAM-58-1"
+    },
+    {
+      "sortOrder": 130,
+      "lexical": "mind",
+      "grammarKey": "CEFRJ-GRAM-146"
+    },
+    {
+      "sortOrder": 131,
+      "lexical": "hour",
+      "grammarKey": "CEFRJ-GRAM-105"
+    },
+    {
+      "sortOrder": 132,
+      "lexical": "pay",
+      "grammarKey": "CEFRJ-GRAM-117"
+    }
   ],
   "packets": [
     {
@@ -326,5 +358,8 @@
       ]
     }
   ],
-  "status": "PLANNED"
+  "status": "INTEGRATED",
+  "integratedAt": "2026-09-10T11:01:15.121658+00:00",
+  "fullPrefixRegression": "PASS",
+  "publishRequest": "en-fa-A1-0125-0132-20260910q"
 }

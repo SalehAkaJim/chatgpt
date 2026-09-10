@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0125",
+  "levelKey": "A1",
+  "sortOrder": 125,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0125: target word EN-LEX-INFORMATION-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-INFORMATION-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "information",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-9853AFC7B0713F407C02",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-9853AFC7B0713F407C02",
+        "EN-REF-10D35DAB7F19F4EDD334"
+      ],
+      "referenceTranslationsFa": [
+        "اطلاعات",
+        "پیام"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-9853AFC7B0713F407C02",
+        "translationFa": "پیام",
+        "definitionEn": "a message received and understood",
+        "senseId": "61dc04c9-bb4a-5f4d-9aa2-c8edcf65fee7",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "626db47b28eccc3c97e22e4a1cfb3694cea315b94e774a8672ca08eb80f31481"
+}

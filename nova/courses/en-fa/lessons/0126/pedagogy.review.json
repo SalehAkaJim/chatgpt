@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor semantic and pedagogy review of Lesson 0126; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 5,
+      "evidence": "Target-bearing learner lines “It was two days ago.” and “It was three days ago.” are grammatical and natural for the bounded ago sense."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "Persian copy consistently maps ago to «پیش» and preserves the intended meaning across dialogue and activities."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "One lexical target is recognized, practiced in two guided exchanges, checked for listening/meaning, transferred, and retrieved with the answer hidden."
+    },
+    "distractorQuality": {
+      "score": 4,
+      "evidence": "Distractors are short A1 alternatives with plausible surface form but clearly different meaning; none is a duplicate of the keyed answer."
+    },
+    "dialoguePlausibility": {
+      "score": 5,
+      "evidence": "سارا و روبی در راه کافه درباره زمان دیدن یک فیلم و یک پیام قدیمی حرف می‌زنند."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "Learner production stays short and controlled; no new grammar claim is added and only one lexical target is scored."
+    },
+    "repetitionUsefulness": {
+      "score": 5,
+      "evidence": "ago recurs across recognition, guided speech, comprehension, transfer, and hidden retrieval without adding another scored lexical target."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The second learner response changes the immediate context while preserving the same bounded sense of ago."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Outcome, construction, scenario, learner turns, choices, and final retrieval all align to the same lexical objective."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "No real learner test is claimed; perceived engagement, pacing, and difficulty remain unverified."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "Only the bounded lexical sense defined for this Lesson is reviewed.",
+    "Generated audio pronunciation/prosody is not evaluated at this text stage."
+  ],
+  "resolvedFindings": [
+    "English turns, accepted speech strings, and response options were checked for grammar and internal consistency.",
+    "Persian orthography, نیم‌فاصله usage where applicable, and English–Persian meaning consistency were checked.",
+    "Reference key, part of speech, sense key, and provisional spec hash were cross-checked against the worker packet.",
+    "Final retrieval keeps the answer hidden before attempt.",
+    "Story arc returns after 5 Lessons and the learner role changes from the prior scene."
+  ],
+  "lessonKey": "EN-A1-L-0126",
+  "sourceHash": "ab17e92a7d2b37a966ad803b2255afec5282df3d4814760b09af2f9fbdd39085",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+}

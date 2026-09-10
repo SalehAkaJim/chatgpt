@@ -1,0 +1,101 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0128",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "that guy is leo",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0128; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "Target-bearing learner lines ‘That guy is Sam.’ and ‘That guy is Leo.’ are grammatical and natural for the bounded informal guy sense."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently maps guy to «مرد» and preserves the intended informal reference across dialogue and activities."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "One lexical target is recognized, practiced in two guided exchanges, checked for listening/meaning, transferred, and retrieved with the answer hidden."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors are short A1 alternatives with clearly different meanings or referents."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "آوا و بن در کافه منتظر دوستانشان هستند و آوا دو نفر را از روی جای ایستادنشان شناسایی می‌کند."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "Learner responses are short identification sentences with one new lexical target and familiar grammar."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "guy recurs across recognition, guided speech, listening, transfer, and hidden retrieval."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second learner response changes the identified person/location cue while preserving the same informal noun sense."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, scenario, target construction, turns, and final retrieval all assess the same lexical objective."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; perceived engagement and register comfort remain unverified."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Only the bounded informal noun sense defined for this Lesson is reviewed.",
+      "Generated audio pronunciation/prosody is not evaluated at this text stage."
+    ],
+    "resolvedFindings": [
+      "English turns and response options were checked for grammar, register, and internal consistency.",
+      "Persian orthography and English–Persian meaning consistency were checked.",
+      "Reference key, part of speech, sense key, and provisional spec hash were cross-checked against the worker packet.",
+      "Final retrieval keeps the answer hidden before attempt.",
+      "Story arc returns after 5 Lessons and learner role changes from the prior scene."
+    ],
+    "lessonKey": "EN-A1-L-0128",
+    "sourceHash": "a64709a8da0a29799e9148e2365703194bf2b822c0f2ddae2618424e3e8a4029",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.6,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "a64709a8da0a29799e9148e2365703194bf2b822c0f2ddae2618424e3e8a4029"
+}

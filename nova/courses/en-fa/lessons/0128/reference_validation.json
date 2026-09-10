@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0128",
+  "levelKey": "A1",
+  "sortOrder": 128,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0128: target word EN-LEX-GUY-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-GUY-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "guy",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-5EECAB606336BC5B2F9C",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-5EECAB606336BC5B2F9C",
+        "EN-REF-AD84BF30A82046B13FF4"
+      ],
+      "referenceTranslationsFa": [
+        "عروسک Guy Fawkes",
+        "پسر، مرد جوان"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-5EECAB606336BC5B2F9C",
+        "translationFa": "پسر، مرد جوان",
+        "definitionEn": "an informal term for a youth or man",
+        "senseId": "113f1e45-481d-5fb1-a2de-17725ecbf628",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "a64709a8da0a29799e9148e2365703194bf2b822c0f2ddae2618424e3e8a4029"
+}
