@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "FAIL",
-  "stage": "integration",
-  "inputHead": "7da0cd867e8bef08c7c5b2f8cab93d4e0886ada2",
-  "checkedAt": "2026-09-10T19:14:19.029326+00:00",
+  "stage": "staging-local-precheck",
+  "inputHead": "f3790687b2cd3a085a21e1de08ab3b9964f976b8",
+  "checkedAt": "2026-09-10T19:35:28.989494+00:00",
   "errors": [
-    "Ordered single-writer integration did not pass."
+    "1 staged Lesson(s) have local validation errors; repair them together before integration."
   ],
   "commands": [
     {
@@ -22,8 +22,8 @@
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/workers/w03/0135/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 7, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0135\", \"sortOrder\": 135, \"errors\": [{\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A10\"}}, {\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A11\"}}, {\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A12\"}}, {\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A13\"}}, {\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A14\"}}, \"automated quality score 85 is below 90\"]}]}\n",
       "stderrTail": ""
     },
     {
@@ -55,19 +55,64 @@
       "returnCode": 0,
       "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
-    },
-    {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/wave.json",
-      "returnCode": 1,
-      "stdoutTail": "HEAD is now at 7da0cd86 Retry Nova 133-140 after diagnostics and wave-quality repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 133, \"nextLesson\": 134, \"nextSpecHash\": \"fe36cca1733b09c5529c0fc4d28b5ce9b5ddfa557d40b4bbf9f08f67e8f6e687\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 134, \"nextLesson\": 135, \"nextSpecHash\": \"f10a732939f730a3a2fb31fec23a0b88fbe77e9c26829e0d0e587edd35ad35f8\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 135, \"nextLesson\": 136, \"nextSpecHash\": \"d68f4637f0839f6a513144322b262c7f00330207beb4395e413bef09d2a71737\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 136, \"nextLesson\": 137, \"nextSpecHash\": \"193ad45f31d7924a9f337dd051ee05e1fd2cff501a74b7b4f1c543795d582d33\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 137, \"nextLesson\": 138, \"nextSpecHash\": \"d82f0e8c92c08bf2e22da0b7fb47c601d2d0d07a97b3a150d5373a8d40cd580f\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 138, \"nextLesson\": 139, \"nextSpecHash\": \"f79f8278063a8faa2152aa8bc4dfe016f2b45272c3df8a0981cd577927b6829f\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 139, \"nextLesson\": 140, \"nextSpecHash\": \"407cad03ed31a7452493eeac22eb3671a8c05e8b0f3f25a3e42470c77b05ebbc\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 140, \"nextLesson\": 141, \"nextSpecHash\": \"17340a171c690e7669fd80eb295e6c2e1984e616464d6a735c743f8e04863f41\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"FAIL\", \"generated\": 140, \"errors\": 6, \"productQualityV2Errors\": 6, \"learnerExperienceErrors\": 0}\n",
-      "stderrTail": "Preparing worktree (detached HEAD 7da0cd86)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 390, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-zr5lc82v/repo/nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root /tmp/nova-wave-zr5lc82v/repo --config /tmp/nova-wave-zr5lc82v/repo/nova/curriculum/en-fa/factory.config.json --output /tmp/nova-wave-zr5lc82v/repo/nova/curriculum/en-fa/factory_validation.json\n"
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0133-0140-20260910u",
+    "requestKey": "en-fa-A1-0133-0140-20260910v",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/wave.json"
   },
   "waveKey": "en-fa-A1-0133-0140",
-  "expectedPrefix": 140
+  "expectedPrefix": 140,
+  "stagingLocalFailures": [
+    {
+      "lessonKey": "EN-A1-L-0135",
+      "sortOrder": 135,
+      "errors": [
+        {
+          "code": "CQ-H13",
+          "message": "Retrieval needs limited evidence semantics and educational feedback.",
+          "data": {
+            "activityKey": "A09"
+          }
+        },
+        {
+          "code": "CQ-H13",
+          "message": "Retrieval needs limited evidence semantics and educational feedback.",
+          "data": {
+            "activityKey": "A10"
+          }
+        },
+        {
+          "code": "CQ-H13",
+          "message": "Retrieval needs limited evidence semantics and educational feedback.",
+          "data": {
+            "activityKey": "A11"
+          }
+        },
+        {
+          "code": "CQ-H13",
+          "message": "Retrieval needs limited evidence semantics and educational feedback.",
+          "data": {
+            "activityKey": "A12"
+          }
+        },
+        {
+          "code": "CQ-H13",
+          "message": "Retrieval needs limited evidence semantics and educational feedback.",
+          "data": {
+            "activityKey": "A13"
+          }
+        },
+        {
+          "code": "CQ-H13",
+          "message": "Retrieval needs limited evidence semantics and educational feedback.",
+          "data": {
+            "activityKey": "A14"
+          }
+        },
+        "automated quality score 85 is below 90"
+      ]
+    }
+  ]
 }
