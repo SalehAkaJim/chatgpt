@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 2,
-  "requestKey": "quality-v2-learner-experience-audit-20260910-04",
+  "schemaVersion": 3,
+  "requestKey": "quality-v2-learner-experience-final-20260910-05",
   "range": [40, 84],
   "targetedAdditionalLessons": [27, 100, 110],
   "policy": "nova/_assistant/content-system-v1/product_quality_v2.policy.json",
@@ -8,6 +8,8 @@
   "learnerExperienceAudit": {
     "through": 124,
     "categories": ["conversation_exposure", "audio_dependency", "visual_dependency", "pre_dialogue_turn_reuse"],
-    "auditRevision": 2
+    "auditRevision": 3,
+    "legacyRuntimeRepair": "dependency-aware-dialogue-first",
+    "futureHardGateFromSortOrder": 125
   }
 }
