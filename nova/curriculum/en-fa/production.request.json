@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "courseCode": "en-fa",
-  "requestedCanonicalPrefix": 52,
-  "canonicalCommit": "3a9720daf18117f50698859f68e4102ad89cc32d",
-  "reason": "Retry validated prefix 52 after hardening system dependency installation to use official Ubuntu repositories only. Text QA and full-prefix regression are already PASS; continue through audio and MySQL runtime validation."
+  "requestedCanonicalPrefix": 124,
+  "canonicalCommit": "c43185edf3f709bea7e3f4f1f8f32ce756d5569c",
+  "reason": "Re-run validated canonical prefix 124 after fixing the Prototype regression-test wait contract and adding end-to-end generated-Preview learner-context tests. Product Quality v2, learner-experience dependency audit, curriculum rebuild, text QA and full-prefix regression are already PASS; verify Preview including Lesson 27 dialogue-first behavior, then audio and MySQL runtime."
 }
