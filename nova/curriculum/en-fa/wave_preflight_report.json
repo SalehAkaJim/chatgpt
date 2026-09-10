@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "FAIL",
-  "stage": "staging-local-precheck",
-  "inputHead": "18552389175635981b3534ecad8c3c33ca4b076a",
-  "checkedAt": "2026-09-10T19:02:06.924323+00:00",
+  "stage": "integration",
+  "inputHead": "c3e0f19aefd38243f8c5d6ecb7612c20aea8cfa6",
+  "checkedAt": "2026-09-10T19:04:54.037989+00:00",
   "errors": [
-    "3 staged Lesson(s) have local validation errors; repair them together before integration."
+    "Ordered single-writer integration did not pass."
   ],
   "commands": [
     {
@@ -40,192 +40,34 @@
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/workers/w06/0138/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 12, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0138\", \"sortOrder\": 138, \"errors\": [\"A03: comprehension must have 2 or 3 options\", \"A03: invalid answerIndex\", {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A07\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, \"PQ2-H08 EN-A1-L-0138/A03: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0138/A03: missing explicit distractor audit for 'There is one choice we can make.'\", \"PQ2-H08 EN-A1-L-0138/A03: missing explicit distractor audit for 'There is one problem we can solve.'\", \"PQ2-H04 EN-A1-L-0138: unsupported lessonArchetype 'lexical_grammar_transfer'\"]}]}\n",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/workers/w07/0139/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 12, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0139\", \"sortOrder\": 139, \"errors\": [\"A03: comprehension must have 2 or 3 options\", \"A03: invalid answerIndex\", {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A07\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, \"PQ2-H08 EN-A1-L-0139/A03: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0139/A03: missing explicit distractor audit for 'Choosing a date is the main plan.'\", \"PQ2-H08 EN-A1-L-0139/A03: missing explicit distractor audit for 'Choosing a place is the main question.'\", \"PQ2-H04 EN-A1-L-0139: unsupported lessonArchetype 'lexical_grammar_transfer'\"]}]}\n",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/workers/w08/0140/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 12, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0140\", \"sortOrder\": 140, \"errors\": [\"A03: comprehension must have 2 or 3 options\", \"A03: invalid answerIndex\", {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H13\", \"message\": \"Retrieval needs limited evidence semantics and educational feedback.\", \"data\": {\"activityKey\": \"A07\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, \"PQ2-H08 EN-A1-L-0140/A03: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0140/A03: missing explicit distractor audit for 'Remember the time.'\", \"PQ2-H08 EN-A1-L-0140/A03: missing explicit distractor audit for 'Ask about the month.'\", \"PQ2-H04 EN-A1-L-0140: unsupported lessonArchetype 'lexical_grammar_transfer'\"]}]}\n",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
+    },
+    {
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/wave.json",
+      "returnCode": 1,
+      "stdoutTail": "HEAD is now at c3e0f19a Retry Nova 133-140 after staging repairs\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 133, \"nextLesson\": 134, \"nextSpecHash\": \"fe36cca1733b09c5529c0fc4d28b5ce9b5ddfa557d40b4bbf9f08f67e8f6e687\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 134, \"nextLesson\": 135, \"nextSpecHash\": \"f10a732939f730a3a2fb31fec23a0b88fbe77e9c26829e0d0e587edd35ad35f8\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 135, \"nextLesson\": 136, \"nextSpecHash\": \"d68f4637f0839f6a513144322b262c7f00330207beb4395e413bef09d2a71737\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 136, \"nextLesson\": 137, \"nextSpecHash\": \"193ad45f31d7924a9f337dd051ee05e1fd2cff501a74b7b4f1c543795d582d33\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 137, \"nextLesson\": 138, \"nextSpecHash\": \"d82f0e8c92c08bf2e22da0b7fb47c601d2d0d07a97b3a150d5373a8d40cd580f\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"FAIL\", \"lessons\": 138, \"nextLesson\": 139, \"nextSpecHash\": \"f79f8278063a8faa2152aa8bc4dfe016f2b45272c3df8a0981cd577927b6829f\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 1, \"errorDetails\": [\"EN-A1-L-0138: target collocation 'there another move' has no committed Tatoeba evidence or explicit usage fallback\"], \"failingLanguagePlans\": [{\"lessonKey\": \"EN-A1-L-0138\", \"sortOrder\": 138, \"errors\": [\"EN-A1-L-0138: target collocation 'there another move' has no committed Tatoeba evidence or explicit usage fallback\"]}], \"failingCurriculumSpecs\": []}\n",
+      "stderrTail": "Preparing worktree (detached HEAD c3e0f19a)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 381, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-j8fdtdvz/repo/nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py --repo-root /tmp/nova-wave-j8fdtdvz/repo --course en-fa --config /tmp/nova-wave-j8fdtdvz/repo/nova/curriculum/en-fa/factory.config.json --workspace-dir /tmp/nova-wave-j8fdtdvz/repo/nova/curriculum/en-fa\n"
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0133-0140-20260910s",
+    "requestKey": "en-fa-A1-0133-0140-20260910t",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/wave.json"
   },
   "waveKey": "en-fa-A1-0133-0140",
-  "expectedPrefix": 140,
-  "stagingLocalFailures": [
-    {
-      "lessonKey": "EN-A1-L-0138",
-      "sortOrder": 138,
-      "errors": [
-        "A03: comprehension must have 2 or 3 options",
-        "A03: invalid answerIndex",
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H13",
-          "message": "Retrieval needs limited evidence semantics and educational feedback.",
-          "data": {
-            "activityKey": "A07"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        "PQ2-H08 EN-A1-L-0138/A03: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0138/A03: missing explicit distractor audit for 'There is one choice we can make.'",
-        "PQ2-H08 EN-A1-L-0138/A03: missing explicit distractor audit for 'There is one problem we can solve.'",
-        "PQ2-H04 EN-A1-L-0138: unsupported lessonArchetype 'lexical_grammar_transfer'"
-      ]
-    },
-    {
-      "lessonKey": "EN-A1-L-0139",
-      "sortOrder": 139,
-      "errors": [
-        "A03: comprehension must have 2 or 3 options",
-        "A03: invalid answerIndex",
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H13",
-          "message": "Retrieval needs limited evidence semantics and educational feedback.",
-          "data": {
-            "activityKey": "A07"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        "PQ2-H08 EN-A1-L-0139/A03: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0139/A03: missing explicit distractor audit for 'Choosing a date is the main plan.'",
-        "PQ2-H08 EN-A1-L-0139/A03: missing explicit distractor audit for 'Choosing a place is the main question.'",
-        "PQ2-H04 EN-A1-L-0139: unsupported lessonArchetype 'lexical_grammar_transfer'"
-      ]
-    },
-    {
-      "lessonKey": "EN-A1-L-0140",
-      "sortOrder": 140,
-      "errors": [
-        "A03: comprehension must have 2 or 3 options",
-        "A03: invalid answerIndex",
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H13",
-          "message": "Retrieval needs limited evidence semantics and educational feedback.",
-          "data": {
-            "activityKey": "A07"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        "PQ2-H08 EN-A1-L-0140/A03: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0140/A03: missing explicit distractor audit for 'Remember the time.'",
-        "PQ2-H08 EN-A1-L-0140/A03: missing explicit distractor audit for 'Ask about the month.'",
-        "PQ2-H04 EN-A1-L-0140: unsupported lessonArchetype 'lexical_grammar_transfer'"
-      ]
-    }
-  ]
+  "expectedPrefix": 140
 }
