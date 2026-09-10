@@ -75,6 +75,17 @@ jobs:
               })
               return completed
 
+          def last_json_line(text):
+              for line in reversed((text or '').splitlines()):
+                  line = line.strip()
+                  if not line.startswith('{'):
+                      continue
+                  try:
+                      return json.loads(line)
+                  except Exception:
+                      pass
+              return None
+
           if not request_path.exists():
               report.update(status='SKIP', stage='request')
               report['errors'].append('No wave.publish.request.json exists; nothing to publish.')
@@ -102,6 +113,50 @@ jobs:
               report['expectedPrefix'] = wave.get('lastSortOrder')
           except Exception as exc:
               report['errors'].append(f'Invalid wave manifest: {exc}')
+              save_report()
+              raise SystemExit(0)
+
+          # Validate every staged draft locally before sequential integration.
+          # This catches independent schema/content/product-quality failures for
+          # the whole wave in one run instead of revealing one Lesson per retry.
+          staging_failures = []
+          for packet in wave.get('packets') or []:
+              staging_rel = packet.get('stagingPath')
+              staging = root / str(staging_rel or '')
+              if not staging_rel or not staging.exists():
+                  staging_failures.append({
+                      'lessonKey': packet.get('lessonKey'),
+                      'sortOrder': packet.get('sortOrder'),
+                      'errors': [f'Missing staged draft: {staging_rel}'],
+                  })
+                  continue
+              local = run([
+                  sys.executable,
+                  'nova/_assistant/content-system-v1/tools/validate_factory_incremental.py',
+                  '--repo-root', '.',
+                  '--config', 'nova/curriculum/en-fa/factory.config.json',
+                  '--lesson', staging_rel,
+                  '--cache-dir', '.cache/nova-validation',
+                  '--no-cache',
+              ])
+              if local.returncode:
+                  detail = last_json_line(local.stdout) or {}
+                  lesson_errors = detail.get('lessonErrors') or []
+                  if lesson_errors:
+                      staging_failures.extend(lesson_errors)
+                  else:
+                      staging_failures.append({
+                          'lessonKey': packet.get('lessonKey'),
+                          'sortOrder': packet.get('sortOrder'),
+                          'errors': [f'Local staged validation failed with return code {local.returncode}'],
+                      })
+
+          if staging_failures:
+              report['stage'] = 'staging-local-precheck'
+              report['stagingLocalFailures'] = staging_failures
+              report['errors'].append(
+                  f'{len(staging_failures)} staged Lesson(s) have local validation errors; repair them together before integration.'
+              )
               save_report()
               raise SystemExit(0)
 
