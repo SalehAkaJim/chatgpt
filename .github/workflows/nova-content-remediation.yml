@@ -55,8 +55,9 @@ jobs:
           root = Path('.').resolve()
           report_path = root / 'nova/curriculum/en-fa/quality_v2.remediation_ci_report.json'
           request_path = root / 'nova/curriculum/en-fa/remediation.request.json'
+          experience_path = root / 'nova/curriculum/en-fa/learner_experience_dependency_report.json'
           report = {
-              'schemaVersion': 1,
+              'schemaVersion': 2,
               'status': 'FAIL',
               'stage': 'request',
               'inputHead': os.environ.get('INPUT_HEAD'),
@@ -109,6 +110,31 @@ jobs:
           if remediation.returncode:
               report['stage'] = 'legacy-remediation'
               report['errors'].append('Deterministic legacy remediation did not complete.')
+              save()
+              raise SystemExit(0)
+
+          polish = run('legacy-naturalness-polish', [
+              sys.executable,
+              'nova/_assistant/content-system-v1/tools/polish_legacy_quality_v2.py',
+              '--repo-root', '.',
+          ])
+          if polish.returncode:
+              report['stage'] = 'legacy-naturalness-polish'
+              report['errors'].append('Human-style legacy naturalness polish did not complete.')
+              save()
+              raise SystemExit(0)
+
+          experience = run('learner-experience-dependency-audit', [
+              sys.executable,
+              'nova/_assistant/content-system-v1/tools/audit_learner_experience_dependencies.py',
+              '--repo-root', '.', '--course', 'en-fa', '--through', '124',
+              '--output', 'nova/curriculum/en-fa/learner_experience_dependency_report.json',
+          ])
+          if experience_path.exists():
+              report['learnerExperienceDependencyReport'] = json.loads(experience_path.read_text(encoding='utf-8'))
+          if experience.returncode:
+              report['stage'] = 'learner-experience-dependencies'
+              report['errors'].append('Learner-visible context dependency audit found broken conversation/audio/visual prerequisites.')
               save()
               raise SystemExit(0)
 
@@ -181,13 +207,16 @@ jobs:
               raise SystemExit(0)
 
           remediation_report = root / 'nova/curriculum/en-fa/quality_v2.remediation_report.json'
+          polish_report = root / 'nova/curriculum/en-fa/quality_v2.polish_report.json'
           backlog = root / 'nova/curriculum/en-fa/quality_v2.review_backlog.json'
           report.update(
               status='PASS',
               stage='ready-to-publish',
               passedPrefixLength=124,
               remediationReport=json.loads(remediation_report.read_text(encoding='utf-8')) if remediation_report.exists() else None,
+              polishReport=json.loads(polish_report.read_text(encoding='utf-8')) if polish_report.exists() else None,
               reviewBacklog=json.loads(backlog.read_text(encoding='utf-8')) if backlog.exists() else None,
+              learnerExperienceDependencyReport=json.loads(experience_path.read_text(encoding='utf-8')) if experience_path.exists() else None,
               errors=[],
           )
           save()
@@ -213,12 +242,13 @@ jobs:
 
           if [ "$STATUS" != "PASS" ]; then
             git add nova/curriculum/en-fa/quality_v2.remediation_ci_report.json
-            if [ -f nova/curriculum/en-fa/quality_v2.remediation_report.json ]; then
-              git add nova/curriculum/en-fa/quality_v2.remediation_report.json
-            fi
-            if [ -f nova/curriculum/en-fa/quality_v2.review_backlog.json ]; then
-              git add nova/curriculum/en-fa/quality_v2.review_backlog.json
-            fi
+            for file in \
+              nova/curriculum/en-fa/quality_v2.remediation_report.json \
+              nova/curriculum/en-fa/quality_v2.polish_report.json \
+              nova/curriculum/en-fa/quality_v2.review_backlog.json \
+              nova/curriculum/en-fa/learner_experience_dependency_report.json; do
+              if [ -f "$file" ]; then git add "$file"; fi
+            done
             if ! git diff --cached --quiet; then
               git commit -m "Record Nova quality-v2 remediation result"
               git push origin HEAD:main
