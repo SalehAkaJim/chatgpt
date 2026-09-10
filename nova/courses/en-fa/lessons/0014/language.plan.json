@@ -97,22 +97,6 @@
       "fallbackMatch": null
     },
     {
-      "query": "room one or room",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "one"
-      ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": "room one or room",
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
-    },
-    {
       "query": "room one or",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -140,6 +124,22 @@
       "status": "no_evidence",
       "sampleCount": 0,
       "evidenceQuery": "one or room two",
+      "examples": [],
+      "fallback": null,
+      "fallbackMatch": null
+    },
+    {
+      "query": "room one or room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "one"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "room one or room",
       "examples": [],
       "fallback": null,
       "fallbackMatch": null
@@ -198,14 +198,14 @@
   ],
   "warnings": [
     "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
+    "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "76b917004b4e4820bd443205066182391c52aa34d649672ab470c8b7e20d9847"
+  "planHash": "0f7148e6eb071ee611a752ebbfb89ecf6a49b22cd51907ba03ba7ee917ddd742"
 }
