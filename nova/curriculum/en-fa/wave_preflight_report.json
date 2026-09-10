@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "status": "FAIL",
   "stage": "text-qa",
-  "inputHead": "f1c752eb65cbfe958a6dc081850ccd2338e16af9",
-  "checkedAt": "2026-09-10T20:09:04.494374+00:00",
+  "inputHead": "d2deb7b8bc86271f9054e9e6e2f19db9a7f8b709",
+  "checkedAt": "2026-09-10T20:37:03.611317+00:00",
   "errors": [
     "Full canonical text QA did not pass."
   ],
@@ -59,8 +59,8 @@
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/wave.json",
       "returnCode": 0,
-      "stdoutTail": "HEAD is now at f1c752eb Retry Nova 133-140 after bounded retrieval repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 133, \"nextLesson\": 134, \"nextSpecHash\": \"fe36cca1733b09c5529c0fc4d28b5ce9b5ddfa557d40b4bbf9f08f67e8f6e687\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 134, \"nextLesson\": 135, \"nextSpecHash\": \"f10a732939f730a3a2fb31fec23a0b88fbe77e9c26829e0d0e587edd35ad35f8\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 135, \"nextLesson\": 136, \"nextSpecHash\": \"35022be88c48f03fd4b2553dcbde00ad29b52aa58338f450c8d5083cb14543ce\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 136, \"nextLesson\": 137, \"nextSpecHash\": \"f80eaf1d9430cb027e6da592c57351334ef8b852495d76cdb4c5b018387d595c\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 137, \"nextLesson\": 138, \"nextSpecHash\": \"34c4bd009fa2610724dbced6828af5c0f4d7cadea25af0d7777b1cb46fb4d0a4\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 138, \"nextLesson\": 139, \"nextSpecHash\": \"1c930d6caba3b7a418759f9cf83f6a75e195ab561fd93079434d90e4955c8632\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 139, \"nextLesson\": 140, \"nextSpecHash\": \"dc352ad42f072bc9cf61525c52347af0b70be9d78560a91fd28e558911481153\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 140, \"nextLesson\": 141, \"nextSpecHash\": \"9a2642ca6adbf1c3cdc7cf31599b7ef7075dab18603c1a8c12350a6f052a1c88\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"generated\": 140, \"errors\": 0, \"productQualityV2Errors\": 0, \"learnerExperienceErrors\": 0}\n{\"status\": \"PASS\", \"waveKey\": \"en-fa-A1-0133-0140\", \"integrated\": 8, \"fullPrefixRegression\": \"PASS\"}\n",
-      "stderrTail": "Preparing worktree (detached HEAD f1c752eb)\n"
+      "stdoutTail": "HEAD is now at d2deb7b8 Update Nova wave publish request\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 133, \"nextLesson\": 134, \"nextSpecHash\": \"fe36cca1733b09c5529c0fc4d28b5ce9b5ddfa557d40b4bbf9f08f67e8f6e687\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 134, \"nextLesson\": 135, \"nextSpecHash\": \"f10a732939f730a3a2fb31fec23a0b88fbe77e9c26829e0d0e587edd35ad35f8\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 135, \"nextLesson\": 136, \"nextSpecHash\": \"35022be88c48f03fd4b2553dcbde00ad29b52aa58338f450c8d5083cb14543ce\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 136, \"nextLesson\": 137, \"nextSpecHash\": \"f80eaf1d9430cb027e6da592c57351334ef8b852495d76cdb4c5b018387d595c\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 137, \"nextLesson\": 138, \"nextSpecHash\": \"34c4bd009fa2610724dbced6828af5c0f4d7cadea25af0d7777b1cb46fb4d0a4\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 138, \"nextLesson\": 139, \"nextSpecHash\": \"1c930d6caba3b7a418759f9cf83f6a75e195ab561fd93079434d90e4955c8632\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 139, \"nextLesson\": 140, \"nextSpecHash\": \"dc352ad42f072bc9cf61525c52347af0b70be9d78560a91fd28e558911481153\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 140, \"nextLesson\": 141, \"nextSpecHash\": \"9a2642ca6adbf1c3cdc7cf31599b7ef7075dab18603c1a8c12350a6f052a1c88\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"generated\": 140, \"errors\": 0, \"productQualityV2Errors\": 0, \"learnerExperienceErrors\": 0}\n{\"status\": \"PASS\", \"waveKey\": \"en-fa-A1-0133-0140\", \"integrated\": 8, \"fullPrefixRegression\": \"PASS\"}\n",
+      "stderrTail": "Preparing worktree (detached HEAD d2deb7b8)\n"
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only",
@@ -71,7 +71,7 @@
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0133-0140-20260910w",
+    "requestKey": "en-fa-A1-0133-0140-20260911a",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0133-0140/wave.json"
   },
   "waveKey": "en-fa-A1-0133-0140",
@@ -80,713 +80,709 @@
     "status": "FAIL",
     "phase": "text_validation",
     "workers": 4,
-    "seconds": 3.579,
+    "seconds": 5.528,
     "measuresAuthoringTime": false,
     "lessons": [
       {
         "lessonKey": "EN-A1-L-0001",
         "status": "PASS",
-        "validationSeconds": 0.16
+        "validationSeconds": 0.199
       },
       {
         "lessonKey": "EN-A1-L-0002",
         "status": "PASS",
-        "validationSeconds": 0.157
+        "validationSeconds": 0.194
       },
       {
         "lessonKey": "EN-A1-L-0003",
         "status": "PASS",
-        "validationSeconds": 0.163
+        "validationSeconds": 0.189
       },
       {
         "lessonKey": "EN-A1-L-0004",
         "status": "PASS",
-        "validationSeconds": 0.084
+        "validationSeconds": 0.19
       },
       {
         "lessonKey": "EN-A1-L-0005",
         "status": "PASS",
-        "validationSeconds": 0.044
+        "validationSeconds": 0.156
       },
       {
         "lessonKey": "EN-A1-L-0006",
         "status": "PASS",
-        "validationSeconds": 0.085
+        "validationSeconds": 0.147
       },
       {
         "lessonKey": "EN-A1-L-0007",
         "status": "PASS",
-        "validationSeconds": 0.093
+        "validationSeconds": 0.165
       },
       {
         "lessonKey": "EN-A1-L-0008",
         "status": "PASS",
-        "validationSeconds": 0.053
+        "validationSeconds": 0.161
       },
       {
         "lessonKey": "EN-A1-L-0009",
         "status": "PASS",
-        "validationSeconds": 0.11
+        "validationSeconds": 0.159
       },
       {
         "lessonKey": "EN-A1-L-0010",
         "status": "PASS",
-        "validationSeconds": 0.113
+        "validationSeconds": 0.155
       },
       {
         "lessonKey": "EN-A1-L-0011",
         "status": "PASS",
-        "validationSeconds": 0.116
+        "validationSeconds": 0.162
       },
       {
         "lessonKey": "EN-A1-L-0012",
         "status": "PASS",
-        "validationSeconds": 0.068
+        "validationSeconds": 0.144
       },
       {
         "lessonKey": "EN-A1-L-0013",
         "status": "PASS",
-        "validationSeconds": 0.099
+        "validationSeconds": 0.191
       },
       {
         "lessonKey": "EN-A1-L-0014",
         "status": "PASS",
-        "validationSeconds": 0.108
+        "validationSeconds": 0.185
       },
       {
         "lessonKey": "EN-A1-L-0015",
         "status": "PASS",
-        "validationSeconds": 0.058
+        "validationSeconds": 0.175
       },
       {
         "lessonKey": "EN-A1-L-0016",
         "status": "PASS",
-        "validationSeconds": 0.101
+        "validationSeconds": 0.102
       },
       {
         "lessonKey": "EN-A1-L-0017",
         "status": "PASS",
-        "validationSeconds": 0.076
+        "validationSeconds": 0.133
       },
       {
         "lessonKey": "EN-A1-L-0018",
         "status": "PASS",
-        "validationSeconds": 0.085
+        "validationSeconds": 0.127
       },
       {
         "lessonKey": "EN-A1-L-0019",
         "status": "PASS",
-        "validationSeconds": 0.115
+        "validationSeconds": 0.185
       },
       {
         "lessonKey": "EN-A1-L-0020",
         "status": "PASS",
-        "validationSeconds": 0.146
+        "validationSeconds": 0.207
       },
       {
         "lessonKey": "EN-A1-L-0021",
         "status": "PASS",
-        "validationSeconds": 0.118
+        "validationSeconds": 0.191
       },
       {
         "lessonKey": "EN-A1-L-0022",
         "status": "PASS",
-        "validationSeconds": 0.044
+        "validationSeconds": 0.097
       },
       {
         "lessonKey": "EN-A1-L-0023",
         "status": "PASS",
-        "validationSeconds": 0.06
+        "validationSeconds": 0.137
       },
       {
         "lessonKey": "EN-A1-L-0024",
         "status": "PASS",
-        "validationSeconds": 0.071
+        "validationSeconds": 0.163
       },
       {
         "lessonKey": "EN-A1-L-0025",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.168
       },
       {
         "lessonKey": "EN-A1-L-0026",
         "status": "PASS",
-        "validationSeconds": 0.112
+        "validationSeconds": 0.164
       },
       {
         "lessonKey": "EN-A1-L-0027",
         "status": "PASS",
-        "validationSeconds": 0.096
+        "validationSeconds": 0.141
       },
       {
         "lessonKey": "EN-A1-L-0028",
         "status": "PASS",
-        "validationSeconds": 0.077
+        "validationSeconds": 0.202
       },
       {
         "lessonKey": "EN-A1-L-0029",
         "status": "PASS",
-        "validationSeconds": 0.117
+        "validationSeconds": 0.222
       },
       {
         "lessonKey": "EN-A1-L-0030",
         "status": "PASS",
-        "validationSeconds": 0.106
+        "validationSeconds": 0.21
       },
       {
         "lessonKey": "EN-A1-L-0031",
         "status": "PASS",
-        "validationSeconds": 0.059
+        "validationSeconds": 0.079
       },
       {
         "lessonKey": "EN-A1-L-0032",
         "status": "PASS",
-        "validationSeconds": 0.108
+        "validationSeconds": 0.088
       },
       {
         "lessonKey": "EN-A1-L-0033",
         "status": "PASS",
-        "validationSeconds": 0.089
+        "validationSeconds": 0.171
       },
       {
         "lessonKey": "EN-A1-L-0034",
         "status": "PASS",
-        "validationSeconds": 0.113
+        "validationSeconds": 0.154
       },
       {
         "lessonKey": "EN-A1-L-0035",
         "status": "PASS",
-        "validationSeconds": 0.108
+        "validationSeconds": 0.158
       },
       {
         "lessonKey": "EN-A1-L-0036",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.155
       },
       {
         "lessonKey": "EN-A1-L-0037",
         "status": "PASS",
-        "validationSeconds": 0.095
+        "validationSeconds": 0.243
       },
       {
         "lessonKey": "EN-A1-L-0038",
         "status": "PASS",
-        "validationSeconds": 0.118
+        "validationSeconds": 0.238
       },
       {
         "lessonKey": "EN-A1-L-0039",
         "status": "PASS",
-        "validationSeconds": 0.121
+        "validationSeconds": 0.225
       },
       {
         "lessonKey": "EN-A1-L-0040",
         "status": "PASS",
-        "validationSeconds": 0.092
+        "validationSeconds": 0.083
       },
       {
         "lessonKey": "EN-A1-L-0041",
         "status": "PASS",
-        "validationSeconds": 0.107
+        "validationSeconds": 0.078
       },
       {
         "lessonKey": "EN-A1-L-0042",
         "status": "PASS",
-        "validationSeconds": 0.108
+        "validationSeconds": 0.084
       },
       {
         "lessonKey": "EN-A1-L-0043",
         "status": "PASS",
-        "validationSeconds": 0.101
+        "validationSeconds": 0.148
       },
       {
         "lessonKey": "EN-A1-L-0044",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.176
       },
       {
         "lessonKey": "EN-A1-L-0045",
         "status": "PASS",
-        "validationSeconds": 0.103
+        "validationSeconds": 0.166
       },
       {
         "lessonKey": "EN-A1-L-0046",
         "status": "PASS",
-        "validationSeconds": 0.104
+        "validationSeconds": 0.164
       },
       {
         "lessonKey": "EN-A1-L-0047",
         "status": "PASS",
-        "validationSeconds": 0.103
+        "validationSeconds": 0.16
       },
       {
         "lessonKey": "EN-A1-L-0048",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.161
       },
       {
         "lessonKey": "EN-A1-L-0049",
         "status": "PASS",
-        "validationSeconds": 0.099
+        "validationSeconds": 0.155
       },
       {
         "lessonKey": "EN-A1-L-0050",
         "status": "PASS",
-        "validationSeconds": 0.104
+        "validationSeconds": 0.159
       },
       {
         "lessonKey": "EN-A1-L-0051",
         "status": "PASS",
-        "validationSeconds": 0.103
+        "validationSeconds": 0.158
       },
       {
         "lessonKey": "EN-A1-L-0052",
         "status": "PASS",
-        "validationSeconds": 0.098
+        "validationSeconds": 0.157
       },
       {
         "lessonKey": "EN-A1-L-0053",
         "status": "PASS",
-        "validationSeconds": 0.108
+        "validationSeconds": 0.154
       },
       {
         "lessonKey": "EN-A1-L-0054",
         "status": "PASS",
-        "validationSeconds": 0.111
+        "validationSeconds": 0.153
       },
       {
         "lessonKey": "EN-A1-L-0055",
         "status": "PASS",
-        "validationSeconds": 0.122
+        "validationSeconds": 0.157
       },
       {
         "lessonKey": "EN-A1-L-0056",
         "status": "PASS",
-        "validationSeconds": 0.069
+        "validationSeconds": 0.153
       },
       {
         "lessonKey": "EN-A1-L-0057",
         "status": "PASS",
-        "validationSeconds": 0.12
+        "validationSeconds": 0.151
       },
       {
         "lessonKey": "EN-A1-L-0058",
         "status": "PASS",
-        "validationSeconds": 0.099
+        "validationSeconds": 0.155
       },
       {
         "lessonKey": "EN-A1-L-0059",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.154
       },
       {
         "lessonKey": "EN-A1-L-0060",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.149
       },
       {
         "lessonKey": "EN-A1-L-0061",
         "status": "PASS",
-        "validationSeconds": 0.103
+        "validationSeconds": 0.15
       },
       {
         "lessonKey": "EN-A1-L-0062",
         "status": "PASS",
-        "validationSeconds": 0.103
+        "validationSeconds": 0.155
       },
       {
         "lessonKey": "EN-A1-L-0063",
         "status": "PASS",
-        "validationSeconds": 0.104
+        "validationSeconds": 0.157
       },
       {
         "lessonKey": "EN-A1-L-0064",
         "status": "PASS",
-        "validationSeconds": 0.103
+        "validationSeconds": 0.153
       },
       {
         "lessonKey": "EN-A1-L-0065",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.15
       },
       {
         "lessonKey": "EN-A1-L-0066",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.154
       },
       {
         "lessonKey": "EN-A1-L-0067",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.227
       },
       {
         "lessonKey": "EN-A1-L-0068",
         "status": "PASS",
-        "validationSeconds": 0.106
+        "validationSeconds": 0.083
       },
       {
         "lessonKey": "EN-A1-L-0069",
         "status": "PASS",
-        "validationSeconds": 0.125
+        "validationSeconds": 0.225
       },
       {
         "lessonKey": "EN-A1-L-0070",
         "status": "PASS",
-        "validationSeconds": 0.126
+        "validationSeconds": 0.233
       },
       {
         "lessonKey": "EN-A1-L-0071",
         "status": "PASS",
-        "validationSeconds": 0.059
+        "validationSeconds": 0.076
       },
       {
         "lessonKey": "EN-A1-L-0072",
         "status": "PASS",
-        "validationSeconds": 0.144
+        "validationSeconds": 0.088
       },
       {
         "lessonKey": "EN-A1-L-0073",
         "status": "PASS",
-        "validationSeconds": 0.069
+        "validationSeconds": 0.129
       },
       {
         "lessonKey": "EN-A1-L-0074",
         "status": "PASS",
-        "validationSeconds": 0.133
+        "validationSeconds": 0.189
       },
       {
         "lessonKey": "EN-A1-L-0075",
         "status": "PASS",
-        "validationSeconds": 0.126
+        "validationSeconds": 0.128
       },
       {
         "lessonKey": "EN-A1-L-0076",
         "status": "PASS",
-        "validationSeconds": 0.053
+        "validationSeconds": 0.194
       },
       {
         "lessonKey": "EN-A1-L-0077",
         "status": "PASS",
-        "validationSeconds": 0.093
+        "validationSeconds": 0.257
       },
       {
         "lessonKey": "EN-A1-L-0078",
         "status": "PASS",
-        "validationSeconds": 0.106
+        "validationSeconds": 0.075
       },
       {
         "lessonKey": "EN-A1-L-0079",
         "status": "PASS",
-        "validationSeconds": 0.106
+        "validationSeconds": 0.211
       },
       {
         "lessonKey": "EN-A1-L-0080",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.077
       },
       {
         "lessonKey": "EN-A1-L-0081",
         "status": "PASS",
-        "validationSeconds": 0.088
+        "validationSeconds": 0.199
       },
       {
         "lessonKey": "EN-A1-L-0082",
         "status": "PASS",
-        "validationSeconds": 0.133
+        "validationSeconds": 0.118
       },
       {
         "lessonKey": "EN-A1-L-0083",
         "status": "PASS",
-        "validationSeconds": 0.14
+        "validationSeconds": 0.161
       },
       {
         "lessonKey": "EN-A1-L-0084",
         "status": "PASS",
-        "validationSeconds": 0.135
+        "validationSeconds": 0.149
       },
       {
         "lessonKey": "EN-A1-L-0085",
         "status": "PASS",
-        "validationSeconds": 0.05
+        "validationSeconds": 0.142
       },
       {
         "lessonKey": "EN-A1-L-0086",
         "status": "PASS",
-        "validationSeconds": 0.062
+        "validationSeconds": 0.162
       },
       {
         "lessonKey": "EN-A1-L-0087",
         "status": "PASS",
-        "validationSeconds": 0.1
+        "validationSeconds": 0.228
       },
       {
         "lessonKey": "EN-A1-L-0088",
         "status": "PASS",
-        "validationSeconds": 0.099
+        "validationSeconds": 0.093
       },
       {
         "lessonKey": "EN-A1-L-0089",
         "status": "PASS",
-        "validationSeconds": 0.106
+        "validationSeconds": 0.217
       },
       {
         "lessonKey": "EN-A1-L-0090",
         "status": "PASS",
-        "validationSeconds": 0.109
+        "validationSeconds": 0.211
       },
       {
         "lessonKey": "EN-A1-L-0091",
         "status": "PASS",
-        "validationSeconds": 0.09
+        "validationSeconds": 0.078
       },
       {
         "lessonKey": "EN-A1-L-0092",
         "status": "PASS",
-        "validationSeconds": 0.107
+        "validationSeconds": 0.132
       },
       {
         "lessonKey": "EN-A1-L-0093",
         "status": "PASS",
-        "validationSeconds": 0.109
+        "validationSeconds": 0.157
       },
       {
         "lessonKey": "EN-A1-L-0094",
         "status": "PASS",
-        "validationSeconds": 0.104
+        "validationSeconds": 0.158
       },
       {
         "lessonKey": "EN-A1-L-0095",
         "status": "PASS",
-        "validationSeconds": 0.085
+        "validationSeconds": 0.157
       },
       {
         "lessonKey": "EN-A1-L-0096",
         "status": "PASS",
-        "validationSeconds": 0.106
+        "validationSeconds": 0.187
       },
       {
         "lessonKey": "EN-A1-L-0097",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.091
       },
       {
         "lessonKey": "EN-A1-L-0098",
         "status": "PASS",
-        "validationSeconds": 0.109
+        "validationSeconds": 0.225
       },
       {
         "lessonKey": "EN-A1-L-0099",
         "status": "PASS",
-        "validationSeconds": 0.097
+        "validationSeconds": 0.217
       },
       {
         "lessonKey": "EN-A1-L-0100",
         "status": "PASS",
-        "validationSeconds": 0.094
+        "validationSeconds": 0.075
       },
       {
         "lessonKey": "EN-A1-L-0101",
         "status": "PASS",
-        "validationSeconds": 0.108
+        "validationSeconds": 0.195
       },
       {
         "lessonKey": "EN-A1-L-0102",
         "status": "PASS",
-        "validationSeconds": 0.113
+        "validationSeconds": 0.098
       },
       {
         "lessonKey": "EN-A1-L-0103",
         "status": "PASS",
-        "validationSeconds": 0.113
+        "validationSeconds": 0.123
       },
       {
         "lessonKey": "EN-A1-L-0104",
         "status": "PASS",
-        "validationSeconds": 0.081
+        "validationSeconds": 0.164
       },
       {
         "lessonKey": "EN-A1-L-0105",
         "status": "PASS",
-        "validationSeconds": 0.114
+        "validationSeconds": 0.166
       },
       {
         "lessonKey": "EN-A1-L-0106",
         "status": "PASS",
-        "validationSeconds": 0.093
+        "validationSeconds": 0.129
       },
       {
         "lessonKey": "EN-A1-L-0107",
         "status": "PASS",
-        "validationSeconds": 0.118
+        "validationSeconds": 0.138
       },
       {
         "lessonKey": "EN-A1-L-0108",
         "status": "PASS",
-        "validationSeconds": 0.111
+        "validationSeconds": 0.175
       },
       {
         "lessonKey": "EN-A1-L-0109",
         "status": "PASS",
-        "validationSeconds": 0.093
+        "validationSeconds": 0.17
       },
       {
         "lessonKey": "EN-A1-L-0110",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.125
       },
       {
         "lessonKey": "EN-A1-L-0111",
         "status": "PASS",
-        "validationSeconds": 0.115
+        "validationSeconds": 0.164
       },
       {
         "lessonKey": "EN-A1-L-0112",
         "status": "PASS",
-        "validationSeconds": 0.119
+        "validationSeconds": 0.131
       },
       {
         "lessonKey": "EN-A1-L-0113",
         "status": "PASS",
-        "validationSeconds": 0.119
+        "validationSeconds": 0.16
       },
       {
         "lessonKey": "EN-A1-L-0114",
         "status": "PASS",
-        "validationSeconds": 0.055
+        "validationSeconds": 0.157
       },
       {
         "lessonKey": "EN-A1-L-0115",
         "status": "PASS",
-        "validationSeconds": 0.109
+        "validationSeconds": 0.165
       },
       {
         "lessonKey": "EN-A1-L-0116",
         "status": "PASS",
-        "validationSeconds": 0.104
+        "validationSeconds": 0.15
       },
       {
         "lessonKey": "EN-A1-L-0117",
         "status": "PASS",
-        "validationSeconds": 0.101
+        "validationSeconds": 0.192
       },
       {
         "lessonKey": "EN-A1-L-0118",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.185
       },
       {
         "lessonKey": "EN-A1-L-0119",
         "status": "PASS",
-        "validationSeconds": 0.101
+        "validationSeconds": 0.201
       },
       {
         "lessonKey": "EN-A1-L-0120",
         "status": "PASS",
-        "validationSeconds": 0.103
+        "validationSeconds": 0.077
       },
       {
         "lessonKey": "EN-A1-L-0121",
         "status": "PASS",
-        "validationSeconds": 0.101
+        "validationSeconds": 0.117
       },
       {
         "lessonKey": "EN-A1-L-0122",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.168
       },
       {
         "lessonKey": "EN-A1-L-0123",
         "status": "PASS",
-        "validationSeconds": 0.101
+        "validationSeconds": 0.161
       },
       {
         "lessonKey": "EN-A1-L-0124",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.159
       },
       {
         "lessonKey": "EN-A1-L-0125",
         "status": "PASS",
-        "validationSeconds": 0.104
+        "validationSeconds": 0.126
       },
       {
         "lessonKey": "EN-A1-L-0126",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.174
       },
       {
         "lessonKey": "EN-A1-L-0127",
         "status": "PASS",
-        "validationSeconds": 0.103
+        "validationSeconds": 0.168
       },
       {
         "lessonKey": "EN-A1-L-0128",
         "status": "PASS",
-        "validationSeconds": 0.102
+        "validationSeconds": 0.127
       },
       {
         "lessonKey": "EN-A1-L-0129",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.15
       },
       {
         "lessonKey": "EN-A1-L-0130",
         "status": "PASS",
-        "validationSeconds": 0.1
+        "validationSeconds": 0.164
       },
       {
         "lessonKey": "EN-A1-L-0131",
         "status": "PASS",
-        "validationSeconds": 0.105
+        "validationSeconds": 0.17
       },
       {
         "lessonKey": "EN-A1-L-0132",
         "status": "PASS",
-        "validationSeconds": 0.113
+        "validationSeconds": 0.177
       },
       {
         "lessonKey": "EN-A1-L-0133",
-        "status": "FAIL",
-        "error": "Persian orthography failed",
-        "validationSeconds": 0.105
+        "status": "PASS",
+        "validationSeconds": 0.146
       },
       {
         "lessonKey": "EN-A1-L-0134",
-        "status": "FAIL",
-        "error": "Persian orthography failed",
-        "validationSeconds": 0.093
+        "status": "PASS",
+        "validationSeconds": 0.154
       },
       {
         "lessonKey": "EN-A1-L-0135",
-        "status": "FAIL",
-        "error": "Persian orthography failed",
-        "validationSeconds": 0.137
+        "status": "PASS",
+        "validationSeconds": 0.184
       },
       {
         "lessonKey": "EN-A1-L-0136",
         "status": "PASS",
-        "validationSeconds": 0.143
+        "validationSeconds": 0.152
       },
       {
         "lessonKey": "EN-A1-L-0137",
         "status": "PASS",
-        "validationSeconds": 0.138
+        "validationSeconds": 0.175
       },
       {
         "lessonKey": "EN-A1-L-0138",
         "status": "PASS",
-        "validationSeconds": 0.052
+        "validationSeconds": 0.12
       },
       {
         "lessonKey": "EN-A1-L-0139",
-        "status": "FAIL",
-        "error": "Persian orthography failed",
-        "validationSeconds": 0.051
+        "status": "PASS",
+        "validationSeconds": 0.098
       },
       {
         "lessonKey": "EN-A1-L-0140",
         "status": "FAIL",
         "error": "Persian orthography failed",
-        "validationSeconds": 0.06
+        "validationSeconds": 0.11
       }
     ]
   }
