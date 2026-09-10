@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0094",
+  "sortOrder": 94,
+  "levelKey": "A1",
+  "lessonSourceHash": "a4950d2703aae7eb528e05e16d1e20fe495e2c3732a182f09042bb568645c290",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0094-CALL",
+      "form": "I have a call",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-CALL-01",
+      "lemma": "call",
+      "role": "target",
+      "referenceKey": "EN-REF-008BCA6A5045C6993B05",
+      "spokenPriority": {
+        "lemma": "call",
+        "spokenRank": 118,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K AO1 L",
+        "arpabet": [
+          "K AO1 L"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i have a call",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0094"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0094-CALL"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "have a call",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0094"
+      ],
+      "lexicalLemmas": [
+        "call"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "have a call",
+        "rationale": "Exact target collocation generated from the first learner turn."
+      }
+    },
+    {
+      "query": "the call is at",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0094"
+      ],
+      "lexicalLemmas": [
+        "call"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "the call is at",
+        "rationale": "Exact changed-context target collocation generated from the second learner turn."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "eb424fb346f2796d3fb892024d6099d17e0c949295f4ee564923f16f77e893a4"
+}

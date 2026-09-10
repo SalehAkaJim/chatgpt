@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0099",
+  "sortOrder": 99,
+  "levelKey": "A1",
+  "lessonSourceHash": "995c2e5d91a92daef88ad0520140d7bb9afbc2639d2067c92c8f16fd17e0f3a2",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0099-START",
+      "form": "The start is at nine",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-START-01",
+      "lemma": "start",
+      "role": "target",
+      "referenceKey": "EN-REF-15277216F35D9B6D2A60",
+      "spokenPriority": {
+        "lemma": "start",
+        "spokenRank": 121,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "S T AA1 R T",
+        "arpabet": [
+          "S T AA1 R T"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the start is at nine",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0099"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0099-START"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "is the start",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0099"
+      ],
+      "lexicalLemmas": [
+        "start"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is the start",
+        "rationale": "Exact prompt-side target collocation generated from the first character turn."
+      }
+    },
+    {
+      "query": "the start is at",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0099"
+      ],
+      "lexicalLemmas": [
+        "start"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "the start is at",
+        "rationale": "Exact bounded learner target collocation generated from the first learner turn."
+      }
+    },
+    {
+      "query": "a good start",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0099"
+      ],
+      "lexicalLemmas": [
+        "start"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a good start",
+        "rationale": "Exact target collocation shared by the second prompt and changed-context learner turn."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "7897cc715df2537b426e77445812289c47ec8c8ab90e7f2d9ce3f7e5f2ad9823"
+}

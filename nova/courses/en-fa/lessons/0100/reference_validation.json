@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0100",
+  "levelKey": "A1",
+  "sortOrder": 100,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0100: target word EN-LEX-WEEK-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-WEEK-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "week",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-C98FC3F4AFADFACCDBD2",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C98FC3F4AFADFACCDBD2",
+        "EN-REF-79CE62843766C00AD025"
+      ],
+      "referenceTranslationsFa": [
+        "ساعات یا روزهای کاری",
+        "هفت روز متوالی"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-C98FC3F4AFADFACCDBD2",
+        "translationFa": "هفت روز متوالی",
+        "definitionEn": "any period of seven consecutive days",
+        "senseId": "f45d6b30-cb5e-5b06-bd3f-c4535034601e",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "7bfe71acf3b6dc6c539951103d7f15eb8b817d783f905a8e7abb355e8e1a07e3"
+}

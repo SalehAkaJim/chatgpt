@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0096",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "i set the book there",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0096; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "“I set it here.” and “I set the book there.” are plausible short A1 utterances in the stated scene."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently preserves the bounded lesson meaning of set."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "One lexical target is practiced inside familiar short sentence frames."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors separate the intended answer from the transfer response and unrelated familiar language."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "The character pair has a concrete reason to exchange both target utterances."
+      },
+      "difficultyFit": {
+        "score": 5,
+        "evidence": "The lesson stays at short early-A1 utterance length and introduces one bounded lexical target."
+      },
+      "repetitionUsefulness": {
+        "score": 4,
+        "evidence": "set is repeated through recognition, guided response, transfer and hidden retrieval."
+      },
+      "transferQuality": {
+        "score": 4,
+        "evidence": "The second learner response changes the communicative context while preserving the target sense."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Scenario, dialogue, activities and outcome align on the same bounded target."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; learner-experience confidence is intentionally limited."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "The review covers only the bounded A1 target sense.",
+      "Generated audio prosody is not evaluated at this text stage."
+    ],
+    "resolvedFindings": [
+      "English usage is contextually plausible.",
+      "Persian copy preserves the selected meaning.",
+      "The final activity requires hidden retrieval.",
+      "Character/story rotation is spaced by 5 Lessons and the learner role/story beat is varied."
+    ],
+    "lessonKey": "EN-A1-L-0096",
+    "sourceHash": "220d1d836fe9f521cca8b7d7501939458e6413e24a63e418112e0b512d72b343",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.3,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "220d1d836fe9f521cca8b7d7501939458e6413e24a63e418112e0b512d72b343"
+}
