@@ -5,6 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
+from audit_learner_experience_dependencies import audit_lesson
 from factory_config import resolve_generated_lessons
 from reference_catalog import ReferenceCatalog
 from validate_content_quality import evaluate
@@ -78,13 +79,24 @@ def main() -> int:
     design_errors = design.get("errors", [])
     product_quality = validate_product_quality_v2(lesson_objects, product_policy)
     product_quality_errors = product_quality.get("errors", [])
+
+    learner_experience_issues = []
+    for lesson in lesson_objects:
+        learner_experience_issues.extend(audit_lesson(lesson))
+    learner_experience_errors = [
+        f"{item['code']} {item['lessonKey']}/{item.get('activityKey')}: {item['message']}"
+        for item in learner_experience_issues
+        if item.get("severity") == "ERROR"
+    ]
+
     errors.extend(story_errors)
     errors.extend(design_errors)
     errors.extend(product_quality_errors)
+    errors.extend(learner_experience_errors)
     errors.extend(e for r in reports for e in r["errors"])
     status = "PASS" if not errors else "FAIL"
     payload = {
-        "schemaVersion": 4,
+        "schemaVersion": 5,
         "courseCode": course_code,
         "enforceFromSortOrder": enforce_from,
         "generativityMaxDelayLessons": max_dechunk_delay,
@@ -98,6 +110,12 @@ def main() -> int:
         "factoryDesignStatus": design.get("status"),
         "factoryDesignErrors": design_errors,
         "productQualityV2": product_quality,
+        "learnerExperienceDependencies": {
+            "status": "PASS" if not learner_experience_errors else "FAIL",
+            "hardErrorCount": len(learner_experience_errors),
+            "warningCount": sum(1 for x in learner_experience_issues if x.get("severity") == "WARNING"),
+            "issues": learner_experience_issues,
+        },
         "errors": errors,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -107,6 +125,7 @@ def main() -> int:
         "generated": len(reports),
         "errors": len(errors),
         "productQualityV2Errors": len(product_quality_errors),
+        "learnerExperienceErrors": len(learner_experience_errors),
     }, ensure_ascii=False))
     return 0 if status == "PASS" else 2
 
