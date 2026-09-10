@@ -36,6 +36,41 @@ def _usage_fallbacks(lesson: dict) -> dict[str, dict]:
     return {normalize_lemma(x.get("query")): x for x in raw if isinstance(x, dict) and x.get("query")}
 
 
+def _compatible_fallback(query: str, fallbacks: dict[str, dict]) -> tuple[dict | None, str | None]:
+    """Return an explicit fallback that safely covers the generated collocation.
+
+    Exact matches remain preferred. A longer authored phrase may cover its exact
+    lexical collocation window (for example `that man is old` -> `man is old`).
+    Short discourse prompts of the form `and X?` may be covered by an authored
+    fallback containing the complete X phrase (for example `I'm free next week`
+    -> `and next week`). This avoids duplicate self-evidence while still requiring
+    an explicit authored naturalness rationale for the same lexical core.
+    """
+    exact = fallbacks.get(query)
+    if exact:
+        return exact, query
+
+    query_words = query.split()
+    if len(query_words) >= 2:
+        for fallback_query, fallback in fallbacks.items():
+            fallback_words = fallback_query.split()
+            if len(fallback_words) >= len(query_words):
+                for start in range(0, len(fallback_words) - len(query_words) + 1):
+                    if fallback_words[start:start + len(query_words)] == query_words:
+                        return fallback, fallback_query
+
+    if query_words[:1] == ["and"] and len(query_words) >= 2:
+        lexical_core = query_words[1:]
+        for fallback_query, fallback in fallbacks.items():
+            fallback_words = fallback_query.split()
+            if len(fallback_words) >= len(lexical_core):
+                for start in range(0, len(fallback_words) - len(lexical_core) + 1):
+                    if fallback_words[start:start + len(lexical_core)] == lexical_core:
+                        return fallback, fallback_query
+
+    return None, None
+
+
 def build_plan(lesson: dict, lesson_path: Path, catalog: LanguageReferenceCatalog, *, enforce_from: int) -> dict:
     level = lesson.get("levelKey")
     order = int(lesson.get("sortOrder") or 0)
@@ -113,7 +148,7 @@ def build_plan(lesson: dict, lesson_path: Path, catalog: LanguageReferenceCatalo
         matches = catalog.usage_evidence(query)
         best = matches[0] if matches else None
         evidence_count = best.get("sampleCount", 0) if best else 0
-        fallback = fallbacks.get(query)
+        fallback, fallback_query = _compatible_fallback(query, fallbacks)
         status = "corpus_evidence" if evidence_count > 0 else ("explicit_fallback" if fallback else "no_evidence")
         # Only target collocations are blocking in future production; a grammar
         # construction with no exact Tatoeba hit can still be supported by other
@@ -128,9 +163,10 @@ def build_plan(lesson: dict, lesson_path: Path, catalog: LanguageReferenceCatalo
             **query_item,
             "status": status,
             "sampleCount": evidence_count,
-            "evidenceQuery": best.get("query") if best else None,
+            "evidenceQuery": best.get("query") if best else fallback_query,
             "examples": (best.get("examples", [])[:3] if best else []),
             "fallback": fallback,
+            "fallbackMatch": ("exact" if fallback_query == query else "compatible_phrase") if fallback else None,
         })
 
     plan = {
