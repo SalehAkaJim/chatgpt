@@ -3,10 +3,11 @@ from __future__ import annotations
 
 import json
 import re
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 
 WORD_RE = re.compile(r"[A-Za-z]+(?:'[A-Za-z]+)?")
+LATIN_RE = re.compile(r"[A-Za-z]")
 
 
 def norm(value: object) -> str:
@@ -24,6 +25,17 @@ def _choice_options(activity: dict) -> list[str]:
     return [str(x) for x in (config.get("options") or config.get("optionsEn") or [])]
 
 
+def _english_choice_options(activity: dict) -> list[str]:
+    config = activity.get("config") or {}
+    explicit = config.get("optionsEn")
+    if isinstance(explicit, list):
+        return [str(x) for x in explicit]
+    options = config.get("options")
+    if isinstance(options, list) and options and all(LATIN_RE.search(str(x) or "") for x in options):
+        return [str(x) for x in options]
+    return []
+
+
 def _correct_answer(activity: dict) -> str:
     config = activity.get("config") or {}
     activity_type = activity.get("type")
@@ -37,15 +49,6 @@ def _correct_answer(activity: dict) -> str:
         if isinstance(answer_index, int) and 0 <= answer_index < len(options):
             return str(options[answer_index])
     return ""
-
-
-def _lesson_texts(lesson: dict) -> list[str]:
-    texts = [str(t.get("textEn") or "") for t in lesson.get("turns") or []]
-    for activity in lesson.get("activities") or []:
-        answer = _correct_answer(activity)
-        if answer:
-            texts.append(answer)
-    return texts
 
 
 def _learner_production_texts(lesson: dict) -> list[str]:
@@ -78,6 +81,15 @@ def _contains_word(text: str, lemma: str) -> bool:
     return lemma.lower() in words
 
 
+def _audit_item_for_option(activity: dict, option: str) -> dict | None:
+    metadata = activity.get("metadata") or {}
+    audit = metadata.get("distractorAudit") or {}
+    for item in audit.get("items") or []:
+        if isinstance(item, dict) and norm(item.get("option")) == norm(option):
+            return item
+    return None
+
+
 def validate_lesson_quality_v2(lesson: dict, policy: dict) -> dict:
     order = int(lesson.get("sortOrder") or 0)
     enforce_from = int(policy.get("enforceFromSortOrder", 125))
@@ -85,12 +97,15 @@ def validate_lesson_quality_v2(lesson: dict, policy: dict) -> dict:
     legacy_from = int(legacy.get("fromSortOrder", 40))
     legacy_to = int(legacy.get("toSortOrder", 84))
     hard_legacy_placeholders = bool(legacy.get("hardGatePlaceholderDistractors", True))
+    hard_legacy_bad_english = bool(legacy.get("hardGateKnownBadEnglishDistractors", True))
     errors: list[str] = []
     warnings: list[str] = []
 
     distractor_policy = policy.get("distractors") or {}
     banned_fa = [norm(x) for x in distractor_policy.get("bannedPlaceholderPatternsFa") or []]
     banned_en = {norm(x) for x in distractor_policy.get("bannedGenericOptionsEn") or []}
+    banned_exact_en = {norm(x) for x in distractor_policy.get("bannedExactOptionsEn") or []}
+    audit_from = int(distractor_policy.get("requireExplicitEnglishDistractorAuditFromSortOrder", enforce_from))
 
     for activity in lesson.get("activities") or []:
         activity_key = activity.get("activityKey") or "?"
@@ -98,21 +113,56 @@ def validate_lesson_quality_v2(lesson: dict, policy: dict) -> dict:
             normalized = norm(option)
             is_placeholder = any(p and p in normalized for p in banned_fa)
             is_generic_en = normalized in banned_en
+            is_known_bad_en = normalized in banned_exact_en
             if is_placeholder or is_generic_en:
                 message = f"PQ2-H01 {lesson.get('lessonKey')}/{activity_key}: low-quality placeholder/generic distractor: {option!r}"
                 if order >= enforce_from or (hard_legacy_placeholders and legacy_from <= order <= legacy_to):
                     errors.append(message)
                 else:
                     warnings.append(message)
+            if is_known_bad_en:
+                message = f"PQ2-H07 {lesson.get('lessonKey')}/{activity_key}: known ungrammatical/unnatural distractor: {option!r}"
+                if order >= enforce_from or (hard_legacy_bad_english and legacy_from <= order <= legacy_to):
+                    errors.append(message)
+                else:
+                    warnings.append(message)
+
+        if order >= audit_from:
+            english_options = _english_choice_options(activity)
+            answer_index = (activity.get("config") or {}).get("answerIndex")
+            if english_options and isinstance(answer_index, int) and 0 <= answer_index < len(english_options):
+                audit = (activity.get("metadata") or {}).get("distractorAudit") or {}
+                if audit.get("reviewerType") != "model":
+                    errors.append(
+                        f"PQ2-H08 {lesson.get('lessonKey')}/{activity_key}: English choices require metadata.distractorAudit.reviewerType='model'"
+                    )
+                for index, option in enumerate(english_options):
+                    if index == answer_index:
+                        continue
+                    item = _audit_item_for_option(activity, option)
+                    if not item:
+                        errors.append(
+                            f"PQ2-H08 {lesson.get('lessonKey')}/{activity_key}: missing explicit distractor audit for {option!r}"
+                        )
+                        continue
+                    if item.get("grammatical") is not True or item.get("natural") is not True:
+                        errors.append(
+                            f"PQ2-H08 {lesson.get('lessonKey')}/{activity_key}: distractor must be grammatical and natural: {option!r}"
+                        )
+                    reason = str(item.get("contrastReasonFa") or "").strip()
+                    if len(reason) < 8:
+                        errors.append(
+                            f"PQ2-H08 {lesson.get('lessonKey')}/{activity_key}: distractor audit needs a concrete Persian contrast reason: {option!r}"
+                        )
 
     naturalness = policy.get("naturalness") or {}
     teacher_prefixes = tuple(str(x) for x in naturalness.get("teacherDirectivePrefixes") or [])
     banned_exact = {norm(x) for x in naturalness.get("bannedExactUtterances") or []}
     for turn in lesson.get("turns") or []:
         text = str(turn.get("textEn") or "").strip()
-        if text.startswith(teacher_prefixes):
+        if turn.get("role") == "character" and text.startswith(teacher_prefixes):
             message = f"PQ2-H02 {lesson.get('lessonKey')}/{turn.get('turnKey')}: character dialogue is a teacher directive: {text!r}"
-            if order >= enforce_from and naturalness.get("banTeacherDirectiveDialogueFromEnforcement", True):
+            if order >= enforce_from or legacy_from <= order <= legacy_to:
                 errors.append(message)
             else:
                 warnings.append(message)
@@ -277,9 +327,11 @@ def validate_product_quality_v2(lessons: list[dict], policy: dict) -> dict:
         "errors": len(errors),
         "warnings": len(warnings),
         "legacyPlaceholderErrors": sum(1 for x in errors if x.startswith("PQ2-H01")),
+        "knownBadEnglishDistractorErrors": sum(1 for x in errors if x.startswith("PQ2-H07")),
+        "explicitDistractorAuditErrors": sum(1 for x in errors if x.startswith("PQ2-H08")),
     }
     return {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "status": "PASS" if not errors else "FAIL",
         "errors": errors,
         "warnings": warnings,
