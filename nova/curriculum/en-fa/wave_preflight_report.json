@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "status": "FAIL",
   "stage": "integration",
-  "inputHead": "c2eb0ab0c72bf341a5e2f31fb3bf054fde2593a7",
-  "checkedAt": "2026-09-10T04:04:26.994652+00:00",
+  "inputHead": "451e2068b1264ce019f6bd5e6880cc01c24f52b0",
+  "checkedAt": "2026-09-10T04:06:01.870091+00:00",
   "errors": [
     "Ordered single-writer integration did not pass."
   ],
@@ -11,13 +11,13 @@
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0117-0124/wave.json",
       "returnCode": 1,
-      "stdoutTail": "HEAD is now at c2eb0ab0 Retry Nova wave 117-124 after evidence repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 117, \"nextLesson\": 118, \"nextSpecHash\": \"93ec58362ee077beafc0268da6574467e9a3ba086224d49a3902a9b5eedeae64\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 2, \"fullPrefixRegressionRequired\": true}\n",
-      "stderrTail": "Preparing worktree (detached HEAD c2eb0ab0)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 372, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-76ywodm0/repo/nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root /tmp/nova-wave-76ywodm0/repo --config /tmp/nova-wave-76ywodm0/repo/nova/curriculum/en-fa/factory.config.json --lesson /tmp/nova-wave-76ywodm0/repo/nova/courses/en-fa/lessons/0118/lesson.source.json --cache-dir /home/runner/work/chatgpt/chatgpt/.cache/nova-validation\n"
+      "stdoutTail": "HEAD is now at 451e2068 Retry Nova wave 117-124 after lesson 118 repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 117, \"nextLesson\": 118, \"nextSpecHash\": \"93ec58362ee077beafc0268da6574467e9a3ba086224d49a3902a9b5eedeae64\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 118, \"nextLesson\": 119, \"nextSpecHash\": \"2f4d58fa1e3d7aad8ad6794710f4c93dee2e121f77e7aed3fa1d750f3e4615ab\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 2, \"fullPrefixRegressionRequired\": true}\n",
+      "stderrTail": "Preparing worktree (detached HEAD 451e2068)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 372, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-1a1il_dw/repo/nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root /tmp/nova-wave-1a1il_dw/repo --config /tmp/nova-wave-1a1il_dw/repo/nova/curriculum/en-fa/factory.config.json --lesson /tmp/nova-wave-1a1il_dw/repo/nova/courses/en-fa/lessons/0119/lesson.source.json --cache-dir /home/runner/work/chatgpt/chatgpt/.cache/nova-validation\n"
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0117-0124-20260910c",
+    "requestKey": "en-fa-A1-0117-0124-20260910d",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0117-0124/wave.json"
   },
   "waveKey": "en-fa-A1-0117-0124",
