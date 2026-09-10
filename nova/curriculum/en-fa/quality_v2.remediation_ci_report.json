@@ -2,8 +2,8 @@
   "schemaVersion": 2,
   "status": "FAIL",
   "stage": "learner-experience-dependencies",
-  "inputHead": "0a29bb595b134b39b36f3e0e378426ad8cacfcc5",
-  "checkedAt": "2026-09-10T06:11:58.036773+00:00",
+  "inputHead": "502444459b0b45a13824bfd427861251422f10ab",
+  "checkedAt": "2026-09-10T06:17:14.119544+00:00",
   "errors": [
     "Learner-visible context dependency audit found broken conversation/audio/visual prerequisites."
   ],
@@ -26,13 +26,13 @@
       "name": "learner-experience-dependency-audit",
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/audit_learner_experience_dependencies.py --repo-root . --course en-fa --through 124 --output nova/curriculum/en-fa/learner_experience_dependency_report.json",
       "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"checkedLessons\": 124, \"hardErrors\": 9, \"warnings\": 81, \"affectedHardLessons\": 7, \"countsByCode\": {\"LX-H02\": 8, \"LX-H03\": 1, \"LX-W10\": 81}}\n",
+      "stdoutTail": "{\"status\": \"FAIL\", \"checkedLessons\": 124, \"hardErrors\": 3, \"warnings\": 81, \"affectedHardLessons\": 2, \"countsByCode\": {\"LX-H02\": 2, \"LX-H03\": 1, \"LX-W10\": 81}}\n",
       "stderrTail": ""
     }
   ],
   "request": {
     "schemaVersion": 2,
-    "requestKey": "quality-v2-learner-experience-audit-20260910-03",
+    "requestKey": "quality-v2-learner-experience-audit-20260910-04",
     "range": [
       40,
       84
@@ -51,7 +51,8 @@
         "audio_dependency",
         "visual_dependency",
         "pre_dialogue_turn_reuse"
-      ]
+      ],
+      "auditRevision": 2
     }
   },
   "removedStaleWave": "nova/curriculum/en-fa/waves/en-fa-A1-0125-0132",
@@ -61,44 +62,19 @@
     "prototypeModel": "activity-order with dialogue exchanges flattened in place; scenario only on first step",
     "checkedLessons": 124,
     "status": "FAIL",
-    "hardErrorCount": 9,
+    "hardErrorCount": 3,
     "warningCount": 81,
     "affectedHardLessons": [
-      1,
       4,
-      6,
-      9,
-      10,
-      12,
       27
     ],
-    "affectedLessonCount": 87,
+    "affectedLessonCount": 82,
     "countsByCode": {
-      "LX-H02": 8,
+      "LX-H02": 2,
       "LX-H03": 1,
       "LX-W10": 81
     },
     "issues": [
-      {
-        "code": "LX-H02",
-        "severity": "ERROR",
-        "lessonKey": "EN-A1-L-0001",
-        "sortOrder": 1,
-        "activityKey": "A02",
-        "activityType": "lexical_teach",
-        "prototypeStep": 4,
-        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
-      },
-      {
-        "code": "LX-H02",
-        "severity": "ERROR",
-        "lessonKey": "EN-A1-L-0004",
-        "sortOrder": 4,
-        "activityKey": "A01",
-        "activityType": "lexical_teach",
-        "prototypeStep": 1,
-        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
-      },
       {
         "code": "LX-H02",
         "severity": "ERROR",
@@ -117,46 +93,6 @@
         "activityKey": "A06",
         "activityType": "speak",
         "prototypeStep": 7,
-        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
-      },
-      {
-        "code": "LX-H02",
-        "severity": "ERROR",
-        "lessonKey": "EN-A1-L-0006",
-        "sortOrder": 6,
-        "activityKey": "A01",
-        "activityType": "lexical_teach",
-        "prototypeStep": 1,
-        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
-      },
-      {
-        "code": "LX-H02",
-        "severity": "ERROR",
-        "lessonKey": "EN-A1-L-0009",
-        "sortOrder": 9,
-        "activityKey": "A01",
-        "activityType": "lexical_teach",
-        "prototypeStep": 1,
-        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
-      },
-      {
-        "code": "LX-H02",
-        "severity": "ERROR",
-        "lessonKey": "EN-A1-L-0010",
-        "sortOrder": 10,
-        "activityKey": "A01",
-        "activityType": "lexical_teach",
-        "prototypeStep": 1,
-        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
-      },
-      {
-        "code": "LX-H02",
-        "severity": "ERROR",
-        "lessonKey": "EN-A1-L-0012",
-        "sortOrder": 12,
-        "activityKey": "A01",
-        "activityType": "lexical_teach",
-        "prototypeStep": 1,
         "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
