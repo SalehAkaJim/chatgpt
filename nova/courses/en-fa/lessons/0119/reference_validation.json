@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0119",
+  "levelKey": "A1",
+  "sortOrder": 119,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0119: target word EN-LEX-CAR-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-CAR-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "car",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-C3782CE4889E99D89703",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C3782CE4889E99D89703",
+        "EN-REF-FB5447948FAD05D786C5"
+      ],
+      "referenceTranslationsFa": [
+        "خودروی موتوری چهار چرخ",
+        "واگن راه‌آهن"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-C3782CE4889E99D89703",
+        "translationFa": "خودروی موتوری چهار چرخ",
+        "definitionEn": "a motor vehicle with four wheels; usually propelled by an internal combustion engine",
+        "senseId": "9f0ce2e0-1801-5768-950d-ffca753fca55",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "f88a995b6ea866d684d195ca89bb27c25b98c1e398bd5b3c1ab80b6483767416"
+}

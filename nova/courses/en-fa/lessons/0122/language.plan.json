@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0122",
+  "sortOrder": 122,
+  "levelKey": "A1",
+  "lessonSourceHash": "5d3fd2a5784620443ac34215ee27d635b8a43a136c916704b4e7f57cbc8c9b55",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0122-COURSE",
+      "form": "This course is new",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-COURSE-01",
+      "lemma": "course",
+      "role": "target",
+      "referenceKey": "EN-REF-F432FE5C141F6B2C3BB4",
+      "spokenPriority": {
+        "lemma": "course",
+        "spokenRank": 149,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K AO1 R S",
+        "arpabet": [
+          "K AO1 R S"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this course is new",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0122"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0122-COURSE"
+      ],
+      "lexicalLemmas": [
+        "course"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this course is new",
+        "rationale": "Bounded collocation for the education-series noun sense of course."
+      }
+    },
+    {
+      "query": "the english course",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0122"
+      ],
+      "lexicalLemmas": [
+        "course"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "the English course",
+        "rationale": "Exact target-collocation window from the follow-up prompt; natural noun phrase for an educational course."
+      }
+    },
+    {
+      "query": "the english course is good",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0122"
+      ],
+      "lexicalLemmas": [
+        "course"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "the English course is good",
+        "rationale": "Changed-description collocation preserving the same sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "e27583a59c6ab0585dfdb4627075a8f9c5867746a70732a8895ec68ff82b5432"
+}

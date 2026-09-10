@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0117",
+  "sortOrder": 117,
+  "levelKey": "A1",
+  "lessonSourceHash": "4b580f442174f18eb4e1542d04fcc448fd4c29c5d7f8628a3743bacb2d86107a",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0117-CHILD",
+      "form": "That child is with the teacher",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-CHILD-01",
+      "lemma": "child",
+      "role": "target",
+      "referenceKey": "EN-REF-C98D5C0962EEDD93EECB",
+      "spokenPriority": {
+        "lemma": "child",
+        "spokenRank": 191,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "CH AY1 L D",
+        "arpabet": [
+          "CH AY1 L D"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "that child is with the teacher",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0117"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0117-CHILD"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "that child is with the teacher",
+        "rationale": "Bounded target construction for the young-person noun sense of child."
+      }
+    },
+    {
+      "query": "yes that child is with",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0117"
+      ],
+      "lexicalLemmas": [
+        "child"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes that child is with",
+        "rationale": "Exact target-collocation window extracted from the first learner turn; natural spoken frame around child."
+      }
+    },
+    {
+      "query": "and this child",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0117"
+      ],
+      "lexicalLemmas": [
+        "child"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "and this child",
+        "rationale": "Exact target-collocation window extracted from the follow-up prompt; natural short discourse frame around child."
+      }
+    },
+    {
+      "query": "this child is with",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0117"
+      ],
+      "lexicalLemmas": [
+        "child"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this child is with",
+        "rationale": "Exact target-collocation window extracted from the transfer learner turn; natural controlled frame around child."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "1081ef59351123fcfd0f45c3df161603621f4f48cb3c831fb11860d20268cda5"
+}

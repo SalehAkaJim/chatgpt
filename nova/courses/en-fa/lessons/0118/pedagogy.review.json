@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor semantic and pedagogy review of Lesson 0118; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 5,
+      "evidence": "Target lines ‘Yes. We can go together.’ and ‘We can walk together too.’ are short, natural spoken uses of together in the intended sense."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "Persian copy consistently maps together to «با هم» and keeps the same bounded sense across dialogue and activities."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "One lexical sense is introduced, recognized, practiced in a guided exchange, transferred to a second context, and retrieved without the answer shown first."
+    },
+    "distractorQuality": {
+      "score": 4,
+      "evidence": "Choice distractors are grammatical or context-plausible alternatives that differ in meaning or referent rather than random strings."
+    },
+    "dialoguePlausibility": {
+      "score": 5,
+      "evidence": "بن و آوا بعد از برنامه تصمیم می‌گیرند مسیر برگشت تا کافه و ایستگاه را با هم بروند."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "Learner responses stay short and controlled, with familiar A1 sentence frames and one new lexical target."
+    },
+    "repetitionUsefulness": {
+      "score": 5,
+      "evidence": "together recurs across recognition, listening, dialogue, transfer, and hidden spoken retrieval."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The second learner turn changes the immediate referent/context while preserving the same bounded sense of together."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Outcome, target construction, scenario, learner turns, activities, and final retrieval all assess the same lexical objective."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "Only the bounded A1 lexical sense defined for this Lesson is reviewed.",
+    "Generated audio pronunciation/prosody is not evaluated at this text stage."
+  ],
+  "resolvedFindings": [
+    "English turns and response options were checked for grammar and naturalness.",
+    "Persian orthography and English–Persian meaning consistency were checked.",
+    "Reference key, part of speech, sense key, and provisional spec hash were cross-checked against the worker packet.",
+    "Final retrieval keeps the answer hidden before attempt.",
+    "Character pair and learner role do not repeat the immediately preceding Lesson."
+  ],
+  "lessonKey": "EN-A1-L-0118",
+  "sourceHash": "5dd141f1c1def63c41ca2cf36122708b554cb8bdf8c82a21a0a149f239a77862",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0124",
+  "sortOrder": 124,
+  "levelKey": "A1",
+  "lessonSourceHash": "732f387bb823673d90e1a74626f16d0f7257b3c3e19a62a6fcbe785f566f4fc6",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0124-FRIEND",
+      "form": "This is my friend",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-FRIEND-01",
+      "lemma": "friend",
+      "role": "target",
+      "referenceKey": "EN-REF-9A72175994227A18B24C",
+      "spokenPriority": {
+        "lemma": "friend",
+        "spokenRank": 272,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "F R EH1 N D",
+        "arpabet": [
+          "F R EH1 N D"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this is my friend",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0124"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0124-FRIEND"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this is my friend",
+        "rationale": "Natural bounded identification collocation for the relationship noun sense of friend."
+      }
+    },
+    {
+      "query": "is my friend nora",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0124"
+      ],
+      "lexicalLemmas": [
+        "friend"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is my friend Nora",
+        "rationale": "Exact target-collocation window from the first learner introduction; natural identification frame around friend."
+      }
+    },
+    {
+      "query": "nora your friend",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0124"
+      ],
+      "lexicalLemmas": [
+        "friend"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "Nora your friend",
+        "rationale": "Exact target-collocation window from the follow-up question; natural short relationship question frame around friend."
+      }
+    },
+    {
+      "query": "is my friend",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0124"
+      ],
+      "lexicalLemmas": [
+        "friend"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is my friend",
+        "rationale": "Exact target-collocation window from the transfer learner response; natural relationship predicate frame around friend."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "a39e16ff74fc10a995fa3484cba694c0d4da2552f948d7f25af98d01a2dc84a5"
+}

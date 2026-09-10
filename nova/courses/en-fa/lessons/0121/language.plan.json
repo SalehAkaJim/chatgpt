@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0121",
+  "sortOrder": 121,
+  "levelKey": "A1",
+  "lessonSourceHash": "b4d5ad185ccf1330956b15a4aa2d068e1908b34229c124bf2cfad5fb7518a528",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0121-MAYBE",
+      "form": "Maybe the cafe is open",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-MAYBE-01",
+      "lemma": "maybe",
+      "role": "target",
+      "referenceKey": "EN-REF-BA806438481F91EBE70B",
+      "spokenPriority": {
+        "lemma": "maybe",
+        "spokenRank": 170,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M EY1 B IY0",
+        "arpabet": [
+          "M EY1 B IY0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "maybe the cafe is open",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0121"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0121-MAYBE"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "maybe the cafe is open",
+        "rationale": "Natural sentence-initial maybe for a simple uncertain proposition."
+      }
+    },
+    {
+      "query": "maybe the cafe",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0121"
+      ],
+      "lexicalLemmas": [
+        "maybe"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "maybe the cafe",
+        "rationale": "Exact target-collocation window from the first learner turn; natural sentence-initial probability frame around maybe."
+      }
+    },
+    {
+      "query": "maybe he is",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0121"
+      ],
+      "lexicalLemmas": [
+        "maybe"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "he is",
+      "examples": [
+        {
+          "id": 13788367,
+          "text": "He is fantastic.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Just_Balls"
+        },
+        {
+          "id": 13627422,
+          "text": "He is addicted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ahmd"
+        },
+        {
+          "id": 13530112,
+          "text": "He is Amazigh.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Abdaresrif"
+        }
+      ],
+      "fallback": {
+        "query": "maybe he is",
+        "rationale": "Exact target-collocation window from the transfer learner turn; natural sentence-initial probability frame around maybe."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "8924cbe6240aec429b8475904d487a5db860035efb65c2e86aa328588d891055"
+}

@@ -3,7 +3,7 @@
   "courseCode": "en-fa",
   "levelKey": "A1",
   "generatedLessonsMode": "auto",
-  "generatedLessonCount": 116,
+  "generatedLessonCount": 124,
   "generatedLessons": [
     1,
     2,
@@ -120,12 +120,20 @@
     113,
     114,
     115,
-    116
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124
   ],
-  "lastLessonSortOrder": 116,
-  "nextLessonSortOrder": 117,
-  "nextSpecPath": "nova/curriculum/en-fa/specs/0117.json",
-  "nextSpecHash": "9f872f47f8392dcbdfd5c056d601f4eb6b35855ae085f327e6ece29f8e87318f",
+  "lastLessonSortOrder": 124,
+  "nextLessonSortOrder": 125,
+  "nextSpecPath": "nova/curriculum/en-fa/specs/0125.json",
+  "nextSpecHash": "09ddd2bd45ac81b66c018f4311e3f2e07e8baff1c26326fcfc3463ef35d77894",
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
   "languagePlans": [
@@ -288,10 +296,10 @@
       "sortOrder": 14,
       "status": "PASS",
       "warnings": [
+        "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
-        "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
@@ -1359,6 +1367,86 @@
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
       "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0117",
+      "sortOrder": 117,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0118",
+      "sortOrder": 118,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0119",
+      "sortOrder": 119,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0120",
+      "sortOrder": 120,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0121",
+      "sortOrder": 121,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0122",
+      "sortOrder": 122,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0123",
+      "sortOrder": 123,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0124",
+      "sortOrder": 124,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
     }
   ],
   "curriculumSpecReports": [
@@ -2391,6 +2479,94 @@
       "sortOrder": 116,
       "specKey": "en-fa-A1-LESSON-SPEC-0116",
       "specHash": "9b1ea7ef9fc2b403d6e7ae915877682749bd1ef15bc6cda4182cbcfd4919f3cd",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0117",
+      "sortOrder": 117,
+      "specKey": "en-fa-A1-LESSON-SPEC-0117",
+      "specHash": "9f872f47f8392dcbdfd5c056d601f4eb6b35855ae085f327e6ece29f8e87318f",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0118",
+      "sortOrder": 118,
+      "specKey": "en-fa-A1-LESSON-SPEC-0118",
+      "specHash": "93ec58362ee077beafc0268da6574467e9a3ba086224d49a3902a9b5eedeae64",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0119",
+      "sortOrder": 119,
+      "specKey": "en-fa-A1-LESSON-SPEC-0119",
+      "specHash": "2f4d58fa1e3d7aad8ad6794710f4c93dee2e121f77e7aed3fa1d750f3e4615ab",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0120",
+      "sortOrder": 120,
+      "specKey": "en-fa-A1-LESSON-SPEC-0120",
+      "specHash": "7e191276046e69d99b717b68858b40a593dd8980d34c8936a9dabcf2e04d1d8d",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0121",
+      "sortOrder": 121,
+      "specKey": "en-fa-A1-LESSON-SPEC-0121",
+      "specHash": "b243b0950c93ce3fa5fd6114a5d2f5e70c0efca1d9736531a60813a29c28fc26",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0122",
+      "sortOrder": 122,
+      "specKey": "en-fa-A1-LESSON-SPEC-0122",
+      "specHash": "46bf4f763453969ed4d0b31e4969c664d86b2fb43cd9c8b757d6a182488a8a8e",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0123",
+      "sortOrder": 123,
+      "specKey": "en-fa-A1-LESSON-SPEC-0123",
+      "specHash": "7e4e48f74704f0e69d8d58f1f4a9799ea7007b98e136edeaa07dee3e08ae882e",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0124",
+      "sortOrder": 124,
+      "specKey": "en-fa-A1-LESSON-SPEC-0124",
+      "specHash": "ef3def45235cacba801f484319931938a64a7ca0a6f93d042b8e770810dcd3e7",
       "enforced": true,
       "status": "PASS",
       "errors": [],

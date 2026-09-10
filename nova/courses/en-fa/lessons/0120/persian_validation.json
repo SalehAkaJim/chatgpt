@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checked": [
+    "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/course.source.json",
+    "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0120/lesson.source.json",
+    "/home/runner/work/chatgpt/chatgpt/nova/prototype/index.html",
+    "/home/runner/work/chatgpt/chatgpt/nova/prototype/app.js"
+  ],
+  "exceptionsFile": "/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/persian_orthography_exceptions.json",
+  "allowedOccurrences": [
+    {
+      "source": "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0120/lesson.source.json",
+      "line": 10,
+      "column": 48,
+      "word": "سؤال",
+      "character": "ؤ",
+      "codepoint": "U+0624",
+      "exceptionReason": "Standard Persian spelling used in learner-facing instructional copy."
+    },
+    {
+      "source": "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0120/lesson.source.json",
+      "line": 262,
+      "column": 19,
+      "word": "سؤال",
+      "character": "ؤ",
+      "codepoint": "U+0624",
+      "exceptionReason": "Standard Persian spelling used in learner-facing instructional copy."
+    },
+    {
+      "source": "/home/runner/work/chatgpt/chatgpt/nova/courses/en-fa/lessons/0120/lesson.source.json",
+      "line": 288,
+      "column": 19,
+      "word": "سؤال",
+      "character": "ؤ",
+      "codepoint": "U+0624",
+      "exceptionReason": "Standard Persian spelling used in learner-facing instructional copy."
+    }
+  ],
+  "errors": [],
+  "sourceHash": "24bdf12a26977c782ead8a38283f5ade57b2af7e9efc546ea691d04c159a77a1"
+}

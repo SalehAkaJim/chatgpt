@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0119",
+  "sortOrder": 119,
+  "levelKey": "A1",
+  "lessonSourceHash": "f88a995b6ea866d684d195ca89bb27c25b98c1e398bd5b3c1ab80b6483767416",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0119-CAR",
+      "form": "The car is outside",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-CAR-01",
+      "lemma": "car",
+      "role": "target",
+      "referenceKey": "EN-REF-C3782CE4889E99D89703",
+      "spokenPriority": {
+        "lemma": "car",
+        "spokenRank": 219,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K AA1 R",
+        "arpabet": [
+          "K AA1 R"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the car is outside",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0119"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0119-CAR"
+      ],
+      "lexicalLemmas": [
+        "car"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "the car is outside",
+        "rationale": "Bounded location collocation for the motor-vehicle noun sense of car."
+      }
+    },
+    {
+      "query": "is the car",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0119"
+      ],
+      "lexicalLemmas": [
+        "car"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is the car",
+        "rationale": "Exact target-collocation window from the location question; a natural short A1 frame around car."
+      }
+    },
+    {
+      "query": "the red car is here",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0119"
+      ],
+      "lexicalLemmas": [
+        "car"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "the red car is here",
+        "rationale": "Changed-description collocation preserving the same noun sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "5cda0e0089d46123490e70b051be434c01aec60d15ce2a3a671d41dcfb32265f"
+}

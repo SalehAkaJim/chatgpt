@@ -1,0 +1,101 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0122",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "the english course is good",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0122; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "Target lines ‘This course is new.’ and ‘The English course is good.’ are short, natural spoken uses of course in the intended sense."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently maps course to «دوره» and keeps the same bounded sense across dialogue and activities."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "One lexical sense is introduced, recognized, practiced in a guided exchange, transferred to a second context, and retrieved without the answer shown first."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Choice distractors are grammatical or context-plausible alternatives and now have distinct explanatory feedback."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "مایا و الکس بعد از کلاس در مرکز آموزشی پوستر دو دوره زبان را می‌بینند و درباره آنها حرف می‌زنند."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "Learner responses stay short and controlled, with familiar A1 sentence frames and one new lexical target."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "course recurs across recognition, listening, dialogue, transfer, and hidden spoken retrieval."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second learner turn changes the immediate referent/context while preserving the same bounded sense of course."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, target construction, scenario, learner turns, activities, and final retrieval all assess the same lexical objective; the classmates arc returns after five Lessons with the played role changed from Alex to Maya."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Only the bounded A1 lexical sense defined for this Lesson is reviewed.",
+      "Generated audio pronunciation/prosody is not evaluated at this text stage."
+    ],
+    "resolvedFindings": [
+      "English turns and response options were checked for grammar and naturalness.",
+      "Persian orthography and English–Persian meaning consistency were checked.",
+      "Reference key, part of speech, sense key, and provisional spec hash were cross-checked against the worker packet.",
+      "Final retrieval keeps the answer hidden before attempt.",
+      "Story arc, participant set, continuation dependency, five-Lesson return distance, review link, and learner-role rotation were repaired to match the canonical classmates narrative."
+    ],
+    "lessonKey": "EN-A1-L-0122",
+    "sourceHash": "5d3fd2a5784620443ac34215ee27d635b8a43a136c916704b4e7f57cbc8c9b55",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.6,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "5d3fd2a5784620443ac34215ee27d635b8a43a136c916704b4e7f57cbc8c9b55"
+}

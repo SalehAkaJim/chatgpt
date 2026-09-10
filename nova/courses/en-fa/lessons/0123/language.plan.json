@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0123",
+  "sortOrder": 123,
+  "levelKey": "A1",
+  "lessonSourceHash": "6b310aa38aa6d8ee3e091ea7f780d74680c23b3e7ff775ecb8325c4b871d9051",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0123-IMPORTANT",
+      "form": "This message is important",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-IMPORTANT-01",
+      "lemma": "important",
+      "role": "target",
+      "referenceKey": "EN-REF-E06128CF92AF30B1D913",
+      "spokenPriority": {
+        "lemma": "important",
+        "spokenRank": 243,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "IH2 M P AO1 R T AH0 N T",
+        "arpabet": [
+          "IH2 M P AO1 R T AH0 N T"
+        ],
+        "stressPattern": "210"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this message is important",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0123"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0123-IMPORTANT"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this message is important",
+        "rationale": "Natural bounded adjective collocation for something significant."
+      }
+    },
+    {
+      "query": "is this important",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0123"
+      ],
+      "lexicalLemmas": [
+        "important"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is this important",
+        "rationale": "Exact target-collocation window from the opening question; natural A1 adjective question frame."
+      }
+    },
+    {
+      "query": "message is important",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0123"
+      ],
+      "lexicalLemmas": [
+        "important"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "message is important",
+        "rationale": "Exact target-collocation window from the first learner response; natural predicate frame around important."
+      }
+    },
+    {
+      "query": "time is important too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0123"
+      ],
+      "lexicalLemmas": [
+        "important"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "time is important too",
+        "rationale": "Exact target-collocation window from the transfer learner response; natural changed-noun frame around important."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "dd1359554e335c1d3685533d138bee8061ef39020546d710da4a0efdb6cff3d5"
+}

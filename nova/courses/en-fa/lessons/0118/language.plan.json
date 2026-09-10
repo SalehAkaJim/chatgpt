@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0118",
+  "sortOrder": 118,
+  "levelKey": "A1",
+  "lessonSourceHash": "5dd141f1c1def63c41ca2cf36122708b554cb8bdf8c82a21a0a149f239a77862",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0118-TOGETHER",
+      "form": "We can go together",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-TOGETHER-01",
+      "lemma": "together",
+      "role": "target",
+      "referenceKey": "EN-REF-A542D2A39EC50C704808",
+      "spokenPriority": {
+        "lemma": "together",
+        "spokenRank": 270,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T AH0 G EH1 DH ER0",
+        "arpabet": [
+          "T AH0 G EH1 DH ER0"
+        ],
+        "stressPattern": "010"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "we can go together",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0118"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0118-TOGETHER"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "we can go together",
+        "rationale": "Natural bounded collocation for doing a movement activity with another person."
+      }
+    },
+    {
+      "query": "can go together",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0118"
+      ],
+      "lexicalLemmas": [
+        "together"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "can go together",
+        "rationale": "Exact target-collocation window extracted from the first learner turn; natural A1 movement frame with together."
+      }
+    },
+    {
+      "query": "can walk together too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0118"
+      ],
+      "lexicalLemmas": [
+        "together"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "can walk together too",
+        "rationale": "Exact target-collocation window extracted from the transfer learner turn; natural changed-action frame with together."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "e0b5e5bdda430f25ce1646e58c1f59bbf0dd89e6542b2b8678a92e8443939c86"
+}

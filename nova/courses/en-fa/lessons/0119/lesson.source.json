@@ -1,0 +1,332 @@
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0119",
+  "sortOrder": 119,
+  "titleEn": "The car is outside",
+  "titleFa": "ماشین بیرون است",
+  "descriptionFa": "با car درباره یک ماشین و جای آن حرف بزن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0119",
+  "outcomeFa": "car را به معنی «ماشین/خودرو» در دو جمله کوتاه به کار ببری.",
+  "scenarioFa": "آیریس و نینا از مرکز محله بیرون می‌آیند و دنبال ماشینی می‌گردند که قرار است آنها را ببرد.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0118"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0119-CAR",
+        "form": "The car is outside",
+        "meaningFa": "گفتن جای یک ماشین"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Where is the car?",
+        "meaningFa": "ماشین کجاست؟"
+      },
+      {
+        "form": "Is it the red one?",
+        "meaningFa": "همان قرمز است؟"
+      }
+    ],
+    "assessmentBoundary": "Only the bounded A1 motor-vehicle noun sense of car is assessed.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Reuse car with a second familiar description."
+    },
+    "story": {
+      "arcKey": "EN-A1-COMMUNITY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0119",
+      "learnerRoleKey": "iris",
+      "participants": [
+        "nina",
+        "iris"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0114"
+      ],
+      "continuesLessonKey": "EN-A1-L-0114",
+      "settingFa": "جلوی مرکز محله",
+      "storyBeatFa": "نینا جای ماشین را می‌پرسد و آیریس با car جای آن و رنگش را توضیح می‌دهد."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0114",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning community arc is spaced by 5 Lessons and the played role changes from Nina to Iris."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0119",
+      "specHash": "2f4d58fa1e3d7aad8ad6794710f4c93dee2e121f77e7aed3fa1d750f3e4615ab",
+      "grammarTargetKeys": [],
+      "reviewLexicalLemmas": [],
+      "usageFallbacks": [
+        {
+          "query": "the car is outside",
+          "rationale": "Bounded location collocation for the motor-vehicle noun sense of car."
+        },
+        {
+          "query": "the red car is here",
+          "rationale": "Changed-description collocation preserving the same noun sense."
+        },
+        {
+          "query": "is the car",
+          "rationale": "Exact target-collocation window from the location question; a natural short A1 frame around car."
+        }
+      ],
+      "noNewGrammarReason": "Lexical-focus Lesson using familiar A1 sentence patterns; no new grammar is claimed."
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-CAR-01",
+      "itemType": "word",
+      "displayForm": "car",
+      "translationFa": "ماشین، خودرو",
+      "role": "target",
+      "lemma": "car",
+      "partOfSpeech": "noun",
+      "senseKey": "9f0ce2e0-1801-5768-950d-ffca753fca55",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-C3782CE4889E99D89703"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "nina",
+      "textEn": "Where is the car?",
+      "translationFa": "ماشین کجاست؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "iris",
+      "textEn": "The car is outside.",
+      "translationFa": "ماشین بیرون است.",
+      "audioRequired": true,
+      "speechTargetEn": "The car is outside.",
+      "acceptedSpeechEn": [
+        "The car is outside."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "nina",
+      "textEn": "Is it the red one?",
+      "translationFa": "همان قرمز است؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "iris",
+      "textEn": "Yes. The red car is here.",
+      "translationFa": "بله. ماشین قرمز اینجاست.",
+      "audioRequired": true,
+      "speechTargetEn": "Yes. The red car is here.",
+      "acceptedSpeechEn": [
+        "Yes. The red car is here."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی car را در این درس پیدا کن.",
+      "promptFa": "car اینجا چه معنی‌ای دارد؟",
+      "promptEn": "The car is outside",
+      "config": {
+        "options": [
+          "ماشین، خودرو",
+          "دوره",
+          "دوست"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی هدف درس نیست.",
+            "این گزینه با موقعیت جور نیست."
+          ],
+          "correctFa": "ماشین، خودرو"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف شخصیت مقابل را گوش کن و جواب نقش خودت را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را گوش کن.",
+      "promptFa": "آیریس می‌گوید ماشین کجاست؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "بیرون است.",
+          "در کلاس است.",
+          "در کافه کار می‌کند."
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این گفته نشد.",
+            "این با گفت‌وگو جور نیست."
+          ],
+          "correctFa": "بیرون است."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "جمله درست را انتخاب کن.",
+      "promptFa": "ماشین بیرون است.",
+      "config": {
+        "optionsEn": [
+          "The car is outside.",
+          "The car is here.",
+          "The car is red."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "here یعنی اینجاست و مکان دقیق جمله فارسی را عوض می‌کند.",
+            "red رنگ ماشین را می‌گوید و معنی «بیرون است» را نمی‌رساند."
+          ],
+          "correctFa": "The car is outside."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "همان قرمز است؟",
+      "config": {
+        "optionsEn": [
+          "Yes. The red car is here.",
+          "Yes. The car is outside.",
+          "Yes. The car is new."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این گزینه مکان قبلی را تکرار می‌کند و به قرمز بودن پاسخ نمی‌دهد.",
+            "new درباره نو بودن ماشین است و پاسخ سؤال درباره ماشین قرمز نیست."
+          ],
+          "correctFa": "بله. ماشین قرمز اینجاست."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "آیریس هستی. بگو: ماشین قرمز اینجاست.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Yes. The red car is here.",
+        "acceptedAnswersEn": [
+          "Yes. The red car is here."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "car یعنی «ماشین».",
+        "feedback": {
+          "correctFa": "درست است؛ car را در موقعیت دوم بازیابی کردی.",
+          "retryFa": "جمله کوتاه را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval in a changed controlled context."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}
