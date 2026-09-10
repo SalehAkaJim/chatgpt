@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "mysqlVersion": "9.0.1",
+  "lessonKey": "EN-A1-L-0114",
+  "sourceHash": "7da7d9ba85df0ce517b99cd91190b2476d3d9e8b4875dcde0e30e3452ccbf02e",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "activities": 6,
+  "turns": 4,
+  "reimportPassed": true,
+  "playedCharacterKey": "nina",
+  "speakerIdentityPassed": true,
+  "stableIdsPassed": true,
+  "stableIdChecks": [
+    "identical_reimport",
+    "content_edit",
+    "reorder",
+    "insert",
+    "expanded_reimport",
+    "remove_absent_keys",
+    "sibling_isolation",
+    "foreign_key_references"
+  ]
+}
