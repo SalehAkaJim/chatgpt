@@ -158,14 +158,25 @@ def main() -> int:
         output = args.output if args.output.is_absolute() else root / args.output
         dump(output, payload)
 
-    print(json.dumps({
+    summary = {
         "status": payload["status"],
         "lessons": len(reports),
         "cacheHits": payload["cacheHits"],
         "cacheMisses": payload["cacheMisses"],
         "errors": len(errors),
         "fullPrefixRegressionRequired": True,
-    }, ensure_ascii=False))
+    }
+    if errors:
+        summary["lessonErrors"] = [
+            {
+                "lessonKey": report.get("lessonKey"),
+                "sortOrder": report.get("sortOrder"),
+                "errors": report.get("errors", []),
+            }
+            for report in reports
+            if report.get("errors")
+        ]
+    print(json.dumps(summary, ensure_ascii=False))
     return 0 if not errors else 2
 
 
