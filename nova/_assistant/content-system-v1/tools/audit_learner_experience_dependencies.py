@@ -77,7 +77,7 @@ def has_visual_asset(activity: dict) -> bool:
     return walk(activity)
 
 
-def current_step_has_audio(activity: dict) -> bool:
+def current_step_has_audio(activity: dict, lesson: dict) -> bool:
     config = activity.get("config") or {}
     t = activity.get("type")
     if t == "dialogue":
@@ -87,7 +87,11 @@ def current_step_has_audio(activity: dict) -> bool:
     if t == "sentence_order":
         return bool(config.get("audioSourceTurnKey"))
     if t == "lexical_teach":
-        return bool(config.get("audioSourceKey") or config.get("lexicalKey") or config.get("audioKey"))
+        lexical_keys = {str(x) for x in config.get("lexicalKeys") or []}
+        return any(
+            str(item.get("lexicalKey")) in lexical_keys and bool(item.get("audioEligible"))
+            for item in lesson.get("lexicalItems") or []
+        )
     return False
 
 
@@ -143,7 +147,6 @@ def audit_lesson(lesson: dict) -> list[dict]:
         if exchange:
             prompt_key = str(exchange.get("promptTurnKey") or "")
             response_key = str(exchange.get("responseTurnKey") or "")
-            # The current exchange itself renders both bubbles, so both are available on this step.
             exposed_turns.update(k for k in (prompt_key, response_key) if k)
             continue
 
@@ -156,7 +159,7 @@ def audit_lesson(lesson: dict) -> list[dict]:
             ))
 
         listening_ref = any(re.search(pattern, normalized, re.IGNORECASE) for pattern in LISTEN_PATTERNS)
-        if listening_ref and not current_step_has_audio(activity):
+        if listening_ref and not current_step_has_audio(activity, lesson):
             results.append(issue(
                 lesson, activity, "LX-H02", "ERROR",
                 "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control.",
@@ -171,9 +174,6 @@ def audit_lesson(lesson: dict) -> list[dict]:
                 step_index,
             ))
 
-        # Detect a softer but important ordering smell: a scored activity reuses an exact future
-        # dialogue turn before the dialogue activity has appeared. It may be a deliberate pre-teach,
-        # so report it separately instead of automatically failing every legacy Lesson.
         if first_dialogue_step is not None and step_index < first_dialogue_step:
             candidates = [activity.get("promptEn"), correct_answer(activity)]
             future_keys = []
@@ -188,7 +188,6 @@ def audit_lesson(lesson: dict) -> list[dict]:
                     step_index,
                 ))
 
-        # Audio-bearing current activities expose their own source turns during the step.
         if activity.get("type") == "comprehension":
             exposed_turns.update(str(x) for x in config.get("sourceTurnKeys") or [])
         elif activity.get("type") == "sentence_order" and config.get("audioSourceTurnKey"):
