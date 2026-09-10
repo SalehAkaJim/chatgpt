@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 TODAY = "2026-09-10"
@@ -86,6 +87,10 @@ def lesson_path(root: Path, order: int) -> Path:
     return root / "nova/courses/en-fa/lessons" / f"{order:04d}" / "lesson.source.json"
 
 
+def norm_en(value: object) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9' ]+", " ", str(value or "").lower().replace("’", "'"))).strip()
+
+
 def replace_activity_options(lesson: dict, replacements: dict[str, str]) -> list[str]:
     changes = []
     for activity in lesson.get("activities") or []:
@@ -130,6 +135,45 @@ def replace_character_prompts(lesson: dict, mapping: dict[str, tuple[str, str]])
             changes.append(f"{key}: {old!r} -> {en!r}")
     if ordered_support:
         lesson.setdefault("curriculum", {})["supportLanguage"] = ordered_support
+    return changes
+
+
+def ensure_prompt_evidence_fallbacks(lesson: dict) -> list[str]:
+    """Keep evidence aligned when a naturalized character prompt contains the target lexeme.
+
+    The language-plan collocation extractor may query a bounded subphrase (for example
+    `do you find iris`) while the authored character turn is the natural full question
+    `Where do you find Iris?`. Store the full authored turn as an explicit fallback; the
+    phrase-aware matcher can then support the bounded subphrase without inventing a new
+    corpus example or reverting the dialogue to teacher-like scaffolding.
+    """
+    target_lemmas = {
+        norm_en(x.get("lemma") or x.get("displayForm"))
+        for x in lesson.get("lexicalItems") or []
+        if x.get("role") == "target"
+    }
+    target_lemmas.discard("")
+    if not target_lemmas:
+        return []
+
+    lang = lesson.setdefault("curriculum", {}).setdefault("languageReference", {})
+    fallbacks = lang.setdefault("usageFallbacks", [])
+    existing = {norm_en(x.get("query")) for x in fallbacks if isinstance(x, dict)}
+    changes = []
+    for turn in lesson.get("turns") or []:
+        if turn.get("role") != "character":
+            continue
+        text = str(turn.get("textEn") or "").strip()
+        normalized = norm_en(text)
+        words = set(normalized.split())
+        if not normalized or not (target_lemmas & words) or normalized in existing:
+            continue
+        fallbacks.append({
+            "query": text.rstrip(".?!"),
+            "rationale": "Exact naturalized character prompt retained as bounded usage evidence after Product Quality v2 polish."
+        })
+        existing.add(normalized)
+        changes.append(f"add naturalized-prompt usage fallback {text!r}")
     return changes
 
 
@@ -214,7 +258,7 @@ def main() -> int:
     args = parser.parse_args()
     root = Path(args.repo_root).resolve()
     touched = sorted(set(PROMPTS) | set(OPTION_REPLACEMENTS) | set(STORY_OVERRIDES))
-    report = {"schemaVersion": 1, "status": "PASS", "changedLessons": [], "changes": {}, "errors": []}
+    report = {"schemaVersion": 2, "status": "PASS", "changedLessons": [], "changes": {}, "errors": []}
 
     for order in touched:
         source = lesson_path(root, order)
@@ -230,10 +274,11 @@ def main() -> int:
         if order in STORY_OVERRIDES:
             changes.extend(apply_story_override(lesson, STORY_OVERRIDES[order]))
         changes.extend(clean_scaffolding_fallbacks(lesson))
+        changes.extend(ensure_prompt_evidence_fallbacks(lesson))
         if changes:
             meta = lesson.setdefault("metadata", {})
             meta["qualityV2Polished"] = True
-            meta["qualityV2PolishVersion"] = 1
+            meta["qualityV2PolishVersion"] = 2
             dump(source, lesson)
             update_review(root, source, changes)
             report["changedLessons"].append(order)
