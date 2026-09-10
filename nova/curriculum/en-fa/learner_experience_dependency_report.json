@@ -1,0 +1,926 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "prototypeModel": "activity-order with dialogue exchanges flattened in place; scenario only on first step",
+  "checkedLessons": 124,
+  "status": "FAIL",
+  "hardErrorCount": 9,
+  "warningCount": 81,
+  "affectedHardLessons": [
+    1,
+    4,
+    6,
+    9,
+    10,
+    12,
+    27
+  ],
+  "affectedLessonCount": 87,
+  "countsByCode": {
+    "LX-H02": 8,
+    "LX-H03": 1,
+    "LX-W10": 81
+  },
+  "issues": [
+    {
+      "code": "LX-H02",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0001",
+      "sortOrder": 1,
+      "activityKey": "A02",
+      "activityType": "lexical_teach",
+      "prototypeStep": 4,
+      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
+    },
+    {
+      "code": "LX-H02",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0004",
+      "sortOrder": 4,
+      "activityKey": "A01",
+      "activityType": "lexical_teach",
+      "prototypeStep": 1,
+      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
+    },
+    {
+      "code": "LX-H02",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0004",
+      "sortOrder": 4,
+      "activityKey": "A04",
+      "activityType": "response_choice",
+      "prototypeStep": 5,
+      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
+    },
+    {
+      "code": "LX-H02",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0004",
+      "sortOrder": 4,
+      "activityKey": "A06",
+      "activityType": "speak",
+      "prototypeStep": 7,
+      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
+    },
+    {
+      "code": "LX-H02",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0006",
+      "sortOrder": 6,
+      "activityKey": "A01",
+      "activityType": "lexical_teach",
+      "prototypeStep": 1,
+      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
+    },
+    {
+      "code": "LX-H02",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0009",
+      "sortOrder": 9,
+      "activityKey": "A01",
+      "activityType": "lexical_teach",
+      "prototypeStep": 1,
+      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
+    },
+    {
+      "code": "LX-H02",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0010",
+      "sortOrder": 10,
+      "activityKey": "A01",
+      "activityType": "lexical_teach",
+      "prototypeStep": 1,
+      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
+    },
+    {
+      "code": "LX-H02",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0012",
+      "sortOrder": 12,
+      "activityKey": "A01",
+      "activityType": "lexical_teach",
+      "prototypeStep": 1,
+      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0026",
+      "sortOrder": 26,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T06"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0027",
+      "sortOrder": 27,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T04"
+    },
+    {
+      "code": "LX-H03",
+      "severity": "ERROR",
+      "lessonKey": "EN-A1-L-0027",
+      "sortOrder": 27,
+      "activityKey": "A05",
+      "activityType": "response_choice",
+      "prototypeStep": 7,
+      "message": "Learner-facing copy claims a photo/image is visible, but the activity has no visual asset rendered by the Prototype."
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0028",
+      "sortOrder": 28,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0029",
+      "sortOrder": 29,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0030",
+      "sortOrder": 30,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0031",
+      "sortOrder": 31,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T05"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0034",
+      "sortOrder": 34,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0036",
+      "sortOrder": 36,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0037",
+      "sortOrder": 37,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0038",
+      "sortOrder": 38,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0039",
+      "sortOrder": 39,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0040",
+      "sortOrder": 40,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0041",
+      "sortOrder": 41,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0042",
+      "sortOrder": 42,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0043",
+      "sortOrder": 43,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0044",
+      "sortOrder": 44,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0045",
+      "sortOrder": 45,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0046",
+      "sortOrder": 46,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0047",
+      "sortOrder": 47,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0048",
+      "sortOrder": 48,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0049",
+      "sortOrder": 49,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0050",
+      "sortOrder": 50,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0051",
+      "sortOrder": 51,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0052",
+      "sortOrder": 52,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0053",
+      "sortOrder": 53,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0054",
+      "sortOrder": 54,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0055",
+      "sortOrder": 55,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0056",
+      "sortOrder": 56,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0057",
+      "sortOrder": 57,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0058",
+      "sortOrder": 58,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0059",
+      "sortOrder": 59,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0060",
+      "sortOrder": 60,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0061",
+      "sortOrder": 61,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0062",
+      "sortOrder": 62,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0063",
+      "sortOrder": 63,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0064",
+      "sortOrder": 64,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0065",
+      "sortOrder": 65,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0066",
+      "sortOrder": 66,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0067",
+      "sortOrder": 67,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0068",
+      "sortOrder": 68,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0069",
+      "sortOrder": 69,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0070",
+      "sortOrder": 70,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0072",
+      "sortOrder": 72,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0073",
+      "sortOrder": 73,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0074",
+      "sortOrder": 74,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0075",
+      "sortOrder": 75,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0076",
+      "sortOrder": 76,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0077",
+      "sortOrder": 77,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0078",
+      "sortOrder": 78,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0079",
+      "sortOrder": 79,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0080",
+      "sortOrder": 80,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0081",
+      "sortOrder": 81,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0082",
+      "sortOrder": 82,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0083",
+      "sortOrder": 83,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0084",
+      "sortOrder": 84,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0085",
+      "sortOrder": 85,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0086",
+      "sortOrder": 86,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0087",
+      "sortOrder": 87,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0088",
+      "sortOrder": 88,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0089",
+      "sortOrder": 89,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0090",
+      "sortOrder": 90,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0092",
+      "sortOrder": 92,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0093",
+      "sortOrder": 93,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0094",
+      "sortOrder": 94,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0095",
+      "sortOrder": 95,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0096",
+      "sortOrder": 96,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0097",
+      "sortOrder": 97,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0098",
+      "sortOrder": 98,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0099",
+      "sortOrder": 99,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0100",
+      "sortOrder": 100,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0101",
+      "sortOrder": 101,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0102",
+      "sortOrder": 102,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0103",
+      "sortOrder": 103,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0104",
+      "sortOrder": 104,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0105",
+      "sortOrder": 105,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0106",
+      "sortOrder": 106,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0107",
+      "sortOrder": 107,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0108",
+      "sortOrder": 108,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0111",
+      "sortOrder": 111,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0114",
+      "sortOrder": 114,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    },
+    {
+      "code": "LX-W10",
+      "severity": "WARNING",
+      "lessonKey": "EN-A1-L-0120",
+      "sortOrder": 120,
+      "activityKey": "A01",
+      "activityType": "response_choice",
+      "prototypeStep": 1,
+      "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+    }
+  ]
+}

@@ -1,959 +1,983 @@
 {
-  "schemaVersion": 1,
-  "status": "PASS",
-  "stage": "ready-to-publish",
-  "inputHead": "d69537aaa8619496560603abad9c81fb744905f2",
-  "checkedAt": "2026-09-10T05:54:39.788254+00:00",
-  "errors": [],
+  "schemaVersion": 2,
+  "status": "FAIL",
+  "stage": "learner-experience-dependencies",
+  "inputHead": "0a29bb595b134b39b36f3e0e378426ad8cacfcc5",
+  "checkedAt": "2026-09-10T06:11:58.036773+00:00",
+  "errors": [
+    "Learner-visible context dependency audit found broken conversation/audio/visual prerequisites."
+  ],
   "commands": [
     {
       "name": "legacy-remediation",
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/remediate_legacy_quality.py --repo-root . --from 40 --to 84",
       "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"changedLessons\": 47, \"reviewBacklogDue\": 44, \"errors\": 0}\n",
+      "stdoutTail": "{\"status\": \"PASS\", \"changedLessons\": 4, \"reviewBacklogDue\": 44, \"errors\": 0}\n",
       "stderrTail": ""
     },
     {
-      "name": "full-text-qa",
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only --text-workers 4",
+      "name": "legacy-naturalness-polish",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/polish_legacy_quality_v2.py --repo-root .",
       "returnCode": 0,
-      "stdoutTail": "",
+      "stdoutTail": "{\"status\": \"PASS\", \"changedLessons\": 32, \"errors\": 0}\n",
       "stderrTail": ""
     },
     {
-      "name": "curriculum-rebuild",
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py --repo-root . --course en-fa --config nova/curriculum/en-fa/factory.config.json --workspace-dir nova/curriculum/en-fa",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 124, \"nextLesson\": 125, \"nextSpecHash\": \"09ddd2bd45ac81b66c018f4311e3f2e07e8baff1c26326fcfc3463ef35d77894\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n",
-      "stderrTail": ""
-    },
-    {
-      "name": "full-prefix-quality-v2",
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --output nova/curriculum/en-fa/factory_validation.json",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"generated\": 124, \"errors\": 0, \"productQualityV2Errors\": 0}\n",
-      "stderrTail": ""
-    },
-    {
-      "name": "release-readiness",
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/check_release_readiness.py --repo-root .",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"NOT_READY\", \"errors\": 4}\n",
+      "name": "learner-experience-dependency-audit",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/audit_learner_experience_dependencies.py --repo-root . --course en-fa --through 124 --output nova/curriculum/en-fa/learner_experience_dependency_report.json",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"checkedLessons\": 124, \"hardErrors\": 9, \"warnings\": 81, \"affectedHardLessons\": 7, \"countsByCode\": {\"LX-H02\": 8, \"LX-H03\": 1, \"LX-W10\": 81}}\n",
       "stderrTail": ""
     }
   ],
   "request": {
-    "schemaVersion": 1,
-    "requestKey": "quality-v2-legacy-40-84-20260910-02",
+    "schemaVersion": 2,
+    "requestKey": "quality-v2-learner-experience-audit-20260910-03",
     "range": [
       40,
       84
     ],
     "targetedAdditionalLessons": [
+      27,
       100,
       110
     ],
     "policy": "nova/_assistant/content-system-v1/product_quality_v2.policy.json",
-    "qualityGuide": "nova/_assistant/content-system-v1/12_product_quality_v2.md"
+    "qualityGuide": "nova/_assistant/content-system-v1/12_product_quality_v2.md",
+    "learnerExperienceAudit": {
+      "through": 124,
+      "categories": [
+        "conversation_exposure",
+        "audio_dependency",
+        "visual_dependency",
+        "pre_dialogue_turn_reuse"
+      ]
+    }
   },
   "removedStaleWave": "nova/curriculum/en-fa/waves/en-fa-A1-0125-0132",
-  "passedPrefixLength": 124,
-  "remediationReport": {
+  "learnerExperienceDependencyReport": {
     "schemaVersion": 1,
-    "status": "PASS",
-    "range": [
-      40,
-      84
+    "courseCode": "en-fa",
+    "prototypeModel": "activity-order with dialogue exchanges flattened in place; scenario only on first step",
+    "checkedLessons": 124,
+    "status": "FAIL",
+    "hardErrorCount": 9,
+    "warningCount": 81,
+    "affectedHardLessons": [
+      1,
+      4,
+      6,
+      9,
+      10,
+      12,
+      27
     ],
-    "changedLessons": [
-      40,
-      41,
-      42,
-      43,
-      44,
-      45,
-      46,
-      47,
-      48,
-      49,
-      50,
-      51,
-      52,
-      53,
-      54,
-      55,
-      56,
-      57,
-      58,
-      59,
-      60,
-      61,
-      62,
-      63,
-      64,
-      65,
-      66,
-      67,
-      68,
-      69,
-      70,
-      71,
-      72,
-      73,
-      74,
-      75,
-      76,
-      77,
-      78,
-      79,
-      80,
-      81,
-      82,
-      83,
-      84,
-      100,
-      110
-    ],
-    "changes": {
-      "40": [
-        "replace review pen with review name",
-        "rewrite unnatural 'I know this pen' transfer as 'I know this name'",
-        "A01: 'یک معنی نامربوط' -> 'خواندن'",
-        "A01: 'نام یک شخص' -> 'گفتن'",
-        "A05: 'People like coffee.' -> 'I know that name.'",
-        "A07: 'People like coffee.' -> 'I know that book.'"
-      ],
-      "41": [
-        "A01: 'یک معنی نامربوط' -> 'خواندن'",
-        "A01: 'نام یک شخص' -> 'گفتن'",
-        "A05: 'People like coffee.' -> 'I read tea.'"
-      ],
-      "42": [
-        "A01: 'یک معنی نامربوط' -> 'خواندن'",
-        "A01: 'نام یک شخص' -> 'گفتن'",
-        "A05: 'People like coffee.' -> 'I read there is a pen.'"
-      ],
-      "43": [
-        "A01: 'یک معنی نامربوط' -> 'خیلی'",
-        "A01: 'نام یک شخص' -> 'واقعا'",
-        "A05: 'People like coffee.' -> 'Read, very help.'"
-      ],
-      "44": [
-        "A01: 'یک معنی نامربوط' -> 'خیلی'",
-        "A01: 'نام یک شخص' -> 'واقعا'",
-        "A05: 'People like coffee.' -> 'No. Come back with the book.'"
-      ],
-      "45": [
-        "A01: 'یک معنی نامربوط' -> 'خیلی'",
-        "A01: 'نام یک شخص' -> 'واقعا'",
-        "A05: 'People like coffee.' -> 'I read that well too.'"
-      ],
-      "46": [
-        "A01: 'یک معنی نامربوط' -> 'خواندن'",
-        "A01: 'نام یک شخص' -> 'گفتن'",
-        "A05: 'People like coffee.' -> 'she says hello too.'"
-      ],
-      "47": [
-        "A01: 'یک معنی نامربوط' -> 'کتاب'",
-        "A01: 'نام یک شخص' -> 'اتاق'",
-        "A05: 'People like coffee.' -> 'this way is good too.'"
-      ],
-      "48": [
-        "A01: 'یک معنی نامربوط' -> 'خیلی'",
-        "A01: 'نام یک شخص' -> 'واقعا'",
-        "A05: 'People like coffee.' -> 'It is really good too.'"
-      ],
-      "49": [
-        "A01: 'یک معنی نامربوط' -> 'خیلی'",
-        "A01: 'نام یک شخص' -> 'واقعا'",
-        "A05: 'People like coffee.' -> 'It is very good too.'"
-      ],
-      "50": [
-        "A01: 'یک معنی نامربوط' -> 'جدید'",
-        "A01: 'نام یک شخص' -> 'قدیمی'",
-        "A05: 'People like coffee.' -> 'No. The right side.'"
-      ],
-      "51": [
-        "A01: 'یک معنی نامربوط' -> 'کتاب'",
-        "A01: 'نام یک شخص' -> 'اتاق'",
-        "A05: 'People like coffee.' -> 'No. This is work too.'"
-      ],
-      "52": [
-        "A01: 'یک معنی نامربوط' -> 'کتاب'",
-        "A01: 'نام یک شخص' -> 'اتاق'",
-        "A05: 'People like coffee.' -> 'Say the time: one year.'",
-        "A04 response_choice -> fill_blank"
-      ],
-      "53": [
-        "T01: 'Say: One day.' -> 'And you?'",
-        "T03: 'Now say: Two days.' -> 'And now?'",
-        "A01: 'یک معنی نامربوط' -> 'کتاب'",
-        "A01: 'نام یک شخص' -> 'اتاق'",
-        "A04: 'People like coffee.' -> 'One book.'",
-        "A05: 'People like coffee.' -> 'And you?'"
-      ],
-      "54": [
-        "T01: 'Say: Take action.' -> 'And you?'",
-        "T03: 'Now say: I take action.' -> 'And now?'",
-        "A01: 'یک معنی نامربوط' -> 'خواندن'",
-        "A01: 'نام یک شخص' -> 'گفتن'",
-        "A04: 'People like coffee.' -> 'read action.'",
-        "A05: 'People like coffee.' -> 'I read action.'"
-      ],
-      "55": [
-        "T01: 'Say: Many books.' -> 'Which person?'",
-        "T03: 'Now say: Many cups.' -> 'And this person?'",
-        "A01: 'یک معنی نامربوط' -> 'جدید'",
-        "A01: 'نام یک شخص' -> 'قدیمی'",
-        "A04: 'People like coffee.' -> 'new books.'",
-        "A05: 'People like coffee.' -> 'new cups.'",
-        "A04 response_choice -> fill_blank"
-      ],
-      "56": [
-        "T01: 'Say: I never go there.' -> 'And you?'",
-        "T03: 'Now say: I never eat there.' -> 'And now?'",
-        "A01: 'یک معنی نامربوط' -> 'خیلی'",
-        "A01: 'نام یک شخص' -> 'واقعا'",
-        "A04: 'People like coffee.' -> 'I very go there.'",
-        "A05: 'People like coffee.' -> 'I very eat there.'"
-      ],
-      "57": [
-        "T01: 'Say: Life here is good.' -> 'And you?'",
-        "T03: 'Now say: My life is good.' -> 'And now?'",
-        "A01: 'یک معنی نامربوط' -> 'کتاب'",
-        "A01: 'نام یک شخص' -> 'اتاق'",
-        "A04: 'People like coffee.' -> 'book here is good.'",
-        "A05: 'People like coffee.' -> 'your life is good.'",
-        "A04 response_choice -> sentence_order"
-      ],
-      "58": [
-        "T01: 'Say: A great big room.' -> 'And you?'",
-        "T03: 'Now say: A great big bag.' -> 'And now?'",
-        "A01: 'یک معنی نامربوط' -> 'جدید'",
-        "A01: 'نام یک شخص' -> 'قدیمی'",
-        "A04: 'People like coffee.' -> 'A new big room.'",
-        "A05: 'People like coffee.' -> 'A new big bag.'",
-        "A04 response_choice -> fill_blank"
-      ],
-      "59": [
-        "T01: 'Say: This is love.' -> 'What is this?'",
-        "T03: 'Now say: It is love.' -> 'And now?'",
-        "A01: 'یک معنی نامربوط' -> 'کتاب'",
-        "A01: 'نام یک شخص' -> 'اتاق'",
-        "A04: 'People like coffee.' -> 'that is love.'",
-        "A05: 'People like coffee.' -> 'It is book.'"
-      ],
-      "60": [
-        "T01: 'Say: That man.' -> 'Which person?'",
-        "T03: 'Now say: This man.' -> 'And this person?'",
-        "A01: 'یک معنی نامربوط' -> 'کتاب'",
-        "A01: 'نام یک شخص' -> 'اتاق'",
-        "A04: 'People like coffee.' -> 'That book.'",
-        "A05: 'People like coffee.' -> 'This book.'"
-      ],
-      "61": [
-        "T01: 'Say: My home.' -> 'And you?'",
-        "T03: 'Now say: This is my home.' -> 'And this one?'",
-        "A04 response_choice -> fill_blank"
-      ],
-      "62": [
-        "T01: 'Say: A long day.' -> 'And you?'",
-        "T03: 'Now say: It is a long day.' -> 'And now?'"
-      ],
-      "63": [
-        "T01: 'Say: A happy look.' -> 'And you?'",
-        "T03: 'Now say: That is a happy look.' -> 'And that one?'",
-        "A04 response_choice -> sentence_order"
-      ],
-      "64": [
-        "T01: 'Say: I use this cup.' -> 'And you?'",
-        "T03: 'Now say: I use this bag.' -> 'And now?'",
-        "A04 response_choice -> fill_blank"
-      ],
-      "65": [
-        "T01: 'Say: The same book.' -> 'And you?'",
-        "T03: 'Now say: This is the same book.' -> 'And this one?'"
-      ],
-      "66": [
-        "T01: 'Say: I always read.' -> 'And you?'",
-        "T03: 'Now say: I always read here.' -> 'And now?'",
-        "A04 response_choice -> sentence_order"
-      ],
-      "67": [
-        "T01: 'Say: I find Iris here.' -> 'And you?'",
-        "T03: 'Now say: I find Iris at home.' -> 'And now?'",
-        "A04 response_choice -> fill_blank"
-      ],
-      "68": [
-        "T01: 'Say: The price is high.' -> 'And you?'",
-        "T03: 'Now say: This price is high.' -> 'And now?'"
-      ],
-      "69": [
-        "T01: 'Say: This is a little room.' -> 'What is this?'",
-        "T03: 'Now say: That is a little room.' -> 'And that one?'",
-        "A04 response_choice -> sentence_order"
-      ],
-      "70": [
-        "replace teacher drill/character-age claim with a natural two-person photo description",
-        "A04 response_choice -> fill_blank"
-      ],
-      "71": [
-        "T01: 'Say: This is my own book.' -> 'What is this?'",
-        "T03: 'Now say: That is your own book.' -> 'And that one?'"
-      ],
-      "72": [
-        "A04 response_choice -> sentence_order"
-      ],
-      "73": [
-        "A04 response_choice -> fill_blank"
-      ],
-      "74": [
-        "A04: 'This is my house.' -> 'that is my house.'",
-        "A05: 'This is my house.' -> 'this is your house.'"
-      ],
-      "75": [
-        "A04: 'This is my house.' -> 'This is a good book.'",
-        "A04 response_choice -> sentence_order"
-      ],
-      "76": [
-        "A04 response_choice -> fill_blank"
-      ],
-      "77": [
-        "A05: 'This is my house.' -> 'that thing can wait.'"
-      ],
-      "78": [
-        "A05: 'This is my house.' -> 'Try very.'",
-        "A04 response_choice -> sentence_order"
-      ],
-      "79": [
-        "A05: 'This is my house.' -> 'Wait at the book.'",
-        "A04 response_choice -> fill_blank"
-      ],
-      "80": [
-        "A05: 'This is my house.' -> 'read me the map.'"
-      ],
-      "81": [
-        "A05: 'This is my house.' -> 'I read tired.'",
-        "A04 response_choice -> sentence_order"
-      ],
-      "82": [
-        "A05: 'This is my house.' -> 'your family is here.'",
-        "A04 response_choice -> fill_blank"
-      ],
-      "83": [
-        "A05: 'This is my house.' -> 'Keep that key.'"
-      ],
-      "84": [
-        "A05: 'This is my house.' -> 'read the bag there.'",
-        "A04 response_choice -> sentence_order"
-      ],
-      "100": [
-        "rewrite impersonal week-is-busy/free targets as natural personal availability statements"
-      ],
-      "110": [
-        "A04 contrastive distractors",
-        "A05 contrastive distractors"
-      ]
+    "affectedLessonCount": 87,
+    "countsByCode": {
+      "LX-H02": 8,
+      "LX-H03": 1,
+      "LX-W10": 81
     },
-    "errors": [],
-    "reviewBacklogDueCount": 44
-  },
-  "reviewBacklog": {
-    "schemaVersion": 1,
-    "generatedAt": "2026-09-10",
-    "sourceRange": [
-      40,
-      84
-    ],
-    "canonicalThrough": 124,
-    "policy": "Future waves consume at least four distinct DUE/MONITOR legacy review items per eight Lessons while the backlog remains active.",
-    "dueCount": 44,
-    "items": [
+    "issues": [
       {
-        "lexicalKey": "EN-LEX-KNOW-01",
-        "lemma": "know",
-        "translationFa": "دانستن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 40,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 84,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H02",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0001",
+        "sortOrder": 1,
+        "activityKey": "A02",
+        "activityType": "lexical_teach",
+        "prototypeStep": 4,
+        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
-        "lexicalKey": "EN-LEX-MAKE-01",
-        "lemma": "make",
-        "translationFa": "انجام دادن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 41,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 83,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H02",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0004",
+        "sortOrder": 4,
+        "activityKey": "A01",
+        "activityType": "lexical_teach",
+        "prototypeStep": 1,
+        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
-        "lexicalKey": "EN-LEX-THINK-01",
-        "lemma": "think",
-        "translationFa": "فکر کردن، نظر دادن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 42,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 82,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H02",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0004",
+        "sortOrder": 4,
+        "activityKey": "A04",
+        "activityType": "response_choice",
+        "prototypeStep": 5,
+        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
-        "lexicalKey": "EN-LEX-THEN-01",
-        "lemma": "then",
-        "translationFa": "بعد، سپس",
-        "partOfSpeech": "adverb",
-        "introducedLesson": 43,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 81,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H02",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0004",
+        "sortOrder": 4,
+        "activityKey": "A06",
+        "activityType": "speak",
+        "prototypeStep": 7,
+        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
-        "lexicalKey": "EN-LEX-BACK-01",
-        "lemma": "back",
-        "translationFa": "برگشت به جای قبل",
-        "partOfSpeech": "adverb",
-        "introducedLesson": 44,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 80,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H02",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0006",
+        "sortOrder": 6,
+        "activityKey": "A01",
+        "activityType": "lexical_teach",
+        "prototypeStep": 1,
+        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
-        "lexicalKey": "EN-LEX-WELL-01",
-        "lemma": "well",
-        "translationFa": "خوب، به خوبی",
-        "partOfSpeech": "adverb",
-        "introducedLesson": 45,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 79,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H02",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0009",
+        "sortOrder": 9,
+        "activityKey": "A01",
+        "activityType": "lexical_teach",
+        "prototypeStep": 1,
+        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
-        "lexicalKey": "EN-LEX-WAY-01",
-        "lemma": "way",
-        "translationFa": "روش، طریقه",
-        "partOfSpeech": "noun",
-        "introducedLesson": 47,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 77,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H02",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0010",
+        "sortOrder": 10,
+        "activityKey": "A01",
+        "activityType": "lexical_teach",
+        "prototypeStep": 1,
+        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
-        "lexicalKey": "EN-LEX-VERY-01",
-        "lemma": "very",
-        "translationFa": "خیلی؛ بسیار",
-        "partOfSpeech": "adverb",
-        "introducedLesson": 48,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 76,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H02",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0012",
+        "sortOrder": 12,
+        "activityKey": "A01",
+        "activityType": "lexical_teach",
+        "prototypeStep": 1,
+        "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
       },
       {
-        "lexicalKey": "EN-LEX-REALLY-01",
-        "lemma": "really",
-        "translationFa": "در حقیقت، به طور عملی",
-        "partOfSpeech": "adverb",
-        "introducedLesson": 49,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 75,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0026",
+        "sortOrder": 26,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T06"
       },
       {
-        "lexicalKey": "EN-LEX-WORK-01",
-        "lemma": "work",
-        "translationFa": "فعالیت، کار",
-        "partOfSpeech": "noun",
-        "introducedLesson": 51,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 73,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0027",
+        "sortOrder": 27,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T04"
       },
       {
-        "lexicalKey": "EN-LEX-YEAR-01",
-        "lemma": "year",
-        "translationFa": "سال",
-        "partOfSpeech": "noun",
-        "introducedLesson": 52,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 72,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-H03",
+        "severity": "ERROR",
+        "lessonKey": "EN-A1-L-0027",
+        "sortOrder": 27,
+        "activityKey": "A05",
+        "activityType": "response_choice",
+        "prototypeStep": 7,
+        "message": "Learner-facing copy claims a photo/image is visible, but the activity has no visual asset rendered by the Prototype."
       },
       {
-        "lexicalKey": "EN-LEX-MANY-01",
-        "lemma": "many",
-        "translationFa": "زیاد",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 55,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 69,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0028",
+        "sortOrder": 28,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-NEVER-01",
-        "lemma": "never",
-        "translationFa": "هرگز",
-        "partOfSpeech": "adverb",
-        "introducedLesson": 56,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 68,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0029",
+        "sortOrder": 29,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-LIFE-01",
-        "lemma": "life",
-        "translationFa": "زندگی",
-        "partOfSpeech": "noun",
-        "introducedLesson": 57,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 67,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0030",
+        "sortOrder": 30,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-GREAT-01",
-        "lemma": "great",
-        "translationFa": "بزرگ",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 58,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 66,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0031",
+        "sortOrder": 31,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T05"
       },
       {
-        "lexicalKey": "EN-LEX-LOVE-01",
-        "lemma": "love",
-        "translationFa": "عشق، محبت",
-        "partOfSpeech": "noun",
-        "introducedLesson": 59,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 65,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0034",
+        "sortOrder": 34,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-DAY-01",
-        "lemma": "day",
-        "translationFa": "روز",
-        "partOfSpeech": "noun",
-        "introducedLesson": 53,
-        "laterLearnerPracticeLessons": [
-          62
-        ],
-        "practiceCountAfterIntro": 1,
-        "lastLearnerPracticeLesson": 62,
-        "gapSinceLastLearnerPractice": 62,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0036",
+        "sortOrder": 36,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-LONG-01",
-        "lemma": "long",
-        "translationFa": "طولانی",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 62,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 62,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0037",
+        "sortOrder": 37,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-LOOK-01",
-        "lemma": "look",
-        "translationFa": "حالت چهره",
-        "partOfSpeech": "noun",
-        "introducedLesson": 63,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 61,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0038",
+        "sortOrder": 38,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-USE-01",
-        "lemma": "use",
-        "translationFa": "استفاده کردن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 64,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 60,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0039",
+        "sortOrder": 39,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-SAME-01",
-        "lemma": "same",
-        "translationFa": "همان",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 65,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 59,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0040",
+        "sortOrder": 40,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-ALWAYS-01",
-        "lemma": "always",
-        "translationFa": "همیشه",
-        "partOfSpeech": "adverb",
-        "introducedLesson": 66,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 58,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0041",
+        "sortOrder": 41,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-HOME-01",
-        "lemma": "home",
-        "translationFa": "خانه",
-        "partOfSpeech": "noun",
-        "introducedLesson": 61,
-        "laterLearnerPracticeLessons": [
-          67
-        ],
-        "practiceCountAfterIntro": 1,
-        "lastLearnerPracticeLesson": 67,
-        "gapSinceLastLearnerPractice": 57,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0042",
+        "sortOrder": 42,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-FIND-01",
-        "lemma": "find",
-        "translationFa": "برخوردن، پیدا کردن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 67,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 57,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0043",
+        "sortOrder": 43,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-HIGH-01",
-        "lemma": "high",
-        "translationFa": "بالا، زیاد",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 68,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 56,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0044",
+        "sortOrder": 44,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-LITTLE-01",
-        "lemma": "little",
-        "translationFa": "کوچک",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 69,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 55,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0045",
+        "sortOrder": 45,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-MAN-01",
-        "lemma": "man",
-        "translationFa": "مرد",
-        "partOfSpeech": "noun",
-        "introducedLesson": 60,
-        "laterLearnerPracticeLessons": [
-          70
-        ],
-        "practiceCountAfterIntro": 1,
-        "lastLearnerPracticeLesson": 70,
-        "gapSinceLastLearnerPractice": 54,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0046",
+        "sortOrder": 46,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-OLD-01",
-        "lemma": "old",
-        "translationFa": "مسن",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 70,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 54,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0047",
+        "sortOrder": 47,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-OWN-01",
-        "lemma": "own",
-        "translationFa": "خود، شخصی",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 71,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 53,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0048",
+        "sortOrder": 48,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-GIVE-01",
-        "lemma": "give",
-        "translationFa": "دادن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 73,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 51,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0049",
+        "sortOrder": 49,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-HOUSE-01",
-        "lemma": "house",
-        "translationFa": "خانه",
-        "partOfSpeech": "noun",
-        "introducedLesson": 74,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 50,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0050",
+        "sortOrder": 50,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-PLACE-01",
-        "lemma": "place",
-        "translationFa": "مکان",
-        "partOfSpeech": "noun",
-        "introducedLesson": 75,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 49,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0051",
+        "sortOrder": 51,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-THING-01",
-        "lemma": "thing",
-        "translationFa": "وضعیت",
-        "partOfSpeech": "noun",
-        "introducedLesson": 77,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 47,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0052",
+        "sortOrder": 52,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-SAY-01",
-        "lemma": "say",
-        "translationFa": "گفتن، بیان کردن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 46,
-        "laterLearnerPracticeLessons": [
-          78
-        ],
-        "practiceCountAfterIntro": 1,
-        "lastLearnerPracticeLesson": 78,
-        "gapSinceLastLearnerPractice": 46,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0053",
+        "sortOrder": 53,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-AGAIN-01",
-        "lemma": "again",
-        "translationFa": "دوباره",
-        "partOfSpeech": "adverb",
-        "introducedLesson": 78,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 46,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0054",
+        "sortOrder": 54,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-END-01",
-        "lemma": "end",
-        "translationFa": "انتهای چیزی",
-        "partOfSpeech": "noun",
-        "introducedLesson": 79,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 45,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0055",
+        "sortOrder": 55,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-SHOW-01",
-        "lemma": "show",
-        "translationFa": "نشان دادن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 80,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 44,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0056",
+        "sortOrder": 56,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-FEEL-01",
-        "lemma": "feel",
-        "translationFa": "احساس کردن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 81,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 43,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0057",
+        "sortOrder": 57,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-FAMILY-01",
-        "lemma": "family",
-        "translationFa": "خانواده",
-        "partOfSpeech": "noun",
-        "introducedLesson": 82,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 42,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0058",
+        "sortOrder": 58,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-KEEP-01",
-        "lemma": "keep",
-        "translationFa": "نگه داشتن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 83,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 41,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0059",
+        "sortOrder": 59,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-PUT-01",
-        "lemma": "put",
-        "translationFa": "گذاشتن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 84,
-        "laterLearnerPracticeLessons": [],
-        "practiceCountAfterIntro": 0,
-        "lastLearnerPracticeLesson": null,
-        "gapSinceLastLearnerPractice": 40,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0060",
+        "sortOrder": 60,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-TAKE-01",
-        "lemma": "take",
-        "translationFa": "انجام دادن",
-        "partOfSpeech": "verb",
-        "introducedLesson": 54,
-        "laterLearnerPracticeLessons": [
-          86
-        ],
-        "practiceCountAfterIntro": 1,
-        "lastLearnerPracticeLesson": 86,
-        "gapSinceLastLearnerPractice": 38,
-        "priority": "HIGH",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0061",
+        "sortOrder": 61,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-SCHOOL-01",
-        "lemma": "school",
-        "translationFa": "مدرسه",
-        "partOfSpeech": "noun",
-        "introducedLesson": 76,
-        "laterLearnerPracticeLessons": [
-          106
-        ],
-        "practiceCountAfterIntro": 1,
-        "lastLearnerPracticeLesson": 106,
-        "gapSinceLastLearnerPractice": 18,
-        "priority": "MEDIUM",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0062",
+        "sortOrder": 62,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       },
       {
-        "lexicalKey": "EN-LEX-RIGHT-01",
-        "lemma": "right",
-        "translationFa": "راست",
-        "partOfSpeech": "adjective",
-        "introducedLesson": 50,
-        "laterLearnerPracticeLessons": [
-          113
-        ],
-        "practiceCountAfterIntro": 1,
-        "lastLearnerPracticeLesson": 113,
-        "gapSinceLastLearnerPractice": 11,
-        "priority": "MEDIUM",
-        "status": "DUE"
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0063",
+        "sortOrder": 63,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0064",
+        "sortOrder": 64,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0065",
+        "sortOrder": 65,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0066",
+        "sortOrder": 66,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0067",
+        "sortOrder": 67,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0068",
+        "sortOrder": 68,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0069",
+        "sortOrder": 69,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0070",
+        "sortOrder": 70,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0072",
+        "sortOrder": 72,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0073",
+        "sortOrder": 73,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0074",
+        "sortOrder": 74,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0075",
+        "sortOrder": 75,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0076",
+        "sortOrder": 76,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0077",
+        "sortOrder": 77,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0078",
+        "sortOrder": 78,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0079",
+        "sortOrder": 79,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0080",
+        "sortOrder": 80,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0081",
+        "sortOrder": 81,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0082",
+        "sortOrder": 82,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0083",
+        "sortOrder": 83,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0084",
+        "sortOrder": 84,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0085",
+        "sortOrder": 85,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0086",
+        "sortOrder": 86,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0087",
+        "sortOrder": 87,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0088",
+        "sortOrder": 88,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0089",
+        "sortOrder": 89,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0090",
+        "sortOrder": 90,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0092",
+        "sortOrder": 92,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0093",
+        "sortOrder": 93,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0094",
+        "sortOrder": 94,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0095",
+        "sortOrder": 95,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0096",
+        "sortOrder": 96,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0097",
+        "sortOrder": 97,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0098",
+        "sortOrder": 98,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0099",
+        "sortOrder": 99,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0100",
+        "sortOrder": 100,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0101",
+        "sortOrder": 101,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0102",
+        "sortOrder": 102,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0103",
+        "sortOrder": 103,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0104",
+        "sortOrder": 104,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0105",
+        "sortOrder": 105,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0106",
+        "sortOrder": 106,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0107",
+        "sortOrder": 107,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0108",
+        "sortOrder": 108,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0111",
+        "sortOrder": 111,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0114",
+        "sortOrder": 114,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
+      },
+      {
+        "code": "LX-W10",
+        "severity": "WARNING",
+        "lessonKey": "EN-A1-L-0120",
+        "sortOrder": 120,
+        "activityKey": "A01",
+        "activityType": "response_choice",
+        "prototypeStep": 1,
+        "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T02"
       }
     ]
   }
