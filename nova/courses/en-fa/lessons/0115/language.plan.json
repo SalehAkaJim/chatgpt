@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0115",
+  "sortOrder": 115,
+  "levelKey": "A1",
+  "lessonSourceHash": "b7d7969a679dfa6dd980ff951d536c43571ec474ee6e560b6dd104a81f5602e6",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0115-RUN",
+      "form": "That's one run",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-RUN-BASEBALL-01",
+      "lemma": "run",
+      "role": "target",
+      "referenceKey": "EN-REF-0C1AC9FF6BDD13AF075C",
+      "spokenPriority": {
+        "lemma": "run",
+        "spokenRank": 224,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R AH1 N",
+        "arpabet": [
+          "R AH1 N"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "that's one run",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0115"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0115-RUN"
+      ],
+      "lexicalLemmas": [
+        "run"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "that's one run",
+        "rationale": "Exact bounded learner collocation for the baseball-score noun sense of run."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "0d9b3805690be2a33b64405c285252a5a468f9ebbd14a4ad318292e74e0e565a"
+}

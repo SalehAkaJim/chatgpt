@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0116",
+  "sortOrder": 116,
+  "levelKey": "A1",
+  "lessonSourceHash": "24b2b0c856821e7ac83cda7451f22ce8601b96e71756dbe158560a3b3be5b396",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0116-OPEN",
+      "form": "The door is open",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-OPEN-ADJ-01",
+      "lemma": "open",
+      "role": "target",
+      "referenceKey": "EN-REF-BCD1D2C8A2C521EBE190",
+      "spokenPriority": {
+        "lemma": "open",
+        "spokenRank": 288,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "OW1 P AH0 N",
+        "arpabet": [
+          "OW1 P AH0 N"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the door is open",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0116"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0116-OPEN"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "door is open",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0116"
+      ],
+      "lexicalLemmas": [
+        "open"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "door is open",
+        "rationale": "Exact deterministic target-collocation window from The door is open for the bounded adjective sense meaning not closed."
+      }
+    },
+    {
+      "query": "window is open too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0116"
+      ],
+      "lexicalLemmas": [
+        "open"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "window is open too",
+        "rationale": "Exact deterministic changed-context window preserving the same adjective sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "0fe468c370d6d6d3f7dc3e184a1804fa16ab198ee1e5e3c8d61cf5c7ba12e933"
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0109",
+  "sortOrder": 109,
+  "levelKey": "A1",
+  "lessonSourceHash": "16bd63a7675bb484ee54a62b6448527ec0a8be23ebe6c5c1c56a82a2ec7a0b4e",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0109-YET",
+      "form": "The bus isn't here yet",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-YET-01",
+      "lemma": "yet",
+      "role": "target",
+      "referenceKey": "EN-REF-5893AAFF6B2CEDC06239",
+      "spokenPriority": {
+        "lemma": "yet",
+        "spokenRank": 282,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "Y EH1 T",
+        "arpabet": [
+          "Y EH1 T"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the bus isn't here yet",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0109"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0109-YET"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "isn't here yet",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0109"
+      ],
+      "lexicalLemmas": [
+        "yet"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "isn't here yet",
+        "rationale": "Exact bounded learner target collocation for the temporal sense of yet."
+      }
+    },
+    {
+      "query": "isn't here yet either",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0109"
+      ],
+      "lexicalLemmas": [
+        "yet"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "isn't here yet either",
+        "rationale": "Changed-context target collocation preserving the same temporal sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "34ab1c37e952a32844a8620770071235db426a3c8d2b67053bdecb98b651b595"
+}

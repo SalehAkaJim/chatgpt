@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0114",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "yes there is a job at the cafe",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0114; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "‘There is a job here.’ and ‘There is a job at the cafe.’ are natural short employment statements."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently maps job to «شغل»."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The Lesson progresses from recognition through dialogue to changed-location retrieval."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors are curriculum-relevant alternatives rather than random strings."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "A notice board naturally motivates talking about an available job."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "Output remains short and controlled; there-is is treated as support language."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "job recurs in meaning, listening, selection and spoken retrieval."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second learner turn moves from here to the cafe while preserving the employment sense."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, scenario and final assessment align to one bounded sense."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or learner test has been performed.",
+      "Only the employment sense of job is reviewed.",
+      "Audio prosody is not evaluated at this stage."
+    ],
+    "resolvedFindings": [
+      "English naturalness checked.",
+      "Persian meaning and orthography checked.",
+      "No new grammar is claimed.",
+      "Character pair rotates from the preceding Lesson."
+    ],
+    "lessonKey": "EN-A1-L-0114",
+    "sourceHash": "7da7d9ba85df0ce517b99cd91190b2476d3d9e8b4875dcde0e30e3452ccbf02e",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.6,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "7da7d9ba85df0ce517b99cd91190b2476d3d9e8b4875dcde0e30e3452ccbf02e"
+}

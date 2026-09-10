@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0112",
+  "sortOrder": 112,
+  "levelKey": "A1",
+  "lessonSourceHash": "a19ba62d06fae16bc513dfeab8a65e732536856f0631792943c0636e17a49a5c",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0112-ONCE",
+      "form": "I was here once",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-ONCE-01",
+      "lemma": "once",
+      "role": "target",
+      "referenceKey": "EN-REF-B06942371B3478EA9116",
+      "spokenPriority": {
+        "lemma": "once",
+        "spokenRank": 289,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "W AH1 N S",
+        "arpabet": [
+          "W AH1 N S"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i was here once",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0112"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0112-ONCE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "was here once",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0112"
+      ],
+      "lexicalLemmas": [
+        "once"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "was here once",
+        "rationale": "Exact deterministic target-collocation window from I was here once for the bounded one-occasion sense."
+      }
+    },
+    {
+      "query": "was there once too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0112"
+      ],
+      "lexicalLemmas": [
+        "once"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "was there once too",
+        "rationale": "Exact deterministic changed-context window preserving the same one-occasion sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "9a00e3c226340a56a5b49e77d138ffe8433860c3a5ef152c1f6a3b75ad6a5ab8"
+}

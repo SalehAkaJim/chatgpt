@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0112",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "i was there once too",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0112; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "‘I was here once.’ and ‘I was there once too.’ are natural short uses of once meaning on one occasion."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian consistently renders once as «یک بار»."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "Recognition, guided exchange, place transfer and hidden retrieval form a clear progression."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors contrast time and quality meanings without random noise."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "Talking about previous visits to a museum and cafe naturally elicits once."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "The learner output is short and controlled; past be is support rather than a new assessed target."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "once is reused across comprehension, choice and production."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second turn changes the location while preserving the one-occasion meaning."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, scenario and assessment remain within one bounded sense."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or learner test has been performed.",
+      "Only the one-occasion sense of once is reviewed.",
+      "Audio prosody is not evaluated at this stage."
+    ],
+    "resolvedFindings": [
+      "English naturalness checked.",
+      "Persian meaning and orthography checked.",
+      "Past be is not claimed as new grammar.",
+      "Character pair and learner role rotate from the previous Lesson."
+    ],
+    "lessonKey": "EN-A1-L-0112",
+    "sourceHash": "a19ba62d06fae16bc513dfeab8a65e732536856f0631792943c0636e17a49a5c",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.6,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "a19ba62d06fae16bc513dfeab8a65e732536856f0631792943c0636e17a49a5c"
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0111",
+  "sortOrder": 111,
+  "levelKey": "A1",
+  "lessonSourceHash": "70056fcbbbc1c849cbe9b525203ca2aa0783411dcfff2ea62ce3697bd8a57390",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0111-MEAN",
+      "form": "What do you mean?",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-MEAN-01",
+      "lemma": "mean",
+      "role": "target",
+      "referenceKey": "EN-REF-B28BE61B72DEFF5D19D7",
+      "spokenPriority": {
+        "lemma": "mean",
+        "spokenRank": 52,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M IY1 N",
+        "arpabet": [
+          "M IY1 N"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "what do you mean",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0111"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0111-MEAN"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "do you mean",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0111"
+      ],
+      "lexicalLemmas": [
+        "mean"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "do you mean",
+        "rationale": "Exact deterministic target-collocation window from What do you mean? for the bounded intend/convey sense."
+      }
+    },
+    {
+      "query": "yes i mean this part",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0111"
+      ],
+      "lexicalLemmas": [
+        "mean"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes i mean this part",
+        "rationale": "Exact deterministic changed-context window preserving the same bounded intend/convey sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "17938a3b819d195d18985c1525c2e16851264dc338431d198a034453caba6d8a"
+}

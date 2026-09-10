@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0113",
+  "sortOrder": 113,
+  "levelKey": "A1",
+  "lessonSourceHash": "a1f2ed30ebba42b1e8acd5b2370fc1e6f232b624e5553015073527cce6405698",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0113-BELIEVE",
+      "form": "I believe you",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-BELIEVE-01",
+      "lemma": "believe",
+      "role": "target",
+      "referenceKey": "EN-REF-8C795BF69F25C3DEF2B7",
+      "spokenPriority": {
+        "lemma": "believe",
+        "spokenRank": 252,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B IH0 L IY1 V",
+        "arpabet": [
+          "B IH0 L IY1 V"
+        ],
+        "stressPattern": "01"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i believe you",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0113"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0113-BELIEVE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "okay i believe you",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0113"
+      ],
+      "lexicalLemmas": [
+        "believe"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "okay i believe you",
+        "rationale": "Exact deterministic target-collocation window from Okay. I believe you. for the bounded accept-as-true sense."
+      }
+    },
+    {
+      "query": "yes i believe that's right",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0113"
+      ],
+      "lexicalLemmas": [
+        "believe"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes i believe that's right",
+        "rationale": "Exact deterministic changed-context window preserving the same bounded accept-as-true sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "d6aee3c0c5396d1a89073a00ba8429bace1eb3e5abc37aa8121ff1190ded98d6"
+}

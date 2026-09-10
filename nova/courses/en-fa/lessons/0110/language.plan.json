@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0110",
+  "sortOrder": 110,
+  "levelKey": "A1",
+  "lessonSourceHash": "5c7efe4c39ef26498baf8442d53fbc4826a0e61a942a88f580502591c1aa8dcb",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0110-BAD",
+      "form": "This coffee is bad",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.395,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-BAD-01",
+      "lemma": "bad",
+      "role": "target",
+      "referenceKey": "EN-REF-38B62335FECEE9BE762F",
+      "spokenPriority": {
+        "lemma": "bad",
+        "spokenRank": 206,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B AE1 D",
+        "arpabet": [
+          "B AE1 D"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this coffee is bad",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0110"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0110-BAD"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "coffee is bad",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0110"
+      ],
+      "lexicalLemmas": [
+        "bad"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "coffee is bad",
+        "rationale": "Exact validator collocation window for the bounded quality sense in This coffee is bad."
+      }
+    },
+    {
+      "query": "tea is bad too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0110"
+      ],
+      "lexicalLemmas": [
+        "bad"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "tea is bad too",
+        "rationale": "Exact validator collocation window for the changed-context transfer sentence The tea is bad too."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "87546e58d7eb9d49d2700dd10284d6187e769b934dafaa130d3f98282363d4f8"
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0114",
+  "sortOrder": 114,
+  "levelKey": "A1",
+  "lessonSourceHash": "7da7d9ba85df0ce517b99cd91190b2476d3d9e8b4875dcde0e30e3452ccbf02e",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0114-JOB",
+      "form": "There is a job here",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-JOB-01",
+      "lemma": "job",
+      "role": "target",
+      "referenceKey": "EN-REF-4D72420450677133182C",
+      "spokenPriority": {
+        "lemma": "job",
+        "spokenRank": 196,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "JH AA1 B",
+        "arpabet": [
+          "JH AA1 B",
+          "JH OW1 B"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "there is a job here",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0114"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0114-JOB"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "is a job here",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0114"
+      ],
+      "lexicalLemmas": [
+        "job"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is a job here",
+        "rationale": "Exact deterministic target-collocation window from There is a job here for the bounded employment sense."
+      }
+    },
+    {
+      "query": "is a job at the",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0114"
+      ],
+      "lexicalLemmas": [
+        "job"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is a job at the",
+        "rationale": "Exact deterministic validator window from the natural utterance There is a job at the cafe, preserving the employment sense."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "3f1606598780a9ca433e54076e1e5162dc10b592e1ac0940f40e54eac1210c62"
+}

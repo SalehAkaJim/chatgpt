@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0110",
+  "sortOrder": 110,
+  "titleEn": "This coffee is bad",
+  "titleFa": "این قهوه بد است",
+  "descriptionFa": "با bad کیفیت نامطلوب یک چیز را ساده توصیف کن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0110",
+  "outcomeFa": "bad را به معنی «بد/نامناسب» در دو جمله کوتاه به کار ببری.",
+  "scenarioFa": "لیو و لیام در کافه دو نوشیدنی را امتحان می‌کنند و درباره کیفیتشان حرف می‌زنند.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0109"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0110-BAD",
+        "form": "This coffee is bad",
+        "meaningFa": "توصیف کیفیت نامطلوب"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Do you like the coffee?",
+        "meaningFa": "قهوه را دوست داری؟"
+      },
+      {
+        "form": "And the tea?",
+        "meaningFa": "چای چطور؟"
+      }
+    ],
+    "assessmentBoundary": "Only the bounded A1 quality sense of bad used in this Lesson is assessed.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Recombine the same quality sense with a second familiar noun."
+    },
+    "story": {
+      "arcKey": "EN-A1-LIBRARY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0110",
+      "learnerRoleKey": "leo",
+      "participants": [
+        "liam",
+        "leo"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0105"
+      ],
+      "continuesLessonKey": "EN-A1-L-0105",
+      "settingFa": "کافه نزدیک کتابخانه، کنار میز نوشیدنی‌ها",
+      "storyBeatFa": "لیام درباره نوشیدنی‌ها می‌پرسد و لیو با bad کیفیت قهوه و چای را توصیف می‌کند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0105",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning library arc is spaced by 5 Lessons and the played role changes from Liam to Leo."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0110",
+      "specHash": "79e65b8e1295fe73a6957a529259604008799185cffcfa03bddd1d3e73617571",
+      "grammarTargetKeys": [],
+      "reviewLexicalLemmas": [],
+      "usageFallbacks": [
+        {
+          "query": "coffee is bad",
+          "rationale": "Exact validator collocation window for the bounded quality sense in This coffee is bad."
+        },
+        {
+          "query": "tea is bad too",
+          "rationale": "Exact validator collocation window for the changed-context transfer sentence The tea is bad too."
+        }
+      ],
+      "noNewGrammarReason": "Lexical-focus Lesson using familiar A1 be patterns; no new grammar is claimed."
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-BAD-01",
+      "itemType": "word",
+      "displayForm": "bad",
+      "translationFa": "بد، نامناسب",
+      "role": "target",
+      "lemma": "bad",
+      "partOfSpeech": "adjective",
+      "senseKey": "48b023d2-b06a-5ab1-951f-2a1cf38f02ec",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-38B62335FECEE9BE762F"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "liam",
+      "textEn": "Do you like the coffee?",
+      "translationFa": "قهوه را دوست داری؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "leo",
+      "textEn": "No. This coffee is bad.",
+      "translationFa": "نه. این قهوه بد است.",
+      "audioRequired": true,
+      "speechTargetEn": "No. This coffee is bad.",
+      "acceptedSpeechEn": [
+        "No. This coffee is bad."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "liam",
+      "textEn": "And the tea?",
+      "translationFa": "چای چطور؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "leo",
+      "textEn": "The tea is bad too.",
+      "translationFa": "چای هم بد است.",
+      "audioRequired": true,
+      "speechTargetEn": "The tea is bad too.",
+      "acceptedSpeechEn": [
+        "The tea is bad too."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی bad را پیدا کن.",
+      "promptFa": "bad در این درس چه معنی‌ای دارد؟",
+      "promptEn": "This coffee is bad.",
+      "config": {
+        "options": [
+          "بد، نامناسب",
+          "باز",
+          "یک بار"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی open است.",
+            "این معنی once است."
+          ],
+          "correctFa": "بد، نامناسب"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف‌های لیام را گوش کن و جواب لیو را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول را گوش کن.",
+      "promptFa": "لیو درباره قهوه چه می‌گوید؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "قهوه بد است.",
+          "قهوه باز است.",
+          "قهوه هنوز نرسیده."
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این توصیف مناسب نیست.",
+            "این معنی yet است."
+          ],
+          "correctFa": "قهوه بد است."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "جمله درست را انتخاب کن.",
+      "promptFa": "این قهوه بد است.",
+      "config": {
+        "optionsEn": [
+          "This coffee is bad.",
+          "This coffee is open.",
+          "This coffee is here yet."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "open برای این معنی نیست.",
+            "این جمله طبیعی نیست."
+          ],
+          "correctFa": "This coffee is bad."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "چای چطور؟",
+      "config": {
+        "optionsEn": [
+          "The tea is bad too.",
+          "The tea is a job.",
+          "The tea means this."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جمله بی‌ربط است.",
+            "این معنی هدف نیست."
+          ],
+          "correctFa": "چای هم بد است."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "لیو هستی. بگو: چای هم بد است.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "The tea is bad too.",
+        "acceptedAnswersEn": [
+          "The tea is bad too."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از bad استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ bad را در موقعیت دوم بازیابی کردی.",
+          "retryFa": "جمله کوتاه را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval in a changed controlled context."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}
