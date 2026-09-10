@@ -110,6 +110,33 @@ def _patch_preview_app(source: str) -> str:
         "    audioItems = new Map((audioReady ? manifest.items : []).map(item => [item.audioClass + ':' + item.sourceKey, item]));"
     ))
 
+    replacements.append((
+        "    steps = lesson.activities.flatMap(activity => activity.type === 'dialogue'\n"
+        "      ? activity.config.exchanges.map(exchange => ({activity, exchange})) : [{activity}]);",
+        "    const activityCorrectText = activity => {\n"
+        "      const config = activity.config || {};\n"
+        "      if (activity.type === 'sentence_order') return config.answerEn || '';\n"
+        "      if (activity.type === 'speak') return config.textEn || '';\n"
+        "      if (['response_choice', 'comprehension', 'fill_blank'].includes(activity.type)) {\n"
+        "        const options = activity.type === 'fill_blank' ? (config.optionsEn || []) : (config.options || config.optionsEn || []);\n"
+        "        return Number.isInteger(config.answerIndex) ? (options[config.answerIndex] || '') : '';\n"
+        "      }\n"
+        "      return '';\n"
+        "    };\n"
+        "    let runtimeActivities = lesson.activities;\n"
+        "    const dialogueIndex = lesson.activities.findIndex(activity => activity.type === 'dialogue');\n"
+        "    if (dialogueIndex > 0) {\n"
+        "      const dialogue = lesson.activities[dialogueIndex];\n"
+        "      const dialogueKeys = new Set((dialogue.config?.exchanges || []).flatMap(exchange => [exchange.promptTurnKey, exchange.responseTurnKey]));\n"
+        "      const dialogueTexts = new Set(lesson.turns.filter(turn => dialogueKeys.has(turn.turnKey)).flatMap(turn => [turn.textEn, turn.translationFa, turn.speechTargetEn]).filter(Boolean).map(speechNorm));\n"
+        "      const earlyActivities = lesson.activities.slice(0, dialogueIndex);\n"
+        "      const needsDialogueFirst = earlyActivities.some(activity => [activity.promptEn, activityCorrectText(activity)].filter(Boolean).map(speechNorm).some(text => dialogueTexts.has(text)));\n"
+        "      if (needsDialogueFirst) runtimeActivities = [dialogue, ...earlyActivities, ...lesson.activities.slice(dialogueIndex + 1)];\n"
+        "    }\n"
+        "    steps = runtimeActivities.flatMap(activity => activity.type === 'dialogue'\n"
+        "      ? activity.config.exchanges.map(exchange => ({activity, exchange})) : [{activity}]);"
+    ))
+
     patched = source
     for old, new in replacements:
         if old not in patched:
