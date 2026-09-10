@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "status": "FAIL",
   "stage": "integration",
-  "inputHead": "9c93d8ae8deebcfd7047ec1bf4ecf15fb331b96c",
-  "checkedAt": "2026-09-10T08:38:09.646273+00:00",
+  "inputHead": "9b126722e93c481969193035a80ae0e2404ecf5b",
+  "checkedAt": "2026-09-10T09:11:14.607608+00:00",
   "errors": [
     "Ordered single-writer integration did not pass."
   ],
@@ -11,13 +11,13 @@
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0125-0132/wave.json",
       "returnCode": 1,
-      "stdoutTail": "HEAD is now at 9c93d8ae Retry Nova 125-132 preflight after staging restore\n{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 7, \"fullPrefixRegressionRequired\": true}\n",
-      "stderrTail": "Preparing worktree (detached HEAD 9c93d8ae)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 372, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-8xh1n_mn/repo/nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root /tmp/nova-wave-8xh1n_mn/repo --config /tmp/nova-wave-8xh1n_mn/repo/nova/curriculum/en-fa/factory.config.json --lesson /tmp/nova-wave-8xh1n_mn/repo/nova/courses/en-fa/lessons/0125/lesson.source.json --cache-dir /home/runner/work/chatgpt/chatgpt/.cache/nova-validation\n"
+      "stdoutTail": "HEAD is now at 9b126722 Retry Nova 125-132 after quality-v2 repairs\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"FAIL\", \"lessons\": 125, \"nextLesson\": 126, \"nextSpecHash\": \"c6a1e8540a70b5c1b211d4ea44a093bfce2cd8a8205270237fe0dfe222dbd1cf\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 2}\n",
+      "stderrTail": "Preparing worktree (detached HEAD 9b126722)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 381, in integrate_wave\n    _run([\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 271, in _run\n    raise RuntimeError(f\"Command failed ({completed.returncode}): {' '.join(cmd)}\")\nRuntimeError: Command failed (2): /opt/hostedtoolcache/Python/3.12.14/x64/bin/python /tmp/nova-wave-9q52vcwi/repo/nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py --repo-root /tmp/nova-wave-9q52vcwi/repo --course en-fa --config /tmp/nova-wave-9q52vcwi/repo/nova/curriculum/en-fa/factory.config.json --workspace-dir /tmp/nova-wave-9q52vcwi/repo/nova/curriculum/en-fa\n"
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0125-0132-20260910k",
+    "requestKey": "en-fa-A1-0125-0132-20260910m",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0125-0132/wave.json"
   },
   "waveKey": "en-fa-A1-0125-0132",
