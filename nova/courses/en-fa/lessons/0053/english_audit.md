@@ -1,4 +1,4 @@
-<!-- sourceHash: 8a429ebf2bcb3f2921dd58f17514b787b1c8e975f29301aaf22335db38d596f3 -->
+<!-- sourceHash: 9e5cc53cc16b373f5d1d3485a3e98aeb0ad6c5518d59b5c8365ddd00f5667f59 -->
 # English Audit — EN-A1-L-0053
 
 **Lesson:** One day
@@ -12,7 +12,7 @@
 
 **T01 · leo**
 
-And you?
+How long?
 
 **T02 · liam**
 
@@ -23,7 +23,7 @@ One day.
 
 **T03 · leo**
 
-And now?
+And the other one?
 
 **T04 · liam**
 
@@ -52,7 +52,7 @@ Two days.
 
 **A05 · response_choice**
 
-- **optionsEn:** Two days. | One day. | And you?
+- **optionsEn:** Two days. | One day. | Two books.
 
 **A06 · speak**
 

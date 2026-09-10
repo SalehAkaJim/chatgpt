@@ -25,12 +25,12 @@
     ],
     "supportLanguage": [
       {
-        "form": "Say: My home.",
-        "meaningFa": "بگو: خانه من."
+        "form": "Which one?",
+        "meaningFa": "کدام یکی؟"
       },
       {
-        "form": "Now say: This is my home.",
-        "meaningFa": "حالا بگو: این خانه من است."
+        "form": "And this place?",
+        "meaningFa": "و اینجا؟"
       }
     ],
     "assessmentBoundary": "The Lesson introduces only the bounded A1 use of home shown here and does not claim broader sense mastery.",
@@ -76,10 +76,6 @@
           "rationale": "Exact bounded target phrase for the first learner response."
         },
         {
-          "query": "say my home",
-          "rationale": "Exact turn-derived prompt collocation containing the target."
-        },
-        {
           "query": "is my home",
           "rationale": "Exact turn-derived changed-context collocation containing the target."
         }
@@ -109,8 +105,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "nina",
-      "textEn": "And you?",
-      "translationFa": "تو چطور؟",
+      "textEn": "Which one?",
+      "translationFa": "کدام یکی؟",
       "audioRequired": true
     },
     {
@@ -129,8 +125,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "nina",
-      "textEn": "And this one?",
-      "translationFa": "و این یکی؟",
+      "textEn": "And this place?",
+      "translationFa": "و اینجا؟",
       "audioRequired": true
     },
     {
@@ -328,6 +324,8 @@
     "dialogueRuntime": "guided_exchange",
     "qualityStage": "model_reviewed_for_testing",
     "qualityV2Remediated": true,
-    "qualityV2RemediationVersion": 1
+    "qualityV2RemediationVersion": 1,
+    "qualityV2Polished": true,
+    "qualityV2PolishVersion": 2
   }
 }

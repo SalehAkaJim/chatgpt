@@ -1,4 +1,4 @@
-<!-- sourceHash: b84c68dad1cd9396e526523a8e67dba80affc2f86fcb703b689b2a188a514869 -->
+<!-- sourceHash: a09c549d7dd7682a3fc859926fb12f9cefa2166755984c384fba4539081a5c00 -->
 # English Audit — EN-A1-L-0047
 
 **Lesson:** This way
@@ -54,7 +54,7 @@ That way is good too.
 
 **A05 · response_choice**
 
-- **optionsEn:** That way is good too. | Yes. This way is good. | this way is good too.
+- **optionsEn:** That way is good too. | Yes. This way is good. | This way is good too.
 
 **A06 · speak**
 

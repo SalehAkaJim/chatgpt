@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0082; not an independent human or real-learner test.",
+  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0082; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
-      "score": 5,
-      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+      "score": 4,
+      "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+      "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
     },
     "dialoguePlausibility": {
-      "score": 5,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "score": 4,
+      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
     }
   },
   "learnerTested": false,
@@ -50,7 +50,8 @@
     "No independent human or real learner test has been performed.",
     "Only the bounded A1 family sense is reviewed.",
     "Audio prosody is not evaluated at this stage.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
   ],
   "resolvedFindings": [
     "English targets are natural.",
@@ -58,10 +59,11 @@
     "Final production is hidden retrieval.",
     "The returning pair is spaced from its immediately previous appearance and the learner role is rotated.",
     "Quality-v2 remediation: A05: 'This is my house.' -> 'your family is here.'.",
-    "Quality-v2 remediation: A04 response_choice -> fill_blank."
+    "Quality-v2 remediation: A04 response_choice -> fill_blank.",
+    "Product Quality v2 polish: A05: 'your family is here.' -> 'Your family is here.'."
   ],
   "lessonKey": "EN-A1-L-0082",
-  "sourceHash": "2f78c832be204454990ae80211c9096528cd45208f5199e99466d6c0e01d1509",
+  "sourceHash": "d729cc4b88f5e91516f418bd06df61a5bf10d2a4427bf8bdacd8d21a4f60efbf",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "qualityV2Remediation": {
     "version": 1,
@@ -69,6 +71,13 @@
     "changes": [
       "A05: 'This is my house.' -> 'your family is here.'",
       "A04 response_choice -> fill_blank"
+    ]
+  },
+  "qualityV2Polish": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "A05: 'your family is here.' -> 'Your family is here.'"
     ]
   }
 }

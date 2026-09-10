@@ -1,4 +1,4 @@
-<!-- sourceHash: 7a89ac4d0519273199c205a7a65c5b38684bff230d0d310306d305dd75d97ec8 -->
+<!-- sourceHash: fbee9c9324b7abbc1ecdd1dc1864193d7d233aa1c415596f74e668b363421b21 -->
 # English Audit — EN-A1-L-0051
 
 **Lesson:** Reading is work
@@ -54,7 +54,7 @@ Yes. This is work too.
 
 **A05 · response_choice**
 
-- **optionsEn:** Yes. This is work too. | Yes. Reading is work. | No. This is work too.
+- **optionsEn:** Yes. This is work too. | Yes. Reading is work. | No. This is not work.
 
 **A06 · speak**
 

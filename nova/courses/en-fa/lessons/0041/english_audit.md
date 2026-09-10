@@ -1,4 +1,4 @@
-<!-- sourceHash: a0d64c80e8251fe3c1492f4a30f9fb3f8b4c03a744e787e103ba4ed7ac52b44d -->
+<!-- sourceHash: 3a078201542ad648254f82dc52d4d997142f67e301cd048e3f43430670b238bd -->
 # English Audit — EN-A1-L-0041
 
 **Lesson:** I make coffee
@@ -56,7 +56,7 @@ I make tea.
 
 **A05 · response_choice**
 
-- **optionsEn:** I make tea. | I make coffee. | I read tea.
+- **optionsEn:** I make tea. | I make coffee. | I like tea.
 
 **A06 · speak**
 

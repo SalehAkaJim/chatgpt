@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0071; not an independent human or real-learner test.",
+  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0071; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
-      "score": 5,
-      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+      "score": 4,
+      "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+      "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
     }
   },
   "learnerTested": false,
@@ -50,7 +50,8 @@
     "No independent human or real learner test has been performed.",
     "The review is limited to the bounded A1 outcome and does not claim broad mastery of the target word or grammar.",
     "Final generated audio prosody is not evaluated in this text-stage review.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
   ],
   "resolvedFindings": [
     "English target usage is contextually plausible for the authored scene.",
@@ -58,10 +59,12 @@
     "The final activity requires hidden retrieval in a changed controlled context.",
     "Story-arc spacing and learner-role variation were checked against the recent canonical sequence.",
     "Quality-v2 remediation: T01: 'Say: This is my own book.' -> 'What is this?'.",
-    "Quality-v2 remediation: T03: 'Now say: That is your own book.' -> 'And that one?'."
+    "Quality-v2 remediation: T03: 'Now say: That is your own book.' -> 'And that one?'.",
+    "Product Quality v2 polish: T01: 'What is this?' -> 'Whose book is this?'.",
+    "Product Quality v2 polish: T03: 'And that one?' -> 'And that book?'."
   ],
   "lessonKey": "EN-A1-L-0071",
-  "sourceHash": "719f1b22cf7dd6ed91222fbbd0d881d0dcf7e1cd03a9584d3bc73a9840d8fcee",
+  "sourceHash": "3c692c73cc31871c456a24e420e005ff07b95f83dc2582585001e6a6c2683467",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "qualityV2Remediation": {
     "version": 1,
@@ -69,6 +72,14 @@
     "changes": [
       "T01: 'Say: This is my own book.' -> 'What is this?'",
       "T03: 'Now say: That is your own book.' -> 'And that one?'"
+    ]
+  },
+  "qualityV2Polish": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'What is this?' -> 'Whose book is this?'",
+      "T03: 'And that one?' -> 'And that book?'"
     ]
   }
 }

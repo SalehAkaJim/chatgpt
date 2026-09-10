@@ -10,7 +10,7 @@
   "descriptionFa": "با great هدف کوتاه این درس را تمرین کن.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0058",
   "outcomeFa": "great را در یک موقعیت کوتاه و طبیعی به کار ببری.",
-  "scenarioFa": "اوون دو فضای بزرگ را نشان می‌دهد و نورا great را در معنی اندازه بزرگ تمرین می‌کند.",
+  "scenarioFa": "اوون و نورا در ساختمان یک اتاق بزرگ و یک کیف بزرگ را می‌بینند و اندازه آنها را توصیف می‌کنند.",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0057"
   ],
@@ -25,12 +25,12 @@
     ],
     "supportLanguage": [
       {
-        "form": "Say: A great big room.",
-        "meaningFa": "بگو: یک اتاق خیلی بزرگ."
+        "form": "What do you see?",
+        "meaningFa": "چه می‌بینی؟"
       },
       {
-        "form": "Now say: A great big bag.",
-        "meaningFa": "حالا بگو: یک کیف خیلی بزرگ."
+        "form": "And the bag?",
+        "meaningFa": "و کیف؟"
       }
     ],
     "assessmentBoundary": "The Lesson introduces only the bounded A1 use of great shown here and does not claim broader sense mastery.",
@@ -52,7 +52,7 @@
         "EN-A1-L-0052"
       ],
       "settingFa": "ساختمان، کنار اتاق مشترک",
-      "storyBeatFa": "اوون دو فضای بزرگ را نشان می‌دهد و نورا great را در معنی اندازه بزرگ تمرین می‌کند.",
+      "storyBeatFa": "اوون درباره دو چیز می‌پرسد و نورا great big را برای توصیف اندازه آنها به کار می‌برد.",
       "continuesLessonKey": "EN-A1-L-0052"
     },
     "reviewLinks": [
@@ -72,15 +72,7 @@
       "reviewLexicalLemmas": [],
       "usageFallbacks": [
         {
-          "query": "say a great big room",
-          "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-        },
-        {
           "query": "a great big room",
-          "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-        },
-        {
-          "query": "say a great big bag",
           "rationale": "Explicit bounded target-collocation fallback for this authored turn."
         },
         {
@@ -113,8 +105,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "owen",
-      "textEn": "And you?",
-      "translationFa": "تو چطور؟",
+      "textEn": "What do you see?",
+      "translationFa": "چه می‌بینی؟",
       "audioRequired": true
     },
     {
@@ -133,8 +125,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "owen",
-      "textEn": "And now?",
-      "translationFa": "حالا چطور؟",
+      "textEn": "And the bag?",
+      "translationFa": "و کیف؟",
       "audioRequired": true
     },
     {
@@ -332,6 +324,8 @@
     "dialogueRuntime": "guided_exchange",
     "qualityStage": "model_reviewed_for_testing",
     "qualityV2Remediated": true,
-    "qualityV2RemediationVersion": 1
+    "qualityV2RemediationVersion": 1,
+    "qualityV2Polished": true,
+    "qualityV2PolishVersion": 2
   }
 }

@@ -1,4 +1,4 @@
-<!-- sourceHash: c0cee85171bc8e0a1fc9dc3b499451ee17d33087b4c780e2989f736deace2be2 -->
+<!-- sourceHash: 3300900d05a6ed76216f8086f2e7e393b84baca54ef1a70b4264b59e4f3218e9 -->
 # English Audit — EN-A1-L-0057
 
 **Lesson:** Life here
@@ -12,7 +12,7 @@
 
 **T01 · ruby**
 
-And you?
+How is it here?
 
 **T02 · sara**
 
@@ -23,7 +23,7 @@ Life here is good.
 
 **T03 · ruby**
 
-And now?
+And for you?
 
 **T04 · sara**
 
@@ -54,7 +54,7 @@ My life is good.
 
 **A05 · response_choice**
 
-- **optionsEn:** My life is good. | Life here is good. | your life is good.
+- **optionsEn:** My life is good. | Life here is good. | Your life is good.
 
 **A06 · speak**
 

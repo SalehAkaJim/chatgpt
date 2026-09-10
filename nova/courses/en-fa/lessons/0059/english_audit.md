@@ -1,4 +1,4 @@
-<!-- sourceHash: 5bbe01d7991d747f99b3c1f24bc1c41ee1a837aeba8a0d6df5589a3dc234d7c0 -->
+<!-- sourceHash: 9bc7c7f2fced78f096574abd07ffd303a431166b8ea13385f582c3a08dfc7cea -->
 # English Audit — EN-A1-L-0059
 
 **Lesson:** This is love
@@ -23,7 +23,7 @@ This is love.
 
 **T03 · liam**
 
-And now?
+And this?
 
 **T04 · leo**
 
@@ -52,7 +52,7 @@ It is love.
 
 **A05 · response_choice**
 
-- **optionsEn:** It is love. | This is love. | It is book.
+- **optionsEn:** It is love. | This is love. | It is a book.
 
 **A06 · speak**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 5688e7c777a3e058ffdb194ef4f8b250a87ec96abdc511c93e81bb2cbd735915 -->
+<!-- sourceHash: c3ddb7931fc996df9ac4bf141b2d60f1f44e088335bd7b4d72d2914f2a90e44c -->
 # English Audit — EN-A1-L-0056
 
 **Lesson:** I never go there
@@ -12,7 +12,7 @@
 
 **T01 · ava**
 
-And you?
+Do you go there?
 
 **T02 · ben**
 
@@ -23,7 +23,7 @@ I never go there.
 
 **T03 · ava**
 
-And now?
+Do you eat there?
 
 **T04 · ben**
 
@@ -48,11 +48,11 @@ I never eat there.
 
 **A04 · response_choice**
 
-- **optionsEn:** I never go there. | I never eat there. | I very go there.
+- **optionsEn:** I never go there. | I never eat there. | I go there.
 
 **A05 · response_choice**
 
-- **optionsEn:** I never eat there. | I never go there. | I very eat there.
+- **optionsEn:** I never eat there. | I never go there. | I eat there.
 
 **A06 · speak**
 

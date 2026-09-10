@@ -324,7 +324,7 @@
       "activityKey": "A05",
       "type": "response_choice",
       "instructionFa": "ضمیر درست را برای مایا انتخاب کن.",
-      "promptFa": "عکس مایا را می بینی. کدام جمله درست است؟",
+      "promptFa": "درباره مایا کدام جمله درست است؟",
       "config": {
         "optionsEn": [
           "She is Maya.",
@@ -382,6 +382,7 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "learnerExperienceDependencyRepairVersion": 1
   }
 }

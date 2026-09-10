@@ -1,4 +1,4 @@
-<!-- sourceHash: 9ac5b842405c91bbf0a7dd35ed8982e9358cc9cc185f89e4e7b41077c6f908a7 -->
+<!-- sourceHash: 813ebde70a95ad31b085b15fd3d046ae78d3d2804605089b0029182cbf58909a -->
 # English Audit — EN-A1-L-0079
 
 **Lesson:** The bus is at the end
@@ -53,7 +53,7 @@ Wait at the end.
 
 **A05 · response_choice**
 
-- **optionsEn:** Wait at the end. | The bus is at the end. | Wait at the book.
+- **optionsEn:** Wait at the end. | The bus is at the end. | Wait at home.
 
 **A06 · speak**
 

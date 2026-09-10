@@ -1,4 +1,4 @@
-<!-- sourceHash: 42bd43d23ca83d55439fef68aca53d6ce994ab22eae8dc44ee4d9affac6f1d61 -->
+<!-- sourceHash: fbfe014521e04d06fe48ded1fee177f71a5027fd0b8e84015223b4624e19af4b -->
 # English Audit — EN-A1-L-0069
 
 **Lesson:** A little room
@@ -12,7 +12,7 @@
 
 **T01 · ruby**
 
-What is this?
+What is this room like?
 
 **T02 · sara**
 
@@ -23,7 +23,7 @@ This is a little room.
 
 **T03 · ruby**
 
-And that one?
+And that room?
 
 **T04 · sara**
 

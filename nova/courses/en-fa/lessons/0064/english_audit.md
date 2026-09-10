@@ -1,4 +1,4 @@
-<!-- sourceHash: 9992c872339d4d815aaf163266f8042674fcac113ac79d00c2bb1bd648491bdf -->
+<!-- sourceHash: d23b08bec68e26684aea67858f5bc942fe9ff75dc172358014e64cc7924770fd -->
 # English Audit — EN-A1-L-0064
 
 **Lesson:** I use this cup
@@ -12,7 +12,7 @@
 
 **T01 · nora**
 
-And you?
+Which cup?
 
 **T02 · owen**
 
@@ -23,7 +23,7 @@ I use this cup.
 
 **T03 · nora**
 
-And now?
+And the bag?
 
 **T04 · owen**
 

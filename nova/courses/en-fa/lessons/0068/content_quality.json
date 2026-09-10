@@ -27,11 +27,11 @@
     "version": 1,
     "reviewerType": "model",
     "reviewedAt": "2026-09-10",
-    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0068; not an independent human or real-learner test.",
+    "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0068; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
-        "score": 5,
-        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+        "score": 4,
+        "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
       },
       "persianMeaningQuality": {
         "score": 5,
@@ -43,11 +43,11 @@
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+        "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+        "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
       },
       "difficultyFit": {
         "score": 4,
@@ -67,7 +67,7 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+        "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
       }
     },
     "learnerTested": false,
@@ -75,7 +75,8 @@
       "No independent human or real learner test has been performed.",
       "Only the bounded degree/amount sense of high is assessed.",
       "Audio prosody is not reviewed before text gates pass.",
-      "No independent human or real learner test has been performed after quality-v2 remediation."
+      "No independent human or real learner test has been performed after quality-v2 remediation.",
+      "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
     ],
     "resolvedFindings": [
       "high matches the committed greater-than-normal degree/amount sense.",
@@ -83,10 +84,12 @@
       "Cafe arc returns after six lessons with learner role rotated.",
       "No new grammar mastery is claimed.",
       "Quality-v2 remediation: T01: 'Say: The price is high.' -> 'And you?'.",
-      "Quality-v2 remediation: T03: 'Now say: This price is high.' -> 'And now?'."
+      "Quality-v2 remediation: T03: 'Now say: This price is high.' -> 'And now?'.",
+      "Product Quality v2 polish: T01: 'And you?' -> 'How is the price?'.",
+      "Product Quality v2 polish: T03: 'And now?' -> 'And this price?'."
     ],
     "lessonKey": "EN-A1-L-0068",
-    "sourceHash": "6f5ee83b2a1bfc44da7f03668bb8ac8c1ebb626e9aa97a75352a82b2fa4fad52",
+    "sourceHash": "8750a384113251dedb541a69818bd1969a136baf4fdbbc03c7f184811bc4e98b",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
     "qualityV2Remediation": {
       "version": 1,
@@ -96,8 +99,16 @@
         "T03: 'Now say: This price is high.' -> 'And now?'"
       ]
     },
+    "qualityV2Polish": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "T01: 'And you?' -> 'How is the price?'",
+        "T03: 'And now?' -> 'And this price?'"
+      ]
+    },
     "status": "PASS",
-    "average": 4.4,
+    "average": 4.3,
     "errors": []
   },
   "metrics": {
@@ -107,5 +118,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "6f5ee83b2a1bfc44da7f03668bb8ac8c1ebb626e9aa97a75352a82b2fa4fad52"
+  "sourceHash": "8750a384113251dedb541a69818bd1969a136baf4fdbbc03c7f184811bc4e98b"
 }

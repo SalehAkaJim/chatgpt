@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0064; not an independent human or real-learner test.",
+  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0064; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
-      "score": 5,
-      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+      "score": 4,
+      "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+      "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
     }
   },
   "learnerTested": false,
@@ -50,7 +50,8 @@
     "No independent human or real learner test has been performed.",
     "Only the selected service/use sense is assessed.",
     "Audio prosody is not reviewed before text gates pass.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
   ],
   "resolvedFindings": [
     "use matches the committed verb reference sense.",
@@ -59,10 +60,14 @@
     "No new grammar mastery is claimed.",
     "Quality-v2 remediation: T01: 'Say: I use this cup.' -> 'And you?'.",
     "Quality-v2 remediation: T03: 'Now say: I use this bag.' -> 'And now?'.",
-    "Quality-v2 remediation: A04 response_choice -> fill_blank."
+    "Quality-v2 remediation: A04 response_choice -> fill_blank.",
+    "Product Quality v2 polish: T01: 'And you?' -> 'Which cup?'.",
+    "Product Quality v2 polish: T03: 'And now?' -> 'And the bag?'.",
+    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i use this cup'.",
+    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i use this bag'."
   ],
   "lessonKey": "EN-A1-L-0064",
-  "sourceHash": "9992c872339d4d815aaf163266f8042674fcac113ac79d00c2bb1bd648491bdf",
+  "sourceHash": "d23b08bec68e26684aea67858f5bc942fe9ff75dc172358014e64cc7924770fd",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "qualityV2Remediation": {
     "version": 1,
@@ -71,6 +76,16 @@
       "T01: 'Say: I use this cup.' -> 'And you?'",
       "T03: 'Now say: I use this bag.' -> 'And now?'",
       "A04 response_choice -> fill_blank"
+    ]
+  },
+  "qualityV2Polish": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'And you?' -> 'Which cup?'",
+      "T03: 'And now?' -> 'And the bag?'",
+      "remove obsolete teacher-scaffolding usage fallback 'say i use this cup'",
+      "remove obsolete teacher-scaffolding usage fallback 'say i use this bag'"
     ]
   }
 }

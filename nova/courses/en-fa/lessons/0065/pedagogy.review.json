@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0065; not an independent human or real-learner test.",
+  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0065; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
-      "score": 5,
-      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+      "score": 4,
+      "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+      "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
     }
   },
   "learnerTested": false,
@@ -50,7 +50,8 @@
     "No independent human or real learner test has been performed.",
     "Review is limited to the identity sense of same.",
     "Audio prosody is not reviewed before text gates pass.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
   ],
   "resolvedFindings": [
     "same matches the committed identity sense.",
@@ -58,10 +59,13 @@
     "Library arc return is spaced and learner role is rotated.",
     "No new grammar mastery is claimed.",
     "Quality-v2 remediation: T01: 'Say: The same book.' -> 'And you?'.",
-    "Quality-v2 remediation: T03: 'Now say: This is the same book.' -> 'And this one?'."
+    "Quality-v2 remediation: T03: 'Now say: This is the same book.' -> 'And this one?'.",
+    "Product Quality v2 polish: T01: 'And you?' -> 'Which book?'.",
+    "Product Quality v2 polish: T03: 'And this one?' -> 'Is this one different?'.",
+    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say the same book'."
   ],
   "lessonKey": "EN-A1-L-0065",
-  "sourceHash": "3fdcc14c655c34a9fad3f87e29ca31f94c896407aea44a3d45075b03d4568b89",
+  "sourceHash": "afae17b43e36518c0a27d296e289fc2078ef7887505f873cd35e0c2d6450dfc5",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "qualityV2Remediation": {
     "version": 1,
@@ -69,6 +73,15 @@
     "changes": [
       "T01: 'Say: The same book.' -> 'And you?'",
       "T03: 'Now say: This is the same book.' -> 'And this one?'"
+    ]
+  },
+  "qualityV2Polish": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'And you?' -> 'Which book?'",
+      "T03: 'And this one?' -> 'Is this one different?'",
+      "remove obsolete teacher-scaffolding usage fallback 'say the same book'"
     ]
   }
 }

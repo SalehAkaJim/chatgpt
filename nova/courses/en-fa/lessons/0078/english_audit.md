@@ -1,4 +1,4 @@
-<!-- sourceHash: 6209be7abfa08c5ee1677966c78cf79695d50b091250bb254dd72f8568010627 -->
+<!-- sourceHash: ef18e4462ad5b4b7e22e9f16d4b4c01da45907941cfdae5185d977f04f720593 -->
 # English Audit — EN-A1-L-0078
 
 **Lesson:** Say it again
@@ -54,7 +54,7 @@ Try again.
 
 **A05 · response_choice**
 
-- **optionsEn:** Try again. | Say it again. | Try very.
+- **optionsEn:** Try again. | Say it again. | Try now.
 
 **A06 · speak**
 

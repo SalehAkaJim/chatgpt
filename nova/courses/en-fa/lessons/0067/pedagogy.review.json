@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0067; not an independent human or real-learner test.",
+  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0067; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
-      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+      "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
     },
     "persianMeaningQuality": {
       "score": 4,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+      "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
     },
     "difficultyFit": {
       "score": 4,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
     }
   },
   "learnerTested": false,
@@ -50,7 +50,8 @@
     "No independent human or real learner test has been performed.",
     "find has multiple common senses; only the committed encounter/come-upon sense is intended here.",
     "Audio prosody is not reviewed before text gates pass.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
   ],
   "resolvedFindings": [
     "The Lesson does not claim mastery of all senses of find.",
@@ -59,10 +60,15 @@
     "No new grammar mastery is claimed.",
     "Quality-v2 remediation: T01: 'Say: I find Iris here.' -> 'And you?'.",
     "Quality-v2 remediation: T03: 'Now say: I find Iris at home.' -> 'And now?'.",
-    "Quality-v2 remediation: A04 response_choice -> fill_blank."
+    "Quality-v2 remediation: A04 response_choice -> fill_blank.",
+    "Product Quality v2 polish: T01: 'And you?' -> 'Where do you find Iris?'.",
+    "Product Quality v2 polish: T03: 'And now?' -> 'And at home?'.",
+    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i find iris here'.",
+    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i find iris at'.",
+    "Product Quality v2 polish: add naturalized-prompt usage fallback 'Where do you find Iris?'."
   ],
   "lessonKey": "EN-A1-L-0067",
-  "sourceHash": "a1c0d8058a9d541057d81dbd031744df3016920c4e2fde5b42c0d5a03c7cf707",
+  "sourceHash": "4bd7206fe6d571005c0f3b4e0ddfa3c9e19e1c94eb67505ab18b25d6102598d9",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "qualityV2Remediation": {
     "version": 1,
@@ -71,6 +77,17 @@
       "T01: 'Say: I find Iris here.' -> 'And you?'",
       "T03: 'Now say: I find Iris at home.' -> 'And now?'",
       "A04 response_choice -> fill_blank"
+    ]
+  },
+  "qualityV2Polish": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'And you?' -> 'Where do you find Iris?'",
+      "T03: 'And now?' -> 'And at home?'",
+      "remove obsolete teacher-scaffolding usage fallback 'say i find iris here'",
+      "remove obsolete teacher-scaffolding usage fallback 'say i find iris at'",
+      "add naturalized-prompt usage fallback 'Where do you find Iris?'"
     ]
   }
 }

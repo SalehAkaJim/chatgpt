@@ -1,4 +1,4 @@
-<!-- sourceHash: 9b425bb6b35ecde75f37369870eb6583af5423aef72c7a4db5c0a342f781b8bb -->
+<!-- sourceHash: a0ac89c9fdc30cb055405ad63103a6c7fa520103467547080e1650f1c7f1852e -->
 # English Audit — EN-A1-L-0052
 
 **Lesson:** One year
@@ -12,7 +12,7 @@
 
 **T01 · nora**
 
-Say the time: one year.
+How long is the first plan?
 
 **T02 · owen**
 
@@ -23,7 +23,7 @@ One year.
 
 **T03 · nora**
 
-Now say two years.
+And the second plan?
 
 **T04 · owen**
 
@@ -53,7 +53,7 @@ Two years.
 
 **A05 · response_choice**
 
-- **optionsEn:** Two years. | One year. | Say the time: one year.
+- **optionsEn:** Two years. | One year. | Two rooms.
 
 **A06 · speak**
 

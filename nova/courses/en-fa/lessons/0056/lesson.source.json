@@ -25,12 +25,12 @@
     ],
     "supportLanguage": [
       {
-        "form": "Say: I never go there.",
-        "meaningFa": "بگو: من هرگز آنجا نمی‌روم."
+        "form": "Do you go there?",
+        "meaningFa": "آنجا می‌روی؟"
       },
       {
-        "form": "Now say: I never eat there.",
-        "meaningFa": "حالا بگو: من هرگز آنجا غذا نمی‌خورم."
+        "form": "Do you eat there?",
+        "meaningFa": "آنجا غذا می‌خوری؟"
       }
     ],
     "assessmentBoundary": "The Lesson introduces only the bounded A1 use of never shown here and does not claim broader sense mastery.",
@@ -72,15 +72,7 @@
       "reviewLexicalLemmas": [],
       "usageFallbacks": [
         {
-          "query": "say i never go there",
-          "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-        },
-        {
           "query": "i never go there",
-          "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-        },
-        {
-          "query": "say i never eat there",
           "rationale": "Explicit bounded target-collocation fallback for this authored turn."
         },
         {
@@ -113,8 +105,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "ava",
-      "textEn": "And you?",
-      "translationFa": "تو چطور؟",
+      "textEn": "Do you go there?",
+      "translationFa": "آنجا می‌روی؟",
       "audioRequired": true
     },
     {
@@ -133,8 +125,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "ava",
-      "textEn": "And now?",
-      "translationFa": "حالا چطور؟",
+      "textEn": "Do you eat there?",
+      "translationFa": "آنجا غذا می‌خوری؟",
       "audioRequired": true
     },
     {
@@ -252,14 +244,14 @@
         "optionsEn": [
           "I never go there.",
           "I never eat there.",
-          "I very go there."
+          "I go there."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش دوم است.",
-            "«I very go there.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+            "«I go there.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "I never go there."
         }
@@ -278,14 +270,14 @@
         "optionsEn": [
           "I never eat there.",
           "I never go there.",
-          "I very eat there."
+          "I eat there."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "«I very eat there.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+            "«I eat there.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "من هرگز آنجا غذا نمی‌خورم."
         }
@@ -333,6 +325,8 @@
     "dialogueRuntime": "guided_exchange",
     "qualityStage": "model_reviewed_for_testing",
     "qualityV2Remediated": true,
-    "qualityV2RemediationVersion": 1
+    "qualityV2RemediationVersion": 1,
+    "qualityV2Polished": true,
+    "qualityV2PolishVersion": 2
   }
 }

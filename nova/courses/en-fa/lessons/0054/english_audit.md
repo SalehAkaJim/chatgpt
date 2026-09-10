@@ -1,4 +1,4 @@
-<!-- sourceHash: e3cb5814fda7cd2b1e7c344309ef4709877528b6c95e747412f716a30ca86c87 -->
+<!-- sourceHash: c1e7255ea8809de3f2ac18cae346f0872e22e5af1c3c12192e1f7cbdb331dfe5 -->
 # English Audit — EN-A1-L-0054
 
 **Lesson:** Take action
@@ -12,7 +12,7 @@
 
 **T01 · alex**
 
-And you?
+What should we do?
 
 **T02 · maya**
 
@@ -23,7 +23,7 @@ Take action.
 
 **T03 · alex**
 
-And now?
+And you?
 
 **T04 · maya**
 
@@ -48,11 +48,11 @@ I take action.
 
 **A04 · response_choice**
 
-- **optionsEn:** Take action. | I take action. | read action.
+- **optionsEn:** Take action. | I take action. | Read the book.
 
 **A05 · response_choice**
 
-- **optionsEn:** I take action. | Take action. | I read action.
+- **optionsEn:** I take action. | Take action. | I read the book.
 
 **A06 · speak**
 

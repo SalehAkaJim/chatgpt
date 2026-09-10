@@ -1,4 +1,4 @@
-<!-- sourceHash: 886d07633260579b522704d12fada79bb086af93dc08ab0048c93e78a9492fe7 -->
+<!-- sourceHash: 865bbd5f9fa1a99cf08b82442309e8161eac121e7bcc063aa7ce097e83769ee9 -->
 # English Audit — EN-A1-L-0055
 
 **Lesson:** Many books
@@ -12,7 +12,7 @@
 
 **T01 · iris**
 
-Which person?
+What do you see?
 
 **T02 · nina**
 
@@ -23,7 +23,7 @@ Many books.
 
 **T03 · iris**
 
-And this person?
+And on the table?
 
 **T04 · nina**
 
@@ -53,7 +53,7 @@ Many cups.
 
 **A05 · response_choice**
 
-- **optionsEn:** Many cups. | Many books. | new cups.
+- **optionsEn:** Many cups. | Many books. | Two cups.
 
 **A06 · speak**
 

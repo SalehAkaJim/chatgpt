@@ -1,4 +1,4 @@
-<!-- sourceHash: 3b765295bc6f226686e2e3676be683bf22196e9c8ef23ef92eae2a1b7acdf8c2 -->
+<!-- sourceHash: 908138aa2735605f2c130869bdb893463b61da2c55345766711f0d12d3d1e123 -->
 # English Audit — EN-A1-L-0058
 
 **Lesson:** A great big room
@@ -12,7 +12,7 @@
 
 **T01 · owen**
 
-And you?
+What do you see?
 
 **T02 · nora**
 
@@ -23,7 +23,7 @@ A great big room.
 
 **T03 · owen**
 
-And now?
+And the bag?
 
 **T04 · nora**
 

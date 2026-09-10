@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0067",
   "sortOrder": 67,
   "levelKey": "A1",
-  "lessonSourceHash": "a1c0d8058a9d541057d81dbd031744df3016920c4e2fde5b42c0d5a03c7cf707",
+  "lessonSourceHash": "4bd7206fe6d571005c0f3b4e0ddfa3c9e19e1c94eb67505ab18b25d6102598d9",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -63,6 +63,25 @@
       "fallbackMatch": "exact"
     },
     {
+      "query": "do you find iris",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0067"
+      ],
+      "lexicalLemmas": [
+        "find"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "where do you find iris",
+      "examples": [],
+      "fallback": {
+        "query": "Where do you find Iris",
+        "rationale": "Exact naturalized character prompt retained as bounded usage evidence after Product Quality v2 polish."
+      },
+      "fallbackMatch": "compatible_phrase"
+    },
+    {
       "query": "i find iris at",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -85,5 +104,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "ce28d88838fb9f485bd3a48b290674c32f81e373fb1ae4cd0e5e556b5f0a0d4c"
+  "planHash": "f119076ecf375962fb36a3ceac6e828d58b98ef896d80d76b373ae71442f8b47"
 }

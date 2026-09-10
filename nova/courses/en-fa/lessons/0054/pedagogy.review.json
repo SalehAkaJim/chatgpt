@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0054; not an independent human or real-learner test.",
+  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0054; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
-      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+      "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
     },
     "persianMeaningQuality": {
       "score": 4,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+      "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
     }
   },
   "learnerTested": false,
@@ -50,7 +50,8 @@
     "No independent human or real learner test has been performed.",
     "Review is limited to the bounded A1 outcome.",
     "Final audio prosody remains unreviewed until text gates pass.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
   ],
   "resolvedFindings": [
     "The selected take use is consistent with the committed reference sense for this Lesson.",
@@ -62,10 +63,18 @@
     "Quality-v2 remediation: A01: 'یک معنی نامربوط' -> 'خواندن'.",
     "Quality-v2 remediation: A01: 'نام یک شخص' -> 'گفتن'.",
     "Quality-v2 remediation: A04: 'People like coffee.' -> 'read action.'.",
-    "Quality-v2 remediation: A05: 'People like coffee.' -> 'I read action.'."
+    "Quality-v2 remediation: A05: 'People like coffee.' -> 'I read action.'.",
+    "Product Quality v2 polish: T01: 'And you?' -> 'What should we do?'.",
+    "Product Quality v2 polish: T03: 'And now?' -> 'And you?'.",
+    "Product Quality v2 polish: A04: 'read action.' -> 'Read the book.'.",
+    "Product Quality v2 polish: A05: 'I read action.' -> 'I read the book.'.",
+    "Product Quality v2 polish: rewrite scenario as a real communicative scene.",
+    "Product Quality v2 polish: rewrite story beat as a real interaction.",
+    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say take action'.",
+    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i take action'."
   ],
   "lessonKey": "EN-A1-L-0054",
-  "sourceHash": "e3cb5814fda7cd2b1e7c344309ef4709877528b6c95e747412f716a30ca86c87",
+  "sourceHash": "c1e7255ea8809de3f2ac18cae346f0872e22e5af1c3c12192e1f7cbdb331dfe5",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "qualityV2Remediation": {
     "version": 1,
@@ -77,6 +86,20 @@
       "A01: 'نام یک شخص' -> 'گفتن'",
       "A04: 'People like coffee.' -> 'read action.'",
       "A05: 'People like coffee.' -> 'I read action.'"
+    ]
+  },
+  "qualityV2Polish": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'And you?' -> 'What should we do?'",
+      "T03: 'And now?' -> 'And you?'",
+      "A04: 'read action.' -> 'Read the book.'",
+      "A05: 'I read action.' -> 'I read the book.'",
+      "rewrite scenario as a real communicative scene",
+      "rewrite story beat as a real interaction",
+      "remove obsolete teacher-scaffolding usage fallback 'say take action'",
+      "remove obsolete teacher-scaffolding usage fallback 'say i take action'"
     ]
   }
 }

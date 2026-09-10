@@ -1,4 +1,4 @@
-<!-- sourceHash: 131f1c5d905ee5d51101b6b7b26780e29019cacc90febfe860e303cd1f83421c -->
+<!-- sourceHash: 570737b426e00cac171d77152dbe064116f957d74cc3ef35a447222d364158fd -->
 # English Audit — EN-A1-L-0081
 
 **Lesson:** I feel good
@@ -54,7 +54,7 @@ I feel tired.
 
 **A05 · response_choice**
 
-- **optionsEn:** I feel tired. | I feel good. | I read tired.
+- **optionsEn:** I feel tired. | I feel good. | I feel happy.
 
 **A06 · speak**
 

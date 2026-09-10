@@ -25,12 +25,12 @@
     ],
     "supportLanguage": [
       {
-        "form": "Say: Life here is good.",
-        "meaningFa": "بگو: زندگی اینجا خوب است."
+        "form": "How is it here?",
+        "meaningFa": "اینجا چطور است؟"
       },
       {
-        "form": "Now say: My life is good.",
-        "meaningFa": "حالا بگو: زندگی من خوب است."
+        "form": "And for you?",
+        "meaningFa": "و برای تو؟"
       }
     ],
     "assessmentBoundary": "The Lesson introduces only the bounded A1 use of life shown here and does not claim broader sense mastery.",
@@ -72,15 +72,7 @@
       "reviewLexicalLemmas": [],
       "usageFallbacks": [
         {
-          "query": "say life here is",
-          "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-        },
-        {
           "query": "life here is",
-          "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-        },
-        {
-          "query": "say my life is good",
           "rationale": "Explicit bounded target-collocation fallback for this authored turn."
         },
         {
@@ -113,8 +105,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "ruby",
-      "textEn": "And you?",
-      "translationFa": "تو چطور؟",
+      "textEn": "How is it here?",
+      "translationFa": "اینجا چطور است؟",
       "audioRequired": true
     },
     {
@@ -133,8 +125,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "ruby",
-      "textEn": "And now?",
-      "translationFa": "حالا چطور؟",
+      "textEn": "And for you?",
+      "translationFa": "و برای تو؟",
       "audioRequired": true
     },
     {
@@ -284,14 +276,14 @@
         "optionsEn": [
           "My life is good.",
           "Life here is good.",
-          "your life is good."
+          "Your life is good."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "«your life is good.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+            "«Your life is good.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "زندگی من خوب است."
         }
@@ -339,6 +331,8 @@
     "dialogueRuntime": "guided_exchange",
     "qualityStage": "model_reviewed_for_testing",
     "qualityV2Remediated": true,
-    "qualityV2RemediationVersion": 1
+    "qualityV2RemediationVersion": 1,
+    "qualityV2Polished": true,
+    "qualityV2PolishVersion": 2
   }
 }

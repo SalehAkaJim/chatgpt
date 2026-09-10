@@ -1,4 +1,4 @@
-<!-- sourceHash: 447730ed992836480a35e171df9fc55c95df98bb03fd4860d7725990385dbf20 -->
+<!-- sourceHash: ae6cf2f80411b4395a5220cc205fa0a5df5203a0029b0a58fa7006b11f7b9e0f -->
 # English Audit — EN-A1-L-0043
 
 **Lesson:** Read, then help
@@ -56,7 +56,7 @@ Read, then help.
 
 **A05 · response_choice**
 
-- **optionsEn:** Read, then help. | Then I help. | Read, very help.
+- **optionsEn:** Read, then help. | Then I help. | Read, then go.
 
 **A06 · speak**
 

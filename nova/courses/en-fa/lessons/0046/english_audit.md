@@ -1,4 +1,4 @@
-<!-- sourceHash: 417e4786088ee990eebc1f3304e131d246b37c6870313d1ce4e07ef909bb04a0 -->
+<!-- sourceHash: 08c3f3f5b212523914a26396d878630fcd4afaa2c5476ac4504f4d8bd947af32 -->
 # English Audit — EN-A1-L-0046
 
 **Lesson:** She says hello
@@ -54,7 +54,7 @@ He says hello too.
 
 **A05 · response_choice**
 
-- **optionsEn:** He says hello too. | She says hello. | she says hello too.
+- **optionsEn:** He says hello too. | She says hello. | She says hello too.
 
 **A06 · speak**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 94b8f516e3513a6544d2fa5fb39e08b747e75d3ce6822ec49b64a77f57903dcd -->
+<!-- sourceHash: 35289ae2e3d79bdb335873245d11167728e61658dfc0b5f8c4ddd091557948e9 -->
 # English Audit — EN-A1-L-0084
 
 **Lesson:** Put it here
@@ -54,7 +54,7 @@ Put the bag there.
 
 **A05 · response_choice**
 
-- **optionsEn:** Put the bag there. | Put it here. | read the bag there.
+- **optionsEn:** Put the bag there. | Put it here. | Put the book there.
 
 **A06 · speak**
 

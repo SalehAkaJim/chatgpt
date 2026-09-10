@@ -1,4 +1,4 @@
-<!-- sourceHash: c5d5c5f14e145fb25e3e1bafa8f3d7d4400147d1fa5a6d7e124610b21551b03e -->
+<!-- sourceHash: d69f5df0be5afcb0550e004869b6621fc01667e440b3be412fa210efb63aef78 -->
 # English Audit — EN-A1-L-0061
 
 **Lesson:** My home
@@ -12,7 +12,7 @@
 
 **T01 · nina**
 
-And you?
+Which one?
 
 **T02 · iris**
 
@@ -23,7 +23,7 @@ My home.
 
 **T03 · nina**
 
-And this one?
+And this place?
 
 **T04 · iris**
 

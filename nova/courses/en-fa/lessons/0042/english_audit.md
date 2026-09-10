@@ -1,4 +1,4 @@
-<!-- sourceHash: e56e49b6513a0d4377bfd990936a877f764b621c1bbd2849078a0e737e3390c7 -->
+<!-- sourceHash: 7a7bff7d050115cc0c31c02cbbfbd9266bf6c589f99c9930a14bfe8d7d6f4597 -->
 # English Audit — EN-A1-L-0042
 
 **Lesson:** I think there is a book
@@ -56,7 +56,7 @@ I think there is a pen.
 
 **A05 · response_choice**
 
-- **optionsEn:** I think there is a pen. | I think there is a book. | I read there is a pen.
+- **optionsEn:** I think there is a pen. | I think there is a book. | I know there is a pen.
 
 **A06 · speak**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 25c618807da1ae8934dfe7f72db1516504e9313a63e73356aa9d78c87733fd44 -->
+<!-- sourceHash: 17e695744c6f650a14e720dec779f1a661a491d30840d2becd95d68e5561d441 -->
 # English Audit — EN-A1-L-0063
 
 **Lesson:** A happy look
@@ -12,7 +12,7 @@
 
 **T01 · sara**
 
-And you?
+What do you see?
 
 **T02 · ruby**
 

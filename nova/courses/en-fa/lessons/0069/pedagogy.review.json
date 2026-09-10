@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0069; not an independent human or real-learner test.",
+  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0069; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
-      "score": 5,
-      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+      "score": 4,
+      "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+      "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
     }
   },
   "learnerTested": false,
@@ -50,7 +50,8 @@
     "No independent human or real learner test has been performed.",
     "The review is limited to the bounded A1 outcome and does not claim broad mastery of the target word or grammar.",
     "Final generated audio prosody is not evaluated in this text-stage review.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
   ],
   "resolvedFindings": [
     "English target usage is contextually plausible for the authored scene.",
@@ -59,10 +60,12 @@
     "Story-arc spacing and learner-role variation were checked against the recent canonical sequence.",
     "Quality-v2 remediation: T01: 'Say: This is a little room.' -> 'What is this?'.",
     "Quality-v2 remediation: T03: 'Now say: That is a little room.' -> 'And that one?'.",
-    "Quality-v2 remediation: A04 response_choice -> sentence_order."
+    "Quality-v2 remediation: A04 response_choice -> sentence_order.",
+    "Product Quality v2 polish: T01: 'What is this?' -> 'What is this room like?'.",
+    "Product Quality v2 polish: T03: 'And that one?' -> 'And that room?'."
   ],
   "lessonKey": "EN-A1-L-0069",
-  "sourceHash": "42bd43d23ca83d55439fef68aca53d6ce994ab22eae8dc44ee4d9affac6f1d61",
+  "sourceHash": "fbfe014521e04d06fe48ded1fee177f71a5027fd0b8e84015223b4624e19af4b",
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "qualityV2Remediation": {
     "version": 1,
@@ -71,6 +74,14 @@
       "T01: 'Say: This is a little room.' -> 'What is this?'",
       "T03: 'Now say: That is a little room.' -> 'And that one?'",
       "A04 response_choice -> sentence_order"
+    ]
+  },
+  "qualityV2Polish": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'What is this?' -> 'What is this room like?'",
+      "T03: 'And that one?' -> 'And that room?'"
     ]
   }
 }

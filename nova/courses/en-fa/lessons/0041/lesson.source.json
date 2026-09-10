@@ -87,6 +87,10 @@
         {
           "query": "do you make",
           "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you make"
+        },
+        {
+          "query": "The coffee is here. What do you make",
+          "rationale": "Exact naturalized character prompt retained as bounded usage evidence after Product Quality v2 polish."
         }
       ]
     },
@@ -310,14 +314,14 @@
         "optionsEn": [
           "I make tea.",
           "I make coffee.",
-          "I read tea."
+          "I like tea."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "«I read tea.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+            "«I like tea.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "چای درست می‌کنم."
         }
@@ -365,6 +369,8 @@
     "dialogueRuntime": "guided_exchange",
     "qualityStage": "model_reviewed_for_testing",
     "qualityV2Remediated": true,
-    "qualityV2RemediationVersion": 1
+    "qualityV2RemediationVersion": 1,
+    "qualityV2Polished": true,
+    "qualityV2PolishVersion": 2
   }
 }

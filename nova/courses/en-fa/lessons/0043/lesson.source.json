@@ -314,14 +314,14 @@
         "optionsEn": [
           "Read, then help.",
           "Then I help.",
-          "Read, very help."
+          "Read, then go."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "«Read, very help.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+            "«Read, then go.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "بخوان، بعد کمک کن."
         }
@@ -369,6 +369,8 @@
     "dialogueRuntime": "guided_exchange",
     "qualityStage": "model_reviewed_for_testing",
     "qualityV2Remediated": true,
-    "qualityV2RemediationVersion": 1
+    "qualityV2RemediationVersion": 1,
+    "qualityV2Polished": true,
+    "qualityV2PolishVersion": 2
   }
 }

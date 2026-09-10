@@ -1,4 +1,4 @@
-<!-- sourceHash: 719f1b22cf7dd6ed91222fbbd0d881d0dcf7e1cd03a9584d3bc73a9840d8fcee -->
+<!-- sourceHash: 3c692c73cc31871c456a24e420e005ff07b95f83dc2582585001e6a6c2683467 -->
 # English Audit — EN-A1-L-0071
 
 **Lesson:** My own book
@@ -12,7 +12,7 @@
 
 **T01 · nora**
 
-What is this?
+Whose book is this?
 
 **T02 · owen**
 
@@ -23,7 +23,7 @@ This is my own book.
 
 **T03 · nora**
 
-And that one?
+And that book?
 
 **T04 · owen**
 

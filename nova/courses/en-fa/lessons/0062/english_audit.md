@@ -1,4 +1,4 @@
-<!-- sourceHash: b433bdc0eb798d8d2d0767b21067e9070fbd18797bf0458f97b33c5a1e80956b -->
+<!-- sourceHash: b0a4905b71918dd2f7bbb65098186e425321f77b2af2d347456734c3b59d421e -->
 # English Audit — EN-A1-L-0062
 
 **Lesson:** A long day
@@ -12,7 +12,7 @@
 
 **T01 · ben**
 
-And you?
+How was your day?
 
 **T02 · ava**
 
@@ -23,7 +23,7 @@ A long day.
 
 **T03 · ben**
 
-And now?
+And today?
 
 **T04 · ava**
 

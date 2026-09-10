@@ -1,4 +1,4 @@
-<!-- sourceHash: 7bcec60e3feb829670060cb04cef77aeb9f427e3ae557a3cdac929dab7c6fb78 -->
+<!-- sourceHash: 53e9378691d64f98e624a0bce3acb0b007f5082c9fcc29ae1ebdf53e92b4b882 -->
 # English Audit — EN-A1-L-0080
 
 **Lesson:** Show me the photo
@@ -52,7 +52,7 @@ Show me the map.
 
 **A05 · response_choice**
 
-- **optionsEn:** Show me the map. | Show me the photo. | read me the map.
+- **optionsEn:** Show me the map. | Show me the photo. | Read the map.
 
 **A06 · speak**
 

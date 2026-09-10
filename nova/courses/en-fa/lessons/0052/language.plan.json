@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0052",
   "sortOrder": 52,
   "levelKey": "A1",
-  "lessonSourceHash": "9b425bb6b35ecde75f37369870eb6583af5423aef72c7a4db5c0a342f781b8bb",
+  "lessonSourceHash": "a0ac89c9fdc30cb055405ad63103a6c7fa520103467547080e1650f1c7f1852e",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -61,29 +61,10 @@
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
       },
       "fallbackMatch": "exact"
-    },
-    {
-      "query": "time one year",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0052"
-      ],
-      "lexicalLemmas": [
-        "year"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "time one year",
-      "examples": [],
-      "fallback": {
-        "query": "time one year",
-        "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      },
-      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "3bec8574b4286aa1d5ea5da5a5bc025344ccb91f649d740922bd50e5900b4529"
+  "planHash": "2d13e3a06fb885cce182398f50ec405dd65a7b06f55eae58200c9606a9582c69"
 }

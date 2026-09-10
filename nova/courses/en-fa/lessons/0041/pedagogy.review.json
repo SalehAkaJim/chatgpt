@@ -1,14 +1,14 @@
 {
   "version": 1,
   "lessonKey": "EN-A1-L-0041",
-  "sourceHash": "a0d64c80e8251fe3c1492f4a30f9fb3f8b4c03a744e787e103ba4ed7ac52b44d",
+  "sourceHash": "3a078201542ad648254f82dc52d4d997142f67e301cd048e3f43430670b238bd",
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0041; not an independent human or real-learner test.",
+  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0041; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
-      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
+      "evidence": "Character prompts and English distractors were re-read as complete learner-facing utterances; teacher directives and known ungrammatical generated distractors were removed."
     },
     "persianMeaningQuality": {
       "score": 4,
@@ -20,11 +20,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
+      "evidence": "Wrong English options are grammatical/natural alternatives that differ on meaning, action, referent, quantity, polarity or context instead of using broken substitutions."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
     },
     "difficultyFit": {
       "score": 5,
@@ -44,7 +44,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
     }
   },
   "learnerTested": false,
@@ -52,7 +52,8 @@
     "No independent human or real learner test has been performed.",
     "Review is limited to the bounded A1 outcome.",
     "Final audio prosody remains unreviewed until text gates pass.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
   ],
   "resolvedFindings": [
     "English target usage is contextually plausible.",
@@ -61,7 +62,9 @@
     "Character and learner-role constraints were preserved.",
     "Quality-v2 remediation: A01: 'یک معنی نامربوط' -> 'خواندن'.",
     "Quality-v2 remediation: A01: 'نام یک شخص' -> 'گفتن'.",
-    "Quality-v2 remediation: A05: 'People like coffee.' -> 'I read tea.'."
+    "Quality-v2 remediation: A05: 'People like coffee.' -> 'I read tea.'.",
+    "Product Quality v2 polish: A05: 'I read tea.' -> 'I like tea.'.",
+    "Product Quality v2 polish: add naturalized-prompt usage fallback 'The coffee is here. What do you make?'."
   ],
   "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
   "qualityV2Remediation": {
@@ -71,6 +74,14 @@
       "A01: 'یک معنی نامربوط' -> 'خواندن'",
       "A01: 'نام یک شخص' -> 'گفتن'",
       "A05: 'People like coffee.' -> 'I read tea.'"
+    ]
+  },
+  "qualityV2Polish": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "A05: 'I read tea.' -> 'I like tea.'",
+      "add naturalized-prompt usage fallback 'The coffee is here. What do you make?'"
     ]
   }
 }

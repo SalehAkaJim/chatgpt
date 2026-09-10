@@ -25,12 +25,12 @@
     ],
     "supportLanguage": [
       {
-        "form": "Say: I use this cup.",
-        "meaningFa": "بگو: از این فنجان استفاده می‌کنم."
+        "form": "Which cup?",
+        "meaningFa": "کدام فنجان؟"
       },
       {
-        "form": "Now say: I use this bag.",
-        "meaningFa": "حالا بگو: از این کیف استفاده می‌کنم."
+        "form": "And the bag?",
+        "meaningFa": "و کیف؟"
       }
     ],
     "assessmentBoundary": "The Lesson introduces only the bounded A1 service/use sense shown here.",
@@ -76,16 +76,8 @@
           "rationale": "Exact learner target collocation for the selected service sense."
         },
         {
-          "query": "say i use this cup",
-          "rationale": "Exact turn-derived prompt collocation for the first model."
-        },
-        {
           "query": "i use this bag",
           "rationale": "Changed-object learner target collocation preserving the same sense."
-        },
-        {
-          "query": "say i use this bag",
-          "rationale": "Exact turn-derived prompt collocation for the changed object."
         }
       ],
       "noNewGrammarReason": "Lexical-focus Lesson: use is practiced with familiar SVO language and no new grammar is claimed."
@@ -113,8 +105,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "nora",
-      "textEn": "And you?",
-      "translationFa": "تو چطور؟",
+      "textEn": "Which cup?",
+      "translationFa": "کدام فنجان؟",
       "audioRequired": true
     },
     {
@@ -133,8 +125,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "nora",
-      "textEn": "And now?",
-      "translationFa": "حالا چطور؟",
+      "textEn": "And the bag?",
+      "translationFa": "و کیف؟",
       "audioRequired": true
     },
     {
@@ -332,6 +324,8 @@
     "dialogueRuntime": "guided_exchange",
     "qualityStage": "model_reviewed_for_testing",
     "qualityV2Remediated": true,
-    "qualityV2RemediationVersion": 1
+    "qualityV2RemediationVersion": 1,
+    "qualityV2Polished": true,
+    "qualityV2PolishVersion": 2
   }
 }

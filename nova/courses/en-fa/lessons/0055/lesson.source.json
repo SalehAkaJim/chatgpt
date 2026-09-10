@@ -10,7 +10,7 @@
   "descriptionFa": "با many هدف کوتاه این درس را تمرین کن.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0055",
   "outcomeFa": "many را در یک موقعیت کوتاه و طبیعی به کار ببری.",
-  "scenarioFa": "آیریس به چند قفسه اشاره می‌کند و نینا many را با اسم‌های جمع تمرین می‌کند.",
+  "scenarioFa": "آیریس و نینا در مرکز محله به قفسه کتاب‌ها و فنجان‌های روی میز نگاه می‌کنند و مقدار زیاد آنها را توصیف می‌کنند.",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0054"
   ],
@@ -25,12 +25,12 @@
     ],
     "supportLanguage": [
       {
-        "form": "Say: Many books.",
-        "meaningFa": "بگو: کتاب‌های زیاد."
+        "form": "What do you see?",
+        "meaningFa": "چه می‌بینی؟"
       },
       {
-        "form": "Now say: Many cups.",
-        "meaningFa": "حالا بگو: فنجان‌های زیاد."
+        "form": "And on the table?",
+        "meaningFa": "و روی میز؟"
       }
     ],
     "assessmentBoundary": "The Lesson introduces only the bounded A1 use of many shown here and does not claim broader sense mastery.",
@@ -52,7 +52,7 @@
         "EN-A1-L-0049"
       ],
       "settingFa": "مرکز محله، کنار قفسه‌ها",
-      "storyBeatFa": "آیریس به چند قفسه اشاره می‌کند و نینا many را با اسم‌های جمع تمرین می‌کند.",
+      "storyBeatFa": "آیریس درباره چیزهایی که می‌بینند می‌پرسد و نینا many را با books و cups به کار می‌برد.",
       "continuesLessonKey": "EN-A1-L-0049"
     },
     "reviewLinks": [
@@ -72,15 +72,7 @@
       "reviewLexicalLemmas": [],
       "usageFallbacks": [
         {
-          "query": "say many books",
-          "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-        },
-        {
           "query": "many books",
-          "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-        },
-        {
-          "query": "now say many cups",
           "rationale": "Explicit bounded target-collocation fallback for this authored turn."
         },
         {
@@ -113,8 +105,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "iris",
-      "textEn": "Which person?",
-      "translationFa": "کدام شخص؟",
+      "textEn": "What do you see?",
+      "translationFa": "چه می‌بینی؟",
       "audioRequired": true
     },
     {
@@ -133,8 +125,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "iris",
-      "textEn": "And this person?",
-      "translationFa": "و این شخص؟",
+      "textEn": "And on the table?",
+      "translationFa": "و روی میز؟",
       "audioRequired": true
     },
     {
@@ -277,14 +269,14 @@
         "optionsEn": [
           "Many cups.",
           "Many books.",
-          "new cups."
+          "Two cups."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "«new cups.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+            "«Two cups.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "فنجان‌های زیاد."
         }
@@ -332,6 +324,8 @@
     "dialogueRuntime": "guided_exchange",
     "qualityStage": "model_reviewed_for_testing",
     "qualityV2Remediated": true,
-    "qualityV2RemediationVersion": 1
+    "qualityV2RemediationVersion": 1,
+    "qualityV2Polished": true,
+    "qualityV2PolishVersion": 2
   }
 }

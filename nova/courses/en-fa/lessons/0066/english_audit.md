@@ -1,4 +1,4 @@
-<!-- sourceHash: bd6965cbe455e65041cc48844e6512c3eb21faa24e3134ab795fdf5485d6a042 -->
+<!-- sourceHash: 018c8e7d94479273ddbac1adc030c40a5eab64b183c13de5a9062981b457ee48 -->
 # English Audit — EN-A1-L-0066
 
 **Lesson:** I always read
@@ -12,7 +12,7 @@
 
 **T01 · alex**
 
-And you?
+Do you read?
 
 **T02 · maya**
 
@@ -23,7 +23,7 @@ I always read.
 
 **T03 · alex**
 
-And now?
+Do you read here?
 
 **T04 · maya**
 

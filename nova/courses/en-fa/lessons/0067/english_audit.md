@@ -1,4 +1,4 @@
-<!-- sourceHash: a1c0d8058a9d541057d81dbd031744df3016920c4e2fde5b42c0d5a03c7cf707 -->
+<!-- sourceHash: 4bd7206fe6d571005c0f3b4e0ddfa3c9e19e1c94eb67505ab18b25d6102598d9 -->
 # English Audit — EN-A1-L-0067
 
 **Lesson:** I find Iris here
@@ -12,7 +12,7 @@
 
 **T01 · iris**
 
-And you?
+Where do you find Iris?
 
 **T02 · nina**
 
@@ -23,7 +23,7 @@ I find Iris here.
 
 **T03 · iris**
 
-And now?
+And at home?
 
 **T04 · nina**
 

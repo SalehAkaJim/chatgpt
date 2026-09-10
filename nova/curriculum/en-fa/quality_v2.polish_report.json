@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "status": "PASS",
   "changedLessons": [
     41,
@@ -37,16 +37,19 @@
   ],
   "changes": {
     "41": [
-      "A05: 'I read tea.' -> 'I like tea.'"
+      "A05: 'I read tea.' -> 'I like tea.'",
+      "add naturalized-prompt usage fallback 'The coffee is here. What do you make?'"
     ],
     "42": [
-      "A05: 'I read there is a pen.' -> 'I know there is a pen.'"
+      "A05: 'I read there is a pen.' -> 'I know there is a pen.'",
+      "add naturalized-prompt usage fallback 'What do you think?'"
     ],
     "43": [
       "A05: 'Read, very help.' -> 'Read, then go.'"
     ],
     "46": [
-      "A05: 'she says hello too.' -> 'She says hello too.'"
+      "A05: 'she says hello too.' -> 'She says hello too.'",
+      "add naturalized-prompt usage fallback 'What does Maya say?'"
     ],
     "47": [
       "A05: 'this way is good too.' -> 'This way is good too.'"
@@ -147,7 +150,8 @@
       "T01: 'And you?' -> 'Where do you find Iris?'",
       "T03: 'And now?' -> 'And at home?'",
       "remove obsolete teacher-scaffolding usage fallback 'say i find iris here'",
-      "remove obsolete teacher-scaffolding usage fallback 'say i find iris at'"
+      "remove obsolete teacher-scaffolding usage fallback 'say i find iris at'",
+      "add naturalized-prompt usage fallback 'Where do you find Iris?'"
     ],
     "68": [
       "T01: 'And you?' -> 'How is the price?'",
