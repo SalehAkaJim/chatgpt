@@ -243,15 +243,15 @@
       "config": {
         "optionsEn": [
           "This coffee is bad.",
-          "This coffee is open.",
-          "This coffee is here yet."
+          "This coffee is good.",
+          "This coffee is new."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است.",
-            "open برای این معنی نیست.",
-            "این جمله طبیعی نیست."
+            "درست است؛ bad کیفیت نامطلوب را می‌گوید.",
+            "good معنی برعکس دارد و می‌گوید قهوه خوب است.",
+            "new درباره جدید بودن قهوه است، نه کیفیت آن."
           ],
           "correctFa": "This coffee is bad."
         }
@@ -269,15 +269,15 @@
       "config": {
         "optionsEn": [
           "The tea is bad too.",
-          "The tea is a job.",
-          "The tea means this."
+          "The tea is good too.",
+          "The tea is here too."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است.",
-            "این جمله بی‌ربط است.",
-            "این معنی هدف نیست."
+            "درست است؛ همان کیفیت نامطلوب را برای چای هم بیان می‌کند.",
+            "good می‌گوید چای خوب است و با bad فرق دارد.",
+            "here فقط حضور چای را می‌گوید و درباره کیفیت آن نیست."
           ],
           "correctFa": "چای هم بد است."
         }
@@ -323,6 +323,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

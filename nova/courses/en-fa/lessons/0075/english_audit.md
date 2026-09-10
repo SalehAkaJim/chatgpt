@@ -1,4 +1,4 @@
-<!-- sourceHash: fc54ab0f47da44a3357bda8ea8ef7623b90a008d85bd96a4b0a892d4a18a6457 -->
+<!-- sourceHash: a3eed43be39e2f62c74cfc188699f2db9c9eec8164ad3e438c00c9bd97c5ada7 -->
 # English Audit — EN-A1-L-0075
 
 **Lesson:** A good place
@@ -46,9 +46,11 @@ That is a good place.
 
 - **options:** اینجا جای خوبی است. | آنجا هم جای خوبی است. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** This is a good place. | That is a good place. | This is my house.
+- **answerEn:** This is a good place.
+- **tokensEn:** is | a | good | place. | This
+- **answerTokensEn:** This | is | a | good | place.
 
 **A05 · response_choice**
 

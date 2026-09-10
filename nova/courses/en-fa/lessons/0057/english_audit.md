@@ -1,4 +1,4 @@
-<!-- sourceHash: e0eb29dccf1d7b3b68edd8efb60bfe076a5b2b27ec0d8db9a1a091a6b610cc59 -->
+<!-- sourceHash: c0cee85171bc8e0a1fc9dc3b499451ee17d33087b4c780e2989f736deace2be2 -->
 # English Audit — EN-A1-L-0057
 
 **Lesson:** Life here
@@ -12,7 +12,7 @@
 
 **T01 · ruby**
 
-Say: Life here is good.
+And you?
 
 **T02 · sara**
 
@@ -23,7 +23,7 @@ Life here is good.
 
 **T03 · ruby**
 
-Now say: My life is good.
+And now?
 
 **T04 · sara**
 
@@ -37,7 +37,7 @@ My life is good.
 **A01 · response_choice**
 
 - **English prompt:** Life here is good.
-- **options:** زندگی | یک معنی نامربوط | نام یک شخص
+- **options:** زندگی | کتاب | اتاق
 
 **A02 · dialogue**
 
@@ -46,13 +46,15 @@ My life is good.
 
 - **options:** زندگی اینجا خوب است. | زندگی من خوب است. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** Life here is good. | My life is good. | People like coffee.
+- **answerEn:** Life here is good.
+- **tokensEn:** here | is | good. | Life
+- **answerTokensEn:** Life | here | is | good.
 
 **A05 · response_choice**
 
-- **optionsEn:** My life is good. | Life here is good. | People like coffee.
+- **optionsEn:** My life is good. | Life here is good. | your life is good.
 
 **A06 · speak**
 

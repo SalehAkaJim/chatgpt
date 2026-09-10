@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "this point is the",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this point is the",
       "examples": [],
       "fallback": {
         "query": "this point is the",
         "rationale": "Exact bounded learner target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "this point here",
@@ -84,12 +86,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this point here",
       "examples": [],
       "fallback": {
         "query": "this point here",
         "rationale": "Exact prompt-side target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes that point",
@@ -102,16 +105,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes that point",
       "examples": [],
       "fallback": {
         "query": "yes that point",
         "rationale": "Exact changed-context target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "1cfe0ccc897c351e8c4601a9b062ae30b6e29b86db4e0da7822c2cd0ffb741ef"
+  "planHash": "02d47003002a32e84b4e1375d6e229a6d8857621a42e8dad2a21b3e36aaa065a"
 }

@@ -1,4 +1,4 @@
-<!-- sourceHash: 282a722a0a2d01e66c95525786b4f1576b9ff62ec33b41e68889183e24abbb54 -->
+<!-- sourceHash: b84c68dad1cd9396e526523a8e67dba80affc2f86fcb703b689b2a188a514869 -->
 # English Audit — EN-A1-L-0047
 
 **Lesson:** This way
@@ -37,7 +37,7 @@ That way is good too.
 **A01 · response_choice**
 
 - **English prompt:** Yes. This way is good.
-- **options:** روش، طریقه | یک معنی نامربوط | نام یک شخص
+- **options:** روش، طریقه | کتاب | اتاق
 
 **A02 · dialogue**
 
@@ -54,7 +54,7 @@ That way is good too.
 
 **A05 · response_choice**
 
-- **optionsEn:** That way is good too. | Yes. This way is good. | People like coffee.
+- **optionsEn:** That way is good too. | Yes. This way is good. | this way is good too.
 
 **A06 · speak**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: b75c84910b0c4abd3c9dc87ca92cf6a7dd2ccc7bcdb00f9815a16ebe196fcc7d -->
+<!-- sourceHash: dc8fa55bef2b4fd94d885f8577faeff3630af229403c951e01aeeb0d4e1b3e35 -->
 # English Audit — EN-A1-L-0050
 
 **Lesson:** The right side
@@ -37,7 +37,7 @@ Yes. The right side.
 **A01 · response_choice**
 
 - **English prompt:** The right side.
-- **options:** راست | یک معنی نامربوط | نام یک شخص
+- **options:** راست | جدید | قدیمی
 
 **A02 · dialogue**
 
@@ -54,7 +54,7 @@ Yes. The right side.
 
 **A05 · response_choice**
 
-- **optionsEn:** Yes. The right side. | The right side. | People like coffee.
+- **optionsEn:** Yes. The right side. | The right side. | No. The right side.
 
 **A06 · speak**
 

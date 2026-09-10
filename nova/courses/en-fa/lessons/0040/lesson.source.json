@@ -10,7 +10,7 @@
   "descriptionFa": "با know هدف کوتاه این درس را تمرین کن.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0040",
   "outcomeFa": "know را در یک موقعیت کوتاه و طبیعی به کار ببری.",
-  "scenarioFa": "نورا یک کتاب و خودکار را نشان می‌دهد و اوون می‌گوید آن‌ها را می‌شناسد.",
+  "scenarioFa": "نورا یک کتاب و فهرست اسم‌ها را نشان می‌دهد و اوون می‌گوید کتاب و یکی از اسم‌ها را می‌شناسد.",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0039"
   ],
@@ -53,7 +53,7 @@
         "EN-A1-L-0031"
       ],
       "settingFa": "ساختمان، میز فضای مشترک",
-      "storyBeatFa": "نورا یک کتاب و خودکار را نشان می‌دهد و اوون می‌گوید آن‌ها را می‌شناسد."
+      "storyBeatFa": "نورا یک کتاب و فهرست اسم‌ها را نشان می‌دهد و اوون با know می‌گوید هر دو مورد برایش آشنا هستند."
     },
     "reviewLinks": [
       {
@@ -73,7 +73,7 @@
       ],
       "reviewLexicalLemmas": [
         "book",
-        "pen"
+        "name"
       ],
       "usageFallbacks": [
         {
@@ -81,8 +81,8 @@
           "rationale": "Bounded natural A1 use selected for know."
         },
         {
-          "query": "I know this pen",
-          "rationale": "Same-Lesson transfer for know with familiar language."
+          "query": "I know this name",
+          "rationale": "Natural bounded transfer for know with a familiar personal-name noun."
         },
         {
           "query": "do you know this book",
@@ -126,17 +126,17 @@
       }
     },
     {
-      "lexicalKey": "EN-LEX-PEN-01",
+      "lexicalKey": "EN-LEX-NAME-01",
       "itemType": "word",
-      "displayForm": "pen",
-      "translationFa": "خودکار",
+      "displayForm": "name",
+      "translationFa": "اسم",
       "role": "review",
-      "lemma": "pen",
+      "lemma": "name",
       "partOfSpeech": "noun",
-      "senseKey": "writing_pen",
+      "senseKey": "personal_name",
       "audioEligible": true,
       "metadata": {
-        "referenceKey": "EN-REF-E7158161767216455400"
+        "referenceKey": "EN-REF-F7A6AD8E6587EDA3E40E"
       }
     }
   ],
@@ -165,20 +165,20 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "nora",
-      "textEn": "And this pen?",
-      "translationFa": "و این خودکار؟",
+      "textEn": "And this name?",
+      "translationFa": "و این اسم؟",
       "audioRequired": true
     },
     {
       "turnKey": "T04",
       "role": "learner",
       "characterKey": "owen",
-      "textEn": "I know this pen.",
-      "translationFa": "این خودکار را می‌شناسم.",
+      "textEn": "I know this name.",
+      "translationFa": "این اسم را می‌شناسم.",
       "audioRequired": true,
-      "speechTargetEn": "I know this pen.",
+      "speechTargetEn": "I know this name.",
       "acceptedSpeechEn": [
-        "I know this pen."
+        "I know this name."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -195,15 +195,15 @@
       "config": {
         "options": [
           "دانستن",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "خواندن",
+          "گفتن"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این کلمه نام شخص نیست."
+            "«خواندن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«گفتن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "دانستن"
         }
@@ -255,7 +255,7 @@
         ],
         "options": [
           "بله. این کتاب را می‌شناسم.",
-          "این خودکار را هم می‌شناسم.",
+          "این اسم را هم می‌شناسم.",
           "هیچ‌کدام"
         ],
         "answerIndex": 0,
@@ -313,21 +313,21 @@
       "activityKey": "A05",
       "type": "response_choice",
       "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
-      "promptFa": "و این خودکار؟",
+      "promptFa": "و این اسم؟",
       "config": {
         "optionsEn": [
-          "I know this pen.",
+          "I know this name.",
           "Yes. I know this book.",
-          "People like coffee."
+          "I know that name."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«I know that name.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
-          "correctFa": "این خودکار را هم می‌شناسم."
+          "correctFa": "این اسم را هم می‌شناسم."
         }
       },
       "metadata": {
@@ -339,12 +339,12 @@
       "activityKey": "A06",
       "type": "speak",
       "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
-      "promptFa": "owen هستی. بگو: این خودکار را هم می‌شناسم.",
+      "promptFa": "owen هستی. بگو: این اسم را هم می‌شناسم.",
       "config": {
         "mode": "retrieval",
-        "textEn": "I know this pen.",
+        "textEn": "I know this name.",
         "acceptedAnswersEn": [
-          "I know this pen."
+          "I know this name."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,
@@ -371,14 +371,14 @@
         "optionsEn": [
           "I know this book.",
           "I make this book.",
-          "People like coffee."
+          "I know that book."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است؛ همان ساختار را با filler دیگری ساختی.",
             "این ساختار هدف این تمرین نیست.",
-            "این جمله به موقعیت ربطی ندارد."
+            "«I know that book.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "درست است؛ ساختار را با یک واژه آشنای دیگر به کار بردی."
         }
@@ -398,6 +398,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

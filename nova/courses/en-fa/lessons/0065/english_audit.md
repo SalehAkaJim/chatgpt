@@ -1,4 +1,4 @@
-<!-- sourceHash: 43e8921114298e7b63cf65ffac8b24d8bfc444ddeb513bfab863a520a5fad024 -->
+<!-- sourceHash: 3fdcc14c655c34a9fad3f87e29ca31f94c896407aea44a3d45075b03d4568b89 -->
 # English Audit — EN-A1-L-0065
 
 **Lesson:** The same book
@@ -12,7 +12,7 @@
 
 **T01 · leo**
 
-Say: The same book.
+And you?
 
 **T02 · liam**
 
@@ -23,7 +23,7 @@ The same book.
 
 **T03 · leo**
 
-Now say: This is the same book.
+And this one?
 
 **T04 · liam**
 

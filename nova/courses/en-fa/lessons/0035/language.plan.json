@@ -82,7 +82,8 @@
       "fallback": {
         "query": "i can help",
         "rationale": "I can help is a canonical early-A1 affirmative can statement and directly answers the previously taught Can you help? request."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i can help now",
@@ -100,7 +101,8 @@
       "fallback": {
         "query": "i can help now",
         "rationale": "I can help now keeps can as the scored grammar target and uses now only as ordinary contextual support, not as a new lexical target."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [
@@ -109,5 +111,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "e6e7f94a6e4e15fcf1d86fc31637efecb749ed3a16db97cb68d2d64e24d26ab6"
+  "planHash": "d7cfbb397a91d407ee6dd717e8a4218bb4be382592fe826dc411256d1508aab7"
 }

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0065",
   "sortOrder": 65,
   "levelKey": "A1",
-  "lessonSourceHash": "43e8921114298e7b63cf65ffac8b24d8bfc444ddeb513bfab863a520a5fad024",
+  "lessonSourceHash": "3fdcc14c655c34a9fad3f87e29ca31f94c896407aea44a3d45075b03d4568b89",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,30 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the same book",
       "examples": [],
       "fallback": {
         "query": "the same book",
         "rationale": "Exact bounded identity target phrase."
-      }
-    },
-    {
-      "query": "say the same book",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0065"
-      ],
-      "lexicalLemmas": [
-        "same"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say the same book",
-        "rationale": "Exact turn-derived prompt collocation containing same."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is the same book",
@@ -90,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is the same book",
       "examples": [],
       "fallback": {
         "query": "is the same book",
         "rationale": "Exact turn-derived changed-context collocation containing same."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "58122c0ae3dea71bf252ca4a87a407fb7535d9dd72efd27202199380651170fc"
+  "planHash": "58c239d84a85e44b105c266b31d73216328ddd37255ffd68f73a3118b1f73c36"
 }

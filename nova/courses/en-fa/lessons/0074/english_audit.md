@@ -1,4 +1,4 @@
-<!-- sourceHash: 57a00b796ec80bbef24fc4daa6eb43cbd9a74f454cef22ad8cea3074a8ec25fa -->
+<!-- sourceHash: d33b06a32bfde2d7f24d99ed22e71c7e9f60fa1efe40484afefe318e97d3cf9e -->
 # English Audit — EN-A1-L-0074
 
 **Lesson:** This is my house
@@ -48,11 +48,11 @@ That is your house.
 
 **A04 · response_choice**
 
-- **optionsEn:** This is my house. | That is your house. | I can give you coffee.
+- **optionsEn:** that is my house. | That is your house. | I can give you coffee.
 
 **A05 · response_choice**
 
-- **optionsEn:** That is your house. | This is my house. | He is old.
+- **optionsEn:** That is your house. | this is your house. | He is old.
 
 **A06 · speak**
 

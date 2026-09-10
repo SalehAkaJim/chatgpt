@@ -64,12 +64,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "it is far away",
       "examples": [],
       "fallback": {
         "query": "it is far away",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is far away",
@@ -82,16 +83,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is far away",
       "examples": [],
       "fallback": {
         "query": "is far away",
         "rationale": "Exact target-collocation window produced by the committed usage validator."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "444432d40d206aff50a260ffb8c67f17369d9afcd7a8d115884ea6302ffc32d4"
+  "planHash": "71c34e56b261d1cc24d5e9605346bac0015ed2dc5d858ccc17f3688cb521b215"
 }

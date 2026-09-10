@@ -1,4 +1,4 @@
-<!-- sourceHash: dd727a76cc16673cd15e9ede138c87fac69275216db2a44032bf70bef784a459 -->
+<!-- sourceHash: c5d5c5f14e145fb25e3e1bafa8f3d7d4400147d1fa5a6d7e124610b21551b03e -->
 # English Audit — EN-A1-L-0061
 
 **Lesson:** My home
@@ -12,7 +12,7 @@
 
 **T01 · nina**
 
-Say: My home.
+And you?
 
 **T02 · iris**
 
@@ -23,7 +23,7 @@ My home.
 
 **T03 · nina**
 
-Now say: This is my home.
+And this one?
 
 **T04 · iris**
 
@@ -46,9 +46,10 @@ This is my home.
 
 - **options:** خانه من. | این خانه من است. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** My home. | This is my home. | Many books.
+- **sentenceEn:** My ___.
+- **optionsEn:** home | book | room
 
 **A05 · response_choice**
 

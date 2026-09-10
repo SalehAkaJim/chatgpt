@@ -113,8 +113,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "maya",
-      "textEn": "Say: That man.",
-      "translationFa": "بگو: آن مرد.",
+      "textEn": "Which person?",
+      "translationFa": "کدام شخص؟",
       "audioRequired": true
     },
     {
@@ -133,8 +133,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "maya",
-      "textEn": "Now say: This man.",
-      "translationFa": "حالا بگو: این مرد.",
+      "textEn": "And this person?",
+      "translationFa": "و این شخص؟",
       "audioRequired": true
     },
     {
@@ -163,15 +163,15 @@
       "config": {
         "options": [
           "مرد",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "کتاب",
+          "اتاق"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف واژه نیست."
+            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "مرد"
         }
@@ -252,14 +252,14 @@
         "optionsEn": [
           "That man.",
           "This man.",
-          "People like coffee."
+          "That book."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش دوم است.",
-            "این جمله نامربوط است."
+            "«That book.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "That man."
         }
@@ -278,14 +278,14 @@
         "optionsEn": [
           "This man.",
           "That man.",
-          "People like coffee."
+          "This book."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«This book.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "این مرد."
         }
@@ -331,6 +331,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

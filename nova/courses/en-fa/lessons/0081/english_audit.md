@@ -1,4 +1,4 @@
-<!-- sourceHash: dd1456cd338a8a19fdaafefd819322cd313ba1cae2d8055e00cb5678740b06ce -->
+<!-- sourceHash: 131f1c5d905ee5d51101b6b7b26780e29019cacc90febfe860e303cd1f83421c -->
 # English Audit — EN-A1-L-0081
 
 **Lesson:** I feel good
@@ -46,13 +46,15 @@ I feel tired.
 
 - **options:** حالم خوب است. | احساس خستگی می‌کنم. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** I feel good. | I feel tired. | I am at school.
+- **answerEn:** I feel good.
+- **tokensEn:** feel | good. | I
+- **answerTokensEn:** I | feel | good.
 
 **A05 · response_choice**
 
-- **optionsEn:** I feel tired. | I feel good. | This is my house.
+- **optionsEn:** I feel tired. | I feel good. | I read tired.
 
 **A06 · speak**
 

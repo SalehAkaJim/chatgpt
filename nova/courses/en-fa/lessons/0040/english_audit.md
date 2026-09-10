@@ -1,4 +1,4 @@
-<!-- sourceHash: 63c8e3433f80a0432b4c944011f10d8b81b71ef13505b2fe32ec92935612569a -->
+<!-- sourceHash: eadf884e46f4e8ab495778d18ae93ac5cf46e136fef76bfb8251794d46f71766 -->
 # English Audit — EN-A1-L-0040
 
 **Lesson:** I know this book
@@ -8,7 +8,7 @@
 
 - `EN-LEX-KNOW-01` [word/target] — **know**
 - `EN-LEX-BOOK-01` [word/review] — **book**
-- `EN-LEX-PEN-01` [word/review] — **pen**
+- `EN-LEX-NAME-01` [word/review] — **name**
 
 ## Dialogue turns
 
@@ -25,28 +25,28 @@ Yes. I know this book.
 
 **T03 · nora**
 
-And this pen?
+And this name?
 
 **T04 · owen**
 
-I know this pen.
+I know this name.
 
-- **Speech target:** I know this pen.
-- **Accepted speech:** I know this pen.
+- **Speech target:** I know this name.
+- **Accepted speech:** I know this name.
 
 ## Activities
 
 **A01 · response_choice**
 
 - **English prompt:** Yes. I know this book.
-- **options:** دانستن | یک معنی نامربوط | نام یک شخص
+- **options:** دانستن | خواندن | گفتن
 
 **A02 · dialogue**
 
 
 **A03 · comprehension**
 
-- **options:** بله. این کتاب را می‌شناسم. | این خودکار را هم می‌شناسم. | هیچ‌کدام
+- **options:** بله. این کتاب را می‌شناسم. | این اسم را هم می‌شناسم. | هیچ‌کدام
 
 **A04 · sentence_order**
 
@@ -56,16 +56,16 @@ I know this pen.
 
 **A05 · response_choice**
 
-- **optionsEn:** I know this pen. | Yes. I know this book. | People like coffee.
+- **optionsEn:** I know this name. | Yes. I know this book. | I know that name.
 
 **A06 · speak**
 
-- **textEn:** I know this pen.
-- **acceptedAnswersEn:** I know this pen.
+- **textEn:** I know this name.
+- **acceptedAnswersEn:** I know this name.
 
 **A07 · response_choice**
 
-- **optionsEn:** I know this book. | I make this book. | People like coffee.
+- **optionsEn:** I know this book. | I make this book. | I know that book.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

@@ -1,4 +1,4 @@
-<!-- sourceHash: 0bef9355051cb4fa4e75fefd76e4359e043372e3ad102dfd8e3de127929ee070 -->
+<!-- sourceHash: 886d07633260579b522704d12fada79bb086af93dc08ab0048c93e78a9492fe7 -->
 # English Audit — EN-A1-L-0055
 
 **Lesson:** Many books
@@ -12,7 +12,7 @@
 
 **T01 · iris**
 
-Say: Many books.
+Which person?
 
 **T02 · nina**
 
@@ -23,7 +23,7 @@ Many books.
 
 **T03 · iris**
 
-Now say: Many cups.
+And this person?
 
 **T04 · nina**
 
@@ -37,7 +37,7 @@ Many cups.
 **A01 · response_choice**
 
 - **English prompt:** Many books.
-- **options:** زیاد | یک معنی نامربوط | نام یک شخص
+- **options:** زیاد | جدید | قدیمی
 
 **A02 · dialogue**
 
@@ -46,13 +46,14 @@ Many cups.
 
 - **options:** کتاب‌های زیاد. | فنجان‌های زیاد. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** Many books. | Many cups. | People like coffee.
+- **sentenceEn:** ___ books.
+- **optionsEn:** many | new | old
 
 **A05 · response_choice**
 
-- **optionsEn:** Many cups. | Many books. | People like coffee.
+- **optionsEn:** Many cups. | Many books. | new cups.
 
 **A06 · speak**
 

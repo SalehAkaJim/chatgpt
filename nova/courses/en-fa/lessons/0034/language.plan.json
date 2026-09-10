@@ -129,7 +129,8 @@
       "fallback": {
         "query": "i also like coffee",
         "rationale": "I also like coffee is a transparent additive use of also with a previously taught preference frame."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i also read books",
@@ -150,11 +151,12 @@
       "fallback": {
         "query": "i also read books",
         "rationale": "I also read books transfers also to a second previously taught first-person verb frame."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "97f877ccfe06729524c199c2bbc32bda83ccc1949c870539be5a54c2393f56ef"
+  "planHash": "0647e3ca2befc9ec92080017e7dd66ffaeb264f49fdd0895a2dac47049223d9e"
 }

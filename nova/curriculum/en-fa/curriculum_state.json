@@ -6,7 +6,7 @@
     {
       "lemma": "name",
       "firstLesson": 1,
-      "lastLesson": 2,
+      "lastLesson": 40,
       "roles": [
         "review",
         "target"
@@ -581,8 +581,9 @@
     {
       "lemma": "man",
       "firstLesson": 60,
-      "lastLesson": 60,
+      "lastLesson": 70,
       "roles": [
+        "review",
         "target"
       ],
       "referenceKeys": [
@@ -1318,7 +1319,7 @@
       "lemma": "i",
       "firstLesson": 1,
       "lastLesson": 113,
-      "practiceCount": 67,
+      "practiceCount": 69,
       "surfaceForms": [
         "i"
       ]
@@ -1380,8 +1381,8 @@
     {
       "lemma": "name",
       "firstLesson": 2,
-      "lastLesson": 2,
-      "practiceCount": 2,
+      "lastLesson": 40,
+      "practiceCount": 3,
       "surfaceForms": [
         "name"
       ]
@@ -1498,7 +1499,7 @@
       "lemma": "that",
       "firstLesson": 4,
       "lastLesson": 120,
-      "practiceCount": 18,
+      "practiceCount": 19,
       "surfaceForms": [
         "that"
       ]
@@ -1570,7 +1571,7 @@
       "lemma": "pen",
       "firstLesson": 6,
       "lastLesson": 42,
-      "practiceCount": 11,
+      "practiceCount": 10,
       "surfaceForms": [
         "pen"
       ]
@@ -1678,7 +1679,7 @@
       "lemma": "yes",
       "firstLesson": 11,
       "lastLesson": 124,
-      "practiceCount": 47,
+      "practiceCount": 48,
       "surfaceForms": [
         "yes"
       ]
@@ -1858,7 +1859,7 @@
       "lemma": "he",
       "firstLesson": 27,
       "lastLesson": 121,
-      "practiceCount": 5,
+      "practiceCount": 4,
       "surfaceForms": [
         "he"
       ]
@@ -1912,7 +1913,7 @@
       "lemma": "this",
       "firstLesson": 30,
       "lastLesson": 124,
-      "practiceCount": 39,
+      "practiceCount": 40,
       "surfaceForms": [
         "this"
       ]
@@ -2325,8 +2326,8 @@
     {
       "lemma": "man",
       "firstLesson": 60,
-      "lastLesson": 60,
-      "practiceCount": 2,
+      "lastLesson": 70,
+      "practiceCount": 4,
       "surfaceForms": [
         "man"
       ]
@@ -2437,15 +2438,6 @@
       "practiceCount": 2,
       "surfaceForms": [
         "little"
-      ]
-    },
-    {
-      "lemma": "leo",
-      "firstLesson": 70,
-      "lastLesson": 70,
-      "practiceCount": 1,
-      "surfaceForms": [
-        "leo"
       ]
     },
     {
@@ -3354,8 +3346,8 @@
       "grammarKey": "CEFRJ-GRAM-1",
       "grammaticalItem": "I am",
       "firstLesson": 1,
-      "lastLesson": 5,
-      "exposureCount": 4,
+      "lastLesson": 100,
+      "exposureCount": 5,
       "evidenceKinds": [
         "learner_practice",
         "target_construction"
@@ -4349,13 +4341,13 @@
     },
     {
       "constructionKey": "EN-CONSTR-0070-OLD",
-      "form": "He is old",
+      "form": "This man is old",
       "firstLesson": 70,
       "lastLesson": 70,
       "grammarMatches": [
         {
-          "grammarKey": "CEFRJ-GRAM-3",
-          "matchScore": 0.5167,
+          "grammarKey": "CEFRJ-GRAM-8",
+          "matchScore": 0.395,
           "lesson": 70
         }
       ]
@@ -4613,13 +4605,13 @@
     },
     {
       "constructionKey": "EN-CONSTR-0100-WEEK",
-      "form": "This week is busy",
+      "form": "I'm busy this week",
       "firstLesson": 100,
       "lastLesson": 100,
       "grammarMatches": [
         {
-          "grammarKey": "CEFRJ-GRAM-8",
-          "matchScore": 0.395,
+          "grammarKey": "CEFRJ-GRAM-1",
+          "matchScore": 0.59,
           "lesson": 100
         }
       ]
@@ -5302,7 +5294,7 @@
         "nora"
       ],
       "arcKey": "EN-A1-NEIGHBORS",
-      "sourceHash": "63c8e3433f80a0432b4c944011f10d8b81b71ef13505b2fe32ec92935612569a"
+      "sourceHash": "eadf884e46f4e8ab495778d18ae93ac5cf46e136fef76bfb8251794d46f71766"
     },
     {
       "lessonKey": "EN-A1-L-0041",
@@ -5314,7 +5306,7 @@
         "leo"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "f4e705ad8725d81e88a04414d2330643b138fd72e1719ed901b487c7c0001cb6"
+      "sourceHash": "a0d64c80e8251fe3c1492f4a30f9fb3f8b4c03a744e787e103ba4ed7ac52b44d"
     },
     {
       "lessonKey": "EN-A1-L-0042",
@@ -5326,7 +5318,7 @@
         "alex"
       ],
       "arcKey": "EN-A1-CLASSMATES",
-      "sourceHash": "5dcc5d563e40a83cc2cb5bf2272568935f9c30e8e27690b94dae8f1134ad93df"
+      "sourceHash": "e56e49b6513a0d4377bfd990936a877f764b621c1bbd2849078a0e737e3390c7"
     },
     {
       "lessonKey": "EN-A1-L-0043",
@@ -5338,7 +5330,7 @@
         "iris"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "703101945db4c6b984cc2bd7bbb35478b3c73d6f190c5cfc3d6cd062625d6962"
+      "sourceHash": "447730ed992836480a35e171df9fc55c95df98bb03fd4860d7725990385dbf20"
     },
     {
       "lessonKey": "EN-A1-L-0044",
@@ -5350,7 +5342,7 @@
         "ava"
       ],
       "arcKey": "EN-A1-CAFE",
-      "sourceHash": "cf1d7b2a224982203f4fb96e6236fa7864e5be974da9f0a3a0a93b4e4385cea7"
+      "sourceHash": "7bccc17ca5e1f6d114617296e1d47928bbe641cc3d4d091ed592878d939d5f71"
     },
     {
       "lessonKey": "EN-A1-L-0045",
@@ -5362,7 +5354,7 @@
         "ruby"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "ca5bcae85eb039a5325a329ba50945e0835526eb4e888147306940e604d1ee48"
+      "sourceHash": "5143f16fa3ee1c73134e502796951daa5a7a94e5320565953e8542ad12a443a5"
     },
     {
       "lessonKey": "EN-A1-L-0046",
@@ -5374,7 +5366,7 @@
         "owen"
       ],
       "arcKey": "EN-A1-NEIGHBORS",
-      "sourceHash": "04ecaf067aa9415fac69cc5c7232d5d9200edd040c0b3edaaaa190fbdfba0c03"
+      "sourceHash": "417e4786088ee990eebc1f3304e131d246b37c6870313d1ce4e07ef909bb04a0"
     },
     {
       "lessonKey": "EN-A1-L-0047",
@@ -5386,7 +5378,7 @@
         "liam"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "282a722a0a2d01e66c95525786b4f1576b9ff62ec33b41e68889183e24abbb54"
+      "sourceHash": "b84c68dad1cd9396e526523a8e67dba80affc2f86fcb703b689b2a188a514869"
     },
     {
       "lessonKey": "EN-A1-L-0048",
@@ -5398,7 +5390,7 @@
         "maya"
       ],
       "arcKey": "EN-A1-CLASSMATES",
-      "sourceHash": "870bdd073eaffe714835686698199b67dd5156f4a87d1c0f091b8c7012889fc2"
+      "sourceHash": "5af4c52e94fcb5e50cba5e49d733790a52c31143ac7967d10d891f8c387fe9ee"
     },
     {
       "lessonKey": "EN-A1-L-0049",
@@ -5410,7 +5402,7 @@
         "nina"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "48fa32e48c8b43d8a5529351218aec6634df46a12af0c60a445aa8c17181d7ed"
+      "sourceHash": "c7e81acf74721ca725f662821d6a7b446a6c117b059dc30312c1cd11bed3d1e6"
     },
     {
       "lessonKey": "EN-A1-L-0050",
@@ -5422,7 +5414,7 @@
         "ben"
       ],
       "arcKey": "EN-A1-CAFE",
-      "sourceHash": "b75c84910b0c4abd3c9dc87ca92cf6a7dd2ccc7bcdb00f9815a16ebe196fcc7d"
+      "sourceHash": "dc8fa55bef2b4fd94d885f8577faeff3630af229403c951e01aeeb0d4e1b3e35"
     },
     {
       "lessonKey": "EN-A1-L-0051",
@@ -5434,7 +5426,7 @@
         "sara"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "8cd56294814d171499b20772b7e7cbefbee69bb8d32083b6ee00aa05c80d2f08"
+      "sourceHash": "7a89ac4d0519273199c205a7a65c5b38684bff230d0d310306d305dd75d97ec8"
     },
     {
       "lessonKey": "EN-A1-L-0052",
@@ -5446,7 +5438,7 @@
         "nora"
       ],
       "arcKey": "EN-A1-NEIGHBORS",
-      "sourceHash": "5e904ee55d7c35d9183f774b3f7d417f8aaf202a4d643c33119df7e5bcce37f8"
+      "sourceHash": "9b425bb6b35ecde75f37369870eb6583af5423aef72c7a4db5c0a342f781b8bb"
     },
     {
       "lessonKey": "EN-A1-L-0053",
@@ -5458,7 +5450,7 @@
         "leo"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "14d37989ea498703ad74b48ff24d3a4944f92f6bf946c21b157dcd0aeaf7cfa5"
+      "sourceHash": "8a429ebf2bcb3f2921dd58f17514b787b1c8e975f29301aaf22335db38d596f3"
     },
     {
       "lessonKey": "EN-A1-L-0054",
@@ -5470,7 +5462,7 @@
         "alex"
       ],
       "arcKey": "EN-A1-CLASSMATES",
-      "sourceHash": "3a4d44652d8a8f6e80891d458b9db74c911612994335bc443746eb2014b85782"
+      "sourceHash": "e3cb5814fda7cd2b1e7c344309ef4709877528b6c95e747412f716a30ca86c87"
     },
     {
       "lessonKey": "EN-A1-L-0055",
@@ -5482,7 +5474,7 @@
         "iris"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "0bef9355051cb4fa4e75fefd76e4359e043372e3ad102dfd8e3de127929ee070"
+      "sourceHash": "886d07633260579b522704d12fada79bb086af93dc08ab0048c93e78a9492fe7"
     },
     {
       "lessonKey": "EN-A1-L-0056",
@@ -5494,7 +5486,7 @@
         "ava"
       ],
       "arcKey": "EN-A1-CAFE",
-      "sourceHash": "d1cae638a5418d481f5974b804b018d2f40bf87a21736102b47c51964168d0d7"
+      "sourceHash": "5688e7c777a3e058ffdb194ef4f8b250a87ec96abdc511c93e81bb2cbd735915"
     },
     {
       "lessonKey": "EN-A1-L-0057",
@@ -5506,7 +5498,7 @@
         "ruby"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "e0eb29dccf1d7b3b68edd8efb60bfe076a5b2b27ec0d8db9a1a091a6b610cc59"
+      "sourceHash": "c0cee85171bc8e0a1fc9dc3b499451ee17d33087b4c780e2989f736deace2be2"
     },
     {
       "lessonKey": "EN-A1-L-0058",
@@ -5518,7 +5510,7 @@
         "owen"
       ],
       "arcKey": "EN-A1-NEIGHBORS",
-      "sourceHash": "16627ad08e4b54368ae80a568516b1aa603df07153e9495bbd6e7c5e55a9f21e"
+      "sourceHash": "3b765295bc6f226686e2e3676be683bf22196e9c8ef23ef92eae2a1b7acdf8c2"
     },
     {
       "lessonKey": "EN-A1-L-0059",
@@ -5530,7 +5522,7 @@
         "liam"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "62876c7991c9d7473b35094a80397a80bee2cdcbeb629641878e5cd5a6d2f257"
+      "sourceHash": "5bbe01d7991d747f99b3c1f24bc1c41ee1a837aeba8a0d6df5589a3dc234d7c0"
     },
     {
       "lessonKey": "EN-A1-L-0060",
@@ -5542,7 +5534,7 @@
         "maya"
       ],
       "arcKey": "EN-A1-CLASSMATES",
-      "sourceHash": "a7de784325ff77ac0e49a3617eb06af962efe592fb03521167c78d111da2a234"
+      "sourceHash": "5d0a01d0b5f1973e3522bcf61c1b54a93a248d4d1630a4c50c2f5535915770c7"
     },
     {
       "lessonKey": "EN-A1-L-0061",
@@ -5554,7 +5546,7 @@
         "nina"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "dd727a76cc16673cd15e9ede138c87fac69275216db2a44032bf70bef784a459"
+      "sourceHash": "c5d5c5f14e145fb25e3e1bafa8f3d7d4400147d1fa5a6d7e124610b21551b03e"
     },
     {
       "lessonKey": "EN-A1-L-0062",
@@ -5566,7 +5558,7 @@
         "ben"
       ],
       "arcKey": "EN-A1-CAFE",
-      "sourceHash": "afa81808877d9a735e456e6447a8b8b07a4669e146d9a51b7e403754d5e364ce"
+      "sourceHash": "b433bdc0eb798d8d2d0767b21067e9070fbd18797bf0458f97b33c5a1e80956b"
     },
     {
       "lessonKey": "EN-A1-L-0063",
@@ -5578,7 +5570,7 @@
         "sara"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "784d5723bd850b0e4d19cdda40536687cf557eff0d833fc79278894270015393"
+      "sourceHash": "25c618807da1ae8934dfe7f72db1516504e9313a63e73356aa9d78c87733fd44"
     },
     {
       "lessonKey": "EN-A1-L-0064",
@@ -5590,7 +5582,7 @@
         "nora"
       ],
       "arcKey": "EN-A1-NEIGHBORS",
-      "sourceHash": "97025a68089e87c156309bb02043cce4bcbd41f0282d830eb482f6557cbcafec"
+      "sourceHash": "9992c872339d4d815aaf163266f8042674fcac113ac79d00c2bb1bd648491bdf"
     },
     {
       "lessonKey": "EN-A1-L-0065",
@@ -5602,7 +5594,7 @@
         "leo"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "43e8921114298e7b63cf65ffac8b24d8bfc444ddeb513bfab863a520a5fad024"
+      "sourceHash": "3fdcc14c655c34a9fad3f87e29ca31f94c896407aea44a3d45075b03d4568b89"
     },
     {
       "lessonKey": "EN-A1-L-0066",
@@ -5614,7 +5606,7 @@
         "alex"
       ],
       "arcKey": "EN-A1-CLASSMATES",
-      "sourceHash": "596230bc8ce6df8705e62a4c11803d84b741af0fbfd1daa2645c3d24d559013e"
+      "sourceHash": "bd6965cbe455e65041cc48844e6512c3eb21faa24e3134ab795fdf5485d6a042"
     },
     {
       "lessonKey": "EN-A1-L-0067",
@@ -5626,7 +5618,7 @@
         "iris"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "cd0582df839e558f5547b36c7078a33b756830b17996c0aac80e1920628b5805"
+      "sourceHash": "a1c0d8058a9d541057d81dbd031744df3016920c4e2fde5b42c0d5a03c7cf707"
     },
     {
       "lessonKey": "EN-A1-L-0068",
@@ -5638,7 +5630,7 @@
         "ava"
       ],
       "arcKey": "EN-A1-CAFE",
-      "sourceHash": "60425306ec337cb68ae28ac4172665c3b46ffab0b75ca1ea27e5f3ece954c35f"
+      "sourceHash": "6f5ee83b2a1bfc44da7f03668bb8ac8c1ebb626e9aa97a75352a82b2fa4fad52"
     },
     {
       "lessonKey": "EN-A1-L-0069",
@@ -5650,7 +5642,7 @@
         "ruby"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "148b74f6ee0c3ae355cdf9d3f091de7eb20cb309c2e18c5c6206298aafa5d232"
+      "sourceHash": "42bd43d23ca83d55439fef68aca53d6ce994ab22eae8dc44ee4d9affac6f1d61"
     },
     {
       "lessonKey": "EN-A1-L-0070",
@@ -5662,7 +5654,7 @@
         "leo"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "71c78d43c4f6b4c63c22e3aa2052412361f074aee2872b653ddaadf046800cc8"
+      "sourceHash": "1675fc1e58c39b7d72e51f0ed4066dcd978b4e7c59e49a49b042993e8345c3f6"
     },
     {
       "lessonKey": "EN-A1-L-0071",
@@ -5674,7 +5666,7 @@
         "nora"
       ],
       "arcKey": "EN-A1-NEIGHBORS",
-      "sourceHash": "0e869795fe9bf208e917afc3b50e8985910601de71ca63d94011b19cf1ef4e24"
+      "sourceHash": "719f1b22cf7dd6ed91222fbbd0d881d0dcf7e1cd03a9584d3bc73a9840d8fcee"
     },
     {
       "lessonKey": "EN-A1-L-0072",
@@ -5686,7 +5678,7 @@
         "nina"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "d6bed6378c9b7e506f571e9341cd4393062e8a90adfca35a64d8b36f1537eaf6"
+      "sourceHash": "0feb91d813762b683d4bfc063a3ca0dfde65705f0907719339f4438082ecf456"
     },
     {
       "lessonKey": "EN-A1-L-0073",
@@ -5698,7 +5690,7 @@
         "ben"
       ],
       "arcKey": "EN-A1-CAFE",
-      "sourceHash": "287a377cf298c971742623edd51e1e3b531d90fcdc6be8052173d4c3d892fed1"
+      "sourceHash": "28a57416e38b9f06bff0fabddb70cb7ba8b4e73c6475ff0bfb78698b843d588c"
     },
     {
       "lessonKey": "EN-A1-L-0074",
@@ -5710,7 +5702,7 @@
         "sara"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "57a00b796ec80bbef24fc4daa6eb43cbd9a74f454cef22ad8cea3074a8ec25fa"
+      "sourceHash": "d33b06a32bfde2d7f24d99ed22e71c7e9f60fa1efe40484afefe318e97d3cf9e"
     },
     {
       "lessonKey": "EN-A1-L-0075",
@@ -5722,7 +5714,7 @@
         "liam"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "fc54ab0f47da44a3357bda8ea8ef7623b90a008d85bd96a4b0a892d4a18a6457"
+      "sourceHash": "a3eed43be39e2f62c74cfc188699f2db9c9eec8164ad3e438c00c9bd97c5ada7"
     },
     {
       "lessonKey": "EN-A1-L-0076",
@@ -5734,7 +5726,7 @@
         "maya"
       ],
       "arcKey": "EN-A1-CLASSMATES",
-      "sourceHash": "74440e2be69c9a343ef8859c70e519e85f1a88db852c5377eba0d624c228d0e2"
+      "sourceHash": "2db58b603536cb0406a7a196d5b48a16d513e69697c798273ba7f8f1f1338e1f"
     },
     {
       "lessonKey": "EN-A1-L-0077",
@@ -5746,7 +5738,7 @@
         "owen"
       ],
       "arcKey": "EN-A1-NEIGHBORS",
-      "sourceHash": "3d400a41912e8b2a9d026d5816c42043220ee06ceb83db354a38e0cbd655656a"
+      "sourceHash": "a66c1d516521397e4335ef51bcfac715e46d67565cac2cad6361f8fe8847cae7"
     },
     {
       "lessonKey": "EN-A1-L-0078",
@@ -5758,7 +5750,7 @@
         "iris"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "5222852ec7d4363f7d7962f81fb2d077cc6cc1c0fba0dc8ee64b4f33819e48c0"
+      "sourceHash": "6209be7abfa08c5ee1677966c78cf79695d50b091250bb254dd72f8568010627"
     },
     {
       "lessonKey": "EN-A1-L-0079",
@@ -5770,7 +5762,7 @@
         "ava"
       ],
       "arcKey": "EN-A1-CAFE",
-      "sourceHash": "7e0d824b5f4028fde5e4202c08693f926934305ed9c9396933587f359c898cb9"
+      "sourceHash": "9ac5b842405c91bbf0a7dd35ed8982e9358cc9cc185f89e4e7b41077c6f908a7"
     },
     {
       "lessonKey": "EN-A1-L-0080",
@@ -5782,7 +5774,7 @@
         "ruby"
       ],
       "arcKey": "EN-A1-WALKING-GROUP",
-      "sourceHash": "cfa042bfd349541ef934767a234e5c03ca4d536bf104e3e4cf925ace10031eea"
+      "sourceHash": "7bcec60e3feb829670060cb04cef77aeb9f427e3ae557a3cdac929dab7c6fb78"
     },
     {
       "lessonKey": "EN-A1-L-0081",
@@ -5794,7 +5786,7 @@
         "leo"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "dd1456cd338a8a19fdaafefd819322cd313ba1cae2d8055e00cb5678740b06ce"
+      "sourceHash": "131f1c5d905ee5d51101b6b7b26780e29019cacc90febfe860e303cd1f83421c"
     },
     {
       "lessonKey": "EN-A1-L-0082",
@@ -5806,7 +5798,7 @@
         "alex"
       ],
       "arcKey": "EN-A1-CLASSMATES",
-      "sourceHash": "abdd58dd21b350f5969b4f9c6d33c19bc110861ced49ce00bcaa8f03ccef5aed"
+      "sourceHash": "2f78c832be204454990ae80211c9096528cd45208f5199e99466d6c0e01d1509"
     },
     {
       "lessonKey": "EN-A1-L-0083",
@@ -5818,7 +5810,7 @@
         "nora"
       ],
       "arcKey": "EN-A1-NEIGHBORS",
-      "sourceHash": "ba5314e31f95ffbcda0e7e0363ac3fcee77b5b8cb840ab50a5e5932019a4c955"
+      "sourceHash": "c001b294fd95230b8875f0344b55f74249cf08c94ffb6ecea69804eb07b8434d"
     },
     {
       "lessonKey": "EN-A1-L-0084",
@@ -5830,7 +5822,7 @@
         "nina"
       ],
       "arcKey": "EN-A1-COMMUNITY",
-      "sourceHash": "a53332c3e254e77dc3219d79c584e42caba96415a5f68bb62e22a67e17f73c36"
+      "sourceHash": "94b8f516e3513a6544d2fa5fb39e08b747e75d3ce6822ec49b64a77f57903dcd"
     },
     {
       "lessonKey": "EN-A1-L-0085",
@@ -6022,7 +6014,7 @@
         "liam"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "7bfe71acf3b6dc6c539951103d7f15eb8b817d783f905a8e7abb355e8e1a07e3"
+      "sourceHash": "5705de9b44e04bf6628aec0d7953642f0a8505cd4e28c3d5134160aa33317b7a"
     },
     {
       "lessonKey": "EN-A1-L-0101",
@@ -6142,7 +6134,7 @@
         "leo"
       ],
       "arcKey": "EN-A1-LIBRARY",
-      "sourceHash": "5c7efe4c39ef26498baf8442d53fbc4826a0e61a942a88f580502591c1aa8dcb"
+      "sourceHash": "6f9f42af5709ce6a516a29afd3da9e4a1daf4e1accb549ae33e07099ea7a4bd8"
     },
     {
       "lessonKey": "EN-A1-L-0111",

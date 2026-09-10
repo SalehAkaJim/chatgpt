@@ -54,12 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "let me help",
       "examples": [],
       "fallback": {
         "query": "let me help",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "let me carry",
@@ -72,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "let me carry",
       "examples": [],
       "fallback": {
         "query": "let me carry",
         "rationale": "Exact target-collocation window produced by the committed usage validator."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "e06730ff4cccc5feffa93cb62ff8bbe8cee53f6a456811c91e07884287412bda"
+  "planHash": "042cd81affb8b539ab172b5abe2a7c5806af0d771dabe32d318f19f37bc91efd"
 }

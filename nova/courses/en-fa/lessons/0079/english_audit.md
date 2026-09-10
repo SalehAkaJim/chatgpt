@@ -1,4 +1,4 @@
-<!-- sourceHash: 7e0d824b5f4028fde5e4202c08693f926934305ed9c9396933587f359c898cb9 -->
+<!-- sourceHash: 9ac5b842405c91bbf0a7dd35ed8982e9358cc9cc185f89e4e7b41077c6f908a7 -->
 # English Audit — EN-A1-L-0079
 
 **Lesson:** The bus is at the end
@@ -46,13 +46,14 @@ Wait at the end.
 
 - **options:** اتوبوس در انتهای مسیر است. | در انتهای مسیر منتظر بمان. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** The bus is at the end. | Wait at the end. | I am at school.
+- **sentenceEn:** The bus is at the ___.
+- **optionsEn:** end | book | room
 
 **A05 · response_choice**
 
-- **optionsEn:** Wait at the end. | The bus is at the end. | This is my house.
+- **optionsEn:** Wait at the end. | The bus is at the end. | Wait at the book.
 
 **A06 · speak**
 

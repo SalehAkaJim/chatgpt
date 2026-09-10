@@ -1,4 +1,4 @@
-<!-- sourceHash: 04ecaf067aa9415fac69cc5c7232d5d9200edd040c0b3edaaaa190fbdfba0c03 -->
+<!-- sourceHash: 417e4786088ee990eebc1f3304e131d246b37c6870313d1ce4e07ef909bb04a0 -->
 # English Audit — EN-A1-L-0046
 
 **Lesson:** She says hello
@@ -37,7 +37,7 @@ He says hello too.
 **A01 · response_choice**
 
 - **English prompt:** She says hello.
-- **options:** گفتن، بیان کردن | یک معنی نامربوط | نام یک شخص
+- **options:** گفتن، بیان کردن | خواندن | گفتن
 
 **A02 · dialogue**
 
@@ -54,7 +54,7 @@ He says hello too.
 
 **A05 · response_choice**
 
-- **optionsEn:** He says hello too. | She says hello. | People like coffee.
+- **optionsEn:** He says hello too. | She says hello. | she says hello too.
 
 **A06 · speak**
 

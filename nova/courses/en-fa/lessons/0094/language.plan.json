@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "have a call",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "have a call",
       "examples": [],
       "fallback": {
         "query": "have a call",
         "rationale": "Exact target collocation generated from the first learner turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "the call is at",
@@ -84,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the call is at",
       "examples": [],
       "fallback": {
         "query": "the call is at",
         "rationale": "Exact changed-context target collocation generated from the second learner turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "eb424fb346f2796d3fb892024d6099d17e0c949295f4ee564923f16f77e893a4"
+  "planHash": "436f1ec12fe7bccabe27ee390f6a530bdb2e37b2743185cc46b76b5a51f68467"
 }

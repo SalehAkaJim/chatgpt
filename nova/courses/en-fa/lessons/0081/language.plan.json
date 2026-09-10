@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0081",
   "sortOrder": 81,
   "levelKey": "A1",
-  "lessonSourceHash": "dd1456cd338a8a19fdaafefd819322cd313ba1cae2d8055e00cb5678740b06ce",
+  "lessonSourceHash": "131f1c5d905ee5d51101b6b7b26780e29019cacc90febfe860e303cd1f83421c",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,12 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i feel good",
       "examples": [],
       "fallback": {
         "query": "i feel good",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i feel tired",
@@ -72,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i feel tired",
       "examples": [],
       "fallback": {
         "query": "i feel tired",
         "rationale": "Exact transfer target."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "f80d8687350d0e6a567876747280c732f87c698c8d51623fcc0f8b2a935f1cd7"
+  "planHash": "e881a560b0cd7b1484aa08500c187baf6069d51b584b16fa4b25807bc806c953"
 }

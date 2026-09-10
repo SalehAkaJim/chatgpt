@@ -119,11 +119,15 @@
       "constructionKeys": [
         "EN-CONSTR-PEOPLE-LIKE-COFFEE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "do people like coffee",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "do people like coffee",
+        "rationale": "Do people like coffee? is support language that naturally elicits the lexical target people in a familiar like-coffee frame."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "people read books",
@@ -139,12 +143,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "people read books",
       "examples": [],
       "fallback": {
         "query": "people read books",
         "rationale": "People read books transfers the same human-group noun to a second previously taught verb+noun frame."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "do people like coffee",
@@ -162,7 +167,8 @@
       "fallback": {
         "query": "do people like coffee",
         "rationale": "Do people like coffee? is support language that naturally elicits the lexical target people in a familiar like-coffee frame."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes people like coffee",
@@ -180,11 +186,12 @@
       "fallback": {
         "query": "yes people like coffee",
         "rationale": "Yes. People like coffee keeps the selected human-group sense of people with previously taught like and coffee."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "4cf7dabb1db13e6628911f576b2c23022db01a57558049dac67ac3f192604267"
+  "planHash": "991c61adbb0c756c98040a97f143ef359f616b30d798fdb10db454212474e954"
 }

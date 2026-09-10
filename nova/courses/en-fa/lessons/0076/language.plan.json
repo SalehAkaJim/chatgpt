@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0076",
   "sortOrder": 76,
   "levelKey": "A1",
-  "lessonSourceHash": "74440e2be69c9a343ef8859c70e519e85f1a88db852c5377eba0d624c228d0e2",
+  "lessonSourceHash": "2db58b603536cb0406a7a196d5b48a16d513e69697c798273ba7f8f1f1338e1f",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i go to school",
       "examples": [],
       "fallback": {
         "query": "i go to school",
         "rationale": "Exact learner target or turn-derived collocation for this bounded Lesson use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "go to school",
@@ -69,16 +70,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "go to school",
       "examples": [],
       "fallback": {
         "query": "go to school",
         "rationale": "Exact target-collocation window generated around school in both learner responses."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "a6d7f86ad06f61a03338097999e59c517e282a1c55826af38c62aaa7ec40a461"
+  "planHash": "00fb84798ac23dc42d4f41d61878de371b275ba9898023f54d475ccdd76f2512"
 }

@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0110; not an independent human or real-learner test.",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0110; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 5,
-      "evidence": "‘This coffee is bad.’ and ‘The tea is bad too.’ are natural bounded A1 descriptions."
+      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Distractors contrast target candidates without relying on spelling tricks."
+      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
     },
     "dialoguePlausibility": {
       "score": 5,
-      "evidence": "Tasting drinks in a cafe naturally motivates a quality judgment."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,14 +42,15 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or learner test has been performed.",
     "Only the bounded quality sense of bad is reviewed.",
-    "Audio prosody is not evaluated at this text stage."
+    "Audio prosody is not evaluated at this text stage.",
+    "No independent human or real learner test has been performed after quality-v2 remediation."
   ],
   "resolvedFindings": [
     "English naturalness checked.",
@@ -57,9 +58,19 @@
     "Final response is hidden before attempt.",
     "Character pair differs from the preceding Lesson.",
     "Live curriculum specHash was reconciled after Lesson 0109 integration.",
-    "Usage fallback queries were aligned to the validator's exact target-collocation windows without changing learner-facing content."
+    "Usage fallback queries were aligned to the validator's exact target-collocation windows without changing learner-facing content.",
+    "Quality-v2 remediation: A04 contrastive distractors.",
+    "Quality-v2 remediation: A05 contrastive distractors."
   ],
   "lessonKey": "EN-A1-L-0110",
-  "sourceHash": "5c7efe4c39ef26498baf8442d53fbc4826a0e61a942a88f580502591c1aa8dcb",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "6f9f42af5709ce6a516a29afd3da9e4a1daf4e1accb549ae33e07099ea7a4bd8",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "qualityV2Remediation": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "A04 contrastive distractors",
+      "A05 contrastive distractors"
+    ]
+  }
 }

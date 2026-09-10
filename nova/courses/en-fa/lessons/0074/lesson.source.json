@@ -258,14 +258,14 @@
       "promptFa": "کدام جمله گفته شد؟",
       "config": {
         "optionsEn": [
-          "This is my house.",
+          "that is my house.",
           "That is your house.",
           "I can give you coffee."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است.",
+            "درست است؛ این گزینه دقیقا معنی یا پاسخ هدف را می‌رساند.",
             "این جواب بخش دوم است.",
             "این جمله نامربوط است."
           ],
@@ -285,14 +285,14 @@
       "config": {
         "optionsEn": [
           "That is your house.",
-          "This is my house.",
+          "this is your house.",
           "He is old."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این جواب بخش اول است.",
+            "«this is your house.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
             "این جمله نامربوط است."
           ],
           "correctFa": "آن خانه تو است."
@@ -339,6 +339,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

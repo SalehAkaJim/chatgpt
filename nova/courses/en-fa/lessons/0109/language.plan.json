@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "isn't here yet",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "isn't here yet",
       "examples": [],
       "fallback": {
         "query": "isn't here yet",
         "rationale": "Exact bounded learner target collocation for the temporal sense of yet."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "isn't here yet either",
@@ -84,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "isn't here yet either",
       "examples": [],
       "fallback": {
         "query": "isn't here yet either",
         "rationale": "Changed-context target collocation preserving the same temporal sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "34ab1c37e952a32844a8620770071235db426a3c8d2b67053bdecb98b651b595"
+  "planHash": "96647f31b9a423188e4a9fbcc267820e3b0840d5743c2420cbe4744a100a13fe"
 }

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0051",
   "sortOrder": 51,
   "levelKey": "A1",
-  "lessonSourceHash": "8cd56294814d171499b20772b7e7cbefbee69bb8d32083b6ee00aa05c80d2f08",
+  "lessonSourceHash": "7a89ac4d0519273199c205a7a65c5b38684bff230d0d310306d305dd75d97ec8",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,12 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "reading is work",
       "examples": [],
       "fallback": {
         "query": "reading is work",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is reading work",
@@ -72,12 +73,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is reading work",
       "examples": [],
       "fallback": {
         "query": "is reading work",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "this is work too",
@@ -90,16 +92,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this is work too",
       "examples": [],
       "fallback": {
         "query": "this is work too",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "f7895a568862bb061faa8ce50f1584f6b891fb18749a9509718671636e8d4386"
+  "planHash": "4d958fc29773a0d9f9101ab98a37af767704d13972c83781ac7e09b7f7b27709"
 }

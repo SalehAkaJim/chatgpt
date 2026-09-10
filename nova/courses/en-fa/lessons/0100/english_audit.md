@@ -1,7 +1,7 @@
-<!-- sourceHash: 7bfe71acf3b6dc6c539951103d7f15eb8b817d783f905a8e7abb355e8e1a07e3 -->
+<!-- sourceHash: 5705de9b44e04bf6628aec0d7953642f0a8505cd4e28c3d5134160aa33317b7a -->
 # English Audit — EN-A1-L-0100
 
-**Lesson:** This week
+**Lesson:** Busy this week
 **Outcome:** EN-A1-OUTCOME-0100
 
 ## Lexical items
@@ -12,14 +12,14 @@
 
 **T01 · leo**
 
-Are you free now?
+Are you busy this week?
 
 **T02 · liam**
 
-This week is busy.
+Yes. I'm busy this week.
 
-- **Speech target:** This week is busy.
-- **Accepted speech:** This week is busy.
+- **Speech target:** Yes. I'm busy this week.
+- **Accepted speech:** Yes. I'm busy this week.
 
 **T03 · leo**
 
@@ -27,16 +27,16 @@ And next week?
 
 **T04 · liam**
 
-Next week is free.
+I'm free next week.
 
-- **Speech target:** Next week is free.
-- **Accepted speech:** Next week is free.
+- **Speech target:** I'm free next week.
+- **Accepted speech:** I'm free next week.
 
 ## Activities
 
 **A01 · response_choice**
 
-- **English prompt:** This week is busy.
+- **English prompt:** Yes. I'm busy this week.
 - **options:** هفته | شب | شماره
 
 **A02 · dialogue**
@@ -44,20 +44,20 @@ Next week is free.
 
 **A03 · comprehension**
 
-- **options:** این هفته شلوغ است. | هفته بعد آزاد است. | هیچ‌کدام
+- **options:** بله. این هفته سرم شلوغ است. | هفته بعد وقت دارم. | هیچ‌کدام
 
 **A04 · response_choice**
 
-- **optionsEn:** This week is busy. | Next week is free. | Today is busy.
+- **optionsEn:** Yes. I'm busy this week. | I'm free next week. | Today is busy.
 
 **A05 · response_choice**
 
-- **optionsEn:** Next week is free. | This week is busy. | Today is busy.
+- **optionsEn:** I'm free next week. | Yes. I'm busy this week. | Today is busy.
 
 **A06 · speak**
 
-- **textEn:** Next week is free.
-- **acceptedAnswersEn:** Next week is free.
+- **textEn:** I'm free next week.
+- **acceptedAnswersEn:** I'm free next week.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

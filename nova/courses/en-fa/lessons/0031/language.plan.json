@@ -125,12 +125,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this is my book",
       "examples": [],
       "fallback": {
         "query": "this is my book",
         "rationale": "This is my book is a transparent early-A1 demonstrative + be statement using previously taught my and book."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "that is your pen",
@@ -143,12 +144,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "that is your pen",
       "examples": [],
       "fallback": {
         "query": "that is your pen",
         "rationale": "That is your pen transfers the same demonstrative + be pattern to that with previously taught your and pen."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [
@@ -157,5 +159,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "4fb1f12674543ba749f1f5ff12c2008c1dc206c6cb33a1789ee73828acbb20c7"
+  "planHash": "31a1bfbf9ce2d29a671803d8e9306bdaa7dd71352b3b6bfeb0f1ae51bbf20900"
 }

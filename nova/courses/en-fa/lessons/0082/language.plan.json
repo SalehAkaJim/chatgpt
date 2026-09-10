@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0082",
   "sortOrder": 82,
   "levelKey": "A1",
-  "lessonSourceHash": "abdd58dd21b350f5969b4f9c6d33c19bc110861ced49ce00bcaa8f03ccef5aed",
+  "lessonSourceHash": "2f78c832be204454990ae80211c9096528cd45208f5199e99466d6c0e01d1509",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -75,12 +75,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this is my family",
       "examples": [],
       "fallback": {
         "query": "this is my family",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is my family",
@@ -93,12 +94,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is my family",
       "examples": [],
       "fallback": {
         "query": "is my family",
         "rationale": "Exact target-collocation window generated around family in the first learner response."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "my family is here",
@@ -111,16 +113,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "my family is here",
       "examples": [],
       "fallback": {
         "query": "my family is here",
         "rationale": "Exact transfer target and target-collocation window."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "60c10d3a156defab438243dd302f2f9b397cf0b4646609579243efabd2e45b51"
+  "planHash": "25b7154f8d2f0330c339ad4bca76e1f685477ec22b63bb2cf89c1f925396aab2"
 }

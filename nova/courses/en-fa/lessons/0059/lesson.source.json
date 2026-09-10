@@ -105,8 +105,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "liam",
-      "textEn": "Say: This is love.",
-      "translationFa": "بگو: این عشق است.",
+      "textEn": "What is this?",
+      "translationFa": "این چیست؟",
       "audioRequired": true
     },
     {
@@ -125,8 +125,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "liam",
-      "textEn": "Now say: It is love.",
-      "translationFa": "حالا بگو: این محبت است.",
+      "textEn": "And now?",
+      "translationFa": "حالا چطور؟",
       "audioRequired": true
     },
     {
@@ -155,15 +155,15 @@
       "config": {
         "options": [
           "عشق، محبت",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "کتاب",
+          "اتاق"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف واژه نیست."
+            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "عشق، محبت"
         }
@@ -244,14 +244,14 @@
         "optionsEn": [
           "This is love.",
           "It is love.",
-          "People like coffee."
+          "that is love."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش دوم است.",
-            "این جمله نامربوط است."
+            "«that is love.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "This is love."
         }
@@ -270,14 +270,14 @@
         "optionsEn": [
           "It is love.",
           "This is love.",
-          "People like coffee."
+          "It is book."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«It is book.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "این محبت است."
         }
@@ -323,6 +323,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

@@ -49,11 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0113-BELIEVE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "okay i believe you",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "okay i believe you",
+        "rationale": "Exact deterministic target-collocation window from Okay. I believe you. for the bounded accept-as-true sense."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "okay i believe you",
@@ -66,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "okay i believe you",
       "examples": [],
       "fallback": {
         "query": "okay i believe you",
         "rationale": "Exact deterministic target-collocation window from Okay. I believe you. for the bounded accept-as-true sense."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes i believe that's right",
@@ -84,16 +89,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes i believe that's right",
       "examples": [],
       "fallback": {
         "query": "yes i believe that's right",
         "rationale": "Exact deterministic changed-context window preserving the same bounded accept-as-true sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "d6aee3c0c5396d1a89073a00ba8429bace1eb3e5abc37aa8121ff1190ded98d6"
+  "planHash": "1de6fc5853ce9ac2e19f9238eb1ff5a040f775f72f80c7a53f456cf75e914d85"
 }

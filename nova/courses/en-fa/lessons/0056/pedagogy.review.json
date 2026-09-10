@@ -1,12 +1,12 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-09",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0056; not an independent human or learner test.",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0056; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
-      "evidence": "The two bounded target uses of never are short and contextually motivated for early A1."
+      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
     },
     "persianMeaningQuality": {
       "score": 4,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Distractors separate the first target response, the changed-context response, and an unrelated sentence."
+      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The authored scene gives never a concrete reason to be produced in a short exchange."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,22 +42,41 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "Model/editor review only; no real learner test or independent human review is claimed."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "Review is limited to the bounded A1 outcome.",
-    "Final audio prosody remains unreviewed until text gates pass."
+    "Final audio prosody remains unreviewed until text gates pass.",
+    "No independent human or real learner test has been performed after quality-v2 remediation."
   ],
   "resolvedFindings": [
     "The selected never use is consistent with the committed reference sense for this Lesson.",
     "Persian meaning preserves the intended bounded sense.",
     "Activities align with the stated outcome and evidence boundary.",
-    "Character pair and learner role do not mechanically repeat the immediately previous Lesson."
+    "Character pair and learner role do not mechanically repeat the immediately previous Lesson.",
+    "Quality-v2 remediation: T01: 'Say: I never go there.' -> 'And you?'.",
+    "Quality-v2 remediation: T03: 'Now say: I never eat there.' -> 'And now?'.",
+    "Quality-v2 remediation: A01: 'یک معنی نامربوط' -> 'خیلی'.",
+    "Quality-v2 remediation: A01: 'نام یک شخص' -> 'واقعا'.",
+    "Quality-v2 remediation: A04: 'People like coffee.' -> 'I very go there.'.",
+    "Quality-v2 remediation: A05: 'People like coffee.' -> 'I very eat there.'."
   ],
   "lessonKey": "EN-A1-L-0056",
-  "sourceHash": "d1cae638a5418d481f5974b804b018d2f40bf87a21736102b47c51964168d0d7",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "5688e7c777a3e058ffdb194ef4f8b250a87ec96abdc511c93e81bb2cbd735915",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "qualityV2Remediation": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'Say: I never go there.' -> 'And you?'",
+      "T03: 'Now say: I never eat there.' -> 'And now?'",
+      "A01: 'یک معنی نامربوط' -> 'خیلی'",
+      "A01: 'نام یک شخص' -> 'واقعا'",
+      "A04: 'People like coffee.' -> 'I very go there.'",
+      "A05: 'People like coffee.' -> 'I very eat there.'"
+    ]
+  }
 }

@@ -15,7 +15,7 @@
       "code": "CQ-W01",
       "message": "Same full target sentence is reused across multiple scored activities.",
       "data": {
-        "normalizedTarget": "i know this pen",
+        "normalizedTarget": "i know this name",
         "activityKeys": [
           "A05",
           "A06"
@@ -26,14 +26,14 @@
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0040",
-    "sourceHash": "63c8e3433f80a0432b4c944011f10d8b81b71ef13505b2fe32ec92935612569a",
+    "sourceHash": "eadf884e46f4e8ab495778d18ae93ac5cf46e136fef76bfb8251794d46f71766",
     "reviewerType": "model",
-    "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0040; not an independent human or learner test.",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0040; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
-        "evidence": "The bounded know use is short and contextually motivated."
+        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
       },
       "persianMeaningQuality": {
         "score": 5,
@@ -45,11 +45,11 @@
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Distractors contrast the taught context with familiar or unrelated language."
+        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "The scene gives the target a concrete communicative purpose."
+        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
       },
       "difficultyFit": {
         "score": 5,
@@ -69,22 +69,41 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Static model/editor review only; real learner evidence is not yet available."
+        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Review is limited to the bounded A1 outcome.",
-      "Final audio prosody remains unreviewed until text gates pass."
+      "Final audio prosody remains unreviewed until text gates pass.",
+      "No independent human or real learner test has been performed after quality-v2 remediation."
     ],
     "resolvedFindings": [
       "English target usage is contextually plausible.",
       "Persian meaning preserves the bounded sense.",
       "Final activity requires hidden retrieval in a changed controlled context.",
-      "Character and learner-role rotation avoids immediate repetition."
+      "Character and learner-role rotation avoids immediate repetition.",
+      "Quality-v2 remediation: replace review pen with review name.",
+      "Quality-v2 remediation: rewrite unnatural 'I know this pen' transfer as 'I know this name'.",
+      "Quality-v2 remediation: A01: 'یک معنی نامربوط' -> 'خواندن'.",
+      "Quality-v2 remediation: A01: 'نام یک شخص' -> 'گفتن'.",
+      "Quality-v2 remediation: A05: 'People like coffee.' -> 'I know that name.'.",
+      "Quality-v2 remediation: A07: 'People like coffee.' -> 'I know that book.'."
     ],
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "qualityV2Remediation": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "replace review pen with review name",
+        "rewrite unnatural 'I know this pen' transfer as 'I know this name'",
+        "A01: 'یک معنی نامربوط' -> 'خواندن'",
+        "A01: 'نام یک شخص' -> 'گفتن'",
+        "A05: 'People like coffee.' -> 'I know that name.'",
+        "A07: 'People like coffee.' -> 'I know that book.'"
+      ]
+    },
     "status": "PASS",
     "average": 4.5,
     "errors": []
@@ -96,5 +115,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "63c8e3433f80a0432b4c944011f10d8b81b71ef13505b2fe32ec92935612569a"
+  "sourceHash": "eadf884e46f4e8ab495778d18ae93ac5cf46e136fef76bfb8251794d46f71766"
 }

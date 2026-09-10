@@ -109,8 +109,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "leo",
-      "textEn": "Say: The same book.",
-      "translationFa": "بگو: همان کتاب.",
+      "textEn": "And you?",
+      "translationFa": "تو چطور؟",
       "audioRequired": true
     },
     {
@@ -129,8 +129,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "leo",
-      "textEn": "Now say: This is the same book.",
-      "translationFa": "حالا بگو: این همان کتاب است.",
+      "textEn": "And this one?",
+      "translationFa": "و این یکی؟",
       "audioRequired": true
     },
     {
@@ -327,6 +327,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

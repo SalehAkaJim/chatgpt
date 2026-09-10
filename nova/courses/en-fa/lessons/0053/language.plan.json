@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0053",
   "sortOrder": 53,
   "levelKey": "A1",
-  "lessonSourceHash": "14d37989ea498703ad74b48ff24d3a4944f92f6bf946c21b157dcd0aeaf7cfa5",
+  "lessonSourceHash": "8a429ebf2bcb3f2921dd58f17514b787b1c8e975f29301aaf22335db38d596f3",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -41,24 +41,6 @@
   ],
   "usageEvidence": [
     {
-      "query": "say one day",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0053"
-      ],
-      "lexicalLemmas": [
-        "day"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say one day",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
       "query": "one day",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -69,16 +51,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "one day",
       "examples": [],
       "fallback": {
         "query": "one day",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "f6a54e4db090d763f782ec3508450834efa6317faa86e423e53514a4d53452d7"
+  "planHash": "99a8419f7b83ca187cf2fbcd9a9588e1acce18afdc61582f0fb591bf431a53f5"
 }

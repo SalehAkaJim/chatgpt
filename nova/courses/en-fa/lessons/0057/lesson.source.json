@@ -113,8 +113,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "ruby",
-      "textEn": "Say: Life here is good.",
-      "translationFa": "بگو: زندگی اینجا خوب است.",
+      "textEn": "And you?",
+      "translationFa": "تو چطور؟",
       "audioRequired": true
     },
     {
@@ -133,8 +133,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "ruby",
-      "textEn": "Now say: My life is good.",
-      "translationFa": "حالا بگو: زندگی من خوب است.",
+      "textEn": "And now?",
+      "translationFa": "حالا چطور؟",
       "audioRequired": true
     },
     {
@@ -163,15 +163,15 @@
       "config": {
         "options": [
           "زندگی",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "کتاب",
+          "اتاق"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف واژه نیست."
+            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "زندگی"
         }
@@ -245,28 +245,34 @@
     },
     {
       "activityKey": "A04",
-      "type": "response_choice",
-      "instructionFa": "جواب اول را دوباره پیدا کن.",
-      "promptFa": "ruby چه جوابی از sara می‌خواهد؟",
+      "type": "sentence_order",
+      "instructionFa": "جمله را گوش کن و کلمه‌ها را به ترتیب درست بچین.",
       "config": {
-        "optionsEn": [
-          "Life here is good.",
-          "My life is good.",
-          "People like coffee."
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "here",
+          "is",
+          "good.",
+          "Life"
         ],
-        "answerIndex": 0,
+        "answerTokensEn": [
+          "Life",
+          "here",
+          "is",
+          "good."
+        ],
+        "answerEn": "Life here is good.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
         "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این جواب بخش دوم است.",
-            "این جمله نامربوط است."
-          ],
-          "correctFa": "Life here is good."
+          "correctFa": "درست چیدی؛ ترتیب جمله با صدایی که شنیدی یکی است.",
+          "retryFa": "دوباره به صدا گوش کن و ترتیب بخش‌ها را بساز."
         }
       },
       "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "supported_reconstruction"
       }
     },
     {
@@ -278,14 +284,14 @@
         "optionsEn": [
           "My life is good.",
           "Life here is good.",
-          "People like coffee."
+          "your life is good."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«your life is good.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "زندگی من خوب است."
         }
@@ -331,6 +337,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

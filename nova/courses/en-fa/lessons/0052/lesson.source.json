@@ -156,15 +156,15 @@
       "config": {
         "options": [
           "سال",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "کتاب",
+          "اتاق"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این کلمه نام شخص نیست."
+            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "سال"
         }
@@ -238,27 +238,26 @@
     },
     {
       "activityKey": "A04",
-      "type": "response_choice",
-      "instructionFa": "جواب اول را دوباره پیدا کن.",
-      "promptFa": "نورا می‌گوید: بگو یک سال. اوون چه جوابی می‌دهد؟",
+      "type": "fill_blank",
+      "instructionFa": "واژه درست را برای کامل کردن جمله انتخاب کن.",
       "config": {
+        "sentenceEn": "One ___.",
         "optionsEn": [
-          "One year.",
-          "Two years.",
-          "One day."
+          "year",
+          "book",
+          "room"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است.",
-            "این جواب بخش دوم گفت‌وگو است.",
-            "این جواب هدف این موقعیت نیست."
+            "درست است؛ year همان واژه هدف این جمله است.",
+            "book معنی دیگری دارد و این جمله را با هدف درس کامل نمی‌کند.",
+            "room در این موقعیت جای واژه هدف نیست."
           ],
-          "correctFa": "One year."
+          "correctFa": "year"
         }
       },
       "metadata": {
-        "learningDemand": "recognition",
         "evidenceKind": "recognition_or_selection"
       }
     },
@@ -271,14 +270,14 @@
         "optionsEn": [
           "Two years.",
           "One year.",
-          "People like coffee."
+          "Say the time: one year."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«Say the time: one year.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "دو سال."
         }
@@ -324,6 +323,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

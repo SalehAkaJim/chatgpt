@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0057",
   "sortOrder": 57,
   "levelKey": "A1",
-  "lessonSourceHash": "e0eb29dccf1d7b3b68edd8efb60bfe076a5b2b27ec0d8db9a1a091a6b610cc59",
+  "lessonSourceHash": "c0cee85171bc8e0a1fc9dc3b499451ee17d33087b4c780e2989f736deace2be2",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -53,25 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
-    },
-    {
-      "query": "say life here is",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0057"
-      ],
-      "lexicalLemmas": [
-        "life"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say life here is",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "life here is",
@@ -84,30 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "life here is",
       "examples": [],
       "fallback": {
         "query": "life here is",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say my life is good",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0057"
-      ],
-      "lexicalLemmas": [
-        "life"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say my life is good",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "my life is good",
@@ -120,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "my life is good",
       "examples": [],
       "fallback": {
         "query": "my life is good",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "111ec98862e330a619f933c5194cc819c73aed4414e4bac5f922f16c9d2b6afb"
+  "planHash": "c86ee835a77f93cffea7605c1cb806f2ea278f444ec968867984cee44eb6ad28"
 }

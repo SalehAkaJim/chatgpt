@@ -1,14 +1,14 @@
 {
   "version": 1,
   "lessonKey": "EN-A1-L-0044",
-  "sourceHash": "cf1d7b2a224982203f4fb96e6236fa7864e5be974da9f0a3a0a93b4e4385cea7",
+  "sourceHash": "7bccc17ca5e1f6d114617296e1d47928bbe641cc3d4d091ed592878d939d5f71",
   "reviewerType": "model",
-  "reviewedAt": "2026-09-09",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0044; not an independent human or learner test.",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0044; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
-      "evidence": "The bounded back use is short and contextually motivated."
+      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -20,11 +20,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Distractors contrast the taught context with familiar or unrelated language."
+      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene gives the target a concrete communicative purpose."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -44,20 +44,33 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "Static model/editor review only; real learner evidence is not yet available."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "Review is limited to the bounded A1 outcome.",
-    "Final audio prosody remains unreviewed until text gates pass."
+    "Final audio prosody remains unreviewed until text gates pass.",
+    "No independent human or real learner test has been performed after quality-v2 remediation."
   ],
   "resolvedFindings": [
     "English target usage is contextually plausible.",
     "Persian meaning preserves the bounded sense.",
     "Final activity requires hidden retrieval in a changed controlled context.",
-    "Character and learner-role rotation avoids immediate repetition."
+    "Character and learner-role rotation avoids immediate repetition.",
+    "Quality-v2 remediation: A01: 'یک معنی نامربوط' -> 'خیلی'.",
+    "Quality-v2 remediation: A01: 'نام یک شخص' -> 'واقعا'.",
+    "Quality-v2 remediation: A05: 'People like coffee.' -> 'No. Come back with the book.'."
   ],
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "qualityV2Remediation": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "A01: 'یک معنی نامربوط' -> 'خیلی'",
+      "A01: 'نام یک شخص' -> 'واقعا'",
+      "A05: 'People like coffee.' -> 'No. Come back with the book.'"
+    ]
+  }
 }

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0069",
   "sortOrder": 69,
   "levelKey": "A1",
-  "lessonSourceHash": "148b74f6ee0c3ae355cdf9d3f091de7eb20cb309c2e18c5c6206298aafa5d232",
+  "lessonSourceHash": "42bd43d23ca83d55439fef68aca53d6ce994ab22eae8dc44ee4d9affac6f1d61",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this is a little room",
       "examples": [],
       "fallback": {
         "query": "this is a little room",
         "rationale": "Exact learner target or turn-derived collocation for this bounded Lesson use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is a little room",
@@ -69,16 +70,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is a little room",
       "examples": [],
       "fallback": {
         "query": "is a little room",
         "rationale": "Exact target-collocation window generated around little in both learner responses."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "02996d967e23bf8ea3f244a59e302ca33de8964dcd18108068cf307aee929e72"
+  "planHash": "bd72037bda654d728dcfb9549f8cf03b0bb565f6c5bc2b6180facba5d2132a2a"
 }

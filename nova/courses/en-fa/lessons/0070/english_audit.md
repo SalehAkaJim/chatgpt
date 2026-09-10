@@ -1,42 +1,43 @@
-<!-- sourceHash: 71c78d43c4f6b4c63c22e3aa2052412361f074aee2872b653ddaadf046800cc8 -->
+<!-- sourceHash: 1675fc1e58c39b7d72e51f0ed4066dcd978b4e7c59e49a49b042993e8345c3f6 -->
 # English Audit — EN-A1-L-0070
 
-**Lesson:** Leo is old
+**Lesson:** This man is old
 **Outcome:** EN-A1-OUTCOME-0070
 
 ## Lexical items
 
 - `EN-LEX-OLD-01` [word/target] — **old**
+- `EN-LEX-MAN-01` [word/review] — **man**
 
 ## Dialogue turns
 
 **T01 · leo**
 
-Say: He is old.
+What is that man like?
 
 **T02 · liam**
 
-He is old.
+That man is old.
 
-- **Speech target:** He is old.
-- **Accepted speech:** He is old.
+- **Speech target:** That man is old.
+- **Accepted speech:** That man is old.
 
 **T03 · leo**
 
-Now say: Leo is old.
+And this man?
 
 **T04 · liam**
 
-Leo is old.
+This man is old.
 
-- **Speech target:** Leo is old.
-- **Accepted speech:** Leo is old.
+- **Speech target:** This man is old.
+- **Accepted speech:** This man is old.
 
 ## Activities
 
 **A01 · response_choice**
 
-- **English prompt:** He is old.
+- **English prompt:** That man is old.
 - **options:** مسن | کوچک | جدید
 
 **A02 · dialogue**
@@ -44,20 +45,21 @@ Leo is old.
 
 **A03 · comprehension**
 
-- **options:** او مسن است. | لیو مسن است. | هیچ‌کدام
+- **options:** آن مرد مسن است. | این مرد مسن است. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** He is old. | Leo is old. | This is a little room.
+- **sentenceEn:** That man is ___.
+- **optionsEn:** old | new | good
 
 **A05 · response_choice**
 
-- **optionsEn:** Leo is old. | He is old. | The price is high.
+- **optionsEn:** This man is old. | That man is old. | The price is high.
 
 **A06 · speak**
 
-- **textEn:** Leo is old.
-- **acceptedAnswersEn:** Leo is old.
+- **textEn:** This man is old.
+- **acceptedAnswersEn:** This man is old.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

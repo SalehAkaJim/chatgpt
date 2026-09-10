@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "table number five",
       "examples": [],
       "fallback": {
         "query": "table number five",
         "rationale": "Exact bounded learner target and target-collocation window."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "room number two",
@@ -69,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "room number two",
       "examples": [],
       "fallback": {
         "query": "room number two",
         "rationale": "Exact changed-context transfer target."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [
@@ -82,5 +84,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "0932619c15a11213ca916972ecbacf606f9ec84c5a63a8610ced460d295e8d6e"
+  "planHash": "60402902252d8fa2aabe56df868a51a1d54a6abe4b78eb516157cadcd78d781e"
 }

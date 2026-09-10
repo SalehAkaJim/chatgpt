@@ -1,4 +1,4 @@
-<!-- sourceHash: 48fa32e48c8b43d8a5529351218aec6634df46a12af0c60a445aa8c17181d7ed -->
+<!-- sourceHash: c7e81acf74721ca725f662821d6a7b446a6c117b059dc30312c1cd11bed3d1e6 -->
 # English Audit — EN-A1-L-0049
 
 **Lesson:** Really good
@@ -37,7 +37,7 @@ It is really good too.
 **A01 · response_choice**
 
 - **English prompt:** Yes. It is really good.
-- **options:** در حقیقت، به طور عملی | یک معنی نامربوط | نام یک شخص
+- **options:** در حقیقت، به طور عملی | خیلی | واقعا
 
 **A02 · dialogue**
 
@@ -54,7 +54,7 @@ It is really good too.
 
 **A05 · response_choice**
 
-- **optionsEn:** It is really good too. | Yes. It is really good. | People like coffee.
+- **optionsEn:** It is really good too. | Yes. It is really good. | It is very good too.
 
 **A06 · speak**
 

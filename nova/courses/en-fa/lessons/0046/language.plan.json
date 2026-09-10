@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0046",
   "sortOrder": 46,
   "levelKey": "A1",
-  "lessonSourceHash": "04ecaf067aa9415fac69cc5c7232d5d9200edd040c0b3edaaaa190fbdfba0c03",
+  "lessonSourceHash": "417e4786088ee990eebc1f3304e131d246b37c6870313d1ce4e07ef909bb04a0",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "does maya say",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "does maya say",
       "examples": [],
       "fallback": {
         "query": "does maya say",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [
@@ -79,5 +81,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "7b2a9db5e5f6f7188e4b98321fd5e5acc228621f83a8f09843e3b0c42a974c7b"
+  "planHash": "9bcaed6c1eb063f8fd5c5badb9ce759a85d76ab69233bc68ebc47e8bc0297c27"
 }

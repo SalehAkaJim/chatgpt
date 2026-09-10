@@ -1,4 +1,4 @@
-<!-- sourceHash: 5e904ee55d7c35d9183f774b3f7d417f8aaf202a4d643c33119df7e5bcce37f8 -->
+<!-- sourceHash: 9b425bb6b35ecde75f37369870eb6583af5423aef72c7a4db5c0a342f781b8bb -->
 # English Audit — EN-A1-L-0052
 
 **Lesson:** One year
@@ -37,7 +37,7 @@ Two years.
 **A01 · response_choice**
 
 - **English prompt:** One year.
-- **options:** سال | یک معنی نامربوط | نام یک شخص
+- **options:** سال | کتاب | اتاق
 
 **A02 · dialogue**
 
@@ -46,13 +46,14 @@ Two years.
 
 - **options:** یک سال. | دو سال. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** One year. | Two years. | One day.
+- **sentenceEn:** One ___.
+- **optionsEn:** year | book | room
 
 **A05 · response_choice**
 
-- **optionsEn:** Two years. | One year. | People like coffee.
+- **optionsEn:** Two years. | One year. | Say the time: one year.
 
 **A06 · speak**
 

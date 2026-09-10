@@ -90,11 +90,15 @@
       "constructionKeys": [
         "EN-CONSTR-0039-FIRST"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "is the first room",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "This is the first room",
+        "rationale": "Bounded natural A1 use selected for first."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "is the first room",
@@ -112,11 +116,12 @@
       "fallback": {
         "query": "is the first room",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: is the first room"
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "f015d63a4bfffabb889f6e7958ffd95ec7782727fa98bb52d542ca94f37b9ff7"
+  "planHash": "e012b0f90b9527fc29f4f79d0c5e2138f88f4b8e77d9c1a843550a4ab43343a5"
 }

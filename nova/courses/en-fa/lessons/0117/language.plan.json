@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "that child is with the teacher",
       "examples": [],
       "fallback": {
         "query": "that child is with the teacher",
         "rationale": "Bounded target construction for the young-person noun sense of child."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes that child is with",
@@ -69,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes that child is with",
       "examples": [],
       "fallback": {
         "query": "yes that child is with",
         "rationale": "Exact target-collocation window extracted from the first learner turn; natural spoken frame around child."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "and this child",
@@ -87,12 +89,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "and this child",
       "examples": [],
       "fallback": {
         "query": "and this child",
         "rationale": "Exact target-collocation window extracted from the follow-up prompt; natural short discourse frame around child."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "this child is with",
@@ -105,16 +108,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this child is with",
       "examples": [],
       "fallback": {
         "query": "this child is with",
         "rationale": "Exact target-collocation window extracted from the transfer learner turn; natural controlled frame around child."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "1081ef59351123fcfd0f45c3df161603621f4f48cb3c831fb11860d20268cda5"
+  "planHash": "208018b6c37e3524ab11033258c25d556f7b0bf127bcb91e44606d3c125adc4c"
 }

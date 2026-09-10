@@ -1,4 +1,4 @@
-<!-- sourceHash: 5c7efe4c39ef26498baf8442d53fbc4826a0e61a942a88f580502591c1aa8dcb -->
+<!-- sourceHash: 6f9f42af5709ce6a516a29afd3da9e4a1daf4e1accb549ae33e07099ea7a4bd8 -->
 # English Audit — EN-A1-L-0110
 
 **Lesson:** This coffee is bad
@@ -48,11 +48,11 @@ The tea is bad too.
 
 **A04 · response_choice**
 
-- **optionsEn:** This coffee is bad. | This coffee is open. | This coffee is here yet.
+- **optionsEn:** This coffee is bad. | This coffee is good. | This coffee is new.
 
 **A05 · response_choice**
 
-- **optionsEn:** The tea is bad too. | The tea is a job. | The tea means this.
+- **optionsEn:** The tea is bad too. | The tea is good too. | The tea is here too.
 
 **A06 · speak**
 

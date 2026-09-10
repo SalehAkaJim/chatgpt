@@ -1,12 +1,12 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-09",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0058; not an independent human or learner test.",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0058; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
-      "evidence": "The two bounded target uses of great are short and contextually motivated for early A1."
+      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
     },
     "persianMeaningQuality": {
       "score": 4,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Distractors separate the first target response, the changed-context response, and an unrelated sentence."
+      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The authored scene gives great a concrete reason to be produced in a short exchange."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,22 +42,43 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "Model/editor review only; no real learner test or independent human review is claimed."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "Review is limited to the bounded A1 outcome.",
-    "Final audio prosody remains unreviewed until text gates pass."
+    "Final audio prosody remains unreviewed until text gates pass.",
+    "No independent human or real learner test has been performed after quality-v2 remediation."
   ],
   "resolvedFindings": [
     "The selected great use is consistent with the committed reference sense for this Lesson.",
     "Persian meaning preserves the intended bounded sense.",
     "Activities align with the stated outcome and evidence boundary.",
-    "Character pair and learner role do not mechanically repeat the immediately previous Lesson."
+    "Character pair and learner role do not mechanically repeat the immediately previous Lesson.",
+    "Quality-v2 remediation: T01: 'Say: A great big room.' -> 'And you?'.",
+    "Quality-v2 remediation: T03: 'Now say: A great big bag.' -> 'And now?'.",
+    "Quality-v2 remediation: A01: 'یک معنی نامربوط' -> 'جدید'.",
+    "Quality-v2 remediation: A01: 'نام یک شخص' -> 'قدیمی'.",
+    "Quality-v2 remediation: A04: 'People like coffee.' -> 'A new big room.'.",
+    "Quality-v2 remediation: A05: 'People like coffee.' -> 'A new big bag.'.",
+    "Quality-v2 remediation: A04 response_choice -> fill_blank."
   ],
   "lessonKey": "EN-A1-L-0058",
-  "sourceHash": "16627ad08e4b54368ae80a568516b1aa603df07153e9495bbd6e7c5e55a9f21e",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "3b765295bc6f226686e2e3676be683bf22196e9c8ef23ef92eae2a1b7acdf8c2",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "qualityV2Remediation": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'Say: A great big room.' -> 'And you?'",
+      "T03: 'Now say: A great big bag.' -> 'And now?'",
+      "A01: 'یک معنی نامربوط' -> 'جدید'",
+      "A01: 'نام یک شخص' -> 'قدیمی'",
+      "A04: 'People like coffee.' -> 'A new big room.'",
+      "A05: 'People like coffee.' -> 'A new big bag.'",
+      "A04 response_choice -> fill_blank"
+    ]
+  }
 }

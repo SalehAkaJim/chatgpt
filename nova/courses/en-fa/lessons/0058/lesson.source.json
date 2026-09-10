@@ -113,8 +113,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "owen",
-      "textEn": "Say: A great big room.",
-      "translationFa": "بگو: یک اتاق خیلی بزرگ.",
+      "textEn": "And you?",
+      "translationFa": "تو چطور؟",
       "audioRequired": true
     },
     {
@@ -133,8 +133,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "owen",
-      "textEn": "Now say: A great big bag.",
-      "translationFa": "حالا بگو: یک کیف خیلی بزرگ.",
+      "textEn": "And now?",
+      "translationFa": "حالا چطور؟",
       "audioRequired": true
     },
     {
@@ -163,15 +163,15 @@
       "config": {
         "options": [
           "بزرگ",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "جدید",
+          "قدیمی"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف واژه نیست."
+            "«جدید» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«قدیمی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "بزرگ"
         }
@@ -245,27 +245,26 @@
     },
     {
       "activityKey": "A04",
-      "type": "response_choice",
-      "instructionFa": "جواب اول را دوباره پیدا کن.",
-      "promptFa": "owen چه جوابی از nora می‌خواهد؟",
+      "type": "fill_blank",
+      "instructionFa": "واژه درست را برای کامل کردن جمله انتخاب کن.",
       "config": {
+        "sentenceEn": "A ___ big room.",
         "optionsEn": [
-          "A great big room.",
-          "A great big bag.",
-          "People like coffee."
+          "great",
+          "new",
+          "old"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است.",
-            "این جواب بخش دوم است.",
-            "این جمله نامربوط است."
+            "درست است؛ great همان واژه هدف این جمله است.",
+            "new معنی دیگری دارد و این جمله را با هدف درس کامل نمی‌کند.",
+            "old در این موقعیت جای واژه هدف نیست."
           ],
-          "correctFa": "A great big room."
+          "correctFa": "great"
         }
       },
       "metadata": {
-        "learningDemand": "recognition",
         "evidenceKind": "recognition_or_selection"
       }
     },
@@ -278,14 +277,14 @@
         "optionsEn": [
           "A great big bag.",
           "A great big room.",
-          "People like coffee."
+          "A new big bag."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«A new big bag.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "یک کیف خیلی بزرگ."
         }
@@ -331,6 +330,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

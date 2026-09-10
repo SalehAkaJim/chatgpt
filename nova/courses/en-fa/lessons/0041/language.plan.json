@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0041",
   "sortOrder": 41,
   "levelKey": "A1",
-  "lessonSourceHash": "f4e705ad8725d81e88a04414d2330643b138fd72e1719ed901b487c7c0001cb6",
+  "lessonSourceHash": "a0d64c80e8251fe3c1492f4a30f9fb3f8b4c03a744e787e103ba4ed7ac52b44d",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -113,11 +113,15 @@
       "constructionKeys": [
         "EN-CONSTR-0041-MAKE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "i make tea too",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "I make coffee",
+        "rationale": "Bounded natural A1 use selected for make."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "do you make",
@@ -157,7 +161,8 @@
       "fallback": {
         "query": "do you make",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you make"
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i make coffee",
@@ -190,7 +195,8 @@
       "fallback": {
         "query": "I make coffee",
         "rationale": "Bounded natural A1 use selected for make."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i make tea",
@@ -208,11 +214,12 @@
       "fallback": {
         "query": "I make tea",
         "rationale": "Same-Lesson transfer for make with familiar independently taught language."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "b7b54785d8f271c73c5220c48c69adb8b5920da5335fe8017fab829a5b25b437"
+  "planHash": "b799722120a8a410a6b7cb24ada7aff5ea95e813a7c55eb94c306b626797de65"
 }

@@ -90,11 +90,15 @@
       "constructionKeys": [
         "EN-CONSTR-0037-GET"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "i get a book",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "I get a book",
+        "rationale": "Bounded natural A1 use selected for get."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "i get a book",
@@ -112,7 +116,8 @@
       "fallback": {
         "query": "I get a book",
         "rationale": "Bounded natural A1 use selected for get."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i get a pen",
@@ -130,11 +135,12 @@
       "fallback": {
         "query": "I get a pen",
         "rationale": "Same-Lesson transfer for get with familiar language."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "e42778f4a1f23479c8c5a9838dc521d3ff24b173c987d5782a0ef3d23c8062f9"
+  "planHash": "b5b600567fafbee0fb3027097762b0aaac584825c61b53ca286cea6ad2dd93a1"
 }

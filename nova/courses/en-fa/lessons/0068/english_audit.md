@@ -1,4 +1,4 @@
-<!-- sourceHash: 60425306ec337cb68ae28ac4172665c3b46ffab0b75ca1ea27e5f3ece954c35f -->
+<!-- sourceHash: 6f5ee83b2a1bfc44da7f03668bb8ac8c1ebb626e9aa97a75352a82b2fa4fad52 -->
 # English Audit — EN-A1-L-0068
 
 **Lesson:** The price is high
@@ -12,7 +12,7 @@
 
 **T01 · ava**
 
-Say: The price is high.
+And you?
 
 **T02 · ben**
 
@@ -23,7 +23,7 @@ The price is high.
 
 **T03 · ava**
 
-Now say: This price is high.
+And now?
 
 **T04 · ben**
 

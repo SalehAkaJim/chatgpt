@@ -74,12 +74,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this is my friend",
       "examples": [],
       "fallback": {
         "query": "this is my friend",
         "rationale": "Natural bounded identification collocation for the relationship noun sense of friend."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is my friend nora",
@@ -92,12 +93,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is my friend nora",
       "examples": [],
       "fallback": {
         "query": "is my friend Nora",
         "rationale": "Exact target-collocation window from the first learner introduction; natural identification frame around friend."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "nora your friend",
@@ -110,12 +112,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "nora your friend",
       "examples": [],
       "fallback": {
         "query": "Nora your friend",
         "rationale": "Exact target-collocation window from the follow-up question; natural short relationship question frame around friend."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is my friend",
@@ -128,16 +131,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is my friend",
       "examples": [],
       "fallback": {
         "query": "is my friend",
         "rationale": "Exact target-collocation window from the transfer learner response; natural relationship predicate frame around friend."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "a39e16ff74fc10a995fa3484cba694c0d4da2552f948d7f25af98d01a2dc84a5"
+  "planHash": "fd0768788ca648ec0507251cae1d8112cbfeddd529c444e879e84dd7eb6bdc3a"
 }

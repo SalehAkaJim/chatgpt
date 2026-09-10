@@ -90,7 +90,8 @@
           "owner": "corbinjurgens"
         }
       ],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "just one please",
@@ -105,7 +106,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "just one book",
@@ -131,11 +133,12 @@
       "fallback": {
         "query": "just one book",
         "rationale": "Just one book is a transparent A1 quantity-limiting use of just in the selected 'and nothing more' sense, with one and book already familiar."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "5b570c8a61a47cb721589f6e3305ea06369cc59db1ab8c8cde7d3bce0fc1b5f8"
+  "planHash": "8a975d7a88f29f8e859c328598f68ce93a2b42db7f780ac29c372794f6e0d3b6"
 }

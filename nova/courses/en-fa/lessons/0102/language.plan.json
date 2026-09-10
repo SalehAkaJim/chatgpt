@@ -54,12 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "nothing thank you",
       "examples": [],
       "fallback": {
         "query": "nothing thank you",
         "rationale": "Exact bounded learner target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "no nothing now",
@@ -72,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "no nothing now",
       "examples": [],
       "fallback": {
         "query": "no nothing now",
         "rationale": "Exact changed-context target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "b91ee9b9e14972d4da5adbee968579fb0f6cf48339f3ee233823cf837b85b424"
+  "planHash": "e4b6e240285cc1114fe10027035fd72b6555a2bf2cf2d73efe55a0bda0ca7626"
 }

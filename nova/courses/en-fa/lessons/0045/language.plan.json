@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0045",
   "sortOrder": 45,
   "levelKey": "A1",
-  "lessonSourceHash": "ca5bcae85eb039a5325a329ba50945e0835526eb4e888147306940e604d1ee48",
+  "lessonSourceHash": "5143f16fa3ee1c73134e502796951daa5a7a94e5320565953e8542ad12a443a5",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "read this well",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "read this well",
       "examples": [],
       "fallback": {
         "query": "read this well",
         "rationale": "Exact target-collocation fallback for the character model turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i read well",
@@ -84,12 +86,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i read well",
       "examples": [],
       "fallback": {
         "query": "i read well",
         "rationale": "Exact target-collocation fallback for the learner response."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "read this well too",
@@ -102,16 +105,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "read this well too",
       "examples": [],
       "fallback": {
         "query": "read this well too",
         "rationale": "Exact target-collocation fallback for changed-context transfer."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "127bc94c9c500a8b256a2ddd2d217131589113c37b42a0cd914cc069f5522260"
+  "planHash": "753359c1d33f4a71a5f2e767f357b1b062baf190e7318522cbe34cf5ae71dfc2"
 }

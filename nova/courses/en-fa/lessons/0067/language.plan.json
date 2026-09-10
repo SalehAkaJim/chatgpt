@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0067",
   "sortOrder": 67,
   "levelKey": "A1",
-  "lessonSourceHash": "cd0582df839e558f5547b36c7078a33b756830b17996c0aac80e1920628b5805",
+  "lessonSourceHash": "a1c0d8058a9d541057d81dbd031744df3016920c4e2fde5b42c0d5a03c7cf707",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,48 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i find iris here",
       "examples": [],
       "fallback": {
         "query": "i find iris here",
         "rationale": "Exact learner encounter/find collocation in the first context."
-      }
-    },
-    {
-      "query": "say i find iris here",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0067"
-      ],
-      "lexicalLemmas": [
-        "find"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i find iris here",
-        "rationale": "Exact turn-derived prompt collocation in the first context."
-      }
-    },
-    {
-      "query": "say i find iris at",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0067"
-      ],
-      "lexicalLemmas": [
-        "find"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i find iris at",
-        "rationale": "Exact turn-derived target window in the changed-location prompt."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i find iris at",
@@ -108,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i find iris at",
       "examples": [],
       "fallback": {
         "query": "i find iris at",
         "rationale": "Exact turn-derived target window in the changed-location learner response."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "36673265d0b877e145ab5fad8e57d93f748969488d32b36f0dd2d8a1b64c410d"
+  "planHash": "ce28d88838fb9f485bd3a48b290674c32f81e373fb1ae4cd0e5e556b5f0a0d4c"
 }

@@ -191,15 +191,15 @@
       "config": {
         "options": [
           "انجام دادن",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "خواندن",
+          "گفتن"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این کلمه نام شخص نیست."
+            "«خواندن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«گفتن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "انجام دادن"
         }
@@ -310,14 +310,14 @@
         "optionsEn": [
           "I make tea.",
           "I make coffee.",
-          "People like coffee."
+          "I read tea."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«I read tea.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "چای درست می‌کنم."
         }
@@ -363,6 +363,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

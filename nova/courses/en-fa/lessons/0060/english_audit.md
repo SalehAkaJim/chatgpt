@@ -1,4 +1,4 @@
-<!-- sourceHash: a7de784325ff77ac0e49a3617eb06af962efe592fb03521167c78d111da2a234 -->
+<!-- sourceHash: 5d0a01d0b5f1973e3522bcf61c1b54a93a248d4d1630a4c50c2f5535915770c7 -->
 # English Audit — EN-A1-L-0060
 
 **Lesson:** That man
@@ -12,7 +12,7 @@
 
 **T01 · maya**
 
-Say: That man.
+Which person?
 
 **T02 · alex**
 
@@ -23,7 +23,7 @@ That man.
 
 **T03 · maya**
 
-Now say: This man.
+And this person?
 
 **T04 · alex**
 
@@ -37,7 +37,7 @@ This man.
 **A01 · response_choice**
 
 - **English prompt:** That man.
-- **options:** مرد | یک معنی نامربوط | نام یک شخص
+- **options:** مرد | کتاب | اتاق
 
 **A02 · dialogue**
 
@@ -48,11 +48,11 @@ This man.
 
 **A04 · response_choice**
 
-- **optionsEn:** That man. | This man. | People like coffee.
+- **optionsEn:** That man. | This man. | That book.
 
 **A05 · response_choice**
 
-- **optionsEn:** This man. | That man. | People like coffee.
+- **optionsEn:** This man. | That man. | This book.
 
 **A06 · speak**
 

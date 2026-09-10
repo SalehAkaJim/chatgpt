@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i have the money",
       "examples": [],
       "fallback": {
         "query": "i have the money",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "have the money",
@@ -69,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "have the money",
       "examples": [],
       "fallback": {
         "query": "have the money",
         "rationale": "Exact target-collocation window produced by the committed usage validator."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i need money",
@@ -87,16 +89,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i need money",
       "examples": [],
       "fallback": {
         "query": "i need money",
         "rationale": "Exact changed-context transfer target."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "d6e72a27456d7f1d2183e193820af9173fb76dc937e216a20a2d476c3215cfcd"
+  "planHash": "bb0b7a6e988d6839290240826300641424d1187f3112f6aca9ffad7f243e7751"
 }

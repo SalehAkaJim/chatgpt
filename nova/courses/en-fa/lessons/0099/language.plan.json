@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "is the start",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is the start",
       "examples": [],
       "fallback": {
         "query": "is the start",
         "rationale": "Exact prompt-side target collocation generated from the first character turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "the start is at",
@@ -84,12 +86,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the start is at",
       "examples": [],
       "fallback": {
         "query": "the start is at",
         "rationale": "Exact bounded learner target collocation generated from the first learner turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "a good start",
@@ -102,16 +105,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "a good start",
       "examples": [],
       "fallback": {
         "query": "a good start",
         "rationale": "Exact target collocation shared by the second prompt and changed-context learner turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "7897cc715df2537b426e77445812289c47ec8c8ab90e7f2d9ce3f7e5f2ad9823"
+  "planHash": "ff1536a6e3f5df292cc7d5518736bdd336fd675130d9790282347108674f3fe3"
 }

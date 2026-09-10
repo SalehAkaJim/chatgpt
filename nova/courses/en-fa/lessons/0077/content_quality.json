@@ -27,11 +27,11 @@
     "version": 1,
     "reviewerType": "model",
     "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0077; not an independent human or real-learner test.",
+    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0077; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
-        "evidence": "‘This thing is hard’ and ‘This thing can wait’ are plausible short A1 utterances for referring to a current situation."
+        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
       },
       "persianMeaningQuality": {
         "score": 5,
@@ -43,11 +43,11 @@
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Distractors separate the intended situation meaning from unrelated familiar meanings without adding another correct answer."
+        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "A small household problem between established neighbors gives both learner utterances a clear conversational purpose."
+        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
       },
       "difficultyFit": {
         "score": 5,
@@ -67,24 +67,33 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; learner-experience confidence is intentionally limited."
+        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "The review covers only the bounded A1 target sense.",
-      "Generated audio prosody is not evaluated at this text stage."
+      "Generated audio prosody is not evaluated at this text stage.",
+      "No independent human or real learner test has been performed after quality-v2 remediation."
     ],
     "resolvedFindings": [
       "English usage is contextually plausible.",
       "Persian copy preserves the selected meaning.",
       "The final activity requires hidden retrieval.",
-      "The neighbors arc returns after the required spacing and the learner role rotates from the prior episode."
+      "The neighbors arc returns after the required spacing and the learner role rotates from the prior episode.",
+      "Quality-v2 remediation: A05: 'This is my house.' -> 'that thing can wait.'."
     ],
     "lessonKey": "EN-A1-L-0077",
-    "sourceHash": "3d400a41912e8b2a9d026d5816c42043220ee06ceb83db354a38e0cbd655656a",
+    "sourceHash": "a66c1d516521397e4335ef51bcfac715e46d67565cac2cad6361f8fe8847cae7",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "qualityV2Remediation": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "A05: 'This is my house.' -> 'that thing can wait.'"
+      ]
+    },
     "status": "PASS",
     "average": 4.3,
     "errors": []
@@ -96,5 +105,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "3d400a41912e8b2a9d026d5816c42043220ee06ceb83db354a38e0cbd655656a"
+  "sourceHash": "a66c1d516521397e4335ef51bcfac715e46d67565cac2cad6361f8fe8847cae7"
 }

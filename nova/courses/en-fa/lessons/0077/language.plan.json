@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0077",
   "sortOrder": 77,
   "levelKey": "A1",
-  "lessonSourceHash": "3d400a41912e8b2a9d026d5816c42043220ee06ceb83db354a38e0cbd655656a",
+  "lessonSourceHash": "a66c1d516521397e4335ef51bcfac715e46d67565cac2cad6361f8fe8847cae7",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -76,7 +76,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "this thing is hard",
@@ -89,12 +90,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this thing is hard",
       "examples": [],
       "fallback": {
         "query": "this thing is hard",
         "rationale": "Exact learner target for this bounded Lesson use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "this thing can wait",
@@ -107,12 +109,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this thing can wait",
       "examples": [],
       "fallback": {
         "query": "this thing can wait",
         "rationale": "Exact transfer target for this bounded Lesson use."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [
@@ -120,5 +123,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "783f0faaee59b87656408a33c6deefc7bc26f6cbc330236a12ab6a113b6eea4d"
+  "planHash": "fdf1288d1613f9696646586d56b48105b1f8ba4f8e7c1bdd367865391000bcee"
 }

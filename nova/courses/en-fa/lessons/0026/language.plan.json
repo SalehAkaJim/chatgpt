@@ -152,15 +152,19 @@
       "constructionKeys": [
         "EN-CONSTR-WE-ARE-IN-PLACE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "we are in room",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "we are in room",
+        "rationale": "We are in room + number is a transparent early-A1 location statement built from the selected CEFR-J we are pattern, in, and previously taught productive room-number components; the final task changes the room filler to verify recombination."
+      },
+      "fallbackMatch": "compatible_phrase"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "fc84740cb96e4b73f25c6ad30eb24b4cf5fe99f4f257ce703a991e5a987b7e7a"
+  "planHash": "5297ab44464c06a7561174c706c176332d75ac0b71511d7158569720fc682696"
 }

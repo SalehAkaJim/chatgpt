@@ -1,4 +1,4 @@
-<!-- sourceHash: 703101945db4c6b984cc2bd7bbb35478b3c73d6f190c5cfc3d6cd062625d6962 -->
+<!-- sourceHash: 447730ed992836480a35e171df9fc55c95df98bb03fd4860d7725990385dbf20 -->
 # English Audit — EN-A1-L-0043
 
 **Lesson:** Read, then help
@@ -39,7 +39,7 @@ Read, then help.
 **A01 · response_choice**
 
 - **English prompt:** Then I help.
-- **options:** بعد، سپس | یک معنی نامربوط | نام یک شخص
+- **options:** بعد، سپس | خیلی | واقعا
 
 **A02 · dialogue**
 
@@ -56,7 +56,7 @@ Read, then help.
 
 **A05 · response_choice**
 
-- **optionsEn:** Read, then help. | Then I help. | People like coffee.
+- **optionsEn:** Read, then help. | Then I help. | Read, very help.
 
 **A06 · speak**
 

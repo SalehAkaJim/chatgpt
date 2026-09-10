@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0040",
   "sortOrder": 40,
   "levelKey": "A1",
-  "lessonSourceHash": "63c8e3433f80a0432b4c944011f10d8b81b71ef13505b2fe32ec92935612569a",
+  "lessonSourceHash": "eadf884e46f4e8ab495778d18ae93ac5cf46e136fef76bfb8251794d46f71766",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -59,21 +59,21 @@
       }
     },
     {
-      "lexicalKey": "EN-LEX-PEN-01",
-      "lemma": "pen",
+      "lexicalKey": "EN-LEX-NAME-01",
+      "lemma": "name",
       "role": "review",
-      "referenceKey": "EN-REF-E7158161767216455400",
+      "referenceKey": "EN-REF-F7A6AD8E6587EDA3E40E",
       "spokenPriority": {
-        "lemma": "pen",
-        "spokenRank": null,
+        "lemma": "name",
+        "spokenRank": 223,
         "spokenFrequency": null,
         "generalFrequencyRank": null,
-        "priorityTier": "low_or_unknown"
+        "priorityTier": "core_spoken"
       },
       "pronunciation": {
-        "primaryArpabet": "P EH1 N",
+        "primaryArpabet": "N EY1 M",
         "arpabet": [
-          "P EH1 N"
+          "N EY1 M"
         ],
         "stressPattern": "1"
       }
@@ -89,11 +89,15 @@
       "constructionKeys": [
         "EN-CONSTR-0040-KNOW"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "yes i know this book",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "Yes. I know this book",
+        "rationale": "Bounded natural A1 use selected for know."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "do you know this book",
@@ -119,7 +123,8 @@
       "fallback": {
         "query": "do you know this book",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: do you know this book"
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes i know this book",
@@ -137,10 +142,11 @@
       "fallback": {
         "query": "yes i know this book",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: yes i know this book"
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
-      "query": "i know this pen",
+      "query": "i know this name",
       "kind": "target_collocation",
       "lessonKeys": [
         "EN-A1-L-0040"
@@ -148,18 +154,41 @@
       "lexicalLemmas": [
         "know"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "i know this pen",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "i know this",
+      "examples": [
+        {
+          "id": 2245929,
+          "text": "I know this.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13156746,
+          "text": "I know this melody.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Sifaks"
+        },
+        {
+          "id": 12898811,
+          "text": "I know this painter.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "araneo"
+        }
+      ],
       "fallback": {
-        "query": "I know this pen",
-        "rationale": "Same-Lesson transfer for know with familiar language."
-      }
+        "query": "I know this name",
+        "rationale": "Natural bounded transfer for know with a familiar personal-name noun."
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "c7149511a70801addc2571fa6e72d6ad1bd83a83cf65f9581ffca319e84e6a07"
+  "planHash": "6433ee0af3f7802ec1d1a60a308db5bb56af944e35eac8d673ee5dcf0e52ad70"
 }

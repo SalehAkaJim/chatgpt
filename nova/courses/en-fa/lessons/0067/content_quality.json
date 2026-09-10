@@ -26,12 +26,12 @@
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0067; not an independent human or learner test.",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0067; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
-        "evidence": "The authored find sentences are short and interpretable as encountering/coming upon a familiar person in a place."
+        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
       },
       "persianMeaningQuality": {
         "score": 4,
@@ -43,11 +43,11 @@
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Distractors contrast find with unrelated targets and the first/second responses."
+        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "A community-center arrival gives a concrete reason to mention encountering Iris."
+        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
       },
       "difficultyFit": {
         "score": 4,
@@ -67,24 +67,37 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Model/editor review only; no learner test is claimed."
+        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "find has multiple common senses; only the committed encounter/come-upon sense is intended here.",
-      "Audio prosody is not reviewed before text gates pass."
+      "Audio prosody is not reviewed before text gates pass.",
+      "No independent human or real learner test has been performed after quality-v2 remediation."
     ],
     "resolvedFindings": [
       "The Lesson does not claim mastery of all senses of find.",
       "Persian copy makes the intended bounded sense explicit.",
       "Community arc returns after six lessons with learner role rotated.",
-      "No new grammar mastery is claimed."
+      "No new grammar mastery is claimed.",
+      "Quality-v2 remediation: T01: 'Say: I find Iris here.' -> 'And you?'.",
+      "Quality-v2 remediation: T03: 'Now say: I find Iris at home.' -> 'And now?'.",
+      "Quality-v2 remediation: A04 response_choice -> fill_blank."
     ],
     "lessonKey": "EN-A1-L-0067",
-    "sourceHash": "cd0582df839e558f5547b36c7078a33b756830b17996c0aac80e1920628b5805",
+    "sourceHash": "a1c0d8058a9d541057d81dbd031744df3016920c4e2fde5b42c0d5a03c7cf707",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "qualityV2Remediation": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "T01: 'Say: I find Iris here.' -> 'And you?'",
+        "T03: 'Now say: I find Iris at home.' -> 'And now?'",
+        "A04 response_choice -> fill_blank"
+      ]
+    },
     "status": "PASS",
     "average": 4.1,
     "errors": []
@@ -96,5 +109,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "cd0582df839e558f5547b36c7078a33b756830b17996c0aac80e1920628b5805"
+  "sourceHash": "a1c0d8058a9d541057d81dbd031744df3016920c4e2fde5b42c0d5a03c7cf707"
 }

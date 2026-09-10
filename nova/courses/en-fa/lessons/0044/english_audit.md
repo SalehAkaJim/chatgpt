@@ -1,4 +1,4 @@
-<!-- sourceHash: cf1d7b2a224982203f4fb96e6236fa7864e5be974da9f0a3a0a93b4e4385cea7 -->
+<!-- sourceHash: 7bccc17ca5e1f6d114617296e1d47928bbe641cc3d4d091ed592878d939d5f71 -->
 # English Audit — EN-A1-L-0044
 
 **Lesson:** Come back
@@ -38,7 +38,7 @@ Yes. Come back with the book.
 **A01 · response_choice**
 
 - **English prompt:** Okay. I come back.
-- **options:** برگشت به جای قبل | یک معنی نامربوط | نام یک شخص
+- **options:** برگشت به جای قبل | خیلی | واقعا
 
 **A02 · dialogue**
 
@@ -55,7 +55,7 @@ Yes. Come back with the book.
 
 **A05 · response_choice**
 
-- **optionsEn:** Yes. Come back with the book. | Okay. I come back. | People like coffee.
+- **optionsEn:** Yes. Come back with the book. | Okay. I come back. | No. Come back with the book.
 
 **A06 · speak**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 14d37989ea498703ad74b48ff24d3a4944f92f6bf946c21b157dcd0aeaf7cfa5 -->
+<!-- sourceHash: 8a429ebf2bcb3f2921dd58f17514b787b1c8e975f29301aaf22335db38d596f3 -->
 # English Audit — EN-A1-L-0053
 
 **Lesson:** One day
@@ -12,7 +12,7 @@
 
 **T01 · leo**
 
-Say: One day.
+And you?
 
 **T02 · liam**
 
@@ -23,7 +23,7 @@ One day.
 
 **T03 · leo**
 
-Now say: Two days.
+And now?
 
 **T04 · liam**
 
@@ -37,7 +37,7 @@ Two days.
 **A01 · response_choice**
 
 - **English prompt:** One day.
-- **options:** روز | یک معنی نامربوط | نام یک شخص
+- **options:** روز | کتاب | اتاق
 
 **A02 · dialogue**
 
@@ -48,11 +48,11 @@ Two days.
 
 **A04 · response_choice**
 
-- **optionsEn:** One day. | Two days. | People like coffee.
+- **optionsEn:** One day. | Two days. | One book.
 
 **A05 · response_choice**
 
-- **optionsEn:** Two days. | One day. | People like coffee.
+- **optionsEn:** Two days. | One day. | And you?
 
 **A06 · speak**
 

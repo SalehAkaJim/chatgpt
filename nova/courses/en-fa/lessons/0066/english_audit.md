@@ -1,4 +1,4 @@
-<!-- sourceHash: 596230bc8ce6df8705e62a4c11803d84b741af0fbfd1daa2645c3d24d559013e -->
+<!-- sourceHash: bd6965cbe455e65041cc48844e6512c3eb21faa24e3134ab795fdf5485d6a042 -->
 # English Audit — EN-A1-L-0066
 
 **Lesson:** I always read
@@ -12,7 +12,7 @@
 
 **T01 · alex**
 
-Say: I always read.
+And you?
 
 **T02 · maya**
 
@@ -23,7 +23,7 @@ I always read.
 
 **T03 · alex**
 
-Now say: I always read here.
+And now?
 
 **T04 · maya**
 
@@ -46,9 +46,11 @@ I always read here.
 
 - **options:** من همیشه می‌خوانم. | من همیشه اینجا می‌خوانم. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** I always read. | I always read here. | The same book.
+- **answerEn:** I always read.
+- **tokensEn:** always | read. | I
+- **answerTokensEn:** I | always | read.
 
 **A05 · response_choice**
 

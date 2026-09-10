@@ -1,4 +1,4 @@
-<!-- sourceHash: a53332c3e254e77dc3219d79c584e42caba96415a5f68bb62e22a67e17f73c36 -->
+<!-- sourceHash: 94b8f516e3513a6544d2fa5fb39e08b747e75d3ce6822ec49b64a77f57903dcd -->
 # English Audit — EN-A1-L-0084
 
 **Lesson:** Put it here
@@ -46,13 +46,15 @@ Put the bag there.
 
 - **options:** آن را اینجا بگذار. | کیف را آنجا بگذار. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** Put it here. | Put the bag there. | I am at school.
+- **answerEn:** Put it here.
+- **tokensEn:** it | here. | Put
+- **answerTokensEn:** Put | it | here.
 
 **A05 · response_choice**
 
-- **optionsEn:** Put the bag there. | Put it here. | This is my house.
+- **optionsEn:** Put the bag there. | Put it here. | read the bag there.
 
 **A06 · speak**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: cd0582df839e558f5547b36c7078a33b756830b17996c0aac80e1920628b5805 -->
+<!-- sourceHash: a1c0d8058a9d541057d81dbd031744df3016920c4e2fde5b42c0d5a03c7cf707 -->
 # English Audit — EN-A1-L-0067
 
 **Lesson:** I find Iris here
@@ -12,7 +12,7 @@
 
 **T01 · iris**
 
-Say: I find Iris here.
+And you?
 
 **T02 · nina**
 
@@ -23,7 +23,7 @@ I find Iris here.
 
 **T03 · iris**
 
-Now say: I find Iris at home.
+And now?
 
 **T04 · nina**
 
@@ -46,9 +46,10 @@ I find Iris at home.
 
 - **options:** آیریس را اینجا می‌بینم. | آیریس را در خانه می‌بینم. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** I find Iris here. | I find Iris at home. | I always read.
+- **sentenceEn:** I ___ Iris here.
+- **optionsEn:** find | read | say
 
 **A05 · response_choice**
 

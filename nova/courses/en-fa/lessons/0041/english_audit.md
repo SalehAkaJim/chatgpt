@@ -1,4 +1,4 @@
-<!-- sourceHash: f4e705ad8725d81e88a04414d2330643b138fd72e1719ed901b487c7c0001cb6 -->
+<!-- sourceHash: a0d64c80e8251fe3c1492f4a30f9fb3f8b4c03a744e787e103ba4ed7ac52b44d -->
 # English Audit — EN-A1-L-0041
 
 **Lesson:** I make coffee
@@ -39,7 +39,7 @@ I make tea.
 **A01 · response_choice**
 
 - **English prompt:** I make coffee.
-- **options:** انجام دادن | یک معنی نامربوط | نام یک شخص
+- **options:** انجام دادن | خواندن | گفتن
 
 **A02 · dialogue**
 
@@ -56,7 +56,7 @@ I make tea.
 
 **A05 · response_choice**
 
-- **optionsEn:** I make tea. | I make coffee. | People like coffee.
+- **optionsEn:** I make tea. | I make coffee. | I read tea.
 
 **A06 · speak**
 

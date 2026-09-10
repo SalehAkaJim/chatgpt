@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0080",
   "sortOrder": 80,
   "levelKey": "A1",
-  "lessonSourceHash": "cfa042bfd349541ef934767a234e5c03ca4d536bf104e3e4cf925ace10031eea",
+  "lessonSourceHash": "7bcec60e3feb829670060cb04cef77aeb9f427e3ae557a3cdac929dab7c6fb78",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "show me the photo",
       "examples": [],
       "fallback": {
         "query": "show me the photo",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "show me the",
@@ -69,16 +70,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "show me the",
       "examples": [],
       "fallback": {
         "query": "show me the",
         "rationale": "Exact target-collocation window generated around show in both learner responses."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "9116b6eb6cc05713d4fd4bba562536044625dcbe7ad21a69a994ea81303f8da3"
+  "planHash": "a66dfc2bf65b986aab7fb8cc56c5dd8435e1327bd11beb58f6ec5f5f07baef4a"
 }

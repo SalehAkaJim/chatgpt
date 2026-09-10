@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0080; not an independent human or real-learner test.",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0080; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 5,
-      "evidence": "‘Show me the photo’ and ‘Show me the map’ are natural short A1 requests."
+      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Distractors contrast the intended verb with unrelated familiar actions."
+      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
     },
     "dialoguePlausibility": {
       "score": 5,
-      "evidence": "A walking-route conversation with a photo and map naturally motivates requests to show visual items."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,22 +42,31 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; confidence is limited to model/editor review."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "Only the bounded A1 target sense is reviewed.",
-    "Audio prosody is outside this text-stage review."
+    "Audio prosody is outside this text-stage review.",
+    "No independent human or real learner test has been performed after quality-v2 remediation."
   ],
   "resolvedFindings": [
     "English target requests are idiomatic.",
     "Persian meaning stays consistent.",
     "The final task requires hidden retrieval.",
-    "The walking-group arc returns after required spacing with learner-role rotation."
+    "The walking-group arc returns after required spacing with learner-role rotation.",
+    "Quality-v2 remediation: A05: 'This is my house.' -> 'read me the map.'."
   ],
   "lessonKey": "EN-A1-L-0080",
-  "sourceHash": "cfa042bfd349541ef934767a234e5c03ca4d536bf104e3e4cf925ace10031eea",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "7bcec60e3feb829670060cb04cef77aeb9f427e3ae557a3cdac929dab7c6fb78",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "qualityV2Remediation": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "A05: 'This is my house.' -> 'read me the map.'"
+    ]
+  }
 }

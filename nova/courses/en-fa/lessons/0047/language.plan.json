@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0047",
   "sortOrder": 47,
   "levelKey": "A1",
-  "lessonSourceHash": "282a722a0a2d01e66c95525786b4f1576b9ff62ec33b41e68889183e24abbb54",
+  "lessonSourceHash": "b84c68dad1cd9396e526523a8e67dba80affc2f86fcb703b689b2a188a514869",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -72,11 +72,15 @@
       "constructionKeys": [
         "EN-CONSTR-0047-WAY"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes this way is good",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "yes this way is good",
+        "rationale": "Exact target-collocation fallback for this bounded A1 use."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "this way",
@@ -89,12 +93,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this way",
       "examples": [],
       "fallback": {
         "query": "this way",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes this way is good",
@@ -107,12 +112,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes this way is good",
       "examples": [],
       "fallback": {
         "query": "yes this way is good",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "and that way",
@@ -125,12 +131,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "and that way",
       "examples": [],
       "fallback": {
         "query": "and that way",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "that way is good",
@@ -143,16 +150,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "that way is good",
       "examples": [],
       "fallback": {
         "query": "that way is good",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "53f63e2c6e94bb866f776bedfd85eb204450c7836a9c4362fbf4f1377001949a"
+  "planHash": "8b35b634b9b455767bc7e71482e40818f539835f0e3c72f233f1f1dd925932a1"
 }

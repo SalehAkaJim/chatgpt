@@ -1,4 +1,4 @@
-<!-- sourceHash: 5dcc5d563e40a83cc2cb5bf2272568935f9c30e8e27690b94dae8f1134ad93df -->
+<!-- sourceHash: e56e49b6513a0d4377bfd990936a877f764b621c1bbd2849078a0e737e3390c7 -->
 # English Audit — EN-A1-L-0042
 
 **Lesson:** I think there is a book
@@ -39,7 +39,7 @@ I think there is a pen.
 **A01 · response_choice**
 
 - **English prompt:** I think there is a book.
-- **options:** فکر کردن، نظر دادن | یک معنی نامربوط | نام یک شخص
+- **options:** فکر کردن، نظر دادن | خواندن | گفتن
 
 **A02 · dialogue**
 
@@ -56,7 +56,7 @@ I think there is a pen.
 
 **A05 · response_choice**
 
-- **optionsEn:** I think there is a pen. | I think there is a book. | People like coffee.
+- **optionsEn:** I think there is a pen. | I think there is a book. | I read there is a pen.
 
 **A06 · speak**
 

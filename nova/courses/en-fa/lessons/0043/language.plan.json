@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0043",
   "sortOrder": 43,
   "levelKey": "A1",
-  "lessonSourceHash": "703101945db4c6b984cc2bd7bbb35478b3c73d6f190c5cfc3d6cd062625d6962",
+  "lessonSourceHash": "447730ed992836480a35e171df9fc55c95df98bb03fd4860d7725990385dbf20",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -94,7 +94,8 @@
       "sampleCount": 0,
       "evidenceQuery": "action then action",
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "then i help",
@@ -112,7 +113,8 @@
       "fallback": {
         "query": "Then I help",
         "rationale": "Bounded natural A1 use selected for then."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "read then",
@@ -130,7 +132,8 @@
       "fallback": {
         "query": "read then",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: read then"
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "read then help",
@@ -148,11 +151,12 @@
       "fallback": {
         "query": "read then help",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: read then help"
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "e8724353c72ed83f8a9eb6dabbcff99d267690613555de53cd69fd0b99ca8bc5"
+  "planHash": "b44605a58e885eac61bc877f6cf32a34129605078baa65e225ee092c2ae61fa0"
 }

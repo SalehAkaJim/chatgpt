@@ -296,10 +296,10 @@
       "sortOrder": 14,
       "status": "PASS",
       "warnings": [
-        "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
+        "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
@@ -726,7 +726,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 2
+      "usageEvidenceCount": 1
     },
     {
       "lessonKey": "EN-A1-L-0054",
@@ -736,7 +736,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0055",
@@ -746,7 +746,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0056",
@@ -756,7 +756,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0057",
@@ -766,7 +766,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 5
+      "usageEvidenceCount": 3
     },
     {
       "lessonKey": "EN-A1-L-0058",
@@ -776,7 +776,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0059",
@@ -796,7 +796,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0061",
@@ -806,7 +806,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 3
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0062",
@@ -816,7 +816,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 3
     },
     {
       "lessonKey": "EN-A1-L-0063",
@@ -836,7 +836,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0065",
@@ -846,7 +846,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 3
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0066",
@@ -856,7 +856,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0067",
@@ -866,7 +866,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 4
+      "usageEvidenceCount": 2
     },
     {
       "lessonKey": "EN-A1-L-0068",
@@ -895,7 +895,7 @@
       "warnings": [],
       "errors": [],
       "grammarEvidenceCount": 1,
-      "lexicalEvidenceCount": 1,
+      "lexicalEvidenceCount": 2,
       "usageEvidenceCount": 2
     },
     {
@@ -1204,7 +1204,7 @@
       "errors": [],
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 1,
-      "usageEvidenceCount": 3
+      "usageEvidenceCount": 4
     },
     {
       "lessonKey": "EN-A1-L-0101",
@@ -1636,7 +1636,8 @@
       "status": "PASS",
       "errors": [],
       "warnings": [
-        "review lexical lemma 'book' was not marked due by the curriculum engine"
+        "review lexical lemma 'book' was not marked due by the curriculum engine",
+        "review lexical lemma 'name' was not marked due by the curriculum engine"
       ]
     },
     {
@@ -1974,7 +1975,9 @@
       "enforced": true,
       "status": "PASS",
       "errors": [],
-      "warnings": []
+      "warnings": [
+        "review lexical lemma 'man' was not marked due by the curriculum engine"
+      ]
     },
     {
       "schemaVersion": 1,

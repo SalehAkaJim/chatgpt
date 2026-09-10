@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "we can go together",
       "examples": [],
       "fallback": {
         "query": "we can go together",
         "rationale": "Natural bounded collocation for doing a movement activity with another person."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "can go together",
@@ -69,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "can go together",
       "examples": [],
       "fallback": {
         "query": "can go together",
         "rationale": "Exact target-collocation window extracted from the first learner turn; natural A1 movement frame with together."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "can walk together too",
@@ -87,16 +89,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "can walk together too",
       "examples": [],
       "fallback": {
         "query": "can walk together too",
         "rationale": "Exact target-collocation window extracted from the transfer learner turn; natural changed-action frame with together."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "e0b5e5bdda430f25ce1646e58c1f59bbf0dd89e6542b2b8678a92e8443939c86"
+  "planHash": "051a8646a3b0b215e0d33a6f0675f022b27155084c857b75a301ed3acbfbacca"
 }

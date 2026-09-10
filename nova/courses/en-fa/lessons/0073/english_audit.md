@@ -1,4 +1,4 @@
-<!-- sourceHash: 287a377cf298c971742623edd51e1e3b531d90fcdc6be8052173d4c3d892fed1 -->
+<!-- sourceHash: 28a57416e38b9f06bff0fabddb70cb7ba8b4e73c6475ff0bfb78698b843d588c -->
 # English Audit — EN-A1-L-0073
 
 **Lesson:** I can give you coffee
@@ -46,9 +46,10 @@ I can give you tea.
 
 - **options:** می‌توانم به تو قهوه بدهم. | می‌توانم به تو چای بدهم. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** I can give you coffee. | I can give you tea. | This is my own book.
+- **sentenceEn:** I can ___ you coffee.
+- **optionsEn:** give | read | say
 
 **A05 · response_choice**
 

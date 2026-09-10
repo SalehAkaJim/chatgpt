@@ -54,12 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "tell me the",
       "examples": [],
       "fallback": {
         "query": "tell me the",
         "rationale": "Exact bounded learner target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes tell me now",
@@ -72,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes tell me now",
       "examples": [],
       "fallback": {
         "query": "yes tell me now",
         "rationale": "Exact changed-context target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "4ff80c3c27c8067388962b9fe3b505fd3208b2067b2f3cc0fa07aac4df6df945"
+  "planHash": "680d2b75ee923fd11ad0f9b8ad4ff3f0d4b327517d0e77cbe70bd01b955c86c8"
 }

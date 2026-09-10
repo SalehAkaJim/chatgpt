@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "what kind of tea is this",
       "examples": [],
       "fallback": {
         "query": "what kind of tea is this",
         "rationale": "Natural bounded construction for asking the category/type of a familiar item."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "what kind of tea",
@@ -69,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "what kind of tea",
       "examples": [],
       "fallback": {
         "query": "what kind of tea",
         "rationale": "Exact target-collocation window extracted from the first learner question; natural A1 category frame around kind."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "what kind of drink",
@@ -87,16 +89,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "what kind of drink",
       "examples": [],
       "fallback": {
         "query": "what kind of drink",
         "rationale": "Exact target-collocation window extracted from the transfer learner question; natural changed-noun frame around kind."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "e055d388e88342dc721dbe92e8fd49e5bcdf91b887c0db6e3703bfa81704a082"
+  "planHash": "478168e0dfdddc5a72e2bb71c4511e21ff89cc30d9f93ef69f2b9254431e987a"
 }

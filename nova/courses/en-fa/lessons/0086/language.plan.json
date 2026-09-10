@@ -54,12 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the second stop",
       "examples": [],
       "fallback": {
         "query": "the second stop",
         "rationale": "Exact bounded learner target and target-collocation window."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "take the second turn",
@@ -72,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "take the second turn",
       "examples": [],
       "fallback": {
         "query": "take the second turn",
         "rationale": "Exact changed-context transfer target."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "fe2d682c905bde56e0b2c0c5603d21a8ae4b113959e25bb56629e63ec9ea827a"
+  "planHash": "0e6678f0d485a28740cc8e4c446edca8b271c887663e248a96a672d38e3b3fc6"
 }

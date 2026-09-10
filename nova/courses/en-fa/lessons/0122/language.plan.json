@@ -77,12 +77,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this course is new",
       "examples": [],
       "fallback": {
         "query": "this course is new",
         "rationale": "Bounded collocation for the education-series noun sense of course."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "the english course",
@@ -95,12 +96,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the english course",
       "examples": [],
       "fallback": {
         "query": "the English course",
         "rationale": "Exact target-collocation window from the follow-up prompt; natural noun phrase for an educational course."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "the english course is good",
@@ -113,16 +115,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the english course is good",
       "examples": [],
       "fallback": {
         "query": "the English course is good",
         "rationale": "Changed-description collocation preserving the same sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "e27583a59c6ab0585dfdb4627075a8f9c5867746a70732a8895ec68ff82b5432"
+  "planHash": "92df70d6252eacdd3d4f494e7b27b5744226c83f148b83d03a5bad4b7b80b9a9"
 }

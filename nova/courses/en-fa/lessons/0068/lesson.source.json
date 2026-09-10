@@ -101,8 +101,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "ava",
-      "textEn": "Say: The price is high.",
-      "translationFa": "بگو: قیمت بالاست.",
+      "textEn": "And you?",
+      "translationFa": "تو چطور؟",
       "audioRequired": true
     },
     {
@@ -121,8 +121,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "ava",
-      "textEn": "Now say: This price is high.",
-      "translationFa": "حالا بگو: این قیمت بالاست.",
+      "textEn": "And now?",
+      "translationFa": "حالا چطور؟",
       "audioRequired": true
     },
     {
@@ -319,6 +319,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

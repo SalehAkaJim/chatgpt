@@ -27,11 +27,11 @@
     "version": 1,
     "reviewerType": "model",
     "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0081; not an independent human or real-learner test.",
+    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0081; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
-        "evidence": "‘I feel good’ and ‘I feel tired’ are natural A1 statements of condition."
+        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
       },
       "persianMeaningQuality": {
         "score": 5,
@@ -43,11 +43,11 @@
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Distractors remain semantically distinct from the target action."
+        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
       },
       "dialoguePlausibility": {
         "score": 5,
-        "evidence": "A quiet library check-in can naturally prompt brief statements about how someone feels."
+        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
       },
       "difficultyFit": {
         "score": 5,
@@ -67,24 +67,35 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; confidence is limited to model/editor review."
+        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Only the bounded A1 state sense is reviewed.",
-      "Audio prosody is not evaluated at this stage."
+      "Audio prosody is not evaluated at this stage.",
+      "No independent human or real learner test has been performed after quality-v2 remediation."
     ],
     "resolvedFindings": [
       "English target utterances are natural.",
       "Persian meaning remains consistent.",
       "Final production is hidden retrieval.",
-      "The library arc returns after required spacing with learner-role rotation."
+      "The library arc returns after required spacing with learner-role rotation.",
+      "Quality-v2 remediation: A05: 'This is my house.' -> 'I read tired.'.",
+      "Quality-v2 remediation: A04 response_choice -> sentence_order."
     ],
     "lessonKey": "EN-A1-L-0081",
-    "sourceHash": "dd1456cd338a8a19fdaafefd819322cd313ba1cae2d8055e00cb5678740b06ce",
+    "sourceHash": "131f1c5d905ee5d51101b6b7b26780e29019cacc90febfe860e303cd1f83421c",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "qualityV2Remediation": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "A05: 'This is my house.' -> 'I read tired.'",
+        "A04 response_choice -> sentence_order"
+      ]
+    },
     "status": "PASS",
     "average": 4.6,
     "errors": []
@@ -96,5 +107,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "dd1456cd338a8a19fdaafefd819322cd313ba1cae2d8055e00cb5678740b06ce"
+  "sourceHash": "131f1c5d905ee5d51101b6b7b26780e29019cacc90febfe860e303cd1f83421c"
 }

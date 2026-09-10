@@ -77,7 +77,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "one is different",
@@ -90,12 +91,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "one is different",
       "examples": [],
       "fallback": {
         "query": "one is different",
         "rationale": "Exact target collocation generated from the first learner turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "color is different",
@@ -108,16 +110,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "color is different",
       "examples": [],
       "fallback": {
         "query": "color is different",
         "rationale": "Exact changed-context target collocation generated from the second learner turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "80de89a0d7771acde290da881e2fcce2890a48e611b5b56ff18e26b1c01db423"
+  "planHash": "c885c6e0f5d8a0b56a2e66850c083d24ebfb5bdfbb3f6fa4e9d3548bab8f37ef"
 }

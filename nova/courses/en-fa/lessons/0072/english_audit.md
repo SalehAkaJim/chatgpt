@@ -1,4 +1,4 @@
-<!-- sourceHash: d6bed6378c9b7e506f571e9341cd4393062e8a90adfca35a64d8b36f1537eaf6 -->
+<!-- sourceHash: 0feb91d813762b683d4bfc063a3ca0dfde65705f0907719339f4438082ecf456 -->
 # English Audit — EN-A1-L-0072
 
 **Lesson:** Is this new?
@@ -41,9 +41,11 @@ Is that new?
 
 - **options:** این جدید است؟ | آن جدید است؟ | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** Is this new? | Is that new? | This is new.
+- **answerEn:** Is this new?
+- **tokensEn:** this | new? | Is
+- **answerTokensEn:** Is | this | new?
 
 **A05 · response_choice**
 

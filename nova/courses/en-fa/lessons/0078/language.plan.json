@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0078",
   "sortOrder": 78,
   "levelKey": "A1",
-  "lessonSourceHash": "5222852ec7d4363f7d7962f81fb2d077cc6cc1c0fba0dc8ee64b4f33819e48c0",
+  "lessonSourceHash": "6209be7abfa08c5ee1677966c78cf79695d50b091250bb254dd72f8568010627",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -55,12 +55,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "say it again",
       "examples": [],
       "fallback": {
         "query": "say it again",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "try again",
@@ -73,16 +74,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "try again",
       "examples": [],
       "fallback": {
         "query": "try again",
         "rationale": "Exact transfer target."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "86d48390b4fe5b95cc755be7921f8053ce33638442f5b1a9a2d0603ac7b97797"
+  "planHash": "4d9a567e91518856bfa20c6f0ec89280bde3300d59e44bf349e0996acf924d13"
 }

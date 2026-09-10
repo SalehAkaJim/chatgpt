@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0058",
   "sortOrder": 58,
   "levelKey": "A1",
-  "lessonSourceHash": "16627ad08e4b54368ae80a568516b1aa603df07153e9495bbd6e7c5e55a9f21e",
+  "lessonSourceHash": "3b765295bc6f226686e2e3676be683bf22196e9c8ef23ef92eae2a1b7acdf8c2",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,48 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "a great big room",
       "examples": [],
       "fallback": {
         "query": "a great big room",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say a great big room",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0058"
-      ],
-      "lexicalLemmas": [
-        "great"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say a great big room",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say a great big bag",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0058"
-      ],
-      "lexicalLemmas": [
-        "great"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say a great big bag",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "a great big bag",
@@ -108,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "a great big bag",
       "examples": [],
       "fallback": {
         "query": "a great big bag",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "8ec8ac6502aebea436fd970a49e5d98fad69a32711f557091cb1c72d358e530e"
+  "planHash": "25671c18bce1be305cbb140a26be0c8d8ac3516bb8478264ec7fd80bafa91776"
 }

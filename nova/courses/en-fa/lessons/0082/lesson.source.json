@@ -245,27 +245,26 @@
     },
     {
       "activityKey": "A04",
-      "type": "response_choice",
-      "instructionFa": "جواب بخش اول را پیدا کن.",
-      "promptFa": "کدام جمله گفته شد؟",
+      "type": "fill_blank",
+      "instructionFa": "واژه درست را برای کامل کردن جمله انتخاب کن.",
       "config": {
+        "sentenceEn": "This is my ___.",
         "optionsEn": [
-          "This is my family.",
-          "My family is here.",
-          "I am at school."
+          "family",
+          "book",
+          "room"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است.",
-            "این جواب بخش دوم است.",
-            "این جمله نامربوط است."
+            "درست است؛ family همان واژه هدف این جمله است.",
+            "book معنی دیگری دارد و این جمله را با هدف درس کامل نمی‌کند.",
+            "room در این موقعیت جای واژه هدف نیست."
           ],
-          "correctFa": "This is my family."
+          "correctFa": "family"
         }
       },
       "metadata": {
-        "learningDemand": "recognition",
         "evidenceKind": "recognition_or_selection"
       }
     },
@@ -278,14 +277,14 @@
         "optionsEn": [
           "My family is here.",
           "This is my family.",
-          "This is my house."
+          "your family is here."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«your family is here.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "خانواده من اینجاست."
         }
@@ -331,6 +330,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

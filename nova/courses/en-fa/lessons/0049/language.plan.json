@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0049",
   "sortOrder": 49,
   "levelKey": "A1",
-  "lessonSourceHash": "48fa32e48c8b43d8a5529351218aec6634df46a12af0c60a445aa8c17181d7ed",
+  "lessonSourceHash": "c7e81acf74721ca725f662821d6a7b446a6c117b059dc30312c1cd11bed3d1e6",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -68,12 +68,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "it is really good",
       "examples": [],
       "fallback": {
         "query": "it is really good",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "it is really good too",
@@ -86,16 +87,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "it is really good too",
       "examples": [],
       "fallback": {
         "query": "it is really good too",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "217b972461f0c4d24eb7e937a085826981c3d7e5f917944158e12ca6490212f9"
+  "planHash": "8a3b4fa4f43f0c2ef7cb2959849c4b33c4829c560a2f94438e58e92091cc1196"
 }

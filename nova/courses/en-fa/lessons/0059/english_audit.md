@@ -1,4 +1,4 @@
-<!-- sourceHash: 62876c7991c9d7473b35094a80397a80bee2cdcbeb629641878e5cd5a6d2f257 -->
+<!-- sourceHash: 5bbe01d7991d747f99b3c1f24bc1c41ee1a837aeba8a0d6df5589a3dc234d7c0 -->
 # English Audit — EN-A1-L-0059
 
 **Lesson:** This is love
@@ -12,7 +12,7 @@
 
 **T01 · liam**
 
-Say: This is love.
+What is this?
 
 **T02 · leo**
 
@@ -23,7 +23,7 @@ This is love.
 
 **T03 · liam**
 
-Now say: It is love.
+And now?
 
 **T04 · leo**
 
@@ -37,7 +37,7 @@ It is love.
 **A01 · response_choice**
 
 - **English prompt:** This is love.
-- **options:** عشق، محبت | یک معنی نامربوط | نام یک شخص
+- **options:** عشق، محبت | کتاب | اتاق
 
 **A02 · dialogue**
 
@@ -48,11 +48,11 @@ It is love.
 
 **A04 · response_choice**
 
-- **optionsEn:** This is love. | It is love. | People like coffee.
+- **optionsEn:** This is love. | It is love. | that is love.
 
 **A05 · response_choice**
 
-- **optionsEn:** It is love. | This is love. | People like coffee.
+- **optionsEn:** It is love. | This is love. | It is book.
 
 **A06 · speak**
 

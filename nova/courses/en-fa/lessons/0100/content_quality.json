@@ -15,7 +15,7 @@
       "code": "CQ-W01",
       "message": "Same full target sentence is reused across multiple scored activities.",
       "data": {
-        "normalizedTarget": "next week is free",
+        "normalizedTarget": "i'm free next week",
         "activityKeys": [
           "A05",
           "A06"
@@ -27,11 +27,11 @@
     "version": 1,
     "reviewerType": "model",
     "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0100; not an independent human or real-learner test.",
+    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0100; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
-        "evidence": "“This week is busy.” and “Next week is free.” are natural short A1 time-reference utterances."
+        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
       },
       "persianMeaningQuality": {
         "score": 5,
@@ -43,11 +43,11 @@
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Distractors contrast the target responses with familiar non-target time language."
+        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "A study-calendar conversation gives the pair a concrete reason to compare this week with next week."
+        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
       },
       "difficultyFit": {
         "score": 5,
@@ -67,24 +67,33 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; learner-experience confidence is intentionally limited."
+        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "The review covers only the bounded A1 target sense.",
-      "Generated audio prosody is not evaluated at this text stage."
+      "Generated audio prosody is not evaluated at this text stage.",
+      "No independent human or real learner test has been performed after quality-v2 remediation."
     ],
     "resolvedFindings": [
       "English usage is contextually plausible.",
       "Persian copy preserves the selected meaning.",
       "The final activity requires hidden retrieval.",
-      "The library arc returns after 5 Lessons and learner role rotates from Leo to Liam."
+      "The library arc returns after 5 Lessons and learner role rotates from Leo to Liam.",
+      "Quality-v2 remediation: rewrite impersonal week-is-busy/free targets as natural personal availability statements."
     ],
     "lessonKey": "EN-A1-L-0100",
-    "sourceHash": "7bfe71acf3b6dc6c539951103d7f15eb8b817d783f905a8e7abb355e8e1a07e3",
+    "sourceHash": "5705de9b44e04bf6628aec0d7953642f0a8505cd4e28c3d5134160aa33317b7a",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "qualityV2Remediation": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "rewrite impersonal week-is-busy/free targets as natural personal availability statements"
+      ]
+    },
     "status": "PASS",
     "average": 4.4,
     "errors": []
@@ -96,5 +105,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "7bfe71acf3b6dc6c539951103d7f15eb8b817d783f905a8e7abb355e8e1a07e3"
+  "sourceHash": "5705de9b44e04bf6628aec0d7953642f0a8505cd4e28c3d5134160aa33317b7a"
 }

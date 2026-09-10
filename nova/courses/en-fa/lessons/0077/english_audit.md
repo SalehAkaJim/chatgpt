@@ -1,4 +1,4 @@
-<!-- sourceHash: 3d400a41912e8b2a9d026d5816c42043220ee06ceb83db354a38e0cbd655656a -->
+<!-- sourceHash: a66c1d516521397e4335ef51bcfac715e46d67565cac2cad6361f8fe8847cae7 -->
 # English Audit — EN-A1-L-0077
 
 **Lesson:** This thing is hard
@@ -52,7 +52,7 @@ This thing can wait.
 
 **A05 · response_choice**
 
-- **optionsEn:** This thing can wait. | This thing is hard. | This is my house.
+- **optionsEn:** This thing can wait. | This thing is hard. | that thing can wait.
 
 **A06 · speak**
 

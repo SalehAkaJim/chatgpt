@@ -111,11 +111,15 @@
       "constructionKeys": [
         "EN-CONSTR-0038-ONLY"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "is the only new book",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "Ben reads the only new book",
+        "rationale": "Bounded natural A1 use selected for only."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "reads the only new book",
@@ -133,7 +137,8 @@
       "fallback": {
         "query": "reads the only new book",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: reads the only new book"
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "only one",
@@ -173,7 +178,8 @@
       "fallback": {
         "query": "only one",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: only one"
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is the only new book",
@@ -191,11 +197,12 @@
       "fallback": {
         "query": "is the only new book",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: is the only new book"
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "ae44499b9dda94a390ed37f228bc32ee83e1af94a6a0182d36421300728f8bf3"
+  "planHash": "544e64a4f8f290294adb5bb53dd78a306f60c619637133eaced02af4e4ed190a"
 }

@@ -213,7 +213,8 @@
           "owner": "kylewii"
         }
       ],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "no i'm not",
@@ -256,11 +257,12 @@
       "fallback": {
         "query": "no i'm not",
         "rationale": "A short No, I'm not. reply is the direct natural first-person negative answer to the immediately preceding Are you ...? question. The Lesson intentionally does not force a longer negative sentence merely to demonstrate filler changes."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "fa792eac107fb8d67eb04ff263b55b837221d9ec6265681b5d80d141d8129c76"
+  "planHash": "188ca8feeb28790055b90a3226d1403f5c815ecaff30d7382d183d2efeac2c0f"
 }

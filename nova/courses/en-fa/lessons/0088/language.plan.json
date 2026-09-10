@@ -81,7 +81,8 @@
       "fallback": {
         "query": "i leave at six",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i leave at seven",
@@ -121,11 +122,12 @@
       "fallback": {
         "query": "i leave at seven",
         "rationale": "Exact changed-context transfer target."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "7f5c04c4ec4c3435c71da56ce76abe51d81601c2fb30ed60b3d082a80ae8495e"
+  "planHash": "d4031f6333c0d05f57943ac91aafb2aadf86efabf6decba1838b2ad8613ffc8a"
 }

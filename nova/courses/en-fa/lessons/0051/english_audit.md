@@ -1,4 +1,4 @@
-<!-- sourceHash: 8cd56294814d171499b20772b7e7cbefbee69bb8d32083b6ee00aa05c80d2f08 -->
+<!-- sourceHash: 7a89ac4d0519273199c205a7a65c5b38684bff230d0d310306d305dd75d97ec8 -->
 # English Audit — EN-A1-L-0051
 
 **Lesson:** Reading is work
@@ -37,7 +37,7 @@ Yes. This is work too.
 **A01 · response_choice**
 
 - **English prompt:** Yes. Reading is work.
-- **options:** فعالیت، کار | یک معنی نامربوط | نام یک شخص
+- **options:** فعالیت، کار | کتاب | اتاق
 
 **A02 · dialogue**
 
@@ -54,7 +54,7 @@ Yes. This is work too.
 
 **A05 · response_choice**
 
-- **optionsEn:** Yes. This is work too. | Yes. Reading is work. | People like coffee.
+- **optionsEn:** Yes. This is work too. | Yes. Reading is work. | No. This is work too.
 
 **A06 · speak**
 

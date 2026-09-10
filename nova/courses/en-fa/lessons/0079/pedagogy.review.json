@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0079; not an independent human or real-learner test.",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0079; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
-      "evidence": "‘The bus is at the end’ and ‘Wait at the end’ are plausible short location utterances in a route/waiting context."
+      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Distractors do not create a competing endpoint interpretation."
+      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "A cafe waiting-line conversation can naturally involve identifying an endpoint and telling someone where to wait."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,22 +42,33 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; confidence is limited to model/editor review."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "Only the bounded endpoint sense is reviewed.",
-    "Audio prosody is outside this text-stage review."
+    "Audio prosody is outside this text-stage review.",
+    "No independent human or real learner test has been performed after quality-v2 remediation."
   ],
   "resolvedFindings": [
     "Target meaning is stable across both learner turns.",
     "Persian translations preserve the intended endpoint sense.",
     "Final production is hidden retrieval.",
-    "The cafe arc returns after required spacing with learner-role rotation."
+    "The cafe arc returns after required spacing with learner-role rotation.",
+    "Quality-v2 remediation: A05: 'This is my house.' -> 'Wait at the book.'.",
+    "Quality-v2 remediation: A04 response_choice -> fill_blank."
   ],
   "lessonKey": "EN-A1-L-0079",
-  "sourceHash": "7e0d824b5f4028fde5e4202c08693f926934305ed9c9396933587f359c898cb9",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "9ac5b842405c91bbf0a7dd35ed8982e9358cc9cc185f89e4e7b41077c6f908a7",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "qualityV2Remediation": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "A05: 'This is my house.' -> 'Wait at the book.'",
+      "A04 response_choice -> fill_blank"
+    ]
+  }
 }

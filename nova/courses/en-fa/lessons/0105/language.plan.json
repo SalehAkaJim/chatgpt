@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "is a change",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is a change",
       "examples": [],
       "fallback": {
         "query": "is a change",
         "rationale": "Exact bounded learner target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "a time change",
@@ -84,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "a time change",
       "examples": [],
       "fallback": {
         "query": "a time change",
         "rationale": "Exact changed-context target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "8a7ca3356d5ba5e12870dbd97d1f2263f0c2e7041c33166ebfccc47c0ae3d4d4"
+  "planHash": "66b69fad5ead29721a8d375c29256c33548e1d1316fa65b212df3ff84f927734"
 }

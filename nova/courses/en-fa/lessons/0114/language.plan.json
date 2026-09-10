@@ -54,7 +54,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "is a job here",
@@ -67,12 +68,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is a job here",
       "examples": [],
       "fallback": {
         "query": "is a job here",
         "rationale": "Exact deterministic target-collocation window from There is a job here for the bounded employment sense."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is a job at the",
@@ -85,16 +87,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is a job at the",
       "examples": [],
       "fallback": {
         "query": "is a job at the",
         "rationale": "Exact deterministic validator window from the natural utterance There is a job at the cafe, preserving the employment sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "3f1606598780a9ca433e54076e1e5162dc10b592e1ac0940f40e54eac1210c62"
+  "planHash": "53743a33c7f462ba5bcdcd8cde4553cb5f8b2c11b46d625daa060b064609051a"
 }

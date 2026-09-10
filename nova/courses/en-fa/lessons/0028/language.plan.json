@@ -51,15 +51,19 @@
       "constructionKeys": [
         "EN-CONSTR-THEY-ARE-FROM-PLACE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "they are from canada",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "they are from canada",
+        "rationale": "They are from + country is a transparent early-A1 transfer of the previously taught origin frame to the selected CEFR-J they are pattern; no phrase is promoted to the words layer."
+      },
+      "fallbackMatch": "compatible_phrase"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "638e487957db925785d3ef5085a2425bcadef1167c1e80c6128c7509ad802ff0"
+  "planHash": "10ac4b5458d4a88e0de05782aef31e3c2a3afde0b468c859d148ed0306bc930f"
 }

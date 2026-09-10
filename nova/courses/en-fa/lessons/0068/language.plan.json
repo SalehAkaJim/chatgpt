@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0068",
   "sortOrder": 68,
   "levelKey": "A1",
-  "lessonSourceHash": "60425306ec337cb68ae28ac4172665c3b46ffab0b75ca1ea27e5f3ece954c35f",
+  "lessonSourceHash": "6f5ee83b2a1bfc44da7f03668bb8ac8c1ebb626e9aa97a75352a82b2fa4fad52",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "price is high",
@@ -66,16 +67,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "price is high",
       "examples": [],
       "fallback": {
         "query": "price is high",
         "rationale": "Exact turn-derived target collocation shared by both price contexts."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "5839ef17b3733491b330305965abd73ba68b7f01414207332dc790303972553d"
+  "planHash": "a8536b51e4f616ba97929cefcd6cbf11cf983260c6b6a42e7fbe79c0e2a1beb3"
 }

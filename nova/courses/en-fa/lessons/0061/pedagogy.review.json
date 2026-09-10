@@ -1,12 +1,12 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-09",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0061; not an independent human or learner test.",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0061; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 5,
-      "evidence": "My home and This is my home are short, ordinary A1 expressions in an address-card scene."
+      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Distractors contrast the target with unrelated place words and prior lesson language."
+      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "An address-card scene gives the speakers a concrete reason to identify home."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,22 +42,35 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "Model/editor review only; no real learner test is claimed."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "Review is limited to the bounded A1 outcome.",
-    "Audio prosody is not reviewed before text gates pass."
+    "Audio prosody is not reviewed before text gates pass.",
+    "No independent human or real learner test has been performed after quality-v2 remediation."
   ],
   "resolvedFindings": [
     "home matches the committed place-where-you-live reference sense.",
     "Persian meaning is direct and natural.",
     "The community arc returns after six lessons with the learner role rotated.",
-    "No new grammar mastery is claimed."
+    "No new grammar mastery is claimed.",
+    "Quality-v2 remediation: T01: 'Say: My home.' -> 'And you?'.",
+    "Quality-v2 remediation: T03: 'Now say: This is my home.' -> 'And this one?'.",
+    "Quality-v2 remediation: A04 response_choice -> fill_blank."
   ],
   "lessonKey": "EN-A1-L-0061",
-  "sourceHash": "dd727a76cc16673cd15e9ede138c87fac69275216db2a44032bf70bef784a459",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "c5d5c5f14e145fb25e3e1bafa8f3d7d4400147d1fa5a6d7e124610b21551b03e",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "qualityV2Remediation": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "T01: 'Say: My home.' -> 'And you?'",
+      "T03: 'Now say: This is my home.' -> 'And this one?'",
+      "A04 response_choice -> fill_blank"
+    ]
+  }
 }

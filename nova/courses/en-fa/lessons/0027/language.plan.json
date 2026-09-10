@@ -130,7 +130,11 @@
           "owner": "Abdaresrif"
         }
       ],
-      "fallback": null
+      "fallback": {
+        "query": "she is maya he is alex",
+        "rationale": "He/She is + familiar proper name is a transparent A1 identification use of the selected CEFR-J he/she is pattern. Proper names are contextual labels rather than lexical teaching targets."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "he is",
@@ -167,11 +171,15 @@
           "owner": "Abdaresrif"
         }
       ],
-      "fallback": null
+      "fallback": {
+        "query": "she is maya he is alex",
+        "rationale": "He/She is + familiar proper name is a transparent A1 identification use of the selected CEFR-J he/she is pattern. Proper names are contextual labels rather than lexical teaching targets."
+      },
+      "fallbackMatch": "compatible_phrase"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "25ce97743622859b9af0dedd409893f81acc9a7db97473e2670984ca8fbaaedb"
+  "planHash": "d3597c5abb153a53c700a4c54a1262b8078df9edd70ab5dd57911eb29a930a3f"
 }

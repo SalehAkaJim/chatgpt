@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0044",
   "sortOrder": 44,
   "levelKey": "A1",
-  "lessonSourceHash": "cf1d7b2a224982203f4fb96e6236fa7864e5be974da9f0a3a0a93b4e4385cea7",
+  "lessonSourceHash": "7bccc17ca5e1f6d114617296e1d47928bbe641cc3d4d091ed592878d939d5f71",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -69,11 +69,15 @@
       "constructionKeys": [
         "EN-CONSTR-0044-BACK"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "yes come back with the",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "Okay. I come back",
+        "rationale": "Bounded natural A1 use selected for back."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "here come back please",
@@ -91,7 +95,8 @@
       "fallback": {
         "query": "here come back please",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: here come back please"
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i come back",
@@ -131,7 +136,8 @@
       "fallback": {
         "query": "i come back",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: i come back"
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes come back with the",
@@ -149,11 +155,12 @@
       "fallback": {
         "query": "yes come back with the",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: yes come back with the"
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "49491391cf9182e34392d16575357b3232845df698aa0adc32b60d8ad4f5d588"
+  "planHash": "9596df6e2e598d9e23ffb49fc07e53b5ab5fa017cc5d42a15d7b7044685c085c"
 }

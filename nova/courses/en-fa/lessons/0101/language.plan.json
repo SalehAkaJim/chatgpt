@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "a special case",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "a special case",
       "examples": [],
       "fallback": {
         "query": "a special case",
         "rationale": "Exact bounded learner target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "a different case",
@@ -84,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "a different case",
       "examples": [],
       "fallback": {
         "query": "a different case",
         "rationale": "Exact changed-context target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "213b76e328929a50a1ae3c3a06c72dc1efa3d181614d92f05e8364f6ba6c6b22"
+  "planHash": "f65491b6933f99e6129f1c7ae25785b2f2c6501c4048afca98b2f9b89d764dfb"
 }

@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the play is good",
       "examples": [],
       "fallback": {
         "query": "the play is good",
         "rationale": "Exact bounded learner target for the dramatic-work sense."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is the play good",
@@ -69,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is the play good",
       "examples": [],
       "fallback": {
         "query": "is the play good",
         "rationale": "Exact target-collocation window from the character prompt."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes the play is good",
@@ -87,12 +89,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes the play is good",
       "examples": [],
       "fallback": {
         "query": "yes the play is good",
         "rationale": "Exact target-collocation window from the learner response."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "see the play",
@@ -105,16 +108,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "see the play",
       "examples": [],
       "fallback": {
         "query": "see the play",
         "rationale": "Exact changed-context target collocation."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "ae427fe6b47f8b19a1a8524a7e2e8366d1ca31a3fe280721285047fc2542a4ad"
+  "planHash": "b68de5e6c6d81c2d52e7b450b13d1f2b1dfc93b5aa8261c955f8adb85ba57a80"
 }

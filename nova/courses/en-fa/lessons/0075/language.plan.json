@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0075",
   "sortOrder": 75,
   "levelKey": "A1",
-  "lessonSourceHash": "fc54ab0f47da44a3357bda8ea8ef7623b90a008d85bd96a4b0a892d4a18a6457",
+  "lessonSourceHash": "a3eed43be39e2f62c74cfc188699f2db9c9eec8164ad3e438c00c9bd97c5ada7",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -72,11 +72,15 @@
       "constructionKeys": [
         "EN-CONSTR-0075-PLACE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this is a good place",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "this is a good place",
+        "rationale": "Exact learner target or turn-derived collocation for this bounded Lesson use."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "a good place",
@@ -89,12 +93,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "a good place",
       "examples": [],
       "fallback": {
         "query": "a good place",
         "rationale": "Exact target-collocation window generated around place in both learner responses."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [
@@ -102,5 +107,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "b641bef5bdcc36a99d9535dbca8ff7effdb8c83810358cf35896a74be9768a94"
+  "planHash": "f7a5cc0fe454ef5a9ac7077ac4c0af51ecaa6a6c23a16ec3d16cd216ab7e9ee6"
 }

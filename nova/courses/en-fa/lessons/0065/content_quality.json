@@ -26,12 +26,12 @@
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0065; not an independent human or learner test.",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0065; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
-        "evidence": "The same book and This is the same book are ordinary identity uses of same."
+        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
       },
       "persianMeaningQuality": {
         "score": 5,
@@ -43,11 +43,11 @@
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Distractors contrast same with different/new and prior target language."
+        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "Comparing library books gives a concrete reason to identify the same item."
+        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
       },
       "difficultyFit": {
         "score": 5,
@@ -67,24 +67,35 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Model/editor review only; no learner test is claimed."
+        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Review is limited to the identity sense of same.",
-      "Audio prosody is not reviewed before text gates pass."
+      "Audio prosody is not reviewed before text gates pass.",
+      "No independent human or real learner test has been performed after quality-v2 remediation."
     ],
     "resolvedFindings": [
       "same matches the committed identity sense.",
       "Persian meaning is unambiguous.",
       "Library arc return is spaced and learner role is rotated.",
-      "No new grammar mastery is claimed."
+      "No new grammar mastery is claimed.",
+      "Quality-v2 remediation: T01: 'Say: The same book.' -> 'And you?'.",
+      "Quality-v2 remediation: T03: 'Now say: This is the same book.' -> 'And this one?'."
     ],
     "lessonKey": "EN-A1-L-0065",
-    "sourceHash": "43e8921114298e7b63cf65ffac8b24d8bfc444ddeb513bfab863a520a5fad024",
+    "sourceHash": "3fdcc14c655c34a9fad3f87e29ca31f94c896407aea44a3d45075b03d4568b89",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "qualityV2Remediation": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "T01: 'Say: The same book.' -> 'And you?'",
+        "T03: 'Now say: This is the same book.' -> 'And this one?'"
+      ]
+    },
     "status": "PASS",
     "average": 4.4,
     "errors": []
@@ -96,5 +107,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "43e8921114298e7b63cf65ffac8b24d8bfc444ddeb513bfab863a520a5fad024"
+  "sourceHash": "3fdcc14c655c34a9fad3f87e29ca31f94c896407aea44a3d45075b03d4568b89"
 }

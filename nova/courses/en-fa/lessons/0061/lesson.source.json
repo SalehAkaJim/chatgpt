@@ -109,8 +109,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "nina",
-      "textEn": "Say: My home.",
-      "translationFa": "بگو: خانه من.",
+      "textEn": "And you?",
+      "translationFa": "تو چطور؟",
       "audioRequired": true
     },
     {
@@ -129,8 +129,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "nina",
-      "textEn": "Now say: This is my home.",
-      "translationFa": "حالا بگو: این خانه من است.",
+      "textEn": "And this one?",
+      "translationFa": "و این یکی؟",
       "audioRequired": true
     },
     {
@@ -241,27 +241,26 @@
     },
     {
       "activityKey": "A04",
-      "type": "response_choice",
-      "instructionFa": "جواب اول را دوباره پیدا کن.",
-      "promptFa": "نینا اول چه جوابی می‌خواهد؟",
+      "type": "fill_blank",
+      "instructionFa": "واژه درست را برای کامل کردن جمله انتخاب کن.",
       "config": {
+        "sentenceEn": "My ___.",
         "optionsEn": [
-          "My home.",
-          "This is my home.",
-          "Many books."
+          "home",
+          "book",
+          "room"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است.",
-            "این جواب بخش دوم است.",
-            "این جمله نامربوط است."
+            "درست است؛ home همان واژه هدف این جمله است.",
+            "book معنی دیگری دارد و این جمله را با هدف درس کامل نمی‌کند.",
+            "room در این موقعیت جای واژه هدف نیست."
           ],
-          "correctFa": "My home."
+          "correctFa": "home"
         }
       },
       "metadata": {
-        "learningDemand": "recognition",
         "evidenceKind": "recognition_or_selection"
       }
     },
@@ -327,6 +326,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

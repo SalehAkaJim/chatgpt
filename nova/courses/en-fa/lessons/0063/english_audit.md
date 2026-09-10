@@ -1,4 +1,4 @@
-<!-- sourceHash: 784d5723bd850b0e4d19cdda40536687cf557eff0d833fc79278894270015393 -->
+<!-- sourceHash: 25c618807da1ae8934dfe7f72db1516504e9313a63e73356aa9d78c87733fd44 -->
 # English Audit — EN-A1-L-0063
 
 **Lesson:** A happy look
@@ -12,7 +12,7 @@
 
 **T01 · sara**
 
-Say: A happy look.
+And you?
 
 **T02 · ruby**
 
@@ -23,7 +23,7 @@ A happy look.
 
 **T03 · sara**
 
-Now say: That is a happy look.
+And that one?
 
 **T04 · ruby**
 
@@ -46,9 +46,11 @@ That is a happy look.
 
 - **options:** یک حالت چهره شاد. | آن حالت چهره شادی است. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** A happy look. | That is a happy look. | A long day.
+- **answerEn:** A happy look.
+- **tokensEn:** happy | look. | A
+- **answerTokensEn:** A | happy | look.
 
 **A05 · response_choice**
 

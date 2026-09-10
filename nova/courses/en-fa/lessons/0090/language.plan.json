@@ -49,11 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0090-NIGHT"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i read at night",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "i read at night",
+        "rationale": "Exact bounded learner target."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "read at night",
@@ -66,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "read at night",
       "examples": [],
       "fallback": {
         "query": "read at night",
         "rationale": "Exact target-collocation window produced by the committed usage validator."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "study at night",
@@ -84,16 +89,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "study at night",
       "examples": [],
       "fallback": {
         "query": "study at night",
         "rationale": "Exact target-collocation window produced by the committed usage validator."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "ad2a36b16bda92b10e4e0e417100cf5e74fd96ca47ec10462202085332215a6a"
+  "planHash": "7aae44781c9bc212f695d92a681c73d83befd4f5d11b071851f9cdf752cfc547"
 }

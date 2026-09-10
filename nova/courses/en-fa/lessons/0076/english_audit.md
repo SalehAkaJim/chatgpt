@@ -1,4 +1,4 @@
-<!-- sourceHash: 74440e2be69c9a343ef8859c70e519e85f1a88db852c5377eba0d624c228d0e2 -->
+<!-- sourceHash: 2db58b603536cb0406a7a196d5b48a16d513e69697c798273ba7f8f1f1338e1f -->
 # English Audit — EN-A1-L-0076
 
 **Lesson:** I go to school
@@ -46,9 +46,10 @@ We go to school.
 
 - **options:** به مدرسه می‌روم. | ما به مدرسه می‌رویم. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** I go to school. | We go to school. | This is a good place.
+- **sentenceEn:** I go to ___.
+- **optionsEn:** school | book | room
 
 **A05 · response_choice**
 

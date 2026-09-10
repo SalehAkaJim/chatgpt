@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0054",
   "sortOrder": 54,
   "levelKey": "A1",
-  "lessonSourceHash": "3a4d44652d8a8f6e80891d458b9db74c911612994335bc443746eb2014b85782",
+  "lessonSourceHash": "e3cb5814fda7cd2b1e7c344309ef4709877528b6c95e747412f716a30ca86c87",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,48 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "take action",
       "examples": [],
       "fallback": {
         "query": "take action",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say take action",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0054"
-      ],
-      "lexicalLemmas": [
-        "take"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say take action",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say i take action",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0054"
-      ],
-      "lexicalLemmas": [
-        "take"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i take action",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i take action",
@@ -108,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i take action",
       "examples": [],
       "fallback": {
         "query": "i take action",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "dba39eb9ee987889063fae1be06319e5d7ec633dfbdc7f317d2705e6e2ef2e5e"
+  "planHash": "79bd90f6272e24aa87b4d402ffb3a20de0ef4d1816771e79ec27d2b2140e392b"
 }

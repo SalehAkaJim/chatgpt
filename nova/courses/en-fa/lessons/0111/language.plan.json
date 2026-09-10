@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "do you mean",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "do you mean",
       "examples": [],
       "fallback": {
         "query": "do you mean",
         "rationale": "Exact deterministic target-collocation window from What do you mean? for the bounded intend/convey sense."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes i mean this part",
@@ -84,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes i mean this part",
       "examples": [],
       "fallback": {
         "query": "yes i mean this part",
         "rationale": "Exact deterministic changed-context window preserving the same bounded intend/convey sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "17938a3b819d195d18985c1525c2e16851264dc338431d198a034453caba6d8a"
+  "planHash": "c5780cbeee5ab37f66518e8b5a2995725bb5d4a6a35e13239a0134b1b552a3ac"
 }

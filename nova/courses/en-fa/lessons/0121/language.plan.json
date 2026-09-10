@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "maybe the cafe is open",
       "examples": [],
       "fallback": {
         "query": "maybe the cafe is open",
         "rationale": "Natural sentence-initial maybe for a simple uncertain proposition."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "maybe the cafe",
@@ -69,12 +70,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "maybe the cafe",
       "examples": [],
       "fallback": {
         "query": "maybe the cafe",
         "rationale": "Exact target-collocation window from the first learner turn; natural sentence-initial probability frame around maybe."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "maybe he is",
@@ -114,11 +116,12 @@
       "fallback": {
         "query": "maybe he is",
         "rationale": "Exact target-collocation window from the transfer learner turn; natural sentence-initial probability frame around maybe."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "8924cbe6240aec429b8475904d487a5db860035efb65c2e86aa328588d891055"
+  "planHash": "8e104a166541a931faf9b31df4bb1886c26a9ec086db9d74b42015f8140e4f21"
 }

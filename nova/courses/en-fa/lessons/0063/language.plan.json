@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0063",
   "sortOrder": 63,
   "levelKey": "A1",
-  "lessonSourceHash": "784d5723bd850b0e4d19cdda40536687cf557eff0d833fc79278894270015393",
+  "lessonSourceHash": "25c618807da1ae8934dfe7f72db1516504e9313a63e73356aa9d78c87733fd44",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,16 +54,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "a happy look",
       "examples": [],
       "fallback": {
         "query": "a happy look",
         "rationale": "Bounded noun-sense target phrase for facial expression."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "bd37aed3666945589fd584a4899c468200d2aae90b179b69868a86b65d135e4f"
+  "planHash": "264064053957a8e33a9b5693cf2d7ba5b903648ac8f4a5456875d15f22aa4188"
 }

@@ -1,4 +1,4 @@
-<!-- sourceHash: abdd58dd21b350f5969b4f9c6d33c19bc110861ced49ce00bcaa8f03ccef5aed -->
+<!-- sourceHash: 2f78c832be204454990ae80211c9096528cd45208f5199e99466d6c0e01d1509 -->
 # English Audit — EN-A1-L-0082
 
 **Lesson:** This is my family
@@ -46,13 +46,14 @@ My family is here.
 
 - **options:** این خانواده من است. | خانواده من اینجاست. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** This is my family. | My family is here. | I am at school.
+- **sentenceEn:** This is my ___.
+- **optionsEn:** family | book | room
 
 **A05 · response_choice**
 
-- **optionsEn:** My family is here. | This is my family. | This is my house.
+- **optionsEn:** My family is here. | This is my family. | your family is here.
 
 **A06 · speak**
 

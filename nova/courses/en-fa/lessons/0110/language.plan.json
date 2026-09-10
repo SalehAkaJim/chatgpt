@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0110",
   "sortOrder": 110,
   "levelKey": "A1",
-  "lessonSourceHash": "5c7efe4c39ef26498baf8442d53fbc4826a0e61a942a88f580502591c1aa8dcb",
+  "lessonSourceHash": "6f9f42af5709ce6a516a29afd3da9e4a1daf4e1accb549ae33e07099ea7a4bd8",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -76,7 +76,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "coffee is bad",
@@ -89,12 +90,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "coffee is bad",
       "examples": [],
       "fallback": {
         "query": "coffee is bad",
         "rationale": "Exact validator collocation window for the bounded quality sense in This coffee is bad."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "tea is bad too",
@@ -107,16 +109,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "tea is bad too",
       "examples": [],
       "fallback": {
         "query": "tea is bad too",
         "rationale": "Exact validator collocation window for the changed-context transfer sentence The tea is bad too."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "87546e58d7eb9d49d2700dd10284d6187e769b934dafaa130d3f98282363d4f8"
+  "planHash": "49f63be071e6410b611c2acd706cd03715990957c84f7ae2c3d6d52aeb09f301"
 }

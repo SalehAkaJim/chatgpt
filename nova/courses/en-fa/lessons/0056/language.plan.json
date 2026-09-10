@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0056",
   "sortOrder": 56,
   "levelKey": "A1",
-  "lessonSourceHash": "d1cae638a5418d481f5974b804b018d2f40bf87a21736102b47c51964168d0d7",
+  "lessonSourceHash": "5688e7c777a3e058ffdb194ef4f8b250a87ec96abdc511c93e81bb2cbd735915",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,48 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i never go there",
       "examples": [],
       "fallback": {
         "query": "i never go there",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say i never go there",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0056"
-      ],
-      "lexicalLemmas": [
-        "never"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i never go there",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say i never eat there",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0056"
-      ],
-      "lexicalLemmas": [
-        "never"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i never eat there",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i never eat there",
@@ -108,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i never eat there",
       "examples": [],
       "fallback": {
         "query": "i never eat there",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "2c3e778faea92f0521515f920c926e45b073cdf3b6f28fdf8661fafef014df93"
+  "planHash": "d44344327369b622f2cc2c37d7d6679541b168200bf8afafd05988f873fadce2"
 }

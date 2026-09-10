@@ -4,38 +4,38 @@
   "lessonKey": "EN-A1-L-0070",
   "sortOrder": 70,
   "levelKey": "A1",
-  "lessonSourceHash": "71c78d43c4f6b4c63c22e3aa2052412361f074aee2872b653ddaadf046800cc8",
+  "lessonSourceHash": "1675fc1e58c39b7d72e51f0ed4066dcd978b4e7c59e49a49b042993e8345c3f6",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
     {
       "constructionKey": "EN-CONSTR-0070-OLD",
-      "form": "He is old",
+      "form": "This man is old",
       "kind": "lexical_frame",
       "status": "PASS",
       "bestGrammarMatch": {
-        "grammarKey": "CEFRJ-GRAM-3",
-        "grammaticalItem": "he/she is",
+        "grammarKey": "CEFRJ-GRAM-8",
+        "grammaticalItem": "This/That is",
         "cefr": "A1",
         "cefrJLevel": "A1.1",
-        "matchScore": 0.5167,
+        "matchScore": 0.395,
         "prerequisiteKeys": []
       },
       "alternatives": [
         {
-          "grammarKey": "CEFRJ-GRAM-3-2",
-          "grammaticalItem": "Is he/she ...?",
-          "matchScore": 0.5167
+          "grammarKey": "CEFRJ-GRAM-8-2",
+          "grammaticalItem": "Is this/that ...?",
+          "matchScore": 0.395
         },
         {
-          "grammarKey": "CEFRJ-GRAM-3-1",
-          "grammaticalItem": "he/she is not",
-          "matchScore": 0.4867
+          "grammarKey": "CEFRJ-GRAM-8-1",
+          "grammaticalItem": "This/That is not",
+          "matchScore": 0.375
         },
         {
-          "grammarKey": "CEFRJ-GRAM-3-3",
-          "grammaticalItem": "Isn't he/she ...?",
-          "matchScore": 0.4867
+          "grammarKey": "CEFRJ-GRAM-8-3",
+          "grammaticalItem": "Isn't this/that ...?",
+          "matchScore": 0.375
         }
       ]
     }
@@ -60,11 +60,31 @@
         ],
         "stressPattern": "1"
       }
+    },
+    {
+      "lexicalKey": "EN-LEX-MAN-01",
+      "lemma": "man",
+      "role": "review",
+      "referenceKey": "EN-REF-2B7493A61CF4CDE6FD1B",
+      "spokenPriority": {
+        "lemma": "man",
+        "spokenRank": 198,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M AE1 N",
+        "arpabet": [
+          "M AE1 N"
+        ],
+        "stressPattern": "1"
+      }
     }
   ],
   "usageEvidence": [
     {
-      "query": "he is old",
+      "query": "this man is old",
       "kind": "construction",
       "lessonKeys": [
         "EN-A1-L-0070"
@@ -72,42 +92,18 @@
       "constructionKeys": [
         "EN-CONSTR-0070-OLD"
       ],
-      "lexicalLemmas": [
-        "old"
-      ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "he is",
-      "examples": [
-        {
-          "id": 13788367,
-          "text": "He is fantastic.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Just_Balls"
-        },
-        {
-          "id": 13627422,
-          "text": "He is addicted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ahmd"
-        },
-        {
-          "id": 13530112,
-          "text": "He is Amazigh.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Abdaresrif"
-        }
-      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "this man is old",
+      "examples": [],
       "fallback": {
-        "query": "he is old",
-        "rationale": "Exact target-collocation window generated around old in the first learner response."
-      }
+        "query": "this man is old",
+        "rationale": "Changed-referent transfer preserving the age-related sense of old."
+      },
+      "fallbackMatch": "exact"
     },
     {
-      "query": "leo is old",
+      "query": "man is old",
       "kind": "target_collocation",
       "lessonKeys": [
         "EN-A1-L-0070"
@@ -117,16 +113,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "that man is old",
       "examples": [],
       "fallback": {
-        "query": "leo is old",
-        "rationale": "Exact target-collocation window generated around old in the changed-context learner response."
-      }
+        "query": "that man is old",
+        "rationale": "Natural bounded age-description frame using the previously learned noun man."
+      },
+      "fallbackMatch": "compatible_phrase"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "c97459b16832b401df7112a4c945ea39d1d0d499641f03afaf4ccabb05bea327"
+  "planHash": "93c2be62eae1643aae227ceadc209d2c5ddf771060e68da48d12f713d3dbbbfb"
 }

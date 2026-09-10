@@ -1,4 +1,4 @@
-<!-- sourceHash: 3a4d44652d8a8f6e80891d458b9db74c911612994335bc443746eb2014b85782 -->
+<!-- sourceHash: e3cb5814fda7cd2b1e7c344309ef4709877528b6c95e747412f716a30ca86c87 -->
 # English Audit — EN-A1-L-0054
 
 **Lesson:** Take action
@@ -12,7 +12,7 @@
 
 **T01 · alex**
 
-Say: Take action.
+And you?
 
 **T02 · maya**
 
@@ -23,7 +23,7 @@ Take action.
 
 **T03 · alex**
 
-Now say: I take action.
+And now?
 
 **T04 · maya**
 
@@ -37,7 +37,7 @@ I take action.
 **A01 · response_choice**
 
 - **English prompt:** Take action.
-- **options:** انجام دادن | یک معنی نامربوط | نام یک شخص
+- **options:** انجام دادن | خواندن | گفتن
 
 **A02 · dialogue**
 
@@ -48,11 +48,11 @@ I take action.
 
 **A04 · response_choice**
 
-- **optionsEn:** Take action. | I take action. | People like coffee.
+- **optionsEn:** Take action. | I take action. | read action.
 
 **A05 · response_choice**
 
-- **optionsEn:** I take action. | Take action. | People like coffee.
+- **optionsEn:** I take action. | Take action. | I read action.
 
 **A06 · speak**
 

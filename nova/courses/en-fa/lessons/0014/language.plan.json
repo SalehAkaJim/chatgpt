@@ -81,21 +81,6 @@
   ],
   "usageEvidence": [
     {
-      "query": "room one or room",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "one"
-      ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": "room one or room",
-      "examples": [],
-      "fallback": null
-    },
-    {
       "query": "room one or",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -108,7 +93,8 @@
       "sampleCount": 0,
       "evidenceQuery": "room one or room",
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "one or room two",
@@ -123,7 +109,8 @@
       "sampleCount": 0,
       "evidenceQuery": "one or room two",
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "or room two",
@@ -138,7 +125,24 @@
       "sampleCount": 0,
       "evidenceQuery": "one or room two",
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
+    },
+    {
+      "query": "room one or room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "one"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": "room one or room",
+      "examples": [],
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "room two please",
@@ -154,7 +158,8 @@
       "sampleCount": 0,
       "evidenceQuery": "room two please",
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "room two",
@@ -170,7 +175,8 @@
       "sampleCount": 0,
       "evidenceQuery": "one or room two",
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "room one please",
@@ -186,19 +192,20 @@
       "sampleCount": 0,
       "evidenceQuery": "room one please",
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
+    "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "51516a974963ae44484d8cf0fe8b96e64b1af40472ab22afa79637ff14d3ec8e"
+  "planHash": "66fa0c8cfed837a68d2be82e0445185518e2a2ba5ab21e6bcc3363854c5e247a"
 }

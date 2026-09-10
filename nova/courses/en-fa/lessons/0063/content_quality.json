@@ -26,12 +26,12 @@
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0063; not an independent human or learner test.",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0063; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
-        "evidence": "A happy look is a natural noun use of look for facial expression; the second frame preserves that sense."
+        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
       },
       "persianMeaningQuality": {
         "score": 4,
@@ -43,11 +43,11 @@
       },
       "distractorQuality": {
         "score": 5,
-        "evidence": "The key distractor exposes the common verb-sense confusion without ambiguity."
+        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "A group photo provides a concrete reason to describe a facial expression."
+        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
       },
       "difficultyFit": {
         "score": 4,
@@ -67,24 +67,37 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Model/editor review only; no learner test is claimed."
+        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Only the facial-expression noun sense is assessed.",
-      "Audio prosody is not reviewed before text gates pass."
+      "Audio prosody is not reviewed before text gates pass.",
+      "No independent human or real learner test has been performed after quality-v2 remediation."
     ],
     "resolvedFindings": [
       "look is intentionally authored as a noun, matching the committed reference sense.",
       "Persian copy disambiguates the noun sense.",
       "Walking-group arc return is spaced and learner role is rotated.",
-      "No verb sense mastery is claimed."
+      "No verb sense mastery is claimed.",
+      "Quality-v2 remediation: T01: 'Say: A happy look.' -> 'And you?'.",
+      "Quality-v2 remediation: T03: 'Now say: That is a happy look.' -> 'And that one?'.",
+      "Quality-v2 remediation: A04 response_choice -> sentence_order."
     ],
     "lessonKey": "EN-A1-L-0063",
-    "sourceHash": "784d5723bd850b0e4d19cdda40536687cf557eff0d833fc79278894270015393",
+    "sourceHash": "25c618807da1ae8934dfe7f72db1516504e9313a63e73356aa9d78c87733fd44",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "qualityV2Remediation": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "T01: 'Say: A happy look.' -> 'And you?'",
+        "T03: 'Now say: That is a happy look.' -> 'And that one?'",
+        "A04 response_choice -> sentence_order"
+      ]
+    },
     "status": "PASS",
     "average": 4.2,
     "errors": []
@@ -96,5 +109,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "784d5723bd850b0e4d19cdda40536687cf557eff0d833fc79278894270015393"
+  "sourceHash": "25c618807da1ae8934dfe7f72db1516504e9313a63e73356aa9d78c87733fd44"
 }

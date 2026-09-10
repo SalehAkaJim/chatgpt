@@ -1,4 +1,4 @@
-<!-- sourceHash: 5222852ec7d4363f7d7962f81fb2d077cc6cc1c0fba0dc8ee64b4f33819e48c0 -->
+<!-- sourceHash: 6209be7abfa08c5ee1677966c78cf79695d50b091250bb254dd72f8568010627 -->
 # English Audit — EN-A1-L-0078
 
 **Lesson:** Say it again
@@ -46,13 +46,15 @@ Try again.
 
 - **options:** دوباره بگو. | دوباره تلاش کن. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** Say it again. | Try again. | I am at school.
+- **answerEn:** Say it again.
+- **tokensEn:** it | again. | Say
+- **answerTokensEn:** Say | it | again.
 
 **A05 · response_choice**
 
-- **optionsEn:** Try again. | Say it again. | This is my house.
+- **optionsEn:** Try again. | Say it again. | Try very.
 
 **A06 · speak**
 

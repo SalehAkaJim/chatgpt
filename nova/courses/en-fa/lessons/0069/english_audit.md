@@ -1,4 +1,4 @@
-<!-- sourceHash: 148b74f6ee0c3ae355cdf9d3f091de7eb20cb309c2e18c5c6206298aafa5d232 -->
+<!-- sourceHash: 42bd43d23ca83d55439fef68aca53d6ce994ab22eae8dc44ee4d9affac6f1d61 -->
 # English Audit — EN-A1-L-0069
 
 **Lesson:** A little room
@@ -12,7 +12,7 @@
 
 **T01 · ruby**
 
-Say: This is a little room.
+What is this?
 
 **T02 · sara**
 
@@ -23,7 +23,7 @@ This is a little room.
 
 **T03 · ruby**
 
-Now say: That is a little room.
+And that one?
 
 **T04 · sara**
 
@@ -46,9 +46,11 @@ That is a little room.
 
 - **options:** این یک اتاق کوچک است. | آن یک اتاق کوچک است. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · sentence_order**
 
-- **optionsEn:** This is a little room. | That is a little room. | The price is high.
+- **answerEn:** This is a little room.
+- **tokensEn:** is | a | little | room. | This
+- **answerTokensEn:** This | is | a | little | room.
 
 **A05 · response_choice**
 

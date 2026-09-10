@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0064",
   "sortOrder": 64,
   "levelKey": "A1",
-  "lessonSourceHash": "97025a68089e87c156309bb02043cce4bcbd41f0282d830eb482f6557cbcafec",
+  "lessonSourceHash": "9992c872339d4d815aaf163266f8042674fcac113ac79d00c2bb1bd648491bdf",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -55,48 +55,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i use this cup",
       "examples": [],
       "fallback": {
         "query": "i use this cup",
         "rationale": "Exact learner target collocation for the selected service sense."
-      }
-    },
-    {
-      "query": "say i use this cup",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0064"
-      ],
-      "lexicalLemmas": [
-        "use"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i use this cup",
-        "rationale": "Exact turn-derived prompt collocation for the first model."
-      }
-    },
-    {
-      "query": "say i use this bag",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0064"
-      ],
-      "lexicalLemmas": [
-        "use"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i use this bag",
-        "rationale": "Exact turn-derived prompt collocation for the changed object."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i use this bag",
@@ -109,16 +74,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i use this bag",
       "examples": [],
       "fallback": {
         "query": "i use this bag",
         "rationale": "Changed-object learner target collocation preserving the same sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "9f1fb92cbf1896ca6efcfc7f6fce138c1ad77671ff0a28c8bf8d19e545819496"
+  "planHash": "8d89edaad2f48dede36efd601aea1e5c8c7347470b45d6e7e895f728497adcf7"
 }

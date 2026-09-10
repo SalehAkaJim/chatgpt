@@ -74,12 +74,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this message is important",
       "examples": [],
       "fallback": {
         "query": "this message is important",
         "rationale": "Natural bounded adjective collocation for something significant."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is this important",
@@ -92,12 +93,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is this important",
       "examples": [],
       "fallback": {
         "query": "is this important",
         "rationale": "Exact target-collocation window from the opening question; natural A1 adjective question frame."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "message is important",
@@ -110,12 +112,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "message is important",
       "examples": [],
       "fallback": {
         "query": "message is important",
         "rationale": "Exact target-collocation window from the first learner response; natural predicate frame around important."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "time is important too",
@@ -128,16 +131,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "time is important too",
       "examples": [],
       "fallback": {
         "query": "time is important too",
         "rationale": "Exact target-collocation window from the transfer learner response; natural changed-noun frame around important."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "dd1359554e335c1d3685533d138bee8061ef39020546d710da4a0efdb6cff3d5"
+  "planHash": "3b2d9e6576138cb920d4a49b6c1c6078769deeccf3a07365dd0ea79c5fe4b69f"
 }

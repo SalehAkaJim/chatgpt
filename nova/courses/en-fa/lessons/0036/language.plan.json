@@ -69,11 +69,15 @@
       "constructionKeys": [
         "EN-CONSTR-THERE-IS-A-ITEM"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "there is a book",
       "examples": [],
-      "fallback": null
+      "fallback": {
+        "query": "there is a book",
+        "rationale": "There is a book is a transparent A1 singular existence statement with book already taught."
+      },
+      "fallbackMatch": "compatible_phrase"
     }
   ],
   "warnings": [
@@ -81,5 +85,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "fb46dbec351c11a111b2326dc556ee110790b9040cce3d3812df83379fbf4f5e"
+  "planHash": "f8d796ad414075094e1f66abfbd19b388fe2e2421e3ebf7fe4acc3d6c1fefe3e"
 }

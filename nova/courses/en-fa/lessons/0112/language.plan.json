@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "was here once",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "was here once",
       "examples": [],
       "fallback": {
         "query": "was here once",
         "rationale": "Exact deterministic target-collocation window from I was here once for the bounded one-occasion sense."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "was there once too",
@@ -84,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "was there once too",
       "examples": [],
       "fallback": {
         "query": "was there once too",
         "rationale": "Exact deterministic changed-context window preserving the same one-occasion sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "9a00e3c226340a56a5b49e77d138ffe8433860c3a5ef152c1f6a3b75ad6a5ab8"
+  "planHash": "f2eba5175141075612fef7e5f7d5888037a9dc0ec6ad36f328a07e1cda133e60"
 }

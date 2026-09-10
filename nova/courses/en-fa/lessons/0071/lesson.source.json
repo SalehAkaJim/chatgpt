@@ -109,8 +109,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "nora",
-      "textEn": "Say: This is my own book.",
-      "translationFa": "بگو: این کتاب خودم است.",
+      "textEn": "What is this?",
+      "translationFa": "این چیست؟",
       "audioRequired": true
     },
     {
@@ -129,8 +129,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "nora",
-      "textEn": "Now say: That is your own book.",
-      "translationFa": "حالا بگو: آن کتاب خودت است.",
+      "textEn": "And that one?",
+      "translationFa": "و آن یکی؟",
       "audioRequired": true
     },
     {
@@ -327,6 +327,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

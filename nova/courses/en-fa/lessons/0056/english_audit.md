@@ -1,4 +1,4 @@
-<!-- sourceHash: d1cae638a5418d481f5974b804b018d2f40bf87a21736102b47c51964168d0d7 -->
+<!-- sourceHash: 5688e7c777a3e058ffdb194ef4f8b250a87ec96abdc511c93e81bb2cbd735915 -->
 # English Audit — EN-A1-L-0056
 
 **Lesson:** I never go there
@@ -12,7 +12,7 @@
 
 **T01 · ava**
 
-Say: I never go there.
+And you?
 
 **T02 · ben**
 
@@ -23,7 +23,7 @@ I never go there.
 
 **T03 · ava**
 
-Now say: I never eat there.
+And now?
 
 **T04 · ben**
 
@@ -37,7 +37,7 @@ I never eat there.
 **A01 · response_choice**
 
 - **English prompt:** I never go there.
-- **options:** هرگز | یک معنی نامربوط | نام یک شخص
+- **options:** هرگز | خیلی | واقعا
 
 **A02 · dialogue**
 
@@ -48,11 +48,11 @@ I never eat there.
 
 **A04 · response_choice**
 
-- **optionsEn:** I never go there. | I never eat there. | People like coffee.
+- **optionsEn:** I never go there. | I never eat there. | I very go there.
 
 **A05 · response_choice**
 
-- **optionsEn:** I never eat there. | I never go there. | People like coffee.
+- **optionsEn:** I never eat there. | I never go there. | I very eat there.
 
 **A06 · speak**
 

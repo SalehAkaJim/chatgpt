@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "door is open",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "door is open",
       "examples": [],
       "fallback": {
         "query": "door is open",
         "rationale": "Exact deterministic target-collocation window from The door is open for the bounded adjective sense meaning not closed."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "window is open too",
@@ -84,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "window is open too",
       "examples": [],
       "fallback": {
         "query": "window is open too",
         "rationale": "Exact deterministic changed-context window preserving the same adjective sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "0fe468c370d6d6d3f7dc3e184a1804fa16ab198ee1e5e3c8d61cf5c7ba12e933"
+  "planHash": "fc3db4143e579fd009d854ff9b877ce67e0ea7f0579571f45ca5e0bbeef1e7a2"
 }

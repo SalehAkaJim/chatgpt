@@ -54,12 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the car is outside",
       "examples": [],
       "fallback": {
         "query": "the car is outside",
         "rationale": "Bounded location collocation for the motor-vehicle noun sense of car."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "is the car",
@@ -72,12 +73,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is the car",
       "examples": [],
       "fallback": {
         "query": "is the car",
         "rationale": "Exact target-collocation window from the location question; a natural short A1 frame around car."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "the red car is here",
@@ -90,16 +92,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the red car is here",
       "examples": [],
       "fallback": {
         "query": "the red car is here",
         "rationale": "Changed-description collocation preserving the same noun sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "5cda0e0089d46123490e70b051be434c01aec60d15ce2a3a671d41dcfb32265f"
+  "planHash": "2f52461291568881d6209e13e8531b2655a8e201d3c2ac3368fea4eb12d00dc4"
 }

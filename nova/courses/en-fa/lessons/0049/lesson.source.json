@@ -155,15 +155,15 @@
       "config": {
         "options": [
           "در حقیقت، به طور عملی",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "خیلی",
+          "واقعا"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این کلمه نام شخص نیست."
+            "«خیلی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«واقعا» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "در حقیقت، به طور عملی"
         }
@@ -278,14 +278,14 @@
         "optionsEn": [
           "It is really good too.",
           "Yes. It is really good.",
-          "People like coffee."
+          "It is very good too."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«It is very good too.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "آن هم واقعا خوب است."
         }
@@ -331,6 +331,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

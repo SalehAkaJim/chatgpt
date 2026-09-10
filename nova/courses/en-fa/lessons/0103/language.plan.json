@@ -53,7 +53,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "one person is waiting",
@@ -66,12 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "one person is waiting",
       "examples": [],
       "fallback": {
         "query": "one person is waiting",
         "rationale": "Exact bounded learner target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes one person",
@@ -84,12 +86,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes one person",
       "examples": [],
       "fallback": {
         "query": "yes one person",
         "rationale": "Exact changed-context target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [
@@ -97,5 +100,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "6db923b52d186f8a9769ff773dc1dff81604e2accac784809ced0289faad1864"
+  "planHash": "b20544b8077ce3dd755cee8f2b9eb150ba3f5d4b39e89885f48a971d445efd7e"
 }

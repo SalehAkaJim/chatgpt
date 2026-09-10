@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0060",
   "sortOrder": 60,
   "levelKey": "A1",
-  "lessonSourceHash": "a7de784325ff77ac0e49a3617eb06af962efe592fb03521167c78d111da2a234",
+  "lessonSourceHash": "5d0a01d0b5f1973e3522bcf61c1b54a93a248d4d1630a4c50c2f5535915770c7",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -67,48 +67,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "that man",
       "examples": [],
       "fallback": {
         "query": "that man",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say that man",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0060"
-      ],
-      "lexicalLemmas": [
-        "man"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say that man",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say this man",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0060"
-      ],
-      "lexicalLemmas": [
-        "man"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say this man",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "this man",
@@ -121,16 +86,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this man",
       "examples": [],
       "fallback": {
         "query": "this man",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "c0f456940d08364bda2857bd02d36d26dbb3ea48ff7baacf1fe469a3a888a7e6"
+  "planHash": "2d37f16f55be2495ea611bc709920eada99097e0b64c1df77ff7dd7cb95501cb"
 }

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0066",
   "sortOrder": 66,
   "levelKey": "A1",
-  "lessonSourceHash": "596230bc8ce6df8705e62a4c11803d84b741af0fbfd1daa2645c3d24d559013e",
+  "lessonSourceHash": "bd6965cbe455e65041cc48844e6512c3eb21faa24e3134ab795fdf5485d6a042",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -55,48 +55,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i always read",
       "examples": [],
       "fallback": {
         "query": "i always read",
         "rationale": "Exact learner frequency-adverb target phrase."
-      }
-    },
-    {
-      "query": "say i always read",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0066"
-      ],
-      "lexicalLemmas": [
-        "always"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i always read",
-        "rationale": "Exact turn-derived prompt collocation for the first model."
-      }
-    },
-    {
-      "query": "say i always read here",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0066"
-      ],
-      "lexicalLemmas": [
-        "always"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say i always read here",
-        "rationale": "Exact turn-derived prompt collocation for the changed context."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "i always read here",
@@ -109,16 +74,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i always read here",
       "examples": [],
       "fallback": {
         "query": "i always read here",
         "rationale": "Changed-context learner target phrase preserving the same frequency sense."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "a94b1ffd00f38e875bc413e6c8ed410d566235813d0c0326e167b648256d861f"
+  "planHash": "f510ff0b117180047bb861d0b4a548965d898bc0ec14a6b9c67c595ce99d1162"
 }

@@ -113,8 +113,8 @@
       "turnKey": "T01",
       "role": "character",
       "characterKey": "alex",
-      "textEn": "Say: Take action.",
-      "translationFa": "بگو: اقدام کن.",
+      "textEn": "And you?",
+      "translationFa": "تو چطور؟",
       "audioRequired": true
     },
     {
@@ -133,8 +133,8 @@
       "turnKey": "T03",
       "role": "character",
       "characterKey": "alex",
-      "textEn": "Now say: I take action.",
-      "translationFa": "حالا بگو: من اقدام می‌کنم.",
+      "textEn": "And now?",
+      "translationFa": "حالا چطور؟",
       "audioRequired": true
     },
     {
@@ -163,15 +163,15 @@
       "config": {
         "options": [
           "انجام دادن",
-          "یک معنی نامربوط",
-          "نام یک شخص"
+          "خواندن",
+          "گفتن"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف واژه نیست."
+            "«خواندن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«گفتن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "انجام دادن"
         }
@@ -252,14 +252,14 @@
         "optionsEn": [
           "Take action.",
           "I take action.",
-          "People like coffee."
+          "read action."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش دوم است.",
-            "این جمله نامربوط است."
+            "«read action.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "Take action."
         }
@@ -278,14 +278,14 @@
         "optionsEn": [
           "I take action.",
           "Take action.",
-          "People like coffee."
+          "I read action."
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
             "درست است.",
             "این جواب بخش اول است.",
-            "این جمله نامربوط است."
+            "«I read action.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "من اقدام می‌کنم."
         }
@@ -331,6 +331,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

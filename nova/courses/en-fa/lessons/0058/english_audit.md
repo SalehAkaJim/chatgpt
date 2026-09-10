@@ -1,4 +1,4 @@
-<!-- sourceHash: 16627ad08e4b54368ae80a568516b1aa603df07153e9495bbd6e7c5e55a9f21e -->
+<!-- sourceHash: 3b765295bc6f226686e2e3676be683bf22196e9c8ef23ef92eae2a1b7acdf8c2 -->
 # English Audit — EN-A1-L-0058
 
 **Lesson:** A great big room
@@ -12,7 +12,7 @@
 
 **T01 · owen**
 
-Say: A great big room.
+And you?
 
 **T02 · nora**
 
@@ -23,7 +23,7 @@ A great big room.
 
 **T03 · owen**
 
-Now say: A great big bag.
+And now?
 
 **T04 · nora**
 
@@ -37,7 +37,7 @@ A great big bag.
 **A01 · response_choice**
 
 - **English prompt:** A great big room.
-- **options:** بزرگ | یک معنی نامربوط | نام یک شخص
+- **options:** بزرگ | جدید | قدیمی
 
 **A02 · dialogue**
 
@@ -46,13 +46,14 @@ A great big bag.
 
 - **options:** یک اتاق خیلی بزرگ. | یک کیف خیلی بزرگ. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** A great big room. | A great big bag. | People like coffee.
+- **sentenceEn:** A ___ big room.
+- **optionsEn:** great | new | old
 
 **A05 · response_choice**
 
-- **optionsEn:** A great big bag. | A great big room. | People like coffee.
+- **optionsEn:** A great big bag. | A great big room. | A new big bag.
 
 **A06 · speak**
 

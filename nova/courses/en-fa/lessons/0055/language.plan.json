@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0055",
   "sortOrder": 55,
   "levelKey": "A1",
-  "lessonSourceHash": "0bef9355051cb4fa4e75fefd76e4359e043372e3ad102dfd8e3de127929ee070",
+  "lessonSourceHash": "886d07633260579b522704d12fada79bb086af93dc08ab0048c93e78a9492fe7",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -54,48 +54,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "many books",
       "examples": [],
       "fallback": {
         "query": "many books",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "say many books",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0055"
-      ],
-      "lexicalLemmas": [
-        "many"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "say many books",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
-    },
-    {
-      "query": "now say many cups",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0055"
-      ],
-      "lexicalLemmas": [
-        "many"
-      ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": {
-        "query": "now say many cups",
-        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "many cups",
@@ -108,16 +73,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "many cups",
       "examples": [],
       "fallback": {
         "query": "many cups",
         "rationale": "Explicit bounded target-collocation fallback for this authored turn."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "120f3862ea08a5b0763773d0cb8565e257bbe335f57a14edb38efaebc0766cab"
+  "planHash": "78e0ffe4db79f6503768741e3b8281cc6470cab9c71b0863715a126afd3f85b8"
 }

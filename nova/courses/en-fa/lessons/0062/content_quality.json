@@ -26,12 +26,12 @@
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0062; not an independent human or learner test.",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0062; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
-        "evidence": "A long day and It is a long day are natural bounded temporal uses."
+        "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
       },
       "persianMeaningQuality": {
         "score": 5,
@@ -43,11 +43,11 @@
       },
       "distractorQuality": {
         "score": 4,
-        "evidence": "Distractors distinguish temporal length from unrelated meanings and earlier targets."
+        "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "A cafe shift provides a clear reason to describe a long day."
+        "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
       },
       "difficultyFit": {
         "score": 5,
@@ -67,24 +67,35 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Model/editor review only; no learner test is claimed."
+        "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Review is bounded to the selected temporal sense.",
-      "Audio prosody is not reviewed before text gates pass."
+      "Audio prosody is not reviewed before text gates pass.",
+      "No independent human or real learner test has been performed after quality-v2 remediation."
     ],
     "resolvedFindings": [
       "long matches the committed duration sense.",
       "Persian copy preserves the intended meaning.",
       "Cafe arc return is spaced and learner role is rotated.",
-      "No new grammar mastery is claimed."
+      "No new grammar mastery is claimed.",
+      "Quality-v2 remediation: T01: 'Say: A long day.' -> 'And you?'.",
+      "Quality-v2 remediation: T03: 'Now say: It is a long day.' -> 'And now?'."
     ],
     "lessonKey": "EN-A1-L-0062",
-    "sourceHash": "afa81808877d9a735e456e6447a8b8b07a4669e146d9a51b7e403754d5e364ce",
+    "sourceHash": "b433bdc0eb798d8d2d0767b21067e9070fbd18797bf0458f97b33c5a1e80956b",
     "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "qualityV2Remediation": {
+      "version": 1,
+      "date": "2026-09-10",
+      "changes": [
+        "T01: 'Say: A long day.' -> 'And you?'",
+        "T03: 'Now say: It is a long day.' -> 'And now?'"
+      ]
+    },
     "status": "PASS",
     "average": 4.4,
     "errors": []
@@ -96,5 +107,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "afa81808877d9a735e456e6447a8b8b07a4669e146d9a51b7e403754d5e364ce"
+  "sourceHash": "b433bdc0eb798d8d2d0767b21067e9070fbd18797bf0458f97b33c5a1e80956b"
 }

@@ -55,12 +55,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i live near here",
       "examples": [],
       "fallback": {
         "query": "i live near here",
         "rationale": "Exact bounded learner target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "do you live",
@@ -73,12 +74,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "do you live",
       "examples": [],
       "fallback": {
         "query": "do you live",
         "rationale": "Exact prompt-side target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "yes i live near the",
@@ -91,16 +93,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "yes i live near the",
       "examples": [],
       "fallback": {
         "query": "yes i live near the",
         "rationale": "Exact changed-context target collocation around the target word."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "57d810355b57c9a8baacf9a7fe0cdbc0efd7be179e1ecce320e74de894832320"
+  "planHash": "e2b6bb216482821512936841e0f37c9d4b10f20c4dc96f994fe0bc2afb94fcf9"
 }

@@ -1,4 +1,4 @@
-<!-- sourceHash: 870bdd073eaffe714835686698199b67dd5156f4a87d1c0f091b8c7012889fc2 -->
+<!-- sourceHash: 5af4c52e94fcb5e50cba5e49d733790a52c31143ac7967d10d891f8c387fe9ee -->
 # English Audit — EN-A1-L-0048
 
 **Lesson:** Very good
@@ -37,7 +37,7 @@ It is very good too.
 **A01 · response_choice**
 
 - **English prompt:** Yes. It is very good.
-- **options:** خیلی؛ بسیار | یک معنی نامربوط | نام یک شخص
+- **options:** خیلی؛ بسیار | خیلی | واقعا
 
 **A02 · dialogue**
 
@@ -54,7 +54,7 @@ It is very good too.
 
 **A05 · response_choice**
 
-- **optionsEn:** It is very good too. | Yes. It is very good. | People like coffee.
+- **optionsEn:** It is very good too. | Yes. It is very good. | It is really good too.
 
 **A06 · speak**
 

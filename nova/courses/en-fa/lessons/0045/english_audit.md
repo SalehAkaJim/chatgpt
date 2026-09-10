@@ -1,4 +1,4 @@
-<!-- sourceHash: ca5bcae85eb039a5325a329ba50945e0835526eb4e888147306940e604d1ee48 -->
+<!-- sourceHash: 5143f16fa3ee1c73134e502796951daa5a7a94e5320565953e8542ad12a443a5 -->
 # English Audit — EN-A1-L-0045
 
 **Lesson:** You read well
@@ -37,7 +37,7 @@ I read this well too.
 **A01 · response_choice**
 
 - **English prompt:** Thank you. I read well.
-- **options:** خوب، به خوبی | یک معنی نامربوط | نام یک شخص
+- **options:** خوب، به خوبی | خیلی | واقعا
 
 **A02 · dialogue**
 
@@ -54,7 +54,7 @@ I read this well too.
 
 **A05 · response_choice**
 
-- **optionsEn:** I read this well too. | Thank you. I read well. | People like coffee.
+- **optionsEn:** I read this well too. | Thank you. I read well. | I read that well too.
 
 **A06 · speak**
 

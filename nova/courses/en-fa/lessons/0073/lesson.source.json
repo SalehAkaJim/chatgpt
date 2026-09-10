@@ -239,27 +239,26 @@
     },
     {
       "activityKey": "A04",
-      "type": "response_choice",
-      "instructionFa": "جواب بخش اول را پیدا کن.",
-      "promptFa": "کدام جمله گفته شد؟",
+      "type": "fill_blank",
+      "instructionFa": "واژه درست را برای کامل کردن جمله انتخاب کن.",
       "config": {
+        "sentenceEn": "I can ___ you coffee.",
         "optionsEn": [
-          "I can give you coffee.",
-          "I can give you tea.",
-          "This is my own book."
+          "give",
+          "read",
+          "say"
         ],
         "answerIndex": 0,
         "feedback": {
           "optionsFa": [
-            "درست است.",
-            "این جواب بخش دوم است.",
-            "این جمله نامربوط است."
+            "درست است؛ give همان واژه هدف این جمله است.",
+            "read معنی دیگری دارد و این جمله را با هدف درس کامل نمی‌کند.",
+            "say در این موقعیت جای واژه هدف نیست."
           ],
-          "correctFa": "I can give you coffee."
+          "correctFa": "give"
         }
       },
       "metadata": {
-        "learningDemand": "recognition",
         "evidenceKind": "recognition_or_selection"
       }
     },
@@ -325,6 +324,8 @@
     "audioRequired": true,
     "humanEnglishAuditRequired": true,
     "dialogueRuntime": "guided_exchange",
-    "qualityStage": "model_reviewed_for_testing"
+    "qualityStage": "model_reviewed_for_testing",
+    "qualityV2Remediated": true,
+    "qualityV2RemediationVersion": 1
   }
 }

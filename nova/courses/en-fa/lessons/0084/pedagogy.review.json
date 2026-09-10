@@ -2,11 +2,11 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0084; not an independent human or real-learner test.",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0084; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 5,
-      "evidence": "‘Put it here’ and ‘Put the bag there’ are natural short A1 placement instructions."
+      "evidence": "Quality-v2 remediation rechecked learner-facing English, removed known weak/teacher-directive patterns where present, and kept the bounded target pragmatically licensed by its prompt."
     },
     "persianMeaningQuality": {
       "score": 5,
@@ -18,11 +18,11 @@
     },
     "distractorQuality": {
       "score": 4,
-      "evidence": "Distractors contrast put with unrelated familiar actions without a second correct answer."
+      "evidence": "Placeholder/generic distractors were removed where present; choices use contrastive alternatives with distinct teaching feedback."
     },
     "dialoguePlausibility": {
       "score": 5,
-      "evidence": "A community-center reception scene naturally motivates deciding where to place belongings."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,22 +42,33 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; confidence is limited to model/editor review."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "Only the bounded A1 placement sense is reviewed.",
-    "Audio prosody is not evaluated at this stage."
+    "Audio prosody is not evaluated at this stage.",
+    "No independent human or real learner test has been performed after quality-v2 remediation."
   ],
   "resolvedFindings": [
     "English target utterances are idiomatic.",
     "Persian meaning remains consistent.",
     "Final production is hidden retrieval.",
-    "The community arc returns after required spacing and the learner role rotates."
+    "The community arc returns after required spacing and the learner role rotates.",
+    "Quality-v2 remediation: A05: 'This is my house.' -> 'read the bag there.'.",
+    "Quality-v2 remediation: A04 response_choice -> sentence_order."
   ],
   "lessonKey": "EN-A1-L-0084",
-  "sourceHash": "a53332c3e254e77dc3219d79c584e42caba96415a5f68bb62e22a67e17f73c36",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "94b8f516e3513a6544d2fa5fb39e08b747e75d3ce6822ec49b64a77f57903dcd",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "qualityV2Remediation": {
+    "version": 1,
+    "date": "2026-09-10",
+    "changes": [
+      "A05: 'This is my house.' -> 'read the bag there.'",
+      "A04 response_choice -> sentence_order"
+    ]
+  }
 }

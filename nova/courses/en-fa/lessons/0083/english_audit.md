@@ -1,4 +1,4 @@
-<!-- sourceHash: ba5314e31f95ffbcda0e7e0363ac3fcee77b5b8cb840ab50a5e5932019a4c955 -->
+<!-- sourceHash: c001b294fd95230b8875f0344b55f74249cf08c94ffb6ecea69804eb07b8434d -->
 # English Audit — EN-A1-L-0083
 
 **Lesson:** Keep the ticket
@@ -52,7 +52,7 @@ Keep this key.
 
 **A05 · response_choice**
 
-- **optionsEn:** Keep this key. | Keep the ticket. | This is my house.
+- **optionsEn:** Keep this key. | Keep the ticket. | Keep that key.
 
 **A06 · speak**
 

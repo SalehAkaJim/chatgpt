@@ -77,16 +77,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "that's one run",
       "examples": [],
       "fallback": {
         "query": "that's one run",
         "rationale": "Exact bounded learner collocation for the baseball-score noun sense of run."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "0d9b3805690be2a33b64405c285252a5a468f9ebbd14a4ad318292e74e0e565a"
+  "planHash": "75d94097e5ade83eb86f2d6fc7f6bc808e8c96804b24160c0b566c13ae91bc43"
 }

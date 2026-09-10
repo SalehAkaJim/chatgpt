@@ -82,7 +82,8 @@
       "sampleCount": 0,
       "evidenceQuery": null,
       "examples": [],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "this i read books",
@@ -119,7 +120,8 @@
           "owner": "Aghanim"
         }
       ],
-      "fallback": null
+      "fallback": null,
+      "fallbackMatch": null
     },
     {
       "query": "this time i read",
@@ -137,11 +139,12 @@
       "fallback": {
         "query": "this time i read",
         "rationale": "This time, I read is a transparent turn-taking use of time in the selected 'this occasion' sense with read already taught."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "cd538b0a9563e60920440fbdf9afbac72560673bb607b8e13afd4b2cd91c0126"
+  "planHash": "fe6892dce28ed21caa69ee1ca28f1aa3afae6f7baab5629b8b99d7244cafa300"
 }

@@ -1,4 +1,4 @@
-<!-- sourceHash: 97025a68089e87c156309bb02043cce4bcbd41f0282d830eb482f6557cbcafec -->
+<!-- sourceHash: 9992c872339d4d815aaf163266f8042674fcac113ac79d00c2bb1bd648491bdf -->
 # English Audit — EN-A1-L-0064
 
 **Lesson:** I use this cup
@@ -12,7 +12,7 @@
 
 **T01 · nora**
 
-Say: I use this cup.
+And you?
 
 **T02 · owen**
 
@@ -23,7 +23,7 @@ I use this cup.
 
 **T03 · nora**
 
-Now say: I use this bag.
+And now?
 
 **T04 · owen**
 
@@ -46,9 +46,10 @@ I use this bag.
 
 - **options:** از این فنجان استفاده می‌کنم. | از این کیف استفاده می‌کنم. | هیچ‌کدام
 
-**A04 · response_choice**
+**A04 · fill_blank**
 
-- **optionsEn:** I use this cup. | I use this bag. | A long day.
+- **sentenceEn:** I ___ this cup.
+- **optionsEn:** use | read | say
 
 **A05 · response_choice**
 

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0079",
   "sortOrder": 79,
   "levelKey": "A1",
-  "lessonSourceHash": "7e0d824b5f4028fde5e4202c08693f926934305ed9c9396933587f359c898cb9",
+  "lessonSourceHash": "9ac5b842405c91bbf0a7dd35ed8982e9358cc9cc185f89e4e7b41077c6f908a7",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -51,12 +51,13 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the bus is at the end",
       "examples": [],
       "fallback": {
         "query": "the bus is at the end",
         "rationale": "Exact bounded learner target."
-      }
+      },
+      "fallbackMatch": "exact"
     },
     {
       "query": "at the end",
@@ -69,16 +70,17 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "at the end",
       "examples": [],
       "fallback": {
         "query": "at the end",
         "rationale": "Exact target-collocation window generated around end in both learner responses."
-      }
+      },
+      "fallbackMatch": "exact"
     }
   ],
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "80975b70472cf827bb52d8e3ad4a2dc2039317fba470821f23a36d2126b60e39"
+  "planHash": "059647394e6f031826ba84c12d410f4fd358eaafe50fcec9de4e342984097851"
 }
