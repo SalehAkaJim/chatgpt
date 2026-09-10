@@ -1,42 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "courseCode": "en-fa",
   "prototypeModel": "activity-order with dialogue exchanges flattened in place; scenario only on first step",
   "checkedLessons": 124,
-  "status": "FAIL",
-  "hardErrorCount": 3,
+  "status": "PASS",
+  "hardErrorCount": 0,
   "warningCount": 81,
-  "affectedHardLessons": [
-    4,
-    27
-  ],
-  "affectedLessonCount": 82,
+  "affectedHardLessons": [],
+  "affectedLessonCount": 81,
   "countsByCode": {
-    "LX-H02": 2,
-    "LX-H03": 1,
     "LX-W10": 81
   },
   "issues": [
-    {
-      "code": "LX-H02",
-      "severity": "ERROR",
-      "lessonKey": "EN-A1-L-0004",
-      "sortOrder": 4,
-      "activityKey": "A04",
-      "activityType": "response_choice",
-      "prototypeStep": 5,
-      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
-    },
-    {
-      "code": "LX-H02",
-      "severity": "ERROR",
-      "lessonKey": "EN-A1-L-0004",
-      "sortOrder": 4,
-      "activityKey": "A06",
-      "activityType": "speak",
-      "prototypeStep": 7,
-      "message": "Learner-facing copy asks the learner to listen/hear, but this Prototype step has no audio source/control."
-    },
     {
       "code": "LX-W10",
       "severity": "WARNING",
@@ -56,16 +31,6 @@
       "activityType": "response_choice",
       "prototypeStep": 1,
       "message": "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: T04"
-    },
-    {
-      "code": "LX-H03",
-      "severity": "ERROR",
-      "lessonKey": "EN-A1-L-0027",
-      "sortOrder": 27,
-      "activityKey": "A05",
-      "activityType": "response_choice",
-      "prototypeStep": 7,
-      "message": "Learner-facing copy claims a photo/image is visible, but the activity has no visual asset rendered by the Prototype."
     },
     {
       "code": "LX-W10",
