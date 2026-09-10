@@ -2,7 +2,7 @@
 """Fast, cacheable one-Lesson validation for authoring/integration loops.
 
 This is not the publication gate. It intentionally excludes cross-Lesson Story
-and Factory Design checks. A wave is complete only after the uncached
+and full wave Product Quality checks. A wave is complete only after the uncached
 `validate_factory_prefix.py` regression passes.
 """
 from __future__ import annotations
@@ -16,6 +16,8 @@ from reference_catalog import ReferenceCatalog
 from validate_content_quality import evaluate
 from validate_lesson import validate
 from validate_lesson_reference import validate_lesson_reference
+from validate_product_quality_v2 import load_policy as load_product_policy
+from validate_product_quality_v2 import validate_lesson_quality_v2
 from validation_cache import (
     ValidationCache,
     shared_validation_fingerprint,
@@ -48,6 +50,7 @@ def validate_one(
     lesson_path: Path,
     course: dict,
     policy: dict,
+    product_policy: dict,
     catalog: ReferenceCatalog,
     enforce_from: int,
     cache: ValidationCache,
@@ -56,7 +59,7 @@ def validate_one(
 ) -> dict:
     lesson_bytes = lesson_path.read_bytes()
     key = validation_key(lesson_bytes=lesson_bytes, shared_fingerprint=shared_fingerprint)
-    namespace = "lesson-local-v1"
+    namespace = "lesson-local-v2"
 
     cached = cache.get(namespace, key) if use_cache else None
     if cached is not None:
@@ -66,10 +69,12 @@ def validate_one(
     canonical = validate(lesson, course)
     reference = validate_lesson_reference(lesson, catalog, enforce_from_sort_order=enforce_from)
     quality = evaluate(lesson, policy)
+    product_quality = validate_lesson_quality_v2(lesson, product_policy)
     errors = (
         list(canonical.get("errors", []))
         + list(reference.get("errors", []))
         + list(quality.get("errors", []))
+        + list(product_quality.get("errors", []))
     )
     minimum = int(quality.get("minimumAutomatedScore", 90))
     score = int(quality.get("automatedScore", 0))
@@ -85,6 +90,8 @@ def validate_one(
         "canonicalStatus": canonical.get("status"),
         "referenceStatus": reference.get("status"),
         "referenceWarnings": reference.get("warnings", []),
+        "productQualityV2Status": product_quality.get("status"),
+        "productQualityV2Warnings": product_quality.get("warnings", []),
         "errors": errors,
     }
     if use_cache:
@@ -112,6 +119,7 @@ def main() -> int:
 
     course = load(root / "nova/courses" / course_code / "course.source.json")
     policy = load(root / "nova/_assistant/content-system-v1/content_quality.policy.json")
+    product_policy = load_product_policy(root)
     catalog = ReferenceCatalog(root, course_code)
     cache = ValidationCache(cache_dir)
     shared = shared_validation_fingerprint(root, course_code, config)
@@ -123,6 +131,7 @@ def main() -> int:
             lesson_path=lesson_path,
             course=course,
             policy=policy,
+            product_policy=product_policy,
             catalog=catalog,
             enforce_from=enforce_from,
             cache=cache,
@@ -134,9 +143,9 @@ def main() -> int:
 
     errors = [error for report in reports for error in report.get("errors", [])]
     payload = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "courseCode": course_code,
-        "validationMode": "cached-local",
+        "validationMode": "cached-local-v2",
         "fullPrefixRegressionRequired": True,
         "cacheDir": str(cache_dir.relative_to(root)) if cache_dir.is_relative_to(root) else str(cache_dir),
         "cacheHits": sum(1 for r in reports if r.get("cacheHit")),
