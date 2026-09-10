@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0138",
+  "levelKey": "A1",
+  "sortOrder": 138,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0138: target word EN-LEX-MOVE-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-MOVE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "move",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-C2B0DF18791DF3EF0B8A",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-C2B0DF18791DF3EF0B8A",
+        "EN-REF-1F780C5BF6B82E6154F4"
+      ],
+      "referenceTranslationsFa": [
+        "تصمیم گرفتن",
+        "کوچ کردن"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-C2B0DF18791DF3EF0B8A",
+        "translationFa": "تصمیم گرفتن",
+        "definitionEn": "the act of deciding to do something",
+        "senseId": "4ae60247-e267-5534-a446-b72214b7e570",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "5faef4ad8e6f72b9a09eca696964a676e20280a6aef0a5da42dbce3f1be56876"
+}

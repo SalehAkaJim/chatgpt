@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0136",
+  "sortOrder": 136,
+  "levelKey": "A1",
+  "lessonSourceHash": "3c0f7b7741a839043e9703f8932d6697726cca3e8feb47e742594e309818d9e2",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0136-IDEA",
+      "form": "Is this a good idea?",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-IDEA-01",
+      "lemma": "idea",
+      "role": "target",
+      "referenceKey": "EN-REF-1F353D28E47A198DB2CC",
+      "spokenPriority": {
+        "lemma": "idea",
+        "spokenRank": 233,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "AY0 D IY1 AH0",
+        "arpabet": [
+          "AY0 D IY1 AH0"
+        ],
+        "stressPattern": "010"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "is this a good idea",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0136"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0136-IDEA"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "is this a good idea",
+      "examples": [],
+      "fallback": {
+        "query": "is this a good idea",
+        "rationale": "Natural target-bearing present-be question."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "a good idea",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0136"
+      ],
+      "lexicalLemmas": [
+        "idea"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "is this a good idea",
+      "examples": [],
+      "fallback": {
+        "query": "is this a good idea",
+        "rationale": "Natural target-bearing present-be question."
+      },
+      "fallbackMatch": "compatible_phrase"
+    },
+    {
+      "query": "a good idea too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0136"
+      ],
+      "lexicalLemmas": [
+        "idea"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "the bus is a good idea too",
+      "examples": [],
+      "fallback": {
+        "query": "the bus is a good idea too",
+        "rationale": "Changed-context transfer."
+      },
+      "fallbackMatch": "compatible_phrase"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "b34f54a0aafe9a1e2e2051b96618ab3c1c45941e19f3fddae1e7f3bfe4ce8a54"
+}

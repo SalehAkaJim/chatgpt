@@ -1,0 +1,122 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0135",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 90,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "i remember it well",
+        "activityKeys": [
+          "A03",
+          "A04"
+        ]
+      }
+    },
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "i remember the name too",
+        "activityKeys": [
+          "A05",
+          "A07"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0135 after spaced-retrieval repair; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "Core remember dialogue is grammatical and natural; A09-A14 reuse previously taught natural targets: This information is for you; My mind is full of questions; It was two days ago; We can talk after class; That guy is Sam; This is my hand."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian prompts for the six spaced-retrieval items preserve the previously taught meanings and contain no unsupported contextual claims."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "A02 exposes current-dialogue context before dependent current-lesson tasks; A09-A14 are explicit prior-lesson retrieval prompts whose required semantic content is fully present in the Persian prompt and was taught in Lessons 125-130."
+      },
+      "distractorQuality": {
+        "score": 5,
+        "evidence": "Existing English choice distractors remain grammatical, natural and explicitly audited; the added retrieval activities contain no distractors."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "The core Liam/Leo library exchange remains coherent and the spaced-retrieval block is clearly separated as review rather than invented story dialogue."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "The lesson keeps one new A1 target and adds short, already-learned retrieval items rather than introducing new meanings."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "remember is practiced across recognition, dialogue, reconstruction and retrieval; six overdue targets from Lessons 125-130 receive active spaced retrieval without duplicating A08's scored answer."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "Current target transfer remains intact, while A09-A14 independently reactivate prior targets within the policy window."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "New material is labeled and structured as spaced review, so it does not alter the main remember outcome or story semantics."
+      },
+      "learnerExperience": {
+        "score": 4,
+        "evidence": "Dependency order was re-audited and the added review prompts are self-contained; no real learner test is claimed."
+      },
+      "runtimeAssetGrounding": {
+        "score": 5,
+        "evidence": "No added activity claims an image, photo, visual, or listening source. Existing listening/reconstruction tasks point only to audioRequired turns exposed earlier by A02."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Only the recall-from-memory sense of remember is assessed as new content.",
+      "The six added spaced-retrieval prompts are model/editor reviewed but not learner-tested.",
+      "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+      "Runtime behavior still requires CI validation."
+    ],
+    "resolvedFindings": [
+      "Identified the full-prefix Product Quality V2 failure as missing active retrieval for targets introduced in Lessons 125-130.",
+      "Changed A09-A14 retrieval evidence semantics to bounded_retrieval while preserving their spaced-review purpose and explicit-help model access.",
+      "Changed A10 to the distinct, previously exposed Lesson 130 sentence My mind is full of questions. so spaced retrieval remains valid without duplicating A08's scored answer.",
+      "A09-A14 require no unseen dialogue, audio, image, or visual context; each prompt supplies its own Persian semantic cue and refers only to previously exposed lesson content.",
+      "Corrected and verified the review reference for mind as EN-REF-34B22C25F41CD3FAC8AB and information as EN-REF-9853AFC7B0713F407C02.",
+      "English grammar, accepted speech strings, Persian orthography, and reference consistency were rechecked after repair.",
+      "A02 still precedes every current-dialogue-dependent listening, reconstruction, or retrieval activity.",
+      "No unsupported image/photo/visual claim exists and no new listening instruction was added.",
+      "learnerTested remains false; no human or learner testing is invented."
+    ],
+    "lessonKey": "EN-A1-L-0135",
+    "sourceHash": "58d2e3556d6f113b192692da9626e505aa5100cac1cb5566843783025dc30e77",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.8,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 14,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "58d2e3556d6f113b192692da9626e505aa5100cac1cb5566843783025dc30e77"
+}

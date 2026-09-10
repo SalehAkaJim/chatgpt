@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0134",
+  "sortOrder": 134,
+  "levelKey": "A1",
+  "lessonSourceHash": "3e21b9ea6641886b5768febf81b9f523593024e4e1f5455d32739a5cbe9640bb",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0134-PRETTY",
+      "form": "The blue one looks pretty",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-PRETTY-01",
+      "lemma": "pretty",
+      "role": "target",
+      "referenceKey": "EN-REF-94E303E18818495BC1AE",
+      "spokenPriority": {
+        "lemma": "pretty",
+        "spokenRank": 235,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P R IH1 T IY0",
+        "arpabet": [
+          "P R IH1 T IY0"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the blue one looks pretty",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0134"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0134-PRETTY"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "the blue one looks pretty",
+      "examples": [],
+      "fallback": {
+        "query": "the blue one looks pretty",
+        "rationale": "Bounded generated usage for the intended pretty target and selected A1 construction."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "one looks pretty",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0134"
+      ],
+      "lexicalLemmas": [
+        "pretty"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "the blue one looks pretty",
+      "examples": [],
+      "fallback": {
+        "query": "the blue one looks pretty",
+        "rationale": "Bounded generated usage for the intended pretty target and selected A1 construction."
+      },
+      "fallbackMatch": "compatible_phrase"
+    },
+    {
+      "query": "it looks pretty too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0134"
+      ],
+      "lexicalLemmas": [
+        "pretty"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "it looks pretty too",
+      "examples": [],
+      "fallback": {
+        "query": "it looks pretty too",
+        "rationale": "Bounded generated usage for the intended pretty target and selected A1 construction."
+      },
+      "fallbackMatch": "exact"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "184662df2ae619feb02eea4a9c6e75e88d9b4bf3dcae8086f07a020372c3297d"
+}

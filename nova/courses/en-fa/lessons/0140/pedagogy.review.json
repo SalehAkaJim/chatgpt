@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor semantic and pedagogy review of the current Lesson 0140 review-recombination draft; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 5,
+      "evidence": "‘Ask about the time.’ and ‘Ask about the room too.’ are natural affirmative imperatives; legacy review sentences ‘I know this book.’, ‘I make coffee.’ and ‘This work takes a day.’ are also natural bounded A1 uses."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "ask is consistently represented as «پرسیدن» and the reviewed know/make/work/day meanings remain bounded to their previously taught Persian senses."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "A02 exposes the guided dialogue before all dependent listening/retrieval; A09-A11 are clearly separated legacy review tasks and do not present old items as new targets."
+    },
+    "distractorQuality": {
+      "score": 5,
+      "evidence": "Target and legacy-review English distractors are grammatical, natural and contrastive, with explicit model audits and lesson-specific Persian feedback."
+    },
+    "dialoguePlausibility": {
+      "score": 5,
+      "evidence": "لیام و لیو در کتابخانه برای جلسه بعدی اطلاعات لازم را از مسوول میز می‌گیرند."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "One new spoken verb plus short recognition review of four familiar legacy items keeps the end-of-wave load controlled for A1."
+    },
+    "repetitionUsefulness": {
+      "score": 5,
+      "evidence": "ask repeats across time and room; know, make, work and day are deliberately reactivated eight Lessons after their previous review in Lesson 0132."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The target changes the object of inquiry from time to room, while A09-A11 independently retrieve old language rather than merely repeating the current dialogue."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "The information-seeking scenario remains focused on ask, and the final review block provides an explicit end-of-wave spaced-retrieval function without changing target sense."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "No real learner test is claimed; model/editor review covers dependency order, clarity, naturalness and review load only."
+    },
+    "runtimeAssetGrounding": {
+      "score": 5,
+      "evidence": "No visual claim exists; listening sources are audioRequired turns already exposed in A02, while A09-A11 require no unavailable media."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "Only ask meaning inquire about is assessed as the new target.",
+    "Legacy know, make, work and day tasks are recognition review and do not establish renewed mastery or broaden their senses.",
+    "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+    "Runtime behavior requires CI validation."
+  ],
+  "resolvedFindings": [
+    "English imperative grammar and accepted speech strings for ask checked.",
+    "Persian orthography and imperative meaning checked.",
+    "Reference EN-REF-8C2B229D374D0E30EA39, verb POS, sense key, CEFRJ-GRAM-117 and spec hash cross-checked.",
+    "A02 precedes all dependent listening/retrieval.",
+    "No unsupported visual exists and every listening source is audio-grounded.",
+    "A07 hides the answer before attempt.",
+    "A09 reactivates canonical Lesson 0040 know without a new-target claim.",
+    "A10 reactivates canonical Lesson 0041 make without a new-target claim.",
+    "A11 recombines canonical Lesson 0051 work and Lesson 0053 day in one natural sentence.",
+    "The four legacy review lexical items retain their canonical reference keys and sense keys.",
+    "Library arc returns from Lesson 0135 after 5 Lessons with learner role switched to Leo."
+  ],
+  "lessonKey": "EN-A1-L-0140",
+  "sourceHash": "3219737460dd70a50ce357aade5e98c1049cb69f705c1b4ab1dbcbe27c673fef",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+}

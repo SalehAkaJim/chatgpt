@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor semantic and pedagogy review of Lesson 0136; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 5,
+      "evidence": "‘Is this a good idea?’, ‘It is a good idea.’ and ‘The bus is a good idea too.’ are natural A1 English."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "idea is consistently mapped to «ایده» and the travel-choice prompts preserve meaning."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "A02 exposes all dialogue context before dependent A03, A06 and A07."
+    },
+    "distractorQuality": {
+      "score": 5,
+      "evidence": "All scored distractors are grammatical, natural and contrastive."
+    },
+    "dialoguePlausibility": {
+      "score": 5,
+      "evidence": "روبی و سارا در مسیر خانه درباره رفتن با اتوبوس یا پیاده‌روی تصمیم می‌گیرند."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "One lexical target plus a familiar present-be yes/no question keeps the task bounded; no new grammar target is scored in this draft."
+    },
+    "repetitionUsefulness": {
+      "score": 5,
+      "evidence": "idea is recycled across question, answer, transfer, reconstruction and retrieval."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The target moves from a general proposal to the bus option without sense drift."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Story, outcome and tasks all support evaluating a simple idea."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "No real learner test is claimed; dependency and clarity were model-audited only."
+    },
+    "runtimeAssetGrounding": {
+      "score": 5,
+      "evidence": "No visual claim exists; all listening sources are audioRequired turns exposed through A02 first."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "Only the bounded proposal/cognition sense of idea is assessed.",
+    "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+    "Runtime behavior requires CI validation."
+  ],
+  "resolvedFindings": [
+    "English grammar and speech strings checked.",
+    "Persian orthography and meaning checked.",
+    "Reference EN-REF-1F353D28E47A198DB2CC and sense key cross-checked; the stale provisional CEFRJ-GRAM-58-2 scoring target was removed because it is not in the live canonical candidate set after ordered integration through Lesson 0135.",
+    "A02 precedes all dependent context use.",
+    "No unsupported visual exists and every audio source is grounded.",
+    "A07 hides the answer before attempt.",
+    "Walking Group arc returns from Lesson 0131 after 5 Lessons with learner role switched to Ruby."
+  ],
+  "lessonKey": "EN-A1-L-0136",
+  "sourceHash": "3c0f7b7741a839043e9703f8932d6697726cca3e8feb47e742594e309818d9e2",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+}

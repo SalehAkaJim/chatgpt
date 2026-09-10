@@ -1,0 +1,120 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0137",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 90,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "this month isn't busy",
+        "activityKeys": [
+          "A03",
+          "A04"
+        ]
+      }
+    },
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "next month isn't busy either",
+        "activityKeys": [
+          "A05",
+          "A07"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0137; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "‘This month isn't busy.’ and ‘Next month isn't busy either.’ are natural bounded calendar-time descriptions."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "month is consistently «ماه» and the negative polarity is preserved in Persian."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "Dialogue exposure in A02 precedes listening, reconstruction and retrieval dependencies."
+      },
+      "distractorQuality": {
+        "score": 5,
+        "evidence": "Distractors are grammatical, natural and contrast month/time or polarity; each choice now has explicit teaching feedback and model distractor audit where English choices are graded."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "الکس و مایا در مرکز آموزشی درباره برنامه این ماه و ماه بعد حرف می‌زنند."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "One lexical target is paired with a short already-introduced present-be negative pattern."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "month recurs across current-month and next-month contexts without sense drift."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "Transfer changes the calendar reference from this month to next month."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, story, familiar grammar and tasks all align to calendar scheduling."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; model review covers dependency and clarity only."
+      },
+      "runtimeAssetGrounding": {
+        "score": 5,
+        "evidence": "No image/photo/visual is claimed; all listening sources are audioRequired turns exposed earlier."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Only the calendar-unit sense of month is assessed.",
+      "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+      "Runtime behavior requires CI validation."
+    ],
+    "resolvedFindings": [
+      "English negative-polarity consistency checked without claiming a new grammar target unavailable in the live canonical spec.",
+      "Persian orthography and translation checked.",
+      "Reference EN-REF-314CD051A363E320B5DA and lexical sense key cross-checked; provisional grammar reservation removed after live-spec reconciliation.",
+      "A03 comprehension answer contract, option-level feedback and distractor audit corrected.",
+      "A02 precedes all dependent listening/retrieval.",
+      "No unsupported visual exists and audio sources are grounded.",
+      "A07 hides answer before attempt and now carries bounded-retrieval evidence and retry feedback.",
+      "Classmates arc returns from Lesson 0132 after 5 Lessons with learner role switched to Alex."
+    ],
+    "lessonKey": "EN-A1-L-0137",
+    "sourceHash": "71095111eca4768cc5e81b67383cf82932cbd6ecba296ad0cf21db43e28f739c",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.7,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 8,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "71095111eca4768cc5e81b67383cf82932cbd6ecba296ad0cf21db43e28f739c"
+}

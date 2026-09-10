@@ -1,0 +1,121 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0134",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 90,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "the blue one looks pretty",
+        "activityKeys": [
+          "A03",
+          "A04"
+        ]
+      }
+    },
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "it looks pretty too",
+        "activityKeys": [
+          "A05",
+          "A07"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0134; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 5,
+        "evidence": "Target examples ‘The blue one looks pretty.’ and ‘It looks pretty too.’ were checked for grammar, idiomaticity, and the bounded pretty sense."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently maps pretty to «زیبا» within the lesson’s bounded sense and keeps prompts concise."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "A01 establishes meaning; A02 exposes the complete dialogue; A03–A06 depend only on already exposed material; A07 performs hidden retrieval; A08 is spaced story review."
+      },
+      "distractorQuality": {
+        "score": 5,
+        "evidence": "A03, A04, A05, and A08 use grammatical, natural distractors, explicit model contrast audits, and distinct option-specific Persian teaching feedback."
+      },
+      "dialoguePlausibility": {
+        "score": 5,
+        "evidence": "نینا و آیریس در مرکز محله برای جشن، بین دو تزیین ساده انتخاب می‌کنند."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "Only pretty is a new lexical target; sentences remain short and controlled while one A1 grammar candidate is practiced."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "pretty recurs across recognition, dialogue, listening, transfer, reconstruction, and hidden retrieval without adding a second unsupported sense."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second exchange changes the immediate context while preserving the same bounded sense of pretty."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, target construction, story, learner turns, activities, and final retrieval all point to the same lesson objective."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "Dependency ordering and source availability were audited, but no real learner test is claimed; perceived relevance and difficulty remain unverified."
+      },
+      "runtimeAssetGrounding": {
+        "score": 5,
+        "evidence": "No image/photo/visual is claimed. Listening and reconstruction reference only T01–T04/T02, all marked audioRequired, and the supplying dialogue appears earlier as A02."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "Only the specified pretty sense is reviewed as new material.",
+      "Generated audio pronunciation/prosody is not evaluated at this text-authoring stage.",
+      "Runtime behavior is inferred from the permanent guided-dialogue/audio source contract and still requires CI/runtime validation."
+    ],
+    "resolvedFindings": [
+      "English grammar, target-sense consistency, accepted speech strings, and all English distractors were model-checked.",
+      "Persian orthography, punctuation, and English–Persian meaning consistency were model-checked.",
+      "Target reference key, part of speech, sense key, grammar key, and provisional spec hash were cross-checked against packet/spec data for Lesson 0134.",
+      "Learner-context dependency order was checked: A02 exposes T01–T04 before A03, A06, and A07 use those turns.",
+      "No unsupported visual claim exists; every listening/replay source points to an audioRequired turn.",
+      "A03 comprehension feedback was repaired so every option has a distinct, lesson-specific Persian teaching explanation; explicit model audits remain present for both English distractors.",
+      "Lesson archetype was repaired to the supported lexical_context category while preserving the lesson’s lexical target and transfer design.",
+      "A07 keeps the response hidden before attempt and retrieves an already exposed learner turn.",
+      "The story arc returns from Lesson 0129 after 5 Lessons and switches the learner role."
+    ],
+    "lessonKey": "EN-A1-L-0134",
+    "sourceHash": "3e21b9ea6641886b5768febf81b9f523593024e4e1f5455d32739a5cbe9640bb",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.7,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 8,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "3e21b9ea6641886b5768febf81b9f523593024e4e1f5455d32739a5cbe9640bb"
+}

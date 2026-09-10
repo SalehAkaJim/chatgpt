@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0139",
+  "sortOrder": 139,
+  "levelKey": "A1",
+  "lessonSourceHash": "9cd22e45f70d169187eb7b9a65d08abe9bfdce436255edbd796c49509daf7ce2",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0139-QUESTION",
+      "form": "Choosing a date is the main question",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-QUESTION-01",
+      "lemma": "question",
+      "role": "target",
+      "referenceKey": "EN-REF-0C1AA93290D3513E081E",
+      "spokenPriority": {
+        "lemma": "question",
+        "spokenRank": 141,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K W EH1 S CH AH0 N",
+        "arpabet": [
+          "K W EH1 S CH AH0 N",
+          "K W EH1 SH AH0 N"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "choosing a date is the main",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0139"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0139-QUESTION"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "choosing a date is the main question",
+      "examples": [],
+      "fallback": {
+        "query": "choosing a date is the main question",
+        "rationale": "Bounded target use of question as matter at issue plus V-ing form."
+      },
+      "fallbackMatch": "compatible_phrase"
+    },
+    {
+      "query": "the main question",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0139"
+      ],
+      "lexicalLemmas": [
+        "question"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "the main question",
+      "examples": [],
+      "fallback": {
+        "query": "the main question",
+        "rationale": "Core noun phrase for the intended matter-at-issue sense."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "is another question",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0139"
+      ],
+      "lexicalLemmas": [
+        "question"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "the place is another question",
+      "examples": [],
+      "fallback": {
+        "query": "the place is another question",
+        "rationale": "Natural changed-context use of the same bounded sense."
+      },
+      "fallbackMatch": "compatible_phrase"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "d7fdb09b7d6a336cc87c5ea8a1dff87ed09a0220ef932599868231e83db6f932"
+}

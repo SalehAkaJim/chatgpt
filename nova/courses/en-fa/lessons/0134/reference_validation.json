@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0134",
+  "levelKey": "A1",
+  "sortOrder": 134,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0134: target word EN-LEX-PRETTY-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-PRETTY-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "pretty",
+      "partOfSpeech": "adjective",
+      "selectedReferenceKey": "EN-REF-94E303E18818495BC1AE",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-94E303E18818495BC1AE",
+        "EN-REF-86512E51307BBDF5FB82"
+      ],
+      "referenceTranslationsFa": [
+        "زیبا، دلکش",
+        "ناخوشایند، بد (به صورت طنزآمیز)"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-94E303E18818495BC1AE",
+        "translationFa": "زیبا، دلکش",
+        "definitionEn": "pleasing by delicacy or grace; not imposing",
+        "senseId": "d3c2a272-2544-5957-a2be-efaba2a4a844",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "3e21b9ea6641886b5768febf81b9f523593024e4e1f5455d32739a5cbe9640bb"
+}

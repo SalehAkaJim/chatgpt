@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0136",
+  "levelKey": "A1",
+  "sortOrder": 136,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0136: target word EN-LEX-IDEA-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-IDEA-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "idea",
+      "partOfSpeech": "noun",
+      "selectedReferenceKey": "EN-REF-1F353D28E47A198DB2CC",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-1F353D28E47A198DB2CC",
+        "EN-REF-E9DDBF1ED71A9F5A1F8A"
+      ],
+      "referenceTranslationsFa": [
+        "ایده، تصور، مفهوم",
+        "نیت، قصد، هدف"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-1F353D28E47A198DB2CC",
+        "translationFa": "ایده، تصور، مفهوم",
+        "definitionEn": "the content of cognition; the main thing you are thinking about",
+        "senseId": "733a840d-3970-5d52-91fe-a5d096d39e18",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "3c0f7b7741a839043e9703f8932d6697726cca3e8feb47e742594e309818d9e2"
+}

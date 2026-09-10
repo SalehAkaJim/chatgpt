@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor semantic and pedagogy review of Lesson 0139; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 4,
+      "evidence": "‘Choosing a date is the main question.’ and ‘The place is another question.’ are grammatical uses of question as the matter at issue; this less-basic sense is deliberately bounded."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "question is translated as «موضوع» throughout, avoiding the more familiar direct-interrogative sense «سؤال»."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "A01 disambiguates the sense before A02; dialogue then precedes all dependent listening and retrieval tasks."
+    },
+    "distractorQuality": {
+      "score": 5,
+      "evidence": "plan/place/answer/pretty distractors are grammatical and meaningfully contrastive."
+    },
+    "dialoguePlausibility": {
+      "score": 5,
+      "evidence": "نینا و آیریس در مرکز محله برای یک برنامه گروهی درباره تاریخ و مکان تصمیم می‌گیرند."
+    },
+    "difficultyFit": {
+      "score": 3,
+      "evidence": "The source-selected matter-at-issue sense is conceptually less concrete for A1, so examples remain short and highly controlled."
+    },
+    "repetitionUsefulness": {
+      "score": 5,
+      "evidence": "question repeats only in the matter-to-decide sense, with explicit disambiguation from direct questions."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The matter changes from choosing a date to deciding the place while sense stays stable."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Planning a group event naturally supplies multiple matters to decide."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "No real learner test is claimed; semantic difficulty remains a limitation despite dependency-safe authoring."
+    },
+    "runtimeAssetGrounding": {
+      "score": 5,
+      "evidence": "No visual claim exists and all listening sources are audioRequired turns exposed in A02 before use."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "This lesson intentionally teaches question sense 2 ‘subject matter at issue’, not the basic direct-question sense.",
+    "This abstract sense may feel harder than neighboring A1 lexical items.",
+    "Generated audio pronunciation/prosody is not evaluated at this text stage."
+  ],
+  "resolvedFindings": [
+    "English grammar and bounded sense consistency checked.",
+    "Persian consistently uses «موضوع» rather than misleading «سؤال».",
+    "Reference EN-REF-0C1AA93290D3513E081E, noun POS, sense d987bdb5-757d-5152-89f6-d2723ad74619, CEFRJ-GRAM-105 and spec hash cross-checked.",
+    "A02 precedes A03, A06 and A07 dependency use.",
+    "No unsupported visual exists and all audio sources are grounded.",
+    "A07 hides the answer before attempt.",
+    "Community arc returns from Lesson 0134 after 5 Lessons with learner role switched to Iris."
+  ],
+  "lessonKey": "EN-A1-L-0139",
+  "sourceHash": "9cd22e45f70d169187eb7b9a65d08abe9bfdce436255edbd796c49509daf7ce2",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+}

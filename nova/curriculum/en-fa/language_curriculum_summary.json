@@ -3,7 +3,7 @@
   "courseCode": "en-fa",
   "levelKey": "A1",
   "generatedLessonsMode": "auto",
-  "generatedLessonCount": 132,
+  "generatedLessonCount": 140,
   "generatedLessons": [
     1,
     2,
@@ -136,12 +136,20 @@
     129,
     130,
     131,
-    132
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140
   ],
-  "lastLessonSortOrder": 132,
-  "nextLessonSortOrder": 133,
-  "nextSpecPath": "nova/curriculum/en-fa/specs/0133.json",
-  "nextSpecHash": "4bbced746e40e8c1bc34434cb014d0c3ea1ca92cd6852bd77eabcd49fb66354a",
+  "lastLessonSortOrder": 140,
+  "nextLessonSortOrder": 141,
+  "nextSpecPath": "nova/curriculum/en-fa/specs/0141.json",
+  "nextSpecHash": "9a2642ca6adbf1c3cdc7cf31599b7ef7075dab18603c1a8c12350a6f052a1c88",
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
   "languagePlans": [
@@ -1535,6 +1543,86 @@
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 5,
       "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0133",
+      "sortOrder": 133,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0134",
+      "sortOrder": 134,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0135",
+      "sortOrder": 135,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 3,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0136",
+      "sortOrder": 136,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0137",
+      "sortOrder": 137,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 5
+    },
+    {
+      "lessonKey": "EN-A1-L-0138",
+      "sortOrder": 138,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 4
+    },
+    {
+      "lessonKey": "EN-A1-L-0139",
+      "sortOrder": 139,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0140",
+      "sortOrder": 140,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 5,
+      "usageEvidenceCount": 1
     }
   ],
   "curriculumSpecReports": [
@@ -2755,6 +2843,96 @@
         "review lexical lemma 'work' was not marked due by the curriculum engine",
         "review lexical lemma 'day' was not marked due by the curriculum engine"
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0133",
+      "sortOrder": 133,
+      "specKey": "en-fa-A1-LESSON-SPEC-0133",
+      "specHash": "4bbced746e40e8c1bc34434cb014d0c3ea1ca92cd6852bd77eabcd49fb66354a",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0134",
+      "sortOrder": 134,
+      "specKey": "en-fa-A1-LESSON-SPEC-0134",
+      "specHash": "fe36cca1733b09c5529c0fc4d28b5ce9b5ddfa557d40b4bbf9f08f67e8f6e687",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0135",
+      "sortOrder": 135,
+      "specKey": "en-fa-A1-LESSON-SPEC-0135",
+      "specHash": "f10a732939f730a3a2fb31fec23a0b88fbe77e9c26829e0d0e587edd35ad35f8",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'information' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0136",
+      "sortOrder": 136,
+      "specKey": "en-fa-A1-LESSON-SPEC-0136",
+      "specHash": "35022be88c48f03fd4b2553dcbde00ad29b52aa58338f450c8d5083cb14543ce",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0137",
+      "sortOrder": 137,
+      "specKey": "en-fa-A1-LESSON-SPEC-0137",
+      "specHash": "f80eaf1d9430cb027e6da592c57351334ef8b852495d76cdb4c5b018387d595c",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0138",
+      "sortOrder": 138,
+      "specKey": "en-fa-A1-LESSON-SPEC-0138",
+      "specHash": "34c4bd009fa2610724dbced6828af5c0f4d7cadea25af0d7777b1cb46fb4d0a4",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0139",
+      "sortOrder": 139,
+      "specKey": "en-fa-A1-LESSON-SPEC-0139",
+      "specHash": "1c930d6caba3b7a418759f9cf83f6a75e195ab561fd93079434d90e4955c8632",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0140",
+      "sortOrder": 140,
+      "specKey": "en-fa-A1-LESSON-SPEC-0140",
+      "specHash": "dc352ad42f072bc9cf61525c52347af0b70be9d78560a91fd28e558911481153",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
     }
   ],
   "status": "PASS",

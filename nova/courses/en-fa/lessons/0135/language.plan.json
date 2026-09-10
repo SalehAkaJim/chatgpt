@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0135",
+  "sortOrder": 135,
+  "levelKey": "A1",
+  "lessonSourceHash": "58d2e3556d6f113b192692da9626e505aa5100cac1cb5566843783025dc30e77",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0135-REMEMBER",
+      "form": "I remember it well",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-REMEMBER-01",
+      "lemma": "remember",
+      "role": "target",
+      "referenceKey": "EN-REF-126A30548A074DD19C19",
+      "spokenPriority": {
+        "lemma": "remember",
+        "spokenRank": 169,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "R IH0 M EH1 M B ER0",
+        "arpabet": [
+          "R IH0 M EH1 M B ER0",
+          "R IY0 M EH1 M B ER0"
+        ],
+        "stressPattern": "010"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-INFORMATION-01",
+      "lemma": "information",
+      "role": "review",
+      "referenceKey": "EN-REF-9853AFC7B0713F407C02",
+      "spokenPriority": {
+        "lemma": "information",
+        "spokenRank": 297,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "IH2 N F ER0 M EY1 SH AH0 N",
+        "arpabet": [
+          "IH2 N F ER0 M EY1 SH AH0 N",
+          "IH0 N F AO1 R M EY1 SH AH0 N"
+        ],
+        "stressPattern": "2010"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-MIND-01",
+      "lemma": "mind",
+      "role": "review",
+      "referenceKey": "EN-REF-34B22C25F41CD3FAC8AB",
+      "spokenPriority": {
+        "lemma": "mind",
+        "spokenRank": 261,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M AY1 N D",
+        "arpabet": [
+          "M AY1 N D"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i remember it well",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0135"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0135-REMEMBER"
+      ],
+      "lexicalLemmas": [
+        "remember"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "i remember it well",
+      "examples": [],
+      "fallback": {
+        "query": "i remember it well",
+        "rationale": "Bounded target use of remember."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "do you remember it",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0135"
+      ],
+      "lexicalLemmas": [
+        "remember"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "how well do you remember it",
+      "examples": [],
+      "fallback": {
+        "query": "how well do you remember it",
+        "rationale": "Natural How + adverb question containing the target verb."
+      },
+      "fallbackMatch": "compatible_phrase"
+    },
+    {
+      "query": "i remember the name",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0135"
+      ],
+      "lexicalLemmas": [
+        "remember"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "i remember the name too",
+      "examples": [],
+      "fallback": {
+        "query": "i remember the name too",
+        "rationale": "Changed-context retrieval of the same target sense."
+      },
+      "fallbackMatch": "compatible_phrase"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "dc4b53f8e104e3547980ed0ba00355f194e34f17b8678d42713dbb618c7315bd"
+}

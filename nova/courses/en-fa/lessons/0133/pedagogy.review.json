@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor semantic and pedagogy review of Lesson 0133; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 5,
+      "evidence": "Target examples ‘Yes. The problem is small.’ and ‘This problem is easy.’ were checked for grammar, idiomaticity, and the bounded problem sense."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "Persian copy consistently maps problem to «مشکل» within the lesson’s bounded sense and keeps prompts concise."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "A01 establishes meaning; A02 exposes the complete dialogue; A03–A06 depend only on already exposed material; A07 performs hidden retrieval; A08 is spaced story review."
+    },
+    "distractorQuality": {
+      "score": 5,
+      "evidence": "A03, A04, A05, and A08 use grammatical, natural distractors with explicit model contrast audits; A03 feedback is distinct for each option."
+    },
+    "dialoguePlausibility": {
+      "score": 5,
+      "evidence": "آوا و بن در کافه درباره مشکل کوچکی در سفارش و راه‌حل ساده آن حرف می‌زنند."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "Only problem is a new lexical target; sentences remain short and controlled while one A1 grammar candidate is practiced."
+    },
+    "repetitionUsefulness": {
+      "score": 5,
+      "evidence": "problem recurs across recognition, dialogue, listening, transfer, reconstruction, and hidden retrieval without adding a second unsupported sense."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The second exchange changes the immediate context while preserving the same bounded sense of problem."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Outcome, target construction, story, learner turns, activities, and final retrieval all point to the same lesson objective."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "Dependency ordering and source availability were audited, but no real learner test is claimed; perceived relevance and difficulty remain unverified."
+    },
+    "runtimeAssetGrounding": {
+      "score": 5,
+      "evidence": "No image/photo/visual is claimed. Listening and reconstruction reference only T01–T04/T02, all marked audioRequired, and the supplying dialogue appears earlier as A02."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "Only the specified problem sense is reviewed as new material.",
+    "Generated audio pronunciation/prosody is not evaluated at this text-authoring stage.",
+    "Runtime behavior is inferred from the permanent guided-dialogue/audio source contract and still requires CI/runtime validation."
+  ],
+  "resolvedFindings": [
+    "English grammar, target-sense consistency, accepted speech strings, and all English distractors were model-checked.",
+    "Persian orthography, punctuation, and English–Persian meaning consistency were model-checked.",
+    "Target reference key, part of speech, sense key, grammar key, and provisional spec hash were cross-checked against packet/spec data for Lesson 0133.",
+    "Learner-context dependency order was checked: A02 exposes T01–T04 before A03, A06, and A07 use those turns.",
+    "No unsupported visual claim exists; every listening/replay source points to an audioRequired turn.",
+    "A03 comprehension was repaired to use the canonical choice contract, distinct teaching feedback, and an explicit model distractor audit.",
+    "A07 keeps the response hidden before attempt and retrieves an already exposed learner turn.",
+    "The story arc returns from Lesson 0128 after 5 Lessons and switches the learner role.",
+    "The complete target-collocation window ‘Yes. The problem is small.’ now has an explicit lesson-specific usage fallback, resolving the integration language-plan evidence failure without changing learner-facing content."
+  ],
+  "lessonKey": "EN-A1-L-0133",
+  "sourceHash": "b319ce4842aac4b4a2f6484b6c9aadb059fe653a8c923102f35e831d6ad2f66a",
+  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+}

@@ -1,0 +1,689 @@
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0135",
+  "sortOrder": 135,
+  "titleEn": "I remember it well",
+  "titleFa": "خوب یادم هست",
+  "descriptionFa": "با remember درباره چیزی که به یاد داری حرف بزن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0135",
+  "outcomeFa": "remember را به معنی «به یاد داشتن» در دو جمله کوتاه و طبیعی به کار ببری.",
+  "scenarioFa": "لیام و لیو در کتابخانه درباره زمان جلسه قبلی و یک اسم آشنا حرف می‌زنند.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0134"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0135-REMEMBER",
+        "form": "I remember it well",
+        "meaningFa": "گفتن اینکه چیزی را خوب به یاد داری"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "How well do you remember it?",
+        "meaningFa": "چقدر خوب یادت هست؟"
+      },
+      {
+        "form": "And the name?",
+        "meaningFa": "اسم چطور؟"
+      }
+    ],
+    "assessmentBoundary": "Only the bounded recall-from-memory sense of remember represented by EN-REF-126A30548A074DD19C19 is assessed.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Reuse remember with a second familiar memory target after guided exposure, then complete spaced retrieval of previously exposed Lessons 125-130."
+    },
+    "story": {
+      "arcKey": "EN-A1-LIBRARY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0135",
+      "learnerRoleKey": "liam",
+      "participants": [
+        "leo",
+        "liam"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0130"
+      ],
+      "continuesLessonKey": "EN-A1-L-0130",
+      "settingFa": "کتابخانه، میز مطالعه",
+      "storyBeatFa": "لیام و لیو در کتابخانه درباره زمان جلسه قبلی و یک اسم آشنا حرف می‌زنند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0130",
+        "activityKeys": [
+          "A08",
+          "A10"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning story arc is spaced by 5 Lessons; the played learner role switches from the previous scene."
+      },
+      {
+        "lessonKey": "EN-A1-L-0125",
+        "activityKeys": [
+          "A09"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Spaced retrieval of information inside the required +3..+10 window."
+      },
+      {
+        "lessonKey": "EN-A1-L-0126",
+        "activityKeys": [
+          "A11"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Spaced retrieval of ago inside the required +3..+10 window."
+      },
+      {
+        "lessonKey": "EN-A1-L-0127",
+        "activityKeys": [
+          "A12"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Spaced retrieval of talk inside the required +3..+10 window."
+      },
+      {
+        "lessonKey": "EN-A1-L-0128",
+        "activityKeys": [
+          "A13"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Spaced retrieval of guy inside the required +3..+10 window."
+      },
+      {
+        "lessonKey": "EN-A1-L-0129",
+        "activityKeys": [
+          "A14"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Spaced retrieval of hand inside the required +3..+10 window."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0135",
+      "specHash": "f10a732939f730a3a2fb31fec23a0b88fbe77e9c26829e0d0e587edd35ad35f8",
+      "grammarTargetKeys": [
+        "CEFRJ-GRAM-247"
+      ],
+      "reviewLexicalLemmas": [
+        "information",
+        "mind"
+      ],
+      "usageFallbacks": [
+        {
+          "query": "i remember it well",
+          "rationale": "Bounded target use of remember."
+        },
+        {
+          "query": "how well do you remember it",
+          "rationale": "Natural How + adverb question containing the target verb."
+        },
+        {
+          "query": "i remember the name too",
+          "rationale": "Changed-context retrieval of the same target sense."
+        }
+      ]
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-REMEMBER-01",
+      "itemType": "word",
+      "displayForm": "remember",
+      "translationFa": "به یاد داشتن",
+      "role": "target",
+      "lemma": "remember",
+      "partOfSpeech": "verb",
+      "senseKey": "c51ad296-3598-5f78-a220-f428b02f7304",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-126A30548A074DD19C19"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-INFORMATION-01",
+      "itemType": "word",
+      "displayForm": "information",
+      "translationFa": "اطلاعات",
+      "role": "review",
+      "lemma": "information",
+      "partOfSpeech": "noun",
+      "senseKey": "61dc04c9-bb4a-5f4d-9aa2-c8edcf65fee7",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-9853AFC7B0713F407C02"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-MIND-01",
+      "itemType": "word",
+      "displayForm": "mind",
+      "translationFa": "ذهن",
+      "role": "review",
+      "lemma": "mind",
+      "partOfSpeech": "noun",
+      "senseKey": "699910bc-4b6c-5b7b-82c4-ba086e49affe",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-34B22C25F41CD3FAC8AB"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "How well do you remember it?",
+      "translationFa": "چقدر خوب یادت هست؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "I remember it well.",
+      "translationFa": "خوب یادم هست.",
+      "audioRequired": true,
+      "speechTargetEn": "I remember it well.",
+      "acceptedSpeechEn": [
+        "I remember it well."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "leo",
+      "textEn": "And the name?",
+      "translationFa": "اسم چطور؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "liam",
+      "textEn": "I remember the name too.",
+      "translationFa": "اسم را هم به یاد دارم.",
+      "audioRequired": true,
+      "speechTargetEn": "I remember the name too.",
+      "acceptedSpeechEn": [
+        "I remember the name too."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی remember را در این درس پیدا کن.",
+      "promptFa": "remember اینجا چه معنی‌ای دارد؟",
+      "promptEn": "I remember it well",
+      "config": {
+        "options": [
+          "به یاد داشتن",
+          "فراموش کردن",
+          "پرسیدن"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی برعکس هدف این درس است.",
+            "این گزینه فعل دیگری را می‌گوید."
+          ],
+          "correctFa": "به یاد داشتن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف شخصیت مقابل را گوش کن و جواب نقش خودت را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را دوباره گوش کن.",
+      "promptFa": "کدام جمله با پاسخ نقش تو در بخش اول یکی است؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "I remember it well.",
+          "I remember the name too.",
+          "I know it is late."
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جمله مربوط به بخش دوم گفت‌وگو است.",
+            "این جمله معنی دیگری دارد و پاسخ شنیده‌شده نیست."
+          ],
+          "correctFa": "خوب یادم هست."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "I remember the name too.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "جمله طبیعی است، اما پاسخ بخش دوم گفت‌وگو است نه بخش اول."
+            },
+            {
+              "option": "I know it is late.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "جمله طبیعی است، اما معنی دیگری دارد و پاسخ شنیده‌شده نیست."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "جمله درست را انتخاب کن.",
+      "promptFa": "خوب یادم هست.",
+      "config": {
+        "optionsEn": [
+          "I remember it well.",
+          "I know it is late.",
+          "I remember the room."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جمله طبیعی است، اما معنی هدف را نمی‌رساند.",
+            "این جمله طبیعی است، اما چیز دیگری را به یاد می‌آورد."
+          ],
+          "correctFa": "I remember it well."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "I know it is late.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "طبیعی است اما معنی دیگری دارد."
+            },
+            {
+              "option": "I remember the room.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "طبیعی است اما هدف معنایی prompt نیست."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "اسم را هم به یاد دارم.",
+      "config": {
+        "optionsEn": [
+          "I remember the name too.",
+          "I remember the time too.",
+          "I know the name too."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جمله زمان را به یاد می‌آورد، نه اسم را.",
+            "این جمله طبیعی است، اما فعل هدف را تمرین نمی‌کند."
+          ],
+          "correctFa": "I remember the name too."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "I remember the time too.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "هدف حافظه را نگه می‌دارد اما چیز دیگری است."
+            },
+            {
+              "option": "I know the name too.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "طبیعی است اما فعل هدف را تمرین نمی‌کند."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "sentence_order",
+      "instructionFa": "پاسخ اول را دوباره گوش کن و جمله را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "well.",
+          "it",
+          "remember",
+          "I"
+        ],
+        "answerTokensEn": [
+          "I",
+          "remember",
+          "it",
+          "well."
+        ],
+        "answerEn": "I remember it well.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی.",
+          "retryFa": "دوباره به صدای همان پاسخ گوش کن."
+        }
+      },
+      "metadata": {
+        "learningDemand": "supported_reconstruction",
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A07",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "در نقش خودت بگو: اسم را هم به یاد دارم.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "I remember the name too.",
+        "acceptedAnswersEn": [
+          "I remember the name too."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از remember استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "جمله کوتاه را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval after the supplying dialogue has already been exposed."
+      }
+    },
+    {
+      "activityKey": "A08",
+      "type": "response_choice",
+      "instructionFa": "یک نکته از داستان قبلی این شخصیت‌ها را مرور کن.",
+      "promptFa": "حالا ذهنم روشن است.",
+      "config": {
+        "optionsEn": [
+          "My mind is clear now.",
+          "My room is clear now.",
+          "My plan is clear now."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جمله اتاق را توصیف می‌کند، نه ذهن را.",
+            "این جمله برنامه را توصیف می‌کند، نه ذهن را."
+          ],
+          "correctFa": "My mind is clear now."
+        }
+      },
+      "metadata": {
+        "learningDemand": "review",
+        "evidenceKind": "recognition_or_selection",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "My room is clear now.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "طبیعی است اما room را توصیف می‌کند."
+            },
+            {
+              "option": "My plan is clear now.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "طبیعی است اما plan را توصیف می‌کند."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A09",
+      "type": "speak",
+      "instructionFa": "یک جمله قدیمی را از حافظه بگو.",
+      "promptFa": "بگو: این اطلاعات برای توست.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "This information is for you.",
+        "acceptedAnswersEn": [
+          "This information is for you."
+        ],
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از information استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "جمله را با information دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "review_retrieval",
+        "assessmentLimit": "Spaced retrieval of previously exposed Lesson 125 content; no unseen dialogue, audio, or visual context is required."
+      }
+    },
+    {
+      "activityKey": "A10",
+      "type": "speak",
+      "instructionFa": "یک جمله قدیمی دیگر را از حافظه بگو.",
+      "promptFa": "بگو: ذهنم پر از سؤال است.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "My mind is full of questions.",
+        "acceptedAnswersEn": [
+          "My mind is full of questions."
+        ],
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از mind استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "جمله را با mind دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "review_retrieval",
+        "assessmentLimit": "Spaced retrieval of previously exposed Lesson 130 content; no unseen dialogue, audio, or visual context is required."
+      }
+    },
+    {
+      "activityKey": "A11",
+      "type": "speak",
+      "instructionFa": "یک عبارت زمانی قدیمی را از حافظه بگو.",
+      "promptFa": "بگو: دو روز پیش بود.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "It was two days ago.",
+        "acceptedAnswersEn": [
+          "It was two days ago."
+        ],
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از ago استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "عبارت را با ago دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "review_retrieval",
+        "assessmentLimit": "Spaced retrieval of previously exposed Lesson 126 content; no unseen dialogue, audio, or visual context is required."
+      }
+    },
+    {
+      "activityKey": "A12",
+      "type": "speak",
+      "instructionFa": "یک جمله قدیمی را از حافظه بگو.",
+      "promptFa": "بگو: بعد از کلاس می‌توانیم صحبت کنیم.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "We can talk after class.",
+        "acceptedAnswersEn": [
+          "We can talk after class."
+        ],
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از talk استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "جمله را با talk دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "review_retrieval",
+        "assessmentLimit": "Spaced retrieval of previously exposed Lesson 127 content; no unseen dialogue, audio, or visual context is required."
+      }
+    },
+    {
+      "activityKey": "A13",
+      "type": "speak",
+      "instructionFa": "یک جمله قدیمی را از حافظه بگو.",
+      "promptFa": "بگو: آن مرد سم است.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "That guy is Sam.",
+        "acceptedAnswersEn": [
+          "That guy is Sam."
+        ],
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از guy استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "جمله را با guy دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "review_retrieval",
+        "assessmentLimit": "Spaced retrieval of previously exposed Lesson 128 content; no unseen dialogue, audio, or visual context is required."
+      }
+    },
+    {
+      "activityKey": "A14",
+      "type": "speak",
+      "instructionFa": "یک جمله قدیمی را از حافظه بگو.",
+      "promptFa": "بگو: این دست من است.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "This is my hand.",
+        "acceptedAnswersEn": [
+          "This is my hand."
+        ],
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از hand استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "جمله را با hand دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "review_retrieval",
+        "assessmentLimit": "Spaced retrieval of previously exposed Lesson 129 content; no unseen dialogue, audio, or visual context is required."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing",
+    "lessonArchetype": "grammar_pattern"
+  }
+}
