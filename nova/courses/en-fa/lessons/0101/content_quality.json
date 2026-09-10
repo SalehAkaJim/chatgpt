@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0101",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "that is a different case",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0101; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "The learner turns ‘Yes, this is a special case.’ and ‘That is a different case.’ are short, plausible spoken English for the selected bounded sense."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently maps case to «مورد» in this Lesson context."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The Lesson keeps one lexical target, then moves from recognition and guided dialogue to changed-context retrieval."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Distractors are same-format alternatives and avoid random unrelated noise in the scored target choices."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "The scenario gives روبی and سارا a concrete reason to use the target twice."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "Learner responses remain short and controlled for A1 while adding one small contextual shift."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "case recurs through meaning recognition, dialogue, transfer choice, and hidden spoken retrieval."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second learner turn reuses the same lexical sense in a changed prompt rather than merely repeating the first sentence."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, scenario, target construction, dialogue, and final retrieval all align to one bounded sense."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; confidence about subjective learner experience remains intentionally limited."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "The review covers only the bounded A1 target sense of case.",
+      "Generated audio prosody is not evaluated at this text stage."
+    ],
+    "resolvedFindings": [
+      "English turns were checked for contextual plausibility.",
+      "Persian wording was checked for meaning consistency and Persian orthography.",
+      "The final activity requires hidden retrieval rather than answer copying.",
+      "Story recurrence is spaced by 5 Lessons and the learner role/story beat is varied."
+    ],
+    "lessonKey": "EN-A1-L-0101",
+    "sourceHash": "5f3e9c65a025283c52cbdee1dbf0a925a335e501ecd378c2cdada801e8050e31",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.4,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "5f3e9c65a025283c52cbdee1dbf0a925a335e501ecd378c2cdada801e8050e31"
+}

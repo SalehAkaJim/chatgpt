@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0101",
+  "sortOrder": 101,
+  "levelKey": "A1",
+  "lessonSourceHash": "5f3e9c65a025283c52cbdee1dbf0a925a335e501ecd378c2cdada801e8050e31",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0101-CASE",
+      "form": "This is a special case",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-CASE-01",
+      "lemma": "case",
+      "role": "target",
+      "referenceKey": "EN-REF-63862F3E1C9FD21A8C7A",
+      "spokenPriority": {
+        "lemma": "case",
+        "spokenRank": 258,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K EY1 S",
+        "arpabet": [
+          "K EY1 S"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this is a special case",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0101"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0101-CASE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "a special case",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0101"
+      ],
+      "lexicalLemmas": [
+        "case"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a special case",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      }
+    },
+    {
+      "query": "a different case",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0101"
+      ],
+      "lexicalLemmas": [
+        "case"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a different case",
+        "rationale": "Exact changed-context target collocation around the target word."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "213b76e328929a50a1ae3c3a06c72dc1efa3d181614d92f05e8364f6ba6c6b22"
+}

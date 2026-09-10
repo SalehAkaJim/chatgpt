@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0105",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "yes a time change",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0105; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "No, there is a change and Yes, a time change are plausible short scheduling responses."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently maps change to «تغییر»."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The lesson narrows change from a general schedule change to a time change."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "There is no change is a direct same-domain contrast."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A library schedule provides a concrete reason to discuss a change."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "The noun target stays inside short A1 utterances."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "change recurs across recognition, dialogue, transfer and retrieval."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second exchange specifies the type of change without changing the lexical sense."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, schedule scenario and activities remain aligned."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; subjective learner experience remains unverified."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "The review covers only the bounded A1 noun sense of change.",
+      "Generated audio prosody is not evaluated at this text stage."
+    ],
+    "resolvedFindings": [
+      "English turns were checked for contextual plausibility.",
+      "Persian wording and orthography were checked.",
+      "The final activity requires hidden retrieval.",
+      "The library arc returns after 5 Lessons with a varied story beat."
+    ],
+    "lessonKey": "EN-A1-L-0105",
+    "sourceHash": "42065b1ba4dd79244b497c00943e74aa01a54edceae0453c5c8dd2a0c0e6d235",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.4,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "42065b1ba4dd79244b497c00943e74aa01a54edceae0453c5c8dd2a0c0e6d235"
+}

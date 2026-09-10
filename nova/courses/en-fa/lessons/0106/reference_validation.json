@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "lessonKey": "EN-A1-L-0106",
+  "levelKey": "A1",
+  "sortOrder": 106,
+  "enforceFromSortOrder": 21,
+  "enforced": true,
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "EN-A1-L-0106: target word EN-LEX-LIVE-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+  ],
+  "items": [
+    {
+      "lexicalKey": "EN-LEX-LIVE-01",
+      "role": "target",
+      "itemType": "word",
+      "lemma": "live",
+      "partOfSpeech": "verb",
+      "selectedReferenceKey": "EN-REF-75482DDBA0D1AE58096D",
+      "status": "linked_exact_production_match",
+      "referenceKeys": [
+        "EN-REF-75482DDBA0D1AE58096D",
+        "EN-REF-943B46267B78124195F8"
+      ],
+      "referenceTranslationsFa": [
+        "به شیوه‌ای خاص زندگی کردن",
+        "زندگی کردن، ساکن بودن"
+      ],
+      "selectedReference": {
+        "referenceKey": "EN-REF-75482DDBA0D1AE58096D",
+        "translationFa": "زندگی کردن، ساکن بودن",
+        "definitionEn": "inhabit or live in; be an inhabitant of",
+        "senseId": "9b999cfb-d768-5a32-9137-f13574b65d49",
+        "qualityScore": 100
+      },
+      "translationReview": "authored_differs_from_reference"
+    }
+  ],
+  "sourceHash": "cb4c04914e5a06d1c9075ff258c5520430e94229e8f05ad462e8d14224c3d2b4"
+}

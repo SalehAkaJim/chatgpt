@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0102",
+  "sortOrder": 102,
+  "levelKey": "A1",
+  "lessonSourceHash": "7b12aef16bb77d171c0780e091bc12dfca3a3b21359fb1483abda5a1f27b91a7",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0102-NOTHING",
+      "form": "Nothing, thank you",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-NOTHING-01",
+      "lemma": "nothing",
+      "role": "target",
+      "referenceKey": "EN-REF-AE40E471718D0B29A972",
+      "spokenPriority": {
+        "lemma": "nothing",
+        "spokenRank": 257,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N AH1 TH IH0 NG",
+        "arpabet": [
+          "N AH1 TH IH0 NG"
+        ],
+        "stressPattern": "10"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "nothing thank you",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0102"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0102-NOTHING"
+      ],
+      "lexicalLemmas": [
+        "nothing"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "nothing thank you",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      }
+    },
+    {
+      "query": "no nothing now",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0102"
+      ],
+      "lexicalLemmas": [
+        "nothing"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "no nothing now",
+        "rationale": "Exact changed-context target collocation around the target word."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "b91ee9b9e14972d4da5adbee968579fb0f6cf48339f3ee233823cf837b85b424"
+}

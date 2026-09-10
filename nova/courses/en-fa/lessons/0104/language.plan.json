@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0104",
+  "sortOrder": 104,
+  "levelKey": "A1",
+  "lessonSourceHash": "382ad683421643d71571d18af398131d537a60a4ba014e40fd17e301e15df542",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0104-TODAY",
+      "form": "Today is busy",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-TODAY-01",
+      "lemma": "today",
+      "role": "target",
+      "referenceKey": "EN-REF-1997480586EC87F5C50E",
+      "spokenPriority": {
+        "lemma": "today",
+        "spokenRank": 187,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T AH0 D EY1",
+        "arpabet": [
+          "T AH0 D EY1",
+          "T UW0 D EY1"
+        ],
+        "stressPattern": "01"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "today is busy",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0104"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0104-TODAY"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "you busy today",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0104"
+      ],
+      "lexicalLemmas": [
+        "today"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "you busy today",
+        "rationale": "Exact prompt-side target collocation around the target word."
+      }
+    },
+    {
+      "query": "yes today is busy",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0104"
+      ],
+      "lexicalLemmas": [
+        "today"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes today is busy",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      }
+    },
+    {
+      "query": "today is free",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0104"
+      ],
+      "lexicalLemmas": [
+        "today"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "today is free",
+        "rationale": "Exact changed-context target collocation around the target word."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "0a89013da6857b9dd1316d1632545e680e7dc0bc7e33fa79a56aec54294e0d5b"
+}

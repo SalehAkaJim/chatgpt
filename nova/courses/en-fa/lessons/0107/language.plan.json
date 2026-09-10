@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0107",
+  "sortOrder": 107,
+  "levelKey": "A1",
+  "lessonSourceHash": "75417cfc901f582d94fd68fec0db5da741ca80eb58f17d76b18cdfab7c2594a7",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0107-POINT",
+      "form": "This point is the cafe",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-POINT-01",
+      "lemma": "point",
+      "role": "target",
+      "referenceKey": "EN-REF-04DC6FFF074ECB4ACEC6",
+      "spokenPriority": {
+        "lemma": "point",
+        "spokenRank": 129,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P OY1 N T",
+        "arpabet": [
+          "P OY1 N T"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "this point is the cafe",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0107"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0107-POINT"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "this point is the",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0107"
+      ],
+      "lexicalLemmas": [
+        "point"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this point is the",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      }
+    },
+    {
+      "query": "this point here",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0107"
+      ],
+      "lexicalLemmas": [
+        "point"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "this point here",
+        "rationale": "Exact prompt-side target collocation around the target word."
+      }
+    },
+    {
+      "query": "yes that point",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0107"
+      ],
+      "lexicalLemmas": [
+        "point"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes that point",
+        "rationale": "Exact changed-context target collocation around the target word."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "1cfe0ccc897c351e8c4601a9b062ae30b6e29b86db4e0da7822c2cd0ffb741ef"
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0105",
+  "sortOrder": 105,
+  "levelKey": "A1",
+  "lessonSourceHash": "42065b1ba4dd79244b497c00943e74aa01a54edceae0453c5c8dd2a0c0e6d235",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0105-CHANGE",
+      "form": "There is a change",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-CHANGE-01",
+      "lemma": "change",
+      "role": "target",
+      "referenceKey": "EN-REF-BAB8EF3E007A39DD06CF",
+      "spokenPriority": {
+        "lemma": "change",
+        "spokenRank": 174,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "CH EY1 N JH",
+        "arpabet": [
+          "CH EY1 N JH"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "there is a change",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0105"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0105-CHANGE"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null
+    },
+    {
+      "query": "is a change",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0105"
+      ],
+      "lexicalLemmas": [
+        "change"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "is a change",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      }
+    },
+    {
+      "query": "a time change",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0105"
+      ],
+      "lexicalLemmas": [
+        "change"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "a time change",
+        "rationale": "Exact changed-context target collocation around the target word."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "8a7ca3356d5ba5e12870dbd97d1f2263f0c2e7041c33166ebfccc47c0ae3d4d4"
+}

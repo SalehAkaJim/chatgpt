@@ -1,0 +1,332 @@
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0104",
+  "sortOrder": 104,
+  "titleEn": "Today is busy",
+  "titleFa": "امروز شلوغ است",
+  "descriptionFa": "با today درباره برنامه همین روز حرف بزن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0104",
+  "outcomeFa": "today را برای اشاره به همین روز در دو جمله کوتاه به کار ببری.",
+  "scenarioFa": "آیریس و نینا در مرکز محله برنامه همین روز را روی تقویم نگاه می‌کنند.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0103"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0104-TODAY",
+        "form": "Today is busy",
+        "meaningFa": "اشاره به همین روز"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Are you busy today?",
+        "meaningFa": "امروز سرت شلوغ است؟"
+      },
+      {
+        "form": "What about after six?",
+        "meaningFa": "بعد از ساعت شش چطور؟"
+      }
+    ],
+    "assessmentBoundary": "Only the bounded A1 target sense of today used in this Lesson is assessed.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Recombine the same target sense in a second controlled conversational context."
+    },
+    "story": {
+      "arcKey": "EN-A1-COMMUNITY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0104",
+      "learnerRoleKey": "nina",
+      "participants": [
+        "iris",
+        "nina"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0099"
+      ],
+      "continuesLessonKey": "EN-A1-L-0099",
+      "settingFa": "مرکز محله، کنار تقویم برنامه",
+      "storyBeatFa": "آیریس درباره برنامه امروز می‌پرسد و نینا با today جواب می‌دهد."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0099",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning arc is spaced by 5 Lessons and the learner role/story beat is varied."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0104",
+      "specHash": "daf11e7f952b9a30522381c8928f0ee4de17f92eb551991375ed6c7f357b8111",
+      "grammarTargetKeys": [],
+      "reviewLexicalLemmas": [],
+      "usageFallbacks": [
+        {
+          "query": "you busy today",
+          "rationale": "Exact prompt-side target collocation around the target word."
+        },
+        {
+          "query": "yes today is busy",
+          "rationale": "Exact bounded learner target collocation around the target word."
+        },
+        {
+          "query": "today is free",
+          "rationale": "Exact changed-context target collocation around the target word."
+        }
+      ],
+      "noNewGrammarReason": "Lexical-focus Lesson using familiar A1 sentence patterns; no new grammar is claimed."
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-TODAY-01",
+      "itemType": "word",
+      "displayForm": "today",
+      "translationFa": "امروز",
+      "role": "target",
+      "lemma": "today",
+      "partOfSpeech": "noun",
+      "senseKey": "bounded_a1_sense",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-1997480586EC87F5C50E"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Are you busy today?",
+      "translationFa": "امروز سرت شلوغ است؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Yes, today is busy.",
+      "translationFa": "بله، امروز شلوغ است.",
+      "audioRequired": true,
+      "speechTargetEn": "Yes, today is busy.",
+      "acceptedSpeechEn": [
+        "Yes, today is busy."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "What about after six?",
+      "translationFa": "بعد از ساعت شش چطور؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Today is free after six.",
+      "translationFa": "امروز بعد از ساعت شش آزادم.",
+      "audioRequired": true,
+      "speechTargetEn": "Today is free after six.",
+      "acceptedSpeechEn": [
+        "Today is free after six."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی today را پیدا کن.",
+      "promptFa": "today در این درس چه زمانی است؟",
+      "promptEn": "Yes, today is busy.",
+      "config": {
+        "options": [
+          "امروز",
+          "فردا",
+          "هفته"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "امروز"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف‌های آیریس را گوش کن و جواب نینا را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را گوش کن.",
+      "promptFa": "کدام جواب گفته شد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "بله، امروز شلوغ است.",
+          "امروز بعد از ساعت شش آزادم.",
+          "هیچ‌کدام"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش دوم است.",
+            "یک جواب روشن گفته می‌شود."
+          ],
+          "correctFa": "بله، امروز شلوغ است."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "جواب بخش اول را پیدا کن.",
+      "promptFa": "کدام جمله گفته شد؟",
+      "config": {
+        "optionsEn": [
+          "Yes, today is busy.",
+          "Today is free after six.",
+          "Tomorrow is busy."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش دوم است.",
+            "این جمله هدف درس نیست."
+          ],
+          "correctFa": "Yes, today is busy."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "بعد از ساعت شش چطور؟",
+      "config": {
+        "optionsEn": [
+          "Today is free after six.",
+          "Yes, today is busy.",
+          "Tomorrow is busy."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش اول است.",
+            "این جمله هدف درس نیست."
+          ],
+          "correctFa": "امروز بعد از ساعت شش آزادم."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "نینا هستی. بگو: امروز بعد از ساعت شش آزادم.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Today is free after six.",
+        "acceptedAnswersEn": [
+          "Today is free after six."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از today استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ هدف را در موقعیت دوم بازیابی کردی.",
+          "retryFa": "جمله کوتاه را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval in a changed controlled context."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}

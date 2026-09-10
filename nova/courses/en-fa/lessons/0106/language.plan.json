@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0106",
+  "sortOrder": 106,
+  "levelKey": "A1",
+  "lessonSourceHash": "cb4c04914e5a06d1c9075ff258c5520430e94229e8f05ad462e8d14224c3d2b4",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0106-LIVE",
+      "form": "I live near here",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-LIVE-01",
+      "lemma": "live",
+      "role": "target",
+      "referenceKey": "EN-REF-75482DDBA0D1AE58096D",
+      "spokenPriority": {
+        "lemma": "live",
+        "spokenRank": 178,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "L AY1 V",
+        "arpabet": [
+          "L AY1 V",
+          "L IH1 V"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i live near here",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0106"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0106-LIVE"
+      ],
+      "lexicalLemmas": [
+        "live"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "i live near here",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      }
+    },
+    {
+      "query": "do you live",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0106"
+      ],
+      "lexicalLemmas": [
+        "live"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "do you live",
+        "rationale": "Exact prompt-side target collocation around the target word."
+      }
+    },
+    {
+      "query": "yes i live near the",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0106"
+      ],
+      "lexicalLemmas": [
+        "live"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes i live near the",
+        "rationale": "Exact changed-context target collocation around the target word."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "57d810355b57c9a8baacf9a7fe0cdbc0efd7be179e1ecce320e74de894832320"
+}

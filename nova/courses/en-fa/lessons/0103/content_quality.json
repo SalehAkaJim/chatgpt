@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0103",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "yes one person",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0103; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "One person is waiting and Yes, one person are plausible short answers in the queue context."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently uses «نفر» for the selected person sense."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "One lexical target moves from recognition through guided dialogue to hidden retrieval."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Two people are waiting is a same-domain contrast rather than random noise."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A short cafe queue gives a concrete reason to count one person."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "Learner responses are short and controlled for A1."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "person recurs across recognition, dialogue, transfer and retrieval."
+      },
+      "transferQuality": {
+        "score": 4,
+        "evidence": "The second exchange shifts from a full statement to confirming the count."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Outcome, queue scenario, turns and activities share one bounded sense."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; subjective learner experience remains unverified."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "The review covers only the bounded A1 target sense of person.",
+      "Generated audio prosody is not evaluated at this text stage."
+    ],
+    "resolvedFindings": [
+      "English turns were checked for contextual plausibility.",
+      "Persian wording and orthography were checked.",
+      "The final activity requires hidden retrieval.",
+      "The cafe arc returns after 5 Lessons with a varied learner role/story beat."
+    ],
+    "lessonKey": "EN-A1-L-0103",
+    "sourceHash": "6c81c92b72d54c4a0533e29cbb20e204d134a6ef2f67c253704c2cd2fc5e6694",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.3,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "6c81c92b72d54c4a0533e29cbb20e204d134a6ef2f67c253704c2cd2fc5e6694"
+}

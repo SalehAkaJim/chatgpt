@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0108",
+  "sortOrder": 108,
+  "levelKey": "A1",
+  "lessonSourceHash": "6b70908fbeb2401027628f72bb04d595f202d806372ee0c6a8ae006051ebd38a",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0108-TELL",
+      "form": "Tell me the number",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-TELL-01",
+      "lemma": "tell",
+      "role": "target",
+      "referenceKey": "EN-REF-9E2B0035AEED4D6DCD08",
+      "spokenPriority": {
+        "lemma": "tell",
+        "spokenRank": 101,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "T EH1 L",
+        "arpabet": [
+          "T EH1 L"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "tell me the",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0108"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0108-TELL"
+      ],
+      "lexicalLemmas": [
+        "tell"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "tell me the",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      }
+    },
+    {
+      "query": "yes tell me now",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0108"
+      ],
+      "lexicalLemmas": [
+        "tell"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": {
+        "query": "yes tell me now",
+        "rationale": "Exact changed-context target collocation around the target word."
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "4ff80c3c27c8067388962b9fe3b505fd3208b2067b2f3cc0fa07aac4df6df945"
+}

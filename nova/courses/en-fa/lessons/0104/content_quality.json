@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "lessonKey": "EN-A1-L-0104",
+  "levelKey": "A1",
+  "hardGatePass": true,
+  "automatedScore": 95,
+  "minimumAutomatedScore": 90,
+  "publishableByAutomatedQualityGate": true,
+  "requiresUserDecision": false,
+  "authoringBlockedByPendingDecisions": false,
+  "pendingDecisions": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "CQ-W01",
+      "message": "Same full target sentence is reused across multiple scored activities.",
+      "data": {
+        "normalizedTarget": "today is free after six",
+        "activityKeys": [
+          "A05",
+          "A06"
+        ]
+      }
+    }
+  ],
+  "manualReview": {
+    "version": 1,
+    "reviewerType": "model",
+    "reviewedAt": "2026-09-10",
+    "scope": "Model/editor semantic and pedagogy review of Lesson 0104; not an independent human or real-learner test.",
+    "dimensions": {
+      "englishNaturalness": {
+        "score": 4,
+        "evidence": "Yes, today is busy and Today is free after six are understandable controlled A1 scheduling utterances."
+      },
+      "persianMeaningQuality": {
+        "score": 5,
+        "evidence": "Persian copy consistently maps today to «امروز»."
+      },
+      "pedagogicalClarity": {
+        "score": 5,
+        "evidence": "The same-day reference is practiced before and after a time boundary."
+      },
+      "distractorQuality": {
+        "score": 4,
+        "evidence": "Tomorrow is busy is a relevant time-reference contrast."
+      },
+      "dialoguePlausibility": {
+        "score": 4,
+        "evidence": "A same-day schedule gives a concrete reason to use today twice."
+      },
+      "difficultyFit": {
+        "score": 4,
+        "evidence": "The utterances remain short and bounded despite the after-six transfer."
+      },
+      "repetitionUsefulness": {
+        "score": 5,
+        "evidence": "today recurs across recognition, dialogue, transfer and retrieval."
+      },
+      "transferQuality": {
+        "score": 5,
+        "evidence": "The second learner turn changes the available time while retaining today."
+      },
+      "overallCoherence": {
+        "score": 5,
+        "evidence": "Calendar scenario, target, translations and assessment remain aligned."
+      },
+      "learnerExperience": {
+        "score": 3,
+        "evidence": "No real learner test is claimed; subjective learner experience remains unverified."
+      }
+    },
+    "learnerTested": false,
+    "limitations": [
+      "No independent human or real learner test has been performed.",
+      "The review covers only the bounded A1 target sense of today.",
+      "Generated audio prosody is not evaluated at this text stage."
+    ],
+    "resolvedFindings": [
+      "English turns were checked for contextual plausibility.",
+      "Persian wording and orthography were checked.",
+      "The final activity requires hidden retrieval.",
+      "The community arc returns after 5 Lessons with a varied story beat."
+    ],
+    "lessonKey": "EN-A1-L-0104",
+    "sourceHash": "382ad683421643d71571d18af398131d537a60a4ba014e40fd17e301e15df542",
+    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "status": "PASS",
+    "average": 4.4,
+    "errors": []
+  },
+  "metrics": {
+    "targetLexicalItems": 1,
+    "targetConstructions": 1,
+    "activities": 6,
+    "learnerTurns": 2,
+    "scoredGuidedLearnerTurns": 0
+  },
+  "sourceHash": "382ad683421643d71571d18af398131d537a60a4ba014e40fd17e301e15df542"
+}

@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0102",
+  "sortOrder": 102,
+  "titleEn": "Nothing, thank you",
+  "titleFa": "هیچ‌چیز، ممنون",
+  "descriptionFa": "با nothing وقتی چیزی نمی‌خواهی جواب کوتاه بده.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0102",
+  "outcomeFa": "nothing را برای گفتن اینکه چیزی نمی‌خواهی یا چیزی وجود ندارد به کار ببری.",
+  "scenarioFa": "الکس و مایا بعد از کلاس کنار دستگاه نوشیدنی ایستاده‌اند.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0101"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0102-NOTHING",
+        "form": "Nothing, thank you",
+        "meaningFa": "گفتن اینکه چیزی نمی‌خواهی"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Do you need anything?",
+        "meaningFa": "چیزی لازم داری؟"
+      },
+      {
+        "form": "No water?",
+        "meaningFa": "آب هم نه؟"
+      }
+    ],
+    "assessmentBoundary": "Only the bounded A1 target sense of nothing used in this Lesson is assessed.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Recombine the same target sense in a second controlled conversational context."
+    },
+    "story": {
+      "arcKey": "EN-A1-CLASSMATES",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0102",
+      "learnerRoleKey": "maya",
+      "participants": [
+        "alex",
+        "maya"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0097"
+      ],
+      "continuesLessonKey": "EN-A1-L-0097",
+      "settingFa": "مدرسه، کنار دستگاه نوشیدنی",
+      "storyBeatFa": "الکس دو بار پیشنهاد می‌دهد و مایا با nothing جواب می‌دهد."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0097",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Returning arc is spaced by 5 Lessons and the learner role/story beat is varied."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0102",
+      "specHash": "96adb33067625896a222bddfe04d7bb46e0eddfb7783b60fd88d30f04593f069",
+      "grammarTargetKeys": [],
+      "reviewLexicalLemmas": [],
+      "usageFallbacks": [
+        {
+          "query": "nothing thank you",
+          "rationale": "Exact bounded learner target collocation around the target word."
+        },
+        {
+          "query": "no nothing now",
+          "rationale": "Exact changed-context target collocation around the target word."
+        }
+      ],
+      "noNewGrammarReason": "Lexical-focus Lesson using familiar A1 sentence patterns; no new grammar is claimed."
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-NOTHING-01",
+      "itemType": "word",
+      "displayForm": "nothing",
+      "translationFa": "هیچ‌چیز",
+      "role": "target",
+      "lemma": "nothing",
+      "partOfSpeech": "noun",
+      "senseKey": "bounded_a1_sense",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-AE40E471718D0B29A972"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "alex",
+      "textEn": "Do you need anything?",
+      "translationFa": "چیزی لازم داری؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "maya",
+      "textEn": "Nothing, thank you.",
+      "translationFa": "هیچ‌چیز، ممنون.",
+      "audioRequired": true,
+      "speechTargetEn": "Nothing, thank you.",
+      "acceptedSpeechEn": [
+        "Nothing, thank you."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "alex",
+      "textEn": "No water?",
+      "translationFa": "آب هم نه؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "maya",
+      "textEn": "No, nothing now.",
+      "translationFa": "نه، الان هیچ‌چیز.",
+      "audioRequired": true,
+      "speechTargetEn": "No, nothing now.",
+      "acceptedSpeechEn": [
+        "No, nothing now."
+      ],
+      "metadata": {
+        "usage": "changed_context_transfer"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی nothing را پیدا کن.",
+      "promptFa": "nothing در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Nothing, thank you.",
+      "config": {
+        "options": [
+          "هیچ‌چیز",
+          "همه‌چیز",
+          "آب"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "هیچ‌چیز"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "حرف‌های الکس را گوش کن و جواب مایا را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را گوش کن.",
+      "promptFa": "کدام جواب گفته شد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "هیچ‌چیز، ممنون.",
+          "نه، الان هیچ‌چیز.",
+          "هیچ‌کدام"
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش دوم است.",
+            "یک جواب روشن گفته می‌شود."
+          ],
+          "correctFa": "هیچ‌چیز، ممنون."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "جواب بخش اول را پیدا کن.",
+      "promptFa": "کدام جمله گفته شد؟",
+      "config": {
+        "optionsEn": [
+          "Nothing, thank you.",
+          "No, nothing now.",
+          "Water, thank you."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش دوم است.",
+            "این جمله هدف درس نیست."
+          ],
+          "correctFa": "Nothing, thank you."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "جواب موقعیت دوم را انتخاب کن.",
+      "promptFa": "آب هم نه؟",
+      "config": {
+        "optionsEn": [
+          "No, nothing now.",
+          "Nothing, thank you.",
+          "Water, thank you."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جواب بخش اول است.",
+            "این جمله هدف درس نیست."
+          ],
+          "correctFa": "نه، الان هیچ‌چیز."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "مایا هستی. بگو: نه، الان هیچ‌چیز.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "No, nothing now.",
+        "acceptedAnswersEn": [
+          "No, nothing now."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از nothing استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ هدف را در موقعیت دوم بازیابی کردی.",
+          "retryFa": "جمله کوتاه را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Same-session bounded retrieval in a changed controlled context."
+      }
+    }
+  ],
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
+}
