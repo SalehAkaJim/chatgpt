@@ -16,7 +16,7 @@ DIALOGUE_PATTERNS = [
     r"جواب\s+(?:بخش|قسمت)\s+(?:اول|دوم)",
     r"در\s+(?:بخش|قسمت)\s+(?:اول|دوم)",
 ]
-LISTEN_PATTERNS = [r"گوش\s+کن", r"گوش\s+بده", r"بشنو", r"شنیدی", r"شنیده"]
+LISTEN_PATTERNS = [r"گوش\s+کن", r"گوش\s+بده", r"بشنو", r"(?<!ن)شنیدی", r"(?<!ن)شنیده"]
 VISUAL_PATTERNS = [
     r"عکس\s+.+?(?:را\s+)?(?:می.?بینی|می.?بینید|ببین)",
     r"تصویر\s+.+?(?:را\s+)?(?:می.?بینی|می.?بینید|ببین)",
@@ -182,8 +182,10 @@ def audit_lesson(lesson: dict) -> list[dict]:
                 if key and key not in exposed_turns:
                     future_keys.append(key)
             if future_keys:
+                severity = "ERROR" if int(lesson.get("sortOrder") or 0) >= 125 else "WARNING"
+                code = "LX-H10" if severity == "ERROR" else "LX-W10"
                 results.append(issue(
-                    lesson, activity, "LX-W10", "WARNING",
+                    lesson, activity, code, severity,
                     "Activity tests/reuses exact dialogue content before that dialogue is exposed in the Prototype: " + ", ".join(sorted(set(future_keys))),
                     step_index,
                 ))
@@ -220,7 +222,7 @@ def main() -> int:
     affected_hard = sorted({int(x["sortOrder"]) for x in hard})
     affected_all = sorted({int(x["sortOrder"]) for x in issues})
     report = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "courseCode": args.course,
         "prototypeModel": "activity-order with dialogue exchanges flattened in place; scenario only on first step",
         "checkedLessons": checked,
