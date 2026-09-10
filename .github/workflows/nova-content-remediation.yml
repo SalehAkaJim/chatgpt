@@ -56,8 +56,9 @@ jobs:
           report_path = root / 'nova/curriculum/en-fa/quality_v2.remediation_ci_report.json'
           request_path = root / 'nova/curriculum/en-fa/remediation.request.json'
           experience_path = root / 'nova/curriculum/en-fa/learner_experience_dependency_report.json'
+          repair_path = root / 'nova/curriculum/en-fa/learner_experience_repair_report.json'
           report = {
-              'schemaVersion': 2,
+              'schemaVersion': 3,
               'status': 'FAIL',
               'stage': 'request',
               'inputHead': os.environ.get('INPUT_HEAD'),
@@ -94,9 +95,6 @@ jobs:
               save()
               raise SystemExit(0)
 
-          # The old 125-132 wave was authored before Product Quality v2 and was
-          # never canonical. Remove only that stale staging wave so a clean
-          # quality-v2 wave can be planned after remediation.
           stale_wave = root / 'nova/curriculum/en-fa/waves/en-fa-A1-0125-0132'
           if stale_wave.exists():
               shutil.rmtree(stale_wave)
@@ -121,6 +119,19 @@ jobs:
           if polish.returncode:
               report['stage'] = 'legacy-naturalness-polish'
               report['errors'].append('Human-style legacy naturalness polish did not complete.')
+              save()
+              raise SystemExit(0)
+
+          repair = run('learner-experience-repair', [
+              sys.executable,
+              'nova/_assistant/content-system-v1/tools/repair_learner_experience_dependencies.py',
+              '--repo-root', '.',
+          ])
+          if repair_path.exists():
+              report['learnerExperienceRepairReport'] = json.loads(repair_path.read_text(encoding='utf-8'))
+          if repair.returncode:
+              report['stage'] = 'learner-experience-repair'
+              report['errors'].append('Learner-visible context repair did not complete.')
               save()
               raise SystemExit(0)
 
@@ -216,6 +227,7 @@ jobs:
               remediationReport=json.loads(remediation_report.read_text(encoding='utf-8')) if remediation_report.exists() else None,
               polishReport=json.loads(polish_report.read_text(encoding='utf-8')) if polish_report.exists() else None,
               reviewBacklog=json.loads(backlog.read_text(encoding='utf-8')) if backlog.exists() else None,
+              learnerExperienceRepairReport=json.loads(repair_path.read_text(encoding='utf-8')) if repair_path.exists() else None,
               learnerExperienceDependencyReport=json.loads(experience_path.read_text(encoding='utf-8')) if experience_path.exists() else None,
               errors=[],
           )
@@ -246,6 +258,7 @@ jobs:
               nova/curriculum/en-fa/quality_v2.remediation_report.json \
               nova/curriculum/en-fa/quality_v2.polish_report.json \
               nova/curriculum/en-fa/quality_v2.review_backlog.json \
+              nova/curriculum/en-fa/learner_experience_repair_report.json \
               nova/curriculum/en-fa/learner_experience_dependency_report.json; do
               if [ -f "$file" ]; then git add "$file"; fi
             done
