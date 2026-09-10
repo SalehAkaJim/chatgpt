@@ -73,6 +73,15 @@ jobs:
           print(f"Preview contains {meta['lessonCount']} validated Lessons; last={meta['lastLesson']}")
           PY
 
+      - name: Test generated Preview learner experience end to end
+        env:
+          NOVA_CONTENT_ROOT: _site
+          NOVA_PROTOTYPE_DIR: _site/nova/prototype
+          NOVA_PREVIEW_MODE: '1'
+        run: |
+          npm ci --prefix nova/_assistant/content-system-v1/tools --no-audit --no-fund
+          node nova/_assistant/content-system-v1/tools/test_prototype.cjs
+
       - name: Upload private preview bundle
         uses: actions/upload-artifact@v4
         with:
