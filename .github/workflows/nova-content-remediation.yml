@@ -1,0 +1,246 @@
+name: Nova Content Quality Remediation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'nova/curriculum/en-fa/remediation.request.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+# Keep remediation in the same single-writer queue as wave publication and
+# production. Content failures are recorded as data and keep the Action green.
+concurrency:
+  group: nova-production-main
+  cancel-in-progress: false
+
+jobs:
+  remediate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Record exact input revision
+        run: echo "INPUT_HEAD=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validator dependencies
+        timeout-minutes: 5
+        run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
+
+      - name: Remediate and validate without noisy content failures
+        env:
+          PYTHONPATH: nova/_assistant/content-system-v1/tools
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import shutil
+          import subprocess
+          import sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          root = Path('.').resolve()
+          report_path = root / 'nova/curriculum/en-fa/quality_v2.remediation_ci_report.json'
+          request_path = root / 'nova/curriculum/en-fa/remediation.request.json'
+          report = {
+              'schemaVersion': 1,
+              'status': 'FAIL',
+              'stage': 'request',
+              'inputHead': os.environ.get('INPUT_HEAD'),
+              'checkedAt': datetime.now(timezone.utc).isoformat(),
+              'errors': [],
+              'commands': [],
+          }
+
+          def save():
+              report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          def run(name, cmd):
+              completed = subprocess.run(cmd, cwd=root, capture_output=True, text=True)
+              report['commands'].append({
+                  'name': name,
+                  'command': ' '.join(str(x) for x in cmd),
+                  'returnCode': completed.returncode,
+                  'stdoutTail': completed.stdout[-12000:],
+                  'stderrTail': completed.stderr[-12000:],
+              })
+              return completed
+
+          if not request_path.exists():
+              report.update(status='SKIP', stage='request')
+              report['errors'].append('No remediation.request.json exists; nothing to remediate.')
+              save()
+              raise SystemExit(0)
+
+          try:
+              request = json.loads(request_path.read_text(encoding='utf-8'))
+              report['request'] = request
+          except Exception as exc:
+              report['errors'].append(f'Invalid remediation request: {exc}')
+              save()
+              raise SystemExit(0)
+
+          # The old 125-132 wave was authored before Product Quality v2 and was
+          # never canonical. Remove only that stale staging wave so a clean
+          # quality-v2 wave can be planned after remediation.
+          stale_wave = root / 'nova/curriculum/en-fa/waves/en-fa-A1-0125-0132'
+          if stale_wave.exists():
+              shutil.rmtree(stale_wave)
+              report['removedStaleWave'] = str(stale_wave.relative_to(root))
+
+          remediation = run('legacy-remediation', [
+              sys.executable,
+              'nova/_assistant/content-system-v1/tools/remediate_legacy_quality.py',
+              '--repo-root', '.', '--from', '40', '--to', '84',
+          ])
+          if remediation.returncode:
+              report['stage'] = 'legacy-remediation'
+              report['errors'].append('Deterministic legacy remediation did not complete.')
+              save()
+              raise SystemExit(0)
+
+          text = run('full-text-qa', [
+              sys.executable,
+              'nova/_assistant/content-system-v1/tools/build_pilot.py',
+              '--repo-root', '.', '--text-only', '--text-workers', '4',
+          ])
+          if text.returncode:
+              report['stage'] = 'text-qa'
+              report['errors'].append('Full canonical text QA did not pass after remediation.')
+              text_report = root / 'nova/_assistant/content-system-v1/text_build_report.json'
+              if text_report.exists():
+                  report['textBuildReport'] = json.loads(text_report.read_text(encoding='utf-8'))
+              save()
+              raise SystemExit(0)
+
+          curriculum = run('curriculum-rebuild', [
+              sys.executable,
+              'nova/_assistant/content-system-v1/tools/run_curriculum_pipeline.py',
+              '--repo-root', '.', '--course', 'en-fa',
+              '--config', 'nova/curriculum/en-fa/factory.config.json',
+              '--workspace-dir', 'nova/curriculum/en-fa',
+          ])
+          if curriculum.returncode:
+              report['stage'] = 'curriculum'
+              report['errors'].append('Curriculum/language-plan rebuild did not pass after remediation.')
+              summary = root / 'nova/curriculum/en-fa/language_curriculum_summary.json'
+              if summary.exists():
+                  report['languageCurriculumSummary'] = json.loads(summary.read_text(encoding='utf-8'))
+              save()
+              raise SystemExit(0)
+
+          prefix = run('full-prefix-quality-v2', [
+              sys.executable,
+              'nova/_assistant/content-system-v1/tools/validate_factory_prefix.py',
+              '--repo-root', '.',
+              '--config', 'nova/curriculum/en-fa/factory.config.json',
+              '--output', 'nova/curriculum/en-fa/factory_validation.json',
+          ])
+          if prefix.returncode:
+              report['stage'] = 'full-prefix'
+              report['errors'].append('Full-prefix Product Quality v2 regression did not pass.')
+              validation = root / 'nova/curriculum/en-fa/factory_validation.json'
+              if validation.exists():
+                  report['factoryValidation'] = json.loads(validation.read_text(encoding='utf-8'))
+              save()
+              raise SystemExit(0)
+
+          release = run('release-readiness', [
+              sys.executable,
+              'nova/_assistant/content-system-v1/tools/check_release_readiness.py',
+              '--repo-root', '.',
+          ])
+          if release.returncode:
+              report['stage'] = 'release-readiness'
+              report['errors'].append('Release-readiness report tool failed unexpectedly.')
+              save()
+              raise SystemExit(0)
+
+          validation = json.loads((root / 'nova/curriculum/en-fa/factory_validation.json').read_text(encoding='utf-8'))
+          if validation.get('status') != 'PASS' or int(validation.get('passedPrefixLength') or 0) != 124:
+              report['stage'] = 'full-prefix'
+              report['errors'].append(
+                  f"Expected canonical PASS through 124 after remediation; got status={validation.get('status')} "
+                  f"prefix={validation.get('passedPrefixLength')}"
+              )
+              report['factoryValidation'] = validation
+              save()
+              raise SystemExit(0)
+
+          remediation_report = root / 'nova/curriculum/en-fa/quality_v2.remediation_report.json'
+          backlog = root / 'nova/curriculum/en-fa/quality_v2.review_backlog.json'
+          report.update(
+              status='PASS',
+              stage='ready-to-publish',
+              passedPrefixLength=124,
+              remediationReport=json.loads(remediation_report.read_text(encoding='utf-8')) if remediation_report.exists() else None,
+              reviewBacklog=json.loads(backlog.read_text(encoding='utf-8')) if backlog.exists() else None,
+              errors=[],
+          )
+          save()
+          PY
+
+      - name: Publish only fully validated remediation
+        id: publish
+        shell: bash
+        run: |
+          STATUS=$(python -c 'import json; print(json.load(open("nova/curriculum/en-fa/quality_v2.remediation_ci_report.json"))["status"])')
+          git fetch origin main
+          git config user.name "nova-production-bot"
+          git config user.email "nova-production-bot@users.noreply.github.com"
+          git reset
+
+          if [ "$INPUT_HEAD" != "$(git rev-parse origin/main)" ]; then
+            git checkout -- .
+            git clean -fd
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            echo "Main changed during remediation; no stale write was published."
+            exit 0
+          fi
+
+          if [ "$STATUS" != "PASS" ]; then
+            git add nova/curriculum/en-fa/quality_v2.remediation_ci_report.json
+            if [ -f nova/curriculum/en-fa/quality_v2.remediation_report.json ]; then
+              git add nova/curriculum/en-fa/quality_v2.remediation_report.json
+            fi
+            if [ -f nova/curriculum/en-fa/quality_v2.review_backlog.json ]; then
+              git add nova/curriculum/en-fa/quality_v2.review_backlog.json
+            fi
+            if ! git diff --cached --quiet; then
+              git commit -m "Record Nova quality-v2 remediation result"
+              git push origin HEAD:main
+            fi
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            echo "Content remediation needs another repair pass; Action remains green."
+            exit 0
+          fi
+
+          git add nova/courses/en-fa/lessons/ \
+                  nova/curriculum/en-fa/ \
+                  nova/_assistant/content-system-v1/text_build_report.json
+          if git diff --cached --quiet; then
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Remediate Nova legacy content for product quality v2"
+          git push origin HEAD:main
+          echo "published=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild production outputs once after green remediation
+        if: steps.publish.outputs.published == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run nova-pilot.yml --ref main
