@@ -131,7 +131,7 @@ def main() -> int:
         "errors": errors,
     }
     dump(workspace / "language_curriculum_summary.json", summary)
-    print(json.dumps({
+    compact = {
         "status": summary["status"],
         "lessons": len(numbers),
         "nextLesson": next_order,
@@ -139,7 +139,18 @@ def main() -> int:
         "introducedGrammar": len(state.get("introducedGrammar", [])),
         "languageWarnings": sum(len(x["warnings"]) for x in language_reports),
         "errors": len(errors),
-    }, ensure_ascii=False))
+    }
+    if errors:
+        compact["errorDetails"] = errors
+        compact["failingLanguagePlans"] = [
+            {"lessonKey": x.get("lessonKey"), "sortOrder": x.get("sortOrder"), "errors": x.get("errors", [])}
+            for x in language_reports if x.get("errors")
+        ]
+        compact["failingCurriculumSpecs"] = [
+            {"lessonKey": x.get("lessonKey"), "sortOrder": x.get("sortOrder"), "errors": x.get("errors", [])}
+            for x in spec_reports if x.get("errors")
+        ]
+    print(json.dumps(compact, ensure_ascii=False))
     return 0 if not errors else 2
 
 
