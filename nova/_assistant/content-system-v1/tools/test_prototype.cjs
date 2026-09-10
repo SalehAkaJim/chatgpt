@@ -5,6 +5,7 @@ const {webcrypto, createHash} = require('node:crypto');
 const {JSDOM, VirtualConsole} = require('jsdom');
 const root = process.env.NOVA_CONTENT_ROOT || (fs.existsSync(path.resolve(__dirname, '../dist/nova/courses')) ? path.resolve(__dirname, '../dist') : path.resolve(__dirname, '../../../..'));
 const prototype = process.env.NOVA_PROTOTYPE_DIR || (fs.existsSync(path.join(root, 'index.html')) ? root : path.join(root, 'nova/prototype'));
+const previewMode = process.env.NOVA_PREVIEW_MODE === '1';
 const course = JSON.parse(fs.readFileSync(path.join(root, 'nova/courses/en-fa/course.source.json')));
 const lessonDirectory = path.join(root, 'nova/courses/en-fa/lessons');
 const lessonNumbers = fs.readdirSync(lessonDirectory).filter(n => fs.existsSync(path.join(lessonDirectory, n, 'lesson.source.json'))).sort();
@@ -35,6 +36,13 @@ async function page(number, stale=false, mutate=null, review=false) {
     pause() {}
   }
   w.Audio=Audio;
+  w.SpeechSynthesisUtterance=class {
+    constructor(text) { this.text=text; this.lang=''; this.rate=1; }
+  };
+  w.speechSynthesis={
+    cancel() {},
+    speak(utterance) { queueMicrotask(() => utterance.onend?.()); }
+  };
   w.SpeechRecognition=class {
     start() { queueMicrotask(() => {
       const shown = w.testSpeechTranscript ?? w.document.querySelector('.bubble.you .en')?.textContent;
@@ -70,6 +78,10 @@ async function complete(number, mutate=null, review=false) {
   assert.equal(d.querySelectorAll('#lessonSelect option').length,sources.length);
   assert.equal(d.querySelector('.story-context').textContent,lesson.scenarioFa);
   assert.equal(d.querySelector('.role-label').dataset.characterKey,lesson.curriculum.story.learnerRoleKey);
+  if(previewMode && lesson.sortOrder===27) {
+    assert.equal(d.getElementById('screens').dataset.activityKey,'A02','Lesson 27 Preview must expose the guided dialogue before the pre-dialogue A01 question');
+    assert.ok(d.querySelector('.bubble.you'),'Lesson 27 must show the dialogue response context before asking A01');
+  }
   let didWrongChoice=false,didWrongOrder=false;
   for(let iteration=0;iteration<45;iteration++) {
     await settle();
@@ -153,20 +165,25 @@ async function complete(number, mutate=null, review=false) {
   assert.equal(home.w.document.querySelectorAll('.lesson-link').length,sources.length);
   assert.equal(home.w.document.getElementById('homeCount').textContent,`۰ از ${fa(sources.length)} درس`);
   home.w.document.getElementById('startBtn').click();
-  for(let i=0;i<100 && !home.w.document.querySelector('.bubble.you');i++)await settle();
+  await waitUntil(()=>Boolean(home.w.document.querySelector('.bubble.you') && home.w.document.querySelector('.mic')),'Starting a Lesson from Home must finish loading and render its first dialogue response');
   home.w.document.querySelector('.mic').click();await settle();
   home.w.document.getElementById('feedbackContinue').click();
   const response=home.w.document.querySelector('.bubble.you .en').textContent;
   home.w.document.getElementById('homeBtn').click();
   assert.equal(home.w.document.getElementById('startBtn').textContent,'ادامه درس');
   home.w.document.getElementById('startBtn').click();
-  for(let i=0;i<100 && !home.w.document.querySelector('.bubble.you');i++)await settle();
+  await waitUntil(()=>Boolean(home.w.document.querySelector('.bubble.you') && home.w.document.querySelector('.mic')),'Resuming a Lesson from Home must restore the dialogue exchange');
   assert.equal(home.w.document.querySelector('.bubble.you .en').textContent,response,'Resume must retain the exchange, not restart the dialogue');
   home.dom.window.close();
   await complete(1, lesson=>{lesson.titleFa='درس تغییر داده شده';const a=lesson.activities.find(a=>a.type==='fill_blank');a.config.optionsEn.reverse();a.config.answerIndex=a.config.optionsEn.length-1-a.config.answerIndex;});
   const stale=await page(1,true);
-  assert.ok(stale.w.document.querySelector('.status-error').textContent.includes('صداهای این نسخه'));
-  assert.equal(stale.w.document.querySelector('.mic'),null);
+  if(previewMode) {
+    assert.ok(stale.w.document.querySelector('#screens .tag'),'Preview mode must keep validated text testable when exact paid audio is stale or absent');
+    assert.equal(stale.w.document.querySelector('.status-error'),null);
+  } else {
+    assert.ok(stale.w.document.querySelector('.status-error').textContent.includes('صداهای این نسخه'));
+    assert.equal(stale.w.document.querySelector('.mic'),null);
+  }
   stale.dom.window.close();
-  console.log(`PASS: home, session progress, exact exchange resume, explicit review mode, ${sources.length} complete Lessons, story context and canonical speakers, incorrect-answer recovery, changed canonical answers, Lesson selection including double-digit numbers, stale-manifest rejection. Speech/audio are mocked DOM tests.`);
+  console.log(`PASS: home, session progress, exact exchange resume, explicit review mode, ${sources.length} complete Lessons, story context and canonical speakers, incorrect-answer recovery, changed canonical answers, Lesson selection including double-digit numbers, ${previewMode?'preview audio fallback':'stale-manifest rejection'}, and Lesson 27 dialogue-first dependency handling when Preview mode is enabled. Speech/audio are mocked DOM tests.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
