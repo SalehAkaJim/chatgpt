@@ -11,6 +11,8 @@ from validate_content_quality import evaluate
 from validate_factory_design import validate_factory_design
 from validate_lesson import validate
 from validate_lesson_reference import validate_lesson_reference
+from validate_product_quality_v2 import load_policy as load_product_policy
+from validate_product_quality_v2 import validate_product_quality_v2
 from validate_story import validate_story
 
 
@@ -32,6 +34,7 @@ def main() -> int:
     course_path = root / "nova/courses" / course_code / "course.source.json"
     course = load(course_path)
     policy = load(root / "nova/_assistant/content-system-v1/content_quality.policy.json")
+    product_policy = load_product_policy(root)
     catalog = ReferenceCatalog(root, course_code)
     enforce_from = int(config.get("enforceFromSortOrder", 1))
     max_dechunk_delay = int(config.get("generativityMaxDelayLessons", 4))
@@ -73,15 +76,19 @@ def main() -> int:
     story_errors = validate_story(story_records) if story_records else []
     design = validate_factory_design(lesson_objects, max_delay=max_dechunk_delay)
     design_errors = design.get("errors", [])
+    product_quality = validate_product_quality_v2(lesson_objects, product_policy)
+    product_quality_errors = product_quality.get("errors", [])
     errors.extend(story_errors)
     errors.extend(design_errors)
+    errors.extend(product_quality_errors)
     errors.extend(e for r in reports for e in r["errors"])
     status = "PASS" if not errors else "FAIL"
     payload = {
-        "schemaVersion": 3,
+        "schemaVersion": 4,
         "courseCode": course_code,
         "enforceFromSortOrder": enforce_from,
         "generativityMaxDelayLessons": max_dechunk_delay,
+        "productQualityV2EnforceFromSortOrder": product_policy.get("enforceFromSortOrder", 125),
         "generatedLessonsMode": config.get("generatedLessons", "auto"),
         "generatedLessons": generated_lessons,
         "passedPrefixLength": sum(1 for r in reports if r["status"] == "PASS"),
@@ -90,11 +97,17 @@ def main() -> int:
         "storyErrors": story_errors,
         "factoryDesignStatus": design.get("status"),
         "factoryDesignErrors": design_errors,
+        "productQualityV2": product_quality,
         "errors": errors,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"status": status, "generated": len(reports), "errors": len(errors)}, ensure_ascii=False))
+    print(json.dumps({
+        "status": status,
+        "generated": len(reports),
+        "errors": len(errors),
+        "productQualityV2Errors": len(product_quality_errors),
+    }, ensure_ascii=False))
     return 0 if status == "PASS" else 2
 
 
