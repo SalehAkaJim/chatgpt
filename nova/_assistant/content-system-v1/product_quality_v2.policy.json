@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "enforceFromSortOrder": 125,
+  "legacyRemediation": {
+    "fromSortOrder": 40,
+    "toSortOrder": 84,
+    "hardGatePlaceholderDistractors": true
+  },
+  "distractors": {
+    "bannedPlaceholderPatternsFa": [
+      "یک معنی نامربوط",
+      "نام یک شخص",
+      "یک گزینه نامربوط",
+      "معنی نامربوط",
+      "گزینه نامربوط"
+    ],
+    "bannedGenericOptionsEn": [
+      "People like coffee.",
+      "This is my house."
+    ]
+  },
+  "naturalness": {
+    "banTeacherDirectiveDialogueFromEnforcement": true,
+    "teacherDirectivePrefixes": ["Say:", "Now say:"],
+    "bannedExactUtterances": [
+      "I know this pen.",
+      "This week is busy.",
+      "Next week is free."
+    ],
+    "maxUsageFallbacksPerLessonBeforeWarning": 5
+  },
+  "wave": {
+    "size": 8,
+    "requiredArchetypes": [
+      "lexical_context",
+      "grammar_pattern",
+      "story_task",
+      "review_recombination",
+      "listening_focus",
+      "functional_exchange"
+    ],
+    "minimumDistinctArchetypes": 3,
+    "maximumSameArchetype": 4,
+    "minimumDistinctActivitySignatures": 3,
+    "minimumGrammarFocusedLessons": 2,
+    "minimumReviewRecombinationLessons": 1,
+    "minimumLegacyReviewItems": 4
+  },
+  "spacedRetrieval": {
+    "futureTargetFirstReviewMinGap": 3,
+    "futureTargetFirstReviewMaxGap": 10,
+    "legacyBacklogFromSortOrder": 40,
+    "legacyBacklogToSortOrder": 84
+  },
+  "releaseReadiness": {
+    "requireRealLearnerPilotForPublicRelease": true,
+    "minimumLearners": 10,
+    "minimumLessonsPerLearner": 20,
+    "minimumCompletedSessions": 100
+  }
+}
