@@ -1,10 +1,11 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "enforceFromSortOrder": 125,
   "legacyRemediation": {
     "fromSortOrder": 40,
     "toSortOrder": 84,
-    "hardGatePlaceholderDistractors": true
+    "hardGatePlaceholderDistractors": true,
+    "hardGateKnownBadEnglishDistractors": true
   },
   "distractors": {
     "bannedPlaceholderPatternsFa": [
@@ -17,11 +18,28 @@
     "bannedGenericOptionsEn": [
       "People like coffee.",
       "This is my house."
-    ]
+    ],
+    "bannedExactOptionsEn": [
+      "I read tea.",
+      "I read there is a pen.",
+      "Read, very help.",
+      "read action.",
+      "I read action.",
+      "I very go there.",
+      "I very eat there.",
+      "book here is good.",
+      "It is book.",
+      "Try very.",
+      "Wait at the book.",
+      "read me the map.",
+      "I read tired.",
+      "read the bag there."
+    ],
+    "requireExplicitEnglishDistractorAuditFromSortOrder": 125
   },
   "naturalness": {
     "banTeacherDirectiveDialogueFromEnforcement": true,
-    "teacherDirectivePrefixes": ["Say:", "Now say:"],
+    "teacherDirectivePrefixes": ["Say:", "Say ", "Now say:", "Now say "],
     "bannedExactUtterances": [
       "I know this pen.",
       "This week is busy.",
