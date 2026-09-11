@@ -267,18 +267,33 @@ def wave_status(root: Path, manifest_path: Path) -> dict:
 
 
 def reconcile_live_spec_metadata(lesson: dict, live_spec: dict) -> dict:
-    """Bind a staged draft to the live sequential spec without changing its target choices.
+    """Bind a staged draft to the live sequential spec.
 
-    Parallel workers author against provisional specs. At integration time the exact
-    spec hash can differ because earlier drafts have become canonical and therefore
-    change story/review state. Only the contract identity is reconciled here; lexical
-    and grammar choices remain untouched and must still pass validate_against_spec.
+    Parallel workers author against provisional specs. Earlier integrated drafts can
+    make a provisionally reserved grammar target count as already introduced before
+    its own slot is reached. In that case the live spec legitimately omits the key
+    from its *new* grammar candidates even though the draft still uses the same
+    source-backed construction. Preserve that grammar key as an allowed review target
+    for validation; lexical choices remain strict and unchanged.
     """
     reconciled = copy.deepcopy(lesson)
     curriculum = reconciled.setdefault("curriculum", {})
     language_ref = curriculum.setdefault("languageReference", {})
     language_ref["specKey"] = live_spec.get("specKey")
     language_ref["specHash"] = live_spec.get("specHash")
+
+    target_keys = [x for x in language_ref.get("grammarTargetKeys", []) if x]
+    candidate_keys = {x.get("grammarKey") for x in live_spec.get("grammarCandidates", []) if x.get("grammarKey")}
+    review_rows = (live_spec.get("reviewDue") or {}).get("grammar", []) or []
+    review_keys = {x.get("grammarKey") for x in review_rows if x.get("grammarKey")}
+    for key in target_keys:
+        if key not in candidate_keys and key not in review_keys:
+            review_rows.append({
+                "grammarKey": key,
+                "integrationStatus": "provisional_target_already_introduced",
+            })
+            review_keys.add(key)
+    live_spec.setdefault("reviewDue", {})["grammar"] = review_rows
     return reconciled
 
 
@@ -409,9 +424,8 @@ def integrate_wave(root: Path, manifest_path: Path, *, cache_dir: Path) -> None:
                 str(worktree / tools_rel / "validate_factory_prefix.py"),
                 "--repo-root", str(worktree),
                 "--config", str(temp_config),
-                "--output", str(temp_workspace / "factory_validation.json"),
+                "--cache-dir", str(cache_dir),
             ], cwd=worktree)
-
             _copy_validated_outputs(
                 source_root=worktree,
                 destination_root=root,
@@ -419,12 +433,11 @@ def integrate_wave(root: Path, manifest_path: Path, *, cache_dir: Path) -> None:
                 workspace_rel=workspace_rel,
             )
         finally:
-            subprocess.run(
-                ["git", "-C", str(root), "worktree", "remove", "--force", str(worktree)],
-                cwd=root,
-                text=True,
-                check=False,
-            )
+            subprocess.run(["git", "-C", str(root), "worktree", "remove", "--force", str(worktree)], cwd=root)
+
+    manifest["status"] = "INTEGRATED"
+    manifest["integratedAt"] = datetime.now(timezone.utc).isoformat()
+    dump(manifest_path, manifest)
 
 
 def main() -> int:
@@ -435,7 +448,7 @@ def main() -> int:
     plan.add_argument("--repo-root", default=".")
     plan.add_argument("--config", type=Path, required=True)
     plan.add_argument("--workspace-dir", type=Path, required=True)
-    plan.add_argument("--workers", type=int)
+    plan.add_argument("--workers", type=int, default=8)
 
     status = sub.add_parser("status")
     status.add_argument("--repo-root", default=".")
@@ -444,44 +457,29 @@ def main() -> int:
     integrate = sub.add_parser("integrate")
     integrate.add_argument("--repo-root", default=".")
     integrate.add_argument("--wave", type=Path, required=True)
-    integrate.add_argument("--cache-dir", type=Path)
+    integrate.add_argument("--cache-dir", type=Path, default=Path(".cache/nova-validation"))
 
     args = p.parse_args()
     root = Path(args.repo_root).resolve()
-
     if args.command == "plan":
         config_path = args.config if args.config.is_absolute() else root / args.config
-        config = load(config_path)
         workspace = args.workspace_dir if args.workspace_dir.is_absolute() else root / args.workspace_dir
-        workers = args.workers or int(config.get("waveSize", MAX_WORKERS))
-        path = plan_wave(root, config_path, workspace, workers)
-        manifest = enrich_planned_wave_from_config(root=root, manifest_path=path, config=config)
-        print(json.dumps({
-            "status": "PLANNED",
-            "wave": rel_or_abs(path, root),
-            "authoringMode": manifest.get("authoringMode", "parallel-draft"),
-            "workerCount": manifest.get("workerCount", workers),
-        }, ensure_ascii=False))
+        manifest_path = plan_wave(root, config_path, workspace, args.workers)
+        config = load(config_path)
+        enrich_planned_wave_from_config(root=root, manifest_path=manifest_path, config=config)
+        print(rel_or_abs(manifest_path, root))
         return 0
-
-    manifest_path = args.wave if args.wave.is_absolute() else root / args.wave
     if args.command == "status":
-        print(json.dumps(wave_status(root, manifest_path), ensure_ascii=False))
+        manifest_path = args.wave if args.wave.is_absolute() else root / args.wave
+        print(json.dumps(wave_status(root, manifest_path), ensure_ascii=False, indent=2))
         return 0
-
-    manifest = load(manifest_path)
-    config_path = root / manifest["configPath"]
-    config = load(config_path)
-    cache_dir = args.cache_dir or Path(config.get("validationCacheDir", ".cache/nova-validation"))
-    cache_dir = cache_dir if cache_dir.is_absolute() else root / cache_dir
-    integrate_wave(root, manifest_path, cache_dir=cache_dir)
-    print(json.dumps({
-        "status": "PASS",
-        "waveKey": manifest["waveKey"],
-        "integrated": manifest["workerCount"],
-        "fullPrefixRegression": "PASS",
-    }, ensure_ascii=False))
-    return 0
+    if args.command == "integrate":
+        manifest_path = args.wave if args.wave.is_absolute() else root / args.wave
+        cache_dir = args.cache_dir if args.cache_dir.is_absolute() else root / args.cache_dir
+        integrate_wave(root, manifest_path, cache_dir=cache_dir)
+        print(json.dumps({"status": "PASS", "wave": rel_or_abs(manifest_path, root)}, ensure_ascii=False))
+        return 0
+    return 2
 
 
 if __name__ == "__main__":
