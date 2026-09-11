@@ -69,21 +69,23 @@
       "story_task",
       "review_recombination",
       "listening_focus",
-      "functional_exchange"
+      "functional_exchange",
+      "pronunciation_focus"
     ],
     "minimumDistinctArchetypes": 3,
     "maximumSameArchetype": 4,
     "minimumDistinctActivitySignatures": 3,
     "minimumGrammarFocusedLessons": 2,
     "minimumReviewRecombinationLessons": 1,
-    "minimumLegacyReviewItems": 4,
+    "minimumLegacyReviewItems": 8,
     "minimumDistinctStoryArcs": 4
   },
   "spacedRetrieval": {
     "futureTargetFirstReviewMinGap": 3,
     "futureTargetFirstReviewMaxGap": 10,
     "legacyBacklogFromSortOrder": 40,
-    "legacyBacklogToSortOrder": 84
+    "legacyBacklogToSortOrder": 84,
+    "legacyBacklogBurnDownTargetLessons": 48
   },
   "releaseReadiness": {
     "requireRealLearnerPilotForPublicRelease": true,
