@@ -175,33 +175,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی get را در جمله پیدا کن.",
-      "promptFa": "get در این درس چه معنی‌ای دارد؟",
-      "promptEn": "I get a book.",
-      "config": {
-        "options": [
-          "به دست آوردن",
-          "یک معنی نامربوط",
-          "نام یک شخص"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این کلمه نام شخص نیست."
-          ],
-          "correctFa": "به دست آوردن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های nina را گوش کن و جواب iris را بگو.",
@@ -229,6 +202,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی get را در جمله پیدا کن.",
+      "promptFa": "get در این درس چه معنی‌ای دارد؟",
+      "promptEn": "I get a book.",
+      "config": {
+        "options": [
+          "به دست آوردن",
+          "یک معنی نامربوط",
+          "نام یک شخص"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این کلمه نام شخص نیست."
+          ],
+          "correctFa": "به دست آوردن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -314,11 +314,13 @@
             "این جمله نامربوط است."
           ],
           "correctFa": "یک خودکار می‌گیرم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

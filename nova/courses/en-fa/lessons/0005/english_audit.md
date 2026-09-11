@@ -1,4 +1,4 @@
-<!-- sourceHash: 5a377ec3f47e3e7c16956313d94f05dfa980d62805c4a4e9ff3328676cc0b718 -->
+<!-- sourceHash: 2c88e57208b92bef534637a1e4bedbf4261da7ad8852bb3f114fe3140c1d883d -->
 # English Audit — EN-A1-L-0005
 
 **Lesson:** Where are you from?
@@ -15,7 +15,7 @@ Hi! I'm Sara.
 Hi! I'm Ruby.
 
 - **Speech target:** Hi! I'm Ruby.
-- **Accepted speech:** Hi! I'm Ruby.
+- **Accepted speech:** Hi! I'm Ruby. | Hi! I am Ruby.
 
 **T03 · sara**
 
@@ -26,7 +26,7 @@ Where are you from?
 I'm from Iran.
 
 - **Speech target:** I'm from Iran.
-- **Accepted speech:** I'm from Iran.
+- **Accepted speech:** I'm from Iran. | I am from Iran.
 
 **T05 · sara**
 
@@ -44,7 +44,7 @@ Nice!
 I'm from Iran. Where are you from?
 
 - **Speech target:** I'm from Iran. Where are you from?
-- **Accepted speech:** I'm from Iran. Where are you from?
+- **Accepted speech:** I'm from Iran. Where are you from? | I am from Iran. Where are you from?
 
 ## Activities
 
@@ -73,7 +73,7 @@ I'm from Iran. Where are you from?
 **A07 · speak**
 
 - **textEn:** I'm from Iran. Where are you from?
-- **acceptedAnswersEn:** I'm from Iran. Where are you from?
+- **acceptedAnswersEn:** I'm from Iran. Where are you from? | I am from Iran. Where are you from?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

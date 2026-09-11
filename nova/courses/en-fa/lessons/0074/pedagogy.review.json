@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0074; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0074; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "The Lesson adds one concrete noun while reusing familiar demonstratives and possessives."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 4,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 5,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 4,
-      "evidence": "The walking-group arc returns five Lessons after 0069 and rotates the learner role from Sara to Ruby."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
@@ -51,7 +51,8 @@
     "The review is limited to the bounded A1 outcome and does not claim broad mastery of the target word or grammar.",
     "Final generated audio prosody is not evaluated in this text-stage review.",
     "No independent human or real learner test has been performed after quality-v2 remediation.",
-    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "English target usage is contextually plausible for the authored scene.",
@@ -61,11 +62,12 @@
     "Quality-v2 remediation: A04: 'This is my house.' -> 'that is my house.'.",
     "Quality-v2 remediation: A05: 'This is my house.' -> 'this is your house.'.",
     "Product Quality v2 polish: A04: 'that is my house.' -> 'That is my house.'.",
-    "Product Quality v2 polish: A05: 'this is your house.' -> 'This is your house.'."
+    "Product Quality v2 polish: A05: 'this is your house.' -> 'This is your house.'.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0074",
-  "sourceHash": "c6bcd71a0742a9ce2c73e46ad5f2c54c0ad2b51438b34fe4bc7432d80d54cc07",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "sourceHash": "ad67af6a64130e478622fd6a92040a1d3db12808a4a7b26c995a428b56af53c5",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
   "qualityV2Remediation": {
     "version": 1,
     "date": "2026-09-10",
@@ -80,6 +82,15 @@
     "changes": [
       "A04: 'that is my house.' -> 'That is my house.'",
       "A05: 'this is your house.' -> 'This is your house.'"
+    ]
+  },
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure",
+      "duplicateScoring",
+      "speechEquivalence"
     ]
   }
 }

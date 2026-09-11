@@ -151,33 +151,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی well را در جمله پیدا کن.",
-      "promptFa": "well در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Thank you. I read well.",
-      "config": {
-        "options": [
-          "خوب، به خوبی",
-          "خیلی",
-          "واقعا"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«خیلی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«واقعا» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "خوب، به خوبی"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های ruby را گوش کن و جواب sara را بگو.",
@@ -205,6 +178,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی well را در جمله پیدا کن.",
+      "promptFa": "well در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Thank you. I read well.",
+      "config": {
+        "options": [
+          "خوب، به خوبی",
+          "خیلی",
+          "واقعا"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«خیلی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«واقعا» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "خوب، به خوبی"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -292,11 +292,13 @@
             "«I read that well too.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "این را هم خوب می‌خوانم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

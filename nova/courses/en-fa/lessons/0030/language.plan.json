@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0030",
   "sortOrder": 30,
   "levelKey": "A1",
-  "lessonSourceHash": "40c9fdb4705d591f36c8c3a510abb600499f5201350e537aa793cc1f34a4acc8",
+  "lessonSourceHash": "c07f0d02bb15685ef67112b24839afaf1774ad6c27b5b5b7e4dcbf7e76a85c50",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -78,12 +78,15 @@
       "constructionKeys": [
         "EN-CONSTR-THIS-TIME-I-READ"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this time i read",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "this time i read",
+        "rationale": "This time, I read is a transparent turn-taking use of time in the selected 'this occasion' sense with read already taught."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "this i read books",
@@ -94,34 +97,15 @@
       "constructionKeys": [
         "EN-CONSTR-THIS-TIME-I-READ-BOOKS"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "i read books",
-      "examples": [
-        {
-          "id": 1001623,
-          "text": "I read books.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Nihonkage"
-        },
-        {
-          "id": 13706909,
-          "text": "I read books every day.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 12332167,
-          "text": "I read books at night.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Aghanim"
-        }
-      ],
-      "fallback": null,
-      "fallbackMatch": null
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "this time i read",
+      "examples": [],
+      "fallback": {
+        "query": "this time i read",
+        "rationale": "This time, I read is a transparent turn-taking use of time in the selected 'this occasion' sense with read already taught."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "this time i read",
@@ -146,5 +130,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "fe6892dce28ed21caa69ee1ca28f1aa3afae6f7baab5629b8b99d7244cafa300"
+  "planHash": "27b2b4f9682dc58c1eb0bffdffd41f0127672c973b0b878302784bfa2634a415"
 }

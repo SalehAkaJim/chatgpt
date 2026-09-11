@@ -1,4 +1,4 @@
-<!-- sourceHash: b4d5ad185ccf1330956b15a4aa2d068e1908b34229c124bf2cfad5fb7518a528 -->
+<!-- sourceHash: f0747ef31dc2783f7f683345a6e6d9aaad60c2c7efa427698198fd55c57ca0f9 -->
 # English Audit — EN-A1-L-0121
 
 **Lesson:** Maybe it is open
@@ -34,13 +34,13 @@ Maybe he is there too.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Maybe the cafe is open
 - **options:** شاید | با هم | حتما
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

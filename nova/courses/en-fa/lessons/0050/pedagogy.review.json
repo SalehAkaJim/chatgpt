@@ -1,10 +1,10 @@
 {
   "version": 1,
   "lessonKey": "EN-A1-L-0050",
-  "sourceHash": "dc8fa55bef2b4fd94d885f8577faeff3630af229403c951e01aeeb0d4e1b3e35",
+  "sourceHash": "699e1ab4f862cd8cda126cd269a1b076e34ecf0e1fb5ddfd09057f0288d3fc4f",
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0050; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0050; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -16,7 +16,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "Target, guided practice, retrieval and outcome align."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 4,
@@ -24,7 +24,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 5,
@@ -32,7 +32,7 @@
     },
     "repetitionUsefulness": {
       "score": 4,
-      "evidence": "Reuse is spaced and serves a new communicative purpose."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 4,
@@ -44,7 +44,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
@@ -52,7 +52,8 @@
     "No independent human or real learner test has been performed.",
     "Review is limited to the bounded A1 outcome.",
     "Final audio prosody remains unreviewed until text gates pass.",
-    "No independent human or real learner test has been performed after quality-v2 remediation."
+    "No independent human or real learner test has been performed after quality-v2 remediation.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "English target usage is contextually plausible.",
@@ -61,9 +62,10 @@
     "Character and learner-role constraints were preserved.",
     "Quality-v2 remediation: A01: 'یک معنی نامربوط' -> 'جدید'.",
     "Quality-v2 remediation: A01: 'نام یک شخص' -> 'قدیمی'.",
-    "Quality-v2 remediation: A05: 'People like coffee.' -> 'No. The right side.'."
+    "Quality-v2 remediation: A05: 'People like coffee.' -> 'No. The right side.'.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
   "qualityV2Remediation": {
     "version": 1,
     "date": "2026-09-10",
@@ -71,6 +73,14 @@
       "A01: 'یک معنی نامربوط' -> 'جدید'",
       "A01: 'نام یک شخص' -> 'قدیمی'",
       "A05: 'People like coffee.' -> 'No. The right side.'"
+    ]
+  },
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure",
+      "duplicateScoring"
     ]
   }
 }

@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی person را پیدا کن.",
-      "promptFa": "person در این درس به چه معنی‌ای است؟",
-      "promptEn": "One person is waiting.",
-      "config": {
-        "options": [
-          "نفر",
-          "گروه",
-          "روز"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "نفر"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های آوا را گوش کن و جواب بن را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی person را پیدا کن.",
+      "promptFa": "person در این درس به چه معنی‌ای است؟",
+      "promptEn": "One person is waiting.",
+      "config": {
+        "options": [
+          "نفر",
+          "گروه",
+          "روز"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "نفر"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -280,11 +280,13 @@
             "این جمله هدف درس نیست."
           ],
           "correctFa": "بله، یک نفر."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

@@ -1,4 +1,4 @@
-<!-- sourceHash: 35289ae2e3d79bdb335873245d11167728e61658dfc0b5f8c4ddd091557948e9 -->
+<!-- sourceHash: 786d85d60d02bba680589b79245d9ae8874a26c81c33ff8d8493c74c4f020d42 -->
 # English Audit — EN-A1-L-0084
 
 **Lesson:** Put it here
@@ -34,13 +34,13 @@ Put the bag there.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Put it here.
 - **options:** گذاشتن | برداشتن | دیدن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

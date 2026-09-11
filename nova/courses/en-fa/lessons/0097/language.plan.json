@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0097",
   "sortOrder": 97,
   "levelKey": "A1",
-  "lessonSourceHash": "da7cc018bb70c1e79989ace33b39423bbbc9dea11976ee9d57fa2606178bef16",
+  "lessonSourceHash": "54a3aded65e8ee5c63bb269a570a17ba8fde82fea8522e27f4a45abc4cdbeb18",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -71,10 +71,32 @@
       "lexicalLemmas": [
         "group"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "a big group",
-      "examples": [],
+      "examples": [
+        {
+          "id": 7205166,
+          "text": "Sami had a big group of acquaintances.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 10235051,
+          "text": "Ziri was in a big group of people.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 8376783,
+          "text": "Tom is with a big group of people.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "a big group",
         "rationale": "Exact prompt-side target collocation generated from the character turn."
@@ -104,5 +126,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "865f6b78413a357a5931ee4577cbf82db79095513674c7f1a0ec0ee886898f90"
+  "planHash": "9f6cf04661b2baad340c143c7af8c06c483fe088039ca63b72d6cbb8c93699c6"
 }

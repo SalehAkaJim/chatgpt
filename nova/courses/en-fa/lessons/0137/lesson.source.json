@@ -278,11 +278,12 @@
             "این گزینه درباره day است، نه month."
           ],
           "correctFa": "This month isn't busy."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -299,7 +300,8 @@
               "contrastReasonFa": "day را به جای month به کار می‌برد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -321,11 +323,12 @@
             "این گزینه به این ماه برمی‌گردد، نه ماه بعد."
           ],
           "correctFa": "Next month isn't busy either."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -342,7 +345,8 @@
               "contrastReasonFa": "به این ماه برمی‌گردد، نه ماه بعد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

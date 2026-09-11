@@ -1,4 +1,4 @@
-<!-- sourceHash: 9bc7c7f2fced78f096574abd07ffd303a431166b8ea13385f582c3a08dfc7cea -->
+<!-- sourceHash: dfeda8bebd593625c369bee6ddaf56dfa2e9b48fdf2e0148e61a0df44d88b739 -->
 # English Audit — EN-A1-L-0059
 
 **Lesson:** This is love
@@ -30,17 +30,17 @@ And this?
 It is love.
 
 - **Speech target:** It is love.
-- **Accepted speech:** It is love.
+- **Accepted speech:** It is love. | It's love.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** This is love.
 - **options:** عشق، محبت | کتاب | اتاق
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -57,7 +57,7 @@ It is love.
 **A06 · speak**
 
 - **textEn:** It is love.
-- **acceptedAnswersEn:** It is love.
+- **acceptedAnswersEn:** It is love. | It's love.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

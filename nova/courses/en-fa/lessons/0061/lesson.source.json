@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی home را پیدا کن.",
-      "promptFa": "home در این درس چه معنی‌ای دارد؟",
-      "promptEn": "My home.",
-      "config": {
-        "options": [
-          "خانه",
-          "خیابان",
-          "کافه"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "خیابان محل عبور است، نه معنی home.",
-            "کافه یک مکان عمومی است، نه معنی home در این جمله."
-          ],
-          "correctFa": "خانه"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های nina را گوش کن و جواب iris را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی home را پیدا کن.",
+      "promptFa": "home در این درس چه معنی‌ای دارد؟",
+      "promptEn": "My home.",
+      "config": {
+        "options": [
+          "خانه",
+          "خیابان",
+          "کافه"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "خیابان محل عبور است، نه معنی home.",
+            "کافه یک مکان عمومی است، نه معنی home در این جمله."
+          ],
+          "correctFa": "خانه"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -279,11 +279,13 @@
             "این جمله نامربوط است."
           ],
           "correctFa": "این خانه من است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

@@ -1,33 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0129",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "this is my other hand",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0129; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0129; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
@@ -39,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "One lexical target moves from recognition through guided exchange, listening, transfer, and hidden retrieval."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 4,
@@ -47,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "نینا و آیریس در مرکز محله برای یک بازی حرکتی ساده آماده می‌شوند و آیریس دست‌هایش را نشان می‌دهد."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 5,
@@ -55,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 5,
-        "evidence": "hand is repeated across meaning, dialogue, listening, selection, transfer, and retrieval."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 4,
@@ -67,14 +55,15 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; engagement and perceived naturalness remain unverified."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Only the bounded body-part sense of hand is reviewed.",
-      "Generated audio pronunciation/prosody is not evaluated at this text stage."
+      "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English turns and options were checked for grammar and internal consistency.",
@@ -82,11 +71,20 @@
       "Reference key, part of speech, sense key, and provisional spec hash were cross-checked against the worker packet.",
       "Final retrieval keeps the answer hidden before attempt.",
       "Community story arc returns after 5 Lessons with a changed learner role.",
-      "The Lesson 0129 target-collocation audit was repaired by adding explicit exact fallbacks for ‘me your hand’, ‘is my hand’, ‘the other hand’, and ‘my other hand’; each is tied to existing turn text and no learner-facing wording changed."
+      "The Lesson 0129 target-collocation audit was repaired by adding explicit exact fallbacks for ‘me your hand’, ‘is my hand’, ‘the other hand’, and ‘my other hand’; each is tied to existing turn text and no learner-facing wording changed.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0129",
-    "sourceHash": "7a2151cf2d57fda6572c7ee48c8ce32b1c6d2c98f5e298a1a0b59b80c36c9c19",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "53d67eea96e8361ffea5a8d4e4ada7e5362ab394531b2a8d79e01e22f2f8613a",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "dialogueExposure",
+        "duplicateScoring"
+      ]
+    },
     "status": "PASS",
     "average": 4.5,
     "errors": []
@@ -98,5 +96,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "7a2151cf2d57fda6572c7ee48c8ce32b1c6d2c98f5e298a1a0b59b80c36c9c19"
+  "sourceHash": "53d67eea96e8361ffea5a8d4e4ada7e5362ab394531b2a8d79e01e22f2f8613a"
 }

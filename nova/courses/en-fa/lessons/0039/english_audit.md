@@ -1,4 +1,4 @@
-<!-- sourceHash: 3a39aa13ae4044f2499c0bfe27c066f8109cc694c7fdb01b568fcf131e674a34 -->
+<!-- sourceHash: 82fb7ae42c462e07460425a82c7c6d32362f13aec46ac5bdcc7177db88234a77 -->
 # English Audit — EN-A1-L-0039
 
 **Lesson:** The first room
@@ -36,13 +36,13 @@ Yes. This is the first room.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** This is the first room.
 - **options:** اول، نخستین | یک معنی نامربوط | نام یک شخص
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

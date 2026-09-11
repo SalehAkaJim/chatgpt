@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0020",
   "sortOrder": 20,
   "levelKey": "A1",
-  "lessonSourceHash": "569a3671f677365c42778f18170a2fc76eafe89ecee8963ae8ab12dfcc3ddff5",
+  "lessonSourceHash": "d9d8a079c20408bdf320fd3d2bf35f072698992314e6d3ae77a65785c470d454",
   "enforceFromSortOrder": 25,
   "enforced": false,
   "grammarEvidence": [],
@@ -41,13 +41,7 @@
         "generalFrequencyRank": null,
         "priorityTier": "core_spoken"
       },
-      "pronunciation": {
-        "primaryArpabet": "W AH1 N",
-        "arpabet": [
-          "W AH1 N"
-        ],
-        "stressPattern": "1"
-      }
+      "pronunciation": null
     },
     {
       "lexicalKey": "EN-LEX-TWO-01",
@@ -142,7 +136,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "two at seven",
+      "evidenceQuery": "i leave at seven",
       "examples": [],
       "fallback": null,
       "fallbackMatch": null
@@ -156,19 +150,40 @@
       "lexicalLemmas": [
         "seven"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": "two at seven",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "at seven",
+      "examples": [
+        {
+          "id": 7920844,
+          "text": "I dine at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "AlanF_US"
+        },
+        {
+          "id": 2393896,
+          "text": "They dine at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "kuma"
+        },
+        {
+          "id": 10569629,
+          "text": "He arrived home at seven.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
       "fallback": null,
       "fallbackMatch": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0020: target collocation 'at seven' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0020: target collocation 'two at seven' has no committed Tatoeba evidence or explicit usage fallback"
+    "EN-A1-L-0020: target collocation 'at seven' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "efdd140432662eace37b9ca0a1c9b4603f2893e1464342cca7a2b77a391aa3e1"
+  "planHash": "4c5f4164adce7a72bcb51db318bf14fa1e56f503549ab2d9b2aee30e23e85011"
 }

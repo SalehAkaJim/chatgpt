@@ -1,4 +1,4 @@
-<!-- sourceHash: 4b580f442174f18eb4e1542d04fcc448fd4c29c5d7f8628a3743bacb2d86107a -->
+<!-- sourceHash: f8f7cc4a6ac0b38e6f751c3b9faca13edbd3687854f1ed188361ff36205cdc1f -->
 # English Audit — EN-A1-L-0117
 
 **Lesson:** That child is with us

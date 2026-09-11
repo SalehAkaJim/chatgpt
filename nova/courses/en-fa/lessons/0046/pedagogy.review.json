@@ -1,10 +1,10 @@
 {
   "version": 1,
   "lessonKey": "EN-A1-L-0046",
-  "sourceHash": "08c3f3f5b212523914a26396d878630fcd4afaa2c5476ac4504f4d8bd947af32",
+  "sourceHash": "fb6ef7126d9de14e6bd07742f272205f2c0b27492fb71dab2c467812f78aa060",
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0046; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0046; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -16,7 +16,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "Target, guided practice, retrieval and outcome align."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 4,
@@ -24,7 +24,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 5,
@@ -32,7 +32,7 @@
     },
     "repetitionUsefulness": {
       "score": 4,
-      "evidence": "Reuse is spaced and serves a new communicative purpose."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 4,
@@ -44,7 +44,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
@@ -53,7 +53,8 @@
     "Review is limited to the bounded A1 outcome.",
     "Final audio prosody remains unreviewed until text gates pass.",
     "No independent human or real learner test has been performed after quality-v2 remediation.",
-    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "English target usage is contextually plausible.",
@@ -64,9 +65,10 @@
     "Quality-v2 remediation: A01: 'نام یک شخص' -> 'گفتن'.",
     "Quality-v2 remediation: A05: 'People like coffee.' -> 'she says hello too.'.",
     "Product Quality v2 polish: A05: 'she says hello too.' -> 'She says hello too.'.",
-    "Product Quality v2 polish: add naturalized-prompt usage fallback 'What does Maya say?'."
+    "Product Quality v2 polish: add naturalized-prompt usage fallback 'What does Maya say?'.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
   "qualityV2Remediation": {
     "version": 1,
     "date": "2026-09-10",
@@ -82,6 +84,14 @@
     "changes": [
       "A05: 'she says hello too.' -> 'She says hello too.'",
       "add naturalized-prompt usage fallback 'What does Maya say?'"
+    ]
+  },
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure",
+      "duplicateScoring"
     ]
   }
 }

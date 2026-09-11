@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0101",
   "sortOrder": 101,
   "levelKey": "A1",
-  "lessonSourceHash": "5f3e9c65a025283c52cbdee1dbf0a925a335e501ecd378c2cdada801e8050e31",
+  "lessonSourceHash": "fe56690773fa50d9902a1ccb741468943aff45b8ab7e71b4b088e90246dfd823",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,37 @@
       "constructionKeys": [
         "EN-CONSTR-0101-CASE"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "status": "corpus_evidence",
+      "sampleCount": 3,
+      "evidenceQuery": "a special case",
+      "examples": [
+        {
+          "id": 7837119,
+          "text": "He's a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "shekitten"
+        },
+        {
+          "id": 10684377,
+          "text": "Without a doubt, yours is a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Shujinko"
+        },
+        {
+          "id": 13540805,
+          "text": "Now, imposing such tariffs or trade barriers and restrictions of any kind are steps that I am loath to take. And in a moment I'll mention the sound economic reasons for this: that over the long run such trade barriers hurt every American worker and consumer. But the Japanese semiconductors were a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
+      "fallback": {
+        "query": "a special case",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "a special case",
@@ -65,10 +90,32 @@
       "lexicalLemmas": [
         "case"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 3,
       "evidenceQuery": "a special case",
-      "examples": [],
+      "examples": [
+        {
+          "id": 7837119,
+          "text": "He's a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "shekitten"
+        },
+        {
+          "id": 10684377,
+          "text": "Without a doubt, yours is a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Shujinko"
+        },
+        {
+          "id": 13540805,
+          "text": "Now, imposing such tariffs or trade barriers and restrictions of any kind are steps that I am loath to take. And in a moment I'll mention the sound economic reasons for this: that over the long run such trade barriers hurt every American worker and consumer. But the Japanese semiconductors were a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
       "fallback": {
         "query": "a special case",
         "rationale": "Exact bounded learner target collocation around the target word."
@@ -84,10 +131,32 @@
       "lexicalLemmas": [
         "case"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "a different case",
-      "examples": [],
+      "examples": [
+        {
+          "id": 12954088,
+          "text": "He's in jail for a different case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Conjuice"
+        },
+        {
+          "id": 12464255,
+          "text": "In a different case, the word changes the meaning of the sentence.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 12464256,
+          "text": "Does this verb take the accusative, or does the object need to be expressed in a different case?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        }
+      ],
       "fallback": {
         "query": "a different case",
         "rationale": "Exact changed-context target collocation around the target word."
@@ -98,5 +167,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "f65491b6933f99e6129f1c7ae25785b2f2c6501c4048afca98b2f9b89d764dfb"
+  "planHash": "b64591fc4676c9c663cdc53c22956f0a6ee2b56750aac8860a3125a1aa618ca2"
 }

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0114",
   "sortOrder": 114,
   "levelKey": "A1",
-  "lessonSourceHash": "7da7d9ba85df0ce517b99cd91190b2476d3d9e8b4875dcde0e30e3452ccbf02e",
+  "lessonSourceHash": "3bd4d4427f733ea94b3a7ff09fb8d63a7fd2107efe4336eebac510935edab5c1",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -50,12 +50,15 @@
       "constructionKeys": [
         "EN-CONSTR-0114-JOB"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is a job here",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "is a job here",
+        "rationale": "Exact deterministic target-collocation window from There is a job here for the bounded employment sense."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "is a job here",
@@ -99,5 +102,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "53743a33c7f462ba5bcdcd8cde4553cb5f8b2c11b46d625daa060b064609051a"
+  "planHash": "a146d3ff79178d2f8932a3ab304f7d0a2c4734cd4019607c345a5f39f7aa1973"
 }

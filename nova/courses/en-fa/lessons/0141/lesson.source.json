@@ -10,7 +10,7 @@
   "descriptionFa": "با late و فعل be بگو کسی دیر رسیده است.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0141",
   "outcomeFa": "late را به معنی «دیر» در جمله‌های کوتاه با فعل be به کار ببری.",
-  "scenarioFa": "اوون و نورا در ادامه داستان همسایه ها درباره موضوع این درس گفت‌وگو می‌کنند.",
+  "scenarioFa": "در ساختمان، کنار در ورودی، نورا می‌گوید «رسیدی؟» و اوون پاسخ می‌دهد «بله، اما دیر رسیدم.».",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0140"
   ],
@@ -53,7 +53,7 @@
       ],
       "continuesLessonKey": "EN-A1-L-0088",
       "settingFa": "ساختمان، کنار در ورودی",
-      "storyBeatFa": "اوون و نورا در ادامه داستان همسایه ها درباره موضوع این درس گفت‌وگو می‌کنند."
+      "storyBeatFa": "نورا با «رسیدی؟» گفت‌وگو را شروع می‌کند، اوون می‌گوید «بله، اما دیر رسیدم.»؛ بعد نورا می‌گوید «آوا هم دیر کرده؟» و اوون با «بله، او هم دیر کرده است.» پاسخ می‌دهد."
     },
     "reviewLinks": [
       {
@@ -164,7 +164,8 @@
       "audioRequired": true,
       "speechTargetEn": "Yes, but I am late.",
       "acceptedSpeechEn": [
-        "Yes, but I am late."
+        "Yes, but I am late.",
+        "Yes, but I'm late."
       ]
     },
     {
@@ -269,11 +270,12 @@
             "«I am ready.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "بله، اما دیر رسیدم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "skillFocus": "listening",
         "distractorAudit": {
           "reviewerType": "model",
@@ -291,7 +293,8 @@
               "contrastReasonFa": "معنی یا اطلاعات جمله فرق دارد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -537,7 +540,8 @@
         "mode": "retrieval",
         "textEn": "Yes, but I am late.",
         "acceptedAnswersEn": [
-          "Yes, but I am late."
+          "Yes, but I am late.",
+          "Yes, but I'm late."
         ],
         "sourceTurnKey": "T02",
         "showAnswerTextBeforeAttempt": false,

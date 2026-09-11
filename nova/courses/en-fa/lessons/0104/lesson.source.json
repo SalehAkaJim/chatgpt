@@ -151,33 +151,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی today را پیدا کن.",
-      "promptFa": "today در این درس چه زمانی است؟",
-      "promptEn": "Yes, today is busy.",
-      "config": {
-        "options": [
-          "امروز",
-          "فردا",
-          "هفته"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "امروز"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های آیریس را گوش کن و جواب نینا را بگو.",
@@ -205,6 +178,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی today را پیدا کن.",
+      "promptFa": "today در این درس چه زمانی است؟",
+      "promptEn": "Yes, today is busy.",
+      "config": {
+        "options": [
+          "امروز",
+          "فردا",
+          "هفته"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "امروز"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -284,11 +284,13 @@
             "این جمله هدف درس نیست."
           ],
           "correctFa": "امروز بعد از ساعت شش آزادم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

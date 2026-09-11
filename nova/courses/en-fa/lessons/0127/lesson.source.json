@@ -309,11 +309,12 @@
             "این جمله فقط جای کلاس را بیان می‌کند."
           ],
           "correctFa": "می‌توانیم بعد از کلاس صحبت کنیم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -330,7 +331,8 @@
               "contrastReasonFa": "جمله طبیعی است، اما فقط مکان کلاس را می‌گوید و عمل صحبت کردن را بیان نمی‌کند."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

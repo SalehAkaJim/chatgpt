@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0111",
   "sortOrder": 111,
   "levelKey": "A1",
-  "lessonSourceHash": "70056fcbbbc1c849cbe9b525203ca2aa0783411dcfff2ea62ce3697bd8a57390",
+  "lessonSourceHash": "ffc3d9ca74c1e3605b67ebc069d3e5eb5f5bafcc2984238fdbfbbed8e1571160",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,37 @@
       "constructionKeys": [
         "EN-CONSTR-0111-MEAN"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "do you mean",
+      "examples": [
+        {
+          "id": 10960357,
+          "text": "How do you mean?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 3360597,
+          "text": "Do you mean that?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 3333996,
+          "text": "Do you mean it?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "fallback": {
+        "query": "do you mean",
+        "rationale": "Exact deterministic target-collocation window from What do you mean? for the bounded intend/convey sense."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "do you mean",
@@ -65,10 +90,32 @@
       "lexicalLemmas": [
         "mean"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "do you mean",
-      "examples": [],
+      "examples": [
+        {
+          "id": 10960357,
+          "text": "How do you mean?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 3360597,
+          "text": "Do you mean that?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 3333996,
+          "text": "Do you mean it?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "do you mean",
         "rationale": "Exact deterministic target-collocation window from What do you mean? for the bounded intend/convey sense."
@@ -98,5 +145,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "c5780cbeee5ab37f66518e8b5a2995725bb5d4a6a35e13239a0134b1b552a3ac"
+  "planHash": "92fb850f2f3b98182c88cc9db1620464682c695c72b309b255e12e7f051ad349"
 }

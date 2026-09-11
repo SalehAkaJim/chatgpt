@@ -1,4 +1,4 @@
-<!-- sourceHash: c001b294fd95230b8875f0344b55f74249cf08c94ffb6ecea69804eb07b8434d -->
+<!-- sourceHash: 0151e875ea2551cc31c30b5d8d2f511602e166d9fa0fe19659dd4f71ad56697a -->
 # English Audit — EN-A1-L-0083
 
 **Lesson:** Keep the ticket
@@ -34,13 +34,13 @@ Keep this key.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Keep the ticket.
 - **options:** نگه داشتن | نشان دادن | رفتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -142,7 +142,8 @@
       "audioRequired": true,
       "speechTargetEn": "That is your own book.",
       "acceptedSpeechEn": [
-        "That is your own book."
+        "That is your own book.",
+        "That's your own book."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -284,11 +285,13 @@
             "نامربوط است."
           ],
           "correctFa": "آن کتاب خودت است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -300,7 +303,8 @@
         "mode": "retrieval",
         "textEn": "That is your own book.",
         "acceptedAnswersEn": [
-          "That is your own book."
+          "That is your own book.",
+          "That's your own book."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

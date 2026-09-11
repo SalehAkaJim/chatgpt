@@ -1,4 +1,4 @@
-<!-- sourceHash: 40c9fdb4705d591f36c8c3a510abb600499f5201350e537aa793cc1f34a4acc8 -->
+<!-- sourceHash: c07f0d02bb15685ef67112b24839afaf1774ad6c27b5b5b7e4dcbf7e76a85c50 -->
 # English Audit — EN-A1-L-0030
 
 **Lesson:** This time, I read
@@ -35,13 +35,13 @@ This time, I read books.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** This time, I read.
 - **options:** این بار | ساعت | مدت خیلی طولانی
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0125",
   "sortOrder": 125,
   "levelKey": "A1",
-  "lessonSourceHash": "626db47b28eccc3c97e22e4a1cfb3694cea315b94e774a8672ca08eb80f31481",
+  "lessonSourceHash": "fa62a32c20a7ac600d0418f6989d13bc0f6862e939aca6e8e49dabbb20294b18",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -69,10 +69,25 @@
       "lexicalLemmas": [
         "information"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 2,
       "evidenceQuery": "have the information",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2360390,
+          "text": "I have the information you wanted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2360389,
+          "text": "I have the information you requested.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "have the information",
         "rationale": "Natural collocation in the support question Do you have the information?"
@@ -121,5 +136,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "37d1fc0de912953c4ea0b8c4c433363b546412e59b95767aa945ddfc8dc354de"
+  "planHash": "0fef69b7719f6d75db7fa12f9e8fe7878b9350f525a7c1f5e88727c9a10131a4"
 }

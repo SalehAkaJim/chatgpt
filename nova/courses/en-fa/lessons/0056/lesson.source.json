@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی never را در این درس پیدا کن.",
-      "promptFa": "never در این درس چه معنی‌ای دارد؟",
-      "promptEn": "I never go there.",
-      "config": {
-        "options": [
-          "هرگز",
-          "خیلی",
-          "واقعا"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«خیلی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«واقعا» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "هرگز"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های ava را گوش کن و جواب ben را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی never را در این درس پیدا کن.",
+      "promptFa": "never در این درس چه معنی‌ای دارد؟",
+      "promptEn": "I never go there.",
+      "config": {
+        "options": [
+          "هرگز",
+          "خیلی",
+          "واقعا"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«خیلی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«واقعا» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "هرگز"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -280,11 +280,13 @@
             "«I eat there.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "من هرگز آنجا غذا نمی‌خورم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

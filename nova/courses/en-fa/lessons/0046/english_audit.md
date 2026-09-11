@@ -1,4 +1,4 @@
-<!-- sourceHash: 08c3f3f5b212523914a26396d878630fcd4afaa2c5476ac4504f4d8bd947af32 -->
+<!-- sourceHash: fb6ef7126d9de14e6bd07742f272205f2c0b27492fb71dab2c467812f78aa060 -->
 # English Audit — EN-A1-L-0046
 
 **Lesson:** She says hello
@@ -34,13 +34,13 @@ He says hello too.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** She says hello.
 - **options:** گفتن، بیان کردن | خواندن | گفتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

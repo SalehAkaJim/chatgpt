@@ -1,4 +1,4 @@
-<!-- sourceHash: 3c692c73cc31871c456a24e420e005ff07b95f83dc2582585001e6a6c2683467 -->
+<!-- sourceHash: b7c5e32b43a0def9344bf76c15098a1477cddf6172813f35e657bab0fc262f25 -->
 # English Audit — EN-A1-L-0071
 
 **Lesson:** My own book
@@ -30,7 +30,7 @@ And that book?
 That is your own book.
 
 - **Speech target:** That is your own book.
-- **Accepted speech:** That is your own book.
+- **Accepted speech:** That is your own book. | That's your own book.
 
 ## Activities
 
@@ -57,7 +57,7 @@ That is your own book.
 **A06 · speak**
 
 - **textEn:** That is your own book.
-- **acceptedAnswersEn:** That is your own book.
+- **acceptedAnswersEn:** That is your own book. | That's your own book.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

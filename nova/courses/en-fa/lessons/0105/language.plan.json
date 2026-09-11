@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0105",
   "sortOrder": 105,
   "levelKey": "A1",
-  "lessonSourceHash": "42065b1ba4dd79244b497c00943e74aa01a54edceae0453c5c8dd2a0c0e6d235",
+  "lessonSourceHash": "ae80ee5c307be1c57dfca7521ec7b4694a4f7f44155d2f2c0040a66693291b8c",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,37 @@
       "constructionKeys": [
         "EN-CONSTR-0105-CHANGE"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "is a change",
+      "examples": [
+        {
+          "id": 8047875,
+          "text": "Mennad is a changed man.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 6469317,
+          "text": "Sami is a changed man.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 4666991,
+          "text": "Tom is a changed man.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "fallback": {
+        "query": "is a change",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "is a change",
@@ -65,10 +90,32 @@
       "lexicalLemmas": [
         "change"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "is a change",
-      "examples": [],
+      "examples": [
+        {
+          "id": 8047875,
+          "text": "Mennad is a changed man.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 6469317,
+          "text": "Sami is a changed man.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 4666991,
+          "text": "Tom is a changed man.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "is a change",
         "rationale": "Exact bounded learner target collocation around the target word."
@@ -98,5 +145,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "66b69fad5ead29721a8d375c29256c33548e1d1316fa65b212df3ff84f927734"
+  "planHash": "3424450088bcd60ecf3991588bf01d01006d6085cd9d1ad4ce5435002bec4f60"
 }

@@ -1,4 +1,4 @@
-<!-- sourceHash: f5dc333c4f55add0e8363e3b21d1572aa6b5e8045fffca576079aa6d10fe1255 -->
+<!-- sourceHash: 275a3f3f775c4556add8ab27239921e3f92452fe7361167f267a5e472dbf2a49 -->
 # English Audit — EN-A1-L-0089
 
 **Lesson:** Number five
@@ -34,13 +34,13 @@ Room number two.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Table number five.
 - **options:** شماره | شب | پول
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

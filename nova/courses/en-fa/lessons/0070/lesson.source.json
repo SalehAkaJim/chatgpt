@@ -163,33 +163,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی old را پیدا کن.",
-      "promptFa": "old اینجا چه معنی‌ای دارد؟",
-      "promptEn": "That man is old.",
-      "config": {
-        "options": [
-          "مسن",
-          "کوچک",
-          "جدید"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "هدف نیست.",
-            "برعکس هدف است."
-          ],
-          "correctFa": "مسن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های leo را گوش کن و جواب liam را بگو.",
@@ -217,6 +190,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی old را پیدا کن.",
+      "promptFa": "old اینجا چه معنی‌ای دارد؟",
+      "promptEn": "That man is old.",
+      "config": {
+        "options": [
+          "مسن",
+          "کوچک",
+          "جدید"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "هدف نیست.",
+            "برعکس هدف است."
+          ],
+          "correctFa": "مسن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -295,11 +295,13 @@
             "نامربوط است."
           ],
           "correctFa": "این مرد مسن است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

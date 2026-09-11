@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی same را پیدا کن.",
-      "promptFa": "same در این درس چه معنی‌ای دارد؟",
-      "promptEn": "The same book.",
-      "config": {
-        "options": [
-          "همان",
-          "متفاوت",
-          "جدید"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "برعکس هدف است.",
-            "هدف این درس نیست."
-          ],
-          "correctFa": "همان"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های leo را گوش کن و جواب liam را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی same را پیدا کن.",
+      "promptFa": "same در این درس چه معنی‌ای دارد؟",
+      "promptEn": "The same book.",
+      "config": {
+        "options": [
+          "همان",
+          "متفاوت",
+          "جدید"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "برعکس هدف است.",
+            "هدف این درس نیست."
+          ],
+          "correctFa": "همان"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -280,11 +280,13 @@
             "نامربوط است."
           ],
           "correctFa": "این همان کتاب است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

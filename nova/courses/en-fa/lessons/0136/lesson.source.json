@@ -122,7 +122,8 @@
       "audioRequired": true,
       "speechTargetEn": "Yes. It is a good idea.",
       "acceptedSpeechEn": [
-        "Yes. It is a good idea."
+        "Yes. It is a good idea.",
+        "Yes. It's a good idea."
       ]
     },
     {
@@ -317,11 +318,12 @@
             "این جمله درباره مدت پیاده‌روی است."
           ],
           "correctFa": "The bus is a good idea too."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -338,7 +340,8 @@
               "contrastReasonFa": "مدت پیاده‌روی را می‌گوید، نه نظر درباره ایده را."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

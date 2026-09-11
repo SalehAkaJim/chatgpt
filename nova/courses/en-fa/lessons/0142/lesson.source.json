@@ -10,7 +10,7 @@
   "descriptionFa": "با morning درباره یک کار روزانه در صبح صحبت کن.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0142",
   "outcomeFa": "morning را به معنی «صبح» در جمله‌های ساده درباره برنامه روزانه به کار ببری.",
-  "scenarioFa": "سارا و روبی در ادامه داستان گروه پیاده روی درباره موضوع این درس گفت‌وگو می‌کنند.",
+  "scenarioFa": "در ایستگاه اتوبوس، روبی می‌گوید «روبی چه زمانی کار می‌کند؟» و سارا پاسخ می‌دهد «او صبح کار می‌کند.».",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0141"
   ],
@@ -53,7 +53,7 @@
       ],
       "continuesLessonKey": "EN-A1-L-0136",
       "settingFa": "ایستگاه اتوبوس",
-      "storyBeatFa": "سارا و روبی در ادامه داستان گروه پیاده روی درباره موضوع این درس گفت‌وگو می‌کنند."
+      "storyBeatFa": "روبی با «روبی چه زمانی کار می‌کند؟» گفت‌وگو را شروع می‌کند، سارا می‌گوید «او صبح کار می‌کند.»؛ بعد روبی می‌گوید «و چه زمانی درس می‌خواند؟» و سارا با «او صبح هم درس می‌خواند.» پاسخ می‌دهد."
     },
     "reviewLinks": [
       {
@@ -265,11 +265,12 @@
             "«She studies in the afternoon.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "او صبح کار می‌کند."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "skillFocus": "listening",
         "distractorAudit": {
           "reviewerType": "model",
@@ -287,7 +288,8 @@
               "contrastReasonFa": "معنی یا اطلاعات جمله فرق دارد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -309,11 +311,12 @@
             "«She studies in the afternoon.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "She works in the morning."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -330,7 +333,8 @@
               "contrastReasonFa": "معنی هدف را عوض می‌کند."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -352,11 +356,12 @@
             "«She works in the afternoon too.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "She studies in the morning too."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -373,7 +378,8 @@
               "contrastReasonFa": "اطلاعات هدف را عوض می‌کند."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

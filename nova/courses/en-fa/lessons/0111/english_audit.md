@@ -1,4 +1,4 @@
-<!-- sourceHash: 70056fcbbbc1c849cbe9b525203ca2aa0783411dcfff2ea62ce3697bd8a57390 -->
+<!-- sourceHash: ffc3d9ca74c1e3605b67ebc069d3e5eb5f5bafcc2984238fdbfbbed8e1571160 -->
 # English Audit — EN-A1-L-0111
 
 **Lesson:** What do you mean?
@@ -34,13 +34,13 @@ Yes. I mean this part.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** What do you mean?
 - **options:** منظور داشتن | باور کردن | باز بودن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

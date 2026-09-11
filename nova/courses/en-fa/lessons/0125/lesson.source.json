@@ -314,11 +314,12 @@
             "این پاسخ فقط رابطه دوستی را بیان می‌کند."
           ],
           "correctFa": "این اطلاعات برای مایا هم هست."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -335,7 +336,8 @@
               "contrastReasonFa": "جمله طبیعی است، اما رابطه دوستی را می‌گوید و پاسخ موقعیت اطلاعات نیست."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

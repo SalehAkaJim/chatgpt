@@ -151,33 +151,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی feel را پیدا کن.",
-      "promptFa": "feel در این درس چه معنی‌ای دارد؟",
-      "promptEn": "I feel good.",
-      "config": {
-        "options": [
-          "احساس کردن",
-          "دیدن",
-          "گذاشتن"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "احساس کردن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های لیو را گوش کن و جواب لیام را بگو.",
@@ -205,6 +178,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی feel را پیدا کن.",
+      "promptFa": "feel در این درس چه معنی‌ای دارد؟",
+      "promptEn": "I feel good.",
+      "config": {
+        "options": [
+          "احساس کردن",
+          "دیدن",
+          "گذاشتن"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "احساس کردن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -288,11 +288,13 @@
             "«I feel happy.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "احساس خستگی می‌کنم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

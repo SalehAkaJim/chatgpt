@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی many را در این درس پیدا کن.",
-      "promptFa": "many در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Many books.",
-      "config": {
-        "options": [
-          "زیاد",
-          "جدید",
-          "قدیمی"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«جدید» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«قدیمی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "زیاد"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های iris را گوش کن و جواب nina را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی many را در این درس پیدا کن.",
+      "promptFa": "many در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Many books.",
+      "config": {
+        "options": [
+          "زیاد",
+          "جدید",
+          "قدیمی"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«جدید» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«قدیمی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "زیاد"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0107",
   "sortOrder": 107,
   "levelKey": "A1",
-  "lessonSourceHash": "75417cfc901f582d94fd68fec0db5da741ca80eb58f17d76b18cdfab7c2594a7",
+  "lessonSourceHash": "46ba031beb0b5dfc9aa8c3aa41ac19b08f2448b4a53b32148bfafcf288f29a04",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0107-POINT"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this point is the",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "this point is the",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "this point is the",
@@ -117,5 +120,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "02d47003002a32e84b4e1375d6e229a6d8857621a42e8dad2a21b3e36aaa065a"
+  "planHash": "9fc4df5a35d4ae940a373c4e73cd6930020ebad5b75321e6b8a186ab03146067"
 }

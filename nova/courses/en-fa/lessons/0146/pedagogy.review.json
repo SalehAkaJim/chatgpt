@@ -2,7 +2,7 @@
   "version": 1,
   "reviewerType": "model",
   "reviewedAt": "2026-09-11",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0146 staging draft; not an independent human or real-learner test.",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0146; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 5,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "A01 introduces plan, A02 exposes the full dialogue, and dependent listening/reconstruction/retrieval follows only in A03, A06, A07 and A10."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 5,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 5,
-      "evidence": "Canonical arc EN-A1-LIBRARY uses its declared cast (لیو، لیام) and respects Course return spacing."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 4,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 5,
-      "evidence": "The Lesson combines its current target with explicit spaced retrieval of previously taught language; no real learner test is claimed."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; this is model/editor review of order, clarity and load."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     },
     "runtimeAssetGrounding": {
       "score": 5,
@@ -55,7 +55,8 @@
     "Only plan in the selected reference sense is assessed as new.",
     "idea is review-only; renewed mastery is not claimed.",
     "Generated audio pronunciation/prosody is not evaluated at this text stage.",
-    "Runtime behavior and paid audio still require the permanent CI/Production pipeline."
+    "Runtime behavior and paid audio still require the permanent CI/Production pipeline.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "CEFRJ-GRAM-146 and accepted speech strings checked.",
@@ -68,9 +69,19 @@
     "Due item idea is explicitly review-only.",
     "Participant pair and learner role differ from adjacent lessons.",
     "Canonical story arc, cast, learner role, continuation and minimum return spacing were rechecked against course.source.json.",
-    "Spaced retrieval was checked against previously taught canonical targets; overdue targets are recalled through hidden-answer learner production."
+    "Spaced retrieval was checked against previously taught canonical targets; overdue targets are recalled through hidden-answer learner production.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0146",
-  "sourceHash": "9affe3a7dbe9d66b07d3306321e41951c970cb46f36685543b18d55557e59267",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "3697679c0579219ad57040d26a437b1ce010e306e45e6723eea195b04c1c9d9f",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "duplicateScoring",
+      "speechEquivalence",
+      "storyGrounding"
+    ]
+  }
 }

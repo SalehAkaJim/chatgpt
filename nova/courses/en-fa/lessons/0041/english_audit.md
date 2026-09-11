@@ -1,4 +1,4 @@
-<!-- sourceHash: 3a078201542ad648254f82dc52d4d997142f67e301cd048e3f43430670b238bd -->
+<!-- sourceHash: 21866cdc2fd63f78873b6eebc9d69f34a4999e84284dd18062e77405b97ffcdc -->
 # English Audit — EN-A1-L-0041
 
 **Lesson:** I make coffee
@@ -36,13 +36,13 @@ I make tea.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I make coffee.
 - **options:** انجام دادن | خواندن | گفتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

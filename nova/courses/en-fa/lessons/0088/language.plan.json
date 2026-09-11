@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0088",
   "sortOrder": 88,
   "levelKey": "A1",
-  "lessonSourceHash": "41a857507bd4798ec2810f1b2caa537f8e10e2e1dcbf16457403afb0325d3172",
+  "lessonSourceHash": "0090a0fcf51128de1544a8e8f30238d989cd67c569440ce76602edc0beee2540",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -93,32 +93,10 @@
       "lexicalLemmas": [
         "leave"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "at seven",
-      "examples": [
-        {
-          "id": 7920844,
-          "text": "I dine at seven.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "AlanF_US"
-        },
-        {
-          "id": 2393896,
-          "text": "They dine at seven.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "kuma"
-        },
-        {
-          "id": 10569629,
-          "text": "He arrived home at seven.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "sundown"
-        }
-      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "i leave at seven",
+      "examples": [],
       "fallback": {
         "query": "i leave at seven",
         "rationale": "Exact changed-context transfer target."
@@ -129,5 +107,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "d4031f6333c0d05f57943ac91aafb2aadf86efabf6decba1838b2ad8613ffc8a"
+  "planHash": "0c4aeb1bf94740a5b3acf3f2ed3435e62483ffbbc9c793e60d6be5385c39095f"
 }

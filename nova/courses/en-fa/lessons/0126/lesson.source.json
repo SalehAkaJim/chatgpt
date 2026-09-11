@@ -305,11 +305,12 @@
             "این پاسخ زمان امروز را می‌گوید."
           ],
           "correctFa": "سه روز پیش بود."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -326,7 +327,8 @@
               "contrastReasonFa": "جمله طبیعی است، اما امروز را بیان می‌کند و فاصله سه روزه گذشته را نمی‌گوید."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

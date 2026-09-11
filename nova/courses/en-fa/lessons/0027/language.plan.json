@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0027",
   "sortOrder": 27,
   "levelKey": "A1",
-  "lessonSourceHash": "68cfc51c77ce98b20cea8363c1dcb16322868a2a2bbf9709efb70bf8fb71b7cc",
+  "lessonSourceHash": "6ac6bbcc0c56d7ccfcc9ec62f0315793d4f3f7b84ff8bfc58a992cb43b84f5ac",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -104,32 +104,10 @@
       "constructionKeys": [
         "EN-CONSTR-SHE-IS-NAME"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "he is",
-      "examples": [
-        {
-          "id": 13788367,
-          "text": "He is fantastic.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Just_Balls"
-        },
-        {
-          "id": 13627422,
-          "text": "He is addicted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ahmd"
-        },
-        {
-          "id": 13530112,
-          "text": "He is Amazigh.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Abdaresrif"
-        }
-      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "she is maya he is alex",
+      "examples": [],
       "fallback": {
         "query": "she is maya he is alex",
         "rationale": "He/She is + familiar proper name is a transparent A1 identification use of the selected CEFR-J he/she is pattern. Proper names are contextual labels rather than lexical teaching targets."
@@ -145,32 +123,10 @@
       "constructionKeys": [
         "EN-CONSTR-HE-IS-NAME"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "he is",
-      "examples": [
-        {
-          "id": 13788367,
-          "text": "He is fantastic.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Just_Balls"
-        },
-        {
-          "id": 13627422,
-          "text": "He is addicted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ahmd"
-        },
-        {
-          "id": 13530112,
-          "text": "He is Amazigh.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Abdaresrif"
-        }
-      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "she is maya he is alex",
+      "examples": [],
       "fallback": {
         "query": "she is maya he is alex",
         "rationale": "He/She is + familiar proper name is a transparent A1 identification use of the selected CEFR-J he/she is pattern. Proper names are contextual labels rather than lexical teaching targets."
@@ -181,5 +137,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "dd939b7412b06db58e9b334e1717bc25f4de7e68fff041f75fd50f659186ad2b"
+  "planHash": "302cd4e9736b77542421c48346f16fc4554ace917990556bfd07b0f4f9580ce8"
 }

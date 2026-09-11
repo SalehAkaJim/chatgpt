@@ -1,4 +1,4 @@
-<!-- sourceHash: 0c8680ac2e0b282b40e7a4f3b03e5d51964aa8f400db84b81830b044982a3fa6 -->
+<!-- sourceHash: fb006c8440bbc82e9695688f0d3abec2ed6f05bdc76c7f3b4509c7f98c54ba92 -->
 # English Audit — EN-A1-L-0034
 
 **Lesson:** I also like coffee
@@ -37,13 +37,13 @@ I also read books.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I also like coffee.
 - **options:** من هم همین علاقه را دارم | من این علاقه را ندارم | فقط روبی این علاقه را دارد
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

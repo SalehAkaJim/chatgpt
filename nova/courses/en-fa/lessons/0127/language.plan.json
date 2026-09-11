@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0127",
   "sortOrder": 127,
   "levelKey": "A1",
-  "lessonSourceHash": "5403404bb29ac960df04aa59228cb55524917f5ddf6367076bb45aeb4da5a4c3",
+  "lessonSourceHash": "f60d963a4321d15bbe972b6d35b0c83e2bf9de61c230636bec55949f69aefc84",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -71,10 +71,18 @@
       "lexicalLemmas": [
         "talk"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 1,
       "evidenceQuery": "can we talk now",
-      "examples": [],
+      "examples": [
+        {
+          "id": 5670752,
+          "text": "Can we talk now?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Airvian"
+        }
+      ],
       "fallback": {
         "query": "can we talk now",
         "rationale": "Natural A1 question using talk in the same bounded speak/exchange-thoughts sense before the learner responds."
@@ -104,5 +112,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "d5f59cac782fda6c7798bb82e7fcd7e03e941f08170fcb38a1d9b5a28a22c27a"
+  "planHash": "3b44a9d6eac6b48382bf623a7105f7a9b8fa492da4ca35c6373aeb509bb29c59"
 }

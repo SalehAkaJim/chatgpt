@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0057",
   "sortOrder": 57,
   "levelKey": "A1",
-  "lessonSourceHash": "3300900d05a6ed76216f8086f2e7e393b84baca54ef1a70b4264b59e4f3218e9",
+  "lessonSourceHash": "6fa60eb4cc1b21fefd83e67f3e3428b741b7b7313b85b2a6e93e6f22528b5aee",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0057-LIFE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "life here is",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "life here is",
+        "rationale": "Explicit bounded target-collocation fallback for this authored turn."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "life here is",
@@ -98,5 +101,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "305e252da94684c42eb4cfeeb502d0594a8bdd6f901682c44d9d903d363cfcf9"
+  "planHash": "58c81828ac1b758410a7c72adbbd7dd1a8007e6a9ff1627641a1c057eeabffc6"
 }

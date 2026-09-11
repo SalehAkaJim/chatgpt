@@ -1,4 +1,4 @@
-<!-- sourceHash: a1f2ed30ebba42b1e8acd5b2370fc1e6f232b624e5553015073527cce6405698 -->
+<!-- sourceHash: bd1bef26e7ef80ac7a19760875c1179754545b8bfa9b87e9a29c938518d5c4ac -->
 # English Audit — EN-A1-L-0113
 
 **Lesson:** I believe you
@@ -30,7 +30,7 @@ So six is right?
 Yes. I believe that's right.
 
 - **Speech target:** Yes. I believe that's right.
-- **Accepted speech:** Yes. I believe that's right.
+- **Accepted speech:** Yes. I believe that's right. | Yes. I believe that is right.
 
 ## Activities
 
@@ -57,7 +57,7 @@ Yes. I believe that's right.
 **A06 · speak**
 
 - **textEn:** Yes. I believe that's right.
-- **acceptedAnswersEn:** Yes. I believe that's right.
+- **acceptedAnswersEn:** Yes. I believe that's right. | Yes. I believe that is right.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

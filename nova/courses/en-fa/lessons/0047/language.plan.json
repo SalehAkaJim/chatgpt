@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0047",
   "sortOrder": 47,
   "levelKey": "A1",
-  "lessonSourceHash": "a09c549d7dd7682a3fc859926fb12f9cefa2166755984c384fba4539081a5c00",
+  "lessonSourceHash": "463479175defb043f3d0aac17e4f983d09f17c7d158ac3a458891cc19787c9e7",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -129,10 +129,32 @@
       "lexicalLemmas": [
         "way"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 4,
       "evidenceQuery": "and that way",
-      "examples": [],
+      "examples": [
+        {
+          "id": 10356466,
+          "text": "Drink the coffee with slow sips so it lasts longer, and that way you can enjoy it more.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 10358562,
+          "text": "He drinks the coffee with slow sips so it lasts longer, and that way he can enjoy it more.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 7964215,
+          "text": "And when he had looked about this way and that way, and saw no one there, he slew the Egyptian and hid him in the sand.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "carlosalberto"
+        }
+      ],
       "fallback": {
         "query": "and that way",
         "rationale": "Exact target-collocation fallback for this bounded A1 use."
@@ -162,5 +184,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "df49f853e364f3d1812c634a7bc055099f3589843b5e7be792ac266769c3acfc"
+  "planHash": "733936d430f24c1bef093c11add6bf47b6999e16268fa06d5eb2b2ba78726317"
 }

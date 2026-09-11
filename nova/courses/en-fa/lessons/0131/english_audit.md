@@ -1,4 +1,4 @@
-<!-- sourceHash: e581fc9e5a49b5cf01c6c3a4e614f65d94adbbc6aa574efe9ad9cdaa8fe41e87 -->
+<!-- sourceHash: 7f62502c3b2feb72f94047aa716c4ea05844976b086d8c6b97040c900f2604b3 -->
 # English Audit — EN-A1-L-0131
 
 **Lesson:** It takes an hour
@@ -34,13 +34,13 @@ The walk takes an hour too.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** It takes an hour
 - **options:** ساعت | روز | دقیقه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -138,7 +138,8 @@
       "audioRequired": true,
       "speechTargetEn": "It is a long day.",
       "acceptedSpeechEn": [
-        "It is a long day."
+        "It is a long day.",
+        "It's a long day."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -146,33 +147,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی long را پیدا کن.",
-      "promptFa": "long در این درس چه معنی‌ای دارد؟",
-      "promptEn": "A long day.",
-      "config": {
-        "options": [
-          "طولانی از نظر زمان",
-          "کوتاه",
-          "سریع"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "برعکس معنی هدف است.",
-            "هدف این درس نیست."
-          ],
-          "correctFa": "طولانی از نظر زمان"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -201,6 +175,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی long را پیدا کن.",
+      "promptFa": "long در این درس چه معنی‌ای دارد؟",
+      "promptEn": "A long day.",
+      "config": {
+        "options": [
+          "طولانی از نظر زمان",
+          "کوتاه",
+          "سریع"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "برعکس معنی هدف است.",
+            "هدف این درس نیست."
+          ],
+          "correctFa": "طولانی از نظر زمان"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -280,11 +281,13 @@
             "نامربوط است."
           ],
           "correctFa": "امروز روز طولانی‌ای است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -296,7 +299,8 @@
         "mode": "retrieval",
         "textEn": "It is a long day.",
         "acceptedAnswersEn": [
-          "It is a long day."
+          "It is a long day.",
+          "It's a long day."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

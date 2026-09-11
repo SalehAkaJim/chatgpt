@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0040",
   "sortOrder": 40,
   "levelKey": "A1",
-  "lessonSourceHash": "eadf884e46f4e8ab495778d18ae93ac5cf46e136fef76bfb8251794d46f71766",
+  "lessonSourceHash": "77646cddd85fd17e0995321ef2f40c9ce259ac96fe9f71f64c1d3deaa386a380",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -91,7 +91,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "yes i know this book",
+      "evidenceQuery": "i know this name",
       "examples": [],
       "fallback": {
         "query": "Yes. I know this book",
@@ -154,32 +154,10 @@
       "lexicalLemmas": [
         "know"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "i know this",
-      "examples": [
-        {
-          "id": 2245929,
-          "text": "I know this.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 13156746,
-          "text": "I know this melody.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Sifaks"
-        },
-        {
-          "id": 12898811,
-          "text": "I know this painter.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "araneo"
-        }
-      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "i know this name",
+      "examples": [],
       "fallback": {
         "query": "I know this name",
         "rationale": "Natural bounded transfer for know with a familiar personal-name noun."
@@ -190,5 +168,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "6433ee0af3f7802ec1d1a60a308db5bb56af944e35eac8d673ee5dcf0e52ad70"
+  "planHash": "188bc700515fa120f9aede0527b0c070758d5377811c0787aa4307fc4ed13c5b"
 }

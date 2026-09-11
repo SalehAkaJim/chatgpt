@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0116",
   "sortOrder": 116,
   "levelKey": "A1",
-  "lessonSourceHash": "24b2b0c856821e7ac83cda7451f22ce8601b96e71756dbe158560a3b3be5b396",
+  "lessonSourceHash": "1946c47ce598418f9b20504593ad79baac9535c1064814f819dfec97d6d7874b",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,37 @@
       "constructionKeys": [
         "EN-CONSTR-0116-OPEN"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "door is open",
+      "examples": [
+        {
+          "id": 9162118,
+          "text": "Your door is open.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8391141,
+          "text": "The door is opening.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6196183,
+          "text": "My door is open.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "fallback": {
+        "query": "door is open",
+        "rationale": "Exact deterministic target-collocation window from The door is open for the bounded adjective sense meaning not closed."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "door is open",
@@ -65,10 +90,32 @@
       "lexicalLemmas": [
         "open"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "door is open",
-      "examples": [],
+      "examples": [
+        {
+          "id": 9162118,
+          "text": "Your door is open.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8391141,
+          "text": "The door is opening.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6196183,
+          "text": "My door is open.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "door is open",
         "rationale": "Exact deterministic target-collocation window from The door is open for the bounded adjective sense meaning not closed."
@@ -98,5 +145,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "fc3db4143e579fd009d854ff9b877ce67e0ea7f0579571f45ca5e0bbeef1e7a2"
+  "planHash": "0e0d3a9b68ceed73818615e8bd434fa1e240f7fe55b822a44bf0c06f4bada5b6"
 }

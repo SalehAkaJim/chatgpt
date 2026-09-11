@@ -267,11 +267,13 @@
             "این سوال درباره اهل کجا بودن است."
           ],
           "correctFa": "الگوی درخواست قبلی حالا با یک نوشیدنی استفاده شده."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
-        "evidenceKind": "recognition_or_selection",
-        "learningDemand": "transfer"
+        "evidenceKind": "practice_only",
+        "learningDemand": "transfer",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

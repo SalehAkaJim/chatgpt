@@ -1,4 +1,4 @@
-<!-- sourceHash: 995c2e5d91a92daef88ad0520140d7bb9afbc2639d2067c92c8f16fd17e0f3a2 -->
+<!-- sourceHash: 18f9b0f77b70ddb8e9206742bd1fc166d2795aa84a63d4627e74ff403370c3e5 -->
 # English Audit — EN-A1-L-0099
 
 **Lesson:** The start is at nine
@@ -30,17 +30,17 @@ Is it a good start?
 It is a good start.
 
 - **Speech target:** It is a good start.
-- **Accepted speech:** It is a good start.
+- **Accepted speech:** It is a good start. | It's a good start.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** The start is at nine.
 - **options:** شروع | پایان | تماس
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -57,7 +57,7 @@ It is a good start.
 **A06 · speak**
 
 - **textEn:** It is a good start.
-- **acceptedAnswersEn:** It is a good start.
+- **acceptedAnswersEn:** It is a good start. | It's a good start.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

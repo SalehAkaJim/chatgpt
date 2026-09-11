@@ -1,4 +1,4 @@
-<!-- sourceHash: ae6cf2f80411b4395a5220cc205fa0a5df5203a0029b0a58fa7006b11f7b9e0f -->
+<!-- sourceHash: 82d8eaefb5586e8682e85cd01471cf4ae612ba05a83091b5636014a5bce61d63 -->
 # English Audit — EN-A1-L-0043
 
 **Lesson:** Read, then help
@@ -36,13 +36,13 @@ Read, then help.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Then I help.
 - **options:** بعد، سپس | خیلی | واقعا
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

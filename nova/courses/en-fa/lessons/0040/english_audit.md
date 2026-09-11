@@ -1,4 +1,4 @@
-<!-- sourceHash: eadf884e46f4e8ab495778d18ae93ac5cf46e136fef76bfb8251794d46f71766 -->
+<!-- sourceHash: 77646cddd85fd17e0995321ef2f40c9ce259ac96fe9f71f64c1d3deaa386a380 -->
 # English Audit — EN-A1-L-0040
 
 **Lesson:** I know this book
@@ -36,13 +36,13 @@ I know this name.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Yes. I know this book.
 - **options:** دانستن | خواندن | گفتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

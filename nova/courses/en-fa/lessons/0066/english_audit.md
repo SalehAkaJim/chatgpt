@@ -1,4 +1,4 @@
-<!-- sourceHash: 018c8e7d94479273ddbac1adc030c40a5eab64b183c13de5a9062981b457ee48 -->
+<!-- sourceHash: d0791081aafd65289c57513407f8a11a18bbf521832aaa3754281440d7c1f066 -->
 # English Audit — EN-A1-L-0066
 
 **Lesson:** I always read
@@ -34,13 +34,13 @@ I always read here.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I always read.
 - **options:** همیشه | هرگز | گاهی
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

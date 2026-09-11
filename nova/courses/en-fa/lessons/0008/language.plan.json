@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0008",
   "sortOrder": 8,
   "levelKey": "A1",
-  "lessonSourceHash": "24a2433d5e3da92176db9b0c4a6f549922976fd2a97b538c76203ef57c2a3ab9",
+  "lessonSourceHash": "c625b5741a4553d5a4e854e784276ce6050e2c01659f17cfd2e29d69c6529836",
   "enforceFromSortOrder": 25,
   "enforced": false,
   "grammarEvidence": [
@@ -120,32 +120,10 @@
       "constructionKeys": [
         "EN-CONSTR-ON-THE-TABLE"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "on the table",
-      "examples": [
-        {
-          "id": 13718454,
-          "text": "What is on the table?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Th0th"
-        },
-        {
-          "id": 13698134,
-          "text": "I sit on the table.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "ddnktr"
-        },
-        {
-          "id": 12891527,
-          "text": "They fell on the table.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ussis"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null,
       "fallbackMatch": null
     },
@@ -158,40 +136,19 @@
       "lexicalLemmas": [
         "table"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "on the table",
-      "examples": [
-        {
-          "id": 13718454,
-          "text": "What is on the table?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Th0th"
-        },
-        {
-          "id": 13698134,
-          "text": "I sit on the table.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "ddnktr"
-        },
-        {
-          "id": 12891527,
-          "text": "They fell on the table.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ussis"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null,
       "fallbackMatch": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0008: construction EN-CONSTR-WHERES-MY has no confident CEFR-J grammar match"
+    "EN-A1-L-0008: construction EN-CONSTR-WHERES-MY has no confident CEFR-J grammar match",
+    "EN-A1-L-0008: target collocation 'on the table' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "218055187725c05036133dcc520744c5247f7a5975653e9853359d5c301991c5"
+  "planHash": "85e42bde6d40f311bf7a45fadcab49b003a4e9d77b7e9c7f7f206e13893a8c8c"
 }

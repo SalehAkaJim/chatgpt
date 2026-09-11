@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0077",
   "sortOrder": 77,
   "levelKey": "A1",
-  "lessonSourceHash": "3e2e0f4d5f94bb507b30d6984fdf033f18de5ba05bef3c470cd713f8cbed1020",
+  "lessonSourceHash": "addac5034b2da92451b138122cb8ed042002932df16e9238509ce9fcd3da4461",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -72,12 +72,15 @@
       "constructionKeys": [
         "EN-CONSTR-0077-THING"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "this thing is hard",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "this thing is hard",
+        "rationale": "Exact learner target for this bounded Lesson use."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "this thing is hard",
@@ -123,5 +126,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "6f1f3fe0653481c4caea3499ff48a87bb85959f9f67e55092f131a74fbd63d58"
+  "planHash": "18a43e4b4c68ca8e2a8b73fbb2ba75590cd6425083d99c14107c9d32bb31cc67"
 }

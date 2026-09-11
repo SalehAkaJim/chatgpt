@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0004",
   "sortOrder": 4,
   "levelKey": "A1",
-  "lessonSourceHash": "5bb7b00e8ddf1e93ba7438918d1f3b11aa60d2a077c4198d685a49e049da7ea9",
+  "lessonSourceHash": "27a17c4d1be2aa26ad56a1e27afb303974107727f973df9e3653a9b48c784869",
   "enforceFromSortOrder": 25,
   "enforced": false,
   "grammarEvidence": [
@@ -53,18 +53,10 @@
       "lexicalLemmas": [
         "repeat"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 1,
-      "evidenceQuery": "can you repeat that please",
-      "examples": [
-        {
-          "id": 3329632,
-          "text": "Can you repeat that, please?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null,
       "fallbackMatch": null
     }
@@ -72,5 +64,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "0483a65c4f1ec7fa2837795215676aac13b9212ebec626722da26d842ae1cc82"
+  "planHash": "d807d0e4ad7b8d72de636cb688b2b68a8ad74908b56fb813fd53ff3a5e193ede"
 }

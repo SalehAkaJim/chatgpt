@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0102; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0102; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "The Lesson keeps one lexical target, then moves from recognition and guided dialogue to changed-context retrieval."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 4,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "The scenario gives الکس and مایا a concrete reason to use the target twice."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 4,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 5,
-      "evidence": "nothing recurs through meaning recognition, dialogue, transfer choice, and hidden spoken retrieval."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 5,
@@ -42,22 +42,32 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; confidence about subjective learner experience remains intentionally limited."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "The review covers only the bounded A1 target sense of nothing.",
-    "Generated audio prosody is not evaluated at this text stage."
+    "Generated audio prosody is not evaluated at this text stage.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "English turns were checked for contextual plausibility.",
     "Persian wording was checked for meaning consistency and Persian orthography.",
     "The final activity requires hidden retrieval rather than answer copying.",
-    "Story recurrence is spaced by 5 Lessons and the learner role/story beat is varied."
+    "Story recurrence is spaced by 5 Lessons and the learner role/story beat is varied.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0102",
-  "sourceHash": "7b12aef16bb77d171c0780e091bc12dfca3a3b21359fb1483abda5a1f27b91a7",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "704c2bbd442526b7e1dcf65f4a29cd452388966b24254c7cb8373e3520e37d56",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure",
+      "duplicateScoring"
+    ]
+  }
 }

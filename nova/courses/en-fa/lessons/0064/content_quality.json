@@ -1,33 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0064",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "i use this bag",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0064; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0064; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
@@ -39,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "The object changes while the target verb remains stable across guided and retrieval activities."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 4,
@@ -47,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 5,
@@ -55,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 4,
-        "evidence": "The target is repeated with two familiar objects."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -67,7 +55,7 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
@@ -76,7 +64,8 @@
       "Only the selected service/use sense is assessed.",
       "Audio prosody is not reviewed before text gates pass.",
       "No independent human or real learner test has been performed after quality-v2 remediation.",
-      "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
+      "No independent human or real learner test has been performed after Product Quality v2 naturalness polish.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "use matches the committed verb reference sense.",
@@ -89,11 +78,12 @@
       "Product Quality v2 polish: T01: 'And you?' -> 'Which cup?'.",
       "Product Quality v2 polish: T03: 'And now?' -> 'And the bag?'.",
       "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i use this cup'.",
-      "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i use this bag'."
+      "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i use this bag'.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0064",
-    "sourceHash": "d23b08bec68e26684aea67858f5bc942fe9ff75dc172358014e64cc7924770fd",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "bf3686ada0d29bbb20c903e4fd371865a32169444c572167dad11d14620d52ce",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
     "qualityV2Remediation": {
       "version": 1,
       "date": "2026-09-10",
@@ -113,6 +103,14 @@
         "remove obsolete teacher-scaffolding usage fallback 'say i use this bag'"
       ]
     },
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "dialogueExposure",
+        "duplicateScoring"
+      ]
+    },
     "status": "PASS",
     "average": 4.4,
     "errors": []
@@ -124,5 +122,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "d23b08bec68e26684aea67858f5bc942fe9ff75dc172358014e64cc7924770fd"
+  "sourceHash": "bf3686ada0d29bbb20c903e4fd371865a32169444c572167dad11d14620d52ce"
 }

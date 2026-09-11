@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0099",
   "sortOrder": 99,
   "levelKey": "A1",
-  "lessonSourceHash": "995c2e5d91a92daef88ad0520140d7bb9afbc2639d2067c92c8f16fd17e0f3a2",
+  "lessonSourceHash": "18f9b0f77b70ddb8e9206742bd1fc166d2795aa84a63d4627e74ff403370c3e5",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0099-START"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "the start is at",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "the start is at",
+        "rationale": "Exact bounded learner target collocation generated from the first learner turn."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "is the start",
@@ -103,10 +106,32 @@
       "lexicalLemmas": [
         "start"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "a good start",
-      "examples": [],
+      "examples": [
+        {
+          "id": 13753396,
+          "text": "It is a good start.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "qwertydiy"
+        },
+        {
+          "id": 10339461,
+          "text": "Tom made a good start.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 5754606,
+          "text": "It was a good start.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
       "fallback": {
         "query": "a good start",
         "rationale": "Exact target collocation shared by the second prompt and changed-context learner turn."
@@ -117,5 +142,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "ff1536a6e3f5df292cc7d5518736bdd336fd675130d9790282347108674f3fe3"
+  "planHash": "45226a35f0bcef57f1786b668ee4069824bb71475fa51d7ae69a6c9c4b25cb41"
 }

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0038",
   "sortOrder": 38,
   "levelKey": "A1",
-  "lessonSourceHash": "bae5097e8ff7943893b22d47edb0c3654c3ff7da2291510b527bf1ffd2ac2f91",
+  "lessonSourceHash": "51faeb29677ac61073f4a6dd51bd259a27c14268f25494435014c7400e43734f",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -113,7 +113,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "is the only new book",
+      "evidenceQuery": "ben reads the only new book",
       "examples": [],
       "fallback": {
         "query": "Ben reads the only new book",
@@ -149,32 +149,10 @@
       "lexicalLemmas": [
         "only"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
+      "status": "explicit_fallback",
+      "sampleCount": 0,
       "evidenceQuery": "only one",
-      "examples": [
-        {
-          "id": 1904289,
-          "text": "Take only one.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 13054183,
-          "text": "There is only one.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 12678210,
-          "text": "Only one is missing.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "anzart"
-        }
-      ],
+      "examples": [],
       "fallback": {
         "query": "only one",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: only one"
@@ -204,5 +182,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "544e64a4f8f290294adb5bb53dd78a306f60c619637133eaced02af4e4ed190a"
+  "planHash": "8071df96535fe2a61c06f285f8fba29fbd38b37c20a24c90b9106ff1fa6bfbe6"
 }

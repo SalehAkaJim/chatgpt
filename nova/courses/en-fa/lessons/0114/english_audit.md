@@ -1,4 +1,4 @@
-<!-- sourceHash: 7da7d9ba85df0ce517b99cd91190b2476d3d9e8b4875dcde0e30e3452ccbf02e -->
+<!-- sourceHash: 3bd4d4427f733ea94b3a7ff09fb8d63a7fd2107efe4336eebac510935edab5c1 -->
 # English Audit — EN-A1-L-0114
 
 **Lesson:** There is a job here
@@ -34,13 +34,13 @@ Yes. There is a job at the cafe.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** There is a job here.
 - **options:** شغل | امتیاز بیسبال | باز
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

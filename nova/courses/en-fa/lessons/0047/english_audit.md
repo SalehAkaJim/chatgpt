@@ -1,4 +1,4 @@
-<!-- sourceHash: a09c549d7dd7682a3fc859926fb12f9cefa2166755984c384fba4539081a5c00 -->
+<!-- sourceHash: 463479175defb043f3d0aac17e4f983d09f17c7d158ac3a458891cc19787c9e7 -->
 # English Audit — EN-A1-L-0047
 
 **Lesson:** This way
@@ -34,13 +34,13 @@ That way is good too.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Yes. This way is good.
 - **options:** روش، طریقه | کتاب | اتاق
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: afae17b43e36518c0a27d296e289fc2078ef7887505f873cd35e0c2d6450dfc5 -->
+<!-- sourceHash: 0c6c4dbaf8d92464e57d2c9a518772311442c0d2d9fa7964143fea5f9f52b523 -->
 # English Audit — EN-A1-L-0065
 
 **Lesson:** The same book
@@ -34,13 +34,13 @@ This is the same book.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** The same book.
 - **options:** همان | متفاوت | جدید
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0103; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0103; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "One lexical target moves from recognition through guided dialogue to hidden retrieval."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 4,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "A short cafe queue gives a concrete reason to count one person."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 4,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 5,
-      "evidence": "person recurs across recognition, dialogue, transfer and retrieval."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 4,
@@ -42,22 +42,32 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; subjective learner experience remains unverified."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "The review covers only the bounded A1 target sense of person.",
-    "Generated audio prosody is not evaluated at this text stage."
+    "Generated audio prosody is not evaluated at this text stage.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "English turns were checked for contextual plausibility.",
     "Persian wording and orthography were checked.",
     "The final activity requires hidden retrieval.",
-    "The cafe arc returns after 5 Lessons with a varied learner role/story beat."
+    "The cafe arc returns after 5 Lessons with a varied learner role/story beat.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0103",
-  "sourceHash": "6c81c92b72d54c4a0533e29cbb20e204d134a6ef2f67c253704c2cd2fc5e6694",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "69f020fa38f0e0e46df4e9873134d4d47cdc193c55725baa12ade66d542313df",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure",
+      "duplicateScoring"
+    ]
+  }
 }

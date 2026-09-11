@@ -168,33 +168,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی there is را از جمله پیدا کن.",
-      "promptFa": "There is a book یعنی چی؟",
-      "config": {
-        "options": [
-          "یک کتاب هست",
-          "این کتاب مال منه",
-          "دو کتاب هست"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است؛ there is وجود یک چیز را می‌گوید.",
-            "این جمله مالکیت را نمی‌گوید.",
-            "there is a با یک مورد مفرد آمده است."
-          ],
-          "correctFa": "There is a book یعنی «یک کتاب هست»."
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "promptEn": "There is a book."
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "سؤال‌های مایا را گوش کن و جواب الکس را بگو.",
@@ -223,6 +196,33 @@
         "showResponseText": true,
         "showResponseTranslation": true
       }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی there is را از جمله پیدا کن.",
+      "promptFa": "There is a book یعنی چی؟",
+      "config": {
+        "options": [
+          "یک کتاب هست",
+          "این کتاب مال منه",
+          "دو کتاب هست"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ there is وجود یک چیز را می‌گوید.",
+            "این جمله مالکیت را نمی‌گوید.",
+            "there is a با یک مورد مفرد آمده است."
+          ],
+          "correctFa": "There is a book یعنی «یک کتاب هست»."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      },
+      "promptEn": "There is a book."
     },
     {
       "activityKey": "A03",
@@ -307,11 +307,13 @@
             "این جمله درباره مردم و کتاب است."
           ],
           "correctFa": "There is a pen. همان ساختار را با filler جدید می‌سازد."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

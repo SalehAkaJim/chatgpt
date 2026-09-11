@@ -151,33 +151,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی live را پیدا کن.",
-      "promptFa": "live در این درس چه معنی‌ای دارد؟",
-      "promptEn": "I live near here.",
-      "config": {
-        "options": [
-          "زندگی کردن",
-          "گفتن",
-          "تغییر"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "زندگی کردن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های سارا را گوش کن و جواب روبی را بگو.",
@@ -205,6 +178,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی live را پیدا کن.",
+      "promptFa": "live در این درس چه معنی‌ای دارد؟",
+      "promptEn": "I live near here.",
+      "config": {
+        "options": [
+          "زندگی کردن",
+          "گفتن",
+          "تغییر"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "زندگی کردن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -284,11 +284,13 @@
             "این جمله هدف درس نیست."
           ],
           "correctFa": "بله، نزدیک مدرسه زندگی می‌کنم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

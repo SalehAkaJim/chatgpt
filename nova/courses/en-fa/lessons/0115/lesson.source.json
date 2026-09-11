@@ -118,7 +118,8 @@
       "audioRequired": true,
       "speechTargetEn": "Yes. That's one run.",
       "acceptedSpeechEn": [
-        "Yes. That's one run."
+        "Yes. That's one run.",
+        "Yes. That is one run."
       ]
     },
     {
@@ -138,7 +139,8 @@
       "audioRequired": true,
       "speechTargetEn": "Yes. That's two runs now.",
       "acceptedSpeechEn": [
-        "Yes. That's two runs now."
+        "Yes. That's two runs now.",
+        "Yes. That is two runs now."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -280,11 +282,13 @@
             "این درباره job است."
           ],
           "correctFa": "بله. حالا دو امتیاز شده."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -296,7 +300,8 @@
         "mode": "retrieval",
         "textEn": "Yes. That's two runs now.",
         "acceptedAnswersEn": [
-          "Yes. That's two runs now."
+          "Yes. That's two runs now.",
+          "Yes. That is two runs now."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

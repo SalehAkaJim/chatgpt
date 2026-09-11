@@ -1,4 +1,4 @@
-<!-- sourceHash: 3219737460dd70a50ce357aade5e98c1049cb69f705c1b4ab1dbcbe27c673fef -->
+<!-- sourceHash: 1aec8363c1efeeaa17d738d0662663215f53aeba14207bc0a77a75b7693767a0 -->
 # English Audit — EN-A1-L-0140
 
 **Lesson:** Ask about the time
@@ -38,13 +38,13 @@ Ask about the room too.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Ask about the time
 - **options:** پرسیدن | گفتن | به یاد داشتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

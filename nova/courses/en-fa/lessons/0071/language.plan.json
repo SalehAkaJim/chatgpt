@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0071",
   "sortOrder": 71,
   "levelKey": "A1",
-  "lessonSourceHash": "3c692c73cc31871c456a24e420e005ff07b95f83dc2582585001e6a6c2683467",
+  "lessonSourceHash": "b7c5e32b43a0def9344bf76c15098a1477cddf6172813f35e657bab0fc262f25",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0071-OWN"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "is my own book",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "is my own book",
+        "rationale": "Exact target-collocation window generated around own in the first learner response."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "is my own book",
@@ -98,5 +101,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "f830cc8b247be3b547cd6ccae3c909184cebc2c4fbe319eb2b473e7eb2a6d502"
+  "planHash": "81935975261454d5dbaffc7e60d3b0a8641c62c8c842eb9a485200758016afac"
 }

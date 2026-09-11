@@ -142,7 +142,8 @@
       "audioRequired": true,
       "speechTargetEn": "That is a good place.",
       "acceptedSpeechEn": [
-        "That is a good place."
+        "That is a good place.",
+        "That's a good place."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -150,33 +151,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی place را پیدا کن.",
-      "promptFa": "place در این درس یعنی چه؟",
-      "promptEn": "This is a good place.",
-      "config": {
-        "options": [
-          "مکان",
-          "زمان",
-          "کتاب"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "مکان"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -205,6 +179,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی place را پیدا کن.",
+      "promptFa": "place در این درس یعنی چه؟",
+      "promptEn": "This is a good place.",
+      "config": {
+        "options": [
+          "مکان",
+          "زمان",
+          "کتاب"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "مکان"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -292,11 +293,13 @@
             "این جمله نامربوط است."
           ],
           "correctFa": "آنجا هم جای خوبی است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -308,7 +311,8 @@
         "mode": "retrieval",
         "textEn": "That is a good place.",
         "acceptedAnswersEn": [
-          "That is a good place."
+          "That is a good place.",
+          "That's a good place."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

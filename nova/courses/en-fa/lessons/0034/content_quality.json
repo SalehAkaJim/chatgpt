@@ -14,11 +14,11 @@
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0034",
-    "sourceHash": "0c8680ac2e0b282b40e7a4f3b03e5d51964aa8f400db84b81830b044982a3fa6",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "fb006c8440bbc82e9695688f0d3abec2ed6f05bdc76c7f3b4509c7f98c54ba92",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
     "reviewerType": "model",
-    "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of production Lesson 0034 authored from curriculum spec en-fa-A1-LESSON-SPEC-0034; not an independent human or learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0034; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
@@ -30,7 +30,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "The lesson focuses on additive also while all content words and I-statements are already familiar."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 5,
@@ -38,7 +38,7 @@
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "Two walking-group members comparing simple interests before the walk gives a clear conversational trigger for also."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 5,
@@ -46,7 +46,7 @@
       },
       "repetitionUsefulness": {
         "score": 4,
-        "evidence": "Coffee, read and books recur across different predicates while the story shifts to a different pair and purpose."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -58,21 +58,30 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Static model/editor review only; the lesson flow is focused, but real learner comprehension, speech-recognition behavior and delayed retention remain untested."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Review is limited to the bounded A1 outcome encoded in this Lesson and does not claim mastery beyond that scope.",
-      "Final ElevenLabs prosody and speech-recognition behavior remain unreviewed until the text gate passes."
+      "Final ElevenLabs prosody and speech-recognition behavior remain unreviewed until the text gate passes.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English dialogue and target construction are contextually natural for the declared scenario.",
       "Persian learner-facing meaning preserves the intended bounded sense without promoting a compositional phrase to a lexical word.",
       "The final activity requires hidden retrieval and changes or extends context enough to provide transfer evidence.",
-      "Character/story continuity and learner-role assignment are consistent with the declared story metadata."
+      "Character/story continuity and learner-role assignment are consistent with the declared story metadata.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "dialogueExposure"
+      ]
+    },
     "status": "PASS",
     "average": 4.6,
     "errors": []
@@ -84,5 +93,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "0c8680ac2e0b282b40e7a4f3b03e5d51964aa8f400db84b81830b044982a3fa6"
+  "sourceHash": "fb006c8440bbc82e9695688f0d3abec2ed6f05bdc76c7f3b4509c7f98c54ba92"
 }

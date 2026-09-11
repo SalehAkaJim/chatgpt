@@ -1,4 +1,4 @@
-<!-- sourceHash: 5bb7b00e8ddf1e93ba7438918d1f3b11aa60d2a077c4198d685a49e049da7ea9 -->
+<!-- sourceHash: 27a17c4d1be2aa26ad56a1e27afb303974107727f973df9e3653a9b48c784869 -->
 # English Audit — EN-A1-L-0004
 
 **Lesson:** Please say that again
@@ -30,7 +30,7 @@ How are you?
 I'm fine, thanks.
 
 - **Speech target:** I'm fine, thanks.
-- **Accepted speech:** I'm fine, thanks.
+- **Accepted speech:** I'm fine, thanks. | I am fine, thanks.
 
 **T05 · liam**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: fbee9c9324b7abbc1ecdd1dc1864193d7d233aa1c415596f74e668b363421b21 -->
+<!-- sourceHash: c142770c814f4c091b258d6251f3f7c632a3745004687013d5489b9b197ae685 -->
 # English Audit — EN-A1-L-0051
 
 **Lesson:** Reading is work
@@ -34,13 +34,13 @@ Yes. This is work too.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Yes. Reading is work.
 - **options:** فعالیت، کار | کتاب | اتاق
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

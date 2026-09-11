@@ -1,4 +1,4 @@
-<!-- sourceHash: 5f3e9c65a025283c52cbdee1dbf0a925a335e501ecd378c2cdada801e8050e31 -->
+<!-- sourceHash: fe56690773fa50d9902a1ccb741468943aff45b8ab7e71b4b088e90246dfd823 -->
 # English Audit — EN-A1-L-0101
 
 **Lesson:** A different case
@@ -30,17 +30,17 @@ And the other request?
 That is a different case.
 
 - **Speech target:** That is a different case.
-- **Accepted speech:** That is a different case.
+- **Accepted speech:** That is a different case. | That's a different case.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** Yes, this is a special case.
 - **options:** مورد | کیف | هفته
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -57,7 +57,7 @@ That is a different case.
 **A06 · speak**
 
 - **textEn:** That is a different case.
-- **acceptedAnswersEn:** That is a different case.
+- **acceptedAnswersEn:** That is a different case. | That's a different case.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

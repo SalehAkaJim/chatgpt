@@ -1,4 +1,4 @@
-<!-- sourceHash: 3e2e0f4d5f94bb507b30d6984fdf033f18de5ba05bef3c470cd713f8cbed1020 -->
+<!-- sourceHash: addac5034b2da92451b138122cb8ed042002932df16e9238509ce9fcd3da4461 -->
 # English Audit — EN-A1-L-0077
 
 **Lesson:** This thing is hard
@@ -34,13 +34,13 @@ This thing can wait.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** This thing is hard.
 - **options:** وضعیت | چیز | مدرسه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,33 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0133",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "this problem is easy",
-        "activityKeys": [
-          "A05",
-          "A07"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0133; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0133; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
@@ -39,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "A01 establishes meaning; A02 exposes the complete dialogue; A03–A06 depend only on already exposed material; A07 performs hidden retrieval; A08 is spaced story review."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 5,
@@ -47,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 5,
-        "evidence": "آوا و بن در کافه درباره مشکل کوچکی در سفارش و راه‌حل ساده آن حرف می‌زنند."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 4,
@@ -55,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 5,
-        "evidence": "problem recurs across recognition, dialogue, listening, transfer, reconstruction, and hidden retrieval without adding a second unsupported sense."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -67,7 +55,7 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Dependency ordering and source availability were audited, but no real learner test is claimed; perceived relevance and difficulty remain unverified."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       },
       "runtimeAssetGrounding": {
         "score": 5,
@@ -79,7 +67,8 @@
       "No independent human or real learner test has been performed.",
       "Only the specified problem sense is reviewed as new material.",
       "Generated audio pronunciation/prosody is not evaluated at this text-authoring stage.",
-      "Runtime behavior is inferred from the permanent guided-dialogue/audio source contract and still requires CI/runtime validation."
+      "Runtime behavior is inferred from the permanent guided-dialogue/audio source contract and still requires CI/runtime validation.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English grammar, target-sense consistency, accepted speech strings, and all English distractors were model-checked.",
@@ -90,11 +79,19 @@
       "A03 comprehension was repaired to use the canonical choice contract, distinct teaching feedback, and an explicit model distractor audit.",
       "A07 keeps the response hidden before attempt and retrieves an already exposed learner turn.",
       "The story arc returns from Lesson 0128 after 5 Lessons and switches the learner role.",
-      "The complete target-collocation window ‘Yes. The problem is small.’ now has an explicit lesson-specific usage fallback, resolving the integration language-plan evidence failure without changing learner-facing content."
+      "The complete target-collocation window ‘Yes. The problem is small.’ now has an explicit lesson-specific usage fallback, resolving the integration language-plan evidence failure without changing learner-facing content.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0133",
-    "sourceHash": "b319ce4842aac4b4a2f6484b6c9aadb059fe653a8c923102f35e831d6ad2f66a",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "5704955fa269ce8981d7c4ea99eede14a97b8a0bd18c1cb67454fdfb1c78e696",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "duplicateScoring"
+      ]
+    },
     "status": "PASS",
     "average": 4.7,
     "errors": []
@@ -106,5 +103,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "b319ce4842aac4b4a2f6484b6c9aadb059fe653a8c923102f35e831d6ad2f66a"
+  "sourceHash": "5704955fa269ce8981d7c4ea99eede14a97b8a0bd18c1cb67454fdfb1c78e696"
 }

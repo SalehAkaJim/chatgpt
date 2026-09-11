@@ -151,33 +151,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی again را پیدا کن.",
-      "promptFa": "again در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Say it again.",
-      "config": {
-        "options": [
-          "دوباره",
-          "امروز",
-          "اینجا"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "دوباره"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های آیریس را گوش کن و جواب نینا را بگو.",
@@ -205,6 +178,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی again را پیدا کن.",
+      "promptFa": "again در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Say it again.",
+      "config": {
+        "options": [
+          "دوباره",
+          "امروز",
+          "اینجا"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "دوباره"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {

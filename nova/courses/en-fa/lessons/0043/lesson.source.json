@@ -187,33 +187,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی then را در جمله پیدا کن.",
-      "promptFa": "then در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Then I help.",
-      "config": {
-        "options": [
-          "بعد، سپس",
-          "خیلی",
-          "واقعا"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«خیلی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«واقعا» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "بعد، سپس"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های iris را گوش کن و جواب nina را بگو.",
@@ -241,6 +214,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی then را در جمله پیدا کن.",
+      "promptFa": "then در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Then I help.",
+      "config": {
+        "options": [
+          "بعد، سپس",
+          "خیلی",
+          "واقعا"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«خیلی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«واقعا» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "بعد، سپس"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -324,11 +324,13 @@
             "«Read, then go.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "بخوان، بعد کمک کن."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

@@ -1,4 +1,4 @@
-<!-- sourceHash: d69f5df0be5afcb0550e004869b6621fc01667e440b3be412fa210efb63aef78 -->
+<!-- sourceHash: 71eb047c4ec014cb53dc0b8b369f295c82f8673eacf06736dc8b2c88ff67da4d -->
 # English Audit — EN-A1-L-0061
 
 **Lesson:** My home
@@ -34,13 +34,13 @@ This is my home.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** My home.
 - **options:** خانه | خیابان | کافه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

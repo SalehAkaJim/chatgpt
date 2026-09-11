@@ -1,4 +1,4 @@
-<!-- sourceHash: 9cd22e45f70d169187eb7b9a65d08abe9bfdce436255edbd796c49509daf7ce2 -->
+<!-- sourceHash: 78584a13a79ef00f667aee84bece3daa00ea0445003dc827c3be2e5b7c31774b -->
 # English Audit — EN-A1-L-0139
 
 **Lesson:** Choosing a date is the main question
@@ -34,13 +34,13 @@ The place is another question.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** The place is another question
 - **options:** موضوع | پرسش مستقیم | پاسخ
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: f88a995b6ea866d684d195ca89bb27c25b98c1e398bd5b3c1ab80b6483767416 -->
+<!-- sourceHash: b7c7530554e1c3c5027ddec0a2b02ca715502986b066b46e0a65771ea91ff09f -->
 # English Audit — EN-A1-L-0119
 
 **Lesson:** The car is outside
@@ -34,13 +34,13 @@ Yes. The red car is here.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** The car is outside
 - **options:** ماشین، خودرو | دوره | دوست
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

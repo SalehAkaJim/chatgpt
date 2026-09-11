@@ -1,4 +1,4 @@
-<!-- sourceHash: 5faef4ad8e6f72b9a09eca696964a676e20280a6aef0a5da42dbce3f1be56876 -->
+<!-- sourceHash: 69efa6f76d03d2c45f8b07a587936e6067d2a6506ddfb214fd7a6596d3e9aa81 -->
 # English Audit — EN-A1-L-0138
 
 **Lesson:** There is one move we can make
@@ -34,13 +34,13 @@ Yes. There is another move.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** There is one move we can make
 - **options:** اقدام | حرکت بدنی | ماه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0081",
   "sortOrder": 81,
   "levelKey": "A1",
-  "lessonSourceHash": "570737b426e00cac171d77152dbe064116f957d74cc3ef35a447222d364158fd",
+  "lessonSourceHash": "2a92570ddc8af7ee3d42d2c67d90740041439f0e85e252132859cf3615f6fcd9",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -71,10 +71,32 @@
       "lexicalLemmas": [
         "feel"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "i feel tired",
-      "examples": [],
+      "examples": [
+        {
+          "id": 1495914,
+          "text": "I feel tired.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 12326688,
+          "text": "I feel tired already.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 9305347,
+          "text": "I feel tired out.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Lillith"
+        }
+      ],
       "fallback": {
         "query": "i feel tired",
         "rationale": "Exact transfer target."
@@ -85,5 +107,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "b3795b85571cfd0c1056d2e4a13ebd6ba88439c9cb4fc30b6a33438c1a245741"
+  "planHash": "5813d700befff5214c79d3bc558578d4ef5a905fb4efad5d3449accacf03cc20"
 }

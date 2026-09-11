@@ -167,33 +167,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی hand را در این درس پیدا کن.",
-      "promptFa": "hand اینجا چه معنی‌ای دارد؟",
-      "promptEn": "This is my hand",
-      "config": {
-        "options": [
-          "دست",
-          "ذهن",
-          "حقوق"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی هدف درس نیست.",
-            "این گزینه با موقعیت جور نیست."
-          ],
-          "correctFa": "دست"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف شخصیت مقابل را گوش کن و جواب نقش خودت را بگو.",
@@ -221,6 +194,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی hand را در این درس پیدا کن.",
+      "promptFa": "hand اینجا چه معنی‌ای دارد؟",
+      "promptEn": "This is my hand",
+      "config": {
+        "options": [
+          "دست",
+          "ذهن",
+          "حقوق"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی هدف درس نیست.",
+            "این گزینه با موقعیت جور نیست."
+          ],
+          "correctFa": "دست"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -317,11 +317,12 @@
             "این جمله درباره کیف دیگری است."
           ],
           "correctFa": "این دست دیگر من است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -338,7 +339,8 @@
               "contrastReasonFa": "جمله طبیعی است، اما other bag را بیان می‌کند و معنی hand را تمرین نمی‌دهد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

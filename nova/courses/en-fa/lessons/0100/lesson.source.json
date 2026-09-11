@@ -126,7 +126,8 @@
       "audioRequired": true,
       "speechTargetEn": "Yes. I'm busy this week.",
       "acceptedSpeechEn": [
-        "Yes. I'm busy this week."
+        "Yes. I'm busy this week.",
+        "Yes. I am busy this week."
       ]
     },
     {
@@ -146,7 +147,8 @@
       "audioRequired": true,
       "speechTargetEn": "I'm free next week.",
       "acceptedSpeechEn": [
-        "I'm free next week."
+        "I'm free next week.",
+        "I am free next week."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -154,33 +156,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی week را پیدا کن.",
-      "promptFa": "week در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Yes. I'm busy this week.",
-      "config": {
-        "options": [
-          "هفته",
-          "شب",
-          "شماره"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "هفته"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -209,6 +184,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی week را پیدا کن.",
+      "promptFa": "week در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Yes. I'm busy this week.",
+      "config": {
+        "options": [
+          "هفته",
+          "شب",
+          "شماره"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "هفته"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -288,11 +290,13 @@
             "این جمله هدف را ندارد."
           ],
           "correctFa": "هفته بعد وقت دارم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -304,7 +308,8 @@
         "mode": "retrieval",
         "textEn": "I'm free next week.",
         "acceptedAnswersEn": [
-          "I'm free next week."
+          "I'm free next week.",
+          "I am free next week."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

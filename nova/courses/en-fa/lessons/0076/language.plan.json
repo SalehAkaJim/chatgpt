@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0076",
   "sortOrder": 76,
   "levelKey": "A1",
-  "lessonSourceHash": "2db58b603536cb0406a7a196d5b48a16d513e69697c798273ba7f8f1f1338e1f",
+  "lessonSourceHash": "6108c0c535c11bcd7379b80cc64e55f96827daa888fee0594be34a790edb17ff",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,10 +49,32 @@
       "constructionKeys": [
         "EN-CONSTR-0076-SCHOOL"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "i go to school",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "go to school",
+      "examples": [
+        {
+          "id": 21504,
+          "text": "Go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13249467,
+          "text": "We go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 12894245,
+          "text": "They go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ussis"
+        }
+      ],
       "fallback": {
         "query": "i go to school",
         "rationale": "Exact learner target or turn-derived collocation for this bounded Lesson use."
@@ -68,10 +90,32 @@
       "lexicalLemmas": [
         "school"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "go to school",
-      "examples": [],
+      "examples": [
+        {
+          "id": 21504,
+          "text": "Go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13249467,
+          "text": "We go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 12894245,
+          "text": "They go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ussis"
+        }
+      ],
       "fallback": {
         "query": "go to school",
         "rationale": "Exact target-collocation window generated around school in both learner responses."
@@ -82,5 +126,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "00fb84798ac23dc42d4f41d61878de371b275ba9898023f54d475ccdd76f2512"
+  "planHash": "99481aa4eb088050535e84e5c1a19bc4365175a3ac57a5610aa6856816686c24"
 }

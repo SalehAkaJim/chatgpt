@@ -1,4 +1,4 @@
-<!-- sourceHash: 6b70908fbeb2401027628f72bb04d595f202d806372ee0c6a8ae006051ebd38a -->
+<!-- sourceHash: ddf628fdf7021a5b2e9bf86bc558ef63c1109b734cf37144e68a5eb6cc176688 -->
 # English Audit — EN-A1-L-0108
 
 **Lesson:** Tell me the number
@@ -34,13 +34,13 @@ Yes, tell me now.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Tell me the number.
 - **options:** گفتن | زندگی کردن | نقطه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

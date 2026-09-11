@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی job را پیدا کن.",
-      "promptFa": "job در این درس چه معنی‌ای دارد؟",
-      "promptEn": "There is a job here.",
-      "config": {
-        "options": [
-          "شغل",
-          "امتیاز بیسبال",
-          "باز"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی run در درس بعدی است.",
-            "این معنی open است."
-          ],
-          "correctFa": "شغل"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های آیریس را گوش کن و جواب نینا را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی job را پیدا کن.",
+      "promptFa": "job در این درس چه معنی‌ای دارد؟",
+      "promptEn": "There is a job here.",
+      "config": {
+        "options": [
+          "شغل",
+          "امتیاز بیسبال",
+          "باز"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی run در درس بعدی است.",
+            "این معنی open است."
+          ],
+          "correctFa": "شغل"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -280,11 +280,13 @@
             "این درباره یک بار در گذشته است."
           ],
           "correctFa": "بله. در کافه یک شغل هست."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

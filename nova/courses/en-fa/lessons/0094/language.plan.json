@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0094",
   "sortOrder": 94,
   "levelKey": "A1",
-  "lessonSourceHash": "a4950d2703aae7eb528e05e16d1e20fe495e2c3732a182f09042bb568645c290",
+  "lessonSourceHash": "d7910172c54543d52b0dca6dcf8d1aa5075e3d9b1cf41bb179a4404d9d017640",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,37 @@
       "constructionKeys": [
         "EN-CONSTR-0094-CALL"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "have a call",
+      "examples": [
+        {
+          "id": 11683783,
+          "text": "I have a call.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adelpa"
+        },
+        {
+          "id": 4933168,
+          "text": "Tom, you have a call!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adam9812"
+        },
+        {
+          "id": 12276008,
+          "text": "I have a call to make.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "fallback": {
+        "query": "have a call",
+        "rationale": "Exact target collocation generated from the first learner turn."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "have a call",
@@ -65,10 +90,32 @@
       "lexicalLemmas": [
         "call"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "have a call",
-      "examples": [],
+      "examples": [
+        {
+          "id": 11683783,
+          "text": "I have a call.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adelpa"
+        },
+        {
+          "id": 4933168,
+          "text": "Tom, you have a call!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adam9812"
+        },
+        {
+          "id": 12276008,
+          "text": "I have a call to make.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "have a call",
         "rationale": "Exact target collocation generated from the first learner turn."
@@ -98,5 +145,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "436f1ec12fe7bccabe27ee390f6a530bdb2e37b2743185cc46b76b5a51f68467"
+  "planHash": "f29b27c2ae383bc219b085ed77e9a9caa32453d407c2544911c4f40a44eeb551"
 }

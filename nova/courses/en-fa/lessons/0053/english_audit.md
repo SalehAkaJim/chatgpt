@@ -1,4 +1,4 @@
-<!-- sourceHash: 9e5cc53cc16b373f5d1d3485a3e98aeb0ad6c5518d59b5c8365ddd00f5667f59 -->
+<!-- sourceHash: 0fc1aa0338f2df5918f6ae9ed7a765f77e1866f9f1d0c4dc17fa2029ee019a76 -->
 # English Audit — EN-A1-L-0053
 
 **Lesson:** One day
@@ -34,13 +34,13 @@ Two days.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** One day.
 - **options:** روز | کتاب | اتاق
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

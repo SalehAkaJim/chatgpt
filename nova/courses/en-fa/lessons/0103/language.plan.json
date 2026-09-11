@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0103",
   "sortOrder": 103,
   "levelKey": "A1",
-  "lessonSourceHash": "6c81c92b72d54c4a0533e29cbb20e204d134a6ef2f67c253704c2cd2fc5e6694",
+  "lessonSourceHash": "69f020fa38f0e0e46df4e9873134d4d47cdc193c55725baa12ade66d542313df",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0103-PERSON"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "one person is waiting",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "one person is waiting",
+        "rationale": "Exact bounded learner target collocation around the target word."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "one person is waiting",
@@ -100,5 +103,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "b20544b8077ce3dd755cee8f2b9eb150ba3f5d4b39e89885f48a971d445efd7e"
+  "planHash": "6de55228fce7b1f20de3c753e4f8fb0b955cddc0afc2fb2943ca89279a155f95"
 }

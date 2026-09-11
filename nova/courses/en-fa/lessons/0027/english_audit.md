@@ -1,4 +1,4 @@
-<!-- sourceHash: 68cfc51c77ce98b20cea8363c1dcb16322868a2a2bbf9709efb70bf8fb71b7cc -->
+<!-- sourceHash: 6ac6bbcc0c56d7ccfcc9ec62f0315793d4f3f7b84ff8bfc58a992cb43b84f5ac -->
 # English Audit — EN-A1-L-0027
 
 **Lesson:** She is Maya
@@ -52,13 +52,13 @@ She is Sara.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** She is Maya.
 - **options:** اون مایاست | اون الکسه | من مایا هستم
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

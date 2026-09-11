@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0115; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0115; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "The unusual bounded sense is clearly signposted, recognized, practiced with counts and retrieved."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 5,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "Watching a baseball score provides a concrete context for the target noun sense."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 3,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 5,
-      "evidence": "run recurs with one and two scores across listening, selection and spoken retrieval."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 4,
@@ -42,22 +42,32 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; the niche sports sense may be less broadly useful."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or learner test has been performed.",
     "The committed lexical reference exposes a narrow baseball-score sense rather than the common verb sense.",
-    "Audio prosody is not evaluated at this text stage."
+    "Audio prosody is not evaluated at this text stage.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "The lesson does not silently substitute the more common verb sense of run.",
     "Persian copy makes the baseball context explicit.",
     "No unrelated V-ing grammar target is claimed.",
-    "Final retrieval is hidden before attempt."
+    "Final retrieval is hidden before attempt.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0115",
-  "sourceHash": "b7d7969a679dfa6dd980ff951d536c43571ec474ee6e560b6dd104a81f5602e6",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "a711b45b7f7399bf0e0d87cf1069f157cfc0dbd7fa59fa3d4b05aa0b68a442bd",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "duplicateScoring",
+      "speechEquivalence"
+    ]
+  }
 }

@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی life را در این درس پیدا کن.",
-      "promptFa": "life در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Life here is good.",
-      "config": {
-        "options": [
-          "زندگی",
-          "کتاب",
-          "اتاق"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "زندگی"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های ruby را گوش کن و جواب sara را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی life را در این درس پیدا کن.",
+      "promptFa": "life در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Life here is good.",
+      "config": {
+        "options": [
+          "زندگی",
+          "کتاب",
+          "اتاق"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "زندگی"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -286,11 +286,13 @@
             "«Your life is good.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "زندگی من خوب است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

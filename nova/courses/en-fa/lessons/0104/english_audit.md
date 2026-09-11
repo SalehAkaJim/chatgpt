@@ -1,4 +1,4 @@
-<!-- sourceHash: 382ad683421643d71571d18af398131d537a60a4ba014e40fd17e301e15df542 -->
+<!-- sourceHash: 797a0e77db9ccb1ede3d53e5ed4d92fcbf41c88fa05f82b23f9cacc00bc4f3d4 -->
 # English Audit — EN-A1-L-0104
 
 **Lesson:** Today is busy
@@ -34,13 +34,13 @@ Today is free after six.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Yes, today is busy.
 - **options:** امروز | فردا | هفته
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

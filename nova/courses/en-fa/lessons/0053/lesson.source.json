@@ -143,33 +143,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی day را در این درس پیدا کن.",
-      "promptFa": "day در این درس چه معنی‌ای دارد؟",
-      "promptEn": "One day.",
-      "config": {
-        "options": [
-          "روز",
-          "کتاب",
-          "اتاق"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "روز"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های leo را گوش کن و جواب liam را بگو.",
@@ -197,6 +170,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی day را در این درس پیدا کن.",
+      "promptFa": "day در این درس چه معنی‌ای دارد؟",
+      "promptEn": "One day.",
+      "config": {
+        "options": [
+          "روز",
+          "کتاب",
+          "اتاق"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "روز"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {

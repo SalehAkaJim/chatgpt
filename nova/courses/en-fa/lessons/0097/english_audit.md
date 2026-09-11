@@ -1,4 +1,4 @@
-<!-- sourceHash: da7cc018bb70c1e79989ace33b39423bbbc9dea11976ee9d57fa2606178bef16 -->
+<!-- sourceHash: 54a3aded65e8ee5c63bb269a570a17ba8fde82fea8522e27f4a45abc4cdbeb18 -->
 # English Audit — EN-A1-L-0097
 
 **Lesson:** My group is here
@@ -34,13 +34,13 @@ The group is small.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** My group is here.
 - **options:** گروه | خیابان | هفته
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

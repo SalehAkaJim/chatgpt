@@ -1,4 +1,4 @@
-<!-- sourceHash: a4950d2703aae7eb528e05e16d1e20fe495e2c3732a182f09042bb568645c290 -->
+<!-- sourceHash: d7910172c54543d52b0dca6dcf8d1aa5075e3d9b1cf41bb179a4404d9d017640 -->
 # English Audit — EN-A1-L-0094
 
 **Lesson:** A call at six
@@ -34,13 +34,13 @@ The call is at six.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I have a call.
 - **options:** تماس تلفنی | کلاس | بلیط
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

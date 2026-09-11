@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0126; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0126; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 5,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "One lexical target is recognized, practiced in two guided exchanges, checked for listening/meaning, transferred, and retrieved with the answer hidden."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 4,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 5,
-      "evidence": "سارا و روبی در راه کافه درباره زمان دیدن یک فیلم و یک پیام قدیمی حرف می‌زنند."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 4,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 5,
-      "evidence": "ago recurs across recognition, guided speech, comprehension, transfer, and hidden retrieval without adding another scored lexical target."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 5,
@@ -42,23 +42,32 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; perceived engagement, pacing, and difficulty remain unverified."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
   "limitations": [
     "No independent human or real learner test has been performed.",
     "Only the bounded lexical sense defined for this Lesson is reviewed.",
-    "Generated audio pronunciation/prosody is not evaluated at this text stage."
+    "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "English turns, accepted speech strings, and response options were checked for grammar and internal consistency.",
     "Persian orthography, نیم‌فاصله usage where applicable, and English–Persian meaning consistency were checked.",
     "Reference key, part of speech, sense key, and provisional spec hash were cross-checked against the worker packet.",
     "Final retrieval keeps the answer hidden before attempt.",
-    "Story arc returns after 5 Lessons and the learner role changes from the prior scene."
+    "Story arc returns after 5 Lessons and the learner role changes from the prior scene.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0126",
-  "sourceHash": "ab17e92a7d2b37a966ad803b2255afec5282df3d4814760b09af2f9fbdd39085",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "700408938998943db8b80b3432777d064ec94fce161ba589f2ceb2826e526eed",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "duplicateScoring"
+    ]
+  }
 }

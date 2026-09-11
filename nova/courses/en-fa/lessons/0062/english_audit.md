@@ -1,4 +1,4 @@
-<!-- sourceHash: b0a4905b71918dd2f7bbb65098186e425321f77b2af2d347456734c3b59d421e -->
+<!-- sourceHash: 65f3527832e5c0138a1e433348058472151a1f378f793a439892707cb3722084 -->
 # English Audit — EN-A1-L-0062
 
 **Lesson:** A long day
@@ -30,17 +30,17 @@ And today?
 It is a long day.
 
 - **Speech target:** It is a long day.
-- **Accepted speech:** It is a long day.
+- **Accepted speech:** It is a long day. | It's a long day.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** A long day.
 - **options:** طولانی از نظر زمان | کوتاه | سریع
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -57,7 +57,7 @@ It is a long day.
 **A06 · speak**
 
 - **textEn:** It is a long day.
-- **acceptedAnswersEn:** It is a long day.
+- **acceptedAnswersEn:** It is a long day. | It's a long day.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

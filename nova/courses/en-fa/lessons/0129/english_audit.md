@@ -1,4 +1,4 @@
-<!-- sourceHash: 7a2151cf2d57fda6572c7ee48c8ce32b1c6d2c98f5e298a1a0b59b80c36c9c19 -->
+<!-- sourceHash: 53d67eea96e8361ffea5a8d4e4ada7e5362ab394531b2a8d79e01e22f2f8613a -->
 # English Audit — EN-A1-L-0129
 
 **Lesson:** This is my hand
@@ -34,13 +34,13 @@ This is my other hand.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** This is my hand
 - **options:** دست | ذهن | حقوق
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

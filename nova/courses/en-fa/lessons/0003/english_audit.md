@@ -1,4 +1,4 @@
-<!-- sourceHash: e5fe62535cd1146de7c023e38a74346b46ba189a1c28318e12ec69de26dad13a -->
+<!-- sourceHash: a00c8b4bccb0c6b3701888fd9757528028bfa1bf33ea62592e80b1034ec4ebf4 -->
 # English Audit — EN-A1-L-0003
 
 **Lesson:** How are you?
@@ -26,7 +26,7 @@ How are you?
 I'm fine, thanks. How are you?
 
 - **Speech target:** I'm fine, thanks. How are you?
-- **Accepted speech:** I'm fine, thanks. How are you?
+- **Accepted speech:** I'm fine, thanks. How are you? | I am fine, thanks. How are you?
 
 **T05 · iris**
 
@@ -55,7 +55,7 @@ See you!
 I'm fine, thanks. How are you?
 
 - **Speech target:** I'm fine, thanks. How are you?
-- **Accepted speech:** I'm fine, thanks. How are you?
+- **Accepted speech:** I'm fine, thanks. How are you? | I am fine, thanks. How are you?
 
 ## Activities
 
@@ -79,7 +79,7 @@ I'm fine, thanks. How are you?
 **A06 · speak**
 
 - **textEn:** I'm fine, thanks. How are you?
-- **acceptedAnswersEn:** I'm fine, thanks. How are you?
+- **acceptedAnswersEn:** I'm fine, thanks. How are you? | I am fine, thanks. How are you?
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

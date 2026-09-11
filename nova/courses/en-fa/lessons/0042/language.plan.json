@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0042",
   "sortOrder": 42,
   "levelKey": "A1",
-  "lessonSourceHash": "7a7bff7d050115cc0c31c02cbbfbd9266bf6c589f99c9930a14bfe8d7d6f4597",
+  "lessonSourceHash": "258c435d39884f37731c5c47dc26af360430ab51fa18066a7633b97f378db69b",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -92,32 +92,10 @@
       "lexicalLemmas": [
         "think"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
+      "status": "explicit_fallback",
+      "sampleCount": 0,
       "evidenceQuery": "i think there is",
-      "examples": [
-        {
-          "id": 8543312,
-          "text": "I think there is life on Mars.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
-        },
-        {
-          "id": 6841950,
-          "text": "I think there is someone in here.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "lev4uk_pavel2"
-        },
-        {
-          "id": 1224950,
-          "text": "I think there is more to this.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CM"
-        }
-      ],
+      "examples": [],
       "fallback": {
         "query": "i think there is",
         "rationale": "Explicit bounded usage fallback for validated A1 target collocation: i think there is"
@@ -169,5 +147,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "c6cd26f5e02826e5aa0398d4b37f61447abb3ee267d742e1461f3b5f96daff00"
+  "planHash": "3918847b613fb4df1936efd82a349a553509cbdd4defbcf700f55843a0e0739c"
 }

@@ -1,4 +1,4 @@
-<!-- sourceHash: 89e91caffbe02f259488a9dd4868d83d8f9df838f3a8c6f15b6be7fd6d713ac8 -->
+<!-- sourceHash: a3a207f5fd9eeaaff6d13e5578ba622992c01d9dd8f7781a718e6618dedae421 -->
 # English Audit — EN-A1-L-0026
 
 **Lesson:** We are in room two
@@ -34,31 +34,31 @@ Room one?
 No. We are in room two.
 
 - **Speech target:** No. We are in room two.
-- **Accepted speech:** No. We are in room two. | We are in room two.
+- **Accepted speech:** No. We are in room two. | We are in room two. | No. We're in room two.
 
 **T05 · nina**
 
 We are in room one.
 
 - **Speech target:** We are in room one.
-- **Accepted speech:** We are in room one.
+- **Accepted speech:** We are in room one. | We're in room one.
 
 **T06 · nina**
 
 We are in room two.
 
 - **Speech target:** We are in room two.
-- **Accepted speech:** We are in room two.
+- **Accepted speech:** We are in room two. | We're in room two.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** We are in room two.
 - **options:** من و بقیه گروه در اتاق دو هستیم | فقط من در اتاق دو هستم | اتاق دو خالی است
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -77,7 +77,7 @@ We are in room two.
 **A06 · speak**
 
 - **textEn:** We are in room one.
-- **acceptedAnswersEn:** We are in room one.
+- **acceptedAnswersEn:** We are in room one. | We're in room one.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

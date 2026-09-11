@@ -10,7 +10,7 @@
   "descriptionFa": "با bring یک دستور کوتاه و طبیعی بساز.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0148",
   "outcomeFa": "bring را به معنی «آوردن» در دو دستور کوتاه و طبیعی به کار ببری.",
-  "scenarioFa": "روبی و سارا در ادامه داستان گروه پیاده روی درباره موضوع این درس گفت‌وگو می‌کنند.",
+  "scenarioFa": "در ایستگاه اتوبوس، سارا می‌گوید «الان چه چیزی لازم داریم؟» و روبی پاسخ می‌دهد «فرم را بیاور.».",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0147"
   ],
@@ -53,7 +53,7 @@
       ],
       "continuesLessonKey": "EN-A1-L-0142",
       "settingFa": "ایستگاه اتوبوس",
-      "storyBeatFa": "روبی و سارا در ادامه داستان گروه پیاده روی درباره موضوع این درس گفت‌وگو می‌کنند."
+      "storyBeatFa": "سارا با «الان چه چیزی لازم داریم؟» گفت‌وگو را شروع می‌کند، روبی می‌گوید «فرم را بیاور.»؛ بعد سارا می‌گوید «و برگه اطلاعات؟» و روبی با «برگه اطلاعات را هم بیاور.» پاسخ می‌دهد."
     },
     "reviewLinks": [
       {
@@ -242,11 +242,12 @@
             "Leave the form یعنی فرم را همان‌جا بگذار و با گفت‌وگو فرق دارد."
           ],
           "correctFa": "فرم را بیاور."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "skillFocus": "listening",
         "distractorAudit": {
           "reviewerType": "model",
@@ -264,7 +265,8 @@
               "contrastReasonFa": "دستور باقی گذاشتن فرم را می‌دهد، نه آوردن آن."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -286,11 +288,12 @@
             "این جمله می‌گوید فرم را رها کن و هدف موقعیت را نمی‌رساند."
           ],
           "correctFa": "Bring the form."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -307,7 +310,8 @@
               "contrastReasonFa": "باقی گذاشتن فرم را بیان می‌کند، نه آوردن آن."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -329,11 +333,12 @@
             "این گزینه می‌گوید برگه را ببر و جهت عمل را تغییر می‌دهد."
           ],
           "correctFa": "Bring the information sheet too."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -350,7 +355,8 @@
               "contrastReasonFa": "بردن برگه را می‌گوید و جهت هدف را عوض می‌کند."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

@@ -149,33 +149,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی give را پیدا کن.",
-      "promptFa": "give در این درس چه معنی‌ای دارد؟",
-      "promptEn": "I can give you coffee.",
-      "config": {
-        "options": [
-          "دادن",
-          "گرفتن",
-          "خواندن"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "دادن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های ben را گوش کن و جواب ava را بگو.",
@@ -203,6 +176,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی give را پیدا کن.",
+      "promptFa": "give در این درس چه معنی‌ای دارد؟",
+      "promptEn": "I can give you coffee.",
+      "config": {
+        "options": [
+          "دادن",
+          "گرفتن",
+          "خواندن"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "دادن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -281,11 +281,13 @@
             "این جمله نامربوط است."
           ],
           "correctFa": "می‌توانم به تو چای بدهم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

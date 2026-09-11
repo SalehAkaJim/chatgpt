@@ -1,4 +1,4 @@
-<!-- sourceHash: fbfe014521e04d06fe48ded1fee177f71a5027fd0b8e84015223b4624e19af4b -->
+<!-- sourceHash: 79d5783aa988ade18019e30ad73ab28aa5d7af68ccdbb05edadc8a6f8aeeef3d -->
 # English Audit — EN-A1-L-0069
 
 **Lesson:** A little room
@@ -30,17 +30,17 @@ And that room?
 That is a little room.
 
 - **Speech target:** That is a little room.
-- **Accepted speech:** That is a little room.
+- **Accepted speech:** That is a little room. | That's a little room.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** This is a little room.
 - **options:** کوچک | قدیمی | بلند
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -59,7 +59,7 @@ That is a little room.
 **A06 · speak**
 
 - **textEn:** That is a little room.
-- **acceptedAnswersEn:** That is a little room.
+- **acceptedAnswersEn:** That is a little room. | That's a little room.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

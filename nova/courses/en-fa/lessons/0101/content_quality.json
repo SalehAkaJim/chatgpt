@@ -1,33 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0101",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "that is a different case",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0101; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0101; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
@@ -39,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "The Lesson keeps one lexical target, then moves from recognition and guided dialogue to changed-context retrieval."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 4,
@@ -47,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "The scenario gives روبی and سارا a concrete reason to use the target twice."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 4,
@@ -55,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 5,
-        "evidence": "case recurs through meaning recognition, dialogue, transfer choice, and hidden spoken retrieval."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -67,24 +55,35 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; confidence about subjective learner experience remains intentionally limited."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "The review covers only the bounded A1 target sense of case.",
-      "Generated audio prosody is not evaluated at this text stage."
+      "Generated audio prosody is not evaluated at this text stage.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English turns were checked for contextual plausibility.",
       "Persian wording was checked for meaning consistency and Persian orthography.",
       "The final activity requires hidden retrieval rather than answer copying.",
-      "Story recurrence is spaced by 5 Lessons and the learner role/story beat is varied."
+      "Story recurrence is spaced by 5 Lessons and the learner role/story beat is varied.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0101",
-    "sourceHash": "5f3e9c65a025283c52cbdee1dbf0a925a335e501ecd378c2cdada801e8050e31",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "fe56690773fa50d9902a1ccb741468943aff45b8ab7e71b4b088e90246dfd823",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "dialogueExposure",
+        "duplicateScoring",
+        "speechEquivalence"
+      ]
+    },
     "status": "PASS",
     "average": 4.4,
     "errors": []
@@ -96,5 +95,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "5f3e9c65a025283c52cbdee1dbf0a925a335e501ecd378c2cdada801e8050e31"
+  "sourceHash": "fe56690773fa50d9902a1ccb741468943aff45b8ab7e71b4b088e90246dfd823"
 }

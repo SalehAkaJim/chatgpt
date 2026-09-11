@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0016",
   "sortOrder": 16,
   "levelKey": "A1",
-  "lessonSourceHash": "f4f276ff68a9d734e872a2481dabf8ca66c2bf8e5e4db1ac81b9a5edcc9bc0b5",
+  "lessonSourceHash": "4d6ff23dd773c6a14bc96a0fb39fbbe3addadcf4a0464d5fd3eb4a470422407c",
   "enforceFromSortOrder": 25,
   "enforced": false,
   "grammarEvidence": [
@@ -124,19 +124,40 @@
         "at",
         "six"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": "it's at six",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "at six",
+      "examples": [
+        {
+          "id": 12862679,
+          "text": "She returned at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 7246548,
+          "text": "Sami died at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 7205946,
+          "text": "Sami left at six.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        }
+      ],
       "fallback": null,
       "fallbackMatch": null
     }
   ],
   "warnings": [
-    "EN-A1-L-0016: construction EN-CONSTR-WHAT-TIME has no confident CEFR-J grammar match",
-    "EN-A1-L-0016: target collocation 'at six' has no committed Tatoeba evidence or explicit usage fallback"
+    "EN-A1-L-0016: construction EN-CONSTR-WHAT-TIME has no confident CEFR-J grammar match"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "42b98541e25774b6d4a61be0c9df7ba8a5df4803215de7d6286b5023998b831c"
+  "planHash": "d8c3002349a368fcf03cc42a42a86e257bfdea5fcd3561aa2bb261a640e0d8dc"
 }

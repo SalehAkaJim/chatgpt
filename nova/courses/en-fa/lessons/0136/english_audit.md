@@ -1,4 +1,4 @@
-<!-- sourceHash: 3c0f7b7741a839043e9703f8932d6697726cca3e8feb47e742594e309818d9e2 -->
+<!-- sourceHash: f73a17af1330e811e5bbd079f293ef3eb9485bc02c6722af2d3c668d2ed62cda -->
 # English Audit — EN-A1-L-0136
 
 **Lesson:** Is this a good idea?
@@ -19,7 +19,7 @@ Is this a good idea?
 Yes. It is a good idea.
 
 - **Speech target:** Yes. It is a good idea.
-- **Accepted speech:** Yes. It is a good idea.
+- **Accepted speech:** Yes. It is a good idea. | Yes. It's a good idea.
 
 **T03 · sara**
 

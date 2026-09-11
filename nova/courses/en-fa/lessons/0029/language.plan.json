@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0029",
   "sortOrder": 29,
   "levelKey": "A1",
-  "lessonSourceHash": "2c79864e4fb3ea4ad9ed985c731a2bd53345f9c4c4096b107f68c1dbd74df337",
+  "lessonSourceHash": "7109fbebea2fc37217ae1f94165b8ecab7f0d37509fb1e90c3ecdc2ded05e061",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -78,20 +78,15 @@
       "constructionKeys": [
         "EN-CONSTR-JUST-ONE-BOOK"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 1,
+      "status": "explicit_fallback",
+      "sampleCount": 0,
       "evidenceQuery": "just one book",
-      "examples": [
-        {
-          "id": 4362314,
-          "text": "I won't pay 40 dollars for just one book.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "corbinjurgens"
-        }
-      ],
-      "fallback": null,
-      "fallbackMatch": null
+      "examples": [],
+      "fallback": {
+        "query": "just one book",
+        "rationale": "Just one book is a transparent A1 quantity-limiting use of just in the selected 'and nothing more' sense, with one and book already familiar."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "just one please",
@@ -102,12 +97,15 @@
       "constructionKeys": [
         "EN-CONSTR-JUST-ONE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "just one book",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "just one book",
+        "rationale": "Just one book is a transparent A1 quantity-limiting use of just in the selected 'and nothing more' sense, with one and book already familiar."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "just one book",
@@ -118,18 +116,10 @@
       "lexicalLemmas": [
         "just"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 1,
+      "status": "explicit_fallback",
+      "sampleCount": 0,
       "evidenceQuery": "just one book",
-      "examples": [
-        {
-          "id": 4362314,
-          "text": "I won't pay 40 dollars for just one book.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "corbinjurgens"
-        }
-      ],
+      "examples": [],
       "fallback": {
         "query": "just one book",
         "rationale": "Just one book is a transparent A1 quantity-limiting use of just in the selected 'and nothing more' sense, with one and book already familiar."
@@ -140,5 +130,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "8a975d7a88f29f8e859c328598f68ce93a2b42db7f780ac29c372794f6e0d3b6"
+  "planHash": "f851f18f61a1cd3a86940386479096df15530c9b51899e441bac78711c770ebc"
 }

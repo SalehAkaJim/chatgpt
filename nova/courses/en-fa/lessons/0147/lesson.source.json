@@ -10,7 +10,7 @@
   "descriptionFa": "با kid و شکل ing درباره کاری که یک کودک انجام می‌دهد صحبت کن.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0147",
   "outcomeFa": "kid را به معنی «کودک» در جمله‌ای کوتاه با شکل ing به کار ببری.",
-  "scenarioFa": "نورا و اوون در ادامه داستان همسایه ها درباره موضوع این درس گفت‌وگو می‌کنند.",
+  "scenarioFa": "در ساختمان، کنار در ورودی، اوون می‌گوید «چه کسی دارد می‌دود؟» و نورا پاسخ می‌دهد «آن کودک دارد می‌دود.».",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0146"
   ],
@@ -53,7 +53,7 @@
       ],
       "continuesLessonKey": "EN-A1-L-0141",
       "settingFa": "ساختمان، کنار در ورودی",
-      "storyBeatFa": "نورا و اوون در ادامه داستان همسایه ها درباره موضوع این درس گفت‌وگو می‌کنند."
+      "storyBeatFa": "اوون با «چه کسی دارد می‌دود؟» گفت‌وگو را شروع می‌کند، نورا می‌گوید «آن کودک دارد می‌دود.»؛ بعد اوون می‌گوید «چه کسی دارد نقاشی می‌کشد؟» و نورا با «آن کودک دارد نقاشی می‌کشد.» پاسخ می‌دهد."
     },
     "reviewLinks": [
       {
@@ -242,11 +242,12 @@
             "sitting یعنی نشستن و در این بخش گفته نشده است."
           ],
           "correctFa": "آن کودک دارد می‌دود."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "skillFocus": "listening",
         "distractorAudit": {
           "reviewerType": "model",
@@ -264,7 +265,8 @@
               "contrastReasonFa": "عمل نشستن را بیان می‌کند، نه دویدن."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -286,11 +288,12 @@
             "این جمله می‌گوید کودک در حال نشستن است."
           ],
           "correctFa": "The kid is running."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -307,7 +310,8 @@
               "contrastReasonFa": "عمل نشستن را جای دویدن می‌گذارد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -329,11 +333,12 @@
             "sitting فقط نشستن را بیان می‌کند و عمل هدف را ندارد."
           ],
           "correctFa": "The kid is drawing."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -350,7 +355,8 @@
               "contrastReasonFa": "عمل نشستن را بیان می‌کند، نه نقاشی کشیدن."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

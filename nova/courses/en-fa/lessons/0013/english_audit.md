@@ -1,4 +1,4 @@
-<!-- sourceHash: bcbb509152e3a66c832431903eeb3f7e1aa4e3e7dc25929eb05341c9943b2dfb -->
+<!-- sourceHash: 4fc1993b48c23eb1d7790a7862a61350fe44331d42253048376d907cf4a65211 -->
 # English Audit — EN-A1-L-0013
 
 **Lesson:** A study table with Nora
@@ -32,7 +32,7 @@ Thanks! Where's my book?
 It's on the table.
 
 - **Speech target:** It's on the table.
-- **Accepted speech:** It's on the table.
+- **Accepted speech:** It's on the table. | It is on the table.
 
 **T05 · owen**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: cb4c04914e5a06d1c9075ff258c5520430e94229e8f05ad462e8d14224c3d2b4 -->
+<!-- sourceHash: 95715768590a4a64f409e649898e440f2101c48799503ba8f8fe370ffd927411 -->
 # English Audit — EN-A1-L-0106
 
 **Lesson:** I live near here
@@ -34,13 +34,13 @@ Yes, I live near the school.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I live near here.
 - **options:** زندگی کردن | گفتن | تغییر
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

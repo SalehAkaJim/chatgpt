@@ -1,4 +1,4 @@
-<!-- sourceHash: 0feb91d813762b683d4bfc063a3ca0dfde65705f0907719339f4438082ecf456 -->
+<!-- sourceHash: ec3101ababc25f89b75ffbd4c602870a02f045249afd4975ad45b7db6afc92f1 -->
 # English Audit — EN-A1-L-0072
 
 **Lesson:** Is this new?
@@ -30,12 +30,12 @@ Is that new?
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **optionsEn:** Is this new? | This is new. | Is that new?
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 5dd141f1c1def63c41ca2cf36122708b554cb8bdf8c82a21a0a149f239a77862 -->
+<!-- sourceHash: 9f63fbddebed58ee07760b995f4dab2f34c77ddf77e855c0342d5394e1d15965 -->
 # English Audit — EN-A1-L-0118
 
 **Lesson:** We can go together

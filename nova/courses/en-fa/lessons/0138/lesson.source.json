@@ -156,32 +156,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی move را در این درس پیدا کن.",
-      "promptEn": "There is one move we can make",
-      "config": {
-        "options": [
-          "اقدام",
-          "حرکت بدنی",
-          "ماه"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است؛ move اینجا یعنی اقدام.",
-            "در این درس move به معنی حرکت بدنی نیست.",
-            "این گزینه معنی month است."
-          ],
-          "correctFa": "اقدام"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف شخصیت مقابل را گوش کن و جواب نقش خودت را بگو.",
@@ -209,6 +183,32 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی move را در این درس پیدا کن.",
+      "promptEn": "There is one move we can make",
+      "config": {
+        "options": [
+          "اقدام",
+          "حرکت بدنی",
+          "ماه"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ move اینجا یعنی اقدام.",
+            "در این درس move به معنی حرکت بدنی نیست.",
+            "این گزینه معنی month است."
+          ],
+          "correctFa": "اقدام"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -279,11 +279,12 @@
             "این جمله درباره حل مشکل است، نه اقدام."
           ],
           "correctFa": "There is one move we can make."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -300,7 +301,8 @@
               "contrastReasonFa": "درباره حل مشکل است، نه نام بردن از اقدام."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

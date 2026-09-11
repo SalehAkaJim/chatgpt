@@ -1,4 +1,4 @@
-<!-- sourceHash: cb5c8e609fd8aad02640ffcc4131301a3a2a03930d95af20f32eba69d290ba9e -->
+<!-- sourceHash: ec0eb7216ea3711b3ea927b04fd60d0a9cd25fc51adc58d7806cd7241b3aabd3 -->
 # English Audit — EN-A1-L-0086
 
 **Lesson:** The second stop
@@ -34,13 +34,13 @@ Take the second turn.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** The second stop.
 - **options:** دوم | اول | آخر
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

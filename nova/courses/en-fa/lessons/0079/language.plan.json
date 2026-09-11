@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0079",
   "sortOrder": 79,
   "levelKey": "A1",
-  "lessonSourceHash": "813ebde70a95ad31b085b15fd3d046ae78d3d2804605089b0029182cbf58909a",
+  "lessonSourceHash": "cca23f38763a9613a2502092499a89656d4a20dc354d596d20fea6521767748d",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,10 +49,32 @@
       "constructionKeys": [
         "EN-CONSTR-0079-END"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "the bus is at the end",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "at the end",
+      "examples": [
+        {
+          "id": 2219896,
+          "text": "Pay at the end, please.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DiePain"
+        },
+        {
+          "id": 13866364,
+          "text": "At the end add some basil.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ioan_Cristian"
+        },
+        {
+          "id": 6586298,
+          "text": "The punchline comes at the end.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eccles17"
+        }
+      ],
       "fallback": {
         "query": "the bus is at the end",
         "rationale": "Exact bounded learner target."
@@ -68,10 +90,32 @@
       "lexicalLemmas": [
         "end"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "at the end",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2219896,
+          "text": "Pay at the end, please.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DiePain"
+        },
+        {
+          "id": 13866364,
+          "text": "At the end add some basil.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ioan_Cristian"
+        },
+        {
+          "id": 6586298,
+          "text": "The punchline comes at the end.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eccles17"
+        }
+      ],
       "fallback": {
         "query": "at the end",
         "rationale": "Exact target-collocation window generated around end in both learner responses."
@@ -82,5 +126,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "508df1caf3a5b94806135ab7ac6adb7ce7bcbc22db707db3ba65fe78f2ef74ca"
+  "planHash": "af25b2c28a76b14884c7c9a0aa0da3911d5993f4fc3077596f507905adfaef4a"
 }

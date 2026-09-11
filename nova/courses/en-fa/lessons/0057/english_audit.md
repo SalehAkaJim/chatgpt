@@ -1,4 +1,4 @@
-<!-- sourceHash: 3300900d05a6ed76216f8086f2e7e393b84baca54ef1a70b4264b59e4f3218e9 -->
+<!-- sourceHash: 6fa60eb4cc1b21fefd83e67f3e3428b741b7b7313b85b2a6e93e6f22528b5aee -->
 # English Audit — EN-A1-L-0057
 
 **Lesson:** Life here
@@ -34,13 +34,13 @@ My life is good.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Life here is good.
 - **options:** زندگی | کتاب | اتاق
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -174,6 +174,28 @@
   ],
   "activities": [
     {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "الکس نوبت را به مایا می‌دهد؛ جواب مایا را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
       "activityKey": "A01",
       "type": "response_choice",
       "instructionFa": "معنی time را در این جمله پیدا کن.",
@@ -198,28 +220,6 @@
       "metadata": {
         "learningDemand": "recognition",
         "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
-      "activityKey": "A02",
-      "type": "dialogue",
-      "instructionFa": "الکس نوبت را به مایا می‌دهد؛ جواب مایا را بگو.",
-      "config": {
-        "mode": "guided_exchange",
-        "exchanges": [
-          {
-            "exchangeKey": "E01",
-            "promptTurnKey": "T01",
-            "responseTurnKey": "T02",
-            "responseEvaluation": "practice_only",
-            "allowPromptReplay": true,
-            "allowResponseModelAudio": true
-          }
-        ],
-        "showPromptText": true,
-        "showPromptTranslation": true,
-        "showResponseText": true,
-        "showResponseTranslation": true
       }
     },
     {

@@ -1,4 +1,4 @@
-<!-- sourceHash: c1e7255ea8809de3f2ac18cae346f0872e22e5af1c3c12192e1f7cbdb331dfe5 -->
+<!-- sourceHash: 0e4b3c7d52e9a9a2053acdb897073dc16ba2874ab5f202e985944f2079bcc3ae -->
 # English Audit — EN-A1-L-0054
 
 **Lesson:** Take action
@@ -34,13 +34,13 @@ I take action.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Take action.
 - **options:** انجام دادن | خواندن | گفتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

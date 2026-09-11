@@ -138,7 +138,8 @@
       "audioRequired": true,
       "speechTargetEn": "Yes. I believe that's right.",
       "acceptedSpeechEn": [
-        "Yes. I believe that's right."
+        "Yes. I believe that's right.",
+        "Yes. I believe that is right."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -280,11 +281,13 @@
             "این درباره open است."
           ],
           "correctFa": "بله. فکر می‌کنم درست است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -296,7 +299,8 @@
         "mode": "retrieval",
         "textEn": "Yes. I believe that's right.",
         "acceptedAnswersEn": [
-          "Yes. I believe that's right."
+          "Yes. I believe that's right.",
+          "Yes. I believe that is right."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

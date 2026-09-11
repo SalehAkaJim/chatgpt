@@ -1,4 +1,4 @@
-<!-- sourceHash: 17e695744c6f650a14e720dec779f1a661a491d30840d2becd95d68e5561d441 -->
+<!-- sourceHash: 5de27b2bd6a3fc43be4ef547ae08c95c293b9176d9c83ba4e72aa53c2df56fda -->
 # English Audit — EN-A1-L-0063
 
 **Lesson:** A happy look
@@ -30,17 +30,17 @@ And that one?
 That is a happy look.
 
 - **Speech target:** That is a happy look.
-- **Accepted speech:** That is a happy look.
+- **Accepted speech:** That is a happy look. | That's a happy look.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** A happy look.
 - **options:** حالت چهره | نگاه کردن | کتاب
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -59,7 +59,7 @@ That is a happy look.
 **A06 · speak**
 
 - **textEn:** That is a happy look.
-- **acceptedAnswersEn:** That is a happy look.
+- **acceptedAnswersEn:** That is a happy look. | That's a happy look.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

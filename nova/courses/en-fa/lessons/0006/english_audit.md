@@ -1,4 +1,4 @@
-<!-- sourceHash: 692efa20fed455f693f19d3196058afa4182d5fb9c2ffd2c1d5573246a0d08ec -->
+<!-- sourceHash: 15ec6353c9190f00dc012f58dd4b85aac56f6f93867783fa889df6d64658f5c4 -->
 # English Audit — EN-A1-L-0006
 
 **Lesson:** What's this?
@@ -20,7 +20,7 @@ What's this?
 It's a pen.
 
 - **Speech target:** It's a pen.
-- **Accepted speech:** It's a pen.
+- **Accepted speech:** It's a pen. | It is a pen.
 
 **T03 · maya**
 
@@ -31,14 +31,14 @@ And this?
 It's a book.
 
 - **Speech target:** It's a book.
-- **Accepted speech:** It's a book.
+- **Accepted speech:** It's a book. | It is a book.
 
 **T05 · alex**
 
 It's a book.
 
 - **Speech target:** It's a book.
-- **Accepted speech:** It's a book.
+- **Accepted speech:** It's a book. | It is a book.
 
 ## Activities
 
@@ -65,7 +65,7 @@ It's a book.
 **A06 · speak**
 
 - **textEn:** It's a book.
-- **acceptedAnswersEn:** It's a book.
+- **acceptedAnswersEn:** It's a book. | It is a book.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0110",
   "sortOrder": 110,
   "levelKey": "A1",
-  "lessonSourceHash": "6f9f42af5709ce6a516a29afd3da9e4a1daf4e1accb549ae33e07099ea7a4bd8",
+  "lessonSourceHash": "dddad644fde60588c56b3eae5c710ee07f00e21f400af23a1c5a4ecd9ad45c60",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -72,12 +72,37 @@
       "constructionKeys": [
         "EN-CONSTR-0110-BAD"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "status": "corpus_evidence",
+      "sampleCount": 3,
+      "evidenceQuery": "coffee is bad",
+      "examples": [
+        {
+          "id": 12521664,
+          "text": "The coffee is bad.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 6467752,
+          "text": "Coffee is bad for my skin.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eccles17"
+        },
+        {
+          "id": 12237472,
+          "text": "According to this report, coffee is bad for you.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "fallback": {
+        "query": "coffee is bad",
+        "rationale": "Exact validator collocation window for the bounded quality sense in This coffee is bad."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "coffee is bad",
@@ -88,10 +113,32 @@
       "lexicalLemmas": [
         "bad"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 3,
       "evidenceQuery": "coffee is bad",
-      "examples": [],
+      "examples": [
+        {
+          "id": 12521664,
+          "text": "The coffee is bad.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 6467752,
+          "text": "Coffee is bad for my skin.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eccles17"
+        },
+        {
+          "id": 12237472,
+          "text": "According to this report, coffee is bad for you.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "coffee is bad",
         "rationale": "Exact validator collocation window for the bounded quality sense in This coffee is bad."
@@ -121,5 +168,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "49f63be071e6410b611c2acd706cd03715990957c84f7ae2c3d6d52aeb09f301"
+  "planHash": "79db909183ab436b00afd4799a837fd4a096857384b69e900ea9975ae3c79cda"
 }

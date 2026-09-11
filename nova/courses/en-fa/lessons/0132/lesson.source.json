@@ -402,11 +402,12 @@
             "این جمله فقط وجود کار در آنجا را می‌گوید."
           ],
           "correctFa": "حقوق آنجا هم خوب است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -423,7 +424,8 @@
               "contrastReasonFa": "جمله طبیعی است، اما فقط وجود کار در آن محل را می‌گوید و حقوق را توصیف نمی‌کند."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

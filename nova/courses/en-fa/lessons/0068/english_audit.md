@@ -1,4 +1,4 @@
-<!-- sourceHash: 8750a384113251dedb541a69818bd1969a136baf4fdbbc03c7f184811bc4e98b -->
+<!-- sourceHash: b1458b37e6d54cf78d8775174fbab2789978fac972245444493a62a9ae305d87 -->
 # English Audit — EN-A1-L-0068
 
 **Lesson:** The price is high
@@ -34,13 +34,13 @@ This price is high.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** The price is high.
 - **options:** بالا یا زیاد | پایین | همان
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 2c0bae732b2a7e7c731eacc9df993e9976d5b96d8e435ee5608b9e2f659d580b -->
+<!-- sourceHash: a05c2439b0f4b21be553468dfd013d7dcee59a140ae62f38ab4fb1390c4f623e -->
 # English Audit — EN-A1-L-0024
 
 **Lesson:** Is this your book?
@@ -20,7 +20,7 @@ Is this your book?
 Yes. It's my book.
 
 - **Speech target:** Yes. It's my book.
-- **Accepted speech:** Yes. It's my book.
+- **Accepted speech:** Yes. It's my book. | Yes. It is my book.
 
 **T03 · maya**
 
@@ -31,7 +31,7 @@ Is this your pen?
 It's my pen.
 
 - **Speech target:** It's my pen.
-- **Accepted speech:** It's my pen.
+- **Accepted speech:** It's my pen. | It is my pen.
 
 ## Activities
 
@@ -55,7 +55,7 @@ It's my pen.
 **A06 · speak**
 
 - **textEn:** It's my pen.
-- **acceptedAnswersEn:** It's my pen.
+- **acceptedAnswersEn:** It's my pen. | It is my pen.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

@@ -1,4 +1,4 @@
-<!-- sourceHash: d23b08bec68e26684aea67858f5bc942fe9ff75dc172358014e64cc7924770fd -->
+<!-- sourceHash: bf3686ada0d29bbb20c903e4fd371865a32169444c572167dad11d14620d52ce -->
 # English Audit — EN-A1-L-0064
 
 **Lesson:** I use this cup
@@ -34,13 +34,13 @@ I use this bag.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I use this cup.
 - **options:** استفاده کردن | پیدا کردن | فروختن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

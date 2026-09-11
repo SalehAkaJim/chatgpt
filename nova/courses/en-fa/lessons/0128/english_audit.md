@@ -1,4 +1,4 @@
-<!-- sourceHash: a64709a8da0a29799e9148e2365703194bf2b822c0f2ddae2618424e3e8a4029 -->
+<!-- sourceHash: e4ebea2209003017a0cba6aeba9f8ee868a32dee4266fea1edc2f2ac07b3f54d -->
 # English Audit — EN-A1-L-0128
 
 **Lesson:** That guy is Sam
@@ -34,13 +34,13 @@ That guy is Leo.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** That guy is Sam
 - **options:** مرد | دست | ساعت
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

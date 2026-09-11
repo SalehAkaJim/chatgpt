@@ -1,36 +1,24 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0028",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "they are from iran",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0028",
-    "sourceHash": "e63f8c5c162a3bf52b60ec48d149c2fe143a1ec32240b8ff1ee3a60321441986",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "b0fa693c8b234acf09e6709b49f3e8bd1426140a3b4ef5041487c7cba05d5f60",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
     "reviewerType": "model",
-    "reviewedAt": "2026-09-09",
-    "scope": "Model/editor semantic and pedagogy review of production Lesson 0028 authored from curriculum spec en-fa-A1-LESSON-SPEC-0028; not an independent human or learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0028; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
@@ -42,7 +30,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "No new lexical target competes for attention; the learning delta is the selected CEFR-J they are pattern inside a familiar origin frame."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 5,
@@ -50,7 +38,7 @@
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "Two known walking-group members discussing where two new arrivals are from gives the pronoun a concrete referent and a practical social reason."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 5,
@@ -58,7 +46,7 @@
       },
       "repetitionUsefulness": {
         "score": 4,
-        "evidence": "Origin language returns after a long delay and changes grammatical perspective from I/you to they rather than simply repeating the Lesson 5 exchange."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -70,21 +58,32 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Static model/editor review only; the flow is short and focused, but real learner confusion between they/we/she, speech recognition and delayed retention remain untested."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "The Lesson covers only affirmative they are in a bounded origin statement and does not establish the full pronoun paradigm.",
-      "Contractions such as they're are intentionally deferred and final ElevenLabs prosody remains unreviewed."
+      "Contractions such as they're are intentionally deferred and final ElevenLabs prosody remains unreviewed.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "Selected CEFR-J they are, the highest-ranked new grammar candidate in spec 0028, without adding an unnecessary lexical target.",
       "Reused the origin frame from Lesson 5 after a long delay and changed speaker perspective instead of replaying the old exchange.",
       "Kept They are from Canada/Iran as compositional sentence content; no phrase row was added to the words layer.",
-      "Final retrieval changes the country filler from Canada to Iran to preserve productive recombination."
+      "Final retrieval changes the country filler from Canada to Iran to preserve productive recombination.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "dialogueExposure",
+        "duplicateScoring",
+        "speechEquivalence"
+      ]
+    },
     "status": "PASS",
     "average": 4.6,
     "errors": []
@@ -96,5 +95,5 @@
     "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "e63f8c5c162a3bf52b60ec48d149c2fe143a1ec32240b8ff1ee3a60321441986"
+  "sourceHash": "b0fa693c8b234acf09e6709b49f3e8bd1426140a3b4ef5041487c7cba05d5f60"
 }

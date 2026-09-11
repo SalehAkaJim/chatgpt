@@ -1,11 +1,11 @@
 {
   "version": 1,
   "lessonKey": "EN-A1-L-0027",
-  "sourceHash": "68cfc51c77ce98b20cea8363c1dcb16322868a2a2bbf9709efb70bf8fb71b7cc",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "sourceHash": "6ac6bbcc0c56d7ccfcc9ec62f0315793d4f3f7b84ff8bfc58a992cb43b84f5ac",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor learner-experience dependency repair for EN-A1-L-0027; checks learner-visible context and does not claim independent human or real-learner testing.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0027; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -17,7 +17,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "The only new grammar focus is affirmative he/she + is for naming a familiar person. No new lexical target competes for attention, and fixed who-questions are support prompts rather than assessed targets."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 5,
@@ -25,7 +25,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "A familiar cafe customer showing two phone photos during a short social exchange gives Ben a concrete reason to ask who each person is while keeping only Ava and Ben as speaking participants."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 5,
@@ -33,7 +33,7 @@
     },
     "repetitionUsefulness": {
       "score": 5,
-      "evidence": "Coffee returns after six Lessons in its original natural cafe function, while familiar names are repurposed from first-person introductions into third-person identification."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 5,
@@ -45,7 +45,7 @@
     },
     "learnerExperience": {
       "score": 4,
-      "evidence": "Learner-facing prompts were checked against what the Prototype actually renders; the activity no longer claims an unavailable visual context."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
@@ -54,7 +54,8 @@
     "The Lesson does not establish the full pronoun or be paradigm and does not assess question inversion.",
     "Who is she? and Who is he? are support formulas whose comprehension is scaffolded by the photo context rather than separately mastered.",
     "Final ElevenLabs prosody and delayed retention remain unmeasured.",
-    "No independent human or real learner test has been performed after learner-context repair."
+    "No independent human or real learner test has been performed after learner-context repair.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "Selected CEFR-J he/she is, the highest-ranked new grammar candidate in spec 0027, instead of adding a new lexical target.",
@@ -62,13 +63,21 @@
     "Reused due coffee naturally in the cafe rather than forcing a due item into the identification target itself.",
     "Kept Maya, Alex and Sara as familiar proper-name referents rather than lexical teaching rows; only Ava and Ben are speaking story participants.",
     "Final retrieval changes the female name from Maya to Sara, preventing the target from remaining a memorized single phrase.",
-    "Learner-context repair: A05 removed unavailable-photo claim: 'عکس مایا را می بینی. کدام جمله درست است؟' -> 'درباره مایا کدام جمله درست است؟'."
+    "Learner-context repair: A05 removed unavailable-photo claim: 'عکس مایا را می بینی. کدام جمله درست است؟' -> 'درباره مایا کدام جمله درست است؟'.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "learnerExperienceDependencyRepair": {
     "version": 1,
     "date": "2026-09-10",
     "changes": [
       "A05 removed unavailable-photo claim: 'عکس مایا را می بینی. کدام جمله درست است؟' -> 'درباره مایا کدام جمله درست است؟'"
+    ]
+  },
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure"
     ]
   }
 }

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0025",
   "sortOrder": 25,
   "levelKey": "A1",
-  "lessonSourceHash": "dd0e4d190ac2f7aa92f06eede09a7f6c750feee819882001bcc19d6016325a68",
+  "lessonSourceHash": "e894c7ed96b6e916cad9076b9cd4310395455a77f805cb13d5d945f783fba0e0",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -148,13 +148,7 @@
         "generalFrequencyRank": null,
         "priorityTier": "core_spoken"
       },
-      "pronunciation": {
-        "primaryArpabet": "W AH1 N",
-        "arpabet": [
-          "W AH1 N"
-        ],
-        "stressPattern": "1"
-      }
+      "pronunciation": null
     },
     {
       "lexicalKey": "EN-LEX-TWO-01",
@@ -187,32 +181,10 @@
       "constructionKeys": [
         "EN-CONSTR-I-AM-NOT"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "i am not",
-      "examples": [
-        {
-          "id": 2379436,
-          "text": "I am not.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13965920,
-          "text": "I am not here.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Leglaine"
-        },
-        {
-          "id": 13897324,
-          "text": "I am not exhausted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "kylewii"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null,
       "fallbackMatch": null
     },
@@ -228,32 +200,10 @@
       "lexicalLemmas": [
         "not"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "i am not",
-      "examples": [
-        {
-          "id": 2379436,
-          "text": "I am not.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13965920,
-          "text": "I am not here.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Leglaine"
-        },
-        {
-          "id": 13897324,
-          "text": "I am not exhausted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "kylewii"
-        }
-      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "no i'm not",
+      "examples": [],
       "fallback": {
         "query": "no i'm not",
         "rationale": "A short No, I'm not. reply is the direct natural first-person negative answer to the immediately preceding Are you ...? question. The Lesson intentionally does not force a longer negative sentence merely to demonstrate filler changes."
@@ -264,5 +214,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "188ca8feeb28790055b90a3226d1403f5c815ecaff30d7382d183d2efeac2c0f"
+  "planHash": "ecadf0e37feb4c6f112b22df39b0a41718187ddcd6474455ce8adeb8d3b1e6a9"
 }

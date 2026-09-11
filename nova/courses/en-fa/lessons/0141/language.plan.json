@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0141",
   "sortOrder": 141,
   "levelKey": "A1",
-  "lessonSourceHash": "0adae919502c609e9ee2c4459c3c435d1c1aeaf70590aa96bcffe806a27d64c8",
+  "lessonSourceHash": "edaed0636325faa1be0f6b99f0e8bac7d507d9f2f316998fa25922ee0896c6c8",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -133,32 +133,10 @@
       "lexicalLemmas": [
         "late"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "he is",
-      "examples": [
-        {
-          "id": 13788367,
-          "text": "He is fantastic.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Just_Balls"
-        },
-        {
-          "id": 13627422,
-          "text": "He is addicted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ahmd"
-        },
-        {
-          "id": 13530112,
-          "text": "He is Amazigh.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Abdaresrif"
-        }
-      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "she is late too",
+      "examples": [],
       "fallback": {
         "query": "She is late too",
         "rationale": "Changed-information same-lesson transfer preserving the selected sense."
@@ -169,5 +147,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "5181ca8b121d27ef6aeb7cfa0492c04ff90e57e61eaa49b7b03fded7e58c9ecc"
+  "planHash": "b7708889e8cde05bd19976659dc55bfd289b22374a0983d858a84d46338b8c09"
 }

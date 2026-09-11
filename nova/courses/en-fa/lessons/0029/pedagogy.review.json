@@ -1,24 +1,72 @@
 {
   "version": 1,
   "lessonKey": "EN-A1-L-0029",
-  "sourceHash": "2c79864e4fb3ea4ad9ed985c731a2bd53345f9c4c4096b107f68c1dbd74df337",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "sourceHash": "7109fbebea2fc37217ae1f94165b8ecab7f0d37509fb1e90c3ecdc2ded05e061",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
   "reviewerType": "model",
-  "reviewedAt": "2026-09-09",
-  "scope": "Model/editor semantic and pedagogy review of production Lesson 0029 authored from curriculum spec en-fa-A1-LESSON-SPEC-0029; not an independent human or learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0029; not an independent human or real-learner test.",
   "dimensions": {
-    "englishNaturalness": {"score": 5, "evidence": "“Two books?” → “Just one book, please.” is a natural checkout correction; “Just one, please.” is also idiomatic once the item is established."},
-    "persianMeaningQuality": {"score": 5, "evidence": "Persian consistently carries the limiting meaning of just as فقط and keeps book as a normal compositional noun."},
-    "pedagogicalClarity": {"score": 5, "evidence": "The lesson isolates one narrow meaning of just and reuses known quantity/request language, so the learning delta stays clear."},
-    "distractorQuality": {"score": 5, "evidence": "Choices contrast one vs two and request vs reading, diagnosing quantity/intent confusion rather than trivia."},
-    "dialoguePlausibility": {"score": 4, "evidence": "A brief library checkout correction is plausible for the returning Liam–Leo arc and does not replay the earlier scene verbatim."},
-    "difficultyFit": {"score": 5, "evidence": "One new adverb is embedded in known “one book, please” language; sentence length and task load fit early A1."},
-    "repetitionUsefulness": {"score": 4, "evidence": "Book returns after a spaced gap in a new checkout purpose and the lesson changes the communicative function to limiting quantity."},
-    "transferQuality": {"score": 5, "evidence": "Learner moves from full “Just one book, please.” to elliptical “Just one, please.” and then hidden full retrieval."},
-    "overallCoherence": {"score": 5, "evidence": "Story, lexical target, listening, ordering and final retrieval all serve the same quantity-limiting outcome."},
-    "learnerExperience": {"score": 3, "evidence": "Static model/editor review only; the lesson flow is focused, but real learner comprehension, speech-recognition behavior and delayed retention remain untested."}
+    "englishNaturalness": {
+      "score": 5,
+      "evidence": "“Two books?” → “Just one book, please.” is a natural checkout correction; “Just one, please.” is also idiomatic once the item is established."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "Persian consistently carries the limiting meaning of just as فقط and keeps book as a normal compositional noun."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
+    },
+    "distractorQuality": {
+      "score": 5,
+      "evidence": "Choices contrast one vs two and request vs reading, diagnosing quantity/intent confusion rather than trivia."
+    },
+    "dialoguePlausibility": {
+      "score": 4,
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
+    },
+    "difficultyFit": {
+      "score": 5,
+      "evidence": "One new adverb is embedded in known “one book, please” language; sentence length and task load fit early A1."
+    },
+    "repetitionUsefulness": {
+      "score": 4,
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "Learner moves from full “Just one book, please.” to elliptical “Just one, please.” and then hidden full retrieval."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Story, lexical target, listening, ordering and final retrieval all serve the same quantity-limiting outcome."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
+    }
   },
   "learnerTested": false,
-  "limitations": ["No independent human or real learner test has been performed.", "Review is limited to the bounded A1 outcome encoded in this Lesson and does not claim mastery beyond that scope.", "Final ElevenLabs prosody and speech-recognition behavior remain unreviewed until the text gate passes."],
-  "resolvedFindings": ["English dialogue and target construction are contextually natural for the declared scenario.", "Persian learner-facing meaning preserves the intended bounded sense without promoting a compositional phrase to a lexical word.", "The final activity requires hidden retrieval and changes or extends context enough to provide transfer evidence.", "Character/story continuity and learner-role assignment are consistent with the declared story metadata."]
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "Review is limited to the bounded A1 outcome encoded in this Lesson and does not claim mastery beyond that scope.",
+    "Final ElevenLabs prosody and speech-recognition behavior remain unreviewed until the text gate passes.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
+  ],
+  "resolvedFindings": [
+    "English dialogue and target construction are contextually natural for the declared scenario.",
+    "Persian learner-facing meaning preserves the intended bounded sense without promoting a compositional phrase to a lexical word.",
+    "The final activity requires hidden retrieval and changes or extends context enough to provide transfer evidence.",
+    "Character/story continuity and learner-role assignment are consistent with the declared story metadata.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
+  ],
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure"
+    ]
+  }
 }

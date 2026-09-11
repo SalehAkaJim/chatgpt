@@ -1,4 +1,4 @@
-<!-- sourceHash: 569a3671f677365c42778f18170a2fc76eafe89ecee8963ae8ab12dfcc3ddff5 -->
+<!-- sourceHash: d9d8a079c20408bdf320fd3d2bf35f072698992314e6d3ae77a65785c470d454 -->
 # English Audit — EN-A1-L-0020
 
 **Lesson:** Room two at seven
@@ -56,15 +56,15 @@ Room one at six.
 **A01 · lexical_teach**
 
 
+**A03 · dialogue**
+
+
 **A02 · response_choice**
 
 - **English prompt:** Community class
 Room two
 7:00
 - **options:** اتاق دو، ساعت هفت | اتاق دو، ساعت شش | اتاق یک، ساعت هفت
-
-**A03 · dialogue**
-
 
 **A04 · sentence_order**
 

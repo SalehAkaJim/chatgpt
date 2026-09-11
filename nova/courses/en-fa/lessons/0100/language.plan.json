@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0100",
   "sortOrder": 100,
   "levelKey": "A1",
-  "lessonSourceHash": "5705de9b44e04bf6628aec0d7953642f0a8505cd4e28c3d5134160aa33317b7a",
+  "lessonSourceHash": "b4d271e7140e5c44b86ae972022cf12163cdf6052b784ce867c7c0469761db8a",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -62,10 +62,32 @@
       "constructionKeys": [
         "EN-CONSTR-0100-WEEK"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "i'm busy this week",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "busy this week",
+      "examples": [
+        {
+          "id": 10097978,
+          "text": "I'm busy this week.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 10052628,
+          "text": "Yanni is busy this week.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6898400,
+          "text": "Are you busy this week?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "i'm busy this week",
         "rationale": "Natural first-person schedule statement for the current week."
@@ -81,10 +103,32 @@
       "lexicalLemmas": [
         "week"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "busy this week",
-      "examples": [],
+      "examples": [
+        {
+          "id": 10097978,
+          "text": "I'm busy this week.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 10052628,
+          "text": "Yanni is busy this week.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6898400,
+          "text": "Are you busy this week?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "busy this week",
         "rationale": "Natural target-collocation window around week in a personal schedule statement."
@@ -102,7 +146,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "i'm free next week",
+      "evidenceQuery": "and next week",
       "examples": [],
       "fallback": {
         "query": "i'm free next week",
@@ -119,10 +163,18 @@
       "lexicalLemmas": [
         "week"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 1,
       "evidenceQuery": "free next week",
-      "examples": [],
+      "examples": [
+        {
+          "id": 11036487,
+          "text": "When are you free next week?",
+          "lang": "eng",
+          "license": "CC0 1.0",
+          "owner": "shekitten"
+        }
+      ],
       "fallback": {
         "query": "free next week",
         "rationale": "Natural transfer collocation around week in a personal availability statement."
@@ -133,5 +185,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "22512a124e505c81cf769f2d327cddb3fd280d5ed6bcba0582074f8fcea8a7f8"
+  "planHash": "cfccbd9285e363ae6d863186df56cfaf9e6f5ef6f0f8956c3a169dc1a994976a"
 }

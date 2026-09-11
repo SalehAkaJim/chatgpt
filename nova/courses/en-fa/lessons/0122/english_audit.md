@@ -1,4 +1,4 @@
-<!-- sourceHash: 5d3fd2a5784620443ac34215ee27d635b8a43a136c916704b4e7f57cbc8c9b55 -->
+<!-- sourceHash: 93805f9e7d3a18946298b69bc457f57167750f21beaf3d140792e377406af7dd -->
 # English Audit — EN-A1-L-0122
 
 **Lesson:** This course is new
@@ -34,13 +34,13 @@ The English course is good.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** This course is new
 - **options:** دوره | خودرو | پیام
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

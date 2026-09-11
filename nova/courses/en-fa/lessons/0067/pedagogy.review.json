@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0067; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0067; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "The person stays constant while location changes, isolating the target verb."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 4,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 4,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 4,
-      "evidence": "find repeats with two familiar locations."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
@@ -51,7 +51,8 @@
     "find has multiple common senses; only the committed encounter/come-upon sense is intended here.",
     "Audio prosody is not reviewed before text gates pass.",
     "No independent human or real learner test has been performed after quality-v2 remediation.",
-    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "The Lesson does not claim mastery of all senses of find.",
@@ -65,11 +66,12 @@
     "Product Quality v2 polish: T03: 'And now?' -> 'And at home?'.",
     "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i find iris here'.",
     "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say i find iris at'.",
-    "Product Quality v2 polish: add naturalized-prompt usage fallback 'Where do you find Iris?'."
+    "Product Quality v2 polish: add naturalized-prompt usage fallback 'Where do you find Iris?'.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0067",
-  "sourceHash": "4bd7206fe6d571005c0f3b4e0ddfa3c9e19e1c94eb67505ab18b25d6102598d9",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "sourceHash": "7f5b2887fbb6b3ac7b427ee28334bb32c1031c750db9da877a02d5033cd98dd9",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
   "qualityV2Remediation": {
     "version": 1,
     "date": "2026-09-10",
@@ -88,6 +90,14 @@
       "remove obsolete teacher-scaffolding usage fallback 'say i find iris here'",
       "remove obsolete teacher-scaffolding usage fallback 'say i find iris at'",
       "add naturalized-prompt usage fallback 'Where do you find Iris?'"
+    ]
+  },
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure",
+      "duplicateScoring"
     ]
   }
 }

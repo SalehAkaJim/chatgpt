@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0041",
   "sortOrder": 41,
   "levelKey": "A1",
-  "lessonSourceHash": "3a078201542ad648254f82dc52d4d997142f67e301cd048e3f43430670b238bd",
+  "lessonSourceHash": "21866cdc2fd63f78873b6eebc9d69f34a4999e84284dd18062e77405b97ffcdc",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -113,10 +113,25 @@
       "constructionKeys": [
         "EN-CONSTR-0041-MAKE"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "i make tea too",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 2,
+      "evidenceQuery": "i make coffee",
+      "examples": [
+        {
+          "id": 12133144,
+          "text": "Sit down while I make coffee.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 12818156,
+          "text": "Every morning I make coffee and savor its aroma.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
       "fallback": {
         "query": "I make coffee",
         "rationale": "Bounded natural A1 use selected for make."
@@ -209,7 +224,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "i make tea too",
+      "evidenceQuery": "i make tea",
       "examples": [],
       "fallback": {
         "query": "I make tea",
@@ -221,5 +236,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "7e5bab2699c3377bc3ff84a2ac2232c7386151058d74e4c4a7a028a713de2f91"
+  "planHash": "e790a939251f6cea0cd93c7264066b30cf342210b5056872acd65f7f96377fde"
 }

@@ -1,33 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0117",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "this child is with us",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0117; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0117; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
@@ -39,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "One lexical sense is introduced, recognized, practiced in a guided exchange, transferred to a second context, and retrieved without the answer shown first."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 4,
@@ -47,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 5,
-        "evidence": "مایا و الکس جلوی موزه منتظر گروه هستند و درباره یک بچه که کنار معلم ایستاده حرف می‌زنند."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 4,
@@ -55,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 5,
-        "evidence": "child recurs across recognition, listening, dialogue, transfer, and hidden spoken retrieval."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -67,25 +55,34 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Only the bounded A1 lexical sense defined for this Lesson is reviewed.",
-      "Generated audio pronunciation/prosody is not evaluated at this text stage."
+      "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English turns and response options were checked for grammar and naturalness.",
       "Persian orthography and English–Persian meaning consistency were checked.",
       "Reference key, part of speech, sense key, and provisional spec hash were cross-checked against the worker packet.",
       "Final retrieval keeps the answer hidden before attempt.",
-      "Character pair and learner role do not repeat the immediately preceding Lesson."
+      "Character pair and learner role do not repeat the immediately preceding Lesson.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0117",
-    "sourceHash": "4b580f442174f18eb4e1542d04fcc448fd4c29c5d7f8628a3743bacb2d86107a",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "f8f7cc4a6ac0b38e6f751c3b9faca13edbd3687854f1ed188361ff36205cdc1f",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "duplicateScoring"
+      ]
+    },
     "status": "PASS",
     "average": 4.6,
     "errors": []
@@ -97,5 +94,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "4b580f442174f18eb4e1542d04fcc448fd4c29c5d7f8628a3743bacb2d86107a"
+  "sourceHash": "f8f7cc4a6ac0b38e6f751c3b9faca13edbd3687854f1ed188361ff36205cdc1f"
 }

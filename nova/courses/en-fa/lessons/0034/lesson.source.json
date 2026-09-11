@@ -211,33 +211,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی also را از جمله پیدا کن.",
-      "promptFa": "also اینجا چه چیزی اضافه می‌کند؟",
-      "config": {
-        "options": [
-          "من هم همین علاقه را دارم",
-          "من این علاقه را ندارم",
-          "فقط روبی این علاقه را دارد"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است؛ also یعنی علاوه بر طرف مقابل، من هم.",
-            "جمله مثبت است، نه منفی.",
-            "also دقیقاً نشان می‌دهد سارا هم همان علاقه را دارد."
-          ],
-          "correctFa": "also اینجا معنی «هم» می‌دهد."
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "promptEn": "I also like coffee."
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های روبی را گوش کن و جواب سارا را بگو.",
@@ -266,6 +239,33 @@
         "showResponseText": true,
         "showResponseTranslation": true
       }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی also را از جمله پیدا کن.",
+      "promptFa": "also اینجا چه چیزی اضافه می‌کند؟",
+      "config": {
+        "options": [
+          "من هم همین علاقه را دارم",
+          "من این علاقه را ندارم",
+          "فقط روبی این علاقه را دارد"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ also یعنی علاوه بر طرف مقابل، من هم.",
+            "جمله مثبت است، نه منفی.",
+            "also دقیقاً نشان می‌دهد سارا هم همان علاقه را دارد."
+          ],
+          "correctFa": "also اینجا معنی «هم» می‌دهد."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      },
+      "promptEn": "I also like coffee."
     },
     {
       "activityKey": "A03",

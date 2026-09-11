@@ -154,7 +154,8 @@
       "translationFa": "روی میز است.",
       "speechTargetEn": "It's on the table.",
       "acceptedSpeechEn": [
-        "It's on the table."
+        "It's on the table.",
+        "It is on the table."
       ],
       "audioRequired": true
     },
@@ -299,11 +300,13 @@
             "این جمله نوشیدنی می خواهد و به این موقعیت مربوط نیست."
           ],
           "correctFa": "No, a book, please. اصلاح مناسب است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
-        "evidenceKind": "recognition_or_selection",
-        "learningDemand": "transfer"
+        "evidenceKind": "practice_only",
+        "learningDemand": "transfer",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

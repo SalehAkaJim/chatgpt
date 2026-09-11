@@ -1,4 +1,4 @@
-<!-- sourceHash: a0ac89c9fdc30cb055405ad63103a6c7fa520103467547080e1650f1c7f1852e -->
+<!-- sourceHash: 8bc91c38985141db4f016ffd760d8d13ab8b14550e9c64a5ec5c935bf25a6095 -->
 # English Audit — EN-A1-L-0052
 
 **Lesson:** One year
@@ -34,13 +34,13 @@ Two years.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** One year.
 - **options:** سال | کتاب | اتاق
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

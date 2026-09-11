@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0139",
   "sortOrder": 139,
   "levelKey": "A1",
-  "lessonSourceHash": "9cd22e45f70d169187eb7b9a65d08abe9bfdce436255edbd796c49509daf7ce2",
+  "lessonSourceHash": "78584a13a79ef00f667aee84bece3daa00ea0445003dc827c3be2e5b7c31774b",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -88,10 +88,18 @@
       "lexicalLemmas": [
         "question"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "the place is another question",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 1,
+      "evidenceQuery": "is another question",
+      "examples": [
+        {
+          "id": 13581589,
+          "text": "Nobody should have to master Turkish (or Japanese, Chinese, Spanish etc.) in order to understand what's written in Russian. It's important that a sentence sounds natural and is understandable. Whether the translation matches the original is another question. If it's not possible to carry the sense across in a natural and understandable way, then it's better to not translate the sentence at all.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "araneo"
+        }
+      ],
       "fallback": {
         "query": "the place is another question",
         "rationale": "Natural changed-context use of the same bounded sense."
@@ -102,5 +110,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "d7fdb09b7d6a336cc87c5ea8a1dff87ed09a0220ef932599868231e83db6f932"
+  "planHash": "d6fc267f6c8529f4f5b1fb102653b00e35a2ff2cdfef23f8d260c00131a3ddb5"
 }

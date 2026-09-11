@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0024",
   "sortOrder": 24,
   "levelKey": "A1",
-  "lessonSourceHash": "2c0bae732b2a7e7c731eacc9df993e9976d5b96d8e435ee5608b9e2f659d580b",
+  "lessonSourceHash": "a05c2439b0f4b21be553468dfd013d7dcee59a140ae62f38ab4fb1390c4f623e",
   "enforceFromSortOrder": 25,
   "enforced": false,
   "grammarEvidence": [
@@ -113,32 +113,10 @@
       "constructionKeys": [
         "EN-CONSTR-IS-THIS-YOUR"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "is this your",
-      "examples": [
-        {
-          "id": 1436332,
-          "text": "Is this yours?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "marcelostockle"
-        },
-        {
-          "id": 13735781,
-          "text": "Is this your sock?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 13558956,
-          "text": "Is this your bedroom?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "LeviHighway"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null,
       "fallbackMatch": null
     },
@@ -164,5 +142,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "943bdcaf9f49d3c12fd04efeffe1abb6221d41c44b2a735e01059c6f41d5361b"
+  "planHash": "60b96a34c15793ad1dc7e3772c4c2e971a0bb46fea837f2630afc8f7b93d7503"
 }

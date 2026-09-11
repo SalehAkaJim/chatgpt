@@ -168,7 +168,8 @@
       "audioRequired": true,
       "speechTargetEn": "No. That is your pen.",
       "acceptedSpeechEn": [
-        "No. That is your pen."
+        "No. That is your pen.",
+        "No. That's your pen."
       ]
     },
     {
@@ -188,33 +189,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی جمله را انتخاب کن.",
-      "promptFa": "نورا درباره کتاب چه می‌گوید؟",
-      "config": {
-        "options": [
-          "این کتاب مال منه",
-          "اون خودکار مال توئه",
-          "این کتاب مال اوونه"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است؛ This is my book یعنی این کتاب مال منه.",
-            "این معنی مربوط به جمله دوم و that است.",
-            "my درباره وسیله خود گوینده است، نه اوون."
-          ],
-          "correctFa": "This is my book یعنی این کتاب مال نوراست."
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      },
-      "promptEn": "This is my book."
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -244,6 +218,33 @@
         "showResponseText": true,
         "showResponseTranslation": true
       }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی جمله را انتخاب کن.",
+      "promptFa": "نورا درباره کتاب چه می‌گوید؟",
+      "config": {
+        "options": [
+          "این کتاب مال منه",
+          "اون خودکار مال توئه",
+          "این کتاب مال اوونه"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ This is my book یعنی این کتاب مال منه.",
+            "این معنی مربوط به جمله دوم و that است.",
+            "my درباره وسیله خود گوینده است، نه اوون."
+          ],
+          "correctFa": "This is my book یعنی این کتاب مال نوراست."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      },
+      "promptEn": "This is my book."
     },
     {
       "activityKey": "A03",

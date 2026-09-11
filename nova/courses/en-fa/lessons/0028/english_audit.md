@@ -1,4 +1,4 @@
-<!-- sourceHash: e63f8c5c162a3bf52b60ec48d149c2fe143a1ec32240b8ff1ee3a60321441986 -->
+<!-- sourceHash: b0fa693c8b234acf09e6709b49f3e8bd1426140a3b4ef5041487c7cba05d5f60 -->
 # English Audit — EN-A1-L-0028
 
 **Lesson:** They are from Canada
@@ -15,7 +15,7 @@ Where are they from?
 They are from Canada.
 
 - **Speech target:** They are from Canada.
-- **Accepted speech:** They are from Canada.
+- **Accepted speech:** They are from Canada. | They're from Canada.
 
 **T03 · sara**
 
@@ -33,17 +33,17 @@ Yes.
 They are from Iran.
 
 - **Speech target:** They are from Iran.
-- **Accepted speech:** They are from Iran.
+- **Accepted speech:** They are from Iran. | They're from Iran.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** They are from Canada.
 - **options:** اونا اهل کانادا هستن | اون دختر اهل کاناداست | ما اهل کانادا هستیم
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -62,7 +62,7 @@ They are from Iran.
 **A06 · speak**
 
 - **textEn:** They are from Iran.
-- **acceptedAnswersEn:** They are from Iran.
+- **acceptedAnswersEn:** They are from Iran. | They're from Iran.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

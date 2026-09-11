@@ -1,44 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0139",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 90,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "choosing a date is the main question",
-        "activityKeys": [
-          "A03",
-          "A04"
-        ]
-      }
-    },
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "the place is another question",
-        "activityKeys": [
-          "A05",
-          "A07"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0139; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0139; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
@@ -50,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "A01 disambiguates the sense before A02; dialogue then precedes all dependent listening and retrieval tasks."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 5,
@@ -58,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 5,
-        "evidence": "نینا و آیریس در مرکز محله برای یک برنامه گروهی درباره تاریخ و مکان تصمیم می‌گیرند."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 3,
@@ -66,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 5,
-        "evidence": "question repeats only in the matter-to-decide sense, with explicit disambiguation from direct questions."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -78,7 +55,7 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; semantic difficulty remains a limitation despite dependency-safe authoring."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       },
       "runtimeAssetGrounding": {
         "score": 5,
@@ -90,7 +67,8 @@
       "No independent human or real learner test has been performed.",
       "This lesson intentionally teaches question sense 2 ‘subject matter at issue’, not the basic direct-question sense.",
       "This abstract sense may feel harder than neighboring A1 lexical items.",
-      "Generated audio pronunciation/prosody is not evaluated at this text stage."
+      "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English grammar and bounded sense consistency checked.",
@@ -99,11 +77,20 @@
       "A02 precedes A03, A06 and A07 dependency use.",
       "No unsupported visual exists and all audio sources are grounded.",
       "A07 hides the answer before attempt.",
-      "Community arc returns from Lesson 0134 after 5 Lessons with learner role switched to Iris."
+      "Community arc returns from Lesson 0134 after 5 Lessons with learner role switched to Iris.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0139",
-    "sourceHash": "9cd22e45f70d169187eb7b9a65d08abe9bfdce436255edbd796c49509daf7ce2",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "78584a13a79ef00f667aee84bece3daa00ea0445003dc827c3be2e5b7c31774b",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "dialogueExposure",
+        "duplicateScoring"
+      ]
+    },
     "status": "PASS",
     "average": 4.5,
     "errors": []
@@ -115,5 +102,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "9cd22e45f70d169187eb7b9a65d08abe9bfdce436255edbd796c49509daf7ce2"
+  "sourceHash": "78584a13a79ef00f667aee84bece3daa00ea0445003dc827c3be2e5b7c31774b"
 }

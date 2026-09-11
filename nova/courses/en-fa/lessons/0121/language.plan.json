@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0121",
   "sortOrder": 121,
   "levelKey": "A1",
-  "lessonSourceHash": "b4d5ad185ccf1330956b15a4aa2d068e1908b34229c124bf2cfad5fb7518a528",
+  "lessonSourceHash": "f0747ef31dc2783f7f683345a6e6d9aaad60c2c7efa427698198fd55c57ca0f9",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -87,32 +87,10 @@
       "lexicalLemmas": [
         "maybe"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "he is",
-      "examples": [
-        {
-          "id": 13788367,
-          "text": "He is fantastic.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Just_Balls"
-        },
-        {
-          "id": 13627422,
-          "text": "He is addicted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ahmd"
-        },
-        {
-          "id": 13530112,
-          "text": "He is Amazigh.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Abdaresrif"
-        }
-      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "maybe he is",
+      "examples": [],
       "fallback": {
         "query": "maybe he is",
         "rationale": "Exact target-collocation window from the transfer learner turn; natural sentence-initial probability frame around maybe."
@@ -123,5 +101,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "8e104a166541a931faf9b31df4bb1886c26a9ec086db9d74b42015f8140e4f21"
+  "planHash": "56d9a04b43eada24d0bac25a76ad985f0d398b0b77fcb3e7296fc15a50ea2bea"
 }

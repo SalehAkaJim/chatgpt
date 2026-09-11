@@ -1,4 +1,4 @@
-<!-- sourceHash: 6c81c92b72d54c4a0533e29cbb20e204d134a6ef2f67c253704c2cd2fc5e6694 -->
+<!-- sourceHash: 69f020fa38f0e0e46df4e9873134d4d47cdc193c55725baa12ade66d542313df -->
 # English Audit — EN-A1-L-0103
 
 **Lesson:** One person is waiting
@@ -34,13 +34,13 @@ Yes, one person.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** One person is waiting.
 - **options:** نفر | گروه | روز
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

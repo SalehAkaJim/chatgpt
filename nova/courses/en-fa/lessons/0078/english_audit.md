@@ -1,4 +1,4 @@
-<!-- sourceHash: ef18e4462ad5b4b7e22e9f16d4b4c01da45907941cfdae5185d977f04f720593 -->
+<!-- sourceHash: 2f47b37b7e46b0946b6df12366f4fde2ca88e76997798149384aafda05b25afb -->
 # English Audit — EN-A1-L-0078
 
 **Lesson:** Say it again
@@ -34,13 +34,13 @@ Try again.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Say it again.
 - **options:** دوباره | امروز | اینجا
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

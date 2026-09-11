@@ -148,33 +148,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی say را در جمله پیدا کن.",
-      "promptFa": "say در این درس چه معنی‌ای دارد؟",
-      "promptEn": "She says hello.",
-      "config": {
-        "options": [
-          "گفتن، بیان کردن",
-          "خواندن",
-          "گفتن"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«خواندن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«گفتن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "گفتن، بیان کردن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های owen را گوش کن و جواب nora را بگو.",
@@ -202,6 +175,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی say را در جمله پیدا کن.",
+      "promptFa": "say در این درس چه معنی‌ای دارد؟",
+      "promptEn": "She says hello.",
+      "config": {
+        "options": [
+          "گفتن، بیان کردن",
+          "خواندن",
+          "گفتن"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«خواندن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«گفتن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "گفتن، بیان کردن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -285,11 +285,13 @@
             "«She says hello too.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "او هم سلام می‌گوید."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

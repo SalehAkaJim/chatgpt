@@ -194,33 +194,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی جمله را از روی he و she تشخیص بده.",
-      "promptEn": "She is Maya.",
-      "promptFa": "کدام معنی درست است؟",
-      "config": {
-        "options": [
-          "اون مایاست",
-          "اون الکسه",
-          "من مایا هستم"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است؛ she درباره یک زن یا دختر دیگر است.",
-            "Alex اسم دیگری است و این جمله Maya می گوید.",
-            "برای خودت از I استفاده می کنی، نه she."
-          ],
-          "correctFa": "She is Maya. یعنی اون مایاست."
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف های بن را گوش کن و جواب آوا را با صدای بلند بگو.",
@@ -256,6 +229,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی جمله را از روی he و she تشخیص بده.",
+      "promptEn": "She is Maya.",
+      "promptFa": "کدام معنی درست است؟",
+      "config": {
+        "options": [
+          "اون مایاست",
+          "اون الکسه",
+          "من مایا هستم"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ she درباره یک زن یا دختر دیگر است.",
+            "Alex اسم دیگری است و این جمله Maya می گوید.",
+            "برای خودت از I استفاده می کنی، نه she."
+          ],
+          "correctFa": "She is Maya. یعنی اون مایاست."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {

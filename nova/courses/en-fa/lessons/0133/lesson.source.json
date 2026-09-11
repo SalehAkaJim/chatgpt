@@ -323,11 +323,12 @@
             "این جمله طبیعی است، اما پاسخ موقعیت دوم نیست."
           ],
           "correctFa": "This problem is easy."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -344,7 +345,8 @@
               "contrastReasonFa": "جمله طبیعی است، اما پاسخ درست این موقعیت نیست."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

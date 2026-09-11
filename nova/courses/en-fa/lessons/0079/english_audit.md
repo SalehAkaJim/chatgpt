@@ -1,4 +1,4 @@
-<!-- sourceHash: 813ebde70a95ad31b085b15fd3d046ae78d3d2804605089b0029182cbf58909a -->
+<!-- sourceHash: cca23f38763a9613a2502092499a89656d4a20dc354d596d20fea6521767748d -->
 # English Audit — EN-A1-L-0079
 
 **Lesson:** The bus is at the end
@@ -34,13 +34,13 @@ Wait at the end.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** The bus is at the end.
 - **options:** انتها | شروع | خانه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

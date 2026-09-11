@@ -126,7 +126,8 @@
       "audioRequired": true,
       "speechTargetEn": "It is far away.",
       "acceptedSpeechEn": [
-        "It is far away."
+        "It is far away.",
+        "It's far away."
       ]
     },
     {
@@ -155,33 +156,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی away را پیدا کن.",
-      "promptFa": "away در این درس چه معنی‌ای دارد؟",
-      "promptEn": "It is far away.",
-      "config": {
-        "options": [
-          "دور",
-          "نزدیک",
-          "دوم"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی برعکس هدف است.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "دور"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های مایا را گوش کن و جواب الکس را بگو.",
@@ -209,6 +183,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی away را پیدا کن.",
+      "promptFa": "away در این درس چه معنی‌ای دارد؟",
+      "promptEn": "It is far away.",
+      "config": {
+        "options": [
+          "دور",
+          "نزدیک",
+          "دوم"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی برعکس هدف است.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "دور"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -288,11 +289,13 @@
             "این جمله نامربوط است."
           ],
           "correctFa": "ایستگاه اتوبوس دور است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

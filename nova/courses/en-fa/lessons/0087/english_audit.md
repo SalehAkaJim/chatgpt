@@ -1,4 +1,4 @@
-<!-- sourceHash: dd019727f5ed36a898868a80c0d7a39de555a28e68e01f3f4abb0f1e321b48e8 -->
+<!-- sourceHash: 9e7651d2c1cf417a2d8b50719b315669cdd5e5ae11cab1f7c38b2c7363b63f13 -->
 # English Audit — EN-A1-L-0087
 
 **Lesson:** Far away
@@ -19,7 +19,7 @@ The school?
 It is far away.
 
 - **Speech target:** It is far away.
-- **Accepted speech:** It is far away.
+- **Accepted speech:** It is far away. | It's far away.
 
 **T03 · maya**
 
@@ -34,13 +34,13 @@ The bus stop is far away.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** It is far away.
 - **options:** دور | نزدیک | دوم
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

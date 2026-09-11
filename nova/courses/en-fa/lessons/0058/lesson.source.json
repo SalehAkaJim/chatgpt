@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی great را در این درس پیدا کن.",
-      "promptFa": "great در این درس چه معنی‌ای دارد؟",
-      "promptEn": "A great big room.",
-      "config": {
-        "options": [
-          "بزرگ",
-          "جدید",
-          "قدیمی"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«جدید» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«قدیمی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "بزرگ"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های owen را گوش کن و جواب nora را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی great را در این درس پیدا کن.",
+      "promptFa": "great در این درس چه معنی‌ای دارد؟",
+      "promptEn": "A great big room.",
+      "config": {
+        "options": [
+          "بزرگ",
+          "جدید",
+          "قدیمی"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«جدید» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«قدیمی» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "بزرگ"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -279,11 +279,13 @@
             "«A new big bag.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "یک کیف خیلی بزرگ."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

@@ -1,4 +1,4 @@
-<!-- sourceHash: e2e1458d49d8958f708d466b517acd7b4774b73253d0c56c8186e79bec643212 -->
+<!-- sourceHash: 345461dddee1387ac68ad614d1d02796bc8f30190f2f74ada740b66792501bb5 -->
 # English Audit — EN-A1-L-0095
 
 **Lesson:** This one is different
@@ -34,13 +34,13 @@ The color is different.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** This one is different.
 - **options:** متفاوت | آماده | خالی
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

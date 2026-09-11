@@ -132,32 +132,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "سوال درست را انتخاب کن.",
-      "promptFa": "برای پرسیدن «این جدید است؟» کدام درست است؟",
-      "config": {
-        "optionsEn": [
-          "Is this new?",
-          "This is new.",
-          "Is that new?"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این جمله خبری است.",
-            "این درباره آن می‌پرسد."
-          ],
-          "correctFa": "Is this new?"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های nina را گوش کن و سوال iris را بگو.",
@@ -185,6 +159,32 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "سوال درست را انتخاب کن.",
+      "promptFa": "برای پرسیدن «این جدید است؟» کدام درست است؟",
+      "config": {
+        "optionsEn": [
+          "Is this new?",
+          "This is new.",
+          "Is that new?"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این جمله خبری است.",
+            "این درباره آن می‌پرسد."
+          ],
+          "correctFa": "Is this new?"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -268,11 +268,13 @@
             "این جمله خبری است."
           ],
           "correctFa": "آن جدید است؟"
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

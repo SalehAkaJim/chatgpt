@@ -1,4 +1,4 @@
-<!-- sourceHash: 7bccc17ca5e1f6d114617296e1d47928bbe641cc3d4d091ed592878d939d5f71 -->
+<!-- sourceHash: 2b48d482fb2a7bb77164ca4a6c2274082aa351fda7d8a6037c176ba28351f3d4 -->
 # English Audit — EN-A1-L-0044
 
 **Lesson:** Come back
@@ -35,13 +35,13 @@ Yes. Come back with the book.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Okay. I come back.
 - **options:** برگشت به جای قبل | خیلی | واقعا
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 0adae919502c609e9ee2c4459c3c435d1c1aeaf70590aa96bcffe806a27d64c8 -->
+<!-- sourceHash: edaed0636325faa1be0f6b99f0e8bac7d507d9f2f316998fa25922ee0896c6c8 -->
 # English Audit — EN-A1-L-0141
 
 **Lesson:** Say you are late
@@ -20,7 +20,7 @@ Are you here?
 Yes, but I am late.
 
 - **Speech target:** Yes, but I am late.
-- **Accepted speech:** Yes, but I am late.
+- **Accepted speech:** Yes, but I am late. | Yes, but I'm late.
 
 **T03 · nora**
 
@@ -77,7 +77,7 @@ Yes, she is late too.
 **A10 · speak**
 
 - **textEn:** Yes, but I am late.
-- **acceptedAnswersEn:** Yes, but I am late.
+- **acceptedAnswersEn:** Yes, but I am late. | Yes, but I'm late.
 
 **A11 · speak**
 

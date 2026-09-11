@@ -1,4 +1,4 @@
-<!-- sourceHash: a34473d2eb0254bcf6125b7b114a166d43d5fd97a2570d1578f2640affa3eb51 -->
+<!-- sourceHash: 0b908f42ade598fdd12ab0281198708da7643af404b1f83bd90d8a75e99e0509 -->
 # English Audit — EN-A1-L-0015
 
 **Lesson:** How much is it?
@@ -46,13 +46,13 @@ How much is it?
 **A01 · lexical_teach**
 
 
+**A03 · dialogue**
+
+
 **A02 · response_choice**
 
 - **English prompt:** Tea — $5
 - **options:** پنج دلار | دو دلار | اتاق پنج
-
-**A03 · dialogue**
-
 
 **A04 · sentence_order**
 

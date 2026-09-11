@@ -10,7 +10,7 @@
   "descriptionFa": "با reason درباره دلیل یک اتفاق پرسش کن.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0144",
   "outcomeFa": "reason را به معنی «دلیل» در یک پرسش کوتاه با be به کار ببری.",
-  "scenarioFa": "بن و آوا در ادامه داستان کافه درباره موضوع این درس گفت‌وگو می‌کنند.",
+  "scenarioFa": "در کافه، کنار پیشخوان، آوا می‌گوید «جلسه امروز دیرتر است.» و بن پاسخ می‌دهد «این دلیلش است؟».",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0143"
   ],
@@ -53,7 +53,7 @@
       ],
       "continuesLessonKey": "EN-A1-L-0138",
       "settingFa": "کافه، کنار پیشخوان",
-      "storyBeatFa": "بن و آوا در ادامه داستان کافه درباره موضوع این درس گفت‌وگو می‌کنند."
+      "storyBeatFa": "آوا با «جلسه امروز دیرتر است.» گفت‌وگو را شروع می‌کند، بن می‌گوید «این دلیلش است؟»؛ بعد آوا می‌گوید «نه. اتاق پر است.» و بن با «آن دلیلش است؟» پاسخ می‌دهد."
     },
     "reviewLinks": [
       {
@@ -241,11 +241,12 @@
             "«Is this the room?» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "این دلیلش است؟"
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "skillFocus": "listening",
         "distractorAudit": {
           "reviewerType": "model",
@@ -263,7 +264,8 @@
               "contrastReasonFa": "معنی یا اطلاعات جمله فرق دارد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -285,11 +287,12 @@
             "«Is this the room?» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "Is this the reason?"
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -306,7 +309,8 @@
               "contrastReasonFa": "معنی هدف را عوض می‌کند."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -328,11 +332,12 @@
             "«Is that the room?» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "Is that the reason?"
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -349,7 +354,8 @@
               "contrastReasonFa": "اطلاعات هدف را عوض می‌کند."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

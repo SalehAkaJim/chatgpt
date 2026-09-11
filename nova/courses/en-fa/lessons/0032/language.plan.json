@@ -101,12 +101,15 @@
       "constructionKeys": [
         "EN-CONSTR-THIS-ROOM-IS-NEW"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "room is new",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "room is new",
+        "rationale": "Room is new is a transparent A1 adjective use of new in the selected recently-made/acquired sense with room already taught."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "the room is new",
@@ -117,12 +120,15 @@
       "constructionKeys": [
         "EN-CONSTR-THE-ROOM-IS-NEW"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
       "evidenceQuery": "room is new",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "room is new",
+        "rationale": "Room is new is a transparent A1 adjective use of new in the selected recently-made/acquired sense with room already taught."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "room is new",
@@ -147,5 +153,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "ebc3866b541775e74497e633e19f679ca7ead81c6ac37c5da6018416d17546e1"
+  "planHash": "4f96e879c7d03fbc2ac4a9f0b272fb15046ce2d8296333e4e4f49fcef1875f17"
 }

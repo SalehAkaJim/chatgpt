@@ -117,7 +117,8 @@
       "translationFa": "خوبم، ممنون.",
       "speechTargetEn": "I'm fine, thanks.",
       "acceptedSpeechEn": [
-        "I'm fine, thanks."
+        "I'm fine, thanks.",
+        "I am fine, thanks."
       ],
       "audioRequired": true
     },
@@ -232,11 +233,13 @@
             "این عبارت برای خداحافظی است."
           ],
           "correctFa": "این همان repair phrase اصلی درس است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
-        "evidenceKind": "recognition_or_selection",
-        "learningDemand": "changed_context"
+        "evidenceKind": "practice_only",
+        "learningDemand": "changed_context",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

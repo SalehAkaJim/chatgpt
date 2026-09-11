@@ -1,4 +1,4 @@
-<!-- sourceHash: 16bd63a7675bb484ee54a62b6448527ec0a8be23ebe6c5c1c56a82a2ec7a0b4e -->
+<!-- sourceHash: 98d11bf342682922595c126f63e455d9a9c906ce8629134e16af826d2bb0c09e -->
 # English Audit — EN-A1-L-0109
 
 **Lesson:** Not here yet
@@ -19,7 +19,7 @@ Is the bus here?
 No, it isn't here yet.
 
 - **Speech target:** No, it isn't here yet.
-- **Accepted speech:** No, it isn't here yet.
+- **Accepted speech:** No, it isn't here yet. | No, it'sn't here yet.
 
 **T03 · nina**
 

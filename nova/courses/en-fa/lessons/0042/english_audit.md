@@ -1,4 +1,4 @@
-<!-- sourceHash: 7a7bff7d050115cc0c31c02cbbfbd9266bf6c589f99c9930a14bfe8d7d6f4597 -->
+<!-- sourceHash: 258c435d39884f37731c5c47dc26af360430ab51fa18066a7633b97f378db69b -->
 # English Audit — EN-A1-L-0042
 
 **Lesson:** I think there is a book
@@ -36,13 +36,13 @@ I think there is a pen.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I think there is a book.
 - **options:** فکر کردن، نظر دادن | خواندن | گفتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

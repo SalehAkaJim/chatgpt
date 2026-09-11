@@ -1,4 +1,4 @@
-<!-- sourceHash: 53e9378691d64f98e624a0bce3acb0b007f5082c9fcc29ae1ebdf53e92b4b882 -->
+<!-- sourceHash: c7626132f5c61cc6e23df9a6140d319f15c1b294eeac1fc73b7b9011d8198992 -->
 # English Audit — EN-A1-L-0080
 
 **Lesson:** Show me the photo
@@ -34,13 +34,13 @@ Show me the map.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Show me the photo.
 - **options:** نشان دادن | نگه داشتن | رفتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: f4f276ff68a9d734e872a2481dabf8ca66c2bf8e5e4db1ac81b9a5edcc9bc0b5 -->
+<!-- sourceHash: 4d6ff23dd773c6a14bc96a0fb39fbbe3addadcf4a0464d5fd3eb4a470422407c -->
 # English Audit — EN-A1-L-0016
 
 **Lesson:** What time?
@@ -20,7 +20,7 @@ What time?
 It's at six.
 
 - **Speech target:** It's at six.
-- **Accepted speech:** It's at six.
+- **Accepted speech:** It's at six. | It is at six.
 
 **T03 · sara**
 
@@ -45,13 +45,13 @@ At six.
 **A01 · lexical_teach**
 
 
+**A03 · dialogue**
+
+
 **A02 · response_choice**
 
 - **English prompt:** Next walk — 6:00
 - **options:** ساعت شش | اتاق شش | پنج دلار
-
-**A03 · dialogue**
-
 
 **A04 · sentence_order**
 

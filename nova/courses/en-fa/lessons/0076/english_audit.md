@@ -1,4 +1,4 @@
-<!-- sourceHash: 2db58b603536cb0406a7a196d5b48a16d513e69697c798273ba7f8f1f1338e1f -->
+<!-- sourceHash: 6108c0c535c11bcd7379b80cc64e55f96827daa888fee0594be34a790edb17ff -->
 # English Audit — EN-A1-L-0076
 
 **Lesson:** I go to school
@@ -34,13 +34,13 @@ We go to school.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I go to school.
 - **options:** مدرسه | خانه | کافه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

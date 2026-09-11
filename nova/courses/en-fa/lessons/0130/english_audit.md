@@ -1,4 +1,4 @@
-<!-- sourceHash: 0d85867e11d8db800a2a739031e3310a31a3fdf73154b584bc04e3089d10a97f -->
+<!-- sourceHash: 544209fd9977ff83b64f994f4cf850ffcd1dc83699a2fcb095da7c9b5ce7b4c1 -->
 # English Audit — EN-A1-L-0130
 
 **Lesson:** My mind is clear now
@@ -34,13 +34,13 @@ My mind is clear now.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** My mind is clear now
 - **options:** ذهن | دست | پیام
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

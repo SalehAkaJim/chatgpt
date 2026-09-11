@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0142",
   "sortOrder": 142,
   "levelKey": "A1",
-  "lessonSourceHash": "f98aeb2f992ac1d582accb06cff52c5e7ef86b6ad60840c53b7eb7561ffb5706",
+  "lessonSourceHash": "0239a9e1096c84dec4d1ef681a3b5138dfc1e40365ae9e3171bf7a27e6b26c5c",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -69,10 +69,32 @@
       "constructionKeys": [
         "EN-CONSTR-0142-MORNING"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "she works in the morning",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "in the morning",
+      "examples": [
+        {
+          "id": 12960121,
+          "text": "Come over in the morning.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 12157490,
+          "text": "Call Tom in the morning.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 11169060,
+          "text": "I walk in the morning.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "carlosalberto"
+        }
+      ],
       "fallback": {
         "query": "She works in the morning",
         "rationale": "Natural short target use for the selected lexical sense and grammar."
@@ -90,7 +112,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "she works in the morning",
+      "evidenceQuery": "in the morning too",
       "examples": [],
       "fallback": {
         "query": "She works in the morning",
@@ -109,7 +131,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "she studies in the morning too",
+      "evidenceQuery": "in the morning too",
       "examples": [],
       "fallback": {
         "query": "She studies in the morning too",
@@ -121,5 +143,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "50100a48e27615d5e083b14901326cccae8d327018c807fa3cb543e98765ddbf"
+  "planHash": "7f46e5b24d02a9ae86a0901aaba0da69e6ada0041c86a49c84826365cb2733ab"
 }

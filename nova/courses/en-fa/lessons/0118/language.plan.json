@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0118",
   "sortOrder": 118,
   "levelKey": "A1",
-  "lessonSourceHash": "5dd141f1c1def63c41ca2cf36122708b554cb8bdf8c82a21a0a149f239a77862",
+  "lessonSourceHash": "9f63fbddebed58ee07760b995f4dab2f34c77ddf77e855c0342d5394e1d15965",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,10 +49,32 @@
       "constructionKeys": [
         "EN-CONSTR-0118-TOGETHER"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "we can go together",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 3,
+      "evidenceQuery": "can go together",
+      "examples": [
+        {
+          "id": 2953579,
+          "text": "We can go together.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2953578,
+          "text": "We can go together if you wish.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 10124382,
+          "text": "Let me know when you are leaving. We can go together.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "tsp_2"
+        }
+      ],
       "fallback": {
         "query": "we can go together",
         "rationale": "Natural bounded collocation for doing a movement activity with another person."
@@ -68,10 +90,32 @@
       "lexicalLemmas": [
         "together"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 3,
       "evidenceQuery": "can go together",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2953579,
+          "text": "We can go together.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2953578,
+          "text": "We can go together if you wish.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 10124382,
+          "text": "Let me know when you are leaving. We can go together.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "tsp_2"
+        }
+      ],
       "fallback": {
         "query": "can go together",
         "rationale": "Exact target-collocation window extracted from the first learner turn; natural A1 movement frame with together."
@@ -101,5 +145,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "051a8646a3b0b215e0d33a6f0675f022b27155084c857b75a301ed3acbfbacca"
+  "planHash": "75ee1dc9843e1e565e35c9e8c304b44118f768f68c3dc079ce0a61d9c95ec91c"
 }

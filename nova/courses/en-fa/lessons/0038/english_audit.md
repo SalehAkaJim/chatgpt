@@ -1,4 +1,4 @@
-<!-- sourceHash: bae5097e8ff7943893b22d47edb0c3654c3ff7da2291510b527bf1ffd2ac2f91 -->
+<!-- sourceHash: 51faeb29677ac61073f4a6dd51bd259a27c14268f25494435014c7400e43734f -->
 # English Audit — EN-A1-L-0038
 
 **Lesson:** Ben reads the only new book
@@ -33,17 +33,17 @@ Only one?
 Yes. It is the only new book.
 
 - **Speech target:** Yes. It is the only new book.
-- **Accepted speech:** Yes. It is the only new book.
+- **Accepted speech:** Yes. It is the only new book. | Yes. It's the only new book.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** Ben reads the only new book.
 - **options:** تنها | یک معنی نامربوط | نام یک شخص
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -62,7 +62,7 @@ Yes. It is the only new book.
 **A06 · speak**
 
 - **textEn:** Yes. It is the only new book.
-- **acceptedAnswersEn:** Yes. It is the only new book.
+- **acceptedAnswersEn:** Yes. It is the only new book. | Yes. It's the only new book.
 
 **A07 · response_choice**
 

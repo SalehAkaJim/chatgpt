@@ -191,7 +191,8 @@
       "translationFa": "نه، نیستم.",
       "speechTargetEn": "No, I'm not.",
       "acceptedSpeechEn": [
-        "No, I'm not."
+        "No, I'm not.",
+        "No, I am not."
       ],
       "audioRequired": true
     },
@@ -223,7 +224,8 @@
       "translationFa": "نه، نیستم.",
       "speechTargetEn": "No, I'm not.",
       "acceptedSpeechEn": [
-        "No, I'm not."
+        "No, I'm not.",
+        "No, I am not."
       ],
       "audioRequired": true,
       "metadata": {
@@ -352,11 +354,13 @@
             "این جمله اتاق را انتخاب می کند و جواب سوال نیست."
           ],
           "correctFa": "No, I'm not. با تغییر حدس هم همان کار ارتباطی را انجام می دهد."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -368,7 +372,8 @@
         "mode": "retrieval",
         "textEn": "No, I'm not.",
         "acceptedAnswersEn": [
-          "No, I'm not."
+          "No, I'm not.",
+          "No, I am not."
         ],
         "sourceTurnKey": "T05",
         "showAnswerTextBeforeAttempt": false,

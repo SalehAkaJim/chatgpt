@@ -152,33 +152,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی hour را در این درس پیدا کن.",
-      "promptFa": "hour اینجا چه معنی‌ای دارد؟",
-      "promptEn": "It takes an hour",
-      "config": {
-        "options": [
-          "ساعت",
-          "روز",
-          "دقیقه"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی هدف درس نیست.",
-            "این گزینه با موقعیت جور نیست."
-          ],
-          "correctFa": "ساعت"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف شخصیت مقابل را گوش کن و جواب نقش خودت را بگو.",
@@ -206,6 +179,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی hour را در این درس پیدا کن.",
+      "promptFa": "hour اینجا چه معنی‌ای دارد؟",
+      "promptEn": "It takes an hour",
+      "config": {
+        "options": [
+          "ساعت",
+          "روز",
+          "دقیقه"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی هدف درس نیست.",
+            "این گزینه با موقعیت جور نیست."
+          ],
+          "correctFa": "ساعت"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -302,11 +302,12 @@
             "این جمله آسان بودن پیاده‌روی را می‌گوید، نه مدت آن را."
           ],
           "correctFa": "پیاده‌روی هم یک ساعت طول می‌کشد."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -323,7 +324,8 @@
               "contrastReasonFa": "جمله طبیعی است، اما درباره آسان بودن پیاده‌روی است و پاسخ پرسش مدت زمان نیست."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

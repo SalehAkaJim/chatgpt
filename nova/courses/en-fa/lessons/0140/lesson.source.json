@@ -249,32 +249,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی ask را پیدا کن.",
-      "promptEn": "Ask about the time",
-      "config": {
-        "options": [
-          "پرسیدن",
-          "گفتن",
-          "به یاد داشتن"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است؛ ask یعنی پرسیدن.",
-            "این گزینه معنی tell است.",
-            "این گزینه معنی remember است."
-          ],
-          "correctFa": "پرسیدن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف شخصیت مقابل را گوش کن و جواب نقش خودت را بگو.",
@@ -302,6 +276,32 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی ask را پیدا کن.",
+      "promptEn": "Ask about the time",
+      "config": {
+        "options": [
+          "پرسیدن",
+          "گفتن",
+          "به یاد داشتن"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ ask یعنی پرسیدن.",
+            "این گزینه معنی tell است.",
+            "این گزینه معنی remember است."
+          ],
+          "correctFa": "پرسیدن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -372,11 +372,12 @@
             "این گزینه درباره ماه می‌پرسد، نه زمان."
           ],
           "correctFa": "Ask about the time."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -393,7 +394,8 @@
               "contrastReasonFa": "درباره ماه می‌پرسد، نه زمان جلسه."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -415,11 +417,12 @@
             "این گزینه remember را به کار می‌برد، نه ask."
           ],
           "correctFa": "Ask about the room too."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -436,7 +439,8 @@
               "contrastReasonFa": "فعل remember را به کار می‌برد، نه ask."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

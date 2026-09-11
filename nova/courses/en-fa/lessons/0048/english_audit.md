@@ -1,4 +1,4 @@
-<!-- sourceHash: 5af4c52e94fcb5e50cba5e49d733790a52c31143ac7967d10d891f8c387fe9ee -->
+<!-- sourceHash: 2915800fdd9f41f252f222545fe3d5bbe742e6d338414aeb333878652062c261 -->
 # English Audit — EN-A1-L-0048
 
 **Lesson:** Very good
@@ -19,7 +19,7 @@ Is the new project good?
 Yes. It is very good.
 
 - **Speech target:** Yes. It is very good.
-- **Accepted speech:** Yes. It is very good.
+- **Accepted speech:** Yes. It is very good. | Yes. It's very good.
 
 **T03 · maya**
 
@@ -30,17 +30,17 @@ And this book?
 It is very good too.
 
 - **Speech target:** It is very good too.
-- **Accepted speech:** It is very good too.
+- **Accepted speech:** It is very good too. | It's very good too.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** Yes. It is very good.
 - **options:** خیلی؛ بسیار | خیلی | واقعا
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -59,7 +59,7 @@ It is very good too.
 **A06 · speak**
 
 - **textEn:** It is very good too.
-- **acceptedAnswersEn:** It is very good too.
+- **acceptedAnswersEn:** It is very good too. | It's very good too.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

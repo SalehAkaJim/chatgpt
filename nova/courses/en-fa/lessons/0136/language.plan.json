@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0136",
   "sortOrder": 136,
   "levelKey": "A1",
-  "lessonSourceHash": "3c0f7b7741a839043e9703f8932d6697726cca3e8feb47e742594e309818d9e2",
+  "lessonSourceHash": "f73a17af1330e811e5bbd079f293ef3eb9485bc02c6722af2d3c668d2ed62cda",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,10 +49,32 @@
       "constructionKeys": [
         "EN-CONSTR-0136-IDEA"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "is this a good idea",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "a good idea",
+      "examples": [
+        {
+          "id": 24961,
+          "text": "What a good idea!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "adjusting"
+        },
+        {
+          "id": 14009974,
+          "text": "I have a good idea!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ioan_Cristian"
+        },
+        {
+          "id": 11303586,
+          "text": "She had a good idea.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "carlosalberto"
+        }
+      ],
       "fallback": {
         "query": "is this a good idea",
         "rationale": "Natural target-bearing present-be question."
@@ -70,7 +92,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "is this a good idea",
+      "evidenceQuery": "a good idea too",
       "examples": [],
       "fallback": {
         "query": "is this a good idea",
@@ -89,7 +111,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "the bus is a good idea too",
+      "evidenceQuery": "a good idea too",
       "examples": [],
       "fallback": {
         "query": "the bus is a good idea too",
@@ -101,5 +123,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "b34f54a0aafe9a1e2e2051b96618ab3c1c45941e19f3fddae1e7f3bfe4ce8a54"
+  "planHash": "8fe752f3d07bec838d488778d15d1b60c06d8ebc24a6d34b9c88e5d39b651c49"
 }

@@ -1,4 +1,4 @@
-<!-- sourceHash: 9affe3a7dbe9d66b07d3306321e41951c970cb46f36685543b18d55557e59267 -->
+<!-- sourceHash: 3697679c0579219ad57040d26a437b1ce010e306e45e6723eea195b04c1c9d9f -->
 # English Audit — EN-A1-L-0146
 
 **Lesson:** Say there is a plan
@@ -82,7 +82,7 @@ There is a plan for tomorrow too.
 **A11 · speak**
 
 - **textEn:** Yes. It is a good idea.
-- **acceptedAnswersEn:** Yes. It is a good idea.
+- **acceptedAnswersEn:** Yes. It is a good idea. | Yes. It's a good idea.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

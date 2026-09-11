@@ -1,4 +1,4 @@
-<!-- sourceHash: 42065b1ba4dd79244b497c00943e74aa01a54edceae0453c5c8dd2a0c0e6d235 -->
+<!-- sourceHash: ae80ee5c307be1c57dfca7521ec7b4694a4f7f44155d2f2c0040a66693291b8c -->
 # English Audit — EN-A1-L-0105
 
 **Lesson:** There is a change
@@ -34,13 +34,13 @@ Yes, a time change.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** No, there is a change.
 - **options:** تغییر | شروع | نقطه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

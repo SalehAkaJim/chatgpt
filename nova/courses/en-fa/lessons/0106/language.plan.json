@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0106",
   "sortOrder": 106,
   "levelKey": "A1",
-  "lessonSourceHash": "cb4c04914e5a06d1c9075ff258c5520430e94229e8f05ad462e8d14224c3d2b4",
+  "lessonSourceHash": "95715768590a4a64f409e649898e440f2101c48799503ba8f8fe370ffd927411",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -72,10 +72,32 @@
       "lexicalLemmas": [
         "live"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "do you live",
-      "examples": [],
+      "examples": [
+        {
+          "id": 6305125,
+          "text": "Why do you live?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Queserasera"
+        },
+        {
+          "id": 5182633,
+          "text": "Do you live nearby?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2923164,
+          "text": "Do you live there?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
       "fallback": {
         "query": "do you live",
         "rationale": "Exact prompt-side target collocation around the target word."
@@ -105,5 +127,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "e2b6bb216482821512936841e0f37c9d4b10f20c4dc96f994fe0bc2afb94fcf9"
+  "planHash": "1e6f858bd06c8dc267d78fb472beb642f7b911328d06703428738e23f4260a18"
 }

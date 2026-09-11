@@ -11,54 +11,423 @@
   "primaryOutcomeKey": "A1-INTERACTION-CONFIRM-ROOM-TIME",
   "outcomeFa": "زبان آموز می تواند کلمات مستقل اتاق، عدد و زمان را در ترکیب های تازه برای یک برنامه ساده به کار ببرد.",
   "scenarioFa": "برای یک برنامه دیگر به مرکز محله برگشته ای. آیریس شماره اتاق را می گوید و تو زمان را اضافه می کنی. نقش تو نینا است.",
-  "prerequisiteOutcomeKeys": ["A1-INTERACTION-CHOOSE-ROOM", "A1-INTERACTION-ASK-TIME"],
+  "prerequisiteOutcomeKeys": [
+    "A1-INTERACTION-CHOOSE-ROOM",
+    "A1-INTERACTION-ASK-TIME"
+  ],
   "curriculum": {
     "startingKnowledge": "early_a1_room_numbers_and_at_time",
     "targetConstructions": [],
     "supportLanguage": [],
     "assessmentBoundary": "This is a consolidation Lesson. seven is the only new word. Room two at seven and Room one at six are compositional messages, not word rows. The final transfer requires a room/number/time combination that was not memorized as one phrase earlier.",
-    "transferPlan": {"mode": "same_lesson", "intent": "Use seven as a new independent number in At + number, then cross-recombine the older one/six fillers into Room one at six."},
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Use seven as a new independent number in At + number, then cross-recombine the older one/six fillers into Room one at six."
+    },
     "story": {
-      "arcKey": "EN-A1-COMMUNITY", "sceneKey": "EN-A1-FACTORY-SCENE-0020", "learnerRoleKey": "nina",
-      "participants": ["nina", "iris"], "introducedCharacterKeys": [], "relationshipState": "already_known",
-      "continuesLessonKey": "EN-A1-L-0014", "dependsOnLessonKeys": ["EN-A1-L-0014"],
+      "arcKey": "EN-A1-COMMUNITY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0020",
+      "learnerRoleKey": "nina",
+      "participants": [
+        "nina",
+        "iris"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "continuesLessonKey": "EN-A1-L-0014",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0014"
+      ],
       "settingFa": "مرکز محله، تایید اتاق و ساعت برنامه ها",
       "storyBeatFa": "نینا و آیریس اطلاعات دو برنامه را با عوض کردن مستقل شماره اتاق و ساعت می خوانند و بازگو می کنند."
     },
     "reviewLinks": [
-      {"lessonKey": "EN-A1-L-0014", "activityKeys": ["A02", "A04"], "learningDemand": "retrieval", "note": "room, one and two return as independent words rather than memorized room-label rows."},
-      {"lessonKey": "EN-A1-L-0016", "activityKeys": ["A02", "A05"], "learningDemand": "transfer", "note": "At + number is recombined from six to seven, then six returns inside a novel full schedule message."}
+      {
+        "lessonKey": "EN-A1-L-0014",
+        "activityKeys": [
+          "A02",
+          "A04"
+        ],
+        "learningDemand": "retrieval",
+        "note": "room, one and two return as independent words rather than memorized room-label rows."
+      },
+      {
+        "lessonKey": "EN-A1-L-0016",
+        "activityKeys": [
+          "A02",
+          "A05"
+        ],
+        "learningDemand": "transfer",
+        "note": "At + number is recombined from six to seven, then six returns inside a novel full schedule message."
+      }
     ],
     "pedagogyVersion": 2
   },
   "lexicalItems": [
-    {"lexicalKey": "EN-LEX-ROOM-01", "itemType": "word", "displayForm": "room", "translationFa": "اتاق", "role": "review", "lemma": "room", "partOfSpeech": "noun", "senseKey": "building_room", "audioEligible": true, "metadata": {"referenceKey": "EN-REF-D8B2B1429B2580871B77"}},
-    {"lexicalKey": "EN-LEX-ONE-01", "itemType": "word", "displayForm": "one", "translationFa": "یک", "role": "review", "lemma": "one", "partOfSpeech": "numeral", "senseKey": "cardinal_one", "audioEligible": true, "metadata": {"source": "nova_authored_curriculum_word", "referenceGap": true, "referenceGapReason": "The current A1 reference snapshot has no exact production record for the basic cardinal word one."}},
-    {"lexicalKey": "EN-LEX-TWO-01", "itemType": "word", "displayForm": "two", "translationFa": "دو", "role": "review", "lemma": "two", "partOfSpeech": "numeral", "senseKey": "cardinal_two", "audioEligible": true, "metadata": {"source": "nova_authored_curriculum_word", "referenceGap": true, "referenceGapReason": "The current A1 reference snapshot has no exact production record for the basic cardinal word two."}},
-    {"lexicalKey": "EN-LEX-AT-TIME-01", "itemType": "word", "displayForm": "at", "translationFa": "در؛ برای ساعت مشخص", "role": "review", "lemma": "at", "partOfSpeech": "preposition", "senseKey": "clock_time_preposition", "audioEligible": true, "metadata": {"source": "nova_authored_curriculum_word", "referenceGap": true, "referenceGapReason": "The current A1 reference snapshot has no exact production record for at in the clock-time use."}},
-    {"lexicalKey": "EN-LEX-SIX-01", "itemType": "word", "displayForm": "six", "translationFa": "شش", "role": "review", "lemma": "six", "partOfSpeech": "numeral", "senseKey": "cardinal_six", "audioEligible": true, "metadata": {"source": "nova_authored_curriculum_word", "referenceGap": true, "referenceGapReason": "The current A1 reference snapshot has no exact production record for the basic cardinal word six."}},
-    {"lexicalKey": "EN-LEX-SEVEN-01", "itemType": "word", "displayForm": "seven", "translationFa": "هفت", "role": "target", "lemma": "seven", "partOfSpeech": "numeral", "senseKey": "cardinal_seven", "audioEligible": true, "metadata": {"source": "nova_authored_curriculum_word", "referenceGap": true, "referenceGapReason": "The current A1 reference snapshot has no exact production record for the basic cardinal word seven."}}
+    {
+      "lexicalKey": "EN-LEX-ROOM-01",
+      "itemType": "word",
+      "displayForm": "room",
+      "translationFa": "اتاق",
+      "role": "review",
+      "lemma": "room",
+      "partOfSpeech": "noun",
+      "senseKey": "building_room",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-D8B2B1429B2580871B77"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-ONE-01",
+      "itemType": "word",
+      "displayForm": "one",
+      "translationFa": "یک",
+      "role": "review",
+      "lemma": "one",
+      "partOfSpeech": "numeral",
+      "senseKey": "cardinal_one",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_curriculum_word",
+        "referenceGap": true,
+        "referenceGapReason": "The current A1 reference snapshot has no exact production record for the basic cardinal word one."
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-TWO-01",
+      "itemType": "word",
+      "displayForm": "two",
+      "translationFa": "دو",
+      "role": "review",
+      "lemma": "two",
+      "partOfSpeech": "numeral",
+      "senseKey": "cardinal_two",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_curriculum_word",
+        "referenceGap": true,
+        "referenceGapReason": "The current A1 reference snapshot has no exact production record for the basic cardinal word two."
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-AT-TIME-01",
+      "itemType": "word",
+      "displayForm": "at",
+      "translationFa": "در؛ برای ساعت مشخص",
+      "role": "review",
+      "lemma": "at",
+      "partOfSpeech": "preposition",
+      "senseKey": "clock_time_preposition",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_curriculum_word",
+        "referenceGap": true,
+        "referenceGapReason": "The current A1 reference snapshot has no exact production record for at in the clock-time use."
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-SIX-01",
+      "itemType": "word",
+      "displayForm": "six",
+      "translationFa": "شش",
+      "role": "review",
+      "lemma": "six",
+      "partOfSpeech": "numeral",
+      "senseKey": "cardinal_six",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_curriculum_word",
+        "referenceGap": true,
+        "referenceGapReason": "The current A1 reference snapshot has no exact production record for the basic cardinal word six."
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-SEVEN-01",
+      "itemType": "word",
+      "displayForm": "seven",
+      "translationFa": "هفت",
+      "role": "target",
+      "lemma": "seven",
+      "partOfSpeech": "numeral",
+      "senseKey": "cardinal_seven",
+      "audioEligible": true,
+      "metadata": {
+        "source": "nova_authored_curriculum_word",
+        "referenceGap": true,
+        "referenceGapReason": "The current A1 reference snapshot has no exact production record for the basic cardinal word seven."
+      }
+    }
   ],
   "turns": [
-    {"turnKey": "T01", "role": "character", "characterKey": "iris", "textEn": "Room two. What time?", "translationFa": "اتاق دو. چه ساعتی؟", "audioRequired": true},
-    {"turnKey": "T02", "role": "learner", "characterKey": "nina", "textEn": "At seven.", "translationFa": "ساعت هفت.", "speechTargetEn": "At seven.", "acceptedSpeechEn": ["At seven."], "audioRequired": true},
-    {"turnKey": "T03", "role": "character", "characterKey": "iris", "textEn": "Room two at seven?", "translationFa": "اتاق دو، ساعت هفت؟", "audioRequired": true},
-    {"turnKey": "T04", "role": "learner", "characterKey": "nina", "textEn": "Yes.", "translationFa": "بله.", "speechTargetEn": "Yes.", "acceptedSpeechEn": ["Yes."], "audioRequired": true},
-    {"turnKey": "T05", "role": "learner", "characterKey": "nina", "textEn": "Room two at seven.", "translationFa": "اتاق دو، ساعت هفت.", "speechTargetEn": "Room two at seven.", "acceptedSpeechEn": ["Room two at seven."], "audioRequired": true, "metadata": {"usage": "retrieval_model_after_help"}},
-    {"turnKey": "T06", "role": "learner", "characterKey": "nina", "textEn": "Room one at six.", "translationFa": "اتاق یک، ساعت شش.", "speechTargetEn": "Room one at six.", "acceptedSpeechEn": ["Room one at six."], "audioRequired": true, "metadata": {"usage": "novel_recombination_model_after_help"}}
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Room two. What time?",
+      "translationFa": "اتاق دو. چه ساعتی؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "At seven.",
+      "translationFa": "ساعت هفت.",
+      "speechTargetEn": "At seven.",
+      "acceptedSpeechEn": [
+        "At seven."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Room two at seven?",
+      "translationFa": "اتاق دو، ساعت هفت؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Yes.",
+      "translationFa": "بله.",
+      "speechTargetEn": "Yes.",
+      "acceptedSpeechEn": [
+        "Yes."
+      ],
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T05",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Room two at seven.",
+      "translationFa": "اتاق دو، ساعت هفت.",
+      "speechTargetEn": "Room two at seven.",
+      "acceptedSpeechEn": [
+        "Room two at seven."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "retrieval_model_after_help"
+      }
+    },
+    {
+      "turnKey": "T06",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Room one at six.",
+      "translationFa": "اتاق یک، ساعت شش.",
+      "speechTargetEn": "Room one at six.",
+      "acceptedSpeechEn": [
+        "Room one at six."
+      ],
+      "audioRequired": true,
+      "metadata": {
+        "usage": "novel_recombination_model_after_help"
+      }
+    }
   ],
   "activities": [
-    {"activityKey": "A01", "type": "lexical_teach", "instructionFa": "عدد seven را یاد بگیر و بقیه کلمه ها را مرور کن.", "config": {"lexicalKeys": ["EN-LEX-SEVEN-01", "EN-LEX-ROOM-01", "EN-LEX-ONE-01", "EN-LEX-TWO-01", "EN-LEX-AT-TIME-01", "EN-LEX-SIX-01"], "explanationFa": "seven یعنی هفت. room، one، two، at و six را قبلا دیده ای. هیچ ترکیب کاملی مثل Room two at seven یک word جدید نیست؛ از همین کلمه ها ساخته می شود."}},
-    {"activityKey": "A02", "type": "response_choice", "instructionFa": "کارت برنامه را بخوان.", "promptEn": "Community class\nRoom two\n7:00", "promptFa": "کدام خلاصه درست است؟", "config": {"options": ["اتاق دو، ساعت هفت", "اتاق دو، ساعت شش", "اتاق یک، ساعت هفت"], "answerIndex": 0, "feedback": {"optionsFa": ["درست است؛ two و seven اطلاعات کارت هستند.", "زمان کارت seven است، نه six.", "شماره اتاق two است، نه one."], "correctFa": "room + two و at + seven را درست خواندی."}}, "metadata": {"learningDemand": "recognition", "purpose": "reading_for_key_information", "evidenceKind": "recognition_or_selection", "skillFocus": "reading"}},
-    {"activityKey": "A03", "type": "dialogue", "instructionFa": "اطلاعات آیریس را گوش کن و جواب نینا را با صدای بلند بگو.", "config": {"mode": "guided_exchange", "exchanges": [
-      {"exchangeKey": "E01", "promptTurnKey": "T01", "responseTurnKey": "T02", "responseEvaluation": "practice_only", "allowPromptReplay": true, "allowResponseModelAudio": true},
-      {"exchangeKey": "E02", "promptTurnKey": "T03", "responseTurnKey": "T04", "responseEvaluation": "practice_only", "allowPromptReplay": true, "allowResponseModelAudio": true}
-    ], "showPromptText": true, "showPromptTranslation": true, "showResponseText": true, "showResponseTranslation": true}},
-    {"activityKey": "A04", "type": "sentence_order", "instructionFa": "پیام کامل برنامه را گوش کن و چهار کلمه را مرتب کن.", "config": {"audioSourceTurnKey": "T05", "tokensEn": ["seven.", "Room", "at", "two"], "answerTokensEn": ["Room", "two", "at", "seven."], "answerEn": "Room two at seven.", "showAnswerTextBeforeAttempt": false, "allowAudioReplay": true, "practiceOnly": true, "hideTokenSurfaceCues": true, "feedback": {"correctFa": "درست چیدی؛ چهار word مستقل را در پیام درست گذاشتی.", "retryFa": "اول Room two و بعد at seven را بساز."}}, "metadata": {"evidenceKind": "supported_reconstruction"}},
-    {"activityKey": "A05", "type": "response_choice", "instructionFa": "عدد زمان را عوض کن.", "promptFa": "آیریس می گوید برنامه این بار ساعت هفت است. کدام پاسخ درست است؟", "config": {"optionsEn": ["At seven.", "At six.", "Room two, please."], "answerIndex": 0, "feedback": {"optionsFa": ["درست است؛ همان At + number با filler جدید seven است.", "six زمان قبلی بود.", "این جمله فقط اتاق را انتخاب می کند."], "correctFa": "At + number را با seven دوباره ساختی."}}, "metadata": {"learningDemand": "transfer", "evidenceKind": "recognition_or_selection"}},
-    {"activityKey": "A06", "type": "speak", "instructionFa": "جواب انگلیسی را نمی بینی. اطلاعات برنامه اول را بگو.", "promptFa": "نینا هستی. کوتاه بگو: اتاق دو، ساعت هفت.", "config": {"mode": "retrieval", "textEn": "Room two at seven.", "acceptedAnswersEn": ["Room two at seven."], "sourceTurnKey": "T05", "showAnswerTextBeforeAttempt": false, "hintFa": "room + two را بساز و بعد at + seven را اضافه کن.", "feedback": {"correctFa": "درست است؛ اجزای مستقل را ترکیب کردی.", "retryFa": "Room two + at seven را بساز."}, "evidenceKind": "bounded_retrieval", "practiceOnly": false, "modelAccess": "explicit_help"}, "metadata": {"learningDemand": "retrieval", "assessmentLimit": "Bounded recombination of known component words."}},
-    {"activityKey": "A07", "type": "speak", "instructionFa": "حالا یک ترکیب تازه بساز که قبلا به صورت یک عبارت حفظ نکرده ای.", "promptFa": "کارت دوم می گوید اتاق یک، ساعت شش. اطلاعاتش را کوتاه به انگلیسی بگو.", "config": {"mode": "retrieval", "textEn": "Room one at six.", "acceptedAnswersEn": ["Room one at six."], "sourceTurnKey": "T06", "showAnswerTextBeforeAttempt": false, "hintFa": "room + one و at + six را کنار هم بگذار.", "feedback": {"correctFa": "عالی؛ دو construction آشنا را با fillerهای قدیمی در یک ترکیب جدید ساختی.", "retryFa": "اول Room one، بعد at six."}, "evidenceKind": "bounded_retrieval", "practiceOnly": false, "modelAccess": "explicit_help"}, "metadata": {"learningDemand": "novel_recombination", "assessmentLimit": "Novel within-course recombination of previously taught component words; still bounded to known room/time constructions."}}
+    {
+      "activityKey": "A01",
+      "type": "lexical_teach",
+      "instructionFa": "عدد seven را یاد بگیر و بقیه کلمه ها را مرور کن.",
+      "config": {
+        "lexicalKeys": [
+          "EN-LEX-SEVEN-01",
+          "EN-LEX-ROOM-01",
+          "EN-LEX-ONE-01",
+          "EN-LEX-TWO-01",
+          "EN-LEX-AT-TIME-01",
+          "EN-LEX-SIX-01"
+        ],
+        "explanationFa": "seven یعنی هفت. room، one، two، at و six را قبلا دیده ای. هیچ ترکیب کاملی مثل Room two at seven یک word جدید نیست؛ از همین کلمه ها ساخته می شود."
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "dialogue",
+      "instructionFa": "اطلاعات آیریس را گوش کن و جواب نینا را با صدای بلند بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "response_choice",
+      "instructionFa": "کارت برنامه را بخوان.",
+      "promptEn": "Community class\nRoom two\n7:00",
+      "promptFa": "کدام خلاصه درست است؟",
+      "config": {
+        "options": [
+          "اتاق دو، ساعت هفت",
+          "اتاق دو، ساعت شش",
+          "اتاق یک، ساعت هفت"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ two و seven اطلاعات کارت هستند.",
+            "زمان کارت seven است، نه six.",
+            "شماره اتاق two است، نه one."
+          ],
+          "correctFa": "room + two و at + seven را درست خواندی."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "purpose": "reading_for_key_information",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "reading"
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "sentence_order",
+      "instructionFa": "پیام کامل برنامه را گوش کن و چهار کلمه را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T05",
+        "tokensEn": [
+          "seven.",
+          "Room",
+          "at",
+          "two"
+        ],
+        "answerTokensEn": [
+          "Room",
+          "two",
+          "at",
+          "seven."
+        ],
+        "answerEn": "Room two at seven.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی؛ چهار word مستقل را در پیام درست گذاشتی.",
+          "retryFa": "اول Room two و بعد at seven را بساز."
+        }
+      },
+      "metadata": {
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "عدد زمان را عوض کن.",
+      "promptFa": "آیریس می گوید برنامه این بار ساعت هفت است. کدام پاسخ درست است؟",
+      "config": {
+        "optionsEn": [
+          "At seven.",
+          "At six.",
+          "Room two, please."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ همان At + number با filler جدید seven است.",
+            "six زمان قبلی بود.",
+            "این جمله فقط اتاق را انتخاب می کند."
+          ],
+          "correctFa": "At + number را با seven دوباره ساختی."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "speak",
+      "instructionFa": "جواب انگلیسی را نمی بینی. اطلاعات برنامه اول را بگو.",
+      "promptFa": "نینا هستی. کوتاه بگو: اتاق دو، ساعت هفت.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Room two at seven.",
+        "acceptedAnswersEn": [
+          "Room two at seven."
+        ],
+        "sourceTurnKey": "T05",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "room + two را بساز و بعد at + seven را اضافه کن.",
+        "feedback": {
+          "correctFa": "درست است؛ اجزای مستقل را ترکیب کردی.",
+          "retryFa": "Room two + at seven را بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Bounded recombination of known component words."
+      }
+    },
+    {
+      "activityKey": "A07",
+      "type": "speak",
+      "instructionFa": "حالا یک ترکیب تازه بساز که قبلا به صورت یک عبارت حفظ نکرده ای.",
+      "promptFa": "کارت دوم می گوید اتاق یک، ساعت شش. اطلاعاتش را کوتاه به انگلیسی بگو.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Room one at six.",
+        "acceptedAnswersEn": [
+          "Room one at six."
+        ],
+        "sourceTurnKey": "T06",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "room + one و at + six را کنار هم بگذار.",
+        "feedback": {
+          "correctFa": "عالی؛ دو construction آشنا را با fillerهای قدیمی در یک ترکیب جدید ساختی.",
+          "retryFa": "اول Room one، بعد at six."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "novel_recombination",
+        "assessmentLimit": "Novel within-course recombination of previously taught component words; still bounded to known room/time constructions."
+      }
+    }
   ],
-  "review": {"pendingDecisions": []},
-  "metadata": {"pilot": false, "audioRequired": true, "humanEnglishAuditRequired": true, "dialogueRuntime": "guided_exchange", "qualityStage": "model_reviewed_for_testing"}
+  "review": {
+    "pendingDecisions": []
+  },
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing"
+  }
 }

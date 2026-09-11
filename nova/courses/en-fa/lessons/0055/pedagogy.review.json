@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0055; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0055; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 4,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "Recognition, guided exchange, changed-context selection and hidden retrieval align with the stated outcome."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 4,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 5,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 4,
-      "evidence": "The target is repeated for recognition and then recombined in a second controlled context."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 4,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     }
   },
   "learnerTested": false,
@@ -51,7 +51,8 @@
     "Review is limited to the bounded A1 outcome.",
     "Final audio prosody remains unreviewed until text gates pass.",
     "No independent human or real learner test has been performed after quality-v2 remediation.",
-    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
+    "No independent human or real learner test has been performed after Product Quality v2 naturalness polish.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "The selected many use is consistent with the committed reference sense for this Lesson.",
@@ -71,11 +72,12 @@
     "Product Quality v2 polish: rewrite scenario as a real communicative scene.",
     "Product Quality v2 polish: rewrite story beat as a real interaction.",
     "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'say many books'.",
-    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'now say many cups'."
+    "Product Quality v2 polish: remove obsolete teacher-scaffolding usage fallback 'now say many cups'.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0055",
-  "sourceHash": "865bbd5f9fa1a99cf08b82442309e8161eac121e7bcc063aa7ce097e83769ee9",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+  "sourceHash": "aac49ba5566739e6e78917040e32edb2d7b8dfe70b576f96961ecea75256cc18",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
   "qualityV2Remediation": {
     "version": 1,
     "date": "2026-09-10",
@@ -100,6 +102,13 @@
       "rewrite story beat as a real interaction",
       "remove obsolete teacher-scaffolding usage fallback 'say many books'",
       "remove obsolete teacher-scaffolding usage fallback 'now say many cups'"
+    ]
+  },
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure"
     ]
   }
 }

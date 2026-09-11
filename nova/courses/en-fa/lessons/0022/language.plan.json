@@ -113,10 +113,25 @@
       "constructionKeys": [
         "EN-CONSTR-I-WANT"
       ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": "no i want water",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 2,
+      "evidenceQuery": "i want tea",
+      "examples": [
+        {
+          "id": 9955302,
+          "text": "I want tea.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 12303697,
+          "text": "I want tea, toast and jam.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
       "fallback": null,
       "fallbackMatch": null
     },
@@ -131,7 +146,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "no i want water",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null,
       "fallbackMatch": null
@@ -173,5 +188,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "6c57a9a2d996d2ecbd317e4af852434096db233059303c0968aa823b72b462c7"
+  "planHash": "cad716448894443f7c64ca2f97b22d749c60e1df8c65cd72e2194fa36604d09b"
 }

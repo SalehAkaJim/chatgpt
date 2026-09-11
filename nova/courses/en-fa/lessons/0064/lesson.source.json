@@ -147,33 +147,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی use را پیدا کن.",
-      "promptFa": "use در این درس چه معنی‌ای دارد؟",
-      "promptEn": "I use this cup.",
-      "config": {
-        "options": [
-          "استفاده کردن",
-          "پیدا کردن",
-          "فروختن"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "پیدا کردن معنی find است، نه use در این جمله.",
-            "فروختن عمل دیگری است و معنی use نیست."
-          ],
-          "correctFa": "استفاده کردن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های nora را گوش کن و جواب owen را بگو.",
@@ -201,6 +174,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی use را پیدا کن.",
+      "promptFa": "use در این درس چه معنی‌ای دارد؟",
+      "promptEn": "I use this cup.",
+      "config": {
+        "options": [
+          "استفاده کردن",
+          "پیدا کردن",
+          "فروختن"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "پیدا کردن معنی find است، نه use در این جمله.",
+            "فروختن عمل دیگری است و معنی use نیست."
+          ],
+          "correctFa": "استفاده کردن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -279,11 +279,13 @@
             "نامربوط است."
           ],
           "correctFa": "از این کیف استفاده می‌کنم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

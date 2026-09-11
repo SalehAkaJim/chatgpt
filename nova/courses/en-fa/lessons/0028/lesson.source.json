@@ -108,7 +108,8 @@
       "translationFa": "اونا اهل کانادا هستن.",
       "speechTargetEn": "They are from Canada.",
       "acceptedSpeechEn": [
-        "They are from Canada."
+        "They are from Canada.",
+        "They're from Canada."
       ],
       "audioRequired": true
     },
@@ -140,7 +141,8 @@
       "translationFa": "اونا اهل ایران هستن.",
       "speechTargetEn": "They are from Iran.",
       "acceptedSpeechEn": [
-        "They are from Iran."
+        "They are from Iran.",
+        "They're from Iran."
       ],
       "audioRequired": true,
       "metadata": {
@@ -149,33 +151,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی They are را از روی نقش جمله تشخیص بده.",
-      "promptEn": "They are from Canada.",
-      "promptFa": "کدام معنی درست است؟",
-      "config": {
-        "options": [
-          "اونا اهل کانادا هستن",
-          "اون دختر اهل کاناداست",
-          "ما اهل کانادا هستیم"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است؛ they درباره دو یا چند نفر دیگر است.",
-            "برای یک نفر از she یا he استفاده می شود، نه they.",
-            "we یعنی خودت همراه بقیه گروه؛ اینجا درباره دو نفر دیگر حرف می زنیم."
-          ],
-          "correctFa": "They are اینجا درباره دو عضو تازه گروه حرف می زند."
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -204,6 +179,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی They are را از روی نقش جمله تشخیص بده.",
+      "promptEn": "They are from Canada.",
+      "promptFa": "کدام معنی درست است؟",
+      "config": {
+        "options": [
+          "اونا اهل کانادا هستن",
+          "اون دختر اهل کاناداست",
+          "ما اهل کانادا هستیم"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ they درباره دو یا چند نفر دیگر است.",
+            "برای یک نفر از she یا he استفاده می شود، نه they.",
+            "we یعنی خودت همراه بقیه گروه؛ اینجا درباره دو نفر دیگر حرف می زنیم."
+          ],
+          "correctFa": "They are اینجا درباره دو عضو تازه گروه حرف می زند."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -289,11 +291,13 @@
             "we شامل خود گوینده است، اما اینجا درباره دو نفر دیگر حرف می زنیم."
           ],
           "correctFa": "They are from Iran. هم subject و هم کشور را درست نگه می دارد."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -305,7 +309,8 @@
         "mode": "retrieval",
         "textEn": "They are from Iran.",
         "acceptedAnswersEn": [
-          "They are from Iran."
+          "They are from Iran.",
+          "They're from Iran."
         ],
         "sourceTurnKey": "T05",
         "showAnswerTextBeforeAttempt": false,

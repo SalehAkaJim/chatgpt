@@ -1,36 +1,24 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0013",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "no a book please",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "lessonKey": "EN-A1-L-0013",
-    "sourceHash": "cdc44154dfe3a279260b5a46b5224dee93f3b9f1c1ceca714027cb31da3f61f0",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "4fc1993b48c23eb1d7790a7862a61350fe44331d42253048376d907cf4a65211",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
     "reviewerType": "model",
-    "reviewedAt": "2026-09-08",
-    "scope": "Second text/design pass after content revision; same assistant, not an independent human review.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0013; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
@@ -42,7 +30,7 @@
       },
       "pedagogicalClarity": {
         "score": 4,
-        "evidence": "The final location question reviews Lesson 8 across intervening lessons; actual retention still needs a learner trial."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 4,
@@ -50,7 +38,7 @@
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "Neighbors set up a shared study table, so requests and location questions have a common purpose."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 4,
@@ -58,7 +46,7 @@
       },
       "repetitionUsefulness": {
         "score": 4,
-        "evidence": "Audio reconstruction is labelled supported practice; the final task removes the model. A01 includes an actual handover response. A04 includes the owner/object question before its location answer and contrasts plausible referents."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 4,
@@ -70,20 +58,30 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Static flow review: optional help, typed fallback and per-option explanations reduce dead ends. No real microphone, perception or learner test was performed."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
     "limitations": [
       "Real learner outcomes and delayed retention have not been measured.",
       "Generated audio has not received a perceptual/prosody review.",
-      "Exact-match retrieval recognizes bounded patterns; valid alternative English can fall outside its answer list."
+      "Exact-match retrieval recognizes bounded patterns; valid alternative English can fall outside its answer list.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "Neighbors set up a shared study table, so requests and location questions have a common purpose.",
       "A01 includes an actual handover response. A04 includes the owner/object question before its location answer and contrasts plausible referents.",
-      "The final location question reviews Lesson 8 across intervening lessons; actual retention still needs a learner trial."
+      "The final location question reviews Lesson 8 across intervening lessons; actual retention still needs a learner trial.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "duplicateScoring",
+        "speechEquivalence"
+      ]
+    },
     "status": "PASS",
     "average": 4.0,
     "errors": []
@@ -95,5 +93,5 @@
     "learnerTurns": 3,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "bcbb509152e3a66c832431903eeb3f7e1aa4e3e7dc25929eb05341c9943b2dfb"
+  "sourceHash": "4fc1993b48c23eb1d7790a7862a61350fe44331d42253048376d907cf4a65211"
 }

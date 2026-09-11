@@ -1,45 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0148",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 90,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "bring the form",
-        "activityKeys": [
-          "A03",
-          "A04",
-          "A10"
-        ]
-      }
-    },
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "bring the information sheet too",
-        "activityKeys": [
-          "A05",
-          "A07"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
     "reviewedAt": "2026-09-11",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0148 staging draft; not an independent human or real-learner test.",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0148; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
@@ -51,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "A01 introduces bring, A02 exposes both exchanges, and all dependent listening/reconstruction/retrieval follows in A03, A06, A07 and A10."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 5,
@@ -59,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 5,
-        "evidence": "Canonical arc EN-A1-WALKING-GROUP uses its declared cast (سارا، روبی) and respects Course return spacing."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 4,
@@ -67,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 5,
-        "evidence": "The Lesson combines its current target with explicit spaced retrieval of previously taught language; no real learner test is claimed."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -79,7 +55,7 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; model/editor review covers runtime ordering, clarity and load."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       },
       "runtimeAssetGrounding": {
         "score": 5,
@@ -92,7 +68,8 @@
       "Only bring in the selected reference sense is assessed as new.",
       "information is review-only; renewed mastery is not claimed.",
       "Generated audio pronunciation/prosody is not evaluated at this text stage.",
-      "Runtime behavior and paid audio still require the permanent CI/Production pipeline."
+      "Runtime behavior and paid audio still require the permanent CI/Production pipeline.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "CEFRJ-GRAM-117 and accepted speech strings checked.",
@@ -105,11 +82,20 @@
       "Due item information is explicitly review-only.",
       "Participant pair and learner role differ from adjacent lessons.",
       "Canonical story arc, cast, learner role, continuation and minimum return spacing were rechecked against course.source.json.",
-      "Spaced retrieval was checked against previously taught canonical targets; overdue targets are recalled through hidden-answer learner production."
+      "Spaced retrieval was checked against previously taught canonical targets; overdue targets are recalled through hidden-answer learner production.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0148",
-    "sourceHash": "72344ae73d8a732f05b98202f7f8dc7126b8df4cab116447aa7d0a7bbb985472",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "d2d926de9fe5e96ab5c75ae8da48ff238e35b2acb7cea6f2fa8ec189f14ce6d2",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "duplicateScoring",
+        "storyGrounding"
+      ]
+    },
     "status": "PASS",
     "average": 4.7,
     "errors": []
@@ -121,5 +107,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "72344ae73d8a732f05b98202f7f8dc7126b8df4cab116447aa7d0a7bbb985472"
+  "sourceHash": "d2d926de9fe5e96ab5c75ae8da48ff238e35b2acb7cea6f2fa8ec189f14ce6d2"
 }

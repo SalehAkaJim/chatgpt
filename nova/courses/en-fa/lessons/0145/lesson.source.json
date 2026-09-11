@@ -10,7 +10,7 @@
   "descriptionFa": "با minute و شکل منفی be درباره مدت زمان کوتاه صحبت کن.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0145",
   "outcomeFa": "minute را به معنی «دقیقه» در جمله‌ای کوتاه با be منفی به کار ببری.",
-  "scenarioFa": "نینا و آیریس در ادامه داستان مرکز محله درباره موضوع این درس گفت‌وگو می‌کنند.",
+  "scenarioFa": "در مرکز محله، میز برنامه‌ریزی، آیریس می‌گوید «انتظار ده دقیقه است؟» و نینا پاسخ می‌دهد «نه، ده دقیقه نیست.».",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0144"
   ],
@@ -53,7 +53,7 @@
       ],
       "continuesLessonKey": "EN-A1-L-0139",
       "settingFa": "مرکز محله، میز برنامه‌ریزی",
-      "storyBeatFa": "نینا و آیریس در ادامه داستان مرکز محله درباره موضوع این درس گفت‌وگو می‌کنند."
+      "storyBeatFa": "آیریس با «انتظار ده دقیقه است؟» گفت‌وگو را شروع می‌کند، نینا می‌گوید «نه، ده دقیقه نیست.»؛ بعد آیریس می‌گوید «پنج دقیقه است؟» و نینا با «بله، پنج دقیقه است.» پاسخ می‌دهد."
     },
     "reviewLinks": [
       {
@@ -150,7 +150,8 @@
       "audioRequired": true,
       "speechTargetEn": "No, it is not ten minutes.",
       "acceptedSpeechEn": [
-        "No, it is not ten minutes."
+        "No, it is not ten minutes.",
+        "No, it's not ten minutes."
       ]
     },
     {
@@ -170,7 +171,8 @@
       "audioRequired": true,
       "speechTargetEn": "Yes, it is five minutes.",
       "acceptedSpeechEn": [
-        "Yes, it is five minutes."
+        "Yes, it is five minutes.",
+        "Yes, it's five minutes."
       ]
     }
   ],
@@ -255,11 +257,12 @@
             "«It is not ten hours.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "نه، ده دقیقه نیست."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "skillFocus": "listening",
         "distractorAudit": {
           "reviewerType": "model",
@@ -277,7 +280,8 @@
               "contrastReasonFa": "معنی یا اطلاعات جمله فرق دارد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -412,7 +416,8 @@
         "mode": "retrieval",
         "textEn": "Yes, it is five minutes.",
         "acceptedAnswersEn": [
-          "Yes, it is five minutes."
+          "Yes, it is five minutes.",
+          "Yes, it's five minutes."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,
@@ -525,7 +530,8 @@
         "mode": "retrieval",
         "textEn": "No, it is not ten minutes.",
         "acceptedAnswersEn": [
-          "No, it is not ten minutes."
+          "No, it is not ten minutes.",
+          "No, it's not ten minutes."
         ],
         "sourceTurnKey": "T02",
         "showAnswerTextBeforeAttempt": false,

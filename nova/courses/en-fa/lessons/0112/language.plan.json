@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0112",
   "sortOrder": 112,
   "levelKey": "A1",
-  "lessonSourceHash": "a19ba62d06fae16bc513dfeab8a65e732536856f0631792943c0636e17a49a5c",
+  "lessonSourceHash": "06cc8fed38f9ca0ad5530a65d587bf32d8123a91047dd4351fe3f2861baf0238",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0112-ONCE"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "was here once",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "was here once",
+        "rationale": "Exact deterministic target-collocation window from I was here once for the bounded one-occasion sense."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "was here once",
@@ -98,5 +101,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "f2eba5175141075612fef7e5f7d5888037a9dc0ec6ad36f328a07e1cda133e60"
+  "planHash": "2f592b393ecbdc093fee4e24e4abe5124e546d7d3201ca79579dfa3278b1bf36"
 }

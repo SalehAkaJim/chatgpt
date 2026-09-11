@@ -1,4 +1,4 @@
-<!-- sourceHash: 28a57416e38b9f06bff0fabddb70cb7ba8b4e73c6475ff0bfb78698b843d588c -->
+<!-- sourceHash: 61125c6573428e8025f7188437c74ef621465c9f8cf0059deb2e202ad9432d51 -->
 # English Audit — EN-A1-L-0073
 
 **Lesson:** I can give you coffee
@@ -34,13 +34,13 @@ I can give you tea.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I can give you coffee.
 - **options:** دادن | گرفتن | خواندن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

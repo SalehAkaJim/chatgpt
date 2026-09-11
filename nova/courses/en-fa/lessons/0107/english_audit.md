@@ -1,4 +1,4 @@
-<!-- sourceHash: 75417cfc901f582d94fd68fec0db5da741ca80eb58f17d76b18cdfab7c2594a7 -->
+<!-- sourceHash: 46ba031beb0b5dfc9aa8c3aa41ac19b08f2448b4a53b32148bfafcf288f29a04 -->
 # English Audit — EN-A1-L-0107
 
 **Lesson:** This point on the map
@@ -34,13 +34,13 @@ Yes, that point.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** This point is the cafe.
 - **options:** نقطه | نفر | برنامه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,4 +1,4 @@
-<!-- sourceHash: 24b2b0c856821e7ac83cda7451f22ce8601b96e71756dbe158560a3b3be5b396 -->
+<!-- sourceHash: 1946c47ce598418f9b20504593ad79baac9535c1064814f819dfec97d6d7874b -->
 # English Audit — EN-A1-L-0116
 
 **Lesson:** The door is open

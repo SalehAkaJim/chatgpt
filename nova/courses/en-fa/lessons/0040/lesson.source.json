@@ -187,33 +187,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی know را در جمله پیدا کن.",
-      "promptFa": "know در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Yes. I know this book.",
-      "config": {
-        "options": [
-          "دانستن",
-          "خواندن",
-          "گفتن"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«خواندن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«گفتن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "دانستن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های nora را گوش کن و جواب owen را بگو.",
@@ -241,6 +214,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی know را در جمله پیدا کن.",
+      "promptFa": "know در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Yes. I know this book.",
+      "config": {
+        "options": [
+          "دانستن",
+          "خواندن",
+          "گفتن"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«خواندن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«گفتن» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "دانستن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -328,11 +328,13 @@
             "«I know that name.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "این اسم را هم می‌شناسم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

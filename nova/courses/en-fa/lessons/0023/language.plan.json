@@ -80,7 +80,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "yes i read books",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null,
       "fallbackMatch": null
@@ -97,32 +97,10 @@
       "lexicalLemmas": [
         "read"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "do you read books",
-      "examples": [
-        {
-          "id": 9226785,
-          "text": "Do you read books?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11744393,
-          "text": "Do you read books like that?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "sundown"
-        },
-        {
-          "id": 6265197,
-          "text": "How often do you read books?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null,
       "fallbackMatch": null
     },
@@ -137,7 +115,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "yes i read books",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null,
       "fallbackMatch": null
@@ -148,5 +126,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "f8f8f405461c52d30c4827cfc7d271238c0baf77686704ebdfcf7c221e2fc698"
+  "planHash": "abe5224a3560a74027a0e2ac38f78d3b543d6edbe608db3a5dea6d0263a6a62c"
 }

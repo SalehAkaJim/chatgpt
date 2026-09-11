@@ -1,4 +1,4 @@
-<!-- sourceHash: 41a857507bd4798ec2810f1b2caa537f8e10e2e1dcbf16457403afb0325d3172 -->
+<!-- sourceHash: 0090a0fcf51128de1544a8e8f30238d989cd67c569440ce76602edc0beee2540 -->
 # English Audit — EN-A1-L-0088
 
 **Lesson:** Leave at six
@@ -34,13 +34,13 @@ I leave at seven.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I leave at six.
 - **options:** رفتن | ماندن | خوابیدن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -1,33 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0092",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "let me carry it",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0092; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0092; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
@@ -39,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "One bounded lexical target is practiced in a stable high-frequency construction."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 4,
@@ -47,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 5,
-        "evidence": "Heavy objects create a clear communicative reason for both offers."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 5,
@@ -55,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 4,
-        "evidence": "The target progresses from recognition to guided exchange, transfer and hidden retrieval."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -67,24 +55,34 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; confidence is intentionally limited."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Only the bounded permission/enablement sense in Let me ... is reviewed.",
-      "Audio prosody is not evaluated at the text gate."
+      "Audio prosody is not evaluated at the text gate.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English target utterances are natural.",
       "Persian meaning and orthography are coherent.",
       "The final activity requires hidden retrieval.",
-      "Character and learner-role rotation are maintained."
+      "Character and learner-role rotation are maintained.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0092",
-    "sourceHash": "040998f9167117cbd0a54306fa57e19e83ab5b69a59a33eb9381075bf599a66d",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "7f073536bd3f6794641f46b410fa047d35d2537ed4caa2ec0e9a66321f83d580",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "dialogueExposure",
+        "duplicateScoring"
+      ]
+    },
     "status": "PASS",
     "average": 4.6,
     "errors": []
@@ -96,5 +94,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "040998f9167117cbd0a54306fa57e19e83ab5b69a59a33eb9381075bf599a66d"
+  "sourceHash": "7f073536bd3f6794641f46b410fa047d35d2537ed4caa2ec0e9a66321f83d580"
 }

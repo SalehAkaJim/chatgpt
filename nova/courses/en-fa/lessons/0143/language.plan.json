@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0143",
   "sortOrder": 143,
   "levelKey": "A1",
-  "lessonSourceHash": "9caff12c89cd024dde40910b25bab98419298b12f8e895fa958cec67b5e6e9bc",
+  "lessonSourceHash": "5d5c48a6c01905b06e2a1e39ea34caf3cb015d3ea5b61efb44487b82d19aa1bc",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -62,32 +62,10 @@
       "constructionKeys": [
         "EN-CONSTR-0143-BUY"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
+      "status": "explicit_fallback",
+      "sampleCount": 0,
       "evidenceQuery": "how much is it",
-      "examples": [
-        {
-          "id": 2418,
-          "text": "How much is it?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "brauliobezerra"
-        },
-        {
-          "id": 11038804,
-          "text": "How much is it altogether?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 5004168,
-          "text": "How much is it worth?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
+      "examples": [],
       "fallback": {
         "query": "How much is it",
         "rationale": "Changed-information same-lesson transfer preserving the selected sense."
@@ -119,5 +97,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "c9fd93be58897533251c303f7671961483656f8c15b455c5e157a81ffa57c546"
+  "planHash": "77df8605cc44d63b599ee7f638b4bf801db9a2f55c01c3378d3ce50b0e99e21b"
 }

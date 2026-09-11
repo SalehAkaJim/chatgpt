@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0095",
   "sortOrder": 95,
   "levelKey": "A1",
-  "lessonSourceHash": "e2e1458d49d8958f708d466b517acd7b4774b73253d0c56c8186e79bec643212",
+  "lessonSourceHash": "345461dddee1387ac68ad614d1d02796bc8f30190f2f74ada740b66792501bb5",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -73,12 +73,15 @@
       "constructionKeys": [
         "EN-CONSTR-0095-DIFFERENT"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "one is different",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "one is different",
+        "rationale": "Exact target collocation generated from the first learner turn."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "one is different",
@@ -122,5 +125,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "c885c6e0f5d8a0b56a2e66850c083d24ebfb5bdfbb3f6fa4e9d3548bab8f37ef"
+  "planHash": "bb47def92c9203b0dc9e350a81c1333c2461f9e261e819c2ed3ac36580d1021d"
 }

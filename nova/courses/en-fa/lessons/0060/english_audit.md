@@ -1,4 +1,4 @@
-<!-- sourceHash: 5d0a01d0b5f1973e3522bcf61c1b54a93a248d4d1630a4c50c2f5535915770c7 -->
+<!-- sourceHash: 29089c078fcf2b1c28bade8adf9efb62063717bb113fdb39c366ec5daef62603 -->
 # English Audit — EN-A1-L-0060
 
 **Lesson:** That man
@@ -34,13 +34,13 @@ This man.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** That man.
 - **options:** مرد | کتاب | اتاق
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0135",
   "sortOrder": 135,
   "levelKey": "A1",
-  "lessonSourceHash": "58d2e3556d6f113b192692da9626e505aa5100cac1cb5566843783025dc30e77",
+  "lessonSourceHash": "a46e316a6168da7ae61a7066be513695ec29cac8f8cf84bc7272bca1f71a2bf4",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -113,10 +113,32 @@
       "lexicalLemmas": [
         "remember"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "how well do you remember it",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 4,
+      "evidenceQuery": "do you remember it",
+      "examples": [
+        {
+          "id": 1222339,
+          "text": "Do you remember it?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 10973819,
+          "text": "Do you remember it fondly?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "nipbud"
+        },
+        {
+          "id": 7305178,
+          "text": "“Do you remember it?” “I think so.”",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "jimkillock"
+        }
+      ],
       "fallback": {
         "query": "how well do you remember it",
         "rationale": "Natural How + adverb question containing the target verb."
@@ -132,10 +154,18 @@
       "lexicalLemmas": [
         "remember"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "i remember the name too",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 1,
+      "evidenceQuery": "i remember the name",
+      "examples": [
+        {
+          "id": 1410239,
+          "text": "Why can't I remember the name of the girl I'm trying to forget?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "MrShoval"
+        }
+      ],
       "fallback": {
         "query": "i remember the name too",
         "rationale": "Changed-context retrieval of the same target sense."
@@ -146,5 +176,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "dc4b53f8e104e3547980ed0ba00355f194e34f17b8678d42713dbb618c7315bd"
+  "planHash": "17e6d8856a6c704f3604afd5ba16b26313a548eec307300c3f1c6cf33d6c7326"
 }

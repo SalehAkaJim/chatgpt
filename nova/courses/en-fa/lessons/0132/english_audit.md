@@ -1,4 +1,4 @@
-<!-- sourceHash: d87e73beea2126486a92ad367056f39c9455dd2f23fa51c304262c8124632b2d -->
+<!-- sourceHash: d10132879107fb543772e048c43cf7c62615778f70e4e319ebc8444a43f83395 -->
 # English Audit — EN-A1-L-0132
 
 **Lesson:** The pay is good

@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0045",
   "sortOrder": 45,
   "levelKey": "A1",
-  "lessonSourceHash": "5143f16fa3ee1c73134e502796951daa5a7a94e5320565953e8542ad12a443a5",
+  "lessonSourceHash": "22aa9f5920a04db989b8fc1023cd06f52c8dccdcb39d2c7f429c647e0a4ac431",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0045-WELL"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "i read well",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "i read well",
+        "rationale": "Exact target-collocation fallback for the learner response."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "read this well",
@@ -117,5 +120,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "753359c1d33f4a71a5f2e767f357b1b062baf190e7318522cbe34cf5ae71dfc2"
+  "planHash": "aad58f7c50265837856552c5e17fe49c6a30a1154cb118018b87fd74e5ff825a"
 }

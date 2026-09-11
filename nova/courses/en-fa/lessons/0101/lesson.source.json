@@ -138,7 +138,8 @@
       "audioRequired": true,
       "speechTargetEn": "That is a different case.",
       "acceptedSpeechEn": [
-        "That is a different case."
+        "That is a different case.",
+        "That's a different case."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -146,33 +147,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی case را پیدا کن.",
-      "promptFa": "case در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Yes, this is a special case.",
-      "config": {
-        "options": [
-          "مورد",
-          "کیف",
-          "هفته"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "مورد"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -201,6 +175,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی case را پیدا کن.",
+      "promptFa": "case در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Yes, this is a special case.",
+      "config": {
+        "options": [
+          "مورد",
+          "کیف",
+          "هفته"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "مورد"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -280,11 +281,13 @@
             "این جمله هدف درس نیست."
           ],
           "correctFa": "آن یک مورد متفاوت است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -296,7 +299,8 @@
         "mode": "retrieval",
         "textEn": "That is a different case.",
         "acceptedAnswersEn": [
-          "That is a different case."
+          "That is a different case.",
+          "That's a different case."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

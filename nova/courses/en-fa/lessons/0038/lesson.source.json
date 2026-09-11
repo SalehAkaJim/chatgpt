@@ -193,7 +193,8 @@
       "audioRequired": true,
       "speechTargetEn": "Yes. It is the only new book.",
       "acceptedSpeechEn": [
-        "Yes. It is the only new book."
+        "Yes. It is the only new book.",
+        "Yes. It's the only new book."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -201,33 +202,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی only را در جمله پیدا کن.",
-      "promptFa": "only در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Ben reads the only new book.",
-      "config": {
-        "options": [
-          "تنها",
-          "یک معنی نامربوط",
-          "نام یک شخص"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این کلمه نام شخص نیست."
-          ],
-          "correctFa": "تنها"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -256,6 +230,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی only را در جمله پیدا کن.",
+      "promptFa": "only در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Ben reads the only new book.",
+      "config": {
+        "options": [
+          "تنها",
+          "یک معنی نامربوط",
+          "نام یک شخص"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این کلمه نام شخص نیست."
+          ],
+          "correctFa": "تنها"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -345,11 +346,13 @@
             "این جمله نامربوط است."
           ],
           "correctFa": "بله. این تنها کتاب جدید است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -361,7 +364,8 @@
         "mode": "retrieval",
         "textEn": "Yes. It is the only new book.",
         "acceptedAnswersEn": [
-          "Yes. It is the only new book."
+          "Yes. It is the only new book.",
+          "Yes. It's the only new book."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

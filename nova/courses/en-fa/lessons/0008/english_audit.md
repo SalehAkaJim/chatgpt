@@ -1,4 +1,4 @@
-<!-- sourceHash: 24a2433d5e3da92176db9b0c4a6f549922976fd2a97b538c76203ef57c2a3ab9 -->
+<!-- sourceHash: c625b5741a4553d5a4e854e784276ce6050e2c01659f17cfd2e29d69c6529836 -->
 # English Audit — EN-A1-L-0008
 
 **Lesson:** Where's my book?
@@ -21,7 +21,7 @@ Where's my book?
 It's on the table.
 
 - **Speech target:** It's on the table.
-- **Accepted speech:** It's on the table.
+- **Accepted speech:** It's on the table. | It is on the table.
 
 **T03 · iris**
 
@@ -39,7 +39,7 @@ Here you go.
 It's on the table.
 
 - **Speech target:** It's on the table.
-- **Accepted speech:** It's on the table.
+- **Accepted speech:** It's on the table. | It is on the table.
 
 ## Activities
 
@@ -66,7 +66,7 @@ It's on the table.
 **A06 · speak**
 
 - **textEn:** It's on the table.
-- **acceptedAnswersEn:** It's on the table.
+- **acceptedAnswersEn:** It's on the table. | It is on the table.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

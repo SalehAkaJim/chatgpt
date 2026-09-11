@@ -156,32 +156,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی question را در این درس پیدا کن.",
-      "promptEn": "The place is another question",
-      "config": {
-        "options": [
-          "موضوع",
-          "پرسش مستقیم",
-          "پاسخ"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است؛ question اینجا یعنی موضوع.",
-            "در این درس question به معنی پرسش مستقیم نیست.",
-            "این گزینه معنی answer است."
-          ],
-          "correctFa": "موضوع"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف شخصیت مقابل را گوش کن و جواب نقش خودت را بگو.",
@@ -209,6 +183,32 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی question را در این درس پیدا کن.",
+      "promptEn": "The place is another question",
+      "config": {
+        "options": [
+          "موضوع",
+          "پرسش مستقیم",
+          "پاسخ"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ question اینجا یعنی موضوع.",
+            "در این درس question به معنی پرسش مستقیم نیست.",
+            "این گزینه معنی answer است."
+          ],
+          "correctFa": "موضوع"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -279,11 +279,12 @@
             "این گزینه موضوع را از تاریخ به مکان تغییر می‌دهد."
           ],
           "correctFa": "Choosing a date is the main question."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -300,7 +301,8 @@
               "contrastReasonFa": "موضوع را از تاریخ به مکان تغییر می‌دهد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -322,11 +324,12 @@
             "این جمله ظاهر مکان را توصیف می‌کند، نه موضوع تصمیم را."
           ],
           "correctFa": "The place is another question."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "distractorAudit": {
           "reviewerType": "model",
           "items": [
@@ -343,7 +346,8 @@
               "contrastReasonFa": "ظاهر مکان را توصیف می‌کند، نه موضوع تصمیم را."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

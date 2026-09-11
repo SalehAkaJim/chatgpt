@@ -1,4 +1,4 @@
-<!-- sourceHash: 7640d262f439b8bc86609171c865c3ff62e4c3acee89401761c679e2b94c83ed -->
+<!-- sourceHash: 1352484da0f8da5c62eae2b2d074cea74e27ae2ca6a068f768cf97ee91934f1c -->
 # English Audit — EN-A1-L-0098
 
 **Lesson:** The woman at the desk
@@ -34,13 +34,13 @@ The woman is at the desk.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** The woman is there.
 - **options:** زن بزرگسال | کودک | گروه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

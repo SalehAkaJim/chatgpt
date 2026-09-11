@@ -159,33 +159,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی night را پیدا کن.",
-      "promptFa": "night در این درس چه معنی‌ای دارد؟",
-      "promptEn": "I read at night.",
-      "config": {
-        "options": [
-          "شب",
-          "صبح",
-          "ظهر"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این زمان هدف درس نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "شب"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های لیام را گوش کن و جواب لیو را بگو.",
@@ -213,6 +186,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی night را پیدا کن.",
+      "promptFa": "night در این درس چه معنی‌ای دارد؟",
+      "promptEn": "I read at night.",
+      "config": {
+        "options": [
+          "شب",
+          "صبح",
+          "ظهر"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این زمان هدف درس نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "شب"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -292,11 +292,13 @@
             "این عبارت نامربوط است."
           ],
           "correctFa": "شب درس می‌خوانم."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

@@ -1,4 +1,4 @@
-<!-- sourceHash: dd0e4d190ac2f7aa92f06eede09a7f6c750feee819882001bcc19d6016325a68 -->
+<!-- sourceHash: e894c7ed96b6e916cad9076b9cd4310395455a77f805cb13d5d945f783fba0e0 -->
 # English Audit — EN-A1-L-0025
 
 **Lesson:** No, I'm not
@@ -23,7 +23,7 @@ Owen, are you in room two?
 No, I'm not.
 
 - **Speech target:** No, I'm not.
-- **Accepted speech:** No, I'm not.
+- **Accepted speech:** No, I'm not. | No, I am not.
 
 **T03 · nora**
 
@@ -41,7 +41,7 @@ Sure.
 No, I'm not.
 
 - **Speech target:** No, I'm not.
-- **Accepted speech:** No, I'm not.
+- **Accepted speech:** No, I'm not. | No, I am not.
 
 ## Activities
 
@@ -68,7 +68,7 @@ No, I'm not.
 **A06 · speak**
 
 - **textEn:** No, I'm not.
-- **acceptedAnswersEn:** No, I'm not.
+- **acceptedAnswersEn:** No, I'm not. | No, I am not.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

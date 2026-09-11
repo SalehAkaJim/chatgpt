@@ -146,7 +146,8 @@
       "audioRequired": true,
       "speechTargetEn": "That is a little room.",
       "acceptedSpeechEn": [
-        "That is a little room."
+        "That is a little room.",
+        "That's a little room."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -154,33 +155,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی little را پیدا کن.",
-      "promptFa": "little در این درس چه معنی‌ای دارد؟",
-      "promptEn": "This is a little room.",
-      "config": {
-        "options": [
-          "کوچک",
-          "قدیمی",
-          "بلند"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "کوچک"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -209,6 +183,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی little را پیدا کن.",
+      "promptFa": "little در این درس چه معنی‌ای دارد؟",
+      "promptEn": "This is a little room.",
+      "config": {
+        "options": [
+          "کوچک",
+          "قدیمی",
+          "بلند"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "کوچک"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -296,11 +297,13 @@
             "این جمله نامربوط است."
           ],
           "correctFa": "آن یک اتاق کوچک است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -312,7 +315,8 @@
         "mode": "retrieval",
         "textEn": "That is a little room.",
         "acceptedAnswersEn": [
-          "That is a little room."
+          "That is a little room.",
+          "That's a little room."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

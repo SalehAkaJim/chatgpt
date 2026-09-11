@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0043",
   "sortOrder": 43,
   "levelKey": "A1",
-  "lessonSourceHash": "ae6cf2f80411b4395a5220cc205fa0a5df5203a0029b0a58fa7006b11f7b9e0f",
+  "lessonSourceHash": "82d8eaefb5586e8682e85cd01471cf4ae612ba05a83091b5636014a5bce61d63",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -92,7 +92,7 @@
       ],
       "status": "no_evidence",
       "sampleCount": 0,
-      "evidenceQuery": "action then action",
+      "evidenceQuery": null,
       "examples": [],
       "fallback": null,
       "fallbackMatch": null
@@ -127,7 +127,7 @@
       ],
       "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": "read then help",
+      "evidenceQuery": "read then",
       "examples": [],
       "fallback": {
         "query": "read then",
@@ -158,5 +158,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "fff634e250b17a56ac40d330e4c2b1155117caf21d6b65034a0ea173a9f9e8c6"
+  "planHash": "43aa4a3b1faa3d995af23b25431959f0843937791fdf096c0ee55f9a3162388d"
 }

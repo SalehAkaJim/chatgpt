@@ -1,4 +1,4 @@
-<!-- sourceHash: 24bdf12a26977c782ead8a38283f5ade57b2af7e9efc546ea691d04c159a77a1 -->
+<!-- sourceHash: 34e68a90f0080b7c85274b48c874d9ab8686b08f29b440650a5e314daa142a25 -->
 # English Audit — EN-A1-L-0120
 
 **Lesson:** What kind of tea?
@@ -34,13 +34,13 @@ What kind of drink is that?
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** What kind of tea is this?
 - **options:** نوع | بچه | زمان
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

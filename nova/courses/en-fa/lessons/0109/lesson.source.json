@@ -118,7 +118,8 @@
       "audioRequired": true,
       "speechTargetEn": "No, it isn't here yet.",
       "acceptedSpeechEn": [
-        "No, it isn't here yet."
+        "No, it isn't here yet.",
+        "No, it'sn't here yet."
       ]
     },
     {
@@ -280,11 +281,13 @@
             "این جمله به موقعیت ربط ندارد."
           ],
           "correctFa": "او هم هنوز نرسیده."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

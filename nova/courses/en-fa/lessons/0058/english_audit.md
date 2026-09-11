@@ -1,4 +1,4 @@
-<!-- sourceHash: 908138aa2735605f2c130869bdb893463b61da2c55345766711f0d12d3d1e123 -->
+<!-- sourceHash: 92361bfeba21bfc2c7e8fd3dfe4abb78831236af8d9f2b11129e7bd3778f865d -->
 # English Audit — EN-A1-L-0058
 
 **Lesson:** A great big room
@@ -34,13 +34,13 @@ A great big bag.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** A great big room.
 - **options:** بزرگ | جدید | قدیمی
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

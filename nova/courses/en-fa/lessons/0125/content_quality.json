@@ -1,33 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0125",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "this information is for maya too",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor semantic and pedagogy review of Lesson 0125; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0125; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 5,
@@ -39,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "The lexical target is recognized, then the dialogue is exposed before dependent listening/transfer work, followed by hidden-answer retrieval."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 5,
@@ -47,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 5,
-        "evidence": "لیو و لیام در کتابخانه برگه اطلاعات یک برنامه را می‌بینند و لیام می‌گوید اطلاعات برای چه کسی است."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 4,
@@ -55,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 5,
-        "evidence": "information recurs across recognition, guided speech, comprehension, transfer, and hidden retrieval without adding another scored lexical target."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -67,7 +55,7 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "Runtime order was audited so dependent listening follows dialogue exposure; no real learner test is claimed, so pacing and difficulty remain unverified."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       },
       "runtimeAssetGrounding": {
         "score": 5,
@@ -78,7 +66,8 @@
     "limitations": [
       "No independent human or real learner test has been performed.",
       "Only the bounded lexical sense defined for this Lesson is reviewed.",
-      "Generated audio pronunciation/prosody is not evaluated at this text stage."
+      "Generated audio pronunciation/prosody is not evaluated at this text stage.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English turns, accepted speech strings, and every English distractor were checked for grammar, naturalness, and internal consistency.",
@@ -89,11 +78,19 @@
       "No unsupported visual claim exists; all listening sources are audio-required turns.",
       "Final retrieval keeps the answer hidden before attempt.",
       "Story arc returns after 5 Lessons and the learner role changes from the prior scene.",
-      "Target collocation coverage was repaired with explicit compatible fallbacks for the normalized windows ‘have the information’ and ‘yes this information is for’; no corpus evidence or human testing is invented."
+      "Target collocation coverage was repaired with explicit compatible fallbacks for the normalized windows ‘have the information’ and ‘yes this information is for’; no corpus evidence or human testing is invented.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0125",
-    "sourceHash": "626db47b28eccc3c97e22e4a1cfb3694cea315b94e774a8672ca08eb80f31481",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "fa62a32c20a7ac600d0418f6989d13bc0f6862e939aca6e8e49dabbb20294b18",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "duplicateScoring"
+      ]
+    },
     "status": "PASS",
     "average": 4.7,
     "errors": []
@@ -105,5 +102,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "626db47b28eccc3c97e22e4a1cfb3694cea315b94e774a8672ca08eb80f31481"
+  "sourceHash": "fa62a32c20a7ac600d0418f6989d13bc0f6862e939aca6e8e49dabbb20294b18"
 }

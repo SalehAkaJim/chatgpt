@@ -1,4 +1,4 @@
-<!-- sourceHash: a4062d556bb37b2dc18842b2d406c52443d9fe5aaf162c42d32ad5514c9ead10 -->
+<!-- sourceHash: b309b2a41b92f89930e388d8b45446f0040459357e13b846d2ec5709eac91b79 -->
 # English Audit — EN-A1-L-0145
 
 **Lesson:** Say how long it is not
@@ -20,7 +20,7 @@ Is the wait ten minutes?
 No, it is not ten minutes.
 
 - **Speech target:** No, it is not ten minutes.
-- **Accepted speech:** No, it is not ten minutes.
+- **Accepted speech:** No, it is not ten minutes. | No, it's not ten minutes.
 
 **T03 · iris**
 
@@ -31,7 +31,7 @@ Is it five minutes?
 Yes, it is five minutes.
 
 - **Speech target:** Yes, it is five minutes.
-- **Accepted speech:** Yes, it is five minutes.
+- **Accepted speech:** Yes, it is five minutes. | Yes, it's five minutes.
 
 ## Activities
 
@@ -64,7 +64,7 @@ Yes, it is five minutes.
 **A07 · speak**
 
 - **textEn:** Yes, it is five minutes.
-- **acceptedAnswersEn:** Yes, it is five minutes.
+- **acceptedAnswersEn:** Yes, it is five minutes. | Yes, it's five minutes.
 
 **A08 · response_choice**
 
@@ -77,7 +77,7 @@ Yes, it is five minutes.
 **A10 · speak**
 
 - **textEn:** No, it is not ten minutes.
-- **acceptedAnswersEn:** No, it is not ten minutes.
+- **acceptedAnswersEn:** No, it is not ten minutes. | No, it's not ten minutes.
 
 **A11 · speak**
 

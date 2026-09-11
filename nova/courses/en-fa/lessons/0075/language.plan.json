@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0075",
   "sortOrder": 75,
   "levelKey": "A1",
-  "lessonSourceHash": "a3eed43be39e2f62c74cfc188699f2db9c9eec8164ad3e438c00c9bd97c5ada7",
+  "lessonSourceHash": "5993c9cc6a8cb00201bc5c5c6c6fdf0371dc143eb18c1d520218890f84881040",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -91,10 +91,32 @@
       "lexicalLemmas": [
         "place"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "a good place",
-      "examples": [],
+      "examples": [
+        {
+          "id": 11814344,
+          "text": "We found a good place.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 10743206,
+          "text": "I found a good place.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 8579931,
+          "text": "Algiers is a good place.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        }
+      ],
       "fallback": {
         "query": "a good place",
         "rationale": "Exact target-collocation window generated around place in both learner responses."
@@ -107,5 +129,5 @@
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "f7a5cc0fe454ef5a9ac7077ac4c0af51ecaa6a6c23a16ec3d16cd216ab7e9ee6"
+  "planHash": "b35413da1cc09aaa272a2e8e903966bf35108fa3092b0e6542ca755e19e426e8"
 }

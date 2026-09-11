@@ -1,4 +1,4 @@
-<!-- sourceHash: 49c291036eb211b8e2c325f53dd81f912b6e7c651a79489af12ac25e5627d0fc -->
+<!-- sourceHash: 78d6641d98d5596903d72140b240f9de4fd49a6b3643aaec87f5fceab47fb8f4 -->
 # English Audit — EN-A1-L-0031
 
 **Lesson:** This is my book
@@ -31,7 +31,7 @@ Your pen?
 No. That is your pen.
 
 - **Speech target:** No. That is your pen.
-- **Accepted speech:** No. That is your pen.
+- **Accepted speech:** No. That is your pen. | No. That's your pen.
 
 **T05 · nora**
 
@@ -42,13 +42,13 @@ This is my book.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** This is my book.
 - **options:** این کتاب مال منه | اون خودکار مال توئه | این کتاب مال اوونه
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

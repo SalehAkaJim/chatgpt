@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0085",
   "sortOrder": 85,
   "levelKey": "A1",
-  "lessonSourceHash": "20e572dfc63fe9d08cb03a25421facf01772f89f9140258ea33aefac20454229",
+  "lessonSourceHash": "d4b377a39bebb51df859994ea8fb7e19026229bcac23869388ab354a21302775",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,10 +49,32 @@
       "constructionKeys": [
         "EN-CONSTR-0085-MONEY"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
-      "evidenceQuery": "i have the money",
-      "examples": [],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "have the money",
+      "examples": [
+        {
+          "id": 2360394,
+          "text": "I have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 12222303,
+          "text": "We'll have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 10241855,
+          "text": "I already have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LimeGreenTeknii"
+        }
+      ],
       "fallback": {
         "query": "i have the money",
         "rationale": "Exact bounded learner target."
@@ -68,10 +90,32 @@
       "lexicalLemmas": [
         "money"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "have the money",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2360394,
+          "text": "I have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 12222303,
+          "text": "We'll have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 10241855,
+          "text": "I already have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LimeGreenTeknii"
+        }
+      ],
       "fallback": {
         "query": "have the money",
         "rationale": "Exact target-collocation window produced by the committed usage validator."
@@ -87,10 +131,32 @@
       "lexicalLemmas": [
         "money"
       ],
-      "status": "explicit_fallback",
-      "sampleCount": 0,
+      "status": "corpus_evidence",
+      "sampleCount": 5,
       "evidenceQuery": "i need money",
-      "examples": [],
+      "examples": [
+        {
+          "id": 2246025,
+          "text": "I needed money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 436861,
+          "text": "I need money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "lukaszpp"
+        },
+        {
+          "id": 256962,
+          "text": "I need money badly.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
       "fallback": {
         "query": "i need money",
         "rationale": "Exact changed-context transfer target."
@@ -101,5 +167,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "bb0b7a6e988d6839290240826300641424d1187f3112f6aca9ffad7f243e7751"
+  "planHash": "4af38f3dad7603a01313530e70bc560cefd074503602954718558c2111d8a7df"
 }

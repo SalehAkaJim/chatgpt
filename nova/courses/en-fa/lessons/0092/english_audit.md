@@ -1,4 +1,4 @@
-<!-- sourceHash: 040998f9167117cbd0a54306fa57e19e83ab5b69a59a33eb9381075bf599a66d -->
+<!-- sourceHash: 7f073536bd3f6794641f46b410fa047d35d2537ed4caa2ec0e9a66321f83d580 -->
 # English Audit — EN-A1-L-0092
 
 **Lesson:** Let me help
@@ -34,13 +34,13 @@ Let me carry it.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** Let me help.
 - **options:** اجازه دادن | ترک کردن | شمردن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

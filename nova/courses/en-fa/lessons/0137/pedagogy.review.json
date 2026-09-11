@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-10",
-  "scope": "Model/editor semantic and pedagogy review of Lesson 0137; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0137; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 5,
@@ -14,7 +14,7 @@
     },
     "pedagogicalClarity": {
       "score": 5,
-      "evidence": "Dialogue exposure in A02 precedes listening, reconstruction and retrieval dependencies."
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
     },
     "distractorQuality": {
       "score": 5,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 5,
-      "evidence": "الکس و مایا در مرکز آموزشی درباره برنامه این ماه و ماه بعد حرف می‌زنند."
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
     },
     "difficultyFit": {
       "score": 4,
@@ -30,7 +30,7 @@
     },
     "repetitionUsefulness": {
       "score": 5,
-      "evidence": "month recurs across current-month and next-month contexts without sense drift."
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
     },
     "transferQuality": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "No real learner test is claimed; model review covers dependency and clarity only."
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
     },
     "runtimeAssetGrounding": {
       "score": 5,
@@ -54,7 +54,8 @@
     "No independent human or real learner test has been performed.",
     "Only the calendar-unit sense of month is assessed.",
     "Generated audio pronunciation/prosody is not evaluated at this text stage.",
-    "Runtime behavior requires CI validation."
+    "Runtime behavior requires CI validation.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
   ],
   "resolvedFindings": [
     "English negative-polarity consistency checked without claiming a new grammar target unavailable in the live canonical spec.",
@@ -64,9 +65,17 @@
     "A02 precedes all dependent listening/retrieval.",
     "No unsupported visual exists and audio sources are grounded.",
     "A07 hides answer before attempt and now carries bounded-retrieval evidence and retry feedback.",
-    "Classmates arc returns from Lesson 0132 after 5 Lessons with learner role switched to Alex."
+    "Classmates arc returns from Lesson 0132 after 5 Lessons with learner role switched to Alex.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
   ],
   "lessonKey": "EN-A1-L-0137",
-  "sourceHash": "71095111eca4768cc5e81b67383cf82932cbd6ecba296ad0cf21db43e28f739c",
-  "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e"
+  "sourceHash": "03db1b706a50ad9263b55da6e6d476a5f1d50dfd30b88ad00f104f9d0f061f51",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "duplicateScoring"
+    ]
+  }
 }

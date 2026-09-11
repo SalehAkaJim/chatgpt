@@ -151,33 +151,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی keep را پیدا کن.",
-      "promptFa": "keep در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Keep the ticket.",
-      "config": {
-        "options": [
-          "نگه داشتن",
-          "نشان دادن",
-          "رفتن"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "نگه داشتن"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های نورا را گوش کن و جواب اوون را بگو.",
@@ -205,6 +178,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی keep را پیدا کن.",
+      "promptFa": "keep در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Keep the ticket.",
+      "config": {
+        "options": [
+          "نگه داشتن",
+          "نشان دادن",
+          "رفتن"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "نگه داشتن"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -284,11 +284,13 @@
             "«Keep that key.» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
           ],
           "correctFa": "این کلید را نگه دار."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

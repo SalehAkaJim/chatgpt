@@ -1,1 +1,71 @@
-{"version":1,"lessonKey":"EN-A1-L-0015","sourceHash":"12e67c96686093b30668df672014fe8f674b882f4b0586a3421975f571398903","courseSourceHash":"3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e","reviewerType":"model","reviewedAt":"2026-09-08","scope":"Model/editor rewrite review for Lessons 0014–0020 after activity-variety, load, naturalness and skill-mix revisions; not an independent human review.","dimensions":{"englishNaturalness":{"score":4,"evidence":"How much is it? and How much? are both natural price questions after receiving an item in a clear cafe context."},"persianMeaningQuality":{"score":5,"evidence":"Checked learner-facing Persian for meaning, clarity and current Nova orthography rules; wording stays colloquial and context-specific."},"pedagogicalClarity":{"score":4,"evidence":"Price meaning is grounded first in a menu and then in spoken interaction; unnecessary a tea/a coffee explanations were removed."},"distractorQuality":{"score":4,"evidence":"Price options reuse small known numbers and require reading/listening rather than grammar guessing."},"dialoguePlausibility":{"score":4,"evidence":"Ava receives tea, asks the price and thanks Ben; this is a plausible service exchange."},"difficultyFit":{"score":4,"evidence":"Only one price question, one number and the currency noun are new."},"repetitionUsefulness":{"score":4,"evidence":"The price is encountered visually and aurally before hidden production."},"transferQuality":{"score":4,"evidence":"The learner moves from ordering a drink to handling the next transaction step: price."},"overallCoherence":{"score":4,"evidence":"Reading, listening and speaking all support asking and understanding a simple price."},"learnerExperience":{"score":3,"evidence":"Static flow review only. Activity order is more varied and help/feedback paths are present, but no real learner, microphone, timing or retention test has been performed."}},"learnerTested":false,"limitations":["Real learner outcomes and delayed retention have not been measured.","Generated audio still requires perceptual/prosody review with human listeners.","Hidden-answer retrieval remains bounded and cannot certify open-ended language ability."],"resolvedFindings":["Only one price question, one number and the currency noun are new.","The learner moves from ordering a drink to handling the next transaction step: price.","Reading, listening and speaking all support asking and understanding a simple price."]}
+{
+  "version": 1,
+  "lessonKey": "EN-A1-L-0015",
+  "sourceHash": "0b908f42ade598fdd12ab0281198708da7643af404b1f83bd90d8a75e99e0509",
+  "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0015; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 4,
+      "evidence": "How much is it? and How much? are both natural price questions after receiving an item in a clear cafe context."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "Checked learner-facing Persian for meaning, clarity and current Nova orthography rules; wording stays colloquial and context-specific."
+    },
+    "pedagogicalClarity": {
+      "score": 4,
+      "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
+    },
+    "distractorQuality": {
+      "score": 4,
+      "evidence": "Price options reuse small known numbers and require reading/listening rather than grammar guessing."
+    },
+    "dialoguePlausibility": {
+      "score": 4,
+      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "Only one price question, one number and the currency noun are new."
+    },
+    "repetitionUsefulness": {
+      "score": 4,
+      "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
+    },
+    "transferQuality": {
+      "score": 4,
+      "evidence": "The learner moves from ordering a drink to handling the next transaction step: price."
+    },
+    "overallCoherence": {
+      "score": 4,
+      "evidence": "Reading, listening and speaking all support asking and understanding a simple price."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "Real learner outcomes and delayed retention have not been measured.",
+    "Generated audio still requires perceptual/prosody review with human listeners.",
+    "Hidden-answer retrieval remains bounded and cannot certify open-ended language ability.",
+    "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
+  ],
+  "resolvedFindings": [
+    "Only one price question, one number and the currency noun are new.",
+    "The learner moves from ordering a drink to handling the next transaction step: price.",
+    "Reading, listening and speaking all support asking and understanding a simple price.",
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
+  ],
+  "qualityV3Remediation": {
+    "version": 1,
+    "date": "2026-09-11",
+    "categories": [
+      "dialogueExposure"
+    ]
+  }
+}

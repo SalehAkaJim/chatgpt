@@ -143,33 +143,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی high را پیدا کن.",
-      "promptFa": "high در این درس چه معنی‌ای دارد؟",
-      "promptEn": "The price is high.",
-      "config": {
-        "options": [
-          "بالا یا زیاد",
-          "پایین",
-          "همان"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "برعکس هدف است.",
-            "هدف این درس نیست."
-          ],
-          "correctFa": "بالا یا زیاد"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های ava را گوش کن و جواب ben را بگو.",
@@ -197,6 +170,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی high را پیدا کن.",
+      "promptFa": "high در این درس چه معنی‌ای دارد؟",
+      "promptEn": "The price is high.",
+      "config": {
+        "options": [
+          "بالا یا زیاد",
+          "پایین",
+          "همان"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "برعکس هدف است.",
+            "هدف این درس نیست."
+          ],
+          "correctFa": "بالا یا زیاد"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -276,11 +276,13 @@
             "نامربوط است."
           ],
           "correctFa": "این قیمت بالاست."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

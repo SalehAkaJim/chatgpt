@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0109",
   "sortOrder": 109,
   "levelKey": "A1",
-  "lessonSourceHash": "16bd63a7675bb484ee54a62b6448527ec0a8be23ebe6c5c1c56a82a2ec7a0b4e",
+  "lessonSourceHash": "98d11bf342682922595c126f63e455d9a9c906ce8629134e16af826d2bb0c09e",
   "enforceFromSortOrder": 25,
   "enforced": true,
   "grammarEvidence": [
@@ -49,12 +49,15 @@
       "constructionKeys": [
         "EN-CONSTR-0109-YET"
       ],
-      "status": "no_evidence",
+      "status": "explicit_fallback",
       "sampleCount": 0,
-      "evidenceQuery": null,
+      "evidenceQuery": "isn't here yet",
       "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
+      "fallback": {
+        "query": "isn't here yet",
+        "rationale": "Exact bounded learner target collocation for the temporal sense of yet."
+      },
+      "fallbackMatch": "compatible_phrase"
     },
     {
       "query": "isn't here yet",
@@ -98,5 +101,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "96647f31b9a423188e4a9fbcc267820e3b0840d5743c2420cbe4744a100a13fe"
+  "planHash": "e61d24d1103d177037160348e0a06b0a46549666bf7a8ec891196b0be57a5c82"
 }

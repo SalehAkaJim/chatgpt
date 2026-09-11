@@ -142,7 +142,8 @@
       "audioRequired": true,
       "speechTargetEn": "It is a good start.",
       "acceptedSpeechEn": [
-        "It is a good start."
+        "It is a good start.",
+        "It's a good start."
       ],
       "metadata": {
         "usage": "changed_context_transfer"
@@ -150,33 +151,6 @@
     }
   ],
   "activities": [
-    {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی start را پیدا کن.",
-      "promptFa": "start در این درس چه معنی‌ای دارد؟",
-      "promptEn": "The start is at nine.",
-      "config": {
-        "options": [
-          "شروع",
-          "پایان",
-          "تماس"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "این معنی با موقعیت جور نیست.",
-            "این گزینه هدف درس نیست."
-          ],
-          "correctFa": "شروع"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
     {
       "activityKey": "A02",
       "type": "dialogue",
@@ -205,6 +179,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی start را پیدا کن.",
+      "promptFa": "start در این درس چه معنی‌ای دارد؟",
+      "promptEn": "The start is at nine.",
+      "config": {
+        "options": [
+          "شروع",
+          "پایان",
+          "تماس"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "این معنی با موقعیت جور نیست.",
+            "این گزینه هدف درس نیست."
+          ],
+          "correctFa": "شروع"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -284,11 +285,13 @@
             "این جمله نامربوط است."
           ],
           "correctFa": "شروع خوبی است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {
@@ -300,7 +303,8 @@
         "mode": "retrieval",
         "textEn": "It is a good start.",
         "acceptedAnswersEn": [
-          "It is a good start."
+          "It is a good start.",
+          "It's a good start."
         ],
         "sourceTurnKey": "T04",
         "showAnswerTextBeforeAttempt": false,

@@ -1,4 +1,4 @@
-<!-- sourceHash: 220d1d836fe9f521cca8b7d7501939458e6413e24a63e418112e0b512d72b343 -->
+<!-- sourceHash: 4a7c1421624af147a922cbef42cfcc38a99883ec031e728fe287d9d556b56d45 -->
 # English Audit — EN-A1-L-0096
 
 **Lesson:** Set it here
@@ -34,13 +34,13 @@ I set the book there.
 
 ## Activities
 
+**A02 · dialogue**
+
+
 **A01 · response_choice**
 
 - **English prompt:** I set it here.
 - **options:** قرار دادن | شروع کردن | تماس گرفتن
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 

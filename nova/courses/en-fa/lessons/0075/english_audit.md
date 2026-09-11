@@ -1,4 +1,4 @@
-<!-- sourceHash: a3eed43be39e2f62c74cfc188699f2db9c9eec8164ad3e438c00c9bd97c5ada7 -->
+<!-- sourceHash: 5993c9cc6a8cb00201bc5c5c6c6fdf0371dc143eb18c1d520218890f84881040 -->
 # English Audit — EN-A1-L-0075
 
 **Lesson:** A good place
@@ -30,17 +30,17 @@ And there?
 That is a good place.
 
 - **Speech target:** That is a good place.
-- **Accepted speech:** That is a good place.
+- **Accepted speech:** That is a good place. | That's a good place.
 
 ## Activities
+
+**A02 · dialogue**
+
 
 **A01 · response_choice**
 
 - **English prompt:** This is a good place.
 - **options:** مکان | زمان | کتاب
-
-**A02 · dialogue**
-
 
 **A03 · comprehension**
 
@@ -59,7 +59,7 @@ That is a good place.
 **A06 · speak**
 
 - **textEn:** That is a good place.
-- **acceptedAnswersEn:** That is a good place.
+- **acceptedAnswersEn:** That is a good place. | That's a good place.
 
 ---
 Audit the English above for grammar, naturalness, register, beginner suitability and contextual fit.

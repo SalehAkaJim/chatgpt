@@ -4,7 +4,7 @@
   "lessonKey": "EN-A1-L-0003",
   "sortOrder": 3,
   "levelKey": "A1",
-  "lessonSourceHash": "e5fe62535cd1146de7c023e38a74346b46ba189a1c28318e12ec69de26dad13a",
+  "lessonSourceHash": "a00c8b4bccb0c6b3701888fd9757528028bfa1bf33ea62592e80b1034ec4ebf4",
   "enforceFromSortOrder": 25,
   "enforced": false,
   "grammarEvidence": [
@@ -79,32 +79,10 @@
       "constructionKeys": [
         "EN-CONSTR-HOW-ARE-YOU"
       ],
-      "status": "corpus_evidence",
-      "sampleCount": 5,
-      "evidenceQuery": "how are you",
-      "examples": [
-        {
-          "id": 373320,
-          "text": "How are you?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11787822,
-          "text": "How are you two?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "terrynoti"
-        },
-        {
-          "id": 9934662,
-          "text": "How are you, Dad?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Nylez"
-        }
-      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
       "fallback": null,
       "fallbackMatch": null
     },
@@ -128,5 +106,5 @@
   "warnings": [],
   "errors": [],
   "status": "PASS",
-  "planHash": "f643b230c1565095b56416e5a9943f3ad4c18c72d9c57a08fc917d970d4c658e"
+  "planHash": "021e25615ab303819011129bcb2ca8643a4e1f53f7fcb7b118b597db97ae6a0c"
 }

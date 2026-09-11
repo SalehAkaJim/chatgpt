@@ -10,7 +10,7 @@
   "descriptionFa": "با buy درباره خرید حرف بزن و با How much قیمت را بپرس.",
   "primaryOutcomeKey": "EN-A1-OUTCOME-0143",
   "outcomeFa": "buy را به معنی «خریدن» به کار ببری و قیمت را با How much بپرسی.",
-  "scenarioFa": "مایا و الکس در ادامه داستان همکلاسی ها درباره موضوع این درس گفت‌وگو می‌کنند.",
+  "scenarioFa": "در مرکز آموزشی، کنار تقویم، الکس می‌گوید «این دفتر را دوست داری؟» و مایا پاسخ می‌دهد «بله. قیمتش چقدر است؟».",
   "prerequisiteOutcomeKeys": [
     "EN-A1-OUTCOME-0142"
   ],
@@ -53,7 +53,7 @@
       ],
       "continuesLessonKey": "EN-A1-L-0137",
       "settingFa": "مرکز آموزشی، کنار تقویم",
-      "storyBeatFa": "مایا و الکس در ادامه داستان همکلاسی ها درباره موضوع این درس گفت‌وگو می‌کنند."
+      "storyBeatFa": "الکس با «این دفتر را دوست داری؟» گفت‌وگو را شروع می‌کند، مایا می‌گوید «بله. قیمتش چقدر است؟»؛ بعد الکس می‌گوید «پنج یورو است.» و مایا با «عالی است. می‌خواهم آن را بخرم.» پاسخ می‌دهد."
     },
     "reviewLinks": [
       {
@@ -242,11 +242,12 @@
             "«I want to see it.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
           ],
           "correctFa": "بله. قیمتش چقدر است؟"
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection",
+        "evidenceKind": "practice_only",
         "skillFocus": "listening",
         "distractorAudit": {
           "reviewerType": "model",
@@ -264,7 +265,8 @@
               "contrastReasonFa": "معنی یا اطلاعات جمله فرق دارد."
             }
           ]
-        }
+        },
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

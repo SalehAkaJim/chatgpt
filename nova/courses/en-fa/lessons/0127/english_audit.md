@@ -1,4 +1,4 @@
-<!-- sourceHash: 5403404bb29ac960df04aa59228cb55524917f5ddf6367076bb45aeb4da5a4c3 -->
+<!-- sourceHash: f60d963a4321d15bbe972b6d35b0c83e2bf9de61c230636bec55949f69aefc84 -->
 # English Audit — EN-A1-L-0127
 
 **Lesson:** We can talk here

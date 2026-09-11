@@ -155,33 +155,6 @@
   ],
   "activities": [
     {
-      "activityKey": "A01",
-      "type": "response_choice",
-      "instructionFa": "معنی way را در جمله پیدا کن.",
-      "promptFa": "way در این درس چه معنی‌ای دارد؟",
-      "promptEn": "Yes. This way is good.",
-      "config": {
-        "options": [
-          "روش، طریقه",
-          "کتاب",
-          "اتاق"
-        ],
-        "answerIndex": 0,
-        "feedback": {
-          "optionsFa": [
-            "درست است.",
-            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
-            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
-          ],
-          "correctFa": "روش، طریقه"
-        }
-      },
-      "metadata": {
-        "learningDemand": "recognition",
-        "evidenceKind": "recognition_or_selection"
-      }
-    },
-    {
       "activityKey": "A02",
       "type": "dialogue",
       "instructionFa": "حرف‌های liam را گوش کن و جواب leo را بگو.",
@@ -209,6 +182,33 @@
         "showPromptTranslation": true,
         "showResponseText": true,
         "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی way را در جمله پیدا کن.",
+      "promptFa": "way در این درس چه معنی‌ای دارد؟",
+      "promptEn": "Yes. This way is good.",
+      "config": {
+        "options": [
+          "روش، طریقه",
+          "کتاب",
+          "اتاق"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است.",
+            "«کتاب» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد.",
+            "«اتاق» از نظر معنی یا موقعیت با پاسخ هدف فرق دارد."
+          ],
+          "correctFa": "روش، طریقه"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
       }
     },
     {
@@ -296,11 +296,13 @@
             "«This way is good too.» جمله طبیعی است، اما معنی یا پاسخ موردنظر این موقعیت را نمی‌رساند."
           ],
           "correctFa": "آن روش هم خوب است."
-        }
+        },
+        "practiceOnly": true
       },
       "metadata": {
         "learningDemand": "transfer",
-        "evidenceKind": "recognition_or_selection"
+        "evidenceKind": "practice_only",
+        "qualityV3PracticeReason": "duplicate_exact_target_sentence"
       }
     },
     {

@@ -1,33 +1,21 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "lessonKey": "EN-A1-L-0071",
   "levelKey": "A1",
   "hardGatePass": true,
-  "automatedScore": 95,
+  "automatedScore": 100,
   "minimumAutomatedScore": 90,
   "publishableByAutomatedQualityGate": true,
   "requiresUserDecision": false,
   "authoringBlockedByPendingDecisions": false,
   "pendingDecisions": [],
   "errors": [],
-  "warnings": [
-    {
-      "code": "CQ-W01",
-      "message": "Same full target sentence is reused across multiple scored activities.",
-      "data": {
-        "normalizedTarget": "that is your own book",
-        "activityKeys": [
-          "A05",
-          "A06"
-        ]
-      }
-    }
-  ],
+  "warnings": [],
   "manualReview": {
     "version": 1,
     "reviewerType": "model",
-    "reviewedAt": "2026-09-10",
-    "scope": "Model/editor Product Quality v2 naturalness polish of EN-A1-L-0071; not an independent human or real-learner test.",
+    "reviewedAt": "2026-09-11",
+    "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0071; not an independent human or real-learner test.",
     "dimensions": {
       "englishNaturalness": {
         "score": 4,
@@ -39,7 +27,7 @@
       },
       "pedagogicalClarity": {
         "score": 5,
-        "evidence": "The Lesson keeps own after a possessive and avoids claiming unrelated senses."
+        "evidence": "Dialogue-dependent tasks are ordered after exposure, duplicate exact-sentence assessment is practice-only, and hidden-answer retrieval remains the strongest evidence."
       },
       "distractorQuality": {
         "score": 4,
@@ -47,7 +35,7 @@
       },
       "dialoguePlausibility": {
         "score": 4,
-        "evidence": "Character turns now ask or react in ways that pragmatically license the learner response rather than instructing the learner to repeat a line."
+        "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
       },
       "difficultyFit": {
         "score": 5,
@@ -55,7 +43,7 @@
       },
       "repetitionUsefulness": {
         "score": 4,
-        "evidence": "The neighbors arc returns seven Lessons after 0064 and is separated from the immediately previous library scene."
+        "evidence": "Repeated exact target sentences may remain for practice, but only the strongest occurrence is scored; this reduces false mastery from repeated identical answers."
       },
       "transferQuality": {
         "score": 5,
@@ -67,7 +55,7 @@
       },
       "learnerExperience": {
         "score": 3,
-        "evidence": "No real learner test is claimed; engagement and perceived difficulty remain unverified."
+        "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
       }
     },
     "learnerTested": false,
@@ -76,7 +64,8 @@
       "The review is limited to the bounded A1 outcome and does not claim broad mastery of the target word or grammar.",
       "Final generated audio prosody is not evaluated in this text-stage review.",
       "No independent human or real learner test has been performed after quality-v2 remediation.",
-      "No independent human or real learner test has been performed after Product Quality v2 naturalness polish."
+      "No independent human or real learner test has been performed after Product Quality v2 naturalness polish.",
+      "Quality v3 remediation was model/editor reviewed; real learner evidence is still required before public-release readiness."
     ],
     "resolvedFindings": [
       "English target usage is contextually plausible for the authored scene.",
@@ -86,11 +75,12 @@
       "Quality-v2 remediation: T01: 'Say: This is my own book.' -> 'What is this?'.",
       "Quality-v2 remediation: T03: 'Now say: That is your own book.' -> 'And that one?'.",
       "Product Quality v2 polish: T01: 'What is this?' -> 'Whose book is this?'.",
-      "Product Quality v2 polish: T03: 'And that one?' -> 'And that book?'."
+      "Product Quality v2 polish: T03: 'And that one?' -> 'And that book?'.",
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
     ],
     "lessonKey": "EN-A1-L-0071",
-    "sourceHash": "3c692c73cc31871c456a24e420e005ff07b95f83dc2582585001e6a6c2683467",
-    "courseSourceHash": "3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e",
+    "sourceHash": "b7c5e32b43a0def9344bf76c15098a1477cddf6172813f35e657bab0fc262f25",
+    "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
     "qualityV2Remediation": {
       "version": 1,
       "date": "2026-09-10",
@@ -107,6 +97,14 @@
         "T03: 'And that one?' -> 'And that book?'"
       ]
     },
+    "qualityV3Remediation": {
+      "version": 1,
+      "date": "2026-09-11",
+      "categories": [
+        "duplicateScoring",
+        "speechEquivalence"
+      ]
+    },
     "status": "PASS",
     "average": 4.4,
     "errors": []
@@ -118,5 +116,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "3c692c73cc31871c456a24e420e005ff07b95f83dc2582585001e6a6c2683467"
+  "sourceHash": "b7c5e32b43a0def9344bf76c15098a1477cddf6172813f35e657bab0fc262f25"
 }
