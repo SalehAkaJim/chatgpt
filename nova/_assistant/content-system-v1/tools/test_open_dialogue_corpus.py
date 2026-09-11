@@ -58,6 +58,28 @@ class OpenDialogueCorpusTests(unittest.TestCase):
         self.assertEqual(rows[0]["services"], ["Restaurants_1"])
         self.assertEqual(rows[0]["domain"], "restaurants")
         self.assertEqual(rows[0]["split"], "train")
+        self.assertEqual(rows[0]["corpusKey"], "schema-guided-dialogue:train:1_00000")
+
+    def test_sgd_reused_dialogue_ids_are_unique_across_splits(self):
+        payload = [{
+            "dialogue_id": "1_00000",
+            "services": ["Restaurants_1"],
+            "turns": [
+                {"speaker": "USER", "utterance": "I'd like a table."},
+                {"speaker": "SYSTEM", "utterance": "What time works for you?"},
+            ],
+        }]
+        train = list(sgd_records(payload, source=SGD_SOURCE, source_file="train/dialogues_001.json"))[0]
+        dev = list(sgd_records(payload, source=SGD_SOURCE, source_file="dev/dialogues_001.json"))[0]
+        test = list(sgd_records(payload, source=SGD_SOURCE, source_file="test/dialogues_001.json"))[0]
+        self.assertEqual(
+            {train["corpusKey"], dev["corpusKey"], test["corpusKey"]},
+            {
+                "schema-guided-dialogue:train:1_00000",
+                "schema-guided-dialogue:dev:1_00000",
+                "schema-guided-dialogue:test:1_00000",
+            },
+        )
 
     def _write_catalog(self, root: Path) -> None:
         dialogue_root = root / "nova/reference/en-fa/dialogue"
