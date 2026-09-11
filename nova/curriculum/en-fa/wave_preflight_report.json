@@ -2,587 +2,88 @@
   "schemaVersion": 1,
   "status": "FAIL",
   "stage": "staging-local-precheck",
-  "inputHead": "6b285a7c3c28b9749718fbe3f2e3c054d5c34077",
-  "checkedAt": "2026-09-11T00:20:01.374262+00:00",
+  "inputHead": "451006466c36d5171afe4b235a204ff172cf2554",
+  "checkedAt": "2026-09-11T00:36:32.872376+00:00",
   "errors": [
-    "8 staged Lesson(s) have local validation errors; repair them together before integration."
+    "3 staged Lesson(s) have local validation errors; repair them together before integration."
   ],
   "commands": [
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w01/0141/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 14, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0141\", \"sortOrder\": 141, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H10\", \"message\": \"Exact duplicate scored task detected.\", \"data\": {\"activityKeys\": [\"A04\", \"A09\"]}}, \"PQ2-H08 EN-A1-L-0141/A08: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0141/A08: missing explicit distractor audit for 'I can wait now.'\", \"PQ2-H08 EN-A1-L-0141/A08: missing explicit distractor audit for 'I am late now.'\", \"PQ2-H08 EN-A1-L-0141/A09: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0141/A09: missing explicit distractor audit for 'I am early.'\", \"PQ2-H08 EN-A1-L-0141/A09: missing explicit distractor audit for 'I am ready.'\", \"PQ2-H04 EN-A1-L-0141: metadata.lessonArchetype is required from quality-v2 enforcement\"]}]}\n",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w02/0142/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
       "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 14, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0142\", \"sortOrder\": 142, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H10\", \"message\": \"Exact duplicate scored task detected.\", \"data\": {\"activityKeys\": [\"A04\", \"A09\"]}}, \"PQ2-H08 EN-A1-L-0142/A08: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0142/A08: missing explicit distractor audit for 'I buy it.'\", \"PQ2-H08 EN-A1-L-0142/A08: missing explicit distractor audit for 'I am late.'\", \"PQ2-H08 EN-A1-L-0142/A09: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0142/A09: missing explicit distractor audit for 'She works at night.'\", \"PQ2-H08 EN-A1-L-0142/A09: missing explicit distractor audit for 'She studies in the afternoon.'\", \"PQ2-H04 EN-A1-L-0142: metadata.lessonArchetype is required from quality-v2 enforcement\"]}]}\n",
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 1, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0142\", \"sortOrder\": 142, \"errors\": [\"A09: fill_blank needs exactly one ___\"]}]}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w03/0143/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 14, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0143\", \"sortOrder\": 143, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H10\", \"message\": \"Exact duplicate scored task detected.\", \"data\": {\"activityKeys\": [\"A04\", \"A09\"]}}, \"PQ2-H08 EN-A1-L-0143/A08: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0143/A08: missing explicit distractor audit for 'I can buy tomorrow.'\", \"PQ2-H08 EN-A1-L-0143/A08: missing explicit distractor audit for 'I like the price.'\", \"PQ2-H08 EN-A1-L-0143/A09: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0143/A09: missing explicit distractor audit for 'I want to sell it.'\", \"PQ2-H08 EN-A1-L-0143/A09: missing explicit distractor audit for 'I want to see it.'\", \"PQ2-H04 EN-A1-L-0143: metadata.lessonArchetype is required from quality-v2 enforcement\"]}]}\n",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w04/0144/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 14, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0144\", \"sortOrder\": 144, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H10\", \"message\": \"Exact duplicate scored task detected.\", \"data\": {\"activityKeys\": [\"A04\", \"A09\"]}}, \"PQ2-H08 EN-A1-L-0144/A08: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0144/A08: missing explicit distractor audit for 'Is this the reason?'\", \"PQ2-H08 EN-A1-L-0144/A08: missing explicit distractor audit for 'This is late.'\", \"PQ2-H08 EN-A1-L-0144/A09: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0144/A09: missing explicit distractor audit for 'Is this the answer?'\", \"PQ2-H08 EN-A1-L-0144/A09: missing explicit distractor audit for 'Is this the room?'\", \"PQ2-H04 EN-A1-L-0144: metadata.lessonArchetype is required from quality-v2 enforcement\"]}]}\n",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w05/0145/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 14, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0145\", \"sortOrder\": 145, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H10\", \"message\": \"Exact duplicate scored task detected.\", \"data\": {\"activityKeys\": [\"A04\", \"A09\"]}}, \"PQ2-H08 EN-A1-L-0145/A08: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0145/A08: missing explicit distractor audit for 'I buy the time.'\", \"PQ2-H08 EN-A1-L-0145/A08: missing explicit distractor audit for 'I am the time.'\", \"PQ2-H08 EN-A1-L-0145/A09: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0145/A09: missing explicit distractor audit for 'It is ten minutes.'\", \"PQ2-H08 EN-A1-L-0145/A09: missing explicit distractor audit for 'It is not ten hours.'\", \"PQ2-H04 EN-A1-L-0145: metadata.lessonArchetype is required from quality-v2 enforcement\"]}]}\n",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w06/0146/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
       "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 14, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0146\", \"sortOrder\": 146, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H10\", \"message\": \"Exact duplicate scored task detected.\", \"data\": {\"activityKeys\": [\"A04\", \"A09\"]}}, \"PQ2-H08 EN-A1-L-0146/A08: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0146/A08: missing explicit distractor audit for 'There is a plan.'\", \"PQ2-H08 EN-A1-L-0146/A08: missing explicit distractor audit for 'This is a minute.'\", \"PQ2-H08 EN-A1-L-0146/A09: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0146/A09: missing explicit distractor audit for 'There is a meeting today.'\", \"PQ2-H08 EN-A1-L-0146/A09: missing explicit distractor audit for 'There is a problem today.'\", \"PQ2-H04 EN-A1-L-0146: metadata.lessonArchetype is required from quality-v2 enforcement\"]}]}\n",
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 1, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0146\", \"sortOrder\": 146, \"errors\": [\"A08: fill_blank needs exactly one ___\"]}]}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w07/0147/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
       "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 14, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0147\", \"sortOrder\": 147, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H10\", \"message\": \"Exact duplicate scored task detected.\", \"data\": {\"activityKeys\": [\"A04\", \"A09\"]}}, \"PQ2-H08 EN-A1-L-0147/A08: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0147/A08: missing explicit distractor audit for 'The kid is late.'\", \"PQ2-H08 EN-A1-L-0147/A08: missing explicit distractor audit for 'The room is a plan.'\", \"PQ2-H08 EN-A1-L-0147/A09: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0147/A09: missing explicit distractor audit for 'The kid is walking.'\", \"PQ2-H08 EN-A1-L-0147/A09: missing explicit distractor audit for 'The kid is sitting.'\", \"PQ2-H04 EN-A1-L-0147: metadata.lessonArchetype is required from quality-v2 enforcement\"]}]}\n",
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 1, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0147\", \"sortOrder\": 147, \"errors\": [\"A09: fill_blank needs exactly one ___\"]}]}\n",
       "stderrTail": ""
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w08/0148/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 2,
-      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 14, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0148\", \"sortOrder\": 148, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A08\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, {\"code\": \"CQ-H10\", \"message\": \"Exact duplicate scored task detected.\", \"data\": {\"activityKeys\": [\"A04\", \"A09\"]}}, \"PQ2-H08 EN-A1-L-0148/A08: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0148/A08: missing explicit distractor audit for 'Bring the form.'\", \"PQ2-H08 EN-A1-L-0148/A08: missing explicit distractor audit for 'The plan is late.'\", \"PQ2-H08 EN-A1-L-0148/A09: English choices require metadata.distractorAudit.reviewerType='model'\", \"PQ2-H08 EN-A1-L-0148/A09: missing explicit distractor audit for 'Take the form.'\", \"PQ2-H08 EN-A1-L-0148/A09: missing explicit distractor audit for 'Leave the form.'\", \"PQ2-H04 EN-A1-L-0148: metadata.lessonArchetype is required from quality-v2 enforcement\"]}]}\n",
+      "returnCode": 0,
+      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0141-0148-20260911a",
+    "requestKey": "en-fa-A1-0141-0148-20260911b",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/wave.json"
   },
   "waveKey": "en-fa-A1-0141-0148",
   "expectedPrefix": 148,
   "stagingLocalFailures": [
     {
-      "lessonKey": "EN-A1-L-0141",
-      "sortOrder": 141,
-      "errors": [
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A09"
-          }
-        },
-        {
-          "code": "CQ-H10",
-          "message": "Exact duplicate scored task detected.",
-          "data": {
-            "activityKeys": [
-              "A04",
-              "A09"
-            ]
-          }
-        },
-        "PQ2-H08 EN-A1-L-0141/A08: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0141/A08: missing explicit distractor audit for 'I can wait now.'",
-        "PQ2-H08 EN-A1-L-0141/A08: missing explicit distractor audit for 'I am late now.'",
-        "PQ2-H08 EN-A1-L-0141/A09: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0141/A09: missing explicit distractor audit for 'I am early.'",
-        "PQ2-H08 EN-A1-L-0141/A09: missing explicit distractor audit for 'I am ready.'",
-        "PQ2-H04 EN-A1-L-0141: metadata.lessonArchetype is required from quality-v2 enforcement"
-      ]
-    },
-    {
       "lessonKey": "EN-A1-L-0142",
       "sortOrder": 142,
       "errors": [
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A09"
-          }
-        },
-        {
-          "code": "CQ-H10",
-          "message": "Exact duplicate scored task detected.",
-          "data": {
-            "activityKeys": [
-              "A04",
-              "A09"
-            ]
-          }
-        },
-        "PQ2-H08 EN-A1-L-0142/A08: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0142/A08: missing explicit distractor audit for 'I buy it.'",
-        "PQ2-H08 EN-A1-L-0142/A08: missing explicit distractor audit for 'I am late.'",
-        "PQ2-H08 EN-A1-L-0142/A09: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0142/A09: missing explicit distractor audit for 'She works at night.'",
-        "PQ2-H08 EN-A1-L-0142/A09: missing explicit distractor audit for 'She studies in the afternoon.'",
-        "PQ2-H04 EN-A1-L-0142: metadata.lessonArchetype is required from quality-v2 enforcement"
-      ]
-    },
-    {
-      "lessonKey": "EN-A1-L-0143",
-      "sortOrder": 143,
-      "errors": [
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A09"
-          }
-        },
-        {
-          "code": "CQ-H10",
-          "message": "Exact duplicate scored task detected.",
-          "data": {
-            "activityKeys": [
-              "A04",
-              "A09"
-            ]
-          }
-        },
-        "PQ2-H08 EN-A1-L-0143/A08: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0143/A08: missing explicit distractor audit for 'I can buy tomorrow.'",
-        "PQ2-H08 EN-A1-L-0143/A08: missing explicit distractor audit for 'I like the price.'",
-        "PQ2-H08 EN-A1-L-0143/A09: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0143/A09: missing explicit distractor audit for 'I want to sell it.'",
-        "PQ2-H08 EN-A1-L-0143/A09: missing explicit distractor audit for 'I want to see it.'",
-        "PQ2-H04 EN-A1-L-0143: metadata.lessonArchetype is required from quality-v2 enforcement"
-      ]
-    },
-    {
-      "lessonKey": "EN-A1-L-0144",
-      "sortOrder": 144,
-      "errors": [
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A09"
-          }
-        },
-        {
-          "code": "CQ-H10",
-          "message": "Exact duplicate scored task detected.",
-          "data": {
-            "activityKeys": [
-              "A04",
-              "A09"
-            ]
-          }
-        },
-        "PQ2-H08 EN-A1-L-0144/A08: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0144/A08: missing explicit distractor audit for 'Is this the reason?'",
-        "PQ2-H08 EN-A1-L-0144/A08: missing explicit distractor audit for 'This is late.'",
-        "PQ2-H08 EN-A1-L-0144/A09: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0144/A09: missing explicit distractor audit for 'Is this the answer?'",
-        "PQ2-H08 EN-A1-L-0144/A09: missing explicit distractor audit for 'Is this the room?'",
-        "PQ2-H04 EN-A1-L-0144: metadata.lessonArchetype is required from quality-v2 enforcement"
-      ]
-    },
-    {
-      "lessonKey": "EN-A1-L-0145",
-      "sortOrder": 145,
-      "errors": [
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A09"
-          }
-        },
-        {
-          "code": "CQ-H10",
-          "message": "Exact duplicate scored task detected.",
-          "data": {
-            "activityKeys": [
-              "A04",
-              "A09"
-            ]
-          }
-        },
-        "PQ2-H08 EN-A1-L-0145/A08: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0145/A08: missing explicit distractor audit for 'I buy the time.'",
-        "PQ2-H08 EN-A1-L-0145/A08: missing explicit distractor audit for 'I am the time.'",
-        "PQ2-H08 EN-A1-L-0145/A09: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0145/A09: missing explicit distractor audit for 'It is ten minutes.'",
-        "PQ2-H08 EN-A1-L-0145/A09: missing explicit distractor audit for 'It is not ten hours.'",
-        "PQ2-H04 EN-A1-L-0145: metadata.lessonArchetype is required from quality-v2 enforcement"
+        "A09: fill_blank needs exactly one ___"
       ]
     },
     {
       "lessonKey": "EN-A1-L-0146",
       "sortOrder": 146,
       "errors": [
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A09"
-          }
-        },
-        {
-          "code": "CQ-H10",
-          "message": "Exact duplicate scored task detected.",
-          "data": {
-            "activityKeys": [
-              "A04",
-              "A09"
-            ]
-          }
-        },
-        "PQ2-H08 EN-A1-L-0146/A08: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0146/A08: missing explicit distractor audit for 'There is a plan.'",
-        "PQ2-H08 EN-A1-L-0146/A08: missing explicit distractor audit for 'This is a minute.'",
-        "PQ2-H08 EN-A1-L-0146/A09: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0146/A09: missing explicit distractor audit for 'There is a meeting today.'",
-        "PQ2-H08 EN-A1-L-0146/A09: missing explicit distractor audit for 'There is a problem today.'",
-        "PQ2-H04 EN-A1-L-0146: metadata.lessonArchetype is required from quality-v2 enforcement"
+        "A08: fill_blank needs exactly one ___"
       ]
     },
     {
       "lessonKey": "EN-A1-L-0147",
       "sortOrder": 147,
       "errors": [
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A09"
-          }
-        },
-        {
-          "code": "CQ-H10",
-          "message": "Exact duplicate scored task detected.",
-          "data": {
-            "activityKeys": [
-              "A04",
-              "A09"
-            ]
-          }
-        },
-        "PQ2-H08 EN-A1-L-0147/A08: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0147/A08: missing explicit distractor audit for 'The kid is late.'",
-        "PQ2-H08 EN-A1-L-0147/A08: missing explicit distractor audit for 'The room is a plan.'",
-        "PQ2-H08 EN-A1-L-0147/A09: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0147/A09: missing explicit distractor audit for 'The kid is walking.'",
-        "PQ2-H08 EN-A1-L-0147/A09: missing explicit distractor audit for 'The kid is sitting.'",
-        "PQ2-H04 EN-A1-L-0147: metadata.lessonArchetype is required from quality-v2 enforcement"
-      ]
-    },
-    {
-      "lessonKey": "EN-A1-L-0148",
-      "sortOrder": 148,
-      "errors": [
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A01"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A03"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A04"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A05"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A08"
-          }
-        },
-        {
-          "code": "CQ-H14",
-          "message": "Each option requires its own nonempty teaching explanation.",
-          "data": {
-            "activityKey": "A09"
-          }
-        },
-        {
-          "code": "CQ-H10",
-          "message": "Exact duplicate scored task detected.",
-          "data": {
-            "activityKeys": [
-              "A04",
-              "A09"
-            ]
-          }
-        },
-        "PQ2-H08 EN-A1-L-0148/A08: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0148/A08: missing explicit distractor audit for 'Bring the form.'",
-        "PQ2-H08 EN-A1-L-0148/A08: missing explicit distractor audit for 'The plan is late.'",
-        "PQ2-H08 EN-A1-L-0148/A09: English choices require metadata.distractorAudit.reviewerType='model'",
-        "PQ2-H08 EN-A1-L-0148/A09: missing explicit distractor audit for 'Take the form.'",
-        "PQ2-H08 EN-A1-L-0148/A09: missing explicit distractor audit for 'Leave the form.'",
-        "PQ2-H04 EN-A1-L-0148: metadata.lessonArchetype is required from quality-v2 enforcement"
+        "A09: fill_blank needs exactly one ___"
       ]
     }
   ]
