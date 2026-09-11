@@ -12,6 +12,11 @@ class FactoryWaveScalingTests(unittest.TestCase):
     def test_worker_cap_is_fifty(self):
         self.assertEqual(factory_wave.MAX_WORKERS, 50)
 
+    def test_default_worker_count_comes_from_config(self):
+        self.assertEqual(factory_wave.resolve_worker_count({"waveSize": 20}), 20)
+        self.assertEqual(factory_wave.resolve_worker_count({"waveSize": 20}, 50), 50)
+        self.assertEqual(factory_wave.resolve_worker_count({"waveSize": 20}, 99), 50)
+
     def test_fifty_packets_have_unique_worker_and_staging_paths(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
@@ -65,6 +70,86 @@ class FactoryWaveScalingTests(unittest.TestCase):
         self.assertEqual(len(state["knownLexical"]), 50)
         self.assertEqual(len(state["introducedGrammar"]), 50)
         self.assertEqual(len(state["lessonHistory"]), 50)
+
+    def test_still_eligible_provisional_grammar_survives_top_n_ranking_drift(self):
+        lesson = {
+            "curriculum": {
+                "languageReference": {
+                    "specKey": "old",
+                    "specHash": "old-hash",
+                    "grammarTargetKeys": ["GRAM-PROVISIONAL"],
+                }
+            }
+        }
+        live_spec = {
+            "specKey": "live-spec",
+            "specHash": "live-hash",
+            "grammarCandidates": [{"grammarKey": "GRAM-LIVE"}],
+        }
+        provisional_spec = {
+            "specKey": "provisional-spec",
+            "specHash": "provisional-hash",
+            "grammarCandidates": [{
+                "grammarKey": "GRAM-PROVISIONAL",
+                "grammaticalItem": "Example grammar",
+                "missingPrerequisiteKeys": [],
+            }],
+        }
+        reconciled, bound_spec = factory_wave.reconcile_live_spec_metadata(
+            lesson,
+            live_spec,
+            {"introducedGrammar": []},
+            provisional_spec=provisional_spec,
+            eligible_grammar_keys={"GRAM-PROVISIONAL"},
+        )
+
+        language_ref = reconciled["curriculum"]["languageReference"]
+        self.assertEqual(language_ref["grammarTargetKeys"], ["GRAM-PROVISIONAL"])
+        self.assertEqual(
+            language_ref["integrationRetainedProvisionalGrammarKeys"],
+            ["GRAM-PROVISIONAL"],
+        )
+        self.assertEqual(language_ref["specHash"], bound_spec["specHash"])
+        self.assertNotEqual(bound_spec["specHash"], "live-hash")
+        self.assertIn(
+            "GRAM-PROVISIONAL",
+            {x["grammarKey"] for x in bound_spec["grammarCandidates"]},
+        )
+        self.assertEqual(
+            bound_spec["integrationReconciliation"]["mode"],
+            "retain_still_eligible_provisional_grammar",
+        )
+
+    def test_ineligible_provisional_grammar_is_not_retained(self):
+        lesson = {
+            "curriculum": {
+                "languageReference": {
+                    "grammarTargetKeys": ["GRAM-BAD"],
+                }
+            }
+        }
+        live_spec = {
+            "specKey": "live-spec",
+            "specHash": "live-hash",
+            "grammarCandidates": [{"grammarKey": "GRAM-LIVE"}],
+        }
+        provisional_spec = {
+            "specKey": "provisional-spec",
+            "specHash": "provisional-hash",
+            "grammarCandidates": [{"grammarKey": "GRAM-BAD"}],
+        }
+        reconciled, bound_spec = factory_wave.reconcile_live_spec_metadata(
+            lesson,
+            live_spec,
+            {"introducedGrammar": []},
+            provisional_spec=provisional_spec,
+            eligible_grammar_keys=set(),
+        )
+
+        language_ref = reconciled["curriculum"]["languageReference"]
+        self.assertEqual(language_ref["grammarTargetKeys"], ["GRAM-BAD"])
+        self.assertNotIn("integrationRetainedProvisionalGrammarKeys", language_ref)
+        self.assertEqual(bound_spec["specHash"], "live-hash")
 
 
 if __name__ == "__main__":
