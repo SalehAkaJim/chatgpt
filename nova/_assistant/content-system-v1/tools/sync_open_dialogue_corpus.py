@@ -23,7 +23,7 @@ from pathlib import Path
 from typing import Iterable
 
 UA = "NovaOpenDialogueSync/1.0 (+https://github.com/SalehAkaJim/chatgpt)"
-GENERATOR_VERSION = 1
+GENERATOR_VERSION = 2
 WORD_RE = re.compile(r"[A-Za-z]+(?:['’][A-Za-z]+)?")
 SOURCE_NAMES = ("taskmaster", "schemaGuidedDialogue")
 MIN_EXPECTED = {"taskmaster": 10000, "schemaGuidedDialogue": 15000}
@@ -196,7 +196,9 @@ def sgd_records(payload: object, *, source: dict, source_file: str) -> Iterable[
         domains = sorted({re.sub(r"_\d+$", "", x).lower() for x in services if x})
         record = {
             "schemaVersion": 1,
-            "corpusKey": f"schema-guided-dialogue:{dialogue_id}",
+            # SGD reuses dialogue_id values across train/dev/test. Split is part of
+            # the canonical key so provenance is unique without altering source IDs.
+            "corpusKey": f"schema-guided-dialogue:{split}:{dialogue_id}",
             "source": "schemaGuidedDialogue",
             "sourceDialogueId": dialogue_id,
             "domain": domains[0] if domains else "unknown",
