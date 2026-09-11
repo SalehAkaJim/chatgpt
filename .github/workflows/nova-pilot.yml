@@ -146,6 +146,12 @@ jobs:
             --repo-root . \
             --config nova/curriculum/en-fa/factory.config.json \
             --output nova/curriculum/en-fa/factory_validation.json
+      - name: Enforce Quality v3 overdue-review burn-down and pronunciation cadence
+        run: |
+          python nova/_assistant/content-system-v1/tools/validate_quality_v3_wave.py \
+            --repo-root . \
+            --course en-fa \
+            --output nova/curriculum/en-fa/quality_v3.wave_validation.json
       - name: Plan or reuse next parallel authoring wave
         run: |
           NEXT=$(python - <<'PY'
