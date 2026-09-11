@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "status": "FAIL",
-  "stage": "integration",
-  "inputHead": "544113fcfb1b2d76774713c95fa2381a2df4d5f7",
-  "checkedAt": "2026-09-11T01:34:35.247850+00:00",
+  "stage": "staging-local-precheck",
+  "inputHead": "4728180aa88907b6a33f9139089d7ad8cab57f6f",
+  "checkedAt": "2026-09-11T02:03:47.763606+00:00",
   "errors": [
-    "Ordered single-writer integration did not pass."
+    "1 staged Lesson(s) have local validation errors; repair them together before integration."
   ],
   "commands": [
     {
@@ -28,8 +28,8 @@
     },
     {
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w04/0144/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 1, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0144\", \"sortOrder\": 144, \"errors\": [\"PQ2-H05 EN-A1-L-0144: grammar_pattern requires at least one committed grammarTargetKey\"]}]}\n",
       "stderrTail": ""
     },
     {
@@ -55,19 +55,22 @@
       "returnCode": 0,
       "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
       "stderrTail": ""
-    },
-    {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/wave.json",
-      "returnCode": 1,
-      "stdoutTail": "HEAD is now at 544113fc Retry Nova 141-148 preflight after reference repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 141, \"nextLesson\": 142, \"nextSpecHash\": \"70bfa28fb1e648acbe71949a80b4aaeb5a0783537e19dd2e5353baecab7e47a8\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 142, \"nextLesson\": 143, \"nextSpecHash\": \"726fe7f943be1e38d2073cb96e81660d817b5150ac7f84cf1c7724d84fc5e3b9\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 143, \"nextLesson\": 144, \"nextSpecHash\": \"41a1aa92044466ef657f3160d9df5fb0fcce5564a24ea101fc692b4c91d93aa9\", \"introducedGrammar\": 14, \"languageWarnings\": 45, \"errors\": 0}\n",
-      "stderrTail": "Preparing worktree (detached HEAD 544113fc)\nTraceback (most recent call last):\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 465, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 454, in main\n    integrate_wave(root, manifest_path, cache_dir=cache_dir)\n  File \"/home/runner/work/chatgpt/chatgpt/nova/_assistant/content-system-v1/tools/factory_wave.py\", line 365, in integrate_wave\n    raise RuntimeError(\nRuntimeError: Draft 0144 does not satisfy the live canonical curriculum spec:\ngrammarTargetKey CEFRJ-GRAM-58-2 is not in the committed grammar candidate set\n"
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0141-0148-20260911d",
+    "requestKey": "en-fa-A1-0141-0148-20260911e",
     "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/wave.json"
   },
   "waveKey": "en-fa-A1-0141-0148",
-  "expectedPrefix": 148
+  "expectedPrefix": 148,
+  "stagingLocalFailures": [
+    {
+      "lessonKey": "EN-A1-L-0144",
+      "sortOrder": 144,
+      "errors": [
+        "PQ2-H05 EN-A1-L-0144: grammar_pattern requires at least one committed grammarTargetKey"
+      ]
+    }
+  ]
 }
