@@ -126,6 +126,11 @@ def main() -> int:
         "errors": len(errors),
         "productQualityV2Errors": len(product_quality_errors),
         "learnerExperienceErrors": len(learner_experience_errors),
+        "errorDetails": errors,
+        "productQualityV2ErrorDetails": product_quality_errors,
+        "factoryDesignErrorDetails": design_errors,
+        "storyErrorDetails": story_errors,
+        "learnerExperienceErrorDetails": learner_experience_errors,
     }, ensure_ascii=False))
     return 0 if status == "PASS" else 2
 
