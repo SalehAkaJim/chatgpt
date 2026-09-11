@@ -42,6 +42,38 @@ class OpenDialogueCorpusTests(unittest.TestCase):
         self.assertEqual(rows[0]["turns"][1]["text"], "Okay — what's your name?")
         self.assertEqual(rows[0]["license"], "CC-BY-4.0")
         self.assertEqual(rows[0]["domain"], "restaurant")
+        self.assertEqual(rows[0]["corpusKey"], "taskmaster:self-dialogs:0:dlg-1")
+
+    def test_taskmaster_reused_dialogue_ids_are_unique_by_source_row(self):
+        payload = [
+            {
+                "conversation_id": "duplicate-id",
+                "instruction_id": "restaurant-table-1",
+                "utterances": [
+                    {"speaker": "USER", "text": "Table, please."},
+                    {"speaker": "ASSISTANT", "text": "For how many?"},
+                ],
+            },
+            {
+                "conversation_id": "duplicate-id",
+                "instruction_id": "restaurant-table-1",
+                "utterances": [
+                    {"speaker": "USER", "text": "Table, please."},
+                    {"speaker": "ASSISTANT", "text": "For how many?"},
+                ],
+            },
+        ]
+        rows = list(taskmaster_records(payload, source=TASKMASTER_SOURCE, source_file="self-dialogs.json"))
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["sourceDialogueId"], "duplicate-id")
+        self.assertEqual(rows[1]["sourceDialogueId"], "duplicate-id")
+        self.assertEqual(
+            {row["corpusKey"] for row in rows},
+            {
+                "taskmaster:self-dialogs:0:duplicate-id",
+                "taskmaster:self-dialogs:1:duplicate-id",
+            },
+        )
 
     def test_sgd_parser_preserves_services_and_exact_utterances(self):
         payload = [{
@@ -122,7 +154,7 @@ class OpenDialogueCorpusTests(unittest.TestCase):
             catalog = OpenDialogueCatalog(root)
             rows = catalog.recommend(level="A1", topics=["coffee"], count=1)
             self.assertEqual(len(rows), 1)
-            self.assertEqual(rows[0]["corpusKey"], "taskmaster:short-a1")
+            self.assertEqual(rows[0]["corpusKey"], "taskmaster:tm:0:short-a1")
             self.assertEqual(rows[0]["suggestedWindow"]["turns"][0]["text"], "A coffee, please.")
             self.assertTrue(rows[0]["provenanceRequirement"]["preserveExactEnglish"])
 
