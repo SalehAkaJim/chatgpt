@@ -1,16 +1,33 @@
 {
-  "schemaVersion": 3,
-  "requestKey": "quality-v2-learner-experience-final-20260910-06",
-  "range": [40, 84],
-  "targetedAdditionalLessons": [27, 100, 110],
+  "schemaVersion": 4,
+  "requestKey": "quality-v3-full-prefix-20260911-01",
+  "range": [1, 148],
   "policy": "nova/_assistant/content-system-v1/product_quality_v2.policy.json",
   "qualityGuide": "nova/_assistant/content-system-v1/12_product_quality_v2.md",
+  "qualityV3": {
+    "repairDialogueExposure": true,
+    "repairDuplicateExactSentenceScoring": true,
+    "addSafeSpeechEquivalence": true,
+    "groundGenericStoryCopy": true,
+    "expandStoryUniverse": true,
+    "refreshSemanticReviewIntegrity": true,
+    "futureHardGateFromSortOrder": 149
+  },
   "learnerExperienceAudit": {
-    "through": 124,
-    "categories": ["conversation_exposure", "audio_dependency", "visual_dependency", "pre_dialogue_turn_reuse"],
-    "auditRevision": 3,
+    "through": 148,
+    "categories": [
+      "conversation_exposure",
+      "audio_dependency",
+      "visual_dependency",
+      "pre_dialogue_turn_reuse"
+    ],
+    "auditRevision": 4,
     "legacyRuntimeRepair": "dependency-aware-dialogue-first",
-    "futureHardGateFromSortOrder": 125,
+    "futureHardGateFromSortOrder": 149,
     "naturalizedPromptEvidenceSync": true
+  },
+  "releaseReadiness": {
+    "regenerateFromLiveCanonicalPrefix": true,
+    "realLearnerPilotStillRequired": true
   }
 }
