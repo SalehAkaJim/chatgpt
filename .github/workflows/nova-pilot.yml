@@ -104,9 +104,21 @@ jobs:
             echo "No ready staged wave for the current canonical prefix."
           else
             echo "Integrating ready wave inside production: $WAVE"
-            python nova/_assistant/content-system-v1/tools/factory_wave.py integrate \
+            set +e
+            OUTPUT=$(python nova/_assistant/content-system-v1/tools/factory_wave.py integrate \
               --repo-root . \
-              --wave "$WAVE"
+              --wave "$WAVE" 2>&1)
+            CODE=$?
+            set -e
+            echo "$OUTPUT"
+            if [ "$CODE" -ne 0 ]; then
+              if printf '%s' "$OUTPUT" | grep -Fq 'Canonical Lesson bytes changed after this wave was planned'; then
+                echo "Discarding stale authoring wave; a fresh wave will be planned after regression gates."
+                rm -rf "$(dirname "$WAVE")"
+              else
+                exit "$CODE"
+              fi
+            fi
           fi
       - name: Run regression tests
         run: |
