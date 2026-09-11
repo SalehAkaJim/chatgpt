@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "courseCode": "en-fa",
-  "requestedCanonicalPrefix": 156,
-  "canonicalCommit": "dc6f56b0627445abecdcee28e214b78287b8dab0",
-  "reason": "Retry Nova production after fixing curriculum grammar state detection from real learner surfaces for all reserved A1 grammar patterns in staged Lessons 149-156. Keep strict prerequisite validation, the configured 20-Lesson wave default, open-corpus authoring, single-writer integration, full-prefix regression, audio, and MySQL runtime validation. After 149-156 integrate successfully, plan the next 20-Lesson wave 157-176."
+  "requestedCanonicalPrefix": 148,
+  "canonicalCommit": "3e5a2e6e952b31254637299f9f35ed7e9bd69481",
+  "reason": "Validate the fully remediated A1 prefix 1-148 under Quality v3, safely discard the stale pre-remediation 149-156 wave if its canonical byte hashes no longer match, run full-prefix/reference/story/learner-experience checks, enforce the new future review/pronunciation gates, rebuild reusable runtime/audio evidence for changed canonical Lessons, and then plan a fresh next authoring wave from Lesson 149."
 }
