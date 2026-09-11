@@ -3,11 +3,19 @@ from __future__ import annotations
 
 import json
 import re
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 WORD_RE = re.compile(r"[A-Za-z]+(?:'[A-Za-z]+)?")
 LATIN_RE = re.compile(r"[A-Za-z]")
+CHOICE_TYPES = {"response_choice", "comprehension", "fill_blank"}
+CONTRACTION_PAIRS = (
+    ("I'm", "I am"), ("you're", "you are"), ("You're", "You are"),
+    ("it's", "it is"), ("It's", "It is"), ("that's", "that is"), ("That's", "That is"),
+    ("what's", "what is"), ("What's", "What is"), ("where's", "where is"), ("Where's", "Where is"),
+    ("we're", "we are"), ("We're", "We are"), ("they're", "they are"), ("They're", "They are"),
+    ("don't", "do not"), ("Don't", "Do not"), ("can't", "cannot"), ("Can't", "Cannot"),
+)
 
 
 def norm(value: object) -> str:
@@ -43,12 +51,52 @@ def _correct_answer(activity: dict) -> str:
         return str(config.get("answerEn") or "")
     if activity_type == "speak":
         return str(config.get("textEn") or "")
-    if activity_type in {"response_choice", "comprehension", "fill_blank"}:
+    if activity_type in CHOICE_TYPES:
         options = config.get("optionsEn") if activity_type == "fill_blank" else (config.get("options") or config.get("optionsEn") or [])
         answer_index = config.get("answerIndex")
         if isinstance(answer_index, int) and 0 <= answer_index < len(options):
             return str(options[answer_index])
     return ""
+
+
+def _scored(activity: dict) -> bool:
+    config = activity.get("config") or {}
+    if config.get("practiceOnly") is True:
+        return False
+    activity_type = activity.get("type")
+    if activity_type == "dialogue":
+        return any(x.get("responseEvaluation") == "stt" for x in config.get("exchanges") or [])
+    return activity_type in {
+        "sentence_order", "fill_blank", "comprehension", "response_choice",
+        "speak", "writing", "reading", "pronunciation",
+    }
+
+
+def _answer_signature(activity: dict, turns: dict[str, dict]) -> str:
+    activity_type = activity.get("type")
+    config = activity.get("config") or {}
+    if activity_type in {"sentence_order", "speak"}:
+        return norm(config.get("answerEn") if activity_type == "sentence_order" else config.get("textEn"))
+    if activity_type in CHOICE_TYPES:
+        return norm(_correct_answer(activity))
+    if activity_type == "dialogue":
+        values = []
+        for exchange in config.get("exchanges") or []:
+            if exchange.get("responseEvaluation") != "stt":
+                continue
+            turn = turns.get(str(exchange.get("responseTurnKey") or "")) or {}
+            values.append(norm(turn.get("speechTargetEn") or turn.get("textEn")))
+        return "|".join(x for x in values if x)
+    return ""
+
+
+def _safe_equivalent(text: str) -> str | None:
+    for contracted, expanded in CONTRACTION_PAIRS:
+        if contracted in text:
+            return text.replace(contracted, expanded, 1)
+        if expanded in text:
+            return text.replace(expanded, contracted, 1)
+    return None
 
 
 def _learner_production_texts(lesson: dict) -> list[str]:
@@ -88,6 +136,25 @@ def _audit_item_for_option(activity: dict, option: str) -> dict | None:
         if isinstance(item, dict) and norm(item.get("option")) == norm(option):
             return item
     return None
+
+
+def _pre_dialogue_exact_reuse(lesson: dict) -> list[str]:
+    activities = lesson.get("activities") or []
+    dialogue_index = next((i for i, activity in enumerate(activities) if activity.get("type") == "dialogue"), None)
+    if dialogue_index is None or dialogue_index == 0:
+        return []
+    turn_texts = {
+        norm(value)
+        for turn in lesson.get("turns") or []
+        for value in (turn.get("textEn"), turn.get("translationFa"), turn.get("speechTargetEn"))
+        if norm(value)
+    }
+    hits = []
+    for activity in activities[:dialogue_index]:
+        candidates = [activity.get("promptEn"), _correct_answer(activity)]
+        if any(norm(value) in turn_texts for value in candidates if norm(value)):
+            hits.append(str(activity.get("activityKey") or "?"))
+    return hits
 
 
 def validate_lesson_quality_v2(lesson: dict, policy: dict) -> dict:
@@ -196,6 +263,65 @@ def validate_lesson_quality_v2(lesson: dict, policy: dict) -> dict:
         if archetype == "review_recombination" and not _review_items(lesson):
             errors.append(f"PQ2-H06 {lesson.get('lessonKey')}: review_recombination requires at least one lexical review item")
 
+    experience = policy.get("experienceQuality") or {}
+    experience_from = int(experience.get("enforceFromSortOrder", 149))
+    if order >= experience_from:
+        if experience.get("requireGroundedStoryCopy", True):
+            banned_story = [str(x) for x in experience.get("bannedGenericStoryPhrasesFa") or []]
+            story = (lesson.get("curriculum") or {}).get("story") or {}
+            combined = " ".join([str(lesson.get("scenarioFa") or ""), str(story.get("storyBeatFa") or "")])
+            for phrase in banned_story:
+                if phrase and phrase in combined:
+                    errors.append(
+                        f"PQ3-H01 {lesson.get('lessonKey')}: generic/meta story copy is forbidden: {phrase!r}"
+                    )
+
+        if experience.get("requireDialogueExposureBeforeExactTurnReuse", True):
+            hits = _pre_dialogue_exact_reuse(lesson)
+            if hits:
+                errors.append(
+                    f"PQ3-H02 {lesson.get('lessonKey')}: exact dialogue content is tested before dialogue exposure in {hits}"
+                )
+
+        max_uses = int(experience.get("maxScoredUsesPerExactTargetSentence", 1))
+        min_words = int(experience.get("minimumTargetWordsForDuplicateCheck", 3))
+        turns = {str(x.get("turnKey")): x for x in lesson.get("turns") or [] if x.get("turnKey")}
+        uses: dict[str, list[str]] = defaultdict(list)
+        for activity in lesson.get("activities") or []:
+            if not _scored(activity):
+                continue
+            signature = _answer_signature(activity, turns)
+            if signature and "|" not in signature and len(WORD_RE.findall(signature)) >= min_words:
+                uses[signature].append(str(activity.get("activityKey") or "?"))
+        for signature, activity_keys in uses.items():
+            if len(activity_keys) > max_uses:
+                errors.append(
+                    f"PQ3-H03 {lesson.get('lessonKey')}: exact target {signature!r} is scored {len(activity_keys)} times in {activity_keys}; max is {max_uses}"
+                )
+
+        if experience.get("warnOnMissingSafeSpeechEquivalent", True):
+            for turn in lesson.get("turns") or []:
+                if turn.get("role") != "learner":
+                    continue
+                model = str(turn.get("speechTargetEn") or turn.get("textEn") or "")
+                equivalent = _safe_equivalent(model)
+                accepted = {norm(x) for x in turn.get("acceptedSpeechEn") or []}
+                if equivalent and norm(equivalent) not in accepted:
+                    warnings.append(
+                        f"PQ3-W01 {lesson.get('lessonKey')}/{turn.get('turnKey')}: safe speech equivalent is not accepted: {equivalent!r}"
+                    )
+            for activity in lesson.get("activities") or []:
+                if activity.get("type") != "speak":
+                    continue
+                config = activity.get("config") or {}
+                model = str(config.get("textEn") or "")
+                equivalent = _safe_equivalent(model)
+                accepted = {norm(x) for x in config.get("acceptedAnswersEn") or []}
+                if equivalent and norm(equivalent) not in accepted:
+                    warnings.append(
+                        f"PQ3-W01 {lesson.get('lessonKey')}/{activity.get('activityKey')}: safe speech equivalent is not accepted: {equivalent!r}"
+                    )
+
     return {
         "status": "PASS" if not errors else "FAIL",
         "errors": errors,
@@ -228,6 +354,7 @@ def validate_product_quality_v2(lessons: list[dict], policy: dict) -> dict:
     minimum_grammar = int(wave_policy.get("minimumGrammarFocusedLessons", 2))
     minimum_review_lessons = int(wave_policy.get("minimumReviewRecombinationLessons", 1))
     minimum_legacy_reviews = int(wave_policy.get("minimumLegacyReviewItems", 4))
+    minimum_story_arcs = int(wave_policy.get("minimumDistinctStoryArcs", 0))
 
     intro_order: dict[str, int] = {}
     for lesson in lessons:
@@ -264,6 +391,16 @@ def validate_product_quality_v2(lessons: list[dict], policy: dict) -> dict:
         if len(signatures) < minimum_signatures:
             errors.append(
                 f"PQ2-H12 Lessons {first_order}-{last_order}: activity design is too templated ({len(signatures)} signatures; need {minimum_signatures})"
+            )
+
+        story_arcs = {
+            str((((lesson.get("curriculum") or {}).get("story") or {}).get("arcKey") or ""))
+            for lesson in window
+        }
+        story_arcs.discard("")
+        if minimum_story_arcs and len(story_arcs) < minimum_story_arcs:
+            errors.append(
+                f"PQ3-H10 Lessons {first_order}-{last_order}: only {len(story_arcs)} distinct story arcs; need {minimum_story_arcs}"
             )
 
         grammar_focused = 0
@@ -329,9 +466,11 @@ def validate_product_quality_v2(lessons: list[dict], policy: dict) -> dict:
         "legacyPlaceholderErrors": sum(1 for x in errors if x.startswith("PQ2-H01")),
         "knownBadEnglishDistractorErrors": sum(1 for x in errors if x.startswith("PQ2-H07")),
         "explicitDistractorAuditErrors": sum(1 for x in errors if x.startswith("PQ2-H08")),
+        "qualityV3Errors": sum(1 for x in errors if x.startswith("PQ3-")),
+        "qualityV3Warnings": sum(1 for x in warnings if x.startswith("PQ3-")),
     }
     return {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "status": "PASS" if not errors else "FAIL",
         "errors": errors,
         "warnings": warnings,
