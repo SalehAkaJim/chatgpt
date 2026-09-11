@@ -43,8 +43,11 @@ def _compatible_fallback(query: str, fallbacks: dict[str, dict]) -> tuple[dict |
     lexical collocation window (for example `that man is old` -> `man is old`).
     Short discourse prompts of the form `and X?` may be covered by an authored
     fallback containing the complete X phrase (for example `I'm free next week`
-    -> `and next week`). This avoids duplicate self-evidence while still requiring
-    an explicit authored naturalness rationale for the same lexical core.
+    -> `and next week`). Generated target windows can also contain harmless edge
+    context around the lexical core (for example `one an example too`). In that
+    case, a contiguous 2-3 word core such as `an example` may be covered by an
+    explicit authored fallback. This keeps the gate strict while avoiding false
+    failures caused only by the fixed-width collocation window.
     """
     exact = fallbacks.get(query)
     if exact:
@@ -67,6 +70,30 @@ def _compatible_fallback(query: str, fallbacks: dict[str, dict]) -> tuple[dict |
                 for start in range(0, len(fallback_words) - len(lexical_core) + 1):
                     if fallback_words[start:start + len(lexical_core)] == lexical_core:
                         return fallback, fallback_query
+
+    # Fixed-width target windows can straddle a phrase boundary or include a
+    # discourse particle at either edge. Allow only a contiguous 2-3 word core
+    # that contains at least one content word and is explicitly present in the
+    # authored fallback. Function/discourse-only overlaps remain rejected.
+    if len(query_words) >= 3:
+        function_words = {
+            "a", "an", "the", "and", "or", "but", "is", "are", "am", "was", "were",
+            "be", "been", "being", "to", "of", "in", "on", "at", "for", "with", "from",
+            "as", "too", "also", "one", "this", "that", "these", "those", "yes", "no",
+            "do", "does", "did", "can", "could", "would", "will", "please",
+        }
+        for width in range(min(3, len(query_words)), 1, -1):
+            for query_start in range(0, len(query_words) - width + 1):
+                core = query_words[query_start:query_start + width]
+                if not any(word not in function_words for word in core):
+                    continue
+                for fallback_query, fallback in fallbacks.items():
+                    fallback_words = fallback_query.split()
+                    if len(fallback_words) < width:
+                        continue
+                    for fallback_start in range(0, len(fallback_words) - width + 1):
+                        if fallback_words[fallback_start:fallback_start + width] == core:
+                            return fallback, fallback_query
 
     return None, None
 
