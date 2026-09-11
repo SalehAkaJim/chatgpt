@@ -58,6 +58,13 @@ def prefix_hash(root: Path, course_code: str, numbers: list[int]) -> str:
     return digest.hexdigest()
 
 
+def resolve_worker_count(config: dict, requested: int | None = None) -> int:
+    """Use configured normal wave size unless an explicit worker count is requested."""
+    configured = int(config.get("waveSize", MAX_WORKERS))
+    workers = configured if requested is None else int(requested)
+    return max(1, min(workers, MAX_WORKERS))
+
+
 def _provisional_record_for_lexical(candidate: dict, order: int) -> dict:
     return {
         "lemma": candidate.get("lemma"),
@@ -138,11 +145,11 @@ def make_packet(*, wave_key: str, worker_index: int, spec: dict, wave_dir: Path,
     }
 
 
-def plan_wave(root: Path, config_path: Path, workspace: Path, workers: int) -> Path:
+def plan_wave(root: Path, config_path: Path, workspace: Path, workers: int | None = None) -> Path:
     config = load(config_path)
     course_code = config.get("courseCode", "en-fa")
     level = config.get("level", "A1")
-    workers = max(1, min(int(workers), MAX_WORKERS))
+    workers = resolve_worker_count(config, workers)
     numbers = resolve_generated_lessons(root, config, course_code)
     catalog = LanguageReferenceCatalog(root, course_code)
     if not catalog.extensions_ready:
@@ -266,26 +273,44 @@ def wave_status(root: Path, manifest_path: Path) -> dict:
     }
 
 
-def reconcile_live_spec_metadata(lesson: dict, live_spec: dict, state: dict) -> dict:
-    """Bind a staged draft to the live sequential spec without hiding real drift.
+def _rehash_spec(spec: dict) -> dict:
+    rebound = copy.deepcopy(spec)
+    rebound.pop("specHash", None)
+    raw = json.dumps(rebound, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    rebound["specHash"] = hashlib.sha256(raw.encode("utf-8")).hexdigest()
+    return rebound
 
-    A parallel packet may reserve a grammar target that an earlier Lesson in the same
-    wave introduces before this slot is integrated. When that key is confirmed in the
-    live curriculum state's introducedGrammar set, it is no longer a *new* target for
-    this Lesson. Convert that reservation to explicit consolidation so every later
-    validator sees the same sequential truth. If a missing target is not actually
-    introduced, leave it untouched so strict validation still fails on real drift.
+
+def reconcile_live_spec_metadata(
+    lesson: dict,
+    live_spec: dict,
+    state: dict,
+    *,
+    provisional_spec: dict | None = None,
+    eligible_grammar_keys: set[str] | None = None,
+) -> tuple[dict, dict]:
+    """Bind a staged parallel draft to the live sequential curriculum contract.
+
+    If an earlier Lesson in the same wave already introduced a reserved grammar key,
+    convert that key to explicit consolidation.
+
+    A second legitimate parallel-authoring case is ranking drift: a grammar key was
+    source-backed and valid in this packet's provisional spec, remains eligible with
+    all prerequisites satisfied, but falls outside the live top-N candidate window
+    after earlier real drafts change ranking. In that narrow case retain the original
+    candidate in the bound per-Lesson spec, record the reconciliation, and rehash the
+    contract. This preserves strict eligibility while avoiding false failures caused
+    only by top-N ranking changes.
     """
     reconciled = copy.deepcopy(lesson)
+    bound_spec = copy.deepcopy(live_spec)
     curriculum = reconciled.setdefault("curriculum", {})
     language_ref = curriculum.setdefault("languageReference", {})
-    language_ref["specKey"] = live_spec.get("specKey")
-    language_ref["specHash"] = live_spec.get("specHash")
 
     target_keys = [x for x in language_ref.get("grammarTargetKeys", []) if x]
     candidate_keys = {
         x.get("grammarKey")
-        for x in live_spec.get("grammarCandidates", [])
+        for x in bound_spec.get("grammarCandidates", [])
         if x.get("grammarKey")
     }
     introduced_keys = {
@@ -293,6 +318,7 @@ def reconcile_live_spec_metadata(lesson: dict, live_spec: dict, state: dict) -> 
         for x in state.get("introducedGrammar", [])
         if x.get("grammarKey")
     }
+
     reconciled_as_review = [
         key for key in target_keys
         if key not in candidate_keys and key in introduced_keys
@@ -307,7 +333,45 @@ def reconcile_live_spec_metadata(lesson: dict, live_spec: dict, state: dict) -> 
                 "Parallel-wave grammar reservation was already introduced earlier in "
                 "the live sequential prefix; this Lesson consolidates that construction."
             )
-    return reconciled
+
+    remaining_targets = [x for x in language_ref.get("grammarTargetKeys", []) if x]
+    provisional_candidates = {
+        x.get("grammarKey"): x
+        for x in (provisional_spec or {}).get("grammarCandidates", [])
+        if x.get("grammarKey")
+    }
+    eligible = set(eligible_grammar_keys or ())
+    retained = [
+        key for key in remaining_targets
+        if key not in candidate_keys
+        and key not in introduced_keys
+        and key in provisional_candidates
+        and key in eligible
+    ]
+    if retained:
+        current_rows = list(bound_spec.get("grammarCandidates", []) or [])
+        current_keys = {x.get("grammarKey") for x in current_rows if x.get("grammarKey")}
+        for key in retained:
+            if key in current_keys:
+                continue
+            row = copy.deepcopy(provisional_candidates[key])
+            row["integrationStatus"] = "retained_still_eligible_provisional_candidate"
+            row["provisionalSpecHash"] = (provisional_spec or {}).get("specHash")
+            current_rows.append(row)
+            current_keys.add(key)
+        bound_spec["grammarCandidates"] = current_rows
+        bound_spec["integrationReconciliation"] = {
+            "mode": "retain_still_eligible_provisional_grammar",
+            "retainedGrammarKeys": retained,
+            "provisionalSpecKey": (provisional_spec or {}).get("specKey"),
+            "provisionalSpecHash": (provisional_spec or {}).get("specHash"),
+        }
+        bound_spec = _rehash_spec(bound_spec)
+        language_ref["integrationRetainedProvisionalGrammarKeys"] = retained
+
+    language_ref["specKey"] = bound_spec.get("specKey")
+    language_ref["specHash"] = bound_spec.get("specHash")
+    return reconciled, bound_spec
 
 
 def _run(cmd: list[str], *, cwd: Path) -> None:
@@ -399,10 +463,41 @@ def integrate_wave(root: Path, manifest_path: Path, *, cache_dir: Path) -> None:
                         f"Integration order drift: live spec is {live_spec.get('sortOrder')} but draft is {order}"
                     )
 
-                lesson = reconcile_live_spec_metadata(load(draft_path), live_spec, state)
+                provisional_path = Path(packet["provisionalSpecPath"])
+                if not provisional_path.is_absolute():
+                    provisional_path = worktree / provisional_path
+                provisional_spec = load(provisional_path)
+                if provisional_spec.get("specHash") != packet.get("provisionalSpecHash"):
+                    raise RuntimeError(
+                        f"Draft {order:04d} provisional spec hash does not match its packet manifest"
+                    )
+
+                introduced_keys = {
+                    x.get("grammarKey")
+                    for x in state.get("introducedGrammar", [])
+                    if x.get("grammarKey")
+                }
+                all_grammar_rows = catalog.rank_grammar_candidates(
+                    level=manifest["levelKey"],
+                    introduced_keys=introduced_keys,
+                    limit=max(50, len(catalog.grammar_items(manifest["levelKey"]))),
+                )
+                eligible_grammar_keys = {
+                    x.get("grammarKey")
+                    for x in all_grammar_rows
+                    if x.get("grammarKey") and not x.get("missingPrerequisiteKeys")
+                }
+
+                lesson, bound_spec = reconcile_live_spec_metadata(
+                    load(draft_path),
+                    live_spec,
+                    state,
+                    provisional_spec=provisional_spec,
+                    eligible_grammar_keys=eligible_grammar_keys,
+                )
                 report = validate_against_spec(
                     lesson,
-                    live_spec,
+                    bound_spec,
                     enforce_from=int(config.get("curriculumSpecEnforceFromSortOrder", 25)),
                 )
                 if report.get("errors"):
@@ -410,6 +505,10 @@ def integrate_wave(root: Path, manifest_path: Path, *, cache_dir: Path) -> None:
                     raise RuntimeError(
                         f"Draft {order:04d} does not satisfy the live canonical curriculum spec:\n{joined}"
                     )
+
+                # Bind the exact sequential contract before creating the Lesson. The
+                # curriculum pipeline treats a spec as immutable once its Lesson exists.
+                dump(locked_spec_path, bound_spec)
 
                 target = canonical_lesson_path(worktree, course_code, order)
                 dump(target, lesson)
@@ -437,7 +536,7 @@ def integrate_wave(root: Path, manifest_path: Path, *, cache_dir: Path) -> None:
                 str(worktree / tools_rel / "validate_factory_prefix.py"),
                 "--repo-root", str(worktree),
                 "--config", str(temp_config),
-                "--cache-dir", str(cache_dir),
+                "--output", str(temp_workspace / "factory_validation.json"),
             ], cwd=worktree)
             _copy_validated_outputs(
                 source_root=worktree,
@@ -461,7 +560,7 @@ def main() -> int:
     plan.add_argument("--repo-root", default=".")
     plan.add_argument("--config", type=Path, required=True)
     plan.add_argument("--workspace-dir", type=Path, required=True)
-    plan.add_argument("--workers", type=int, default=8)
+    plan.add_argument("--workers", type=int)
 
     status = sub.add_parser("status")
     status.add_argument("--repo-root", default=".")
@@ -477,8 +576,8 @@ def main() -> int:
     if args.command == "plan":
         config_path = args.config if args.config.is_absolute() else root / args.config
         workspace = args.workspace_dir if args.workspace_dir.is_absolute() else root / args.workspace_dir
-        manifest_path = plan_wave(root, config_path, workspace, args.workers)
         config = load(config_path)
+        manifest_path = plan_wave(root, config_path, workspace, args.workers)
         enrich_planned_wave_from_config(root=root, manifest_path=manifest_path, config=config)
         print(rel_or_abs(manifest_path, root))
         return 0
