@@ -1,0 +1,1718 @@
+{
+  "schemaVersion": 4,
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "sortOrder": 155,
+  "specKey": "en-fa-A1-LESSON-SPEC-0155",
+  "policy": {
+    "minimumQualityScore": 90,
+    "maxNewLexicalTargets": 3,
+    "preferredNewLexicalTargets": 1,
+    "grammarSelection": "Choose at most one new CEFR-J grammar target unless the Lesson is explicitly consolidation-only.",
+    "reviewRequirement": "Reuse at least one due lexical or grammar item when pedagogically natural.",
+    "usageRequirement": "Every new scored target collocation must have committed corpus evidence or an explicit Nova usage fallback with rationale.",
+    "pronunciationRequirement": "Expose CMUdict evidence when present; missing CMUdict coverage does not invent a pronunciation.",
+    "wordSemantics": "Only true lexemes enter lexicalItems/words; compositional phrases remain constructions/turn text.",
+    "alreadyPracticedSurfaceRule": "A word already produced by the learner is not proposed as a brand-new lexical target merely because it was absent from lexicalItems metadata."
+  },
+  "grammarCandidates": [
+    {
+      "grammarKey": "CEFRJ-GRAM-40",
+      "shorthandCode": "COMP.JJS.RBS.est",
+      "grammaticalItem": "SUPERLATIVE OF SUPERIORITY: -est",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-B1",
+      "egp": "A2-C1",
+      "gse": "A2",
+      "notes": "moreとlessを除く",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-7",
+      "shorthandCode": "PPO",
+      "grammaticalItem": "me/us/him/her/them (except for 'you' and 'it')",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1",
+      "gse": "A1",
+      "notes": "you/itを除く",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-88",
+      "shorthandCode": "TO.to_do",
+      "grammaticalItem": "TO-INFINITIVE: to DO (not preceded by 'not')",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A2",
+      "egp": "A1",
+      "gse": "A2",
+      "notes": null,
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 119,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-235",
+      "shorthandCode": "INT.why",
+      "grammaticalItem": "WH- QUESTION: Why ...?",
+      "sentenceType": "AFF. INT./NEG. INT.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.2",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1-(A2)-B1",
+      "egp": "A2-C1",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置・疑問符で終わる文に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 116,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-59-2",
+      "shorthandCode": "TA.PRESENT.do.INT.AFF",
+      "grammaticalItem": "TENSE/ASPECT: PRESENT (lexicalverbs)",
+      "sentenceType": "AFF. INT.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.2",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "N/A",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置・疑問符で終わる文に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 116,
+      "prerequisiteKeys": [
+        "CEFRJ-GRAM-58"
+      ],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-150",
+      "shorthandCode": "CC",
+      "grammaticalItem": "COORDINATING CONJUNCTIONS",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1-B1",
+      "gse": null,
+      "notes": null,
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 115,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-174",
+      "shorthandCode": "PREL.that",
+      "grammaticalItem": "NOMINATIVE RELATIVE PRONOUN:",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "B2",
+      "egp": "A2",
+      "gse": null,
+      "notes": "名詞に後続し(助)動詞・副詞が後続するものに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 115,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-179",
+      "shorthandCode": "PRELO.OMIT",
+      "grammaticalItem": "ELLIPTICAL ACCUSATIVE RELATIVE PRONOUN",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "B2",
+      "egp": "A2",
+      "gse": null,
+      "notes": "名詞の後に名詞句・代名詞+(助)動詞・副詞が後続するものに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 115,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-246",
+      "shorthandCode": "INT.how",
+      "grammaticalItem": "WH- QUESTION: How ...?",
+      "sentenceType": "AFF. INT./NEG. INT.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": null,
+      "egp": "A2-C1",
+      "gse": "A1",
+      "notes": "文頭(相当)または接続詞直後の位置・疑問符で終わる文に限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 115,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-55",
+      "shorthandCode": "PHV.V_PART",
+      "grammaticalItem": "PHRASAL VERBS (V+PARTICLE)",
+      "sentenceType": null,
+      "cefr": "A1",
+      "cefrJLevel": "A1.1",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A2-C1",
+      "egp": "B1-B2",
+      "gse": null,
+      "notes": "動詞はbeを除く;パーティクルは主要なもの",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 115,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-59-1",
+      "shorthandCode": "TA.PRESENT.do.NEG",
+      "grammaticalItem": "TENSE/ASPECT: PRESENT (lexical verbs)",
+      "sentenceType": "NEG. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.2",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1",
+      "gse": "A1",
+      "notes": "名詞句・代名詞に続くものに限定",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 114,
+      "prerequisiteKeys": [
+        "CEFRJ-GRAM-59"
+      ],
+      "missingPrerequisiteKeys": []
+    },
+    {
+      "grammarKey": "CEFRJ-GRAM-61",
+      "shorthandCode": "TA.PRPRG.AFF",
+      "grammaticalItem": "TENSE/ASPECT: PRESENT PROGRESSIVE",
+      "sentenceType": "AFF. DEC.",
+      "cefr": "A1",
+      "cefrJLevel": "A1.3",
+      "frequencyDispersionLevel": "A1",
+      "coreInventory": "A1",
+      "egp": "A1-C2",
+      "gse": "A1",
+      "notes": "be going toを除く",
+      "source": "cefrj_grammar_profile",
+      "curriculumScore": 113,
+      "prerequisiteKeys": [],
+      "missingPrerequisiteKeys": []
+    }
+  ],
+  "lexicalCandidates": [
+    {
+      "referenceKey": "EN-REF-E2F240C79D51463EA5CF",
+      "lemma": "someone",
+      "partOfSpeech": "noun",
+      "senseId": "9504c0d2-3f1e-5f8c-af86-e702aba4cf06",
+      "senseOrder": 1,
+      "definitionEn": "a human being",
+      "exampleEn": "there was too much for one person to do",
+      "translationFa": "یکی از مردم",
+      "translationFaSource": "یکی از مردم",
+      "exampleFa": "کسی می‌خواهد به من کمک کند.",
+      "frequencyRank": 213,
+      "cefr": "A1",
+      "cefrSource": "cefrj_lemma_consensus",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "person"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [
+        "cefr_lemma_only"
+      ],
+      "provenance": {
+        "openjamWordId": "ade00816-1c71-528a-8927-ebc4360b6286",
+        "openjamSenseId": "9504c0d2-3f1e-5f8c-af86-e702aba4cf06",
+        "openjamTranslationId": "52c0ae83-e16d-56aa-8f38-908e033016d1",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 98,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "someone",
+        "spokenRank": 328,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 213,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "someone",
+        "arpabet": [
+          "S AH1 M W AH2 N"
+        ],
+        "primaryArpabet": "S AH1 M W AH2 N",
+        "stressPattern": "12"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-988437EAF9ECA870BE18",
+      "lemma": "city",
+      "partOfSpeech": "noun",
+      "senseId": "e8b39ec9-af83-5bd9-96fa-3dc5816b666f",
+      "senseOrder": 1,
+      "definitionEn": "a large and densely populated urban area; may include several independent administrative districts",
+      "exampleEn": "Ancient Troy was a great city",
+      "translationFa": "شهر",
+      "translationFaSource": "شهر",
+      "exampleFa": "تهران یک شهر بزرگ و پرجمعیت است.",
+      "frequencyRank": 217,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "city",
+        "place"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "e87b9af8-1cf1-5da9-be7f-65582150bbc1",
+        "openjamSenseId": "e8b39ec9-af83-5bd9-96fa-3dc5816b666f",
+        "openjamTranslationId": "07b0c4ed-4da2-53b4-ad2b-29ef98f4c60a",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "city",
+        "spokenRank": 540,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 217,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "city",
+        "arpabet": [
+          "S IH1 T IY0"
+        ],
+        "primaryArpabet": "S IH1 T IY0",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-EA282529EC5D5A6FDE3C",
+      "lemma": "top",
+      "partOfSpeech": "noun",
+      "senseId": "7842f1d9-4179-572a-9032-f363c30eb79e",
+      "senseOrder": 1,
+      "definitionEn": "the upper part of anything",
+      "exampleEn": "the mower cuts off the tops of the grass",
+      "translationFa": "قسمت بالایی",
+      "translationFaSource": "قسمت بالایی",
+      "exampleFa": "کتاب را از قسمت بالایی برداشت.",
+      "frequencyRank": 244,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "place",
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "50dedcad-e33b-5b77-8551-ed30dff16143",
+        "openjamSenseId": "7842f1d9-4179-572a-9032-f363c30eb79e",
+        "openjamTranslationId": "53d46cdb-e59b-54d2-8524-68c892b65255",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "top",
+        "spokenRank": 334,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 244,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "top",
+        "arpabet": [
+          "T AA1 P",
+          "T AO1 P"
+        ],
+        "primaryArpabet": "T AA1 P",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-B272CA3C952161485DD7",
+      "lemma": "business",
+      "partOfSpeech": "noun",
+      "senseId": "4226ccdb-682b-5633-9caa-4e22000116f6",
+      "senseOrder": 1,
+      "definitionEn": "a commercial or industrial enterprise and the people who constitute it",
+      "exampleEn": "he bought his brother's business",
+      "translationFa": "کسب‌وکار",
+      "translationFaSource": "کسب‌وکار",
+      "exampleFa": "او یک کسب‌وکار کوچک در شهر راه‌اندازی کرد.",
+      "frequencyRank": 246,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "money",
+        "work"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "1b9327c6-42cf-556c-b34c-ea0b8ff6640b",
+        "openjamSenseId": "4226ccdb-682b-5633-9caa-4e22000116f6",
+        "openjamTranslationId": "9692d0d9-0025-52ae-8983-befd37540404",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "business",
+        "spokenRank": 351,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 246,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "business",
+        "arpabet": [
+          "B IH1 Z N AH0 S",
+          "B IH1 Z N IH0 S"
+        ],
+        "primaryArpabet": "B IH1 Z N AH0 S",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-754CBC04A524E555C4AC",
+      "lemma": "care",
+      "partOfSpeech": "noun",
+      "senseId": "02d429a9-0731-55dc-b83f-6bf04ad1ace8",
+      "senseOrder": 1,
+      "definitionEn": "the work of providing treatment for or attending to someone or something",
+      "exampleEn": "no medical care was required",
+      "translationFa": "مراقبت",
+      "translationFaSource": "مراقبت",
+      "exampleFa": "او از مراقبت بیماران در بیمارستان لذت می‌برد.",
+      "frequencyRank": 247,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "health"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "182d4b94-a24c-5aaf-8981-d7671bd4d2d2",
+        "openjamSenseId": "02d429a9-0731-55dc-b83f-6bf04ad1ace8",
+        "openjamTranslationId": "0a8d51e2-b460-5901-a985-5603d794ca28",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "care",
+        "spokenRank": 314,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 247,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "care",
+        "arpabet": [
+          "K EH1 R"
+        ],
+        "primaryArpabet": "K EH1 R",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-0874ABD383105EAACE3E",
+      "lemma": "music",
+      "partOfSpeech": "noun",
+      "senseId": "c372a5b7-7e17-51f2-af75-cf19aaecea58",
+      "senseOrder": 1,
+      "definitionEn": "an artistic form of auditory communication incorporating instrumental or vocal tones in a structured and continuous manner",
+      "exampleEn": "She composed beautiful music that blended classical piano with modern electronic sounds.",
+      "translationFa": "موسیقی",
+      "translationFaSource": "موسیقی",
+      "exampleFa": "او هر روز موسیقی کلاسیک را گوش می‌دهد.",
+      "frequencyRank": 279,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "arts",
+        "media"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "c9355050-9c6b-53f4-91b5-df93e88cad49",
+        "openjamSenseId": "c372a5b7-7e17-51f2-af75-cf19aaecea58",
+        "openjamTranslationId": "e7cb0965-14d3-5def-a4ed-9c02cd8dfb8f",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "music",
+        "spokenRank": 573,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 279,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "music",
+        "arpabet": [
+          "M Y UW1 Z IH0 K"
+        ],
+        "primaryArpabet": "M Y UW1 Z IH0 K",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-8F152819A09ECDD09ADF",
+      "lemma": "head",
+      "partOfSpeech": "noun",
+      "senseId": "ec2c1ac3-a5ce-54f2-9346-4e52d344320e",
+      "senseOrder": 1,
+      "definitionEn": "the upper part of the human body or the front part of the body in animals; contains the face and brains",
+      "exampleEn": "he stuck his head out the window",
+      "translationFa": "سر",
+      "translationFaSource": "سر",
+      "exampleFa": "او سر خود را به دیوار کوبید.",
+      "frequencyRank": 288,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "animal",
+        "body"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "f958ce7e-cd28-5aeb-ac4a-e5205ce199d8",
+        "openjamSenseId": "ec2c1ac3-a5ce-54f2-9346-4e52d344320e",
+        "openjamTranslationId": "8c6127aa-c9c4-5ff8-bec8-d3105fed0bda",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "head",
+        "spokenRank": 378,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 288,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "head",
+        "arpabet": [
+          "HH EH1 D"
+        ],
+        "primaryArpabet": "HH EH1 D",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-2B10509B7E8300EAE221",
+      "lemma": "white",
+      "partOfSpeech": "adjective",
+      "senseId": "366f6670-a3fe-598f-859e-596c5fc03feb",
+      "senseOrder": 1,
+      "definitionEn": "being of the achromatic color of maximum lightness; having little or no hue owing to reflection of almost all incident light",
+      "exampleEn": "as white as fresh snow",
+      "translationFa": "سفید",
+      "translationFaSource": "سفید",
+      "exampleFa": "آسمان صبح سفید و روشن بود.",
+      "frequencyRank": 293,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "2c37f798-2630-56f8-abfe-e947839b5eb5",
+        "openjamSenseId": "366f6670-a3fe-598f-859e-596c5fc03feb",
+        "openjamTranslationId": "94533903-613d-5be3-a253-18ddfe3eeef1",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "white",
+        "spokenRank": 589,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 293,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "white",
+        "arpabet": [
+          "W AY1 T",
+          "HH W AY1 T"
+        ],
+        "primaryArpabet": "W AY1 T",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-1513BE3295DCCB40449F",
+      "lemma": "line",
+      "partOfSpeech": "noun",
+      "senseId": "34c468ad-1ef1-5af4-8f5d-5981658d6942",
+      "senseOrder": 1,
+      "definitionEn": "a formation of people or things one beside another",
+      "exampleEn": "the line of soldiers advanced with their bayonets fixed",
+      "translationFa": "صف",
+      "translationFaSource": "صف",
+      "exampleFa": "مردم در صف بانک ایستاده‌اند.",
+      "frequencyRank": 306,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "abstract",
+        "action"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "512f7063-d098-54fc-a9cb-8286096a14b2",
+        "openjamSenseId": "34c468ad-1ef1-5af4-8f5d-5981658d6942",
+        "openjamTranslationId": "49fe0e3e-34e3-5f34-9f0b-ab9836ef3d23",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "line",
+        "spokenRank": 323,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 306,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "line",
+        "arpabet": [
+          "L AY1 N"
+        ],
+        "primaryArpabet": "L AY1 N",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-BB83417A6F7153B1E77B",
+      "lemma": "order",
+      "partOfSpeech": "noun",
+      "senseId": "e18c177c-2cdd-5fec-84c4-d7001c549165",
+      "senseOrder": 1,
+      "definitionEn": "(often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed",
+      "exampleEn": "the British ships dropped anchor and waited for orders from London",
+      "translationFa": "فرمان",
+      "translationFaSource": "فرمان",
+      "exampleFa": "سربازان باید از فرمان های افسر خود اطاعت کنند.",
+      "frequencyRank": 307,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "society",
+        "work"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "c06fb333-72e8-56b3-ab74-7cf50beca6a1",
+        "openjamSenseId": "e18c177c-2cdd-5fec-84c4-d7001c549165",
+        "openjamTranslationId": "48f10db2-7232-5951-97ca-32f4e9f2f328",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "order",
+        "spokenRank": 338,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 307,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "order",
+        "arpabet": [
+          "AO1 R D ER0"
+        ],
+        "primaryArpabet": "AO1 R D ER0",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-31B1F817E3D05D25EFA4",
+      "lemma": "party",
+      "partOfSpeech": "noun",
+      "senseId": "852bd711-a935-51fa-9cfd-47cef929ba63",
+      "senseOrder": 1,
+      "definitionEn": "an organization to gain political power",
+      "exampleEn": "in 1992 Perot tried to organize a third party at the national level",
+      "translationFa": "حزب",
+      "translationFaSource": "حزب",
+      "exampleFa": "او عضو حزب دموکراتیک است.",
+      "frequencyRank": 308,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "event",
+        "society"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "5c0202de-db41-5920-9ae2-7a6dfdf5871d",
+        "openjamSenseId": "852bd711-a935-51fa-9cfd-47cef929ba63",
+        "openjamTranslationId": "9c8c913e-b4e9-5ee8-9ca8-0d2954bbbaab",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "party",
+        "spokenRank": 464,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 308,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "party",
+        "arpabet": [
+          "P AA1 R T IY0"
+        ],
+        "primaryArpabet": "P AA1 R T IY0",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-C612D6AF8AC88278FB97",
+      "lemma": "black",
+      "partOfSpeech": "adjective",
+      "senseId": "5874f8ad-3060-575c-be6d-8311e81341f7",
+      "senseOrder": 1,
+      "definitionEn": "being of the achromatic color of maximum darkness; having little or no hue owing to absorption of almost all incident light",
+      "exampleEn": "black leather jackets",
+      "translationFa": "سیاه",
+      "translationFaSource": "سیاه",
+      "exampleFa": "او یک کت سیاه پوشیده است.",
+      "frequencyRank": 326,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "quality"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "3bd2b6de-eb4f-566f-8b7a-84d213cb8541",
+        "openjamSenseId": "5874f8ad-3060-575c-be6d-8311e81341f7",
+        "openjamTranslationId": "28cb0d35-8744-5d33-8d41-fb49d3312462",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "black",
+        "spokenRank": 544,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 326,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "black",
+        "arpabet": [
+          "B L AE1 K"
+        ],
+        "primaryArpabet": "B L AE1 K",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-2B2BA41687B0DA1F0CCE",
+      "lemma": "war",
+      "partOfSpeech": "noun",
+      "senseId": "6241a22d-96cb-5039-be7d-9d71ee9595ff",
+      "senseOrder": 1,
+      "definitionEn": "the waging of armed conflict against an enemy",
+      "exampleEn": "thousands of people were killed in the war",
+      "translationFa": "جنگ",
+      "translationFaSource": "جنگ",
+      "exampleFa": "این دو کشور برای سال‌ها در جنگ بودند.",
+      "frequencyRank": 332,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "action",
+        "event",
+        "society"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "542d05f1-75fe-54dd-bfb4-ba429e8cedd4",
+        "openjamSenseId": "6241a22d-96cb-5039-be7d-9d71ee9595ff",
+        "openjamTranslationId": "7906050f-12a7-5dfe-a965-b345b752642a",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "war",
+        "spokenRank": 567,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 332,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "war",
+        "arpabet": [
+          "W AO1 R"
+        ],
+        "primaryArpabet": "W AO1 R",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-5B47CA0AB3B0C251E6AC",
+      "lemma": "face",
+      "partOfSpeech": "noun",
+      "senseId": "a803ab88-f113-5d71-8553-2397ac7bcce8",
+      "senseOrder": 1,
+      "definitionEn": "the front of the human head from the forehead to the chin and ear to ear",
+      "exampleEn": "he washed his face",
+      "translationFa": "صورت",
+      "translationFaSource": "صورت",
+      "exampleFa": "صورت زیبایش همه را مجذوب می‌کند.",
+      "frequencyRank": 335,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "body"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "fa46e4c7-6708-5d83-833a-8c507eff0d4c",
+        "openjamSenseId": "a803ab88-f113-5d71-8553-2397ac7bcce8",
+        "openjamTranslationId": "1ff74dec-846d-5cf1-92ad-b6214798154c",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "face",
+        "spokenRank": 486,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 335,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "face",
+        "arpabet": [
+          "F EY1 S"
+        ],
+        "primaryArpabet": "F EY1 S",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-0D01F79A54FA7898D4C1",
+      "lemma": "story",
+      "partOfSpeech": "noun",
+      "senseId": "3559618d-ec4b-5207-a9d0-5343db49bb53",
+      "senseOrder": 1,
+      "definitionEn": "a message that tells the particulars of an act or occurrence or course of events; presented in writing or drama or cinema or as a radio or television program",
+      "exampleEn": "his narrative was interesting",
+      "translationFa": "داستان",
+      "translationFaSource": "داستان",
+      "exampleFa": "او یک داستان جالب درباره سفرش به ایران برایم تعریف کرد.",
+      "frequencyRank": 341,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "arts",
+        "media"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "64ddabe1-a436-5427-8bf7-af4554afdc70",
+        "openjamSenseId": "3559618d-ec4b-5207-a9d0-5343db49bb53",
+        "openjamTranslationId": "cb203ec4-3feb-529c-87aa-098749238c57",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "story",
+        "spokenRank": 396,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 341,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "story",
+        "arpabet": [
+          "S T AO1 R IY0"
+        ],
+        "primaryArpabet": "S T AO1 R IY0",
+        "stressPattern": "10"
+      },
+      "curriculumScore": 84.0
+    },
+    {
+      "referenceKey": "EN-REF-C8461126B23882AF3B2B",
+      "lemma": "health",
+      "partOfSpeech": "noun",
+      "senseId": "b769af38-18d3-5709-a4e1-c507fd0eeabd",
+      "senseOrder": 1,
+      "definitionEn": "a healthy state of wellbeing free from disease",
+      "exampleEn": "physicians should be held responsible for the health of their patients",
+      "translationFa": "سلامتی",
+      "translationFaSource": "سلامتی",
+      "exampleFa": "سلامتی بهترین دارو است.",
+      "frequencyRank": 345,
+      "cefr": "A1",
+      "cefrSource": "cefrj_exact_pos",
+      "cefrEvidenceLevels": [
+        "A1"
+      ],
+      "cefrConflict": false,
+      "openjamLevel": "A1",
+      "topics": [
+        "health"
+      ],
+      "sourceType": "openjam_sense",
+      "flags": [],
+      "provenance": {
+        "openjamWordId": "b23e2494-17ee-53b5-8a49-a694057d4067",
+        "openjamSenseId": "b769af38-18d3-5709-a4e1-c507fd0eeabd",
+        "openjamTranslationId": "1003a1ae-cb61-5b3e-8f38-9002053b2e2a",
+        "openjamCommit": "e05622665494f18d414190b5f738dc1eb4b414fa",
+        "cefrJCommit": "d4e45b75b38f27b30dfc5c44d8c571aec7e7092f"
+      },
+      "qualityScore": 100,
+      "curriculumEligible": true,
+      "productionEligible": true,
+      "spokenPriority": {
+        "lemma": "health",
+        "spokenRank": 502,
+        "spokenFrequency": null,
+        "generalFrequencyRank": 345,
+        "priorityTier": "spoken"
+      },
+      "pronunciation": {
+        "lemma": "health",
+        "arpabet": [
+          "HH EH1 L TH"
+        ],
+        "primaryArpabet": "HH EH1 L TH",
+        "stressPattern": "1"
+      },
+      "curriculumScore": 84.0
+    }
+  ],
+  "reviewDue": {
+    "lexical": [
+      {
+        "lemma": "make",
+        "firstLesson": 41,
+        "lastLesson": 146,
+        "roles": [
+          "review",
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-39C6EB767664D6211984"
+        ],
+        "gapLessons": 9
+      },
+      {
+        "lemma": "plan",
+        "firstLesson": 146,
+        "lastLesson": 146,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-79C0C6E6180932A0CEED"
+        ],
+        "gapLessons": 9
+      },
+      {
+        "lemma": "kid",
+        "firstLesson": 147,
+        "lastLesson": 147,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-153429F6DD5BF6E80B12"
+        ],
+        "gapLessons": 8
+      },
+      {
+        "lemma": "bring",
+        "firstLesson": 148,
+        "lastLesson": 148,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-B1F0B9E9B8E7BFBBAB32"
+        ],
+        "gapLessons": 7
+      },
+      {
+        "lemma": "example",
+        "firstLesson": 149,
+        "lastLesson": 149,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-817B5F1F4C814FE7D542"
+        ],
+        "gapLessons": 6
+      },
+      {
+        "lemma": "hear",
+        "firstLesson": 150,
+        "lastLesson": 150,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-4ADAC71B3D7431E8ACDA"
+        ],
+        "gapLessons": 5
+      },
+      {
+        "lemma": "world",
+        "firstLesson": 151,
+        "lastLesson": 151,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-B691D5145134A17E71DF"
+        ],
+        "gapLessons": 4
+      },
+      {
+        "lemma": "game",
+        "firstLesson": 152,
+        "lastLesson": 152,
+        "roles": [
+          "target"
+        ],
+        "referenceKeys": [
+          "EN-REF-50978E011F88277B39DB"
+        ],
+        "gapLessons": 3
+      }
+    ],
+    "grammar": [
+      {
+        "grammarKey": "CEFRJ-GRAM-247",
+        "grammaticalItem": "WH- QUESTION: How ADJ/ADV ...?",
+        "firstLesson": 3,
+        "lastLesson": 143,
+        "exposureCount": 4,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 12
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-58-2",
+        "grammaticalItem": "TENSE/ASPECT: PRESENT (BE)",
+        "firstLesson": 24,
+        "lastLesson": 144,
+        "exposureCount": 8,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 11
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-8-2",
+        "grammaticalItem": "Is this/that ...?",
+        "firstLesson": 24,
+        "lastLesson": 144,
+        "exposureCount": 8,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 11
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "firstLesson": 6,
+        "lastLesson": 145,
+        "exposureCount": 10,
+        "evidenceKinds": [
+          "learner_practice",
+          "target_construction"
+        ],
+        "maxMatchScore": 0.8167,
+        "gapLessons": 10
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-58-1",
+        "grammaticalItem": "TENSE/ASPECT: PRESENT (BE)",
+        "firstLesson": 25,
+        "lastLesson": 145,
+        "exposureCount": 11,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 10
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-146",
+        "grammaticalItem": "there+be",
+        "firstLesson": 36,
+        "lastLesson": 146,
+        "exposureCount": 11,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 9
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-58",
+        "grammaticalItem": "TENSE/ASPECT: PRESENT (BE)",
+        "firstLesson": 1,
+        "lastLesson": 147,
+        "exposureCount": 201,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 8
+      },
+      {
+        "grammarKey": "CEFRJ-GRAM-117",
+        "grammaticalItem": "IMPERATIVE: AFFIRMATIVE (lexical verbs)",
+        "firstLesson": 1,
+        "lastLesson": 148,
+        "exposureCount": 35,
+        "evidenceKinds": [
+          "learner_practice_pattern",
+          "target_construction_pattern"
+        ],
+        "maxMatchScore": 1.0,
+        "gapLessons": 7
+      }
+    ]
+  },
+  "storyConstraints": {
+    "doNotRepeatImmediateParticipants": [],
+    "recentParticipantSets": [
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "recentArcs": [],
+    "recurrenceGuidance": "A prior pair/arc may return after sufficient spacing when continuity adds value; never force recurrence for vocabulary convenience."
+  },
+  "authoringBoundary": {
+    "dataDecides": [
+      "CEFR grammar eligibility and candidate order",
+      "lexical sense eligibility and frequency priority",
+      "review due signals",
+      "pronunciation evidence",
+      "usage/collocation evidence requirements",
+      "verbatim open-corpus dialogue candidates and exact source wording"
+    ],
+    "novaCreates": [
+      "scenario",
+      "characters/learner role choice within story rules",
+      "activities",
+      "Persian instructional copy",
+      "selection of a compatible source dialogue candidate",
+      "mapping source speakers to variable Nova characters/learner role within story rules",
+      "Persian instructional copy and translations"
+    ]
+  },
+  "specHash": "2cc57654840f9f69f5e6367d8d0174cdf1cdb692d6c1249ca1d6fdcc6ddf0f25",
+  "wavePlanning": {
+    "provisional": true,
+    "waveKey": "en-fa-A1-0149-0168",
+    "workerId": "w07",
+    "integrationRule": "The live canonical spec wins if sequential integration changes candidate order."
+  },
+  "openCorpusAuthoring": {
+    "mode": "verbatim-source-only",
+    "preferredCandidateKey": "schema-guided-dialogue:test:10_00012",
+    "candidateCount": 6,
+    "candidates": [
+      {
+        "corpusKey": "schema-guided-dialogue:test:10_00012",
+        "source": "schemaGuidedDialogue",
+        "sourceDialogueId": "10_00012",
+        "domain": "media",
+        "services": [
+          "Media_3"
+        ],
+        "license": "CC-BY-SA-4.0",
+        "reuseMode": "verbatim-sharealike",
+        "attribution": "Schema-Guided Dialogue Dataset, Google Research",
+        "sourceRepository": "google-research-datasets/dstc8-schema-guided-dialogue",
+        "sourceCommit": "e852981ae34990f4358979625854259302feaa78",
+        "sourceFile": "test/dialogues_010.json",
+        "textSha256": "b17e5b9b2d3635d45aaa18af6603bc025ccd65aae91034180104e8b372870275",
+        "stats": {
+          "turnCount": 12,
+          "wordCount": 60,
+          "uniqueTokenCount": 41,
+          "averageTurnWords": 5.0,
+          "maxTurnWords": 10,
+          "difficultyHint": "starter"
+        },
+        "authoringScore": 126.1,
+        "suggestedWindow": {
+          "startTurn": 1,
+          "endTurnExclusive": 5,
+          "isExcerpt": true,
+          "turns": [
+            {
+              "index": 1,
+              "sourceSpeaker": "SYSTEM",
+              "text": "Any movie in particular?"
+            },
+            {
+              "index": 2,
+              "sourceSpeaker": "USER",
+              "text": "Yes, Official Secrets"
+            },
+            {
+              "index": 3,
+              "sourceSpeaker": "SYSTEM",
+              "text": "Please confirm: Playing Official Secrets with English Subs"
+            },
+            {
+              "index": 4,
+              "sourceSpeaker": "USER",
+              "text": "yes, please play"
+            }
+          ]
+        },
+        "provenanceRequirement": {
+          "metadataPath": "metadata.openCorpus",
+          "copyMode": "verbatim",
+          "preserveExactEnglish": true,
+          "recordCorpusKey": "schema-guided-dialogue:test:10_00012",
+          "recordSourceCommit": "e852981ae34990f4358979625854259302feaa78",
+          "recordLicense": "CC-BY-SA-4.0",
+          "recordWindow": [
+            1,
+            5
+          ]
+        }
+      },
+      {
+        "corpusKey": "schema-guided-dialogue:train:51_00035",
+        "source": "schemaGuidedDialogue",
+        "sourceDialogueId": "51_00035",
+        "domain": "events",
+        "services": [
+          "Music_1",
+          "Events_2"
+        ],
+        "license": "CC-BY-SA-4.0",
+        "reuseMode": "verbatim-sharealike",
+        "attribution": "Schema-Guided Dialogue Dataset, Google Research",
+        "sourceRepository": "google-research-datasets/dstc8-schema-guided-dialogue",
+        "sourceCommit": "e852981ae34990f4358979625854259302feaa78",
+        "sourceFile": "train/dialogues_051.json",
+        "textSha256": "22f723a707bfea89599323f72b6625d6a11f993826c1cf0214ab388264d3842b",
+        "stats": {
+          "turnCount": 10,
+          "wordCount": 40,
+          "uniqueTokenCount": 33,
+          "averageTurnWords": 4.0,
+          "maxTurnWords": 9,
+          "difficultyHint": "starter"
+        },
+        "authoringScore": 126.1,
+        "suggestedWindow": {
+          "startTurn": 0,
+          "endTurnExclusive": 4,
+          "isExcerpt": true,
+          "turns": [
+            {
+              "index": 0,
+              "sourceSpeaker": "USER",
+              "text": "Will you play music?"
+            },
+            {
+              "index": 1,
+              "sourceSpeaker": "SYSTEM",
+              "text": "What song?"
+            },
+            {
+              "index": 2,
+              "sourceSpeaker": "USER",
+              "text": "Nobody Can Save Me."
+            },
+            {
+              "index": 3,
+              "sourceSpeaker": "SYSTEM",
+              "text": "Please confirm Nobody Can Save Me playing on TV."
+            }
+          ]
+        },
+        "provenanceRequirement": {
+          "metadataPath": "metadata.openCorpus",
+          "copyMode": "verbatim",
+          "preserveExactEnglish": true,
+          "recordCorpusKey": "schema-guided-dialogue:train:51_00035",
+          "recordSourceCommit": "e852981ae34990f4358979625854259302feaa78",
+          "recordLicense": "CC-BY-SA-4.0",
+          "recordWindow": [
+            0,
+            4
+          ]
+        }
+      },
+      {
+        "corpusKey": "schema-guided-dialogue:train:6_00091",
+        "source": "schemaGuidedDialogue",
+        "sourceDialogueId": "6_00091",
+        "domain": "music",
+        "services": [
+          "Music_2"
+        ],
+        "license": "CC-BY-SA-4.0",
+        "reuseMode": "verbatim-sharealike",
+        "attribution": "Schema-Guided Dialogue Dataset, Google Research",
+        "sourceRepository": "google-research-datasets/dstc8-schema-guided-dialogue",
+        "sourceCommit": "e852981ae34990f4358979625854259302feaa78",
+        "sourceFile": "train/dialogues_006.json",
+        "textSha256": "6125bab422d9b8e47f864c4544b88944b1071ae0dec24fe02f39cbf340b01ca3",
+        "stats": {
+          "turnCount": 10,
+          "wordCount": 50,
+          "uniqueTokenCount": 36,
+          "averageTurnWords": 5.0,
+          "maxTurnWords": 11,
+          "difficultyHint": "starter"
+        },
+        "authoringScore": 126.1,
+        "suggestedWindow": {
+          "startTurn": 5,
+          "endTurnExclusive": 9,
+          "isExcerpt": true,
+          "turns": [
+            {
+              "index": 5,
+              "sourceSpeaker": "SYSTEM",
+              "text": "Play Drive on TV?"
+            },
+            {
+              "index": 6,
+              "sourceSpeaker": "USER",
+              "text": "Yes, thank you."
+            },
+            {
+              "index": 7,
+              "sourceSpeaker": "SYSTEM",
+              "text": "Started playing Drive on TV."
+            },
+            {
+              "index": 8,
+              "sourceSpeaker": "USER",
+              "text": "Thank you, that is all for now."
+            }
+          ]
+        },
+        "provenanceRequirement": {
+          "metadataPath": "metadata.openCorpus",
+          "copyMode": "verbatim",
+          "preserveExactEnglish": true,
+          "recordCorpusKey": "schema-guided-dialogue:train:6_00091",
+          "recordSourceCommit": "e852981ae34990f4358979625854259302feaa78",
+          "recordLicense": "CC-BY-SA-4.0",
+          "recordWindow": [
+            5,
+            9
+          ]
+        }
+      },
+      {
+        "corpusKey": "schema-guided-dialogue:train:69_00017",
+        "source": "schemaGuidedDialogue",
+        "sourceDialogueId": "69_00017",
+        "domain": "media",
+        "services": [
+          "Travel_1",
+          "Movies_1",
+          "Media_1"
+        ],
+        "license": "CC-BY-SA-4.0",
+        "reuseMode": "verbatim-sharealike",
+        "attribution": "Schema-Guided Dialogue Dataset, Google Research",
+        "sourceRepository": "google-research-datasets/dstc8-schema-guided-dialogue",
+        "sourceCommit": "e852981ae34990f4358979625854259302feaa78",
+        "sourceFile": "train/dialogues_069.json",
+        "textSha256": "e086d68753c89da1c0945fdb354753e298a9c82289126c3dfb6ce2a90629403d",
+        "stats": {
+          "turnCount": 16,
+          "wordCount": 63,
+          "uniqueTokenCount": 44,
+          "averageTurnWords": 3.94,
+          "maxTurnWords": 6,
+          "difficultyHint": "starter"
+        },
+        "authoringScore": 125.99,
+        "suggestedWindow": {
+          "startTurn": 0,
+          "endTurnExclusive": 4,
+          "isExcerpt": true,
+          "turns": [
+            {
+              "index": 0,
+              "sourceSpeaker": "USER",
+              "text": "I want a mall in sf"
+            },
+            {
+              "index": 1,
+              "sourceSpeaker": "SYSTEM",
+              "text": "ferry plaza farmers market shopping area"
+            },
+            {
+              "index": 2,
+              "sourceSpeaker": "USER",
+              "text": "drama embarcadero center cinema"
+            },
+            {
+              "index": 3,
+              "sourceSpeaker": "SYSTEM",
+              "text": "1 movie red joan"
+            }
+          ]
+        },
+        "provenanceRequirement": {
+          "metadataPath": "metadata.openCorpus",
+          "copyMode": "verbatim",
+          "preserveExactEnglish": true,
+          "recordCorpusKey": "schema-guided-dialogue:train:69_00017",
+          "recordSourceCommit": "e852981ae34990f4358979625854259302feaa78",
+          "recordLicense": "CC-BY-SA-4.0",
+          "recordWindow": [
+            0,
+            4
+          ]
+        }
+      },
+      {
+        "corpusKey": "schema-guided-dialogue:train:69_00044",
+        "source": "schemaGuidedDialogue",
+        "sourceDialogueId": "69_00044",
+        "domain": "media",
+        "services": [
+          "Travel_1",
+          "Movies_1",
+          "Media_1"
+        ],
+        "license": "CC-BY-SA-4.0",
+        "reuseMode": "verbatim-sharealike",
+        "attribution": "Schema-Guided Dialogue Dataset, Google Research",
+        "sourceRepository": "google-research-datasets/dstc8-schema-guided-dialogue",
+        "sourceCommit": "e852981ae34990f4358979625854259302feaa78",
+        "sourceFile": "train/dialogues_069.json",
+        "textSha256": "7b4e12b79b59f1a3df7da802c3ff232deae73a5014abbdf02b810066b4a55766",
+        "stats": {
+          "turnCount": 24,
+          "wordCount": 92,
+          "uniqueTokenCount": 62,
+          "averageTurnWords": 3.83,
+          "maxTurnWords": 7,
+          "difficultyHint": "starter"
+        },
+        "authoringScore": 125.79,
+        "suggestedWindow": {
+          "startTurn": 7,
+          "endTurnExclusive": 11,
+          "isExcerpt": true,
+          "turns": [
+            {
+              "index": 7,
+              "sourceSpeaker": "SYSTEM",
+              "text": "jt leroy, penguin highway and supa modo"
+            },
+            {
+              "index": 8,
+              "sourceSpeaker": "USER",
+              "text": "penguin highway is good"
+            },
+            {
+              "index": 9,
+              "sourceSpeaker": "SYSTEM",
+              "text": "wanna get tickets?"
+            },
+            {
+              "index": 10,
+              "sourceSpeaker": "USER",
+              "text": "no I do not"
+            }
+          ]
+        },
+        "provenanceRequirement": {
+          "metadataPath": "metadata.openCorpus",
+          "copyMode": "verbatim",
+          "preserveExactEnglish": true,
+          "recordCorpusKey": "schema-guided-dialogue:train:69_00044",
+          "recordSourceCommit": "e852981ae34990f4358979625854259302feaa78",
+          "recordLicense": "CC-BY-SA-4.0",
+          "recordWindow": [
+            7,
+            11
+          ]
+        }
+      },
+      {
+        "corpusKey": "schema-guided-dialogue:dev:16_00115",
+        "source": "schemaGuidedDialogue",
+        "sourceDialogueId": "16_00115",
+        "domain": "music",
+        "services": [
+          "Weather_1",
+          "Music_1"
+        ],
+        "license": "CC-BY-SA-4.0",
+        "reuseMode": "verbatim-sharealike",
+        "attribution": "Schema-Guided Dialogue Dataset, Google Research",
+        "sourceRepository": "google-research-datasets/dstc8-schema-guided-dialogue",
+        "sourceCommit": "e852981ae34990f4358979625854259302feaa78",
+        "sourceFile": "dev/dialogues_016.json",
+        "textSha256": "a376a1e0aedb54805f0922f862206b4f623bc068fdf3ee8f781af228b5077380",
+        "stats": {
+          "turnCount": 14,
+          "wordCount": 53,
+          "uniqueTokenCount": 39,
+          "averageTurnWords": 3.79,
+          "maxTurnWords": 9,
+          "difficultyHint": "starter"
+        },
+        "authoringScore": 125.72,
+        "suggestedWindow": {
+          "startTurn": 3,
+          "endTurnExclusive": 7,
+          "isExcerpt": true,
+          "turns": [
+            {
+              "index": 3,
+              "sourceSpeaker": "SYSTEM",
+              "text": "92 degrees 0 percent"
+            },
+            {
+              "index": 4,
+              "sourceSpeaker": "USER",
+              "text": "sure then okay"
+            },
+            {
+              "index": 5,
+              "sourceSpeaker": "SYSTEM",
+              "text": "change your life iggy azalea 10 songs the new classic"
+            },
+            {
+              "index": 6,
+              "sourceSpeaker": "USER",
+              "text": "speaker in the bedroom"
+            }
+          ]
+        },
+        "provenanceRequirement": {
+          "metadataPath": "metadata.openCorpus",
+          "copyMode": "verbatim",
+          "preserveExactEnglish": true,
+          "recordCorpusKey": "schema-guided-dialogue:dev:16_00115",
+          "recordSourceCommit": "e852981ae34990f4358979625854259302feaa78",
+          "recordLicense": "CC-BY-SA-4.0",
+          "recordWindow": [
+            3,
+            7
+          ]
+        }
+      }
+    ],
+    "requirements": [
+      "Use learner-visible English dialogue wording only from one listed candidate for this Lesson.",
+      "Copy each selected source turn exactly. Do not paraphrase, grammar-correct, shorten inside a turn, or normalize punctuation.",
+      "A contiguous suggestedWindow may be used as an excerpt; its individual source turns must remain exact.",
+      "Map source speakers to Nova learner/character roles without changing source wording.",
+      "Write Persian translations and teaching instructions around the copied English; do not treat Persian support as source text.",
+      "Store the selected candidate provenance under lesson.metadata.openCorpus, including corpusKey, source, sourceDialogueId, sourceCommit, sourceFile, license, textSha256, and copied window.",
+      "For CC-BY-SA-4.0 material, keep copied English verbatim unless compatible ShareAlike distribution is explicitly intended.",
+      "If none of the candidates can satisfy the live curriculum/story constraints, reject/reconcile the draft instead of inventing replacement English dialogue."
+    ],
+    "fallbackPolicy": "source-backed-only"
+  }
+}

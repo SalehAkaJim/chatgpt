@@ -1,0 +1,980 @@
+{
+  "schemaVersion": 1,
+  "waveKey": "en-fa-A1-0149-0168",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "createdAt": "2026-09-11T13:14:50.399760+00:00",
+  "workerCount": 20,
+  "integrationWriter": "single-sequential",
+  "baseGeneratedLessons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148
+  ],
+  "basePrefixHash": "85aa4d88f92f6bf9e04839ca8bfcac0be1c8e6f1b647cd85adb35c79d33e9f83",
+  "firstSortOrder": 149,
+  "lastSortOrder": 168,
+  "configPath": "nova/curriculum/en-fa/factory.config.json",
+  "workspaceDir": "nova/curriculum/en-fa",
+  "fullPrefixRegressionRequired": true,
+  "reservedTopCandidates": [
+    {
+      "sortOrder": 149,
+      "lexical": "example",
+      "grammarKey": "CEFRJ-GRAM-13"
+    },
+    {
+      "sortOrder": 150,
+      "lexical": "hear",
+      "grammarKey": "CEFRJ-GRAM-14"
+    },
+    {
+      "sortOrder": 151,
+      "lexical": "world",
+      "grammarKey": "CEFRJ-GRAM-15"
+    },
+    {
+      "sortOrder": 152,
+      "lexical": "game",
+      "grammarKey": "CEFRJ-GRAM-196"
+    },
+    {
+      "sortOrder": 153,
+      "lexical": "team",
+      "grammarKey": "CEFRJ-GRAM-21"
+    },
+    {
+      "sortOrder": 154,
+      "lexical": "word",
+      "grammarKey": "CEFRJ-GRAM-33"
+    },
+    {
+      "sortOrder": 155,
+      "lexical": "someone",
+      "grammarKey": "CEFRJ-GRAM-40"
+    },
+    {
+      "sortOrder": 156,
+      "lexical": "student",
+      "grammarKey": "CEFRJ-GRAM-7"
+    },
+    {
+      "sortOrder": 157,
+      "lexical": "city",
+      "grammarKey": "CEFRJ-GRAM-88"
+    },
+    {
+      "sortOrder": 158,
+      "lexical": "top",
+      "grammarKey": "CEFRJ-GRAM-235"
+    },
+    {
+      "sortOrder": 159,
+      "lexical": "business",
+      "grammarKey": "CEFRJ-GRAM-59-2"
+    },
+    {
+      "sortOrder": 160,
+      "lexical": "care",
+      "grammarKey": "CEFRJ-GRAM-150"
+    },
+    {
+      "sortOrder": 161,
+      "lexical": "music",
+      "grammarKey": "CEFRJ-GRAM-174"
+    },
+    {
+      "sortOrder": 162,
+      "lexical": "head",
+      "grammarKey": "CEFRJ-GRAM-179"
+    },
+    {
+      "sortOrder": 163,
+      "lexical": "white",
+      "grammarKey": "CEFRJ-GRAM-246"
+    },
+    {
+      "sortOrder": 164,
+      "lexical": "line",
+      "grammarKey": "CEFRJ-GRAM-55"
+    },
+    {
+      "sortOrder": 165,
+      "lexical": "order",
+      "grammarKey": "CEFRJ-GRAM-59-1"
+    },
+    {
+      "sortOrder": 166,
+      "lexical": "party",
+      "grammarKey": "CEFRJ-GRAM-61"
+    },
+    {
+      "sortOrder": 167,
+      "lexical": "black",
+      "grammarKey": "CEFRJ-GRAM-101"
+    },
+    {
+      "sortOrder": 168,
+      "lexical": "war",
+      "grammarKey": "CEFRJ-GRAM-32"
+    }
+  ],
+  "packets": [
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w01",
+      "sortOrder": 149,
+      "lessonKey": "EN-A1-L-0149",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0149.spec.json",
+      "provisionalSpecHash": "678a2cb9a404120981fd3cc0ed159092d47d05754fa013f6df42ed307540c85f",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w01/0149/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0149/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w02",
+      "sortOrder": 150,
+      "lessonKey": "EN-A1-L-0150",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0150.spec.json",
+      "provisionalSpecHash": "6d3e4745afeded99a9de28362666261db2fd39d5fbf8a9e0418578ea3f27b739",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w02/0150/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0150/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w03",
+      "sortOrder": 151,
+      "lessonKey": "EN-A1-L-0151",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0151.spec.json",
+      "provisionalSpecHash": "10378547bf01da6b5c22f11756dd612bc6f3c2242eea756bced2524befe082d7",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w03/0151/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0151/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w04",
+      "sortOrder": 152,
+      "lessonKey": "EN-A1-L-0152",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0152.spec.json",
+      "provisionalSpecHash": "ad119db7528d8b025ef8aedd15904dee58619117693aea6753d6b3ab0f7dbb76",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w04/0152/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0152/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w05",
+      "sortOrder": 153,
+      "lessonKey": "EN-A1-L-0153",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0153.spec.json",
+      "provisionalSpecHash": "61df42680558e8b07ceb707c307c92b7f3753b9aa222d9617f68f782fff7a331",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w05/0153/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0153/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w06",
+      "sortOrder": 154,
+      "lessonKey": "EN-A1-L-0154",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0154.spec.json",
+      "provisionalSpecHash": "1d461cc204e862da1d57ca2f13ff1de3dc0ac581aefbfbdbc238f5ffed477038",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w06/0154/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0154/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w07",
+      "sortOrder": 155,
+      "lessonKey": "EN-A1-L-0155",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0155.spec.json",
+      "provisionalSpecHash": "2cc57654840f9f69f5e6367d8d0174cdf1cdb692d6c1249ca1d6fdcc6ddf0f25",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w07/0155/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0155/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w08",
+      "sortOrder": 156,
+      "lessonKey": "EN-A1-L-0156",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0156.spec.json",
+      "provisionalSpecHash": "8ce5c82e351a554dd2a977c1444fbf5058b922eadc9d5418109337a8ff1d3088",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w08/0156/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0156/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w09",
+      "sortOrder": 157,
+      "lessonKey": "EN-A1-L-0157",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0157.spec.json",
+      "provisionalSpecHash": "d57df7315b5d1961e6aee5872ea33d0e43ddb93134c1ea0de681f696f5c66e27",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w09/0157/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0157/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w10",
+      "sortOrder": 158,
+      "lessonKey": "EN-A1-L-0158",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0158.spec.json",
+      "provisionalSpecHash": "f500e3ae6fd8e276f761bd2b8b8505c9b5e3a79efd417de28b68b5271870be5f",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w10/0158/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0158/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w11",
+      "sortOrder": 159,
+      "lessonKey": "EN-A1-L-0159",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0159.spec.json",
+      "provisionalSpecHash": "8759e8616c079359580b42eb35734c87e5c4998ebdf1201ef8d3eae14b6dddd2",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w11/0159/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0159/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w12",
+      "sortOrder": 160,
+      "lessonKey": "EN-A1-L-0160",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0160.spec.json",
+      "provisionalSpecHash": "593f19a2ae2a94b68e81df93675b180b5f5d823fdaf78ac92a7507a03eed7d73",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w12/0160/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0160/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w13",
+      "sortOrder": 161,
+      "lessonKey": "EN-A1-L-0161",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0161.spec.json",
+      "provisionalSpecHash": "83c216be0a676d9269b906111a4e294accf8ab36678a99824e0f581963c8a99d",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w13/0161/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0161/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w14",
+      "sortOrder": 162,
+      "lessonKey": "EN-A1-L-0162",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0162.spec.json",
+      "provisionalSpecHash": "ed50b213ce5cf2fe06048398107c46b157c49dfcb6f73da2671619aba1738358",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w14/0162/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0162/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w15",
+      "sortOrder": 163,
+      "lessonKey": "EN-A1-L-0163",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0163.spec.json",
+      "provisionalSpecHash": "9908d3d612eb7def0fef95746e68cc7e08c3b664d1019234034a09805524644d",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w15/0163/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0163/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w16",
+      "sortOrder": 164,
+      "lessonKey": "EN-A1-L-0164",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0164.spec.json",
+      "provisionalSpecHash": "0aad32bc058ea9b0aeb03061612f13e3849488a26d6ef221f3a37b37f0cdbf43",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w16/0164/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0164/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w17",
+      "sortOrder": 165,
+      "lessonKey": "EN-A1-L-0165",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0165.spec.json",
+      "provisionalSpecHash": "a61fa4b36c7bbdfee990f6f749e060e10053aceb67295d006869d114d57c7409",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w17/0165/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0165/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w18",
+      "sortOrder": 166,
+      "lessonKey": "EN-A1-L-0166",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0166.spec.json",
+      "provisionalSpecHash": "fd4a74751104a009dcdfb7ab3be2941a75ed24e9615b7aa3cb41602dcb8f2cbb",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w18/0166/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0166/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w19",
+      "sortOrder": 167,
+      "lessonKey": "EN-A1-L-0167",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0167.spec.json",
+      "provisionalSpecHash": "04ac029d6dfde64de81fb43dce216187740c2ae1342a36306f18c92206e089c1",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w19/0167/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0167/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "waveKey": "en-fa-A1-0149-0168",
+      "workerId": "w20",
+      "sortOrder": 168,
+      "lessonKey": "EN-A1-L-0168",
+      "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0168.spec.json",
+      "provisionalSpecHash": "ac7bc321e43d8d00603242bfd1f37ab706e0d7d4beb58a1e1f587e39a4853b7f",
+      "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w20/0168/lesson.source.json",
+      "canonicalPath": "nova/courses/en-fa/lessons/0168/lesson.source.json",
+      "authoringMode": "parallel-draft-open-corpus-verbatim",
+      "rules": [
+        "Write only the stagingPath; never write canonical Lesson files from a worker.",
+        "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+        "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+        "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+        "Do not generate paid audio during worker authoring.",
+        "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+        "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+        "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+      ]
+    }
+  ],
+  "status": "PLANNED",
+  "authoringMode": "open-corpus-verbatim-first",
+  "openCorpus": {
+    "manifestPath": "nova/reference/en-fa/dialogue/manifest.json",
+    "sourceFingerprint": "433a27437faea30dd4c0c606496d23d98d8cee813cb3b52baf9bb9c0875fbb0a",
+    "candidateCountPerLesson": 6,
+    "allowShareAlike": true,
+    "sourceBackedEnglishRequired": true,
+    "packetReservations": [
+      {
+        "sortOrder": 149,
+        "preferredCandidateKey": "schema-guided-dialogue:dev:10_00120",
+        "candidateKeys": [
+          "schema-guided-dialogue:dev:10_00120",
+          "schema-guided-dialogue:train:107_00061",
+          "schema-guided-dialogue:dev:10_00124",
+          "schema-guided-dialogue:train:65_00040",
+          "schema-guided-dialogue:train:64_00126",
+          "schema-guided-dialogue:train:64_00083"
+        ],
+        "specHash": "678a2cb9a404120981fd3cc0ed159092d47d05754fa013f6df42ed307540c85f"
+      },
+      {
+        "sortOrder": 150,
+        "preferredCandidateKey": "schema-guided-dialogue:dev:18_00067",
+        "candidateKeys": [
+          "schema-guided-dialogue:dev:18_00067",
+          "schema-guided-dialogue:train:107_00033",
+          "schema-guided-dialogue:train:65_00029",
+          "schema-guided-dialogue:train:65_00018",
+          "schema-guided-dialogue:dev:18_00058",
+          "schema-guided-dialogue:train:64_00095"
+        ],
+        "specHash": "6d3e4745afeded99a9de28362666261db2fd39d5fbf8a9e0418578ea3f27b739"
+      },
+      {
+        "sortOrder": 151,
+        "preferredCandidateKey": "schema-guided-dialogue:train:65_00010",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:65_00010",
+          "schema-guided-dialogue:train:2_00089",
+          "schema-guided-dialogue:train:3_00006",
+          "schema-guided-dialogue:train:68_00111",
+          "schema-guided-dialogue:train:68_00119",
+          "schema-guided-dialogue:train:69_00005"
+        ],
+        "specHash": "10378547bf01da6b5c22f11756dd612bc6f3c2242eea756bced2524befe082d7"
+      },
+      {
+        "sortOrder": 152,
+        "preferredCandidateKey": "schema-guided-dialogue:dev:10_00068",
+        "candidateKeys": [
+          "schema-guided-dialogue:dev:10_00068",
+          "schema-guided-dialogue:train:106_00083",
+          "schema-guided-dialogue:train:126_00060",
+          "schema-guided-dialogue:train:126_00103",
+          "schema-guided-dialogue:train:65_00060",
+          "schema-guided-dialogue:train:65_00087"
+        ],
+        "specHash": "ad119db7528d8b025ef8aedd15904dee58619117693aea6753d6b3ab0f7dbb76"
+      },
+      {
+        "sortOrder": 153,
+        "preferredCandidateKey": "schema-guided-dialogue:train:21_00024",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:21_00024",
+          "schema-guided-dialogue:train:21_00056",
+          "schema-guided-dialogue:test:14_00028",
+          "schema-guided-dialogue:train:69_00094",
+          "schema-guided-dialogue:test:10_00042",
+          "schema-guided-dialogue:train:69_00114"
+        ],
+        "specHash": "61df42680558e8b07ceb707c307c92b7f3753b9aa222d9617f68f782fff7a331"
+      },
+      {
+        "sortOrder": 154,
+        "preferredCandidateKey": "schema-guided-dialogue:train:106_00115",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:106_00115",
+          "schema-guided-dialogue:train:126_00012",
+          "schema-guided-dialogue:train:69_00055",
+          "schema-guided-dialogue:train:81_00075",
+          "schema-guided-dialogue:train:69_00012",
+          "schema-guided-dialogue:train:69_00091"
+        ],
+        "specHash": "1d461cc204e862da1d57ca2f13ff1de3dc0ac581aefbfbdbc238f5ffed477038"
+      },
+      {
+        "sortOrder": 155,
+        "preferredCandidateKey": "schema-guided-dialogue:test:10_00012",
+        "candidateKeys": [
+          "schema-guided-dialogue:test:10_00012",
+          "schema-guided-dialogue:train:51_00035",
+          "schema-guided-dialogue:train:6_00091",
+          "schema-guided-dialogue:train:69_00017",
+          "schema-guided-dialogue:train:69_00044",
+          "schema-guided-dialogue:dev:16_00115"
+        ],
+        "specHash": "2cc57654840f9f69f5e6367d8d0174cdf1cdb692d6c1249ca1d6fdcc6ddf0f25"
+      },
+      {
+        "sortOrder": 156,
+        "preferredCandidateKey": "schema-guided-dialogue:train:69_00002",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:69_00002",
+          "schema-guided-dialogue:dev:10_00011",
+          "schema-guided-dialogue:train:126_00083",
+          "schema-guided-dialogue:dev:10_00033",
+          "schema-guided-dialogue:dev:10_00037",
+          "schema-guided-dialogue:train:107_00053"
+        ],
+        "specHash": "8ce5c82e351a554dd2a977c1444fbf5058b922eadc9d5418109337a8ff1d3088"
+      },
+      {
+        "sortOrder": 157,
+        "preferredCandidateKey": "schema-guided-dialogue:train:64_00085",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:64_00085",
+          "schema-guided-dialogue:train:107_00070",
+          "schema-guided-dialogue:dev:10_00121",
+          "schema-guided-dialogue:train:65_00022",
+          "schema-guided-dialogue:dev:10_00127",
+          "schema-guided-dialogue:train:64_00121"
+        ],
+        "specHash": "d57df7315b5d1961e6aee5872ea33d0e43ddb93134c1ea0de681f696f5c66e27"
+      },
+      {
+        "sortOrder": 158,
+        "preferredCandidateKey": "schema-guided-dialogue:train:107_00074",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:107_00074",
+          "schema-guided-dialogue:train:65_00033",
+          "schema-guided-dialogue:train:64_00117",
+          "schema-guided-dialogue:train:64_00097",
+          "schema-guided-dialogue:train:64_00107",
+          "schema-guided-dialogue:train:107_00096"
+        ],
+        "specHash": "f500e3ae6fd8e276f761bd2b8b8505c9b5e3a79efd417de28b68b5271870be5f"
+      },
+      {
+        "sortOrder": 159,
+        "preferredCandidateKey": "schema-guided-dialogue:dev:10_00106",
+        "candidateKeys": [
+          "schema-guided-dialogue:dev:10_00106",
+          "schema-guided-dialogue:train:64_00077",
+          "schema-guided-dialogue:train:65_00036",
+          "schema-guided-dialogue:train:64_00103",
+          "schema-guided-dialogue:test:14_00123",
+          "schema-guided-dialogue:train:64_00120"
+        ],
+        "specHash": "8759e8616c079359580b42eb35734c87e5c4998ebdf1201ef8d3eae14b6dddd2"
+      },
+      {
+        "sortOrder": 160,
+        "preferredCandidateKey": "schema-guided-dialogue:train:107_00079",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:107_00079",
+          "schema-guided-dialogue:train:107_00062",
+          "schema-guided-dialogue:train:64_00127",
+          "schema-guided-dialogue:dev:11_00000",
+          "schema-guided-dialogue:train:64_00093",
+          "schema-guided-dialogue:test:32_00078"
+        ],
+        "specHash": "593f19a2ae2a94b68e81df93675b180b5f5d823fdaf78ac92a7507a03eed7d73"
+      },
+      {
+        "sortOrder": 161,
+        "preferredCandidateKey": "schema-guided-dialogue:train:107_00048",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:107_00048",
+          "schema-guided-dialogue:dev:10_00109",
+          "schema-guided-dialogue:test:32_00032",
+          "schema-guided-dialogue:train:65_00052",
+          "schema-guided-dialogue:train:64_00102",
+          "schema-guided-dialogue:test:14_00104"
+        ],
+        "specHash": "83c216be0a676d9269b906111a4e294accf8ab36678a99824e0f581963c8a99d"
+      },
+      {
+        "sortOrder": 162,
+        "preferredCandidateKey": "schema-guided-dialogue:train:113_00125",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:113_00125",
+          "schema-guided-dialogue:train:69_00062",
+          "schema-guided-dialogue:train:65_00109",
+          "schema-guided-dialogue:train:20_00116",
+          "schema-guided-dialogue:train:69_00082",
+          "schema-guided-dialogue:train:69_00097"
+        ],
+        "specHash": "ed50b213ce5cf2fe06048398107c46b157c49dfcb6f73da2671619aba1738358"
+      },
+      {
+        "sortOrder": 163,
+        "preferredCandidateKey": "schema-guided-dialogue:train:113_00114",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:113_00114",
+          "schema-guided-dialogue:train:2_00100",
+          "schema-guided-dialogue:train:2_00102",
+          "schema-guided-dialogue:train:20_00082",
+          "schema-guided-dialogue:train:20_00103",
+          "schema-guided-dialogue:train:65_00089"
+        ],
+        "specHash": "9908d3d612eb7def0fef95746e68cc7e08c3b664d1019234034a09805524644d"
+      },
+      {
+        "sortOrder": 164,
+        "preferredCandidateKey": "schema-guided-dialogue:train:69_00101",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:69_00101",
+          "schema-guided-dialogue:train:20_00020",
+          "schema-guided-dialogue:train:21_00048",
+          "schema-guided-dialogue:train:2_00109",
+          "schema-guided-dialogue:train:65_00099",
+          "schema-guided-dialogue:dev:10_00013"
+        ],
+        "specHash": "0aad32bc058ea9b0aeb03061612f13e3849488a26d6ef221f3a37b37f0cdbf43"
+      },
+      {
+        "sortOrder": 165,
+        "preferredCandidateKey": "schema-guided-dialogue:train:100_00024",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:100_00024",
+          "schema-guided-dialogue:train:113_00109",
+          "schema-guided-dialogue:train:65_00068",
+          "schema-guided-dialogue:train:20_00036",
+          "schema-guided-dialogue:train:65_00105",
+          "schema-guided-dialogue:train:69_00040"
+        ],
+        "specHash": "a61fa4b36c7bbdfee990f6f749e060e10053aceb67295d006869d114d57c7409"
+      },
+      {
+        "sortOrder": 166,
+        "preferredCandidateKey": "schema-guided-dialogue:train:21_00063",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:21_00063",
+          "schema-guided-dialogue:train:69_00051",
+          "schema-guided-dialogue:dev:10_00034",
+          "schema-guided-dialogue:train:20_00048",
+          "schema-guided-dialogue:train:2_00115",
+          "schema-guided-dialogue:train:65_00066"
+        ],
+        "specHash": "fd4a74751104a009dcdfb7ab3be2941a75ed24e9615b7aa3cb41602dcb8f2cbb"
+      },
+      {
+        "sortOrder": 167,
+        "preferredCandidateKey": "schema-guided-dialogue:train:20_00025",
+        "candidateKeys": [
+          "schema-guided-dialogue:train:20_00025",
+          "schema-guided-dialogue:train:20_00016",
+          "schema-guided-dialogue:test:10_00013",
+          "schema-guided-dialogue:train:20_00101",
+          "schema-guided-dialogue:train:21_00002",
+          "schema-guided-dialogue:train:65_00110"
+        ],
+        "specHash": "04ac029d6dfde64de81fb43dce216187740c2ae1342a36306f18c92206e089c1"
+      },
+      {
+        "sortOrder": 168,
+        "preferredCandidateKey": "schema-guided-dialogue:test:10_00044",
+        "candidateKeys": [
+          "schema-guided-dialogue:test:10_00044",
+          "schema-guided-dialogue:train:65_00082",
+          "schema-guided-dialogue:train:65_00093",
+          "schema-guided-dialogue:train:115_00048",
+          "schema-guided-dialogue:train:20_00083",
+          "schema-guided-dialogue:test:10_00086"
+        ],
+        "specHash": "ac7bc321e43d8d00603242bfd1f37ab706e0d7d4beb58a1e1f587e39a4853b7f"
+      }
+    ]
+  }
+}

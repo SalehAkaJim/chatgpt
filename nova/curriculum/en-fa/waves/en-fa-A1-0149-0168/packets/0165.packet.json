@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "waveKey": "en-fa-A1-0149-0168",
+  "workerId": "w17",
+  "sortOrder": 165,
+  "lessonKey": "EN-A1-L-0165",
+  "provisionalSpecPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/packets/0165.spec.json",
+  "provisionalSpecHash": "a61fa4b36c7bbdfee990f6f749e060e10053aceb67295d006869d114d57c7409",
+  "stagingPath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0168/workers/w17/0165/lesson.source.json",
+  "canonicalPath": "nova/courses/en-fa/lessons/0165/lesson.source.json",
+  "authoringMode": "parallel-draft-open-corpus-verbatim",
+  "rules": [
+    "Write only the stagingPath; never write canonical Lesson files from a worker.",
+    "Treat the packet spec as provisional. The Integration Writer rechecks the live canonical spec in order.",
+    "Keep learner role and story participants variable; do not mechanically repeat the immediately previous cast.",
+    "Do not invent lexical/reference evidence. Use only candidates/evidence allowed by the packet.",
+    "Do not generate paid audio during worker authoring.",
+    "Use the packet's openCorpusAuthoring candidate material for learner-visible English dialogue; do not independently invent dialogue wording.",
+    "Copy chosen source turn text exactly and preserve open-corpus provenance in lesson.metadata.openCorpus.",
+    "Prefer preferredCandidateKey; use another listed candidate only when it fits the provisional/live Lesson constraints better."
+  ]
+}
