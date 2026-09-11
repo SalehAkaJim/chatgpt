@@ -30,9 +30,7 @@
       "metadata": {
         "nameFa": "مایا",
         "debutLessonKey": "EN-A1-L-0001",
-        "stableFacts": {
-          "relationship": "classmate_of_alex"
-        }
+        "stableFacts": {"relationship": "classmate_of_alex"}
       }
     },
     {
@@ -44,9 +42,7 @@
       "metadata": {
         "nameFa": "الکس",
         "debutLessonKey": "EN-A1-L-0001",
-        "stableFacts": {
-          "relationship": "classmate_of_maya"
-        }
+        "stableFacts": {"relationship": "classmate_of_maya"}
       }
     },
     {
@@ -58,9 +54,7 @@
       "metadata": {
         "nameFa": "نورا",
         "debutLessonKey": "EN-A1-L-0002",
-        "stableFacts": {
-          "relationship": "neighbor_of_owen"
-        }
+        "stableFacts": {"relationship": "neighbor_of_owen"}
       }
     },
     {
@@ -72,9 +66,7 @@
       "metadata": {
         "nameFa": "اوون",
         "debutLessonKey": "EN-A1-L-0002",
-        "stableFacts": {
-          "relationship": "neighbor_of_nora"
-        }
+        "stableFacts": {"relationship": "neighbor_of_nora"}
       }
     },
     {
@@ -86,10 +78,7 @@
       "metadata": {
         "nameFa": "آیریس",
         "debutLessonKey": "EN-A1-L-0003",
-        "stableFacts": {
-          "occupation": "community_center_receptionist",
-          "knows": "nina"
-        }
+        "stableFacts": {"occupation": "community_center_receptionist", "knows": "nina"}
       }
     },
     {
@@ -101,9 +90,7 @@
       "metadata": {
         "nameFa": "نینا",
         "debutLessonKey": "EN-A1-L-0003",
-        "stableFacts": {
-          "relationship": "community_center_visitor"
-        }
+        "stableFacts": {"relationship": "community_center_visitor"}
       }
     },
     {
@@ -115,9 +102,7 @@
       "metadata": {
         "nameFa": "لیو",
         "debutLessonKey": "EN-A1-L-0004",
-        "stableFacts": {
-          "occupation": "librarian"
-        }
+        "stableFacts": {"occupation": "librarian"}
       }
     },
     {
@@ -129,9 +114,7 @@
       "metadata": {
         "nameFa": "لیام",
         "debutLessonKey": "EN-A1-L-0004",
-        "stableFacts": {
-          "relationship": "library_visitor"
-        }
+        "stableFacts": {"relationship": "library_visitor"}
       }
     },
     {
@@ -143,10 +126,7 @@
       "metadata": {
         "nameFa": "سارا",
         "debutLessonKey": "EN-A1-L-0005",
-        "stableFacts": {
-          "relationship": "walking_group_member",
-          "country": "Canada"
-        }
+        "stableFacts": {"relationship": "walking_group_member", "country": "Canada"}
       }
     },
     {
@@ -158,10 +138,7 @@
       "metadata": {
         "nameFa": "روبی",
         "debutLessonKey": "EN-A1-L-0005",
-        "stableFacts": {
-          "relationship": "walking_group_member",
-          "country": "Iran"
-        }
+        "stableFacts": {"relationship": "walking_group_member", "country": "Iran"}
       }
     },
     {
@@ -173,9 +150,7 @@
       "metadata": {
         "nameFa": "بن",
         "debutLessonKey": "EN-A1-L-0009",
-        "stableFacts": {
-          "occupation": "cafe_worker"
-        }
+        "stableFacts": {"occupation": "cafe_worker"}
       }
     },
     {
@@ -187,72 +162,38 @@
       "metadata": {
         "nameFa": "آوا",
         "debutLessonKey": "EN-A1-L-0009",
-        "stableFacts": {
-          "relationship": "cafe_customer"
-        }
+        "stableFacts": {"relationship": "cafe_customer"}
       }
     }
   ],
   "narrative": {
-    "version": 2,
+    "version": 3,
     "premiseFa": "هر درس بخشی از زندگی شخصیت های همان موقعیت است. زبان آموز در هر درس نقش یکی از آن شخصیت ها را بازی می کند و داستان ها با فاصله ادامه پیدا می کنند.",
     "rotation": {
       "minimumReturnDistanceLessons": 5,
-      "preferredReturnDistanceLessons": [
-        5,
-        10
-      ],
+      "preferredReturnDistanceLessons": [5, 10],
       "appliesTo": "all_characters_including_learner_and_listening_sources"
     },
+    "expansionPolicy": {
+      "minimumDistinctArcsPerEightLessons": 4,
+      "avoidAdjacentParticipantPairReuse": true,
+      "avoidAdjacentLearnerRoleReuse": true,
+      "newCharactersRequireVerifiedIndependentAudioVoice": true,
+      "note": "Cross-character arcs expand the story universe without inventing unverified ElevenLabs voice IDs."
+    },
     "arcs": [
-      {
-        "arcKey": "EN-A1-CLASSMATES",
-        "titleFa": "همکلاسی ها",
-        "characterKeys": [
-          "alex",
-          "maya"
-        ]
-      },
-      {
-        "arcKey": "EN-A1-NEIGHBORS",
-        "titleFa": "همسایه ها",
-        "characterKeys": [
-          "owen",
-          "nora"
-        ]
-      },
-      {
-        "arcKey": "EN-A1-COMMUNITY",
-        "titleFa": "مرکز محله",
-        "characterKeys": [
-          "nina",
-          "iris"
-        ]
-      },
-      {
-        "arcKey": "EN-A1-LIBRARY",
-        "titleFa": "کتابخانه",
-        "characterKeys": [
-          "liam",
-          "leo"
-        ]
-      },
-      {
-        "arcKey": "EN-A1-WALKING-GROUP",
-        "titleFa": "گروه پیاده روی",
-        "characterKeys": [
-          "ruby",
-          "sara"
-        ]
-      },
-      {
-        "arcKey": "EN-A1-CAFE",
-        "titleFa": "کافه",
-        "characterKeys": [
-          "ava",
-          "ben"
-        ]
-      }
+      {"arcKey": "EN-A1-CLASSMATES", "titleFa": "همکلاسی ها", "characterKeys": ["alex", "maya"]},
+      {"arcKey": "EN-A1-NEIGHBORS", "titleFa": "همسایه ها", "characterKeys": ["owen", "nora"]},
+      {"arcKey": "EN-A1-COMMUNITY", "titleFa": "مرکز محله", "characterKeys": ["nina", "iris"]},
+      {"arcKey": "EN-A1-LIBRARY", "titleFa": "کتابخانه", "characterKeys": ["liam", "leo"]},
+      {"arcKey": "EN-A1-WALKING-GROUP", "titleFa": "گروه پیاده روی", "characterKeys": ["ruby", "sara"]},
+      {"arcKey": "EN-A1-CAFE", "titleFa": "کافه", "characterKeys": ["ava", "ben"]},
+      {"arcKey": "EN-A1-BOOK-CLUB", "titleFa": "باشگاه کتاب", "characterKeys": ["maya", "liam"]},
+      {"arcKey": "EN-A1-COMMUNITY-EVENT", "titleFa": "برنامه محله", "characterKeys": ["nina", "ben"]},
+      {"arcKey": "EN-A1-BUS-STOP", "titleFa": "ایستگاه اتوبوس", "characterKeys": ["ruby", "owen"]},
+      {"arcKey": "EN-A1-STUDY-CAFE", "titleFa": "درس خواندن در کافه", "characterKeys": ["alex", "ava"]},
+      {"arcKey": "EN-A1-LOCAL-MARKET", "titleFa": "بازار محلی", "characterKeys": ["nora", "iris"]},
+      {"arcKey": "EN-A1-WEEKEND-PLAN", "titleFa": "برنامه آخر هفته", "characterKeys": ["sara", "leo"]}
     ],
     "rules": "nova/_assistant/content-system-v1/12_story_continuity.md"
   }
