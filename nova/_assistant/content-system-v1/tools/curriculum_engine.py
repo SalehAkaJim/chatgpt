@@ -17,6 +17,14 @@ from language_reference_catalog import LanguageReferenceCatalog
 from reference_data import normalize_lemma
 
 POSSESSIVE_DETERMINERS = {"my", "our", "your", "her", "their"}
+PRESENT_BE = {"am", "is", "are"}
+IMPERATIVE_SECOND_TOKENS = {"a", "an", "the", "me", "him", "her", "us", "them", "it", "this", "that"}
+IMPERATIVE_BLOCKED_FIRST = {
+    "i", "you", "he", "she", "it", "we", "they", "this", "that", "these", "those",
+    "a", "an", "the", "there", "what", "where", "who", "when", "why", "how",
+    "am", "is", "are", "do", "does", "have", "has", "can", "could", "will", "would",
+    "yes", "no",
+}
 SURFACE_LEMMA = {
     "am": "be", "is": "be", "are": "be", "was": "be", "were": "be",
     "has": "have", "had": "have", "does": "do", "did": "do",
@@ -82,6 +90,33 @@ def _record_grammar(grammar_history: dict[str, dict], match: dict, order: int, e
     record["maxMatchScore"] = max(float(record.get("maxMatchScore") or 0), float(match.get("matchScore") or 0))
 
 
+def _third_person_surface_matches(tokens: list[str], lesson_verbs: set[str]) -> bool:
+    if len(tokens) < 2 or tokens[0] not in {"he", "she", "it"}:
+        return False
+    surface = tokens[1]
+    for verb in lesson_verbs:
+        if surface == verb:
+            continue
+        candidates = {verb + "s", verb + "es"}
+        if verb.endswith("y") and len(verb) > 1 and verb[-2] not in "aeiou":
+            candidates.add(verb[:-1] + "ies")
+        if surface in candidates:
+            return True
+    return False
+
+
+def _looks_like_affirmative_imperative(tokens: list[str], *, is_question: bool, is_negative: bool) -> bool:
+    if not tokens or is_question or is_negative:
+        return False
+    first = tokens[0]
+    if first in IMPERATIVE_BLOCKED_FIRST:
+        return False
+    # Keep this deliberately conservative. Most A1 imperatives in the course are
+    # a bare lexical verb followed by a determiner/object pronoun: Ask the student,
+    # Bring the form, Call me, etc. One-word imperatives are also valid.
+    return len(tokens) == 1 or (len(tokens) >= 2 and tokens[1] in IMPERATIVE_SECOND_TOKENS)
+
+
 def _special_surface_matches(
     catalog: LanguageReferenceCatalog,
     *,
@@ -89,7 +124,12 @@ def _special_surface_matches(
     text: str,
     lesson_verbs: set[str],
 ) -> list[dict]:
-    """Match CEFR-J meta-label grammar records against actual learner language."""
+    """Match CEFR-J meta-label grammar records against actual learner language.
+
+    CEFR-J contains useful meta labels whose wording does not share literal tokens
+    with learner-facing English (for example PRESENT (BE) vs `This is ...`). These
+    deterministic surface patterns bridge that gap without trusting Lesson metadata.
+    """
     normalized = catalog.normalized_grammar_text(text)
     tokens = normalized.split()
     if not tokens:
@@ -98,6 +138,7 @@ def _special_surface_matches(
     is_negative = "not" in tokens
     first = tokens[0]
     token_set = set(tokens)
+    has_present_be = bool(token_set & PRESENT_BE)
     matches = []
 
     for item in catalog.grammar_items(level):
@@ -108,12 +149,41 @@ def _special_surface_matches(
             matched = bool(token_set & POSSESSIVE_DETERMINERS)
         elif code == "INT.what":
             matched = is_question and first == "what"
+        elif code == "INT.how_JJ.RB":
+            matched = is_question and first == "how" and len(tokens) >= 3
         elif code == "MD.can.INT.AFF":
             matched = is_question and first == "can" and not is_negative
         elif code == "MD.can.AFF":
             matched = (not is_question) and "can" in token_set and not is_negative
+        elif code == "TA.PRESENT.be.AFF":
+            matched = (not is_question) and (not is_negative) and has_present_be
+        elif code == "TA.PRESENT.be.INT.AFF":
+            matched = is_question and (not is_negative) and first in PRESENT_BE
+        elif code == "TA.PRESENT.be.NEG":
+            matched = (not is_question) and is_negative and has_present_be
         elif code == "TA.PRESENT.do.AFF":
             matched = (not is_question) and not is_negative and bool(token_set & lesson_verbs)
+        elif code == "TA.PRESENT.does.AFF":
+            matched = (not is_question) and (not is_negative) and _third_person_surface_matches(tokens, lesson_verbs)
+        elif code == "EX.there.AFF":
+            matched = (
+                (not is_question)
+                and (not is_negative)
+                and len(tokens) >= 2
+                and tokens[0] == "there"
+                and tokens[1] in PRESENT_BE
+            )
+        elif code == "VG":
+            matched = any(
+                token.endswith("ing") and (index == 0 or tokens[index - 1] != "not")
+                for index, token in enumerate(tokens)
+            )
+        elif code == "IMP.V.AFF":
+            matched = _looks_like_affirmative_imperative(
+                tokens,
+                is_question=is_question,
+                is_negative=is_negative,
+            )
         elif code == "DT.is_this.that":
             matched = is_question and len(tokens) >= 2 and tokens[0] == "is" and tokens[1] in {"this", "that"}
         elif code == "DT.this.that_is":
