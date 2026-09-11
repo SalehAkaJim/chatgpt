@@ -216,6 +216,23 @@ def plan_wave(root: Path, config_path: Path, workspace: Path, workers: int) -> P
     return manifest_path
 
 
+def enrich_planned_wave_from_config(*, root: Path, manifest_path: Path, config: dict) -> dict:
+    """Apply source-backed dialogue authoring when production config enables it."""
+    if not config.get("openCorpusAuthoring", False):
+        return load(manifest_path)
+
+    from open_corpus_wave import enrich_wave
+
+    candidate_count = max(1, int(config.get("openCorpusCandidateCount", 6)))
+    allow_sharealike = bool(config.get("openCorpusAllowShareAlike", True))
+    return enrich_wave(
+        root=root,
+        manifest_path=manifest_path,
+        candidate_count=candidate_count,
+        allow_sharealike=allow_sharealike,
+    )
+
+
 def staged_paths(root: Path, manifest: dict) -> list[tuple[dict, Path]]:
     result = []
     for packet in manifest.get("packets", []):
@@ -438,7 +455,13 @@ def main() -> int:
         workspace = args.workspace_dir if args.workspace_dir.is_absolute() else root / args.workspace_dir
         workers = args.workers or int(config.get("waveSize", MAX_WORKERS))
         path = plan_wave(root, config_path, workspace, workers)
-        print(json.dumps({"status": "PLANNED", "wave": rel_or_abs(path, root)}, ensure_ascii=False))
+        manifest = enrich_planned_wave_from_config(root=root, manifest_path=path, config=config)
+        print(json.dumps({
+            "status": "PLANNED",
+            "wave": rel_or_abs(path, root),
+            "authoringMode": manifest.get("authoringMode", "parallel-draft"),
+            "workerCount": manifest.get("workerCount", workers),
+        }, ensure_ascii=False))
         return 0
 
     manifest_path = args.wave if args.wave.is_absolute() else root / args.wave
