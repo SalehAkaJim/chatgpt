@@ -5,7 +5,31 @@ import tempfile
 import unittest
 from pathlib import Path
 
+import curriculum_engine
 import factory_wave
+
+
+class _PatternCatalog:
+    def __init__(self):
+        self._items = [
+            {"grammarKey": "CEFRJ-GRAM-58", "shorthandCode": "TA.PRESENT.be.AFF", "grammaticalItem": "PRESENT BE"},
+            {"grammarKey": "CEFRJ-GRAM-58-2", "shorthandCode": "TA.PRESENT.be.INT.AFF", "grammaticalItem": "PRESENT BE QUESTION"},
+            {"grammarKey": "CEFRJ-GRAM-58-1", "shorthandCode": "TA.PRESENT.be.NEG", "grammaticalItem": "PRESENT BE NEGATIVE"},
+            {"grammarKey": "CEFRJ-GRAM-60", "shorthandCode": "TA.PRESENT.does.AFF", "grammaticalItem": "PRESENT THIRD PERSON"},
+            {"grammarKey": "CEFRJ-GRAM-247", "shorthandCode": "INT.how_JJ.RB", "grammaticalItem": "HOW ADJ ADV"},
+            {"grammarKey": "CEFRJ-GRAM-146", "shorthandCode": "EX.there.AFF", "grammaticalItem": "THERE BE"},
+            {"grammarKey": "CEFRJ-GRAM-105", "shorthandCode": "VG", "grammaticalItem": "V ING"},
+            {"grammarKey": "CEFRJ-GRAM-117", "shorthandCode": "IMP.V.AFF", "grammaticalItem": "IMPERATIVE"},
+        ]
+
+    def grammar_items(self, level):
+        return self._items
+
+    @staticmethod
+    def normalized_grammar_text(text):
+        return " ".join(
+            text.lower().replace("?", "").replace(".", "").replace(",", "").split()
+        )
 
 
 class FactoryWaveScalingTests(unittest.TestCase):
@@ -70,6 +94,31 @@ class FactoryWaveScalingTests(unittest.TestCase):
         self.assertEqual(len(state["knownLexical"]), 50)
         self.assertEqual(len(state["introducedGrammar"]), 50)
         self.assertEqual(len(state["lessonHistory"]), 50)
+
+    def test_reserved_a1_grammar_patterns_are_detected_from_real_surfaces(self):
+        catalog = _PatternCatalog()
+        cases = [
+            ("This is an example.", set(), "CEFRJ-GRAM-58"),
+            ("Is it a game?", set(), "CEFRJ-GRAM-58-2"),
+            ("That is not our team.", set(), "CEFRJ-GRAM-58-1"),
+            ("He hears the music too.", {"hear"}, "CEFRJ-GRAM-60"),
+            ("How big is the world?", set(), "CEFRJ-GRAM-247"),
+            ("There is a new word.", set(), "CEFRJ-GRAM-146"),
+            ("Someone is waiting outside.", set(), "CEFRJ-GRAM-105"),
+            ("Ask the student.", set(), "CEFRJ-GRAM-117"),
+        ]
+        for text, lesson_verbs, expected in cases:
+            with self.subTest(text=text):
+                keys = {
+                    row["grammarKey"]
+                    for row in curriculum_engine._special_surface_matches(
+                        catalog,
+                        level="A1",
+                        text=text,
+                        lesson_verbs=lesson_verbs,
+                    )
+                }
+                self.assertIn(expected, keys)
 
     def test_still_eligible_provisional_grammar_survives_top_n_ranking_drift(self):
         lesson = {
