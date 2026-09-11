@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import unittest
 
+from build_lesson_language_plans import _compatible_fallback
 from reference_data import (
     build_cefr_indexes,
     canonical_reference_level,
@@ -99,6 +100,19 @@ class ReferenceDataTests(unittest.TestCase):
         rows = parse_grammar_csv(text)
         self.assertEqual(rows[0]["cefr"], "A1")
         self.assertEqual(rows[0]["shorthandCode"], "PP.I_am")
+
+    def test_collocation_fallback_accepts_meaningful_core_inside_noisy_window(self):
+        fallbacks = {
+            "this is an example": {"query": "This is an example", "rationale": "Natural target use."},
+            "it is another example": {"query": "It is another example", "rationale": "Natural transfer use."},
+        }
+        fallback, matched_query = _compatible_fallback("one an example too", fallbacks)
+        self.assertIsNotNone(fallback)
+        self.assertEqual(matched_query, "this is an example")
+
+        missing, missing_query = _compatible_fallback("one a question too", fallbacks)
+        self.assertIsNone(missing)
+        self.assertIsNone(missing_query)
 
 
 if __name__ == "__main__":
