@@ -2,6 +2,6 @@
   "schemaVersion": 1,
   "courseCode": "en-fa",
   "requestedCanonicalPrefix": 156,
-  "canonicalCommit": "54e15587456cba2c0f236db03f5a36975341547a",
-  "reason": "Start Nova production with the current validated pipeline: integrate the ready staged wave 149-156, run full text/reference/story/product-quality regression, build/reuse audio, validate MySQL runtime, then plan the next 20-Lesson open-corpus authoring wave with a maximum parallel capacity of 50. Scheduled production is enabled every six hours."
+  "canonicalCommit": "dc4c59bcb7c3c05072009f47b1f6f43c4e9b6dd2",
+  "reason": "Retry Nova production after fixing false target-collocation fallback failures in the language-plan matcher and adding regression coverage. Integrate the ready staged wave 149-156, run full text/reference/story/product-quality regression, build/reuse audio, validate MySQL runtime, then plan the next 20-Lesson open-corpus authoring wave."
 }
