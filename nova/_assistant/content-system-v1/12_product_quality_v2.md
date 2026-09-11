@@ -14,6 +14,7 @@ Allowed `metadata.lessonArchetype` values:
 - `review_recombination` — recombine earlier language and retrieve due items.
 - `listening_focus` — listening carries the main information gap; transcript is hidden before attempt.
 - `functional_exchange` — a practical communicative function such as asking, choosing, confirming, requesting or describing.
+- `pronunciation_focus` — an explicit listen/contrast/produce Lesson for a high-value pronunciation difficulty, not a generic TTS replay slot.
 
 A full wave must include at least two grammar-focused Lessons and at least one `review_recombination` Lesson. Variation must change the learner's cognitive job, not merely reorder identical multiple-choice screens.
 
@@ -55,7 +56,7 @@ The Course contains cross-character arcs so future Lessons are not limited to th
 
 A newly introduced target must return in learner production between 3 and 10 Lessons later when enough future Lessons exist.
 
-The legacy 40–84 review backlog remains active until cleared. Review items must actually participate in meaningful recognition, transfer or learner production; metadata-only review does not count.
+The legacy 40–84 review backlog remains active until cleared. Starting with Lesson 149, each complete eight-Lesson wave must reactivate at least eight distinct overdue legacy items while the backlog remains. Review items must actually participate in meaningful recognition, transfer or learner production; metadata-only review does not count. At the current backlog size this targets burn-down within roughly 48 additional Lessons rather than letting old vocabulary debt persist indefinitely.
 
 ## 8. Grammar and communicative progression must keep moving
 
@@ -70,6 +71,8 @@ Final retrieval must still hide the English model before the first attempt.
 ## 10. Pronunciation is part of the course, not just audio playback
 
 Use explicit pronunciation practice when a target exposes a high-value difficulty for Persian speakers, especially `w/v`, `th`, final consonants, consonant clusters, vowel contrasts, word stress and common contractions. Prefer short listen-and-produce or contrast tasks over another duplicate multiple-choice item.
+
+From Lesson 149 onward, every complete 16-Lesson window must contain at least one `pronunciation_focus` Lesson or an explicit `pronunciation` activity. This is a minimum cadence, not a reason to force irrelevant sound drills.
 
 Pronunciation activities are practice/evidence for the sound target; STT is not a phonetic score unless a dedicated pronunciation evaluator exists. Generated TTS pronunciation/prosody still needs perceptual QA.
 
