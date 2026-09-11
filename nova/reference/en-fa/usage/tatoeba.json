@@ -11,9 +11,486 @@
   "queryLimit": 80,
   "circuitOpened": false,
   "queryCount": 80,
-  "evidenceQueryCount": 46,
+  "evidenceQueryCount": 43,
   "unavailableQueryCount": 0,
   "queries": [
+    {
+      "query": "a big group",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0097"
+      ],
+      "lexicalLemmas": [
+        "group"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+big+group%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 7205166,
+          "text": "Sami had a big group of acquaintances.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 10235051,
+          "text": "Ziri was in a big group of people.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 8376783,
+          "text": "Tom is with a big group of people.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8066748,
+          "text": "Tom was with a big group of people.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 7288745,
+          "text": "Sami was with a big group of people.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "a different case",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0101"
+      ],
+      "lexicalLemmas": [
+        "case"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+different+case%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 12954088,
+          "text": "He's in jail for a different case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Conjuice"
+        },
+        {
+          "id": 12464255,
+          "text": "In a different case, the word changes the meaning of the sentence.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 12464256,
+          "text": "Does this verb take the accusative, or does the object need to be expressed in a different case?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 12464257,
+          "text": "Different verbs can have objects in the accusative or a different case (e.g. the dative or the ablative).",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 12464259,
+          "text": "Though these verbs are transitive in Esperanto, in Latin their objects are expressed in a different case than the accusative.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "a good idea",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0136"
+      ],
+      "lexicalLemmas": [
+        "idea"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+good+idea%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 24961,
+          "text": "What a good idea!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "adjusting"
+        },
+        {
+          "id": 14009974,
+          "text": "I have a good idea!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ioan_Cristian"
+        },
+        {
+          "id": 11303586,
+          "text": "She had a good idea.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "carlosalberto"
+        },
+        {
+          "id": 10900387,
+          "text": "Was it a good idea?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 10225529,
+          "text": "Ziri has a good idea.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "a good idea too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0136"
+      ],
+      "lexicalLemmas": [
+        "idea"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+good+idea+too%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "a good place",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0075"
+      ],
+      "lexicalLemmas": [
+        "place"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+good+place%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 11814344,
+          "text": "We found a good place.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 10743206,
+          "text": "I found a good place.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "ddnktr"
+        },
+        {
+          "id": 8579931,
+          "text": "Algiers is a good place.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 5398446,
+          "text": "This is a good place.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 5006228,
+          "text": "Is that a good place?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "a good start",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0099"
+      ],
+      "lexicalLemmas": [
+        "start"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+good+start%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 13753396,
+          "text": "It is a good start.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "qwertydiy"
+        },
+        {
+          "id": 10339461,
+          "text": "Tom made a good start.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        },
+        {
+          "id": 5754606,
+          "text": "It was a good start.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 3820619,
+          "text": "This is a good start.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 3593999,
+          "text": "That's a good start.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "a great big bag",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0058"
+      ],
+      "lexicalLemmas": [
+        "great"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+great+big+bag%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "a long day",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0062"
+      ],
+      "lexicalLemmas": [
+        "long"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+long+day%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 8917055,
+          "text": "What a long day!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 6772255,
+          "text": "That was a long day.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eccles17"
+        },
+        {
+          "id": 6681732,
+          "text": "Tom had a long day.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eccles17"
+        },
+        {
+          "id": 4999997,
+          "text": "It was a long day.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 3331092,
+          "text": "You had a long day.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "a special case",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0101"
+      ],
+      "lexicalLemmas": [
+        "case"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+special+case%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 7837119,
+          "text": "He's a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "shekitten"
+        },
+        {
+          "id": 10684377,
+          "text": "Without a doubt, yours is a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Shujinko"
+        },
+        {
+          "id": 13540805,
+          "text": "Now, imposing such tariffs or trade barriers and restrictions of any kind are steps that I am loath to take. And in a moment I'll mention the sound economic reasons for this: that over the long run such trade barriers hurt every American worker and consumer. But the Japanese semiconductors were a special case.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        }
+      ],
+      "sampleCount": 3,
+      "status": "evidence"
+    },
+    {
+      "query": "a time change",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0105"
+      ],
+      "lexicalLemmas": [
+        "change"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22a+time+change%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "and next month",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0137"
+      ],
+      "lexicalLemmas": [
+        "month"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22and+next+month%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "and next week",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0100"
+      ],
+      "lexicalLemmas": [
+        "week"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22and+next+week%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "and that way",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0047"
+      ],
+      "lexicalLemmas": [
+        "way"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22and+that+way%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 10356466,
+          "text": "Drink the coffee with slow sips so it lasts longer, and that way you can enjoy it more.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 10358562,
+          "text": "He drinks the coffee with slow sips so it lasts longer, and that way he can enjoy it more.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 7964215,
+          "text": "And when he had looked about this way and that way, and saw no one there, he slew the Egyptian and hid him in the sand.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "carlosalberto"
+        },
+        {
+          "id": 10729837,
+          "text": "If we see that Germany is winning the war we ought to help Russia, and if Russia is winning we ought to help Germany, and that way let them kill as many as possible, although I don't want to see Hitler victorious under any circumstances.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ooneykcall"
+        }
+      ],
+      "sampleCount": 4,
+      "status": "evidence"
+    },
+    {
+      "query": "and the guy by the",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0128"
+      ],
+      "lexicalLemmas": [
+        "guy"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22and+the+guy+by+the%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "and this child",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0117"
+      ],
+      "lexicalLemmas": [
+        "child"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22and+this+child%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
     {
       "query": "at seven",
       "kind": "target_collocation",
@@ -116,6 +593,242 @@
       "status": "evidence"
     },
     {
+      "query": "at the end",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0079"
+      ],
+      "lexicalLemmas": [
+        "end"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22at+the+end%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2219896,
+          "text": "Pay at the end, please.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DiePain"
+        },
+        {
+          "id": 13866364,
+          "text": "At the end add some basil.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ioan_Cristian"
+        },
+        {
+          "id": 6586298,
+          "text": "The punchline comes at the end.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eccles17"
+        },
+        {
+          "id": 13813818,
+          "text": "At the end the drago was killed.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ioan_Cristian"
+        },
+        {
+          "id": 7126496,
+          "text": "Tom retired at the end of 2013.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "bring the information",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0148"
+      ],
+      "lexicalLemmas": [
+        "bring"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22bring+the+information%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "busy this week",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0100"
+      ],
+      "lexicalLemmas": [
+        "week"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22busy+this+week%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 10097978,
+          "text": "I'm busy this week.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "DJ_Saidez"
+        },
+        {
+          "id": 10052628,
+          "text": "Yanni is busy this week.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6898400,
+          "text": "Are you busy this week?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 531177,
+          "text": "I was busy this week.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 10890929,
+          "text": "He was very busy this week.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "sundown"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "can go together",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0118"
+      ],
+      "lexicalLemmas": [
+        "together"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+go+together%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2953579,
+          "text": "We can go together.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2953578,
+          "text": "We can go together if you wish.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 10124382,
+          "text": "Let me know when you are leaving. We can go together.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "tsp_2"
+        }
+      ],
+      "sampleCount": 3,
+      "status": "evidence"
+    },
+    {
+      "query": "can walk together too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0118"
+      ],
+      "lexicalLemmas": [
+        "together"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+walk+together+too%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "can we talk now",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0127"
+      ],
+      "lexicalLemmas": [
+        "talk"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+we+talk+now%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 5670752,
+          "text": "Can we talk now?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Airvian"
+        }
+      ],
+      "sampleCount": 1,
+      "status": "evidence"
+    },
+    {
+      "query": "coffee is bad",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0110"
+      ],
+      "lexicalLemmas": [
+        "bad"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22coffee+is+bad%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 12521664,
+          "text": "The coffee is bad.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 6467752,
+          "text": "Coffee is bad for my skin.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eccles17"
+        },
+        {
+          "id": 12237472,
+          "text": "According to this report, coffee is bad for you.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 3,
+      "status": "evidence"
+    },
+    {
+      "query": "color is different",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0095"
+      ],
+      "lexicalLemmas": [
+        "different"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22color+is+different%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
       "query": "do people like coffee",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -125,6 +838,20 @@
         "people"
       ],
       "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+people+like+coffee%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "do you find iris",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0067"
+      ],
+      "lexicalLemmas": [
+        "find"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+find+iris%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
       "sampleCount": 0,
       "status": "no_hit"
@@ -331,6 +1058,56 @@
       "status": "evidence"
     },
     {
+      "query": "do you live",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0106"
+      ],
+      "lexicalLemmas": [
+        "live"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+live%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 6305125,
+          "text": "Why do you live?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Queserasera"
+        },
+        {
+          "id": 5182633,
+          "text": "Do you live nearby?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2923164,
+          "text": "Do you live there?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 697411,
+          "text": "Do you live alone?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Eldad"
+        },
+        {
+          "id": 370708,
+          "text": "Where do you live?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "saeb"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
       "query": "do you make",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -381,6 +1158,99 @@
       "status": "evidence"
     },
     {
+      "query": "do you mean",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0111"
+      ],
+      "lexicalLemmas": [
+        "mean"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+mean%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 10960357,
+          "text": "How do you mean?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 3360597,
+          "text": "Do you mean that?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 3333996,
+          "text": "Do you mean it?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 3333876,
+          "text": "Do you mean us?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2648881,
+          "text": "Who do you mean?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "do you remember it",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0135"
+      ],
+      "lexicalLemmas": [
+        "remember"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+remember+it%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 1222339,
+          "text": "Do you remember it?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        },
+        {
+          "id": 10973819,
+          "text": "Do you remember it fondly?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "nipbud"
+        },
+        {
+          "id": 7305178,
+          "text": "“Do you remember it?” “I think so.”",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "jimkillock"
+        },
+        {
+          "id": 7350009,
+          "text": "\"Do you remember it now?\" \"I think so, I will make an attempt at it, if you will listen to me.\"",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "jimkillock"
+        }
+      ],
+      "sampleCount": 4,
+      "status": "evidence"
+    },
+    {
       "query": "do you think",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -425,6 +1295,70 @@
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "frpzzd"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "does maya say",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0046"
+      ],
+      "lexicalLemmas": [
+        "say"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22does+maya+say%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "door is open",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0116"
+      ],
+      "lexicalLemmas": [
+        "open"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22door+is+open%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 9162118,
+          "text": "Your door is open.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8391141,
+          "text": "The door is opening.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 6196183,
+          "text": "My door is open.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 370647,
+          "text": "The door is open.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "saeb"
+        },
+        {
+          "id": 11693445,
+          "text": "The chamber door is open.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
         }
       ],
       "sampleCount": 5,
@@ -481,6 +1415,207 @@
       "status": "evidence"
     },
     {
+      "query": "free next week",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0100"
+      ],
+      "lexicalLemmas": [
+        "week"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22free+next+week%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 11036487,
+          "text": "When are you free next week?",
+          "lang": "eng",
+          "license": "CC0 1.0",
+          "owner": "shekitten"
+        }
+      ],
+      "sampleCount": 1,
+      "status": "evidence"
+    },
+    {
+      "query": "go to school",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0076"
+      ],
+      "lexicalLemmas": [
+        "school"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22go+to+school%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 21504,
+          "text": "Go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 13249467,
+          "text": "We go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "rul"
+        },
+        {
+          "id": 12894245,
+          "text": "They go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ussis"
+        },
+        {
+          "id": 12316908,
+          "text": "Children go to school.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ergulis"
+        },
+        {
+          "id": 10807782,
+          "text": "Go to school together.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "have a call",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0094"
+      ],
+      "lexicalLemmas": [
+        "call"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22have+a+call%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 11683783,
+          "text": "I have a call.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adelpa"
+        },
+        {
+          "id": 4933168,
+          "text": "Tom, you have a call!",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Adam9812"
+        },
+        {
+          "id": 12276008,
+          "text": "I have a call to make.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 8394488,
+          "text": "We have a call for Skura.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Amastan"
+        },
+        {
+          "id": 5746948,
+          "text": "Do you have a call sign?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CM"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "have the information",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0125"
+      ],
+      "lexicalLemmas": [
+        "information"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22have+the+information%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2360390,
+          "text": "I have the information you wanted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2360389,
+          "text": "I have the information you requested.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 2,
+      "status": "evidence"
+    },
+    {
+      "query": "have the money",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0085"
+      ],
+      "lexicalLemmas": [
+        "money"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22have+the+money%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 2360394,
+          "text": "I have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 12222303,
+          "text": "We'll have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Miktsoanit"
+        },
+        {
+          "id": 10241855,
+          "text": "I already have the money.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "LimeGreenTeknii"
+        },
+        {
+          "id": 5832813,
+          "text": "Do we have the money?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "OsoHombre"
+        },
+        {
+          "id": 2646626,
+          "text": "Do you have the money?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
       "query": "here come back please",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -490,6 +1625,34 @@
         "back"
       ],
       "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22here+come+back+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "i always read here",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0066"
+      ],
+      "lexicalLemmas": [
+        "always"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+always+read+here%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "i can give you tea",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0073"
+      ],
+      "lexicalLemmas": [
+        "give"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+can+give+you+tea%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
       "sampleCount": 0,
       "status": "no_hit"
@@ -543,6 +1706,70 @@
       ],
       "sampleCount": 5,
       "status": "evidence"
+    },
+    {
+      "query": "i feel tired",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0081"
+      ],
+      "lexicalLemmas": [
+        "feel"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+feel+tired%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 1495914,
+          "text": "I feel tired.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 12326688,
+          "text": "I feel tired already.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 9305347,
+          "text": "I feel tired out.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Lillith"
+        },
+        {
+          "id": 3819640,
+          "text": "Now I feel tired.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        },
+        {
+          "id": 2362099,
+          "text": "I feel tired and exhausted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "CK"
+        }
+      ],
+      "sampleCount": 5,
+      "status": "evidence"
+    },
+    {
+      "query": "i find iris at",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0067"
+      ],
+      "lexicalLemmas": [
+        "find"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+find+iris+at%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "i get a book",
@@ -601,7 +1828,7 @@
       "status": "no_hit"
     },
     {
-      "query": "i know this pen",
+      "query": "i know this name",
       "kind": "target_collocation",
       "lessonKeys": [
         "EN-A1-L-0040"
@@ -609,7 +1836,21 @@
       "lexicalLemmas": [
         "know"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+know+this+pen%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+know+this+name%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "i leave at seven",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0088"
+      ],
+      "lexicalLemmas": [
+        "leave"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+leave+at+seven%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
       "sampleCount": 0,
       "status": "no_hit"
@@ -744,7 +1985,7 @@
       "status": "evidence"
     },
     {
-      "query": "i make tea too",
+      "query": "i make tea",
       "kind": "target_collocation",
       "lessonKeys": [
         "EN-A1-L-0041"
@@ -752,60 +1993,152 @@
       "lexicalLemmas": [
         "make"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+make+tea+too%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+make+tea%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [],
       "sampleCount": 0,
       "status": "no_hit"
     },
     {
-      "query": "i think there is",
+      "query": "i need money",
       "kind": "target_collocation",
       "lessonKeys": [
-        "EN-A1-L-0042"
+        "EN-A1-L-0085"
       ],
       "lexicalLemmas": [
-        "think"
+        "money"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+think+there+is%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+need+money%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [
         {
-          "id": 8543312,
-          "text": "I think there is life on Mars.",
+          "id": 2246025,
+          "text": "I needed money.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
+          "owner": "CK"
         },
         {
-          "id": 6841950,
-          "text": "I think there is someone in here.",
+          "id": 436861,
+          "text": "I need money.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "lev4uk_pavel2"
+          "owner": "lukaszpp"
         },
         {
-          "id": 1224950,
-          "text": "I think there is more to this.",
+          "id": 256962,
+          "text": "I need money badly.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "CM"
         },
         {
-          "id": 13374128,
-          "text": "I think there is no need for comment.",
+          "id": 11555272,
+          "text": "Right now, I need money badly.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "Nicat"
+          "owner": "Nuel"
         },
         {
-          "id": 11212551,
-          "text": "I think there is no need for details.",
+          "id": 10052138,
+          "text": "I need money, not a job.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
+          "owner": "maaster"
         }
       ],
       "sampleCount": 5,
       "status": "evidence"
+    },
+    {
+      "query": "i never eat there",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0056"
+      ],
+      "lexicalLemmas": [
+        "never"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+never+eat+there%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "i read well",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0045"
+      ],
+      "lexicalLemmas": [
+        "well"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+read+well%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "i remember the name",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0135"
+      ],
+      "lexicalLemmas": [
+        "remember"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+remember+the+name%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [
+        {
+          "id": 1410239,
+          "text": "Why can't I remember the name of the girl I'm trying to forget?",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "MrShoval"
+        }
+      ],
+      "sampleCount": 1,
+      "status": "evidence"
+    },
+    {
+      "query": "i set the book",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0096"
+      ],
+      "lexicalLemmas": [
+        "set"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+set+the+book%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "i take action",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0054"
+      ],
+      "lexicalLemmas": [
+        "take"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+take+action%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "i use this bag",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0064"
+      ],
+      "lexicalLemmas": [
+        "use"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+use+this+bag%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
       "query": "i want tea",
@@ -837,1485 +2170,47 @@
       "status": "evidence"
     },
     {
-      "query": "is the first room",
+      "query": "in the morning",
       "kind": "target_collocation",
       "lessonKeys": [
-        "EN-A1-L-0039"
+        "EN-A1-L-0142"
       ],
       "lexicalLemmas": [
-        "first"
+        "morning"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+the+first+room%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "is the only new book",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0038"
-      ],
-      "lexicalLemmas": [
-        "only"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+the+only+new+book%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "it's a book",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0006"
-      ],
-      "lexicalLemmas": [
-        "book"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a+book%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22in+the+morning%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [
         {
-          "id": 9473989,
-          "text": "It's a book.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 13984217,
-          "text": "It's a book about him.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "mervert1"
-        },
-        {
-          "id": 9452167,
-          "text": "It's a book on health.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Nuel"
-        },
-        {
-          "id": 5948215,
-          "text": "It's a book of essays.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "mailohilohi"
-        },
-        {
-          "id": 5948214,
-          "text": "It's a book of poetry.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "mailohilohi"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "it's a pen",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0006"
-      ],
-      "lexicalLemmas": [
-        "pen"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a+pen%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 3620812,
-          "text": "It's a pen.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ricardo14"
-        },
-        {
-          "id": 10037817,
-          "text": "That isn't a pencil. It's a pen.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 8503615,
-          "text": "That's not a pencil. It's a pen.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 8502928,
-          "text": "That's not a pencil; it's a pen.",
-          "lang": "eng",
-          "license": "CC0 1.0",
-          "owner": "shekitten"
-        }
-      ],
-      "sampleCount": 4,
-      "status": "evidence"
-    },
-    {
-      "query": "it's at six",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0016"
-      ],
-      "lexicalLemmas": [
-        "at",
-        "six"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+at+six%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "just one book",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0029"
-      ],
-      "lexicalLemmas": [
-        "just"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22just+one+book%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 4362314,
-          "text": "I won't pay 40 dollars for just one book.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "corbinjurgens"
-        }
-      ],
-      "sampleCount": 1,
-      "status": "evidence"
-    },
-    {
-      "query": "no i want water",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0022"
-      ],
-      "lexicalLemmas": [
-        "want"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22no+i+want+water%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "on the table",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0008"
-      ],
-      "lexicalLemmas": [
-        "table"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22on+the+table%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13718454,
-          "text": "What is on the table?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Th0th"
-        },
-        {
-          "id": 13698134,
-          "text": "I sit on the table.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "ddnktr"
-        },
-        {
-          "id": 12891527,
-          "text": "They fell on the table.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ussis"
-        },
-        {
-          "id": 12668497,
-          "text": "Put supper on the table.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "anzart"
-        },
-        {
-          "id": 12343491,
-          "text": "Dinner's on the table.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Miktsoanit"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "one or room two",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "room"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22one+or+room+two%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "only one",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0038"
-      ],
-      "lexicalLemmas": [
-        "only"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22only+one%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 1904289,
-          "text": "Take only one.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 13054183,
-          "text": "There is only one.",
+          "id": 12960121,
+          "text": "Come over in the morning.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "rul"
         },
         {
-          "id": 12678210,
-          "text": "Only one is missing.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "anzart"
-        },
-        {
-          "id": 11938457,
-          "text": "Only one thing counts.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
-        },
-        {
-          "id": 9972750,
-          "text": "Only one window opens.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "ddnktr"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "or room two",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "two"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22or+room+two%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "read then",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0043"
-      ],
-      "lexicalLemmas": [
-        "then"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22read+then%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 4935510,
-          "text": "If you don't want to read, then don't.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "AlanF_US"
-        },
-        {
-          "id": 1579479,
-          "text": "If you don't want to read, then don't read.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "fanty"
-        },
-        {
-          "id": 6892440,
-          "text": "Reading is important. If you know how to read, then the whole world opens up to you.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Adelpa"
-        },
-        {
-          "id": 10502320,
-          "text": "If you can read, you're wasting your time by not reading stories you haven't read yet. If you can't read, then come up with another way to find new stories.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "DJ_Saidez"
-        }
-      ],
-      "sampleCount": 4,
-      "status": "evidence"
-    },
-    {
-      "query": "read then help",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0043"
-      ],
-      "lexicalLemmas": [
-        "then"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22read+then+help%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "reads the only new book",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0038"
-      ],
-      "lexicalLemmas": [
-        "only"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22reads+the+only+new+book%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "room is new",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0032"
-      ],
-      "lexicalLemmas": [
-        "new"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+is+new%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "room one or",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "room"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+or%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "room one or room",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "one"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+or+room%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "room one please",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "one",
-        "room"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+one+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "room two",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "room",
-        "two"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13650977,
-          "text": "On the small desk in my hotel room, two letters were awaiting me.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        }
-      ],
-      "sampleCount": 1,
-      "status": "evidence"
-    },
-    {
-      "query": "room two please",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "room",
-        "two"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22room+two+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "then i help",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0043"
-      ],
-      "lexicalLemmas": [
-        "then"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22then+i+help%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "this time i read",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0030"
-      ],
-      "lexicalLemmas": [
-        "time"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22this+time+i+read%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "two at seven",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0020"
-      ],
-      "lexicalLemmas": [
-        "seven"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22two+at+seven%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "what's your name",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0001"
-      ],
-      "lexicalLemmas": [
-        "name"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22what%27s+your+name%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 408293,
-          "text": "What's your name?",
+          "id": 12157490,
+          "text": "Call Tom in the morning.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "CK"
         },
         {
-          "id": 10336861,
-          "text": "\"What's your name?\" \"Tom.\"",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 10213805,
-          "text": "\"What's your name?\" \"Ziri.\"",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
-        },
-        {
-          "id": 10064755,
-          "text": "\"What's your name?\" \"Yanni.\"",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
-        },
-        {
-          "id": 6088328,
-          "text": "What's your name, boy?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "OsoHombre"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "yes come back with the",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0044"
-      ],
-      "lexicalLemmas": [
-        "back"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+come+back+with+the%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "yes i know this book",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0040"
-      ],
-      "lexicalLemmas": [
-        "know"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+i+know+this+book%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "yes i like tea",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0021"
-      ],
-      "lexicalLemmas": [
-        "like"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+i+like+tea%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "yes i read books",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0023"
-      ],
-      "lexicalLemmas": [
-        "read"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+i+read+books%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "yes people like coffee",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0033"
-      ],
-      "lexicalLemmas": [
-        "people"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22yes+people+like+coffee%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "action then action",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0043"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-0043-THEN"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22action+then+action%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "can i have please",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0007",
-        "EN-A1-L-0009"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-CAN-I-HAVE",
-        "EN-CONSTR-CAN-I-HAVE-DRINK"
-      ],
-      "lexicalLemmas": [],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+i+have+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "can you help me",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0019"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-CAN-YOU-HELP-ME"
-      ],
-      "lexicalLemmas": [
-        "help"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+you+help+me%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 434410,
-          "text": "Can you help me?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "lukaszpp"
-        },
-        {
-          "id": 12221216,
-          "text": "Miss, can you help me?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Miktsoanit"
-        },
-        {
-          "id": 12204390,
-          "text": "Mum, can you help me?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "sundown"
-        },
-        {
-          "id": 10187642,
-          "text": "Can you help me translate?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "pan176"
-        },
-        {
-          "id": 9379604,
-          "text": "Tom, can you help me?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "can you repeat that please",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0004"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-ASK-REPEAT-PLEASE"
-      ],
-      "lexicalLemmas": [
-        "repeat"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22can+you+repeat+that+please%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 3329632,
-          "text": "Can you repeat that, please?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
-      "sampleCount": 1,
-      "status": "evidence"
-    },
-    {
-      "query": "come back",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0044"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-0044-BACK"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22come+back%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 8751148,
-          "text": "Come back!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "fishda"
-        },
-        {
-          "id": 1972611,
-          "text": "Come back.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 13723835,
-          "text": "Come back later!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "an_hien"
-        },
-        {
-          "id": 9495941,
-          "text": "Never come back.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "DJ_Saidez"
-        },
-        {
-          "id": 6365934,
-          "text": "Come back immediately.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "OsoHombre"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "do you have",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0018"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-DO-YOU-HAVE"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+have%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13992370,
-          "text": "Do you have roommates?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "menaud"
-        },
-        {
-          "id": 13934780,
-          "text": "Do you have questions?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ioan_Cristian"
-        },
-        {
-          "id": 13658998,
-          "text": "Do you have fever?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "mervert1"
-        },
-        {
-          "id": 13650217,
-          "text": "Do you have accomodation?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "araneo"
-        },
-        {
-          "id": 13490550,
-          "text": "Do you have tickets?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "do you like",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0021"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-DO-YOU-LIKE"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+like%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13703548,
-          "text": "Do you like working?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13630924,
-          "text": "Do you like Spring?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "araneo"
-        },
-        {
-          "id": 13630501,
-          "text": "Do you like sumo?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 13330397,
-          "text": "Do you like milk?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Adelpa"
-        },
-        {
-          "id": 13186220,
-          "text": "Do you like almonds?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "LdjuherTaqvaylit"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "do you read books",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0023"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-DO-YOU-READ-BOOKS"
-      ],
-      "lexicalLemmas": [
-        "read"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22do+you+read+books%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 9226785,
-          "text": "Do you read books?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11744393,
-          "text": "Do you read books like that?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "sundown"
-        },
-        {
-          "id": 6265197,
-          "text": "How often do you read books?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 6252141,
-          "text": "Do you read books to your children?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 7118167,
-          "text": "How often do you read books in French?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "he is",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0027"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-HE-IS-NAME"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22he+is%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13788367,
-          "text": "He is fantastic.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Just_Balls"
-        },
-        {
-          "id": 13627422,
-          "text": "He is addicted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ahmd"
-        },
-        {
-          "id": 13530112,
-          "text": "He is Amazigh.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Abdaresrif"
-        },
-        {
-          "id": 13498600,
-          "text": "He is lucky.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "vowelharmony"
-        },
-        {
-          "id": 13400878,
-          "text": "He is closer.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "das_Ame"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "how are you",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0003"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-HOW-ARE-YOU"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22how+are+you%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 373320,
-          "text": "How are you?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11787822,
-          "text": "How are you two?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "terrynoti"
-        },
-        {
-          "id": 9934662,
-          "text": "How are you, Dad?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Nylez"
-        },
-        {
-          "id": 9819270,
-          "text": "How are you paying?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 9251400,
-          "text": "Well, how are you?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "how much is it",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0015"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-HOW-MUCH-IS-IT"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22how+much+is+it%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 2418,
-          "text": "How much is it?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "brauliobezerra"
-        },
-        {
-          "id": 11038804,
-          "text": "How much is it altogether?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 5004168,
-          "text": "How much is it worth?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 9194846,
-          "text": "How much is it per month?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "DJ_Saidez"
-        },
-        {
-          "id": 5838290,
-          "text": "How much is it worth today?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i also like coffee",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0034"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-I-ALSO-LIKE-COFFEE"
-      ],
-      "lexicalLemmas": [
-        "also"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+also+like+coffee%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "i also read books",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0034"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-I-ALSO-READ-BOOKS"
-      ],
-      "lexicalLemmas": [
-        "also"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+also+read+books%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "i am not",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0025"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-I-AM-NOT"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+am+not%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 2379436,
-          "text": "I am not.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13965920,
-          "text": "I am not here.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Leglaine"
-        },
-        {
-          "id": 13897324,
-          "text": "I am not exhausted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "kylewii"
-        },
-        {
-          "id": 13833683,
-          "text": "I am not Marcus.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Vortarulo"
-        },
-        {
-          "id": 12950353,
-          "text": "I am not superstitious.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "maaster"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i can help",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0035"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-I-CAN-HELP"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+can+help%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 2245642,
-          "text": "I can help.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11851441,
-          "text": "I can help, too.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11851440,
-          "text": "I can help out.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 3915455,
-          "text": "I can help her.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CH"
-        },
-        {
-          "id": 3915454,
-          "text": "I can help him.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CH"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i can help now",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0035"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-I-CAN-HELP-NOW"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+can+help+now%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [],
-      "sampleCount": 0,
-      "status": "no_hit"
-    },
-    {
-      "query": "i get a",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0037"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-0037-GET"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+get+a%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13625692,
-          "text": "Can I get a refill?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 12747350,
-          "text": "Can I get a drink?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 12106160,
-          "text": "May I get a brandy?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 11523374,
-          "text": "Can I get a hint?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 10657020,
-          "text": "Can I get a kiss?",
+          "id": 11169060,
+          "text": "I walk in the morning.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "carlosalberto"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i know this",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0040"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-0040-KNOW"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+know+this%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
+        },
         {
-          "id": 2245929,
-          "text": "I know this.",
+          "id": 10605629,
+          "text": "Come back in the morning.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "CK"
         },
         {
-          "id": 13156746,
-          "text": "I know this melody.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Sifaks"
-        },
-        {
-          "id": 12898811,
-          "text": "I know this painter.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "araneo"
-        },
-        {
-          "id": 12239825,
-          "text": "I know this poem.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Aghanim"
-        },
-        {
-          "id": 12046642,
-          "text": "I know this guy.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "shekitten"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i like",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0021"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-I-LIKE"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+like%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 14039074,
-          "text": "I like wands.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 14039058,
-          "text": "I like rods.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 13965931,
-          "text": "I like harbours.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Leglaine"
-        },
-        {
-          "id": 13910905,
-          "text": "I like sexting.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "menaud"
-        },
-        {
-          "id": 13808936,
-          "text": "I like vegetables.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i make",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0041"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-0041-MAKE"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+make%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 5858822,
-          "text": "I make furniture.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 12663573,
-          "text": "I make the decisions.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Conjuice"
-        },
-        {
-          "id": 11846039,
-          "text": "I make good money.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "CK"
-        },
-        {
-          "id": 9743879,
-          "text": "I make ends meet.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Nylez"
-        },
-        {
-          "id": 9548706,
-          "text": "I make no promises.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Nuel"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i read books",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0023"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-I-READ-BOOKS"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+read+books%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 1001623,
-          "text": "I read books.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Nihonkage"
-        },
-        {
-          "id": 13706909,
-          "text": "I read books every day.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 12332167,
-          "text": "I read books at night.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Aghanim"
-        },
-        {
-          "id": 8414668,
-          "text": "I read books about Islam.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Amastan"
-        },
-        {
-          "id": 8410826,
-          "text": "I read books in French.",
+          "id": 9394138,
+          "text": "We left in the morning.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "CK"
@@ -2325,303 +2220,187 @@
       "status": "evidence"
     },
     {
-      "query": "i think",
-      "kind": "construction",
+      "query": "in the morning too",
+      "kind": "target_collocation",
       "lessonKeys": [
-        "EN-A1-L-0042"
+        "EN-A1-L-0142"
       ],
-      "constructionKeys": [
-        "EN-CONSTR-0042-THINK"
+      "lexicalLemmas": [
+        "morning"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+think%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22in+the+morning+too%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "is a change",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0105"
+      ],
+      "lexicalLemmas": [
+        "change"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+a+change%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [
         {
-          "id": 9296054,
-          "text": "I think.",
+          "id": 8047875,
+          "text": "Mennad is a changed man.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "shekitten"
+          "owner": "OsoHombre"
         },
         {
-          "id": 12975080,
-          "text": "I think not!",
+          "id": 6469317,
+          "text": "Sami is a changed man.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
-          "owner": "rul"
+          "owner": "OsoHombre"
         },
         {
-          "id": 12256320,
-          "text": "I think so!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "sundown"
-        },
-        {
-          "id": 11925946,
-          "text": "I think differently.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Fenrir"
-        },
-        {
-          "id": 9194807,
-          "text": "I think yes.",
+          "id": 4666991,
+          "text": "Tom is a changed man.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "CK"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i want",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0022"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-I-WANT"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i+want%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13403491,
-          "text": "I want.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Thanuir"
         },
         {
-          "id": 8783279,
-          "text": "I wanted.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "jimkillock"
-        },
-        {
-          "id": 13733679,
-          "text": "I want independence.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13545884,
-          "text": "I want dorayaki!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "LeviHighway"
-        },
-        {
-          "id": 13409028,
-          "text": "I want it!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Aghanim"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
-    },
-    {
-      "query": "i'm fine thanks",
-      "kind": "construction",
-      "lessonKeys": [
-        "EN-A1-L-0003"
-      ],
-      "constructionKeys": [
-        "EN-CONSTR-IM-FINE-THANKS"
-      ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+fine+thanks%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 1919530,
-          "text": "I'm fine, thanks!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "gromenawer"
-        },
-        {
-          "id": 1564517,
-          "text": "I'm fine, thanks.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "cruzedu73"
-        },
-        {
-          "id": 1674428,
-          "text": "I'm fine, thank you!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "garydale"
-        },
-        {
-          "id": 65115,
-          "text": "I'm fine, thank you.",
+          "id": 5744716,
+          "text": "Maybe Tom is a changed man.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "CM"
         },
         {
-          "id": 3373158,
-          "text": "I'm fine, thanks for asking!",
+          "id": 11189456,
+          "text": "The most surprising symptom of long COVID is a change in politics.",
           "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Ricardo14"
+          "license": "CC0 1.0",
+          "owner": "shekitten"
         }
       ],
       "sampleCount": 5,
       "status": "evidence"
     },
     {
-      "query": "i'm from",
-      "kind": "construction",
+      "query": "is a job at the",
+      "kind": "target_collocation",
       "lessonKeys": [
-        "EN-A1-L-0005"
+        "EN-A1-L-0114"
       ],
-      "constructionKeys": [
-        "EN-CONSTR-FROM-PLACE"
+      "lexicalLemmas": [
+        "job"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22i%27m+from%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 13549228,
-          "text": "I'm from Transylvania.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 13371450,
-          "text": "I'm from Kabylia.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Igider"
-        },
-        {
-          "id": 13255616,
-          "text": "I'm from Ohio.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 13151362,
-          "text": "I'm from Mongolia.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "deniko"
-        },
-        {
-          "id": 13024114,
-          "text": "I'm from Türkiye.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Adelpa"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+a+job+at+the%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
-      "query": "is this your",
-      "kind": "construction",
+      "query": "is a job here",
+      "kind": "target_collocation",
       "lessonKeys": [
-        "EN-A1-L-0024"
+        "EN-A1-L-0114"
       ],
-      "constructionKeys": [
-        "EN-CONSTR-IS-THIS-YOUR"
+      "lexicalLemmas": [
+        "job"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+this+your%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
-      "examples": [
-        {
-          "id": 1436332,
-          "text": "Is this yours?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "marcelostockle"
-        },
-        {
-          "id": 13735781,
-          "text": "Is this your sock?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        },
-        {
-          "id": 13558956,
-          "text": "Is this your bedroom?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "LeviHighway"
-        },
-        {
-          "id": 13480477,
-          "text": "Is this your worker?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "epiphany"
-        },
-        {
-          "id": 13178949,
-          "text": "Is this your neighborhood?",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "rul"
-        }
-      ],
-      "sampleCount": 5,
-      "status": "evidence"
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+a+job+here%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
     },
     {
-      "query": "it's a",
-      "kind": "construction",
+      "query": "is a little room",
+      "kind": "target_collocation",
       "lessonKeys": [
-        "EN-A1-L-0006"
+        "EN-A1-L-0069"
       ],
-      "constructionKeys": [
-        "EN-CONSTR-ITS-A"
+      "lexicalLemmas": [
+        "little"
       ],
-      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22it%27s+a%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+a+little+room%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "is a long day",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0062"
+      ],
+      "lexicalLemmas": [
+        "long"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+a+long+day%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "is a plan for today",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0146"
+      ],
+      "lexicalLemmas": [
+        "plan"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+a+plan+for+today%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "is a plan for tomorrow",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0146"
+      ],
+      "lexicalLemmas": [
+        "plan"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+a+plan+for+tomorrow%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "is another move",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0138"
+      ],
+      "lexicalLemmas": [
+        "move"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+another+move%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
+      "examples": [],
+      "sampleCount": 0,
+      "status": "no_hit"
+    },
+    {
+      "query": "is another question",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0139"
+      ],
+      "lexicalLemmas": [
+        "question"
+      ],
+      "queryUrl": "https://api.tatoeba.org/v1/sentences?lang=eng&q=%22is+another+question%22&is_orphan=no&is_unapproved=no&sort=relevance&limit=5&showtrans=none",
       "examples": [
         {
-          "id": 14033255,
-          "text": "It's a lupanar.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Myrano_"
-        },
-        {
-          "id": 14023202,
-          "text": "It's a puffin.",
+          "id": 13581589,
+          "text": "Nobody should have to master Turkish (or Japanese, Chinese, Spanish etc.) in order to understand what's written in Russian. It's important that a sentence sounds natural and is understandable. Whether the translation matches the original is another question. If it's not possible to carry the sense across in a natural and understandable way, then it's better to not translate the sentence at all.",
           "lang": "eng",
           "license": "CC BY 2.0 FR",
           "owner": "araneo"
-        },
-        {
-          "id": 13981204,
-          "text": "It's a fake!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Vortarulo"
-        },
-        {
-          "id": 13816610,
-          "text": "It's a hospital.",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "frpzzd"
-        },
-        {
-          "id": 13581993,
-          "text": "It's a hedgehog!",
-          "lang": "eng",
-          "license": "CC BY 2.0 FR",
-          "owner": "Native77"
         }
       ],
-      "sampleCount": 5,
+      "sampleCount": 1,
       "status": "evidence"
     }
   ]
