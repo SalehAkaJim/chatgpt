@@ -5,6 +5,7 @@ on:
     paths:
       - 'nova/_assistant/content-system-v1/tools/factory_wave.py'
       - 'nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py'
+      - 'nova/_assistant/content-system-v1/tools/test_factory_wave_open_corpus_wiring.py'
       - 'nova/curriculum/en-fa/factory.config.json'
       - '.github/workflows/nova-authoring-scale-tests.yml'
   push:
@@ -12,6 +13,7 @@ on:
     paths:
       - 'nova/_assistant/content-system-v1/tools/factory_wave.py'
       - 'nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py'
+      - 'nova/_assistant/content-system-v1/tools/test_factory_wave_open_corpus_wiring.py'
       - 'nova/curriculum/en-fa/factory.config.json'
       - '.github/workflows/nova-authoring-scale-tests.yml'
 
@@ -30,11 +32,16 @@ jobs:
         run: |
           python -m py_compile \
             nova/_assistant/content-system-v1/tools/factory_wave.py \
-            nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py
+            nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py \
+            nova/_assistant/content-system-v1/tools/test_factory_wave_open_corpus_wiring.py
       - name: Run 50-worker regression tests
         env:
           PYTHONPATH: nova/_assistant/content-system-v1/tools
         run: python -m unittest nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py
+      - name: Verify open-corpus production routing
+        env:
+          PYTHONPATH: nova/_assistant/content-system-v1/tools
+        run: python -m unittest nova/_assistant/content-system-v1/tools/test_factory_wave_open_corpus_wiring.py
       - name: Verify production defaults
         run: |
           python - <<'PY'
@@ -43,5 +50,14 @@ jobs:
           assert config['waveSize'] == 20, config
           assert config['maxParallelWaveSize'] == 50, config
           assert config['parallelPodSize'] == 10, config
-          print({'waveSize': 20, 'maxParallelWaveSize': 50, 'parallelPodSize': 10})
+          assert config['openCorpusAuthoring'] is True, config
+          assert config['openCorpusCandidateCount'] >= 6, config
+          assert config['openCorpusAllowShareAlike'] is True, config
+          print({
+              'waveSize': config['waveSize'],
+              'maxParallelWaveSize': config['maxParallelWaveSize'],
+              'parallelPodSize': config['parallelPodSize'],
+              'openCorpusAuthoring': config['openCorpusAuthoring'],
+              'openCorpusCandidateCount': config['openCorpusCandidateCount'],
+          })
           PY
