@@ -2,8 +2,8 @@
   "schemaVersion": 4,
   "status": "PASS",
   "stage": "ready-to-publish",
-  "inputHead": "686063f43cd8762e5b472fd29000bfe697c606bc",
-  "checkedAt": "2026-09-11T13:12:41.760989+00:00",
+  "inputHead": "e8536b8b68f8e54b2ee9d6a28fb16fbfe93bb471",
+  "checkedAt": "2026-09-11T13:25:13.107399+00:00",
   "canonicalPrefixAtStart": 148,
   "errors": [],
   "commands": [
@@ -39,7 +39,7 @@
       "name": "quality-v3-review-refresh",
       "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/refresh_quality_v3_reviews.py --repo-root . --course en-fa",
       "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"courseSourceHash\": \"0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1\", \"refreshedReviews\": 148, \"changedLessonReviews\": 9, \"storyPunctuationPolishedLessons\": [141, 142, 143, 144, 145, 146, 147, 148], \"missingReviewLessons\": []}\n",
+      "stdoutTail": "{\"status\": \"PASS\", \"courseSourceHash\": \"0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1\", \"refreshedReviews\": 148, \"changedLessonReviews\": 1, \"storyPunctuationPolishedLessons\": [], \"missingReviewLessons\": []}\n",
       "stderrTail": ""
     },
     {
@@ -80,7 +80,7 @@
   ],
   "request": {
     "schemaVersion": 4,
-    "requestKey": "quality-v3-full-prefix-20260911-03",
+    "requestKey": "quality-v3-full-prefix-20260911-04",
     "range": [
       1,
       148
@@ -772,17 +772,9 @@
       148
     ],
     "checkedLessons": 148,
-    "changedLessonCount": 9,
+    "changedLessonCount": 1,
     "changedLessons": [
-      100,
-      141,
-      142,
-      143,
-      144,
-      145,
-      146,
-      147,
-      148
+      100
     ],
     "categoryLessonCounts": {
       "speechEquivalence": 1
@@ -792,46 +784,6 @@
         "speechEquivalence": [
           "T02: added equivalent accepted speech 'Yes. I am busy this week.'",
           "T04: added equivalent accepted speech 'I am free next week.'"
-        ]
-      },
-      "141": {
-        "storyPunctuationPolish": [
-          "scenarioFa: removed duplicated period after a quoted sentence"
-        ]
-      },
-      "142": {
-        "storyPunctuationPolish": [
-          "scenarioFa: removed duplicated period after a quoted sentence"
-        ]
-      },
-      "143": {
-        "storyPunctuationPolish": [
-          "scenarioFa: removed duplicated period after a quoted sentence"
-        ]
-      },
-      "144": {
-        "storyPunctuationPolish": [
-          "scenarioFa: removed duplicated period after a quoted sentence"
-        ]
-      },
-      "145": {
-        "storyPunctuationPolish": [
-          "scenarioFa: removed duplicated period after a quoted sentence"
-        ]
-      },
-      "146": {
-        "storyPunctuationPolish": [
-          "scenarioFa: removed duplicated period after a quoted sentence"
-        ]
-      },
-      "147": {
-        "storyPunctuationPolish": [
-          "scenarioFa: removed duplicated period after a quoted sentence"
-        ]
-      },
-      "148": {
-        "storyPunctuationPolish": [
-          "scenarioFa: removed duplicated period after a quoted sentence"
         ]
       }
     },
@@ -845,17 +797,8 @@
       "status": "PASS",
       "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
       "refreshedReviews": 148,
-      "changedLessonReviews": 9,
-      "storyPunctuationPolishedLessons": [
-        141,
-        142,
-        143,
-        144,
-        145,
-        146,
-        147,
-        148
-      ],
+      "changedLessonReviews": 1,
+      "storyPunctuationPolishedLessons": [],
       "missingReviewLessons": []
     }
   },
