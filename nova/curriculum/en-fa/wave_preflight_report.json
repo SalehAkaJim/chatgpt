@@ -1,84 +1,355 @@
 {
   "schemaVersion": 1,
-  "status": "PASS",
-  "stage": "ready-to-publish",
-  "inputHead": "317c16ffbebc23f0a329568af5e44b71d7d62262",
-  "checkedAt": "2026-09-11T03:43:14.871875+00:00",
-  "errors": [],
+  "status": "FAIL",
+  "stage": "staging-local-precheck",
+  "inputHead": "222f0bb01d3aa0da5aa66bd2efb24fcc4325e881",
+  "checkedAt": "2026-09-11T04:46:02.562147+00:00",
+  "errors": [
+    "8 staged Lesson(s) have local validation errors; repair them together before integration."
+  ],
   "commands": [
     {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w01/0141/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/workers/w01/0149/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 3, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0149\", \"sortOrder\": 149, \"errors\": [\"A06: speak model must match an audio-required learner Turn\", \"A10: speak model must match an audio-required learner Turn\", {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}]}]}\n",
       "stderrTail": ""
     },
     {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w02/0142/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/workers/w02/0150/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 5, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0150\", \"sortOrder\": 150, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A07\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}]}]}\n",
       "stderrTail": ""
     },
     {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w03/0143/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/workers/w03/0151/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 5, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0151\", \"sortOrder\": 151, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A07\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}]}]}\n",
       "stderrTail": ""
     },
     {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w04/0144/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/workers/w04/0152/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 5, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0152\", \"sortOrder\": 152, \"errors\": [{\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A07\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}]}]}\n",
       "stderrTail": ""
     },
     {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w05/0145/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/workers/w05/0153/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 4, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0153\", \"sortOrder\": 153, \"errors\": [\"A10: speak model must match an audio-required learner Turn\", {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A07\"}}]}]}\n",
       "stderrTail": ""
     },
     {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w06/0146/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/workers/w06/0154/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 6, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0154\", \"sortOrder\": 154, \"errors\": [\"A10: speak model must match an audio-required learner Turn\", {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A04\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}, \"PQ2-H06 EN-A1-L-0154: review_recombination requires at least one lexical review item\"]}]}\n",
       "stderrTail": ""
     },
     {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w07/0147/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/workers/w07/0155/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 6, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0155\", \"sortOrder\": 155, \"errors\": [\"A10: speak model must match an audio-required learner Turn\", {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A07\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}]}]}\n",
       "stderrTail": ""
     },
     {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/workers/w08/0148/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n",
-      "stderrTail": ""
-    },
-    {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/factory_wave.py integrate --repo-root . --wave nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/wave.json",
-      "returnCode": 0,
-      "stdoutTail": "HEAD is now at 317c16ff Retry Nova 141-148 with canonical wave repair\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 141, \"nextLesson\": 142, \"nextSpecHash\": \"dae1941bfe478b8907c1826c93face6907bd066ced4fe2ba823dafd82f77496a\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 142, \"nextLesson\": 143, \"nextSpecHash\": \"18f1582c64ec9f8349d7e7808c280a7106df200497ca3a2b8eb9126ce1dc6ed6\", \"introducedGrammar\": 14, \"languageWarnings\": 44, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 143, \"nextLesson\": 144, \"nextSpecHash\": \"19451e7f5d995fd80a532069d1a13e819840fe2b3efe00974aefc345bf944db4\", \"introducedGrammar\": 14, \"languageWarnings\": 45, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 144, \"nextLesson\": 145, \"nextSpecHash\": \"8e716ca00515604d520cdfb8cf412abdbfc813a1ec117d8ba9ed42814fe6e9fa\", \"introducedGrammar\": 14, \"languageWarnings\": 45, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 145, \"nextLesson\": 146, \"nextSpecHash\": \"681d13a9c28382a5a7713fb90e739130f3023fcb3ac2dd4ff70e2ed26059a67d\", \"introducedGrammar\": 14, \"languageWarnings\": 45, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 146, \"nextLesson\": 147, \"nextSpecHash\": \"f989b52781775f609f31f558227f5d6242fa0131237936b78e2ed92c7bbede5e\", \"introducedGrammar\": 14, \"languageWarnings\": 45, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 147, \"nextLesson\": 148, \"nextSpecHash\": \"c52370f9ea4f4f266f2ddd0184b623a7f9b7e7b7eac4aca4292fd0071dcca2ed\", \"introducedGrammar\": 14, \"languageWarnings\": 45, \"errors\": 0}\n{\"status\": \"PASS\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 0, \"fullPrefixRegressionRequired\": true}\n{\"status\": \"PASS\", \"lessons\": 148, \"nextLesson\": 149, \"nextSpecHash\": \"e91f56030fe3ef0b4f221b2300da4385f0f25bd9faa37e51e75957389263ba84\", \"introducedGrammar\": 14, \"languageWarnings\": 45, \"errors\": 0}\n{\"status\": \"PASS\", \"generated\": 148, \"errors\": 0, \"productQualityV2Errors\": 0, \"learnerExperienceErrors\": 0, \"errorDetails\": [], \"productQualityV2ErrorDetails\": [], \"factoryDesignErrorDetails\": [], \"storyErrorDetails\": [], \"learnerExperienceErrorDetails\": []}\n{\"status\": \"PASS\", \"waveKey\": \"en-fa-A1-0141-0148\", \"integrated\": 8, \"fullPrefixRegression\": \"PASS\"}\n",
-      "stderrTail": "Preparing worktree (detached HEAD 317c16ff)\n"
-    },
-    {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/build_pilot.py --repo-root . --text-only",
-      "returnCode": 0,
-      "stdoutTail": "",
-      "stderrTail": ""
-    },
-    {
-      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_prefix.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --output nova/curriculum/en-fa/factory_validation.json",
-      "returnCode": 0,
-      "stdoutTail": "{\"status\": \"PASS\", \"generated\": 148, \"errors\": 0, \"productQualityV2Errors\": 0, \"learnerExperienceErrors\": 0, \"errorDetails\": [], \"productQualityV2ErrorDetails\": [], \"factoryDesignErrorDetails\": [], \"storyErrorDetails\": [], \"learnerExperienceErrorDetails\": []}\n",
+      "command": "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python nova/_assistant/content-system-v1/tools/validate_factory_incremental.py --repo-root . --config nova/curriculum/en-fa/factory.config.json --lesson nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/workers/w08/0156/lesson.source.json --cache-dir .cache/nova-validation --no-cache",
+      "returnCode": 2,
+      "stdoutTail": "{\"status\": \"FAIL\", \"lessons\": 1, \"cacheHits\": 0, \"cacheMisses\": 1, \"errors\": 6, \"fullPrefixRegressionRequired\": true, \"lessonErrors\": [{\"lessonKey\": \"EN-A1-L-0156\", \"sortOrder\": 156, \"errors\": [\"A10: speak model must match an audio-required learner Turn\", {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A01\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A03\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A05\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A07\"}}, {\"code\": \"CQ-H14\", \"message\": \"Each option requires its own nonempty teaching explanation.\", \"data\": {\"activityKey\": \"A09\"}}]}]}\n",
       "stderrTail": ""
     }
   ],
   "request": {
     "schemaVersion": 1,
-    "requestKey": "en-fa-A1-0141-0148-20260911j",
-    "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0141-0148/wave.json"
+    "requestKey": "en-fa-A1-0149-0156-20260911a",
+    "wavePath": "nova/curriculum/en-fa/waves/en-fa-A1-0149-0156/wave.json"
   },
-  "waveKey": "en-fa-A1-0141-0148",
-  "expectedPrefix": 148,
-  "passedPrefixLength": 148
+  "waveKey": "en-fa-A1-0149-0156",
+  "expectedPrefix": 156,
+  "stagingLocalFailures": [
+    {
+      "lessonKey": "EN-A1-L-0149",
+      "sortOrder": 149,
+      "errors": [
+        "A06: speak model must match an audio-required learner Turn",
+        "A10: speak model must match an audio-required learner Turn",
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A01"
+          }
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0150",
+      "sortOrder": 150,
+      "errors": [
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A01"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A03"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A05"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A07"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A09"
+          }
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0151",
+      "sortOrder": 151,
+      "errors": [
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A01"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A04"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A05"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A07"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A09"
+          }
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0152",
+      "sortOrder": 152,
+      "errors": [
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A01"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A03"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A04"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A07"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A09"
+          }
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0153",
+      "sortOrder": 153,
+      "errors": [
+        "A10: speak model must match an audio-required learner Turn",
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A01"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A04"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A07"
+          }
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0154",
+      "sortOrder": 154,
+      "errors": [
+        "A10: speak model must match an audio-required learner Turn",
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A01"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A04"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A05"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A09"
+          }
+        },
+        "PQ2-H06 EN-A1-L-0154: review_recombination requires at least one lexical review item"
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0155",
+      "sortOrder": 155,
+      "errors": [
+        "A10: speak model must match an audio-required learner Turn",
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A01"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A03"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A05"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A07"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A09"
+          }
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0156",
+      "sortOrder": 156,
+      "errors": [
+        "A10: speak model must match an audio-required learner Turn",
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A01"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A03"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A05"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A07"
+          }
+        },
+        {
+          "code": "CQ-H14",
+          "message": "Each option requires its own nonempty teaching explanation.",
+          "data": {
+            "activityKey": "A09"
+          }
+        }
+      ]
+    }
+  ]
 }
