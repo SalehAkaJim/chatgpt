@@ -2,7 +2,7 @@
 -- lessonKey: EN-A1-L-0032
 -- levelKey: A1
 -- sourceHash: f75cc7eceaf834a924f50507d368c6884faecbaa7604c9bbc8e637dd1bd8bc15
--- courseSourceHash: 3e15867126992ac96cdac9e744eaa9dcfd08e5d0bffe8a18dfef4f19ff7d684e
+-- courseSourceHash: 0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1
 SET NAMES utf8mb4;
 START TRANSACTION;
 
