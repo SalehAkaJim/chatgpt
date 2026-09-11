@@ -1,0 +1,23 @@
+name: Nova Scheduled Production Trigger
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: nova-production-schedule-trigger
+  cancel-in-progress: true
+
+jobs:
+  trigger-production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Nova Lesson Production
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run nova-pilot.yml --repo "${{ github.repository }}" --ref main
