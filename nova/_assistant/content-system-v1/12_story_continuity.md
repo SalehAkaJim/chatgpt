@@ -1,24 +1,27 @@
 # 12 — Interleaved stories and variable played roles
 
-The owner clarified that **both sides of a conversation change between adjacent Lessons**, including the character played by the learner. A Course has no permanent learner persona. The previous fixed-Alex / consecutive-classroom-and-cafe interpretation is superseded. Apply this rule to the existing twenty Lessons and all future story batches.
+The owner clarified that **both sides of a conversation change between adjacent Lessons**, including the character played by the learner. A Course has no permanent learner persona. Apply this rule to all canonical and future story Lessons.
 
-## Rotation rules
+## Rotation and story-quality rules
 
 1. Each Lesson has a concrete situation, a small story event and an explicit played character. The user plays one person in that scene, not a permanent self-insert traveling through every Lesson.
 2. Adjacent Lessons must have different story arcs and disjoint casts. The cast includes the played role, interlocutors, and speakers in short listening clips. A cameo does not bypass rotation.
-3. Return to a cast or arc after a variable interval, normally 5–10 Lesson positions. The current minimum distance is 5: a character in Lesson 1 may next appear in Lesson 6. This is position distance, not five intervening Lessons. Later returns may exceed 10 when the story has a reason; never invent a scene just to meet a return quota.
-4. Keep independent, canonical arc identities. Changing a scene title or a person's name does not turn the same story into a new arc. The entire pair and situation must actually change. Human/model review checks this semantic requirement as well as the executable identity checks.
-5. A returning arc continues from its latest episode. Keep relationships, personal facts, roles and voices consistent; do not restart the same first meeting. Explain a meaningful change in the story. A character's first appearance in the Course may be between people who already know each other, and should say so.
+3. Return to a cast or arc after a variable interval, normally 5–10 Lesson positions. The current minimum distance is 5: a character in Lesson 1 may next appear in Lesson 6. Later returns may exceed 10 when the story has a reason; never invent a scene just to meet a return quota.
+4. Keep independent, canonical arc identities. Changing a scene title or a person's name does not turn the same story into a new arc. The pair and situation must actually change.
+5. A returning arc continues from its latest episode. Keep relationships, personal facts, roles and voices consistent; do not restart the same first meeting. A character's first appearance in the Course may be between people who already know each other, and should say so.
 6. Within a Lesson, the played role stays clear. It may be a different member of a returning cast in a later episode. Early A1 normally uses one clear interlocutor at a time, with a small cast appropriate to the task.
 7. Keep story progression separate from language progression. A new cast can practise vocabulary learned in the preceding Lesson without continuing that Lesson's story. Curriculum prerequisites and review links can therefore cross arcs.
 8. Each Lesson serves one communicative job. Do not add all Activity types or extra lines just to satisfy a count. A story change must not hide an abrupt language-load increase.
 9. Important language recurs through actual recognition, retrieval or transfer tasks. Names and punctuation alone do not establish transfer. Record the earlier Lesson and current Activities in `curriculum.reviewLinks`.
 10. Visible-response speech is supported read-aloud practice. STT matching is not a pronunciation score or spontaneous mastery. An already displayed transcript supports recognition; distinguish it from a new listening clip.
 11. Scene support, character labels and questions must not leak listening answers. Teach every unfamiliar expression needed by scored tasks.
+12. `scenarioFa` and `storyBeatFa` must describe an actual event grounded in the setting and canonical Turns. Meta-copy such as «در ادامه داستان ... درباره موضوع این درس گفت‌وگو می‌کنند» is not a story beat.
+13. In each complete eight-Lesson Quality-v3 window, use at least four distinct story arcs. The Course may use cross-character arcs to expand variety while preserving stable character identities.
+14. Do not add a new fictional character until an independent, verified audio voice is mapped for that character. Never invent or guess an ElevenLabs voice ID.
 
 ## Source and runtime contract
 
-Course `characters` contains every fictional person, including characters the user plays. Each has a stable `characterKey`, profile, first-appearance Lesson and voice mapping. Course `narrative.version=2` owns the independent arcs and rotation settings; it does not own a `learnerRoleKey`, learner name or learner biography.
+Course `characters` contains every fictional person, including characters the user plays. Each has a stable `characterKey`, profile, first-appearance Lesson and voice mapping. Course `narrative.version=3` owns independent arcs, cross-character arcs, rotation settings and the voice-safe expansion policy; it does not own a permanent `learnerRoleKey`, learner name or learner biography.
 
 Each Lesson's `curriculum.story` owns `learnerRoleKey`, full `participants`, `arcKey`, unique `sceneKey`, `introducedCharacterKeys`, `relationshipState`, `continuesLessonKey`, dependencies, setting and story event. First appearance is separate from first meeting.
 
@@ -36,10 +39,12 @@ The prototype shows the played role on every task and names that role next to it
 - a continuation pointing anywhere except the latest earlier episode;
 - a repeated first meeting, incorrect debut, invalid review link or future dependency.
 
-The sequence is checked in actual Course display order, so reordering content cannot silently make the same characters adjacent. Individual canonical validation, SQL execution and audio QA also verify the played-character references. These deterministic checks do not pretend to judge story meaning, naturalness or learning effectiveness.
+Product Quality v3 additionally rejects future Lessons that use generic/meta story copy, test an exact dialogue Turn before exposing the dialogue, or over-concentrate a wave on too few story arcs.
+
+The sequence is checked in actual Course display order, so reordering content cannot silently make the same characters adjacent. Individual canonical validation, SQL execution and audio QA also verify the played-character references. Deterministic checks do not pretend to prove learning effectiveness; real learner testing remains a separate release gate.
 
 ## Production loop
 
-Plan alternating arcs and played roles → author canonical Lessons → review the full sequence and language progression → run gates → generate/reuse audio → import/retrieve on disposable MySQL 9.0.1 → test the prototype → collect learner feedback.
+Plan alternating arcs and played roles → author canonical Lessons → review the full sequence and language progression → run Quality v3 gates → generate/reuse audio → import/retrieve on disposable MySQL 9.0.1 → test the prototype → collect learner feedback.
 
-The current owner-authorized bounded scope extends through Lesson 0020. Pending owner decisions do not stop routine authoring/QA. Broad unattended generation and final educational approval remain separate from this testing release.
+The active A1 prefix is generated from canonical Lesson sources and must not be hard-coded in workflow logic or documentation. Pending owner decisions do not stop routine authoring/QA. Broad production and public educational readiness remain separate states.
