@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "courseCode": "en-fa",
   "qualityThreshold": 90,
   "cefrPrecedence": [
@@ -9,6 +9,16 @@
     "octanove_lemma_consensus",
     "openjam_frequency_band"
   ],
+  "dialogueLicensePolicy": {
+    "approvedLicenses": [
+      "CC-BY-4.0",
+      "CC-BY-SA-4.0"
+    ],
+    "defaultReuseMode": "verbatim-first",
+    "preserveAttribution": true,
+    "preserveSourceText": true,
+    "shareAlikeRule": "CC-BY-SA dialogue may be copied verbatim. Any learner-visible adaptation must retain provenance and be distributed under a compatible ShareAlike license."
+  },
   "sources": {
     "openjam": {
       "repository": "amirj4m/openjam",
@@ -55,6 +65,33 @@
         "lang": "eng",
         "is_orphan": "no",
         "is_unapproved": "no"
+      }
+    },
+    "taskmaster": {
+      "repository": "google-research-datasets/Taskmaster",
+      "commit": "d92cb6af3005f1dc09c39e75e7daf4a04905e00b",
+      "dataset": "TM-1-2019",
+      "license": "CC-BY-4.0",
+      "attribution": "Taskmaster-1, Google Research",
+      "reuseMode": "verbatim-or-attributed-adaptation",
+      "files": {
+        "selfDialogs": "TM-1-2019/self-dialogs.json",
+        "wozDialogs": "TM-1-2019/woz-dialogs.json"
+      }
+    },
+    "schemaGuidedDialogue": {
+      "repository": "google-research-datasets/dstc8-schema-guided-dialogue",
+      "commit": "e852981ae34990f4358979625854259302feaa78",
+      "dataset": "Schema-Guided Dialogue",
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Schema-Guided Dialogue Dataset, Google Research",
+      "reuseMode": "verbatim-sharealike",
+      "treeDiscovery": {
+        "include": [
+          "train/dialogues_*.json",
+          "dev/dialogues_*.json",
+          "test/dialogues_*.json"
+        ]
       }
     }
   }
