@@ -27,41 +27,41 @@
   "counts": {
     "words": 20602,
     "senses": 35204,
-    "records": 37687,
-    "profileOnly": 2483,
-    "curriculumEligible": 16436,
+    "records": 43857,
+    "profileOnly": 8653,
+    "curriculumEligible": 22022,
     "productionEligible": 13284,
-    "reviewOnly": 24403
+    "reviewOnly": 30573
   },
   "lexicalByLevel": {
     "A1": {
-      "records": 2082,
-      "curriculumEligible": 2052,
+      "records": 2801,
+      "curriculumEligible": 2612,
       "productionEligible": 1742
     },
     "A2": {
-      "records": 2584,
-      "curriculumEligible": 2476,
+      "records": 3500,
+      "curriculumEligible": 3209,
       "productionEligible": 2056
     },
     "B1": {
-      "records": 4557,
-      "curriculumEligible": 4336,
+      "records": 6253,
+      "curriculumEligible": 5883,
       "productionEligible": 3691
     },
     "B2": {
-      "records": 5238,
-      "curriculumEligible": 4730,
+      "records": 7023,
+      "curriculumEligible": 6437,
       "productionEligible": 3809
     },
     "C1": {
-      "records": 2197,
-      "curriculumEligible": 1540,
+      "records": 2760,
+      "curriculumEligible": 2088,
       "productionEligible": 1138
     },
     "C2": {
-      "records": 21029,
-      "curriculumEligible": 1302,
+      "records": 21520,
+      "curriculumEligible": 1793,
       "productionEligible": 848
     }
   },
@@ -76,58 +76,58 @@
   "files": [
     {
       "path": "lexical/A1.json",
-      "sha256": "a55d0954319df1093300ad4847d6748b18fa09e076ddb49a0ee869218e26b6b2",
-      "records": 2082
-    },
-    {
-      "path": "lexical/A2.json",
-      "sha256": "953cb03cdbf9a169b40d35ebb0c7d2114bd1cdb97aa0689b4b443bf6599b8655",
-      "records": 2584
-    },
-    {
-      "path": "lexical/B1.json",
-      "sha256": "1ad7630700cd6858e9d68c840a39077c41b54c9931092d35603a6db46609c8b6",
-      "records": 4557
-    },
-    {
-      "path": "lexical/B2.json",
-      "sha256": "50583d5c6316e454fbae5a1512b235ca577fc908027e009de11f5afb6cd8f58e",
-      "records": 5238
-    },
-    {
-      "path": "lexical/C1.json",
-      "sha256": "80ea498830ff53b9f16fad20619bb9e0e13bd9eb745ade5c9d52e1a70d809784",
-      "records": 2197
-    },
-    {
-      "path": "lexical/C2.json",
-      "sha256": "e2d954dff25d38a70e5a9aadb19ce83d851626bca89e0e5e7498d082c9dff2d3",
-      "records": 21029
+      "sha256": "f3641575fe9e1b960d33f3a2884ffb020a0b3ade084c863fa3ec4d1e2345fe6b",
+      "records": 2801
     },
     {
       "path": "grammar/A1.json",
-      "sha256": "b7b484d5732c12347cd8449c1008e56af5855c38a1b7ae95fba8aa21b659ab8f",
+      "sha256": "7121980dfa412c464e3c0e03997ec334e51a71a741636e06b64b740db9a6a021",
       "records": 112
     },
     {
+      "path": "lexical/A2.json",
+      "sha256": "f04f516d8351ae22918675423782793239c3e3fdae8ba92ed8e34786868f97ae",
+      "records": 3500
+    },
+    {
       "path": "grammar/A2.json",
-      "sha256": "5ae570bea8196f803bdbc2a02c2875ec296fd6e0ba6070cd220deb613366eddc",
+      "sha256": "9e1123ab56f63b742b9fedb0f8b2cc5992437ae7966818703ba0ed1429d0d503",
       "records": 74
     },
     {
+      "path": "lexical/B1.json",
+      "sha256": "e849fcf0a07cb28d80a5001654fc688dc20f28603256ea30b18e4cb9a760309a",
+      "records": 6253
+    },
+    {
       "path": "grammar/B1.json",
-      "sha256": "c78b94f7200571140ab4af3a81bf302a816a1df9aa3c08de31c5af04d84d01ba",
+      "sha256": "32736aca89c66a920b3fdb3ac5bf8788f83133fb0d476a283950dedfb5cabe3b",
       "records": 79
     },
     {
+      "path": "lexical/B2.json",
+      "sha256": "208166309627b00188a23fbcc5aeafb3a549d9247350adb8df579b0a78b4926d",
+      "records": 7023
+    },
+    {
       "path": "grammar/B2.json",
-      "sha256": "ed40f98c68cdb595f5a6392b26ceba793f09932d574d188869e1fe0a0504c2df",
+      "sha256": "b8c2f8a15c725b179763eeb521948e0f6b0b229d7f634cee2058a63f9e69cf8c",
       "records": 103
     },
     {
+      "path": "lexical/C1.json",
+      "sha256": "33cd5c2bc40c77ed117906cb2f3732966e5928bf5dd46a048ff8476d85dbb19d",
+      "records": 2760
+    },
+    {
       "path": "grammar/C1.json",
-      "sha256": "ae1ba9016ed5b2a6e62770b6bc1910444227b9b3987c47af1f624db4847d61ca",
+      "sha256": "0f632982dc7f91823035e2132db55ed84cfd8d49368f5d69d5694450814a59a7",
       "records": 17
+    },
+    {
+      "path": "lexical/C2.json",
+      "sha256": "65b6e338bd0e4f01563723bfe9cc504666dbe068b5e4392bedebd27e94bb72a0",
+      "records": 21520
     },
     {
       "path": "grammar/C2.json",

@@ -2,33 +2,19 @@
   "schemaVersion": 2,
   "courseCode": "en-fa",
   "totals": {
-    "lexicalItems": 114,
-    "wordItems": 102,
-    "matched": 102,
-    "exactMatched": 72,
-    "lemmaOnlyMatched": 30,
-    "curriculumEligibleMatch": 100,
-    "productionEligibleMatch": 45,
+    "lexicalItems": 226,
+    "wordItems": 226,
+    "matched": 226,
+    "exactMatched": 210,
+    "lemmaOnlyMatched": 16,
+    "curriculumEligibleMatch": 222,
+    "productionEligibleMatch": 210,
     "unmatched": 0
   },
   "lessons": [
     {
       "lessonKey": "EN-A1-L-0001",
       "items": [
-        {
-          "lexicalKey": "EN-LEX-HELLO-01",
-          "lemma": "hello",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-5F9AA85DFDC90B15AC5C"
-          ]
-        },
         {
           "lexicalKey": "EN-LEX-NAME-01",
           "lemma": "name",
@@ -47,20 +33,6 @@
       "lessonKey": "EN-A1-L-0002",
       "items": [
         {
-          "lexicalKey": "EN-LEX-HELLO-01",
-          "lemma": "hello",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-5F9AA85DFDC90B15AC5C"
-          ]
-        },
-        {
           "lexicalKey": "EN-LEX-NAME-01",
           "lemma": "name",
           "partOfSpeech": "noun",
@@ -70,222 +42,34 @@
           "referenceKeys": [
             "EN-REF-F7A6AD8E6587EDA3E40E",
             "EN-REF-E4F6451340C7A9A05026"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-NICE-TO-MEET-YOU-01",
-          "status": "not_applicable_multiword"
-        },
-        {
-          "lexicalKey": "EN-LEX-TOO-01",
-          "lemma": "too",
-          "partOfSpeech": "adverb",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-234D92D643BA5834A127",
-            "EN-REF-3CC934352632C389E9E1"
           ]
         }
       ]
     },
     {
       "lessonKey": "EN-A1-L-0003",
-      "items": [
-        {
-          "lexicalKey": "EN-LEX-HELLO-01",
-          "lemma": "hello",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-5F9AA85DFDC90B15AC5C"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-NAME-01",
-          "lemma": "name",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-F7A6AD8E6587EDA3E40E",
-            "EN-REF-E4F6451340C7A9A05026"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
-          "status": "not_applicable_multiword"
-        },
-        {
-          "lexicalKey": "EN-LEX-FINE-01",
-          "lemma": "fine",
-          "partOfSpeech": "adjective",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-7137372B44DB479296DD",
-            "EN-REF-0BEED048A4E41F3FFA9D"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-SEE-YOU-01",
-          "status": "not_applicable_multiword"
-        },
-        {
-          "lexicalKey": "EN-LEX-GOOD-01",
-          "lemma": "good",
-          "partOfSpeech": "adjective",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-4431BF36CEE00F3BCAB5",
-            "EN-REF-403611B70C45C36B9FE0"
-          ]
-        }
-      ]
+      "items": []
     },
     {
       "lessonKey": "EN-A1-L-0004",
       "items": [
         {
-          "lexicalKey": "EN-LEX-SORRY-REPEAT-01",
-          "lemma": "sorry",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adjective"
-          ],
-          "referenceKeys": [
-            "EN-REF-88032215EDC8D9793A11",
-            "EN-REF-B506796487B204B99A0E"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HOW-ARE-YOU-01",
-          "status": "not_applicable_multiword"
-        },
-        {
-          "lexicalKey": "EN-LEX-FINE-01",
-          "lemma": "fine",
-          "partOfSpeech": "adjective",
+          "lexicalKey": "EN-LEX-REPEAT-01",
+          "lemma": "repeat",
+          "partOfSpeech": "verb",
           "status": "exact_match",
           "curriculumEligible": true,
           "productionEligible": true,
           "referenceKeys": [
-            "EN-REF-7137372B44DB479296DD",
-            "EN-REF-0BEED048A4E41F3FFA9D"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
+            "EN-REF-A000AB30C5C7E31A0F7A",
+            "EN-REF-097B619491322CF5DF81"
           ]
         }
       ]
     },
     {
       "lessonKey": "EN-A1-L-0005",
-      "items": [
-        {
-          "lexicalKey": "EN-LEX-FROM-01",
-          "lemma": "from",
-          "partOfSpeech": "preposition",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-1B91E701370D4AFC4AA8"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-IRAN-01",
-          "lemma": "iran",
-          "partOfSpeech": "proper_noun",
-          "status": "lemma_only_match",
-          "curriculumEligible": false,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-FEA43E7C8E0C60B63D58"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-CANADA-01",
-          "lemma": "canada",
-          "partOfSpeech": "proper_noun",
-          "status": "lemma_only_match",
-          "curriculumEligible": false,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-B539360F6D6CD5A3746D"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-NAME-01",
-          "lemma": "name",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-F7A6AD8E6587EDA3E40E",
-            "EN-REF-E4F6451340C7A9A05026"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-NICE-01",
-          "lemma": "nice",
-          "partOfSpeech": "adjective",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-EF939C0218BF77734EE6",
-            "EN-REF-5A643820D50F1AABB580"
-          ]
-        }
-      ]
+      "items": []
     },
     {
       "lessonKey": "EN-A1-L-0006",
@@ -313,61 +97,12 @@
             "EN-REF-950213E55A5DF7A7D1E1",
             "EN-REF-6CB64DEA48DE0EFA4185"
           ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THIS-01",
-          "lemma": "this",
-          "partOfSpeech": "pronoun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-F77CE44CAADBD9C5A9BC"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-NAME-01",
-          "lemma": "name",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-F7A6AD8E6587EDA3E40E",
-            "EN-REF-E4F6451340C7A9A05026"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-AND-01",
-          "lemma": "and",
-          "partOfSpeech": "conjunction",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-4CC61FD8F301A7D9DCAA"
-          ]
         }
       ]
     },
     {
       "lessonKey": "EN-A1-L-0007",
       "items": [
-        {
-          "lexicalKey": "EN-LEX-PLEASE-01",
-          "lemma": "please",
-          "partOfSpeech": "adverb",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-C831E951A26056666929"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-          "status": "not_applicable_multiword"
-        },
         {
           "lexicalKey": "EN-LEX-PEN-01",
           "lemma": "pen",
@@ -391,35 +126,6 @@
             "EN-REF-950213E55A5DF7A7D1E1",
             "EN-REF-6CB64DEA48DE0EFA4185"
           ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HELLO-01",
-          "lemma": "hello",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-5F9AA85DFDC90B15AC5C"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
-          ]
         }
       ]
     },
@@ -427,25 +133,27 @@
       "lessonKey": "EN-A1-L-0008",
       "items": [
         {
-          "lexicalKey": "EN-LEX-WHERE-01",
-          "lemma": "where",
-          "partOfSpeech": "adverb",
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
           "status": "exact_match",
           "curriculumEligible": true,
-          "productionEligible": false,
+          "productionEligible": true,
           "referenceKeys": [
-            "EN-REF-2C8645E99C791B4DB581"
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
           ]
         },
         {
-          "lexicalKey": "EN-LEX-ON-01",
-          "lemma": "on",
-          "partOfSpeech": "preposition",
+          "lexicalKey": "EN-LEX-PEN-01",
+          "lemma": "pen",
+          "partOfSpeech": "noun",
           "status": "exact_match",
           "curriculumEligible": true,
-          "productionEligible": false,
+          "productionEligible": true,
           "referenceKeys": [
-            "EN-REF-F134FBB224795A6A216F"
+            "EN-REF-E7158161767216455400",
+            "EN-REF-5EC7C57202D339DAB434"
           ]
         },
         {
@@ -459,49 +167,6 @@
             "EN-REF-D760115832F24D7F3074",
             "EN-REF-DB96FA960706CF5AD234"
           ]
-        },
-        {
-          "lexicalKey": "EN-LEX-BOOK-01",
-          "lemma": "book",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-950213E55A5DF7A7D1E1",
-            "EN-REF-6CB64DEA48DE0EFA4185"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-PEN-01",
-          "lemma": "pen",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-E7158161767216455400",
-            "EN-REF-5EC7C57202D339DAB434"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-          "status": "not_applicable_multiword"
         }
       ]
     },
@@ -543,50 +208,6 @@
             "EN-REF-DF86C36C215439FDE741",
             "EN-REF-8061B958A613A2511A99"
           ]
-        },
-        {
-          "lexicalKey": "EN-LEX-PLEASE-01",
-          "lemma": "please",
-          "partOfSpeech": "adverb",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-C831E951A26056666929"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-          "status": "not_applicable_multiword"
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HELLO-01",
-          "lemma": "hello",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-5F9AA85DFDC90B15AC5C"
-          ]
         }
       ]
     },
@@ -594,17 +215,6 @@
       "lessonKey": "EN-A1-L-0010",
       "items": [
         {
-          "lexicalKey": "EN-LEX-OR-01",
-          "lemma": "or",
-          "partOfSpeech": "conjunction",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-50ECEE439EA17F111DB9"
-          ]
-        },
-        {
           "lexicalKey": "EN-LEX-TEA-01",
           "lemma": "tea",
           "partOfSpeech": "noun",
@@ -639,36 +249,6 @@
             "EN-REF-93033FDD55B1A504F831",
             "EN-REF-DD54F822E90CB981E36E"
           ]
-        },
-        {
-          "lexicalKey": "EN-LEX-PLEASE-01",
-          "lemma": "please",
-          "partOfSpeech": "adverb",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-C831E951A26056666929"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-          "status": "not_applicable_multiword"
         }
       ]
     },
@@ -676,42 +256,6 @@
       "lessonKey": "EN-A1-L-0011",
       "items": [
         {
-          "lexicalKey": "EN-LEX-NO-01",
-          "lemma": "no",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adjective",
-            "adverb",
-            "determiner",
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-B3EB4DDD348D5FA17BB4",
-            "EN-REF-BF0B30A66F593F2419AC",
-            "EN-REF-396A8E04F3C2E37BDFF7",
-            "EN-REF-F932CDB013A8581D163B",
-            "EN-REF-EDDF1D4FD8399678C580",
-            "EN-REF-8654BE13BDE89582289B"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-YES-01",
-          "lemma": "yes",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adverb"
-          ],
-          "referenceKeys": [
-            "EN-REF-0853E2E3FCAEC311CBB7"
-          ]
-        },
-        {
           "lexicalKey": "EN-LEX-COFFEE-01",
           "lemma": "coffee",
           "partOfSpeech": "noun",
@@ -746,114 +290,12 @@
             "EN-REF-C86BD7B12371D318284C",
             "EN-REF-AA88F6860DE17814613F"
           ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-PLEASE-01",
-          "lemma": "please",
-          "partOfSpeech": "adverb",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-C831E951A26056666929"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-          "status": "not_applicable_multiword"
         }
       ]
     },
     {
       "lessonKey": "EN-A1-L-0012",
       "items": [
-        {
-          "lexicalKey": "EN-LEX-SORRY-APOLOGY-01",
-          "lemma": "sorry",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adjective"
-          ],
-          "referenceKeys": [
-            "EN-REF-88032215EDC8D9793A11",
-            "EN-REF-B506796487B204B99A0E"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-NO-01",
-          "lemma": "no",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adjective",
-            "adverb",
-            "determiner",
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-B3EB4DDD348D5FA17BB4",
-            "EN-REF-BF0B30A66F593F2419AC",
-            "EN-REF-396A8E04F3C2E37BDFF7",
-            "EN-REF-F932CDB013A8581D163B",
-            "EN-REF-EDDF1D4FD8399678C580",
-            "EN-REF-8654BE13BDE89582289B"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-TEA-01",
-          "lemma": "tea",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-C86BD7B12371D318284C",
-            "EN-REF-AA88F6860DE17814613F"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-COFFEE-01",
-          "lemma": "coffee",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-DF86C36C215439FDE741",
-            "EN-REF-8061B958A613A2511A99"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-PLEASE-01",
-          "lemma": "please",
-          "partOfSpeech": "adverb",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-C831E951A26056666929"
-          ]
-        },
         {
           "lexicalKey": "EN-LEX-PEN-01",
           "lemma": "pen",
@@ -876,21 +318,6 @@
           "referenceKeys": [
             "EN-REF-950213E55A5DF7A7D1E1",
             "EN-REF-6CB64DEA48DE0EFA4185"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
           ]
         }
       ]
@@ -899,20 +326,6 @@
       "lessonKey": "EN-A1-L-0013",
       "items": [
         {
-          "lexicalKey": "EN-LEX-HELLO-01",
-          "lemma": "hello",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-5F9AA85DFDC90B15AC5C"
-          ]
-        },
-        {
           "lexicalKey": "EN-LEX-PEN-01",
           "lemma": "pen",
           "partOfSpeech": "noun",
@@ -934,69 +347,6 @@
           "referenceKeys": [
             "EN-REF-950213E55A5DF7A7D1E1",
             "EN-REF-6CB64DEA48DE0EFA4185"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-PLEASE-01",
-          "lemma": "please",
-          "partOfSpeech": "adverb",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-C831E951A26056666929"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-          "status": "not_applicable_multiword"
-        },
-        {
-          "lexicalKey": "EN-LEX-NO-01",
-          "lemma": "no",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adjective",
-            "adverb",
-            "determiner",
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-B3EB4DDD348D5FA17BB4",
-            "EN-REF-BF0B30A66F593F2419AC",
-            "EN-REF-396A8E04F3C2E37BDFF7",
-            "EN-REF-F932CDB013A8581D163B",
-            "EN-REF-EDDF1D4FD8399678C580",
-            "EN-REF-8654BE13BDE89582289B"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
-          "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-ON-01",
-          "lemma": "on",
-          "partOfSpeech": "preposition",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-F134FBB224795A6A216F"
           ]
         },
         {
@@ -1032,59 +382,31 @@
           "lexicalKey": "EN-LEX-ONE-01",
           "lemma": "one",
           "partOfSpeech": "numeral",
-          "status": "exact_match",
-          "curriculumEligible": true,
+          "status": "lemma_only_match",
+          "curriculumEligible": false,
           "productionEligible": false,
+          "referencePartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
           "referenceKeys": [
-            "EN-REF-2D929CE4C80ED3AA4C38"
+            "EN-REF-5DDC21634BD243C39949",
+            "EN-REF-612B3EEF3F412DFB71AF",
+            "EN-REF-C3855720391D9DD8BA55",
+            "EN-REF-73962656CACA5643A898",
+            "EN-REF-A6F51F464B26C435B780"
           ]
         },
         {
           "lexicalKey": "EN-LEX-TWO-01",
           "lemma": "two",
           "partOfSpeech": "numeral",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-9BF778266108C2D6AD3C"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-OR-01",
-          "lemma": "or",
-          "partOfSpeech": "conjunction",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-50ECEE439EA17F111DB9"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-PLEASE-01",
-          "lemma": "please",
-          "partOfSpeech": "adverb",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-C831E951A26056666929"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
           "status": "lemma_only_match",
           "curriculumEligible": true,
           "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
+          "referencePartOfSpeech": [],
           "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
+            "EN-REF-F6AC3516621E2258B7A4"
           ]
         }
       ]
@@ -1092,33 +414,6 @@
     {
       "lessonKey": "EN-A1-L-0015",
       "items": [
-        {
-          "lexicalKey": "EN-LEX-HOW-MUCH-01",
-          "status": "not_applicable_multiword"
-        },
-        {
-          "lexicalKey": "EN-LEX-FIVE-01",
-          "lemma": "five",
-          "partOfSpeech": "numeral",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-28C6E6A91F20F2CF2FD5"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-DOLLAR-01",
-          "lemma": "dollar",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-BA1B384346FA3B2B141B",
-            "EN-REF-506E7EF1DAF118FFE317"
-          ]
-        },
         {
           "lexicalKey": "EN-LEX-TEA-01",
           "lemma": "tea",
@@ -1132,29 +427,27 @@
           ]
         },
         {
-          "lexicalKey": "EN-LEX-PLEASE-01",
-          "lemma": "please",
-          "partOfSpeech": "adverb",
+          "lexicalKey": "EN-LEX-FIVE-01",
+          "lemma": "five",
+          "partOfSpeech": "noun",
           "status": "exact_match",
           "curriculumEligible": true,
-          "productionEligible": false,
+          "productionEligible": true,
           "referenceKeys": [
-            "EN-REF-C831E951A26056666929"
+            "EN-REF-383E3A44F37F70D1A279",
+            "EN-REF-281AB64D591383448599"
           ]
         },
         {
-          "lexicalKey": "EN-LEX-THANKS-01",
-          "lemma": "thanks",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
+          "lexicalKey": "EN-LEX-DOLLAR-01",
+          "lemma": "dollar",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
           "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "noun"
-          ],
+          "productionEligible": true,
           "referenceKeys": [
-            "EN-REF-2615745C5B6525B0F215",
-            "EN-REF-C9EB4E74C79CFEFE2E13"
+            "EN-REF-BA1B384346FA3B2B141B",
+            "EN-REF-506E7EF1DAF118FFE317"
           ]
         }
       ]
@@ -1163,51 +456,27 @@
       "lessonKey": "EN-A1-L-0016",
       "items": [
         {
-          "lexicalKey": "EN-LEX-TIME-01",
-          "lemma": "time",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": true,
-          "referenceKeys": [
-            "EN-REF-129CF40E43D414BBF26F",
-            "EN-REF-D8A5DAE93A0938FB717A"
-          ]
-        },
-        {
           "lexicalKey": "EN-LEX-SIX-01",
           "lemma": "six",
           "partOfSpeech": "numeral",
-          "status": "exact_match",
+          "status": "lemma_only_match",
           "curriculumEligible": true,
           "productionEligible": false,
+          "referencePartOfSpeech": [],
           "referenceKeys": [
-            "EN-REF-F68F2028439D23B07404"
+            "EN-REF-25693564129B4D26ABF4"
           ]
         },
         {
           "lexicalKey": "EN-LEX-AT-TIME-01",
           "lemma": "at",
           "partOfSpeech": "preposition",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-0D91DBC4EE67C22DB0BA"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-YES-01",
-          "lemma": "yes",
-          "partOfSpeech": "interjection",
           "status": "lemma_only_match",
           "curriculumEligible": true,
           "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adverb"
-          ],
+          "referencePartOfSpeech": [],
           "referenceKeys": [
-            "EN-REF-0853E2E3FCAEC311CBB7"
+            "EN-REF-8045CB763B7D7DD27AC8"
           ]
         }
       ]
@@ -1216,15 +485,22 @@
       "lessonKey": "EN-A1-L-0017",
       "items": [
         {
-          "lexicalKey": "EN-LEX-DAY-01",
-          "lemma": "day",
-          "partOfSpeech": "noun",
-          "status": "exact_match",
+          "lexicalKey": "EN-LEX-ON-DAY-01",
+          "lemma": "on",
+          "partOfSpeech": "preposition",
+          "status": "lemma_only_match",
           "curriculumEligible": true,
-          "productionEligible": true,
+          "productionEligible": false,
+          "referencePartOfSpeech": [
+            "adjective",
+            "adverb"
+          ],
           "referenceKeys": [
-            "EN-REF-0A1B6C644EA3E00970D7",
-            "EN-REF-C97725EAE344D219D360"
+            "EN-REF-6F97B9EC45F98E6F3CF6",
+            "EN-REF-5CE24C1B36F34E39EE2E",
+            "EN-REF-363C0AA2EDA88BAF7EFE",
+            "EN-REF-2EA083D4C645EDC44B0C",
+            "EN-REF-311162C937E224D25D9B"
           ]
         },
         {
@@ -1236,31 +512,6 @@
           "productionEligible": true,
           "referenceKeys": [
             "EN-REF-511B8AEB352146D3828E"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-ON-DAY-01",
-          "lemma": "on",
-          "partOfSpeech": "preposition",
-          "status": "exact_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referenceKeys": [
-            "EN-REF-F134FBB224795A6A216F"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-YES-01",
-          "lemma": "yes",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adverb"
-          ],
-          "referenceKeys": [
-            "EN-REF-0853E2E3FCAEC311CBB7"
           ]
         }
       ]
@@ -1303,24 +554,6 @@
             "EN-REF-950213E55A5DF7A7D1E1",
             "EN-REF-6CB64DEA48DE0EFA4185"
           ]
-        },
-        {
-          "lexicalKey": "EN-LEX-YES-01",
-          "lemma": "yes",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adverb"
-          ],
-          "referenceKeys": [
-            "EN-REF-0853E2E3FCAEC311CBB7"
-          ]
-        },
-        {
-          "lexicalKey": "EN-LEX-HERE-YOU-GO-01",
-          "status": "not_applicable_multiword"
         }
       ]
     },
@@ -1338,23 +571,6 @@
             "EN-REF-76A0FAF42C7FB7906AA5",
             "EN-REF-F7E093ADABBBFD618D01"
           ]
-        },
-        {
-          "lexicalKey": "EN-LEX-SURE-01",
-          "lemma": "sure",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
-          "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adjective",
-            "adverb"
-          ],
-          "referenceKeys": [
-            "EN-REF-73F8168756416BF6830B",
-            "EN-REF-BCACFF74DF21B0729532",
-            "EN-REF-856A5813F6092CC37145"
-          ]
         }
       ]
     },
@@ -1362,14 +578,250 @@
       "lessonKey": "EN-A1-L-0020",
       "items": [
         {
+          "lexicalKey": "EN-LEX-ROOM-01",
+          "lemma": "room",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D8B2B1429B2580871B77",
+            "EN-REF-920AB60876EB00716D0A"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-ONE-01",
+          "lemma": "one",
+          "partOfSpeech": "numeral",
+          "status": "lemma_only_match",
+          "curriculumEligible": false,
+          "productionEligible": false,
+          "referencePartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "referenceKeys": [
+            "EN-REF-5DDC21634BD243C39949",
+            "EN-REF-612B3EEF3F412DFB71AF",
+            "EN-REF-C3855720391D9DD8BA55",
+            "EN-REF-73962656CACA5643A898",
+            "EN-REF-A6F51F464B26C435B780"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-TWO-01",
+          "lemma": "two",
+          "partOfSpeech": "numeral",
+          "status": "lemma_only_match",
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "referencePartOfSpeech": [],
+          "referenceKeys": [
+            "EN-REF-F6AC3516621E2258B7A4"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-AT-TIME-01",
+          "lemma": "at",
+          "partOfSpeech": "preposition",
+          "status": "lemma_only_match",
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "referencePartOfSpeech": [],
+          "referenceKeys": [
+            "EN-REF-8045CB763B7D7DD27AC8"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-SIX-01",
+          "lemma": "six",
+          "partOfSpeech": "numeral",
+          "status": "lemma_only_match",
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "referencePartOfSpeech": [],
+          "referenceKeys": [
+            "EN-REF-25693564129B4D26ABF4"
+          ]
+        },
+        {
           "lexicalKey": "EN-LEX-SEVEN-01",
           "lemma": "seven",
           "partOfSpeech": "numeral",
-          "status": "exact_match",
+          "status": "lemma_only_match",
           "curriculumEligible": true,
           "productionEligible": false,
+          "referencePartOfSpeech": [],
           "referenceKeys": [
-            "EN-REF-386CD30D787566CE330B"
+            "EN-REF-148EBAE032D92313CD1A"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0021",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LIKE-01",
+          "lemma": "like",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-5937920730875C08EB9D",
+            "EN-REF-9C19956E7CFA0CDAD30B"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-TEA-01",
+          "lemma": "tea",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C86BD7B12371D318284C",
+            "EN-REF-AA88F6860DE17814613F"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-COFFEE-01",
+          "lemma": "coffee",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-DF86C36C215439FDE741",
+            "EN-REF-8061B958A613A2511A99"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0022",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-WANT-01",
+          "lemma": "want",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-CA08F7EB97E97D92177A",
+            "EN-REF-10EB8D109823240273AD"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-WATER-01",
+          "lemma": "water",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-93033FDD55B1A504F831",
+            "EN-REF-DD54F822E90CB981E36E"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-TEA-01",
+          "lemma": "tea",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C86BD7B12371D318284C",
+            "EN-REF-AA88F6860DE17814613F"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0023",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-READ-01",
+          "lemma": "read",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F4E87C743D4964D90BCD",
+            "EN-REF-67262AEE973EC2478E7B"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0024",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-PEN-01",
+          "lemma": "pen",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-E7158161767216455400",
+            "EN-REF-5EC7C57202D339DAB434"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0025",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-NOT-01",
+          "lemma": "not",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-84D3F8ECE5F12EF40C83"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-HELP-01",
+          "lemma": "help",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-76A0FAF42C7FB7906AA5",
+            "EN-REF-F7E093ADABBBFD618D01"
           ]
         },
         {
@@ -1388,24 +840,160 @@
           "lexicalKey": "EN-LEX-ONE-01",
           "lemma": "one",
           "partOfSpeech": "numeral",
-          "status": "exact_match",
-          "curriculumEligible": true,
+          "status": "lemma_only_match",
+          "curriculumEligible": false,
           "productionEligible": false,
+          "referencePartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
           "referenceKeys": [
-            "EN-REF-2D929CE4C80ED3AA4C38"
+            "EN-REF-5DDC21634BD243C39949",
+            "EN-REF-612B3EEF3F412DFB71AF",
+            "EN-REF-C3855720391D9DD8BA55",
+            "EN-REF-73962656CACA5643A898",
+            "EN-REF-A6F51F464B26C435B780"
           ]
         },
         {
           "lexicalKey": "EN-LEX-TWO-01",
           "lemma": "two",
           "partOfSpeech": "numeral",
-          "status": "exact_match",
+          "status": "lemma_only_match",
           "curriculumEligible": true,
           "productionEligible": false,
+          "referencePartOfSpeech": [],
           "referenceKeys": [
-            "EN-REF-9BF778266108C2D6AD3C"
+            "EN-REF-F6AC3516621E2258B7A4"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0026",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-AT-TIME-01",
+          "lemma": "at",
+          "partOfSpeech": "preposition",
+          "status": "lemma_only_match",
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "referencePartOfSpeech": [],
+          "referenceKeys": [
+            "EN-REF-8045CB763B7D7DD27AC8"
           ]
         },
+        {
+          "lexicalKey": "EN-LEX-SIX-01",
+          "lemma": "six",
+          "partOfSpeech": "numeral",
+          "status": "lemma_only_match",
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "referencePartOfSpeech": [],
+          "referenceKeys": [
+            "EN-REF-25693564129B4D26ABF4"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-ROOM-01",
+          "lemma": "room",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D8B2B1429B2580871B77",
+            "EN-REF-920AB60876EB00716D0A"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-ONE-01",
+          "lemma": "one",
+          "partOfSpeech": "numeral",
+          "status": "lemma_only_match",
+          "curriculumEligible": false,
+          "productionEligible": false,
+          "referencePartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "referenceKeys": [
+            "EN-REF-5DDC21634BD243C39949",
+            "EN-REF-612B3EEF3F412DFB71AF",
+            "EN-REF-C3855720391D9DD8BA55",
+            "EN-REF-73962656CACA5643A898",
+            "EN-REF-A6F51F464B26C435B780"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-TWO-01",
+          "lemma": "two",
+          "partOfSpeech": "numeral",
+          "status": "lemma_only_match",
+          "curriculumEligible": true,
+          "productionEligible": false,
+          "referencePartOfSpeech": [],
+          "referenceKeys": [
+            "EN-REF-F6AC3516621E2258B7A4"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0027",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-COFFEE-01",
+          "lemma": "coffee",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-DF86C36C215439FDE741",
+            "EN-REF-8061B958A613A2511A99"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0028",
+      "items": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0029",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-JUST-01",
+          "lemma": "just",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-A098E62586DE3D66DADA",
+            "EN-REF-4849B7DA7DE5825580E4"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0030",
+      "items": [
         {
           "lexicalKey": "EN-LEX-TIME-01",
           "lemma": "time",
@@ -1419,39 +1007,2479 @@
           ]
         },
         {
-          "lexicalKey": "EN-LEX-SIX-01",
-          "lemma": "six",
-          "partOfSpeech": "numeral",
+          "lexicalKey": "EN-LEX-READ-01",
+          "lemma": "read",
+          "partOfSpeech": "verb",
           "status": "exact_match",
           "curriculumEligible": true,
-          "productionEligible": false,
+          "productionEligible": true,
           "referenceKeys": [
-            "EN-REF-F68F2028439D23B07404"
+            "EN-REF-F4E87C743D4964D90BCD",
+            "EN-REF-67262AEE973EC2478E7B"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0031",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
           ]
         },
         {
-          "lexicalKey": "EN-LEX-AT-TIME-01",
-          "lemma": "at",
-          "partOfSpeech": "preposition",
+          "lexicalKey": "EN-LEX-PEN-01",
+          "lemma": "pen",
+          "partOfSpeech": "noun",
           "status": "exact_match",
           "curriculumEligible": true,
-          "productionEligible": false,
+          "productionEligible": true,
           "referenceKeys": [
-            "EN-REF-0D91DBC4EE67C22DB0BA"
+            "EN-REF-E7158161767216455400",
+            "EN-REF-5EC7C57202D339DAB434"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0032",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-NEW-01",
+          "lemma": "new",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-B6BF7C8C4C3EA87A7547",
+            "EN-REF-F6BDBBC89D6EE768B600"
           ]
         },
         {
-          "lexicalKey": "EN-LEX-YES-01",
-          "lemma": "yes",
-          "partOfSpeech": "interjection",
-          "status": "lemma_only_match",
+          "lexicalKey": "EN-LEX-ROOM-01",
+          "lemma": "room",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
           "curriculumEligible": true,
-          "productionEligible": false,
-          "referencePartOfSpeech": [
-            "adverb"
-          ],
+          "productionEligible": true,
           "referenceKeys": [
-            "EN-REF-0853E2E3FCAEC311CBB7"
+            "EN-REF-D8B2B1429B2580871B77",
+            "EN-REF-920AB60876EB00716D0A"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0033",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PEOPLE-01",
+          "lemma": "people",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-457C441FDB6DEC1BED1E",
+            "EN-REF-6570BAC14F7FC58D2952"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-COFFEE-01",
+          "lemma": "coffee",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-DF86C36C215439FDE741",
+            "EN-REF-8061B958A613A2511A99"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-READ-01",
+          "lemma": "read",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F4E87C743D4964D90BCD",
+            "EN-REF-67262AEE973EC2478E7B"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0034",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-ALSO-01",
+          "lemma": "also",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-81113C4813B52A7DF5B0"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-COFFEE-01",
+          "lemma": "coffee",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-DF86C36C215439FDE741",
+            "EN-REF-8061B958A613A2511A99"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-READ-01",
+          "lemma": "read",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F4E87C743D4964D90BCD",
+            "EN-REF-67262AEE973EC2478E7B"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0035",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-HELP-01",
+          "lemma": "help",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-76A0FAF42C7FB7906AA5",
+            "EN-REF-F7E093ADABBBFD618D01"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0036",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-PEN-01",
+          "lemma": "pen",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-E7158161767216455400",
+            "EN-REF-5EC7C57202D339DAB434"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0037",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-GET-01",
+          "lemma": "get",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-151E514968A325F5CAA9",
+            "EN-REF-2CDA58CB1C2A8B049C68"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-PEN-01",
+          "lemma": "pen",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-E7158161767216455400",
+            "EN-REF-5EC7C57202D339DAB434"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0038",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-ONLY-01",
+          "lemma": "only",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F1D76C812E1EDA1B8F46",
+            "EN-REF-5320BD09536B0BDF9C36"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-NEW-01",
+          "lemma": "new",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-B6BF7C8C4C3EA87A7547",
+            "EN-REF-F6BDBBC89D6EE768B600"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-READ-01",
+          "lemma": "read",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F4E87C743D4964D90BCD",
+            "EN-REF-67262AEE973EC2478E7B"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0039",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-FIRST-01",
+          "lemma": "first",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-197973A0FC02917F1CE5",
+            "EN-REF-A42DADD4EAEBC5DA33DA"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-ROOM-01",
+          "lemma": "room",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D8B2B1429B2580871B77",
+            "EN-REF-920AB60876EB00716D0A"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-NEW-01",
+          "lemma": "new",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-B6BF7C8C4C3EA87A7547",
+            "EN-REF-F6BDBBC89D6EE768B600"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0040",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-KNOW-01",
+          "lemma": "know",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D277A31EE85CEBDF62F6",
+            "EN-REF-9FCFD5059353A2E457AB"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-NAME-01",
+          "lemma": "name",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F7A6AD8E6587EDA3E40E",
+            "EN-REF-E4F6451340C7A9A05026"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0041",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MAKE-01",
+          "lemma": "make",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-39C6EB767664D6211984",
+            "EN-REF-97490158816B8C5EE89A"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-COFFEE-01",
+          "lemma": "coffee",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-DF86C36C215439FDE741",
+            "EN-REF-8061B958A613A2511A99"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-TEA-01",
+          "lemma": "tea",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C86BD7B12371D318284C",
+            "EN-REF-AA88F6860DE17814613F"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0042",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-THINK-01",
+          "lemma": "think",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-32A9B1B4D1FA20FAC633",
+            "EN-REF-8349A718A3B4A2ECFCCE"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-PEN-01",
+          "lemma": "pen",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-E7158161767216455400",
+            "EN-REF-5EC7C57202D339DAB434"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0043",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-THEN-01",
+          "lemma": "then",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-BE697DC952E39C4808D0",
+            "EN-REF-98F9C4CDDB796FCB9564"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-READ-01",
+          "lemma": "read",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F4E87C743D4964D90BCD",
+            "EN-REF-67262AEE973EC2478E7B"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-HELP-01",
+          "lemma": "help",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-76A0FAF42C7FB7906AA5",
+            "EN-REF-F7E093ADABBBFD618D01"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0044",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-BACK-01",
+          "lemma": "back",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-1A4E4A764F5FC7232175",
+            "EN-REF-01F451BA3381EA0BB355"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-BOOK-01",
+          "lemma": "book",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-950213E55A5DF7A7D1E1",
+            "EN-REF-6CB64DEA48DE0EFA4185"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0045",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-WELL-01",
+          "lemma": "well",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D8F414A2604D92EB368F",
+            "EN-REF-B23048ACB0DEEA58E93A"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0046",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-SAY-01",
+          "lemma": "say",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-909372E9857B18CD5B47",
+            "EN-REF-53B76F09801A10D9A27C"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0047",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-WAY-01",
+          "lemma": "way",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0D08F59231CEFD71D217",
+            "EN-REF-86FF2ADB9D436CEDC4D4"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0048",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-VERY-01",
+          "lemma": "very",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-8F90EB8DE235DBB793EC",
+            "EN-REF-3726F509C1D141651B29"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0049",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-REALLY-01",
+          "lemma": "really",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-A80BB45A0B60B3D504B1",
+            "EN-REF-4B6D91F28ED1F1CF3053"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0050",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-RIGHT-01",
+          "lemma": "right",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-A6142DB4FBBB0413B251",
+            "EN-REF-BC6FDA5A26D3BF0F91BC"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0051",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-WORK-01",
+          "lemma": "work",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-707276E9B50E98A64FDC",
+            "EN-REF-61C9B3B036D0D1EACE39"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0052",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-YEAR-01",
+          "lemma": "year",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-406B7051AEBFA5D0B922",
+            "EN-REF-3B975E01F7D80CC9DE0D"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0053",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-DAY-01",
+          "lemma": "day",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0A1B6C644EA3E00970D7",
+            "EN-REF-C97725EAE344D219D360"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0054",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-TAKE-01",
+          "lemma": "take",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-9A2CAA84954D0F700A83",
+            "EN-REF-DDE94C995E1E33B66184"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0055",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MANY-01",
+          "lemma": "many",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-AF7CB28B0E5289AACE02"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0056",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-NEVER-01",
+          "lemma": "never",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-6B546FF3BD937790B93A",
+            "EN-REF-CBD473C2ED2E9B71A091"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0057",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LIFE-01",
+          "lemma": "life",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-DFDB9BBAFFFAA468D0D5",
+            "EN-REF-B75FFD015565FAEAEAFD"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0058",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-GREAT-01",
+          "lemma": "great",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-6E0A0655B7792EC9F36A",
+            "EN-REF-B5C1F282D9FFA780759D"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0059",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LOVE-01",
+          "lemma": "love",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-2BB5BF37E5BA015F4CF1",
+            "EN-REF-FAF4143EFC3993C436DA"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0060",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MAN-01",
+          "lemma": "man",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-2B7493A61CF4CDE6FD1B",
+            "EN-REF-CDFE9951D3DC4956A7CA"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0061",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-HOME-01",
+          "lemma": "home",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-AE18605505232625BC33",
+            "EN-REF-A9160141C74E3646C216"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0062",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LONG-01",
+          "lemma": "long",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-E61D9DF3C3BD1F428FCD",
+            "EN-REF-CC9549EC48AB4F136F12"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0063",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LOOK-01",
+          "lemma": "look",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-CEC6E367709B460985A7",
+            "EN-REF-F4E0EC7F0FF27F209AAA"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0064",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-USE-01",
+          "lemma": "use",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C2EDF75499FF0145A82E",
+            "EN-REF-087C91F193E1D46DCD99"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0065",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-SAME-01",
+          "lemma": "same",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-B35BB4DAF1028B912470",
+            "EN-REF-7001E323267002E4B9A3"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0066",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-ALWAYS-01",
+          "lemma": "always",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D0D4EFB891F79DAA0D6A",
+            "EN-REF-EBFE9E6AB98BB440B076"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0067",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-FIND-01",
+          "lemma": "find",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-B0557BDAEBCC83C0BEEA",
+            "EN-REF-A5F5238F1FC7406E87F4"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0068",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-HIGH-01",
+          "lemma": "high",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-6410B02A3BE2A57847DC",
+            "EN-REF-13016557757AB5724AE0"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0069",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LITTLE-01",
+          "lemma": "little",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-8505C5C9592D47604147",
+            "EN-REF-5A7DEC20E82FE4DAE344"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0070",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-OLD-01",
+          "lemma": "old",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-8CF327005C4F1FA1A2D3",
+            "EN-REF-CE451BE9C52B9246793B"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-MAN-01",
+          "lemma": "man",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-2B7493A61CF4CDE6FD1B",
+            "EN-REF-CDFE9951D3DC4956A7CA"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0071",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-OWN-01",
+          "lemma": "own",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-4D0DEC6F83600A07BAF4"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0072",
+      "items": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0073",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-GIVE-01",
+          "lemma": "give",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-ED6CD50302AE2F03D0B0",
+            "EN-REF-03DECD6DAADF173B8AAA"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0074",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-HOUSE-01",
+          "lemma": "house",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-ABFB0984D16C86BCF8C2",
+            "EN-REF-FB7399A1FE02CCDF1719"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0075",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PLACE-01",
+          "lemma": "place",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-1FA78A6293F189D7392A",
+            "EN-REF-71F1E87EB3CB11FE298D"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0076",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-SCHOOL-01",
+          "lemma": "school",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-DB1056659882CF2630CB",
+            "EN-REF-6CE970277D2442755BDE"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0077",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-THING-01",
+          "lemma": "thing",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-12ED98547672E939478B",
+            "EN-REF-2A37D0320A521F474326"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0078",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-AGAIN-01",
+          "lemma": "again",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-100DF030E95A3ABD1620"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0079",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-END-01",
+          "lemma": "end",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-CD29E35FCD3254B05053",
+            "EN-REF-3C3EFF2A6E7031B48665"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0080",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-SHOW-01",
+          "lemma": "show",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-470785EBFA119E25BB5E",
+            "EN-REF-81DE1E83D11EC029F710"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0081",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-FEEL-01",
+          "lemma": "feel",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-A6C19DF651F9E7E2A898",
+            "EN-REF-1A2B364669814C1EC301"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0082",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-FAMILY-01",
+          "lemma": "family",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D9CD7C6063EED6942890",
+            "EN-REF-642F22467E73900CAF31"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0083",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-KEEP-01",
+          "lemma": "keep",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0B89952F0FE20CEA2916",
+            "EN-REF-81C0F4D4037FC1C24C56"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0084",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PUT-01",
+          "lemma": "put",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C08A969D707F941CF713",
+            "EN-REF-792F2D917FBABEA062EC"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0085",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MONEY-01",
+          "lemma": "money",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-5A9814F5EA35560CF130",
+            "EN-REF-2154D4D3C8EC724CED2D"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0086",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-SECOND-01",
+          "lemma": "second",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-5CB4601793BB8852E701",
+            "EN-REF-AFDD44A49B8CB3C62A06"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0087",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-AWAY-01",
+          "lemma": "away",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-E0D8A4E944AACAC75DCF",
+            "EN-REF-1FCB64250B0814DB335F"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0088",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LEAVE-01",
+          "lemma": "leave",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-A8BCB5B3B72B1D8D4BC0",
+            "EN-REF-92B193E22B2487BDDE55"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0089",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-NUMBER-01",
+          "lemma": "number",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-3EF0539547FA3D1A2914",
+            "EN-REF-C00339207AF96C7E13F4"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0090",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-NIGHT-01",
+          "lemma": "night",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-36C2D457AAB5FB3236FD",
+            "EN-REF-7D26EC9996460EA2EB68"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0091",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PLAY-DRAMA-01",
+          "lemma": "play",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-EFE663DDBFF95909F18D",
+            "EN-REF-87D08E96E48D60384CAD"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0092",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LET-01",
+          "lemma": "let",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-822E2F6E42E9A097A5B1",
+            "EN-REF-2DB253A037F608153DDA"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0093",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-REAL-01",
+          "lemma": "real",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F8DC2D43692189B39E4D",
+            "EN-REF-BDBE6713E904F1FABD8D"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0094",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-CALL-01",
+          "lemma": "call",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-008BCA6A5045C6993B05",
+            "EN-REF-A6461798B2FD09A24234"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0095",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-DIFFERENT-01",
+          "lemma": "different",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0A7276B5F4CE08DF6DA3",
+            "EN-REF-010C49B61AD2EF46DBFF"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0096",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-SET-01",
+          "lemma": "set",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-034B84E73539136F14F2",
+            "EN-REF-884BD4B24BDF09348E44"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0097",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-GROUP-01",
+          "lemma": "group",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-8419544776BCCCC364D1",
+            "EN-REF-6DAB3F7CC16CF12E48E2"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0098",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-WOMAN-01",
+          "lemma": "woman",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-761162F7BCB39FF5E2AE",
+            "EN-REF-39642CD2F3542BB37B88"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0099",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-START-01",
+          "lemma": "start",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-15277216F35D9B6D2A60",
+            "EN-REF-F3B8A6B062F918DF77AE"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0100",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-WEEK-01",
+          "lemma": "week",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C98FC3F4AFADFACCDBD2",
+            "EN-REF-79CE62843766C00AD025"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0101",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-CASE-01",
+          "lemma": "case",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-63862F3E1C9FD21A8C7A",
+            "EN-REF-3F5FB7D1F8CF08668C64"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0102",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-NOTHING-01",
+          "lemma": "nothing",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-AE40E471718D0B29A972"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0103",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PERSON-01",
+          "lemma": "person",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D19447966B11A83B3EB4",
+            "EN-REF-4BC742ED46922F408717"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0104",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-TODAY-01",
+          "lemma": "today",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-1997480586EC87F5C50E",
+            "EN-REF-F2B8EAB4B5D71FB6BE5C"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0105",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-CHANGE-01",
+          "lemma": "change",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-BAB8EF3E007A39DD06CF",
+            "EN-REF-DBD8E8D7F11DC9C5C31D"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0106",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LIVE-01",
+          "lemma": "live",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-75482DDBA0D1AE58096D",
+            "EN-REF-943B46267B78124195F8"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0107",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-POINT-01",
+          "lemma": "point",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-04DC6FFF074ECB4ACEC6",
+            "EN-REF-144BF1328249FDEBA0A0"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0108",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-TELL-01",
+          "lemma": "tell",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-9E2B0035AEED4D6DCD08",
+            "EN-REF-E2AC17AC2ABEC5A3F173"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0109",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-YET-01",
+          "lemma": "yet",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-5893AAFF6B2CEDC06239",
+            "EN-REF-C995DA666C1C745882B6"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0110",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-BAD-01",
+          "lemma": "bad",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-38B62335FECEE9BE762F",
+            "EN-REF-925D2E96D2DC56488BD9"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0111",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MEAN-01",
+          "lemma": "mean",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-B28BE61B72DEFF5D19D7",
+            "EN-REF-5C33A04667221C813E5F"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0112",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-ONCE-01",
+          "lemma": "once",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-B06942371B3478EA9116",
+            "EN-REF-904FA287FB42F1AF7E91"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0113",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-BELIEVE-01",
+          "lemma": "believe",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-8C795BF69F25C3DEF2B7",
+            "EN-REF-CE5B19328AC5F3FF5F42"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0114",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-JOB-01",
+          "lemma": "job",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-4D72420450677133182C",
+            "EN-REF-2F660ABB2C93E6E75BB1"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0115",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-RUN-BASEBALL-01",
+          "lemma": "run",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0C1AC9FF6BDD13AF075C",
+            "EN-REF-E45D12D1E7A4485E989E"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0116",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-OPEN-ADJ-01",
+          "lemma": "open",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-BCD1D2C8A2C521EBE190",
+            "EN-REF-B4EED141912570712922"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0117",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-CHILD-01",
+          "lemma": "child",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C98D5C0962EEDD93EECB",
+            "EN-REF-B644DF754464DF507A8C"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0118",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-TOGETHER-01",
+          "lemma": "together",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-A542D2A39EC50C704808",
+            "EN-REF-3F609A332F2EB8FC99B2"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0119",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-CAR-01",
+          "lemma": "car",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C3782CE4889E99D89703",
+            "EN-REF-FB5447948FAD05D786C5"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0120",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-KIND-01",
+          "lemma": "kind",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-69577512889902F6E3DF"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0121",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MAYBE-01",
+          "lemma": "maybe",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-BA806438481F91EBE70B"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0122",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-COURSE-01",
+          "lemma": "course",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-F432FE5C141F6B2C3BB4",
+            "EN-REF-0271EA259E20BB1B1C74"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0123",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-IMPORTANT-01",
+          "lemma": "important",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-E06128CF92AF30B1D913",
+            "EN-REF-F6E188E3D83FCF5E419D"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0124",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-FRIEND-01",
+          "lemma": "friend",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-9A72175994227A18B24C",
+            "EN-REF-B022940990DB936A6C1B"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0125",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-INFORMATION-01",
+          "lemma": "information",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-9853AFC7B0713F407C02",
+            "EN-REF-10D35DAB7F19F4EDD334"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0126",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-AGO-01",
+          "lemma": "ago",
+          "partOfSpeech": "adverb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D2B9AD8BA5039FFACAA0"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0127",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-TALK-01",
+          "lemma": "talk",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-5BB1D818E803C3AAAD78",
+            "EN-REF-EB06F260FE92440085BE"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0128",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-GUY-01",
+          "lemma": "guy",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-5EECAB606336BC5B2F9C",
+            "EN-REF-AD84BF30A82046B13FF4"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0129",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-HAND-01",
+          "lemma": "hand",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-24EDFB61566C76B32ED4",
+            "EN-REF-C4BF2FC543CBA685C971"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0130",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MIND-01",
+          "lemma": "mind",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-34B22C25F41CD3FAC8AB",
+            "EN-REF-9F79334C6E915FD34118"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0131",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-HOUR-01",
+          "lemma": "hour",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0BB648B61B43C2F09765",
+            "EN-REF-7F976BDFC10C237959D3"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0132",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PAY-01",
+          "lemma": "pay",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D0333378B0ABA3C09687"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-KNOW-01",
+          "lemma": "know",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D277A31EE85CEBDF62F6",
+            "EN-REF-9FCFD5059353A2E457AB"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-MAKE-01",
+          "lemma": "make",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-39C6EB767664D6211984",
+            "EN-REF-97490158816B8C5EE89A"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-WORK-01",
+          "lemma": "work",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-707276E9B50E98A64FDC",
+            "EN-REF-61C9B3B036D0D1EACE39"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-DAY-01",
+          "lemma": "day",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0A1B6C644EA3E00970D7",
+            "EN-REF-C97725EAE344D219D360"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0133",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PROBLEM-01",
+          "lemma": "problem",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-1319241A7CB143D65116",
+            "EN-REF-049427A4533F9CD6A76F"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0134",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PRETTY-01",
+          "lemma": "pretty",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-94E303E18818495BC1AE",
+            "EN-REF-86512E51307BBDF5FB82"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0135",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-REMEMBER-01",
+          "lemma": "remember",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-126A30548A074DD19C19",
+            "EN-REF-907E75EE3015BD5D2CFB"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-INFORMATION-01",
+          "lemma": "information",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-9853AFC7B0713F407C02",
+            "EN-REF-10D35DAB7F19F4EDD334"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-MIND-01",
+          "lemma": "mind",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-34B22C25F41CD3FAC8AB",
+            "EN-REF-9F79334C6E915FD34118"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0136",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-IDEA-01",
+          "lemma": "idea",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-1F353D28E47A198DB2CC",
+            "EN-REF-E9DDBF1ED71A9F5A1F8A"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0137",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MONTH-01",
+          "lemma": "month",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-314CD051A363E320B5DA",
+            "EN-REF-B57EA9F3579A9488424A"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0138",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MOVE-01",
+          "lemma": "move",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C2B0DF18791DF3EF0B8A",
+            "EN-REF-1F780C5BF6B82E6154F4"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0139",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-QUESTION-01",
+          "lemma": "question",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-16C969B1C79EEB783BF0",
+            "EN-REF-0C1AA93290D3513E081E"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0140",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-ASK-01",
+          "lemma": "ask",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-8C2B229D374D0E30EA39",
+            "EN-REF-AF077242A309DD98C74F"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-KNOW-01",
+          "lemma": "know",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D277A31EE85CEBDF62F6",
+            "EN-REF-9FCFD5059353A2E457AB"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-MAKE-01",
+          "lemma": "make",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-39C6EB767664D6211984",
+            "EN-REF-97490158816B8C5EE89A"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-WORK-01",
+          "lemma": "work",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-707276E9B50E98A64FDC",
+            "EN-REF-61C9B3B036D0D1EACE39"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-DAY-01",
+          "lemma": "day",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0A1B6C644EA3E00970D7",
+            "EN-REF-C97725EAE344D219D360"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0141",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-LATE-01",
+          "lemma": "late",
+          "partOfSpeech": "adjective",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-242CD12A12451F88F86E",
+            "EN-REF-99185A28D10DE42CD23C"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-WORK-01",
+          "lemma": "work",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-707276E9B50E98A64FDC",
+            "EN-REF-61C9B3B036D0D1EACE39"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0142",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MORNING-01",
+          "lemma": "morning",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-E25BA5022C987A2BDA77",
+            "EN-REF-0765893C1F35EC55A8AB"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-DAY-01",
+          "lemma": "day",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-0A1B6C644EA3E00970D7",
+            "EN-REF-C97725EAE344D219D360"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0143",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-BUY-01",
+          "lemma": "buy",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-C211A6110CA02B9D7502",
+            "EN-REF-9AD6038AD631D57729AC"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0144",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-REASON-01",
+          "lemma": "reason",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-AC01B235A288B0F57DBB",
+            "EN-REF-40FA62AAFA8A6CDDDED2"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0145",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-MINUTE-01",
+          "lemma": "minute",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-ACAF1BFF6CA0D4244AC4",
+            "EN-REF-C8F671F1E884CE868A81"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-KNOW-01",
+          "lemma": "know",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-D277A31EE85CEBDF62F6",
+            "EN-REF-9FCFD5059353A2E457AB"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0146",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-PLAN-01",
+          "lemma": "plan",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-79C0C6E6180932A0CEED",
+            "EN-REF-EA7B9684AB11BAA40440"
+          ]
+        },
+        {
+          "lexicalKey": "EN-LEX-MAKE-01",
+          "lemma": "make",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-39C6EB767664D6211984",
+            "EN-REF-97490158816B8C5EE89A"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0147",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-KID-01",
+          "lemma": "kid",
+          "partOfSpeech": "noun",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-153429F6DD5BF6E80B12",
+            "EN-REF-D95D26B31381A8FCB9DE"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonKey": "EN-A1-L-0148",
+      "items": [
+        {
+          "lexicalKey": "EN-LEX-BRING-01",
+          "lemma": "bring",
+          "partOfSpeech": "verb",
+          "status": "exact_match",
+          "curriculumEligible": true,
+          "productionEligible": true,
+          "referenceKeys": [
+            "EN-REF-B1F0B9E9B8E7BFBBAB32",
+            "EN-REF-BD7D3279C864D6CA9E4E"
           ]
         }
       ]
