@@ -12,6 +12,7 @@ from pathlib import Path
 from reference_data import (
     LEVELS,
     build_cefr_indexes,
+    canonical_reference_level,
     dump_json,
     is_curriculum_eligible,
     is_production_eligible,
@@ -158,7 +159,7 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 else:
                     counts["reviewOnly"] += 1
                 seen_lemma_pos.add((lemma, pos))
-                level = cefr.get("level")
+                level = canonical_reference_level(record)
                 if level in by_level:
                     by_level[level].append(record)
                 else:
@@ -213,7 +214,11 @@ def build_snapshot(repo_root: Path, source_cache: Path | None = None) -> dict:
                 counts["productionEligible"] += 1
             else:
                 counts["reviewOnly"] += 1
-            by_level[profile_level].append(record)
+            level = canonical_reference_level(record, profile_level)
+            if level in by_level:
+                by_level[level].append(record)
+            else:
+                unplaced.append(record)
             seen_lemma_pos.add((lemma, pos))
 
         grammar_rows = parse_grammar_csv(grammar_text)
