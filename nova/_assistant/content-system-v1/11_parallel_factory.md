@@ -5,6 +5,11 @@ Nova bulk authoring uses a **single canonical writer** with up to **8 parallel d
 The speedup comes from parallelizing creative drafting while keeping curriculum state,
 canonical Lesson files, and cross-Lesson QA sequential and deterministic.
 
+For current English→Persian production, worker packets should be planned through the
+**open-corpus wrapper** documented in `14_open_corpus_authoring.md`. The underlying
+factory architecture is unchanged; the wrapper adds pinned, verbatim dialogue candidates
+before workers draft learner-visible content.
+
 ## Safety model
 
 - Workers never write `nova/courses/.../lessons/.../lesson.source.json`.
@@ -12,6 +17,8 @@ canonical Lesson files, and cross-Lesson QA sequential and deterministic.
 - The first packet uses the current locked canonical Lesson spec when one exists.
 - Later packets use provisional specs built from the same reference layer while reserving
   top grammar/lexical candidates between slots to reduce duplicate targeting.
+- In open-corpus mode, packets also reserve different source-dialogue candidates so two
+  workers do not independently copy the same conversation in one wave.
 - Provisional specs are not a source of truth. During integration, the live sequential
   canonical spec always wins.
 - Integration happens in Lesson order through one Integration Writer gate.
@@ -20,7 +27,20 @@ canonical Lesson files, and cross-Lesson QA sequential and deterministic.
   canonical prefix. Story and Factory Design checks are never replaced by cached results.
 - Paid audio is outside worker authoring and is generated only after the normal text gates.
 
-## Plan an 8-worker wave
+## Plan an 8-worker production wave
+
+Use the source-backed planner for current production:
+
+```bash
+python nova/_assistant/content-system-v1/tools/open_corpus_wave.py \
+  --repo-root . \
+  --config nova/curriculum/en-fa/factory.config.json \
+  --workspace-dir nova/curriculum/en-fa \
+  --workers 8
+```
+
+The lower-level planner remains available for factory tests or intentionally non-corpus
+experiments:
 
 ```bash
 python nova/_assistant/content-system-v1/tools/factory_wave.py plan \
@@ -36,6 +56,10 @@ For the current A1 prefix this creates one packet per upcoming Lesson under:
 
 Each worker writes the requested `lesson.source.json` only to the `stagingPath`
 declared in its packet.
+
+In open-corpus production packets, learner-visible English dialogue must come from the
+packet's `openCorpusAuthoring` candidates. Source turn text remains verbatim and the chosen
+source provenance is stored under `lesson.metadata.openCorpus`.
 
 ## Check worker completion
 
@@ -87,9 +111,17 @@ If a later draft no longer fits the live spec, integration stops and that staged
 must be reconciled by the Integration Writer. Canonical files are not silently weakened
 to make a provisional packet pass.
 
+For open-corpus Lessons, reconciliation must also preserve the chosen source English. If
+that source no longer fits the live spec, select another allowed source candidate instead
+of rewriting the copied English into an untraceable hybrid.
+
 ## Cache policy
 
 `.cache/nova-validation` is disposable and ignored by git. CI may restore it between
 runs, but the authoritative full-prefix gate still executes from source every time.
+
+The open-dialogue snapshot applies the same principle at corpus scale: pinned source data
+is downloaded and rebuilt only when its source fingerprint changes, while every authoring
+wave reads the committed snapshot locally.
 
 Cache is an authoring-speed optimization, not evidence of publication readiness.
