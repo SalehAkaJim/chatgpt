@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "enforceFromSortOrder": 125,
   "legacyRemediation": {
     "fromSortOrder": 40,
@@ -47,6 +47,20 @@
     ],
     "maxUsageFallbacksPerLessonBeforeWarning": 5
   },
+  "experienceQuality": {
+    "enforceFromSortOrder": 149,
+    "maxScoredUsesPerExactTargetSentence": 1,
+    "minimumTargetWordsForDuplicateCheck": 3,
+    "requireDialogueExposureBeforeExactTurnReuse": true,
+    "requireGroundedStoryCopy": true,
+    "bannedGenericStoryPhrasesFa": [
+      "درباره موضوع این درس",
+      "موضوع این درس گفت‌وگو می‌کنند",
+      "موضوع این درس گفتگو می‌کنند",
+      "در ادامه داستان"
+    ],
+    "warnOnMissingSafeSpeechEquivalent": true
+  },
   "wave": {
     "size": 8,
     "requiredArchetypes": [
@@ -62,7 +76,8 @@
     "minimumDistinctActivitySignatures": 3,
     "minimumGrammarFocusedLessons": 2,
     "minimumReviewRecombinationLessons": 1,
-    "minimumLegacyReviewItems": 4
+    "minimumLegacyReviewItems": 4,
+    "minimumDistinctStoryArcs": 4
   },
   "spacedRetrieval": {
     "futureTargetFirstReviewMinGap": 3,
