@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plan and integrate Nova authoring waves with up to eight parallel workers.
+"""Plan and integrate Nova authoring waves with up to fifty parallel workers.
 
 Workers write only staged drafts. Canonical Lesson files remain single-writer:
 the integration phase applies drafts sequentially against the current canonical
@@ -24,7 +24,7 @@ from factory_config import resolve_generated_lessons
 from language_reference_catalog import LanguageReferenceCatalog
 from validate_lesson_curriculum_spec import validate_against_spec
 
-MAX_WORKERS = 8
+MAX_WORKERS = 50
 
 
 def load(path: Path) -> dict:
