@@ -1,8 +1,8 @@
 {
   "version": 1,
   "reviewerType": "model",
-  "reviewedAt": "2026-09-11",
-  "scope": "Model/editor Quality v3 remediation review of EN-A1-L-0070; not an independent human or real-learner test.",
+  "reviewedAt": "2026-09-10",
+  "scope": "Model/editor quality-v2 remediation review of EN-A1-L-0070; not an independent human or real-learner test.",
   "dimensions": {
     "englishNaturalness": {
       "score": 5,
@@ -22,7 +22,7 @@
     },
     "dialoguePlausibility": {
       "score": 4,
-      "evidence": "Generic story metadata was replaced where needed by scene copy grounded in the canonical setting and turns."
+      "evidence": "The scene and adjacent turns were checked again so character prompts function as dialogue rather than teacher commands."
     },
     "difficultyFit": {
       "score": 5,
@@ -42,7 +42,7 @@
     },
     "learnerExperience": {
       "score": 3,
-      "evidence": "Runtime ordering and answer tolerance were improved, but no real learner test is claimed."
+      "evidence": "No real learner test is claimed; boredom, perceived difficulty and retention remain unverified."
     }
   },
   "learnerTested": false,

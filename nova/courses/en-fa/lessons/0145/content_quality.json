@@ -85,18 +85,17 @@
       "Immediate participant pair is not repeated from Lesson 0140, and consecutive lessons in this wave use different pairs and learner roles.",
       "Canonical story arc, cast, learner role, continuation and minimum return spacing were rechecked against course.source.json.",
       "Spaced retrieval was checked against previously taught canonical targets; overdue targets are recalled through hidden-answer learner production.",
-      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
+      "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation.",
+      "Quality v3: grounded Persian story punctuation was normalized after quote-aware polish."
     ],
     "lessonKey": "EN-A1-L-0145",
-    "sourceHash": "b309b2a41b92f89930e388d8b45446f0040459357e13b846d2ec5709eac91b79",
+    "sourceHash": "94b6f2b451f0418bef359a83139a6fbab395eb7da4b589ffd5954549775d0569",
     "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
     "qualityV3Remediation": {
       "version": 1,
       "date": "2026-09-11",
       "categories": [
-        "duplicateScoring",
-        "speechEquivalence",
-        "storyGrounding"
+        "storyPunctuationPolish"
       ]
     },
     "status": "PASS",
@@ -110,5 +109,5 @@
     "learnerTurns": 2,
     "scoredGuidedLearnerTurns": 0
   },
-  "sourceHash": "b309b2a41b92f89930e388d8b45446f0040459357e13b846d2ec5709eac91b79"
+  "sourceHash": "94b6f2b451f0418bef359a83139a6fbab395eb7da4b589ffd5954549775d0569"
 }

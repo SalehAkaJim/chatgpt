@@ -75,38 +75,6 @@
   ],
   "usageEvidence": [
     {
-      "query": "room one or room",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "one"
-      ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
-    },
-    {
-      "query": "or room two",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "two"
-      ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
-    },
-    {
       "query": "room one or",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -130,6 +98,38 @@
       ],
       "lexicalLemmas": [
         "room"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null,
+      "fallbackMatch": null
+    },
+    {
+      "query": "room one or room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "one"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null,
+      "fallbackMatch": null
+    },
+    {
+      "query": "or room two",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "two"
       ],
       "status": "no_evidence",
       "sampleCount": 0,
@@ -192,15 +192,15 @@
   ],
   "warnings": [
     "EN-A1-L-0014: target word one has no CMUdict pronunciation evidence",
-    "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
+    "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
+    "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "784d6f33f68e7f4245423269c7022739cd1096a633d2a9d6332d6129f6b5cf10"
+  "planHash": "750d881c02c736cbb534cb2f4eba985346a049aa3b22dcf3c6c16ce2a75f9760"
 }

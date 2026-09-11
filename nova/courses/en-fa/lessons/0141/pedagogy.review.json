@@ -72,18 +72,17 @@
     "Immediate participant pair is not repeated from Lesson 0140, and consecutive lessons in this wave use different pairs and learner roles.",
     "Canonical story arc, cast, learner role, continuation and minimum return spacing were rechecked against course.source.json.",
     "Spaced retrieval was checked against previously taught canonical targets; overdue targets are recalled through hidden-answer learner production.",
-    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
+    "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation.",
+    "Quality v3: grounded Persian story punctuation was normalized after quote-aware polish."
   ],
   "lessonKey": "EN-A1-L-0141",
-  "sourceHash": "edaed0636325faa1be0f6b99f0e8bac7d507d9f2f316998fa25922ee0896c6c8",
+  "sourceHash": "8c5a87b41fe83ef82b954042b1af65fc110f34da569bdca05cf2e086cc4b1969",
   "courseSourceHash": "0844b2550b04500e66abf83eb518159538f3aea9754b06ba03e44072b0a673a1",
   "qualityV3Remediation": {
     "version": 1,
     "date": "2026-09-11",
     "categories": [
-      "duplicateScoring",
-      "speechEquivalence",
-      "storyGrounding"
+      "storyPunctuationPolish"
     ]
   }
 }
