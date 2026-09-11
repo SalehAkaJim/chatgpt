@@ -67,8 +67,13 @@ class WaveReservationTests(unittest.TestCase):
                 {"lexicalKey": "L1", "role": "target", "metadata": {"referenceKey": "REF-COFFEE"}}
             ],
         }
-        live_spec = {"specKey": "live-0030", "specHash": "new-hash"}
-        reconciled = reconcile_live_spec_metadata(draft, live_spec)
+        live_spec = {
+            "specKey": "live-0030",
+            "specHash": "new-hash",
+            "grammarCandidates": [{"grammarKey": "G2"}],
+        }
+        state = {"introducedGrammar": []}
+        reconciled, bound_spec = reconcile_live_spec_metadata(draft, live_spec, state)
         ref = reconciled["curriculum"]["languageReference"]
         self.assertEqual("live-0030", ref["specKey"])
         self.assertEqual("new-hash", ref["specHash"])
@@ -76,6 +81,8 @@ class WaveReservationTests(unittest.TestCase):
         self.assertEqual(["coffee"], ref["reviewLexicalLemmas"])
         self.assertEqual("REF-COFFEE", reconciled["lexicalItems"][0]["metadata"]["referenceKey"])
         self.assertEqual("old-hash", draft["curriculum"]["languageReference"]["specHash"])
+        self.assertEqual("live-0030", bound_spec["specKey"])
+        self.assertEqual("new-hash", bound_spec["specHash"])
 
 
 if __name__ == "__main__":
