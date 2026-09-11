@@ -36,6 +36,15 @@ jobs:
         timeout-minutes: 5
         run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
 
+      - name: Repair staged wave against canonical constraints
+        env:
+          PYTHONPATH: nova/_assistant/content-system-v1/tools
+        run: |
+          WAVE_PATH=$(python -c 'import json; print(json.load(open("nova/curriculum/en-fa/wave.publish.request.json"))["wavePath"])')
+          python nova/_assistant/content-system-v1/tools/repair_staged_wave.py \
+            --repo-root . \
+            --wave "$WAVE_PATH"
+
       - name: Run atomic wave text preflight
         env:
           PYTHONPATH: nova/_assistant/content-system-v1/tools
@@ -70,7 +79,7 @@ jobs:
               report['commands'].append({
                   'command': ' '.join(str(x) for x in cmd),
                   'returnCode': completed.returncode,
-                  'stdoutTail': completed.stdout[-6000:],
+                  'stdoutTail': completed.stdout[-12000:],
                   'stderrTail': completed.stderr[-6000:],
               })
               return completed
@@ -168,6 +177,9 @@ jobs:
           if integrated.returncode:
               report['stage'] = 'integration'
               report['errors'].append('Ordered single-writer integration did not pass.')
+              detail = last_json_line(integrated.stdout)
+              if detail:
+                  report['integrationFailure'] = detail
               save_report()
               raise SystemExit(0)
 
@@ -229,6 +241,9 @@ jobs:
           if prefix.returncode:
               report['stage'] = 'full-prefix'
               report['errors'].append('Uncached full-prefix regression did not pass.')
+              detail = last_json_line(prefix.stdout)
+              if detail:
+                  report['fullPrefixFailure'] = detail
               save_report()
               raise SystemExit(0)
 
@@ -240,6 +255,7 @@ jobs:
                   f"Expected PASS through {expected}; got status={factory_report.get('status')} "
                   f"prefix={factory_report.get('passedPrefixLength')}"
               )
+              report['factoryValidation'] = factory_report
               save_report()
               raise SystemExit(0)
 
