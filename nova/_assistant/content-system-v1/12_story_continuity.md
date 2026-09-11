@@ -21,7 +21,7 @@ The owner clarified that **both sides of a conversation change between adjacent 
 
 ## Source and runtime contract
 
-Course `characters` contains every fictional person, including characters the user plays. Each has a stable `characterKey`, profile, first-appearance Lesson and voice mapping. Course `narrative.version=3` owns independent arcs, cross-character arcs, rotation settings and the voice-safe expansion policy; it does not own a permanent `learnerRoleKey`, learner name or learner biography.
+Course `characters` contains every fictional person, including characters the user plays. Each has a stable `characterKey`, profile, first-appearance Lesson and voice mapping. Course `narrative.version=2` remains the canonical schema version and owns independent arcs, cross-character arcs, rotation settings and the voice-safe expansion policy; it does not own a permanent `learnerRoleKey`, learner name or learner biography.
 
 Each Lesson's `curriculum.story` owns `learnerRoleKey`, full `participants`, `arcKey`, unique `sceneKey`, `introducedCharacterKeys`, `relationshipState`, `continuesLessonKey`, dependencies, setting and story event. First appearance is separate from first meeting.
 
