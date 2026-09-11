@@ -11,8 +11,6 @@ permissions:
   contents: write
   actions: write
 
-# Keep remediation in the same single-writer queue as wave publication and
-# production. Content failures are recorded as data and keep the Action green.
 concurrency:
   group: nova-production-main
   cancel-in-progress: false
@@ -20,7 +18,7 @@ concurrency:
 jobs:
   remediate:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
         with:
@@ -38,7 +36,7 @@ jobs:
         timeout-minutes: 5
         run: pip install --disable-pip-version-check -r nova/_assistant/content-system-v1/tools/requirements.txt
 
-      - name: Remediate and validate without noisy content failures
+      - name: Remediate all canonical content and validate the live prefix
         env:
           PYTHONPATH: nova/_assistant/content-system-v1/tools
         shell: bash
@@ -57,12 +55,20 @@ jobs:
           request_path = root / 'nova/curriculum/en-fa/remediation.request.json'
           experience_path = root / 'nova/curriculum/en-fa/learner_experience_dependency_report.json'
           repair_path = root / 'nova/curriculum/en-fa/learner_experience_repair_report.json'
+          v3_path = root / 'nova/curriculum/en-fa/quality_v3.remediation_report.json'
+          lessons_root = root / 'nova/courses/en-fa/lessons'
+          current = sorted(
+              int(p.name) for p in lessons_root.iterdir()
+              if p.is_dir() and p.name.isdigit() and (p / 'lesson.source.json').exists()
+          )
+          current_prefix = max(current, default=0)
           report = {
-              'schemaVersion': 3,
+              'schemaVersion': 4,
               'status': 'FAIL',
               'stage': 'request',
               'inputHead': os.environ.get('INPUT_HEAD'),
               'checkedAt': datetime.now(timezone.utc).isoformat(),
+              'canonicalPrefixAtStart': current_prefix,
               'errors': [],
               'commands': [],
           }
@@ -81,6 +87,23 @@ jobs:
               })
               return completed
 
+          def stop(stage, message):
+              report['stage'] = stage
+              report['errors'].append(message)
+              for path, key in (
+                  (v3_path, 'qualityV3Report'),
+                  (experience_path, 'learnerExperienceDependencyReport'),
+                  (repair_path, 'learnerExperienceRepairReport'),
+                  (root / 'nova/curriculum/en-fa/factory_validation.json', 'factoryValidation'),
+              ):
+                  if path.exists():
+                      try:
+                          report[key] = json.loads(path.read_text(encoding='utf-8'))
+                      except Exception:
+                          pass
+              save()
+              raise SystemExit(0)
+
           if not request_path.exists():
               report.update(status='SKIP', stage='request')
               report['errors'].append('No remediation.request.json exists; nothing to remediate.')
@@ -91,63 +114,53 @@ jobs:
               request = json.loads(request_path.read_text(encoding='utf-8'))
               report['request'] = request
           except Exception as exc:
-              report['errors'].append(f'Invalid remediation request: {exc}')
-              save()
-              raise SystemExit(0)
+              stop('request', f'Invalid remediation request: {exc}')
 
-          stale_wave = root / 'nova/curriculum/en-fa/waves/en-fa-A1-0125-0132'
-          if stale_wave.exists():
-              shutil.rmtree(stale_wave)
-              report['removedStaleWave'] = str(stale_wave.relative_to(root))
+          if current_prefix <= 0:
+              stop('request', 'No canonical Lessons found.')
 
-          remediation = run('legacy-remediation', [
-              sys.executable,
-              'nova/_assistant/content-system-v1/tools/remediate_legacy_quality.py',
-              '--repo-root', '.', '--from', '40', '--to', '84',
-          ])
-          if remediation.returncode:
-              report['stage'] = 'legacy-remediation'
-              report['errors'].append('Deterministic legacy remediation did not complete.')
-              save()
-              raise SystemExit(0)
+          for stale_wave in sorted((root / 'nova/curriculum/en-fa/waves').glob('*/wave.json')):
+              try:
+                  payload = json.loads(stale_wave.read_text(encoding='utf-8'))
+              except Exception:
+                  continue
+              if payload.get('status') in {'PLANNED', 'STAGED'} and payload.get('baseGeneratedLessons') != current:
+                  shutil.rmtree(stale_wave.parent)
+                  report.setdefault('removedStaleWaves', []).append(str(stale_wave.parent.relative_to(root)))
 
-          polish = run('legacy-naturalness-polish', [
-              sys.executable,
-              'nova/_assistant/content-system-v1/tools/polish_legacy_quality_v2.py',
-              '--repo-root', '.',
-          ])
-          if polish.returncode:
-              report['stage'] = 'legacy-naturalness-polish'
-              report['errors'].append('Human-style legacy naturalness polish did not complete.')
-              save()
-              raise SystemExit(0)
-
-          repair = run('learner-experience-repair', [
-              sys.executable,
-              'nova/_assistant/content-system-v1/tools/repair_learner_experience_dependencies.py',
-              '--repo-root', '.',
-          ])
-          if repair_path.exists():
-              report['learnerExperienceRepairReport'] = json.loads(repair_path.read_text(encoding='utf-8'))
-          if repair.returncode:
-              report['stage'] = 'learner-experience-repair'
-              report['errors'].append('Learner-visible context repair did not complete.')
-              save()
-              raise SystemExit(0)
+          steps = [
+              ('legacy-remediation', [
+                  sys.executable, 'nova/_assistant/content-system-v1/tools/remediate_legacy_quality.py',
+                  '--repo-root', '.', '--from', '40', '--to', '84',
+              ]),
+              ('legacy-naturalness-polish', [
+                  sys.executable, 'nova/_assistant/content-system-v1/tools/polish_legacy_quality_v2.py', '--repo-root', '.',
+              ]),
+              ('learner-experience-repair', [
+                  sys.executable, 'nova/_assistant/content-system-v1/tools/repair_learner_experience_dependencies.py', '--repo-root', '.',
+              ]),
+              ('quality-v3-remediation', [
+                  sys.executable, 'nova/_assistant/content-system-v1/tools/remediate_quality_v3.py',
+                  '--repo-root', '.', '--course', 'en-fa', '--from', '1', '--to', str(current_prefix),
+              ]),
+              ('quality-v3-review-refresh', [
+                  sys.executable, 'nova/_assistant/content-system-v1/tools/refresh_quality_v3_reviews.py',
+                  '--repo-root', '.', '--course', 'en-fa',
+              ]),
+          ]
+          for name, command in steps:
+              result = run(name, command)
+              if result.returncode:
+                  stop(name, f'{name} did not complete successfully.')
 
           experience = run('learner-experience-dependency-audit', [
               sys.executable,
               'nova/_assistant/content-system-v1/tools/audit_learner_experience_dependencies.py',
-              '--repo-root', '.', '--course', 'en-fa', '--through', '124',
+              '--repo-root', '.', '--course', 'en-fa', '--through', str(current_prefix),
               '--output', 'nova/curriculum/en-fa/learner_experience_dependency_report.json',
           ])
-          if experience_path.exists():
-              report['learnerExperienceDependencyReport'] = json.loads(experience_path.read_text(encoding='utf-8'))
           if experience.returncode:
-              report['stage'] = 'learner-experience-dependencies'
-              report['errors'].append('Learner-visible context dependency audit found broken conversation/audio/visual prerequisites.')
-              save()
-              raise SystemExit(0)
+              stop('learner-experience-dependencies', 'Learner-visible dependency audit still has hard errors after Quality v3 remediation.')
 
           text = run('full-text-qa', [
               sys.executable,
@@ -155,13 +168,10 @@ jobs:
               '--repo-root', '.', '--text-only', '--text-workers', '4',
           ])
           if text.returncode:
-              report['stage'] = 'text-qa'
-              report['errors'].append('Full canonical text QA did not pass after remediation.')
               text_report = root / 'nova/_assistant/content-system-v1/text_build_report.json'
               if text_report.exists():
                   report['textBuildReport'] = json.loads(text_report.read_text(encoding='utf-8'))
-              save()
-              raise SystemExit(0)
+              stop('text-qa', 'Full canonical text QA did not pass after Quality v3 remediation.')
 
           curriculum = run('curriculum-rebuild', [
               sys.executable,
@@ -171,15 +181,9 @@ jobs:
               '--workspace-dir', 'nova/curriculum/en-fa',
           ])
           if curriculum.returncode:
-              report['stage'] = 'curriculum'
-              report['errors'].append('Curriculum/language-plan rebuild did not pass after remediation.')
-              summary = root / 'nova/curriculum/en-fa/language_curriculum_summary.json'
-              if summary.exists():
-                  report['languageCurriculumSummary'] = json.loads(summary.read_text(encoding='utf-8'))
-              save()
-              raise SystemExit(0)
+              stop('curriculum', 'Curriculum/language-plan rebuild did not pass after Quality v3 remediation.')
 
-          prefix = run('full-prefix-quality-v2', [
+          prefix = run('full-prefix-quality-v3', [
               sys.executable,
               'nova/_assistant/content-system-v1/tools/validate_factory_prefix.py',
               '--repo-root', '.',
@@ -187,13 +191,7 @@ jobs:
               '--output', 'nova/curriculum/en-fa/factory_validation.json',
           ])
           if prefix.returncode:
-              report['stage'] = 'full-prefix'
-              report['errors'].append('Full-prefix Product Quality v2 regression did not pass.')
-              validation = root / 'nova/curriculum/en-fa/factory_validation.json'
-              if validation.exists():
-                  report['factoryValidation'] = json.loads(validation.read_text(encoding='utf-8'))
-              save()
-              raise SystemExit(0)
+              stop('full-prefix', 'Full-prefix Quality v3 regression did not pass.')
 
           release = run('release-readiness', [
               sys.executable,
@@ -201,21 +199,15 @@ jobs:
               '--repo-root', '.',
           ])
           if release.returncode:
-              report['stage'] = 'release-readiness'
-              report['errors'].append('Release-readiness report tool failed unexpectedly.')
-              save()
-              raise SystemExit(0)
+              stop('release-readiness', 'Release-readiness report tool failed unexpectedly.')
 
           validation = json.loads((root / 'nova/curriculum/en-fa/factory_validation.json').read_text(encoding='utf-8'))
-          if validation.get('status') != 'PASS' or int(validation.get('passedPrefixLength') or 0) != 124:
-              report['stage'] = 'full-prefix'
-              report['errors'].append(
-                  f"Expected canonical PASS through 124 after remediation; got status={validation.get('status')} "
-                  f"prefix={validation.get('passedPrefixLength')}"
+          passed = int(validation.get('passedPrefixLength') or 0)
+          if validation.get('status') != 'PASS' or passed != current_prefix:
+              stop(
+                  'full-prefix',
+                  f"Expected canonical PASS through {current_prefix}; got status={validation.get('status')} prefix={passed}",
               )
-              report['factoryValidation'] = validation
-              save()
-              raise SystemExit(0)
 
           remediation_report = root / 'nova/curriculum/en-fa/quality_v2.remediation_report.json'
           polish_report = root / 'nova/curriculum/en-fa/quality_v2.polish_report.json'
@@ -223,10 +215,11 @@ jobs:
           report.update(
               status='PASS',
               stage='ready-to-publish',
-              passedPrefixLength=124,
+              passedPrefixLength=current_prefix,
               remediationReport=json.loads(remediation_report.read_text(encoding='utf-8')) if remediation_report.exists() else None,
               polishReport=json.loads(polish_report.read_text(encoding='utf-8')) if polish_report.exists() else None,
               reviewBacklog=json.loads(backlog.read_text(encoding='utf-8')) if backlog.exists() else None,
+              qualityV3Report=json.loads(v3_path.read_text(encoding='utf-8')) if v3_path.exists() else None,
               learnerExperienceRepairReport=json.loads(repair_path.read_text(encoding='utf-8')) if repair_path.exists() else None,
               learnerExperienceDependencyReport=json.loads(experience_path.read_text(encoding='utf-8')) if experience_path.exists() else None,
               errors=[],
@@ -253,21 +246,21 @@ jobs:
           fi
 
           if [ "$STATUS" != "PASS" ]; then
-            git add nova/curriculum/en-fa/quality_v2.remediation_ci_report.json
             for file in \
+              nova/curriculum/en-fa/quality_v2.remediation_ci_report.json \
               nova/curriculum/en-fa/quality_v2.remediation_report.json \
               nova/curriculum/en-fa/quality_v2.polish_report.json \
               nova/curriculum/en-fa/quality_v2.review_backlog.json \
+              nova/curriculum/en-fa/quality_v3.remediation_report.json \
               nova/curriculum/en-fa/learner_experience_repair_report.json \
               nova/curriculum/en-fa/learner_experience_dependency_report.json; do
               if [ -f "$file" ]; then git add "$file"; fi
             done
             if ! git diff --cached --quiet; then
-              git commit -m "Record Nova quality-v2 remediation result"
+              git commit -m "Record Nova quality-v3 remediation result"
               git push origin HEAD:main
             fi
             echo "published=false" >> "$GITHUB_OUTPUT"
-            echo "Content remediation needs another repair pass; Action remains green."
             exit 0
           fi
 
@@ -278,7 +271,7 @@ jobs:
             echo "published=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git commit -m "Remediate Nova legacy content for product quality v2"
+          git commit -m "Remediate Nova canonical content for quality v3"
           git push origin HEAD:main
           echo "published=true" >> "$GITHUB_OUTPUT"
 
