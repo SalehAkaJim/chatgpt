@@ -292,7 +292,9 @@ def reconcile_live_spec_metadata(
     """Bind a staged parallel draft to the live sequential curriculum contract.
 
     If an earlier Lesson in the same wave already introduced a reserved grammar key,
-    convert that key to explicit consolidation.
+    convert that key to explicit consolidation. If this removes the final committed
+    grammar target from a grammar-pattern Lesson that still introduces lexical material,
+    reclassify it as lexical context so product-quality semantics stay truthful.
 
     A second legitimate parallel-authoring case is ranking drift: a grammar key was
     source-backed and valid in this packet's provisional spec, remains eligible with
@@ -333,6 +335,19 @@ def reconcile_live_spec_metadata(
                 "Parallel-wave grammar reservation was already introduced earlier in "
                 "the live sequential prefix; this Lesson consolidates that construction."
             )
+            metadata = reconciled.setdefault("metadata", {})
+            if metadata.get("lessonArchetype") == "grammar_pattern":
+                has_lexical_target = any(
+                    item.get("role") == "target"
+                    for item in (reconciled.get("lexicalItems") or [])
+                )
+                if has_lexical_target:
+                    metadata["lessonArchetype"] = "lexical_context"
+                    language_ref["integrationReconciledLessonArchetype"] = {
+                        "from": "grammar_pattern",
+                        "to": "lexical_context",
+                        "reason": "final_new_grammar_target_became_live_prefix_consolidation",
+                    }
 
     remaining_targets = [x for x in language_ref.get("grammarTargetKeys", []) if x]
     provisional_candidates = {
