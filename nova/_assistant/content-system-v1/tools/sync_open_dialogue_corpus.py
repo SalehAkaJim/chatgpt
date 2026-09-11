@@ -23,7 +23,7 @@ from pathlib import Path
 from typing import Iterable
 
 UA = "NovaOpenDialogueSync/1.0 (+https://github.com/SalehAkaJim/chatgpt)"
-GENERATOR_VERSION = 2
+GENERATOR_VERSION = 3
 WORD_RE = re.compile(r"[A-Za-z]+(?:['’][A-Za-z]+)?")
 SOURCE_NAMES = ("taskmaster", "schemaGuidedDialogue")
 MIN_EXPECTED = {"taskmaster": 10000, "schemaGuidedDialogue": 15000}
@@ -147,7 +147,8 @@ def _clean_turns(rows: Iterable[dict], *, text_key: str, speaker_key: str) -> li
 
 def taskmaster_records(payload: object, *, source: dict, source_file: str) -> Iterable[dict]:
     rows = payload if isinstance(payload, list) else [payload]
-    for row in rows:
+    source_namespace = Path(source_file).stem.lower()
+    for source_row_index, row in enumerate(rows):
         if not isinstance(row, dict):
             continue
         dialogue_id = str(row.get("conversation_id") or "").strip()
@@ -161,9 +162,13 @@ def taskmaster_records(payload: object, *, source: dict, source_file: str) -> It
         domain = (intent.split("-", 1)[0] or "unknown").lower()
         record = {
             "schemaVersion": 1,
-            "corpusKey": f"taskmaster:{dialogue_id}",
+            # Taskmaster contains at least one repeated conversation_id. The pinned
+            # source file and source-row index are therefore part of the canonical
+            # record key while sourceDialogueId remains the untouched upstream ID.
+            "corpusKey": f"taskmaster:{source_namespace}:{source_row_index}:{dialogue_id}",
             "source": "taskmaster",
             "sourceDialogueId": dialogue_id,
+            "sourceRowIndex": source_row_index,
             "domain": domain,
             "services": [intent] if intent else [],
             "license": source["license"],
