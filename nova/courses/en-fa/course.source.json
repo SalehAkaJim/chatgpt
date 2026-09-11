@@ -15,159 +15,25 @@
       "standardCode": "CEFR-A1",
       "descriptionFa": "سطح مقدماتی برای شروع یادگیری انگلیسی از صفر",
       "status": "active",
-      "metadata": {
-        "framework": "CEFR"
-      }
+      "metadata": {"framework": "CEFR"}
     }
   ],
   "characters": [
-    {
-      "characterKey": "maya",
-      "name": "Maya",
-      "gender": "female",
-      "roleFa": "همکلاسی الکس",
-      "voiceKey": "vexa",
-      "metadata": {
-        "nameFa": "مایا",
-        "debutLessonKey": "EN-A1-L-0001",
-        "stableFacts": {"relationship": "classmate_of_alex"}
-      }
-    },
-    {
-      "characterKey": "alex",
-      "name": "Alex",
-      "gender": "male",
-      "roleFa": "همکلاسی مایا",
-      "voiceKey": "brent",
-      "metadata": {
-        "nameFa": "الکس",
-        "debutLessonKey": "EN-A1-L-0001",
-        "stableFacts": {"relationship": "classmate_of_maya"}
-      }
-    },
-    {
-      "characterKey": "nora",
-      "name": "Nora",
-      "gender": "female",
-      "roleFa": "همسایه اوون در ساختمان",
-      "voiceKey": "lori",
-      "metadata": {
-        "nameFa": "نورا",
-        "debutLessonKey": "EN-A1-L-0002",
-        "stableFacts": {"relationship": "neighbor_of_owen"}
-      }
-    },
-    {
-      "characterKey": "owen",
-      "name": "Owen",
-      "gender": "male",
-      "roleFa": "همسایه نورا در ساختمان",
-      "voiceKey": "brian",
-      "metadata": {
-        "nameFa": "اوون",
-        "debutLessonKey": "EN-A1-L-0002",
-        "stableFacts": {"relationship": "neighbor_of_nora"}
-      }
-    },
-    {
-      "characterKey": "iris",
-      "name": "Iris",
-      "gender": "female",
-      "roleFa": "پذیرش مرکز محله؛ نینا را از قبل می شناسد",
-      "voiceKey": "rachel",
-      "metadata": {
-        "nameFa": "آیریس",
-        "debutLessonKey": "EN-A1-L-0003",
-        "stableFacts": {"occupation": "community_center_receptionist", "knows": "nina"}
-      }
-    },
-    {
-      "characterKey": "nina",
-      "name": "Nina",
-      "gender": "female",
-      "roleFa": "به برنامه های مرکز محله می رود و آیریس را می شناسد",
-      "voiceKey": "vexa",
-      "metadata": {
-        "nameFa": "نینا",
-        "debutLessonKey": "EN-A1-L-0003",
-        "stableFacts": {"relationship": "community_center_visitor"}
-      }
-    },
-    {
-      "characterKey": "leo",
-      "name": "Leo",
-      "gender": "male",
-      "roleFa": "کتابدار؛ در برنامه های کتابخانه کمک می کند",
-      "voiceKey": "adam",
-      "metadata": {
-        "nameFa": "لیو",
-        "debutLessonKey": "EN-A1-L-0004",
-        "stableFacts": {"occupation": "librarian"}
-      }
-    },
-    {
-      "characterKey": "liam",
-      "name": "Liam",
-      "gender": "male",
-      "roleFa": "مراجعه کننده کتابخانه",
-      "voiceKey": "brent",
-      "metadata": {
-        "nameFa": "لیام",
-        "debutLessonKey": "EN-A1-L-0004",
-        "stableFacts": {"relationship": "library_visitor"}
-      }
-    },
-    {
-      "characterKey": "sara",
-      "name": "Sara",
-      "gender": "female",
-      "roleFa": "عضو گروه پیاده روی؛ اهل کانادا",
-      "voiceKey": "lori",
-      "metadata": {
-        "nameFa": "سارا",
-        "debutLessonKey": "EN-A1-L-0005",
-        "stableFacts": {"relationship": "walking_group_member", "country": "Canada"}
-      }
-    },
-    {
-      "characterKey": "ruby",
-      "name": "Ruby",
-      "gender": "female",
-      "roleFa": "عضو تازه گروه پیاده روی؛ اهل ایران",
-      "voiceKey": "rachel",
-      "metadata": {
-        "nameFa": "روبی",
-        "debutLessonKey": "EN-A1-L-0005",
-        "stableFacts": {"relationship": "walking_group_member", "country": "Iran"}
-      }
-    },
-    {
-      "characterKey": "ben",
-      "name": "Ben",
-      "gender": "male",
-      "roleFa": "کارمند کافه",
-      "voiceKey": "adam",
-      "metadata": {
-        "nameFa": "بن",
-        "debutLessonKey": "EN-A1-L-0009",
-        "stableFacts": {"occupation": "cafe_worker"}
-      }
-    },
-    {
-      "characterKey": "ava",
-      "name": "Ava",
-      "gender": "female",
-      "roleFa": "مشتری کافه",
-      "voiceKey": "lori",
-      "metadata": {
-        "nameFa": "آوا",
-        "debutLessonKey": "EN-A1-L-0009",
-        "stableFacts": {"relationship": "cafe_customer"}
-      }
-    }
+    {"characterKey": "maya", "name": "Maya", "gender": "female", "roleFa": "همکلاسی الکس", "voiceKey": "vexa", "metadata": {"nameFa": "مایا", "debutLessonKey": "EN-A1-L-0001", "stableFacts": {"relationship": "classmate_of_alex"}}},
+    {"characterKey": "alex", "name": "Alex", "gender": "male", "roleFa": "همکلاسی مایا", "voiceKey": "brent", "metadata": {"nameFa": "الکس", "debutLessonKey": "EN-A1-L-0001", "stableFacts": {"relationship": "classmate_of_maya"}}},
+    {"characterKey": "nora", "name": "Nora", "gender": "female", "roleFa": "همسایه اوون در ساختمان", "voiceKey": "lori", "metadata": {"nameFa": "نورا", "debutLessonKey": "EN-A1-L-0002", "stableFacts": {"relationship": "neighbor_of_owen"}}},
+    {"characterKey": "owen", "name": "Owen", "gender": "male", "roleFa": "همسایه نورا در ساختمان", "voiceKey": "brian", "metadata": {"nameFa": "اوون", "debutLessonKey": "EN-A1-L-0002", "stableFacts": {"relationship": "neighbor_of_nora"}}},
+    {"characterKey": "iris", "name": "Iris", "gender": "female", "roleFa": "پذیرش مرکز محله؛ نینا را از قبل می شناسد", "voiceKey": "rachel", "metadata": {"nameFa": "آیریس", "debutLessonKey": "EN-A1-L-0003", "stableFacts": {"occupation": "community_center_receptionist", "knows": "nina"}}},
+    {"characterKey": "nina", "name": "Nina", "gender": "female", "roleFa": "به برنامه های مرکز محله می رود و آیریس را می شناسد", "voiceKey": "vexa", "metadata": {"nameFa": "نینا", "debutLessonKey": "EN-A1-L-0003", "stableFacts": {"relationship": "community_center_visitor"}}},
+    {"characterKey": "leo", "name": "Leo", "gender": "male", "roleFa": "کتابدار؛ در برنامه های کتابخانه کمک می کند", "voiceKey": "adam", "metadata": {"nameFa": "لیو", "debutLessonKey": "EN-A1-L-0004", "stableFacts": {"occupation": "librarian"}}},
+    {"characterKey": "liam", "name": "Liam", "gender": "male", "roleFa": "مراجعه کننده کتابخانه", "voiceKey": "brent", "metadata": {"nameFa": "لیام", "debutLessonKey": "EN-A1-L-0004", "stableFacts": {"relationship": "library_visitor"}}},
+    {"characterKey": "sara", "name": "Sara", "gender": "female", "roleFa": "عضو گروه پیاده روی؛ اهل کانادا", "voiceKey": "lori", "metadata": {"nameFa": "سارا", "debutLessonKey": "EN-A1-L-0005", "stableFacts": {"relationship": "walking_group_member", "country": "Canada"}}},
+    {"characterKey": "ruby", "name": "Ruby", "gender": "female", "roleFa": "عضو تازه گروه پیاده روی؛ اهل ایران", "voiceKey": "rachel", "metadata": {"nameFa": "روبی", "debutLessonKey": "EN-A1-L-0005", "stableFacts": {"relationship": "walking_group_member", "country": "Iran"}}},
+    {"characterKey": "ben", "name": "Ben", "gender": "male", "roleFa": "کارمند کافه", "voiceKey": "adam", "metadata": {"nameFa": "بن", "debutLessonKey": "EN-A1-L-0009", "stableFacts": {"occupation": "cafe_worker"}}},
+    {"characterKey": "ava", "name": "Ava", "gender": "female", "roleFa": "مشتری کافه", "voiceKey": "lori", "metadata": {"nameFa": "آوا", "debutLessonKey": "EN-A1-L-0009", "stableFacts": {"relationship": "cafe_customer"}}}
   ],
   "narrative": {
-    "version": 3,
+    "version": 2,
     "premiseFa": "هر درس بخشی از زندگی شخصیت های همان موقعیت است. زبان آموز در هر درس نقش یکی از آن شخصیت ها را بازی می کند و داستان ها با فاصله ادامه پیدا می کنند.",
     "rotation": {
       "minimumReturnDistanceLessons": 5,
