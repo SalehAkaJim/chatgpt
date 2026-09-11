@@ -4,9 +4,11 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 TODAY = "2026-09-11"
+DOUBLE_PERIOD_AFTER_QUOTE_RE = re.compile(r"([.!؟])»\.")
 
 
 def load(path: Path) -> dict:
@@ -15,6 +17,23 @@ def load(path: Path) -> dict:
 
 def dump(path: Path, payload: object) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def polish_story_punctuation(lesson: dict) -> list[str]:
+    changes: list[str] = []
+    scenario = str(lesson.get("scenarioFa") or "")
+    polished = DOUBLE_PERIOD_AFTER_QUOTE_RE.sub(r"\1»", scenario)
+    if polished != scenario:
+        lesson["scenarioFa"] = polished
+        changes.append("scenarioFa: removed duplicated period after a quoted sentence")
+
+    story = (lesson.get("curriculum") or {}).get("story") or {}
+    beat = str(story.get("storyBeatFa") or "")
+    polished_beat = DOUBLE_PERIOD_AFTER_QUOTE_RE.sub(r"\1»", beat)
+    if polished_beat != beat:
+        story["storyBeatFa"] = polished_beat
+        changes.append("storyBeatFa: removed duplicated period after a quoted sentence")
+    return changes
 
 
 def main() -> int:
@@ -35,6 +54,7 @@ def main() -> int:
     refreshed = 0
     changed_reviews = 0
     missing_reviews = []
+    punctuation_polished = []
     for lesson_dir in sorted(lessons_root.iterdir()):
         if not lesson_dir.is_dir() or not lesson_dir.name.isdigit():
             continue
@@ -46,8 +66,16 @@ def main() -> int:
             missing_reviews.append(int(lesson_dir.name))
             continue
         lesson = load(source)
-        review = load(review_path)
         order = int(lesson.get("sortOrder") or int(lesson_dir.name))
+        polish_changes = polish_story_punctuation(lesson)
+        if polish_changes:
+            dump(source, lesson)
+            changed.add(order)
+            punctuation_polished.append(order)
+            changes = remediation.setdefault("changes", {}).setdefault(str(order), {})
+            changes.setdefault("storyPunctuationPolish", []).extend(polish_changes)
+
+        review = load(review_path)
         review["courseSourceHash"] = course_hash
         if order in changed:
             review["sourceHash"] = hashlib.sha256(source.read_bytes()).hexdigest()
@@ -94,6 +122,10 @@ def main() -> int:
             finding = "Quality v3: dialogue exposure, duplicate scoring, safe speech equivalence and grounded story copy rechecked after deterministic remediation."
             if finding not in resolved:
                 resolved.append(finding)
+            if polish_changes:
+                polish_finding = "Quality v3: grounded Persian story punctuation was normalized after quote-aware polish."
+                if polish_finding not in resolved:
+                    resolved.append(polish_finding)
             review["resolvedFindings"] = resolved
             review["qualityV3Remediation"] = {
                 "version": 1,
@@ -104,11 +136,14 @@ def main() -> int:
         dump(review_path, review)
         refreshed += 1
 
+    remediation["changedLessons"] = sorted(changed)
+    remediation["changedLessonCount"] = len(changed)
     remediation["reviewRefresh"] = {
         "status": "PASS" if not missing_reviews else "WARN",
         "courseSourceHash": course_hash,
         "refreshedReviews": refreshed,
         "changedLessonReviews": changed_reviews,
+        "storyPunctuationPolishedLessons": punctuation_polished,
         "missingReviewLessons": missing_reviews,
     }
     dump(report_path, remediation)
