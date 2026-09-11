@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0146",
+  "sortOrder": 146,
+  "levelKey": "A1",
+  "lessonSourceHash": "9affe3a7dbe9d66b07d3306321e41951c970cb46f36685543b18d55557e59267",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0146-PLAN",
+      "form": "There is a plan for today.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-PLAN-01",
+      "lemma": "plan",
+      "role": "target",
+      "referenceKey": "EN-REF-79C0C6E6180932A0CEED",
+      "spokenPriority": {
+        "lemma": "plan",
+        "spokenRank": 277,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "P L AE1 N",
+        "arpabet": [
+          "P L AE1 N"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-MAKE-01",
+      "lemma": "make",
+      "role": "review",
+      "referenceKey": "EN-REF-39C6EB767664D6211984",
+      "spokenPriority": {
+        "lemma": "make",
+        "spokenRank": 69,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M EY1 K",
+        "arpabet": [
+          "M EY1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "there is a plan for today",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0146"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0146-PLAN"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "there is a plan for today",
+      "examples": [],
+      "fallback": {
+        "query": "There is a plan for today",
+        "rationale": "Natural short target use for the selected lexical sense and grammar."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "is a plan for today",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0146"
+      ],
+      "lexicalLemmas": [
+        "plan"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "there is a plan for today",
+      "examples": [],
+      "fallback": {
+        "query": "There is a plan for today",
+        "rationale": "Natural short target use for the selected lexical sense and grammar."
+      },
+      "fallbackMatch": "compatible_phrase"
+    },
+    {
+      "query": "is a plan for tomorrow",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0146"
+      ],
+      "lexicalLemmas": [
+        "plan"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "there is a plan for tomorrow too",
+      "examples": [],
+      "fallback": {
+        "query": "There is a plan for tomorrow too",
+        "rationale": "Changed-information same-lesson transfer preserving the selected sense."
+      },
+      "fallbackMatch": "compatible_phrase"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "338886a423697c3b0378bf30c769ef29094311ca5375b413bc313e6bf40736f4"
+}

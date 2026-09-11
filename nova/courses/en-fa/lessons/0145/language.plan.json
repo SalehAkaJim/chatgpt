@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0145",
+  "sortOrder": 145,
+  "levelKey": "A1",
+  "lessonSourceHash": "a4062d556bb37b2dc18842b2d406c52443d9fe5aaf162c42d32ad5514c9ead10",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0145-MINUTE",
+      "form": "It is not ten minutes.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-10",
+        "grammaticalItem": "It is",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.59,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-10-3",
+          "grammaticalItem": "Isn't it ...?",
+          "matchScore": 0.51
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-MINUTE-01",
+      "lemma": "minute",
+      "role": "target",
+      "referenceKey": "EN-REF-ACAF1BFF6CA0D4244AC4",
+      "spokenPriority": {
+        "lemma": "minute",
+        "spokenRank": 213,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "M IH1 N AH0 T",
+        "arpabet": [
+          "M IH1 N AH0 T",
+          "M AY0 N UW1 T",
+          "M AY0 N Y UW1 T"
+        ],
+        "stressPattern": "10"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-KNOW-01",
+      "lemma": "know",
+      "role": "review",
+      "referenceKey": "EN-REF-D277A31EE85CEBDF62F6",
+      "spokenPriority": {
+        "lemma": "know",
+        "spokenRank": 17,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "N OW1",
+        "arpabet": [
+          "N OW1"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "it is not ten minutes",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0145"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0145-MINUTE"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "it is not ten minutes",
+      "examples": [],
+      "fallback": {
+        "query": "It is not ten minutes",
+        "rationale": "Natural short target use for the selected lexical sense and grammar."
+      },
+      "fallbackMatch": "exact"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "c0b024f1c0dfd0e838cbd3f234817b886add69d39d19c4319f17ae609fea16ad"
+}

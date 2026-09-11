@@ -3,7 +3,7 @@
   "courseCode": "en-fa",
   "levelKey": "A1",
   "generatedLessonsMode": "auto",
-  "generatedLessonCount": 140,
+  "generatedLessonCount": 148,
   "generatedLessons": [
     1,
     2,
@@ -144,12 +144,20 @@
     137,
     138,
     139,
-    140
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148
   ],
-  "lastLessonSortOrder": 140,
-  "nextLessonSortOrder": 141,
-  "nextSpecPath": "nova/curriculum/en-fa/specs/0141.json",
-  "nextSpecHash": "9a2642ca6adbf1c3cdc7cf31599b7ef7075dab18603c1a8c12350a6f052a1c88",
+  "lastLessonSortOrder": 148,
+  "nextLessonSortOrder": 149,
+  "nextSpecPath": "nova/curriculum/en-fa/specs/0149.json",
+  "nextSpecHash": "e91f56030fe3ef0b4f221b2300da4385f0f25bd9faa37e51e75957389263ba84",
   "languagePlanEnforceFromSortOrder": 25,
   "curriculumSpecEnforceFromSortOrder": 25,
   "languagePlans": [
@@ -312,10 +320,10 @@
       "sortOrder": 14,
       "status": "PASS",
       "warnings": [
-        "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
+        "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
         "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
@@ -1623,6 +1631,88 @@
       "grammarEvidenceCount": 1,
       "lexicalEvidenceCount": 5,
       "usageEvidenceCount": 1
+    },
+    {
+      "lessonKey": "EN-A1-L-0141",
+      "sortOrder": 141,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 2,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0142",
+      "sortOrder": 142,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 2,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0143",
+      "sortOrder": 143,
+      "status": "PASS",
+      "warnings": [
+        "EN-A1-L-0143: construction EN-CONSTR-0143-BUY has no confident CEFR-J grammar match"
+      ],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0144",
+      "sortOrder": 144,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0145",
+      "sortOrder": 145,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 2,
+      "usageEvidenceCount": 1
+    },
+    {
+      "lessonKey": "EN-A1-L-0146",
+      "sortOrder": 146,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 2,
+      "usageEvidenceCount": 3
+    },
+    {
+      "lessonKey": "EN-A1-L-0147",
+      "sortOrder": 147,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
+    },
+    {
+      "lessonKey": "EN-A1-L-0148",
+      "sortOrder": 148,
+      "status": "PASS",
+      "warnings": [],
+      "errors": [],
+      "grammarEvidenceCount": 1,
+      "lexicalEvidenceCount": 1,
+      "usageEvidenceCount": 2
     }
   ],
   "curriculumSpecReports": [
@@ -2933,6 +3023,106 @@
       "status": "PASS",
       "errors": [],
       "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0141",
+      "sortOrder": 141,
+      "specKey": "en-fa-A1-LESSON-SPEC-0141",
+      "specHash": "9a2642ca6adbf1c3cdc7cf31599b7ef7075dab18603c1a8c12350a6f052a1c88",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'work' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0142",
+      "sortOrder": 142,
+      "specKey": "en-fa-A1-LESSON-SPEC-0142",
+      "specHash": "dae1941bfe478b8907c1826c93face6907bd066ced4fe2ba823dafd82f77496a",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'day' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0143",
+      "sortOrder": 143,
+      "specKey": "en-fa-A1-LESSON-SPEC-0143",
+      "specHash": "18f1582c64ec9f8349d7e7808c280a7106df200497ca3a2b8eb9126ce1dc6ed6",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'pay' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0144",
+      "sortOrder": 144,
+      "specKey": "en-fa-A1-LESSON-SPEC-0144",
+      "specHash": "19451e7f5d995fd80a532069d1a13e819840fe2b3efe00974aefc345bf944db4",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'problem' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0145",
+      "sortOrder": 145,
+      "specKey": "en-fa-A1-LESSON-SPEC-0145",
+      "specHash": "8e716ca00515604d520cdfb8cf412abdbfc813a1ec117d8ba9ed42814fe6e9fa",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0146",
+      "sortOrder": 146,
+      "specKey": "en-fa-A1-LESSON-SPEC-0146",
+      "specHash": "681d13a9c28382a5a7713fb90e739130f3023fcb3ac2dd4ff70e2ed26059a67d",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0147",
+      "sortOrder": 147,
+      "specKey": "en-fa-A1-LESSON-SPEC-0147",
+      "specHash": "f989b52781775f609f31f558227f5d6242fa0131237936b78e2ed92c7bbede5e",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'pretty' was not marked due by the curriculum engine"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "lessonKey": "EN-A1-L-0148",
+      "sortOrder": 148,
+      "specKey": "en-fa-A1-LESSON-SPEC-0148",
+      "specHash": "c52370f9ea4f4f266f2ddd0184b623a7f9b7e7b7eac4aca4292fd0071dcca2ed",
+      "enforced": true,
+      "status": "PASS",
+      "errors": [],
+      "warnings": [
+        "review lexical lemma 'information' was not marked due by the curriculum engine"
+      ]
     }
   ],
   "status": "PASS",

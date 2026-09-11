@@ -1,1 +1,74 @@
-{"version":1,"reviewerType":"model","reviewedAt":"2026-09-11","scope":"Model/editor semantic and pedagogy review of Lesson 0142 staging draft; not an independent human or real-learner test.","dimensions":{"englishNaturalness":{"score":5,"evidence":"Target uses “She works in the morning.” and “She studies in the morning too.” are short, natural English for the scenario; dialogue turns were checked for agreement, tense, articles and punctuation."},"persianMeaningQuality":{"score":5,"evidence":"morning is consistently represented as «صبح» in the selected sense, and Persian prompts preserve the English task meaning without adding unsupported context."},"pedagogicalClarity":{"score":5,"evidence":"A01 introduces the lexical meaning, A02 exposes the full dialogue, and all dialogue-dependent listening/reconstruction/retrieval occurs only afterward in A03, A06, A07 and A10."},"distractorQuality":{"score":5,"evidence":"Choice distractors are grammatical, natural alternatives that change meaning or information rather than relying on malformed English."},"dialoguePlausibility":{"score":5,"evidence":"مایا و نینا پیش از شروع کلاس درباره برنامه صبح روبی حرف می‌زنند."},"difficultyFit":{"score":4,"evidence":"One new A1 lexical target (morning) plus one bounded grammar construction and one due review item keeps the load controlled."},"repetitionUsefulness":{"score":5,"evidence":"morning appears in lexical recognition, guided dialogue, transfer, reconstruction and retrieval without introducing a second new lexical sense; remember remains review-only."},"transferQuality":{"score":5,"evidence":"The lesson moves from “She works in the morning.” to “She studies in the morning too.”, changing the information while preserving the target sense or construction."},"overallCoherence":{"score":5,"evidence":"Scenario, target construction, dialogue and activities all support the stated outcome for morning and grammar key CEFRJ-GRAM-60."},"learnerExperience":{"score":3,"evidence":"No real learner test is claimed. Model/editor review checks runtime order, answer exposure, clarity and cognitive load only."},"runtimeAssetGrounding":{"score":5,"evidence":"No image, photo or visual claim exists. Every listening/replay activity references T01–T04 turns marked audioRequired and first exposed through A02; no listening task points to an unreferenced media object."}},"learnerTested":false,"limitations":["No independent human or real learner test has been performed.","Only morning in the selected reference sense is assessed as the new lexical target.","remember is review-only and this draft does not claim renewed mastery.","Generated audio pronunciation and prosody are not evaluated at this text-authoring stage.","Runtime behavior and generated paid audio still require the permanent CI/Production pipeline."],"resolvedFindings":["English target grammar for CEFRJ-GRAM-60 and accepted learner speech strings checked.","Persian spelling, spacing and instructional meaning checked at model/editor level.","Reference EN-REF-E25BA5022C987A2BDA77, part of speech noun, sense key 107239e9-d6a9-5711-9be9-547066c1069f and provisional spec hash were cross-checked against the wave packet.","A02 exposes both dialogue exchanges before A03, A06, A07 or A10 can depend on them.","A06 audioSourceTurnKey T02 and A07/A10 sourceTurnKeys point to turns that are present and audioRequired.","No unsupported visual/photo/image language or visual-dependent activity exists.","No listening activity depends on a turn absent from the lesson.","All choice distractors in target and transfer tasks are grammatical and natural.","Due lexical item remember is explicitly marked as review and linked to its prior lesson.","Immediate participant pair is not repeated from Lesson 0140, and consecutive lessons in this wave use different pairs and learner roles."]}
+{
+  "version": 1,
+  "reviewerType": "model",
+  "reviewedAt": "2026-09-11",
+  "scope": "Model/editor semantic and pedagogy review of Lesson 0142 staging draft; not an independent human or real-learner test.",
+  "dimensions": {
+    "englishNaturalness": {
+      "score": 5,
+      "evidence": "Target uses “She works in the morning.” and “She studies in the morning too.” are short, natural English for the scenario; dialogue turns were checked for agreement, tense, articles and punctuation."
+    },
+    "persianMeaningQuality": {
+      "score": 5,
+      "evidence": "morning is consistently represented as «صبح» in the selected sense, and Persian prompts preserve the English task meaning without adding unsupported context."
+    },
+    "pedagogicalClarity": {
+      "score": 5,
+      "evidence": "A01 introduces the lexical meaning, A02 exposes the full dialogue, and all dialogue-dependent listening/reconstruction/retrieval occurs only afterward in A03, A06, A07 and A10."
+    },
+    "distractorQuality": {
+      "score": 5,
+      "evidence": "Choice distractors are grammatical, natural alternatives that change meaning or information rather than relying on malformed English."
+    },
+    "dialoguePlausibility": {
+      "score": 5,
+      "evidence": "Canonical arc EN-A1-WALKING-GROUP uses its declared cast (روبی، سارا) and respects Course return spacing."
+    },
+    "difficultyFit": {
+      "score": 4,
+      "evidence": "One new A1 lexical target (morning) plus one bounded grammar construction and one due review item keeps the load controlled."
+    },
+    "repetitionUsefulness": {
+      "score": 5,
+      "evidence": "The Lesson combines its current target with explicit spaced retrieval of previously taught language; no real learner test is claimed."
+    },
+    "transferQuality": {
+      "score": 5,
+      "evidence": "The lesson moves from “She works in the morning.” to “She studies in the morning too.”, changing the information while preserving the target sense or construction."
+    },
+    "overallCoherence": {
+      "score": 5,
+      "evidence": "Scenario, target construction, dialogue and activities all support the stated outcome for morning and grammar key CEFRJ-GRAM-60."
+    },
+    "learnerExperience": {
+      "score": 3,
+      "evidence": "No real learner test is claimed. Model/editor review checks runtime order, answer exposure, clarity and cognitive load only."
+    },
+    "runtimeAssetGrounding": {
+      "score": 5,
+      "evidence": "No image, photo or visual claim exists. Every listening/replay activity references T01–T04 turns marked audioRequired and first exposed through A02; no listening task points to an unreferenced media object."
+    }
+  },
+  "learnerTested": false,
+  "limitations": [
+    "No independent human or real learner test has been performed.",
+    "Only morning in the selected reference sense is assessed as the new lexical target.",
+    "remember is review-only and this draft does not claim renewed mastery.",
+    "Generated audio pronunciation and prosody are not evaluated at this text-authoring stage.",
+    "Runtime behavior and generated paid audio still require the permanent CI/Production pipeline."
+  ],
+  "resolvedFindings": [
+    "English target grammar for CEFRJ-GRAM-60 and accepted learner speech strings checked.",
+    "Persian spelling, spacing and instructional meaning checked at model/editor level.",
+    "Reference EN-REF-E25BA5022C987A2BDA77, part of speech noun, sense key 107239e9-d6a9-5711-9be9-547066c1069f and provisional spec hash were cross-checked against the wave packet.",
+    "A02 exposes both dialogue exchanges before A03, A06, A07 or A10 can depend on them.",
+    "A06 audioSourceTurnKey T02 and A07/A10 sourceTurnKeys point to turns that are present and audioRequired.",
+    "No unsupported visual/photo/image language or visual-dependent activity exists.",
+    "No listening activity depends on a turn absent from the lesson.",
+    "All choice distractors in target and transfer tasks are grammatical and natural.",
+    "Due lexical item remember is explicitly marked as review and linked to its prior lesson.",
+    "Immediate participant pair is not repeated from Lesson 0140, and consecutive lessons in this wave use different pairs and learner roles.",
+    "Canonical story arc, cast, learner role, continuation and minimum return spacing were rechecked against course.source.json.",
+    "Spaced retrieval was checked against previously taught canonical targets; overdue targets are recalled through hidden-answer learner production."
+  ]
+}

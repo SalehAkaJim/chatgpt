@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0141",
+  "sortOrder": 141,
+  "levelKey": "A1",
+  "lessonSourceHash": "0adae919502c609e9ee2c4459c3c435d1c1aeaf70590aa96bcffe806a27d64c8",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0141-LATE",
+      "form": "I am late.",
+      "kind": "cefrj_grammar_backed",
+      "status": "PASS",
+      "bestGrammarMatch": {
+        "grammarKey": "CEFRJ-GRAM-1",
+        "grammaticalItem": "I am",
+        "cefr": "A1",
+        "cefrJLevel": "A1.1",
+        "matchScore": 0.8167,
+        "prerequisiteKeys": []
+      },
+      "alternatives": [
+        {
+          "grammarKey": "CEFRJ-GRAM-1-2",
+          "grammaticalItem": "Am I ...?",
+          "matchScore": 0.5667
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-1",
+          "grammaticalItem": "I am not",
+          "matchScore": 0.5167
+        },
+        {
+          "grammarKey": "CEFRJ-GRAM-1-3",
+          "grammaticalItem": "Am I not ...?",
+          "matchScore": 0.5167
+        }
+      ]
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-LATE-01",
+      "lemma": "late",
+      "role": "target",
+      "referenceKey": "EN-REF-242CD12A12451F88F86E",
+      "spokenPriority": {
+        "lemma": "late",
+        "spokenRank": 244,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "L EY1 T",
+        "arpabet": [
+          "L EY1 T"
+        ],
+        "stressPattern": "1"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-WORK-01",
+      "lemma": "work",
+      "role": "review",
+      "referenceKey": "EN-REF-707276E9B50E98A64FDC",
+      "spokenPriority": {
+        "lemma": "work",
+        "spokenRank": 76,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "W ER1 K",
+        "arpabet": [
+          "W ER1 K"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "i am late",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0141"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0141-LATE"
+      ],
+      "lexicalLemmas": [
+        "late"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "i am late",
+      "examples": [],
+      "fallback": {
+        "query": "I am late",
+        "rationale": "Natural short target use for the selected lexical sense and grammar."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "is ava late too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0141"
+      ],
+      "lexicalLemmas": [
+        "late"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "is ava late too",
+      "examples": [],
+      "fallback": {
+        "query": "Is Ava late too",
+        "rationale": "Natural support-language question using late with be and too; explicit usage fallback for the committed lesson turn."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "she is late too",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0141"
+      ],
+      "lexicalLemmas": [
+        "late"
+      ],
+      "status": "corpus_evidence",
+      "sampleCount": 5,
+      "evidenceQuery": "he is",
+      "examples": [
+        {
+          "id": 13788367,
+          "text": "He is fantastic.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Just_Balls"
+        },
+        {
+          "id": 13627422,
+          "text": "He is addicted.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Ahmd"
+        },
+        {
+          "id": 13530112,
+          "text": "He is Amazigh.",
+          "lang": "eng",
+          "license": "CC BY 2.0 FR",
+          "owner": "Abdaresrif"
+        }
+      ],
+      "fallback": {
+        "query": "She is late too",
+        "rationale": "Changed-information same-lesson transfer preserving the selected sense."
+      },
+      "fallbackMatch": "exact"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "5181ca8b121d27ef6aeb7cfa0492c04ff90e57e61eaa49b7b03fded7e58c9ecc"
+}

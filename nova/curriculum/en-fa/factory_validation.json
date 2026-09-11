@@ -145,9 +145,17 @@
     137,
     138,
     139,
-    140
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148
   ],
-  "passedPrefixLength": 140,
+  "passedPrefixLength": 148,
   "status": "PASS",
   "lessonReports": [
     {
@@ -1655,6 +1663,88 @@
       "referenceStatus": "PASS",
       "referenceWarnings": [],
       "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0141",
+      "sortOrder": 141,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0142",
+      "sortOrder": 142,
+      "status": "PASS",
+      "automatedScore": 90,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0143",
+      "sortOrder": 143,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0144",
+      "sortOrder": 144,
+      "status": "PASS",
+      "automatedScore": 90,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0145",
+      "sortOrder": 145,
+      "status": "PASS",
+      "automatedScore": 95,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0146",
+      "sortOrder": 146,
+      "status": "PASS",
+      "automatedScore": 90,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [
+        "EN-A1-L-0146: target word EN-LEX-PLAN-01 authored Persian meaning differs from selected reference meaning; confirm context-specific translation"
+      ],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0147",
+      "sortOrder": 147,
+      "status": "PASS",
+      "automatedScore": 90,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
+    },
+    {
+      "lessonKey": "EN-A1-L-0148",
+      "sortOrder": 148,
+      "status": "PASS",
+      "automatedScore": 90,
+      "canonicalStatus": "PASS",
+      "referenceStatus": "PASS",
+      "referenceWarnings": [],
+      "errors": []
     }
   ],
   "storyErrors": [],
@@ -1686,8 +1776,8 @@
       "PQ2-W01 EN-A1-L-0129: 7 usage fallbacks; naturalness/corpus evidence deserves extra review"
     ],
     "metrics": {
-      "lessons": 140,
-      "qualityV2Lessons": 16,
+      "lessons": 148,
+      "qualityV2Lessons": 24,
       "errors": 0,
       "warnings": 19,
       "legacyPlaceholderErrors": 0,
@@ -2699,6 +2789,62 @@
       {
         "lessonKey": "EN-A1-L-0140",
         "sortOrder": 140,
+        "status": "PASS",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "lessonKey": "EN-A1-L-0141",
+        "sortOrder": 141,
+        "status": "PASS",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "lessonKey": "EN-A1-L-0142",
+        "sortOrder": 142,
+        "status": "PASS",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "lessonKey": "EN-A1-L-0143",
+        "sortOrder": 143,
+        "status": "PASS",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "lessonKey": "EN-A1-L-0144",
+        "sortOrder": 144,
+        "status": "PASS",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "lessonKey": "EN-A1-L-0145",
+        "sortOrder": 145,
+        "status": "PASS",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "lessonKey": "EN-A1-L-0146",
+        "sortOrder": 146,
+        "status": "PASS",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "lessonKey": "EN-A1-L-0147",
+        "sortOrder": 147,
+        "status": "PASS",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "lessonKey": "EN-A1-L-0148",
+        "sortOrder": 148,
         "status": "PASS",
         "errors": [],
         "warnings": []

@@ -1,1 +1,581 @@
-{"schemaVersion":"2.2.0","contentSystemVersion":"1","courseCode":"en-fa","levelKey":"A1","lessonKey":"EN-A1-L-0145","sortOrder":145,"titleEn":"Say how long it is not","titleFa":"بگو چند دقیقه نیست","descriptionFa":"با minute و شکل منفی be درباره مدت زمان کوتاه صحبت کن.","primaryOutcomeKey":"EN-A1-OUTCOME-0145","outcomeFa":"minute را به معنی «دقیقه» در جمله‌ای کوتاه با be منفی به کار ببری.","scenarioFa":"ایریس و لیام جلوی یک کافه منتظر آماده شدن سفارش هستند.","prerequisiteOutcomeKeys":["EN-A1-OUTCOME-0144"],"curriculum":{"startingKnowledge":"early_a1_spoken_core_and_recent_review","targetConstructions":[{"key":"EN-CONSTR-0145-MINUTE","form":"It is not ten minutes.","meaningFa":"جمله خبری منفی با be برای رد کردن یک مدت زمان"}],"supportLanguage":[{"form":"Is the wait ten minutes?","meaningFa":"انتظار ده دقیقه است؟"},{"form":"Is it five minutes?","meaningFa":"پنج دقیقه است؟"}],"assessmentBoundary":"Only minute in the selected reference sense is assessed as the new lexical target; know is review only.","transferPlan":{"mode":"same_lesson","intent":"Reuse the target in a second short context, then reactivate legacy lexical item know."},"story":{"arcKey":"EN-A1-WAITING","sceneKey":"EN-A1-FACTORY-SCENE-0145","learnerRoleKey":"iris","participants":["iris","liam"],"introducedCharacterKeys":[],"relationshipState":"already_known","dependsOnLessonKeys":[],"continuesLessonKey":null,"settingFa":"ایریس و لیام جلوی یک کافه منتظر آماده شدن سفارش هستند.","storyBeatFa":"ایریس و لیام جلوی یک کافه منتظر آماده شدن سفارش هستند."},"reviewLinks":[{"lessonKey":"EN-A1-L-0040","activityKeys":["A08"],"learningDemand":"recognition","note":"Legacy review: know is reactivated without a new-target claim."}],"languageReference":{"specKey":"en-fa-A1-LESSON-SPEC-0145","specHash":"355d8ed90c11ec38ba0a365ed78db4b02bdb60d01f8b2408e78339ca0f81fc46","grammarTargetKeys":[],"noNewGrammarReason":"The negative present-be pattern used here has already been exposed in the live canonical prefix after Lesson 0144; Lesson 0145 is lexical/construction focused on minute rather than introducing another grammar target.","reviewLexicalLemmas":["know"],"usageFallbacks":[{"query":"It is not ten minutes","rationale":"Natural short target use for the selected lexical sense and grammar."},{"query":"It is five minutes","rationale":"Changed-information same-lesson transfer preserving the selected sense."}]},"pedagogyVersion":2},"lexicalItems":[{"lexicalKey":"EN-LEX-MINUTE-01","itemType":"word","displayForm":"minute","translationFa":"دقیقه","role":"target","lemma":"minute","partOfSpeech":"noun","senseKey":"f0bba94a-4c9e-5416-9c97-df356119062b","audioEligible":true,"metadata":{"referenceKey":"EN-REF-ACAF1BFF6CA0D4244AC4"}},{"lexicalKey":"EN-LEX-KNOW-01","itemType":"word","displayForm":"know","translationFa":"دانستن","role":"review","lemma":"know","partOfSpeech":"verb","senseKey":"be_aware","audioEligible":true,"metadata":{"referenceKey":"EN-REF-D277A31EE85CEBDF62F6"}}],"turns":[{"turnKey":"T01","role":"character","characterKey":"liam","textEn":"Is the wait ten minutes?","translationFa":"انتظار ده دقیقه است؟","audioRequired":true},{"turnKey":"T02","role":"learner","characterKey":"iris","textEn":"No, it is not ten minutes.","translationFa":"نه، ده دقیقه نیست.","audioRequired":true,"speechTargetEn":"No, it is not ten minutes.","acceptedSpeechEn":["No, it is not ten minutes."]},{"turnKey":"T03","role":"character","characterKey":"liam","textEn":"Is it five minutes?","translationFa":"پنج دقیقه است؟","audioRequired":true},{"turnKey":"T04","role":"learner","characterKey":"iris","textEn":"Yes, it is five minutes.","translationFa":"بله، پنج دقیقه است.","audioRequired":true,"speechTargetEn":"Yes, it is five minutes.","acceptedSpeechEn":["Yes, it is five minutes."]}],"activities":[{"activityKey":"A01","type":"response_choice","instructionFa":"معنی minute را پیدا کن.","promptEn":"minute","config":{"options":["دقیقه","ساعت","روز"],"answerIndex":0,"feedback":{"optionsFa":["درست است؛ «دقیقه» دقیقاً پاسخ این تمرین است.","«ساعت» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.","«روز» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."],"correctFa":"دقیقه"}},"metadata":{"learningDemand":"recognition","evidenceKind":"recognition_or_selection"}},{"activityKey":"A02","type":"dialogue","instructionFa":"گفت‌وگو را از ابتدا دنبال کن و پاسخ نقش خودت را بگو.","config":{"mode":"guided_exchange","exchanges":[{"exchangeKey":"E01","promptTurnKey":"T01","responseTurnKey":"T02","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true},{"exchangeKey":"E02","promptTurnKey":"T03","responseTurnKey":"T04","responseEvaluation":"practice_only","allowPromptReplay":true,"allowResponseModelAudio":true}],"showPromptText":true,"showPromptTranslation":true,"showResponseText":true,"showResponseTranslation":true}},{"activityKey":"A03","type":"comprehension","instructionFa":"بخش اول گفت‌وگو را دوباره گوش کن.","promptFa":"کدام جمله در گفت‌وگو گفته شد؟","config":{"sourceTurnKeys":["T01","T02"],"options":["No, it is not ten minutes.","It is ten minutes.","It is not ten hours."],"answerIndex":0,"transcriptAfterAttempt":true,"feedback":{"optionsFa":["درست است؛ «No, it is not ten minutes.» دقیقاً پاسخ این تمرین است.","«It is ten minutes.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.","«It is not ten hours.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."],"correctFa":"نه، ده دقیقه نیست."}},"metadata":{"learningDemand":"recognition","evidenceKind":"recognition_or_selection","skillFocus":"listening","distractorAudit":{"reviewerType":"model","items":[{"option":"It is ten minutes.","grammatical":true,"natural":true,"contrastReasonFa":"معنی یا اطلاعات جمله فرق دارد."},{"option":"It is not ten hours.","grammatical":true,"natural":true,"contrastReasonFa":"معنی یا اطلاعات جمله فرق دارد."}]}}},{"activityKey":"A04","type":"response_choice","instructionFa":"جمله درست را انتخاب کن.","promptFa":"ده دقیقه نیست.","config":{"optionsEn":["It is not ten minutes.","It is ten minutes.","It is not ten hours."],"answerIndex":0,"feedback":{"optionsFa":["درست است؛ «It is not ten minutes.» دقیقاً پاسخ این تمرین است.","«It is ten minutes.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.","«It is not ten hours.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."],"correctFa":"It is not ten minutes."}},"metadata":{"learningDemand":"recognition","evidenceKind":"recognition_or_selection","distractorAudit":{"reviewerType":"model","items":[{"option":"It is ten minutes.","grammatical":true,"natural":true,"contrastReasonFa":"معنی هدف را عوض می‌کند."},{"option":"It is not ten hours.","grammatical":true,"natural":true,"contrastReasonFa":"معنی هدف را عوض می‌کند."}]}}},{"activityKey":"A05","type":"response_choice","instructionFa":"برای موقعیت دوم پاسخ درست را انتخاب کن.","promptFa":"پنج دقیقه است.","config":{"optionsEn":["It is five minutes.","It is ten minutes.","It is not five hours."],"answerIndex":0,"feedback":{"optionsFa":["درست است؛ «It is five minutes.» دقیقاً پاسخ این تمرین است.","«It is ten minutes.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.","«It is not five hours.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."],"correctFa":"It is five minutes."}},"metadata":{"learningDemand":"transfer","evidenceKind":"recognition_or_selection","distractorAudit":{"reviewerType":"model","items":[{"option":"It is ten minutes.","grammatical":true,"natural":true,"contrastReasonFa":"اطلاعات هدف را عوض می‌کند."},{"option":"It is not five hours.","grammatical":true,"natural":true,"contrastReasonFa":"اطلاعات هدف را عوض می‌کند."}]}}},{"activityKey":"A06","type":"sentence_order","instructionFa":"پاسخ اول را دوباره گوش کن و جمله را مرتب کن.","config":{"audioSourceTurnKey":"T02","tokensEn":["minutes.","ten","not","is","it","No,"],"answerTokensEn":["No,","it","is","not","ten","minutes."],"answerEn":"No, it is not ten minutes.","showAnswerTextBeforeAttempt":false,"allowAudioReplay":true,"practiceOnly":true,"hideTokenSurfaceCues":true,"feedback":{"correctFa":"درست چیدی.","retryFa":"دوباره به پاسخ گوش کن و ترتیب جمله را بساز."}},"metadata":{"learningDemand":"supported_reconstruction","evidenceKind":"supported_reconstruction"}},{"activityKey":"A07","type":"speak","instructionFa":"پاسخ انگلیسی پنهان است؛ خودت بگو.","promptFa":"در نقش خودت بگو: بله، پنج دقیقه است.","config":{"mode":"retrieval","textEn":"Yes, it is five minutes.","acceptedAnswersEn":["Yes, it is five minutes."],"sourceTurnKey":"T04","showAnswerTextBeforeAttempt":false,"hintFa":"از minute یا ساخت هدف این درس استفاده کن.","feedback":{"correctFa":"درست است.","retryFa":"پاسخ دوم گفت‌وگو را دوباره بساز."},"evidenceKind":"bounded_retrieval","practiceOnly":false,"modelAccess":"explicit_help"},"metadata":{"learningDemand":"retrieval","assessmentLimit":"The supplying dialogue is already exposed in A02."}},{"activityKey":"A08","type":"response_choice","instructionFa":"یک واژه قدیمی را مرور کن.","promptFa":"زمان را می‌دانم.","config":{"optionsEn":["I know the time.","I remember the time.","I need the time."],"answerIndex":0,"feedback":{"optionsFa":["درست است؛ «I know the time.» دقیقاً پاسخ این تمرین است.","«I remember the time.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.","«I need the time.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."],"correctFa":"I know the time."}},"metadata":{"learningDemand":"review","evidenceKind":"recognition_or_selection","distractorAudit":{"reviewerType":"model","items":[{"option":"I remember the time.","grammatical":true,"natural":true,"contrastReasonFa":"این گزینه معنی دیگری دارد و واژه مرور هدف را به کار نمی‌برد."},{"option":"I need the time.","grammatical":true,"natural":true,"contrastReasonFa":"این گزینه معنی دیگری دارد و واژه مرور هدف را به کار نمی‌برد."}]}}},{"activityKey":"A09","type":"response_choice","instructionFa":"پاسخ درست را در یک موقعیت تازه انتخاب کن.","promptFa":"یک دقیقه صبر کن.","config":{"optionsEn":["Wait one minute.","Wait one hour.","Wait one day."],"answerIndex":0,"feedback":{"optionsFa":["درست است؛ «Wait one minute.» دقیقاً پاسخ این تمرین است.","«Wait one hour.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.","«Wait one day.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."],"correctFa":"Wait one minute."}},"metadata":{"learningDemand":"transfer","evidenceKind":"recognition_or_selection","distractorAudit":{"reviewerType":"model","items":[{"option":"Wait one hour.","grammatical":true,"natural":true,"contrastReasonFa":"این گزینه از نظر دستوری درست است اما معنی هدف را عوض می‌کند."},{"option":"Wait one day.","grammatical":true,"natural":true,"contrastReasonFa":"این گزینه از نظر دستوری درست است اما معنی هدف را عوض می‌کند."}]}}},{"activityKey":"A10","type":"speak","instructionFa":"پاسخ اول را بدون دیدن متن دوباره بگو.","promptFa":"نه، ده دقیقه نیست.","config":{"mode":"retrieval","textEn":"No, it is not ten minutes.","acceptedAnswersEn":["No, it is not ten minutes."],"sourceTurnKey":"T02","showAnswerTextBeforeAttempt":false,"hintFa":"از minute یا ساخت هدف این درس استفاده کن.","feedback":{"correctFa":"درست است.","retryFa":"پاسخ اول گفت‌وگو را دوباره بساز."},"evidenceKind":"bounded_retrieval","practiceOnly":false,"modelAccess":"explicit_help"},"metadata":{"learningDemand":"retrieval","assessmentLimit":"The exact supplying turn is already exposed in A02."}}],"metadata":{"pilot":false,"audioRequired":true,"humanEnglishAuditRequired":true,"dialogueRuntime":"guided_exchange","qualityStage":"model_reviewed_for_testing","lessonArchetype":"lexical_context"}}
+{
+  "schemaVersion": "2.2.0",
+  "contentSystemVersion": "1",
+  "courseCode": "en-fa",
+  "levelKey": "A1",
+  "lessonKey": "EN-A1-L-0145",
+  "sortOrder": 145,
+  "titleEn": "Say how long it is not",
+  "titleFa": "بگو چند دقیقه نیست",
+  "descriptionFa": "با minute و شکل منفی be درباره مدت زمان کوتاه صحبت کن.",
+  "primaryOutcomeKey": "EN-A1-OUTCOME-0145",
+  "outcomeFa": "minute را به معنی «دقیقه» در جمله‌ای کوتاه با be منفی به کار ببری.",
+  "scenarioFa": "نینا و آیریس در ادامه داستان مرکز محله درباره موضوع این درس گفت‌وگو می‌کنند.",
+  "prerequisiteOutcomeKeys": [
+    "EN-A1-OUTCOME-0144"
+  ],
+  "curriculum": {
+    "startingKnowledge": "early_a1_spoken_core_and_recent_review",
+    "targetConstructions": [
+      {
+        "key": "EN-CONSTR-0145-MINUTE",
+        "form": "It is not ten minutes.",
+        "meaningFa": "جمله خبری منفی با be برای رد کردن یک مدت زمان"
+      }
+    ],
+    "supportLanguage": [
+      {
+        "form": "Is the wait ten minutes?",
+        "meaningFa": "انتظار ده دقیقه است؟"
+      },
+      {
+        "form": "Is it five minutes?",
+        "meaningFa": "پنج دقیقه است؟"
+      }
+    ],
+    "assessmentBoundary": "Only minute in the selected reference sense is assessed as the new lexical target; know is review only.",
+    "transferPlan": {
+      "mode": "same_lesson",
+      "intent": "Reuse the target in a second short context, then reactivate legacy lexical item know."
+    },
+    "story": {
+      "arcKey": "EN-A1-COMMUNITY",
+      "sceneKey": "EN-A1-FACTORY-SCENE-0145",
+      "learnerRoleKey": "nina",
+      "participants": [
+        "iris",
+        "nina"
+      ],
+      "introducedCharacterKeys": [],
+      "relationshipState": "already_known",
+      "dependsOnLessonKeys": [
+        "EN-A1-L-0139"
+      ],
+      "continuesLessonKey": "EN-A1-L-0139",
+      "settingFa": "مرکز محله، میز برنامه‌ریزی",
+      "storyBeatFa": "نینا و آیریس در ادامه داستان مرکز محله درباره موضوع این درس گفت‌وگو می‌کنند."
+    },
+    "reviewLinks": [
+      {
+        "lessonKey": "EN-A1-L-0040",
+        "activityKeys": [
+          "A08"
+        ],
+        "learningDemand": "recognition",
+        "note": "Legacy review: know is reactivated without a new-target claim."
+      },
+      {
+        "lessonKey": "EN-A1-L-0139",
+        "activityKeys": [
+          "A02"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Canonical مرکز محله story returns after the required spacing and the played learner role rotates."
+      },
+      {
+        "lessonKey": "EN-A1-L-0135",
+        "activityKeys": [
+          "A11"
+        ],
+        "learningDemand": "retrieval",
+        "note": "Spaced learner retrieval of remember inside its required +3..+10 window."
+      }
+    ],
+    "languageReference": {
+      "specKey": "en-fa-A1-LESSON-SPEC-0145",
+      "specHash": "355d8ed90c11ec38ba0a365ed78db4b02bdb60d01f8b2408e78339ca0f81fc46",
+      "grammarTargetKeys": [],
+      "noNewGrammarReason": "The negative present-be pattern used here has already been exposed in the live canonical prefix after Lesson 0144; Lesson 0145 is lexical/construction focused on minute rather than introducing another grammar target.",
+      "reviewLexicalLemmas": [
+        "know"
+      ],
+      "usageFallbacks": [
+        {
+          "query": "It is not ten minutes",
+          "rationale": "Natural short target use for the selected lexical sense and grammar."
+        },
+        {
+          "query": "It is five minutes",
+          "rationale": "Changed-information same-lesson transfer preserving the selected sense."
+        }
+      ]
+    },
+    "pedagogyVersion": 2
+  },
+  "lexicalItems": [
+    {
+      "lexicalKey": "EN-LEX-MINUTE-01",
+      "itemType": "word",
+      "displayForm": "minute",
+      "translationFa": "دقیقه",
+      "role": "target",
+      "lemma": "minute",
+      "partOfSpeech": "noun",
+      "senseKey": "f0bba94a-4c9e-5416-9c97-df356119062b",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-ACAF1BFF6CA0D4244AC4"
+      }
+    },
+    {
+      "lexicalKey": "EN-LEX-KNOW-01",
+      "itemType": "word",
+      "displayForm": "know",
+      "translationFa": "دانستن",
+      "role": "review",
+      "lemma": "know",
+      "partOfSpeech": "verb",
+      "senseKey": "be_aware",
+      "audioEligible": true,
+      "metadata": {
+        "referenceKey": "EN-REF-D277A31EE85CEBDF62F6"
+      }
+    }
+  ],
+  "turns": [
+    {
+      "turnKey": "T01",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Is the wait ten minutes?",
+      "translationFa": "انتظار ده دقیقه است؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T02",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "No, it is not ten minutes.",
+      "translationFa": "نه، ده دقیقه نیست.",
+      "audioRequired": true,
+      "speechTargetEn": "No, it is not ten minutes.",
+      "acceptedSpeechEn": [
+        "No, it is not ten minutes."
+      ]
+    },
+    {
+      "turnKey": "T03",
+      "role": "character",
+      "characterKey": "iris",
+      "textEn": "Is it five minutes?",
+      "translationFa": "پنج دقیقه است؟",
+      "audioRequired": true
+    },
+    {
+      "turnKey": "T04",
+      "role": "learner",
+      "characterKey": "nina",
+      "textEn": "Yes, it is five minutes.",
+      "translationFa": "بله، پنج دقیقه است.",
+      "audioRequired": true,
+      "speechTargetEn": "Yes, it is five minutes.",
+      "acceptedSpeechEn": [
+        "Yes, it is five minutes."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activityKey": "A01",
+      "type": "response_choice",
+      "instructionFa": "معنی minute را پیدا کن.",
+      "promptEn": "minute",
+      "config": {
+        "options": [
+          "دقیقه",
+          "ساعت",
+          "روز"
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ «دقیقه» دقیقاً پاسخ این تمرین است.",
+            "«ساعت» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.",
+            "«روز» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
+          ],
+          "correctFa": "دقیقه"
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection"
+      }
+    },
+    {
+      "activityKey": "A02",
+      "type": "dialogue",
+      "instructionFa": "گفت‌وگو را از ابتدا دنبال کن و پاسخ نقش خودت را بگو.",
+      "config": {
+        "mode": "guided_exchange",
+        "exchanges": [
+          {
+            "exchangeKey": "E01",
+            "promptTurnKey": "T01",
+            "responseTurnKey": "T02",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          },
+          {
+            "exchangeKey": "E02",
+            "promptTurnKey": "T03",
+            "responseTurnKey": "T04",
+            "responseEvaluation": "practice_only",
+            "allowPromptReplay": true,
+            "allowResponseModelAudio": true
+          }
+        ],
+        "showPromptText": true,
+        "showPromptTranslation": true,
+        "showResponseText": true,
+        "showResponseTranslation": true
+      }
+    },
+    {
+      "activityKey": "A03",
+      "type": "comprehension",
+      "instructionFa": "بخش اول گفت‌وگو را دوباره گوش کن.",
+      "promptFa": "کدام جمله در گفت‌وگو گفته شد؟",
+      "config": {
+        "sourceTurnKeys": [
+          "T01",
+          "T02"
+        ],
+        "options": [
+          "No, it is not ten minutes.",
+          "It is ten minutes.",
+          "It is not ten hours."
+        ],
+        "answerIndex": 0,
+        "transcriptAfterAttempt": true,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ «No, it is not ten minutes.» دقیقاً پاسخ این تمرین است.",
+            "«It is ten minutes.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.",
+            "«It is not ten hours.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
+          ],
+          "correctFa": "نه، ده دقیقه نیست."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "skillFocus": "listening",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "It is ten minutes.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "معنی یا اطلاعات جمله فرق دارد."
+            },
+            {
+              "option": "It is not ten hours.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "معنی یا اطلاعات جمله فرق دارد."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A04",
+      "type": "response_choice",
+      "instructionFa": "جمله درست را انتخاب کن.",
+      "promptFa": "ده دقیقه نیست.",
+      "config": {
+        "optionsEn": [
+          "It is not ten minutes.",
+          "It is ten minutes.",
+          "It is not ten hours."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ «It is not ten minutes.» دقیقاً پاسخ این تمرین است.",
+            "«It is ten minutes.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.",
+            "«It is not ten hours.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
+          ],
+          "correctFa": "It is not ten minutes."
+        }
+      },
+      "metadata": {
+        "learningDemand": "recognition",
+        "evidenceKind": "recognition_or_selection",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "It is ten minutes.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "معنی هدف را عوض می‌کند."
+            },
+            {
+              "option": "It is not ten hours.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "معنی هدف را عوض می‌کند."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A05",
+      "type": "response_choice",
+      "instructionFa": "برای موقعیت دوم پاسخ درست را انتخاب کن.",
+      "promptFa": "پنج دقیقه است.",
+      "config": {
+        "optionsEn": [
+          "It is five minutes.",
+          "It is ten minutes.",
+          "It is not five hours."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ «It is five minutes.» دقیقاً پاسخ این تمرین است.",
+            "«It is ten minutes.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.",
+            "«It is not five hours.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
+          ],
+          "correctFa": "It is five minutes."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "It is ten minutes.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "اطلاعات هدف را عوض می‌کند."
+            },
+            {
+              "option": "It is not five hours.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "اطلاعات هدف را عوض می‌کند."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A06",
+      "type": "sentence_order",
+      "instructionFa": "پاسخ اول را دوباره گوش کن و جمله را مرتب کن.",
+      "config": {
+        "audioSourceTurnKey": "T02",
+        "tokensEn": [
+          "minutes.",
+          "ten",
+          "not",
+          "is",
+          "it",
+          "No,"
+        ],
+        "answerTokensEn": [
+          "No,",
+          "it",
+          "is",
+          "not",
+          "ten",
+          "minutes."
+        ],
+        "answerEn": "No, it is not ten minutes.",
+        "showAnswerTextBeforeAttempt": false,
+        "allowAudioReplay": true,
+        "practiceOnly": true,
+        "hideTokenSurfaceCues": true,
+        "feedback": {
+          "correctFa": "درست چیدی.",
+          "retryFa": "دوباره به پاسخ گوش کن و ترتیب جمله را بساز."
+        }
+      },
+      "metadata": {
+        "learningDemand": "supported_reconstruction",
+        "evidenceKind": "supported_reconstruction"
+      }
+    },
+    {
+      "activityKey": "A07",
+      "type": "speak",
+      "instructionFa": "پاسخ انگلیسی پنهان است؛ خودت بگو.",
+      "promptFa": "در نقش خودت بگو: بله، پنج دقیقه است.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "Yes, it is five minutes.",
+        "acceptedAnswersEn": [
+          "Yes, it is five minutes."
+        ],
+        "sourceTurnKey": "T04",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از minute یا ساخت هدف این درس استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "پاسخ دوم گفت‌وگو را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "The supplying dialogue is already exposed in A02."
+      }
+    },
+    {
+      "activityKey": "A08",
+      "type": "response_choice",
+      "instructionFa": "یک واژه قدیمی را مرور کن.",
+      "promptFa": "زمان را می‌دانم.",
+      "config": {
+        "optionsEn": [
+          "I know the time.",
+          "I remember the time.",
+          "I need the time."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ «I know the time.» دقیقاً پاسخ این تمرین است.",
+            "«I remember the time.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.",
+            "«I need the time.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
+          ],
+          "correctFa": "I know the time."
+        }
+      },
+      "metadata": {
+        "learningDemand": "review",
+        "evidenceKind": "recognition_or_selection",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "I remember the time.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "این گزینه معنی دیگری دارد و واژه مرور هدف را به کار نمی‌برد."
+            },
+            {
+              "option": "I need the time.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "این گزینه معنی دیگری دارد و واژه مرور هدف را به کار نمی‌برد."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A09",
+      "type": "response_choice",
+      "instructionFa": "پاسخ درست را در یک موقعیت تازه انتخاب کن.",
+      "promptFa": "یک دقیقه صبر کن.",
+      "config": {
+        "optionsEn": [
+          "Wait one minute.",
+          "Wait one hour.",
+          "Wait one day."
+        ],
+        "answerIndex": 0,
+        "feedback": {
+          "optionsFa": [
+            "درست است؛ «Wait one minute.» دقیقاً پاسخ این تمرین است.",
+            "«Wait one hour.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد.",
+            "«Wait one day.» از نظر معنی یا اطلاعات با پاسخ هدف این تمرین فرق دارد."
+          ],
+          "correctFa": "Wait one minute."
+        }
+      },
+      "metadata": {
+        "learningDemand": "transfer",
+        "evidenceKind": "recognition_or_selection",
+        "distractorAudit": {
+          "reviewerType": "model",
+          "items": [
+            {
+              "option": "Wait one hour.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "این گزینه از نظر دستوری درست است اما معنی هدف را عوض می‌کند."
+            },
+            {
+              "option": "Wait one day.",
+              "grammatical": true,
+              "natural": true,
+              "contrastReasonFa": "این گزینه از نظر دستوری درست است اما معنی هدف را عوض می‌کند."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activityKey": "A10",
+      "type": "speak",
+      "instructionFa": "پاسخ اول را بدون دیدن متن دوباره بگو.",
+      "promptFa": "نه، ده دقیقه نیست.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "No, it is not ten minutes.",
+        "acceptedAnswersEn": [
+          "No, it is not ten minutes."
+        ],
+        "sourceTurnKey": "T02",
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از minute یا ساخت هدف این درس استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است.",
+          "retryFa": "پاسخ اول گفت‌وگو را دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "The exact supplying turn is already exposed in A02."
+      }
+    },
+    {
+      "activityKey": "A11",
+      "type": "speak",
+      "instructionFa": "یک جمله از درس‌های قبلی را از حافظه بازیابی کن.",
+      "promptFa": "مرور فاصله‌دار: «خوب یادم هست.» را به انگلیسی بگو.",
+      "config": {
+        "mode": "retrieval",
+        "textEn": "I remember it well.",
+        "acceptedAnswersEn": [
+          "I remember it well."
+        ],
+        "showAnswerTextBeforeAttempt": false,
+        "hintFa": "از remember استفاده کن.",
+        "feedback": {
+          "correctFa": "درست است؛ واژه قدیمی را دوباره از حافظه بازیابی کردی.",
+          "retryFa": "جمله کوتاه قبلی را از حافظه دوباره بساز."
+        },
+        "evidenceKind": "bounded_retrieval",
+        "practiceOnly": false,
+        "modelAccess": "explicit_help"
+      },
+      "metadata": {
+        "learningDemand": "retrieval",
+        "assessmentLimit": "Spaced retrieval of a previously taught bounded target."
+      }
+    }
+  ],
+  "metadata": {
+    "pilot": false,
+    "audioRequired": true,
+    "humanEnglishAuditRequired": true,
+    "dialogueRuntime": "guided_exchange",
+    "qualityStage": "model_reviewed_for_testing",
+    "lessonArchetype": "lexical_context"
+  }
+}

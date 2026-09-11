@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0148",
+  "sortOrder": 148,
+  "levelKey": "A1",
+  "lessonSourceHash": "72344ae73d8a732f05b98202f7f8dc7126b8df4cab116447aa7d0a7bbb985472",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0148-BRING",
+      "form": "Bring the form.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-BRING-01",
+      "lemma": "bring",
+      "role": "target",
+      "referenceKey": "EN-REF-B1F0B9E9B8E7BFBBAB32",
+      "spokenPriority": {
+        "lemma": "bring",
+        "spokenRank": 221,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "B R IH1 NG",
+        "arpabet": [
+          "B R IH1 NG"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "bring the form",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0148"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0148-BRING"
+      ],
+      "lexicalLemmas": [
+        "bring"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "bring the form",
+      "examples": [],
+      "fallback": {
+        "query": "Bring the form",
+        "rationale": "Natural short target use for the selected lexical sense and grammar."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "bring the information",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0148"
+      ],
+      "lexicalLemmas": [
+        "bring"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "bring the information sheet too",
+      "examples": [],
+      "fallback": {
+        "query": "Bring the information sheet too",
+        "rationale": "Changed-information same-lesson transfer preserving the selected sense."
+      },
+      "fallbackMatch": "compatible_phrase"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "36338248338512a6963cf69240a888cd938d1166f4ef64a9a99c59f85c6057fe"
+}

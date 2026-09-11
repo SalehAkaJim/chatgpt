@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "courseCode": "en-fa",
+  "lessonKey": "EN-A1-L-0147",
+  "sortOrder": 147,
+  "levelKey": "A1",
+  "lessonSourceHash": "107a48675aa1183a4c25d29c7f7d20d31d14243f31d942b215a40ef62f25d695",
+  "enforceFromSortOrder": 25,
+  "enforced": true,
+  "grammarEvidence": [
+    {
+      "constructionKey": "EN-CONSTR-0147-KID",
+      "form": "The kid is running.",
+      "kind": "lexical_frame",
+      "status": "PASS",
+      "bestGrammarMatch": null,
+      "alternatives": []
+    }
+  ],
+  "lexicalEvidence": [
+    {
+      "lexicalKey": "EN-LEX-KID-01",
+      "lemma": "kid",
+      "role": "target",
+      "referenceKey": "EN-REF-153429F6DD5BF6E80B12",
+      "spokenPriority": {
+        "lemma": "kid",
+        "spokenRank": 180,
+        "spokenFrequency": null,
+        "generalFrequencyRank": null,
+        "priorityTier": "core_spoken"
+      },
+      "pronunciation": {
+        "primaryArpabet": "K IH1 D",
+        "arpabet": [
+          "K IH1 D"
+        ],
+        "stressPattern": "1"
+      }
+    }
+  ],
+  "usageEvidence": [
+    {
+      "query": "the kid is running",
+      "kind": "construction",
+      "lessonKeys": [
+        "EN-A1-L-0147"
+      ],
+      "constructionKeys": [
+        "EN-CONSTR-0147-KID"
+      ],
+      "lexicalLemmas": [
+        "kid"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "the kid is running",
+      "examples": [],
+      "fallback": {
+        "query": "The kid is running",
+        "rationale": "Natural short target use for the selected lexical sense and grammar."
+      },
+      "fallbackMatch": "exact"
+    },
+    {
+      "query": "the kid is drawing",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0147"
+      ],
+      "lexicalLemmas": [
+        "kid"
+      ],
+      "status": "explicit_fallback",
+      "sampleCount": 0,
+      "evidenceQuery": "the kid is drawing",
+      "examples": [],
+      "fallback": {
+        "query": "The kid is drawing",
+        "rationale": "Changed-information same-lesson transfer preserving the selected sense."
+      },
+      "fallbackMatch": "exact"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "PASS",
+  "planHash": "9bdc52fcd99a3ff40c964102509ae8439a9d87268c517d99255afb919caafcf7"
+}
