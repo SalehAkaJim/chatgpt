@@ -91,6 +91,22 @@
       "fallbackMatch": null
     },
     {
+      "query": "room one or room",
+      "kind": "target_collocation",
+      "lessonKeys": [
+        "EN-A1-L-0014"
+      ],
+      "lexicalLemmas": [
+        "one"
+      ],
+      "status": "no_evidence",
+      "sampleCount": 0,
+      "evidenceQuery": null,
+      "examples": [],
+      "fallback": null,
+      "fallbackMatch": null
+    },
+    {
       "query": "room one or",
       "kind": "target_collocation",
       "lessonKeys": [
@@ -114,22 +130,6 @@
       ],
       "lexicalLemmas": [
         "room"
-      ],
-      "status": "no_evidence",
-      "sampleCount": 0,
-      "evidenceQuery": null,
-      "examples": [],
-      "fallback": null,
-      "fallbackMatch": null
-    },
-    {
-      "query": "room one or room",
-      "kind": "target_collocation",
-      "lessonKeys": [
-        "EN-A1-L-0014"
-      ],
-      "lexicalLemmas": [
-        "one"
       ],
       "status": "no_evidence",
       "sampleCount": 0,
@@ -193,14 +193,14 @@
   "warnings": [
     "EN-A1-L-0014: target word one has no CMUdict pronunciation evidence",
     "EN-A1-L-0014: target collocation 'or room two' has no committed Tatoeba evidence or explicit usage fallback",
+    "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one or' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'one or room two' has no committed Tatoeba evidence or explicit usage fallback",
-    "EN-A1-L-0014: target collocation 'room one or room' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two please' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room two' has no committed Tatoeba evidence or explicit usage fallback",
     "EN-A1-L-0014: target collocation 'room one please' has no committed Tatoeba evidence or explicit usage fallback"
   ],
   "errors": [],
   "status": "PASS",
-  "planHash": "ad526905964eb3480499ee25a094e45125e927a6f490b94dc358a4b58f605cc2"
+  "planHash": "8e7f9cfb641864ed8877ee79febd09640d97635f1125f20cbc0d4388e770e574"
 }
