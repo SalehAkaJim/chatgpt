@@ -55,12 +55,24 @@ def validate_against_spec(lesson: dict, spec: dict, *, enforce_from: int = 25) -
         for x in spec.get("grammarCandidates", [])
         if x.get("grammarKey")
     }
+    reconciled_review_grammar = {
+        x.get("grammarKey")
+        for x in (spec.get("reviewDue") or {}).get("grammar", []) or []
+        if x.get("grammarKey")
+        and x.get("integrationStatus") == "provisional_target_already_introduced"
+    }
     chosen_grammar = language_ref.get("grammarTargetKeys", []) or []
     if len(chosen_grammar) > 1:
         errors.append("At most one new grammarTargetKey may be introduced in a normal Lesson")
     for key in chosen_grammar:
-        if key not in allowed_grammar:
-            errors.append(f"grammarTargetKey {key} is not in the committed grammar candidate set")
+        if key in allowed_grammar:
+            continue
+        if key in reconciled_review_grammar:
+            warnings.append(
+                f"grammarTargetKey {key} was provisionally reserved in this wave and is already introduced in the live sequential prefix"
+            )
+            continue
+        errors.append(f"grammarTargetKey {key} is not in the committed grammar candidate set")
 
     # If no new grammar is selected, the Lesson is explicitly consolidation or
     # lexical/construction focused. Make that decision visible rather than implicit.
