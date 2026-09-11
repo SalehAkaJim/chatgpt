@@ -1,0 +1,47 @@
+name: Nova Authoring Scale Tests
+
+on:
+  pull_request:
+    paths:
+      - 'nova/_assistant/content-system-v1/tools/factory_wave.py'
+      - 'nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py'
+      - 'nova/curriculum/en-fa/factory.config.json'
+      - '.github/workflows/nova-authoring-scale-tests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'nova/_assistant/content-system-v1/tools/factory_wave.py'
+      - 'nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py'
+      - 'nova/curriculum/en-fa/factory.config.json'
+      - '.github/workflows/nova-authoring-scale-tests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  scale-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile scaling tools
+        run: |
+          python -m py_compile \
+            nova/_assistant/content-system-v1/tools/factory_wave.py \
+            nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py
+      - name: Run 50-worker regression tests
+        env:
+          PYTHONPATH: nova/_assistant/content-system-v1/tools
+        run: python -m unittest nova/_assistant/content-system-v1/tools/test_factory_wave_scaling.py
+      - name: Verify production defaults
+        run: |
+          python - <<'PY'
+          import json
+          config = json.load(open('nova/curriculum/en-fa/factory.config.json', encoding='utf-8'))
+          assert config['waveSize'] == 20, config
+          assert config['maxParallelWaveSize'] == 50, config
+          assert config['parallelPodSize'] == 10, config
+          print({'waveSize': 20, 'maxParallelWaveSize': 50, 'parallelPodSize': 10})
+          PY
