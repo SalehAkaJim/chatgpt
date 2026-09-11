@@ -266,15 +266,15 @@ def wave_status(root: Path, manifest_path: Path) -> dict:
     }
 
 
-def reconcile_live_spec_metadata(lesson: dict, live_spec: dict) -> dict:
-    """Bind a staged draft to the live sequential spec.
+def reconcile_live_spec_metadata(lesson: dict, live_spec: dict, state: dict) -> dict:
+    """Bind a staged draft to the live sequential spec without hiding real drift.
 
-    Parallel workers author against provisional specs. Earlier integrated drafts can
-    make a provisionally reserved grammar target count as already introduced before
-    its own slot is reached. In that case the live spec legitimately omits the key
-    from its *new* grammar candidates even though the draft still uses the same
-    source-backed construction. Preserve that grammar key as an allowed review target
-    for validation; lexical choices remain strict and unchanged.
+    A parallel packet may reserve a grammar target that an earlier Lesson in the same
+    wave introduces before this slot is integrated. When that key is confirmed in the
+    live curriculum state's introducedGrammar set, it is no longer a *new* target for
+    this Lesson. Convert that reservation to explicit consolidation so every later
+    validator sees the same sequential truth. If a missing target is not actually
+    introduced, leave it untouched so strict validation still fails on real drift.
     """
     reconciled = copy.deepcopy(lesson)
     curriculum = reconciled.setdefault("curriculum", {})
@@ -283,17 +283,30 @@ def reconcile_live_spec_metadata(lesson: dict, live_spec: dict) -> dict:
     language_ref["specHash"] = live_spec.get("specHash")
 
     target_keys = [x for x in language_ref.get("grammarTargetKeys", []) if x]
-    candidate_keys = {x.get("grammarKey") for x in live_spec.get("grammarCandidates", []) if x.get("grammarKey")}
-    review_rows = (live_spec.get("reviewDue") or {}).get("grammar", []) or []
-    review_keys = {x.get("grammarKey") for x in review_rows if x.get("grammarKey")}
-    for key in target_keys:
-        if key not in candidate_keys and key not in review_keys:
-            review_rows.append({
-                "grammarKey": key,
-                "integrationStatus": "provisional_target_already_introduced",
-            })
-            review_keys.add(key)
-    live_spec.setdefault("reviewDue", {})["grammar"] = review_rows
+    candidate_keys = {
+        x.get("grammarKey")
+        for x in live_spec.get("grammarCandidates", [])
+        if x.get("grammarKey")
+    }
+    introduced_keys = {
+        x.get("grammarKey")
+        for x in state.get("introducedGrammar", [])
+        if x.get("grammarKey")
+    }
+    reconciled_as_review = [
+        key for key in target_keys
+        if key not in candidate_keys and key in introduced_keys
+    ]
+    if reconciled_as_review:
+        language_ref["grammarTargetKeys"] = [
+            key for key in target_keys if key not in reconciled_as_review
+        ]
+        language_ref["integrationReconciledGrammarKeys"] = reconciled_as_review
+        if not language_ref["grammarTargetKeys"]:
+            language_ref["noNewGrammarReason"] = (
+                "Parallel-wave grammar reservation was already introduced earlier in "
+                "the live sequential prefix; this Lesson consolidates that construction."
+            )
     return reconciled
 
 
@@ -386,7 +399,7 @@ def integrate_wave(root: Path, manifest_path: Path, *, cache_dir: Path) -> None:
                         f"Integration order drift: live spec is {live_spec.get('sortOrder')} but draft is {order}"
                     )
 
-                lesson = reconcile_live_spec_metadata(load(draft_path), live_spec)
+                lesson = reconcile_live_spec_metadata(load(draft_path), live_spec, state)
                 report = validate_against_spec(
                     lesson,
                     live_spec,
