@@ -49,6 +49,20 @@ def normalize_level(value: str | None) -> str | None:
     return m.group(1) if m else None
 
 
+def canonical_reference_level(record: dict, fallback: str | None = None) -> str | None:
+    """Return the canonical bucket for a reference record.
+
+    A resolved CEFR placement always wins over the source row's original level.
+    This prevents profile-only records from being serialized under (for example)
+    A1 while their evidence-backed canonical CEFR is C1.
+    """
+    level = normalize_level(record.get("cefr"))
+    if level in LEVEL_RANK:
+        return level
+    fallback_level = normalize_level(fallback)
+    return fallback_level if fallback_level in LEVEL_RANK else None
+
+
 def normalize_persian(value: str | None) -> str:
     text = unicodedata.normalize("NFC", (value or "")).translate(ARABIC_TO_PERSIAN)
     return re.sub(r"\s+", " ", text).strip()

@@ -5,6 +5,7 @@ import unittest
 
 from reference_data import (
     build_cefr_indexes,
+    canonical_reference_level,
     is_curriculum_eligible,
     is_production_eligible,
     normalize_persian,
@@ -24,6 +25,10 @@ class ReferenceDataTests(unittest.TestCase):
         self.assertEqual(r["level"], "B1")
         self.assertEqual(r["source"], "cefrj_exact_pos")
         self.assertTrue(is_curriculum_eligible(r))
+
+    def test_reference_bucket_uses_resolved_level_over_source_row_level(self):
+        self.assertEqual(canonical_reference_level({"cefr": "C1"}, "A1"), "C1")
+        self.assertEqual(canonical_reference_level({"cefr": None}, "B2"), "B2")
 
     def test_cefr_openjam_fallback_is_retained_but_not_production_confident(self):
         exact, lemma = build_cefr_indexes([])
