@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "f1703e0e5014f154d5e42ba35de495da3977ba2ace7f8aa6680bf998f761cb38",
+  "voice_id": "6OzrBCQf8cjERkYgzSg8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "134ed5a6b2ca2c28d13bc401d4e3437b81bd93298f5d85615b285fe1317a72a8",
+  "voice_key": "character:amir:male_warm",
+  "voice_name": "Young Jamal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e4488bd87dee8b131eb35f779e430c3ffb826ef27b7792a1e8dd0516b189b149",
+  "duration_ms": 3160,
+  "generated_at": "2026-09-12T09:30:21.960665+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "cd98afb2-93df-5159-b92e-cd0113c35f2e",
+      "entity_key": "d_b1_job_search_interview:4"
+    }
+  ]
+}

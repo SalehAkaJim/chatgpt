@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "8567078b2c65b5a0aaa4d9004f7fbcedeb8c315ba5b06a68b4d8321f346e23f0",
+  "voice_id": "6OzrBCQf8cjERkYgzSg8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "0cddd94c03cb245fe4f76b3f2332a67be8b09eb461a61a7dcee08fe2252e54de",
+  "voice_key": "character:amir:male_warm",
+  "voice_name": "Young Jamal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "bf556ec848a1867d9eaa66a96e3d1d53c0a3b2bcff13b362e18b0a4812b91568",
+  "duration_ms": 1854,
+  "generated_at": "2026-09-12T09:30:13.356585+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f78866d6-7332-5c7e-8c20-e2e2dd341261",
+      "entity_key": "d_b1_shopping_decisions_appliance:1"
+    }
+  ]
+}

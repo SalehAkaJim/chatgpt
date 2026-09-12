@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "30d23b7fe3d40fa66a52c35f4507a4aff788dabd7f84b7299dfda3355edb3bd3",
+  "voice_id": "gUABw7pXQjhjt0kNFBTF",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "be08ca5fca16a28a73d90aa116334f060cb6a6f52955e30550cfb38f963b8ff4",
+  "voice_key": "character:daniel:male_professional",
+  "voice_name": "Andrew - Smooth, Smart and Clear",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "4ea3cc3fdee40f06339cb58aa1bee38c4a37e0f3f79d02857c52445fc87fac68",
+  "duration_ms": 2742,
+  "generated_at": "2026-09-12T09:33:25.973916+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a1c99908-3a49-57f6-96cb-b55444942adc",
+      "entity_key": "d_b1_plans_predictions_weather:4"
+    }
+  ]
+}

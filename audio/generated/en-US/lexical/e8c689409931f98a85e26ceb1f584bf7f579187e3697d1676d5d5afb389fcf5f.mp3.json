@@ -1,0 +1,69 @@
+{
+  "source_text_hash": "86ae35d58a6aa3b5742df94ef9d7162219f0106a911ae1954c1f0604aaec805d",
+  "voice_id": "tnSpp4vdxKPjI9w0GnoV",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.94
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e8c689409931f98a85e26ceb1f584bf7f579187e3697d1676d5d5afb389fcf5f",
+  "voice_key": "en-us.lexical.lori",
+  "voice_name": "Hope - upbeat and clear",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "22e6e21f1899aab05c410c37ab9fcfbd22889a10c20d80654094742ed5173e4e",
+  "duration_ms": 914,
+  "generated_at": "2026-09-12T09:36:35.615483+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9e06c243-d910-5c7d-99c5-f68fb4333d74",
+      "entity_key": "lx_b1_advice_decisions_decision"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "a45e0df9-03ae-5efe-a1ba-b2377b0a28a7",
+      "entity_key": "wf_b1_advice_decisions_decision"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9e06c243-d910-5c7d-99c5-f68fb4333d74",
+      "entity_key": "lx_b1_integrated_capstone_decision"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "aad51e6a-6ecf-5938-b44e-6f91dba76d43",
+      "entity_key": "wf_b1_integrated_capstone_decision"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9e06c243-d910-5c7d-99c5-f68fb4333d74",
+      "entity_key": "lx_b1_meetings_teamwork_decision"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "bf6d7248-cde1-5030-ac88-3bc99ef5ae33",
+      "entity_key": "wf_b1_meetings_teamwork_decision"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9e06c243-d910-5c7d-99c5-f68fb4333d74",
+      "entity_key": "lx_b1_plans_predictions_decision"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "a4fecc32-80ae-5cf5-881a-7c58ab8f44db",
+      "entity_key": "wf_b1_plans_predictions_decision"
+    }
+  ]
+}
