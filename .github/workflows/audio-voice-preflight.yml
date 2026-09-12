@@ -1,0 +1,74 @@
+name: Audio Voice Preflight
+
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: 'Committed audio manifest to validate against ElevenLabs'
+        required: true
+        default: 'audio/manifests/en/A1.json'
+        type: string
+      write_lock:
+        description: 'Commit resolved voice IDs to the locale lock file'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate manifest path
+        env:
+          MANIFEST: ${{ inputs.manifest }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          p = Path(os.environ['MANIFEST'])
+          if p.is_absolute() or '..' in p.parts:
+              raise SystemExit('Manifest must be a safe repository-relative path')
+          if not p.exists() or p.suffix != '.json':
+              raise SystemExit(f'Manifest not found: {p}')
+          print(p)
+          PY
+
+      - name: Resolve provider voices without TTS generation
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          MANIFEST: ${{ inputs.manifest }}
+          WRITE_LOCK: ${{ inputs.write_lock }}
+        run: |
+          set -euo pipefail
+          extra=()
+          if [ "$WRITE_LOCK" = "true" ]; then
+            extra+=(--write-lock)
+          fi
+          python scripts/resolve_audio_voices.py "$MANIFEST" "${extra[@]}"
+
+      - name: Commit voice lock
+        if: ${{ inputs.write_lock }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audio/voices/*.lock.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Lock resolved ElevenLabs voices [skip ci]'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
