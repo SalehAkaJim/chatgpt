@@ -74,5 +74,23 @@ grading on the ten new tasks and verify every new source/model/dialogue audio
 reference. Disposable MySQL CI also checks all C1 and C2 dialogue texts and seeds
 a stale C2 turn before applying the correction SQL twice.
 
-Audio generation and remote integration results will be recorded after the gated
-refresh completes.
+## Completion evidence
+
+The [audio refresh](https://github.com/SalehAkaJim/chatgpt/actions/runs/34704273919)
+completed successfully: 142 new MP3 files (120 dialogue turns, ten source texts,
+ten model answers and two corrected concept models), with 1,041 unchanged assets
+reused. All 1,183 active C2 assets passed generated-file validation. The
+[audio and SQL commit](https://github.com/SalehAkaJim/chatgpt/commit/7956cf97ce52294799b8fe3a41477857e76c00fc)
+contains the files and 1,730 exported audio-to-entity links. All 142 new MP3s and
+their sidecars were verified in the published tree, and all 26 changed source and
+content/quality SQL files matched the locally checked versions before this
+completion-only documentation update.
+
+The [content checks](https://github.com/SalehAkaJim/chatgpt/actions/runs/34704273890),
+[C2 generation](https://github.com/SalehAkaJim/chatgpt/actions/runs/34704273910),
+[pipeline checks](https://github.com/SalehAkaJim/chatgpt/actions/runs/34704273949)
+and [full MySQL integration](https://github.com/SalehAkaJim/chatgpt/actions/runs/34704273968)
+all passed. MySQL verified 1,969 exercises with option order preserved after the
+stale fixtures and repeated updates. No live database was changed. Audio QA checks
+source/voice/settings hashes, file checksums, MP3 decoding and duration; it does
+not constitute human listening approval of pronunciation or delivery.
