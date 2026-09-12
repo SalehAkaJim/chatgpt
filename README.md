@@ -80,17 +80,21 @@ Run these files in order:
 10. `database/seed/language-variants-courses.sql`
 11. `database/seed/english-prea1-curriculum.sql`
 12. `database/seed/english-a2-curriculum.sql`
-13. `database/seed/arabic-msa-prea1-curriculum.sql`
-14. `database/seed/german-a1-curriculum.sql`
+13. `database/seed/english-b1-curriculum.sql`
+14. `database/seed/english-b2-curriculum.sql`
+15. `database/seed/arabic-msa-prea1-curriculum.sql`
+16. `database/seed/german-a1-curriculum.sql`
 
-The English A1 seed is intentionally loaded before courses for backward compatibility; the course seed attaches those existing A1 units to `fa-en-us`. New course-specific curricula such as English Pre-A1, English A2, German, and Arabic are loaded after the course seed.
+The English A1 seed is intentionally loaded before courses for backward compatibility; the course seed attaches those existing A1 units to `fa-en-us`. New course-specific curricula such as English Pre-A1, A2, B1, B2, German, and Arabic are loaded after the course seed.
 
 ## English production status
 
 - **Pre-A1:** curriculum complete; 10 production batches complete.
 - **A1:** curriculum complete; 30 production batches complete.
-- **A2:** 36-unit curriculum defined; production generation is in progress.
-- **B1–C2:** planned after A2 reaches production-complete status.
+- **A2:** 36-unit curriculum complete; 36 production batches complete.
+- **B1:** 40-unit curriculum complete; 40 production batches complete.
+- **B2:** 45-unit curriculum complete; 45 production batches complete.
+- **C1–C2:** planned next.
 
 ## Content staging importer
 Install dependencies:
@@ -124,6 +128,9 @@ Current English entrypoints:
 ```bash
 python database/import/en/pre_a1.py --dry-run
 python database/import/en/a1.py --dry-run
+python database/import/en/a2.py --dry-run
+python database/import/en/b1.py --dry-run
+python database/import/en/b2.py --dry-run
 ```
 
 Remove `--dry-run` to materialize the complete level into canonical tables. Level imports are idempotent and run inside a transaction. They also validate/sync the explicit character cast before dialogue rows are imported.
@@ -145,18 +152,18 @@ Character voices are persistent and distinct. The generator verifies configured 
 Build a deterministic level manifest:
 
 ```bash
-python scripts/build_audio_manifest.py content/production/en/A1 \
-  --level A1 \
+python scripts/build_audio_manifest.py content/production/en/B2 \
+  --level B2 \
   --locale en-US \
   --strict-characters \
-  --output audio/manifests/en/A1.json
+  --output audio/manifests/en/B2.json
 ```
 
 Before spending any TTS credits, run the provider voice preflight:
 
 ```bash
 export ELEVENLABS_API_KEY='...'
-python scripts/resolve_audio_voices.py audio/manifests/en/A1.json \
+python scripts/resolve_audio_voices.py audio/manifests/en/B2.json \
   --write-lock
 ```
 
@@ -165,23 +172,25 @@ This step does not generate speech. It verifies that Lori and every required dia
 Only after preflight succeeds, generate paid ElevenLabs audio with explicit confirmation:
 
 ```bash
-python scripts/generate_audio.py audio/manifests/en/A1.json \
+python scripts/generate_audio.py audio/manifests/en/B2.json \
   --confirm-paid-generation
 ```
+
+The manual `Generate English B2 Audio` GitHub Actions workflow requires an explicit paid-generation confirmation before it can call ElevenLabs.
 
 The generator reuses unchanged audio. Each MP3 receives a sidecar containing source hash, file hash, voice ID/name, voice key, provider model, settings, output format, duration and generation time.
 
 Run strict QA before database linking:
 
 ```bash
-python scripts/validate_audio_manifest.py audio/manifests/en/A1.json \
+python scripts/validate_audio_manifest.py audio/manifests/en/B2.json \
   --require-generated
 ```
 
 Then link the QA-passed assets into `audio_assets`:
 
 ```bash
-python scripts/import_audio_manifest.py audio/manifests/en/A1.json
+python scripts/import_audio_manifest.py audio/manifests/en/B2.json
 ```
 
 The default linked state is `validated`, not `approved`. A changed source text creates a new audio identity and older audio for the same entity/voice is archived so stale audio cannot remain active.
@@ -217,8 +226,3 @@ approved content
 - `scripts/validate_audio_manifest.py` — stale/hash/decode/voice-collision QA
 - `scripts/import_audio_manifest.py` — canonical `audio_assets` linker
 - `docs/content-system.md` — content architecture and generation pipeline
-
-## Archived previous project state
-The repository state before this rebuild is preserved on:
-
-`archive/pre-rebuild-2026-09-12`
