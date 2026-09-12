@@ -10,6 +10,7 @@ on:
       - 'scripts/generate_b2_21_30.py'
       - 'scripts/generate_b2_31_40.py'
       - 'scripts/generate_b2_41_45.py'
+      - 'scripts/ensure_b2_cast_profiles.py'
       - '.github/workflows/build-b2-remaining.yml'
   workflow_dispatch:
 
@@ -48,6 +49,9 @@ jobs:
           python scripts/generate_b2_21_30.py
           python scripts/generate_b2_31_40.py
           python scripts/generate_b2_41_45.py
+
+      - name: Ensure explicit B2 cast profiles
+        run: python scripts/ensure_b2_cast_profiles.py
 
       - name: Validate all B2 production batches
         run: |
@@ -147,16 +151,30 @@ jobs:
           print('B2 final four-lesson units have complete lesson coverage')
           PY
 
-      - name: Commit generated production batches
+      - name: Validate complete B2 import plan
+        run: python database/import/en/b2.py --dry-run
+
+      - name: Build and validate strict B2 audio manifest without TTS
+        run: |
+          mkdir -p audio/manifests/en
+          python scripts/build_audio_manifest.py content/production/en/B2 \
+            --level B2 --locale en-US --strict-characters \
+            --output audio/manifests/en/B2.json
+          python scripts/validate_audio_manifest.py audio/manifests/en/B2.json
+
+      - name: Commit generated B2 production assets
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content/production/en/B2
+          git add \
+            content/production/en/B2 \
+            audio/cast/en-US.json \
+            audio/manifests/en/B2.json
           if git diff --cached --quiet; then
-            echo 'No B2 content changes to commit.'
+            echo 'No B2 production changes to commit.'
             exit 0
           fi
-          git commit -m 'Complete English B2 production content [skip ci]'
+          git commit -m 'Complete English B2 production assets [skip ci]'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
