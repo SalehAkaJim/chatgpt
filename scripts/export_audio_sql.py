@@ -3,6 +3,8 @@
 
 This script never connects to a database. It validates generated MP3 sidecars and
 writes SQL that can be executed after the corresponding level content import.
+By default, audio_assets.storage_url stores only the relative audio path so a
+server/CDN base URL can be added later without rewriting database rows.
 """
 from __future__ import annotations
 
@@ -53,6 +55,14 @@ def join_url(prefix: str, relative_path: str) -> str:
     return prefix.rstrip("/") + "/" + relative_path.lstrip("/")
 
 
+def storage_location(relative_path: str, url_prefix: str | None) -> str:
+    """Return a portable relative path unless an explicit base URL is requested."""
+    relative_path = relative_path.lstrip("/")
+    if not url_prefix:
+        return relative_path
+    return join_url(url_prefix, relative_path)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("manifest", type=Path)
@@ -60,8 +70,11 @@ def main() -> None:
     ap.add_argument("--root", type=Path, default=ROOT)
     ap.add_argument(
         "--url-prefix",
-        default="https://raw.githubusercontent.com/SalehAkaJim/chatgpt/main",
-        help="Public/base URL placed in audio_assets.storage_url",
+        default=None,
+        help=(
+            "Optional base URL for audio_assets.storage_url. Omit this to store "
+            "portable relative paths such as audio/generated/en-US/...mp3."
+        ),
     )
     ap.add_argument("--status", default="validated", choices=["generated", "validated", "approved"])
     args = ap.parse_args()
@@ -93,16 +106,19 @@ def main() -> None:
         duration_ms = int(float(MP3(audio_path).info.length or 0) * 1000)
         if duration_ms < 120:
             raise SystemExit(f"Implausibly short audio: {audio_path}")
-        storage_url = join_url(args.url_prefix, item["relative_path"])
+        storage_url = storage_location(item["relative_path"], args.url_prefix)
         for ref in item.get("entity_refs", []):
             rows.append((item, meta, ref, duration_ms, storage_url))
 
     lang_code = manifest["locale"].split("-")[0]
     variant_code = manifest["locale"]
+    storage_mode = "absolute_url" if args.url_prefix else "relative_path"
     lines = [
         f"-- Generated audio link import for {variant_code} {manifest.get('level')}",
         f"-- Source manifest: {args.manifest.as_posix()}",
         f"-- Generated rows: {len(rows)}",
+        f"-- Storage mode: {storage_mode}",
+        "-- storage_url is intentionally portable; prepend your server/CDN base URL at runtime.",
         "-- Run AFTER the matching level content import.",
         "SET NAMES utf8mb4 COLLATE utf8mb4_0900_ai_ci;",
         "SET time_zone = '+00:00';",
@@ -131,13 +147,12 @@ def main() -> None:
             "file_sha256": meta.get("file_sha256"),
             "settings": meta.get("settings") or {},
             "relative_path": item["relative_path"],
-            "github_url": storage_url,
         }
 
         lines.extend([
             f"-- {ref.get('entity_key')} -> {item['relative_path']}",
             "UPDATE audio_assets",
-            f"SET status = 'archived'",
+            "SET status = 'archived'",
             f"WHERE entity_type = {q(entity_type)}",
             f"  AND entity_id = UUID_TO_BIN({q(entity_uuid)}, 1)",
             f"  AND voice_key = {q(voice_key)}",
@@ -169,6 +184,7 @@ def main() -> None:
         "manifest": str(args.manifest),
         "output": str(args.output),
         "audio_assets_rows": len(rows),
+        "storage_mode": storage_mode,
         "url_prefix": args.url_prefix,
         "status": args.status,
     }, ensure_ascii=False))
