@@ -1,0 +1,20 @@
+{
+  "batch_id": "en-us-prea1-first-conversation-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-en-first-conversation",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {"kind":"dialogue","external_id":"d_pre_capstone_meeting","data":{"lesson_key":"prea1-en-first-conversation-01","title":"Your first conversation","setting":"classroom","cefr":"Pre-A1","topic":"simple-messages","characters":["Nina","Arman"],"turns":[{"order":1,"speaker":"Nina","text":"Hello!","translation_fa":"سلام!"},{"order":2,"speaker":"Arman","text":"Hi!","translation_fa":"سلام!"},{"order":3,"speaker":"Nina","text":"What's your name?","translation_fa":"اسمت چیه؟"},{"order":4,"speaker":"Arman","text":"I'm Arman.","translation_fa":"من آرمان هستم."},{"order":5,"speaker":"Nina","text":"I'm Nina.","translation_fa":"من نینا هستم."},{"order":6,"speaker":"Arman","text":"Bye!","translation_fa":"خداحافظ!"},{"order":7,"speaker":"Nina","text":"Goodbye!","translation_fa":"خداحافظ!"}],"status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_capstone_first_line","data":{"lesson_key":"prea1-en-first-conversation-01","exercise_type":"dialogue_comprehension","prompt":{"instruction_fa":"مکالمه چطور شروع شد؟","value":"Your first conversation"},"options":["Hello!","Goodbye!","No, thanks.","Read."],"answer":{"value":"Hello!"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_capstone_name","data":{"lesson_key":"prea1-en-first-conversation-01","exercise_type":"listening","prompt":{"instruction_fa":"اسم گوینده چیست؟","audio_text":"I'm Arman."},"options":["Arman","Nina","Amir","Sara"],"answer":{"value":"Arman"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_capstone_build_name","data":{"lesson_key":"prea1-en-first-conversation-01","exercise_type":"sentence_building","prompt":{"instruction_fa":"جواب را بساز.","tokens":["Arman","I'm"]},"answer":{"tokens":["I'm","Arman"]},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_capstone_greeting_speak","data":{"lesson_key":"prea1-en-first-conversation-01","exercise_type":"speaking","prompt":{"instruction_fa":"سلام کن.","value":"Hello"},"answer":{"expected_text":"Hello"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_capstone_name_speak","data":{"lesson_key":"prea1-en-first-conversation-01","exercise_type":"speaking","prompt":{"instruction_fa":"خودت را با الگوی I'm ... معرفی کن.","value":"I'm Arman."},"answer":{"expected_text":"I'm Arman"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_capstone_bye","data":{"lesson_key":"prea1-en-first-conversation-01","exercise_type":"multiple_choice","prompt":{"instruction_fa":"برای خداحافظی کدام را انتخاب می‌کنی؟","value":"farewell"},"options":["Bye!","Hello!","Please.","Yes."],"answer":{"value":"Bye!"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}}
+  ]
+}
