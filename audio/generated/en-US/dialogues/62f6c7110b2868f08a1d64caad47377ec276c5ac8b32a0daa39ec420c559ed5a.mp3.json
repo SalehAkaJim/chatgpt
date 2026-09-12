@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8",
+  "voice_id": "0zj1iWvloMkAXydIFsJR",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "62f6c7110b2868f08a1d64caad47377ec276c5ac8b32a0daa39ec420c559ed5a",
+  "voice_key": "character:eli:female_bright",
+  "voice_name": "Lana - Upbeat, Friendly and Sweet",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "hyped"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "28d11402127b89552047496ca6e8ecbf9934842f97a1a6290ba5d0dae904f974",
+  "duration_ms": 1018,
+  "generated_at": "2026-09-12T18:46:42.820726+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f32a8649-5063-5692-a2a2-787088f54d9d",
+      "entity_key": "d_weather_trip:4"
+    }
+  ]
+}
