@@ -12,7 +12,7 @@ Build one canonical content system that can support multiple learning languages,
 - CEFR Pre-A1–C2
 - Concept-centered multilingual model
 - Course-centered curriculum (`learner language -> target language/variant`)
-- Language variants such as `en-US`, `en-GB`, `ar-MSA`, `ar-EG`, `ar-LEV`
+- Language variants such as `en-US`, `en-GB`, `de-DE`, `ar-MSA`, `ar-EG`, `ar-LEV`
 - Orthography profiles for script, direction, normalization and diacritics policy
 - `lexeme -> word_forms` morphology model
 - Lesson items can directly reference concepts, lexemes, word forms, utterances, dialogues, or grammar points
@@ -41,6 +41,7 @@ Course
 A course is not the same thing as a language. For example:
 
 - `fa-en-us` — English (US) for Persian speakers
+- `fa-de-de` — Standard German for Persian speakers
 - `fa-ar-msa` — Modern Standard Arabic for Persian speakers
 
 Arabic dialects are separate variants and can receive separate courses/curricula rather than being treated as informal MSA.
@@ -53,7 +54,7 @@ UUID_TO_BIN('uuid-string', 1)
 BIN_TO_UUID(id, 1)
 ```
 
-Schema-generated UUIDs use:
+Schema-generated IDs use:
 
 ```sql
 DEFAULT (UUID_TO_BIN(UUID(), 1))
@@ -74,7 +75,11 @@ Run these files in order:
 7. `database/seed/skills-topics.sql`
 8. `database/seed/english-a1-curriculum.sql`
 9. `database/seed/language-variants-courses.sql`
-10. `database/seed/arabic-msa-prea1-curriculum.sql`
+10. `database/seed/english-prea1-curriculum.sql`
+11. `database/seed/arabic-msa-prea1-curriculum.sql`
+12. `database/seed/german-a1-curriculum.sql`
+
+The English A1 seed is intentionally loaded before courses for backward compatibility; the course seed attaches those existing A1 units to `fa-en-us`. New course-specific curricula such as English Pre-A1, German, and Arabic are loaded after the course seed.
 
 ## Content importer
 Install dependencies:
