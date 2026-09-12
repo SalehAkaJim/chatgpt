@@ -1,0 +1,47 @@
+{
+  "batch_id": "en-us-a1-hobbies-v2",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A1",
+  "curriculum_unit": "a1-hobbies",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {"kind":"concept","external_id":"c_hobbies_read","data":{"slug":"hobby_read","lesson_key":"a1-hobbies-01","concept_type":"lexical","forms":{"en":"read"},"translations":{"fa":"کتاب خواندن"},"cefr":"A1","topic":"hobbies","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_hobbies_read","data":{"lesson_key":"a1-hobbies-01","lemma":"read","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["hobby_read"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_hobbies_read","data":{"lesson_key":"a1-hobbies-01","lexeme_ref":"lx_hobbies_read","surface_form":"read","grammatical_features":{"tense":"present"},"cefr":"A1","status":"approved"}},
+    {"kind":"concept","external_id":"c_hobbies_run","data":{"slug":"hobby_run","lesson_key":"a1-hobbies-01","concept_type":"lexical","forms":{"en":"run"},"translations":{"fa":"دویدن"},"cefr":"A1","topic":"hobbies","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_hobbies_run","data":{"lesson_key":"a1-hobbies-01","lemma":"run","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["hobby_run"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_hobbies_run","data":{"lesson_key":"a1-hobbies-01","lexeme_ref":"lx_hobbies_run","surface_form":"run","grammatical_features":{"tense":"present"},"cefr":"A1","status":"approved"}},
+    {"kind":"concept","external_id":"c_hobbies_cook","data":{"slug":"hobby_cook","lesson_key":"a1-hobbies-01","concept_type":"lexical","forms":{"en":"cook"},"translations":{"fa":"آشپزی کردن"},"cefr":"A1","topic":"hobbies","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_hobbies_cook","data":{"lesson_key":"a1-hobbies-01","lemma":"cook","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["hobby_cook"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_hobbies_cook","data":{"lesson_key":"a1-hobbies-01","lexeme_ref":"lx_hobbies_cook","surface_form":"cook","grammatical_features":{"tense":"present"},"cefr":"A1","status":"approved"}},
+    {"kind":"concept","external_id":"c_hobbies_games","data":{"slug":"hobby_play_games","lesson_key":"a1-hobbies-02","concept_type":"lexical","forms":{"en":"play games"},"translations":{"fa":"بازی کردن"},"cefr":"A1","topic":"hobbies","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_hobbies_play","data":{"lesson_key":"a1-hobbies-02","lemma":"play","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["hobby_play_games"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_hobbies_play","data":{"lesson_key":"a1-hobbies-02","lexeme_ref":"lx_hobbies_play","surface_form":"play","grammatical_features":{"tense":"present"},"cefr":"A1","status":"approved"}},
+    {"kind":"concept","external_id":"c_hobbies_weekend","data":{"slug":"hobby_weekend","lesson_key":"a1-hobbies-02","concept_type":"lexical","forms":{"en":"weekend"},"translations":{"fa":"آخر هفته"},"cefr":"A1","topic":"hobbies","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_hobbies_weekend","data":{"lesson_key":"a1-hobbies-02","lemma":"weekend","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["hobby_weekend"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_hobbies_weekend","data":{"lesson_key":"a1-hobbies-02","lexeme_ref":"lx_hobbies_weekend","surface_form":"weekend","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_hobbies_free_time","data":{"slug":"hobby_free_time","lesson_key":"a1-hobbies-01","concept_type":"functional","forms":{"en":"in my free time"},"translations":{"fa":"در وقت آزاد من"},"cefr":"A1","topic":"hobbies","status":"approved"}},
+    {"kind":"concept","external_id":"c_hobbies_what_do","data":{"slug":"hobby_what_do_free_time","lesson_key":"a1-hobbies-02","concept_type":"functional","forms":{"en":"What do you do in your free time?"},"translations":{"fa":"در وقت آزادت چه کار می‌کنی؟"},"cefr":"A1","topic":"hobbies","status":"approved"}},
+
+    {"kind":"utterance","external_id":"u_hobbies_read","data":{"lesson_key":"a1-hobbies-01","text":{"en":"I read in my free time."},"translations":{"fa":"من در وقت آزادم کتاب می‌خوانم."},"intent":"state_hobby","concept_refs":["hobby_read","hobby_free_time"],"cefr":"A1","topic":"hobbies","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_hobbies_run","data":{"lesson_key":"a1-hobbies-01","text":{"en":"I run on weekends."},"translations":{"fa":"من آخر هفته‌ها می‌دوم."},"intent":"state_hobby","concept_refs":["hobby_run","hobby_weekend"],"cefr":"A1","topic":"hobbies","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_hobbies_ask","data":{"lesson_key":"a1-hobbies-02","text":{"en":"What do you do in your free time?"},"translations":{"fa":"در وقت آزادت چه کار می‌کنی؟"},"intent":"ask_hobby","concept_refs":["hobby_what_do_free_time"],"cefr":"A1","topic":"hobbies","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_hobbies_games","data":{"lesson_key":"a1-hobbies-02","text":{"en":"I play games with my friends."},"translations":{"fa":"من با دوستانم بازی می‌کنم."},"intent":"state_hobby","concept_refs":["hobby_play_games"],"cefr":"A1","topic":"hobbies","register":"neutral","status":"approved"}},
+
+    {"kind":"grammar_point","external_id":"g_hobbies_present_simple","data":{"lesson_key":"a1-hobbies-01","slug":"a1-hobbies-present-simple","title":"Present simple for hobbies","rule_summary":"Use the present simple to talk about regular hobbies and free-time activities.","explanation":{"fa":"برای صحبت درباره سرگرمی‌ها و فعالیت‌های همیشگی از حال ساده استفاده می‌کنیم."},"examples":[{"en":"I read at night.","fa":"من شب‌ها کتاب می‌خوانم."},{"en":"We cook on weekends.","fa":"ما آخر هفته‌ها آشپزی می‌کنیم."}],"cefr":"A1","status":"approved"}},
+
+    {"kind":"dialogue","external_id":"d_hobbies_park","data":{"lesson_key":"a1-hobbies-01","title":"At the park","setting":"park","cefr":"A1","topic":"hobbies","characters":["Liam","Zoe"],"turns":[{"order":1,"speaker":"Liam","text":"Do you run here often?","translation_fa":"زیاد اینجا می‌دوی؟"},{"order":2,"speaker":"Zoe","text":"Yes. I run on weekends.","translation_fa":"بله. آخر هفته‌ها می‌دوم."},{"order":3,"speaker":"Liam","text":"I usually read on weekends.","translation_fa":"من معمولاً آخر هفته‌ها کتاب می‌خوانم."},{"order":4,"speaker":"Zoe","text":"That's nice.","translation_fa":"خوبه."}],"status":"approved"}},
+    {"kind":"dialogue","external_id":"d_hobbies_break","data":{"lesson_key":"a1-hobbies-02","title":"Lunch break","setting":"office break room","cefr":"A1","topic":"hobbies","characters":["Ari","Mina"],"turns":[{"order":1,"speaker":"Ari","text":"What do you do in your free time?","translation_fa":"در وقت آزادت چه کار می‌کنی؟"},{"order":2,"speaker":"Mina","text":"I cook and play games.","translation_fa":"آشپزی می‌کنم و بازی می‌کنم."},{"order":3,"speaker":"Ari","text":"I like cooking too.","translation_fa":"من هم آشپزی را دوست دارم."},{"order":4,"speaker":"Mina","text":"Great!","translation_fa":"عالیه!"}],"status":"approved"}},
+
+    {"kind":"exercise","external_id":"ex_hobbies_vocab","data":{"lesson_key":"a1-hobbies-01","exercise_type":"multiple_choice","prompt":{"fa":"weekend یعنی چه؟"},"options":["آخر هفته","صبح","تعطیلات تابستان","وقت ناهار"],"answer":{"value":"آخر هفته"},"difficulty":1,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_hobbies_build","data":{"lesson_key":"a1-hobbies-01","exercise_type":"sentence_building","prompt":{"fa":"«من در وقت آزادم کتاب می‌خوانم.» را بساز.","tokens":["free","read","time","my","in","I"]},"answer":{"tokens":["I","read","in","my","free","time"],"text":"I read in my free time."},"difficulty":1,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_hobbies_ask","data":{"lesson_key":"a1-hobbies-02","exercise_type":"multiple_choice","prompt":{"fa":"برای پرسیدن درباره سرگرمی کدام طبیعی‌تر است؟"},"options":["What do you do in your free time?","Where is your free time?","Are you free time?","What time are you?"],"answer":{"value":"What do you do in your free time?"},"difficulty":2,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_hobbies_listen","data":{"lesson_key":"a1-hobbies-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و فعالیت را انتخاب کن.","audio_text":"I play games with my friends."},"options":["play games","read","run","cook"],"answer":{"value":"play games"},"difficulty":1,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_hobbies_speak","data":{"lesson_key":"a1-hobbies-01","exercise_type":"speaking","prompt":{"instruction_fa":"این جمله را بگو.","value":"I run on weekends."},"answer":{"expected_text":"I run on weekends."},"difficulty":1,"cefr":"A1","status":"approved"}}
+  ]
+}
