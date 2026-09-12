@@ -22,6 +22,9 @@ on:
       - 'content/production/en/Pre-A1/**'
       - 'content/production/en/A1/**'
 
+permissions:
+  contents: write
+
 jobs:
   validate-production-pipeline:
     runs-on: ubuntu-latest
@@ -64,7 +67,18 @@ jobs:
               print('missing_character_profiles=', ','.join(m['missing_character_profiles']) or 'none')
               assert counts.get('lexical',0)>0
               assert counts.get('utterances',0)>0
+              assert not m['missing_character_profiles']
           PY
+      - name: Commit deterministic manifests
+        if: github.event_name == 'push'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audio/manifests/en/Pre-A1.json audio/manifests/en/A1.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update English audio manifests [skip ci]'
+            git push
+          fi
       - name: Upload generated manifests
         uses: actions/upload-artifact@v4
         with:
