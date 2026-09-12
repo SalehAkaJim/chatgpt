@@ -24830,6 +24830,43 @@
       "relative_path": "audio/generated/en-US/utterances/0905aafe4fcb807a9ebadaa58e46c158ea3dcfcc915d3b0f2ea16e1e1502ef2e.mp3"
     },
     {
+      "audio_key": "0a38030ad47130510e3e34f7947bc28915e696f9983365f23dbc25c14f443d00",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "The next train leaves at ten fifteen.",
+      "source_text_hash": "c1728264410f872973fdd14970a4e46fcc8e89f3cc1b92a321e01d6d5adf8eab",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "79d9867a-e821-511b-bd7a-b2b48e22fc4c",
+          "entity_key": "ex_fix_timetable_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/0a38030ad47130510e3e34f7947bc28915e696f9983365f23dbc25c14f443d00.mp3"
+    },
+    {
       "audio_key": "0caae221d9dbcdda6e93d4f9ef87622befc1a29633ef06d0ac37afe4226adea1",
       "category": "utterances",
       "locale": "en-US",
@@ -24935,6 +24972,11 @@
           "entity_type": "utterance",
           "entity_uuid": "d7847f59-2952-5e84-9a40-dc5a78313087",
           "entity_key": "u_a2_compare_products_lighter"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "868dae5e-2c99-5722-a9d4-18f5c3c072b6",
+          "entity_key": "ex_a2_compare_products_listen"
         }
       ],
       "metadata": {},
@@ -24972,6 +25014,11 @@
           "entity_type": "utterance",
           "entity_uuid": "2e7e9d64-9496-537f-ab00-619bc1d67f30",
           "entity_key": "u_a2_online_communication_send"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "82b7f555-01bc-50a8-8ebf-29c0eacecfc2",
+          "entity_key": "ex_a2_online_communication_listen2"
         }
       ],
       "metadata": {},
@@ -25083,6 +25130,11 @@
           "entity_type": "utterance",
           "entity_uuid": "9f8f2a25-82e6-5ce7-bf3c-2eef5c366c46",
           "entity_key": "u_a2_integrated_capstone_experience"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "1e1424c7-ea8a-574d-ad26-b6c79aef6df6",
+          "entity_key": "ex_a2_integrated_capstone_listen2"
         }
       ],
       "metadata": {},
@@ -25157,6 +25209,11 @@
           "entity_type": "utterance",
           "entity_uuid": "3b915cec-f6dd-53fc-aae7-a909c33828cb",
           "entity_key": "u_a2_cant_make_it"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "ea953176-2c22-5d50-8c28-b79d8df60460",
+          "entity_key": "ex_a2_invite_decline"
         }
       ],
       "metadata": {},
@@ -25342,6 +25399,11 @@
           "entity_type": "utterance",
           "entity_uuid": "a5dd100a-50c0-57da-929a-19a465015fad",
           "entity_key": "u_a2_appointments_advice_advice"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "c1d47041-ab66-566e-8763-6c00231a8cc1",
+          "entity_key": "ex_a2_appointments_advice_listen2"
         }
       ],
       "metadata": {},
@@ -25601,6 +25663,11 @@
           "entity_type": "utterance",
           "entity_uuid": "45678da3-418c-5e23-8cb0-d38a71c7b637",
           "entity_key": "u_a2_integrated_capstone_reservation"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4b67223e-917c-578b-9989-30f490bdede5",
+          "entity_key": "ex_a2_integrated_capstone_listen"
         }
       ],
       "metadata": {},
@@ -25712,6 +25779,11 @@
           "entity_type": "utterance",
           "entity_uuid": "fcc611f2-f74d-52ce-a13a-fca7dedb71e3",
           "entity_key": "u_a2_married_sister"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "251ec999-f380-5ec2-8476-71cfa029589b",
+          "entity_key": "ex_a2_family_listen"
         }
       ],
       "metadata": {},
@@ -25786,6 +25858,11 @@
           "entity_type": "utterance",
           "entity_uuid": "3286addd-227a-5bcc-bbfa-25853c4886a0",
           "entity_key": "u_a2_travel_problems_have_to"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "ae23484f-dc0e-5619-8c0e-ccd4721896c6",
+          "entity_key": "ex_a2_travel_problems_listen2"
         }
       ],
       "metadata": {},
@@ -25823,6 +25900,11 @@
           "entity_type": "utterance",
           "entity_uuid": "10bc003c-6536-53bd-bbf9-c37e50ed7fd8",
           "entity_key": "u_a2_rain_prediction"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "f03c356e-d8ec-5e03-a58d-07311639bfd4",
+          "entity_key": "ex_a2_going_listen"
         }
       ],
       "metadata": {},
@@ -25971,6 +26053,11 @@
           "entity_type": "utterance",
           "entity_uuid": "274bd4ae-3d90-5c02-8fb7-acf68479f43b",
           "entity_key": "u_a2_symptoms_pharmacy_throat"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "054f797b-3b41-5bed-9a76-4e4fd4555906",
+          "entity_key": "ex_a2_symptoms_pharmacy_listen"
         }
       ],
       "metadata": {},
@@ -26267,6 +26354,11 @@
           "entity_type": "utterance",
           "entity_uuid": "e13319b0-3a23-5d5d-970a-a28bebeeef8c",
           "entity_key": "u_a2_online_communication_attachment"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "07c59ad4-1cd9-526e-9088-aa54bad8a79e",
+          "entity_key": "ex_a2_online_communication_listen"
         }
       ],
       "metadata": {},
@@ -26304,6 +26396,11 @@
           "entity_type": "utterance",
           "entity_uuid": "aac253c0-7179-5f0a-aa36-3d573be67131",
           "entity_key": "u_a2_twice_month"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "1b9a26a6-b7c2-5bea-b269-cbf1c0caa7ee",
+          "entity_key": "ex_a2_freq_listen2"
         }
       ],
       "metadata": {},
@@ -26526,6 +26623,11 @@
           "entity_type": "utterance",
           "entity_uuid": "539608b7-6d78-5792-aaa2-7dbaf70e74ea",
           "entity_key": "u_a2_everyday_problems_receipt"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "9e3e9d62-a233-520c-8ee3-585c27b0455e",
+          "entity_key": "ex_a2_everyday_problems_listen"
         }
       ],
       "metadata": {},
@@ -26637,6 +26739,11 @@
           "entity_type": "utterance",
           "entity_uuid": "ad05b147-5ecc-5b2e-9fcc-18e67abf61e6",
           "entity_key": "u_a2_boiling_water"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "a99226fb-06f2-5a69-848f-01f680215798",
+          "entity_key": "ex_a2_recipe_boiling"
         }
       ],
       "metadata": {},
@@ -26748,6 +26855,11 @@
           "entity_type": "utterance",
           "entity_uuid": "636a32bf-b086-5a5d-8aa8-740ab503a6bd",
           "entity_key": "u_a2_tickets_timetables_schedule"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "434dbb6b-c70f-51b3-8199-4bd2057be5f9",
+          "entity_key": "ex_a2_tickets_timetables_listen2"
         }
       ],
       "metadata": {},
@@ -26896,6 +27008,11 @@
           "entity_type": "utterance",
           "entity_uuid": "d8f4c5d6-b23e-5a29-854f-19a775596962",
           "entity_key": "u_a2_best_choice_useful"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "591db5a9-34ef-52d4-a5b4-066eb46a4b87",
+          "entity_key": "ex_a2_best_choice_listen2"
         }
       ],
       "metadata": {},
@@ -27161,6 +27278,43 @@
       "relative_path": "audio/generated/en-US/utterances/49b40f413ecb453fe338f93e9c59f146348525d86db180fb200bdf98e83e8fd0.mp3"
     },
     {
+      "audio_key": "49d4dcd1078c629a9e274b4e7e3e66f55a45e0322c3e61431bde5c960db6c2df",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Finally, we went home.",
+      "source_text_hash": "628e03b2f223ebd2fda08c7c624bcc59522352ebbbe4c867116d127a96d93df1",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "ca4c9d6b-cdd1-53e5-9b1b-d8826fe9809f",
+          "entity_key": "ex_a2_past_finally"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/49d4dcd1078c629a9e274b4e7e3e66f55a45e0322c3e61431bde5c960db6c2df.mp3"
+    },
+    {
       "audio_key": "4d4415399318787d1cdb55d0ed561352e662aea21ff6b930909f6d4c2e900410",
       "category": "utterances",
       "locale": "en-US",
@@ -27303,6 +27457,11 @@
           "entity_type": "utterance",
           "entity_uuid": "f12c0c54-613c-58c5-bcd7-de7de785e529",
           "entity_key": "u_a2_accommodation_checkout"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "3e47b2aa-186e-5293-b695-64826704b9ca",
+          "entity_key": "ex_a2_accommodation_listen2"
         }
       ],
       "metadata": {},
@@ -27377,6 +27536,11 @@
           "entity_type": "utterance",
           "entity_uuid": "59696539-d5c4-5521-b7a1-627a0348a0d6",
           "entity_key": "u_a2_wrong_order"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4deaec60-b52d-5735-9848-06fef450319a",
+          "entity_key": "ex_a2_restaurant_wrong"
         }
       ],
       "metadata": {},
@@ -27414,6 +27578,11 @@
           "entity_type": "utterance",
           "entity_uuid": "74e31efd-3320-5a08-88a3-a67cdbff9f1d",
           "entity_key": "u_a2_phone_messages_voicemail"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "cb9008a1-59d7-5b83-8082-e5ff4cd3a866",
+          "entity_key": "ex_a2_phone_messages_listen2"
         }
       ],
       "metadata": {},
@@ -27562,6 +27731,11 @@
           "entity_type": "utterance",
           "entity_uuid": "b9b9822b-f9c0-5c57-bc03-53525065a1e1",
           "entity_key": "u_a2_personality_appearance_quiet"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "71a24829-93be-5d44-a289-2e83e7346f89",
+          "entity_key": "ex_a2_personality_appearance_listen2"
         }
       ],
       "metadata": {},
@@ -27784,6 +27958,11 @@
           "entity_type": "utterance",
           "entity_uuid": "b2e99901-39ef-570d-af47-f69f863d6b23",
           "entity_key": "u_a2_trip_planning_budget"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "de441f5b-c00c-599e-b106-26369ed88921",
+          "entity_key": "ex_a2_trip_planning_listen"
         }
       ],
       "metadata": {},
@@ -27932,6 +28111,11 @@
           "entity_type": "utterance",
           "entity_uuid": "43d46bea-81ee-55b0-ac16-500d25f5c814",
           "entity_key": "u_a2_phone_messages_line"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "06f853a7-6d20-574b-85d5-ff2de7a3ec7c",
+          "entity_key": "ex_a2_phone_messages_listen"
         }
       ],
       "metadata": {},
@@ -28154,6 +28338,11 @@
           "entity_type": "utterance",
           "entity_uuid": "b2d9fba4-5c98-594a-b7c3-67090f179b17",
           "entity_key": "u_a2_accommodation_checkin"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "730c93c6-f5fb-52ed-b9bb-2a2147b66f3c",
+          "entity_key": "ex_a2_accommodation_listen"
         }
       ],
       "metadata": {},
@@ -28191,6 +28380,11 @@
           "entity_type": "utterance",
           "entity_uuid": "e66d3a18-0b0a-5cd1-bddb-1bfc96616ed5",
           "entity_key": "u_a2_study_habits_deadline"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "115c536a-cdee-5798-ba2d-ebf819a534b8",
+          "entity_key": "ex_a2_study_habits_listen"
         }
       ],
       "metadata": {},
@@ -28450,6 +28644,11 @@
           "entity_type": "utterance",
           "entity_uuid": "95d6625c-61cb-53cb-8908-ea7f2caa2f3f",
           "entity_key": "u_a2_abilities_skills_repair"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "d5cf31fb-ed60-5dcc-bd84-4063b05de8ec",
+          "entity_key": "ex_a2_abilities_skills_listen"
         }
       ],
       "metadata": {},
@@ -28561,6 +28760,11 @@
           "entity_type": "utterance",
           "entity_uuid": "c2f64ed1-4e0f-5785-9853-dbab6e07376d",
           "entity_key": "u_a2_during_lunch"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "3d8c0d6d-6be5-5ba9-b97e-add7b17fc934",
+          "entity_key": "ex_a2_time_during"
         }
       ],
       "metadata": {},
@@ -28598,6 +28802,11 @@
           "entity_type": "utterance",
           "entity_uuid": "46a42eea-2250-5506-926f-f585672cd070",
           "entity_key": "u_a2_moved_two_years"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4556607e-b66b-5e18-9788-6b09e3732b5c",
+          "entity_key": "ex_a2_background_listen"
         }
       ],
       "metadata": {},
@@ -28635,6 +28844,11 @@
           "entity_type": "utterance",
           "entity_uuid": "7b20f8e1-9a95-520f-82b7-d6a93a631867",
           "entity_key": "u_a2_met_friend"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "05ca95c6-9264-55d3-b532-32734cf491c9",
+          "entity_key": "ex_a2_weekend_met"
         }
       ],
       "metadata": {},
@@ -29042,6 +29256,11 @@
           "entity_type": "utterance",
           "entity_uuid": "1a20e929-cce6-5ace-86af-fe565013f661",
           "entity_key": "u_a2_fitting_room"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "953d07c8-f76b-5b2a-9dc6-33f608c82e2e",
+          "entity_key": "ex_a2_clothes_room"
         }
       ],
       "metadata": {},
@@ -29264,6 +29483,11 @@
           "entity_type": "utterance",
           "entity_uuid": "85d14894-3ee8-5c3b-9647-cecd1e282af8",
           "entity_key": "u_a2_enough_food"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "bc6c4cea-5952-505f-a111-45e36c1672a2",
+          "entity_key": "ex_a2_food_listen"
         }
       ],
       "metadata": {},
@@ -29301,6 +29525,11 @@
           "entity_type": "utterance",
           "entity_uuid": "0e78b11d-363a-5007-8a7e-6415e3e7a0a1",
           "entity_key": "u_a2_experiences_best"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "d0b5de52-8497-5d8e-9633-ce126abb25ee",
+          "entity_key": "ex_a2_experiences_listen2"
         }
       ],
       "metadata": {},
@@ -29375,6 +29604,11 @@
           "entity_type": "utterance",
           "entity_uuid": "5e670e31-72b0-52ce-b7e7-bce2bbeb4c47",
           "entity_key": "u_a2_compare_products_durable"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "6a2681c9-90bf-5c09-9c23-11a47cad8d99",
+          "entity_key": "ex_a2_compare_products_listen2"
         }
       ],
       "metadata": {},
@@ -29486,6 +29720,11 @@
           "entity_type": "utterance",
           "entity_uuid": "17ec5454-d8e8-58fe-9631-67a7b1276f81",
           "entity_key": "u_a2_travel_problems_miss"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "92adc3fb-6b25-54b5-9b26-8b74037bc618",
+          "entity_key": "ex_a2_travel_problems_listen"
         }
       ],
       "metadata": {},
@@ -29560,6 +29799,11 @@
           "entity_type": "utterance",
           "entity_uuid": "73494617-1e78-53de-9137-87377701a7c9",
           "entity_key": "u_a2_personality_appearance_tall"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "73bc8e0e-b3c9-5fc6-9b66-2078d1d8179b",
+          "entity_key": "ex_a2_personality_appearance_listen"
         }
       ],
       "metadata": {},
@@ -29751,6 +29995,43 @@
       "relative_path": "audio/generated/en-US/utterances/90975731b9f28a4211b31f095071e0ed96f799991608bea8444a2a7b72e636ba.mp3"
     },
     {
+      "audio_key": "91e6467d3c28e09dd29abb95350e194034d59aa7f20dd6c9d203917dcb5567f7",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "My brother is taller than me, but I am more patient.",
+      "source_text_hash": "7bdfb2ccafcf0ecb52edeca985f23fb7583d6f9ed17bfaf7a7efdf9812578bf9",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "86cce334-48d7-5bac-90d5-ca93cdc5064f",
+          "entity_key": "ex_fix_person_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/91e6467d3c28e09dd29abb95350e194034d59aa7f20dd6c9d203917dcb5567f7.mp3"
+    },
+    {
       "audio_key": "947fb0235905a509a4a3e910f7f6184bd83cb5e459cb2b65af1be3cd9c4e6bcd",
       "category": "utterances",
       "locale": "en-US",
@@ -29819,6 +30100,11 @@
           "entity_type": "utterance",
           "entity_uuid": "dac1b888-0c11-587d-b92d-7768beeeff87",
           "entity_key": "u_a2_opinions_reasons_agree"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "80ab8c48-a891-5e6f-9015-bbb1bc0be847",
+          "entity_key": "ex_a2_opinions_reasons_listen"
         }
       ],
       "metadata": {},
@@ -29856,6 +30142,11 @@
           "entity_type": "utterance",
           "entity_uuid": "11700189-473a-5bca-b81b-f09246258895",
           "entity_key": "u_a2_everyday_problems_fix"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "82c8a743-ae59-5431-abe2-c01fee564ae7",
+          "entity_key": "ex_a2_everyday_problems_listen2"
         }
       ],
       "metadata": {},
@@ -29897,6 +30188,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/9872e9144f6cfeab3fa4a3ca482bfb2e7e82a7663f9c88134abdfb2a1c011855.mp3"
+    },
+    {
+      "audio_key": "9932503e3817758f23134eb88dff6c3e94497c834be2cb44c7f274b7dc534c31",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I currently live downtown with a roommate.",
+      "source_text_hash": "b09b0625da6ced250d46344a12809db3096016b782468a1f96f5b386333d3b79",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "9e970f03-92ab-567d-aeec-aff3c6fcdde6",
+          "entity_key": "ex_a2_background_listen2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/9932503e3817758f23134eb88dff6c3e94497c834be2cb44c7f274b7dc534c31.mp3"
     },
     {
       "audio_key": "9a459cd3fb916d34d55b2325704b11f02ed6cf6ca88cebb05a7933fe63f93da1",
@@ -29973,6 +30301,43 @@
       "relative_path": "audio/generated/en-US/utterances/9b332dbebc1ff81df9c19c7bb87c98a78b198b93cf29d70fc5b2d35ffdeac9ab.mp3"
     },
     {
+      "audio_key": "9cc9c7a1e94ede25dffb127d33de2cf83e0dc24605bbee3c397d68f1a41b3573",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "It's across from the bank.",
+      "source_text_hash": "73d86238b2cb648e89c7b65cc558f5ee0af8cd82d9aa81babfff769537ac762f",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "3c127e79-84fb-5d55-bebd-06c0e9dc712e",
+          "entity_key": "g_a2_detailed_directions_until_past_across:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/9cc9c7a1e94ede25dffb127d33de2cf83e0dc24605bbee3c397d68f1a41b3573.mp3"
+    },
+    {
       "audio_key": "9d9c0953ab198b42762323bf07526363a3b623e6728b7158974ab4718b8e5738",
       "category": "utterances",
       "locale": "en-US",
@@ -30041,6 +30406,11 @@
           "entity_type": "utterance",
           "entity_uuid": "229c8a9d-2fae-5bd7-9b80-432403741218",
           "entity_key": "u_a2_appointments_advice_available"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "f781d23d-750c-57c3-a003-83d51e101de8",
+          "entity_key": "ex_a2_appointments_advice_listen"
         }
       ],
       "metadata": {},
@@ -30152,6 +30522,11 @@
           "entity_type": "utterance",
           "entity_uuid": "f193df92-440a-5687-a413-fe6dee2817bc",
           "entity_key": "u_a2_describe_places_peaceful"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "239c2fd8-cdde-5531-8b7f-94680550721e",
+          "entity_key": "ex_a2_describe_places_listen"
         }
       ],
       "metadata": {},
@@ -30226,6 +30601,11 @@
           "entity_type": "utterance",
           "entity_uuid": "dd1a05b6-553b-5d2d-9be2-169c67d612d3",
           "entity_key": "u_a2_opinions_reasons_either"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "c40dadd3-ebc9-523c-8ce5-0fcda95ac279",
+          "entity_key": "ex_a2_opinions_reasons_listen2"
         }
       ],
       "metadata": {},
@@ -30448,6 +30828,11 @@
           "entity_type": "utterance",
           "entity_uuid": "baa69beb-9058-5119-b08b-2bcc1cbc7490",
           "entity_key": "u_a2_how_about_you"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "447c7e5f-d577-5b39-b4d4-4eb1672ebc1a",
+          "entity_key": "ex_a2_catchup_listen2"
         }
       ],
       "metadata": {},
@@ -30489,6 +30874,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/ab0309c737385083ba38e22e193f89fbeef37ec05e5d2e2b38a0b5a788215ad7.mp3"
+    },
+    {
+      "audio_key": "ab0e0d17efa99f31c3e5f6a5d279add34592b9b7d19a31600ab280a25a88639b",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I usually commute to work by train.",
+      "source_text_hash": "7331539a4ea00d8b39b9d7d22e277e5fcddbcabbadb942034949272ab49d067b",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "dfe5fa6d-6248-58bf-a213-0cecb7f2ea0a",
+          "entity_key": "ex_a2_routine_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/ab0e0d17efa99f31c3e5f6a5d279add34592b9b7d19a31600ab280a25a88639b.mp3"
     },
     {
       "audio_key": "ac7fbd39a015db5cbecb9c4464c126c662359039055c7beaf47bb9d57ebeb4bc",
@@ -30633,6 +31055,11 @@
           "entity_type": "utterance",
           "entity_uuid": "35852a61-d353-5c99-ae07-9f78df4512d8",
           "entity_key": "u_a2_tickets_timetables_departure"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "3fd137e4-9d58-550f-ba27-dcea1052e035",
+          "entity_key": "ex_a2_tickets_timetables_listen"
         }
       ],
       "metadata": {},
@@ -30670,6 +31097,11 @@
           "entity_type": "utterance",
           "entity_uuid": "c63ff3ca-de56-5d04-849e-c2e71c1b3697",
           "entity_key": "u_a2_best_choice_easiest"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "7479f3ba-cab7-599a-8c71-d50d615381ca",
+          "entity_key": "ex_a2_best_choice_listen"
         }
       ],
       "metadata": {},
@@ -30781,6 +31213,11 @@
           "entity_type": "utterance",
           "entity_uuid": "12f7c9f1-89a8-5cb4-b663-2e1dda424976",
           "entity_key": "u_a2_close_cousin"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "f1e23b59-c468-5d0e-ab02-189581d0eadc",
+          "entity_key": "ex_a2_family_listen2"
         }
       ],
       "metadata": {},
@@ -31083,6 +31520,43 @@
       "relative_path": "audio/generated/en-US/utterances/ba6044e790fd8f430a18f055b0105f15346947dc96ce82af1f57e85760d9b273.mp3"
     },
     {
+      "audio_key": "ba695af21921dc2ee15c54bd98abf2ce26ed707d08d7a03a5998dbb2466a4b53",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "The bus stop and supermarket are very close, so the area is convenient.",
+      "source_text_hash": "f0176562280cfb81b42fed9b9c4392fadf67a3573f3744ba7bf0523fa8f9b81c",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "be4aa65d-0e67-51cd-8b3e-ed52cff58cc0",
+          "entity_key": "ex_a2_home_convenient"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/ba695af21921dc2ee15c54bd98abf2ce26ed707d08d7a03a5998dbb2466a4b53.mp3"
+    },
+    {
       "audio_key": "bb0f3686773bbeee18270a8d20faebe5319b3d87607ea06b6a0b317e66daae4a",
       "category": "utterances",
       "locale": "en-US",
@@ -31225,6 +31699,11 @@
           "entity_type": "utterance",
           "entity_uuid": "96bdea69-83c7-5bb9-a727-deb5e2bb45f5",
           "entity_key": "u_a2_had_lunch"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "8242ef00-f9b1-5117-a87d-8d75f9138a30",
+          "entity_key": "ex_a2_weekend_listen2"
         }
       ],
       "metadata": {},
@@ -31336,6 +31815,11 @@
           "entity_type": "utterance",
           "entity_uuid": "60b52609-debd-5507-828a-f1f65bcc4077",
           "entity_key": "u_a2_study_habits_improve"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "479d4fe8-e62e-5df0-b642-c2de046ceb8e",
+          "entity_key": "ex_a2_study_habits_listen2"
         }
       ],
       "metadata": {},
@@ -31373,6 +31857,11 @@
           "entity_type": "utterance",
           "entity_uuid": "310e7881-6e34-53ea-b6f7-fc42dc6ef1cd",
           "entity_key": "u_a2_integrated_capstone_plan"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "918eb12b-d6c7-5512-9ec1-d89dcedc034e",
+          "entity_key": "ex_fix_capstone_listen"
         }
       ],
       "metadata": {},
@@ -31410,6 +31899,11 @@
           "entity_type": "utterance",
           "entity_uuid": "2bc6f20e-0c07-5d62-94c4-4b922e8da013",
           "entity_key": "u_a2_experiences_never"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "a366ca02-887c-5868-95f8-c2ded782cb1c",
+          "entity_key": "ex_a2_experiences_listen"
         }
       ],
       "metadata": {},
@@ -31484,6 +31978,11 @@
           "entity_type": "utterance",
           "entity_uuid": "3d66c388-4d56-52ef-bc98-252f1b5485dd",
           "entity_key": "u_a2_abilities_skills_well"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "042db899-5002-5f70-8997-9daaaebf5d86",
+          "entity_key": "ex_a2_abilities_skills_listen2"
         }
       ],
       "metadata": {},
@@ -31632,6 +32131,11 @@
           "entity_type": "utterance",
           "entity_uuid": "30cfcecc-8e2e-52a3-b919-65138f72f242",
           "entity_key": "u_a2_detailed_directions_transfer"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "86b98289-68e5-587a-976a-db16a8311cbd",
+          "entity_key": "ex_a2_detailed_directions_listen2"
         }
       ],
       "metadata": {},
@@ -31706,6 +32210,11 @@
           "entity_type": "utterance",
           "entity_uuid": "af939334-f7ab-5bbe-a7c4-e39939fa06a7",
           "entity_key": "u_a2_work_duties_customers"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "801c0e36-44d0-5df2-839b-2bc08781096a",
+          "entity_key": "ex_a2_work_duties_listen"
         }
       ],
       "metadata": {},
@@ -31749,6 +32258,43 @@
       "relative_path": "audio/generated/en-US/utterances/cf8ec46c56641ea92a9cbac18ad14afa4a5b11dadb56ba926e3c989671702355.mp3"
     },
     {
+      "audio_key": "d399cf118e1ffb2fae9151cc93135a79ced87b45bca5107d06b20d283ee6560d",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Please ask him to call me back.",
+      "source_text_hash": "a4f925eb350ccfe6bec99e1bb3c4ef5750d6b510820e4cba1aca558c75b15a75",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "9e023ffa-2254-5000-b7df-286fc95ec9b3",
+          "entity_key": "g_fix_connected_speech:example:1"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d399cf118e1ffb2fae9151cc93135a79ced87b45bca5107d06b20d283ee6560d.mp3"
+    },
+    {
       "audio_key": "d39b7c6754507dbea048f0185522b3e2e2410a8282487e64fa384fe2a9e16f4e",
       "category": "utterances",
       "locale": "en-US",
@@ -31780,6 +32326,11 @@
           "entity_type": "utterance",
           "entity_uuid": "09b0aa47-71a6-5fbc-bf88-993fbb23db31",
           "entity_key": "u_a2_trip_planning_prefer"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "dc8f5bc3-9b13-59dc-995c-9ee6a31ff5fd",
+          "entity_key": "ex_a2_trip_planning_listen2"
         }
       ],
       "metadata": {},
@@ -31928,6 +32479,11 @@
           "entity_type": "utterance",
           "entity_uuid": "9bb22cac-67ac-5b8c-9c6d-3c243c6cc4b2",
           "entity_key": "u_a2_next_thursday"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "d7020031-7446-5afd-a477-b1cb1b6b4a19",
+          "entity_key": "ex_a2_future_listen"
         }
       ],
       "metadata": {},
@@ -31965,10 +32521,52 @@
           "entity_type": "utterance",
           "entity_uuid": "7a5c40b8-55d6-5268-a9dd-65c44825f9ed",
           "entity_key": "u_a2_describe_places_view"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "e72f9ad1-b84a-5ecc-8198-11f4c2da33ce",
+          "entity_key": "ex_a2_describe_places_listen2"
         }
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/d4df67f0a0393f67aed0f847c2b3a4ddf1d8656c7cd16215a56872972a0d8436.mp3"
+    },
+    {
+      "audio_key": "d50a8dd3273c8955673675cde43d731bf0c07e7967a7019cb2011986486cbf35",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I'm busy with work these days.",
+      "source_text_hash": "65c517fd0ac9969af41087ced040c2fdb838474922119e2f2a5fb6d8304aafbe",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "1b097b78-4c0a-5f01-9c43-9754543d8137",
+          "entity_key": "ex_a2_catchup_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d50a8dd3273c8955673675cde43d731bf0c07e7967a7019cb2011986486cbf35.mp3"
     },
     {
       "audio_key": "d58a37fa341272b7f2a8e05119736739d9e53e64dd4ef53e029a372913ae051b",
@@ -32298,6 +32896,11 @@
           "entity_type": "utterance",
           "entity_uuid": "ac2319cc-b864-51f6-bf72-e01d8d19a3ba",
           "entity_key": "u_a2_windy_beach"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "7bb76908-191e-58d1-a4fd-cd2c083f4c36",
+          "entity_key": "ex_a2_weather_listen"
         }
       ],
       "metadata": {},
@@ -32526,6 +33129,43 @@
       "relative_path": "audio/generated/en-US/utterances/ea2b8f54b28349ebf406fa6301688accbd0c1405cfbcac18ded62cf4b84a219f.mp3"
     },
     {
+      "audio_key": "ea76bedaba5534114b89a7b1aea7c8fc2502d3959cd6dae17c3edcc407daa1cc",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Could you take a message?",
+      "source_text_hash": "f535b528ddf8bb6c97256e59bf1b60c248f1bc76028b84914da7eaf27b2937b2",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "9e023ffa-2254-5000-b7df-286fc95ec9b3",
+          "entity_key": "g_fix_connected_speech:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/ea76bedaba5534114b89a7b1aea7c8fc2502d3959cd6dae17c3edcc407daa1cc.mp3"
+    },
+    {
       "audio_key": "ec93b2b5a468466200f48f1475d0d1da9118791174239f3cc693d19f8d23d621",
       "category": "utterances",
       "locale": "en-US",
@@ -32631,6 +33271,11 @@
           "entity_type": "utterance",
           "entity_uuid": "b16d4ddd-5d3e-502e-aff6-bf92bd85e7aa",
           "entity_key": "u_a2_symptoms_pharmacy_warning"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "0603a6bd-be1d-52e5-84fa-b3e48afae761",
+          "entity_key": "ex_a2_symptoms_pharmacy_listen2"
         }
       ],
       "metadata": {},
@@ -32668,6 +33313,11 @@
           "entity_type": "utterance",
           "entity_uuid": "2f2860d8-efbc-5d83-bb98-9dbb1db01fc6",
           "entity_key": "u_a2_work_duties_responsibility"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "d3d49306-0c91-53f5-930e-b486eb81b9e1",
+          "entity_key": "ex_a2_work_duties_listen2"
         }
       ],
       "metadata": {},
@@ -32816,6 +33466,11 @@
           "entity_type": "utterance",
           "entity_uuid": "12aa6e1e-9839-5ea3-84ed-404d9c1c4878",
           "entity_key": "u_a2_detailed_directions_intersection"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "06c8efa6-2977-5672-be65-8867899b5c76",
+          "entity_key": "ex_a2_detailed_directions_listen"
         }
       ],
       "metadata": {},
@@ -33079,6 +33734,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/fa4d4f08be96853089b8ffa977aaf81b860f4d53eb73315d366ee492d1489b6e.mp3"
+    },
+    {
+      "audio_key": "fb26b82feea4999158063700d4a3014c47acb1d797ffb143ec3fb91c4b630393",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Keep going until you reach the bridge.",
+      "source_text_hash": "9374fc1d599e8512817344321366262a2c97412def900f64fc17dca51285fe15",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "3c127e79-84fb-5d55-bebd-06c0e9dc712e",
+          "entity_key": "g_a2_detailed_directions_until_past_across:example:1"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/fb26b82feea4999158063700d4a3014c47acb1d797ffb143ec3fb91c4b630393.mp3"
     }
   ]
 }

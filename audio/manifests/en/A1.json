@@ -336,6 +336,52 @@
       "relative_path": "audio/generated/en-US/dialogues/0be36588c5e13d912e21010c70f6cc2bca031de1fa3df3ec169b984d3919ed1a.mp3"
     },
     {
+      "audio_key": "0cf928788c311fb8f66dca96b8fff77b2e24a8aac4734ff542e12f8c8228adbf",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I work in an office.",
+      "source_text_hash": "c9397652eca0527be650850f001f86b437a8419b40a83e68f5e734a3ce933564",
+      "voice_key": "character:mei:female_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional female adult American English voice; confident, clean and highly intelligible.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.98
+        },
+        "profile_key": "female_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "845e5958-bab2-5486-b189-0264f499023c",
+          "entity_key": "d_jobs_lunch:2"
+        }
+      ],
+      "metadata": {
+        "character": "mei",
+        "dialogue": "d_jobs_lunch",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "professional_neutral",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_professional"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/0cf928788c311fb8f66dca96b8fff77b2e24a8aac4734ff542e12f8c8228adbf.mp3"
+    },
+    {
       "audio_key": "0d40aa9f9160d24f68c84facc791957caee5bea54dc3ba3b917014730598f70a",
       "category": "dialogues",
       "locale": "en-US",
@@ -1164,6 +1210,52 @@
       "relative_path": "audio/generated/en-US/dialogues/1d08b708624c811baf3a2c8ee75da6ef0b94547593c53049947fe33e90635779.mp3"
     },
     {
+      "audio_key": "1d18594d60006c29e842cf41f9eca225af9891b20738aac4ccdc548e9209d0a8",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Which bus should I take downtown?",
+      "source_text_hash": "87459f3d10fe6ad7eee0a3088ccc7530d73d0747b157a8889f388dfd67194ab4",
+      "voice_key": "character:hana:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm, precise female adult American English voice; gentle, highly intelligible and natural.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "70036a6b-3188-5ede-8dc2-4ba1b6bd26fa",
+          "entity_key": "d_tr_bus_route:1"
+        }
+      ],
+      "metadata": {
+        "character": "hana",
+        "dialogue": "d_tr_bus_route",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/1d18594d60006c29e842cf41f9eca225af9891b20738aac4ccdc548e9209d0a8.mp3"
+    },
+    {
       "audio_key": "1e83012882fc205ef17a3af8c2c7d9bbde7483b74eb8cfca61352b63ef84cacc",
       "category": "dialogues",
       "locale": "en-US",
@@ -1300,52 +1392,6 @@
         "voice_profile": "male_bright"
       },
       "relative_path": "audio/generated/en-US/dialogues/1f2f22f2d495b493bbc45676ce06fc7adce527a8b883315e8047d75394471f23.mp3"
-    },
-    {
-      "audio_key": "20037b9e63070f96cd81024127e533fa1ea340f801645b0e30d25f5bd122e1e2",
-      "category": "dialogues",
-      "locale": "en-US",
-      "text": "Which bus do I take to downtown?",
-      "source_text_hash": "3984efa3d4e36a62bc249d5aabec6573e5ead8b84e93691899b1867c650a1528",
-      "voice_key": "character:hana:female_calm",
-      "voice_spec": {
-        "voice_name": null,
-        "description": "Calm, precise female adult American English voice; gentle, highly intelligible and natural.",
-        "required_language": "en",
-        "preferred_accent": "american",
-        "prefer_high_quality": true,
-        "required_labels": {
-          "gender": "female"
-        },
-        "distinct_character": true,
-        "settings": {
-          "stability": 0.68,
-          "similarity_boost": 0.89,
-          "style": 0.06,
-          "use_speaker_boost": true,
-          "speed": 0.97
-        },
-        "profile_key": "female_calm"
-      },
-      "entity_refs": [
-        {
-          "entity_type": "dialogue_turn",
-          "entity_uuid": "70036a6b-3188-5ede-8dc2-4ba1b6bd26fa",
-          "entity_key": "d_tr_bus_route:1"
-        }
-      ],
-      "metadata": {
-        "character": "hana",
-        "dialogue": "d_tr_bus_route",
-        "turn": 1,
-        "persona": {
-          "voice_presentation": "female",
-          "style": "calm_clear",
-          "target_accent": "general_american"
-        },
-        "voice_profile": "female_calm"
-      },
-      "relative_path": "audio/generated/en-US/dialogues/20037b9e63070f96cd81024127e533fa1ea340f801645b0e30d25f5bd122e1e2.mp3"
     },
     {
       "audio_key": "2003d522cf2f44eaecc95dafb76dda01688e6997e7f3778f5ee09537b1396d60",
@@ -9442,52 +9488,6 @@
         "voice_profile": "female_warm"
       },
       "relative_path": "audio/generated/en-US/dialogues/d75544459635263880bcf3e171b42db650615a10ec230a1573639508a45e6107.mp3"
-    },
-    {
-      "audio_key": "d76981b74703ca2961c3f137e4eaa4744fb26a6033f9e60d3e4409b8c00edc3d",
-      "category": "dialogues",
-      "locale": "en-US",
-      "text": "I work at an office.",
-      "source_text_hash": "7482c549513d15c7bad2819a3680bd0cd976ecce52166be341681b73f4557002",
-      "voice_key": "character:mei:female_professional",
-      "voice_spec": {
-        "voice_name": null,
-        "description": "Neutral professional female adult American English voice; confident, clean and highly intelligible.",
-        "required_language": "en",
-        "preferred_accent": "american",
-        "prefer_high_quality": true,
-        "required_labels": {
-          "gender": "female"
-        },
-        "distinct_character": true,
-        "settings": {
-          "stability": 0.71,
-          "similarity_boost": 0.9,
-          "style": 0.05,
-          "use_speaker_boost": true,
-          "speed": 0.98
-        },
-        "profile_key": "female_professional"
-      },
-      "entity_refs": [
-        {
-          "entity_type": "dialogue_turn",
-          "entity_uuid": "845e5958-bab2-5486-b189-0264f499023c",
-          "entity_key": "d_jobs_lunch:2"
-        }
-      ],
-      "metadata": {
-        "character": "mei",
-        "dialogue": "d_jobs_lunch",
-        "turn": 2,
-        "persona": {
-          "voice_presentation": "female",
-          "style": "professional_neutral",
-          "target_accent": "general_american"
-        },
-        "voice_profile": "female_professional"
-      },
-      "relative_path": "audio/generated/en-US/dialogues/d76981b74703ca2961c3f137e4eaa4744fb26a6033f9e60d3e4409b8c00edc3d.mp3"
     },
     {
       "audio_key": "d8d7dada8762a84c72c52042c73ea3282131e7deed034ad71aba62caf6f9ead4",
@@ -18608,6 +18608,11 @@
           "entity_type": "utterance",
           "entity_uuid": "daccf4a4-6e6c-5f8f-89b9-53bc9ca5bcbd",
           "entity_key": "u_hobbies_games"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "e98e07f3-7dad-574b-a07f-e2e0e396ab07",
+          "entity_key": "ex_hobbies_listen"
         }
       ],
       "metadata": {},
@@ -18682,6 +18687,11 @@
           "entity_type": "utterance",
           "entity_uuid": "748d03a7-fcf8-593f-9bf8-406d76ad97d6",
           "entity_key": "u_q_who"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "89abc9b9-9757-5d8d-a63c-863e2d7b3bd2",
+          "entity_key": "ex_q_listen"
         }
       ],
       "metadata": {},
@@ -18873,6 +18883,43 @@
       "relative_path": "audio/generated/en-US/utterances/0ac645cb205db5286c41da56e2c2e3973441cce1bc486471cdc9fbea99531c0f.mp3"
     },
     {
+      "audio_key": "0c33262fb8b8b2fd66505ebad74fc2d75d47eaa3c2e2545b7133b55b4646c7f0",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Which bus should I take downtown?",
+      "source_text_hash": "87459f3d10fe6ad7eee0a3088ccc7530d73d0747b157a8889f388dfd67194ab4",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "3b730164-0cb9-5850-9f0b-1abe3c9d46e2",
+          "entity_key": "u_tr_which_bus"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/0c33262fb8b8b2fd66505ebad74fc2d75d47eaa3c2e2545b7133b55b4646c7f0.mp3"
+    },
+    {
       "audio_key": "0cda8d3d9974b0746b91c9280d9f7f1415db91dbd7d1af04ea6d8371f7a65772",
       "category": "utterances",
       "locale": "en-US",
@@ -19015,6 +19062,11 @@
           "entity_type": "utterance",
           "entity_uuid": "bfb307b2-4e23-5103-847a-12e1e49ba7e3",
           "entity_key": "u_food_like_coffee"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "6ccbcdbc-ca85-53b5-a123-6774e610f7e3",
+          "entity_key": "ex_food_listen"
         }
       ],
       "metadata": {},
@@ -19167,6 +19219,80 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/16a6f4af75c3a0c142bf2094bdf06e21c7acb900d338a960f05e304c72bcc33a.mp3"
+    },
+    {
+      "audio_key": "18b9a752919751431f31470191ceff01704ba99809a8cde9c8f3ac2fe196f5b0",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "It's fifteen dollars.",
+      "source_text_hash": "596a7daf01e6a6486f180e7e5118ff5569f77422ec2aba7aac08f7b5b973258a",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "32ea2b60-bf53-5ae4-b56e-f233de88d2e8",
+          "entity_key": "ex_price_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/18b9a752919751431f31470191ceff01704ba99809a8cde9c8f3ac2fe196f5b0.mp3"
+    },
+    {
+      "audio_key": "18e2d51ccd11b030f63ed1edbdd7b1d08f1051ed3e366b70fb0dbd0e36203a82",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Go straight and turn right at the corner.",
+      "source_text_hash": "82a7c501af2375af3efe07a1cefe869ea9e0b9f0889837c2fd54b9c26faad4bf",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "8f5e03f3-08ef-5b34-b256-3736efccadc2",
+          "entity_key": "ex_dir_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/18e2d51ccd11b030f63ed1edbdd7b1d08f1051ed3e366b70fb0dbd0e36203a82.mp3"
     },
     {
       "audio_key": "19883440e98289ce6379a71b1a19fc1cb5d30eb01f24c8342950bd3209d92417",
@@ -19718,6 +19844,11 @@
           "entity_type": "utterance",
           "entity_uuid": "70fc7e76-6b44-5532-a5c0-81dd2b5ef1e2",
           "entity_key": "u_bye"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "e97a6769-207b-5cd0-8779-75c0d4461ad0",
+          "entity_key": "e11_listen_bye"
         }
       ],
       "metadata": {},
@@ -19833,6 +19964,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/39b349b5da56e6cb88effb22a09146e9ae89aa112fd4ce8957e40d53471270b8.mp3"
+    },
+    {
+      "audio_key": "39c748e420d63b803272cf162c6cb42175be3f138c021cde7469582c867f76c5",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "The bank is on your left.",
+      "source_text_hash": "7abc72181eb1219e14c00bf1d7f82e72ef825f5b18d8295634b3db6192e1af9d",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "a57a2af4-bdc9-5828-a9dc-e824821dd7bc",
+          "entity_key": "ex_fix_direction_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/39c748e420d63b803272cf162c6cb42175be3f138c021cde7469582c867f76c5.mp3"
     },
     {
       "audio_key": "3aa9abcf45b97414dadd98daf1bd3bcb0fd7e9d300498e4beed83e8d99ab62fb",
@@ -19981,6 +20149,80 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/3bf73814fcb434006e7e7e6fecaaf954ba9f1f82799745b0788fd6317a237643.mp3"
+    },
+    {
+      "audio_key": "3cbeb319091a9ac35c227ba63ad68716eb1cd73d012258128cae64df1160e854",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "teacher",
+      "source_text_hash": "1057a9604e04b274da5a4de0c8f4b4868d9b230989f8c8c6a28221143cc5a755",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "1ea9c932-bfd4-5a53-9eb7-d63a59e5d709",
+          "entity_key": "g_fix_word_stress:example:1"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/3cbeb319091a9ac35c227ba63ad68716eb1cd73d012258128cae64df1160e854.mp3"
+    },
+    {
+      "audio_key": "3d1b132e0336a051f9d545576c3ec956ead373f27fb0278e315ab963c2849aa6",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "P-R-I-Y-A.",
+      "source_text_hash": "d987e43fafadc37d15ea965a423c87dc7d2f6be5d68a8caf5153381646086020",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "aa001d5b-b39c-50b1-9fe4-cf97ee26c27f",
+          "entity_key": "e09_listen_spell"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/3d1b132e0336a051f9d545576c3ec956ead373f27fb0278e315ab963c2849aa6.mp3"
     },
     {
       "audio_key": "3e13f1ac4f7e4b44e7bc85a7ec4ec30ad518f836931ce568a235d157738d2db3",
@@ -20236,10 +20478,57 @@
           "entity_type": "utterance",
           "entity_uuid": "7c1ab39f-d8da-5b49-a2d9-cc07f40f0a50",
           "entity_key": "u_req_open"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "cf050faf-8dbe-5762-8f74-1187760e8316",
+          "entity_key": "ex_req_listen"
         }
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/50482b16ff672cf1ee7ea09d91868485f40d87857867c6f74834a0d8a2bef98b.mp3"
+    },
+    {
+      "audio_key": "5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I work in an office.",
+      "source_text_hash": "c9397652eca0527be650850f001f86b437a8419b40a83e68f5e734a3ce933564",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "cd180822-3db8-54e2-a26d-16829de71433",
+          "entity_key": "u_jobs_office"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "21f5a013-5743-51d8-bdf0-f63e11335b71",
+          "entity_key": "ex_jobs_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d.mp3"
     },
     {
       "audio_key": "50fa5f08edc3a54296f4dae4e2ff215fbb3dc7243f729bb76ce0bfc4c22311b7",
@@ -20310,6 +20599,11 @@
           "entity_type": "utterance",
           "entity_uuid": "24fa0add-5a62-5c47-b76e-60bd91c9dec2",
           "entity_key": "u_body_leg"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "68511e39-6e71-518a-8a67-b6bf0bcdfb1e",
+          "entity_key": "ex_body_listen"
         }
       ],
       "metadata": {},
@@ -20458,6 +20752,11 @@
           "entity_type": "utterance",
           "entity_uuid": "7505ae00-dfb1-5f61-a651-de44479cc0a9",
           "entity_key": "u_q_do"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "d9129e62-7965-5041-9a28-8d16b266fc9a",
+          "entity_key": "g_fix_question_intonation:example:1"
         }
       ],
       "metadata": {},
@@ -20532,6 +20831,11 @@
           "entity_type": "utterance",
           "entity_uuid": "49a6fa9a-9370-5b9f-8873-cf4a85d05e2b",
           "entity_key": "u_time_half_seven"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "7a83efad-cf48-59d2-8d58-bf234deab7a8",
+          "entity_key": "ex_time_listen"
         }
       ],
       "metadata": {},
@@ -20649,6 +20953,43 @@
       "relative_path": "audio/generated/en-US/utterances/633be4cf2842c2c5fd02c44c192762eb0ace7cd8f7e5de45c4d24bca2f7ef0e4.mp3"
     },
     {
+      "audio_key": "636cb5994cb5a39c4016735ad707fc8a2fb3623805ea7fe449dd7d9e77a31b44",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "My sister gets up at seven. I get up at eight.",
+      "source_text_hash": "1f6f214c47f045cb9426d420b2a5684dd7bd6b5941481e65f694d687c605fc2d",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "84074ebf-044a-53a4-893f-ac5c020bba8c",
+          "entity_key": "ex_fix_routine_review"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/636cb5994cb5a39c4016735ad707fc8a2fb3623805ea7fe449dd7d9e77a31b44.mp3"
+    },
+    {
       "audio_key": "65d8cd4e3cf7f55d7334ee385bd934bfd8df72f2e58754b4942a09d41e65ec45",
       "category": "utterances",
       "locale": "en-US",
@@ -20754,10 +21095,52 @@
           "entity_type": "utterance",
           "entity_uuid": "dcb79743-d089-50d2-addc-e65b00a528c0",
           "entity_key": "u_shop_try_on"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "46e2bb67-8859-5551-8b8e-f6a4294046f3",
+          "entity_key": "ex_shop_listen"
         }
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/6b99a23e993f19eea9d6b29388552b09d9d19878dbf73f3ab55b07a6d316f1fd.mp3"
+    },
+    {
+      "audio_key": "6bc858ba9b365a1f5defbd25608dbb54602d0f643bb0f0cb5ba9b4ab456aa76d",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "She goes to work at nine.",
+      "source_text_hash": "982bfe6900f4f2a6419c90bc2f677af2761c7820c65635e9316bc1600413430a",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "1f6b07c0-e8d0-5def-baaa-bba91e147774",
+          "entity_key": "ex_fix_routine_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/6bc858ba9b365a1f5defbd25608dbb54602d0f643bb0f0cb5ba9b4ab456aa76d.mp3"
     },
     {
       "audio_key": "6bdd576f577f7da6c637dadd6c96cdd9449553809d361269285b3a111648ad67",
@@ -20795,6 +21178,80 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/6bdd576f577f7da6c637dadd6c96cdd9449553809d361269285b3a111648ad67.mp3"
+    },
+    {
+      "audio_key": "6dede0d537f079a7350522b2c45070d85677634abf8989068157db03e07c9c7f",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Sam has the tickets.",
+      "source_text_hash": "53484a42c4ba456caf2af2a042f628a455f417e6bf1fcfaafb690c08bb308d7e",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "cb075e1a-0f41-55e6-aed9-8bb6cb4bac01",
+          "entity_key": "ex_have_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/6dede0d537f079a7350522b2c45070d85677634abf8989068157db03e07c9c7f.mp3"
+    },
+    {
+      "audio_key": "6e856d513727c06394a97d062b1839637ccaa3b9079c5cda2115e67a1620dd19",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "There is a bed in the room.",
+      "source_text_hash": "1047977f6a4f3e2639c7d8b7494e8702c678607dd55ba2a1eadd7f0e15d3247d",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "e131f7f9-a539-5d4c-a6d6-d5d15b61b56c",
+          "entity_key": "ex_fix_home_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/6e856d513727c06394a97d062b1839637ccaa3b9079c5cda2115e67a1620dd19.mp3"
     },
     {
       "audio_key": "6fa1613b4c43689690693373270bf31c7898654bed39f292175c50999cbf5cfc",
@@ -21056,6 +21513,43 @@
       "relative_path": "audio/generated/en-US/utterances/762f60bb9c65c9413b8a467d06de3c5ecc4e70a028231d3c4cd6151f28ae2033.mp3"
     },
     {
+      "audio_key": "76dc2e99b06e02b0407482794901be50417e5706b8b8a95087b77413d3a78b90",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "thirteen",
+      "source_text_hash": "9ecc81f0a4b6dfb0c30e78370c42a1e0c118d2b426ec4dd1ee06c9f62a832040",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "0f56d3b1-8b80-5e27-9a83-aa0c4ed018be",
+          "entity_key": "ex_num_13"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/76dc2e99b06e02b0407482794901be50417e5706b8b8a95087b77413d3a78b90.mp3"
+    },
+    {
       "audio_key": "77c22461d4ff48643d57d20f3c95d10694d1b6ada0b0ee40b467226f0c03f978",
       "category": "utterances",
       "locale": "en-US",
@@ -21087,10 +21581,52 @@
           "entity_type": "utterance",
           "entity_uuid": "6fd4020a-b9b7-51c1-9bab-27658c79f4b1",
           "entity_key": "u_sorry_late"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "b16cc2de-aa6b-52ac-9b5d-ead9e8711c9d",
+          "entity_key": "ex_polite_listen"
         }
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/77c22461d4ff48643d57d20f3c95d10694d1b6ada0b0ee40b467226f0c03f978.mp3"
+    },
+    {
+      "audio_key": "7bcbefe488f6ad878774c2db57ad26e9af6073485bda13f3d9401d031d7e7341",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "My name is Ella.",
+      "source_text_hash": "10aba6948860264d3b436639f51b6109c4cd6c0774a290bbf786e2e7c13c8d65",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "b1ae5ced-3a4c-54c4-95d8-0693079eed48",
+          "entity_key": "e05_listen_name"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/7bcbefe488f6ad878774c2db57ad26e9af6073485bda13f3d9401d031d7e7341.mp3"
     },
     {
       "audio_key": "7c6fbb6f28856dc8f8416919a7ff4031363c840d45fbaf7bc7444052597c5d60",
@@ -21315,6 +21851,43 @@
       "relative_path": "audio/generated/en-US/utterances/81a78798c24b70246418da0d07d9af059dadb5d434ed3ba238184de15c244d75.mp3"
     },
     {
+      "audio_key": "81c9b4cb9d73fcab5c985e5d2c8fd1558bb1acc301c265bf5d01bca7e7023cd1",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I work in a school.",
+      "source_text_hash": "f696d34f92ecb154f83f43c193779725292fb57c7f47b0752a093f503e7eb14c",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "c606b60c-c465-5503-b043-918a8480c26b",
+          "entity_key": "ex_fix_jobs_school"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/81c9b4cb9d73fcab5c985e5d2c8fd1558bb1acc301c265bf5d01bca7e7023cd1.mp3"
+    },
+    {
       "audio_key": "820e25666aa97235a2b39f8be69acc0a99481ad8202013964063959a00457dd6",
       "category": "utterances",
       "locale": "en-US",
@@ -21350,6 +21923,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/820e25666aa97235a2b39f8be69acc0a99481ad8202013964063959a00457dd6.mp3"
+    },
+    {
+      "audio_key": "83613417d70750bacb7498ab7d9ab1a01983b6172ca58e6cfa3ebd23e8c47773",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "doctor",
+      "source_text_hash": "72f4be89d6ebab1496e21e38bcd7c8ca0a68928af3081ad7dff87e772eb350c2",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "1ea9c932-bfd4-5a53-9eb7-d63a59e5d709",
+          "entity_key": "g_fix_word_stress:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/83613417d70750bacb7498ab7d9ab1a01983b6172ca58e6cfa3ebd23e8c47773.mp3"
     },
     {
       "audio_key": "847d646c39e180592667ba7f4f0cc00d818076973c6fadc66c944d38bed04553",
@@ -21420,6 +22030,11 @@
           "entity_type": "utterance",
           "entity_uuid": "9bfdc3ef-edc1-5ba4-b5c7-a2a6ccdb0bb1",
           "entity_key": "u_good_morning"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "a6ec2cdd-2798-54e9-8647-8fba30b34a1c",
+          "entity_key": "e05_listen_morning"
         }
       ],
       "metadata": {},
@@ -21531,6 +22146,11 @@
           "entity_type": "utterance",
           "entity_uuid": "83f89aca-4433-5275-bb3b-d3f21dd52be4",
           "entity_key": "u_routine_bed"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "48737487-b675-528d-ae57-61a6f6e9489a",
+          "entity_key": "ex_routine_listen"
         }
       ],
       "metadata": {},
@@ -21568,6 +22188,11 @@
           "entity_type": "utterance",
           "entity_uuid": "97441213-e1ee-55f2-807c-c1db716bc8bd",
           "entity_key": "u_study_class"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "30a234f5-7c57-58c2-a5c2-b99b154bce92",
+          "entity_key": "ex_study_listen"
         }
       ],
       "metadata": {},
@@ -21679,6 +22304,11 @@
           "entity_type": "utterance",
           "entity_uuid": "7da5c732-869b-5eb5-a19c-e05858aca823",
           "entity_key": "u_cafe_check"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "64dc3d50-a83e-5cb1-ad89-589c2d2bd70a",
+          "entity_key": "ex_cafe_listen"
         }
       ],
       "metadata": {},
@@ -21757,6 +22387,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/97a3c90c475ad87b8155ee0515e7600c52bae32dd648d69fc9750ad186805950.mp3"
+    },
+    {
+      "audio_key": "97c31b1c055684d062e6ccb90e17086f4558febdc83a3cda9b59bf98e3eae3c6",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "The phone is on the table.",
+      "source_text_hash": "6b11e3fc1f35a636d9fd04d07de894c1682fe65fde54c489b1682f73b884f296",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "95d18f30-11f2-524a-8a21-9cf9108792b3",
+          "entity_key": "ex_home_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/97c31b1c055684d062e6ccb90e17086f4558febdc83a3cda9b59bf98e3eae3c6.mp3"
     },
     {
       "audio_key": "97d04e330a1bf1090a877a6df72c5ba54183ae180a910b1c84dfb70386180a52",
@@ -21975,6 +22642,11 @@
           "entity_type": "utterance",
           "entity_uuid": "9a41f414-6f2a-5fcf-8a2e-594e6bd3fc6e",
           "entity_key": "u_obj_old"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "704534c0-f8fc-54d6-bafe-7a54efb3e94d",
+          "entity_key": "ex_obj_listen"
         }
       ],
       "metadata": {},
@@ -22203,6 +22875,43 @@
       "relative_path": "audio/generated/en-US/utterances/a4e94de3d6ee68989913f02908151659166c3a5219b878b53f531a977bbc8cce.mp3"
     },
     {
+      "audio_key": "a55d9f5254056fec64b8040f0e986f2245753c21da9a7efc5f1779a4e73608f7",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "This is bread.",
+      "source_text_hash": "7644c67769edc4f7778ec9d04479da448ce73eb6347ff128b2dda69a942c7720",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "8e453842-dce1-5928-aed8-87c9941707f9",
+          "entity_key": "ex_fix_food_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/a55d9f5254056fec64b8040f0e986f2245753c21da9a7efc5f1779a4e73608f7.mp3"
+    },
+    {
       "audio_key": "a75f1f198f020bc1e5475ddf8984271e539fffea9b99e338b946c0cf177803cb",
       "category": "utterances",
       "locale": "en-US",
@@ -22234,6 +22943,11 @@
           "entity_type": "utterance",
           "entity_uuid": "5d54f31d-179a-5c48-94db-2eee51a4d7ea",
           "entity_key": "u_weather_rainy"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "e666bde5-4a21-5d63-a626-6a4a0ac9f917",
+          "entity_key": "ex_weather_listen"
         }
       ],
       "metadata": {},
@@ -22721,6 +23435,117 @@
       "relative_path": "audio/generated/en-US/utterances/bbd2264ce3a76f13cc9a075ead052672182f18beef6d40ba2683a8cffdf26388.mp3"
     },
     {
+      "audio_key": "be6aa0ed98db3d956803e03dd853bcf820919b453d7e818bc63d80ca32840053",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "It's near the bank.",
+      "source_text_hash": "2d1e7d0c57b005c9fd986ca4c33876dac2e306c7fdc6c2360b1b3750663ae5ab",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "fb83b5f4-a2a0-53a6-896a-4b4d4bfe4431",
+          "entity_key": "ex_town_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/be6aa0ed98db3d956803e03dd853bcf820919b453d7e818bc63d80ca32840053.mp3"
+    },
+    {
+      "audio_key": "beff215fefe5d2037fbbffff61841a0d504c5b0dbb7629131c863ccd9dc74a6b",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I'm from France.",
+      "source_text_hash": "bdf63e9b2dfe2e42627f52480cda0170bd78fe3982cab3fadbd47bcb060d7353",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "e39403c3-fd29-5107-b196-a79968245b56",
+          "entity_key": "ex_country_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/beff215fefe5d2037fbbffff61841a0d504c5b0dbb7629131c863ccd9dc74a6b.mp3"
+    },
+    {
+      "audio_key": "c7008cf44b7dc2e8844614897fdd54b2e02223de6e716a9a5cf59c9258cb3b66",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "This is my father.",
+      "source_text_hash": "74b545ad9a665ce147cf0609f25be273007c1989a94b6b7595e6d73d94a65bef",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "10e32694-8e0d-50e3-8892-8a300936359d",
+          "entity_key": "ex_family_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/c7008cf44b7dc2e8844614897fdd54b2e02223de6e716a9a5cf59c9258cb3b66.mp3"
+    },
+    {
       "audio_key": "c70f2e45348ff193b777020a61fa13ca2ffeff4ead97c8e9fcdcc33aa2f90173",
       "category": "utterances",
       "locale": "en-US",
@@ -22900,6 +23725,11 @@
           "entity_type": "utterance",
           "entity_uuid": "fd84fcdf-0b23-5753-953c-85f68ccfe6e2",
           "entity_key": "u_likes_music"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "7d89daeb-e0ac-5d4a-bd4d-2f6665c62e2d",
+          "entity_key": "ex_likes_listen"
         }
       ],
       "metadata": {},
@@ -22978,6 +23808,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/d55d723cb75361f8ac3d279a631a54b8ed14a9324c2664144b0cbb107c84e46a.mp3"
+    },
+    {
+      "audio_key": "d677eaad26ef15a0c4bacb172f6a2e4f0a1c9824029bad52eeb5b608f194f150",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Where do you live?",
+      "source_text_hash": "8a38c81b46381d2693666843c8bd213c5d9be3cb02fd1cf73bba5ae9f84b05de",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "d9129e62-7965-5041-9a28-8d16b266fc9a",
+          "entity_key": "g_fix_question_intonation:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d677eaad26ef15a0c4bacb172f6a2e4f0a1c9824029bad52eeb5b608f194f150.mp3"
     },
     {
       "audio_key": "d77fec1c571b757ea1ccad145fc3b53c8af3aa187a3888468b52a6b25e91c2ee",
@@ -23126,43 +23993,6 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/dd9717140d58fa161737732ad5de8d221f3bec11e2856aa4585426b95a033004.mp3"
-    },
-    {
-      "audio_key": "deeb61c810972f578d0406aa90072cc03bac9ff8497df15357d2d81b688a29e1",
-      "category": "utterances",
-      "locale": "en-US",
-      "text": "I work at an office.",
-      "source_text_hash": "7482c549513d15c7bad2819a3680bd0cd976ecce52166be341681b73f4557002",
-      "voice_key": "en-us.sentence.lori",
-      "voice_spec": {
-        "voice_key": "en-us.sentence.lori",
-        "voice_name": "Lori",
-        "require_exact_name": true,
-        "allow_named_fallback": true,
-        "fallback_required_labels": {
-          "gender": "female"
-        },
-        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
-        "prefer_high_quality": true,
-        "required_language": "en",
-        "preferred_accent": "american",
-        "settings": {
-          "stability": 0.68,
-          "similarity_boost": 0.88,
-          "style": 0.0,
-          "use_speaker_boost": true,
-          "speed": 0.97
-        }
-      },
-      "entity_refs": [
-        {
-          "entity_type": "utterance",
-          "entity_uuid": "cd180822-3db8-54e2-a26d-16829de71433",
-          "entity_key": "u_jobs_office"
-        }
-      ],
-      "metadata": {},
-      "relative_path": "audio/generated/en-US/utterances/deeb61c810972f578d0406aa90072cc03bac9ff8497df15357d2d81b688a29e1.mp3"
     },
     {
       "audio_key": "e11d0b5c3cc5248fac5c1781dbcaba6b33ed5e6d8cc1e000e3fb22b30e8b2ef4",
@@ -23794,6 +24624,43 @@
       "relative_path": "audio/generated/en-US/utterances/ee99893fe76050415615f284ccd7785c44bd10f6b2493fa1b568543b4480a7e4.mp3"
     },
     {
+      "audio_key": "ef7b6aff9b7fbd77df638f2e3b8574136cfba02b703ea27ae2f8687b8fc67c3a",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "He is tall and young.",
+      "source_text_hash": "f8ae9eac4233b7e90249117655dff6cd5844096305dc88e9ffdbd055dc7ff096",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "0aee6288-14f0-5f17-8fd2-ef165908a581",
+          "entity_key": "ex_people_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/ef7b6aff9b7fbd77df638f2e3b8574136cfba02b703ea27ae2f8687b8fc67c3a.mp3"
+    },
+    {
       "audio_key": "ef877b85ad6ccebad94eff465799112ddd49a9c4feb592841dcf07c7e03bb361",
       "category": "utterances",
       "locale": "en-US",
@@ -23825,6 +24692,11 @@
           "entity_type": "utterance",
           "entity_uuid": "c1752b17-c69f-5979-95a5-0421d39a8ead",
           "entity_key": "u_tr_stop"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4a952802-6c8e-577e-8939-59374b2953f0",
+          "entity_key": "ex_tr_listen"
         }
       ],
       "metadata": {},
@@ -23868,43 +24740,6 @@
       "relative_path": "audio/generated/en-US/utterances/ef9be929784daa09c808ab3a94b5a9381401ab1d0243bc117b9a6abe75a136e1.mp3"
     },
     {
-      "audio_key": "f155d60a206e142ffb670eab25543a40c35d204d6b21926b3a0d726dbb3d3d69",
-      "category": "utterances",
-      "locale": "en-US",
-      "text": "Which bus do I take to downtown?",
-      "source_text_hash": "3984efa3d4e36a62bc249d5aabec6573e5ead8b84e93691899b1867c650a1528",
-      "voice_key": "en-us.sentence.lori",
-      "voice_spec": {
-        "voice_key": "en-us.sentence.lori",
-        "voice_name": "Lori",
-        "require_exact_name": true,
-        "allow_named_fallback": true,
-        "fallback_required_labels": {
-          "gender": "female"
-        },
-        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
-        "prefer_high_quality": true,
-        "required_language": "en",
-        "preferred_accent": "american",
-        "settings": {
-          "stability": 0.68,
-          "similarity_boost": 0.88,
-          "style": 0.0,
-          "use_speaker_boost": true,
-          "speed": 0.97
-        }
-      },
-      "entity_refs": [
-        {
-          "entity_type": "utterance",
-          "entity_uuid": "3b730164-0cb9-5850-9f0b-1abe3c9d46e2",
-          "entity_key": "u_tr_which_bus"
-        }
-      ],
-      "metadata": {},
-      "relative_path": "audio/generated/en-US/utterances/f155d60a206e142ffb670eab25543a40c35d204d6b21926b3a0d726dbb3d3d69.mp3"
-    },
-    {
       "audio_key": "f22f15185c4842bc57fccaa16ccf0e9ec20f0f41dd9bd1666bf986ee1371dbb3",
       "category": "utterances",
       "locale": "en-US",
@@ -23940,6 +24775,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/f22f15185c4842bc57fccaa16ccf0e9ec20f0f41dd9bd1666bf986ee1371dbb3.mp3"
+    },
+    {
+      "audio_key": "f314b8e801c12f1857cd806952d6ee222f6f70c3b6ccd559be294c10165eccdf",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Tomorrow is Sunday.",
+      "source_text_hash": "8c6a9d2e09f8a16f990e47189f0589ea5ff4331655bc66ee3a42e64b5953a710",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4e282fa1-6171-5313-891c-327de447ecfe",
+          "entity_key": "ex_cal_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/f314b8e801c12f1857cd806952d6ee222f6f70c3b6ccd559be294c10165eccdf.mp3"
     },
     {
       "audio_key": "f3ec07ff4fb2831ad47ae796df4e1cb0a73bab5fe28a70ee921a313b6710079f",
@@ -24047,6 +24919,11 @@
           "entity_type": "utterance",
           "entity_uuid": "5617935f-550f-5ab6-8d92-7457a03087e1",
           "entity_key": "u_health_headache"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "b4a35c83-2c64-5c3e-a8c5-4b62d75b867c",
+          "entity_key": "ex_health_listen"
         }
       ],
       "metadata": {},
@@ -24125,6 +25002,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/f931bca5b52373babf69a8ea400ad54f54a451f6718f60ef444b0fcaa83fe4ac.mp3"
+    },
+    {
+      "audio_key": "f9544eec2cdf7a090814ffe1f762ea1c1516508b635a2b77898df774cd80e07d",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Do you want to have lunch tomorrow?",
+      "source_text_hash": "045a33ebd7ec0c86bf61437907137151dedd3650f5584468bd6c24cc43704fb7",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "5be05617-c91b-5c53-91fd-977c7202614c",
+          "entity_key": "ex_plan_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/f9544eec2cdf7a090814ffe1f762ea1c1516508b635a2b77898df774cd80e07d.mp3"
     },
     {
       "audio_key": "ff80bd622afd3301931b15040a59e3063a0555219063c3ee848f9d0b02f1ed55",
