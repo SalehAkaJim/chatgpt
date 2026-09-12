@@ -10,9 +10,14 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 from pathlib import Path
 
-from scripts.generate_audio import ROOT, resolve_voice
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from scripts.generate_audio import resolve_voice  # noqa: E402
 
 
 def main() -> None:
