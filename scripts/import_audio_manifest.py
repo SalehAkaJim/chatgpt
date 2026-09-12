@@ -8,7 +8,7 @@ import json
 import os
 import sys
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
 
@@ -36,6 +36,13 @@ def sha_file(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             h.update(chunk)
     return h.hexdigest()
+
+
+def join_storage(prefix: str, relative_path: str) -> str:
+    relative = relative_path.lstrip("/")
+    if prefix.endswith("://"):
+        return prefix + relative
+    return prefix.rstrip("/") + "/" + relative
 
 
 def db_config():
@@ -67,7 +74,7 @@ def parse_generated_at(value):
     try:
         parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
         if parsed.tzinfo:
-            parsed = parsed.astimezone().replace(tzinfo=None)
+            parsed = parsed.astimezone(timezone.utc).replace(tzinfo=None)
         return parsed
     except ValueError:
         return None
@@ -155,7 +162,7 @@ def main():
                     "audio",
                     f"{manifest['locale']}:{ref['entity_uuid']}:{item['voice_key']}:{item['source_text_hash']}"
                 )
-                storage = args.storage_prefix.rstrip("/") + "/" + item["relative_path"].lstrip("/")
+                storage = join_storage(args.storage_prefix, item["relative_path"])
                 payload = json.dumps({
                     "audio_key": item["audio_key"],
                     "entity_key": ref["entity_key"],
