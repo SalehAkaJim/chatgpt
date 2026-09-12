@@ -1,0 +1,23 @@
+{
+  "locale": "de-DE",
+  "policy": {
+    "target_accent": "standard_german",
+    "require_native_quality": true,
+    "require_distinct_character_voices": true,
+    "notes": "Character traits are explicit design decisions. Do not infer voice presentation or accent from names at generation time."
+  },
+  "characters": {
+    "anna": {"display_name": "Anna", "persona": {"voice_presentation": "female", "style": "warm_conversational", "target_accent": "standard_german"}, "voice_profile": "female_warm"},
+    "lukas": {"display_name": "Lukas", "persona": {"voice_presentation": "male", "style": "warm_conversational", "target_accent": "standard_german"}, "voice_profile": "male_warm"},
+    "mia": {"display_name": "Mia", "persona": {"voice_presentation": "female", "style": "bright_social", "target_accent": "standard_german"}, "voice_profile": "female_bright"},
+    "jonas": {"display_name": "Jonas", "persona": {"voice_presentation": "male", "style": "bright_social", "target_accent": "standard_german"}, "voice_profile": "male_bright"},
+    "lea": {"display_name": "Lea", "persona": {"voice_presentation": "female", "style": "calm_clear", "target_accent": "standard_german"}, "voice_profile": "female_calm"},
+    "emil": {"display_name": "Emil", "persona": {"voice_presentation": "male", "style": "calm_clear", "target_accent": "standard_german"}, "voice_profile": "male_calm"},
+    "sofia": {"display_name": "Sofia", "persona": {"voice_presentation": "female", "style": "professional_neutral", "target_accent": "standard_german"}, "voice_profile": "female_professional"},
+    "noah": {"display_name": "Noah", "persona": {"voice_presentation": "male", "style": "professional_neutral", "target_accent": "standard_german"}, "voice_profile": "male_professional"},
+    "nina": {"display_name": "Nina", "persona": {"voice_presentation": "female", "style": "warm_conversational", "target_accent": "standard_german"}, "voice_profile": "female_warm"},
+    "max": {"display_name": "Max", "persona": {"voice_presentation": "male", "style": "warm_conversational", "target_accent": "standard_german"}, "voice_profile": "male_warm"},
+    "clara": {"display_name": "Clara", "persona": {"voice_presentation": "female", "style": "bright_social", "target_accent": "standard_german"}, "voice_profile": "female_bright"},
+    "leon": {"display_name": "Leon", "persona": {"voice_presentation": "male", "style": "bright_social", "target_accent": "standard_german"}, "voice_profile": "male_bright"}
+  }
+}
