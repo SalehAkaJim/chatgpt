@@ -1,0 +1,1008 @@
+{
+  "batch_id": "en-us-c2-causal-complexity-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "C2",
+  "curriculum_unit": "c2-causal-complexity",
+  "generator": "gpt-5.6-sol:golden-dataset-c2-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_c2_causal_complexity_causal",
+      "data": {
+        "slug": "c2_causal_complexity_causal",
+        "lesson_key": "c2-causal-complexity-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "causal"
+        },
+        "translations": {
+          "fa": "علّی"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_causal_complexity_causal",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "lemma": "causal",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c2_causal_complexity_causal"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_causal_complexity_causal",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "lexeme_ref": "lx_c2_causal_complexity_causal",
+        "surface_form": "causal",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_causal_complexity_confounder",
+      "data": {
+        "slug": "c2_causal_complexity_confounder",
+        "lesson_key": "c2-causal-complexity-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "confounder"
+        },
+        "translations": {
+          "fa": "عامل مداخله‌گر"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_causal_complexity_confounder",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "lemma": "confounder",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_causal_complexity_confounder"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_causal_complexity_confounder",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "lexeme_ref": "lx_c2_causal_complexity_confounder",
+        "surface_form": "confounder",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_causal_complexity_mechanism",
+      "data": {
+        "slug": "c2_causal_complexity_mechanism",
+        "lesson_key": "c2-causal-complexity-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "mechanism"
+        },
+        "translations": {
+          "fa": "سازوکار"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_causal_complexity_mechanism",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "lemma": "mechanism",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_causal_complexity_mechanism"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_causal_complexity_mechanism",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "lexeme_ref": "lx_c2_causal_complexity_mechanism",
+        "surface_form": "mechanism",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_causal_complexity_multifactorial",
+      "data": {
+        "slug": "c2_causal_complexity_multifactorial",
+        "lesson_key": "c2-causal-complexity-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "multifactorial"
+        },
+        "translations": {
+          "fa": "چندعاملی"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_causal_complexity_multifactorial",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "lemma": "multifactorial",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c2_causal_complexity_multifactorial"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_causal_complexity_multifactorial",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "lexeme_ref": "lx_c2_causal_complexity_multifactorial",
+        "surface_form": "multifactorial",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_causal_complexity_counterfactual",
+      "data": {
+        "slug": "c2_causal_complexity_counterfactual",
+        "lesson_key": "c2-causal-complexity-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "counterfactual"
+        },
+        "translations": {
+          "fa": "خلاف واقع"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_causal_complexity_counterfactual",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "lemma": "counterfactual",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_causal_complexity_counterfactual"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_causal_complexity_counterfactual",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "lexeme_ref": "lx_c2_causal_complexity_counterfactual",
+        "surface_form": "counterfactual",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_causal_complexity_pathway",
+      "data": {
+        "slug": "c2_causal_complexity_pathway",
+        "lesson_key": "c2-causal-complexity-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "pathway"
+        },
+        "translations": {
+          "fa": "مسیر اثرگذاری"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_causal_complexity_pathway",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "lemma": "pathway",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_causal_complexity_pathway"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_causal_complexity_pathway",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "lexeme_ref": "lx_c2_causal_complexity_pathway",
+        "surface_form": "pathway",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_causal_complexity_mediate",
+      "data": {
+        "slug": "c2_causal_complexity_mediate",
+        "lesson_key": "c2-causal-complexity-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "mediate"
+        },
+        "translations": {
+          "fa": "واسطه اثر شدن"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_causal_complexity_mediate",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "lemma": "mediate",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "c2_causal_complexity_mediate"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_causal_complexity_mediate",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "lexeme_ref": "lx_c2_causal_complexity_mediate",
+        "surface_form": "mediate",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_causal_complexity_contingent",
+      "data": {
+        "slug": "c2_causal_complexity_contingent",
+        "lesson_key": "c2-causal-complexity-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "contingent"
+        },
+        "translations": {
+          "fa": "وابسته به شرایط"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_causal_complexity_contingent",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "lemma": "contingent",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c2_causal_complexity_contingent"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_causal_complexity_contingent",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "lexeme_ref": "lx_c2_causal_complexity_contingent",
+        "surface_form": "contingent",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_causal_complexity_multi",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "text": {
+          "en": "The outcome is clearly multifactorial, so searching for a single decisive cause is likely to distort the explanation."
+        },
+        "translations": {
+          "fa": "نتیجه کاملاً چندعاملیه، پس دنبال یک علت واحد و تعیین‌کننده گشتن احتمالاً توضیح رو تحریف می‌کنه."
+        },
+        "intent": "reject_single_cause",
+        "concept_refs": [
+          "c2_causal_complexity_multifactorial",
+          "c2_causal_complexity_causal"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_causal_complexity_mechanism",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "text": {
+          "en": "A correlation becomes more persuasive when we can identify a plausible mechanism connecting the change to the outcome."
+        },
+        "translations": {
+          "fa": "همبستگی وقتی قانع‌کننده‌تر می‌شه که بتونیم یک سازوکار منطقی بین تغییر و نتیجه پیدا کنیم."
+        },
+        "intent": "identify_mechanism",
+        "concept_refs": [
+          "c2_causal_complexity_mechanism",
+          "c2_causal_complexity_causal"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_causal_complexity_confounder",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "text": {
+          "en": "Seasonality is a possible confounder because it affects both usage and purchasing behavior during the same period."
+        },
+        "translations": {
+          "fa": "فصلی بودن می‌تونه عامل مداخله‌گر باشه چون هم استفاده و هم رفتار خرید رو در همون بازه تغییر می‌ده."
+        },
+        "intent": "identify_confounder",
+        "concept_refs": [
+          "c2_causal_complexity_confounder",
+          "c2_causal_complexity_pathway"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_causal_complexity_pathway",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "text": {
+          "en": "The policy may influence retention indirectly, through a pathway mediated by trust rather than price itself."
+        },
+        "translations": {
+          "fa": "سیاست شاید غیرمستقیم روی ماندگاری اثر بذاره، از مسیری که اعتماد واسطه‌شه نه خود قیمت."
+        },
+        "intent": "trace_pathway",
+        "concept_refs": [
+          "c2_causal_complexity_pathway",
+          "c2_causal_complexity_mediate"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_causal_complexity_counterfactual",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "text": {
+          "en": "The relevant counterfactual is what would probably have happened without the intervention, not what happened before it."
+        },
+        "translations": {
+          "fa": "خلاف‌واقع مرتبط اینه که بدون مداخله احتمالاً چه اتفاقی می‌افتاد، نه صرفاً قبل از مداخله چه اتفاقی افتاده بود."
+        },
+        "intent": "frame_counterfactual",
+        "concept_refs": [
+          "c2_causal_complexity_counterfactual",
+          "c2_causal_complexity_causal"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_causal_complexity_contingent",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "text": {
+          "en": "The effect appears contingent on local capacity, which explains why the same intervention produced different outcomes across sites."
+        },
+        "translations": {
+          "fa": "به نظر می‌رسه اثر به ظرفیت محلی وابسته‌ست و همین توضیح می‌ده چرا یک مداخله در جاهای مختلف نتایج متفاوت داده."
+        },
+        "intent": "explain_contingency",
+        "concept_refs": [
+          "c2_causal_complexity_contingent",
+          "c2_causal_complexity_mechanism"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_causal_complexity_limits",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "text": {
+          "en": "Even a convincing mechanism does not eliminate alternative causes; it simply makes one explanation more coherent with the evidence."
+        },
+        "translations": {
+          "fa": "حتی یک سازوکار قانع‌کننده هم علت‌های جایگزین رو حذف نمی‌کنه؛ فقط یک توضیح رو با شواهد سازگارتر می‌کنه."
+        },
+        "intent": "limit_causal_claim",
+        "concept_refs": [
+          "c2_causal_complexity_mechanism",
+          "c2_causal_complexity_confounder"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_causal_complexity_summary",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "text": {
+          "en": "A strong causal account combines timing, mechanism, counterfactual reasoning and explicit treatment of plausible confounders."
+        },
+        "translations": {
+          "fa": "یک توضیح علّی قوی زمان‌بندی، سازوکار، استدلال خلاف‌واقع و بررسی صریح عوامل مداخله‌گر منطقی رو کنار هم می‌ذاره."
+        },
+        "intent": "synthesize_causal_case",
+        "concept_refs": [
+          "c2_causal_complexity_causal",
+          "c2_causal_complexity_counterfactual",
+          "c2_causal_complexity_confounder"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_causal_complexity_mixed_conditionals",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "slug": "c2-causal-complexity-mixed-conditionals",
+        "title": "Mixed conditionals",
+        "rule_summary": "Combine different time references when a past condition has a present result or a present state explains a past outcome.",
+        "explanation": {
+          "fa": "وقتی شرط و نتیجه به زمان‌های متفاوت مربوط‌اند از mixed conditional استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "If we had invested earlier, we would be in a stronger position now.",
+            "fa": "اگر زودتر سرمایه‌گذاری کرده بودیم، الان موقعیت قوی‌تری داشتیم."
+          },
+          {
+            "en": "If she were less cautious, she might have accepted the offer.",
+            "fa": "اگر این‌قدر محتاط نبود، شاید پیشنهاد را قبول کرده بود."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_causal_complexity_counterfactual_past",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "slug": "c2-causal-complexity-counterfactual-past",
+        "title": "Counterfactual past and regret",
+        "rule_summary": "Use would have, could have, might have, and if only to evaluate unreal past alternatives and their consequences.",
+        "explanation": {
+          "fa": "برای ارزیابی گزینه‌های فرضی در گذشته و پیامدهایشان از would have، could have، might have و if only استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "We could have avoided the delay if the warning had been taken seriously.",
+            "fa": "اگر هشدار جدی گرفته شده بود می‌توانستیم از تأخیر جلوگیری کنیم."
+          },
+          {
+            "en": "If only we had checked the assumptions first.",
+            "fa": "کاش اول فرض‌ها را بررسی کرده بودیم."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_causal_complexity_advanced_hedging",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "slug": "c2-causal-complexity-advanced-hedging",
+        "title": "Advanced hedging and calibration",
+        "rule_summary": "Calibrate certainty with expressions such as arguably, broadly speaking, tends to, appears to, and cannot entirely be ruled out.",
+        "explanation": {
+          "fa": "در C1 میزان قطعیت را با عبارت‌هایی مثل arguably، broadly speaking، tends to، appears to و cannot entirely be ruled out دقیق تنظیم می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The change appears to have improved access, although the evidence is still limited.",
+            "fa": "به نظر می‌رسد این تغییر دسترسی را بهتر کرده، هرچند شواهد هنوز محدود است."
+          },
+          {
+            "en": "That explanation cannot entirely be ruled out.",
+            "fa": "نمی‌توان آن توضیح را کاملاً منتفی دانست."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_causal_complexity_scene_1",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "title": "Causal Complexity & Counterfactual Explanation: part 1",
+        "setting": "strategy meeting",
+        "cefr": "C2",
+        "topic": "requests",
+        "characters": [
+          "Mei",
+          "Omar"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mei",
+            "text": "What do you make of the way this is being framed?",
+            "translation_fa": "از نحوه مطرح شدن این موضوع چه برداشتی داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Omar",
+            "text": "The outcome is clearly multifactorial, so searching for a single decisive cause is likely to distort the explanation.",
+            "translation_fa": "نتیجه کاملاً چندعاملیه، پس دنبال یک علت واحد و تعیین‌کننده گشتن احتمالاً توضیح رو تحریف می‌کنه."
+          },
+          {
+            "order": 3,
+            "speaker": "Mei",
+            "text": "Is there another interpretation we should keep in view?",
+            "translation_fa": "تفسیر دیگه‌ای هست که باید در نظر داشته باشیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Omar",
+            "text": "A correlation becomes more persuasive when we can identify a plausible mechanism connecting the change to the outcome.",
+            "translation_fa": "همبستگی وقتی قانع‌کننده‌تر می‌شه که بتونیم یک سازوکار منطقی بین تغییر و نتیجه پیدا کنیم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_causal_complexity_scene_2",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "title": "Causal Complexity & Counterfactual Explanation: part 2",
+        "setting": "seminar break",
+        "cefr": "C2",
+        "topic": "requests",
+        "characters": [
+          "Ava",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ava",
+            "text": "Which assumption is doing most of the work here?",
+            "translation_fa": "کدوم فرض بیشترین نقش رو در این استدلال داره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "Seasonality is a possible confounder because it affects both usage and purchasing behavior during the same period.",
+            "translation_fa": "فصلی بودن می‌تونه عامل مداخله‌گر باشه چون هم استفاده و هم رفتار خرید رو در همون بازه تغییر می‌ده."
+          },
+          {
+            "order": 3,
+            "speaker": "Ava",
+            "text": "How would the conclusion change if that assumption failed?",
+            "translation_fa": "اگر اون فرض برقرار نباشه نتیجه چطور عوض می‌شه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "The policy may influence retention indirectly, through a pathway mediated by trust rather than price itself.",
+            "translation_fa": "سیاست شاید غیرمستقیم روی ماندگاری اثر بذاره، از مسیری که اعتماد واسطه‌شه نه خود قیمت."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_causal_complexity_scene_3",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "title": "Causal Complexity & Counterfactual Explanation: part 3",
+        "setting": "podcast planning call",
+        "cefr": "C2",
+        "topic": "requests",
+        "characters": [
+          "Claire",
+          "Diego"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Claire",
+            "text": "Where do you think the strongest part of the case is?",
+            "translation_fa": "فکر می‌کنی قوی‌ترین بخش استدلال کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Diego",
+            "text": "The relevant counterfactual is what would probably have happened without the intervention, not what happened before it.",
+            "translation_fa": "خلاف‌واقع مرتبط اینه که بدون مداخله احتمالاً چه اتفاقی می‌افتاد، نه صرفاً قبل از مداخله چه اتفاقی افتاده بود."
+          },
+          {
+            "order": 3,
+            "speaker": "Claire",
+            "text": "And where would you qualify it?",
+            "translation_fa": "و کجاش رو با احتیاط یا قید بیشتری بیان می‌کردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Diego",
+            "text": "The effect appears contingent on local capacity, which explains why the same intervention produced different outcomes across sites.",
+            "translation_fa": "به نظر می‌رسه اثر به ظرفیت محلی وابسته‌ست و همین توضیح می‌ده چرا یک مداخله در جاهای مختلف نتایج متفاوت داده."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_fill",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Seasonality may be a ___ affecting both variables."
+        },
+        "options": [
+          "confounder",
+          "mechanism",
+          "pathway",
+          "warrant"
+        ],
+        "answer": {
+          "value": "confounder"
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_listen1",
+      "data": {
+        "lesson_key": "c2-causal-complexity-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "A correlation becomes more persuasive when we can identify a plausible mechanism connecting the change to the outcome."
+        },
+        "options": [
+          "همبستگی وقتی قانع‌کننده‌تر می‌شه که بتونیم یک سازوکار منطقی بین تغییر و نتیجه پیدا کنیم.",
+          "نتیجه کاملاً چندعاملیه، پس دنبال یک علت واحد و تعیین‌کننده گشتن احتمالاً توضیح رو تحریف می‌کنه.",
+          "خلاف‌واقع مرتبط اینه که بدون مداخله احتمالاً چه اتفاقی می‌افتاد، نه صرفاً قبل از مداخله چه اتفاقی افتاده بود.",
+          "حتی یک سازوکار قانع‌کننده هم علت‌های جایگزین رو حذف نمی‌کنه؛ فقط یک توضیح رو با شواهد سازگارتر می‌کنه."
+        ],
+        "answer": {
+          "value": "همبستگی وقتی قانع‌کننده‌تر می‌شه که بتونیم یک سازوکار منطقی بین تغییر و نتیجه پیدا کنیم."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_speak1",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: فصلی بودن می‌تونه عامل مداخله‌گر باشه چون هم استفاده و هم رفتار خرید رو در همون بازه تغییر می‌ده."
+        },
+        "answer": {
+          "expected_text": "Seasonality is a possible confounder because it affects both usage and purchasing behavior during the same period."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_build1",
+      "data": {
+        "lesson_key": "c2-causal-complexity-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "سیاست شاید غیرمستقیم روی ماندگاری اثر بذاره، از مسیری که اعتماد واسطه‌شه نه خود قیمت.",
+          "tokens": [
+            "itself.",
+            "price",
+            "than",
+            "rather",
+            "trust",
+            "by",
+            "mediated",
+            "pathway",
+            "a",
+            "through",
+            "indirectly,",
+            "retention",
+            "influence",
+            "may",
+            "policy",
+            "The"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "The",
+            "policy",
+            "may",
+            "influence",
+            "retention",
+            "indirectly,",
+            "through",
+            "a",
+            "pathway",
+            "mediated",
+            "by",
+            "trust",
+            "rather",
+            "than",
+            "price",
+            "itself."
+          ],
+          "text": "The policy may influence retention indirectly, through a pathway mediated by trust rather than price itself."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_meaning",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "The relevant counterfactual is what would probably have happened without the intervention, not what happened before it."
+        },
+        "options": [
+          "خلاف‌واقع مرتبط اینه که بدون مداخله احتمالاً چه اتفاقی می‌افتاد، نه صرفاً قبل از مداخله چه اتفاقی افتاده بود.",
+          "فصلی بودن می‌تونه عامل مداخله‌گر باشه چون هم استفاده و هم رفتار خرید رو در همون بازه تغییر می‌ده.",
+          "حتی یک سازوکار قانع‌کننده هم علت‌های جایگزین رو حذف نمی‌کنه؛ فقط یک توضیح رو با شواهد سازگارتر می‌کنه.",
+          "نتیجه کاملاً چندعاملیه، پس دنبال یک علت واحد و تعیین‌کننده گشتن احتمالاً توضیح رو تحریف می‌کنه."
+        ],
+        "answer": {
+          "value": "خلاف‌واقع مرتبط اینه که بدون مداخله احتمالاً چه اتفاقی می‌افتاد، نه صرفاً قبل از مداخله چه اتفاقی افتاده بود."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_listen2",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "The effect appears contingent on local capacity, which explains why the same intervention produced different outcomes across sites."
+        },
+        "options": [
+          "به نظر می‌رسه اثر به ظرفیت محلی وابسته‌ست و همین توضیح می‌ده چرا یک مداخله در جاهای مختلف نتایج متفاوت داده.",
+          "همبستگی وقتی قانع‌کننده‌تر می‌شه که بتونیم یک سازوکار منطقی بین تغییر و نتیجه پیدا کنیم.",
+          "سیاست شاید غیرمستقیم روی ماندگاری اثر بذاره، از مسیری که اعتماد واسطه‌شه نه خود قیمت.",
+          "یک توضیح علّی قوی زمان‌بندی، سازوکار، استدلال خلاف‌واقع و بررسی صریح عوامل مداخله‌گر منطقی رو کنار هم می‌ذاره."
+        ],
+        "answer": {
+          "value": "به نظر می‌رسه اثر به ظرفیت محلی وابسته‌ست و همین توضیح می‌ده چرا یک مداخله در جاهای مختلف نتایج متفاوت داده."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_speak2",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: حتی یک سازوکار قانع‌کننده هم علت‌های جایگزین رو حذف نمی‌کنه؛ فقط یک توضیح رو با شواهد سازگارتر می‌کنه."
+        },
+        "answer": {
+          "expected_text": "Even a convincing mechanism does not eliminate alternative causes; it simply makes one explanation more coherent with the evidence."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_build2",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "یک توضیح علّی قوی زمان‌بندی، سازوکار، استدلال خلاف‌واقع و بررسی صریح عوامل مداخله‌گر منطقی رو کنار هم می‌ذاره.",
+          "tokens": [
+            "confounders.",
+            "plausible",
+            "of",
+            "treatment",
+            "explicit",
+            "and",
+            "reasoning",
+            "counterfactual",
+            "mechanism,",
+            "timing,",
+            "combines",
+            "account",
+            "causal",
+            "strong",
+            "A"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "A",
+            "strong",
+            "causal",
+            "account",
+            "combines",
+            "timing,",
+            "mechanism,",
+            "counterfactual",
+            "reasoning",
+            "and",
+            "explicit",
+            "treatment",
+            "of",
+            "plausible",
+            "confounders."
+          ],
+          "text": "A strong causal account combines timing, mechanism, counterfactual reasoning and explicit treatment of plausible confounders."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    }
+  ]
+}

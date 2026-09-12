@@ -1,0 +1,1022 @@
+{
+  "batch_id": "en-us-c2-sustained-argument-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "C2",
+  "curriculum_unit": "c2-sustained-argument",
+  "generator": "gpt-5.6-sol:golden-dataset-c2-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_c2_sustained_argument_proposition",
+      "data": {
+        "slug": "c2_sustained_argument_proposition",
+        "lesson_key": "c2-sustained-argument-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "proposition"
+        },
+        "translations": {
+          "fa": "گزاره"
+        },
+        "cefr": "C2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_sustained_argument_proposition",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "lemma": "proposition",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_sustained_argument_proposition"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_sustained_argument_proposition",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "lexeme_ref": "lx_c2_sustained_argument_proposition",
+        "surface_form": "proposition",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_sustained_argument_line_of_reasoning",
+      "data": {
+        "slug": "c2_sustained_argument_line_of_reasoning",
+        "lesson_key": "c2-sustained-argument-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "line of reasoning"
+        },
+        "translations": {
+          "fa": "خط استدلال"
+        },
+        "cefr": "C2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_sustained_argument_line_of_reasoning",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "lemma": "line of reasoning",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun_phrase",
+        "concept_refs": [
+          "c2_sustained_argument_line_of_reasoning"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_sustained_argument_line_of_reasoning",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "lexeme_ref": "lx_c2_sustained_argument_line_of_reasoning",
+        "surface_form": "line of reasoning",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_sustained_argument_rebuttal",
+      "data": {
+        "slug": "c2_sustained_argument_rebuttal",
+        "lesson_key": "c2-sustained-argument-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "rebuttal"
+        },
+        "translations": {
+          "fa": "پاسخ استدلالی"
+        },
+        "cefr": "C2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_sustained_argument_rebuttal",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "lemma": "rebuttal",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_sustained_argument_rebuttal"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_sustained_argument_rebuttal",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "lexeme_ref": "lx_c2_sustained_argument_rebuttal",
+        "surface_form": "rebuttal",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_sustained_argument_counterexample",
+      "data": {
+        "slug": "c2_sustained_argument_counterexample",
+        "lesson_key": "c2-sustained-argument-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "counterexample"
+        },
+        "translations": {
+          "fa": "مثال نقض"
+        },
+        "cefr": "C2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_sustained_argument_counterexample",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "lemma": "counterexample",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_sustained_argument_counterexample"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_sustained_argument_counterexample",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "lexeme_ref": "lx_c2_sustained_argument_counterexample",
+        "surface_form": "counterexample",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_sustained_argument_signpost",
+      "data": {
+        "slug": "c2_sustained_argument_signpost",
+        "lesson_key": "c2-sustained-argument-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "signpost"
+        },
+        "translations": {
+          "fa": "نشانه‌گذاری مسیر بحث"
+        },
+        "cefr": "C2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_sustained_argument_signpost",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "lemma": "signpost",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "c2_sustained_argument_signpost"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_sustained_argument_signpost",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "lexeme_ref": "lx_c2_sustained_argument_signpost",
+        "surface_form": "signpost",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_sustained_argument_cumulative",
+      "data": {
+        "slug": "c2_sustained_argument_cumulative",
+        "lesson_key": "c2-sustained-argument-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "cumulative"
+        },
+        "translations": {
+          "fa": "تجمعی"
+        },
+        "cefr": "C2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_sustained_argument_cumulative",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "lemma": "cumulative",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c2_sustained_argument_cumulative"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_sustained_argument_cumulative",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "lexeme_ref": "lx_c2_sustained_argument_cumulative",
+        "surface_form": "cumulative",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_sustained_argument_coherence",
+      "data": {
+        "slug": "c2_sustained_argument_coherence",
+        "lesson_key": "c2-sustained-argument-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "coherence"
+        },
+        "translations": {
+          "fa": "انسجام"
+        },
+        "cefr": "C2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_sustained_argument_coherence",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "lemma": "coherence",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_sustained_argument_coherence"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_sustained_argument_coherence",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "lexeme_ref": "lx_c2_sustained_argument_coherence",
+        "surface_form": "coherence",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_sustained_argument_implication",
+      "data": {
+        "slug": "c2_sustained_argument_implication",
+        "lesson_key": "c2-sustained-argument-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "implication"
+        },
+        "translations": {
+          "fa": "پیامد"
+        },
+        "cefr": "C2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_sustained_argument_implication",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "lemma": "implication",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_sustained_argument_implication"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_sustained_argument_implication",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "lexeme_ref": "lx_c2_sustained_argument_implication",
+        "surface_form": "implication",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_sustained_argument_proposition",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "text": {
+          "en": "My central proposition is narrow: the policy is defensible only if the review mechanism remains independent."
+        },
+        "translations": {
+          "fa": "گزاره مرکزی من محدوده: سیاست فقط وقتی قابل دفاعه که سازوکار بازبینی مستقل بمونه."
+        },
+        "intent": "state_core_proposition",
+        "concept_refs": [
+          "c2_sustained_argument_proposition",
+          "c2_sustained_argument_coherence"
+        ],
+        "cefr": "C2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_sustained_argument_signpost",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "text": {
+          "en": "Before turning to the counterargument, let me signpost the two steps that connect the evidence to the recommendation."
+        },
+        "translations": {
+          "fa": "قبل از رفتن سراغ استدلال مخالف، دو مرحله‌ای که شواهد رو به توصیه وصل می‌کنن روشن می‌کنم."
+        },
+        "intent": "signpost_argument",
+        "concept_refs": [
+          "c2_sustained_argument_signpost",
+          "c2_sustained_argument_line_of_reasoning"
+        ],
+        "cefr": "C2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_sustained_argument_cumulative",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "text": {
+          "en": "No single item is decisive; the case is cumulative, with several moderate reasons pointing in the same direction."
+        },
+        "translations": {
+          "fa": "هیچ موردی به‌تنهایی تعیین‌کننده نیست؛ استدلال تجمعیه و چند دلیل متوسط همگی به یک جهت اشاره می‌کنن."
+        },
+        "intent": "build_cumulative_case",
+        "concept_refs": [
+          "c2_sustained_argument_cumulative",
+          "c2_sustained_argument_line_of_reasoning"
+        ],
+        "cefr": "C2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_sustained_argument_counterexample",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "text": {
+          "en": "The counterexample does not destroy the proposition, but it forces us to define its scope more carefully."
+        },
+        "translations": {
+          "fa": "مثال نقض گزاره رو نابود نمی‌کنه، ولی مجبورمون می‌کنه دامنه‌اش رو دقیق‌تر تعریف کنیم."
+        },
+        "intent": "handle_counterexample",
+        "concept_refs": [
+          "c2_sustained_argument_counterexample",
+          "c2_sustained_argument_proposition"
+        ],
+        "cefr": "C2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_sustained_argument_rebuttal",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "text": {
+          "en": "The rebuttal succeeds only if it answers the objection's strongest form rather than changing the subject."
+        },
+        "translations": {
+          "fa": "پاسخ استدلالی فقط وقتی موفقه که قوی‌ترین نسخه ایراد رو جواب بده نه اینکه موضوع رو عوض کنه."
+        },
+        "intent": "deliver_rebuttal",
+        "concept_refs": [
+          "c2_sustained_argument_rebuttal",
+          "c2_sustained_argument_coherence"
+        ],
+        "cefr": "C2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_sustained_argument_implication",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "text": {
+          "en": "If that premise is accepted, the implication is broader than the author acknowledges because it affects the funding model as well."
+        },
+        "translations": {
+          "fa": "اگر اون پیش‌فرض پذیرفته بشه، پیامدش از چیزی که نویسنده قبول داره گسترده‌تره چون مدل تأمین مالی رو هم تحت‌تأثیر قرار می‌ده."
+        },
+        "intent": "extend_implication",
+        "concept_refs": [
+          "c2_sustained_argument_implication",
+          "c2_sustained_argument_proposition"
+        ],
+        "cefr": "C2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_sustained_argument_coherence",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "text": {
+          "en": "The argument is coherent because each section advances the same line of reasoning rather than adding unrelated good points."
+        },
+        "translations": {
+          "fa": "استدلال منسجمه چون هر بخش همون خط استدلال رو جلو می‌بره نه اینکه نکته‌های خوب ولی نامرتبط اضافه کنه."
+        },
+        "intent": "maintain_coherence",
+        "concept_refs": [
+          "c2_sustained_argument_coherence",
+          "c2_sustained_argument_line_of_reasoning"
+        ],
+        "cefr": "C2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_sustained_argument_summary",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "text": {
+          "en": "A sustained argument controls scope, sequence and rebuttal so the listener always knows what has been established and what remains contested."
+        },
+        "translations": {
+          "fa": "استدلال پیوسته دامنه، توالی و پاسخ به اعتراض رو کنترل می‌کنه تا شنونده همیشه بدونه چی ثابت شده و چی هنوز محل اختلافه."
+        },
+        "intent": "summarize_sustained_argument",
+        "concept_refs": [
+          "c2_sustained_argument_rebuttal",
+          "c2_sustained_argument_signpost",
+          "c2_sustained_argument_coherence"
+        ],
+        "cefr": "C2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_sustained_argument_discourse_management",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "slug": "c2-sustained-argument-discourse-management",
+        "title": "Managing complex discourse",
+        "rule_summary": "Use signposting and metadiscourse to frame, sequence, return to, and close complex points without losing the listener.",
+        "explanation": {
+          "fa": "با signposting و metadiscourse نکات پیچیده را قاب‌بندی، مرتب، دوباره جمع و نتیجه‌گیری می‌کنیم تا شنونده مسیر بحث را گم نکند."
+        },
+        "examples": [
+          {
+            "en": "Before I come back to that point, let me clarify one assumption.",
+            "fa": "قبل از اینکه به آن نکته برگردم، بگذار یک فرض را روشن کنم."
+          },
+          {
+            "en": "That brings us to the broader question of accountability.",
+            "fa": "این ما را به پرسش گسترده‌تر پاسخ‌گویی می‌رساند."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_sustained_argument_cleft_sentences",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "slug": "c2-sustained-argument-cleft-sentences",
+        "title": "Cleft sentences for focus",
+        "rule_summary": "Use what-clauses and it-clefts to place deliberate emphasis on the most important part of a message.",
+        "explanation": {
+          "fa": "با what-clause و it-cleft بخش مهم پیام را برجسته می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "What concerns me most is the lack of independent oversight.",
+            "fa": "چیزی که بیشتر نگرانم می‌کند نبود نظارت مستقل است."
+          },
+          {
+            "en": "It was the timing, rather than the decision itself, that caused the problem.",
+            "fa": "زمان‌بندی بود، نه خود تصمیم، که مشکل را ایجاد کرد."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_sustained_argument_concession_rebuttal",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "slug": "c2-sustained-argument-concession-rebuttal",
+        "title": "Concession followed by rebuttal",
+        "rule_summary": "Acknowledge a reasonable opposing point before limiting it or presenting a stronger counterargument.",
+        "explanation": {
+          "fa": "ابتدا یک نکته منطقی از طرف مقابل را می‌پذیریم و سپس دامنه آن را محدود می‌کنیم یا پاسخ قوی‌تری می‌دهیم."
+        },
+        "examples": [
+          {
+            "en": "Granted, the process is faster; that does not necessarily make it fairer.",
+            "fa": "درست است که روند سریع‌تر است؛ اما لزوماً عادلانه‌تر نیست."
+          },
+          {
+            "en": "While that concern is valid, it overlooks the cost of doing nothing.",
+            "fa": "با اینکه آن نگرانی معتبر است، هزینه هیچ کاری نکردن را نادیده می‌گیرد."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_sustained_argument_scene_1",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "title": "Sustained Argument, Signposting & Rebuttal: part 1",
+        "setting": "strategy meeting",
+        "cefr": "C2",
+        "topic": "questions",
+        "characters": [
+          "Noor",
+          "Liam"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Noor",
+            "text": "What do you make of the way this is being framed?",
+            "translation_fa": "از نحوه مطرح شدن این موضوع چه برداشتی داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Liam",
+            "text": "My central proposition is narrow: the policy is defensible only if the review mechanism remains independent.",
+            "translation_fa": "گزاره مرکزی من محدوده: سیاست فقط وقتی قابل دفاعه که سازوکار بازبینی مستقل بمونه."
+          },
+          {
+            "order": 3,
+            "speaker": "Noor",
+            "text": "Is there another interpretation we should keep in view?",
+            "translation_fa": "تفسیر دیگه‌ای هست که باید در نظر داشته باشیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Liam",
+            "text": "Before turning to the counterargument, let me signpost the two steps that connect the evidence to the recommendation.",
+            "translation_fa": "قبل از رفتن سراغ استدلال مخالف، دو مرحله‌ای که شواهد رو به توصیه وصل می‌کنن روشن می‌کنم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_sustained_argument_scene_2",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "title": "Sustained Argument, Signposting & Rebuttal: part 2",
+        "setting": "seminar break",
+        "cefr": "C2",
+        "topic": "questions",
+        "characters": [
+          "Leila",
+          "Adam"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Leila",
+            "text": "Which assumption is doing most of the work here?",
+            "translation_fa": "کدوم فرض بیشترین نقش رو در این استدلال داره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Adam",
+            "text": "No single item is decisive; the case is cumulative, with several moderate reasons pointing in the same direction.",
+            "translation_fa": "هیچ موردی به‌تنهایی تعیین‌کننده نیست؛ استدلال تجمعیه و چند دلیل متوسط همگی به یک جهت اشاره می‌کنن."
+          },
+          {
+            "order": 3,
+            "speaker": "Leila",
+            "text": "How would the conclusion change if that assumption failed?",
+            "translation_fa": "اگر اون فرض برقرار نباشه نتیجه چطور عوض می‌شه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Adam",
+            "text": "The counterexample does not destroy the proposition, but it forces us to define its scope more carefully.",
+            "translation_fa": "مثال نقض گزاره رو نابود نمی‌کنه، ولی مجبورمون می‌کنه دامنه‌اش رو دقیق‌تر تعریف کنیم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_sustained_argument_scene_3",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "title": "Sustained Argument, Signposting & Rebuttal: part 3",
+        "setting": "podcast planning call",
+        "cefr": "C2",
+        "topic": "questions",
+        "characters": [
+          "Maya",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "Where do you think the strongest part of the case is?",
+            "translation_fa": "فکر می‌کنی قوی‌ترین بخش استدلال کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "The rebuttal succeeds only if it answers the objection's strongest form rather than changing the subject.",
+            "translation_fa": "پاسخ استدلالی فقط وقتی موفقه که قوی‌ترین نسخه ایراد رو جواب بده نه اینکه موضوع رو عوض کنه."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "And where would you qualify it?",
+            "translation_fa": "و کجاش رو با احتیاط یا قید بیشتری بیان می‌کردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "If that premise is accepted, the implication is broader than the author acknowledges because it affects the funding model as well.",
+            "translation_fa": "اگر اون پیش‌فرض پذیرفته بشه، پیامدش از چیزی که نویسنده قبول داره گسترده‌تره چون مدل تأمین مالی رو هم تحت‌تأثیر قرار می‌ده."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_sustained_argument_fill",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "The argument is ___: no single piece of evidence is decisive."
+        },
+        "options": [
+          "cumulative",
+          "categorical",
+          "transactional",
+          "equivocal"
+        ],
+        "answer": {
+          "value": "cumulative"
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_sustained_argument_listen1",
+      "data": {
+        "lesson_key": "c2-sustained-argument-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Before turning to the counterargument, let me signpost the two steps that connect the evidence to the recommendation."
+        },
+        "options": [
+          "قبل از رفتن سراغ استدلال مخالف، دو مرحله‌ای که شواهد رو به توصیه وصل می‌کنن روشن می‌کنم.",
+          "گزاره مرکزی من محدوده: سیاست فقط وقتی قابل دفاعه که سازوکار بازبینی مستقل بمونه.",
+          "پاسخ استدلالی فقط وقتی موفقه که قوی‌ترین نسخه ایراد رو جواب بده نه اینکه موضوع رو عوض کنه.",
+          "استدلال منسجمه چون هر بخش همون خط استدلال رو جلو می‌بره نه اینکه نکته‌های خوب ولی نامرتبط اضافه کنه."
+        ],
+        "answer": {
+          "value": "قبل از رفتن سراغ استدلال مخالف، دو مرحله‌ای که شواهد رو به توصیه وصل می‌کنن روشن می‌کنم."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_sustained_argument_speak1",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: هیچ موردی به‌تنهایی تعیین‌کننده نیست؛ استدلال تجمعیه و چند دلیل متوسط همگی به یک جهت اشاره می‌کنن."
+        },
+        "answer": {
+          "expected_text": "No single item is decisive; the case is cumulative, with several moderate reasons pointing in the same direction."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_sustained_argument_build1",
+      "data": {
+        "lesson_key": "c2-sustained-argument-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "مثال نقض گزاره رو نابود نمی‌کنه، ولی مجبورمون می‌کنه دامنه‌اش رو دقیق‌تر تعریف کنیم.",
+          "tokens": [
+            "carefully.",
+            "more",
+            "scope",
+            "its",
+            "define",
+            "to",
+            "us",
+            "forces",
+            "it",
+            "but",
+            "proposition,",
+            "the",
+            "destroy",
+            "not",
+            "does",
+            "counterexample",
+            "The"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "The",
+            "counterexample",
+            "does",
+            "not",
+            "destroy",
+            "the",
+            "proposition,",
+            "but",
+            "it",
+            "forces",
+            "us",
+            "to",
+            "define",
+            "its",
+            "scope",
+            "more",
+            "carefully."
+          ],
+          "text": "The counterexample does not destroy the proposition, but it forces us to define its scope more carefully."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_sustained_argument_meaning",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "The rebuttal succeeds only if it answers the objection's strongest form rather than changing the subject."
+        },
+        "options": [
+          "پاسخ استدلالی فقط وقتی موفقه که قوی‌ترین نسخه ایراد رو جواب بده نه اینکه موضوع رو عوض کنه.",
+          "هیچ موردی به‌تنهایی تعیین‌کننده نیست؛ استدلال تجمعیه و چند دلیل متوسط همگی به یک جهت اشاره می‌کنن.",
+          "استدلال منسجمه چون هر بخش همون خط استدلال رو جلو می‌بره نه اینکه نکته‌های خوب ولی نامرتبط اضافه کنه.",
+          "گزاره مرکزی من محدوده: سیاست فقط وقتی قابل دفاعه که سازوکار بازبینی مستقل بمونه."
+        ],
+        "answer": {
+          "value": "پاسخ استدلالی فقط وقتی موفقه که قوی‌ترین نسخه ایراد رو جواب بده نه اینکه موضوع رو عوض کنه."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_sustained_argument_listen2",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "If that premise is accepted, the implication is broader than the author acknowledges because it affects the funding model as well."
+        },
+        "options": [
+          "اگر اون پیش‌فرض پذیرفته بشه، پیامدش از چیزی که نویسنده قبول داره گسترده‌تره چون مدل تأمین مالی رو هم تحت‌تأثیر قرار می‌ده.",
+          "قبل از رفتن سراغ استدلال مخالف، دو مرحله‌ای که شواهد رو به توصیه وصل می‌کنن روشن می‌کنم.",
+          "مثال نقض گزاره رو نابود نمی‌کنه، ولی مجبورمون می‌کنه دامنه‌اش رو دقیق‌تر تعریف کنیم.",
+          "استدلال پیوسته دامنه، توالی و پاسخ به اعتراض رو کنترل می‌کنه تا شنونده همیشه بدونه چی ثابت شده و چی هنوز محل اختلافه."
+        ],
+        "answer": {
+          "value": "اگر اون پیش‌فرض پذیرفته بشه، پیامدش از چیزی که نویسنده قبول داره گسترده‌تره چون مدل تأمین مالی رو هم تحت‌تأثیر قرار می‌ده."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_sustained_argument_speak2",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: استدلال منسجمه چون هر بخش همون خط استدلال رو جلو می‌بره نه اینکه نکته‌های خوب ولی نامرتبط اضافه کنه."
+        },
+        "answer": {
+          "expected_text": "The argument is coherent because each section advances the same line of reasoning rather than adding unrelated good points."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_sustained_argument_build2",
+      "data": {
+        "lesson_key": "c2-sustained-argument-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "استدلال پیوسته دامنه، توالی و پاسخ به اعتراض رو کنترل می‌کنه تا شنونده همیشه بدونه چی ثابت شده و چی هنوز محل اختلافه.",
+          "tokens": [
+            "contested.",
+            "remains",
+            "what",
+            "and",
+            "established",
+            "been",
+            "has",
+            "what",
+            "knows",
+            "always",
+            "listener",
+            "the",
+            "so",
+            "rebuttal",
+            "and",
+            "sequence",
+            "scope,",
+            "controls",
+            "argument",
+            "sustained",
+            "A"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "A",
+            "sustained",
+            "argument",
+            "controls",
+            "scope,",
+            "sequence",
+            "and",
+            "rebuttal",
+            "so",
+            "the",
+            "listener",
+            "always",
+            "knows",
+            "what",
+            "has",
+            "been",
+            "established",
+            "and",
+            "what",
+            "remains",
+            "contested."
+          ],
+          "text": "A sustained argument controls scope, sequence and rebuttal so the listener always knows what has been established and what remains contested."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    }
+  ]
+}

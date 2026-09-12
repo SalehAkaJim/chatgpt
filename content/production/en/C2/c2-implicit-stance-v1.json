@@ -1,0 +1,1015 @@
+{
+  "batch_id": "en-us-c2-implicit-stance-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "C2",
+  "curriculum_unit": "c2-implicit-stance",
+  "generator": "gpt-5.6-sol:golden-dataset-c2-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_c2_implicit_stance_equivocal",
+      "data": {
+        "slug": "c2_implicit_stance_equivocal",
+        "lesson_key": "c2-implicit-stance-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "equivocal"
+        },
+        "translations": {
+          "fa": "دوپهلو / نامطمئن"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_implicit_stance_equivocal",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "lemma": "equivocal",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c2_implicit_stance_equivocal"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_implicit_stance_equivocal",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "lexeme_ref": "lx_c2_implicit_stance_equivocal",
+        "surface_form": "equivocal",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_implicit_stance_tacit",
+      "data": {
+        "slug": "c2_implicit_stance_tacit",
+        "lesson_key": "c2-implicit-stance-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "tacit"
+        },
+        "translations": {
+          "fa": "ضمنی و ناگفته"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_implicit_stance_tacit",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "lemma": "tacit",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c2_implicit_stance_tacit"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_implicit_stance_tacit",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "lexeme_ref": "lx_c2_implicit_stance_tacit",
+        "surface_form": "tacit",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_implicit_stance_stance",
+      "data": {
+        "slug": "c2_implicit_stance_stance",
+        "lesson_key": "c2-implicit-stance-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "stance"
+        },
+        "translations": {
+          "fa": "موضع"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_implicit_stance_stance",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "lemma": "stance",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_implicit_stance_stance"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_implicit_stance_stance",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "lexeme_ref": "lx_c2_implicit_stance_stance",
+        "surface_form": "stance",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_implicit_stance_hedge",
+      "data": {
+        "slug": "c2_implicit_stance_hedge",
+        "lesson_key": "c2-implicit-stance-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "hedge"
+        },
+        "translations": {
+          "fa": "با احتیاط محدود کردن ادعا"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_implicit_stance_hedge",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "lemma": "hedge",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "c2_implicit_stance_hedge"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_implicit_stance_hedge",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "lexeme_ref": "lx_c2_implicit_stance_hedge",
+        "surface_form": "hedge",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_implicit_stance_undertone",
+      "data": {
+        "slug": "c2_implicit_stance_undertone",
+        "lesson_key": "c2-implicit-stance-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "undertone"
+        },
+        "translations": {
+          "fa": "لحن پنهان"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_implicit_stance_undertone",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "lemma": "undertone",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_implicit_stance_undertone"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_implicit_stance_undertone",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "lexeme_ref": "lx_c2_implicit_stance_undertone",
+        "surface_form": "undertone",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_implicit_stance_infer",
+      "data": {
+        "slug": "c2_implicit_stance_infer",
+        "lesson_key": "c2-implicit-stance-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "infer"
+        },
+        "translations": {
+          "fa": "استنباط کردن"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_implicit_stance_infer",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "lemma": "infer",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "c2_implicit_stance_infer"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_implicit_stance_infer",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "lexeme_ref": "lx_c2_implicit_stance_infer",
+        "surface_form": "infer",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_implicit_stance_disavow",
+      "data": {
+        "slug": "c2_implicit_stance_disavow",
+        "lesson_key": "c2-implicit-stance-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "disavow"
+        },
+        "translations": {
+          "fa": "صریحاً فاصله گرفتن از یک دیدگاه"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_implicit_stance_disavow",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "lemma": "disavow",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "c2_implicit_stance_disavow"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_implicit_stance_disavow",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "lexeme_ref": "lx_c2_implicit_stance_disavow",
+        "surface_form": "disavow",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c2_implicit_stance_alignment",
+      "data": {
+        "slug": "c2_implicit_stance_alignment",
+        "lesson_key": "c2-implicit-stance-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "alignment"
+        },
+        "translations": {
+          "fa": "هم‌راستایی"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c2_implicit_stance_alignment",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "lemma": "alignment",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c2_implicit_stance_alignment"
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c2_implicit_stance_alignment",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "lexeme_ref": "lx_c2_implicit_stance_alignment",
+        "surface_form": "alignment",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_implicit_stance_equivocal",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "text": {
+          "en": "Her answer is deliberately equivocal: it leaves room for cooperation without committing her to the proposal itself."
+        },
+        "translations": {
+          "fa": "جوابش عمداً دوپهلوئه: راه همکاری رو باز می‌ذاره بدون اینکه خودش رو به خود پیشنهاد متعهد کنه."
+        },
+        "intent": "interpret_equivocation",
+        "concept_refs": [
+          "c2_implicit_stance_equivocal",
+          "c2_implicit_stance_stance"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_implicit_stance_tacit",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "text": {
+          "en": "There is a tacit assumption that speed matters more than consultation, and that assumption is doing a lot of work in the argument."
+        },
+        "translations": {
+          "fa": "یک فرض ناگفته وجود داره که سرعت از مشورت مهم‌تره و همین فرض بخش بزرگی از استدلال رو جلو می‌بره."
+        },
+        "intent": "surface_tacit_assumption",
+        "concept_refs": [
+          "c2_implicit_stance_tacit",
+          "c2_implicit_stance_stance"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_implicit_stance_undertone",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "text": {
+          "en": "The wording is courteous, but the undertone suggests she sees the decision as effectively settled already."
+        },
+        "translations": {
+          "fa": "واژه‌ها مؤدبانه‌ان، ولی لحن پنهان نشون می‌ده از نظر اون تصمیم عملاً از قبل گرفته شده."
+        },
+        "intent": "read_undertone",
+        "concept_refs": [
+          "c2_implicit_stance_undertone",
+          "c2_implicit_stance_infer"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_implicit_stance_hedge",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "text": {
+          "en": "He hedges the criticism so carefully that the disagreement could be missed by anyone listening only for explicit objections."
+        },
+        "translations": {
+          "fa": "انتقاد رو اون‌قدر با احتیاط بیان می‌کنه که کسی که فقط دنبال مخالفت صریح باشه ممکنه اصلاً متوجه اختلاف نشه."
+        },
+        "intent": "detect_hedged_disagreement",
+        "concept_refs": [
+          "c2_implicit_stance_hedge",
+          "c2_implicit_stance_stance"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_implicit_stance_disavow",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "text": {
+          "en": "Notice that she does not disavow the principle; she distances herself only from the way it has been applied here."
+        },
+        "translations": {
+          "fa": "دقت کن که از اصل موضوع فاصله نمی‌گیره؛ فقط از نحوه اجرای اون در این مورد مشخص فاصله می‌گیره."
+        },
+        "intent": "distinguish_position",
+        "concept_refs": [
+          "c2_implicit_stance_disavow",
+          "c2_implicit_stance_alignment"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_implicit_stance_alignment",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "text": {
+          "en": "His lexical choices signal broad alignment with the goal while preserving room to challenge the means."
+        },
+        "translations": {
+          "fa": "انتخاب واژه‌هاش هم‌راستایی کلی با هدف رو نشون می‌ده، در حالی که جا برای نقد روش باقی می‌ذاره."
+        },
+        "intent": "infer_alignment",
+        "concept_refs": [
+          "c2_implicit_stance_alignment",
+          "c2_implicit_stance_stance"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_implicit_stance_caution",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "text": {
+          "en": "I would infer reluctance rather than opposition; the distinction matters because the appropriate response is different."
+        },
+        "translations": {
+          "fa": "من بیشتر بی‌میلی استنباط می‌کنم تا مخالفت؛ این تفاوت مهمه چون نوع پاسخ مناسب رو عوض می‌کنه."
+        },
+        "intent": "calibrate_inference",
+        "concept_refs": [
+          "c2_implicit_stance_infer",
+          "c2_implicit_stance_equivocal"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c2_implicit_stance_summary",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "text": {
+          "en": "So the safest reading is that the surface agreement masks a narrower, more conditional stance underneath."
+        },
+        "translations": {
+          "fa": "پس امن‌ترین برداشت اینه که موافقت ظاهری یک موضع محدودتر و مشروط‌تر رو زیر خودش پنهان کرده."
+        },
+        "intent": "summarize_stance",
+        "concept_refs": [
+          "c2_implicit_stance_undertone",
+          "c2_implicit_stance_stance"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_implicit_stance_advanced_hedging",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "slug": "c2-implicit-stance-advanced-hedging",
+        "title": "Advanced hedging and calibration",
+        "rule_summary": "Calibrate certainty with expressions such as arguably, broadly speaking, tends to, appears to, and cannot entirely be ruled out.",
+        "explanation": {
+          "fa": "در C1 میزان قطعیت را با عبارت‌هایی مثل arguably، broadly speaking، tends to، appears to و cannot entirely be ruled out دقیق تنظیم می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The change appears to have improved access, although the evidence is still limited.",
+            "fa": "به نظر می‌رسد این تغییر دسترسی را بهتر کرده، هرچند شواهد هنوز محدود است."
+          },
+          {
+            "en": "That explanation cannot entirely be ruled out.",
+            "fa": "نمی‌توان آن توضیح را کاملاً منتفی دانست."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_implicit_stance_distancing",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "slug": "c2-implicit-stance-distancing",
+        "title": "Distancing from claims",
+        "rule_summary": "Use apparently, reportedly, according to, it would seem, and claims that to avoid presenting uncertain information as your own fact.",
+        "explanation": {
+          "fa": "برای اینکه اطلاعات نامطمئن را واقعیت قطعی خودمان نشان ندهیم از apparently، reportedly، according to، it would seem و claims that استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "According to the review, the benefits were unevenly distributed.",
+            "fa": "طبق بررسی، مزایا به‌طور نابرابر توزیع شده بود."
+          },
+          {
+            "en": "It would seem that the original estimate was too optimistic.",
+            "fa": "به نظر می‌رسد برآورد اولیه بیش از حد خوش‌بینانه بوده است."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c2_implicit_stance_cohesion_reference",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "slug": "c2-implicit-stance-cohesion-reference",
+        "title": "Cohesion through reference",
+        "rule_summary": "Use this, such, the former/latter, these findings, and related reference devices so longer discourse remains connected without repetition.",
+        "explanation": {
+          "fa": "با this، such، the former/latter، these findings و ابزارهای ارجاعی مشابه، متن یا گفتار طولانی را بدون تکرار منسجم نگه می‌داریم."
+        },
+        "examples": [
+          {
+            "en": "The first approach is cheaper; the latter, however, is easier to scale.",
+            "fa": "رویکرد اول ارزان‌تر است؛ اما دومی مقیاس‌پذیرتر است."
+          },
+          {
+            "en": "These findings raise a further question about access.",
+            "fa": "این یافته‌ها پرسش دیگری درباره دسترسی مطرح می‌کنند."
+          }
+        ],
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_implicit_stance_scene_1",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "title": "Implicit Stance & Fine-Grained Inference: part 1",
+        "setting": "strategy meeting",
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "characters": [
+          "Nora",
+          "Samir"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nora",
+            "text": "What do you make of the way this is being framed?",
+            "translation_fa": "از نحوه مطرح شدن این موضوع چه برداشتی داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Samir",
+            "text": "Her answer is deliberately equivocal: it leaves room for cooperation without committing her to the proposal itself.",
+            "translation_fa": "جوابش عمداً دوپهلوئه: راه همکاری رو باز می‌ذاره بدون اینکه خودش رو به خود پیشنهاد متعهد کنه."
+          },
+          {
+            "order": 3,
+            "speaker": "Nora",
+            "text": "Is there another interpretation we should keep in view?",
+            "translation_fa": "تفسیر دیگه‌ای هست که باید در نظر داشته باشیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Samir",
+            "text": "There is a tacit assumption that speed matters more than consultation, and that assumption is doing a lot of work in the argument.",
+            "translation_fa": "یک فرض ناگفته وجود داره که سرعت از مشورت مهم‌تره و همین فرض بخش بزرگی از استدلال رو جلو می‌بره."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_implicit_stance_scene_2",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "title": "Implicit Stance & Fine-Grained Inference: part 2",
+        "setting": "seminar break",
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "characters": [
+          "Elena",
+          "Marcus"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elena",
+            "text": "Which assumption is doing most of the work here?",
+            "translation_fa": "کدوم فرض بیشترین نقش رو در این استدلال داره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Marcus",
+            "text": "The wording is courteous, but the undertone suggests she sees the decision as effectively settled already.",
+            "translation_fa": "واژه‌ها مؤدبانه‌ان، ولی لحن پنهان نشون می‌ده از نظر اون تصمیم عملاً از قبل گرفته شده."
+          },
+          {
+            "order": 3,
+            "speaker": "Elena",
+            "text": "How would the conclusion change if that assumption failed?",
+            "translation_fa": "اگر اون فرض برقرار نباشه نتیجه چطور عوض می‌شه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Marcus",
+            "text": "He hedges the criticism so carefully that the disagreement could be missed by anyone listening only for explicit objections.",
+            "translation_fa": "انتقاد رو اون‌قدر با احتیاط بیان می‌کنه که کسی که فقط دنبال مخالفت صریح باشه ممکنه اصلاً متوجه اختلاف نشه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c2_implicit_stance_scene_3",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "title": "Implicit Stance & Fine-Grained Inference: part 3",
+        "setting": "podcast planning call",
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "characters": [
+          "Hana",
+          "Luis"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Hana",
+            "text": "Where do you think the strongest part of the case is?",
+            "translation_fa": "فکر می‌کنی قوی‌ترین بخش استدلال کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Luis",
+            "text": "Notice that she does not disavow the principle; she distances herself only from the way it has been applied here.",
+            "translation_fa": "دقت کن که از اصل موضوع فاصله نمی‌گیره؛ فقط از نحوه اجرای اون در این مورد مشخص فاصله می‌گیره."
+          },
+          {
+            "order": 3,
+            "speaker": "Hana",
+            "text": "And where would you qualify it?",
+            "translation_fa": "و کجاش رو با احتیاط یا قید بیشتری بیان می‌کردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Luis",
+            "text": "His lexical choices signal broad alignment with the goal while preserving room to challenge the means.",
+            "translation_fa": "انتخاب واژه‌هاش هم‌راستایی کلی با هدف رو نشون می‌ده، در حالی که جا برای نقد روش باقی می‌ذاره."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_fill",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "The reply is deliberately ___, allowing several interpretations."
+        },
+        "options": [
+          "equivocal",
+          "tacit",
+          "literal",
+          "conclusive"
+        ],
+        "answer": {
+          "value": "equivocal"
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_listen1",
+      "data": {
+        "lesson_key": "c2-implicit-stance-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "There is a tacit assumption that speed matters more than consultation, and that assumption is doing a lot of work in the argument."
+        },
+        "options": [
+          "یک فرض ناگفته وجود داره که سرعت از مشورت مهم‌تره و همین فرض بخش بزرگی از استدلال رو جلو می‌بره.",
+          "جوابش عمداً دوپهلوئه: راه همکاری رو باز می‌ذاره بدون اینکه خودش رو به خود پیشنهاد متعهد کنه.",
+          "دقت کن که از اصل موضوع فاصله نمی‌گیره؛ فقط از نحوه اجرای اون در این مورد مشخص فاصله می‌گیره.",
+          "من بیشتر بی‌میلی استنباط می‌کنم تا مخالفت؛ این تفاوت مهمه چون نوع پاسخ مناسب رو عوض می‌کنه."
+        ],
+        "answer": {
+          "value": "یک فرض ناگفته وجود داره که سرعت از مشورت مهم‌تره و همین فرض بخش بزرگی از استدلال رو جلو می‌بره."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_speak1",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: واژه‌ها مؤدبانه‌ان، ولی لحن پنهان نشون می‌ده از نظر اون تصمیم عملاً از قبل گرفته شده."
+        },
+        "answer": {
+          "expected_text": "The wording is courteous, but the undertone suggests she sees the decision as effectively settled already."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_build1",
+      "data": {
+        "lesson_key": "c2-implicit-stance-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "انتقاد رو اون‌قدر با احتیاط بیان می‌کنه که کسی که فقط دنبال مخالفت صریح باشه ممکنه اصلاً متوجه اختلاف نشه.",
+          "tokens": [
+            "objections.",
+            "explicit",
+            "for",
+            "only",
+            "listening",
+            "anyone",
+            "by",
+            "missed",
+            "be",
+            "could",
+            "disagreement",
+            "the",
+            "that",
+            "carefully",
+            "so",
+            "criticism",
+            "the",
+            "hedges",
+            "He"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "He",
+            "hedges",
+            "the",
+            "criticism",
+            "so",
+            "carefully",
+            "that",
+            "the",
+            "disagreement",
+            "could",
+            "be",
+            "missed",
+            "by",
+            "anyone",
+            "listening",
+            "only",
+            "for",
+            "explicit",
+            "objections."
+          ],
+          "text": "He hedges the criticism so carefully that the disagreement could be missed by anyone listening only for explicit objections."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_meaning",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "Notice that she does not disavow the principle; she distances herself only from the way it has been applied here."
+        },
+        "options": [
+          "دقت کن که از اصل موضوع فاصله نمی‌گیره؛ فقط از نحوه اجرای اون در این مورد مشخص فاصله می‌گیره.",
+          "واژه‌ها مؤدبانه‌ان، ولی لحن پنهان نشون می‌ده از نظر اون تصمیم عملاً از قبل گرفته شده.",
+          "من بیشتر بی‌میلی استنباط می‌کنم تا مخالفت؛ این تفاوت مهمه چون نوع پاسخ مناسب رو عوض می‌کنه.",
+          "جوابش عمداً دوپهلوئه: راه همکاری رو باز می‌ذاره بدون اینکه خودش رو به خود پیشنهاد متعهد کنه."
+        ],
+        "answer": {
+          "value": "دقت کن که از اصل موضوع فاصله نمی‌گیره؛ فقط از نحوه اجرای اون در این مورد مشخص فاصله می‌گیره."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_listen2",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "His lexical choices signal broad alignment with the goal while preserving room to challenge the means."
+        },
+        "options": [
+          "انتخاب واژه‌هاش هم‌راستایی کلی با هدف رو نشون می‌ده، در حالی که جا برای نقد روش باقی می‌ذاره.",
+          "یک فرض ناگفته وجود داره که سرعت از مشورت مهم‌تره و همین فرض بخش بزرگی از استدلال رو جلو می‌بره.",
+          "انتقاد رو اون‌قدر با احتیاط بیان می‌کنه که کسی که فقط دنبال مخالفت صریح باشه ممکنه اصلاً متوجه اختلاف نشه.",
+          "پس امن‌ترین برداشت اینه که موافقت ظاهری یک موضع محدودتر و مشروط‌تر رو زیر خودش پنهان کرده."
+        ],
+        "answer": {
+          "value": "انتخاب واژه‌هاش هم‌راستایی کلی با هدف رو نشون می‌ده، در حالی که جا برای نقد روش باقی می‌ذاره."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_speak2",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: من بیشتر بی‌میلی استنباط می‌کنم تا مخالفت؛ این تفاوت مهمه چون نوع پاسخ مناسب رو عوض می‌کنه."
+        },
+        "answer": {
+          "expected_text": "I would infer reluctance rather than opposition; the distinction matters because the appropriate response is different."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_build2",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "پس امن‌ترین برداشت اینه که موافقت ظاهری یک موضع محدودتر و مشروط‌تر رو زیر خودش پنهان کرده.",
+          "tokens": [
+            "underneath.",
+            "stance",
+            "conditional",
+            "more",
+            "narrower,",
+            "a",
+            "masks",
+            "agreement",
+            "surface",
+            "the",
+            "that",
+            "is",
+            "reading",
+            "safest",
+            "the",
+            "So"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "So",
+            "the",
+            "safest",
+            "reading",
+            "is",
+            "that",
+            "the",
+            "surface",
+            "agreement",
+            "masks",
+            "a",
+            "narrower,",
+            "more",
+            "conditional",
+            "stance",
+            "underneath."
+          ],
+          "text": "So the safest reading is that the surface agreement masks a narrower, more conditional stance underneath."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "approved"
+      }
+    }
+  ]
+}
