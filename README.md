@@ -79,10 +79,18 @@ Run these files in order:
 9. `database/seed/english-a1-curriculum.sql`
 10. `database/seed/language-variants-courses.sql`
 11. `database/seed/english-prea1-curriculum.sql`
-12. `database/seed/arabic-msa-prea1-curriculum.sql`
-13. `database/seed/german-a1-curriculum.sql`
+12. `database/seed/english-a2-curriculum.sql`
+13. `database/seed/arabic-msa-prea1-curriculum.sql`
+14. `database/seed/german-a1-curriculum.sql`
 
-The English A1 seed is intentionally loaded before courses for backward compatibility; the course seed attaches those existing A1 units to `fa-en-us`. New course-specific curricula such as English Pre-A1, German, and Arabic are loaded after the course seed.
+The English A1 seed is intentionally loaded before courses for backward compatibility; the course seed attaches those existing A1 units to `fa-en-us`. New course-specific curricula such as English Pre-A1, English A2, German, and Arabic are loaded after the course seed.
+
+## English production status
+
+- **Pre-A1:** curriculum complete; 10 production batches complete.
+- **A1:** curriculum complete; 30 production batches complete.
+- **A2:** 36-unit curriculum defined; production generation is in progress.
+- **B1–C2:** planned after A2 reaches production-complete status.
 
 ## Content staging importer
 Install dependencies:
