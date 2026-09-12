@@ -144,10 +144,19 @@ python scripts/build_audio_manifest.py content/production/en/A1 \
   --output audio/manifests/en/A1.json
 ```
 
-Generate paid ElevenLabs audio only with explicit confirmation:
+Before spending any TTS credits, run the provider voice preflight:
 
 ```bash
 export ELEVENLABS_API_KEY='...'
+python scripts/resolve_audio_voices.py audio/manifests/en/A1.json \
+  --write-lock
+```
+
+This step does not generate speech. It verifies that Lori and every required dialogue voice can be resolved against the connected ElevenLabs account, enforces required voice labels and character-voice uniqueness, and stores the resolved provider voice IDs in `audio/voices/en-US.lock.json` when `--write-lock` is used. The same preflight can also be run manually through the `Audio Voice Preflight` GitHub Actions workflow.
+
+Only after preflight succeeds, generate paid ElevenLabs audio with explicit confirmation:
+
+```bash
 python scripts/generate_audio.py audio/manifests/en/A1.json \
   --confirm-paid-generation
 ```
@@ -169,6 +178,18 @@ python scripts/import_audio_manifest.py audio/manifests/en/A1.json
 
 The default linked state is `validated`, not `approved`. A changed source text creates a new audio identity and older audio for the same entity/voice is archived so stale audio cannot remain active.
 
+The canonical audio flow is therefore:
+
+```text
+approved content
+  -> strict manifest
+  -> provider voice preflight + voice lock
+  -> paid TTS generation
+  -> generated-audio QA
+  -> audio_assets linking
+  -> optional human listening approval
+```
+
 ## Repository layout
 - `database/schema.sql` — MySQL 9.0.1 core relational schema
 - `database/migrations/` — curriculum, multilingual, final-level and audio schema extensions
@@ -183,6 +204,7 @@ The default linked state is `validated`, not `approved`. A changed source text c
 - `scripts/materialize_level.py` — canonical level materializer
 - `scripts/validate_content.py` — semantic content validator
 - `scripts/build_audio_manifest.py` — derives reusable word/sentence/dialogue TTS work
+- `scripts/resolve_audio_voices.py` — zero-TTS provider preflight + persistent voice lock resolver
 - `scripts/generate_audio.py` — guarded ElevenLabs generator
 - `scripts/validate_audio_manifest.py` — stale/hash/decode/voice-collision QA
 - `scripts/import_audio_manifest.py` — canonical `audio_assets` linker
