@@ -51,7 +51,9 @@ jobs:
             database/import/en/a1.py \
             database/import/en/a2.py \
             database/import/en/b1.py \
-            database/import/en/b2.py
+            database/import/en/b2.py \
+            database/import/en/c1.py \
+            database/import/en/c2.py
 
       - name: Validate production batches
         shell: bash
@@ -74,6 +76,8 @@ jobs:
           python database/import/en/a2.py --dry-run
           python database/import/en/b1.py --dry-run
           python database/import/en/b2.py --dry-run
+          python database/import/en/c1.py --dry-run
+          python database/import/en/c2.py --dry-run
 
       - name: Build strict English audio manifests
         run: |
@@ -92,6 +96,12 @@ jobs:
           python scripts/build_audio_manifest.py content/production/en/B2 \
             --level B2 --locale en-US --strict-characters \
             --output /tmp/en-b2-audio-manifest.json
+          python scripts/build_audio_manifest.py content/production/en/C1 \
+            --level C1 --locale en-US --strict-characters \
+            --output /tmp/en-c1-audio-manifest.json
+          python scripts/build_audio_manifest.py content/production/en/C2 \
+            --level C2 --locale en-US --strict-characters \
+            --output /tmp/en-c2-audio-manifest.json
 
       - name: Validate English audio manifest structure
         run: |
@@ -100,3 +110,5 @@ jobs:
           python scripts/validate_audio_manifest.py /tmp/en-a2-audio-manifest.json
           python scripts/validate_audio_manifest.py /tmp/en-b1-audio-manifest.json
           python scripts/validate_audio_manifest.py /tmp/en-b2-audio-manifest.json
+          python scripts/validate_audio_manifest.py /tmp/en-c1-audio-manifest.json
+          python scripts/validate_audio_manifest.py /tmp/en-c2-audio-manifest.json
