@@ -1,0 +1,110 @@
+name: MySQL German A1 Integration
+
+on:
+  push:
+    paths:
+      - 'database/seed/german-a1-curriculum.sql'
+      - 'database/import/de/**'
+      - 'content/production/de/A1/**'
+      - 'audio/cast/de-DE.json'
+      - 'audio/voices/de-DE.json'
+      - 'scripts/materialize_level.py'
+      - 'scripts/sync_character_cast.py'
+      - 'scripts/validate_content.py'
+      - 'scripts/content_quality.py'
+      - '.github/workflows/mysql-german-a1-integration.yml'
+      - 'requirements.txt'
+  pull_request:
+    paths:
+      - 'database/seed/german-a1-curriculum.sql'
+      - 'database/import/de/**'
+      - 'content/production/de/A1/**'
+      - 'audio/cast/de-DE.json'
+      - 'audio/voices/de-DE.json'
+      - 'scripts/materialize_level.py'
+      - 'scripts/sync_character_cast.py'
+      - 'scripts/validate_content.py'
+      - 'scripts/content_quality.py'
+      - '.github/workflows/mysql-german-a1-integration.yml'
+      - 'requirements.txt'
+
+jobs:
+  german-a1-mysql-9:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env:
+          MYSQL_ROOT_PASSWORD: rootpass
+          MYSQL_DATABASE: language_learning
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -prootpass"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=15
+    env:
+      DATABASE_URL: mysql://root:rootpass@127.0.0.1:3306/language_learning
+      MYSQL_PWD: rootpass
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y default-mysql-client
+      - name: Verify MySQL 9.0.1
+        run: |
+          v=$(mysql -h127.0.0.1 -P3306 -uroot -Nse 'SELECT VERSION();')
+          echo "Server version: $v"
+          [[ "$v" == 9.0.1* ]]
+      - name: Bootstrap multilingual schema and German A1 curriculum
+        run: |
+          set -euo pipefail
+          DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
+          $DB < database/schema.sql
+          $DB < database/migrations/001_curriculum.sql
+          $DB < database/migrations/002_multilingual_core.sql
+          $DB < database/migrations/003_lesson_item_lexemes.sql
+          $DB < database/migrations/004_level_import_audio.sql
+          $DB < database/migrations/005_writing_exercises.sql
+          $DB < database/seed/cefr.sql
+          $DB < database/seed/languages.sql
+          $DB < database/seed/skills-topics.sql
+          $DB < database/seed/language-variants-courses.sql
+          $DB < database/seed/german-a1-curriculum.sql
+          units=$($DB -Nse "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id JOIN cefr_levels l ON l.id=cu.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='A1'")
+          echo "German A1 curriculum units: $units"
+          test "$units" = 30
+      - name: Validate German production batches
+        run: |
+          set -euo pipefail
+          for f in content/production/de/A1/*.json; do
+            echo "===== $f ====="
+            python scripts/validate_content.py "$f"
+          done
+          python database/import/de/a1.py --dry-run
+      - name: Confirm release approval gate is active
+        run: |
+          set +e
+          python database/import/de/a1.py --dry-run --require-approved
+          rc=$?
+          set -e
+          test "$rc" -ne 0
+          echo "German A1 release correctly remains blocked until educational review approval."
+      - name: Import German A1 review build
+        run: python database/import/de/a1.py --allow-unreviewed
+      - name: Verify German canonical rows and idempotency
+        run: |
+          set -euo pipefail
+          DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
+          before=$($DB -Nse "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-de-de'),':',(SELECT COUNT(*) FROM lexemes lx JOIN languages l ON l.id=lx.language_id WHERE l.code='de'),':',(SELECT COUNT(*) FROM word_forms wf JOIN lexemes lx ON lx.id=wf.lexeme_id JOIN languages l ON l.id=lx.language_id WHERE l.code='de'),':',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-de-de'))")
+          python database/import/de/a1.py --allow-unreviewed
+          after=$($DB -Nse "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-de-de'),':',(SELECT COUNT(*) FROM lexemes lx JOIN languages l ON l.id=lx.language_id WHERE l.code='de'),':',(SELECT COUNT(*) FROM word_forms wf JOIN lexemes lx ON lx.id=wf.lexeme_id JOIN languages l ON l.id=lx.language_id WHERE l.code='de'),':',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-de-de'))")
+          echo "before=$before after=$after"
+          test "$before" = "$after"
+          $DB -e "SELECT COUNT(*) AS german_a1_lessons FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-de-de'; SELECT COUNT(*) AS german_lexemes FROM lexemes lx JOIN languages l ON l.id=lx.language_id WHERE l.code='de'; SELECT COUNT(*) AS german_word_forms FROM word_forms wf JOIN lexemes lx ON lx.id=wf.lexeme_id JOIN languages l ON l.id=lx.language_id WHERE l.code='de';"
