@@ -1,0 +1,25 @@
+{
+  "batch_id": "en-us-prea1-letter-names-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-en-letter-names",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {"kind":"concept","external_id":"c_pre_spell","data":{"slug":"prea1_spelling_action","lesson_key":"prea1-en-letter-names-01","concept_type":"functional","forms":{"en":"spell"},"translations":{"fa":"هجی کردن"},"cefr":"Pre-A1","topic":"sound-letter-mapping","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_spell_sam","data":{"lesson_key":"prea1-en-letter-names-01","text":{"en":"S-A-M."},"translations":{"fa":"S-A-M"},"intent":"spell_short_name","concept_refs":["prea1_spelling_action"],"cefr":"Pre-A1","topic":"sound-letter-mapping","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_spell_amy","data":{"lesson_key":"prea1-en-letter-names-01","text":{"en":"A-M-Y."},"translations":{"fa":"A-M-Y"},"intent":"spell_short_name","concept_refs":["prea1_spelling_action"],"cefr":"Pre-A1","topic":"sound-letter-mapping","register":"neutral","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_lettername_e","data":{"lesson_key":"prea1-en-letter-names-01","exercise_type":"listening","prompt":{"instruction_fa":"نام حرف را گوش کن و انتخابش کن.","audio_text":"E"},"options":["E","A","I","Y"],"answer":{"value":"E"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_lettername_j","data":{"lesson_key":"prea1-en-letter-names-01","exercise_type":"listening","prompt":{"instruction_fa":"نام حرف را گوش کن و انتخابش کن.","audio_text":"J"},"options":["J","G","K","H"],"answer":{"value":"J"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_spell_sam_order","data":{"lesson_key":"prea1-en-letter-names-01","exercise_type":"sentence_building","prompt":{"instruction_fa":"حروف را برای ساختن نام SAM مرتب کن.","tokens":["M","S","A"]},"answer":{"tokens":["S","A","M"]},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_spell_sam_speak","data":{"lesson_key":"prea1-en-letter-names-01","exercise_type":"speaking","prompt":{"instruction_fa":"نام SAM را حرف‌به‌حرف بگو.","value":"SAM"},"answer":{"expected_text":"S A M"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_how_spell","data":{"lesson_key":"prea1-en-letter-names-02","text":{"en":"How do you spell it?"},"translations":{"fa":"چطور هجی می‌شود؟"},"intent":"ask_spelling_supported","concept_refs":["prea1_spelling_action"],"cefr":"Pre-A1","topic":"sound-letter-mapping","register":"neutral","status":"approved"}},
+    {"kind":"dialogue","external_id":"d_pre_spell_name","data":{"lesson_key":"prea1-en-letter-names-02","title":"Spell a name","setting":"classroom","cefr":"Pre-A1","topic":"sound-letter-mapping","characters":["Nora","Kai"],"turns":[{"order":1,"speaker":"Nora","text":"Sam?","translation_fa":"سَم؟"},{"order":2,"speaker":"Kai","text":"Yes. S-A-M.","translation_fa":"بله. S-A-M."},{"order":3,"speaker":"Nora","text":"S-A-M. Sam.","translation_fa":"S-A-M. سَم."}],"status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_spell_amy_listen","data":{"lesson_key":"prea1-en-letter-names-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن. کدام نام هجی شد؟","audio_text":"A M Y"},"options":["Amy","Sam","Mia","May"],"answer":{"value":"Amy"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_spell_mia_order","data":{"lesson_key":"prea1-en-letter-names-02","exercise_type":"sentence_building","prompt":{"instruction_fa":"حروف MIA را مرتب کن.","tokens":["A","M","I"]},"answer":{"tokens":["M","I","A"]},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_lettername_w","data":{"lesson_key":"prea1-en-letter-names-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و حرف درست را انتخاب کن.","audio_text":"W"},"options":["W","V","U","Y"],"answer":{"value":"W"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}}
+  ]
+}
