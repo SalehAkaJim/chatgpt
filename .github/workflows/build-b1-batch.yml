@@ -1,0 +1,81 @@
+name: Build English B1 Batch
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate_b1_batch.py'
+      - '.github/b1-generation-trigger'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-english-b1-batch
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate B1 batch
+        run: python scripts/generate_b1_batch.py
+
+      - name: Validate all B1 production batches
+        run: |
+          for f in content/production/en/B1/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+
+      - name: Verify generated B1 coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('content/production/en/B1')
+          expected = [
+              'b1-catching-up-in-depth',
+              'b1-personal-stories',
+              'b1-life-changes',
+              'b1-habits-and-change',
+              'b1-events-in-progress',
+          ]
+          found = {}
+          for f in p.glob('*.json'):
+              d = json.loads(f.read_text(encoding='utf-8'))
+              found[d['curriculum_unit']] = f.name
+          missing = [u for u in expected if u not in found]
+          if missing:
+              raise SystemExit('Missing B1 production units: ' + ', '.join(missing))
+          print(f'B1 production coverage: {len(found)}/40; first batch complete')
+          PY
+
+      - name: Commit generated production batches
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/production/en/B1
+          if git diff --cached --quiet; then
+            echo 'No B1 content changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Add English B1 units 01-05 [skip ci]'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
