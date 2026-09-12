@@ -4,6 +4,7 @@
 Validates/syncs the explicit en-US dialogue cast and materializes every approved
 B2 production batch in one transaction. It does not import audio assets; run the
 matching b2_audio.sql after B2 production audio has been generated and validated.
+Paid audio generation remains a separate explicitly confirmed workflow.
 """
 from pathlib import Path
 import sys
