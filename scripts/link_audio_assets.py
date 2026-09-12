@@ -4,13 +4,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
 import mysql.connector
 
-from scripts.materialize_level import db_config, lang_id, one, stable, variant_id
-
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from scripts.materialize_level import db_config, lang_id, one, stable, variant_id  # noqa: E402
+
 ENTITY_TABLES = {
     "concept": "concepts",
     "lexeme": "lexemes",
@@ -38,7 +42,6 @@ def main() -> None:
     locale = manifest["locale"]
     language_code = locale.split("-")[0]
 
-    # Linking is intentionally strict: only fully generated items with intact sidecars are accepted.
     prepared = []
     for item in manifest.get("items", []):
         if item.get("voice_spec", {}).get("blocked"):
