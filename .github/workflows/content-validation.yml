@@ -1,0 +1,44 @@
+name: Content Validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'scripts/validate_content.py'
+      - 'content/batch.schema.json'
+      - '.github/workflows/content-validation.yml'
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'scripts/validate_content.py'
+      - 'content/batch.schema.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validator dependencies
+        run: pip install 'jsonschema>=4.23,<5'
+
+      - name: Validate production batches
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t files < <(find content/production -type f -name '*.json' | sort)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo 'No production content batches found.'
+            exit 1
+          fi
+          for file in "${files[@]}"; do
+            echo "Validating $file"
+            python scripts/validate_content.py "$file"
+          done
