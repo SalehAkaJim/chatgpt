@@ -1,0 +1,1088 @@
+{
+  "batch_id": "en-us-b1-everyday-environment-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B1",
+  "curriculum_unit": "b1-everyday-environment",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_waste",
+      "data": {
+        "slug": "b1_everyday_environment_waste",
+        "lesson_key": "b1-everyday-environment-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "waste"
+        },
+        "translations": {
+          "fa": "زباله / هدررفت"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_waste",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "lemma": "waste",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_everyday_environment_waste"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_waste",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "lexeme_ref": "lx_b1_everyday_environment_waste",
+        "surface_form": "waste",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_recycle",
+      "data": {
+        "slug": "b1_everyday_environment_recycle",
+        "lesson_key": "b1-everyday-environment-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "recycle"
+        },
+        "translations": {
+          "fa": "بازیافت کردن"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_recycle",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "lemma": "recycle",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_everyday_environment_recycle"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_recycle",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "lexeme_ref": "lx_b1_everyday_environment_recycle",
+        "surface_form": "recycle",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_reusable",
+      "data": {
+        "slug": "b1_everyday_environment_reusable",
+        "lesson_key": "b1-everyday-environment-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "reusable"
+        },
+        "translations": {
+          "fa": "قابل‌استفاده مجدد"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_reusable",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "lemma": "reusable",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b1_everyday_environment_reusable"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_reusable",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "lexeme_ref": "lx_b1_everyday_environment_reusable",
+        "surface_form": "reusable",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_energy",
+      "data": {
+        "slug": "b1_everyday_environment_energy",
+        "lesson_key": "b1-everyday-environment-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "energy"
+        },
+        "translations": {
+          "fa": "انرژی"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_energy",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "lemma": "energy",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_everyday_environment_energy"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_energy",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "lexeme_ref": "lx_b1_everyday_environment_energy",
+        "surface_form": "energy",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_transport",
+      "data": {
+        "slug": "b1_everyday_environment_transport",
+        "lesson_key": "b1-everyday-environment-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "transport"
+        },
+        "translations": {
+          "fa": "حمل‌ونقل"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_transport",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "lemma": "transport",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_everyday_environment_transport"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_transport",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "lexeme_ref": "lx_b1_everyday_environment_transport",
+        "surface_form": "transport",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_reduce",
+      "data": {
+        "slug": "b1_everyday_environment_reduce",
+        "lesson_key": "b1-everyday-environment-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "reduce"
+        },
+        "translations": {
+          "fa": "کاهش دادن"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_reduce",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "lemma": "reduce",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_everyday_environment_reduce"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_reduce",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "lexeme_ref": "lx_b1_everyday_environment_reduce",
+        "surface_form": "reduce",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_efficient",
+      "data": {
+        "slug": "b1_everyday_environment_efficient",
+        "lesson_key": "b1-everyday-environment-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "efficient"
+        },
+        "translations": {
+          "fa": "کارآمد / کم‌مصرف"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_efficient",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "lemma": "efficient",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b1_everyday_environment_efficient"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_efficient",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "lexeme_ref": "lx_b1_everyday_environment_efficient",
+        "surface_form": "efficient",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_impact",
+      "data": {
+        "slug": "b1_everyday_environment_impact",
+        "lesson_key": "b1-everyday-environment-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "impact"
+        },
+        "translations": {
+          "fa": "اثر"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_impact",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "lemma": "impact",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_everyday_environment_impact"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_impact",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "lexeme_ref": "lx_b1_everyday_environment_impact",
+        "surface_form": "impact",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_packaging",
+      "data": {
+        "slug": "b1_everyday_environment_packaging",
+        "lesson_key": "b1-everyday-environment-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "packaging"
+        },
+        "translations": {
+          "fa": "بسته‌بندی"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_packaging",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "lemma": "packaging",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_everyday_environment_packaging"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_packaging",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "lexeme_ref": "lx_b1_everyday_environment_packaging",
+        "surface_form": "packaging",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_everyday_environment_practical",
+      "data": {
+        "slug": "b1_everyday_environment_practical",
+        "lesson_key": "b1-everyday-environment-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "practical"
+        },
+        "translations": {
+          "fa": "عملی"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_everyday_environment_practical",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "lemma": "practical",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b1_everyday_environment_practical"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_everyday_environment_practical",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "lexeme_ref": "lx_b1_everyday_environment_practical",
+        "surface_form": "practical",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_everyday_environment_waste",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "text": {
+          "en": "We throw away less food now because we plan meals before shopping."
+        },
+        "translations": {
+          "fa": "الان غذای کمتری دور می‌ریزیم چون قبل خرید برنامه غذایی می‌چینیم."
+        },
+        "intent": "describe_waste_reduction",
+        "concept_refs": [
+          "b1_everyday_environment_waste",
+          "b1_everyday_environment_reduce"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_everyday_environment_reusable",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "text": {
+          "en": "I keep a reusable bottle at work so I don't buy plastic bottles every day."
+        },
+        "translations": {
+          "fa": "سر کار بطری قابل‌استفاده مجدد دارم تا هر روز بطری پلاستیکی نخرم."
+        },
+        "intent": "describe_environmental_habit",
+        "concept_refs": [
+          "b1_everyday_environment_reusable"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_everyday_environment_transport",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "text": {
+          "en": "If public transport were more frequent in my area, I'd use the car less."
+        },
+        "translations": {
+          "fa": "اگر حمل‌ونقل عمومی منطقه‌م پرتعدادتر بود، کمتر ماشین استفاده می‌کردم."
+        },
+        "intent": "discuss_transport_choice",
+        "concept_refs": [
+          "b1_everyday_environment_transport",
+          "b1_everyday_environment_impact"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_everyday_environment_packaging",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "text": {
+          "en": "A lot of unnecessary packaging is used for products that don't need it."
+        },
+        "translations": {
+          "fa": "برای محصولاتی که نیاز ندارند بسته‌بندی اضافی زیادی استفاده می‌شه."
+        },
+        "intent": "identify_problem",
+        "concept_refs": [
+          "b1_everyday_environment_packaging",
+          "b1_everyday_environment_waste"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_everyday_environment_efficient",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "text": {
+          "en": "We replaced the old lights with more energy-efficient ones, which reduced our electricity use."
+        },
+        "translations": {
+          "fa": "چراغ‌های قدیمی رو با مدل‌های کم‌مصرف‌تر عوض کردیم که مصرف برق رو کم کرد."
+        },
+        "intent": "describe_efficiency_change",
+        "concept_refs": [
+          "b1_everyday_environment_efficient",
+          "b1_everyday_environment_energy",
+          "b1_everyday_environment_reduce"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_everyday_environment_practical",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "text": {
+          "en": "The solution has to be practical enough that people will actually keep doing it."
+        },
+        "translations": {
+          "fa": "راه‌حل باید آن‌قدر عملی باشه که مردم واقعاً ادامه‌اش بدن."
+        },
+        "intent": "evaluate_solution",
+        "concept_refs": [
+          "b1_everyday_environment_practical"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_everyday_environment_conditional",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "text": {
+          "en": "If everyone in the office printed less, we'd cut paper use significantly."
+        },
+        "translations": {
+          "fa": "اگر همه در دفتر کمتر چاپ می‌کردند، مصرف کاغذ خیلی کم می‌شد."
+        },
+        "intent": "suggest_collective_action",
+        "concept_refs": [
+          "b1_everyday_environment_reduce"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_everyday_environment_balanced",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "text": {
+          "en": "Small individual choices matter, but larger systems also have a major impact."
+        },
+        "translations": {
+          "fa": "انتخاب‌های کوچک فردی مهمن، ولی سیستم‌های بزرگ‌تر هم اثر زیادی دارند."
+        },
+        "intent": "give_balanced_environment_view",
+        "concept_refs": [
+          "b1_everyday_environment_impact"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_everyday_environment_conditionals_env",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "slug": "b1-everyday-environment-conditionals-env",
+        "title": "Conditionals for environmental choices",
+        "rule_summary": "Use first conditional for likely results and second conditional for hypothetical changes.",
+        "explanation": {
+          "fa": "برای نتیجه‌های محتمل از شرط نوع اول و برای تغییر فرضی از شرط نوع دوم استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "If we recycle more, we'll reduce waste.",
+            "fa": "اگر بیشتر بازیافت کنیم زباله کمتر می‌شه."
+          },
+          {
+            "en": "If buses were more frequent, I'd drive less.",
+            "fa": "اگر اتوبوس بیشتر بود کمتر رانندگی می‌کردم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_everyday_environment_passive_env",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "slug": "b1-everyday-environment-passive-env",
+        "title": "Passive voice for systems",
+        "rule_summary": "Use passive forms to describe waste, energy, and production systems when the process is central.",
+        "explanation": {
+          "fa": "برای توضیح سیستم‌های زباله، انرژی و تولید وقتی فرایند محور اصلی است از passive استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Plastic is collected separately.",
+            "fa": "پلاستیک جدا جمع می‌شه."
+          },
+          {
+            "en": "Too much packaging is used.",
+            "fa": "بسته‌بندی زیادی استفاده می‌شه."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_everyday_environment_cause_effect_env",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "slug": "b1-everyday-environment-cause-effect-env",
+        "title": "Cause and effect links",
+        "rule_summary": "Use because, so, therefore, which, and as a result to explain environmental impact clearly.",
+        "explanation": {
+          "fa": "برای توضیح اثر محیط‌زیستی از because، so، therefore، which و as a result استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "We planned meals, so we wasted less food.",
+            "fa": "برنامه غذایی چیدیم، پس غذای کمتری هدر دادیم."
+          },
+          {
+            "en": "The lights use less energy; as a result, bills are lower.",
+            "fa": "چراغ‌ها انرژی کمتری مصرف می‌کنند؛ در نتیجه قبض‌ها کمتره."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_everyday_environment_office",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "title": "Reducing office waste",
+        "setting": "team meeting",
+        "cefr": "B1",
+        "topic": "common-actions",
+        "characters": [
+          "Lina",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lina",
+            "text": "We still use a lot of disposable cups in the office.",
+            "translation_fa": "هنوز توی دفتر لیوان یک‌بارمصرف زیادی استفاده می‌کنیم."
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "What if we gave everyone a reusable mug?",
+            "translation_fa": "چی می‌شه اگر به همه لیوان قابل‌استفاده مجدد بدیم؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Lina",
+            "text": "That could help, but we also need somewhere easy to wash them.",
+            "translation_fa": "می‌تونه کمک کنه، ولی جایی راحت برای شستن هم لازم داریم."
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "Good point. Let's include that in the plan.",
+            "translation_fa": "نکته خوبیه. توی برنامه بذاریمش."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_everyday_environment_commute",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "title": "Talking about commuting",
+        "setting": "bus stop",
+        "cefr": "B1",
+        "topic": "common-actions",
+        "characters": [
+          "Amir",
+          "Ella"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Amir",
+            "text": "I'd use the bus more if it came every fifteen minutes.",
+            "translation_fa": "اگر اتوبوس هر پانزده دقیقه می‌اومد بیشتر استفاده می‌کردم."
+          },
+          {
+            "order": 2,
+            "speaker": "Ella",
+            "text": "Same. Right now driving is just much more practical.",
+            "translation_fa": "منم. الان رانندگی خیلی عملی‌تره."
+          },
+          {
+            "order": 3,
+            "speaker": "Amir",
+            "text": "That's the problem. People need a realistic alternative.",
+            "translation_fa": "مشکل همینه. مردم به جایگزین واقعی نیاز دارند."
+          },
+          {
+            "order": 4,
+            "speaker": "Ella",
+            "text": "Exactly. Telling people to drive less isn't enough by itself.",
+            "translation_fa": "دقیقاً. فقط گفتن کمتر رانندگی کنید کافی نیست."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_everyday_environment_shopping",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "title": "Reducing packaging",
+        "setting": "grocery store",
+        "cefr": "B1",
+        "topic": "common-actions",
+        "characters": [
+          "Ravi",
+          "Mina"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ravi",
+            "text": "I've started buying these refill packs instead of new bottles.",
+            "translation_fa": "شروع کردم به خرید بسته‌های شارژ به‌جای بطری جدید."
+          },
+          {
+            "order": 2,
+            "speaker": "Mina",
+            "text": "Do they actually use much less packaging?",
+            "translation_fa": "واقعاً بسته‌بندی خیلی کمتری استفاده می‌کنند؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Ravi",
+            "text": "About seventy percent less, according to the label.",
+            "translation_fa": "طبق برچسب حدود هفتاد درصد کمتر."
+          },
+          {
+            "order": 4,
+            "speaker": "Mina",
+            "text": "That's a practical change if the price is similar.",
+            "translation_fa": "اگر قیمت مشابه باشه تغییر عملیه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_everyday_environment_fill",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "If public transport were better, I ___ drive less."
+        },
+        "options": [
+          "would",
+          "will",
+          "did",
+          "have"
+        ],
+        "answer": {
+          "value": "would"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_everyday_environment_listen1",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "I keep a reusable bottle at work so I don't buy plastic bottles every day."
+        },
+        "options": [
+          "سر کار بطری قابل‌استفاده مجدد دارم تا هر روز بطری پلاستیکی نخرم.",
+          "الان غذای کمتری دور می‌ریزیم چون قبل خرید برنامه غذایی می‌چینیم.",
+          "چراغ‌های قدیمی رو با مدل‌های کم‌مصرف‌تر عوض کردیم که مصرف برق رو کم کرد.",
+          "اگر همه در دفتر کمتر چاپ می‌کردند، مصرف کاغذ خیلی کم می‌شد."
+        ],
+        "answer": {
+          "value": "سر کار بطری قابل‌استفاده مجدد دارم تا هر روز بطری پلاستیکی نخرم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_everyday_environment_speak1",
+      "data": {
+        "lesson_key": "b1-everyday-environment-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را طبیعی به انگلیسی بگو: اگر حمل‌ونقل عمومی منطقه‌م پرتعدادتر بود، کمتر ماشین استفاده می‌کردم."
+        },
+        "answer": {
+          "expected_text": "If public transport were more frequent in my area, I'd use the car less."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_everyday_environment_build1",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "برای محصولاتی که نیاز ندارند بسته‌بندی اضافی زیادی استفاده می‌شه.",
+          "tokens": [
+            "it.",
+            "need",
+            "don't",
+            "that",
+            "products",
+            "for",
+            "used",
+            "is",
+            "packaging",
+            "unnecessary",
+            "of",
+            "lot",
+            "A"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "A",
+            "lot",
+            "of",
+            "unnecessary",
+            "packaging",
+            "is",
+            "used",
+            "for",
+            "products",
+            "that",
+            "don't",
+            "need",
+            "it."
+          ],
+          "text": "A lot of unnecessary packaging is used for products that don't need it."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_everyday_environment_meaning",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "We replaced the old lights with more energy-efficient ones, which reduced our electricity use."
+        },
+        "options": [
+          "چراغ‌های قدیمی رو با مدل‌های کم‌مصرف‌تر عوض کردیم که مصرف برق رو کم کرد.",
+          "اگر حمل‌ونقل عمومی منطقه‌م پرتعدادتر بود، کمتر ماشین استفاده می‌کردم.",
+          "اگر همه در دفتر کمتر چاپ می‌کردند، مصرف کاغذ خیلی کم می‌شد.",
+          "الان غذای کمتری دور می‌ریزیم چون قبل خرید برنامه غذایی می‌چینیم."
+        ],
+        "answer": {
+          "value": "چراغ‌های قدیمی رو با مدل‌های کم‌مصرف‌تر عوض کردیم که مصرف برق رو کم کرد."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_everyday_environment_listen2",
+      "data": {
+        "lesson_key": "b1-everyday-environment-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و منظور گوینده را انتخاب کن.",
+          "audio_text": "The solution has to be practical enough that people will actually keep doing it."
+        },
+        "options": [
+          "راه‌حل باید آن‌قدر عملی باشه که مردم واقعاً ادامه‌اش بدن.",
+          "سر کار بطری قابل‌استفاده مجدد دارم تا هر روز بطری پلاستیکی نخرم.",
+          "برای محصولاتی که نیاز ندارند بسته‌بندی اضافی زیادی استفاده می‌شه.",
+          "انتخاب‌های کوچک فردی مهمن، ولی سیستم‌های بزرگ‌تر هم اثر زیادی دارند."
+        ],
+        "answer": {
+          "value": "راه‌حل باید آن‌قدر عملی باشه که مردم واقعاً ادامه‌اش بدن."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_everyday_environment_speak2",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را با جمله کامل انگلیسی بگو: اگر همه در دفتر کمتر چاپ می‌کردند، مصرف کاغذ خیلی کم می‌شد."
+        },
+        "answer": {
+          "expected_text": "If everyone in the office printed less, we'd cut paper use significantly."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_everyday_environment_build2",
+      "data": {
+        "lesson_key": "b1-everyday-environment-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "انتخاب‌های کوچک فردی مهمن، ولی سیستم‌های بزرگ‌تر هم اثر زیادی دارند.",
+          "tokens": [
+            "impact.",
+            "major",
+            "a",
+            "have",
+            "also",
+            "systems",
+            "larger",
+            "but",
+            "matter,",
+            "choices",
+            "individual",
+            "Small"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Small",
+            "individual",
+            "choices",
+            "matter,",
+            "but",
+            "larger",
+            "systems",
+            "also",
+            "have",
+            "a",
+            "major",
+            "impact."
+          ],
+          "text": "Small individual choices matter, but larger systems also have a major impact."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    }
+  ]
+}

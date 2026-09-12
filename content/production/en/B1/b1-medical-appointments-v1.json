@@ -1,0 +1,1082 @@
+{
+  "batch_id": "en-us-b1-medical-appointments-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B1",
+  "curriculum_unit": "b1-medical-appointments",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_symptom",
+      "data": {
+        "slug": "b1_medical_appointments_symptom",
+        "lesson_key": "b1-medical-appointments-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "symptom"
+        },
+        "translations": {
+          "fa": "علامت"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_symptom",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "lemma": "symptom",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_medical_appointments_symptom"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_symptom",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "lexeme_ref": "lx_b1_medical_appointments_symptom",
+        "surface_form": "symptom",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_persistent",
+      "data": {
+        "slug": "b1_medical_appointments_persistent",
+        "lesson_key": "b1-medical-appointments-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "persistent"
+        },
+        "translations": {
+          "fa": "مداوم"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_persistent",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "lemma": "persistent",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b1_medical_appointments_persistent"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_persistent",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "lexeme_ref": "lx_b1_medical_appointments_persistent",
+        "surface_form": "persistent",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_appointment",
+      "data": {
+        "slug": "b1_medical_appointments_appointment",
+        "lesson_key": "b1-medical-appointments-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "appointment"
+        },
+        "translations": {
+          "fa": "وقت پزشکی"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_appointment",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "lemma": "appointment",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_medical_appointments_appointment"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_appointment",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "lexeme_ref": "lx_b1_medical_appointments_appointment",
+        "surface_form": "appointment",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_prescription",
+      "data": {
+        "slug": "b1_medical_appointments_prescription",
+        "lesson_key": "b1-medical-appointments-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "prescription"
+        },
+        "translations": {
+          "fa": "نسخه"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_prescription",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "lemma": "prescription",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_medical_appointments_prescription"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_prescription",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "lexeme_ref": "lx_b1_medical_appointments_prescription",
+        "surface_form": "prescription",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_dose",
+      "data": {
+        "slug": "b1_medical_appointments_dose",
+        "lesson_key": "b1-medical-appointments-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "dose"
+        },
+        "translations": {
+          "fa": "دوز"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_dose",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "lemma": "dose",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_medical_appointments_dose"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_dose",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "lexeme_ref": "lx_b1_medical_appointments_dose",
+        "surface_form": "dose",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_swelling",
+      "data": {
+        "slug": "b1_medical_appointments_swelling",
+        "lesson_key": "b1-medical-appointments-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "swelling"
+        },
+        "translations": {
+          "fa": "ورم"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_swelling",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "lemma": "swelling",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_medical_appointments_swelling"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_swelling",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "lexeme_ref": "lx_b1_medical_appointments_swelling",
+        "surface_form": "swelling",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_improve",
+      "data": {
+        "slug": "b1_medical_appointments_improve",
+        "lesson_key": "b1-medical-appointments-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "improve"
+        },
+        "translations": {
+          "fa": "بهبود پیدا کردن"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_improve",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "lemma": "improve",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_medical_appointments_improve"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_improve",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "lexeme_ref": "lx_b1_medical_appointments_improve",
+        "surface_form": "improve",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_worsen",
+      "data": {
+        "slug": "b1_medical_appointments_worsen",
+        "lesson_key": "b1-medical-appointments-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "worsen"
+        },
+        "translations": {
+          "fa": "بدتر شدن"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_worsen",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "lemma": "worsen",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_medical_appointments_worsen"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_worsen",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "lexeme_ref": "lx_b1_medical_appointments_worsen",
+        "surface_form": "worsen",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_onset",
+      "data": {
+        "slug": "b1_medical_appointments_onset",
+        "lesson_key": "b1-medical-appointments-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "onset"
+        },
+        "translations": {
+          "fa": "شروع علائم"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_onset",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "lemma": "onset",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_medical_appointments_onset"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_onset",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "lexeme_ref": "lx_b1_medical_appointments_onset",
+        "surface_form": "onset",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_medical_appointments_follow_up",
+      "data": {
+        "slug": "b1_medical_appointments_follow_up",
+        "lesson_key": "b1-medical-appointments-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "follow-up"
+        },
+        "translations": {
+          "fa": "پیگیری"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_medical_appointments_follow_up",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "lemma": "follow-up",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_medical_appointments_follow_up"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_medical_appointments_follow_up",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "lexeme_ref": "lx_b1_medical_appointments_follow_up",
+        "surface_form": "follow-up",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_medical_appointments_duration",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "text": {
+          "en": "I've had this cough for about three weeks, and it hasn't improved."
+        },
+        "translations": {
+          "fa": "حدود سه هفته‌ست این سرفه رو دارم و بهتر نشده."
+        },
+        "intent": "describe_duration",
+        "concept_refs": [
+          "b1_medical_appointments_symptom",
+          "b1_medical_appointments_persistent",
+          "b1_medical_appointments_improve"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_medical_appointments_onset",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "text": {
+          "en": "The pain started suddenly on Tuesday evening after dinner."
+        },
+        "translations": {
+          "fa": "درد سه‌شنبه شب بعد شام ناگهانی شروع شد."
+        },
+        "intent": "describe_onset",
+        "concept_refs": [
+          "b1_medical_appointments_onset"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_medical_appointments_change",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "text": {
+          "en": "It was mild at first, but it has gradually become worse."
+        },
+        "translations": {
+          "fa": "اول خفیف بود، ولی کم‌کم بدتر شده."
+        },
+        "intent": "describe_symptom_change",
+        "concept_refs": [
+          "b1_medical_appointments_worsen"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_medical_appointments_swelling",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "text": {
+          "en": "There's some swelling around my ankle, especially by the end of the day."
+        },
+        "translations": {
+          "fa": "اطراف مچ پام کمی ورم هست، مخصوصاً آخر روز."
+        },
+        "intent": "describe_symptom",
+        "concept_refs": [
+          "b1_medical_appointments_swelling"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_medical_appointments_questions",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "text": {
+          "en": "Have you taken any medication for it yet?"
+        },
+        "translations": {
+          "fa": "تا حالا برایش دارویی مصرف کردی؟"
+        },
+        "intent": "answer_medical_question",
+        "concept_refs": [
+          "b1_medical_appointments_prescription"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_medical_appointments_dose",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "text": {
+          "en": "The doctor told me to take one dose with food twice a day."
+        },
+        "translations": {
+          "fa": "دکتر گفت روزی دو بار یک دوز همراه غذا بخورم."
+        },
+        "intent": "relay_medical_advice",
+        "concept_refs": [
+          "b1_medical_appointments_dose"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_medical_appointments_follow",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "text": {
+          "en": "She asked me to book a follow-up appointment if the symptoms didn't improve."
+        },
+        "translations": {
+          "fa": "گفت اگر علائم بهتر نشد برای پیگیری وقت بگیرم."
+        },
+        "intent": "relay_followup_advice",
+        "concept_refs": [
+          "b1_medical_appointments_follow_up",
+          "b1_medical_appointments_appointment"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_medical_appointments_clarify",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "text": {
+          "en": "Could you explain what side effects I should watch for?"
+        },
+        "translations": {
+          "fa": "می‌شه توضیح بدید باید مراقب چه عوارضی باشم؟"
+        },
+        "intent": "ask_for_clarification",
+        "concept_refs": [
+          "b1_medical_appointments_prescription"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_medical_appointments_for_since",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "slug": "b1-medical-appointments-for-since",
+        "title": "Present perfect with for / since",
+        "rule_summary": "Use present perfect with for for duration and since for the starting point of a situation continuing now.",
+        "explanation": {
+          "fa": "برای مدت از for و برای نقطه شروع از since همراه present perfect استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I've had it for three weeks.",
+            "fa": "سه هفته‌ست دارمش."
+          },
+          {
+            "en": "I've felt tired since Monday.",
+            "fa": "از دوشنبه خسته‌ام."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_medical_appointments_past_onset",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "slug": "b1-medical-appointments-past-onset",
+        "title": "Past simple for symptom onset",
+        "rule_summary": "Use past simple for the specific time a symptom began or a finished event connected to it.",
+        "explanation": {
+          "fa": "برای زمان مشخص شروع علامت یا اتفاق تمام‌شده مرتبط از past simple استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The pain started Tuesday night.",
+            "fa": "درد سه‌شنبه شب شروع شد."
+          },
+          {
+            "en": "I fell during a run yesterday.",
+            "fa": "دیروز هنگام دویدن افتادم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_medical_appointments_reported_advice",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "slug": "b1-medical-appointments-reported-advice",
+        "title": "Reported medical advice",
+        "rule_summary": "Use told me to / asked me to / said I should to report straightforward advice.",
+        "explanation": {
+          "fa": "برای انتقال توصیه پزشکی از told me to، asked me to یا said I should استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "She told me to rest.",
+            "fa": "گفت استراحت کنم."
+          },
+          {
+            "en": "He said I should drink more water.",
+            "fa": "گفت بهتره آب بیشتری بخورم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_medical_appointments_doctor",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "title": "Explaining symptoms",
+        "setting": "clinic",
+        "cefr": "B1",
+        "topic": "basic-health",
+        "characters": [
+          "Maya",
+          "Drake"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Drake",
+            "text": "What brings you in today?",
+            "translation_fa": "امروز برای چی اومدید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Maya",
+            "text": "I've had a cough for about three weeks, and it hasn't improved.",
+            "translation_fa": "حدود سه هفته‌ست سرفه دارم و بهتر نشده."
+          },
+          {
+            "order": 3,
+            "speaker": "Drake",
+            "text": "Did it start with a cold?",
+            "translation_fa": "با سرماخوردگی شروع شد؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Maya",
+            "text": "Yes, but the cold went away after a few days.",
+            "translation_fa": "آره، ولی سرماخوردگی بعد چند روز خوب شد."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_medical_appointments_ankle",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "title": "An ankle problem",
+        "setting": "clinic",
+        "cefr": "B1",
+        "topic": "basic-health",
+        "characters": [
+          "Hana",
+          "Claire"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Claire",
+            "text": "When did the ankle pain start?",
+            "translation_fa": "درد مچ پا کی شروع شد؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Hana",
+            "text": "Tuesday evening, after I went running.",
+            "translation_fa": "سه‌شنبه عصر، بعد از دویدن."
+          },
+          {
+            "order": 3,
+            "speaker": "Claire",
+            "text": "Has the swelling gotten worse since then?",
+            "translation_fa": "از اون موقع ورم بدتر شده؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Hana",
+            "text": "A little, especially in the evenings.",
+            "translation_fa": "کمی، مخصوصاً عصرها."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_medical_appointments_follow",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "title": "Understanding instructions",
+        "setting": "pharmacy",
+        "cefr": "B1",
+        "topic": "basic-health",
+        "characters": [
+          "Sofia",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "The doctor told me to take this twice a day.",
+            "translation_fa": "دکتر گفت روزی دو بار این رو بخورم."
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "Yes, one tablet with food in the morning and evening.",
+            "translation_fa": "بله، یک قرص همراه غذا صبح و عصر."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Are there any side effects I should watch for?",
+            "translation_fa": "عوارضی هست که باید مراقبش باشم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "If you feel very dizzy, stop taking it and contact your doctor.",
+            "translation_fa": "اگر خیلی سرگیجه گرفتی، مصرف رو قطع کن و با پزشکت تماس بگیر."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_medical_appointments_fill",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I've had this cough ___ three weeks."
+        },
+        "options": [
+          "for",
+          "since",
+          "ago",
+          "during"
+        ],
+        "answer": {
+          "value": "for"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_medical_appointments_listen1",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "The pain started suddenly on Tuesday evening after dinner."
+        },
+        "options": [
+          "درد سه‌شنبه شب بعد شام ناگهانی شروع شد.",
+          "حدود سه هفته‌ست این سرفه رو دارم و بهتر نشده.",
+          "تا حالا برایش دارویی مصرف کردی؟",
+          "گفت اگر علائم بهتر نشد برای پیگیری وقت بگیرم."
+        ],
+        "answer": {
+          "value": "درد سه‌شنبه شب بعد شام ناگهانی شروع شد."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_medical_appointments_speak1",
+      "data": {
+        "lesson_key": "b1-medical-appointments-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را طبیعی به انگلیسی بگو: اول خفیف بود، ولی کم‌کم بدتر شده."
+        },
+        "answer": {
+          "expected_text": "It was mild at first, but it has gradually become worse."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_medical_appointments_build1",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "اطراف مچ پام کمی ورم هست، مخصوصاً آخر روز.",
+          "tokens": [
+            "day.",
+            "the",
+            "of",
+            "end",
+            "the",
+            "by",
+            "especially",
+            "ankle,",
+            "my",
+            "around",
+            "swelling",
+            "some",
+            "There's"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "There's",
+            "some",
+            "swelling",
+            "around",
+            "my",
+            "ankle,",
+            "especially",
+            "by",
+            "the",
+            "end",
+            "of",
+            "the",
+            "day."
+          ],
+          "text": "There's some swelling around my ankle, especially by the end of the day."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_medical_appointments_meaning",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "Have you taken any medication for it yet?"
+        },
+        "options": [
+          "تا حالا برایش دارویی مصرف کردی؟",
+          "اول خفیف بود، ولی کم‌کم بدتر شده.",
+          "گفت اگر علائم بهتر نشد برای پیگیری وقت بگیرم.",
+          "حدود سه هفته‌ست این سرفه رو دارم و بهتر نشده."
+        ],
+        "answer": {
+          "value": "تا حالا برایش دارویی مصرف کردی؟"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_medical_appointments_listen2",
+      "data": {
+        "lesson_key": "b1-medical-appointments-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و منظور گوینده را انتخاب کن.",
+          "audio_text": "The doctor told me to take one dose with food twice a day."
+        },
+        "options": [
+          "دکتر گفت روزی دو بار یک دوز همراه غذا بخورم.",
+          "درد سه‌شنبه شب بعد شام ناگهانی شروع شد.",
+          "اطراف مچ پام کمی ورم هست، مخصوصاً آخر روز.",
+          "می‌شه توضیح بدید باید مراقب چه عوارضی باشم؟"
+        ],
+        "answer": {
+          "value": "دکتر گفت روزی دو بار یک دوز همراه غذا بخورم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_medical_appointments_speak2",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را با جمله کامل انگلیسی بگو: گفت اگر علائم بهتر نشد برای پیگیری وقت بگیرم."
+        },
+        "answer": {
+          "expected_text": "She asked me to book a follow-up appointment if the symptoms didn't improve."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_medical_appointments_build2",
+      "data": {
+        "lesson_key": "b1-medical-appointments-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "می‌شه توضیح بدید باید مراقب چه عوارضی باشم؟",
+          "tokens": [
+            "for?",
+            "watch",
+            "should",
+            "I",
+            "effects",
+            "side",
+            "what",
+            "explain",
+            "you",
+            "Could"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Could",
+            "you",
+            "explain",
+            "what",
+            "side",
+            "effects",
+            "I",
+            "should",
+            "watch",
+            "for?"
+          ],
+          "text": "Could you explain what side effects I should watch for?"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    }
+  ]
+}

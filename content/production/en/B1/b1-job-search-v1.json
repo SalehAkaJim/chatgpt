@@ -1,0 +1,1089 @@
+{
+  "batch_id": "en-us-b1-job-search-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B1",
+  "curriculum_unit": "b1-job-search",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_vacancy",
+      "data": {
+        "slug": "b1_job_search_vacancy",
+        "lesson_key": "b1-job-search-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "vacancy"
+        },
+        "translations": {
+          "fa": "فرصت شغلی"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_vacancy",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "lemma": "vacancy",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_vacancy"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_vacancy",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "lexeme_ref": "lx_b1_job_search_vacancy",
+        "surface_form": "vacancy",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_qualification",
+      "data": {
+        "slug": "b1_job_search_qualification",
+        "lesson_key": "b1-job-search-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "qualification"
+        },
+        "translations": {
+          "fa": "صلاحیت / مدرک"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_qualification",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "lemma": "qualification",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_qualification"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_qualification",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "lexeme_ref": "lx_b1_job_search_qualification",
+        "surface_form": "qualification",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_experience",
+      "data": {
+        "slug": "b1_job_search_experience",
+        "lesson_key": "b1-job-search-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "experience"
+        },
+        "translations": {
+          "fa": "تجربه"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_experience",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "lemma": "experience",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_experience"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_experience",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "lexeme_ref": "lx_b1_job_search_experience",
+        "surface_form": "experience",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_responsibility",
+      "data": {
+        "slug": "b1_job_search_responsibility",
+        "lesson_key": "b1-job-search-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "responsibility"
+        },
+        "translations": {
+          "fa": "مسئولیت"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_responsibility",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "lemma": "responsibility",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_responsibility"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_responsibility",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "lexeme_ref": "lx_b1_job_search_responsibility",
+        "surface_form": "responsibility",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_achievement",
+      "data": {
+        "slug": "b1_job_search_achievement",
+        "lesson_key": "b1-job-search-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "achievement"
+        },
+        "translations": {
+          "fa": "دستاورد"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_achievement",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "lemma": "achievement",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_achievement"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_achievement",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "lexeme_ref": "lx_b1_job_search_achievement",
+        "surface_form": "achievement",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_strength",
+      "data": {
+        "slug": "b1_job_search_strength",
+        "lesson_key": "b1-job-search-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "strength"
+        },
+        "translations": {
+          "fa": "نقطه قوت"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_strength",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "lemma": "strength",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_strength"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_strength",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "lexeme_ref": "lx_b1_job_search_strength",
+        "surface_form": "strength",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_candidate",
+      "data": {
+        "slug": "b1_job_search_candidate",
+        "lesson_key": "b1-job-search-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "candidate"
+        },
+        "translations": {
+          "fa": "متقاضی"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_candidate",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "lemma": "candidate",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_candidate"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_candidate",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "lexeme_ref": "lx_b1_job_search_candidate",
+        "surface_form": "candidate",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_interview",
+      "data": {
+        "slug": "b1_job_search_interview",
+        "lesson_key": "b1-job-search-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "interview"
+        },
+        "translations": {
+          "fa": "مصاحبه"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_interview",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "lemma": "interview",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_interview"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_interview",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "lexeme_ref": "lx_b1_job_search_interview",
+        "surface_form": "interview",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_apply",
+      "data": {
+        "slug": "b1_job_search_apply",
+        "lesson_key": "b1-job-search-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "apply"
+        },
+        "translations": {
+          "fa": "درخواست دادن"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_apply",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "lemma": "apply",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_job_search_apply"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_apply",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "lexeme_ref": "lx_b1_job_search_apply",
+        "surface_form": "apply",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_job_search_requirement",
+      "data": {
+        "slug": "b1_job_search_requirement",
+        "lesson_key": "b1-job-search-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "requirement"
+        },
+        "translations": {
+          "fa": "شرط / نیازمندی"
+        },
+        "cefr": "B1",
+        "topic": "jobs",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_job_search_requirement",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "lemma": "requirement",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_job_search_requirement"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_job_search_requirement",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "lexeme_ref": "lx_b1_job_search_requirement",
+        "surface_form": "requirement",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_job_search_vacancy",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "text": {
+          "en": "I found a vacancy that matches most of my experience, although I don't meet every requirement."
+        },
+        "translations": {
+          "fa": "یک فرصت شغلی پیدا کردم که با بیشتر تجربه‌م جور درمیاد، با اینکه همه شرایط رو ندارم."
+        },
+        "intent": "evaluate_vacancy",
+        "concept_refs": [
+          "b1_job_search_vacancy",
+          "b1_job_search_experience",
+          "b1_job_search_requirement"
+        ],
+        "cefr": "B1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_job_search_apply",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "text": {
+          "en": "I've applied for three roles this month, but this is the one I'm most interested in."
+        },
+        "translations": {
+          "fa": "این ماه برای سه نقش درخواست دادم، ولی این یکی بیشتر از همه برام جذابه."
+        },
+        "intent": "describe_job_search",
+        "concept_refs": [
+          "b1_job_search_apply"
+        ],
+        "cefr": "B1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_job_search_experience",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "text": {
+          "en": "I've worked in customer support for four years and led a small team for the last year."
+        },
+        "translations": {
+          "fa": "چهار سال در پشتیبانی مشتری کار کردم و یک سال اخیر یک تیم کوچک رو هدایت کردم."
+        },
+        "intent": "describe_experience",
+        "concept_refs": [
+          "b1_job_search_experience",
+          "b1_job_search_responsibility"
+        ],
+        "cefr": "B1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_job_search_achievement",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "text": {
+          "en": "One achievement I'm proud of is reducing response time by about twenty percent."
+        },
+        "translations": {
+          "fa": "یکی از دستاوردهایی که بهش افتخار می‌کنم کم کردن زمان پاسخ حدود بیست درصده."
+        },
+        "intent": "describe_achievement",
+        "concept_refs": [
+          "b1_job_search_achievement"
+        ],
+        "cefr": "B1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_job_search_strength",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "text": {
+          "en": "My main strength is staying calm and organized when several problems happen at once."
+        },
+        "translations": {
+          "fa": "نقطه قوت اصلی من آروم و منظم موندن وقتی چند مشکل هم‌زمان پیش میاد است."
+        },
+        "intent": "describe_strength",
+        "concept_refs": [
+          "b1_job_search_strength"
+        ],
+        "cefr": "B1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_job_search_relative",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "text": {
+          "en": "I'm looking for a role where I can take on more responsibility."
+        },
+        "translations": {
+          "fa": "دنبال نقشی هستم که بتونم مسئولیت بیشتری بگیرم."
+        },
+        "intent": "state_career_goal",
+        "concept_refs": [
+          "b1_job_search_responsibility"
+        ],
+        "cefr": "B1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_job_search_interview",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "text": {
+          "en": "Could you tell me more about what success looks like in the first six months?"
+        },
+        "translations": {
+          "fa": "می‌شه بیشتر توضیح بدید موفقیت در شش ماه اول چه شکلیه؟"
+        },
+        "intent": "ask_interview_question",
+        "concept_refs": [
+          "b1_job_search_interview"
+        ],
+        "cefr": "B1",
+        "topic": "jobs",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_job_search_fit",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "text": {
+          "en": "I think my experience fits the role because I've handled similar projects independently."
+        },
+        "translations": {
+          "fa": "فکر می‌کنم تجربه‌م با نقش جور درمیاد چون پروژه‌های مشابه رو مستقل مدیریت کردم."
+        },
+        "intent": "explain_fit",
+        "concept_refs": [
+          "b1_job_search_candidate",
+          "b1_job_search_experience"
+        ],
+        "cefr": "B1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_job_search_perfect_experience",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "slug": "b1-job-search-perfect-experience",
+        "title": "Present perfect for experience",
+        "rule_summary": "Use present perfect to summarize experience up to now, then past simple for finished examples.",
+        "explanation": {
+          "fa": "برای خلاصه تجربه تا حال از present perfect و برای مثال تمام‌شده از past simple استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I've worked in support for four years.",
+            "fa": "چهار ساله در پشتیبانی کار می‌کنم."
+          },
+          {
+            "en": "I led a migration last year.",
+            "fa": "پارسال یک مهاجرت رو هدایت کردم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_job_search_relative_jobs",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "slug": "b1-job-search-relative-jobs",
+        "title": "Relative clauses in job talk",
+        "rule_summary": "Use who/that/where to define people, roles, or workplaces.",
+        "explanation": {
+          "fa": "برای مشخص کردن افراد، نقش‌ها یا محیط کار از who/that/where استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I want a role where I can grow.",
+            "fa": "نقشی می‌خوام که بتونم رشد کنم."
+          },
+          {
+            "en": "We need someone who can work independently.",
+            "fa": "کسی می‌خوایم که مستقل کار کنه."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_job_search_interview_examples",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "slug": "b1-job-search-interview-examples",
+        "title": "Structured interview examples",
+        "rule_summary": "Use situation + action + result language to make examples clear and relevant.",
+        "explanation": {
+          "fa": "برای مثال مصاحبه از ساختار موقعیت + اقدام + نتیجه استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "We had a delay, so I reorganized the schedule and we finished on time.",
+            "fa": "تأخیر داشتیم، پس برنامه رو تغییر دادم و به موقع تموم کردیم."
+          },
+          {
+            "en": "A client complained; I listened, fixed the issue, and they renewed.",
+            "fa": "مشتری شکایت کرد؛ گوش دادم، مشکل رو حل کردم و تمدید کرد."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_job_search_vacancy",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "title": "Discussing a job ad",
+        "setting": "cafe",
+        "cefr": "B1",
+        "topic": "jobs",
+        "characters": [
+          "Lina",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lina",
+            "text": "This vacancy looks interesting, but I don't have all the listed qualifications.",
+            "translation_fa": "این فرصت جالبه، ولی همه شرایط نوشته‌شده رو ندارم."
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "Do you meet the main requirements?",
+            "translation_fa": "شرایط اصلی رو داری؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Lina",
+            "text": "Yes, and I have four years of related experience.",
+            "translation_fa": "آره، و چهار سال تجربه مرتبط دارم."
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "Then I'd apply. Job ads often describe the ideal candidate.",
+            "translation_fa": "پس درخواست می‌دادم. آگهی‌ها معمولاً متقاضی ایده‌آل رو توصیف می‌کنند."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_job_search_interview",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "title": "Interview experience question",
+        "setting": "interview room",
+        "cefr": "B1",
+        "topic": "jobs",
+        "characters": [
+          "Amir",
+          "Claire"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Claire",
+            "text": "Could you tell me about your current responsibilities?",
+            "translation_fa": "می‌تونید درباره مسئولیت‌های فعلیتون بگید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Amir",
+            "text": "I coordinate customer support for two product teams and train new staff.",
+            "translation_fa": "پشتیبانی مشتری دو تیم محصول رو هماهنگ می‌کنم و نیروی جدید آموزش می‌دم."
+          },
+          {
+            "order": 3,
+            "speaker": "Claire",
+            "text": "What's an achievement you're particularly proud of?",
+            "translation_fa": "به کدوم دستاوردتون بیشتر افتخار می‌کنید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Amir",
+            "text": "Last year I helped reduce our response time by twenty percent.",
+            "translation_fa": "پارسال کمک کردم زمان پاسخ‌مون بیست درصد کم بشه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_job_search_questions",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "title": "Candidate questions",
+        "setting": "interview room",
+        "cefr": "B1",
+        "topic": "jobs",
+        "characters": [
+          "Ravi",
+          "Priya"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ravi",
+            "text": "I have one question about the first few months in the role.",
+            "translation_fa": "یک سؤال درباره ماه‌های اول نقش دارم."
+          },
+          {
+            "order": 2,
+            "speaker": "Priya",
+            "text": "Of course.",
+            "translation_fa": "حتماً."
+          },
+          {
+            "order": 3,
+            "speaker": "Ravi",
+            "text": "What would you expect the successful candidate to achieve in the first six months?",
+            "translation_fa": "انتظار دارید متقاضی موفق در شش ماه اول به چه چیزی برسه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Priya",
+            "text": "The main goal would be taking ownership of two client accounts.",
+            "translation_fa": "هدف اصلی گرفتن مسئولیت دو حساب مشتریه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_job_search_fill",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I've worked in customer support ___ four years."
+        },
+        "options": [
+          "for",
+          "since",
+          "ago",
+          "during"
+        ],
+        "answer": {
+          "value": "for"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_job_search_listen1",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "I've applied for three roles this month, but this is the one I'm most interested in."
+        },
+        "options": [
+          "این ماه برای سه نقش درخواست دادم، ولی این یکی بیشتر از همه برام جذابه.",
+          "یک فرصت شغلی پیدا کردم که با بیشتر تجربه‌م جور درمیاد، با اینکه همه شرایط رو ندارم.",
+          "نقطه قوت اصلی من آروم و منظم موندن وقتی چند مشکل هم‌زمان پیش میاد است.",
+          "می‌شه بیشتر توضیح بدید موفقیت در شش ماه اول چه شکلیه؟"
+        ],
+        "answer": {
+          "value": "این ماه برای سه نقش درخواست دادم، ولی این یکی بیشتر از همه برام جذابه."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_job_search_speak1",
+      "data": {
+        "lesson_key": "b1-job-search-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را طبیعی به انگلیسی بگو: چهار سال در پشتیبانی مشتری کار کردم و یک سال اخیر یک تیم کوچک رو هدایت کردم."
+        },
+        "answer": {
+          "expected_text": "I've worked in customer support for four years and led a small team for the last year."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_job_search_build1",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "یکی از دستاوردهایی که بهش افتخار می‌کنم کم کردن زمان پاسخ حدود بیست درصده.",
+          "tokens": [
+            "percent.",
+            "twenty",
+            "about",
+            "by",
+            "time",
+            "response",
+            "reducing",
+            "is",
+            "of",
+            "proud",
+            "I'm",
+            "achievement",
+            "One"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "One",
+            "achievement",
+            "I'm",
+            "proud",
+            "of",
+            "is",
+            "reducing",
+            "response",
+            "time",
+            "by",
+            "about",
+            "twenty",
+            "percent."
+          ],
+          "text": "One achievement I'm proud of is reducing response time by about twenty percent."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_job_search_meaning",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "My main strength is staying calm and organized when several problems happen at once."
+        },
+        "options": [
+          "نقطه قوت اصلی من آروم و منظم موندن وقتی چند مشکل هم‌زمان پیش میاد است.",
+          "چهار سال در پشتیبانی مشتری کار کردم و یک سال اخیر یک تیم کوچک رو هدایت کردم.",
+          "می‌شه بیشتر توضیح بدید موفقیت در شش ماه اول چه شکلیه؟",
+          "یک فرصت شغلی پیدا کردم که با بیشتر تجربه‌م جور درمیاد، با اینکه همه شرایط رو ندارم."
+        ],
+        "answer": {
+          "value": "نقطه قوت اصلی من آروم و منظم موندن وقتی چند مشکل هم‌زمان پیش میاد است."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_job_search_listen2",
+      "data": {
+        "lesson_key": "b1-job-search-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و منظور گوینده را انتخاب کن.",
+          "audio_text": "I'm looking for a role where I can take on more responsibility."
+        },
+        "options": [
+          "دنبال نقشی هستم که بتونم مسئولیت بیشتری بگیرم.",
+          "این ماه برای سه نقش درخواست دادم، ولی این یکی بیشتر از همه برام جذابه.",
+          "یکی از دستاوردهایی که بهش افتخار می‌کنم کم کردن زمان پاسخ حدود بیست درصده.",
+          "فکر می‌کنم تجربه‌م با نقش جور درمیاد چون پروژه‌های مشابه رو مستقل مدیریت کردم."
+        ],
+        "answer": {
+          "value": "دنبال نقشی هستم که بتونم مسئولیت بیشتری بگیرم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_job_search_speak2",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را با جمله کامل انگلیسی بگو: می‌شه بیشتر توضیح بدید موفقیت در شش ماه اول چه شکلیه؟"
+        },
+        "answer": {
+          "expected_text": "Could you tell me more about what success looks like in the first six months?"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_job_search_build2",
+      "data": {
+        "lesson_key": "b1-job-search-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "فکر می‌کنم تجربه‌م با نقش جور درمیاد چون پروژه‌های مشابه رو مستقل مدیریت کردم.",
+          "tokens": [
+            "independently.",
+            "projects",
+            "similar",
+            "handled",
+            "I've",
+            "because",
+            "role",
+            "the",
+            "fits",
+            "experience",
+            "my",
+            "think",
+            "I"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I",
+            "think",
+            "my",
+            "experience",
+            "fits",
+            "the",
+            "role",
+            "because",
+            "I've",
+            "handled",
+            "similar",
+            "projects",
+            "independently."
+          ],
+          "text": "I think my experience fits the role because I've handled similar projects independently."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1075 @@
+{
+  "batch_id": "en-us-b1-agree-disagree-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B1",
+  "curriculum_unit": "b1-agree-disagree",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_completely",
+      "data": {
+        "slug": "b1_agree_disagree_completely",
+        "lesson_key": "b1-agree-disagree-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "completely"
+        },
+        "translations": {
+          "fa": "کاملاً"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_completely",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "lemma": "completely",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "b1_agree_disagree_completely"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_completely",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "lexeme_ref": "lx_b1_agree_disagree_completely",
+        "surface_form": "completely",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_partly",
+      "data": {
+        "slug": "b1_agree_disagree_partly",
+        "lesson_key": "b1-agree-disagree-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "partly"
+        },
+        "translations": {
+          "fa": "تا حدی"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_partly",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "lemma": "partly",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "b1_agree_disagree_partly"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_partly",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "lexeme_ref": "lx_b1_agree_disagree_partly",
+        "surface_form": "partly",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_fair_point",
+      "data": {
+        "slug": "b1_agree_disagree_fair_point",
+        "lesson_key": "b1-agree-disagree-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "fair point"
+        },
+        "translations": {
+          "fa": "نکته منصفانه"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_fair_point",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "lemma": "fair point",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrase",
+        "concept_refs": [
+          "b1_agree_disagree_fair_point"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_fair_point",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "lexeme_ref": "lx_b1_agree_disagree_fair_point",
+        "surface_form": "fair point",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_not_necessarily",
+      "data": {
+        "slug": "b1_agree_disagree_not_necessarily",
+        "lesson_key": "b1-agree-disagree-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "not necessarily"
+        },
+        "translations": {
+          "fa": "لزومی نداره / نه لزوماً"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_not_necessarily",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "lemma": "not necessarily",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrase",
+        "concept_refs": [
+          "b1_agree_disagree_not_necessarily"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_not_necessarily",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "lexeme_ref": "lx_b1_agree_disagree_not_necessarily",
+        "surface_form": "not necessarily",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_however",
+      "data": {
+        "slug": "b1_agree_disagree_however",
+        "lesson_key": "b1-agree-disagree-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "however"
+        },
+        "translations": {
+          "fa": "با این حال"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_however",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "lemma": "however",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "b1_agree_disagree_however"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_however",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "lexeme_ref": "lx_b1_agree_disagree_however",
+        "surface_form": "however",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_whereas",
+      "data": {
+        "slug": "b1_agree_disagree_whereas",
+        "lesson_key": "b1-agree-disagree-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "whereas"
+        },
+        "translations": {
+          "fa": "در حالی که"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_whereas",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "lemma": "whereas",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "conjunction",
+        "concept_refs": [
+          "b1_agree_disagree_whereas"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_whereas",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "lexeme_ref": "lx_b1_agree_disagree_whereas",
+        "surface_form": "whereas",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_respectfully",
+      "data": {
+        "slug": "b1_agree_disagree_respectfully",
+        "lesson_key": "b1-agree-disagree-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "respectfully"
+        },
+        "translations": {
+          "fa": "با احترام"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_respectfully",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "lemma": "respectfully",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "b1_agree_disagree_respectfully"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_respectfully",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "lexeme_ref": "lx_b1_agree_disagree_respectfully",
+        "surface_form": "respectfully",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_perspective",
+      "data": {
+        "slug": "b1_agree_disagree_perspective",
+        "lesson_key": "b1-agree-disagree-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "perspective"
+        },
+        "translations": {
+          "fa": "دیدگاه"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_perspective",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "lemma": "perspective",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_agree_disagree_perspective"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_perspective",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "lexeme_ref": "lx_b1_agree_disagree_perspective",
+        "surface_form": "perspective",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_convince",
+      "data": {
+        "slug": "b1_agree_disagree_convince",
+        "lesson_key": "b1-agree-disagree-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "convince"
+        },
+        "translations": {
+          "fa": "قانع کردن"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_convince",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "lemma": "convince",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_agree_disagree_convince"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_convince",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "lexeme_ref": "lx_b1_agree_disagree_convince",
+        "surface_form": "convince",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_agree_disagree_soften",
+      "data": {
+        "slug": "b1_agree_disagree_soften",
+        "lesson_key": "b1-agree-disagree-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "soften"
+        },
+        "translations": {
+          "fa": "ملایم کردن"
+        },
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_agree_disagree_soften",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "lemma": "soften",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_agree_disagree_soften"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_agree_disagree_soften",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "lexeme_ref": "lx_b1_agree_disagree_soften",
+        "surface_form": "soften",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_agree_disagree_agree",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "text": {
+          "en": "I completely agree that the current system is too complicated."
+        },
+        "translations": {
+          "fa": "کاملاً موافقم که سیستم فعلی زیادی پیچیده است."
+        },
+        "intent": "agree_strongly",
+        "concept_refs": [
+          "b1_agree_disagree_completely"
+        ],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_agree_disagree_partial",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "text": {
+          "en": "I partly agree, but I don't think cost is the only issue."
+        },
+        "translations": {
+          "fa": "تا حدی موافقم، ولی فکر نمی‌کنم هزینه تنها مشکل باشه."
+        },
+        "intent": "agree_partly",
+        "concept_refs": [
+          "b1_agree_disagree_partly"
+        ],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_agree_disagree_fair",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "text": {
+          "en": "That's a fair point, although I see the situation a little differently."
+        },
+        "translations": {
+          "fa": "نکته منصفانه‌ایه، با اینکه من موقعیت رو کمی متفاوت می‌بینم."
+        },
+        "intent": "acknowledge_then_disagree",
+        "concept_refs": [
+          "b1_agree_disagree_fair_point",
+          "b1_agree_disagree_perspective"
+        ],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_agree_disagree_notnecessarily",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "text": {
+          "en": "Not necessarily. Some people are more productive with fewer meetings."
+        },
+        "translations": {
+          "fa": "نه لزوماً. بعضی‌ها با جلسه‌های کمتر بهره‌ورترند."
+        },
+        "intent": "challenge_claim",
+        "concept_refs": [
+          "b1_agree_disagree_not_necessarily"
+        ],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_agree_disagree_however",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "text": {
+          "en": "The idea is simple. However, it could be difficult to apply fairly."
+        },
+        "translations": {
+          "fa": "ایده ساده است. با این حال ممکنه اجرای منصفانه‌اش سخت باشه."
+        },
+        "intent": "add_contrast",
+        "concept_refs": [
+          "b1_agree_disagree_however"
+        ],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_agree_disagree_whereas",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "text": {
+          "en": "I prefer working early, whereas my teammate does her best work in the evening."
+        },
+        "translations": {
+          "fa": "من کار کردن صبح زود رو ترجیح می‌دم، در حالی که هم‌تیمی‌م عصرها بهترین عملکردش رو داره."
+        },
+        "intent": "contrast_preferences",
+        "concept_refs": [
+          "b1_agree_disagree_whereas"
+        ],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_agree_disagree_soften",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "text": {
+          "en": "I may be wrong, but I don't think that solution addresses the main problem."
+        },
+        "translations": {
+          "fa": "ممکنه اشتباه کنم، ولی فکر نمی‌کنم اون راه‌حل مشکل اصلی رو حل کنه."
+        },
+        "intent": "soften_disagreement",
+        "concept_refs": [
+          "b1_agree_disagree_soften"
+        ],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_agree_disagree_respect",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "text": {
+          "en": "I respect that perspective, even though it hasn't convinced me."
+        },
+        "translations": {
+          "fa": "به اون دیدگاه احترام می‌ذارم، با اینکه هنوز من رو قانع نکرده."
+        },
+        "intent": "disagree_respectfully",
+        "concept_refs": [
+          "b1_agree_disagree_respectfully",
+          "b1_agree_disagree_convince"
+        ],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_agree_disagree_so_neither",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "slug": "b1-agree-disagree-so-neither",
+        "title": "so / neither for agreement",
+        "rule_summary": "Use So + auxiliary + subject to agree with a positive statement and Neither + auxiliary + subject for a negative one.",
+        "explanation": {
+          "fa": "برای موافقت با جمله مثبت از So + فعل کمکی + فاعل و برای جمله منفی از Neither استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I enjoy it. So do I.",
+            "fa": "من دوستش دارم. من هم همین‌طور."
+          },
+          {
+            "en": "I don't drive. Neither do I.",
+            "fa": "من رانندگی نمی‌کنم. من هم نمی‌کنم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_agree_disagree_contrast",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "slug": "b1-agree-disagree-contrast",
+        "title": "Contrast markers",
+        "rule_summary": "Use however, whereas, while, and on the other hand to compare opposing points clearly.",
+        "explanation": {
+          "fa": "برای مقایسه دیدگاه‌های مخالف از however، whereas، while و on the other hand استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "It's cheaper; however, it's less reliable.",
+            "fa": "ارزان‌تره؛ با این حال کمتر قابل‌اعتماده."
+          },
+          {
+            "en": "I work early, whereas she works late.",
+            "fa": "من زود کار می‌کنم، در حالی که او دیر کار می‌کنه."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_agree_disagree_softening",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "slug": "b1-agree-disagree-softening",
+        "title": "Softening disagreement",
+        "rule_summary": "Use phrases such as I see your point, but…, I'm not sure…, or I may be wrong, but… to disagree politely.",
+        "explanation": {
+          "fa": "برای مخالفت مؤدبانه از عبارت‌هایی مثل I see your point, but، I'm not sure و I may be wrong, but استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I see your point, but I still disagree.",
+            "fa": "حرفت رو می‌فهمم، ولی هنوز مخالفم."
+          },
+          {
+            "en": "I'm not sure that's the best option.",
+            "fa": "مطمئن نیستم اون بهترین گزینه باشه."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_agree_disagree_meetings",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "title": "Too many meetings",
+        "setting": "office",
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Maya",
+          "Leo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "I think we have too many meetings.",
+            "translation_fa": "فکر می‌کنم جلسه‌هامون خیلی زیاده."
+          },
+          {
+            "order": 2,
+            "speaker": "Leo",
+            "text": "I completely agree. Half of them could be emails.",
+            "translation_fa": "کاملاً موافقم. نصفشون می‌تونست ایمیل باشه."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "Exactly. We need more uninterrupted work time.",
+            "translation_fa": "دقیقاً. به زمان کاری بدون وقفه بیشتری نیاز داریم."
+          },
+          {
+            "order": 4,
+            "speaker": "Leo",
+            "text": "So do I, especially in the mornings.",
+            "translation_fa": "منم همین‌طور، مخصوصاً صبح‌ها."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_agree_disagree_cars",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "title": "Cars in the city center",
+        "setting": "cafe",
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Hana",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Hana",
+            "text": "I think cars should be banned from the city center.",
+            "translation_fa": "فکر می‌کنم ماشین‌ها باید از مرکز شهر ممنوع بشن."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "I see your point, but not everyone can use public transportation.",
+            "translation_fa": "حرفت رو می‌فهمم، ولی همه نمی‌تونن از حمل‌ونقل عمومی استفاده کنند."
+          },
+          {
+            "order": 3,
+            "speaker": "Hana",
+            "text": "That's fair. Maybe residents could get special permits.",
+            "translation_fa": "منصفانه‌ست. شاید ساکن‌ها بتونن مجوز ویژه بگیرن."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "I'd support that compromise.",
+            "translation_fa": "من از اون سازش حمایت می‌کنم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_agree_disagree_policy",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "title": "A respectful disagreement",
+        "setting": "team meeting",
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Sofia",
+          "Omar"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "I don't think this policy will reduce costs.",
+            "translation_fa": "فکر نمی‌کنم این سیاست هزینه‌ها رو کم کنه."
+          },
+          {
+            "order": 2,
+            "speaker": "Omar",
+            "text": "Really? I think it could save us money over time.",
+            "translation_fa": "جدی؟ فکر می‌کنم در طول زمان می‌تونه پول ذخیره کنه."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Possibly, but I'm not convinced by the current numbers.",
+            "translation_fa": "ممکنه، ولی اعداد فعلی من رو قانع نکرده."
+          },
+          {
+            "order": 4,
+            "speaker": "Omar",
+            "text": "Fair enough. Let's review the data again.",
+            "translation_fa": "باشه. دوباره داده‌ها رو بررسی کنیم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_agree_disagree_fill",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I see your point, ___ I still disagree."
+        },
+        "options": [
+          "but",
+          "because",
+          "so",
+          "unless"
+        ],
+        "answer": {
+          "value": "but"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_agree_disagree_listen1",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "I partly agree, but I don't think cost is the only issue."
+        },
+        "options": [
+          "تا حدی موافقم، ولی فکر نمی‌کنم هزینه تنها مشکل باشه.",
+          "کاملاً موافقم که سیستم فعلی زیادی پیچیده است.",
+          "ایده ساده است. با این حال ممکنه اجرای منصفانه‌اش سخت باشه.",
+          "ممکنه اشتباه کنم، ولی فکر نمی‌کنم اون راه‌حل مشکل اصلی رو حل کنه."
+        ],
+        "answer": {
+          "value": "تا حدی موافقم، ولی فکر نمی‌کنم هزینه تنها مشکل باشه."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_agree_disagree_speak1",
+      "data": {
+        "lesson_key": "b1-agree-disagree-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را طبیعی به انگلیسی بگو: نکته منصفانه‌ایه، با اینکه من موقعیت رو کمی متفاوت می‌بینم."
+        },
+        "answer": {
+          "expected_text": "That's a fair point, although I see the situation a little differently."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_agree_disagree_build1",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "نه لزوماً. بعضی‌ها با جلسه‌های کمتر بهره‌ورترند.",
+          "tokens": [
+            "meetings.",
+            "fewer",
+            "with",
+            "productive",
+            "more",
+            "are",
+            "people",
+            "Some",
+            "necessarily.",
+            "Not"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Not",
+            "necessarily.",
+            "Some",
+            "people",
+            "are",
+            "more",
+            "productive",
+            "with",
+            "fewer",
+            "meetings."
+          ],
+          "text": "Not necessarily. Some people are more productive with fewer meetings."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_agree_disagree_meaning",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "The idea is simple. However, it could be difficult to apply fairly."
+        },
+        "options": [
+          "ایده ساده است. با این حال ممکنه اجرای منصفانه‌اش سخت باشه.",
+          "نکته منصفانه‌ایه، با اینکه من موقعیت رو کمی متفاوت می‌بینم.",
+          "ممکنه اشتباه کنم، ولی فکر نمی‌کنم اون راه‌حل مشکل اصلی رو حل کنه.",
+          "کاملاً موافقم که سیستم فعلی زیادی پیچیده است."
+        ],
+        "answer": {
+          "value": "ایده ساده است. با این حال ممکنه اجرای منصفانه‌اش سخت باشه."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_agree_disagree_listen2",
+      "data": {
+        "lesson_key": "b1-agree-disagree-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و منظور گوینده را انتخاب کن.",
+          "audio_text": "I prefer working early, whereas my teammate does her best work in the evening."
+        },
+        "options": [
+          "من کار کردن صبح زود رو ترجیح می‌دم، در حالی که هم‌تیمی‌م عصرها بهترین عملکردش رو داره.",
+          "تا حدی موافقم، ولی فکر نمی‌کنم هزینه تنها مشکل باشه.",
+          "نه لزوماً. بعضی‌ها با جلسه‌های کمتر بهره‌ورترند.",
+          "به اون دیدگاه احترام می‌ذارم، با اینکه هنوز من رو قانع نکرده."
+        ],
+        "answer": {
+          "value": "من کار کردن صبح زود رو ترجیح می‌دم، در حالی که هم‌تیمی‌م عصرها بهترین عملکردش رو داره."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_agree_disagree_speak2",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را با جمله کامل انگلیسی بگو: ممکنه اشتباه کنم، ولی فکر نمی‌کنم اون راه‌حل مشکل اصلی رو حل کنه."
+        },
+        "answer": {
+          "expected_text": "I may be wrong, but I don't think that solution addresses the main problem."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_agree_disagree_build2",
+      "data": {
+        "lesson_key": "b1-agree-disagree-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "به اون دیدگاه احترام می‌ذارم، با اینکه هنوز من رو قانع نکرده.",
+          "tokens": [
+            "me.",
+            "convinced",
+            "hasn't",
+            "it",
+            "though",
+            "even",
+            "perspective,",
+            "that",
+            "respect",
+            "I"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I",
+            "respect",
+            "that",
+            "perspective,",
+            "even",
+            "though",
+            "it",
+            "hasn't",
+            "convinced",
+            "me."
+          ],
+          "text": "I respect that perspective, even though it hasn't convinced me."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    }
+  ]
+}

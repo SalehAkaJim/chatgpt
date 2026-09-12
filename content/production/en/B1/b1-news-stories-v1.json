@@ -1,0 +1,1092 @@
+{
+  "batch_id": "en-us-b1-news-stories-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B1",
+  "curriculum_unit": "b1-news-stories",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_headline",
+      "data": {
+        "slug": "b1_news_stories_headline",
+        "lesson_key": "b1-news-stories-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "headline"
+        },
+        "translations": {
+          "fa": "تیتر"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_headline",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "lemma": "headline",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_news_stories_headline"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_headline",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "lexeme_ref": "lx_b1_news_stories_headline",
+        "surface_form": "headline",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_report",
+      "data": {
+        "slug": "b1_news_stories_report",
+        "lesson_key": "b1-news-stories-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "report"
+        },
+        "translations": {
+          "fa": "گزارش"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_report",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "lemma": "report",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_news_stories_report"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_report",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "lexeme_ref": "lx_b1_news_stories_report",
+        "surface_form": "report",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_source",
+      "data": {
+        "slug": "b1_news_stories_source",
+        "lesson_key": "b1-news-stories-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "source"
+        },
+        "translations": {
+          "fa": "منبع"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_source",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "lemma": "source",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_news_stories_source"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_source",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "lexeme_ref": "lx_b1_news_stories_source",
+        "surface_form": "source",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_according_to",
+      "data": {
+        "slug": "b1_news_stories_according_to",
+        "lesson_key": "b1-news-stories-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "according to"
+        },
+        "translations": {
+          "fa": "طبق"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_according_to",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "lemma": "according to",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrase",
+        "concept_refs": [
+          "b1_news_stories_according_to"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_according_to",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "lexeme_ref": "lx_b1_news_stories_according_to",
+        "surface_form": "according to",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_announce",
+      "data": {
+        "slug": "b1_news_stories_announce",
+        "lesson_key": "b1-news-stories-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "announce"
+        },
+        "translations": {
+          "fa": "اعلام کردن"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_announce",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "lemma": "announce",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_news_stories_announce"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_announce",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "lexeme_ref": "lx_b1_news_stories_announce",
+        "surface_form": "announce",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_incident",
+      "data": {
+        "slug": "b1_news_stories_incident",
+        "lesson_key": "b1-news-stories-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "incident"
+        },
+        "translations": {
+          "fa": "حادثه"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_incident",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "lemma": "incident",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_news_stories_incident"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_incident",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "lexeme_ref": "lx_b1_news_stories_incident",
+        "surface_form": "incident",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_official",
+      "data": {
+        "slug": "b1_news_stories_official",
+        "lesson_key": "b1-news-stories-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "official"
+        },
+        "translations": {
+          "fa": "رسمی"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_official",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "lemma": "official",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b1_news_stories_official"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_official",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "lexeme_ref": "lx_b1_news_stories_official",
+        "surface_form": "official",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_detail",
+      "data": {
+        "slug": "b1_news_stories_detail",
+        "lesson_key": "b1-news-stories-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "detail"
+        },
+        "translations": {
+          "fa": "جزئیات"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_detail",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "lemma": "detail",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_news_stories_detail"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_detail",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "lexeme_ref": "lx_b1_news_stories_detail",
+        "surface_form": "detail",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_confirm",
+      "data": {
+        "slug": "b1_news_stories_confirm",
+        "lesson_key": "b1-news-stories-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "confirm"
+        },
+        "translations": {
+          "fa": "تأیید کردن"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_confirm",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "lemma": "confirm",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b1_news_stories_confirm"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_confirm",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "lexeme_ref": "lx_b1_news_stories_confirm",
+        "surface_form": "confirm",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b1_news_stories_summary",
+      "data": {
+        "slug": "b1_news_stories_summary",
+        "lesson_key": "b1-news-stories-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "summary"
+        },
+        "translations": {
+          "fa": "خلاصه"
+        },
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b1_news_stories_summary",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "lemma": "summary",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b1_news_stories_summary"
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b1_news_stories_summary",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "lexeme_ref": "lx_b1_news_stories_summary",
+        "surface_form": "summary",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_news_stories_headline",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "text": {
+          "en": "The headline makes the story sound dramatic, but the actual report is more balanced."
+        },
+        "translations": {
+          "fa": "تیتر داستان رو خیلی دراماتیک نشون می‌ده، ولی گزارش واقعی متعادل‌تره."
+        },
+        "intent": "compare_headline_report",
+        "concept_refs": [
+          "b1_news_stories_headline",
+          "b1_news_stories_report"
+        ],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_news_stories_main",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "text": {
+          "en": "The main point is that the city has announced a new bus route starting next month."
+        },
+        "translations": {
+          "fa": "نکته اصلی اینه که شهر یک مسیر اتوبوس جدید از ماه بعد اعلام کرده."
+        },
+        "intent": "summarize_main_point",
+        "concept_refs": [
+          "b1_news_stories_announce",
+          "b1_news_stories_summary"
+        ],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_news_stories_source",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "text": {
+          "en": "According to the transport department, the route will serve three new neighborhoods."
+        },
+        "translations": {
+          "fa": "طبق اداره حمل‌ونقل، مسیر سه محله جدید رو پوشش می‌ده."
+        },
+        "intent": "cite_source",
+        "concept_refs": [
+          "b1_news_stories_according_to",
+          "b1_news_stories_source"
+        ],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_news_stories_passive",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "text": {
+          "en": "Two roads were closed after the incident, but they reopened later that evening."
+        },
+        "translations": {
+          "fa": "دو خیابون بعد حادثه بسته شدند، ولی همون شب دوباره باز شدند."
+        },
+        "intent": "report_event",
+        "concept_refs": [
+          "b1_news_stories_incident"
+        ],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_news_stories_confirm",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "text": {
+          "en": "Officials haven't confirmed the cause yet."
+        },
+        "translations": {
+          "fa": "مقام‌ها هنوز علت رو تأیید نکردند."
+        },
+        "intent": "state_unconfirmed_detail",
+        "concept_refs": [
+          "b1_news_stories_official",
+          "b1_news_stories_confirm"
+        ],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_news_stories_detail",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "text": {
+          "en": "The report gives several details, but only one of them affects commuters directly."
+        },
+        "translations": {
+          "fa": "گزارش چند جزئیات می‌ده، ولی فقط یکی مستقیماً روی رفت‌وآمدکننده‌ها اثر داره."
+        },
+        "intent": "distinguish_detail",
+        "concept_refs": [
+          "b1_news_stories_detail",
+          "b1_news_stories_report"
+        ],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_news_stories_reported",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "text": {
+          "en": "The mayor said the project would reduce travel time in the area."
+        },
+        "translations": {
+          "fa": "شهردار گفت پروژه زمان سفر در منطقه رو کم می‌کنه."
+        },
+        "intent": "report_statement",
+        "concept_refs": [
+          "b1_news_stories_announce"
+        ],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_news_stories_relay",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "text": {
+          "en": "In short, the service is expanding, but the exact schedule hasn't been published yet."
+        },
+        "translations": {
+          "fa": "خلاصه اینکه سرویس داره گسترش پیدا می‌کنه، ولی برنامه دقیق هنوز منتشر نشده."
+        },
+        "intent": "relay_summary",
+        "concept_refs": [
+          "b1_news_stories_summary"
+        ],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_news_stories_passive_news",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "slug": "b1-news-stories-passive-news",
+        "title": "Passive voice in news",
+        "rule_summary": "Use passive forms when the event or result is more important than the actor.",
+        "explanation": {
+          "fa": "در خبر وقتی رویداد یا نتیجه مهم‌تر از انجام‌دهنده است از passive استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Two roads were closed.",
+            "fa": "دو خیابون بسته شدند."
+          },
+          {
+            "en": "A new service has been announced.",
+            "fa": "سرویس جدیدی اعلام شده."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_news_stories_reported_news",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "slug": "b1-news-stories-reported-news",
+        "title": "Reported speech introduction",
+        "rule_summary": "Use said that / announced that / reported that to relay statements without quoting exactly.",
+        "explanation": {
+          "fa": "برای انتقال گفته‌ها بدون نقل قول مستقیم از said that، announced that و reported that استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The mayor said the project would help.",
+            "fa": "شهردار گفت پروژه کمک می‌کنه."
+          },
+          {
+            "en": "The company announced that prices would rise.",
+            "fa": "شرکت اعلام کرد قیمت‌ها بالا می‌ره."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b1_news_stories_cause_time",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "slug": "b1-news-stories-cause-time",
+        "title": "Time and cause links",
+        "rule_summary": "Use after, before, while, because, and as a result to connect events in a news summary.",
+        "explanation": {
+          "fa": "برای وصل کردن رویدادهای خبری از after، before، while، because و as a result استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The road closed after a crash.",
+            "fa": "خیابون بعد تصادف بسته شد."
+          },
+          {
+            "en": "Demand increased, so more trains were added.",
+            "fa": "تقاضا بالا رفت، پس قطار بیشتری اضافه شد."
+          }
+        ],
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_news_stories_transit",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "title": "Discussing a local news story",
+        "setting": "office",
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "characters": [
+          "Maya",
+          "Leo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "Did you see the story about the new bus route?",
+            "translation_fa": "خبر مسیر اتوبوس جدید رو دیدی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Leo",
+            "text": "Only the headline. What's changing?",
+            "translation_fa": "فقط تیتر رو. چی عوض می‌شه؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "The city is adding a route through three neighborhoods that don't have direct service now.",
+            "translation_fa": "شهر مسیری اضافه می‌کنه که از سه محله بدون سرویس مستقیم رد می‌شه."
+          },
+          {
+            "order": 4,
+            "speaker": "Leo",
+            "text": "That could make a big difference for commuters there.",
+            "translation_fa": "برای رفت‌وآمدکننده‌های اونجا می‌تونه تفاوت بزرگی ایجاد کنه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_news_stories_incident",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "title": "Separating facts from unknowns",
+        "setting": "cafe",
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "characters": [
+          "Hana",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Hana",
+            "text": "The article says two roads were closed after an incident downtown.",
+            "translation_fa": "مقاله می‌گه دو خیابون بعد حادثه مرکز شهر بسته شدند."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Do they know what caused it?",
+            "translation_fa": "می‌دونن علت چی بوده؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Hana",
+            "text": "Not yet. Officials haven't confirmed the cause.",
+            "translation_fa": "هنوز نه. مقام‌ها علت رو تأیید نکردند."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Then the comments online are probably mostly guesses.",
+            "translation_fa": "پس کامنت‌های آنلاین احتمالاً بیشتر حدسه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_news_stories_summary",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "title": "Relaying the main point",
+        "setting": "phone call",
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "characters": [
+          "Sofia",
+          "Omar"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Omar",
+            "text": "I missed the news. Anything important about the train line?",
+            "translation_fa": "خبر رو ندیدم. درباره خط قطار چیز مهمی بود؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Sofia",
+            "text": "Basically, weekend service is increasing next month.",
+            "translation_fa": "خلاصه اینکه سرویس آخرهفته ماه بعد بیشتر می‌شه."
+          },
+          {
+            "order": 3,
+            "speaker": "Omar",
+            "text": "Do they have the new schedule yet?",
+            "translation_fa": "برنامه جدید رو دارند؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Sofia",
+            "text": "Not yet. They said it'll be published next week.",
+            "translation_fa": "هنوز نه. گفتند هفته بعد منتشر می‌شه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_news_stories_fill",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "According ___ the report, the road will reopen tonight."
+        },
+        "options": [
+          "to",
+          "with",
+          "for",
+          "from"
+        ],
+        "answer": {
+          "value": "to"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_news_stories_listen1",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "The main point is that the city has announced a new bus route starting next month."
+        },
+        "options": [
+          "نکته اصلی اینه که شهر یک مسیر اتوبوس جدید از ماه بعد اعلام کرده.",
+          "تیتر داستان رو خیلی دراماتیک نشون می‌ده، ولی گزارش واقعی متعادل‌تره.",
+          "مقام‌ها هنوز علت رو تأیید نکردند.",
+          "شهردار گفت پروژه زمان سفر در منطقه رو کم می‌کنه."
+        ],
+        "answer": {
+          "value": "نکته اصلی اینه که شهر یک مسیر اتوبوس جدید از ماه بعد اعلام کرده."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_news_stories_speak1",
+      "data": {
+        "lesson_key": "b1-news-stories-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را طبیعی به انگلیسی بگو: طبق اداره حمل‌ونقل، مسیر سه محله جدید رو پوشش می‌ده."
+        },
+        "answer": {
+          "expected_text": "According to the transport department, the route will serve three new neighborhoods."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_news_stories_build1",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "دو خیابون بعد حادثه بسته شدند، ولی همون شب دوباره باز شدند.",
+          "tokens": [
+            "evening.",
+            "that",
+            "later",
+            "reopened",
+            "they",
+            "but",
+            "incident,",
+            "the",
+            "after",
+            "closed",
+            "were",
+            "roads",
+            "Two"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Two",
+            "roads",
+            "were",
+            "closed",
+            "after",
+            "the",
+            "incident,",
+            "but",
+            "they",
+            "reopened",
+            "later",
+            "that",
+            "evening."
+          ],
+          "text": "Two roads were closed after the incident, but they reopened later that evening."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_news_stories_meaning",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "Officials haven't confirmed the cause yet."
+        },
+        "options": [
+          "مقام‌ها هنوز علت رو تأیید نکردند.",
+          "طبق اداره حمل‌ونقل، مسیر سه محله جدید رو پوشش می‌ده.",
+          "شهردار گفت پروژه زمان سفر در منطقه رو کم می‌کنه.",
+          "تیتر داستان رو خیلی دراماتیک نشون می‌ده، ولی گزارش واقعی متعادل‌تره."
+        ],
+        "answer": {
+          "value": "مقام‌ها هنوز علت رو تأیید نکردند."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_news_stories_listen2",
+      "data": {
+        "lesson_key": "b1-news-stories-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و منظور گوینده را انتخاب کن.",
+          "audio_text": "The report gives several details, but only one of them affects commuters directly."
+        },
+        "options": [
+          "گزارش چند جزئیات می‌ده، ولی فقط یکی مستقیماً روی رفت‌وآمدکننده‌ها اثر داره.",
+          "نکته اصلی اینه که شهر یک مسیر اتوبوس جدید از ماه بعد اعلام کرده.",
+          "دو خیابون بعد حادثه بسته شدند، ولی همون شب دوباره باز شدند.",
+          "خلاصه اینکه سرویس داره گسترش پیدا می‌کنه، ولی برنامه دقیق هنوز منتشر نشده."
+        ],
+        "answer": {
+          "value": "گزارش چند جزئیات می‌ده، ولی فقط یکی مستقیماً روی رفت‌وآمدکننده‌ها اثر داره."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_news_stories_speak2",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را با جمله کامل انگلیسی بگو: شهردار گفت پروژه زمان سفر در منطقه رو کم می‌کنه."
+        },
+        "answer": {
+          "expected_text": "The mayor said the project would reduce travel time in the area."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b1_news_stories_build2",
+      "data": {
+        "lesson_key": "b1-news-stories-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "خلاصه اینکه سرویس داره گسترش پیدا می‌کنه، ولی برنامه دقیق هنوز منتشر نشده.",
+          "tokens": [
+            "yet.",
+            "published",
+            "been",
+            "hasn't",
+            "schedule",
+            "exact",
+            "the",
+            "but",
+            "expanding,",
+            "is",
+            "service",
+            "the",
+            "short,",
+            "In"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "In",
+            "short,",
+            "the",
+            "service",
+            "is",
+            "expanding,",
+            "but",
+            "the",
+            "exact",
+            "schedule",
+            "hasn't",
+            "been",
+            "published",
+            "yet."
+          ],
+          "text": "In short, the service is expanding, but the exact schedule hasn't been published yet."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "status": "approved"
+      }
+    }
+  ]
+}
