@@ -1,0 +1,98 @@
+name: Build English B1 Remaining Content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate_b1_06_10.py'
+      - 'scripts/generate_b1_11_15.py'
+      - 'scripts/generate_b1_16_20.py'
+      - 'scripts/generate_b1_21_25.py'
+      - 'scripts/generate_b1_26_30.py'
+      - 'scripts/generate_b1_31_35.py'
+      - 'scripts/generate_b1_36_40.py'
+      - '.github/workflows/build-b1-remaining.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-english-b1-remaining
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate B1 units 06-40
+        run: |
+          python scripts/generate_b1_06_10.py
+          python scripts/generate_b1_11_15.py
+          python scripts/generate_b1_16_20.py
+          python scripts/generate_b1_21_25.py
+          python scripts/generate_b1_26_30.py
+          python scripts/generate_b1_31_35.py
+          python scripts/generate_b1_36_40.py
+
+      - name: Validate all B1 production batches
+        run: |
+          for f in content/production/en/B1/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+
+      - name: Verify all 40 curriculum units have production batches
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('content/production/en/B1')
+          units = {}
+          for f in p.glob('*.json'):
+              d = json.loads(f.read_text(encoding='utf-8'))
+              units[d['curriculum_unit']] = f.name
+          expected = [
+              'b1-catching-up-in-depth','b1-personal-stories','b1-life-changes','b1-habits-and-change','b1-events-in-progress',
+              'b1-storytelling','b1-memorable-experiences','b1-plans-predictions','b1-goals-ambitions','b1-arrangements-changes',
+              'b1-invitations-hosting','b1-opinions-reasons','b1-agree-disagree','b1-choices-tradeoffs','b1-advice-decisions',
+              'b1-rules-obligations','b1-solving-problems','b1-complaints-solutions','b1-shopping-decisions','b1-services-returns',
+              'b1-food-preferences','b1-health-wellbeing','b1-medical-appointments','b1-travel-planning','b1-travel-disruptions',
+              'b1-local-experiences','b1-work-responsibilities','b1-meetings-teamwork','b1-job-search','b1-study-strategies',
+              'b1-learning-progress','b1-media-entertainment','b1-news-stories','b1-digital-life','b1-relationships-social',
+              'b1-places-culture','b1-everyday-environment','b1-explaining-presenting','b1-summarizing-relaying','b1-integrated-capstone'
+          ]
+          missing = [u for u in expected if u not in units]
+          extras = [u for u in units if u not in expected]
+          if missing or extras or len(units) != 40:
+              raise SystemExit(f'B1 coverage invalid: missing={missing}, extras={extras}, count={len(units)}')
+          print('B1 production coverage: 40/40')
+          PY
+
+      - name: Commit generated production batches
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/production/en/B1
+          if git diff --cached --quiet; then
+            echo 'No B1 content changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Complete English B1 production content [skip ci]'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
