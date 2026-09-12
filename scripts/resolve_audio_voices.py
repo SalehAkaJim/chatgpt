@@ -2,9 +2,9 @@
 """Resolve and lock all voices required by an audio manifest without generating audio.
 
 The resolver prefers voices already available to the ElevenLabs workspace. When
-a distinct dialogue character cannot be satisfied from that collection, it falls
-back to the official ElevenLabs Voice Library and selects a verified en-US voice
-that matches the character gender/accent profile. No TTS is generated here.
+a distinct dialogue character or named narrator cannot be satisfied there, it
+falls back to the official ElevenLabs Voice Library. Dialogue voices remain
+stable and distinct per character; narrator/lexical fallbacks remain fixed.
 """
 from __future__ import annotations
 
@@ -28,12 +28,12 @@ API = "https://api.elevenlabs.io"
 _SHARED_CACHE: dict[tuple, list[dict]] = {}
 
 
-def _shared_candidates(api_key: str, spec: dict, locale: str) -> list[dict]:
-    labels = spec.get("required_labels") or {}
+def _shared_candidates(api_key: str, spec: dict, locale: str, search: str | None = None) -> list[dict]:
+    labels = spec.get("required_labels") or spec.get("fallback_required_labels") or {}
     gender = (labels.get("gender") or "").lower() or None
     language = spec.get("required_language") or locale.split("-")[0]
     accent = spec.get("preferred_accent") or None
-    cache_key = (gender, language, accent, locale)
+    cache_key = (gender, language, accent, locale, (search or "").casefold())
     if cache_key in _SHARED_CACHE:
         return _SHARED_CACHE[cache_key]
 
@@ -56,6 +56,8 @@ def _shared_candidates(api_key: str, spec: dict, locale: str) -> list[dict]:
                 params["accent"] = accent
             if category:
                 params["category"] = category
+            if search:
+                params["search"] = search
             response = requests.get(
                 f"{API}/v1/shared-voices",
                 headers={"xi-api-key": api_key},
@@ -114,9 +116,40 @@ def _shared_candidates(api_key: str, spec: dict, locale: str) -> list[dict]:
     return ranked
 
 
+def _lock_library_voice(voice: dict, locks: dict, voice_key: str, requested_name: str | None = None) -> dict:
+    locked = {
+        "voice_id": voice["voice_id"],
+        "voice_name": voice.get("name"),
+        "labels": voice.get("labels") or {},
+        "source": "voice_library",
+        "public_owner_id": voice.get("public_owner_id"),
+        "requested_voice_name": requested_name,
+        "resolved_at": datetime.now(timezone.utc).isoformat(),
+    }
+    locks[voice_key] = locked
+    return locked
+
+
 def _resolve_from_library(api_key: str, voice_key: str, spec: dict, locale: str, locks: dict) -> dict:
-    if spec.get("voice_name"):
-        raise RuntimeError(f"Named voice {spec['voice_name']} must resolve from the connected workspace")
+    requested_name = spec.get("voice_name")
+
+    if requested_name:
+        named = _shared_candidates(api_key, spec, locale, search=requested_name)
+        exact = [v for v in named if (v.get("name") or "").casefold() == requested_name.casefold()]
+        if exact:
+            return _lock_library_voice(exact[0], locks, voice_key, requested_name=requested_name)
+        if not spec.get("allow_named_fallback", False):
+            raise RuntimeError(f"Named voice {requested_name} is unavailable in workspace and Voice Library")
+
+        fallback_spec = dict(spec)
+        fallback_spec.pop("voice_name", None)
+        fallback_spec["required_labels"] = spec.get("fallback_required_labels") or {}
+        generic = _shared_candidates(api_key, fallback_spec, locale)
+        if not generic:
+            raise RuntimeError(f"No compatible fixed narrator fallback is available for {requested_name}")
+        # A named fallback must be the same provider voice for every logical
+        # narrator key that requests the same name, so always take the best row.
+        return _lock_library_voice(generic[0], locks, voice_key, requested_name=requested_name)
 
     reserved = {
         value.get("voice_id")
@@ -130,16 +163,7 @@ def _resolve_from_library(api_key: str, voice_key: str, spec: dict, locale: str,
     top = available[: min(24, len(available))]
     index = int(hashlib.sha256(voice_key.encode("utf-8")).hexdigest()[:8], 16) % len(top)
     chosen = top[index]
-    locked = {
-        "voice_id": chosen["voice_id"],
-        "voice_name": chosen.get("name"),
-        "labels": chosen.get("labels") or {},
-        "source": "voice_library",
-        "public_owner_id": chosen.get("public_owner_id"),
-        "resolved_at": datetime.now(timezone.utc).isoformat(),
-    }
-    locks[voice_key] = locked
-    return locked
+    return _lock_library_voice(chosen, locks, voice_key)
 
 
 def main() -> None:
@@ -178,18 +202,20 @@ def main() -> None:
         spec = required[voice_key]
         try:
             voice = resolve_voice(api_key, voice_key, spec, locks)
-        except RuntimeError as exc:
-            if not voice_key.startswith("character:") or spec.get("voice_name"):
-                raise
+        except RuntimeError:
             voice = _resolve_from_library(api_key, voice_key, spec, locale, locks)
             library_fallbacks += 1
-            print(f"Voice Library fallback: {voice_key} -> {voice.get('voice_name')} ({voice.get('voice_id')})", file=sys.stderr)
+            print(
+                f"Voice Library fallback: {voice_key} -> {voice.get('voice_name')} ({voice.get('voice_id')})",
+                file=sys.stderr,
+            )
         resolved.append({
             "voice_key": voice_key,
             "voice_id": voice.get("voice_id"),
             "voice_name": voice.get("voice_name"),
             "labels": voice.get("labels") or {},
             "source": voice.get("source", "workspace"),
+            "requested_voice_name": voice.get("requested_voice_name"),
         })
 
     character_rows = [row for row in resolved if row["voice_key"].startswith("character:")]
