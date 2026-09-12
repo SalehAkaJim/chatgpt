@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "c6786cdb82889f5aa8d03860013d14c54e972418e749abd2639b042781c86181",
+  "voice_id": "6OzrBCQf8cjERkYgzSg8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "6eaf3f87af99efdc72f8b782b9f016e7f08d2a8f2b6f36305011affb0c74331d",
+  "voice_key": "character:amir:male_warm",
+  "voice_name": "Young Jamal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8a13c43848c5e7ef1b38cab79dd80c4e81c7941ec0529c2210637f4ac1146a7c",
+  "duration_ms": 5328,
+  "generated_at": "2026-09-12T12:36:37.798132+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "37bc8eeb-9542-5fda-817d-5584f56c5f53",
+      "entity_key": "d_c2_crisis_response_scene_1:4"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "e62b71d251ff7a84515892c83b425751dfec4f8e2dd33b57b54ecfc3bde2aa60",
+  "voice_id": "wBXNqKUATyqu0RtYt25i",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "3b00eb428f0aa74cbbbe71d7a0643cae6425a63b355630eac407466ddd58c302",
+  "voice_key": "character:chris:male_bright",
+  "voice_name": "Adam",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "996c6d7791ac6e3eb6ee2e0cae72137d91d24788009e54dace0f4286672f235d",
+  "duration_ms": 7105,
+  "generated_at": "2026-09-12T12:35:49.688829+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "63a6574f-81fc-5f96-8cac-4ecbea59f6b0",
+      "entity_key": "d_c2_medical_communication_scene_2:2"
+    }
+  ]
+}

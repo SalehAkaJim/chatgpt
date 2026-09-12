@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "802022dc9e0a223b88c1db7dc6fc98c53b83336a56b1a513cb65bffe23643dd8",
+  "voice_id": "6OzrBCQf8cjERkYgzSg8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d93db65a14d520cd508808d8a4e45e347553ac70102b5455c6b696092dd09f2e",
+  "voice_key": "character:amir:male_warm",
+  "voice_name": "Young Jamal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e84f5a2b247a7006a6fca44d056eef9a1698e5f35fd282426fb490cb8a54c927",
+  "duration_ms": 5564,
+  "generated_at": "2026-09-12T12:38:10.180878+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4752d43a-7d79-52d8-a74d-8d03804d3bba",
+      "entity_key": "d_c2_lexical_precision_scene_1:4"
+    }
+  ]
+}
