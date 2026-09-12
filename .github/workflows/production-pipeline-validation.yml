@@ -11,6 +11,9 @@ on:
       - '.github/workflows/production-pipeline-validation.yml'
       - 'content/production/en/Pre-A1/**'
       - 'content/production/en/A1/**'
+      - 'content/production/en/A2/**'
+      - 'content/production/en/B1/**'
+      - 'content/production/en/B2/**'
   pull_request:
     paths:
       - 'scripts/**'
@@ -21,6 +24,9 @@ on:
       - '.github/workflows/production-pipeline-validation.yml'
       - 'content/production/en/Pre-A1/**'
       - 'content/production/en/A1/**'
+      - 'content/production/en/A2/**'
+      - 'content/production/en/B1/**'
+      - 'content/production/en/B2/**'
 
 permissions:
   contents: write
@@ -48,12 +54,18 @@ jobs:
             scripts/validate_audio_manifest.py \
             scripts/import_audio_manifest.py \
             database/import/en/pre_a1.py \
-            database/import/en/a1.py
+            database/import/en/a1.py \
+            database/import/en/a2.py \
+            database/import/en/b1.py \
+            database/import/en/b2.py
 
       - name: Validate complete level imports without database mutation
         run: |
           python database/import/en/pre_a1.py --dry-run
           python database/import/en/a1.py --dry-run
+          python database/import/en/a2.py --dry-run
+          python database/import/en/b1.py --dry-run
+          python database/import/en/b2.py --dry-run
 
       - name: Build strict level audio manifests
         run: |
@@ -64,18 +76,38 @@ jobs:
           python scripts/build_audio_manifest.py content/production/en/A1 \
             --level A1 --locale en-US --strict-characters \
             --output audio/manifests/en/A1.json
+          python scripts/build_audio_manifest.py content/production/en/A2 \
+            --level A2 --locale en-US --strict-characters \
+            --output audio/manifests/en/A2.json
+          python scripts/build_audio_manifest.py content/production/en/B1 \
+            --level B1 --locale en-US --strict-characters \
+            --output audio/manifests/en/B1.json
+          python scripts/build_audio_manifest.py content/production/en/B2 \
+            --level B2 --locale en-US --strict-characters \
+            --output audio/manifests/en/B2.json
 
       - name: Validate audio manifests
         run: |
           python scripts/validate_audio_manifest.py audio/manifests/en/Pre-A1.json
           python scripts/validate_audio_manifest.py audio/manifests/en/A1.json
+          python scripts/validate_audio_manifest.py audio/manifests/en/A2.json
+          python scripts/validate_audio_manifest.py audio/manifests/en/B1.json
+          python scripts/validate_audio_manifest.py audio/manifests/en/B2.json
 
       - name: Audit audio coverage
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          for path in [Path('audio/manifests/en/Pre-A1.json'), Path('audio/manifests/en/A1.json')]:
+
+          paths = [
+              Path('audio/manifests/en/Pre-A1.json'),
+              Path('audio/manifests/en/A1.json'),
+              Path('audio/manifests/en/A2.json'),
+              Path('audio/manifests/en/B1.json'),
+              Path('audio/manifests/en/B2.json'),
+          ]
+          for path in paths:
               manifest = json.loads(path.read_text())
               counts = {}
               for item in manifest['items']:
@@ -91,9 +123,14 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add audio/manifests/en/Pre-A1.json audio/manifests/en/A1.json
+          git add \
+            audio/manifests/en/Pre-A1.json \
+            audio/manifests/en/A1.json \
+            audio/manifests/en/A2.json \
+            audio/manifests/en/B1.json \
+            audio/manifests/en/B2.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Update English audio manifests [skip ci]'
+            git commit -m 'Update English audio manifests through B2 [skip ci]'
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
