@@ -1,0 +1,1007 @@
+{
+  "batch_id": "en-us-b2-services-repairs-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B2",
+  "curriculum_unit": "b2-services-repairs",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b2_services_repairs_fault",
+      "data": {
+        "slug": "b2_services_repairs_fault",
+        "lesson_key": "b2-services-repairs-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "fault"
+        },
+        "translations": {
+          "fa": "ایراد"
+        },
+        "cefr": "B2",
+        "topic": "shopping",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_services_repairs_fault",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "lemma": "fault",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_services_repairs_fault"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_services_repairs_fault",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "lexeme_ref": "lx_b2_services_repairs_fault",
+        "surface_form": "fault",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_services_repairs_repair",
+      "data": {
+        "slug": "b2_services_repairs_repair",
+        "lesson_key": "b2-services-repairs-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "repair"
+        },
+        "translations": {
+          "fa": "تعمیر"
+        },
+        "cefr": "B2",
+        "topic": "shopping",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_services_repairs_repair",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "lemma": "repair",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_services_repairs_repair"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_services_repairs_repair",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "lexeme_ref": "lx_b2_services_repairs_repair",
+        "surface_form": "repair",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_services_repairs_technician",
+      "data": {
+        "slug": "b2_services_repairs_technician",
+        "lesson_key": "b2-services-repairs-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "technician"
+        },
+        "translations": {
+          "fa": "تکنسین"
+        },
+        "cefr": "B2",
+        "topic": "shopping",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_services_repairs_technician",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "lemma": "technician",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_services_repairs_technician"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_services_repairs_technician",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "lexeme_ref": "lx_b2_services_repairs_technician",
+        "surface_form": "technician",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_services_repairs_warranty",
+      "data": {
+        "slug": "b2_services_repairs_warranty",
+        "lesson_key": "b2-services-repairs-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "warranty"
+        },
+        "translations": {
+          "fa": "گارانتی"
+        },
+        "cefr": "B2",
+        "topic": "shopping",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_services_repairs_warranty",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "lemma": "warranty",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_services_repairs_warranty"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_services_repairs_warranty",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "lexeme_ref": "lx_b2_services_repairs_warranty",
+        "surface_form": "warranty",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_services_repairs_diagnose",
+      "data": {
+        "slug": "b2_services_repairs_diagnose",
+        "lesson_key": "b2-services-repairs-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "diagnose"
+        },
+        "translations": {
+          "fa": "عیب‌یابی کردن"
+        },
+        "cefr": "B2",
+        "topic": "shopping",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_services_repairs_diagnose",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "lemma": "diagnose",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_services_repairs_diagnose"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_services_repairs_diagnose",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "lexeme_ref": "lx_b2_services_repairs_diagnose",
+        "surface_form": "diagnose",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_services_repairs_replacement",
+      "data": {
+        "slug": "b2_services_repairs_replacement",
+        "lesson_key": "b2-services-repairs-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "replacement"
+        },
+        "translations": {
+          "fa": "قطعه / وسیله جایگزین"
+        },
+        "cefr": "B2",
+        "topic": "shopping",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_services_repairs_replacement",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "lemma": "replacement",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_services_repairs_replacement"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_services_repairs_replacement",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "lexeme_ref": "lx_b2_services_repairs_replacement",
+        "surface_form": "replacement",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_services_repairs_follow_up",
+      "data": {
+        "slug": "b2_services_repairs_follow_up",
+        "lesson_key": "b2-services-repairs-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "follow up"
+        },
+        "translations": {
+          "fa": "پیگیری کردن"
+        },
+        "cefr": "B2",
+        "topic": "shopping",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_services_repairs_follow_up",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "lemma": "follow up",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrasal_verb",
+        "concept_refs": [
+          "b2_services_repairs_follow_up"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_services_repairs_follow_up",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "lexeme_ref": "lx_b2_services_repairs_follow_up",
+        "surface_form": "follow up",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_services_repairs_estimate",
+      "data": {
+        "slug": "b2_services_repairs_estimate",
+        "lesson_key": "b2-services-repairs-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "estimate"
+        },
+        "translations": {
+          "fa": "برآورد هزینه"
+        },
+        "cefr": "B2",
+        "topic": "shopping",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_services_repairs_estimate",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "lemma": "estimate",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_services_repairs_estimate"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_services_repairs_estimate",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "lexeme_ref": "lx_b2_services_repairs_estimate",
+        "surface_form": "estimate",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_services_repairs_fault",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "text": {
+          "en": "The fault only appears after the device has been running for about twenty minutes."
+        },
+        "translations": {
+          "fa": "ایراد فقط بعد از حدود بیست دقیقه روشن بودن دستگاه ظاهر می‌شه."
+        },
+        "intent": "describe_fault",
+        "concept_refs": [
+          "b2_services_repairs_fault"
+        ],
+        "cefr": "B2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_services_repairs_diagnose",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "text": {
+          "en": "The technician said they needed another day to diagnose the cause properly."
+        },
+        "translations": {
+          "fa": "تکنسین گفت برای عیب‌یابی درست علت یک روز دیگه زمان لازم داره."
+        },
+        "intent": "relay_diagnosis_update",
+        "concept_refs": [
+          "b2_services_repairs_technician",
+          "b2_services_repairs_diagnose"
+        ],
+        "cefr": "B2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_services_repairs_causative",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "text": {
+          "en": "I had the battery replaced last month, so I don't think that part is causing the problem."
+        },
+        "translations": {
+          "fa": "ماه پیش باتری رو عوض کردم، پس فکر نمی‌کنم اون قطعه باعث مشکل باشه."
+        },
+        "intent": "describe_previous_repair",
+        "concept_refs": [
+          "b2_services_repairs_replacement",
+          "b2_services_repairs_repair"
+        ],
+        "cefr": "B2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_services_repairs_estimate",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "text": {
+          "en": "Could you give me a written estimate before any additional repair work is carried out?"
+        },
+        "translations": {
+          "fa": "می‌شه قبل از انجام تعمیر اضافه یک برآورد کتبی بهم بدید؟"
+        },
+        "intent": "request_estimate",
+        "concept_refs": [
+          "b2_services_repairs_estimate",
+          "b2_services_repairs_repair"
+        ],
+        "cefr": "B2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_services_repairs_warranty",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "text": {
+          "en": "If the same fault is covered by the warranty, I shouldn't be charged for a second repair."
+        },
+        "translations": {
+          "fa": "اگر همون ایراد تحت گارانتیه، نباید برای تعمیر دوم هزینه بدم."
+        },
+        "intent": "clarify_warranty",
+        "concept_refs": [
+          "b2_services_repairs_fault",
+          "b2_services_repairs_warranty"
+        ],
+        "cefr": "B2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_services_repairs_followup",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "text": {
+          "en": "I'm following up because I was told the replacement part would arrive yesterday."
+        },
+        "translations": {
+          "fa": "دارم پیگیری می‌کنم چون گفته شده بود قطعه جایگزین دیروز می‌رسه."
+        },
+        "intent": "follow_up_service",
+        "concept_refs": [
+          "b2_services_repairs_follow_up",
+          "b2_services_repairs_replacement"
+        ],
+        "cefr": "B2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_services_repairs_passive",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "text": {
+          "en": "The device was returned to me, but the original issue hasn't been fully resolved."
+        },
+        "translations": {
+          "fa": "دستگاه به من برگردونده شد، ولی مشکل اصلی کامل حل نشده."
+        },
+        "intent": "report_unsuccessful_service",
+        "concept_refs": [
+          "b2_services_repairs_repair"
+        ],
+        "cefr": "B2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_services_repairs_next",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "text": {
+          "en": "I'd like to know what the next step is and whether another technician needs to inspect it."
+        },
+        "translations": {
+          "fa": "می‌خوام بدونم مرحله بعد چیه و آیا یک تکنسین دیگه باید بررسیش کنه یا نه."
+        },
+        "intent": "request_next_step",
+        "concept_refs": [
+          "b2_services_repairs_technician",
+          "b2_services_repairs_diagnose"
+        ],
+        "cefr": "B2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_services_repairs_causative",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "slug": "b2-services-repairs-causative",
+        "title": "have / get something done",
+        "rule_summary": "Use have or get + object + past participle when another person performs a service for you.",
+        "explanation": {
+          "fa": "وقتی شخص دیگری کاری خدماتی را برای ما انجام می‌دهد از have/get + object + past participle استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I had the screen replaced last week.",
+            "fa": "هفته پیش صفحه را عوض کردم/دادم عوض کنند."
+          },
+          {
+            "en": "We need to get the brakes checked.",
+            "fa": "باید ترمزها را بدهیم بررسی کنند."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_services_repairs_passive",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "slug": "b2-services-repairs-passive",
+        "title": "Passive voice",
+        "rule_summary": "Use the passive when the action or result matters more than who performed it.",
+        "explanation": {
+          "fa": "وقتی خود عمل یا نتیجه مهم‌تر از انجام‌دهنده است از مجهول استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The booking was changed without notice.",
+            "fa": "رزرو بدون اطلاع تغییر داده شد."
+          },
+          {
+            "en": "The device should be checked by a technician.",
+            "fa": "دستگاه باید توسط تکنسین بررسی شود."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_services_repairs_reported_speech",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "slug": "b2-services-repairs-reported-speech",
+        "title": "Reported speech",
+        "rule_summary": "Use reported speech to relay what someone said, asked, or promised while adjusting pronouns and time references when needed.",
+        "explanation": {
+          "fa": "برای انتقال حرف، سؤال یا قول دیگران از reported speech استفاده می‌کنیم و در صورت نیاز ضمیر و زمان را تغییر می‌دهیم."
+        },
+        "examples": [
+          {
+            "en": "She said the repair would take two days.",
+            "fa": "گفت تعمیر دو روز طول می‌کشد."
+          },
+          {
+            "en": "They asked whether I had the receipt.",
+            "fa": "پرسیدند آیا رسید را دارم یا نه."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_services_repairs_scene_1",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "title": "Services, Repairs & Follow-up: part 1",
+        "setting": "coffee break",
+        "cefr": "B2",
+        "topic": "shopping",
+        "characters": [
+          "Ella",
+          "Amir"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ella",
+            "text": "What's changed compared with before?",
+            "translation_fa": "نسبت به قبل چی تغییر کرده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Amir",
+            "text": "The fault only appears after the device has been running for about twenty minutes.",
+            "translation_fa": "ایراد فقط بعد از حدود بیست دقیقه روشن بودن دستگاه ظاهر می‌شه."
+          },
+          {
+            "order": 3,
+            "speaker": "Ella",
+            "text": "And what effect has that had?",
+            "translation_fa": "و این چه اثری داشته؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Amir",
+            "text": "The technician said they needed another day to diagnose the cause properly.",
+            "translation_fa": "تکنسین گفت برای عیب‌یابی درست علت یک روز دیگه زمان لازم داره."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_services_repairs_scene_2",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "title": "Services, Repairs & Follow-up: part 2",
+        "setting": "video call",
+        "cefr": "B2",
+        "topic": "shopping",
+        "characters": [
+          "Emma",
+          "Kai"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Emma",
+            "text": "Which option seems more realistic to you?",
+            "translation_fa": "کدوم گزینه به نظرت واقع‌بینانه‌تره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kai",
+            "text": "I had the battery replaced last month, so I don't think that part is causing the problem.",
+            "translation_fa": "ماه پیش باتری رو عوض کردم، پس فکر نمی‌کنم اون قطعه باعث مشکل باشه."
+          },
+          {
+            "order": 3,
+            "speaker": "Emma",
+            "text": "Why does that option work better?",
+            "translation_fa": "چرا اون گزینه بهتر جواب می‌ده؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Kai",
+            "text": "Could you give me a written estimate before any additional repair work is carried out?",
+            "translation_fa": "می‌شه قبل از انجام تعمیر اضافه یک برآورد کتبی بهم بدید؟"
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_services_repairs_scene_3",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "title": "Services, Repairs & Follow-up: part 3",
+        "setting": "walk after work",
+        "cefr": "B2",
+        "topic": "shopping",
+        "characters": [
+          "Dina",
+          "Alex"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Dina",
+            "text": "What do you think is the main issue here?",
+            "translation_fa": "فکر می‌کنی مسئله اصلی اینجا چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Alex",
+            "text": "If the same fault is covered by the warranty, I shouldn't be charged for a second repair.",
+            "translation_fa": "اگر همون ایراد تحت گارانتیه، نباید برای تعمیر دوم هزینه بدم."
+          },
+          {
+            "order": 3,
+            "speaker": "Dina",
+            "text": "What makes that the most important point?",
+            "translation_fa": "چی باعث می‌شه این مهم‌ترین نکته باشه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Alex",
+            "text": "I'm following up because I was told the replacement part would arrive yesterday.",
+            "translation_fa": "دارم پیگیری می‌کنم چون گفته شده بود قطعه جایگزین دیروز می‌رسه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_services_repairs_fill",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I had the battery ___ last month."
+        },
+        "options": [
+          "replaced",
+          "replace",
+          "replacing",
+          "replacement"
+        ],
+        "answer": {
+          "value": "replaced"
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_services_repairs_listen1",
+      "data": {
+        "lesson_key": "b2-services-repairs-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "The technician said they needed another day to diagnose the cause properly."
+        },
+        "options": [
+          "تکنسین گفت برای عیب‌یابی درست علت یک روز دیگه زمان لازم داره.",
+          "ایراد فقط بعد از حدود بیست دقیقه روشن بودن دستگاه ظاهر می‌شه.",
+          "اگر همون ایراد تحت گارانتیه، نباید برای تعمیر دوم هزینه بدم.",
+          "دستگاه به من برگردونده شد، ولی مشکل اصلی کامل حل نشده."
+        ],
+        "answer": {
+          "value": "تکنسین گفت برای عیب‌یابی درست علت یک روز دیگه زمان لازم داره."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_services_repairs_speak1",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: ماه پیش باتری رو عوض کردم، پس فکر نمی‌کنم اون قطعه باعث مشکل باشه."
+        },
+        "answer": {
+          "expected_text": "I had the battery replaced last month, so I don't think that part is causing the problem."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_services_repairs_build1",
+      "data": {
+        "lesson_key": "b2-services-repairs-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "می‌شه قبل از انجام تعمیر اضافه یک برآورد کتبی بهم بدید؟",
+          "tokens": [
+            "out?",
+            "carried",
+            "is",
+            "work",
+            "repair",
+            "additional",
+            "any",
+            "before",
+            "estimate",
+            "written",
+            "a",
+            "me",
+            "give",
+            "you",
+            "Could"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Could",
+            "you",
+            "give",
+            "me",
+            "a",
+            "written",
+            "estimate",
+            "before",
+            "any",
+            "additional",
+            "repair",
+            "work",
+            "is",
+            "carried",
+            "out?"
+          ],
+          "text": "Could you give me a written estimate before any additional repair work is carried out?"
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_services_repairs_meaning",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "If the same fault is covered by the warranty, I shouldn't be charged for a second repair."
+        },
+        "options": [
+          "اگر همون ایراد تحت گارانتیه، نباید برای تعمیر دوم هزینه بدم.",
+          "ماه پیش باتری رو عوض کردم، پس فکر نمی‌کنم اون قطعه باعث مشکل باشه.",
+          "دستگاه به من برگردونده شد، ولی مشکل اصلی کامل حل نشده.",
+          "ایراد فقط بعد از حدود بیست دقیقه روشن بودن دستگاه ظاهر می‌شه."
+        ],
+        "answer": {
+          "value": "اگر همون ایراد تحت گارانتیه، نباید برای تعمیر دوم هزینه بدم."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_services_repairs_listen2",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "I'm following up because I was told the replacement part would arrive yesterday."
+        },
+        "options": [
+          "دارم پیگیری می‌کنم چون گفته شده بود قطعه جایگزین دیروز می‌رسه.",
+          "تکنسین گفت برای عیب‌یابی درست علت یک روز دیگه زمان لازم داره.",
+          "می‌شه قبل از انجام تعمیر اضافه یک برآورد کتبی بهم بدید؟",
+          "می‌خوام بدونم مرحله بعد چیه و آیا یک تکنسین دیگه باید بررسیش کنه یا نه."
+        ],
+        "answer": {
+          "value": "دارم پیگیری می‌کنم چون گفته شده بود قطعه جایگزین دیروز می‌رسه."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_services_repairs_speak2",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: دستگاه به من برگردونده شد، ولی مشکل اصلی کامل حل نشده."
+        },
+        "answer": {
+          "expected_text": "The device was returned to me, but the original issue hasn't been fully resolved."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_services_repairs_build2",
+      "data": {
+        "lesson_key": "b2-services-repairs-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "می‌خوام بدونم مرحله بعد چیه و آیا یک تکنسین دیگه باید بررسیش کنه یا نه.",
+          "tokens": [
+            "it.",
+            "inspect",
+            "to",
+            "needs",
+            "technician",
+            "another",
+            "whether",
+            "and",
+            "is",
+            "step",
+            "next",
+            "the",
+            "what",
+            "know",
+            "to",
+            "like",
+            "I'd"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I'd",
+            "like",
+            "to",
+            "know",
+            "what",
+            "the",
+            "next",
+            "step",
+            "is",
+            "and",
+            "whether",
+            "another",
+            "technician",
+            "needs",
+            "to",
+            "inspect",
+            "it."
+          ],
+          "text": "I'd like to know what the next step is and whether another technician needs to inspect it."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    }
+  ]
+}

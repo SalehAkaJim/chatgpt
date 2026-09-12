@@ -1,0 +1,1010 @@
+{
+  "batch_id": "en-us-b2-news-discussion-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B2",
+  "curriculum_unit": "b2-news-discussion",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b2_news_discussion_headline",
+      "data": {
+        "slug": "b2_news_discussion_headline",
+        "lesson_key": "b2-news-discussion-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "headline"
+        },
+        "translations": {
+          "fa": "تیتر"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_news_discussion_headline",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "lemma": "headline",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_news_discussion_headline"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_news_discussion_headline",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "lexeme_ref": "lx_b2_news_discussion_headline",
+        "surface_form": "headline",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_news_discussion_source",
+      "data": {
+        "slug": "b2_news_discussion_source",
+        "lesson_key": "b2-news-discussion-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "source"
+        },
+        "translations": {
+          "fa": "منبع"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_news_discussion_source",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "lemma": "source",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_news_discussion_source"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_news_discussion_source",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "lexeme_ref": "lx_b2_news_discussion_source",
+        "surface_form": "source",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_news_discussion_report",
+      "data": {
+        "slug": "b2_news_discussion_report",
+        "lesson_key": "b2-news-discussion-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "report"
+        },
+        "translations": {
+          "fa": "گزارش"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_news_discussion_report",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "lemma": "report",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_news_discussion_report"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_news_discussion_report",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "lexeme_ref": "lx_b2_news_discussion_report",
+        "surface_form": "report",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_news_discussion_claim",
+      "data": {
+        "slug": "b2_news_discussion_claim",
+        "lesson_key": "b2-news-discussion-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "claim"
+        },
+        "translations": {
+          "fa": "ادعا"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_news_discussion_claim",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "lemma": "claim",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_news_discussion_claim"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_news_discussion_claim",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "lexeme_ref": "lx_b2_news_discussion_claim",
+        "surface_form": "claim",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_news_discussion_official",
+      "data": {
+        "slug": "b2_news_discussion_official",
+        "lesson_key": "b2-news-discussion-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "official"
+        },
+        "translations": {
+          "fa": "رسمی"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_news_discussion_official",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "lemma": "official",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b2_news_discussion_official"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_news_discussion_official",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "lexeme_ref": "lx_b2_news_discussion_official",
+        "surface_form": "official",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_news_discussion_comment",
+      "data": {
+        "slug": "b2_news_discussion_comment",
+        "lesson_key": "b2-news-discussion-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "comment"
+        },
+        "translations": {
+          "fa": "نظر / اظهار نظر"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_news_discussion_comment",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "lemma": "comment",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_news_discussion_comment"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_news_discussion_comment",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "lexeme_ref": "lx_b2_news_discussion_comment",
+        "surface_form": "comment",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_news_discussion_implication",
+      "data": {
+        "slug": "b2_news_discussion_implication",
+        "lesson_key": "b2-news-discussion-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "implication"
+        },
+        "translations": {
+          "fa": "پیامد احتمالی"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_news_discussion_implication",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "lemma": "implication",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_news_discussion_implication"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_news_discussion_implication",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "lexeme_ref": "lx_b2_news_discussion_implication",
+        "surface_form": "implication",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_news_discussion_verify",
+      "data": {
+        "slug": "b2_news_discussion_verify",
+        "lesson_key": "b2-news-discussion-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "verify"
+        },
+        "translations": {
+          "fa": "راستی‌آزمایی کردن"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_news_discussion_verify",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "lemma": "verify",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_news_discussion_verify"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_news_discussion_verify",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "lexeme_ref": "lx_b2_news_discussion_verify",
+        "surface_form": "verify",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_news_discussion_summary",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "text": {
+          "en": "The report says the city plans to expand late-night public transport on weekends."
+        },
+        "translations": {
+          "fa": "گزارش می‌گه شهر قصد داره آخر هفته‌ها حمل‌ونقل عمومی شبانه رو گسترش بده."
+        },
+        "intent": "summarize_news",
+        "concept_refs": [
+          "b2_news_discussion_report",
+          "b2_news_discussion_source"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_news_discussion_fact",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "text": {
+          "en": "The official announcement confirms the trial will begin next month in three districts."
+        },
+        "translations": {
+          "fa": "اعلام رسمی تأیید می‌کنه آزمایش ماه بعد در سه منطقه شروع می‌شه."
+        },
+        "intent": "identify_confirmed_fact",
+        "concept_refs": [
+          "b2_news_discussion_official",
+          "b2_news_discussion_verify"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_news_discussion_claim",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "text": {
+          "en": "One group claims the change will reduce traffic, but that is still a prediction rather than a confirmed result."
+        },
+        "translations": {
+          "fa": "یک گروه ادعا می‌کنه این تغییر ترافیک رو کم می‌کنه، ولی این هنوز پیش‌بینیه نه نتیجه تأییدشده."
+        },
+        "intent": "distinguish_claim",
+        "concept_refs": [
+          "b2_news_discussion_claim",
+          "b2_news_discussion_verify"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_news_discussion_source",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "text": {
+          "en": "I'd like to check the original source before repeating the headline because the short version leaves out several conditions."
+        },
+        "translations": {
+          "fa": "قبل از تکرار تیتر می‌خوام منبع اصلی رو چک کنم چون نسخه کوتاه چند شرط رو حذف کرده."
+        },
+        "intent": "check_source",
+        "concept_refs": [
+          "b2_news_discussion_headline",
+          "b2_news_discussion_source"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_news_discussion_comment",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "text": {
+          "en": "The mayor's comment supports the plan, while local business owners have expressed mixed views."
+        },
+        "translations": {
+          "fa": "اظهارنظر شهردار از طرح حمایت می‌کنه، در حالی که صاحبان کسب‌وکار محلی نظرهای متفاوتی داشتن."
+        },
+        "intent": "compare_comments",
+        "concept_refs": [
+          "b2_news_discussion_comment"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_news_discussion_implication",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "text": {
+          "en": "If the trial succeeds, one likely implication is that service could expand to more neighborhoods."
+        },
+        "translations": {
+          "fa": "اگر آزمایش موفق باشه، یک پیامد محتمل اینه که خدمات به محله‌های بیشتری گسترش پیدا کنه."
+        },
+        "intent": "discuss_implication",
+        "concept_refs": [
+          "b2_news_discussion_implication"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_news_discussion_probability",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "text": {
+          "en": "It's too early to say whether the change will affect traffic significantly, but it may change travel habits."
+        },
+        "translations": {
+          "fa": "هنوز زوده بگیم تغییر اثر زیادی روی ترافیک داره یا نه، ولی ممکنه عادت‌های رفت‌وآمد رو عوض کنه."
+        },
+        "intent": "qualify_prediction",
+        "concept_refs": [
+          "b2_news_discussion_implication"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_news_discussion_relay",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "text": {
+          "en": "So the confirmed fact is the trial itself; the wider benefits are still being debated."
+        },
+        "translations": {
+          "fa": "پس واقعیت تأییدشده خود آزمایشه؛ مزایای گسترده‌تر هنوز محل بحثه."
+        },
+        "intent": "separate_fact_comment",
+        "concept_refs": [
+          "b2_news_discussion_verify",
+          "b2_news_discussion_comment"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_news_discussion_passive",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "slug": "b2-news-discussion-passive",
+        "title": "Passive voice",
+        "rule_summary": "Use the passive when the action or result matters more than who performed it.",
+        "explanation": {
+          "fa": "وقتی خود عمل یا نتیجه مهم‌تر از انجام‌دهنده است از مجهول استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The booking was changed without notice.",
+            "fa": "رزرو بدون اطلاع تغییر داده شد."
+          },
+          {
+            "en": "The device should be checked by a technician.",
+            "fa": "دستگاه باید توسط تکنسین بررسی شود."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_news_discussion_reported_speech",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "slug": "b2-news-discussion-reported-speech",
+        "title": "Reported speech",
+        "rule_summary": "Use reported speech to relay what someone said, asked, or promised while adjusting pronouns and time references when needed.",
+        "explanation": {
+          "fa": "برای انتقال حرف، سؤال یا قول دیگران از reported speech استفاده می‌کنیم و در صورت نیاز ضمیر و زمان را تغییر می‌دهیم."
+        },
+        "examples": [
+          {
+            "en": "She said the repair would take two days.",
+            "fa": "گفت تعمیر دو روز طول می‌کشد."
+          },
+          {
+            "en": "They asked whether I had the receipt.",
+            "fa": "پرسیدند آیا رسید را دارم یا نه."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_news_discussion_probability_language",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "slug": "b2-news-discussion-probability-language",
+        "title": "Probability language",
+        "rule_summary": "Use likely, unlikely, expected to, and may or might to discuss consequences without presenting guesses as facts.",
+        "explanation": {
+          "fa": "برای بیان نتیجه احتمالی بدون قطعی نشان دادن حدس از likely، unlikely، expected to و may/might استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The change is likely to affect commuters.",
+            "fa": "احتمالاً این تغییر روی رفت‌وآمدکنندگان اثر می‌گذارد."
+          },
+          {
+            "en": "Prices may rise temporarily.",
+            "fa": "ممکن است قیمت‌ها موقتاً بالا بروند."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_news_discussion_scene_1",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "title": "News & Everyday Current Events: part 1",
+        "setting": "coffee break",
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "characters": [
+          "Ella",
+          "Amir"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ella",
+            "text": "What's changed compared with before?",
+            "translation_fa": "نسبت به قبل چی تغییر کرده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Amir",
+            "text": "The report says the city plans to expand late-night public transport on weekends.",
+            "translation_fa": "گزارش می‌گه شهر قصد داره آخر هفته‌ها حمل‌ونقل عمومی شبانه رو گسترش بده."
+          },
+          {
+            "order": 3,
+            "speaker": "Ella",
+            "text": "And what effect has that had?",
+            "translation_fa": "و این چه اثری داشته؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Amir",
+            "text": "The official announcement confirms the trial will begin next month in three districts.",
+            "translation_fa": "اعلام رسمی تأیید می‌کنه آزمایش ماه بعد در سه منطقه شروع می‌شه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_news_discussion_scene_2",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "title": "News & Everyday Current Events: part 2",
+        "setting": "video call",
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "characters": [
+          "Emma",
+          "Kai"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Emma",
+            "text": "Which option seems more realistic to you?",
+            "translation_fa": "کدوم گزینه به نظرت واقع‌بینانه‌تره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kai",
+            "text": "One group claims the change will reduce traffic, but that is still a prediction rather than a confirmed result.",
+            "translation_fa": "یک گروه ادعا می‌کنه این تغییر ترافیک رو کم می‌کنه، ولی این هنوز پیش‌بینیه نه نتیجه تأییدشده."
+          },
+          {
+            "order": 3,
+            "speaker": "Emma",
+            "text": "Why does that option work better?",
+            "translation_fa": "چرا اون گزینه بهتر جواب می‌ده؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Kai",
+            "text": "I'd like to check the original source before repeating the headline because the short version leaves out several conditions.",
+            "translation_fa": "قبل از تکرار تیتر می‌خوام منبع اصلی رو چک کنم چون نسخه کوتاه چند شرط رو حذف کرده."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_news_discussion_scene_3",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "title": "News & Everyday Current Events: part 3",
+        "setting": "walk after work",
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "characters": [
+          "Dina",
+          "Alex"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Dina",
+            "text": "What do you think is the main issue here?",
+            "translation_fa": "فکر می‌کنی مسئله اصلی اینجا چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Alex",
+            "text": "The mayor's comment supports the plan, while local business owners have expressed mixed views.",
+            "translation_fa": "اظهارنظر شهردار از طرح حمایت می‌کنه، در حالی که صاحبان کسب‌وکار محلی نظرهای متفاوتی داشتن."
+          },
+          {
+            "order": 3,
+            "speaker": "Dina",
+            "text": "What makes that the most important point?",
+            "translation_fa": "چی باعث می‌شه این مهم‌ترین نکته باشه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Alex",
+            "text": "If the trial succeeds, one likely implication is that service could expand to more neighborhoods.",
+            "translation_fa": "اگر آزمایش موفق باشه، یک پیامد محتمل اینه که خدمات به محله‌های بیشتری گسترش پیدا کنه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_news_discussion_fill",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I'd like to check the original ___ before repeating the headline."
+        },
+        "options": [
+          "source",
+          "claim",
+          "comment",
+          "implication"
+        ],
+        "answer": {
+          "value": "source"
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_news_discussion_listen1",
+      "data": {
+        "lesson_key": "b2-news-discussion-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "The official announcement confirms the trial will begin next month in three districts."
+        },
+        "options": [
+          "اعلام رسمی تأیید می‌کنه آزمایش ماه بعد در سه منطقه شروع می‌شه.",
+          "گزارش می‌گه شهر قصد داره آخر هفته‌ها حمل‌ونقل عمومی شبانه رو گسترش بده.",
+          "اظهارنظر شهردار از طرح حمایت می‌کنه، در حالی که صاحبان کسب‌وکار محلی نظرهای متفاوتی داشتن.",
+          "هنوز زوده بگیم تغییر اثر زیادی روی ترافیک داره یا نه، ولی ممکنه عادت‌های رفت‌وآمد رو عوض کنه."
+        ],
+        "answer": {
+          "value": "اعلام رسمی تأیید می‌کنه آزمایش ماه بعد در سه منطقه شروع می‌شه."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_news_discussion_speak1",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: یک گروه ادعا می‌کنه این تغییر ترافیک رو کم می‌کنه، ولی این هنوز پیش‌بینیه نه نتیجه تأییدشده."
+        },
+        "answer": {
+          "expected_text": "One group claims the change will reduce traffic, but that is still a prediction rather than a confirmed result."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_news_discussion_build1",
+      "data": {
+        "lesson_key": "b2-news-discussion-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "قبل از تکرار تیتر می‌خوام منبع اصلی رو چک کنم چون نسخه کوتاه چند شرط رو حذف کرده.",
+          "tokens": [
+            "conditions.",
+            "several",
+            "out",
+            "leaves",
+            "version",
+            "short",
+            "the",
+            "because",
+            "headline",
+            "the",
+            "repeating",
+            "before",
+            "source",
+            "original",
+            "the",
+            "check",
+            "to",
+            "like",
+            "I'd"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I'd",
+            "like",
+            "to",
+            "check",
+            "the",
+            "original",
+            "source",
+            "before",
+            "repeating",
+            "the",
+            "headline",
+            "because",
+            "the",
+            "short",
+            "version",
+            "leaves",
+            "out",
+            "several",
+            "conditions."
+          ],
+          "text": "I'd like to check the original source before repeating the headline because the short version leaves out several conditions."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_news_discussion_meaning",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "The mayor's comment supports the plan, while local business owners have expressed mixed views."
+        },
+        "options": [
+          "اظهارنظر شهردار از طرح حمایت می‌کنه، در حالی که صاحبان کسب‌وکار محلی نظرهای متفاوتی داشتن.",
+          "یک گروه ادعا می‌کنه این تغییر ترافیک رو کم می‌کنه، ولی این هنوز پیش‌بینیه نه نتیجه تأییدشده.",
+          "هنوز زوده بگیم تغییر اثر زیادی روی ترافیک داره یا نه، ولی ممکنه عادت‌های رفت‌وآمد رو عوض کنه.",
+          "گزارش می‌گه شهر قصد داره آخر هفته‌ها حمل‌ونقل عمومی شبانه رو گسترش بده."
+        ],
+        "answer": {
+          "value": "اظهارنظر شهردار از طرح حمایت می‌کنه، در حالی که صاحبان کسب‌وکار محلی نظرهای متفاوتی داشتن."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_news_discussion_listen2",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "If the trial succeeds, one likely implication is that service could expand to more neighborhoods."
+        },
+        "options": [
+          "اگر آزمایش موفق باشه، یک پیامد محتمل اینه که خدمات به محله‌های بیشتری گسترش پیدا کنه.",
+          "اعلام رسمی تأیید می‌کنه آزمایش ماه بعد در سه منطقه شروع می‌شه.",
+          "قبل از تکرار تیتر می‌خوام منبع اصلی رو چک کنم چون نسخه کوتاه چند شرط رو حذف کرده.",
+          "پس واقعیت تأییدشده خود آزمایشه؛ مزایای گسترده‌تر هنوز محل بحثه."
+        ],
+        "answer": {
+          "value": "اگر آزمایش موفق باشه، یک پیامد محتمل اینه که خدمات به محله‌های بیشتری گسترش پیدا کنه."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_news_discussion_speak2",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: هنوز زوده بگیم تغییر اثر زیادی روی ترافیک داره یا نه، ولی ممکنه عادت‌های رفت‌وآمد رو عوض کنه."
+        },
+        "answer": {
+          "expected_text": "It's too early to say whether the change will affect traffic significantly, but it may change travel habits."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_news_discussion_build2",
+      "data": {
+        "lesson_key": "b2-news-discussion-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "پس واقعیت تأییدشده خود آزمایشه؛ مزایای گسترده‌تر هنوز محل بحثه.",
+          "tokens": [
+            "debated.",
+            "being",
+            "still",
+            "are",
+            "benefits",
+            "wider",
+            "the",
+            "itself;",
+            "trial",
+            "the",
+            "is",
+            "fact",
+            "confirmed",
+            "the",
+            "So"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "So",
+            "the",
+            "confirmed",
+            "fact",
+            "is",
+            "the",
+            "trial",
+            "itself;",
+            "the",
+            "wider",
+            "benefits",
+            "are",
+            "still",
+            "being",
+            "debated."
+          ],
+          "text": "So the confirmed fact is the trial itself; the wider benefits are still being debated."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    }
+  ]
+}

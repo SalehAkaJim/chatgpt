@@ -1,0 +1,999 @@
+{
+  "batch_id": "en-us-b2-explaining-presenting-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B2",
+  "curriculum_unit": "b2-explaining-presenting",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b2_explaining_presenting_outline",
+      "data": {
+        "slug": "b2_explaining_presenting_outline",
+        "lesson_key": "b2-explaining-presenting-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "outline"
+        },
+        "translations": {
+          "fa": "طرح کلی"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_explaining_presenting_outline",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "lemma": "outline",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_explaining_presenting_outline"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_explaining_presenting_outline",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "lexeme_ref": "lx_b2_explaining_presenting_outline",
+        "surface_form": "outline",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_explaining_presenting_signpost",
+      "data": {
+        "slug": "b2_explaining_presenting_signpost",
+        "lesson_key": "b2-explaining-presenting-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "signpost"
+        },
+        "translations": {
+          "fa": "نشانه‌گذاری ساختار صحبت"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_explaining_presenting_signpost",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "lemma": "signpost",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_explaining_presenting_signpost"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_explaining_presenting_signpost",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "lexeme_ref": "lx_b2_explaining_presenting_signpost",
+        "surface_form": "signpost",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_explaining_presenting_key_point",
+      "data": {
+        "slug": "b2_explaining_presenting_key_point",
+        "lesson_key": "b2-explaining-presenting-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "key point"
+        },
+        "translations": {
+          "fa": "نکته کلیدی"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_explaining_presenting_key_point",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "lemma": "key point",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_explaining_presenting_key_point"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_explaining_presenting_key_point",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "lexeme_ref": "lx_b2_explaining_presenting_key_point",
+        "surface_form": "key point",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_explaining_presenting_example",
+      "data": {
+        "slug": "b2_explaining_presenting_example",
+        "lesson_key": "b2-explaining-presenting-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "example"
+        },
+        "translations": {
+          "fa": "مثال"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_explaining_presenting_example",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "lemma": "example",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_explaining_presenting_example"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_explaining_presenting_example",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "lexeme_ref": "lx_b2_explaining_presenting_example",
+        "surface_form": "example",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_explaining_presenting_clarify",
+      "data": {
+        "slug": "b2_explaining_presenting_clarify",
+        "lesson_key": "b2-explaining-presenting-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "clarify"
+        },
+        "translations": {
+          "fa": "روشن کردن"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_explaining_presenting_clarify",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "lemma": "clarify",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_explaining_presenting_clarify"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_explaining_presenting_clarify",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "lexeme_ref": "lx_b2_explaining_presenting_clarify",
+        "surface_form": "clarify",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_explaining_presenting_audience",
+      "data": {
+        "slug": "b2_explaining_presenting_audience",
+        "lesson_key": "b2-explaining-presenting-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "audience"
+        },
+        "translations": {
+          "fa": "مخاطب"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_explaining_presenting_audience",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "lemma": "audience",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_explaining_presenting_audience"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_explaining_presenting_audience",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "lexeme_ref": "lx_b2_explaining_presenting_audience",
+        "surface_form": "audience",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_explaining_presenting_summary",
+      "data": {
+        "slug": "b2_explaining_presenting_summary",
+        "lesson_key": "b2-explaining-presenting-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "summary"
+        },
+        "translations": {
+          "fa": "جمع‌بندی"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_explaining_presenting_summary",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "lemma": "summary",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_explaining_presenting_summary"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_explaining_presenting_summary",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "lexeme_ref": "lx_b2_explaining_presenting_summary",
+        "surface_form": "summary",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_explaining_presenting_follow_up",
+      "data": {
+        "slug": "b2_explaining_presenting_follow_up",
+        "lesson_key": "b2-explaining-presenting-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "follow-up"
+        },
+        "translations": {
+          "fa": "پیگیری / سؤال بعدی"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_explaining_presenting_follow_up",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "lemma": "follow-up",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_explaining_presenting_follow_up"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_explaining_presenting_follow_up",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "lexeme_ref": "lx_b2_explaining_presenting_follow_up",
+        "surface_form": "follow-up",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_explaining_presenting_opening",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "text": {
+          "en": "First, I'll outline the problem, then compare two options, and finally explain my recommendation."
+        },
+        "translations": {
+          "fa": "اول طرح کلی مشکل رو می‌گم، بعد دو گزینه رو مقایسه می‌کنم و در آخر پیشنهادم رو توضیح می‌دم."
+        },
+        "intent": "signpost_presentation",
+        "concept_refs": [
+          "b2_explaining_presenting_outline",
+          "b2_explaining_presenting_signpost"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_explaining_presenting_point",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "text": {
+          "en": "The key point is that the current process creates the same delay at two different stages."
+        },
+        "translations": {
+          "fa": "نکته کلیدی اینه که روند فعلی در دو مرحله مختلف همون تأخیر رو ایجاد می‌کنه."
+        },
+        "intent": "state_key_point",
+        "concept_refs": [
+          "b2_explaining_presenting_key_point"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_explaining_presenting_example",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "text": {
+          "en": "For example, last month three requests waited more than a day before reaching the right team."
+        },
+        "translations": {
+          "fa": "مثلاً ماه قبل سه درخواست بیشتر از یک روز منتظر موندن تا به تیم درست برسن."
+        },
+        "intent": "support_with_example",
+        "concept_refs": [
+          "b2_explaining_presenting_example"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_explaining_presenting_audience",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "text": {
+          "en": "I'm keeping the technical detail brief because the audience mainly needs the practical impact."
+        },
+        "translations": {
+          "fa": "جزئیات فنی رو کوتاه نگه می‌دارم چون مخاطب بیشتر اثر عملی رو لازم داره."
+        },
+        "intent": "adapt_to_audience",
+        "concept_refs": [
+          "b2_explaining_presenting_audience"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_explaining_presenting_clarify",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "text": {
+          "en": "Let me clarify what I mean by 'faster': I mean fewer waiting stages, not less review."
+        },
+        "translations": {
+          "fa": "بذارید روشن کنم منظورم از «سریع‌تر» چیه: مراحل انتظار کمتر، نه بررسی کمتر."
+        },
+        "intent": "clarify_term",
+        "concept_refs": [
+          "b2_explaining_presenting_clarify"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_explaining_presenting_question",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "text": {
+          "en": "That's a useful follow-up question. The short answer is yes, but only if the pilot stays small."
+        },
+        "translations": {
+          "fa": "سؤال پیگیری خوبیه. جواب کوتاه بله‌ست، ولی فقط اگر پایلوت کوچک بمونه."
+        },
+        "intent": "handle_followup",
+        "concept_refs": [
+          "b2_explaining_presenting_follow_up"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_explaining_presenting_summary",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "text": {
+          "en": "To sum up, both options are workable, but the second one reduces the biggest source of delay."
+        },
+        "translations": {
+          "fa": "در جمع‌بندی هر دو گزینه قابل‌اجران، ولی دومی بزرگ‌ترین منبع تأخیر رو کم می‌کنه."
+        },
+        "intent": "summarize_presentation",
+        "concept_refs": [
+          "b2_explaining_presenting_summary"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_explaining_presenting_close",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "text": {
+          "en": "If anything was unclear, I'm happy to go back to the relevant section before we decide."
+        },
+        "translations": {
+          "fa": "اگر چیزی نامشخص بود، خوشحال می‌شم قبل از تصمیم به بخش مربوط برگردم."
+        },
+        "intent": "invite_questions",
+        "concept_refs": [
+          "b2_explaining_presenting_clarify",
+          "b2_explaining_presenting_audience"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_explaining_presenting_signposting",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "slug": "b2-explaining-presenting-signposting",
+        "title": "Presentation signposting",
+        "rule_summary": "Use first, the main point is, moving on to, for example, and to sum up to make a presentation easy to follow.",
+        "explanation": {
+          "fa": "برای قابل‌دنبال بودن ارائه از first، the main point is، moving on to، for example و to sum up استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "First, I'd like to explain the problem.",
+            "fa": "اول می‌خواهم مشکل را توضیح بدهم."
+          },
+          {
+            "en": "To sum up, we have two realistic options.",
+            "fa": "در جمع‌بندی دو گزینه واقع‌بینانه داریم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_explaining_presenting_relative_clauses",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "slug": "b2-explaining-presenting-relative-clauses",
+        "title": "Relative clauses for detail",
+        "rule_summary": "Use who, which, that, and where to add identifying or extra information without starting a new sentence.",
+        "explanation": {
+          "fa": "با who، which، that و where اطلاعات شناسایی‌کننده یا تکمیلی را بدون جمله جدا اضافه می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I chose a hotel that includes breakfast.",
+            "fa": "هتلی را انتخاب کردم که صبحانه دارد."
+          },
+          {
+            "en": "The manager, who joined last year, led the meeting.",
+            "fa": "مدیر که پارسال اضافه شد جلسه را هدایت کرد."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_explaining_presenting_softening",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "slug": "b2-explaining-presenting-softening",
+        "title": "Softening requests and disagreement",
+        "rule_summary": "Use could, would, perhaps, a little, and indirect wording to make requests or disagreement less abrupt.",
+        "explanation": {
+          "fa": "برای نرم‌تر کردن درخواست یا مخالفت از could، would، perhaps و عبارت‌های غیرمستقیم استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Could we look at another option?",
+            "fa": "می‌شه یک گزینه دیگر را بررسی کنیم؟"
+          },
+          {
+            "en": "I'm not sure that would solve the main issue.",
+            "fa": "مطمئن نیستم این مشکل اصلی را حل کند."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_explaining_presenting_scene_1",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "title": "Explaining & Presenting Clearly: part 1",
+        "setting": "coffee break",
+        "cefr": "B2",
+        "topic": "questions",
+        "characters": [
+          "Ivy",
+          "David"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ivy",
+            "text": "Which option seems more realistic to you?",
+            "translation_fa": "کدوم گزینه به نظرت واقع‌بینانه‌تره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "David",
+            "text": "First, I'll outline the problem, then compare two options, and finally explain my recommendation.",
+            "translation_fa": "اول طرح کلی مشکل رو می‌گم، بعد دو گزینه رو مقایسه می‌کنم و در آخر پیشنهادم رو توضیح می‌دم."
+          },
+          {
+            "order": 3,
+            "speaker": "Ivy",
+            "text": "Why does that option work better?",
+            "translation_fa": "چرا اون گزینه بهتر جواب می‌ده؟"
+          },
+          {
+            "order": 4,
+            "speaker": "David",
+            "text": "The key point is that the current process creates the same delay at two different stages.",
+            "translation_fa": "نکته کلیدی اینه که روند فعلی در دو مرحله مختلف همون تأخیر رو ایجاد می‌کنه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_explaining_presenting_scene_2",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "title": "Explaining & Presenting Clearly: part 2",
+        "setting": "video call",
+        "cefr": "B2",
+        "topic": "questions",
+        "characters": [
+          "Fatima",
+          "Chris"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Fatima",
+            "text": "What do you think is the main issue here?",
+            "translation_fa": "فکر می‌کنی مسئله اصلی اینجا چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Chris",
+            "text": "For example, last month three requests waited more than a day before reaching the right team.",
+            "translation_fa": "مثلاً ماه قبل سه درخواست بیشتر از یک روز منتظر موندن تا به تیم درست برسن."
+          },
+          {
+            "order": 3,
+            "speaker": "Fatima",
+            "text": "What makes that the most important point?",
+            "translation_fa": "چی باعث می‌شه این مهم‌ترین نکته باشه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Chris",
+            "text": "I'm keeping the technical detail brief because the audience mainly needs the practical impact.",
+            "translation_fa": "جزئیات فنی رو کوتاه نگه می‌دارم چون مخاطب بیشتر اثر عملی رو لازم داره."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_explaining_presenting_scene_3",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "title": "Explaining & Presenting Clearly: part 3",
+        "setting": "walk after work",
+        "cefr": "B2",
+        "topic": "questions",
+        "characters": [
+          "Maya",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "How would you handle this situation?",
+            "translation_fa": "تو این موقعیت رو چطور مدیریت می‌کردی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "Let me clarify what I mean by 'faster': I mean fewer waiting stages, not less review.",
+            "translation_fa": "بذارید روشن کنم منظورم از «سریع‌تر» چیه: مراحل انتظار کمتر، نه بررسی کمتر."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "What would you consider before deciding?",
+            "translation_fa": "قبل از تصمیم گرفتن چه چیزی رو در نظر می‌گرفتی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "That's a useful follow-up question. The short answer is yes, but only if the pilot stays small.",
+            "translation_fa": "سؤال پیگیری خوبیه. جواب کوتاه بله‌ست، ولی فقط اگر پایلوت کوچک بمونه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_explaining_presenting_fill",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "The ___ point is that the same delay appears twice."
+        },
+        "options": [
+          "key",
+          "follow-up",
+          "outline",
+          "audience"
+        ],
+        "answer": {
+          "value": "key"
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_explaining_presenting_listen1",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "The key point is that the current process creates the same delay at two different stages."
+        },
+        "options": [
+          "نکته کلیدی اینه که روند فعلی در دو مرحله مختلف همون تأخیر رو ایجاد می‌کنه.",
+          "اول طرح کلی مشکل رو می‌گم، بعد دو گزینه رو مقایسه می‌کنم و در آخر پیشنهادم رو توضیح می‌دم.",
+          "بذارید روشن کنم منظورم از «سریع‌تر» چیه: مراحل انتظار کمتر، نه بررسی کمتر.",
+          "در جمع‌بندی هر دو گزینه قابل‌اجران، ولی دومی بزرگ‌ترین منبع تأخیر رو کم می‌کنه."
+        ],
+        "answer": {
+          "value": "نکته کلیدی اینه که روند فعلی در دو مرحله مختلف همون تأخیر رو ایجاد می‌کنه."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_explaining_presenting_speak1",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: مثلاً ماه قبل سه درخواست بیشتر از یک روز منتظر موندن تا به تیم درست برسن."
+        },
+        "answer": {
+          "expected_text": "For example, last month three requests waited more than a day before reaching the right team."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_explaining_presenting_build1",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "جزئیات فنی رو کوتاه نگه می‌دارم چون مخاطب بیشتر اثر عملی رو لازم داره.",
+          "tokens": [
+            "impact.",
+            "practical",
+            "the",
+            "needs",
+            "mainly",
+            "audience",
+            "the",
+            "because",
+            "brief",
+            "detail",
+            "technical",
+            "the",
+            "keeping",
+            "I'm"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I'm",
+            "keeping",
+            "the",
+            "technical",
+            "detail",
+            "brief",
+            "because",
+            "the",
+            "audience",
+            "mainly",
+            "needs",
+            "the",
+            "practical",
+            "impact."
+          ],
+          "text": "I'm keeping the technical detail brief because the audience mainly needs the practical impact."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_explaining_presenting_meaning",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "Let me clarify what I mean by 'faster': I mean fewer waiting stages, not less review."
+        },
+        "options": [
+          "بذارید روشن کنم منظورم از «سریع‌تر» چیه: مراحل انتظار کمتر، نه بررسی کمتر.",
+          "مثلاً ماه قبل سه درخواست بیشتر از یک روز منتظر موندن تا به تیم درست برسن.",
+          "در جمع‌بندی هر دو گزینه قابل‌اجران، ولی دومی بزرگ‌ترین منبع تأخیر رو کم می‌کنه.",
+          "اول طرح کلی مشکل رو می‌گم، بعد دو گزینه رو مقایسه می‌کنم و در آخر پیشنهادم رو توضیح می‌دم."
+        ],
+        "answer": {
+          "value": "بذارید روشن کنم منظورم از «سریع‌تر» چیه: مراحل انتظار کمتر، نه بررسی کمتر."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_explaining_presenting_listen2",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "That's a useful follow-up question. The short answer is yes, but only if the pilot stays small."
+        },
+        "options": [
+          "سؤال پیگیری خوبیه. جواب کوتاه بله‌ست، ولی فقط اگر پایلوت کوچک بمونه.",
+          "نکته کلیدی اینه که روند فعلی در دو مرحله مختلف همون تأخیر رو ایجاد می‌کنه.",
+          "جزئیات فنی رو کوتاه نگه می‌دارم چون مخاطب بیشتر اثر عملی رو لازم داره.",
+          "اگر چیزی نامشخص بود، خوشحال می‌شم قبل از تصمیم به بخش مربوط برگردم."
+        ],
+        "answer": {
+          "value": "سؤال پیگیری خوبیه. جواب کوتاه بله‌ست، ولی فقط اگر پایلوت کوچک بمونه."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_explaining_presenting_speak2",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: در جمع‌بندی هر دو گزینه قابل‌اجران، ولی دومی بزرگ‌ترین منبع تأخیر رو کم می‌کنه."
+        },
+        "answer": {
+          "expected_text": "To sum up, both options are workable, but the second one reduces the biggest source of delay."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_explaining_presenting_build2",
+      "data": {
+        "lesson_key": "b2-explaining-presenting-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "اگر چیزی نامشخص بود، خوشحال می‌شم قبل از تصمیم به بخش مربوط برگردم.",
+          "tokens": [
+            "decide.",
+            "we",
+            "before",
+            "section",
+            "relevant",
+            "the",
+            "to",
+            "back",
+            "go",
+            "to",
+            "happy",
+            "I'm",
+            "unclear,",
+            "was",
+            "anything",
+            "If"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "If",
+            "anything",
+            "was",
+            "unclear,",
+            "I'm",
+            "happy",
+            "to",
+            "go",
+            "back",
+            "to",
+            "the",
+            "relevant",
+            "section",
+            "before",
+            "we",
+            "decide."
+          ],
+          "text": "If anything was unclear, I'm happy to go back to the relevant section before we decide."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1000 @@
+{
+  "batch_id": "en-us-b2-money-budgeting-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B2",
+  "curriculum_unit": "b2-money-budgeting",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b2_money_budgeting_budget",
+      "data": {
+        "slug": "b2_money_budgeting_budget",
+        "lesson_key": "b2-money-budgeting-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "budget"
+        },
+        "translations": {
+          "fa": "بودجه"
+        },
+        "cefr": "B2",
+        "topic": "prices",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_money_budgeting_budget",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "lemma": "budget",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_money_budgeting_budget"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_money_budgeting_budget",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "lexeme_ref": "lx_b2_money_budgeting_budget",
+        "surface_form": "budget",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_money_budgeting_recurring",
+      "data": {
+        "slug": "b2_money_budgeting_recurring",
+        "lesson_key": "b2-money-budgeting-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "recurring"
+        },
+        "translations": {
+          "fa": "تکرارشونده"
+        },
+        "cefr": "B2",
+        "topic": "prices",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_money_budgeting_recurring",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "lemma": "recurring",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b2_money_budgeting_recurring"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_money_budgeting_recurring",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "lexeme_ref": "lx_b2_money_budgeting_recurring",
+        "surface_form": "recurring",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_money_budgeting_expense",
+      "data": {
+        "slug": "b2_money_budgeting_expense",
+        "lesson_key": "b2-money-budgeting-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "expense"
+        },
+        "translations": {
+          "fa": "هزینه"
+        },
+        "cefr": "B2",
+        "topic": "prices",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_money_budgeting_expense",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "lemma": "expense",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_money_budgeting_expense"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_money_budgeting_expense",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "lexeme_ref": "lx_b2_money_budgeting_expense",
+        "surface_form": "expense",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_money_budgeting_savings",
+      "data": {
+        "slug": "b2_money_budgeting_savings",
+        "lesson_key": "b2-money-budgeting-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "savings"
+        },
+        "translations": {
+          "fa": "پس‌انداز"
+        },
+        "cefr": "B2",
+        "topic": "prices",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_money_budgeting_savings",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "lemma": "savings",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_money_budgeting_savings"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_money_budgeting_savings",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "lexeme_ref": "lx_b2_money_budgeting_savings",
+        "surface_form": "savings",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_money_budgeting_afford",
+      "data": {
+        "slug": "b2_money_budgeting_afford",
+        "lesson_key": "b2-money-budgeting-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "afford"
+        },
+        "translations": {
+          "fa": "از پس هزینه برآمدن"
+        },
+        "cefr": "B2",
+        "topic": "prices",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_money_budgeting_afford",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "lemma": "afford",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_money_budgeting_afford"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_money_budgeting_afford",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "lexeme_ref": "lx_b2_money_budgeting_afford",
+        "surface_form": "afford",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_money_budgeting_priority",
+      "data": {
+        "slug": "b2_money_budgeting_priority",
+        "lesson_key": "b2-money-budgeting-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "priority"
+        },
+        "translations": {
+          "fa": "اولویت"
+        },
+        "cefr": "B2",
+        "topic": "prices",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_money_budgeting_priority",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "lemma": "priority",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_money_budgeting_priority"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_money_budgeting_priority",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "lexeme_ref": "lx_b2_money_budgeting_priority",
+        "surface_form": "priority",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_money_budgeting_roughly",
+      "data": {
+        "slug": "b2_money_budgeting_roughly",
+        "lesson_key": "b2-money-budgeting-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "roughly"
+        },
+        "translations": {
+          "fa": "تقریباً"
+        },
+        "cefr": "B2",
+        "topic": "prices",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_money_budgeting_roughly",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "lemma": "roughly",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "b2_money_budgeting_roughly"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_money_budgeting_roughly",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "lexeme_ref": "lx_b2_money_budgeting_roughly",
+        "surface_form": "roughly",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_money_budgeting_cut_back",
+      "data": {
+        "slug": "b2_money_budgeting_cut_back",
+        "lesson_key": "b2-money-budgeting-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "cut back"
+        },
+        "translations": {
+          "fa": "کم کردن هزینه"
+        },
+        "cefr": "B2",
+        "topic": "prices",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_money_budgeting_cut_back",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "lemma": "cut back",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrasal_verb",
+        "concept_refs": [
+          "b2_money_budgeting_cut_back"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_money_budgeting_cut_back",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "lexeme_ref": "lx_b2_money_budgeting_cut_back",
+        "surface_form": "cut back",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_money_budgeting_budget",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "text": {
+          "en": "I try to build my budget around fixed expenses first and treat optional spending separately."
+        },
+        "translations": {
+          "fa": "سعی می‌کنم اول بودجه رو بر اساس هزینه‌های ثابت بچینم و خرج اختیاری رو جدا حساب کنم."
+        },
+        "intent": "explain_budget_method",
+        "concept_refs": [
+          "b2_money_budgeting_budget",
+          "b2_money_budgeting_expense"
+        ],
+        "cefr": "B2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_money_budgeting_recurring",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "text": {
+          "en": "Recurring costs are easy to ignore because each one looks small on its own."
+        },
+        "translations": {
+          "fa": "هزینه‌های تکرارشونده رو راحت می‌شه نادیده گرفت چون هر کدوم جداگانه کم به نظر می‌رسه."
+        },
+        "intent": "identify_budget_risk",
+        "concept_refs": [
+          "b2_money_budgeting_recurring",
+          "b2_money_budgeting_expense"
+        ],
+        "cefr": "B2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_money_budgeting_roughly",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "text": {
+          "en": "Rent and utilities take roughly forty percent of my monthly income."
+        },
+        "translations": {
+          "fa": "اجاره و قبوض تقریباً چهل درصد درآمد ماهانه‌ام رو می‌گیرن."
+        },
+        "intent": "approximate_amount",
+        "concept_refs": [
+          "b2_money_budgeting_roughly",
+          "b2_money_budgeting_budget"
+        ],
+        "cefr": "B2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_money_budgeting_savings",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "text": {
+          "en": "I'd rather protect my regular savings than spend more on short-term convenience."
+        },
+        "translations": {
+          "fa": "ترجیح می‌دم پس‌انداز منظمم رو حفظ کنم تا برای راحتی کوتاه‌مدت بیشتر خرج کنم."
+        },
+        "intent": "state_saving_priority",
+        "concept_refs": [
+          "b2_money_budgeting_savings",
+          "b2_money_budgeting_priority"
+        ],
+        "cefr": "B2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_money_budgeting_cutback",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "text": {
+          "en": "If I need to cut back, subscriptions and eating out are the first places I'd look."
+        },
+        "translations": {
+          "fa": "اگر لازم باشه هزینه رو کم کنم، اول سراغ اشتراک‌ها و بیرون غذا خوردن می‌رم."
+        },
+        "intent": "identify_savings_option",
+        "concept_refs": [
+          "b2_money_budgeting_cut_back"
+        ],
+        "cefr": "B2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_money_budgeting_afford",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "text": {
+          "en": "I could afford the purchase now, but it would leave almost no room for unexpected expenses."
+        },
+        "translations": {
+          "fa": "الان از پس خریدش برمیام، ولی تقریباً هیچ جایی برای هزینه غیرمنتظره باقی نمی‌ذاره."
+        },
+        "intent": "assess_affordability",
+        "concept_refs": [
+          "b2_money_budgeting_afford",
+          "b2_money_budgeting_expense"
+        ],
+        "cefr": "B2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_money_budgeting_tradeoff",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "text": {
+          "en": "Spending a little more on housing means I need to be stricter in other parts of the budget."
+        },
+        "translations": {
+          "fa": "کمی بیشتر خرج مسکن کردن یعنی باید در بخش‌های دیگه بودجه سخت‌گیرتر باشم."
+        },
+        "intent": "explain_tradeoff",
+        "concept_refs": [
+          "b2_money_budgeting_budget",
+          "b2_money_budgeting_priority"
+        ],
+        "cefr": "B2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_money_budgeting_review",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "text": {
+          "en": "I review the numbers every few months because small recurring costs tend to change over time."
+        },
+        "translations": {
+          "fa": "هر چند ماه عددها رو مرور می‌کنم چون هزینه‌های تکرارشونده معمولاً با زمان تغییر می‌کنن."
+        },
+        "intent": "review_budget",
+        "concept_refs": [
+          "b2_money_budgeting_recurring",
+          "b2_money_budgeting_budget"
+        ],
+        "cefr": "B2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_money_budgeting_quantifiers",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "slug": "b2-money-budgeting-quantifiers",
+        "title": "Quantifiers and approximation",
+        "rule_summary": "Use roughly, about, nearly, a little, far more, and far less to discuss amounts without false precision.",
+        "explanation": {
+          "fa": "برای مقدارهای تقریبی از roughly، about، nearly و برای مقایسه مقدار از far more/far less استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Rent takes roughly a third of my income.",
+            "fa": "اجاره تقریباً یک‌سوم درآمدم را می‌گیرد."
+          },
+          {
+            "en": "We spend far less on transport now.",
+            "fa": "الان خیلی کمتر برای رفت‌وآمد هزینه می‌کنیم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_money_budgeting_conditionals",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "slug": "b2-money-budgeting-conditionals",
+        "title": "Conditionals for consequences",
+        "rule_summary": "Use conditional clauses to connect a possible action with its likely or imagined consequence.",
+        "explanation": {
+          "fa": "با جمله‌های شرطی یک اقدام احتمالی را به نتیجه واقعی یا فرضی آن وصل می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "If we leave earlier, we'll avoid traffic.",
+            "fa": "اگر زودتر راه بیفتیم از ترافیک دور می‌مانیم."
+          },
+          {
+            "en": "If I had a larger budget, I'd choose the faster option.",
+            "fa": "اگر بودجه بیشتری داشتم گزینه سریع‌تر را انتخاب می‌کردم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_money_budgeting_comparatives",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "slug": "b2-money-budgeting-comparatives",
+        "title": "Complex comparison",
+        "rule_summary": "Use comparatives, less/more, and structures such as not as ... as to compare several criteria precisely.",
+        "explanation": {
+          "fa": "برای مقایسه دقیق چند معیار از comparative، less/more و not as ... as استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "It's slightly more expensive but much more reliable.",
+            "fa": "کمی گران‌تر ولی خیلی قابل‌اعتمادتر است."
+          },
+          {
+            "en": "The cheaper route isn't as flexible.",
+            "fa": "مسیر ارزان‌تر به همان اندازه انعطاف‌پذیر نیست."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_money_budgeting_scene_1",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "title": "Money & Budgeting: part 1",
+        "setting": "coffee break",
+        "cefr": "B2",
+        "topic": "prices",
+        "characters": [
+          "Ivy",
+          "David"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ivy",
+            "text": "Which option seems more realistic to you?",
+            "translation_fa": "کدوم گزینه به نظرت واقع‌بینانه‌تره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "David",
+            "text": "I try to build my budget around fixed expenses first and treat optional spending separately.",
+            "translation_fa": "سعی می‌کنم اول بودجه رو بر اساس هزینه‌های ثابت بچینم و خرج اختیاری رو جدا حساب کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Ivy",
+            "text": "Why does that option work better?",
+            "translation_fa": "چرا اون گزینه بهتر جواب می‌ده؟"
+          },
+          {
+            "order": 4,
+            "speaker": "David",
+            "text": "Recurring costs are easy to ignore because each one looks small on its own.",
+            "translation_fa": "هزینه‌های تکرارشونده رو راحت می‌شه نادیده گرفت چون هر کدوم جداگانه کم به نظر می‌رسه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_money_budgeting_scene_2",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "title": "Money & Budgeting: part 2",
+        "setting": "video call",
+        "cefr": "B2",
+        "topic": "prices",
+        "characters": [
+          "Fatima",
+          "Chris"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Fatima",
+            "text": "What do you think is the main issue here?",
+            "translation_fa": "فکر می‌کنی مسئله اصلی اینجا چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Chris",
+            "text": "Rent and utilities take roughly forty percent of my monthly income.",
+            "translation_fa": "اجاره و قبوض تقریباً چهل درصد درآمد ماهانه‌ام رو می‌گیرن."
+          },
+          {
+            "order": 3,
+            "speaker": "Fatima",
+            "text": "What makes that the most important point?",
+            "translation_fa": "چی باعث می‌شه این مهم‌ترین نکته باشه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Chris",
+            "text": "I'd rather protect my regular savings than spend more on short-term convenience.",
+            "translation_fa": "ترجیح می‌دم پس‌انداز منظمم رو حفظ کنم تا برای راحتی کوتاه‌مدت بیشتر خرج کنم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_money_budgeting_scene_3",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "title": "Money & Budgeting: part 3",
+        "setting": "walk after work",
+        "cefr": "B2",
+        "topic": "prices",
+        "characters": [
+          "Maya",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "How would you handle this situation?",
+            "translation_fa": "تو این موقعیت رو چطور مدیریت می‌کردی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "If I need to cut back, subscriptions and eating out are the first places I'd look.",
+            "translation_fa": "اگر لازم باشه هزینه رو کم کنم، اول سراغ اشتراک‌ها و بیرون غذا خوردن می‌رم."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "What would you consider before deciding?",
+            "translation_fa": "قبل از تصمیم گرفتن چه چیزی رو در نظر می‌گرفتی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "I could afford the purchase now, but it would leave almost no room for unexpected expenses.",
+            "translation_fa": "الان از پس خریدش برمیام، ولی تقریباً هیچ جایی برای هزینه غیرمنتظره باقی نمی‌ذاره."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_money_budgeting_fill",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Rent takes ___ forty percent of my monthly income."
+        },
+        "options": [
+          "roughly",
+          "recurring",
+          "afford",
+          "savings"
+        ],
+        "answer": {
+          "value": "roughly"
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_money_budgeting_listen1",
+      "data": {
+        "lesson_key": "b2-money-budgeting-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Recurring costs are easy to ignore because each one looks small on its own."
+        },
+        "options": [
+          "هزینه‌های تکرارشونده رو راحت می‌شه نادیده گرفت چون هر کدوم جداگانه کم به نظر می‌رسه.",
+          "سعی می‌کنم اول بودجه رو بر اساس هزینه‌های ثابت بچینم و خرج اختیاری رو جدا حساب کنم.",
+          "اگر لازم باشه هزینه رو کم کنم، اول سراغ اشتراک‌ها و بیرون غذا خوردن می‌رم.",
+          "کمی بیشتر خرج مسکن کردن یعنی باید در بخش‌های دیگه بودجه سخت‌گیرتر باشم."
+        ],
+        "answer": {
+          "value": "هزینه‌های تکرارشونده رو راحت می‌شه نادیده گرفت چون هر کدوم جداگانه کم به نظر می‌رسه."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_money_budgeting_speak1",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: اجاره و قبوض تقریباً چهل درصد درآمد ماهانه‌ام رو می‌گیرن."
+        },
+        "answer": {
+          "expected_text": "Rent and utilities take roughly forty percent of my monthly income."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_money_budgeting_build1",
+      "data": {
+        "lesson_key": "b2-money-budgeting-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "ترجیح می‌دم پس‌انداز منظمم رو حفظ کنم تا برای راحتی کوتاه‌مدت بیشتر خرج کنم.",
+          "tokens": [
+            "convenience.",
+            "short-term",
+            "on",
+            "more",
+            "spend",
+            "than",
+            "savings",
+            "regular",
+            "my",
+            "protect",
+            "rather",
+            "I'd"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I'd",
+            "rather",
+            "protect",
+            "my",
+            "regular",
+            "savings",
+            "than",
+            "spend",
+            "more",
+            "on",
+            "short-term",
+            "convenience."
+          ],
+          "text": "I'd rather protect my regular savings than spend more on short-term convenience."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_money_budgeting_meaning",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "If I need to cut back, subscriptions and eating out are the first places I'd look."
+        },
+        "options": [
+          "اگر لازم باشه هزینه رو کم کنم، اول سراغ اشتراک‌ها و بیرون غذا خوردن می‌رم.",
+          "اجاره و قبوض تقریباً چهل درصد درآمد ماهانه‌ام رو می‌گیرن.",
+          "کمی بیشتر خرج مسکن کردن یعنی باید در بخش‌های دیگه بودجه سخت‌گیرتر باشم.",
+          "سعی می‌کنم اول بودجه رو بر اساس هزینه‌های ثابت بچینم و خرج اختیاری رو جدا حساب کنم."
+        ],
+        "answer": {
+          "value": "اگر لازم باشه هزینه رو کم کنم، اول سراغ اشتراک‌ها و بیرون غذا خوردن می‌رم."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_money_budgeting_listen2",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "I could afford the purchase now, but it would leave almost no room for unexpected expenses."
+        },
+        "options": [
+          "الان از پس خریدش برمیام، ولی تقریباً هیچ جایی برای هزینه غیرمنتظره باقی نمی‌ذاره.",
+          "هزینه‌های تکرارشونده رو راحت می‌شه نادیده گرفت چون هر کدوم جداگانه کم به نظر می‌رسه.",
+          "ترجیح می‌دم پس‌انداز منظمم رو حفظ کنم تا برای راحتی کوتاه‌مدت بیشتر خرج کنم.",
+          "هر چند ماه عددها رو مرور می‌کنم چون هزینه‌های تکرارشونده معمولاً با زمان تغییر می‌کنن."
+        ],
+        "answer": {
+          "value": "الان از پس خریدش برمیام، ولی تقریباً هیچ جایی برای هزینه غیرمنتظره باقی نمی‌ذاره."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_money_budgeting_speak2",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: کمی بیشتر خرج مسکن کردن یعنی باید در بخش‌های دیگه بودجه سخت‌گیرتر باشم."
+        },
+        "answer": {
+          "expected_text": "Spending a little more on housing means I need to be stricter in other parts of the budget."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_money_budgeting_build2",
+      "data": {
+        "lesson_key": "b2-money-budgeting-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "هر چند ماه عددها رو مرور می‌کنم چون هزینه‌های تکرارشونده معمولاً با زمان تغییر می‌کنن.",
+          "tokens": [
+            "time.",
+            "over",
+            "change",
+            "to",
+            "tend",
+            "costs",
+            "recurring",
+            "small",
+            "because",
+            "months",
+            "few",
+            "every",
+            "numbers",
+            "the",
+            "review",
+            "I"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I",
+            "review",
+            "the",
+            "numbers",
+            "every",
+            "few",
+            "months",
+            "because",
+            "small",
+            "recurring",
+            "costs",
+            "tend",
+            "to",
+            "change",
+            "over",
+            "time."
+          ],
+          "text": "I review the numbers every few months because small recurring costs tend to change over time."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    }
+  ]
+}

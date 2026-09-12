@@ -1,0 +1,999 @@
+{
+  "batch_id": "en-us-b2-agreement-disagreement-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B2",
+  "curriculum_unit": "b2-agreement-disagreement",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b2_agreement_disagreement_concede",
+      "data": {
+        "slug": "b2_agreement_disagreement_concede",
+        "lesson_key": "b2-agreement-disagreement-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "concede"
+        },
+        "translations": {
+          "fa": "پذیرفتن یک نکته از طرف مقابل"
+        },
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_agreement_disagreement_concede",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "lemma": "concede",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_agreement_disagreement_concede"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_agreement_disagreement_concede",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "lexeme_ref": "lx_b2_agreement_disagreement_concede",
+        "surface_form": "concede",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_agreement_disagreement_counterargument",
+      "data": {
+        "slug": "b2_agreement_disagreement_counterargument",
+        "lesson_key": "b2-agreement-disagreement-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "counterargument"
+        },
+        "translations": {
+          "fa": "استدلال مخالف"
+        },
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_agreement_disagreement_counterargument",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "lemma": "counterargument",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_agreement_disagreement_counterargument"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_agreement_disagreement_counterargument",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "lexeme_ref": "lx_b2_agreement_disagreement_counterargument",
+        "surface_form": "counterargument",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_agreement_disagreement_fair_point",
+      "data": {
+        "slug": "b2_agreement_disagreement_fair_point",
+        "lesson_key": "b2-agreement-disagreement-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "fair point"
+        },
+        "translations": {
+          "fa": "نکته منصفانه"
+        },
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_agreement_disagreement_fair_point",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "lemma": "fair point",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrase",
+        "concept_refs": [
+          "b2_agreement_disagreement_fair_point"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_agreement_disagreement_fair_point",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "lexeme_ref": "lx_b2_agreement_disagreement_fair_point",
+        "surface_form": "fair point",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_agreement_disagreement_challenge",
+      "data": {
+        "slug": "b2_agreement_disagreement_challenge",
+        "lesson_key": "b2-agreement-disagreement-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "challenge"
+        },
+        "translations": {
+          "fa": "به چالش کشیدن"
+        },
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_agreement_disagreement_challenge",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "lemma": "challenge",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_agreement_disagreement_challenge"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_agreement_disagreement_challenge",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "lexeme_ref": "lx_b2_agreement_disagreement_challenge",
+        "surface_form": "challenge",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_agreement_disagreement_assumption",
+      "data": {
+        "slug": "b2_agreement_disagreement_assumption",
+        "lesson_key": "b2-agreement-disagreement-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "assumption"
+        },
+        "translations": {
+          "fa": "فرض"
+        },
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_agreement_disagreement_assumption",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "lemma": "assumption",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_agreement_disagreement_assumption"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_agreement_disagreement_assumption",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "lexeme_ref": "lx_b2_agreement_disagreement_assumption",
+        "surface_form": "assumption",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_agreement_disagreement_partly",
+      "data": {
+        "slug": "b2_agreement_disagreement_partly",
+        "lesson_key": "b2-agreement-disagreement-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "partly"
+        },
+        "translations": {
+          "fa": "تا حدی"
+        },
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_agreement_disagreement_partly",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "lemma": "partly",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "b2_agreement_disagreement_partly"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_agreement_disagreement_partly",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "lexeme_ref": "lx_b2_agreement_disagreement_partly",
+        "surface_form": "partly",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_agreement_disagreement_convincing",
+      "data": {
+        "slug": "b2_agreement_disagreement_convincing",
+        "lesson_key": "b2-agreement-disagreement-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "convincing"
+        },
+        "translations": {
+          "fa": "قانع‌کننده"
+        },
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_agreement_disagreement_convincing",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "lemma": "convincing",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b2_agreement_disagreement_convincing"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_agreement_disagreement_convincing",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "lexeme_ref": "lx_b2_agreement_disagreement_convincing",
+        "surface_form": "convincing",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_agreement_disagreement_common_ground",
+      "data": {
+        "slug": "b2_agreement_disagreement_common_ground",
+        "lesson_key": "b2-agreement-disagreement-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "common ground"
+        },
+        "translations": {
+          "fa": "نقطه مشترک"
+        },
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_agreement_disagreement_common_ground",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "lemma": "common ground",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrase",
+        "concept_refs": [
+          "b2_agreement_disagreement_common_ground"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_agreement_disagreement_common_ground",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "lexeme_ref": "lx_b2_agreement_disagreement_common_ground",
+        "surface_form": "common ground",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_agreement_disagreement_agree",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "text": {
+          "en": "That's a fair point, and I agree that the current process is too slow."
+        },
+        "translations": {
+          "fa": "نکته منصفانه‌ایه و موافقم که روند فعلی بیش از حد کنده."
+        },
+        "intent": "acknowledge_point",
+        "concept_refs": [
+          "b2_agreement_disagreement_fair_point"
+        ],
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_agreement_disagreement_qualify",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "text": {
+          "en": "I only partly agree with the conclusion, because the data can be interpreted another way."
+        },
+        "translations": {
+          "fa": "فقط تا حدی با نتیجه موافقم، چون داده‌ها رو می‌شه جور دیگه‌ای هم تفسیر کرد."
+        },
+        "intent": "partly_agree",
+        "concept_refs": [
+          "b2_agreement_disagreement_partly",
+          "b2_agreement_disagreement_counterargument"
+        ],
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_agreement_disagreement_challenge",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "text": {
+          "en": "I'd challenge the assumption that a larger team automatically works faster."
+        },
+        "translations": {
+          "fa": "این فرض رو به چالش می‌کشم که تیم بزرگ‌تر خودکار سریع‌تر کار می‌کنه."
+        },
+        "intent": "challenge_assumption",
+        "concept_refs": [
+          "b2_agreement_disagreement_challenge",
+          "b2_agreement_disagreement_assumption"
+        ],
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_agreement_disagreement_concede",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "text": {
+          "en": "I can concede that your option is cheaper, even though I still think it's riskier."
+        },
+        "translations": {
+          "fa": "می‌تونم بپذیرم که گزینه تو ارزان‌تره، هرچند هنوز فکر می‌کنم ریسک بیشتری داره."
+        },
+        "intent": "concede_point",
+        "concept_refs": [
+          "b2_agreement_disagreement_concede"
+        ],
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_agreement_disagreement_counter",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "text": {
+          "en": "The counterargument is that short-term savings could create higher costs later."
+        },
+        "translations": {
+          "fa": "استدلال مخالف اینه که صرفه‌جویی کوتاه‌مدت ممکنه بعداً هزینه بیشتری ایجاد کنه."
+        },
+        "intent": "present_counterargument",
+        "concept_refs": [
+          "b2_agreement_disagreement_counterargument"
+        ],
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_agreement_disagreement_convincing",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "text": {
+          "en": "That explanation is more convincing, but I'd still like to see evidence from a real test."
+        },
+        "translations": {
+          "fa": "این توضیح قانع‌کننده‌تره، ولی هنوز دوست دارم شواهد یک آزمایش واقعی رو ببینم."
+        },
+        "intent": "respond_to_argument",
+        "concept_refs": [
+          "b2_agreement_disagreement_convincing"
+        ],
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_agreement_disagreement_common",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "text": {
+          "en": "I think our common ground is that the problem needs fixing, even if we disagree about how."
+        },
+        "translations": {
+          "fa": "فکر می‌کنم نقطه مشترکمون اینه که مشکل باید حل بشه، حتی اگر درباره روش اختلاف داریم."
+        },
+        "intent": "identify_common_ground",
+        "concept_refs": [
+          "b2_agreement_disagreement_common_ground"
+        ],
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_agreement_disagreement_close",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "text": {
+          "en": "We may not fully agree, but we have narrowed the disagreement to one practical question."
+        },
+        "translations": {
+          "fa": "شاید کاملاً موافق نباشیم، ولی اختلاف رو به یک سؤال عملی محدود کردیم."
+        },
+        "intent": "close_disagreement",
+        "concept_refs": [
+          "b2_agreement_disagreement_common_ground"
+        ],
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_agreement_disagreement_concession",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "slug": "b2-agreement-disagreement-concession",
+        "title": "Concession and contrast",
+        "rule_summary": "Use although, even though, despite, and in spite of to acknowledge a contrasting fact.",
+        "explanation": {
+          "fa": "با although، even though، despite و in spite of یک نکته متضاد را هم‌زمان می‌پذیریم."
+        },
+        "examples": [
+          {
+            "en": "Although it costs more, it's more reliable.",
+            "fa": "با اینکه گران‌تر است، قابل‌اعتمادتر است."
+          },
+          {
+            "en": "Despite the delay, we arrived on time.",
+            "fa": "با وجود تأخیر، سر وقت رسیدیم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_agreement_disagreement_contrast",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "slug": "b2-agreement-disagreement-contrast",
+        "title": "Linking contrasting ideas",
+        "rule_summary": "Use whereas, while, on the other hand, and however to compare or contrast viewpoints and facts.",
+        "explanation": {
+          "fa": "برای مقایسه یا تضاد دیدگاه‌ها و واقعیت‌ها از whereas، while، on the other hand و however استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The first option is cheaper, whereas the second is faster.",
+            "fa": "گزینه اول ارزان‌تر است، در حالی که دومی سریع‌تر است."
+          },
+          {
+            "en": "I understand the argument; however, I see one major risk.",
+            "fa": "استدلال را می‌فهمم؛ با این حال یک ریسک مهم می‌بینم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_agreement_disagreement_softening",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "slug": "b2-agreement-disagreement-softening",
+        "title": "Softening requests and disagreement",
+        "rule_summary": "Use could, would, perhaps, a little, and indirect wording to make requests or disagreement less abrupt.",
+        "explanation": {
+          "fa": "برای نرم‌تر کردن درخواست یا مخالفت از could، would، perhaps و عبارت‌های غیرمستقیم استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Could we look at another option?",
+            "fa": "می‌شه یک گزینه دیگر را بررسی کنیم؟"
+          },
+          {
+            "en": "I'm not sure that would solve the main issue.",
+            "fa": "مطمئن نیستم این مشکل اصلی را حل کند."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_agreement_disagreement_scene_1",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "title": "Constructive Agreement & Disagreement: part 1",
+        "setting": "coffee break",
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Ivy",
+          "David"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ivy",
+            "text": "Which option seems more realistic to you?",
+            "translation_fa": "کدوم گزینه به نظرت واقع‌بینانه‌تره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "David",
+            "text": "That's a fair point, and I agree that the current process is too slow.",
+            "translation_fa": "نکته منصفانه‌ایه و موافقم که روند فعلی بیش از حد کنده."
+          },
+          {
+            "order": 3,
+            "speaker": "Ivy",
+            "text": "Why does that option work better?",
+            "translation_fa": "چرا اون گزینه بهتر جواب می‌ده؟"
+          },
+          {
+            "order": 4,
+            "speaker": "David",
+            "text": "I only partly agree with the conclusion, because the data can be interpreted another way.",
+            "translation_fa": "فقط تا حدی با نتیجه موافقم، چون داده‌ها رو می‌شه جور دیگه‌ای هم تفسیر کرد."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_agreement_disagreement_scene_2",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "title": "Constructive Agreement & Disagreement: part 2",
+        "setting": "video call",
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Fatima",
+          "Chris"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Fatima",
+            "text": "What do you think is the main issue here?",
+            "translation_fa": "فکر می‌کنی مسئله اصلی اینجا چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Chris",
+            "text": "I'd challenge the assumption that a larger team automatically works faster.",
+            "translation_fa": "این فرض رو به چالش می‌کشم که تیم بزرگ‌تر خودکار سریع‌تر کار می‌کنه."
+          },
+          {
+            "order": 3,
+            "speaker": "Fatima",
+            "text": "What makes that the most important point?",
+            "translation_fa": "چی باعث می‌شه این مهم‌ترین نکته باشه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Chris",
+            "text": "I can concede that your option is cheaper, even though I still think it's riskier.",
+            "translation_fa": "می‌تونم بپذیرم که گزینه تو ارزان‌تره، هرچند هنوز فکر می‌کنم ریسک بیشتری داره."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_agreement_disagreement_scene_3",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "title": "Constructive Agreement & Disagreement: part 3",
+        "setting": "walk after work",
+        "cefr": "B2",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Maya",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "How would you handle this situation?",
+            "translation_fa": "تو این موقعیت رو چطور مدیریت می‌کردی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "The counterargument is that short-term savings could create higher costs later.",
+            "translation_fa": "استدلال مخالف اینه که صرفه‌جویی کوتاه‌مدت ممکنه بعداً هزینه بیشتری ایجاد کنه."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "What would you consider before deciding?",
+            "translation_fa": "قبل از تصمیم گرفتن چه چیزی رو در نظر می‌گرفتی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "That explanation is more convincing, but I'd still like to see evidence from a real test.",
+            "translation_fa": "این توضیح قانع‌کننده‌تره، ولی هنوز دوست دارم شواهد یک آزمایش واقعی رو ببینم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_agreement_disagreement_fill",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "That's a ___ point, and I agree the process is too slow."
+        },
+        "options": [
+          "fair",
+          "convincing",
+          "common",
+          "challenged"
+        ],
+        "answer": {
+          "value": "fair"
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_agreement_disagreement_listen1",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "I only partly agree with the conclusion, because the data can be interpreted another way."
+        },
+        "options": [
+          "فقط تا حدی با نتیجه موافقم، چون داده‌ها رو می‌شه جور دیگه‌ای هم تفسیر کرد.",
+          "نکته منصفانه‌ایه و موافقم که روند فعلی بیش از حد کنده.",
+          "استدلال مخالف اینه که صرفه‌جویی کوتاه‌مدت ممکنه بعداً هزینه بیشتری ایجاد کنه.",
+          "فکر می‌کنم نقطه مشترکمون اینه که مشکل باید حل بشه، حتی اگر درباره روش اختلاف داریم."
+        ],
+        "answer": {
+          "value": "فقط تا حدی با نتیجه موافقم، چون داده‌ها رو می‌شه جور دیگه‌ای هم تفسیر کرد."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_agreement_disagreement_speak1",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: این فرض رو به چالش می‌کشم که تیم بزرگ‌تر خودکار سریع‌تر کار می‌کنه."
+        },
+        "answer": {
+          "expected_text": "I'd challenge the assumption that a larger team automatically works faster."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_agreement_disagreement_build1",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "می‌تونم بپذیرم که گزینه تو ارزان‌تره، هرچند هنوز فکر می‌کنم ریسک بیشتری داره.",
+          "tokens": [
+            "riskier.",
+            "it's",
+            "think",
+            "still",
+            "I",
+            "though",
+            "even",
+            "cheaper,",
+            "is",
+            "option",
+            "your",
+            "that",
+            "concede",
+            "can",
+            "I"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I",
+            "can",
+            "concede",
+            "that",
+            "your",
+            "option",
+            "is",
+            "cheaper,",
+            "even",
+            "though",
+            "I",
+            "still",
+            "think",
+            "it's",
+            "riskier."
+          ],
+          "text": "I can concede that your option is cheaper, even though I still think it's riskier."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_agreement_disagreement_meaning",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "The counterargument is that short-term savings could create higher costs later."
+        },
+        "options": [
+          "استدلال مخالف اینه که صرفه‌جویی کوتاه‌مدت ممکنه بعداً هزینه بیشتری ایجاد کنه.",
+          "این فرض رو به چالش می‌کشم که تیم بزرگ‌تر خودکار سریع‌تر کار می‌کنه.",
+          "فکر می‌کنم نقطه مشترکمون اینه که مشکل باید حل بشه، حتی اگر درباره روش اختلاف داریم.",
+          "نکته منصفانه‌ایه و موافقم که روند فعلی بیش از حد کنده."
+        ],
+        "answer": {
+          "value": "استدلال مخالف اینه که صرفه‌جویی کوتاه‌مدت ممکنه بعداً هزینه بیشتری ایجاد کنه."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_agreement_disagreement_listen2",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "That explanation is more convincing, but I'd still like to see evidence from a real test."
+        },
+        "options": [
+          "این توضیح قانع‌کننده‌تره، ولی هنوز دوست دارم شواهد یک آزمایش واقعی رو ببینم.",
+          "فقط تا حدی با نتیجه موافقم، چون داده‌ها رو می‌شه جور دیگه‌ای هم تفسیر کرد.",
+          "می‌تونم بپذیرم که گزینه تو ارزان‌تره، هرچند هنوز فکر می‌کنم ریسک بیشتری داره.",
+          "شاید کاملاً موافق نباشیم، ولی اختلاف رو به یک سؤال عملی محدود کردیم."
+        ],
+        "answer": {
+          "value": "این توضیح قانع‌کننده‌تره، ولی هنوز دوست دارم شواهد یک آزمایش واقعی رو ببینم."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_agreement_disagreement_speak2",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: فکر می‌کنم نقطه مشترکمون اینه که مشکل باید حل بشه، حتی اگر درباره روش اختلاف داریم."
+        },
+        "answer": {
+          "expected_text": "I think our common ground is that the problem needs fixing, even if we disagree about how."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_agreement_disagreement_build2",
+      "data": {
+        "lesson_key": "b2-agreement-disagreement-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "شاید کاملاً موافق نباشیم، ولی اختلاف رو به یک سؤال عملی محدود کردیم.",
+          "tokens": [
+            "question.",
+            "practical",
+            "one",
+            "to",
+            "disagreement",
+            "the",
+            "narrowed",
+            "have",
+            "we",
+            "but",
+            "agree,",
+            "fully",
+            "not",
+            "may",
+            "We"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "We",
+            "may",
+            "not",
+            "fully",
+            "agree,",
+            "but",
+            "we",
+            "have",
+            "narrowed",
+            "the",
+            "disagreement",
+            "to",
+            "one",
+            "practical",
+            "question."
+          ],
+          "text": "We may not fully agree, but we have narrowed the disagreement to one practical question."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    }
+  ]
+}

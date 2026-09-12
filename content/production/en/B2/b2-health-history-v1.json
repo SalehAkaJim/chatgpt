@@ -1,0 +1,1000 @@
+{
+  "batch_id": "en-us-b2-health-history-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "B2",
+  "curriculum_unit": "b2-health-history",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_b2_health_history_symptom",
+      "data": {
+        "slug": "b2_health_history_symptom",
+        "lesson_key": "b2-health-history-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "symptom"
+        },
+        "translations": {
+          "fa": "علامت"
+        },
+        "cefr": "B2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_health_history_symptom",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "lemma": "symptom",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_health_history_symptom"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_health_history_symptom",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "lexeme_ref": "lx_b2_health_history_symptom",
+        "surface_form": "symptom",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_health_history_persistent",
+      "data": {
+        "slug": "b2_health_history_persistent",
+        "lesson_key": "b2-health-history-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "persistent"
+        },
+        "translations": {
+          "fa": "مداوم"
+        },
+        "cefr": "B2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_health_history_persistent",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "lemma": "persistent",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b2_health_history_persistent"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_health_history_persistent",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "lexeme_ref": "lx_b2_health_history_persistent",
+        "surface_form": "persistent",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_health_history_gradually",
+      "data": {
+        "slug": "b2_health_history_gradually",
+        "lesson_key": "b2-health-history-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "gradually"
+        },
+        "translations": {
+          "fa": "به‌تدریج"
+        },
+        "cefr": "B2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_health_history_gradually",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "lemma": "gradually",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "b2_health_history_gradually"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_health_history_gradually",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "lexeme_ref": "lx_b2_health_history_gradually",
+        "surface_form": "gradually",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_health_history_previous",
+      "data": {
+        "slug": "b2_health_history_previous",
+        "lesson_key": "b2-health-history-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "previous"
+        },
+        "translations": {
+          "fa": "قبلی"
+        },
+        "cefr": "B2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_health_history_previous",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "lemma": "previous",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "b2_health_history_previous"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_health_history_previous",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "lexeme_ref": "lx_b2_health_history_previous",
+        "surface_form": "previous",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_health_history_medication",
+      "data": {
+        "slug": "b2_health_history_medication",
+        "lesson_key": "b2-health-history-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "medication"
+        },
+        "translations": {
+          "fa": "دارو"
+        },
+        "cefr": "B2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_health_history_medication",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "lemma": "medication",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_health_history_medication"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_health_history_medication",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "lexeme_ref": "lx_b2_health_history_medication",
+        "surface_form": "medication",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_health_history_worsen",
+      "data": {
+        "slug": "b2_health_history_worsen",
+        "lesson_key": "b2-health-history-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "worsen"
+        },
+        "translations": {
+          "fa": "بدتر شدن"
+        },
+        "cefr": "B2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_health_history_worsen",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "lemma": "worsen",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_health_history_worsen"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_health_history_worsen",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "lexeme_ref": "lx_b2_health_history_worsen",
+        "surface_form": "worsen",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_health_history_relieve",
+      "data": {
+        "slug": "b2_health_history_relieve",
+        "lesson_key": "b2-health-history-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "relieve"
+        },
+        "translations": {
+          "fa": "کاهش دادن"
+        },
+        "cefr": "B2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_health_history_relieve",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "lemma": "relieve",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "b2_health_history_relieve"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_health_history_relieve",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "lexeme_ref": "lx_b2_health_history_relieve",
+        "surface_form": "relieve",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_b2_health_history_history",
+      "data": {
+        "slug": "b2_health_history_history",
+        "lesson_key": "b2-health-history-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "history"
+        },
+        "translations": {
+          "fa": "سابقه پزشکی"
+        },
+        "cefr": "B2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_b2_health_history_history",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "lemma": "history",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "b2_health_history_history"
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_b2_health_history_history",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "lexeme_ref": "lx_b2_health_history_history",
+        "surface_form": "history",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_health_history_duration",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "text": {
+          "en": "I've been having the same symptom for about ten days, although it comes and goes."
+        },
+        "translations": {
+          "fa": "حدود ده روزه همین علامت رو دارم، هرچند میاد و می‌ره."
+        },
+        "intent": "describe_duration",
+        "concept_refs": [
+          "b2_health_history_symptom",
+          "b2_health_history_persistent"
+        ],
+        "cefr": "B2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_health_history_change",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "text": {
+          "en": "It started mildly, but it has gradually become more noticeable in the evenings."
+        },
+        "translations": {
+          "fa": "اول خفیف بود، ولی کم‌کم عصرها محسوس‌تر شده."
+        },
+        "intent": "describe_change",
+        "concept_refs": [
+          "b2_health_history_gradually",
+          "b2_health_history_worsen"
+        ],
+        "cefr": "B2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_health_history_history",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "text": {
+          "en": "I've had a similar problem once before, but that episode only lasted two days."
+        },
+        "translations": {
+          "fa": "یک بار قبلاً مشکل مشابه داشتم، ولی اون دفعه فقط دو روز طول کشید."
+        },
+        "intent": "give_health_history",
+        "concept_refs": [
+          "b2_health_history_history",
+          "b2_health_history_previous"
+        ],
+        "cefr": "B2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_health_history_medication",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "text": {
+          "en": "I'm taking my usual medication, and I haven't started anything new recently."
+        },
+        "translations": {
+          "fa": "داروی همیشگی‌ام رو مصرف می‌کنم و اخیراً داروی جدیدی شروع نکرده‌ام."
+        },
+        "intent": "report_medication",
+        "concept_refs": [
+          "b2_health_history_medication"
+        ],
+        "cefr": "B2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_health_history_worsen",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "text": {
+          "en": "Exercise doesn't seem to worsen it, but lack of sleep definitely makes it more uncomfortable."
+        },
+        "translations": {
+          "fa": "ورزش ظاهراً بدترش نمی‌کنه، ولی کم‌خوابی قطعاً ناراحت‌کننده‌ترش می‌کنه."
+        },
+        "intent": "identify_trigger",
+        "concept_refs": [
+          "b2_health_history_worsen"
+        ],
+        "cefr": "B2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_health_history_relief",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "text": {
+          "en": "Rest and drinking water seem to relieve the symptoms temporarily."
+        },
+        "translations": {
+          "fa": "استراحت و آب خوردن ظاهراً علائم رو موقتاً کاهش می‌ده."
+        },
+        "intent": "describe_relief",
+        "concept_refs": [
+          "b2_health_history_relieve",
+          "b2_health_history_symptom"
+        ],
+        "cefr": "B2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_health_history_impact",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "text": {
+          "en": "The main problem is that it has been affecting my concentration at work."
+        },
+        "translations": {
+          "fa": "مشکل اصلی اینه که روی تمرکزم سر کار اثر گذاشته."
+        },
+        "intent": "describe_daily_impact",
+        "concept_refs": [
+          "b2_health_history_persistent"
+        ],
+        "cefr": "B2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b2_health_history_summary",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "text": {
+          "en": "So the symptoms have lasted more than a week, changed gradually, and are now affecting daily life."
+        },
+        "translations": {
+          "fa": "پس علائم بیشتر از یک هفته طول کشیدن، تدریجی تغییر کردن و الان روی زندگی روزمره اثر دارن."
+        },
+        "intent": "summarize_history",
+        "concept_refs": [
+          "b2_health_history_symptom",
+          "b2_health_history_gradually"
+        ],
+        "cefr": "B2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_health_history_present_perfect_continuous",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "slug": "b2-health-history-present-perfect-continuous",
+        "title": "Present perfect continuous",
+        "rule_summary": "Use have/has been + -ing to emphasize duration or repeated activity continuing up to now.",
+        "explanation": {
+          "fa": "برای تأکید روی مدت یا فعالیت تکراری که تا حال ادامه داشته از have/has been + ing استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I've been sleeping badly for a week.",
+            "fa": "یک هفته است بد می‌خوابم."
+          },
+          {
+            "en": "We've been comparing prices since Monday.",
+            "fa": "از دوشنبه داریم قیمت‌ها را مقایسه می‌کنیم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_health_history_for_since",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "slug": "b2-health-history-for-since",
+        "title": "for and since",
+        "rule_summary": "Use for with a duration and since with a starting point when describing situations that continue to now.",
+        "explanation": {
+          "fa": "برای مدت از for و برای نقطه شروع از since استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I've had the symptoms for three days.",
+            "fa": "سه روز است این علائم را دارم."
+          },
+          {
+            "en": "I've felt better since Tuesday.",
+            "fa": "از سه‌شنبه حالم بهتر شده است."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_b2_health_history_present_perfect",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "slug": "b2-health-history-present-perfect",
+        "title": "Present perfect for unresolved situations",
+        "rule_summary": "Use the present perfect for actions or situations connected to now, especially previous attempts, progress, and recent changes.",
+        "explanation": {
+          "fa": "برای کارها یا وضعیت‌هایی که به حال مربوط‌اند، مخصوصاً تلاش‌های قبلی و تغییرات اخیر، از present perfect استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I've contacted support twice.",
+            "fa": "دو بار با پشتیبانی تماس گرفته‌ام."
+          },
+          {
+            "en": "The problem has become more frequent.",
+            "fa": "مشکل بیشتر شده است."
+          }
+        ],
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_health_history_scene_1",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "title": "Symptoms & Health History: part 1",
+        "setting": "coffee break",
+        "cefr": "B2",
+        "topic": "basic-health",
+        "characters": [
+          "Mei",
+          "Omar"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mei",
+            "text": "How would you handle this situation?",
+            "translation_fa": "تو این موقعیت رو چطور مدیریت می‌کردی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Omar",
+            "text": "I've been having the same symptom for about ten days, although it comes and goes.",
+            "translation_fa": "حدود ده روزه همین علامت رو دارم، هرچند میاد و می‌ره."
+          },
+          {
+            "order": 3,
+            "speaker": "Mei",
+            "text": "What would you consider before deciding?",
+            "translation_fa": "قبل از تصمیم گرفتن چه چیزی رو در نظر می‌گرفتی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Omar",
+            "text": "It started mildly, but it has gradually become more noticeable in the evenings.",
+            "translation_fa": "اول خفیف بود، ولی کم‌کم عصرها محسوس‌تر شده."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_health_history_scene_2",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "title": "Symptoms & Health History: part 2",
+        "setting": "video call",
+        "cefr": "B2",
+        "topic": "basic-health",
+        "characters": [
+          "Ava",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ava",
+            "text": "What's changed compared with before?",
+            "translation_fa": "نسبت به قبل چی تغییر کرده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "I've had a similar problem once before, but that episode only lasted two days.",
+            "translation_fa": "یک بار قبلاً مشکل مشابه داشتم، ولی اون دفعه فقط دو روز طول کشید."
+          },
+          {
+            "order": 3,
+            "speaker": "Ava",
+            "text": "And what effect has that had?",
+            "translation_fa": "و این چه اثری داشته؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "I'm taking my usual medication, and I haven't started anything new recently.",
+            "translation_fa": "داروی همیشگی‌ام رو مصرف می‌کنم و اخیراً داروی جدیدی شروع نکرده‌ام."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b2_health_history_scene_3",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "title": "Symptoms & Health History: part 3",
+        "setting": "walk after work",
+        "cefr": "B2",
+        "topic": "basic-health",
+        "characters": [
+          "Claire",
+          "Diego"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Claire",
+            "text": "Which option seems more realistic to you?",
+            "translation_fa": "کدوم گزینه به نظرت واقع‌بینانه‌تره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Diego",
+            "text": "Exercise doesn't seem to worsen it, but lack of sleep definitely makes it more uncomfortable.",
+            "translation_fa": "ورزش ظاهراً بدترش نمی‌کنه، ولی کم‌خوابی قطعاً ناراحت‌کننده‌ترش می‌کنه."
+          },
+          {
+            "order": 3,
+            "speaker": "Claire",
+            "text": "Why does that option work better?",
+            "translation_fa": "چرا اون گزینه بهتر جواب می‌ده؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Diego",
+            "text": "Rest and drinking water seem to relieve the symptoms temporarily.",
+            "translation_fa": "استراحت و آب خوردن ظاهراً علائم رو موقتاً کاهش می‌ده."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_health_history_fill",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I've been having the same symptom ___ about ten days."
+        },
+        "options": [
+          "for",
+          "since",
+          "during",
+          "from"
+        ],
+        "answer": {
+          "value": "for"
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_health_history_listen1",
+      "data": {
+        "lesson_key": "b2-health-history-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "It started mildly, but it has gradually become more noticeable in the evenings."
+        },
+        "options": [
+          "اول خفیف بود، ولی کم‌کم عصرها محسوس‌تر شده.",
+          "حدود ده روزه همین علامت رو دارم، هرچند میاد و می‌ره.",
+          "ورزش ظاهراً بدترش نمی‌کنه، ولی کم‌خوابی قطعاً ناراحت‌کننده‌ترش می‌کنه.",
+          "مشکل اصلی اینه که روی تمرکزم سر کار اثر گذاشته."
+        ],
+        "answer": {
+          "value": "اول خفیف بود، ولی کم‌کم عصرها محسوس‌تر شده."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_health_history_speak1",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: یک بار قبلاً مشکل مشابه داشتم، ولی اون دفعه فقط دو روز طول کشید."
+        },
+        "answer": {
+          "expected_text": "I've had a similar problem once before, but that episode only lasted two days."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_health_history_build1",
+      "data": {
+        "lesson_key": "b2-health-history-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "داروی همیشگی‌ام رو مصرف می‌کنم و اخیراً داروی جدیدی شروع نکرده‌ام.",
+          "tokens": [
+            "recently.",
+            "new",
+            "anything",
+            "started",
+            "haven't",
+            "I",
+            "and",
+            "medication,",
+            "usual",
+            "my",
+            "taking",
+            "I'm"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I'm",
+            "taking",
+            "my",
+            "usual",
+            "medication,",
+            "and",
+            "I",
+            "haven't",
+            "started",
+            "anything",
+            "new",
+            "recently."
+          ],
+          "text": "I'm taking my usual medication, and I haven't started anything new recently."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_health_history_meaning",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "Exercise doesn't seem to worsen it, but lack of sleep definitely makes it more uncomfortable."
+        },
+        "options": [
+          "ورزش ظاهراً بدترش نمی‌کنه، ولی کم‌خوابی قطعاً ناراحت‌کننده‌ترش می‌کنه.",
+          "یک بار قبلاً مشکل مشابه داشتم، ولی اون دفعه فقط دو روز طول کشید.",
+          "مشکل اصلی اینه که روی تمرکزم سر کار اثر گذاشته.",
+          "حدود ده روزه همین علامت رو دارم، هرچند میاد و می‌ره."
+        ],
+        "answer": {
+          "value": "ورزش ظاهراً بدترش نمی‌کنه، ولی کم‌خوابی قطعاً ناراحت‌کننده‌ترش می‌کنه."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_health_history_listen2",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "Rest and drinking water seem to relieve the symptoms temporarily."
+        },
+        "options": [
+          "استراحت و آب خوردن ظاهراً علائم رو موقتاً کاهش می‌ده.",
+          "اول خفیف بود، ولی کم‌کم عصرها محسوس‌تر شده.",
+          "داروی همیشگی‌ام رو مصرف می‌کنم و اخیراً داروی جدیدی شروع نکرده‌ام.",
+          "پس علائم بیشتر از یک هفته طول کشیدن، تدریجی تغییر کردن و الان روی زندگی روزمره اثر دارن."
+        ],
+        "answer": {
+          "value": "استراحت و آب خوردن ظاهراً علائم رو موقتاً کاهش می‌ده."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_health_history_speak2",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: مشکل اصلی اینه که روی تمرکزم سر کار اثر گذاشته."
+        },
+        "answer": {
+          "expected_text": "The main problem is that it has been affecting my concentration at work."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_b2_health_history_build2",
+      "data": {
+        "lesson_key": "b2-health-history-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "پس علائم بیشتر از یک هفته طول کشیدن، تدریجی تغییر کردن و الان روی زندگی روزمره اثر دارن.",
+          "tokens": [
+            "life.",
+            "daily",
+            "affecting",
+            "now",
+            "are",
+            "and",
+            "gradually,",
+            "changed",
+            "week,",
+            "a",
+            "than",
+            "more",
+            "lasted",
+            "have",
+            "symptoms",
+            "the",
+            "So"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "So",
+            "the",
+            "symptoms",
+            "have",
+            "lasted",
+            "more",
+            "than",
+            "a",
+            "week,",
+            "changed",
+            "gradually,",
+            "and",
+            "are",
+            "now",
+            "affecting",
+            "daily",
+            "life."
+          ],
+          "text": "So the symptoms have lasted more than a week, changed gradually, and are now affecting daily life."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "status": "approved"
+      }
+    }
+  ]
+}
