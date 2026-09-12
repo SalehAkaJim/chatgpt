@@ -110,8 +110,8 @@ this change.
 ## Audio and verification
 
 Every changed C1 turn and every new model/source text is in the strict audio
-manifest. The planned increment is 601 new MP3s: 540 dialogue turns and 61 distinct
-narrated source/model texts. The remaining 645 C1 assets are reused because their
+manifest. The completed refresh generated and validated 601 new MP3s: 540 dialogue turns and 61 distinct
+narrated source/model texts. The remaining 645 C1 assets were reused because their
 English text, voice and settings are unchanged. The four Pre-A1 instruction edits
 are Persian-only and retain their unchanged English audio.
 
@@ -130,3 +130,9 @@ simulate stale imported content, apply both SQL exports twice, and verify all
 1,959 exercises, all 540 C1 dialogue turns and lesson quality provenance. Audio QA
 checks file existence, source/voice/settings hashes, MP3 decoding, duration and
 checksums. It does not claim a human listening review of accent or delivery.
+
+## Completion evidence
+
+The [audio refresh run](https://github.com/SalehAkaJim/chatgpt/actions/runs/34698924635) completed successfully: 601 generated, 645 reused and all 1,246 active C1 items validated. All 601 MP3 files and their sidecars were verified in the published tree. The [audio and SQL commit](https://github.com/SalehAkaJim/chatgpt/commit/17190bd34e0bd359a65ba92bdcb0bf1577cddf33) contains the completed assets.
+
+The [full MySQL integration](https://github.com/SalehAkaJim/chatgpt/actions/runs/34698924638), [C1 integration](https://github.com/SalehAkaJim/chatgpt/actions/runs/34698924608), and [final content validation](https://github.com/SalehAkaJim/chatgpt/actions/runs/34699028320) passed. Generation workflows for A2, B1, B2, C1 and C2 also passed. Final verification matched all 306 changed source/SQL files against the locally checked content.
