@@ -15,6 +15,7 @@ Build one canonical content system that can support multiple learning languages,
 - Language variants such as `en-US`, `en-GB`, `ar-MSA`, `ar-EG`, `ar-LEV`
 - Orthography profiles for script, direction, normalization and diacritics policy
 - `lexeme -> word_forms` morphology model
+- Lesson items can directly reference concepts, lexemes, word forms, utterances, dialogues, or grammar points
 - Reusable sentence/dialogue banks
 - Lessons assembled from approved content
 - Generated content goes through staging + validation before approval
@@ -67,12 +68,13 @@ Run these files in order:
 1. `database/schema.sql`
 2. `database/migrations/001_curriculum.sql`
 3. `database/migrations/002_multilingual_core.sql`
-4. `database/seed/cefr.sql`
-5. `database/seed/languages.sql`
-6. `database/seed/skills-topics.sql`
-7. `database/seed/english-a1-curriculum.sql`
-8. `database/seed/language-variants-courses.sql`
-9. `database/seed/arabic-msa-prea1-curriculum.sql`
+4. `database/migrations/003_lesson_item_lexemes.sql`
+5. `database/seed/cefr.sql`
+6. `database/seed/languages.sql`
+7. `database/seed/skills-topics.sql`
+8. `database/seed/english-a1-curriculum.sql`
+9. `database/seed/language-variants-courses.sql`
+10. `database/seed/arabic-msa-prea1-curriculum.sql`
 
 ## Content importer
 Install dependencies:
