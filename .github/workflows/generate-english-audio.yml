@@ -23,7 +23,6 @@ jobs:
       CONTENT_TTS_CONCURRENCY: '2'
       ELEVENLABS_MODEL_ID: eleven_multilingual_v2
       ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
-      AUDIO_URL_PREFIX: https://raw.githubusercontent.com/SalehAkaJim/chatgpt/main
 
     steps:
       - name: Checkout main
@@ -77,14 +76,12 @@ jobs:
           python scripts/validate_audio_manifest.py audio/manifests/en/Pre-A1.json --require-generated
           python scripts/validate_audio_manifest.py audio/manifests/en/A1.json --require-generated
 
-      - name: Export database URL SQL without connecting to MySQL
+      - name: Export database relative-path SQL without connecting to MySQL
         run: |
           python scripts/export_audio_sql.py audio/manifests/en/Pre-A1.json \
-            --url-prefix "$AUDIO_URL_PREFIX" \
             --status validated \
             --output database/import/en/pre_a1_audio.sql
           python scripts/export_audio_sql.py audio/manifests/en/A1.json \
-            --url-prefix "$AUDIO_URL_PREFIX" \
             --status validated \
             --output database/import/en/a1_audio.sql
 
