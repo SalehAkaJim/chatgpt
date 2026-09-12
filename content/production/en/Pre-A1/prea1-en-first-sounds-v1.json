@@ -1,0 +1,29 @@
+{
+  "batch_id": "en-us-prea1-first-sounds-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-en-first-sounds",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {"kind":"concept","external_id":"c_pre_sound_sh","data":{"slug":"prea1_sound_sh","lesson_key":"prea1-en-first-sounds-01","concept_type":"phonological","forms":{"en":"sh"},"translations":{"fa":"صدای ش"},"cefr":"Pre-A1","topic":"sound-letter-mapping","status":"approved"}},
+    {"kind":"concept","external_id":"c_pre_sound_ch","data":{"slug":"prea1_sound_ch","lesson_key":"prea1-en-first-sounds-01","concept_type":"phonological","forms":{"en":"ch"},"translations":{"fa":"صدای چ"},"cefr":"Pre-A1","topic":"sound-letter-mapping","status":"approved"}},
+    {"kind":"concept","external_id":"c_pre_sound_th","data":{"slug":"prea1_sound_th","lesson_key":"prea1-en-first-sounds-01","concept_type":"phonological","forms":{"en":"th"},"translations":{"fa":"صدای th"},"cefr":"Pre-A1","topic":"sound-letter-mapping","status":"approved"}},
+    {"kind":"concept","external_id":"c_pre_sound_ee","data":{"slug":"prea1_sound_ee","lesson_key":"prea1-en-first-sounds-02","concept_type":"phonological","forms":{"en":"ee"},"translations":{"fa":"صدای کشیده ای"},"cefr":"Pre-A1","topic":"sound-letter-mapping","status":"approved"}},
+    {"kind":"concept","external_id":"c_pre_sound_oo","data":{"slug":"prea1_sound_oo","lesson_key":"prea1-en-first-sounds-02","concept_type":"phonological","forms":{"en":"oo"},"translations":{"fa":"صدای oo"},"cefr":"Pre-A1","topic":"sound-letter-mapping","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_ship","data":{"lesson_key":"prea1-en-first-sounds-01","text":{"en":"ship"},"translations":{"fa":"کشتی"},"intent":"sound_example","concept_refs":["prea1_sound_sh"],"cefr":"Pre-A1","topic":"sound-letter-mapping","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_chair","data":{"lesson_key":"prea1-en-first-sounds-01","text":{"en":"chair"},"translations":{"fa":"صندلی"},"intent":"sound_example","concept_refs":["prea1_sound_ch"],"cefr":"Pre-A1","topic":"sound-letter-mapping","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_three","data":{"lesson_key":"prea1-en-first-sounds-01","text":{"en":"three"},"translations":{"fa":"سه"},"intent":"sound_example","concept_refs":["prea1_sound_th"],"cefr":"Pre-A1","topic":"sound-letter-mapping","register":"neutral","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_sound_sh","data":{"lesson_key":"prea1-en-first-sounds-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و کلمه دارای صدای sh را انتخاب کن.","audio_text":"ship"},"options":["ship","chip","tip","sip"],"answer":{"value":"ship"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_sound_ch","data":{"lesson_key":"prea1-en-first-sounds-01","exercise_type":"multiple_choice","prompt":{"instruction_fa":"کدام کلمه با ch شروع می‌شود؟","value":"ch"},"options":["chair","share","there","air"],"answer":{"value":"chair"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_sound_th_speak","data":{"lesson_key":"prea1-en-first-sounds-01","exercise_type":"speaking","prompt":{"instruction_fa":"کلمه را تکرار کن.","value":"three"},"answer":{"expected_text":"three"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_green","data":{"lesson_key":"prea1-en-first-sounds-02","text":{"en":"green"},"translations":{"fa":"سبز"},"intent":"sound_example","concept_refs":["prea1_sound_ee"],"cefr":"Pre-A1","topic":"sound-letter-mapping","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_food","data":{"lesson_key":"prea1-en-first-sounds-02","text":{"en":"food"},"translations":{"fa":"غذا"},"intent":"sound_example","concept_refs":["prea1_sound_oo"],"cefr":"Pre-A1","topic":"sound-letter-mapping","register":"neutral","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_sound_ee","data":{"lesson_key":"prea1-en-first-sounds-02","exercise_type":"listening","prompt":{"instruction_fa":"کدام کلمه را شنیدی؟","audio_text":"green"},"options":["green","grin","gray","grain"],"answer":{"value":"green"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_sound_oo","data":{"lesson_key":"prea1-en-first-sounds-02","exercise_type":"listening","prompt":{"instruction_fa":"کدام کلمه را شنیدی؟","audio_text":"food"},"options":["food","foot","ford","fold"],"answer":{"value":"food"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_sound_green_speak","data":{"lesson_key":"prea1-en-first-sounds-02","exercise_type":"speaking","prompt":{"instruction_fa":"کلمه را تکرار کن.","value":"green"},"answer":{"expected_text":"green"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}}
+  ]
+}
