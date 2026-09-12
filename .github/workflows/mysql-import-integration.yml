@@ -1,0 +1,83 @@
+name: MySQL Level Import Integration
+
+on:
+  push:
+    paths:
+      - 'database/**'
+      - 'scripts/materialize_level.py'
+      - 'content/production/en/Pre-A1/**'
+      - 'content/production/en/A1/**'
+      - '.github/workflows/mysql-import-integration.yml'
+      - 'requirements.txt'
+  pull_request:
+    paths:
+      - 'database/**'
+      - 'scripts/materialize_level.py'
+      - 'content/production/en/Pre-A1/**'
+      - 'content/production/en/A1/**'
+      - '.github/workflows/mysql-import-integration.yml'
+      - 'requirements.txt'
+
+jobs:
+  mysql-9-import:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env:
+          MYSQL_ROOT_PASSWORD: rootpass
+          MYSQL_DATABASE: language_learning
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -prootpass"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+    env:
+      DATABASE_URL: mysql://root:rootpass@127.0.0.1:3306/language_learning
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y default-mysql-client
+      - name: Bootstrap MySQL 9.0.1 schema
+        env:
+          MYSQL_PWD: rootpass
+        run: |
+          DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
+          $DB < database/schema.sql
+          $DB < database/migrations/001_curriculum.sql
+          $DB < database/migrations/002_multilingual_core.sql
+          $DB < database/migrations/003_lesson_item_lexemes.sql
+          $DB < database/migrations/004_level_import_audio.sql
+          $DB < database/seed/cefr.sql
+          $DB < database/seed/languages.sql
+          $DB < database/seed/skills-topics.sql
+          $DB < database/seed/english-a1-curriculum.sql
+          $DB < database/seed/language-variants-courses.sql
+          $DB < database/seed/english-prea1-curriculum.sql
+      - name: Import complete English Pre-A1 and A1
+        run: |
+          python database/import/en/pre_a1.py
+          python database/import/en/a1.py
+      - name: Verify canonical rows and idempotency
+        env:
+          MYSQL_PWD: rootpass
+        run: |
+          python database/import/en/pre_a1.py
+          python database/import/en/a1.py
+          mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
+            SELECT COUNT(*) AS lessons FROM lessons;
+            SELECT COUNT(*) AS concepts FROM concepts;
+            SELECT COUNT(*) AS lexemes FROM lexemes;
+            SELECT COUNT(*) AS utterances FROM utterances;
+            SELECT COUNT(*) AS dialogues FROM dialogues;
+            SELECT COUNT(*) AS dialogue_turns FROM dialogue_turns;
+            SELECT COUNT(*) AS exercises FROM exercises;
+          "
