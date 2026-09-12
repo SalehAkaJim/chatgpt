@@ -7,6 +7,9 @@ on:
       - 'scripts/materialize_level.py'
       - 'content/production/en/Pre-A1/**'
       - 'content/production/en/A1/**'
+      - 'content/production/en/A2/**'
+      - 'content/production/en/B1/**'
+      - 'content/production/en/B2/**'
       - '.github/workflows/mysql-import-integration.yml'
       - 'requirements.txt'
   pull_request:
@@ -15,6 +18,9 @@ on:
       - 'scripts/materialize_level.py'
       - 'content/production/en/Pre-A1/**'
       - 'content/production/en/A1/**'
+      - 'content/production/en/A2/**'
+      - 'content/production/en/B1/**'
+      - 'content/production/en/B2/**'
       - '.github/workflows/mysql-import-integration.yml'
       - 'requirements.txt'
 
@@ -46,7 +52,7 @@ jobs:
           pip install -r requirements.txt
           sudo apt-get update -qq
           sudo apt-get install -y default-mysql-client
-      - name: Bootstrap MySQL 9.0.1 schema
+      - name: Bootstrap MySQL 9.0.1 schema and English curricula through B2
         env:
           MYSQL_PWD: rootpass
         run: |
@@ -62,16 +68,25 @@ jobs:
           $DB < database/seed/english-a1-curriculum.sql
           $DB < database/seed/language-variants-courses.sql
           $DB < database/seed/english-prea1-curriculum.sql
-      - name: Import complete English Pre-A1 and A1
+          $DB < database/seed/english-a2-curriculum.sql
+          $DB < database/seed/english-b1-curriculum.sql
+          $DB < database/seed/english-b2-curriculum.sql
+      - name: Import complete English Pre-A1 through B2
         run: |
           python database/import/en/pre_a1.py
           python database/import/en/a1.py
-      - name: Verify canonical rows and idempotency
+          python database/import/en/a2.py
+          python database/import/en/b1.py
+          python database/import/en/b2.py
+      - name: Verify canonical rows and idempotency through B2
         env:
           MYSQL_PWD: rootpass
         run: |
           python database/import/en/pre_a1.py
           python database/import/en/a1.py
+          python database/import/en/a2.py
+          python database/import/en/b1.py
+          python database/import/en/b2.py
           mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
             SELECT COUNT(*) AS lessons FROM lessons;
             SELECT COUNT(*) AS concepts FROM concepts;
