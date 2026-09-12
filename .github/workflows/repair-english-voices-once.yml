@@ -22,6 +22,7 @@ jobs:
       CONTENT_TTS_CONCURRENCY: '2'
       ELEVENLABS_MODEL_ID: eleven_multilingual_v2
       ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
+      PYTHONPATH: ${{ github.workspace }}
 
     steps:
       - name: Checkout latest main
