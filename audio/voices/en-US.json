@@ -1,0 +1,79 @@
+{
+  "locale": "en-US",
+  "provider": "elevenlabs",
+  "lexical": {
+    "voice_key": "en-us.lexical.lori",
+    "voice_name": "Lori",
+    "require_exact_name": true,
+    "prefer_high_quality": true,
+    "required_language": "en",
+    "preferred_accent": "american",
+    "settings": {
+      "stability": 0.72,
+      "similarity_boost": 0.88,
+      "style": 0.0,
+      "use_speaker_boost": true,
+      "speed": 0.94
+    }
+  },
+  "sentence_narrator": {
+    "voice_key": "en-us.sentence.lori",
+    "voice_name": "Lori",
+    "require_exact_name": true,
+    "prefer_high_quality": true,
+    "required_language": "en",
+    "preferred_accent": "american",
+    "settings": {
+      "stability": 0.68,
+      "similarity_boost": 0.88,
+      "style": 0.0,
+      "use_speaker_boost": true,
+      "speed": 0.97
+    }
+  },
+  "dialogue": {
+    "require_explicit_character_profile": true,
+    "default_model_env": "ELEVENLABS_DIALOGUE_MODEL_ID",
+    "profiles": {
+      "warm_conversational": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {"stability": 0.55, "similarity_boost": 0.86, "style": 0.18, "use_speaker_boost": true, "speed": 1.0}
+      },
+      "calm_clear": {
+        "voice_name": null,
+        "description": "Calm, precise American English with excellent articulation for practical conversations.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {"stability": 0.66, "similarity_boost": 0.88, "style": 0.08, "use_speaker_boost": true, "speed": 0.98}
+      },
+      "bright_social": {
+        "voice_name": null,
+        "description": "Bright, energetic but natural American English for friendly social dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {"stability": 0.50, "similarity_boost": 0.85, "style": 0.24, "use_speaker_boost": true, "speed": 1.02}
+      },
+      "professional_neutral": {
+        "voice_name": null,
+        "description": "Neutral professional American English; confident, clean and highly intelligible.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {"stability": 0.70, "similarity_boost": 0.90, "style": 0.05, "use_speaker_boost": true, "speed": 0.98}
+      }
+    },
+    "character_assignments": {}
+  },
+  "generation": {
+    "model_id": "eleven_multilingual_v2",
+    "preferred_output_format": "mp3_44100_192",
+    "fallback_output_format": "mp3_44100_128",
+    "concurrency": 2
+  }
+}
