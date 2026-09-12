@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "4e548ec34d05210b6bf28702a592573441f685c5b6c0a57e92ec347a4a6e64f9",
+  "voice_id": "NHRgOEwqx5WZNClv5sat",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "055545dfe7f06e88c978acf41c75ab8fc46ec7924897f01a4ae7ac6940e9e37d",
+  "voice_key": "character:leila:female_calm",
+  "voice_name": "Chelsea - Conversational and Bright",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "2232e91ae99f87b236f2a16a33606b9cbe8d18b61b3028fef89178b169e9b2ad",
+  "duration_ms": 2455,
+  "generated_at": "2026-09-12T11:22:10.808038+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5d95ff96-107e-5a48-9f20-b69164f510f4",
+      "entity_key": "d_c1_diplomatic_disagreement_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "b7c0ee77-57d0-5b63-9e9d-db093a22c048",
+      "entity_key": "d_c1_humor_irony_scene_2:3"
+    }
+  ]
+}

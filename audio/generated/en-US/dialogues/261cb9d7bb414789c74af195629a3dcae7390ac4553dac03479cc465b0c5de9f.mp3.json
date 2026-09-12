@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "45f26cadd3324045a2469ae09c09a35b7a42db43b18527dc7ca24394f30a97a5",
+  "voice_id": "zGjIP4SZlMnY9m93k97r",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "261cb9d7bb414789c74af195629a3dcae7390ac4553dac03479cc465b0c5de9f",
+  "voice_key": "character:dina:female_calm",
+  "voice_name": "Hope - Clear, Relatable and Charismatic",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "b8f3c95207f31044307d236296628a4e49487aed0ead4398bcfeff1eb789c6c2",
+  "duration_ms": 2455,
+  "generated_at": "2026-09-12T11:22:56.674189+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "fd4f2a35-46bf-5fd4-9231-87d39ada1a8f",
+      "entity_key": "d_c1_chairing_discussions_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "ecf5e44e-20eb-565b-aa87-e5049e5178ee",
+      "entity_key": "d_c1_mediating_perspectives_scene_3:1"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "246f05fc918d44dea9d94cf016038c5b747594fbf853524ffd80a5dc9eafcdf8",
+  "voice_id": "gJx1vCzNCD1EQHT212Ls",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "935585317477db9f2dc7307caa7f7ec4beaed63835a502131e7730d7b7b90e01",
+  "voice_key": "character:maya:female_warm",
+  "voice_name": "Ava – Eager, Helpful and Understanding",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "b67b3a93961d8e98add1f0dc0c54bcf44f781e74c52bdcfb75a25850225aa142",
+  "duration_ms": 2533,
+  "generated_at": "2026-09-12T11:25:26.630208+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "99f95799-8fee-5ba1-bf1b-9c7da22e12dc",
+      "entity_key": "d_c1_conflict_deescalation_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "75319b39-d040-5330-af41-9bc69b01d117",
+      "entity_key": "d_c1_integrated_capstone_scene_3:1"
+    }
+  ]
+}

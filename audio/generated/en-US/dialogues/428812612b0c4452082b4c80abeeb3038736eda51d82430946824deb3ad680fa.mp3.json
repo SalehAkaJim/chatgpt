@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "c3e2644d58e6fdceec930629cef94bbd234698729c04718ed8614e4a3e09a983",
+  "voice_id": "XfNU2rGpBa01ckF309OY",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "428812612b0c4452082b4c80abeeb3038736eda51d82430946824deb3ad680fa",
+  "voice_key": "character:elena:female_professional",
+  "voice_name": "Nichalia Schwartz - Bright and Friendly",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "422fce4a5bf4caca02c1f3b2ce1d30fc330fa7b7bd181949254625e3a245460e",
+  "duration_ms": 2873,
+  "generated_at": "2026-09-12T11:23:41.711304+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "706d750a-a25e-5c66-b5f4-ef208b1aa026",
+      "entity_key": "d_c1_complex_travel_resolution_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c00123df-5b2a-5cfc-a6b3-ef9572920d31",
+      "entity_key": "d_c1_speculation_inference_scene_2:3"
+    }
+  ]
+}

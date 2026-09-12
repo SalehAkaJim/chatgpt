@@ -1,0 +1,40 @@
+{
+  "source_text_hash": "eec14d938418721a229b7f34a12ad37e70a9f13560c15d762eb67436022522ab",
+  "voice_id": "BBz8H3kffyIUs3SYExlh",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d66725ba8d7df9d49ece793a5fde3465d90e8149df00b542402bcef515a2b762",
+  "voice_key": "character:ava:female_warm",
+  "voice_name": "Sabine - Fun and Dynamic Narrator",
+  "voice_labels": {
+    "accent": "american",
+    "language": "en",
+    "descriptive": "confident",
+    "use_case": "narrative_story",
+    "age": "middle_aged",
+    "gender": "female"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "bfb5b7acb51c4cd84df4b658a5ffad197b2451cf56a7d474b0fab4997f8b6038",
+  "duration_ms": 2324,
+  "generated_at": "2026-09-12T11:26:47.164837+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "fd49b480-c1e2-5df9-bf35-25f193122579",
+      "entity_key": "d_c1_complex_anecdotes_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a717b37f-f9b9-5037-9d78-e8f6924f9487",
+      "entity_key": "d_c1_culture_identity_scene_2:3"
+    }
+  ]
+}

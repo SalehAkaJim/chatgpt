@@ -1,0 +1,40 @@
+{
+  "source_text_hash": "45f26cadd3324045a2469ae09c09a35b7a42db43b18527dc7ca24394f30a97a5",
+  "voice_id": "WAhoMTNdLdMoq1j3wf3I",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d54bc3a388437ce98990e530e0e74bceea2c061c7fad2ccb83b6d787091ff629",
+  "voice_key": "character:emma:female_bright",
+  "voice_name": "Hope - Smooth, Engaging and Kind",
+  "voice_labels": {
+    "use_case": "conversational",
+    "language": "en",
+    "descriptive": "soft",
+    "accent": "american",
+    "age": "young",
+    "gender": "female"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "7fd6ce4334bb10c671be6665db0ef52be6227ef3bf0a82f1f73e36297b6cbaf9",
+  "duration_ms": 3657,
+  "generated_at": "2026-09-12T11:26:44.897935+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "ba0bb1db-0db2-53b3-bc38-e6c49db8c303",
+      "entity_key": "d_c1_community_policy_scene_2:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "326d3f09-9994-53ac-a038-e4616575410d",
+      "entity_key": "d_c1_weighing_evidence_scene_2:1"
+    }
+  ]
+}

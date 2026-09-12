@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "b80e0af617d0f8ff54ab3142c34c76e83eafe75c6b2cbe87a44c56bb8505dd01",
+  "voice_id": "tnSpp4vdxKPjI9w0GnoV",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.94
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e9656a1b28c6dd8d62af092b6f0766ae24e7cea1c3b03cfbe44905b9cd39a32a",
+  "voice_key": "en-us.lexical.lori",
+  "voice_name": "Hope - upbeat and clear",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "bbc2ed75f44099a64d98cfcc39c6faa244acae8665260c00739a5c9989db9bec",
+  "duration_ms": 835,
+  "generated_at": "2026-09-12T11:29:12.404980+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "5ae09476-f17a-58bd-99b2-170ee493afcc",
+      "entity_key": "lx_c1_reading_between_lines_hint"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "1df4602b-c47a-5725-94cd-c5b827937701",
+      "entity_key": "wf_c1_reading_between_lines_hint"
+    }
+  ]
+}

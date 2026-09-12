@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "45f26cadd3324045a2469ae09c09a35b7a42db43b18527dc7ca24394f30a97a5",
+  "voice_id": "uYXf8XasLslADfZ2MB4u",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "2bd1c510bd6bb5ed98dbb651b5e4f4c5186ebe96cdc710da8a25852720f08748",
+  "voice_key": "character:claire:female_professional",
+  "voice_name": "Hope - Bubbly, Gossipy and Girly",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "451d79b91a31cf1a0cda03d6aac74ca82fd66fefe23aaa48525628a5640ef716",
+  "duration_ms": 2351,
+  "generated_at": "2026-09-12T11:23:07.612013+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a4b3576b-a98a-5d09-bdee-f04384171642",
+      "entity_key": "d_c1_bureaucracy_rights_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "474ded25-85c2-5ccc-8e13-7cdff648d993",
+      "entity_key": "d_c1_counterfactual_reasoning_scene_3:1"
+    }
+  ]
+}

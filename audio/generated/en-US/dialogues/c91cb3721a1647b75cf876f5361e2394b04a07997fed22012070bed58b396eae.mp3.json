@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "55d23eeb4866f5e4b4b56e1ca7997c04146da847fe1832905eb75b904e730698",
+  "voice_id": "qBDvhofpxp92JgXJxDjB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "c91cb3721a1647b75cf876f5361e2394b04a07997fed22012070bed58b396eae",
+  "voice_key": "character:ella:female_warm",
+  "voice_name": "Lily Wolff - Expressive and Kind",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "24d4e2bec4f308bc03d4095e64fda649104ba78c28bcb02c03304a7f12d73d2c",
+  "duration_ms": 3056,
+  "generated_at": "2026-09-12T11:26:29.171624+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "60e85217-4758-5238-a020-bf9d195a7722",
+      "entity_key": "d_c1_community_policy_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f7b67295-8632-586e-b381-a2bb9e4ac037",
+      "entity_key": "d_c1_weighing_evidence_scene_1:3"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "b317f3444f8fa771b721f10b8778b89ef44b64a54d9261225b13f30af77639db",
+  "voice_id": "uYXf8XasLslADfZ2MB4u",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "4b0d0b2852dd6301c5a6054255d2d4825f8f01acd1104242ecd06847e09ab056",
+  "voice_key": "character:claire:female_professional",
+  "voice_name": "Hope - Bubbly, Gossipy and Girly",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "87eca9f83bb4733bb666dc8eb10874847305ded3baebde2eb62c88e13d6a9c4e",
+  "duration_ms": 1985,
+  "generated_at": "2026-09-12T11:23:55.813875+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "bbc4e375-dd18-5d83-bb0a-17b73be9d8b4",
+      "entity_key": "d_c1_complex_anecdotes_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "11f2c6b2-d510-5998-9767-d81fa9061a9a",
+      "entity_key": "d_c1_culture_identity_scene_3:1"
+    }
+  ]
+}

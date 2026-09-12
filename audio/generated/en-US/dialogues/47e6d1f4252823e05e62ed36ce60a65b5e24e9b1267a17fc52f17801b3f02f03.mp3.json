@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "25d6edaf822bcc13652b5fa0b1f6af26252c3b236430f681b82d518f2acff370",
+  "voice_id": "NHRgOEwqx5WZNClv5sat",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "47e6d1f4252823e05e62ed36ce60a65b5e24e9b1267a17fc52f17801b3f02f03",
+  "voice_key": "character:leila:female_calm",
+  "voice_name": "Chelsea - Conversational and Bright",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "1e91fda38215df52af76042691a5e6bf960713175f1266a7abac15e6c8db6dfc",
+  "duration_ms": 3186,
+  "generated_at": "2026-09-12T11:23:51.240031+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "ff9ee256-a0c1-54eb-971b-0af9fe9e01e6",
+      "entity_key": "d_c1_economic_tradeoffs_scene_2:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c71eff5a-976c-5621-b813-f3f8fe1ace84",
+      "entity_key": "d_c1_tone_subtext_scene_2:1"
+    }
+  ]
+}

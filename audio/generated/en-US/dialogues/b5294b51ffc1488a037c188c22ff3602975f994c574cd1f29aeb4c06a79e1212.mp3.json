@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "246f05fc918d44dea9d94cf016038c5b747594fbf853524ffd80a5dc9eafcdf8",
+  "voice_id": "XW70ikSsadUbinwLMZ5w",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "b5294b51ffc1488a037c188c22ff3602975f994c574cd1f29aeb4c06a79e1212",
+  "voice_key": "character:lena:female_professional",
+  "voice_name": "Annie K - Grounded Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "7cbf5d8ff76c7e3fece86a6df449f354c366e52614aacfc52c86c5cf7ab2c22b",
+  "duration_ms": 2690,
+  "generated_at": "2026-09-12T11:26:02.017379+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a5fcd21b-2614-50b9-b3f3-c1d7ee1968e2",
+      "entity_key": "d_c1_art_interpretation_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "6a36e86d-1df6-5d6c-8873-38f18fe0c2eb",
+      "entity_key": "d_c1_qualifying_claims_scene_3:1"
+    }
+  ]
+}

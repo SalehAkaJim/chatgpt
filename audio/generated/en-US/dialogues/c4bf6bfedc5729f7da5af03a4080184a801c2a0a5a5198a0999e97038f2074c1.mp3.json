@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "45f26cadd3324045a2469ae09c09a35b7a42db43b18527dc7ca24394f30a97a5",
+  "voice_id": "OYTbf65OHHFELVut7v2H",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "c4bf6bfedc5729f7da5af03a4080184a801c2a0a5a5198a0999e97038f2074c1",
+  "voice_key": "character:hana:female_calm",
+  "voice_name": "Hope - Natural, Clear and Calm",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8ea6b3925c5299cb1e3538909bb70c082c4d978ae3ecd2be3dfc85a2a798836f",
+  "duration_ms": 2533,
+  "generated_at": "2026-09-12T11:26:24.708430+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4b84fb88-ab0e-54df-bab8-64efdc141ed2",
+      "entity_key": "d_c1_reading_between_lines_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "b42069a2-f00b-5f1b-90df-08e30b26a9f9",
+      "entity_key": "d_c1_social_change_scene_3:1"
+    }
+  ]
+}

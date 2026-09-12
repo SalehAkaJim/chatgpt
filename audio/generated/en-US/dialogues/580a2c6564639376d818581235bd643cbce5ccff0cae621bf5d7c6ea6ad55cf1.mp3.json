@@ -1,0 +1,40 @@
+{
+  "source_text_hash": "c3e2644d58e6fdceec930629cef94bbd234698729c04718ed8614e4a3e09a983",
+  "voice_id": "BBz8H3kffyIUs3SYExlh",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "580a2c6564639376d818581235bd643cbce5ccff0cae621bf5d7c6ea6ad55cf1",
+  "voice_key": "character:ava:female_warm",
+  "voice_name": "Sabine - Fun and Dynamic Narrator",
+  "voice_labels": {
+    "accent": "american",
+    "language": "en",
+    "descriptive": "confident",
+    "use_case": "narrative_story",
+    "age": "middle_aged",
+    "gender": "female"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "9d5b96dba699db2148efbc7c78bd7e4e0b4d391a20fff767daaabd743974863c",
+  "duration_ms": 3343,
+  "generated_at": "2026-09-12T11:24:08.660019+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "6229812c-aa70-5d31-8068-c5d47756fc12",
+      "entity_key": "d_c1_negotiating_tradeoffs_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "fb31dc4b-05b0-5a62-97ec-439053fdfe11",
+      "entity_key": "d_c1_register_shifting_scene_2:3"
+    }
+  ]
+}

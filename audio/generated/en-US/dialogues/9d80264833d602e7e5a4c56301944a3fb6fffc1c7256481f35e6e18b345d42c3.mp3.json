@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "9cf3a6317ac4c4c99218da216c97c3d10d8810badde6cce20037d7e6109f47e6",
+  "voice_id": "wBXNqKUATyqu0RtYt25i",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "9d80264833d602e7e5a4c56301944a3fb6fffc1c7256481f35e6e18b345d42c3",
+  "voice_key": "character:chris:male_bright",
+  "voice_name": "Adam",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "187817b2d17d5a96742bc259a04dd27d77ec8a6406f360e10b1dae896ca603de",
+  "duration_ms": 6112,
+  "generated_at": "2026-09-12T11:25:39.795423+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "57f807c9-b0b7-5365-9287-95bc65ed2c8f",
+      "entity_key": "d_c1_ambiguity_clarification_scene_2:4"
+    }
+  ]
+}

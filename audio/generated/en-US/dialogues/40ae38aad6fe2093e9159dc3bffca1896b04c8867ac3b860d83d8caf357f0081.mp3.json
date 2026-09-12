@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "422f51b00edd42641e82ae1a949ce4b5906ed47593b07738015c165c1a4ba9d3",
+  "voice_id": "kdnRe2koJdOK4Ovxn2DI",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "40ae38aad6fe2093e9159dc3bffca1896b04c8867ac3b860d83d8caf357f0081",
+  "voice_key": "character:mei:female_professional",
+  "voice_name": "Eryn - Genuine, Friendly and Natural",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "769b1727850855f152a3eb138150b297f6d939fd5b5d76fb4ff0deb5d84242f2",
+  "duration_ms": 2115,
+  "generated_at": "2026-09-12T11:23:36.921811+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4a7ad2d4-dcd4-56d1-be57-cb0ff330ef5a",
+      "entity_key": "d_c1_complex_anecdotes_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a19588f5-c521-5381-9269-c01afb86ec0c",
+      "entity_key": "d_c1_culture_identity_scene_1:1"
+    }
+  ]
+}

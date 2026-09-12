@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "55d23eeb4866f5e4b4b56e1ca7997c04146da847fe1832905eb75b904e730698",
+  "voice_id": "yM93hbw8Qtvdma2wCnJG",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "2febc81ef69ab4314f11dadd4e1f5841f8ff4dd12923b9e843678da11258697a",
+  "voice_key": "character:ivy:female_bright",
+  "voice_name": "Ivanna - Young, Versatile and Casual",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "5b6b175ee871f4a5b4cd067786b11e6110479529cd649f1a54ad019b073859eb",
+  "duration_ms": 3578,
+  "generated_at": "2026-09-12T11:23:17.702701+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "1d048716-21b9-5fc2-a7ed-f909a95e35cc",
+      "entity_key": "d_c1_multisource_problem_solving_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "eae1f920-2ed8-5f5d-a6e3-bab1d537e0c3",
+      "entity_key": "d_c1_turn_taking_interruption_scene_1:3"
+    }
+  ]
+}
