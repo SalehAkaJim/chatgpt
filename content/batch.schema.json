@@ -3,11 +3,24 @@
   "$id": "https://language-learning.local/content-batch.schema.json",
   "title": "Language Learning Content Batch",
   "type": "object",
-  "required": ["batch_id", "target_language", "cefr", "curriculum_unit", "items"],
+  "required": [
+    "batch_id",
+    "course",
+    "learner_language",
+    "target_language",
+    "target_variant",
+    "cefr",
+    "curriculum_unit",
+    "items"
+  ],
   "properties": {
     "batch_id": {"type": "string", "minLength": 1},
+    "course": {"type": "string", "minLength": 1},
+    "learner_language": {"type": "string", "minLength": 2, "maxLength": 16},
+    "learner_variant": {"type": "string", "minLength": 2, "maxLength": 32},
     "target_language": {"type": "string", "minLength": 2, "maxLength": 16},
-    "cefr": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
+    "target_variant": {"type": "string", "minLength": 2, "maxLength": 32},
+    "cefr": {"enum": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]},
     "curriculum_unit": {"type": "string", "minLength": 1},
     "generator": {"type": "string"},
     "items": {
@@ -18,7 +31,15 @@
         "required": ["kind", "data"],
         "properties": {
           "kind": {
-            "enum": ["concept", "utterance", "grammar_point", "dialogue", "exercise"]
+            "enum": [
+              "concept",
+              "lexeme",
+              "word_form",
+              "utterance",
+              "grammar_point",
+              "dialogue",
+              "exercise"
+            ]
           },
           "external_id": {"type": "string"},
           "data": {"type": "object"}
