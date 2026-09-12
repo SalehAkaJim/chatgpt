@@ -1,0 +1,25 @@
+{
+  "batch_id": "en-us-prea1-first-greetings-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-en-first-greetings",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {"kind":"utterance","external_id":"u_pre_hello","data":{"lesson_key":"prea1-en-first-greetings-01","text":{"en":"Hello!"},"translations":{"fa":"سلام!"},"intent":"greet_neutral","concept_refs":[],"cefr":"Pre-A1","topic":"greetings","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_hi","data":{"lesson_key":"prea1-en-first-greetings-01","text":{"en":"Hi!"},"translations":{"fa":"سلام!"},"intent":"greet_informal","concept_refs":[],"cefr":"Pre-A1","topic":"greetings","register":"informal","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_bye","data":{"lesson_key":"prea1-en-first-greetings-02","text":{"en":"Bye!"},"translations":{"fa":"خداحافظ!"},"intent":"farewell_informal","concept_refs":[],"cefr":"Pre-A1","topic":"greetings","register":"informal","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_goodbye","data":{"lesson_key":"prea1-en-first-greetings-02","text":{"en":"Goodbye!"},"translations":{"fa":"خداحافظ!"},"intent":"farewell_neutral","concept_refs":[],"cefr":"Pre-A1","topic":"greetings","register":"neutral","status":"approved"}},
+    {"kind":"dialogue","external_id":"d_pre_greeting_door","data":{"lesson_key":"prea1-en-first-greetings-01","title":"At the door","setting":"doorway","cefr":"Pre-A1","topic":"greetings","characters":["Mia","Leo"],"turns":[{"order":1,"speaker":"Mia","text":"Hello!","translation_fa":"سلام!"},{"order":2,"speaker":"Leo","text":"Hi!","translation_fa":"سلام!"}],"status":"approved"}},
+    {"kind":"dialogue","external_id":"d_pre_bye_class","data":{"lesson_key":"prea1-en-first-greetings-02","title":"After class","setting":"classroom","cefr":"Pre-A1","topic":"greetings","characters":["Ava","Noah"],"turns":[{"order":1,"speaker":"Ava","text":"Bye!","translation_fa":"خداحافظ!"},{"order":2,"speaker":"Noah","text":"Goodbye!","translation_fa":"خداحافظ!"}],"status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_greet_hello_meaning","data":{"lesson_key":"prea1-en-first-greetings-01","exercise_type":"multiple_choice","prompt":{"instruction_fa":"Hello یعنی چه؟","value":"Hello"},"options":["سلام","خداحافظ","بله","نه"],"answer":{"value":"سلام"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_greet_hi_listen","data":{"lesson_key":"prea1-en-first-greetings-01","exercise_type":"listening","prompt":{"instruction_fa":"کدام عبارت را شنیدی؟","audio_text":"Hi"},"options":["Hi","Bye","No","Please"],"answer":{"value":"Hi"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_greet_hello_speak","data":{"lesson_key":"prea1-en-first-greetings-01","exercise_type":"speaking","prompt":{"instruction_fa":"سلام کن.","value":"Hello"},"answer":{"expected_text":"Hello"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_bye_meaning","data":{"lesson_key":"prea1-en-first-greetings-02","exercise_type":"multiple_choice","prompt":{"instruction_fa":"Bye یعنی چه؟","value":"Bye"},"options":["خداحافظ","سلام","ممنون","لطفاً"],"answer":{"value":"خداحافظ"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_goodbye_listen","data":{"lesson_key":"prea1-en-first-greetings-02","exercise_type":"listening","prompt":{"instruction_fa":"کدام عبارت را شنیدی؟","audio_text":"Goodbye"},"options":["Goodbye","Hello","Thanks","Sorry"],"answer":{"value":"Goodbye"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_bye_speak","data":{"lesson_key":"prea1-en-first-greetings-02","exercise_type":"speaking","prompt":{"instruction_fa":"خداحافظی کن.","value":"Bye"},"answer":{"expected_text":"Bye"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}}
+  ]
+}
