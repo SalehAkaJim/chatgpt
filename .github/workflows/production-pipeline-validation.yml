@@ -14,6 +14,8 @@ on:
       - 'content/production/en/A2/**'
       - 'content/production/en/B1/**'
       - 'content/production/en/B2/**'
+      - 'content/production/en/C1/**'
+      - 'content/production/en/C2/**'
   pull_request:
     paths:
       - 'scripts/**'
@@ -27,6 +29,8 @@ on:
       - 'content/production/en/A2/**'
       - 'content/production/en/B1/**'
       - 'content/production/en/B2/**'
+      - 'content/production/en/C1/**'
+      - 'content/production/en/C2/**'
 
 permissions:
   contents: write
@@ -57,7 +61,9 @@ jobs:
             database/import/en/a1.py \
             database/import/en/a2.py \
             database/import/en/b1.py \
-            database/import/en/b2.py
+            database/import/en/b2.py \
+            database/import/en/c1.py \
+            database/import/en/c2.py
 
       - name: Validate complete level imports without database mutation
         run: |
@@ -66,6 +72,8 @@ jobs:
           python database/import/en/a2.py --dry-run
           python database/import/en/b1.py --dry-run
           python database/import/en/b2.py --dry-run
+          python database/import/en/c1.py --dry-run
+          python database/import/en/c2.py --dry-run
 
       - name: Build strict level audio manifests
         run: |
@@ -85,6 +93,12 @@ jobs:
           python scripts/build_audio_manifest.py content/production/en/B2 \
             --level B2 --locale en-US --strict-characters \
             --output audio/manifests/en/B2.json
+          python scripts/build_audio_manifest.py content/production/en/C1 \
+            --level C1 --locale en-US --strict-characters \
+            --output audio/manifests/en/C1.json
+          python scripts/build_audio_manifest.py content/production/en/C2 \
+            --level C2 --locale en-US --strict-characters \
+            --output audio/manifests/en/C2.json
 
       - name: Validate audio manifests
         run: |
@@ -93,6 +107,8 @@ jobs:
           python scripts/validate_audio_manifest.py audio/manifests/en/A2.json
           python scripts/validate_audio_manifest.py audio/manifests/en/B1.json
           python scripts/validate_audio_manifest.py audio/manifests/en/B2.json
+          python scripts/validate_audio_manifest.py audio/manifests/en/C1.json
+          python scripts/validate_audio_manifest.py audio/manifests/en/C2.json
 
       - name: Audit audio coverage
         run: |
@@ -106,6 +122,8 @@ jobs:
               Path('audio/manifests/en/A2.json'),
               Path('audio/manifests/en/B1.json'),
               Path('audio/manifests/en/B2.json'),
+              Path('audio/manifests/en/C1.json'),
+              Path('audio/manifests/en/C2.json'),
           ]
           for path in paths:
               manifest = json.loads(path.read_text())
@@ -128,9 +146,11 @@ jobs:
             audio/manifests/en/A1.json \
             audio/manifests/en/A2.json \
             audio/manifests/en/B1.json \
-            audio/manifests/en/B2.json
+            audio/manifests/en/B2.json \
+            audio/manifests/en/C1.json \
+            audio/manifests/en/C2.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Update English audio manifests through B2 [skip ci]'
+            git commit -m 'Update English audio manifests through C2 [skip ci]'
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
