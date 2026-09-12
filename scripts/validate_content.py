@@ -17,6 +17,15 @@ ALLOWED_EXERCISES = {
     "fill_blank",
     "multiple_choice",
 }
+CONTENT_KINDS_REQUIRING_LESSON = {
+    "concept",
+    "lexeme",
+    "word_form",
+    "utterance",
+    "grammar_point",
+    "dialogue",
+    "exercise",
+}
 
 
 def fail(errors: list[str], message: str) -> None:
@@ -43,8 +52,23 @@ def validate_semantics(batch: dict, errors: list[str], warnings: list[str]) -> N
         for item in items
         if item.get("kind") == "concept" and item.get("data", {}).get("slug")
     }
+    lexeme_ids = {
+        item.get("external_id")
+        for item in items
+        if item.get("kind") == "lexeme" and item.get("external_id")
+    }
 
     dialogue_pairs: set[tuple[str, str, str]] = set()
+    target_language = batch.get("target_language")
+    target_variant = batch.get("target_variant")
+
+    if target_variant and not target_variant.lower().startswith(f"{target_language.lower()}-"):
+        fail(errors, f"target_variant {target_variant} does not belong to target_language {target_language}")
+
+    learner_language = batch.get("learner_language")
+    learner_variant = batch.get("learner_variant")
+    if learner_variant and not learner_variant.lower().startswith(f"{learner_language.lower()}-"):
+        fail(errors, f"learner_variant {learner_variant} does not belong to learner_language {learner_language}")
 
     for index, item in enumerate(items):
         kind = item.get("kind")
@@ -54,25 +78,57 @@ def validate_semantics(batch: dict, errors: list[str], warnings: list[str]) -> N
         if data.get("cefr") and data["cefr"] != batch.get("cefr"):
             fail(errors, f"{item_id}: CEFR {data['cefr']} does not match batch {batch.get('cefr')}")
 
+        item_variant = data.get("language_variant")
+        if item_variant and item_variant != target_variant:
+            fail(errors, f"{item_id}: language_variant {item_variant} does not match batch {target_variant}")
+
         status = data.get("status")
         if status and status not in ALLOWED_STATUS:
             fail(errors, f"{item_id}: invalid status {status}")
 
         lesson_key = data.get("lesson_key")
-        if kind in {"concept", "utterance", "grammar_point", "dialogue", "exercise"} and not lesson_key:
+        if kind in CONTENT_KINDS_REQUIRING_LESSON and not lesson_key:
             fail(errors, f"{item_id}: missing lesson_key")
 
         if kind == "concept":
             forms = data.get("forms", {})
             translations = data.get("translations", {})
-            if not forms.get(batch.get("target_language")):
+            if forms and not forms.get(target_language):
                 fail(errors, f"{item_id}: missing target-language form")
+            if data.get("concept_type") == "lexical" and not forms:
+                warnings.append(f"{item_id}: lexical concept has no compatibility forms; expected lexeme item")
             if not translations:
                 warnings.append(f"{item_id}: no learner-language translation")
 
+        elif kind == "lexeme":
+            if not data.get("lemma"):
+                fail(errors, f"{item_id}: lexeme requires lemma")
+            language = data.get("language", target_language)
+            if language != target_language:
+                fail(errors, f"{item_id}: lexeme language {language} does not match batch target {target_language}")
+            variant = data.get("language_variant", target_variant)
+            if variant != target_variant:
+                fail(errors, f"{item_id}: lexeme variant {variant} does not match batch target {target_variant}")
+            concept_refs = data.get("concept_refs", [])
+            for ref in concept_refs:
+                if ref not in concepts:
+                    fail(errors, f"{item_id}: unknown concept_ref {ref}")
+
+        elif kind == "word_form":
+            lexeme_ref = data.get("lexeme_ref")
+            if not lexeme_ref:
+                fail(errors, f"{item_id}: word_form requires lexeme_ref")
+            elif lexeme_ref not in lexeme_ids:
+                fail(errors, f"{item_id}: unknown lexeme_ref {lexeme_ref}")
+            if not data.get("surface_form"):
+                fail(errors, f"{item_id}: word_form requires surface_form")
+            features = data.get("grammatical_features", {})
+            if not isinstance(features, dict):
+                fail(errors, f"{item_id}: grammatical_features must be an object")
+
         elif kind == "utterance":
             text = data.get("text", {})
-            if not text.get(batch.get("target_language")):
+            if not text.get(target_language):
                 fail(errors, f"{item_id}: missing target-language text")
             for ref in data.get("concept_refs", []):
                 if ref not in concepts:
@@ -136,6 +192,17 @@ def validate_semantics(batch: dict, errors: list[str], warnings: list[str]) -> N
             if exercise_type == "listening" and not data.get("prompt", {}).get("audio_text"):
                 fail(errors, f"{item_id}: listening exercise missing audio_text")
 
+    lexical_concepts = sum(
+        1
+        for item in items
+        if item.get("kind") == "concept" and item.get("data", {}).get("concept_type") == "lexical"
+    )
+    if lexical_concepts and not lexeme_ids:
+        warnings.append(
+            "batch contains lexical concepts but no lexeme items; compatibility mode is valid, "
+            "but new multilingual production should use lexeme + word_form items"
+        )
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Validate a production content batch.")
@@ -157,6 +224,8 @@ def main() -> None:
 
     report = {
         "batch_id": batch.get("batch_id"),
+        "course": batch.get("course"),
+        "target_variant": batch.get("target_variant"),
         "items": len(batch.get("items", [])),
         "counts": dict(Counter(item.get("kind") for item in batch.get("items", []))),
         "errors": errors,
