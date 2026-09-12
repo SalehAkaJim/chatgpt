@@ -49,10 +49,10 @@ FROM (
          JSON_OBJECT('focus','non_connecting_letters')
   UNION ALL SELECT 60,'literacy','diacritics','prea1-ar-short-vowels','Short Vowels',
          'Read simple syllables and beginner words with fatḥa, kasra, and ḍamma.',3,
-         JSON_OBJECT('focus','short_vowels','diacritics',['fatḥa','kasra','ḍamma'])
+         JSON_OBJECT('focus','short_vowels','diacritics',JSON_ARRAY('fatḥa','kasra','ḍamma'))
   UNION ALL SELECT 70,'literacy','diacritics','prea1-ar-sukun-shadda','Sukūn & Shadda',
          'Recognize sukūn and shadda and use them to decode short beginner words.',2,
-         JSON_OBJECT('focus','reading_marks','diacritics',['sukūn','shadda'])
+         JSON_OBJECT('focus','reading_marks','diacritics',JSON_ARRAY('sukūn','shadda'))
   UNION ALL SELECT 80,'literacy','sound-letter-mapping','prea1-ar-distinct-sounds','Arabic-Specific Sounds',
          'Hear and distinguish a small set of Arabic sounds that require special attention for Persian-speaking learners.',3,
          JSON_OBJECT('focus','phonology','learner_language','fa')
