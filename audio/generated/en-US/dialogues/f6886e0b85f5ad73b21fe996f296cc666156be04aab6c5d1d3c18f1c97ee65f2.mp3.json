@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "7d23d710f53eee791f16da3c0198e33639c7a16ab7f88409b9882485d259e489",
+  "voice_id": "EiNlNiXeDU1pqqOPrYMO",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "f6886e0b85f5ad73b21fe996f296cc666156be04aab6c5d1d3c18f1c97ee65f2",
+  "voice_key": "character:jonas:male_professional",
+  "voice_name": "John Doe - Deep",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "35bb43eab4211ed8d15c1e81e9eff73f63695c4289b7040b4b8db232fa81bbc7",
+  "duration_ms": 1149,
+  "generated_at": "2026-09-12T08:51:42.761665+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "80768585-8693-544e-a642-47d822984202",
+      "entity_key": "d_a2_personality_appearance_manager:4"
+    }
+  ]
+}

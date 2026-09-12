@@ -1,0 +1,35 @@
+{
+  "source_text_hash": "c75c6829e9c631ea3fe5b23e038bce2cfcc4fdfd8c21b449183b00aeadabd91e",
+  "voice_id": "NMilCCbfoygNnI2VZ7ME",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "3227ca899cad0c439f3ee7d7ea5e5931ccd4a1b62cab45af59ed4b757b606f1c",
+  "voice_key": "character:arman:male_warm",
+  "voice_name": "Austin - Dramatic Narration",
+  "voice_labels": {
+    "accent": "american",
+    "language": "en",
+    "descriptive": "professional",
+    "use_case": "narrative_story",
+    "age": "middle_aged",
+    "gender": "male"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "6e1a975198bdbf9b5fc14da4e9d459b8087f492ff7d943a5fda03c1fa64ff0f3",
+  "duration_ms": 2586,
+  "generated_at": "2026-09-12T08:49:15.102575+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "cc8433c2-8541-5137-8ff2-0a3e156bdd59",
+      "entity_key": "d_a2_invitation_decline:3"
+    }
+  ]
+}

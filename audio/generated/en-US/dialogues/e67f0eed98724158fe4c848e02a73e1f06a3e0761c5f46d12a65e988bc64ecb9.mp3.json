@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "f2b951c7685b13a68d610e4eacaf88b19e14ff90b07514108da860e9deff44cc",
+  "voice_id": "6OzrBCQf8cjERkYgzSg8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e67f0eed98724158fe4c848e02a73e1f06a3e0761c5f46d12a65e988bc64ecb9",
+  "voice_key": "character:amir:male_warm",
+  "voice_name": "Young Jamal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "dde8cc8322f0458c0ab9a41c8b0d32f6a7e3359b5e73216b024c681c37eb6adf",
+  "duration_ms": 1567,
+  "generated_at": "2026-09-12T08:51:33.773175+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "87695ffb-78dc-572b-9424-627c6d491c3e",
+      "entity_key": "d_a2_trip_planning_weekend:1"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "4fd40e913ea459d1e7d1d7a64579786e1c30cfe411bad1b31bf440aed00e9a79",
+  "voice_id": "6OzrBCQf8cjERkYgzSg8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "43b41f975693c995792f38f64e1e55742dcad03e73a64fb369f718e8982833ed",
+  "voice_key": "character:amir:male_warm",
+  "voice_name": "Young Jamal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "c4f085a1f6d71a6c28fd67abe8124813c3118ba706931168352a2764a699b2de",
+  "duration_ms": 1280,
+  "generated_at": "2026-09-12T08:49:25.776614+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "23455782-f66a-5d4c-8356-41863d443d23",
+      "entity_key": "d_a2_food_fridge:1"
+    }
+  ]
+}

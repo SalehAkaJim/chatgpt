@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "89606cf1022f916613a56e34799161148ba1d7651d0e5c4f023aa4810178590d",
+  "voice_id": "UgBBYS2sOqTuMpoF3BR0",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1473feb329d26b85b38473827a4fe32a92dde4fb2f75b066e3cebb8e5f5be54f",
+  "voice_key": "character:leo:male_warm",
+  "voice_name": "Mark - Natural Conversations",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "83f7c1dc1fa6ae7bf07d80f39795ce447e9b8135bd2b3c4bc3211405ef1e943f",
+  "duration_ms": 1332,
+  "generated_at": "2026-09-12T08:48:59.551391+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "efe3e64b-3840-560e-9e83-7928f708542d",
+      "entity_key": "d_a2_food_cooking_amount:4"
+    }
+  ]
+}

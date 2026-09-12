@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "29f3051316c5d7294019c718ceea10c1987fff255d2ddee036dc44581e612a85",
+  "voice_id": "eXpIbVcVbLo8ZJQDlDnl",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "24e8c8b8981adab90a7a3c582cceba7a266050d91b1a7a3a1ce54bec83b948b9",
+  "voice_key": "character:rita:female_professional",
+  "voice_name": "Siren - Natural realistic conversational voice",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "698cc43ca271e5f4542d028405795aa5c84f20c1d8a10711144e41b522fb058e",
+  "duration_ms": 1515,
+  "generated_at": "2026-09-12T08:49:05.915621+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "87073652-d3a8-509d-8ced-821eb9413eff",
+      "entity_key": "d_a2_symptoms_pharmacy_dose:1"
+    }
+  ]
+}
