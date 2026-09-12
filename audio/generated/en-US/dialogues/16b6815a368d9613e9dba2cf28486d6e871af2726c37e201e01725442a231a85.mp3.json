@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "8e38acd7b1fc75a2de97082b3357b547e17388d310a720920e234bcc71d78f04",
+  "voice_id": "wBXNqKUATyqu0RtYt25i",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "16b6815a368d9613e9dba2cf28486d6e871af2726c37e201e01725442a231a85",
+  "voice_key": "character:chris:male_bright",
+  "voice_name": "Adam",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "5afbebc015797eb2a1e99a6f2c0d15f854466b10495accee186c87a532b915cb",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-12T08:21:24.415948+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f3b39918-98c9-5d83-96f1-67b7c6fa4d00",
+      "entity_key": "d_polite_cafe:2"
+    }
+  ]
+}

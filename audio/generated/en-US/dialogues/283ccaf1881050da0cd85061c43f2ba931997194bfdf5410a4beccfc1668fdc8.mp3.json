@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "f4991919914817d7b55e4c400b6912eb0740b2fa2be2460e72bbcd8f8a2cb3a0",
+  "voice_id": "ZthjuvLPty3kTMaNKVKb",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "283ccaf1881050da0cd85061c43f2ba931997194bfdf5410a4beccfc1668fdc8",
+  "voice_key": "character:drake:male_calm",
+  "voice_name": "Peter",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a020f5ee5fade899cb147aa95780ed3d5d9a3beab70f94707a80989a6074f181",
+  "duration_ms": 1280,
+  "generated_at": "2026-09-12T08:21:45.171781+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f08a724e-cbfb-5303-b29a-ada90385e816",
+      "entity_key": "d_health_clinic:3"
+    }
+  ]
+}

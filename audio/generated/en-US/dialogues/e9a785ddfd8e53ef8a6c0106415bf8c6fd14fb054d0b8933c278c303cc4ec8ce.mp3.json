@@ -1,0 +1,35 @@
+{
+  "source_text_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+  "voice_id": "Z3R5wn05IrDiVCyEkUrK",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e9a785ddfd8e53ef8a6c0106415bf8c6fd14fb054d0b8933c278c303cc4ec8ce",
+  "voice_key": "character:mia:female_warm",
+  "voice_name": "Arabella",
+  "voice_labels": {
+    "accent": "american",
+    "language": "en",
+    "descriptive": "gentle",
+    "use_case": "narrative_story",
+    "age": "young",
+    "gender": "female"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "fd7a1b44536be6f534db47e346c7f861c33ed13cfd0f0ffa2110409fc8931fa5",
+  "duration_ms": 862,
+  "generated_at": "2026-09-12T08:20:21.038908+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "8e5ec1a6-e320-52bc-b631-cc0bcb2ed4e5",
+      "entity_key": "d_pre_greeting_door:1"
+    }
+  ]
+}

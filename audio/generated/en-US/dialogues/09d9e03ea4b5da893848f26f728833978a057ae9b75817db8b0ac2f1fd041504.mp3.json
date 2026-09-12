@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "b984efe2c677bdd165161f95cd304cd090be511dd50fa20cd218f623b3269a28",
+  "voice_id": "SaqYcK3ZpDKBAImA8AdW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "09d9e03ea4b5da893848f26f728833978a057ae9b75817db8b0ac2f1fd041504",
+  "voice_key": "character:noura:female_warm",
+  "voice_name": "Jane Doe - Intimate",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "81c00ffef79ef6708155aaa5cdefe30221384876764fc905e67753644ae3688f",
+  "duration_ms": 1097,
+  "generated_at": "2026-09-12T08:21:01.886037+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "acb25ee3-60c3-5f91-bbd8-2556db75f78a",
+      "entity_key": "d_repeat_name:1"
+    }
+  ]
+}

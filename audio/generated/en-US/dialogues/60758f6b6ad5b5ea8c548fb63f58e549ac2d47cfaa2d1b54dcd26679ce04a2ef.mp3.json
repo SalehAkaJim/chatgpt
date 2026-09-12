@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8",
+  "voice_id": "UgBBYS2sOqTuMpoF3BR0",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "60758f6b6ad5b5ea8c548fb63f58e549ac2d47cfaa2d1b54dcd26679ce04a2ef",
+  "voice_key": "character:leo:male_warm",
+  "voice_name": "Mark - Natural Conversations",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "45c49d6329a316e45e033f098bf570d32a9361dcc7a1282afb7ee399d29242a5",
+  "duration_ms": 679,
+  "generated_at": "2026-09-12T08:20:14.913393+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "34524510-8a00-57fd-82cf-979a7b311d97",
+      "entity_key": "d_pre_greeting_door:2"
+    }
+  ]
+}

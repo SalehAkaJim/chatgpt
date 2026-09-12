@@ -1,0 +1,44 @@
+{
+  "source_text_hash": "1197a20df1b4c87b10c868648eba70eac619e18ab6a6772e32bc9c701c315e41",
+  "voice_id": "tnSpp4vdxKPjI9w0GnoV",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.94
+  },
+  "provider": "elevenlabs",
+  "audio_key": "2868506fc5223434a3a61136c5b6eae7b47e4ba2689db728c2da21434f51755d",
+  "voice_key": "en-us.lexical.lori",
+  "voice_name": "Hope - upbeat and clear",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "0afbded27d7ca2413e0ac14431bc8d9a5efe603fc51d7fffc24e287b14fa86ea",
+  "duration_ms": 966,
+  "generated_at": "2026-09-12T08:25:00.904933+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "eafa67ac-203a-556a-af76-d25877b59d2f",
+      "entity_key": "lx_hobbies_weekend"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "e2ea0215-656d-59cc-980b-ab0a3a29be7a",
+      "entity_key": "wf_hobbies_weekend"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "eafa67ac-203a-556a-af76-d25877b59d2f",
+      "entity_key": "lx_plan_weekend"
+    }
+  ]
+}
