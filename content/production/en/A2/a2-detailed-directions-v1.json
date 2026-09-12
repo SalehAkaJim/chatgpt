@@ -1,0 +1,712 @@
+{
+  "batch_id": "en-us-a2-detailed-directions-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A2",
+  "curriculum_unit": "a2-detailed-directions",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a2_detailed_directions_intersection",
+      "data": {
+        "slug": "a2_detailed_directions_intersection",
+        "lesson_key": "a2-detailed-directions-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "intersection"
+        },
+        "translations": {
+          "fa": "تقاطع"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_detailed_directions_intersection",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "lemma": "intersection",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_detailed_directions_intersection"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_detailed_directions_intersection",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "lexeme_ref": "lx_a2_detailed_directions_intersection",
+        "surface_form": "intersection",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_detailed_directions_block",
+      "data": {
+        "slug": "a2_detailed_directions_block",
+        "lesson_key": "a2-detailed-directions-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "block"
+        },
+        "translations": {
+          "fa": "بلوک / یک فاصله شهری"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_detailed_directions_block",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "lemma": "block",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_detailed_directions_block"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_detailed_directions_block",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "lexeme_ref": "lx_a2_detailed_directions_block",
+        "surface_form": "block",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_detailed_directions_across",
+      "data": {
+        "slug": "a2_detailed_directions_across",
+        "lesson_key": "a2-detailed-directions-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "across from"
+        },
+        "translations": {
+          "fa": "روبروی"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_detailed_directions_across",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "lemma": "across from",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "preposition",
+        "concept_refs": [
+          "a2_detailed_directions_across"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_detailed_directions_across",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "lexeme_ref": "lx_a2_detailed_directions_across",
+        "surface_form": "across from",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_detailed_directions_past",
+      "data": {
+        "slug": "a2_detailed_directions_past",
+        "lesson_key": "a2-detailed-directions-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "past"
+        },
+        "translations": {
+          "fa": "از کنار / بعد از"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_detailed_directions_past",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "lemma": "past",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "preposition",
+        "concept_refs": [
+          "a2_detailed_directions_past"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_detailed_directions_past",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "lexeme_ref": "lx_a2_detailed_directions_past",
+        "surface_form": "past",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_detailed_directions_until",
+      "data": {
+        "slug": "a2_detailed_directions_until",
+        "lesson_key": "a2-detailed-directions-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "until"
+        },
+        "translations": {
+          "fa": "تا"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_detailed_directions_until",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "lemma": "until",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "preposition",
+        "concept_refs": [
+          "a2_detailed_directions_until"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_detailed_directions_until",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "lexeme_ref": "lx_a2_detailed_directions_until",
+        "surface_form": "until",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_detailed_directions_transfer",
+      "data": {
+        "slug": "a2_detailed_directions_transfer",
+        "lesson_key": "a2-detailed-directions-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "transfer"
+        },
+        "translations": {
+          "fa": "عوض کردن خط"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_detailed_directions_transfer",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "lemma": "transfer",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_detailed_directions_transfer"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_detailed_directions_transfer",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "lexeme_ref": "lx_a2_detailed_directions_transfer",
+        "surface_form": "transfer",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_detailed_directions_blocks",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "text": {
+          "en": "Go straight for two blocks."
+        },
+        "translations": {
+          "fa": "دو بلوک مستقیم برو."
+        },
+        "intent": "give_direction",
+        "concept_refs": [
+          "a2_detailed_directions_block"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_detailed_directions_intersection",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "text": {
+          "en": "Turn right at the second intersection."
+        },
+        "translations": {
+          "fa": "در دومین تقاطع به راست بپیچ."
+        },
+        "intent": "give_turn",
+        "concept_refs": [
+          "a2_detailed_directions_intersection"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_detailed_directions_across",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "text": {
+          "en": "The pharmacy is across from the library."
+        },
+        "translations": {
+          "fa": "داروخانه روبروی کتابخانه است."
+        },
+        "intent": "locate_place",
+        "concept_refs": [
+          "a2_detailed_directions_across"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_detailed_directions_past",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "text": {
+          "en": "Walk past the bank and you'll see the station."
+        },
+        "translations": {
+          "fa": "از بانک رد شو و ایستگاه را می‌بینی."
+        },
+        "intent": "give_landmark_direction",
+        "concept_refs": [
+          "a2_detailed_directions_past"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_detailed_directions_until",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "text": {
+          "en": "Stay on this bus until Central Square."
+        },
+        "translations": {
+          "fa": "تا میدان مرکزی داخل همین اتوبوس بمان."
+        },
+        "intent": "give_transit_direction",
+        "concept_refs": [
+          "a2_detailed_directions_until"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_detailed_directions_transfer",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "text": {
+          "en": "Transfer to the green line at Park Street."
+        },
+        "translations": {
+          "fa": "در پارک استریت به خط سبز عوض کن."
+        },
+        "intent": "give_transfer",
+        "concept_refs": [
+          "a2_detailed_directions_transfer"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_detailed_directions_imperatives",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "slug": "a2-detailed-directions-imperatives",
+        "title": "Imperatives for directions",
+        "rule_summary": "Use the base verb to give clear step-by-step directions.",
+        "explanation": {
+          "fa": "برای دادن مسیر مرحله‌به‌مرحله از شکل پایه فعل به‌صورت امری استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Turn left at the light.",
+            "fa": "سر چراغ به چپ بپیچ."
+          },
+          {
+            "en": "Walk past the cafe.",
+            "fa": "از کافه رد شو."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_detailed_directions_until_past_across",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "slug": "a2-detailed-directions-until-past-across",
+        "title": "until, past, across from",
+        "rule_summary": "Use these location words to connect directions to landmarks and endpoints.",
+        "explanation": {
+          "fa": "از until، past و across from برای وصل کردن مسیر به نشانه‌های مکانی و مقصد استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Go until the bridge.",
+            "fa": "تا پل برو."
+          },
+          {
+            "en": "It's across from the bank.",
+            "fa": "روبروی بانک است."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_detailed_directions_museum",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "title": "Finding the museum",
+        "setting": "street corner",
+        "cefr": "A2",
+        "topic": "directions",
+        "characters": [
+          "Ava",
+          "Jon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ava",
+            "text": "Excuse me, how do I get to the city museum?",
+            "translation_fa": "ببخشید، چطور به موزه شهر برسم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jon",
+            "text": "Go straight for two blocks, then turn left at the intersection.",
+            "translation_fa": "دو بلوک مستقیم برو، بعد در تقاطع به چپ بپیچ."
+          },
+          {
+            "order": 3,
+            "speaker": "Ava",
+            "text": "Is it far from there?",
+            "translation_fa": "از آنجا دوره؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Jon",
+            "text": "No. It's across from the public library.",
+            "translation_fa": "نه. روبروی کتابخانه عمومی است."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_detailed_directions_subway",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "title": "Using the subway",
+        "setting": "subway entrance",
+        "cefr": "A2",
+        "topic": "directions",
+        "characters": [
+          "Yuki",
+          "Owen"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Yuki",
+            "text": "Can I take this line to Harbor Station?",
+            "translation_fa": "می‌تونم با این خط به ایستگاه هاربر برم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Owen",
+            "text": "Not directly. Stay on until Park Street.",
+            "translation_fa": "مستقیم نه. تا پارک استریت ادامه بده."
+          },
+          {
+            "order": 3,
+            "speaker": "Yuki",
+            "text": "Then what?",
+            "translation_fa": "بعدش چی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Owen",
+            "text": "Transfer to the green line.",
+            "translation_fa": "به خط سبز عوض کن."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_detailed_directions_fill",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "The pharmacy is ___ from the library."
+        },
+        "options": [
+          "across",
+          "until",
+          "past",
+          "between to"
+        ],
+        "answer": {
+          "value": "across"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_detailed_directions_listen",
+      "data": {
+        "lesson_key": "a2-detailed-directions-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و معنی درست را انتخاب کن.",
+          "audio_text": "Turn right at the second intersection."
+        },
+        "options": [
+          "در دومین تقاطع به راست بپیچ.",
+          "دو بلوک مستقیم برو.",
+          "هیچ‌کدام از این‌ها درست نیست.",
+          "اطلاعات کافی نیست."
+        ],
+        "answer": {
+          "value": "در دومین تقاطع به راست بپیچ."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_detailed_directions_speak",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را به انگلیسی بگو: داروخانه روبروی کتابخانه است."
+        },
+        "answer": {
+          "expected_text": "The pharmacy is across from the library."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_detailed_directions_build",
+      "data": {
+        "lesson_key": "a2-detailed-directions-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "از بانک رد شو و ایستگاه را می‌بینی.",
+          "tokens": [
+            "station.",
+            "the",
+            "see",
+            "you'll",
+            "and",
+            "bank",
+            "the",
+            "past",
+            "Walk"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Walk",
+            "past",
+            "the",
+            "bank",
+            "and",
+            "you'll",
+            "see",
+            "the",
+            "station."
+          ],
+          "text": "Walk past the bank and you'll see the station."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_detailed_directions_meaning",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "Stay on this bus until Central Square."
+        },
+        "options": [
+          "تا میدان مرکزی داخل همین اتوبوس بمان.",
+          "داروخانه روبروی کتابخانه است.",
+          "دو بلوک مستقیم برو.",
+          "در دومین تقاطع به راست بپیچ."
+        ],
+        "answer": {
+          "value": "تا میدان مرکزی داخل همین اتوبوس بمان."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_detailed_directions_listen2",
+      "data": {
+        "lesson_key": "a2-detailed-directions-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مفهوم جمله را انتخاب کن.",
+          "audio_text": "Transfer to the green line at Park Street."
+        },
+        "options": [
+          "در پارک استریت به خط سبز عوض کن.",
+          "دو بلوک مستقیم برو.",
+          "در دومین تقاطع به راست بپیچ.",
+          "داروخانه روبروی کتابخانه است."
+        ],
+        "answer": {
+          "value": "در پارک استریت به خط سبز عوض کن."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    }
+  ]
+}

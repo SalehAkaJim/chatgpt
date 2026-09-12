@@ -1,0 +1,712 @@
+{
+  "batch_id": "en-us-a2-describe-places-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A2",
+  "curriculum_unit": "a2-describe-places",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a2_describe_places_crowded",
+      "data": {
+        "slug": "a2_describe_places_crowded",
+        "lesson_key": "a2-describe-places-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "crowded"
+        },
+        "translations": {
+          "fa": "شلوغ"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_describe_places_crowded",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "lemma": "crowded",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_describe_places_crowded"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_describe_places_crowded",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "lexeme_ref": "lx_a2_describe_places_crowded",
+        "surface_form": "crowded",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_describe_places_peaceful",
+      "data": {
+        "slug": "a2_describe_places_peaceful",
+        "lesson_key": "a2-describe-places-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "peaceful"
+        },
+        "translations": {
+          "fa": "آرام"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_describe_places_peaceful",
+      "data": {
+        "lesson_key": "a2-describe-places-02",
+        "lemma": "peaceful",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_describe_places_peaceful"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_describe_places_peaceful",
+      "data": {
+        "lesson_key": "a2-describe-places-02",
+        "lexeme_ref": "lx_a2_describe_places_peaceful",
+        "surface_form": "peaceful",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_describe_places_historic",
+      "data": {
+        "slug": "a2_describe_places_historic",
+        "lesson_key": "a2-describe-places-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "historic"
+        },
+        "translations": {
+          "fa": "تاریخی"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_describe_places_historic",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "lemma": "historic",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_describe_places_historic"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_describe_places_historic",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "lexeme_ref": "lx_a2_describe_places_historic",
+        "surface_form": "historic",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_describe_places_modern",
+      "data": {
+        "slug": "a2_describe_places_modern",
+        "lesson_key": "a2-describe-places-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "modern"
+        },
+        "translations": {
+          "fa": "مدرن"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_describe_places_modern",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "lemma": "modern",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_describe_places_modern"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_describe_places_modern",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "lexeme_ref": "lx_a2_describe_places_modern",
+        "surface_form": "modern",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_describe_places_convenient",
+      "data": {
+        "slug": "a2_describe_places_convenient",
+        "lesson_key": "a2-describe-places-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "convenient"
+        },
+        "translations": {
+          "fa": "راحت / مناسب"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_describe_places_convenient",
+      "data": {
+        "lesson_key": "a2-describe-places-02",
+        "lemma": "convenient",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_describe_places_convenient"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_describe_places_convenient",
+      "data": {
+        "lesson_key": "a2-describe-places-02",
+        "lexeme_ref": "lx_a2_describe_places_convenient",
+        "surface_form": "convenient",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_describe_places_view",
+      "data": {
+        "slug": "a2_describe_places_view",
+        "lesson_key": "a2-describe-places-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "view"
+        },
+        "translations": {
+          "fa": "منظره"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_describe_places_view",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "lemma": "view",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_describe_places_view"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_describe_places_view",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "lexeme_ref": "lx_a2_describe_places_view",
+        "surface_form": "view",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_describe_places_crowded",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "text": {
+          "en": "Downtown is lively, but it gets very crowded at night."
+        },
+        "translations": {
+          "fa": "مرکز شهر پرجنب‌وجوشه، ولی شب‌ها خیلی شلوغ می‌شه."
+        },
+        "intent": "describe_place",
+        "concept_refs": [
+          "a2_describe_places_crowded"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_describe_places_peaceful",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "text": {
+          "en": "The neighborhood is quieter and more peaceful than the city center."
+        },
+        "translations": {
+          "fa": "این محله از مرکز شهر ساکت‌تر و آرام‌تره."
+        },
+        "intent": "compare_places",
+        "concept_refs": [
+          "a2_describe_places_peaceful"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_describe_places_historic",
+      "data": {
+        "lesson_key": "a2-describe-places-02",
+        "text": {
+          "en": "The old town has several historic buildings."
+        },
+        "translations": {
+          "fa": "بافت قدیمی چند ساختمان تاریخی دارد."
+        },
+        "intent": "describe_feature",
+        "concept_refs": [
+          "a2_describe_places_historic"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_describe_places_modern",
+      "data": {
+        "lesson_key": "a2-describe-places-02",
+        "text": {
+          "en": "The new part of the city is more modern."
+        },
+        "translations": {
+          "fa": "بخش جدید شهر مدرن‌تره."
+        },
+        "intent": "compare_area",
+        "concept_refs": [
+          "a2_describe_places_modern"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_describe_places_convenient",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "text": {
+          "en": "Living near the subway is more convenient for me."
+        },
+        "translations": {
+          "fa": "زندگی نزدیک مترو برای من راحت‌تره."
+        },
+        "intent": "state_place_preference",
+        "concept_refs": [
+          "a2_describe_places_convenient"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_describe_places_view",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "text": {
+          "en": "The best thing about the apartment is the view of the river."
+        },
+        "translations": {
+          "fa": "بهترین چیز آپارتمان منظره رودخانه است."
+        },
+        "intent": "describe_best_feature",
+        "concept_refs": [
+          "a2_describe_places_view"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_describe_places_place_comparatives",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "slug": "a2-describe-places-place-comparatives",
+        "title": "Comparatives for places",
+        "rule_summary": "Use comparatives to explain differences between familiar places.",
+        "explanation": {
+          "fa": "برای توضیح تفاوت بین مکان‌ها از صفت تفضیلی استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "This area is quieter than downtown.",
+            "fa": "این منطقه از مرکز شهر ساکت‌تره."
+          },
+          {
+            "en": "The subway is more convenient here.",
+            "fa": "مترو اینجا در دسترس‌تره."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_describe_places_place_superlatives",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "slug": "a2-describe-places-place-superlatives",
+        "title": "Superlatives for place features",
+        "rule_summary": "Use superlatives to identify the strongest feature in a group.",
+        "explanation": {
+          "fa": "برای مشخص کردن برجسته‌ترین ویژگی بین چند گزینه از صفت عالی استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "It's the busiest street in town.",
+            "fa": "شلوغ‌ترین خیابان شهره."
+          },
+          {
+            "en": "This park has the best view.",
+            "fa": "این پارک بهترین منظره رو داره."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_describe_places_neighborhoods",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "title": "Choosing a neighborhood",
+        "setting": "apartment search",
+        "cefr": "A2",
+        "topic": "places-town",
+        "characters": [
+          "Maya",
+          "Rami"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "Do you like the Riverside area?",
+            "translation_fa": "منطقه ریورساید رو دوست داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Rami",
+            "text": "Yes. It's more peaceful than downtown.",
+            "translation_fa": "آره. از مرکز شهر آرام‌تره."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "But downtown is more convenient for work.",
+            "translation_fa": "ولی مرکز شهر برای کار راحت‌تره."
+          },
+          {
+            "order": 4,
+            "speaker": "Rami",
+            "text": "True. It depends on what matters most to you.",
+            "translation_fa": "درسته. بستگی داره چی برات مهم‌تره."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_describe_places_visit",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "title": "A place to visit",
+        "setting": "tourist information desk",
+        "cefr": "A2",
+        "topic": "places-town",
+        "characters": [
+          "Sofia",
+          "Marco"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "What's the most interesting part of the city?",
+            "translation_fa": "جالب‌ترین بخش شهر کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Marco",
+            "text": "The old town, if you like historic buildings.",
+            "translation_fa": "اگر ساختمان تاریخی دوست دارید، بافت قدیمی."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Is it crowded?",
+            "translation_fa": "شلوغه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Marco",
+            "text": "On weekends, yes. Weekday mornings are much quieter.",
+            "translation_fa": "آخر هفته‌ها بله. صبح روزهای کاری خیلی خلوت‌تره."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_describe_places_fill",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "This neighborhood is more ___ than downtown."
+        },
+        "options": [
+          "peaceful",
+          "peacefully",
+          "most peaceful",
+          "peace"
+        ],
+        "answer": {
+          "value": "peaceful"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_describe_places_listen",
+      "data": {
+        "lesson_key": "a2-describe-places-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و معنی درست را انتخاب کن.",
+          "audio_text": "The neighborhood is quieter and more peaceful than the city center."
+        },
+        "options": [
+          "این محله از مرکز شهر ساکت‌تر و آرام‌تره.",
+          "مرکز شهر پرجنب‌وجوشه، ولی شب‌ها خیلی شلوغ می‌شه.",
+          "هیچ‌کدام از این‌ها درست نیست.",
+          "اطلاعات کافی نیست."
+        ],
+        "answer": {
+          "value": "این محله از مرکز شهر ساکت‌تر و آرام‌تره."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_describe_places_speak",
+      "data": {
+        "lesson_key": "a2-describe-places-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را به انگلیسی بگو: بافت قدیمی چند ساختمان تاریخی دارد."
+        },
+        "answer": {
+          "expected_text": "The old town has several historic buildings."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_describe_places_build",
+      "data": {
+        "lesson_key": "a2-describe-places-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "بخش جدید شهر مدرن‌تره.",
+          "tokens": [
+            "modern.",
+            "more",
+            "is",
+            "city",
+            "the",
+            "of",
+            "part",
+            "new",
+            "The"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "The",
+            "new",
+            "part",
+            "of",
+            "the",
+            "city",
+            "is",
+            "more",
+            "modern."
+          ],
+          "text": "The new part of the city is more modern."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_describe_places_meaning",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "Living near the subway is more convenient for me."
+        },
+        "options": [
+          "زندگی نزدیک مترو برای من راحت‌تره.",
+          "بافت قدیمی چند ساختمان تاریخی دارد.",
+          "مرکز شهر پرجنب‌وجوشه، ولی شب‌ها خیلی شلوغ می‌شه.",
+          "این محله از مرکز شهر ساکت‌تر و آرام‌تره."
+        ],
+        "answer": {
+          "value": "زندگی نزدیک مترو برای من راحت‌تره."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_describe_places_listen2",
+      "data": {
+        "lesson_key": "a2-describe-places-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مفهوم جمله را انتخاب کن.",
+          "audio_text": "The best thing about the apartment is the view of the river."
+        },
+        "options": [
+          "بهترین چیز آپارتمان منظره رودخانه است.",
+          "مرکز شهر پرجنب‌وجوشه، ولی شب‌ها خیلی شلوغ می‌شه.",
+          "این محله از مرکز شهر ساکت‌تر و آرام‌تره.",
+          "بافت قدیمی چند ساختمان تاریخی دارد."
+        ],
+        "answer": {
+          "value": "بهترین چیز آپارتمان منظره رودخانه است."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    }
+  ]
+}

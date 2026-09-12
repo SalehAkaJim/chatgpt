@@ -1,0 +1,957 @@
+{
+  "batch_id": "en-us-a2-integrated-capstone-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A2",
+  "curriculum_unit": "a2-integrated-capstone",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a2_integrated_capstone_plan",
+      "data": {
+        "slug": "a2_integrated_capstone_plan",
+        "lesson_key": "a2-integrated-capstone-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "plan"
+        },
+        "translations": {
+          "fa": "برنامه"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_integrated_capstone_plan",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "lemma": "plan",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_integrated_capstone_plan"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_integrated_capstone_plan",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "lexeme_ref": "lx_a2_integrated_capstone_plan",
+        "surface_form": "plan",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_integrated_capstone_delay",
+      "data": {
+        "slug": "a2_integrated_capstone_delay",
+        "lesson_key": "a2-integrated-capstone-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "delay"
+        },
+        "translations": {
+          "fa": "تأخیر"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_integrated_capstone_delay",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "lemma": "delay",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_integrated_capstone_delay"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_integrated_capstone_delay",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "lexeme_ref": "lx_a2_integrated_capstone_delay",
+        "surface_form": "delay",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_integrated_capstone_reservation",
+      "data": {
+        "slug": "a2_integrated_capstone_reservation",
+        "lesson_key": "a2-integrated-capstone-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "reservation"
+        },
+        "translations": {
+          "fa": "رزرو"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_integrated_capstone_reservation",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "lemma": "reservation",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_integrated_capstone_reservation"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_integrated_capstone_reservation",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "lexeme_ref": "lx_a2_integrated_capstone_reservation",
+        "surface_form": "reservation",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_integrated_capstone_choice",
+      "data": {
+        "slug": "a2_integrated_capstone_choice",
+        "lesson_key": "a2-integrated-capstone-04",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "choice"
+        },
+        "translations": {
+          "fa": "انتخاب"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_integrated_capstone_choice",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "lemma": "choice",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_integrated_capstone_choice"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_integrated_capstone_choice",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "lexeme_ref": "lx_a2_integrated_capstone_choice",
+        "surface_form": "choice",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_integrated_capstone_message",
+      "data": {
+        "slug": "a2_integrated_capstone_message",
+        "lesson_key": "a2-integrated-capstone-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "message"
+        },
+        "translations": {
+          "fa": "پیام"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_integrated_capstone_message",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "lemma": "message",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_integrated_capstone_message"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_integrated_capstone_message",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "lexeme_ref": "lx_a2_integrated_capstone_message",
+        "surface_form": "message",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_integrated_capstone_solution",
+      "data": {
+        "slug": "a2_integrated_capstone_solution",
+        "lesson_key": "a2-integrated-capstone-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "solution"
+        },
+        "translations": {
+          "fa": "راه‌حل"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_integrated_capstone_solution",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "lemma": "solution",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_integrated_capstone_solution"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_integrated_capstone_solution",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "lexeme_ref": "lx_a2_integrated_capstone_solution",
+        "surface_form": "solution",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_integrated_capstone_direction",
+      "data": {
+        "slug": "a2_integrated_capstone_direction",
+        "lesson_key": "a2-integrated-capstone-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "direction"
+        },
+        "translations": {
+          "fa": "مسیر / جهت"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_integrated_capstone_direction",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "lemma": "direction",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_integrated_capstone_direction"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_integrated_capstone_direction",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "lexeme_ref": "lx_a2_integrated_capstone_direction",
+        "surface_form": "direction",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_integrated_capstone_experience",
+      "data": {
+        "slug": "a2_integrated_capstone_experience",
+        "lesson_key": "a2-integrated-capstone-04",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "experience"
+        },
+        "translations": {
+          "fa": "تجربه"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_integrated_capstone_experience",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "lemma": "experience",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_integrated_capstone_experience"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_integrated_capstone_experience",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "lexeme_ref": "lx_a2_integrated_capstone_experience",
+        "surface_form": "experience",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_integrated_capstone_past",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "text": {
+          "en": "My train was delayed, so I arrived an hour late."
+        },
+        "translations": {
+          "fa": "قطارم تأخیر داشت، پس یک ساعت دیر رسیدم."
+        },
+        "intent": "report_past_problem",
+        "concept_refs": [
+          "a2_integrated_capstone_delay"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_integrated_capstone_reservation",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "text": {
+          "en": "I have a reservation, but I need to change the check-in time."
+        },
+        "translations": {
+          "fa": "رزرو دارم، ولی باید زمان تحویل اتاق رو عوض کنم."
+        },
+        "intent": "manage_reservation",
+        "concept_refs": [
+          "a2_integrated_capstone_reservation"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_integrated_capstone_choice",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "text": {
+          "en": "The bus is cheaper, but the subway is faster."
+        },
+        "translations": {
+          "fa": "اتوبوس ارزون‌تره، ولی مترو سریع‌تره."
+        },
+        "intent": "compare_choices",
+        "concept_refs": [
+          "a2_integrated_capstone_choice"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_integrated_capstone_direction",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "text": {
+          "en": "Take the green line and transfer at Central Station."
+        },
+        "translations": {
+          "fa": "خط سبز رو بگیر و در ایستگاه مرکزی خط عوض کن."
+        },
+        "intent": "give_direction",
+        "concept_refs": [
+          "a2_integrated_capstone_direction"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_integrated_capstone_message",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "text": {
+          "en": "I'll send Maya a message and tell her we're running late."
+        },
+        "translations": {
+          "fa": "برای مایا پیام می‌فرستم و می‌گم دیر می‌رسیم."
+        },
+        "intent": "coordinate_by_message",
+        "concept_refs": [
+          "a2_integrated_capstone_message"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_integrated_capstone_plan",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "text": {
+          "en": "We're going to meet at the museum at four."
+        },
+        "translations": {
+          "fa": "قرار است ساعت چهار جلوی موزه همدیگر را ببینیم."
+        },
+        "intent": "state_plan",
+        "concept_refs": [
+          "a2_integrated_capstone_plan"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_integrated_capstone_solution",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "text": {
+          "en": "If the museum is closed, we could go to the market instead."
+        },
+        "translations": {
+          "fa": "اگر موزه بسته بود، می‌تونیم به جاش بازار بریم."
+        },
+        "intent": "suggest_backup",
+        "concept_refs": [
+          "a2_integrated_capstone_solution"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_integrated_capstone_experience",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "text": {
+          "en": "I've never visited this city before, but I'm enjoying it so far."
+        },
+        "translations": {
+          "fa": "قبلاً هیچ‌وقت این شهر رو ندیده بودم، ولی تا اینجا دارم لذت می‌برم."
+        },
+        "intent": "reflect_experience",
+        "concept_refs": [
+          "a2_integrated_capstone_experience"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_integrated_capstone_past_present",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "slug": "a2-integrated-capstone-past-present",
+        "title": "Past event + present need",
+        "rule_summary": "Connect a completed past event to a present situation using simple linking words.",
+        "explanation": {
+          "fa": "یک اتفاق تمام‌شده گذشته را با وضعیت فعلی با کلمات ربط ساده وصل می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The bus was late, so I'm still at the station.",
+            "fa": "اتوبوس دیر کرد، پس هنوز ایستگاهم."
+          },
+          {
+            "en": "I lost my key, so I need help.",
+            "fa": "کلیدم رو گم کردم، پس کمک لازم دارم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_integrated_capstone_compare_plan",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "slug": "a2-integrated-capstone-compare-plan",
+        "title": "Compare choices before a plan",
+        "rule_summary": "Use comparatives plus because/but/so to choose between familiar options.",
+        "explanation": {
+          "fa": "برای انتخاب بین گزینه‌های آشنا از مقایسه همراه because، but یا so استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The train is faster, but the bus is cheaper.",
+            "fa": "قطار سریع‌تره ولی اتوبوس ارزون‌تره."
+          },
+          {
+            "en": "This route is easier, so let's take it.",
+            "fa": "این مسیر راحت‌تره، پس همین رو بریم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_integrated_capstone_if_backup",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "slug": "a2-integrated-capstone-if-backup",
+        "title": "if + could for a backup solution",
+        "rule_summary": "Use if for a simple possible problem and could for an alternative solution.",
+        "explanation": {
+          "fa": "برای یک مشکل احتمالی ساده از if و برای راه‌حل جایگزین از could استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "If it's full, we could try the cafe next door.",
+            "fa": "اگر پر بود، می‌تونیم کافه کناری رو امتحان کنیم."
+          },
+          {
+            "en": "If we miss the bus, we could take a taxi.",
+            "fa": "اگر اتوبوس رو از دست دادیم، می‌تونیم تاکسی بگیریم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_integrated_capstone_arrival",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "title": "Late arrival",
+        "setting": "hotel reception",
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "characters": [
+          "Maya",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "Hi. My train was delayed, so I'm checking in later than planned.",
+            "translation_fa": "سلام. قطارم تأخیر داشت، برای همین دیرتر از برنامه اتاق رو تحویل می‌گیرم."
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "No problem. What's the name on the reservation?",
+            "translation_fa": "مشکلی نیست. رزرو به چه نامیه؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "Maya Chen.",
+            "translation_fa": "مایا چن."
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "I found it. Your room is ready.",
+            "translation_fa": "پیداش کردم. اتاقتون آماده‌ست."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_integrated_capstone_city",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "title": "Choosing how to get there",
+        "setting": "hotel lobby",
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "characters": [
+          "Maya",
+          "Leo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "The museum is three miles away. Should we take the bus?",
+            "translation_fa": "موزه سه مایل فاصله داره. اتوبوس بگیریم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Leo",
+            "text": "The bus is cheaper, but the subway is faster.",
+            "translation_fa": "اتوبوس ارزون‌تره، ولی مترو سریع‌تره."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "Let's take the subway, then.",
+            "translation_fa": "پس مترو بریم."
+          },
+          {
+            "order": 4,
+            "speaker": "Leo",
+            "text": "Okay. We need to transfer at Central Station.",
+            "translation_fa": "باشه. باید ایستگاه مرکزی خط عوض کنیم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_integrated_capstone_backup",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "title": "Changing the afternoon plan",
+        "setting": "text messages",
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "characters": [
+          "Maya",
+          "Priya"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "We're running about twenty minutes late.",
+            "translation_fa": "حدود بیست دقیقه دیر می‌رسیم."
+          },
+          {
+            "order": 2,
+            "speaker": "Priya",
+            "text": "No worries. I'll wait near the museum entrance.",
+            "translation_fa": "مشکلی نیست. نزدیک ورودی موزه منتظر می‌مونم."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "If it's closed when we arrive, we could go to the market instead.",
+            "translation_fa": "اگر وقتی رسیدیم بسته بود، می‌تونیم به جاش بازار بریم."
+          },
+          {
+            "order": 4,
+            "speaker": "Priya",
+            "text": "Sounds good. I've never been there.",
+            "translation_fa": "خوبه. من هیچ‌وقت اونجا نرفتم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_integrated_capstone_fill",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "If the museum is closed, we ___ go to the market instead."
+        },
+        "options": [
+          "could",
+          "did",
+          "have",
+          "are"
+        ],
+        "answer": {
+          "value": "could"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_integrated_capstone_listen",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و معنی درست را انتخاب کن.",
+          "audio_text": "I have a reservation, but I need to change the check-in time."
+        },
+        "options": [
+          "رزرو دارم، ولی باید زمان تحویل اتاق رو عوض کنم.",
+          "قطارم تأخیر داشت، پس یک ساعت دیر رسیدم.",
+          "هیچ‌کدام از این‌ها درست نیست.",
+          "اطلاعات کافی نیست."
+        ],
+        "answer": {
+          "value": "رزرو دارم، ولی باید زمان تحویل اتاق رو عوض کنم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_integrated_capstone_speak",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را به انگلیسی بگو: اتوبوس ارزون‌تره، ولی مترو سریع‌تره."
+        },
+        "answer": {
+          "expected_text": "The bus is cheaper, but the subway is faster."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_integrated_capstone_build",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "خط سبز رو بگیر و در ایستگاه مرکزی خط عوض کن.",
+          "tokens": [
+            "Station.",
+            "Central",
+            "at",
+            "transfer",
+            "and",
+            "line",
+            "green",
+            "the",
+            "Take"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Take",
+            "the",
+            "green",
+            "line",
+            "and",
+            "transfer",
+            "at",
+            "Central",
+            "Station."
+          ],
+          "text": "Take the green line and transfer at Central Station."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_integrated_capstone_meaning",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "I'll send Maya a message and tell her we're running late."
+        },
+        "options": [
+          "برای مایا پیام می‌فرستم و می‌گم دیر می‌رسیم.",
+          "اتوبوس ارزون‌تره، ولی مترو سریع‌تره.",
+          "قطارم تأخیر داشت، پس یک ساعت دیر رسیدم.",
+          "رزرو دارم، ولی باید زمان تحویل اتاق رو عوض کنم."
+        ],
+        "answer": {
+          "value": "برای مایا پیام می‌فرستم و می‌گم دیر می‌رسیم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_integrated_capstone_listen2",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مفهوم جمله را انتخاب کن.",
+          "audio_text": "I've never visited this city before, but I'm enjoying it so far."
+        },
+        "options": [
+          "قبلاً هیچ‌وقت این شهر رو ندیده بودم، ولی تا اینجا دارم لذت می‌برم.",
+          "قطارم تأخیر داشت، پس یک ساعت دیر رسیدم.",
+          "رزرو دارم، ولی باید زمان تحویل اتاق رو عوض کنم.",
+          "اتوبوس ارزون‌تره، ولی مترو سریع‌تره."
+        ],
+        "answer": {
+          "value": "قبلاً هیچ‌وقت این شهر رو ندیده بودم، ولی تا اینجا دارم لذت می‌برم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_integrated_capstone_capstone_dialogue",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "fa": "اگر موزه بسته باشد، پیشنهاد جایگزین چیست؟"
+        },
+        "options": [
+          "رفتن به بازار",
+          "برگشتن به هتل",
+          "رفتن به فرودگاه",
+          "لغو سفر"
+        ],
+        "answer": {
+          "value": "رفتن به بازار"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_integrated_capstone_capstone_speak",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-04",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک راه‌حل جایگزین پیشنهاد بده: «اگر موزه بسته باشد، می‌توانیم به بازار برویم.»"
+        },
+        "answer": {
+          "expected_text": "If the museum is closed, we could go to the market."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    }
+  ]
+}

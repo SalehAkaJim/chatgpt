@@ -1,0 +1,712 @@
+{
+  "batch_id": "en-us-a2-tickets-timetables-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A2",
+  "curriculum_unit": "a2-tickets-timetables",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a2_tickets_timetables_platform",
+      "data": {
+        "slug": "a2_tickets_timetables_platform",
+        "lesson_key": "a2-tickets-timetables-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "platform"
+        },
+        "translations": {
+          "fa": "سکو"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_tickets_timetables_platform",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "lemma": "platform",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_tickets_timetables_platform"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_tickets_timetables_platform",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "lexeme_ref": "lx_a2_tickets_timetables_platform",
+        "surface_form": "platform",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_tickets_timetables_departure",
+      "data": {
+        "slug": "a2_tickets_timetables_departure",
+        "lesson_key": "a2-tickets-timetables-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "departure"
+        },
+        "translations": {
+          "fa": "حرکت / زمان حرکت"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_tickets_timetables_departure",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "lemma": "departure",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_tickets_timetables_departure"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_tickets_timetables_departure",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "lexeme_ref": "lx_a2_tickets_timetables_departure",
+        "surface_form": "departure",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_tickets_timetables_arrival",
+      "data": {
+        "slug": "a2_tickets_timetables_arrival",
+        "lesson_key": "a2-tickets-timetables-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "arrival"
+        },
+        "translations": {
+          "fa": "رسیدن / زمان رسیدن"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_tickets_timetables_arrival",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "lemma": "arrival",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_tickets_timetables_arrival"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_tickets_timetables_arrival",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "lexeme_ref": "lx_a2_tickets_timetables_arrival",
+        "surface_form": "arrival",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_tickets_timetables_round_trip",
+      "data": {
+        "slug": "a2_tickets_timetables_round_trip",
+        "lesson_key": "a2-tickets-timetables-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "round trip"
+        },
+        "translations": {
+          "fa": "رفت‌وبرگشت"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_tickets_timetables_round_trip",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "lemma": "round trip",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun_phrase",
+        "concept_refs": [
+          "a2_tickets_timetables_round_trip"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_tickets_timetables_round_trip",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "lexeme_ref": "lx_a2_tickets_timetables_round_trip",
+        "surface_form": "round trip",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_tickets_timetables_single",
+      "data": {
+        "slug": "a2_tickets_timetables_single",
+        "lesson_key": "a2-tickets-timetables-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "one-way ticket"
+        },
+        "translations": {
+          "fa": "بلیت یک‌طرفه"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_tickets_timetables_single",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "lemma": "one-way ticket",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun_phrase",
+        "concept_refs": [
+          "a2_tickets_timetables_single"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_tickets_timetables_single",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "lexeme_ref": "lx_a2_tickets_timetables_single",
+        "surface_form": "one-way ticket",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_tickets_timetables_schedule",
+      "data": {
+        "slug": "a2_tickets_timetables_schedule",
+        "lesson_key": "a2-tickets-timetables-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "schedule"
+        },
+        "translations": {
+          "fa": "برنامه زمانی"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_tickets_timetables_schedule",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "lemma": "schedule",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_tickets_timetables_schedule"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_tickets_timetables_schedule",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "lexeme_ref": "lx_a2_tickets_timetables_schedule",
+        "surface_form": "schedule",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_tickets_timetables_platform",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "text": {
+          "en": "Which platform does the train leave from?"
+        },
+        "translations": {
+          "fa": "قطار از کدام سکو حرکت می‌کند؟"
+        },
+        "intent": "ask_platform",
+        "concept_refs": [
+          "a2_tickets_timetables_platform"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_tickets_timetables_departure",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "text": {
+          "en": "The next departure is at 10:25."
+        },
+        "translations": {
+          "fa": "حرکت بعدی ساعت ۱۰:۲۵ است."
+        },
+        "intent": "state_departure",
+        "concept_refs": [
+          "a2_tickets_timetables_departure"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_tickets_timetables_arrival",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "text": {
+          "en": "What time does it arrive in Boston?"
+        },
+        "translations": {
+          "fa": "چه ساعتی به بوستون می‌رسد؟"
+        },
+        "intent": "ask_arrival",
+        "concept_refs": [
+          "a2_tickets_timetables_arrival"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_tickets_timetables_round",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "text": {
+          "en": "I'd like a round-trip ticket to New York, please."
+        },
+        "translations": {
+          "fa": "یک بلیت رفت‌وبرگشت به نیویورک می‌خواهم، لطفاً."
+        },
+        "intent": "buy_ticket",
+        "concept_refs": [
+          "a2_tickets_timetables_round_trip"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_tickets_timetables_one_way",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "text": {
+          "en": "Is a one-way ticket cheaper?"
+        },
+        "translations": {
+          "fa": "بلیت یک‌طرفه ارزان‌تر است؟"
+        },
+        "intent": "compare_ticket",
+        "concept_refs": [
+          "a2_tickets_timetables_single"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_tickets_timetables_schedule",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "text": {
+          "en": "According to the schedule, the bus leaves every thirty minutes."
+        },
+        "translations": {
+          "fa": "طبق برنامه، اتوبوس هر سی دقیقه حرکت می‌کند."
+        },
+        "intent": "read_schedule",
+        "concept_refs": [
+          "a2_tickets_timetables_schedule"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_tickets_timetables_leave_arrive",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "slug": "a2-tickets-timetables-leave-arrive",
+        "title": "leave / arrive + time and place",
+        "rule_summary": "Use leave and arrive with appropriate time and place expressions.",
+        "explanation": {
+          "fa": "برای زمان حرکت و رسیدن از leave و arrive همراه عبارت‌های زمان و مکان استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The train leaves at nine.",
+            "fa": "قطار ساعت نه حرکت می‌کند."
+          },
+          {
+            "en": "It arrives in Boston at eleven.",
+            "fa": "ساعت یازده به بوستون می‌رسد."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_tickets_timetables_ticket_language",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "slug": "a2-tickets-timetables-ticket-language",
+        "title": "one-way and round-trip tickets",
+        "rule_summary": "Use one-way for a ticket in one direction and round trip for going and returning.",
+        "explanation": {
+          "fa": "برای بلیت فقط رفت از one-way و برای رفت‌وبرگشت از round trip استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "A one-way ticket, please.",
+            "fa": "یک بلیت یک‌طرفه لطفاً."
+          },
+          {
+            "en": "Two round-trip tickets to Miami.",
+            "fa": "دو بلیت رفت‌وبرگشت به میامی."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_tickets_timetables_station",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "title": "At the train station",
+        "setting": "train station",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "Nia",
+          "Tom"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nia",
+            "text": "Excuse me, which platform is for the 9:40 train?",
+            "translation_fa": "ببخشید، قطار ۹:۴۰ از کدام سکوست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Tom",
+            "text": "Platform six.",
+            "translation_fa": "سکوی شش."
+          },
+          {
+            "order": 3,
+            "speaker": "Nia",
+            "text": "What time does it arrive downtown?",
+            "translation_fa": "چه ساعتی به مرکز شهر می‌رسد؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Tom",
+            "text": "At 10:15, if it's on time.",
+            "translation_fa": "اگر سر وقت باشه، ساعت ۱۰:۱۵."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_tickets_timetables_ticket_counter",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "title": "At the ticket counter",
+        "setting": "ticket office",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "Chloe",
+          "Yusuf"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Chloe",
+            "text": "I'd like a round-trip ticket to Portland, please.",
+            "translation_fa": "یک بلیت رفت‌وبرگشت به پورتلند می‌خواهم لطفاً."
+          },
+          {
+            "order": 2,
+            "speaker": "Yusuf",
+            "text": "When are you coming back?",
+            "translation_fa": "کی برمی‌گردید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Chloe",
+            "text": "Sunday evening.",
+            "translation_fa": "یکشنبه عصر."
+          },
+          {
+            "order": 4,
+            "speaker": "Yusuf",
+            "text": "Okay. The return train leaves at 6:20.",
+            "translation_fa": "باشه. قطار برگشت ساعت ۶:۲۰ حرکت می‌کند."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_tickets_timetables_fill",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "The train ___ at 10:25."
+        },
+        "options": [
+          "leaves",
+          "leave",
+          "leaving",
+          "left"
+        ],
+        "answer": {
+          "value": "leaves"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_tickets_timetables_listen",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و معنی درست را انتخاب کن.",
+          "audio_text": "The next departure is at 10:25."
+        },
+        "options": [
+          "حرکت بعدی ساعت ۱۰:۲۵ است.",
+          "قطار از کدام سکو حرکت می‌کند؟",
+          "هیچ‌کدام از این‌ها درست نیست.",
+          "اطلاعات کافی نیست."
+        ],
+        "answer": {
+          "value": "حرکت بعدی ساعت ۱۰:۲۵ است."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_tickets_timetables_speak",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را به انگلیسی بگو: چه ساعتی به بوستون می‌رسد؟"
+        },
+        "answer": {
+          "expected_text": "What time does it arrive in Boston?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_tickets_timetables_build",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "یک بلیت رفت‌وبرگشت به نیویورک می‌خواهم، لطفاً.",
+          "tokens": [
+            "please.",
+            "York,",
+            "New",
+            "to",
+            "ticket",
+            "round-trip",
+            "a",
+            "like",
+            "I'd"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I'd",
+            "like",
+            "a",
+            "round-trip",
+            "ticket",
+            "to",
+            "New",
+            "York,",
+            "please."
+          ],
+          "text": "I'd like a round-trip ticket to New York, please."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_tickets_timetables_meaning",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "Is a one-way ticket cheaper?"
+        },
+        "options": [
+          "بلیت یک‌طرفه ارزان‌تر است؟",
+          "چه ساعتی به بوستون می‌رسد؟",
+          "قطار از کدام سکو حرکت می‌کند؟",
+          "حرکت بعدی ساعت ۱۰:۲۵ است."
+        ],
+        "answer": {
+          "value": "بلیت یک‌طرفه ارزان‌تر است؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_tickets_timetables_listen2",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مفهوم جمله را انتخاب کن.",
+          "audio_text": "According to the schedule, the bus leaves every thirty minutes."
+        },
+        "options": [
+          "طبق برنامه، اتوبوس هر سی دقیقه حرکت می‌کند.",
+          "قطار از کدام سکو حرکت می‌کند؟",
+          "حرکت بعدی ساعت ۱۰:۲۵ است.",
+          "چه ساعتی به بوستون می‌رسد؟"
+        ],
+        "answer": {
+          "value": "طبق برنامه، اتوبوس هر سی دقیقه حرکت می‌کند."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    }
+  ]
+}

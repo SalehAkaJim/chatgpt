@@ -1,0 +1,706 @@
+{
+  "batch_id": "en-us-a2-opinions-reasons-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A2",
+  "curriculum_unit": "a2-opinions-reasons",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a2_opinions_reasons_opinion",
+      "data": {
+        "slug": "a2_opinions_reasons_opinion",
+        "lesson_key": "a2-opinions-reasons-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "opinion"
+        },
+        "translations": {
+          "fa": "نظر"
+        },
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_opinions_reasons_opinion",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "lemma": "opinion",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_opinions_reasons_opinion"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_opinions_reasons_opinion",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "lexeme_ref": "lx_a2_opinions_reasons_opinion",
+        "surface_form": "opinion",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_opinions_reasons_agree",
+      "data": {
+        "slug": "a2_opinions_reasons_agree",
+        "lesson_key": "a2-opinions-reasons-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "agree"
+        },
+        "translations": {
+          "fa": "موافق بودن"
+        },
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_opinions_reasons_agree",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "lemma": "agree",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_opinions_reasons_agree"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_opinions_reasons_agree",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "lexeme_ref": "lx_a2_opinions_reasons_agree",
+        "surface_form": "agree",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_opinions_reasons_disagree",
+      "data": {
+        "slug": "a2_opinions_reasons_disagree",
+        "lesson_key": "a2-opinions-reasons-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "disagree"
+        },
+        "translations": {
+          "fa": "مخالف بودن"
+        },
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_opinions_reasons_disagree",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "lemma": "disagree",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_opinions_reasons_disagree"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_opinions_reasons_disagree",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "lexeme_ref": "lx_a2_opinions_reasons_disagree",
+        "surface_form": "disagree",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_opinions_reasons_reason",
+      "data": {
+        "slug": "a2_opinions_reasons_reason",
+        "lesson_key": "a2-opinions-reasons-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "reason"
+        },
+        "translations": {
+          "fa": "دلیل"
+        },
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_opinions_reasons_reason",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "lemma": "reason",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_opinions_reasons_reason"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_opinions_reasons_reason",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "lexeme_ref": "lx_a2_opinions_reasons_reason",
+        "surface_form": "reason",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_opinions_reasons_prefer",
+      "data": {
+        "slug": "a2_opinions_reasons_prefer",
+        "lesson_key": "a2-opinions-reasons-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "prefer"
+        },
+        "translations": {
+          "fa": "ترجیح دادن"
+        },
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_opinions_reasons_prefer",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "lemma": "prefer",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_opinions_reasons_prefer"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_opinions_reasons_prefer",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "lexeme_ref": "lx_a2_opinions_reasons_prefer",
+        "surface_form": "prefer",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_opinions_reasons_either",
+      "data": {
+        "slug": "a2_opinions_reasons_either",
+        "lesson_key": "a2-opinions-reasons-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "either"
+        },
+        "translations": {
+          "fa": "هم / نیز در جمله منفی"
+        },
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_opinions_reasons_either",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "lemma": "either",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "a2_opinions_reasons_either"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_opinions_reasons_either",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "lexeme_ref": "lx_a2_opinions_reasons_either",
+        "surface_form": "either",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_opinions_reasons_think",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "text": {
+          "en": "I think the earlier train is better because it's less crowded."
+        },
+        "translations": {
+          "fa": "فکر می‌کنم قطار زودتر بهتره چون خلوت‌تره."
+        },
+        "intent": "give_opinion",
+        "concept_refs": [
+          "a2_opinions_reasons_opinion",
+          "a2_opinions_reasons_reason"
+        ],
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_opinions_reasons_agree",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "text": {
+          "en": "I agree. It also arrives before lunch."
+        },
+        "translations": {
+          "fa": "موافقم. قبل از ناهار هم می‌رسه."
+        },
+        "intent": "agree",
+        "concept_refs": [
+          "a2_opinions_reasons_agree"
+        ],
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_opinions_reasons_disagree",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "text": {
+          "en": "I don't really agree because the later train is cheaper."
+        },
+        "translations": {
+          "fa": "خیلی موافق نیستم چون قطار دیرتر ارزون‌تره."
+        },
+        "intent": "disagree",
+        "concept_refs": [
+          "a2_opinions_reasons_disagree",
+          "a2_opinions_reasons_reason"
+        ],
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_opinions_reasons_prefer",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "text": {
+          "en": "I'd prefer the quieter restaurant."
+        },
+        "translations": {
+          "fa": "رستوران آرام‌تر رو ترجیح می‌دم."
+        },
+        "intent": "state_preference",
+        "concept_refs": [
+          "a2_opinions_reasons_prefer"
+        ],
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_opinions_reasons_too",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "text": {
+          "en": "I like the first design too."
+        },
+        "translations": {
+          "fa": "من هم طرح اول رو دوست دارم."
+        },
+        "intent": "agree_positive",
+        "concept_refs": [
+          "a2_opinions_reasons_agree"
+        ],
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_opinions_reasons_either",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "text": {
+          "en": "I don't like the second one either."
+        },
+        "translations": {
+          "fa": "من هم طرح دوم رو دوست ندارم."
+        },
+        "intent": "agree_negative",
+        "concept_refs": [
+          "a2_opinions_reasons_either"
+        ],
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_opinions_reasons_because_so",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "slug": "a2-opinions-reasons-because-so",
+        "title": "because and so",
+        "rule_summary": "Use because to give a reason and so to give a result.",
+        "explanation": {
+          "fa": "برای بیان دلیل از because و برای بیان نتیجه از so استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I chose it because it's cheaper.",
+            "fa": "انتخابش کردم چون ارزون‌تره."
+          },
+          {
+            "en": "It's raining, so let's stay inside.",
+            "fa": "بارون میاد، پس داخل بمونیم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_opinions_reasons_too_either",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "slug": "a2-opinions-reasons-too-either",
+        "title": "too and either",
+        "rule_summary": "Use too after a positive agreement and either after a negative statement.",
+        "explanation": {
+          "fa": "برای همراهی با جمله مثبت از too و با جمله منفی از either استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I like it too.",
+            "fa": "من هم دوستش دارم."
+          },
+          {
+            "en": "I don't want it either.",
+            "fa": "من هم نمی‌خوامش."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_opinions_reasons_movie",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "title": "Choosing a movie",
+        "setting": "living room",
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Ravi",
+          "Priya"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ravi",
+            "text": "I think the comedy looks better.",
+            "translation_fa": "فکر می‌کنم فیلم کمدی بهتره."
+          },
+          {
+            "order": 2,
+            "speaker": "Priya",
+            "text": "I agree. The other one looks too serious.",
+            "translation_fa": "موافقم. اون یکی خیلی جدی به نظر می‌رسه."
+          },
+          {
+            "order": 3,
+            "speaker": "Ravi",
+            "text": "And this one starts earlier.",
+            "translation_fa": "این یکی هم زودتر شروع می‌شه."
+          },
+          {
+            "order": 4,
+            "speaker": "Priya",
+            "text": "Good. Let's watch it.",
+            "translation_fa": "خوبه. همین رو ببینیم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_opinions_reasons_cafe",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "title": "Different opinions",
+        "setting": "street",
+        "cefr": "A2",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Ben",
+          "Noura"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ben",
+            "text": "I'd prefer the cafe on King Street.",
+            "translation_fa": "کافه خیابان کینگ رو ترجیح می‌دم."
+          },
+          {
+            "order": 2,
+            "speaker": "Noura",
+            "text": "I don't really agree. It's always crowded.",
+            "translation_fa": "خیلی موافق نیستم. همیشه شلوغه."
+          },
+          {
+            "order": 3,
+            "speaker": "Ben",
+            "text": "That's true, but the coffee is better.",
+            "translation_fa": "درسته، ولی قهوه‌اش بهتره."
+          },
+          {
+            "order": 4,
+            "speaker": "Noura",
+            "text": "Okay. That's a good reason.",
+            "translation_fa": "باشه. دلیل خوبیه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_opinions_reasons_fill",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I chose it ___ it's cheaper."
+        },
+        "options": [
+          "because",
+          "so",
+          "either",
+          "too"
+        ],
+        "answer": {
+          "value": "because"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_opinions_reasons_listen",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و معنی درست را انتخاب کن.",
+          "audio_text": "I agree. It also arrives before lunch."
+        },
+        "options": [
+          "موافقم. قبل از ناهار هم می‌رسه.",
+          "فکر می‌کنم قطار زودتر بهتره چون خلوت‌تره.",
+          "هیچ‌کدام از این‌ها درست نیست.",
+          "اطلاعات کافی نیست."
+        ],
+        "answer": {
+          "value": "موافقم. قبل از ناهار هم می‌رسه."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_opinions_reasons_speak",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را به انگلیسی بگو: خیلی موافق نیستم چون قطار دیرتر ارزون‌تره."
+        },
+        "answer": {
+          "expected_text": "I don't really agree because the later train is cheaper."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_opinions_reasons_build",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "رستوران آرام‌تر رو ترجیح می‌دم.",
+          "tokens": [
+            "restaurant.",
+            "quieter",
+            "the",
+            "prefer",
+            "I'd"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I'd",
+            "prefer",
+            "the",
+            "quieter",
+            "restaurant."
+          ],
+          "text": "I'd prefer the quieter restaurant."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_opinions_reasons_meaning",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "I like the first design too."
+        },
+        "options": [
+          "من هم طرح اول رو دوست دارم.",
+          "خیلی موافق نیستم چون قطار دیرتر ارزون‌تره.",
+          "فکر می‌کنم قطار زودتر بهتره چون خلوت‌تره.",
+          "موافقم. قبل از ناهار هم می‌رسه."
+        ],
+        "answer": {
+          "value": "من هم طرح اول رو دوست دارم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_opinions_reasons_listen2",
+      "data": {
+        "lesson_key": "a2-opinions-reasons-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مفهوم جمله را انتخاب کن.",
+          "audio_text": "I don't like the second one either."
+        },
+        "options": [
+          "من هم طرح دوم رو دوست ندارم.",
+          "فکر می‌کنم قطار زودتر بهتره چون خلوت‌تره.",
+          "موافقم. قبل از ناهار هم می‌رسه.",
+          "خیلی موافق نیستم چون قطار دیرتر ارزون‌تره."
+        ],
+        "answer": {
+          "value": "من هم طرح دوم رو دوست ندارم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    }
+  ]
+}

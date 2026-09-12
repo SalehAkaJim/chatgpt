@@ -1,0 +1,695 @@
+{
+  "batch_id": "en-us-a2-appointments-advice-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A2",
+  "curriculum_unit": "a2-appointments-advice",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a2_appointments_advice_appointment",
+      "data": {
+        "slug": "a2_appointments_advice_appointment",
+        "lesson_key": "a2-appointments-advice-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "appointment"
+        },
+        "translations": {
+          "fa": "وقت ملاقات"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_appointments_advice_appointment",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "lemma": "appointment",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_appointments_advice_appointment"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_appointments_advice_appointment",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "lexeme_ref": "lx_a2_appointments_advice_appointment",
+        "surface_form": "appointment",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_appointments_advice_available",
+      "data": {
+        "slug": "a2_appointments_advice_available",
+        "lesson_key": "a2-appointments-advice-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "available"
+        },
+        "translations": {
+          "fa": "خالی / در دسترس"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_appointments_advice_available",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "lemma": "available",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_appointments_advice_available"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_appointments_advice_available",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "lexeme_ref": "lx_a2_appointments_advice_available",
+        "surface_form": "available",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_appointments_advice_reschedule",
+      "data": {
+        "slug": "a2_appointments_advice_reschedule",
+        "lesson_key": "a2-appointments-advice-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "reschedule"
+        },
+        "translations": {
+          "fa": "تغییر زمان دادن"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_appointments_advice_reschedule",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "lemma": "reschedule",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_appointments_advice_reschedule"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_appointments_advice_reschedule",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "lexeme_ref": "lx_a2_appointments_advice_reschedule",
+        "surface_form": "reschedule",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_appointments_advice_dentist",
+      "data": {
+        "slug": "a2_appointments_advice_dentist",
+        "lesson_key": "a2-appointments-advice-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "dentist"
+        },
+        "translations": {
+          "fa": "دندان‌پزشک"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_appointments_advice_dentist",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "lemma": "dentist",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_appointments_advice_dentist"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_appointments_advice_dentist",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "lexeme_ref": "lx_a2_appointments_advice_dentist",
+        "surface_form": "dentist",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_appointments_advice_urgent",
+      "data": {
+        "slug": "a2_appointments_advice_urgent",
+        "lesson_key": "a2-appointments-advice-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "urgent"
+        },
+        "translations": {
+          "fa": "فوری"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_appointments_advice_urgent",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "lemma": "urgent",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_appointments_advice_urgent"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_appointments_advice_urgent",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "lexeme_ref": "lx_a2_appointments_advice_urgent",
+        "surface_form": "urgent",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_appointments_advice_advice",
+      "data": {
+        "slug": "a2_appointments_advice_advice",
+        "lesson_key": "a2-appointments-advice-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "advice"
+        },
+        "translations": {
+          "fa": "توصیه"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_appointments_advice_advice",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "lemma": "advice",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_appointments_advice_advice"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_appointments_advice_advice",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "lexeme_ref": "lx_a2_appointments_advice_advice",
+        "surface_form": "advice",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_appointments_advice_appointment",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "text": {
+          "en": "I'd like to make an appointment for this week."
+        },
+        "translations": {
+          "fa": "می‌خواهم برای این هفته وقت بگیرم."
+        },
+        "intent": "make_appointment",
+        "concept_refs": [
+          "a2_appointments_advice_appointment"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_appointments_advice_available",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "text": {
+          "en": "Is the dentist available on Friday morning?"
+        },
+        "translations": {
+          "fa": "دندان‌پزشک جمعه صبح وقت خالی دارد؟"
+        },
+        "intent": "ask_availability",
+        "concept_refs": [
+          "a2_appointments_advice_dentist",
+          "a2_appointments_advice_available"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_appointments_advice_reschedule",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "text": {
+          "en": "I need to reschedule my appointment."
+        },
+        "translations": {
+          "fa": "باید زمان وقتم را عوض کنم."
+        },
+        "intent": "reschedule",
+        "concept_refs": [
+          "a2_appointments_advice_reschedule",
+          "a2_appointments_advice_appointment"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_appointments_advice_urgent",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "text": {
+          "en": "It's not urgent, but I'd like to come in soon."
+        },
+        "translations": {
+          "fa": "فوری نیست، ولی دوست دارم زود بیام."
+        },
+        "intent": "describe_urgency",
+        "concept_refs": [
+          "a2_appointments_advice_urgent"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_appointments_advice_advice",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "text": {
+          "en": "You should avoid very cold drinks today."
+        },
+        "translations": {
+          "fa": "بهتره امروز نوشیدنی خیلی سرد نخوری."
+        },
+        "intent": "give_advice",
+        "concept_refs": [
+          "a2_appointments_advice_advice"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_appointments_advice_should_shouldnt",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "slug": "a2-appointments-advice-should-shouldnt",
+        "title": "should / shouldn't",
+        "rule_summary": "Use should and shouldn't for everyday advice.",
+        "explanation": {
+          "fa": "برای توصیه مثبت و منفی از should و shouldn't استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "You should rest today.",
+            "fa": "بهتره امروز استراحت کنی."
+          },
+          {
+            "en": "You shouldn't drive if you feel dizzy.",
+            "fa": "اگر سرگیجه داری بهتره رانندگی نکنی."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_appointments_advice_time_expressions",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "slug": "a2-appointments-advice-time-expressions",
+        "title": "Appointment time expressions",
+        "rule_summary": "Use on for days and dates and at for exact times.",
+        "explanation": {
+          "fa": "برای روز و تاریخ از on و برای ساعت دقیق از at استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "On Tuesday at three.",
+            "fa": "سه‌شنبه ساعت سه."
+          },
+          {
+            "en": "My appointment is on May 12.",
+            "fa": "وقتم دوازدهم می است."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_appointments_advice_make",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "title": "Making an appointment",
+        "setting": "clinic phone call",
+        "cefr": "A2",
+        "topic": "basic-health",
+        "characters": [
+          "Hana",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Hana",
+            "text": "Hi, I'd like to make an appointment with Dr. Lee.",
+            "translation_fa": "سلام، می‌خواهم با دکتر لی وقت بگیرم."
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "She's available Thursday afternoon or Friday morning.",
+            "translation_fa": "پنجشنبه بعدازظهر یا جمعه صبح وقت دارد."
+          },
+          {
+            "order": 3,
+            "speaker": "Hana",
+            "text": "Friday morning works better for me.",
+            "translation_fa": "جمعه صبح برای من بهتره."
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "How about 9:30?",
+            "translation_fa": "ساعت ۹:۳۰ چطوره؟"
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_appointments_advice_change",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "title": "Changing an appointment",
+        "setting": "clinic phone call",
+        "cefr": "A2",
+        "topic": "basic-health",
+        "characters": [
+          "Noor",
+          "David"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Noor",
+            "text": "I need to reschedule my appointment tomorrow.",
+            "translation_fa": "باید وقت فردام رو عوض کنم."
+          },
+          {
+            "order": 2,
+            "speaker": "David",
+            "text": "No problem. Is next Monday okay?",
+            "translation_fa": "مشکلی نیست. دوشنبه بعد خوبه؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Noor",
+            "text": "Yes. Do I have to come at the same time?",
+            "translation_fa": "بله. باید همان ساعت بیام؟"
+          },
+          {
+            "order": 4,
+            "speaker": "David",
+            "text": "No, we also have an afternoon time available.",
+            "translation_fa": "نه، بعدازظهر هم وقت خالی داریم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_appointments_advice_fill",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I need to ___ my appointment."
+        },
+        "options": [
+          "reschedule",
+          "available",
+          "urgent",
+          "dentist"
+        ],
+        "answer": {
+          "value": "reschedule"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_appointments_advice_listen",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و معنی درست را انتخاب کن.",
+          "audio_text": "Is the dentist available on Friday morning?"
+        },
+        "options": [
+          "دندان‌پزشک جمعه صبح وقت خالی دارد؟",
+          "می‌خواهم برای این هفته وقت بگیرم.",
+          "هیچ‌کدام از این‌ها درست نیست.",
+          "اطلاعات کافی نیست."
+        ],
+        "answer": {
+          "value": "دندان‌پزشک جمعه صبح وقت خالی دارد؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_appointments_advice_speak",
+      "data": {
+        "lesson_key": "a2-appointments-advice-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را به انگلیسی بگو: باید زمان وقتم را عوض کنم."
+        },
+        "answer": {
+          "expected_text": "I need to reschedule my appointment."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_appointments_advice_build",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "فوری نیست، ولی دوست دارم زود بیام.",
+          "tokens": [
+            "soon.",
+            "in",
+            "come",
+            "to",
+            "like",
+            "I'd",
+            "but",
+            "urgent,",
+            "not",
+            "It's"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "It's",
+            "not",
+            "urgent,",
+            "but",
+            "I'd",
+            "like",
+            "to",
+            "come",
+            "in",
+            "soon."
+          ],
+          "text": "It's not urgent, but I'd like to come in soon."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_appointments_advice_meaning",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "You should avoid very cold drinks today."
+        },
+        "options": [
+          "بهتره امروز نوشیدنی خیلی سرد نخوری.",
+          "باید زمان وقتم را عوض کنم.",
+          "می‌خواهم برای این هفته وقت بگیرم.",
+          "دندان‌پزشک جمعه صبح وقت خالی دارد؟"
+        ],
+        "answer": {
+          "value": "بهتره امروز نوشیدنی خیلی سرد نخوری."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_appointments_advice_listen2",
+      "data": {
+        "lesson_key": "a2-appointments-advice-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مفهوم جمله را انتخاب کن.",
+          "audio_text": "You should avoid very cold drinks today."
+        },
+        "options": [
+          "بهتره امروز نوشیدنی خیلی سرد نخوری.",
+          "می‌خواهم برای این هفته وقت بگیرم.",
+          "دندان‌پزشک جمعه صبح وقت خالی دارد؟",
+          "باید زمان وقتم را عوض کنم."
+        ],
+        "answer": {
+          "value": "بهتره امروز نوشیدنی خیلی سرد نخوری."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    }
+  ]
+}

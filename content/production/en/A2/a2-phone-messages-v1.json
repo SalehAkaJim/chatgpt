@@ -1,0 +1,712 @@
+{
+  "batch_id": "en-us-a2-phone-messages-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A2",
+  "curriculum_unit": "a2-phone-messages",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a2_phone_messages_voicemail",
+      "data": {
+        "slug": "a2_phone_messages_voicemail",
+        "lesson_key": "a2-phone-messages-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "voicemail"
+        },
+        "translations": {
+          "fa": "پیام صوتی"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_phone_messages_voicemail",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "lemma": "voicemail",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_phone_messages_voicemail"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_phone_messages_voicemail",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "lexeme_ref": "lx_a2_phone_messages_voicemail",
+        "surface_form": "voicemail",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_phone_messages_message",
+      "data": {
+        "slug": "a2_phone_messages_message",
+        "lesson_key": "a2-phone-messages-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "message"
+        },
+        "translations": {
+          "fa": "پیام"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_phone_messages_message",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "lemma": "message",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_phone_messages_message"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_phone_messages_message",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "lexeme_ref": "lx_a2_phone_messages_message",
+        "surface_form": "message",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_phone_messages_call_back",
+      "data": {
+        "slug": "a2_phone_messages_call_back",
+        "lesson_key": "a2-phone-messages-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "call back"
+        },
+        "translations": {
+          "fa": "تماس برگشتی گرفتن"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_phone_messages_call_back",
+      "data": {
+        "lesson_key": "a2-phone-messages-03",
+        "lemma": "call back",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrasal_verb",
+        "concept_refs": [
+          "a2_phone_messages_call_back"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_phone_messages_call_back",
+      "data": {
+        "lesson_key": "a2-phone-messages-03",
+        "lexeme_ref": "lx_a2_phone_messages_call_back",
+        "surface_form": "call back",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_phone_messages_hold",
+      "data": {
+        "slug": "a2_phone_messages_hold",
+        "lesson_key": "a2-phone-messages-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "hold"
+        },
+        "translations": {
+          "fa": "پشت خط ماندن"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_phone_messages_hold",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "lemma": "hold",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_phone_messages_hold"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_phone_messages_hold",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "lexeme_ref": "lx_a2_phone_messages_hold",
+        "surface_form": "hold",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_phone_messages_line",
+      "data": {
+        "slug": "a2_phone_messages_line",
+        "lesson_key": "a2-phone-messages-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "line"
+        },
+        "translations": {
+          "fa": "خط تلفن"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_phone_messages_line",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "lemma": "line",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_phone_messages_line"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_phone_messages_line",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "lexeme_ref": "lx_a2_phone_messages_line",
+        "surface_form": "line",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_phone_messages_spell",
+      "data": {
+        "slug": "a2_phone_messages_spell",
+        "lesson_key": "a2-phone-messages-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "spell"
+        },
+        "translations": {
+          "fa": "هجی کردن"
+        },
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_phone_messages_spell",
+      "data": {
+        "lesson_key": "a2-phone-messages-03",
+        "lemma": "spell",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_phone_messages_spell"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_phone_messages_spell",
+      "data": {
+        "lesson_key": "a2-phone-messages-03",
+        "lexeme_ref": "lx_a2_phone_messages_spell",
+        "surface_form": "spell",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_phone_messages_hold",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "text": {
+          "en": "Could you hold for a moment, please?"
+        },
+        "translations": {
+          "fa": "ممکنه یک لحظه پشت خط بمونید؟"
+        },
+        "intent": "ask_hold",
+        "concept_refs": [
+          "a2_phone_messages_hold"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_phone_messages_line",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "text": {
+          "en": "The line is bad. Could you say that again?"
+        },
+        "translations": {
+          "fa": "خط خوب نیست. می‌شه دوباره بگید؟"
+        },
+        "intent": "handle_bad_connection",
+        "concept_refs": [
+          "a2_phone_messages_line"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_phone_messages_message",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "text": {
+          "en": "Can I leave a message for Ms. Carter?"
+        },
+        "translations": {
+          "fa": "می‌تونم برای خانم کارتر پیام بذارم؟"
+        },
+        "intent": "leave_message",
+        "concept_refs": [
+          "a2_phone_messages_message"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_phone_messages_callback",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "text": {
+          "en": "Please ask him to call me back after four."
+        },
+        "translations": {
+          "fa": "لطفاً ازش بخواهید بعد از چهار با من تماس بگیره."
+        },
+        "intent": "request_callback",
+        "concept_refs": [
+          "a2_phone_messages_call_back"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_phone_messages_spell",
+      "data": {
+        "lesson_key": "a2-phone-messages-03",
+        "text": {
+          "en": "Could you spell your last name for me?"
+        },
+        "translations": {
+          "fa": "ممکنه نام خانوادگی‌تون رو برام هجی کنید؟"
+        },
+        "intent": "confirm_detail",
+        "concept_refs": [
+          "a2_phone_messages_spell"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_phone_messages_voicemail",
+      "data": {
+        "lesson_key": "a2-phone-messages-03",
+        "text": {
+          "en": "I left you a voicemail this morning."
+        },
+        "translations": {
+          "fa": "امروز صبح برات پیام صوتی گذاشتم."
+        },
+        "intent": "refer_to_message",
+        "concept_refs": [
+          "a2_phone_messages_voicemail"
+        ],
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_phone_messages_could_phone",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "slug": "a2-phone-messages-could-phone",
+        "title": "Could you ...? on the phone",
+        "rule_summary": "Use Could you ...? for polite requests during a call.",
+        "explanation": {
+          "fa": "برای درخواست مؤدبانه در تماس تلفنی از Could you ...? استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Could you repeat that?",
+            "fa": "می‌شه دوباره بگید؟"
+          },
+          {
+            "en": "Could you hold for a moment?",
+            "fa": "می‌شه یک لحظه پشت خط بمونید؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_phone_messages_object_pronouns",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "slug": "a2-phone-messages-object-pronouns",
+        "title": "Object pronouns in messages",
+        "rule_summary": "Use me, him, her, us, and them after verbs and prepositions.",
+        "explanation": {
+          "fa": "بعد از فعل‌ها و حروف اضافه از ضمیرهای مفعولی مثل me، him و her استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Please call me back.",
+            "fa": "لطفاً دوباره با من تماس بگیرید."
+          },
+          {
+            "en": "Can you give her the message?",
+            "fa": "می‌تونی پیام رو بهش بدی؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_phone_messages_office",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "title": "Taking a message",
+        "setting": "office phone",
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "characters": [
+          "Rosa",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Rosa",
+            "text": "Hello, could I speak to Mr. Green?",
+            "translation_fa": "سلام، می‌تونم با آقای گرین صحبت کنم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "I'm sorry, he's in a meeting.",
+            "translation_fa": "متأسفم، جلسه است."
+          },
+          {
+            "order": 3,
+            "speaker": "Rosa",
+            "text": "Can I leave a message?",
+            "translation_fa": "می‌تونم پیام بذارم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "Of course. What's your name?",
+            "translation_fa": "حتماً. اسمتون چیه؟"
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_phone_messages_connection",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "title": "A difficult phone connection",
+        "setting": "phone call",
+        "cefr": "A2",
+        "topic": "simple-messages",
+        "characters": [
+          "Lina",
+          "Tom"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lina",
+            "text": "Hello? Tom? The line is really bad.",
+            "translation_fa": "الو؟ تام؟ خط خیلی بده."
+          },
+          {
+            "order": 2,
+            "speaker": "Tom",
+            "text": "I can hear you now.",
+            "translation_fa": "الان صدات رو می‌شنوم."
+          },
+          {
+            "order": 3,
+            "speaker": "Lina",
+            "text": "Could you say the address again?",
+            "translation_fa": "می‌شه آدرس رو دوباره بگی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Tom",
+            "text": "Sure. It's 214 Pine Street.",
+            "translation_fa": "حتماً. ۲۱۴ پاین استریت."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_phone_messages_fill",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Please ask him to call me ___."
+        },
+        "options": [
+          "back",
+          "again to",
+          "returning",
+          "behind"
+        ],
+        "answer": {
+          "value": "back"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_phone_messages_listen",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و معنی درست را انتخاب کن.",
+          "audio_text": "The line is bad. Could you say that again?"
+        },
+        "options": [
+          "خط خوب نیست. می‌شه دوباره بگید؟",
+          "ممکنه یک لحظه پشت خط بمونید؟",
+          "هیچ‌کدام از این‌ها درست نیست.",
+          "اطلاعات کافی نیست."
+        ],
+        "answer": {
+          "value": "خط خوب نیست. می‌شه دوباره بگید؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_phone_messages_speak",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را به انگلیسی بگو: می‌تونم برای خانم کارتر پیام بذارم؟"
+        },
+        "answer": {
+          "expected_text": "Can I leave a message for Ms. Carter?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_phone_messages_build",
+      "data": {
+        "lesson_key": "a2-phone-messages-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "لطفاً ازش بخواهید بعد از چهار با من تماس بگیره.",
+          "tokens": [
+            "four.",
+            "after",
+            "back",
+            "me",
+            "call",
+            "to",
+            "him",
+            "ask",
+            "Please"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Please",
+            "ask",
+            "him",
+            "to",
+            "call",
+            "me",
+            "back",
+            "after",
+            "four."
+          ],
+          "text": "Please ask him to call me back after four."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_phone_messages_meaning",
+      "data": {
+        "lesson_key": "a2-phone-messages-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "معنی درست جمله کدام است؟",
+          "text": "Could you spell your last name for me?"
+        },
+        "options": [
+          "ممکنه نام خانوادگی‌تون رو برام هجی کنید؟",
+          "می‌تونم برای خانم کارتر پیام بذارم؟",
+          "ممکنه یک لحظه پشت خط بمونید؟",
+          "خط خوب نیست. می‌شه دوباره بگید؟"
+        ],
+        "answer": {
+          "value": "ممکنه نام خانوادگی‌تون رو برام هجی کنید؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_phone_messages_listen2",
+      "data": {
+        "lesson_key": "a2-phone-messages-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مفهوم جمله را انتخاب کن.",
+          "audio_text": "I left you a voicemail this morning."
+        },
+        "options": [
+          "امروز صبح برات پیام صوتی گذاشتم.",
+          "ممکنه یک لحظه پشت خط بمونید؟",
+          "خط خوب نیست. می‌شه دوباره بگید؟",
+          "می‌تونم برای خانم کارتر پیام بذارم؟"
+        ],
+        "answer": {
+          "value": "امروز صبح برات پیام صوتی گذاشتم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved"
+      }
+    }
+  ]
+}
