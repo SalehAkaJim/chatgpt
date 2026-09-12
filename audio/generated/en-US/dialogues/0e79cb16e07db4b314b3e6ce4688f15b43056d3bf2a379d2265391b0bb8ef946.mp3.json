@@ -1,0 +1,79 @@
+{
+  "source_text_hash": "15fb609d8d417b8571a80e2226955b977b0338b18c1131838100570a236f8f78",
+  "voice_id": "uYXf8XasLslADfZ2MB4u",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "0e79cb16e07db4b314b3e6ce4688f15b43056d3bf2a379d2265391b0bb8ef946",
+  "voice_key": "character:claire:female_professional",
+  "voice_name": "Hope - Bubbly, Gossipy and Girly",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "cba2a2fdedd311f823dc4e1e8b302b2e78536b89d6643c52b93af920416f58bf",
+  "duration_ms": 1750,
+  "generated_at": "2026-09-12T10:41:11.308868+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c1014d02-bc17-525f-8c4c-50ea4db05799",
+      "entity_key": "d_b2_accommodation_issues_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "82b25854-0e24-5e7b-8c6c-0124e0c2bda6",
+      "entity_key": "d_b2_community_life_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "27017410-2c2c-5a0b-bd58-385371d0ed08",
+      "entity_key": "d_b2_comparing_alternatives_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5b193d5c-472a-5a87-9e49-9c75cb673dc8",
+      "entity_key": "d_b2_future_possibilities_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "fac9aaea-bc5e-5634-b0cd-29ab4cb5a3c8",
+      "entity_key": "d_b2_health_history_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5d0294b7-1ea2-5f0c-8068-2c638ee04eb5",
+      "entity_key": "d_b2_media_reviews_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "81d5493d-aff6-5feb-b619-96d4444b463a",
+      "entity_key": "d_b2_product_research_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "cba67a24-41a9-596c-8a04-caf21a974f69",
+      "entity_key": "d_b2_projects_deadlines_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "88f24b19-d3fb-5865-b072-0fb623d63e34",
+      "entity_key": "d_b2_relaying_information_scene_3:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "d320eeca-375b-5c49-8d09-e2c11c1541b9",
+      "entity_key": "d_b2_social_tact_scene_3:3"
+    }
+  ]
+}

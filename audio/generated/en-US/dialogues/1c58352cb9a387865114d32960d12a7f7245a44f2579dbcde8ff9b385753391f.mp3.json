@@ -1,0 +1,79 @@
+{
+  "source_text_hash": "7a26fd3b32640a13444cee804a0601d88575919245e92f83f30f9f744c65c9e3",
+  "voice_id": "OYTbf65OHHFELVut7v2H",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1c58352cb9a387865114d32960d12a7f7245a44f2579dbcde8ff9b385753391f",
+  "voice_key": "character:hana:female_calm",
+  "voice_name": "Hope - Natural, Clear and Calm",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "907ffeab7079a649829d3643c4f673b7e5c58affef8ef3b255e41fd2ccc45d5c",
+  "duration_ms": 2037,
+  "generated_at": "2026-09-12T10:41:31.170922+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "cf490a74-5882-5307-acde-7e7834321457",
+      "entity_key": "d_b2_complaints_escalation_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "02f73f91-3482-5a4a-a8c0-ae50b811b231",
+      "entity_key": "d_b2_food_dietary_needs_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4730c5c8-a910-5fc1-ad14-1defa09a0087",
+      "entity_key": "d_b2_integrated_capstone_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "bd01a830-798f-5dcf-aa73-d77136e7f06f",
+      "entity_key": "d_b2_learning_strategies_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c51f00fd-d308-5b00-aec1-3f248b148970",
+      "entity_key": "d_b2_meetings_decisions_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "2a481732-30f7-56a8-95c2-b20b2cae15d6",
+      "entity_key": "d_b2_negotiating_arrangements_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "46cef029-6be7-5e81-8cb3-8345f963550a",
+      "entity_key": "d_b2_reasons_results_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "dc1b7757-ceaa-5b66-a587-c217d56bd55b",
+      "entity_key": "d_b2_relationships_misunderstandings_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "15670ea9-f77f-5e15-8be7-964b3bafd63e",
+      "entity_key": "d_b2_summarizing_sources_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4ea13527-20cc-5894-9d03-cc7590b7fe12",
+      "entity_key": "d_b2_travel_disruptions_scene_3:1"
+    }
+  ]
+}

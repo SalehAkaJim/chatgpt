@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "8f4fc51f18241550cf19206163887dc1fbac84b8658501efdc53f773e34296b7",
+  "voice_id": "6OzrBCQf8cjERkYgzSg8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "b74110a7c245bdf7f538e7d6c50be41434343b4ca96aff8062442c24bc88506f",
+  "voice_key": "character:amir:male_warm",
+  "voice_name": "Young Jamal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "053b357e1a3aa18e0bacfb0b285ed5990cb736dd15cb86ba589245308db1c1ab",
+  "duration_ms": 1933,
+  "generated_at": "2026-09-12T10:43:50.447703+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "b114acf1-d9b8-5883-8e43-2f0a8839b91f",
+      "entity_key": "d_b2_detailed_personal_stories_missed_train:4"
+    }
+  ]
+}

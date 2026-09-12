@@ -1,0 +1,79 @@
+{
+  "source_text_hash": "854933c125306d562c7012da6c3ec867dc230163563956a6957cdb3cb0ba126f",
+  "voice_id": "jqcCZkN6Knx8BJ5TBdYR",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "4bd053e3f3db67577ce7912fb889c0afac7dbfac5b141af94e07827a6fb03fc9",
+  "voice_key": "character:fatima:female_professional",
+  "voice_name": "Zara – The Warm, Real-World Conversationalist",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "516f59426ab5cea18fb7301616ceebb8020dd010e61b3aa11bea9cfc0ba211b9",
+  "duration_ms": 1933,
+  "generated_at": "2026-09-12T10:42:15.356707+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "752bf3dd-f0ad-5ee8-ac02-6105d21bc15c",
+      "entity_key": "d_b2_agreement_disagreement_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "16877309-3d08-5bc8-8a99-0296af3e112b",
+      "entity_key": "d_b2_digital_communication_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "db28cd6d-3c85-5e80-8c44-85236b8d058f",
+      "entity_key": "d_b2_explaining_presenting_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "880e93a9-e240-5aab-9db9-c65120dda010",
+      "entity_key": "d_b2_goals_tradeoffs_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "33476426-0582-5a44-a7d2-d74ea41cf268",
+      "entity_key": "d_b2_independent_travel_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7fab50a2-e305-5b56-a0b9-811fe8b83dd8",
+      "entity_key": "d_b2_money_budgeting_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "182475ab-90bb-59ad-894c-e8cb82d59b58",
+      "entity_key": "d_b2_multi_step_problem_solving_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "9949185e-77cd-57cc-9577-a4f2c589b6a4",
+      "entity_key": "d_b2_problem_solving_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "dfa29681-501b-55e2-be36-b40eef037163",
+      "entity_key": "d_b2_study_challenges_scene_2:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "ac3a1edf-334a-5241-9a00-5e577397e0b2",
+      "entity_key": "d_b2_work_responsibilities_scene_2:3"
+    }
+  ]
+}

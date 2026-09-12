@@ -1,0 +1,39 @@
+{
+  "source_text_hash": "688dcbbc70231f9d9b19de3dec900d0167b13b2407586f98eeac921328ecce56",
+  "voice_id": "7YaUDeaStRuoYg3FKsmU",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "321428aea13cd74cae98cd0df59269e7eacb7ab06a07b1774b1981f758fcdaa5",
+  "voice_key": "character:ari:female_bright",
+  "voice_name": "Callie - Playful, Inviting and Friendly",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "0f1397243ea23d3aa8f9d4004a979ad3f87e23b33b3b51a0f255711e5ba3aad5",
+  "duration_ms": 1515,
+  "generated_at": "2026-09-12T10:41:53.624333+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "cd48714c-cf0c-5be6-815d-119d56947945",
+      "entity_key": "d_b2_integrated_capstone_scene_4:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7f24904b-7aa5-577f-9f89-92b284377120",
+      "entity_key": "d_b2_multi_step_problem_solving_scene_4:3"
+    }
+  ]
+}

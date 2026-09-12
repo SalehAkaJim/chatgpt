@@ -1,0 +1,79 @@
+{
+  "source_text_hash": "9d9d5cb8ebebafe9c70720292d8e72570e8bee6399549f49ab00b570d6a2c95f",
+  "voice_id": "kdnRe2koJdOK4Ovxn2DI",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.98
+  },
+  "provider": "elevenlabs",
+  "audio_key": "369288f69bdac4aea2ab013f55211ece182f36fdf369886ffa52fb6c08f0d712",
+  "voice_key": "character:mei:female_professional",
+  "voice_name": "Eryn - Genuine, Friendly and Natural",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "04711702aabe2f30ee5468b6ea4c2e56d76e9904db1d82b8c94a2a11114e458e",
+  "duration_ms": 1906,
+  "generated_at": "2026-09-12T10:42:01.963348+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "88e74438-b94e-55a6-b619-7bbffa28a32f",
+      "entity_key": "d_b2_accommodation_issues_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "fab0a968-0f08-51f3-ac4d-c52204103bd2",
+      "entity_key": "d_b2_community_life_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "6408bea1-7198-5907-8cd8-baec8a69dca6",
+      "entity_key": "d_b2_comparing_alternatives_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "17668be5-3b58-5dd9-a896-1093aef5a1ea",
+      "entity_key": "d_b2_future_possibilities_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "9d83c880-8854-53ee-8ccb-0a117168e766",
+      "entity_key": "d_b2_health_history_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "e91b5791-fdc2-5c09-9946-18e5f5a60e65",
+      "entity_key": "d_b2_media_reviews_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "82cbb13a-1fe9-5c62-b34a-e43511fd974e",
+      "entity_key": "d_b2_product_research_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "77544dc8-e264-502b-8c14-ba9b10c0f228",
+      "entity_key": "d_b2_projects_deadlines_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4768b8fa-a1a0-5c31-94f8-b0ae797d96b4",
+      "entity_key": "d_b2_relaying_information_scene_1:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "2bfefa08-9b54-5e59-b672-4c539ce028fe",
+      "entity_key": "d_b2_social_tact_scene_1:3"
+    }
+  ]
+}

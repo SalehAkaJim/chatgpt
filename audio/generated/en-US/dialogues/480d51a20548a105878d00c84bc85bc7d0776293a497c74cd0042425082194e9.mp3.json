@@ -1,0 +1,79 @@
+{
+  "source_text_hash": "dcd2d4428b77c89f1e520be0868e6f7e7234d91405b93ebc630123edbd9013cb",
+  "voice_id": "gJx1vCzNCD1EQHT212Ls",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "480d51a20548a105878d00c84bc85bc7d0776293a497c74cd0042425082194e9",
+  "voice_key": "character:maya:female_warm",
+  "voice_name": "Ava – Eager, Helpful and Understanding",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "834afb4370ffb932777713d390c72ed9f04fd15ec09a5ac39aa67fef636d30b8",
+  "duration_ms": 1985,
+  "generated_at": "2026-09-12T10:42:12.705485+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "2dbf5e66-4d07-50f6-a68a-6b0a3bcaf17b",
+      "entity_key": "d_b2_agreement_disagreement_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7ff2a56c-19f7-5021-99f2-45d7879b6f8c",
+      "entity_key": "d_b2_digital_communication_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4b51f629-6526-515f-abec-364556632c90",
+      "entity_key": "d_b2_explaining_presenting_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "53226862-59a9-5f01-b124-622d2c7ceb42",
+      "entity_key": "d_b2_goals_tradeoffs_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "86b5f395-da41-5db6-a283-939f3d5937bb",
+      "entity_key": "d_b2_independent_travel_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "607e1892-f8fd-59b5-bd03-236f9277aaec",
+      "entity_key": "d_b2_money_budgeting_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "0b07b48c-8b18-5ccb-948b-595b031ccf37",
+      "entity_key": "d_b2_multi_step_problem_solving_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "e9f6d4cb-b149-59f0-b387-90ecce6b9390",
+      "entity_key": "d_b2_problem_solving_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "12431951-3b8c-5918-ac1b-21e3e5461270",
+      "entity_key": "d_b2_study_challenges_scene_3:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f7075416-c7d5-5ae3-bb7b-4a92cb3bb128",
+      "entity_key": "d_b2_work_responsibilities_scene_3:1"
+    }
+  ]
+}

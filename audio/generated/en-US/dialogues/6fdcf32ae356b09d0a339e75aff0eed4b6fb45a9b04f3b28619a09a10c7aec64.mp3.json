@@ -1,0 +1,79 @@
+{
+  "source_text_hash": "7a26fd3b32640a13444cee804a0601d88575919245e92f83f30f9f744c65c9e3",
+  "voice_id": "qBDvhofpxp92JgXJxDjB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "6fdcf32ae356b09d0a339e75aff0eed4b6fb45a9b04f3b28619a09a10c7aec64",
+  "voice_key": "character:ella:female_warm",
+  "voice_name": "Lily Wolff - Expressive and Kind",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8437ea0b768493af3b382ddcb156984a5f9b1d437236c140d6dc997f89fa4bff",
+  "duration_ms": 2089,
+  "generated_at": "2026-09-12T10:42:47.076868+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "2bdb1292-464d-5649-95a9-bd52124ff7e7",
+      "entity_key": "d_b2_environment_choices_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "8fee5a7e-f155-599f-b8a8-91c5d17d72ac",
+      "entity_key": "d_b2_hypothetical_choices_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "587816f3-6061-5029-ae9d-bb6729a23a3b",
+      "entity_key": "d_b2_job_applications_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "3e5d959f-9902-5aa3-90cb-183f580017b7",
+      "entity_key": "d_b2_local_recommendations_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c4ef5d89-efdb-5eef-a19b-9c5a1d77099f",
+      "entity_key": "d_b2_news_discussion_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "57f67264-51f8-54de-ab43-c26e49036b7f",
+      "entity_key": "d_b2_nuanced_opinions_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "2d70fd24-fc7a-5b9c-ae24-5225286e8532",
+      "entity_key": "d_b2_practical_writing_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "93360d76-399b-50cd-8d6d-cf5e36c06637",
+      "entity_key": "d_b2_recommendations_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "d010ead2-0622-5eb7-a843-4f25ea98c499",
+      "entity_key": "d_b2_services_repairs_scene_1:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "d9b3988b-1dbb-542a-933b-96498a2a6f6f",
+      "entity_key": "d_b2_wellbeing_lifestyle_scene_1:1"
+    }
+  ]
+}
