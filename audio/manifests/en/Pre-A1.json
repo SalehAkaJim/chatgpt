@@ -1,0 +1,2375 @@
+{
+  "manifest_version": 1,
+  "level": "Pre-A1",
+  "locale": "en-US",
+  "provider": "elevenlabs",
+  "generation": {
+    "model_id": "eleven_multilingual_v2",
+    "preferred_output_format": "mp3_44100_192",
+    "fallback_output_format": "mp3_44100_128",
+    "concurrency": 2
+  },
+  "missing_character_profiles": [],
+  "items": [
+    {
+      "audio_key": "41994f19de8ed2f10fec15041281edffd2cd59ffd0987717d156dbe82b16db22",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm Nina.",
+      "source_text_hash": "ff70c7ac95663d0237a01a5adb17b6a3517ac255fd062b0ccec372a024db6c30",
+      "voice_key": "character:nina:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "e541a84e-b8c7-513f-ac3a-81526a0df8fa",
+          "entity_key": "d_pre_capstone_meeting:5"
+        }
+      ],
+      "metadata": {
+        "character": "nina",
+        "dialogue": "d_pre_capstone_meeting",
+        "turn": 5
+      },
+      "relative_path": "audio/generated/en-US/dialogues/41994f19de8ed2f10fec15041281edffd2cd59ffd0987717d156dbe82b16db22.mp3"
+    },
+    {
+      "audio_key": "4edbabe40e599feacae7526527a572ebe485cd0c6706ebca13ab598635ad7696",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "What's your name?",
+      "source_text_hash": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "voice_key": "character:nina:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "3d207f19-bc4d-540a-b169-8a1a2ad25a18",
+          "entity_key": "d_pre_capstone_meeting:3"
+        }
+      ],
+      "metadata": {
+        "character": "nina",
+        "dialogue": "d_pre_capstone_meeting",
+        "turn": 3
+      },
+      "relative_path": "audio/generated/en-US/dialogues/4edbabe40e599feacae7526527a572ebe485cd0c6706ebca13ab598635ad7696.mp3"
+    },
+    {
+      "audio_key": "4f12b651adb48fcf3d4e3874c952d6104dee1286f8c9044a5c4aaec51753d9ff",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Thanks.",
+      "source_text_hash": "f51bead488e14b656af3a13e33eb1d6fa9580832cbb9d7a20061f84c4b1c160f",
+      "voice_key": "character:ben:bright_social",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, energetic but natural American English for friendly social dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.85,
+          "style": 0.24,
+          "use_speaker_boost": true,
+          "speed": 1.02
+        },
+        "profile_key": "bright_social"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "bfc1081d-9836-5412-93a7-89d8fe169c22",
+          "entity_key": "d_pre_water_offer:4"
+        }
+      ],
+      "metadata": {
+        "character": "ben",
+        "dialogue": "d_pre_water_offer",
+        "turn": 4
+      },
+      "relative_path": "audio/generated/en-US/dialogues/4f12b651adb48fcf3d4e3874c952d6104dee1286f8c9044a5c4aaec51753d9ff.mp3"
+    },
+    {
+      "audio_key": "516a0714a756e46c7aab937b9d2259e063eedd6bf4e31269bb7779e6a729dd08",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Yes. S-A-M.",
+      "source_text_hash": "f06cb7d99930fb835b0b34f8f15022cd51c51bf050ea17bfb25631bca32daf74",
+      "voice_key": "character:kai:professional_neutral",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional American English; confident, clean and highly intelligible.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.7,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.98
+        },
+        "profile_key": "professional_neutral"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "064beba9-9806-56af-b5b7-d12830202c04",
+          "entity_key": "d_pre_spell_name:2"
+        }
+      ],
+      "metadata": {
+        "character": "kai",
+        "dialogue": "d_pre_spell_name",
+        "turn": 2
+      },
+      "relative_path": "audio/generated/en-US/dialogues/516a0714a756e46c7aab937b9d2259e063eedd6bf4e31269bb7779e6a729dd08.mp3"
+    },
+    {
+      "audio_key": "51afabe1727640ac9a8fbb7b0f386a78ac61db8f8540a792086f056b6ba8fb08",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "S-A-M. Sam.",
+      "source_text_hash": "511f886dc17710b915e45077adf2b0ca2db16ff5b4381e72867881c6cef0d4b8",
+      "voice_key": "character:nora:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "6eb9b2ac-7e3d-5a4b-8dc9-dcfbc5e3e9d3",
+          "entity_key": "d_pre_spell_name:3"
+        }
+      ],
+      "metadata": {
+        "character": "nora",
+        "dialogue": "d_pre_spell_name",
+        "turn": 3
+      },
+      "relative_path": "audio/generated/en-US/dialogues/51afabe1727640ac9a8fbb7b0f386a78ac61db8f8540a792086f056b6ba8fb08.mp3"
+    },
+    {
+      "audio_key": "5f7c73e5b865637b31b86ab53988b286906e4ae1d20a82a1c49a65e69c55f18a",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Bye!",
+      "source_text_hash": "c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed",
+      "voice_key": "character:arman:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "58a98258-bd41-58f9-acd8-9a249146e131",
+          "entity_key": "d_pre_capstone_meeting:6"
+        }
+      ],
+      "metadata": {
+        "character": "arman",
+        "dialogue": "d_pre_capstone_meeting",
+        "turn": 6
+      },
+      "relative_path": "audio/generated/en-US/dialogues/5f7c73e5b865637b31b86ab53988b286906e4ae1d20a82a1c49a65e69c55f18a.mp3"
+    },
+    {
+      "audio_key": "667b806cba985df201e5cc282b1117c7944d8069c197986f9df3137804f3981a",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Sam?",
+      "source_text_hash": "9e1e3c1e0c77d7d57762e95bb12833cc640f0074343f17ee5201a75adc09d304",
+      "voice_key": "character:nora:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "707756c7-e75c-5a44-9356-7365cd4b5e03",
+          "entity_key": "d_pre_spell_name:1"
+        }
+      ],
+      "metadata": {
+        "character": "nora",
+        "dialogue": "d_pre_spell_name",
+        "turn": 1
+      },
+      "relative_path": "audio/generated/en-US/dialogues/667b806cba985df201e5cc282b1117c7944d8069c197986f9df3137804f3981a.mp3"
+    },
+    {
+      "audio_key": "67b3c5c964d6ace61af7dde26f07616ea7cfbba5f93e318a8b18e166cf3eb28b",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Hi!",
+      "source_text_hash": "ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8",
+      "voice_key": "character:arman:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "20761349-5bcc-5760-98de-b2ae1db26a0a",
+          "entity_key": "d_pre_capstone_meeting:2"
+        }
+      ],
+      "metadata": {
+        "character": "arman",
+        "dialogue": "d_pre_capstone_meeting",
+        "turn": 2
+      },
+      "relative_path": "audio/generated/en-US/dialogues/67b3c5c964d6ace61af7dde26f07616ea7cfbba5f93e318a8b18e166cf3eb28b.mp3"
+    },
+    {
+      "audio_key": "80264566a99f5cb56578673e94db15d6fb4249661f39d913a566ab5eb59a1ba1",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "My name is Ali.",
+      "source_text_hash": "93dcd29592078477d5e87c6289a33f7dbc8711eeed28451a2d626fbc10c287dc",
+      "voice_key": "character:ali:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "75c13d88-0756-5595-92a0-98559a092852",
+          "entity_key": "d_pre_names_two:2"
+        }
+      ],
+      "metadata": {
+        "character": "ali",
+        "dialogue": "d_pre_names_two",
+        "turn": 2
+      },
+      "relative_path": "audio/generated/en-US/dialogues/80264566a99f5cb56578673e94db15d6fb4249661f39d913a566ab5eb59a1ba1.mp3"
+    },
+    {
+      "audio_key": "8ab1582f6915842ae7b395ca4282094beb60fafb92fd3de6ccfdb5c2e9e6f370",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Here.",
+      "source_text_hash": "2e25cc8c6bc71f7ea45a4d02973326d901a43b14491a7458d3bac6fe8b5a1086",
+      "voice_key": "character:lina:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "db6462d3-c342-562e-b11e-06c74f4bec83",
+          "entity_key": "d_pre_water_offer:3"
+        }
+      ],
+      "metadata": {
+        "character": "lina",
+        "dialogue": "d_pre_water_offer",
+        "turn": 3
+      },
+      "relative_path": "audio/generated/en-US/dialogues/8ab1582f6915842ae7b395ca4282094beb60fafb92fd3de6ccfdb5c2e9e6f370.mp3"
+    },
+    {
+      "audio_key": "8bb10aa4baf3d3215b82259a89216fcf52f7ed3d6bda1391c18a90597715968e",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Hello!",
+      "source_text_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+      "voice_key": "character:mia:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "8e5ec1a6-e320-52bc-b631-cc0bcb2ed4e5",
+          "entity_key": "d_pre_greeting_door:1"
+        }
+      ],
+      "metadata": {
+        "character": "mia",
+        "dialogue": "d_pre_greeting_door",
+        "turn": 1
+      },
+      "relative_path": "audio/generated/en-US/dialogues/8bb10aa4baf3d3215b82259a89216fcf52f7ed3d6bda1391c18a90597715968e.mp3"
+    },
+    {
+      "audio_key": "90e32d2c2b9b4a7062ab8f66c6c1c623b078507ee3cba6616f4a50671ce00216",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Hi! I'm Sara.",
+      "source_text_hash": "dd15818e7b84e73730d2bad3aed9f4d132edfe6a4782327d38828d5153196d24",
+      "voice_key": "character:sara:professional_neutral",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional American English; confident, clean and highly intelligible.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.7,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.98
+        },
+        "profile_key": "professional_neutral"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "cadfae9f-cd2c-5bd1-9b34-4202b92f47a4",
+          "entity_key": "d_pre_names_one:1"
+        }
+      ],
+      "metadata": {
+        "character": "sara",
+        "dialogue": "d_pre_names_one",
+        "turn": 1
+      },
+      "relative_path": "audio/generated/en-US/dialogues/90e32d2c2b9b4a7062ab8f66c6c1c623b078507ee3cba6616f4a50671ce00216.mp3"
+    },
+    {
+      "audio_key": "96fa1c452c829c6ec522fa5b6c467f1b081d666baf414273d611c621f2e7edc1",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Water?",
+      "source_text_hash": "68b84dafd06bb7ac0b411d0bc4c0a4a982423ab56831bcbf63e797255dcebee0",
+      "voice_key": "character:lina:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "a769e7c3-bb9a-53c6-9659-3c1e1c77c01b",
+          "entity_key": "d_pre_water_offer:1"
+        }
+      ],
+      "metadata": {
+        "character": "lina",
+        "dialogue": "d_pre_water_offer",
+        "turn": 1
+      },
+      "relative_path": "audio/generated/en-US/dialogues/96fa1c452c829c6ec522fa5b6c467f1b081d666baf414273d611c621f2e7edc1.mp3"
+    },
+    {
+      "audio_key": "9747e0c6f4ed4814f4436944125cca808e3dfab5209ac2ff03685c36a8a05062",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Yes, please.",
+      "source_text_hash": "2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8",
+      "voice_key": "character:ben:bright_social",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, energetic but natural American English for friendly social dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.85,
+          "style": 0.24,
+          "use_speaker_boost": true,
+          "speed": 1.02
+        },
+        "profile_key": "bright_social"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "a34c9d35-397d-5342-a00d-9afb290f324a",
+          "entity_key": "d_pre_water_offer:2"
+        }
+      ],
+      "metadata": {
+        "character": "ben",
+        "dialogue": "d_pre_water_offer",
+        "turn": 2
+      },
+      "relative_path": "audio/generated/en-US/dialogues/9747e0c6f4ed4814f4436944125cca808e3dfab5209ac2ff03685c36a8a05062.mp3"
+    },
+    {
+      "audio_key": "99c54babc48e0cac5c2b17d060250f51e1d5de5f0850bfe91289e10ff03c68bd",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Hi! I'm Omid.",
+      "source_text_hash": "696fb64b000936b6e5ab2db9740ee4d9c8536f0bbc86200a50ee6733b1d17e37",
+      "voice_key": "character:omid:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d92e9c87-b73f-57b8-a053-5abec26322c8",
+          "entity_key": "d_pre_names_one:2"
+        }
+      ],
+      "metadata": {
+        "character": "omid",
+        "dialogue": "d_pre_names_one",
+        "turn": 2
+      },
+      "relative_path": "audio/generated/en-US/dialogues/99c54babc48e0cac5c2b17d060250f51e1d5de5f0850bfe91289e10ff03c68bd.mp3"
+    },
+    {
+      "audio_key": "9dae0ff6b73c21a344ae0706639854fa6a96718d743f6f5135d0228d467ae08b",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Goodbye!",
+      "source_text_hash": "1cb7b221b7adda1cf4c4724b32369394580480c84ab835795d608ac59aa13002",
+      "voice_key": "character:noah:calm_clear",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm, precise American English with excellent articulation for practical conversations.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.66,
+          "similarity_boost": 0.88,
+          "style": 0.08,
+          "use_speaker_boost": true,
+          "speed": 0.98
+        },
+        "profile_key": "calm_clear"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "8394f4f9-1467-5523-ba59-27954dad753e",
+          "entity_key": "d_pre_bye_class:2"
+        }
+      ],
+      "metadata": {
+        "character": "noah",
+        "dialogue": "d_pre_bye_class",
+        "turn": 2
+      },
+      "relative_path": "audio/generated/en-US/dialogues/9dae0ff6b73c21a344ae0706639854fa6a96718d743f6f5135d0228d467ae08b.mp3"
+    },
+    {
+      "audio_key": "b2a16a7c08f0f56496efa7327c171efb4d15c2009951c333d060a4ac985feb74",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Hi!",
+      "source_text_hash": "ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8",
+      "voice_key": "character:leo:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "34524510-8a00-57fd-82cf-979a7b311d97",
+          "entity_key": "d_pre_greeting_door:2"
+        }
+      ],
+      "metadata": {
+        "character": "leo",
+        "dialogue": "d_pre_greeting_door",
+        "turn": 2
+      },
+      "relative_path": "audio/generated/en-US/dialogues/b2a16a7c08f0f56496efa7327c171efb4d15c2009951c333d060a4ac985feb74.mp3"
+    },
+    {
+      "audio_key": "b8d16e9670a100481f87ba05ebe1ebc51c38d52ecc7b54009215f8831fee7a1b",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Goodbye!",
+      "source_text_hash": "1cb7b221b7adda1cf4c4724b32369394580480c84ab835795d608ac59aa13002",
+      "voice_key": "character:nina:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "419095c3-d364-538a-9480-763a925640e2",
+          "entity_key": "d_pre_capstone_meeting:7"
+        }
+      ],
+      "metadata": {
+        "character": "nina",
+        "dialogue": "d_pre_capstone_meeting",
+        "turn": 7
+      },
+      "relative_path": "audio/generated/en-US/dialogues/b8d16e9670a100481f87ba05ebe1ebc51c38d52ecc7b54009215f8831fee7a1b.mp3"
+    },
+    {
+      "audio_key": "bdbe6d90a2fcb0b3ce0ae5950881eeb741cdab571a16bf0ec3400beff3d2ad84",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm Arman.",
+      "source_text_hash": "494a28cc9c5410225d951a27c8feddc3bb1417be0a5375c648f4e131d3640ea0",
+      "voice_key": "character:arman:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "7ce5e3ed-0735-5252-a5fe-4123ddf33bf0",
+          "entity_key": "d_pre_capstone_meeting:4"
+        }
+      ],
+      "metadata": {
+        "character": "arman",
+        "dialogue": "d_pre_capstone_meeting",
+        "turn": 4
+      },
+      "relative_path": "audio/generated/en-US/dialogues/bdbe6d90a2fcb0b3ce0ae5950881eeb741cdab571a16bf0ec3400beff3d2ad84.mp3"
+    },
+    {
+      "audio_key": "ccd3a52ccb2879d51631aea164a6f86cbb4a46f6c2faa439b76282ac2e636f48",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Hello!",
+      "source_text_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+      "voice_key": "character:nina:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "3cc0b3af-6dfb-51a3-b92a-fed11999c6d9",
+          "entity_key": "d_pre_capstone_meeting:1"
+        }
+      ],
+      "metadata": {
+        "character": "nina",
+        "dialogue": "d_pre_capstone_meeting",
+        "turn": 1
+      },
+      "relative_path": "audio/generated/en-US/dialogues/ccd3a52ccb2879d51631aea164a6f86cbb4a46f6c2faa439b76282ac2e636f48.mp3"
+    },
+    {
+      "audio_key": "d769d3121fbea74d0a789d798fff603d9ee973e383ee9dfbf5746a45774c6e5d",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "What's your name?",
+      "source_text_hash": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "voice_key": "character:emma:bright_social",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, energetic but natural American English for friendly social dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.85,
+          "style": 0.24,
+          "use_speaker_boost": true,
+          "speed": 1.02
+        },
+        "profile_key": "bright_social"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "8a2657ac-57c2-5281-ade4-f687c488889f",
+          "entity_key": "d_pre_names_two:1"
+        }
+      ],
+      "metadata": {
+        "character": "emma",
+        "dialogue": "d_pre_names_two",
+        "turn": 1
+      },
+      "relative_path": "audio/generated/en-US/dialogues/d769d3121fbea74d0a789d798fff603d9ee973e383ee9dfbf5746a45774c6e5d.mp3"
+    },
+    {
+      "audio_key": "d8a76ed2b2fbfe278a42bee728d32e08c2342f62a749f4e414cfb832e55c990b",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Bye!",
+      "source_text_hash": "c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed",
+      "voice_key": "character:ava:warm_conversational",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.86,
+          "style": 0.18,
+          "use_speaker_boost": true,
+          "speed": 1.0
+        },
+        "profile_key": "warm_conversational"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "a71c42db-4ab4-515c-a74a-9953326b10ff",
+          "entity_key": "d_pre_bye_class:1"
+        }
+      ],
+      "metadata": {
+        "character": "ava",
+        "dialogue": "d_pre_bye_class",
+        "turn": 1
+      },
+      "relative_path": "audio/generated/en-US/dialogues/d8a76ed2b2fbfe278a42bee728d32e08c2342f62a749f4e414cfb832e55c990b.mp3"
+    },
+    {
+      "audio_key": "1c19baaffc0b998c41100df1dc0a0b44e2c36f94fe9dfb60b4e8a97c667d3c47",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "nine",
+      "source_text_hash": "edcd8e701a2df0cd66a39bae6aa156cf16fe2b9653ef65f7d31742e2352421e4",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "1a0354be-6750-55d7-9653-4a73081e63b0",
+          "entity_key": "lx_pre_nine"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/1c19baaffc0b998c41100df1dc0a0b44e2c36f94fe9dfb60b4e8a97c667d3c47.mp3"
+    },
+    {
+      "audio_key": "22c6885fdf0cf1b67e1d78b874d1edaebb69c3ba2b1bc889403bcafd2f8c256d",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "yes",
+      "source_text_hash": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "fc94104e-c504-5a27-8692-16f2a1f82a7a",
+          "entity_key": "lx_pre_yes"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/22c6885fdf0cf1b67e1d78b874d1edaebb69c3ba2b1bc889403bcafd2f8c256d.mp3"
+    },
+    {
+      "audio_key": "2852289df008d91187723a7cf2126a2b04bf40f2a2d33352b2dac9a7d0556358",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "book",
+      "source_text_hash": "92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "fb4aaceb-fa01-5717-b4c0-075bb55d2ee5",
+          "entity_key": "lx_pre_book"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/2852289df008d91187723a7cf2126a2b04bf40f2a2d33352b2dac9a7d0556358.mp3"
+    },
+    {
+      "audio_key": "2b36d271b9c88552e08dce26a63ead389453653a749f7e789bae499bb6d11be8",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "six",
+      "source_text_hash": "44778d82365e4af681c40d5f0eef5cf6f5899d3f0ac335050a7ed6779cf3f674",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "e79b2eda-28d8-5d15-8959-048f9d933352",
+          "entity_key": "lx_pre_six"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/2b36d271b9c88552e08dce26a63ead389453653a749f7e789bae499bb6d11be8.mp3"
+    },
+    {
+      "audio_key": "2dae3f162cdeee1a8e5bfc99420f4a12670c31d3344f247c2d97ff91b4e1cc6a",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "three",
+      "source_text_hash": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "4b1a99ad-d50e-57b4-ae0c-95af46c51cd2",
+          "entity_key": "lx_pre_three"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/2dae3f162cdeee1a8e5bfc99420f4a12670c31d3344f247c2d97ff91b4e1cc6a.mp3"
+    },
+    {
+      "audio_key": "3211ed25f0cbcfefff694b2b1fed595d734369f46d20dbb8dc485e5b94b27a73",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "key",
+      "source_text_hash": "2c70e12b7a0646f92279f427c7b38e7334d8e5389cff167a1dc30e73f826b683",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "489fea4a-9cc7-5781-a5df-528d5f1a4f18",
+          "entity_key": "lx_pre_key"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/3211ed25f0cbcfefff694b2b1fed595d734369f46d20dbb8dc485e5b94b27a73.mp3"
+    },
+    {
+      "audio_key": "3e352bb3e8d57e574dc8b99c119501c3fa1830371c71093f5f023ad869086168",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "phone",
+      "source_text_hash": "45569da57f4b7bf472d7a864ef4781451cae6383fee9fb0ae40c59aa1ce475b7",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "c95ba449-4102-55af-a54b-d8ee4f5e6306",
+          "entity_key": "lx_pre_phone"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/3e352bb3e8d57e574dc8b99c119501c3fa1830371c71093f5f023ad869086168.mp3"
+    },
+    {
+      "audio_key": "41063153b4fddbabce1c51f03f28c20003b3875c3137e0e20b8bb109809716c0",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "listen",
+      "source_text_hash": "6f8860eb5103a16b917146f9cbf21aa00fe7d2291b1aad7f4fe83a6db71688cf",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "352db903-37b1-500a-8161-6add3f3d339a",
+          "entity_key": "lx_pre_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/41063153b4fddbabce1c51f03f28c20003b3875c3137e0e20b8bb109809716c0.mp3"
+    },
+    {
+      "audio_key": "51121ed17066543efc58562f7dcfc30fc2367be3f1b3ff8e729d1cf111f36d46",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "one",
+      "source_text_hash": "7692c3ad3540bb803c020b3aee66cd8887123234ea0c6e7143c0add73ff431ed",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "435d7e57-ec18-5426-b2be-a6536d97b4a0",
+          "entity_key": "lx_pre_one"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/51121ed17066543efc58562f7dcfc30fc2367be3f1b3ff8e729d1cf111f36d46.mp3"
+    },
+    {
+      "audio_key": "5595217337e862cbc83cdffcd1d7998c68c998dfed6f6d1c1bd835349eaf9e42",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "thanks",
+      "source_text_hash": "a6a2729cbf6bcadce577a31f7f76201d5ce63c57d6c53318000d67714bb354ef",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "5d6b2340-2f47-578c-90d9-f2e9c515a0a6",
+          "entity_key": "lx_pre_thanks"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/5595217337e862cbc83cdffcd1d7998c68c998dfed6f6d1c1bd835349eaf9e42.mp3"
+    },
+    {
+      "audio_key": "58d33272d887d3567c2f0aa742e04caf54879fb3e13253283e052e2ba0eca2e6",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "ten",
+      "source_text_hash": "e4432baa90819aaef51d2a7f8e148bf7e679610f3173752fabb4dcb2d0f418d3",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "dfec0d85-d849-5904-9466-9d79842097d2",
+          "entity_key": "lx_pre_ten"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/58d33272d887d3567c2f0aa742e04caf54879fb3e13253283e052e2ba0eca2e6.mp3"
+    },
+    {
+      "audio_key": "5e29dc0bdf7690dfc87bcd9c8ba12a60a3803fcc235dcbbc21c0d27702e06a4e",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "seven",
+      "source_text_hash": "3ba8d02b16fd2a01c1a8ba1a1f036d7ce386ed953696fa57331c2ac48a80b255",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "1094ec10-abc7-577a-9073-abdad7d57e45",
+          "entity_key": "lx_pre_seven"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/5e29dc0bdf7690dfc87bcd9c8ba12a60a3803fcc235dcbbc21c0d27702e06a4e.mp3"
+    },
+    {
+      "audio_key": "5f378f539c061f6d375c83366c7766be42a780a4931ed92daf94dfb2486fa68b",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "look",
+      "source_text_hash": "3c01eba119e00d79c82b6f65d70bc5f1044d568618bf41377e6d1432023fc2b8",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "e5a11230-304c-5098-a63d-8fb969361be7",
+          "entity_key": "lx_pre_look"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/5f378f539c061f6d375c83366c7766be42a780a4931ed92daf94dfb2486fa68b.mp3"
+    },
+    {
+      "audio_key": "632be5e410e621ea0b7db0d53a376a8aceb9f3e0a86ed2c8e5d4dc33bf81e460",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "no",
+      "source_text_hash": "9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "63558d47-126f-538e-ade5-945a5a952624",
+          "entity_key": "lx_pre_no"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/632be5e410e621ea0b7db0d53a376a8aceb9f3e0a86ed2c8e5d4dc33bf81e460.mp3"
+    },
+    {
+      "audio_key": "758a537243fa0118b0103123987b37d8e660c6302db488a9b4df14a6fbe37bc3",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "please",
+      "source_text_hash": "56ccc4dcfc96534b06fc0c08a301be24f13b491484d5d984953cc0dba9bbb89a",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "958eaea3-e5ed-54ea-884e-6a74fbff5eb1",
+          "entity_key": "lx_pre_please"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/758a537243fa0118b0103123987b37d8e660c6302db488a9b4df14a6fbe37bc3.mp3"
+    },
+    {
+      "audio_key": "768c4bc60e4f6da93b9b56e68dbab6a2675917f84b3c476f6ae0c42f5fab1095",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "bag",
+      "source_text_hash": "c018019b6a8b01ab5868cf4be8db327a7549ae03202548b9ffcd2671c4c2b624",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "e8ec421c-444d-55c4-b5b3-dbf1bec8d8e8",
+          "entity_key": "lx_pre_bag"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/768c4bc60e4f6da93b9b56e68dbab6a2675917f84b3c476f6ae0c42f5fab1095.mp3"
+    },
+    {
+      "audio_key": "7cebf8caf40572599dd343a6d69bf253ae7851cb01b497e30920490af81ad31d",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "sorry",
+      "source_text_hash": "484aab2f2cd0f77b3c30f91521ba9a76c8c501112a53e100154a098c274f03d3",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "d04751a1-16fd-56a2-bf60-0a65db7482ac",
+          "entity_key": "lx_pre_sorry"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/7cebf8caf40572599dd343a6d69bf253ae7851cb01b497e30920490af81ad31d.mp3"
+    },
+    {
+      "audio_key": "8ac9468f85e459141ee3f7d40ae2be290e75352bc9ce2ed9e21ffa1ae6937a8d",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "eight",
+      "source_text_hash": "c195d2d8756234367242ba7616c5c60369bc25ced2dcb5b92808d31b58ef217a",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "1e91343b-0bf2-50d3-8d09-c572b6de6846",
+          "entity_key": "lx_pre_eight"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/8ac9468f85e459141ee3f7d40ae2be290e75352bc9ce2ed9e21ffa1ae6937a8d.mp3"
+    },
+    {
+      "audio_key": "8acc697249c904e801953fa68495775453d4c335c6b0c7ed0459346f1ce94a84",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "five",
+      "source_text_hash": "222b0bd51fcef7e65c2e62db2ed65457013bab56be6fafeb19ee11d453153c80",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "f8ff7798-2d2e-59f2-860b-294ba7c2d5e2",
+          "entity_key": "lx_pre_five"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/8acc697249c904e801953fa68495775453d4c335c6b0c7ed0459346f1ce94a84.mp3"
+    },
+    {
+      "audio_key": "8ca03e613baaa708443bc7d3360030847de76a7a3a204b3f9b863dea3006806f",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "read",
+      "source_text_hash": "3316348dbadfb7b11c7c2ea235949419e23f9fa898ad2c198f999617912a9925",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "28610b97-6a01-5de8-b6a8-d05282bd4dad",
+          "entity_key": "lx_pre_read"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/8ca03e613baaa708443bc7d3360030847de76a7a3a204b3f9b863dea3006806f.mp3"
+    },
+    {
+      "audio_key": "a9595e78424b1d3947e61983c53038a8274ec214d98ee5132701f3d88e09c86f",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "two",
+      "source_text_hash": "3fc4ccfe745870e2c0d99f71f30ff0656c8dedd41cc1d7d3d376b0dbe685e2f3",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "7980c2ea-f310-5aa3-aef4-5050bc65164c",
+          "entity_key": "lx_pre_two"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/a9595e78424b1d3947e61983c53038a8274ec214d98ee5132701f3d88e09c86f.mp3"
+    },
+    {
+      "audio_key": "b16ff0237393b3b0bbb2e2192aca7380dfdd1f89a98590dfdc8c32efef867286",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "repeat",
+      "source_text_hash": "25e2b6b106523880e27763084ffa6a0756335be0d7106022535365b9ad39b4b1",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "fda38cd7-6d68-55f7-9366-de3f291d48ce",
+          "entity_key": "lx_pre_repeat"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/b16ff0237393b3b0bbb2e2192aca7380dfdd1f89a98590dfdc8c32efef867286.mp3"
+    },
+    {
+      "audio_key": "b8f0327e1759a362d21671b11d19fadaf37a9a886e1a539d8732bd964701c28d",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "write",
+      "source_text_hash": "10fd874b68dad080ed706762c8e163dabb20514bddae38fb159c56f714a3b143",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "e4a431c0-de1a-5576-ac1e-8ae8d0ace951",
+          "entity_key": "lx_pre_write"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/b8f0327e1759a362d21671b11d19fadaf37a9a886e1a539d8732bd964701c28d.mp3"
+    },
+    {
+      "audio_key": "f428d3285695be0a85037aef28f268159b02eb274aad7a4b9875887b84d11779",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "zero",
+      "source_text_hash": "f9194e73f9e9459e3450ea10a179cdf77aafa695beecd3b9344a98d111622243",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "1805a8b1-e0b4-50d9-8361-a734e63e4d7d",
+          "entity_key": "lx_pre_zero"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/f428d3285695be0a85037aef28f268159b02eb274aad7a4b9875887b84d11779.mp3"
+    },
+    {
+      "audio_key": "ff21fdd10ecab78bc88c9c0bfa0875b60e5a218c47a7c634fba11c3ccb37b491",
+      "category": "lexical",
+      "locale": "en-US",
+      "text": "four",
+      "source_text_hash": "04efaf080f5a3e74e1c29d1ca6a48569382cbbcd324e8d59d2b83ef21c039f00",
+      "voice_key": "en-us.lexical.lori",
+      "voice_spec": {
+        "voice_key": "en-us.lexical.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.72,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.94
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "lexeme",
+          "entity_uuid": "931c9a52-1ac8-5822-91b5-547cc20b3f2b",
+          "entity_key": "lx_pre_four"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/lexical/ff21fdd10ecab78bc88c9c0bfa0875b60e5a218c47a7c634fba11c3ccb37b491.mp3"
+    },
+    {
+      "audio_key": "0549033038e2d17a06410fe5729f8e0b0505f2bbdb50e3b13b6a6db0c0413033",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "This is a book.",
+      "source_text_hash": "83a30d3fbd93cbb9d1e91256c8854475c41498e48de9ee6d80820a4f40168bf8",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "22dfa403-7db4-5691-8159-93daa5cbd11d",
+          "entity_key": "u_pre_this_book"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/0549033038e2d17a06410fe5729f8e0b0505f2bbdb50e3b13b6a6db0c0413033.mp3"
+    },
+    {
+      "audio_key": "09aa1b944897bda34294214f48dd22bedbf88e667ec375e928168bd98446d894",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Hi!",
+      "source_text_hash": "ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "a3eaa346-1f2f-51c1-ab25-fe3f6eb7f97c",
+          "entity_key": "u_pre_hi"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/09aa1b944897bda34294214f48dd22bedbf88e667ec375e928168bd98446d894.mp3"
+    },
+    {
+      "audio_key": "0c2f6f895f7754f7502d462752cde589fcbe67d057bf87004ad41286edf8e186",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "three",
+      "source_text_hash": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "46fcba73-5a91-5aa2-894e-b22dc9312ccd",
+          "entity_key": "u_pre_three"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/0c2f6f895f7754f7502d462752cde589fcbe67d057bf87004ad41286edf8e186.mp3"
+    },
+    {
+      "audio_key": "24f340cc66bbdc52a5c3e0d2e600804cfd14754cc0cf63c1f2b1a6b9aab6ebc5",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "That is a bag.",
+      "source_text_hash": "a47addc3f303e423e3f81b3fa503b4ab8f524bd821a3e1670aca52c816f2c4ec",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "720b3230-abfc-5269-b4ad-106bb9ae4358",
+          "entity_key": "u_pre_that_bag"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/24f340cc66bbdc52a5c3e0d2e600804cfd14754cc0cf63c1f2b1a6b9aab6ebc5.mp3"
+    },
+    {
+      "audio_key": "30ccf97eb2cc6538924b523b37a157a7f35417f41a95342bff4c1d9ff1a810a3",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "ship",
+      "source_text_hash": "e5d5b971139eefeb36d6edb9938fa246740c90da2003626487eb2d5d9646aec6",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "54a30c06-e4bf-5607-a642-8cff05160cef",
+          "entity_key": "u_pre_ship"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/30ccf97eb2cc6538924b523b37a157a7f35417f41a95342bff4c1d9ff1a810a3.mp3"
+    },
+    {
+      "audio_key": "3535a64b4fdf5c3803c8a7b7cc80e29bcbcec09913675329504a38bc6c07ddd3",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "green",
+      "source_text_hash": "ba4788b226aa8dc2e6dc74248bb9f618cfa8c959e0c26c147be48f6839a0b088",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "095884e5-dcd0-5f86-9873-5b8063d6aca9",
+          "entity_key": "u_pre_green"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/3535a64b4fdf5c3803c8a7b7cc80e29bcbcec09913675329504a38bc6c07ddd3.mp3"
+    },
+    {
+      "audio_key": "3d36b07860cacdbbd99b22e547b053a6b602bd2443cf6512f75f2f21643689b3",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Yes, please.",
+      "source_text_hash": "2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "b615b97b-974a-5739-b085-5b9c9bff0d8c",
+          "entity_key": "u_pre_yes_please"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/3d36b07860cacdbbd99b22e547b053a6b602bd2443cf6512f75f2f21643689b3.mp3"
+    },
+    {
+      "audio_key": "413c99596c2ec4273591baa6a7a4fa73a9adfca42957ef8ab45f6742996c29b5",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Bye!",
+      "source_text_hash": "c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "612b0330-bd14-55bb-a813-6cb3a800a82c",
+          "entity_key": "u_pre_bye"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/413c99596c2ec4273591baa6a7a4fa73a9adfca42957ef8ab45f6742996c29b5.mp3"
+    },
+    {
+      "audio_key": "452a14c83ede8168ca20ba9ed34fe4911747df39931436e87fde4bb421c46944",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Listen.",
+      "source_text_hash": "64df403570548cf0d3fbc42eeaa82612d5f224b0b05586984aa2a2abac9b0434",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "cc26cd1f-04db-58e2-8eb5-38af818946dc",
+          "entity_key": "u_pre_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/452a14c83ede8168ca20ba9ed34fe4911747df39931436e87fde4bb421c46944.mp3"
+    },
+    {
+      "audio_key": "5a1f264b9c7600fc9846a6970896c017e4683d1967bbbdfde3597e82265a1675",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "A-M-Y.",
+      "source_text_hash": "266c16e50e9aa7a33cff0cae2e685680e8f58234d4f1882ea933e1e06e7c4f3f",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "d0987baa-9c34-53b3-9752-da34a8aa5f97",
+          "entity_key": "u_pre_spell_amy"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/5a1f264b9c7600fc9846a6970896c017e4683d1967bbbdfde3597e82265a1675.mp3"
+    },
+    {
+      "audio_key": "697faa5fc50d8e5295fa563ab1d7fafeae3bc57ca42484e3eb249602bc703d7b",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "No, thanks.",
+      "source_text_hash": "b91d613f300c3bcc2c23ef2b53de52452a7b0e297e3e615026872452e27a2116",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "da334dcd-dade-52ed-a412-58ed1885172c",
+          "entity_key": "u_pre_no_thanks"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/697faa5fc50d8e5295fa563ab1d7fafeae3bc57ca42484e3eb249602bc703d7b.mp3"
+    },
+    {
+      "audio_key": "839ba6b14acfa4d2211ad0b9911473a8d512c964265c1177be58f14425ffe60a",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Hello!",
+      "source_text_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "174b099d-e7f3-516d-88e7-3ebb99b3d53d",
+          "entity_key": "u_pre_hello"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/839ba6b14acfa4d2211ad0b9911473a8d512c964265c1177be58f14425ffe60a.mp3"
+    },
+    {
+      "audio_key": "940e7b44b442eafe6f5d5f7cdf0befa261b7d0757ce69c16c3440106aae6448a",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Write.",
+      "source_text_hash": "76050b6862606edfa19c0bc54339d800c6f7016d89c55c539ff58d21a462d2a1",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "655ec62f-42c4-543b-bddd-2ed496cba4fc",
+          "entity_key": "u_pre_write"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/940e7b44b442eafe6f5d5f7cdf0befa261b7d0757ce69c16c3440106aae6448a.mp3"
+    },
+    {
+      "audio_key": "961e8887b6d100b2f6bad6688fd2e9db9ad498b5e51d4157a5e19731ea0b32e4",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "What's your name?",
+      "source_text_hash": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "1bbcaba7-403b-59c6-a628-6df679fd587a",
+          "entity_key": "u_pre_name_whats"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/961e8887b6d100b2f6bad6688fd2e9db9ad498b5e51d4157a5e19731ea0b32e4.mp3"
+    },
+    {
+      "audio_key": "9748d2cf6c446652b2e1c1a0723cbabe68c0c076c8edcfa206711f8b76108cb3",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Look.",
+      "source_text_hash": "de5176e3d6e25344fb5d17ca4f9a8f08cdafe73796e4c23f4cc047643d1d7ae9",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "8a8bd6f5-51f1-5b33-81e4-1745d76c52c6",
+          "entity_key": "u_pre_look"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/9748d2cf6c446652b2e1c1a0723cbabe68c0c076c8edcfa206711f8b76108cb3.mp3"
+    },
+    {
+      "audio_key": "9fac3c41ce7913ad471223edaeb09ba6431b5635ab0da31351b2bf626fbfd3ee",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "chair",
+      "source_text_hash": "3d7eb3d3dab17ee509a6911e0feb928eb46e956adcada792493614bfb97a7a9c",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "e61135a4-519e-5ab4-8adf-760fd8d33839",
+          "entity_key": "u_pre_chair"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/9fac3c41ce7913ad471223edaeb09ba6431b5635ab0da31351b2bf626fbfd3ee.mp3"
+    },
+    {
+      "audio_key": "a03efb241cf724aff3f007e58666cc4b29219ce389374f23a5729e9c5cef0654",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "food",
+      "source_text_hash": "c1f026582fe6e8cb620d0c85a72fe421ddded756662a8ec00ed4c297ad10676b",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "cce1e20f-a8df-56f9-bd9c-b759204fd101",
+          "entity_key": "u_pre_food"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/a03efb241cf724aff3f007e58666cc4b29219ce389374f23a5729e9c5cef0654.mp3"
+    },
+    {
+      "audio_key": "a29387162e4069293701a6086f71696d410341ce59fae1ecd352186d5a4579d5",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Repeat.",
+      "source_text_hash": "e906f2bb5a2a0bac0f760d4ca07102055e6f18e5d96383d56bc643dff532c00a",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "e595d1c1-8515-50ff-bce3-731704335b5c",
+          "entity_key": "u_pre_repeat"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/a29387162e4069293701a6086f71696d410341ce59fae1ecd352186d5a4579d5.mp3"
+    },
+    {
+      "audio_key": "cd8df3495fa094fe80b457074b29c4e738130f86cf08e0b22c9f0d65d8a365e4",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I'm Sara.",
+      "source_text_hash": "8dc9ca760d4456473b66bbe5730fae606785743e662f7bae79013c077d916726",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "fa9832bc-4dd6-5603-b32d-270f78a4f936",
+          "entity_key": "u_pre_name_im"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/cd8df3495fa094fe80b457074b29c4e738130f86cf08e0b22c9f0d65d8a365e4.mp3"
+    },
+    {
+      "audio_key": "d1fe265451bfea1b2ddc6058eaa8832d9e50f79e58a7c9972b352e1f9f57c8f5",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Read.",
+      "source_text_hash": "b00ccb589bcef337db8a18fd57cd64007a14fd351dc7f56e832feb56171d10d6",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "000ffd4c-fd79-5cf7-9e7b-2dfa935a35b1",
+          "entity_key": "u_pre_read"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d1fe265451bfea1b2ddc6058eaa8832d9e50f79e58a7c9972b352e1f9f57c8f5.mp3"
+    },
+    {
+      "audio_key": "d59436957b65af159c1ecf6a3e77c263024fbf70ac4824c7c908db4b083361fe",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "S-A-M.",
+      "source_text_hash": "8ff59bc7e53fd11e26a2384beb71f081f8162080addcae56a45b87127a4bdaae",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "588c087e-d090-56ee-bd3b-459c7078fa2f",
+          "entity_key": "u_pre_spell_sam"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d59436957b65af159c1ecf6a3e77c263024fbf70ac4824c7c908db4b083361fe.mp3"
+    },
+    {
+      "audio_key": "d69db79893c7c68440bcfbe0fcf3f4c895bd45c8fe7b8b0d9f0b5b276c8e64f0",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "How do you spell it?",
+      "source_text_hash": "099eca0c2efa8ee3b45f2c111ec5f0feaf33337e9c712495b002f53ae029c939",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "63f0acad-cef5-5829-a97e-56abb3eb2766",
+          "entity_key": "u_pre_how_spell"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d69db79893c7c68440bcfbe0fcf3f4c895bd45c8fe7b8b0d9f0b5b276c8e64f0.mp3"
+    },
+    {
+      "audio_key": "d7707cd9eef25058ae47eec6672cb5dfb3963b3942b7569bcd95eff1d8c6cc7c",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "My name is Amir.",
+      "source_text_hash": "e124c1a5c5c3e430bc6f0d0f9e47eeae894403d13a41eb8c42a58075d952c8c7",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "bd9c7eff-d8dd-54d1-aaa0-af9436c553ea",
+          "entity_key": "u_pre_name_myname"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d7707cd9eef25058ae47eec6672cb5dfb3963b3942b7569bcd95eff1d8c6cc7c.mp3"
+    },
+    {
+      "audio_key": "ec1dec43e524bdc7a8412a9b08f78af2374203444a8ce8ef607a03529f4d20d7",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Goodbye!",
+      "source_text_hash": "1cb7b221b7adda1cf4c4724b32369394580480c84ab835795d608ac59aa13002",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "ce1460d3-0eda-582f-b0e2-00f5e5527eb9",
+          "entity_key": "u_pre_goodbye"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/ec1dec43e524bdc7a8412a9b08f78af2374203444a8ce8ef607a03529f4d20d7.mp3"
+    }
+  ]
+}
