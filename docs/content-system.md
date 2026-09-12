@@ -92,7 +92,7 @@ English lexeme: go
   -> go / goes / went / gone
 German lexeme: gehen
   -> gehe / gehst / geht / ging / gegangen
-Arabic lexeme: كتب-like language-specific lexical unit
+Arabic language-specific lexeme
   -> word forms with person/gender/number/tense features
 ```
 
@@ -146,7 +146,9 @@ Any item may instead become `rejected` or return to `generated` after revision.
 - audio/text consistency
 
 ## Lesson strategy
-Lessons are lightweight assemblies of approved content. A canonical sentence, dialogue or lexeme can support several exercise variants without duplicating source content.
+Lessons are lightweight assemblies of approved content. A lesson item can directly reference exactly one canonical content unit: a concept, lexeme, word form, utterance, dialogue, or grammar point. This lets morphology-heavy languages explicitly teach a lemma or a specific inflected form without inventing duplicate concepts.
+
+A canonical sentence, dialogue or lexical unit can support several exercise variants without duplicating source content.
 
 Initial exercise families:
 - dialogue comprehension
@@ -188,7 +190,7 @@ The Python importer:
 ## MySQL integrity notes
 MySQL 9.0.1 enforces normal foreign keys, unique indexes, native JSON validation and supported `CHECK` constraints.
 
-One deliberate exception is `lesson_items`: the content pipeline must enforce that exactly one of `concept_id`, `utterance_id`, `dialogue_id`, or `grammar_point_id` is populated.
+One deliberate exception is `lesson_items`: the content pipeline must enforce that exactly one of `concept_id`, `lexeme_id`, `word_form_id`, `utterance_id`, `dialogue_id`, or `grammar_point_id` is populated.
 
 `generated_content.fingerprint` is nullable and unique. MySQL permits multiple `NULL` values in a unique index, which preserves the intended optional-fingerprint behavior.
 
