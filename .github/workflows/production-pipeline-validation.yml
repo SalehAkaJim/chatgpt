@@ -77,7 +77,9 @@ jobs:
           git add audio/manifests/en/Pre-A1.json audio/manifests/en/A1.json
           if ! git diff --cached --quiet; then
             git commit -m 'Update English audio manifests [skip ci]'
-            git push
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
       - name: Upload generated manifests
         uses: actions/upload-artifact@v4
