@@ -1,4 +1,5 @@
 INSERT IGNORE INTO skills (slug, name, sort_order) VALUES
+('literacy', 'Script & Literacy', 5),
 ('foundations', 'Foundations', 10),
 ('social', 'Social Interaction', 20),
 ('daily-life', 'Daily Life', 30),
@@ -13,7 +14,12 @@ INSERT IGNORE INTO skills (slug, name, sort_order) VALUES
 ('communication', 'Communication', 120);
 
 INSERT IGNORE INTO topics (skill_id, slug, name, sort_order)
-SELECT id, 'greetings', 'Greetings', 10 FROM skills WHERE slug = 'foundations'
+SELECT id, 'script-basics', 'Script Basics', 10 FROM skills WHERE slug = 'literacy'
+UNION ALL SELECT id, 'letter-connections', 'Letter Connections', 20 FROM skills WHERE slug = 'literacy'
+UNION ALL SELECT id, 'sound-letter-mapping', 'Sounds & Letters', 30 FROM skills WHERE slug = 'literacy'
+UNION ALL SELECT id, 'diacritics', 'Diacritics & Reading Marks', 40 FROM skills WHERE slug = 'literacy'
+UNION ALL SELECT id, 'early-reading', 'Early Reading', 50 FROM skills WHERE slug = 'literacy'
+UNION ALL SELECT id, 'greetings', 'Greetings', 10 FROM skills WHERE slug = 'foundations'
 UNION ALL SELECT id, 'introductions', 'Introductions', 20 FROM skills WHERE slug = 'foundations'
 UNION ALL SELECT id, 'numbers', 'Numbers', 30 FROM skills WHERE slug = 'foundations'
 UNION ALL SELECT id, 'countries-nationalities', 'Countries & Nationalities', 40 FROM skills WHERE slug = 'foundations'
