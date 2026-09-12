@@ -26,9 +26,7 @@ def mysql_config() -> dict:
     if database_url:
         parsed = urlparse(database_url)
         if parsed.scheme not in {"mysql", "mysql+mysqlconnector"}:
-            raise SystemExit(
-                "DATABASE_URL must use mysql:// or mysql+mysqlconnector://"
-            )
+            raise SystemExit("DATABASE_URL must use mysql:// or mysql+mysqlconnector://")
 
         query = parse_qs(parsed.query)
         config = {
@@ -107,6 +105,51 @@ def main() -> None:
             language = cur.fetchone()
             if not language:
                 raise SystemExit(f"Unknown language: {batch['target_language']}")
+            language_id = language[0]
+
+            variant_id = None
+            if batch.get("target_variant"):
+                cur.execute(
+                    """
+                    SELECT id, language_id
+                    FROM language_variants
+                    WHERE code = %s
+                    """,
+                    (batch["target_variant"],),
+                )
+                variant = cur.fetchone()
+                if not variant:
+                    raise SystemExit(f"Unknown target variant: {batch['target_variant']}")
+                if variant[1] != language_id:
+                    raise SystemExit(
+                        f"Variant {batch['target_variant']} does not belong to {batch['target_language']}"
+                    )
+                variant_id = variant[0]
+
+            course_id = None
+            if batch.get("course"):
+                cur.execute(
+                    """
+                    SELECT id, target_language_id, target_variant_id
+                    FROM courses
+                    WHERE slug = %s AND is_active = TRUE
+                    """,
+                    (batch["course"],),
+                )
+                course = cur.fetchone()
+                if not course:
+                    raise SystemExit(f"Unknown course: {batch['course']}")
+                if course[1] != language_id:
+                    raise SystemExit(
+                        f"Course {batch['course']} target language does not match batch target"
+                    )
+                if variant_id is not None and course[2] != variant_id:
+                    raise SystemExit(
+                        f"Course {batch['course']} target variant does not match batch target variant"
+                    )
+                course_id = course[0]
+                if variant_id is None:
+                    variant_id = course[2]
 
             cur.execute(
                 "SELECT id FROM cefr_levels WHERE code = %s",
@@ -115,53 +158,86 @@ def main() -> None:
             level = cur.fetchone()
             if not level:
                 raise SystemExit(f"Unknown CEFR level: {batch['cefr']}")
+            level_id = level[0]
 
-            cur.execute(
-                """
-                SELECT id
-                FROM curriculum_units
-                WHERE target_language_id = %s
-                  AND cefr_level_id = %s
-                  AND slug = %s
-                """,
-                (language[0], level[0], batch["curriculum_unit"]),
-            )
+            if course_id is not None:
+                cur.execute(
+                    """
+                    SELECT id
+                    FROM curriculum_units
+                    WHERE course_id = %s
+                      AND cefr_level_id = %s
+                      AND slug = %s
+                    """,
+                    (course_id, level_id, batch["curriculum_unit"]),
+                )
+            else:
+                # Compatibility path for v1 batches created before courses existed.
+                cur.execute(
+                    """
+                    SELECT id
+                    FROM curriculum_units
+                    WHERE target_language_id = %s
+                      AND cefr_level_id = %s
+                      AND slug = %s
+                    ORDER BY course_id IS NULL DESC
+                    LIMIT 1
+                    """,
+                    (language_id, level_id, batch["curriculum_unit"]),
+                )
+
             curriculum_unit = cur.fetchone()
             if not curriculum_unit:
-                raise SystemExit(
-                    f"Unknown curriculum unit: {batch['curriculum_unit']}"
-                )
+                raise SystemExit(f"Unknown curriculum unit: {batch['curriculum_unit']}")
 
             # Keep UUID byte order identical to schema defaults:
             # UUID_TO_BIN(..., 1) / BIN_TO_UUID(..., 1).
             cur.execute("SELECT UUID_TO_BIN(UUID(), 1)")
             job_id = cur.fetchone()[0]
 
+            parameters = {
+                "batch_id": batch["batch_id"],
+                "course": batch.get("course"),
+                "learner_language": batch.get("learner_language"),
+                "learner_variant": batch.get("learner_variant"),
+                "target_language": batch["target_language"],
+                "target_variant": batch.get("target_variant"),
+                "curriculum_unit": batch["curriculum_unit"],
+                "generator": batch.get("generator"),
+            }
+
             cur.execute(
                 """
                 INSERT INTO generation_jobs (
                     id,
                     job_type,
+                    course_id,
                     target_language_id,
+                    target_language_variant_id,
                     cefr_level_id,
                     parameters,
                     status,
                     started_at
                 )
-                VALUES (%s, 'content_batch_import', %s, %s, %s, 'running', CURRENT_TIMESTAMP(6))
+                VALUES (
+                    %s,
+                    'content_batch_import',
+                    %s,
+                    %s,
+                    %s,
+                    %s,
+                    %s,
+                    'running',
+                    CURRENT_TIMESTAMP(6)
+                )
                 """,
                 (
                     job_id,
-                    language[0],
-                    level[0],
-                    json.dumps(
-                        {
-                            "batch_id": batch["batch_id"],
-                            "curriculum_unit": batch["curriculum_unit"],
-                            "generator": batch.get("generator"),
-                        },
-                        ensure_ascii=False,
-                    ),
+                    course_id,
+                    language_id,
+                    variant_id,
+                    level_id,
+                    json.dumps(parameters, ensure_ascii=False),
                 ),
             )
 
@@ -172,7 +248,11 @@ def main() -> None:
                 kind = item["kind"]
                 payload = {
                     "batch_id": batch["batch_id"],
+                    "course": batch.get("course"),
+                    "learner_language": batch.get("learner_language"),
+                    "learner_variant": batch.get("learner_variant"),
                     "target_language": batch["target_language"],
+                    "target_variant": batch.get("target_variant"),
                     "cefr": batch["cefr"],
                     "curriculum_unit": batch["curriculum_unit"],
                     "external_id": item.get("external_id"),
@@ -235,6 +315,8 @@ def main() -> None:
         json.dumps(
             {
                 "batch_id": batch["batch_id"],
+                "course": batch.get("course"),
+                "target_variant": batch.get("target_variant"),
                 "inserted": inserted,
                 "skipped_duplicates": skipped,
             },
