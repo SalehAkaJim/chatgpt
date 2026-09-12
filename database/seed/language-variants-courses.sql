@@ -30,7 +30,7 @@ SELECT lv.id, p.code, p.name, p.script, TRUE, p.uses_case, p.uses_diacritics, p.
 FROM (
   SELECT 'en-US' AS variant_code, 'en-US-latin' AS code, 'English Latin' AS name, 'Latin' AS script, TRUE AS uses_case, FALSE AS uses_diacritics, 'none' AS diacritics_policy, JSON_OBJECT() AS metadata
   UNION ALL SELECT 'en-GB','en-GB-latin','English Latin','Latin',TRUE,FALSE,'none',JSON_OBJECT()
-  UNION ALL SELECT 'de-DE','de-DE-latin','German Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT()
+  UNION ALL SELECT 'de-DE','de-DE-latin','German Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT('preserve_sharp_s', TRUE, 'noun_capitalization', TRUE)
   UNION ALL SELECT 'fr-FR','fr-FR-latin','French Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT()
   UNION ALL SELECT 'es-ES','es-ES-latin','Spanish Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT()
   UNION ALL SELECT 'es-MX','es-MX-latin','Spanish Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT()
@@ -69,6 +69,11 @@ FROM (
          'English for Persian speakers' AS title,
          'English course localized for Persian-speaking learners.' AS description,
          JSON_OBJECT('curriculum_family','english','default_variant','en-US') AS metadata
+  UNION ALL
+  SELECT 'fa-de-de', 'fa', 'fa-IR', 'de', 'de-DE',
+         'German for Persian speakers',
+         'Standard German course localized for Persian-speaking learners.',
+         JSON_OBJECT('curriculum_family','german','default_variant','de-DE')
   UNION ALL
   SELECT 'fa-ar-msa', 'fa', 'fa-IR', 'ar', 'ar-MSA',
          'Modern Standard Arabic for Persian speakers',
