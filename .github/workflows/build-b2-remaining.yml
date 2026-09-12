@@ -1,0 +1,162 @@
+name: Build English B2 Remaining Content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate_b2_support.py'
+      - 'scripts/generate_b2_06_10.py'
+      - 'scripts/generate_b2_11_20.py'
+      - 'scripts/generate_b2_21_30.py'
+      - 'scripts/generate_b2_31_40.py'
+      - 'scripts/generate_b2_41_45.py'
+      - '.github/workflows/build-b2-remaining.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-english-b2-remaining
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate B2 units 06-45
+        env:
+          PYTHONPATH: .
+        run: |
+          python scripts/generate_b2_06_10.py
+          python scripts/generate_b2_11_20.py
+          python scripts/generate_b2_21_30.py
+          python scripts/generate_b2_31_40.py
+          python scripts/generate_b2_41_45.py
+
+      - name: Validate all B2 production batches
+        run: |
+          for f in content/production/en/B2/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+
+      - name: Verify all 45 curriculum units have production batches
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path('content/production/en/B2')
+          units = {}
+          for f in p.glob('*.json'):
+              d = json.loads(f.read_text(encoding='utf-8'))
+              units[d['curriculum_unit']] = f.name
+
+          expected = [
+              'b2-catching-up-with-detail',
+              'b2-detailed-personal-stories',
+              'b2-causes-consequences',
+              'b2-habits-trends-change',
+              'b2-experiences-achievements',
+              'b2-future-possibilities',
+              'b2-hypothetical-choices',
+              'b2-goals-tradeoffs',
+              'b2-negotiating-arrangements',
+              'b2-social-tact',
+              'b2-nuanced-opinions',
+              'b2-agreement-disagreement',
+              'b2-reasons-results',
+              'b2-comparing-alternatives',
+              'b2-recommendations',
+              'b2-problem-solving',
+              'b2-complaints-escalation',
+              'b2-product-research',
+              'b2-services-repairs',
+              'b2-money-budgeting',
+              'b2-food-dietary-needs',
+              'b2-health-history',
+              'b2-wellbeing-lifestyle',
+              'b2-independent-travel',
+              'b2-travel-disruptions',
+              'b2-accommodation-issues',
+              'b2-local-recommendations',
+              'b2-work-responsibilities',
+              'b2-meetings-decisions',
+              'b2-projects-deadlines',
+              'b2-job-applications',
+              'b2-study-challenges',
+              'b2-learning-strategies',
+              'b2-media-reviews',
+              'b2-news-discussion',
+              'b2-digital-communication',
+              'b2-relationships-misunderstandings',
+              'b2-community-life',
+              'b2-environment-choices',
+              'b2-explaining-presenting',
+              'b2-summarizing-sources',
+              'b2-relaying-information',
+              'b2-practical-writing',
+              'b2-multi-step-problem-solving',
+              'b2-integrated-capstone',
+          ]
+          missing = [u for u in expected if u not in units]
+          extras = [u for u in units if u not in expected]
+          if missing or extras or len(units) != 45:
+              raise SystemExit(
+                  f'B2 coverage invalid: missing={missing}, extras={extras}, count={len(units)}'
+              )
+          print('B2 production coverage: 45/45')
+          PY
+
+      - name: Verify lesson coverage for final B2 units
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          expected_lessons = {
+              'b2-multi-step-problem-solving': 4,
+              'b2-integrated-capstone': 4,
+          }
+          for slug, count in expected_lessons.items():
+              p = Path('content/production/en/B2') / f'{slug}-v1.json'
+              d = json.loads(p.read_text(encoding='utf-8'))
+              lessons = {
+                  item.get('data', {}).get('lesson_key')
+                  for item in d['items']
+                  if item.get('data', {}).get('lesson_key')
+              }
+              expected = {f'{slug}-{i:02d}' for i in range(1, count + 1)}
+              if not expected.issubset(lessons):
+                  raise SystemExit(f'{slug}: missing lesson coverage: {sorted(expected - lessons)}')
+          print('B2 final four-lesson units have complete lesson coverage')
+          PY
+
+      - name: Commit generated production batches
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/production/en/B2
+          if git diff --cached --quiet; then
+            echo 'No B2 content changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Complete English B2 production content [skip ci]'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
