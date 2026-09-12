@@ -1,0 +1,79 @@
+{
+  "batch_id": "en-us-a1-countries-v2",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "A1",
+  "curriculum_unit": "a1-countries",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {"kind":"concept","external_id":"c_country","data":{"slug":"country","lesson_key":"a1-countries-01","concept_type":"lexical","forms":{"en":"country"},"translations":{"fa":"کشور"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_country","data":{"lesson_key":"a1-countries-01","lemma":"country","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["country"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_country","data":{"lesson_key":"a1-countries-01","lexeme_ref":"lx_country","surface_form":"country","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_iran","data":{"slug":"country_iran","lesson_key":"a1-countries-01","concept_type":"lexical","forms":{"en":"Iran"},"translations":{"fa":"ایران"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_iran","data":{"lesson_key":"a1-countries-01","lemma":"Iran","language":"en","language_variant":"en-US","part_of_speech":"proper_noun","concept_refs":["country_iran"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_iran","data":{"lesson_key":"a1-countries-01","lexeme_ref":"lx_iran","surface_form":"Iran","grammatical_features":{"type":"country_name"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_us","data":{"slug":"country_united_states","lesson_key":"a1-countries-01","concept_type":"lexical","forms":{"en":"the United States"},"translations":{"fa":"ایالات متحده"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_us","data":{"lesson_key":"a1-countries-01","lemma":"the United States","language":"en","language_variant":"en-US","part_of_speech":"proper_noun","concept_refs":["country_united_states"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_us","data":{"lesson_key":"a1-countries-01","lexeme_ref":"lx_us","surface_form":"the United States","grammatical_features":{"type":"country_name"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_germany","data":{"slug":"country_germany","lesson_key":"a1-countries-01","concept_type":"lexical","forms":{"en":"Germany"},"translations":{"fa":"آلمان"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_germany","data":{"lesson_key":"a1-countries-01","lemma":"Germany","language":"en","language_variant":"en-US","part_of_speech":"proper_noun","concept_refs":["country_germany"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_germany","data":{"lesson_key":"a1-countries-01","lexeme_ref":"lx_germany","surface_form":"Germany","grammatical_features":{"type":"country_name"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_france","data":{"slug":"country_france","lesson_key":"a1-countries-01","concept_type":"lexical","forms":{"en":"France"},"translations":{"fa":"فرانسه"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_france","data":{"lesson_key":"a1-countries-01","lemma":"France","language":"en","language_variant":"en-US","part_of_speech":"proper_noun","concept_refs":["country_france"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_france","data":{"lesson_key":"a1-countries-01","lexeme_ref":"lx_france","surface_form":"France","grammatical_features":{"type":"country_name"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_turkey","data":{"slug":"country_turkey","lesson_key":"a1-countries-01","concept_type":"lexical","forms":{"en":"Turkey"},"translations":{"fa":"ترکیه"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_turkey","data":{"lesson_key":"a1-countries-01","lemma":"Turkey","language":"en","language_variant":"en-US","part_of_speech":"proper_noun","concept_refs":["country_turkey"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_turkey","data":{"lesson_key":"a1-countries-01","lexeme_ref":"lx_turkey","surface_form":"Turkey","grammatical_features":{"type":"country_name"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_iranian","data":{"slug":"nationality_iranian","lesson_key":"a1-countries-02","concept_type":"lexical","forms":{"en":"Iranian"},"translations":{"fa":"ایرانی"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_iranian","data":{"lesson_key":"a1-countries-02","lemma":"Iranian","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["nationality_iranian"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_iranian","data":{"lesson_key":"a1-countries-02","lexeme_ref":"lx_iranian","surface_form":"Iranian","grammatical_features":{"type":"nationality"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_american","data":{"slug":"nationality_american","lesson_key":"a1-countries-02","concept_type":"lexical","forms":{"en":"American"},"translations":{"fa":"آمریکایی"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_american","data":{"lesson_key":"a1-countries-02","lemma":"American","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["nationality_american"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_american","data":{"lesson_key":"a1-countries-02","lexeme_ref":"lx_american","surface_form":"American","grammatical_features":{"type":"nationality"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_german","data":{"slug":"nationality_german","lesson_key":"a1-countries-02","concept_type":"lexical","forms":{"en":"German"},"translations":{"fa":"آلمانی"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_german","data":{"lesson_key":"a1-countries-02","lemma":"German","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["nationality_german"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_german","data":{"lesson_key":"a1-countries-02","lexeme_ref":"lx_german","surface_form":"German","grammatical_features":{"type":"nationality"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_french","data":{"slug":"nationality_french","lesson_key":"a1-countries-02","concept_type":"lexical","forms":{"en":"French"},"translations":{"fa":"فرانسوی"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_french","data":{"lesson_key":"a1-countries-02","lemma":"French","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["nationality_french"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_french","data":{"lesson_key":"a1-countries-02","lexeme_ref":"lx_french","surface_form":"French","grammatical_features":{"type":"nationality"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_turkish","data":{"slug":"nationality_turkish","lesson_key":"a1-countries-02","concept_type":"lexical","forms":{"en":"Turkish"},"translations":{"fa":"ترک / ترکیه‌ای"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_turkish","data":{"lesson_key":"a1-countries-02","lemma":"Turkish","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["nationality_turkish"],"cefr":"A1","status":"approved"}},
+    {"kind":"word_form","external_id":"wf_turkish","data":{"lesson_key":"a1-countries-02","lexeme_ref":"lx_turkish","surface_form":"Turkish","grammatical_features":{"type":"nationality"},"cefr":"A1","status":"approved"}},
+
+    {"kind":"concept","external_id":"c_where_from","data":{"slug":"ask_where_from","lesson_key":"a1-countries-01","concept_type":"functional","forms":{"en":"Where are you from?"},"translations":{"fa":"اهل کجایی؟"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"concept","external_id":"c_be_from","data":{"slug":"be_from_place","lesson_key":"a1-countries-01","concept_type":"functional","forms":{"en":"I'm from …"},"translations":{"fa":"من اهل ... هستم."},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+    {"kind":"concept","external_id":"c_ask_nationality","data":{"slug":"ask_nationality","lesson_key":"a1-countries-02","concept_type":"functional","forms":{"en":"Are you …?"},"translations":{"fa":"... هستی؟"},"cefr":"A1","topic":"countries-nationalities","status":"approved"}},
+
+    {"kind":"utterance","external_id":"u_where_from","data":{"lesson_key":"a1-countries-01","text":{"en":"Where are you from?"},"translations":{"fa":"اهل کجایی؟"},"intent":"ask_origin","concept_refs":["ask_where_from"],"cefr":"A1","topic":"countries-nationalities","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_from_iran","data":{"lesson_key":"a1-countries-01","text":{"en":"I'm from Iran."},"translations":{"fa":"من اهل ایران هستم."},"intent":"state_origin","concept_refs":["be_from_place","country_iran"],"cefr":"A1","topic":"countries-nationalities","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_from_germany","data":{"lesson_key":"a1-countries-01","text":{"en":"I'm from Germany."},"translations":{"fa":"من اهل آلمان هستم."},"intent":"state_origin","concept_refs":["be_from_place","country_germany"],"cefr":"A1","topic":"countries-nationalities","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_im_iranian","data":{"lesson_key":"a1-countries-02","text":{"en":"I'm Iranian."},"translations":{"fa":"من ایرانی هستم."},"intent":"state_nationality","concept_refs":["nationality_iranian"],"cefr":"A1","topic":"countries-nationalities","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_are_you_french","data":{"lesson_key":"a1-countries-02","text":{"en":"Are you French?"},"translations":{"fa":"فرانسوی هستی؟"},"intent":"ask_nationality","concept_refs":["ask_nationality","nationality_french"],"cefr":"A1","topic":"countries-nationalities","register":"neutral","status":"approved"}},
+
+    {"kind":"grammar_point","external_id":"g_from_country","data":{"lesson_key":"a1-countries-01","slug":"a1-from-country","title":"be + from + place","rule_summary":"Use be + from + a place to say where someone comes from.","explanation":{"fa":"برای گفتن اینکه کسی اهل کجاست از be + from + نام مکان استفاده می‌کنیم."},"examples":[{"en":"I'm from Iran.","fa":"من اهل ایران هستم."},{"en":"She's from France.","fa":"او اهل فرانسه است."}],"cefr":"A1","status":"approved"}},
+    {"kind":"grammar_point","external_id":"g_country_nationality","data":{"lesson_key":"a1-countries-02","slug":"a1-country-nationality","title":"Country vs. nationality","rule_summary":"Country names and nationality words are related but not always the same form.","explanation":{"fa":"نام کشور و ملیت معمولاً دو شکل متفاوت‌اند؛ مثل Germany و German."},"examples":[{"en":"Germany — German","fa":"آلمان — آلمانی"},{"en":"France — French","fa":"فرانسه — فرانسوی"}],"cefr":"A1","status":"approved"}},
+
+    {"kind":"dialogue","external_id":"d_countries_class","data":{"lesson_key":"a1-countries-01","title":"New classmates","setting":"classroom","cefr":"A1","topic":"countries-nationalities","characters":["Sara","Jonas"],"turns":[{"order":1,"speaker":"Sara","text":"Hi! Where are you from?","translation_fa":"سلام! اهل کجایی؟"},{"order":2,"speaker":"Jonas","text":"I'm from Germany. And you?","translation_fa":"اهل آلمانم. تو چطور؟"},{"order":3,"speaker":"Sara","text":"I'm from Iran.","translation_fa":"من اهل ایرانم."},{"order":4,"speaker":"Jonas","text":"Nice to meet you!","translation_fa":"از آشنایی با تو خوشحالم!"}],"status":"approved"}},
+    {"kind":"dialogue","external_id":"d_nationality_meet","data":{"lesson_key":"a1-countries-02","title":"At an event","setting":"community event","cefr":"A1","topic":"countries-nationalities","characters":["Claire","Emre"],"turns":[{"order":1,"speaker":"Claire","text":"Are you Turkish?","translation_fa":"ترک هستی؟"},{"order":2,"speaker":"Emre","text":"Yes, I am. I'm from Turkey.","translation_fa":"بله. اهل ترکیه‌ام."},{"order":3,"speaker":"Emre","text":"Are you French?","translation_fa":"فرانسوی هستی؟"},{"order":4,"speaker":"Claire","text":"Yes. I'm from France.","translation_fa":"بله. اهل فرانسه‌ام."}],"status":"approved"}},
+
+    {"kind":"exercise","external_id":"ex_country_origin","data":{"lesson_key":"a1-countries-01","exercise_type":"multiple_choice","prompt":{"fa":"«اهل کجایی؟» کدام است؟"},"options":["Where are you from?","What's your name?","How old are you?","Where do you live?"],"answer":{"value":"Where are you from?"},"difficulty":1,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_country_build","data":{"lesson_key":"a1-countries-01","exercise_type":"sentence_building","prompt":{"fa":"«من اهل ایران هستم.» را بساز.","tokens":["Iran","from","I'm"]},"answer":{"tokens":["I'm","from","Iran"],"text":"I'm from Iran."},"difficulty":1,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_country_match_german","data":{"lesson_key":"a1-countries-02","exercise_type":"multiple_choice","prompt":{"fa":"ملیت مربوط به Germany کدام است؟"},"options":["German","French","Iranian","Turkish"],"answer":{"value":"German"},"difficulty":1,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_country_listen","data":{"lesson_key":"a1-countries-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و کشور را انتخاب کن.","audio_text":"I'm from France."},"options":["France","Germany","Iran","Turkey"],"answer":{"value":"France"},"difficulty":1,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_country_speak","data":{"lesson_key":"a1-countries-01","exercise_type":"speaking","prompt":{"instruction_fa":"بگو: من اهل ایران هستم."},"answer":{"expected_text":"I'm from Iran."},"difficulty":1,"cefr":"A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_country_fill","data":{"lesson_key":"a1-countries-02","exercise_type":"fill_blank","prompt":{"text":"I'm ___ .","hint_fa":"ایرانی"},"options":["Iranian","Iran","France","German"],"answer":{"value":"Iranian"},"difficulty":2,"cefr":"A1","status":"approved"}}
+  ]
+}
