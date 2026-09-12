@@ -1,0 +1,63 @@
+-- English (en-US) C1 curriculum for Persian-speaking learners.
+-- Advanced continuation after B2: precision, inference, discourse control,
+-- register, synthesis, mediation, argumentation, and flexible real-world use.
+
+INSERT IGNORE INTO curriculum_units (
+  course_id, target_language_id, cefr_level_id, skill_id, topic_id,
+  slug, title, learning_objective, sort_order, expected_lessons, status, metadata
+)
+SELECT
+  c.id, c.target_language_id, lvl.id, s.id, t.id,
+  u.slug, u.title, u.objective, u.sort_order, 3, 'approved',
+  JSON_OBJECT('can_do', u.can_do, 'level_design', 'C1 precision, flexibility, inference, mediation and discourse control')
+FROM (
+  SELECT 10 sort_order,'communication' skill_slug,'simple-messages' topic_slug,'c1-reading-between-lines' slug,'Reading Between the Lines' title,'Infer implied meaning, reservations and stance without treating uncertain subtext as fact.' objective,'I can infer implied meaning and qualify my interpretation.' can_do
+  UNION ALL SELECT 20,'communication','simple-messages','c1-complex-anecdotes','Complex Anecdotes & Reflection','Tell layered stories with reflection, counterfactual perspective and a clear point.','I can tell a complex anecdote and reflect on why it mattered.'
+  UNION ALL SELECT 30,'communication','questions','c1-precision-reformulation','Precision & Reformulation','Reformulate claims, narrow scope and express fine distinctions precisely.','I can repair and refine my wording when the first version is imprecise.'
+  UNION ALL SELECT 40,'communication','questions','c1-ambiguity-clarification','Ambiguity & Clarification','Identify ambiguity, surface assumptions and negotiate shared definitions.','I can clarify ambiguous language and expose hidden assumptions.'
+  UNION ALL SELECT 50,'social','polite-language','c1-tone-subtext','Tone, Subtext & Intent','Interpret tone and subtext while distinguishing intended meaning from likely reception.','I can discuss how wording, tone and context affect interpretation.'
+  UNION ALL SELECT 60,'communication','simple-messages','c1-speculation-inference','Speculation & Inference','Make evidence-based deductions and rank plausible explanations with calibrated certainty.','I can speculate and infer without overstating certainty.'
+  UNION ALL SELECT 70,'communication','requests','c1-counterfactual-reasoning','Counterfactual Reasoning','Evaluate alternative past outcomes and connect them to useful future decisions.','I can reason about realistic counterfactuals and their consequences.'
+  UNION ALL SELECT 80,'communication','simple-messages','c1-weighing-evidence','Weighing Evidence','Compare evidence quality, methodology, representativeness and competing explanations.','I can weigh different kinds of evidence before reaching a conclusion.'
+  UNION ALL SELECT 90,'communication','simple-messages','c1-qualifying-claims','Qualifying Claims','Limit generalizations with caveats, scope, exceptions and conditions.','I can qualify a claim so its strength matches the evidence.'
+  UNION ALL SELECT 100,'social','polite-language','c1-diplomatic-disagreement','Diplomatic Disagreement','Challenge premises and conclusions constructively while preserving common ground.','I can disagree clearly without making disagreement personal.'
+  UNION ALL SELECT 110,'communication','requests','c1-persuasion-concession','Persuasion & Concession','Build persuasive arguments that acknowledge objections and opposing evidence.','I can persuade while addressing the strongest reasonable counterargument.'
+  UNION ALL SELECT 120,'communication','requests','c1-negotiating-tradeoffs','Negotiating Complex Trade-offs','Negotiate constraints, non-negotiables, packages and workable compromises.','I can negotiate several competing priorities and reach a workable compromise.'
+  UNION ALL SELECT 130,'work-study','jobs','c1-chairing-discussions','Chairing Discussions','Structure discussion, manage time and participation, test consensus and close with actions.','I can chair a complex discussion and keep it moving toward a decision.'
+  UNION ALL SELECT 140,'work-study','jobs','c1-turn-taking-interruption','Turn-taking & Interruption','Enter, yield and repair turns naturally in fast professional discussion.','I can manage interruption and turn-taking without losing clarity or rapport.'
+  UNION ALL SELECT 150,'social','polite-language','c1-conflict-deescalation','Conflict De-escalation','Lower tension, reframe blame and set boundaries while keeping the substantive issue visible.','I can de-escalate conflict without avoiding the real problem.'
+  UNION ALL SELECT 160,'work-study','jobs','c1-critical-feedback','Critical Feedback','Give specific, balanced and actionable critical feedback and respond to defensiveness.','I can give difficult feedback in a precise and constructive way.'
+  UNION ALL SELECT 170,'work-study','jobs','c1-strategic-priorities','Strategic Priorities','Discuss strategic priorities, capacity allocation, alignment and deliberate deprioritization.','I can explain strategic choices and what must be deprioritized.'
+  UNION ALL SELECT 180,'work-study','jobs','c1-risk-contingency','Risk & Contingency','Evaluate risk exposure, dependencies, thresholds, mitigation and fallback plans.','I can discuss risk and design practical contingency responses.'
+  UNION ALL SELECT 190,'work-study','jobs','c1-professional-networking','Professional Networking','Build rapport, make relevant introductions and sustain reciprocal professional relationships.','I can network naturally without making the interaction transactional.'
+  UNION ALL SELECT 200,'work-study','jobs','c1-leadership-interviews','Leadership Interviews','Present leadership judgment, ownership, delegation and learning from uncertain outcomes.','I can discuss leadership decisions with evidence, nuance and reflection.'
+  UNION ALL SELECT 210,'work-study','school-study','c1-academic-discussion','Academic Discussion','Evaluate theses, premises, relevance, frameworks and supporting evidence in academic discussion.','I can participate in an advanced academic discussion and challenge ideas precisely.'
+  UNION ALL SELECT 220,'work-study','school-study','c1-synthesizing-sources','Synthesizing Sources','Integrate multiple sources around themes, convergence, divergence and unresolved questions.','I can synthesize sources instead of summarizing them one by one.'
+  UNION ALL SELECT 230,'communication','simple-messages','c1-comparing-viewpoints','Comparing Viewpoints','Compare assumptions, emphasis and lenses across developed viewpoints.','I can compare perspectives fairly and identify both overlap and divergence.'
+  UNION ALL SELECT 240,'work-study','school-study','c1-evaluating-methods','Evaluating Methods','Evaluate methodology, sampling, validity, reliability, limitations and replication.','I can discuss what a method supports and what it cannot establish.'
+  UNION ALL SELECT 250,'communication','questions','c1-presenting-arguments','Presenting Arguments','Present a complex argument with explicit premises, evidence, implications and rebuttal.','I can structure and signpost a sustained argument clearly.'
+  UNION ALL SELECT 260,'work-study','jobs','c1-formal-proposals','Formal Proposals','Develop formal proposals with rationale, feasibility, criteria, implementation and contingency.','I can present a credible formal proposal and justify its recommendation.'
+  UNION ALL SELECT 270,'communication','simple-messages','c1-media-framing-bias','Media Framing & Bias','Analyze framing, selection, loaded language, omitted context and source interests.','I can identify how framing affects interpretation without assuming every bias is falsehood.'
+  UNION ALL SELECT 280,'communication','simple-messages','c1-news-analysis','News Analysis','Separate confirmed facts, preliminary claims, context, implications and stakeholder interests.','I can analyze an unfolding news story while calibrating uncertainty.'
+  UNION ALL SELECT 290,'daily-life','common-actions','c1-tech-ethics','Technology & Ethics','Discuss consent, transparency, accountability, bias, automation and oversight.','I can discuss technology ethics through concrete trade-offs and accountability.'
+  UNION ALL SELECT 300,'daily-life','common-actions','c1-environment-policy','Environment & Policy','Evaluate environmental policy through effectiveness, equity, incentives and implementation.','I can discuss environmental policy without reducing it to a simple binary.'
+  UNION ALL SELECT 310,'social','simple-messages','c1-social-change','Social Change','Analyze changing norms, attitudes, institutions, resistance and interacting causes.','I can discuss social change with multiple causes and levels of analysis.'
+  UNION ALL SELECT 320,'social','likes-dislikes','c1-culture-identity','Culture & Identity','Discuss identity, belonging, heritage, adaptation and stereotypes without crude generalization.','I can discuss culture and identity with nuance and flexibility.'
+  UNION ALL SELECT 330,'social','polite-language','c1-boundaries-repair','Boundaries & Relationship Repair','State boundaries, discuss breaches of trust and negotiate credible repair.','I can discuss boundaries and relationship repair with clarity and tact.'
+  UNION ALL SELECT 340,'health-body','basic-health','c1-health-decisions','Health Decisions','Weigh benefits, risks, uncertainty, preferences and informed choices in routine health decisions.','I can discuss health decisions while distinguishing evidence from personal preferences.'
+  UNION ALL SELECT 350,'shopping-money','prices','c1-economic-tradeoffs','Economic Trade-offs','Discuss incentives, distribution, affordability, productivity and unintended effects.','I can explain economic trade-offs and distributional effects in accessible language.'
+  UNION ALL SELECT 360,'travel-transport','transport','c1-complex-travel-resolution','Complex Travel Resolution','Resolve multi-stage travel disruption, rerouting, entitlements and reimbursement.','I can manage a complex travel problem and preserve the information needed for follow-up.'
+  UNION ALL SELECT 370,'communication','requests','c1-bureaucracy-rights','Bureaucracy & Rights','Navigate eligibility, procedures, evidence, review, deadlines and formal appeal.','I can challenge an administrative decision through the correct procedure.'
+  UNION ALL SELECT 380,'social','simple-messages','c1-community-policy','Community Policy','Discuss access, equity, allocation, consultation and stakeholder impact in local policy.','I can discuss community policy and make trade-offs explicit.'
+  UNION ALL SELECT 390,'social','hobbies','c1-art-interpretation','Art & Interpretation','Develop and justify interpretations using form, symbolism, context and alternative readings.','I can discuss an artwork or film with a developed evidence-based interpretation.'
+  UNION ALL SELECT 400,'social','polite-language','c1-humor-irony','Humor, Irony & Sarcasm','Interpret humor, irony, sarcasm, understatement and context-sensitive teasing.','I can understand and discuss humor that depends on implication and relationship.'
+  UNION ALL SELECT 410,'communication','simple-messages','c1-metaphor-idiom','Metaphor & Idiom','Interpret figurative language, idioms, connotation and conventional imagery.','I can understand figurative language beyond its literal wording.'
+  UNION ALL SELECT 420,'communication','polite-language','c1-register-shifting','Register Shifting','Adapt directness, formality, concision and deference to audience and purpose.','I can shift register deliberately while preserving my meaning and voice.'
+  UNION ALL SELECT 430,'communication','requests','c1-mediating-perspectives','Mediating Perspectives','Represent competing perspectives accurately, identify interests and build common ground.','I can mediate disagreement without misrepresenting either side.'
+  UNION ALL SELECT 440,'communication','questions','c1-multisource-problem-solving','Multi-source Problem Solving','Synthesize conflicting sources, constraints, assumptions and scenarios into a defensible recommendation.','I can solve a complex problem using several incomplete or conflicting sources.'
+  UNION ALL SELECT 450,'communication','simple-messages','c1-integrated-capstone','Integrated C1 Capstone','Integrate inference, synthesis, mediation, qualification, reformulation and register control in one complex task.','I can control complex language flexibly, precisely and appropriately across an integrated task.'
+) u
+JOIN courses c ON c.slug = 'fa-en-us'
+JOIN cefr_levels lvl ON lvl.code = 'C1'
+JOIN skills s ON s.slug = u.skill_slug
+JOIN topics t ON t.slug = u.topic_slug;
