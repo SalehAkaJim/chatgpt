@@ -1,0 +1,34 @@
+{
+  "source_text_hash": "895549448043468bab6d5977b5e65152c72835c4f4903fd8bd402af6d6ff6004",
+  "voice_id": "wBXNqKUATyqu0RtYt25i",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "653171e94570c936d019faa07f2362b94fa344e31bcfdfee2f917e41d2b3992c",
+  "voice_key": "character:chris:male_bright",
+  "voice_name": "Adam",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "en"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "cd5a2bfb53146f21b04586873dac044869885a2a55c805c61fb3256dea44cafd",
+  "duration_ms": 6164,
+  "generated_at": "2026-09-12T14:22:29.965117+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "16ef10dd-5d43-56f4-aab3-83e8e56a29ab",
+      "entity_key": "d_c1_turn_taking_interruption_scene_2:2"
+    }
+  ]
+}
