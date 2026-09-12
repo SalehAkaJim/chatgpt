@@ -1,0 +1,110 @@
+name: One-time Generate English C1 Audio
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/one-time-generate-english-c1-audio.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: one-time-english-c1-audio-generation
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      CONTENT_TTS_CONCURRENCY: '2'
+      ELEVENLABS_MODEL_ID: eleven_multilingual_v2
+      ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
+
+    steps:
+      - name: Record explicit paid-generation approval
+        run: echo 'Paid C1 audio generation explicitly approved by the user.'
+
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Require ElevenLabs connection
+        run: |
+          if [ -z "${ELEVENLABS_API_KEY:-}" ]; then
+            echo 'ELEVENLABS_API_KEY GitHub secret is missing.' >&2
+            exit 2
+          fi
+
+      - name: Validate C1 content and explicit cast
+        run: python database/import/en/c1.py --dry-run
+
+      - name: Build strict C1 audio manifest
+        run: |
+          mkdir -p audio/manifests/en
+          python scripts/build_audio_manifest.py content/production/en/C1 \
+            --level C1 --locale en-US --strict-characters \
+            --output audio/manifests/en/C1.json
+
+      - name: Resolve and lock every required voice
+        run: python scripts/resolve_audio_voices.py audio/manifests/en/C1.json --write-lock
+
+      - name: Generate all missing C1 audio
+        run: |
+          python scripts/generate_audio.py audio/manifests/en/C1.json \
+            --confirm-paid-generation --only-missing --concurrency 2
+
+      - name: Validate generated C1 audio
+        run: python scripts/validate_audio_manifest.py audio/manifests/en/C1.json --require-generated
+
+      - name: Export C1 audio SQL
+        run: |
+          python scripts/export_audio_sql.py audio/manifests/en/C1.json \
+            --status validated \
+            --output database/import/en/c1_audio.sql
+
+      - name: C1 audio summary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('audio/manifests/en/C1.json')
+          d = json.loads(p.read_text())
+          counts = {}
+          for x in d['items']:
+              counts[x['category']] = counts.get(x['category'], 0) + 1
+          print('manifest_items=', len(d['items']))
+          print('categories=', counts)
+          print('generated_mp3=', len(list(Path('audio/generated/en-US').rglob('*.mp3'))))
+          PY
+
+      - name: Commit generated C1 audio and SQL
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            audio/cast/en-US.json \
+            audio/generated/en-US \
+            audio/manifests/en/C1.json \
+            audio/voices/en-US.lock.json \
+            database/import/en/c1_audio.sql
+          if git diff --cached --quiet; then
+            echo 'No C1 audio changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Generate English C1 production audio [skip ci]'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
