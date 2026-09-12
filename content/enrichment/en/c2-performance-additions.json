@@ -1,0 +1,1022 @@
+{
+  "c2-implicit-stance": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_implicit_stance_transfer",
+      "data": {
+        "lesson_key": "c2-implicit-stance-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "برای همکارت یک یادداشت تحلیلی انگلیسی بنویس: در پاسخ زیر چه چیزی صریحاً پذیرفته شده و چه چیزی فقط قابل استنباط است؟ دو نشانهٔ زبانی، یک برداشت جایگزینِ قابل‌دفاع و یک پرسش روشن‌کننده بیاور. دربارهٔ انگیزهٔ نویسنده حکم قطعی نده.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "words",
+            "min": 80,
+            "max": 160
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Reply about a pilot",
+              "text_en": "You asked the project lead to approve a permanent Saturday workshop. She replied: 'I can see the case for testing a shorter session, provided it can be staffed without reducing weekday support. It would be helpful to see what the volunteers think before we discuss dates.' No budget decision has been made, and the volunteers have not yet been consulted.",
+              "text_fa": "از مسئول پروژه خواستی یک کارگاه دائمی شنبه‌ها را تأیید کند. پاسخ داد: «برای آزمایش جلسه‌ای کوتاه‌تر دلایلی می‌بینم، به شرط اینکه نیروی آن بدون کاهش پشتیبانی روزهای کاری تأمین شود. خوب است پیش از بحث دربارهٔ تاریخ‌ها، نظر داوطلبان را بدانیم.» هنوز دربارهٔ بودجه تصمیمی گرفته نشده و با داوطلبان مشورت نشده است.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "The lead acknowledges a case for a limited trial, not a permanent Saturday workshop. 'Provided' makes staffing a condition, while 'before we discuss dates' places consultation ahead of scheduling. The reply may signal reservations about capacity, but it could equally reflect a routine wish to consult volunteers before making a commitment. Neither reading establishes her private attitude towards Saturday provision. We should therefore avoid reporting either approval or opposition to the team. I would ask: if the volunteers support a shorter trial and weekday cover is maintained, would she be ready to consider it, or are there further conditions to address?",
+          "model_translation_fa": "مسئول پروژه برای یک آزمایش محدود دلایلی می‌پذیرد، نه اینکه کارگاه دائمی شنبه‌ها را تصویب کند. provided تأمین نیرو را شرط می‌کند و before we discuss dates مشورت را مقدم بر زمان‌بندی قرار می‌دهد. شاید پاسخ نشانهٔ نگرانی دربارهٔ ظرفیت باشد، اما ممکن است صرفاً نشان‌دهندهٔ تمایل معمول به مشورت پیش از تعهد باشد. هیچ‌یک نظر خصوصی او دربارهٔ برنامهٔ شنبه‌ها را ثابت نمی‌کند. پس نباید به تیم خبر موافقت یا مخالفت بدهیم. می‌پرسم: اگر داوطلبان با آزمایش کوتاه‌تر موافق باشند و پوشش روزهای کاری حفظ شود، آمادهٔ بررسی آن هستید یا شرط دیگری هم وجود دارد؟",
+          "required_points_fa": [
+            "تمایز پذیرش بررسی یک آزمایش با تصویب کارگاه دائمی",
+            "تحلیل provided و before یا دو نشانهٔ دقیق دیگر",
+            "بیان برداشت جایگزین به‌صورت احتمالی، نه ذهن‌خوانی",
+            "پرسش روشن‌کننده دربارهٔ شرط یا فرایند تصمیم"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "تمایز پذیرش بررسی یک آزمایش با تصویب کارگاه دائمی؛ تحلیل provided و before یا دو نشانهٔ دقیق دیگر؛ بیان برداشت جایگزین به‌صورت احتمالی، نه ذهن‌خوانی؛ پرسش روشن‌کننده دربارهٔ شرط یا فرایند تصمیم؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "The lead acknowledges a case for a limited trial, not a permanent Saturday workshop. 'Provided' makes staffing a condition, while 'before we discuss dates' places consultation ahead of scheduling. The reply may signal reservations about capacity, but it could equally reflect a routine wish to consult volunteers before making a commitment. Neither reading establishes her private attitude towards Saturday provision. We should therefore avoid reporting either approval or opposition to the team. I would ask: if the volunteers support a shorter trial and weekday cover is maintained, would she be ready to consider it, or are there further conditions to address?",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-layered-narrative": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_layered_narrative_transfer",
+      "data": {
+        "lesson_key": "c2-layered-narrative-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "از دید برگزارکننده، یک روایت تأملی انگلیسی بنویس. سه مقطع زمانی را روشن نگه دار، جزئیات کلید را در ابتدا و پایان با معنایی متفاوت به کار ببر و میان برداشت آن زمان و دانستهٔ بعدی فرق بگذار. جزئیات احساسی خیالی مجاز است، اما وقایع منبع را تغییر نده.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "words",
+            "min": 80,
+            "max": 160
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Notes for a retrospective narrative",
+              "text_en": "At the first rehearsal in March, you were the organiser. You found a spare key on the piano and assumed the pianist had left it there by mistake. In April, she withdrew from the concert; you took her departure personally. In June, with her permission, you read an email showing that the rehearsal times had repeatedly conflicted with her evening shifts. You now see the spare key as a missed invitation to ask what was wrong, not proof that you should have known the reason.",
+              "text_fa": "در اولین تمرین در مارس، تو برگزارکننده بودی. کلید یدکی را روی پیانو دیدی و فکر کردی نوازنده آن را اشتباهی جا گذاشته است. در آوریل او از کنسرت کناره‌گیری کرد و تو رفتنش را شخصی برداشت کردی. در ژوئن، با اجازهٔ او ایمیلی خواندی که نشان می‌داد ساعت تمرین‌ها بارها با شیفت‌های عصرش تداخل داشته است. حالا کلید را فرصتی ازدست‌رفته برای پرسیدن مشکل می‌بینی، نه مدرکی که باید علت را از قبل می‌دانستی.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "The spare key lay on the piano in March, so ordinary that I barely noticed it. I assumed she had forgotten it and put it in a drawer. When she withdrew in April, that small object seemed to confirm a story I had already begun telling myself: she had stopped caring about our concert. Only in June, reading her email with her permission, did I understand how often our rehearsals had collided with her evening shifts. The key could not have told me that. Looking back, I see it less as a warning I should somehow have decoded than as a moment when I might have asked a better question.",
+          "model_translation_fa": "در مارس کلید یدکی روی پیانو بود؛ آن‌قدر عادی که تقریباً ندیدمش. فرض کردم فراموشش کرده و در کشو گذاشتمش. وقتی در آوریل کنار کشید، آن شیء کوچک انگار داستانی را تأیید می‌کرد که برای خودم ساخته بودم: دیگر کنسرت برایش مهم نبود. فقط در ژوئن، وقتی با اجازه‌اش ایمیل را خواندم، فهمیدم تمرین‌ها چند بار با شیفت‌های عصرش تداخل داشته‌اند. کلید نمی‌توانست این را به من بگوید. امروز آن را کمتر هشداری می‌بینم که باید رمزگشایی‌اش می‌کردم و بیشتر لحظه‌ای که می‌توانستم پرسش بهتری مطرح کنم.",
+          "required_points_fa": [
+            "توالی روشن مارس، آوریل و ژوئن با امکان بازگشت روایی",
+            "تمایز فرض اشتباه اولیه، احساس شخصی و مدرک بعدی",
+            "بازگشت معنادار به کلید بدون نسبت دادن علم غیب به راوی",
+            "حفظ علت کناره‌گیری و رضایت برای خواندن ایمیل"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "توالی روشن مارس، آوریل و ژوئن با امکان بازگشت روایی؛ تمایز فرض اشتباه اولیه، احساس شخصی و مدرک بعدی؛ بازگشت معنادار به کلید بدون نسبت دادن علم غیب به راوی؛ حفظ علت کناره‌گیری و رضایت برای خواندن ایمیل؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "The spare key lay on the piano in March, so ordinary that I barely noticed it. I assumed she had forgotten it and put it in a drawer. When she withdrew in April, that small object seemed to confirm a story I had already begun telling myself: she had stopped caring about our concert. Only in June, reading her email with her permission, did I understand how often our rehearsals had collided with her evening shifts. The key could not have told me that. Looking back, I see it less as a warning I should somehow have decoded than as a moment when I might have asked a better question.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-lexical-precision": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_lexical_precision_transfer",
+      "data": {
+        "lesson_key": "c2-lexical-precision-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "متن گزارش را به انگلیسی بازنویسی کن، سپس سه انتخاب واژگانی مهمت را کوتاه توضیح بده. قدرت ادعا، موضع شرکت‌کنندگان و طبیعی بودن هم‌آیی‌ها را دقیق کن؛ نظر ده نفر را به همهٔ بازدیدکنندگان تعمیم نده.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "words",
+            "min": 80,
+            "max": 160
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Draft report and underlying notes",
+              "text_en": "Draft: 'The trial proved that visitors prefer evening workshops. Participants were stubborn about keeping the sessions, and we will make a discussion about permanent provision.' Notes: Ten people attended one evening trial; eight said they would attend again. There was no daytime comparison. Two participants repeatedly requested another trial and offered to help organise it. The committee has agreed to discuss options, not to introduce a permanent programme.",
+              "text_fa": "پیش‌نویس: «آزمایش ثابت کرد بازدیدکنندگان کارگاه‌های عصر را ترجیح می‌دهند. شرکت‌کنندگان دربارهٔ حفظ جلسات لجباز بودند و دربارهٔ برنامهٔ دائمی یک بحث خواهیم ساخت.» یادداشت‌ها: ده نفر در یک جلسهٔ آزمایشی عصر شرکت کردند؛ هشت نفر گفتند دوباره می‌آیند. مقایسه‌ای با روز انجام نشد. دو نفر چند بار درخواست آزمایش دیگری کردند و برای سازمان‌دهی کمک پیشنهاد دادند. کمیته فقط با بحث دربارهٔ گزینه‌ها موافقت کرده، نه ایجاد برنامهٔ دائمی.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "The evening trial received encouraging feedback: eight of its ten participants said they would attend again. This does not establish a preference for evenings over daytime sessions, since no comparison was made. Two participants repeatedly requested a further trial and offered to help organise it. The committee will discuss the options; it has not committed to permanent provision. I replaced 'proved' with a bounded description of the feedback to avoid overstating the evidence. Describing the repeated requests preserves the observed behaviour without importing the criticism carried by 'stubborn'. Finally, 'discuss the options' is idiomatic and avoids suggesting that a permanent programme has already been agreed.",
+          "model_translation_fa": "جلسهٔ آزمایشی عصر بازخورد امیدوارکننده‌ای داشت: هشت نفر از ده شرکت‌کننده گفتند دوباره می‌آیند. چون مقایسه‌ای انجام نشده، این ترجیح عصر به روز را ثابت نمی‌کند. دو نفر چند بار درخواست آزمایشی دیگر کردند و کمک پیشنهاد دادند. کمیته گزینه‌ها را بررسی خواهد کرد و به برنامهٔ دائمی متعهد نشده است. proved را با توصیف محدود بازخورد جایگزین کردم تا شواهد را بزرگ‌نمایی نکنم. توصیف درخواست‌های تکرارشده رفتار مشاهده‌شده را بدون بار انتقادی stubborn حفظ می‌کند. در پایان، discuss the options طبیعی است و القا نمی‌کند که دربارهٔ برنامهٔ دائمی توافق شده است.",
+          "required_points_fa": [
+            "جایگزینی proved و ادعای ترجیح با گزارش محدود به دادهٔ موجود",
+            "حفظ هشت نفر از ده نفر و نبود مقایسهٔ روزانه",
+            "حذف قضاوت منفی بی‌پشتوانهٔ stubborn با توصیف رفتار",
+            "اصلاح make a discussion و حفظ حد تعهد کمیته"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "جایگزینی proved و ادعای ترجیح با گزارش محدود به دادهٔ موجود؛ حفظ هشت نفر از ده نفر و نبود مقایسهٔ روزانه؛ حذف قضاوت منفی بی‌پشتوانهٔ stubborn با توصیف رفتار؛ اصلاح make a discussion و حفظ حد تعهد کمیته؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "The evening trial received encouraging feedback: eight of its ten participants said they would attend again. This does not establish a preference for evenings over daytime sessions, since no comparison was made. Two participants repeatedly requested a further trial and offered to help organise it. The committee will discuss the options; it has not committed to permanent provision. I replaced 'proved' with a bounded description of the feedback to avoid overstating the evidence. Describing the repeated requests preserves the observed behaviour without importing the criticism carried by 'stubborn'. Finally, 'discuss the options' is idiomatic and avoids suggesting that a permanent programme has already been agreed.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-strategic-ambiguity": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_strategic_ambiguity_transfer",
+      "data": {
+        "lesson_key": "c2-strategic-ambiguity-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "وعدهٔ مبهم زیر را برای اعضای باشگاه به انگلیسی بازنویسی کن و کوتاه توضیح بده چه ابهامی را حذف و چه انعطافی را حفظ کردی. مسئول تصمیم، مهلت اعلام و شرط انتخاب تاریخ باید معلوم باشد؛ رویدادی را که هنوز اتاق ندارد قطعی اعلام نکن.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "words",
+            "min": 80,
+            "max": 160
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Training announcement to clarify",
+              "text_en": "Original: 'Extra induction sessions will be arranged shortly where feasible.' Available facts: Coordinator Robin will learn on Monday whether Room A is available on Wednesday. If it is unavailable, Room B is already reserved for Friday. The trainer can attend either date. Members need the final date by Monday at 6 p.m. Both sessions would cover the same material, and only one will run.",
+              "text_fa": "متن اولیه: «جلسات معارفهٔ اضافی به‌زودی در صورت امکان ترتیب داده می‌شود.» اطلاعات موجود: هماهنگ‌کننده، رابین، دوشنبه می‌فهمد اتاق A برای چهارشنبه آزاد است یا نه. اگر آزاد نباشد، اتاق B از قبل برای جمعه رزرو شده است. مدرس در هر دو تاریخ می‌تواند حضور داشته باشد. اعضا باید تا دوشنبه ساعت شش عصر تاریخ نهایی را بدانند. محتوای هر دو حالت یکسان است و فقط یک جلسه برگزار می‌شود.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "One additional induction session will run this week. Robin will confirm the date by 6 p.m. on Monday. If Room A is available, the session will take place there on Wednesday; otherwise, it will take place in the reserved Room B on Friday. The trainer and material will be the same in either case. Please wait for Monday's confirmation before making plans for Wednesday. This wording replaces 'shortly' with a clear deadline and assigns responsibility for the announcement. It retains flexibility over the date, but ties that flexibility to a specific condition and a confirmed alternative rather than the undefined phrase 'where feasible'.",
+          "model_translation_fa": "این هفته یک جلسهٔ معارفهٔ اضافی برگزار می‌شود. رابین تا دوشنبه ساعت شش عصر تاریخ را تأیید می‌کند. اگر اتاق A آزاد باشد، جلسه چهارشنبه آنجا برگزار می‌شود؛ وگرنه جمعه در اتاق B رزروشده خواهد بود. مدرس و محتوا در هر دو حالت یکسان است. پیش از برنامه‌ریزی برای چهارشنبه منتظر تأیید دوشنبه بمانید. این عبارت به‌جای shortly مهلتی روشن می‌دهد و مسئول اطلاع‌رسانی را مشخص می‌کند. انعطاف تاریخ را نگه می‌دارد، اما آن را به شرطی مشخص و جایگزینی قطعی پیوند می‌دهد، نه عبارت تعریف‌نشدهٔ where feasible.",
+          "required_points_fa": [
+            "یک جلسه در چهارشنبه در صورت تأیید اتاق A، وگرنه جمعه در اتاق B",
+            "مسئولیت رابین و مهلت دوشنبه ساعت شش عصر",
+            "تمایز تاریخ مشروط با جایگزین رزروشده",
+            "توضیح حذف shortly و where feasible بدون از بین بردن انعطاف لازم"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "یک جلسه در چهارشنبه در صورت تأیید اتاق A، وگرنه جمعه در اتاق B؛ مسئولیت رابین و مهلت دوشنبه ساعت شش عصر؛ تمایز تاریخ مشروط با جایگزین رزروشده؛ توضیح حذف shortly و where feasible بدون از بین بردن انعطاف لازم؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "One additional induction session will run this week. Robin will confirm the date by 6 p.m. on Monday. If Room A is available, the session will take place there on Wednesday; otherwise, it will take place in the reserved Room B on Friday. The trainer and material will be the same in either case. Please wait for Monday's confirmation before making plans for Wednesday. This wording replaces 'shortly' with a clear deadline and assigns responsibility for the announcement. It retains flexibility over the date, but ties that flexibility to a specific condition and a confirmed alternative rather than the undefined phrase 'where feasible'.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-pragmatic-meaning": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_pragmatic_meaning_transfer",
+      "data": {
+        "lesson_key": "c2-pragmatic-meaning-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "دو پاسخ شفاهی انگلیسی ضبط کن: اول به برگزارکنندهٔ تازه‌کار، محترمانه اما روشن خطای تاریخ را بگو؛ سپس رو به مهمانان تاریخ درست را بدون سرزنش او اعلام کن. تفاوت لحن دو بخش را کوتاه توضیح بده. پیشنهاد اختیاری را جای اصلاح ضروری ننشان.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "seconds",
+            "min": 45,
+            "max": 90
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "A date error during a welcome session",
+              "text_en": "A new volunteer is leading a welcome session. Their slide says the workshop is on Tuesday, but the confirmed booking is Thursday at 5 p.m. You checked the booking with the organiser this morning. Guests are about to copy the date. You can speak briefly to the volunteer beside the screen, then address the room. There is no evidence that the volunteer caused the error.",
+              "text_fa": "داوطلب تازه‌کاری جلسهٔ خوشامدگویی را اداره می‌کند. اسلاید او کارگاه را سه‌شنبه نشان می‌دهد، اما رزرو قطعی برای پنجشنبه ساعت پنج عصر است. امروز صبح رزرو را با برگزارکننده بررسی کرده‌ای. مهمانان در آستانهٔ یادداشت کردن تاریخ‌اند. می‌توانی کنار پرده کوتاه با داوطلب حرف بزنی و سپس رو به جمع صحبت کنی. مدرکی نداریم که خطا تقصیر او باشد.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "To the volunteer: There's a date discrepancy we need to correct before people copy it. I checked the booking this morning: it's Thursday at five, not Tuesday. Shall I clarify it while you update the slide? To the guests: Before you note the date, one correction: the workshop is confirmed for Thursday at five p.m. Please use that date; we'll update the slide now. Privately, I make the required action explicit while offering practical help. Publicly, I focus on the accurate information rather than assigning blame for an error whose cause we don't know.",
+          "model_translation_fa": "به داوطلب: مغایرتی در تاریخ هست که باید پیش از یادداشت کردن افراد اصلاح کنیم. صبح رزرو را بررسی کردم: پنجشنبه ساعت پنج است، نه سه‌شنبه. تا اسلاید را عوض می‌کنی من توضیح بدهم؟ به مهمانان: پیش از یادداشت تاریخ، یک اصلاح: کارگاه برای پنجشنبه ساعت پنج عصر قطعی شده است. لطفاً همین تاریخ را ثبت کنید؛ اکنون اسلاید را اصلاح می‌کنیم. در گفت‌وگوی خصوصی اقدام لازم را صریح می‌گویم و کمک عملی پیشنهاد می‌دهم. در جمع بر اطلاعات درست تمرکز می‌کنم، نه مقصر دانستن کسی برای خطایی که علتش را نمی‌دانیم.",
+          "required_points_fa": [
+            "اصلاح روشن و مؤدبانهٔ خصوصی با اتکا به رزرو بررسی‌شده",
+            "اعلام عمومی پنجشنبه ساعت پنج عصر پیش از یادداشت مهمانان",
+            "پرهیز از نسبت دادن تقصیر و حفظ شأن داوطلب",
+            "توضیح تناسب لحن خصوصی و عمومی"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "اصلاح روشن و مؤدبانهٔ خصوصی با اتکا به رزرو بررسی‌شده؛ اعلام عمومی پنجشنبه ساعت پنج عصر پیش از یادداشت مهمانان؛ پرهیز از نسبت دادن تقصیر و حفظ شأن داوطلب؛ توضیح تناسب لحن خصوصی و عمومی؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "To the volunteer: There's a date discrepancy we need to correct before people copy it. I checked the booking this morning: it's Thursday at five, not Tuesday. Shall I clarify it while you update the slide? To the guests: Before you note the date, one correction: the workshop is confirmed for Thursday at five p.m. Please use that date; we'll update the slide now. Privately, I make the required action explicit while offering practical help. Publicly, I focus on the accurate information rather than assigning blame for an error whose cause we don't know.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-evidential-reasoning": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_evidential_reasoning_transfer",
+      "data": {
+        "lesson_key": "c2-evidential-reasoning-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک گزارش شفاهی انگلیسی برای دبیر خبر آماده کن. واقعیت ثبت‌شده، ادعای منبع و استنباط را از هم جدا کن؛ وابستگی دو وبلاگ به یک منبع را توضیح بده و برای ادعای مدت فروش، مدرک تکمیلی مشخص بخواه.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "seconds",
+            "min": 45,
+            "max": 90
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Evidence packet: ticket sales",
+              "text_en": "The organiser posted: 'All 120 tickets sold in twenty minutes after our new advert went live.' Two blogs quote that post and offer no additional reporting. The ticket system records 120 completed bookings, with the final booking at 9:24 a.m. The extract supplied to you omits the opening time. A volunteer remembers sales starting 'around nine', but did not keep a timed record. No data identify which buyers saw the advert.",
+              "text_fa": "برگزارکننده نوشته: «پس از انتشار آگهی جدید، هر ۱۲۰ بلیت در بیست دقیقه فروخته شد.» دو وبلاگ همان نوشته را نقل می‌کنند و گزارش مستقلی ندارند. سامانهٔ بلیت ۱۲۰ رزرو کامل ثبت کرده و آخرین رزرو ساعت ۹:۲۴ صبح است. خروجی دریافتی زمان آغاز فروش را ندارد. داوطلبی شروع را «حدود نه» به یاد می‌آورد، اما زمان را ثبت نکرده است. داده‌ای مشخص نمی‌کند کدام خریداران آگهی را دیده‌اند.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "The booking extract confirms 120 completed reservations, the last at nine twenty-four. The organiser says they sold in twenty minutes; that duration is not independently established here. Both blogs repeat the same post, so their agreement adds no separate corroboration. The volunteer's approximate recollection cannot supply a precise opening time. I would request the system's timestamp for the start of sales before reporting a verified duration. Nor can we attribute the sales to the advert: we have no evidence of who saw it, let alone what would have happened without it.",
+          "model_translation_fa": "خروجی رزرو ۱۲۰ رزرو کامل را تأیید می‌کند که آخرینشان ساعت ۹:۲۴ است. برگزارکننده می‌گوید فروش بیست دقیقه طول کشیده؛ این مدت اینجا مستقلاً اثبات نشده است. هر دو وبلاگ همان نوشته را تکرار می‌کنند، پس توافقشان تأیید جداگانه‌ای اضافه نمی‌کند. خاطرهٔ تقریبی داوطلب زمان دقیق شروع را نمی‌دهد. پیش از گزارش مدت تأییدشده، زمان ثبت‌شدهٔ آغاز فروش را از سامانه می‌خواهم. فروش را هم نمی‌توان به آگهی نسبت داد: نمی‌دانیم چه کسی آن را دیده، چه رسد به اینکه بدون آن چه رخ می‌داد.",
+          "required_points_fa": [
+            "نسبت دادن ادعای بیست دقیقه به برگزارکننده، نه تأیید آن",
+            "تشخیص اینکه دو وبلاگ تأیید مستقل نیستند",
+            "تفکیک ۱۲۰ رزرو و ۹:۲۴ از خاطرهٔ تقریبی و علت نامعلوم",
+            "درخواست زمان شروع ثبت‌شده و پرهیز از محاسبهٔ قطعی از around nine"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "نسبت دادن ادعای بیست دقیقه به برگزارکننده، نه تأیید آن؛ تشخیص اینکه دو وبلاگ تأیید مستقل نیستند؛ تفکیک ۱۲۰ رزرو و ۹:۲۴ از خاطرهٔ تقریبی و علت نامعلوم؛ درخواست زمان شروع ثبت‌شده و پرهیز از محاسبهٔ قطعی از around nine؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "The booking extract confirms 120 completed reservations, the last at nine twenty-four. The organiser says they sold in twenty minutes; that duration is not independently established here. Both blogs repeat the same post, so their agreement adds no separate corroboration. The volunteer's approximate recollection cannot supply a precise opening time. I would request the system's timestamp for the start of sales before reporting a verified duration. Nor can we attribute the sales to the advert: we have no evidence of who saw it, let alone what would have happened without it.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-causal-complexity": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_causal_complexity_transfer",
+      "data": {
+        "lesson_key": "c2-causal-complexity-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "در نقش تحلیلگر، ادعای علت‌ومعلولی زیر را به انگلیسی ارزیابی کن. یک سازوکار محتمل، یک تغییر هم‌زمان، خلاف‌واقع مرتبط و یک مقایسهٔ تکمیلی همراه با محدودیتش بیان کن. افزایش خام را با اثر خالص یک اقدام برابر نگیر.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "seconds",
+            "min": 45,
+            "max": 90
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Attendance trial at two fictional galleries",
+              "text_en": "Gallery North extended Saturday hours in May. Its monthly attendance rose from 400 in April to 520 in May. It also began free admission in May, when a city arts festival took place. Gallery South kept its hours unchanged and attendance rose from 300 to 330; it retained its entry charge. A draft summary credits all 120 additional North visits to longer hours. There are no earlier trend data or visitor-level records.",
+              "text_fa": "گالری شمال در مه ساعات شنبه را افزایش داد. حضور ماهانه از ۴۰۰ نفر در آوریل به ۵۲۰ نفر در مه رسید. از مه ورود را هم رایگان کرد و همان ماه جشنوارهٔ هنری شهر برگزار شد. گالری جنوب ساعتش را تغییر نداد و حضورش از ۳۰۰ به ۳۳۰ رسید؛ هزینهٔ ورودش هم حفظ شد. خلاصهٔ پیش‌نویس هر ۱۲۰ بازدید اضافهٔ شمال را به ساعات بیشتر نسبت می‌دهد. دادهٔ روند قبلی یا سابقهٔ فردی بازدیدکنندگان نداریم.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Longer hours could attract people who cannot visit earlier, but the extra 120 visits are not an isolated estimate of that effect. Free admission and the arts festival changed the context at the same time. The relevant counterfactual is North's May attendance without extended hours, not simply its April attendance. South offers a possible comparison, but its unchanged entry charge and our lack of earlier trends weaken that comparison. I would seek several months of attendance and pricing data from more comparable galleries. Even then, I would state the assumptions and remaining uncertainty rather than assign the entire increase to one cause.",
+          "model_translation_fa": "ساعات بیشتر ممکن است افرادی را جذب کند که زودتر نمی‌توانند بیایند، اما ۱۲۰ بازدید اضافه برآورد جداشدهٔ آن اثر نیست. ورود رایگان و جشنواره هم‌زمان زمینه را تغییر داده‌اند. خلاف‌واقع مرتبط حضور شمال در مه بدون افزایش ساعت است، نه صرفاً حضورش در آوریل. جنوب یک مقایسهٔ ممکن است، اما ثابت بودن هزینهٔ آن و نبود روندهای قبلی مقایسه را ضعیف می‌کند. دادهٔ چند ماه حضور و قیمت را از گالری‌های قابل‌مقایسه‌تر می‌خواهم. حتی آن زمان هم فرض‌ها و عدم قطعیت باقی‌مانده را می‌گویم، نه اینکه کل افزایش را به یک علت نسبت بدهم.",
+          "required_points_fa": [
+            "افزایش ۱۲۰نفری مشاهده‌شده، نه اثر خالص اثبات‌شدهٔ ساعت",
+            "سازوکار محتمل دسترسی و توجه به ورود رایگان یا جشنواره",
+            "خلاف‌واقعِ حضور شمال در همان ماه بدون تغییر ساعت",
+            "مقایسهٔ تکمیلی همراه با تفاوت قیمت، روند نامعلوم یا محدودیت دیگر"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "افزایش ۱۲۰نفری مشاهده‌شده، نه اثر خالص اثبات‌شدهٔ ساعت؛ سازوکار محتمل دسترسی و توجه به ورود رایگان یا جشنواره؛ خلاف‌واقعِ حضور شمال در همان ماه بدون تغییر ساعت؛ مقایسهٔ تکمیلی همراه با تفاوت قیمت، روند نامعلوم یا محدودیت دیگر؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "Longer hours could attract people who cannot visit earlier, but the extra 120 visits are not an isolated estimate of that effect. Free admission and the arts festival changed the context at the same time. The relevant counterfactual is North's May attendance without extended hours, not simply its April attendance. South offers a possible comparison, but its unchanged entry charge and our lack of earlier trends weaken that comparison. I would seek several months of attendance and pricing data from more comparable galleries. Even then, I would state the assumptions and remaining uncertainty rather than assign the entire increase to one cause.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-argument-diagnostics": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_argument_diagnostics_transfer",
+      "data": {
+        "lesson_key": "c2-argument-diagnostics-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "برای کمیته یک نقد استدلال انگلیسی بنویس. قوی‌ترین نکتهٔ پیشنهاد را بپذیر، مقدمهٔ پنهان را آشکار کن و گزینهٔ سومِ واقعاً موجود را توضیح بده. با نام بردن از مغالطه جای استدلال را پر نکن و بهترین بودن گزینهٔ سوم را بی‌دلیل قطعی ندان.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "words",
+            "min": 80,
+            "max": 160
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Committee memo and available alternative",
+              "text_en": "Memo: 'Online-only booking will save staff ten hours a week. Anything that saves staff time is the best choice for the club. We must therefore adopt online-only booking or accept permanent queues.' Further information: Fifteen members cannot use the online form independently. A partner organisation has offered two staffed booking sessions each week within its existing volunteer rota. No trial has yet measured whether those sessions could meet demand or how much staff time a mixed system would save.",
+              "text_fa": "یادداشت: «رزرو فقط آنلاین هفته‌ای ده ساعت وقت کارکنان را ذخیره می‌کند. هر چیزی که وقت کارکنان را ذخیره کند بهترین انتخاب باشگاه است. پس یا باید رزرو فقط آنلاین داشته باشیم یا صف‌های همیشگی را بپذیریم.» اطلاعات تکمیلی: پانزده عضو نمی‌توانند فرم آنلاین را مستقل استفاده کنند. سازمان همکار دو جلسهٔ رزرو با کمک نیرو در هر هفته و در چارچوب برنامهٔ فعلی داوطلبانش پیشنهاد داده است. هنوز آزمایشی نشان نداده جلسات تقاضا را پوشش می‌دهند یا سیستم ترکیبی چه میزان وقت کارکنان را ذخیره می‌کند.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "The memo's strongest point is the potential reduction in staff workload, although the ten-hour estimate should be checked. Its conclusion depends on treating staff time as sufficient to determine the best option, without weighing access for the fifteen members who need help. It also presents two choices as exhaustive despite the partner's offer of assisted booking sessions. A mixed arrangement is therefore a concrete alternative worth testing, not merely an imagined escape from the dilemma. That does not establish that it will meet demand or preserve the claimed saving. I recommend a short trial that measures waiting times, unmet demand and staff hours before the committee decides.",
+          "model_translation_fa": "قوی‌ترین نکتهٔ یادداشت امکان کاهش بار کاری است، هرچند برآورد ده ساعت باید بررسی شود. نتیجه به این فرض وابسته است که وقت کارکنان به‌تنهایی بهترین گزینه را تعیین می‌کند، بدون سنجش دسترسی پانزده عضو نیازمند کمک. همچنین با وجود پیشنهاد جلسات رزرو کمکی، دو انتخاب را تمام گزینه‌ها نشان می‌دهد. پس سیستم ترکیبی جایگزینی واقعی و ارزشمند برای آزمایش است، نه صرفاً راه فراری خیالی از دوگانه. این ثابت نمی‌کند تقاضا را پوشش می‌دهد یا صرفه‌جویی ادعاشده را حفظ می‌کند. آزمایشی کوتاه پیشنهاد می‌کنم که پیش از تصمیم کمیته، انتظار، تقاضای بی‌پاسخ و ساعت کاری را بسنجد.",
+          "required_points_fa": [
+            "پذیرش اهمیت صرفه‌جویی زمانی بدون تبدیل ادعای یادداشت به دادهٔ آزمایش‌شده",
+            "نقد مقدمهٔ برتری مطلق صرفه‌جویی وقت بر دسترسی",
+            "گزینهٔ ترکیبی با دو جلسهٔ کمکی و توجه به پانزده عضو",
+            "پیشنهاد آزمون ظرفیت و صرفه‌جویی، نه اعلام قطعی برتری گزینهٔ سوم"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "پذیرش اهمیت صرفه‌جویی زمانی بدون تبدیل ادعای یادداشت به دادهٔ آزمایش‌شده؛ نقد مقدمهٔ برتری مطلق صرفه‌جویی وقت بر دسترسی؛ گزینهٔ ترکیبی با دو جلسهٔ کمکی و توجه به پانزده عضو؛ پیشنهاد آزمون ظرفیت و صرفه‌جویی، نه اعلام قطعی برتری گزینهٔ سوم؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "The memo's strongest point is the potential reduction in staff workload, although the ten-hour estimate should be checked. Its conclusion depends on treating staff time as sufficient to determine the best option, without weighing access for the fifteen members who need help. It also presents two choices as exhaustive despite the partner's offer of assisted booking sessions. A mixed arrangement is therefore a concrete alternative worth testing, not merely an imagined escape from the dilemma. That does not establish that it will meet demand or preserve the claimed saving. I recommend a short trial that measures waiting times, unmet demand and staff hours before the committee decides.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-qualification-scope": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_qualification_scope_transfer",
+      "data": {
+        "lesson_key": "c2-qualification-scope-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک جمع‌بندی شفاهی دقیق انگلیسی برای مدیر تهیه کن. میانگین، دامنهٔ نمونه و استثناهای ثبت‌شده را حفظ کن؛ عبارت «همه همیشه» را اصلاح کن و بگو دربارهٔ چه گروه یا شرایطی هنوز نمی‌توان نتیجه گرفت.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "seconds",
+            "min": 45,
+            "max": 90
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Limited trial of new visitor signs",
+              "text_en": "Twelve first-time adult visitors tried the new signs on two quiet weekday mornings. Their average time to reach the studio was four minutes, compared with six minutes for a different group of twelve first-time adults observed the previous week. Two visitors in the new-sign group asked for directions. No children, returning visitors or busy weekend sessions were observed. Draft headline: 'The new signs always save everyone two minutes and remove the need for help.'",
+              "text_fa": "دوازده بازدیدکنندهٔ بزرگسالِ باراول تابلوهای جدید را در دو صبح خلوت روز کاری آزمایش کردند. میانگین رسیدنشان به استودیو چهار دقیقه بود، در مقایسه با شش دقیقه برای گروه متفاوتی از دوازده بزرگسال باراول که هفتهٔ قبل مشاهده شده بودند. دو نفر از گروه تابلوهای جدید مسیر پرسیدند. هیچ کودک، بازدیدکنندهٔ قبلی یا جلسهٔ شلوغ آخر هفته مشاهده نشده است. تیتر پیش‌نویس: «تابلوهای جدید همیشه برای همه دو دقیقه ذخیره می‌کنند و نیاز به کمک را از بین می‌برند.»",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "In this small observation, first-time adults using the new signs reached the studio in four minutes on average, compared with six for a different group the previous week. That is a two-minute difference between group averages, not a guaranteed saving for every visitor or conclusive evidence of causation. Two people still asked for directions, so the signs did not eliminate requests for help. The observation covers quiet weekday mornings only. We cannot yet extend the finding to children, returning visitors or busy weekends. I would replace the universal headline with this bounded result and recommend testing those unobserved groups and conditions.",
+          "model_translation_fa": "در این مشاهدهٔ کوچک، بزرگسالان باراول با تابلوهای جدید به‌طور میانگین در چهار دقیقه به استودیو رسیدند، در برابر شش دقیقه برای گروهی متفاوت در هفتهٔ قبل. این تفاوت دو دقیقه‌ای میانگین گروه‌هاست، نه صرفه‌جویی تضمینی برای تک‌تک افراد یا شاهد قطعی علت. دو نفر هنوز راهنمایی خواستند، پس تابلوها درخواست کمک را حذف نکرده‌اند. مشاهده فقط صبح‌های خلوت روز کاری را پوشش می‌دهد. هنوز نمی‌توان نتیجه را به کودکان، بازدیدکنندگان قبلی یا آخر هفته‌های شلوغ گسترش داد. تیتر همگانی را با این نتیجهٔ محدود جایگزین می‌کنم و آزمایش گروه‌ها و شرایط بررسی‌نشده را پیشنهاد می‌دهم.",
+          "required_points_fa": [
+            "میانگین چهار در برابر شش دقیقه برای دو گروه متفاوت، نه صرفه‌جویی فردی همگانی",
+            "دامنهٔ بزرگسالان باراول در صبح‌های خلوت روز کاری",
+            "دو درخواست راهنمایی، برخلاف حذف کامل نیاز به کمک",
+            "عدم تعمیم به کودکان، بازدیدکنندگان قبلی و آخر هفته یا نسبت دادن قطعی علت"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "میانگین چهار در برابر شش دقیقه برای دو گروه متفاوت، نه صرفه‌جویی فردی همگانی؛ دامنهٔ بزرگسالان باراول در صبح‌های خلوت روز کاری؛ دو درخواست راهنمایی، برخلاف حذف کامل نیاز به کمک؛ عدم تعمیم به کودکان، بازدیدکنندگان قبلی و آخر هفته یا نسبت دادن قطعی علت؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "In this small observation, first-time adults using the new signs reached the studio in four minutes on average, compared with six for a different group the previous week. That is a two-minute difference between group averages, not a guaranteed saving for every visitor or conclusive evidence of causation. Two people still asked for directions, so the signs did not eliminate requests for help. The observation covers quiet weekday mornings only. We cannot yet extend the finding to children, returning visitors or busy weekends. I would replace the universal headline with this bounded result and recommend testing those unobserved groups and conditions.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ],
+  "c2-rhetorical-concession": [
+    {
+      "kind": "exercise",
+      "external_id": "ex_c2_rhetorical_concession_transfer",
+      "data": {
+        "lesson_key": "c2-rhetorical-concession-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "در جلسه به انگلیسی پاسخ بده: بهترین نسخهٔ نگرانی مخالف را منصفانه بازگو کن، یک امتیاز واقعی به آن بده و پیشنهادت را با حفظ هدف مشترک اصلاح کن. مصالحه باید در طراحی اثر بگذارد، نه فقط در لحن؛ یک نکتهٔ نیازمند بررسی را هم نام ببر.",
+          "response_mode": "open_response",
+          "suggested_length": {
+            "unit": "seconds",
+            "min": 45,
+            "max": 90
+          },
+          "audio_model_after_response": true,
+          "sources": [
+            {
+              "id": "S1",
+              "title_en": "Objection to compulsory evening training",
+              "text_en": "Your plan requires every volunteer to attend three evening workshops so that everyone practises the same core skills. A colleague objects that six volunteers work evenings and would be excluded despite having relevant experience. The trainer can offer one Saturday practical session covering the same skills, but its capacity has not yet been checked. The club can assess practical work, and your colleague agrees that every volunteer should demonstrate the core skills before leading an event.",
+              "text_fa": "برنامهٔ تو همهٔ داوطلبان را به سه کارگاه عصر ملزم می‌کند تا همه مهارت‌های اصلی یکسانی را تمرین کنند. همکارت اعتراض دارد که شش داوطلب عصر کار می‌کنند و با وجود تجربهٔ مرتبط کنار گذاشته می‌شوند. مدرس می‌تواند یک جلسهٔ عملی شنبه با همان مهارت‌ها ارائه کند، اما ظرفیتش هنوز بررسی نشده است. باشگاه می‌تواند کار عملی را ارزیابی کند و همکارت موافق است هر داوطلب پیش از ادارهٔ رویداد مهارت‌های اصلی را نشان بدهد.",
+              "provenance": "fictional_teaching_material",
+              "audio": true
+            }
+          ]
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Your objection is not to consistent standards; it is that identical evening attendance would exclude six capable volunteers without necessarily improving their skills. I accept that weakness in my design. We share the requirement that everyone demonstrate the core skills, so I would separate that standard from a single attendance route. Alongside the evening workshops, I propose the Saturday practical session with assessment against the same criteria. Before promising places, we must confirm its capacity and whether it gives everyone sufficient practice. If it does not, we should adjust the timetable rather than treat exclusion as the price of consistency.",
+          "model_translation_fa": "اعتراض تو به معیارهای یکسان نیست؛ این است که حضور یکسان عصر شش داوطلب توانمند را کنار می‌گذارد، بدون اینکه لزوماً مهارتشان بهتر شود. این ضعف طرحم را می‌پذیرم. هر دو می‌خواهیم همه مهارت‌های اصلی را نشان دهند، پس آن معیار را از یک مسیر حضور جدا می‌کنم. در کنار کارگاه‌های عصر، جلسهٔ عملی شنبه با ارزیابی بر پایهٔ همان معیارها پیشنهاد می‌دهم. پیش از وعدهٔ جا باید ظرفیت و کافی بودن فرصت تمرین را تأیید کنیم. اگر کافی نباشد، باید زمان‌بندی را اصلاح کنیم، نه اینکه حذف افراد را بهای یکدستی بدانیم.",
+          "required_points_fa": [
+            "بیان نگرانی دسترسی شش نفر به‌عنوان مسئلهٔ واقعی، نه مقاومت در برابر معیارها",
+            "پذیرش ضعف حضور عصر یکسان و حفظ معیار مهارت مشترک",
+            "مسیر شنبه همراه ارزیابی عملی یا اصلاح موجه معادل",
+            "بررسی ظرفیت و پرهیز از وعدهٔ قطعی جای کافی"
+          ],
+          "acceptable_variation_fa": "این پاسخ فقط یک نمونه است. عبارت‌بندی، ترتیب و پیشنهادهای دیگر با رعایت ورودی و معیارهای تکلیف معتبرند؛ تطبیق عین متن معیار نمره نیست."
+        },
+        "assessment": {
+          "mode": "rubric",
+          "criteria": [
+            {
+              "id": "task",
+              "title_fa": "انجام تکلیف و وفاداری به ورودی",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "تکلیف انجام نشده یا اطلاعات اصلی تحریف شده است.",
+                "1": "بخشی از تکلیف انجام شده، اما نکتهٔ اصلی جا افتاده یا ادعای بی‌پشتوانه وجود دارد.",
+                "2": "نکات اصلی درست پوشش داده شده‌اند؛ یک کاستی جزئی در جزئیات یا توجیه دیده می‌شود.",
+                "3": "همهٔ نکات خواسته‌شده دقیق و با شاهد یا توجیه مرتبط پوشش داده شده‌اند."
+              }
+            },
+            {
+              "id": "coherence",
+              "title_fa": "انسجام و پیوند استدلال",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "رابطهٔ جمله‌ها روشن نیست.",
+                "1": "ترتیب قابل دنبال کردن است اما پیوندها ناقص‌اند.",
+                "2": "مسیر فکر روشن است و بیشتر پیوندها صریح‌اند.",
+                "3": "ساختار هدفمند است؛ شاهد، تفسیر و نتیجه به‌روشنی به هم مرتبط‌اند."
+              }
+            },
+            {
+              "id": "register",
+              "title_fa": "تناسب لحن و میزان قطعیت",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "لحن یا قطعیت با مخاطب و شواهد ناسازگار است.",
+                "1": "تناسب لحن یا بیان محدودیت‌ها ناپایدار است.",
+                "2": "لحن مناسب و بیشتر محدودیت‌ها روشن است.",
+                "3": "لحن و قطعیت در سراسر پاسخ دقیقاً با مخاطب، هدف و شواهد تنظیم شده‌اند."
+              }
+            },
+            {
+              "id": "language",
+              "title_fa": "دقت زبان، روانی و وضوح گفتار",
+              "weight": 20,
+              "descriptors_fa": {
+                "0": "خطاها مانع فهم پیام می‌شوند.",
+                "1": "پیام فهمیده می‌شود اما خطا یا محدودیت زبان بیان را مختل می‌کند.",
+                "2": "بیان روشن و نسبتاً متنوع است؛ خطاهای جزئی مانع فهم نیستند.",
+                "3": "واژگان دقیق، هم‌آیی‌های طبیعی و ساختارهای متنوع در خدمت معنا هستند؛ لغزش جزئی مانع انتقال ظرافت‌ها نیست."
+              }
+            }
+          ],
+          "score_formula": "sum(weight * criterion_score / 3)",
+          "scoring_requires": "human_or_semantic_evaluator",
+          "exact_match_allowed": false
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "status": "generated",
+        "feedback": {
+          "explanation_fa": "بیان نگرانی دسترسی شش نفر به‌عنوان مسئلهٔ واقعی، نه مقاومت در برابر معیارها؛ پذیرش ضعف حضور عصر یکسان و حفظ معیار مهارت مشترک؛ مسیر شنبه همراه ارزیابی عملی یا اصلاح موجه معادل؛ بررسی ظرفیت و پرهیز از وعدهٔ قطعی جای کافی؛ پاسخ نمونه انحصاری نیست.",
+          "model_answer": "Your objection is not to consistent standards; it is that identical evening attendance would exclude six capable volunteers without necessarily improving their skills. I accept that weakness in my design. We share the requirement that everyone demonstrate the core skills, so I would separate that standard from a single attendance route. Alongside the evening workshops, I propose the Saturday practical session with assessment against the same criteria. Before promising places, we must confirm its capacity and whether it gives everyone sufficient practice. If it does not, we should adjust the timetable rather than treat exclusion as the price of consistency.",
+          "retry_tip_fa": "پاسخت را با نکات لازم و شواهد ورودی مقایسه کن؛ هر ادعای قوی‌تر از شواهد را محدود یا توجیه کن."
+        }
+      }
+    }
+  ]
+}

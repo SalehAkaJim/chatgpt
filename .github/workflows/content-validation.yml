@@ -117,4 +117,5 @@ jobs:
         run: |
           python scripts/test_english_content_fixes.py
           python scripts/test_content_review_and_tasks.py
+          python scripts/test_c2_educational_fixes.py
           python scripts/review_content.py content/production/en --output /tmp/english-release-status.json

@@ -20,6 +20,7 @@ def main():
         raise SystemExit('Invalid audio refresh levels.')
     run('scripts/test_english_content_fixes.py')
     run('scripts/test_content_review_and_tasks.py')
+    run('scripts/test_c2_educational_fixes.py')
     run('scripts/export_english_content_updates.py')
     run('scripts/export_english_quality_updates.py')
     reports=[]

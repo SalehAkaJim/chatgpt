@@ -58,8 +58,25 @@ def dialogues_for(unit_index: int, title: str, utterances: list[dict]):
 
 
 def make_spec(**kwargs):
-    # Keep the existing C2 source stable; the C1 rewrite has its own authored exchanges.
-    return c1.make_spec(**kwargs, dialogues=dialogues_for(kwargs['index'], kwargs['title'], kwargs['utterances']))
+    # Reviewed units use connected exchanges at the source, not stitched prompts.
+    # Units outside the current authored scope retain their existing content.
+    path = ROOT / 'content/enrichment/en/c2-dialogue-overrides.json'
+    patches = json.loads(path.read_text()) if path.exists() else {}
+    prefix = 'd_' + kwargs['slug'].replace('-', '_') + '_scene_'
+    selected = {key: value for key, value in patches.items() if key.startswith(prefix)}
+    if selected:
+        if set(selected) != {prefix + str(i) for i in range(1, 4)}:
+            raise ValueError(kwargs['slug'] + ': all three authored dialogues are required')
+        dialogues = []
+        for lesson in range(1, 4):
+            data = selected[prefix + str(lesson)]
+            turns = data['turns']
+            dialogues.append(c1.D(f'scene_{lesson}', data['title'], data['setting'],
+                list(dict.fromkeys(t['speaker'] for t in turns)),
+                [c1.T(t['speaker'], t['text'], t['translation_fa']) for t in turns], lesson))
+    else:
+        dialogues = dialogues_for(kwargs['index'], kwargs['title'], kwargs['utterances'])
+    return c1.make_spec(**kwargs, dialogues=dialogues)
 
 
 def build_c2(spec: dict) -> dict:

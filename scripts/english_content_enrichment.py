@@ -15,6 +15,16 @@ DATA = ROOT / 'content' / 'enrichment' / 'en'
 
 # Exact edits propagate to all dependent translations/options and source specs.
 REPLACEMENTS = {
+    "'Concern' is only an approximate label here; 'misgiving' captures the speaker's hesitant support more precisely.":
+        "'Misgiving' conveys doubt or unease; whether the speaker supports the proposal must be established from the wider context.",
+    'اینجا concern فقط یک برچسب تقریبیه؛ misgiving حمایت همراه با تردید گوینده رو دقیق‌تر می‌رسونه.':
+        'misgiving تردید یا نگرانی را می‌رساند؛ اینکه گوینده از پیشنهاد حمایت می‌کند یا نه باید از بافت گسترده‌تر مشخص شود.',
+    'For the argument to be sound, we need both valid reasoning and premises that are actually credible.':
+        'For a deductive argument to be sound, its reasoning must be valid and all of its premises must be true.',
+    'برای اینکه استدلال واقعاً درست و محکم باشه، هم منطق معتبر می‌خوایم و هم مقدماتی که واقعاً قابل اعتماد باشن.':
+        'برای sound بودن یک استدلال قیاسی، صورت استدلال باید معتبر و همهٔ مقدمات آن صادق باشند.',
+    'این ایده را طبیعی و کامل به انگلیسی بگو: برای اینکه استدلال واقعاً درست و محکم باشه، هم منطق معتبر می‌خوایم و هم مقدماتی که واقعاً قابل اعتماد باشن.':
+        'این ایده را طبیعی و کامل به انگلیسی بگو: برای sound بودن یک استدلال قیاسی، صورت استدلال باید معتبر و همهٔ مقدمات آن صادق باشند.',
     'حجم کارم این هفته بیشتره، پس باید یک کار غیرضروری رو بندازم هفته بعد.':
         'حجم کارم این هفته بیشتره، پس باید یک کار غیرفوری رو بندازم هفته بعد.',
     'رضایت وقتی ضعیفه که افراد فنی موافقت کنن ولی نفهمن چه داده‌ای جمع می‌شه یا چطور استفاده می‌شه.':
@@ -203,10 +213,11 @@ def enrich_batch(batch):
     batch = replace_values(copy.deepcopy(batch))
     path = DATA / 'additions.json'
     additions = json.loads(path.read_text()) if path.exists() else {}
-    extra = DATA / 'performance-additions.json'
-    if extra.exists():
-        for unit, items in json.loads(extra.read_text()).items():
-            additions.setdefault(unit, []).extend(items)
+    for name in ('performance-additions.json', 'c2-performance-additions.json'):
+        extra = DATA / name
+        if extra.exists():
+            for unit, items in json.loads(extra.read_text()).items():
+                additions.setdefault(unit, []).extend(items)
     authored_feedback={x['external_id']:x['data']['feedback'] for values in additions.values()
                        for x in values if x['kind']=='exercise' and x['data'].get('feedback')}
     ids = {x['external_id'] for x in batch['items']}
@@ -215,8 +226,14 @@ def enrich_batch(batch):
             batch['items'].append(copy.deepcopy(item)); ids.add(item['external_id'])
     path = DATA / 'feedback-overrides.json'
     overrides = json.loads(path.read_text()) if path.exists() else {}
-    dialogue_path = DATA / 'dialogue-overrides.json'
-    dialogues = json.loads(dialogue_path.read_text()) if dialogue_path.exists() else {}
+    dialogues = {}
+    for name in ('dialogue-overrides.json', 'c2-dialogue-overrides.json'):
+        dialogue_path = DATA / name
+        if dialogue_path.exists():
+            patches = json.loads(dialogue_path.read_text())
+            if dialogues.keys() & patches.keys():
+                raise ValueError('Duplicate authored dialogue override')
+            dialogues.update(patches)
     prompt_path = DATA / 'prompt-overrides.json'
     prompts = json.loads(prompt_path.read_text()) if prompt_path.exists() else {}
     for item in batch['items']:

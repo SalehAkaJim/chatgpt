@@ -23,6 +23,10 @@ def main():
             ds=re.sub('[^a-z0-9]+','-',f"{b['batch_id']}-d_c1_humor_irony_scene_3".lower()).strip('-')[:170]
             tid=stable('dialogue_turn',f'{ds}:1')
             cur.execute("UPDATE dialogue_turns SET text=%s WHERE id=UUID_TO_BIN(%s,1)",('How would you respond without making the disagreement personal?',tid))
+            b=json.loads((ROOT/'content/production/en/C2/c2-implicit-stance-v1.json').read_text())
+            ds=re.sub('[^a-z0-9]+','-',f"{b['batch_id']}-d_c2_implicit_stance_scene_1".lower()).strip('-')[:170]
+            tid=stable('dialogue_turn',f'{ds}:1')
+            cur.execute("UPDATE dialogue_turns SET text=%s WHERE id=UUID_TO_BIN(%s,1)",('What do you make of the way this is being framed?',tid))
             cur.execute("UPDATE lessons SET status='approved'")
             conn.commit()
             print('Seeded stale source/approval fixtures in disposable CI database')
@@ -44,12 +48,12 @@ def main():
                     cur.execute("SELECT value FROM exercise_options WHERE exercise_id=UUID_TO_BIN(%s,1) ORDER BY option_order",(eid,))
                     assert [json.loads(v[0]) for v in cur.fetchall()]==d.get('options',[]),ext
                     count+=1
-                elif x['kind']=='utterance' and ext in {'u_tr_which_bus','u_jobs_office','u_c1_tech_ethics_consent','u_b1_work_responsibilities_workload'}:
+                elif x['kind']=='utterance' and ext in {'u_tr_which_bus','u_jobs_office','u_c1_tech_ethics_consent','u_b1_work_responsibilities_workload','u_c2_lexical_precision_approximate','u_c2_argument_diagnostics_soundness'}:
                     eid=stable('utterance',f"{b['batch_id']}:{ext}")
                     cur.execute("SELECT l.code,t.text FROM utterance_texts t JOIN languages l ON l.id=t.language_id WHERE t.utterance_id=UUID_TO_BIN(%s,1)",(eid,))
                     actual=dict(cur.fetchall())
                     assert all(actual[k]==v for k,v in {**d['text'],**d['translations']}.items()),ext
-                elif x['kind']=='dialogue' and b['cefr']=='C1':
+                elif x['kind']=='dialogue' and b['cefr'] in {'C1', 'C2'}:
                     import re
                     ds=re.sub('[^a-z0-9]+','-',f"{b['batch_id']}-{ext}".lower()).strip('-')[:170]
                     for t in d['turns']:
