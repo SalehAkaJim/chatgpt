@@ -4,11 +4,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
-from scripts.materialize_level import db_config, lang_id, one, stable, variant_id
-
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from scripts.materialize_level import db_config, lang_id, one, stable, variant_id  # noqa: E402
 
 
 def load_json(path: Path) -> dict:
@@ -93,14 +96,13 @@ def main() -> None:
         cur.execute("SET time_zone='+00:00'")
         cur.execute("SET NAMES utf8mb4 COLLATE utf8mb4_0900_ai_ci")
         language = lang_id(cur, args.target_language)
-        variant = variant_id(cur, args.target_variant)
+        variant_id(cur, args.target_variant)  # Validate the configured course variant exists.
         synced = 0
         for slug, character in sorted(characters.items()):
             persona = character["persona"]
             voice_profile = {
                 "status": "assigned",
                 "locale": args.target_variant,
-                "language_variant_uuid": None,
                 "profile_key": character["voice_profile"],
                 "provider": registry.get("provider", "elevenlabs")
             }
