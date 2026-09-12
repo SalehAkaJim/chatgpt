@@ -1,0 +1,266 @@
+{
+  "batch_id": "de-a1-introductions-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A1",
+  "curriculum_unit": "a1-de-introductions",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_de_heissen",
+      "data": {
+        "slug": "de_heissen",
+        "lesson_key": "a1-de-introductions-01",
+        "concept_type": "lexical",
+        "forms": {"de": "heißen"},
+        "translations": {"fa": "نام داشتن / نامیده شدن"},
+        "cefr": "A1",
+        "topic": "introductions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_sein",
+      "data": {
+        "slug": "de_sein",
+        "lesson_key": "a1-de-introductions-01",
+        "concept_type": "lexical",
+        "forms": {"de": "sein"},
+        "translations": {"fa": "بودن"},
+        "cefr": "A1",
+        "topic": "introductions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_name",
+      "data": {
+        "slug": "de_name",
+        "lesson_key": "a1-de-introductions-01",
+        "concept_type": "lexical",
+        "forms": {"de": "Name"},
+        "translations": {"fa": "نام / اسم"},
+        "cefr": "A1",
+        "topic": "introductions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_de_heissen",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "language": "de",
+        "language_variant": "de-DE",
+        "lemma": "heißen",
+        "normalized_lemma": "heißen",
+        "part_of_speech": "verb",
+        "concept_refs": ["de_heissen"],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_de_heisse",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "lexeme_ref": "lx_de_heissen",
+        "surface_form": "heiße",
+        "grammatical_features": {"tense":"present","person":1,"number":"singular"},
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_de_heisst",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "lexeme_ref": "lx_de_heissen",
+        "surface_form": "heißt",
+        "grammatical_features": {"tense":"present","person":2,"number":"singular"},
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_de_sein",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "language": "de",
+        "language_variant": "de-DE",
+        "lemma": "sein",
+        "part_of_speech": "verb",
+        "concept_refs": ["de_sein"],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_de_bin",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "lexeme_ref": "lx_de_sein",
+        "surface_form": "bin",
+        "grammatical_features": {"tense":"present","person":1,"number":"singular"},
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_de_bist",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "lexeme_ref": "lx_de_sein",
+        "surface_form": "bist",
+        "grammatical_features": {"tense":"present","person":2,"number":"singular"},
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_wie_heisst_du",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "language_variant": "de-DE",
+        "text": {"de": "Wie heißt du?"},
+        "translations": {"fa": "اسمت چیه؟"},
+        "intent": "ask_name",
+        "concept_refs": ["de_heissen"],
+        "cefr": "A1",
+        "topic": "introductions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_ich_heisse_mina",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "language_variant": "de-DE",
+        "text": {"de": "Ich heiße Mina."},
+        "translations": {"fa": "اسم من میناست."},
+        "intent": "give_name",
+        "concept_refs": ["de_heissen"],
+        "cefr": "A1",
+        "topic": "introductions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_de_heissen_present",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "language_variant": "de-DE",
+        "title": "heißen: heiße / heißt",
+        "rule_summary": "Use ich heiße for your own name and wie heißt du? to ask another person’s name.",
+        "explanation": {"fa": "برای گفتن اسم خودت می‌گویی Ich heiße ... و برای پرسیدن اسم مخاطب می‌گویی Wie heißt du?"},
+        "examples": [
+          {"de":"Ich heiße Mina.","fa":"اسم من میناست."},
+          {"de":"Wie heißt du?","fa":"اسمت چیه؟"}
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_de_noun_capitalization",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "language_variant": "de-DE",
+        "title": "German nouns start with a capital letter",
+        "rule_summary": "German common nouns are capitalized, including Name.",
+        "explanation": {"fa": "در آلمانی اسم‌ها با حرف بزرگ نوشته می‌شوند؛ مثلاً Name."},
+        "examples": [
+          {"de":"Mein Name ist Mina.","fa":"اسم من میناست."}
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_de_first_meeting",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "language_variant": "de-DE",
+        "title": "Erstes Treffen",
+        "setting": "classroom",
+        "characters": ["Mina","Jonas"],
+        "turns": [
+          {"order":1,"speaker":"Mina","text":"Hallo! Ich heiße Mina.","translation_fa":"سلام! اسم من میناست."},
+          {"order":2,"speaker":"Jonas","text":"Hallo, Mina! Ich bin Jonas.","translation_fa":"سلام مینا! من یوناس هستم."},
+          {"order":3,"speaker":"Mina","text":"Wie heißt du?","translation_fa":"اسمت چیه؟"},
+          {"order":4,"speaker":"Jonas","text":"Ich heiße Jonas.","translation_fa":"اسم من یوناس است."}
+        ],
+        "cefr": "A1",
+        "topic": "introductions",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_heisse_fill",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "exercise_type": "fill_blank",
+        "prompt": {"text":"Ich ___ Mina."},
+        "answer": {"value":"heiße"},
+        "options": ["heiße","heißt","bist"],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_heisst_fill",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "exercise_type": "fill_blank",
+        "prompt": {"text":"Wie ___ du?"},
+        "answer": {"value":"heißt"},
+        "options": ["heiße","heißt","bin"],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_sentence_build",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "exercise_type": "sentence_building",
+        "prompt": {"tokens":["Ich","heiße","Mina."]},
+        "answer": {"tokens":["Ich","heiße","Mina."]},
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_listening_name",
+      "data": {
+        "lesson_key": "a1-de-introductions-01",
+        "exercise_type": "listening",
+        "prompt": {"audio_text":"Wie heißt du?","question_fa":"کدام جمله را شنیدی؟"},
+        "answer": {"value":"Wie heißt du?"},
+        "options": ["Wie heißt du?","Wie geht es dir?","Ich bin Mina."],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    }
+  ]
+}
