@@ -9,32 +9,536 @@
   "curriculum_unit": "a1-polite",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_please","data":{"slug":"polite_please","lesson_key":"a1-polite-01","concept_type":"lexical","forms":{"en":"please"},"translations":{"fa":"لطفاً"},"cefr":"A1","topic":"polite-language","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_please","data":{"lesson_key":"a1-polite-01","lemma":"please","language":"en","language_variant":"en-US","part_of_speech":"adverb","concept_refs":["polite_please"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_please","data":{"lesson_key":"a1-polite-01","lexeme_ref":"lx_please","surface_form":"please","grammatical_features":{"register":"polite"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_thank_you","data":{"slug":"polite_thank_you","lesson_key":"a1-polite-01","concept_type":"functional","forms":{"en":"Thank you."},"translations":{"fa":"ممنون."},"cefr":"A1","topic":"polite-language","status":"approved"}},
-    {"kind":"concept","external_id":"c_thanks","data":{"slug":"polite_thanks","lesson_key":"a1-polite-01","concept_type":"functional","forms":{"en":"Thanks."},"translations":{"fa":"مرسی."},"cefr":"A1","topic":"polite-language","status":"approved"}},
-    {"kind":"concept","external_id":"c_welcome","data":{"slug":"polite_youre_welcome","lesson_key":"a1-polite-01","concept_type":"functional","forms":{"en":"You're welcome."},"translations":{"fa":"خواهش می‌کنم."},"cefr":"A1","topic":"polite-language","status":"approved"}},
-    {"kind":"concept","external_id":"c_sorry","data":{"slug":"polite_sorry","lesson_key":"a1-polite-01","concept_type":"functional","forms":{"en":"Sorry."},"translations":{"fa":"ببخشید / متأسفم."},"cefr":"A1","topic":"polite-language","status":"approved"}},
-    {"kind":"concept","external_id":"c_excuse_me","data":{"slug":"polite_excuse_me","lesson_key":"a1-polite-01","concept_type":"functional","forms":{"en":"Excuse me."},"translations":{"fa":"ببخشید."},"cefr":"A1","topic":"polite-language","status":"approved"}},
-    {"kind":"concept","external_id":"c_no_problem","data":{"slug":"polite_no_problem","lesson_key":"a1-polite-01","concept_type":"functional","forms":{"en":"No problem."},"translations":{"fa":"اشکالی ندارد."},"cefr":"A1","topic":"polite-language","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_water_please","data":{"lesson_key":"a1-polite-01","text":{"en":"Water, please."},"translations":{"fa":"آب، لطفاً."},"intent":"polite_request","concept_refs":["polite_please"],"cefr":"A1","topic":"polite-language","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_thank_you","data":{"lesson_key":"a1-polite-01","text":{"en":"Thank you very much."},"translations":{"fa":"خیلی ممنون."},"intent":"thank","concept_refs":["polite_thank_you"],"cefr":"A1","topic":"polite-language","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_youre_welcome","data":{"lesson_key":"a1-polite-01","text":{"en":"You're welcome."},"translations":{"fa":"خواهش می‌کنم."},"intent":"respond_to_thanks","concept_refs":["polite_youre_welcome"],"cefr":"A1","topic":"polite-language","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_excuse_me","data":{"lesson_key":"a1-polite-01","text":{"en":"Excuse me. Is this seat free?"},"translations":{"fa":"ببخشید. این صندلی خالی است؟"},"intent":"get_attention","concept_refs":["polite_excuse_me"],"cefr":"A1","topic":"polite-language","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_sorry_late","data":{"lesson_key":"a1-polite-01","text":{"en":"Sorry, I'm late."},"translations":{"fa":"ببخشید، دیر کردم."},"intent":"apologize","concept_refs":["polite_sorry"],"cefr":"A1","topic":"polite-language","register":"neutral","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_please_position","data":{"lesson_key":"a1-polite-01","slug":"a1-please-position","title":"please in requests","rule_summary":"Please can appear at the beginning or end of a short request.","explanation":{"fa":"please می‌تواند اول یا آخر یک درخواست کوتاه بیاید."},"examples":[{"en":"Please sit down.","fa":"لطفاً بنشین."},{"en":"Water, please.","fa":"آب، لطفاً."}],"cefr":"A1","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_sorry_excuse","data":{"lesson_key":"a1-polite-01","slug":"a1-sorry-vs-excuse-me","title":"Sorry vs. Excuse me","rule_summary":"Use excuse me to get attention or move past someone; use sorry after a small mistake or problem.","explanation":{"fa":"برای جلب توجه معمولاً Excuse me و برای عذرخواهی بعد از یک اشتباه معمولاً Sorry می‌گوییم."},"examples":[{"en":"Excuse me, where is the station?","fa":"ببخشید، ایستگاه کجاست؟"},{"en":"Sorry, I'm late.","fa":"ببخشید، دیر کردم."}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_polite_cafe","data":{"lesson_key":"a1-polite-01","title":"At the counter","setting":"café counter","cefr":"A1","topic":"polite-language","characters":["Ava","Chris"],"turns":[{"order":1,"speaker":"Ava","text":"Coffee, please.","translation_fa":"قهوه، لطفاً."},{"order":2,"speaker":"Chris","text":"Sure. Here you are.","translation_fa":"حتماً. بفرمایید."},{"order":3,"speaker":"Ava","text":"Thank you.","translation_fa":"ممنون."},{"order":4,"speaker":"Chris","text":"You're welcome.","translation_fa":"خواهش می‌کنم."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_polite_bus","data":{"lesson_key":"a1-polite-01","title":"On the bus","setting":"bus","cefr":"A1","topic":"polite-language","characters":["Lena","Owen"],"turns":[{"order":1,"speaker":"Lena","text":"Excuse me. Is this seat free?","translation_fa":"ببخشید. این صندلی خالی است؟"},{"order":2,"speaker":"Owen","text":"Yes, it is.","translation_fa":"بله."},{"order":3,"speaker":"Lena","text":"Thanks.","translation_fa":"مرسی."},{"order":4,"speaker":"Owen","text":"No problem.","translation_fa":"اشکالی ندارد."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_polite_request","data":{"lesson_key":"a1-polite-01","exercise_type":"multiple_choice","prompt":{"fa":"برای مودبانه درخواست کردن آب کدام بهتر است؟"},"options":["Water, please.","Water now.","Give water.","You water."],"answer":{"value":"Water, please."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_polite_reply","data":{"lesson_key":"a1-polite-01","exercise_type":"multiple_choice","prompt":{"fa":"پاسخ طبیعی به Thank you چیست؟"},"options":["You're welcome.","Excuse me.","Sorry.","Please."],"answer":{"value":"You're welcome."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_polite_attention","data":{"lesson_key":"a1-polite-01","exercise_type":"multiple_choice","prompt":{"fa":"برای جلب توجه غریبه کدام مناسب‌تر است؟"},"options":["Excuse me.","Sorry, I'm late.","You're welcome.","Thanks."],"answer":{"value":"Excuse me."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_polite_listen","data":{"lesson_key":"a1-polite-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و منظور را انتخاب کن.","audio_text":"Sorry, I'm late."},"options":["عذرخواهی","تشکر","درخواست","خداحافظی"],"answer":{"value":"عذرخواهی"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_polite_speak","data":{"lesson_key":"a1-polite-01","exercise_type":"speaking","prompt":{"instruction_fa":"بگو: خیلی ممنون."},"answer":{"expected_text":"Thank you very much."},"difficulty":1,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_please",
+      "data": {
+        "slug": "polite_please",
+        "lesson_key": "a1-polite-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "please"
+        },
+        "translations": {
+          "fa": "لطفاً"
+        },
+        "cefr": "A1",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_please",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "lemma": "please",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "polite_please"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_please",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "lexeme_ref": "lx_please",
+        "surface_form": "please",
+        "grammatical_features": {
+          "register": "polite"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_thank_you",
+      "data": {
+        "slug": "polite_thank_you",
+        "lesson_key": "a1-polite-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Thank you."
+        },
+        "translations": {
+          "fa": "ممنون."
+        },
+        "cefr": "A1",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_thanks",
+      "data": {
+        "slug": "polite_thanks",
+        "lesson_key": "a1-polite-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Thanks."
+        },
+        "translations": {
+          "fa": "مرسی."
+        },
+        "cefr": "A1",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_welcome",
+      "data": {
+        "slug": "polite_youre_welcome",
+        "lesson_key": "a1-polite-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "You're welcome."
+        },
+        "translations": {
+          "fa": "خواهش می‌کنم."
+        },
+        "cefr": "A1",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_sorry",
+      "data": {
+        "slug": "polite_sorry",
+        "lesson_key": "a1-polite-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Sorry."
+        },
+        "translations": {
+          "fa": "ببخشید / متأسفم."
+        },
+        "cefr": "A1",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_excuse_me",
+      "data": {
+        "slug": "polite_excuse_me",
+        "lesson_key": "a1-polite-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Excuse me."
+        },
+        "translations": {
+          "fa": "ببخشید."
+        },
+        "cefr": "A1",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_no_problem",
+      "data": {
+        "slug": "polite_no_problem",
+        "lesson_key": "a1-polite-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "No problem."
+        },
+        "translations": {
+          "fa": "اشکالی ندارد."
+        },
+        "cefr": "A1",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_water_please",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "text": {
+          "en": "Water, please."
+        },
+        "translations": {
+          "fa": "آب، لطفاً."
+        },
+        "intent": "polite_request",
+        "concept_refs": [
+          "polite_please"
+        ],
+        "cefr": "A1",
+        "topic": "polite-language",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_thank_you",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "text": {
+          "en": "Thank you very much."
+        },
+        "translations": {
+          "fa": "خیلی ممنون."
+        },
+        "intent": "thank",
+        "concept_refs": [
+          "polite_thank_you"
+        ],
+        "cefr": "A1",
+        "topic": "polite-language",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_youre_welcome",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "text": {
+          "en": "You're welcome."
+        },
+        "translations": {
+          "fa": "خواهش می‌کنم."
+        },
+        "intent": "respond_to_thanks",
+        "concept_refs": [
+          "polite_youre_welcome"
+        ],
+        "cefr": "A1",
+        "topic": "polite-language",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_excuse_me",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "text": {
+          "en": "Excuse me. Is this seat free?"
+        },
+        "translations": {
+          "fa": "ببخشید. این صندلی خالی است؟"
+        },
+        "intent": "get_attention",
+        "concept_refs": [
+          "polite_excuse_me"
+        ],
+        "cefr": "A1",
+        "topic": "polite-language",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_sorry_late",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "text": {
+          "en": "Sorry, I'm late."
+        },
+        "translations": {
+          "fa": "ببخشید، دیر کردم."
+        },
+        "intent": "apologize",
+        "concept_refs": [
+          "polite_sorry"
+        ],
+        "cefr": "A1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_please_position",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "slug": "a1-please-position",
+        "title": "please in requests",
+        "rule_summary": "Please can appear at the beginning or end of a short request.",
+        "explanation": {
+          "fa": "please می‌تواند اول یا آخر یک درخواست کوتاه بیاید."
+        },
+        "examples": [
+          {
+            "en": "Please sit down.",
+            "fa": "لطفاً بنشین."
+          },
+          {
+            "en": "Water, please.",
+            "fa": "آب، لطفاً."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_sorry_excuse",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "slug": "a1-sorry-vs-excuse-me",
+        "title": "Sorry vs. Excuse me",
+        "rule_summary": "Use excuse me to get attention or move past someone; use sorry after a small mistake or problem.",
+        "explanation": {
+          "fa": "برای جلب توجه معمولاً Excuse me و برای عذرخواهی بعد از یک اشتباه معمولاً Sorry می‌گوییم."
+        },
+        "examples": [
+          {
+            "en": "Excuse me, where is the station?",
+            "fa": "ببخشید، ایستگاه کجاست؟"
+          },
+          {
+            "en": "Sorry, I'm late.",
+            "fa": "ببخشید، دیر کردم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_polite_cafe",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "title": "At the counter",
+        "setting": "café counter",
+        "cefr": "A1",
+        "topic": "polite-language",
+        "characters": [
+          "Ava",
+          "Chris"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ava",
+            "text": "Coffee, please.",
+            "translation_fa": "قهوه، لطفاً."
+          },
+          {
+            "order": 2,
+            "speaker": "Chris",
+            "text": "Sure. Here you are.",
+            "translation_fa": "حتماً. بفرمایید."
+          },
+          {
+            "order": 3,
+            "speaker": "Ava",
+            "text": "Thank you.",
+            "translation_fa": "ممنون."
+          },
+          {
+            "order": 4,
+            "speaker": "Chris",
+            "text": "You're welcome.",
+            "translation_fa": "خواهش می‌کنم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_polite_bus",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "title": "On the bus",
+        "setting": "bus",
+        "cefr": "A1",
+        "topic": "polite-language",
+        "characters": [
+          "Lena",
+          "Owen"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lena",
+            "text": "Excuse me. Is this seat free?",
+            "translation_fa": "ببخشید. این صندلی خالی است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Owen",
+            "text": "Yes, it is.",
+            "translation_fa": "بله."
+          },
+          {
+            "order": 3,
+            "speaker": "Lena",
+            "text": "Thanks.",
+            "translation_fa": "مرسی."
+          },
+          {
+            "order": 4,
+            "speaker": "Owen",
+            "text": "No problem.",
+            "translation_fa": "اشکالی ندارد."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_polite_request",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "برای مودبانه درخواست کردن آب کدام بهتر است؟"
+        },
+        "options": [
+          "Water, please.",
+          "Water now.",
+          "Give water.",
+          "You water."
+        ],
+        "answer": {
+          "value": "Water, please."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: آب، لطفاً.\nنکتهٔ واژگانی: «please»: «لطفاً»",
+          "model_answer": "Water, please.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_polite_reply",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "پاسخ طبیعی به Thank you چیست؟"
+        },
+        "options": [
+          "You're welcome.",
+          "Excuse me.",
+          "Sorry.",
+          "Please."
+        ],
+        "answer": {
+          "value": "You're welcome."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خواهش می‌کنم.\nنکتهٔ واژگانی: «you re welcome»: «خواهش می‌کنم.»",
+          "model_answer": "You're welcome.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_polite_attention",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "برای جلب توجه غریبه کدام مناسب‌تر است؟"
+        },
+        "options": [
+          "Excuse me.",
+          "Sorry, I'm late.",
+          "You're welcome.",
+          "Thanks."
+        ],
+        "answer": {
+          "value": "Excuse me."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: ببخشید.\nنکتهٔ واژگانی: «excuse me»: «ببخشید.»",
+          "model_answer": "Excuse me.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_polite_listen",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و منظور را انتخاب کن.",
+          "audio_text": "Sorry, I'm late."
+        },
+        "options": [
+          "عذرخواهی",
+          "تشکر",
+          "درخواست",
+          "خداحافظی"
+        ],
+        "answer": {
+          "value": "عذرخواهی"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: ببخشید، دیر کردم.\nنکتهٔ واژگانی: «sorry»: «ببخشید / متأسفم.»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Sorry, I'm late.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Sorry, I'm late."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_polite_speak",
+      "data": {
+        "lesson_key": "a1-polite-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "بگو: خیلی ممنون."
+        },
+        "answer": {
+          "expected_text": "Thank you very much."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خیلی ممنون.\nنکتهٔ واژگانی: «thank you»: «ممنون.»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Thank you very much.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

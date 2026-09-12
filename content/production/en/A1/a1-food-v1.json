@@ -9,29 +9,558 @@
   "curriculum_unit": "a1-food",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_food_water","data":{"slug":"food_water","lesson_key":"a1-food-01","concept_type":"lexical","forms":{"en":"water"},"translations":{"fa":"آب"},"cefr":"A1","topic":"food-basics","status":"approved"}},
-    {"kind":"concept","external_id":"c_food_coffee","data":{"slug":"food_coffee","lesson_key":"a1-food-01","concept_type":"lexical","forms":{"en":"coffee"},"translations":{"fa":"قهوه"},"cefr":"A1","topic":"food-basics","status":"approved"}},
-    {"kind":"concept","external_id":"c_food_bread","data":{"slug":"food_bread","lesson_key":"a1-food-01","concept_type":"lexical","forms":{"en":"bread"},"translations":{"fa":"نان"},"cefr":"A1","topic":"food-basics","status":"approved"}},
-    {"kind":"concept","external_id":"c_food_like","data":{"slug":"food_like","lesson_key":"a1-food-02","concept_type":"functional","forms":{"en":"I like …"},"translations":{"fa":"من ... را دوست دارم"},"cefr":"A1","topic":"food-basics","status":"approved"}},
-    {"kind":"concept","external_id":"c_food_dont_like","data":{"slug":"food_dont_like","lesson_key":"a1-food-02","concept_type":"functional","forms":{"en":"I don't like …"},"translations":{"fa":"من ... را دوست ندارم"},"cefr":"A1","topic":"food-basics","status":"approved"}},
-
-    {"kind":"lexeme","external_id":"lx_food_water","data":{"lesson_key":"a1-food-01","lemma":"water","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["food_water"],"cefr":"A1","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_food_coffee","data":{"lesson_key":"a1-food-01","lemma":"coffee","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["food_coffee"],"cefr":"A1","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_food_bread","data":{"lesson_key":"a1-food-01","lemma":"bread","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["food_bread"],"cefr":"A1","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_food_water","data":{"lesson_key":"a1-food-01","text":{"en":"This is water."},"translations":{"fa":"این آب است."},"intent":"identify_food_drink","concept_refs":["food_water"],"cefr":"A1","topic":"food-basics","status":"approved"}},
-    {"kind":"utterance","external_id":"u_food_like_coffee","data":{"lesson_key":"a1-food-02","text":{"en":"I like coffee."},"translations":{"fa":"من قهوه دوست دارم."},"intent":"express_preference","concept_refs":["food_like","food_coffee"],"cefr":"A1","topic":"food-basics","status":"approved"}},
-    {"kind":"utterance","external_id":"u_food_no_coffee","data":{"lesson_key":"a1-food-02","text":{"en":"I don't like coffee."},"translations":{"fa":"من قهوه دوست ندارم."},"intent":"express_dislike","concept_refs":["food_dont_like","food_coffee"],"cefr":"A1","topic":"food-basics","status":"approved"}},
-    {"kind":"utterance","external_id":"u_food_bread_water","data":{"lesson_key":"a1-food-02","text":{"en":"I want bread and water."},"translations":{"fa":"من نان و آب می‌خواهم."},"intent":"state_simple_want","concept_refs":["food_bread","food_water"],"cefr":"A1","topic":"food-basics","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_food_like_dont_like","data":{"lesson_key":"a1-food-02","slug":"a1-like-dont-like","title":"like / don't like","rule_summary":"Use like to say you enjoy something and don't like to say you do not enjoy it.","explanation":{"fa":"برای گفتن علاقه از like و برای گفتن نداشتن علاقه از don't like استفاده می‌کنیم."},"examples":[{"en":"I like tea.","fa":"من چای دوست دارم."},{"en":"I don't like milk.","fa":"من شیر دوست ندارم."}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_food_breakfast","data":{"lesson_key":"a1-food-02","title":"Breakfast choices","setting":"kitchen","cefr":"A1","topic":"food-basics","characters":["Lina","Owen"],"turns":[{"order":1,"speaker":"Owen","text":"Do you like coffee?","translation_fa":"قهوه دوست داری؟"},{"order":2,"speaker":"Lina","text":"Yes, I do.","translation_fa":"بله."},{"order":3,"speaker":"Owen","text":"Do you want bread?","translation_fa":"نان می‌خواهی؟"},{"order":4,"speaker":"Lina","text":"Yes, please.","translation_fa":"بله، لطفاً."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_food_mc","data":{"lesson_key":"a1-food-01","exercise_type":"multiple_choice","prompt":{"fa":"کدام کلمه یعنی «آب»؟"},"options":["water","bread","coffee","rice"],"answer":{"value":"water"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_food_fill","data":{"lesson_key":"a1-food-02","exercise_type":"fill_blank","prompt":{"text":"I ___ coffee.","fa":"جای خالی را کامل کن."},"options":["like","likes","am","is"],"answer":{"value":"like"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_food_build","data":{"lesson_key":"a1-food-02","exercise_type":"sentence_building","prompt":{"fa":"«من قهوه دوست ندارم» را بساز.","tokens":["coffee","don't","I","like"]},"answer":{"tokens":["I","don't","like","coffee"],"text":"I don't like coffee."},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_food_listen","data":{"lesson_key":"a1-food-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و نوشیدنی را انتخاب کن.","audio_text":"I like coffee."},"options":["water","coffee","milk","tea"],"answer":{"value":"coffee"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_food_speak","data":{"lesson_key":"a1-food-02","exercise_type":"speaking","prompt":{"instruction_fa":"جمله را بگو.","value":"I like coffee."},"answer":{"expected_text":"I like coffee."},"difficulty":1,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_food_water",
+      "data": {
+        "slug": "food_water",
+        "lesson_key": "a1-food-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "water"
+        },
+        "translations": {
+          "fa": "آب"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_coffee",
+      "data": {
+        "slug": "food_coffee",
+        "lesson_key": "a1-food-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "coffee"
+        },
+        "translations": {
+          "fa": "قهوه"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_bread",
+      "data": {
+        "slug": "food_bread",
+        "lesson_key": "a1-food-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "bread"
+        },
+        "translations": {
+          "fa": "نان"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_like",
+      "data": {
+        "slug": "food_like",
+        "lesson_key": "a1-food-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "I like …"
+        },
+        "translations": {
+          "fa": "من ... را دوست دارم"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_dont_like",
+      "data": {
+        "slug": "food_dont_like",
+        "lesson_key": "a1-food-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "I don't like …"
+        },
+        "translations": {
+          "fa": "من ... را دوست ندارم"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_water",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "lemma": "water",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "food_water"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_coffee",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "lemma": "coffee",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "food_coffee"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_bread",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "lemma": "bread",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "food_bread"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_water",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "text": {
+          "en": "This is water."
+        },
+        "translations": {
+          "fa": "این آب است."
+        },
+        "intent": "identify_food_drink",
+        "concept_refs": [
+          "food_water"
+        ],
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_like_coffee",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "text": {
+          "en": "I like coffee."
+        },
+        "translations": {
+          "fa": "من قهوه دوست دارم."
+        },
+        "intent": "express_preference",
+        "concept_refs": [
+          "food_like",
+          "food_coffee"
+        ],
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_no_coffee",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "text": {
+          "en": "I don't like coffee."
+        },
+        "translations": {
+          "fa": "من قهوه دوست ندارم."
+        },
+        "intent": "express_dislike",
+        "concept_refs": [
+          "food_dont_like",
+          "food_coffee"
+        ],
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_bread_water",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "text": {
+          "en": "I want bread and water."
+        },
+        "translations": {
+          "fa": "من نان و آب می‌خواهم."
+        },
+        "intent": "state_simple_want",
+        "concept_refs": [
+          "food_bread",
+          "food_water"
+        ],
+        "cefr": "A1",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_food_like_dont_like",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "slug": "a1-like-dont-like",
+        "title": "like / don't like",
+        "rule_summary": "Use like to say you enjoy something and don't like to say you do not enjoy it.",
+        "explanation": {
+          "fa": "برای گفتن علاقه از like و برای گفتن نداشتن علاقه از don't like استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I like tea.",
+            "fa": "من چای دوست دارم."
+          },
+          {
+            "en": "I don't like milk.",
+            "fa": "من شیر دوست ندارم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_food_breakfast",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "title": "Breakfast choices",
+        "setting": "kitchen",
+        "cefr": "A1",
+        "topic": "food-basics",
+        "characters": [
+          "Lina",
+          "Owen"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Owen",
+            "text": "Do you like coffee?",
+            "translation_fa": "قهوه دوست داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Lina",
+            "text": "Yes, I do.",
+            "translation_fa": "بله."
+          },
+          {
+            "order": 3,
+            "speaker": "Owen",
+            "text": "Do you want bread?",
+            "translation_fa": "نان می‌خواهی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Lina",
+            "text": "Yes, please.",
+            "translation_fa": "بله، لطفاً."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_mc",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام کلمه یعنی «آب»؟"
+        },
+        "options": [
+          "water",
+          "bread",
+          "coffee",
+          "rice"
+        ],
+        "answer": {
+          "value": "water"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: آب\nنکتهٔ واژگانی: «water»: «آب»",
+          "model_answer": "water",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_fill",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I ___ coffee.",
+          "fa": "جای خالی را کامل کن."
+        },
+        "options": [
+          "like",
+          "likes",
+          "am",
+          "is"
+        ],
+        "answer": {
+          "value": "like"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "like برای بیان علاقه است؛ با I شکل پایهٔ like می‌آید.",
+          "model_answer": "I like coffee.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_build",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«من قهوه دوست ندارم» را بساز.",
+          "tokens": [
+            "coffee",
+            "don't",
+            "I",
+            "like"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I",
+            "don't",
+            "like",
+            "coffee"
+          ],
+          "text": "I don't like coffee."
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من قهوه دوست ندارم.\nنکتهٔ واژگانی: «i don t like»: «من ... را دوست ندارم»؛ «coffee»: «قهوه»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "I don't like coffee.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_listen",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نوشیدنی را انتخاب کن.",
+          "audio_text": "I like coffee."
+        },
+        "options": [
+          "water",
+          "coffee",
+          "milk",
+          "tea"
+        ],
+        "answer": {
+          "value": "coffee"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من قهوه دوست دارم.\nنکتهٔ واژگانی: «coffee»: «قهوه»؛ «i like»: «من ... را دوست دارم»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I like coffee.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I like coffee."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_speak",
+      "data": {
+        "lesson_key": "a1-food-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را بگو.",
+          "value": "I like coffee."
+        },
+        "answer": {
+          "expected_text": "I like coffee."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من قهوه دوست دارم.\nنکتهٔ واژگانی: «coffee»: «قهوه»؛ «i like»: «من ... را دوست دارم»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "I like coffee.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_food_listen",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام خوراکی معرفی شد؟",
+          "audio_text": "This is bread."
+        },
+        "answer": {
+          "value": "نان"
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "bread یعنی نان؛ در This is bread گوینده خوراکی را معرفی می‌کند.",
+          "model_answer": "نان",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن.",
+          "transcript_en": "This is bread."
+        },
+        "options": [
+          "نان",
+          "آب",
+          "برنج",
+          "قهوه"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_food_build",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "بگو: این آب است.",
+          "tokens": [
+            "This",
+            "is",
+            "water."
+          ]
+        },
+        "answer": {
+          "text": "This is water.",
+          "tokens": [
+            "This",
+            "is",
+            "water."
+          ]
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "This is برای معرفی یک چیز است؛ water یعنی آب.",
+          "model_answer": "This is water.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_food_situation",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "می‌خواهی قهوه را معرفی کنی. کدام جمله مناسب است؟"
+        },
+        "answer": {
+          "value": "This is coffee."
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "coffee نام قهوه است؛ This is چیزی را که نشان می‌دهیم معرفی می‌کند.",
+          "model_answer": "This is coffee.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "This is coffee.",
+          "This is water.",
+          "This is bread.",
+          "This is rice."
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_food_review",
+      "data": {
+        "lesson_key": "a1-food-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "مرور معرفی: «این قهوه است» را انتخاب کن."
+        },
+        "answer": {
+          "value": "This is coffee."
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "برای معرفی یک چیز از This is استفاده می‌کنیم؛ I am برای معرفی خودِ گوینده است.",
+          "model_answer": "This is coffee.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "This is coffee.",
+          "I am coffee.",
+          "This coffee is.",
+          "Coffee this am."
+        ],
+        "review_of": [
+          "a1-introductions"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    }
   ]
 }

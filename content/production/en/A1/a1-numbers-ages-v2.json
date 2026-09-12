@@ -9,60 +9,982 @@
   "curriculum_unit": "a1-numbers",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_num_11","data":{"slug":"number_11","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"eleven"},"translations":{"fa":"یازده"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_11","data":{"lesson_key":"a1-numbers-01","lemma":"eleven","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_11"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_11","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_11","surface_form":"eleven","grammatical_features":{"value":11},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_12","data":{"slug":"number_12","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"twelve"},"translations":{"fa":"دوازده"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_12","data":{"lesson_key":"a1-numbers-01","lemma":"twelve","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_12"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_12","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_12","surface_form":"twelve","grammatical_features":{"value":12},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_13","data":{"slug":"number_13","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"thirteen"},"translations":{"fa":"سیزده"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_13","data":{"lesson_key":"a1-numbers-01","lemma":"thirteen","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_13"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_13","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_13","surface_form":"thirteen","grammatical_features":{"value":13},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_14","data":{"slug":"number_14","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"fourteen"},"translations":{"fa":"چهارده"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_14","data":{"lesson_key":"a1-numbers-01","lemma":"fourteen","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_14"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_14","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_14","surface_form":"fourteen","grammatical_features":{"value":14},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_15","data":{"slug":"number_15","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"fifteen"},"translations":{"fa":"پانزده"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_15","data":{"lesson_key":"a1-numbers-01","lemma":"fifteen","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_15"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_15","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_15","surface_form":"fifteen","grammatical_features":{"value":15},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_20","data":{"slug":"number_20","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"twenty"},"translations":{"fa":"بیست"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_20","data":{"lesson_key":"a1-numbers-01","lemma":"twenty","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_20"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_20","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_20","surface_form":"twenty","grammatical_features":{"value":20},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_30","data":{"slug":"number_30","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"thirty"},"translations":{"fa":"سی"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_30","data":{"lesson_key":"a1-numbers-01","lemma":"thirty","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_30"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_30","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_30","surface_form":"thirty","grammatical_features":{"value":30},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_40","data":{"slug":"number_40","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"forty"},"translations":{"fa":"چهل"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_40","data":{"lesson_key":"a1-numbers-01","lemma":"forty","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_40"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_40","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_40","surface_form":"forty","grammatical_features":{"value":40},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_50","data":{"slug":"number_50","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"fifty"},"translations":{"fa":"پنجاه"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_50","data":{"lesson_key":"a1-numbers-01","lemma":"fifty","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_50"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_50","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_50","surface_form":"fifty","grammatical_features":{"value":50},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_num_100","data":{"slug":"number_100","lesson_key":"a1-numbers-01","concept_type":"lexical","forms":{"en":"one hundred"},"translations":{"fa":"صد"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_num_100","data":{"lesson_key":"a1-numbers-01","lemma":"hundred","language":"en","language_variant":"en-US","part_of_speech":"numeral","concept_refs":["number_100"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_num_100","data":{"lesson_key":"a1-numbers-01","lexeme_ref":"lx_num_100","surface_form":"one hundred","grammatical_features":{"value":100},"cefr":"A1","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_age","data":{"slug":"age","lesson_key":"a1-numbers-02","concept_type":"lexical","forms":{"en":"age"},"translations":{"fa":"سن"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_age","data":{"lesson_key":"a1-numbers-02","lemma":"age","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["age"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_age","data":{"lesson_key":"a1-numbers-02","lexeme_ref":"lx_age","surface_form":"age","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_how_old","data":{"slug":"ask_age","lesson_key":"a1-numbers-02","concept_type":"functional","forms":{"en":"How old are you?"},"translations":{"fa":"چند سالته؟"},"cefr":"A1","topic":"numbers","status":"approved"}},
-    {"kind":"concept","external_id":"c_years_old","data":{"slug":"state_age","lesson_key":"a1-numbers-02","concept_type":"functional","forms":{"en":"I'm … years old."},"translations":{"fa":"من ... سالمه."},"cefr":"A1","topic":"numbers","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_num_21","data":{"lesson_key":"a1-numbers-01","text":{"en":"twenty-one"},"translations":{"fa":"بیست و یک"},"intent":"say_number","concept_refs":["number_20"],"cefr":"A1","topic":"numbers","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_num_35","data":{"lesson_key":"a1-numbers-01","text":{"en":"thirty-five"},"translations":{"fa":"سی و پنج"},"intent":"say_number","concept_refs":["number_30"],"cefr":"A1","topic":"numbers","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_how_old","data":{"lesson_key":"a1-numbers-02","text":{"en":"How old are you?"},"translations":{"fa":"چند سالته؟"},"intent":"ask_age","concept_refs":["ask_age"],"cefr":"A1","topic":"numbers","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_age_25","data":{"lesson_key":"a1-numbers-02","text":{"en":"I'm twenty-five years old."},"translations":{"fa":"من بیست و پنج سالمه."},"intent":"state_age","concept_refs":["state_age","number_20"],"cefr":"A1","topic":"numbers","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_age_short","data":{"lesson_key":"a1-numbers-02","text":{"en":"I'm twenty-five."},"translations":{"fa":"من بیست و پنج سالمه."},"intent":"state_age_short","concept_refs":["state_age","number_20"],"cefr":"A1","topic":"numbers","register":"informal","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_teen_tens","data":{"lesson_key":"a1-numbers-01","slug":"a1-teens-and-tens","title":"-teen and -ty numbers","rule_summary":"Numbers such as thirteen and thirty sound similar but use different endings and stress.","explanation":{"fa":"عددهایی مثل thirteen و thirty شبیه‌اند اما پایان و محل تأکیدشان متفاوت است."},"examples":[{"en":"thirteen — thirty","fa":"سیزده — سی"},{"en":"fourteen — forty","fa":"چهارده — چهل"}],"cefr":"A1","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_age_be","data":{"lesson_key":"a1-numbers-02","slug":"a1-age-with-be","title":"Age with be","rule_summary":"English normally uses be to state age: I'm twenty-five, not I have twenty-five years.","explanation":{"fa":"در انگلیسی برای بیان سن از فعل be استفاده می‌شود: I'm twenty-five."},"examples":[{"en":"I'm twenty-five.","fa":"بیست و پنج سالمه."},{"en":"She's eighteen years old.","fa":"او هجده ساله است."}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_age_party","data":{"lesson_key":"a1-numbers-02","title":"At a birthday party","setting":"birthday party","cefr":"A1","topic":"numbers","characters":["Mina","Lucas"],"turns":[{"order":1,"speaker":"Mina","text":"How old are you?","translation_fa":"چند سالته؟"},{"order":2,"speaker":"Lucas","text":"I'm twenty-four. And you?","translation_fa":"بیست و چهار سالمه. تو چطور؟"},{"order":3,"speaker":"Mina","text":"I'm twenty-two.","translation_fa":"من بیست و دو سالمه."},{"order":4,"speaker":"Lucas","text":"Happy birthday!","translation_fa":"تولدت مبارک!"}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_number_room","data":{"lesson_key":"a1-numbers-01","title":"Room number","setting":"hotel lobby","cefr":"A1","topic":"numbers","characters":["Nina","Mark"],"turns":[{"order":1,"speaker":"Nina","text":"What's your room number?","translation_fa":"شماره اتاقت چنده؟"},{"order":2,"speaker":"Mark","text":"Thirty-five.","translation_fa":"سی و پنج."},{"order":3,"speaker":"Nina","text":"Room thirty-five?","translation_fa":"اتاق سی و پنج؟"},{"order":4,"speaker":"Mark","text":"Yes, that's right.","translation_fa":"بله، درسته."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_num_13","data":{"lesson_key":"a1-numbers-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و عدد درست را انتخاب کن.","audio_text":"thirteen"},"options":["13","30","14","40"],"answer":{"value":"13"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_num_40","data":{"lesson_key":"a1-numbers-01","exercise_type":"multiple_choice","prompt":{"fa":"کدام نوشتار برای 40 درست است؟"},"options":["forty","fourty","fourteen","fourty-one"],"answer":{"value":"forty"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_num_build","data":{"lesson_key":"a1-numbers-01","exercise_type":"sentence_building","prompt":{"fa":"«بیست و پنج» را بساز.","tokens":["five","twenty-"]},"answer":{"tokens":["twenty-","five"],"text":"twenty-five"},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_age_question","data":{"lesson_key":"a1-numbers-02","exercise_type":"multiple_choice","prompt":{"fa":"برای پرسیدن سن کدام جمله درست است؟"},"options":["How old are you?","How age are you?","What old are you?","How years are you?"],"answer":{"value":"How old are you?"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_age_build","data":{"lesson_key":"a1-numbers-02","exercise_type":"sentence_building","prompt":{"fa":"«من بیست و پنج سالمه.» را بساز.","tokens":["old","years","twenty-five","I'm"]},"answer":{"tokens":["I'm","twenty-five","years","old"],"text":"I'm twenty-five years old."},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_age_speak","data":{"lesson_key":"a1-numbers-02","exercise_type":"speaking","prompt":{"instruction_fa":"بگو: من بیست و پنج سالمه."},"answer":{"expected_text":"I'm twenty-five years old."},"difficulty":2,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_num_11",
+      "data": {
+        "slug": "number_11",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "eleven"
+        },
+        "translations": {
+          "fa": "یازده"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_11",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "eleven",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_11"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_11",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_11",
+        "surface_form": "eleven",
+        "grammatical_features": {
+          "value": 11
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_12",
+      "data": {
+        "slug": "number_12",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "twelve"
+        },
+        "translations": {
+          "fa": "دوازده"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_12",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "twelve",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_12"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_12",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_12",
+        "surface_form": "twelve",
+        "grammatical_features": {
+          "value": 12
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_13",
+      "data": {
+        "slug": "number_13",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "thirteen"
+        },
+        "translations": {
+          "fa": "سیزده"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_13",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "thirteen",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_13"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_13",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_13",
+        "surface_form": "thirteen",
+        "grammatical_features": {
+          "value": 13
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_14",
+      "data": {
+        "slug": "number_14",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "fourteen"
+        },
+        "translations": {
+          "fa": "چهارده"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_14",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "fourteen",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_14"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_14",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_14",
+        "surface_form": "fourteen",
+        "grammatical_features": {
+          "value": 14
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_15",
+      "data": {
+        "slug": "number_15",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "fifteen"
+        },
+        "translations": {
+          "fa": "پانزده"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_15",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "fifteen",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_15"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_15",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_15",
+        "surface_form": "fifteen",
+        "grammatical_features": {
+          "value": 15
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_20",
+      "data": {
+        "slug": "number_20",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "twenty"
+        },
+        "translations": {
+          "fa": "بیست"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_20",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "twenty",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_20"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_20",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_20",
+        "surface_form": "twenty",
+        "grammatical_features": {
+          "value": 20
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_30",
+      "data": {
+        "slug": "number_30",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "thirty"
+        },
+        "translations": {
+          "fa": "سی"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_30",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "thirty",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_30"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_30",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_30",
+        "surface_form": "thirty",
+        "grammatical_features": {
+          "value": 30
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_40",
+      "data": {
+        "slug": "number_40",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "forty"
+        },
+        "translations": {
+          "fa": "چهل"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_40",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "forty",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_40"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_40",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_40",
+        "surface_form": "forty",
+        "grammatical_features": {
+          "value": 40
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_50",
+      "data": {
+        "slug": "number_50",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "fifty"
+        },
+        "translations": {
+          "fa": "پنجاه"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_50",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "fifty",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_50"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_50",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_50",
+        "surface_form": "fifty",
+        "grammatical_features": {
+          "value": 50
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_num_100",
+      "data": {
+        "slug": "number_100",
+        "lesson_key": "a1-numbers-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "one hundred"
+        },
+        "translations": {
+          "fa": "صد"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_num_100",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lemma": "hundred",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "number_100"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_num_100",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "lexeme_ref": "lx_num_100",
+        "surface_form": "one hundred",
+        "grammatical_features": {
+          "value": 100
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_age",
+      "data": {
+        "slug": "age",
+        "lesson_key": "a1-numbers-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "age"
+        },
+        "translations": {
+          "fa": "سن"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_age",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "lemma": "age",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "age"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_age",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "lexeme_ref": "lx_age",
+        "surface_form": "age",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_how_old",
+      "data": {
+        "slug": "ask_age",
+        "lesson_key": "a1-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "How old are you?"
+        },
+        "translations": {
+          "fa": "چند سالته؟"
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_years_old",
+      "data": {
+        "slug": "state_age",
+        "lesson_key": "a1-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "I'm … years old."
+        },
+        "translations": {
+          "fa": "من ... سالمه."
+        },
+        "cefr": "A1",
+        "topic": "numbers",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_num_21",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "text": {
+          "en": "twenty-one"
+        },
+        "translations": {
+          "fa": "بیست و یک"
+        },
+        "intent": "say_number",
+        "concept_refs": [
+          "number_20"
+        ],
+        "cefr": "A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_num_35",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "text": {
+          "en": "thirty-five"
+        },
+        "translations": {
+          "fa": "سی و پنج"
+        },
+        "intent": "say_number",
+        "concept_refs": [
+          "number_30"
+        ],
+        "cefr": "A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_how_old",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "text": {
+          "en": "How old are you?"
+        },
+        "translations": {
+          "fa": "چند سالته؟"
+        },
+        "intent": "ask_age",
+        "concept_refs": [
+          "ask_age"
+        ],
+        "cefr": "A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_age_25",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "text": {
+          "en": "I'm twenty-five years old."
+        },
+        "translations": {
+          "fa": "من بیست و پنج سالمه."
+        },
+        "intent": "state_age",
+        "concept_refs": [
+          "state_age",
+          "number_20"
+        ],
+        "cefr": "A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_age_short",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "text": {
+          "en": "I'm twenty-five."
+        },
+        "translations": {
+          "fa": "من بیست و پنج سالمه."
+        },
+        "intent": "state_age_short",
+        "concept_refs": [
+          "state_age",
+          "number_20"
+        ],
+        "cefr": "A1",
+        "topic": "numbers",
+        "register": "informal",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_teen_tens",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "slug": "a1-teens-and-tens",
+        "title": "-teen and -ty numbers",
+        "rule_summary": "Numbers such as thirteen and thirty sound similar but use different endings and stress.",
+        "explanation": {
+          "fa": "عددهایی مثل thirteen و thirty شبیه‌اند اما پایان و محل تأکیدشان متفاوت است."
+        },
+        "examples": [
+          {
+            "en": "thirteen — thirty",
+            "fa": "سیزده — سی"
+          },
+          {
+            "en": "fourteen — forty",
+            "fa": "چهارده — چهل"
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_age_be",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "slug": "a1-age-with-be",
+        "title": "Age with be",
+        "rule_summary": "English normally uses be to state age: I'm twenty-five, not I have twenty-five years.",
+        "explanation": {
+          "fa": "در انگلیسی برای بیان سن از فعل be استفاده می‌شود: I'm twenty-five."
+        },
+        "examples": [
+          {
+            "en": "I'm twenty-five.",
+            "fa": "بیست و پنج سالمه."
+          },
+          {
+            "en": "She's eighteen years old.",
+            "fa": "او هجده ساله است."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_age_party",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "title": "At a birthday party",
+        "setting": "birthday party",
+        "cefr": "A1",
+        "topic": "numbers",
+        "characters": [
+          "Mina",
+          "Lucas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mina",
+            "text": "How old are you?",
+            "translation_fa": "چند سالته؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Lucas",
+            "text": "I'm twenty-four. And you?",
+            "translation_fa": "بیست و چهار سالمه. تو چطور؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Mina",
+            "text": "I'm twenty-two.",
+            "translation_fa": "من بیست و دو سالمه."
+          },
+          {
+            "order": 4,
+            "speaker": "Lucas",
+            "text": "Happy birthday!",
+            "translation_fa": "تولدت مبارک!"
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_number_room",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "title": "Room number",
+        "setting": "hotel lobby",
+        "cefr": "A1",
+        "topic": "numbers",
+        "characters": [
+          "Nina",
+          "Mark"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "What's your room number?",
+            "translation_fa": "شماره اتاقت چنده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Mark",
+            "text": "Thirty-five.",
+            "translation_fa": "سی و پنج."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Room thirty-five?",
+            "translation_fa": "اتاق سی و پنج؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Mark",
+            "text": "Yes, that's right.",
+            "translation_fa": "بله، درسته."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_num_13",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عدد درست را انتخاب کن.",
+          "audio_text": "thirteen"
+        },
+        "options": [
+          "13",
+          "30",
+          "14",
+          "40"
+        ],
+        "answer": {
+          "value": "13"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "نکتهٔ واژگانی: «thirteen»: «سیزده»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "thirteen",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "thirteen"
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_num_40",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام نوشتار برای 40 درست است؟"
+        },
+        "options": [
+          "forty",
+          "fourty",
+          "fourteen",
+          "fourty-one"
+        ],
+        "answer": {
+          "value": "forty"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: چهل\nنکتهٔ واژگانی: «forty»: «چهل»",
+          "model_answer": "forty",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_num_build",
+      "data": {
+        "lesson_key": "a1-numbers-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«بیست و پنج» را بساز.",
+          "tokens": [
+            "five",
+            "twenty-"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "twenty-",
+            "five"
+          ],
+          "text": "twenty-five"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: «بیست و پنج» را بساز.\nنکتهٔ واژگانی: «twenty»: «بیست»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "twenty-five",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_age_question",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "برای پرسیدن سن کدام جمله درست است؟"
+        },
+        "options": [
+          "How old are you?",
+          "How age are you?",
+          "What old are you?",
+          "How years are you?"
+        ],
+        "answer": {
+          "value": "How old are you?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: چند سالته؟\nنکتهٔ واژگانی: «how old are you»: «چند سالته؟»",
+          "model_answer": "How old are you?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_age_build",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«من بیست و پنج سالمه.» را بساز.",
+          "tokens": [
+            "old",
+            "years",
+            "twenty-five",
+            "I'm"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I'm",
+            "twenty-five",
+            "years",
+            "old"
+          ],
+          "text": "I'm twenty-five years old."
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من بیست و پنج سالمه.\nنکتهٔ واژگانی: «twenty»: «بیست»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "I'm twenty-five years old.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_age_speak",
+      "data": {
+        "lesson_key": "a1-numbers-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "بگو: من بیست و پنج سالمه."
+        },
+        "answer": {
+          "expected_text": "I'm twenty-five years old."
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من بیست و پنج سالمه.\nنکتهٔ واژگانی: «twenty»: «بیست»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "I'm twenty-five years old.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

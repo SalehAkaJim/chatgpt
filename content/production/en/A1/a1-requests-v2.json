@@ -9,39 +9,658 @@
   "curriculum_unit": "a1-requests",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_req_can_you","data":{"slug":"request_can_you","lesson_key":"a1-requests-01","concept_type":"functional","forms":{"en":"Can you ...?"},"translations":{"fa":"می‌توانی ...؟ / می‌شود ...؟"},"cefr":"A1","topic":"requests","status":"approved"}},
-    {"kind":"concept","external_id":"c_req_please","data":{"slug":"request_please","lesson_key":"a1-requests-01","concept_type":"functional","forms":{"en":"please"},"translations":{"fa":"لطفاً"},"cefr":"A1","topic":"requests","status":"approved"}},
-    {"kind":"concept","external_id":"c_req_help","data":{"slug":"request_help","lesson_key":"a1-requests-01","concept_type":"lexical","forms":{"en":"help"},"translations":{"fa":"کمک کردن"},"cefr":"A1","topic":"requests","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_req_help","data":{"lesson_key":"a1-requests-01","lemma":"help","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["request_help"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_req_help","data":{"lesson_key":"a1-requests-01","lexeme_ref":"lx_req_help","surface_form":"help","grammatical_features":{"form":"base"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_req_open","data":{"slug":"request_open","lesson_key":"a1-requests-01","concept_type":"lexical","forms":{"en":"open"},"translations":{"fa":"باز کردن"},"cefr":"A1","topic":"requests","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_req_open","data":{"lesson_key":"a1-requests-01","lemma":"open","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["request_open"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_req_open","data":{"lesson_key":"a1-requests-01","lexeme_ref":"lx_req_open","surface_form":"open","grammatical_features":{"form":"base"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_req_close","data":{"slug":"request_close","lesson_key":"a1-requests-01","concept_type":"lexical","forms":{"en":"close"},"translations":{"fa":"بستن"},"cefr":"A1","topic":"requests","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_req_close","data":{"lesson_key":"a1-requests-01","lemma":"close","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["request_close"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_req_close","data":{"lesson_key":"a1-requests-01","lexeme_ref":"lx_req_close","surface_form":"close","grammatical_features":{"form":"base"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_req_pass","data":{"slug":"request_pass","lesson_key":"a1-requests-02","concept_type":"lexical","forms":{"en":"pass"},"translations":{"fa":"دادن / رد کردن چیزی به کسی"},"cefr":"A1","topic":"requests","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_req_pass","data":{"lesson_key":"a1-requests-02","lemma":"pass","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["request_pass"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_req_pass","data":{"lesson_key":"a1-requests-02","lexeme_ref":"lx_req_pass","surface_form":"pass","grammatical_features":{"form":"base"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_req_sure","data":{"slug":"request_response_sure","lesson_key":"a1-requests-02","concept_type":"functional","forms":{"en":"Sure."},"translations":{"fa":"حتماً."},"cefr":"A1","topic":"requests","status":"approved"}},
-    {"kind":"concept","external_id":"c_req_sorry_cant","data":{"slug":"request_response_sorry_cant","lesson_key":"a1-requests-02","concept_type":"functional","forms":{"en":"Sorry, I can't."},"translations":{"fa":"ببخشید، نمی‌توانم."},"cefr":"A1","topic":"requests","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_req_help","data":{"lesson_key":"a1-requests-01","text":{"en":"Can you help me, please?"},"translations":{"fa":"می‌شود لطفاً به من کمک کنی؟"},"intent":"make_request","concept_refs":["request_can_you","request_please","request_help"],"cefr":"A1","topic":"requests","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_req_open","data":{"lesson_key":"a1-requests-01","text":{"en":"Can you open the window, please?"},"translations":{"fa":"می‌شود لطفاً پنجره را باز کنی؟"},"intent":"make_request","concept_refs":["request_can_you","request_please","request_open"],"cefr":"A1","topic":"requests","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_req_close","data":{"lesson_key":"a1-requests-01","text":{"en":"Can you close the door?"},"translations":{"fa":"می‌توانی در را ببندی؟"},"intent":"make_request","concept_refs":["request_can_you","request_close"],"cefr":"A1","topic":"requests","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_req_pass","data":{"lesson_key":"a1-requests-02","text":{"en":"Can you pass me the water, please?"},"translations":{"fa":"می‌شود لطفاً آب را به من بدهی؟"},"intent":"make_request","concept_refs":["request_can_you","request_please","request_pass"],"cefr":"A1","topic":"requests","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_req_sure","data":{"lesson_key":"a1-requests-02","text":{"en":"Sure. Here you are."},"translations":{"fa":"حتماً. بفرما."},"intent":"accept_request","concept_refs":["request_response_sure"],"cefr":"A1","topic":"requests","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_req_refuse","data":{"lesson_key":"a1-requests-02","text":{"en":"Sorry, I can't right now."},"translations":{"fa":"ببخشید، الان نمی‌توانم."},"intent":"refuse_request","concept_refs":["request_response_sorry_cant"],"cefr":"A1","topic":"requests","register":"polite","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_req_can","data":{"lesson_key":"a1-requests-01","slug":"a1-can-requests","title":"Can you ...? for requests","rule_summary":"Use Can you + base verb to make a simple request. Add please to sound more polite.","explanation":{"fa":"برای درخواست ساده از Can you + شکل پایه فعل استفاده می‌کنیم. برای مودبانه‌تر شدن می‌توانیم please اضافه کنیم."},"examples":[{"en":"Can you help me?","fa":"می‌توانی به من کمک کنی؟"},{"en":"Can you open the window, please?","fa":"می‌شود لطفاً پنجره را باز کنی؟"}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_req_classroom","data":{"lesson_key":"a1-requests-01","title":"In class","setting":"classroom","cefr":"A1","topic":"requests","characters":["Sara","Ben"],"turns":[{"order":1,"speaker":"Sara","text":"Can you help me, please?","translation_fa":"می‌شود لطفاً به من کمک کنی؟"},{"order":2,"speaker":"Ben","text":"Sure. What's the problem?","translation_fa":"حتماً. مشکل چیه؟"},{"order":3,"speaker":"Sara","text":"I don't understand this word.","translation_fa":"این کلمه را نمی‌فهمم."},{"order":4,"speaker":"Ben","text":"No problem. I'll show you.","translation_fa":"مشکلی نیست. نشانت می‌دهم."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_req_table","data":{"lesson_key":"a1-requests-02","title":"At the table","setting":"kitchen table","cefr":"A1","topic":"requests","characters":["Mina","Owen"],"turns":[{"order":1,"speaker":"Mina","text":"Can you pass me the water, please?","translation_fa":"می‌شود لطفاً آب را به من بدهی؟"},{"order":2,"speaker":"Owen","text":"Sure. Here you are.","translation_fa":"حتماً. بفرما."},{"order":3,"speaker":"Mina","text":"Thanks.","translation_fa":"ممنون."},{"order":4,"speaker":"Owen","text":"You're welcome.","translation_fa":"خواهش می‌کنم."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_req_mc","data":{"lesson_key":"a1-requests-01","exercise_type":"multiple_choice","prompt":{"fa":"برای درخواست مودبانه کمک، کدام جمله درست است؟"},"options":["Can you help me, please?","You help me now.","Help you me?","Are you help me?"],"answer":{"value":"Can you help me, please?"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_req_build","data":{"lesson_key":"a1-requests-01","exercise_type":"sentence_building","prompt":{"fa":"«می‌شود لطفاً در را ببندی؟» را بساز.","tokens":["door","the","close","please","you","Can"]},"answer":{"tokens":["Can","you","close","the","door","please"],"text":"Can you close the door, please?"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_req_fill","data":{"lesson_key":"a1-requests-02","exercise_type":"fill_blank","prompt":{"text":"Can you ___ me the water, please?"},"options":["pass","passes","passing","passed"],"answer":{"value":"pass"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_req_listen","data":{"lesson_key":"a1-requests-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و پاسخ مناسب را انتخاب کن.","audio_text":"Can you open the window, please?"},"options":["Sure.","It's Monday.","I'm 20.","It's five dollars."],"answer":{"value":"Sure."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_req_speak","data":{"lesson_key":"a1-requests-01","exercise_type":"speaking","prompt":{"instruction_fa":"با Can you از کسی بخواه پنجره را باز کند.","target_hint":"open the window"},"answer":{"expected_text":"Can you open the window, please?"},"difficulty":1,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_req_can_you",
+      "data": {
+        "slug": "request_can_you",
+        "lesson_key": "a1-requests-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Can you ...?"
+        },
+        "translations": {
+          "fa": "می‌توانی ...؟ / می‌شود ...؟"
+        },
+        "cefr": "A1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_req_please",
+      "data": {
+        "slug": "request_please",
+        "lesson_key": "a1-requests-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "please"
+        },
+        "translations": {
+          "fa": "لطفاً"
+        },
+        "cefr": "A1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_req_help",
+      "data": {
+        "slug": "request_help",
+        "lesson_key": "a1-requests-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "help"
+        },
+        "translations": {
+          "fa": "کمک کردن"
+        },
+        "cefr": "A1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_req_help",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "lemma": "help",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "request_help"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_req_help",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "lexeme_ref": "lx_req_help",
+        "surface_form": "help",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_req_open",
+      "data": {
+        "slug": "request_open",
+        "lesson_key": "a1-requests-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "open"
+        },
+        "translations": {
+          "fa": "باز کردن"
+        },
+        "cefr": "A1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_req_open",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "lemma": "open",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "request_open"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_req_open",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "lexeme_ref": "lx_req_open",
+        "surface_form": "open",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_req_close",
+      "data": {
+        "slug": "request_close",
+        "lesson_key": "a1-requests-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "close"
+        },
+        "translations": {
+          "fa": "بستن"
+        },
+        "cefr": "A1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_req_close",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "lemma": "close",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "request_close"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_req_close",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "lexeme_ref": "lx_req_close",
+        "surface_form": "close",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_req_pass",
+      "data": {
+        "slug": "request_pass",
+        "lesson_key": "a1-requests-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "pass"
+        },
+        "translations": {
+          "fa": "دادن / رد کردن چیزی به کسی"
+        },
+        "cefr": "A1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_req_pass",
+      "data": {
+        "lesson_key": "a1-requests-02",
+        "lemma": "pass",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "request_pass"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_req_pass",
+      "data": {
+        "lesson_key": "a1-requests-02",
+        "lexeme_ref": "lx_req_pass",
+        "surface_form": "pass",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_req_sure",
+      "data": {
+        "slug": "request_response_sure",
+        "lesson_key": "a1-requests-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Sure."
+        },
+        "translations": {
+          "fa": "حتماً."
+        },
+        "cefr": "A1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_req_sorry_cant",
+      "data": {
+        "slug": "request_response_sorry_cant",
+        "lesson_key": "a1-requests-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Sorry, I can't."
+        },
+        "translations": {
+          "fa": "ببخشید، نمی‌توانم."
+        },
+        "cefr": "A1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_req_help",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "text": {
+          "en": "Can you help me, please?"
+        },
+        "translations": {
+          "fa": "می‌شود لطفاً به من کمک کنی؟"
+        },
+        "intent": "make_request",
+        "concept_refs": [
+          "request_can_you",
+          "request_please",
+          "request_help"
+        ],
+        "cefr": "A1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_req_open",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "text": {
+          "en": "Can you open the window, please?"
+        },
+        "translations": {
+          "fa": "می‌شود لطفاً پنجره را باز کنی؟"
+        },
+        "intent": "make_request",
+        "concept_refs": [
+          "request_can_you",
+          "request_please",
+          "request_open"
+        ],
+        "cefr": "A1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_req_close",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "text": {
+          "en": "Can you close the door?"
+        },
+        "translations": {
+          "fa": "می‌توانی در را ببندی؟"
+        },
+        "intent": "make_request",
+        "concept_refs": [
+          "request_can_you",
+          "request_close"
+        ],
+        "cefr": "A1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_req_pass",
+      "data": {
+        "lesson_key": "a1-requests-02",
+        "text": {
+          "en": "Can you pass me the water, please?"
+        },
+        "translations": {
+          "fa": "می‌شود لطفاً آب را به من بدهی؟"
+        },
+        "intent": "make_request",
+        "concept_refs": [
+          "request_can_you",
+          "request_please",
+          "request_pass"
+        ],
+        "cefr": "A1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_req_sure",
+      "data": {
+        "lesson_key": "a1-requests-02",
+        "text": {
+          "en": "Sure. Here you are."
+        },
+        "translations": {
+          "fa": "حتماً. بفرما."
+        },
+        "intent": "accept_request",
+        "concept_refs": [
+          "request_response_sure"
+        ],
+        "cefr": "A1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_req_refuse",
+      "data": {
+        "lesson_key": "a1-requests-02",
+        "text": {
+          "en": "Sorry, I can't right now."
+        },
+        "translations": {
+          "fa": "ببخشید، الان نمی‌توانم."
+        },
+        "intent": "refuse_request",
+        "concept_refs": [
+          "request_response_sorry_cant"
+        ],
+        "cefr": "A1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_req_can",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "slug": "a1-can-requests",
+        "title": "Can you ...? for requests",
+        "rule_summary": "Use Can you + base verb to make a simple request. Add please to sound more polite.",
+        "explanation": {
+          "fa": "برای درخواست ساده از Can you + شکل پایه فعل استفاده می‌کنیم. برای مودبانه‌تر شدن می‌توانیم please اضافه کنیم."
+        },
+        "examples": [
+          {
+            "en": "Can you help me?",
+            "fa": "می‌توانی به من کمک کنی؟"
+          },
+          {
+            "en": "Can you open the window, please?",
+            "fa": "می‌شود لطفاً پنجره را باز کنی؟"
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_req_classroom",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "title": "In class",
+        "setting": "classroom",
+        "cefr": "A1",
+        "topic": "requests",
+        "characters": [
+          "Sara",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sara",
+            "text": "Can you help me, please?",
+            "translation_fa": "می‌شود لطفاً به من کمک کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "Sure. What's the problem?",
+            "translation_fa": "حتماً. مشکل چیه؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Sara",
+            "text": "I don't understand this word.",
+            "translation_fa": "این کلمه را نمی‌فهمم."
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "No problem. I'll show you.",
+            "translation_fa": "مشکلی نیست. نشانت می‌دهم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_req_table",
+      "data": {
+        "lesson_key": "a1-requests-02",
+        "title": "At the table",
+        "setting": "kitchen table",
+        "cefr": "A1",
+        "topic": "requests",
+        "characters": [
+          "Mina",
+          "Owen"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mina",
+            "text": "Can you pass me the water, please?",
+            "translation_fa": "می‌شود لطفاً آب را به من بدهی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Owen",
+            "text": "Sure. Here you are.",
+            "translation_fa": "حتماً. بفرما."
+          },
+          {
+            "order": 3,
+            "speaker": "Mina",
+            "text": "Thanks.",
+            "translation_fa": "ممنون."
+          },
+          {
+            "order": 4,
+            "speaker": "Owen",
+            "text": "You're welcome.",
+            "translation_fa": "خواهش می‌کنم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_req_mc",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "برای درخواست مودبانه کمک، کدام جمله درست است؟"
+        },
+        "options": [
+          "Can you help me, please?",
+          "You help me now.",
+          "Help you me?",
+          "Are you help me?"
+        ],
+        "answer": {
+          "value": "Can you help me, please?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: می‌شود لطفاً به من کمک کنی؟\nنکتهٔ واژگانی: «can you»: «می‌توانی ...؟ / می‌شود ...؟»؛ «please»: «لطفاً»",
+          "model_answer": "Can you help me, please?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_req_build",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«می‌شود لطفاً در را ببندی؟» را بساز.",
+          "tokens": [
+            "door",
+            "the",
+            "close",
+            "please",
+            "you",
+            "Can"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Can",
+            "you",
+            "close",
+            "the",
+            "door",
+            "please"
+          ],
+          "text": "Can you close the door, please?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: «می‌شود لطفاً در را ببندی؟» را بساز.\nنکتهٔ واژگانی: «can you»: «می‌توانی ...؟ / می‌شود ...؟»؛ «please»: «لطفاً»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Can you close the door, please?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_req_fill",
+      "data": {
+        "lesson_key": "a1-requests-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Can you ___ me the water, please?"
+        },
+        "options": [
+          "pass",
+          "passes",
+          "passing",
+          "passed"
+        ],
+        "answer": {
+          "value": "pass"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "«pass» در این درس یعنی «دادن / رد کردن چیزی به کسی».",
+          "model_answer": "Can you pass me the water, please?",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_req_listen",
+      "data": {
+        "lesson_key": "a1-requests-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و پاسخ مناسب را انتخاب کن.",
+          "audio_text": "Can you open the window, please?"
+        },
+        "options": [
+          "Sure.",
+          "It's Monday.",
+          "I'm 20.",
+          "It's five dollars."
+        ],
+        "answer": {
+          "value": "Sure."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: می‌شود لطفاً پنجره را باز کنی؟\nنکتهٔ واژگانی: «can you»: «می‌توانی ...؟ / می‌شود ...؟»؛ «please»: «لطفاً»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Can you open the window, please?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Can you open the window, please?"
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_req_speak",
+      "data": {
+        "lesson_key": "a1-requests-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "با Can you از کسی بخواه پنجره را باز کند.",
+          "target_hint": "open the window"
+        },
+        "answer": {
+          "expected_text": "Can you open the window, please?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: می‌شود لطفاً پنجره را باز کنی؟\nنکتهٔ واژگانی: «can you»: «می‌توانی ...؟ / می‌شود ...؟»؛ «please»: «لطفاً»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Can you open the window, please?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

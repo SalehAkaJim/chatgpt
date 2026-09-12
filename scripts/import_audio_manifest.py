@@ -23,6 +23,8 @@ TABLES = {
     "word_form": "word_forms",
     "utterance": "utterances",
     "dialogue_turn": "dialogue_turns",
+    "exercise": "exercises",
+    "grammar_point": "grammar_points",
 }
 
 
@@ -153,8 +155,9 @@ def main():
 
                 cur.execute(
                     "UPDATE audio_assets SET status='archived' WHERE entity_type=%s AND entity_id=%s "
-                    "AND voice_key=%s AND source_text_hash IS NOT NULL AND source_text_hash<>%s AND status<>'archived'",
-                    (entity_type, entity_id, item["voice_key"], item["source_text_hash"]),
+                    "AND voice_key=%s AND source_text_hash IS NOT NULL AND source_text_hash<>%s AND status<>'archived' "
+                    "AND (entity_type<>'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata,'$.entity_key'))=%s)",
+                    (entity_type, entity_id, item["voice_key"], item["source_text_hash"], ref['entity_key']),
                 )
                 archived += cur.rowcount
 

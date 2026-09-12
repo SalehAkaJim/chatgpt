@@ -9,32 +9,597 @@
   "curriculum_unit": "a1-health",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_tired","data":{"slug":"health_tired","lesson_key":"a1-health-01","concept_type":"lexical","forms":{"en":"tired"},"translations":{"fa":"خسته"},"cefr":"A1","topic":"basic-health","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_tired","data":{"lesson_key":"a1-health-01","lemma":"tired","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["health_tired"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_tired","data":{"lesson_key":"a1-health-01","lexeme_ref":"lx_tired","surface_form":"tired","grammatical_features":{"degree":"positive"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_sick","data":{"slug":"health_sick","lesson_key":"a1-health-01","concept_type":"lexical","forms":{"en":"sick"},"translations":{"fa":"مریض"},"cefr":"A1","topic":"basic-health","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_sick","data":{"lesson_key":"a1-health-01","lemma":"sick","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["health_sick"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_sick","data":{"lesson_key":"a1-health-01","lexeme_ref":"lx_sick","surface_form":"sick","grammatical_features":{"degree":"positive"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_headache","data":{"slug":"health_headache","lesson_key":"a1-health-02","concept_type":"lexical","forms":{"en":"headache"},"translations":{"fa":"سردرد"},"cefr":"A1","topic":"basic-health","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_headache","data":{"lesson_key":"a1-health-02","lemma":"headache","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["health_headache"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_headache","data":{"lesson_key":"a1-health-02","lexeme_ref":"lx_headache","surface_form":"headache","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_cold_illness","data":{"slug":"health_cold_illness","lesson_key":"a1-health-02","concept_type":"lexical","forms":{"en":"a cold"},"translations":{"fa":"سرماخوردگی"},"cefr":"A1","topic":"basic-health","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_cold_illness","data":{"lesson_key":"a1-health-02","lemma":"cold","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["health_cold_illness"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_cold_illness","data":{"lesson_key":"a1-health-02","lexeme_ref":"lx_cold_illness","surface_form":"cold","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_feel_well","data":{"slug":"health_feel_well","lesson_key":"a1-health-01","concept_type":"functional","forms":{"en":"I don't feel well."},"translations":{"fa":"حالم خوب نیست."},"cefr":"A1","topic":"basic-health","status":"approved"}},
-    {"kind":"utterance","external_id":"u_health_not_well","data":{"lesson_key":"a1-health-01","text":{"en":"I don't feel well."},"translations":{"fa":"حالم خوب نیست."},"intent":"report_unwell","concept_refs":["health_feel_well"],"cefr":"A1","topic":"basic-health","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_health_tired","data":{"lesson_key":"a1-health-01","text":{"en":"I'm very tired."},"translations":{"fa":"خیلی خسته‌ام."},"intent":"report_condition","concept_refs":["health_tired"],"cefr":"A1","topic":"basic-health","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_health_sick","data":{"lesson_key":"a1-health-01","text":{"en":"I feel sick."},"translations":{"fa":"حالم بد است / احساس بیماری می‌کنم."},"intent":"report_condition","concept_refs":["health_sick"],"cefr":"A1","topic":"basic-health","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_health_headache","data":{"lesson_key":"a1-health-02","text":{"en":"I have a headache."},"translations":{"fa":"سردرد دارم."},"intent":"report_symptom","concept_refs":["health_headache"],"cefr":"A1","topic":"basic-health","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_health_cold","data":{"lesson_key":"a1-health-02","text":{"en":"I have a cold."},"translations":{"fa":"سرما خورده‌ام."},"intent":"report_illness","concept_refs":["health_cold_illness"],"cefr":"A1","topic":"basic-health","register":"neutral","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_health_feel","data":{"lesson_key":"a1-health-01","slug":"a1-feel-adjective","title":"feel + adjective","rule_summary":"Use feel + adjective for simple physical or emotional states.","explanation":{"fa":"برای بیان وضعیت جسمی یا احساسی ساده می‌توانیم از feel + صفت استفاده کنیم."},"examples":[{"en":"I feel sick.","fa":"احساس بیماری می‌کنم."},{"en":"I feel tired.","fa":"احساس خستگی می‌کنم."}],"cefr":"A1","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_health_have","data":{"lesson_key":"a1-health-02","slug":"a1-have-symptom","title":"have + symptom","rule_summary":"Use have with common symptoms such as a headache or a cold.","explanation":{"fa":"برای بعضی علائم و بیماری‌های رایج از have استفاده می‌کنیم."},"examples":[{"en":"I have a headache.","fa":"سردرد دارم."},{"en":"I have a cold.","fa":"سرما خورده‌ام."}],"cefr":"A1","status":"approved"}},
-    {"kind":"dialogue","external_id":"d_health_home","data":{"lesson_key":"a1-health-01","title":"Not feeling well","setting":"home","cefr":"A1","topic":"basic-health","characters":["Ava","Noah"],"turns":[{"order":1,"speaker":"Noah","text":"Are you okay?","translation_fa":"خوبی؟"},{"order":2,"speaker":"Ava","text":"Not really. I don't feel well.","translation_fa":"نه خیلی. حالم خوب نیست."},{"order":3,"speaker":"Noah","text":"Are you tired?","translation_fa":"خسته‌ای؟"},{"order":4,"speaker":"Ava","text":"Yes, very tired.","translation_fa":"بله، خیلی خسته‌ام."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_health_clinic","data":{"lesson_key":"a1-health-02","title":"At the clinic","setting":"clinic reception","cefr":"A1","topic":"basic-health","characters":["Sara","Drake"],"turns":[{"order":1,"speaker":"Drake","text":"What's the problem?","translation_fa":"مشکل چیه؟"},{"order":2,"speaker":"Sara","text":"I have a headache and a cold.","translation_fa":"سردرد و سرماخوردگی دارم."},{"order":3,"speaker":"Drake","text":"Do you feel sick?","translation_fa":"حالت بد است؟"},{"order":4,"speaker":"Sara","text":"Yes, a little.","translation_fa":"بله، کمی."}],"status":"approved"}},
-    {"kind":"exercise","external_id":"ex_health_vocab","data":{"lesson_key":"a1-health-01","exercise_type":"multiple_choice","prompt":{"fa":"tired یعنی چه؟"},"options":["خسته","مریض","سردرد","گرم"],"answer":{"value":"خسته"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_health_blank","data":{"lesson_key":"a1-health-02","exercise_type":"fill_blank","prompt":{"text":"I ___ a headache."},"options":["have","am","feel","do"],"answer":{"value":"have"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_health_build","data":{"lesson_key":"a1-health-01","exercise_type":"sentence_building","prompt":{"fa":"«حالم خوب نیست.» را بساز.","tokens":["well","feel","don't","I"]},"answer":{"tokens":["I","don't","feel","well"],"text":"I don't feel well."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_health_listen","data":{"lesson_key":"a1-health-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و مشکل را انتخاب کن.","audio_text":"I have a headache."},"options":["headache","cold","tired","hungry"],"answer":{"value":"headache"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_health_speak","data":{"lesson_key":"a1-health-02","exercise_type":"speaking","prompt":{"instruction_fa":"این جمله را بگو.","value":"I have a cold."},"answer":{"expected_text":"I have a cold."},"difficulty":1,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_tired",
+      "data": {
+        "slug": "health_tired",
+        "lesson_key": "a1-health-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "tired"
+        },
+        "translations": {
+          "fa": "خسته"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_tired",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "lemma": "tired",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "health_tired"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_tired",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "lexeme_ref": "lx_tired",
+        "surface_form": "tired",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_sick",
+      "data": {
+        "slug": "health_sick",
+        "lesson_key": "a1-health-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "sick"
+        },
+        "translations": {
+          "fa": "مریض"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_sick",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "lemma": "sick",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "health_sick"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_sick",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "lexeme_ref": "lx_sick",
+        "surface_form": "sick",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_headache",
+      "data": {
+        "slug": "health_headache",
+        "lesson_key": "a1-health-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "headache"
+        },
+        "translations": {
+          "fa": "سردرد"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_headache",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "lemma": "headache",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "health_headache"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_headache",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "lexeme_ref": "lx_headache",
+        "surface_form": "headache",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cold_illness",
+      "data": {
+        "slug": "health_cold_illness",
+        "lesson_key": "a1-health-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "a cold"
+        },
+        "translations": {
+          "fa": "سرماخوردگی"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cold_illness",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "lemma": "cold",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "health_cold_illness"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cold_illness",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "lexeme_ref": "lx_cold_illness",
+        "surface_form": "cold",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_feel_well",
+      "data": {
+        "slug": "health_feel_well",
+        "lesson_key": "a1-health-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "I don't feel well."
+        },
+        "translations": {
+          "fa": "حالم خوب نیست."
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_not_well",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "text": {
+          "en": "I don't feel well."
+        },
+        "translations": {
+          "fa": "حالم خوب نیست."
+        },
+        "intent": "report_unwell",
+        "concept_refs": [
+          "health_feel_well"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_tired",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "text": {
+          "en": "I'm very tired."
+        },
+        "translations": {
+          "fa": "خیلی خسته‌ام."
+        },
+        "intent": "report_condition",
+        "concept_refs": [
+          "health_tired"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_sick",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "text": {
+          "en": "I feel sick."
+        },
+        "translations": {
+          "fa": "حالم بد است / احساس بیماری می‌کنم."
+        },
+        "intent": "report_condition",
+        "concept_refs": [
+          "health_sick"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_headache",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "text": {
+          "en": "I have a headache."
+        },
+        "translations": {
+          "fa": "سردرد دارم."
+        },
+        "intent": "report_symptom",
+        "concept_refs": [
+          "health_headache"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_cold",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "text": {
+          "en": "I have a cold."
+        },
+        "translations": {
+          "fa": "سرما خورده‌ام."
+        },
+        "intent": "report_illness",
+        "concept_refs": [
+          "health_cold_illness"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_health_feel",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "slug": "a1-feel-adjective",
+        "title": "feel + adjective",
+        "rule_summary": "Use feel + adjective for simple physical or emotional states.",
+        "explanation": {
+          "fa": "برای بیان وضعیت جسمی یا احساسی ساده می‌توانیم از feel + صفت استفاده کنیم."
+        },
+        "examples": [
+          {
+            "en": "I feel sick.",
+            "fa": "احساس بیماری می‌کنم."
+          },
+          {
+            "en": "I feel tired.",
+            "fa": "احساس خستگی می‌کنم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_health_have",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "slug": "a1-have-symptom",
+        "title": "have + symptom",
+        "rule_summary": "Use have with common symptoms such as a headache or a cold.",
+        "explanation": {
+          "fa": "برای بعضی علائم و بیماری‌های رایج از have استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I have a headache.",
+            "fa": "سردرد دارم."
+          },
+          {
+            "en": "I have a cold.",
+            "fa": "سرما خورده‌ام."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_home",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "title": "Not feeling well",
+        "setting": "home",
+        "cefr": "A1",
+        "topic": "basic-health",
+        "characters": [
+          "Ava",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Noah",
+            "text": "Are you okay?",
+            "translation_fa": "خوبی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Ava",
+            "text": "Not really. I don't feel well.",
+            "translation_fa": "نه خیلی. حالم خوب نیست."
+          },
+          {
+            "order": 3,
+            "speaker": "Noah",
+            "text": "Are you tired?",
+            "translation_fa": "خسته‌ای؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Ava",
+            "text": "Yes, very tired.",
+            "translation_fa": "بله، خیلی خسته‌ام."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_clinic",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "title": "At the clinic",
+        "setting": "clinic reception",
+        "cefr": "A1",
+        "topic": "basic-health",
+        "characters": [
+          "Sara",
+          "Drake"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Drake",
+            "text": "What's the problem?",
+            "translation_fa": "مشکل چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Sara",
+            "text": "I have a headache and a cold.",
+            "translation_fa": "سردرد و سرماخوردگی دارم."
+          },
+          {
+            "order": 3,
+            "speaker": "Drake",
+            "text": "Do you feel sick?",
+            "translation_fa": "حالت بد است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Sara",
+            "text": "Yes, a little.",
+            "translation_fa": "بله، کمی."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_health_vocab",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "tired یعنی چه؟"
+        },
+        "options": [
+          "خسته",
+          "مریض",
+          "سردرد",
+          "گرم"
+        ],
+        "answer": {
+          "value": "خسته"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خسته\nنکتهٔ واژگانی: «tired»: «خسته»",
+          "model_answer": "tired",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_health_blank",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I ___ a headache."
+        },
+        "options": [
+          "have",
+          "am",
+          "feel",
+          "do"
+        ],
+        "answer": {
+          "value": "have"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "have در ترکیب have a headache به معنی سردرد داشتن است.",
+          "model_answer": "I have a headache.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_health_build",
+      "data": {
+        "lesson_key": "a1-health-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«حالم خوب نیست.» را بساز.",
+          "tokens": [
+            "well",
+            "feel",
+            "don't",
+            "I"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I",
+            "don't",
+            "feel",
+            "well"
+          ],
+          "text": "I don't feel well."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: حالم خوب نیست.\nنکتهٔ واژگانی: «i don t feel well»: «حالم خوب نیست.»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "I don't feel well.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_health_listen",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مشکل را انتخاب کن.",
+          "audio_text": "I have a headache."
+        },
+        "options": [
+          "headache",
+          "cold",
+          "tired",
+          "hungry"
+        ],
+        "answer": {
+          "value": "headache"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: سردرد دارم.\nنکتهٔ واژگانی: «headache»: «سردرد»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I have a headache.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I have a headache."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_health_speak",
+      "data": {
+        "lesson_key": "a1-health-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را بگو.",
+          "value": "I have a cold."
+        },
+        "answer": {
+          "expected_text": "I have a cold."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: سرما خورده‌ام.\nنکتهٔ واژگانی: «a cold»: «سرماخوردگی»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "I have a cold.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

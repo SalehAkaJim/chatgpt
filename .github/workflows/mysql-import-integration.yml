@@ -86,6 +86,14 @@ jobs:
           python database/import/en/b2.py
           python database/import/en/c1.py
           python database/import/en/c2.py
+      - name: Apply educational corrections twice and verify persisted feedback
+        env:
+          MYSQL_PWD: rootpass
+        run: |
+          python scripts/export_english_content_updates.py
+          mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_content_updates.sql
+          mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_content_updates.sql
+          python scripts/test_english_database_fixes.py
       - name: Verify canonical rows and idempotency through C2
         env:
           MYSQL_PWD: rootpass

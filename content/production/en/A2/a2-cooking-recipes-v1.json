@@ -9,56 +9,889 @@
   "curriculum_unit": "a2-cooking-recipes",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_a2_ingredient","data":{"slug":"a2_ingredient","lesson_key":"a2-cooking-recipes-01","concept_type":"lexical","forms":{"en":"ingredient"},"translations":{"fa":"مواد اولیه / ماده غذایی"},"cefr":"A2","topic":"food-basics","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_ingredient","data":{"lesson_key":"a2-cooking-recipes-01","lemma":"ingredient","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["a2_ingredient"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_ingredient","data":{"lesson_key":"a2-cooking-recipes-01","lexeme_ref":"lx_a2_ingredient","surface_form":"ingredient","grammatical_features":{"number":"singular"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_chop","data":{"slug":"a2_chop","lesson_key":"a2-cooking-recipes-01","concept_type":"lexical","forms":{"en":"chop"},"translations":{"fa":"خرد کردن"},"cefr":"A2","topic":"food-basics","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_chop","data":{"lesson_key":"a2-cooking-recipes-01","lemma":"chop","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["a2_chop"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_chop","data":{"lesson_key":"a2-cooking-recipes-01","lexeme_ref":"lx_a2_chop","surface_form":"chop","grammatical_features":{"form":"base_imperative"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_add","data":{"slug":"a2_add_cooking","lesson_key":"a2-cooking-recipes-01","concept_type":"lexical","forms":{"en":"add"},"translations":{"fa":"اضافه کردن"},"cefr":"A2","topic":"food-basics","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_add","data":{"lesson_key":"a2-cooking-recipes-01","lemma":"add","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["a2_add_cooking"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_add","data":{"lesson_key":"a2-cooking-recipes-01","lexeme_ref":"lx_a2_add","surface_form":"add","grammatical_features":{"form":"base_imperative"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_mix","data":{"slug":"a2_mix","lesson_key":"a2-cooking-recipes-02","concept_type":"lexical","forms":{"en":"mix"},"translations":{"fa":"مخلوط کردن"},"cefr":"A2","topic":"food-basics","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_mix","data":{"lesson_key":"a2-cooking-recipes-02","lemma":"mix","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["a2_mix"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_mix","data":{"lesson_key":"a2-cooking-recipes-02","lexeme_ref":"lx_a2_mix","surface_form":"mix","grammatical_features":{"form":"base_imperative"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_boiling","data":{"slug":"a2_boiling","lesson_key":"a2-cooking-recipes-02","concept_type":"lexical","forms":{"en":"boiling"},"translations":{"fa":"در حال جوش / جوشان"},"cefr":"A2","topic":"food-basics","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_boil","data":{"lesson_key":"a2-cooking-recipes-02","lemma":"boil","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["a2_boiling"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_boiling","data":{"lesson_key":"a2-cooking-recipes-02","lexeme_ref":"lx_a2_boil","surface_form":"boiling","grammatical_features":{"form":"present_participle_adjective"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_heat","data":{"slug":"a2_heat_cooking","lesson_key":"a2-cooking-recipes-03","concept_type":"lexical","forms":{"en":"heat"},"translations":{"fa":"حرارت / گرم کردن"},"cefr":"A2","topic":"food-basics","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_heat","data":{"lesson_key":"a2-cooking-recipes-03","lemma":"heat","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["a2_heat_cooking"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_heat","data":{"lesson_key":"a2-cooking-recipes-03","lexeme_ref":"lx_a2_heat","surface_form":"heat","grammatical_features":{"sense":"cooking_temperature"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_low_heat","data":{"slug":"a2_low_heat","lesson_key":"a2-cooking-recipes-03","concept_type":"lexical","forms":{"en":"low heat"},"translations":{"fa":"حرارت کم"},"cefr":"A2","topic":"food-basics","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_low_heat","data":{"lesson_key":"a2-cooking-recipes-03","lemma":"low heat","language":"en","language_variant":"en-US","part_of_speech":"noun_phrase","concept_refs":["a2_low_heat"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_low_heat","data":{"lesson_key":"a2-cooking-recipes-03","lexeme_ref":"lx_a2_low_heat","surface_form":"low heat","grammatical_features":{"type":"cooking_instruction"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_a2_recipe_ingredients","data":{"lesson_key":"a2-cooking-recipes-01","text":{"en":"You only need four ingredients."},"translations":{"fa":"فقط چهار ماده اولیه لازم داری."},"intent":"introduce_recipe","concept_refs":["a2_ingredient"],"cefr":"A2","topic":"food-basics","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_chop_onion","data":{"lesson_key":"a2-cooking-recipes-01","text":{"en":"First, chop the onion into small pieces."},"translations":{"fa":"اول پیاز را به تکه‌های کوچک خرد کن."},"intent":"give_recipe_step","concept_refs":["a2_chop"],"cefr":"A2","topic":"food-basics","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_add_tomatoes","data":{"lesson_key":"a2-cooking-recipes-01","text":{"en":"Then add the tomatoes and a little salt."},"translations":{"fa":"بعد گوجه‌ها و کمی نمک اضافه کن."},"intent":"give_recipe_step","concept_refs":["a2_add_cooking"],"cefr":"A2","topic":"food-basics","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_mix_well","data":{"lesson_key":"a2-cooking-recipes-02","text":{"en":"Mix everything well."},"translations":{"fa":"همه چیز را خوب مخلوط کن."},"intent":"give_recipe_step","concept_refs":["a2_mix"],"cefr":"A2","topic":"food-basics","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_boiling_water","data":{"lesson_key":"a2-cooking-recipes-02","text":{"en":"Put the pasta into boiling water."},"translations":{"fa":"پاستا را داخل آب جوش بریز."},"intent":"give_recipe_step","concept_refs":["a2_boiling"],"cefr":"A2","topic":"food-basics","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_low_heat","data":{"lesson_key":"a2-cooking-recipes-03","text":{"en":"Cook it on low heat for ten minutes."},"translations":{"fa":"ده دقیقه با حرارت کم بپزش."},"intent":"give_time_temperature_instruction","concept_refs":["a2_low_heat","a2_heat_cooking"],"cefr":"A2","topic":"food-basics","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_taste_before","data":{"lesson_key":"a2-cooking-recipes-03","text":{"en":"Taste it before you add more salt."},"translations":{"fa":"قبل از اینکه نمک بیشتری اضافه کنی مزه‌اش کن."},"intent":"give_cooking_advice","concept_refs":["a2_add_cooking"],"cefr":"A2","topic":"food-basics","register":"neutral","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_a2_recipe_imperatives","data":{"lesson_key":"a2-cooking-recipes-01","slug":"a2-recipe-imperatives","title":"Imperatives for recipe steps","rule_summary":"Recipes commonly use the base verb without a subject to give clear instructions.","explanation":{"fa":"در دستور پخت معمولاً شکل ساده فعل بدون فاعل برای دستور دادن استفاده می‌شود؛ مثل Chop, Add, Mix."},"examples":[{"en":"Chop the onion.","fa":"پیاز را خرد کن."},{"en":"Add two eggs.","fa":"دو تخم‌مرغ اضافه کن."}],"cefr":"A2","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_a2_recipe_sequence","data":{"lesson_key":"a2-cooking-recipes-02","slug":"a2-recipe-sequence","title":"Sequence a recipe","rule_summary":"Use first, then, next, after that, and finally to make recipe steps easy to follow.","explanation":{"fa":"برای مرتب کردن مراحل دستور پخت از first، then، next، after that و finally استفاده می‌کنیم."},"examples":[{"en":"First, boil the water. Then add the pasta.","fa":"اول آب را بجوشان. بعد پاستا را اضافه کن."},{"en":"Finally, add the sauce.","fa":"در آخر سس را اضافه کن."}],"cefr":"A2","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_a2_recipe_for_time","data":{"lesson_key":"a2-cooking-recipes-03","slug":"a2-for-cooking-time","title":"for + cooking time","rule_summary":"Use for + amount of time to say how long a cooking step lasts.","explanation":{"fa":"برای گفتن مدت زمان پخت از for + مدت زمان استفاده می‌کنیم."},"examples":[{"en":"Cook for ten minutes.","fa":"ده دقیقه بپز."},{"en":"Bake for thirty minutes.","fa":"سی دقیقه در فر بپز."}],"cefr":"A2","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_a2_recipe_soup","data":{"lesson_key":"a2-cooking-recipes-01","title":"Making soup","setting":"kitchen","cefr":"A2","topic":"food-basics","characters":["Noura","Alex"],"turns":[{"order":1,"speaker":"Noura","text":"What do I do first?","translation_fa":"اول باید چی کار کنم؟"},{"order":2,"speaker":"Alex","text":"Chop the onion and carrots into small pieces.","translation_fa":"پیاز و هویج را به تکه‌های کوچک خرد کن."},{"order":3,"speaker":"Noura","text":"Then what?","translation_fa":"بعدش چی؟"},{"order":4,"speaker":"Alex","text":"Add them to the pot with a little oil.","translation_fa":"با کمی روغن به قابلمه اضافه‌شون کن."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_a2_recipe_pasta","data":{"lesson_key":"a2-cooking-recipes-02","title":"Simple pasta","setting":"kitchen","cefr":"A2","topic":"food-basics","characters":["Yuki","Daniel"],"turns":[{"order":1,"speaker":"Yuki","text":"Is the water ready?","translation_fa":"آب آماده‌ست؟"},{"order":2,"speaker":"Daniel","text":"Yes, it's boiling. Put the pasta in now.","translation_fa":"بله، داره می‌جوشه. الان پاستا رو بریز داخلش."},{"order":3,"speaker":"Yuki","text":"How long should I cook it?","translation_fa":"چقدر باید بپزمش؟"},{"order":4,"speaker":"Daniel","text":"About ten minutes. Then mix it with the sauce.","translation_fa":"حدود ده دقیقه. بعد با سس مخلوطش کن."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_a2_recipe_heat","data":{"lesson_key":"a2-cooking-recipes-03","title":"Too much heat","setting":"kitchen","cefr":"A2","topic":"food-basics","characters":["Lina","Ben"],"turns":[{"order":1,"speaker":"Lina","text":"The sauce is cooking too fast.","translation_fa":"سس خیلی سریع داره می‌پزه."},{"order":2,"speaker":"Ben","text":"Turn the heat down. Cook it on low heat.","translation_fa":"حرارت رو کم کن. با حرارت کم بپزش."},{"order":3,"speaker":"Lina","text":"Should I add more salt?","translation_fa":"نمک بیشتری اضافه کنم؟"},{"order":4,"speaker":"Ben","text":"Taste it first, then decide.","translation_fa":"اول مزه‌اش کن، بعد تصمیم بگیر."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_a2_recipe_ingredient","data":{"lesson_key":"a2-cooking-recipes-01","exercise_type":"multiple_choice","prompt":{"fa":"ingredient یعنی چه؟"},"options":["ماده اولیه غذا","ظرف غذا","زمان پخت","اجاق"],"answer":{"value":"ماده اولیه غذا"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_recipe_chop","data":{"lesson_key":"a2-cooking-recipes-01","exercise_type":"fill_blank","prompt":{"text":"First, ___ the onion into small pieces."},"options":["chop","boil","drink","book"],"answer":{"value":"chop"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_recipe_add","data":{"lesson_key":"a2-cooking-recipes-01","exercise_type":"sentence_building","prompt":{"fa":"«بعد گوجه‌ها را اضافه کن.» را بساز.","tokens":["tomatoes","Then","the","add"]},"answer":{"tokens":["Then","add","the","tomatoes"],"text":"Then add the tomatoes."},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_recipe_boiling","data":{"lesson_key":"a2-cooking-recipes-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و انتخاب کن آب چه وضعیتی دارد.","audio_text":"Put the pasta into boiling water."},"options":["در حال جوش است","یخ‌زده است","سرد است","تمام شده"],"answer":{"value":"در حال جوش است"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_recipe_mix","data":{"lesson_key":"a2-cooking-recipes-02","exercise_type":"fill_blank","prompt":{"text":"___ everything well."},"options":["Mix","Book","Invite","Visit"],"answer":{"value":"Mix"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_recipe_for","data":{"lesson_key":"a2-cooking-recipes-03","exercise_type":"fill_blank","prompt":{"text":"Cook it on low heat ___ ten minutes."},"options":["for","at","from","during"],"answer":{"value":"for"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_recipe_speak","data":{"lesson_key":"a2-cooking-recipes-03","exercise_type":"speaking","prompt":{"instruction_fa":"این دستور را بگو.","value":"Cook it on low heat for ten minutes."},"answer":{"expected_text":"Cook it on low heat for ten minutes."},"difficulty":2,"cefr":"A2","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_a2_ingredient",
+      "data": {
+        "slug": "a2_ingredient",
+        "lesson_key": "a2-cooking-recipes-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "ingredient"
+        },
+        "translations": {
+          "fa": "مواد اولیه / ماده غذایی"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_ingredient",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "lemma": "ingredient",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_ingredient"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_ingredient",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "lexeme_ref": "lx_a2_ingredient",
+        "surface_form": "ingredient",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_chop",
+      "data": {
+        "slug": "a2_chop",
+        "lesson_key": "a2-cooking-recipes-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "chop"
+        },
+        "translations": {
+          "fa": "خرد کردن"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_chop",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "lemma": "chop",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_chop"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_chop",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "lexeme_ref": "lx_a2_chop",
+        "surface_form": "chop",
+        "grammatical_features": {
+          "form": "base_imperative"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_add",
+      "data": {
+        "slug": "a2_add_cooking",
+        "lesson_key": "a2-cooking-recipes-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "add"
+        },
+        "translations": {
+          "fa": "اضافه کردن"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_add",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "lemma": "add",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_add_cooking"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_add",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "lexeme_ref": "lx_a2_add",
+        "surface_form": "add",
+        "grammatical_features": {
+          "form": "base_imperative"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_mix",
+      "data": {
+        "slug": "a2_mix",
+        "lesson_key": "a2-cooking-recipes-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "mix"
+        },
+        "translations": {
+          "fa": "مخلوط کردن"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_mix",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "lemma": "mix",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_mix"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_mix",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "lexeme_ref": "lx_a2_mix",
+        "surface_form": "mix",
+        "grammatical_features": {
+          "form": "base_imperative"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_boiling",
+      "data": {
+        "slug": "a2_boiling",
+        "lesson_key": "a2-cooking-recipes-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "boiling"
+        },
+        "translations": {
+          "fa": "در حال جوش / جوشان"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_boil",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "lemma": "boil",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_boiling"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_boiling",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "lexeme_ref": "lx_a2_boil",
+        "surface_form": "boiling",
+        "grammatical_features": {
+          "form": "present_participle_adjective"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_heat",
+      "data": {
+        "slug": "a2_heat_cooking",
+        "lesson_key": "a2-cooking-recipes-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "heat"
+        },
+        "translations": {
+          "fa": "حرارت / گرم کردن"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_heat",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "lemma": "heat",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_heat_cooking"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_heat",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "lexeme_ref": "lx_a2_heat",
+        "surface_form": "heat",
+        "grammatical_features": {
+          "sense": "cooking_temperature"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_low_heat",
+      "data": {
+        "slug": "a2_low_heat",
+        "lesson_key": "a2-cooking-recipes-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "low heat"
+        },
+        "translations": {
+          "fa": "حرارت کم"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_low_heat",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "lemma": "low heat",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun_phrase",
+        "concept_refs": [
+          "a2_low_heat"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_low_heat",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "lexeme_ref": "lx_a2_low_heat",
+        "surface_form": "low heat",
+        "grammatical_features": {
+          "type": "cooking_instruction"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_recipe_ingredients",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "text": {
+          "en": "You only need four ingredients."
+        },
+        "translations": {
+          "fa": "فقط چهار ماده اولیه لازم داری."
+        },
+        "intent": "introduce_recipe",
+        "concept_refs": [
+          "a2_ingredient"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_chop_onion",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "text": {
+          "en": "First, chop the onion into small pieces."
+        },
+        "translations": {
+          "fa": "اول پیاز را به تکه‌های کوچک خرد کن."
+        },
+        "intent": "give_recipe_step",
+        "concept_refs": [
+          "a2_chop"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_add_tomatoes",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "text": {
+          "en": "Then add the tomatoes and a little salt."
+        },
+        "translations": {
+          "fa": "بعد گوجه‌ها و کمی نمک اضافه کن."
+        },
+        "intent": "give_recipe_step",
+        "concept_refs": [
+          "a2_add_cooking"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_mix_well",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "text": {
+          "en": "Mix everything well."
+        },
+        "translations": {
+          "fa": "همه چیز را خوب مخلوط کن."
+        },
+        "intent": "give_recipe_step",
+        "concept_refs": [
+          "a2_mix"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_boiling_water",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "text": {
+          "en": "Put the pasta into boiling water."
+        },
+        "translations": {
+          "fa": "پاستا را داخل آب جوش بریز."
+        },
+        "intent": "give_recipe_step",
+        "concept_refs": [
+          "a2_boiling"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_low_heat",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "text": {
+          "en": "Cook it on low heat for ten minutes."
+        },
+        "translations": {
+          "fa": "ده دقیقه با حرارت کم بپزش."
+        },
+        "intent": "give_time_temperature_instruction",
+        "concept_refs": [
+          "a2_low_heat",
+          "a2_heat_cooking"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_taste_before",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "text": {
+          "en": "Taste it before you add more salt."
+        },
+        "translations": {
+          "fa": "قبل از اینکه نمک بیشتری اضافه کنی مزه‌اش کن."
+        },
+        "intent": "give_cooking_advice",
+        "concept_refs": [
+          "a2_add_cooking"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_recipe_imperatives",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "slug": "a2-recipe-imperatives",
+        "title": "Imperatives for recipe steps",
+        "rule_summary": "Recipes commonly use the base verb without a subject to give clear instructions.",
+        "explanation": {
+          "fa": "در دستور پخت معمولاً شکل ساده فعل بدون فاعل برای دستور دادن استفاده می‌شود؛ مثل Chop, Add, Mix."
+        },
+        "examples": [
+          {
+            "en": "Chop the onion.",
+            "fa": "پیاز را خرد کن."
+          },
+          {
+            "en": "Add two eggs.",
+            "fa": "دو تخم‌مرغ اضافه کن."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_recipe_sequence",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "slug": "a2-recipe-sequence",
+        "title": "Sequence a recipe",
+        "rule_summary": "Use first, then, next, after that, and finally to make recipe steps easy to follow.",
+        "explanation": {
+          "fa": "برای مرتب کردن مراحل دستور پخت از first، then، next، after that و finally استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "First, boil the water. Then add the pasta.",
+            "fa": "اول آب را بجوشان. بعد پاستا را اضافه کن."
+          },
+          {
+            "en": "Finally, add the sauce.",
+            "fa": "در آخر سس را اضافه کن."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_recipe_for_time",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "slug": "a2-for-cooking-time",
+        "title": "for + cooking time",
+        "rule_summary": "Use for + amount of time to say how long a cooking step lasts.",
+        "explanation": {
+          "fa": "برای گفتن مدت زمان پخت از for + مدت زمان استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Cook for ten minutes.",
+            "fa": "ده دقیقه بپز."
+          },
+          {
+            "en": "Bake for thirty minutes.",
+            "fa": "سی دقیقه در فر بپز."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_recipe_soup",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "title": "Making soup",
+        "setting": "kitchen",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Noura",
+          "Alex"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Noura",
+            "text": "What do I do first?",
+            "translation_fa": "اول باید چی کار کنم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Alex",
+            "text": "Chop the onion and carrots into small pieces.",
+            "translation_fa": "پیاز و هویج را به تکه‌های کوچک خرد کن."
+          },
+          {
+            "order": 3,
+            "speaker": "Noura",
+            "text": "Then what?",
+            "translation_fa": "بعدش چی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Alex",
+            "text": "Add them to the pot with a little oil.",
+            "translation_fa": "با کمی روغن به قابلمه اضافه‌شون کن."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_recipe_pasta",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "title": "Simple pasta",
+        "setting": "kitchen",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Yuki",
+          "Daniel"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Yuki",
+            "text": "Is the water ready?",
+            "translation_fa": "آب آماده‌ست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Daniel",
+            "text": "Yes, it's boiling. Put the pasta in now.",
+            "translation_fa": "بله، داره می‌جوشه. الان پاستا رو بریز داخلش."
+          },
+          {
+            "order": 3,
+            "speaker": "Yuki",
+            "text": "How long should I cook it?",
+            "translation_fa": "چقدر باید بپزمش؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Daniel",
+            "text": "About ten minutes. Then mix it with the sauce.",
+            "translation_fa": "حدود ده دقیقه. بعد با سس مخلوطش کن."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_recipe_heat",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "title": "Too much heat",
+        "setting": "kitchen",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Lina",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lina",
+            "text": "The sauce is cooking too fast.",
+            "translation_fa": "سس خیلی سریع داره می‌پزه."
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "Turn the heat down. Cook it on low heat.",
+            "translation_fa": "حرارت رو کم کن. با حرارت کم بپزش."
+          },
+          {
+            "order": 3,
+            "speaker": "Lina",
+            "text": "Should I add more salt?",
+            "translation_fa": "نمک بیشتری اضافه کنم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "Taste it first, then decide.",
+            "translation_fa": "اول مزه‌اش کن، بعد تصمیم بگیر."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_recipe_ingredient",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "ingredient یعنی چه؟"
+        },
+        "options": [
+          "ماده اولیه غذا",
+          "ظرف غذا",
+          "زمان پخت",
+          "اجاق"
+        ],
+        "answer": {
+          "value": "ماده اولیه غذا"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: ماده اولیه غذا\nنکتهٔ واژگانی: «ingredient»: «مواد اولیه / ماده غذایی»",
+          "model_answer": "ingredient",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_recipe_chop",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "First, ___ the onion into small pieces."
+        },
+        "options": [
+          "chop",
+          "boil",
+          "drink",
+          "book"
+        ],
+        "answer": {
+          "value": "chop"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "«chop» در این درس یعنی «خرد کردن».",
+          "model_answer": "First, chop the onion into small pieces.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_recipe_add",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«بعد گوجه‌ها را اضافه کن.» را بساز.",
+          "tokens": [
+            "tomatoes",
+            "Then",
+            "the",
+            "add"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Then",
+            "add",
+            "the",
+            "tomatoes"
+          ],
+          "text": "Then add the tomatoes."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: «بعد گوجه‌ها را اضافه کن.» را بساز.\nنکتهٔ واژگانی: «add»: «اضافه کردن»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Then add the tomatoes.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_recipe_boiling",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و انتخاب کن آب چه وضعیتی دارد.",
+          "audio_text": "Put the pasta into boiling water."
+        },
+        "options": [
+          "در حال جوش است",
+          "یخ‌زده است",
+          "سرد است",
+          "تمام شده"
+        ],
+        "answer": {
+          "value": "در حال جوش است"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: پاستا را داخل آب جوش بریز.\nنکتهٔ واژگانی: «boiling»: «در حال جوش / جوشان»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Put the pasta into boiling water.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Put the pasta into boiling water."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_recipe_mix",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "___ everything well."
+        },
+        "options": [
+          "Mix",
+          "Book",
+          "Invite",
+          "Visit"
+        ],
+        "answer": {
+          "value": "Mix"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "«Mix» در این درس یعنی «مخلوط کردن».",
+          "model_answer": "Mix everything well.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_recipe_for",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Cook it on low heat ___ ten minutes."
+        },
+        "options": [
+          "for",
+          "at",
+          "from",
+          "during"
+        ],
+        "answer": {
+          "value": "for"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "for + مدت زمان، طول یک بازه را بیان می‌کند؛ مانند for ten minutes یا for three weeks.",
+          "model_answer": "Cook it on low heat for ten minutes.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_recipe_speak",
+      "data": {
+        "lesson_key": "a2-cooking-recipes-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این دستور را بگو.",
+          "value": "Cook it on low heat for ten minutes."
+        },
+        "answer": {
+          "expected_text": "Cook it on low heat for ten minutes."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: ده دقیقه با حرارت کم بپزش.\nنکتهٔ واژگانی: «low heat»: «حرارت کم»؛ «heat»: «حرارت / گرم کردن»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Cook it on low heat for ten minutes.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

@@ -9,44 +9,721 @@
   "curriculum_unit": "a2-invitations",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_a2_invite","data":{"slug":"a2_invite","lesson_key":"a2-invitations-01","concept_type":"lexical","forms":{"en":"invite"},"translations":{"fa":"دعوت کردن"},"cefr":"A2","topic":"polite-language","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_invite","data":{"lesson_key":"a2-invitations-01","lemma":"invite","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["a2_invite"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_invite","data":{"lesson_key":"a2-invitations-01","lexeme_ref":"lx_a2_invite","surface_form":"invite","grammatical_features":{"form":"base"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_would_like_invite","data":{"slug":"a2_would_like_invitation","lesson_key":"a2-invitations-01","concept_type":"functional","forms":{"en":"Would you like to …?"},"translations":{"fa":"دوست داری ...؟"},"cefr":"A2","topic":"polite-language","status":"approved"}},
-    {"kind":"concept","external_id":"c_a2_sounds_good","data":{"slug":"a2_sounds_good","lesson_key":"a2-invitations-01","concept_type":"functional","forms":{"en":"Sounds good."},"translations":{"fa":"خوبه / به نظر خوب میاد"},"cefr":"A2","topic":"polite-language","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_make_it","data":{"slug":"a2_make_it","lesson_key":"a2-invitations-02","concept_type":"functional","forms":{"en":"make it"},"translations":{"fa":"توانستن در زمان یا مکان قرار حاضر شد"},"cefr":"A2","topic":"polite-language","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_make_it","data":{"lesson_key":"a2-invitations-02","lemma":"make it","language":"en","language_variant":"en-US","part_of_speech":"expression","concept_refs":["a2_make_it"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_make_it","data":{"lesson_key":"a2-invitations-02","lexeme_ref":"lx_a2_make_it","surface_form":"make it","grammatical_features":{"type":"availability_expression"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_another_time","data":{"slug":"a2_another_time","lesson_key":"a2-invitations-02","concept_type":"lexical","forms":{"en":"another time"},"translations":{"fa":"یک وقت دیگر"},"cefr":"A2","topic":"polite-language","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_another_time","data":{"lesson_key":"a2-invitations-02","lemma":"another time","language":"en","language_variant":"en-US","part_of_speech":"expression","concept_refs":["a2_another_time"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_another_time","data":{"lesson_key":"a2-invitations-02","lexeme_ref":"lx_a2_another_time","surface_form":"another time","grammatical_features":{"type":"alternative_time"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_how_about_suggestion","data":{"slug":"a2_how_about_suggestion","lesson_key":"a2-invitations-03","concept_type":"functional","forms":{"en":"How about …?"},"translations":{"fa":"... چطوره؟"},"cefr":"A2","topic":"polite-language","status":"approved"}},
-    {"kind":"concept","external_id":"c_a2_works_for_me","data":{"slug":"a2_works_for_me","lesson_key":"a2-invitations-03","concept_type":"functional","forms":{"en":"That works for me."},"translations":{"fa":"برای من مناسبه"},"cefr":"A2","topic":"polite-language","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_a2_would_like_dinner","data":{"lesson_key":"a2-invitations-01","text":{"en":"Would you like to have dinner on Friday?"},"translations":{"fa":"دوست داری جمعه شام با هم بخوریم؟"},"intent":"make_invitation","concept_refs":["a2_would_like_invitation","a2_invite"],"cefr":"A2","topic":"polite-language","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_sounds_good","data":{"lesson_key":"a2-invitations-01","text":{"en":"Sounds good. What time?"},"translations":{"fa":"خوبه. چه ساعتی؟"},"intent":"accept_invitation","concept_refs":["a2_sounds_good"],"cefr":"A2","topic":"polite-language","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_cant_make_it","data":{"lesson_key":"a2-invitations-02","text":{"en":"Sorry, I can't make it on Friday."},"translations":{"fa":"ببخشید، جمعه نمی‌تونم بیام."},"intent":"decline_invitation","concept_refs":["a2_make_it"],"cefr":"A2","topic":"polite-language","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_another_time","data":{"lesson_key":"a2-invitations-02","text":{"en":"Maybe another time?"},"translations":{"fa":"شاید یک وقت دیگه؟"},"intent":"suggest_future_alternative","concept_refs":["a2_another_time"],"cefr":"A2","topic":"polite-language","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_how_about_sunday","data":{"lesson_key":"a2-invitations-03","text":{"en":"How about Sunday afternoon instead?"},"translations":{"fa":"یکشنبه بعدازظهر به جاش چطوره؟"},"intent":"suggest_alternative","concept_refs":["a2_how_about_suggestion"],"cefr":"A2","topic":"polite-language","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_works_for_me","data":{"lesson_key":"a2-invitations-03","text":{"en":"Sunday works for me."},"translations":{"fa":"یکشنبه برای من مناسبه."},"intent":"agree_time","concept_refs":["a2_works_for_me"],"cefr":"A2","topic":"polite-language","register":"neutral","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_a2_would_like_invitation","data":{"lesson_key":"a2-invitations-01","slug":"a2-would-you-like-invitations","title":"Would you like to …?","rule_summary":"Use Would you like to + base verb for a friendly, polite invitation.","explanation":{"fa":"برای دعوت دوستانه و مؤدبانه از Would you like to + شکل ساده فعل استفاده می‌کنیم."},"examples":[{"en":"Would you like to come with us?","fa":"دوست داری با ما بیای؟"},{"en":"Would you like to have coffee?","fa":"دوست داری قهوه بخوریم؟"}],"cefr":"A2","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_a2_suggest_alternative","data":{"lesson_key":"a2-invitations-03","slug":"a2-how-about-alternative","title":"Suggest an alternative","rule_summary":"Use How about + noun/time or How about + -ing to offer another option.","explanation":{"fa":"برای پیشنهاد گزینه دیگر از How about + اسم/زمان یا How about + فعل ing استفاده می‌کنیم."},"examples":[{"en":"How about Saturday?","fa":"شنبه چطوره؟"},{"en":"How about meeting at six?","fa":"ساعت شش همدیگه را ببینیم چطوره؟"}],"cefr":"A2","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_a2_invitation_dinner","data":{"lesson_key":"a2-invitations-01","title":"Friday dinner","setting":"office","cefr":"A2","topic":"polite-language","characters":["Nina","Omid"],"turns":[{"order":1,"speaker":"Nina","text":"Would you like to have dinner on Friday?","translation_fa":"دوست داری جمعه شام با هم بخوریم؟"},{"order":2,"speaker":"Omid","text":"Sounds good. What time?","translation_fa":"خوبه. چه ساعتی؟"},{"order":3,"speaker":"Nina","text":"How about seven?","translation_fa":"ساعت هفت چطوره؟"},{"order":4,"speaker":"Omid","text":"Perfect. See you then.","translation_fa":"عالیه. پس می‌بینمت."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_a2_invitation_decline","data":{"lesson_key":"a2-invitations-02","title":"Can't make it","setting":"text conversation","cefr":"A2","topic":"polite-language","characters":["Arman","Ava"],"turns":[{"order":1,"speaker":"Arman","text":"We're going bowling Friday night. Want to come?","translation_fa":"جمعه شب می‌ریم بولینگ. میای؟"},{"order":2,"speaker":"Ava","text":"I'd love to, but I can't make it Friday.","translation_fa":"خیلی دوست دارم، ولی جمعه نمی‌تونم بیام."},{"order":3,"speaker":"Arman","text":"No problem. Maybe another time.","translation_fa":"اشکالی نداره. شاید یک وقت دیگه."},{"order":4,"speaker":"Ava","text":"Definitely.","translation_fa":"حتماً."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_a2_invitation_change","data":{"lesson_key":"a2-invitations-03","title":"Changing the day","setting":"phone call","cefr":"A2","topic":"polite-language","characters":["Jae","Rita"],"turns":[{"order":1,"speaker":"Jae","text":"Saturday is difficult for me now.","translation_fa":"شنبه الان برای من سخته."},{"order":2,"speaker":"Rita","text":"Okay. How about Sunday afternoon instead?","translation_fa":"باشه. یکشنبه بعدازظهر به جاش چطوره؟"},{"order":3,"speaker":"Jae","text":"Sunday works for me.","translation_fa":"یکشنبه برای من مناسبه."},{"order":4,"speaker":"Rita","text":"Great. Let's meet at three.","translation_fa":"عالی. ساعت سه همدیگه رو ببینیم."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_a2_invite_form","data":{"lesson_key":"a2-invitations-01","exercise_type":"fill_blank","prompt":{"text":"Would you like ___ come with us?"},"options":["to","for","at","on"],"answer":{"value":"to"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_invite_accept","data":{"lesson_key":"a2-invitations-01","exercise_type":"multiple_choice","prompt":{"fa":"بهترین پاسخ برای پذیرفتن دعوت کدام است؟"},"options":["Sounds good.","I missed it.","It was raining.","Turn left."],"answer":{"value":"Sounds good."},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_invite_decline","data":{"lesson_key":"a2-invitations-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و منظور گوینده را انتخاب کن.","audio_text":"Sorry, I can't make it on Friday."},"options":["نمی‌تواند جمعه بیاید","جمعه وقت آزاد دارد","جمعه دیر می‌رسد","قرار را تأیید می‌کند"],"answer":{"value":"نمی‌تواند جمعه بیاید"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_invite_another","data":{"lesson_key":"a2-invitations-02","exercise_type":"multiple_choice","prompt":{"fa":"Maybe another time? یعنی چه؟"},"options":["شاید یک وقت دیگر؟","الان دیر شده؟","چه ساعتی است؟","می‌توانی زودتر بیایی؟"],"answer":{"value":"شاید یک وقت دیگر؟"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_invite_build","data":{"lesson_key":"a2-invitations-03","exercise_type":"sentence_building","prompt":{"fa":"«یکشنبه چطوره؟» را بساز.","tokens":["Sunday","about","How"]},"answer":{"tokens":["How","about","Sunday"],"text":"How about Sunday?"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_invite_works","data":{"lesson_key":"a2-invitations-03","exercise_type":"fill_blank","prompt":{"text":"Sunday ___ for me."},"options":["works","makes","does","gets"],"answer":{"value":"works"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_invite_speak","data":{"lesson_key":"a2-invitations-03","exercise_type":"speaking","prompt":{"instruction_fa":"این دعوت را بگو.","value":"Would you like to have dinner on Friday?"},"answer":{"expected_text":"Would you like to have dinner on Friday?"},"difficulty":2,"cefr":"A2","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_a2_invite",
+      "data": {
+        "slug": "a2_invite",
+        "lesson_key": "a2-invitations-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "invite"
+        },
+        "translations": {
+          "fa": "دعوت کردن"
+        },
+        "cefr": "A2",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_invite",
+      "data": {
+        "lesson_key": "a2-invitations-01",
+        "lemma": "invite",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_invite"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_invite",
+      "data": {
+        "lesson_key": "a2-invitations-01",
+        "lexeme_ref": "lx_a2_invite",
+        "surface_form": "invite",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_would_like_invite",
+      "data": {
+        "slug": "a2_would_like_invitation",
+        "lesson_key": "a2-invitations-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Would you like to …?"
+        },
+        "translations": {
+          "fa": "دوست داری ...؟"
+        },
+        "cefr": "A2",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_sounds_good",
+      "data": {
+        "slug": "a2_sounds_good",
+        "lesson_key": "a2-invitations-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Sounds good."
+        },
+        "translations": {
+          "fa": "خوبه / به نظر خوب میاد"
+        },
+        "cefr": "A2",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_make_it",
+      "data": {
+        "slug": "a2_make_it",
+        "lesson_key": "a2-invitations-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "make it"
+        },
+        "translations": {
+          "fa": "توانستن در زمان یا مکان قرار حاضر شد"
+        },
+        "cefr": "A2",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_make_it",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "lemma": "make it",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "a2_make_it"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_make_it",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "lexeme_ref": "lx_a2_make_it",
+        "surface_form": "make it",
+        "grammatical_features": {
+          "type": "availability_expression"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_another_time",
+      "data": {
+        "slug": "a2_another_time",
+        "lesson_key": "a2-invitations-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "another time"
+        },
+        "translations": {
+          "fa": "یک وقت دیگر"
+        },
+        "cefr": "A2",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_another_time",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "lemma": "another time",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "a2_another_time"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_another_time",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "lexeme_ref": "lx_a2_another_time",
+        "surface_form": "another time",
+        "grammatical_features": {
+          "type": "alternative_time"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_how_about_suggestion",
+      "data": {
+        "slug": "a2_how_about_suggestion",
+        "lesson_key": "a2-invitations-03",
+        "concept_type": "functional",
+        "forms": {
+          "en": "How about …?"
+        },
+        "translations": {
+          "fa": "... چطوره؟"
+        },
+        "cefr": "A2",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_works_for_me",
+      "data": {
+        "slug": "a2_works_for_me",
+        "lesson_key": "a2-invitations-03",
+        "concept_type": "functional",
+        "forms": {
+          "en": "That works for me."
+        },
+        "translations": {
+          "fa": "برای من مناسبه"
+        },
+        "cefr": "A2",
+        "topic": "polite-language",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_would_like_dinner",
+      "data": {
+        "lesson_key": "a2-invitations-01",
+        "text": {
+          "en": "Would you like to have dinner on Friday?"
+        },
+        "translations": {
+          "fa": "دوست داری جمعه شام با هم بخوریم؟"
+        },
+        "intent": "make_invitation",
+        "concept_refs": [
+          "a2_would_like_invitation",
+          "a2_invite"
+        ],
+        "cefr": "A2",
+        "topic": "polite-language",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_sounds_good",
+      "data": {
+        "lesson_key": "a2-invitations-01",
+        "text": {
+          "en": "Sounds good. What time?"
+        },
+        "translations": {
+          "fa": "خوبه. چه ساعتی؟"
+        },
+        "intent": "accept_invitation",
+        "concept_refs": [
+          "a2_sounds_good"
+        ],
+        "cefr": "A2",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_cant_make_it",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "text": {
+          "en": "Sorry, I can't make it on Friday."
+        },
+        "translations": {
+          "fa": "ببخشید، جمعه نمی‌تونم بیام."
+        },
+        "intent": "decline_invitation",
+        "concept_refs": [
+          "a2_make_it"
+        ],
+        "cefr": "A2",
+        "topic": "polite-language",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_another_time",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "text": {
+          "en": "Maybe another time?"
+        },
+        "translations": {
+          "fa": "شاید یک وقت دیگه؟"
+        },
+        "intent": "suggest_future_alternative",
+        "concept_refs": [
+          "a2_another_time"
+        ],
+        "cefr": "A2",
+        "topic": "polite-language",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_how_about_sunday",
+      "data": {
+        "lesson_key": "a2-invitations-03",
+        "text": {
+          "en": "How about Sunday afternoon instead?"
+        },
+        "translations": {
+          "fa": "یکشنبه بعدازظهر به جاش چطوره؟"
+        },
+        "intent": "suggest_alternative",
+        "concept_refs": [
+          "a2_how_about_suggestion"
+        ],
+        "cefr": "A2",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_works_for_me",
+      "data": {
+        "lesson_key": "a2-invitations-03",
+        "text": {
+          "en": "Sunday works for me."
+        },
+        "translations": {
+          "fa": "یکشنبه برای من مناسبه."
+        },
+        "intent": "agree_time",
+        "concept_refs": [
+          "a2_works_for_me"
+        ],
+        "cefr": "A2",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_would_like_invitation",
+      "data": {
+        "lesson_key": "a2-invitations-01",
+        "slug": "a2-would-you-like-invitations",
+        "title": "Would you like to …?",
+        "rule_summary": "Use Would you like to + base verb for a friendly, polite invitation.",
+        "explanation": {
+          "fa": "برای دعوت دوستانه و مؤدبانه از Would you like to + شکل ساده فعل استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Would you like to come with us?",
+            "fa": "دوست داری با ما بیای؟"
+          },
+          {
+            "en": "Would you like to have coffee?",
+            "fa": "دوست داری قهوه بخوریم؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_suggest_alternative",
+      "data": {
+        "lesson_key": "a2-invitations-03",
+        "slug": "a2-how-about-alternative",
+        "title": "Suggest an alternative",
+        "rule_summary": "Use How about + noun/time or How about + -ing to offer another option.",
+        "explanation": {
+          "fa": "برای پیشنهاد گزینه دیگر از How about + اسم/زمان یا How about + فعل ing استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "How about Saturday?",
+            "fa": "شنبه چطوره؟"
+          },
+          {
+            "en": "How about meeting at six?",
+            "fa": "ساعت شش همدیگه را ببینیم چطوره؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_invitation_dinner",
+      "data": {
+        "lesson_key": "a2-invitations-01",
+        "title": "Friday dinner",
+        "setting": "office",
+        "cefr": "A2",
+        "topic": "polite-language",
+        "characters": [
+          "Nina",
+          "Omid"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Would you like to have dinner on Friday?",
+            "translation_fa": "دوست داری جمعه شام با هم بخوریم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Omid",
+            "text": "Sounds good. What time?",
+            "translation_fa": "خوبه. چه ساعتی؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "How about seven?",
+            "translation_fa": "ساعت هفت چطوره؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Omid",
+            "text": "Perfect. See you then.",
+            "translation_fa": "عالیه. پس می‌بینمت."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_invitation_decline",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "title": "Can't make it",
+        "setting": "text conversation",
+        "cefr": "A2",
+        "topic": "polite-language",
+        "characters": [
+          "Arman",
+          "Ava"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Arman",
+            "text": "We're going bowling Friday night. Want to come?",
+            "translation_fa": "جمعه شب می‌ریم بولینگ. میای؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Ava",
+            "text": "I'd love to, but I can't make it Friday.",
+            "translation_fa": "خیلی دوست دارم، ولی جمعه نمی‌تونم بیام."
+          },
+          {
+            "order": 3,
+            "speaker": "Arman",
+            "text": "No problem. Maybe another time.",
+            "translation_fa": "اشکالی نداره. شاید یک وقت دیگه."
+          },
+          {
+            "order": 4,
+            "speaker": "Ava",
+            "text": "Definitely.",
+            "translation_fa": "حتماً."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_invitation_change",
+      "data": {
+        "lesson_key": "a2-invitations-03",
+        "title": "Changing the day",
+        "setting": "phone call",
+        "cefr": "A2",
+        "topic": "polite-language",
+        "characters": [
+          "Jae",
+          "Rita"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Jae",
+            "text": "Saturday is difficult for me now.",
+            "translation_fa": "شنبه الان برای من سخته."
+          },
+          {
+            "order": 2,
+            "speaker": "Rita",
+            "text": "Okay. How about Sunday afternoon instead?",
+            "translation_fa": "باشه. یکشنبه بعدازظهر به جاش چطوره؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Jae",
+            "text": "Sunday works for me.",
+            "translation_fa": "یکشنبه برای من مناسبه."
+          },
+          {
+            "order": 4,
+            "speaker": "Rita",
+            "text": "Great. Let's meet at three.",
+            "translation_fa": "عالی. ساعت سه همدیگه رو ببینیم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_invite_form",
+      "data": {
+        "lesson_key": "a2-invitations-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Would you like ___ come with us?"
+        },
+        "options": [
+          "to",
+          "for",
+          "at",
+          "on"
+        ],
+        "answer": {
+          "value": "to"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "to پیش از شکل پایهٔ فعل می‌آید؛ در would like to و in order to جزئی از ساختار است.",
+          "model_answer": "Would you like to come with us?",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_invite_accept",
+      "data": {
+        "lesson_key": "a2-invitations-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "بهترین پاسخ برای پذیرفتن دعوت کدام است؟"
+        },
+        "options": [
+          "Sounds good.",
+          "I missed it.",
+          "It was raining.",
+          "Turn left."
+        ],
+        "answer": {
+          "value": "Sounds good."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خوبه / به نظر خوب میاد\nنکتهٔ واژگانی: «sounds good»: «خوبه / به نظر خوب میاد»",
+          "model_answer": "Sounds good.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_invite_decline",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و منظور گوینده را انتخاب کن.",
+          "audio_text": "Sorry, I can't make it on Friday."
+        },
+        "options": [
+          "نمی‌تواند جمعه بیاید",
+          "جمعه وقت آزاد دارد",
+          "جمعه دیر می‌رسد",
+          "قرار را تأیید می‌کند"
+        ],
+        "answer": {
+          "value": "نمی‌تواند جمعه بیاید"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: ببخشید، جمعه نمی‌تونم بیام.\nنکتهٔ واژگانی: «make it»: «توانستن در زمان یا مکان قرار حاضر شد»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Sorry, I can't make it on Friday.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Sorry, I can't make it on Friday."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_invite_another",
+      "data": {
+        "lesson_key": "a2-invitations-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "Maybe another time? یعنی چه؟"
+        },
+        "options": [
+          "شاید یک وقت دیگر؟",
+          "الان دیر شده؟",
+          "چه ساعتی است؟",
+          "می‌توانی زودتر بیایی؟"
+        ],
+        "answer": {
+          "value": "شاید یک وقت دیگر؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: شاید یک وقت دیگه؟\nنکتهٔ واژگانی: «another time»: «یک وقت دیگر»",
+          "model_answer": "Maybe another time?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_invite_build",
+      "data": {
+        "lesson_key": "a2-invitations-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«یکشنبه چطوره؟» را بساز.",
+          "tokens": [
+            "Sunday",
+            "about",
+            "How"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "How",
+            "about",
+            "Sunday"
+          ],
+          "text": "How about Sunday?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: «یکشنبه چطوره؟» را بساز.\nنکتهٔ واژگانی: «how about»: «... چطوره؟»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "How about Sunday?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_invite_works",
+      "data": {
+        "lesson_key": "a2-invitations-03",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Sunday ___ for me."
+        },
+        "options": [
+          "works",
+          "makes",
+          "does",
+          "gets"
+        ],
+        "answer": {
+          "value": "works"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "works for me دربارهٔ زمان یا برنامه یعنی «برای من مناسب است».",
+          "model_answer": "Sunday works for me.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_invite_speak",
+      "data": {
+        "lesson_key": "a2-invitations-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این دعوت را بگو.",
+          "value": "Would you like to have dinner on Friday?"
+        },
+        "answer": {
+          "expected_text": "Would you like to have dinner on Friday?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: دوست داری جمعه شام با هم بخوریم؟\nنکتهٔ واژگانی: «would you like to»: «دوست داری ...؟»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Would you like to have dinner on Friday?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

@@ -9,54 +9,851 @@
   "curriculum_unit": "a2-routines-frequency",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_a2_routine","data":{"slug":"a2_routine","lesson_key":"a2-routines-frequency-01","concept_type":"lexical","forms":{"en":"routine"},"translations":{"fa":"روال / برنامه همیشگی"},"cefr":"A2","topic":"daily-routine","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_routine","data":{"lesson_key":"a2-routines-frequency-01","lemma":"routine","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["a2_routine"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_routine","data":{"lesson_key":"a2-routines-frequency-01","lexeme_ref":"lx_a2_routine","surface_form":"routine","grammatical_features":{"number":"singular"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_schedule","data":{"slug":"a2_schedule","lesson_key":"a2-routines-frequency-01","concept_type":"lexical","forms":{"en":"schedule"},"translations":{"fa":"برنامه زمانی"},"cefr":"A2","topic":"daily-routine","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_schedule","data":{"lesson_key":"a2-routines-frequency-01","lemma":"schedule","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["a2_schedule"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_schedule","data":{"lesson_key":"a2-routines-frequency-01","lexeme_ref":"lx_a2_schedule","surface_form":"schedule","grammatical_features":{"number":"singular"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_commute","data":{"slug":"a2_commute","lesson_key":"a2-routines-frequency-01","concept_type":"lexical","forms":{"en":"commute"},"translations":{"fa":"رفت‌وآمد روزانه بین خانه و محل کار یا تحصیل"},"cefr":"A2","topic":"daily-routine","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_commute","data":{"lesson_key":"a2-routines-frequency-01","lemma":"commute","language":"en","language_variant":"en-US","part_of_speech":"verb","concept_refs":["a2_commute"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_commute","data":{"lesson_key":"a2-routines-frequency-01","lexeme_ref":"lx_a2_commute","surface_form":"commute","grammatical_features":{"form":"base"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_once_week","data":{"slug":"a2_once_a_week","lesson_key":"a2-routines-frequency-02","concept_type":"lexical","forms":{"en":"once a week"},"translations":{"fa":"هفته‌ای یک بار"},"cefr":"A2","topic":"daily-routine","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_once_week","data":{"lesson_key":"a2-routines-frequency-02","lemma":"once a week","language":"en","language_variant":"en-US","part_of_speech":"expression","concept_refs":["a2_once_a_week"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_once_week","data":{"lesson_key":"a2-routines-frequency-02","lexeme_ref":"lx_a2_once_week","surface_form":"once a week","grammatical_features":{"type":"frequency_expression"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_twice_month","data":{"slug":"a2_twice_a_month","lesson_key":"a2-routines-frequency-02","concept_type":"lexical","forms":{"en":"twice a month"},"translations":{"fa":"ماهی دو بار"},"cefr":"A2","topic":"daily-routine","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_twice_month","data":{"lesson_key":"a2-routines-frequency-02","lemma":"twice a month","language":"en","language_variant":"en-US","part_of_speech":"expression","concept_refs":["a2_twice_a_month"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_twice_month","data":{"lesson_key":"a2-routines-frequency-02","lexeme_ref":"lx_a2_twice_month","surface_form":"twice a month","grammatical_features":{"type":"frequency_expression"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_hardly_ever","data":{"slug":"a2_hardly_ever","lesson_key":"a2-routines-frequency-02","concept_type":"lexical","forms":{"en":"hardly ever"},"translations":{"fa":"تقریباً هیچ‌وقت"},"cefr":"A2","topic":"daily-routine","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_hardly_ever","data":{"lesson_key":"a2-routines-frequency-02","lemma":"hardly ever","language":"en","language_variant":"en-US","part_of_speech":"adverb_phrase","concept_refs":["a2_hardly_ever"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_hardly_ever","data":{"lesson_key":"a2-routines-frequency-02","lexeme_ref":"lx_a2_hardly_ever","surface_form":"hardly ever","grammatical_features":{"type":"frequency_adverb"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_every_weekday","data":{"slug":"a2_every_weekday","lesson_key":"a2-routines-frequency-02","concept_type":"lexical","forms":{"en":"every weekday"},"translations":{"fa":"هر روز کاری هفته"},"cefr":"A2","topic":"daily-routine","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_every_weekday","data":{"lesson_key":"a2-routines-frequency-02","lemma":"every weekday","language":"en","language_variant":"en-US","part_of_speech":"expression","concept_refs":["a2_every_weekday"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_every_weekday","data":{"lesson_key":"a2-routines-frequency-02","lexeme_ref":"lx_a2_every_weekday","surface_form":"every weekday","grammatical_features":{"type":"frequency_expression"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_a2_morning_routine","data":{"lesson_key":"a2-routines-frequency-01","text":{"en":"My morning routine is pretty simple."},"translations":{"fa":"روال صبح من نسبتاً ساده است."},"intent":"introduce_routine","concept_refs":["a2_routine"],"cefr":"A2","topic":"daily-routine","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_schedule_changes","data":{"lesson_key":"a2-routines-frequency-01","text":{"en":"My schedule changes on Fridays."},"translations":{"fa":"برنامه زمانی من جمعه‌ها تغییر می‌کند."},"intent":"describe_schedule","concept_refs":["a2_schedule"],"cefr":"A2","topic":"daily-routine","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_commute_train","data":{"lesson_key":"a2-routines-frequency-01","text":{"en":"I commute to work by train every weekday."},"translations":{"fa":"هر روز کاری با قطار به محل کار رفت‌وآمد می‌کنم."},"intent":"describe_commute","concept_refs":["a2_commute","a2_every_weekday"],"cefr":"A2","topic":"daily-routine","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_once_week","data":{"lesson_key":"a2-routines-frequency-02","text":{"en":"I go swimming once a week."},"translations":{"fa":"هفته‌ای یک بار شنا می‌روم."},"intent":"state_frequency","concept_refs":["a2_once_a_week"],"cefr":"A2","topic":"daily-routine","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_twice_month","data":{"lesson_key":"a2-routines-frequency-02","text":{"en":"We eat out about twice a month."},"translations":{"fa":"حدود ماهی دو بار بیرون غذا می‌خوریم."},"intent":"state_frequency","concept_refs":["a2_twice_a_month"],"cefr":"A2","topic":"daily-routine","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_hardly_tv","data":{"lesson_key":"a2-routines-frequency-02","text":{"en":"I hardly ever watch TV during the week."},"translations":{"fa":"در طول هفته تقریباً هیچ‌وقت تلویزیون تماشا نمی‌کنم."},"intent":"state_low_frequency","concept_refs":["a2_hardly_ever"],"cefr":"A2","topic":"daily-routine","register":"neutral","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_a2_adverb_position","data":{"lesson_key":"a2-routines-frequency-01","slug":"a2-frequency-adverb-position","title":"Where frequency adverbs go","rule_summary":"Frequency adverbs usually come before the main verb but after be.","explanation":{"fa":"قیدهای تکرار معمولاً قبل از فعل اصلی می‌آیند، اما بعد از فعل be قرار می‌گیرند."},"examples":[{"en":"I usually take the bus.","fa":"معمولاً با اتوبوس می‌روم."},{"en":"She's often busy in the morning.","fa":"او صبح‌ها اغلب سرش شلوغ است."}],"cefr":"A2","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_a2_times_frequency","data":{"lesson_key":"a2-routines-frequency-02","slug":"a2-times-per-period","title":"once, twice, three times","rule_summary":"Use once, twice, or a number + times with a time period to say exactly how often something happens.","explanation":{"fa":"برای گفتن تعداد دقیق دفعات از once، twice یا عدد + times همراه با بازه زمانی استفاده می‌کنیم."},"examples":[{"en":"I exercise twice a week.","fa":"هفته‌ای دو بار ورزش می‌کنم."},{"en":"We call them three times a month.","fa":"ماهی سه بار به آن‌ها زنگ می‌زنیم."}],"cefr":"A2","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_a2_routine_morning","data":{"lesson_key":"a2-routines-frequency-01","title":"A weekday morning","setting":"office kitchen","cefr":"A2","topic":"daily-routine","characters":["Nora","Adam"],"turns":[{"order":1,"speaker":"Nora","text":"Do you always get here this early?","translation_fa":"همیشه این‌قدر زود می‌رسی اینجا؟"},{"order":2,"speaker":"Adam","text":"Almost always. I start at eight every weekday.","translation_fa":"تقریباً همیشه. هر روز کاری ساعت هشت شروع می‌کنم."},{"order":3,"speaker":"Nora","text":"How do you get to work?","translation_fa":"چطور به محل کار میای؟"},{"order":4,"speaker":"Adam","text":"I usually commute by train. It takes about thirty minutes.","translation_fa":"معمولاً با قطار رفت‌وآمد می‌کنم. حدود سی دقیقه طول می‌کشه."},{"order":5,"speaker":"Nora","text":"That's not bad.","translation_fa":"بد نیست."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_a2_frequency_free_time","data":{"lesson_key":"a2-routines-frequency-02","title":"Free-time habits","setting":"cafe","cefr":"A2","topic":"daily-routine","characters":["Ivy","Jack"],"turns":[{"order":1,"speaker":"Ivy","text":"How often do you go to the gym?","translation_fa":"هر چند وقت یک بار باشگاه می‌ری؟"},{"order":2,"speaker":"Jack","text":"Usually twice a week. What about you?","translation_fa":"معمولاً هفته‌ای دو بار. تو چطور؟"},{"order":3,"speaker":"Ivy","text":"Hardly ever. I prefer swimming.","translation_fa":"تقریباً هیچ‌وقت. شنا را ترجیح می‌دم."},{"order":4,"speaker":"Jack","text":"How often do you swim?","translation_fa":"هر چند وقت یک بار شنا می‌کنی؟"},{"order":5,"speaker":"Ivy","text":"Once a week, usually on Sunday.","translation_fa":"هفته‌ای یک بار، معمولاً یکشنبه‌ها."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_a2_routine_vocab","data":{"lesson_key":"a2-routines-frequency-01","exercise_type":"multiple_choice","prompt":{"fa":"routine نزدیک‌ترین معنی‌اش کدام است؟"},"options":["روال همیشگی","سفر کوتاه","مشکل ناگهانی","قیمت"],"answer":{"value":"روال همیشگی"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_routine_commute","data":{"lesson_key":"a2-routines-frequency-01","exercise_type":"fill_blank","prompt":{"text":"I ___ to work by train."},"options":["commute","routine","schedule","twice"],"answer":{"value":"commute"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_routine_listen","data":{"lesson_key":"a2-routines-frequency-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و وسیله رفت‌وآمد را انتخاب کن.","audio_text":"I usually commute to work by train."},"options":["قطار","ماشین","دوچرخه","پیاده"],"answer":{"value":"قطار"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_freq_once","data":{"lesson_key":"a2-routines-frequency-02","exercise_type":"multiple_choice","prompt":{"fa":"once a week یعنی چه؟"},"options":["هفته‌ای یک بار","هفته‌ای دو بار","ماهی یک بار","هر روز"],"answer":{"value":"هفته‌ای یک بار"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_freq_twice","data":{"lesson_key":"a2-routines-frequency-02","exercise_type":"fill_blank","prompt":{"text":"I exercise ___ a week: Tuesday and Friday."},"options":["twice","once","hardly","every"],"answer":{"value":"twice"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_freq_build","data":{"lesson_key":"a2-routines-frequency-02","exercise_type":"sentence_building","prompt":{"fa":"«من در طول هفته تقریباً هیچ‌وقت تلویزیون نگاه نمی‌کنم.» را بساز.","tokens":["week","TV","hardly","the","watch","during","ever","I"]},"answer":{"tokens":["I","hardly","ever","watch","TV","during","the","week"],"text":"I hardly ever watch TV during the week."},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_freq_speak","data":{"lesson_key":"a2-routines-frequency-02","exercise_type":"speaking","prompt":{"instruction_fa":"این سؤال را بگو.","value":"How often do you go to the gym?"},"answer":{"expected_text":"How often do you go to the gym?"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_freq_listen2","data":{"lesson_key":"a2-routines-frequency-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و تعداد دفعات را انتخاب کن.","audio_text":"We eat out about twice a month."},"options":["ماهی دو بار","هفته‌ای دو بار","ماهی یک بار","هر شب"],"answer":{"value":"ماهی دو بار"},"difficulty":2,"cefr":"A2","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_a2_routine",
+      "data": {
+        "slug": "a2_routine",
+        "lesson_key": "a2-routines-frequency-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "routine"
+        },
+        "translations": {
+          "fa": "روال / برنامه همیشگی"
+        },
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_routine",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "lemma": "routine",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_routine"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_routine",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "lexeme_ref": "lx_a2_routine",
+        "surface_form": "routine",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_schedule",
+      "data": {
+        "slug": "a2_schedule",
+        "lesson_key": "a2-routines-frequency-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "schedule"
+        },
+        "translations": {
+          "fa": "برنامه زمانی"
+        },
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_schedule",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "lemma": "schedule",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_schedule"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_schedule",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "lexeme_ref": "lx_a2_schedule",
+        "surface_form": "schedule",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_commute",
+      "data": {
+        "slug": "a2_commute",
+        "lesson_key": "a2-routines-frequency-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "commute"
+        },
+        "translations": {
+          "fa": "رفت‌وآمد روزانه بین خانه و محل کار یا تحصیل"
+        },
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_commute",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "lemma": "commute",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "a2_commute"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_commute",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "lexeme_ref": "lx_a2_commute",
+        "surface_form": "commute",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_once_week",
+      "data": {
+        "slug": "a2_once_a_week",
+        "lesson_key": "a2-routines-frequency-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "once a week"
+        },
+        "translations": {
+          "fa": "هفته‌ای یک بار"
+        },
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_once_week",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "lemma": "once a week",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "a2_once_a_week"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_once_week",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "lexeme_ref": "lx_a2_once_week",
+        "surface_form": "once a week",
+        "grammatical_features": {
+          "type": "frequency_expression"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_twice_month",
+      "data": {
+        "slug": "a2_twice_a_month",
+        "lesson_key": "a2-routines-frequency-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "twice a month"
+        },
+        "translations": {
+          "fa": "ماهی دو بار"
+        },
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_twice_month",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "lemma": "twice a month",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "a2_twice_a_month"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_twice_month",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "lexeme_ref": "lx_a2_twice_month",
+        "surface_form": "twice a month",
+        "grammatical_features": {
+          "type": "frequency_expression"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_hardly_ever",
+      "data": {
+        "slug": "a2_hardly_ever",
+        "lesson_key": "a2-routines-frequency-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "hardly ever"
+        },
+        "translations": {
+          "fa": "تقریباً هیچ‌وقت"
+        },
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_hardly_ever",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "lemma": "hardly ever",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adverb_phrase",
+        "concept_refs": [
+          "a2_hardly_ever"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_hardly_ever",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "lexeme_ref": "lx_a2_hardly_ever",
+        "surface_form": "hardly ever",
+        "grammatical_features": {
+          "type": "frequency_adverb"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_every_weekday",
+      "data": {
+        "slug": "a2_every_weekday",
+        "lesson_key": "a2-routines-frequency-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "every weekday"
+        },
+        "translations": {
+          "fa": "هر روز کاری هفته"
+        },
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_every_weekday",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "lemma": "every weekday",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "a2_every_weekday"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_every_weekday",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "lexeme_ref": "lx_a2_every_weekday",
+        "surface_form": "every weekday",
+        "grammatical_features": {
+          "type": "frequency_expression"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_morning_routine",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "text": {
+          "en": "My morning routine is pretty simple."
+        },
+        "translations": {
+          "fa": "روال صبح من نسبتاً ساده است."
+        },
+        "intent": "introduce_routine",
+        "concept_refs": [
+          "a2_routine"
+        ],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_schedule_changes",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "text": {
+          "en": "My schedule changes on Fridays."
+        },
+        "translations": {
+          "fa": "برنامه زمانی من جمعه‌ها تغییر می‌کند."
+        },
+        "intent": "describe_schedule",
+        "concept_refs": [
+          "a2_schedule"
+        ],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_commute_train",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "text": {
+          "en": "I commute to work by train every weekday."
+        },
+        "translations": {
+          "fa": "هر روز کاری با قطار به محل کار رفت‌وآمد می‌کنم."
+        },
+        "intent": "describe_commute",
+        "concept_refs": [
+          "a2_commute",
+          "a2_every_weekday"
+        ],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_once_week",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "text": {
+          "en": "I go swimming once a week."
+        },
+        "translations": {
+          "fa": "هفته‌ای یک بار شنا می‌روم."
+        },
+        "intent": "state_frequency",
+        "concept_refs": [
+          "a2_once_a_week"
+        ],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_twice_month",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "text": {
+          "en": "We eat out about twice a month."
+        },
+        "translations": {
+          "fa": "حدود ماهی دو بار بیرون غذا می‌خوریم."
+        },
+        "intent": "state_frequency",
+        "concept_refs": [
+          "a2_twice_a_month"
+        ],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_hardly_tv",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "text": {
+          "en": "I hardly ever watch TV during the week."
+        },
+        "translations": {
+          "fa": "در طول هفته تقریباً هیچ‌وقت تلویزیون تماشا نمی‌کنم."
+        },
+        "intent": "state_low_frequency",
+        "concept_refs": [
+          "a2_hardly_ever"
+        ],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_adverb_position",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "slug": "a2-frequency-adverb-position",
+        "title": "Where frequency adverbs go",
+        "rule_summary": "Frequency adverbs usually come before the main verb but after be.",
+        "explanation": {
+          "fa": "قیدهای تکرار معمولاً قبل از فعل اصلی می‌آیند، اما بعد از فعل be قرار می‌گیرند."
+        },
+        "examples": [
+          {
+            "en": "I usually take the bus.",
+            "fa": "معمولاً با اتوبوس می‌روم."
+          },
+          {
+            "en": "She's often busy in the morning.",
+            "fa": "او صبح‌ها اغلب سرش شلوغ است."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_times_frequency",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "slug": "a2-times-per-period",
+        "title": "once, twice, three times",
+        "rule_summary": "Use once, twice, or a number + times with a time period to say exactly how often something happens.",
+        "explanation": {
+          "fa": "برای گفتن تعداد دقیق دفعات از once، twice یا عدد + times همراه با بازه زمانی استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I exercise twice a week.",
+            "fa": "هفته‌ای دو بار ورزش می‌کنم."
+          },
+          {
+            "en": "We call them three times a month.",
+            "fa": "ماهی سه بار به آن‌ها زنگ می‌زنیم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_routine_morning",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "title": "A weekday morning",
+        "setting": "office kitchen",
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "characters": [
+          "Nora",
+          "Adam"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nora",
+            "text": "Do you always get here this early?",
+            "translation_fa": "همیشه این‌قدر زود می‌رسی اینجا؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Adam",
+            "text": "Almost always. I start at eight every weekday.",
+            "translation_fa": "تقریباً همیشه. هر روز کاری ساعت هشت شروع می‌کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Nora",
+            "text": "How do you get to work?",
+            "translation_fa": "چطور به محل کار میای؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Adam",
+            "text": "I usually commute by train. It takes about thirty minutes.",
+            "translation_fa": "معمولاً با قطار رفت‌وآمد می‌کنم. حدود سی دقیقه طول می‌کشه."
+          },
+          {
+            "order": 5,
+            "speaker": "Nora",
+            "text": "That's not bad.",
+            "translation_fa": "بد نیست."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_frequency_free_time",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "title": "Free-time habits",
+        "setting": "cafe",
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "characters": [
+          "Ivy",
+          "Jack"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ivy",
+            "text": "How often do you go to the gym?",
+            "translation_fa": "هر چند وقت یک بار باشگاه می‌ری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jack",
+            "text": "Usually twice a week. What about you?",
+            "translation_fa": "معمولاً هفته‌ای دو بار. تو چطور؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Ivy",
+            "text": "Hardly ever. I prefer swimming.",
+            "translation_fa": "تقریباً هیچ‌وقت. شنا را ترجیح می‌دم."
+          },
+          {
+            "order": 4,
+            "speaker": "Jack",
+            "text": "How often do you swim?",
+            "translation_fa": "هر چند وقت یک بار شنا می‌کنی؟"
+          },
+          {
+            "order": 5,
+            "speaker": "Ivy",
+            "text": "Once a week, usually on Sunday.",
+            "translation_fa": "هفته‌ای یک بار، معمولاً یکشنبه‌ها."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_routine_vocab",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "routine نزدیک‌ترین معنی‌اش کدام است؟"
+        },
+        "options": [
+          "روال همیشگی",
+          "سفر کوتاه",
+          "مشکل ناگهانی",
+          "قیمت"
+        ],
+        "answer": {
+          "value": "روال همیشگی"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: روال همیشگی\nنکتهٔ واژگانی: «routine»: «روال / برنامه همیشگی»",
+          "model_answer": "routine",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_routine_commute",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I ___ to work by train."
+        },
+        "options": [
+          "commute",
+          "routine",
+          "schedule",
+          "twice"
+        ],
+        "answer": {
+          "value": "commute"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "«commute» در این درس یعنی «رفت‌وآمد روزانه بین خانه و محل کار یا تحصیل».",
+          "model_answer": "I commute to work by train.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_routine_listen",
+      "data": {
+        "lesson_key": "a2-routines-frequency-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و وسیله رفت‌وآمد را انتخاب کن.",
+          "audio_text": "I usually commute to work by train."
+        },
+        "options": [
+          "قطار",
+          "ماشین",
+          "دوچرخه",
+          "پیاده"
+        ],
+        "answer": {
+          "value": "قطار"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: قطار\nنکتهٔ واژگانی: «commute»: «رفت‌وآمد روزانه بین خانه و محل کار یا تحصیل»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I usually commute to work by train.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I usually commute to work by train."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_freq_once",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "once a week یعنی چه؟"
+        },
+        "options": [
+          "هفته‌ای یک بار",
+          "هفته‌ای دو بار",
+          "ماهی یک بار",
+          "هر روز"
+        ],
+        "answer": {
+          "value": "هفته‌ای یک بار"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: هفته‌ای یک بار\nنکتهٔ واژگانی: «once a week»: «هفته‌ای یک بار»",
+          "model_answer": "once a week",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_freq_twice",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I exercise ___ a week: Tuesday and Friday."
+        },
+        "options": [
+          "twice",
+          "once",
+          "hardly",
+          "every"
+        ],
+        "answer": {
+          "value": "twice"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "twice یعنی دو بار؛ Tuesday و Friday دو نوبت در یک هفته‌اند.",
+          "model_answer": "I exercise twice a week: Tuesday and Friday.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_freq_build",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«من در طول هفته تقریباً هیچ‌وقت تلویزیون نگاه نمی‌کنم.» را بساز.",
+          "tokens": [
+            "week",
+            "TV",
+            "hardly",
+            "the",
+            "watch",
+            "during",
+            "ever",
+            "I"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I",
+            "hardly",
+            "ever",
+            "watch",
+            "TV",
+            "during",
+            "the",
+            "week"
+          ],
+          "text": "I hardly ever watch TV during the week."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: در طول هفته تقریباً هیچ‌وقت تلویزیون تماشا نمی‌کنم.\nنکتهٔ واژگانی: «hardly ever»: «تقریباً هیچ‌وقت»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "I hardly ever watch TV during the week.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_freq_speak",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این سؤال را بگو.",
+          "value": "How often do you go to the gym?"
+        },
+        "answer": {
+          "expected_text": "How often do you go to the gym?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: هر چند وقت یک بار باشگاه می‌ری؟\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "How often do you go to the gym?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_freq_listen2",
+      "data": {
+        "lesson_key": "a2-routines-frequency-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و تعداد دفعات را انتخاب کن.",
+          "audio_text": "We eat out about twice a month."
+        },
+        "options": [
+          "ماهی دو بار",
+          "هفته‌ای دو بار",
+          "ماهی یک بار",
+          "هر شب"
+        ],
+        "answer": {
+          "value": "ماهی دو بار"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: حدود ماهی دو بار بیرون غذا می‌خوریم.\nنکتهٔ واژگانی: «twice a month»: «ماهی دو بار»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "We eat out about twice a month.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "We eat out about twice a month."
+        }
+      }
+    }
   ]
 }

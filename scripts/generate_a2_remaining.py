@@ -6,6 +6,11 @@ canonical batch-v2 structure so the 20 remaining units stay structurally consist
 """
 from __future__ import annotations
 
+try:
+    from scripts.english_content_enrichment import enrich_batch
+except ModuleNotFoundError:
+    from english_content_enrichment import enrich_batch
+
 import json
 from pathlib import Path
 
@@ -86,7 +91,7 @@ UNITS = [
 "slug":"a2-detailed-directions","file":"a2-detailed-directions-v1.json","topic":"directions","lessons":3,
 "vocab":[V("intersection","intersection","تقاطع"),V("block","block","بلوک / یک فاصله شهری"),V("across","across from","روبروی","preposition"),V("past","past","از کنار / بعد از","preposition"),V("until","until","تا","preposition"),V("transfer","transfer","عوض کردن خط","verb")],
 "utterances":[U("blocks","Go straight for two blocks.","دو بلوک مستقیم برو.","give_direction",["block"],1),U("intersection","Turn right at the second intersection.","در دومین تقاطع به راست بپیچ.","give_turn",["intersection"],1),U("across","The pharmacy is across from the library.","داروخانه روبروی کتابخانه است.","locate_place",["across"],2),U("past","Walk past the bank and you'll see the station.","از بانک رد شو و ایستگاه را می‌بینی.","give_landmark_direction",["past"],2),U("until","Stay on this bus until Central Square.","تا میدان مرکزی داخل همین اتوبوس بمان.","give_transit_direction",["until"],3),U("transfer","Transfer to the green line at Park Street.","در پارک استریت به خط سبز عوض کن.","give_transfer",["transfer"],3)],
-"grammar":[G("imperatives","Imperatives for directions","Use the base verb to give clear step-by-step directions.","برای دادن مسیر مرحله‌به‌مرحله از شکل پایه فعل به‌صورت امری استفاده می‌کنیم.",[("Turn left at the light.","سر چراغ به چپ بپیچ."),("Walk past the cafe.","از کافه رد شو.")],1),G("until_past_across","until, past, across from","Use these location words to connect directions to landmarks and endpoints.","از until، past و across from برای وصل کردن مسیر به نشانه‌های مکانی و مقصد استفاده می‌کنیم.",[("Go until the bridge.","تا پل برو."),("It's across from the bank.","روبروی بانک است.")],2)],
+"grammar":[G("imperatives","Imperatives for directions","Use the base verb to give clear step-by-step directions.","برای دادن مسیر مرحله‌به‌مرحله از شکل پایه فعل به‌صورت امری استفاده می‌کنیم.",[("Turn left at the light.","سر چراغ به چپ بپیچ."),("Walk past the cafe.","از کافه رد شو.")],1),G("until_past_across","until, past, across from","Use these location words to connect directions to landmarks and endpoints.","از until، past و across from برای وصل کردن مسیر به نشانه‌های مکانی و مقصد استفاده می‌کنیم.",[("Keep going until you reach the bridge.","تا پل برو."),("It's across from the bank.","روبروی بانک است.")],2)],
 "dialogues":[D("museum","Finding the museum","street corner",["Ava","Jon"],[T("Ava","Excuse me, how do I get to the city museum?","ببخشید، چطور به موزه شهر برسم؟"),T("Jon","Go straight for two blocks, then turn left at the intersection.","دو بلوک مستقیم برو، بعد در تقاطع به چپ بپیچ."),T("Ava","Is it far from there?","از آنجا دوره؟"),T("Jon","No. It's across from the public library.","نه. روبروی کتابخانه عمومی است.")],1),D("subway","Using the subway","subway entrance",["Yuki","Owen"],[T("Yuki","Can I take this line to Harbor Station?","می‌تونم با این خط به ایستگاه هاربر برم؟"),T("Owen","Not directly. Stay on until Park Street.","مستقیم نه. تا پارک استریت ادامه بده."),T("Yuki","Then what?","بعدش چی؟"),T("Owen","Transfer to the green line.","به خط سبز عوض کن.")],3)],
 "fill":["The pharmacy is ___ from the library.",["across","until","past","between to"],"across"],
 },
@@ -236,7 +241,7 @@ def build(spec):
         items.append({"kind":"exercise","external_id":f"ex_{prefix}_capstone_dialogue","data":{"lesson_key":f"{spec['slug']}-04","exercise_type":"dialogue_comprehension","prompt":{"fa":"اگر موزه بسته باشد، پیشنهاد جایگزین چیست؟"},"options":["رفتن به بازار","برگشتن به هتل","رفتن به فرودگاه","لغو سفر"],"answer":{"value":"رفتن به بازار"},"difficulty":3,"cefr":"A2","status":"approved"}})
         items.append({"kind":"exercise","external_id":f"ex_{prefix}_capstone_speak","data":{"lesson_key":f"{spec['slug']}-04","exercise_type":"speaking","prompt":{"instruction_fa":"یک راه‌حل جایگزین پیشنهاد بده: «اگر موزه بسته باشد، می‌توانیم به بازار برویم.»"},"answer":{"expected_text":"If the museum is closed, we could go to the market."},"difficulty":3,"cefr":"A2","status":"approved"}})
 
-    return {
+    return enrich_batch({
         "batch_id": f"en-us-{spec['slug']}-v1",
         "course": "fa-en-us",
         "learner_language": "fa",
@@ -247,7 +252,7 @@ def build(spec):
         "curriculum_unit": spec["slug"],
         "generator": "gpt-5.6-sol:golden-dataset-v2",
         "items": items,
-    }
+    })
 
 
 def main():

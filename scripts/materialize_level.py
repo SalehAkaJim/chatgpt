@@ -255,6 +255,11 @@ def main():
                         for i,opt in enumerate(d.get("options",[]),1):
                             ouid=stable("exercise_option",f"{batch['batch_id']}:{ext}:{i}"); val=opt if isinstance(opt,(dict,list)) else opt
                             cur.execute("INSERT IGNORE INTO exercise_options(id,exercise_id,option_order,value,is_correct) VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s)",(ouid,canonical,i,json.dumps(val,ensure_ascii=False),opt==answer_value))
+                    # Keep learner feedback available on both first import and
+                    # reruns without changing the existing grading contract.
+                    if d.get('feedback'):
+                        cur.execute("UPDATE exercises SET metadata=JSON_SET(metadata,'$.feedback',CAST(%s AS JSON),'$.review_of',CAST(%s AS JSON)) WHERE id=%s",
+                                    (json.dumps(d['feedback'],ensure_ascii=False),json.dumps(d.get('review_of',[])),canonical))
                 if canonical and kind!="exercise" and lesson:
                     item_order[lk]+=1; liuid=stable("lesson_item",f"{args.course}:{lk}:{kind}:{ext}")
                     cols={"concept":"concept_id","lexeme":"lexeme_id","word_form":"word_form_id","utterance":"utterance_id","dialogue":"dialogue_id","grammar_point":"grammar_point_id"}

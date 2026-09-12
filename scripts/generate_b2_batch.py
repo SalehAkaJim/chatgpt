@@ -6,6 +6,11 @@ batch-v2 structure used by the production pipeline.
 """
 from __future__ import annotations
 
+try:
+    from scripts.english_content_enrichment import enrich_batch
+except ModuleNotFoundError:
+    from english_content_enrichment import enrich_batch
+
 import json
 from pathlib import Path
 
@@ -426,7 +431,7 @@ def build(spec):
     ]
     items.extend({"kind": "exercise", **e} for e in exercises)
 
-    return {
+    return enrich_batch({
         "batch_id": f"en-us-{spec['slug']}-v1",
         "course": "fa-en-us",
         "learner_language": "fa",
@@ -437,7 +442,7 @@ def build(spec):
         "curriculum_unit": spec["slug"],
         "generator": "gpt-5.6-sol:golden-dataset-v2",
         "items": items,
-    }
+    })
 
 
 def main():

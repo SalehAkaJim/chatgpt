@@ -127,6 +127,24 @@ def main():
                     eid = stable("utterance", f"{bid}:{ext}")
                     add("utterances", text, "utterance", eid, ext,
                         registry["sentence_narrator"]["voice_key"], registry["sentence_narrator"])
+            elif kind == "exercise" and data.get("exercise_type") == "listening":
+                # An exercise-only sentence/letter still needs a real asset. The
+                # same text/voice identity deduplicates it with an utterance.
+                text = (data.get("prompt") or {}).get("audio_text")
+                if text:
+                    eid = stable("exercise", f"{bid}:{ext}")
+                    add("utterances", text, "exercise", eid, ext,
+                        registry["sentence_narrator"]["voice_key"], registry["sentence_narrator"])
+            elif kind == "grammar_point" and data.get("audio_examples"):
+                # Pronunciation and corrected grammar examples are also models
+                # learners should be able to hear. Multiple examples share the
+                # point UUID and are distinguished by key and source hash.
+                for index, example in enumerate(data.get("examples", []), 1):
+                    text = example.get(target_lang)
+                    if text:
+                        eid = stable("grammar", data["slug"])
+                        add("utterances", text, "grammar_point", eid, f"{ext}:example:{index}",
+                            registry["sentence_narrator"]["voice_key"], registry["sentence_narrator"])
             elif kind == "dialogue":
                 dslug = slugify(f"{bid}-{ext}")
                 for turn in data.get("turns", []):

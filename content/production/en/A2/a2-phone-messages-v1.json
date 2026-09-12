@@ -577,7 +577,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "call someone back یعنی به کسی که قبلاً تماس گرفته دوباره زنگ زدن.",
+          "model_answer": "Please ask him to call me back.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
       }
     },
     {
@@ -601,7 +606,13 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خط خوب نیست. می‌شه دوباره بگید؟\nنکتهٔ واژگانی: «line»: «خط تلفن»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "The line is bad. Could you say that again?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "The line is bad. Could you say that again?"
+        }
       }
     },
     {
@@ -618,7 +629,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: می‌تونم برای خانم کارتر پیام بذارم؟\nنکتهٔ واژگانی: «message»: «پیام»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Can I leave a message for Ms. Carter?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -657,7 +673,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: لطفاً ازش بخواهید بعد از چهار با من تماس بگیره.\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Please ask him to call me back after four.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -681,7 +702,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: ممکنه نام خانوادگی‌تون رو برام هجی کنید؟\nنکتهٔ واژگانی: «spell»: «هجی کردن»",
+          "model_answer": "Could you spell your last name for me?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -705,7 +731,39 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: امروز صبح برات پیام صوتی گذاشتم.\nنکتهٔ واژگانی: «voicemail»: «پیام صوتی»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I left you a voicemail this morning.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I left you a voicemail this morning."
+        }
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_fix_connected_speech",
+      "data": {
+        "lesson_key": "a2-phone-messages-01",
+        "slug": "g-fix-connected-speech",
+        "title": "Connected speech and meaningful pauses",
+        "rule_summary": "English speakers connect words within a meaningful phrase; important words can carry sentence stress.",
+        "explanation": {
+          "fa": "در گفتار طبیعی همهٔ واژه‌ها جدا و با تکیهٔ یکسان گفته نمی‌شوند. در Please ask him to call me back، کلمات call و back می‌توانند برجسته‌تر باشند؛ him و to معمولاً کوتاه‌تر و کم‌تکیه‌ترند. ابتدا آهسته و پیوسته تمرین کن؛ وضوح را فدای سرعت نکن."
+        },
+        "examples": [
+          {
+            "en": "Please ask him to call me back.",
+            "fa": "لطفاً از او بخواه دوباره به من زنگ بزند."
+          },
+          {
+            "en": "Could you take a message?",
+            "fa": "می‌توانید پیام بگیرید؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved",
+        "audio_examples": true
       }
     }
   ]

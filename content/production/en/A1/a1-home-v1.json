@@ -9,31 +9,643 @@
   "curriculum_unit": "a1-home",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_home_kitchen","data":{"slug":"home_kitchen","lesson_key":"a1-home-01","concept_type":"lexical","forms":{"en":"kitchen"},"translations":{"fa":"آشپزخانه"},"cefr":"A1","topic":"home","status":"approved"}},
-    {"kind":"concept","external_id":"c_home_bedroom","data":{"slug":"home_bedroom","lesson_key":"a1-home-01","concept_type":"lexical","forms":{"en":"bedroom"},"translations":{"fa":"اتاق خواب"},"cefr":"A1","topic":"home","status":"approved"}},
-    {"kind":"concept","external_id":"c_home_table","data":{"slug":"home_table","lesson_key":"a1-home-02","concept_type":"lexical","forms":{"en":"table"},"translations":{"fa":"میز"},"cefr":"A1","topic":"home","status":"approved"}},
-    {"kind":"concept","external_id":"c_home_there_is","data":{"slug":"home_there_is","lesson_key":"a1-home-02","concept_type":"functional","forms":{"en":"There is …"},"translations":{"fa":"... وجود دارد"},"cefr":"A1","topic":"home","status":"approved"}},
-    {"kind":"concept","external_id":"c_home_on","data":{"slug":"home_on","lesson_key":"a1-home-03","concept_type":"functional","forms":{"en":"on"},"translations":{"fa":"روی"},"cefr":"A1","topic":"home","status":"approved"}},
-
-    {"kind":"lexeme","external_id":"lx_home_kitchen","data":{"lesson_key":"a1-home-01","lemma":"kitchen","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["home_kitchen"],"cefr":"A1","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_home_bedroom","data":{"lesson_key":"a1-home-01","lemma":"bedroom","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["home_bedroom"],"cefr":"A1","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_home_table","data":{"lesson_key":"a1-home-02","lemma":"table","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["home_table"],"cefr":"A1","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_home_kitchen","data":{"lesson_key":"a1-home-01","text":{"en":"This is the kitchen."},"translations":{"fa":"این آشپزخانه است."},"intent":"identify_room","concept_refs":["home_kitchen"],"cefr":"A1","topic":"home","status":"approved"}},
-    {"kind":"utterance","external_id":"u_home_bedroom","data":{"lesson_key":"a1-home-01","text":{"en":"My bedroom is small."},"translations":{"fa":"اتاق خواب من کوچک است."},"intent":"describe_room","concept_refs":["home_bedroom"],"cefr":"A1","topic":"home","status":"approved"}},
-    {"kind":"utterance","external_id":"u_home_there_table","data":{"lesson_key":"a1-home-02","text":{"en":"There is a table in the kitchen."},"translations":{"fa":"یک میز در آشپزخانه هست."},"intent":"state_presence","concept_refs":["home_there_is","home_table","home_kitchen"],"cefr":"A1","topic":"home","status":"approved"}},
-    {"kind":"utterance","external_id":"u_home_book_on","data":{"lesson_key":"a1-home-03","text":{"en":"The book is on the table."},"translations":{"fa":"کتاب روی میز است."},"intent":"describe_location","concept_refs":["home_on","home_table"],"cefr":"A1","topic":"home","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_home_there_is","data":{"lesson_key":"a1-home-02","slug":"a1-there-is","title":"There is …","rule_summary":"Use there is to say that one thing or place exists or is present.","explanation":{"fa":"برای گفتن اینکه یک چیز در جایی وجود دارد از there is استفاده می‌کنیم."},"examples":[{"en":"There is a table in the kitchen.","fa":"یک میز در آشپزخانه هست."},{"en":"There is a bed in the room.","fa":"یک تخت در اتاق هست."}],"cefr":"A1","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_home_on","data":{"lesson_key":"a1-home-03","slug":"a1-preposition-on","title":"on for location","rule_summary":"Use on when something is touching the top surface of something else.","explanation":{"fa":"وقتی چیزی روی سطح چیز دیگری قرار دارد از on استفاده می‌کنیم."},"examples":[{"en":"The phone is on the table.","fa":"تلفن روی میز است."},{"en":"The book is on the chair.","fa":"کتاب روی صندلی است."}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_home_tour","data":{"lesson_key":"a1-home-01","title":"A quick home tour","setting":"apartment","cefr":"A1","topic":"home","characters":["Ava","Marco"],"turns":[{"order":1,"speaker":"Ava","text":"This is the kitchen.","translation_fa":"این آشپزخانه است."},{"order":2,"speaker":"Marco","text":"Nice! Where is the bedroom?","translation_fa":"خوبه! اتاق خواب کجاست؟"},{"order":3,"speaker":"Ava","text":"It's here.","translation_fa":"اینجاست."},{"order":4,"speaker":"Marco","text":"It's small, but nice.","translation_fa":"کوچک است، ولی خوبه."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_home_find_phone","data":{"lesson_key":"a1-home-03","title":"Where is the phone?","setting":"living room","cefr":"A1","topic":"home","characters":["Jae","Maya"],"turns":[{"order":1,"speaker":"Jae","text":"Where is my phone?","translation_fa":"تلفن من کجاست؟"},{"order":2,"speaker":"Maya","text":"It's on the table.","translation_fa":"روی میز است."},{"order":3,"speaker":"Jae","text":"Oh, yes. Thank you!","translation_fa":"آهان، بله. ممنون!"},{"order":4,"speaker":"Maya","text":"You're welcome.","translation_fa":"خواهش می‌کنم."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_home_mc","data":{"lesson_key":"a1-home-01","exercise_type":"multiple_choice","prompt":{"fa":"کدام کلمه یعنی «آشپزخانه»؟"},"options":["kitchen","bedroom","garden","office"],"answer":{"value":"kitchen"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_home_fill","data":{"lesson_key":"a1-home-02","exercise_type":"fill_blank","prompt":{"text":"There ___ a table in the kitchen.","fa":"جای خالی را کامل کن."},"options":["is","are","am","be"],"answer":{"value":"is"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_home_build","data":{"lesson_key":"a1-home-03","exercise_type":"sentence_building","prompt":{"fa":"جمله را بساز.","tokens":["table","on","The","book","the","is"]},"answer":{"tokens":["The","book","is","on","the","table"],"text":"The book is on the table."},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_home_listen","data":{"lesson_key":"a1-home-03","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و مکان را انتخاب کن.","audio_text":"The phone is on the table."},"options":["روی میز","زیر میز","در آشپزخانه","کنار تخت"],"answer":{"value":"روی میز"},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_home_speak","data":{"lesson_key":"a1-home-01","exercise_type":"speaking","prompt":{"instruction_fa":"جمله را بگو.","value":"This is the kitchen."},"answer":{"expected_text":"This is the kitchen."},"difficulty":1,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_home_kitchen",
+      "data": {
+        "slug": "home_kitchen",
+        "lesson_key": "a1-home-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "kitchen"
+        },
+        "translations": {
+          "fa": "آشپزخانه"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_bedroom",
+      "data": {
+        "slug": "home_bedroom",
+        "lesson_key": "a1-home-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "bedroom"
+        },
+        "translations": {
+          "fa": "اتاق خواب"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_table",
+      "data": {
+        "slug": "home_table",
+        "lesson_key": "a1-home-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "table"
+        },
+        "translations": {
+          "fa": "میز"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_there_is",
+      "data": {
+        "slug": "home_there_is",
+        "lesson_key": "a1-home-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "There is …"
+        },
+        "translations": {
+          "fa": "... وجود دارد"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_on",
+      "data": {
+        "slug": "home_on",
+        "lesson_key": "a1-home-03",
+        "concept_type": "functional",
+        "forms": {
+          "en": "on"
+        },
+        "translations": {
+          "fa": "روی"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_kitchen",
+      "data": {
+        "lesson_key": "a1-home-01",
+        "lemma": "kitchen",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "home_kitchen"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_bedroom",
+      "data": {
+        "lesson_key": "a1-home-01",
+        "lemma": "bedroom",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "home_bedroom"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_table",
+      "data": {
+        "lesson_key": "a1-home-02",
+        "lemma": "table",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "home_table"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_home_kitchen",
+      "data": {
+        "lesson_key": "a1-home-01",
+        "text": {
+          "en": "This is the kitchen."
+        },
+        "translations": {
+          "fa": "این آشپزخانه است."
+        },
+        "intent": "identify_room",
+        "concept_refs": [
+          "home_kitchen"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_home_bedroom",
+      "data": {
+        "lesson_key": "a1-home-01",
+        "text": {
+          "en": "My bedroom is small."
+        },
+        "translations": {
+          "fa": "اتاق خواب من کوچک است."
+        },
+        "intent": "describe_room",
+        "concept_refs": [
+          "home_bedroom"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_home_there_table",
+      "data": {
+        "lesson_key": "a1-home-02",
+        "text": {
+          "en": "There is a table in the kitchen."
+        },
+        "translations": {
+          "fa": "یک میز در آشپزخانه هست."
+        },
+        "intent": "state_presence",
+        "concept_refs": [
+          "home_there_is",
+          "home_table",
+          "home_kitchen"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_home_book_on",
+      "data": {
+        "lesson_key": "a1-home-03",
+        "text": {
+          "en": "The book is on the table."
+        },
+        "translations": {
+          "fa": "کتاب روی میز است."
+        },
+        "intent": "describe_location",
+        "concept_refs": [
+          "home_on",
+          "home_table"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_home_there_is",
+      "data": {
+        "lesson_key": "a1-home-02",
+        "slug": "a1-there-is",
+        "title": "There is …",
+        "rule_summary": "Use there is to say that one thing or place exists or is present.",
+        "explanation": {
+          "fa": "برای گفتن اینکه یک چیز در جایی وجود دارد از there is استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "There is a table in the kitchen.",
+            "fa": "یک میز در آشپزخانه هست."
+          },
+          {
+            "en": "There is a bed in the room.",
+            "fa": "یک تخت در اتاق هست."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_home_on",
+      "data": {
+        "lesson_key": "a1-home-03",
+        "slug": "a1-preposition-on",
+        "title": "on for location",
+        "rule_summary": "Use on when something is touching the top surface of something else.",
+        "explanation": {
+          "fa": "وقتی چیزی روی سطح چیز دیگری قرار دارد از on استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The phone is on the table.",
+            "fa": "تلفن روی میز است."
+          },
+          {
+            "en": "The book is on the chair.",
+            "fa": "کتاب روی صندلی است."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_home_tour",
+      "data": {
+        "lesson_key": "a1-home-01",
+        "title": "A quick home tour",
+        "setting": "apartment",
+        "cefr": "A1",
+        "topic": "home",
+        "characters": [
+          "Ava",
+          "Marco"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ava",
+            "text": "This is the kitchen.",
+            "translation_fa": "این آشپزخانه است."
+          },
+          {
+            "order": 2,
+            "speaker": "Marco",
+            "text": "Nice! Where is the bedroom?",
+            "translation_fa": "خوبه! اتاق خواب کجاست؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Ava",
+            "text": "It's here.",
+            "translation_fa": "اینجاست."
+          },
+          {
+            "order": 4,
+            "speaker": "Marco",
+            "text": "It's small, but nice.",
+            "translation_fa": "کوچک است، ولی خوبه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_home_find_phone",
+      "data": {
+        "lesson_key": "a1-home-03",
+        "title": "Where is the phone?",
+        "setting": "living room",
+        "cefr": "A1",
+        "topic": "home",
+        "characters": [
+          "Jae",
+          "Maya"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Jae",
+            "text": "Where is my phone?",
+            "translation_fa": "تلفن من کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Maya",
+            "text": "It's on the table.",
+            "translation_fa": "روی میز است."
+          },
+          {
+            "order": 3,
+            "speaker": "Jae",
+            "text": "Oh, yes. Thank you!",
+            "translation_fa": "آهان، بله. ممنون!"
+          },
+          {
+            "order": 4,
+            "speaker": "Maya",
+            "text": "You're welcome.",
+            "translation_fa": "خواهش می‌کنم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_home_mc",
+      "data": {
+        "lesson_key": "a1-home-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام کلمه یعنی «آشپزخانه»؟"
+        },
+        "options": [
+          "kitchen",
+          "bedroom",
+          "garden",
+          "office"
+        ],
+        "answer": {
+          "value": "kitchen"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: آشپزخانه\nنکتهٔ واژگانی: «kitchen»: «آشپزخانه»",
+          "model_answer": "kitchen",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_home_fill",
+      "data": {
+        "lesson_key": "a1-home-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "There ___ a table in the kitchen.",
+          "fa": "جای خالی را کامل کن."
+        },
+        "options": [
+          "is",
+          "are",
+          "am",
+          "be"
+        ],
+        "answer": {
+          "value": "is"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "is شکل فعل be برای فاعل مفرد است؛ در there is نیز وجود یک چیز مفرد را بیان می‌کند.",
+          "model_answer": "There is a table in the kitchen.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_home_build",
+      "data": {
+        "lesson_key": "a1-home-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "جمله را بساز.",
+          "tokens": [
+            "table",
+            "on",
+            "The",
+            "book",
+            "the",
+            "is"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "The",
+            "book",
+            "is",
+            "on",
+            "the",
+            "table"
+          ],
+          "text": "The book is on the table."
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: کتاب روی میز است.\nنکتهٔ واژگانی: «table»: «میز»؛ «on»: «روی»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "The book is on the table.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_home_listen",
+      "data": {
+        "lesson_key": "a1-home-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مکان را انتخاب کن.",
+          "audio_text": "The phone is on the table."
+        },
+        "options": [
+          "روی میز",
+          "زیر میز",
+          "در آشپزخانه",
+          "کنار تخت"
+        ],
+        "answer": {
+          "value": "روی میز"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: روی میز\nنکتهٔ واژگانی: «table»: «میز»؛ «on»: «روی»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "The phone is on the table.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "The phone is on the table."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_home_speak",
+      "data": {
+        "lesson_key": "a1-home-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را بگو.",
+          "value": "This is the kitchen."
+        },
+        "answer": {
+          "expected_text": "This is the kitchen."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: این آشپزخانه است.\nنکتهٔ واژگانی: «kitchen»: «آشپزخانه»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "This is the kitchen.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_home_listen",
+      "data": {
+        "lesson_key": "a1-home-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "چه چیزی در اتاق هست؟",
+          "audio_text": "There is a bed in the room."
+        },
+        "answer": {
+          "value": "یک تخت"
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "There is وجود چیزی را بیان می‌کند؛ bed یعنی تخت و in the room یعنی در اتاق.",
+          "model_answer": "یک تخت",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن.",
+          "transcript_en": "There is a bed in the room."
+        },
+        "options": [
+          "یک تخت",
+          "یک میز",
+          "یک تلفن",
+          "یک صندلی"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_home_build",
+      "data": {
+        "lesson_key": "a1-home-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "بگو: یک میز در آشپزخانه هست.",
+          "tokens": [
+            "There",
+            "is",
+            "a",
+            "table",
+            "in",
+            "the",
+            "kitchen."
+          ]
+        },
+        "answer": {
+          "text": "There is a table in the kitchen.",
+          "tokens": [
+            "There",
+            "is",
+            "a",
+            "table",
+            "in",
+            "the",
+            "kitchen."
+          ]
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "بعد از There is چیزِ موجود را می‌آوریم؛ عبارت in the kitchen مکان آن را مشخص می‌کند.",
+          "model_answer": "There is a table in the kitchen.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_home_location",
+      "data": {
+        "lesson_key": "a1-home-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "جملهٔ «The phone is on the table» را بخوان. تلفن کجاست؟"
+        },
+        "answer": {
+          "value": "روی میز"
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "on the table یعنی روی میز؛ on تماس با سطح را نشان می‌دهد.",
+          "model_answer": "روی میز",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "روی میز",
+          "زیر میز",
+          "داخل اتاق خواب",
+          "کنار در"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_home_review",
+      "data": {
+        "lesson_key": "a1-home-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "مرور: بگو این اتاق من است.",
+          "tokens": [
+            "This",
+            "is",
+            "my",
+            "room."
+          ]
+        },
+        "answer": {
+          "text": "This is my room.",
+          "tokens": [
+            "This",
+            "is",
+            "my",
+            "room."
+          ]
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "my پیش از اسم می‌آید؛ my room یعنی اتاق من.",
+          "model_answer": "This is my room.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "review_of": [
+          "a1-possessions"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    }
   ]
 }

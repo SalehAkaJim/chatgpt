@@ -424,7 +424,7 @@
           "en": "Consent is weak if people technically agree without understanding what data will be collected or how it may be used."
         },
         "translations": {
-          "fa": "رضایت وقتی ضعیفه که افراد فنی موافقت کنن ولی نفهمن چه داده‌ای جمع می‌شه یا چطور استفاده می‌شه."
+          "fa": "رضایت وقتی ضعیفه که افراد فقط از نظر صوری موافقت کنن، بی‌آنکه بفهمن چه داده‌ای جمع می‌شه یا چطور ممکنه استفاده بشه."
         },
         "intent": "evaluate_consent",
         "concept_refs": [
@@ -680,7 +680,7 @@
             "order": 4,
             "speaker": "David",
             "text": "Consent is weak if people technically agree without understanding what data will be collected or how it may be used.",
-            "translation_fa": "رضایت وقتی ضعیفه که افراد فنی موافقت کنن ولی نفهمن چه داده‌ای جمع می‌شه یا چطور استفاده می‌شه."
+            "translation_fa": "رضایت وقتی ضعیفه که افراد فقط از نظر صوری موافقت کنن، بی‌آنکه بفهمن چه داده‌ای جمع می‌شه یا چطور ممکنه استفاده بشه."
           }
         ],
         "status": "approved"
@@ -790,7 +790,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "«oversight» در این درس یعنی «نظارت».",
+          "model_answer": "Independent oversight can help challenge decisions that are difficult to inspect internally.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
       }
     },
     {
@@ -804,17 +809,23 @@
           "audio_text": "Consent is weak if people technically agree without understanding what data will be collected or how it may be used."
         },
         "options": [
-          "رضایت وقتی ضعیفه که افراد فنی موافقت کنن ولی نفهمن چه داده‌ای جمع می‌شه یا چطور استفاده می‌شه.",
+          "رضایت وقتی ضعیفه که افراد فقط از نظر صوری موافقت کنن، بی‌آنکه بفهمن چه داده‌ای جمع می‌شه یا چطور ممکنه استفاده بشه.",
           "سؤال اخلاقی فقط این نیست که سیستم کار می‌کنه یا نه؛ اینه که وقتی خراب می‌شه چه کسی ریسک رو تحمل می‌کنه.",
           "نظارت مستقل جایی مهم‌تره که فرد تحت‌تأثیر نتونه راحت تصمیم رو بفهمه یا بهش اعتراض کنه.",
           "بده‌بستان به‌صورت کلی حریم خصوصی در برابر نوآوری نیست؛ بستگی داره کدوم داده برای کدوم فایده واقعاً لازمه."
         ],
         "answer": {
-          "value": "رضایت وقتی ضعیفه که افراد فنی موافقت کنن ولی نفهمن چه داده‌ای جمع می‌شه یا چطور استفاده می‌شه."
+          "value": "رضایت وقتی ضعیفه که افراد فقط از نظر صوری موافقت کنن، بی‌آنکه بفهمن چه داده‌ای جمع می‌شه یا چطور ممکنه استفاده بشه."
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: رضایت وقتی ضعیفه که افراد فقط از نظر صوری موافقت کنن، بی‌آنکه بفهمن چه داده‌ای جمع می‌شه یا چطور ممکنه استفاده بشه.\nنکتهٔ واژگانی: «consent»: «رضایت آگاهانه»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Consent is weak if people technically agree without understanding what data will be collected or how it may be used.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Consent is weak if people technically agree without understanding what data will be collected or how it may be used."
+        }
       }
     },
     {
@@ -831,7 +842,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خودکار کردن تصمیم می‌تونه یکدستی رو بهتر کنه ولی دیدن استثناهای فردی رو سخت‌تر کنه.\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Automating a decision can improve consistency while making individual exceptions harder to notice.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -878,7 +894,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: سیستم می‌تونه سوگیری رو بازتولید کنه حتی وقتی هیچ توسعه‌دهنده‌ای قصد تبعیض نداره.\nنکتهٔ واژگانی: «bias»: «سوگیری»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "A system can reproduce bias even when no individual developer intends to discriminate.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -902,7 +923,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: نظارت مستقل جایی مهم‌تره که فرد تحت‌تأثیر نتونه راحت تصمیم رو بفهمه یا بهش اعتراض کنه.\nنکتهٔ واژگانی: «oversight»: «نظارت»",
+          "model_answer": "Independent oversight matters most where the affected person cannot easily understand or challenge the decision.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -917,7 +943,7 @@
         },
         "options": [
           "شفافیت باید بررسی معنادار رو ممکن کنه؛ انتشار هزار صفحه‌ای که کسی نمی‌فهمه کافی نیست.",
-          "رضایت وقتی ضعیفه که افراد فنی موافقت کنن ولی نفهمن چه داده‌ای جمع می‌شه یا چطور استفاده می‌شه.",
+          "رضایت وقتی ضعیفه که افراد فقط از نظر صوری موافقت کنن، بی‌آنکه بفهمن چه داده‌ای جمع می‌شه یا چطور ممکنه استفاده بشه.",
           "سیستم می‌تونه سوگیری رو بازتولید کنه حتی وقتی هیچ توسعه‌دهنده‌ای قصد تبعیض نداره.",
           "پاسخ‌گویی مسیر اصلاح تصمیم آسیب‌زا می‌خواد، نه فقط توضیح اینکه چطور تولید شده."
         ],
@@ -926,7 +952,13 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: شفافیت باید بررسی معنادار رو ممکن کنه؛ انتشار هزار صفحه‌ای که کسی نمی‌فهمه کافی نیست.\nنکتهٔ واژگانی: «transparency»: «شفافیت»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Transparency should make meaningful scrutiny possible; publishing a thousand pages nobody can interpret is not enough.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Transparency should make meaningful scrutiny possible; publishing a thousand pages nobody can interpret is not enough."
+        }
       }
     },
     {
@@ -943,7 +975,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: بده‌بستان به‌صورت کلی حریم خصوصی در برابر نوآوری نیست؛ بستگی داره کدوم داده برای کدوم فایده واقعاً لازمه.\nنکتهٔ واژگانی: «trade off»: «بده‌بستان»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "The trade-off is not privacy versus innovation in the abstract; it depends on which data are necessary for which benefit.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -998,7 +1035,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: پاسخ‌گویی مسیر اصلاح تصمیم آسیب‌زا می‌خواد، نه فقط توضیح اینکه چطور تولید شده.\nنکتهٔ واژگانی: «accountability»: «پاسخ‌گویی»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Accountability requires a route for correcting harmful decisions, not merely an explanation of how they were produced.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     }
   ]

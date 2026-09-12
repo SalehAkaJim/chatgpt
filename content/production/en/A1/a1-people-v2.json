@@ -9,40 +9,644 @@
   "curriculum_unit": "a1-people",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_people_tall","data":{"slug":"people_tall","lesson_key":"a1-people-01","concept_type":"lexical","forms":{"en":"tall"},"translations":{"fa":"قدبلند"},"cefr":"A1","topic":"people","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_people_tall","data":{"lesson_key":"a1-people-01","lemma":"tall","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["people_tall"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_people_tall","data":{"lesson_key":"a1-people-01","lexeme_ref":"lx_people_tall","surface_form":"tall","grammatical_features":{"degree":"positive"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_people_short","data":{"slug":"people_short","lesson_key":"a1-people-01","concept_type":"lexical","forms":{"en":"short"},"translations":{"fa":"کوتاه‌قد"},"cefr":"A1","topic":"people","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_people_short","data":{"lesson_key":"a1-people-01","lemma":"short","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["people_short"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_people_short","data":{"lesson_key":"a1-people-01","lexeme_ref":"lx_people_short","surface_form":"short","grammatical_features":{"degree":"positive"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_people_young","data":{"slug":"people_young","lesson_key":"a1-people-01","concept_type":"lexical","forms":{"en":"young"},"translations":{"fa":"جوان"},"cefr":"A1","topic":"people","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_people_young","data":{"lesson_key":"a1-people-01","lemma":"young","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["people_young"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_people_young","data":{"lesson_key":"a1-people-01","lexeme_ref":"lx_people_young","surface_form":"young","grammatical_features":{"degree":"positive"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_people_friendly","data":{"slug":"people_friendly","lesson_key":"a1-people-02","concept_type":"lexical","forms":{"en":"friendly"},"translations":{"fa":"خوش‌برخورد / دوستانه"},"cefr":"A1","topic":"people","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_people_friendly","data":{"lesson_key":"a1-people-02","lemma":"friendly","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["people_friendly"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_people_friendly","data":{"lesson_key":"a1-people-02","lexeme_ref":"lx_people_friendly","surface_form":"friendly","grammatical_features":{"degree":"positive"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_people_hair","data":{"slug":"people_hair","lesson_key":"a1-people-02","concept_type":"lexical","forms":{"en":"hair"},"translations":{"fa":"مو"},"cefr":"A1","topic":"people","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_people_hair","data":{"lesson_key":"a1-people-02","lemma":"hair","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["people_hair"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_people_hair","data":{"lesson_key":"a1-people-02","lexeme_ref":"lx_people_hair","surface_form":"hair","grammatical_features":{"countability":"mass"},"cefr":"A1","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_people_what_like","data":{"slug":"people_what_does_look_like","lesson_key":"a1-people-01","concept_type":"functional","forms":{"en":"What does he/she look like?"},"translations":{"fa":"ظاهرش چطوره؟"},"cefr":"A1","topic":"people","status":"approved"}},
-    {"kind":"concept","external_id":"c_people_has_hair","data":{"slug":"people_has_hair","lesson_key":"a1-people-02","concept_type":"functional","forms":{"en":"He/She has … hair."},"translations":{"fa":"او موی ... دارد."},"cefr":"A1","topic":"people","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_people_tall","data":{"lesson_key":"a1-people-01","text":{"en":"He is tall."},"translations":{"fa":"او قدبلند است."},"intent":"describe_height","concept_refs":["people_tall"],"cefr":"A1","topic":"people","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_people_young","data":{"lesson_key":"a1-people-01","text":{"en":"She is young and friendly."},"translations":{"fa":"او جوان و خوش‌برخورد است."},"intent":"describe_person","concept_refs":["people_young","people_friendly"],"cefr":"A1","topic":"people","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_people_hair","data":{"lesson_key":"a1-people-02","text":{"en":"She has long brown hair."},"translations":{"fa":"او موی بلند قهوه‌ای دارد."},"intent":"describe_hair","concept_refs":["people_has_hair","people_hair"],"cefr":"A1","topic":"people","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_people_ask","data":{"lesson_key":"a1-people-01","text":{"en":"What does he look like?"},"translations":{"fa":"ظاهرش چطوره؟"},"intent":"ask_appearance","concept_refs":["people_what_does_look_like"],"cefr":"A1","topic":"people","register":"neutral","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_people_be_adjective","data":{"lesson_key":"a1-people-01","slug":"a1-be-adjectives-people","title":"be + adjective","rule_summary":"Use am/is/are before adjectives when describing people.","explanation":{"fa":"برای توصیف افراد با صفت از am/is/are استفاده می‌کنیم."},"examples":[{"en":"He is tall.","fa":"او قدبلند است."},{"en":"They are friendly.","fa":"آن‌ها خوش‌برخورد هستند."}],"cefr":"A1","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_people_have_hair","data":{"lesson_key":"a1-people-02","slug":"a1-have-hair","title":"have/has + hair","rule_summary":"Use have/has to describe hair and some physical features.","explanation":{"fa":"برای توصیف مو و بعضی ویژگی‌های ظاهری از have/has استفاده می‌کنیم."},"examples":[{"en":"She has long hair.","fa":"او موی بلند دارد."},{"en":"He has short hair.","fa":"او موی کوتاه دارد."}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_people_station","data":{"lesson_key":"a1-people-01","title":"Finding a friend","setting":"train station","cefr":"A1","topic":"people","characters":["Maya","Theo"],"turns":[{"order":1,"speaker":"Maya","text":"What does your friend look like?","translation_fa":"دوستت چه شکلیه؟"},{"order":2,"speaker":"Theo","text":"He's tall and young.","translation_fa":"قدبلند و جوانه."},{"order":3,"speaker":"Maya","text":"Is he friendly?","translation_fa":"خوش‌برخورده؟"},{"order":4,"speaker":"Theo","text":"Yes, very friendly.","translation_fa":"بله، خیلی خوش‌برخورده."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_people_photo","data":{"lesson_key":"a1-people-02","title":"A family photo","setting":"living room","cefr":"A1","topic":"people","characters":["Nora","Sam"],"turns":[{"order":1,"speaker":"Nora","text":"Who is this?","translation_fa":"این کیه؟"},{"order":2,"speaker":"Sam","text":"That's my sister.","translation_fa":"خواهرمه."},{"order":3,"speaker":"Nora","text":"She has long brown hair.","translation_fa":"موی بلند قهوه‌ای داره."},{"order":4,"speaker":"Sam","text":"Yes, and she's very friendly.","translation_fa":"بله، و خیلی خوش‌برخورده است."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_people_vocab","data":{"lesson_key":"a1-people-01","exercise_type":"multiple_choice","prompt":{"fa":"friendly یعنی چه؟"},"options":["خوش‌برخورد","قدبلند","جوان","کوتاه‌قد"],"answer":{"value":"خوش‌برخورد"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_people_be","data":{"lesson_key":"a1-people-01","exercise_type":"fill_blank","prompt":{"text":"He ___ tall."},"options":["is","has","do","are"],"answer":{"value":"is"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_people_build","data":{"lesson_key":"a1-people-02","exercise_type":"sentence_building","prompt":{"fa":"«او موی بلند دارد.» را بساز.","tokens":["long","has","hair","She"]},"answer":{"tokens":["She","has","long","hair"],"text":"She has long hair."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_people_listen","data":{"lesson_key":"a1-people-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و ویژگی را انتخاب کن.","audio_text":"He is tall and young."},"options":["tall and young","short and old","friendly and short","young and short"],"answer":{"value":"tall and young"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_people_speak","data":{"lesson_key":"a1-people-02","exercise_type":"speaking","prompt":{"instruction_fa":"این جمله را بگو.","value":"She has long brown hair."},"answer":{"expected_text":"She has long brown hair."},"difficulty":2,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_people_tall",
+      "data": {
+        "slug": "people_tall",
+        "lesson_key": "a1-people-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "tall"
+        },
+        "translations": {
+          "fa": "قدبلند"
+        },
+        "cefr": "A1",
+        "topic": "people",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_people_tall",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "lemma": "tall",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "people_tall"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_people_tall",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "lexeme_ref": "lx_people_tall",
+        "surface_form": "tall",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_people_short",
+      "data": {
+        "slug": "people_short",
+        "lesson_key": "a1-people-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "short"
+        },
+        "translations": {
+          "fa": "کوتاه‌قد"
+        },
+        "cefr": "A1",
+        "topic": "people",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_people_short",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "lemma": "short",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "people_short"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_people_short",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "lexeme_ref": "lx_people_short",
+        "surface_form": "short",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_people_young",
+      "data": {
+        "slug": "people_young",
+        "lesson_key": "a1-people-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "young"
+        },
+        "translations": {
+          "fa": "جوان"
+        },
+        "cefr": "A1",
+        "topic": "people",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_people_young",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "lemma": "young",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "people_young"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_people_young",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "lexeme_ref": "lx_people_young",
+        "surface_form": "young",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_people_friendly",
+      "data": {
+        "slug": "people_friendly",
+        "lesson_key": "a1-people-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "friendly"
+        },
+        "translations": {
+          "fa": "خوش‌برخورد / دوستانه"
+        },
+        "cefr": "A1",
+        "topic": "people",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_people_friendly",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "lemma": "friendly",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "people_friendly"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_people_friendly",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "lexeme_ref": "lx_people_friendly",
+        "surface_form": "friendly",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_people_hair",
+      "data": {
+        "slug": "people_hair",
+        "lesson_key": "a1-people-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "hair"
+        },
+        "translations": {
+          "fa": "مو"
+        },
+        "cefr": "A1",
+        "topic": "people",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_people_hair",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "lemma": "hair",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "people_hair"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_people_hair",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "lexeme_ref": "lx_people_hair",
+        "surface_form": "hair",
+        "grammatical_features": {
+          "countability": "mass"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_people_what_like",
+      "data": {
+        "slug": "people_what_does_look_like",
+        "lesson_key": "a1-people-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "What does he/she look like?"
+        },
+        "translations": {
+          "fa": "ظاهرش چطوره؟"
+        },
+        "cefr": "A1",
+        "topic": "people",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_people_has_hair",
+      "data": {
+        "slug": "people_has_hair",
+        "lesson_key": "a1-people-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "He/She has … hair."
+        },
+        "translations": {
+          "fa": "او موی ... دارد."
+        },
+        "cefr": "A1",
+        "topic": "people",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_people_tall",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "text": {
+          "en": "He is tall."
+        },
+        "translations": {
+          "fa": "او قدبلند است."
+        },
+        "intent": "describe_height",
+        "concept_refs": [
+          "people_tall"
+        ],
+        "cefr": "A1",
+        "topic": "people",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_people_young",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "text": {
+          "en": "She is young and friendly."
+        },
+        "translations": {
+          "fa": "او جوان و خوش‌برخورد است."
+        },
+        "intent": "describe_person",
+        "concept_refs": [
+          "people_young",
+          "people_friendly"
+        ],
+        "cefr": "A1",
+        "topic": "people",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_people_hair",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "text": {
+          "en": "She has long brown hair."
+        },
+        "translations": {
+          "fa": "او موی بلند قهوه‌ای دارد."
+        },
+        "intent": "describe_hair",
+        "concept_refs": [
+          "people_has_hair",
+          "people_hair"
+        ],
+        "cefr": "A1",
+        "topic": "people",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_people_ask",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "text": {
+          "en": "What does he look like?"
+        },
+        "translations": {
+          "fa": "ظاهرش چطوره؟"
+        },
+        "intent": "ask_appearance",
+        "concept_refs": [
+          "people_what_does_look_like"
+        ],
+        "cefr": "A1",
+        "topic": "people",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_people_be_adjective",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "slug": "a1-be-adjectives-people",
+        "title": "be + adjective",
+        "rule_summary": "Use am/is/are before adjectives when describing people.",
+        "explanation": {
+          "fa": "برای توصیف افراد با صفت از am/is/are استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "He is tall.",
+            "fa": "او قدبلند است."
+          },
+          {
+            "en": "They are friendly.",
+            "fa": "آن‌ها خوش‌برخورد هستند."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_people_have_hair",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "slug": "a1-have-hair",
+        "title": "have/has + hair",
+        "rule_summary": "Use have/has to describe hair and some physical features.",
+        "explanation": {
+          "fa": "برای توصیف مو و بعضی ویژگی‌های ظاهری از have/has استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "She has long hair.",
+            "fa": "او موی بلند دارد."
+          },
+          {
+            "en": "He has short hair.",
+            "fa": "او موی کوتاه دارد."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_people_station",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "title": "Finding a friend",
+        "setting": "train station",
+        "cefr": "A1",
+        "topic": "people",
+        "characters": [
+          "Maya",
+          "Theo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Maya",
+            "text": "What does your friend look like?",
+            "translation_fa": "دوستت چه شکلیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Theo",
+            "text": "He's tall and young.",
+            "translation_fa": "قدبلند و جوانه."
+          },
+          {
+            "order": 3,
+            "speaker": "Maya",
+            "text": "Is he friendly?",
+            "translation_fa": "خوش‌برخورده؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Theo",
+            "text": "Yes, very friendly.",
+            "translation_fa": "بله، خیلی خوش‌برخورده."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_people_photo",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "title": "A family photo",
+        "setting": "living room",
+        "cefr": "A1",
+        "topic": "people",
+        "characters": [
+          "Nora",
+          "Sam"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nora",
+            "text": "Who is this?",
+            "translation_fa": "این کیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Sam",
+            "text": "That's my sister.",
+            "translation_fa": "خواهرمه."
+          },
+          {
+            "order": 3,
+            "speaker": "Nora",
+            "text": "She has long brown hair.",
+            "translation_fa": "موی بلند قهوه‌ای داره."
+          },
+          {
+            "order": 4,
+            "speaker": "Sam",
+            "text": "Yes, and she's very friendly.",
+            "translation_fa": "بله، و خیلی خوش‌برخورده است."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_people_vocab",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "friendly یعنی چه؟"
+        },
+        "options": [
+          "خوش‌برخورد",
+          "قدبلند",
+          "جوان",
+          "کوتاه‌قد"
+        ],
+        "answer": {
+          "value": "خوش‌برخورد"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خوش‌برخورد\nنکتهٔ واژگانی: «friendly»: «خوش‌برخورد / دوستانه»",
+          "model_answer": "friendly",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_people_be",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "He ___ tall."
+        },
+        "options": [
+          "is",
+          "has",
+          "do",
+          "are"
+        ],
+        "answer": {
+          "value": "is"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "is شکل فعل be برای فاعل مفرد است؛ در there is نیز وجود یک چیز مفرد را بیان می‌کند.",
+          "model_answer": "He is tall.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_people_build",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«او موی بلند دارد.» را بساز.",
+          "tokens": [
+            "long",
+            "has",
+            "hair",
+            "She"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "She",
+            "has",
+            "long",
+            "hair"
+          ],
+          "text": "She has long hair."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: «او موی بلند دارد.» را بساز.\nنکتهٔ واژگانی: «hair»: «مو»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "She has long hair.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_people_listen",
+      "data": {
+        "lesson_key": "a1-people-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و ویژگی را انتخاب کن.",
+          "audio_text": "He is tall and young."
+        },
+        "options": [
+          "tall and young",
+          "short and old",
+          "friendly and short",
+          "young and short"
+        ],
+        "answer": {
+          "value": "tall and young"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "نکتهٔ واژگانی: «young»: «جوان»؛ «tall»: «قدبلند»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "He is tall and young.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "He is tall and young."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_people_speak",
+      "data": {
+        "lesson_key": "a1-people-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را بگو.",
+          "value": "She has long brown hair."
+        },
+        "answer": {
+          "expected_text": "She has long brown hair."
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: موی بلند قهوه‌ای داره.\nنکتهٔ واژگانی: «hair»: «مو»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "She has long brown hair.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

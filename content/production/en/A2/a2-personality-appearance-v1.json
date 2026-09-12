@@ -586,7 +586,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "What is someone like? دربارهٔ شخصیت است؛ پاسخ از ویژگی‌هایی مثل friendly و patient می‌گوید.",
+          "model_answer": "What's she like? She's friendly and patient.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
       }
     },
     {
@@ -610,7 +615,13 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: قدبلنده و موهای کوتاه و فر داره.\nنکتهٔ واژگانی: «curly hair»: «موی فر»؛ «tall»: «قدبلند»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "He's tall and has short curly hair.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "He's tall and has short curly hair."
+        }
       }
     },
     {
@@ -627,7 +638,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: مرد ریش‌دار عموی من است.\nنکتهٔ واژگانی: «beard»: «ریش»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "The man with the beard is my uncle.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -654,7 +670,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: اخلاقش چطوره؟\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "What's she like?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -678,7 +699,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خوش‌برخورد است و با آدم‌های جدید خیلی صبوره.\nنکتهٔ واژگانی: «friendly»: «خوش‌برخورد»؛ «patient»: «صبور»",
+          "model_answer": "She's friendly and very patient with new people.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -701,6 +727,135 @@
           "value": "من از خواهرم کم‌حرف‌ترم، ولی او از من صبورتره."
         },
         "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من از خواهرم کم‌حرف‌ترم، ولی او از من صبورتره.\nنکتهٔ واژگانی: «patient»: «صبور»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I'm quieter than my sister, but she's more patient than me.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I'm quieter than my sister, but she's more patient than me."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_person_compare",
+      "data": {
+        "lesson_key": "a2-personality-appearance-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "Maya is more patient than Leo. کدام برداشت درست است؟"
+        },
+        "answer": {
+          "value": "مایا از لئو صبورتر است."
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "در X is more patient than Y، فرد X صبورتر از Y است؛ patient ویژگی شخصیت است.",
+          "model_answer": "مایا از لئو صبورتر است.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "مایا از لئو صبورتر است.",
+          "لئو از مایا صبورتر است.",
+          "هر دو به یک اندازه صبورند.",
+          "دربارهٔ قد آن‌ها صحبت شده."
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_person_build",
+      "data": {
+        "lesson_key": "a2-personality-appearance-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "بگو: او از من قدبلندتر است.",
+          "tokens": [
+            "She's",
+            "taller",
+            "than",
+            "me."
+          ]
+        },
+        "answer": {
+          "text": "She's taller than me.",
+          "tokens": [
+            "She's",
+            "taller",
+            "than",
+            "me."
+          ]
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "taller صفت تفضیلی tall است و than طرف دوم مقایسه را معرفی می‌کند.",
+          "model_answer": "She's taller than me.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_person_listen",
+      "data": {
+        "lesson_key": "a2-personality-appearance-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام توصیف درست است؟",
+          "audio_text": "My brother is taller than me, but I am more patient."
+        },
+        "answer": {
+          "value": "برادرم قدبلندتر است؛ من صبورترم."
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "فاعل بخش اول My brother و فاعل بخش دوم I است؛ but دو ویژگی متفاوت را کنار هم می‌گذارد.",
+          "model_answer": "برادرم قدبلندتر است؛ من صبورترم.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن.",
+          "transcript_en": "My brother is taller than me, but I am more patient."
+        },
+        "options": [
+          "برادرم قدبلندتر است؛ من صبورترم.",
+          "من قدبلندترم؛ برادرم صبورتر است.",
+          "برادرم هم قدبلندتر و هم صبورتر است.",
+          "من هم قدبلندتر و هم صبورترم."
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_person_review",
+      "data": {
+        "lesson_key": "a2-personality-appearance-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "مرور خانواده: My sister is quiet, but my brother is outgoing. چه کسی معاشرتی است؟"
+        },
+        "answer": {
+          "value": "برادر گوینده"
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "outgoing یعنی معاشرتی؛ این صفت بعد از my brother آمده است.",
+          "model_answer": "برادر گوینده",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "برادر گوینده",
+          "خواهر گوینده",
+          "هر دو",
+          "هیچ‌کدام"
+        ],
+        "review_of": [
+          "a2-family-relationships"
+        ],
         "cefr": "A2",
         "status": "approved"
       }

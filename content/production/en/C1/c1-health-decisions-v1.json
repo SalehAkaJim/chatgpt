@@ -402,7 +402,7 @@
           "en": "A health decision may involve balancing a modest likely benefit against a small but serious risk."
         },
         "translations": {
-          "fa": "تصمیم سلامتی ممکنه شامل سنجیدن یک فایده نسبتاً محتمل در برابر ریسکی کم‌احتمال ولی جدی باشه."
+          "fa": "تصمیم مربوط به سلامتی ممکنه شامل سنجیدن یک فایده کوچک اما محتمل در برابر ریسکی کم‌احتمال ولی جدی باشه."
         },
         "intent": "weigh_health_tradeoff",
         "concept_refs": [
@@ -672,7 +672,7 @@
             "order": 2,
             "speaker": "David",
             "text": "A health decision may involve balancing a modest likely benefit against a small but serious risk.",
-            "translation_fa": "تصمیم سلامتی ممکنه شامل سنجیدن یک فایده نسبتاً محتمل در برابر ریسکی کم‌احتمال ولی جدی باشه."
+            "translation_fa": "تصمیم مربوط به سلامتی ممکنه شامل سنجیدن یک فایده کوچک اما محتمل در برابر ریسکی کم‌احتمال ولی جدی باشه."
           },
           {
             "order": 3,
@@ -794,7 +794,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "«informed» در این درس یعنی «آگاهانه».",
+          "model_answer": "An informed choice depends on understanding benefits, risks, and alternatives.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
       }
     },
     {
@@ -809,7 +814,7 @@
         },
         "options": [
           "شواهد می‌تونن نتیجه‌های متوسط رو بگن، ولی نمی‌تونن تصمیم بگیرن هر فرد باید چقدر برای هر نتیجه ارزش قائل بشه.",
-          "تصمیم سلامتی ممکنه شامل سنجیدن یک فایده نسبتاً محتمل در برابر ریسکی کم‌احتمال ولی جدی باشه.",
+          "تصمیم مربوط به سلامتی ممکنه شامل سنجیدن یک فایده کوچک اما محتمل در برابر ریسکی کم‌احتمال ولی جدی باشه.",
           "انتخاب آگاهانه نیاز داره گزینه‌های واقعی رو بفهمیم، از جمله صبر کردن یا فعلاً کاری نکردن.",
           "دو آدم کاملاً آگاه می‌تونن منطقی تصمیم‌های متفاوت بگیرن چون ترجیح‌ها و تحمل ریسک‌شون فرق داره."
         ],
@@ -818,7 +823,13 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: شواهد می‌تونن نتیجه‌های متوسط رو بگن، ولی نمی‌تونن تصمیم بگیرن هر فرد باید چقدر برای هر نتیجه ارزش قائل بشه.\nنکتهٔ واژگانی: «evidence»: «شواهد»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "The evidence can tell us average outcomes, but it cannot decide how an individual should value each outcome.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "The evidence can tell us average outcomes, but it cannot decide how an individual should value each outcome."
+        }
       }
     },
     {
@@ -835,7 +846,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: عدم قطعیت باید روشن توضیح داده بشه، نه اینکه پشت یک عدد ظاهراً دقیق پنهان بشه.\nنکتهٔ واژگانی: «uncertainty»: «عدم قطعیت»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Uncertainty should be explained clearly rather than hidden behind a single precise-looking number.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -890,7 +906,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: غربالگری می‌تونه مشکل رو زودتر پیدا کنه، ولی ممکنه چیزهایی رو هم پیدا کنه که هیچ‌وقت آسیب ایجاد نمی‌کردن.\nنکتهٔ واژگانی: «screening»: «غربالگری»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Screening can identify problems earlier, but it can also detect findings that would never have caused harm.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -907,14 +928,19 @@
           "انتخاب آگاهانه نیاز داره گزینه‌های واقعی رو بفهمیم، از جمله صبر کردن یا فعلاً کاری نکردن.",
           "عدم قطعیت باید روشن توضیح داده بشه، نه اینکه پشت یک عدد ظاهراً دقیق پنهان بشه.",
           "دو آدم کاملاً آگاه می‌تونن منطقی تصمیم‌های متفاوت بگیرن چون ترجیح‌ها و تحمل ریسک‌شون فرق داره.",
-          "تصمیم سلامتی ممکنه شامل سنجیدن یک فایده نسبتاً محتمل در برابر ریسکی کم‌احتمال ولی جدی باشه."
+          "تصمیم مربوط به سلامتی ممکنه شامل سنجیدن یک فایده کوچک اما محتمل در برابر ریسکی کم‌احتمال ولی جدی باشه."
         ],
         "answer": {
           "value": "انتخاب آگاهانه نیاز داره گزینه‌های واقعی رو بفهمیم، از جمله صبر کردن یا فعلاً کاری نکردن."
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: انتخاب آگاهانه نیاز داره گزینه‌های واقعی رو بفهمیم، از جمله صبر کردن یا فعلاً کاری نکردن.\nنکتهٔ واژگانی: «informed»: «آگاهانه»",
+          "model_answer": "An informed choice requires understanding the realistic options, including the option of waiting or doing nothing for now.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -938,7 +964,13 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: مداخله شدیدتر لزوماً بهتر نیست اگر فایده اضافه کم و بارش زیاد باشه.\nنکتهٔ واژگانی: «intervention»: «مداخله»؛ «benefit»: «فایده»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "A more intensive intervention is not automatically better if the additional benefit is small and the burden is substantial.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "A more intensive intervention is not automatically better if the additional benefit is small and the burden is substantial."
+        }
       }
     },
     {
@@ -955,7 +987,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: دو آدم کاملاً آگاه می‌تونن منطقی تصمیم‌های متفاوت بگیرن چون ترجیح‌ها و تحمل ریسک‌شون فرق داره.\nنکتهٔ واژگانی: «informed»: «آگاهانه»؛ «risk»: «ریسک»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Two well-informed people can reasonably make different choices because their preferences and tolerance for risk differ.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -1014,7 +1051,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: هدف اطمینان مصنوعی نیست؛ تصمیمیه که با توجه به شواهد، عدم قطعیت و اولویت‌های فرد منطقی بمونه.\nنکتهٔ واژگانی: «uncertainty»: «عدم قطعیت»؛ «evidence»: «شواهد»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "The aim is not false certainty but a decision that remains reasonable given the evidence, uncertainty, and person's priorities.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     }
   ]

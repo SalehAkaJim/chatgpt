@@ -9,51 +9,836 @@
   "curriculum_unit": "a1-family",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_family_mother","data":{"slug":"family_mother","lesson_key":"a1-family-01","concept_type":"lexical","forms":{"en":"mother"},"translations":{"fa":"مادر"},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_family_mother","data":{"lesson_key":"a1-family-01","lemma":"mother","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["family_mother"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_family_mother","data":{"lesson_key":"a1-family-01","lexeme_ref":"lx_family_mother","surface_form":"mother","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_family_father","data":{"slug":"family_father","lesson_key":"a1-family-01","concept_type":"lexical","forms":{"en":"father"},"translations":{"fa":"پدر"},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_family_father","data":{"lesson_key":"a1-family-01","lemma":"father","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["family_father"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_family_father","data":{"lesson_key":"a1-family-01","lexeme_ref":"lx_family_father","surface_form":"father","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_family_parents","data":{"slug":"family_parents","lesson_key":"a1-family-01","concept_type":"lexical","forms":{"en":"parents"},"translations":{"fa":"والدین"},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_family_parent","data":{"lesson_key":"a1-family-01","lemma":"parent","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["family_parents"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_family_parents","data":{"lesson_key":"a1-family-01","lexeme_ref":"lx_family_parent","surface_form":"parents","grammatical_features":{"number":"plural"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_family_sister","data":{"slug":"family_sister","lesson_key":"a1-family-01","concept_type":"lexical","forms":{"en":"sister"},"translations":{"fa":"خواهر"},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_family_sister","data":{"lesson_key":"a1-family-01","lemma":"sister","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["family_sister"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_family_sister","data":{"lesson_key":"a1-family-01","lexeme_ref":"lx_family_sister","surface_form":"sister","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_family_brother","data":{"slug":"family_brother","lesson_key":"a1-family-01","concept_type":"lexical","forms":{"en":"brother"},"translations":{"fa":"برادر"},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_family_brother","data":{"lesson_key":"a1-family-01","lemma":"brother","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["family_brother"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_family_brother","data":{"lesson_key":"a1-family-01","lexeme_ref":"lx_family_brother","surface_form":"brother","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_family_husband","data":{"slug":"family_husband","lesson_key":"a1-family-02","concept_type":"lexical","forms":{"en":"husband"},"translations":{"fa":"شوهر"},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_family_husband","data":{"lesson_key":"a1-family-02","lemma":"husband","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["family_husband"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_family_husband","data":{"lesson_key":"a1-family-02","lexeme_ref":"lx_family_husband","surface_form":"husband","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_family_wife","data":{"slug":"family_wife","lesson_key":"a1-family-02","concept_type":"lexical","forms":{"en":"wife"},"translations":{"fa":"همسر / زن"},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_family_wife","data":{"lesson_key":"a1-family-02","lemma":"wife","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["family_wife"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_family_wife","data":{"lesson_key":"a1-family-02","lexeme_ref":"lx_family_wife","surface_form":"wife","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_family_children","data":{"slug":"family_children","lesson_key":"a1-family-02","concept_type":"lexical","forms":{"en":"children"},"translations":{"fa":"بچه‌ها / فرزندان"},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_family_child","data":{"lesson_key":"a1-family-02","lemma":"child","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["family_children"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_family_children","data":{"lesson_key":"a1-family-02","lexeme_ref":"lx_family_child","surface_form":"children","grammatical_features":{"number":"plural","irregular":true},"cefr":"A1","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_family_this_my","data":{"slug":"family_this_is_my","lesson_key":"a1-family-01","concept_type":"functional","forms":{"en":"This is my …"},"translations":{"fa":"این ... من است."},"cefr":"A1","topic":"family","status":"approved"}},
-    {"kind":"concept","external_id":"c_family_whose","data":{"slug":"family_whose","lesson_key":"a1-family-02","concept_type":"functional","forms":{"en":"Whose … is this?"},"translations":{"fa":"این ... مال کیست؟"},"cefr":"A1","topic":"family","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_family_mother","data":{"lesson_key":"a1-family-01","text":{"en":"This is my mother."},"translations":{"fa":"این مادر من است."},"intent":"identify_family","concept_refs":["family_this_is_my","family_mother"],"cefr":"A1","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_family_sister","data":{"lesson_key":"a1-family-01","text":{"en":"Her name is Sara. She's my sister."},"translations":{"fa":"اسمش سارا است. او خواهر من است."},"intent":"identify_family","concept_refs":["family_sister"],"cefr":"A1","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_family_parents","data":{"lesson_key":"a1-family-01","text":{"en":"These are my parents."},"translations":{"fa":"این‌ها والدین من هستند."},"intent":"identify_family_plural","concept_refs":["family_parents"],"cefr":"A1","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_family_wife","data":{"lesson_key":"a1-family-02","text":{"en":"Lina is Omar's wife."},"translations":{"fa":"لینا همسر عمر است."},"intent":"state_relationship","concept_refs":["family_wife"],"cefr":"A1","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_family_children","data":{"lesson_key":"a1-family-02","text":{"en":"They have two children."},"translations":{"fa":"آن‌ها دو فرزند دارند."},"intent":"state_family_fact","concept_refs":["family_children"],"cefr":"A1","topic":"family","register":"neutral","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_family_possessive_adjectives","data":{"lesson_key":"a1-family-01","slug":"a1-family-possessive-adjectives","title":"my, your, his, her","rule_summary":"Use possessive adjectives before a noun to show who it belongs or relates to.","explanation":{"fa":"برای نشان دادن تعلق یا رابطه قبل از اسم از my, your, his, her استفاده می‌کنیم."},"examples":[{"en":"my sister","fa":"خواهر من"},{"en":"her father","fa":"پدر او"}],"cefr":"A1","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_family_apostrophe_s","data":{"lesson_key":"a1-family-02","slug":"a1-possessive-apostrophe-s","title":"Possessive 's","rule_summary":"Add 's to a person's name or singular noun to show possession or a relationship.","explanation":{"fa":"برای نشان دادن تعلق یا رابطه می‌توان بعد از نام شخص 's آورد؛ مثل Omar's wife."},"examples":[{"en":"Ali's brother","fa":"برادر علی"},{"en":"Maya's mother","fa":"مادر مایا"}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_family_photo","data":{"lesson_key":"a1-family-01","title":"A family photo","setting":"living room","cefr":"A1","topic":"family","characters":["Nora","David"],"turns":[{"order":1,"speaker":"David","text":"Who's this?","translation_fa":"این کیه؟"},{"order":2,"speaker":"Nora","text":"This is my mother.","translation_fa":"این مادرمه."},{"order":3,"speaker":"David","text":"And this?","translation_fa":"و این؟"},{"order":4,"speaker":"Nora","text":"That's my brother, Sam.","translation_fa":"اون برادرم، سم، است."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_family_visit","data":{"lesson_key":"a1-family-02","title":"Meeting the family","setting":"family visit","cefr":"A1","topic":"family","characters":["Roya","Ben"],"turns":[{"order":1,"speaker":"Roya","text":"Ben, this is my husband, Amir.","translation_fa":"بن، این شوهرم امیر است."},{"order":2,"speaker":"Ben","text":"Nice to meet you both.","translation_fa":"از آشنایی با هر دوتان خوشحالم."},{"order":3,"speaker":"Roya","text":"Our children are in the garden.","translation_fa":"بچه‌هایمان در باغ هستند."},{"order":4,"speaker":"Ben","text":"You have a lovely family.","translation_fa":"خانواده دوست‌داشتنی‌ای دارید."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_family_mother","data":{"lesson_key":"a1-family-01","exercise_type":"multiple_choice","prompt":{"fa":"mother یعنی چه؟"},"options":["مادر","پدر","خواهر","همسر"],"answer":{"value":"مادر"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_family_build","data":{"lesson_key":"a1-family-01","exercise_type":"sentence_building","prompt":{"fa":"«این خواهر من است.» را بساز.","tokens":["sister","is","my","This"]},"answer":{"tokens":["This","is","my","sister"],"text":"This is my sister."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_family_children","data":{"lesson_key":"a1-family-02","exercise_type":"multiple_choice","prompt":{"fa":"جمع نامنظم child کدام است؟"},"options":["children","childs","childes","childrens"],"answer":{"value":"children"},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_family_possessive","data":{"lesson_key":"a1-family-02","exercise_type":"fill_blank","prompt":{"text":"Sara is Ali___ sister."},"options":["'s","s","is","of"],"answer":{"value":"'s"},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_family_listen","data":{"lesson_key":"a1-family-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و شخص را انتخاب کن.","audio_text":"This is my father."},"options":["پدر","مادر","برادر","شوهر"],"answer":{"value":"پدر"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_family_speak","data":{"lesson_key":"a1-family-01","exercise_type":"speaking","prompt":{"instruction_fa":"بگو: این مادر من است."},"answer":{"expected_text":"This is my mother."},"difficulty":1,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_family_mother",
+      "data": {
+        "slug": "family_mother",
+        "lesson_key": "a1-family-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "mother"
+        },
+        "translations": {
+          "fa": "مادر"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_family_mother",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lemma": "mother",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "family_mother"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_family_mother",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lexeme_ref": "lx_family_mother",
+        "surface_form": "mother",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_father",
+      "data": {
+        "slug": "family_father",
+        "lesson_key": "a1-family-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "father"
+        },
+        "translations": {
+          "fa": "پدر"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_family_father",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lemma": "father",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "family_father"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_family_father",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lexeme_ref": "lx_family_father",
+        "surface_form": "father",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_parents",
+      "data": {
+        "slug": "family_parents",
+        "lesson_key": "a1-family-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "parents"
+        },
+        "translations": {
+          "fa": "والدین"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_family_parent",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lemma": "parent",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "family_parents"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_family_parents",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lexeme_ref": "lx_family_parent",
+        "surface_form": "parents",
+        "grammatical_features": {
+          "number": "plural"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_sister",
+      "data": {
+        "slug": "family_sister",
+        "lesson_key": "a1-family-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "sister"
+        },
+        "translations": {
+          "fa": "خواهر"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_family_sister",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lemma": "sister",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "family_sister"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_family_sister",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lexeme_ref": "lx_family_sister",
+        "surface_form": "sister",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_brother",
+      "data": {
+        "slug": "family_brother",
+        "lesson_key": "a1-family-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "brother"
+        },
+        "translations": {
+          "fa": "برادر"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_family_brother",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lemma": "brother",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "family_brother"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_family_brother",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "lexeme_ref": "lx_family_brother",
+        "surface_form": "brother",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_husband",
+      "data": {
+        "slug": "family_husband",
+        "lesson_key": "a1-family-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "husband"
+        },
+        "translations": {
+          "fa": "شوهر"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_family_husband",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "lemma": "husband",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "family_husband"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_family_husband",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "lexeme_ref": "lx_family_husband",
+        "surface_form": "husband",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_wife",
+      "data": {
+        "slug": "family_wife",
+        "lesson_key": "a1-family-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "wife"
+        },
+        "translations": {
+          "fa": "همسر / زن"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_family_wife",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "lemma": "wife",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "family_wife"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_family_wife",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "lexeme_ref": "lx_family_wife",
+        "surface_form": "wife",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_children",
+      "data": {
+        "slug": "family_children",
+        "lesson_key": "a1-family-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "children"
+        },
+        "translations": {
+          "fa": "بچه‌ها / فرزندان"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_family_child",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "lemma": "child",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "family_children"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_family_children",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "lexeme_ref": "lx_family_child",
+        "surface_form": "children",
+        "grammatical_features": {
+          "number": "plural",
+          "irregular": true
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_this_my",
+      "data": {
+        "slug": "family_this_is_my",
+        "lesson_key": "a1-family-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "This is my …"
+        },
+        "translations": {
+          "fa": "این ... من است."
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_family_whose",
+      "data": {
+        "slug": "family_whose",
+        "lesson_key": "a1-family-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Whose … is this?"
+        },
+        "translations": {
+          "fa": "این ... مال کیست؟"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_family_mother",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "text": {
+          "en": "This is my mother."
+        },
+        "translations": {
+          "fa": "این مادر من است."
+        },
+        "intent": "identify_family",
+        "concept_refs": [
+          "family_this_is_my",
+          "family_mother"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_family_sister",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "text": {
+          "en": "Her name is Sara. She's my sister."
+        },
+        "translations": {
+          "fa": "اسمش سارا است. او خواهر من است."
+        },
+        "intent": "identify_family",
+        "concept_refs": [
+          "family_sister"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_family_parents",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "text": {
+          "en": "These are my parents."
+        },
+        "translations": {
+          "fa": "این‌ها والدین من هستند."
+        },
+        "intent": "identify_family_plural",
+        "concept_refs": [
+          "family_parents"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_family_wife",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "text": {
+          "en": "Lina is Omar's wife."
+        },
+        "translations": {
+          "fa": "لینا همسر عمر است."
+        },
+        "intent": "state_relationship",
+        "concept_refs": [
+          "family_wife"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_family_children",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "text": {
+          "en": "They have two children."
+        },
+        "translations": {
+          "fa": "آن‌ها دو فرزند دارند."
+        },
+        "intent": "state_family_fact",
+        "concept_refs": [
+          "family_children"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_family_possessive_adjectives",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "slug": "a1-family-possessive-adjectives",
+        "title": "my, your, his, her",
+        "rule_summary": "Use possessive adjectives before a noun to show who it belongs or relates to.",
+        "explanation": {
+          "fa": "برای نشان دادن تعلق یا رابطه قبل از اسم از my, your, his, her استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "my sister",
+            "fa": "خواهر من"
+          },
+          {
+            "en": "her father",
+            "fa": "پدر او"
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_family_apostrophe_s",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "slug": "a1-possessive-apostrophe-s",
+        "title": "Possessive 's",
+        "rule_summary": "Add 's to a person's name or singular noun to show possession or a relationship.",
+        "explanation": {
+          "fa": "برای نشان دادن تعلق یا رابطه می‌توان بعد از نام شخص 's آورد؛ مثل Omar's wife."
+        },
+        "examples": [
+          {
+            "en": "Ali's brother",
+            "fa": "برادر علی"
+          },
+          {
+            "en": "Maya's mother",
+            "fa": "مادر مایا"
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_family_photo",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "title": "A family photo",
+        "setting": "living room",
+        "cefr": "A1",
+        "topic": "family",
+        "characters": [
+          "Nora",
+          "David"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "David",
+            "text": "Who's this?",
+            "translation_fa": "این کیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Nora",
+            "text": "This is my mother.",
+            "translation_fa": "این مادرمه."
+          },
+          {
+            "order": 3,
+            "speaker": "David",
+            "text": "And this?",
+            "translation_fa": "و این؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Nora",
+            "text": "That's my brother, Sam.",
+            "translation_fa": "اون برادرم، سم، است."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_family_visit",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "title": "Meeting the family",
+        "setting": "family visit",
+        "cefr": "A1",
+        "topic": "family",
+        "characters": [
+          "Roya",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Roya",
+            "text": "Ben, this is my husband, Amir.",
+            "translation_fa": "بن، این شوهرم امیر است."
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "Nice to meet you both.",
+            "translation_fa": "از آشنایی با هر دوتان خوشحالم."
+          },
+          {
+            "order": 3,
+            "speaker": "Roya",
+            "text": "Our children are in the garden.",
+            "translation_fa": "بچه‌هایمان در باغ هستند."
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "You have a lovely family.",
+            "translation_fa": "خانواده دوست‌داشتنی‌ای دارید."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_family_mother",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "mother یعنی چه؟"
+        },
+        "options": [
+          "مادر",
+          "پدر",
+          "خواهر",
+          "همسر"
+        ],
+        "answer": {
+          "value": "مادر"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: مادر\nنکتهٔ واژگانی: «mother»: «مادر»",
+          "model_answer": "mother",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_family_build",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«این خواهر من است.» را بساز.",
+          "tokens": [
+            "sister",
+            "is",
+            "my",
+            "This"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "This",
+            "is",
+            "my",
+            "sister"
+          ],
+          "text": "This is my sister."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: «این خواهر من است.» را بساز.\nنکتهٔ واژگانی: «this is my»: «این ... من است.»؛ «sister»: «خواهر»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "This is my sister.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_family_children",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "جمع نامنظم child کدام است؟"
+        },
+        "options": [
+          "children",
+          "childs",
+          "childes",
+          "childrens"
+        ],
+        "answer": {
+          "value": "children"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: بچه‌ها / فرزندان\nنکتهٔ واژگانی: «children»: «بچه‌ها / فرزندان»",
+          "model_answer": "children",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_family_possessive",
+      "data": {
+        "lesson_key": "a1-family-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Sara is Ali___ sister."
+        },
+        "options": [
+          "'s",
+          "s",
+          "is",
+          "of"
+        ],
+        "answer": {
+          "value": "'s"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "پسوند ’s بعد از نام، رابطهٔ مالکیت یا نسبت را نشان می‌دهد؛ Ali’s sister یعنی خواهر علی.",
+          "model_answer": "Sara is Ali's sister.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_family_listen",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و شخص را انتخاب کن.",
+          "audio_text": "This is my father."
+        },
+        "options": [
+          "پدر",
+          "مادر",
+          "برادر",
+          "شوهر"
+        ],
+        "answer": {
+          "value": "پدر"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: پدر\nنکتهٔ واژگانی: «this is my»: «این ... من است.»؛ «father»: «پدر»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "This is my father.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "This is my father."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_family_speak",
+      "data": {
+        "lesson_key": "a1-family-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "بگو: این مادر من است."
+        },
+        "answer": {
+          "expected_text": "This is my mother."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: این مادرمه.\nنکتهٔ واژگانی: «this is my»: «این ... من است.»؛ «mother»: «مادر»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "This is my mother.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

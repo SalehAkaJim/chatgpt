@@ -782,7 +782,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "could در این جمله یک پیشنهاد یا امکان را بیان می‌کند؛ بعد از آن شکل پایهٔ فعل می‌آید.",
+          "model_answer": "If the museum is closed, we could go to the market instead.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
       }
     },
     {
@@ -806,7 +811,13 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: رزرو دارم، ولی باید زمان تحویل اتاق رو عوض کنم.\nنکتهٔ واژگانی: «reservation»: «رزرو»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I have a reservation, but I need to change the check-in time.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I have a reservation, but I need to change the check-in time."
+        }
       }
     },
     {
@@ -823,7 +834,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: اتوبوس ارزون‌تره، ولی مترو سریع‌تره.\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "The bus is cheaper, but the subway is faster.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -862,7 +878,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خط سبز رو بگیر و در ایستگاه مرکزی خط عوض کن.\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Take the green line and transfer at Central Station.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -886,7 +907,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: برای مایا پیام می‌فرستم و می‌گم دیر می‌رسیم.\nنکتهٔ واژگانی: «message»: «پیام»",
+          "model_answer": "I'll send Maya a message and tell her we're running late.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -910,7 +936,13 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: قبلاً هیچ‌وقت این شهر رو ندیده بودم، ولی تا اینجا دارم لذت می‌برم.\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I've never visited this city before, but I'm enjoying it so far.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I've never visited this city before, but I'm enjoying it so far."
+        }
       }
     },
     {
@@ -933,7 +965,12 @@
         },
         "difficulty": 3,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: رفتن به بازار",
+          "model_answer": "رفتن به بازار",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -949,6 +986,137 @@
           "expected_text": "If the museum is closed, we could go to the market."
         },
         "difficulty": 3,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "مدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "If the museum is closed, we could go to the market.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_capstone_listen",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "قرار ملاقات کجا و چه ساعتی است؟",
+          "audio_text": "We're going to meet at the museum at four."
+        },
+        "answer": {
+          "value": "موزه؛ ساعت چهار"
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "at the museum مکان و at four زمان ملاقات را مشخص می‌کند.",
+          "model_answer": "موزه؛ ساعت چهار",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن.",
+          "transcript_en": "We're going to meet at the museum at four."
+        },
+        "options": [
+          "موزه؛ ساعت چهار",
+          "بازار؛ ساعت چهار",
+          "موزه؛ ساعت پنج",
+          "هتل؛ ساعت پنج"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_capstone_build",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "بگو: برای مایا پیام می‌فرستم.",
+          "tokens": [
+            "I'll",
+            "send",
+            "Maya",
+            "a",
+            "message."
+          ]
+        },
+        "answer": {
+          "text": "I'll send Maya a message.",
+          "tokens": [
+            "I'll",
+            "send",
+            "Maya",
+            "a",
+            "message."
+          ]
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "پس از I’ll فعل پایه می‌آید؛ send Maya a message یعنی برای مایا پیام فرستادن.",
+          "model_answer": "I'll send Maya a message.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_capstone_message",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "قطارت تأخیر دارد و به قرار دیر می‌رسی. کدام پیام وضعیت را درست منتقل می‌کند؟"
+        },
+        "answer": {
+          "value": "My train is delayed, so I'll be late."
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "is delayed یعنی تأخیر دارد؛ so ارتباط تأخیر قطار و دیر رسیدن را روشن می‌کند.",
+          "model_answer": "My train is delayed, so I'll be late.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "My train is delayed, so I'll be late.",
+          "I'm already at the museum.",
+          "The meeting finished yesterday.",
+          "I'll arrive earlier than planned."
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_capstone_review",
+      "data": {
+        "lesson_key": "a2-integrated-capstone-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "مرور سفر و زمان: قرار ساعت چهار است، اما اتوبوس ساعت 4:15 می‌رسد. پیام مناسب چیست؟"
+        },
+        "answer": {
+          "value": "I'll be about fifteen minutes late."
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "4:15 پانزده دقیقه بعد از ساعت چهار است؛ late یعنی دیر.",
+          "model_answer": "I'll be about fifteen minutes late.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "I'll be about fifteen minutes late.",
+          "I'll be an hour early.",
+          "I'll arrive at three.",
+          "I'm there now."
+        ],
+        "review_of": [
+          "a2-travel-problems",
+          "a2-tickets-timetables"
+        ],
         "cefr": "A2",
         "status": "approved"
       }

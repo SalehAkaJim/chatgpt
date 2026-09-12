@@ -9,59 +9,917 @@
   "curriculum_unit": "a2-family-relationships",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_a2_relative","data":{"slug":"a2_relative","lesson_key":"a2-family-relationships-01","concept_type":"lexical","forms":{"en":"relative"},"translations":{"fa":"فامیل / خویشاوند"},"cefr":"A2","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_relative","data":{"lesson_key":"a2-family-relationships-01","lemma":"relative","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["a2_relative"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_relative","data":{"lesson_key":"a2-family-relationships-01","lexeme_ref":"lx_a2_relative","surface_form":"relative","grammatical_features":{"number":"singular"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_only_child","data":{"slug":"a2_only_child","lesson_key":"a2-family-relationships-01","concept_type":"lexical","forms":{"en":"only child"},"translations":{"fa":"تک‌فرزند"},"cefr":"A2","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_only_child","data":{"lesson_key":"a2-family-relationships-01","lemma":"only child","language":"en","language_variant":"en-US","part_of_speech":"noun_phrase","concept_refs":["a2_only_child"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_only_child","data":{"lesson_key":"a2-family-relationships-01","lexeme_ref":"lx_a2_only_child","surface_form":"only child","grammatical_features":{"number":"singular"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_married","data":{"slug":"a2_married","lesson_key":"a2-family-relationships-01","concept_type":"lexical","forms":{"en":"married"},"translations":{"fa":"متأهل / ازدواج‌کرده"},"cefr":"A2","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_married","data":{"lesson_key":"a2-family-relationships-01","lemma":"married","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["a2_married"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_married","data":{"lesson_key":"a2-family-relationships-01","lexeme_ref":"lx_a2_married","surface_form":"married","grammatical_features":{"degree":"positive"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_get_along","data":{"slug":"a2_get_along","lesson_key":"a2-family-relationships-02","concept_type":"lexical","forms":{"en":"get along"},"translations":{"fa":"با هم خوب کنار آمدن"},"cefr":"A2","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_get_along","data":{"lesson_key":"a2-family-relationships-02","lemma":"get along","language":"en","language_variant":"en-US","part_of_speech":"phrasal_verb","concept_refs":["a2_get_along"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_get_along","data":{"lesson_key":"a2-family-relationships-02","lexeme_ref":"lx_a2_get_along","surface_form":"get along","grammatical_features":{"form":"base"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_both","data":{"slug":"a2_both","lesson_key":"a2-family-relationships-02","concept_type":"lexical","forms":{"en":"both"},"translations":{"fa":"هر دو"},"cefr":"A2","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_both","data":{"lesson_key":"a2-family-relationships-02","lemma":"both","language":"en","language_variant":"en-US","part_of_speech":"determiner","concept_refs":["a2_both"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_both","data":{"lesson_key":"a2-family-relationships-02","lexeme_ref":"lx_a2_both","surface_form":"both","grammatical_features":{"type":"quantifier"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_close_relationship","data":{"slug":"a2_close_relationship","lesson_key":"a2-family-relationships-02","concept_type":"lexical","forms":{"en":"close"},"translations":{"fa":"صمیمی / نزدیک"},"cefr":"A2","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_close_relationship","data":{"lesson_key":"a2-family-relationships-02","lemma":"close","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["a2_close_relationship"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_close_relationship","data":{"lesson_key":"a2-family-relationships-02","lexeme_ref":"lx_a2_close_relationship","surface_form":"close","grammatical_features":{"degree":"positive","sense":"relationship"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_similar","data":{"slug":"a2_similar","lesson_key":"a2-family-relationships-02","concept_type":"lexical","forms":{"en":"similar"},"translations":{"fa":"شبیه"},"cefr":"A2","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_similar","data":{"lesson_key":"a2-family-relationships-02","lemma":"similar","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["a2_similar"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_similar","data":{"lesson_key":"a2-family-relationships-02","lexeme_ref":"lx_a2_similar","surface_form":"similar","grammatical_features":{"degree":"positive"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_different","data":{"slug":"a2_different","lesson_key":"a2-family-relationships-02","concept_type":"lexical","forms":{"en":"different"},"translations":{"fa":"متفاوت"},"cefr":"A2","topic":"family","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_different","data":{"lesson_key":"a2-family-relationships-02","lemma":"different","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["a2_different"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_different","data":{"lesson_key":"a2-family-relationships-02","lexeme_ref":"lx_a2_different","surface_form":"different","grammatical_features":{"degree":"positive"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_a2_only_child","data":{"lesson_key":"a2-family-relationships-01","text":{"en":"I'm an only child."},"translations":{"fa":"من تک‌فرزندم."},"intent":"describe_family_structure","concept_refs":["a2_only_child"],"cefr":"A2","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_married_sister","data":{"lesson_key":"a2-family-relationships-01","text":{"en":"My older sister is married and has two children."},"translations":{"fa":"خواهر بزرگ‌ترم متأهل است و دو بچه دارد."},"intent":"describe_relative","concept_refs":["a2_married"],"cefr":"A2","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_relatives_nearby","data":{"lesson_key":"a2-family-relationships-01","text":{"en":"Most of my relatives live nearby."},"translations":{"fa":"بیشتر فامیل‌های من نزدیک اینجا زندگی می‌کنند."},"intent":"describe_extended_family","concept_refs":["a2_relative"],"cefr":"A2","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_get_along","data":{"lesson_key":"a2-family-relationships-02","text":{"en":"My brother and I get along really well."},"translations":{"fa":"من و برادرم خیلی خوب با هم کنار می‌آییم."},"intent":"describe_relationship","concept_refs":["a2_get_along"],"cefr":"A2","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_both_quiet","data":{"lesson_key":"a2-family-relationships-02","text":{"en":"We're both quiet, but he's more patient than I am."},"translations":{"fa":"هر دومان آرامیم، ولی او از من صبورتر است."},"intent":"compare_family_members","concept_refs":["a2_both","a2_similar"],"cefr":"A2","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_close_cousin","data":{"lesson_key":"a2-family-relationships-02","text":{"en":"I'm very close to one of my cousins."},"translations":{"fa":"من با یکی از پسرعموها یا دخترعموهایم خیلی صمیمی هستم."},"intent":"describe_close_relationship","concept_refs":["a2_close_relationship"],"cefr":"A2","topic":"family","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_different_people","data":{"lesson_key":"a2-family-relationships-02","text":{"en":"My sister and I are very different people."},"translations":{"fa":"من و خواهرم آدم‌های خیلی متفاوتی هستیم."},"intent":"contrast_family_members","concept_refs":["a2_different"],"cefr":"A2","topic":"family","register":"neutral","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_a2_both_family","data":{"lesson_key":"a2-family-relationships-01","slug":"a2-both-family","title":"both for two people or things","rule_summary":"Use both when the same statement is true for two people or things.","explanation":{"fa":"وقتی یک ویژگی یا وضعیت درباره هر دو نفر یا چیز درست است از both استفاده می‌کنیم."},"examples":[{"en":"We both work from home.","fa":"هر دوی ما از خانه کار می‌کنیم."},{"en":"Both of my parents are teachers.","fa":"هر دوی والدینم معلم هستند."}],"cefr":"A2","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_a2_family_comparison","data":{"lesson_key":"a2-family-relationships-02","slug":"a2-family-comparisons","title":"Simple family comparisons","rule_summary":"Use comparative adjectives with than to compare two people or things.","explanation":{"fa":"برای مقایسه دو نفر یا چیز از صفت تفضیلی و than استفاده می‌کنیم."},"examples":[{"en":"My brother is taller than me.","fa":"برادرم از من قدبلندتر است."},{"en":"She's more patient than I am.","fa":"او از من صبورتر است."}],"cefr":"A2","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_a2_family_photo","data":{"lesson_key":"a2-family-relationships-01","title":"Looking at a family photo","setting":"home","cefr":"A2","topic":"family","characters":["Sofia","Omar"],"turns":[{"order":1,"speaker":"Omar","text":"Is that your sister?","translation_fa":"اون خواهرت هست؟"},{"order":2,"speaker":"Sofia","text":"Yes. She's three years older than me.","translation_fa":"بله. سه سال از من بزرگ‌تره."},{"order":3,"speaker":"Omar","text":"Do you have any other brothers or sisters?","translation_fa":"برادر یا خواهر دیگه‌ای هم داری؟"},{"order":4,"speaker":"Sofia","text":"No, just one sister. She's married and has a little boy.","translation_fa":"نه، فقط یک خواهر دارم. متأهله و یک پسر کوچیک داره."},{"order":5,"speaker":"Omar","text":"You look a little similar.","translation_fa":"یک کم شبیه هم هستین."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_a2_family_relationship","data":{"lesson_key":"a2-family-relationships-02","title":"Talking about siblings","setting":"park","cefr":"A2","topic":"family","characters":["Lina","Ben"],"turns":[{"order":1,"speaker":"Lina","text":"Are you close to your brother?","translation_fa":"با برادرت صمیمی هستی؟"},{"order":2,"speaker":"Ben","text":"Yeah, we get along really well.","translation_fa":"آره، خیلی خوب با هم کنار می‌آییم."},{"order":3,"speaker":"Lina","text":"Are you similar?","translation_fa":"شبیه هم هستین؟"},{"order":4,"speaker":"Ben","text":"Not really. He's more outgoing, and I'm quieter.","translation_fa":"نه خیلی. او اجتماعی‌تره و من ساکت‌ترم."},{"order":5,"speaker":"Lina","text":"That sounds like me and my sister.","translation_fa":"شبیه من و خواهرمه."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_a2_family_relative","data":{"lesson_key":"a2-family-relationships-01","exercise_type":"multiple_choice","prompt":{"fa":"relative یعنی چه؟"},"options":["خویشاوند","همکار","همسایه","مشتری"],"answer":{"value":"خویشاوند"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_family_only","data":{"lesson_key":"a2-family-relationships-01","exercise_type":"fill_blank","prompt":{"text":"I don't have any brothers or sisters. I'm an ___ child."},"options":["only","same","close","both"],"answer":{"value":"only"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_family_build","data":{"lesson_key":"a2-family-relationships-01","exercise_type":"sentence_building","prompt":{"fa":"«هر دوی والدینم معلم هستند.» را بساز.","tokens":["teachers","parents","Both","my","are","of"]},"answer":{"tokens":["Both","of","my","parents","are","teachers"],"text":"Both of my parents are teachers."},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_family_listen","data":{"lesson_key":"a2-family-relationships-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و انتخاب کن درباره چه کسی صحبت می‌شود.","audio_text":"My older sister is married and has two children."},"options":["خواهر بزرگ‌تر","برادر کوچک‌تر","هم‌خانه","دخترعمو"],"answer":{"value":"خواهر بزرگ‌تر"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_family_getalong","data":{"lesson_key":"a2-family-relationships-02","exercise_type":"multiple_choice","prompt":{"fa":"get along well یعنی چه؟"},"options":["با هم خوب کنار آمدن","از هم دور زندگی کردن","شبیه هم بودن","با هم کار کردن"],"answer":{"value":"با هم خوب کنار آمدن"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_family_compare","data":{"lesson_key":"a2-family-relationships-02","exercise_type":"fill_blank","prompt":{"text":"My sister is more outgoing ___ I am."},"options":["than","then","as","from"],"answer":{"value":"than"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_family_speak","data":{"lesson_key":"a2-family-relationships-02","exercise_type":"speaking","prompt":{"instruction_fa":"این جمله را بگو.","value":"My brother and I get along really well."},"answer":{"expected_text":"My brother and I get along really well."},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_family_listen2","data":{"lesson_key":"a2-family-relationships-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و رابطه را انتخاب کن.","audio_text":"I'm very close to one of my cousins."},"options":["با یکی از فامیل‌ها خیلی صمیمی است","از خانواده‌اش دور است","تک‌فرزند است","تازه ازدواج کرده"],"answer":{"value":"با یکی از فامیل‌ها خیلی صمیمی است"},"difficulty":2,"cefr":"A2","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_a2_relative",
+      "data": {
+        "slug": "a2_relative",
+        "lesson_key": "a2-family-relationships-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "relative"
+        },
+        "translations": {
+          "fa": "فامیل / خویشاوند"
+        },
+        "cefr": "A2",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_relative",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "lemma": "relative",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_relative"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_relative",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "lexeme_ref": "lx_a2_relative",
+        "surface_form": "relative",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_only_child",
+      "data": {
+        "slug": "a2_only_child",
+        "lesson_key": "a2-family-relationships-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "only child"
+        },
+        "translations": {
+          "fa": "تک‌فرزند"
+        },
+        "cefr": "A2",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_only_child",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "lemma": "only child",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun_phrase",
+        "concept_refs": [
+          "a2_only_child"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_only_child",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "lexeme_ref": "lx_a2_only_child",
+        "surface_form": "only child",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_married",
+      "data": {
+        "slug": "a2_married",
+        "lesson_key": "a2-family-relationships-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "married"
+        },
+        "translations": {
+          "fa": "متأهل / ازدواج‌کرده"
+        },
+        "cefr": "A2",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_married",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "lemma": "married",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_married"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_married",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "lexeme_ref": "lx_a2_married",
+        "surface_form": "married",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_get_along",
+      "data": {
+        "slug": "a2_get_along",
+        "lesson_key": "a2-family-relationships-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "get along"
+        },
+        "translations": {
+          "fa": "با هم خوب کنار آمدن"
+        },
+        "cefr": "A2",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_get_along",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lemma": "get along",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "phrasal_verb",
+        "concept_refs": [
+          "a2_get_along"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_get_along",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lexeme_ref": "lx_a2_get_along",
+        "surface_form": "get along",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_both",
+      "data": {
+        "slug": "a2_both",
+        "lesson_key": "a2-family-relationships-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "both"
+        },
+        "translations": {
+          "fa": "هر دو"
+        },
+        "cefr": "A2",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_both",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lemma": "both",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "determiner",
+        "concept_refs": [
+          "a2_both"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_both",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lexeme_ref": "lx_a2_both",
+        "surface_form": "both",
+        "grammatical_features": {
+          "type": "quantifier"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_close_relationship",
+      "data": {
+        "slug": "a2_close_relationship",
+        "lesson_key": "a2-family-relationships-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "close"
+        },
+        "translations": {
+          "fa": "صمیمی / نزدیک"
+        },
+        "cefr": "A2",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_close_relationship",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lemma": "close",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_close_relationship"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_close_relationship",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lexeme_ref": "lx_a2_close_relationship",
+        "surface_form": "close",
+        "grammatical_features": {
+          "degree": "positive",
+          "sense": "relationship"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_similar",
+      "data": {
+        "slug": "a2_similar",
+        "lesson_key": "a2-family-relationships-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "similar"
+        },
+        "translations": {
+          "fa": "شبیه"
+        },
+        "cefr": "A2",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_similar",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lemma": "similar",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_similar"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_similar",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lexeme_ref": "lx_a2_similar",
+        "surface_form": "similar",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_different",
+      "data": {
+        "slug": "a2_different",
+        "lesson_key": "a2-family-relationships-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "different"
+        },
+        "translations": {
+          "fa": "متفاوت"
+        },
+        "cefr": "A2",
+        "topic": "family",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_different",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lemma": "different",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_different"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_different",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "lexeme_ref": "lx_a2_different",
+        "surface_form": "different",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_only_child",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "text": {
+          "en": "I'm an only child."
+        },
+        "translations": {
+          "fa": "من تک‌فرزندم."
+        },
+        "intent": "describe_family_structure",
+        "concept_refs": [
+          "a2_only_child"
+        ],
+        "cefr": "A2",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_married_sister",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "text": {
+          "en": "My older sister is married and has two children."
+        },
+        "translations": {
+          "fa": "خواهر بزرگ‌ترم متأهل است و دو بچه دارد."
+        },
+        "intent": "describe_relative",
+        "concept_refs": [
+          "a2_married"
+        ],
+        "cefr": "A2",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_relatives_nearby",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "text": {
+          "en": "Most of my relatives live nearby."
+        },
+        "translations": {
+          "fa": "بیشتر فامیل‌های من نزدیک اینجا زندگی می‌کنند."
+        },
+        "intent": "describe_extended_family",
+        "concept_refs": [
+          "a2_relative"
+        ],
+        "cefr": "A2",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_get_along",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "text": {
+          "en": "My brother and I get along really well."
+        },
+        "translations": {
+          "fa": "من و برادرم خیلی خوب با هم کنار می‌آییم."
+        },
+        "intent": "describe_relationship",
+        "concept_refs": [
+          "a2_get_along"
+        ],
+        "cefr": "A2",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_both_quiet",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "text": {
+          "en": "We're both quiet, but he's more patient than I am."
+        },
+        "translations": {
+          "fa": "هر دومان آرامیم، ولی او از من صبورتر است."
+        },
+        "intent": "compare_family_members",
+        "concept_refs": [
+          "a2_both",
+          "a2_similar"
+        ],
+        "cefr": "A2",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_close_cousin",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "text": {
+          "en": "I'm very close to one of my cousins."
+        },
+        "translations": {
+          "fa": "من با یکی از پسرعموها یا دخترعموهایم خیلی صمیمی هستم."
+        },
+        "intent": "describe_close_relationship",
+        "concept_refs": [
+          "a2_close_relationship"
+        ],
+        "cefr": "A2",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_different_people",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "text": {
+          "en": "My sister and I are very different people."
+        },
+        "translations": {
+          "fa": "من و خواهرم آدم‌های خیلی متفاوتی هستیم."
+        },
+        "intent": "contrast_family_members",
+        "concept_refs": [
+          "a2_different"
+        ],
+        "cefr": "A2",
+        "topic": "family",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_both_family",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "slug": "a2-both-family",
+        "title": "both for two people or things",
+        "rule_summary": "Use both when the same statement is true for two people or things.",
+        "explanation": {
+          "fa": "وقتی یک ویژگی یا وضعیت درباره هر دو نفر یا چیز درست است از both استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "We both work from home.",
+            "fa": "هر دوی ما از خانه کار می‌کنیم."
+          },
+          {
+            "en": "Both of my parents are teachers.",
+            "fa": "هر دوی والدینم معلم هستند."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_family_comparison",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "slug": "a2-family-comparisons",
+        "title": "Simple family comparisons",
+        "rule_summary": "Use comparative adjectives with than to compare two people or things.",
+        "explanation": {
+          "fa": "برای مقایسه دو نفر یا چیز از صفت تفضیلی و than استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "My brother is taller than me.",
+            "fa": "برادرم از من قدبلندتر است."
+          },
+          {
+            "en": "She's more patient than I am.",
+            "fa": "او از من صبورتر است."
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_family_photo",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "title": "Looking at a family photo",
+        "setting": "home",
+        "cefr": "A2",
+        "topic": "family",
+        "characters": [
+          "Sofia",
+          "Omar"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Omar",
+            "text": "Is that your sister?",
+            "translation_fa": "اون خواهرت هست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Sofia",
+            "text": "Yes. She's three years older than me.",
+            "translation_fa": "بله. سه سال از من بزرگ‌تره."
+          },
+          {
+            "order": 3,
+            "speaker": "Omar",
+            "text": "Do you have any other brothers or sisters?",
+            "translation_fa": "برادر یا خواهر دیگه‌ای هم داری؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Sofia",
+            "text": "No, just one sister. She's married and has a little boy.",
+            "translation_fa": "نه، فقط یک خواهر دارم. متأهله و یک پسر کوچیک داره."
+          },
+          {
+            "order": 5,
+            "speaker": "Omar",
+            "text": "You look a little similar.",
+            "translation_fa": "یک کم شبیه هم هستین."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_family_relationship",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "title": "Talking about siblings",
+        "setting": "park",
+        "cefr": "A2",
+        "topic": "family",
+        "characters": [
+          "Lina",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lina",
+            "text": "Are you close to your brother?",
+            "translation_fa": "با برادرت صمیمی هستی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "Yeah, we get along really well.",
+            "translation_fa": "آره، خیلی خوب با هم کنار می‌آییم."
+          },
+          {
+            "order": 3,
+            "speaker": "Lina",
+            "text": "Are you similar?",
+            "translation_fa": "شبیه هم هستین؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "Not really. He's more outgoing, and I'm quieter.",
+            "translation_fa": "نه خیلی. او اجتماعی‌تره و من ساکت‌ترم."
+          },
+          {
+            "order": 5,
+            "speaker": "Lina",
+            "text": "That sounds like me and my sister.",
+            "translation_fa": "شبیه من و خواهرمه."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_family_relative",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "relative یعنی چه؟"
+        },
+        "options": [
+          "خویشاوند",
+          "همکار",
+          "همسایه",
+          "مشتری"
+        ],
+        "answer": {
+          "value": "خویشاوند"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خویشاوند\nنکتهٔ واژگانی: «relative»: «فامیل / خویشاوند»",
+          "model_answer": "relative",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_family_only",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I don't have any brothers or sisters. I'm an ___ child."
+        },
+        "options": [
+          "only",
+          "same",
+          "close",
+          "both"
+        ],
+        "answer": {
+          "value": "only"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "an only child یعنی فرزند تنها؛ یعنی فرد خواهر یا برادری ندارد.",
+          "model_answer": "I don't have any brothers or sisters. I'm an only child.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_family_build",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«هر دوی والدینم معلم هستند.» را بساز.",
+          "tokens": [
+            "teachers",
+            "parents",
+            "Both",
+            "my",
+            "are",
+            "of"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Both",
+            "of",
+            "my",
+            "parents",
+            "are",
+            "teachers"
+          ],
+          "text": "Both of my parents are teachers."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: «هر دوی والدینم معلم هستند.» را بساز.\nنکتهٔ واژگانی: «both»: «هر دو»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Both of my parents are teachers.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_family_listen",
+      "data": {
+        "lesson_key": "a2-family-relationships-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و انتخاب کن درباره چه کسی صحبت می‌شود.",
+          "audio_text": "My older sister is married and has two children."
+        },
+        "options": [
+          "خواهر بزرگ‌تر",
+          "برادر کوچک‌تر",
+          "هم‌خانه",
+          "دخترعمو"
+        ],
+        "answer": {
+          "value": "خواهر بزرگ‌تر"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: خواهر بزرگ‌ترم متأهل است و دو بچه دارد.\nنکتهٔ واژگانی: «married»: «متأهل / ازدواج‌کرده»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "My older sister is married and has two children.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "My older sister is married and has two children."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_family_getalong",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "get along well یعنی چه؟"
+        },
+        "options": [
+          "با هم خوب کنار آمدن",
+          "از هم دور زندگی کردن",
+          "شبیه هم بودن",
+          "با هم کار کردن"
+        ],
+        "answer": {
+          "value": "با هم خوب کنار آمدن"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: با هم خوب کنار آمدن\nنکتهٔ واژگانی: «get along»: «با هم خوب کنار آمدن»",
+          "model_answer": "get along well",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_family_compare",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "My sister is more outgoing ___ I am."
+        },
+        "options": [
+          "than",
+          "then",
+          "as",
+          "from"
+        ],
+        "answer": {
+          "value": "than"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "than دو طرف مقایسه را به هم وصل می‌کند؛ more outgoing than یعنی معاشرتی‌تر از.",
+          "model_answer": "My sister is more outgoing than I am.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_family_speak",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را بگو.",
+          "value": "My brother and I get along really well."
+        },
+        "answer": {
+          "expected_text": "My brother and I get along really well."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من و برادرم خیلی خوب با هم کنار می‌آییم.\nنکتهٔ واژگانی: «get along»: «با هم خوب کنار آمدن»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "My brother and I get along really well.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_family_listen2",
+      "data": {
+        "lesson_key": "a2-family-relationships-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و رابطه را انتخاب کن.",
+          "audio_text": "I'm very close to one of my cousins."
+        },
+        "options": [
+          "با یکی از فامیل‌ها خیلی صمیمی است",
+          "از خانواده‌اش دور است",
+          "تک‌فرزند است",
+          "تازه ازدواج کرده"
+        ],
+        "answer": {
+          "value": "با یکی از فامیل‌ها خیلی صمیمی است"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من با یکی از پسرعموها یا دخترعموهایم خیلی صمیمی هستم.\nنکتهٔ واژگانی: «close»: «صمیمی / نزدیک»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I'm very close to one of my cousins.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I'm very close to one of my cousins."
+        }
+      }
+    }
   ]
 }

@@ -577,7 +577,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "برای برنامهٔ حرکت وسایل نقلیه می‌توان از حال ساده استفاده کرد؛ با the train از leaves استفاده می‌شود.",
+          "model_answer": "The train leaves at 10:25.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
       }
     },
     {
@@ -601,7 +606,13 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: حرکت بعدی ساعت ۱۰:۲۵ است.\nنکتهٔ واژگانی: «departure»: «حرکت / زمان حرکت»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "The next departure is at 10:25.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "The next departure is at 10:25."
+        }
       }
     },
     {
@@ -618,7 +629,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: چه ساعتی به بوستون می‌رسد؟\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "What time does it arrive in Boston?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -657,7 +673,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: یک بلیت رفت‌وبرگشت به نیویورک می‌خواهم، لطفاً.\nنکتهٔ واژگانی: «round trip»: «رفت‌وبرگشت»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "I'd like a round-trip ticket to New York, please.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -681,7 +702,12 @@
         },
         "difficulty": 2,
         "cefr": "A2",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: بلیت یک‌طرفه ارزان‌تر است؟\nنکتهٔ واژگانی: «one way ticket»: «بلیت یک‌طرفه»",
+          "model_answer": "Is a one-way ticket cheaper?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -704,6 +730,140 @@
           "value": "طبق برنامه، اتوبوس هر سی دقیقه حرکت می‌کند."
         },
         "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: طبق برنامه، اتوبوس هر سی دقیقه حرکت می‌کند.\nنکتهٔ واژگانی: «schedule»: «برنامه زمانی»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "According to the schedule, the bus leaves every thirty minutes.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "According to the schedule, the bus leaves every thirty minutes."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_timetable_read",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "برنامه: اتوبوس‌ها ساعت 10:00، 10:30 و 11:00 حرکت می‌کنند. فاصلهٔ حرکت‌ها چقدر است؟"
+        },
+        "answer": {
+          "value": "Every thirty minutes."
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "از 10:00 تا 10:30 سی دقیقه است؛ every thirty minutes یعنی هر سی دقیقه.",
+          "model_answer": "Every thirty minutes.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "Every thirty minutes.",
+          "Every ten minutes.",
+          "Every hour.",
+          "Every two hours."
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_timetable_listen",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "قطار بعدی چه ساعتی حرکت می‌کند؟",
+          "audio_text": "The next train leaves at ten fifteen."
+        },
+        "answer": {
+          "value": "10:15"
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "ten fifteen یعنی ده و پانزده دقیقه؛ آن را با ten fifty، ده و پنجاه دقیقه، مقایسه کن.",
+          "model_answer": "10:15",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن.",
+          "transcript_en": "The next train leaves at ten fifteen."
+        },
+        "options": [
+          "10:15",
+          "10:50",
+          "10:05",
+          "10:30"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_timetable_build",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "بگو: اتوبوس هر سی دقیقه حرکت می‌کند.",
+          "tokens": [
+            "The",
+            "bus",
+            "leaves",
+            "every",
+            "thirty",
+            "minutes."
+          ]
+        },
+        "answer": {
+          "text": "The bus leaves every thirty minutes.",
+          "tokens": [
+            "The",
+            "bus",
+            "leaves",
+            "every",
+            "thirty",
+            "minutes."
+          ]
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "برنامهٔ ثابت با حال ساده بیان می‌شود؛ every thirty minutes فاصلهٔ حرکت‌هاست.",
+          "model_answer": "The bus leaves every thirty minutes.",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_fix_timetable_review",
+      "data": {
+        "lesson_key": "a2-tickets-timetables-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "مرور برنامه‌ریزی: اکنون ساعت 10:20 است. حرکت‌ها 10:00، 10:30 و 11:00 هستند. نزدیک‌ترین حرکت آینده کدام است؟"
+        },
+        "answer": {
+          "value": "10:30"
+        },
+        "difficulty": 2,
+        "feedback": {
+          "explanation_fa": "10:00 گذشته است؛ 10:30 نزدیک‌ترین ساعت بعد از 10:20 است.",
+          "model_answer": "10:30",
+          "retry_tip_fa": "با توجه به نکتهٔ بالا، یک بار دیگر بدون دیدن پاسخ تمرین کن."
+        },
+        "options": [
+          "10:30",
+          "10:00",
+          "11:00",
+          "هیچ‌کدام"
+        ],
+        "review_of": [
+          "a1-time",
+          "a2-future-arrangements"
+        ],
         "cefr": "A2",
         "status": "approved"
       }

@@ -9,28 +9,446 @@
   "curriculum_unit": "a1-restaurant",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_cafe_menu","data":{"slug":"cafe_menu","lesson_key":"a1-restaurant-01","concept_type":"lexical","forms":{"en":"menu"},"translations":{"fa":"منو"},"cefr":"A1","topic":"restaurants","status":"approved"}},
-    {"kind":"concept","external_id":"c_cafe_order","data":{"slug":"cafe_id_like","lesson_key":"a1-restaurant-01","concept_type":"functional","forms":{"en":"I'd like …"},"translations":{"fa":"... می‌خواهم"},"cefr":"A1","topic":"restaurants","status":"approved"}},
-    {"kind":"concept","external_id":"c_cafe_anything_else","data":{"slug":"cafe_anything_else","lesson_key":"a1-restaurant-02","concept_type":"functional","forms":{"en":"Anything else?"},"translations":{"fa":"چیز دیگری؟"},"cefr":"A1","topic":"restaurants","status":"approved"}},
-    {"kind":"concept","external_id":"c_cafe_bill","data":{"slug":"cafe_bill","lesson_key":"a1-restaurant-02","concept_type":"lexical","forms":{"en":"check"},"translations":{"fa":"صورت‌حساب"},"cefr":"A1","topic":"restaurants","status":"approved"}},
-
-    {"kind":"lexeme","external_id":"lx_cafe_menu","data":{"lesson_key":"a1-restaurant-01","lemma":"menu","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["cafe_menu"],"cefr":"A1","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_cafe_check","data":{"lesson_key":"a1-restaurant-02","lemma":"check","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["cafe_bill"],"cefr":"A1","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_cafe_menu","data":{"lesson_key":"a1-restaurant-01","text":{"en":"Can I see the menu, please?"},"translations":{"fa":"می‌شود منو را ببینم، لطفاً؟"},"intent":"ask_for_menu","concept_refs":["cafe_menu"],"cefr":"A1","topic":"restaurants","status":"approved"}},
-    {"kind":"utterance","external_id":"u_cafe_coffee","data":{"lesson_key":"a1-restaurant-01","text":{"en":"I'd like a coffee, please."},"translations":{"fa":"یک قهوه می‌خواهم، لطفاً."},"intent":"order_item","concept_refs":["cafe_id_like"],"cefr":"A1","topic":"restaurants","status":"approved"}},
-    {"kind":"utterance","external_id":"u_cafe_else","data":{"lesson_key":"a1-restaurant-02","text":{"en":"Anything else?"},"translations":{"fa":"چیز دیگری؟"},"intent":"ask_additional_order","concept_refs":["cafe_anything_else"],"cefr":"A1","topic":"restaurants","status":"approved"}},
-    {"kind":"utterance","external_id":"u_cafe_check","data":{"lesson_key":"a1-restaurant-02","text":{"en":"Can I have the check, please?"},"translations":{"fa":"می‌شود صورت‌حساب را بیاورید، لطفاً؟"},"intent":"ask_for_bill","concept_refs":["cafe_bill"],"cefr":"A1","topic":"restaurants","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_cafe_id_like","data":{"lesson_key":"a1-restaurant-01","slug":"a1-id-like-orders","title":"I'd like … for simple orders","rule_summary":"Use I'd like + noun to make a polite simple order.","explanation":{"fa":"برای سفارش مودبانه و ساده می‌توانیم از I'd like + اسم استفاده کنیم."},"examples":[{"en":"I'd like a coffee, please.","fa":"یک قهوه می‌خواهم، لطفاً."},{"en":"I'd like a sandwich.","fa":"یک ساندویچ می‌خواهم."}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_cafe_order","data":{"lesson_key":"a1-restaurant-01","title":"Ordering at a café","setting":"café counter","cefr":"A1","topic":"restaurants","characters":["Emma","Ravi"],"turns":[{"order":1,"speaker":"Ravi","text":"Hi. What would you like?","translation_fa":"سلام. چی میل دارید؟"},{"order":2,"speaker":"Emma","text":"I'd like a coffee, please.","translation_fa":"یک قهوه می‌خواهم، لطفاً."},{"order":3,"speaker":"Ravi","text":"Anything else?","translation_fa":"چیز دیگری؟"},{"order":4,"speaker":"Emma","text":"No, thank you.","translation_fa":"نه، ممنون."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_cafe_bill","data":{"lesson_key":"a1-restaurant-02","title":"Asking for the check","setting":"café table","cefr":"A1","topic":"restaurants","characters":["Nina","Ben"],"turns":[{"order":1,"speaker":"Nina","text":"Excuse me.","translation_fa":"ببخشید."},{"order":2,"speaker":"Ben","text":"Yes?","translation_fa":"بله؟"},{"order":3,"speaker":"Nina","text":"Can I have the check, please?","translation_fa":"می‌شود صورت‌حساب را بیاورید، لطفاً؟"},{"order":4,"speaker":"Ben","text":"Of course.","translation_fa":"حتماً."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_cafe_mc","data":{"lesson_key":"a1-restaurant-01","exercise_type":"multiple_choice","prompt":{"fa":"برای سفارش مودبانه کدام جمله بهتر است؟"},"options":["I'd like a coffee, please.","Coffee is blue.","Where is coffee?","I coffee."],"answer":{"value":"I'd like a coffee, please."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_cafe_fill","data":{"lesson_key":"a1-restaurant-01","exercise_type":"fill_blank","prompt":{"text":"I'd ___ a sandwich, please.","fa":"جای خالی را کامل کن."},"options":["like","likes","liked","liking"],"answer":{"value":"like"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_cafe_listen","data":{"lesson_key":"a1-restaurant-02","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و درخواست را انتخاب کن.","audio_text":"Can I have the check, please?"},"options":["منو","صورت‌حساب","آب","قهوه"],"answer":{"value":"صورت‌حساب"},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_cafe_build","data":{"lesson_key":"a1-restaurant-02","exercise_type":"sentence_building","prompt":{"fa":"جمله را بساز.","tokens":["check","the","have","Can","I","please"]},"answer":{"tokens":["Can","I","have","the","check","please"],"text":"Can I have the check, please?"},"difficulty":2,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_cafe_speak","data":{"lesson_key":"a1-restaurant-01","exercise_type":"speaking","prompt":{"instruction_fa":"سفارش را با صدای بلند بگو.","value":"I'd like a coffee, please."},"answer":{"expected_text":"I'd like a coffee, please."},"difficulty":1,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_menu",
+      "data": {
+        "slug": "cafe_menu",
+        "lesson_key": "a1-restaurant-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "menu"
+        },
+        "translations": {
+          "fa": "منو"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_order",
+      "data": {
+        "slug": "cafe_id_like",
+        "lesson_key": "a1-restaurant-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "I'd like …"
+        },
+        "translations": {
+          "fa": "... می‌خواهم"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_anything_else",
+      "data": {
+        "slug": "cafe_anything_else",
+        "lesson_key": "a1-restaurant-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "Anything else?"
+        },
+        "translations": {
+          "fa": "چیز دیگری؟"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_bill",
+      "data": {
+        "slug": "cafe_bill",
+        "lesson_key": "a1-restaurant-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "check"
+        },
+        "translations": {
+          "fa": "صورت‌حساب"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cafe_menu",
+      "data": {
+        "lesson_key": "a1-restaurant-01",
+        "lemma": "menu",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "cafe_menu"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cafe_check",
+      "data": {
+        "lesson_key": "a1-restaurant-02",
+        "lemma": "check",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "cafe_bill"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cafe_menu",
+      "data": {
+        "lesson_key": "a1-restaurant-01",
+        "text": {
+          "en": "Can I see the menu, please?"
+        },
+        "translations": {
+          "fa": "می‌شود منو را ببینم، لطفاً؟"
+        },
+        "intent": "ask_for_menu",
+        "concept_refs": [
+          "cafe_menu"
+        ],
+        "cefr": "A1",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cafe_coffee",
+      "data": {
+        "lesson_key": "a1-restaurant-01",
+        "text": {
+          "en": "I'd like a coffee, please."
+        },
+        "translations": {
+          "fa": "یک قهوه می‌خواهم، لطفاً."
+        },
+        "intent": "order_item",
+        "concept_refs": [
+          "cafe_id_like"
+        ],
+        "cefr": "A1",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cafe_else",
+      "data": {
+        "lesson_key": "a1-restaurant-02",
+        "text": {
+          "en": "Anything else?"
+        },
+        "translations": {
+          "fa": "چیز دیگری؟"
+        },
+        "intent": "ask_additional_order",
+        "concept_refs": [
+          "cafe_anything_else"
+        ],
+        "cefr": "A1",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cafe_check",
+      "data": {
+        "lesson_key": "a1-restaurant-02",
+        "text": {
+          "en": "Can I have the check, please?"
+        },
+        "translations": {
+          "fa": "می‌شود صورت‌حساب را بیاورید، لطفاً؟"
+        },
+        "intent": "ask_for_bill",
+        "concept_refs": [
+          "cafe_bill"
+        ],
+        "cefr": "A1",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_cafe_id_like",
+      "data": {
+        "lesson_key": "a1-restaurant-01",
+        "slug": "a1-id-like-orders",
+        "title": "I'd like … for simple orders",
+        "rule_summary": "Use I'd like + noun to make a polite simple order.",
+        "explanation": {
+          "fa": "برای سفارش مودبانه و ساده می‌توانیم از I'd like + اسم استفاده کنیم."
+        },
+        "examples": [
+          {
+            "en": "I'd like a coffee, please.",
+            "fa": "یک قهوه می‌خواهم، لطفاً."
+          },
+          {
+            "en": "I'd like a sandwich.",
+            "fa": "یک ساندویچ می‌خواهم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_cafe_order",
+      "data": {
+        "lesson_key": "a1-restaurant-01",
+        "title": "Ordering at a café",
+        "setting": "café counter",
+        "cefr": "A1",
+        "topic": "restaurants",
+        "characters": [
+          "Emma",
+          "Ravi"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ravi",
+            "text": "Hi. What would you like?",
+            "translation_fa": "سلام. چی میل دارید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emma",
+            "text": "I'd like a coffee, please.",
+            "translation_fa": "یک قهوه می‌خواهم، لطفاً."
+          },
+          {
+            "order": 3,
+            "speaker": "Ravi",
+            "text": "Anything else?",
+            "translation_fa": "چیز دیگری؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emma",
+            "text": "No, thank you.",
+            "translation_fa": "نه، ممنون."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_cafe_bill",
+      "data": {
+        "lesson_key": "a1-restaurant-02",
+        "title": "Asking for the check",
+        "setting": "café table",
+        "cefr": "A1",
+        "topic": "restaurants",
+        "characters": [
+          "Nina",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Excuse me.",
+            "translation_fa": "ببخشید."
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "Yes?",
+            "translation_fa": "بله؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Can I have the check, please?",
+            "translation_fa": "می‌شود صورت‌حساب را بیاورید، لطفاً؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "Of course.",
+            "translation_fa": "حتماً."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cafe_mc",
+      "data": {
+        "lesson_key": "a1-restaurant-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "برای سفارش مودبانه کدام جمله بهتر است؟"
+        },
+        "options": [
+          "I'd like a coffee, please.",
+          "Coffee is blue.",
+          "Where is coffee?",
+          "I coffee."
+        ],
+        "answer": {
+          "value": "I'd like a coffee, please."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: یک قهوه می‌خواهم، لطفاً.\nنکتهٔ واژگانی: «i d like»: «... می‌خواهم»",
+          "model_answer": "I'd like a coffee, please.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cafe_fill",
+      "data": {
+        "lesson_key": "a1-restaurant-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "I'd ___ a sandwich, please.",
+          "fa": "جای خالی را کامل کن."
+        },
+        "options": [
+          "like",
+          "likes",
+          "liked",
+          "liking"
+        ],
+        "answer": {
+          "value": "like"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "would like برای درخواست مؤدبانه به کار می‌رود؛ I’d like یعنی می‌خواهم.",
+          "model_answer": "I'd like a sandwich, please.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cafe_listen",
+      "data": {
+        "lesson_key": "a1-restaurant-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و درخواست را انتخاب کن.",
+          "audio_text": "Can I have the check, please?"
+        },
+        "options": [
+          "منو",
+          "صورت‌حساب",
+          "آب",
+          "قهوه"
+        ],
+        "answer": {
+          "value": "صورت‌حساب"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: می‌شود صورت‌حساب را بیاورید، لطفاً؟\nنکتهٔ واژگانی: «check»: «صورت‌حساب»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Can I have the check, please?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Can I have the check, please?"
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cafe_build",
+      "data": {
+        "lesson_key": "a1-restaurant-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "جمله را بساز.",
+          "tokens": [
+            "check",
+            "the",
+            "have",
+            "Can",
+            "I",
+            "please"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Can",
+            "I",
+            "have",
+            "the",
+            "check",
+            "please"
+          ],
+          "text": "Can I have the check, please?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: می‌شود صورت‌حساب را بیاورید، لطفاً؟\nنکتهٔ واژگانی: «check»: «صورت‌حساب»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Can I have the check, please?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cafe_speak",
+      "data": {
+        "lesson_key": "a1-restaurant-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "سفارش را با صدای بلند بگو.",
+          "value": "I'd like a coffee, please."
+        },
+        "answer": {
+          "expected_text": "I'd like a coffee, please."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: یک قهوه می‌خواهم، لطفاً.\nنکتهٔ واژگانی: «i d like»: «... می‌خواهم»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "I'd like a coffee, please.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

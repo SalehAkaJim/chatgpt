@@ -9,52 +9,846 @@
   "curriculum_unit": "a2-restaurant-service",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_a2_menu_item","data":{"slug":"a2_menu_item","lesson_key":"a2-restaurant-service-01","concept_type":"lexical","forms":{"en":"menu item"},"translations":{"fa":"آیتم منو"},"cefr":"A2","topic":"restaurants","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_menu_item","data":{"lesson_key":"a2-restaurant-service-01","lemma":"menu item","language":"en","language_variant":"en-US","part_of_speech":"noun_phrase","concept_refs":["a2_menu_item"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_menu_item","data":{"lesson_key":"a2-restaurant-service-01","lexeme_ref":"lx_a2_menu_item","surface_form":"menu item","grammatical_features":{"number":"singular"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_side_dish","data":{"slug":"a2_side_dish","lesson_key":"a2-restaurant-service-01","concept_type":"lexical","forms":{"en":"side dish"},"translations":{"fa":"غذای جانبی"},"cefr":"A2","topic":"restaurants","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_side_dish","data":{"lesson_key":"a2-restaurant-service-01","lemma":"side dish","language":"en","language_variant":"en-US","part_of_speech":"noun_phrase","concept_refs":["a2_side_dish"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_side_dish","data":{"lesson_key":"a2-restaurant-service-01","lexeme_ref":"lx_a2_side_dish","surface_form":"side dish","grammatical_features":{"number":"singular"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_without","data":{"slug":"a2_without","lesson_key":"a2-restaurant-service-02","concept_type":"lexical","forms":{"en":"without"},"translations":{"fa":"بدون"},"cefr":"A2","topic":"restaurants","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_without","data":{"lesson_key":"a2-restaurant-service-02","lemma":"without","language":"en","language_variant":"en-US","part_of_speech":"preposition","concept_refs":["a2_without"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_without","data":{"lesson_key":"a2-restaurant-service-02","lexeme_ref":"lx_a2_without","surface_form":"without","grammatical_features":{"type":"preposition"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_instead_of","data":{"slug":"a2_instead_of","lesson_key":"a2-restaurant-service-02","concept_type":"lexical","forms":{"en":"instead of"},"translations":{"fa":"به‌جای"},"cefr":"A2","topic":"restaurants","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_instead_of","data":{"lesson_key":"a2-restaurant-service-02","lemma":"instead of","language":"en","language_variant":"en-US","part_of_speech":"preposition_phrase","concept_refs":["a2_instead_of"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_instead_of","data":{"lesson_key":"a2-restaurant-service-02","lexeme_ref":"lx_a2_instead_of","surface_form":"instead of","grammatical_features":{"type":"substitution_expression"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_order_wrong","data":{"slug":"a2_wrong_order","lesson_key":"a2-restaurant-service-03","concept_type":"functional","forms":{"en":"wrong order"},"translations":{"fa":"سفارش اشتباه"},"cefr":"A2","topic":"restaurants","status":"approved"}},
-    {"kind":"concept","external_id":"c_a2_missing_item","data":{"slug":"a2_missing_item","lesson_key":"a2-restaurant-service-03","concept_type":"lexical","forms":{"en":"missing"},"translations":{"fa":"جاافتاده / موجود نیست"},"cefr":"A2","topic":"restaurants","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_missing","data":{"lesson_key":"a2-restaurant-service-03","lemma":"missing","language":"en","language_variant":"en-US","part_of_speech":"adjective","concept_refs":["a2_missing_item"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_missing","data":{"lesson_key":"a2-restaurant-service-03","lexeme_ref":"lx_a2_missing","surface_form":"missing","grammatical_features":{"degree":"positive"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_a2_check_bill","data":{"slug":"a2_check_restaurant","lesson_key":"a2-restaurant-service-03","concept_type":"lexical","forms":{"en":"check"},"translations":{"fa":"صورتحساب"},"cefr":"A2","topic":"restaurants","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_a2_check_bill","data":{"lesson_key":"a2-restaurant-service-03","lemma":"check","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["a2_check_restaurant"],"cefr":"A2","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_a2_check_bill","data":{"lesson_key":"a2-restaurant-service-03","lexeme_ref":"lx_a2_check_bill","surface_form":"check","grammatical_features":{"sense":"restaurant_bill"},"cefr":"A2","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_a2_what_comes_with","data":{"lesson_key":"a2-restaurant-service-01","text":{"en":"What does this come with?"},"translations":{"fa":"این غذا با چی سرو می‌شه؟"},"intent":"ask_menu_details","concept_refs":["a2_menu_item","a2_side_dish"],"cefr":"A2","topic":"restaurants","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_side_salad","data":{"lesson_key":"a2-restaurant-service-01","text":{"en":"It comes with a side salad or fries."},"translations":{"fa":"با سالاد جانبی یا سیب‌زمینی سرو می‌شه."},"intent":"explain_menu_option","concept_refs":["a2_side_dish"],"cefr":"A2","topic":"restaurants","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_without_onions","data":{"lesson_key":"a2-restaurant-service-02","text":{"en":"Could I get that without onions?"},"translations":{"fa":"می‌شه اون رو بدون پیاز بگیرم؟"},"intent":"request_modification","concept_refs":["a2_without"],"cefr":"A2","topic":"restaurants","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_salad_instead","data":{"lesson_key":"a2-restaurant-service-02","text":{"en":"Can I have salad instead of fries?"},"translations":{"fa":"می‌شه به‌جای سیب‌زمینی سالاد بگیرم؟"},"intent":"request_substitution","concept_refs":["a2_instead_of"],"cefr":"A2","topic":"restaurants","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_wrong_order","data":{"lesson_key":"a2-restaurant-service-03","text":{"en":"Sorry, I think this is the wrong order."},"translations":{"fa":"ببخشید، فکر کنم این سفارش اشتباهه."},"intent":"report_service_problem","concept_refs":["a2_wrong_order"],"cefr":"A2","topic":"restaurants","register":"polite","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_drink_missing","data":{"lesson_key":"a2-restaurant-service-03","text":{"en":"My drink is still missing."},"translations":{"fa":"نوشیدنی من هنوز نرسیده."},"intent":"report_missing_item","concept_refs":["a2_missing_item"],"cefr":"A2","topic":"restaurants","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_a2_check_please","data":{"lesson_key":"a2-restaurant-service-03","text":{"en":"Could we get the check, please?"},"translations":{"fa":"می‌شه لطفاً صورتحساب رو بیارید؟"},"intent":"request_bill","concept_refs":["a2_check_restaurant"],"cefr":"A2","topic":"restaurants","register":"polite","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_a2_could_i_restaurant","data":{"lesson_key":"a2-restaurant-service-01","slug":"a2-could-i-restaurant","title":"Polite restaurant requests","rule_summary":"Use Could I …? or Could we …? for polite requests in a restaurant.","explanation":{"fa":"برای درخواست مؤدبانه در رستوران از Could I …? یا Could we …? استفاده می‌کنیم."},"examples":[{"en":"Could I have some water?","fa":"می‌شه کمی آب داشته باشم؟"},{"en":"Could we get the check?","fa":"می‌شه صورتحساب رو بیارید؟"}],"cefr":"A2","status":"approved"}},
-    {"kind":"grammar_point","external_id":"g_a2_something_anything","data":{"lesson_key":"a2-restaurant-service-02","slug":"a2-something-anything-service","title":"something and anything","rule_summary":"Use something for an unspecified thing in many positive statements/offers; anything is common in questions and negatives.","explanation":{"fa":"something معمولاً برای یک چیز نامشخص در جمله مثبت و پیشنهادها می‌آید؛ anything بیشتر در سؤال و منفی استفاده می‌شود."},"examples":[{"en":"Would you like something to drink?","fa":"چیزی برای نوشیدن می‌خوای؟"},{"en":"Do you need anything else?","fa":"چیز دیگه‌ای لازم داری؟"}],"cefr":"A2","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_a2_restaurant_menu","data":{"lesson_key":"a2-restaurant-service-01","title":"Questions about the menu","setting":"restaurant","cefr":"A2","topic":"restaurants","characters":["Mina","Jonas"],"turns":[{"order":1,"speaker":"Mina","text":"What does the grilled chicken come with?","translation_fa":"مرغ گریل‌شده با چی سرو می‌شه؟"},{"order":2,"speaker":"Jonas","text":"It comes with rice and a side salad.","translation_fa":"با برنج و سالاد جانبی سرو می‌شه."},{"order":3,"speaker":"Mina","text":"Great. I'll have that, please.","translation_fa":"عالیه. همون رو می‌گیرم، لطفاً."},{"order":4,"speaker":"Jonas","text":"Anything to drink?","translation_fa":"چیزی برای نوشیدن؟"}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_a2_restaurant_change","data":{"lesson_key":"a2-restaurant-service-02","title":"Changing a side","setting":"restaurant","cefr":"A2","topic":"restaurants","characters":["Priya","Tom"],"turns":[{"order":1,"speaker":"Priya","text":"Could I get the burger without onions?","translation_fa":"می‌شه برگر رو بدون پیاز بگیرم؟"},{"order":2,"speaker":"Tom","text":"Of course.","translation_fa":"حتماً."},{"order":3,"speaker":"Priya","text":"And can I have salad instead of fries?","translation_fa":"و می‌شه به‌جای سیب‌زمینی سالاد بگیرم؟"},{"order":4,"speaker":"Tom","text":"Sure, no problem.","translation_fa":"حتماً، مشکلی نیست."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_a2_restaurant_problem","data":{"lesson_key":"a2-restaurant-service-03","title":"The wrong order","setting":"restaurant","cefr":"A2","topic":"restaurants","characters":["Sofia","Omar"],"turns":[{"order":1,"speaker":"Sofia","text":"Excuse me. I think this is the wrong order.","translation_fa":"ببخشید. فکر کنم این سفارش اشتباهه."},{"order":2,"speaker":"Omar","text":"I'm sorry. What did you order?","translation_fa":"متأسفم. چی سفارش داده بودید؟"},{"order":3,"speaker":"Sofia","text":"I ordered the vegetable pasta, not the chicken pasta.","translation_fa":"پاستای سبزیجات سفارش دادم، نه پاستای مرغ."},{"order":4,"speaker":"Omar","text":"I'll fix that right away.","translation_fa":"همین الان درستش می‌کنم."},{"order":5,"speaker":"Sofia","text":"Thank you.","translation_fa":"ممنون."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_a2_restaurant_side","data":{"lesson_key":"a2-restaurant-service-01","exercise_type":"multiple_choice","prompt":{"fa":"side dish یعنی چه؟"},"options":["غذای جانبی","غذای اصلی","صورتحساب","میز رزرو"],"answer":{"value":"غذای جانبی"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_restaurant_comes","data":{"lesson_key":"a2-restaurant-service-01","exercise_type":"fill_blank","prompt":{"text":"What does this come ___?"},"options":["with","from","at","for"],"answer":{"value":"with"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_restaurant_without","data":{"lesson_key":"a2-restaurant-service-02","exercise_type":"fill_blank","prompt":{"text":"Could I get that ___ onions?"},"options":["without","instead","around","during"],"answer":{"value":"without"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_restaurant_instead","data":{"lesson_key":"a2-restaurant-service-02","exercise_type":"sentence_building","prompt":{"fa":"«می‌شه به‌جای سیب‌زمینی سالاد بگیرم؟» را بساز.","tokens":["fries","I","instead","salad","of","have","Can"]},"answer":{"tokens":["Can","I","have","salad","instead","of","fries"],"text":"Can I have salad instead of fries?"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_restaurant_wrong","data":{"lesson_key":"a2-restaurant-service-03","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و مشکل را انتخاب کن.","audio_text":"Sorry, I think this is the wrong order."},"options":["سفارش اشتباه است","غذا خیلی گران است","میز رزرو نشده","رستوران بسته است"],"answer":{"value":"سفارش اشتباه است"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_restaurant_missing","data":{"lesson_key":"a2-restaurant-service-03","exercise_type":"multiple_choice","prompt":{"fa":"My drink is still missing. یعنی چه؟"},"options":["نوشیدنی هنوز نرسیده","نوشیدنی خیلی سرد است","نوشیدنی تمام شده","نوشیدنی اشتباه است"],"answer":{"value":"نوشیدنی هنوز نرسیده"},"difficulty":2,"cefr":"A2","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_a2_restaurant_speak","data":{"lesson_key":"a2-restaurant-service-03","exercise_type":"speaking","prompt":{"instruction_fa":"این درخواست را بگو.","value":"Could we get the check, please?"},"answer":{"expected_text":"Could we get the check, please?"},"difficulty":2,"cefr":"A2","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_a2_menu_item",
+      "data": {
+        "slug": "a2_menu_item",
+        "lesson_key": "a2-restaurant-service-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "menu item"
+        },
+        "translations": {
+          "fa": "آیتم منو"
+        },
+        "cefr": "A2",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_menu_item",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "lemma": "menu item",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun_phrase",
+        "concept_refs": [
+          "a2_menu_item"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_menu_item",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "lexeme_ref": "lx_a2_menu_item",
+        "surface_form": "menu item",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_side_dish",
+      "data": {
+        "slug": "a2_side_dish",
+        "lesson_key": "a2-restaurant-service-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "side dish"
+        },
+        "translations": {
+          "fa": "غذای جانبی"
+        },
+        "cefr": "A2",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_side_dish",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "lemma": "side dish",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun_phrase",
+        "concept_refs": [
+          "a2_side_dish"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_side_dish",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "lexeme_ref": "lx_a2_side_dish",
+        "surface_form": "side dish",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_without",
+      "data": {
+        "slug": "a2_without",
+        "lesson_key": "a2-restaurant-service-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "without"
+        },
+        "translations": {
+          "fa": "بدون"
+        },
+        "cefr": "A2",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_without",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "lemma": "without",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "preposition",
+        "concept_refs": [
+          "a2_without"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_without",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "lexeme_ref": "lx_a2_without",
+        "surface_form": "without",
+        "grammatical_features": {
+          "type": "preposition"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_instead_of",
+      "data": {
+        "slug": "a2_instead_of",
+        "lesson_key": "a2-restaurant-service-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "instead of"
+        },
+        "translations": {
+          "fa": "به‌جای"
+        },
+        "cefr": "A2",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_instead_of",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "lemma": "instead of",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "preposition_phrase",
+        "concept_refs": [
+          "a2_instead_of"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_instead_of",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "lexeme_ref": "lx_a2_instead_of",
+        "surface_form": "instead of",
+        "grammatical_features": {
+          "type": "substitution_expression"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_order_wrong",
+      "data": {
+        "slug": "a2_wrong_order",
+        "lesson_key": "a2-restaurant-service-03",
+        "concept_type": "functional",
+        "forms": {
+          "en": "wrong order"
+        },
+        "translations": {
+          "fa": "سفارش اشتباه"
+        },
+        "cefr": "A2",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_missing_item",
+      "data": {
+        "slug": "a2_missing_item",
+        "lesson_key": "a2-restaurant-service-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "missing"
+        },
+        "translations": {
+          "fa": "جاافتاده / موجود نیست"
+        },
+        "cefr": "A2",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_missing",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "lemma": "missing",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "a2_missing_item"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_missing",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "lexeme_ref": "lx_a2_missing",
+        "surface_form": "missing",
+        "grammatical_features": {
+          "degree": "positive"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a2_check_bill",
+      "data": {
+        "slug": "a2_check_restaurant",
+        "lesson_key": "a2-restaurant-service-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "check"
+        },
+        "translations": {
+          "fa": "صورتحساب"
+        },
+        "cefr": "A2",
+        "topic": "restaurants",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a2_check_bill",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "lemma": "check",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "a2_check_restaurant"
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a2_check_bill",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "lexeme_ref": "lx_a2_check_bill",
+        "surface_form": "check",
+        "grammatical_features": {
+          "sense": "restaurant_bill"
+        },
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_what_comes_with",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "text": {
+          "en": "What does this come with?"
+        },
+        "translations": {
+          "fa": "این غذا با چی سرو می‌شه؟"
+        },
+        "intent": "ask_menu_details",
+        "concept_refs": [
+          "a2_menu_item",
+          "a2_side_dish"
+        ],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_side_salad",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "text": {
+          "en": "It comes with a side salad or fries."
+        },
+        "translations": {
+          "fa": "با سالاد جانبی یا سیب‌زمینی سرو می‌شه."
+        },
+        "intent": "explain_menu_option",
+        "concept_refs": [
+          "a2_side_dish"
+        ],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_without_onions",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "text": {
+          "en": "Could I get that without onions?"
+        },
+        "translations": {
+          "fa": "می‌شه اون رو بدون پیاز بگیرم؟"
+        },
+        "intent": "request_modification",
+        "concept_refs": [
+          "a2_without"
+        ],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_salad_instead",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "text": {
+          "en": "Can I have salad instead of fries?"
+        },
+        "translations": {
+          "fa": "می‌شه به‌جای سیب‌زمینی سالاد بگیرم؟"
+        },
+        "intent": "request_substitution",
+        "concept_refs": [
+          "a2_instead_of"
+        ],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_wrong_order",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "text": {
+          "en": "Sorry, I think this is the wrong order."
+        },
+        "translations": {
+          "fa": "ببخشید، فکر کنم این سفارش اشتباهه."
+        },
+        "intent": "report_service_problem",
+        "concept_refs": [
+          "a2_wrong_order"
+        ],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_drink_missing",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "text": {
+          "en": "My drink is still missing."
+        },
+        "translations": {
+          "fa": "نوشیدنی من هنوز نرسیده."
+        },
+        "intent": "report_missing_item",
+        "concept_refs": [
+          "a2_missing_item"
+        ],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_check_please",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "text": {
+          "en": "Could we get the check, please?"
+        },
+        "translations": {
+          "fa": "می‌شه لطفاً صورتحساب رو بیارید؟"
+        },
+        "intent": "request_bill",
+        "concept_refs": [
+          "a2_check_restaurant"
+        ],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "polite",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_could_i_restaurant",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "slug": "a2-could-i-restaurant",
+        "title": "Polite restaurant requests",
+        "rule_summary": "Use Could I …? or Could we …? for polite requests in a restaurant.",
+        "explanation": {
+          "fa": "برای درخواست مؤدبانه در رستوران از Could I …? یا Could we …? استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "Could I have some water?",
+            "fa": "می‌شه کمی آب داشته باشم؟"
+          },
+          {
+            "en": "Could we get the check?",
+            "fa": "می‌شه صورتحساب رو بیارید؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a2_something_anything",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "slug": "a2-something-anything-service",
+        "title": "something and anything",
+        "rule_summary": "Use something for an unspecified thing in many positive statements/offers; anything is common in questions and negatives.",
+        "explanation": {
+          "fa": "something معمولاً برای یک چیز نامشخص در جمله مثبت و پیشنهادها می‌آید؛ anything بیشتر در سؤال و منفی استفاده می‌شود."
+        },
+        "examples": [
+          {
+            "en": "Would you like something to drink?",
+            "fa": "چیزی برای نوشیدن می‌خوای؟"
+          },
+          {
+            "en": "Do you need anything else?",
+            "fa": "چیز دیگه‌ای لازم داری؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_restaurant_menu",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "title": "Questions about the menu",
+        "setting": "restaurant",
+        "cefr": "A2",
+        "topic": "restaurants",
+        "characters": [
+          "Mina",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mina",
+            "text": "What does the grilled chicken come with?",
+            "translation_fa": "مرغ گریل‌شده با چی سرو می‌شه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "It comes with rice and a side salad.",
+            "translation_fa": "با برنج و سالاد جانبی سرو می‌شه."
+          },
+          {
+            "order": 3,
+            "speaker": "Mina",
+            "text": "Great. I'll have that, please.",
+            "translation_fa": "عالیه. همون رو می‌گیرم، لطفاً."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Anything to drink?",
+            "translation_fa": "چیزی برای نوشیدن؟"
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_restaurant_change",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "title": "Changing a side",
+        "setting": "restaurant",
+        "cefr": "A2",
+        "topic": "restaurants",
+        "characters": [
+          "Priya",
+          "Tom"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Priya",
+            "text": "Could I get the burger without onions?",
+            "translation_fa": "می‌شه برگر رو بدون پیاز بگیرم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Tom",
+            "text": "Of course.",
+            "translation_fa": "حتماً."
+          },
+          {
+            "order": 3,
+            "speaker": "Priya",
+            "text": "And can I have salad instead of fries?",
+            "translation_fa": "و می‌شه به‌جای سیب‌زمینی سالاد بگیرم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Tom",
+            "text": "Sure, no problem.",
+            "translation_fa": "حتماً، مشکلی نیست."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_restaurant_problem",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "title": "The wrong order",
+        "setting": "restaurant",
+        "cefr": "A2",
+        "topic": "restaurants",
+        "characters": [
+          "Sofia",
+          "Omar"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Excuse me. I think this is the wrong order.",
+            "translation_fa": "ببخشید. فکر کنم این سفارش اشتباهه."
+          },
+          {
+            "order": 2,
+            "speaker": "Omar",
+            "text": "I'm sorry. What did you order?",
+            "translation_fa": "متأسفم. چی سفارش داده بودید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "I ordered the vegetable pasta, not the chicken pasta.",
+            "translation_fa": "پاستای سبزیجات سفارش دادم، نه پاستای مرغ."
+          },
+          {
+            "order": 4,
+            "speaker": "Omar",
+            "text": "I'll fix that right away.",
+            "translation_fa": "همین الان درستش می‌کنم."
+          },
+          {
+            "order": 5,
+            "speaker": "Sofia",
+            "text": "Thank you.",
+            "translation_fa": "ممنون."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_restaurant_side",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "side dish یعنی چه؟"
+        },
+        "options": [
+          "غذای جانبی",
+          "غذای اصلی",
+          "صورتحساب",
+          "میز رزرو"
+        ],
+        "answer": {
+          "value": "غذای جانبی"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: غذای جانبی\nنکتهٔ واژگانی: «side dish»: «غذای جانبی»",
+          "model_answer": "side dish",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_restaurant_comes",
+      "data": {
+        "lesson_key": "a2-restaurant-service-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "What does this come ___?"
+        },
+        "options": [
+          "with",
+          "from",
+          "at",
+          "for"
+        ],
+        "answer": {
+          "value": "with"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "come with در سفارش غذا یعنی چه چیزی همراه غذا ارائه می‌شود.",
+          "model_answer": "What does this come with?",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_restaurant_without",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "Could I get that ___ onions?"
+        },
+        "options": [
+          "without",
+          "instead",
+          "around",
+          "during"
+        ],
+        "answer": {
+          "value": "without"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "«without» در این درس یعنی «بدون».",
+          "model_answer": "Could I get that without onions?",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_restaurant_instead",
+      "data": {
+        "lesson_key": "a2-restaurant-service-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«می‌شه به‌جای سیب‌زمینی سالاد بگیرم؟» را بساز.",
+          "tokens": [
+            "fries",
+            "I",
+            "instead",
+            "salad",
+            "of",
+            "have",
+            "Can"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Can",
+            "I",
+            "have",
+            "salad",
+            "instead",
+            "of",
+            "fries"
+          ],
+          "text": "Can I have salad instead of fries?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: می‌شه به‌جای سیب‌زمینی سالاد بگیرم؟\nنکتهٔ واژگانی: «instead of»: «به‌جای»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "Can I have salad instead of fries?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_restaurant_wrong",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و مشکل را انتخاب کن.",
+          "audio_text": "Sorry, I think this is the wrong order."
+        },
+        "options": [
+          "سفارش اشتباه است",
+          "غذا خیلی گران است",
+          "میز رزرو نشده",
+          "رستوران بسته است"
+        ],
+        "answer": {
+          "value": "سفارش اشتباه است"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: ببخشید، فکر کنم این سفارش اشتباهه.\nنکتهٔ واژگانی: «wrong order»: «سفارش اشتباه»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Sorry, I think this is the wrong order.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Sorry, I think this is the wrong order."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_restaurant_missing",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "My drink is still missing. یعنی چه؟"
+        },
+        "options": [
+          "نوشیدنی هنوز نرسیده",
+          "نوشیدنی خیلی سرد است",
+          "نوشیدنی تمام شده",
+          "نوشیدنی اشتباه است"
+        ],
+        "answer": {
+          "value": "نوشیدنی هنوز نرسیده"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: نوشیدنی من هنوز نرسیده.\nنکتهٔ واژگانی: «missing»: «جاافتاده / موجود نیست»",
+          "model_answer": "My drink is still missing",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_a2_restaurant_speak",
+      "data": {
+        "lesson_key": "a2-restaurant-service-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این درخواست را بگو.",
+          "value": "Could we get the check, please?"
+        },
+        "answer": {
+          "expected_text": "Could we get the check, please?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: می‌شه لطفاً صورتحساب رو بیارید؟\nنکتهٔ واژگانی: «check»: «صورتحساب»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Could we get the check, please?",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }

@@ -607,7 +607,7 @@
           "en": "My workload is heavier this week, so I need to move one non-urgent task to next week."
         },
         "translations": {
-          "fa": "حجم کارم این هفته بیشتره، پس باید یک کار غیرضروری رو بندازم هفته بعد."
+          "fa": "حجم کارم این هفته بیشتره، پس باید یک کار غیرفوری رو بندازم هفته بعد."
         },
         "intent": "manage_workload",
         "concept_refs": [
@@ -884,7 +884,12 @@
         },
         "difficulty": 3,
         "cefr": "B1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "by Thursday یعنی حداکثر تا پنجشنبه؛ by مهلت پایان کار را مشخص می‌کند.",
+          "model_answer": "The report has to be finished by Thursday.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
       }
     },
     {
@@ -908,7 +913,13 @@
         },
         "difficulty": 3,
         "cefr": "B1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: گزارش باید تا پنجشنبه تموم بشه چون مشتری جمعه صبح بررسیش می‌کنه.\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "The report has to be finished by Thursday because the client reviews it Friday morning.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "The report has to be finished by Thursday because the client reviews it Friday morning."
+        }
       }
     },
     {
@@ -925,7 +936,12 @@
         },
         "difficulty": 3,
         "cefr": "B1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: الان حل مشکل پرداخت بالاترین اولویت ماست.\nنکتهٔ واژگانی: «priority»: «اولویت»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Right now, fixing the payment issue is our highest priority.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -972,7 +988,12 @@
         },
         "difficulty": 3,
         "cefr": "B1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: بیشتر تست‌ها رو تموم کردیم، ولی دو مورد مهم هنوز بازه.\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "We've completed most of the testing, but two important cases are still open.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -996,7 +1017,12 @@
         },
         "difficulty": 3,
         "cefr": "B1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: یک کار عقب افتاده چون منتظر داده از تیم دیگه‌ایم.\nنکتهٔ واژگانی: «overdue»: «عقب‌افتاده»؛ «task»: «وظیفه»",
+          "model_answer": "One task is overdue because we're waiting for data from another team.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -1010,17 +1036,23 @@
           "audio_text": "My workload is heavier this week, so I need to move one non-urgent task to next week."
         },
         "options": [
-          "حجم کارم این هفته بیشتره، پس باید یک کار غیرضروری رو بندازم هفته بعد.",
+          "حجم کارم این هفته بیشتره، پس باید یک کار غیرفوری رو بندازم هفته بعد.",
           "گزارش باید تا پنجشنبه تموم بشه چون مشتری جمعه صبح بررسیش می‌کنه.",
           "بیشتر تست‌ها رو تموم کردیم، ولی دو مورد مهم هنوز بازه.",
           "تا آخر امروز انتظار دارم نسخه اول برای بررسی آماده باشه."
         ],
         "answer": {
-          "value": "حجم کارم این هفته بیشتره، پس باید یک کار غیرضروری رو بندازم هفته بعد."
+          "value": "حجم کارم این هفته بیشتره، پس باید یک کار غیرفوری رو بندازم هفته بعد."
         },
         "difficulty": 3,
         "cefr": "B1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: حجم کارم این هفته بیشتره، پس باید یک کار غیرفوری رو بندازم هفته بعد.\nنکتهٔ واژگانی: «workload»: «حجم کار»؛ «task»: «وظیفه»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "My workload is heavier this week, so I need to move one non-urgent task to next week.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "My workload is heavier this week, so I need to move one non-urgent task to next week."
+        }
       }
     },
     {
@@ -1037,7 +1069,12 @@
         },
         "difficulty": 3,
         "cefr": "B1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: تا وقتی اعداد تأیید بشن روی پیش‌نویس کار می‌کنم.\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "I'll keep working on the draft until the numbers are confirmed.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -1088,7 +1125,12 @@
         },
         "difficulty": 3,
         "cefr": "B1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: تا آخر امروز انتظار دارم نسخه اول برای بررسی آماده باشه.\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "By the end of today, I expect to have the first version ready for review.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     }
   ]

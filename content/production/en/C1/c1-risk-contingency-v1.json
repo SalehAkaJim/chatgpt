@@ -791,7 +791,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "«fallback» در این درس یعنی «گزینه پشتیبان».",
+          "model_answer": "A tested fallback gives the team another option if the main dependency fails.",
+          "retry_tip_fa": "پیش از انتخاب، معنی جمله و شکل کلمهٔ کنار جای خالی را دوباره بررسی کن."
+        }
       }
     },
     {
@@ -815,7 +820,13 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: بزرگ‌ترین ریسک ما از یک وابستگی واحد میاد که هیچ گزینه پشتیبان تست‌شده‌ای نداره.\nنکتهٔ واژگانی: «dependency»: «وابستگی»؛ «exposure»: «میزان در معرض ریسک بودن»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "Our largest exposure comes from a single dependency that has no tested fallback.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "Our largest exposure comes from a single dependency that has no tested fallback."
+        }
       }
     },
     {
@@ -832,7 +843,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: نمی‌تونیم ریسک رو کامل حذف کنیم، ولی می‌تونیم با کم کردن وابستگی عرضه به یک تأمین‌کننده کاهش بدیمش.\nنکتهٔ واژگانی: «mitigate»: «کاهش دادن ریسک»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "We cannot remove the risk entirely, but we can mitigate it by reducing how much of the launch depends on one supplier.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -885,7 +901,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: یک آستانه لازم داریم که برنامه جایگزین رو قبل از شکست کامل برنامه اصلی فعال کنه.\nنکتهٔ واژگانی: «contingency»: «سناریوی جایگزین / برنامه اضطراری»؛ «threshold»: «آستانه»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "We need a threshold that triggers the contingency plan before the original plan has already failed.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -909,7 +930,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: گزینه پشتیبان فقط وقتی مفیده که آدم‌ها بدونن کی باید ازش استفاده کنن و در شرایط واقعی تست شده باشه.\nنکتهٔ واژگانی: «fallback»: «گزینه پشتیبان»",
+          "model_answer": "A fallback is useful only if people know when to use it and it has been tested under realistic conditions.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -933,7 +959,13 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: اگر وابستگی فردا از کار بیفته، ریسک فعلی اول پشتیبانی مشتری رو تحت‌تأثیر می‌ذاره نه دسترسی سرویس اصلی رو.\nنکتهٔ واژگانی: «dependency»: «وابستگی»؛ «exposure»: «میزان در معرض ریسک بودن»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "If the dependency failed tomorrow, our current exposure would affect customer support before core service availability.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "If the dependency failed tomorrow, our current exposure would affect customer support before core service availability."
+        }
       }
     },
     {
@@ -950,7 +982,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: هر کاهش ریسک هزینه‌ای داره، پس سؤال اینه که کاهش در معرض بودن ارزش اون هزینه رو داره یا نه.\nنکتهٔ واژگانی: «exposure»: «میزان در معرض ریسک بودن»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "Every mitigation has a cost, so the question is whether the reduction in exposure justifies that cost.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     },
     {
@@ -1005,7 +1042,12 @@
         },
         "difficulty": 5,
         "cefr": "C1",
-        "status": "approved"
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: برنامه جایگزین باید اون‌قدر ساده باشه که زیر فشار اجرا بشه، نه فقط روی کاغذ برنامه‌ریزی قشنگ باشه.\nنکتهٔ واژگانی: «contingency»: «سناریوی جایگزین / برنامه اضطراری»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "The contingency should be simple enough to execute under pressure, not merely impressive in a planning document.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
       }
     }
   ]

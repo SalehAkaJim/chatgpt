@@ -9,39 +9,619 @@
   "curriculum_unit": "a1-study",
   "generator": "gpt-5.6-sol:golden-dataset-v2",
   "items": [
-    {"kind":"concept","external_id":"c_study_student","data":{"slug":"study_student","lesson_key":"a1-study-01","concept_type":"lexical","forms":{"en":"student"},"translations":{"fa":"دانش‌آموز / دانشجو"},"cefr":"A1","topic":"school-study","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_study_student","data":{"lesson_key":"a1-study-01","lemma":"student","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["study_student"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_study_student","data":{"lesson_key":"a1-study-01","lexeme_ref":"lx_study_student","surface_form":"student","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_study_class","data":{"slug":"study_class","lesson_key":"a1-study-01","concept_type":"lexical","forms":{"en":"class"},"translations":{"fa":"کلاس"},"cefr":"A1","topic":"school-study","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_study_class","data":{"lesson_key":"a1-study-01","lemma":"class","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["study_class"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_study_class","data":{"lesson_key":"a1-study-01","lexeme_ref":"lx_study_class","surface_form":"class","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_study_homework","data":{"slug":"study_homework","lesson_key":"a1-study-01","concept_type":"lexical","forms":{"en":"homework"},"translations":{"fa":"تکلیف"},"cefr":"A1","topic":"school-study","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_study_homework","data":{"lesson_key":"a1-study-01","lemma":"homework","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["study_homework"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_study_homework","data":{"lesson_key":"a1-study-01","lexeme_ref":"lx_study_homework","surface_form":"homework","grammatical_features":{"countability":"uncountable"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_study_book","data":{"slug":"study_book","lesson_key":"a1-study-02","concept_type":"lexical","forms":{"en":"book"},"translations":{"fa":"کتاب"},"cefr":"A1","topic":"school-study","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_study_book","data":{"lesson_key":"a1-study-02","lemma":"book","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["study_book"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_study_book","data":{"lesson_key":"a1-study-02","lexeme_ref":"lx_study_book","surface_form":"book","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-    {"kind":"concept","external_id":"c_study_question","data":{"slug":"study_question","lesson_key":"a1-study-02","concept_type":"lexical","forms":{"en":"question"},"translations":{"fa":"سؤال"},"cefr":"A1","topic":"school-study","status":"approved"}},
-    {"kind":"lexeme","external_id":"lx_study_question","data":{"lesson_key":"a1-study-02","lemma":"question","language":"en","language_variant":"en-US","part_of_speech":"noun","concept_refs":["study_question"],"cefr":"A1","status":"approved"}},
-    {"kind":"word_form","external_id":"wf_study_question","data":{"lesson_key":"a1-study-02","lexeme_ref":"lx_study_question","surface_form":"question","grammatical_features":{"number":"singular"},"cefr":"A1","status":"approved"}},
-
-    {"kind":"concept","external_id":"c_study_have_class","data":{"slug":"study_have_class","lesson_key":"a1-study-01","concept_type":"functional","forms":{"en":"I have class at …"},"translations":{"fa":"من ساعت ... کلاس دارم."},"cefr":"A1","topic":"school-study","status":"approved"}},
-    {"kind":"concept","external_id":"c_study_dont_understand","data":{"slug":"study_dont_understand","lesson_key":"a1-study-02","concept_type":"functional","forms":{"en":"I don't understand."},"translations":{"fa":"متوجه نمی‌شوم."},"cefr":"A1","topic":"school-study","status":"approved"}},
-
-    {"kind":"utterance","external_id":"u_study_class","data":{"lesson_key":"a1-study-01","text":{"en":"I have class at ten."},"translations":{"fa":"من ساعت ده کلاس دارم."},"intent":"state_class_time","concept_refs":["study_have_class","study_class"],"cefr":"A1","topic":"school-study","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_study_homework","data":{"lesson_key":"a1-study-01","text":{"en":"I have homework tonight."},"translations":{"fa":"امشب تکلیف دارم."},"intent":"state_homework","concept_refs":["study_homework"],"cefr":"A1","topic":"school-study","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_study_question","data":{"lesson_key":"a1-study-02","text":{"en":"I have a question."},"translations":{"fa":"یک سؤال دارم."},"intent":"ask_for_help","concept_refs":["study_question"],"cefr":"A1","topic":"school-study","register":"neutral","status":"approved"}},
-    {"kind":"utterance","external_id":"u_study_understand","data":{"lesson_key":"a1-study-02","text":{"en":"I don't understand this question."},"translations":{"fa":"این سؤال را متوجه نمی‌شوم."},"intent":"signal_non_understanding","concept_refs":["study_dont_understand","study_question"],"cefr":"A1","topic":"school-study","register":"neutral","status":"approved"}},
-
-    {"kind":"grammar_point","external_id":"g_study_have_noun","data":{"lesson_key":"a1-study-01","slug":"a1-have-class-homework","title":"have + class/homework","rule_summary":"Use have with class, homework, or a question to talk about study situations.","explanation":{"fa":"در موقعیت‌های درسی برای گفتن داشتن کلاس، تکلیف یا سؤال از have استفاده می‌کنیم."},"examples":[{"en":"I have class at nine.","fa":"ساعت نه کلاس دارم."},{"en":"I have homework.","fa":"تکلیف دارم."}],"cefr":"A1","status":"approved"}},
-
-    {"kind":"dialogue","external_id":"d_study_before_class","data":{"lesson_key":"a1-study-01","title":"Before class","setting":"school hallway","cefr":"A1","topic":"school-study","characters":["Eli","Fatima"],"turns":[{"order":1,"speaker":"Eli","text":"Do you have class now?","translation_fa":"الان کلاس داری؟"},{"order":2,"speaker":"Fatima","text":"Yes, I have English class at ten.","translation_fa":"بله، ساعت ده کلاس انگلیسی دارم."},{"order":3,"speaker":"Eli","text":"Do you have homework too?","translation_fa":"تکلیف هم داری؟"},{"order":4,"speaker":"Fatima","text":"Yes, a little.","translation_fa":"بله، کمی."}],"status":"approved"}},
-    {"kind":"dialogue","external_id":"d_study_help","data":{"lesson_key":"a1-study-02","title":"A question in class","setting":"classroom","cefr":"A1","topic":"school-study","characters":["Jon","Lena"],"turns":[{"order":1,"speaker":"Jon","text":"I have a question.","translation_fa":"یک سؤال دارم."},{"order":2,"speaker":"Lena","text":"Sure. What's the question?","translation_fa":"حتماً. سؤال چیه؟"},{"order":3,"speaker":"Jon","text":"I don't understand this word.","translation_fa":"این کلمه را متوجه نمی‌شوم."},{"order":4,"speaker":"Lena","text":"No problem. Let's look at it.","translation_fa":"مشکلی نیست. با هم نگاهش کنیم."}],"status":"approved"}},
-
-    {"kind":"exercise","external_id":"ex_study_vocab","data":{"lesson_key":"a1-study-01","exercise_type":"multiple_choice","prompt":{"fa":"homework یعنی چه؟"},"options":["تکلیف","کلاس","کتاب","سؤال"],"answer":{"value":"تکلیف"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_study_build","data":{"lesson_key":"a1-study-02","exercise_type":"sentence_building","prompt":{"fa":"«یک سؤال دارم.» را بساز.","tokens":["question","a","have","I"]},"answer":{"tokens":["I","have","a","question"],"text":"I have a question."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_study_understand","data":{"lesson_key":"a1-study-02","exercise_type":"multiple_choice","prompt":{"fa":"اگر چیزی را نفهمیدی، کدام جمله مناسب است؟"},"options":["I don't understand.","I don't class.","I am homework.","I question."],"answer":{"value":"I don't understand."},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_study_listen","data":{"lesson_key":"a1-study-01","exercise_type":"listening","prompt":{"instruction_fa":"گوش کن و ساعت کلاس را انتخاب کن.","audio_text":"I have class at ten."},"options":["ten","nine","eight","eleven"],"answer":{"value":"ten"},"difficulty":1,"cefr":"A1","status":"approved"}},
-    {"kind":"exercise","external_id":"ex_study_speak","data":{"lesson_key":"a1-study-02","exercise_type":"speaking","prompt":{"instruction_fa":"این جمله را بگو.","value":"I have a question."},"answer":{"expected_text":"I have a question."},"difficulty":1,"cefr":"A1","status":"approved"}}
+    {
+      "kind": "concept",
+      "external_id": "c_study_student",
+      "data": {
+        "slug": "study_student",
+        "lesson_key": "a1-study-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "student"
+        },
+        "translations": {
+          "fa": "دانش‌آموز / دانشجو"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_study_student",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "lemma": "student",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "study_student"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_study_student",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "lexeme_ref": "lx_study_student",
+        "surface_form": "student",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_study_class",
+      "data": {
+        "slug": "study_class",
+        "lesson_key": "a1-study-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "class"
+        },
+        "translations": {
+          "fa": "کلاس"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_study_class",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "lemma": "class",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "study_class"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_study_class",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "lexeme_ref": "lx_study_class",
+        "surface_form": "class",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_study_homework",
+      "data": {
+        "slug": "study_homework",
+        "lesson_key": "a1-study-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "homework"
+        },
+        "translations": {
+          "fa": "تکلیف"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_study_homework",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "lemma": "homework",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "study_homework"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_study_homework",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "lexeme_ref": "lx_study_homework",
+        "surface_form": "homework",
+        "grammatical_features": {
+          "countability": "uncountable"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_study_book",
+      "data": {
+        "slug": "study_book",
+        "lesson_key": "a1-study-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "book"
+        },
+        "translations": {
+          "fa": "کتاب"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_study_book",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "lemma": "book",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "study_book"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_study_book",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "lexeme_ref": "lx_study_book",
+        "surface_form": "book",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_study_question",
+      "data": {
+        "slug": "study_question",
+        "lesson_key": "a1-study-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "question"
+        },
+        "translations": {
+          "fa": "سؤال"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_study_question",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "lemma": "question",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "study_question"
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_study_question",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "lexeme_ref": "lx_study_question",
+        "surface_form": "question",
+        "grammatical_features": {
+          "number": "singular"
+        },
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_study_have_class",
+      "data": {
+        "slug": "study_have_class",
+        "lesson_key": "a1-study-01",
+        "concept_type": "functional",
+        "forms": {
+          "en": "I have class at …"
+        },
+        "translations": {
+          "fa": "من ساعت ... کلاس دارم."
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_study_dont_understand",
+      "data": {
+        "slug": "study_dont_understand",
+        "lesson_key": "a1-study-02",
+        "concept_type": "functional",
+        "forms": {
+          "en": "I don't understand."
+        },
+        "translations": {
+          "fa": "متوجه نمی‌شوم."
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_study_class",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "text": {
+          "en": "I have class at ten."
+        },
+        "translations": {
+          "fa": "من ساعت ده کلاس دارم."
+        },
+        "intent": "state_class_time",
+        "concept_refs": [
+          "study_have_class",
+          "study_class"
+        ],
+        "cefr": "A1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_study_homework",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "text": {
+          "en": "I have homework tonight."
+        },
+        "translations": {
+          "fa": "امشب تکلیف دارم."
+        },
+        "intent": "state_homework",
+        "concept_refs": [
+          "study_homework"
+        ],
+        "cefr": "A1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_study_question",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "text": {
+          "en": "I have a question."
+        },
+        "translations": {
+          "fa": "یک سؤال دارم."
+        },
+        "intent": "ask_for_help",
+        "concept_refs": [
+          "study_question"
+        ],
+        "cefr": "A1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_study_understand",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "text": {
+          "en": "I don't understand this question."
+        },
+        "translations": {
+          "fa": "این سؤال را متوجه نمی‌شوم."
+        },
+        "intent": "signal_non_understanding",
+        "concept_refs": [
+          "study_dont_understand",
+          "study_question"
+        ],
+        "cefr": "A1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_study_have_noun",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "slug": "a1-have-class-homework",
+        "title": "have + class/homework",
+        "rule_summary": "Use have with class, homework, or a question to talk about study situations.",
+        "explanation": {
+          "fa": "در موقعیت‌های درسی برای گفتن داشتن کلاس، تکلیف یا سؤال از have استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "I have class at nine.",
+            "fa": "ساعت نه کلاس دارم."
+          },
+          {
+            "en": "I have homework.",
+            "fa": "تکلیف دارم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_study_before_class",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "title": "Before class",
+        "setting": "school hallway",
+        "cefr": "A1",
+        "topic": "school-study",
+        "characters": [
+          "Eli",
+          "Fatima"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Eli",
+            "text": "Do you have class now?",
+            "translation_fa": "الان کلاس داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Fatima",
+            "text": "Yes, I have English class at ten.",
+            "translation_fa": "بله، ساعت ده کلاس انگلیسی دارم."
+          },
+          {
+            "order": 3,
+            "speaker": "Eli",
+            "text": "Do you have homework too?",
+            "translation_fa": "تکلیف هم داری؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Fatima",
+            "text": "Yes, a little.",
+            "translation_fa": "بله، کمی."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_study_help",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "title": "A question in class",
+        "setting": "classroom",
+        "cefr": "A1",
+        "topic": "school-study",
+        "characters": [
+          "Jon",
+          "Lena"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Jon",
+            "text": "I have a question.",
+            "translation_fa": "یک سؤال دارم."
+          },
+          {
+            "order": 2,
+            "speaker": "Lena",
+            "text": "Sure. What's the question?",
+            "translation_fa": "حتماً. سؤال چیه؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Jon",
+            "text": "I don't understand this word.",
+            "translation_fa": "این کلمه را متوجه نمی‌شوم."
+          },
+          {
+            "order": 4,
+            "speaker": "Lena",
+            "text": "No problem. Let's look at it.",
+            "translation_fa": "مشکلی نیست. با هم نگاهش کنیم."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_study_vocab",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "homework یعنی چه؟"
+        },
+        "options": [
+          "تکلیف",
+          "کلاس",
+          "کتاب",
+          "سؤال"
+        ],
+        "answer": {
+          "value": "تکلیف"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: تکلیف\nنکتهٔ واژگانی: «homework»: «تکلیف»",
+          "model_answer": "homework",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_study_build",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "«یک سؤال دارم.» را بساز.",
+          "tokens": [
+            "question",
+            "a",
+            "have",
+            "I"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "I",
+            "have",
+            "a",
+            "question"
+          ],
+          "text": "I have a question."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: یک سؤال دارم.\nنکتهٔ واژگانی: «question»: «سؤال»\nجملهٔ الگو را یک‌بار کامل بخوان؛ سپس جای فعل و عبارت زمان یا مکان را در آن پیدا کن.",
+          "model_answer": "I have a question.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_study_understand",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "اگر چیزی را نفهمیدی، کدام جمله مناسب است؟"
+        },
+        "options": [
+          "I don't understand.",
+          "I don't class.",
+          "I am homework.",
+          "I question."
+        ],
+        "answer": {
+          "value": "I don't understand."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: متوجه نمی‌شوم.\nنکتهٔ واژگانی: «i don t understand»: «متوجه نمی‌شوم.»",
+          "model_answer": "I don't understand.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_study_listen",
+      "data": {
+        "lesson_key": "a1-study-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و ساعت کلاس را انتخاب کن.",
+          "audio_text": "I have class at ten."
+        },
+        "options": [
+          "ten",
+          "nine",
+          "eight",
+          "eleven"
+        ],
+        "answer": {
+          "value": "ten"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: من ساعت ده کلاس دارم.\nنکتهٔ واژگانی: «i have class at»: «من ساعت ... کلاس دارم.»؛ «class»: «کلاس»\nدوباره گوش کن و کلماتِ مربوط به پاسخ هدف را در متن شنیده‌شده پیدا کن.",
+          "model_answer": "I have class at ten.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده.",
+          "transcript_en": "I have class at ten."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_study_speak",
+      "data": {
+        "lesson_key": "a1-study-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را بگو.",
+          "value": "I have a question."
+        },
+        "answer": {
+          "expected_text": "I have a question."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "status": "approved",
+        "feedback": {
+          "explanation_fa": "معنی جمله: یک سؤال دارم.\nنکتهٔ واژگانی: «question»: «سؤال»\nمدل را با گروه‌های معنایی کوتاه تمرین کن؛ میان کلماتِ یک گروه مکث اضافی نگذار.",
+          "model_answer": "I have a question.",
+          "retry_tip_fa": "ابتدا مدل و توضیح را مرور کن؛ سپس بدون نگاه‌کردن دوباره پاسخ بده."
+        }
+      }
+    }
   ]
 }
