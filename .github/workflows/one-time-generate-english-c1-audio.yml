@@ -61,10 +61,10 @@ jobs:
       - name: Resolve and lock every required voice
         run: python scripts/resolve_audio_voices.py audio/manifests/en/C1.json --write-lock
 
-      - name: Generate all missing C1 audio
+      - name: Generate C1 audio
         run: |
           python scripts/generate_audio.py audio/manifests/en/C1.json \
-            --confirm-paid-generation --only-missing --concurrency 2
+            --confirm-paid-generation --concurrency 2
 
       - name: Validate generated C1 audio
         run: python scripts/validate_audio_manifest.py audio/manifests/en/C1.json --require-generated
