@@ -1,6 +1,6 @@
 -- Generated audio link import for en-US A1
 -- Source manifest: audio/manifests/en/A1.json
--- Generated rows: 691
+-- Generated rows: 733
 -- Storage mode: relative_path
 -- storage_url is intentionally portable; prepend your server/CDN base URL at runtime.
 -- Run AFTER the matching level content import.
@@ -16,6 +16,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3249e0f5-b130-5924-8dde-5132c488b2d4', 1)
   AND voice_key = 'character:hana:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_possessions_station:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'bedecc0ddf188dcd1ab4fc346f93525c49294e5cb274e6aa86617068048ef965'
   AND status <> 'archived';
@@ -41,6 +42,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('5a8d128f-7105-5aee-ac59-691914082d4f', 1)
   AND voice_key = 'character:nora:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_family_photo:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0425fc57a97ef177fbdfca3d6e792f9900fe7c95018e0ab283a8881b844e9ced'
   AND status <> 'archived';
@@ -66,6 +68,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f479aba7-67a3-511d-ab1e-2e9b40c5d58e', 1)
   AND voice_key = 'character:zoe:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_hobbies_park:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd12d001a70866f33f6cd6598775283e3cb49bb74b6b589312f19b6e1512c6a8e'
   AND status <> 'archived';
@@ -91,6 +94,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f885a4d2-9c8e-51cb-b891-70b1b23f4d25', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_objects_shop:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4fa46f6ddc6d1f90a112624a0878fc93515c37a86dd4d1eb3be6f320d7a547de'
   AND status <> 'archived';
@@ -116,6 +120,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('acb25ee3-60c3-5f91-bbd8-2556db75f78a', 1)
   AND voice_key = 'character:noura:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_repeat_name:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b984efe2c677bdd165161f95cd304cd090be511dd50fa20cd218f623b3269a28'
   AND status <> 'archived';
@@ -141,6 +146,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('134661ad-6521-5cd9-b479-c432439f4139', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_shop_clothes:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a7cff497b256a2ef2363db260f7cd338ab085e88516c5f8d180cb445158ab66b'
   AND status <> 'archived';
@@ -166,6 +172,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b97f7276-7fec-538b-b247-6cdcd7a71ffb', 1)
   AND voice_key = 'character:noah:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_possessions_station:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '20e3c7c0dc7ba2422572c20c40803707e2904edba9544a652426cd0cd8395aab'
   AND status <> 'archived';
@@ -185,12 +192,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_jobs_lunch:2 -> audio/generated/en-US/dialogues/0cf928788c311fb8f66dca96b8fff77b2e24a8aac4734ff542e12f8c8228adbf.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('845e5958-bab2-5486-b189-0264f499023c', 1)
+  AND voice_key = 'character:mei:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_jobs_lunch:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c9397652eca0527be650850f001f86b437a8419b40a83e68f5e734a3ce933564'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2f57d0b1-b228-5d0a-8112-8d4e1323c1ed', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('845e5958-bab2-5486-b189-0264f499023c', 1), 'c9397652eca0527be650850f001f86b437a8419b40a83e68f5e734a3ce933564',
+  'character:mei:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/dialogues/0cf928788c311fb8f66dca96b8fff77b2e24a8aac4734ff542e12f8c8228adbf.mp3', 1384, '2026-09-12 13:22:18.206989', 'daa1f27ba0b96ffe388c4e8dd40ef6ef26735ad1de7c62049b3cab029afec7c3', 'validated', '{"audio_key":"0cf928788c311fb8f66dca96b8fff77b2e24a8aac4734ff542e12f8c8228adbf","entity_key":"d_jobs_lunch:2","voice_id":"kdnRe2koJdOK4Ovxn2DI","voice_name":"Eryn - Genuine, Friendly and Natural","voice_labels":{"gender":"female","accent":"american","age":"middle_aged","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"daa1f27ba0b96ffe388c4e8dd40ef6ef26735ad1de7c62049b3cab029afec7c3","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.98},"relative_path":"audio/generated/en-US/dialogues/0cf928788c311fb8f66dca96b8fff77b2e24a8aac4734ff542e12f8c8228adbf.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_time_meeting:3 -> audio/generated/en-US/dialogues/0d40aa9f9160d24f68c84facc791957caee5bea54dc3ba3b917014730598f70a.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('eae63f90-8346-508a-a594-4551fc374d77', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_time_meeting:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '40865f4250d91d125941a59721cb16e3aae03f0b093503af23762e4d78171154'
   AND status <> 'archived';
@@ -216,6 +250,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e2a9e714-038e-5e8e-990a-521cff1c82d6', 1)
   AND voice_key = 'character:eli:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_study_before_class:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd86510a5d0559dd6c2bfac7186f71cfff974ab80abe33d1429d3d5c4d56d9826'
   AND status <> 'archived';
@@ -241,6 +276,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c4c65892-5988-5711-9b7f-7424c0dc0a87', 1)
   AND voice_key = 'character:nora:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cal_class:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '313722c4ef6070e9e0fb5e5d50f685dc426f9d4fe9028688cd8a9adb70e5e2f2'
   AND status <> 'archived';
@@ -266,6 +302,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ab3c5f4c-83d0-5ce1-b49a-e4b5c07b58d6', 1)
   AND voice_key = 'character:yuki:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_name_form:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ce213224899ae46fc973cbf8fd8be9ebdecca486887c0a1c1932fb24cdfa8703'
   AND status <> 'archived';
@@ -291,6 +328,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('67a03384-8549-5a6b-87f4-28aa87c64546', 1)
   AND voice_key = 'character:nora:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_people_photo:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b7f28b09afe416287024cabcba27e176d8516368662a2cd99e283e4ad219e46b'
   AND status <> 'archived';
@@ -316,6 +354,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('9745dc49-6120-52b2-9ec4-267b56faed89', 1)
   AND voice_key = 'character:lena:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_polite_bus:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '91680e48f3f1a17e48ab39fdc99c594a2417338827ab5b191c382f4774ef084f'
   AND status <> 'archived';
@@ -341,6 +380,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ea16e2db-bf63-5c5f-9fec-c7e8d041f97f', 1)
   AND voice_key = 'character:rosa:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_objects_move:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1f138ece31453c2005e2c12c742d2c05bc6c4e93de60c2c687cc59180d7c43ac'
   AND status <> 'archived';
@@ -366,6 +406,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e636ccbe-b5b2-509e-9562-0db9bf72abe7', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_morning_hallway:5')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b730320655ef331c86a45159cbcee93018d4076409350ad9ec2482ea8e38db55'
   AND status <> 'archived';
@@ -391,6 +432,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8c957309-91e2-5f54-81b6-fb697838c3c8', 1)
   AND voice_key = 'character:lina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_end_of_day:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1cb7b221b7adda1cf4c4724b32369394580480c84ab835795d608ac59aa13002'
   AND status <> 'archived';
@@ -416,6 +458,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('1bfd65a4-7e0a-5a3c-8b45-f25927ceebe8', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_home_find_phone:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '124eb273f9a0a470e3d6930f97e1402f311a753dc9d656b1ef17ef12367caffa'
   AND status <> 'archived';
@@ -441,6 +484,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8abc5c3b-8274-5575-8aa3-42ec3291cf1e', 1)
   AND voice_key = 'character:hana:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_tr_bus_route:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9f6688a53ad13f0a84b25eddc328894d786ea530c24573288961e58ddf4e7e51'
   AND status <> 'archived';
@@ -466,6 +510,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f7ebfeb5-9981-5ced-8f35-2e0c08fd7f6f', 1)
   AND voice_key = 'character:daniel:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_name_form:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724'
   AND status <> 'archived';
@@ -491,6 +536,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f3b39918-98c9-5d83-96f1-67b7c6fa4d00', 1)
   AND voice_key = 'character:chris:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_polite_cafe:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8e38acd7b1fc75a2de97082b3357b547e17388d310a720920e234bcc71d78f04'
   AND status <> 'archived';
@@ -516,6 +562,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('101ba20e-3905-5c68-86e5-f5a0edda7118', 1)
   AND voice_key = 'character:leo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_possessions_door:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4cc8181c1fa86c8bfc74fe428f9ba11c457d8297abb12f323214af94432565cb'
   AND status <> 'archived';
@@ -541,6 +588,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b73a90fe-a11c-5aba-934d-7477a4a47249', 1)
   AND voice_key = 'character:jack:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_body_photo:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2bc90fe37fc19963e0690898d6070ed5b0e6c056440617cde74aba7bc990ac04'
   AND status <> 'archived';
@@ -566,6 +614,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('0f4a4fa6-61c9-552d-86ec-1bfc4613fb96', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_objects_move:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '076483896d24e52c42bb2e39186a9b2d4af80f3bcc3ab194a4e51d7770545d0b'
   AND status <> 'archived';
@@ -591,6 +640,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ccf031ea-3822-5083-8d58-0b10ea7650ae', 1)
   AND voice_key = 'character:leo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_possessions_door:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '048f3e3caf2bb8e2a1e3b72087aaad0df33717d0a00e643374a800843da08185'
   AND status <> 'archived';
@@ -616,6 +666,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('4561105b-a918-504f-8348-845512a70614', 1)
   AND voice_key = 'character:dina:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_tr_commute:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '27a73532f2e3c0bca49d884eaf27e6aba0f1cf003bac5cd6eb4a4499b607cc4f'
   AND status <> 'archived';
@@ -635,12 +686,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_tr_bus_route:1 -> audio/generated/en-US/dialogues/1d18594d60006c29e842cf41f9eca225af9891b20738aac4ccdc548e9209d0a8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('70036a6b-3188-5ede-8dc2-4ba1b6bd26fa', 1)
+  AND voice_key = 'character:hana:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_tr_bus_route:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '87459f3d10fe6ad7eee0a3088ccc7530d73d0747b157a8889f388dfd67194ab4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('21c318bc-03ca-5c14-9c58-afee59799512', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('70036a6b-3188-5ede-8dc2-4ba1b6bd26fa', 1), '87459f3d10fe6ad7eee0a3088ccc7530d73d0747b157a8889f388dfd67194ab4',
+  'character:hana:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/dialogues/1d18594d60006c29e842cf41f9eca225af9891b20738aac4ccdc548e9209d0a8.mp3', 1854, '2026-09-12 13:22:18.339915', 'da7539d37429cd4367ff4701a09867a60b393dbba6f59c305ed683692422a499', 'validated', '{"audio_key":"1d18594d60006c29e842cf41f9eca225af9891b20738aac4ccdc548e9209d0a8","entity_key":"d_tr_bus_route:1","voice_id":"OYTbf65OHHFELVut7v2H","voice_name":"Hope - Natural, Clear and Calm","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"da7539d37429cd4367ff4701a09867a60b393dbba6f59c305ed683692422a499","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/dialogues/1d18594d60006c29e842cf41f9eca225af9891b20738aac4ccdc548e9209d0a8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_routine_morning:2 -> audio/generated/en-US/dialogues/1e83012882fc205ef17a3af8c2c7d9bbde7483b74eb8cfca61352b63ef84cacc.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('069acfa1-8837-5bd7-9bfa-ae1a7cb27c12', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_routine_morning:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b7709c3cc590c682adf631133c48c1d6990ce6ffa2b728ba4e280084c235d463'
   AND status <> 'archived';
@@ -666,6 +744,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f6696f70-25e9-5a05-b7e5-f9265966e7be', 1)
   AND voice_key = 'character:emma:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cafe_order:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '48ead1b36dc67e43371d7f4b3fbf09e24d59b0ff6553ef3245f38d5565c358f1'
   AND status <> 'archived';
@@ -691,6 +770,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f32a8649-5063-5692-a2a2-787088f54d9d', 1)
   AND voice_key = 'character:eli:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_trip:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8'
   AND status <> 'archived';
@@ -710,37 +790,13 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
--- d_tr_bus_route:1 -> audio/generated/en-US/dialogues/20037b9e63070f96cd81024127e533fa1ea340f801645b0e30d25f5bd122e1e2.mp3
-UPDATE audio_assets
-SET status = 'archived'
-WHERE entity_type = 'dialogue_turn'
-  AND entity_id = UUID_TO_BIN('70036a6b-3188-5ede-8dc2-4ba1b6bd26fa', 1)
-  AND voice_key = 'character:hana:female_calm'
-  AND source_text_hash IS NOT NULL
-  AND source_text_hash <> '3984efa3d4e36a62bc249d5aabec6573e5ead8b84e93691899b1867c650a1528'
-  AND status <> 'archived';
-INSERT INTO audio_assets (
-  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
-  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
-) VALUES (
-  UUID_TO_BIN('ff7154e1-96f2-5072-9660-c48db388e105', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('70036a6b-3188-5ede-8dc2-4ba1b6bd26fa', 1), '3984efa3d4e36a62bc249d5aabec6573e5ead8b84e93691899b1867c650a1528',
-  'character:hana:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/dialogues/20037b9e63070f96cd81024127e533fa1ea340f801645b0e30d25f5bd122e1e2.mp3', 1854, '2026-09-12 08:21:34.417715', 'ccb9d2740f64dd738bd844c3809361f1d7a0c21de23a3ddc4283f78dcc94530d', 'validated', '{"audio_key":"20037b9e63070f96cd81024127e533fa1ea340f801645b0e30d25f5bd122e1e2","entity_key":"d_tr_bus_route:1","voice_id":"OYTbf65OHHFELVut7v2H","voice_name":"Hope - Natural, Clear and Calm","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"ccb9d2740f64dd738bd844c3809361f1d7a0c21de23a3ddc4283f78dcc94530d","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/dialogues/20037b9e63070f96cd81024127e533fa1ea340f801645b0e30d25f5bd122e1e2.mp3"}'
-) ON DUPLICATE KEY UPDATE
-  provider = VALUES(provider),
-  provider_model = VALUES(provider_model),
-  storage_url = VALUES(storage_url),
-  duration_ms = VALUES(duration_ms),
-  generated_at = VALUES(generated_at),
-  checksum = VALUES(checksum),
-  status = VALUES(status),
-  metadata = VALUES(metadata);
-
 -- d_req_table:2 -> audio/generated/en-US/dialogues/2003d522cf2f44eaecc95dafb76dda01688e6997e7f3778f5ee09537b1396d60.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3d5e663a-cff1-5bf7-acbf-c18511060c25', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_req_table:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8e38acd7b1fc75a2de97082b3357b547e17388d310a720920e234bcc71d78f04'
   AND status <> 'archived';
@@ -766,6 +822,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('30158836-d2c6-5280-9409-8042ff021181', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_time_meeting:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'fdbd434b09461cc66bd9dc2bcf27c0e76d4e646fa851bc49c5d663f2a5b2dcf0'
   AND status <> 'archived';
@@ -791,6 +848,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('0f95bf57-9c5b-55fe-a21e-d0ab0dc75cb5', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_polite_cafe:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350'
   AND status <> 'archived';
@@ -816,6 +874,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8fde640d-9af0-5614-9c28-5e233b186302', 1)
   AND voice_key = 'character:ravi:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cafe_order:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '554e6ec0bec97ecc209b48546b45280204074b5fb33144fa949856ab16fada6f'
   AND status <> 'archived';
@@ -841,6 +900,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('1ac4f232-61ee-5425-b6a5-0f3aca6b5024', 1)
   AND voice_key = 'character:lina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_food_breakfast:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8'
   AND status <> 'archived';
@@ -866,6 +926,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('7eb22da5-1410-53cf-a80f-4ec51a9996e8', 1)
   AND voice_key = 'character:hana:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_possessions_station:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8996b271a0a7076e20abe0a16e1d22999c6f84a492943382c32f14518116ab6e'
   AND status <> 'archived';
@@ -891,6 +952,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('2988e245-cf4a-506f-ae30-281e85f0a484', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_questions_newplace:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0607f6f0919b4db4a6d1fadcfa11bac164fb5aa636ff29e968bd6bb48a715fdb'
   AND status <> 'archived';
@@ -916,6 +978,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('cedc5dd6-39cd-59e7-9927-4ea099e990e5', 1)
   AND voice_key = 'character:noah:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_health_home:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c7e055a695603f2b666bfcbba6246749e004349e5303065a42025e99e0a4ea67'
   AND status <> 'archived';
@@ -941,6 +1004,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('88e8968c-6187-59a5-82b0-d46dc16e63f2', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_countries_class:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1'
   AND status <> 'archived';
@@ -966,6 +1030,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f08a724e-cbfb-5303-b29a-ada90385e816', 1)
   AND voice_key = 'character:drake:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_health_clinic:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f4991919914817d7b55e4c400b6912eb0740b2fa2be2460e72bbcd8f8a2cb3a0'
   AND status <> 'archived';
@@ -991,6 +1056,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e84c0bcb-d4d1-5e2f-ac55-9ca4c30e899d', 1)
   AND voice_key = 'character:lina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_price_market:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e860b0f0c5631d2f9e61a7330dedca4d71a3ad75d1804340612b2d1b154c3d10'
   AND status <> 'archived';
@@ -1016,6 +1082,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('eaadff6f-6920-547d-95b8-75415ee2c2a1', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_food_breakfast:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e6d8f347a03ceb88267fa70da0460facab6d5fca98607f37cac32bdf2eecf3e9'
   AND status <> 'archived';
@@ -1041,6 +1108,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('fd9c9ef0-4e8d-5023-af81-4ee9f96451ce', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_polite_cafe:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8d8b78a38614c451f08b8bb11a736cd0b470920d6893394681c56a4fc0899158'
   AND status <> 'archived';
@@ -1066,6 +1134,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b5a6d5b8-b3cd-5494-b7a6-990c78d4ebd8', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_polite_bus:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '815644d15cc8014f28708224e43fb5f9135f1f75076e3773e7dcf35367d92ef6'
   AND status <> 'archived';
@@ -1091,6 +1160,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ea3905a7-eaea-5406-b5c0-b9b2701069ad', 1)
   AND voice_key = 'character:eli:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_basic:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a9f5a974c8a79b21d9a3d831014c0154ffa42a4ed243ee14290597a6d33ecef4'
   AND status <> 'archived';
@@ -1116,6 +1186,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('2d7f7bfd-1525-5906-ae6e-ef5366f725c3', 1)
   AND voice_key = 'character:alex:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_repeat_name:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '49ff4e152e6b7d4bee52d36501204c1a7ae847d5be902e492a8c7bb3d95d36e1'
   AND status <> 'archived';
@@ -1141,6 +1212,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8b333de5-524f-51c1-89f8-eeae892328df', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_music:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '39063c938de441cb81da540a38ea5fa99d4f80a7629c8998b79b36709b5ec870'
   AND status <> 'archived';
@@ -1166,6 +1238,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('90a31c77-ff6c-5259-adda-3c5c476b2836', 1)
   AND voice_key = 'character:eli:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cal_class:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9c65a31e8175f2397abb344494af28447353653659fed95393956109acac3370'
   AND status <> 'archived';
@@ -1191,6 +1264,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('06c278da-1768-5b1d-870e-8af5ccbfb721', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_age_party:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '51f4735a4abb3c20d5c1c13a30e6eb85595550847ddb6ed5499e99eef27f6613'
   AND status <> 'archived';
@@ -1216,6 +1290,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c3a507bb-53f0-5bcb-a566-60a87a07575c', 1)
   AND voice_key = 'character:chris:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_polite_cafe:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '124eb273f9a0a470e3d6930f97e1402f311a753dc9d656b1ef17ef12367caffa'
   AND status <> 'archived';
@@ -1241,6 +1316,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('01d14156-11bb-59e4-a761-b02eed50b299', 1)
   AND voice_key = 'character:roya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_family_visit:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '031b1a4d99fa488aa97c4d717c119a8df554bc6d176d79c8ba7c91d52771994c'
   AND status <> 'archived';
@@ -1266,6 +1342,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('0106babd-92af-5895-9972-2ce73ba73569', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_questions_plans:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'db982c32e0a8c244dec62e0d3bc29402477d2dd6ab292a57c9717568344d2bcb'
   AND status <> 'archived';
@@ -1291,6 +1368,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('4c05daed-f0c1-5a72-8da2-a902640cade5', 1)
   AND voice_key = 'character:jack:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_town_station:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7a602afd45b9b48fb1d5163446368559510b627db0a5aab5bf0944ff061f5434'
   AND status <> 'archived';
@@ -1316,6 +1394,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('61e6506f-035d-517e-a7b8-1faea59bfc0b', 1)
   AND voice_key = 'character:amir:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_meet_at_class:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'fa4967645b7d1c4bd800887e3652928f6c0672cc6094bfcddab85a517c6d0c76'
   AND status <> 'archived';
@@ -1341,6 +1420,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('0299f282-8eee-5ec8-8cb0-3a9ce73143c8', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cafe_bill:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b8b7cfdf4758ef90476310dd4bffc7be69cdefdf57c1b98935a2fdc474fab753'
   AND status <> 'archived';
@@ -1366,6 +1446,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('cb688088-6371-5335-88f4-64a135e31389', 1)
   AND voice_key = 'character:diego:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_jobs_lunch:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0201d4d8b5a557144a5aa0ee07c8b5840daf5b5d245026d31ae34edd8650afa9'
   AND status <> 'archived';
@@ -1391,6 +1472,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('78a397b8-56bc-54cb-aef6-954957f442e9', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_req_classroom:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1b76e850f31faf09fa120b3ba617703e328746f8e3f50fe21a65a352d0e68257'
   AND status <> 'archived';
@@ -1416,6 +1498,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a0738a81-5c17-516b-826c-3486a9224c84', 1)
   AND voice_key = 'character:jonas:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_countries_class:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1160a5ae1cde058c44e56e7c2f49bfb0197bf04c41e13314741bb014d1582047'
   AND status <> 'archived';
@@ -1441,6 +1524,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('844297c6-78ea-5449-b4a7-37c129b52f81', 1)
   AND voice_key = 'character:lena:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_study_help:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '761f18e7f80eeadb0bec5ea94c996a2e158ff4faf124da84d09607f772cf45a7'
   AND status <> 'archived';
@@ -1466,6 +1550,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('fdc14064-7f54-5b22-9082-47c579a79334', 1)
   AND voice_key = 'character:leo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_plan_invite:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e4b9c2673972e20a79a2711687e575136d405e52aec961966a43157d8712c360'
   AND status <> 'archived';
@@ -1491,6 +1576,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b2d47a0a-75d3-5838-ad40-7a5d2e998882', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_cafe:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2f83d17d3a267122935456bb9fb3057cccbd227ae81fcde18d0d1b883a2d609c'
   AND status <> 'archived';
@@ -1516,6 +1602,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('5c4cb0af-b738-5ee1-b18a-253dcd78fd9b', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_polite_bus:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '082cb158de32f2d90ad813145d491221d8719732f1f65a7f6f385692b99ab159'
   AND status <> 'archived';
@@ -1541,6 +1628,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('03989f56-09f9-571a-99c5-59bba46c211d', 1)
   AND voice_key = 'character:priya:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_spell_name:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4efc8eb153c8b143dd8c1d7b13143b17208565b74dd37c1585cbd7b048d0e621'
   AND status <> 'archived';
@@ -1566,6 +1654,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e1fc9780-824f-5b77-ab65-e9e689b3c7f7', 1)
   AND voice_key = 'character:rosa:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_objects_move:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3f716eabc0889ed8aab8c303e450239e0d62bbdec45313b541e6069b97de1221'
   AND status <> 'archived';
@@ -1591,6 +1680,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ba6dac20-d387-540e-aafb-7d6967016bf4', 1)
   AND voice_key = 'character:jon:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_plan_evening:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9c2ffd1dccdaceb43e3aab02e8b15504c7ba0627bc744b76270275a3c59f0700'
   AND status <> 'archived';
@@ -1616,6 +1706,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('81065c0d-957e-51a6-8272-8171c5381fbb', 1)
   AND voice_key = 'character:leo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_morning_hallway:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c9ebfb6f4b8e880908a737b8d770aa3a518fb6053b327720e8dcc79609c32858'
   AND status <> 'archived';
@@ -1641,6 +1732,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('5fdde421-4b0b-5dd3-845f-fc2fdf32fdbe', 1)
   AND voice_key = 'character:mei:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_jobs_lunch:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ca30fa7eff486e8524f3d381548d02d3e70a1275f0c63f9c33bcb5f5034e97f7'
   AND status <> 'archived';
@@ -1666,6 +1758,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b734c5f2-b3d5-541f-9f62-1f8f87587099', 1)
   AND voice_key = 'character:marco:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_window:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '08f4321f7e98869b1c019ba5cae1a18c95cb19d270b15a806ca400f0c88be2a4'
   AND status <> 'archived';
@@ -1691,6 +1784,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('36a52403-bf84-5643-96f9-ca282f5e5064', 1)
   AND voice_key = 'character:emma:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cafe_order:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '428c7f109e54dac67c84d19233434edbe5b98ab1167db8aa1fd3bd51310cb1fa'
   AND status <> 'archived';
@@ -1716,6 +1810,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('859b4022-c5b9-5a7f-93f3-5090017ae1ee', 1)
   AND voice_key = 'character:hana:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_evening_lobby:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0248808ddaa3479e17482884c8bb3f281b20264c8299aa434d2b6cba256b9ec3'
   AND status <> 'archived';
@@ -1741,6 +1836,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('67543129-685d-5fa2-8472-cdf04c4a3748', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_cafe:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '316df3f4ea292c099844eb76d0f2c203323b2968c2186ba9c66967ac5dc74bca'
   AND status <> 'archived';
@@ -1766,6 +1862,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('fe730494-4c4a-52d9-bf64-ddeb5419224d', 1)
   AND voice_key = 'character:ari:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_hobbies_break:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5ffb1c2d7d7635bfb3589b2f631d9f4d7c0321e7d5f2c9e8aedb362acaf8a81e'
   AND status <> 'archived';
@@ -1791,6 +1888,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a1123336-0b7d-51b1-aad9-06051630a6fd', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_town_new_area:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5e8088b90f6e629e3fbe70ace2b6628cb3091ad0c4fa914de600b98cb602ceeb'
   AND status <> 'archived';
@@ -1816,6 +1914,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('be0cdcb9-36f0-5450-8623-4aeb9b758bf2', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_plan_evening:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5281545363aac5b04642669bef0f9f871406b660f6d3a1b2a16b162cf16faf31'
   AND status <> 'archived';
@@ -1841,6 +1940,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('1f27ade9-efe6-5ca4-a53a-db8c61e02254', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_health_clinic:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '47c0688b38575d7898be302ccbd1ba7bb0b83ed8f4bb12fd0bcbb039925e592b'
   AND status <> 'archived';
@@ -1866,6 +1966,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('04b87f4c-217b-5fe4-a280-31c38e219cf5', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_music:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e79e4a53d5516160700e30007be031f2643690a4449c25d0914bd04b6a7173c9'
   AND status <> 'archived';
@@ -1891,6 +1992,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('60f123ed-b75c-5cbd-8c27-b030bf20a2c2', 1)
   AND voice_key = 'character:noah:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_health_home:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4f96af8f1a030916e2152368644c573b64055d0c2c7025be5bf6e5239f51c39f'
   AND status <> 'archived';
@@ -1916,6 +2018,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e0f9ca31-4bd7-505d-9515-46b1a25eb7b1', 1)
   AND voice_key = 'character:leo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_plan_invite:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0915f9fe630252118c0062ccf28db0d90335662185e27d718bb17a174663934d'
   AND status <> 'archived';
@@ -1941,6 +2044,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('51f8a3af-95cc-5577-9901-6fd08abbd05c', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_health_clinic:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c363ad797d762a9e2ab2ebba4e87de3ba683734aa90e6362b4fbc2252a3f3689'
   AND status <> 'archived';
@@ -1966,6 +2070,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('64564a6f-4cc0-5b5b-9c33-dd614ebea52c', 1)
   AND voice_key = 'character:noah:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_time_meeting:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ec8b6401613e272089b2f46f37f0bbfd3939e297b057cc513538f60a16d0df81'
   AND status <> 'archived';
@@ -1991,6 +2096,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3cc6dc20-ef1b-5938-9bba-16d11c7093c3', 1)
   AND voice_key = 'character:ella:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_meet_at_class:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '93bb702a83c724a93b0347f7bab76e7d4b065a152979e178bdc08946fda6213d'
   AND status <> 'archived';
@@ -2016,6 +2122,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('382a418e-a39f-592d-99d5-9d6c7eddde61', 1)
   AND voice_key = 'character:lina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_price_market:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9ffa268ce89d667db253cb97a62065e56f05db5ff077c09f738246df545d7f4d'
   AND status <> 'archived';
@@ -2041,6 +2148,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('5541ca90-362f-513d-9531-827cd910a986', 1)
   AND voice_key = 'character:lena:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_polite_bus:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f51bead488e14b656af3a13e33eb1d6fa9580832cbb9d7a20061f84c4b1c160f'
   AND status <> 'archived';
@@ -2066,6 +2174,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('531d0500-b93a-5ede-8922-c70419c4d7a2', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_home_tour:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ee1119adf7018339e8c2b31c9000aa0594e7c12e2ec6b6d4920c0c24140bfc08'
   AND status <> 'archived';
@@ -2091,6 +2200,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8d99cd71-6655-57ec-bd3e-3ea6580d6fec', 1)
   AND voice_key = 'character:theo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_people_station:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '976cc3913b5391e06029a9f253769ff258d5ee19105edf8432115e5fbcf8db44'
   AND status <> 'archived';
@@ -2116,6 +2226,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('25c90e7c-4abf-5afe-81f3-e8113fa828b5', 1)
   AND voice_key = 'character:rami:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_town_new_area:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1e10c9451b1d20f6a232d55ddb396510513abf2940e1c3f87cb08beb845cf9d6'
   AND status <> 'archived';
@@ -2141,6 +2252,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('baaa0e6b-e400-56ae-9de1-9f009596ac03', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_shop_try:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '05d2af075f340c3073458d4e3b731689c46b707d1c96d7bb286f4ba06b05efb6'
   AND status <> 'archived';
@@ -2166,6 +2278,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('9ae47773-cfa9-5d4a-a72b-4e8f8f8e31ad', 1)
   AND voice_key = 'character:mark:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_number_room:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6eecd6cb00fb59f8064f77c930b63687c214817654e13c5bf2f847ce82137c69'
   AND status <> 'archived';
@@ -2191,6 +2304,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('70033c6c-c398-583f-8bd3-bcc96d40d747', 1)
   AND voice_key = 'character:noura:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_repeat_name:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3e2dadb3ba6ee641c2cb370f2bd6eaebdaa150e1f883461866d92b5bed98481c'
   AND status <> 'archived';
@@ -2216,6 +2330,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('6b3d680f-a8a1-5316-9c8d-61bd2c4c474c', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_plan_evening:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e812cc58f425e4ff11da252fc0a2ce4a0f5427083d692102fc020ac4823b5661'
   AND status <> 'archived';
@@ -2241,6 +2356,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a6c892ea-fa34-562d-a8a9-502f1e88ead6', 1)
   AND voice_key = 'character:jonas:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_countries_class:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2abbd6335b46954534d5d89602a52e0ac5271ff3ad027be9349960c3994069af'
   AND status <> 'archived';
@@ -2266,6 +2382,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('00c791c4-49da-580a-aece-24ef303407b8', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_objects_shop:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5d875fb879ba878046964070064f7b18d0d0b969017b13cbc0f07c4d009c350e'
   AND status <> 'archived';
@@ -2291,6 +2408,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('303a7962-c554-5cb9-95ac-d57dc2af28c9', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_req_classroom:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'eac5fa1bbef201913a874e932905a78385f6273a7e291f512540a259c36c71c2'
   AND status <> 'archived';
@@ -2316,6 +2434,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('93c43ecf-b632-5909-8686-e903fe1732a0', 1)
   AND voice_key = 'character:dina:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_tr_commute:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6abdf33f15d1793bb3122597e1d4e3ded0ea32bf535f13a62ad25b724b07cdb4'
   AND status <> 'archived';
@@ -2341,6 +2460,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f81435e2-31f1-50b9-b9eb-6c40856acabe', 1)
   AND voice_key = 'character:rita:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_jobs_party:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a052a8a6fd2160e0e96b4b20c6ab970ecab775f026367832298458891651d3e5'
   AND status <> 'archived';
@@ -2366,6 +2486,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('07e94cae-6224-5e00-8799-c71c8804bfb1', 1)
   AND voice_key = 'character:liam:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_hobbies_park:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a0578276ac43496f5224631fa248e5916ba480f11489b9a1006111d2a70f7abc'
   AND status <> 'archived';
@@ -2391,6 +2512,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('185f9540-6b26-5f51-8732-eea2eb4668b0', 1)
   AND voice_key = 'character:adam:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_jobs_party:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '07d54d545abbefa2d6b6104b3342affafb24493f4b13723dad55601754c5a695'
   AND status <> 'archived';
@@ -2416,6 +2538,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('38bf748c-ab6c-59c8-a354-84b89de8c92c', 1)
   AND voice_key = 'character:sofia:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_first_meeting:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '39954823f73a76e35ec7280de44b2eb4b26399ecdc00a2b3640db22375d3a4b3'
   AND status <> 'archived';
@@ -2441,6 +2564,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('dee5144a-47bd-588d-8860-6352f7be35a6', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_health_home:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2e5c164437ecd50f064ec0421b2fa6a4760be67ca717a3d5e80f8572528ac3e4'
   AND status <> 'archived';
@@ -2466,6 +2590,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('467cc132-bba3-5161-806a-453b35da123e', 1)
   AND voice_key = 'character:lina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_end_of_day:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c17b3ab5d807cc894e497cf01fbe04d1b4bca46d403b60f3608a677b641f5d76'
   AND status <> 'archived';
@@ -2491,6 +2616,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('28654c27-c09d-513c-840a-edd2b1320da1', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_req_table:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '124eb273f9a0a470e3d6930f97e1402f311a753dc9d656b1ef17ef12367caffa'
   AND status <> 'archived';
@@ -2516,6 +2642,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('9366e6fd-ef73-542f-8245-0ef59f2dd9f3', 1)
   AND voice_key = 'character:ella:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_meet_at_class:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ba2fccea610d6ca54ed626ae12cae853e623a129e3f810cd022e7494ca551b2a'
   AND status <> 'archived';
@@ -2541,6 +2668,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('84b1db6d-fd78-5c8d-b9ac-a75db5a5fdc1', 1)
   AND voice_key = 'character:tom:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_body_gym:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2b481749aeb3f07aef6485c32f7756f9120d5a7b36f8c53f127e0cffc917a3ca'
   AND status <> 'archived';
@@ -2566,6 +2694,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c17c0761-e1df-5d62-b091-714df85f6b8b', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_req_table:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f51bead488e14b656af3a13e33eb1d6fa9580832cbb9d7a20061f84c4b1c160f'
   AND status <> 'archived';
@@ -2591,6 +2720,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('57b4da6d-6477-5d71-91e6-610392efd5f0', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_cafe:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8e0e16ee1c5ce4ad9c51354d9dcd4a637c52b457b94d3c3eb6233b671c442ef6'
   AND status <> 'archived';
@@ -2616,6 +2746,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('31ae57a5-885f-5f4e-afd0-8444941ef268', 1)
   AND voice_key = 'character:yuki:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_name_form:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '67d74899e65f42c8512199d8bd6a17fd84a2682ebbff8dbb270eb3ec043037c9'
   AND status <> 'archived';
@@ -2641,6 +2772,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('1c958298-0062-5020-9cee-4ef442d11329', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_shop_try:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1f112e15a6c2a506eef839a11ca170d703a6f5f37290e93900ffb7cd4107a2b4'
   AND status <> 'archived';
@@ -2666,6 +2798,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e2480fdf-2fb4-5536-b39e-a4e8815920df', 1)
   AND voice_key = 'character:ari:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_hobbies_break:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '486ed9141790d8ffc52de031cd3c9f113ee9962b6c33e83424616066471bb09c'
   AND status <> 'archived';
@@ -2691,6 +2824,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c79bed2d-490f-5914-baf4-2ac5329872b4', 1)
   AND voice_key = 'character:lucas:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_age_party:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c215aaba9ef2eaa304c30d1b0f82b70cf1a8b0c31c43ec7f400a77c6d15f83e5'
   AND status <> 'archived';
@@ -2716,6 +2850,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('7d9e8de0-c564-5786-b1b5-f30501905c98', 1)
   AND voice_key = 'character:priya:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_plan_invite:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3240e154234b86e47cf6ba5dd2d3ccf9f1f54b63fa000c0ffae6b26fb1175fd2'
   AND status <> 'archived';
@@ -2741,6 +2876,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ccc52402-86d7-5841-8aa4-8cecd28ad744', 1)
   AND voice_key = 'character:amir:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_meet_at_class:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5fb6237d5732e48ed6d8995f9677d84b0eddb51e6192c2a949d27740e91d7817'
   AND status <> 'archived';
@@ -2766,6 +2902,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b396ccc3-cad1-52ed-8a03-1443d691c29b', 1)
   AND voice_key = 'character:iris:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_body_gym:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c7e055a695603f2b666bfcbba6246749e004349e5303065a42025e99e0a4ea67'
   AND status <> 'archived';
@@ -2791,6 +2928,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('24aa78b0-f5f3-5f31-a8b6-640f345eed3b', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_home_tour:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3743f03315031000c1339d7881a7fcfe3dc6fa6137ce8959466dbbfbe1411585'
   AND status <> 'archived';
@@ -2816,6 +2954,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('43d23b93-0fda-536b-a5ca-89237b08bf97', 1)
   AND voice_key = 'character:jae:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_home_find_phone:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c67a8c82d2b0b18fc1592a0effd5587fb1668b9364be4ca950a88fc07d7981a6'
   AND status <> 'archived';
@@ -2841,6 +2980,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('4df2962d-1a65-5ff5-a8b1-3ebb8fb5677b', 1)
   AND voice_key = 'character:roya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_family_visit:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '94c8b1cc817a9aa08c9f78b6f4362050f406c2ccc4c2ca6022627f22573d2941'
   AND status <> 'archived';
@@ -2866,6 +3006,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('72d84bea-f9c2-5afb-b674-fca1f983928a', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_end_of_day:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4f6f5520f3430075940c18c95d120ea81838fa2d531a136d5e4fde80ac926bb1'
   AND status <> 'archived';
@@ -2891,6 +3032,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f002b8e2-e254-57ed-9fb8-cde19aa4b16f', 1)
   AND voice_key = 'character:eli:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cal_class:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '41319d3e17d0c905cf0f5d6354f9f4b50d809072c65622468dfb4ca114172af2'
   AND status <> 'archived';
@@ -2916,6 +3058,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b6ddfc96-98a4-5b08-a657-6bf3e4bfcb1e', 1)
   AND voice_key = 'character:sam:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_blocks:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b91c6195ea47f6a66e6a2f6f7b383e6593fda5f7d010e128234b07a610f02f19'
   AND status <> 'archived';
@@ -2941,6 +3084,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e58a5d0d-24c2-5751-95af-d92d370ab4f0', 1)
   AND voice_key = 'character:ivy:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_price_compare:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9ff1930bf620c6902f33b0254188565e5d611f366b04f268f2c0e6985f504398'
   AND status <> 'archived';
@@ -2966,6 +3110,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('39a3453a-2c2f-5ac2-8d56-2c1e0ab2bafe', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_home_find_phone:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9a9b999016ecf4bf2d8c54da118a2926401c271d8b3173e7b778b72f0e7030ee'
   AND status <> 'archived';
@@ -2991,6 +3136,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('642fbca5-d513-57ba-972c-816b74beae96', 1)
   AND voice_key = 'character:daniel:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_name_form:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e60f604c0d2df134162718670f2bb62133e6d6610ac232e8a5b68f2e92509f78'
   AND status <> 'archived';
@@ -3016,6 +3162,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f466f0d9-89a4-53ba-9093-4e08cbe6a0ec', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_town_new_area:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '00664ff5bcc0ba7e8143d5f0916cec1685c2dc86866fa4c638cd8bfef60c8d7a'
   AND status <> 'archived';
@@ -3041,6 +3188,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('84c27671-ebe1-5bd8-a44a-a9f0001bb369', 1)
   AND voice_key = 'character:drake:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_health_clinic:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9715fb71068b5abe4c1a6e923bc683322eab563e69590556d822b2ff804eb5c6'
   AND status <> 'archived';
@@ -3066,6 +3214,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('349ebf2f-fa55-5cf1-be9c-fa443f3cd770', 1)
   AND voice_key = 'character:lena:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_window:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '198c52ddf70676d6b2ac1694d3bd1f191d47c0d931545cd5780679d925459105'
   AND status <> 'archived';
@@ -3091,6 +3240,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('4b8ed660-aeba-5ff4-9d4e-7dd0e1a16999', 1)
   AND voice_key = 'character:noor:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_blocks:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'fd8fc126de39dcc624b41daf1555b7723ce1ec6e2cf5da667409634d73ca2ce0'
   AND status <> 'archived';
@@ -3116,6 +3266,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('9c4c6c8a-2c8d-5951-b9bd-663316bf3e74', 1)
   AND voice_key = 'character:chris:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_tr_bus_route:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4dd394a8bc82e5b45ebf1b7249f24888f4229e813fd439d69b25bb6f6480d239'
   AND status <> 'archived';
@@ -3141,6 +3292,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ef058ae7-c9a1-5d6c-a306-24948d3790ce', 1)
   AND voice_key = 'character:david:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_family_photo:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7e0aa110723f8fd584b8fab567cac118daa42ff4426b9bba3b1523afe020ebc1'
   AND status <> 'archived';
@@ -3166,6 +3318,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('9f099f9f-20da-5fbe-9ffd-e3d8fce2f071', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_basic:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '12a5b6d3e10dc3ca131cef450c8e3fe8a54ff572883201cf1463ac6a03a1735b'
   AND status <> 'archived';
@@ -3191,6 +3344,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c18a7d61-6703-529c-98c4-e40f0ba9d02b', 1)
   AND voice_key = 'character:rita:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_jobs_party:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e1ea6f199fb7d4ffb290abdfc66cd6c919032fae6fb01bb26ce6dc23760461d2'
   AND status <> 'archived';
@@ -3216,6 +3370,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b40397a8-6718-5553-841b-4d13c00305c4', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_objects_shop:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'db47af480b7225cdec5fb140dab9b200b7934779249d2cfa053aa3657058a682'
   AND status <> 'archived';
@@ -3241,6 +3396,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('be7b7f25-70fa-5765-ac40-ec5648348a11', 1)
   AND voice_key = 'character:eli:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_study_before_class:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a22fdf65ad8aeb00bd6e2adcf0189c23d93dee138e4861163f542a32fc16712c'
   AND status <> 'archived';
@@ -3266,6 +3422,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('7c7964d6-2d63-57a6-a65f-9125b38fbd49', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_questions_newplace:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '069577bfd917b6d2f224c5f281354c6b8c17d992311691875d0ecfb68f35bb5f'
   AND status <> 'archived';
@@ -3291,6 +3448,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8b9d4c3e-c635-579b-830d-f660e063ff0b', 1)
   AND voice_key = 'character:lena:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_study_help:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '74a3f46e6eef71604104e596883d20e7510e9d4e5d4832aa8b499f220129787c'
   AND status <> 'archived';
@@ -3316,6 +3474,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('eda736b5-ca3c-5abe-bbaa-bbc7df430de8', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cafe_bill:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '404cba15a4acdcfea85caa97d009b1042d20f0967c26f9a1abf59aecbeddf9bd'
   AND status <> 'archived';
@@ -3341,6 +3500,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('70c930d4-11f1-5b6c-90e8-e7341d168cdf', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_town_station:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '26dc5e5265eddbbce41e20d3fc0c594a8f2053f4e2ef1109a2327339a51f458d'
   AND status <> 'archived';
@@ -3366,6 +3526,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e917bc79-6798-59dd-afa4-96cfbfc56536', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_possessions_door:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '41f76d2cef25551d59a8402f7ca8d392b2638dc694e95ffc6dc9085c2eea0165'
   AND status <> 'archived';
@@ -3391,6 +3552,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('d33e4260-dba0-5c4b-8a28-2b5a4ca95391', 1)
   AND voice_key = 'character:noor:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_blocks:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c7a0538f9bfb1b6ced3dfaef00fb280b724886784737cd0d16f96456bcbb2592'
   AND status <> 'archived';
@@ -3416,6 +3578,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('beb8bef3-31a3-5208-8e9a-bb6a675bb514', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_end_of_day:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed'
   AND status <> 'archived';
@@ -3441,6 +3604,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('48360300-adae-5a99-ae52-2186e88d1d8a', 1)
   AND voice_key = 'character:tom:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_spell_name:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724'
   AND status <> 'archived';
@@ -3466,6 +3630,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('79027595-4c96-5df0-8e55-f6798ebb3747', 1)
   AND voice_key = 'character:ava:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_health_home:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4c91186bb46a9bd546fc81c7f3d97698aa4bfdac8d0c24ed7f504c00b889c80a'
   AND status <> 'archived';
@@ -3491,6 +3656,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f3b6fa97-6634-57f8-867a-5b7295c740b7', 1)
   AND voice_key = 'character:lucas:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_age_party:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6468360c8d1a8c8da7e8530d6b26e21e5750a8b99b551ac86ea913aa00927131'
   AND status <> 'archived';
@@ -3516,6 +3682,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('92275c1d-77d3-5c1a-821c-a0ab13209e38', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_price_compare:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '84b18129b5f230d00fd5cb5c3c19bd689a4e49b53bd577709b232fe90653f58b'
   AND status <> 'archived';
@@ -3541,6 +3708,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('11d2d8e5-3122-590f-8374-a80b80e1840e', 1)
   AND voice_key = 'character:emma:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_ask:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a25a8594934f9cabcdff34340a165ac85d35e4f5ad75a9a3fadb4fb408310075'
   AND status <> 'archived';
@@ -3566,6 +3734,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c6b90c3e-960d-502e-8a7d-bacf12499f8a', 1)
   AND voice_key = 'character:priya:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_plan_invite:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2bda13923f2690481a7754cc34b7187dd5825f7401d079a2cc7d414b2e7435e8'
   AND status <> 'archived';
@@ -3591,6 +3760,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('38e781f4-a857-5e73-a0eb-061ada815215', 1)
   AND voice_key = 'character:priya:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_spell_name:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd987e43fafadc37d15ea965a423c87dc7d2f6be5d68a8caf5153381646086020'
   AND status <> 'archived';
@@ -3616,6 +3786,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('9e273348-bf39-52e7-8285-d638de6a513c', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_morning_hallway:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89'
   AND status <> 'archived';
@@ -3641,6 +3812,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('44a7bfc5-1f80-5197-837f-d7ee2c0fe044', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cafe_bill:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b684a0db431d2419d85f2f3b42f77cb420787d967c8945329e2fc094af7b6265'
   AND status <> 'archived';
@@ -3666,6 +3838,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('47964522-e5a2-5ff7-ac51-12030387c978', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_objects_shop:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b21d233e41a47d1b2b291f0b5f3f98284990aa4e66a345ce8ae31b9a71a33523'
   AND status <> 'archived';
@@ -3691,6 +3864,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('2e206c59-2909-58fb-ae33-effddd1d4811', 1)
   AND voice_key = 'character:iris:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_body_gym:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ddd38cfd05e7ba67de46ca9609e8dc8430db4d70020cc759cc55a5c6f6e1906a'
   AND status <> 'archived';
@@ -3716,6 +3890,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8f6db245-c958-50d6-99ba-d49dda25c182', 1)
   AND voice_key = 'character:noah:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_evening_lobby:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0d1297db2960ae288800c0c9f06a567bdbb02ce0a51a35f1267377a30a8d78a8'
   AND status <> 'archived';
@@ -3741,6 +3916,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e8b64959-8afd-5b99-a9aa-9ddce26fc80e', 1)
   AND voice_key = 'character:hana:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_evening_lobby:5')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f'
   AND status <> 'archived';
@@ -3766,6 +3942,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('5519ab38-79f1-5fd6-8ebb-9121ee45dd7e', 1)
   AND voice_key = 'character:lina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cal_weekend:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b1e369b51d123b3552eb117689914024c0a05f579c02bbc7bfc8e2108ad5b99b'
   AND status <> 'archived';
@@ -3791,6 +3968,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('2514b4a8-33d1-512c-818b-88d430164633', 1)
   AND voice_key = 'character:sam:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_blocks:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '672758a43b25035be6d88a3822b2df23d3cb22265bed2579e8ab6514dd9a6b65'
   AND status <> 'archived';
@@ -3816,6 +3994,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a63119b2-f62c-5326-9408-1abc90e4e027', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_hobbies_break:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '46a67dab269ebdcd285ec1d5b1accb760d48421685c728a541b24e553660a494'
   AND status <> 'archived';
@@ -3841,6 +4020,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('9c0fe1b3-c02b-5977-a900-7c7adfbdca37', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_people_station:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4f79c4538d5437aa787a7cf5ab091b9cc2062757e8b59c86f080b3eb55d7895d'
   AND status <> 'archived';
@@ -3866,6 +4046,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a399730a-0ba7-5354-bd91-0e57c0f68217', 1)
   AND voice_key = 'character:sora:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_trip:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '060142c8c01e1266d66c8b2609919f39a92d7f0be853802b357daa57a7193530'
   AND status <> 'archived';
@@ -3891,6 +4072,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('978822c5-d514-5957-af9e-e37253a42c4e', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_music:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2fce2dbf119a8ed61996ba65eb96214e5ff44de6163762dd0210de1bdff81551'
   AND status <> 'archived';
@@ -3916,6 +4098,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('25253580-cc32-5e24-9c4a-3543bbcb18c0', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_morning_hallway:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c9ebfb6f4b8e880908a737b8d770aa3a518fb6053b327720e8dcc79609c32858'
   AND status <> 'archived';
@@ -3941,6 +4124,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8c8f94d0-b1c5-5d84-93ef-73504d9e8fd0', 1)
   AND voice_key = 'character:adam:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_jobs_party:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '36e42c28610b4000f50350ee6891dbd181014206a2c50f242771064fc42432bf'
   AND status <> 'archived';
@@ -3966,6 +4150,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c525ecf2-f8f9-5ee3-b414-cbc56c9f269d', 1)
   AND voice_key = 'character:noah:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_evening_lobby:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8'
   AND status <> 'archived';
@@ -3991,6 +4176,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('0f07aa93-32e0-5d7b-9133-1cc96aef414f', 1)
   AND voice_key = 'character:ivy:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_price_compare:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f86e083d7b5ca9b2bbf7adcfba5dc4a94ec5576210b62655716e6d4cc571d68d'
   AND status <> 'archived';
@@ -4016,6 +4202,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('2820ad90-11fc-5fc6-bb49-8cc76a0f1ceb', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_req_classroom:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8266f9d07e530dee2fa934fd340022f956bd258d92193de5b3d9174d6748b1da'
   AND status <> 'archived';
@@ -4041,6 +4228,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f810622c-e1c1-5c63-8707-b40ed50ec557', 1)
   AND voice_key = 'character:jack:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_body_photo:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b7f28b09afe416287024cabcba27e176d8516368662a2cd99e283e4ad219e46b'
   AND status <> 'archived';
@@ -4066,6 +4254,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3fc854ab-f6ce-59d3-bb44-cef054dfb47f', 1)
   AND voice_key = 'character:zoe:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_hobbies_park:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9b857e18dc52762a903951beb2bd28a21611a8ebdccc7aa33a051c45011e060e'
   AND status <> 'archived';
@@ -4091,6 +4280,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b9c34bfc-8540-5b41-9c95-427964f34dbc', 1)
   AND voice_key = 'character:eli:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_basic:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7f2cc2d67615226297515bed0b9c6d1915828f9d73f3a4de1ba3250d7570d2c4'
   AND status <> 'archived';
@@ -4116,6 +4306,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('78bce9a2-c35c-5223-bcaf-a45205c673f0', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_questions_plans:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '316df3f4ea292c099844eb76d0f2c203323b2968c2186ba9c66967ac5dc74bca'
   AND status <> 'archived';
@@ -4141,6 +4332,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('9739dac6-dccf-5016-8361-832fcb8f25df', 1)
   AND voice_key = 'character:sofia:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_first_meeting:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8'
   AND status <> 'archived';
@@ -4166,6 +4358,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('23cc855c-6ab3-5f1b-9536-e7f7ec5be286', 1)
   AND voice_key = 'character:paul:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_tr_commute:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd0889d8b63f9b26fd0737ccb2e2922df80a0abfccbf3e9456f96d5d377a18a89'
   AND status <> 'archived';
@@ -4191,6 +4384,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('5130821d-9b5b-540b-8f97-0457137f1e1a', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_routine_morning:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '27282b999a04ddc63b41567e687d9b5109651c26ba0caf653ded126f30648d61'
   AND status <> 'archived';
@@ -4216,6 +4410,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3c2dda65-6d1d-5369-8492-46067f422afb', 1)
   AND voice_key = 'character:tom:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_spell_name:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c3a6343dfa9d6273ee9f7481b3378de929f8b97a20a2221e9422bdb17d602c6a'
   AND status <> 'archived';
@@ -4241,6 +4436,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ecfb23a2-f45f-50e3-b512-f2acdb405d05', 1)
   AND voice_key = 'character:kate:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_questions_plans:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '835b3cadea7008585a61cb9d98ea3ea17ef4dc758b6e636505eb2e15a9022bf6'
   AND status <> 'archived';
@@ -4266,6 +4462,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('1a70b2f7-9e33-576a-832e-e1ab2ec4a945', 1)
   AND voice_key = 'character:jae:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_home_find_phone:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '011fc956e6cb90edb0d42f2a128f9ed1cf3012f6a9d0f1f383fd3edf7d07038a'
   AND status <> 'archived';
@@ -4291,6 +4488,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('23891799-5e00-5079-bc3b-48b4f8fcfba9', 1)
   AND voice_key = 'character:mark:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cal_weekend:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3161cbd71177e52401fc5a8c4d91e277e5da5ba9478e2710150ac3c5ca2c232b'
   AND status <> 'archived';
@@ -4316,6 +4514,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('38bd8577-eb95-5bf0-9c63-1b02d0ba913e', 1)
   AND voice_key = 'character:hana:female_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_evening_lobby:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89'
   AND status <> 'archived';
@@ -4341,6 +4540,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('1ad3d1f1-f209-5609-affa-72b9625380c1', 1)
   AND voice_key = 'character:david:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_family_photo:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f7fb3ce4f833b17e2d301963a90f1c30e26bcb572c603d65662b88afb7ec21d5'
   AND status <> 'archived';
@@ -4366,6 +4566,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('bbb463e2-95b3-5dd9-a1a0-69753eb169ae', 1)
   AND voice_key = 'character:lena:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_window:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '07626e9345f1c3f9ca3594ee3d0f3207f5beea141debc6615d01b8e81538bc8b'
   AND status <> 'archived';
@@ -4391,6 +4592,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a4a3a92e-c437-5879-956a-bdd85577e2ed', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_family_visit:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '561c97dddda0f9f402d0cad781e385a76043dd555b974f707131cf4861b2babd'
   AND status <> 'archived';
@@ -4416,6 +4618,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('6c6f8a1c-70ac-56c0-b258-173f784a5da0', 1)
   AND voice_key = 'character:luca:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_questions_newplace:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'debb63d99f4ebf102b54432ae6086aad9b85b8e06a36899b42a00e709d298b5d'
   AND status <> 'archived';
@@ -4441,6 +4644,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('783e23e1-f98c-5074-ac5f-2c88d610e386', 1)
   AND voice_key = 'character:marco:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_home_tour:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '63dfb1f2a617364cb43d66d3911a81245e2ec80e197e91df26ae9aa1771c73be'
   AND status <> 'archived';
@@ -4466,6 +4670,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f238cbf5-d018-578e-b374-fca6e746dab6', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_req_table:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a8e6eb68d72c9df498850634124cf69876e3c95106526bfc47aa871d2534a0af'
   AND status <> 'archived';
@@ -4491,6 +4696,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('81bc8f11-ff22-5829-882f-744200b6e222', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_shop_clothes:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1f24795de945138fd3ca9522f198667f81f7a2c9b9c6c02f441a9868306473bb'
   AND status <> 'archived';
@@ -4516,6 +4722,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a28d65f4-df44-58b2-af39-37f626cb6d8c', 1)
   AND voice_key = 'character:jack:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_town_station:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2d1e7d0c57b005c9fd986ca4c33876dac2e306c7fdc6c2360b1b3750663ae5ab'
   AND status <> 'archived';
@@ -4541,6 +4748,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('7a036fa4-f435-5ae7-bfd1-7eee713b95ce', 1)
   AND voice_key = 'character:jon:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_plan_evening:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7f902c0317f0a35d464a646c9fdbad7c1d87811af0d43174b58a72e059d27e81'
   AND status <> 'archived';
@@ -4566,6 +4774,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ef19f557-c016-5247-946b-3968c09687ab', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cafe_bill:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'fa120587cef0d23217a917d601b6366c1c92f8557b206978257c9813503d9e18'
   AND status <> 'archived';
@@ -4591,6 +4800,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('58cae2f3-f82a-5750-b33a-b66bcda4413e', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_shop_try:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '411e4e72741bb0a9c326945d4b46b4b7db8486a7ed2eb65d657ff876e5019556'
   AND status <> 'archived';
@@ -4616,6 +4826,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('d430b7e2-597b-5ef5-b5e3-f488e7c9feb3', 1)
   AND voice_key = 'character:jon:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_study_help:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1b76e850f31faf09fa120b3ba617703e328746f8e3f50fe21a65a352d0e68257'
   AND status <> 'archived';
@@ -4641,6 +4852,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('75178d3d-5d1b-5650-90dc-a7428584a739', 1)
   AND voice_key = 'character:rami:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_town_new_area:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cc9a713ea19a1f1ffceaeab6a128641d8369cb20d640c718c7560e1663bae0c9'
   AND status <> 'archived';
@@ -4666,6 +4878,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c1086a48-d936-590a-974f-ca5cbd146599', 1)
   AND voice_key = 'character:diego:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_jobs_lunch:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8da19728e9e6a1c48bd3af6c8cfbfb5ebc4f575cceb394729cf2c77c5ac0427e'
   AND status <> 'archived';
@@ -4691,6 +4904,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('feda1c86-4d25-55eb-9903-85d0cc9ed14b', 1)
   AND voice_key = 'character:mark:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cal_weekend:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '527a8418af9eeb889189ce610165c0d97892152d51b89f59df21e7b5f94e4862'
   AND status <> 'archived';
@@ -4716,6 +4930,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('412420d6-32c4-5c63-a3c6-f63944e28cf9', 1)
   AND voice_key = 'character:fatima:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_study_before_class:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c363ad797d762a9e2ab2ebba4e87de3ba683734aa90e6362b4fbc2252a3f3689'
   AND status <> 'archived';
@@ -4741,6 +4956,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c38a8c2b-8bed-5c83-9b35-c26d246c0b96', 1)
   AND voice_key = 'character:emre:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_nationality_meet:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '31341843b369032cacb647cc65fc942c417aeee1268ae80deed3863b72a4be76'
   AND status <> 'archived';
@@ -4766,6 +4982,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('725007cb-3490-5740-943b-3cb0a967d083', 1)
   AND voice_key = 'character:eli:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_trip:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ffa3695033c9c0e7452d906ce3bbdd7b38a233c95714c02e556efedc563c17b1'
   AND status <> 'archived';
@@ -4791,6 +5008,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a583a0c0-86e4-5dd2-a2c4-6b8ae2af02d6', 1)
   AND voice_key = 'character:leo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_routine_morning:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3dc586787b0b06f9f394fd3380559e8f15056fd0638d990c0c4ac37acea1d126'
   AND status <> 'archived';
@@ -4816,6 +5034,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('99c27824-7105-5676-967f-f642e12a167c', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_hobbies_break:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3765ea16037b1bc3a463f8fe8b02e133ab6d3eb72d7cb4748dacec664684bc1f'
   AND status <> 'archived';
@@ -4841,6 +5060,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f18a1495-9f1e-598b-b519-462ef980795f', 1)
   AND voice_key = 'character:kate:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_questions_plans:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '27282b999a04ddc63b41567e687d9b5109651c26ba0caf653ded126f30648d61'
   AND status <> 'archived';
@@ -4866,6 +5086,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('183f7b89-8f50-55d0-8f05-9c1364d934d9', 1)
   AND voice_key = 'character:emma:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_ask:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '82a7c501af2375af3efe07a1cefe869ea9e0b9f0889837c2fd54b9c26faad4bf'
   AND status <> 'archived';
@@ -4891,6 +5112,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('64b6ff52-0ac0-55c7-9572-dda2c3a84268', 1)
   AND voice_key = 'character:leo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_morning_hallway:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '90c96b9c21c563a011e3571d8b3da5bd6bc263f9c7c174196055f3857b615650'
   AND status <> 'archived';
@@ -4916,6 +5138,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e99e1936-03ee-5778-854b-aff462501d21', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_shop_clothes:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '763a1ffd4f342550b5aac70db9c67883cf9e984d01a91b34524eab381a266750'
   AND status <> 'archived';
@@ -4941,6 +5164,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e686a9d7-5631-5d45-97b6-87a434ac7f85', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_price_compare:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd8b4ebe01df8fc6762aaabf169c501fd2a422705e0989080f884d12631dac1cf'
   AND status <> 'archived';
@@ -4966,6 +5190,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('bdcdc6a2-bf4e-5c82-b14b-a9c19e2f0650', 1)
   AND voice_key = 'character:alex:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_repeat_name:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '026a406381b9ca6654bfd093dbbab98d49a598328f1b6be5df212f70109f1518'
   AND status <> 'archived';
@@ -4991,6 +5216,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('5beb99dd-5206-5c36-bcfd-1ad49962f1af', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_possessions_door:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ecb5f42b50000a1d777451d059b4a58774e8a88445049c478ff03d18e79621aa'
   AND status <> 'archived';
@@ -5016,6 +5242,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('dcc67b64-9428-5533-be34-59f4507ed03e', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_first_meeting:6')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed'
   AND status <> 'archived';
@@ -5041,6 +5268,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a921b626-6655-5c57-9a29-729a9d5f475a', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_body_photo:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2b0d746ead7dd967e7421905f07b060eb60d94bb86076272d533472ef94df820'
   AND status <> 'archived';
@@ -5066,6 +5294,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('ddc44057-4af7-5713-a3f7-5e746591f76f', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_shop_clothes:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '37915fe14b821a1c4b68a8158b2216f6b01a6450ddeb09d9ce10b549e1bb9aaa'
   AND status <> 'archived';
@@ -5091,6 +5320,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('021558cc-b911-5b41-8354-68fb4e24be60', 1)
   AND voice_key = 'character:mark:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_number_room:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b843a315fac423a27332436f74a3f9d7be2982de1381a2fa27ebb00ab4c83166'
   AND status <> 'archived';
@@ -5116,6 +5346,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('195ba136-0385-5698-9eaa-2411e397231d', 1)
   AND voice_key = 'character:nora:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_people_photo:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ced1bfbf7587ab92b7020fc3fe6f18ee71bdc3a344c128268167925268bcbf3c'
   AND status <> 'archived';
@@ -5135,37 +5366,13 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
--- d_jobs_lunch:2 -> audio/generated/en-US/dialogues/d76981b74703ca2961c3f137e4eaa4744fb26a6033f9e60d3e4409b8c00edc3d.mp3
-UPDATE audio_assets
-SET status = 'archived'
-WHERE entity_type = 'dialogue_turn'
-  AND entity_id = UUID_TO_BIN('845e5958-bab2-5486-b189-0264f499023c', 1)
-  AND voice_key = 'character:mei:female_professional'
-  AND source_text_hash IS NOT NULL
-  AND source_text_hash <> '7482c549513d15c7bad2819a3680bd0cd976ecce52166be341681b73f4557002'
-  AND status <> 'archived';
-INSERT INTO audio_assets (
-  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
-  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
-) VALUES (
-  UUID_TO_BIN('09bebd0e-e9dd-5993-8580-f5bc1da686de', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('845e5958-bab2-5486-b189-0264f499023c', 1), '7482c549513d15c7bad2819a3680bd0cd976ecce52166be341681b73f4557002',
-  'character:mei:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/dialogues/d76981b74703ca2961c3f137e4eaa4744fb26a6033f9e60d3e4409b8c00edc3d.mp3', 1384, '2026-09-12 08:24:19.151367', '1620d3c847cc4478b077ce94095975adfa4113ed1feaed988657b938f0623437', 'validated', '{"audio_key":"d76981b74703ca2961c3f137e4eaa4744fb26a6033f9e60d3e4409b8c00edc3d","entity_key":"d_jobs_lunch:2","voice_id":"kdnRe2koJdOK4Ovxn2DI","voice_name":"Eryn - Genuine, Friendly and Natural","voice_labels":{"gender":"female","accent":"american","age":"middle_aged","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"1620d3c847cc4478b077ce94095975adfa4113ed1feaed988657b938f0623437","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.98},"relative_path":"audio/generated/en-US/dialogues/d76981b74703ca2961c3f137e4eaa4744fb26a6033f9e60d3e4409b8c00edc3d.mp3"}'
-) ON DUPLICATE KEY UPDATE
-  provider = VALUES(provider),
-  provider_model = VALUES(provider_model),
-  storage_url = VALUES(storage_url),
-  duration_ms = VALUES(duration_ms),
-  generated_at = VALUES(generated_at),
-  checksum = VALUES(checksum),
-  status = VALUES(status),
-  metadata = VALUES(metadata);
-
 -- d_questions_newplace:3 -> audio/generated/en-US/dialogues/d8d7dada8762a84c72c52042c73ea3282131e7deed034ad71aba62caf6f9ead4.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('5eebb140-0dd0-53a3-a425-a38722b0811b', 1)
   AND voice_key = 'character:luca:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_questions_newplace:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ac98fff5f274c84c3d3a8e055fafddf500e05af0aa03b042bae3d8b617451ed0'
   AND status <> 'archived';
@@ -5191,6 +5398,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a7c7963e-9ce5-5616-ad62-50d166fbcf8f', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_shop_try:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3765ea16037b1bc3a463f8fe8b02e133ab6d3eb72d7cb4748dacec664684bc1f'
   AND status <> 'archived';
@@ -5216,6 +5424,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e7f03413-44a4-5778-a8b4-86c2d02fc829', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_body_photo:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3293a5dff2c3f943f0676e596e042da2ccdd7c1a7d1d761979ee138dfdd50bad'
   AND status <> 'archived';
@@ -5241,6 +5450,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('35d15d2f-aa5a-59d3-8248-c1832989f9a7', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_music:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '67fe49fb17fa591db9252b7f40aa688408e5552966277aa4a1d85dc858b85133'
   AND status <> 'archived';
@@ -5266,6 +5476,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('380af93d-5582-591b-a3dd-f6f29ded63b2', 1)
   AND voice_key = 'character:owen:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_food_breakfast:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '316df3f4ea292c099844eb76d0f2c203323b2968c2186ba9c66967ac5dc74bca'
   AND status <> 'archived';
@@ -5291,6 +5502,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('d7a05c50-7e5a-5a41-b8ac-7e5dd645ac89', 1)
   AND voice_key = 'character:luca:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_ask:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '96ff2ce28b07997fc49c8ba1419bec7f7843e16708e40e66e0978262c40ef411'
   AND status <> 'archived';
@@ -5316,6 +5528,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('27e10c36-2146-5168-a13b-cd12fca658e7', 1)
   AND voice_key = 'character:noah:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_possessions_station:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '675d13c2dc0bf946872f682f69aedc1a1d49174b69888af1dd60be7359baa6f9'
   AND status <> 'archived';
@@ -5341,6 +5554,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('b06db0c9-fab6-5434-aaa1-1f2bee041cb5', 1)
   AND voice_key = 'character:jon:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_study_help:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c66fb72552f1fa4c50fc9fc2b527b77c69ac97e3dd1e95d304437bb74f48fbc4'
   AND status <> 'archived';
@@ -5366,6 +5580,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('7c7ac0ba-49ee-59f1-9fc9-b704827d94c7', 1)
   AND voice_key = 'character:nora:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cal_class:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ccdaa9d0f97c2dad8a3d3124d67c806be45bd2d714c164b7707ee41dd0c52cc9'
   AND status <> 'archived';
@@ -5391,6 +5606,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('30e4f856-8f96-5dd8-ae55-1b8b3b6171ab', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_req_classroom:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '57286cade39e497175c163d292d8b6a6972827ed2201d8ca3cbb72a1d6b125bb'
   AND status <> 'archived';
@@ -5416,6 +5632,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('09d6a314-f9f0-522b-b913-903986af7550', 1)
   AND voice_key = 'character:claire:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_nationality_meet:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c64b084c5506ced4abc73a6025f56a05fab176c56ace9ba3b71a735e32f88d69'
   AND status <> 'archived';
@@ -5441,6 +5658,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('0d326065-18a3-5789-a25d-8954e4773320', 1)
   AND voice_key = 'character:claire:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_nationality_meet:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '60dd941ee34d4f192d62d95bea9d2b702724182787b49b9189dcd63424d57f49'
   AND status <> 'archived';
@@ -5466,6 +5684,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('1b1e963e-9263-5fe6-afc2-8f2ac0bb685e', 1)
   AND voice_key = 'character:sora:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_trip:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ebe56e6149da1429bf9a889f60f2c0e4934e4de2c9c98d14778c6d22cbfb1eb8'
   AND status <> 'archived';
@@ -5491,6 +5710,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e9ca1bc9-bc94-5afc-8e7b-4ad2d79df53b', 1)
   AND voice_key = 'character:liam:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_hobbies_park:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '756143461475dfe154ac7170d85ed774bede41afc21d9e8d670bd5d3f451026e'
   AND status <> 'archived';
@@ -5516,6 +5736,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3646996a-5366-50e7-8a25-b6fe6ee8ada9', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_cafe:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '27282b999a04ddc63b41567e687d9b5109651c26ba0caf653ded126f30648d61'
   AND status <> 'archived';
@@ -5541,6 +5762,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('97571cde-d313-5099-b2a3-c9afd5d9e129', 1)
   AND voice_key = 'character:sam:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_people_photo:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ec6accb0cbd5f732e53d250697f8e96208b191e69fdd00a6209d62bf885bb79a'
   AND status <> 'archived';
@@ -5566,6 +5788,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('30508346-3dc0-5e66-b171-4fea32a1a07d', 1)
   AND voice_key = 'character:theo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_people_station:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd40c33067615fbaa3af61dbdcb817ddca38e8a6bcd6912c610de1b5194975c33'
   AND status <> 'archived';
@@ -5591,6 +5814,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('a01285eb-a9c2-5a39-a32d-8b005fd6057c', 1)
   AND voice_key = 'character:sam:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_people_photo:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9b434d56d195c53287ccd02796912c297e361a2ce68266ef6da0c9172cb7b836'
   AND status <> 'archived';
@@ -5616,6 +5840,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('05daef8f-75f1-5998-80b9-5df17a6e2c60', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_first_meeting:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ba2fccea610d6ca54ed626ae12cae853e623a129e3f810cd022e7494ca551b2a'
   AND status <> 'archived';
@@ -5641,6 +5866,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('693d198e-c234-5efa-af75-4285a3aedeb3', 1)
   AND voice_key = 'character:mark:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_price_market:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f11c9763021a38fb529621dcf8bd77399ce55eda93e966148ecc4d63c0508a7d'
   AND status <> 'archived';
@@ -5666,6 +5892,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('56811f31-e2c8-5e12-a890-9214bf218700', 1)
   AND voice_key = 'character:noah:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_time_meeting:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'df87cef99de08afa5d47bddce3eff1ba72623c2a18c71c938bfb5facdf982697'
   AND status <> 'archived';
@@ -5691,6 +5918,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('42da33a7-57bf-5a92-8a12-c9635a85f450', 1)
   AND voice_key = 'character:emre:male_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_nationality_meet:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9369e9c1c9fe01722c49c8b4965d6732b746ba1cc8ac94ef9d95e55784adde9d'
   AND status <> 'archived';
@@ -5716,6 +5944,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('fb40ea2b-f714-5767-99c6-f1eb31885f43', 1)
   AND voice_key = 'character:leo:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_routine_morning:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a8c1a10d5cc6862f3504bd46332443b1c03c3e44b41a15e1c515c5ebcfbc3b1e'
   AND status <> 'archived';
@@ -5741,6 +5970,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3a95acd5-c9eb-563e-8eba-1e4f2d27c208', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_town_station:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4d98be858cd33601f2e34673540e42746cc6367649aff5d49aa98a4e4f2326fc'
   AND status <> 'archived';
@@ -5766,6 +5996,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('612fd89b-114b-5574-8e00-28e539a4df85', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_number_room:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '34e05522fe3ba1e7bdd55d6444747c92e44d72f92e94c060a4a60c39cdb65cad'
   AND status <> 'archived';
@@ -5791,6 +6022,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('99852a6d-4feb-541f-9cfa-f36d77a489bc', 1)
   AND voice_key = 'character:nora:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_family_photo:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3edb60c0eee69a9502999e8e5fef1653ebd27bdba8f163b666463b28ccf1d5c8'
   AND status <> 'archived';
@@ -5816,6 +6048,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('37b61970-1b3f-5b12-b416-77f629baf390', 1)
   AND voice_key = 'character:lina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_food_breakfast:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '27282b999a04ddc63b41567e687d9b5109651c26ba0caf653ded126f30648d61'
   AND status <> 'archived';
@@ -5841,6 +6074,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('c406bd45-8b5a-550c-bcb5-52959e907343', 1)
   AND voice_key = 'character:marco:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_window:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f5ad746c8eead747c9c12d1f3b106eb92e27eee1ad35e25141cbdcfb447a9c69'
   AND status <> 'archived';
@@ -5866,6 +6100,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('36b2ff0a-20aa-5ea6-a19a-8760ac78a046', 1)
   AND voice_key = 'character:fatima:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_study_before_class:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a19225744f008d264435b463c02dd09b797f9205e7398c0d47c178856fb2fce6'
   AND status <> 'archived';
@@ -5891,6 +6126,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('2ab6efd2-9b00-5133-8389-6c2ab2b2578c', 1)
   AND voice_key = 'character:chris:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_tr_bus_route:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '57fe9cea490f553ba4db8b794b986e7cfe992800d4090ec55e16cb4dcda1b8b7'
   AND status <> 'archived';
@@ -5916,6 +6152,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('8e07abb8-0232-5c27-bc08-be324260e426', 1)
   AND voice_key = 'character:ravi:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cafe_order:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b40d46b2a001836b6b785ee3ae95fddaf15adbab472af40f41d7d42c890437be'
   AND status <> 'archived';
@@ -5941,6 +6178,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('af991da3-85df-5c5a-9f72-f62363652157', 1)
   AND voice_key = 'character:nina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_number_room:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3c955ac2abcb273e46bd2769238cacc16a3f4a21a96c76cae5ab563e2cb48694'
   AND status <> 'archived';
@@ -5966,6 +6204,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('dbe3d2a7-f481-5c04-97fc-93e979ab10c0', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_family_visit:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1663e7fba6d8df3263e3a57d2b84aac134f9542516ff78d38781dea2a43f2f80'
   AND status <> 'archived';
@@ -5991,6 +6230,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('48887344-dc05-5ad3-863d-9d56aef5ced0', 1)
   AND voice_key = 'character:luca:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_ask:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd1194c9ec38b9a0569d8e39e6de2d2fb029ea9b45ae2cbde4f9a716e8a721039'
   AND status <> 'archived';
@@ -6016,6 +6256,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('0ed47396-351c-5f69-bdc7-2aff8f8f4526', 1)
   AND voice_key = 'character:tom:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_body_gym:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5d74c58898150d93a92eda0713256bf28727ab6d5c857a5839c37ba36004096d'
   AND status <> 'archived';
@@ -6041,6 +6282,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('edd22ac6-6d57-5fb8-87dd-9998849c883e', 1)
   AND voice_key = 'character:mina:female_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_age_party:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9b181de483e0da61391cd385f16383f953401fdfee8ca2c46297bd812f3e0b5d'
   AND status <> 'archived';
@@ -6066,6 +6308,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('6ad8aad5-b8ec-567c-b1ae-7db29f12043c', 1)
   AND voice_key = 'character:mark:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_price_market:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '596a7daf01e6a6486f180e7e5118ff5569f77422ec2aba7aac08f7b5b973258a'
   AND status <> 'archived';
@@ -6091,6 +6334,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('aaed2a1a-ce18-5efb-ba26-ba501a7af798', 1)
   AND voice_key = 'character:omar:male_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_first_meeting:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7'
   AND status <> 'archived';
@@ -6116,6 +6360,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('475acdb5-5cb9-5eed-aa15-c3b71bb1e24a', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_people_station:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '088d6ecbe63ce5877f8ce465ba7562907ce90e369c5c1d08ecf5deedfe8b1040'
   AND status <> 'archived';
@@ -6141,6 +6386,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3483fa9b-2cb4-583d-98be-882ccd60c822', 1)
   AND voice_key = 'character:ben:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_objects_move:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '95ea070052d5f0449b4e4df4d8c09913e49da86c67b9f3546149cdcf89cb3b89'
   AND status <> 'archived';
@@ -6166,6 +6412,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('e0e5bde7-525a-5ba6-9636-84983a88ba42', 1)
   AND voice_key = 'character:maya:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_dir_basic:3')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5d78845506cb85b768dcec1437a891aa14f8d14b53496a83647a74830d305da5'
   AND status <> 'archived';
@@ -6191,6 +6438,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('544183aa-2f28-5d4d-bc44-486b70899517', 1)
   AND voice_key = 'character:marco:male_bright'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_home_tour:2')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '455b786340ade2f8f2b979de13573a66ec58114514e867addc01f71dc845a9e0'
   AND status <> 'archived';
@@ -6216,6 +6464,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('51aeefc5-94f6-5b04-bd41-07456f4f04c3', 1)
   AND voice_key = 'character:sara:female_professional'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_countries_class:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f35041564e4496e4f7e42abad3672c905369be298cba68e6402a0edc35b2ffc6'
   AND status <> 'archived';
@@ -6241,6 +6490,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('3ba64005-54c0-5fc8-a1bf-6df08ac1b939', 1)
   AND voice_key = 'character:paul:male_calm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_tr_commute:4')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9b857e18dc52762a903951beb2bd28a21611a8ebdccc7aa33a051c45011e060e'
   AND status <> 'archived';
@@ -6266,6 +6516,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('f6e9f01e-7bcc-59be-92ce-9951102ac1cd', 1)
   AND voice_key = 'character:sofia:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_first_meeting:5')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '04a83fcf89fa37d08bc09cff10a614d83a010d07b8f85e62194edc4f1bb6887c'
   AND status <> 'archived';
@@ -6291,6 +6542,7 @@ SET status = 'archived'
 WHERE entity_type = 'dialogue_turn'
   AND entity_id = UUID_TO_BIN('03d9f451-02ab-53f3-8d59-3cd3b915260f', 1)
   AND voice_key = 'character:lina:female_warm'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_cal_weekend:1')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c42e1e4ac7da5f018a15c1c9a985e0b699436d9577ad7848db6e2c2f74e17b77'
   AND status <> 'archived';
@@ -6316,6 +6568,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('ab6503a7-70e1-55a6-a353-fd60f309ba19', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_tr_train')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '116f54c41d0405dbb10e7b04ebc31e262a5b8c85c1233fcf36eaee344d91ae58'
   AND status <> 'archived';
@@ -6341,6 +6594,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('6aef3ebf-afe5-5fde-9d4c-41f2b3d25e98', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_tr_train')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '116f54c41d0405dbb10e7b04ebc31e262a5b8c85c1233fcf36eaee344d91ae58'
   AND status <> 'archived';
@@ -6366,6 +6620,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('2fc14c9d-a42b-5ff8-820a-23e06b470776', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_home_bedroom')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a05e6feb79c854166f6c73783754dc0111ee87edd58bca22a77c3a8721fa729c'
   AND status <> 'archived';
@@ -6391,6 +6646,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('91d421ed-2582-5da7-bb40-292f798e34ec', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_jobs_office')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5cc3f82838ba7260203e4590ce03d00e1663d41f6a5167144f5c95d6be2166a0'
   AND status <> 'archived';
@@ -6416,6 +6672,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('66f05a91-257f-57ae-830f-03bc15d26a52', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_jobs_office')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5cc3f82838ba7260203e4590ce03d00e1663d41f6a5167144f5c95d6be2166a0'
   AND status <> 'archived';
@@ -6441,6 +6698,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('dc5ef0c1-3de1-5ac5-8b02-5ecde2727e40', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_germany')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '80db4ccdca106d37b920206331fcfe3e9e50a9e763d89b54ce3ad5ac8cf30f03'
   AND status <> 'archived';
@@ -6466,6 +6724,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('8926a0b9-bc79-5f83-b690-667d5fa7f481', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_germany')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '80db4ccdca106d37b920206331fcfe3e9e50a9e763d89b54ce3ad5ac8cf30f03'
   AND status <> 'archived';
@@ -6491,6 +6750,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('ecc51256-8aa7-566b-bd38-eda21853713e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_tr_taxi')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '12796d3d5f4e132385f8af8e281efa211cdb2a05b8450039f037a6573e0bcb3f'
   AND status <> 'archived';
@@ -6516,6 +6776,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('d8a9e965-2171-59a0-a77a-d227c17ccba3', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_tr_taxi')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '12796d3d5f4e132385f8af8e281efa211cdb2a05b8450039f037a6573e0bcb3f'
   AND status <> 'archived';
@@ -6541,6 +6802,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('7a4b2bd4-8112-53c2-93ca-71bbdfdbcd22', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_tr_stop')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6c45cb72a36e63d522aa54ed8adbd7a29a989474f2f77e0458af8800564ef3cb'
   AND status <> 'archived';
@@ -6566,6 +6828,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('9ed4f39c-ea9c-53f3-af31-20f3e684f57b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_tr_stop')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6c45cb72a36e63d522aa54ed8adbd7a29a989474f2f77e0458af8800564ef3cb'
   AND status <> 'archived';
@@ -6591,6 +6854,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c43ecfba-772d-5627-8a81-d2362612691c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_food_coffee')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '37290d74ac4d186e3a8e5785d259d2ec04fac91ae28092e7620ec8bc99e830aa'
   AND status <> 'archived';
@@ -6616,6 +6880,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c43ecfba-772d-5627-8a81-d2362612691c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_coffee')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '37290d74ac4d186e3a8e5785d259d2ec04fac91ae28092e7620ec8bc99e830aa'
   AND status <> 'archived';
@@ -6641,6 +6906,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('246f1522-a2b0-5fc1-9c63-2c010e504a89', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_coffee')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '37290d74ac4d186e3a8e5785d259d2ec04fac91ae28092e7620ec8bc99e830aa'
   AND status <> 'archived';
@@ -6666,6 +6932,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('c37e68ff-c74e-5c55-84b4-a1727ec37eb0', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'plan_tonight')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2769fc20451b51737baa457ef96532b84370d3664150af08b3f310f30448921f'
   AND status <> 'archived';
@@ -6691,6 +6958,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('0ffc7077-82ee-5044-91bb-5c96047fcdfe', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_food_water')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0f4168490e38b8447e11ba4bd656aa11b925bd22af30bac464bc153fdb608501'
   AND status <> 'archived';
@@ -6716,6 +6984,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('e5ccb58c-f89c-54e6-9884-889f1599455b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_turkish')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6e7aac65db0112465ee368ee3ee8799025a8a52a722bab2ce9c615a9ca1e7938'
   AND status <> 'archived';
@@ -6741,6 +7010,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('64a50b0a-7925-5681-89e4-bcda187d33e1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_turkish')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6e7aac65db0112465ee368ee3ee8799025a8a52a722bab2ce9c615a9ca1e7938'
   AND status <> 'archived';
@@ -6766,6 +7036,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('9c428d2c-74ed-561a-8a8b-2ab1ce45a445', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_people_tall')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '241daf2e753a6a2f37a1b147ee6d4af459515d4e3da723f0b1e226cddb214cfe'
   AND status <> 'archived';
@@ -6791,6 +7062,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c8143fde-fd67-5a14-abc3-f0cea7ecce36', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_people_tall')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '241daf2e753a6a2f37a1b147ee6d4af459515d4e3da723f0b1e226cddb214cfe'
   AND status <> 'archived';
@@ -6816,6 +7088,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('b44686eb-3f3d-5668-8d48-9d505033fefa', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_family_parent')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e47125968b3b71049fbc4802d1e40a71ea1359decfabacf70b34588037d4ff0c'
   AND status <> 'archived';
@@ -6841,6 +7114,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c7b4c350-db1e-51df-8a44-bd7cb2c36034', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_dir_block')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '496aca80e4d8f29fb8e8cd816c3afb48d3f103970b3a2ee1600c08ca67326dee'
   AND status <> 'archived';
@@ -6866,6 +7140,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('824a4166-2719-5607-a2a1-845ec2d0741d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_time_morning')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c23b31a0179b550f8a18fb06bc52a26e32333540369073d646da5c84a4dc341f'
   AND status <> 'archived';
@@ -6891,6 +7166,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('37e1b4e1-24b8-5e54-bf3e-a5c2429d1fd7', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_time_morning')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c23b31a0179b550f8a18fb06bc52a26e32333540369073d646da5c84a4dc341f'
   AND status <> 'archived';
@@ -6916,6 +7192,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('2a780216-d9d4-565d-a03f-6d3751a8a846', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'social_im_fine')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'afb4e658844570c0081deb2e531a4748e80373ccd64cf14ae9b049f398ba49a1'
   AND status <> 'archived';
@@ -6941,6 +7218,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('489fea4a-9cc7-5781-a5df-528d5f1a4f18', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_key')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2c70e12b7a0646f92279f427c7b38e7334d8e5389cff167a1dc30e73f826b683'
   AND status <> 'archived';
@@ -6966,6 +7244,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8bbfe869-4361-527e-a13b-a83e776f6a7a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cal_date')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0e87632cd46bd4907c516317eb6d81fe0f921a23c7643018f21292894b470681'
   AND status <> 'archived';
@@ -6991,6 +7270,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8fcae721-36ab-5926-83e7-f640cd86fe89', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_plan_go')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4cd0e21a9a0795a14ec9aa5f0e7d1abff0492565770e43eafdf1e3e8afed1f33'
   AND status <> 'archived';
@@ -7016,6 +7296,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('f2c025a9-2f15-5c00-afb6-ffc6c77237b8', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_plan_go')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4cd0e21a9a0795a14ec9aa5f0e7d1abff0492565770e43eafdf1e3e8afed1f33'
   AND status <> 'archived';
@@ -7041,6 +7322,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('be88af23-760f-5ab2-9102-ea9829c55680', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'farewell_bye')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b49f425a7e1f9cff3856329ada223f2f9d368f15a00cf48df16ca95986137fe8'
   AND status <> 'archived';
@@ -7066,6 +7348,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('a54b74df-a3b3-50fb-aae4-f2aae58e3105', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'social_how_are_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89'
   AND status <> 'archived';
@@ -7091,6 +7374,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('e1118755-b0a5-50a7-9ff6-39d045d0c5b3', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_30')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'aca5fb59db69e5dffeda36ff0bd65205f16720b7fa1893c4557e9216dfc276d5'
   AND status <> 'archived';
@@ -7116,6 +7400,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c378c4dc-c770-571e-9fbf-31b100105400', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_30')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'aca5fb59db69e5dffeda36ff0bd65205f16720b7fa1893c4557e9216dfc276d5'
   AND status <> 'archived';
@@ -7141,6 +7426,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('7818585e-cc19-511e-abd8-cade8110d981', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_headache')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cfa9ac1e084975b5d6463e32652c85bad6355a5ab32399618f89f222e68dc335'
   AND status <> 'archived';
@@ -7166,6 +7452,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c7ad0ac3-4b01-514d-9ab4-f2db3ed49ae6', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_headache')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cfa9ac1e084975b5d6463e32652c85bad6355a5ab32399618f89f222e68dc335'
   AND status <> 'archived';
@@ -7191,6 +7478,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('d9a19258-f6cf-5a3b-8d87-84c197af68a5', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_keys')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '48a53f0774c8ceff574a1fdcb0d470dbd382b3db273cff4344b6d39d5379c923'
   AND status <> 'archived';
@@ -7216,6 +7504,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('58a9a3eb-5271-5ade-8924-003ad5af14ea', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_wednesday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c0a6cc829cd08735294765c75938a7da2b0f222d52e98bff13cb237cd99deaac'
   AND status <> 'archived';
@@ -7241,6 +7530,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('9f3aa103-35f2-5174-9e8c-4b9ccd151953', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_14')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'fef8f41cdcd2038663b027a0cfbe252d39510bc162b599d1d4aa683873cc21d7'
   AND status <> 'archived';
@@ -7266,6 +7556,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('5dcc2fdb-977b-533a-a566-1baa61b1f200', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_14')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'fef8f41cdcd2038663b027a0cfbe252d39510bc162b599d1d4aa683873cc21d7'
   AND status <> 'archived';
@@ -7291,6 +7582,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('4ded7375-8e97-5d6d-a1c1-08aded515c55', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'greeting_good_evening')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1b2393b1cd37a2e96ef33d810120ab58f410b8427f527dbf84fedaefcebf7017'
   AND status <> 'archived';
@@ -7316,6 +7608,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('bc6e51ba-e4fb-5722-bf6f-7c55c0ca82cc', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_headphones')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '86d6e84ef9a21b74c964a209d4ee7ace5e73d1723bb0f0b665c39b0b073fb04c'
   AND status <> 'archived';
@@ -7341,6 +7634,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('df514180-8d31-5562-aa33-bb159269d9b7', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_headphones')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '86d6e84ef9a21b74c964a209d4ee7ace5e73d1723bb0f0b665c39b0b073fb04c'
   AND status <> 'archived';
@@ -7366,6 +7660,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('975bdec6-960f-597c-9367-1196c8015654', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_tomorrow')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'bafd151a86f9a573b153e76e3a8a0053b3340ce304a301a5354288fb18bce848'
   AND status <> 'archived';
@@ -7391,6 +7686,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('325ad3f0-c408-5edc-899c-17c8f559ffe4', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_people_hair')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4dc2159bba05da394c3b94c6f54354db1f1f43b321ac4bbdfc2f658237858c70'
   AND status <> 'archived';
@@ -7416,6 +7712,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('58feae20-2d71-5f2f-a2bd-ffdbc6947b1d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_people_hair')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4dc2159bba05da394c3b94c6f54354db1f1f43b321ac4bbdfc2f658237858c70'
   AND status <> 'archived';
@@ -7441,6 +7738,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('d5984850-222e-5774-952d-4d03ab796e94', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_shop_size')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ccdcbe846f3da4eb044fbdf64bf6b57902388ab72fb0c852ba72280f8d478b40'
   AND status <> 'archived';
@@ -7466,6 +7764,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('d9e5ff58-f629-58a9-b3de-bf22bc3e5fa7', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_shop_size')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ccdcbe846f3da4eb044fbdf64bf6b57902388ab72fb0c852ba72280f8d478b40'
   AND status <> 'archived';
@@ -7491,6 +7790,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('ea6d69a7-e85b-53b6-9b1b-63a5f868e111', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_study_student')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '264c8c381bf16c982a4e59b0dd4c6f7808c51a05f64c35db42cc78a2a72875bb'
   AND status <> 'archived';
@@ -7516,6 +7816,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('d8089c6e-70f3-56c8-99ae-781eafb33637', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_study_student')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '264c8c381bf16c982a4e59b0dd4c6f7808c51a05f64c35db42cc78a2a72875bb'
   AND status <> 'archived';
@@ -7541,6 +7842,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('eafa67ac-203a-556a-af76-d25877b59d2f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_hobbies_weekend')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1197a20df1b4c87b10c868648eba70eac619e18ab6a6772e32bc9c701c315e41'
   AND status <> 'archived';
@@ -7566,6 +7868,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('e2ea0215-656d-59cc-980b-ab0a3a29be7a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_hobbies_weekend')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1197a20df1b4c87b10c868648eba70eac619e18ab6a6772e32bc9c701c315e41'
   AND status <> 'archived';
@@ -7591,6 +7894,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('eafa67ac-203a-556a-af76-d25877b59d2f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_plan_weekend')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1197a20df1b4c87b10c868648eba70eac619e18ab6a6772e32bc9c701c315e41'
   AND status <> 'archived';
@@ -7616,6 +7920,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('dd768ec6-caa9-5995-86ce-1ed82e79fed1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_backpack')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5f00368a6ad231c3c439c4f6bc33c27014b4d35a904ff1656d74f9528636f496'
   AND status <> 'archived';
@@ -7641,6 +7946,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c164d3f4-9ac3-5f13-9089-c101e87b3405', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_backpack')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5f00368a6ad231c3c439c4f6bc33c27014b4d35a904ff1656d74f9528636f496'
   AND status <> 'archived';
@@ -7666,6 +7972,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('6a66dd9f-27fa-50aa-9675-f965e7671fda', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_plan_watch')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'baed831623943be39ebf0ef44ae1e9c8fc3eeab51b5f89c113ca410d76a34c1d'
   AND status <> 'archived';
@@ -7691,6 +7998,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('874e8edb-6354-5b93-80d4-b01ad6c8c7b3', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_plan_watch')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'baed831623943be39ebf0ef44ae1e9c8fc3eeab51b5f89c113ca410d76a34c1d'
   AND status <> 'archived';
@@ -7716,6 +8024,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('930ab25a-5936-57fc-8320-41e92c667e5c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'greeting_hi')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4'
   AND status <> 'archived';
@@ -7741,6 +8050,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('17fbb5a1-48b4-5262-aee0-ed4a6111de24', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_music')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '80f189984e5ca70287d13342f6daa0db45cba3c131c4e46dc81360f3a4c4f690'
   AND status <> 'archived';
@@ -7766,6 +8076,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('b961f0a9-4257-5b6f-a193-5d8a483b8f37', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_music')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '80f189984e5ca70287d13342f6daa0db45cba3c131c4e46dc81360f3a4c4f690'
   AND status <> 'archived';
@@ -7791,6 +8102,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('d487f3fb-9f0f-52ca-9376-316e063e0b39', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_dir_right')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9'
   AND status <> 'archived';
@@ -7816,6 +8128,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('1aafcd2e-6158-5494-8010-d745fae78daf', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_dir_right')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9'
   AND status <> 'archived';
@@ -7841,6 +8154,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('ca400865-9a2b-506b-b50c-72fc5e33d9ee', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_movie')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8a6ba32c9bed6ce703f999f9af6ec23686d44e144e4da572d94c8daca4a9cbab'
   AND status <> 'archived';
@@ -7866,6 +8180,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('5e1af59d-73e8-5b35-836b-6786d2c012a0', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_france')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7a1ca4ef7515f7276bae7230545829c27810c9d9e98ab2c06066bee6270d5153'
   AND status <> 'archived';
@@ -7891,6 +8206,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('f00c7214-7840-5e2c-ac34-c219a9d7eba0', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_france')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7a1ca4ef7515f7276bae7230545829c27810c9d9e98ab2c06066bee6270d5153'
   AND status <> 'archived';
@@ -7916,6 +8232,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8305d915-a2a2-5749-9353-5cd3fbb9253f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_small')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '81db8ebbbbc69c6c6ad4a6aa92b76e0c08af547da236b9e2c9dbe1d8285a8130'
   AND status <> 'archived';
@@ -7941,6 +8258,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c3d0981c-5386-54ce-96f1-263ffcf758d0', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_small')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '81db8ebbbbc69c6c6ad4a6aa92b76e0c08af547da236b9e2c9dbe1d8285a8130'
   AND status <> 'archived';
@@ -7966,6 +8284,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('70642f35-1b7e-5ec6-856a-50626ecb135f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_wallet')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e8d44050873dba865aa7c170ab4cce64d90839a34dcfd6cf71d14e0205443b1b'
   AND status <> 'archived';
@@ -7991,6 +8310,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('a2582e48-3671-59eb-a49f-1cdde1f3c19b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_wallet')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e8d44050873dba865aa7c170ab4cce64d90839a34dcfd6cf71d14e0205443b1b'
   AND status <> 'archived';
@@ -8016,6 +8336,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('3cd10cf0-f5c9-573f-8b56-a2801a89ada6', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_shop_shoes')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '01ea5ddd3be5477ac3eae2366fa12064615c485a541682db3e62d283241055a6'
   AND status <> 'archived';
@@ -8041,6 +8362,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('fb2fbcb4-2e41-59a0-9acf-1594b1289ce1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_big')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2a21fe6d592a19b7de898b50eb53c429608de1a66f3e9f62da19714a770553d1'
   AND status <> 'archived';
@@ -8066,6 +8388,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c45feed1-2f5d-55f3-aebe-d4a0fa3f9dc8', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_big')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2a21fe6d592a19b7de898b50eb53c429608de1a66f3e9f62da19714a770553d1'
   AND status <> 'archived';
@@ -8091,6 +8414,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('1cf35a4c-6e8b-5052-9457-9c35878015aa', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_like')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cab2644828bcc1f220612fde559864da2c5bf0c6eebdcadbb4a4c88c9fcf3927'
   AND status <> 'archived';
@@ -8116,6 +8440,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('ef3dc1dd-2e6e-58b5-adb5-958999d58e20', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_like')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cab2644828bcc1f220612fde559864da2c5bf0c6eebdcadbb4a4c88c9fcf3927'
   AND status <> 'archived';
@@ -8141,6 +8466,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('ceebf417-c42d-5e54-926e-e36de42c5a19', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cal_week')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6df37daaa46ce714fa410768b63f415dfad094df33eb34ac1af332074fd15a1c'
   AND status <> 'archived';
@@ -8166,6 +8492,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('c4dd9ac8-0a0c-59ac-8401-b38f0f5d12c1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'social_nice_to_meet_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '39954823f73a76e35ec7280de44b2eb4b26399ecdc00a2b3640db22375d3a4b3'
   AND status <> 'archived';
@@ -8191,6 +8518,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('6fd83e8a-0028-5719-beaf-bd3cee8470b6', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_study_question')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1f5087db919ced5c123c7f507d3fcce818cb0cf6e77c2f95a8a35e951e03fdb9'
   AND status <> 'archived';
@@ -8216,6 +8544,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('610cb58c-16ad-56b2-83ba-fe4d6756961f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_study_question')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1f5087db919ced5c123c7f507d3fcce818cb0cf6e77c2f95a8a35e951e03fdb9'
   AND status <> 'archived';
@@ -8241,6 +8570,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('c98034a6-35f5-5e85-b120-78ff69af8b09', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'farewell_goodbye')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '82e35a63ceba37e9646434c5dd412ea577147f1e4a41ccde1614253187e3dbf9'
   AND status <> 'archived';
@@ -8266,6 +8596,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('f93213a7-7e4e-5712-9ea0-db4038f4fc7a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_spicy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2efa64f91736e51bfbcae85be793635c890cf873727a90a959ad0fbcffafbead'
   AND status <> 'archived';
@@ -8291,6 +8622,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('546f5724-90b5-584a-b351-0361d3cf02a1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_spicy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2efa64f91736e51bfbcae85be793635c890cf873727a90a959ad0fbcffafbead'
   AND status <> 'archived';
@@ -8316,6 +8648,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('b0480515-fb84-5367-80e5-83186dde0d07', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_town_pharmacy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '20b04a4f018b89f369ce009213afc6369f59fe1c903c0770732ec7402163c358'
   AND status <> 'archived';
@@ -8341,6 +8674,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('f71633c3-49c1-597f-b592-9fc7e0e13a3b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_town_pharmacy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '20b04a4f018b89f369ce009213afc6369f59fe1c903c0770732ec7402163c358'
   AND status <> 'archived';
@@ -8366,6 +8700,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('03c8cad1-cde8-50b2-a99b-52f3a605f0e3', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cafe_menu')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '398991009da1d251792eb353a0b7b185bc83e71e12e489e73228b554fc6cebc5'
   AND status <> 'archived';
@@ -8391,6 +8726,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('adc3f64d-7343-5b49-a9d2-17e2fdc17744', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_100')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a86a6a017586300cf9c2bc4fdd5719fafffe98be5b69a9db601477a78e19c53e'
   AND status <> 'archived';
@@ -8416,6 +8752,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('aa6c52ad-5037-5a9f-b8d1-58bc58dcbf6e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_family_children')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '10910087de24bfcabe854fda62b5023a61fe531705043b9979fdf00f12c4c0ec'
   AND status <> 'archived';
@@ -8441,6 +8778,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('04e7244b-2201-5f95-86c5-0f8d90abf431', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_shop_try_on')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'bcc60fc727ad793695278ff82ccb9267abba14168e8aa1092cd3149f3e2ebd8e'
   AND status <> 'archived';
@@ -8466,6 +8804,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('a2264bc5-fae7-599b-9120-b016f094f4e7', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_shop_try_on')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'bcc60fc727ad793695278ff82ccb9267abba14168e8aa1092cd3149f3e2ebd8e'
   AND status <> 'archived';
@@ -8491,6 +8830,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c2e7f414-427a-5c00-8e09-4726a7b5fb7f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_tr_walk')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7a6c4fac6c5cd7209ee2eecd9d6ad3673c55315117de1d8daa5aeb3f71bbd7c7'
   AND status <> 'archived';
@@ -8516,6 +8856,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('22b9e6e5-4f7a-5941-b2bd-e688a1d95c4d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_tr_walk')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7a6c4fac6c5cd7209ee2eecd9d6ad3673c55315117de1d8daa5aeb3f71bbd7c7'
   AND status <> 'archived';
@@ -8541,6 +8882,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('d78db7f9-7135-56dd-b5e8-63f96bf35764', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_tr_bus')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '04e027e4990a203f4899f7e87c2d5ff6b9019e9565795619a59ce06c099560d4'
   AND status <> 'archived';
@@ -8566,6 +8908,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('009081ec-64a4-5e3f-8fa8-7d77c459cd30', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_tr_bus')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '04e027e4990a203f4899f7e87c2d5ff6b9019e9565795619a59ce06c099560d4'
   AND status <> 'archived';
@@ -8591,6 +8934,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('d8e88cf1-7ff1-57af-a19a-b8ce1baba778', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_req_open')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2348f998744212575d85959674f9607ab26f67708a917157472832386337c904'
   AND status <> 'archived';
@@ -8616,6 +8960,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('534c241c-1f39-550e-be07-eacb9d953e51', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_req_open')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2348f998744212575d85959674f9607ab26f67708a917157472832386337c904'
   AND status <> 'archived';
@@ -8641,6 +8986,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('3686dd75-a26d-5ec8-9449-c8865aea8f32', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_head')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9f2e6d33a3717ee826353a404ba4618d1aeeb6879ad7936bce8ed5f46814924d'
   AND status <> 'archived';
@@ -8666,6 +9012,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('ec3a8717-9f7a-5e09-a582-9f171eddcdef', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_head')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9f2e6d33a3717ee826353a404ba4618d1aeeb6879ad7936bce8ed5f46814924d'
   AND status <> 'archived';
@@ -8691,6 +9038,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('b2f2f692-a10f-50f8-ba3f-a30b0aca1614', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cold_illness')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e272deecde720ffc773d7a6a81adabbc366ccbb64da5abdb6b26f52cd3f952cb'
   AND status <> 'archived';
@@ -8716,6 +9064,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('1bc6cfa0-a58b-52dd-8c61-f94733182cf8', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_cold_illness')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e272deecde720ffc773d7a6a81adabbc366ccbb64da5abdb6b26f52cd3f952cb'
   AND status <> 'archived';
@@ -8741,6 +9090,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('1a86af21-ef2a-55a6-827c-bf496af94d7e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cold')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e272deecde720ffc773d7a6a81adabbc366ccbb64da5abdb6b26f52cd3f952cb'
   AND status <> 'archived';
@@ -8766,6 +9116,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('65a86121-c0a0-5491-a03e-646f21ec571d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_cold')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e272deecde720ffc773d7a6a81adabbc366ccbb64da5abdb6b26f52cd3f952cb'
   AND status <> 'archived';
@@ -8791,6 +9142,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('618a2e0c-76ea-5297-ae4a-55b66a835c94', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_dir_blocks')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2a12da17d27cd05ab0f3148816c1b4a702334202e82c5ad0dff734cb45db8017'
   AND status <> 'archived';
@@ -8816,6 +9168,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('d68ee104-4755-55d4-9c6f-c51eff7ae4d1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'social_and_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0c1c23dc335e76d0716be6f8fbd4a526dc6f58a39960621dd893929e7dcc1bd8'
   AND status <> 'archived';
@@ -8841,6 +9194,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8e0d2bfa-df5b-59e4-877d-b96386a2559f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_family_child')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ddc9e669194254cef019a29d3619a2c16592e5d52e1a81e98b01bd52319149a3'
   AND status <> 'archived';
@@ -8866,6 +9220,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('87264c3b-386f-5933-9ad1-728ed7b3c3c6', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_routine_breakfast')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7c58ea253628feed6583e78db4fd9fab131e0016ade168b4c200eb41d6aa93b1'
   AND status <> 'archived';
@@ -8891,6 +9246,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('cf565690-1a2c-53aa-b5b3-13f1ee71f6df', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_love')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '686f746a95b6f836d7d70567c302c3f9ebb5ee0def3d1220ee9d4e9f34f5e131'
   AND status <> 'archived';
@@ -8916,6 +9272,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('77b5d715-7693-5410-a329-5df3b80a0213', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_love')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '686f746a95b6f836d7d70567c302c3f9ebb5ee0def3d1220ee9d4e9f34f5e131'
   AND status <> 'archived';
@@ -8941,6 +9298,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('fa4fbaba-384d-5be7-9d24-610cd053bae6', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_sunday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '873fef760e5d001ba0a843bf1846713fd92538699f323ef00d51f97a2ad2756c'
   AND status <> 'archived';
@@ -8966,6 +9324,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('a6128077-a146-5fbc-be7a-ddf59cec2d0e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_new')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437'
   AND status <> 'archived';
@@ -8991,6 +9350,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('79d0c9fa-e2a6-59e8-a314-c0da462ffffe', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_new')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437'
   AND status <> 'archived';
@@ -9016,6 +9376,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('64da467f-9444-50ce-a447-3480486a12ee', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_turkey')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '07c67d76ef92ac9853588e098983fefba4ba5965f8fec95f42ab0d04c27865ba'
   AND status <> 'archived';
@@ -9041,6 +9402,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('bf68ae7e-a777-50b3-89d8-2e67b0abeabf', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_turkey')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '07c67d76ef92ac9853588e098983fefba4ba5965f8fec95f42ab0d04c27865ba'
   AND status <> 'archived';
@@ -9066,6 +9428,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('5158bf7f-15a4-5146-a177-be8360ccf4a9', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_have_has')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9150c74c5f92d51a92857f4b9678105ba5a676d308339a353b20bd38cd669ce7'
   AND status <> 'archived';
@@ -9091,6 +9454,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('4e859bd6-797f-571a-9be7-b538773afeed', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'intro_name')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '82a3537ff0dbce7eec35d69edc3a189ee6f17d82f353a553f9aa96cb0be3ce89'
   AND status <> 'archived';
@@ -9116,6 +9480,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('907ada17-8709-52d9-b778-e82fbfeffc76', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_shop_shoe')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'efda1c925291a74c51bb958e56bf3589677a4a3880ddf40b8323b0235b3ced09'
   AND status <> 'archived';
@@ -9141,6 +9506,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('41b69dc7-df5b-543e-89b6-85da6df6bba7', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_price_costs')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'bcde6928e538c63c2cb8b26055ef80e2d267c4b682d2680ca29aece97ce76f1b'
   AND status <> 'archived';
@@ -9166,6 +9532,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('1b72de9c-7330-54cc-b103-199c50ab2feb', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cal_day')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '944c27e5b97ab7793e4b6e9ff29384890ece0c7c04d2e2bf81c5f763469cc66b'
   AND status <> 'archived';
@@ -9191,6 +9558,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('6abfc11c-6370-5eb8-b116-6ba640fb442d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_family_husband')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9fee8f88b93ae8b399f50073fe60d9c137216b0cd1176defafd6580328fa5ec9'
   AND status <> 'archived';
@@ -9216,6 +9584,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('069872a0-84bd-5dde-9021-b2eb7b3603a9', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_family_husband')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9fee8f88b93ae8b399f50073fe60d9c137216b0cd1176defafd6580328fa5ec9'
   AND status <> 'archived';
@@ -9241,6 +9610,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('9ee27b12-7474-5176-97c6-9d8a36fba975', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_dir_straight')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2a424875a8475a99175f543fa6fc65964e53e87efc161f7b1f9e370efe6ddd16'
   AND status <> 'archived';
@@ -9266,6 +9636,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('2ce2455d-f3a1-5276-9227-a097d3cbff35', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_dir_straight')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2a424875a8475a99175f543fa6fc65964e53e87efc161f7b1f9e370efe6ddd16'
   AND status <> 'archived';
@@ -9291,6 +9662,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('fe3e3278-dbee-51ab-8247-770bb250802b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_iranian')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a0e60207b3fe760da9186ee63f179002a10a53e342eb5a154b0755cb74b019c0'
   AND status <> 'archived';
@@ -9316,6 +9688,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('07719dce-7479-51e5-9104-a5109d2296ee', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_iranian')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a0e60207b3fe760da9186ee63f179002a10a53e342eb5a154b0755cb74b019c0'
   AND status <> 'archived';
@@ -9341,6 +9714,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('1fd45323-3022-59e8-a45f-a29ab757ac1c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_cal_days')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ab51004e9d71a485f160f655fb9e72bcdef8f5ca4178b26938b49471456fd11c'
   AND status <> 'archived';
@@ -9366,6 +9740,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('6ec89837-cc1e-58c3-9e9b-45ad16b4b38d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'greeting_good_afternoon')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f01e727e7b79d92a23827be2f3a7a3475e84816e8ce19596babcacd8bc1df721'
   AND status <> 'archived';
@@ -9391,6 +9766,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('a0188e05-53ca-5d4d-b4e7-81f8e29a288c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_study_class')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0889113e04d3203f0c401c17c0fd8b352b740dc607433779d3edcaa13320b001'
   AND status <> 'archived';
@@ -9416,6 +9792,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('b1c6d1b6-cca8-5fc5-87af-90f937582684', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_study_class')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0889113e04d3203f0c401c17c0fd8b352b740dc607433779d3edcaa13320b001'
   AND status <> 'archived';
@@ -9441,6 +9818,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('6713c7a4-b16d-53fd-8998-2417b54251f5', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_req_close')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '310ff200149b44a32f124023d7caba19a1a890763a980606813d3a3d4a085d36'
   AND status <> 'archived';
@@ -9466,6 +9844,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('ea333213-eb3f-5ffb-af09-9eee811a76c5', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_req_close')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '310ff200149b44a32f124023d7caba19a1a890763a980606813d3a3d4a085d36'
   AND status <> 'archived';
@@ -9491,6 +9870,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('eccd097f-0b58-5ab8-8e4a-30e1672f1893', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_dir_left')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480'
   AND status <> 'archived';
@@ -9516,6 +9896,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('ef9605d1-973e-5903-b9a6-b6809774949f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_dir_left')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480'
   AND status <> 'archived';
@@ -9541,6 +9922,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('b7d37f69-81cd-5f54-9da5-2d2e2a51d948', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_15')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c463967e5708cab7f980855e14042ddbcfd1c3556d520ad4dacdfb4a115c67a5'
   AND status <> 'archived';
@@ -9566,6 +9948,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('73b8fbbf-b56a-549f-9d67-1c7ba06a53a6', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_15')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c463967e5708cab7f980855e14042ddbcfd1c3556d520ad4dacdfb4a115c67a5'
   AND status <> 'archived';
@@ -9591,6 +9974,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('5593eeeb-4d7e-5f16-982d-5e4a969235a6', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'farewell_see_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '10c91675b679b066d96198158df6c563a2b26350aee34328eaf540b4af964560'
   AND status <> 'archived';
@@ -9616,6 +10000,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('d2c402a0-1a83-5df1-80be-3ed5b63c8b96', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_study_homework')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '404355522396b92953086038cf05a41b27a9f1368be92c0e6b71a1e8c93f420a'
   AND status <> 'archived';
@@ -9641,6 +10026,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('950fee1e-ebe2-590d-9b8e-45267f52b19b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_study_homework')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '404355522396b92953086038cf05a41b27a9f1368be92c0e6b71a1e8c93f420a'
   AND status <> 'archived';
@@ -9666,6 +10052,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8088f52b-c360-5505-91de-99fe92a7855c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_100')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '97fe8a374906993133a2a9f4c9667ce253c107760d79c049cdf95788b0b7a83a'
   AND status <> 'archived';
@@ -9691,6 +10078,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c7423c86-01d0-5a6a-a8ec-7798f1b01997', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_price_dollars')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd444019213e4ac99b381c9fc1d7d05d1a48c45d8e9a9eb8ed1dec0d12f3467b2'
   AND status <> 'archived';
@@ -9716,6 +10104,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('d6342e8e-33c6-577c-807a-6f3e8cc7f943', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_price_cost')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9f82f7b375f4aa1bd7d50abe0f760c4ca5a8f0208aa68555489c39dd7c7aeeaa'
   AND status <> 'archived';
@@ -9741,6 +10130,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('593510c1-c4ba-560b-9cf9-8e36fbcd85ca', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'intro_first_name')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1b836d86806e16bd45164b9d665ce86dac9d9d55bf79d0e771265da9fbf950d1'
   AND status <> 'archived';
@@ -9766,6 +10156,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('7d373092-c63c-55d0-aad3-04f7a5e1f245', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_german')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a659b60d246dce8d4865d45673963de83d0e49a57e8559da98581c2bc5d7d97f'
   AND status <> 'archived';
@@ -9791,6 +10182,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('6e8c5c6d-3479-5003-b6b0-8adb92351244', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_german')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a659b60d246dce8d4865d45673963de83d0e49a57e8559da98581c2bc5d7d97f'
   AND status <> 'archived';
@@ -9816,6 +10208,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('a9bc9b77-e9a5-593a-8137-d9c4853fd701', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_have')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '193c45b5281908d2d9c814ba73be696dd3f252052c230f925d797f373f318d03'
   AND status <> 'archived';
@@ -9841,6 +10234,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c8829a6d-a713-51ba-ba66-96e15f3ae351', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_have_i')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '193c45b5281908d2d9c814ba73be696dd3f252052c230f925d797f373f318d03'
   AND status <> 'archived';
@@ -9866,6 +10260,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('b3c2befa-f7bf-5ca8-a0c3-dd34a921e961', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_us')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '328d162c45461fcf6b448fe83d23470d042d94be5a687e86c56bb7df39cc0449'
   AND status <> 'archived';
@@ -9891,6 +10286,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('fa43e2ee-4bbc-5b7d-a36a-383c60897bcf', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_us')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '328d162c45461fcf6b448fe83d23470d042d94be5a687e86c56bb7df39cc0449'
   AND status <> 'archived';
@@ -9916,6 +10312,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('f90405ab-8f91-5e53-9b2a-2db76f895655', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_hobbies_cook')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '03fb94180aa0ff2c583d97bbb1fc6d84a6ba7df5bde3c267459bb9a9b8c9841b'
   AND status <> 'archived';
@@ -9941,6 +10338,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('fce1c254-d717-53e2-bef8-f344873165e2', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_hobbies_cook')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '03fb94180aa0ff2c583d97bbb1fc6d84a6ba7df5bde3c267459bb9a9b8c9841b'
   AND status <> 'archived';
@@ -9966,6 +10364,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('465ac288-dd0a-515e-8a54-9f3cd14cb72f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_people_short')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f9b0078b5df596d2ea19010c001bbd009e651de2c57e8fb7e355f31eb9d3f739'
   AND status <> 'archived';
@@ -9991,6 +10390,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('cd530e72-3a68-5f42-b783-928c9a27b0b3', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_people_short')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f9b0078b5df596d2ea19010c001bbd009e651de2c57e8fb7e355f31eb9d3f739'
   AND status <> 'archived';
@@ -10016,6 +10416,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('fb4aaceb-fa01-5717-b4c0-075bb55d2ee5', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_study_book')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180'
   AND status <> 'archived';
@@ -10041,6 +10442,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('03e7b1bd-cb1f-512f-a1b3-a574caeb6d09', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_study_book')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180'
   AND status <> 'archived';
@@ -10066,6 +10468,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('6c6728b4-9596-53ea-9d34-e1ae1945231e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'greeting_good_morning')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cdf71dea7d7741a2b6f021f3dd344f75c8333988f547866a8fbf28f064cf7c78'
   AND status <> 'archived';
@@ -10091,6 +10494,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('6606bfbe-c921-5eec-95c4-ff5e298e8e39', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_blue')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '16477688c0e00699c6cfa4497a3612d7e83c532062b64b250fed8908128ed548'
   AND status <> 'archived';
@@ -10116,6 +10520,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('245b364f-358f-50f7-9e49-7354fbb1782e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_blue')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '16477688c0e00699c6cfa4497a3612d7e83c532062b64b250fed8908128ed548'
   AND status <> 'archived';
@@ -10141,6 +10546,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('3847edf8-944f-57b5-b50a-98b162d7488d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_11')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e979074ebd5633a7263aa48c4b7dea055a769115fbc0a7de459f8a74cd2efd2b'
   AND status <> 'archived';
@@ -10166,6 +10572,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('41dd9ec2-fbf9-5a63-aafe-c609522a0c0c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_11')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e979074ebd5633a7263aa48c4b7dea055a769115fbc0a7de459f8a74cd2efd2b'
   AND status <> 'archived';
@@ -10191,6 +10598,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('08eef9bd-c94e-554f-9aea-38c084b5291f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cloudy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5e9562c786d9ca040985788bfdd906e5cdaa64560afe6ec2d5660449944972f9'
   AND status <> 'archived';
@@ -10216,6 +10624,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('dc51c4cc-f97d-50fc-a7ff-95a3192b1548', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_cloudy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5e9562c786d9ca040985788bfdd906e5cdaa64560afe6ec2d5660449944972f9'
   AND status <> 'archived';
@@ -10241,6 +10650,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('7fd4ead4-f8e7-5e31-a730-cd685282351b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_jobs_doctor')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '72f4be89d6ebab1496e21e38bcd7c8ca0a68928af3081ad7dff87e772eb350c2'
   AND status <> 'archived';
@@ -10266,6 +10676,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('038b7618-cd7e-50d9-8e6a-cb14d904ced2', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_jobs_doctor')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '72f4be89d6ebab1496e21e38bcd7c8ca0a68928af3081ad7dff87e772eb350c2'
   AND status <> 'archived';
@@ -10291,6 +10702,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('b42f0440-9d74-5547-9266-c5c0fd0acfa1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'intro_spell')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8f4a0aaa62c4ceef88578b1b674070e6b8d9405b80729d5c7af2f353543b2f89'
   AND status <> 'archived';
@@ -10316,6 +10728,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('21e38654-f008-592a-a2fa-649d351b6371', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_tr_take')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd1905cf90af29a5ac3f99e105830eecc5b3b415b24e2d166a7ce4cf72b2f32e6'
   AND status <> 'archived';
@@ -10341,6 +10754,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('f7c2f145-695b-5a0e-af3f-15f246da2b75', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_tr_take')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd1905cf90af29a5ac3f99e105830eecc5b3b415b24e2d166a7ce4cf72b2f32e6'
   AND status <> 'archived';
@@ -10366,6 +10780,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('69148e92-40c0-5d5b-8210-a5a4ffbbd4fb', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_hobbies_run')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'acba25512100f80b56fc3ccd14c65be55d94800cda77585c5f41a887e398f9be'
   AND status <> 'archived';
@@ -10391,6 +10806,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('76cf367f-b9d4-54ed-ab9a-999e59602750', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_hobbies_run')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'acba25512100f80b56fc3ccd14c65be55d94800cda77585c5f41a887e398f9be'
   AND status <> 'archived';
@@ -10416,6 +10832,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c3ffe06c-a6f1-5762-a57c-68c1d16847a1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_hobbies_play')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'aba4cc9b8af82df5d4efaade764d6a77466453f3e4156bb0b4e489710516b1c3'
   AND status <> 'archived';
@@ -10441,6 +10858,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('4015c629-f342-51b3-85a3-c803e4e382e3', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_hobbies_play')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'aba4cc9b8af82df5d4efaade764d6a77466453f3e4156bb0b4e489710516b1c3'
   AND status <> 'archived';
@@ -10466,6 +10884,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('a531ba57-21d5-59b3-b403-022d20e4e13e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_jobs_teacher')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1057a9604e04b274da5a4de0c8f4b4868d9b230989f8c8c6a28221143cc5a755'
   AND status <> 'archived';
@@ -10491,6 +10910,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('2cf6d6af-9b5b-5026-82b6-e4422fad45d9', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_jobs_teacher')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1057a9604e04b274da5a4de0c8f4b4868d9b230989f8c8c6a28221143cc5a755'
   AND status <> 'archived';
@@ -10516,6 +10936,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('e68df7c1-43dd-5f3f-8572-e746814390aa', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_monday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6a00dfc1dc867e8454c2c8856e1512d9bf02a76710e3411c0972aec886c76c61'
   AND status <> 'archived';
@@ -10541,6 +10962,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('133a45f7-2d13-5ebf-a389-c12a80b0482a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_50')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f8d807ee15e983f8d185132ffb0e55d3075b220891aff58845e55a158c842798'
   AND status <> 'archived';
@@ -10566,6 +10988,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('8353c661-dd21-5c1f-a525-7f45d363b493', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_50')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f8d807ee15e983f8d185132ffb0e55d3075b220891aff58845e55a158c842798'
   AND status <> 'archived';
@@ -10591,6 +11014,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('958eaea3-e5ed-54ea-884e-6a74fbff5eb1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_please')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '56ccc4dcfc96534b06fc0c08a301be24f13b491484d5d984953cc0dba9bbb89a'
   AND status <> 'archived';
@@ -10616,6 +11040,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('71e3a78a-6f81-5334-8aaf-258cfe1547b0', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_please')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '56ccc4dcfc96534b06fc0c08a301be24f13b491484d5d984953cc0dba9bbb89a'
   AND status <> 'archived';
@@ -10641,6 +11066,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('2c0af3e6-f672-50c5-beb8-b19a0c28c702', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_sunny')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c2333a7e3a607935c67c1e6f6810395decc9f66f592b812aaada7db94ba215d6'
   AND status <> 'archived';
@@ -10666,6 +11092,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('af97011f-6b33-5c17-826e-de98c5c64a59', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_sunny')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c2333a7e3a607935c67c1e6f6810395decc9f66f592b812aaada7db94ba215d6'
   AND status <> 'archived';
@@ -10691,6 +11118,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('7eb119ff-b263-5b34-bfbc-f5fb78f0c74a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_tuesday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7d8af1de1262f150187d5938bf649d6c35726970685f916d1ec6392a801b9762'
   AND status <> 'archived';
@@ -10716,6 +11144,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('efcb857d-bf1c-5db3-9dc5-e37196492065', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_price_cheap')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c6f556046e0c00469fe2824aa5fb9fd02c66d154aafc80fdc0f365841c271e12'
   AND status <> 'archived';
@@ -10741,6 +11170,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('d3adfa88-f005-591c-8955-0b89f58e0027', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_price_cheap')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c6f556046e0c00469fe2824aa5fb9fd02c66d154aafc80fdc0f365841c271e12'
   AND status <> 'archived';
@@ -10766,6 +11196,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c429a8dd-6637-5812-bf3d-d1fc1d94b713', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_movies')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a941e049e9b1a5f8f3e2c1d39ee03082c184e89224e519c0bef6d8694743159a'
   AND status <> 'archived';
@@ -10791,6 +11222,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('e4cee01b-73d4-5e2c-9e35-6980dfcc3ed5', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_town_bank')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4381dc2ab14285160c808659aee005d51255add7264b318d07c7417292c7442c'
   AND status <> 'archived';
@@ -10816,6 +11248,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('053550ec-ab00-5f03-90a3-ebc1426b3cbd', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_town_bank')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4381dc2ab14285160c808659aee005d51255add7264b318d07c7417292c7442c'
   AND status <> 'archived';
@@ -10841,6 +11274,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8aa36fcf-c54e-5813-830f-f948d177e179', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_food_bread')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '985604c2b60243122c24d4e18363e6434c535923be05f760204a1aef023aae9b'
   AND status <> 'archived';
@@ -10866,6 +11300,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c52d94f1-c87b-5447-b44b-fb425f1d62e7', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_family_wife')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9d52a3c8e4d6e27de4ad74ec621583de1630551e875f6cb6abfd8157517e7b72'
   AND status <> 'archived';
@@ -10891,6 +11326,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('3546e138-a5a5-5517-bdb8-d65a9b7f56f1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_family_wife')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9d52a3c8e4d6e27de4ad74ec621583de1630551e875f6cb6abfd8157517e7b72'
   AND status <> 'archived';
@@ -10916,6 +11352,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('90e33c1e-2859-5247-a18a-c156aeaf2643', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_tired')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c405760daf9bc32b76f4a57e9c823c39de4645e3ba3dea73d671eee07e152b5d'
   AND status <> 'archived';
@@ -10941,6 +11378,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('744e5cd1-93f7-5e94-aeab-1a5c60fa8f87', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_tired')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c405760daf9bc32b76f4a57e9c823c39de4645e3ba3dea73d671eee07e152b5d'
   AND status <> 'archived';
@@ -10966,6 +11404,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c4fa01cc-574e-53be-9747-d39b2210ddfc', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_price_dollar')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '588d2c1d1f23963e1647ea4fb720eec44b113b82d057156b970e96df9a1be810'
   AND status <> 'archived';
@@ -10991,6 +11430,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('0400faca-9731-558d-b494-486ad538e0b2', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_plan_meet')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8ccb033c0e48b27ff91e1ab948367e3bbc6921487c97624ed7ad064025e3dc99'
   AND status <> 'archived';
@@ -11016,6 +11456,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('731ac9dc-616b-5824-baa1-84ca919dc024', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_plan_meet')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8ccb033c0e48b27ff91e1ab948367e3bbc6921487c97624ed7ad064025e3dc99'
   AND status <> 'archived';
@@ -11041,6 +11482,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('4a4380a8-22ba-5072-846b-bc4fbefab2f4', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_leg')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c7c8fc91abb8ed76c29a883381b92612dcd8235d6e7ddca8d81f6e87d5fab417'
   AND status <> 'archived';
@@ -11066,6 +11508,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('f2c43786-23ac-5318-a7e7-510416d83602', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_leg')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c7c8fc91abb8ed76c29a883381b92612dcd8235d6e7ddca8d81f6e87d5fab417'
   AND status <> 'archived';
@@ -11091,6 +11534,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('863e7e8f-81ab-5af9-a8e1-475c083a6df1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_jobs_chef')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f59ac0828b9a32293b348e398a0efd342b1e4377a687f3a9055ee2871dff35e4'
   AND status <> 'archived';
@@ -11116,6 +11560,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('6fd2c07a-70f4-5469-873d-a0b154b18d2a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_jobs_chef')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f59ac0828b9a32293b348e398a0efd342b1e4377a687f3a9055ee2871dff35e4'
   AND status <> 'archived';
@@ -11141,6 +11586,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c5968581-394c-5a11-8f3c-135ffb7f65cc', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_family_mother')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cf0622ef2a661cd2f11b0b644e40e4e00eb962918424a8c8ba53842fdf290235'
   AND status <> 'archived';
@@ -11166,6 +11612,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('df890ac0-ed5c-5043-8ef0-bc940906cc66', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_family_mother')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cf0622ef2a661cd2f11b0b644e40e4e00eb962918424a8c8ba53842fdf290235'
   AND status <> 'archived';
@@ -11191,6 +11638,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('e31311d2-3d1f-572d-af96-b5785022d8f8', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_home_kitchen')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3171d89ad00530ffa19a244f040e9401a657903cbbbca724996b90a56df2c189'
   AND status <> 'archived';
@@ -11216,6 +11664,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('43245509-88c4-5390-938f-c68791c13559', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_hand')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1b001706a418bdfca35361355c643b7918572b8f9b7503f3043a6e23b45dce52'
   AND status <> 'archived';
@@ -11241,6 +11690,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('985bb881-6745-5600-92af-c37f55f02150', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_hand')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1b001706a418bdfca35361355c643b7918572b8f9b7503f3043a6e23b45dce52'
   AND status <> 'archived';
@@ -11266,6 +11716,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('9a033a54-8eaf-508e-b90d-cef9e52cd987', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_family_parents')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6ce834139509cc20a5b1b0e0e8007f46fb14ef72532e87c4f33894d150e997c0'
   AND status <> 'archived';
@@ -11291,6 +11742,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('68c49d4a-2cc4-504c-b815-0707d55c2ddc', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'intro_last_name')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5b87de02aa741b042511fd277db127a8ac3b04f184420820e6952a0e911441ec'
   AND status <> 'archived';
@@ -11316,6 +11768,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('65ba0952-25cb-511b-96b0-a5ee70698703', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_routine_wake')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '51391bf0ab33e8272bcfca0d61b5ab242391822f331fe51ac5930b58da8e5b25'
   AND status <> 'archived';
@@ -11341,6 +11794,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('88accb62-ea46-5864-bb7f-2c2a175b729d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_routine_wake')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '51391bf0ab33e8272bcfca0d61b5ab242391822f331fe51ac5930b58da8e5b25'
   AND status <> 'archived';
@@ -11366,6 +11820,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('2e41644e-2429-5b2a-bdc6-ee4fcdbb8539', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_people_young')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'dbba921ce20510210ee7db98e000ee32d0e17f5e93105707acc498d6f8ef5a7e'
   AND status <> 'archived';
@@ -11391,6 +11846,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('538cc3db-0aa2-5445-beac-9fc62b7f68eb', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_people_young')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'dbba921ce20510210ee7db98e000ee32d0e17f5e93105707acc498d6f8ef5a7e'
   AND status <> 'archived';
@@ -11416,6 +11872,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8b50ca20-87e0-5a8d-a0bb-dc3444e7990c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_13')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9ecc81f0a4b6dfb0c30e78370c42a1e0c118d2b426ec4dd1ee06c9f62a832040'
   AND status <> 'archived';
@@ -11441,6 +11898,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('0efb2b68-70b5-5f9b-b4e8-505f4a193e84', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_13')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9ecc81f0a4b6dfb0c30e78370c42a1e0c118d2b426ec4dd1ee06c9f62a832040'
   AND status <> 'archived';
@@ -11466,6 +11924,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('7cf97c0e-83c1-517f-a216-150ecb758d8b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_town_station')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9b4ef3e5b7b4d1759cb8f880e34dbd5ea8c3fcd79ce33b89d7357bf64fcbfc91'
   AND status <> 'archived';
@@ -11491,6 +11950,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('68a48254-b7cc-5049-95c5-a3453534ace5', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_town_station')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9b4ef3e5b7b4d1759cb8f880e34dbd5ea8c3fcd79ce33b89d7357bf64fcbfc91'
   AND status <> 'archived';
@@ -11516,6 +11976,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('80f41df6-31b4-5d2f-a9da-0ed72468274d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_shop_shirt')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a52514252adf86066966790e947f72ef6ea6690a6852d5bb5480ee2eeb663395'
   AND status <> 'archived';
@@ -11541,6 +12002,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('8eb3fc62-63a8-5f69-a80c-50bd777968be', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_shop_shirt')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a52514252adf86066966790e947f72ef6ea6690a6852d5bb5480ee2eeb663395'
   AND status <> 'archived';
@@ -11566,6 +12028,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('3d94e690-b993-52b9-b6d8-1e8fe2bdfef6', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_eyes')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd8fe183f5b8e732496891b98c9ea53304c704f12714cdf92873401055195f99f'
   AND status <> 'archived';
@@ -11591,6 +12054,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('ad1e358e-f7c5-5426-b1c2-7eef2c8394a0', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_town_park')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4d3971de62245c94cd3dd8d4d3a72b8ff527d902832eedc8529a9717a969f1d1'
   AND status <> 'archived';
@@ -11616,6 +12080,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('546aca93-367b-5148-af67-4f6e381223d2', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_town_park')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4d3971de62245c94cd3dd8d4d3a72b8ff527d902832eedc8529a9717a969f1d1'
   AND status <> 'archived';
@@ -11641,6 +12106,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('cbd573c4-92c3-5a2c-9494-435694949c6d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_what')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '749ab2c0d06c42ae3b841b79e79875f02b3a042e43c92378cd28bd444c04d284'
   AND status <> 'archived';
@@ -11666,6 +12132,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('9a3d2d74-1552-57e1-bbfd-b22518d222b2', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_what')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '749ab2c0d06c42ae3b841b79e79875f02b3a042e43c92378cd28bd444c04d284'
   AND status <> 'archived';
@@ -11691,6 +12158,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('6120117b-d993-52fd-9f83-03dd8cfc7c13', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_umbrella')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2974744982f08b2077515f1e0dd62fd94b70d805831c994ad0a55b187ecdd1f9'
   AND status <> 'archived';
@@ -11716,6 +12184,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('69480bcc-c9c5-5a0c-b6b5-48f9eaa9cb1c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_umbrella')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2974744982f08b2077515f1e0dd62fd94b70d805831c994ad0a55b187ecdd1f9'
   AND status <> 'archived';
@@ -11741,6 +12210,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('23a8faaa-d3b5-5ae3-a6c0-1a9557026186', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_12')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd1a749ad879b6c07e1f356b260ba81f9cb5b4376072280c9994a5c125165b701'
   AND status <> 'archived';
@@ -11766,6 +12236,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('e67a354f-6dec-5018-9fbb-fad160a379b2', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_12')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd1a749ad879b6c07e1f356b260ba81f9cb5b4376072280c9994a5c125165b701'
   AND status <> 'archived';
@@ -11791,6 +12262,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('28610b97-6a01-5de8-b6a8-d05282bd4dad', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_hobbies_read')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3316348dbadfb7b11c7c2ea235949419e23f9fa898ad2c198f999617912a9925'
   AND status <> 'archived';
@@ -11816,6 +12288,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('9473c9cf-c976-5f29-a59b-a467f10a83fb', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_hobbies_read')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3316348dbadfb7b11c7c2ea235949419e23f9fa898ad2c198f999617912a9925'
   AND status <> 'archived';
@@ -11841,6 +12314,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('f1d07988-ed24-587a-9561-c060c5116279', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_today')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e0f4f767ac88a9303e7317843ac20be980665a36f52397e5b26d4cc2bf54011d'
   AND status <> 'archived';
@@ -11866,6 +12340,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('9b9cdfd7-d4fb-5bc8-8793-4ff1c534a736', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_thursday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'fc2662062ffdef9610020183ea2b087c21d71150d78a7c7463be8a9050bd3ac9'
   AND status <> 'archived';
@@ -11891,6 +12366,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('89ee6a58-118f-5027-bf40-c946f4e28336', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_rainy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7b9e10dfed0288d691f7de746a218238c7c9a2d614745c366dea971cae091753'
   AND status <> 'archived';
@@ -11916,6 +12392,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('6636e0ca-4a5c-5fda-9b29-29c688fa8a5e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_rainy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7b9e10dfed0288d691f7de746a218238c7c9a2d614745c366dea971cae091753'
   AND status <> 'archived';
@@ -11941,6 +12418,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('bd4d5ea7-e918-50c0-8ac9-af1bc604f315', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_price_expensive')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f3cca575ff7e90bd5ef386b93be2649f248c1fb5e592250254577728f3ff6859'
   AND status <> 'archived';
@@ -11966,6 +12444,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('3c26c33d-30fd-5b8f-8d99-6233a1cee2bd', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_price_expensive')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f3cca575ff7e90bd5ef386b93be2649f248c1fb5e592250254577728f3ff6859'
   AND status <> 'archived';
@@ -11991,6 +12470,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('d2358dd0-c315-5cd1-8eaf-5adc1fba945c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_likes')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b0aa8a6c35b4deec55bc1f31b9be4c50a4426ada09b58c4e1dcaf9a81f913903'
   AND status <> 'archived';
@@ -12016,6 +12496,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('d9b30b6a-8940-55ef-8808-5d4054cef5dd', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'greeting_hello')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824'
   AND status <> 'archived';
@@ -12041,6 +12522,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('3442ccd8-1029-5ce1-9005-1e4c4aa218b2', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_req_help')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '106a5842fc5fce6f663176285ed1516dbb1e3d15c05abab12fdca46d60b539b7'
   AND status <> 'archived';
@@ -12066,6 +12548,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('a7f9ecc6-7ef6-5295-9942-6e9b1e4a24ea', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_req_help')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '106a5842fc5fce6f663176285ed1516dbb1e3d15c05abab12fdca46d60b539b7'
   AND status <> 'archived';
@@ -12091,6 +12574,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('aa9b7208-0b37-534f-a964-fafb43f3d99b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_dir_corner')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '45d227c4b297a0ba4ce42738ad3d448e19628a5ecfd509ea861b24a23009d08e'
   AND status <> 'archived';
@@ -12116,6 +12600,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('8578a6a4-2620-5902-b37c-4924b2a0092a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_dir_corner')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '45d227c4b297a0ba4ce42738ad3d448e19628a5ecfd509ea861b24a23009d08e'
   AND status <> 'archived';
@@ -12141,6 +12626,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('eb457884-4eb9-5fe7-92c5-5fe612465d15', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_home_table')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0d4fc4a78d3706edccafb665a8b2fdd9309e82c78625bb0f2b8e7bb9e1c4d21c'
   AND status <> 'archived';
@@ -12166,6 +12652,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('bf7261b9-3ebf-5694-b971-e3042dfce714', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_req_pass')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1'
   AND status <> 'archived';
@@ -12191,6 +12678,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('ef17326f-e84b-5797-84ad-c374cf10004d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_req_pass')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1'
   AND status <> 'archived';
@@ -12216,6 +12704,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('dbd31ec6-5e67-57de-86ea-4183e5060f31', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_french')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7458199fe97a184002bfd3c42bae81371f0ae2229b5c0a257a9bae77e4f4eda8'
   AND status <> 'archived';
@@ -12241,6 +12730,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('169c2dab-a5c0-5435-ba76-4a464343fcdd', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_french')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7458199fe97a184002bfd3c42bae81371f0ae2229b5c0a257a9bae77e4f4eda8'
   AND status <> 'archived';
@@ -12266,6 +12756,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c5108da2-fd9c-533b-8582-51253aaa4981', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_hot')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7f5d1618e7d28cc7bf32788672be04c24877d9a8911f65fef8e3e013c9cbc373'
   AND status <> 'archived';
@@ -12291,6 +12782,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('11667ace-82f7-5e84-8886-52db59e778c0', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_hot')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7f5d1618e7d28cc7bf32788672be04c24877d9a8911f65fef8e3e013c9cbc373'
   AND status <> 'archived';
@@ -12316,6 +12808,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('7f894b5a-7c6b-58b5-a338-c75fc182cfa1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_family_father')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '88a1881f0025cf7117501d07aefc5d4be6696656790d765678df8bc48ca52687'
   AND status <> 'archived';
@@ -12341,6 +12834,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('bab0bf5a-34c5-5fd7-9443-9d96c3feee70', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_family_father')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '88a1881f0025cf7117501d07aefc5d4be6696656790d765678df8bc48ca52687'
   AND status <> 'archived';
@@ -12366,6 +12860,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('ebf1107e-16c1-5888-986a-9c10debb340a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_when')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '15eaa75240aed625be3e142205df3adbbb7051802b32f450e40276be8582b6d8'
   AND status <> 'archived';
@@ -12391,6 +12886,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('9add2b5a-d329-5885-8039-3ecf68f281d1', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_when')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '15eaa75240aed625be3e142205df3adbbb7051802b32f450e40276be8582b6d8'
   AND status <> 'archived';
@@ -12416,6 +12912,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('9a0d117f-9a14-51f9-a44e-bcc4ffb2a0bf', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_old')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4'
   AND status <> 'archived';
@@ -12441,6 +12938,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('7be56103-cd56-5937-9410-375ab0d7e48d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_old')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cba06b5736faf67e54b07b561eae94395e774c517a7d910a54369e1263ccfbd4'
   AND status <> 'archived';
@@ -12466,6 +12964,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('f50967d3-5fc1-54b6-81a6-fc60240f3c3e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_family_brother')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af'
   AND status <> 'archived';
@@ -12491,6 +12990,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('f1916252-47d3-5eb4-b8be-e4e2a99f9869', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_family_brother')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0b4bd77cec705cf5df016344c0fc673fb3c2240078e6af572b2c5c6fa76114af'
   AND status <> 'archived';
@@ -12516,6 +13016,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('2a959598-76d7-5d9d-a083-f7bf7485d1bd', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_people_friendly')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4c448a406dcdf064f72628200461936808f1d5c6956078106bfef933c2ae0967'
   AND status <> 'archived';
@@ -12541,6 +13042,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('09f76182-b4a1-5515-b419-aec7129aeb2f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_people_friendly')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4c448a406dcdf064f72628200461936808f1d5c6956078106bfef933c2ae0967'
   AND status <> 'archived';
@@ -12566,6 +13068,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8c7ef235-960b-585f-a95e-fdc631176d6a', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_sick')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3b04837881bb07b621ae7dc7abae37f3b6981584bdf3e22ece731a5b91eaf395'
   AND status <> 'archived';
@@ -12591,6 +13094,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('5698bc81-69f0-575f-833a-be39751e62cc', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_sick')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3b04837881bb07b621ae7dc7abae37f3b6981584bdf3e22ece731a5b91eaf395'
   AND status <> 'archived';
@@ -12616,6 +13120,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('8bb2dabf-8ff1-5f3f-a263-a9ccbf34bf22', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_where')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b48111c10c65fc119368edafb19f97451759ee90b3f44647368135ca47aa4753'
   AND status <> 'archived';
@@ -12641,6 +13146,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('826c7c9d-ecd7-5694-8af2-187e588f5605', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_where')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b48111c10c65fc119368edafb19f97451759ee90b3f44647368135ca47aa4753'
   AND status <> 'archived';
@@ -12666,6 +13172,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('38adafcb-bcc3-5909-90c4-08cb4e55004c', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_country')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'aff64e4fd520bd185cb01adab98d2d20060f621c62d5cad5204712cfa2294ef7'
   AND status <> 'archived';
@@ -12691,6 +13198,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('1c76d3f4-9ad8-5281-89f7-027a0ad74b64', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_country')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'aff64e4fd520bd185cb01adab98d2d20060f621c62d5cad5204712cfa2294ef7'
   AND status <> 'archived';
@@ -12716,6 +13224,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('87626032-190d-5d17-8527-635774a7336d', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_eye')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '47c215b5f70eb9c9b4bcb2c027007d6cf38a899f40d1d1da6922e49308b15b69'
   AND status <> 'archived';
@@ -12741,6 +13250,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('6ca81ca1-4690-5678-979e-84ab93afd234', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_who')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6ed0337140bd32b4adc5000f76333bd8ca6b2b2c9e0bc354335cf341456290e8'
   AND status <> 'archived';
@@ -12766,6 +13276,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('90cd1d96-e0ce-5a51-9399-7f7b873bb33e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_who')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6ed0337140bd32b4adc5000f76333bd8ca6b2b2c9e0bc354335cf341456290e8'
   AND status <> 'archived';
@@ -12791,6 +13302,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('dec503b7-dbc4-592b-b088-111849d44cef', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_ticket')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '14069429150abcbf244c4c2fb2c4c46a49c93ca9457263ecd9ebb176de3a58bb'
   AND status <> 'archived';
@@ -12816,6 +13328,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('41379b31-79f4-5671-b292-27417586a426', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_ticket')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '14069429150abcbf244c4c2fb2c4c46a49c93ca9457263ecd9ebb176de3a58bb'
   AND status <> 'archived';
@@ -12841,6 +13354,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('c299b8bc-0d4c-56d3-b2bd-d3eb0249a368', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_red')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b1f51a511f1da0cd348b8f8598db32e61cb963e5fc69e2b41485bf99590ed75a'
   AND status <> 'archived';
@@ -12866,6 +13380,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('5adf57e5-c111-5f54-8c46-0026476d216b', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_red')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b1f51a511f1da0cd348b8f8598db32e61cb963e5fc69e2b41485bf99590ed75a'
   AND status <> 'archived';
@@ -12891,6 +13406,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('77afcc5e-001d-50d0-9334-4fc7f633e924', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_jobs_driver')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b4def8217cadae26d4da633fd2a4e58e326cbb5d570afdc3989484da07af3579'
   AND status <> 'archived';
@@ -12916,6 +13432,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('2ea18046-a60c-506a-808b-23581972d0c8', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_jobs_driver')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b4def8217cadae26d4da633fd2a4e58e326cbb5d570afdc3989484da07af3579'
   AND status <> 'archived';
@@ -12941,6 +13458,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('0a43a5d3-ae60-59b0-92aa-790c5d41ed97', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_american')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0baaf6f25d1c5da82d9e4a3229cd45bd99e151c41dce518d7c7e526d86283f24'
   AND status <> 'archived';
@@ -12966,6 +13484,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('fd834932-7f69-56d4-bd52-e9d0ddd8ce1f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_american')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0baaf6f25d1c5da82d9e4a3229cd45bd99e151c41dce518d7c7e526d86283f24'
   AND status <> 'archived';
@@ -12991,6 +13510,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('4029b2e4-f065-558d-9a7e-465d9c890ecb', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cal_birthday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0422d42c689b7e8046dba2d7042e855f6d21e04464bab168fd263f5b10f893ed'
   AND status <> 'archived';
@@ -13016,6 +13536,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('c2e07a25-0b55-5872-8c0c-b255625ccec9', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_routine_wakes')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7017ced4ba78887ba93be3d4e28276dcd1c6fe0aef9ec298a2528da82a718353'
   AND status <> 'archived';
@@ -13041,6 +13562,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('18c7ae7b-ff3d-5544-920f-931c520f1b89', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_friday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e21f3f372a46d4be7b49f6809fc91baefeadae004af06485518e124a142c0271'
   AND status <> 'archived';
@@ -13066,6 +13588,7 @@ SET status = 'archived'
 WHERE entity_type = 'concept'
   AND entity_id = UUID_TO_BIN('8eabaed7-ead1-5031-9f01-e0c69367c766', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'calendar_saturday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'dbe35c7363c2f7ec747b902fb240907fc58ae00b98f107be2d4c7b9cd7f6226e'
   AND status <> 'archived';
@@ -13091,6 +13614,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('6902c607-657e-5d34-be35-4f058877c5eb', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_cafe_check')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '20f65c28671b40937c5bf23acc7c6f37e5a5ec0622e347b57685725df5ba9e50'
   AND status <> 'archived';
@@ -13116,6 +13640,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('3644564a-cbb6-54bd-a4e0-5874427d2640', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_back')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3c482346f375027677fa8a0d6830a32714d4f13f9e94c2d9e215e0ac205ad4e5'
   AND status <> 'archived';
@@ -13141,6 +13666,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('b0c3cc86-2ebf-5366-85b2-6bea44bdda01', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_back')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3c482346f375027677fa8a0d6830a32714d4f13f9e94c2d9e215e0ac205ad4e5'
   AND status <> 'archived';
@@ -13166,6 +13692,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('b36226d3-cccc-50b8-b37b-c661de28eb77', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_family_sister')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1980d3927f07fec9c8d727f187ddde727da7e45247dbb71c7555e5ae0eca66d5'
   AND status <> 'archived';
@@ -13191,6 +13718,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('fbf55f64-23bb-57dc-bde6-da0ec08cd498', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_family_sister')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1980d3927f07fec9c8d727f187ddde727da7e45247dbb71c7555e5ae0eca66d5'
   AND status <> 'archived';
@@ -13216,6 +13744,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('ec49a9f7-ec29-55b1-b981-4b8a670d5b7f', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_40')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9cee2304bd633d42c35db17c1427a273668bd3166487f924216d807a566a8e73'
   AND status <> 'archived';
@@ -13241,6 +13770,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('e7cfefd9-67ab-5131-8b28-31aecac9d9cc', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_40')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9cee2304bd633d42c35db17c1427a273668bd3166487f924216d807a566a8e73'
   AND status <> 'archived';
@@ -13266,6 +13796,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('944948cc-3427-5f3f-b811-4427722d8327', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_iran')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '18d4e170765cc48842d847de1d0545a2e379e9c87b2af2a6f761681309939ce5'
   AND status <> 'archived';
@@ -13291,6 +13822,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('bd7ada9a-96df-52b4-a019-dc88d4bf3077', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_iran')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '18d4e170765cc48842d847de1d0545a2e379e9c87b2af2a6f761681309939ce5'
   AND status <> 'archived';
@@ -13316,6 +13848,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('d389d851-2bc5-5fcd-a1a7-4cbbd57c7e99', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_charger')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '38102b4b8d453fbae854c177c7baad3e4fa42407b104b220dfb42837fb562db2'
   AND status <> 'archived';
@@ -13341,6 +13874,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('45dd14d9-e1b7-54ae-a062-863f6e5c1152', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_charger')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '38102b4b8d453fbae854c177c7baad3e4fa42407b104b220dfb42837fb562db2'
   AND status <> 'archived';
@@ -13366,6 +13900,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('aea1b487-77f3-5f57-a384-ceea0f68f91e', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_num_20')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7c2c4df740f720b0c861920dc27692c4d4b5daa65d6330a593c931d35f8ac737'
   AND status <> 'archived';
@@ -13391,6 +13926,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('d3010e68-216c-5413-8209-d3a2e2f3c2c9', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_num_20')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7c2c4df740f720b0c861920dc27692c4d4b5daa65d6330a593c931d35f8ac737'
   AND status <> 'archived';
@@ -13416,6 +13952,7 @@ SET status = 'archived'
 WHERE entity_type = 'lexeme'
   AND entity_id = UUID_TO_BIN('dd372187-8554-584b-8ee7-def5ec0a4bd4', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_age')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '013f54400c82da08037759ada907a8b864e97de81c088a182062c4b5622fd2ab'
   AND status <> 'archived';
@@ -13441,6 +13978,7 @@ SET status = 'archived'
 WHERE entity_type = 'word_form'
   AND entity_id = UUID_TO_BIN('ad3c9b12-1070-533f-a499-ea70f139a7cc', 1)
   AND voice_key = 'en-us.lexical.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_age')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '013f54400c82da08037759ada907a8b864e97de81c088a182062c4b5622fd2ab'
   AND status <> 'archived';
@@ -13466,6 +14004,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('ac39800a-8050-56b8-9b0d-5214e4835786', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_hobbies_ask')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '486ed9141790d8ffc52de031cd3c9f113ee9962b6c33e83424616066471bb09c'
   AND status <> 'archived';
@@ -13491,6 +14030,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('daccf4a4-6e6c-5f8f-89b9-53bc9ca5bcbd', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_hobbies_games')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0a4f2efbe4b80c3718dda96f1ac92fd3cfc70bd2be25e7c4a9900e408972d350'
   AND status <> 'archived';
@@ -13510,12 +14050,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_hobbies_listen -> audio/generated/en-US/utterances/00a40e99a5f0b1cfb0c0b69ecab6f6f2f811583659e2677dd6f76a0595faebf8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('e98e07f3-7dad-574b-a07f-e2e0e396ab07', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_hobbies_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0a4f2efbe4b80c3718dda96f1ac92fd3cfc70bd2be25e7c4a9900e408972d350'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('dcac43ca-09a4-5d6a-8cd6-035eeb7ece12', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('e98e07f3-7dad-574b-a07f-e2e0e396ab07', 1), '0a4f2efbe4b80c3718dda96f1ac92fd3cfc70bd2be25e7c4a9900e408972d350',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/00a40e99a5f0b1cfb0c0b69ecab6f6f2f811583659e2677dd6f76a0595faebf8.mp3', 1854, '2026-09-12 08:26:06.205052', 'a795f54eecc763259ccd053fd72e6d01d3d2c6b68d1a5034f4765686e8ac9796', 'validated', '{"audio_key":"00a40e99a5f0b1cfb0c0b69ecab6f6f2f811583659e2677dd6f76a0595faebf8","entity_key":"ex_hobbies_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"a795f54eecc763259ccd053fd72e6d01d3d2c6b68d1a5034f4765686e8ac9796","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/00a40e99a5f0b1cfb0c0b69ecab6f6f2f811583659e2677dd6f76a0595faebf8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_obj_big -> audio/generated/en-US/utterances/01fc48fe2323777491be146d696e3ede1f50bd0e15714d9c8aac0542b1cb526f.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('bba62288-f99d-5c09-bfd7-b758011bde41', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_obj_big')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '78f9fbf1e63dd6bb58f7deeb162d057a9770b0c9564275de84dc2fe5ac15ce38'
   AND status <> 'archived';
@@ -13541,6 +14108,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('748d03a7-fcf8-593f-9bf8-406d76ad97d6', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_q_who')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a98ac5d06264c719adc588f313d8f53c8430e76e444a36a5be475b96f4855b1a'
   AND status <> 'archived';
@@ -13560,12 +14128,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_q_listen -> audio/generated/en-US/utterances/035a3c055b03fe276d0b3064acdf32b5ac5bc6117a41f8dfbf17a5f5e8d43130.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('89abc9b9-9757-5d8d-a63c-863e2d7b3bd2', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_q_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a98ac5d06264c719adc588f313d8f53c8430e76e444a36a5be475b96f4855b1a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('63361860-4d33-5c1f-81ae-a2e2d714823b', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('89abc9b9-9757-5d8d-a63c-863e2d7b3bd2', 1), 'a98ac5d06264c719adc588f313d8f53c8430e76e444a36a5be475b96f4855b1a',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/035a3c055b03fe276d0b3064acdf32b5ac5bc6117a41f8dfbf17a5f5e8d43130.mp3', 966, '2026-09-12 08:26:07.163258', '9dedb081661694e92ef4c1a06e468f55ddff00d358127f00cc9dc11de04cdb59', 'validated', '{"audio_key":"035a3c055b03fe276d0b3064acdf32b5ac5bc6117a41f8dfbf17a5f5e8d43130","entity_key":"ex_q_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"9dedb081661694e92ef4c1a06e468f55ddff00d358127f00cc9dc11de04cdb59","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/035a3c055b03fe276d0b3064acdf32b5ac5bc6117a41f8dfbf17a5f5e8d43130.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_food_no_coffee -> audio/generated/en-US/utterances/03644d41a0a8a631cc0fc07f2bc34ed19dbff0c6305a91292573584c482a19e1.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('f79e4692-fe1d-53f6-9b51-d722d8bc6382', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_food_no_coffee')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '64804b3963823da7ad1d309e93de23ef015d006aedf39f652c061b86bd573a7a'
   AND status <> 'archived';
@@ -13591,6 +14186,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('821b2fd4-68f0-5089-9667-f589e20706e7', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_from_germany')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f72ec68c96ea01ac86f79a2c6fa118310ada61822c6bb6182462e9c4a66bde76'
   AND status <> 'archived';
@@ -13616,6 +14212,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('caf39f2b-e954-503e-9a37-f1375099e3be', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_no_charger')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '16db4853746422a44049485d0668455400b04bdb8040772ae94c8621e4fe848c'
   AND status <> 'archived';
@@ -13641,6 +14238,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('f67c8fba-48e0-530d-b749-73d029c8ed01', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_this_is_sam')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '64bc00335b1967c95fe0b60e6a9a8fa9e50e2da94ef1de37767b10150eebcfbd'
   AND status <> 'archived';
@@ -13666,6 +14264,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('54fcae3e-a38b-50f9-9441-5580b9e6b3a1', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_shop_fits')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'da7dc6b13b7a26b087fda53ff9a79e8cc29c0a2d4ac1a778221d8394519e3bd4'
   AND status <> 'archived';
@@ -13685,12 +14284,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_tr_which_bus -> audio/generated/en-US/utterances/0c33262fb8b8b2fd66505ebad74fc2d75d47eaa3c2e2545b7133b55b4646c7f0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('3b730164-0cb9-5850-9f0b-1abe3c9d46e2', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_tr_which_bus')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '87459f3d10fe6ad7eee0a3088ccc7530d73d0747b157a8889f388dfd67194ab4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('cd13d54c-1219-5fe2-b131-e77c78ffa598', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('3b730164-0cb9-5850-9f0b-1abe3c9d46e2', 1), '87459f3d10fe6ad7eee0a3088ccc7530d73d0747b157a8889f388dfd67194ab4',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/0c33262fb8b8b2fd66505ebad74fc2d75d47eaa3c2e2545b7133b55b4646c7f0.mp3', 1933, '2026-09-12 13:22:19.363120', '9fa65577dfd2504371dad89aa0c780695c410875452629c48bb918dc1c4fa9a2', 'validated', '{"audio_key":"0c33262fb8b8b2fd66505ebad74fc2d75d47eaa3c2e2545b7133b55b4646c7f0","entity_key":"u_tr_which_bus","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"9fa65577dfd2504371dad89aa0c780695c410875452629c48bb918dc1c4fa9a2","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/0c33262fb8b8b2fd66505ebad74fc2d75d47eaa3c2e2545b7133b55b4646c7f0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_home_kitchen -> audio/generated/en-US/utterances/0cda8d3d9974b0746b91c9280d9f7f1415db91dbd7d1af04ea6d8371f7a65772.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a55c01e9-7f74-536b-b8e0-0f793101349b', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_home_kitchen')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3743f03315031000c1339d7881a7fcfe3dc6fa6137ce8959466dbbfbe1411585'
   AND status <> 'archived';
@@ -13716,6 +14342,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('0061f6aa-a46f-5480-8958-3b3b8d2f56fd', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_jobs_she_doctor')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f208f7273e185dfa261a76b8823c373f42da774225660267c0df5ae0efde6e86'
   AND status <> 'archived';
@@ -13741,6 +14368,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('2d871be9-952b-5e78-9c6e-9db3a734db47', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_goodbye')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1cb7b221b7adda1cf4c4724b32369394580480c84ab835795d608ac59aa13002'
   AND status <> 'archived';
@@ -13766,6 +14394,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('bfb307b2-4e23-5103-847a-12e1e49ba7e3', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_food_like_coffee')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5944ba2107aed19d6c9b822522237c81704b6ac88c1360c47eeded1775ae4663'
   AND status <> 'archived';
@@ -13785,12 +14414,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_food_listen -> audio/generated/en-US/utterances/11bbd53e2e5af67bec3a9127ec85522d06ffc982fd118697d67667932da62118.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('6ccbcdbc-ca85-53b5-a123-6774e610f7e3', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_food_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5944ba2107aed19d6c9b822522237c81704b6ac88c1360c47eeded1775ae4663'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ac06ca1e-dbd4-5145-a1d9-e171587f113b', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('6ccbcdbc-ca85-53b5-a123-6774e610f7e3', 1), '5944ba2107aed19d6c9b822522237c81704b6ac88c1360c47eeded1775ae4663',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/11bbd53e2e5af67bec3a9127ec85522d06ffc982fd118697d67667932da62118.mp3', 1253, '2026-09-12 08:26:11.046928', '09c1cd48e5204c5093ee256f327a52d9c6c927628c95bac9e502a64c648ff230', 'validated', '{"audio_key":"11bbd53e2e5af67bec3a9127ec85522d06ffc982fd118697d67667932da62118","entity_key":"ex_food_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"09c1cd48e5204c5093ee256f327a52d9c6c927628c95bac9e502a64c648ff230","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/11bbd53e2e5af67bec3a9127ec85522d06ffc982fd118697d67667932da62118.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_first_name -> audio/generated/en-US/utterances/123f828f2ee99f5b0b3c31af299a9eefa5be4f3f38e26b2d78360afa0b7000d4.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('9b39aa17-efb7-53d2-9fd3-172a12c6df6f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_first_name')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5183bebc6881b9572106a0335c38fefb3d30704c3b125fd3c00b1696635da30d'
   AND status <> 'archived';
@@ -13816,6 +14472,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('3eef1862-4c8e-5aef-bcb3-13fbe1f39496', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_likes_movies')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9bc35d5b10b3bed5cbd2ab6e8add829ce9d83282f2a8c8c9adc81104ed2770ed'
   AND status <> 'archived';
@@ -13841,6 +14498,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('ca47589c-8214-566e-9410-28b57867f60d', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_excuse_me')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '91680e48f3f1a17e48ab39fdc99c594a2417338827ab5b191c382f4774ef084f'
   AND status <> 'archived';
@@ -13866,6 +14524,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('83f3f12c-7169-5dbf-9472-6b10f4b8722a', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_see_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b85e335c228acb9216783405b917ea818b8eef57dd9629d259506cb49ea4e519'
   AND status <> 'archived';
@@ -13885,12 +14544,65 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_price_listen -> audio/generated/en-US/utterances/18b9a752919751431f31470191ceff01704ba99809a8cde9c8f3ac2fe196f5b0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('32ea2b60-bf53-5ae4-b56e-f233de88d2e8', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_price_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '596a7daf01e6a6486f180e7e5118ff5569f77422ec2aba7aac08f7b5b973258a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2d311e16-6d57-5d0f-afbc-7164424c8a86', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('32ea2b60-bf53-5ae4-b56e-f233de88d2e8', 1), '596a7daf01e6a6486f180e7e5118ff5569f77422ec2aba7aac08f7b5b973258a',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/18b9a752919751431f31470191ceff01704ba99809a8cde9c8f3ac2fe196f5b0.mp3', 1515, '2026-09-12 13:22:19.450515', 'c4790235093c37ca0c5461275138245fd6f43a2e56245e8bba5cf31610c5ca2f', 'validated', '{"audio_key":"18b9a752919751431f31470191ceff01704ba99809a8cde9c8f3ac2fe196f5b0","entity_key":"ex_price_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"c4790235093c37ca0c5461275138245fd6f43a2e56245e8bba5cf31610c5ca2f","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/18b9a752919751431f31470191ceff01704ba99809a8cde9c8f3ac2fe196f5b0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_dir_listen -> audio/generated/en-US/utterances/18e2d51ccd11b030f63ed1edbdd7b1d08f1051ed3e366b70fb0dbd0e36203a82.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('8f5e03f3-08ef-5b34-b256-3736efccadc2', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_dir_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '82a7c501af2375af3efe07a1cefe869ea9e0b9f0889837c2fd54b9c26faad4bf'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('30f3379d-bbab-512d-9165-676c115f3110', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('8f5e03f3-08ef-5b34-b256-3736efccadc2', 1), '82a7c501af2375af3efe07a1cefe869ea9e0b9f0889837c2fd54b9c26faad4bf',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/18e2d51ccd11b030f63ed1edbdd7b1d08f1051ed3e366b70fb0dbd0e36203a82.mp3', 2220, '2026-09-12 13:22:20.532519', 'e7f017969882aa869cb98dc81f3562ec667d06fc54b644b1533ed9723940cf36', 'validated', '{"audio_key":"18e2d51ccd11b030f63ed1edbdd7b1d08f1051ed3e366b70fb0dbd0e36203a82","entity_key":"ex_dir_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"e7f017969882aa869cb98dc81f3562ec667d06fc54b644b1533ed9723940cf36","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/18e2d51ccd11b030f63ed1edbdd7b1d08f1051ed3e366b70fb0dbd0e36203a82.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_town_yes_station -> audio/generated/en-US/utterances/19883440e98289ce6379a71b1a19fc1cb5d30eb01f24c8342950bd3209d92417.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('431eb24b-c97e-5a3d-b518-7de209756f5c', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_town_yes_station')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a524ec3eaf3fbaea8600c66fb317590fae754ace069e92369f736e00df0e17e5'
   AND status <> 'archived';
@@ -13916,6 +14628,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('5ee30106-702c-5361-89fc-749fd2914d70', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_people_tall')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ab716ab6c464e41ac5816fde512904b6c302d9272a89831024d183bd69198db0'
   AND status <> 'archived';
@@ -13941,6 +14654,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('69d3f8e0-3d49-5142-9bf9-7c896cb3209b', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_dir_on_left')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '55f6f7c282f72d5a69d22b5e1b86f31d09e6cb6adc63374836ffaa2a551c20c0'
   AND status <> 'archived';
@@ -13966,6 +14680,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('287a6418-2d0a-5f9d-bde7-547ecd5be2a6', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_health_sick')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'af74a02426fe3c6ff31a606dbbbe8b5c4e6d5c7ef66c23e8d46c516a9c7cf8bb'
   AND status <> 'archived';
@@ -13991,6 +14706,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('35deec84-5825-52ba-96ec-879a86c37470', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_repeat_please')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7835ad721627104315155df41c815e333dbc19b59ed19059b4145d0062f13ed4'
   AND status <> 'archived';
@@ -14016,6 +14732,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('0c679376-2fbc-5103-b419-ecf11088bf1f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_water_please')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f5f1b86cf34f7e099fecfc5a1797d5a5677dfdee76ba6d32ffdb7c5409223f12'
   AND status <> 'archived';
@@ -14041,6 +14758,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('65e920ab-9fac-5aa1-b1a4-5e9924c27e5d', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_routine_breakfast')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4719a559a2fb02ec92ddfcdea9eb213e7ecec43df2492940c2e7a6663ba23b6c'
   AND status <> 'archived';
@@ -14066,6 +14784,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('571f9f5d-5974-5ff3-a662-e8727a5e8f01', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_nice_to_meet_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '39954823f73a76e35ec7280de44b2eb4b26399ecdc00a2b3640db22375d3a4b3'
   AND status <> 'archived';
@@ -14091,6 +14810,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('7f7abd90-3bd7-548d-a122-572886c785b3', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_family_parents')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '85725f70976b65226aa960c9c96193f6e79e0bc5aa360fa1b4af1ede3d043252'
   AND status <> 'archived';
@@ -14116,6 +14836,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a35c4dc5-6bfa-51c6-9e86-55db08d4f457', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_req_refuse')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '833f53aa88834910d01f2c39937d84b1d2e83cb66008b45068b7e9f9a991dc52'
   AND status <> 'archived';
@@ -14141,6 +14862,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('bbe69cda-bafb-5163-aad2-1297495f2bdf', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_price_cheap')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3e8d1a29eebf4d013837e1cb48efbd02698c7a68ac83c5f94cfe7900841a2ec8'
   AND status <> 'archived';
@@ -14166,6 +14888,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('d660a3f9-4528-5035-8207-eeed8d8b968c', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_routine_wake_seven')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b7709c3cc590c682adf631133c48c1d6990ce6ffa2b728ba4e280084c235d463'
   AND status <> 'archived';
@@ -14191,6 +14914,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('c87b092e-bb9a-5382-a136-7a81ccef9d39', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_home_book_on')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '94a37dd68030ce6c1d2b488f68bd21ad8b565f99a9c59d050592fdf5b5a11a04'
   AND status <> 'archived';
@@ -14216,6 +14940,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a34ef740-deaf-5d53-9d05-759582195117', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cal_what_day')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c42e1e4ac7da5f018a15c1c9a985e0b699436d9577ad7848db6e2c2f74e17b77'
   AND status <> 'archived';
@@ -14241,6 +14966,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('70fc7e76-6b44-5532-a5c0-81dd2b5ef1e2', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_bye')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed'
   AND status <> 'archived';
@@ -14260,12 +14986,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- e11_listen_bye -> audio/generated/en-US/utterances/32b23c1dc0f72543c013ef54b7e82c85f6bb6266b3616cf6e11211102bc2fec7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('e97a6769-207b-5cd0-8779-75c0d4461ad0', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e11_listen_bye')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f65bdbfa-f3c5-5f1f-b792-d551a5ecbce7', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('e97a6769-207b-5cd0-8779-75c0d4461ad0', 1), 'c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/32b23c1dc0f72543c013ef54b7e82c85f6bb6266b3616cf6e11211102bc2fec7.mp3', 679, '2026-09-12 08:20:40.098713', '755bd9500f5919043badc3b360c3e8ef34bd5e9d34280ddb5fe882287a9f60ae', 'validated', '{"audio_key":"32b23c1dc0f72543c013ef54b7e82c85f6bb6266b3616cf6e11211102bc2fec7","entity_key":"e11_listen_bye","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"755bd9500f5919043badc3b360c3e8ef34bd5e9d34280ddb5fe882287a9f60ae","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/32b23c1dc0f72543c013ef54b7e82c85f6bb6266b3616cf6e11211102bc2fec7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_study_question -> audio/generated/en-US/utterances/378b751838d2f5c0fad50585ea5e7127935e40dc4eac567bc5915a57ee70a97f.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('b5c1d370-f354-5929-8932-c8c0b1f80100', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_study_question')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c66fb72552f1fa4c50fc9fc2b527b77c69ac97e3dd1e95d304437bb74f48fbc4'
   AND status <> 'archived';
@@ -14291,6 +15044,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a6330a47-62ee-5dce-b21b-d990f4974c07', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_has_ticket')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '53d9d04f29a433d7e375f8646d05f42b21e2395284bccb92be5b5bcacc81d779'
   AND status <> 'archived';
@@ -14316,6 +15070,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('e928a1d0-6e5a-51f3-83e8-c1732ec8883b', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_last_name')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b74db43ae110b46191ed71ab00136862cb1af309b339f2ae0b8defb0eed59737'
   AND status <> 'archived';
@@ -14335,12 +15090,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_fix_direction_listen -> audio/generated/en-US/utterances/39c748e420d63b803272cf162c6cb42175be3f138c021cde7469582c867f76c5.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('a57a2af4-bdc9-5828-a9dc-e824821dd7bc', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_fix_direction_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7abc72181eb1219e14c00bf1d7f82e72ef825f5b18d8295634b3db6192e1af9d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3b78140d-befd-5574-bd3b-f30cf729db92', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('a57a2af4-bdc9-5828-a9dc-e824821dd7bc', 1), '7abc72181eb1219e14c00bf1d7f82e72ef825f5b18d8295634b3db6192e1af9d',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/39c748e420d63b803272cf162c6cb42175be3f138c021cde7469582c867f76c5.mp3', 1488, '2026-09-12 13:22:20.547397', '735e9499551e78f51e0342cb2afbc46935c0526729f2f65c8cb9bcc8eb3955e5', 'validated', '{"audio_key":"39c748e420d63b803272cf162c6cb42175be3f138c021cde7469582c867f76c5","entity_key":"ex_fix_direction_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"735e9499551e78f51e0342cb2afbc46935c0526729f2f65c8cb9bcc8eb3955e5","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/39c748e420d63b803272cf162c6cb42175be3f138c021cde7469582c867f76c5.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_weather_sunny -> audio/generated/en-US/utterances/3aa9abcf45b97414dadd98daf1bd3bcb0fd7e9d300498e4beed83e8d99ab62fb.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('deb21391-0755-533c-954f-427e81de4e4e', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_sunny')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f6fea9ed826bc9dd2e0a9c6ded773b466b31f06da02f217353ff58886ec713ca'
   AND status <> 'archived';
@@ -14366,6 +15148,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('086df5ce-361b-5d7a-aafa-c7acb3205eea', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_req_close')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'db64f59e615ce1fcc3c10fe481ef7c36a482fd7b7e008ef6ee1c024a7d868a17'
   AND status <> 'archived';
@@ -14391,6 +15174,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('1178be3e-2336-598f-a919-d69e1a32e123', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cal_today_monday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1c729b249b61a429743e4f82fd9a6f253d09aea713947659f4d1ca0e8ee3c66a'
   AND status <> 'archived';
@@ -14416,6 +15200,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('9d19498b-2eaa-5148-aed6-d5da43f40dfc', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_dir_how_station')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd1194c9ec38b9a0569d8e39e6de2d2fb029ea9b45ae2cbde4f9a716e8a721039'
   AND status <> 'archived';
@@ -14435,12 +15220,65 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_fix_word_stress:example:1 -> audio/generated/en-US/utterances/3cbeb319091a9ac35c227ba63ad68716eb1cd73d012258128cae64df1160e854.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('1ea9c932-bfd4-5a53-9eb7-d63a59e5d709', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_fix_word_stress:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1057a9604e04b274da5a4de0c8f4b4868d9b230989f8c8c6a28221143cc5a755'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f07967d0-cb06-5b0e-9201-ccb12983669d', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('1ea9c932-bfd4-5a53-9eb7-d63a59e5d709', 1), '1057a9604e04b274da5a4de0c8f4b4868d9b230989f8c8c6a28221143cc5a755',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/3cbeb319091a9ac35c227ba63ad68716eb1cd73d012258128cae64df1160e854.mp3', 862, '2026-09-12 13:22:21.559840', 'e12590b752b6679d706a6b0f16d9fac8188339242083aa3f5331d7a51e57da69', 'validated', '{"audio_key":"3cbeb319091a9ac35c227ba63ad68716eb1cd73d012258128cae64df1160e854","entity_key":"g_fix_word_stress:example:1","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"e12590b752b6679d706a6b0f16d9fac8188339242083aa3f5331d7a51e57da69","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/3cbeb319091a9ac35c227ba63ad68716eb1cd73d012258128cae64df1160e854.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e09_listen_spell -> audio/generated/en-US/utterances/3d1b132e0336a051f9d545576c3ec956ead373f27fb0278e315ab963c2849aa6.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('aa001d5b-b39c-50b1-9fe4-cf97ee26c27f', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e09_listen_spell')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd987e43fafadc37d15ea965a423c87dc7d2f6be5d68a8caf5153381646086020'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2ca811ff-8364-5163-8f99-af28b36cfc18', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('aa001d5b-b39c-50b1-9fe4-cf97ee26c27f', 1), 'd987e43fafadc37d15ea965a423c87dc7d2f6be5d68a8caf5153381646086020',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/3d1b132e0336a051f9d545576c3ec956ead373f27fb0278e315ab963c2849aa6.mp3', 1436, '2026-09-12 13:22:21.635059', '17841865b33ca288311b7f9bef6ab1bef2c5ec6d454e80b6708e069fe4916cf5', 'validated', '{"audio_key":"3d1b132e0336a051f9d545576c3ec956ead373f27fb0278e315ab963c2849aa6","entity_key":"e09_listen_spell","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"17841865b33ca288311b7f9bef6ab1bef2c5ec6d454e80b6708e069fe4916cf5","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/3d1b132e0336a051f9d545576c3ec956ead373f27fb0278e315ab963c2849aa6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_hobbies_run -> audio/generated/en-US/utterances/3e13f1ac4f7e4b44e7bc85a7ec4ec30ad518f836931ce568a235d157738d2db3.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('9ad0cff3-95d0-5ee9-85c5-e449694dcefd', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_hobbies_run')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'eca1377f38985dbb2ddd34b54ede60c1413d3d88de0e6e1f8a2384960ff65180'
   AND status <> 'archived';
@@ -14466,6 +15304,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('adcc031f-c25c-5f46-bd3f-691f277819e9', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_num_21')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a69edb489f4eb7f23d85766e3f60af8326fa7f4d0fbf1f14ad276336a18e1dfe'
   AND status <> 'archived';
@@ -14491,6 +15330,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('00839591-5ab3-5831-9840-25c8719e8a3a', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_im_ava')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '378407b03a6e216ba6c8f8cc6a265624ec939300006d643be20a03b061b9f2a0'
   AND status <> 'archived';
@@ -14516,6 +15356,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('16d4147a-6533-5165-b3ec-f2aff7bc2149', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_body_eyes')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'aa50bf95ff13acad7975b0460a81bf93e8a11335098fe38cdeb6ab83335e3001'
   AND status <> 'archived';
@@ -14541,6 +15382,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('b4990484-fa00-538b-a73c-3c543c3ee5d5', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_my_name_is_ava')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cc5bf5fde49eb7867b310e56ae639dce98d7987d3804542b8254cacb1a786a02'
   AND status <> 'archived';
@@ -14566,6 +15408,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('de7c89ba-62de-5f33-bd3c-310a51b6eef9', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_home_there_table')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'de2814ae3b136f48e213cb1d9e904db0ddfbee9c09fe1cf02c907c5e506baa05'
   AND status <> 'archived';
@@ -14591,6 +15434,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('7c1ab39f-d8da-5b49-a2d9-cc07f40f0a50', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_req_open')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2a0b48071059462fb775457727f142d8e487d87f704b61b484d0196efba9963b'
   AND status <> 'archived';
@@ -14610,12 +15454,91 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_req_listen -> audio/generated/en-US/utterances/50482b16ff672cf1ee7ea09d91868485f40d87857867c6f74834a0d8a2bef98b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('cf050faf-8dbe-5762-8f74-1187760e8316', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_req_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2a0b48071059462fb775457727f142d8e487d87f704b61b484d0196efba9963b'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('480623e4-cb08-5a65-a562-f774f01e0200', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('cf050faf-8dbe-5762-8f74-1187760e8316', 1), '2a0b48071059462fb775457727f142d8e487d87f704b61b484d0196efba9963b',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/50482b16ff672cf1ee7ea09d91868485f40d87857867c6f74834a0d8a2bef98b.mp3', 1854, '2026-09-12 08:26:27.073601', '0fac0aa9d1aa62cfe1d021e67f7e10691a6492ee8206e712f70083e06493a40c', 'validated', '{"audio_key":"50482b16ff672cf1ee7ea09d91868485f40d87857867c6f74834a0d8a2bef98b","entity_key":"ex_req_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"0fac0aa9d1aa62cfe1d021e67f7e10691a6492ee8206e712f70083e06493a40c","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/50482b16ff672cf1ee7ea09d91868485f40d87857867c6f74834a0d8a2bef98b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_jobs_office -> audio/generated/en-US/utterances/5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('cd180822-3db8-54e2-a26d-16829de71433', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_jobs_office')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c9397652eca0527be650850f001f86b437a8419b40a83e68f5e734a3ce933564'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7c0c1e54-89aa-5ae6-a73d-76d5ff423b86', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('cd180822-3db8-54e2-a26d-16829de71433', 1), 'c9397652eca0527be650850f001f86b437a8419b40a83e68f5e734a3ce933564',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d.mp3', 1436, '2026-09-12 13:22:22.655982', '974b6b73b1f11229a41691750a3434e059cc5e7b848f432d7ab4dd6454d2a0b2', 'validated', '{"audio_key":"5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d","entity_key":"u_jobs_office","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"974b6b73b1f11229a41691750a3434e059cc5e7b848f432d7ab4dd6454d2a0b2","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_jobs_listen -> audio/generated/en-US/utterances/5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('21f5a013-5743-51d8-bdf0-f63e11335b71', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_jobs_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c9397652eca0527be650850f001f86b437a8419b40a83e68f5e734a3ce933564'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('141751d9-003a-52c7-9c50-890f4e550bca', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('21f5a013-5743-51d8-bdf0-f63e11335b71', 1), 'c9397652eca0527be650850f001f86b437a8419b40a83e68f5e734a3ce933564',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d.mp3', 1436, '2026-09-12 13:22:22.655982', '974b6b73b1f11229a41691750a3434e059cc5e7b848f432d7ab4dd6454d2a0b2', 'validated', '{"audio_key":"5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d","entity_key":"ex_jobs_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"974b6b73b1f11229a41691750a3434e059cc5e7b848f432d7ab4dd6454d2a0b2","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/5087c0e34980b48b24df0778e114d7351bd61212b9506dc0b6c5f1b4ff94888d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_sure_lina -> audio/generated/en-US/utterances/50fa5f08edc3a54296f4dae4e2ff215fbb3dc7243f729bb76ce0bfc4c22311b7.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('728e4251-d257-5e38-ac95-4ea6e64c058f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_sure_lina')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c4a20177b1e54057c1b8516f2803fa98e3ccfa477afa41cad0f5beb60d229bdd'
   AND status <> 'archived';
@@ -14641,6 +15564,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('24fa0add-5a62-5c47-b76e-60bd91c9dec2', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_body_leg')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4dc3663d8194b5024f261afea6b0ea15f4f5936eb9ae3097d4c36ff8c3bc4be2'
   AND status <> 'archived';
@@ -14660,12 +15584,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_body_listen -> audio/generated/en-US/utterances/5117627636d16dc4bc2d3b3af5776c66482e0bbd589ff41529cae51271e5a59d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('68511e39-6e71-518a-8a67-b6bf0bcdfb1e', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_body_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4dc3663d8194b5024f261afea6b0ea15f4f5936eb9ae3097d4c36ff8c3bc4be2'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('bf7d7aec-5b95-5722-8f22-bc17688e6b5b', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('68511e39-6e71-518a-8a67-b6bf0bcdfb1e', 1), '4dc3663d8194b5024f261afea6b0ea15f4f5936eb9ae3097d4c36ff8c3bc4be2',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/5117627636d16dc4bc2d3b3af5776c66482e0bbd589ff41529cae51271e5a59d.mp3', 1071, '2026-09-12 08:26:28.042905', '1a9d018d17d46bcf12ece18488a98534634d45426ad11ecebd7bb90f58abf72c', 'validated', '{"audio_key":"5117627636d16dc4bc2d3b3af5776c66482e0bbd589ff41529cae51271e5a59d","entity_key":"ex_body_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"1a9d018d17d46bcf12ece18488a98534634d45426ad11ecebd7bb90f58abf72c","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/5117627636d16dc4bc2d3b3af5776c66482e0bbd589ff41529cae51271e5a59d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_health_not_well -> audio/generated/en-US/utterances/516576af9292e780f537b32993f089e849eff07e30cb7ab8efaf29f288280617.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('0843370d-2e7d-5874-9f42-ffe26062d5e4', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_health_not_well')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ffee03efe9415cc7257c685e9c1c64c1e6976a0e307ebfe3a36933dc39db2bd9'
   AND status <> 'archived';
@@ -14691,6 +15642,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('5081bc1e-1173-50cd-8e97-4e09f7bd9b0f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_how_old')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9b181de483e0da61391cd385f16383f953401fdfee8ca2c46297bd812f3e0b5d'
   AND status <> 'archived';
@@ -14716,6 +15668,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('c55b7499-d07e-5d58-bb39-68273ed4ba35', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_have_keys')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5b1bd0afd634d67e37d6410ca4df2f2392110ee7e9fa2c89f1524574df0672f8'
   AND status <> 'archived';
@@ -14741,6 +15694,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('7505ae00-dfb1-5f61-a651-de44479cc0a9', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_q_do')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '316df3f4ea292c099844eb76d0f2c203323b2968c2186ba9c66967ac5dc74bca'
   AND status <> 'archived';
@@ -14760,12 +15714,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_fix_question_intonation:example:1 -> audio/generated/en-US/utterances/53b9158f0b4ceab4055653bfb21f4e4f529c46a07b4e4cc5d644ae6ee628b32d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('d9129e62-7965-5041-9a28-8d16b266fc9a', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_fix_question_intonation:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '316df3f4ea292c099844eb76d0f2c203323b2968c2186ba9c66967ac5dc74bca'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3b1e6eac-b02f-524e-b7ed-86a3a1c1daae', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('d9129e62-7965-5041-9a28-8d16b266fc9a', 1), '316df3f4ea292c099844eb76d0f2c203323b2968c2186ba9c66967ac5dc74bca',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/53b9158f0b4ceab4055653bfb21f4e4f529c46a07b4e4cc5d644ae6ee628b32d.mp3', 1280, '2026-09-12 08:26:29.919651', 'ec9f64801afd7567778b8db2281e81b6b4fde5e57321c77153dfc8d313939157', 'validated', '{"audio_key":"53b9158f0b4ceab4055653bfb21f4e4f529c46a07b4e4cc5d644ae6ee628b32d","entity_key":"g_fix_question_intonation:example:1","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"ec9f64801afd7567778b8db2281e81b6b4fde5e57321c77153dfc8d313939157","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/53b9158f0b4ceab4055653bfb21f4e4f529c46a07b4e4cc5d644ae6ee628b32d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_tr_walk -> audio/generated/en-US/utterances/54b7a1f8ee91dffa36455b3a911926d15ee383b59fa7e3468c4e0556af72071a.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('fdcb0e1c-0fd3-5b65-a250-53c32e2c6da6', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_tr_walk')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6abdf33f15d1793bb3122597e1d4e3ded0ea32bf535f13a62ad25b724b07cdb4'
   AND status <> 'archived';
@@ -14791,6 +15772,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('49a6fa9a-9370-5b9f-8873-cf4a85d05e2b', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_time_half_seven')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f49d5b89c64c98905d172252ca08d0af892156e9d36a28dada42d6c0e77ddd81'
   AND status <> 'archived';
@@ -14810,12 +15792,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_time_listen -> audio/generated/en-US/utterances/54bf2854274f67067eda9661392485548279388f88c303af7e3603c5348b9007.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('7a83efad-cf48-59d2-8d58-bf234deab7a8', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_time_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f49d5b89c64c98905d172252ca08d0af892156e9d36a28dada42d6c0e77ddd81'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('68c87643-ef19-558b-8806-692697678ab5', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('7a83efad-cf48-59d2-8d58-bf234deab7a8', 1), 'f49d5b89c64c98905d172252ca08d0af892156e9d36a28dada42d6c0e77ddd81',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/54bf2854274f67067eda9661392485548279388f88c303af7e3603c5348b9007.mp3', 1567, '2026-09-12 08:26:30.923174', 'b028b4474fae6cc9ce7dced240a4856676443acdc736697c082fc04b9e4aadb5', 'validated', '{"audio_key":"54bf2854274f67067eda9661392485548279388f88c303af7e3603c5348b9007","entity_key":"ex_time_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"b028b4474fae6cc9ce7dced240a4856676443acdc736697c082fc04b9e4aadb5","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/54bf2854274f67067eda9661392485548279388f88c303af7e3603c5348b9007.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_health_cold -> audio/generated/en-US/utterances/5b8e79fb46e4f9b39f1acdd496f50166aea08ccb06f10a53439818990a70eb2e.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('d2285e36-9021-5981-91e5-c2ee6f8c645f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_health_cold')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd2358e6dd7bc91ab8d8267fecd0315b002e88027cd8c6e8f4e4dc981b687ba1a'
   AND status <> 'archived';
@@ -14841,6 +15850,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('8e11dcc2-59f3-5365-94ca-1f99a32e529f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_spell_name')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'edeeedb79da0d54fbe2e2e60aeefbf9c57cfe24fa27d1a159ca3234a38fc6d84'
   AND status <> 'archived';
@@ -14866,6 +15876,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('eb4fe7ca-af78-5ba8-91b1-e386cceb1d8a', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_food_bread_water')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1ce055a4b066663b755d1a1323437a710018723cd5ed2bd6e8fe92addfdaccee'
   AND status <> 'archived';
@@ -14885,12 +15896,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_fix_routine_review -> audio/generated/en-US/utterances/636cb5994cb5a39c4016735ad707fc8a2fb3623805ea7fe449dd7d9e77a31b44.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('84074ebf-044a-53a4-893f-ac5c020bba8c', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_fix_routine_review')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1f6f214c47f045cb9426d420b2a5684dd7bd6b5941481e65f694d687c605fc2d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a637221e-a521-5746-82a6-69f491e181e6', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('84074ebf-044a-53a4-893f-ac5c020bba8c', 1), '1f6f214c47f045cb9426d420b2a5684dd7bd6b5941481e65f694d687c605fc2d',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/636cb5994cb5a39c4016735ad707fc8a2fb3623805ea7fe449dd7d9e77a31b44.mp3', 2951, '2026-09-12 13:22:22.830195', 'f9647762a07d4e90994b01fb100ad9003e888446f907790e72670cdc6b8684fe', 'validated', '{"audio_key":"636cb5994cb5a39c4016735ad707fc8a2fb3623805ea7fe449dd7d9e77a31b44","entity_key":"ex_fix_routine_review","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"f9647762a07d4e90994b01fb100ad9003e888446f907790e72670cdc6b8684fe","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/636cb5994cb5a39c4016735ad707fc8a2fb3623805ea7fe449dd7d9e77a31b44.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_family_sister -> audio/generated/en-US/utterances/65d8cd4e3cf7f55d7334ee385bd934bfd8df72f2e58754b4942a09d41e65ec45.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a0298b3a-7ed9-5b54-82d7-dd5c9f58373e', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_family_sister')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2bbac8e82f35ad86a5401df1a7f273028a8e7b08ef611f09468ce08d9d37c3e7'
   AND status <> 'archived';
@@ -14916,6 +15954,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('b7ae8afc-c80e-5bbd-af29-40200962d503', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_thank_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9e41164cb68b90cf8133a32422dceef505ce83d054281d47edff7b018531e88c'
   AND status <> 'archived';
@@ -14941,6 +15980,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('dcb79743-d089-50d2-addc-e65b00a528c0', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_shop_try_on')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '1442c32134ebe6ee58fa29129ea878488619a4270b60b95da75b01482bb96279'
   AND status <> 'archived';
@@ -14960,12 +16000,65 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_shop_listen -> audio/generated/en-US/utterances/6b99a23e993f19eea9d6b29388552b09d9d19878dbf73f3ab55b07a6d316f1fd.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('46e2bb67-8859-5551-8b8e-f6a4294046f3', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_shop_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1442c32134ebe6ee58fa29129ea878488619a4270b60b95da75b01482bb96279'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('68d5f404-e6ad-5daf-a57b-b1d4a90d67bb', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('46e2bb67-8859-5551-8b8e-f6a4294046f3', 1), '1442c32134ebe6ee58fa29129ea878488619a4270b60b95da75b01482bb96279',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/6b99a23e993f19eea9d6b29388552b09d9d19878dbf73f3ab55b07a6d316f1fd.mp3', 1253, '2026-09-12 08:26:34.008277', 'd94f40a70fc54fd0fbe237b5633883fb6a9e1c89bf2d96b89b2fde5cf40bedf8', 'validated', '{"audio_key":"6b99a23e993f19eea9d6b29388552b09d9d19878dbf73f3ab55b07a6d316f1fd","entity_key":"ex_shop_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"d94f40a70fc54fd0fbe237b5633883fb6a9e1c89bf2d96b89b2fde5cf40bedf8","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/6b99a23e993f19eea9d6b29388552b09d9d19878dbf73f3ab55b07a6d316f1fd.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_fix_routine_listen -> audio/generated/en-US/utterances/6bc858ba9b365a1f5defbd25608dbb54602d0f643bb0f0cb5ba9b4ab456aa76d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('1f6b07c0-e8d0-5def-baaa-bba91e147774', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_fix_routine_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '982bfe6900f4f2a6419c90bc2f677af2761c7820c65635e9316bc1600413430a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('99d6b0bd-29d2-5fd1-a77f-3fd2e53227a6', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('1f6b07c0-e8d0-5def-baaa-bba91e147774', 1), '982bfe6900f4f2a6419c90bc2f677af2761c7820c65635e9316bc1600413430a',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/6bc858ba9b365a1f5defbd25608dbb54602d0f643bb0f0cb5ba9b4ab456aa76d.mp3', 1567, '2026-09-12 13:22:23.752609', 'b851935bb7a965b9acbe5459f3b63b53ab0e801dce005a0c7165c097faf78cb0', 'validated', '{"audio_key":"6bc858ba9b365a1f5defbd25608dbb54602d0f643bb0f0cb5ba9b4ab456aa76d","entity_key":"ex_fix_routine_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"b851935bb7a965b9acbe5459f3b63b53ab0e801dce005a0c7165c097faf78cb0","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/6bc858ba9b365a1f5defbd25608dbb54602d0f643bb0f0cb5ba9b4ab456aa76d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_dir_turn_left -> audio/generated/en-US/utterances/6bdd576f577f7da6c637dadd6c96cdd9449553809d361269285b3a111648ad67.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('46c44bf6-67a4-570a-9695-bd7311da99a0', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_dir_turn_left')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0acb12e222eba70643fbc64e5b9370e5900f57c03e4f55d19e5c396f3c1214a2'
   AND status <> 'archived';
@@ -14985,12 +16078,65 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_have_listen -> audio/generated/en-US/utterances/6dede0d537f079a7350522b2c45070d85677634abf8989068157db03e07c9c7f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('cb075e1a-0f41-55e6-aed9-8bb6cb4bac01', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_have_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '53484a42c4ba456caf2af2a042f628a455f417e6bf1fcfaafb690c08bb308d7e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('471c926b-60e3-50bf-a7c3-b653c7906999', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('cb075e1a-0f41-55e6-aed9-8bb6cb4bac01', 1), '53484a42c4ba456caf2af2a042f628a455f417e6bf1fcfaafb690c08bb308d7e',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/6dede0d537f079a7350522b2c45070d85677634abf8989068157db03e07c9c7f.mp3', 1488, '2026-09-12 13:22:23.918391', '3c08312489e978d28f794fd64ab049ec431a46bdee6f08832fdc6c13cfa59aa3', 'validated', '{"audio_key":"6dede0d537f079a7350522b2c45070d85677634abf8989068157db03e07c9c7f","entity_key":"ex_have_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"3c08312489e978d28f794fd64ab049ec431a46bdee6f08832fdc6c13cfa59aa3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/6dede0d537f079a7350522b2c45070d85677634abf8989068157db03e07c9c7f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_fix_home_listen -> audio/generated/en-US/utterances/6e856d513727c06394a97d062b1839637ccaa3b9079c5cda2115e67a1620dd19.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('e131f7f9-a539-5d4c-a6d6-d5d15b61b56c', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_fix_home_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1047977f6a4f3e2639c7d8b7494e8702c678607dd55ba2a1eadd7f0e15d3247d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('045ab627-7555-5dae-a7c0-1fd0383358e3', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('e131f7f9-a539-5d4c-a6d6-d5d15b61b56c', 1), '1047977f6a4f3e2639c7d8b7494e8702c678607dd55ba2a1eadd7f0e15d3247d',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/6e856d513727c06394a97d062b1839637ccaa3b9079c5cda2115e67a1620dd19.mp3', 1488, '2026-09-12 13:22:24.859478', 'e1b47d23b4c0c8b41c8a85d269ac0bf6725ad2d960f00765366013729976d59c', 'validated', '{"audio_key":"6e856d513727c06394a97d062b1839637ccaa3b9079c5cda2115e67a1620dd19","entity_key":"ex_fix_home_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"e1b47d23b4c0c8b41c8a85d269ac0bf6725ad2d960f00765366013729976d59c","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/6e856d513727c06394a97d062b1839637ccaa3b9079c5cda2115e67a1620dd19.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_cafe_coffee -> audio/generated/en-US/utterances/6fa1613b4c43689690693373270bf31c7898654bed39f292175c50999cbf5cfc.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('2cc3bbab-64a0-564a-b880-b247773c572a', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cafe_coffee')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '48ead1b36dc67e43371d7f4b3fbf09e24d59b0ff6553ef3245f38d5565c358f1'
   AND status <> 'archived';
@@ -15016,6 +16162,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('2ec29022-a7ec-5fa9-b2d2-79be2696ac39', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_q_when')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '855a60c04e2827e86bbfb3ddbb0e91ff38bcbb82c43df7cce6a22cd4db592e1d'
   AND status <> 'archived';
@@ -15041,6 +16188,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('9ede9d51-4cb0-5a23-8787-f45b6ccee3c0', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_town_station')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '4d98be858cd33601f2e34673540e42746cc6367649aff5d49aa98a4e4f2326fc'
   AND status <> 'archived';
@@ -15066,6 +16214,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('0e0aacb0-7346-51fa-9d8a-f6fd59bf9376', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_age_25')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '25195c097f271b81710d3fd88f30b36569aa381a278199eec71b992c657d2ed1'
   AND status <> 'archived';
@@ -15091,6 +16240,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('1a386675-91aa-55c9-bb9a-8bf14ef05d3a', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_shop_blue_shirt')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c13a14e3b1e8c9e5e2055a0ef5fd3c6c82517e0e1bd66f95db8a3696f5e1f537'
   AND status <> 'archived';
@@ -15116,6 +16266,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('4fc3db06-401b-53f2-875b-46bbdf899b42', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_q_where')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '143c343f0c548b3f628160667244404e93047c8e9a63af609efaf33a057e6f0f'
   AND status <> 'archived';
@@ -15141,6 +16292,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('d5dbcc6f-a328-5703-88f9-810f05d2f314', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_cold')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ff28fb2c1fcda16d0ae14403b7d5cfe53b66c37b3bba950e408b77b3cd5f14bd'
   AND status <> 'archived';
@@ -15160,12 +16312,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_num_13 -> audio/generated/en-US/utterances/76dc2e99b06e02b0407482794901be50417e5706b8b8a95087b77413d3a78b90.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('0f56d3b1-8b80-5e27-9a83-aa0c4ed018be', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_num_13')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9ecc81f0a4b6dfb0c30e78370c42a1e0c118d2b426ec4dd1ee06c9f62a832040'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6812969c-273c-5fd0-bb58-78cc6f4fa76f', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('0f56d3b1-8b80-5e27-9a83-aa0c4ed018be', 1), '9ecc81f0a4b6dfb0c30e78370c42a1e0c118d2b426ec4dd1ee06c9f62a832040',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/76dc2e99b06e02b0407482794901be50417e5706b8b8a95087b77413d3a78b90.mp3', 1018, '2026-09-12 13:22:24.945540', '55b195e7abc725bbbcb6b74d2b9fe126aba86082788b1b23946ff7bb4fd5e18a', 'validated', '{"audio_key":"76dc2e99b06e02b0407482794901be50417e5706b8b8a95087b77413d3a78b90","entity_key":"ex_num_13","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"55b195e7abc725bbbcb6b74d2b9fe126aba86082788b1b23946ff7bb4fd5e18a","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/76dc2e99b06e02b0407482794901be50417e5706b8b8a95087b77413d3a78b90.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_sorry_late -> audio/generated/en-US/utterances/77c22461d4ff48643d57d20f3c95d10694d1b6ada0b0ee40b467226f0c03f978.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('6fd4020a-b9b7-51c1-9bab-27658c79f4b1', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_sorry_late')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cf068eaeb9a2ce9cc48f3c27eadef292b4aedb9cf870cb92d9bb8d881931def9'
   AND status <> 'archived';
@@ -15185,12 +16364,65 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_polite_listen -> audio/generated/en-US/utterances/77c22461d4ff48643d57d20f3c95d10694d1b6ada0b0ee40b467226f0c03f978.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('b16cc2de-aa6b-52ac-9b5d-ead9e8711c9d', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_polite_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'cf068eaeb9a2ce9cc48f3c27eadef292b4aedb9cf870cb92d9bb8d881931def9'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ff47c7e9-cd44-513d-8b3e-8fad1ef9f946', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('b16cc2de-aa6b-52ac-9b5d-ead9e8711c9d', 1), 'cf068eaeb9a2ce9cc48f3c27eadef292b4aedb9cf870cb92d9bb8d881931def9',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/77c22461d4ff48643d57d20f3c95d10694d1b6ada0b0ee40b467226f0c03f978.mp3', 1384, '2026-09-12 08:26:38.709271', 'd2b91c5413c8f5d388bdf18d09e700be42eb907329b91ae2ec7bc539e33949ae', 'validated', '{"audio_key":"77c22461d4ff48643d57d20f3c95d10694d1b6ada0b0ee40b467226f0c03f978","entity_key":"ex_polite_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"d2b91c5413c8f5d388bdf18d09e700be42eb907329b91ae2ec7bc539e33949ae","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/77c22461d4ff48643d57d20f3c95d10694d1b6ada0b0ee40b467226f0c03f978.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e05_listen_name -> audio/generated/en-US/utterances/7bcbefe488f6ad878774c2db57ad26e9af6073485bda13f3d9401d031d7e7341.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('b1ae5ced-3a4c-54c4-95d8-0693079eed48', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e05_listen_name')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '10aba6948860264d3b436639f51b6109c4cd6c0774a290bbf786e2e7c13c8d65'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f0e4a408-26b2-5caa-b4b6-6d4fe2509306', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('b1ae5ced-3a4c-54c4-95d8-0693079eed48', 1), '10aba6948860264d3b436639f51b6109c4cd6c0774a290bbf786e2e7c13c8d65',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/7bcbefe488f6ad878774c2db57ad26e9af6073485bda13f3d9401d031d7e7341.mp3', 1201, '2026-09-12 13:22:25.946833', '715f84b7958930b60c2df2826b373a8e8ed777dcd033baebeab2a274df3c1498', 'validated', '{"audio_key":"7bcbefe488f6ad878774c2db57ad26e9af6073485bda13f3d9401d031d7e7341","entity_key":"e05_listen_name","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"715f84b7958930b60c2df2826b373a8e8ed777dcd033baebeab2a274df3c1498","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/7bcbefe488f6ad878774c2db57ad26e9af6073485bda13f3d9401d031d7e7341.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_price_expensive -> audio/generated/en-US/utterances/7c6fbb6f28856dc8f8416919a7ff4031363c840d45fbaf7bc7444052597c5d60.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('55af8282-b601-592c-aa8a-54b706a21049', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_price_expensive')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ef8e326430f48febab954680959181b802f36b6764cdfb2341051fdc7e2a5217'
   AND status <> 'archived';
@@ -15216,6 +16448,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('42fa5826-b3f5-547d-b242-923136fcfdfe', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_family_mother')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3edb60c0eee69a9502999e8e5fef1653ebd27bdba8f163b666463b28ccf1d5c8'
   AND status <> 'archived';
@@ -15241,6 +16474,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('e21c6d5e-c0d3-56a9-8a33-e7f20d2fecd2', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_plan_movie')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6a5173e6d7e3b24c39fa5a5f36ce99fc2c7805872fa281780b62acf6a8b9d94a'
   AND status <> 'archived';
@@ -15266,6 +16500,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('12ac8706-5de0-5c43-852b-b1222bba0b2d', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_im_iranian')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3fd97e05a12d7ec74967000959b787da0874c1f9e79df600766fdfe15521628e'
   AND status <> 'archived';
@@ -15291,6 +16526,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('50ada9e6-4e8a-52a3-89f7-4f721291f8b0', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_family_children')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'df7464f8d8a021ab585b02ee46ebe7265e941843437caf041880b4994d6e9223'
   AND status <> 'archived';
@@ -15316,6 +16552,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('8c3615eb-8d1c-5ab5-805e-4378c0a6ec3e', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_plan_meet')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '6c7308c8ad71ba833d4d54ea5cc440406c77348ff7114020c02c7cf944b97ff5'
   AND status <> 'archived';
@@ -15335,12 +16572,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_fix_jobs_school -> audio/generated/en-US/utterances/81c9b4cb9d73fcab5c985e5d2c8fd1558bb1acc301c265bf5d01bca7e7023cd1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('c606b60c-c465-5503-b043-918a8480c26b', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_fix_jobs_school')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f696d34f92ecb154f83f43c193779725292fb57c7f47b0752a093f503e7eb14c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d7c6fd03-9fb0-5d44-a460-0a07b4e2d56a', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('c606b60c-c465-5503-b043-918a8480c26b', 1), 'f696d34f92ecb154f83f43c193779725292fb57c7f47b0752a093f503e7eb14c',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/81c9b4cb9d73fcab5c985e5d2c8fd1558bb1acc301c265bf5d01bca7e7023cd1.mp3', 1332, '2026-09-12 13:22:25.948788', '412615cc3417e681c5e59915316070c93d1f22e8e818fc8e4405267d540e0128', 'validated', '{"audio_key":"81c9b4cb9d73fcab5c985e5d2c8fd1558bb1acc301c265bf5d01bca7e7023cd1","entity_key":"ex_fix_jobs_school","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"412615cc3417e681c5e59915316070c93d1f22e8e818fc8e4405267d540e0128","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/81c9b4cb9d73fcab5c985e5d2c8fd1558bb1acc301c265bf5d01bca7e7023cd1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_likes_coffee -> audio/generated/en-US/utterances/820e25666aa97235a2b39f8be69acc0a99481ad8202013964063959a00457dd6.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('7c1f566e-e91c-5b32-8882-4bf3127e7c07', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_likes_coffee')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '77a5b046490426e02cf8b84b094694750496e699402628be6f40397a83d21b03'
   AND status <> 'archived';
@@ -15360,12 +16624,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_fix_word_stress:example:2 -> audio/generated/en-US/utterances/83613417d70750bacb7498ab7d9ab1a01983b6172ca58e6cfa3ebd23e8c47773.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('1ea9c932-bfd4-5a53-9eb7-d63a59e5d709', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_fix_word_stress:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '72f4be89d6ebab1496e21e38bcd7c8ca0a68928af3081ad7dff87e772eb350c2'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('709d486c-cfd9-55aa-935d-71ff26a5292f', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('1ea9c932-bfd4-5a53-9eb7-d63a59e5d709', 1), '72f4be89d6ebab1496e21e38bcd7c8ca0a68928af3081ad7dff87e772eb350c2',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/83613417d70750bacb7498ab7d9ab1a01983b6172ca58e6cfa3ebd23e8c47773.mp3', 862, '2026-09-12 13:22:26.982201', '8989d4078089c69004dd0a7eedf1fd0bef3e62486d08f3d5f7427b92d948d9cf', 'validated', '{"audio_key":"83613417d70750bacb7498ab7d9ab1a01983b6172ca58e6cfa3ebd23e8c47773","entity_key":"g_fix_word_stress:example:2","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"8989d4078089c69004dd0a7eedf1fd0bef3e62486d08f3d5f7427b92d948d9cf","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/83613417d70750bacb7498ab7d9ab1a01983b6172ca58e6cfa3ebd23e8c47773.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_body_hand -> audio/generated/en-US/utterances/847d646c39e180592667ba7f4f0cc00d818076973c6fadc66c944d38bed04553.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a8178ef7-166b-56c3-81a4-045dc3673c53', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_body_hand')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ebbabca0a9586bcffdaed7fcf820f08e9afc49254803f8a8131973261e731b84'
   AND status <> 'archived';
@@ -15391,6 +16682,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('9bfdc3ef-edc1-5ba4-b5c7-a2a6ccdb0bb1', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_good_morning')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c9ebfb6f4b8e880908a737b8d770aa3a518fb6053b327720e8dcc79609c32858'
   AND status <> 'archived';
@@ -15410,12 +16702,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- e05_listen_morning -> audio/generated/en-US/utterances/8562ba31c977273387bc2d108fb19cc28944f9ea917fb21fd269bb6983724071.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('a6ec2cdd-2798-54e9-8647-8fba30b34a1c', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e05_listen_morning')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c9ebfb6f4b8e880908a737b8d770aa3a518fb6053b327720e8dcc79609c32858'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('bb05459c-c87c-5564-b826-338eee983c16', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('a6ec2cdd-2798-54e9-8647-8fba30b34a1c', 1), 'c9ebfb6f4b8e880908a737b8d770aa3a518fb6053b327720e8dcc79609c32858',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/8562ba31c977273387bc2d108fb19cc28944f9ea917fb21fd269bb6983724071.mp3', 1071, '2026-09-12 08:26:43.027005', '8d3d8a69e3ce0a437085e2e419d3b282e8854d7f98feab42570e2cc27e846dce', 'validated', '{"audio_key":"8562ba31c977273387bc2d108fb19cc28944f9ea917fb21fd269bb6983724071","entity_key":"e05_listen_morning","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"8d3d8a69e3ce0a437085e2e419d3b282e8854d7f98feab42570e2cc27e846dce","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/8562ba31c977273387bc2d108fb19cc28944f9ea917fb21fd269bb6983724071.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_req_help -> audio/generated/en-US/utterances/87584afb068c888958709f68b78eca74dd184bd9893d05a09b738907e735944b.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('c8293471-5108-5e9b-b49e-c5cd92ccccba', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_req_help')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8266f9d07e530dee2fa934fd340022f956bd258d92193de5b3d9174d6748b1da'
   AND status <> 'archived';
@@ -15441,6 +16760,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('52c6cf61-175e-5ed5-9add-e2fbad2a030f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_routine_work')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '673421442e3e95d1c59136317521c0212c020d259440647fc336e8313874b562'
   AND status <> 'archived';
@@ -15466,6 +16786,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('83f89aca-4433-5275-bb3b-d3f21dd52be4', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_routine_bed')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '70d225db57ae533e4cede1d978d4640916f34dc683a48f901aa384766fee634e'
   AND status <> 'archived';
@@ -15485,12 +16806,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_routine_listen -> audio/generated/en-US/utterances/8cf6fa2efe56f67eab1bdb6ab34774e554b6b9e2b4bf0e9cd8accb25bdd4eec4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('48737487-b675-528d-ae57-61a6f6e9489a', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_routine_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '70d225db57ae533e4cede1d978d4640916f34dc683a48f901aa384766fee634e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1948a7e0-e70c-5539-b760-a286debce7f0', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('48737487-b675-528d-ae57-61a6f6e9489a', 1), '70d225db57ae533e4cede1d978d4640916f34dc683a48f901aa384766fee634e',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/8cf6fa2efe56f67eab1bdb6ab34774e554b6b9e2b4bf0e9cd8accb25bdd4eec4.mp3', 1567, '2026-09-12 08:26:44.639362', '9a954c5aee38f6331a75c1b4759f28274f039da6c50f98ac37c7fecca27fd922', 'validated', '{"audio_key":"8cf6fa2efe56f67eab1bdb6ab34774e554b6b9e2b4bf0e9cd8accb25bdd4eec4","entity_key":"ex_routine_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"9a954c5aee38f6331a75c1b4759f28274f039da6c50f98ac37c7fecca27fd922","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/8cf6fa2efe56f67eab1bdb6ab34774e554b6b9e2b4bf0e9cd8accb25bdd4eec4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_study_class -> audio/generated/en-US/utterances/8e7d6d04d9a5546d345259830c3e2136ac9a1b47a39ef22ed5533a9395d1c9dd.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('97441213-e1ee-55f2-807c-c1db716bc8bd', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_study_class')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ea5e93c2ab5621c5af0753047da7394a3478125bc204dd64266c4dd0abb5a5ba'
   AND status <> 'archived';
@@ -15510,12 +16858,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_study_listen -> audio/generated/en-US/utterances/8e7d6d04d9a5546d345259830c3e2136ac9a1b47a39ef22ed5533a9395d1c9dd.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('30a234f5-7c57-58c2-a5c2-b99b154bce92', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_study_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ea5e93c2ab5621c5af0753047da7394a3478125bc204dd64266c4dd0abb5a5ba'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7eff61b7-a280-54ac-a428-32acb90b9f17', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('30a234f5-7c57-58c2-a5c2-b99b154bce92', 1), 'ea5e93c2ab5621c5af0753047da7394a3478125bc204dd64266c4dd0abb5a5ba',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/8e7d6d04d9a5546d345259830c3e2136ac9a1b47a39ef22ed5533a9395d1c9dd.mp3', 1488, '2026-09-12 08:26:45.116335', 'ff37927fe929e7e2e2d037a8c7f1d54412c5d8b4a0056841f68c7163057f7d89', 'validated', '{"audio_key":"8e7d6d04d9a5546d345259830c3e2136ac9a1b47a39ef22ed5533a9395d1c9dd","entity_key":"ex_study_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"ff37927fe929e7e2e2d037a8c7f1d54412c5d8b4a0056841f68c7163057f7d89","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/8e7d6d04d9a5546d345259830c3e2136ac9a1b47a39ef22ed5533a9395d1c9dd.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_weather_hot -> audio/generated/en-US/utterances/8eae2e1f7e3347f3a386f31641b72a51bd5dbd3f4a37569c625ea0c3aefcbe35.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('40063403-d3cb-5177-bdd9-4c90cb7bff31', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_hot')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ebe56e6149da1429bf9a889f60f2c0e4934e4de2c9c98d14778c6d22cbfb1eb8'
   AND status <> 'archived';
@@ -15541,6 +16916,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('bf07ddbe-b60e-5bbb-baba-b19e2e3fd6aa', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_req_pass')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a8e6eb68d72c9df498850634124cf69876e3c95106526bfc47aa871d2534a0af'
   AND status <> 'archived';
@@ -15566,6 +16942,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('7da5c732-869b-5eb5-a19c-e05858aca823', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cafe_check')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b684a0db431d2419d85f2f3b42f77cb420787d967c8945329e2fc094af7b6265'
   AND status <> 'archived';
@@ -15585,12 +16962,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_cafe_listen -> audio/generated/en-US/utterances/921ae56b7405646da9f642b9b372f3d1e549e0fb9bcf0a0d906c64ad5df6a7d1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('64dc3d50-a83e-5cb1-ad89-589c2d2bd70a', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_cafe_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b684a0db431d2419d85f2f3b42f77cb420787d967c8945329e2fc094af7b6265'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('231cf10c-6303-5eb3-ab5b-2455fe387bd6', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('64dc3d50-a83e-5cb1-ad89-589c2d2bd70a', 1), 'b684a0db431d2419d85f2f3b42f77cb420787d967c8945329e2fc094af7b6265',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/921ae56b7405646da9f642b9b372f3d1e549e0fb9bcf0a0d906c64ad5df6a7d1.mp3', 1384, '2026-09-12 08:26:46.886004', 'fdce391eaa7d6473ed9d577a659c96a10a4dfbd53a3a2a7944135841e7c992ad', 'validated', '{"audio_key":"921ae56b7405646da9f642b9b372f3d1e549e0fb9bcf0a0d906c64ad5df6a7d1","entity_key":"ex_cafe_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"fdce391eaa7d6473ed9d577a659c96a10a4dfbd53a3a2a7944135841e7c992ad","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/921ae56b7405646da9f642b9b372f3d1e549e0fb9bcf0a0d906c64ad5df6a7d1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_hobbies_read -> audio/generated/en-US/utterances/93b6c823cd91c6dd7de8a246fe886693ef7d26e7b8c10d9f9e2b0fea30beb9d2.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('8dc2148c-22ac-586d-9247-7705e817b0e3', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_hobbies_read')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '03e771ee92f4f776540ffa8d1bf3c3d8bf900d47c19b54a145d30eba5ef80d45'
   AND status <> 'archived';
@@ -15616,6 +17020,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('eed6957f-f9cf-55c5-abdb-e4d62d9eea7a', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_time_question')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'cd61bf0cc67fc2233111c91167e2abb3c652200bfe22059a166475d37366b7a8'
   AND status <> 'archived';
@@ -15635,12 +17040,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_home_listen -> audio/generated/en-US/utterances/97c31b1c055684d062e6ccb90e17086f4558febdc83a3cda9b59bf98e3eae3c6.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('95d18f30-11f2-524a-8a21-9cf9108792b3', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_home_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '6b11e3fc1f35a636d9fd04d07de894c1682fe65fde54c489b1682f73b884f296'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2c122e76-6dc8-5fb8-b1a6-4d8ef82a4e53', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('95d18f30-11f2-524a-8a21-9cf9108792b3', 1), '6b11e3fc1f35a636d9fd04d07de894c1682fe65fde54c489b1682f73b884f296',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/97c31b1c055684d062e6ccb90e17086f4558febdc83a3cda9b59bf98e3eae3c6.mp3', 1515, '2026-09-12 13:22:27.013991', '3deb56f6c501f9939d103871fb136f776bcdfc18a2ffaa5742aa0148d322c4f2', 'validated', '{"audio_key":"97c31b1c055684d062e6ccb90e17086f4558febdc83a3cda9b59bf98e3eae3c6","entity_key":"ex_home_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"3deb56f6c501f9939d103871fb136f776bcdfc18a2ffaa5742aa0148d322c4f2","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/97c31b1c055684d062e6ccb90e17086f4558febdc83a3cda9b59bf98e3eae3c6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_jobs_ask -> audio/generated/en-US/utterances/97d04e330a1bf1090a877a6df72c5ba54183ae180a910b1c84dfb70386180a52.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('4edf2ebd-0341-5a1c-b6ef-2f076dc59c50', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_jobs_ask')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a052a8a6fd2160e0e96b4b20c6ab970ecab775f026367832298458891651d3e5'
   AND status <> 'archived';
@@ -15666,6 +17098,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('3f2e8f34-54ac-56dd-91b4-37d6cf7c74d5', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_health_tired')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c93cc828b8a7144025cd0b2d2719c04588126a8b5504d53e7f6fe61ce6683f6b'
   AND status <> 'archived';
@@ -15691,6 +17124,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a701d7e2-6bb6-5e37-8e96-4b76faa5d233', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_plan_accept')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'e4b9c2673972e20a79a2711687e575136d405e52aec961966a43157d8712c360'
   AND status <> 'archived';
@@ -15716,6 +17150,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('088d369a-476a-5047-a9e1-eeaf87a63103', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_dir_turn_right')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd607b1a7d839dea24bcf3ca9b44d713a34fdd21a2f908c390197eafc8fec37af'
   AND status <> 'archived';
@@ -15741,6 +17176,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a888a0cb-18a4-52af-8f85-ac1dac008939', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_and_your_name')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '800bf8fdfe9aa902a538416d031e9d1b4cba843c9d0fc8c69a47a7321f5de864'
   AND status <> 'archived';
@@ -15766,6 +17202,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('9a41f414-6f2a-5fcf-8a2e-594e6bd3fc6e', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_obj_old')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd18770c94624d1c20fcff80ddfeb513e52917948122d53ea7d9a4cb8ef1254ea'
   AND status <> 'archived';
@@ -15785,12 +17222,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_obj_listen -> audio/generated/en-US/utterances/9b75fdb60ed37ca39e4b6e69dbaa8504bed5534bd45d9f5fa434eb0f66a06bb1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('704534c0-f8fc-54d6-bafe-7a54efb3e94d', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_obj_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd18770c94624d1c20fcff80ddfeb513e52917948122d53ea7d9a4cb8ef1254ea'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('48a263fe-d8b7-543d-9f5b-c190b6f292e5', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('704534c0-f8fc-54d6-bafe-7a54efb3e94d', 1), 'd18770c94624d1c20fcff80ddfeb513e52917948122d53ea7d9a4cb8ef1254ea',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/9b75fdb60ed37ca39e4b6e69dbaa8504bed5534bd45d9f5fa434eb0f66a06bb1.mp3', 1280, '2026-09-12 08:26:50.988053', '02ed4ff1bfdc4e28f5b8ae869f7b10d66c460f4713efb0b1e3f4b0dcb428cd89', 'validated', '{"audio_key":"9b75fdb60ed37ca39e4b6e69dbaa8504bed5534bd45d9f5fa434eb0f66a06bb1","entity_key":"ex_obj_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"02ed4ff1bfdc4e28f5b8ae869f7b10d66c460f4713efb0b1e3f4b0dcb428cd89","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/9b75fdb60ed37ca39e4b6e69dbaa8504bed5534bd45d9f5fa434eb0f66a06bb1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_jobs_teacher -> audio/generated/en-US/utterances/a0585a9c90d312678f0b44e72a0f60271f78d62ca2b5ff2ec01e38ace77717fe.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('16167da4-87bf-5c62-84f7-421e00139f68', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_jobs_teacher')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5eb755c0d2334123ae99672531d293e5aee762e476e57e21e9ba6bf191d519c8'
   AND status <> 'archived';
@@ -15816,6 +17280,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('696d9174-92fb-5215-b69b-7841f92588ad', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_question')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '07626e9345f1c3f9ca3594ee3d0f3207f5beea141debc6615d01b8e81538bc8b'
   AND status <> 'archived';
@@ -15841,6 +17306,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('04c3d751-ae47-578e-9e64-408d333160da', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_body_back')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '86ded1c10f7c8fe96f58d85a2ab40bb7a16bfa6e21a9b0fdeb6246cf2b3f7f23'
   AND status <> 'archived';
@@ -15866,6 +17332,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('1f1ffe15-19d7-57f8-b29a-fe92ea648fe7', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_home_bedroom')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f5977676906835c9053b1e56acb32ccc1caf4294a2c73fad8329fffff69cd5d0'
   AND status <> 'archived';
@@ -15891,6 +17358,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('ae564f28-6df1-5af9-a757-9c91a16f175c', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_obj_blue')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5286b57707f918e758457b800a4f9d60860ad761cd2a6829cf80643da72c6c67'
   AND status <> 'archived';
@@ -15916,6 +17384,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('20f0cc09-14e3-5d47-8299-fd4adbd96e39', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_town_bank')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '52526c40ebea71d99bf0b6dd16cde679ed2eac7c51e59c2f660ac3611a78f717'
   AND status <> 'archived';
@@ -15935,12 +17404,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_fix_food_listen -> audio/generated/en-US/utterances/a55d9f5254056fec64b8040f0e986f2245753c21da9a7efc5f1779a4e73608f7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('8e453842-dce1-5928-aed8-87c9941707f9', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_fix_food_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7644c67769edc4f7778ec9d04479da448ce73eb6347ff128b2dda69a942c7720'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3cb0fb32-9c25-5e69-8419-a01fff83e5a4', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('8e453842-dce1-5928-aed8-87c9941707f9', 1), '7644c67769edc4f7778ec9d04479da448ce73eb6347ff128b2dda69a942c7720',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/a55d9f5254056fec64b8040f0e986f2245753c21da9a7efc5f1779a4e73608f7.mp3', 1071, '2026-09-12 13:22:28.110405', '0c6b4201b503ec4773b6aa25523deb9a3dac097e57660ad58c6f3e3800d198ac', 'validated', '{"audio_key":"a55d9f5254056fec64b8040f0e986f2245753c21da9a7efc5f1779a4e73608f7","entity_key":"ex_fix_food_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"0c6b4201b503ec4773b6aa25523deb9a3dac097e57660ad58c6f3e3800d198ac","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/a55d9f5254056fec64b8040f0e986f2245753c21da9a7efc5f1779a4e73608f7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_weather_rainy -> audio/generated/en-US/utterances/a75f1f198f020bc1e5475ddf8984271e539fffea9b99e338b946c0cf177803cb.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('5d54f31d-179a-5c48-94db-2eee51a4d7ea', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_rainy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '850819f6ee728e390399bfa6902c8986f146eb9fcdd92a1642e73f2dbcda76f4'
   AND status <> 'archived';
@@ -15960,12 +17456,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_weather_listen -> audio/generated/en-US/utterances/a75f1f198f020bc1e5475ddf8984271e539fffea9b99e338b946c0cf177803cb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('e666bde5-4a21-5d63-a626-6a4a0ac9f917', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_weather_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '850819f6ee728e390399bfa6902c8986f146eb9fcdd92a1642e73f2dbcda76f4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fd8791c8-4d0b-5bfe-86e9-420a03e10601', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('e666bde5-4a21-5d63-a626-6a4a0ac9f917', 1), '850819f6ee728e390399bfa6902c8986f146eb9fcdd92a1642e73f2dbcda76f4',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/a75f1f198f020bc1e5475ddf8984271e539fffea9b99e338b946c0cf177803cb.mp3', 1488, '2026-09-12 08:26:54.119678', 'b00062711af101cc8a76ebb236708a91f9e417257c4606791af44c6ac83d7742', 'validated', '{"audio_key":"a75f1f198f020bc1e5475ddf8984271e539fffea9b99e338b946c0cf177803cb","entity_key":"ex_weather_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"b00062711af101cc8a76ebb236708a91f9e417257c4606791af44c6ac83d7742","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/a75f1f198f020bc1e5475ddf8984271e539fffea9b99e338b946c0cf177803cb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_price_twenty -> audio/generated/en-US/utterances/a7763c3797eadb5c3bdc45fbc2c2bf901f91fc2efbda6006d4b8e47a56b3f358.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('2268e2e5-0989-5ee8-9367-4ef9abc89fb7', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_price_twenty')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '002ff4c7a69454d6c08c2a3cae3940fd33806a619a7f8624e5bdf6688d4129a8'
   AND status <> 'archived';
@@ -15991,6 +17514,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('ad797e85-0ff8-5564-91e6-7c5b8ac4a7af', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_good_evening')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0248808ddaa3479e17482884c8bb3f281b20264c8299aa434d2b6cba256b9ec3'
   AND status <> 'archived';
@@ -16016,6 +17540,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('c5311fe8-a336-52eb-b999-6ee61aaefd40', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_people_ask')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c394dd01ede9aa58e466fd07306dd282d2438cd24fa95942d44c25ae09ed4456'
   AND status <> 'archived';
@@ -16041,6 +17566,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('f3aeebe9-56ce-533c-aff3-7c55a6599baf', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_food_water')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '140cc82a04bd78832edcd524baaf9d36eeb910d70eab3a1af9d2bf40b52a81b0'
   AND status <> 'archived';
@@ -16066,6 +17592,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('0a872d03-2510-5b94-b522-e7dafb912976', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_are_you_french')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9369e9c1c9fe01722c49c8b4965d6732b746ba1cc8ac94ef9d95e55784adde9d'
   AND status <> 'archived';
@@ -16091,6 +17618,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('78addb79-3618-58a1-810f-9f7d14712500', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_price_how_much')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'abdfbb3951b780a174166d38d10acc3920b5e8f4712cc6014104161424c3b2f8'
   AND status <> 'archived';
@@ -16116,6 +17644,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('61a92aa2-d102-5688-838c-e7ca2532f786', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_study_homework')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a1779d9967ce968790a57cccc696862ee1a302f6ee734d2237b8456838f9f8f1'
   AND status <> 'archived';
@@ -16141,6 +17670,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('6944c4b1-bce2-5cd0-94c7-474e4261cd7c', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_where_from')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '63265a79774350462d4ce11d5a90687ff8e6f2511bb512e0409be568b6be7046'
   AND status <> 'archived';
@@ -16166,6 +17696,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('35ff78ec-2e6b-505d-9496-e387d35c31cd', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_youre_welcome')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '124eb273f9a0a470e3d6930f97e1402f311a753dc9d656b1ef17ef12367caffa'
   AND status <> 'archived';
@@ -16191,6 +17722,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('839d6973-64a4-55fb-b330-998a19a09750', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_time_nine')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '825abd55b198bce7f2b67c2c129df3af705889ace0158897288a1ba242b8546c'
   AND status <> 'archived';
@@ -16216,6 +17748,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('96b33228-239d-5f2f-849a-4a03bf687d2d', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_from_iran')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1'
   AND status <> 'archived';
@@ -16241,6 +17774,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('773d8340-6687-546f-a2ee-1ac728799695', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_how_are_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89'
   AND status <> 'archived';
@@ -16266,6 +17800,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('4dbfc698-b6ab-5c8b-ad52-5ff0a624c301', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_have_wallet')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ea6d7b7607c4a22af2719903fd77b135578327d963c21e3e87c218c738a9ca9c'
   AND status <> 'archived';
@@ -16285,12 +17820,91 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_town_listen -> audio/generated/en-US/utterances/be6aa0ed98db3d956803e03dd853bcf820919b453d7e818bc63d80ca32840053.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('fb83b5f4-a2a0-53a6-896a-4b4d4bfe4431', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_town_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2d1e7d0c57b005c9fd986ca4c33876dac2e306c7fdc6c2360b1b3750663ae5ab'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('bdddf783-3d1a-5727-b17c-1b02ce2735a0', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('fb83b5f4-a2a0-53a6-896a-4b4d4bfe4431', 1), '2d1e7d0c57b005c9fd986ca4c33876dac2e306c7fdc6c2360b1b3750663ae5ab',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/be6aa0ed98db3d956803e03dd853bcf820919b453d7e818bc63d80ca32840053.mp3', 1384, '2026-09-12 13:22:28.180151', '8cb930a4da740e9497798ca16e69f1837de86dc3dfd3c4187c98b1ef6ca712b4', 'validated', '{"audio_key":"be6aa0ed98db3d956803e03dd853bcf820919b453d7e818bc63d80ca32840053","entity_key":"ex_town_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"8cb930a4da740e9497798ca16e69f1837de86dc3dfd3c4187c98b1ef6ca712b4","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/be6aa0ed98db3d956803e03dd853bcf820919b453d7e818bc63d80ca32840053.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_country_listen -> audio/generated/en-US/utterances/beff215fefe5d2037fbbffff61841a0d504c5b0dbb7629131c863ccd9dc74a6b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('e39403c3-fd29-5107-b196-a79968245b56', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_country_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bdf63e9b2dfe2e42627f52480cda0170bd78fe3982cab3fadbd47bcb060d7353'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('0bec798c-306d-5e98-a096-4a7c4aec7b97', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('e39403c3-fd29-5107-b196-a79968245b56', 1), 'bdf63e9b2dfe2e42627f52480cda0170bd78fe3982cab3fadbd47bcb060d7353',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/beff215fefe5d2037fbbffff61841a0d504c5b0dbb7629131c863ccd9dc74a6b.mp3', 1280, '2026-09-12 13:22:29.180589', '4e106941396aaeff133d5c3914206919c7798af82c6f1926cc9e570939644cc0', 'validated', '{"audio_key":"beff215fefe5d2037fbbffff61841a0d504c5b0dbb7629131c863ccd9dc74a6b","entity_key":"ex_country_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"4e106941396aaeff133d5c3914206919c7798af82c6f1926cc9e570939644cc0","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/beff215fefe5d2037fbbffff61841a0d504c5b0dbb7629131c863ccd9dc74a6b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_family_listen -> audio/generated/en-US/utterances/c7008cf44b7dc2e8844614897fdd54b2e02223de6e716a9a5cf59c9258cb3b66.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('10e32694-8e0d-50e3-8892-8a300936359d', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_family_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '74b545ad9a665ce147cf0609f25be273007c1989a94b6b7595e6d73d94a65bef'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b4c675be-88a4-5ffe-ae1c-6203567ac7de', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('10e32694-8e0d-50e3-8892-8a300936359d', 1), '74b545ad9a665ce147cf0609f25be273007c1989a94b6b7595e6d73d94a65bef',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/c7008cf44b7dc2e8844614897fdd54b2e02223de6e716a9a5cf59c9258cb3b66.mp3', 1280, '2026-09-12 13:22:29.243845', '176bb2b01296c4c51db81ce9fa83d0e61bb828fac3b3871077ee25ef75f929dd', 'validated', '{"audio_key":"c7008cf44b7dc2e8844614897fdd54b2e02223de6e716a9a5cf59c9258cb3b66","entity_key":"ex_family_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"176bb2b01296c4c51db81ce9fa83d0e61bb828fac3b3871077ee25ef75f929dd","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/c7008cf44b7dc2e8844614897fdd54b2e02223de6e716a9a5cf59c9258cb3b66.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_im_fine -> audio/generated/en-US/utterances/c70f2e45348ff193b777020a61fa13ca2ffeff4ead97c8e9fcdcc33aa2f90173.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('cb1e5002-1908-5e1e-bf77-8cb207aedf62', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_im_fine')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b730320655ef331c86a45159cbcee93018d4076409350ad9ec2482ea8e38db55'
   AND status <> 'archived';
@@ -16316,6 +17930,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('107174e7-4e93-5b5a-9be5-3abed2f7d749', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_req_sure')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8e38acd7b1fc75a2de97082b3357b547e17388d310a720920e234bcc71d78f04'
   AND status <> 'archived';
@@ -16341,6 +17956,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('87f96a69-f239-5794-a727-6f3b98e96ad8', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cafe_menu')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '574b2d8754e269f5853f274c3a7755f668751c6b94d64418631f97b53d5542a9'
   AND status <> 'archived';
@@ -16366,6 +17982,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('65ef61ee-8690-58a9-865d-fd784aedd9b6', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_people_hair')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ced1bfbf7587ab92b7020fc3fe6f18ee71bdc3a344c128268167925268bcbf3c'
   AND status <> 'archived';
@@ -16391,6 +18008,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('fd84fcdf-0b23-5753-953c-85f68ccfe6e2', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_likes_music')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '22c43790596c1da3cc5abff265b8e672e49944b215f51ff54df3d3801f0921ff'
   AND status <> 'archived';
@@ -16410,12 +18028,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_likes_listen -> audio/generated/en-US/utterances/cf2b33d7cf7d4a4008ae58d521f1a99e5f224647e094ba1d66646245f247d397.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('7d89daeb-e0ac-5d4a-bd4d-2f6665c62e2d', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_likes_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '22c43790596c1da3cc5abff265b8e672e49944b215f51ff54df3d3801f0921ff'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fcb9c617-da67-5637-a808-c9f82a73a2ca', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('7d89daeb-e0ac-5d4a-bd4d-2f6665c62e2d', 1), '22c43790596c1da3cc5abff265b8e672e49944b215f51ff54df3d3801f0921ff',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/cf2b33d7cf7d4a4008ae58d521f1a99e5f224647e094ba1d66646245f247d397.mp3', 1201, '2026-09-12 08:27:03.229851', '0d6c93d42e1d9b22d6d36d0090e8bc89722fbb1795b63a29f2c521efb7105203', 'validated', '{"audio_key":"cf2b33d7cf7d4a4008ae58d521f1a99e5f224647e094ba1d66646245f247d397","entity_key":"ex_likes_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"0d6c93d42e1d9b22d6d36d0090e8bc89722fbb1795b63a29f2c521efb7105203","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/cf2b33d7cf7d4a4008ae58d521f1a99e5f224647e094ba1d66646245f247d397.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_cal_tomorrow_tuesday -> audio/generated/en-US/utterances/d49fc9509e042e4155301c008c7d5ad54e783034b5bba5becb920dad08d90761.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('7f198c2b-1b7c-5e4e-80d1-68e09c0f7a6e', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cal_tomorrow_tuesday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '3d27da95c21834142bab68d1ad7d11c3605213b2b2f55505d4b590b1fcb14156'
   AND status <> 'archived';
@@ -16441,6 +18086,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('0550d900-2edf-545b-8872-9adf02aacb0e', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_shop_size_m')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '71e18b7bbc41fa65069c05fcd92072fa07fd3d0abb5378684c548dccfcf1b0b7'
   AND status <> 'archived';
@@ -16460,12 +18106,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_fix_question_intonation:example:2 -> audio/generated/en-US/utterances/d677eaad26ef15a0c4bacb172f6a2e4f0a1c9824029bad52eeb5b608f194f150.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('d9129e62-7965-5041-9a28-8d16b266fc9a', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_fix_question_intonation:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '8a38c81b46381d2693666843c8bd213c5d9be3cb02fd1cf73bba5ae9f84b05de'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c3e246bf-9f68-50f0-a7e4-d453586c911b', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('d9129e62-7965-5041-9a28-8d16b266fc9a', 1), '8a38c81b46381d2693666843c8bd213c5d9be3cb02fd1cf73bba5ae9f84b05de',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/d677eaad26ef15a0c4bacb172f6a2e4f0a1c9824029bad52eeb5b608f194f150.mp3', 1071, '2026-09-12 13:22:30.182883', '18ce2c709ce3c725de3511255ddd4ed830f3d30e7003b55dc7d7cc7115db1f15', 'validated', '{"audio_key":"d677eaad26ef15a0c4bacb172f6a2e4f0a1c9824029bad52eeb5b608f194f150","entity_key":"g_fix_question_intonation:example:2","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"18ce2c709ce3c725de3511255ddd4ed830f3d30e7003b55dc7d7cc7115db1f15","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/d677eaad26ef15a0c4bacb172f6a2e4f0a1c9824029bad52eeb5b608f194f150.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_cal_birthday -> audio/generated/en-US/utterances/d77fec1c571b757ea1ccad145fc3b53c8af3aa187a3888468b52a6b25e91c2ee.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('f1751faf-e954-5ec3-bed9-ac591c597d98', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cal_birthday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd54067279ae558ad54497ea0b3f5208ddf7c73bc89a91fd28970d4d0910017cd'
   AND status <> 'archived';
@@ -16491,6 +18164,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('de1a6e0f-95d6-517b-9abd-951bfa784144', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_dir_straight')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f3b18a3ceb1ce6f7f9c2e5a5d058e382a0901284985eb1cb12a7bb522d49d3d5'
   AND status <> 'archived';
@@ -16516,6 +18190,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('54fc149d-50a3-5538-95d7-d9291839fed0', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_spell_that')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c3a6343dfa9d6273ee9f7481b3378de929f8b97a20a2221e9422bdb17d602c6a'
   AND status <> 'archived';
@@ -16541,6 +18216,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('8fd8af6e-8c31-5af3-90da-7b7bd779b4f8', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_age_short')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'a43fdbf7d58a7bdcbb88c18dd933ca7c310f5756555adfa7c6f0011ec52a5d8e'
   AND status <> 'archived';
@@ -16560,37 +18236,13 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
--- u_jobs_office -> audio/generated/en-US/utterances/deeb61c810972f578d0406aa90072cc03bac9ff8497df15357d2d81b688a29e1.mp3
-UPDATE audio_assets
-SET status = 'archived'
-WHERE entity_type = 'utterance'
-  AND entity_id = UUID_TO_BIN('cd180822-3db8-54e2-a26d-16829de71433', 1)
-  AND voice_key = 'en-us.sentence.lori'
-  AND source_text_hash IS NOT NULL
-  AND source_text_hash <> '7482c549513d15c7bad2819a3680bd0cd976ecce52166be341681b73f4557002'
-  AND status <> 'archived';
-INSERT INTO audio_assets (
-  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
-  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
-) VALUES (
-  UUID_TO_BIN('57ffbf28-1afc-505d-ab1d-c79873458aaf', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('cd180822-3db8-54e2-a26d-16829de71433', 1), '7482c549513d15c7bad2819a3680bd0cd976ecce52166be341681b73f4557002',
-  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/deeb61c810972f578d0406aa90072cc03bac9ff8497df15357d2d81b688a29e1.mp3', 1488, '2026-09-12 08:27:07.403368', '68c61cc7e398e9e9b392045cfc47864c2fc0e6da19bea93ee5a1924e046da3c9', 'validated', '{"audio_key":"deeb61c810972f578d0406aa90072cc03bac9ff8497df15357d2d81b688a29e1","entity_key":"u_jobs_office","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"68c61cc7e398e9e9b392045cfc47864c2fc0e6da19bea93ee5a1924e046da3c9","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/deeb61c810972f578d0406aa90072cc03bac9ff8497df15357d2d81b688a29e1.mp3"}'
-) ON DUPLICATE KEY UPDATE
-  provider = VALUES(provider),
-  provider_model = VALUES(provider_model),
-  storage_url = VALUES(storage_url),
-  duration_ms = VALUES(duration_ms),
-  generated_at = VALUES(generated_at),
-  checksum = VALUES(checksum),
-  status = VALUES(status),
-  metadata = VALUES(metadata);
-
 -- u_plan_decline -> audio/generated/en-US/utterances/e11d0b5c3cc5248fac5c1781dbcaba6b33ed5e6d8cc1e000e3fb22b30e8b2ef4.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a9047675-0aaf-5d8e-9e1d-8c82fb1b62ff', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_plan_decline')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '66d8a99d8ecf7b624c356ac1f09169700cde2caaf4c3e3b79ac6c57f65903bf0'
   AND status <> 'archived';
@@ -16616,6 +18268,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('f42232eb-c998-564b-a2cd-16d8cb701312', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_have_umbrella')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '9019eef418bc478f7fd3752f4376b14a7285d75c8e44bf7751cbe94ad1599314'
   AND status <> 'archived';
@@ -16641,6 +18294,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('fd6affb6-309e-5b77-b5d7-849b6701b35c', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_price_costs_five')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'c7f1d6989ecee88e1d2eaaf912dd149fa4bc84fc15709d2729f2441fe3b22a72'
   AND status <> 'archived';
@@ -16666,6 +18320,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('da542ac8-a147-55d9-b64c-9b2c01034489', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_whats_your_name')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724'
   AND status <> 'archived';
@@ -16691,6 +18346,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('85515ab1-353f-5479-b345-aea485e716c5', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_tr_by_train')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f72234066d9d1aa819d34d6b67bc3795da08eac6af366daaac3937ca69ba397b'
   AND status <> 'archived';
@@ -16716,6 +18372,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('002dffc9-2068-529c-b1d1-203bf5506c98', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_hello')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7'
   AND status <> 'archived';
@@ -16741,6 +18398,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('e4bd4c7b-eb39-5451-90a6-ad4551259851', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_family_wife')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '8b3d1b246e8a63e663ceadb1d499257daeaef0072da022424149f4cab27c6555'
   AND status <> 'archived';
@@ -16766,6 +18424,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('d165611c-89ff-55c4-9956-dbfbcd4538da', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cal_class_monday')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'f7ced0a5687712a101ffc83a7e4304b91c64d3cc0916fbdf05df7c5b735e74f0'
   AND status <> 'archived';
@@ -16791,6 +18450,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('8c4d138e-e8fe-5b00-98ec-a4798f31418a', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_num_35')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '49fa6fb4bad941129d1d8e6295f5b4450f4a0335bd7f8ea29bc2f3c639e8743e'
   AND status <> 'archived';
@@ -16816,6 +18476,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a12a5176-8c37-5f98-9535-fe9bd9c89746', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_and_you')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0c1c23dc335e76d0716be6f8fbd4a526dc6f58a39960621dd893929e7dcc1bd8'
   AND status <> 'archived';
@@ -16841,6 +18502,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('0f634ef0-3c74-50f9-9b4a-9fec8fb7f9f3', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_spell_lina')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'bb96d763a7b3cafab1f4ce50cccae0cd9f79fe44c8f17c5019c92773d45c37aa'
   AND status <> 'archived';
@@ -16866,6 +18528,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('c223d6ba-0193-50fd-b8f0-84f25cfeed18', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_cafe_else')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '554e6ec0bec97ecc209b48546b45280204074b5fb33144fa949856ab16fada6f'
   AND status <> 'archived';
@@ -16891,6 +18554,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('84782346-5cd8-5b8c-989b-d8ab10ddb8db', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_town_park')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '7144b7015b3d58984ec3d179c946961bb36c79ed59bf444105681704a462cafd'
   AND status <> 'archived';
@@ -16916,6 +18580,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('a76d9ae2-21df-56c4-beb0-99482efad16a', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_time_morning_work')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'bbf6d101de023df883869ead0d73b4728f6d7fdacc56a5842f8ab9e2b03c0371'
   AND status <> 'archived';
@@ -16941,6 +18606,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('5a2730d3-e103-5d17-b1e4-d3ad2e7d2156', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_study_understand')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'b247a8307b2d64b90818dd68d3d303b197a3c39e8c6b00fa6184cfde799b84b4'
   AND status <> 'archived';
@@ -16966,6 +18632,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('b9c00666-8924-55ca-9399-677769f50ccf', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_tr_by_bus')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '95f75063a4a0b2c45c8517e7debb8e6b6c2eafb1be439112da29bb76c8718b31'
   AND status <> 'archived';
@@ -16991,6 +18658,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('97e471b5-c740-5106-b6f1-d0b33bde0a73', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_hi')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8'
   AND status <> 'archived';
@@ -17010,12 +18678,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_people_listen -> audio/generated/en-US/utterances/ef7b6aff9b7fbd77df638f2e3b8574136cfba02b703ea27ae2f8687b8fc67c3a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('0aee6288-14f0-5f17-8fd2-ef165908a581', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_people_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f8ae9eac4233b7e90249117655dff6cd5844096305dc88e9ffdbd055dc7ff096'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9bf8931d-ade3-55c4-983b-f9e299255fb2', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('0aee6288-14f0-5f17-8fd2-ef165908a581', 1), 'f8ae9eac4233b7e90249117655dff6cd5844096305dc88e9ffdbd055dc7ff096',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/ef7b6aff9b7fbd77df638f2e3b8574136cfba02b703ea27ae2f8687b8fc67c3a.mp3', 1515, '2026-09-12 13:22:30.284417', '7ccbdc6da5175bddd8487588f51f3698b44ddbabb8b27b0f68a9551cbf153225', 'validated', '{"audio_key":"ef7b6aff9b7fbd77df638f2e3b8574136cfba02b703ea27ae2f8687b8fc67c3a","entity_key":"ex_people_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"7ccbdc6da5175bddd8487588f51f3698b44ddbabb8b27b0f68a9551cbf153225","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/ef7b6aff9b7fbd77df638f2e3b8574136cfba02b703ea27ae2f8687b8fc67c3a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_tr_stop -> audio/generated/en-US/utterances/ef877b85ad6ccebad94eff465799112ddd49a9c4feb592841dcf07c7e03bb361.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('c1752b17-c69f-5979-95a5-0421d39a8ead', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_tr_stop')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '57fe9cea490f553ba4db8b794b986e7cfe992800d4090ec55e16cb4dcda1b8b7'
   AND status <> 'archived';
@@ -17035,12 +18730,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_tr_listen -> audio/generated/en-US/utterances/ef877b85ad6ccebad94eff465799112ddd49a9c4feb592841dcf07c7e03bb361.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('4a952802-6c8e-577e-8939-59374b2953f0', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_tr_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '57fe9cea490f553ba4db8b794b986e7cfe992800d4090ec55e16cb4dcda1b8b7'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1f3d2544-27ee-5ea6-82e8-2ec2c0230a2a', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('4a952802-6c8e-577e-8939-59374b2953f0', 1), '57fe9cea490f553ba4db8b794b986e7cfe992800d4090ec55e16cb4dcda1b8b7',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/ef877b85ad6ccebad94eff465799112ddd49a9c4feb592841dcf07c7e03bb361.mp3', 1567, '2026-09-12 08:27:14.636343', '76c1af19733c4b262b4f701ca0e3815604d7bb37341ea0b0650f2e3228ed2941', 'validated', '{"audio_key":"ef877b85ad6ccebad94eff465799112ddd49a9c4feb592841dcf07c7e03bb361","entity_key":"ex_tr_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"76c1af19733c4b262b4f701ca0e3815604d7bb37341ea0b0650f2e3228ed2941","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/ef877b85ad6ccebad94eff465799112ddd49a9c4feb592841dcf07c7e03bb361.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_nice_to_meet_you_too -> audio/generated/en-US/utterances/ef9be929784daa09c808ab3a94b5a9381401ab1d0243bc117b9a6abe75a136e1.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('d696c2fa-9eca-5620-99e0-4a35add1a165', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_nice_to_meet_you_too')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'ba2fccea610d6ca54ed626ae12cae853e623a129e3f810cd022e7494ca551b2a'
   AND status <> 'archived';
@@ -17060,37 +18782,13 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
--- u_tr_which_bus -> audio/generated/en-US/utterances/f155d60a206e142ffb670eab25543a40c35d204d6b21926b3a0d726dbb3d3d69.mp3
-UPDATE audio_assets
-SET status = 'archived'
-WHERE entity_type = 'utterance'
-  AND entity_id = UUID_TO_BIN('3b730164-0cb9-5850-9f0b-1abe3c9d46e2', 1)
-  AND voice_key = 'en-us.sentence.lori'
-  AND source_text_hash IS NOT NULL
-  AND source_text_hash <> '3984efa3d4e36a62bc249d5aabec6573e5ead8b84e93691899b1867c650a1528'
-  AND status <> 'archived';
-INSERT INTO audio_assets (
-  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
-  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
-) VALUES (
-  UUID_TO_BIN('3d27fb15-149e-52bd-9512-79f0824b5000', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('3b730164-0cb9-5850-9f0b-1abe3c9d46e2', 1), '3984efa3d4e36a62bc249d5aabec6573e5ead8b84e93691899b1867c650a1528',
-  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/f155d60a206e142ffb670eab25543a40c35d204d6b21926b3a0d726dbb3d3d69.mp3', 1985, '2026-09-12 08:27:15.728485', 'bcc27f9037e781390e61ab6d902336aa844b51bba32d0b2e71014d643a598040', 'validated', '{"audio_key":"f155d60a206e142ffb670eab25543a40c35d204d6b21926b3a0d726dbb3d3d69","entity_key":"u_tr_which_bus","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"bcc27f9037e781390e61ab6d902336aa844b51bba32d0b2e71014d643a598040","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/f155d60a206e142ffb670eab25543a40c35d204d6b21926b3a0d726dbb3d3d69.mp3"}'
-) ON DUPLICATE KEY UPDATE
-  provider = VALUES(provider),
-  provider_model = VALUES(provider_model),
-  storage_url = VALUES(storage_url),
-  duration_ms = VALUES(duration_ms),
-  generated_at = VALUES(generated_at),
-  checksum = VALUES(checksum),
-  status = VALUES(status),
-  metadata = VALUES(metadata);
-
 -- u_q_what -> audio/generated/en-US/utterances/f22f15185c4842bc57fccaa16ccf0e9ec20f0f41dd9bd1666bf986ee1371dbb3.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('29ce093f-e700-5d59-acc5-a0e77c589f98', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_q_what')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0b12ba39ab4d0851c8a36c5bbc9997333c630060bee493b9c2cfe78f6dc25c27'
   AND status <> 'archived';
@@ -17110,12 +18808,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_cal_listen -> audio/generated/en-US/utterances/f314b8e801c12f1857cd806952d6ee222f6f70c3b6ccd559be294c10165eccdf.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('4e282fa1-6171-5313-891c-327de447ecfe', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_cal_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '8c6a9d2e09f8a16f990e47189f0589ea5ff4331655bc66ee3a42e64b5953a710'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f145bc34-bf32-5eb4-b2f4-9f3879a5c0ba', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('4e282fa1-6171-5313-891c-327de447ecfe', 1), '8c6a9d2e09f8a16f990e47189f0589ea5ff4331655bc66ee3a42e64b5953a710',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/f314b8e801c12f1857cd806952d6ee222f6f70c3b6ccd559be294c10165eccdf.mp3', 1332, '2026-09-12 13:22:31.298939', '53ef59e91c1a9c45c4ded9608a100c1260200f852cdd822f8ceded89210c915b', 'validated', '{"audio_key":"f314b8e801c12f1857cd806952d6ee222f6f70c3b6ccd559be294c10165eccdf","entity_key":"ex_cal_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"53ef59e91c1a9c45c4ded9608a100c1260200f852cdd822f8ceded89210c915b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/f314b8e801c12f1857cd806952d6ee222f6f70c3b6ccd559be294c10165eccdf.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_shop_shoes -> audio/generated/en-US/utterances/f3ec07ff4fb2831ad47ae796df4e1cb0a73bab5fe28a70ee921a313b6710079f.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('e853ac90-88cf-528c-b148-1f112da83349', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_shop_shoes')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '23af7467ee34d41bdf92480a04c92580c829bd5ceabd3ff63cddc8f60f141f4b'
   AND status <> 'archived';
@@ -17141,6 +18866,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('50eeb5ef-344c-5086-bff0-971a75723567', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_plan_go_park')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '5d34190fdf33cf3b85003ab299551b921d9924c053a36bc08f441a95bc056604'
   AND status <> 'archived';
@@ -17166,6 +18892,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('5617935f-550f-5ab6-8d92-7457a03087e1', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_health_headache')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '0303528602a4fee2823302448c82998c0491bca904233853cd8b89bfa3978187'
   AND status <> 'archived';
@@ -17185,12 +18912,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_health_listen -> audio/generated/en-US/utterances/f5fafa9f189223fd2b1109e59c80ce596df52705ea337de30fcf206f735fd0c2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('b4a35c83-2c64-5c3e-a8c5-4b62d75b867c', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_health_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0303528602a4fee2823302448c82998c0491bca904233853cd8b89bfa3978187'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c03884f0-698e-5b46-9561-2cee36b92be9', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('b4a35c83-2c64-5c3e-a8c5-4b62d75b867c', 1), '0303528602a4fee2823302448c82998c0491bca904233853cd8b89bfa3978187',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/f5fafa9f189223fd2b1109e59c80ce596df52705ea337de30fcf206f735fd0c2.mp3', 1253, '2026-09-12 08:27:17.652220', 'ac9f83bb192ed4658d4d9161b3291c656820722aa88007cdd6b32f8dfebc07f8', 'validated', '{"audio_key":"f5fafa9f189223fd2b1109e59c80ce596df52705ea337de30fcf206f735fd0c2","entity_key":"ex_health_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"ac9f83bb192ed4658d4d9161b3291c656820722aa88007cdd6b32f8dfebc07f8","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/f5fafa9f189223fd2b1109e59c80ce596df52705ea337de30fcf206f735fd0c2.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_plan_invite -> audio/generated/en-US/utterances/f6f3c2c0e69beba45c7449cb0d64c01231a9ae58c4c8015ab4f4a4d5b648802c.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('1040b6aa-8a38-5107-8adf-b689736a9679', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_plan_invite')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '2bda13923f2690481a7754cc34b7187dd5825f7401d079a2cc7d414b2e7435e8'
   AND status <> 'archived';
@@ -17216,6 +18970,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('80ae74e6-08a2-56aa-ac65-5166fb27ed0f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_obj_red')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'd0f0994ac28bcd4330bf00059cd844167914aa7f7da95eb8b444704f6300415e'
   AND status <> 'archived';
@@ -17235,12 +18990,39 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_plan_listen -> audio/generated/en-US/utterances/f9544eec2cdf7a090814ffe1f762ea1c1516508b635a2b77898df774cd80e07d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('5be05617-c91b-5c53-91fd-977c7202614c', 1)
+  AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_plan_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '045a33ebd7ec0c86bf61437907137151dedd3650f5584468bd6c24cc43704fb7'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('885dd1de-44f3-5eae-b043-a61979b77f83', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('5be05617-c91b-5c53-91fd-977c7202614c', 1), '045a33ebd7ec0c86bf61437907137151dedd3650f5584468bd6c24cc43704fb7',
+  'en-us.sentence.lori', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/en-US/utterances/f9544eec2cdf7a090814ffe1f762ea1c1516508b635a2b77898df774cd80e07d.mp3', 1697, '2026-09-12 13:22:31.360800', 'c414dd680c33c497d2faa03600030b185fd3a82f19c98eefc6cf6db27994a46c', 'validated', '{"audio_key":"f9544eec2cdf7a090814ffe1f762ea1c1516508b635a2b77898df774cd80e07d","entity_key":"ex_plan_listen","voice_id":"tnSpp4vdxKPjI9w0GnoV","voice_name":"Hope - upbeat and clear","voice_labels":{"gender":"female","accent":"american","age":"young","category":"high_quality","language":"en"},"output_format":"mp3_44100_192","file_sha256":"c414dd680c33c497d2faa03600030b185fd3a82f19c98eefc6cf6db27994a46c","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/en-US/utterances/f9544eec2cdf7a090814ffe1f762ea1c1516508b635a2b77898df774cd80e07d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_likes_no_spicy -> audio/generated/en-US/utterances/ff80bd622afd3301931b15040a59e3063a0555219063c3ee848f9d0b02f1ed55.mp3
 UPDATE audio_assets
 SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('3c862439-47d7-5427-b714-981052d5645f', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_likes_no_spicy')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> '69db4cda12b53bdcaacc314e686a290b2fdede881a33dfc801b26a0e6b845008'
   AND status <> 'archived';
@@ -17266,6 +19048,7 @@ SET status = 'archived'
 WHERE entity_type = 'utterance'
   AND entity_id = UUID_TO_BIN('ca81d503-1925-5a25-b7b6-7070816607c1', 1)
   AND voice_key = 'en-us.sentence.lori'
+  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_people_young')
   AND source_text_hash IS NOT NULL
   AND source_text_hash <> 'bfab05ab934477324362df7abb379474dbddb3c03ff210129427320d9480f46c'
   AND status <> 'archived';
