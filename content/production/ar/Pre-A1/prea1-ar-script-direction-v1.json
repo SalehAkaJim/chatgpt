@@ -1,0 +1,170 @@
+{
+  "batch_id": "ar-msa-prea1-script-direction-v1",
+  "course": "fa-ar-msa",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ar",
+  "target_variant": "ar-MSA",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-ar-script-direction",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_ar_script_rtl",
+      "data": {
+        "slug": "arabic_script_rtl",
+        "lesson_key": "prea1-ar-script-direction-01",
+        "concept_type": "orthographic",
+        "forms": {"ar": "من اليمين إلى اليسار"},
+        "translations": {"fa": "از راست به چپ"},
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_ar_letter_alif",
+      "data": {
+        "slug": "arabic_letter_alif",
+        "lesson_key": "prea1-ar-script-direction-01",
+        "concept_type": "orthographic",
+        "forms": {"ar": "ا"},
+        "translations": {"fa": "حرف الف"},
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_ar_letter_ba",
+      "data": {
+        "slug": "arabic_letter_ba",
+        "lesson_key": "prea1-ar-script-direction-01",
+        "concept_type": "orthographic",
+        "forms": {"ar": "ب"},
+        "translations": {"fa": "حرف باء"},
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "l_ar_alif_name",
+      "data": {
+        "lesson_key": "prea1-ar-script-direction-01",
+        "lemma": "ألف",
+        "language": "ar",
+        "language_variant": "ar-MSA",
+        "display_lemma": "أَلِف",
+        "transliteration": "ʾalif",
+        "part_of_speech": "noun",
+        "concept_refs": ["arabic_letter_alif"],
+        "cefr": "Pre-A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_ar_alif_name_vocalized",
+      "data": {
+        "lesson_key": "prea1-ar-script-direction-01",
+        "lexeme_ref": "l_ar_alif_name",
+        "surface_form": "ألف",
+        "display_form": "أَلِف",
+        "transliteration": "ʾalif",
+        "grammatical_features": {"form": "letter_name", "vocalization": "learner_supported"},
+        "cefr": "Pre-A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "l_ar_ba_name",
+      "data": {
+        "lesson_key": "prea1-ar-script-direction-01",
+        "lemma": "باء",
+        "language": "ar",
+        "language_variant": "ar-MSA",
+        "display_lemma": "بَاء",
+        "transliteration": "bāʾ",
+        "part_of_speech": "noun",
+        "concept_refs": ["arabic_letter_ba"],
+        "cefr": "Pre-A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_ar_ba_name_vocalized",
+      "data": {
+        "lesson_key": "prea1-ar-script-direction-01",
+        "lexeme_ref": "l_ar_ba_name",
+        "surface_form": "باء",
+        "display_form": "بَاء",
+        "transliteration": "bāʾ",
+        "grammatical_features": {"form": "letter_name", "vocalization": "learner_supported"},
+        "cefr": "Pre-A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ar_direction_01",
+      "data": {
+        "lesson_key": "prea1-ar-script-direction-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {"instruction_fa": "عربی در کدام جهت نوشته می‌شود؟"},
+        "options": ["از راست به چپ", "از چپ به راست"],
+        "answer": {"value": "از راست به چپ"},
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ar_alif_recognition_01",
+      "data": {
+        "lesson_key": "prea1-ar-script-direction-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {"instruction_fa": "کدام گزینه حرف الف است؟"},
+        "options": ["ا", "ب", "ت"],
+        "answer": {"value": "ا"},
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ar_alif_listen_01",
+      "data": {
+        "lesson_key": "prea1-ar-script-direction-01",
+        "exercise_type": "listening",
+        "prompt": {"instruction_fa": "گوش کن و نام حرف را انتخاب کن.", "audio_text": "أَلِف"},
+        "options": ["الف", "باء", "تاء"],
+        "answer": {"value": "الف"},
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ar_ba_speak_01",
+      "data": {
+        "lesson_key": "prea1-ar-script-direction-01",
+        "exercise_type": "speaking",
+        "prompt": {"instruction_fa": "نام این حرف را بگو: ب"},
+        "answer": {"expected_text": "بَاء"},
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "approved"
+      }
+    }
+  ]
+}
