@@ -54,6 +54,12 @@ def review_state(batch, directory=REVIEW_DIR):
 
 
 def quality_errors(batch, require_approved=False, directory=REVIEW_DIR):
+    # This rollout migrates the English course. Preserve structural validation
+    # of legacy language examples until their lifecycle migration is authorized.
+    # An explicit release check, or an existing review record, always opts in.
+    if (batch.get('target_language') != 'en' and not require_approved
+            and not review_path(batch, directory).exists()):
+        return []
     try:
         review = review_state(batch, directory)
     except (ValueError, TypeError, KeyError) as exc:

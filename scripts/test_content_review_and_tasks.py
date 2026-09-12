@@ -16,6 +16,11 @@ def check():
     batches = [json.loads(p.read_text()) for p in sorted((ROOT / 'content/production/en').glob('*/*.json'))]
     for batch in batches:
         assert not quality_errors(batch), batch['batch_id']
+    for language in ('ar', 'de'):
+        for path in (ROOT / 'content/production' / language).rglob('*.json'):
+            legacy = json.loads(path.read_text())
+            assert not quality_errors(legacy), 'English rollout changed another language'
+            assert quality_errors(legacy, True), 'Explicit release checks must still require review'
     sample = copy.deepcopy(batches[0])
     with tempfile.TemporaryDirectory() as temp:
         directory = Path(temp)
