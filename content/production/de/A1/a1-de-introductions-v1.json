@@ -1,5 +1,5 @@
 {
-  "batch_id": "de-a1-introductions-v1",
+  "batch_id": "de-de-a1-introductions-v1",
   "course": "fa-de-de",
   "learner_language": "fa",
   "learner_variant": "fa-IR",
@@ -7,260 +7,51 @@
   "target_variant": "de-DE",
   "cefr": "A1",
   "curriculum_unit": "a1-de-introductions",
-  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "generator": "gpt-5.6-sol:german-a1-v1",
   "items": [
-    {
-      "kind": "concept",
-      "external_id": "c_de_heissen",
-      "data": {
-        "slug": "de_heissen",
-        "lesson_key": "a1-de-introductions-01",
-        "concept_type": "lexical",
-        "forms": {"de": "heißen"},
-        "translations": {"fa": "نام داشتن / نامیده شدن"},
-        "cefr": "A1",
-        "topic": "introductions",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "concept",
-      "external_id": "c_de_sein",
-      "data": {
-        "slug": "de_sein",
-        "lesson_key": "a1-de-introductions-01",
-        "concept_type": "lexical",
-        "forms": {"de": "sein"},
-        "translations": {"fa": "بودن"},
-        "cefr": "A1",
-        "topic": "introductions",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "concept",
-      "external_id": "c_de_name",
-      "data": {
-        "slug": "de_name",
-        "lesson_key": "a1-de-introductions-01",
-        "concept_type": "lexical",
-        "forms": {"de": "Name"},
-        "translations": {"fa": "نام / اسم"},
-        "cefr": "A1",
-        "topic": "introductions",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "lexeme",
-      "external_id": "lx_de_heissen",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "language": "de",
-        "language_variant": "de-DE",
-        "lemma": "heißen",
-        "normalized_lemma": "heißen",
-        "part_of_speech": "verb",
-        "concept_refs": ["de_heissen"],
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "word_form",
-      "external_id": "wf_de_heisse",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "lexeme_ref": "lx_de_heissen",
-        "surface_form": "heiße",
-        "grammatical_features": {"tense":"present","person":1,"number":"singular"},
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "word_form",
-      "external_id": "wf_de_heisst",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "lexeme_ref": "lx_de_heissen",
-        "surface_form": "heißt",
-        "grammatical_features": {"tense":"present","person":2,"number":"singular"},
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "lexeme",
-      "external_id": "lx_de_sein",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "language": "de",
-        "language_variant": "de-DE",
-        "lemma": "sein",
-        "part_of_speech": "verb",
-        "concept_refs": ["de_sein"],
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "word_form",
-      "external_id": "wf_de_bin",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "lexeme_ref": "lx_de_sein",
-        "surface_form": "bin",
-        "grammatical_features": {"tense":"present","person":1,"number":"singular"},
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "word_form",
-      "external_id": "wf_de_bist",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "lexeme_ref": "lx_de_sein",
-        "surface_form": "bist",
-        "grammatical_features": {"tense":"present","person":2,"number":"singular"},
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "utterance",
-      "external_id": "u_de_wie_heisst_du",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "language_variant": "de-DE",
-        "text": {"de": "Wie heißt du?"},
-        "translations": {"fa": "اسمت چیه؟"},
-        "intent": "ask_name",
-        "concept_refs": ["de_heissen"],
-        "cefr": "A1",
-        "topic": "introductions",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "utterance",
-      "external_id": "u_de_ich_heisse_mina",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "language_variant": "de-DE",
-        "text": {"de": "Ich heiße Mina."},
-        "translations": {"fa": "اسم من میناست."},
-        "intent": "give_name",
-        "concept_refs": ["de_heissen"],
-        "cefr": "A1",
-        "topic": "introductions",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "grammar_point",
-      "external_id": "g_de_heissen_present",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "language_variant": "de-DE",
-        "title": "heißen: heiße / heißt",
-        "rule_summary": "Use ich heiße for your own name and wie heißt du? to ask another person’s name.",
-        "explanation": {"fa": "برای گفتن اسم خودت می‌گویی Ich heiße ... و برای پرسیدن اسم مخاطب می‌گویی Wie heißt du?"},
-        "examples": [
-          {"de":"Ich heiße Mina.","fa":"اسم من میناست."},
-          {"de":"Wie heißt du?","fa":"اسمت چیه؟"}
-        ],
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "grammar_point",
-      "external_id": "g_de_noun_capitalization",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "language_variant": "de-DE",
-        "title": "German nouns start with a capital letter",
-        "rule_summary": "German common nouns are capitalized, including Name.",
-        "explanation": {"fa": "در آلمانی اسم‌ها با حرف بزرگ نوشته می‌شوند؛ مثلاً Name."},
-        "examples": [
-          {"de":"Mein Name ist Mina.","fa":"اسم من میناست."}
-        ],
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "dialogue",
-      "external_id": "d_de_first_meeting",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "language_variant": "de-DE",
-        "title": "Erstes Treffen",
-        "setting": "classroom",
-        "characters": ["Mina","Jonas"],
-        "turns": [
-          {"order":1,"speaker":"Mina","text":"Hallo! Ich heiße Mina.","translation_fa":"سلام! اسم من میناست."},
-          {"order":2,"speaker":"Jonas","text":"Hallo, Mina! Ich bin Jonas.","translation_fa":"سلام مینا! من یوناس هستم."},
-          {"order":3,"speaker":"Mina","text":"Wie heißt du?","translation_fa":"اسمت چیه؟"},
-          {"order":4,"speaker":"Jonas","text":"Ich heiße Jonas.","translation_fa":"اسم من یوناس است."}
-        ],
-        "cefr": "A1",
-        "topic": "introductions",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "exercise",
-      "external_id": "ex_de_heisse_fill",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "exercise_type": "fill_blank",
-        "prompt": {"text":"Ich ___ Mina."},
-        "answer": {"value":"heiße"},
-        "options": ["heiße","heißt","bist"],
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "exercise",
-      "external_id": "ex_de_heisst_fill",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "exercise_type": "fill_blank",
-        "prompt": {"text":"Wie ___ du?"},
-        "answer": {"value":"heißt"},
-        "options": ["heiße","heißt","bin"],
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "exercise",
-      "external_id": "ex_de_sentence_build",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "exercise_type": "sentence_building",
-        "prompt": {"tokens":["Ich","heiße","Mina."]},
-        "answer": {"tokens":["Ich","heiße","Mina."]},
-        "cefr": "A1",
-        "status": "approved"
-      }
-    },
-    {
-      "kind": "exercise",
-      "external_id": "ex_de_listening_name",
-      "data": {
-        "lesson_key": "a1-de-introductions-01",
-        "exercise_type": "listening",
-        "prompt": {"audio_text":"Wie heißt du?","question_fa":"کدام جمله را شنیدی؟"},
-        "answer": {"value":"Wie heißt du?"},
-        "options": ["Wie heißt du?","Wie geht es dir?","Ich bin Mina."],
-        "cefr": "A1",
-        "status": "approved"
-      }
-    }
+    {"kind":"concept","external_id":"c_de_heissen","data":{"slug":"de_heissen","lesson_key":"a1-de-introductions-01","concept_type":"lexical","part_of_speech":"verb","forms":{"de":"heißen"},"translations":{"fa":"نام داشتن / نامیده شدن"},"cefr":"A1","topic":"introductions","status":"validated","tags":["core","spoken","high_frequency"]}},
+    {"kind":"concept","external_id":"c_de_sein","data":{"slug":"de_sein","lesson_key":"a1-de-introductions-01","concept_type":"lexical","part_of_speech":"verb","forms":{"de":"sein"},"translations":{"fa":"بودن"},"cefr":"A1","topic":"introductions","status":"validated","tags":["core","high_frequency"]}},
+    {"kind":"concept","external_id":"c_de_name","data":{"slug":"de_name","lesson_key":"a1-de-introductions-01","concept_type":"lexical","part_of_speech":"noun","forms":{"de":"Name"},"translations":{"fa":"نام / اسم"},"cefr":"A1","topic":"introductions","status":"validated","tags":["core"]}},
+    {"kind":"concept","external_id":"c_de_kommen","data":{"slug":"de_kommen","lesson_key":"a1-de-introductions-02","concept_type":"lexical","part_of_speech":"verb","forms":{"de":"kommen"},"translations":{"fa":"آمدن"},"cefr":"A1","topic":"introductions","status":"validated","tags":["core","spoken","high_frequency"]}},
+    {"kind":"concept","external_id":"c_de_woher","data":{"slug":"de_woher","lesson_key":"a1-de-introductions-02","concept_type":"lexical","part_of_speech":"adverb","forms":{"de":"woher"},"translations":{"fa":"از کجا"},"cefr":"A1","topic":"introductions","status":"validated","tags":["core","question_word"]}},
+    {"kind":"concept","external_id":"c_de_freut_mich","data":{"slug":"de_freut_mich","lesson_key":"a1-de-introductions-02","concept_type":"lexical","part_of_speech":"expression","forms":{"de":"Freut mich."},"translations":{"fa":"از آشنایی خوشحالم."},"cefr":"A1","topic":"introductions","status":"validated","tags":["core","spoken"]}},
+
+    {"kind":"lexeme","external_id":"lx_de_heissen","data":{"lesson_key":"a1-de-introductions-01","language":"de","language_variant":"de-DE","lemma":"heißen","normalized_lemma":"heißen","display_lemma":"heißen","part_of_speech":"verb","concept_refs":["de_heissen"],"cefr":"A1","status":"validated"}},
+    {"kind":"word_form","external_id":"wf_de_heisse","data":{"lesson_key":"a1-de-introductions-01","lexeme_ref":"lx_de_heissen","surface_form":"heiße","display_form":"heiße","grammatical_features":{"tense":"present","mood":"indicative","person":1,"number":"singular"},"is_preferred":true,"cefr":"A1","status":"validated"}},
+    {"kind":"word_form","external_id":"wf_de_heisst","data":{"lesson_key":"a1-de-introductions-01","lexeme_ref":"lx_de_heissen","surface_form":"heißt","display_form":"heißt","grammatical_features":{"tense":"present","mood":"indicative","person":2,"number":"singular"},"is_preferred":true,"cefr":"A1","status":"validated"}},
+    {"kind":"lexeme","external_id":"lx_de_sein","data":{"lesson_key":"a1-de-introductions-01","language":"de","language_variant":"de-DE","lemma":"sein","display_lemma":"sein","part_of_speech":"verb","concept_refs":["de_sein"],"cefr":"A1","status":"validated"}},
+    {"kind":"word_form","external_id":"wf_de_bin","data":{"lesson_key":"a1-de-introductions-01","lexeme_ref":"lx_de_sein","surface_form":"bin","display_form":"bin","grammatical_features":{"tense":"present","mood":"indicative","person":1,"number":"singular"},"is_preferred":true,"cefr":"A1","status":"validated"}},
+    {"kind":"word_form","external_id":"wf_de_bist","data":{"lesson_key":"a1-de-introductions-01","lexeme_ref":"lx_de_sein","surface_form":"bist","display_form":"bist","grammatical_features":{"tense":"present","mood":"indicative","person":2,"number":"singular"},"is_preferred":true,"cefr":"A1","status":"validated"}},
+    {"kind":"word_form","external_id":"wf_de_ist","data":{"lesson_key":"a1-de-introductions-01","lexeme_ref":"lx_de_sein","surface_form":"ist","display_form":"ist","grammatical_features":{"tense":"present","mood":"indicative","person":3,"number":"singular"},"is_preferred":true,"cefr":"A1","status":"validated"}},
+    {"kind":"lexeme","external_id":"lx_de_name","data":{"lesson_key":"a1-de-introductions-01","language":"de","language_variant":"de-DE","lemma":"Name","display_lemma":"Name","part_of_speech":"noun","grammatical_gender":"masculine","concept_refs":["de_name"],"cefr":"A1","status":"validated"}},
+    {"kind":"lexeme","external_id":"lx_de_kommen","data":{"lesson_key":"a1-de-introductions-02","language":"de","language_variant":"de-DE","lemma":"kommen","display_lemma":"kommen","part_of_speech":"verb","concept_refs":["de_kommen"],"cefr":"A1","status":"validated"}},
+    {"kind":"word_form","external_id":"wf_de_komme","data":{"lesson_key":"a1-de-introductions-02","lexeme_ref":"lx_de_kommen","surface_form":"komme","display_form":"komme","grammatical_features":{"tense":"present","mood":"indicative","person":1,"number":"singular"},"is_preferred":true,"cefr":"A1","status":"validated"}},
+    {"kind":"word_form","external_id":"wf_de_kommst","data":{"lesson_key":"a1-de-introductions-02","lexeme_ref":"lx_de_kommen","surface_form":"kommst","display_form":"kommst","grammatical_features":{"tense":"present","mood":"indicative","person":2,"number":"singular"},"is_preferred":true,"cefr":"A1","status":"validated"}},
+    {"kind":"lexeme","external_id":"lx_de_woher","data":{"lesson_key":"a1-de-introductions-02","language":"de","language_variant":"de-DE","lemma":"woher","display_lemma":"woher","part_of_speech":"adverb","concept_refs":["de_woher"],"cefr":"A1","status":"validated"}},
+    {"kind":"lexeme","external_id":"lx_de_freut_mich","data":{"lesson_key":"a1-de-introductions-02","language":"de","language_variant":"de-DE","lemma":"Freut mich.","display_lemma":"Freut mich.","part_of_speech":"expression","concept_refs":["de_freut_mich"],"cefr":"A1","status":"validated"}},
+
+    {"kind":"utterance","external_id":"u_de_wie_heisst_du","data":{"lesson_key":"a1-de-introductions-01","language_variant":"de-DE","text":{"de":"Wie heißt du?"},"translations":{"fa":"اسمت چیه؟"},"intent":"ask_name","concept_refs":["de_heissen"],"cefr":"A1","topic":"introductions","register":"informal","status":"validated"}},
+    {"kind":"utterance","external_id":"u_de_ich_heisse_lea","data":{"lesson_key":"a1-de-introductions-01","language_variant":"de-DE","text":{"de":"Ich heiße Lea."},"translations":{"fa":"اسم من لئا است."},"intent":"give_name","concept_refs":["de_heissen"],"cefr":"A1","topic":"introductions","register":"neutral","status":"validated"}},
+    {"kind":"utterance","external_id":"u_de_mein_name_emil","data":{"lesson_key":"a1-de-introductions-01","language_variant":"de-DE","text":{"de":"Mein Name ist Emil."},"translations":{"fa":"نام من امیل است."},"intent":"give_name","concept_refs":["de_name","de_sein"],"cefr":"A1","topic":"introductions","register":"neutral","status":"validated"}},
+    {"kind":"utterance","external_id":"u_de_woher_kommst_du","data":{"lesson_key":"a1-de-introductions-02","language_variant":"de-DE","text":{"de":"Woher kommst du?"},"translations":{"fa":"اهل کجایی؟"},"intent":"ask_origin","concept_refs":["de_woher","de_kommen"],"cefr":"A1","topic":"introductions","register":"informal","status":"validated"}},
+    {"kind":"utterance","external_id":"u_de_aus_deutschland","data":{"lesson_key":"a1-de-introductions-02","language_variant":"de-DE","text":{"de":"Ich komme aus Deutschland."},"translations":{"fa":"من اهل آلمان هستم."},"intent":"give_origin","concept_refs":["de_kommen"],"cefr":"A1","topic":"introductions","register":"neutral","status":"validated"}},
+    {"kind":"utterance","external_id":"u_de_aus_dem_iran","data":{"lesson_key":"a1-de-introductions-02","language_variant":"de-DE","text":{"de":"Ich komme aus dem Iran."},"translations":{"fa":"من اهل ایران هستم."},"intent":"give_origin","concept_refs":["de_kommen"],"cefr":"A1","topic":"introductions","register":"neutral","status":"validated"}},
+    {"kind":"utterance","external_id":"u_de_freut_mich","data":{"lesson_key":"a1-de-introductions-02","language_variant":"de-DE","text":{"de":"Freut mich."},"translations":{"fa":"از آشنایی خوشحالم."},"intent":"first_meeting","concept_refs":["de_freut_mich"],"cefr":"A1","topic":"introductions","register":"neutral","status":"validated"}},
+
+    {"kind":"grammar_point","external_id":"g_de_heissen_present","data":{"lesson_key":"a1-de-introductions-01","language_variant":"de-DE","slug":"a1-de-heissen-ich-du","title":"Ich heiße – Wie heißt du?","rule_summary":"German verbs change with the subject: ich heiße but du heißt.","explanation":{"fa":"در آلمانی شکل فعل با فاعل تغییر می‌کند: با ich می‌گوییم «ich heiße» و با du می‌گوییم «du heißt». در این مرحله فاعل را حذف نمی‌کنیم."},"examples":[{"de":"Ich heiße Lea.","fa":"اسم من لئا است."},{"de":"Wie heißt du?","fa":"اسمت چیه؟"}],"cefr":"A1","status":"validated"}},
+    {"kind":"grammar_point","external_id":"g_de_noun_capitalization","data":{"lesson_key":"a1-de-introductions-01","language_variant":"de-DE","slug":"a1-de-noun-capitalization-name","title":"Name با حرف بزرگ","rule_summary":"German common nouns are capitalized, including Name.","explanation":{"fa":"در آلمانی اسم‌ها با حرف بزرگ نوشته می‌شوند؛ مثلاً Name همیشه با N بزرگ نوشته می‌شود."},"examples":[{"de":"Mein Name ist Emil.","fa":"نام من امیل است."}],"cefr":"A1","status":"validated"}},
+    {"kind":"grammar_point","external_id":"g_de_origin_aus","data":{"lesson_key":"a1-de-introductions-02","language_variant":"de-DE","slug":"a1-de-origin-woher-aus","title":"Woher? – aus","rule_summary":"Use woher to ask origin and aus to say where someone comes from; some country names require an article.","explanation":{"fa":"برای پرسیدن مبدأ از «Woher?» استفاده می‌کنیم و در جواب «aus» می‌آید. بسیاری از کشورها بدون حرف تعریف می‌آیند: «aus Deutschland». اما Iran معمولاً با حرف تعریف می‌آید: «aus dem Iran»."},"examples":[{"de":"Woher kommst du?","fa":"اهل کجایی؟"},{"de":"Ich komme aus Deutschland.","fa":"من اهل آلمان هستم."},{"de":"Ich komme aus dem Iran.","fa":"من اهل ایران هستم."}],"cefr":"A1","status":"validated"}},
+
+    {"kind":"dialogue","external_id":"d_de_names_class","data":{"lesson_key":"a1-de-introductions-01","language_variant":"de-DE","title":"Im ersten Deutschkurs","setting":"classroom","cefr":"A1","topic":"introductions","characters":["Lea","Emil"],"turns":[{"order":1,"speaker":"Lea","text":"Hallo! Ich heiße Lea. Wie heißt du?","translation_fa":"سلام! اسم من لئا است. اسم تو چیه؟"},{"order":2,"speaker":"Emil","text":"Mein Name ist Emil.","translation_fa":"نام من امیل است."},{"order":3,"speaker":"Lea","text":"Freut mich, Emil.","translation_fa":"از آشنایی خوشحالم، امیل."},{"order":4,"speaker":"Emil","text":"Freut mich auch.","translation_fa":"من هم از آشنایی خوشحالم."}],"status":"validated","qa":{"character_pair_unique_within_unit":true,"naturalness":"passed","single_situation":true}}},
+    {"kind":"dialogue","external_id":"d_de_origin_meeting","data":{"lesson_key":"a1-de-introductions-02","language_variant":"de-DE","title":"Woher kommst du?","setting":"language_meetup","cefr":"A1","topic":"introductions","characters":["Sofia","Noah"],"turns":[{"order":1,"speaker":"Sofia","text":"Hallo! Woher kommst du?","translation_fa":"سلام! اهل کجایی؟"},{"order":2,"speaker":"Noah","text":"Ich komme aus Deutschland. Und du?","translation_fa":"من اهل آلمان هستم. تو چطور؟"},{"order":3,"speaker":"Sofia","text":"Ich komme aus dem Iran.","translation_fa":"من اهل ایران هستم."},{"order":4,"speaker":"Noah","text":"Ah, schön. Freut mich!","translation_fa":"آها، عالیه. از آشنایی خوشحالم!"}],"status":"validated","qa":{"character_pair_unique_within_unit":true,"naturalness":"passed","single_situation":true}}},
+
+    {"kind":"exercise","external_id":"e01_de_name_question","data":{"lesson_key":"a1-de-introductions-01","exercise_type":"multiple_choice","prompt":{"fa":"می‌خواهی اسم یک همکلاسی را بپرسی. کدام جمله درست است؟"},"answer":{"value":"Wie heißt du?"},"options":["Wie heißt du?","Woher kommst du?","Wie geht's?","Tschüss!"],"cefr":"A1","topic":"introductions","status":"validated","feedback":{"explanation_fa":"«Wie heißt du?» یعنی «اسمت چیه؟». فعل برای du به شکل heißt می‌آید.","model_answer":"Wie heißt du?","retry_tip_fa":"دنبال فعل heißen باش."}}},
+    {"kind":"exercise","external_id":"e02_de_name_build","data":{"lesson_key":"a1-de-introductions-01","exercise_type":"sentence_building","prompt":{"fa":"«اسم من لئا است.» را بساز.","tokens":["Lea","heiße","Ich"]},"answer":{"tokens":["Ich","heiße","Lea"],"text":"Ich heiße Lea."},"cefr":"A1","topic":"introductions","status":"validated","feedback":{"explanation_fa":"در جملهٔ ساده، فعل صرف‌شده بعد از فاعل می‌آید: Ich heiße Lea.","model_answer":"Ich heiße Lea.","retry_tip_fa":"اول Ich، بعد شکل فعل برای ich."}}},
+    {"kind":"exercise","external_id":"e03_de_listen_name","data":{"lesson_key":"a1-de-introductions-01","exercise_type":"listening","prompt":{"audio_text":"Mein Name ist Emil.","fa":"گوینده چه می‌گوید؟"},"answer":{"value":"نام من امیل است."},"options":["نام من امیل است.","من اهل آلمان هستم.","حالم خوب است."],"cefr":"A1","topic":"introductions","status":"validated","feedback":{"explanation_fa":"«Mein Name ist Emil.» یعنی «نام من امیل است.»","model_answer":"نام من امیل است.","transcript_de":"Mein Name ist Emil.","retry_tip_fa":"به Name و Emil گوش کن."}}},
+    {"kind":"exercise","external_id":"e04_de_speak_name","data":{"lesson_key":"a1-de-introductions-01","exercise_type":"speaking","prompt":{"text":"Wie heißt du?","fa":"با صدای بلند بخوان."},"answer":{"expected_text":"Wie heißt du?","scoring":"pronunciation"},"cefr":"A1","topic":"introductions","status":"validated","feedback":{"explanation_fa":"در heißt، حرف ß بخشی از املای استاندارد واژه است.","model_answer":"Wie heißt du?","retry_tip_fa":"جمله را یک بار آهسته و بعد طبیعی تکرار کن."}}},
+    {"kind":"exercise","external_id":"e05_de_origin_question","data":{"lesson_key":"a1-de-introductions-02","exercise_type":"multiple_choice","prompt":{"fa":"برای پرسیدن «اهل کجایی؟» کدام جمله را می‌گویی؟"},"answer":{"value":"Woher kommst du?"},"options":["Woher kommst du?","Wie heißt du?","Wie spät ist es?","Was kostet das?"],"cefr":"A1","topic":"introductions","status":"validated","feedback":{"explanation_fa":"«Woher kommst du?» دربارهٔ مبدأ یا کشور فرد می‌پرسد.","model_answer":"Woher kommst du?","retry_tip_fa":"Woher یعنی «از کجا»."}}},
+    {"kind":"exercise","external_id":"e06_de_from_germany","data":{"lesson_key":"a1-de-introductions-02","exercise_type":"sentence_building","prompt":{"fa":"«من اهل آلمان هستم.» را بساز.","tokens":["Deutschland","komme","aus","Ich"]},"answer":{"tokens":["Ich","komme","aus","Deutschland"],"text":"Ich komme aus Deutschland."},"cefr":"A1","topic":"introductions","status":"validated","feedback":{"explanation_fa":"برای Deutschland حرف تعریف لازم نیست: aus Deutschland.","model_answer":"Ich komme aus Deutschland.","retry_tip_fa":"الگوی اصلی Ich komme aus … است."}}},
+    {"kind":"exercise","external_id":"e07_de_from_iran","data":{"lesson_key":"a1-de-introductions-02","exercise_type":"multiple_choice","prompt":{"fa":"کدام جملهٔ استاندارد برای «من اهل ایران هستم» درست است؟"},"answer":{"value":"Ich komme aus dem Iran."},"options":["Ich komme aus Iran.","Ich komme aus dem Iran.","Ich komme dem Iran aus.","Ich bin aus den Iran."],"cefr":"A1","topic":"introductions","status":"validated","feedback":{"explanation_fa":"در آلمانی معیار، Iran معمولاً با حرف تعریف مذکر می‌آید؛ بعد از aus شکل «dem Iran» استفاده می‌شود.","model_answer":"Ich komme aus dem Iran.","retry_tip_fa":"عبارت را یک‌تکه یاد بگیر: aus dem Iran."}}},
+    {"kind":"exercise","external_id":"e08_de_dialogue_origin","data":{"lesson_key":"a1-de-introductions-02","exercise_type":"dialogue_comprehension","prompt":{"dialogue_ref":"d_de_origin_meeting","fa":"سوفیا اهل کجاست؟"},"answer":{"value":"Iran"},"options":["Iran","Deutschland","Österreich"],"cefr":"A1","topic":"introductions","status":"validated","feedback":{"explanation_fa":"سوفیا می‌گوید: «Ich komme aus dem Iran.»","model_answer":"Iran","retry_tip_fa":"به جملهٔ Sofia که با Ich komme شروع می‌شود توجه کن."}}}
   ]
 }
