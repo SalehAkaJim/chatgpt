@@ -5,4 +5,5 @@ INSERT IGNORE INTO languages (code, name, native_name, script, direction) VALUES
 ('es', 'Spanish', 'Español', 'Latin', 'ltr'),
 ('it', 'Italian', 'Italiano', 'Latin', 'ltr'),
 ('pt', 'Portuguese', 'Português', 'Latin', 'ltr'),
-('fa', 'Persian', 'فارسی', 'Arabic', 'rtl');
+('fa', 'Persian', 'فارسی', 'Arabic', 'rtl'),
+('ar', 'Arabic', 'العربية', 'Arabic', 'rtl');
