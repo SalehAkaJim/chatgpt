@@ -119,7 +119,7 @@ FROM (
   UNION ALL SELECT 290,'describing','people','a2-personality-appearance','Personality & Appearance',
          'Describe people using common appearance and personality adjectives and simple comparisons.',3,
          JSON_OBJECT('can_do','I can describe what someone looks like and what they are like.','grammar_focus',JSON_ARRAY('be/look like','adjective order introduction','comparatives'))
-  UNION ALL SELECT 300,'describing','places-town','a2-describe-places','Describe Places',
+  UNION ALL SELECT 300,'travel-transport','places-town','a2-describe-places','Describe Places',
          'Describe familiar places in more detail and compare neighborhoods, towns, or travel destinations.',3,
          JSON_OBJECT('can_do','I can describe and compare familiar places.','grammar_focus',JSON_ARRAY('comparatives','superlatives','there is/are'))
   UNION ALL SELECT 310,'social','hobbies','a2-experiences','Life Experiences',
