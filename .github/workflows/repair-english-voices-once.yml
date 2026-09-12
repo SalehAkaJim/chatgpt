@@ -1,0 +1,125 @@
+name: Repair English Character Voices Once
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-english-voices-once.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repair-english-character-voices
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      CONTENT_TTS_CONCURRENCY: '2'
+      ELEVENLABS_MODEL_ID: eleven_multilingual_v2
+      ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Require ElevenLabs connection
+        run: |
+          if [ -z "${ELEVENLABS_API_KEY:-}" ]; then
+            echo 'ELEVENLABS_API_KEY GitHub secret is missing.' >&2
+            exit 2
+          fi
+
+      - name: Compile voice tooling
+        run: |
+          python -m py_compile \
+            scripts/voice_quality.py \
+            scripts/audit_voice_lock.py \
+            scripts/resolve_audio_voices.py \
+            scripts/generate_audio.py
+
+      - name: Remove legacy mismatched character locks
+        run: |
+          python scripts/audit_voice_lock.py --repair-legacy
+
+      - name: Rebuild strict manifests for every English level
+        run: |
+          mkdir -p audio/manifests/en
+          python scripts/build_audio_manifest.py content/production/en/Pre-A1 --level Pre-A1 --locale en-US --strict-characters --output audio/manifests/en/Pre-A1.json
+          python scripts/build_audio_manifest.py content/production/en/A1 --level A1 --locale en-US --strict-characters --output audio/manifests/en/A1.json
+          python scripts/build_audio_manifest.py content/production/en/A2 --level A2 --locale en-US --strict-characters --output audio/manifests/en/A2.json
+          python scripts/build_audio_manifest.py content/production/en/B1 --level B1 --locale en-US --strict-characters --output audio/manifests/en/B1.json
+          python scripts/build_audio_manifest.py content/production/en/B2 --level B2 --locale en-US --strict-characters --output audio/manifests/en/B2.json
+          python scripts/build_audio_manifest.py content/production/en/C1 --level C1 --locale en-US --strict-characters --output audio/manifests/en/C1.json
+          python scripts/build_audio_manifest.py content/production/en/C2 --level C2 --locale en-US --strict-characters --output audio/manifests/en/C2.json
+
+      - name: Resolve persona-compatible character voices
+        run: |
+          for level in Pre-A1 A1 A2 B1 B2 C1 C2; do
+            python scripts/resolve_audio_voices.py "audio/manifests/en/${level}.json" --write-lock
+          done
+
+      - name: Require clean voice audit
+        run: |
+          python scripts/audit_voice_lock.py --strict
+
+      - name: Regenerate only audio whose voice changed
+        run: |
+          for level in Pre-A1 A1 A2 B1 B2 C1 C2; do
+            python scripts/generate_audio.py "audio/manifests/en/${level}.json" \
+              --confirm-paid-generation --concurrency 2
+          done
+
+      - name: Validate all generated English audio
+        run: |
+          for level in Pre-A1 A1 A2 B1 B2 C1 C2; do
+            python scripts/validate_audio_manifest.py "audio/manifests/en/${level}.json" --require-generated
+          done
+
+      - name: Export refreshed audio SQL
+        run: |
+          python scripts/export_audio_sql.py audio/manifests/en/Pre-A1.json --status validated --output database/import/en/pre_a1_audio.sql
+          python scripts/export_audio_sql.py audio/manifests/en/A1.json --status validated --output database/import/en/a1_audio.sql
+          python scripts/export_audio_sql.py audio/manifests/en/A2.json --status validated --output database/import/en/a2_audio.sql
+          python scripts/export_audio_sql.py audio/manifests/en/B1.json --status validated --output database/import/en/b1_audio.sql
+          python scripts/export_audio_sql.py audio/manifests/en/B2.json --status validated --output database/import/en/b2_audio.sql
+          python scripts/export_audio_sql.py audio/manifests/en/C1.json --status validated --output database/import/en/c1_audio.sql
+          python scripts/export_audio_sql.py audio/manifests/en/C2.json --status validated --output database/import/en/c2_audio.sql
+
+      - name: Final voice audit report
+        run: |
+          python scripts/audit_voice_lock.py --strict
+
+      - name: Commit repaired voices and regenerated assets
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/repair-english-voices-once.yml
+          git add \
+            audio/voices/en-US.lock.json \
+            audio/manifests/en \
+            audio/generated/en-US \
+            database/import/en/*_audio.sql
+          if git diff --cached --quiet; then
+            echo 'No voice/audio changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Repair English character voices and regenerate affected audio [skip ci]'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

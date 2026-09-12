@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 """Resolve and lock all voices required by an audio manifest without generating audio.
 
-The resolver prefers voices already available to the ElevenLabs workspace. When
-a distinct dialogue character or named narrator cannot be satisfied there, it
-falls back to the official ElevenLabs Voice Library. Dialogue voices remain
-stable and distinct per character; narrator/lexical fallbacks remain fixed.
+Dialogue character selection is persona-aware: gender is enforced, harsh/sexualized/
+age-mismatched voices are rejected, and the highest-scoring compatible voice is
+chosen deterministically instead of pseudo-randomly.
 """
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 import sys
@@ -23,6 +21,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from scripts.generate_audio import resolve_voice  # noqa: E402
+from scripts.voice_quality import voice_allowed, voice_score  # noqa: E402
 
 API = "https://api.elevenlabs.io"
 _SHARED_CACHE: dict[tuple, list[dict]] = {}
@@ -66,8 +65,7 @@ def _shared_candidates(api_key: str, spec: dict, locale: str, search: str | None
             )
             response.raise_for_status()
             payload = response.json()
-            voices = payload.get("voices", [])
-            for raw in voices:
+            for raw in payload.get("voices", []):
                 voice_id = raw.get("voice_id")
                 if not voice_id:
                     continue
@@ -90,6 +88,8 @@ def _shared_candidates(api_key: str, spec: dict, locale: str, search: str | None
                         "age": (raw.get("age") or "").lower(),
                         "category": (raw.get("category") or category or "").lower(),
                         "language": (raw.get("language") or language).lower(),
+                        "use_case": (raw.get("use_case") or "").lower(),
+                        "descriptive": (raw.get("descriptive") or "").lower(),
                     },
                     "public_owner_id": raw.get("public_owner_id"),
                     "usage_character_count_1y": int(raw.get("usage_character_count_1y") or 0),
@@ -102,24 +102,16 @@ def _shared_candidates(api_key: str, spec: dict, locale: str, search: str | None
             if not payload.get("has_more"):
                 break
 
-    ranked = sorted(
-        collected.values(),
-        key=lambda v: (
-            v["category_priority"],
-            -v["usage_character_count_1y"],
-            -v["cloned_by_count"],
-            v.get("name") or "",
-            v["voice_id"],
-        ),
-    )
-    _SHARED_CACHE[cache_key] = ranked
-    return ranked
+    result = list(collected.values())
+    _SHARED_CACHE[cache_key] = result
+    return result
 
 
 def _lock_library_voice(voice: dict, locks: dict, voice_key: str, requested_name: str | None = None) -> dict:
     locked = {
         "voice_id": voice["voice_id"],
         "voice_name": voice.get("name"),
+        "description": voice.get("description") or "",
         "labels": voice.get("labels") or {},
         "source": "voice_library",
         "public_owner_id": voice.get("public_owner_id"),
@@ -128,6 +120,25 @@ def _lock_library_voice(voice: dict, locks: dict, voice_key: str, requested_name
     }
     locks[voice_key] = locked
     return locked
+
+
+def _rank_character_candidates(candidates: list[dict], spec: dict) -> list[dict]:
+    allowed = []
+    for voice in candidates:
+        ok, _ = voice_allowed(voice, spec)
+        if ok:
+            allowed.append(voice)
+    return sorted(
+        allowed,
+        key=lambda v: (
+            -voice_score(v, spec),
+            v.get("category_priority", 9),
+            -int(v.get("usage_character_count_1y") or 0),
+            -int(v.get("cloned_by_count") or 0),
+            v.get("name") or "",
+            v.get("voice_id") or "",
+        ),
+    )
 
 
 def _resolve_from_library(api_key: str, voice_key: str, spec: dict, locale: str, locks: dict) -> dict:
@@ -147,8 +158,15 @@ def _resolve_from_library(api_key: str, voice_key: str, spec: dict, locale: str,
         generic = _shared_candidates(api_key, fallback_spec, locale)
         if not generic:
             raise RuntimeError(f"No compatible fixed narrator fallback is available for {requested_name}")
-        # A named fallback must be the same provider voice for every logical
-        # narrator key that requests the same name, so always take the best row.
+        generic = sorted(
+            generic,
+            key=lambda v: (
+                v.get("category_priority", 9),
+                -int(v.get("usage_character_count_1y") or 0),
+                -int(v.get("cloned_by_count") or 0),
+                v.get("name") or "",
+            ),
+        )
         return _lock_library_voice(generic[0], locks, voice_key, requested_name=requested_name)
 
     reserved = {
@@ -157,13 +175,11 @@ def _resolve_from_library(api_key: str, voice_key: str, spec: dict, locale: str,
         if key.startswith("character:") and value.get("voice_id")
     }
     available = [v for v in _shared_candidates(api_key, spec, locale) if v["voice_id"] not in reserved]
-    if not available:
-        raise RuntimeError(f"No unused compatible ElevenLabs Voice Library voice remains for {voice_key}")
+    ranked = _rank_character_candidates(available, spec)
+    if not ranked:
+        raise RuntimeError(f"No unused persona-compatible ElevenLabs Voice Library voice remains for {voice_key}")
 
-    top = available[: min(24, len(available))]
-    index = int(hashlib.sha256(voice_key.encode("utf-8")).hexdigest()[:8], 16) % len(top)
-    chosen = top[index]
-    return _lock_library_voice(chosen, locks, voice_key)
+    return _lock_library_voice(ranked[0], locks, voice_key)
 
 
 def main() -> None:
@@ -200,15 +216,27 @@ def main() -> None:
     library_fallbacks = 0
     for voice_key in sorted(required):
         spec = required[voice_key]
-        try:
-            voice = resolve_voice(api_key, voice_key, spec, locks)
-        except RuntimeError:
-            voice = _resolve_from_library(api_key, voice_key, spec, locale, locks)
-            library_fallbacks += 1
-            print(
-                f"Voice Library fallback: {voice_key} -> {voice.get('voice_name')} ({voice.get('voice_id')})",
-                file=sys.stderr,
-            )
+        existing = locks.get(voice_key)
+
+        if voice_key.startswith("character:"):
+            if existing:
+                ok, _ = voice_allowed(existing, spec)
+                if ok:
+                    voice = existing
+                else:
+                    del locks[voice_key]
+                    voice = _resolve_from_library(api_key, voice_key, spec, locale, locks)
+                    library_fallbacks += 1
+            else:
+                voice = _resolve_from_library(api_key, voice_key, spec, locale, locks)
+                library_fallbacks += 1
+        else:
+            try:
+                voice = resolve_voice(api_key, voice_key, spec, locks)
+            except RuntimeError:
+                voice = _resolve_from_library(api_key, voice_key, spec, locale, locks)
+                library_fallbacks += 1
+
         resolved.append({
             "voice_key": voice_key,
             "voice_id": voice.get("voice_id"),
