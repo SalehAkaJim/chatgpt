@@ -1,6 +1,6 @@
 {
   "source_text_hash": "fc1138e5db3111a2ed412c16fa7509692852b29b2f5d79a23763bc36c8e3d7b6",
-  "voice_id": "kdnRe2koJdOK4Ovxn2DI",
+  "voice_id": "H61ermx0gHYPgQYw03E4",
   "model": "eleven_multilingual_v2",
   "settings": {
     "stability": 0.71,
@@ -12,28 +12,25 @@
   "provider": "elevenlabs",
   "audio_key": "2ff40e48f6b2c102956963f7fc948b01a9067ced3ddba53b4a740283d5b42a2c",
   "voice_key": "character:mei:female_professional",
-  "voice_name": "Eryn - Genuine, Friendly and Natural",
+  "voice_name": "Felicia - Clear, Persuasive and Natural",
   "voice_labels": {
     "gender": "female",
     "accent": "american",
-    "age": "middle_aged",
-    "category": "high_quality",
-    "language": "en"
+    "age": "young",
+    "category": "professional",
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "neutral"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "a7c78f1f33768e2ba9d0520f04e1d4388413aec16c2a05c2f2f0ff311609399c",
-  "duration_ms": 2403,
-  "generated_at": "2026-09-12T11:23:18.893678+00:00",
+  "file_sha256": "09b9c2472c4cea8ea2a6358bb9fb8a67664356a97adec19bd8e59c0b4500e4ea",
+  "duration_ms": 2586,
+  "generated_at": "2026-09-12T18:57:37.021379+00:00",
   "entity_refs": [
     {
       "entity_type": "dialogue_turn",
-      "entity_uuid": "16d06df5-024e-5d32-9e20-8b56e3e64062",
-      "entity_key": "d_c1_bureaucracy_rights_scene_1:1"
-    },
-    {
-      "entity_type": "dialogue_turn",
-      "entity_uuid": "ecf775d0-2ed7-5cf9-95a8-2743d32179bb",
-      "entity_key": "d_c1_counterfactual_reasoning_scene_1:1"
+      "entity_uuid": "cf0e366c-2c42-56a2-a1ea-e7873bebd34b",
+      "entity_key": "d_c2_legal_administrative_language_scene_1:1"
     }
   ]
 }

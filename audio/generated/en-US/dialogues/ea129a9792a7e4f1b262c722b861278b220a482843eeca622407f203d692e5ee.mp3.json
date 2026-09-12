@@ -1,6 +1,6 @@
 {
   "source_text_hash": "422f51b00edd42641e82ae1a949ce4b5906ed47593b07738015c165c1a4ba9d3",
-  "voice_id": "zGjIP4SZlMnY9m93k97r",
+  "voice_id": "mZTVERjx1WQkdAWt1Lcm",
   "model": "eleven_multilingual_v2",
   "settings": {
     "stability": 0.68,
@@ -12,23 +12,25 @@
   "provider": "elevenlabs",
   "audio_key": "ea129a9792a7e4f1b262c722b861278b220a482843eeca622407f203d692e5ee",
   "voice_key": "character:dina:female_calm",
-  "voice_name": "Hope - Clear, Relatable and Charismatic",
+  "voice_name": "Grace - warm, velvety meditation voice",
   "voice_labels": {
     "gender": "female",
     "accent": "american",
     "age": "young",
     "category": "high_quality",
-    "language": "en"
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "calm"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "9fe10937298d3ff6856ee4410591ec710e431acd4e37a4e83a066e458487b69f",
-  "duration_ms": 2272,
-  "generated_at": "2026-09-12T11:27:18.706210+00:00",
+  "file_sha256": "25053589472db5dc0911dba10a51336fe4fab9864dc50b89af42778798436034",
+  "duration_ms": 3239,
+  "generated_at": "2026-09-12T19:00:11.240709+00:00",
   "entity_refs": [
     {
       "entity_type": "dialogue_turn",
-      "entity_uuid": "bf8eec98-129f-521d-8548-8efe7f8b5df5",
-      "entity_key": "d_c1_risk_contingency_scene_3:1"
+      "entity_uuid": "078ec563-29ef-56c3-98ba-fae8194e7d4e",
+      "entity_key": "d_c2_crisis_response_scene_3:1"
     }
   ]
 }

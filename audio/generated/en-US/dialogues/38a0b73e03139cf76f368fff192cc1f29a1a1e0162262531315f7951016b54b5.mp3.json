@@ -1,6 +1,6 @@
 {
   "source_text_hash": "246f05fc918d44dea9d94cf016038c5b747594fbf853524ffd80a5dc9eafcdf8",
-  "voice_id": "jqcCZkN6Knx8BJ5TBdYR",
+  "voice_id": "CICpbs1ZGqlhQNbQmCUP",
   "model": "eleven_multilingual_v2",
   "settings": {
     "stability": 0.71,
@@ -12,28 +12,25 @@
   "provider": "elevenlabs",
   "audio_key": "38a0b73e03139cf76f368fff192cc1f29a1a1e0162262531315f7951016b54b5",
   "voice_key": "character:fatima:female_professional",
-  "voice_name": "Zara – The Warm, Real-World Conversationalist",
+  "voice_name": "Lauren B – US Banking Care Voice Bot",
   "voice_labels": {
     "gender": "female",
     "accent": "american",
-    "age": "young",
+    "age": "middle_aged",
     "category": "high_quality",
-    "language": "en"
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "calm"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "0d84eb7a92fb91515a16bbb5e3a71b1e4fed30de6a94cae1a64252fff523dc0a",
-  "duration_ms": 2403,
-  "generated_at": "2026-09-12T11:23:26.586824+00:00",
+  "file_sha256": "4ff979e3c2adf42f64b61ed3512b5486e7745593f6f7a2504da19df16a7b1107",
+  "duration_ms": 3056,
+  "generated_at": "2026-09-12T18:57:46.522693+00:00",
   "entity_refs": [
     {
       "entity_type": "dialogue_turn",
-      "entity_uuid": "480894d4-0e66-53b5-81a0-5f0f16fe1a29",
-      "entity_key": "d_c1_ambiguity_clarification_scene_2:1"
-    },
-    {
-      "entity_type": "dialogue_turn",
-      "entity_uuid": "93e7a919-cfb9-5ca5-98d3-aa25fd77d271",
-      "entity_key": "d_c1_health_decisions_scene_2:1"
+      "entity_uuid": "b6048bfc-24e3-5a2f-b3c8-2cc97a0a86c2",
+      "entity_key": "d_c2_medical_communication_scene_2:1"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "source_text_hash": "295b5f4358071071cd90a171080df44d2e423b22f2378219009b49ab01c5fecb",
-  "voice_id": "4tRn1lSkEn13EVTuqb0g",
+  "voice_id": "DODLEQrClDo8wCz460ld",
   "model": "eleven_multilingual_v2",
   "settings": {
     "stability": 0.68,
@@ -12,28 +12,25 @@
   "provider": "elevenlabs",
   "audio_key": "a2522c3c2406586f5f89a7a6529660e65bd4e312822eeec8533bd7065b5e39da",
   "voice_key": "character:noor:female_calm",
-  "voice_name": "Serafina - Sensual Temptress",
+  "voice_name": "Lauren - Friendly, Comforting and Soft",
   "voice_labels": {
     "gender": "female",
     "accent": "american",
-    "age": "young",
+    "age": "middle_aged",
     "category": "high_quality",
-    "language": "en"
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "1143a08892f46aaf8297ea3ceaaba906e5fe293374d1686e381854ef1bef2181",
-  "duration_ms": 2507,
-  "generated_at": "2026-09-12T11:25:45.087984+00:00",
+  "file_sha256": "00ba541494a7112bd48f66c43723e83dfbf864967d5e8974b8c56d837c535dda",
+  "duration_ms": 2324,
+  "generated_at": "2026-09-12T18:59:08.949722+00:00",
   "entity_refs": [
     {
       "entity_type": "dialogue_turn",
-      "entity_uuid": "7d659cc2-f0f6-5dfd-aebe-d8f5b32f5ca7",
-      "entity_key": "d_c1_diplomatic_disagreement_scene_1:3"
-    },
-    {
-      "entity_type": "dialogue_turn",
-      "entity_uuid": "e62d1b15-f72d-5ab8-93f8-026f7f4aee66",
-      "entity_key": "d_c1_humor_irony_scene_1:3"
+      "entity_uuid": "bf47931b-5b51-5d54-bb57-c015e4f397ae",
+      "entity_key": "d_c2_comedy_wordplay_scene_1:3"
     }
   ]
 }

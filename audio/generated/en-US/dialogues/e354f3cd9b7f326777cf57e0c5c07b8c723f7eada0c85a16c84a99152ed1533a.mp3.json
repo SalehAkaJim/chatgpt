@@ -1,6 +1,6 @@
 {
   "source_text_hash": "422f51b00edd42641e82ae1a949ce4b5906ed47593b07738015c165c1a4ba9d3",
-  "voice_id": "XfNU2rGpBa01ckF309OY",
+  "voice_id": "gh9yOzacZabdERF6GI7O",
   "model": "eleven_multilingual_v2",
   "settings": {
     "stability": 0.71,
@@ -12,28 +12,25 @@
   "provider": "elevenlabs",
   "audio_key": "e354f3cd9b7f326777cf57e0c5c07b8c723f7eada0c85a16c84a99152ed1533a",
   "voice_key": "character:elena:female_professional",
-  "voice_name": "Nichalia Schwartz - Bright and Friendly",
+  "voice_name": "Kai - Real AI Receptionist ",
   "voice_labels": {
     "gender": "female",
     "accent": "american",
-    "age": "young",
-    "category": "high_quality",
-    "language": "en"
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "calm"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "6f2ffb83ce8bc8f3ca86e995dd61e12943c919a4b1b62024d371723c95b726c1",
-  "duration_ms": 2455,
-  "generated_at": "2026-09-12T11:27:07.240894+00:00",
+  "file_sha256": "4895cde624a2be69b3427d750df7b2f29fb832d4973c0803b57239ec5d9b7bde",
+  "duration_ms": 2272,
+  "generated_at": "2026-09-12T19:00:05.651216+00:00",
   "entity_refs": [
     {
       "entity_type": "dialogue_turn",
-      "entity_uuid": "72714f32-2f21-5cc3-9274-ccfce7824117",
-      "entity_key": "d_c1_reading_between_lines_scene_2:1"
-    },
-    {
-      "entity_type": "dialogue_turn",
-      "entity_uuid": "3d51b3c8-0620-585f-ad77-4f013a43d690",
-      "entity_key": "d_c1_social_change_scene_2:1"
+      "entity_uuid": "b56268e9-2e61-5fc6-8ba0-3f83fd7cbb96",
+      "entity_key": "d_c2_social_institutions_scene_2:1"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "source_text_hash": "25d6edaf822bcc13652b5fa0b1f6af26252c3b236430f681b82d518f2acff370",
-  "voice_id": "NHRgOEwqx5WZNClv5sat",
+  "voice_id": "GZHDPDohOOwIocbPemTq",
   "model": "eleven_multilingual_v2",
   "settings": {
     "stability": 0.68,
@@ -12,28 +12,25 @@
   "provider": "elevenlabs",
   "audio_key": "47e6d1f4252823e05e62ed36ce60a65b5e24e9b1267a17fc52f17801b3f02f03",
   "voice_key": "character:leila:female_calm",
-  "voice_name": "Chelsea - Conversational and Bright",
+  "voice_name": "Chelsea Boddie - Relaxing and Mindful",
   "voice_labels": {
     "gender": "female",
     "accent": "american",
-    "age": "middle_aged",
+    "age": "young",
     "category": "high_quality",
-    "language": "en"
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "calm"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "1e91fda38215df52af76042691a5e6bf960713175f1266a7abac15e6c8db6dfc",
-  "duration_ms": 3186,
-  "generated_at": "2026-09-12T11:23:51.240031+00:00",
+  "file_sha256": "f52910a5bd61a04f008cbbe88bc5f1ff748667fd58ebe4e15fb48dae216819af",
+  "duration_ms": 4257,
+  "generated_at": "2026-09-12T18:58:02.128166+00:00",
   "entity_refs": [
     {
       "entity_type": "dialogue_turn",
-      "entity_uuid": "ff9ee256-a0c1-54eb-971b-0af9fe9e01e6",
-      "entity_key": "d_c1_economic_tradeoffs_scene_2:1"
-    },
-    {
-      "entity_type": "dialogue_turn",
-      "entity_uuid": "c71eff5a-976c-5621-b813-f3f8fe1ace84",
-      "entity_key": "d_c1_tone_subtext_scene_2:1"
+      "entity_uuid": "2cd6602c-c800-55f2-9987-762c44aeb79c",
+      "entity_key": "d_c2_economic_policy_scene_2:1"
     }
   ]
 }

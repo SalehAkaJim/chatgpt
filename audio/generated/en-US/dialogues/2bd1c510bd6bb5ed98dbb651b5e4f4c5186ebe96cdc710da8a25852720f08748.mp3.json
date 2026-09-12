@@ -1,6 +1,6 @@
 {
   "source_text_hash": "45f26cadd3324045a2469ae09c09a35b7a42db43b18527dc7ca24394f30a97a5",
-  "voice_id": "uYXf8XasLslADfZ2MB4u",
+  "voice_id": "uMM5TEnpKKgD758knVJO",
   "model": "eleven_multilingual_v2",
   "settings": {
     "stability": 0.71,
@@ -12,28 +12,25 @@
   "provider": "elevenlabs",
   "audio_key": "2bd1c510bd6bb5ed98dbb651b5e4f4c5186ebe96cdc710da8a25852720f08748",
   "voice_key": "character:claire:female_professional",
-  "voice_name": "Hope - Bubbly, Gossipy and Girly",
+  "voice_name": "Liz - Customer Service Assistant",
   "voice_labels": {
     "gender": "female",
     "accent": "american",
     "age": "young",
-    "category": "high_quality",
-    "language": "en"
+    "category": "professional",
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "professional"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "451d79b91a31cf1a0cda03d6aac74ca82fd66fefe23aaa48525628a5640ef716",
-  "duration_ms": 2351,
-  "generated_at": "2026-09-12T11:23:07.612013+00:00",
+  "file_sha256": "162072bab69af9a6129d45eae968a8527ef413579b52220b634ce3515a6144b5",
+  "duration_ms": 2586,
+  "generated_at": "2026-09-12T18:57:31.231001+00:00",
   "entity_refs": [
     {
       "entity_type": "dialogue_turn",
-      "entity_uuid": "a4b3576b-a98a-5d09-bdee-f04384171642",
-      "entity_key": "d_c1_bureaucracy_rights_scene_3:1"
-    },
-    {
-      "entity_type": "dialogue_turn",
-      "entity_uuid": "474ded25-85c2-5ccc-8e13-7cdff648d993",
-      "entity_key": "d_c1_counterfactual_reasoning_scene_3:1"
+      "entity_uuid": "f1413153-d1a4-54df-92f5-a58fda55ece5",
+      "entity_key": "d_c2_legal_administrative_language_scene_3:1"
     }
   ]
 }

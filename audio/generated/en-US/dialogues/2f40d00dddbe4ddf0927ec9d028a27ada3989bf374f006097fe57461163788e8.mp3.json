@@ -1,6 +1,6 @@
 {
   "source_text_hash": "4e548ec34d05210b6bf28702a592573441f685c5b6c0a57e92ec347a4a6e64f9",
-  "voice_id": "zGjIP4SZlMnY9m93k97r",
+  "voice_id": "mZTVERjx1WQkdAWt1Lcm",
   "model": "eleven_multilingual_v2",
   "settings": {
     "stability": 0.68,
@@ -12,28 +12,25 @@
   "provider": "elevenlabs",
   "audio_key": "2f40d00dddbe4ddf0927ec9d028a27ada3989bf374f006097fe57461163788e8",
   "voice_key": "character:dina:female_calm",
-  "voice_name": "Hope - Clear, Relatable and Charismatic",
+  "voice_name": "Grace - warm, velvety meditation voice",
   "voice_labels": {
     "gender": "female",
     "accent": "american",
     "age": "young",
     "category": "high_quality",
-    "language": "en"
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "calm"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "b35df7199fd19e1839d2242ae74e3b0934ca372a30d8521bd3cf0a16098f3ad8",
-  "duration_ms": 2351,
-  "generated_at": "2026-09-12T11:23:14.380441+00:00",
+  "file_sha256": "2909bd85e0f67ee7c1dccce0967c13f8304b52f216bb31de868ffba52593562b",
+  "duration_ms": 3004,
+  "generated_at": "2026-09-12T18:57:34.022325+00:00",
   "entity_refs": [
     {
       "entity_type": "dialogue_turn",
-      "entity_uuid": "da886409-9f55-5be7-9957-2c54da6a0eb7",
-      "entity_key": "d_c1_boundaries_repair_scene_3:3"
-    },
-    {
-      "entity_type": "dialogue_turn",
-      "entity_uuid": "0c5d1d20-50f4-56db-a295-0d4fc2712fc6",
-      "entity_key": "d_c1_precision_reformulation_scene_3:3"
+      "entity_uuid": "1805e46b-730a-55c7-a0a4-99144d531c13",
+      "entity_key": "d_c2_relationship_nuance_scene_3:3"
     }
   ]
 }
