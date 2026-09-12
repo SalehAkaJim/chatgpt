@@ -1,0 +1,35 @@
+{
+  "source_text_hash": "d02c2a81591d0f9722c2f8c6dffc1c2466f7dce79c20dfe6692e0d0a3a7dec6a",
+  "voice_id": "tnSpp4vdxKPjI9w0GnoV",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e07d5e9ddc29011247ba3397ee4b6864308587fe5199e2513d705ad8a6f1639c",
+  "voice_key": "character:nora:female_warm",
+  "voice_name": "Hope - upbeat and clear",
+  "voice_labels": {
+    "accent": "american",
+    "language": "en",
+    "descriptive": "upbeat",
+    "use_case": "social_media",
+    "age": "young",
+    "gender": "female"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "f4cdbec5335befc98a3b7fd03cd2c5b014641ef696131d8cea69917a1be11294",
+  "duration_ms": 5328,
+  "generated_at": "2026-09-12T16:09:53.787147+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "09ccaf60-7c6a-5e76-ba1e-2a38186b6dac",
+      "entity_key": "d_c2_evidential_reasoning_scene_1:1"
+    }
+  ]
+}
