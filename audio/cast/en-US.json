@@ -1,0 +1,91 @@
+{
+  "locale": "en-US",
+  "policy": {
+    "target_accent": "general_american",
+    "require_native_quality": true,
+    "require_distinct_character_voices": true,
+    "notes": "Character traits are explicit design decisions. They must never be inferred from character names at generation time."
+  },
+  "characters": {
+    "maya": {
+      "display_name": "Maya",
+      "persona": {"age_group": "young_adult", "energy": "warm", "delivery": "friendly_confident"},
+      "voice_profile": "female_warm"
+    },
+    "leo": {
+      "display_name": "Leo",
+      "persona": {"age_group": "young_adult", "energy": "relaxed", "delivery": "friendly_clear"},
+      "voice_profile": "male_warm"
+    },
+    "hana": {
+      "display_name": "Hana",
+      "persona": {"age_group": "adult", "energy": "calm", "delivery": "gentle_precise"},
+      "voice_profile": "female_calm"
+    },
+    "noah": {
+      "display_name": "Noah",
+      "persona": {"age_group": "adult", "energy": "calm", "delivery": "friendly_grounded"},
+      "voice_profile": "male_calm"
+    },
+    "sofia": {
+      "display_name": "Sofia",
+      "persona": {"age_group": "young_adult", "energy": "bright", "delivery": "social_natural"},
+      "voice_profile": "female_bright"
+    },
+    "omar": {
+      "display_name": "Omar",
+      "persona": {"age_group": "adult", "energy": "warm", "delivery": "open_conversational"},
+      "voice_profile": "male_warm"
+    },
+    "lina": {
+      "display_name": "Lina",
+      "persona": {"age_group": "adult", "energy": "balanced", "delivery": "professional_clear"},
+      "voice_profile": "female_professional"
+    },
+    "ben": {
+      "display_name": "Ben",
+      "persona": {"age_group": "adult", "energy": "balanced", "delivery": "professional_friendly"},
+      "voice_profile": "male_professional"
+    },
+    "amir": {
+      "display_name": "Amir",
+      "persona": {"age_group": "young_adult", "energy": "warm", "delivery": "friendly_confident"},
+      "voice_profile": "male_warm"
+    },
+    "ella": {
+      "display_name": "Ella",
+      "persona": {"age_group": "young_adult", "energy": "bright", "delivery": "friendly_lively"},
+      "voice_profile": "female_bright"
+    },
+    "yuki": {
+      "display_name": "Yuki",
+      "persona": {"age_group": "adult", "energy": "calm", "delivery": "precise_natural"},
+      "voice_profile": "female_calm"
+    },
+    "daniel": {
+      "display_name": "Daniel",
+      "persona": {"age_group": "adult", "energy": "balanced", "delivery": "professional_precise"},
+      "voice_profile": "male_professional"
+    },
+    "priya": {
+      "display_name": "Priya",
+      "persona": {"age_group": "young_adult", "energy": "bright", "delivery": "clear_upbeat"},
+      "voice_profile": "female_bright"
+    },
+    "tom": {
+      "display_name": "Tom",
+      "persona": {"age_group": "adult", "energy": "warm", "delivery": "friendly_clear"},
+      "voice_profile": "male_calm"
+    },
+    "noura": {
+      "display_name": "Noura",
+      "persona": {"age_group": "young_adult", "energy": "warm", "delivery": "natural_social"},
+      "voice_profile": "female_warm"
+    },
+    "alex": {
+      "display_name": "Alex",
+      "persona": {"age_group": "young_adult", "energy": "balanced", "delivery": "casual_clear"},
+      "voice_profile": "male_bright"
+    }
+  }
+}
