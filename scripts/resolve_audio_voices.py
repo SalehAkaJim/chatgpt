@@ -1,23 +1,145 @@
 #!/usr/bin/env python3
 """Resolve and lock all voices required by an audio manifest without generating audio.
 
-This performs only voice-list/search API calls. It is intended to fail before any
-paid TTS generation if Lori, locale-compatible voices, label requirements, or
-per-character distinctness cannot be satisfied.
+The resolver prefers voices already available to the ElevenLabs workspace. When
+a distinct dialogue character cannot be satisfied from that collection, it falls
+back to the official ElevenLabs Voice Library and selects a verified en-US voice
+that matches the character gender/accent profile. No TTS is generated here.
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
+
+import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from scripts.generate_audio import resolve_voice  # noqa: E402
+
+API = "https://api.elevenlabs.io"
+_SHARED_CACHE: dict[tuple, list[dict]] = {}
+
+
+def _shared_candidates(api_key: str, spec: dict, locale: str) -> list[dict]:
+    labels = spec.get("required_labels") or {}
+    gender = (labels.get("gender") or "").lower() or None
+    language = spec.get("required_language") or locale.split("-")[0]
+    accent = spec.get("preferred_accent") or None
+    cache_key = (gender, language, accent, locale)
+    if cache_key in _SHARED_CACHE:
+        return _SHARED_CACHE[cache_key]
+
+    collected: dict[str, dict] = {}
+    category_priority = {"high_quality": 0, "professional": 1, None: 2}
+    for category in ("high_quality", "professional", None):
+        for page in range(3):
+            params = {
+                "page_size": 100,
+                "page": page,
+                "language": language,
+                "locale": locale,
+                "include_custom_rates": "false",
+                "include_live_moderated": "false",
+                "sort": "usage_character_count_1y",
+            }
+            if gender:
+                params["gender"] = gender
+            if accent:
+                params["accent"] = accent
+            if category:
+                params["category"] = category
+            response = requests.get(
+                f"{API}/v1/shared-voices",
+                headers={"xi-api-key": api_key},
+                params=params,
+                timeout=30,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            voices = payload.get("voices", [])
+            for raw in voices:
+                voice_id = raw.get("voice_id")
+                if not voice_id:
+                    continue
+                verified = raw.get("verified_languages") or []
+                verified_locale = any(
+                    (v.get("locale") or "").casefold() == locale.casefold()
+                    and (v.get("language") or language).casefold() == language.casefold()
+                    and (not v.get("model_id") or v.get("model_id") == "eleven_multilingual_v2")
+                    for v in verified
+                )
+                if verified and not verified_locale:
+                    continue
+                row = {
+                    "voice_id": voice_id,
+                    "name": raw.get("name"),
+                    "description": raw.get("description") or raw.get("descriptive") or "",
+                    "labels": {
+                        "gender": (raw.get("gender") or "").lower(),
+                        "accent": (raw.get("accent") or "").lower(),
+                        "age": (raw.get("age") or "").lower(),
+                        "category": (raw.get("category") or category or "").lower(),
+                        "language": (raw.get("language") or language).lower(),
+                    },
+                    "public_owner_id": raw.get("public_owner_id"),
+                    "usage_character_count_1y": int(raw.get("usage_character_count_1y") or 0),
+                    "cloned_by_count": int(raw.get("cloned_by_count") or 0),
+                    "category_priority": category_priority[category],
+                }
+                previous = collected.get(voice_id)
+                if previous is None or row["category_priority"] < previous["category_priority"]:
+                    collected[voice_id] = row
+            if not payload.get("has_more"):
+                break
+
+    ranked = sorted(
+        collected.values(),
+        key=lambda v: (
+            v["category_priority"],
+            -v["usage_character_count_1y"],
+            -v["cloned_by_count"],
+            v.get("name") or "",
+            v["voice_id"],
+        ),
+    )
+    _SHARED_CACHE[cache_key] = ranked
+    return ranked
+
+
+def _resolve_from_library(api_key: str, voice_key: str, spec: dict, locale: str, locks: dict) -> dict:
+    if spec.get("voice_name"):
+        raise RuntimeError(f"Named voice {spec['voice_name']} must resolve from the connected workspace")
+
+    reserved = {
+        value.get("voice_id")
+        for key, value in locks.items()
+        if key.startswith("character:") and value.get("voice_id")
+    }
+    available = [v for v in _shared_candidates(api_key, spec, locale) if v["voice_id"] not in reserved]
+    if not available:
+        raise RuntimeError(f"No unused compatible ElevenLabs Voice Library voice remains for {voice_key}")
+
+    top = available[: min(24, len(available))]
+    index = int(hashlib.sha256(voice_key.encode("utf-8")).hexdigest()[:8], 16) % len(top)
+    chosen = top[index]
+    locked = {
+        "voice_id": chosen["voice_id"],
+        "voice_name": chosen.get("name"),
+        "labels": chosen.get("labels") or {},
+        "source": "voice_library",
+        "public_owner_id": chosen.get("public_owner_id"),
+        "resolved_at": datetime.now(timezone.utc).isoformat(),
+    }
+    locks[voice_key] = locked
+    return locked
 
 
 def main() -> None:
@@ -51,13 +173,23 @@ def main() -> None:
         required[key] = spec
 
     resolved = []
+    library_fallbacks = 0
     for voice_key in sorted(required):
-        voice = resolve_voice(api_key, voice_key, required[voice_key], locks)
+        spec = required[voice_key]
+        try:
+            voice = resolve_voice(api_key, voice_key, spec, locks)
+        except RuntimeError as exc:
+            if not voice_key.startswith("character:") or spec.get("voice_name"):
+                raise
+            voice = _resolve_from_library(api_key, voice_key, spec, locale, locks)
+            library_fallbacks += 1
+            print(f"Voice Library fallback: {voice_key} -> {voice.get('voice_name')} ({voice.get('voice_id')})", file=sys.stderr)
         resolved.append({
             "voice_key": voice_key,
             "voice_id": voice.get("voice_id"),
             "voice_name": voice.get("voice_name"),
             "labels": voice.get("labels") or {},
+            "source": voice.get("source", "workspace"),
         })
 
     character_rows = [row for row in resolved if row["voice_key"].startswith("character:")]
@@ -75,6 +207,7 @@ def main() -> None:
         "logical_voices": len(resolved),
         "character_voices": len(character_rows),
         "distinct_character_voice_ids": len(set(character_voice_ids)),
+        "voice_library_fallbacks": library_fallbacks,
         "lock_file": str(lock_file),
         "lock_written": args.write_lock,
         "valid": True,
