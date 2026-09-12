@@ -1,0 +1,25 @@
+{
+  "batch_id": "en-us-prea1-first-objects-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-en-first-objects",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {"kind":"lexeme","external_id":"lx_pre_book","data":{"lesson_key":"prea1-en-first-objects-01","language":"en","language_variant":"en-US","lemma":"book","part_of_speech":"noun","translations":{"fa":"کتاب"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_phone","data":{"lesson_key":"prea1-en-first-objects-01","language":"en","language_variant":"en-US","lemma":"phone","part_of_speech":"noun","translations":{"fa":"تلفن"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_key","data":{"lesson_key":"prea1-en-first-objects-01","language":"en","language_variant":"en-US","lemma":"key","part_of_speech":"noun","translations":{"fa":"کلید"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_bag","data":{"lesson_key":"prea1-en-first-objects-01","language":"en","language_variant":"en-US","lemma":"bag","part_of_speech":"noun","translations":{"fa":"کیف"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"concept","external_id":"c_pre_this","data":{"slug":"prea1_demonstrative_this","lesson_key":"prea1-en-first-objects-02","concept_type":"functional","forms":{"en":"this"},"translations":{"fa":"این"},"cefr":"Pre-A1","topic":"objects","status":"approved"}},
+    {"kind":"concept","external_id":"c_pre_that","data":{"slug":"prea1_demonstrative_that","lesson_key":"prea1-en-first-objects-02","concept_type":"functional","forms":{"en":"that"},"translations":{"fa":"آن"},"cefr":"Pre-A1","topic":"objects","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_this_book","data":{"lesson_key":"prea1-en-first-objects-02","text":{"en":"This is a book."},"translations":{"fa":"این یک کتاب است."},"intent":"identify_near_object","concept_refs":["prea1_demonstrative_this"],"cefr":"Pre-A1","topic":"objects","register":"neutral","status":"approved"}},
+    {"kind":"utterance","external_id":"u_pre_that_bag","data":{"lesson_key":"prea1-en-first-objects-02","text":{"en":"That is a bag."},"translations":{"fa":"آن یک کیف است."},"intent":"identify_far_object","concept_refs":["prea1_demonstrative_that"],"cefr":"Pre-A1","topic":"objects","register":"neutral","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_book_meaning","data":{"lesson_key":"prea1-en-first-objects-01","exercise_type":"multiple_choice","prompt":{"instruction_fa":"book یعنی چه؟","value":"book"},"options":["کتاب","تلفن","کلید","کیف"],"answer":{"value":"کتاب"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_phone_listen","data":{"lesson_key":"prea1-en-first-objects-01","exercise_type":"listening","prompt":{"instruction_fa":"کدام کلمه را شنیدی؟","audio_text":"phone"},"options":["phone","book","bag","key"],"answer":{"value":"phone"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_this_book_build","data":{"lesson_key":"prea1-en-first-objects-02","exercise_type":"sentence_building","prompt":{"instruction_fa":"جمله را بساز.","tokens":["book","a","This","is"]},"answer":{"tokens":["This","is","a","book"]},"difficulty":2,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_that_bag_speak","data":{"lesson_key":"prea1-en-first-objects-02","exercise_type":"speaking","prompt":{"instruction_fa":"بگو: آن یک کیف است.","value":"That is a bag."},"answer":{"expected_text":"That is a bag"},"difficulty":2,"cefr":"Pre-A1","status":"approved"}}
+  ]
+}
