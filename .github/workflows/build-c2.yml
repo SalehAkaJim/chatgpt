@@ -55,7 +55,7 @@ jobs:
         run: |
           set -e
           for f in content/production/en/C2/*.json; do
-            python scripts/validate_content.py "$f"
+            python scripts/validate_content.py "$f" --write-status
           done
 
       - name: Verify complete C2 curriculum coverage

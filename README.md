@@ -17,8 +17,8 @@ Build one canonical content system that can support multiple learning languages,
 - `lexeme -> word_forms` morphology model
 - Lesson items can directly reference concepts, lexemes, word forms, utterances, dialogues, or grammar points
 - Reusable sentence/dialogue banks
-- Lessons assembled from approved content
-- Generated content goes through staging + validation before approval
+- Release imports require version-specific educational review; review/test imports preserve unapproved states
+- Generation, structural validation and educational approval are separate, traceable stages
 - One stable production import entrypoint per completed level
 - Production audio for vocabulary, utterances and dialogue turns
 - Audio stored as metadata/URLs, not binary database blobs
@@ -91,15 +91,15 @@ The English A1 seed is intentionally loaded before courses for backward compatib
 
 ## English production status
 
-English (US) for Persian speakers is production-complete from Pre-A1 through C2:
+English (US) for Persian speakers has complete generated curriculum coverage from Pre-A1 through C2. Structural/audio validation and educational release approval are separate states:
 
-- **Pre-A1:** 10-unit curriculum and production content complete; production audio generated and validated.
-- **A1:** 30-unit curriculum and production content complete; production audio generated and validated.
-- **A2:** 36-unit curriculum and production content complete; production audio generated and validated.
-- **B1:** 40-unit curriculum and production content complete; production audio generated and validated.
-- **B2:** 45-unit curriculum and production content complete; production audio generated and validated.
-- **C1:** 45-unit curriculum and production content complete; production audio generated and validated.
-- **C2:** 45-unit curriculum and production content complete; production audio generated and validated.
+- **Pre-A1:** 10-unit curriculum and source content generated; audio status is tracked by the level manifest and refresh report.
+- **A1:** 30-unit curriculum and source content generated; audio status is tracked by the level manifest and refresh report.
+- **A2:** 36-unit curriculum and source content generated; audio status is tracked by the level manifest and refresh report.
+- **B1:** 40-unit curriculum and source content generated; audio status is tracked by the level manifest and refresh report.
+- **B2:** 45-unit curriculum and source content generated; audio status is tracked by the level manifest and refresh report.
+- **C1:** 45-unit curriculum and source content generated; audio status is tracked by the level manifest and refresh report.
+- **C2:** 45-unit curriculum and source content generated; audio status is tracked by the level manifest and refresh report.
 
 The MySQL import integration and production pipeline validation cover the full English course through C2.
 
@@ -142,7 +142,7 @@ python database/import/en/c1.py --dry-run
 python database/import/en/c2.py --dry-run
 ```
 
-Remove `--dry-run` to materialize the complete level into canonical tables. Level imports are idempotent and run inside a transaction. They also validate/sync the explicit character cast before dialogue rows are imported.
+After educational approval, remove `--dry-run` to materialize the complete level into canonical tables. `--dry-run --require-approved` checks release readiness before writing; explicit review/test imports use `--allow-unreviewed` and retain unapproved statuses. Level imports are idempotent and run inside a transaction. They also validate/sync the explicit character cast before dialogue rows are imported.
 
 Validated relative-path audio SQL exports are available alongside the level importers for every completed English level from Pre-A1 through C2.
 
@@ -150,7 +150,7 @@ When a new level is completed, add exactly one corresponding entrypoint under `d
 
 ## Production audio
 
-Audio is derived from approved content and is generated for:
+Audio is derived from validated source text and is generated for:
 
 1. learnable words / word forms,
 2. target-language utterances and sentences,
@@ -209,7 +209,7 @@ The default linked state is `validated`, not `approved`. A changed source text c
 The canonical audio flow is therefore:
 
 ```text
-approved content
+validated source content
   -> strict manifest
   -> provider voice preflight + voice lock
   -> paid TTS generation
@@ -224,7 +224,7 @@ approved content
 - `database/seed/` — language, variant, course and curriculum bootstrap data
 - `database/import/` — one final production import entrypoint per completed level plus validated audio SQL exports
 - `content/batch.schema.json` — contract for generated content batches
-- `content/production/` — approved level source batches
+- `content/production/` — canonical level source batches with explicit quality states
 - `audio/cast/` — explicit character persona + logical voice profile assignments
 - `audio/voices/` — provider voice selection rules and persistent voice locks
 - `audio/manifests/` — deterministic per-level TTS manifests
@@ -238,3 +238,7 @@ approved content
 - `scripts/validate_audio_manifest.py` — stale/hash/decode/voice-collision QA
 - `scripts/import_audio_manifest.py` — canonical `audio_assets` linker
 - `docs/content-system.md` — content architecture and generation pipeline
+
+## Educational quality and open-response tasks
+
+See [the remaining-fixes guide](docs/english-remaining-fixes-2026-09-12.md) for the C1 dialogue rewrites, 50 performance tasks, writing/rubric client contract, audio refresh and database update order. Apply migration `005_writing_exercises.sql` before importing the new tasks. Generation does not constitute educational approval; [the release snapshot](content/reviews/english-release-status.json) tracks the 251 English batches.

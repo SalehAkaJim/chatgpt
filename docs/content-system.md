@@ -1,7 +1,7 @@
 # Content System
 
 ## Core principle
-The database is concept-centered and course-aware, not lesson-centered. Lessons consume approved reusable content; they are not the canonical source of words, meanings, sentences, grammar, or dialogues.
+The database is concept-centered and course-aware, not lesson-centered. Released lessons consume educationally approved reusable content; review/test imports can contain unapproved content; they are not the canonical source of words, meanings, sentences, grammar, or dialogues.
 
 A language is not a course. A course combines a learner language with a target language and, when needed, a target variety.
 
@@ -125,9 +125,11 @@ Arabic language-specific lexeme
 ## Content lifecycle
 `generated -> validated -> approved`
 
-Any item may instead become `rejected` or return to `generated` after revision.
+Any item may instead become `rejected` or return to `generated` after revision. `validated` means automated structural/semantic checks passed. `approved` additionally requires a named educational review bound to the exact content hash. An edited source invalidates the previous review. See [the implemented review and release workflow](english-remaining-fixes-2026-09-12.md#educational-review-and-release).
 
-## Automated QA gates
+## QA review areas
+
+The list below describes the intended coverage of automated checks and educational review together. The current validator enforces schema, references, exercise contracts and audio identity; it does not automatically certify every linguistic or pedagogical property.
 - duplicate external IDs
 - duplicate/near-duplicate content
 - course/language/variant consistency

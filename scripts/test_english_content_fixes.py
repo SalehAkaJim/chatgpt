@@ -30,7 +30,7 @@ def check():
                 ext=x['external_id'];d=x['data'];assert ext not in seen,ext;seen.add(ext)
                 counts[x['kind']]+=1
                 if ext in originals:
-                    clean=copy.deepcopy(x);clean['data'].pop('feedback',None)
+                    clean=copy.deepcopy(x);clean['data'].pop('feedback',None);clean['data']['status']='approved' # Quality states have a separate review gate
                     digest=hashlib.sha256(json.dumps(clean,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
                     assert digest==originals[ext],('Unapproved exercise/dialogue change',ext)
                 if x['kind']=='exercise':

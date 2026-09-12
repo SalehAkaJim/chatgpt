@@ -56,7 +56,7 @@ jobs:
       - name: Validate all B2 production batches
         run: |
           for f in content/production/en/B2/*.json; do
-            python scripts/validate_content.py "$f"
+            python scripts/validate_content.py "$f" --write-status
           done
 
       - name: Verify all 45 curriculum units have production batches

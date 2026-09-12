@@ -1,4 +1,4 @@
-name: Refresh audio for approved English content fixes
+name: Refresh audio for requested English content fixes
 
 on:
   push:
@@ -37,12 +37,12 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add audio/generated/en-US audio/manifests/en audio/reports/english-quality-refresh.json audio/voices/en-US.lock.json database/import/en/*_audio.sql database/import/en/educational_content_updates.sql
+          git add audio/generated/en-US audio/manifests/en audio/reports/english-quality-refresh.json audio/voices/en-US.lock.json database/import/en/*_audio.sql database/import/en/educational_content_updates.sql database/import/en/educational_quality_updates.sql
           if git diff --cached --quiet; then
             echo 'Audio is already current.'
             exit 0
           fi
-          git commit -m 'Refresh audio for approved English educational fixes [skip ci]'
+          git commit -m 'Refresh audio for requested English educational fixes [skip ci]'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main

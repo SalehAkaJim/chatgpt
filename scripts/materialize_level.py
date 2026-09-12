@@ -18,6 +18,20 @@ from urllib.parse import parse_qs, unquote, urlparse
 
 import mysql.connector
 from jsonschema import Draft202012Validator
+try:
+    from scripts.content_quality import quality_errors, review_state, content_hash
+    from scripts.validate_content import validate_semantics
+except ModuleNotFoundError:
+    from content_quality import quality_errors, review_state, content_hash
+    from validate_content import validate_semantics
+
+
+def batch_status(batch):
+    statuses = {i['data'].get('status', 'generated') for i in batch['items']}
+    if statuses == {'approved'} and not quality_errors(batch, require_approved=True):
+        return 'approved'
+    return 'validated' if statuses <= {'validated', 'approved'} else 'generated'
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "content" / "batch.schema.json"
@@ -62,6 +76,11 @@ def validate_batches(paths: list[Path]) -> list[dict]:
         if errors:
             msg = "; ".join(f"{'.'.join(map(str,e.path)) or '<root>'}: {e.message}" for e in errors[:10])
             raise SystemExit(f"{path}: {msg}")
+        semantic_errors = []
+        validate_semantics(batch, semantic_errors, [])
+        semantic_errors.extend(quality_errors(batch))
+        if semantic_errors:
+            raise SystemExit(f"{path}: " + "; ".join(semantic_errors))
         batch["_path"] = str(path)
         batches.append(batch)
     return batches
@@ -98,7 +117,7 @@ def ensure_concept(cur, data, level_id, target_lang, learner_lang, ids):
         cur.execute("""INSERT INTO concepts(id,slug,concept_type,cefr_level_id,definition,metadata,status)
           VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s)""",
           (uid, slug, data.get("concept_type","lexical"), level_id, data.get("definition"),
-           json.dumps({"source":"level_import","tags":data.get("tags",[])}, ensure_ascii=False), data.get("status","approved")))
+           json.dumps({"source":"level_import","tags":data.get("tags",[])}, ensure_ascii=False), data.get("status","generated")))
         cid = one(cur, "SELECT UUID_TO_BIN(%s,1)", (uid,))
     ids[data.get("_external_id", slug)] = cid
     pos = data.get("part_of_speech")
@@ -107,14 +126,14 @@ def ensure_concept(cur, data, level_id, target_lang, learner_lang, ids):
         cur.execute("""INSERT IGNORE INTO concept_terms
           (concept_id,language_id,term,normalized_term,part_of_speech,is_primary,status,metadata)
           VALUES(%s,%s,%s,%s,%s,TRUE,%s,JSON_OBJECT('source','level_import'))""",
-          (cid,lid,term,term,pos,data.get("status","approved")))
+          (cid,lid,term,term,pos,data.get("status","generated")))
     if data.get("concept_type") == "lexical":
         for code, term in (data.get("translations") or {}).items():
             lid = lang_id(cur, code)
             cur.execute("""INSERT IGNORE INTO concept_terms
               (concept_id,language_id,term,normalized_term,part_of_speech,is_primary,status,metadata)
               VALUES(%s,%s,%s,%s,%s,TRUE,%s,JSON_OBJECT('source','translation'))""",
-              (cid,lid,term,term,pos,data.get("status","approved")))
+              (cid,lid,term,term,pos,data.get("status","generated")))
     tid = topic_id(cur, data.get("topic"))
     if tid: cur.execute("INSERT IGNORE INTO concept_topics(concept_id,topic_id) VALUES(%s,%s)",(cid,tid))
     return cid
@@ -130,12 +149,18 @@ def main():
     ap.add_argument("--learner-language", default="fa")
     ap.add_argument("--learner-variant", default="fa-IR")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--allow-unreviewed", action="store_true", help="Import structurally valid content for review/testing; does not approve it")
+    ap.add_argument("--require-approved", action="store_true", help="Check educational release readiness even in a dry run")
     args = ap.parse_args()
     paths = sorted(args.content_dir.glob("*.json"))
     if not paths: raise SystemExit(f"No JSON batches in {args.content_dir}")
     batches = validate_batches(paths)
     wrong = [b["batch_id"] for b in batches if b["cefr"] != args.level]
     if wrong: raise SystemExit(f"Batches with wrong level: {wrong}")
+    if args.require_approved or (not args.dry_run and not args.allow_unreviewed):
+        release_errors = [b['batch_id'] + ': ' + e for b in batches for e in quality_errors(b, require_approved=True)]
+        if release_errors:
+            raise SystemExit("Educational review gate: " + "; ".join(release_errors))
     if args.dry_run:
         print(json.dumps({"level":args.level,"batches":len(batches),"files":[p.name for p in paths],"valid":True}))
         return
@@ -168,8 +193,8 @@ def main():
                 if not lid:
                     uid=stable("lesson",f"{args.course}:{lk}")
                     cur.execute("""INSERT INTO lessons(id,course_id,curriculum_unit_id,slug,target_language_id,cefr_level_id,topic_id,title,objective,sort_order,status,metadata)
-                      VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s,%s,'approved',%s)""",
-                      (uid,course,unit_id,lk,target_lang,level_id,unit_topic,f"{unit_title} · {n}",objective,unit_order*100+n,json.dumps({"source_batch":batch["batch_id"]})))
+                      VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""",
+                      (uid,course,unit_id,lk,target_lang,level_id,unit_topic,f"{unit_title} · {n}",objective,unit_order*100+n,batch_status(batch),json.dumps({"source_batch":batch["batch_id"]})))
                     lid=one(cur,"SELECT UUID_TO_BIN(%s,1)",(uid,)); stats["lessons"]+=1
                 lessons[lk]=lid
 
@@ -189,7 +214,7 @@ def main():
                     if not existing:
                         uid=stable("lexeme",f"{args.target_variant}:{d['lemma']}:{d.get('part_of_speech','')}")
                         cur.execute("""INSERT INTO lexemes(id,language_id,language_variant_id,lemma,normalized_lemma,display_lemma,part_of_speech,grammatical_gender,metadata,status)
-                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s,%s)""",(uid,target_lang,target_variant,d["lemma"],d.get("normalized_lemma",d["lemma"]),d.get("display_lemma",d["lemma"]),d.get("part_of_speech"),d.get("grammatical_gender"),json.dumps({"external_id":ext}),d.get("status","approved")))
+                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s,%s)""",(uid,target_lang,target_variant,d["lemma"],d.get("normalized_lemma",d["lemma"]),d.get("display_lemma",d["lemma"]),d.get("part_of_speech"),d.get("grammatical_gender"),json.dumps({"external_id":ext}),d.get("status","generated")))
                         existing=one(cur,"SELECT UUID_TO_BIN(%s,1)",(uid,)); stats["lexemes"]+=1
                     lexeme_ids[ext]=existing; canonical=existing
                     for ref in d.get("concept_refs",[]):
@@ -201,42 +226,42 @@ def main():
                     uid=stable("word_form",f"{batch['batch_id']}:{ext}"); canonical=one(cur,"SELECT id FROM word_forms WHERE id=UUID_TO_BIN(%s,1)",(uid,))
                     if not canonical:
                         cur.execute("""INSERT INTO word_forms(id,lexeme_id,surface_form,normalized_form,display_form,grammatical_features,is_lemma,is_preferred,metadata,status)
-                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s,%s)""",(uid,lex,d["surface_form"],d.get("normalized_form",d["surface_form"]),d.get("display_form",d["surface_form"]),json.dumps(d.get("grammatical_features",{})),bool(d.get("is_lemma",False)),bool(d.get("is_preferred",True)),json.dumps({"external_id":ext}),d.get("status","approved")))
+                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s,%s)""",(uid,lex,d["surface_form"],d.get("normalized_form",d["surface_form"]),d.get("display_form",d["surface_form"]),json.dumps(d.get("grammatical_features",{})),bool(d.get("is_lemma",False)),bool(d.get("is_preferred",True)),json.dumps({"external_id":ext}),d.get("status","generated")))
                         canonical=one(cur,"SELECT UUID_TO_BIN(%s,1)",(uid,)); stats["word_forms"]+=1
                     word_form_ids[ext]=canonical
                 elif kind=="utterance":
                     uid=stable("utterance",f"{batch['batch_id']}:{ext}"); canonical=one(cur,"SELECT id FROM utterances WHERE id=UUID_TO_BIN(%s,1)",(uid,))
                     if not canonical:
                         tid=topic_id(cur,d.get("topic")); cur.execute("""INSERT INTO utterances(id,cefr_level_id,topic_id,intent,metadata,status)
-                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s)""",(uid,level_id,tid,d.get("intent"),json.dumps({"external_id":ext}),d.get("status","approved")))
+                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s)""",(uid,level_id,tid,d.get("intent"),json.dumps({"external_id":ext}),d.get("status","generated")))
                         canonical=one(cur,"SELECT UUID_TO_BIN(%s,1)",(uid,)); stats["utterances"]+=1
                     for code,text in (d.get("text") or {}).items():
                         lid=lang_id(cur,code); vid=target_variant if code==args.target_language else None
                         cur.execute("""INSERT IGNORE INTO utterance_texts(utterance_id,language_id,language_variant_id,text,normalized_text,display_text,register,status,metadata)
-                          VALUES(%s,%s,%s,%s,%s,%s,%s,%s,JSON_OBJECT('source','level_import'))""",(canonical,lid,vid,text,text,text,d.get("register","neutral"),d.get("status","approved")))
+                          VALUES(%s,%s,%s,%s,%s,%s,%s,%s,JSON_OBJECT('source','level_import'))""",(canonical,lid,vid,text,text,text,d.get("register","neutral"),d.get("status","generated")))
                     for code,text in (d.get("translations") or {}).items():
                         lid=lang_id(cur,code); cur.execute("""INSERT IGNORE INTO utterance_texts(utterance_id,language_id,text,normalized_text,display_text,register,status,metadata)
-                          VALUES(%s,%s,%s,%s,%s,'translation',%s,JSON_OBJECT('translation',true))""",(canonical,lid,text,text,text,d.get("status","approved")))
+                          VALUES(%s,%s,%s,%s,%s,'translation',%s,JSON_OBJECT('translation',true))""",(canonical,lid,text,text,text,d.get("status","generated")))
                     for ref in d.get("concept_refs",[]):
                         if concept_ids.get(ref): cur.execute("INSERT IGNORE INTO utterance_concepts VALUES(%s,%s)",(canonical,concept_ids[ref]))
                 elif kind=="grammar_point":
                     canonical=one(cur,"SELECT id FROM grammar_points WHERE slug=%s",(d["slug"],))
                     if not canonical:
                         uid=stable("grammar",d["slug"]); cur.execute("""INSERT INTO grammar_points(id,slug,target_language_id,target_language_variant_id,cefr_level_id,title,rule_summary,status,metadata)
-                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s)""",(uid,d["slug"],target_lang,target_variant,level_id,d["title"],d.get("rule_summary"),d.get("status","approved"),json.dumps({"external_id":ext})))
+                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s)""",(uid,d["slug"],target_lang,target_variant,level_id,d["title"],d.get("rule_summary"),d.get("status","generated"),json.dumps({"external_id":ext})))
                         canonical=one(cur,"SELECT UUID_TO_BIN(%s,1)",(uid,)); stats["grammar_points"]+=1
                     for code,text in (d.get("explanation") or {}).items():
                         lid=lang_id(cur,code); cur.execute("""INSERT IGNORE INTO grammar_explanations(grammar_point_id,explanation_language_id,explanation,examples,status)
-                          VALUES(%s,%s,%s,%s,%s)""",(canonical,lid,text,json.dumps(d.get("examples",[]),ensure_ascii=False),d.get("status","approved")))
+                          VALUES(%s,%s,%s,%s,%s)""",(canonical,lid,text,json.dumps(d.get("examples",[]),ensure_ascii=False),d.get("status","generated")))
                 elif kind=="dialogue":
                     dslug=slugify(f"{batch['batch_id']}-{ext}"); canonical=one(cur,"SELECT id FROM dialogues WHERE slug=%s",(dslug,))
                     if not canonical:
                         uid=stable("dialogue",dslug); cur.execute("""INSERT INTO dialogues(id,slug,cefr_level_id,topic_id,scenario,metadata,status)
-                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s)""",(uid,dslug,level_id,topic_id(cur,d.get("topic")),d.get("setting"),json.dumps({"external_id":ext}),d.get("status","approved")))
+                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s)""",(uid,dslug,level_id,topic_id(cur,d.get("topic")),d.get("setting"),json.dumps({"external_id":ext}),d.get("status","generated")))
                         canonical=one(cur,"SELECT UUID_TO_BIN(%s,1)",(uid,)); stats["dialogues"]+=1
                     vuid=stable("dialogue_version",f"{dslug}:{args.target_variant}")
                     cur.execute("""INSERT IGNORE INTO dialogue_versions(id,dialogue_id,language_id,language_variant_id,title,status,metadata)
-                      VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,JSON_OBJECT('source','level_import'))""",(vuid,canonical,target_lang,target_variant,d.get("title"),d.get("status","approved")))
+                      VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,JSON_OBJECT('source','level_import'))""",(vuid,canonical,target_lang,target_variant,d.get("title"),d.get("status","generated")))
                     version=one(cur,"SELECT UUID_TO_BIN(%s,1)",(vuid,))
                     for turn in d.get("turns",[]):
                         name=turn["speaker"]; cslug=slugify(name); char=one(cur,"SELECT id FROM characters WHERE slug=%s",(cslug,))
@@ -249,7 +274,7 @@ def main():
                     euid=stable("exercise",f"{batch['batch_id']}:{ext}"); canonical=one(cur,"SELECT id FROM exercises WHERE id=UUID_TO_BIN(%s,1)",(euid,))
                     if not canonical:
                         cur.execute("""INSERT INTO exercises(id,lesson_id,exercise_type,instruction_language_id,prompt,answer,difficulty,status,metadata)
-                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s)""",(euid,lesson,d["exercise_type"],learner_lang,json.dumps(d["prompt"],ensure_ascii=False),json.dumps(d["answer"],ensure_ascii=False),d.get("difficulty"),d.get("status","approved"),json.dumps({"external_id":ext})))
+                          VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s,%s,%s,%s,%s)""",(euid,lesson,d["exercise_type"],learner_lang,json.dumps(d["prompt"],ensure_ascii=False),json.dumps(d["answer"],ensure_ascii=False),d.get("difficulty"),d.get("status","generated"),json.dumps({"external_id":ext})))
                         canonical=one(cur,"SELECT UUID_TO_BIN(%s,1)",(euid,)); stats["exercises"]+=1
                         answer_value=d.get("answer",{}).get("value")
                         for i,opt in enumerate(d.get("options",[]),1):
@@ -260,12 +285,21 @@ def main():
                     if d.get('feedback'):
                         cur.execute("UPDATE exercises SET metadata=JSON_SET(metadata,'$.feedback',CAST(%s AS JSON),'$.review_of',CAST(%s AS JSON)) WHERE id=%s",
                                     (json.dumps(d['feedback'],ensure_ascii=False),json.dumps(d.get('review_of',[])),canonical))
+                    if d.get('assessment'):
+                        cur.execute("UPDATE exercises SET metadata=JSON_SET(metadata,'$.assessment',CAST(%s AS JSON)) WHERE id=%s",(json.dumps(d['assessment'],ensure_ascii=False),canonical))
                 if canonical and kind!="exercise" and lesson:
                     item_order[lk]+=1; liuid=stable("lesson_item",f"{args.course}:{lk}:{kind}:{ext}")
                     cols={"concept":"concept_id","lexeme":"lexeme_id","word_form":"word_form_id","utterance":"utterance_id","dialogue":"dialogue_id","grammar_point":"grammar_point_id"}
                     col=cols.get(kind)
                     if col: cur.execute(f"INSERT IGNORE INTO lesson_items(id,lesson_id,item_order,{col},metadata) VALUES(UUID_TO_BIN(%s,1),%s,%s,%s,%s)",(liuid,lesson,item_order[lk],canonical,json.dumps({"kind":kind,"external_id":ext})))
                 if canonical: entity_ids[ext]=canonical
+        try:
+            from scripts.export_english_quality_updates import statements as quality_statements
+        except ModuleNotFoundError:
+            from export_english_quality_updates import statements as quality_statements
+        for batch in batches:
+            for statement in quality_statements(batch):
+                cur.execute(statement)
         conn.commit()
     except Exception:
         conn.rollback(); raise

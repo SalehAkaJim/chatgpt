@@ -1,6 +1,8 @@
 {
-  "request_id": "2026-09-12-educational-fixes-1-2-3-5-6-7-8",
+  "request_id": "2026-09-12-remaining-four-educational-fixes",
   "confirm_paid_generation": true,
-  "reason": "User requested these educational fixes and explicitly required new audio for every changed English text.",
-  "levels": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]
+  "reason": "User authorized all four remaining fixes, including all C1 dialogue rewrites, and requires newly generated audio for changed English text. Persian-only prompt changes reuse unchanged English audio.",
+  "levels": [
+    "C1"
+  ]
 }

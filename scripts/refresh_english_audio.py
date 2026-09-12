@@ -19,7 +19,9 @@ def main():
     if not levels or len(levels)!=len(set(levels)) or not set(levels)<=set(allowed):
         raise SystemExit('Invalid audio refresh levels.')
     run('scripts/test_english_content_fixes.py')
+    run('scripts/test_content_review_and_tasks.py')
     run('scripts/export_english_content_updates.py')
+    run('scripts/export_english_quality_updates.py')
     reports=[]
     for level in levels:
         manifest=Path('audio/manifests/en')/(level+'.json')

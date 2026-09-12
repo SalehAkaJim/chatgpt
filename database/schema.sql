@@ -357,7 +357,8 @@ CREATE TABLE exercises (
     'sentence_building',
     'translation',
     'fill_blank',
-    'multiple_choice'
+    'multiple_choice',
+    'writing'
   ) NOT NULL,
   instruction_language_id BINARY(16) NULL,
   prompt JSON NOT NULL,

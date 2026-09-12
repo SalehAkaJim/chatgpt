@@ -203,6 +203,10 @@ def enrich_batch(batch):
     batch = replace_values(copy.deepcopy(batch))
     path = DATA / 'additions.json'
     additions = json.loads(path.read_text()) if path.exists() else {}
+    extra = DATA / 'performance-additions.json'
+    if extra.exists():
+        for unit, items in json.loads(extra.read_text()).items():
+            additions.setdefault(unit, []).extend(items)
     authored_feedback={x['external_id']:x['data']['feedback'] for values in additions.values()
                        for x in values if x['kind']=='exercise' and x['data'].get('feedback')}
     ids = {x['external_id'] for x in batch['items']}
@@ -211,7 +215,15 @@ def enrich_batch(batch):
             batch['items'].append(copy.deepcopy(item)); ids.add(item['external_id'])
     path = DATA / 'feedback-overrides.json'
     overrides = json.loads(path.read_text()) if path.exists() else {}
+    dialogue_path = DATA / 'dialogue-overrides.json'
+    dialogues = json.loads(dialogue_path.read_text()) if dialogue_path.exists() else {}
+    prompt_path = DATA / 'prompt-overrides.json'
+    prompts = json.loads(prompt_path.read_text()) if prompt_path.exists() else {}
     for item in batch['items']:
+        if item['external_id'] in dialogues:
+            item['data'].update(copy.deepcopy(dialogues[item['external_id']]))
+        if item['external_id'] in prompts:
+            item['data']['prompt'].update(prompts[item['external_id']])
         if item['external_id'] == 'g_a2_detailed_directions_until_past_across':
             item['data']['audio_examples'] = True
         if item['kind'] == 'exercise':

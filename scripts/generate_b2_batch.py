@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate approved English B2 production batches for curriculum units 01-05.
+"""Generate generated English B2 production batches for curriculum units 01-05.
 
 The bilingual learning content is authored here and converted into the canonical
 batch-v2 structure used by the production pipeline.
@@ -333,7 +333,7 @@ def build(spec):
                 "translations": {"fa": v["fa"]},
                 "cefr": CEFR,
                 "topic": spec["topic"],
-                "status": "approved",
+                "status": "generated",
             },
         })
         lx = f"lx_{prefix}_{v['key']}"
@@ -348,7 +348,7 @@ def build(spec):
                 "part_of_speech": v["pos"],
                 "concept_refs": [slug],
                 "cefr": CEFR,
-                "status": "approved",
+                "status": "generated",
             },
         })
         items.append({
@@ -360,7 +360,7 @@ def build(spec):
                 "surface_form": v["en"],
                 "grammatical_features": {"form": "base"},
                 "cefr": CEFR,
-                "status": "approved",
+                "status": "generated",
             },
         })
 
@@ -378,7 +378,7 @@ def build(spec):
                 "cefr": CEFR,
                 "topic": spec["topic"],
                 "register": u["register"],
-                "status": "approved",
+                "status": "generated",
             },
         })
 
@@ -394,7 +394,7 @@ def build(spec):
                 "explanation": {"fa": g["fa"]},
                 "examples": [{"en": a, "fa": b} for a, b in g["examples"]],
                 "cefr": CEFR,
-                "status": "approved",
+                "status": "generated",
             },
         })
 
@@ -413,21 +413,21 @@ def build(spec):
                     {"order": i + 1, "speaker": t["speaker"], "text": t["en"], "translation_fa": t["fa"]}
                     for i, t in enumerate(d["turns"])
                 ],
-                "status": "approved",
+                "status": "generated",
             },
         })
 
     u = spec["utterances"]
     fill_prompt, fill_options, fill_answer = spec["fill"]
     exercises = [
-        {"external_id": f"ex_{prefix}_fill", "data": {"lesson_key": f"{spec['slug']}-01", "exercise_type": "fill_blank", "prompt": {"text": fill_prompt}, "options": fill_options, "answer": {"value": fill_answer}, "difficulty": 4, "cefr": CEFR, "status": "approved"}},
-        {"external_id": f"ex_{prefix}_listen1", "data": {"lesson_key": f"{spec['slug']}-{u[1]['lesson']:02d}", "exercise_type": "listening", "prompt": {"instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.", "audio_text": u[1]["en"]}, "options": [u[1]["fa"], u[0]["fa"], u[4]["fa"], u[6]["fa"]], "answer": {"value": u[1]["fa"]}, "difficulty": 4, "cefr": CEFR, "status": "approved"}},
-        {"external_id": f"ex_{prefix}_speak1", "data": {"lesson_key": f"{spec['slug']}-{u[2]['lesson']:02d}", "exercise_type": "speaking", "prompt": {"instruction_fa": f"این ایده را طبیعی و کامل به انگلیسی بگو: {u[2]['fa']}"}, "answer": {"expected_text": u[2]["en"]}, "difficulty": 4, "cefr": CEFR, "status": "approved"}},
-        {"external_id": f"ex_{prefix}_build1", "data": {"lesson_key": f"{spec['slug']}-{u[3]['lesson']:02d}", "exercise_type": "sentence_building", "prompt": {"fa": u[3]["fa"], "tokens": list(reversed(u[3]["en"].split()))}, "answer": {"tokens": u[3]["en"].split(), "text": u[3]["en"]}, "difficulty": 4, "cefr": CEFR, "status": "approved"}},
-        {"external_id": f"ex_{prefix}_meaning", "data": {"lesson_key": f"{spec['slug']}-{u[4]['lesson']:02d}", "exercise_type": "multiple_choice", "prompt": {"fa": "منظور دقیق‌تر جمله کدام است؟", "text": u[4]["en"]}, "options": [u[4]["fa"], u[2]["fa"], u[6]["fa"], u[0]["fa"]], "answer": {"value": u[4]["fa"]}, "difficulty": 4, "cefr": CEFR, "status": "approved"}},
-        {"external_id": f"ex_{prefix}_listen2", "data": {"lesson_key": f"{spec['slug']}-{u[5]['lesson']:02d}", "exercise_type": "listening", "prompt": {"instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.", "audio_text": u[5]["en"]}, "options": [u[5]["fa"], u[1]["fa"], u[3]["fa"], u[7]["fa"]], "answer": {"value": u[5]["fa"]}, "difficulty": 4, "cefr": CEFR, "status": "approved"}},
-        {"external_id": f"ex_{prefix}_speak2", "data": {"lesson_key": f"{spec['slug']}-{u[6]['lesson']:02d}", "exercise_type": "speaking", "prompt": {"instruction_fa": f"این جمله را با لحن طبیعی انگلیسی بیان کن: {u[6]['fa']}"}, "answer": {"expected_text": u[6]["en"]}, "difficulty": 4, "cefr": CEFR, "status": "approved"}},
-        {"external_id": f"ex_{prefix}_build2", "data": {"lesson_key": f"{spec['slug']}-{u[7]['lesson']:02d}", "exercise_type": "sentence_building", "prompt": {"fa": u[7]["fa"], "tokens": list(reversed(u[7]["en"].split()))}, "answer": {"tokens": u[7]["en"].split(), "text": u[7]["en"]}, "difficulty": 4, "cefr": CEFR, "status": "approved"}},
+        {"external_id": f"ex_{prefix}_fill", "data": {"lesson_key": f"{spec['slug']}-01", "exercise_type": "fill_blank", "prompt": {"text": fill_prompt}, "options": fill_options, "answer": {"value": fill_answer}, "difficulty": 4, "cefr": CEFR, "status": "generated"}},
+        {"external_id": f"ex_{prefix}_listen1", "data": {"lesson_key": f"{spec['slug']}-{u[1]['lesson']:02d}", "exercise_type": "listening", "prompt": {"instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.", "audio_text": u[1]["en"]}, "options": [u[1]["fa"], u[0]["fa"], u[4]["fa"], u[6]["fa"]], "answer": {"value": u[1]["fa"]}, "difficulty": 4, "cefr": CEFR, "status": "generated"}},
+        {"external_id": f"ex_{prefix}_speak1", "data": {"lesson_key": f"{spec['slug']}-{u[2]['lesson']:02d}", "exercise_type": "speaking", "prompt": {"instruction_fa": f"این ایده را طبیعی و کامل به انگلیسی بگو: {u[2]['fa']}"}, "answer": {"expected_text": u[2]["en"]}, "difficulty": 4, "cefr": CEFR, "status": "generated"}},
+        {"external_id": f"ex_{prefix}_build1", "data": {"lesson_key": f"{spec['slug']}-{u[3]['lesson']:02d}", "exercise_type": "sentence_building", "prompt": {"fa": u[3]["fa"], "tokens": list(reversed(u[3]["en"].split()))}, "answer": {"tokens": u[3]["en"].split(), "text": u[3]["en"]}, "difficulty": 4, "cefr": CEFR, "status": "generated"}},
+        {"external_id": f"ex_{prefix}_meaning", "data": {"lesson_key": f"{spec['slug']}-{u[4]['lesson']:02d}", "exercise_type": "multiple_choice", "prompt": {"fa": "منظور دقیق‌تر جمله کدام است؟", "text": u[4]["en"]}, "options": [u[4]["fa"], u[2]["fa"], u[6]["fa"], u[0]["fa"]], "answer": {"value": u[4]["fa"]}, "difficulty": 4, "cefr": CEFR, "status": "generated"}},
+        {"external_id": f"ex_{prefix}_listen2", "data": {"lesson_key": f"{spec['slug']}-{u[5]['lesson']:02d}", "exercise_type": "listening", "prompt": {"instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.", "audio_text": u[5]["en"]}, "options": [u[5]["fa"], u[1]["fa"], u[3]["fa"], u[7]["fa"]], "answer": {"value": u[5]["fa"]}, "difficulty": 4, "cefr": CEFR, "status": "generated"}},
+        {"external_id": f"ex_{prefix}_speak2", "data": {"lesson_key": f"{spec['slug']}-{u[6]['lesson']:02d}", "exercise_type": "speaking", "prompt": {"instruction_fa": f"این جمله را با لحن طبیعی انگلیسی بیان کن: {u[6]['fa']}"}, "answer": {"expected_text": u[6]["en"]}, "difficulty": 4, "cefr": CEFR, "status": "generated"}},
+        {"external_id": f"ex_{prefix}_build2", "data": {"lesson_key": f"{spec['slug']}-{u[7]['lesson']:02d}", "exercise_type": "sentence_building", "prompt": {"fa": u[7]["fa"], "tokens": list(reversed(u[7]["en"].split()))}, "answer": {"tokens": u[7]["en"].split(), "text": u[7]["en"]}, "difficulty": 4, "cefr": CEFR, "status": "generated"}},
     ]
     items.extend({"kind": "exercise", **e} for e in exercises)
 

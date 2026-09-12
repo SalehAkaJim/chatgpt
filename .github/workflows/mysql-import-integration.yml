@@ -66,6 +66,7 @@ jobs:
           $DB < database/migrations/002_multilingual_core.sql
           $DB < database/migrations/003_lesson_item_lexemes.sql
           $DB < database/migrations/004_level_import_audio.sql
+          $DB < database/migrations/005_writing_exercises.sql
           $DB < database/seed/cefr.sql
           $DB < database/seed/languages.sql
           $DB < database/seed/skills-topics.sql
@@ -79,32 +80,36 @@ jobs:
           $DB < database/seed/english-c2-curriculum.sql
       - name: Import complete English Pre-A1 through C2
         run: |
-          python database/import/en/pre_a1.py
-          python database/import/en/a1.py
-          python database/import/en/a2.py
-          python database/import/en/b1.py
-          python database/import/en/b2.py
-          python database/import/en/c1.py
-          python database/import/en/c2.py
+          python database/import/en/pre_a1.py --allow-unreviewed
+          python database/import/en/a1.py --allow-unreviewed
+          python database/import/en/a2.py --allow-unreviewed
+          python database/import/en/b1.py --allow-unreviewed
+          python database/import/en/b2.py --allow-unreviewed
+          python database/import/en/c1.py --allow-unreviewed
+          python database/import/en/c2.py --allow-unreviewed
       - name: Apply educational corrections twice and verify persisted feedback
         env:
           MYSQL_PWD: rootpass
         run: |
+          python scripts/test_english_database_fixes.py --seed-stale-fixture
           python scripts/export_english_content_updates.py
+          python scripts/export_english_quality_updates.py
           mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_content_updates.sql
           mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_content_updates.sql
+          mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_quality_updates.sql
+          mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_quality_updates.sql
           python scripts/test_english_database_fixes.py
       - name: Verify canonical rows and idempotency through C2
         env:
           MYSQL_PWD: rootpass
         run: |
-          python database/import/en/pre_a1.py
-          python database/import/en/a1.py
-          python database/import/en/a2.py
-          python database/import/en/b1.py
-          python database/import/en/b2.py
-          python database/import/en/c1.py
-          python database/import/en/c2.py
+          python database/import/en/pre_a1.py --allow-unreviewed
+          python database/import/en/a1.py --allow-unreviewed
+          python database/import/en/a2.py --allow-unreviewed
+          python database/import/en/b1.py --allow-unreviewed
+          python database/import/en/b2.py --allow-unreviewed
+          python database/import/en/c1.py --allow-unreviewed
+          python database/import/en/c2.py --allow-unreviewed
           mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
             SELECT COUNT(*) AS lessons FROM lessons;
             SELECT COUNT(*) AS concepts FROM concepts;

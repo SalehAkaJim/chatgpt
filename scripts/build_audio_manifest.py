@@ -135,6 +135,17 @@ def main():
                     eid = stable("exercise", f"{bid}:{ext}")
                     add("utterances", text, "exercise", eid, ext,
                         registry["sentence_narrator"]["voice_key"], registry["sentence_narrator"])
+            elif kind == "exercise" and data.get("answer", {}).get("evaluation_mode") == "rubric":
+                eid = stable("exercise", f"{bid}:{ext}")
+                narrator = registry["sentence_narrator"]
+                add("utterances", data["answer"]["model_text"], "exercise", eid,
+                    f"{ext}:model", narrator["voice_key"], narrator,
+                    {"usage": "model_after_response"})
+                for source in data.get("prompt", {}).get("sources", []):
+                    if source.get("audio"):
+                        add("utterances", source["text_en"], "exercise", eid,
+                            f"{ext}:source:{source['id']}", narrator["voice_key"], narrator,
+                            {"usage": "source", "provenance": source["provenance"]})
             elif kind == "grammar_point" and data.get("audio_examples"):
                 # Pronunciation and corrected grammar examples are also models
                 # learners should be able to hear. Multiple examples share the

@@ -48,6 +48,7 @@ jobs:
           $DB < database/migrations/002_multilingual_core.sql
           $DB < database/migrations/003_lesson_item_lexemes.sql
           $DB < database/migrations/004_level_import_audio.sql
+          $DB < database/migrations/005_writing_exercises.sql
           $DB < database/seed/cefr.sql
           $DB < database/seed/languages.sql
           $DB < database/seed/skills-topics.sql
@@ -60,22 +61,22 @@ jobs:
           $DB < database/seed/english-c1-curriculum.sql
       - name: Import English Pre-A1 through C1
         run: |
-          python database/import/en/pre_a1.py
-          python database/import/en/a1.py
-          python database/import/en/a2.py
-          python database/import/en/b1.py
-          python database/import/en/b2.py
-          python database/import/en/c1.py
+          python database/import/en/pre_a1.py --allow-unreviewed
+          python database/import/en/a1.py --allow-unreviewed
+          python database/import/en/a2.py --allow-unreviewed
+          python database/import/en/b1.py --allow-unreviewed
+          python database/import/en/b2.py --allow-unreviewed
+          python database/import/en/c1.py --allow-unreviewed
       - name: Verify idempotency and canonical rows through C1
         env:
           MYSQL_PWD: rootpass
         run: |
-          python database/import/en/pre_a1.py
-          python database/import/en/a1.py
-          python database/import/en/a2.py
-          python database/import/en/b1.py
-          python database/import/en/b2.py
-          python database/import/en/c1.py
+          python database/import/en/pre_a1.py --allow-unreviewed
+          python database/import/en/a1.py --allow-unreviewed
+          python database/import/en/a2.py --allow-unreviewed
+          python database/import/en/b1.py --allow-unreviewed
+          python database/import/en/b2.py --allow-unreviewed
+          python database/import/en/c1.py --allow-unreviewed
           mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
             SELECT COUNT(*) AS curriculum_units FROM curriculum_units;
             SELECT COUNT(*) AS lessons FROM lessons;

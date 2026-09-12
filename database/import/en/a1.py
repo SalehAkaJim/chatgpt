@@ -19,6 +19,15 @@ CAST = ROOT / "audio" / "cast" / "en-US.json"
 VOICE_REGISTRY = ROOT / "audio" / "voices" / "en-US.json"
 EXTRA_ARGS = sys.argv[1:]
 
+# Fail release preflight before synchronizing any canonical database rows.
+if "--require-approved" in EXTRA_ARGS or ("--dry-run" not in EXTRA_ARGS and "--allow-unreviewed" not in EXTRA_ARGS):
+    preflight = materializer.validate_batches(sorted(CONTENT_DIR.glob("*.json")))
+    errors = [b["batch_id"] + ": " + e for b in preflight
+              for e in materializer.quality_errors(b, require_approved=True)]
+    if errors:
+        raise SystemExit("Educational review gate: " + "; ".join(errors))
+
+
 # Validate every dialogue speaker against the explicit cast and persist persona
 # + logical voice profile before dialogue rows are materialized.
 cast_argv = [

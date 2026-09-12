@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the approved English B1 production batch for curriculum units 01-05.
+"""Generate the generated English B1 production batch for curriculum units 01-05.
 
 The bilingual learning content below is hand-authored. This script only converts
 it to the canonical batch-v2 structure used by the production pipeline.
@@ -332,7 +332,7 @@ def build(spec):
                 "translations": {"fa": v["fa"]},
                 "cefr": "B1",
                 "topic": spec["topic"],
-                "status": "approved",
+                "status": "generated",
             },
         })
         lx = f"lx_{prefix}_{v['key']}"
@@ -347,7 +347,7 @@ def build(spec):
                 "part_of_speech": v["pos"],
                 "concept_refs": [slug],
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         })
         items.append({
@@ -359,7 +359,7 @@ def build(spec):
                 "surface_form": v["en"],
                 "grammatical_features": {"form": "base"},
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         })
 
@@ -377,7 +377,7 @@ def build(spec):
                 "cefr": "B1",
                 "topic": spec["topic"],
                 "register": u["register"],
-                "status": "approved",
+                "status": "generated",
             },
         })
 
@@ -393,7 +393,7 @@ def build(spec):
                 "explanation": {"fa": g["fa"]},
                 "examples": [{"en": a, "fa": b} for a, b in g["examples"]],
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         })
 
@@ -412,7 +412,7 @@ def build(spec):
                     {"order": i + 1, "speaker": t["speaker"], "text": t["en"], "translation_fa": t["fa"]}
                     for i, t in enumerate(d["turns"])
                 ],
-                "status": "approved",
+                "status": "generated",
             },
         })
 
@@ -429,7 +429,7 @@ def build(spec):
                 "answer": {"value": fill_answer},
                 "difficulty": 3,
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         },
         {
@@ -442,7 +442,7 @@ def build(spec):
                 "answer": {"value": u[1]["fa"]},
                 "difficulty": 3,
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         },
         {
@@ -454,7 +454,7 @@ def build(spec):
                 "answer": {"expected_text": u[2]["en"]},
                 "difficulty": 3,
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         },
         {
@@ -466,7 +466,7 @@ def build(spec):
                 "answer": {"tokens": u[3]["en"].split(), "text": u[3]["en"]},
                 "difficulty": 3,
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         },
         {
@@ -479,7 +479,7 @@ def build(spec):
                 "answer": {"value": u[4]["fa"]},
                 "difficulty": 3,
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         },
         {
@@ -492,7 +492,7 @@ def build(spec):
                 "answer": {"value": u[5]["fa"]},
                 "difficulty": 3,
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         },
         {
@@ -504,7 +504,7 @@ def build(spec):
                 "answer": {"expected_text": u[6]["en"]},
                 "difficulty": 3,
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         },
         {
@@ -516,7 +516,7 @@ def build(spec):
                 "answer": {"tokens": u[7]["en"].split(), "text": u[7]["en"]},
                 "difficulty": 3,
                 "cefr": "B1",
-                "status": "approved",
+                "status": "generated",
             },
         },
     ]

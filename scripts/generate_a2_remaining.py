@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the approved English A2 production batches for curriculum units 17-36.
+"""Generate the generated English A2 production batches for curriculum units 17-36.
 
 The content specs below are hand-authored. This script only converts them into the
 canonical batch-v2 structure so the 20 remaining units stay structurally consistent.

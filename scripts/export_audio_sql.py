@@ -156,7 +156,7 @@ def main() -> None:
             f"WHERE entity_type = {q(entity_type)}",
             f"  AND entity_id = UUID_TO_BIN({q(entity_uuid)}, 1)",
             f"  AND voice_key = {q(voice_key)}",
-            f"  AND (entity_type <> 'grammar_point' OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = {q(ref.get('entity_key'))})",
+            f"  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = {q(ref.get('entity_key'))})",
             "  AND source_text_hash IS NOT NULL",
             f"  AND source_text_hash <> {q(source_hash)}",
             "  AND status <> 'archived';",

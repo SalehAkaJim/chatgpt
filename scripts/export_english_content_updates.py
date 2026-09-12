@@ -10,6 +10,10 @@ import json
 import re
 import uuid
 from pathlib import Path
+try:
+    from scripts.content_quality import quality_errors
+except ModuleNotFoundError:
+    from content_quality import quality_errors
 
 ROOT=Path(__file__).resolve().parents[1]
 NS=uuid.UUID('78136b2a-8bcc-4dc4-a39a-a06302c04b8d')
@@ -34,6 +38,8 @@ def export():
         lines.append(f"UPDATE audio_assets SET status='archived' WHERE entity_type={q(kind)} AND entity_id={uid(eid)} AND source_text_hash IS NOT NULL AND source_text_hash<>'{source}'{extra} AND status<>'archived';")
     for path in sorted((ROOT/'content/production/en').glob('*/*.json')):
         batch=json.loads(path.read_text());bid=batch['batch_id']
+        errors=quality_errors(batch)
+        if errors:raise ValueError((path,errors))
         for item in batch['items']:
             d=item['data'];ext=item['external_id'];kind=item['kind']
             if kind not in {'utterance','grammar_point','dialogue','exercise'}:continue
@@ -55,6 +61,8 @@ def export():
                         if example.get('en'):archive('grammar_point',eid,example['en'],f'{ext}:example:{n}')
             elif kind=='dialogue':
                 ds=slug(f'{bid}-{ext}')
+                lines.append(f"UPDATE dialogues SET scenario={q(d.get('setting'))} WHERE slug={q(ds)};")
+                lines.append(f"UPDATE dialogue_versions SET title={q(d.get('title'))} WHERE dialogue_id=(SELECT id FROM dialogues WHERE slug={q(ds)}) AND language_id=(SELECT id FROM languages WHERE code='en');")
                 for turn in d['turns']:
                     eid=stable('dialogue_turn',f"{ds}:{turn['order']}")
                     lines.append(f"UPDATE dialogue_turns SET text={q(turn['text'])},translation_hint={q(turn.get('translation_fa'))} WHERE id={uid(eid)};")
@@ -63,6 +71,12 @@ def export():
                 eid=stable('exercise',f'{bid}:{ext}')
                 correction=(f"prompt={j(d['prompt'])},answer={j(d['answer'])}," if ext in correction_ids else '')
                 lines.append(f"UPDATE exercises SET {correction}metadata=JSON_SET(metadata,'$.feedback',{j(d['feedback'])},'$.review_of',{j(d.get('review_of',[]))}) WHERE id={uid(eid)};")
+                if d.get('assessment'):
+                    lines.append(f"UPDATE exercises SET metadata=JSON_SET(metadata,'$.assessment',{j(d['assessment'])}) WHERE id={uid(eid)};")
+                if d.get('answer',{}).get('evaluation_mode')=='rubric':
+                    archive('exercise',eid,d['answer']['model_text'],f'{ext}:model')
+                    for source in d['prompt'].get('sources',[]):
+                        if source.get('audio'):archive('exercise',eid,source['text_en'],f"{ext}:source:{source['id']}")
                 if ext in correction_ids:
                     for n,value in enumerate(d.get('options',[]),1):
                         lines.append(f"UPDATE exercise_options SET value={j(value)} WHERE exercise_id={uid(eid)} AND option_order={n};")

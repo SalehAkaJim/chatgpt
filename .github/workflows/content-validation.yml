@@ -112,3 +112,9 @@ jobs:
           python scripts/validate_audio_manifest.py /tmp/en-b2-audio-manifest.json
           python scripts/validate_audio_manifest.py /tmp/en-c1-audio-manifest.json
           python scripts/validate_audio_manifest.py /tmp/en-c2-audio-manifest.json
+
+      - name: Validate educational scope, performance tasks and review evidence
+        run: |
+          python scripts/test_english_content_fixes.py
+          python scripts/test_content_review_and_tasks.py
+          python scripts/review_content.py content/production/en --output /tmp/english-release-status.json

@@ -40,7 +40,7 @@ jobs:
       - name: Validate all B1 production batches
         run: |
           for f in content/production/en/B1/*.json; do
-            python scripts/validate_content.py "$f"
+            python scripts/validate_content.py "$f" --write-status
           done
 
       - name: Verify generated B1 coverage

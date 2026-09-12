@@ -12,6 +12,7 @@ ALLOWED_EXERCISES = {
     "dialogue_comprehension",
     "listening",
     "speaking",
+    "writing",
     "sentence_building",
     "translation",
     "fill_blank",
@@ -186,8 +187,33 @@ def validate_semantics(batch: dict, errors: list[str], warnings: list[str]) -> N
                 if Counter(prompt_tokens) != Counter(answer_tokens):
                     fail(errors, f"{item_id}: sentence-building tokens do not match")
 
-            if exercise_type == "speaking" and not data.get("answer", {}).get("expected_text"):
+            if exercise_type == "speaking" and data.get("answer", {}).get("evaluation_mode") != "rubric" and not data.get("answer", {}).get("expected_text"):
                 fail(errors, f"{item_id}: speaking exercise missing expected_text")
+
+            if exercise_type == "writing" or data.get("answer", {}).get("evaluation_mode") == "rubric":
+                answer = data.get("answer", {})
+                assessment = data.get("assessment", {})
+                if answer.get("evaluation_mode") != "rubric" or not answer.get("model_text") or not answer.get("required_points_fa"):
+                    fail(errors, f"{item_id}: open response requires a model and task-specific rubric points")
+                criteria = assessment.get("criteria", [])
+                if not criteria or sum(c.get("weight", 0) for c in criteria) != 100:
+                    fail(errors, f"{item_id}: rubric weights must sum to 100")
+                if assessment.get("exact_match_allowed") is not False or answer.get("expected_text"):
+                    fail(errors, f"{item_id}: rubric response must not use exact-text grading")
+                if options is not None:
+                    fail(errors, f"{item_id}: open response cannot have answer options")
+                for criterion in criteria:
+                    if set(criterion.get("descriptors_fa", {})) != {"0", "1", "2", "3"}:
+                        fail(errors, f"{item_id}: rubric needs observable descriptors for scores 0-3")
+                for ref in data.get("prompt", {}).get("source_dialogue_refs", []):
+                    if not any(x.get("external_id") == ref and x.get("kind") == "dialogue" for x in items):
+                        fail(errors, f"{item_id}: unknown source dialogue {ref}")
+                sources = data.get("prompt", {}).get("sources", [])
+                if len({s.get("id") for s in sources}) != len(sources):
+                    fail(errors, f"{item_id}: duplicate source ID")
+                for source in sources:
+                    if not source.get("text_en") or not source.get("text_fa") or not source.get("provenance"):
+                        fail(errors, f"{item_id}: source requires bilingual text and provenance")
 
             if exercise_type == "listening" and not data.get("prompt", {}).get("audio_text"):
                 fail(errors, f"{item_id}: listening exercise missing audio_text")
@@ -212,6 +238,8 @@ def main() -> None:
         type=Path,
         default=Path(__file__).resolve().parents[1] / "content" / "batch.schema.json",
     )
+    parser.add_argument("--write-status", action="store_true", help="After successful checks, mark generated content validated; never create educational approval")
+    parser.add_argument("--require-approved", action="store_true")
     args = parser.parse_args()
 
     batch = json.loads(args.batch.read_text(encoding="utf-8"))
@@ -221,6 +249,14 @@ def main() -> None:
     validate_schema(batch, args.schema, errors)
     if not errors:
         validate_semantics(batch, errors, warnings)
+
+    from content_quality import mark_validated, quality_errors
+    if not errors:
+        if args.write_status:
+            mark_validated(batch)
+        errors.extend(quality_errors(batch, args.require_approved))
+    if not errors and args.write_status:
+        args.batch.write_text(json.dumps(batch, ensure_ascii=False, indent=2) + "\n")
 
     report = {
         "batch_id": batch.get("batch_id"),

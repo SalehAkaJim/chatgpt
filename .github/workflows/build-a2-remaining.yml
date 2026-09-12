@@ -40,7 +40,7 @@ jobs:
       - name: Validate all A2 production batches
         run: |
           for f in content/production/en/A2/*.json; do
-            python scripts/validate_content.py "$f"
+            python scripts/validate_content.py "$f" --write-status
           done
 
       - name: Verify all 36 curriculum units have production batches

@@ -1,5 +1,7 @@
 # English educational fixes — selected scope
 
+This document records the first correction round. Its deferred-scope notes are historical; the subsequent user authorization and current import contract are documented in [the remaining-fixes guide](english-remaining-fixes-2026-09-12.md).
+
 User-selected items: 1 (translation), 2 (grammar), 3 (natural phrasing),
 5 (audio coverage), 6 (pronunciation teaching), 7 (feedback), 8 (practice/review).
 
@@ -15,6 +17,8 @@ User-selected items: 1 (translation), 2 (grammar), 3 (natural phrasing),
 - Generators apply the same enrichment, so regenerating a batch retains the fixes.
 
 ## Importing into an existing database
+
+Use the updated migration, review-gate and import order in the remaining-fixes guide before following the original steps below.
 
 1. Rerun the normal level importers (`database/import/en/pre_a1.py` through `c2.py`)
    to insert the additional items and persist `exercises.metadata.feedback` and
@@ -46,7 +50,7 @@ hashes, voice settings, MP3 decoding, duration and checksums.
 The workflow publishes its per-level generated/reused counts and completion
 evidence in `audio/reports/english-quality-refresh.json` after every level passes.
 
-## Scope controls
+## Scope controls in the first correction round
 
 Runtime shuffling is left to the app. Existing multiple-answer questions, the
 self-introduction grading contract, C1 conversation construction, and lesson-goal

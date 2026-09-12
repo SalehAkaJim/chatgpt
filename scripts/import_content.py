@@ -90,6 +90,13 @@ def main() -> None:
 
     batch = json.loads(args.batch.read_text(encoding="utf-8"))
     validate_batch(batch, args.schema)
+    from validate_content import validate_semantics
+    from content_quality import quality_errors
+    errors = []
+    validate_semantics(batch, errors, [])
+    errors.extend(quality_errors(batch))
+    if errors:
+        raise SystemExit("Content validation failed: " + "; ".join(errors))
 
     conn = mysql.connector.connect(**mysql_config())
     try:
