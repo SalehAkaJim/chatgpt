@@ -1,0 +1,29 @@
+{
+  "batch_id": "en-us-prea1-numbers-0-10-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-en-numbers-0-10",
+  "generator": "gpt-5.6-sol:golden-dataset-v2",
+  "items": [
+    {"kind":"lexeme","external_id":"lx_pre_zero","data":{"lesson_key":"prea1-en-numbers-0-10-01","language":"en","language_variant":"en-US","lemma":"zero","part_of_speech":"number","translations":{"fa":"صفر"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_one","data":{"lesson_key":"prea1-en-numbers-0-10-01","language":"en","language_variant":"en-US","lemma":"one","part_of_speech":"number","translations":{"fa":"یک"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_two","data":{"lesson_key":"prea1-en-numbers-0-10-01","language":"en","language_variant":"en-US","lemma":"two","part_of_speech":"number","translations":{"fa":"دو"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_three","data":{"lesson_key":"prea1-en-numbers-0-10-01","language":"en","language_variant":"en-US","lemma":"three","part_of_speech":"number","translations":{"fa":"سه"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_four","data":{"lesson_key":"prea1-en-numbers-0-10-01","language":"en","language_variant":"en-US","lemma":"four","part_of_speech":"number","translations":{"fa":"چهار"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_five","data":{"lesson_key":"prea1-en-numbers-0-10-01","language":"en","language_variant":"en-US","lemma":"five","part_of_speech":"number","translations":{"fa":"پنج"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_six","data":{"lesson_key":"prea1-en-numbers-0-10-02","language":"en","language_variant":"en-US","lemma":"six","part_of_speech":"number","translations":{"fa":"شش"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_seven","data":{"lesson_key":"prea1-en-numbers-0-10-02","language":"en","language_variant":"en-US","lemma":"seven","part_of_speech":"number","translations":{"fa":"هفت"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_eight","data":{"lesson_key":"prea1-en-numbers-0-10-02","language":"en","language_variant":"en-US","lemma":"eight","part_of_speech":"number","translations":{"fa":"هشت"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_nine","data":{"lesson_key":"prea1-en-numbers-0-10-02","language":"en","language_variant":"en-US","lemma":"nine","part_of_speech":"number","translations":{"fa":"نه"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"lexeme","external_id":"lx_pre_ten","data":{"lesson_key":"prea1-en-numbers-0-10-02","language":"en","language_variant":"en-US","lemma":"ten","part_of_speech":"number","translations":{"fa":"ده"},"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_num_3_listen","data":{"lesson_key":"prea1-en-numbers-0-10-01","exercise_type":"listening","prompt":{"instruction_fa":"عدد را گوش کن و انتخاب کن.","audio_text":"three"},"options":["2","3","4","5"],"answer":{"value":"3"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_num_5_match","data":{"lesson_key":"prea1-en-numbers-0-10-01","exercise_type":"multiple_choice","prompt":{"instruction_fa":"five کدام عدد است؟","value":"five"},"options":["4","5","6","7"],"answer":{"value":"5"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_num_8_listen","data":{"lesson_key":"prea1-en-numbers-0-10-02","exercise_type":"listening","prompt":{"instruction_fa":"عدد را گوش کن و انتخاب کن.","audio_text":"eight"},"options":["6","7","8","9"],"answer":{"value":"8"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_num_10_speak","data":{"lesson_key":"prea1-en-numbers-0-10-02","exercise_type":"speaking","prompt":{"instruction_fa":"عدد 10 را به انگلیسی بگو.","value":"10"},"answer":{"expected_text":"ten"},"difficulty":1,"cefr":"Pre-A1","status":"approved"}},
+    {"kind":"exercise","external_id":"ex_pre_num_order","data":{"lesson_key":"prea1-en-numbers-0-10-02","exercise_type":"sentence_building","prompt":{"instruction_fa":"اعداد را به ترتیب بچین.","tokens":["eight","six","seven"]},"answer":{"tokens":["six","seven","eight"]},"difficulty":2,"cefr":"Pre-A1","status":"approved"}}
+  ]
+}
