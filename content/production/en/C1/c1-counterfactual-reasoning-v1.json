@@ -1,0 +1,1015 @@
+{
+  "batch_id": "en-us-c1-counterfactual-reasoning-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "C1",
+  "curriculum_unit": "c1-counterfactual-reasoning",
+  "generator": "gpt-5.6-sol:golden-dataset-c1-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_c1_counterfactual_reasoning_counterfactual",
+      "data": {
+        "slug": "c1_counterfactual_reasoning_counterfactual",
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "counterfactual"
+        },
+        "translations": {
+          "fa": "خلاف واقع"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_counterfactual_reasoning_counterfactual",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "lemma": "counterfactual",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_counterfactual"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_counterfactual_reasoning_counterfactual",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "lexeme_ref": "lx_c1_counterfactual_reasoning_counterfactual",
+        "surface_form": "counterfactual",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_counterfactual_reasoning_outcome",
+      "data": {
+        "slug": "c1_counterfactual_reasoning_outcome",
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "outcome"
+        },
+        "translations": {
+          "fa": "نتیجه"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_counterfactual_reasoning_outcome",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "lemma": "outcome",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_outcome"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_counterfactual_reasoning_outcome",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "lexeme_ref": "lx_c1_counterfactual_reasoning_outcome",
+        "surface_form": "outcome",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_counterfactual_reasoning_intervention",
+      "data": {
+        "slug": "c1_counterfactual_reasoning_intervention",
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "intervention"
+        },
+        "translations": {
+          "fa": "مداخله"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_counterfactual_reasoning_intervention",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "lemma": "intervention",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_intervention"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_counterfactual_reasoning_intervention",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "lexeme_ref": "lx_c1_counterfactual_reasoning_intervention",
+        "surface_form": "intervention",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_counterfactual_reasoning_preventable",
+      "data": {
+        "slug": "c1_counterfactual_reasoning_preventable",
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "preventable"
+        },
+        "translations": {
+          "fa": "قابل پیشگیری"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_counterfactual_reasoning_preventable",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "lemma": "preventable",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_preventable"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_counterfactual_reasoning_preventable",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "lexeme_ref": "lx_c1_counterfactual_reasoning_preventable",
+        "surface_form": "preventable",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_counterfactual_reasoning_contingent",
+      "data": {
+        "slug": "c1_counterfactual_reasoning_contingent",
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "contingent"
+        },
+        "translations": {
+          "fa": "وابسته به شرایط"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_counterfactual_reasoning_contingent",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "lemma": "contingent",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_contingent"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_counterfactual_reasoning_contingent",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "lexeme_ref": "lx_c1_counterfactual_reasoning_contingent",
+        "surface_form": "contingent",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_counterfactual_reasoning_retrospect",
+      "data": {
+        "slug": "c1_counterfactual_reasoning_retrospect",
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "retrospect"
+        },
+        "translations": {
+          "fa": "بازنگری به گذشته"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_counterfactual_reasoning_retrospect",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "lemma": "retrospect",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_retrospect"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_counterfactual_reasoning_retrospect",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "lexeme_ref": "lx_c1_counterfactual_reasoning_retrospect",
+        "surface_form": "retrospect",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_counterfactual_reasoning_trigger",
+      "data": {
+        "slug": "c1_counterfactual_reasoning_trigger",
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "trigger"
+        },
+        "translations": {
+          "fa": "عامل آغازگر"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_counterfactual_reasoning_trigger",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "lemma": "trigger",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_trigger"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_counterfactual_reasoning_trigger",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "lexeme_ref": "lx_c1_counterfactual_reasoning_trigger",
+        "surface_form": "trigger",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_counterfactual_reasoning_trajectory",
+      "data": {
+        "slug": "c1_counterfactual_reasoning_trajectory",
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "trajectory"
+        },
+        "translations": {
+          "fa": "مسیر تحول"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_counterfactual_reasoning_trajectory",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "lemma": "trajectory",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_trajectory"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_counterfactual_reasoning_trajectory",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "lexeme_ref": "lx_c1_counterfactual_reasoning_trajectory",
+        "surface_form": "trajectory",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_counterfactual_reasoning_counterfactual",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "text": {
+          "en": "The useful counterfactual is not 'what if nothing had gone wrong?' but 'which earlier intervention could realistically have changed the outcome?'"
+        },
+        "translations": {
+          "fa": "خلاف‌واقع مفید این نیست که «اگر هیچ‌چیز خراب نمی‌شد چی؟»؛ اینه که «کدوم مداخله زودتر واقعاً می‌تونست نتیجه رو عوض کنه؟»"
+        },
+        "intent": "frame_counterfactual",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_counterfactual",
+          "c1_counterfactual_reasoning_intervention",
+          "c1_counterfactual_reasoning_outcome"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_counterfactual_reasoning_preventable",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "text": {
+          "en": "Some of the damage was probably preventable, but not all of it was within the team's control."
+        },
+        "translations": {
+          "fa": "احتمالاً بخشی از آسیب قابل پیشگیری بود، ولی همه‌ش تحت کنترل تیم نبود."
+        },
+        "intent": "assess_preventability",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_preventable",
+          "c1_counterfactual_reasoning_outcome"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_counterfactual_reasoning_trigger",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "text": {
+          "en": "Had the warning triggered a review in March, the later failure might have been contained."
+        },
+        "translations": {
+          "fa": "اگر هشدار در مارس باعث بازبینی شده بود، شاید شکست بعدی محدود می‌شد."
+        },
+        "intent": "evaluate_alternative_past",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_trigger",
+          "c1_counterfactual_reasoning_intervention"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_counterfactual_reasoning_trajectory",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "text": {
+          "en": "A small decision early on altered the trajectory, even though its importance was not obvious at the time."
+        },
+        "translations": {
+          "fa": "یک تصمیم کوچک در اوایل مسیر رو عوض کرد، با اینکه اهمیتش اون موقع واضح نبود."
+        },
+        "intent": "identify_turning_point",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_trajectory",
+          "c1_counterfactual_reasoning_outcome"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_counterfactual_reasoning_contingent",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "text": {
+          "en": "The result was contingent on several choices, so it is misleading to attribute everything to one mistake."
+        },
+        "translations": {
+          "fa": "نتیجه به چند انتخاب وابسته بود، پس نسبت دادن همه‌چیز به یک اشتباه گمراه‌کننده‌ست."
+        },
+        "intent": "reject_single_cause",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_contingent",
+          "c1_counterfactual_reasoning_outcome"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_counterfactual_reasoning_retrospect",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "text": {
+          "en": "In retrospect, we can see the missed signals, but that does not mean they were equally visible at the time."
+        },
+        "translations": {
+          "fa": "در بازنگری به گذشته نشونه‌های از دست‌رفته رو می‌بینیم، ولی این معنی رو نمی‌ده که اون موقع هم به همون اندازه واضح بودن."
+        },
+        "intent": "avoid_hindsight_bias",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_retrospect"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_counterfactual_reasoning_present",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "text": {
+          "en": "If the earlier controls had been stronger, we would be dealing with a much smaller problem now."
+        },
+        "translations": {
+          "fa": "اگر کنترل‌های قبلی قوی‌تر بودن، الان با مشکل خیلی کوچک‌تری روبه‌رو بودیم."
+        },
+        "intent": "link_past_to_present",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_intervention",
+          "c1_counterfactual_reasoning_outcome"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_counterfactual_reasoning_lesson",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "text": {
+          "en": "The point of counterfactual reasoning is to improve future decisions, not to invent certainty about the past."
+        },
+        "translations": {
+          "fa": "هدف از استدلال خلاف‌واقع بهتر کردن تصمیم‌های آینده‌ست، نه ساختن اطمینان مصنوعی درباره گذشته."
+        },
+        "intent": "state_purpose",
+        "concept_refs": [
+          "c1_counterfactual_reasoning_counterfactual",
+          "c1_counterfactual_reasoning_retrospect"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c1_counterfactual_reasoning_counterfactual_past",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "slug": "c1-counterfactual-reasoning-counterfactual-past",
+        "title": "Counterfactual past and regret",
+        "rule_summary": "Use would have, could have, might have, and if only to evaluate unreal past alternatives and their consequences.",
+        "explanation": {
+          "fa": "برای ارزیابی گزینه‌های فرضی در گذشته و پیامدهایشان از would have، could have، might have و if only استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "We could have avoided the delay if the warning had been taken seriously.",
+            "fa": "اگر هشدار جدی گرفته شده بود می‌توانستیم از تأخیر جلوگیری کنیم."
+          },
+          {
+            "en": "If only we had checked the assumptions first.",
+            "fa": "کاش اول فرض‌ها را بررسی کرده بودیم."
+          }
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c1_counterfactual_reasoning_mixed_conditionals",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "slug": "c1-counterfactual-reasoning-mixed-conditionals",
+        "title": "Mixed conditionals",
+        "rule_summary": "Combine different time references when a past condition has a present result or a present state explains a past outcome.",
+        "explanation": {
+          "fa": "وقتی شرط و نتیجه به زمان‌های متفاوت مربوط‌اند از mixed conditional استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "If we had invested earlier, we would be in a stronger position now.",
+            "fa": "اگر زودتر سرمایه‌گذاری کرده بودیم، الان موقعیت قوی‌تری داشتیم."
+          },
+          {
+            "en": "If she were less cautious, she might have accepted the offer.",
+            "fa": "اگر این‌قدر محتاط نبود، شاید پیشنهاد را قبول کرده بود."
+          }
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c1_counterfactual_reasoning_cleft_sentences",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "slug": "c1-counterfactual-reasoning-cleft-sentences",
+        "title": "Cleft sentences for focus",
+        "rule_summary": "Use what-clauses and it-clefts to place deliberate emphasis on the most important part of a message.",
+        "explanation": {
+          "fa": "با what-clause و it-cleft بخش مهم پیام را برجسته می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "What concerns me most is the lack of independent oversight.",
+            "fa": "چیزی که بیشتر نگرانم می‌کند نبود نظارت مستقل است."
+          },
+          {
+            "en": "It was the timing, rather than the decision itself, that caused the problem.",
+            "fa": "زمان‌بندی بود، نه خود تصمیم، که مشکل را ایجاد کرد."
+          }
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c1_counterfactual_reasoning_scene_1",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "title": "Counterfactual Reasoning: part 1",
+        "setting": "strategy meeting",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Mei",
+          "Omar"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mei",
+            "text": "What do you make of the way this is being framed?",
+            "translation_fa": "از نحوه مطرح شدن این موضوع چه برداشتی داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Omar",
+            "text": "The useful counterfactual is not 'what if nothing had gone wrong?' but 'which earlier intervention could realistically have changed the outcome?'",
+            "translation_fa": "خلاف‌واقع مفید این نیست که «اگر هیچ‌چیز خراب نمی‌شد چی؟»؛ اینه که «کدوم مداخله زودتر واقعاً می‌تونست نتیجه رو عوض کنه؟»"
+          },
+          {
+            "order": 3,
+            "speaker": "Mei",
+            "text": "Is there another interpretation we should keep in view?",
+            "translation_fa": "تفسیر دیگه‌ای هست که باید در نظر داشته باشیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Omar",
+            "text": "Some of the damage was probably preventable, but not all of it was within the team's control.",
+            "translation_fa": "احتمالاً بخشی از آسیب قابل پیشگیری بود، ولی همه‌ش تحت کنترل تیم نبود."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c1_counterfactual_reasoning_scene_2",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "title": "Counterfactual Reasoning: part 2",
+        "setting": "seminar break",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Ava",
+          "Ben"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Ava",
+            "text": "Which assumption is doing most of the work here?",
+            "translation_fa": "کدوم فرض بیشترین نقش رو در این استدلال داره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Ben",
+            "text": "Had the warning triggered a review in March, the later failure might have been contained.",
+            "translation_fa": "اگر هشدار در مارس باعث بازبینی شده بود، شاید شکست بعدی محدود می‌شد."
+          },
+          {
+            "order": 3,
+            "speaker": "Ava",
+            "text": "How would the conclusion change if that assumption failed?",
+            "translation_fa": "اگر اون فرض برقرار نباشه نتیجه چطور عوض می‌شه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Ben",
+            "text": "A small decision early on altered the trajectory, even though its importance was not obvious at the time.",
+            "translation_fa": "یک تصمیم کوچک در اوایل مسیر رو عوض کرد، با اینکه اهمیتش اون موقع واضح نبود."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c1_counterfactual_reasoning_scene_3",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "title": "Counterfactual Reasoning: part 3",
+        "setting": "podcast planning call",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Claire",
+          "Diego"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Claire",
+            "text": "Where do you think the strongest part of the case is?",
+            "translation_fa": "فکر می‌کنی قوی‌ترین بخش استدلال کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Diego",
+            "text": "The result was contingent on several choices, so it is misleading to attribute everything to one mistake.",
+            "translation_fa": "نتیجه به چند انتخاب وابسته بود، پس نسبت دادن همه‌چیز به یک اشتباه گمراه‌کننده‌ست."
+          },
+          {
+            "order": 3,
+            "speaker": "Claire",
+            "text": "And where would you qualify it?",
+            "translation_fa": "و کجاش رو با احتیاط یا قید بیشتری بیان می‌کردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Diego",
+            "text": "In retrospect, we can see the missed signals, but that does not mean they were equally visible at the time.",
+            "translation_fa": "در بازنگری به گذشته نشونه‌های از دست‌رفته رو می‌بینیم، ولی این معنی رو نمی‌ده که اون موقع هم به همون اندازه واضح بودن."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_counterfactual_reasoning_fill",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "The outcome was ___ on several decisions, not one single mistake."
+        },
+        "options": [
+          "contingent",
+          "preventable",
+          "literal",
+          "explicit"
+        ],
+        "answer": {
+          "value": "contingent"
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_counterfactual_reasoning_listen1",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Some of the damage was probably preventable, but not all of it was within the team's control."
+        },
+        "options": [
+          "احتمالاً بخشی از آسیب قابل پیشگیری بود، ولی همه‌ش تحت کنترل تیم نبود.",
+          "خلاف‌واقع مفید این نیست که «اگر هیچ‌چیز خراب نمی‌شد چی؟»؛ اینه که «کدوم مداخله زودتر واقعاً می‌تونست نتیجه رو عوض کنه؟»",
+          "نتیجه به چند انتخاب وابسته بود، پس نسبت دادن همه‌چیز به یک اشتباه گمراه‌کننده‌ست.",
+          "اگر کنترل‌های قبلی قوی‌تر بودن، الان با مشکل خیلی کوچک‌تری روبه‌رو بودیم."
+        ],
+        "answer": {
+          "value": "احتمالاً بخشی از آسیب قابل پیشگیری بود، ولی همه‌ش تحت کنترل تیم نبود."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_counterfactual_reasoning_speak1",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: اگر هشدار در مارس باعث بازبینی شده بود، شاید شکست بعدی محدود می‌شد."
+        },
+        "answer": {
+          "expected_text": "Had the warning triggered a review in March, the later failure might have been contained."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_counterfactual_reasoning_build1",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "یک تصمیم کوچک در اوایل مسیر رو عوض کرد، با اینکه اهمیتش اون موقع واضح نبود.",
+          "tokens": [
+            "time.",
+            "the",
+            "at",
+            "obvious",
+            "not",
+            "was",
+            "importance",
+            "its",
+            "though",
+            "even",
+            "trajectory,",
+            "the",
+            "altered",
+            "on",
+            "early",
+            "decision",
+            "small",
+            "A"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "A",
+            "small",
+            "decision",
+            "early",
+            "on",
+            "altered",
+            "the",
+            "trajectory,",
+            "even",
+            "though",
+            "its",
+            "importance",
+            "was",
+            "not",
+            "obvious",
+            "at",
+            "the",
+            "time."
+          ],
+          "text": "A small decision early on altered the trajectory, even though its importance was not obvious at the time."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_counterfactual_reasoning_meaning",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "The result was contingent on several choices, so it is misleading to attribute everything to one mistake."
+        },
+        "options": [
+          "نتیجه به چند انتخاب وابسته بود، پس نسبت دادن همه‌چیز به یک اشتباه گمراه‌کننده‌ست.",
+          "اگر هشدار در مارس باعث بازبینی شده بود، شاید شکست بعدی محدود می‌شد.",
+          "اگر کنترل‌های قبلی قوی‌تر بودن، الان با مشکل خیلی کوچک‌تری روبه‌رو بودیم.",
+          "خلاف‌واقع مفید این نیست که «اگر هیچ‌چیز خراب نمی‌شد چی؟»؛ اینه که «کدوم مداخله زودتر واقعاً می‌تونست نتیجه رو عوض کنه؟»"
+        ],
+        "answer": {
+          "value": "نتیجه به چند انتخاب وابسته بود، پس نسبت دادن همه‌چیز به یک اشتباه گمراه‌کننده‌ست."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_counterfactual_reasoning_listen2",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "In retrospect, we can see the missed signals, but that does not mean they were equally visible at the time."
+        },
+        "options": [
+          "در بازنگری به گذشته نشونه‌های از دست‌رفته رو می‌بینیم، ولی این معنی رو نمی‌ده که اون موقع هم به همون اندازه واضح بودن.",
+          "احتمالاً بخشی از آسیب قابل پیشگیری بود، ولی همه‌ش تحت کنترل تیم نبود.",
+          "یک تصمیم کوچک در اوایل مسیر رو عوض کرد، با اینکه اهمیتش اون موقع واضح نبود.",
+          "هدف از استدلال خلاف‌واقع بهتر کردن تصمیم‌های آینده‌ست، نه ساختن اطمینان مصنوعی درباره گذشته."
+        ],
+        "answer": {
+          "value": "در بازنگری به گذشته نشونه‌های از دست‌رفته رو می‌بینیم، ولی این معنی رو نمی‌ده که اون موقع هم به همون اندازه واضح بودن."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_counterfactual_reasoning_speak2",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: اگر کنترل‌های قبلی قوی‌تر بودن، الان با مشکل خیلی کوچک‌تری روبه‌رو بودیم."
+        },
+        "answer": {
+          "expected_text": "If the earlier controls had been stronger, we would be dealing with a much smaller problem now."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_counterfactual_reasoning_build2",
+      "data": {
+        "lesson_key": "c1-counterfactual-reasoning-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "هدف از استدلال خلاف‌واقع بهتر کردن تصمیم‌های آینده‌ست، نه ساختن اطمینان مصنوعی درباره گذشته.",
+          "tokens": [
+            "past.",
+            "the",
+            "about",
+            "certainty",
+            "invent",
+            "to",
+            "not",
+            "decisions,",
+            "future",
+            "improve",
+            "to",
+            "is",
+            "reasoning",
+            "counterfactual",
+            "of",
+            "point",
+            "The"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "The",
+            "point",
+            "of",
+            "counterfactual",
+            "reasoning",
+            "is",
+            "to",
+            "improve",
+            "future",
+            "decisions,",
+            "not",
+            "to",
+            "invent",
+            "certainty",
+            "about",
+            "the",
+            "past."
+          ],
+          "text": "The point of counterfactual reasoning is to improve future decisions, not to invent certainty about the past."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    }
+  ]
+}

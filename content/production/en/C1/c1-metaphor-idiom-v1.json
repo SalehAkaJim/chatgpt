@@ -1,0 +1,1019 @@
+{
+  "batch_id": "en-us-c1-metaphor-idiom-v1",
+  "course": "fa-en-us",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "en",
+  "target_variant": "en-US",
+  "cefr": "C1",
+  "curriculum_unit": "c1-metaphor-idiom",
+  "generator": "gpt-5.6-sol:golden-dataset-c1-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_c1_metaphor_idiom_metaphor",
+      "data": {
+        "slug": "c1_metaphor_idiom_metaphor",
+        "lesson_key": "c1-metaphor-idiom-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "metaphor"
+        },
+        "translations": {
+          "fa": "استعاره"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_metaphor_idiom_metaphor",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "lemma": "metaphor",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_metaphor_idiom_metaphor"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_metaphor_idiom_metaphor",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "lexeme_ref": "lx_c1_metaphor_idiom_metaphor",
+        "surface_form": "metaphor",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_metaphor_idiom_idiom",
+      "data": {
+        "slug": "c1_metaphor_idiom_idiom",
+        "lesson_key": "c1-metaphor-idiom-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "idiom"
+        },
+        "translations": {
+          "fa": "اصطلاح"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_metaphor_idiom_idiom",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "lemma": "idiom",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_metaphor_idiom_idiom"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_metaphor_idiom_idiom",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "lexeme_ref": "lx_c1_metaphor_idiom_idiom",
+        "surface_form": "idiom",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_metaphor_idiom_figurative",
+      "data": {
+        "slug": "c1_metaphor_idiom_figurative",
+        "lesson_key": "c1-metaphor-idiom-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "figurative"
+        },
+        "translations": {
+          "fa": "مجازی"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_metaphor_idiom_figurative",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "lemma": "figurative",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c1_metaphor_idiom_figurative"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_metaphor_idiom_figurative",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "lexeme_ref": "lx_c1_metaphor_idiom_figurative",
+        "surface_form": "figurative",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_metaphor_idiom_literal",
+      "data": {
+        "slug": "c1_metaphor_idiom_literal",
+        "lesson_key": "c1-metaphor-idiom-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "literal"
+        },
+        "translations": {
+          "fa": "تحت‌اللفظی"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_metaphor_idiom_literal",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "lemma": "literal",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c1_metaphor_idiom_literal"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_metaphor_idiom_literal",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "lexeme_ref": "lx_c1_metaphor_idiom_literal",
+        "surface_form": "literal",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_metaphor_idiom_connotation",
+      "data": {
+        "slug": "c1_metaphor_idiom_connotation",
+        "lesson_key": "c1-metaphor-idiom-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "connotation"
+        },
+        "translations": {
+          "fa": "بار معنایی"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_metaphor_idiom_connotation",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "lemma": "connotation",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_metaphor_idiom_connotation"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_metaphor_idiom_connotation",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "lexeme_ref": "lx_c1_metaphor_idiom_connotation",
+        "surface_form": "connotation",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_metaphor_idiom_image",
+      "data": {
+        "slug": "c1_metaphor_idiom_image",
+        "lesson_key": "c1-metaphor-idiom-03",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "image"
+        },
+        "translations": {
+          "fa": "تصویر ذهنی"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_metaphor_idiom_image",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "lemma": "image",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "c1_metaphor_idiom_image"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_metaphor_idiom_image",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "lexeme_ref": "lx_c1_metaphor_idiom_image",
+        "surface_form": "image",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_metaphor_idiom_convey",
+      "data": {
+        "slug": "c1_metaphor_idiom_convey",
+        "lesson_key": "c1-metaphor-idiom-01",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "convey"
+        },
+        "translations": {
+          "fa": "منتقل کردن"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_metaphor_idiom_convey",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "lemma": "convey",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "c1_metaphor_idiom_convey"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_metaphor_idiom_convey",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "lexeme_ref": "lx_c1_metaphor_idiom_convey",
+        "surface_form": "convey",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_c1_metaphor_idiom_conventional",
+      "data": {
+        "slug": "c1_metaphor_idiom_conventional",
+        "lesson_key": "c1-metaphor-idiom-02",
+        "concept_type": "lexical",
+        "forms": {
+          "en": "conventional"
+        },
+        "translations": {
+          "fa": "رایج / تثبیت‌شده"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_c1_metaphor_idiom_conventional",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "lemma": "conventional",
+        "language": "en",
+        "language_variant": "en-US",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "c1_metaphor_idiom_conventional"
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_c1_metaphor_idiom_conventional",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "lexeme_ref": "lx_c1_metaphor_idiom_conventional",
+        "surface_form": "conventional",
+        "grammatical_features": {
+          "form": "base"
+        },
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_metaphor_idiom_metaphor",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "text": {
+          "en": "Calling the proposal a 'bridge' frames it as a temporary connection between positions rather than a final destination."
+        },
+        "translations": {
+          "fa": "وقتی پیشنهاد رو «پل» می‌نامیم، به‌عنوان اتصال موقت بین دو موضع قاب‌بندی می‌شه نه مقصد نهایی."
+        },
+        "intent": "interpret_metaphor",
+        "concept_refs": [
+          "c1_metaphor_idiom_metaphor",
+          "c1_metaphor_idiom_image",
+          "c1_metaphor_idiom_convey"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_metaphor_idiom_idiom",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "text": {
+          "en": "The idiom makes sense only if you recognize the conventional meaning rather than translating each word literally."
+        },
+        "translations": {
+          "fa": "اصطلاح فقط وقتی معنا می‌ده که معنی رایجش رو بشناسی، نه اینکه هر کلمه رو تحت‌اللفظی ترجمه کنی."
+        },
+        "intent": "interpret_idiom",
+        "concept_refs": [
+          "c1_metaphor_idiom_idiom",
+          "c1_metaphor_idiom_conventional",
+          "c1_metaphor_idiom_literal"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_metaphor_idiom_connotation",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "text": {
+          "en": "The two expressions refer to the same basic action, but one carries a much more negative connotation."
+        },
+        "translations": {
+          "fa": "دو عبارت به یک کار پایه اشاره می‌کنن، ولی یکی بار معنایی خیلی منفی‌تری داره."
+        },
+        "intent": "compare_connotation",
+        "concept_refs": [
+          "c1_metaphor_idiom_connotation",
+          "c1_metaphor_idiom_figurative"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_metaphor_idiom_figurative",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "text": {
+          "en": "The sentence is figurative: nobody is literally 'holding the door open'; the speaker means preserving an option."
+        },
+        "translations": {
+          "fa": "جمله مجازیه؛ کسی واقعاً «در رو باز نگه نداشته»، منظور حفظ یک گزینه‌ست."
+        },
+        "intent": "distinguish_literal_figurative",
+        "concept_refs": [
+          "c1_metaphor_idiom_figurative",
+          "c1_metaphor_idiom_literal"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_metaphor_idiom_image",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "text": {
+          "en": "A fresh metaphor can make an abstract idea memorable, but too many competing images can make an explanation harder to follow."
+        },
+        "translations": {
+          "fa": "استعاره تازه می‌تونه ایده انتزاعی رو ماندگار کنه، ولی تصویرهای رقیب زیاد توضیح رو سخت‌تر می‌کنن."
+        },
+        "intent": "evaluate_metaphor_use",
+        "concept_refs": [
+          "c1_metaphor_idiom_metaphor",
+          "c1_metaphor_idiom_image"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_metaphor_idiom_culture",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "text": {
+          "en": "Some idioms travel easily across cultures because the underlying image is familiar; others lose the point entirely."
+        },
+        "translations": {
+          "fa": "بعضی اصطلاح‌ها بین فرهنگ‌ها راحت منتقل می‌شن چون تصویر پایه آشناست؛ بعضی‌ها کل معنی رو از دست می‌دن."
+        },
+        "intent": "discuss_idiom_transfer",
+        "concept_refs": [
+          "c1_metaphor_idiom_idiom",
+          "c1_metaphor_idiom_image"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_metaphor_idiom_convey",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "text": {
+          "en": "In this context, 'walking a tightrope' conveys the difficulty of balancing two risks at the same time."
+        },
+        "translations": {
+          "fa": "در این زمینه «راه رفتن روی طناب» سختی متعادل کردن هم‌زمان دو ریسک رو منتقل می‌کنه."
+        },
+        "intent": "explain_conveyed_meaning",
+        "concept_refs": [
+          "c1_metaphor_idiom_convey",
+          "c1_metaphor_idiom_metaphor"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_c1_metaphor_idiom_close",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "text": {
+          "en": "Understanding figurative language at C1 means noticing the stance and connotations it adds, not merely decoding the basic meaning."
+        },
+        "translations": {
+          "fa": "فهم زبان مجازی در C1 یعنی موضع و بار معنایی اضافه‌شده رو هم ببینی، نه اینکه فقط معنی پایه رو رمزگشایی کنی."
+        },
+        "intent": "summarize_figurative_language",
+        "concept_refs": [
+          "c1_metaphor_idiom_figurative",
+          "c1_metaphor_idiom_connotation"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c1_metaphor_idiom_reformulation",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "slug": "c1-metaphor-idiom-reformulation",
+        "title": "Reformulation and precision",
+        "rule_summary": "Use in other words, more precisely, what I mean is, or rather to refine a statement when the first wording is incomplete or misleading.",
+        "explanation": {
+          "fa": "با in other words، more precisely، what I mean is و or rather جمله را اصلاح یا دقیق‌تر می‌کنیم."
+        },
+        "examples": [
+          {
+            "en": "The system is inefficient—or rather, inefficient under peak demand.",
+            "fa": "سیستم ناکارآمد است؛ یا دقیق‌تر بگویم، در اوج تقاضا ناکارآمد است."
+          },
+          {
+            "en": "What I mean is that the risk is concentrated, not universal.",
+            "fa": "منظورم این است که ریسک متمرکز است، نه همگانی."
+          }
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c1_metaphor_idiom_register_shift",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "slug": "c1-metaphor-idiom-register-shift",
+        "title": "Shifting register deliberately",
+        "rule_summary": "Adjust vocabulary, directness, contractions, and sentence structure to move appropriately between informal, neutral, and formal contexts.",
+        "explanation": {
+          "fa": "برای جابه‌جایی آگاهانه بین لحن خودمانی، خنثی و رسمی، واژگان، صراحت، contraction و ساختار جمله را تغییر می‌دهیم."
+        },
+        "examples": [
+          {
+            "en": "Can we move this? → Would it be possible to reschedule the meeting?",
+            "fa": "می‌شه جابه‌جاش کنیم؟ → آیا امکان تغییر زمان جلسه وجود دارد؟"
+          },
+          {
+            "en": "That's not right. → That interpretation may not fully reflect the evidence.",
+            "fa": "این درست نیست. → آن تفسیر ممکن است شواهد را به‌طور کامل بازتاب ندهد."
+          }
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_c1_metaphor_idiom_cohesion_reference",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "slug": "c1-metaphor-idiom-cohesion-reference",
+        "title": "Cohesion through reference",
+        "rule_summary": "Use this, such, the former/latter, these findings, and related reference devices so longer discourse remains connected without repetition.",
+        "explanation": {
+          "fa": "با this، such، the former/latter، these findings و ابزارهای ارجاعی مشابه، متن یا گفتار طولانی را بدون تکرار منسجم نگه می‌داریم."
+        },
+        "examples": [
+          {
+            "en": "The first approach is cheaper; the latter, however, is easier to scale.",
+            "fa": "رویکرد اول ارزان‌تر است؛ اما دومی مقیاس‌پذیرتر است."
+          },
+          {
+            "en": "These findings raise a further question about access.",
+            "fa": "این یافته‌ها پرسش دیگری درباره دسترسی مطرح می‌کنند."
+          }
+        ],
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c1_metaphor_idiom_scene_1",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "title": "Metaphor & Idiom: part 1",
+        "setting": "quiet cafe",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Nora",
+          "Samir"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nora",
+            "text": "What is the practical implication of that point?",
+            "translation_fa": "پیامد عملی اون نکته چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Samir",
+            "text": "Calling the proposal a 'bridge' frames it as a temporary connection between positions rather than a final destination.",
+            "translation_fa": "وقتی پیشنهاد رو «پل» می‌نامیم، به‌عنوان اتصال موقت بین دو موضع قاب‌بندی می‌شه نه مقصد نهایی."
+          },
+          {
+            "order": 3,
+            "speaker": "Nora",
+            "text": "Does the evidence justify going that far?",
+            "translation_fa": "آیا شواهد واقعاً چنین نتیجه‌ای رو توجیه می‌کنه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Samir",
+            "text": "The idiom makes sense only if you recognize the conventional meaning rather than translating each word literally.",
+            "translation_fa": "اصطلاح فقط وقتی معنا می‌ده که معنی رایجش رو بشناسی، نه اینکه هر کلمه رو تحت‌اللفظی ترجمه کنی."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c1_metaphor_idiom_scene_2",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "title": "Metaphor & Idiom: part 2",
+        "setting": "professional workshop",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Elena",
+          "Marcus"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elena",
+            "text": "How would you respond without making the disagreement personal?",
+            "translation_fa": "چطور جواب می‌دادی بدون اینکه مخالفت شخصی بشه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Marcus",
+            "text": "The two expressions refer to the same basic action, but one carries a much more negative connotation.",
+            "translation_fa": "دو عبارت به یک کار پایه اشاره می‌کنن، ولی یکی بار معنایی خیلی منفی‌تری داره."
+          },
+          {
+            "order": 3,
+            "speaker": "Elena",
+            "text": "What could you concede while still holding your position?",
+            "translation_fa": "چی رو می‌تونی بپذیری و در عین حال موضعت رو حفظ کنی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Marcus",
+            "text": "The sentence is figurative: nobody is literally 'holding the door open'; the speaker means preserving an option.",
+            "translation_fa": "جمله مجازیه؛ کسی واقعاً «در رو باز نگه نداشته»، منظور حفظ یک گزینه‌ست."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_c1_metaphor_idiom_scene_3",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "title": "Metaphor & Idiom: part 3",
+        "setting": "strategy meeting",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Hana",
+          "Luis"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Hana",
+            "text": "What do you make of the way this is being framed?",
+            "translation_fa": "از نحوه مطرح شدن این موضوع چه برداشتی داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Luis",
+            "text": "A fresh metaphor can make an abstract idea memorable, but too many competing images can make an explanation harder to follow.",
+            "translation_fa": "استعاره تازه می‌تونه ایده انتزاعی رو ماندگار کنه، ولی تصویرهای رقیب زیاد توضیح رو سخت‌تر می‌کنن."
+          },
+          {
+            "order": 3,
+            "speaker": "Hana",
+            "text": "Is there another interpretation we should keep in view?",
+            "translation_fa": "تفسیر دیگه‌ای هست که باید در نظر داشته باشیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Luis",
+            "text": "Some idioms travel easily across cultures because the underlying image is familiar; others lose the point entirely.",
+            "translation_fa": "بعضی اصطلاح‌ها بین فرهنگ‌ها راحت منتقل می‌شن چون تصویر پایه آشناست؛ بعضی‌ها کل معنی رو از دست می‌دن."
+          }
+        ],
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_metaphor_idiom_fill",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "exercise_type": "fill_blank",
+        "prompt": {
+          "text": "The phrase is ___ rather than literal; it describes keeping an option available."
+        },
+        "options": [
+          "figurative",
+          "conventional",
+          "connotation",
+          "idiom"
+        ],
+        "answer": {
+          "value": "figurative"
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_metaphor_idiom_listen1",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "The idiom makes sense only if you recognize the conventional meaning rather than translating each word literally."
+        },
+        "options": [
+          "اصطلاح فقط وقتی معنا می‌ده که معنی رایجش رو بشناسی، نه اینکه هر کلمه رو تحت‌اللفظی ترجمه کنی.",
+          "وقتی پیشنهاد رو «پل» می‌نامیم، به‌عنوان اتصال موقت بین دو موضع قاب‌بندی می‌شه نه مقصد نهایی.",
+          "استعاره تازه می‌تونه ایده انتزاعی رو ماندگار کنه، ولی تصویرهای رقیب زیاد توضیح رو سخت‌تر می‌کنن.",
+          "در این زمینه «راه رفتن روی طناب» سختی متعادل کردن هم‌زمان دو ریسک رو منتقل می‌کنه."
+        ],
+        "answer": {
+          "value": "اصطلاح فقط وقتی معنا می‌ده که معنی رایجش رو بشناسی، نه اینکه هر کلمه رو تحت‌اللفظی ترجمه کنی."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_metaphor_idiom_speak1",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این ایده را طبیعی و کامل به انگلیسی بگو: دو عبارت به یک کار پایه اشاره می‌کنن، ولی یکی بار معنایی خیلی منفی‌تری داره."
+        },
+        "answer": {
+          "expected_text": "The two expressions refer to the same basic action, but one carries a much more negative connotation."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_metaphor_idiom_build1",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "جمله مجازیه؛ کسی واقعاً «در رو باز نگه نداشته»، منظور حفظ یک گزینه‌ست.",
+          "tokens": [
+            "option.",
+            "an",
+            "preserving",
+            "means",
+            "speaker",
+            "the",
+            "open';",
+            "door",
+            "the",
+            "'holding",
+            "literally",
+            "is",
+            "nobody",
+            "figurative:",
+            "is",
+            "sentence",
+            "The"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "The",
+            "sentence",
+            "is",
+            "figurative:",
+            "nobody",
+            "is",
+            "literally",
+            "'holding",
+            "the",
+            "door",
+            "open';",
+            "the",
+            "speaker",
+            "means",
+            "preserving",
+            "an",
+            "option."
+          ],
+          "text": "The sentence is figurative: nobody is literally 'holding the door open'; the speaker means preserving an option."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_metaphor_idiom_meaning",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "منظور دقیق‌تر جمله کدام است؟",
+          "text": "A fresh metaphor can make an abstract idea memorable, but too many competing images can make an explanation harder to follow."
+        },
+        "options": [
+          "استعاره تازه می‌تونه ایده انتزاعی رو ماندگار کنه، ولی تصویرهای رقیب زیاد توضیح رو سخت‌تر می‌کنن.",
+          "دو عبارت به یک کار پایه اشاره می‌کنن، ولی یکی بار معنایی خیلی منفی‌تری داره.",
+          "در این زمینه «راه رفتن روی طناب» سختی متعادل کردن هم‌زمان دو ریسک رو منتقل می‌کنه.",
+          "وقتی پیشنهاد رو «پل» می‌نامیم، به‌عنوان اتصال موقت بین دو موضع قاب‌بندی می‌شه نه مقصد نهایی."
+        ],
+        "answer": {
+          "value": "استعاره تازه می‌تونه ایده انتزاعی رو ماندگار کنه، ولی تصویرهای رقیب زیاد توضیح رو سخت‌تر می‌کنن."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_metaphor_idiom_listen2",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و برداشت درست از جمله را انتخاب کن.",
+          "audio_text": "Some idioms travel easily across cultures because the underlying image is familiar; others lose the point entirely."
+        },
+        "options": [
+          "بعضی اصطلاح‌ها بین فرهنگ‌ها راحت منتقل می‌شن چون تصویر پایه آشناست؛ بعضی‌ها کل معنی رو از دست می‌دن.",
+          "اصطلاح فقط وقتی معنا می‌ده که معنی رایجش رو بشناسی، نه اینکه هر کلمه رو تحت‌اللفظی ترجمه کنی.",
+          "جمله مجازیه؛ کسی واقعاً «در رو باز نگه نداشته»، منظور حفظ یک گزینه‌ست.",
+          "فهم زبان مجازی در C1 یعنی موضع و بار معنایی اضافه‌شده رو هم ببینی، نه اینکه فقط معنی پایه رو رمزگشایی کنی."
+        ],
+        "answer": {
+          "value": "بعضی اصطلاح‌ها بین فرهنگ‌ها راحت منتقل می‌شن چون تصویر پایه آشناست؛ بعضی‌ها کل معنی رو از دست می‌دن."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_metaphor_idiom_speak2",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "این جمله را با لحن طبیعی انگلیسی بیان کن: در این زمینه «راه رفتن روی طناب» سختی متعادل کردن هم‌زمان دو ریسک رو منتقل می‌کنه."
+        },
+        "answer": {
+          "expected_text": "In this context, 'walking a tightrope' conveys the difficulty of balancing two risks at the same time."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_c1_metaphor_idiom_build2",
+      "data": {
+        "lesson_key": "c1-metaphor-idiom-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "fa": "فهم زبان مجازی در C1 یعنی موضع و بار معنایی اضافه‌شده رو هم ببینی، نه اینکه فقط معنی پایه رو رمزگشایی کنی.",
+          "tokens": [
+            "meaning.",
+            "basic",
+            "the",
+            "decoding",
+            "merely",
+            "not",
+            "adds,",
+            "it",
+            "connotations",
+            "and",
+            "stance",
+            "the",
+            "noticing",
+            "means",
+            "C1",
+            "at",
+            "language",
+            "figurative",
+            "Understanding"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Understanding",
+            "figurative",
+            "language",
+            "at",
+            "C1",
+            "means",
+            "noticing",
+            "the",
+            "stance",
+            "and",
+            "connotations",
+            "it",
+            "adds,",
+            "not",
+            "merely",
+            "decoding",
+            "the",
+            "basic",
+            "meaning."
+          ],
+          "text": "Understanding figurative language at C1 means noticing the stance and connotations it adds, not merely decoding the basic meaning."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "status": "approved"
+      }
+    }
+  ]
+}
