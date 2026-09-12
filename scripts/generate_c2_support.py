@@ -7,7 +7,7 @@ from pathlib import Path
 from scripts import generate_c1_support as c1
 
 # Reuse the mature C1 batch builder, grammar bank, exercise templates and
-# dialogue/cast rotation, while lifting the generated level metadata to C2.
+# dialogue/cast rotation, while lifting the generated level to C2.
 # C2-specific difficulty comes from the lexical, pragmatic, rhetorical and
 # discourse demands authored in the unit specifications below.
 V = c1.V
@@ -27,11 +27,9 @@ def build_c2(spec: dict) -> dict:
     finally:
         c1.CEFR = previous
 
+    # Keep the exact canonical batch schema used by C1/B2. The C2 design
+    # intent lives in the curriculum seed rather than a new top-level field.
     batch["generator"] = "gpt-5.6-sol:golden-dataset-c2-v1"
-    batch.setdefault("metadata", {})["level_design"] = (
-        "C2 mastery: effortless precision, pragmatic inference, idiomatic range, "
-        "rhetorical control, synthesis, mediation and register-sensitive discourse"
-    )
     for item in batch.get("items", []):
         if item.get("kind") == "exercise":
             item.get("data", {})["difficulty"] = 5
