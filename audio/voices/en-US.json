@@ -8,13 +8,7 @@
     "prefer_high_quality": true,
     "required_language": "en",
     "preferred_accent": "american",
-    "settings": {
-      "stability": 0.72,
-      "similarity_boost": 0.88,
-      "style": 0.0,
-      "use_speaker_boost": true,
-      "speed": 0.94
-    }
+    "settings": {"stability": 0.72, "similarity_boost": 0.88, "style": 0.0, "use_speaker_boost": true, "speed": 0.94}
   },
   "sentence_narrator": {
     "voice_key": "en-us.sentence.lori",
@@ -23,122 +17,30 @@
     "prefer_high_quality": true,
     "required_language": "en",
     "preferred_accent": "american",
-    "settings": {
-      "stability": 0.68,
-      "similarity_boost": 0.88,
-      "style": 0.0,
-      "use_speaker_boost": true,
-      "speed": 0.97
-    }
+    "settings": {"stability": 0.68, "similarity_boost": 0.88, "style": 0.0, "use_speaker_boost": true, "speed": 0.97}
   },
   "dialogue": {
     "require_explicit_character_profile": true,
+    "require_distinct_character_voices": true,
     "default_model_env": "ELEVENLABS_DIALOGUE_MODEL_ID",
     "profiles": {
-      "warm_conversational": {
-        "voice_name": null,
-        "description": "Warm, natural conversational American English; friendly and clear; not theatrical.",
-        "required_language": "en",
-        "preferred_accent": "american",
-        "prefer_high_quality": true,
-        "settings": {"stability": 0.55, "similarity_boost": 0.86, "style": 0.18, "use_speaker_boost": true, "speed": 1.0}
-      },
-      "calm_clear": {
-        "voice_name": null,
-        "description": "Calm, precise American English with excellent articulation for practical conversations.",
-        "required_language": "en",
-        "preferred_accent": "american",
-        "prefer_high_quality": true,
-        "settings": {"stability": 0.66, "similarity_boost": 0.88, "style": 0.08, "use_speaker_boost": true, "speed": 0.98}
-      },
-      "bright_social": {
-        "voice_name": null,
-        "description": "Bright, energetic but natural American English for friendly social dialogue.",
-        "required_language": "en",
-        "preferred_accent": "american",
-        "prefer_high_quality": true,
-        "settings": {"stability": 0.50, "similarity_boost": 0.85, "style": 0.24, "use_speaker_boost": true, "speed": 1.02}
-      },
-      "professional_neutral": {
-        "voice_name": null,
-        "description": "Neutral professional American English; confident, clean and highly intelligible.",
-        "required_language": "en",
-        "preferred_accent": "american",
-        "prefer_high_quality": true,
-        "settings": {"stability": 0.70, "similarity_boost": 0.90, "style": 0.05, "use_speaker_boost": true, "speed": 0.98}
-      }
+      "warm_conversational": {"voice_name": null, "description": "Warm, natural conversational American English; friendly and clear; not theatrical.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "settings": {"stability": 0.55, "similarity_boost": 0.86, "style": 0.18, "use_speaker_boost": true, "speed": 1.0}},
+      "calm_clear": {"voice_name": null, "description": "Calm, precise American English with excellent articulation for practical conversations.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "settings": {"stability": 0.66, "similarity_boost": 0.88, "style": 0.08, "use_speaker_boost": true, "speed": 0.98}},
+      "bright_social": {"voice_name": null, "description": "Bright, energetic but natural American English for friendly social dialogue.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "settings": {"stability": 0.50, "similarity_boost": 0.85, "style": 0.24, "use_speaker_boost": true, "speed": 1.02}},
+      "professional_neutral": {"voice_name": null, "description": "Neutral professional American English; confident, clean and highly intelligible.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "settings": {"stability": 0.70, "similarity_boost": 0.90, "style": 0.05, "use_speaker_boost": true, "speed": 0.98}},
+
+      "female_warm": {"voice_name": null, "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "required_labels": {"gender": "female"}, "distinct_character": true, "settings": {"stability": 0.58, "similarity_boost": 0.87, "style": 0.14, "use_speaker_boost": true, "speed": 0.99}},
+      "male_warm": {"voice_name": null, "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "required_labels": {"gender": "male"}, "distinct_character": true, "settings": {"stability": 0.58, "similarity_boost": 0.87, "style": 0.14, "use_speaker_boost": true, "speed": 0.99}},
+      "female_calm": {"voice_name": null, "description": "Calm, precise female adult American English voice; gentle, highly intelligible and natural.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "required_labels": {"gender": "female"}, "distinct_character": true, "settings": {"stability": 0.68, "similarity_boost": 0.89, "style": 0.06, "use_speaker_boost": true, "speed": 0.97}},
+      "male_calm": {"voice_name": null, "description": "Calm, precise male adult American English voice; grounded, highly intelligible and natural.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "required_labels": {"gender": "male"}, "distinct_character": true, "settings": {"stability": 0.68, "similarity_boost": 0.89, "style": 0.06, "use_speaker_boost": true, "speed": 0.97}},
+      "female_bright": {"voice_name": null, "description": "Bright, lively female young-adult American English voice; friendly and energetic without sounding theatrical.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "required_labels": {"gender": "female"}, "distinct_character": true, "settings": {"stability": 0.52, "similarity_boost": 0.86, "style": 0.20, "use_speaker_boost": true, "speed": 1.01}},
+      "male_bright": {"voice_name": null, "description": "Bright, lively male young-adult American English voice; friendly and energetic without sounding theatrical.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "required_labels": {"gender": "male"}, "distinct_character": true, "settings": {"stability": 0.52, "similarity_boost": 0.86, "style": 0.20, "use_speaker_boost": true, "speed": 1.01}},
+      "female_professional": {"voice_name": null, "description": "Neutral professional female adult American English voice; confident, clean and highly intelligible.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "required_labels": {"gender": "female"}, "distinct_character": true, "settings": {"stability": 0.71, "similarity_boost": 0.90, "style": 0.05, "use_speaker_boost": true, "speed": 0.98}},
+      "male_professional": {"voice_name": null, "description": "Neutral professional male adult American English voice; confident, clean and highly intelligible.", "required_language": "en", "preferred_accent": "american", "prefer_high_quality": true, "required_labels": {"gender": "male"}, "distinct_character": true, "settings": {"stability": 0.71, "similarity_boost": 0.90, "style": 0.05, "use_speaker_boost": true, "speed": 0.98}}
     },
     "character_assignments": {
-      "adam": "professional_neutral",
-      "alex": "warm_conversational",
-      "ali": "warm_conversational",
-      "amir": "warm_conversational",
-      "ari": "bright_social",
-      "arman": "warm_conversational",
-      "ava": "warm_conversational",
-      "ben": "bright_social",
-      "chris": "bright_social",
-      "claire": "professional_neutral",
-      "daniel": "professional_neutral",
-      "david": "warm_conversational",
-      "diego": "professional_neutral",
-      "dina": "calm_clear",
-      "drake": "calm_clear",
-      "eli": "bright_social",
-      "ella": "warm_conversational",
-      "emma": "bright_social",
-      "emre": "professional_neutral",
-      "fatima": "professional_neutral",
-      "hana": "calm_clear",
-      "iris": "calm_clear",
-      "ivy": "bright_social",
-      "jack": "warm_conversational",
-      "jae": "warm_conversational",
-      "jon": "professional_neutral",
-      "jonas": "professional_neutral",
-      "kai": "professional_neutral",
-      "kate": "warm_conversational",
-      "lena": "professional_neutral",
-      "leo": "warm_conversational",
-      "liam": "bright_social",
-      "lina": "warm_conversational",
-      "luca": "calm_clear",
-      "lucas": "bright_social",
-      "marco": "bright_social",
-      "mark": "calm_clear",
-      "maya": "warm_conversational",
-      "mei": "professional_neutral",
-      "mia": "warm_conversational",
-      "mina": "bright_social",
-      "nina": "warm_conversational",
-      "noah": "calm_clear",
-      "noor": "calm_clear",
-      "nora": "warm_conversational",
-      "noura": "warm_conversational",
-      "omar": "warm_conversational",
-      "omid": "warm_conversational",
-      "owen": "bright_social",
-      "paul": "calm_clear",
-      "priya": "professional_neutral",
-      "rami": "warm_conversational",
-      "ravi": "bright_social",
-      "rita": "professional_neutral",
-      "rosa": "calm_clear",
-      "roya": "warm_conversational",
-      "sam": "warm_conversational",
-      "sara": "professional_neutral",
-      "sofia": "warm_conversational",
-      "sora": "bright_social",
-      "theo": "warm_conversational",
-      "tom": "calm_clear",
-      "yuki": "professional_neutral",
-      "zoe": "bright_social"
+      "adam": "professional_neutral", "alex": "warm_conversational", "ali": "warm_conversational", "amir": "warm_conversational", "ari": "bright_social", "arman": "warm_conversational", "ava": "warm_conversational", "ben": "bright_social", "chris": "bright_social", "claire": "professional_neutral", "daniel": "professional_neutral", "david": "warm_conversational", "diego": "professional_neutral", "dina": "calm_clear", "drake": "calm_clear", "eli": "bright_social", "ella": "warm_conversational", "emma": "bright_social", "emre": "professional_neutral", "fatima": "professional_neutral", "hana": "calm_clear", "iris": "calm_clear", "ivy": "bright_social", "jack": "warm_conversational", "jae": "warm_conversational", "jon": "professional_neutral", "jonas": "professional_neutral", "kai": "professional_neutral", "kate": "warm_conversational", "lena": "professional_neutral", "leo": "warm_conversational", "liam": "bright_social", "lina": "warm_conversational", "luca": "calm_clear", "lucas": "bright_social", "marco": "bright_social", "mark": "calm_clear", "maya": "warm_conversational", "mei": "professional_neutral", "mia": "warm_conversational", "mina": "bright_social", "nina": "warm_conversational", "noah": "calm_clear", "noor": "calm_clear", "nora": "warm_conversational", "noura": "warm_conversational", "omar": "warm_conversational", "omid": "warm_conversational", "owen": "bright_social", "paul": "calm_clear", "priya": "professional_neutral", "rami": "warm_conversational", "ravi": "bright_social", "rita": "professional_neutral", "rosa": "calm_clear", "roya": "warm_conversational", "sam": "warm_conversational", "sara": "professional_neutral", "sofia": "warm_conversational", "sora": "bright_social", "theo": "warm_conversational", "tom": "calm_clear", "yuki": "professional_neutral", "zoe": "bright_social"
     }
   },
-  "generation": {
-    "model_id": "eleven_multilingual_v2",
-    "preferred_output_format": "mp3_44100_192",
-    "fallback_output_format": "mp3_44100_128",
-    "concurrency": 2
-  }
+  "generation": {"model_id": "eleven_multilingual_v2", "preferred_output_format": "mp3_44100_192", "fallback_output_format": "mp3_44100_128", "concurrency": 2}
 }
