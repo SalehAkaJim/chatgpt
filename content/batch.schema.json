@@ -3,16 +3,7 @@
   "$id": "https://language-learning.local/content-batch.schema.json",
   "title": "Language Learning Content Batch",
   "type": "object",
-  "required": [
-    "batch_id",
-    "course",
-    "learner_language",
-    "target_language",
-    "target_variant",
-    "cefr",
-    "curriculum_unit",
-    "items"
-  ],
+  "required": ["batch_id", "target_language", "cefr", "curriculum_unit", "items"],
   "properties": {
     "batch_id": {"type": "string", "minLength": 1},
     "course": {"type": "string", "minLength": 1},
