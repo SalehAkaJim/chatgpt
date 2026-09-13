@@ -81,3 +81,21 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B1'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German B1 curriculum, final batch 5 (units 41-45).
+-- The final batch is intentionally five units: level length follows educational coverage,
+-- not a requirement to end on a multiple of ten.
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',5,'final_batch',TRUE)
+FROM (
+  SELECT 410 AS sort_order,'communication' AS skill_slug,'questions' AS topic_slug,'b1-de-explaining-presenting' AS slug,'Erklären & Präsentieren' AS title,'Ein vertrautes Thema kurz und strukturiert erklären, Hauptpunkte hervorheben, Beispiele geben und Rückfragen beantworten.' AS objective,3 AS expected_lessons,'Sequenzmarker; mit + Dativ zur Erläuterung; wenn / falls bei Rückfragen' AS grammar_focus
+  UNION ALL SELECT 420,'communication','simple-messages','b1-de-summarizing-relaying','Zusammenfassen & Weitergeben','Kernaussagen aus kurzen Nachrichten, Gesprächen oder Texten erkennen, zusammenfassen und wichtige Informationen korrekt weitergeben.',3,'dass-Sätze beim Berichten; weitergeben / erwähnen + dass; laut + Dativ'
+  UNION ALL SELECT 430,'communication','simple-messages','b1-de-practical-writing','Nachrichten & E-Mails','Klare praktische Nachrichten und E-Mails mit passendem Betreff, Anliegen, relevanten Details, höflicher Bitte und nächstem Schritt schreiben.',3,'damit für Schreibabsicht; könnten Sie für höfliche Bitten; falls + würde gern'
+  UNION ALL SELECT 440,'communication','simple-messages','b1-de-instructions-notices','Hinweise & Anleitungen','Alltägliche Hinweise und Anleitungen verstehen, Anforderungen erkennen, Schritte erklären und bei Unklarheiten gezielt nachfragen.',3,'bevor; Passiv mit müssen; nicht mehr / seit'
+  UNION ALL SELECT 450,'communication','simple-messages','b1-de-integrated-capstone','B1 Alltag: Alles zusammen','Mehrere B1-Fähigkeiten in einer mehrstufigen Alltagssituation verbinden: Informationen verstehen und weitergeben, Optionen abwägen, Entscheidungen begründen, schriftlich bestätigen und auf Änderungen reagieren.',3,'bevor / danach; obwohl / deshalb; falls + Präsens'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B1'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
