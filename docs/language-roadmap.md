@@ -29,8 +29,8 @@ Status:
 - Pre-A1: complete
 - A1: complete
 - A2: complete
-- B1: final coverage plan = **45 units**
-- B2: next after B1 is fully validated and audio-complete
+- B1: complete at **45 units**, including MySQL/audio validation
+- B2: **in progress**; dedicated coverage map exists in `docs/german-b2-coverage-map.md`; Batch 1 = 10 units
 - C1: after B2
 - C2: after C1
 
@@ -75,9 +75,9 @@ Initial Turkish design requirements:
 - Character rotation and audio voice-lock rules remain the same product-wide.
 - Determine each Turkish CEFR level length through coverage, not copied unit totals.
 
-## Current German B1 closure decision
+## German B1 closure decision
 
-The first 40 German B1 units already cover the major everyday domains: narrative, opinions, disagreement, work/study, practical problem solving, health, travel, media/technology, community, housing, applications, workplace communication, learning, environment, complaints, money, relationships, culture, public services, transport disruption, news, volunteering, nutrition, family responsibility, projects, unexpected situations, future change, moving, repairs, contracts, privacy, feedback/teamwork, exam stress, hosting, city services, doctor follow-up and goals/priorities.
+The first 40 German B1 units already covered the major everyday domains: narrative, opinions, disagreement, work/study, practical problem solving, health, travel, media/technology, community, housing, applications, workplace communication, learning, environment, complaints, money, relationships, culture, public services, transport disruption, news, volunteering, nutrition, family responsibility, projects, unexpected situations, future change, moving, repairs, contracts, privacy, feedback/teamwork, exam stress, hosting, city services, doctor follow-up and goals/priorities.
 
 The gap audit identified five remaining coverage needs:
 
@@ -87,4 +87,10 @@ The gap audit identified five remaining coverage needs:
 44. `Hinweise & Anleitungen` — understanding and explaining notices/instructions
 45. `B1 Alltag: Alles zusammen` — integrated multi-step B1 capstone
 
-Therefore German B1 closes at **45 units**. No units 46-50 should be created unless a later QA audit finds a concrete missing B1 capability.
+Therefore German B1 closed at **45 units**. No units 46-50 should be created unless a later QA audit finds a concrete missing B1 capability.
+
+## German B2 start decision
+
+B2 starts from a fresh language-specific coverage map rather than extending the B1 topic list mechanically. Batch 1 establishes the B2 discourse layer with argument/evidence, nuanced agreement and disagreement, presentations and analytical follow-up questions, negotiation, meetings and decisions, formal escalation, source comparison, media uncertainty, data/trend interpretation and social-issue discussion.
+
+The final B2 unit count remains intentionally **undecided** until later coverage audits.
