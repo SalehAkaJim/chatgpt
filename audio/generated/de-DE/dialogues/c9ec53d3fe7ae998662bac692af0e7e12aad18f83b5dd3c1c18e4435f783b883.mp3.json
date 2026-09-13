@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "3f40347192ca3b1a95e81e579e1f847b3128e53788a46aa9b50b7612afae9fde",
+  "voice_id": "MbbPUteESkJWr4IAaW35",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "c9ec53d3fe7ae998662bac692af0e7e12aad18f83b5dd3c1c18e4435f783b883",
+  "voice_key": "character:noah:male_professional",
+  "voice_name": "Felix - Direct and Clear",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "b3a82f563d16858f5f5d5c92690741ad1ed46851de48b2e300c94bc9394bd578",
+  "duration_ms": 2925,
+  "generated_at": "2026-09-13T06:17:07.551466+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "479c4349-63b6-5ac9-9d6d-67c6ce81b59c",
+      "entity_key": "d_decisions_consequences_01:2"
+    }
+  ]
+}

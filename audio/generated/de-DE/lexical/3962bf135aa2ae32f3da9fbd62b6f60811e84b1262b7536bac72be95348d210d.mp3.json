@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "e23d8b281b7378ecd57d6cf95aedd8ed8f08159c05156bc1ae55eb7ec443a0ea",
+  "voice_id": "v3V1d2rk6528UrLKRuy8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "3962bf135aa2ae32f3da9fbd62b6f60811e84b1262b7536bac72be95348d210d",
+  "voice_key": "de-de.lexical.native-clear",
+  "voice_name": "Susi - Effortless and Confident",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "092c973bf7ec5d3122b949b660ab77dec0852447f2f01a54ec262cbe1b1810ee",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-13T06:17:29.239154+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "6aa1dde9-84eb-5019-95ea-47c4675c501c",
+      "entity_key": "lx_housing_renting_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "a83d81b0-bd03-5373-a63e-ab37e957314b",
+      "entity_key": "wf_housing_renting_02"
+    }
+  ]
+}

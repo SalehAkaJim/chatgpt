@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "d22596638f1fb7d6e3ced7e0a0f20fc3bb4d7fb74ee23c61722b63eed1cb2b3a",
+  "voice_id": "MTTjXkEpZepLTqO0xH0f",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "429a66ceb68f257c00d886af3a8a85eab8474f682010eedb5003a86263190b00",
+  "voice_key": "character:sofia:female_professional",
+  "voice_name": "Marlena Lark – Warm German Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "944f91df7d2e29379e24446d68359155d2e5625efcf6a1b9ff1ca7d6e1114fb1",
+  "duration_ms": 3186,
+  "generated_at": "2026-09-13T06:16:35.506641+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "40afb7ad-4db0-5717-bb9b-f00c4777981d",
+      "entity_key": "d_courses_learning_01:1"
+    }
+  ]
+}
