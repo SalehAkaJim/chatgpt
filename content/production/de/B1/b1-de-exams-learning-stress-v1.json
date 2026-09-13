@@ -1,0 +1,1166 @@
+{
+  "batch_id": "de-de-b1-exams-learning-stress-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "B1",
+  "curriculum_unit": "b1-de-exams-learning-stress",
+  "generator": "gpt-5.6-sol:german-b1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_exams_learning_stress_01",
+      "data": {
+        "slug": "de_b1_exams_learning_stress_pruefung",
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Prüfung"
+        },
+        "translations": {
+          "fa": "آزمون"
+        },
+        "cefr": "B1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_exams_learning_stress_01",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "lemma": "Prüfung",
+        "display_lemma": "Prüfung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_pruefung"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_exams_learning_stress_01",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "lexeme_ref": "lx_exams_learning_stress_01",
+        "surface_form": "Prüfung",
+        "display_form": "Prüfung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_exams_learning_stress_02",
+      "data": {
+        "slug": "de_b1_exams_learning_stress_vorbereiten",
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "sich vorbereiten"
+        },
+        "translations": {
+          "fa": "آماده شدن"
+        },
+        "cefr": "B1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_exams_learning_stress_02",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "lemma": "sich vorbereiten",
+        "display_lemma": "sich vorbereiten",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_vorbereiten"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_exams_learning_stress_02",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "lexeme_ref": "lx_exams_learning_stress_02",
+        "surface_form": "sich vorbereiten",
+        "display_form": "sich vorbereiten",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_exams_learning_stress_03",
+      "data": {
+        "slug": "de_b1_exams_learning_stress_lernplan",
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Lernplan"
+        },
+        "translations": {
+          "fa": "برنامهٔ مطالعه"
+        },
+        "cefr": "B1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_exams_learning_stress_03",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "lemma": "Lernplan",
+        "display_lemma": "Lernplan",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_lernplan"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_exams_learning_stress_03",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "lexeme_ref": "lx_exams_learning_stress_03",
+        "surface_form": "Lernplan",
+        "display_form": "Lernplan",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_exams_learning_stress_04",
+      "data": {
+        "slug": "de_b1_exams_learning_stress_konzentrieren",
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "sich konzentrieren"
+        },
+        "translations": {
+          "fa": "تمرکز کردن"
+        },
+        "cefr": "B1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_exams_learning_stress_04",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "lemma": "sich konzentrieren",
+        "display_lemma": "sich konzentrieren",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_konzentrieren"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_exams_learning_stress_04",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "lexeme_ref": "lx_exams_learning_stress_04",
+        "surface_form": "sich konzentrieren",
+        "display_form": "sich konzentrieren",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_exams_learning_stress_05",
+      "data": {
+        "slug": "de_b1_exams_learning_stress_pause",
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Pause"
+        },
+        "translations": {
+          "fa": "استراحت"
+        },
+        "cefr": "B1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_exams_learning_stress_05",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "lemma": "Pause",
+        "display_lemma": "Pause",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_pause"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_exams_learning_stress_05",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "lexeme_ref": "lx_exams_learning_stress_05",
+        "surface_form": "Pause",
+        "display_form": "Pause",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_exams_learning_stress_06",
+      "data": {
+        "slug": "de_b1_exams_learning_stress_ueberfordert",
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "überfordert"
+        },
+        "translations": {
+          "fa": "بیش‌ازحد تحت فشار"
+        },
+        "cefr": "B1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_exams_learning_stress_06",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "lemma": "überfordert",
+        "display_lemma": "überfordert",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_ueberfordert"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_exams_learning_stress_06",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "lexeme_ref": "lx_exams_learning_stress_06",
+        "surface_form": "überfordert",
+        "display_form": "überfordert",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_exams_learning_stress_01",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "text": {
+          "de": "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher."
+        },
+        "translations": {
+          "fa": "دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند."
+        },
+        "intent": "prepare_exam",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_pruefung",
+          "de_b1_exams_learning_stress_vorbereiten"
+        ],
+        "cefr": "B1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_exams_learning_stress_02",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "text": {
+          "de": "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren."
+        },
+        "translations": {
+          "fa": "اگر خیلی طولانی بدون وقفه درس بخوانم، بعد از مدتی تقریباً دیگر نمی‌توانم تمرکز کنم."
+        },
+        "intent": "notice_limit",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_konzentrieren"
+        ],
+        "cefr": "B1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_exams_learning_stress_03",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "text": {
+          "de": "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane."
+        },
+        "translations": {
+          "fa": "از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است."
+        },
+        "intent": "improve_plan",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_lernplan",
+          "de_b1_exams_learning_stress_pause"
+        ],
+        "cefr": "B1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_exams_learning_stress_04",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "text": {
+          "de": "Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin."
+        },
+        "translations": {
+          "fa": "موضوع‌های بزرگ را به بخش‌های کوچک‌تر تقسیم می‌کنم تا همان اول تحت فشار قرار نگیرم."
+        },
+        "intent": "reduce_stress",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_ueberfordert"
+        ],
+        "cefr": "B1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_exams_learning_stress_05",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "text": {
+          "de": "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr."
+        },
+        "translations": {
+          "fa": "شب قبل از آزمون فقط نکات مهم را مرور می‌کنم و دیگر چیز کاملاً جدیدی یاد نمی‌گیرم."
+        },
+        "intent": "final_review",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_pruefung"
+        ],
+        "cefr": "B1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_exams_learning_stress_06",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "text": {
+          "de": "Je besser ich meine Zeit einteile, desto ruhiger gehe ich in eine Prüfung."
+        },
+        "translations": {
+          "fa": "هرچه زمانم را بهتر تقسیم کنم، آرام‌تر وارد آزمون می‌شوم."
+        },
+        "intent": "reflect_strategy",
+        "concept_refs": [
+          "de_b1_exams_learning_stress_pruefung",
+          "de_b1_exams_learning_stress_lernplan"
+        ],
+        "cefr": "B1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_exams_learning_stress_01",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "slug": "b1-de-exams-learning-stress-g1",
+        "title": "seit + Präsens",
+        "rule_summary": "Use seit with the present tense for activities that started in the past and continue now.",
+        "explanation": {
+          "fa": "برای کاری که در گذشته شروع شده و هنوز ادامه دارد، از seit با زمان حال استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Ich lerne seit zwei Wochen für die Prüfung.",
+            "fa": "دو هفته است برای آزمون درس می‌خوانم."
+          },
+          {
+            "de": "Seit Montag wiederhole ich jeden Abend Vokabeln.",
+            "fa": "از دوشنبه هر شب واژگان را مرور می‌کنم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_exams_learning_stress_02",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "slug": "b1-de-exams-learning-stress-g2",
+        "title": "damit gegen Überforderung",
+        "rule_summary": "Use damit to explain the purpose of a study strategy.",
+        "explanation": {
+          "fa": "برای توضیح هدف یک روش مطالعه از damit استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Ich mache Pausen, damit ich konzentriert bleibe.",
+            "fa": "استراحت می‌کنم تا متمرکز بمانم."
+          },
+          {
+            "de": "Ich teile den Stoff auf, damit ich nicht überfordert bin.",
+            "fa": "مطالب را تقسیم می‌کنم تا تحت فشار قرار نگیرم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_exams_learning_stress_03",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "slug": "b1-de-exams-learning-stress-g3",
+        "title": "je ... desto für Lernfortschritt",
+        "rule_summary": "Use je ... desto to express how one learning factor changes with another.",
+        "explanation": {
+          "fa": "برای نشان دادن تغییر هم‌زمان دو عامل در یادگیری از je ... desto استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Je früher ich anfange, desto weniger Stress habe ich.",
+            "fa": "هرچه زودتر شروع کنم، استرس کمتری دارم."
+          },
+          {
+            "de": "Je öfter ich übe, desto sicherer werde ich.",
+            "fa": "هرچه بیشتر تمرین کنم، مطمئن‌تر می‌شوم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_exams_learning_stress_01",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "title": "Vor der Prüfung",
+        "setting": "Bibliothek",
+        "cefr": "B1",
+        "topic": "school-study",
+        "characters": [
+          "Sofia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Wie läuft die Vorbereitung auf die Prüfung?",
+            "translation_fa": "آمادگی برای آزمون چطور پیش می‌رود؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Ganz gut, aber bei zwei Themen bin ich noch unsicher.",
+            "translation_fa": "خوب است، اما در دو موضوع هنوز مطمئن نیستم."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Dann konzentrier dich heute nur auf diese beiden.",
+            "translation_fa": "پس امروز فقط روی همان دو تا تمرکز کن."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Ja, das ist wahrscheinlich sinnvoller.",
+            "translation_fa": "بله، احتمالاً منطقی‌تر است."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_exams_learning_stress_02",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "title": "Ein realistischer Plan",
+        "setting": "Café",
+        "cefr": "B1",
+        "topic": "school-study",
+        "characters": [
+          "Nina",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Dein Lernplan sieht ziemlich voll aus.",
+            "translation_fa": "برنامهٔ مطالعه‌ات خیلی پر به نظر می‌رسد."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Stimmt. Ich habe zu viel für jeden Tag eingeplant.",
+            "translation_fa": "درست است. برای هر روز خیلی زیاد برنامه گذاشته‌ام."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Warum planst du nicht auch feste Pausen ein?",
+            "translation_fa": "چرا استراحت‌های ثابت هم در نظر نمی‌گیری؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Gute Idee, dann halte ich den Plan vielleicht wirklich durch.",
+            "translation_fa": "ایدهٔ خوبی است، شاید آن‌وقت واقعاً بتوانم برنامه را ادامه بدهم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_exams_learning_stress_03",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "title": "Nicht alles auf einmal",
+        "setting": "Lernraum",
+        "cefr": "B1",
+        "topic": "school-study",
+        "characters": [
+          "Clara",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Du wirkst ziemlich gestresst.",
+            "translation_fa": "خیلی مضطرب به نظر می‌رسی."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Ich wollte heute drei große Kapitel schaffen.",
+            "translation_fa": "می‌خواستم امروز سه فصل بزرگ را تمام کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Das klingt nach zu viel auf einmal.",
+            "translation_fa": "برای یک‌باره خیلی زیاد به نظر می‌رسد."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Ja, ich teile es lieber in kleinere Schritte.",
+            "translation_fa": "بله، بهتر است به بخش‌های کوچک‌تر تقسیمش کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_01_mc",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند.»؟"
+        },
+        "options": [
+          "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher.",
+          "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren.",
+          "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane.",
+          "Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin."
+        ],
+        "answer": {
+          "value": "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher. — دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند.",
+          "model_answer": "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_01_listen",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher."
+        },
+        "options": [
+          "دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند.",
+          "اگر خیلی طولانی بدون وقفه درس بخوانم، بعد از مدتی تقریباً دیگر نمی‌توانم تمرکز کنم.",
+          "از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است.",
+          "موضوع‌های بزرگ را به بخش‌های کوچک‌تر تقسیم می‌کنم تا همان اول تحت فشار قرار نگیرم."
+        ],
+        "answer": {
+          "value": "دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher. — دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند.",
+          "model_answer": "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher.",
+          "transcript_de": "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_01_speak",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren."
+        },
+        "answer": {
+          "expected_text": "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren. — اگر خیلی طولانی بدون وقفه درس بخوانم، بعد از مدتی تقریباً دیگر نمی‌توانم تمرکز کنم.",
+          "model_answer": "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_01_trans",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "اگر خیلی طولانی بدون وقفه درس بخوانم، بعد از مدتی تقریباً دیگر نمی‌توانم تمرکز کنم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren. — اگر خیلی طولانی بدون وقفه درس بخوانم، بعد از مدتی تقریباً دیگر نمی‌توانم تمرکز کنم.",
+          "model_answer": "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_01_build",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "bereite",
+            "mich",
+            "seit",
+            "zwei",
+            "Wochen",
+            "auf",
+            "die",
+            "Prüfung",
+            "vor,",
+            "aber",
+            "einige",
+            "Themen",
+            "sind",
+            "noch",
+            "unsicher.",
+            "Ich"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ich",
+            "bereite",
+            "mich",
+            "seit",
+            "zwei",
+            "Wochen",
+            "auf",
+            "die",
+            "Prüfung",
+            "vor,",
+            "aber",
+            "einige",
+            "Themen",
+            "sind",
+            "noch",
+            "unsicher."
+          ],
+          "value": "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher. — دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند.",
+          "model_answer": "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_02_mc",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است.»؟"
+        },
+        "options": [
+          "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane.",
+          "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher.",
+          "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren.",
+          "Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin."
+        ],
+        "answer": {
+          "value": "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane. — از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است.",
+          "model_answer": "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_02_listen",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane."
+        },
+        "options": [
+          "از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است.",
+          "دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند.",
+          "اگر خیلی طولانی بدون وقفه درس بخوانم، بعد از مدتی تقریباً دیگر نمی‌توانم تمرکز کنم.",
+          "موضوع‌های بزرگ را به بخش‌های کوچک‌تر تقسیم می‌کنم تا همان اول تحت فشار قرار نگیرم."
+        ],
+        "answer": {
+          "value": "از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane. — از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است.",
+          "model_answer": "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane.",
+          "transcript_de": "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_02_speak",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin."
+        },
+        "answer": {
+          "expected_text": "Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin. — موضوع‌های بزرگ را به بخش‌های کوچک‌تر تقسیم می‌کنم تا همان اول تحت فشار قرار نگیرم.",
+          "model_answer": "Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_02_trans",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "موضوع‌های بزرگ را به بخش‌های کوچک‌تر تقسیم می‌کنم تا همان اول تحت فشار قرار نگیرم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin. — موضوع‌های بزرگ را به بخش‌های کوچک‌تر تقسیم می‌کنم تا همان اول تحت فشار قرار نگیرم.",
+          "model_answer": "Ich teile große Themen in kleinere Schritte, damit ich nicht sofort überfordert bin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_02_build",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Lernplan",
+            "ist",
+            "realistischer",
+            "geworden,",
+            "seit",
+            "ich",
+            "feste",
+            "Pausen",
+            "einplane.",
+            "Mein"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Mein",
+            "Lernplan",
+            "ist",
+            "realistischer",
+            "geworden,",
+            "seit",
+            "ich",
+            "feste",
+            "Pausen",
+            "einplane."
+          ],
+          "value": "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane. — از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است.",
+          "model_answer": "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_03_mc",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «شب قبل از آزمون فقط نکات مهم را مرور می‌کنم و دیگر چیز کاملاً جدیدی یاد نمی‌گیرم.»؟"
+        },
+        "options": [
+          "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr.",
+          "Ich bereite mich seit zwei Wochen auf die Prüfung vor, aber einige Themen sind noch unsicher.",
+          "Wenn ich zu lange am Stück lerne, kann ich mich irgendwann kaum noch konzentrieren.",
+          "Mein Lernplan ist realistischer geworden, seit ich feste Pausen einplane."
+        ],
+        "answer": {
+          "value": "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr. — شب قبل از آزمون فقط نکات مهم را مرور می‌کنم و دیگر چیز کاملاً جدیدی یاد نمی‌گیرم.",
+          "model_answer": "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_03_listen",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr."
+        },
+        "options": [
+          "شب قبل از آزمون فقط نکات مهم را مرور می‌کنم و دیگر چیز کاملاً جدیدی یاد نمی‌گیرم.",
+          "دو هفته است برای آزمون آماده می‌شوم، اما بعضی موضوع‌ها هنوز برایم مطمئن نیستند.",
+          "اگر خیلی طولانی بدون وقفه درس بخوانم، بعد از مدتی تقریباً دیگر نمی‌توانم تمرکز کنم.",
+          "از وقتی استراحت‌های ثابت در برنامه می‌گذارم، برنامهٔ مطالعه‌ام واقع‌بینانه‌تر شده است."
+        ],
+        "answer": {
+          "value": "شب قبل از آزمون فقط نکات مهم را مرور می‌کنم و دیگر چیز کاملاً جدیدی یاد نمی‌گیرم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr. — شب قبل از آزمون فقط نکات مهم را مرور می‌کنم و دیگر چیز کاملاً جدیدی یاد نمی‌گیرم.",
+          "model_answer": "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr.",
+          "transcript_de": "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_03_speak",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Je besser ich meine Zeit einteile, desto ruhiger gehe ich in eine Prüfung."
+        },
+        "answer": {
+          "expected_text": "Je besser ich meine Zeit einteile, desto ruhiger gehe ich in eine Prüfung."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je besser ich meine Zeit einteile, desto ruhiger gehe ich in eine Prüfung. — هرچه زمانم را بهتر تقسیم کنم، آرام‌تر وارد آزمون می‌شوم.",
+          "model_answer": "Je besser ich meine Zeit einteile, desto ruhiger gehe ich in eine Prüfung."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_03_trans",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "هرچه زمانم را بهتر تقسیم کنم، آرام‌تر وارد آزمون می‌شوم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Je besser ich meine Zeit einteile, desto ruhiger gehe ich in eine Prüfung."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je besser ich meine Zeit einteile, desto ruhiger gehe ich in eine Prüfung. — هرچه زمانم را بهتر تقسیم کنم، آرام‌تر وارد آزمون می‌شوم.",
+          "model_answer": "Je besser ich meine Zeit einteile, desto ruhiger gehe ich in eine Prüfung."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_exams_learning_stress_03_build",
+      "data": {
+        "lesson_key": "b1-de-exams-learning-stress-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Abend",
+            "vor",
+            "der",
+            "Prüfung",
+            "wiederhole",
+            "ich",
+            "nur",
+            "noch",
+            "die",
+            "wichtigsten",
+            "Punkte",
+            "und",
+            "lerne",
+            "nichts",
+            "völlig",
+            "Neues",
+            "mehr.",
+            "Am"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Am",
+            "Abend",
+            "vor",
+            "der",
+            "Prüfung",
+            "wiederhole",
+            "ich",
+            "nur",
+            "noch",
+            "die",
+            "wichtigsten",
+            "Punkte",
+            "und",
+            "lerne",
+            "nichts",
+            "völlig",
+            "Neues",
+            "mehr."
+          ],
+          "value": "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr. — شب قبل از آزمون فقط نکات مهم را مرور می‌کنم و دیگر چیز کاملاً جدیدی یاد نمی‌گیرم.",
+          "model_answer": "Am Abend vor der Prüfung wiederhole ich nur noch die wichtigsten Punkte und lerne nichts völlig Neues mehr."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1167 @@
+{
+  "batch_id": "de-de-b1-doctor-visit-followup-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "B1",
+  "curriculum_unit": "b1-de-doctor-visit-followup",
+  "generator": "gpt-5.6-sol:german-b1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_doctor_visit_followup_01",
+      "data": {
+        "slug": "de_b1_doctor_visit_followup_beschwerde",
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Beschwerde"
+        },
+        "translations": {
+          "fa": "عارضه / ناراحتی"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_doctor_visit_followup_01",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "lemma": "Beschwerde",
+        "display_lemma": "Beschwerde",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_beschwerde"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_doctor_visit_followup_01",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "lexeme_ref": "lx_doctor_visit_followup_01",
+        "surface_form": "Beschwerde",
+        "display_form": "Beschwerde",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_doctor_visit_followup_02",
+      "data": {
+        "slug": "de_b1_doctor_visit_followup_untersuchen",
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "untersuchen"
+        },
+        "translations": {
+          "fa": "معاینه کردن"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_doctor_visit_followup_02",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "lemma": "untersuchen",
+        "display_lemma": "untersuchen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_untersuchen"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_doctor_visit_followup_02",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "lexeme_ref": "lx_doctor_visit_followup_02",
+        "surface_form": "untersuchen",
+        "display_form": "untersuchen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_doctor_visit_followup_03",
+      "data": {
+        "slug": "de_b1_doctor_visit_followup_termin",
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Termin"
+        },
+        "translations": {
+          "fa": "وقت ملاقات"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_doctor_visit_followup_03",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "lemma": "Termin",
+        "display_lemma": "Termin",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_termin"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_doctor_visit_followup_03",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "lexeme_ref": "lx_doctor_visit_followup_03",
+        "surface_form": "Termin",
+        "display_form": "Termin",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_doctor_visit_followup_04",
+      "data": {
+        "slug": "de_b1_doctor_visit_followup_empfehlung",
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Empfehlung"
+        },
+        "translations": {
+          "fa": "توصیه"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_doctor_visit_followup_04",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "lemma": "Empfehlung",
+        "display_lemma": "Empfehlung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_empfehlung"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_doctor_visit_followup_04",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "lexeme_ref": "lx_doctor_visit_followup_04",
+        "surface_form": "Empfehlung",
+        "display_form": "Empfehlung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_doctor_visit_followup_05",
+      "data": {
+        "slug": "de_b1_doctor_visit_followup_schonen",
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "sich schonen"
+        },
+        "translations": {
+          "fa": "استراحت و مراقبت کردن"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_doctor_visit_followup_05",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "lemma": "sich schonen",
+        "display_lemma": "sich schonen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_schonen"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_doctor_visit_followup_05",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "lexeme_ref": "lx_doctor_visit_followup_05",
+        "surface_form": "sich schonen",
+        "display_form": "sich schonen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_doctor_visit_followup_06",
+      "data": {
+        "slug": "de_b1_doctor_visit_followup_kontrolle",
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Kontrolle"
+        },
+        "translations": {
+          "fa": "بررسی مجدد"
+        },
+        "cefr": "B1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_doctor_visit_followup_06",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "lemma": "Kontrolle",
+        "display_lemma": "Kontrolle",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_kontrolle"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_doctor_visit_followup_06",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "lexeme_ref": "lx_doctor_visit_followup_06",
+        "surface_form": "Kontrolle",
+        "display_form": "Kontrolle",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_doctor_visit_followup_01",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "text": {
+          "de": "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden."
+        },
+        "translations": {
+          "fa": "این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند."
+        },
+        "intent": "describe_symptoms",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_beschwerde"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_doctor_visit_followup_02",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "text": {
+          "de": "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe."
+        },
+        "translations": {
+          "fa": "پزشک اول مرا معاینه می‌کند و می‌پرسد آیا ناراحتی دیگری هم دارم."
+        },
+        "intent": "describe_exam",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_untersuchen",
+          "de_b1_doctor_visit_followup_beschwerde"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_doctor_visit_followup_03",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "text": {
+          "de": "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse."
+        },
+        "translations": {
+          "fa": "بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم."
+        },
+        "intent": "note_advice",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_termin",
+          "de_b1_doctor_visit_followup_empfehlung"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_doctor_visit_followup_04",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "text": {
+          "de": "Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten."
+        },
+        "translations": {
+          "fa": "به من توصیه شد چند روز استراحت کنم و حواسم به تغییرات باشد."
+        },
+        "intent": "report_advice",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_empfehlung",
+          "de_b1_doctor_visit_followup_schonen"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_doctor_visit_followup_05",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "text": {
+          "de": "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren."
+        },
+        "translations": {
+          "fa": "اگر ناراحتی‌ها بهتر نشوند، باید برای بررسی دوباره وقت بگیرم."
+        },
+        "intent": "follow_up",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_beschwerde",
+          "de_b1_doctor_visit_followup_termin",
+          "de_b1_doctor_visit_followup_kontrolle"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_doctor_visit_followup_06",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "text": {
+          "de": "Je genauer ich beschreibe, wann die Beschwerden auftreten, desto leichter lässt sich der Verlauf einschätzen."
+        },
+        "translations": {
+          "fa": "هرچه دقیق‌تر توضیح بدهم ناراحتی چه زمانی ظاهر می‌شود، ارزیابی روند آن آسان‌تر می‌شود."
+        },
+        "intent": "describe_precisely",
+        "concept_refs": [
+          "de_b1_doctor_visit_followup_beschwerde"
+        ],
+        "cefr": "B1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_doctor_visit_followup_01",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "slug": "b1-de-doctor-visit-followup-g1",
+        "title": "seit / vor bei Beschwerden",
+        "rule_summary": "Use vor for the starting point and seit for a state that continues until now.",
+        "explanation": {
+          "fa": "برای زمان شروع از vor و برای وضعیتی که تا الان ادامه دارد از seit استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Die Beschwerden haben vor drei Tagen angefangen.",
+            "fa": "ناراحتی سه روز پیش شروع شد."
+          },
+          {
+            "de": "Seit gestern ist es stärker.",
+            "fa": "از دیروز شدیدتر شده است."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_doctor_visit_followup_02",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "slug": "b1-de-doctor-visit-followup-g2",
+        "title": "Passiv Präteritum für Empfehlungen",
+        "rule_summary": "Use wurde + Partizip II to report general recommendations without focusing on who said them.",
+        "explanation": {
+          "fa": "برای بازگویی توصیهٔ کلی بدون تمرکز بر گوینده، از wurde + Partizip II استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Mir wurde Ruhe empfohlen.",
+            "fa": "به من استراحت توصیه شد."
+          },
+          {
+            "de": "Eine Kontrolle wurde vorgeschlagen.",
+            "fa": "بررسی مجدد پیشنهاد شد."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_doctor_visit_followup_03",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "slug": "b1-de-doctor-visit-followup-g3",
+        "title": "falls + sollen",
+        "rule_summary": "Use falls for possible developments and sollen to report follow-up instructions.",
+        "explanation": {
+          "fa": "برای احتمال‌های آینده از falls و برای بازگویی دستور پیگیری از sollen استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Falls es nicht besser wird, soll ich wiederkommen.",
+            "fa": "اگر بهتر نشد، باید دوباره مراجعه کنم."
+          },
+          {
+            "de": "Ich soll bei Bedarf einen neuen Termin machen.",
+            "fa": "در صورت نیاز باید وقت جدید بگیرم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_doctor_visit_followup_01",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "title": "Seit wann?",
+        "setting": "Praxis",
+        "cefr": "B1",
+        "topic": "basic-health",
+        "characters": [
+          "Anna",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Seit wann haben Sie die Beschwerden?",
+            "translation_fa": "از چه زمانی این ناراحتی را دارید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Seit drei Tagen, aber seit gestern sind sie stärker.",
+            "translation_fa": "سه روز است، اما از دیروز شدیدتر شده‌اند."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Haben Sie noch andere Beschwerden bemerkt?",
+            "translation_fa": "ناراحتی دیگری هم متوجه شده‌اید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Nein, hauptsächlich diese.",
+            "translation_fa": "نه، بیشتر همین مورد است."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_doctor_visit_followup_02",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "title": "Nach dem Termin",
+        "setting": "Café",
+        "cefr": "B1",
+        "topic": "basic-health",
+        "characters": [
+          "Mia",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Wie war dein Termin?",
+            "translation_fa": "ویزیتت چطور بود؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Gut. Ich habe ein paar allgemeine Empfehlungen bekommen.",
+            "translation_fa": "خوب بود. چند توصیهٔ کلی گرفتم."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Hast du sie dir gemerkt?",
+            "translation_fa": "یادت مانده‌اند؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Ja, ich habe die wichtigsten Punkte direkt notiert.",
+            "translation_fa": "بله، مهم‌ترین نکات را همان موقع یادداشت کردم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_doctor_visit_followup_03",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "title": "Noch eine Kontrolle",
+        "setting": "Telefon",
+        "cefr": "B1",
+        "topic": "basic-health",
+        "characters": [
+          "Lea",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Geht es dir inzwischen besser?",
+            "translation_fa": "الان بهتر شده‌ای؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Ein bisschen. Falls es nicht weiter besser wird, vereinbare ich einen neuen Termin.",
+            "translation_fa": "کمی. اگر بیشتر بهتر نشود، یک وقت جدید می‌گیرم."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Dann hast du einen klaren Plan für die nächsten Tage.",
+            "translation_fa": "پس برای چند روز آینده برنامهٔ روشنی داری."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Genau, das beruhigt mich auch.",
+            "translation_fa": "دقیقاً، این خودش خیالم را راحت‌تر می‌کند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_01_mc",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند.»؟"
+        },
+        "options": [
+          "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden.",
+          "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe.",
+          "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse.",
+          "Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten."
+        ],
+        "answer": {
+          "value": "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden. — این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند.",
+          "model_answer": "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_01_listen",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden."
+        },
+        "options": [
+          "این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند.",
+          "پزشک اول مرا معاینه می‌کند و می‌پرسد آیا ناراحتی دیگری هم دارم.",
+          "بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم.",
+          "به من توصیه شد چند روز استراحت کنم و حواسم به تغییرات باشد."
+        ],
+        "answer": {
+          "value": "این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden. — این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند.",
+          "model_answer": "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden.",
+          "transcript_de": "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_01_speak",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe."
+        },
+        "answer": {
+          "expected_text": "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe. — پزشک اول مرا معاینه می‌کند و می‌پرسد آیا ناراحتی دیگری هم دارم.",
+          "model_answer": "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_01_trans",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "پزشک اول مرا معاینه می‌کند و می‌پرسد آیا ناراحتی دیگری هم دارم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe. — پزشک اول مرا معاینه می‌کند و می‌پرسد آیا ناراحتی دیگری هم دارم.",
+          "model_answer": "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_01_build",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Beschwerden",
+            "haben",
+            "vor",
+            "drei",
+            "Tagen",
+            "angefangen",
+            "und",
+            "sind",
+            "seit",
+            "gestern",
+            "stärker",
+            "geworden.",
+            "Die"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Die",
+            "Beschwerden",
+            "haben",
+            "vor",
+            "drei",
+            "Tagen",
+            "angefangen",
+            "und",
+            "sind",
+            "seit",
+            "gestern",
+            "stärker",
+            "geworden."
+          ],
+          "value": "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden. — این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند.",
+          "model_answer": "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_02_mc",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم.»؟"
+        },
+        "options": [
+          "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse.",
+          "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden.",
+          "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe.",
+          "Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten."
+        ],
+        "answer": {
+          "value": "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse. — بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم.",
+          "model_answer": "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_02_listen",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse."
+        },
+        "options": [
+          "بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم.",
+          "این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند.",
+          "پزشک اول مرا معاینه می‌کند و می‌پرسد آیا ناراحتی دیگری هم دارم.",
+          "به من توصیه شد چند روز استراحت کنم و حواسم به تغییرات باشد."
+        ],
+        "answer": {
+          "value": "بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse. — بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم.",
+          "model_answer": "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse.",
+          "transcript_de": "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_02_speak",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten."
+        },
+        "answer": {
+          "expected_text": "Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten. — به من توصیه شد چند روز استراحت کنم و حواسم به تغییرات باشد.",
+          "model_answer": "Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_02_trans",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "به من توصیه شد چند روز استراحت کنم و حواسم به تغییرات باشد.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten. — به من توصیه شد چند روز استراحت کنم و حواسم به تغییرات باشد.",
+          "model_answer": "Mir wurde empfohlen, mich ein paar Tage zu schonen und auf Veränderungen zu achten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_02_build",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "dem",
+            "Termin",
+            "schreibe",
+            "ich",
+            "mir",
+            "die",
+            "wichtigsten",
+            "Empfehlungen",
+            "auf,",
+            "damit",
+            "ich",
+            "nichts",
+            "vergesse.",
+            "Nach"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Nach",
+            "dem",
+            "Termin",
+            "schreibe",
+            "ich",
+            "mir",
+            "die",
+            "wichtigsten",
+            "Empfehlungen",
+            "auf,",
+            "damit",
+            "ich",
+            "nichts",
+            "vergesse."
+          ],
+          "value": "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse. — بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم.",
+          "model_answer": "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_03_mc",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «اگر ناراحتی‌ها بهتر نشوند، باید برای بررسی دوباره وقت بگیرم.»؟"
+        },
+        "options": [
+          "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren.",
+          "Die Beschwerden haben vor drei Tagen angefangen und sind seit gestern stärker geworden.",
+          "Die Ärztin untersucht mich zuerst und fragt, ob ich noch andere Beschwerden habe.",
+          "Nach dem Termin schreibe ich mir die wichtigsten Empfehlungen auf, damit ich nichts vergesse."
+        ],
+        "answer": {
+          "value": "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren. — اگر ناراحتی‌ها بهتر نشوند، باید برای بررسی دوباره وقت بگیرم.",
+          "model_answer": "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_03_listen",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren."
+        },
+        "options": [
+          "اگر ناراحتی‌ها بهتر نشوند، باید برای بررسی دوباره وقت بگیرم.",
+          "این ناراحتی‌ها سه روز پیش شروع شدند و از دیروز شدیدتر شده‌اند.",
+          "پزشک اول مرا معاینه می‌کند و می‌پرسد آیا ناراحتی دیگری هم دارم.",
+          "بعد از ویزیت مهم‌ترین توصیه‌ها را یادداشت می‌کنم تا چیزی را فراموش نکنم."
+        ],
+        "answer": {
+          "value": "اگر ناراحتی‌ها بهتر نشوند، باید برای بررسی دوباره وقت بگیرم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren. — اگر ناراحتی‌ها بهتر نشوند، باید برای بررسی دوباره وقت بگیرم.",
+          "model_answer": "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren.",
+          "transcript_de": "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_03_speak",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Je genauer ich beschreibe, wann die Beschwerden auftreten, desto leichter lässt sich der Verlauf einschätzen."
+        },
+        "answer": {
+          "expected_text": "Je genauer ich beschreibe, wann die Beschwerden auftreten, desto leichter lässt sich der Verlauf einschätzen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je genauer ich beschreibe, wann die Beschwerden auftreten, desto leichter lässt sich der Verlauf einschätzen. — هرچه دقیق‌تر توضیح بدهم ناراحتی چه زمانی ظاهر می‌شود، ارزیابی روند آن آسان‌تر می‌شود.",
+          "model_answer": "Je genauer ich beschreibe, wann die Beschwerden auftreten, desto leichter lässt sich der Verlauf einschätzen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_03_trans",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "هرچه دقیق‌تر توضیح بدهم ناراحتی چه زمانی ظاهر می‌شود، ارزیابی روند آن آسان‌تر می‌شود.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Je genauer ich beschreibe, wann die Beschwerden auftreten, desto leichter lässt sich der Verlauf einschätzen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je genauer ich beschreibe, wann die Beschwerden auftreten, desto leichter lässt sich der Verlauf einschätzen. — هرچه دقیق‌تر توضیح بدهم ناراحتی چه زمانی ظاهر می‌شود، ارزیابی روند آن آسان‌تر می‌شود.",
+          "model_answer": "Je genauer ich beschreibe, wann die Beschwerden auftreten, desto leichter lässt sich der Verlauf einschätzen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_doctor_visit_followup_03_build",
+      "data": {
+        "lesson_key": "b1-de-doctor-visit-followup-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "die",
+            "Beschwerden",
+            "nicht",
+            "besser",
+            "werden,",
+            "soll",
+            "ich",
+            "einen",
+            "neuen",
+            "Termin",
+            "für",
+            "eine",
+            "Kontrolle",
+            "vereinbaren.",
+            "Falls"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Falls",
+            "die",
+            "Beschwerden",
+            "nicht",
+            "besser",
+            "werden,",
+            "soll",
+            "ich",
+            "einen",
+            "neuen",
+            "Termin",
+            "für",
+            "eine",
+            "Kontrolle",
+            "vereinbaren."
+          ],
+          "value": "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren. — اگر ناراحتی‌ها بهتر نشوند، باید برای بررسی دوباره وقت بگیرم.",
+          "model_answer": "Falls die Beschwerden nicht besser werden, soll ich einen neuen Termin für eine Kontrolle vereinbaren."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
