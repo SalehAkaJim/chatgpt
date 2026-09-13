@@ -42,7 +42,7 @@ jobs:
             --output audio/manifests/de/A2.json
       - name: Validate locked German voices without TTS
         run: |
-          python scripts/audit_voice_lock.py \
+          python -m scripts.audit_voice_lock \
             --lock audio/voices/de-DE.lock.json \
             --registry audio/voices/de-DE.json \
             --strict
@@ -56,7 +56,7 @@ jobs:
           missing=[k for k in needed if k not in locks]
           categories=Counter(x['category'] for x in manifest['items'])
           chars=sorted({x.get('metadata',{}).get('character') for x in manifest['items'] if x.get('metadata',{}).get('character')})
-          print(json.dumps({'items':len(manifest['items']),'categories':categories,'voice_keys':len(needed),'characters':len(chars),'missing_voice_locks':missing},ensure_ascii=False,default=dict))
+          print(json.dumps({'items':len(manifest['items']),'categories':dict(categories),'voice_keys':len(needed),'characters':len(chars),'missing_voice_locks':missing},ensure_ascii=False))
           if missing:
               raise SystemExit('A2 manifest needs unresolved voice locks: '+', '.join(missing))
           PY
