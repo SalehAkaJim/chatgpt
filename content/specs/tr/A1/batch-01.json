@@ -1,0 +1,108 @@
+{
+  "batch": 1,
+  "level": "A1",
+  "variant": "tr-TR",
+  "pedagogy": {
+    "learner_language": "fa-IR",
+    "standard": "contemporary Istanbul Turkish",
+    "principles": [
+      "build directly on Turkish Pre-A1 chunks without reteaching them",
+      "teach agglutinative endings through communicative contrasts before terminology",
+      "make vowel harmony visible in small reusable patterns",
+      "keep Persian explanations concise and contrastive",
+      "use natural Istanbul Turkish in short coherent situations"
+    ]
+  },
+  "units": [
+    {
+      "slug": "who-i-am",
+      "topic": "personal-information",
+      "title": "Ben öğrenciyim",
+      "vocab": [["ogrenci","öğrenci","دانشجو","noun",1],["ogretmen","öğretmen","معلم","noun",1],["muhendis","mühendis","مهندس","noun",1],["iranli","İranlı","ایرانی","adjective",2],["turkiyeli","Türkiyeli","اهل ترکیه","adjective",2],["degil","değil","نیست / نه","particle",2]],
+      "utterances": [["u1","Ben öğrenciyim.","من دانشجو هستم.","state_identity",["ogrenci"],1],["u2","Sen öğretmensin.","تو معلم هستی.","state_identity_other",["ogretmen"],1],["u3","Ben İranlıyım.","من ایرانی هستم.","state_origin",["iranli"],2],["u4","Ben öğretmen değilim.","من معلم نیستم.","negate_identity",["ogretmen","degil"],2]],
+      "grammar": ["Kişi eki: -im / -sin","In present nominal sentences Turkish usually attaches the person meaning to the predicate: öğrenciyim, öğretmensin.","در جمله‌های اسمیِ زمان حال، معنی «هستم/هستی» معمولاً با پسوند روی خودِ کلمه می‌آید: öğrenciyim یعنی «دانشجو هستم». شکل پسوند با واکهٔ کلمه هماهنگ می‌شود.",[["Ben öğrenciyim.","من دانشجو هستم."],["Sen öğretmensin.","تو معلم هستی."]]],
+      "dialogues": [["Yeni sınıf arkadaşı","کلاس زبان",[["Elif","Sen öğrenci misin?","تو دانشجویی؟"],["Mert","Evet, öğrenciyim. Sen?","بله، دانشجو هستم. تو؟"],["Elif","Ben öğretmenim.","من معلم هستم."],["Mert","Memnun oldum.","خوشوقتم."]],1],["Nerelisin?","آشنایی کوتاه",[["Selin","Sen İranlı mısın?","تو ایرانی هستی؟"],["Kaan","Evet, İranlıyım.","بله، ایرانی هستم."],["Selin","Ben Türkiyeliyim.","من اهل ترکیه هستم."],["Kaan","Anladım.","فهمیدم."]],2]]
+    },
+    {
+      "slug": "this-and-these",
+      "topic": "objects",
+      "title": "Bu kitap, bunlar kitaplar",
+      "vocab": [["kitap","kitap","کتاب","noun",1],["telefon","telefon","تلفن","noun",1],["anahtar","anahtar","کلید","noun",1],["bu","bu","این","demonstrative",2],["bunlar","bunlar","این‌ها","pronoun",2],["lar","-lar/-ler","پسوند جمع","suffix",2]],
+      "utterances": [["u1","Bu kitap.","این کتاب است.","identify_object",["bu","kitap"],1],["u2","Bu telefon mu?","این تلفن است؟", "ask_object",["bu","telefon"],1],["u3","Bunlar anahtarlar.","این‌ها کلید هستند.","identify_plural",["bunlar","anahtar","lar"],2],["u4","Bunlar kitaplar mı?","این‌ها کتاب هستند؟","ask_plural",["bunlar","kitap","lar"],2]],
+      "grammar": ["Çoğul: -lar / -ler","Turkish plural uses -lar or -ler according to vowel harmony.","جمع در ترکی با -lar یا -ler ساخته می‌شود. فعلاً به صدای آخرین واکه توجه کن: kitaplar ولی evler.",[["kitaplar","کتاب‌ها"],["evler","خانه‌ها"]]],
+      "dialogues": [["Masadaki şeyler","روی میز",[["Deniz","Bu ne?","این چیه؟"],["Zeynep","Bu telefon.","این تلفنه."],["Deniz","Bu da anahtar mı?","این یکی هم کلیده؟"],["Zeynep","Evet, anahtar.","بله، کلیده."]],1],["Kutudakiler","داخل جعبه",[["Emre","Bunlar ne?","این‌ها چی هستند؟"],["Burak","Bunlar kitaplar.","این‌ها کتاب هستند."],["Emre","Anahtarlar nerede?","کلیدها کجاست؟"],["Burak","Burada.","اینجاست."]],2]]
+    },
+    {
+      "slug": "my-family",
+      "topic": "family",
+      "title": "Ailem",
+      "vocab": [["anne","anne","مادر","noun",1],["baba","baba","پدر","noun",1],["kardes","kardeş","خواهر یا برادر","noun",1],["aile","aile","خانواده","noun",2],["benim","benim","مال من / منِ","pronoun",2],["var","var","وجود دارد / دارم","predicate",2]],
+      "utterances": [["u1","Bu benim annem.","این مادر من است.","introduce_family",["anne","benim"],1],["u2","Bu benim babam.","این پدر من است.","introduce_family",["baba","benim"],1],["u3","Bir kardeşim var.","یک خواهر یا برادر دارم.","state_family",["kardes","var"],2],["u4","Ailem İstanbul'da.","خانواده‌ام در استانبول است.","state_family_location",["aile"],2]],
+      "grammar": ["İyelik: annem, babam","Possession can be marked on the noun: annem = my mother, babam = my father.","در ترکی «مالِ من» می‌تواند داخل خود اسم بیاید: annem یعنی «مادرم»، babam یعنی «پدرم». این همان الگوی adım از Pre-A1 است که حالا گسترشش می‌دهیم.",[["annem","مادرم"],["babam","پدرم"]]],
+      "dialogues": [["Fotoğraftaki aile","دیدن عکس",[["Elif","Bu kim?","این کیه؟"],["Kaan","Bu benim annem.","این مادرم است."],["Elif","Bu da baban mı?","این یکی هم پدرته؟"],["Kaan","Evet, babam.","بله، پدرمه."]],1],["Kardeşler","صحبت درباره خانواده",[["Selin","Kardeşin var mı?","خواهر یا برادر داری؟"],["Mert","Evet, bir kardeşim var.","بله، یکی دارم."],["Selin","Benim iki kardeşim var.","من دو خواهر یا برادر دارم."],["Mert","Güzel!","عالیه!"]],2]]
+    },
+    {
+      "slug": "at-home",
+      "topic": "home",
+      "title": "Evde ne var?",
+      "vocab": [["ev","ev","خانه","noun",1],["oda","oda","اتاق","noun",1],["mutfak","mutfak","آشپزخانه","noun",1],["evde","evde","در خانه","expression",2],["nerede","nerede","کجا","question_word",2],["yok","yok","وجود ندارد / نیست","predicate",2]],
+      "utterances": [["u1","Evde iki oda var.","در خانه دو اتاق هست.","state_presence",["evde","oda"],1],["u2","Mutfak burada.","آشپزخانه اینجاست.","state_location",["mutfak"],1],["u3","Telefon nerede?","تلفن کجاست؟","ask_location",["nerede"],2],["u4","Burada telefon yok.","اینجا تلفن نیست.","state_absence",["yok"],2]],
+      "grammar": ["Bulunma: -da / -de","The locative ending -da/-de expresses being in/at a place: evde, okulda.","برای گفتن «در/داخلِ یک جا» از -da/-de استفاده می‌شود: evde یعنی «در خانه». انتخاب شکل پسوند با هماهنگی واکه انجام می‌شود.",[["evde","در خانه"],["okulda","در مدرسه"]]],
+      "dialogues": [["Yeni ev","خانه جدید",[["Deniz","Evde kaç oda var?","خانه چند اتاق دارد؟"],["Burak","İki oda var.","دو اتاق دارد."],["Deniz","Mutfak nerede?","آشپزخانه کجاست؟"],["Burak","Burada.","اینجاست."]],1],["Anahtar nerede?","دنبال کلید",[["Zeynep","Anahtar nerede?","کلید کجاست؟"],["Emre","Masada değil.","روی میز نیست."],["Zeynep","Burada da yok.","اینجا هم نیست."],["Emre","Çantada!","داخل کیفه!"]],2]]
+    },
+    {
+      "slug": "what-im-doing",
+      "topic": "daily-actions",
+      "title": "Şimdi ne yapıyorsun?",
+      "vocab": [["gelmek","gelmek","آمدن","verb",1],["gitmek","gitmek","رفتن","verb",1],["calismak","çalışmak","کار/درس خواندن","verb",1],["yemek","yemek","خوردن","verb",2],["icmek","içmek","نوشیدن","verb",2],["simdi","şimdi","الان","adverb",2]],
+      "utterances": [["u1","Şimdi çalışıyorum.","الان دارم کار/درس می‌خوانم.","state_current_action",["calismak","simdi"],1],["u2","Sen ne yapıyorsun?","تو داری چه کار می‌کنی؟","ask_current_action",[],1],["u3","Çay içiyorum.","دارم چای می‌نوشم.","state_current_action",["icmek"],2],["u4","Eve gidiyorum.","دارم به خانه می‌روم.","state_current_action",["gitmek"],2]],
+      "grammar": ["Şimdiki zaman: -iyor","A1 Turkish commonly uses the progressive -iyor family for actions happening now.","برای کاری که الان در جریان است، خانوادهٔ -iyor خیلی پرکاربرد است: çalışıyorum «دارم کار می‌کنم». شکل واکه می‌تواند -ıyor/-iyor/-uyor/-üyor باشد.",[["Çalışıyorum.","دارم کار می‌کنم."],["Çay içiyorum.","دارم چای می‌نوشم."]]],
+      "dialogues": [["Telefon konuşması","تماس کوتاه",[["Kaan","Ne yapıyorsun?","داری چه کار می‌کنی؟"],["Elif","Çalışıyorum. Sen?","دارم کار می‌کنم. تو؟"],["Kaan","Eve gidiyorum.","دارم می‌رم خانه."],["Elif","Tamam, görüşürüz.","باشه، می‌بینمت."]],1],["Kafede","کافه",[["Mert","Ne içiyorsun?","چی می‌نوشی؟"],["Selin","Çay içiyorum.","دارم چای می‌نوشم."],["Mert","Ben kahve içiyorum.","من دارم قهوه می‌نوشم."],["Selin","Afiyet olsun.","نوش جان."]],2]]
+    },
+    {
+      "slug": "time-and-plans",
+      "topic": "time",
+      "title": "Saat kaç?",
+      "vocab": [["saat","saat","ساعت","noun",1],["bugun","bugün","امروز","adverb",1],["yarin","yarın","فردا","adverb",1],["sabah","sabah","صبح","noun",2],["aksam","akşam","عصر / شب","noun",2],["kacta","kaçta","ساعت چند","question_word",2]],
+      "utterances": [["u1","Saat kaç?","ساعت چنده؟","ask_time",["saat"],1],["u2","Saat üç.","ساعت سه است.","tell_time",["saat"],1],["u3","Yarın saat kaçta?","فردا ساعت چند؟","ask_plan_time",["yarin","kacta"],2],["u4","Akşam saat yedide.","عصر ساعت هفت.","tell_plan_time",["aksam","saat"],2]],
+      "grammar": ["Saat üç / saat üçte","For clock time, saat üç states the time; saat üçte means at three o'clock.","برای گفتن خودِ ساعت می‌گویی saat üç؛ برای «ساعت سه / در ساعت سه» پسوند مکانی/زمانی می‌آید: saat üçte.",[["Saat üç.","ساعت سه است."],["Saat üçte.","ساعت سه / در ساعت سه."]]],
+      "dialogues": [["Saati sormak","ایستگاه",[["Emre","Saat kaç?","ساعت چنده؟"],["Zeynep","Saat dört.","ساعت چهاره."],["Emre","Teşekkürler.","ممنون."],["Zeynep","Rica ederim.","خواهش می‌کنم."]],1],["Yarın buluşma","قرار فردا",[["Burak","Yarın görüşüyor muyuz?","فردا همدیگه رو می‌بینیم؟"],["Deniz","Evet. Saat kaçta?","بله. ساعت چند؟"],["Burak","Akşam yedide.","عصر ساعت هفت."],["Deniz","Tamam.","باشه."]],2]]
+    },
+    {
+      "slug": "at-the-cafe",
+      "topic": "food-drink",
+      "title": "Bir kahve alabilir miyim?",
+      "vocab": [["kahve","kahve","قهوه","noun",1],["su","su","آب","noun",1],["menu","menü","منو","noun",1],["istemek","istemek","خواستن","verb",2],["almak","almak","گرفتن / خریدن","verb",2],["lutfen","lütfen","لطفاً","adverb",2]],
+      "utterances": [["u1","Bir kahve istiyorum.","یک قهوه می‌خواهم.","order_item",["kahve","istemek"],1],["u2","Menü, lütfen.","منو، لطفاً.","request_menu",["menu","lutfen"],1],["u3","Bir su alabilir miyim?","می‌توانم یک آب بگیرم؟","polite_request",["su","almak"],2],["u4","Başka bir şey istemiyorum.","چیز دیگری نمی‌خواهم.","decline_more",["istemek"],2]],
+      "grammar": ["İstiyorum","The progressive form of istemek is the standard everyday way to say what you want in service situations.","در کافه و خرید، istiyorum یک راه طبیعی و مستقیم برای «می‌خواهم» است. با lütfen یا سؤال مودبانه، لحن نرم‌تر می‌شود.",[["Bir kahve istiyorum.","یک قهوه می‌خواهم."],["Menü, lütfen.","منو، لطفاً."]]],
+      "dialogues": [["Sipariş","سفارش در کافه",[["Selin","Merhaba. Bir kahve istiyorum.","سلام. یک قهوه می‌خواهم."],["Kaan","Tabii. Başka?","حتماً. چیز دیگری؟"],["Selin","Bir su da, lütfen.","یک آب هم لطفاً."],["Kaan","Tamam.","باشه."]],1],["Menü","درخواست منو",[["Elif","Menü alabilir miyim?","می‌توانم منو را بگیرم؟"],["Mert","Tabii, buyurun.","حتماً، بفرمایید."],["Elif","Teşekkür ederim.","ممنونم."],["Mert","Rica ederim.","خواهش می‌کنم."]],2]]
+    },
+    {
+      "slug": "shopping-basics",
+      "topic": "shopping",
+      "title": "Bu ne kadar?",
+      "vocab": [["fiyat","fiyat","قیمت","noun",1],["ucuz","ucuz","ارزان","adjective",1],["pahali","pahalı","گران","adjective",1],["kadar","ne kadar","چقدر","expression",2],["lira","lira","لیر","noun",2],["tane","tane","عدد / دانه","classifier",2]],
+      "utterances": [["u1","Bu ne kadar?","این چنده؟","ask_price",["kadar"],1],["u2","Yüz lira.","صد لیر.","state_price",["lira"],1],["u3","Bu çok pahalı.","این خیلی گران است.","evaluate_price",["pahali"],2],["u4","İki tane alıyorum.","دو تا می‌گیرم.","buy_quantity",["tane"],2]],
+      "grammar": ["Sayı + tane","tane can be used as a very common classifier after numbers when counting individual items.","برای شمارش چیزها در مکالمه، tane خیلی رایج است: iki tane یعنی «دو تا». بعد از عدد لازم نیست اسم را جمع کنی.",[["iki tane","دو تا"],["üç tane","سه تا"]]],
+      "dialogues": [["Fiyat sormak","فروشگاه",[["Deniz","Bu ne kadar?","این چنده؟"],["Burak","Yüz lira.","صد لیر."],["Deniz","Biraz pahalı.","یکم گرونه."],["Burak","Evet.","بله."]],1],["İki tane","خرید چند عدد",[["Zeynep","Kaç tane?","چند تا؟"],["Emre","İki tane, lütfen.","دو تا، لطفاً."],["Zeynep","Başka?","چیز دیگه؟"],["Emre","Hayır, teşekkürler.","نه، ممنون."]],2]]
+    },
+    {
+      "slug": "getting-around",
+      "topic": "directions",
+      "title": "Metroya nasıl giderim?",
+      "vocab": [["metro","metro","مترو","noun",1],["durak","durak","ایستگاه","noun",1],["sag","sağ","راست","noun",1],["sol","sol","چپ","noun",2],["duz","düz","مستقیم","adverb",2],["nasil","nasıl","چطور","question_word",2]],
+      "utterances": [["u1","Metro nerede?","مترو کجاست؟","ask_location",["metro"],1],["u2","Durak burada.","ایستگاه اینجاست.","state_location",["durak"],1],["u3","Düz gidin.","مستقیم بروید.","give_direction",["duz"],2],["u4","Sonra sağa dönün.","بعد به راست بپیچید.","give_direction",["sag"],2]],
+      "grammar": ["Yön: -a / -e","The dative -a/-e often marks movement toward a destination or direction: eve, sağa.","برای حرکت «به سمتِ» یک مقصد یا جهت، -a/-e می‌آید: eve یعنی «به خانه»، sağa یعنی «به راست». شکل پسوند با واکه هماهنگ می‌شود.",[["eve gidiyorum","به خانه می‌روم"],["sağa dönün","به راست بپیچید"]]],
+      "dialogues": [["Metro nerede?","خیابان",[["Mert","Affedersiniz, metro nerede?","ببخشید، مترو کجاست؟"],["Selin","Düz gidin.","مستقیم بروید."],["Mert","Uzak mı?","دوره؟"],["Selin","Hayır, yakın.","نه، نزدیکه."]],1],["Sağa dönün","پرسیدن مسیر",[["Kaan","Durağa nasıl giderim?","چطور به ایستگاه بروم؟"],["Elif","Düz gidin, sonra sağa dönün.","مستقیم بروید، بعد به راست بپیچید."],["Kaan","Teşekkür ederim.","ممنونم."],["Elif","Rica ederim.","خواهش می‌کنم."]],2]]
+    },
+    {
+      "slug": "a1-first-day-capstone",
+      "topic": "survival-conversation",
+      "title": "İstanbul'da ilk gün",
+      "vocab": [["bugun","bugün","امروز","adverb",1],["burada","burada","اینجا","adverb",1],["yakın","yakın","نزدیک","adjective",1],["sonra","sonra","بعد","adverb",2],["birlikte","birlikte","با هم","adverb",2],["tamam","tamam","باشه","interjection",2]],
+      "utterances": [["u1","Bugün İstanbul'dayım.","امروز در استانبول هستم.","state_location",["bugun"],1],["u2","Metro burada mı?","مترو اینجاست؟","ask_location",["burada"],1],["u3","Sonra birlikte kahve içiyoruz.","بعد با هم قهوه می‌نوشیم.","state_plan",["sonra","birlikte"],2],["u4","Tamam, saat yedide görüşürüz.","باشه، ساعت هفت می‌بینمت.","confirm_plan",["tamam"],2]],
+      "grammar": ["A1 birleştirme","A1 communication combines location, person endings, current actions, time, requests and directions in one short exchange.","اینجا نکتهٔ تازه‌ای اضافه نمی‌کنیم؛ هدف این است که هویت، مکان، زمان، مسیر، درخواست و -iyor را در یک گفت‌وگوی واقعی کوتاه کنار هم استفاده کنی.",[["Bugün İstanbul'dayım.","امروز در استانبول هستم."],["Saat yedide görüşürüz.","ساعت هفت می‌بینمت."]]],
+      "dialogues": [["İlk gün","مرکز استانبول",[["Emre","Merhaba, bugün İstanbul'dayım.","سلام، امروز در استانبول هستم."],["Zeynep","Hoş geldin! Metro burada, çok yakın.","خوش اومدی! مترو اینجاست، خیلی نزدیکه."],["Emre","Harika. Sonra kahve?","عالیه. بعدش قهوه؟"],["Zeynep","Olur.","باشه."]],1],["Akşam planı","قرار عصر",[["Burak","Saat kaçta görüşüyoruz?","ساعت چند همدیگه رو می‌بینیم؟"],["Deniz","Akşam yedide.","عصر ساعت هفت."],["Burak","Nerede?","کجا؟"],["Deniz","Metrodan sonra kafede.","بعد از مترو، در کافه."],["Burak","Tamam, görüşürüz.","باشه، می‌بینمت."]],2]]
+    }
+  ]
+}
