@@ -11,7 +11,7 @@ on:
       batch:
         description: 'B1 batch number (10 units per batch)'
         required: true
-        default: '2'
+        default: '3'
 
 permissions:
   contents: write
@@ -24,7 +24,7 @@ jobs:
   generate-batch:
     runs-on: ubuntu-latest
     env:
-      BATCH: ${{ github.event.inputs.batch || '2' }}
+      BATCH: ${{ github.event.inputs.batch || '3' }}
     steps:
       - name: Checkout German B1 branch
         uses: actions/checkout@v4
