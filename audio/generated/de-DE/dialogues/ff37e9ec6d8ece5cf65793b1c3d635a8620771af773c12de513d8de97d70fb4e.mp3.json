@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "6353307ee5bc22885b2bf2cf8cb7d8fe36b6c28625779840993f63fa7511c683",
+  "voice_id": "MbbPUteESkJWr4IAaW35",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "ff37e9ec6d8ece5cf65793b1c3d635a8620771af773c12de513d8de97d70fb4e",
+  "voice_key": "character:noah:male_professional",
+  "voice_name": "Felix - Direct and Clear",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "40eceef72638c08b6e11d5b817600404df1e0d421172fba94910ec7d24ca4b2e",
+  "duration_ms": 3056,
+  "generated_at": "2026-09-13T06:42:56.233084+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "0e08e078-f055-525d-bc10-3e8653f33320",
+      "entity_key": "d_food_nutrition_01:2"
+    }
+  ]
+}
