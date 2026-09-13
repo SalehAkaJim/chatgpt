@@ -93,7 +93,7 @@ jobs:
           print('total_audio_items=', total)
           PY
 
-      - name: Commit finalized content and pipelines
+      - name: Commit finalized non-workflow files
         shell: bash
         run: |
           set -euo pipefail
@@ -104,17 +104,12 @@ jobs:
             content/production/de/A1 \
             database/seed/german-prea1-curriculum.sql \
             database/import/de/pre_a1.py \
-            scripts/audit_german_beginner_content.py \
-            .github/workflows/mysql-german-a1-integration.yml \
-            .github/workflows/generate-german-audio.yml
+            scripts/audit_german_beginner_content.py
           git rm -r .staging/german
           git rm -f \
             content/specs/de/write-test.txt \
             content/specs/de/prea1-test.json \
             content/specs/de/fa-test.json \
             content/specs/de/blob-test.txt || true
-          git rm .github/workflows/finalize-german-beginner.yml
           git commit -m 'Complete German Pre-A1 and A1 production content'
-          git fetch origin language/german-a1
-          git rebase origin/language/german-a1
           git push origin HEAD:language/german-a1
