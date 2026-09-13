@@ -6,7 +6,7 @@ import argparse
 import json
 from pathlib import Path
 
-from scripts.generate_german_b2_batch import build_unit as build_b2_unit
+from generate_german_b2_batch import build_unit as build_b2_unit
 
 ROOT = Path(__file__).resolve().parents[1]
 
