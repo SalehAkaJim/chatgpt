@@ -1,0 +1,1153 @@
+{
+  "batch_id": "de-de-b2-scenario-decisions-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "B2",
+  "curriculum_unit": "b2-de-scenario-decisions",
+  "generator": "gpt-5.6-sol:german-b2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_scenario_decisions_01",
+      "data": {
+        "slug": "de_b2_scenario_decisions_szenario",
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Szenario"
+        },
+        "translations": {
+          "fa": "سناریو"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_scenario_decisions_01",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "lemma": "Szenario",
+        "display_lemma": "Szenario",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_scenario_decisions_szenario"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "neuter",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_scenario_decisions_01",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "lexeme_ref": "lx_scenario_decisions_01",
+        "surface_form": "Szenario",
+        "display_form": "Szenario",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_scenario_decisions_02",
+      "data": {
+        "slug": "de_b2_scenario_decisions_annahme",
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Annahme"
+        },
+        "translations": {
+          "fa": "فرض"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_scenario_decisions_02",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "lemma": "Annahme",
+        "display_lemma": "Annahme",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_scenario_decisions_annahme"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_scenario_decisions_02",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "lexeme_ref": "lx_scenario_decisions_02",
+        "surface_form": "Annahme",
+        "display_form": "Annahme",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_scenario_decisions_03",
+      "data": {
+        "slug": "de_b2_scenario_decisions_unsicherheit",
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Unsicherheit"
+        },
+        "translations": {
+          "fa": "عدم قطعیت"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_scenario_decisions_03",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "lemma": "Unsicherheit",
+        "display_lemma": "Unsicherheit",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_scenario_decisions_unsicherheit"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_scenario_decisions_03",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "lexeme_ref": "lx_scenario_decisions_03",
+        "surface_form": "Unsicherheit",
+        "display_form": "Unsicherheit",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_scenario_decisions_04",
+      "data": {
+        "slug": "de_b2_scenario_decisions_auswirkung",
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Auswirkung"
+        },
+        "translations": {
+          "fa": "اثر / پیامد"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_scenario_decisions_04",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "lemma": "Auswirkung",
+        "display_lemma": "Auswirkung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_scenario_decisions_auswirkung"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_scenario_decisions_04",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "lexeme_ref": "lx_scenario_decisions_04",
+        "surface_form": "Auswirkung",
+        "display_form": "Auswirkung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_scenario_decisions_05",
+      "data": {
+        "slug": "de_b2_scenario_decisions_spielraum",
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Spielraum"
+        },
+        "translations": {
+          "fa": "فضای مانور"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_scenario_decisions_05",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "lemma": "Spielraum",
+        "display_lemma": "Spielraum",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_scenario_decisions_spielraum"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_scenario_decisions_05",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "lexeme_ref": "lx_scenario_decisions_05",
+        "surface_form": "Spielraum",
+        "display_form": "Spielraum",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_scenario_decisions_06",
+      "data": {
+        "slug": "de_b2_scenario_decisions_belastbar",
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "belastbar"
+        },
+        "translations": {
+          "fa": "قابل‌اتکا / مقاوم"
+        },
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_scenario_decisions_06",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "lemma": "belastbar",
+        "display_lemma": "belastbar",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_b2_scenario_decisions_belastbar"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_scenario_decisions_06",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "lexeme_ref": "lx_scenario_decisions_06",
+        "surface_form": "belastbar",
+        "display_form": "belastbar",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_scenario_decisions_01",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "text": {
+          "de": "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten."
+        },
+        "translations": {
+          "fa": "تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم."
+        },
+        "intent": "state_assumption",
+        "concept_refs": [
+          "de_b2_scenario_decisions_annahme"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_scenario_decisions_02",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "text": {
+          "de": "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen."
+        },
+        "translations": {
+          "fa": "حداقل دو سناریو را بررسی می‌کنم، به‌جای اینکه فقط با بهترین حالت برنامه‌ریزی کنم."
+        },
+        "intent": "compare_scenarios",
+        "concept_refs": [
+          "de_b2_scenario_decisions_szenario"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_scenario_decisions_03",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "text": {
+          "de": "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt."
+        },
+        "translations": {
+          "fa": "بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است."
+        },
+        "intent": "identify_uncertainty",
+        "concept_refs": [
+          "de_b2_scenario_decisions_unsicherheit"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_scenario_decisions_04",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "text": {
+          "de": "Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase."
+        },
+        "translations": {
+          "fa": "اگر زمان جابه‌جا شود، مهم‌ترین پیامد دیرتر شدن مرحله تست است."
+        },
+        "intent": "assess_impact",
+        "concept_refs": [
+          "de_b2_scenario_decisions_auswirkung"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_scenario_decisions_05",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "text": {
+          "de": "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt."
+        },
+        "translations": {
+          "fa": "بهتر است گزینه‌ای انتخاب کنیم که برای تغییرهای کوچک فضای مانور کافی بگذارد."
+        },
+        "intent": "preserve_flexibility",
+        "concept_refs": [
+          "de_b2_scenario_decisions_spielraum"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_scenario_decisions_06",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "text": {
+          "de": "Eine belastbare Entscheidung funktioniert nicht nur im Idealfall, sondern auch bei moderaten Abweichungen."
+        },
+        "translations": {
+          "fa": "یک تصمیم قابل‌اتکا فقط در حالت ایده‌آل کار نمی‌کند، بلکه با تغییرهای معمول هم جواب می‌دهد."
+        },
+        "intent": "choose_robust_option",
+        "concept_refs": [
+          "de_b2_scenario_decisions_belastbar"
+        ],
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_scenario_decisions_01",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "slug": "b2-de-scenario-decisions-g1",
+        "title": "davon abhängen, welche/wie/ob ...",
+        "rule_summary": "Use davon abhängen with an indirect clause to state which uncertain factor drives a decision.",
+        "explanation": {
+          "fa": "برای بیان اینکه تصمیم به کدام عامل نامطمئن وابسته است از davon abhängen با جمله غیرمستقیم استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Es hängt davon ab, welche Annahme stimmt.",
+            "fa": "بستگی دارد کدام فرض درست باشد."
+          },
+          {
+            "de": "Die Entscheidung hängt davon ab, wie viel Zeit bleibt.",
+            "fa": "تصمیم به این بستگی دارد که چقدر زمان باقی بماند."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_scenario_decisions_02",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "slug": "b2-de-scenario-decisions-g2",
+        "title": "falls + Nebensatz",
+        "rule_summary": "Use falls to explore a plausible alternative scenario without claiming that it will happen.",
+        "explanation": {
+          "fa": "برای بررسی یک سناریوی احتمالی بدون قطعی دانستن آن از falls استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Falls sich der Termin ändert, brauchen wir einen neuen Plan.",
+            "fa": "اگر زمان تغییر کند، به برنامه جدید نیاز داریم."
+          },
+          {
+            "de": "Falls die Kosten steigen, reduzieren wir den Umfang.",
+            "fa": "اگر هزینه بالا برود، دامنه را کم می‌کنیم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_scenario_decisions_03",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "slug": "b2-de-scenario-decisions-g3",
+        "title": "nicht nur ..., sondern auch ...",
+        "rule_summary": "Use this structure to test whether a decision works beyond the ideal case.",
+        "explanation": {
+          "fa": "برای بررسی اینکه تصمیم فراتر از حالت ایده‌آل هم کار می‌کند از nicht nur ..., sondern auch ... استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Der Plan funktioniert nicht nur heute, sondern auch bei kleineren Änderungen.",
+            "fa": "برنامه فقط امروز کار نمی‌کند، بلکه با تغییرهای کوچک هم جواب می‌دهد."
+          },
+          {
+            "de": "Wir prüfen nicht nur Chancen, sondern auch Auswirkungen.",
+            "fa": "فقط فرصت‌ها را نمی‌سنجیم، بلکه پیامدها را هم بررسی می‌کنیم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_scenario_decisions_01",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "title": "Welche Annahme steckt dahinter?",
+        "setting": "Planungsrunde",
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "characters": [
+          "Sofia",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Der Zeitplan sieht gut aus, wenn die externe Freigabe am Montag kommt.",
+            "translation_fa": "برنامه زمانی خوب است اگر تأیید خارجی دوشنبه برسد."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Dann ist genau das unsere wichtigste Annahme.",
+            "translation_fa": "پس دقیقاً همین مهم‌ترین فرض ماست."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Wir sollten zusätzlich prüfen, was passiert, wenn sie zwei Tage später kommt.",
+            "translation_fa": "بهتر است بررسی کنیم اگر دو روز دیرتر برسد چه می‌شود."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "So sehen wir, ob der Plan auch außerhalb des Idealfalls funktioniert.",
+            "translation_fa": "این‌طوری می‌بینیم برنامه بیرون از حالت ایده‌آل هم کار می‌کند یا نه."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_scenario_decisions_02",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "title": "Die größte Unsicherheit",
+        "setting": "Projektanalyse",
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "characters": [
+          "Nina",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Bei den Kosten haben wir eine gute Schätzung, beim Termin aber nicht.",
+            "translation_fa": "برای هزینه برآورد خوبی داریم، اما برای زمان نه."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Dann liegt die größte Unsicherheit beim Zeitpunkt.",
+            "translation_fa": "پس بزرگ‌ترین عدم قطعیت مربوط به زمان است."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Genau. Wenn er sich verschiebt, rutscht vor allem die Testphase nach hinten.",
+            "translation_fa": "دقیقاً. اگر جابه‌جا شود، بیشتر مرحله تست عقب می‌افتد."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Dann sollten wir genau diese Auswirkung im Plan absichern.",
+            "translation_fa": "پس باید دقیقاً همین پیامد را در برنامه پوشش دهیم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_scenario_decisions_03",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "title": "Robust statt perfekt",
+        "setting": "Entscheidungsrunde",
+        "cefr": "B2",
+        "topic": "simple-messages",
+        "characters": [
+          "Clara",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Option A ist im besten Fall schneller, aber sehr empfindlich gegenüber Änderungen.",
+            "translation_fa": "گزینه A در بهترین حالت سریع‌تر است، اما نسبت به تغییرها خیلی حساس است."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Option B braucht etwas länger, lässt dafür mehr Spielraum.",
+            "translation_fa": "گزینه B کمی بیشتر زمان می‌برد، اما فضای مانور بیشتری می‌دهد."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Dann ist B wahrscheinlich die belastbarere Entscheidung.",
+            "translation_fa": "پس احتمالاً B تصمیم قابل‌اتکاتری است."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Ja, weil sie nicht nur im Idealfall funktioniert.",
+            "translation_fa": "بله، چون فقط در حالت ایده‌آل جواب نمی‌دهد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_01_mc",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم.»؟"
+        },
+        "options": [
+          "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten.",
+          "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen.",
+          "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt.",
+          "Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase."
+        ],
+        "answer": {
+          "value": "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten. — تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم.",
+          "model_answer": "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_01_listen",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten."
+        },
+        "options": [
+          "تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم.",
+          "حداقل دو سناریو را بررسی می‌کنم، به‌جای اینکه فقط با بهترین حالت برنامه‌ریزی کنم.",
+          "بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است.",
+          "اگر زمان جابه‌جا شود، مهم‌ترین پیامد دیرتر شدن مرحله تست است."
+        ],
+        "answer": {
+          "value": "تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten. — تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم.",
+          "model_answer": "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten.",
+          "transcript_de": "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_01_speak",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen."
+        },
+        "answer": {
+          "expected_text": "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen. — حداقل دو سناریو را بررسی می‌کنم، به‌جای اینکه فقط با بهترین حالت برنامه‌ریزی کنم.",
+          "model_answer": "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_01_trans",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "حداقل دو سناریو را بررسی می‌کنم، به‌جای اینکه فقط با بهترین حالت برنامه‌ریزی کنم.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen. — حداقل دو سناریو را بررسی می‌کنم، به‌جای اینکه فقط با بهترین حالت برنامه‌ریزی کنم.",
+          "model_answer": "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_01_build",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Entscheidung",
+            "hängt",
+            "stark",
+            "davon",
+            "ab,",
+            "welche",
+            "Annahme",
+            "wir",
+            "für",
+            "realistisch",
+            "halten.",
+            "Unsere"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Unsere",
+            "Entscheidung",
+            "hängt",
+            "stark",
+            "davon",
+            "ab,",
+            "welche",
+            "Annahme",
+            "wir",
+            "für",
+            "realistisch",
+            "halten."
+          ],
+          "value": "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten. — تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم.",
+          "model_answer": "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_02_mc",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است.»؟"
+        },
+        "options": [
+          "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt.",
+          "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten.",
+          "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen.",
+          "Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase."
+        ],
+        "answer": {
+          "value": "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt. — بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است.",
+          "model_answer": "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_02_listen",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt."
+        },
+        "options": [
+          "بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است.",
+          "تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم.",
+          "حداقل دو سناریو را بررسی می‌کنم، به‌جای اینکه فقط با بهترین حالت برنامه‌ریزی کنم.",
+          "اگر زمان جابه‌جا شود، مهم‌ترین پیامد دیرتر شدن مرحله تست است."
+        ],
+        "answer": {
+          "value": "بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt. — بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است.",
+          "model_answer": "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt.",
+          "transcript_de": "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_02_speak",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase."
+        },
+        "answer": {
+          "expected_text": "Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase. — اگر زمان جابه‌جا شود، مهم‌ترین پیامد دیرتر شدن مرحله تست است.",
+          "model_answer": "Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_02_trans",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "اگر زمان جابه‌جا شود، مهم‌ترین پیامد دیرتر شدن مرحله تست است.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase. — اگر زمان جابه‌جا شود، مهم‌ترین پیامد دیرتر شدن مرحله تست است.",
+          "model_answer": "Falls sich der Termin verschiebt, wäre die wichtigste Auswirkung eine spätere Testphase."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_02_build",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "größte",
+            "Unsicherheit",
+            "betrifft",
+            "im",
+            "Moment",
+            "nicht",
+            "die",
+            "Kosten,",
+            "sondern",
+            "den",
+            "Zeitpunkt.",
+            "Die"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Die",
+            "größte",
+            "Unsicherheit",
+            "betrifft",
+            "im",
+            "Moment",
+            "nicht",
+            "die",
+            "Kosten,",
+            "sondern",
+            "den",
+            "Zeitpunkt."
+          ],
+          "value": "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt. — بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است.",
+          "model_answer": "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_03_mc",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بهتر است گزینه‌ای انتخاب کنیم که برای تغییرهای کوچک فضای مانور کافی بگذارد.»؟"
+        },
+        "options": [
+          "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt.",
+          "Unsere Entscheidung hängt stark davon ab, welche Annahme wir für realistisch halten.",
+          "Ich würde mindestens zwei Szenarien prüfen, statt nur mit dem günstigsten Verlauf zu planen.",
+          "Die größte Unsicherheit betrifft im Moment nicht die Kosten, sondern den Zeitpunkt."
+        ],
+        "answer": {
+          "value": "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt. — بهتر است گزینه‌ای انتخاب کنیم که برای تغییرهای کوچک فضای مانور کافی بگذارد.",
+          "model_answer": "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_03_listen",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt."
+        },
+        "options": [
+          "بهتر است گزینه‌ای انتخاب کنیم که برای تغییرهای کوچک فضای مانور کافی بگذارد.",
+          "تصمیم ما خیلی به این بستگی دارد که کدام فرض را واقع‌بینانه بدانیم.",
+          "حداقل دو سناریو را بررسی می‌کنم، به‌جای اینکه فقط با بهترین حالت برنامه‌ریزی کنم.",
+          "بزرگ‌ترین عدم قطعیت فعلاً هزینه نیست، بلکه زمان است."
+        ],
+        "answer": {
+          "value": "بهتر است گزینه‌ای انتخاب کنیم که برای تغییرهای کوچک فضای مانور کافی بگذارد."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt. — بهتر است گزینه‌ای انتخاب کنیم که برای تغییرهای کوچک فضای مانور کافی بگذارد.",
+          "model_answer": "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt.",
+          "transcript_de": "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_03_speak",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Eine belastbare Entscheidung funktioniert nicht nur im Idealfall, sondern auch bei moderaten Abweichungen."
+        },
+        "answer": {
+          "expected_text": "Eine belastbare Entscheidung funktioniert nicht nur im Idealfall, sondern auch bei moderaten Abweichungen."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine belastbare Entscheidung funktioniert nicht nur im Idealfall, sondern auch bei moderaten Abweichungen. — یک تصمیم قابل‌اتکا فقط در حالت ایده‌آل کار نمی‌کند، بلکه با تغییرهای معمول هم جواب می‌دهد.",
+          "model_answer": "Eine belastbare Entscheidung funktioniert nicht nur im Idealfall, sondern auch bei moderaten Abweichungen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_03_trans",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "یک تصمیم قابل‌اتکا فقط در حالت ایده‌آل کار نمی‌کند، بلکه با تغییرهای معمول هم جواب می‌دهد.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Eine belastbare Entscheidung funktioniert nicht nur im Idealfall, sondern auch bei moderaten Abweichungen."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine belastbare Entscheidung funktioniert nicht nur im Idealfall, sondern auch bei moderaten Abweichungen. — یک تصمیم قابل‌اتکا فقط در حالت ایده‌آل کار نمی‌کند، بلکه با تغییرهای معمول هم جواب می‌دهد.",
+          "model_answer": "Eine belastbare Entscheidung funktioniert nicht nur im Idealfall, sondern auch bei moderaten Abweichungen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_scenario_decisions_03_build",
+      "data": {
+        "lesson_key": "b2-de-scenario-decisions-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "sollten",
+            "eine",
+            "Option",
+            "wählen,",
+            "die",
+            "genug",
+            "Spielraum",
+            "für",
+            "kleinere",
+            "Änderungen",
+            "lässt.",
+            "Wir"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Wir",
+            "sollten",
+            "eine",
+            "Option",
+            "wählen,",
+            "die",
+            "genug",
+            "Spielraum",
+            "für",
+            "kleinere",
+            "Änderungen",
+            "lässt."
+          ],
+          "value": "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt. — بهتر است گزینه‌ای انتخاب کنیم که برای تغییرهای کوچک فضای مانور کافی بگذارد.",
+          "model_answer": "Wir sollten eine Option wählen, die genug Spielraum für kleinere Änderungen lässt."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
