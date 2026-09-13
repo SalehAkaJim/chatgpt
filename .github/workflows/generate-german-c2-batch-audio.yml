@@ -1,0 +1,160 @@
+name: Generate German C2 Batch Audio
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/german-c2-batch-audio-trigger'
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: 'C2 batch number (1-10 units; final batch may be smaller)'
+        required: true
+        default: '1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: german-c2-batch-audio
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      CONTENT_TTS_CONCURRENCY: '2'
+      ELEVENLABS_MODEL_ID: eleven_multilingual_v2
+      ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
+      BATCH: ${{ github.event.inputs.batch || '1' }}
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Resolve batch from push trigger
+        if: github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          batch=$(sed -n 's/^batch=//p' .github/german-c2-batch-audio-trigger | head -n1)
+          test -n "$batch"
+          echo "BATCH=$batch" >> "$GITHUB_ENV"
+          echo "Resolved German C2 batch: $batch"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Require ElevenLabs connection
+        run: |
+          if [ -z "${ELEVENLABS_API_KEY:-}" ]; then
+            echo 'ELEVENLABS_API_KEY GitHub secret is missing.' >&2
+            exit 2
+          fi
+      - name: Select up to ten C2 units from this batch specs
+        run: |
+          set -euo pipefail
+          rm -rf build/c2-audio-batch
+          mkdir -p build/c2-audio-batch
+          python - <<'PY'
+          import json, os, pathlib, shutil
+          batch=int(os.environ['BATCH'])
+          spec_dir=pathlib.Path(f'content/specs/de/C2/batch-{batch:02d}')
+          specs=sorted(spec_dir.glob('*.json'))
+          if not 1 <= len(specs) <= 10:
+              raise SystemExit(f'Batch {batch} needs 1-10 specs, found {len(specs)}')
+          out=pathlib.Path('build/c2-audio-batch')
+          selected=[]
+          for spec_path in specs:
+              slug=json.loads(spec_path.read_text(encoding='utf-8'))['slug']
+              prod=pathlib.Path('content/production/de/C2') / f'c2-de-{slug}-v1.json'
+              if not prod.exists():
+                  raise SystemExit(f'Missing production unit for batch {batch}: {prod}')
+              shutil.copy2(prod, out/prod.name)
+              selected.append(prod.name)
+          print({'batch':batch,'batch_units':len(specs),'selected':selected})
+          PY
+      - name: Final C2 batch validation before paid generation
+        run: |
+          set -euo pipefail
+          python scripts/audit_german_advanced_content.py --level C2 --batch "$BATCH"
+          for f in build/c2-audio-batch/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+          python database/import/de/c2.py --dry-run
+          python -m scripts.audit_voice_lock \
+            --lock audio/voices/de-DE.lock.json \
+            --registry audio/voices/de-DE.json \
+            --strict
+      - name: Build strict C2 batch manifest
+        run: |
+          mkdir -p audio/manifests/de
+          python scripts/build_audio_manifest.py build/c2-audio-batch \
+            --level C2 --locale de-DE --strict-characters \
+            --output "audio/manifests/de/C2-batch-${BATCH}.json"
+      - name: Confirm every C2 batch voice key is locked
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          batch=os.environ['BATCH']
+          manifest=json.loads(Path(f'audio/manifests/de/C2-batch-{batch}.json').read_text())
+          locks=json.loads(Path('audio/voices/de-DE.lock.json').read_text())
+          needed=sorted({x['voice_key'] for x in manifest['items']})
+          missing=[key for key in needed if key not in locks or not locks[key].get('voice_id')]
+          print({'batch':batch,'items':len(manifest['items']),'voice_keys':len(needed),'missing':missing})
+          if missing:
+              raise SystemExit('Unresolved C2 voice locks: '+', '.join(missing))
+          PY
+      - name: Generate German C2 batch audio
+        run: |
+          python scripts/generate_audio.py "audio/manifests/de/C2-batch-${BATCH}.json" \
+            --confirm-paid-generation --concurrency 2
+      - name: Validate generated German C2 batch audio
+        run: |
+          python scripts/validate_audio_manifest.py "audio/manifests/de/C2-batch-${BATCH}.json" --require-generated
+          python scripts/audit_audio_voice_consistency.py \
+            "audio/manifests/de/C2-batch-${BATCH}.json" \
+            --lock-file audio/voices/de-DE.lock.json
+      - name: Export German C2 batch database audio SQL
+        run: |
+          python scripts/export_audio_sql.py "audio/manifests/de/C2-batch-${BATCH}.json" \
+            --status validated --output "database/import/de/c2_batch_${BATCH}_audio.sql"
+      - name: German C2 batch audio summary
+        run: |
+          python - <<'PY'
+          import json, os
+          from collections import Counter
+          from pathlib import Path
+          batch=os.environ['BATCH']
+          p=Path(f'audio/manifests/de/C2-batch-{batch}.json')
+          d=json.loads(p.read_text())
+          counts=Counter(x['category'] for x in d['items'])
+          generated=sum(Path(x['relative_path']).exists() for x in d['items'])
+          print({'batch':batch,'items':len(d['items']),'categories':dict(counts),'generated_mp3':generated})
+          if generated != len(d['items']):
+              raise SystemExit('Not all C2 batch audio files were generated')
+          PY
+      - name: Commit generated German C2 batch audio and DB link file
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            audio/generated/de-DE \
+            "audio/manifests/de/C2-batch-${BATCH}.json" \
+            audio/voices/de-DE.lock.json \
+            "database/import/de/c2_batch_${BATCH}_audio.sql"
+          if git diff --cached --quiet; then
+            echo 'No German C2 batch audio changes to commit.'
+            exit 0
+          fi
+          git commit -m "Generate German C2 batch ${BATCH} production audio [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
