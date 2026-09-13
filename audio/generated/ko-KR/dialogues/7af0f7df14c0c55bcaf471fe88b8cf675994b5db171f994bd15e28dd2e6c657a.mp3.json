@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "0b71ecae5e979ddf095b0b364069a5b7d05cc2e9aca12efc577027a5f4441a03",
+  "voice_id": "JguuvPsf0F2TNXefsblh",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "7af0f7df14c0c55bcaf471fe88b8cf675994b5db171f994bd15e28dd2e6c657a",
+  "voice_key": "character:유나:female_professional",
+  "voice_name": "Yuna Kim - Warm, Trustworthy Korean",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "informative_educational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e55e659e12f4aa928b307fc6f902f0243e0ee3b7bd834200bd7f47883385d51f",
+  "duration_ms": 1906,
+  "generated_at": "2026-09-13T22:24:24.036847+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7ee757fa-4c59-5bc8-8110-ee8104aa876d",
+      "entity_key": "d_health_and_advice_02:3"
+    }
+  ]
+}

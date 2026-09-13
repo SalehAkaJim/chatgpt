@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "6b419d9317b9bb9eb653d5ad606ab96d18c653c51f3762c58ed9083a46296689",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "40db03fe1a43cc0b5b975dfc63d393fee4bc9005bc43bfe9eb75741210f7b923",
+  "voice_key": "character:서연:female_bright",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "014db2b008f92558045120a8f201a8081b54bf1112f9534769b8768baab3cedb",
+  "duration_ms": 1201,
+  "generated_at": "2026-09-13T22:24:14.208222+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "e5387772-13c5-5d61-a799-b756fac4d3f6",
+      "entity_key": "d_travel_and_hotel_01:3"
+    }
+  ]
+}

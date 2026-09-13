@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "712074afaec5737d4bcbdd43795533885dd9d4d12f7d6da9d0170b2af94a0013",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1d3e684fd3fb1cf84bc0ab002ffe1be0e1c693463ef97f3d973eb266fd166c77",
+  "voice_key": "ko-kr.lexical.native-clear",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "6942067de141437950d19500f55a388076ee043ac4337c25d5cfc305f2d4e3fc",
+  "duration_ms": 1071,
+  "generated_at": "2026-09-13T22:24:52.056385+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "c18af86f-e9b7-5e77-9d9d-4a3bd42b221a",
+      "entity_key": "lx_weather_and_change_06"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "2150fcbd-f62c-5285-9f4b-7a36c7561c7e",
+      "entity_key": "wf_weather_and_change_06"
+    }
+  ]
+}
