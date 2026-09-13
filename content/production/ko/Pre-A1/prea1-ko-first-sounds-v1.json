@@ -1,0 +1,852 @@
+{
+  "batch_id": "ko-kr-prea1-first-sounds-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-ko-first-sounds",
+  "generator": "gpt-5.6-sol:korean-prea1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_01",
+      "data": {
+        "slug": "ko_pre_a1_first_sounds_ga",
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "concept_type": "lexical",
+        "part_of_speech": "syllable",
+        "forms": {
+          "ko": "가"
+        },
+        "translations": {
+          "fa": "هجای ga/ka بسته به بافت"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_01",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "lemma": "가",
+        "display_lemma": "가",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "syllable",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_ga"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_01",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "lexeme_ref": "lx_first_sounds_01",
+        "surface_form": "가",
+        "display_form": "가",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_02",
+      "data": {
+        "slug": "ko_pre_a1_first_sounds_na",
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "concept_type": "lexical",
+        "part_of_speech": "syllable",
+        "forms": {
+          "ko": "나"
+        },
+        "translations": {
+          "fa": "هجای na"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_02",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "lemma": "나",
+        "display_lemma": "나",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "syllable",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_na"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_02",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "lexeme_ref": "lx_first_sounds_02",
+        "surface_form": "나",
+        "display_form": "나",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_03",
+      "data": {
+        "slug": "ko_pre_a1_first_sounds_ma",
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "concept_type": "lexical",
+        "part_of_speech": "syllable",
+        "forms": {
+          "ko": "마"
+        },
+        "translations": {
+          "fa": "هجای ma"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_03",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "lemma": "마",
+        "display_lemma": "마",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "syllable",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_ma"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_03",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "lexeme_ref": "lx_first_sounds_03",
+        "surface_form": "마",
+        "display_form": "마",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_04",
+      "data": {
+        "slug": "ko_pre_a1_first_sounds_guk",
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "concept_type": "lexical",
+        "part_of_speech": "syllable",
+        "forms": {
+          "ko": "국"
+        },
+        "translations": {
+          "fa": "هجای guk/kuk با 받침 ㄱ"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_04",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "lemma": "국",
+        "display_lemma": "국",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "syllable",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_guk"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_04",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "lexeme_ref": "lx_first_sounds_04",
+        "surface_form": "국",
+        "display_form": "국",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_05",
+      "data": {
+        "slug": "ko_pre_a1_first_sounds_mun",
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "concept_type": "lexical",
+        "part_of_speech": "syllable",
+        "forms": {
+          "ko": "문"
+        },
+        "translations": {
+          "fa": "هجای mun با 받침 ㄴ"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_05",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "lemma": "문",
+        "display_lemma": "문",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "syllable",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_mun"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_05",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "lexeme_ref": "lx_first_sounds_05",
+        "surface_form": "문",
+        "display_form": "문",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_06",
+      "data": {
+        "slug": "ko_pre_a1_first_sounds_bam",
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "밤"
+        },
+        "translations": {
+          "fa": "شب؛ هجای bam با 받침 ㅁ"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_06",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "lemma": "밤",
+        "display_lemma": "밤",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_bam"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_06",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "lexeme_ref": "lx_first_sounds_06",
+        "surface_form": "밤",
+        "display_form": "밤",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_01",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "text": {
+          "ko": "가, 나, 마."
+        },
+        "translations": {
+          "fa": "گا، نا، ما."
+        },
+        "intent": "practice_syllables",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_ga",
+          "ko_pre_a1_first_sounds_na",
+          "ko_pre_a1_first_sounds_ma"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_02",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "text": {
+          "ko": "한 글자씩 읽어요."
+        },
+        "translations": {
+          "fa": "هر بار یک هجا می‌خوانیم."
+        },
+        "intent": "reading_instruction",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_ga"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_03",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "text": {
+          "ko": "국에는 받침이 있어요."
+        },
+        "translations": {
+          "fa": "در 국 یک 받침 وجود دارد."
+        },
+        "intent": "identify_batchim",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_guk"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_04",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "text": {
+          "ko": "밤의 받침은 ㅁ이에요."
+        },
+        "translations": {
+          "fa": "받침 واژه 밤، ㅁ است."
+        },
+        "intent": "identify_batchim",
+        "concept_refs": [
+          "ko_pre_a1_first_sounds_bam"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_first_sounds_core",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "slug": "prea1-ko-first-sounds-grammar",
+        "title": "받침",
+        "rule_summary": "A final consonant at the bottom of a Hangul syllable block is called 받침; its pronunciation can change before the next syllable.",
+        "explanation": {
+          "fa": "صامت پایانی که پایین بلوک هجا می‌آید «받침» نام دارد. فعلاً فقط جای آن را تشخیص بده؛ قوانین تغییر تلفظ را کم‌کم یاد می‌گیری."
+        },
+        "examples": [
+          {
+            "ko": "국",
+            "fa": "در این هجا ㄱ در جایگاه 받침 است."
+          },
+          {
+            "ko": "밤",
+            "fa": "در این هجا ㅁ در جایگاه 받침 است."
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_first_sounds_01",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "title": "소리 연습",
+        "setting": "item",
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "characters": [
+          "서연",
+          "준호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "서연",
+            "text": "가를 읽어 보세요.",
+            "translation_fa": "«가» را بخوانید."
+          },
+          {
+            "order": 2,
+            "speaker": "준호",
+            "text": "가.",
+            "translation_fa": "گا."
+          },
+          {
+            "order": 3,
+            "speaker": "서연",
+            "text": "이번에는 나예요.",
+            "translation_fa": "این بار «나» است."
+          },
+          {
+            "order": 4,
+            "speaker": "준호",
+            "text": "나.",
+            "translation_fa": "نا."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_first_sounds_02",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "title": "받침 찾기",
+        "setting": "item",
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "characters": [
+          "하나",
+          "민수"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "하나",
+            "text": "국에 받침이 있어요?",
+            "translation_fa": "در 국، 받침 هست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "민수",
+            "text": "네, 있어요.",
+            "translation_fa": "بله، هست."
+          },
+          {
+            "order": 3,
+            "speaker": "하나",
+            "text": "밤에도 있어요?",
+            "translation_fa": "در 밤 هم هست؟"
+          },
+          {
+            "order": 4,
+            "speaker": "민수",
+            "text": "네, ㅁ이에요.",
+            "translation_fa": "بله، ㅁ است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_meaning",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "가, 나, 마."
+        },
+        "answer": {
+          "value": "گا، نا، ما."
+        },
+        "options": [
+          "گا، نا، ما.",
+          "هر بار یک هجا می‌خوانیم.",
+          "در 국 یک 받침 وجود دارد.",
+          "받침 واژه 밤، ㅁ است."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 가, 나, 마. — گا، نا، ما.",
+          "model_answer": "가, 나, 마."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_listen",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "한 글자씩 읽어요."
+        },
+        "answer": {
+          "value": "한 글자씩 읽어요."
+        },
+        "options": [
+          "한 글자씩 읽어요.",
+          "가, 나, 마.",
+          "국에는 받침이 있어요.",
+          "밤의 받침은 ㅁ이에요."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 한 글자씩 읽어요. — هر بار یک هجا می‌خوانیم.",
+          "model_answer": "한 글자씩 읽어요.",
+          "transcript_ko": "한 글자씩 읽어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_speak",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "가, 나, 마."
+        },
+        "answer": {
+          "expected_text": "가, 나, 마."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 가, 나, 마. — گا، نا، ما.",
+          "model_answer": "가, 나, 마."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_build",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "글자씩",
+            "읽어요.",
+            "한"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "한",
+            "글자씩",
+            "읽어요."
+          ],
+          "value": "한 글자씩 읽어요."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 한 글자씩 읽어요. — هر بار یک هجا می‌خوانیم.",
+          "model_answer": "한 글자씩 읽어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_dialogue",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_first_sounds_01",
+          "question_fa": "کدام گزینه با معنی «گا، نا، ما.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "가, 나, 마."
+        },
+        "options": [
+          "가, 나, 마.",
+          "한 글자씩 읽어요.",
+          "국에는 받침이 있어요.",
+          "밤의 받침은 ㅁ이에요."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 가, 나, 마. — گا، نا، ما.",
+          "model_answer": "가, 나, 마."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_meaning",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "국에는 받침이 있어요."
+        },
+        "answer": {
+          "value": "در 국 یک 받침 وجود دارد."
+        },
+        "options": [
+          "در 국 یک 받침 وجود دارد.",
+          "گا، نا، ما.",
+          "هر بار یک هجا می‌خوانیم.",
+          "받침 واژه 밤، ㅁ است."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 국에는 받침이 있어요. — در 국 یک 받침 وجود دارد.",
+          "model_answer": "국에는 받침이 있어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_listen",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "밤의 받침은 ㅁ이에요."
+        },
+        "answer": {
+          "value": "밤의 받침은 ㅁ이에요."
+        },
+        "options": [
+          "밤의 받침은 ㅁ이에요.",
+          "국에는 받침이 있어요.",
+          "가, 나, 마.",
+          "한 글자씩 읽어요."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 밤의 받침은 ㅁ이에요. — 받침 واژه 밤، ㅁ است.",
+          "model_answer": "밤의 받침은 ㅁ이에요.",
+          "transcript_ko": "밤의 받침은 ㅁ이에요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_speak",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "국에는 받침이 있어요."
+        },
+        "answer": {
+          "expected_text": "국에는 받침이 있어요."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 국에는 받침이 있어요. — در 국 یک 받침 وجود دارد.",
+          "model_answer": "국에는 받침이 있어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_build",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "받침은",
+            "ㅁ이에요.",
+            "밤의"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "밤의",
+            "받침은",
+            "ㅁ이에요."
+          ],
+          "value": "밤의 받침은 ㅁ이에요."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 밤의 받침은 ㅁ이에요. — 받침 واژه 밤، ㅁ است.",
+          "model_answer": "밤의 받침은 ㅁ이에요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_dialogue",
+      "data": {
+        "lesson_key": "prea1-ko-first-sounds-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_first_sounds_02",
+          "question_fa": "کدام گزینه با معنی «در 국 یک 받침 وجود دارد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "국에는 받침이 있어요."
+        },
+        "options": [
+          "국에는 받침이 있어요.",
+          "가, 나, 마.",
+          "한 글자씩 읽어요.",
+          "밤의 받침은 ㅁ이에요."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 국에는 받침이 있어요. — در 국 یک 받침 وجود دارد.",
+          "model_answer": "국에는 받침이 있어요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
