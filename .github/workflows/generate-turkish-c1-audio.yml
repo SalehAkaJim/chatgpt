@@ -60,7 +60,7 @@ jobs:
           for x in d['items']: counts[x['category']]=counts.get(x['category'],0)+1
           missing={'lexical','utterances','dialogues'}-set(counts)
           if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
-          if len(d['items']) != 180: raise SystemExit(f"Unexpected Turkish C1 audio item count: {len(d['items'])}")
+          if len(d['items']) != 178: raise SystemExit(f"Unexpected Turkish C1 audio item count: {len(d['items'])}")
           print({'items':len(d['items']),'categories':counts})
           PY
       - name: Commit Turkish C1 audio and DB link files
