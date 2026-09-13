@@ -1,0 +1,881 @@
+{
+  "batch_id": "tr-tr-c1-policy-synthesis-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "C1",
+  "curriculum_unit": "c1-tr-policy-synthesis",
+  "generator": "gpt-5.6-sol:turkish-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_policy_synthesis_01",
+      "data": {
+        "slug": "tr_c1_policy_synthesis_sentez",
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "sentez"
+        },
+        "translations": {
+          "fa": "ترکیب تحلیلی"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_policy_synthesis_01",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "lemma": "sentez",
+        "display_lemma": "sentez",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_sentez"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_policy_synthesis_01",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "lexeme_ref": "lx_policy_synthesis_01",
+        "surface_form": "sentez",
+        "display_form": "sentez",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_policy_synthesis_02",
+      "data": {
+        "slug": "tr_c1_policy_synthesis_celiski",
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "çelişki"
+        },
+        "translations": {
+          "fa": "تناقض"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_policy_synthesis_02",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "lemma": "çelişki",
+        "display_lemma": "çelişki",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_celiski"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_policy_synthesis_02",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "lexeme_ref": "lx_policy_synthesis_02",
+        "surface_form": "çelişki",
+        "display_form": "çelişki",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_policy_synthesis_03",
+      "data": {
+        "slug": "tr_c1_policy_synthesis_uyum",
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "uyum"
+        },
+        "translations": {
+          "fa": "سازگاری"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_policy_synthesis_03",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "lemma": "uyum",
+        "display_lemma": "uyum",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_uyum"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_policy_synthesis_03",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "lexeme_ref": "lx_policy_synthesis_03",
+        "surface_form": "uyum",
+        "display_form": "uyum",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_policy_synthesis_04",
+      "data": {
+        "slug": "tr_c1_policy_synthesis_oneri",
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "öneri"
+        },
+        "translations": {
+          "fa": "پیشنهاد"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_policy_synthesis_04",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "lemma": "öneri",
+        "display_lemma": "öneri",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_oneri"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_policy_synthesis_04",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "lexeme_ref": "lx_policy_synthesis_04",
+        "surface_form": "öneri",
+        "display_form": "öneri",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_policy_synthesis_05",
+      "data": {
+        "slug": "tr_c1_policy_synthesis_agirlik_vermek",
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "ağırlık vermek"
+        },
+        "translations": {
+          "fa": "وزن بیشتری دادن"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_policy_synthesis_05",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "lemma": "ağırlık vermek",
+        "display_lemma": "ağırlık vermek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_agirlik_vermek"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_policy_synthesis_05",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "lexeme_ref": "lx_policy_synthesis_05",
+        "surface_form": "ağırlık vermek",
+        "display_form": "ağırlık vermek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_policy_synthesis_06",
+      "data": {
+        "slug": "tr_c1_policy_synthesis_bagdastirmak",
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "bağdaştırmak"
+        },
+        "translations": {
+          "fa": "سازگار کردن"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_policy_synthesis_06",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "lemma": "bağdaştırmak",
+        "display_lemma": "bağdaştırmak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_bagdastirmak"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_policy_synthesis_06",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "lexeme_ref": "lx_policy_synthesis_06",
+        "surface_form": "bağdaştırmak",
+        "display_form": "bağdaştırmak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_policy_synthesis_01",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "text": {
+          "tr": "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor."
+        },
+        "translations": {
+          "fa": "وقتی منابع با هم ارزیابی می‌شوند، روند کلی مثبت است اما دو ریسک مهم برجسته می‌شود."
+        },
+        "intent": "source_synthesis",
+        "concept_refs": [],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_policy_synthesis_02",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "text": {
+          "tr": "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar."
+        },
+        "translations": {
+          "fa": "بین دو گزارش تناقض ظاهری وجود دارد، اما بازه‌های زمانی متفاوتی را اندازه می‌گیرند."
+        },
+        "intent": "reconcile_conflict",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_celiski"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_policy_synthesis_03",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "text": {
+          "tr": "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir."
+        },
+        "translations": {
+          "fa": "در پیشنهاد بهتر است به‌جای کارایی کوتاه‌مدت، به سازگاری بلندمدت وزن بیشتری بدهیم."
+        },
+        "intent": "weighted_recommendation",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_oneri",
+          "tr_c1_policy_synthesis_uyum",
+          "tr_c1_policy_synthesis_agirlik_vermek"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_policy_synthesis_04",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "text": {
+          "tr": "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        },
+        "translations": {
+          "fa": "ترکیب تحلیلی خوب فقط ردیف کردن منابع نیست؛ باید رابطه میان آن‌ها را سازگار کند."
+        },
+        "intent": "synthesis_principle",
+        "concept_refs": [
+          "tr_c1_policy_synthesis_sentez",
+          "tr_c1_policy_synthesis_bagdastirmak"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_policy_synthesis_core",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "slug": "c1-tr-policy-synthesis-grammar",
+        "title": "Kaynakları ilişkilendirerek sentezlemek",
+        "rule_summary": "Combine evidence by comparing scope, method and implication instead of summarizing each source separately.",
+        "explanation": {
+          "fa": "در سنتز C1، منابع را جداگانه خلاصه نمی‌کنیم؛ دامنه، روش و پیامدشان را با هم مقایسه می‌کنیم و نتیجه ترکیبی می‌سازیم."
+        },
+        "examples": [
+          {
+            "tr": "Birinci çalışma kısa vadeli etkiyi, ikinci çalışma kalıcılığı ölçüyor.",
+            "fa": "مطالعه اول اثر کوتاه‌مدت و مطالعه دوم پایداری را اندازه می‌گیرد."
+          },
+          {
+            "tr": "Bu nedenle bulgular çelişmekten çok birbirini tamamlıyor.",
+            "fa": "بنابراین یافته‌ها بیش از آنکه متناقض باشند، مکمل یکدیگرند."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_policy_synthesis_01",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "title": "Üç rapordan tek öneri",
+        "setting": "",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Mert",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mert",
+            "text": "Üç rapor da farklı sonuç veriyor; ortak bir öneri çıkarmak zor.",
+            "translation_fa": "هر سه گزارش نتیجه متفاوتی دارند؛ رسیدن به پیشنهاد مشترک سخت است."
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Önce hangi soruyu cevapladıklarını ayıralım. Aynı şeyi ölçmüyor olabilirler.",
+            "translation_fa": "اول مشخص کنیم هرکدام به چه سؤالی پاسخ می‌دهند. شاید یک چیز را اندازه نمی‌گیرند."
+          },
+          {
+            "order": 3,
+            "speaker": "Mert",
+            "text": "Doğru; biri maliyet, biri kullanıcı deneyimi, biri uzun vadeli risk üzerine.",
+            "translation_fa": "درست است؛ یکی درباره هزینه، یکی تجربه کاربر و یکی ریسک بلندمدت است."
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "O zaman öneriyi bu üç boyutu birlikte tartarak yazabiliriz.",
+            "translation_fa": "پس می‌توانیم پیشنهاد را با سنجش هم‌زمان این سه بُعد بنویسیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_policy_synthesis_02",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "title": "Çelişkiyi çözmek",
+        "setting": "",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Deniz",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "İki kaynak birbirini çürütüyor gibi.",
+            "translation_fa": "دو منبع انگار یکدیگر را رد می‌کنند."
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Biri büyük şehirleri, diğeri kırsal bölgeleri inceliyor. Kapsam farkı önemli.",
+            "translation_fa": "یکی شهرهای بزرگ و دیگری مناطق روستایی را بررسی می‌کند. تفاوت دامنه مهم است."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Yani tek sonuç yerine koşullu sonuç yazmalıyız.",
+            "translation_fa": "پس به‌جای یک نتیجه واحد باید نتیجه مشروط بنویسیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Evet; bağlam değişince etkinin de değiştiğini söylemek daha doğru.",
+            "translation_fa": "بله؛ درست‌تر است بگوییم با تغییر بافت، اثر هم تغییر می‌کند."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_01_meaning",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor."
+        },
+        "answer": {
+          "value": "وقتی منابع با هم ارزیابی می‌شوند، روند کلی مثبت است اما دو ریسک مهم برجسته می‌شود."
+        },
+        "options": [
+          "وقتی منابع با هم ارزیابی می‌شوند، روند کلی مثبت است اما دو ریسک مهم برجسته می‌شود.",
+          "بین دو گزارش تناقض ظاهری وجود دارد، اما بازه‌های زمانی متفاوتی را اندازه می‌گیرند.",
+          "در پیشنهاد بهتر است به‌جای کارایی کوتاه‌مدت، به سازگاری بلندمدت وزن بیشتری بدهیم.",
+          "ترکیب تحلیلی خوب فقط ردیف کردن منابع نیست؛ باید رابطه میان آن‌ها را سازگار کند."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor. — وقتی منابع با هم ارزیابی می‌شوند، روند کلی مثبت است اما دو ریسک مهم برجسته می‌شود.",
+          "model_answer": "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_01_listen",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar."
+        },
+        "answer": {
+          "value": "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar."
+        },
+        "options": [
+          "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar.",
+          "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor.",
+          "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir.",
+          "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar. — بین دو گزارش تناقض ظاهری وجود دارد، اما بازه‌های زمانی متفاوتی را اندازه می‌گیرند.",
+          "model_answer": "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar.",
+          "transcript_tr": "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_01_speak",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor."
+        },
+        "answer": {
+          "expected_text": "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor."
+        },
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor. — وقتی منابع با هم ارزیابی می‌شوند، روند کلی مثبت است اما دو ریسک مهم برجسته می‌شود.",
+          "model_answer": "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_01_build",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "rapor",
+            "arasında",
+            "görünür",
+            "bir",
+            "çelişki",
+            "var,",
+            "fakat",
+            "farklı",
+            "zaman",
+            "aralıklarını",
+            "ölçüyorlar.",
+            "İki"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "İki",
+            "rapor",
+            "arasında",
+            "görünür",
+            "bir",
+            "çelişki",
+            "var,",
+            "fakat",
+            "farklı",
+            "zaman",
+            "aralıklarını",
+            "ölçüyorlar."
+          ],
+          "value": "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar."
+        },
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar. — بین دو گزارش تناقض ظاهری وجود دارد، اما بازه‌های زمانی متفاوتی را اندازه می‌گیرند.",
+          "model_answer": "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_01_dialogue",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_policy_synthesis_01",
+          "question_fa": "کدام گزینه با معنی «وقتی منابع با هم ارزیابی می‌شوند، روند کلی مثبت است اما دو ریسک مهم برجسته می‌شود.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor."
+        },
+        "options": [
+          "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor.",
+          "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar.",
+          "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir.",
+          "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor. — وقتی منابع با هم ارزیابی می‌شوند، روند کلی مثبت است اما دو ریسک مهم برجسته می‌شود.",
+          "model_answer": "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_02_meaning",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir."
+        },
+        "answer": {
+          "value": "در پیشنهاد بهتر است به‌جای کارایی کوتاه‌مدت، به سازگاری بلندمدت وزن بیشتری بدهیم."
+        },
+        "options": [
+          "در پیشنهاد بهتر است به‌جای کارایی کوتاه‌مدت، به سازگاری بلندمدت وزن بیشتری بدهیم.",
+          "وقتی منابع با هم ارزیابی می‌شوند، روند کلی مثبت است اما دو ریسک مهم برجسته می‌شود.",
+          "بین دو گزارش تناقض ظاهری وجود دارد، اما بازه‌های زمانی متفاوتی را اندازه می‌گیرند.",
+          "ترکیب تحلیلی خوب فقط ردیف کردن منابع نیست؛ باید رابطه میان آن‌ها را سازگار کند."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir. — در پیشنهاد بهتر است به‌جای کارایی کوتاه‌مدت، به سازگاری بلندمدت وزن بیشتری بدهیم.",
+          "model_answer": "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_02_listen",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        },
+        "answer": {
+          "value": "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        },
+        "options": [
+          "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır.",
+          "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir.",
+          "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor.",
+          "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır. — ترکیب تحلیلی خوب فقط ردیف کردن منابع نیست؛ باید رابطه میان آن‌ها را سازگار کند.",
+          "model_answer": "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır.",
+          "transcript_tr": "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_02_speak",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir."
+        },
+        "answer": {
+          "expected_text": "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir."
+        },
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir. — در پیشنهاد بهتر است به‌جای کارایی کوتاه‌مدت، به سازگاری بلندمدت وزن بیشتری بدهیم.",
+          "model_answer": "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_02_build",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "bir",
+            "sentez,",
+            "kaynakları",
+            "sıralamak",
+            "değil",
+            "aralarındaki",
+            "ilişkiyi",
+            "bağdaştırmaktır.",
+            "İyi"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "İyi",
+            "bir",
+            "sentez,",
+            "kaynakları",
+            "sıralamak",
+            "değil",
+            "aralarındaki",
+            "ilişkiyi",
+            "bağdaştırmaktır."
+          ],
+          "value": "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        },
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır. — ترکیب تحلیلی خوب فقط ردیف کردن منابع نیست؛ باید رابطه میان آن‌ها را سازگار کند.",
+          "model_answer": "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_policy_synthesis_02_dialogue",
+      "data": {
+        "lesson_key": "c1-tr-policy-synthesis-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_policy_synthesis_02",
+          "question_fa": "کدام گزینه با معنی «در پیشنهاد بهتر است به‌جای کارایی کوتاه‌مدت، به سازگاری بلندمدت وزن بیشتری بدهیم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir."
+        },
+        "options": [
+          "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir.",
+          "Kaynaklar birlikte değerlendirildiğinde genel eğilim olumlu, ancak iki önemli risk öne çıkıyor.",
+          "İki rapor arasında görünür bir çelişki var, fakat farklı zaman aralıklarını ölçüyorlar.",
+          "İyi bir sentez, kaynakları sıralamak değil aralarındaki ilişkiyi bağdaştırmaktır."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir. — در پیشنهاد بهتر است به‌جای کارایی کوتاه‌مدت، به سازگاری بلندمدت وزن بیشتری بدهیم.",
+          "model_answer": "Öneride kısa vadeli verimden çok uzun vadeli uyuma ağırlık vermek gerekir."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

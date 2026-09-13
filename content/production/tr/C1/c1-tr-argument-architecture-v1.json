@@ -1,0 +1,875 @@
+{
+  "batch_id": "tr-tr-c1-argument-architecture-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "C1",
+  "curriculum_unit": "c1-tr-argument-architecture",
+  "generator": "gpt-5.6-sol:turkish-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_argument_architecture_01",
+      "data": {
+        "slug": "tr_c1_argument_architecture_iddia",
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "iddia"
+        },
+        "translations": {
+          "fa": "ادعا"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_argument_architecture_01",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "lemma": "iddia",
+        "display_lemma": "iddia",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c1_argument_architecture_iddia"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_argument_architecture_01",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "lexeme_ref": "lx_argument_architecture_01",
+        "surface_form": "iddia",
+        "display_form": "iddia",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_argument_architecture_02",
+      "data": {
+        "slug": "tr_c1_argument_architecture_gerekce",
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "gerekçe"
+        },
+        "translations": {
+          "fa": "دلیل / مبنا"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_argument_architecture_02",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "lemma": "gerekçe",
+        "display_lemma": "gerekçe",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c1_argument_architecture_gerekce"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_argument_architecture_02",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "lexeme_ref": "lx_argument_architecture_02",
+        "surface_form": "gerekçe",
+        "display_form": "gerekçe",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_argument_architecture_03",
+      "data": {
+        "slug": "tr_c1_argument_architecture_olcut",
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ölçüt"
+        },
+        "translations": {
+          "fa": "معیار"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_argument_architecture_03",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "lemma": "ölçüt",
+        "display_lemma": "ölçüt",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c1_argument_architecture_olcut"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_argument_architecture_03",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "lexeme_ref": "lx_argument_architecture_03",
+        "surface_form": "ölçüt",
+        "display_form": "ölçüt",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_argument_architecture_04",
+      "data": {
+        "slug": "tr_c1_argument_architecture_kapsam",
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "kapsam"
+        },
+        "translations": {
+          "fa": "دامنه"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_argument_architecture_04",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "lemma": "kapsam",
+        "display_lemma": "kapsam",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c1_argument_architecture_kapsam"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_argument_architecture_04",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "lexeme_ref": "lx_argument_architecture_04",
+        "surface_form": "kapsam",
+        "display_form": "kapsam",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_argument_architecture_05",
+      "data": {
+        "slug": "tr_c1_argument_architecture_curutmek",
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "çürütmek"
+        },
+        "translations": {
+          "fa": "رد کردن استدلال"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_argument_architecture_05",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "lemma": "çürütmek",
+        "display_lemma": "çürütmek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_c1_argument_architecture_curutmek"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_argument_architecture_05",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "lexeme_ref": "lx_argument_architecture_05",
+        "surface_form": "çürütmek",
+        "display_form": "çürütmek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_argument_architecture_06",
+      "data": {
+        "slug": "tr_c1_argument_architecture_dayanmak",
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "dayanmak"
+        },
+        "translations": {
+          "fa": "متکی بودن"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_argument_architecture_06",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "lemma": "dayanmak",
+        "display_lemma": "dayanmak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_c1_argument_architecture_dayanmak"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_argument_architecture_06",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "lexeme_ref": "lx_argument_architecture_06",
+        "surface_form": "dayanmak",
+        "display_form": "dayanmak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_argument_architecture_01",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "text": {
+          "tr": "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı."
+        },
+        "translations": {
+          "fa": "قوی بودن ادعا به روشن و قابل‌آزمون بودن دلیل آن بستگی دارد."
+        },
+        "intent": "argument_support",
+        "concept_refs": [
+          "tr_c1_argument_architecture_iddia",
+          "tr_c1_argument_architecture_gerekce",
+          "tr_c1_argument_architecture_dayanmak"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_argument_architecture_02",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "text": {
+          "tr": "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir."
+        },
+        "translations": {
+          "fa": "این معیار در برخی موقعیت‌ها مفید است، اما نباید دامنه‌اش را تعمیم داد."
+        },
+        "intent": "scope_limit",
+        "concept_refs": [
+          "tr_c1_argument_architecture_olcut",
+          "tr_c1_argument_architecture_kapsam"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_argument_architecture_03",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "text": {
+          "tr": "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor."
+        },
+        "translations": {
+          "fa": "مثال نقض ادعا را کاملاً رد نمی‌کند؛ فقط مرزش را نشان می‌دهد."
+        },
+        "intent": "counterexample",
+        "concept_refs": [
+          "tr_c1_argument_architecture_curutmek"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_argument_architecture_04",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "text": {
+          "tr": "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        },
+        "translations": {
+          "fa": "مسئله اصلی این است که این نتیجه در چه شرایطی معتبر شمرده می‌شود."
+        },
+        "intent": "warrant",
+        "concept_refs": [],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_argument_architecture_core",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "slug": "c1-tr-argument-architecture-grammar",
+        "title": "Argümanı katmanlandırmak",
+        "rule_summary": "Link claim, justification, counterpoint and scope rather than listing opinions.",
+        "explanation": {
+          "fa": "در C1 استدلال باید لایه‌دار باشد: ادعا، دلیل، پاسخ به ایراد و مشخص کردن محدوده اعتبار."
+        },
+        "examples": [
+          {
+            "tr": "Şu gerekçeyle bu seçeneği tercih ediyorum: daha az risk taşıyor.",
+            "fa": "به این دلیل این گزینه را ترجیح می‌دهم: ریسک کمتری دارد."
+          },
+          {
+            "tr": "Bu eleştiri yerinde, ancak yalnızca belirli durumlar için geçerli.",
+            "fa": "این انتقاد بجاست، اما فقط برای موقعیت‌های مشخص معتبر است."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_argument_architecture_01",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "title": "Hangi argüman daha güçlü?",
+        "setting": "",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Deniz",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "İkinci seçenek daha ucuz; bu yeterli bir gerekçe değil mi?",
+            "translation_fa": "گزینه دوم ارزان‌تر است؛ این دلیل کافی نیست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Tek başına değil. Maliyet önemli ama güvenilirlik ölçütünü de düşünmeliyiz.",
+            "translation_fa": "به‌تنهایی نه. هزینه مهم است اما معیار قابلیت اطمینان را هم باید در نظر بگیریم."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Yani argümanı dar buluyorsun.",
+            "translation_fa": "یعنی استدلال را محدود می‌دانی."
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Evet, çünkü yalnızca kısa vadeli maliyete dayanıyor.",
+            "translation_fa": "بله، چون فقط بر هزینه کوتاه‌مدت تکیه دارد."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_argument_architecture_02",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "title": "Karşı örnek",
+        "setting": "",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Zeynep",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Zeynep",
+            "text": "Bu örnek teoriyi çürütüyor mu?",
+            "translation_fa": "این مثال نظریه را رد می‌کند؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Bence tamamen değil; teorinin kapsamını daraltıyor.",
+            "translation_fa": "به نظرم نه کاملاً؛ دامنه نظریه را محدود می‌کند."
+          },
+          {
+            "order": 3,
+            "speaker": "Zeynep",
+            "text": "O zaman sonucu nasıl yazalım?",
+            "translation_fa": "پس نتیجه را چطور بنویسیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "'Genel eğilim sürüyor, fakat istisnalar açıklama gerektiriyor' diyebiliriz.",
+            "translation_fa": "می‌توانیم بگوییم «روند کلی پابرجاست، اما استثناها نیازمند توضیح‌اند»."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_01_meaning",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı."
+        },
+        "answer": {
+          "value": "قوی بودن ادعا به روشن و قابل‌آزمون بودن دلیل آن بستگی دارد."
+        },
+        "options": [
+          "قوی بودن ادعا به روشن و قابل‌آزمون بودن دلیل آن بستگی دارد.",
+          "این معیار در برخی موقعیت‌ها مفید است، اما نباید دامنه‌اش را تعمیم داد.",
+          "مثال نقض ادعا را کاملاً رد نمی‌کند؛ فقط مرزش را نشان می‌دهد.",
+          "مسئله اصلی این است که این نتیجه در چه شرایطی معتبر شمرده می‌شود."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı. — قوی بودن ادعا به روشن و قابل‌آزمون بودن دلیل آن بستگی دارد.",
+          "model_answer": "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_01_listen",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir."
+        },
+        "answer": {
+          "value": "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir."
+        },
+        "options": [
+          "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir.",
+          "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı.",
+          "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor.",
+          "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir. — این معیار در برخی موقعیت‌ها مفید است، اما نباید دامنه‌اش را تعمیم داد.",
+          "model_answer": "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir.",
+          "transcript_tr": "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_01_speak",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı."
+        },
+        "answer": {
+          "expected_text": "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı."
+        },
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı. — قوی بودن ادعا به روشن و قابل‌آزمون بودن دلیل آن بستگی دارد.",
+          "model_answer": "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_01_build",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "ölçüt",
+            "bazı",
+            "durumlarda",
+            "işe",
+            "yarıyor,",
+            "ancak",
+            "kapsamını",
+            "genellememek",
+            "gerekir.",
+            "Bu"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bu",
+            "ölçüt",
+            "bazı",
+            "durumlarda",
+            "işe",
+            "yarıyor,",
+            "ancak",
+            "kapsamını",
+            "genellememek",
+            "gerekir."
+          ],
+          "value": "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir."
+        },
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir. — این معیار در برخی موقعیت‌ها مفید است، اما نباید دامنه‌اش را تعمیم داد.",
+          "model_answer": "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_01_dialogue",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_argument_architecture_01",
+          "question_fa": "کدام گزینه با معنی «قوی بودن ادعا به روشن و قابل‌آزمون بودن دلیل آن بستگی دارد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı."
+        },
+        "options": [
+          "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı.",
+          "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir.",
+          "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor.",
+          "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı. — قوی بودن ادعا به روشن و قابل‌آزمون بودن دلیل آن بستگی دارد.",
+          "model_answer": "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_02_meaning",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor."
+        },
+        "answer": {
+          "value": "مثال نقض ادعا را کاملاً رد نمی‌کند؛ فقط مرزش را نشان می‌دهد."
+        },
+        "options": [
+          "مثال نقض ادعا را کاملاً رد نمی‌کند؛ فقط مرزش را نشان می‌دهد.",
+          "قوی بودن ادعا به روشن و قابل‌آزمون بودن دلیل آن بستگی دارد.",
+          "این معیار در برخی موقعیت‌ها مفید است، اما نباید دامنه‌اش را تعمیم داد.",
+          "مسئله اصلی این است که این نتیجه در چه شرایطی معتبر شمرده می‌شود."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor. — مثال نقض ادعا را کاملاً رد نمی‌کند؛ فقط مرزش را نشان می‌دهد.",
+          "model_answer": "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_02_listen",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        },
+        "answer": {
+          "value": "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        },
+        "options": [
+          "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı.",
+          "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor.",
+          "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı.",
+          "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı. — مسئله اصلی این است که این نتیجه در چه شرایطی معتبر شمرده می‌شود.",
+          "model_answer": "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı.",
+          "transcript_tr": "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_02_speak",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor."
+        },
+        "answer": {
+          "expected_text": "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor."
+        },
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor. — مثال نقض ادعا را کاملاً رد نمی‌کند؛ فقط مرزش را نشان می‌دهد.",
+          "model_answer": "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_02_build",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "mesele,",
+            "hangi",
+            "koşullarda",
+            "bu",
+            "sonucun",
+            "geçerli",
+            "sayılacağı.",
+            "Asıl"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Asıl",
+            "mesele,",
+            "hangi",
+            "koşullarda",
+            "bu",
+            "sonucun",
+            "geçerli",
+            "sayılacağı."
+          ],
+          "value": "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        },
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı. — مسئله اصلی این است که این نتیجه در چه شرایطی معتبر شمرده می‌شود.",
+          "model_answer": "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_argument_architecture_02_dialogue",
+      "data": {
+        "lesson_key": "c1-tr-argument-architecture-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_argument_architecture_02",
+          "question_fa": "کدام گزینه با معنی «مثال نقض ادعا را کاملاً رد نمی‌کند؛ فقط مرزش را نشان می‌دهد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor."
+        },
+        "options": [
+          "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor.",
+          "İddianın güçlü olması, dayandığı gerekçenin açık ve sınanabilir olmasına bağlı.",
+          "Bu ölçüt bazı durumlarda işe yarıyor, ancak kapsamını genellememek gerekir.",
+          "Asıl mesele, hangi koşullarda bu sonucun geçerli sayılacağı."
+        ],
+        "difficulty": 4,
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor. — مثال نقض ادعا را کاملاً رد نمی‌کند؛ فقط مرزش را نشان می‌دهد.",
+          "model_answer": "Karşı örnek iddiayı bütünüyle çürütmüyor; sadece sınırını gösteriyor."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
