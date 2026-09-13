@@ -3,7 +3,7 @@ name: MySQL German B1 Integration
 on:
   push:
     branches:
-      - language/german-b1
+      - main
     paths:
       - '.github/german-b1-mysql-trigger'
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: language/german-b1
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
