@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "fa63ad33a089045f2d4dbf0c6b2a106a9c90b64c49f8b68dc6506798cb60d16b",
+  "voice_id": "SJJe86Va82zRzg6zi2dX",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "b7820005d5de2b4f18027a30e0e4c756d5094cb7abe77841854cd3b45c48190a",
+  "voice_key": "character:lea:female_calm",
+  "voice_name": "Ela - Empathetic & Warm",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "172f0633b158f36ec0822b9de39971f15e4d9a209491c9c762eac622680e18ed",
+  "duration_ms": 3056,
+  "generated_at": "2026-09-13T11:46:32.093483+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "0d4924e0-4b6a-51e4-ab2c-014f4493e18b",
+      "entity_key": "d_narrative_perspective_temporal_control_01:3"
+    }
+  ]
+}
