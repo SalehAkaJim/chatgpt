@@ -1,0 +1,853 @@
+{
+  "batch_id": "tr-tr-a1-at-the-cafe-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-at-the-cafe",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_cafe_01",
+      "data": {
+        "slug": "tr_a1_at_the_cafe_kahve",
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "kahve"
+        },
+        "translations": {
+          "fa": "قهوه"
+        },
+        "cefr": "A1",
+        "topic": "food-drink",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_cafe_01",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "lemma": "kahve",
+        "display_lemma": "kahve",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_kahve"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_cafe_01",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "lexeme_ref": "lx_at_the_cafe_01",
+        "surface_form": "kahve",
+        "display_form": "kahve",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_cafe_02",
+      "data": {
+        "slug": "tr_a1_at_the_cafe_su",
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "su"
+        },
+        "translations": {
+          "fa": "آب"
+        },
+        "cefr": "A1",
+        "topic": "food-drink",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_cafe_02",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "lemma": "su",
+        "display_lemma": "su",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_su"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_cafe_02",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "lexeme_ref": "lx_at_the_cafe_02",
+        "surface_form": "su",
+        "display_form": "su",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_cafe_03",
+      "data": {
+        "slug": "tr_a1_at_the_cafe_menu",
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "menü"
+        },
+        "translations": {
+          "fa": "منو"
+        },
+        "cefr": "A1",
+        "topic": "food-drink",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_cafe_03",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "lemma": "menü",
+        "display_lemma": "menü",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_menu"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_cafe_03",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "lexeme_ref": "lx_at_the_cafe_03",
+        "surface_form": "menü",
+        "display_form": "menü",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_cafe_04",
+      "data": {
+        "slug": "tr_a1_at_the_cafe_istemek",
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "istemek"
+        },
+        "translations": {
+          "fa": "خواستن"
+        },
+        "cefr": "A1",
+        "topic": "food-drink",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_cafe_04",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "lemma": "istemek",
+        "display_lemma": "istemek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_istemek"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_cafe_04",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "lexeme_ref": "lx_at_the_cafe_04",
+        "surface_form": "istemek",
+        "display_form": "istemek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_cafe_05",
+      "data": {
+        "slug": "tr_a1_at_the_cafe_almak",
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "almak"
+        },
+        "translations": {
+          "fa": "گرفتن / خریدن"
+        },
+        "cefr": "A1",
+        "topic": "food-drink",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_cafe_05",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "lemma": "almak",
+        "display_lemma": "almak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_almak"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_cafe_05",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "lexeme_ref": "lx_at_the_cafe_05",
+        "surface_form": "almak",
+        "display_form": "almak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_cafe_06",
+      "data": {
+        "slug": "tr_a1_at_the_cafe_lutfen",
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "tr": "lütfen"
+        },
+        "translations": {
+          "fa": "لطفاً"
+        },
+        "cefr": "A1",
+        "topic": "food-drink",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_cafe_06",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "lemma": "lütfen",
+        "display_lemma": "lütfen",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_lutfen"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_cafe_06",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "lexeme_ref": "lx_at_the_cafe_06",
+        "surface_form": "lütfen",
+        "display_form": "lütfen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_the_cafe_01",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "text": {
+          "tr": "Bir kahve istiyorum."
+        },
+        "translations": {
+          "fa": "یک قهوه می‌خواهم."
+        },
+        "intent": "order_item",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_kahve",
+          "tr_a1_at_the_cafe_istemek"
+        ],
+        "cefr": "A1",
+        "topic": "food-drink",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_the_cafe_02",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "text": {
+          "tr": "Menü, lütfen."
+        },
+        "translations": {
+          "fa": "منو، لطفاً."
+        },
+        "intent": "request_menu",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_menu",
+          "tr_a1_at_the_cafe_lutfen"
+        ],
+        "cefr": "A1",
+        "topic": "food-drink",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_the_cafe_03",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "text": {
+          "tr": "Bir su alabilir miyim?"
+        },
+        "translations": {
+          "fa": "می‌توانم یک آب بگیرم؟"
+        },
+        "intent": "polite_request",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_su",
+          "tr_a1_at_the_cafe_almak"
+        ],
+        "cefr": "A1",
+        "topic": "food-drink",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_the_cafe_04",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "text": {
+          "tr": "Başka bir şey istemiyorum."
+        },
+        "translations": {
+          "fa": "چیز دیگری نمی‌خواهم."
+        },
+        "intent": "decline_more",
+        "concept_refs": [
+          "tr_a1_at_the_cafe_istemek"
+        ],
+        "cefr": "A1",
+        "topic": "food-drink",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_at_the_cafe_core",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "slug": "a1-tr-at-the-cafe-grammar",
+        "title": "İstiyorum",
+        "rule_summary": "The progressive form of istemek is the standard everyday way to say what you want in service situations.",
+        "explanation": {
+          "fa": "در کافه و خرید، istiyorum یک راه طبیعی و مستقیم برای «می‌خواهم» است. با lütfen یا سؤال مودبانه، لحن نرم‌تر می‌شود."
+        },
+        "examples": [
+          {
+            "tr": "Bir kahve istiyorum.",
+            "fa": "یک قهوه می‌خواهم."
+          },
+          {
+            "tr": "Menü, lütfen.",
+            "fa": "منو، لطفاً."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_at_the_cafe_01",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "title": "Sipariş",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "food-drink",
+        "characters": [
+          "Selin",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Merhaba. Bir kahve istiyorum.",
+            "translation_fa": "سلام. یک قهوه می‌خواهم."
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Tabii. Başka?",
+            "translation_fa": "حتماً. چیز دیگری؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "Bir su da, lütfen.",
+            "translation_fa": "یک آب هم لطفاً."
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "Tamam.",
+            "translation_fa": "باشه."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_at_the_cafe_02",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "title": "Menü",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "food-drink",
+        "characters": [
+          "Elif",
+          "Mert"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Menü alabilir miyim?",
+            "translation_fa": "می‌توانم منو را بگیرم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Mert",
+            "text": "Tabii, buyurun.",
+            "translation_fa": "حتماً، بفرمایید."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Teşekkür ederim.",
+            "translation_fa": "ممنونم."
+          },
+          {
+            "order": 4,
+            "speaker": "Mert",
+            "text": "Rica ederim.",
+            "translation_fa": "خواهش می‌کنم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bir kahve istiyorum."
+        },
+        "answer": {
+          "value": "یک قهوه می‌خواهم."
+        },
+        "options": [
+          "یک قهوه می‌خواهم.",
+          "منو، لطفاً.",
+          "می‌توانم یک آب بگیرم؟",
+          "چیز دیگری نمی‌خواهم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kahve istiyorum. — یک قهوه می‌خواهم.",
+          "model_answer": "Bir kahve istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Menü, lütfen."
+        },
+        "answer": {
+          "value": "Menü, lütfen."
+        },
+        "options": [
+          "Menü, lütfen.",
+          "Bir kahve istiyorum.",
+          "Bir su alabilir miyim?",
+          "Başka bir şey istemiyorum."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Menü, lütfen. — منو، لطفاً.",
+          "model_answer": "Menü, lütfen.",
+          "transcript_tr": "Menü, lütfen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bir kahve istiyorum."
+        },
+        "answer": {
+          "expected_text": "Bir kahve istiyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kahve istiyorum. — یک قهوه می‌خواهم.",
+          "model_answer": "Bir kahve istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_01_build",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "lütfen.",
+            "Menü,"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Menü,",
+            "lütfen."
+          ],
+          "value": "Menü, lütfen."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Menü, lütfen. — منو، لطفاً.",
+          "model_answer": "Menü, lütfen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_at_the_cafe_01",
+          "question_fa": "کدام گزینه با معنی «یک قهوه می‌خواهم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bir kahve istiyorum."
+        },
+        "options": [
+          "Bir kahve istiyorum.",
+          "Menü, lütfen.",
+          "Bir su alabilir miyim?",
+          "Başka bir şey istemiyorum."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kahve istiyorum. — یک قهوه می‌خواهم.",
+          "model_answer": "Bir kahve istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bir su alabilir miyim?"
+        },
+        "answer": {
+          "value": "می‌توانم یک آب بگیرم؟"
+        },
+        "options": [
+          "می‌توانم یک آب بگیرم؟",
+          "یک قهوه می‌خواهم.",
+          "منو، لطفاً.",
+          "چیز دیگری نمی‌خواهم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir su alabilir miyim? — می‌توانم یک آب بگیرم؟",
+          "model_answer": "Bir su alabilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Başka bir şey istemiyorum."
+        },
+        "answer": {
+          "value": "Başka bir şey istemiyorum."
+        },
+        "options": [
+          "Başka bir şey istemiyorum.",
+          "Bir su alabilir miyim?",
+          "Bir kahve istiyorum.",
+          "Menü, lütfen."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Başka bir şey istemiyorum. — چیز دیگری نمی‌خواهم.",
+          "model_answer": "Başka bir şey istemiyorum.",
+          "transcript_tr": "Başka bir şey istemiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bir su alabilir miyim?"
+        },
+        "answer": {
+          "expected_text": "Bir su alabilir miyim?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir su alabilir miyim? — می‌توانم یک آب بگیرم؟",
+          "model_answer": "Bir su alabilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_02_build",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "bir",
+            "şey",
+            "istemiyorum.",
+            "Başka"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Başka",
+            "bir",
+            "şey",
+            "istemiyorum."
+          ],
+          "value": "Başka bir şey istemiyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Başka bir şey istemiyorum. — چیز دیگری نمی‌خواهم.",
+          "model_answer": "Başka bir şey istemiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_cafe_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-at-the-cafe-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_at_the_cafe_02",
+          "question_fa": "کدام گزینه با معنی «می‌توانم یک آب بگیرم؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bir su alabilir miyim?"
+        },
+        "options": [
+          "Bir su alabilir miyim?",
+          "Bir kahve istiyorum.",
+          "Menü, lütfen.",
+          "Başka bir şey istemiyorum."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-drink",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir su alabilir miyim? — می‌توانم یک آب بگیرم؟",
+          "model_answer": "Bir su alabilir miyim?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

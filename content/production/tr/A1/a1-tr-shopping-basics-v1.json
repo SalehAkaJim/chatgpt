@@ -1,0 +1,848 @@
+{
+  "batch_id": "tr-tr-a1-shopping-basics-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-shopping-basics",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_01",
+      "data": {
+        "slug": "tr_a1_shopping_basics_fiyat",
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "fiyat"
+        },
+        "translations": {
+          "fa": "قیمت"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_01",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "lemma": "fiyat",
+        "display_lemma": "fiyat",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_shopping_basics_fiyat"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_01",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "lexeme_ref": "lx_shopping_basics_01",
+        "surface_form": "fiyat",
+        "display_form": "fiyat",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_02",
+      "data": {
+        "slug": "tr_a1_shopping_basics_ucuz",
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "ucuz"
+        },
+        "translations": {
+          "fa": "ارزان"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_02",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "lemma": "ucuz",
+        "display_lemma": "ucuz",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_shopping_basics_ucuz"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_02",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "lexeme_ref": "lx_shopping_basics_02",
+        "surface_form": "ucuz",
+        "display_form": "ucuz",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_03",
+      "data": {
+        "slug": "tr_a1_shopping_basics_pahali",
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "pahalı"
+        },
+        "translations": {
+          "fa": "گران"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_03",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "lemma": "pahalı",
+        "display_lemma": "pahalı",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_shopping_basics_pahali"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_03",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "lexeme_ref": "lx_shopping_basics_03",
+        "surface_form": "pahalı",
+        "display_form": "pahalı",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_04",
+      "data": {
+        "slug": "tr_a1_shopping_basics_kadar",
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "tr": "ne kadar"
+        },
+        "translations": {
+          "fa": "چقدر"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_04",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "lemma": "ne kadar",
+        "display_lemma": "ne kadar",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "tr_a1_shopping_basics_kadar"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_04",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "lexeme_ref": "lx_shopping_basics_04",
+        "surface_form": "ne kadar",
+        "display_form": "ne kadar",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_05",
+      "data": {
+        "slug": "tr_a1_shopping_basics_lira",
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "lira"
+        },
+        "translations": {
+          "fa": "لیر"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_05",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "lemma": "lira",
+        "display_lemma": "lira",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_shopping_basics_lira"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_05",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "lexeme_ref": "lx_shopping_basics_05",
+        "surface_form": "lira",
+        "display_form": "lira",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_06",
+      "data": {
+        "slug": "tr_a1_shopping_basics_tane",
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "concept_type": "lexical",
+        "part_of_speech": "classifier",
+        "forms": {
+          "tr": "tane"
+        },
+        "translations": {
+          "fa": "عدد / دانه"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_06",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "lemma": "tane",
+        "display_lemma": "tane",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "classifier",
+        "concept_refs": [
+          "tr_a1_shopping_basics_tane"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_06",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "lexeme_ref": "lx_shopping_basics_06",
+        "surface_form": "tane",
+        "display_form": "tane",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_basics_01",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "text": {
+          "tr": "Bu ne kadar?"
+        },
+        "translations": {
+          "fa": "این چنده؟"
+        },
+        "intent": "ask_price",
+        "concept_refs": [
+          "tr_a1_shopping_basics_kadar"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_basics_02",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "text": {
+          "tr": "Yüz lira."
+        },
+        "translations": {
+          "fa": "صد لیر."
+        },
+        "intent": "state_price",
+        "concept_refs": [
+          "tr_a1_shopping_basics_lira"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_basics_03",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "text": {
+          "tr": "Bu çok pahalı."
+        },
+        "translations": {
+          "fa": "این خیلی گران است."
+        },
+        "intent": "evaluate_price",
+        "concept_refs": [
+          "tr_a1_shopping_basics_pahali"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_basics_04",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "text": {
+          "tr": "İki tane alıyorum."
+        },
+        "translations": {
+          "fa": "دو تا می‌گیرم."
+        },
+        "intent": "buy_quantity",
+        "concept_refs": [
+          "tr_a1_shopping_basics_tane"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_shopping_basics_core",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "slug": "a1-tr-shopping-basics-grammar",
+        "title": "Sayı + tane",
+        "rule_summary": "tane can be used as a very common classifier after numbers when counting individual items.",
+        "explanation": {
+          "fa": "برای شمارش چیزها در مکالمه، tane خیلی رایج است: iki tane یعنی «دو تا». بعد از عدد لازم نیست اسم را جمع کنی."
+        },
+        "examples": [
+          {
+            "tr": "iki tane",
+            "fa": "دو تا"
+          },
+          {
+            "tr": "üç tane",
+            "fa": "سه تا"
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_shopping_basics_01",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "title": "Fiyat sormak",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "shopping",
+        "characters": [
+          "Deniz",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Bu ne kadar?",
+            "translation_fa": "این چنده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Yüz lira.",
+            "translation_fa": "صد لیر."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Biraz pahalı.",
+            "translation_fa": "یکم گرونه."
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Evet.",
+            "translation_fa": "بله."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_shopping_basics_02",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "title": "İki tane",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "shopping",
+        "characters": [
+          "Zeynep",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Zeynep",
+            "text": "Kaç tane?",
+            "translation_fa": "چند تا؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "İki tane, lütfen.",
+            "translation_fa": "دو تا، لطفاً."
+          },
+          {
+            "order": 3,
+            "speaker": "Zeynep",
+            "text": "Başka?",
+            "translation_fa": "چیز دیگه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Hayır, teşekkürler.",
+            "translation_fa": "نه، ممنون."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu ne kadar?"
+        },
+        "answer": {
+          "value": "این چنده؟"
+        },
+        "options": [
+          "این چنده؟",
+          "صد لیر.",
+          "این خیلی گران است.",
+          "دو تا می‌گیرم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ne kadar? — این چنده؟",
+          "model_answer": "Bu ne kadar?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Yüz lira."
+        },
+        "answer": {
+          "value": "Yüz lira."
+        },
+        "options": [
+          "Yüz lira.",
+          "Bu ne kadar?",
+          "Bu çok pahalı.",
+          "İki tane alıyorum."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yüz lira. — صد لیر.",
+          "model_answer": "Yüz lira.",
+          "transcript_tr": "Yüz lira."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bu ne kadar?"
+        },
+        "answer": {
+          "expected_text": "Bu ne kadar?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ne kadar? — این چنده؟",
+          "model_answer": "Bu ne kadar?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_build",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "lira.",
+            "Yüz"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Yüz",
+            "lira."
+          ],
+          "value": "Yüz lira."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yüz lira. — صد لیر.",
+          "model_answer": "Yüz lira."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_shopping_basics_01",
+          "question_fa": "کدام گزینه با معنی «این چنده؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu ne kadar?"
+        },
+        "options": [
+          "Bu ne kadar?",
+          "Yüz lira.",
+          "Bu çok pahalı.",
+          "İki tane alıyorum."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ne kadar? — این چنده؟",
+          "model_answer": "Bu ne kadar?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu çok pahalı."
+        },
+        "answer": {
+          "value": "این خیلی گران است."
+        },
+        "options": [
+          "این خیلی گران است.",
+          "این چنده؟",
+          "صد لیر.",
+          "دو تا می‌گیرم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu çok pahalı. — این خیلی گران است.",
+          "model_answer": "Bu çok pahalı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "İki tane alıyorum."
+        },
+        "answer": {
+          "value": "İki tane alıyorum."
+        },
+        "options": [
+          "İki tane alıyorum.",
+          "Bu çok pahalı.",
+          "Bu ne kadar?",
+          "Yüz lira."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki tane alıyorum. — دو تا می‌گیرم.",
+          "model_answer": "İki tane alıyorum.",
+          "transcript_tr": "İki tane alıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bu çok pahalı."
+        },
+        "answer": {
+          "expected_text": "Bu çok pahalı."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu çok pahalı. — این خیلی گران است.",
+          "model_answer": "Bu çok pahalı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_build",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "tane",
+            "alıyorum.",
+            "İki"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "İki",
+            "tane",
+            "alıyorum."
+          ],
+          "value": "İki tane alıyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki tane alıyorum. — دو تا می‌گیرم.",
+          "model_answer": "İki tane alıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-shopping-basics-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_shopping_basics_02",
+          "question_fa": "کدام گزینه با معنی «این خیلی گران است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu çok pahalı."
+        },
+        "options": [
+          "Bu çok pahalı.",
+          "Bu ne kadar?",
+          "Yüz lira.",
+          "İki tane alıyorum."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu çok pahalı. — این خیلی گران است.",
+          "model_answer": "Bu çok pahalı."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

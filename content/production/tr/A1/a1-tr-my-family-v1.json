@@ -1,0 +1,851 @@
+{
+  "batch_id": "tr-tr-a1-my-family-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-my-family",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_my_family_01",
+      "data": {
+        "slug": "tr_a1_my_family_anne",
+        "lesson_key": "a1-tr-my-family-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "anne"
+        },
+        "translations": {
+          "fa": "مادر"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_family_01",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "lemma": "anne",
+        "display_lemma": "anne",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_my_family_anne"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_family_01",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "lexeme_ref": "lx_my_family_01",
+        "surface_form": "anne",
+        "display_form": "anne",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_family_02",
+      "data": {
+        "slug": "tr_a1_my_family_baba",
+        "lesson_key": "a1-tr-my-family-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "baba"
+        },
+        "translations": {
+          "fa": "پدر"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_family_02",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "lemma": "baba",
+        "display_lemma": "baba",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_my_family_baba"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_family_02",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "lexeme_ref": "lx_my_family_02",
+        "surface_form": "baba",
+        "display_form": "baba",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_family_03",
+      "data": {
+        "slug": "tr_a1_my_family_kardes",
+        "lesson_key": "a1-tr-my-family-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "kardeş"
+        },
+        "translations": {
+          "fa": "خواهر یا برادر"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_family_03",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "lemma": "kardeş",
+        "display_lemma": "kardeş",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_my_family_kardes"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_family_03",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "lexeme_ref": "lx_my_family_03",
+        "surface_form": "kardeş",
+        "display_form": "kardeş",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_family_04",
+      "data": {
+        "slug": "tr_a1_my_family_aile",
+        "lesson_key": "a1-tr-my-family-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "aile"
+        },
+        "translations": {
+          "fa": "خانواده"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_family_04",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "lemma": "aile",
+        "display_lemma": "aile",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_my_family_aile"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_family_04",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "lexeme_ref": "lx_my_family_04",
+        "surface_form": "aile",
+        "display_form": "aile",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_family_05",
+      "data": {
+        "slug": "tr_a1_my_family_benim",
+        "lesson_key": "a1-tr-my-family-02",
+        "concept_type": "lexical",
+        "part_of_speech": "pronoun",
+        "forms": {
+          "tr": "benim"
+        },
+        "translations": {
+          "fa": "مال من / منِ"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_family_05",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "lemma": "benim",
+        "display_lemma": "benim",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "pronoun",
+        "concept_refs": [
+          "tr_a1_my_family_benim"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_family_05",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "lexeme_ref": "lx_my_family_05",
+        "surface_form": "benim",
+        "display_form": "benim",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_family_06",
+      "data": {
+        "slug": "tr_a1_my_family_var",
+        "lesson_key": "a1-tr-my-family-02",
+        "concept_type": "lexical",
+        "part_of_speech": "predicate",
+        "forms": {
+          "tr": "var"
+        },
+        "translations": {
+          "fa": "وجود دارد / دارم"
+        },
+        "cefr": "A1",
+        "topic": "family",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_family_06",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "lemma": "var",
+        "display_lemma": "var",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "predicate",
+        "concept_refs": [
+          "tr_a1_my_family_var"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_family_06",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "lexeme_ref": "lx_my_family_06",
+        "surface_form": "var",
+        "display_form": "var",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_family_01",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "text": {
+          "tr": "Bu benim annem."
+        },
+        "translations": {
+          "fa": "این مادر من است."
+        },
+        "intent": "introduce_family",
+        "concept_refs": [
+          "tr_a1_my_family_anne",
+          "tr_a1_my_family_benim"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_family_02",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "text": {
+          "tr": "Bu benim babam."
+        },
+        "translations": {
+          "fa": "این پدر من است."
+        },
+        "intent": "introduce_family",
+        "concept_refs": [
+          "tr_a1_my_family_baba",
+          "tr_a1_my_family_benim"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_family_03",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "text": {
+          "tr": "Bir kardeşim var."
+        },
+        "translations": {
+          "fa": "یک خواهر یا برادر دارم."
+        },
+        "intent": "state_family",
+        "concept_refs": [
+          "tr_a1_my_family_kardes",
+          "tr_a1_my_family_var"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_family_04",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "text": {
+          "tr": "Ailem İstanbul'da."
+        },
+        "translations": {
+          "fa": "خانواده‌ام در استانبول است."
+        },
+        "intent": "state_family_location",
+        "concept_refs": [
+          "tr_a1_my_family_aile"
+        ],
+        "cefr": "A1",
+        "topic": "family",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_my_family_core",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "slug": "a1-tr-my-family-grammar",
+        "title": "İyelik: annem, babam",
+        "rule_summary": "Possession can be marked on the noun: annem = my mother, babam = my father.",
+        "explanation": {
+          "fa": "در ترکی «مالِ من» می‌تواند داخل خود اسم بیاید: annem یعنی «مادرم»، babam یعنی «پدرم». این همان الگوی adım از Pre-A1 است که حالا گسترشش می‌دهیم."
+        },
+        "examples": [
+          {
+            "tr": "annem",
+            "fa": "مادرم"
+          },
+          {
+            "tr": "babam",
+            "fa": "پدرم"
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_my_family_01",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "title": "Fotoğraftaki aile",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "family",
+        "characters": [
+          "Elif",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Bu kim?",
+            "translation_fa": "این کیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Bu benim annem.",
+            "translation_fa": "این مادرم است."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Bu da baban mı?",
+            "translation_fa": "این یکی هم پدرته؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "Evet, babam.",
+            "translation_fa": "بله، پدرمه."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_my_family_02",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "title": "Kardeşler",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "family",
+        "characters": [
+          "Selin",
+          "Mert"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Kardeşin var mı?",
+            "translation_fa": "خواهر یا برادر داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Mert",
+            "text": "Evet, bir kardeşim var.",
+            "translation_fa": "بله، یکی دارم."
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "Benim iki kardeşim var.",
+            "translation_fa": "من دو خواهر یا برادر دارم."
+          },
+          {
+            "order": 4,
+            "speaker": "Mert",
+            "text": "Güzel!",
+            "translation_fa": "عالیه!"
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu benim annem."
+        },
+        "answer": {
+          "value": "این مادر من است."
+        },
+        "options": [
+          "این مادر من است.",
+          "این پدر من است.",
+          "یک خواهر یا برادر دارم.",
+          "خانواده‌ام در استانبول است."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu benim annem. — این مادر من است.",
+          "model_answer": "Bu benim annem."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bu benim babam."
+        },
+        "answer": {
+          "value": "Bu benim babam."
+        },
+        "options": [
+          "Bu benim babam.",
+          "Bu benim annem.",
+          "Bir kardeşim var.",
+          "Ailem İstanbul'da."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu benim babam. — این پدر من است.",
+          "model_answer": "Bu benim babam.",
+          "transcript_tr": "Bu benim babam."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bu benim annem."
+        },
+        "answer": {
+          "expected_text": "Bu benim annem."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu benim annem. — این مادر من است.",
+          "model_answer": "Bu benim annem."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_01_build",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "benim",
+            "babam.",
+            "Bu"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bu",
+            "benim",
+            "babam."
+          ],
+          "value": "Bu benim babam."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu benim babam. — این پدر من است.",
+          "model_answer": "Bu benim babam."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-my-family-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_my_family_01",
+          "question_fa": "کدام گزینه با معنی «این مادر من است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu benim annem."
+        },
+        "options": [
+          "Bu benim annem.",
+          "Bu benim babam.",
+          "Bir kardeşim var.",
+          "Ailem İstanbul'da."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu benim annem. — این مادر من است.",
+          "model_answer": "Bu benim annem."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bir kardeşim var."
+        },
+        "answer": {
+          "value": "یک خواهر یا برادر دارم."
+        },
+        "options": [
+          "یک خواهر یا برادر دارم.",
+          "این مادر من است.",
+          "این پدر من است.",
+          "خانواده‌ام در استانبول است."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kardeşim var. — یک خواهر یا برادر دارم.",
+          "model_answer": "Bir kardeşim var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ailem İstanbul'da."
+        },
+        "answer": {
+          "value": "Ailem İstanbul'da."
+        },
+        "options": [
+          "Ailem İstanbul'da.",
+          "Bir kardeşim var.",
+          "Bu benim annem.",
+          "Bu benim babam."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ailem İstanbul'da. — خانواده‌ام در استانبول است.",
+          "model_answer": "Ailem İstanbul'da.",
+          "transcript_tr": "Ailem İstanbul'da."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bir kardeşim var."
+        },
+        "answer": {
+          "expected_text": "Bir kardeşim var."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kardeşim var. — یک خواهر یا برادر دارم.",
+          "model_answer": "Bir kardeşim var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_02_build",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "İstanbul'da.",
+            "Ailem"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ailem",
+            "İstanbul'da."
+          ],
+          "value": "Ailem İstanbul'da."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ailem İstanbul'da. — خانواده‌ام در استانبول است.",
+          "model_answer": "Ailem İstanbul'da."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_family_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-my-family-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_my_family_02",
+          "question_fa": "کدام گزینه با معنی «یک خواهر یا برادر دارم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bir kardeşim var."
+        },
+        "options": [
+          "Bir kardeşim var.",
+          "Bu benim annem.",
+          "Bu benim babam.",
+          "Ailem İstanbul'da."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "family",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kardeşim var. — یک خواهر یا برادر دارم.",
+          "model_answer": "Bir kardeşim var."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
