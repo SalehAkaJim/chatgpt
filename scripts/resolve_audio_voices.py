@@ -174,8 +174,26 @@ def _resolve_from_library(api_key: str, voice_key: str, spec: dict, locale: str,
         for key, value in locks.items()
         if key.startswith("character:") and value.get("voice_id")
     }
-    available = [v for v in _shared_candidates(api_key, spec, locale) if v["voice_id"] not in reserved]
-    ranked = _rank_character_candidates(available, spec)
+
+    def ranked_for(candidate_spec: dict) -> list[dict]:
+        available = [
+            v for v in _shared_candidates(api_key, candidate_spec, locale)
+            if v["voice_id"] not in reserved
+        ]
+        # Keep the original persona requirements for scoring and safety even
+        # when we relax provider-side metadata filters such as accent.
+        return _rank_character_candidates(available, spec)
+
+    ranked = ranked_for(spec)
+    if not ranked and spec.get("preferred_accent"):
+        # Voice Library metadata is inconsistent: a voice can be verified for
+        # de-DE while its top-level accent is blank/non-standard. Prefer the
+        # requested accent first, then broaden only that metadata filter while
+        # still requiring the same locale/language, gender and persona safety.
+        accent_fallback_spec = dict(spec)
+        accent_fallback_spec.pop("preferred_accent", None)
+        ranked = ranked_for(accent_fallback_spec)
+
     if not ranked:
         raise RuntimeError(f"No unused persona-compatible ElevenLabs Voice Library voice remains for {voice_key}")
 
