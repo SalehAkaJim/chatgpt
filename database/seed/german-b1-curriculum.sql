@@ -18,3 +18,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B1'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German B1 curriculum, batch 2 (units 11-20).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',2)
+FROM (
+  SELECT 110 AS sort_order,'family-home' AS skill_slug,'home' AS topic_slug,'b1-de-housing-renting' AS slug,'Wohnungssuche & Miete' AS title,'Wohnungsangebote und Mietbedingungen verstehen, Rückfragen stellen und Bedingungen klären.' AS objective,3 AS expected_lessons,'Relativsätze mit Ortsangaben; bevor; falls' AS grammar_focus
+  UNION ALL SELECT 120,'work-study','jobs','b1-de-job-applications','Bewerbung & Vorstellungsgespräch','Berufliche Erfahrung und Stärken darstellen und typische Fragen im Vorstellungsgespräch beantworten.',3,'weil / da; würde + Infinitiv; wenn in beruflichen Situationen'
+  UNION ALL SELECT 130,'work-study','jobs','b1-de-workplace-communication','Kommunikation am Arbeitsplatz','Aufgaben klären, Informationen weitergeben und Prioritäten im Team abstimmen.',3,'indirekte Fragen; sobald / damit; da / weil'
+  UNION ALL SELECT 140,'work-study','school-study','b1-de-courses-learning','Kurse & Weiterbildung','Weiterbildungsangebote vergleichen, Lernziele erklären und Fortschritt reflektieren.',3,'Relativsätze; um ... zu / damit; obwohl / trotzdem'
+  UNION ALL SELECT 150,'daily-life','common-actions','b1-de-environment-recycling','Umwelt & Recycling','Umweltverhalten, Recycling und Möglichkeiten zur Reduzierung von Verbrauch diskutieren.',3,'Passiv; je ... desto; seit / seitdem'
+  UNION ALL SELECT 160,'shopping-money','shopping','b1-de-complaints-returns','Reklamation & Rückgabe','Mängel genau beschreiben, Nachweise nennen und höflich eine passende Lösung verlangen.',3,'obwohl; Konjunktiv II für höfliche Forderungen; falls / wenn'
+  UNION ALL SELECT 170,'shopping-money','prices','b1-de-money-budget','Geld & Budget','Ausgaben planen, Sparziele erklären und alltägliche finanzielle Entscheidungen begründen.',3,'damit; je ... desto; weder ... noch / sowohl ... als auch'
+  UNION ALL SELECT 180,'social','polite-language','b1-de-relationships-conflict','Beziehungen & Konflikte','Missverständnisse und Gefühle erklären, sich entschuldigen und einen Kompromiss aushandeln.',3,'weil / dass; reflexive Verben mit Präpositionen; Relativsatz mit Präposition'
+  UNION ALL SELECT 190,'social','hobbies','b1-de-culture-events','Kultur & Veranstaltungen','Kulturelle Erlebnisse beschreiben, differenziert bewerten und praktische Veranstaltungsinformationen austauschen.',3,'Relativsätze mit Präpositionen; obwohl; Passiv Präteritum'
+  UNION ALL SELECT 200,'time-plans','future-plans','b1-de-decisions-consequences','Möglichkeiten abwägen, mögliche Folgen einschätzen und Entscheidungen nachvollziehbar begründen.',3,'falls + Konjunktiv II; solange; sich entscheiden für/gegen'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B1'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
