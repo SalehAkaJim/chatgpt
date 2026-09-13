@@ -1,8 +1,8 @@
-name: Generate Korean B1 Batch
+name: Generate Korean B2 Batch
 on:
   push:
     branches: [main]
-    paths: ['.github/korean-b1-batch-trigger']
+    paths: ['.github/korean-b2-batch-trigger']
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,22 +15,22 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
-      - run: python scripts/generate_korean_b1_batch.py
+      - run: python scripts/generate_korean_b2_batch.py
       - run: |
           set -euo pipefail
-          test "$(find content/production/ko/B1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
-          for f in content/production/ko/B1/*.json; do python scripts/validate_content.py "$f"; done
+          test "$(find content/production/ko/B2 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/ko/B2/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/ko-KR.json
-          python database/import/ko/b1.py --dry-run
+          python database/import/ko/b2.py --dry-run
       - name: Educational batch summary
         run: |
           python - <<'PY'
           import collections,json
           from pathlib import Path
-          counts=collections.Counter(); lessons=set(); ordered=[]; units=[]
-          for p in ['content/specs/ko/B1/batch-01a.json','content/specs/ko/B1/batch-01b.json']: units += json.loads(Path(p).read_text())['units']
+          counts=collections.Counter(); lessons=set(); ordered=[]
+          units=json.loads(Path('content/specs/ko/B2/batch-01.json').read_text())['units']
           for unit in units:
-              b=json.loads((Path('content/production/ko/B1')/f"b1-ko-{unit['slug']}-v1.json").read_text()); dialogues=[]
+              b=json.loads((Path('content/production/ko/B2')/f"b2-ko-{unit['slug']}-v1.json").read_text()); dialogues=[]
               for item in b['items']:
                   counts[item['kind']]+=1; lk=item.get('data',{}).get('lesson_key')
                   if lk: lessons.add(lk)
@@ -43,5 +43,5 @@ jobs:
           PY
       - name: Commit production
         run: |
-          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git add content/production/ko/B1
-          if ! git diff --cached --quiet; then git commit -m 'Generate Korean B1 batch 1 production content [skip ci]'; git fetch origin main; git rebase origin/main; git push origin HEAD:main; fi
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git add content/production/ko/B2
+          if ! git diff --cached --quiet; then git commit -m 'Generate Korean B2 batch 1 production content [skip ci]'; git fetch origin main; git rebase origin/main; git push origin HEAD:main; fi
