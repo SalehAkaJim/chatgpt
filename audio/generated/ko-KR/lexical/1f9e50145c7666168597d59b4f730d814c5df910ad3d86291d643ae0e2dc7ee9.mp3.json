@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "063c1a7bb93233dcd2056f684229ca776791015f7602f1fedf250a71cea01d10",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1f9e50145c7666168597d59b4f730d814c5df910ad3d86291d643ae0e2dc7ee9",
+  "voice_key": "ko-kr.lexical.native-clear",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "afc28b4e8a45ad2230f89ccfc3ccd7843cfe0b57cbb4f4d23a38b0bca884c66e",
+  "duration_ms": 1071,
+  "generated_at": "2026-09-13T22:04:59.140022+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9db61bb1-f1d0-5a23-a869-d4d482c96ed9",
+      "entity_key": "lx_shopping_basics_05"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "754d37e1-8b31-5321-8c72-72d395de91ff",
+      "entity_key": "wf_shopping_basics_05"
+    }
+  ]
+}
