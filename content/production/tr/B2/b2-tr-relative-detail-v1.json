@@ -1,0 +1,863 @@
+{
+  "batch_id": "tr-tr-b2-relative-detail-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "B2",
+  "curriculum_unit": "b2-tr-relative-detail",
+  "generator": "gpt-5.6-sol:turkish-b2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_relative_detail_01",
+      "data": {
+        "slug": "tr_b2_relative_detail_ayrinti",
+        "lesson_key": "b2-tr-relative-detail-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ayrıntı"
+        },
+        "translations": {
+          "fa": "جزئیات"
+        },
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_relative_detail_01",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "lemma": "ayrıntı",
+        "display_lemma": "ayrıntı",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_b2_relative_detail_ayrinti"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_relative_detail_01",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "lexeme_ref": "lx_relative_detail_01",
+        "surface_form": "ayrıntı",
+        "display_form": "ayrıntı",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_relative_detail_02",
+      "data": {
+        "slug": "tr_b2_relative_detail_ozellik",
+        "lesson_key": "b2-tr-relative-detail-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "özellik"
+        },
+        "translations": {
+          "fa": "ویژگی"
+        },
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_relative_detail_02",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "lemma": "özellik",
+        "display_lemma": "özellik",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_b2_relative_detail_ozellik"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_relative_detail_02",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "lexeme_ref": "lx_relative_detail_02",
+        "surface_form": "özellik",
+        "display_form": "özellik",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_relative_detail_03",
+      "data": {
+        "slug": "tr_b2_relative_detail_tanitmak",
+        "lesson_key": "b2-tr-relative-detail-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "tanıtmak"
+        },
+        "translations": {
+          "fa": "معرفی کردن"
+        },
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_relative_detail_03",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "lemma": "tanıtmak",
+        "display_lemma": "tanıtmak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_b2_relative_detail_tanitmak"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_relative_detail_03",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "lexeme_ref": "lx_relative_detail_03",
+        "surface_form": "tanıtmak",
+        "display_form": "tanıtmak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_relative_detail_04",
+      "data": {
+        "slug": "tr_b2_relative_detail_bahsetmek",
+        "lesson_key": "b2-tr-relative-detail-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "bahsetmek"
+        },
+        "translations": {
+          "fa": "اشاره کردن"
+        },
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_relative_detail_04",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "lemma": "bahsetmek",
+        "display_lemma": "bahsetmek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_b2_relative_detail_bahsetmek"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_relative_detail_04",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "lexeme_ref": "lx_relative_detail_04",
+        "surface_form": "bahsetmek",
+        "display_form": "bahsetmek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_relative_detail_05",
+      "data": {
+        "slug": "tr_b2_relative_detail_ilgili",
+        "lesson_key": "b2-tr-relative-detail-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "ilgili"
+        },
+        "translations": {
+          "fa": "مرتبط"
+        },
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_relative_detail_05",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "lemma": "ilgili",
+        "display_lemma": "ilgili",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_b2_relative_detail_ilgili"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_relative_detail_05",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "lexeme_ref": "lx_relative_detail_05",
+        "surface_form": "ilgili",
+        "display_form": "ilgili",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_relative_detail_06",
+      "data": {
+        "slug": "tr_b2_relative_detail_kapsamak",
+        "lesson_key": "b2-tr-relative-detail-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "kapsamak"
+        },
+        "translations": {
+          "fa": "در بر گرفتن"
+        },
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_relative_detail_06",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "lemma": "kapsamak",
+        "display_lemma": "kapsamak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_b2_relative_detail_kapsamak"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_relative_detail_06",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "lexeme_ref": "lx_relative_detail_06",
+        "surface_form": "kapsamak",
+        "display_form": "kapsamak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_relative_detail_01",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "text": {
+          "tr": "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış."
+        },
+        "translations": {
+          "fa": "کسی که هفته پیش با او آشنا شدم، متخصصی بوده که این پروژه را مدیریت می‌کند."
+        },
+        "intent": "relative_object",
+        "concept_refs": [],
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_relative_detail_02",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "text": {
+          "tr": "Toplantıda konuşan kadın yeni araştırmayı tanıttı."
+        },
+        "translations": {
+          "fa": "زنی که در جلسه صحبت کرد پژوهش جدید را معرفی کرد."
+        },
+        "intent": "relative_subject",
+        "concept_refs": [
+          "tr_b2_relative_detail_tanitmak"
+        ],
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_relative_detail_03",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "text": {
+          "tr": "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor."
+        },
+        "translations": {
+          "fa": "جزئیاتی که در گزارش به آن‌ها اشاره کردیم در بخش دوم آمده‌اند."
+        },
+        "intent": "reference",
+        "concept_refs": [
+          "tr_b2_relative_detail_bahsetmek",
+          "tr_b2_relative_detail_ayrinti"
+        ],
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_relative_detail_04",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "text": {
+          "tr": "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        },
+        "translations": {
+          "fa": "دنبال راه‌حلی هستیم که چند منطقه را پوشش دهد."
+        },
+        "intent": "dense_description",
+        "concept_refs": [
+          "tr_b2_relative_detail_kapsamak"
+        ],
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_relative_detail_core",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "slug": "b2-tr-relative-detail-grammar",
+        "title": "Sıfat-fiiller: -(y)An / -DIK",
+        "rule_summary": "Use participial relative clauses to identify people and things without breaking discourse into many short sentences.",
+        "explanation": {
+          "fa": "با -(y)An فاعلِ انجام‌دهنده و با -DIK مفعول یا چیزی را که درباره‌اش عمل انجام شده توصیف می‌کنیم."
+        },
+        "examples": [
+          {
+            "tr": "Bizi arayan kişi müdürdü.",
+            "fa": "کسی که به ما زنگ زد مدیر بود."
+          },
+          {
+            "tr": "Dün izlediğimiz film çok uzundu.",
+            "fa": "فیلمی که دیروز دیدیم خیلی طولانی بود."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_relative_detail_01",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "title": "Hangi uzman?",
+        "setting": "",
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "characters": [
+          "Zeynep",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Zeynep",
+            "text": "Az önce konuşan uzmanı tanıyor musun?",
+            "translation_fa": "متخصصی را که همین الان صحبت کرد می‌شناسی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Evet, geçen ay okuduğumuz raporu yazan ekipteydi.",
+            "translation_fa": "بله، در تیمی بود که گزارش ماه قبل را نوشته بود."
+          },
+          {
+            "order": 3,
+            "speaker": "Zeynep",
+            "text": "Bahsettiği proje hangisiydi?",
+            "translation_fa": "پروژه‌ای که اشاره کرد کدام بود؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Üç ilçeyi kapsayan ulaşım projesi.",
+            "translation_fa": "پروژه حمل‌ونقلی که سه منطقه را پوشش می‌دهد."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_relative_detail_02",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "title": "Doğru dosya",
+        "setting": "",
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "characters": [
+          "Mert",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mert",
+            "text": "Dün gönderdiğin dosyayı bulamadım.",
+            "translation_fa": "فایلی را که دیروز فرستادی پیدا نکردم."
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Başlığında 'revizyon' yazan dosya mı?",
+            "translation_fa": "فایلی که در عنوانش «بازبینی» نوشته بود؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Mert",
+            "text": "Hayır, toplantıda kullandığımız son sürüm.",
+            "translation_fa": "نه، نسخه نهایی که در جلسه استفاده کردیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Tamam, şimdi hangi dosyadan bahsettiğini anladım.",
+            "translation_fa": "باشه، حالا فهمیدم درباره کدام فایل حرف می‌زنی."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_01_meaning",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış."
+        },
+        "answer": {
+          "value": "کسی که هفته پیش با او آشنا شدم، متخصصی بوده که این پروژه را مدیریت می‌کند."
+        },
+        "options": [
+          "کسی که هفته پیش با او آشنا شدم، متخصصی بوده که این پروژه را مدیریت می‌کند.",
+          "زنی که در جلسه صحبت کرد پژوهش جدید را معرفی کرد.",
+          "جزئیاتی که در گزارش به آن‌ها اشاره کردیم در بخش دوم آمده‌اند.",
+          "دنبال راه‌حلی هستیم که چند منطقه را پوشش دهد."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış. — کسی که هفته پیش با او آشنا شدم، متخصصی بوده که این پروژه را مدیریت می‌کند.",
+          "model_answer": "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_01_listen",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Toplantıda konuşan kadın yeni araştırmayı tanıttı."
+        },
+        "answer": {
+          "value": "Toplantıda konuşan kadın yeni araştırmayı tanıttı."
+        },
+        "options": [
+          "Toplantıda konuşan kadın yeni araştırmayı tanıttı.",
+          "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış.",
+          "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor.",
+          "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Toplantıda konuşan kadın yeni araştırmayı tanıttı. — زنی که در جلسه صحبت کرد پژوهش جدید را معرفی کرد.",
+          "model_answer": "Toplantıda konuşan kadın yeni araştırmayı tanıttı.",
+          "transcript_tr": "Toplantıda konuşan kadın yeni araştırmayı tanıttı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_01_speak",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış."
+        },
+        "answer": {
+          "expected_text": "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış. — کسی که هفته پیش با او آشنا شدم، متخصصی بوده که این پروژه را مدیریت می‌کند.",
+          "model_answer": "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_01_build",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "konuşan",
+            "kadın",
+            "yeni",
+            "araştırmayı",
+            "tanıttı.",
+            "Toplantıda"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Toplantıda",
+            "konuşan",
+            "kadın",
+            "yeni",
+            "araştırmayı",
+            "tanıttı."
+          ],
+          "value": "Toplantıda konuşan kadın yeni araştırmayı tanıttı."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Toplantıda konuşan kadın yeni araştırmayı tanıttı. — زنی که در جلسه صحبت کرد پژوهش جدید را معرفی کرد.",
+          "model_answer": "Toplantıda konuşan kadın yeni araştırmayı tanıttı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_01_dialogue",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_relative_detail_01",
+          "question_fa": "کدام گزینه با معنی «کسی که هفته پیش با او آشنا شدم، متخصصی بوده که این پروژه را مدیریت می‌کند.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış."
+        },
+        "options": [
+          "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış.",
+          "Toplantıda konuşan kadın yeni araştırmayı tanıttı.",
+          "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor.",
+          "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış. — کسی که هفته پیش با او آشنا شدم، متخصصی بوده که این پروژه را مدیریت می‌کند.",
+          "model_answer": "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_02_meaning",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor."
+        },
+        "answer": {
+          "value": "جزئیاتی که در گزارش به آن‌ها اشاره کردیم در بخش دوم آمده‌اند."
+        },
+        "options": [
+          "جزئیاتی که در گزارش به آن‌ها اشاره کردیم در بخش دوم آمده‌اند.",
+          "کسی که هفته پیش با او آشنا شدم، متخصصی بوده که این پروژه را مدیریت می‌کند.",
+          "زنی که در جلسه صحبت کرد پژوهش جدید را معرفی کرد.",
+          "دنبال راه‌حلی هستیم که چند منطقه را پوشش دهد."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor. — جزئیاتی که در گزارش به آن‌ها اشاره کردیم در بخش دوم آمده‌اند.",
+          "model_answer": "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_02_listen",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        },
+        "answer": {
+          "value": "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        },
+        "options": [
+          "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz.",
+          "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor.",
+          "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış.",
+          "Toplantıda konuşan kadın yeni araştırmayı tanıttı."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Birden fazla bölgeyi kapsayan bir çözüm arıyoruz. — دنبال راه‌حلی هستیم که چند منطقه را پوشش دهد.",
+          "model_answer": "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz.",
+          "transcript_tr": "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_02_speak",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor."
+        },
+        "answer": {
+          "expected_text": "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor. — جزئیاتی که در گزارش به آن‌ها اشاره کردیم در بخش دوم آمده‌اند.",
+          "model_answer": "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_02_build",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "fazla",
+            "bölgeyi",
+            "kapsayan",
+            "bir",
+            "çözüm",
+            "arıyoruz.",
+            "Birden"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Birden",
+            "fazla",
+            "bölgeyi",
+            "kapsayan",
+            "bir",
+            "çözüm",
+            "arıyoruz."
+          ],
+          "value": "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Birden fazla bölgeyi kapsayan bir çözüm arıyoruz. — دنبال راه‌حلی هستیم که چند منطقه را پوشش دهد.",
+          "model_answer": "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_relative_detail_02_dialogue",
+      "data": {
+        "lesson_key": "b2-tr-relative-detail-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_relative_detail_02",
+          "question_fa": "کدام گزینه با معنی «جزئیاتی که در گزارش به آن‌ها اشاره کردیم در بخش دوم آمده‌اند.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor."
+        },
+        "options": [
+          "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor.",
+          "Geçen hafta tanıştığım kişi bu projeyi yöneten uzmanmış.",
+          "Toplantıda konuşan kadın yeni araştırmayı tanıttı.",
+          "Birden fazla bölgeyi kapsayan bir çözüm arıyoruz."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor. — جزئیاتی که در گزارش به آن‌ها اشاره کردیم در بخش دوم آمده‌اند.",
+          "model_answer": "Raporda bahsettiğimiz ayrıntılar ikinci bölümde yer alıyor."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
