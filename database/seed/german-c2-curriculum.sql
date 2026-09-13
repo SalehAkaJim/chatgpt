@@ -39,3 +39,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='C2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German C2 curriculum, batch 3 (units 21-30).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',3)
+FROM (
+  SELECT 210 AS sort_order,'communication' AS skill_slug,'simple-messages' AS topic_slug,'c2-de-presupposition-accommodation' AS slug,'Präsuppositionen erkennen und kontrolliert übernehmen' AS title,'Implizite Voraussetzungen erkennen, ihre Gültigkeit prüfen und Antworten formulieren, ohne strittige Annahmen automatisch zu übernehmen.' AS objective,3 AS expected_lessons,'Die Frage setzt voraus, dass; selbst wenn wir annehmen, dass; nicht ohne Weiteres voraussetzen' AS grammar_focus
+  UNION ALL SELECT 220,'communication','simple-messages','c2-de-steelmanning-concession','Gegenpositionen fair stärken und präzise konzidieren','Die stärkste Version einer Gegenposition rekonstruieren, berechtigte Punkte zugestehen und den verbleibenden Dissens ohne Strohmannargumente präzise markieren.',3,'zwar ... aber; selbst zugestanden, dass; der stärkste Einwand lautet'
+  UNION ALL SELECT 230,'communication','simple-messages','c2-de-descriptive-normative-reasoning','Deskriptive und normative Aussagen sauber trennen','Faktenbehauptungen, Sollensaussagen und Wertprämissen auseinanderhalten und normative Schlussfolgerungen transparent begründen.',3,'daraus folgt nicht, dass man ... sollte; unter der Wertannahme, dass; nicht nur empirisch, sondern auch normativ'
+  UNION ALL SELECT 240,'social','polite-language','c2-de-institutional-register-precision','Institutionelle Sprache präzise und verantwortbar einsetzen','Zwischen Empfehlung, Anordnung, Zuständigkeit, Ermessen und rechtlicher Verbindlichkeit unterscheiden und institutionelle Aussagen entsprechend präzise formulieren.',3,'ist befugt, ... zu; sieht vor, dass; im Rahmen des Ermessens'
+  UNION ALL SELECT 250,'communication','simple-messages','c2-de-metaphor-idiom-pragmatic-transfer','Metaphern, Idiomatik und pragmatische Wirkung übertragen','Metaphern, Idiome und Konnotationen funktional deuten und ihre kommunikative Wirkung in natürlicher, nicht bloß wörtlicher Form wiedergeben.',3,'bildlich gesprochen; damit schwingt mit, dass; sinngemäß, nicht wortwörtlich'
+  UNION ALL SELECT 260,'communication','simple-messages','c2-de-narrative-perspective-temporal-control','Narrative Perspektive und zeitliche Ordnung souverän steuern','Perspektivwechsel, Rückblenden, Vorgriffe und parallele Abläufe so markieren, dass damaliger Wissensstand, spätere Erkenntnis und zeitliche Ordnung klar bleiben.',3,'zu diesem Zeitpunkt; erst im Rückblick; währenddessen / zugleich'
+  UNION ALL SELECT 270,'communication','simple-messages','c2-de-academic-stance-citation-distance','Akademischen Standpunkt und Quellenabstand präzise markieren','Zwischen Quellenreferat, eigener Interpretation, Zustimmung, Vorbehalt und Widerspruch sauber unterscheiden und wissenschaftliche Positionierung transparent machen.',3,'X zufolge; dagegen lässt sich einwenden, dass; vorbehaltlich + Genitiv'
+  UNION ALL SELECT 280,'social','polite-language','c2-de-principled-disagreement-negotiation','Grundsätzlichen Dissens präzise und kooperativ verhandeln','Gemeinsamkeiten und echte Unvereinbarkeiten unterscheiden, Dissens klar benennen und Kooperation auch ohne künstlichen Vollkonsens ermöglichen.',3,'wir sind uns einig, dass ... strittig bleibt jedoch; in diesem Punkt kommen wir nicht zusammen; auch ohne Einigkeit über ... können wir'
+  UNION ALL SELECT 290,'social','polite-language','c2-de-oral-synthesis-pressure','Komplexe Inhalte unter Zeitdruck mündlich synthetisieren','Mehrere Informationen und Einschränkungen unter Zeitdruck zu einer prägnanten, strukturierten und anschlussfähigen mündlichen Antwort verdichten.',3,'kurz gesagt; entscheidend ist dabei, dass; wenn ich es auf drei Punkte reduziere'
+  UNION ALL SELECT 300,'communication','simple-messages','c2-de-judgment-language-capstone','C2-Capstone: Urteil, Perspektive und Sprache integrieren','Präsuppositionen, Evidenz, Werte, Gegenpositionen, Register, Perspektive und Zeitdruck in einem klaren, verantwortbaren Gesamturteil zusammenführen.',3,'in der Gesamtabwägung; unter Berücksichtigung dessen, dass; das bedeutet nicht, dass ... wohl aber, dass'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='C2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
