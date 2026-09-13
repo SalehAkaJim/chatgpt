@@ -1,0 +1,872 @@
+{
+  "batch_id": "tr-tr-c2-semantic-boundaries-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "C2",
+  "curriculum_unit": "c2-tr-semantic-boundaries",
+  "generator": "gpt-5.6-sol:turkish-c2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_semantic_boundaries_01",
+      "data": {
+        "slug": "tr_c2_semantic_boundaries_tanim",
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "tanım"
+        },
+        "translations": {
+          "fa": "تعریف"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_semantic_boundaries_01",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "lemma": "tanım",
+        "display_lemma": "tanım",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_tanim"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_semantic_boundaries_01",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "lexeme_ref": "lx_semantic_boundaries_01",
+        "surface_form": "tanım",
+        "display_form": "tanım",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_semantic_boundaries_02",
+      "data": {
+        "slug": "tr_c2_semantic_boundaries_sinir",
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "sınır"
+        },
+        "translations": {
+          "fa": "مرز"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_semantic_boundaries_02",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "lemma": "sınır",
+        "display_lemma": "sınır",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_sinir"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_semantic_boundaries_02",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "lexeme_ref": "lx_semantic_boundaries_02",
+        "surface_form": "sınır",
+        "display_form": "sınır",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_semantic_boundaries_03",
+      "data": {
+        "slug": "tr_c2_semantic_boundaries_olcek",
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ölçek"
+        },
+        "translations": {
+          "fa": "مقیاس"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_semantic_boundaries_03",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "lemma": "ölçek",
+        "display_lemma": "ölçek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_olcek"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_semantic_boundaries_03",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "lexeme_ref": "lx_semantic_boundaries_03",
+        "surface_form": "ölçek",
+        "display_form": "ölçek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_semantic_boundaries_04",
+      "data": {
+        "slug": "tr_c2_semantic_boundaries_olcut",
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ölçüt"
+        },
+        "translations": {
+          "fa": "معیار"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_semantic_boundaries_04",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "lemma": "ölçüt",
+        "display_lemma": "ölçüt",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_olcut"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_semantic_boundaries_04",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "lexeme_ref": "lx_semantic_boundaries_04",
+        "surface_form": "ölçüt",
+        "display_form": "ölçüt",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_semantic_boundaries_05",
+      "data": {
+        "slug": "tr_c2_semantic_boundaries_kapsamak",
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "kapsamak"
+        },
+        "translations": {
+          "fa": "در بر گرفتن"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_semantic_boundaries_05",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "lemma": "kapsamak",
+        "display_lemma": "kapsamak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_kapsamak"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_semantic_boundaries_05",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "lexeme_ref": "lx_semantic_boundaries_05",
+        "surface_form": "kapsamak",
+        "display_form": "kapsamak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_semantic_boundaries_06",
+      "data": {
+        "slug": "tr_c2_semantic_boundaries_ortusmek",
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "örtüşmek"
+        },
+        "translations": {
+          "fa": "هم‌پوشانی داشتن"
+        },
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_semantic_boundaries_06",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "lemma": "örtüşmek",
+        "display_lemma": "örtüşmek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_ortusmek"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_semantic_boundaries_06",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "lexeme_ref": "lx_semantic_boundaries_06",
+        "surface_form": "örtüşmek",
+        "display_form": "örtüşmek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_semantic_boundaries_01",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "text": {
+          "tr": "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?"
+        },
+        "translations": {
+          "fa": "وقتی می‌گوییم «موفقیت»، منظور خروجی کوتاه‌مدت است یا اثر پایدار؟"
+        },
+        "intent": "define_term",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_tanim"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_semantic_boundaries_02",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "text": {
+          "tr": "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor."
+        },
+        "translations": {
+          "fa": "دو مفهوم تا حدی هم‌پوشانی دارند، اما با معیارهای یکسان سنجیده نمی‌شوند."
+        },
+        "intent": "concept_boundary",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_ortusmek",
+          "tr_c2_semantic_boundaries_olcut"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_semantic_boundaries_03",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "text": {
+          "tr": "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar."
+        },
+        "translations": {
+          "fa": "اگر مرز تعریف را گسترش دهیم، بعضی استثناها دیگر استثنا نخواهند بود."
+        },
+        "intent": "definition_effect",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_tanim",
+          "tr_c2_semantic_boundaries_sinir"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_semantic_boundaries_04",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "text": {
+          "tr": "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        },
+        "translations": {
+          "fa": "اعتبار نتیجه به این بستگی دارد که کدام موارد را در دامنه دسته قرار دهیم."
+        },
+        "intent": "scope_dependency",
+        "concept_refs": [
+          "tr_c2_semantic_boundaries_kapsamak"
+        ],
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_semantic_boundaries_core",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "slug": "c2-tr-semantic-boundaries-grammar",
+        "title": "Tanım üzerinden akıl yürütme",
+        "rule_summary": "Make definitional choices explicit and trace how they alter classification and conclusions.",
+        "explanation": {
+          "fa": "در C2 تعریف فقط توضیح واژه نیست؛ باید نشان دهیم تغییر مرز مفهوم چگونه طبقه‌بندی و نتیجه را تغییر می‌دهد."
+        },
+        "examples": [
+          {
+            "tr": "Bu terimi dar anlamda kullanırsak sonuç değişiyor.",
+            "fa": "اگر این اصطلاح را به معنای محدود به‌کار ببریم، نتیجه تغییر می‌کند."
+          },
+          {
+            "tr": "İki kategori arasında örtüşme var, fakat ölçütleri eşdeğer değil.",
+            "fa": "بین دو دسته هم‌پوشانی هست، اما معیارهایشان معادل نیست."
+          }
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_semantic_boundaries_01",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "title": "Başarı nedir?",
+        "setting": "",
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "characters": [
+          "Elif",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Proje hedef sayısına ulaştı; başarılı diyebiliriz.",
+            "translation_fa": "پروژه به عدد هدف رسید؛ می‌توانیم بگوییم موفق بوده."
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Hangi başarı tanımını kullandığımıza bağlı.",
+            "translation_fa": "بستگی دارد از چه تعریف موفقیتی استفاده کنیم."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Çıktı açısından evet, etki açısından henüz bilmiyoruz.",
+            "translation_fa": "از نظر خروجی بله، از نظر اثر هنوز نمی‌دانیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "O halde iki ölçütü ayrı ayrı raporlayalım.",
+            "translation_fa": "پس دو معیار را جداگانه گزارش کنیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_semantic_boundaries_02",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "title": "Sınır nerede?",
+        "setting": "",
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "characters": [
+          "Selin",
+          "Mert"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Bu vaka kategoriye girmiyor gibi görünüyor.",
+            "translation_fa": "به نظر می‌رسد این مورد داخل دسته نیست."
+          },
+          {
+            "order": 2,
+            "speaker": "Mert",
+            "text": "Dar tanımda evet; daha işlevsel bir tanımda kapsanabilir.",
+            "translation_fa": "در تعریف محدود بله؛ در تعریف کارکردی‌تر می‌تواند دربرگرفته شود."
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "O zaman anlaşmazlık veride değil, sınıflandırmada.",
+            "translation_fa": "پس اختلاف بر سر داده نیست، بر سر طبقه‌بندی است."
+          },
+          {
+            "order": 4,
+            "speaker": "Mert",
+            "text": "Aynen; önce kavramsal sınırı netleştirelim.",
+            "translation_fa": "دقیقاً؛ اول مرز مفهومی را روشن کنیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_01_meaning",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?"
+        },
+        "answer": {
+          "value": "وقتی می‌گوییم «موفقیت»، منظور خروجی کوتاه‌مدت است یا اثر پایدار؟"
+        },
+        "options": [
+          "وقتی می‌گوییم «موفقیت»، منظور خروجی کوتاه‌مدت است یا اثر پایدار؟",
+          "دو مفهوم تا حدی هم‌پوشانی دارند، اما با معیارهای یکسان سنجیده نمی‌شوند.",
+          "اگر مرز تعریف را گسترش دهیم، بعضی استثناها دیگر استثنا نخواهند بود.",
+          "اعتبار نتیجه به این بستگی دارد که کدام موارد را در دامنه دسته قرار دهیم."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz? — وقتی می‌گوییم «موفقیت»، منظور خروجی کوتاه‌مدت است یا اثر پایدار؟",
+          "model_answer": "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_01_listen",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor."
+        },
+        "answer": {
+          "value": "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor."
+        },
+        "options": [
+          "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor.",
+          "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?",
+          "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar.",
+          "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor. — دو مفهوم تا حدی هم‌پوشانی دارند، اما با معیارهای یکسان سنجیده نمی‌شوند.",
+          "model_answer": "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor.",
+          "transcript_tr": "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_01_speak",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?"
+        },
+        "answer": {
+          "expected_text": "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?"
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz? — وقتی می‌گوییم «موفقیت»، منظور خروجی کوتاه‌مدت است یا اثر پایدار؟",
+          "model_answer": "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_01_build",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "kavram",
+            "kısmen",
+            "örtüşüyor,",
+            "ancak",
+            "aynı",
+            "ölçütlerle",
+            "değerlendirilmiyor.",
+            "İki"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "İki",
+            "kavram",
+            "kısmen",
+            "örtüşüyor,",
+            "ancak",
+            "aynı",
+            "ölçütlerle",
+            "değerlendirilmiyor."
+          ],
+          "value": "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor. — دو مفهوم تا حدی هم‌پوشانی دارند، اما با معیارهای یکسان سنجیده نمی‌شوند.",
+          "model_answer": "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_01_dialogue",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_semantic_boundaries_01",
+          "question_fa": "کدام گزینه با معنی «وقتی می‌گوییم «موفقیت»، منظور خروجی کوتاه‌مدت است یا اثر پایدار؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?"
+        },
+        "options": [
+          "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?",
+          "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor.",
+          "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar.",
+          "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz? — وقتی می‌گوییم «موفقیت»، منظور خروجی کوتاه‌مدت است یا اثر پایدار؟",
+          "model_answer": "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_02_meaning",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar."
+        },
+        "answer": {
+          "value": "اگر مرز تعریف را گسترش دهیم، بعضی استثناها دیگر استثنا نخواهند بود."
+        },
+        "options": [
+          "اگر مرز تعریف را گسترش دهیم، بعضی استثناها دیگر استثنا نخواهند بود.",
+          "وقتی می‌گوییم «موفقیت»، منظور خروجی کوتاه‌مدت است یا اثر پایدار؟",
+          "دو مفهوم تا حدی هم‌پوشانی دارند، اما با معیارهای یکسان سنجیده نمی‌شوند.",
+          "اعتبار نتیجه به این بستگی دارد که کدام موارد را در دامنه دسته قرار دهیم."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar. — اگر مرز تعریف را گسترش دهیم، بعضی استثناها دیگر استثنا نخواهند بود.",
+          "model_answer": "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_02_listen",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        },
+        "answer": {
+          "value": "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        },
+        "options": [
+          "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı.",
+          "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar.",
+          "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?",
+          "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı. — اعتبار نتیجه به این بستگی دارد که کدام موارد را در دامنه دسته قرار دهیم.",
+          "model_answer": "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı.",
+          "transcript_tr": "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_02_speak",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar."
+        },
+        "answer": {
+          "expected_text": "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar. — اگر مرز تعریف را گسترش دهیم، بعضی استثناها دیگر استثنا نخواهند بود.",
+          "model_answer": "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_02_build",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "geçerliliği,",
+            "hangi",
+            "vakaları",
+            "kategorinin",
+            "kapsamına",
+            "aldığımıza",
+            "bağlı.",
+            "Sonucun"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Sonucun",
+            "geçerliliği,",
+            "hangi",
+            "vakaları",
+            "kategorinin",
+            "kapsamına",
+            "aldığımıza",
+            "bağlı."
+          ],
+          "value": "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı. — اعتبار نتیجه به این بستگی دارد که کدام موارد را در دامنه دسته قرار دهیم.",
+          "model_answer": "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_semantic_boundaries_02_dialogue",
+      "data": {
+        "lesson_key": "c2-tr-semantic-boundaries-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_semantic_boundaries_02",
+          "question_fa": "کدام گزینه با معنی «اگر مرز تعریف را گسترش دهیم، بعضی استثناها دیگر استثنا نخواهند بود.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar."
+        },
+        "options": [
+          "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar.",
+          "'Başarı' derken kısa vadeli çıktıyı mı, kalıcı etkiyi mi kastediyoruz?",
+          "İki kavram kısmen örtüşüyor, ancak aynı ölçütlerle değerlendirilmiyor.",
+          "Sonucun geçerliliği, hangi vakaları kategorinin kapsamına aldığımıza bağlı."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar. — اگر مرز تعریف را گسترش دهیم، بعضی استثناها دیگر استثنا نخواهند بود.",
+          "model_answer": "Tanımın sınırını genişletirsek bazı istisnalar artık istisna olmaktan çıkar."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
