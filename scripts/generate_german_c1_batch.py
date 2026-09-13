@@ -21,7 +21,38 @@ def convert_level(value):
     return value
 
 
+def german_key_alias(value: str) -> str:
+    return (
+        value.lower()
+        .replace("ä", "ae")
+        .replace("ö", "oe")
+        .replace("ü", "ue")
+        .replace("ß", "ss")
+    )
+
+
+def normalize_vocab_refs(spec: dict) -> dict:
+    keys = {row[0] for row in spec["vocab"]}
+    aliases = {german_key_alias(key): key for key in keys}
+    for row in spec["utterances"]:
+        refs = row[4]
+        normalized = []
+        for ref in refs:
+            if ref in keys:
+                normalized.append(ref)
+                continue
+            resolved = aliases.get(german_key_alias(ref))
+            if resolved is None:
+                raise ValueError(
+                    f"Unknown vocab ref {ref!r} in {spec['slug']}; expected one of {sorted(keys)}"
+                )
+            normalized.append(resolved)
+        row[4] = normalized
+    return spec
+
+
 def build_unit(spec: dict) -> dict:
+    spec = normalize_vocab_refs(spec)
     batch = convert_level(build_b2_unit(spec))
     batch["generator"] = "gpt-5.6-sol:german-c1-batch-v1"
     for item in batch["items"]:
