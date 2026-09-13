@@ -1,0 +1,116 @@
+name: Generate Korean Pre-A1 Audio
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/korean-prea1-audio-trigger'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: korean-prea1-audio-generation-v1
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      CONTENT_TTS_CONCURRENCY: '2'
+      ELEVENLABS_MODEL_ID: eleven_multilingual_v2
+      ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Require ElevenLabs connection
+        run: |
+          if [ -z "${ELEVENLABS_API_KEY:-}" ]; then
+            echo 'ELEVENLABS_API_KEY GitHub secret is missing.' >&2
+            exit 2
+          fi
+      - name: Final Korean content validation before paid generation
+        run: |
+          set -euo pipefail
+          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/ko/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
+          python scripts/validate_character_cast.py --cast audio/cast/ko-KR.json
+          python database/import/ko/pre_a1.py --dry-run
+      - name: Build strict Korean Pre-A1 manifest
+        run: |
+          mkdir -p audio/manifests/ko
+          python scripts/build_audio_manifest.py content/production/ko/Pre-A1 \
+            --level Pre-A1 --locale ko-KR --strict-characters \
+            --output audio/manifests/ko/Pre-A1.json
+      - name: Resolve and lock every required Korean voice without TTS
+        run: python scripts/resolve_audio_voices.py audio/manifests/ko/Pre-A1.json --write-lock
+      - name: Validate manifest and voice lock before paid generation
+        run: |
+          python scripts/validate_audio_manifest.py audio/manifests/ko/Pre-A1.json
+          python scripts/audit_voice_lock.py \
+            --lock audio/voices/ko-KR.lock.json \
+            --registry audio/voices/ko-KR.json \
+            --strict
+      - name: Generate all Korean Pre-A1 production audio
+        run: |
+          python scripts/generate_audio.py audio/manifests/ko/Pre-A1.json \
+            --confirm-paid-generation --concurrency 2
+      - name: Validate generated Korean audio and voice consistency
+        run: |
+          python scripts/validate_audio_manifest.py audio/manifests/ko/Pre-A1.json --require-generated
+          python scripts/audit_audio_voice_consistency.py \
+            audio/manifests/ko/Pre-A1.json \
+            --lock-file audio/voices/ko-KR.lock.json
+      - name: Export database relative-path SQL
+        run: |
+          python scripts/export_audio_sql.py audio/manifests/ko/Pre-A1.json \
+            --status validated --output database/import/ko/pre_a1_audio.sql
+      - name: Verify expected audio categories
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('audio/manifests/ko/Pre-A1.json')
+          d=json.loads(p.read_text())
+          counts={}
+          for x in d['items']:
+              counts[x['category']]=counts.get(x['category'],0)+1
+          required={'lexical','utterances','dialogues'}
+          missing=required-set(counts)
+          if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
+          generated=len(list(Path('audio/generated/ko-KR').rglob('*.mp3')))
+          if generated != len(d['items']):
+              raise SystemExit(f'Expected {len(d["items"])} MP3 files, found {generated}')
+          print(json.dumps({'items':len(d['items']),'categories':counts,'mp3_files':generated},ensure_ascii=False,indent=2))
+          PY
+      - name: Commit generated Korean audio and DB link files
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            audio/generated/ko-KR \
+            audio/manifests/ko/Pre-A1.json \
+            audio/voices/ko-KR.lock.json \
+            database/import/ko/pre_a1_audio.sql
+          if git diff --cached --quiet; then
+            echo 'No audio changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Generate Korean Pre-A1 production audio [skip ci]'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
