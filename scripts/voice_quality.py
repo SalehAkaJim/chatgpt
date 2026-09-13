@@ -63,6 +63,10 @@ def voice_allowed(voice: dict, spec: dict) -> tuple[bool, list[str]]:
     text = voice_text(voice)
     family = profile_family(spec)
 
+    required_language = _norm(spec.get("required_language"))
+    if required_language and labels.get("language") != required_language:
+        reasons.append(f"language={labels.get('language') or 'missing'} expected={required_language}")
+
     gender = expected_gender(spec)
     if gender and labels.get("gender") and labels.get("gender") != gender:
         reasons.append(f"gender={labels.get('gender')} expected={gender}")
