@@ -1,0 +1,853 @@
+{
+  "batch_id": "tr-tr-prea1-alphabet-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-tr-alphabet",
+  "generator": "gpt-5.6-sol:turkish-prea1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_01",
+      "data": {
+        "slug": "tr_pre_a1_alphabet_c_harfi",
+        "lesson_key": "prea1-tr-alphabet-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "tr": "ç"
+        },
+        "translations": {
+          "fa": "حرف ç"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_01",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "lemma": "ç",
+        "display_lemma": "ç",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_c_harfi"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_01",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "lexeme_ref": "lx_alphabet_01",
+        "surface_form": "ç",
+        "display_form": "ç",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_02",
+      "data": {
+        "slug": "tr_pre_a1_alphabet_s_harfi",
+        "lesson_key": "prea1-tr-alphabet-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "tr": "ş"
+        },
+        "translations": {
+          "fa": "حرف ş"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_02",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "lemma": "ş",
+        "display_lemma": "ş",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_s_harfi"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_02",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "lexeme_ref": "lx_alphabet_02",
+        "surface_form": "ş",
+        "display_form": "ş",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_03",
+      "data": {
+        "slug": "tr_pre_a1_alphabet_g_harfi",
+        "lesson_key": "prea1-tr-alphabet-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "tr": "ğ"
+        },
+        "translations": {
+          "fa": "حرف ğ"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_03",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "lemma": "ğ",
+        "display_lemma": "ğ",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_g_harfi"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_03",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "lexeme_ref": "lx_alphabet_03",
+        "surface_form": "ğ",
+        "display_form": "ğ",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_04",
+      "data": {
+        "slug": "tr_pre_a1_alphabet_noktasiz_i",
+        "lesson_key": "prea1-tr-alphabet-02",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "tr": "ı"
+        },
+        "translations": {
+          "fa": "حرف ı بدون نقطه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_04",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "lemma": "ı",
+        "display_lemma": "ı",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_noktasiz_i"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_04",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "lexeme_ref": "lx_alphabet_04",
+        "surface_form": "ı",
+        "display_form": "ı",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_05",
+      "data": {
+        "slug": "tr_pre_a1_alphabet_noktali_i",
+        "lesson_key": "prea1-tr-alphabet-02",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "tr": "i"
+        },
+        "translations": {
+          "fa": "حرف i نقطه‌دار"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_05",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "lemma": "i",
+        "display_lemma": "i",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_noktali_i"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_05",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "lexeme_ref": "lx_alphabet_05",
+        "surface_form": "i",
+        "display_form": "i",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_06",
+      "data": {
+        "slug": "tr_pre_a1_alphabet_u_harfi",
+        "lesson_key": "prea1-tr-alphabet-02",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "tr": "ü"
+        },
+        "translations": {
+          "fa": "حرف ü"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_06",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "lemma": "ü",
+        "display_lemma": "ü",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_u_harfi"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_06",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "lexeme_ref": "lx_alphabet_06",
+        "surface_form": "ü",
+        "display_form": "ü",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_01",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "text": {
+          "tr": "Bu harf ç."
+        },
+        "translations": {
+          "fa": "این حرف ç است."
+        },
+        "intent": "identify_letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_c_harfi"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_02",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "text": {
+          "tr": "Bu harf ş."
+        },
+        "translations": {
+          "fa": "این حرف ş است."
+        },
+        "intent": "identify_letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_s_harfi"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_03",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "text": {
+          "tr": "Bu ı, bu i."
+        },
+        "translations": {
+          "fa": "این ı است، این یکی i."
+        },
+        "intent": "contrast_letters",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_noktasiz_i",
+          "tr_pre_a1_alphabet_noktali_i"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_04",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "text": {
+          "tr": "Ü Türkçede bir harf."
+        },
+        "translations": {
+          "fa": "Ü در ترکی یک حرف است."
+        },
+        "intent": "identify_letter",
+        "concept_refs": [
+          "tr_pre_a1_alphabet_u_harfi"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_alphabet_core",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "slug": "prea1-tr-alphabet-grammar",
+        "title": "i ≠ ı",
+        "rule_summary": "Dotted i/İ and dotless ı/I are separate Turkish letters and must not be normalized into one another.",
+        "explanation": {
+          "fa": "در ترکی «i» و «ı» دو حرف جدا هستند. حتی در تبدیل حروف بزرگ و کوچک هم جفت‌هایشان فرق دارد: i ↔ İ و ı ↔ I."
+        },
+        "examples": [
+          {
+            "tr": "i — İ",
+            "fa": "i نقطه‌دار و شکل بزرگ آن İ"
+          },
+          {
+            "tr": "ı — I",
+            "fa": "ı بدون نقطه و شکل بزرگ آن I"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_alphabet_01",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "title": "Tahtadaki harf",
+        "setting": "",
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "characters": [
+          "Deniz",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Bu harf ç mi?",
+            "translation_fa": "این حرف ç است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Evet, ç.",
+            "translation_fa": "بله، ç."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Bu da ş mı?",
+            "translation_fa": "این یکی هم ş است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Evet, ş.",
+            "translation_fa": "بله، ş."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_alphabet_02",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "title": "İki farklı i",
+        "setting": "",
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "characters": [
+          "Emre",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Emre",
+            "text": "Bu i mi?",
+            "translation_fa": "این i است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Hayır, bu ı.",
+            "translation_fa": "نه، این ı است."
+          },
+          {
+            "order": 3,
+            "speaker": "Emre",
+            "text": "Peki bu?",
+            "translation_fa": "پس این یکی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Bu i.",
+            "translation_fa": "این i است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_meaning",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu harf ç."
+        },
+        "answer": {
+          "value": "این حرف ç است."
+        },
+        "options": [
+          "این حرف ç است.",
+          "این حرف ş است.",
+          "این ı است، این یکی i.",
+          "Ü در ترکی یک حرف است."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu harf ç. — این حرف ç است.",
+          "model_answer": "Bu harf ç."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_listen",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bu harf ş."
+        },
+        "answer": {
+          "value": "Bu harf ş."
+        },
+        "options": [
+          "Bu harf ş.",
+          "Bu harf ç.",
+          "Bu ı, bu i.",
+          "Ü Türkçede bir harf."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu harf ş. — این حرف ş است.",
+          "model_answer": "Bu harf ş.",
+          "transcript_tr": "Bu harf ş."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_speak",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bu harf ç."
+        },
+        "answer": {
+          "expected_text": "Bu harf ç."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu harf ç. — این حرف ç است.",
+          "model_answer": "Bu harf ç."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_build",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "harf",
+            "ş.",
+            "Bu"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bu",
+            "harf",
+            "ş."
+          ],
+          "value": "Bu harf ş."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu harf ş. — این حرف ş است.",
+          "model_answer": "Bu harf ş."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_dialogue",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_alphabet_01",
+          "question_fa": "کدام گزینه با معنی «این حرف ç است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu harf ç."
+        },
+        "options": [
+          "Bu harf ç.",
+          "Bu harf ş.",
+          "Bu ı, bu i.",
+          "Ü Türkçede bir harf."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu harf ç. — این حرف ç است.",
+          "model_answer": "Bu harf ç."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_meaning",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu ı, bu i."
+        },
+        "answer": {
+          "value": "این ı است، این یکی i."
+        },
+        "options": [
+          "این ı است، این یکی i.",
+          "این حرف ç است.",
+          "این حرف ş است.",
+          "Ü در ترکی یک حرف است."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ı, bu i. — این ı است، این یکی i.",
+          "model_answer": "Bu ı, bu i."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_listen",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ü Türkçede bir harf."
+        },
+        "answer": {
+          "value": "Ü Türkçede bir harf."
+        },
+        "options": [
+          "Ü Türkçede bir harf.",
+          "Bu ı, bu i.",
+          "Bu harf ç.",
+          "Bu harf ş."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ü Türkçede bir harf. — Ü در ترکی یک حرف است.",
+          "model_answer": "Ü Türkçede bir harf.",
+          "transcript_tr": "Ü Türkçede bir harf."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_speak",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bu ı, bu i."
+        },
+        "answer": {
+          "expected_text": "Bu ı, bu i."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ı, bu i. — این ı است، این یکی i.",
+          "model_answer": "Bu ı, bu i."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_build",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "Türkçede",
+            "bir",
+            "harf.",
+            "Ü"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ü",
+            "Türkçede",
+            "bir",
+            "harf."
+          ],
+          "value": "Ü Türkçede bir harf."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ü Türkçede bir harf. — Ü در ترکی یک حرف است.",
+          "model_answer": "Ü Türkçede bir harf."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_dialogue",
+      "data": {
+        "lesson_key": "prea1-tr-alphabet-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_alphabet_02",
+          "question_fa": "کدام گزینه با معنی «این ı است، این یکی i.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu ı, bu i."
+        },
+        "options": [
+          "Bu ı, bu i.",
+          "Bu harf ç.",
+          "Bu harf ş.",
+          "Ü Türkçede bir harf."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ı, bu i. — این ı است، این یکی i.",
+          "model_answer": "Bu ı, bu i."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

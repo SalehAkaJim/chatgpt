@@ -1,0 +1,853 @@
+{
+  "batch_id": "tr-tr-prea1-my-name-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-tr-my-name",
+  "generator": "gpt-5.6-sol:turkish-prea1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_01",
+      "data": {
+        "slug": "tr_pre_a1_my_name_ben",
+        "lesson_key": "prea1-tr-my-name-01",
+        "concept_type": "lexical",
+        "part_of_speech": "pronoun",
+        "forms": {
+          "tr": "ben"
+        },
+        "translations": {
+          "fa": "من"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_01",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "lemma": "ben",
+        "display_lemma": "ben",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "pronoun",
+        "concept_refs": [
+          "tr_pre_a1_my_name_ben"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_01",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "lexeme_ref": "lx_my_name_01",
+        "surface_form": "ben",
+        "display_form": "ben",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_02",
+      "data": {
+        "slug": "tr_pre_a1_my_name_benim_adim",
+        "lesson_key": "prea1-tr-my-name-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "tr": "Benim adım…"
+        },
+        "translations": {
+          "fa": "اسم من … است."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_02",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "lemma": "Benim adım…",
+        "display_lemma": "Benim adım…",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "tr_pre_a1_my_name_benim_adim"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_02",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "lexeme_ref": "lx_my_name_02",
+        "surface_form": "Benim adım…",
+        "display_form": "Benim adım…",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_03",
+      "data": {
+        "slug": "tr_pre_a1_my_name_senin_adin_ne",
+        "lesson_key": "prea1-tr-my-name-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "tr": "Senin adın ne?"
+        },
+        "translations": {
+          "fa": "اسم تو چیه؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_03",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "lemma": "Senin adın ne",
+        "display_lemma": "Senin adın ne",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "tr_pre_a1_my_name_senin_adin_ne"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_03",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "lexeme_ref": "lx_my_name_03",
+        "surface_form": "Senin adın ne",
+        "display_form": "Senin adın ne",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_04",
+      "data": {
+        "slug": "tr_pre_a1_my_name_memnun_oldum",
+        "lesson_key": "prea1-tr-my-name-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "tr": "Memnun oldum."
+        },
+        "translations": {
+          "fa": "خوشوقتم."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_04",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "lemma": "Memnun oldum",
+        "display_lemma": "Memnun oldum",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "tr_pre_a1_my_name_memnun_oldum"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_04",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "lexeme_ref": "lx_my_name_04",
+        "surface_form": "Memnun oldum",
+        "display_form": "Memnun oldum",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_05",
+      "data": {
+        "slug": "tr_pre_a1_my_name_ben_de",
+        "lesson_key": "prea1-tr-my-name-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "tr": "Ben de."
+        },
+        "translations": {
+          "fa": "من هم همین‌طور."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_05",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "lemma": "Ben de",
+        "display_lemma": "Ben de",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "tr_pre_a1_my_name_ben_de"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_05",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "lexeme_ref": "lx_my_name_05",
+        "surface_form": "Ben de",
+        "display_form": "Ben de",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_06",
+      "data": {
+        "slug": "tr_pre_a1_my_name_ad",
+        "lesson_key": "prea1-tr-my-name-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ad"
+        },
+        "translations": {
+          "fa": "اسم / نام"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_06",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "lemma": "ad",
+        "display_lemma": "ad",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_pre_a1_my_name_ad"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_06",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "lexeme_ref": "lx_my_name_06",
+        "surface_form": "ad",
+        "display_form": "ad",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_01",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "text": {
+          "tr": "Benim adım Elif."
+        },
+        "translations": {
+          "fa": "اسم من الیف است."
+        },
+        "intent": "introduce_name",
+        "concept_refs": [
+          "tr_pre_a1_my_name_benim_adim"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_02",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "text": {
+          "tr": "Senin adın ne?"
+        },
+        "translations": {
+          "fa": "اسم تو چیه؟"
+        },
+        "intent": "ask_name",
+        "concept_refs": [
+          "tr_pre_a1_my_name_senin_adin_ne"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_03",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "text": {
+          "tr": "Memnun oldum."
+        },
+        "translations": {
+          "fa": "خوشوقتم."
+        },
+        "intent": "pleased_to_meet",
+        "concept_refs": [
+          "tr_pre_a1_my_name_memnun_oldum"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_04",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "text": {
+          "tr": "Ben de memnun oldum."
+        },
+        "translations": {
+          "fa": "من هم خوشوقتم."
+        },
+        "intent": "return_pleasantry",
+        "concept_refs": [
+          "tr_pre_a1_my_name_ben_de",
+          "tr_pre_a1_my_name_memnun_oldum"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_my_name_core",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "slug": "prea1-tr-my-name-grammar",
+        "title": "Benim adım…",
+        "rule_summary": "Turkish can express possession inside the noun phrase: adım literally carries the meaning ‘my name’.",
+        "explanation": {
+          "fa": "در «Benim adım» بخش «-ım» داخل خودِ «adım» معنی «اسمِ من» را می‌سازد. در این مرحله فقط الگو را بشناس و استفاده کن؛ تجزیهٔ کامل پسوندها برای A1 می‌ماند."
+        },
+        "examples": [
+          {
+            "tr": "Benim adım Elif.",
+            "fa": "اسم من الیف است."
+          },
+          {
+            "tr": "Senin adın ne?",
+            "fa": "اسم تو چیه؟"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_my_name_01",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "title": "İlk tanışma",
+        "setting": "",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "characters": [
+          "Deniz",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Merhaba. Benim adım Deniz.",
+            "translation_fa": "سلام. اسم من دنیز است."
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Merhaba. Ben Emre.",
+            "translation_fa": "سلام. من امره هستم."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Senin adın Emre, değil mi?",
+            "translation_fa": "اسمت امره است، درسته؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Evet.",
+            "translation_fa": "بله."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_my_name_02",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "title": "Tanıştığımıza memnun oldum",
+        "setting": "",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "characters": [
+          "Zeynep",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Zeynep",
+            "text": "Memnun oldum, Burak.",
+            "translation_fa": "خوشوقتم، بوراک."
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Ben de memnun oldum, Zeynep.",
+            "translation_fa": "من هم خوشوقتم، زینب."
+          },
+          {
+            "order": 3,
+            "speaker": "Zeynep",
+            "text": "Görüşürüz.",
+            "translation_fa": "تا بعد."
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Görüşürüz.",
+            "translation_fa": "می‌بینمت."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_meaning",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Benim adım Elif."
+        },
+        "answer": {
+          "value": "اسم من الیف است."
+        },
+        "options": [
+          "اسم من الیف است.",
+          "اسم تو چیه؟",
+          "خوشوقتم.",
+          "من هم خوشوقتم."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Benim adım Elif. — اسم من الیف است.",
+          "model_answer": "Benim adım Elif."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_listen",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Senin adın ne?"
+        },
+        "answer": {
+          "value": "Senin adın ne?"
+        },
+        "options": [
+          "Senin adın ne?",
+          "Benim adım Elif.",
+          "Memnun oldum.",
+          "Ben de memnun oldum."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Senin adın ne? — اسم تو چیه؟",
+          "model_answer": "Senin adın ne?",
+          "transcript_tr": "Senin adın ne?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_speak",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Benim adım Elif."
+        },
+        "answer": {
+          "expected_text": "Benim adım Elif."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Benim adım Elif. — اسم من الیف است.",
+          "model_answer": "Benim adım Elif."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_build",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "adın",
+            "ne?",
+            "Senin"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Senin",
+            "adın",
+            "ne?"
+          ],
+          "value": "Senin adın ne?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Senin adın ne? — اسم تو چیه؟",
+          "model_answer": "Senin adın ne?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_dialogue",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_my_name_01",
+          "question_fa": "کدام گزینه با معنی «اسم من الیف است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Benim adım Elif."
+        },
+        "options": [
+          "Benim adım Elif.",
+          "Senin adın ne?",
+          "Memnun oldum.",
+          "Ben de memnun oldum."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Benim adım Elif. — اسم من الیف است.",
+          "model_answer": "Benim adım Elif."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_meaning",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Memnun oldum."
+        },
+        "answer": {
+          "value": "خوشوقتم."
+        },
+        "options": [
+          "خوشوقتم.",
+          "اسم من الیف است.",
+          "اسم تو چیه؟",
+          "من هم خوشوقتم."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Memnun oldum. — خوشوقتم.",
+          "model_answer": "Memnun oldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_listen",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ben de memnun oldum."
+        },
+        "answer": {
+          "value": "Ben de memnun oldum."
+        },
+        "options": [
+          "Ben de memnun oldum.",
+          "Memnun oldum.",
+          "Benim adım Elif.",
+          "Senin adın ne?"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben de memnun oldum. — من هم خوشوقتم.",
+          "model_answer": "Ben de memnun oldum.",
+          "transcript_tr": "Ben de memnun oldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_speak",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Memnun oldum."
+        },
+        "answer": {
+          "expected_text": "Memnun oldum."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Memnun oldum. — خوشوقتم.",
+          "model_answer": "Memnun oldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_build",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "de",
+            "memnun",
+            "oldum.",
+            "Ben"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ben",
+            "de",
+            "memnun",
+            "oldum."
+          ],
+          "value": "Ben de memnun oldum."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben de memnun oldum. — من هم خوشوقتم.",
+          "model_answer": "Ben de memnun oldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_dialogue",
+      "data": {
+        "lesson_key": "prea1-tr-my-name-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_my_name_02",
+          "question_fa": "کدام گزینه با معنی «خوشوقتم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Memnun oldum."
+        },
+        "options": [
+          "Memnun oldum.",
+          "Benim adım Elif.",
+          "Senin adın ne?",
+          "Ben de memnun oldum."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Memnun oldum. — خوشوقتم.",
+          "model_answer": "Memnun oldum."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
