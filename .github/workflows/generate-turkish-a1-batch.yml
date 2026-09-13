@@ -42,14 +42,19 @@ jobs:
           import collections,json
           from pathlib import Path
           counts=collections.Counter(); lessons=set(); ordered=[]; pairs=[]
-          for p in sorted(Path('content/production/tr/A1').glob('*.json')):
+          spec=json.loads(Path('content/specs/tr/A1/batch-01.json').read_text())
+          for unit in spec['units']:
+              p=Path('content/production/tr/A1') / f"a1-tr-{unit['slug']}-v1.json"
               b=json.loads(p.read_text())
+              dialogues=[]
               for item in b['items']:
                   counts[item['kind']]+=1
                   lk=item.get('data',{}).get('lesson_key')
                   if lk: lessons.add(lk)
-                  if item['kind']=='dialogue':
-                      chars=tuple(item['data'].get('characters',[])[:2]); pairs.append((lk,chars)); ordered.append(chars)
+                  if item['kind']=='dialogue': dialogues.append(item)
+              for item in sorted(dialogues,key=lambda x:x['data']['lesson_key']):
+                  lk=item['data']['lesson_key']; chars=tuple(item['data'].get('characters',[])[:2])
+                  pairs.append((lk,chars)); ordered.append(chars)
           assert len(lessons)==20, len(lessons)
           assert len(set(pairs))==len(pairs), 'duplicate dialogue pair in a lesson'
           for previous,current in zip(ordered,ordered[1:]):
