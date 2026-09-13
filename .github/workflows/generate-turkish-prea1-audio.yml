@@ -60,7 +60,10 @@ jobs:
       - name: Validate manifest and voice lock before paid generation
         run: |
           python scripts/validate_audio_manifest.py audio/manifests/tr/Pre-A1.json
-          python scripts/audit_voice_lock.py audio/manifests/tr/Pre-A1.json --lock-file audio/voices/tr-TR.lock.json
+          python scripts/audit_voice_lock.py \
+            --lock audio/voices/tr-TR.lock.json \
+            --registry audio/voices/tr-TR.json \
+            --strict
       - name: Generate all Turkish Pre-A1 production audio
         run: |
           python scripts/generate_audio.py audio/manifests/tr/Pre-A1.json \
@@ -85,7 +88,7 @@ jobs:
           counts={}
           for x in d['items']:
               counts[x['category']]=counts.get(x['category'],0)+1
-          required={'word','utterance','dialogue_turn'}
+          required={'lexical','utterances','dialogues'}
           missing=required-set(counts)
           if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
           generated=len(list(Path('audio/generated/tr-TR').rglob('*.mp3')))
