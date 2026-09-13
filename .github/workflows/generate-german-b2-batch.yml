@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: german-b2-content-generation
+  group: german-b2-content-generation-v2
   cancel-in-progress: false
 
 jobs:
