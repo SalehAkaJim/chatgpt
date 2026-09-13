@@ -1,0 +1,969 @@
+{
+  "batch_id": "de-de-a2-cooking-recipes-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-cooking-recipes",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_cooking_recipes_01",
+      "data": {
+        "slug": "de_a2_cooking_recipes_01",
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "schneiden"
+        },
+        "translations": {
+          "fa": "بریدن"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cooking_recipes_01",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "lemma": "schneiden",
+        "display_lemma": "schneiden",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_cooking_recipes_01"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cooking_recipes_01",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "lexeme_ref": "lx_cooking_recipes_01",
+        "surface_form": "schneiden",
+        "display_form": "schneiden",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cooking_recipes_02",
+      "data": {
+        "slug": "de_a2_cooking_recipes_02",
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "mischen"
+        },
+        "translations": {
+          "fa": "مخلوط کردن"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cooking_recipes_02",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "lemma": "mischen",
+        "display_lemma": "mischen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_cooking_recipes_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cooking_recipes_02",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "lexeme_ref": "lx_cooking_recipes_02",
+        "surface_form": "mischen",
+        "display_form": "mischen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cooking_recipes_03",
+      "data": {
+        "slug": "de_a2_cooking_recipes_03",
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "hinzufügen"
+        },
+        "translations": {
+          "fa": "اضافه کردن"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cooking_recipes_03",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "lemma": "hinzufügen",
+        "display_lemma": "hinzufügen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_cooking_recipes_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cooking_recipes_03",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "lexeme_ref": "lx_cooking_recipes_03",
+        "surface_form": "hinzufügen",
+        "display_form": "hinzufügen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cooking_recipes_04",
+      "data": {
+        "slug": "de_a2_cooking_recipes_04",
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "kochen"
+        },
+        "translations": {
+          "fa": "پختن"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cooking_recipes_04",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "lemma": "kochen",
+        "display_lemma": "kochen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_cooking_recipes_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cooking_recipes_04",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "lexeme_ref": "lx_cooking_recipes_04",
+        "surface_form": "kochen",
+        "display_form": "kochen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cooking_recipes_05",
+      "data": {
+        "slug": "de_a2_cooking_recipes_05",
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Zutat"
+        },
+        "translations": {
+          "fa": "مواد اولیه"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cooking_recipes_05",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "lemma": "Zutat",
+        "display_lemma": "Zutat",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_cooking_recipes_05"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cooking_recipes_05",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "lexeme_ref": "lx_cooking_recipes_05",
+        "surface_form": "Zutat",
+        "display_form": "Zutat",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cooking_recipes_06",
+      "data": {
+        "slug": "de_a2_cooking_recipes_06",
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Pfanne"
+        },
+        "translations": {
+          "fa": "ماهیتابه"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cooking_recipes_06",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "lemma": "Pfanne",
+        "display_lemma": "Pfanne",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_cooking_recipes_06"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cooking_recipes_06",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "lexeme_ref": "lx_cooking_recipes_06",
+        "surface_form": "Pfanne",
+        "display_form": "Pfanne",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cooking_recipes_01",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "text": {
+          "de": "Schneide zuerst die Zwiebel klein."
+        },
+        "translations": {
+          "fa": "اول پیاز را ریز خرد کن."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_cooking_recipes_01"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cooking_recipes_02",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "text": {
+          "de": "Dann gib etwas Öl in die Pfanne."
+        },
+        "translations": {
+          "fa": "بعد کمی روغن در ماهیتابه بریز."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_cooking_recipes_02"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cooking_recipes_03",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "text": {
+          "de": "Füge die Tomaten hinzu."
+        },
+        "translations": {
+          "fa": "گوجه‌ها را اضافه کن."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_cooking_recipes_03"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cooking_recipes_04",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "text": {
+          "de": "Wie lange muss das kochen?"
+        },
+        "translations": {
+          "fa": "چقدر باید بپزد؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_cooking_recipes_04"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cooking_recipes_05",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "text": {
+          "de": "Mischen Sie alles gut."
+        },
+        "translations": {
+          "fa": "همه چیز را خوب مخلوط کنید."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_cooking_recipes_05"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cooking_recipes_06",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "text": {
+          "de": "Zum Schluss noch etwas Salz dazugeben."
+        },
+        "translations": {
+          "fa": "در آخر کمی نمک اضافه کن."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_cooking_recipes_06"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_cooking_recipes_01",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "slug": "a2-de-cooking_recipes-grammar-01",
+        "title": "Imperativ du/Sie",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: Imperativ du/Sie.",
+        "explanation": {
+          "fa": "در این درس ساختار «Imperativ du/Sie» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Schneide zuerst die Zwiebel klein.",
+            "fa": "اول پیاز را ریز خرد کن."
+          },
+          {
+            "de": "Dann gib etwas Öl in die Pfanne.",
+            "fa": "بعد کمی روغن در ماهیتابه بریز."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_cooking_recipes_02",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "slug": "a2-de-cooking_recipes-grammar-02",
+        "title": "zuerst, dann, danach zum Strukturieren",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: zuerst, dann, danach zum Strukturieren.",
+        "explanation": {
+          "fa": "در این درس ساختار «zuerst, dann, danach zum Strukturieren» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Füge die Tomaten hinzu.",
+            "fa": "گوجه‌ها را اضافه کن."
+          },
+          {
+            "de": "Wie lange muss das kochen?",
+            "fa": "چقدر باید بپزد؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_cooking_recipes_01",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "title": "Kochen & Rezepte · 1",
+        "setting": "food-basics",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Lea",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Schneide zuerst die Zwiebel klein.",
+            "translation_fa": "اول پیاز را ریز خرد کن."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Dann gib etwas Öl in die Pfanne.",
+            "translation_fa": "بعد کمی روغن در ماهیتابه بریز."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Gut, dann machen wir es so.",
+            "translation_fa": "خوب، پس همین کار را می‌کنیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Danke, das klingt lecker.",
+            "translation_fa": "ممنون، خوشمزه به نظر می‌رسد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_01_mc",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «اول پیاز را ریز خرد کن.»؟"
+        },
+        "options": [
+          "Schneide zuerst die Zwiebel klein.",
+          "Dann gib etwas Öl in die Pfanne.",
+          "Füge die Tomaten hinzu.",
+          "Wie lange muss das kochen?"
+        ],
+        "answer": {
+          "value": "Schneide zuerst die Zwiebel klein."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Schneide zuerst die Zwiebel klein.» یعنی «اول پیاز را ریز خرد کن.».",
+          "model_answer": "Schneide zuerst die Zwiebel klein."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_01_listen",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Schneide zuerst die Zwiebel klein."
+        },
+        "options": [
+          "اول پیاز را ریز خرد کن.",
+          "بعد کمی روغن در ماهیتابه بریز.",
+          "گوجه‌ها را اضافه کن.",
+          "چقدر باید بپزد؟"
+        ],
+        "answer": {
+          "value": "اول پیاز را ریز خرد کن."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: اول پیاز را ریز خرد کن.",
+          "model_answer": "Schneide zuerst die Zwiebel klein.",
+          "transcript_de": "Schneide zuerst die Zwiebel klein."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_01_speak",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Dann gib etwas Öl in die Pfanne."
+        },
+        "answer": {
+          "expected_text": "Dann gib etwas Öl in die Pfanne."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: بعد کمی روغن در ماهیتابه بریز.",
+          "model_answer": "Dann gib etwas Öl in die Pfanne."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_01_trans",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "بعد کمی روغن در ماهیتابه بریز.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Dann gib etwas Öl in die Pfanne."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Dann gib etwas Öl in die Pfanne.",
+          "model_answer": "Dann gib etwas Öl in die Pfanne."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_cooking_recipes_02",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "title": "Kochen & Rezepte · 2",
+        "setting": "food-basics",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Sofia",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Füge die Tomaten hinzu.",
+            "translation_fa": "گوجه‌ها را اضافه کن."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Wie lange muss das kochen?",
+            "translation_fa": "چقدر باید بپزد؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Danke, das klingt lecker.",
+            "translation_fa": "ممنون، خوشمزه به نظر می‌رسد."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Gut, dann machen wir es so.",
+            "translation_fa": "خوب، پس همین کار را می‌کنیم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_02_mc",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «گوجه‌ها را اضافه کن.»؟"
+        },
+        "options": [
+          "Füge die Tomaten hinzu.",
+          "Schneide zuerst die Zwiebel klein.",
+          "Dann gib etwas Öl in die Pfanne.",
+          "Wie lange muss das kochen?"
+        ],
+        "answer": {
+          "value": "Füge die Tomaten hinzu."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Füge die Tomaten hinzu.» یعنی «گوجه‌ها را اضافه کن.».",
+          "model_answer": "Füge die Tomaten hinzu."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_02_listen",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Füge die Tomaten hinzu."
+        },
+        "options": [
+          "گوجه‌ها را اضافه کن.",
+          "اول پیاز را ریز خرد کن.",
+          "بعد کمی روغن در ماهیتابه بریز.",
+          "چقدر باید بپزد؟"
+        ],
+        "answer": {
+          "value": "گوجه‌ها را اضافه کن."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: گوجه‌ها را اضافه کن.",
+          "model_answer": "Füge die Tomaten hinzu.",
+          "transcript_de": "Füge die Tomaten hinzu."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_02_speak",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Wie lange muss das kochen?"
+        },
+        "answer": {
+          "expected_text": "Wie lange muss das kochen?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: چقدر باید بپزد؟",
+          "model_answer": "Wie lange muss das kochen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_02_trans",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "چقدر باید بپزد؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Wie lange muss das kochen?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Wie lange muss das kochen?",
+          "model_answer": "Wie lange muss das kochen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_cooking_recipes_03",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "title": "Kochen & Rezepte · 3",
+        "setting": "food-basics",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Nina",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Mischen Sie alles gut.",
+            "translation_fa": "همه چیز را خوب مخلوط کنید."
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Zum Schluss noch etwas Salz dazugeben.",
+            "translation_fa": "در آخر کمی نمک اضافه کن."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Gut, dann machen wir es so.",
+            "translation_fa": "خوب، پس همین کار را می‌کنیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Danke, das klingt lecker.",
+            "translation_fa": "ممنون، خوشمزه به نظر می‌رسد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_03_mc",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «همه چیز را خوب مخلوط کنید.»؟"
+        },
+        "options": [
+          "Mischen Sie alles gut.",
+          "Schneide zuerst die Zwiebel klein.",
+          "Dann gib etwas Öl in die Pfanne.",
+          "Füge die Tomaten hinzu."
+        ],
+        "answer": {
+          "value": "Mischen Sie alles gut."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Mischen Sie alles gut.» یعنی «همه چیز را خوب مخلوط کنید.».",
+          "model_answer": "Mischen Sie alles gut."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_03_listen",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Mischen Sie alles gut."
+        },
+        "options": [
+          "همه چیز را خوب مخلوط کنید.",
+          "اول پیاز را ریز خرد کن.",
+          "بعد کمی روغن در ماهیتابه بریز.",
+          "گوجه‌ها را اضافه کن."
+        ],
+        "answer": {
+          "value": "همه چیز را خوب مخلوط کنید."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: همه چیز را خوب مخلوط کنید.",
+          "model_answer": "Mischen Sie alles gut.",
+          "transcript_de": "Mischen Sie alles gut."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_03_speak",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Zum Schluss noch etwas Salz dazugeben."
+        },
+        "answer": {
+          "expected_text": "Zum Schluss noch etwas Salz dazugeben."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: در آخر کمی نمک اضافه کن.",
+          "model_answer": "Zum Schluss noch etwas Salz dazugeben."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_cooking_recipes_03_trans",
+      "data": {
+        "lesson_key": "a2-de-cooking-recipes-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "در آخر کمی نمک اضافه کن.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Zum Schluss noch etwas Salz dazugeben."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Zum Schluss noch etwas Salz dazugeben.",
+          "model_answer": "Zum Schluss noch etwas Salz dazugeben."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

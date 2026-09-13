@@ -1,0 +1,820 @@
+{
+  "batch_id": "de-de-a2-future-arrangements-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-future-arrangements",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_future_arrangements_01",
+      "data": {
+        "slug": "de_a2_future_arrangements_01",
+        "lesson_key": "a2-de-future-arrangements-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Termin"
+        },
+        "translations": {
+          "fa": "قرار"
+        },
+        "cefr": "A2",
+        "topic": "future-plans",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_future_arrangements_01",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "lemma": "Termin",
+        "display_lemma": "Termin",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_future_arrangements_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "masculine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_future_arrangements_01",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "lexeme_ref": "lx_future_arrangements_01",
+        "surface_form": "Termin",
+        "display_form": "Termin",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_future_arrangements_02",
+      "data": {
+        "slug": "de_a2_future_arrangements_02",
+        "lesson_key": "a2-de-future-arrangements-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "verschieben"
+        },
+        "translations": {
+          "fa": "عوض کردن زمان"
+        },
+        "cefr": "A2",
+        "topic": "future-plans",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_future_arrangements_02",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "lemma": "verschieben",
+        "display_lemma": "verschieben",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_future_arrangements_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_future_arrangements_02",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "lexeme_ref": "lx_future_arrangements_02",
+        "surface_form": "verschieben",
+        "display_form": "verschieben",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_future_arrangements_03",
+      "data": {
+        "slug": "de_a2_future_arrangements_03",
+        "lesson_key": "a2-de-future-arrangements-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "vereinbaren"
+        },
+        "translations": {
+          "fa": "هماهنگ کردن"
+        },
+        "cefr": "A2",
+        "topic": "future-plans",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_future_arrangements_03",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "lemma": "vereinbaren",
+        "display_lemma": "vereinbaren",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_future_arrangements_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_future_arrangements_03",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "lexeme_ref": "lx_future_arrangements_03",
+        "surface_form": "vereinbaren",
+        "display_form": "vereinbaren",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_future_arrangements_04",
+      "data": {
+        "slug": "de_a2_future_arrangements_04",
+        "lesson_key": "a2-de-future-arrangements-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "frei"
+        },
+        "translations": {
+          "fa": "آزاد"
+        },
+        "cefr": "A2",
+        "topic": "future-plans",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_future_arrangements_04",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "lemma": "frei",
+        "display_lemma": "frei",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_future_arrangements_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_future_arrangements_04",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "lexeme_ref": "lx_future_arrangements_04",
+        "surface_form": "frei",
+        "display_form": "frei",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_future_arrangements_05",
+      "data": {
+        "slug": "de_a2_future_arrangements_05",
+        "lesson_key": "a2-de-future-arrangements-01",
+        "concept_type": "lexical",
+        "part_of_speech": "preposition",
+        "forms": {
+          "de": "gegen"
+        },
+        "translations": {
+          "fa": "حدودِ ساعت"
+        },
+        "cefr": "A2",
+        "topic": "future-plans",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_future_arrangements_05",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "lemma": "gegen",
+        "display_lemma": "gegen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "preposition",
+        "concept_refs": [
+          "de_a2_future_arrangements_05"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_future_arrangements_05",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "lexeme_ref": "lx_future_arrangements_05",
+        "surface_form": "gegen",
+        "display_form": "gegen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_future_arrangements_06",
+      "data": {
+        "slug": "de_a2_future_arrangements_06",
+        "lesson_key": "a2-de-future-arrangements-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "passen"
+        },
+        "translations": {
+          "fa": "مناسب بودن"
+        },
+        "cefr": "A2",
+        "topic": "future-plans",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_future_arrangements_06",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "lemma": "passen",
+        "display_lemma": "passen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_future_arrangements_06"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_future_arrangements_06",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "lexeme_ref": "lx_future_arrangements_06",
+        "surface_form": "passen",
+        "display_form": "passen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_future_arrangements_01",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "text": {
+          "de": "Ich treffe morgen um sechs meine Kollegin."
+        },
+        "translations": {
+          "fa": "فردا ساعت شش همکارم را می‌بینم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_future_arrangements_01"
+        ],
+        "cefr": "A2",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_future_arrangements_02",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "text": {
+          "de": "Passt dir Donnerstagabend?"
+        },
+        "translations": {
+          "fa": "پنجشنبه شب برایت مناسب است؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_future_arrangements_02"
+        ],
+        "cefr": "A2",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_future_arrangements_03",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "text": {
+          "de": "Können wir den Termin verschieben?"
+        },
+        "translations": {
+          "fa": "می‌توانیم زمان قرار را عوض کنیم؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_future_arrangements_03"
+        ],
+        "cefr": "A2",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_future_arrangements_04",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "text": {
+          "de": "Ich bin ab fünf Uhr frei."
+        },
+        "translations": {
+          "fa": "از ساعت پنج به بعد آزادم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_future_arrangements_04"
+        ],
+        "cefr": "A2",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_future_arrangements_05",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "text": {
+          "de": "Dann vereinbaren wir Freitag um zehn."
+        },
+        "translations": {
+          "fa": "پس جمعه ساعت ده را هماهنگ می‌کنیم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_future_arrangements_05"
+        ],
+        "cefr": "A2",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_future_arrangements_06",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "text": {
+          "de": "Gegen halb sieben wäre auch gut."
+        },
+        "translations": {
+          "fa": "حدود شش و نیم هم خوب است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_future_arrangements_06"
+        ],
+        "cefr": "A2",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_future_arrangements_01",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "slug": "a2-de-future_arrangements-grammar-01",
+        "title": "Präsens mit zukünftiger Zeitangabe",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: Präsens mit zukünftiger Zeitangabe.",
+        "explanation": {
+          "fa": "در این درس ساختار «Präsens mit zukünftiger Zeitangabe» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Ich treffe morgen um sechs meine Kollegin.",
+            "fa": "فردا ساعت شش همکارم را می‌بینم."
+          },
+          {
+            "de": "Passt dir Donnerstagabend?",
+            "fa": "پنجشنبه شب برایت مناسب است؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_future_arrangements_02",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "slug": "a2-de-future_arrangements-grammar-02",
+        "title": "am / um / von ... bis",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: am / um / von ... bis.",
+        "explanation": {
+          "fa": "در این درس ساختار «am / um / von ... bis» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Können wir den Termin verschieben?",
+            "fa": "می‌توانیم زمان قرار را عوض کنیم؟"
+          },
+          {
+            "de": "Ich bin ab fünf Uhr frei.",
+            "fa": "از ساعت پنج به بعد آزادم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_future_arrangements_01",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "title": "Feste Termine · 1",
+        "setting": "future-plans",
+        "cefr": "A2",
+        "topic": "future-plans",
+        "characters": [
+          "Mia",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Ich treffe morgen um sechs meine Kollegin.",
+            "translation_fa": "فردا ساعت شش همکارم را می‌بینم."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Passt dir Donnerstagabend?",
+            "translation_fa": "پنجشنبه شب برایت مناسب است؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Gut, dann ist das geklärt.",
+            "translation_fa": "خوب، پس هماهنگ شد."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Perfekt, ich trage es ein.",
+            "translation_fa": "عالی، یادداشتش می‌کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_future_arrangements_01_mc",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «فردا ساعت شش همکارم را می‌بینم.»؟"
+        },
+        "options": [
+          "Ich treffe morgen um sechs meine Kollegin.",
+          "Passt dir Donnerstagabend?",
+          "Können wir den Termin verschieben?",
+          "Ich bin ab fünf Uhr frei."
+        ],
+        "answer": {
+          "value": "Ich treffe morgen um sechs meine Kollegin."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Ich treffe morgen um sechs meine Kollegin.» یعنی «فردا ساعت شش همکارم را می‌بینم.».",
+          "model_answer": "Ich treffe morgen um sechs meine Kollegin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_future_arrangements_01_listen",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich treffe morgen um sechs meine Kollegin."
+        },
+        "options": [
+          "فردا ساعت شش همکارم را می‌بینم.",
+          "پنجشنبه شب برایت مناسب است؟",
+          "می‌توانیم زمان قرار را عوض کنیم؟",
+          "از ساعت پنج به بعد آزادم."
+        ],
+        "answer": {
+          "value": "فردا ساعت شش همکارم را می‌بینم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: فردا ساعت شش همکارم را می‌بینم.",
+          "model_answer": "Ich treffe morgen um sechs meine Kollegin.",
+          "transcript_de": "Ich treffe morgen um sechs meine Kollegin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_future_arrangements_01_speak",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Passt dir Donnerstagabend?"
+        },
+        "answer": {
+          "expected_text": "Passt dir Donnerstagabend?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: پنجشنبه شب برایت مناسب است؟",
+          "model_answer": "Passt dir Donnerstagabend?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_future_arrangements_01_trans",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "پنجشنبه شب برایت مناسب است؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Passt dir Donnerstagabend?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Passt dir Donnerstagabend?",
+          "model_answer": "Passt dir Donnerstagabend?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_future_arrangements_02",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "title": "Feste Termine · 2",
+        "setting": "future-plans",
+        "cefr": "A2",
+        "topic": "future-plans",
+        "characters": [
+          "Lea",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Können wir den Termin verschieben?",
+            "translation_fa": "می‌توانیم زمان قرار را عوض کنیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Ich bin ab fünf Uhr frei.",
+            "translation_fa": "از ساعت پنج به بعد آزادم."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Perfekt, ich trage es ein.",
+            "translation_fa": "عالی، یادداشتش می‌کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Gut, dann ist das geklärt.",
+            "translation_fa": "خوب، پس هماهنگ شد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_future_arrangements_02_mc",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «می‌توانیم زمان قرار را عوض کنیم؟»؟"
+        },
+        "options": [
+          "Können wir den Termin verschieben?",
+          "Ich treffe morgen um sechs meine Kollegin.",
+          "Passt dir Donnerstagabend?",
+          "Ich bin ab fünf Uhr frei."
+        ],
+        "answer": {
+          "value": "Können wir den Termin verschieben?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Können wir den Termin verschieben?» یعنی «می‌توانیم زمان قرار را عوض کنیم؟».",
+          "model_answer": "Können wir den Termin verschieben?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_future_arrangements_02_listen",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Können wir den Termin verschieben?"
+        },
+        "options": [
+          "می‌توانیم زمان قرار را عوض کنیم؟",
+          "فردا ساعت شش همکارم را می‌بینم.",
+          "پنجشنبه شب برایت مناسب است؟",
+          "از ساعت پنج به بعد آزادم."
+        ],
+        "answer": {
+          "value": "می‌توانیم زمان قرار را عوض کنیم؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: می‌توانیم زمان قرار را عوض کنیم؟",
+          "model_answer": "Können wir den Termin verschieben?",
+          "transcript_de": "Können wir den Termin verschieben?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_future_arrangements_02_speak",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Ich bin ab fünf Uhr frei."
+        },
+        "answer": {
+          "expected_text": "Ich bin ab fünf Uhr frei."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: از ساعت پنج به بعد آزادم.",
+          "model_answer": "Ich bin ab fünf Uhr frei."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_future_arrangements_02_trans",
+      "data": {
+        "lesson_key": "a2-de-future-arrangements-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "از ساعت پنج به بعد آزادم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ich bin ab fünf Uhr frei."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Ich bin ab fünf Uhr frei.",
+          "model_answer": "Ich bin ab fünf Uhr frei."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

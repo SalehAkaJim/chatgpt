@@ -1,0 +1,978 @@
+{
+  "batch_id": "de-de-a2-food-quantities-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-food-quantities",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_food_quantities_01",
+      "data": {
+        "slug": "de_a2_food_quantities_01",
+        "lesson_key": "a2-de-food-quantities-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Gramm"
+        },
+        "translations": {
+          "fa": "گرم"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_quantities_01",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "lemma": "Gramm",
+        "display_lemma": "Gramm",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_food_quantities_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_food_quantities_01",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "lexeme_ref": "lx_food_quantities_01",
+        "surface_form": "Gramm",
+        "display_form": "Gramm",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_quantities_02",
+      "data": {
+        "slug": "de_a2_food_quantities_02",
+        "lesson_key": "a2-de-food-quantities-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Kilo"
+        },
+        "translations": {
+          "fa": "کیلو"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_quantities_02",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "lemma": "Kilo",
+        "display_lemma": "Kilo",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_food_quantities_02"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_food_quantities_02",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "lexeme_ref": "lx_food_quantities_02",
+        "surface_form": "Kilo",
+        "display_form": "Kilo",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_quantities_03",
+      "data": {
+        "slug": "de_a2_food_quantities_03",
+        "lesson_key": "a2-de-food-quantities-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Flasche"
+        },
+        "translations": {
+          "fa": "بطری"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_quantities_03",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "lemma": "Flasche",
+        "display_lemma": "Flasche",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_food_quantities_03"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_food_quantities_03",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "lexeme_ref": "lx_food_quantities_03",
+        "surface_form": "Flasche",
+        "display_form": "Flasche",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_quantities_04",
+      "data": {
+        "slug": "de_a2_food_quantities_04",
+        "lesson_key": "a2-de-food-quantities-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Packung"
+        },
+        "translations": {
+          "fa": "بسته"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_quantities_04",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "lemma": "Packung",
+        "display_lemma": "Packung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_food_quantities_04"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_food_quantities_04",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "lexeme_ref": "lx_food_quantities_04",
+        "surface_form": "Packung",
+        "display_form": "Packung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_quantities_05",
+      "data": {
+        "slug": "de_a2_food_quantities_05",
+        "lesson_key": "a2-de-food-quantities-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "genug"
+        },
+        "translations": {
+          "fa": "کافی"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_quantities_05",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "lemma": "genug",
+        "display_lemma": "genug",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_food_quantities_05"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_food_quantities_05",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "lexeme_ref": "lx_food_quantities_05",
+        "surface_form": "genug",
+        "display_form": "genug",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_food_quantities_06",
+      "data": {
+        "slug": "de_a2_food_quantities_06",
+        "lesson_key": "a2-de-food-quantities-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Menge"
+        },
+        "translations": {
+          "fa": "مقدار"
+        },
+        "cefr": "A2",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_food_quantities_06",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "lemma": "Menge",
+        "display_lemma": "Menge",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_food_quantities_06"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_food_quantities_06",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "lexeme_ref": "lx_food_quantities_06",
+        "surface_form": "Menge",
+        "display_form": "Menge",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_quantities_01",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "text": {
+          "de": "Ich brauche ein Kilo Kartoffeln."
+        },
+        "translations": {
+          "fa": "یک کیلو سیب‌زمینی لازم دارم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_food_quantities_01"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_quantities_02",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "text": {
+          "de": "Nimm bitte zwei Flaschen Wasser."
+        },
+        "translations": {
+          "fa": "لطفاً دو بطری آب بردار."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_food_quantities_02"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_quantities_03",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "text": {
+          "de": "Haben wir genug Reis zu Hause?"
+        },
+        "translations": {
+          "fa": "در خانه برنج کافی داریم؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_food_quantities_03"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_quantities_04",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "text": {
+          "de": "Es sind nur noch wenige Eier da."
+        },
+        "translations": {
+          "fa": "فقط چند تخم‌مرغ باقی مانده."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_food_quantities_04"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_quantities_05",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "text": {
+          "de": "Wie viel Käse möchtest du?"
+        },
+        "translations": {
+          "fa": "چقدر پنیر می‌خواهی؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_food_quantities_05"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_food_quantities_06",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "text": {
+          "de": "Eine Packung reicht für heute."
+        },
+        "translations": {
+          "fa": "یک بسته برای امروز کافی است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_food_quantities_06"
+        ],
+        "cefr": "A2",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_food_quantities_01",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "slug": "a2-de-food_quantities-grammar-01",
+        "title": "viel / wenig und viele / wenige",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: viel / wenig und viele / wenige.",
+        "explanation": {
+          "fa": "در این درس ساختار «viel / wenig und viele / wenige» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Ich brauche ein Kilo Kartoffeln.",
+            "fa": "یک کیلو سیب‌زمینی لازم دارم."
+          },
+          {
+            "de": "Nimm bitte zwei Flaschen Wasser.",
+            "fa": "لطفاً دو بطری آب بردار."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_food_quantities_02",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "slug": "a2-de-food_quantities-grammar-02",
+        "title": "Maßeinheiten + von",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: Maßeinheiten + von.",
+        "explanation": {
+          "fa": "در این درس ساختار «Maßeinheiten + von» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Haben wir genug Reis zu Hause?",
+            "fa": "در خانه برنج کافی داریم؟"
+          },
+          {
+            "de": "Es sind nur noch wenige Eier da.",
+            "fa": "فقط چند تخم‌مرغ باقی مانده."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_food_quantities_01",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "title": "Lebensmittel & Mengen · 1",
+        "setting": "food-basics",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Clara",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Ich brauche ein Kilo Kartoffeln.",
+            "translation_fa": "یک کیلو سیب‌زمینی لازم دارم."
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Nimm bitte zwei Flaschen Wasser.",
+            "translation_fa": "لطفاً دو بطری آب بردار."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Gut, dann machen wir es so.",
+            "translation_fa": "خوب، پس همین کار را می‌کنیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Danke, das klingt lecker.",
+            "translation_fa": "ممنون، خوشمزه به نظر می‌رسد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_01_mc",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «یک کیلو سیب‌زمینی لازم دارم.»؟"
+        },
+        "options": [
+          "Ich brauche ein Kilo Kartoffeln.",
+          "Nimm bitte zwei Flaschen Wasser.",
+          "Haben wir genug Reis zu Hause?",
+          "Es sind nur noch wenige Eier da."
+        ],
+        "answer": {
+          "value": "Ich brauche ein Kilo Kartoffeln."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Ich brauche ein Kilo Kartoffeln.» یعنی «یک کیلو سیب‌زمینی لازم دارم.».",
+          "model_answer": "Ich brauche ein Kilo Kartoffeln."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_01_listen",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich brauche ein Kilo Kartoffeln."
+        },
+        "options": [
+          "یک کیلو سیب‌زمینی لازم دارم.",
+          "لطفاً دو بطری آب بردار.",
+          "در خانه برنج کافی داریم؟",
+          "فقط چند تخم‌مرغ باقی مانده."
+        ],
+        "answer": {
+          "value": "یک کیلو سیب‌زمینی لازم دارم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: یک کیلو سیب‌زمینی لازم دارم.",
+          "model_answer": "Ich brauche ein Kilo Kartoffeln.",
+          "transcript_de": "Ich brauche ein Kilo Kartoffeln."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_01_speak",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Nimm bitte zwei Flaschen Wasser."
+        },
+        "answer": {
+          "expected_text": "Nimm bitte zwei Flaschen Wasser."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: لطفاً دو بطری آب بردار.",
+          "model_answer": "Nimm bitte zwei Flaschen Wasser."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_01_trans",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "لطفاً دو بطری آب بردار.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Nimm bitte zwei Flaschen Wasser."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Nimm bitte zwei Flaschen Wasser.",
+          "model_answer": "Nimm bitte zwei Flaschen Wasser."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_food_quantities_02",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "title": "Lebensmittel & Mengen · 2",
+        "setting": "food-basics",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Anna",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Haben wir genug Reis zu Hause?",
+            "translation_fa": "در خانه برنج کافی داریم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Es sind nur noch wenige Eier da.",
+            "translation_fa": "فقط چند تخم‌مرغ باقی مانده."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Danke, das klingt lecker.",
+            "translation_fa": "ممنون، خوشمزه به نظر می‌رسد."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Gut, dann machen wir es so.",
+            "translation_fa": "خوب، پس همین کار را می‌کنیم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_02_mc",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «در خانه برنج کافی داریم؟»؟"
+        },
+        "options": [
+          "Haben wir genug Reis zu Hause?",
+          "Ich brauche ein Kilo Kartoffeln.",
+          "Nimm bitte zwei Flaschen Wasser.",
+          "Es sind nur noch wenige Eier da."
+        ],
+        "answer": {
+          "value": "Haben wir genug Reis zu Hause?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Haben wir genug Reis zu Hause?» یعنی «در خانه برنج کافی داریم؟».",
+          "model_answer": "Haben wir genug Reis zu Hause?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_02_listen",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Haben wir genug Reis zu Hause?"
+        },
+        "options": [
+          "در خانه برنج کافی داریم؟",
+          "یک کیلو سیب‌زمینی لازم دارم.",
+          "لطفاً دو بطری آب بردار.",
+          "فقط چند تخم‌مرغ باقی مانده."
+        ],
+        "answer": {
+          "value": "در خانه برنج کافی داریم؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: در خانه برنج کافی داریم؟",
+          "model_answer": "Haben wir genug Reis zu Hause?",
+          "transcript_de": "Haben wir genug Reis zu Hause?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_02_speak",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Es sind nur noch wenige Eier da."
+        },
+        "answer": {
+          "expected_text": "Es sind nur noch wenige Eier da."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: فقط چند تخم‌مرغ باقی مانده.",
+          "model_answer": "Es sind nur noch wenige Eier da."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_02_trans",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "فقط چند تخم‌مرغ باقی مانده.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Es sind nur noch wenige Eier da."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Es sind nur noch wenige Eier da.",
+          "model_answer": "Es sind nur noch wenige Eier da."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_food_quantities_03",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "title": "Lebensmittel & Mengen · 3",
+        "setting": "food-basics",
+        "cefr": "A2",
+        "topic": "food-basics",
+        "characters": [
+          "Mia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Wie viel Käse möchtest du?",
+            "translation_fa": "چقدر پنیر می‌خواهی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Eine Packung reicht für heute.",
+            "translation_fa": "یک بسته برای امروز کافی است."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Gut, dann machen wir es so.",
+            "translation_fa": "خوب، پس همین کار را می‌کنیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Danke, das klingt lecker.",
+            "translation_fa": "ممنون، خوشمزه به نظر می‌رسد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_03_mc",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «چقدر پنیر می‌خواهی؟»؟"
+        },
+        "options": [
+          "Wie viel Käse möchtest du?",
+          "Ich brauche ein Kilo Kartoffeln.",
+          "Nimm bitte zwei Flaschen Wasser.",
+          "Haben wir genug Reis zu Hause?"
+        ],
+        "answer": {
+          "value": "Wie viel Käse möchtest du?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Wie viel Käse möchtest du?» یعنی «چقدر پنیر می‌خواهی؟».",
+          "model_answer": "Wie viel Käse möchtest du?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_03_listen",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wie viel Käse möchtest du?"
+        },
+        "options": [
+          "چقدر پنیر می‌خواهی؟",
+          "یک کیلو سیب‌زمینی لازم دارم.",
+          "لطفاً دو بطری آب بردار.",
+          "در خانه برنج کافی داریم؟"
+        ],
+        "answer": {
+          "value": "چقدر پنیر می‌خواهی؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: چقدر پنیر می‌خواهی؟",
+          "model_answer": "Wie viel Käse möchtest du?",
+          "transcript_de": "Wie viel Käse möchtest du?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_03_speak",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Eine Packung reicht für heute."
+        },
+        "answer": {
+          "expected_text": "Eine Packung reicht für heute."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: یک بسته برای امروز کافی است.",
+          "model_answer": "Eine Packung reicht für heute."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_food_quantities_03_trans",
+      "data": {
+        "lesson_key": "a2-de-food-quantities-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "یک بسته برای امروز کافی است.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Eine Packung reicht für heute."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Eine Packung reicht für heute.",
+          "model_answer": "Eine Packung reicht für heute."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
