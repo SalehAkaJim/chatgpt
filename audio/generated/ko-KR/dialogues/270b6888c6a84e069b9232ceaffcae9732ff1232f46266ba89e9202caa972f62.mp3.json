@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "aad1cd62f5f449d6b039213d52bf289f0cd22ea9c8059d0e6ee7c649e26a3988",
+  "voice_id": "L4az9Gb378GIycFl2nAB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "270b6888c6a84e069b9232ceaffcae9732ff1232f46266ba89e9202caa972f62",
+  "voice_key": "character:준호:male_bright",
+  "voice_name": "KO - Calm, Friendly, Warm",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "86a286d2711c85194b993381c88db9358cba312ea0bfc2e8059bbf7be280fa78",
+  "duration_ms": 2533,
+  "generated_at": "2026-09-13T22:59:10.297204+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "49120a1c-d0e5-58d3-becf-81900e4b0cd6",
+      "entity_key": "d_opinions_and_evidence_01:4"
+    }
+  ]
+}
