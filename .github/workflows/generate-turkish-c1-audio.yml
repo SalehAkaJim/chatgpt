@@ -1,0 +1,73 @@
+name: Generate Turkish C1 Audio
+on:
+  push:
+    branches: [main]
+    paths: ['.github/turkish-c1-audio-trigger']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turkish-c1-audio-generation-v1
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      CONTENT_TTS_CONCURRENCY: '2'
+      ELEVENLABS_MODEL_ID: eleven_multilingual_v2
+      ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main, fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Require ElevenLabs connection
+        run: test -n "${ELEVENLABS_API_KEY:-}" || { echo 'ELEVENLABS_API_KEY GitHub secret is missing.' >&2; exit 2; }
+      - name: Final Turkish C1 content validation before paid generation
+        run: |
+          set -euo pipefail
+          test "$(find content/production/tr/C1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/tr/C1/*.json; do python scripts/validate_content.py "$f"; done
+          python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
+          python database/import/tr/c1.py --dry-run
+      - name: Build strict Turkish C1 manifest
+        run: |
+          mkdir -p audio/manifests/tr
+          python scripts/build_audio_manifest.py content/production/tr/C1 --level C1 --locale tr-TR --strict-characters --output audio/manifests/tr/C1.json
+      - name: Resolve and lock every required Turkish voice without TTS
+        run: python scripts/resolve_audio_voices.py audio/manifests/tr/C1.json --write-lock
+      - name: Validate manifest and voice lock before paid generation
+        run: |
+          python scripts/validate_audio_manifest.py audio/manifests/tr/C1.json
+          python scripts/audit_voice_lock.py --lock audio/voices/tr-TR.lock.json --registry audio/voices/tr-TR.json --strict
+      - name: Generate all Turkish C1 production audio
+        run: python scripts/generate_audio.py audio/manifests/tr/C1.json --confirm-paid-generation --concurrency 2
+      - name: Validate generated Turkish C1 audio and voice consistency
+        run: |
+          python scripts/validate_audio_manifest.py audio/manifests/tr/C1.json --require-generated
+          python scripts/audit_audio_voice_consistency.py audio/manifests/tr/C1.json --lock-file audio/voices/tr-TR.lock.json
+      - name: Export database relative-path SQL
+        run: python scripts/export_audio_sql.py audio/manifests/tr/C1.json --status validated --output database/import/tr/c1_audio.sql
+      - name: Verify manifest outputs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('audio/manifests/tr/C1.json').read_text()); counts={}
+          for x in d['items']: counts[x['category']]=counts.get(x['category'],0)+1
+          missing={'lexical','utterances','dialogues'}-set(counts)
+          if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
+          if len(d['items']) != 180: raise SystemExit(f"Unexpected Turkish C1 audio item count: {len(d['items'])}")
+          print({'items':len(d['items']),'categories':counts})
+          PY
+      - name: Commit Turkish C1 audio and DB link files
+        run: |
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audio/generated/tr-TR audio/manifests/tr/C1.json audio/voices/tr-TR.lock.json database/import/tr/c1_audio.sql
+          if git diff --cached --quiet; then echo 'No audio changes to commit.'; else
+            git commit -m 'Generate Turkish C1 batch 1 production audio [skip ci]'
+            git fetch origin main; git rebase origin/main; git push origin HEAD:main
+          fi
