@@ -1,0 +1,308 @@
+{
+  "batch": 1,
+  "level": "Pre-A1",
+  "variant": "tr-TR",
+  "pedagogy": {
+    "learner_language": "fa-IR",
+    "standard": "contemporary Istanbul Turkish",
+    "principles": [
+      "teach communicative chunks before analysis",
+      "make Turkish dotted and dotless I explicit for Persian learners",
+      "introduce agglutinative person endings gently through useful phrases",
+      "avoid grammatical terminology unless it directly helps the beginner",
+      "keep every dialogue short, coherent and natural"
+    ]
+  },
+  "units": [
+    {
+      "slug": "first-greetings",
+      "topic": "greetings",
+      "title": "Merhaba!",
+      "vocab": [
+        ["merhaba", "Merhaba!", "سلام!", "interjection", 1],
+        ["gunaydin", "Günaydın!", "صبح بخیر!", "expression", 1],
+        ["iyi_aksamlar", "İyi akşamlar!", "عصر بخیر!", "expression", 1],
+        ["hosca_kal", "Hoşça kal!", "خداحافظ!", "expression", 2],
+        ["gule_gule", "Güle güle!", "به سلامت!", "expression", 2],
+        ["gorusuruz", "Görüşürüz!", "می‌بینمت / تا بعد!", "expression", 2]
+      ],
+      "utterances": [
+        ["u1", "Merhaba!", "سلام!", "greet", ["merhaba"], 1],
+        ["u2", "Günaydın!", "صبح بخیر!", "greet_morning", ["gunaydin"], 1],
+        ["u3", "Hoşça kal!", "خداحافظ!", "farewell_leaver", ["hosca_kal"], 2],
+        ["u4", "Güle güle!", "به سلامت!", "farewell_stayer", ["gule_gule"], 2]
+      ],
+      "grammar": [
+        "Hoşça kal / Güle güle",
+        "Turkish uses different conventional farewell chunks depending on who is leaving and who is staying.",
+        "اگر تو داری می‌روی، به کسی که می‌ماند «Hoşça kal» می‌گویی؛ کسی که می‌ماند می‌تواند جواب بدهد «Güle güle». فعلاً این دو را به‌صورت تکه‌های آماده یاد بگیر.",
+        [["Hoşça kal!", "خداحافظ!"], ["Güle güle!", "به سلامت!"]]
+      ],
+      "dialogues": [
+        ["Sabah karşılaşması", "صبح جلوی کافه", [["Elif", "Günaydın, Mert!", "صبح بخیر، مرت!"], ["Mert", "Günaydın, Elif!", "صبح بخیر، الیف!"], ["Elif", "Merhaba!", "سلام!"], ["Mert", "Merhaba!", "سلام!"]], 1],
+        ["Kapıda vedalaşma", "دم در", [["Selin", "Hoşça kal, Kaan!", "خداحافظ، کان!"], ["Kaan", "Güle güle, Selin!", "به سلامت، سلین!"], ["Selin", "Görüşürüz!", "تا بعد!"], ["Kaan", "Görüşürüz!", "می‌بینمت!" ]], 2]
+      ]
+    },
+    {
+      "slug": "my-name",
+      "topic": "introductions",
+      "title": "Benim adım",
+      "vocab": [
+        ["ben", "ben", "من", "pronoun", 1],
+        ["benim_adim", "Benim adım…", "اسم من … است.", "expression", 1],
+        ["senin_adin_ne", "Senin adın ne?", "اسم تو چیه؟", "expression", 1],
+        ["memnun_oldum", "Memnun oldum.", "خوشوقتم.", "expression", 2],
+        ["ben_de", "Ben de.", "من هم همین‌طور.", "expression", 2],
+        ["ad", "ad", "اسم / نام", "noun", 2]
+      ],
+      "utterances": [
+        ["u1", "Benim adım Elif.", "اسم من الیف است.", "introduce_name", ["benim_adim"], 1],
+        ["u2", "Senin adın ne?", "اسم تو چیه؟", "ask_name", ["senin_adin_ne"], 1],
+        ["u3", "Memnun oldum.", "خوشوقتم.", "pleased_to_meet", ["memnun_oldum"], 2],
+        ["u4", "Ben de memnun oldum.", "من هم خوشوقتم.", "return_pleasantry", ["ben_de", "memnun_oldum"], 2]
+      ],
+      "grammar": [
+        "Benim adım…",
+        "Turkish can express possession inside the noun phrase: adım literally carries the meaning ‘my name’.",
+        "در «Benim adım» بخش «-ım» داخل خودِ «adım» معنی «اسمِ من» را می‌سازد. در این مرحله فقط الگو را بشناس و استفاده کن؛ تجزیهٔ کامل پسوندها برای A1 می‌ماند.",
+        [["Benim adım Elif.", "اسم من الیف است."], ["Senin adın ne?", "اسم تو چیه؟"]]
+      ],
+      "dialogues": [
+        ["İlk tanışma", "آشنایی در کلاس", [["Deniz", "Merhaba. Benim adım Deniz.", "سلام. اسم من دنیز است."], ["Emre", "Merhaba. Ben Emre.", "سلام. من امره هستم."], ["Deniz", "Senin adın Emre, değil mi?", "اسمت امره است، درسته؟"], ["Emre", "Evet.", "بله." ]], 1],
+        ["Tanıştığımıza memnun oldum", "بعد از معرفی", [["Zeynep", "Memnun oldum, Burak.", "خوشوقتم، بوراک."], ["Burak", "Ben de memnun oldum, Zeynep.", "من هم خوشوقتم، زینب."], ["Zeynep", "Görüşürüz.", "تا بعد."], ["Burak", "Görüşürüz.", "می‌بینمت." ]], 2]
+      ]
+    },
+    {
+      "slug": "numbers-0-10",
+      "topic": "numbers",
+      "title": "0’dan 10’a",
+      "vocab": [
+        ["sifir", "sıfır", "صفر", "number", 1],
+        ["bir", "bir", "یک", "number", 1],
+        ["iki", "iki", "دو", "number", 1],
+        ["uc", "üç", "سه", "number", 2],
+        ["bes", "beş", "پنج", "number", 2],
+        ["on", "on", "ده", "number", 2]
+      ],
+      "utterances": [
+        ["u1", "Bir, iki, üç.", "یک، دو، سه.", "count", ["bir", "iki", "uc"], 1],
+        ["u2", "Sıfır ve bir.", "صفر و یک.", "identify_numbers", ["sifir", "bir"], 1],
+        ["u3", "Beş lira.", "پنج لیر.", "say_price", ["bes"], 2],
+        ["u4", "On dakika.", "ده دقیقه.", "say_duration", ["on"], 2]
+      ],
+      "grammar": [
+        "Sayı + tekil isim",
+        "After a number, Turkish normally keeps the counted noun singular: beş lira, iki kitap.",
+        "بعد از عدد، اسم در ترکی معمولاً جمع نمی‌شود: «beş lira» یعنی «پنج لیر»، نه اینکه به «lira» پسوند جمع اضافه کنیم.",
+        [["Beş lira.", "پنج لیر."], ["İki kitap.", "دو کتاب."]]
+      ],
+      "dialogues": [
+        ["Numara söylemek", "گفتن شماره", [["Elif", "Bir?", "یک؟"], ["Selin", "Evet, bir.", "بله، یک."], ["Elif", "İki?", "دو؟"], ["Selin", "Evet, iki.", "بله، دو." ]], 1],
+        ["Küçük bir alışveriş", "خرید کوچک", [["Mert", "Ne kadar?", "چقدره؟"], ["Kaan", "Beş lira.", "پنج لیر."], ["Mert", "Beş?", "پنج؟"], ["Kaan", "Evet, beş lira.", "بله، پنج لیر." ]], 2]
+      ]
+    },
+    {
+      "slug": "alphabet",
+      "topic": "script-basics",
+      "title": "Türk alfabesi",
+      "vocab": [
+        ["c_harfi", "ç", "حرف ç", "letter", 1],
+        ["s_harfi", "ş", "حرف ş", "letter", 1],
+        ["g_harfi", "ğ", "حرف ğ", "letter", 1],
+        ["noktasiz_i", "ı", "حرف ı بدون نقطه", "letter", 2],
+        ["noktali_i", "i", "حرف i نقطه‌دار", "letter", 2],
+        ["u_harfi", "ü", "حرف ü", "letter", 2]
+      ],
+      "utterances": [
+        ["u1", "Bu harf ç.", "این حرف ç است.", "identify_letter", ["c_harfi"], 1],
+        ["u2", "Bu harf ş.", "این حرف ş است.", "identify_letter", ["s_harfi"], 1],
+        ["u3", "Bu ı, bu i.", "این ı است، این یکی i.", "contrast_letters", ["noktasiz_i", "noktali_i"], 2],
+        ["u4", "Ü Türkçede bir harf.", "Ü در ترکی یک حرف است.", "identify_letter", ["u_harfi"], 2]
+      ],
+      "grammar": [
+        "i ≠ ı",
+        "Dotted i/İ and dotless ı/I are separate Turkish letters and must not be normalized into one another.",
+        "در ترکی «i» و «ı» دو حرف جدا هستند. حتی در تبدیل حروف بزرگ و کوچک هم جفت‌هایشان فرق دارد: i ↔ İ و ı ↔ I.",
+        [["i — İ", "i نقطه‌دار و شکل بزرگ آن İ"], ["ı — I", "ı بدون نقطه و شکل بزرگ آن I"]]
+      ],
+      "dialogues": [
+        ["Tahtadaki harf", "کلاس زبان", [["Deniz", "Bu harf ç mi?", "این حرف ç است؟"], ["Zeynep", "Evet, ç.", "بله، ç."], ["Deniz", "Bu da ş mı?", "این یکی هم ş است؟"], ["Zeynep", "Evet, ş.", "بله، ş." ]], 1],
+        ["İki farklı i", "تمرین نوشتن", [["Emre", "Bu i mi?", "این i است؟"], ["Burak", "Hayır, bu ı.", "نه، این ı است."], ["Emre", "Peki bu?", "پس این یکی؟"], ["Burak", "Bu i.", "این i است." ]], 2]
+      ]
+    },
+    {
+      "slug": "first-sounds",
+      "topic": "sound-letter-mapping",
+      "title": "İlk sesler",
+      "vocab": [
+        ["cay", "çay", "چای", "noun", 1],
+        ["seker", "şeker", "شکر", "noun", 1],
+        ["cam", "cam", "شیشه", "noun", 1],
+        ["dag", "dağ", "کوه", "noun", 2],
+        ["goz", "göz", "چشم", "noun", 2],
+        ["sut", "süt", "شیر", "noun", 2]
+      ],
+      "utterances": [
+        ["u1", "Çay, lütfen.", "چای، لطفاً.", "request_drink", ["cay"], 1],
+        ["u2", "Şeker var mı?", "شکر هست؟", "ask_availability", ["seker"], 1],
+        ["u3", "Bu bir dağ.", "این یک کوه است.", "identify_object", ["dag"], 2],
+        ["u4", "Süt var.", "شیر هست.", "state_availability", ["sut"], 2]
+      ],
+      "grammar": [
+        "Yazı ve ses",
+        "Turkish spelling is comparatively regular: ç is /tʃ/, ş is /ʃ/, c is /dʒ/; ğ often modifies the surrounding vowels rather than behaving like a strong consonant.",
+        "برای شروع: ç را شبیه «چ»، ş را شبیه «ش» و c را شبیه «ج» بشنو. ğ معمولاً مثل یک صامت محکم جدا تلفظ نمی‌شود و اغلب روی واکه‌های اطراف اثر می‌گذارد.",
+        [["çay", "چای"], ["şeker", "شکر"]]
+      ],
+      "dialogues": [
+        ["Kafede", "کافه", [["Elif", "Çay, lütfen.", "چای، لطفاً."], ["Kaan", "Tabii.", "حتماً."], ["Elif", "Şeker var mı?", "شکر هست؟"], ["Kaan", "Evet, var.", "بله، هست." ]], 1],
+        ["Resme bak", "دیدن تصویر", [["Mert", "Bu dağ mı?", "این کوه است؟"], ["Selin", "Evet, bir dağ.", "بله، یک کوه است."], ["Mert", "Göz kelimesinde ö var mı?", "در کلمهٔ göz حرف ö هست؟"], ["Selin", "Evet, var.", "بله، هست." ]], 2]
+      ]
+    },
+    {
+      "slug": "how-are-you",
+      "topic": "introductions",
+      "title": "Nasılsın?",
+      "vocab": [
+        ["nasilsin", "Nasılsın?", "حالت چطوره؟", "expression", 1],
+        ["iyiyim", "İyiyim.", "خوبم.", "expression", 1],
+        ["tesekkurler", "Teşekkürler.", "ممنون.", "expression", 1],
+        ["fena_degil", "Fena değil.", "بد نیست.", "expression", 2],
+        ["sen", "Sen?", "تو چطور؟", "expression", 2],
+        ["cok_iyi", "Çok iyi.", "خیلی خوب.", "expression", 2]
+      ],
+      "utterances": [
+        ["u1", "Nasılsın?", "حالت چطوره؟", "ask_wellbeing", ["nasilsin"], 1],
+        ["u2", "İyiyim, teşekkürler.", "خوبم، ممنون.", "answer_wellbeing", ["iyiyim", "tesekkurler"], 1],
+        ["u3", "Fena değil.", "بد نیست.", "answer_wellbeing", ["fena_degil"], 2],
+        ["u4", "Ben iyiyim. Sen?", "من خوبم. تو چطور؟", "return_question", ["sen", "iyiyim"], 2]
+      ],
+      "grammar": [
+        "İyiyim = خوبم",
+        "Turkish often carries the person inside an ending, so a separate pronoun is not always necessary.",
+        "در «İyiyim» خودِ پایان واژه معنی «من» را هم می‌رساند؛ به همین دلیل لازم نیست همیشه «Ben» را جدا بگویی. فعلاً این شکل را به‌صورت یک عبارت پرکاربرد یاد بگیر.",
+        [["İyiyim.", "خوبم."], ["Ben iyiyim.", "من خوبم."]]
+      ],
+      "dialogues": [
+        ["Bugün nasılsın?", "دیدار دوستانه", [["Deniz", "Merhaba, Burak. Nasılsın?", "سلام بوراک. حالت چطوره؟"], ["Burak", "İyiyim, teşekkürler. Sen?", "خوبم، ممنون. تو چطور؟"], ["Deniz", "Ben de iyiyim.", "من هم خوبم."], ["Burak", "Çok iyi.", "خیلی خوبه." ]], 1],
+        ["Kısa cevap", "استراحت کلاس", [["Emre", "Nasılsın, Zeynep?", "حالت چطوره، زینب؟"], ["Zeynep", "Fena değil. Sen?", "بد نیست. تو چطور؟"], ["Emre", "İyiyim.", "خوبم."], ["Zeynep", "Güzel.", "خوبه." ]], 2]
+      ]
+    },
+    {
+      "slug": "first-objects",
+      "topic": "objects",
+      "title": "İlk nesneler",
+      "vocab": [
+        ["bu_ne", "Bu ne?", "این چیه؟", "expression", 1],
+        ["kitap", "kitap", "کتاب", "noun", 1],
+        ["kalem", "kalem", "خودکار / قلم", "noun", 1],
+        ["canta", "çanta", "کیف", "noun", 2],
+        ["telefon", "telefon", "تلفن", "noun", 2],
+        ["anahtar", "anahtar", "کلید", "noun", 2]
+      ],
+      "utterances": [
+        ["u1", "Bu ne?", "این چیه؟", "ask_object", ["bu_ne"], 1],
+        ["u2", "Bu bir kitap.", "این یک کتاب است.", "identify_object", ["kitap"], 1],
+        ["u3", "Bu benim çantam.", "این کیف من است.", "identify_possession", ["canta"], 2],
+        ["u4", "Anahtar burada.", "کلید اینجاست.", "locate_object", ["anahtar"], 2]
+      ],
+      "grammar": [
+        "Bu ne? / Bu bir…",
+        "Turkish has no grammatical gender and no article system like German der/die/das; bir can mean ‘one/a’ in beginner noun phrases.",
+        "در ترکی اسم‌ها جنس دستوری ندارند. برای معرفی سادهٔ یک چیز می‌توانی بگویی «Bu bir kitap» یعنی «این یک کتاب است».",
+        [["Bu ne?", "این چیه؟"], ["Bu bir kitap.", "این یک کتاب است."]]
+      ],
+      "dialogues": [
+        ["Masadaki şey", "روی میز", [["Elif", "Bu ne?", "این چیه؟"], ["Deniz", "Bu bir kitap.", "این یک کتاب است."], ["Elif", "Peki bu?", "پس این یکی؟"], ["Deniz", "Bu bir kalem.", "این یک خودکار است." ]], 1],
+        ["Kayıp anahtar", "پیدا کردن وسایل", [["Mert", "Anahtar nerede?", "کلید کجاست؟"], ["Emre", "Anahtar burada.", "کلید اینجاست."], ["Mert", "Telefon da burada mı?", "تلفن هم اینجاست؟"], ["Emre", "Evet, burada.", "بله، اینجاست." ]], 2]
+      ]
+    },
+    {
+      "slug": "polite-words",
+      "topic": "polite-language",
+      "title": "Kibar sözler",
+      "vocab": [
+        ["lutfen", "lütfen", "لطفاً", "adverb", 1],
+        ["tesekkur_ederim", "Teşekkür ederim.", "متشکرم.", "expression", 1],
+        ["rica_ederim", "Rica ederim.", "خواهش می‌کنم.", "expression", 1],
+        ["ozur_dilerim", "Özür dilerim.", "عذر می‌خواهم.", "expression", 2],
+        ["affedersiniz", "Affedersiniz.", "ببخشید.", "expression", 2],
+        ["tabii", "Tabii.", "حتماً / البته.", "expression", 2]
+      ],
+      "utterances": [
+        ["u1", "Bir çay, lütfen.", "یک چای، لطفاً.", "polite_request", ["lutfen"], 1],
+        ["u2", "Teşekkür ederim.", "متشکرم.", "thank", ["tesekkur_ederim"], 1],
+        ["u3", "Özür dilerim.", "عذر می‌خواهم.", "apologize", ["ozur_dilerim"], 2],
+        ["u4", "Affedersiniz, yardım eder misiniz?", "ببخشید، کمک می‌کنید؟", "get_attention", ["affedersiniz"], 2]
+      ],
+      "grammar": [
+        "Teşekkür ederim / Rica ederim",
+        "Polite Turkish relies heavily on conventional response pairs; learn the whole exchange as a social routine.",
+        "«Teşekkür ederim» یک تشکر کامل و مؤدبانه است و پاسخ رایجش «Rica ederim» است. این دو را مثل یک جفت مکالمه‌ای یاد بگیر.",
+        [["Teşekkür ederim.", "متشکرم."], ["Rica ederim.", "خواهش می‌کنم."]]
+      ],
+      "dialogues": [
+        ["Kafede sipariş", "سفارش در کافه", [["Selin", "Bir çay, lütfen.", "یک چای، لطفاً."], ["Zeynep", "Tabii.", "حتماً."], ["Selin", "Teşekkür ederim.", "متشکرم."], ["Zeynep", "Rica ederim.", "خواهش می‌کنم." ]], 1],
+        ["Yolda", "برخورد در راه", [["Kaan", "Affedersiniz.", "ببخشید."], ["Burak", "Evet?", "بله؟"], ["Kaan", "Özür dilerim.", "عذر می‌خواهم."], ["Burak", "Sorun değil.", "اشکالی ندارد." ]], 2]
+      ]
+    },
+    {
+      "slug": "survival-words",
+      "topic": "polite-language",
+      "title": "Gerekli sözler",
+      "vocab": [
+        ["evet", "evet", "بله", "interjection", 1],
+        ["hayir", "hayır", "نه", "interjection", 1],
+        ["tamam", "tamam", "باشه / اوکی", "interjection", 1],
+        ["anlamadim", "Anlamadım.", "نفهمیدم.", "expression", 2],
+        ["tekrar", "Tekrar, lütfen.", "دوباره، لطفاً.", "expression", 2],
+        ["yardim", "Yardım!", "کمک!", "noun", 2]
+      ],
+      "utterances": [
+        ["u1", "Evet, tamam.", "بله، باشه.", "confirm", ["evet", "tamam"], 1],
+        ["u2", "Hayır, teşekkürler.", "نه، ممنون.", "decline", ["hayir"], 1],
+        ["u3", "Anlamadım.", "نفهمیدم.", "repair_not_understood", ["anlamadim"], 2],
+        ["u4", "Tekrar, lütfen.", "دوباره، لطفاً.", "ask_repeat", ["tekrar"], 2]
+      ],
+      "grammar": [
+        "Anlamadım",
+        "A complete Turkish verb can carry subject and tense information in its endings; Anlamadım functions as a full sentence meaning ‘I didn’t understand.’",
+        "«Anlamadım» به‌تنهایی یک جملهٔ کامل است و یعنی «نفهمیدم». در ترکی اطلاعاتی که فارسی ممکن است با چند بخش نشان دهد، اغلب به شکل پسوند به فعل می‌چسبد.",
+        [["Anlamadım.", "نفهمیدم."], ["Tekrar, lütfen.", "دوباره، لطفاً."]]
+      ],
+      "dialogues": [
+        ["Evet mi hayır mı?", "پاسخ کوتاه", [["Elif", "Çay?", "چای؟"], ["Zeynep", "Evet, lütfen.", "بله، لطفاً."], ["Elif", "Şeker?", "شکر؟"], ["Zeynep", "Hayır, teşekkürler.", "نه، ممنون." ]], 1],
+        ["Bir daha söyler misin?", "وقتی متوجه نمی‌شوی", [["Mert", "Saat üçte buluşalım.", "ساعت سه همدیگر را ببینیم."], ["Burak", "Anlamadım.", "نفهمیدم."], ["Mert", "Saat üç.", "ساعت سه."], ["Burak", "Tamam. Teşekkürler.", "باشه. ممنون." ]], 2]
+      ]
+    },
+    {
+      "slug": "first-conversation",
+      "topic": "introductions",
+      "title": "İlk konuşmam",
+      "vocab": [
+        ["merhaba_final", "Merhaba!", "سلام!", "interjection", 1],
+        ["adin_ne_final", "Adın ne?", "اسمت چیه؟", "expression", 1],
+        ["iyiyim_final", "İyiyim.", "خوبم.", "expression", 1],
+        ["memnun_final", "Memnun oldum.", "خوشوقتم.", "expression", 2],
+        ["tesekkur_final", "Teşekkürler.", "ممنون.", "expression", 2],
+        ["gorusuruz_final", "Görüşürüz!", "تا بعد!", "expression", 2]
+      ],
+      "utterances": [
+        ["u1", "Merhaba, benim adım Selin.", "سلام، اسم من سلین است.", "introduce_self", ["merhaba_final"], 1],
+        ["u2", "Merhaba. Adın ne?", "سلام. اسمت چیه؟", "ask_name", ["adin_ne_final"], 1],
+        ["u3", "Memnun oldum.", "خوشوقتم.", "pleased_to_meet", ["memnun_final"], 2],
+        ["u4", "Teşekkürler, görüşürüz!", "ممنون، تا بعد!", "close_conversation", ["tesekkur_final", "gorusuruz_final"], 2]
+      ],
+      "grammar": [
+        "Kısa ve doğal konuşma",
+        "Beginner Turkish can already sound natural by combining learned chunks and omitting unnecessary pronouns when the person is clear.",
+        "در مکالمهٔ کوتاه لازم نیست همه‌چیز را با ضمیر تکرار کنی. تکه‌هایی مثل «İyiyim»، «Memnun oldum» و «Görüşürüz» خودشان جمله‌های طبیعی و کامل‌اند.",
+        [["Merhaba. Adın ne?", "سلام. اسمت چیه؟"], ["İyiyim, teşekkürler.", "خوبم، ممنون."]]
+      ],
+      "dialogues": [
+        ["Yeni biriyle tanışmak", "آشنایی در یک جمع", [["Selin", "Merhaba, benim adım Selin. Adın ne?", "سلام، اسم من سلین است. اسمت چیه؟"], ["Deniz", "Merhaba. Ben Deniz.", "سلام. من دنیز هستم."], ["Selin", "Nasılsın?", "حالت چطوره؟"], ["Deniz", "İyiyim, teşekkürler.", "خوبم، ممنون." ]], 1],
+        ["Konuşmayı bitirmek", "پایان گفت‌وگو", [["Kaan", "Memnun oldum, Emre.", "خوشوقتم، امره."], ["Emre", "Ben de memnun oldum.", "من هم خوشوقتم."], ["Kaan", "Görüşürüz!", "تا بعد!"], ["Emre", "Görüşürüz, hoşça kal!", "تا بعد، خداحافظ!" ]], 2]
+      ]
+    }
+  ]
+}
