@@ -34,11 +34,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          cat .staging/german/genv3.00 > /tmp/generate_german_beginner.py
+          base64 --decode .staging/german/genv3p1.b64 | bunzip2 >> /tmp/generate_german_beginner.py
           cat \
-            .staging/german/genv3.00 \
-            .staging/german/genv3.01 \
             .staging/german/genv3.02 \
-            .staging/german/genv3.03 > /tmp/generate_german_beginner.py
+            .staging/german/genv3.03 >> /tmp/generate_german_beginner.py
           cat \
             .staging/german/genv3r.00 \
             .staging/german/genv3r.01 \
