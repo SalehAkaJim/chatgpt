@@ -1,8 +1,8 @@
-name: Generate Korean A2 Batch
+name: Generate Korean B1 Batch
 on:
   push:
     branches: [main]
-    paths: ['.github/korean-a2-batch-trigger']
+    paths: ['.github/korean-b1-batch-trigger']
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,33 +15,33 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
-      - run: python scripts/generate_korean_a2_batch.py
+      - run: python scripts/generate_korean_b1_batch.py
       - run: |
           set -euo pipefail
-          test "$(find content/production/ko/A2 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
-          for f in content/production/ko/A2/*.json; do python scripts/validate_content.py "$f"; done
+          test "$(find content/production/ko/B1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/ko/B1/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/ko-KR.json
-          python database/import/ko/a2.py --dry-run
+          python database/import/ko/b1.py --dry-run
       - name: Educational batch summary
         run: |
           python - <<'PY'
           import collections,json
           from pathlib import Path
-          counts=collections.Counter(); lessons=set(); ordered=[]
-          spec=json.loads(Path('content/specs/ko/A2/batch-01.json').read_text())
-          for unit in spec['units']:
-              b=json.loads((Path('content/production/ko/A2')/f"a2-ko-{unit['slug']}-v1.json").read_text()); dialogues=[]
+          counts=collections.Counter(); lessons=set(); ordered=[]; units=[]
+          for p in ['content/specs/ko/B1/batch-01a.json','content/specs/ko/B1/batch-01b.json']: units += json.loads(Path(p).read_text())['units']
+          for unit in units:
+              b=json.loads((Path('content/production/ko/B1')/f"b1-ko-{unit['slug']}-v1.json").read_text()); dialogues=[]
               for item in b['items']:
                   counts[item['kind']]+=1; lk=item.get('data',{}).get('lesson_key')
                   if lk: lessons.add(lk)
                   if item['kind']=='dialogue': dialogues.append(item)
               for item in sorted(dialogues,key=lambda x:x['data']['lesson_key']): ordered.append(tuple(item['data'].get('characters',[])[:2]))
-          assert len(lessons)==20, len(lessons)
+          assert len(lessons)==20,len(lessons)
           for p,c in zip(ordered,ordered[1:]): assert set(p)!=set(c),f'consecutive dialogue pair repeated: {p}'
           assert counts['concept']==60 and counts['utterance']==40 and counts['dialogue']==20 and counts['exercise']==100,counts
           print(json.dumps({'units':10,'lessons':len(lessons),'counts':dict(counts)},ensure_ascii=False))
           PY
       - name: Commit production
         run: |
-          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git add content/production/ko/A2
-          if ! git diff --cached --quiet; then git commit -m 'Generate Korean A2 batch 1 production content [skip ci]'; git fetch origin main; git rebase origin/main; git push origin HEAD:main; fi
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git add content/production/ko/B1
+          if ! git diff --cached --quiet; then git commit -m 'Generate Korean B1 batch 1 production content [skip ci]'; git fetch origin main; git rebase origin/main; git push origin HEAD:main; fi
