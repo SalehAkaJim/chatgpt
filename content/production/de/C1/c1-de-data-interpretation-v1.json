@@ -1,0 +1,1151 @@
+{
+  "batch_id": "de-de-c1-data-interpretation-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "C1",
+  "curriculum_unit": "c1-de-data-interpretation",
+  "generator": "gpt-5.6-sol:german-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_data_interpretation_01",
+      "data": {
+        "slug": "de_c1_data_interpretation_effektstaerke",
+        "lesson_key": "c1-de-data-interpretation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Effektstärke"
+        },
+        "translations": {
+          "fa": "اندازه اثر"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_data_interpretation_01",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "lemma": "Effektstärke",
+        "display_lemma": "Effektstärke",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_data_interpretation_effektstaerke"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_data_interpretation_01",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "lexeme_ref": "lx_data_interpretation_01",
+        "surface_form": "Effektstärke",
+        "display_form": "Effektstärke",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_data_interpretation_02",
+      "data": {
+        "slug": "de_c1_data_interpretation_stichprobe",
+        "lesson_key": "c1-de-data-interpretation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Stichprobe"
+        },
+        "translations": {
+          "fa": "نمونه آماری"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_data_interpretation_02",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "lemma": "Stichprobe",
+        "display_lemma": "Stichprobe",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_data_interpretation_stichprobe"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_data_interpretation_02",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "lexeme_ref": "lx_data_interpretation_02",
+        "surface_form": "Stichprobe",
+        "display_form": "Stichprobe",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_data_interpretation_03",
+      "data": {
+        "slug": "de_c1_data_interpretation_zusammenhang",
+        "lesson_key": "c1-de-data-interpretation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Zusammenhang"
+        },
+        "translations": {
+          "fa": "رابطه یا همبستگی"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_data_interpretation_03",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "lemma": "Zusammenhang",
+        "display_lemma": "Zusammenhang",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_data_interpretation_zusammenhang"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_data_interpretation_03",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "lexeme_ref": "lx_data_interpretation_03",
+        "surface_form": "Zusammenhang",
+        "display_form": "Zusammenhang",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_data_interpretation_04",
+      "data": {
+        "slug": "de_c1_data_interpretation_verzerrung",
+        "lesson_key": "c1-de-data-interpretation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Verzerrung"
+        },
+        "translations": {
+          "fa": "سوگیری یا انحراف"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_data_interpretation_04",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "lemma": "Verzerrung",
+        "display_lemma": "Verzerrung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_data_interpretation_verzerrung"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_data_interpretation_04",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "lexeme_ref": "lx_data_interpretation_04",
+        "surface_form": "Verzerrung",
+        "display_form": "Verzerrung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_data_interpretation_05",
+      "data": {
+        "slug": "de_c1_data_interpretation_belastbar",
+        "lesson_key": "c1-de-data-interpretation-03",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "belastbar"
+        },
+        "translations": {
+          "fa": "قابل اتکا"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_data_interpretation_05",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "lemma": "belastbar",
+        "display_lemma": "belastbar",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_c1_data_interpretation_belastbar"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_data_interpretation_05",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "lexeme_ref": "lx_data_interpretation_05",
+        "surface_form": "belastbar",
+        "display_form": "belastbar",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_data_interpretation_06",
+      "data": {
+        "slug": "de_c1_data_interpretation_uebertragbarkeit",
+        "lesson_key": "c1-de-data-interpretation-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Übertragbarkeit"
+        },
+        "translations": {
+          "fa": "قابلیت تعمیم"
+        },
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_data_interpretation_06",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "lemma": "Übertragbarkeit",
+        "display_lemma": "Übertragbarkeit",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_data_interpretation_uebertragbarkeit"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_data_interpretation_06",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "lexeme_ref": "lx_data_interpretation_06",
+        "surface_form": "Übertragbarkeit",
+        "display_form": "Übertragbarkeit",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_data_interpretation_01",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "text": {
+          "de": "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt."
+        },
+        "translations": {
+          "fa": "اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد."
+        },
+        "intent": "interpret_effect_size",
+        "concept_refs": [
+          "de_c1_data_interpretation_effektstaerke"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_data_interpretation_02",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "text": {
+          "de": "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab."
+        },
+        "translations": {
+          "fa": "نمونه فقط بخشی از گروه هدف ما را نمایندگی می‌کند."
+        },
+        "intent": "qualify_sample",
+        "concept_refs": [
+          "de_c1_data_interpretation_stichprobe"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_data_interpretation_03",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "text": {
+          "de": "Der beobachtete Zusammenhang belegt noch keine Ursache."
+        },
+        "translations": {
+          "fa": "رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند."
+        },
+        "intent": "separate_correlation_causation",
+        "concept_refs": [
+          "de_c1_data_interpretation_zusammenhang"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_data_interpretation_04",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "text": {
+          "de": "Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen."
+        },
+        "translations": {
+          "fa": "اگر بیشتر کاربران بسیار فعال شرکت کنند، ممکن است سوگیری سیستماتیک ایجاد شود."
+        },
+        "intent": "identify_bias",
+        "concept_refs": [
+          "de_c1_data_interpretation_verzerrung"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_data_interpretation_05",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "text": {
+          "de": "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext."
+        },
+        "translations": {
+          "fa": "برای یک توصیه قابل اتکا علاوه بر میانگین به پراکندگی و زمینه هم نیاز داریم."
+        },
+        "intent": "assess_robustness",
+        "concept_refs": [
+          "de_c1_data_interpretation_belastbar"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_data_interpretation_06",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "text": {
+          "de": "Die Übertragbarkeit auf andere Regionen ist plausibel, aber noch nicht empirisch bestätigt."
+        },
+        "translations": {
+          "fa": "تعمیم به مناطق دیگر محتمل است اما هنوز به‌صورت تجربی تأیید نشده."
+        },
+        "intent": "limit_generalization",
+        "concept_refs": [
+          "de_c1_data_interpretation_uebertragbarkeit"
+        ],
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_data_interpretation_01",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "slug": "c1-de-data-interpretation-g1",
+        "title": "lässt darauf schließen, dass ... / belegt nicht, dass ...",
+        "rule_summary": "Use graded inference language to distinguish evidence-supported indications from proof.",
+        "explanation": {
+          "fa": "با زبان استنباط درجه‌بندی‌شده نشانه را از اثبات جدا می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Der Trend lässt darauf schließen, dass die Maßnahme wirkt, belegt aber keinen kausalen Effekt.",
+            "fa": "روند نشان می‌دهد اقدام احتمالاً اثر دارد، اما اثر علّی را ثابت نمی‌کند."
+          },
+          {
+            "de": "Die Daten belegen nicht, dass der Unterschied in allen Gruppen gleich groß ist.",
+            "fa": "داده‌ها ثابت نمی‌کنند که تفاوت در همه گروه‌ها یکسان است."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_data_interpretation_02",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "slug": "c1-de-data-interpretation-g2",
+        "title": "unter Berücksichtigung von ...",
+        "rule_summary": "Use prepositional nominal structures to qualify an interpretation with methodological constraints.",
+        "explanation": {
+          "fa": "با ساختار اسمی محدودیت روش‌شناختی را وارد تفسیر می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Unter Berücksichtigung der kleinen Stichprobe ist das Ergebnis vorsichtig zu interpretieren.",
+            "fa": "با توجه به نمونه کوچک، نتیجه باید محتاطانه تفسیر شود."
+          },
+          {
+            "de": "Unter Berücksichtigung möglicher Verzerrungen bleibt der Zusammenhang dennoch relevant.",
+            "fa": "با لحاظ سوگیری‌های احتمالی، رابطه همچنان مهم است."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_data_interpretation_03",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "slug": "c1-de-data-interpretation-g3",
+        "title": "dürfte / dürfte eher / ist nicht ohne Weiteres ...",
+        "rule_summary": "Use modal hedging to express sophisticated uncertainty without becoming vague.",
+        "explanation": {
+          "fa": "با افعال وجهی عدم‌قطعیت دقیق را بیان می‌کنیم بدون مبهم شدن."
+        },
+        "examples": [
+          {
+            "de": "Der Effekt dürfte in vergleichbaren Zielgruppen ähnlich ausfallen.",
+            "fa": "احتمالاً اثر در گروه‌های هدف مشابه نزدیک خواهد بود."
+          },
+          {
+            "de": "Das Ergebnis ist nicht ohne Weiteres auf andere Märkte übertragbar.",
+            "fa": "نتیجه را نمی‌توان به‌سادگی به بازارهای دیگر تعمیم داد."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_data_interpretation_01",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "title": "Korrelation nicht überdehnen",
+        "setting": "Daten – Ursache",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Anna",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Nutzer mit mehr Tutorials bleiben länger aktiv. Dann verursachen Tutorials also die höhere Bindung.",
+            "translation_fa": "کاربرانی که آموزش بیشتری می‌بینند فعال‌تر می‌مانند. پس آموزش باعث ماندگاری بیشتر است."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Das ist möglich, aber die Daten zeigen zunächst nur einen Zusammenhang.",
+            "translation_fa": "ممکن است، اما داده فعلاً فقط یک رابطه نشان می‌دهد."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Aktive Nutzer könnten von sich aus mehr Tutorials öffnen.",
+            "translation_fa": "کاربران فعال شاید خودشان بیشتر آموزش باز کنند."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Genau. Für eine kausale Aussage brauchen wir ein Design, das solche Alternativerklärungen besser kontrolliert.",
+            "translation_fa": "دقیقاً. برای ادعای علّی به طراحی‌ای نیاز داریم که توضیح‌های جایگزین را بهتر کنترل کند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_data_interpretation_02",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "title": "Stichprobe einordnen",
+        "setting": "Daten – Repräsentativität",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Mia",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Die Umfrage ist sehr positiv, aber nur acht Prozent der Eingeladenen haben geantwortet.",
+            "translation_fa": "نظرسنجی خیلی مثبت است، اما فقط هشت درصد دعوت‌شده‌ها پاسخ داده‌اند."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Dann sollten wir prüfen, wer geantwortet hat und ob dadurch eine Verzerrung entsteht.",
+            "translation_fa": "پس باید بررسی کنیم چه کسانی پاسخ داده‌اند و آیا سوگیری ایجاد شده است."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Wenn vor allem zufriedene Stammkunden teilnehmen, wäre die Übertragbarkeit begrenzt.",
+            "translation_fa": "اگر بیشتر مشتریان وفادار راضی شرکت کرده باشند، قابلیت تعمیم محدود می‌شود."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Richtig. Die Quote allein macht das Ergebnis nicht wertlos, aber sie verändert seine Reichweite.",
+            "translation_fa": "درست است. نرخ پاسخ به‌تنهایی نتیجه را بی‌ارزش نمی‌کند، اما دامنه اعتبارش را تغییر می‌دهد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_data_interpretation_03",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "title": "Entscheidung trotz Unsicherheit",
+        "setting": "Daten – Empfehlung",
+        "cefr": "C1",
+        "topic": "simple-messages",
+        "characters": [
+          "Nina",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Die Daten sind nicht perfekt. Sollen wir deshalb gar keine Empfehlung geben?",
+            "translation_fa": "داده‌ها کامل نیستند. پس اصلاً توصیه ندهیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Doch, aber wir sollten Stärke und Grenze der Evidenz getrennt benennen.",
+            "translation_fa": "چرا، اما باید قوت و محدودیت شواهد را جداگانه بگوییم."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Also: Der Effekt ist konsistent genug für einen Pilot, aber nicht für einen flächendeckenden Rollout.",
+            "translation_fa": "یعنی اثر برای یک پایلوت به‌اندازه کافی پایدار است، اما نه برای اجرای کامل."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Genau. Eine belastbare Empfehlung kann auch konditional sein.",
+            "translation_fa": "دقیقاً. یک توصیه قابل اتکا می‌تواند مشروط باشد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_01_mc",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد.»؟"
+        },
+        "options": [
+          "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt.",
+          "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab.",
+          "Der beobachtete Zusammenhang belegt noch keine Ursache.",
+          "Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen."
+        ],
+        "answer": {
+          "value": "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt. — اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد.",
+          "model_answer": "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_01_listen",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt."
+        },
+        "options": [
+          "اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد.",
+          "نمونه فقط بخشی از گروه هدف ما را نمایندگی می‌کند.",
+          "رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند.",
+          "اگر بیشتر کاربران بسیار فعال شرکت کنند، ممکن است سوگیری سیستماتیک ایجاد شود."
+        ],
+        "answer": {
+          "value": "اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt. — اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد.",
+          "model_answer": "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt.",
+          "transcript_de": "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_01_speak",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab."
+        },
+        "answer": {
+          "expected_text": "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Stichprobe bildet unsere Zielgruppe nur teilweise ab. — نمونه فقط بخشی از گروه هدف ما را نمایندگی می‌کند.",
+          "model_answer": "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_01_trans",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "نمونه فقط بخشی از گروه هدف ما را نمایندگی می‌کند.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Stichprobe bildet unsere Zielgruppe nur teilweise ab. — نمونه فقط بخشی از گروه هدف ما را نمایندگی می‌کند.",
+          "model_answer": "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_01_build",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Effektstärke",
+            "ist",
+            "praktisch",
+            "relevant,",
+            "auch",
+            "wenn",
+            "der",
+            "Unterschied",
+            "auf",
+            "den",
+            "ersten",
+            "Blick",
+            "klein",
+            "wirkt.",
+            "Die"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Die",
+            "Effektstärke",
+            "ist",
+            "praktisch",
+            "relevant,",
+            "auch",
+            "wenn",
+            "der",
+            "Unterschied",
+            "auf",
+            "den",
+            "ersten",
+            "Blick",
+            "klein",
+            "wirkt."
+          ],
+          "value": "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt. — اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد.",
+          "model_answer": "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_02_mc",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند.»؟"
+        },
+        "options": [
+          "Der beobachtete Zusammenhang belegt noch keine Ursache.",
+          "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt.",
+          "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab.",
+          "Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen."
+        ],
+        "answer": {
+          "value": "Der beobachtete Zusammenhang belegt noch keine Ursache."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der beobachtete Zusammenhang belegt noch keine Ursache. — رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند.",
+          "model_answer": "Der beobachtete Zusammenhang belegt noch keine Ursache."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_02_listen",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Der beobachtete Zusammenhang belegt noch keine Ursache."
+        },
+        "options": [
+          "رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند.",
+          "اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد.",
+          "نمونه فقط بخشی از گروه هدف ما را نمایندگی می‌کند.",
+          "اگر بیشتر کاربران بسیار فعال شرکت کنند، ممکن است سوگیری سیستماتیک ایجاد شود."
+        ],
+        "answer": {
+          "value": "رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der beobachtete Zusammenhang belegt noch keine Ursache. — رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند.",
+          "model_answer": "Der beobachtete Zusammenhang belegt noch keine Ursache.",
+          "transcript_de": "Der beobachtete Zusammenhang belegt noch keine Ursache."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_02_speak",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen."
+        },
+        "answer": {
+          "expected_text": "Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen. — اگر بیشتر کاربران بسیار فعال شرکت کنند، ممکن است سوگیری سیستماتیک ایجاد شود.",
+          "model_answer": "Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_02_trans",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "اگر بیشتر کاربران بسیار فعال شرکت کنند، ممکن است سوگیری سیستماتیک ایجاد شود.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen. — اگر بیشتر کاربران بسیار فعال شرکت کنند، ممکن است سوگیری سیستماتیک ایجاد شود.",
+          "model_answer": "Eine systematische Verzerrung kann entstehen, wenn vor allem besonders aktive Nutzer teilnehmen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_02_build",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "beobachtete",
+            "Zusammenhang",
+            "belegt",
+            "noch",
+            "keine",
+            "Ursache.",
+            "Der"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Der",
+            "beobachtete",
+            "Zusammenhang",
+            "belegt",
+            "noch",
+            "keine",
+            "Ursache."
+          ],
+          "value": "Der beobachtete Zusammenhang belegt noch keine Ursache."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der beobachtete Zusammenhang belegt noch keine Ursache. — رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند.",
+          "model_answer": "Der beobachtete Zusammenhang belegt noch keine Ursache."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_03_mc",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «برای یک توصیه قابل اتکا علاوه بر میانگین به پراکندگی و زمینه هم نیاز داریم.»؟"
+        },
+        "options": [
+          "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext.",
+          "Die Effektstärke ist praktisch relevant, auch wenn der Unterschied auf den ersten Blick klein wirkt.",
+          "Die Stichprobe bildet unsere Zielgruppe nur teilweise ab.",
+          "Der beobachtete Zusammenhang belegt noch keine Ursache."
+        ],
+        "answer": {
+          "value": "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext. — برای یک توصیه قابل اتکا علاوه بر میانگین به پراکندگی و زمینه هم نیاز داریم.",
+          "model_answer": "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_03_listen",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext."
+        },
+        "options": [
+          "برای یک توصیه قابل اتکا علاوه بر میانگین به پراکندگی و زمینه هم نیاز داریم.",
+          "اندازه اثر از نظر عملی مهم است حتی اگر تفاوت در نگاه اول کوچک به نظر برسد.",
+          "نمونه فقط بخشی از گروه هدف ما را نمایندگی می‌کند.",
+          "رابطه مشاهده‌شده هنوز علت را ثابت نمی‌کند."
+        ],
+        "answer": {
+          "value": "برای یک توصیه قابل اتکا علاوه بر میانگین به پراکندگی و زمینه هم نیاز داریم."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext. — برای یک توصیه قابل اتکا علاوه بر میانگین به پراکندگی و زمینه هم نیاز داریم.",
+          "model_answer": "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext.",
+          "transcript_de": "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_03_speak",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Die Übertragbarkeit auf andere Regionen ist plausibel, aber noch nicht empirisch bestätigt."
+        },
+        "answer": {
+          "expected_text": "Die Übertragbarkeit auf andere Regionen ist plausibel, aber noch nicht empirisch bestätigt."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Übertragbarkeit auf andere Regionen ist plausibel, aber noch nicht empirisch bestätigt. — تعمیم به مناطق دیگر محتمل است اما هنوز به‌صورت تجربی تأیید نشده.",
+          "model_answer": "Die Übertragbarkeit auf andere Regionen ist plausibel, aber noch nicht empirisch bestätigt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_03_trans",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "تعمیم به مناطق دیگر محتمل است اما هنوز به‌صورت تجربی تأیید نشده.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Die Übertragbarkeit auf andere Regionen ist plausibel, aber noch nicht empirisch bestätigt."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Übertragbarkeit auf andere Regionen ist plausibel, aber noch nicht empirisch bestätigt. — تعمیم به مناطق دیگر محتمل است اما هنوز به‌صورت تجربی تأیید نشده.",
+          "model_answer": "Die Übertragbarkeit auf andere Regionen ist plausibel, aber noch nicht empirisch bestätigt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_data_interpretation_03_build",
+      "data": {
+        "lesson_key": "c1-de-data-interpretation-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "eine",
+            "belastbare",
+            "Empfehlung",
+            "brauchen",
+            "wir",
+            "neben",
+            "dem",
+            "Mittelwert",
+            "auch",
+            "Streuung",
+            "und",
+            "Kontext.",
+            "Für"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Für",
+            "eine",
+            "belastbare",
+            "Empfehlung",
+            "brauchen",
+            "wir",
+            "neben",
+            "dem",
+            "Mittelwert",
+            "auch",
+            "Streuung",
+            "und",
+            "Kontext."
+          ],
+          "value": "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext. — برای یک توصیه قابل اتکا علاوه بر میانگین به پراکندگی و زمینه هم نیاز داریم.",
+          "model_answer": "Für eine belastbare Empfehlung brauchen wir neben dem Mittelwert auch Streuung und Kontext."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

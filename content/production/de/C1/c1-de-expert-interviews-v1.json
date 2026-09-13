@@ -1,0 +1,1151 @@
+{
+  "batch_id": "de-de-c1-expert-interviews-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "C1",
+  "curriculum_unit": "c1-de-expert-interviews",
+  "generator": "gpt-5.6-sol:german-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_expert_interviews_01",
+      "data": {
+        "slug": "de_c1_expert_interviews_leitfrage",
+        "lesson_key": "c1-de-expert-interviews-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Leitfrage"
+        },
+        "translations": {
+          "fa": "سؤال محوری"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_expert_interviews_01",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "lemma": "Leitfrage",
+        "display_lemma": "Leitfrage",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_expert_interviews_leitfrage"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_expert_interviews_01",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "lexeme_ref": "lx_expert_interviews_01",
+        "surface_form": "Leitfrage",
+        "display_form": "Leitfrage",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_expert_interviews_02",
+      "data": {
+        "slug": "de_c1_expert_interviews_nachfrage",
+        "lesson_key": "c1-de-expert-interviews-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Nachfrage"
+        },
+        "translations": {
+          "fa": "پرسش پیرو"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_expert_interviews_02",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "lemma": "Nachfrage",
+        "display_lemma": "Nachfrage",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_expert_interviews_nachfrage"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_expert_interviews_02",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "lexeme_ref": "lx_expert_interviews_02",
+        "surface_form": "Nachfrage",
+        "display_form": "Nachfrage",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_expert_interviews_03",
+      "data": {
+        "slug": "de_c1_expert_interviews_erfahrungswissen",
+        "lesson_key": "c1-de-expert-interviews-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Erfahrungswissen"
+        },
+        "translations": {
+          "fa": "دانش تجربی"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_expert_interviews_03",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "lemma": "Erfahrungswissen",
+        "display_lemma": "Erfahrungswissen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_expert_interviews_erfahrungswissen"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "neuter",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_expert_interviews_03",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "lexeme_ref": "lx_expert_interviews_03",
+        "surface_form": "Erfahrungswissen",
+        "display_form": "Erfahrungswissen",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_expert_interviews_04",
+      "data": {
+        "slug": "de_c1_expert_interviews_ausnahmefall",
+        "lesson_key": "c1-de-expert-interviews-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Ausnahmefall"
+        },
+        "translations": {
+          "fa": "مورد استثنا"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_expert_interviews_04",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "lemma": "Ausnahmefall",
+        "display_lemma": "Ausnahmefall",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_expert_interviews_ausnahmefall"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_expert_interviews_04",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "lexeme_ref": "lx_expert_interviews_04",
+        "surface_form": "Ausnahmefall",
+        "display_form": "Ausnahmefall",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_expert_interviews_05",
+      "data": {
+        "slug": "de_c1_expert_interviews_vorannahme",
+        "lesson_key": "c1-de-expert-interviews-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Vorannahme"
+        },
+        "translations": {
+          "fa": "پیش‌فرض"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_expert_interviews_05",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "lemma": "Vorannahme",
+        "display_lemma": "Vorannahme",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_expert_interviews_vorannahme"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_expert_interviews_05",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "lexeme_ref": "lx_expert_interviews_05",
+        "surface_form": "Vorannahme",
+        "display_form": "Vorannahme",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_expert_interviews_06",
+      "data": {
+        "slug": "de_c1_expert_interviews_rueckspiegeln",
+        "lesson_key": "c1-de-expert-interviews-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "rückspiegeln"
+        },
+        "translations": {
+          "fa": "بازتاب دادن برای تأیید فهم"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_expert_interviews_06",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "lemma": "rückspiegeln",
+        "display_lemma": "rückspiegeln",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_c1_expert_interviews_rueckspiegeln"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_expert_interviews_06",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "lexeme_ref": "lx_expert_interviews_06",
+        "surface_form": "rückspiegeln",
+        "display_form": "rückspiegeln",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_expert_interviews_01",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "text": {
+          "de": "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben."
+        },
+        "translations": {
+          "fa": "سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند."
+        },
+        "intent": "ask_open_question",
+        "concept_refs": [
+          "de_c1_expert_interviews_leitfrage"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_expert_interviews_02",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "text": {
+          "de": "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten."
+        },
+        "translations": {
+          "fa": "پرسش پیرو خوب یک جزئیات مشخص را می‌گیرد، نه اینکه فقط اطلاعات بیشتر بخواهد."
+        },
+        "intent": "ask_followup",
+        "concept_refs": [
+          "de_c1_expert_interviews_nachfrage"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_expert_interviews_03",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "text": {
+          "de": "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen."
+        },
+        "translations": {
+          "fa": "دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند."
+        },
+        "intent": "surface_tacit_knowledge",
+        "concept_refs": [
+          "de_c1_expert_interviews_erfahrungswissen"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_expert_interviews_04",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "text": {
+          "de": "Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht."
+        },
+        "translations": {
+          "fa": "مورد استثنا مهم است چون مرزهای قاعده عمومی را نشان می‌دهد."
+        },
+        "intent": "probe_exception",
+        "concept_refs": [
+          "de_c1_expert_interviews_ausnahmefall"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_expert_interviews_05",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "text": {
+          "de": "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert."
+        },
+        "translations": {
+          "fa": "می‌خواهم پیش‌فرضم را روشن بگویم تا ناآگاهانه جهت گفت‌وگو را تعیین نکند."
+        },
+        "intent": "surface_assumption",
+        "concept_refs": [
+          "de_c1_expert_interviews_vorannahme"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_expert_interviews_06",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "text": {
+          "de": "Zum Abschluss spiegele ich mein Verständnis zurück und lasse die wichtigsten Unterschiede korrigieren."
+        },
+        "translations": {
+          "fa": "در پایان فهم خودم را بازتاب می‌دهم تا تفاوت‌های مهم اصلاح شوند."
+        },
+        "intent": "reflect_understanding",
+        "concept_refs": [
+          "de_c1_expert_interviews_rueckspiegeln"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_expert_interviews_01",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "slug": "c1-de-expert-interviews-g1",
+        "title": "wie gehen Sie vor, wenn ...?",
+        "rule_summary": "Use process-oriented open questions to elicit expert reasoning rather than short factual answers.",
+        "explanation": {
+          "fa": "با سؤال فرایندی باز، استدلال متخصص را بیرون می‌کشیم نه فقط پاسخ کوتاه."
+        },
+        "examples": [
+          {
+            "de": "Wie gehen Sie vor, wenn zwei Kriterien zu unterschiedlichen Ergebnissen führen?",
+            "fa": "وقتی دو معیار به نتایج متفاوت می‌رسند چطور عمل می‌کنید؟"
+          },
+          {
+            "de": "Woran erkennen Sie, dass ein Standardfall zum Ausnahmefall wird?",
+            "fa": "از کجا می‌فهمید یک مورد عادی به استثنا تبدیل شده است؟"
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_expert_interviews_02",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "slug": "c1-de-expert-interviews-g2",
+        "title": "was genau meinen Sie mit ...? / woran zeigt sich ...?",
+        "rule_summary": "Use precision questions to unpack compressed expert language and operationalize abstract concepts.",
+        "explanation": {
+          "fa": "با سؤال دقیق اصطلاح فشرده متخصص را باز می‌کنیم و مفهوم انتزاعی را عملیاتی می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Was genau meinen Sie mit einer stabilen Lösung?",
+            "fa": "دقیقاً از راه‌حل پایدار چه منظوری دارید؟"
+          },
+          {
+            "de": "Woran zeigt sich in der Praxis, dass die Grenze erreicht ist?",
+            "fa": "در عمل از کجا معلوم می‌شود حد رسیده است؟"
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_expert_interviews_03",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "slug": "c1-de-expert-interviews-g3",
+        "title": "wenn ich Sie richtig verstehe, dann ...",
+        "rule_summary": "Use reflective paraphrase to test understanding while leaving space for correction.",
+        "explanation": {
+          "fa": "با بازگویی تأملی فهم خود را آزمایش می‌کنیم و امکان اصلاح می‌دهیم."
+        },
+        "examples": [
+          {
+            "de": "Wenn ich Sie richtig verstehe, ist nicht die Menge der Daten entscheidend, sondern ihre Herkunft.",
+            "fa": "اگر درست فهمیده باشم، حجم داده تعیین‌کننده نیست بلکه منبع آن مهم است."
+          },
+          {
+            "de": "Wenn ich Sie richtig verstehe, gilt die Regel nur unter zwei zusätzlichen Bedingungen.",
+            "fa": "اگر درست فهمیده باشم، قاعده فقط با دو شرط اضافی معتبر است."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_expert_interviews_01",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "title": "Vom allgemeinen Prinzip zum Erfahrungswissen",
+        "setting": "Interview – Praxis",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Anna",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Der Experte sagt immer wieder: Das hängt vom Kontext ab.",
+            "translation_fa": "متخصص مدام می‌گوید بستگی به زمینه دارد."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Dann frag nicht nach einer allgemeineren Regel, sondern nach zwei Fällen mit unterschiedlicher Entscheidung.",
+            "translation_fa": "پس دنبال قاعده کلی‌تر نباش؛ دو مورد با تصمیم متفاوت بخواه."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "So wird sichtbar, welche Kontextmerkmale tatsächlich relevant sind.",
+            "translation_fa": "این‌طور معلوم می‌شود کدام ویژگی‌های زمینه واقعاً مهم‌اند."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Genau. Erfahrungswissen steckt oft in den Unterschieden zwischen Fällen.",
+            "translation_fa": "دقیقاً. دانش تجربی اغلب در تفاوت بین موارد پنهان است."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_expert_interviews_02",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "title": "Vorannahme kontrollieren",
+        "setting": "Interview – Neutralität",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Mia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Ich vermute, dass die alte Methode zu langsam ist. Wie frage ich, ohne die Antwort vorzugeben?",
+            "translation_fa": "فکر می‌کنم روش قدیمی کند است. چطور بپرسم بدون اینکه پاسخ را القا کنم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Frag nach Situationen, in denen die Methode gut oder schlecht funktioniert, und nach den jeweiligen Kriterien.",
+            "translation_fa": "درباره موقعیت‌هایی بپرس که روش خوب یا بد کار می‌کند و معیار هرکدام را بپرس."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Dann prüfe ich meine Vorannahme, statt sie als Ausgangspunkt festzuschreiben.",
+            "translation_fa": "پس پیش‌فرضم را آزمایش می‌کنم به جای اینکه آن را مبنا قرار دهم."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Genau. Ein Interview soll Wissen erschließen, nicht die eigene These bestätigen.",
+            "translation_fa": "دقیقاً. مصاحبه باید دانش را کشف کند، نه فرض خودمان را تأیید کند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_expert_interviews_03",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "title": "Verständnis zurückspiegeln",
+        "setting": "Interview – Abschluss",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Nina",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Nach einer Stunde habe ich viele Notizen, aber ich bin unsicher, ob ich das Entscheidungsprinzip richtig verstanden habe.",
+            "translation_fa": "بعد از یک ساعت یادداشت زیاد دارم، اما مطمئن نیستم اصل تصمیم را درست فهمیده باشم."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Dann formuliere es in deinen Worten und bitte um Korrektur.",
+            "translation_fa": "پس با کلمات خودت بیانش کن و درخواست اصلاح کن."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Wenn ich Sie richtig verstehe, entscheidet zuerst die Reversibilität und erst danach der erwartete Nutzen.",
+            "translation_fa": "اگر درست فهمیده باشم، اول قابلیت بازگشت تصمیم مهم است و بعد منفعت مورد انتظار."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Genau so. Rückspiegeln ist der letzte Qualitätstest des Interviews.",
+            "translation_fa": "دقیقاً. بازتاب دادن آخرین آزمون کیفیت مصاحبه است."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_01_mc",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند.»؟"
+        },
+        "options": [
+          "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben.",
+          "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten.",
+          "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen.",
+          "Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht."
+        ],
+        "answer": {
+          "value": "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben. — سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند.",
+          "model_answer": "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_01_listen",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben."
+        },
+        "options": [
+          "سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند.",
+          "پرسش پیرو خوب یک جزئیات مشخص را می‌گیرد، نه اینکه فقط اطلاعات بیشتر بخواهد.",
+          "دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند.",
+          "مورد استثنا مهم است چون مرزهای قاعده عمومی را نشان می‌دهد."
+        ],
+        "answer": {
+          "value": "سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben. — سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند.",
+          "model_answer": "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben.",
+          "transcript_de": "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_01_speak",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten."
+        },
+        "answer": {
+          "expected_text": "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten. — پرسش پیرو خوب یک جزئیات مشخص را می‌گیرد، نه اینکه فقط اطلاعات بیشتر بخواهد.",
+          "model_answer": "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_01_trans",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "پرسش پیرو خوب یک جزئیات مشخص را می‌گیرد، نه اینکه فقط اطلاعات بیشتر بخواهد.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten. — پرسش پیرو خوب یک جزئیات مشخص را می‌گیرد، نه اینکه فقط اطلاعات بیشتر بخواهد.",
+          "model_answer": "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_01_build",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Leitfrage",
+            "sollte",
+            "das",
+            "Themenfeld",
+            "öffnen,",
+            "ohne",
+            "die",
+            "erwartete",
+            "Antwort",
+            "schon",
+            "vorzugeben.",
+            "Die"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Die",
+            "Leitfrage",
+            "sollte",
+            "das",
+            "Themenfeld",
+            "öffnen,",
+            "ohne",
+            "die",
+            "erwartete",
+            "Antwort",
+            "schon",
+            "vorzugeben."
+          ],
+          "value": "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben. — سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند.",
+          "model_answer": "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_02_mc",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند.»؟"
+        },
+        "options": [
+          "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen.",
+          "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben.",
+          "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten.",
+          "Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht."
+        ],
+        "answer": {
+          "value": "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen. — دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند.",
+          "model_answer": "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_02_listen",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen."
+        },
+        "options": [
+          "دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند.",
+          "سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند.",
+          "پرسش پیرو خوب یک جزئیات مشخص را می‌گیرد، نه اینکه فقط اطلاعات بیشتر بخواهد.",
+          "مورد استثنا مهم است چون مرزهای قاعده عمومی را نشان می‌دهد."
+        ],
+        "answer": {
+          "value": "دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen. — دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند.",
+          "model_answer": "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen.",
+          "transcript_de": "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_02_speak",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht."
+        },
+        "answer": {
+          "expected_text": "Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht. — مورد استثنا مهم است چون مرزهای قاعده عمومی را نشان می‌دهد.",
+          "model_answer": "Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_02_trans",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "مورد استثنا مهم است چون مرزهای قاعده عمومی را نشان می‌دهد.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht. — مورد استثنا مهم است چون مرزهای قاعده عمومی را نشان می‌دهد.",
+          "model_answer": "Der Ausnahmefall ist besonders interessant, weil er die Grenzen einer allgemeinen Regel sichtbar macht."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_02_build",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "zeigt",
+            "sich",
+            "oft",
+            "erst,",
+            "wenn",
+            "Experten",
+            "konkrete",
+            "Fälle",
+            "vergleichen.",
+            "Erfahrungswissen"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Erfahrungswissen",
+            "zeigt",
+            "sich",
+            "oft",
+            "erst,",
+            "wenn",
+            "Experten",
+            "konkrete",
+            "Fälle",
+            "vergleichen."
+          ],
+          "value": "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen. — دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند.",
+          "model_answer": "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_03_mc",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «می‌خواهم پیش‌فرضم را روشن بگویم تا ناآگاهانه جهت گفت‌وگو را تعیین نکند.»؟"
+        },
+        "options": [
+          "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert.",
+          "Die Leitfrage sollte das Themenfeld öffnen, ohne die erwartete Antwort schon vorzugeben.",
+          "Eine gute Nachfrage greift ein konkretes Detail auf, statt nur um mehr Informationen zu bitten.",
+          "Erfahrungswissen zeigt sich oft erst, wenn Experten konkrete Fälle vergleichen."
+        ],
+        "answer": {
+          "value": "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert. — می‌خواهم پیش‌فرضم را روشن بگویم تا ناآگاهانه جهت گفت‌وگو را تعیین نکند.",
+          "model_answer": "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_03_listen",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert."
+        },
+        "options": [
+          "می‌خواهم پیش‌فرضم را روشن بگویم تا ناآگاهانه جهت گفت‌وگو را تعیین نکند.",
+          "سؤال محوری باید موضوع را باز کند بدون اینکه پاسخ مورد انتظار را از قبل القا کند.",
+          "پرسش پیرو خوب یک جزئیات مشخص را می‌گیرد، نه اینکه فقط اطلاعات بیشتر بخواهد.",
+          "دانش تجربی معمولاً وقتی آشکار می‌شود که متخصصان موارد واقعی را مقایسه کنند."
+        ],
+        "answer": {
+          "value": "می‌خواهم پیش‌فرضم را روشن بگویم تا ناآگاهانه جهت گفت‌وگو را تعیین نکند."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert. — می‌خواهم پیش‌فرضم را روشن بگویم تا ناآگاهانه جهت گفت‌وگو را تعیین نکند.",
+          "model_answer": "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert.",
+          "transcript_de": "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_03_speak",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Zum Abschluss spiegele ich mein Verständnis zurück und lasse die wichtigsten Unterschiede korrigieren."
+        },
+        "answer": {
+          "expected_text": "Zum Abschluss spiegele ich mein Verständnis zurück und lasse die wichtigsten Unterschiede korrigieren."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Zum Abschluss spiegele ich mein Verständnis zurück und lasse die wichtigsten Unterschiede korrigieren. — در پایان فهم خودم را بازتاب می‌دهم تا تفاوت‌های مهم اصلاح شوند.",
+          "model_answer": "Zum Abschluss spiegele ich mein Verständnis zurück und lasse die wichtigsten Unterschiede korrigieren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_03_trans",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "در پایان فهم خودم را بازتاب می‌دهم تا تفاوت‌های مهم اصلاح شوند.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Zum Abschluss spiegele ich mein Verständnis zurück und lasse die wichtigsten Unterschiede korrigieren."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Zum Abschluss spiegele ich mein Verständnis zurück und lasse die wichtigsten Unterschiede korrigieren. — در پایان فهم خودم را بازتاب می‌دهم تا تفاوت‌های مهم اصلاح شوند.",
+          "model_answer": "Zum Abschluss spiegele ich mein Verständnis zurück und lasse die wichtigsten Unterschiede korrigieren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_expert_interviews_03_build",
+      "data": {
+        "lesson_key": "c1-de-expert-interviews-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "möchte",
+            "meine",
+            "Vorannahme",
+            "kurz",
+            "offenlegen,",
+            "damit",
+            "sie",
+            "das",
+            "Gespräch",
+            "nicht",
+            "unbemerkt",
+            "steuert.",
+            "Ich"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ich",
+            "möchte",
+            "meine",
+            "Vorannahme",
+            "kurz",
+            "offenlegen,",
+            "damit",
+            "sie",
+            "das",
+            "Gespräch",
+            "nicht",
+            "unbemerkt",
+            "steuert."
+          ],
+          "value": "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert. — می‌خواهم پیش‌فرضم را روشن بگویم تا ناآگاهانه جهت گفت‌وگو را تعیین نکند.",
+          "model_answer": "Ich möchte meine Vorannahme kurz offenlegen, damit sie das Gespräch nicht unbemerkt steuert."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
