@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "b42c098bdadaf8f160cf5da5600023c74a45c09c6de4f0c21ca310be8ebc7d53",
+  "voice_id": "HLL5Lh99l3pwG8HZW1N5",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "f57be9ef7efeb6d58421b0e0804b4d0e1fd60060c5be373c94e4b5cbb1ec1f18",
+  "voice_key": "character:leon:male_bright",
+  "voice_name": "Pascal R – Warm Medical Customer Care Agent",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "98455fe9b496f9ca94a30b8caeef9ad28aa9b3acdb97ab8a39cb7dde5072a9b6",
+  "duration_ms": 2168,
+  "generated_at": "2026-09-13T05:54:34.929982+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5807193a-c379-5a3a-961a-0003c8c7e811",
+      "entity_key": "d_problems_solutions_03:2"
+    }
+  ]
+}

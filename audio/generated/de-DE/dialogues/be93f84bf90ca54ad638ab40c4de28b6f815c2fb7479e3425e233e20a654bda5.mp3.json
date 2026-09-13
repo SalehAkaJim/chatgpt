@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "658422310e34c62cb7537111af8e80595f1ce986645e4f66afe6e0af528cb171",
+  "voice_id": "MTTjXkEpZepLTqO0xH0f",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "be93f84bf90ca54ad638ab40c4de28b6f815c2fb7479e3425e233e20a654bda5",
+  "voice_key": "character:sofia:female_professional",
+  "voice_name": "Marlena Lark – Warm German Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e2f42bf04d74c7fc2ddd4770f8d60b04ef1880791764652b36e88d647e7b4f74",
+  "duration_ms": 2324,
+  "generated_at": "2026-09-13T05:54:21.631561+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c5dcd879-04ce-5706-9d0b-487417b9d246",
+      "entity_key": "d_opinions_reasons_01:1"
+    }
+  ]
+}
