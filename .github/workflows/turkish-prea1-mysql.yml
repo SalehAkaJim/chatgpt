@@ -68,27 +68,33 @@ jobs:
           set -euo pipefail
           units=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';")
           lessons=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM lessons l JOIN courses c ON c.id=l.course_id AND c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.id=l.cefr_level_id AND lvl.code='Pre-A1';")
+          concepts=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(DISTINCT li.concept_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr' AND li.concept_id IS NOT NULL;")
+          lexemes=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(DISTINCT li.lexeme_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr' AND li.lexeme_id IS NOT NULL;")
+          utterances=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(DISTINCT li.utterance_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr' AND li.utterance_id IS NOT NULL;")
+          dialogues=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr' AND li.dialogue_id IS NOT NULL;")
+          exercises=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr';")
+          echo "units=$units lessons=$lessons concepts=$concepts lexemes=$lexemes utterances=$utterances dialogues=$dialogues exercises=$exercises"
           test "$units" = "10"
           test "$lessons" = "20"
-          mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
-            SELECT c.slug, lvl.code, COUNT(DISTINCT le.id) AS lessons,
-                   COUNT(DISTINCT co.id) AS concepts,
-                   COUNT(DISTINCT u.id) AS utterances,
-                   COUNT(DISTINCT d.id) AS dialogues
-            FROM courses c
-            JOIN lessons le ON le.course_id=c.id
-            JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id
-            LEFT JOIN concepts co ON co.course_id=c.id
-            LEFT JOIN utterances u ON u.course_id=c.id
-            LEFT JOIN dialogues d ON d.course_id=c.id
-            WHERE c.slug='fa-tr-tr' AND lvl.code='Pre-A1'
-            GROUP BY c.slug,lvl.code;
-          "
+          test "$concepts" = "60"
+          test "$lexemes" = "55"
+          test "$utterances" = "40"
+          test "$dialogues" = "20"
+          test "$exercises" = "100"
       - name: Verify Turkish Pre-A1 idempotency
         run: |
           set -euo pipefail
-          before=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT CONCAT((SELECT COUNT(*) FROM lessons l JOIN courses c ON c.id=l.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM concepts co JOIN courses c ON c.id=co.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM utterances u JOIN courses c ON c.id=u.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM dialogues d JOIN courses c ON c.id=d.course_id WHERE c.slug='fa-tr-tr'));" )
+          snapshot() {
+            mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT CONCAT(
+              (SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr'),'|',
+              (SELECT COUNT(DISTINCT li.concept_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr' AND li.concept_id IS NOT NULL),'|',
+              (SELECT COUNT(DISTINCT li.lexeme_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr' AND li.lexeme_id IS NOT NULL),'|',
+              (SELECT COUNT(DISTINCT li.utterance_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr' AND li.utterance_id IS NOT NULL),'|',
+              (SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr' AND li.dialogue_id IS NOT NULL),'|',
+              (SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-tr-tr'));")
+          }
+          before=$(snapshot)
           python database/import/tr/pre_a1.py --allow-unreviewed
-          after=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT CONCAT((SELECT COUNT(*) FROM lessons l JOIN courses c ON c.id=l.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM concepts co JOIN courses c ON c.id=co.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM utterances u JOIN courses c ON c.id=u.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM dialogues d JOIN courses c ON c.id=d.course_id WHERE c.slug='fa-tr-tr'));" )
+          after=$(snapshot)
           echo "before=$before after=$after"
           test "$before" = "$after"
