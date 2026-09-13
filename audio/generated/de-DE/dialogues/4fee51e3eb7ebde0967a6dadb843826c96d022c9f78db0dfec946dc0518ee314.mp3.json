@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "427c3a66b2e8ee0717c4cdd2f77c8b1848cec339953d8edefa386aef374e066e",
+  "voice_id": "z1EhmmPwF0ENGYE8dBE6",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "4fee51e3eb7ebde0967a6dadb843826c96d022c9f78db0dfec946dc0518ee314",
+  "voice_key": "character:max:male_warm",
+  "voice_name": "Christian Plasa - Soft and Mild",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": ""
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a094eaa113b660597b9eea93bc25f4e3e77c73686046076b7249269df398246a",
+  "duration_ms": 5433,
+  "generated_at": "2026-09-13T11:00:40.536035+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "0f32f65f-f3d4-54b0-98a1-b3295fccd4e2",
+      "entity_key": "d_causal_reasoning_counterfactuals_01:2"
+    }
+  ]
+}

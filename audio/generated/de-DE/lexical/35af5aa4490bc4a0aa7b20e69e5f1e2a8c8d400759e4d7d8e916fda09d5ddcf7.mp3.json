@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "22f005e7a4f398c327a09d825292763ad5c86121b32bf07d7d3d7fae250b99bd",
+  "voice_id": "v3V1d2rk6528UrLKRuy8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "35af5aa4490bc4a0aa7b20e69e5f1e2a8c8d400759e4d7d8e916fda09d5ddcf7",
+  "voice_key": "de-de.lexical.native-clear",
+  "voice_name": "Susi - Effortless and Confident",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "ce0a69707f0ae276753de626ca566af788253623c0975b2bc571667e719e4f75",
+  "duration_ms": 1384,
+  "generated_at": "2026-09-13T11:01:11.539952+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "39d76ef1-f1e0-5d1d-96bb-589e36cb9f50",
+      "entity_key": "lx_causal_reasoning_counterfactuals_06"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "e9d1deb9-f3bf-5928-842e-ef863816db8a",
+      "entity_key": "wf_causal_reasoning_counterfactuals_06"
+    }
+  ]
+}
