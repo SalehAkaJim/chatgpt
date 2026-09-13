@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "13563be54728de7ab4fa319dc07ba33813142f9035000cdc3293d6d1d223ccbe",
+  "voice_id": "5HEFEBb9WCCpCdgZE77B",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a3fd8d4dc79a1cf58e6f25b37b100972877083292f6c29bdc0fa3664bace60b3",
+  "voice_key": "character:burak:male_professional",
+  "voice_name": "Eyüp Tulûhan Etker - Deep and Rich",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "istanbul",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "neutral"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "834917eedb6889cfc35ecc1942489a9bc7b9e09f300bff0d21fc27378beeac2b",
+  "duration_ms": 966,
+  "generated_at": "2026-09-13T15:54:51.073911+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "2ba52019-f455-51b4-952e-bb7d1ae90559",
+      "entity_key": "d_at_home_01:4"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4bd57401-3794-5851-85f5-509d9052bdd4",
+      "entity_key": "d_this_and_these_02:4"
+    }
+  ]
+}

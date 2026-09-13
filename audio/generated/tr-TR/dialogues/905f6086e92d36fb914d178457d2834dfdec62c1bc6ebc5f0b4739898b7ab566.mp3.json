@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "17fe3d68df8c76d5fdb330d628b7771cb2519643b49932e9e5d296b35eb63040",
+  "voice_id": "D6QpOJ61ltQ3whot6iJZ",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "905f6086e92d36fb914d178457d2834dfdec62c1bc6ebc5f0b4739898b7ab566",
+  "voice_key": "character:selin:female_bright",
+  "voice_name": "Tugba",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "1ca269e59694e1ffaebf65a42933825129e467434e96bdc90155ed92d04115f4",
+  "duration_ms": 1515,
+  "generated_at": "2026-09-13T15:54:48.647207+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "02c6f81c-b2ba-5639-a86f-69401c9ed453",
+      "entity_key": "d_my_family_02:3"
+    }
+  ]
+}
