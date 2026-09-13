@@ -60,3 +60,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German B2 curriculum, batch 4 (units 31-40).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',4)
+FROM (
+  SELECT 310 AS sort_order,'communication' AS skill_slug,'simple-messages' AS topic_slug,'b2-de-rules-requirements' AS slug,'Regeln & Anforderungen einordnen' AS title,'Regeln, Empfehlungen und verbindliche Vorgaben unterscheiden, Ausnahmen prüfen, Voraussetzungen benennen und Folgen einer Nichtbeachtung präzise erklären.' AS objective,3 AS expected_lessons,'nicht jede/jeder/jedes; prüfen, ob; Voraussetzung dafür, dass' AS grammar_focus
+  UNION ALL SELECT 320,'work-study','jobs','b2-de-structured-meetings','Besprechungen klar strukturieren','Tagesordnungen priorisieren, Themen sinnvoll ordnen, Entscheidungen knapp zusammenfassen, offene Punkte festhalten und Zuständigkeiten für nächste Schritte klären.',3,'mit + Dativ beginnen; eingebettete Fragewörter; für ... sollte klar sein'
+  UNION ALL SELECT 330,'social','polite-language','b2-de-responsibility-corrections','Fehler transparent korrigieren','Fehler sachlich anerkennen, Verantwortung übernehmen, tatsächliche Auswirkungen erklären, konkrete Korrekturen durchführen und Änderungen nachvollziehbar dokumentieren.',3,'Verantwortung für + Akkusativ übernehmen; welche Auswirkung ... hatte; damit ... nachvollziehbar bleibt'
+  UNION ALL SELECT 340,'travel-transport','places-town','b2-de-venue-comparison','Veranstaltungsorte vergleichen','Veranstaltungsorte anhand von Kapazität, Ausstattung, Erreichbarkeit und Nebenkosten vergleichen und eine Auswahl mit transparenten Kriterien begründen.',3,'nicht automatisch; zwar ... aber; erst dann, wenn'
+  UNION ALL SELECT 350,'work-study','school-study','b2-de-learning-goals','Lernziele realistisch steuern','Konkrete Lernziele setzen, Schwerpunkte priorisieren, Fortschritt messbar machen, Rückmeldungen auswerten und Lernmethoden bei Bedarf gezielt anpassen.',3,'Schwerpunkt liegt auf + Dativ; indem; statt ... zu'
+  UNION ALL SELECT 360,'daily-life','common-actions','b2-de-shared-planning','Gemeinsame Aufgaben koordinieren','Gemeinsame Aufgaben nach Zeit und Priorität verteilen, Abhängigkeiten sichtbar machen, Vertretungen planen und die endgültige Aufteilung mit allen Beteiligten abstimmen.',3,'nur wenn; sobald; falls'
+  UNION ALL SELECT 370,'social','likes-dislikes','b2-de-cultural-reviews','Kulturelle Angebote differenziert bewerten','Kulturelle Angebote anhand klarer Kriterien bewerten, Stärken und Schwächen mit Beispielen belegen und Empfehlungen passend zu unterschiedlichen Zielgruppen formulieren.',3,'vor allem wegen; als ... würde ich ... nennen; Relativsatz mit die'
+  UNION ALL SELECT 380,'daily-life','common-actions','b2-de-experience-reflection','Erfahrungen differenziert schildern','Erwartungen und tatsächlichen Verlauf einer Erfahrung vergleichen, Wendepunkte präzise erzählen und rückblickend begründete Erkenntnisse sowie alternative Handlungen formulieren.',3,'würde in Erwartungen; als für Wendepunkte; hätte ... sollen'
+  UNION ALL SELECT 390,'work-study','jobs','b2-de-resource-priorities','Ressourcen nachvollziehbar priorisieren','Begrenzte Ressourcen nach transparenten Kriterien verteilen, Bedarf und Wunsch unterscheiden, konkurrierende Wirkungen abwägen und Entscheidungen nachvollziehbar begründen.',3,'nach + Dativ priorisieren; gegen + Akkusativ abwägen; dann, wenn'
+  UNION ALL SELECT 400,'work-study','jobs','b2-de-project-documentation','Projektstände verständlich dokumentieren','Projektstände knapp zusammenfassen, offene Aufgaben und Abhängigkeiten sichtbar machen, wichtige Entscheidungen mit Begründungen dokumentieren und Informationen für andere nachvollziehbar strukturieren.',3,'in ... Punkten zusammenfassen; nicht nur ... sondern auch; ermöglichen, ... zu'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
