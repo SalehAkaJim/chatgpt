@@ -39,3 +39,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German B2 curriculum, batch 3 (units 21-30).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',3)
+FROM (
+  SELECT 210 AS sort_order,'social' AS skill_slug,'polite-language' AS topic_slug,'b2-de-conflict-mediation' AS slug,'Konflikte sachlich moderieren' AS title,'Spannungen sachlich ordnen, Beobachtung und Interpretation trennen, zwischen Positionen vermitteln und gegenseitige Zugeständnisse in eine tragfähige Lösung überführen.' AS objective,3 AS expected_lessons,'bevor; zwischen ... und ...; indem' AS grammar_focus
+  UNION ALL SELECT 220,'work-study','jobs','b2-de-hybrid-collaboration','Hybrid zusammenarbeiten','Erreichbarkeit transparent machen, synchrone und asynchrone Kommunikation sinnvoll wählen, Übergaben dokumentieren und Zusammenarbeit über Zeitzonen hinweg organisieren.',3,'sich lassen + Infinitiv; damit; sowohl ... als auch'
+  UNION ALL SELECT 230,'communication','simple-messages','b2-de-technical-explanations','Technische Themen verständlich erklären','Technische Inhalte für Nicht-Fachleute präzise vereinfachen, nötige Voraussetzungen benennen, Begriffe definieren und komplexe Abläufe schrittweise veranschaulichen.',3,'voraussetzen; vereinfacht gesagt; statt ... zu'
+  UNION ALL SELECT 240,'shopping-money','shopping','b2-de-contracts-subscriptions','Verträge & Abos prüfen','Laufzeiten, Kündigungsfristen, Verlängerungen, Gebühren und Bedingungen systematisch prüfen und Vertragsänderungen angemessen behandeln.',3,'ob ... oder; unter der Bedingung, dass; sofern'
+  UNION ALL SELECT 250,'travel-transport','places-town','b2-de-rental-repairs','Mietprobleme & Reparaturen klären','Mängel dokumentieren, vertragliche Zuständigkeiten prüfen, konkrete Reparaturtermine einfordern und schriftliche Protokolle für die weitere Klärung nutzen.',3,'im Vertrag steht, dass; indirekte Frage mit wann; festgehalten sein, dass'
+  UNION ALL SELECT 260,'work-study','jobs','b2-de-professional-networking','Beruflich Kontakte knüpfen','Sich in beruflichen Situationen prägnant vorstellen, an gemeinsame Themen anknüpfen, den eigenen Schwerpunkt erklären und natürlich nachfassen.',3,'woran/worüber; statt nur ... zu; sich auf ... beziehen'
+  UNION ALL SELECT 270,'daily-life','common-actions','b2-de-time-management','Zeit realistisch planen','Kapazität, Zeitfenster und Puffer realistisch einschätzen, konkurrierende Aufgaben priorisieren und bei neuen Anforderungen bewusste Verschiebungen vornehmen.',3,'deshalb; wenn; nicht nur ... sondern auch'
+  UNION ALL SELECT 280,'communication','requests','b2-de-bureaucracy-appointments','Behördengänge & Anträge organisieren','Unterlagen und Nachweise vollständig vorbereiten, Zuständigkeiten klären, Anträge korrekt einreichen und formelle Bescheide sowie Bearbeitungszeiten einordnen.',3,'bevor; indirekte Frage mit ob; sobald'
+  UNION ALL SELECT 290,'daily-life','common-actions','b2-de-event-organization','Veranstaltungen zuverlässig organisieren','Teilnahme, Raum, Ausstattung und Verantwortlichkeiten realistisch planen, Abhängigkeiten abstimmen und Änderungen zentral koordinieren.',3,'bevor; damit; sobald'
+  UNION ALL SELECT 300,'communication','simple-messages','b2-de-scenario-decisions','Unter Unsicherheit entscheiden','Unsichere Annahmen sichtbar machen, mehrere Szenarien vergleichen, Auswirkungen prüfen und Entscheidungen wählen, die auch bei moderaten Abweichungen belastbar bleiben.',3,'davon abhängen; falls; nicht nur ... sondern auch'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
