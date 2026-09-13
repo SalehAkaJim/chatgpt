@@ -1,0 +1,20 @@
+-- German B2 curriculum, batch 1 (units 1-10) for Persian-speaking learners.
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',1)
+FROM (
+  SELECT 10 AS sort_order,'communication' AS skill_slug,'simple-messages' AS topic_slug,'b2-de-argument-evidence' AS slug,'Argumentieren & Belege nennen' AS title,'Einen Standpunkt klar formulieren, Belege anführen, Einwände berücksichtigen und Schlussfolgerungen angemessen begrenzen.' AS objective,3 AS expected_lessons,'zwar ... aber; sich lassen + Infinitiv; insofern, als' AS grammar_focus
+  UNION ALL SELECT 20,'social','polite-language','b2-de-nuanced-agreement-disagreement','Nuanciert zustimmen & widersprechen','Teilweise zustimmen, Vorbehalte formulieren, legitime Gegenpositionen anerkennen und differenziert widersprechen.',3,'auch wenn; einerseits ... andererseits; Abschwächung mit nicht unbedingt'
+  UNION ALL SELECT 30,'communication','simple-messages','b2-de-presentations-questions','Präsentieren & Rückfragen beantworten','Komplexere Informationen strukturiert präsentieren, Zusammenhänge erklären, Aussagen präzisieren und Rückfragen differenziert beantworten.',3,'was ... betrifft; Pronominaladverbien; daraus ergibt sich'
+  UNION ALL SELECT 40,'social','polite-language','b2-de-negotiation-compromise','Verhandeln & Kompromisse finden','Bedingungen und Spielräume verhandeln, gegenseitige Zugeständnisse formulieren und tragfähige Kompromisse abschließen.',3,'unter der Bedingung, dass; wenn-dann; Konjunktiv II für Optionen'
+  UNION ALL SELECT 50,'work-study','jobs','b2-de-meetings-decisions','Besprechungen & Entscheidungen','Besprechungen strukturieren, Zuständigkeiten klären, Beschlüsse festhalten und verlässliche Nachverfolgung organisieren.',3,'darüber abstimmen, ob/wie; indirekte Zuständigkeitsfragen; zunächst/anschließend'
+  UNION ALL SELECT 60,'communication','simple-messages','b2-de-formal-messages-escalation','Formelle Nachrichten & Eskalation','Formelle Anliegen sachlich nachverfolgen, höflich konkrete Schritte verlangen und bei Bedarf professionell eskalieren.',3,'Konjunktiv II für formelle Bitten; da-Sätze; sollte als formale Bedingung'
+  UNION ALL SELECT 70,'communication','simple-messages','b2-de-source-summary-comparison','Quellen zusammenfassen & vergleichen','Kernaussagen mehrerer Quellen getrennt erfassen, Übereinstimmungen und Unterschiede vergleichen und Informationen sauber attribuieren.',3,'während/wohingegen; Gradadverbien; laut/nach Angaben von'
+  UNION ALL SELECT 80,'communication','simple-messages','b2-de-media-claims-uncertainty','Medien, Behauptungen & Unsicherheit','Bestätigte Informationen von Behauptungen trennen, Unsicherheit markieren und mediale Aussagen quellenkritisch einordnen.',3,'Passiv/impersonale Bestätigung; Modaladverbien; Hinweise darauf, dass'
+  UNION ALL SELECT 90,'daily-life','common-actions','b2-de-data-trends','Daten, Trends & Entwicklungen','Trends, Anteile und Veränderungen präzise beschreiben und Zusammenhänge vorsichtig interpretieren, ohne Kausalität zu überbehaupten.',3,'um/auf bei Prozentangaben; während/im Vergleich zu; vorsichtige Schlussfolgerungen'
+  UNION ALL SELECT 100,'social','likes-dislikes','b2-de-social-issues-discussion','Gesellschaftliche Themen diskutieren','Unterschiedliche Perspektiven und Interessen abwägen, mögliche Nebenwirkungen erkennen und Maßnahmen differenziert bewerten.',3,'je nach + Dativ; modale Folgen; davon abhängen, wie/ob'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
