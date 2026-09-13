@@ -39,3 +39,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='C1'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German C1 curriculum, batch 3 (units 21-30).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',3)
+FROM (
+  SELECT 210 AS sort_order,'communication' AS skill_slug,'simple-messages' AS topic_slug,'c1-de-executive-presentations' AS slug,'Komplexe Inhalte überzeugend präsentieren' AS title,'Präsentationen nach Adressat und Entscheidung strukturieren, Kernbotschaften verdichten und kritische Rückfragen präzise in den Gesamtzusammenhang einordnen.' AS objective,3 AS expected_lessons,'worauf es ankommt; ohne ... zu; nicht X, vielmehr Y' AS grammar_focus
+  UNION ALL SELECT 220,'work-study','jobs','c1-de-meeting-facilitation','Anspruchsvolle Besprechungen wirksam moderieren','Komplexe Besprechungen zielorientiert strukturieren, Entscheidungsreife prüfen, Abschweifungen begrenzen und Beschlüsse sowie nächste Schritte verbindlich festhalten.',3,'bevor/nachdem; soweit ich sehe; festhalten, dass'
+  UNION ALL SELECT 230,'work-study','jobs','c1-de-partnership-negotiation','Partnerschaften strategisch verhandeln','Verhandlungsspielräume mehrdimensional erfassen, Konzessionen an Gegenleistungen knüpfen und langfristig tragfähige Paketlösungen entwickeln.',3,'je ... desto; unter der Voraussetzung, dass; nicht isoliert, sondern'
+  UNION ALL SELECT 240,'communication','simple-messages','c1-de-data-interpretation','Daten vorsichtig und präzise interpretieren','Zusammenhang und Ursache unterscheiden, Stichproben und Verzerrungen einordnen, Effektstärken bewerten und Schlussfolgerungen proportional zur Evidenz formulieren.',3,'lässt darauf schließen; unter Berücksichtigung von; dürfte'
+  UNION ALL SELECT 250,'communication','simple-messages','c1-de-proposal-writing','Überzeugende Vorschläge und Entscheidungsvorlagen schreiben','Entscheidungen, Optionen, Kriterien und Empfehlungen so strukturieren, dass eine kurze Vorlage nachvollziehbar zu einer konkreten Freigabe führt.',3,'ausgehend von; maßgeblich ist; wir empfehlen, sofern'
+  UNION ALL SELECT 260,'social','polite-language','c1-de-conflict-mediation-power','Konflikte bei ungleichen Rollen moderieren','Konflikte bei ungleichen Rollen sachlich entpersonalisieren, Interessen sichtbar machen und Lösungen ermöglichen, die Hierarchie und Gesichtswahrung angemessen berücksichtigen.',3,'ohne zu unterstellen; weniger um ... als vielmehr; unter Wahrung von'
+  UNION ALL SELECT 270,'communication','simple-messages','c1-de-change-communication','Veränderungen glaubwürdig kommunizieren','Veränderungsgründe konkret erklären, bestätigte und offene Punkte trennen, unterschiedliche Betroffenheit berücksichtigen und kontinuierliche Orientierung schaffen.',3,'was feststeht/was offen ist; nicht weil, sondern weil; solange/bis'
+  UNION ALL SELECT 280,'communication','requests','c1-de-expert-interviews','Expertenwissen systematisch erschließen','Mit offenen Leitfragen, präzisen Nachfragen und reflektierendem Rückspiegeln Erfahrungswissen, Ausnahmen und implizite Annahmen systematisch erschließen.',3,'wie gehen Sie vor, wenn; was genau meinen Sie; wenn ich Sie richtig verstehe'
+  UNION ALL SELECT 290,'work-study','jobs','c1-de-scenario-planning','Mit Szenarien unter Unsicherheit planen','Mehrere plausible Zukunftsszenarien aus relevanten Treibern entwickeln, Frühindikatoren definieren und robuste sowie anpassbare Entscheidungen vorbereiten.',3,'angenommen, dass; sowohl unter ... als auch; falls ... eintritt'
+  UNION ALL SELECT 300,'communication','simple-messages','c1-de-strategic-alignment-capstone','C1-Capstone: Strategische Initiative ausrichten','Evidenz, Entscheidungsbasis, Zielbild, Zuständigkeiten und Überprüfungspunkte zu einer nachvollziehbaren und langfristig tragfähigen Initiative verbinden.',3,'entscheidend ist, ob; einerseits ... zugleich; unter der Bedingung, dass'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='C1'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
