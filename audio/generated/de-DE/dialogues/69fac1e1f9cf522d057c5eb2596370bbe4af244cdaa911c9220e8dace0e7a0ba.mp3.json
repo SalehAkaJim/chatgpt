@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "f5773ca651f1711519257bebea1c4cc5cc21c420556a7ffb3ef97b432f8a5903",
+  "voice_id": "MbbPUteESkJWr4IAaW35",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "69fac1e1f9cf522d057c5eb2596370bbe4af244cdaa911c9220e8dace0e7a0ba",
+  "voice_key": "character:noah:male_professional",
+  "voice_name": "Felix - Direct and Clear",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "f2045f5e874100abbc96e75a8060279cba45a152f256afce9f8bd45d1f0904b6",
+  "duration_ms": 1280,
+  "generated_at": "2026-09-13T05:27:24.967325+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "81066a16-0de6-5c6d-8317-434bba43b9a9",
+      "entity_key": "d_food_quantities_03:4"
+    }
+  ]
+}

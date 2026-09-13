@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "80f55d1f2077052b76cdb1e94f2cbea5a4fbe426ea3a77de07209348372ec5b6",
+  "voice_id": "SiMvlSW9cKKHDYT4BzOp",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "b8622e0b539d227488a7d941e09d8a4be9522589b9f77bb96a68d8452f3159c8",
+  "voice_key": "character:clara:female_bright",
+  "voice_name": "Lola - Fresh & Dynamic",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "f6615c206b80ed8aa376247ad2e7d5cea0d4e5f604923040504cb22d1a9d252b",
+  "duration_ms": 1619,
+  "generated_at": "2026-09-13T05:28:25.195162+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "472e797c-f149-509d-8283-d734c583c225",
+      "entity_key": "d_food_quantities_01:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "1215d539-5770-55dc-b5c1-f5a03882a68b",
+      "entity_key": "d_restaurant_service_01:3"
+    }
+  ]
+}

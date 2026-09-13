@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "80f55d1f2077052b76cdb1e94f2cbea5a4fbe426ea3a77de07209348372ec5b6",
+  "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "637a393eacb07b629ad951b290a690695bbb888a15e239c619b381ff0baa8c6f",
+  "voice_key": "character:mia:female_bright",
+  "voice_name": "Ela - Cheerful and Happy",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "5e92f5f2dd45fa23f9da7763c54876709213680ad4c4129881ecd1531c3aad91",
+  "duration_ms": 1671,
+  "generated_at": "2026-09-13T05:27:20.430242+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "749b10d7-9346-5f49-a24f-4532a1913f06",
+      "entity_key": "d_food_quantities_03:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "6aba524c-549d-5ce7-9753-3e5189a1ca7c",
+      "entity_key": "d_restaurant_service_03:3"
+    }
+  ]
+}

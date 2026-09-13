@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "ff24827bcaca2ee52d2a8c715c47c5fc1e69ac79f3db725ca4582ba52bf89b92",
+  "voice_id": "SiMvlSW9cKKHDYT4BzOp",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d8c4e92d7167ba3f511f502f3c3a3138b237c8a963dec7bf9aa77cffbc52d0be",
+  "voice_key": "character:clara:female_bright",
+  "voice_name": "Lola - Fresh & Dynamic",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "73004fe21e4f2a9f450ad3156cd829299076b9c2420b0afced541a6da502f02c",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-13T05:28:47.810998+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7d98721f-d0f0-5067-9471-011d8c948c76",
+      "entity_key": "d_plans_intentions_03:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "fe602c0b-d62a-5430-8def-f102d1d49bd2",
+      "entity_key": "d_sequencing_time_01:3"
+    }
+  ]
+}

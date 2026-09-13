@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "f5773ca651f1711519257bebea1c4cc5cc21c420556a7ffb3ef97b432f8a5903",
+  "voice_id": "fmj9wTxZg3ta4xR75kgB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "5cc326ebe438cf669cb60368ef32a5c590dd1336144fdba25d99f3b05b6d885a",
+  "voice_key": "character:lukas:male_warm",
+  "voice_name": "Peter Stern – Friendly Agent",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "b49fd5bfdc63ce741a572bd721d03ea8c2547e36232dadd4d11f1a1663c7fd6b",
+  "duration_ms": 1384,
+  "generated_at": "2026-09-13T05:27:16.915342+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f2963c29-9819-5e79-88f4-64199d36f9a4",
+      "entity_key": "d_cooking_recipes_03:4"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a688a6e6-a78d-5444-93c8-eb895b1eac98",
+      "entity_key": "d_food_quantities_01:4"
+    }
+  ]
+}
