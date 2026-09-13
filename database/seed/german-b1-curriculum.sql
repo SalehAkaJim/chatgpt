@@ -39,3 +39,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B1'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German B1 curriculum, batch 3 (units 21-30).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',3)
+FROM (
+  SELECT 210 AS sort_order,'communication' AS skill_slug,'requests' AS topic_slug,'b1-de-public-services-appointments' AS slug,'Behörden & Termine' AS title,'Behördentermine vereinbaren, benötigte Unterlagen erfragen und administrative Schritte höflich klären.' AS objective,3 AS expected_lessons,'indirekte Fragen mit ob; Passiv mit Modalverb; Relativsatz mit Präposition' AS grammar_focus
+  UNION ALL SELECT 220,'communication','simple-messages','b1-de-phone-messages','Telefon & Nachrichten','Telefonisch Anliegen klar formulieren, Nachrichten hinterlassen, Rückrufe vereinbaren und wichtige Informationen präzise weitergeben.',3,'wegen; dass-Sätze bei weitergegebenen Nachrichten; deshalb / deswegen'
+  UNION ALL SELECT 230,'travel-transport','transport','b1-de-transport-delays','Verspätungen & Alternativen','Bei Verspätungen und Ausfällen Informationen einholen, Alternativen finden und zeitliche Folgen erklären.',3,'falls; indirekte Fragen mit ob; damit'
+  UNION ALL SELECT 240,'communication','simple-messages','b1-de-news-information','Nachrichten & Informationen','Informationen zusammenfassen, Quellen einschätzen und zwischen bestätigten Meldungen und unbestätigten Behauptungen unterscheiden.',3,'bevor; dass-Sätze beim Berichten; Komparativ mit wenn'
+  UNION ALL SELECT 250,'social','hobbies','b1-de-clubs-volunteering','Verein & Engagement','Über Mitgliedschaft, freiwilliges Engagement, Aufgabenverteilung und zeitliche Grenzen in Gruppen sprechen.',3,'Relativsätze; Passiv für Aufgabenverteilung; solange'
+  UNION ALL SELECT 260,'health-body','basic-health','b1-de-food-nutrition','Ernährungsgewohnheiten beschreiben, Möglichkeiten vergleichen und realistische Veränderungen im Alltag besprechen.',3,'seit + Nebensatz; Konjunktiv II für Wünsche; je ... desto'
+  UNION ALL SELECT 270,'family-home','home','b1-de-family-responsibilities','Familienaufgaben verteilen, zeitliche Grenzen erklären und sich über Hilfe und Verantwortung einigen.',3,'wofür; so ..., dass ...; indem'
+  UNION ALL SELECT 280,'work-study','school-study','b1-de-project-planning','Projektziele festlegen, Aufgaben und Fristen koordinieren sowie Fortschritt und Risiken im Team besprechen.',3,'bevor; falls bei Risiken; damit zur Koordination'
+  UNION ALL SELECT 290,'communication','requests','b1-de-unexpected-situations','Unerwartete Probleme genau beschreiben, Hilfe anfordern, Optionen prüfen und praktische Übergangslösungen finden.',3,'deshalb; Passiv Perfekt; bis für Übergangslösungen'
+  UNION ALL SELECT 300,'time-plans','future-plans','b1-de-future-changes','Über zukünftige Veränderungen, Möglichkeiten und Unsicherheiten sprechen und flexible Pläne formulieren.',3,'reflexive Veränderungsverben; Konjunktiv II für Optionen; vorhaben + zu / je ... desto'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B1'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
