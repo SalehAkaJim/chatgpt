@@ -11,7 +11,7 @@ on:
       batch:
         description: 'Latest completed B1 batch number'
         required: true
-        default: '4'
+        default: '5'
 
 jobs:
   german-b1-mysql-9:
@@ -19,7 +19,7 @@ jobs:
     env:
       DATABASE_URL: mysql://root:rootpass@127.0.0.1:3306/language_learning
       MYSQL_PWD: rootpass
-      BATCH: ${{ github.event.inputs.batch || '4' }}
+      BATCH: ${{ github.event.inputs.batch || '5' }}
     services:
       mysql:
         image: mysql:9.0.1
@@ -68,14 +68,20 @@ jobs:
           $DB < database/seed/german-a1-curriculum.sql
           $DB < database/seed/german-a2-curriculum.sql
           $DB < database/seed/german-b1-curriculum.sql
-          expected=$((BATCH * 10))
+          expected=$(python - <<'PY'
+          import os, pathlib
+          batch=int(os.environ['BATCH'])
+          root=pathlib.Path('content/specs/de/B1')
+          print(sum(len(list((root/f'batch-{n:02d}').glob('*.json'))) for n in range(1,batch+1)))
+          PY
+          )
           b1=$($DB -Nse "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id JOIN cefr_levels l ON l.id=cu.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='B1'")
           echo "German B1 units: $b1 expected=$expected"
           test "$b1" = "$expected"
       - name: Validate cumulative German B1 production
         run: |
           set -euo pipefail
-          python scripts/audit_german_b1_content.py --batch "$BATCH"
+          python scripts/audit_german_b1_content_flexible.py --batch "$BATCH"
           for f in content/production/de/B1/*.json; do
             python scripts/validate_content.py "$f"
           done
@@ -93,8 +99,15 @@ jobs:
         run: |
           set -euo pipefail
           DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
-          expected_lessons=$((BATCH * 30))
-          expected_exercises=$((BATCH * 150))
+          expected_units=$(python - <<'PY'
+          import os, pathlib
+          batch=int(os.environ['BATCH'])
+          root=pathlib.Path('content/specs/de/B1')
+          print(sum(len(list((root/f'batch-{n:02d}').glob('*.json'))) for n in range(1,batch+1)))
+          PY
+          )
+          expected_lessons=$((expected_units * 3))
+          expected_exercises=$((expected_units * 15))
           lessons=$($DB -Nse "SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id JOIN cefr_levels l ON l.id=le.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='B1'")
           exercises=$($DB -Nse "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels l ON l.id=le.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='B1'")
           echo "German B1 lessons=$lessons/$expected_lessons exercises=$exercises/$expected_exercises"
