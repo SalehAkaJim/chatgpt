@@ -10,10 +10,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: finalize-german-prea1-a1
+  cancel-in-progress: false
+
 jobs:
   finalize:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Checkout German branch
         uses: actions/checkout@v4
@@ -26,20 +30,24 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Rebuild generator from staged bundle
+      - name: Reconstruct verified generator
+        shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          import base64, bz2
-          parts=sorted(Path('.staging/german').glob('v3.*'))
-          if not parts:
-              raise SystemExit('No v3 payload parts')
-          encoded=''.join(p.read_text().strip() for p in parts)
-          raw=bz2.decompress(base64.b64decode(encoded))
-          out=Path('/tmp/generate_german_beginner.py')
-          out.write_bytes(raw)
-          print('parts=',len(parts),'generator_bytes=',len(raw))
-          PY
+          set -euo pipefail
+          cat \
+            .staging/german/genv3.00 \
+            .staging/german/genv3.01 \
+            .staging/german/genv3.02 \
+            .staging/german/genv3.03 > /tmp/generate_german_beginner.py
+          cat \
+            .staging/german/genv3r.00 \
+            .staging/german/genv3r.01 \
+            .staging/german/genv3r.02 \
+            | base64 --decode | bunzip2 >> /tmp/generate_german_beginner.py
+          actual=$(sha256sum /tmp/generate_german_beginner.py | awk '{print $1}')
+          expected='4e26a45160464f7f5b7dcec33319419870d5a098ee2d8d1c7c648e9cc0f3d652'
+          echo "generator sha256=$actual"
+          test "$actual" = "$expected"
 
       - name: Generate complete German beginner content
         run: python /tmp/generate_german_beginner.py --repo-root .
@@ -48,9 +56,12 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Validate all 40 German beginner units
+        shell: bash
         run: |
           set -euo pipefail
           python scripts/audit_german_beginner_content.py
+          test "$(find content/production/de/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          test "$(find content/production/de/A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 30
           for f in content/production/de/Pre-A1/*.json content/production/de/A1/*.json; do
             echo "===== $f ====="
             python scripts/validate_content.py "$f"
@@ -58,8 +69,10 @@ jobs:
           python database/import/de/pre_a1.py --dry-run
           python database/import/de/a1.py --dry-run
 
-      - name: Verify strict audio manifests can be built
+      - name: Verify strict German audio manifests
+        shell: bash
         run: |
+          set -euo pipefail
           mkdir -p /tmp/german-manifests
           python scripts/build_audio_manifest.py content/production/de/Pre-A1 \
             --level Pre-A1 --locale de-DE --strict-characters \
@@ -70,14 +83,18 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          for p in Path('/tmp/german-manifests').glob('*.json'):
+          total=0
+          for p in sorted(Path('/tmp/german-manifests').glob('*.json')):
               d=json.loads(p.read_text())
-              print(p.name, 'audio_items=', len(d['items']), 'missing_profiles=', d['missing_character_profiles'])
-              if d['missing_character_profiles']:
-                  raise SystemExit(1)
+              if d.get('missing_character_profiles'):
+                  raise SystemExit(f"missing character profiles in {p}: {d['missing_character_profiles']}")
+              total += len(d['items'])
+              print(p.name, 'audio_items=', len(d['items']))
+          print('total_audio_items=', total)
           PY
 
-      - name: Commit finalized source content
+      - name: Commit finalized content and pipelines
+        shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
@@ -91,6 +108,11 @@ jobs:
             .github/workflows/mysql-german-a1-integration.yml \
             .github/workflows/generate-german-audio.yml
           git rm -r .staging/german
+          git rm -f \
+            content/specs/de/write-test.txt \
+            content/specs/de/prea1-test.json \
+            content/specs/de/fa-test.json \
+            content/specs/de/blob-test.txt || true
           git rm .github/workflows/finalize-german-beginner.yml
           git commit -m 'Complete German Pre-A1 and A1 production content'
           git fetch origin language/german-a1
