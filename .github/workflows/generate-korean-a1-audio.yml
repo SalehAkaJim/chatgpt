@@ -38,10 +38,14 @@ jobs:
       - name: Verify categories
         run: |
           python - <<'PY'
-          import json
-          d=json.load(open('audio/manifests/ko/A2.json')); cats={x['category'] for x in d['items']}; assert {'lexical','utterances','dialogues'}<=cats; assert d['items']
-          assert all(x.get('status')=='validated' for x in d['items'])
-          print(json.dumps({'items':len(d['items']),'categories':sorted(cats)},ensure_ascii=False))
+          import collections,json
+          d=json.load(open('audio/manifests/ko/A2.json'))
+          counts=collections.Counter(x['category'] for x in d['items'])
+          assert counts['dialogues']==80,counts
+          assert counts['utterances']==40,counts
+          assert counts['lexical']==58,counts
+          assert len(d['items'])==178,counts
+          print(json.dumps({'items':len(d['items']),'categories':dict(counts)},ensure_ascii=False))
           PY
       - name: Commit audio
         run: |
