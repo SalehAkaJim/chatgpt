@@ -11,7 +11,7 @@ on:
       batch:
         description: 'Latest completed B1 batch number'
         required: true
-        default: '2'
+        default: '3'
 
 jobs:
   german-b1-mysql-9:
@@ -19,7 +19,7 @@ jobs:
     env:
       DATABASE_URL: mysql://root:rootpass@127.0.0.1:3306/language_learning
       MYSQL_PWD: rootpass
-      BATCH: ${{ github.event.inputs.batch || '2' }}
+      BATCH: ${{ github.event.inputs.batch || '3' }}
     services:
       mysql:
         image: mysql:9.0.1
