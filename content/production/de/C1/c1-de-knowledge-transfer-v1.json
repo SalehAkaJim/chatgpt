@@ -1,0 +1,1162 @@
+{
+  "batch_id": "de-de-c1-knowledge-transfer-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "C1",
+  "curriculum_unit": "c1-de-knowledge-transfer",
+  "generator": "gpt-5.6-sol:german-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_knowledge_transfer_01",
+      "data": {
+        "slug": "de_c1_knowledge_transfer_wissensluecke",
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Wissenslücke"
+        },
+        "translations": {
+          "fa": "شکاف دانشی"
+        },
+        "cefr": "C1",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_knowledge_transfer_01",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "lemma": "Wissenslücke",
+        "display_lemma": "Wissenslücke",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_wissensluecke"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_knowledge_transfer_01",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "lexeme_ref": "lx_knowledge_transfer_01",
+        "surface_form": "Wissenslücke",
+        "display_form": "Wissenslücke",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_knowledge_transfer_02",
+      "data": {
+        "slug": "de_c1_knowledge_transfer_kontextwissen",
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Kontextwissen"
+        },
+        "translations": {
+          "fa": "دانش زمینه‌ای"
+        },
+        "cefr": "C1",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_knowledge_transfer_02",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "lemma": "Kontextwissen",
+        "display_lemma": "Kontextwissen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_kontextwissen"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "neuter",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_knowledge_transfer_02",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "lexeme_ref": "lx_knowledge_transfer_02",
+        "surface_form": "Kontextwissen",
+        "display_form": "Kontextwissen",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_knowledge_transfer_03",
+      "data": {
+        "slug": "de_c1_knowledge_transfer_uebergabe",
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Übergabe"
+        },
+        "translations": {
+          "fa": "تحویل دانش"
+        },
+        "cefr": "C1",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_knowledge_transfer_03",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "lemma": "Übergabe",
+        "display_lemma": "Übergabe",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_uebergabe"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_knowledge_transfer_03",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "lexeme_ref": "lx_knowledge_transfer_03",
+        "surface_form": "Übergabe",
+        "display_form": "Übergabe",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_knowledge_transfer_04",
+      "data": {
+        "slug": "de_c1_knowledge_transfer_nachvollziehbar",
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "nachvollziehbar"
+        },
+        "translations": {
+          "fa": "قابل‌پیگیری"
+        },
+        "cefr": "C1",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_knowledge_transfer_04",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "lemma": "nachvollziehbar",
+        "display_lemma": "nachvollziehbar",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_nachvollziehbar"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_knowledge_transfer_04",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "lexeme_ref": "lx_knowledge_transfer_04",
+        "surface_form": "nachvollziehbar",
+        "display_form": "nachvollziehbar",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_knowledge_transfer_05",
+      "data": {
+        "slug": "de_c1_knowledge_transfer_stolperstein",
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Stolperstein"
+        },
+        "translations": {
+          "fa": "نقطه دردسر"
+        },
+        "cefr": "C1",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_knowledge_transfer_05",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "lemma": "Stolperstein",
+        "display_lemma": "Stolperstein",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_stolperstein"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_knowledge_transfer_05",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "lexeme_ref": "lx_knowledge_transfer_05",
+        "surface_form": "Stolperstein",
+        "display_form": "Stolperstein",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_knowledge_transfer_06",
+      "data": {
+        "slug": "de_c1_knowledge_transfer_verankern",
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "verankern"
+        },
+        "translations": {
+          "fa": "تثبیت کردن"
+        },
+        "cefr": "C1",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_knowledge_transfer_06",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "lemma": "verankern",
+        "display_lemma": "verankern",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_verankern"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_knowledge_transfer_06",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "lexeme_ref": "lx_knowledge_transfer_06",
+        "surface_form": "verankern",
+        "display_form": "verankern",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_knowledge_transfer_01",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "text": {
+          "de": "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen."
+        },
+        "translations": {
+          "fa": "بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست."
+        },
+        "intent": "identify_gap",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_wissensluecke"
+        ],
+        "cefr": "C1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_knowledge_transfer_02",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "text": {
+          "de": "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist."
+        },
+        "translations": {
+          "fa": "بدون دانش زمینه‌ای تصمیم دل‌بخواهی به نظر می‌رسد هرچند از نظر تاریخی خوب توجیه شده است."
+        },
+        "intent": "add_context",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_kontextwissen"
+        ],
+        "cefr": "C1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_knowledge_transfer_03",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "text": {
+          "de": "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht."
+        },
+        "translations": {
+          "fa": "تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم."
+        },
+        "intent": "structure_handover",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_uebergabe"
+        ],
+        "cefr": "C1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_knowledge_transfer_04",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "text": {
+          "de": "Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann."
+        },
+        "translations": {
+          "fa": "مستندات باید آن‌قدر قابل‌پیگیری باشند که فرد دیگری بعداً بتواند تصمیم را بازسازی کند."
+        },
+        "intent": "document_reasoning",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_nachvollziehbar"
+        ],
+        "cefr": "C1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_knowledge_transfer_05",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "text": {
+          "de": "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand."
+        },
+        "translations": {
+          "fa": "این نقطه دردسر کم پیش می‌آید اما هنگام خطا هزینه زیادی ایجاد می‌کند."
+        },
+        "intent": "highlight_risk",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_stolperstein"
+        ],
+        "cefr": "C1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_knowledge_transfer_06",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "text": {
+          "de": "Wissen verankert sich besser, wenn die andere Person den Ablauf selbst erklärt und anwendet."
+        },
+        "translations": {
+          "fa": "دانش بهتر تثبیت می‌شود وقتی طرف مقابل خودش روند را توضیح دهد و اجرا کند."
+        },
+        "intent": "reinforce_learning",
+        "concept_refs": [
+          "de_c1_knowledge_transfer_verankern"
+        ],
+        "cefr": "C1",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_knowledge_transfer_01",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "slug": "c1-de-knowledge-transfer-g1",
+        "title": "nicht nur ... sondern auch",
+        "rule_summary": "Use additive contrast to expand explanations from procedure to rationale and exceptions.",
+        "explanation": {
+          "fa": "برای گسترش توضیح از روش اجرا به دلیل و استثناها از این ساختار استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Dokumentiere nicht nur den Ablauf, sondern auch die typischen Ausnahmen.",
+            "fa": "فقط روند را ثبت نکن، استثناهای معمول را هم بنویس."
+          },
+          {
+            "de": "Die Übergabe umfasst nicht nur Dateien, sondern auch Entscheidungslogik.",
+            "fa": "تحویل فقط فایل نیست بلکه منطق تصمیم را هم شامل می‌شود."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_knowledge_transfer_02",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "slug": "c1-de-knowledge-transfer-g2",
+        "title": "sodass zur Ergebnisorientierung",
+        "rule_summary": "Use result clauses to state what a successful knowledge transfer should enable.",
+        "explanation": {
+          "fa": "با جمله نتیجه مشخص می‌کنیم انتقال موفق باید چه توانایی‌ای ایجاد کند."
+        },
+        "examples": [
+          {
+            "de": "Wir strukturieren die Anleitung so, dass neue Kollegen kritische Fälle selbst erkennen können.",
+            "fa": "راهنما را طوری می‌سازیم که همکار جدید موارد بحرانی را خودش تشخیص دهد."
+          },
+          {
+            "de": "Die Beispiele sind so gewählt, dass das Prinzip auf andere Fälle übertragbar ist.",
+            "fa": "مثال‌ها طوری انتخاب شده‌اند که اصل موضوع قابل تعمیم باشد."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_knowledge_transfer_03",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "slug": "c1-de-knowledge-transfer-g3",
+        "title": "Partizipialattribute zur Verdichtung",
+        "rule_summary": "Use extended participial attributes to condense procedural descriptions in advanced professional German.",
+        "explanation": {
+          "fa": "برای فشرده کردن توضیحات فرایندی در زبان حرفه‌ای پیشرفته از صفت‌های مشارکتی توسعه‌یافته استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Die im Betrieb häufig übersehene Ausnahme ist hier entscheidend.",
+            "fa": "استثنایی که در عملیات اغلب نادیده گرفته می‌شود اینجا تعیین‌کننده است."
+          },
+          {
+            "de": "Die bisher nur mündlich weitergegebenen Regeln müssen dokumentiert werden.",
+            "fa": "قواعدی که تا حالا فقط شفاهی منتقل شده‌اند باید ثبت شوند."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_knowledge_transfer_01",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "title": "Wissenslücken finden",
+        "setting": "Übergabe – Analyse",
+        "cefr": "C1",
+        "topic": "jobs",
+        "characters": [
+          "Sofia",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Die Prozessbeschreibung ist vollständig, trotzdem passieren bei Vertretungen immer dieselben Fehler.",
+            "translation_fa": "شرح فرایند کامل است اما هنگام جانشینی همان خطاها تکرار می‌شوند."
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Dann fehlt vermutlich Kontextwissen über Ausnahmen und Prioritäten.",
+            "translation_fa": "احتمالاً دانش زمینه‌ای درباره استثناها و اولویت‌ها کم است."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Stimmt. Die heiklen Fälle erklären wir bisher nur mündlich.",
+            "translation_fa": "درست است. موارد حساس را تا حالا فقط شفاهی توضیح می‌دهیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Genau dort sollten wir die Übergabe nachschärfen.",
+            "translation_fa": "دقیقاً همان‌جا باید تحویل دانش را دقیق‌تر کنیم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_knowledge_transfer_02",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "title": "Entscheidungslogik dokumentieren",
+        "setting": "Übergabe – Dokumentation",
+        "cefr": "C1",
+        "topic": "jobs",
+        "characters": [
+          "Anna",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Soll ich einfach alle bisherigen Entscheidungen auflisten?",
+            "translation_fa": "فقط همه تصمیم‌های قبلی را فهرست کنم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Besser wäre: Entscheidung, Kontext, Alternative und Grund. Dann bleibt es nachvollziehbar.",
+            "translation_fa": "بهتر است تصمیم، زمینه، گزینه دیگر و دلیل را بنویسی تا قابل‌پیگیری بماند."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Dann erkennt man auch, wann dieselbe Entscheidung nicht mehr passt.",
+            "translation_fa": "این‌طوری معلوم می‌شود چه زمانی همان تصمیم دیگر مناسب نیست."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Genau. Das ist wertvoller als eine reine Historie.",
+            "translation_fa": "دقیقاً. از تاریخچه صرف ارزشمندتر است."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_knowledge_transfer_03",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "title": "Wissen wirklich verankern",
+        "setting": "Übergabe – Praxis",
+        "cefr": "C1",
+        "topic": "jobs",
+        "characters": [
+          "Nina",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Ich habe alles erklärt. Reicht das für die Übergabe?",
+            "translation_fa": "همه‌چیز را توضیح دادم. برای تحویل کافی است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Noch besser wäre, wenn ich den Ablauf selbst an einem schwierigen Fall durchspiele.",
+            "translation_fa": "بهتر است خودم روند را روی یک مورد سخت اجرا کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Dann sehe ich sofort, wo noch Wissenslücken sind.",
+            "translation_fa": "آن‌وقت فوراً می‌بینم کجا هنوز شکاف دانشی هست."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Und das Wissen wird durch Anwendung stärker verankert.",
+            "translation_fa": "و دانش با اجرا بهتر تثبیت می‌شود."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_01_mc",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست.»؟"
+        },
+        "options": [
+          "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen.",
+          "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist.",
+          "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht.",
+          "Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann."
+        ],
+        "answer": {
+          "value": "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen. — بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست.",
+          "model_answer": "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_01_listen",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen."
+        },
+        "options": [
+          "بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست.",
+          "بدون دانش زمینه‌ای تصمیم دل‌بخواهی به نظر می‌رسد هرچند از نظر تاریخی خوب توجیه شده است.",
+          "تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم.",
+          "مستندات باید آن‌قدر قابل‌پیگیری باشند که فرد دیگری بعداً بتواند تصمیم را بازسازی کند."
+        ],
+        "answer": {
+          "value": "بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen. — بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست.",
+          "model_answer": "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen.",
+          "transcript_de": "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_01_speak",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist."
+        },
+        "answer": {
+          "expected_text": "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist. — بدون دانش زمینه‌ای تصمیم دل‌بخواهی به نظر می‌رسد هرچند از نظر تاریخی خوب توجیه شده است.",
+          "model_answer": "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_01_trans",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "بدون دانش زمینه‌ای تصمیم دل‌بخواهی به نظر می‌رسد هرچند از نظر تاریخی خوب توجیه شده است.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist. — بدون دانش زمینه‌ای تصمیم دل‌بخواهی به نظر می‌رسد هرچند از نظر تاریخی خوب توجیه شده است.",
+          "model_answer": "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_01_build",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "größte",
+            "Wissenslücke",
+            "liegt",
+            "nicht",
+            "im",
+            "Prozess",
+            "selbst,",
+            "sondern",
+            "in",
+            "den",
+            "Ausnahmen.",
+            "Die"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Die",
+            "größte",
+            "Wissenslücke",
+            "liegt",
+            "nicht",
+            "im",
+            "Prozess",
+            "selbst,",
+            "sondern",
+            "in",
+            "den",
+            "Ausnahmen."
+          ],
+          "value": "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen. — بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست.",
+          "model_answer": "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_02_mc",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم.»؟"
+        },
+        "options": [
+          "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht.",
+          "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen.",
+          "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist.",
+          "Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann."
+        ],
+        "answer": {
+          "value": "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht. — تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم.",
+          "model_answer": "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_02_listen",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht."
+        },
+        "options": [
+          "تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم.",
+          "بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست.",
+          "بدون دانش زمینه‌ای تصمیم دل‌بخواهی به نظر می‌رسد هرچند از نظر تاریخی خوب توجیه شده است.",
+          "مستندات باید آن‌قدر قابل‌پیگیری باشند که فرد دیگری بعداً بتواند تصمیم را بازسازی کند."
+        ],
+        "answer": {
+          "value": "تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht. — تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم.",
+          "model_answer": "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht.",
+          "transcript_de": "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_02_speak",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann."
+        },
+        "answer": {
+          "expected_text": "Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann. — مستندات باید آن‌قدر قابل‌پیگیری باشند که فرد دیگری بعداً بتواند تصمیم را بازسازی کند.",
+          "model_answer": "Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_02_trans",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "مستندات باید آن‌قدر قابل‌پیگیری باشند که فرد دیگری بعداً بتواند تصمیم را بازسازی کند.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann. — مستندات باید آن‌قدر قابل‌پیگیری باشند که فرد دیگری بعداً بتواند تصمیم را بازسازی کند.",
+          "model_answer": "Die Dokumentation muss so nachvollziehbar sein, dass jemand die Entscheidung später rekonstruieren kann."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_02_build",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "gute",
+            "Übergabe",
+            "zeigt",
+            "nicht",
+            "nur",
+            "was",
+            "zu",
+            "tun",
+            "ist,",
+            "sondern",
+            "auch",
+            "wann",
+            "und",
+            "warum",
+            "man",
+            "davon",
+            "abweicht.",
+            "Eine"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Eine",
+            "gute",
+            "Übergabe",
+            "zeigt",
+            "nicht",
+            "nur",
+            "was",
+            "zu",
+            "tun",
+            "ist,",
+            "sondern",
+            "auch",
+            "wann",
+            "und",
+            "warum",
+            "man",
+            "davon",
+            "abweicht."
+          ],
+          "value": "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht. — تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم.",
+          "model_answer": "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_03_mc",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «این نقطه دردسر کم پیش می‌آید اما هنگام خطا هزینه زیادی ایجاد می‌کند.»؟"
+        },
+        "options": [
+          "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand.",
+          "Die größte Wissenslücke liegt nicht im Prozess selbst, sondern in den Ausnahmen.",
+          "Ohne Kontextwissen wirkt die Entscheidung willkürlich, obwohl sie historisch gut begründet ist.",
+          "Eine gute Übergabe zeigt nicht nur was zu tun ist, sondern auch wann und warum man davon abweicht."
+        ],
+        "answer": {
+          "value": "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand. — این نقطه دردسر کم پیش می‌آید اما هنگام خطا هزینه زیادی ایجاد می‌کند.",
+          "model_answer": "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_03_listen",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand."
+        },
+        "options": [
+          "این نقطه دردسر کم پیش می‌آید اما هنگام خطا هزینه زیادی ایجاد می‌کند.",
+          "بزرگ‌ترین شکاف دانشی در خود فرایند نیست بلکه در استثناهاست.",
+          "بدون دانش زمینه‌ای تصمیم دل‌بخواهی به نظر می‌رسد هرچند از نظر تاریخی خوب توجیه شده است.",
+          "تحویل خوب فقط نمی‌گوید چه کنیم بلکه می‌گوید چه زمانی و چرا از آن منحرف شویم."
+        ],
+        "answer": {
+          "value": "این نقطه دردسر کم پیش می‌آید اما هنگام خطا هزینه زیادی ایجاد می‌کند."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand. — این نقطه دردسر کم پیش می‌آید اما هنگام خطا هزینه زیادی ایجاد می‌کند.",
+          "model_answer": "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand.",
+          "transcript_de": "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_03_speak",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Wissen verankert sich besser, wenn die andere Person den Ablauf selbst erklärt und anwendet."
+        },
+        "answer": {
+          "expected_text": "Wissen verankert sich besser, wenn die andere Person den Ablauf selbst erklärt und anwendet."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wissen verankert sich besser, wenn die andere Person den Ablauf selbst erklärt und anwendet. — دانش بهتر تثبیت می‌شود وقتی طرف مقابل خودش روند را توضیح دهد و اجرا کند.",
+          "model_answer": "Wissen verankert sich besser, wenn die andere Person den Ablauf selbst erklärt und anwendet."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_03_trans",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "دانش بهتر تثبیت می‌شود وقتی طرف مقابل خودش روند را توضیح دهد و اجرا کند.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Wissen verankert sich besser, wenn die andere Person den Ablauf selbst erklärt und anwendet."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wissen verankert sich besser, wenn die andere Person den Ablauf selbst erklärt und anwendet. — دانش بهتر تثبیت می‌شود وقتی طرف مقابل خودش روند را توضیح دهد و اجرا کند.",
+          "model_answer": "Wissen verankert sich besser, wenn die andere Person den Ablauf selbst erklärt und anwendet."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_knowledge_transfer_03_build",
+      "data": {
+        "lesson_key": "c1-de-knowledge-transfer-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Stolperstein",
+            "tritt",
+            "selten",
+            "auf,",
+            "verursacht",
+            "im",
+            "Fehlerfall",
+            "aber",
+            "überproportional",
+            "viel",
+            "Aufwand.",
+            "Dieser"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Dieser",
+            "Stolperstein",
+            "tritt",
+            "selten",
+            "auf,",
+            "verursacht",
+            "im",
+            "Fehlerfall",
+            "aber",
+            "überproportional",
+            "viel",
+            "Aufwand."
+          ],
+          "value": "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand. — این نقطه دردسر کم پیش می‌آید اما هنگام خطا هزینه زیادی ایجاد می‌کند.",
+          "model_answer": "Dieser Stolperstein tritt selten auf, verursacht im Fehlerfall aber überproportional viel Aufwand."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
