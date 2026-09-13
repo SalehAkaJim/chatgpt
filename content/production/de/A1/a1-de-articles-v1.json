@@ -1,0 +1,899 @@
+{
+  "batch_id": "de-de-a1-articles-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A1",
+  "curriculum_unit": "a1-de-articles",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_articles_01",
+      "data": {
+        "slug": "de_a1_articles_01",
+        "lesson_key": "a1-de-articles-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Tisch"
+        },
+        "translations": {
+          "fa": "میز"
+        },
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_articles_01",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "lemma": "Tisch",
+        "display_lemma": "Tisch",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a1_articles_01"
+        ],
+        "cefr": "A1",
+        "status": "validated",
+        "grammatical_gender": "masculine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_articles_01",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "lexeme_ref": "lx_articles_01",
+        "surface_form": "Tisch",
+        "display_form": "Tisch",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_articles_01",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "text": {
+          "de": "der Tisch"
+        },
+        "translations": {
+          "fa": "میز"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_articles_01"
+        ],
+        "cefr": "A1",
+        "topic": "objects",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_articles_02",
+      "data": {
+        "slug": "de_a1_articles_02",
+        "lesson_key": "a1-de-articles-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Lampe"
+        },
+        "translations": {
+          "fa": "چراغ"
+        },
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_articles_02",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "lemma": "Lampe",
+        "display_lemma": "Lampe",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a1_articles_02"
+        ],
+        "cefr": "A1",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_articles_02",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "lexeme_ref": "lx_articles_02",
+        "surface_form": "Lampe",
+        "display_form": "Lampe",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_articles_02",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "text": {
+          "de": "die Lampe"
+        },
+        "translations": {
+          "fa": "چراغ"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_articles_02"
+        ],
+        "cefr": "A1",
+        "topic": "objects",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_articles_03",
+      "data": {
+        "slug": "de_a1_articles_03",
+        "lesson_key": "a1-de-articles-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Fenster"
+        },
+        "translations": {
+          "fa": "پنجره"
+        },
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_articles_03",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "lemma": "Fenster",
+        "display_lemma": "Fenster",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a1_articles_03"
+        ],
+        "cefr": "A1",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_articles_03",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "lexeme_ref": "lx_articles_03",
+        "surface_form": "Fenster",
+        "display_form": "Fenster",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_articles_03",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "text": {
+          "de": "das Fenster"
+        },
+        "translations": {
+          "fa": "پنجره"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_articles_03"
+        ],
+        "cefr": "A1",
+        "topic": "objects",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_articles_04",
+      "data": {
+        "slug": "de_a1_articles_04",
+        "lesson_key": "a1-de-articles-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "ein Tisch"
+        },
+        "translations": {
+          "fa": "یک میز"
+        },
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_articles_04",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "lemma": "ein Tisch",
+        "display_lemma": "ein Tisch",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_articles_04"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_articles_04",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "lexeme_ref": "lx_articles_04",
+        "surface_form": "ein Tisch",
+        "display_form": "ein Tisch",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_articles_04",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "text": {
+          "de": "ein Tisch"
+        },
+        "translations": {
+          "fa": "یک میز"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_articles_04"
+        ],
+        "cefr": "A1",
+        "topic": "objects",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_articles_05",
+      "data": {
+        "slug": "de_a1_articles_05",
+        "lesson_key": "a1-de-articles-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "eine Lampe"
+        },
+        "translations": {
+          "fa": "یک چراغ"
+        },
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_articles_05",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "lemma": "eine Lampe",
+        "display_lemma": "eine Lampe",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_articles_05"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_articles_05",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "lexeme_ref": "lx_articles_05",
+        "surface_form": "eine Lampe",
+        "display_form": "eine Lampe",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_articles_05",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "text": {
+          "de": "eine Lampe"
+        },
+        "translations": {
+          "fa": "یک چراغ"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_articles_05"
+        ],
+        "cefr": "A1",
+        "topic": "objects",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_articles_06",
+      "data": {
+        "slug": "de_a1_articles_06",
+        "lesson_key": "a1-de-articles-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "ein Fenster"
+        },
+        "translations": {
+          "fa": "یک پنجره"
+        },
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_articles_06",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "lemma": "ein Fenster",
+        "display_lemma": "ein Fenster",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_articles_06"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_articles_06",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "lexeme_ref": "lx_articles_06",
+        "surface_form": "ein Fenster",
+        "display_form": "ein Fenster",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_articles_06",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "text": {
+          "de": "ein Fenster"
+        },
+        "translations": {
+          "fa": "یک پنجره"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_articles_06"
+        ],
+        "cefr": "A1",
+        "topic": "objects",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_articles_core",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "slug": "a1-de-articles-grammar",
+        "title": "der, die oder das?",
+        "rule_summary": "German nouns have grammatical gender: der (masculine), die (feminine), das (neuter); indefinite articles are ein/eine.",
+        "explanation": {
+          "fa": "جنس دستوری را از خود اسم جدا نکن؛ به جای «Tisch» بهتر است «der Tisch» را واحد یادگیری بدانی."
+        },
+        "examples": [
+          {
+            "de": "der Tisch",
+            "fa": "میز"
+          },
+          {
+            "de": "ein Fenster",
+            "fa": "یک پنجره"
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_articles_01",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "title": "Im Zimmer",
+        "setting": "im_zimmer",
+        "cefr": "A1",
+        "topic": "objects",
+        "characters": [
+          "Nina",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Was ist das?",
+            "translation_fa": "این چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Das ist ein Tisch.",
+            "translation_fa": "این یک میز است."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Und hier?",
+            "translation_fa": "و اینجا؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Eine Lampe.",
+            "translation_fa": "یک چراغ."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_articles_02",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "title": "Artikel wählen",
+        "setting": "artikel_wahlen",
+        "cefr": "A1",
+        "topic": "objects",
+        "characters": [
+          "Clara",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Der, die oder das Fenster?",
+            "translation_fa": "der، die یا das برای Fenster؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Das Fenster.",
+            "translation_fa": "das Fenster."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Und Lampe?",
+            "translation_fa": "و Lampe؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Die Lampe.",
+            "translation_fa": "die Lampe."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_01_meaning",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "der Tisch"
+        },
+        "answer": {
+          "value": "میز"
+        },
+        "options": [
+          "میز",
+          "چراغ",
+          "پنجره",
+          "یک میز"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«der Tisch» یعنی «میز».",
+          "model_answer": "میز",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_01_listen",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "eine Lampe"
+        },
+        "answer": {
+          "value": "eine Lampe"
+        },
+        "options": [
+          "eine Lampe",
+          "der Tisch",
+          "die Lampe",
+          "das Fenster"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «eine Lampe» است.",
+          "model_answer": "eine Lampe",
+          "transcript_de": "eine Lampe",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_01_speak",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "der Tisch"
+        },
+        "answer": {
+          "expected_text": "der Tisch"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "der Tisch",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_01_translate",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "eine Lampe",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "یک چراغ"
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «یک چراغ».",
+          "model_answer": "یک چراغ",
+          "source_de": "eine Lampe",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_01_build",
+      "data": {
+        "lesson_key": "a1-de-articles-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "ist",
+            "das",
+            "Was"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Was",
+            "ist",
+            "das"
+          ],
+          "text": "Was ist das?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Was ist das?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_02_meaning",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "die Lampe"
+        },
+        "answer": {
+          "value": "چراغ"
+        },
+        "options": [
+          "چراغ",
+          "میز",
+          "پنجره",
+          "یک میز"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«die Lampe» یعنی «چراغ».",
+          "model_answer": "چراغ",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_02_listen",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "ein Fenster"
+        },
+        "answer": {
+          "value": "ein Fenster"
+        },
+        "options": [
+          "ein Fenster",
+          "der Tisch",
+          "die Lampe",
+          "das Fenster"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «ein Fenster» است.",
+          "model_answer": "ein Fenster",
+          "transcript_de": "ein Fenster",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_02_speak",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "die Lampe"
+        },
+        "answer": {
+          "expected_text": "die Lampe"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "die Lampe",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_02_translate",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "ein Fenster",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "یک پنجره"
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «یک پنجره».",
+          "model_answer": "یک پنجره",
+          "source_de": "ein Fenster",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_articles_02_build",
+      "data": {
+        "lesson_key": "a1-de-articles-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "die",
+            "oder",
+            "das",
+            "Fenster",
+            "Der"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Der",
+            "die",
+            "oder",
+            "das",
+            "Fenster"
+          ],
+          "text": "Der, die oder das Fenster?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "objects",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Der, die oder das Fenster?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}

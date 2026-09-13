@@ -1,0 +1,888 @@
+{
+  "batch_id": "de-de-prea1-my-name-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-de-my-name",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_01",
+      "data": {
+        "slug": "de_pre_a1_my_name_01",
+        "lesson_key": "prea1-de-my-name-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ich heiße Mia."
+        },
+        "translations": {
+          "fa": "اسم من میاست."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_01",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "lemma": "Ich heiße Mia.",
+        "display_lemma": "Ich heiße Mia.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_my_name_01"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_01",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "lexeme_ref": "lx_my_name_01",
+        "surface_form": "Ich heiße Mia.",
+        "display_form": "Ich heiße Mia.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_01",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "text": {
+          "de": "Ich heiße Mia."
+        },
+        "translations": {
+          "fa": "اسم من میاست."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_my_name_01"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_02",
+      "data": {
+        "slug": "de_pre_a1_my_name_02",
+        "lesson_key": "prea1-de-my-name-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Wie heißt du?"
+        },
+        "translations": {
+          "fa": "اسمت چیه؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_02",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "lemma": "Wie heißt du?",
+        "display_lemma": "Wie heißt du?",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_my_name_02"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_02",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "lexeme_ref": "lx_my_name_02",
+        "surface_form": "Wie heißt du?",
+        "display_form": "Wie heißt du?",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_02",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "text": {
+          "de": "Wie heißt du?"
+        },
+        "translations": {
+          "fa": "اسمت چیه؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_my_name_02"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_03",
+      "data": {
+        "slug": "de_pre_a1_my_name_03",
+        "lesson_key": "prea1-de-my-name-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ich bin Leo."
+        },
+        "translations": {
+          "fa": "من لئو هستم."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_03",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "lemma": "Ich bin Leo.",
+        "display_lemma": "Ich bin Leo.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_my_name_03"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_03",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "lexeme_ref": "lx_my_name_03",
+        "surface_form": "Ich bin Leo.",
+        "display_form": "Ich bin Leo.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_03",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "text": {
+          "de": "Ich bin Leo."
+        },
+        "translations": {
+          "fa": "من لئو هستم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_my_name_03"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_04",
+      "data": {
+        "slug": "de_pre_a1_my_name_04",
+        "lesson_key": "prea1-de-my-name-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Und du?"
+        },
+        "translations": {
+          "fa": "و تو؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_04",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "lemma": "Und du?",
+        "display_lemma": "Und du?",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_my_name_04"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_04",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "lexeme_ref": "lx_my_name_04",
+        "surface_form": "Und du?",
+        "display_form": "Und du?",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_04",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "text": {
+          "de": "Und du?"
+        },
+        "translations": {
+          "fa": "و تو؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_my_name_04"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_05",
+      "data": {
+        "slug": "de_pre_a1_my_name_05",
+        "lesson_key": "prea1-de-my-name-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Mein Name ist Anna."
+        },
+        "translations": {
+          "fa": "اسم من آناست."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_05",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "lemma": "Mein Name ist Anna.",
+        "display_lemma": "Mein Name ist Anna.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_my_name_05"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_05",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "lexeme_ref": "lx_my_name_05",
+        "surface_form": "Mein Name ist Anna.",
+        "display_form": "Mein Name ist Anna.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_05",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "text": {
+          "de": "Mein Name ist Anna."
+        },
+        "translations": {
+          "fa": "اسم من آناست."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_my_name_05"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_my_name_06",
+      "data": {
+        "slug": "de_pre_a1_my_name_06",
+        "lesson_key": "prea1-de-my-name-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Freut mich."
+        },
+        "translations": {
+          "fa": "خوشوقتم."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_my_name_06",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "lemma": "Freut mich.",
+        "display_lemma": "Freut mich.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_my_name_06"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_my_name_06",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "lexeme_ref": "lx_my_name_06",
+        "surface_form": "Freut mich.",
+        "display_form": "Freut mich.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_my_name_06",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "text": {
+          "de": "Freut mich."
+        },
+        "translations": {
+          "fa": "خوشوقتم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_my_name_06"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_my_name_core",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "slug": "prea1-de-my-name-grammar",
+        "title": "Mein Name",
+        "rule_summary": "Use Ich heiße … or Ich bin … to give a name; Wie heißt du? asks an informal partner’s name.",
+        "explanation": {
+          "fa": "در آلمانی فاعل معمولاً گفته می‌شود: «Ich heiße …». فعل با شخص تغییر می‌کند، اما در Pre-A1 عبارت را یک تکه یاد می‌گیریم."
+        },
+        "examples": [
+          {
+            "de": "Ich heiße Mia.",
+            "fa": "اسم من میاست."
+          },
+          {
+            "de": "Freut mich.",
+            "fa": "خوشوقتم."
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_my_name_01",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "title": "Erstes Treffen",
+        "setting": "erstes_treffen",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "characters": [
+          "Lea",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Hallo! Ich heiße Mia.",
+            "translation_fa": "سلام! اسم من میاست."
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Hallo! Ich bin Jonas.",
+            "translation_fa": "سلام! من یوناس هستم."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Freut mich.",
+            "translation_fa": "خوشوقتم."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Mich auch.",
+            "translation_fa": "من هم همین‌طور."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_my_name_02",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "title": "Im Kurs",
+        "setting": "im_kurs",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "characters": [
+          "Sofia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Wie heißt du?",
+            "translation_fa": "اسمت چیه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Ich heiße Lea. Und du?",
+            "translation_fa": "اسم من لیاست. و تو؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Ich bin Emil.",
+            "translation_fa": "من امیل هستم."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Freut mich!",
+            "translation_fa": "خوشوقتم!"
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_meaning",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Ich heiße Mia."
+        },
+        "answer": {
+          "value": "اسم من میاست."
+        },
+        "options": [
+          "اسم من میاست.",
+          "اسمت چیه؟",
+          "من لئو هستم.",
+          "و تو؟"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Ich heiße Mia.» یعنی «اسم من میاست.».",
+          "model_answer": "اسم من میاست.",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_listen",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Mein Name ist Anna."
+        },
+        "answer": {
+          "value": "Mein Name ist Anna."
+        },
+        "options": [
+          "Mein Name ist Anna.",
+          "Ich heiße Mia.",
+          "Wie heißt du?",
+          "Ich bin Leo."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Mein Name ist Anna.» است.",
+          "model_answer": "Mein Name ist Anna.",
+          "transcript_de": "Mein Name ist Anna.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_speak",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Ich heiße Mia."
+        },
+        "answer": {
+          "expected_text": "Ich heiße Mia."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Ich heiße Mia.",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_translate",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Mein Name ist Anna.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "اسم من آناست."
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «اسم من آناست.».",
+          "model_answer": "اسم من آناست.",
+          "source_de": "Mein Name ist Anna.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_01_build",
+      "data": {
+        "lesson_key": "prea1-de-my-name-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "Ich",
+            "heiße",
+            "Mia.",
+            "Hallo"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Hallo",
+            "Ich",
+            "heiße",
+            "Mia."
+          ],
+          "text": "Hallo! Ich heiße Mia."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Hallo! Ich heiße Mia.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_meaning",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Wie heißt du?"
+        },
+        "answer": {
+          "value": "اسمت چیه؟"
+        },
+        "options": [
+          "اسمت چیه؟",
+          "اسم من میاست.",
+          "من لئو هستم.",
+          "و تو؟"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Wie heißt du?» یعنی «اسمت چیه؟».",
+          "model_answer": "اسمت چیه؟",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_listen",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Freut mich."
+        },
+        "answer": {
+          "value": "Freut mich."
+        },
+        "options": [
+          "Freut mich.",
+          "Ich heiße Mia.",
+          "Wie heißt du?",
+          "Ich bin Leo."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Freut mich.» است.",
+          "model_answer": "Freut mich.",
+          "transcript_de": "Freut mich.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_speak",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Wie heißt du?"
+        },
+        "answer": {
+          "expected_text": "Wie heißt du?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Wie heißt du?",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_translate",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Freut mich.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "خوشوقتم."
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «خوشوقتم.».",
+          "model_answer": "خوشوقتم.",
+          "source_de": "Freut mich.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_my_name_02_build",
+      "data": {
+        "lesson_key": "prea1-de-my-name-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "heißt",
+            "du",
+            "Wie"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Wie",
+            "heißt",
+            "du"
+          ],
+          "text": "Wie heißt du?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Wie heißt du?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}

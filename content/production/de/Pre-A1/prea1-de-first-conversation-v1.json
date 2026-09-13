@@ -1,0 +1,888 @@
+{
+  "batch_id": "de-de-prea1-first-conversation-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-de-first-conversation",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_01",
+      "data": {
+        "slug": "de_pre_a1_first_conversation_01",
+        "lesson_key": "prea1-de-first-conversation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Hallo, ich heiße Nina."
+        },
+        "translations": {
+          "fa": "سلام، اسم من نیناست."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_01",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "lemma": "Hallo, ich heiße Nina.",
+        "display_lemma": "Hallo, ich heiße Nina.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_01"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_01",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "lexeme_ref": "lx_first_conversation_01",
+        "surface_form": "Hallo, ich heiße Nina.",
+        "display_form": "Hallo, ich heiße Nina.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_01",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "text": {
+          "de": "Hallo, ich heiße Nina."
+        },
+        "translations": {
+          "fa": "سلام، اسم من نیناست."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_01"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_02",
+      "data": {
+        "slug": "de_pre_a1_first_conversation_02",
+        "lesson_key": "prea1-de-first-conversation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Wie geht's?"
+        },
+        "translations": {
+          "fa": "حالت چطوره؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_02",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "lemma": "Wie geht's?",
+        "display_lemma": "Wie geht's?",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_02"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_02",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "lexeme_ref": "lx_first_conversation_02",
+        "surface_form": "Wie geht's?",
+        "display_form": "Wie geht's?",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_02",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "text": {
+          "de": "Wie geht's?"
+        },
+        "translations": {
+          "fa": "حالت چطوره؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_02"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_03",
+      "data": {
+        "slug": "de_pre_a1_first_conversation_03",
+        "lesson_key": "prea1-de-first-conversation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Gut, danke."
+        },
+        "translations": {
+          "fa": "خوبم، ممنون."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_03",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "lemma": "Gut, danke.",
+        "display_lemma": "Gut, danke.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_03"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_03",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "lexeme_ref": "lx_first_conversation_03",
+        "surface_form": "Gut, danke.",
+        "display_form": "Gut, danke.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_03",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "text": {
+          "de": "Gut, danke."
+        },
+        "translations": {
+          "fa": "خوبم، ممنون."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_03"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_04",
+      "data": {
+        "slug": "de_pre_a1_first_conversation_04",
+        "lesson_key": "prea1-de-first-conversation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Und dir?"
+        },
+        "translations": {
+          "fa": "تو چطور؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_04",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "lemma": "Und dir?",
+        "display_lemma": "Und dir?",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_04"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_04",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "lexeme_ref": "lx_first_conversation_04",
+        "surface_form": "Und dir?",
+        "display_form": "Und dir?",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_04",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "text": {
+          "de": "Und dir?"
+        },
+        "translations": {
+          "fa": "تو چطور؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_04"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_05",
+      "data": {
+        "slug": "de_pre_a1_first_conversation_05",
+        "lesson_key": "prea1-de-first-conversation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Freut mich."
+        },
+        "translations": {
+          "fa": "خوشوقتم."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_05",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "lemma": "Freut mich.",
+        "display_lemma": "Freut mich.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_05"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_05",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "lexeme_ref": "lx_first_conversation_05",
+        "surface_form": "Freut mich.",
+        "display_form": "Freut mich.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_05",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "text": {
+          "de": "Freut mich."
+        },
+        "translations": {
+          "fa": "خوشوقتم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_05"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_06",
+      "data": {
+        "slug": "de_pre_a1_first_conversation_06",
+        "lesson_key": "prea1-de-first-conversation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Tschüss, bis bald!"
+        },
+        "translations": {
+          "fa": "فعلاً، به‌زودی می‌بینمت!"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_06",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "lemma": "Tschüss, bis bald!",
+        "display_lemma": "Tschüss, bis bald!",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_06"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_06",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "lexeme_ref": "lx_first_conversation_06",
+        "surface_form": "Tschüss, bis bald!",
+        "display_form": "Tschüss, bis bald!",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_06",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "text": {
+          "de": "Tschüss, bis bald!"
+        },
+        "translations": {
+          "fa": "فعلاً، به‌زودی می‌بینمت!"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_conversation_06"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_first_conversation_core",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "slug": "prea1-de-first-conversation-grammar",
+        "title": "Mein erstes Gespräch",
+        "rule_summary": "A first conversation can be built from memorized chunks while preserving German word order.",
+        "explanation": {
+          "fa": "هدف این واحد روان‌کردن چند تکهٔ آشناست؛ هنوز لازم نیست همهٔ قواعد پشت جمله‌ها را توضیح بدهی."
+        },
+        "examples": [
+          {
+            "de": "Hallo, ich heiße Nina.",
+            "fa": "سلام، اسم من نیناست."
+          },
+          {
+            "de": "Tschüss, bis bald!",
+            "fa": "فعلاً، به‌زودی می‌بینمت!"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_first_conversation_01",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "title": "Neue Person",
+        "setting": "neue_person",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "characters": [
+          "Anna",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Hallo, ich heiße Clara.",
+            "translation_fa": "سلام، اسم من کلاراست."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Hallo, ich bin Leon.",
+            "translation_fa": "سلام، من لئون هستم."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Freut mich.",
+            "translation_fa": "خوشوقتم."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Mich auch.",
+            "translation_fa": "من هم همین‌طور."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_first_conversation_02",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "title": "Kurzes Gespräch",
+        "setting": "kurzes_gesprach",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "characters": [
+          "Mia",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Hallo! Wie geht's?",
+            "translation_fa": "سلام! حالت چطوره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Gut, danke. Und dir?",
+            "translation_fa": "خوبم، ممنون. تو چطور؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Auch gut.",
+            "translation_fa": "من هم خوبم."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Tschüss, bis bald!",
+            "translation_fa": "فعلاً، به‌زودی می‌بینمت!"
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_meaning",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Hallo, ich heiße Nina."
+        },
+        "answer": {
+          "value": "سلام، اسم من نیناست."
+        },
+        "options": [
+          "سلام، اسم من نیناست.",
+          "حالت چطوره؟",
+          "خوبم، ممنون.",
+          "تو چطور؟"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Hallo, ich heiße Nina.» یعنی «سلام، اسم من نیناست.».",
+          "model_answer": "سلام، اسم من نیناست.",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_listen",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Freut mich."
+        },
+        "answer": {
+          "value": "Freut mich."
+        },
+        "options": [
+          "Freut mich.",
+          "Hallo, ich heiße Nina.",
+          "Wie geht's?",
+          "Gut, danke."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Freut mich.» است.",
+          "model_answer": "Freut mich.",
+          "transcript_de": "Freut mich.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_speak",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Hallo, ich heiße Nina."
+        },
+        "answer": {
+          "expected_text": "Hallo, ich heiße Nina."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Hallo, ich heiße Nina.",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_translate",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Freut mich.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "خوشوقتم."
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «خوشوقتم.».",
+          "model_answer": "خوشوقتم.",
+          "source_de": "Freut mich.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_build",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "ich",
+            "heiße",
+            "Clara.",
+            "Hallo"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Hallo",
+            "ich",
+            "heiße",
+            "Clara."
+          ],
+          "text": "Hallo, ich heiße Clara."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Hallo, ich heiße Clara.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_meaning",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Wie geht's?"
+        },
+        "answer": {
+          "value": "حالت چطوره؟"
+        },
+        "options": [
+          "حالت چطوره؟",
+          "سلام، اسم من نیناست.",
+          "خوبم، ممنون.",
+          "تو چطور؟"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Wie geht's?» یعنی «حالت چطوره؟».",
+          "model_answer": "حالت چطوره؟",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_listen",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Tschüss, bis bald!"
+        },
+        "answer": {
+          "value": "Tschüss, bis bald!"
+        },
+        "options": [
+          "Tschüss, bis bald!",
+          "Hallo, ich heiße Nina.",
+          "Wie geht's?",
+          "Gut, danke."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Tschüss, bis bald!» است.",
+          "model_answer": "Tschüss, bis bald!",
+          "transcript_de": "Tschüss, bis bald!",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_speak",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Wie geht's?"
+        },
+        "answer": {
+          "expected_text": "Wie geht's?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Wie geht's?",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_translate",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Tschüss, bis bald!",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "فعلاً، به‌زودی می‌بینمت!"
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «فعلاً، به‌زودی می‌بینمت!».",
+          "model_answer": "فعلاً، به‌زودی می‌بینمت!",
+          "source_de": "Tschüss, bis bald!",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_build",
+      "data": {
+        "lesson_key": "prea1-de-first-conversation-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "Wie",
+            "geht's",
+            "Hallo"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Hallo",
+            "Wie",
+            "geht's"
+          ],
+          "text": "Hallo! Wie geht's?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Hallo! Wie geht's?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}

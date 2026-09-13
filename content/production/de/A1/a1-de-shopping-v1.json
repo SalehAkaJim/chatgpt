@@ -1,0 +1,892 @@
+{
+  "batch_id": "de-de-a1-shopping-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A1",
+  "curriculum_unit": "a1-de-shopping",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_01",
+      "data": {
+        "slug": "de_a1_shopping_01",
+        "lesson_key": "a1-de-shopping-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ich suche eine Jacke."
+        },
+        "translations": {
+          "fa": "دنبال یک کت هستم."
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_01",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "lemma": "Ich suche eine Jacke.",
+        "display_lemma": "Ich suche eine Jacke.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_shopping_01"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_01",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "lexeme_ref": "lx_shopping_01",
+        "surface_form": "Ich suche eine Jacke.",
+        "display_form": "Ich suche eine Jacke.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_01",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "text": {
+          "de": "Ich suche eine Jacke."
+        },
+        "translations": {
+          "fa": "دنبال یک کت هستم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_shopping_01"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_02",
+      "data": {
+        "slug": "de_a1_shopping_02",
+        "lesson_key": "a1-de-shopping-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Haben Sie das in M?"
+        },
+        "translations": {
+          "fa": "این را سایز M دارید؟"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_02",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "lemma": "Haben Sie das in M?",
+        "display_lemma": "Haben Sie das in M?",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_shopping_02"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_02",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "lexeme_ref": "lx_shopping_02",
+        "surface_form": "Haben Sie das in M?",
+        "display_form": "Haben Sie das in M?",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_02",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "text": {
+          "de": "Haben Sie das in M?"
+        },
+        "translations": {
+          "fa": "این را سایز M دارید؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_shopping_02"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_03",
+      "data": {
+        "slug": "de_a1_shopping_03",
+        "lesson_key": "a1-de-shopping-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Welche Größe?"
+        },
+        "translations": {
+          "fa": "چه سایزی؟"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_03",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "lemma": "Welche Größe?",
+        "display_lemma": "Welche Größe?",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_shopping_03"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_03",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "lexeme_ref": "lx_shopping_03",
+        "surface_form": "Welche Größe?",
+        "display_form": "Welche Größe?",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_03",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "text": {
+          "de": "Welche Größe?"
+        },
+        "translations": {
+          "fa": "چه سایزی؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_shopping_03"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_04",
+      "data": {
+        "slug": "de_a1_shopping_04",
+        "lesson_key": "a1-de-shopping-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Das passt gut."
+        },
+        "translations": {
+          "fa": "این خوب اندازه است."
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_04",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "lemma": "Das passt gut.",
+        "display_lemma": "Das passt gut.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_shopping_04"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_04",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "lexeme_ref": "lx_shopping_04",
+        "surface_form": "Das passt gut.",
+        "display_form": "Das passt gut.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_04",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "text": {
+          "de": "Das passt gut."
+        },
+        "translations": {
+          "fa": "این خوب اندازه است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_shopping_04"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_05",
+      "data": {
+        "slug": "de_a1_shopping_05",
+        "lesson_key": "a1-de-shopping-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Das ist zu groß."
+        },
+        "translations": {
+          "fa": "این خیلی بزرگ است."
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_05",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "lemma": "Das ist zu groß.",
+        "display_lemma": "Das ist zu groß.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_shopping_05"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_05",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "lexeme_ref": "lx_shopping_05",
+        "surface_form": "Das ist zu groß.",
+        "display_form": "Das ist zu groß.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_05",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "text": {
+          "de": "Das ist zu groß."
+        },
+        "translations": {
+          "fa": "این خیلی بزرگ است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_shopping_05"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_06",
+      "data": {
+        "slug": "de_a1_shopping_06",
+        "lesson_key": "a1-de-shopping-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ich nehme es."
+        },
+        "translations": {
+          "fa": "آن را برمی‌دارم / می‌خرم."
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_06",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "lemma": "Ich nehme es.",
+        "display_lemma": "Ich nehme es.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_shopping_06"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_06",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "lexeme_ref": "lx_shopping_06",
+        "surface_form": "Ich nehme es.",
+        "display_form": "Ich nehme es.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_06",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "text": {
+          "de": "Ich nehme es."
+        },
+        "translations": {
+          "fa": "آن را برمی‌دارم / می‌خرم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_shopping_06"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_shopping_core",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "slug": "a1-de-shopping-grammar",
+        "title": "Im Geschäft",
+        "rule_summary": "Formal shop interactions often use Haben Sie …? and Ich suche …; Sie remains capitalized.",
+        "explanation": {
+          "fa": "با فروشندهٔ ناآشنا «Sie» رسمی طبیعی است: «Haben Sie …?»"
+        },
+        "examples": [
+          {
+            "de": "Ich suche eine Jacke.",
+            "fa": "دنبال یک کت هستم."
+          },
+          {
+            "de": "Ich nehme es.",
+            "fa": "آن را برمی‌دارم / می‌خرم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_shopping_01",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "title": "Eine Jacke",
+        "setting": "eine_jacke",
+        "cefr": "A1",
+        "topic": "shopping",
+        "characters": [
+          "Nina",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Guten Tag. Ich suche eine Jacke.",
+            "translation_fa": "روز بخیر. دنبال یک کت هستم."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Welche Größe?",
+            "translation_fa": "چه سایزی؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "M, bitte.",
+            "translation_fa": "M لطفاً."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Hier, bitte.",
+            "translation_fa": "بفرمایید."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_shopping_02",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "title": "Anprobieren",
+        "setting": "anprobieren",
+        "cefr": "A1",
+        "topic": "shopping",
+        "characters": [
+          "Clara",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Passt die Jacke?",
+            "translation_fa": "کت اندازه است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Sie ist etwas zu groß.",
+            "translation_fa": "کمی زیادی بزرگ است."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Möchten Sie S probieren?",
+            "translation_fa": "می‌خواهید S را امتحان کنید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Ja, gern.",
+            "translation_fa": "بله، با میل."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_01_meaning",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Ich suche eine Jacke."
+        },
+        "answer": {
+          "value": "دنبال یک کت هستم."
+        },
+        "options": [
+          "دنبال یک کت هستم.",
+          "این را سایز M دارید؟",
+          "چه سایزی؟",
+          "این خوب اندازه است."
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Ich suche eine Jacke.» یعنی «دنبال یک کت هستم.».",
+          "model_answer": "دنبال یک کت هستم.",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_01_listen",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Das ist zu groß."
+        },
+        "answer": {
+          "value": "Das ist zu groß."
+        },
+        "options": [
+          "Das ist zu groß.",
+          "Ich suche eine Jacke.",
+          "Haben Sie das in M?",
+          "Welche Größe?"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Das ist zu groß.» است.",
+          "model_answer": "Das ist zu groß.",
+          "transcript_de": "Das ist zu groß.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_01_speak",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Ich suche eine Jacke."
+        },
+        "answer": {
+          "expected_text": "Ich suche eine Jacke."
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Ich suche eine Jacke.",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_01_translate",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Das ist zu groß.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "این خیلی بزرگ است."
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «این خیلی بزرگ است.».",
+          "model_answer": "این خیلی بزرگ است.",
+          "source_de": "Das ist zu groß.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_01_build",
+      "data": {
+        "lesson_key": "a1-de-shopping-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "Tag.",
+            "Ich",
+            "suche",
+            "eine",
+            "Jacke.",
+            "Guten"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Guten",
+            "Tag.",
+            "Ich",
+            "suche",
+            "eine",
+            "Jacke."
+          ],
+          "text": "Guten Tag. Ich suche eine Jacke."
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Guten Tag. Ich suche eine Jacke.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_02_meaning",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Haben Sie das in M?"
+        },
+        "answer": {
+          "value": "این را سایز M دارید؟"
+        },
+        "options": [
+          "این را سایز M دارید؟",
+          "دنبال یک کت هستم.",
+          "چه سایزی؟",
+          "این خوب اندازه است."
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Haben Sie das in M?» یعنی «این را سایز M دارید؟».",
+          "model_answer": "این را سایز M دارید؟",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_02_listen",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Ich nehme es."
+        },
+        "answer": {
+          "value": "Ich nehme es."
+        },
+        "options": [
+          "Ich nehme es.",
+          "Ich suche eine Jacke.",
+          "Haben Sie das in M?",
+          "Welche Größe?"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Ich nehme es.» است.",
+          "model_answer": "Ich nehme es.",
+          "transcript_de": "Ich nehme es.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_02_speak",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Haben Sie das in M?"
+        },
+        "answer": {
+          "expected_text": "Haben Sie das in M?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Haben Sie das in M?",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_02_translate",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Ich nehme es.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "آن را برمی‌دارم / می‌خرم."
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «آن را برمی‌دارم / می‌خرم.».",
+          "model_answer": "آن را برمی‌دارم / می‌خرم.",
+          "source_de": "Ich nehme es.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_02_build",
+      "data": {
+        "lesson_key": "a1-de-shopping-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "die",
+            "Jacke",
+            "Passt"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Passt",
+            "die",
+            "Jacke"
+          ],
+          "text": "Passt die Jacke?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "shopping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Passt die Jacke?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}
