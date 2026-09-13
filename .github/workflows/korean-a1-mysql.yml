@@ -1,9 +1,9 @@
-name: Korean A1 MySQL Integration
+name: Korean A2 MySQL Integration
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['.github/korean-a1-mysql-trigger']
+    paths: ['.github/korean-a2-mysql-trigger']
 jobs:
   mysql-9-import:
     runs-on: ubuntu-latest
@@ -23,14 +23,16 @@ jobs:
       - name: Bootstrap
         run: |
           DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
-          for f in database/schema.sql database/migrations/001_curriculum.sql database/migrations/002_multilingual_core.sql database/migrations/003_lesson_item_lexemes.sql database/migrations/004_level_import_audio.sql database/migrations/005_writing_exercises.sql database/seed/cefr.sql database/seed/languages.sql database/seed/skills-topics.sql database/seed/english-a1-curriculum.sql database/seed/language-variants-courses.sql database/seed/korean-prea1-curriculum.sql database/seed/korean-a1-curriculum.sql; do $DB < "$f"; done
-      - run: |
-          for f in content/production/ko/A1/*.json; do python scripts/validate_content.py "$f"; done
-          python database/import/ko/a1.py --dry-run
+          for f in database/schema.sql database/migrations/001_curriculum.sql database/migrations/002_multilingual_core.sql database/migrations/003_lesson_item_lexemes.sql database/migrations/004_level_import_audio.sql database/migrations/005_writing_exercises.sql database/seed/cefr.sql database/seed/languages.sql database/seed/skills-topics.sql database/seed/english-a1-curriculum.sql database/seed/language-variants-courses.sql database/seed/korean-prea1-curriculum.sql database/seed/korean-a1-curriculum.sql database/seed/korean-a2-curriculum.sql; do $DB < "$f"; done
+      - name: Validate and import through A2
+        run: |
+          for f in content/production/ko/A2/*.json; do python scripts/validate_content.py "$f"; done
+          python database/import/ko/a2.py --dry-run
           python database/import/ko/pre_a1.py --allow-unreviewed
           python database/import/ko/a1.py --allow-unreviewed
+          python database/import/ko/a2.py --allow-unreviewed
       - name: Verify counts and idempotency
         run: |
           q(){ mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "$1"; }
-          units=$(q "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-ko-kr' JOIN cefr_levels l ON l.id=cu.cefr_level_id AND l.code='A1';"); lessons=$(q "SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id AND c.slug='fa-ko-kr' JOIN cefr_levels l ON l.id=le.cefr_level_id AND l.code='A1';"); exercises=$(q "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN cefr_levels l ON l.id=le.cefr_level_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr' AND l.code='A1';"); test "$units" = 10; test "$lessons" = 20; test "$exercises" = 100
-          before=$(q "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr'),'|',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr'));"); python database/import/ko/a1.py --allow-unreviewed; after=$(q "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr'),'|',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr'));"); test "$before" = "$after"
+          units=$(q "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-ko-kr' JOIN cefr_levels l ON l.id=cu.cefr_level_id AND l.code='A2';"); lessons=$(q "SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id AND c.slug='fa-ko-kr' JOIN cefr_levels l ON l.id=le.cefr_level_id AND l.code='A2';"); exercises=$(q "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN cefr_levels l ON l.id=le.cefr_level_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr' AND l.code='A2';"); test "$units" = 10; test "$lessons" = 20; test "$exercises" = 100
+          before=$(q "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr'),'|',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr'));"); python database/import/ko/a2.py --allow-unreviewed; after=$(q "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr'),'|',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr'));"); test "$before" = "$after"
