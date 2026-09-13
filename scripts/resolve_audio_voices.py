@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Resolve and lock all voices required by an audio manifest without generating audio.
 
-Dialogue character selection is persona-aware: gender is enforced, harsh/sexualized/
-age-mismatched voices are rejected, and the highest-scoring compatible voice is
-chosen deterministically instead of pseudo-randomly.
+Dialogue character selection is persona-aware: language and gender are enforced,
+harsh/sexualized/age-mismatched voices are rejected, and the highest-scoring
+compatible voice is chosen deterministically instead of pseudo-randomly.
 """
 from __future__ import annotations
 
@@ -87,7 +87,7 @@ def _shared_candidates(api_key: str, spec: dict, locale: str, search: str | None
                         "accent": (raw.get("accent") or "").lower(),
                         "age": (raw.get("age") or "").lower(),
                         "category": (raw.get("category") or category or "").lower(),
-                        "language": (raw.get("language") or language).lower(),
+                        "language": (raw.get("language") or "").lower(),
                         "use_case": (raw.get("use_case") or "").lower(),
                         "descriptive": (raw.get("descriptive") or "").lower(),
                     },
@@ -180,16 +180,10 @@ def _resolve_from_library(api_key: str, voice_key: str, spec: dict, locale: str,
             v for v in _shared_candidates(api_key, candidate_spec, locale)
             if v["voice_id"] not in reserved
         ]
-        # Keep the original persona requirements for scoring and safety even
-        # when we relax provider-side metadata filters such as accent.
         return _rank_character_candidates(available, spec)
 
     ranked = ranked_for(spec)
     if not ranked and spec.get("preferred_accent"):
-        # Voice Library metadata is inconsistent: a voice can be verified for
-        # de-DE while its top-level accent is blank/non-standard. Prefer the
-        # requested accent first, then broaden only that metadata filter while
-        # still requiring the same locale/language, gender and persona safety.
         accent_fallback_spec = dict(spec)
         accent_fallback_spec.pop("preferred_accent", None)
         ranked = ranked_for(accent_fallback_spec)
