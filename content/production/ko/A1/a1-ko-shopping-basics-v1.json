@@ -1,0 +1,851 @@
+{
+  "batch_id": "ko-kr-a1-shopping-basics-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-ko-shopping-basics",
+  "generator": "gpt-5.6-sol:korean-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_01",
+      "data": {
+        "slug": "ko_a1_shopping_basics_igeo",
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "concept_type": "lexical",
+        "part_of_speech": "pronoun",
+        "forms": {
+          "ko": "이거"
+        },
+        "translations": {
+          "fa": "این چیز"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_01",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "lemma": "이거",
+        "display_lemma": "이거",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "pronoun",
+        "concept_refs": [
+          "ko_a1_shopping_basics_igeo"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_01",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "lexeme_ref": "lx_shopping_basics_01",
+        "surface_form": "이거",
+        "display_form": "이거",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_02",
+      "data": {
+        "slug": "ko_a1_shopping_basics_eolma",
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "concept_type": "lexical",
+        "part_of_speech": "question_word",
+        "forms": {
+          "ko": "얼마"
+        },
+        "translations": {
+          "fa": "چقدر / چه قیمت"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_02",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "lemma": "얼마",
+        "display_lemma": "얼마",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "question_word",
+        "concept_refs": [
+          "ko_a1_shopping_basics_eolma"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_02",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "lexeme_ref": "lx_shopping_basics_02",
+        "surface_form": "얼마",
+        "display_form": "얼마",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_03",
+      "data": {
+        "slug": "ko_a1_shopping_basics_won",
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "원"
+        },
+        "translations": {
+          "fa": "وون؛ واحد پول کره"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_03",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "lemma": "원",
+        "display_lemma": "원",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a1_shopping_basics_won"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_03",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "lexeme_ref": "lx_shopping_basics_03",
+        "surface_form": "원",
+        "display_form": "원",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_04",
+      "data": {
+        "slug": "ko_a1_shopping_basics_ssada",
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "ko": "싸다"
+        },
+        "translations": {
+          "fa": "ارزان بودن"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_04",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "lemma": "싸다",
+        "display_lemma": "싸다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "ko_a1_shopping_basics_ssada"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_04",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "lexeme_ref": "lx_shopping_basics_04",
+        "surface_form": "싸다",
+        "display_form": "싸다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_05",
+      "data": {
+        "slug": "ko_a1_shopping_basics_bissada",
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "ko": "비싸다"
+        },
+        "translations": {
+          "fa": "گران بودن"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_05",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "lemma": "비싸다",
+        "display_lemma": "비싸다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "ko_a1_shopping_basics_bissada"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_05",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "lexeme_ref": "lx_shopping_basics_05",
+        "surface_form": "비싸다",
+        "display_form": "비싸다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_basics_06",
+      "data": {
+        "slug": "ko_a1_shopping_basics_sada",
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "사다"
+        },
+        "translations": {
+          "fa": "خریدن"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_basics_06",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "lemma": "사다",
+        "display_lemma": "사다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_a1_shopping_basics_sada"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_basics_06",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "lexeme_ref": "lx_shopping_basics_06",
+        "surface_form": "사다",
+        "display_form": "사다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_basics_01",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "text": {
+          "ko": "이거 얼마예요?"
+        },
+        "translations": {
+          "fa": "این چقدر است؟"
+        },
+        "intent": "ask_price",
+        "concept_refs": [
+          "ko_a1_shopping_basics_igeo",
+          "ko_a1_shopping_basics_eolma"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_basics_02",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "text": {
+          "ko": "오천 원이에요."
+        },
+        "translations": {
+          "fa": "پنج هزار وون است."
+        },
+        "intent": "state_price",
+        "concept_refs": [
+          "ko_a1_shopping_basics_won"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_basics_03",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "text": {
+          "ko": "이거 좀 비싸요."
+        },
+        "translations": {
+          "fa": "این کمی گران است."
+        },
+        "intent": "evaluate_price",
+        "concept_refs": [
+          "ko_a1_shopping_basics_igeo",
+          "ko_a1_shopping_basics_bissada"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_basics_04",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "text": {
+          "ko": "그럼 이거 살게요."
+        },
+        "translations": {
+          "fa": "پس این را می‌خرم."
+        },
+        "intent": "decide_purchase",
+        "concept_refs": [
+          "ko_a1_shopping_basics_igeo",
+          "ko_a1_shopping_basics_sada"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_shopping_basics_core",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "slug": "a1-ko-shopping-basics-grammar",
+        "title": "가격: 숫자 + 원",
+        "rule_summary": "Prices are expressed with Sino-Korean numbers followed by 원. 얼마예요? is the standard beginner question for a price.",
+        "explanation": {
+          "fa": "برای قیمت، عدد چینی-کره‌ای قبل از 원 می‌آید. برای پرسیدن قیمت، 이거 얼마예요? یک الگوی بسیار طبیعی و پرکاربرد است."
+        },
+        "examples": [
+          {
+            "ko": "오천 원이에요.",
+            "fa": "پنج هزار وون است."
+          },
+          {
+            "ko": "이거 얼마예요?",
+            "fa": "این چقدر است؟"
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_shopping_basics_01",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "title": "가격 묻기",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "shopping",
+        "characters": [
+          "준호",
+          "유나"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "준호",
+            "text": "이거 얼마예요?",
+            "translation_fa": "این چقدر است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "유나",
+            "text": "오천 원이에요.",
+            "translation_fa": "پنج هزار وون است."
+          },
+          {
+            "order": 3,
+            "speaker": "준호",
+            "text": "조금 비싸네요.",
+            "translation_fa": "کمی گران است."
+          },
+          {
+            "order": 4,
+            "speaker": "유나",
+            "text": "네, 이건 좀 비싸요.",
+            "translation_fa": "بله، این یکی کمی گران است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_shopping_basics_02",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "title": "하나 살게요",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "shopping",
+        "characters": [
+          "태호",
+          "지민"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "태호",
+            "text": "이거하고 저거, 뭐가 더 싸요?",
+            "translation_fa": "این و آن، کدام ارزان‌تر است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "지민",
+            "text": "이게 더 싸요.",
+            "translation_fa": "این یکی ارزان‌تر است."
+          },
+          {
+            "order": 3,
+            "speaker": "태호",
+            "text": "그럼 이거 살게요.",
+            "translation_fa": "پس این را می‌خرم."
+          },
+          {
+            "order": 4,
+            "speaker": "지민",
+            "text": "네, 감사합니다.",
+            "translation_fa": "بله، ممنونم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_meaning",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "이거 얼마예요?"
+        },
+        "answer": {
+          "value": "این چقدر است؟"
+        },
+        "options": [
+          "این چقدر است؟",
+          "پنج هزار وون است.",
+          "این کمی گران است.",
+          "پس این را می‌خرم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 이거 얼마예요? — این چقدر است؟",
+          "model_answer": "이거 얼마예요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_listen",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "오천 원이에요."
+        },
+        "answer": {
+          "value": "오천 원이에요."
+        },
+        "options": [
+          "오천 원이에요.",
+          "이거 얼마예요?",
+          "이거 좀 비싸요.",
+          "그럼 이거 살게요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오천 원이에요. — پنج هزار وون است.",
+          "model_answer": "오천 원이에요.",
+          "transcript_ko": "오천 원이에요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_speak",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "이거 얼마예요?"
+        },
+        "answer": {
+          "expected_text": "이거 얼마예요?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 이거 얼마예요? — این چقدر است؟",
+          "model_answer": "이거 얼마예요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_build",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "원이에요.",
+            "오천"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "오천",
+            "원이에요."
+          ],
+          "value": "오천 원이에요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오천 원이에요. — پنج هزار وون است.",
+          "model_answer": "오천 원이에요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_01_dialogue",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_shopping_basics_01",
+          "question_fa": "کدام گزینه با معنی «این چقدر است؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "이거 얼마예요?"
+        },
+        "options": [
+          "이거 얼마예요?",
+          "오천 원이에요.",
+          "이거 좀 비싸요.",
+          "그럼 이거 살게요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 이거 얼마예요? — این چقدر است؟",
+          "model_answer": "이거 얼마예요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_meaning",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "이거 좀 비싸요."
+        },
+        "answer": {
+          "value": "این کمی گران است."
+        },
+        "options": [
+          "این کمی گران است.",
+          "این چقدر است؟",
+          "پنج هزار وون است.",
+          "پس این را می‌خرم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 이거 좀 비싸요. — این کمی گران است.",
+          "model_answer": "이거 좀 비싸요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_listen",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "그럼 이거 살게요."
+        },
+        "answer": {
+          "value": "그럼 이거 살게요."
+        },
+        "options": [
+          "그럼 이거 살게요.",
+          "이거 좀 비싸요.",
+          "이거 얼마예요?",
+          "오천 원이에요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 그럼 이거 살게요. — پس این را می‌خرم.",
+          "model_answer": "그럼 이거 살게요.",
+          "transcript_ko": "그럼 이거 살게요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_speak",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "이거 좀 비싸요."
+        },
+        "answer": {
+          "expected_text": "이거 좀 비싸요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 이거 좀 비싸요. — این کمی گران است.",
+          "model_answer": "이거 좀 비싸요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_build",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "이거",
+            "살게요.",
+            "그럼"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "그럼",
+            "이거",
+            "살게요."
+          ],
+          "value": "그럼 이거 살게요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 그럼 이거 살게요. — پس این را می‌خرم.",
+          "model_answer": "그럼 이거 살게요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_basics_02_dialogue",
+      "data": {
+        "lesson_key": "a1-ko-shopping-basics-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_shopping_basics_02",
+          "question_fa": "کدام گزینه با معنی «این کمی گران است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "이거 좀 비싸요."
+        },
+        "options": [
+          "이거 좀 비싸요.",
+          "이거 얼마예요?",
+          "오천 원이에요.",
+          "그럼 이거 살게요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 이거 좀 비싸요. — این کمی گران است.",
+          "model_answer": "이거 좀 비싸요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

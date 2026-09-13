@@ -1,0 +1,849 @@
+{
+  "batch_id": "ko-kr-a1-cafe-orders-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-ko-cafe-orders",
+  "generator": "gpt-5.6-sol:korean-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_orders_01",
+      "data": {
+        "slug": "ko_a1_cafe_orders_americano",
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "아메리카노"
+        },
+        "translations": {
+          "fa": "آمریکانو"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cafe_orders_01",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "lemma": "아메리카노",
+        "display_lemma": "아메리카노",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a1_cafe_orders_americano"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cafe_orders_01",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "lexeme_ref": "lx_cafe_orders_01",
+        "surface_form": "아메리카노",
+        "display_form": "아메리카노",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_orders_02",
+      "data": {
+        "slug": "ko_a1_cafe_orders_mul",
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "물"
+        },
+        "translations": {
+          "fa": "آب"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cafe_orders_02",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "lemma": "물",
+        "display_lemma": "물",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a1_cafe_orders_mul"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cafe_orders_02",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "lexeme_ref": "lx_cafe_orders_02",
+        "surface_form": "물",
+        "display_form": "물",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_orders_03",
+      "data": {
+        "slug": "ko_a1_cafe_orders_ppang",
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "빵"
+        },
+        "translations": {
+          "fa": "نان / شیرینی"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cafe_orders_03",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "lemma": "빵",
+        "display_lemma": "빵",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a1_cafe_orders_ppang"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cafe_orders_03",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "lexeme_ref": "lx_cafe_orders_03",
+        "surface_form": "빵",
+        "display_form": "빵",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_orders_04",
+      "data": {
+        "slug": "ko_a1_cafe_orders_jan",
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "concept_type": "lexical",
+        "part_of_speech": "counter",
+        "forms": {
+          "ko": "잔"
+        },
+        "translations": {
+          "fa": "لیوان / فنجان؛ شمارندهٔ نوشیدنی"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cafe_orders_04",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "lemma": "잔",
+        "display_lemma": "잔",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "counter",
+        "concept_refs": [
+          "ko_a1_cafe_orders_jan"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cafe_orders_04",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "lexeme_ref": "lx_cafe_orders_04",
+        "surface_form": "잔",
+        "display_form": "잔",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_orders_05",
+      "data": {
+        "slug": "ko_a1_cafe_orders_gae",
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "concept_type": "lexical",
+        "part_of_speech": "counter",
+        "forms": {
+          "ko": "개"
+        },
+        "translations": {
+          "fa": "عددشمار عمومی"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cafe_orders_05",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "lemma": "개",
+        "display_lemma": "개",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "counter",
+        "concept_refs": [
+          "ko_a1_cafe_orders_gae"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cafe_orders_05",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "lexeme_ref": "lx_cafe_orders_05",
+        "surface_form": "개",
+        "display_form": "개",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_cafe_orders_06",
+      "data": {
+        "slug": "ko_a1_cafe_orders_juseyo",
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "ko": "주세요"
+        },
+        "translations": {
+          "fa": "لطفاً بدهید"
+        },
+        "cefr": "A1",
+        "topic": "restaurants",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_cafe_orders_06",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "lemma": "주세요",
+        "display_lemma": "주세요",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "ko_a1_cafe_orders_juseyo"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_cafe_orders_06",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "lexeme_ref": "lx_cafe_orders_06",
+        "surface_form": "주세요",
+        "display_form": "주세요",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cafe_orders_01",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "text": {
+          "ko": "아메리카노 한 잔 주세요."
+        },
+        "translations": {
+          "fa": "یک فنجان آمریکانو لطفاً."
+        },
+        "intent": "order_drink",
+        "concept_refs": [
+          "ko_a1_cafe_orders_americano",
+          "ko_a1_cafe_orders_jan",
+          "ko_a1_cafe_orders_juseyo"
+        ],
+        "cefr": "A1",
+        "topic": "restaurants",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cafe_orders_02",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "text": {
+          "ko": "물도 주세요."
+        },
+        "translations": {
+          "fa": "آب هم لطفاً."
+        },
+        "intent": "order_drink",
+        "concept_refs": [
+          "ko_a1_cafe_orders_mul",
+          "ko_a1_cafe_orders_juseyo"
+        ],
+        "cefr": "A1",
+        "topic": "restaurants",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cafe_orders_03",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "text": {
+          "ko": "빵 두 개 주세요."
+        },
+        "translations": {
+          "fa": "دو عدد نان/شیرینی لطفاً."
+        },
+        "intent": "order_food",
+        "concept_refs": [
+          "ko_a1_cafe_orders_ppang",
+          "ko_a1_cafe_orders_gae",
+          "ko_a1_cafe_orders_juseyo"
+        ],
+        "cefr": "A1",
+        "topic": "restaurants",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_cafe_orders_04",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "text": {
+          "ko": "여기에서 먹어요."
+        },
+        "translations": {
+          "fa": "اینجا می‌خورم."
+        },
+        "intent": "state_dine_in",
+        "concept_refs": [],
+        "cefr": "A1",
+        "topic": "restaurants",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_cafe_orders_core",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "slug": "a1-ko-cafe-orders-grammar",
+        "title": "수량 + 단위 + 주세요",
+        "rule_summary": "Korean places a counter after a number: 한 잔 for one cup and 두 개 for two items. 주세요 turns the noun phrase into a polite request.",
+        "explanation": {
+          "fa": "در کره‌ای برای شمردن معمولاً عدد با «شمارنده» می‌آید: 한 잔 یعنی یک فنجان و 두 개 یعنی دو عدد. با 주세요 این عبارت به درخواست مؤدبانه تبدیل می‌شود."
+        },
+        "examples": [
+          {
+            "ko": "커피 한 잔 주세요.",
+            "fa": "یک فنجان قهوه لطفاً."
+          },
+          {
+            "ko": "빵 두 개 주세요.",
+            "fa": "دو عدد نان/شیرینی لطفاً."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_cafe_orders_01",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "title": "카페에서",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "restaurants",
+        "characters": [
+          "하나",
+          "도윤"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "하나",
+            "text": "어서 오세요. 뭐 드릴까요?",
+            "translation_fa": "خوش آمدید. چی میل دارید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "도윤",
+            "text": "아메리카노 한 잔 주세요.",
+            "translation_fa": "یک آمریکانو لطفاً."
+          },
+          {
+            "order": 3,
+            "speaker": "하나",
+            "text": "뜨거운 걸로 드릴까요?",
+            "translation_fa": "داغ باشد؟"
+          },
+          {
+            "order": 4,
+            "speaker": "도윤",
+            "text": "네, 뜨거운 걸로 주세요.",
+            "translation_fa": "بله، داغ لطفاً."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_cafe_orders_02",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "title": "빵도 같이",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "restaurants",
+        "characters": [
+          "서연",
+          "민수"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "서연",
+            "text": "빵도 드릴까요?",
+            "translation_fa": "نان/شیرینی هم می‌خواهید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "민수",
+            "text": "네, 두 개 주세요.",
+            "translation_fa": "بله، دو عدد لطفاً."
+          },
+          {
+            "order": 3,
+            "speaker": "서연",
+            "text": "물도 필요해요?",
+            "translation_fa": "آب هم لازم دارید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "민수",
+            "text": "네, 물도 주세요.",
+            "translation_fa": "بله، آب هم لطفاً."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_01_meaning",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "아메리카노 한 잔 주세요."
+        },
+        "answer": {
+          "value": "یک فنجان آمریکانو لطفاً."
+        },
+        "options": [
+          "یک فنجان آمریکانو لطفاً.",
+          "آب هم لطفاً.",
+          "دو عدد نان/شیرینی لطفاً.",
+          "اینجا می‌خورم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 아메리카노 한 잔 주세요. — یک فنجان آمریکانو لطفاً.",
+          "model_answer": "아메리카노 한 잔 주세요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_01_listen",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "물도 주세요."
+        },
+        "answer": {
+          "value": "물도 주세요."
+        },
+        "options": [
+          "물도 주세요.",
+          "아메리카노 한 잔 주세요.",
+          "빵 두 개 주세요.",
+          "여기에서 먹어요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 물도 주세요. — آب هم لطفاً.",
+          "model_answer": "물도 주세요.",
+          "transcript_ko": "물도 주세요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_01_speak",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "아메리카노 한 잔 주세요."
+        },
+        "answer": {
+          "expected_text": "아메리카노 한 잔 주세요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 아메리카노 한 잔 주세요. — یک فنجان آمریکانو لطفاً.",
+          "model_answer": "아메리카노 한 잔 주세요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_01_build",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "주세요.",
+            "물도"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "물도",
+            "주세요."
+          ],
+          "value": "물도 주세요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 물도 주세요. — آب هم لطفاً.",
+          "model_answer": "물도 주세요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_01_dialogue",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_cafe_orders_01",
+          "question_fa": "کدام گزینه با معنی «یک فنجان آمریکانو لطفاً.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "아메리카노 한 잔 주세요."
+        },
+        "options": [
+          "아메리카노 한 잔 주세요.",
+          "물도 주세요.",
+          "빵 두 개 주세요.",
+          "여기에서 먹어요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 아메리카노 한 잔 주세요. — یک فنجان آمریکانو لطفاً.",
+          "model_answer": "아메리카노 한 잔 주세요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_02_meaning",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "빵 두 개 주세요."
+        },
+        "answer": {
+          "value": "دو عدد نان/شیرینی لطفاً."
+        },
+        "options": [
+          "دو عدد نان/شیرینی لطفاً.",
+          "یک فنجان آمریکانو لطفاً.",
+          "آب هم لطفاً.",
+          "اینجا می‌خورم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 빵 두 개 주세요. — دو عدد نان/شیرینی لطفاً.",
+          "model_answer": "빵 두 개 주세요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_02_listen",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "여기에서 먹어요."
+        },
+        "answer": {
+          "value": "여기에서 먹어요."
+        },
+        "options": [
+          "여기에서 먹어요.",
+          "빵 두 개 주세요.",
+          "아메리카노 한 잔 주세요.",
+          "물도 주세요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 여기에서 먹어요. — اینجا می‌خورم.",
+          "model_answer": "여기에서 먹어요.",
+          "transcript_ko": "여기에서 먹어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_02_speak",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "빵 두 개 주세요."
+        },
+        "answer": {
+          "expected_text": "빵 두 개 주세요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 빵 두 개 주세요. — دو عدد نان/شیرینی لطفاً.",
+          "model_answer": "빵 두 개 주세요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_02_build",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "먹어요.",
+            "여기에서"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "여기에서",
+            "먹어요."
+          ],
+          "value": "여기에서 먹어요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 여기에서 먹어요. — اینجا می‌خورم.",
+          "model_answer": "여기에서 먹어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_cafe_orders_02_dialogue",
+      "data": {
+        "lesson_key": "a1-ko-cafe-orders-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_cafe_orders_02",
+          "question_fa": "کدام گزینه با معنی «دو عدد نان/شیرینی لطفاً.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "빵 두 개 주세요."
+        },
+        "options": [
+          "빵 두 개 주세요.",
+          "아메리카노 한 잔 주세요.",
+          "물도 주세요.",
+          "여기에서 먹어요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 빵 두 개 주세요. — دو عدد نان/شیرینی لطفاً.",
+          "model_answer": "빵 두 개 주세요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

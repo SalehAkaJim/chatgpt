@@ -1,0 +1,852 @@
+{
+  "batch_id": "ko-kr-a1-time-and-schedule-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-ko-time-and-schedule",
+  "generator": "gpt-5.6-sol:korean-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_time_and_schedule_01",
+      "data": {
+        "slug": "ko_a1_time_and_schedule_sigye",
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "시계"
+        },
+        "translations": {
+          "fa": "ساعت / ساعت مچی"
+        },
+        "cefr": "A1",
+        "topic": "time",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_time_and_schedule_01",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "lemma": "시계",
+        "display_lemma": "시계",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_sigye"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_time_and_schedule_01",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "lexeme_ref": "lx_time_and_schedule_01",
+        "surface_form": "시계",
+        "display_form": "시계",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_time_and_schedule_02",
+      "data": {
+        "slug": "ko_a1_time_and_schedule_si",
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "concept_type": "lexical",
+        "part_of_speech": "counter",
+        "forms": {
+          "ko": "시"
+        },
+        "translations": {
+          "fa": "ساعت؛ شمارندهٔ ساعت"
+        },
+        "cefr": "A1",
+        "topic": "time",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_time_and_schedule_02",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "lemma": "시",
+        "display_lemma": "시",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "counter",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_si"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_time_and_schedule_02",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "lexeme_ref": "lx_time_and_schedule_02",
+        "surface_form": "시",
+        "display_form": "시",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_time_and_schedule_03",
+      "data": {
+        "slug": "ko_a1_time_and_schedule_bun",
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "concept_type": "lexical",
+        "part_of_speech": "counter",
+        "forms": {
+          "ko": "분"
+        },
+        "translations": {
+          "fa": "دقیقه"
+        },
+        "cefr": "A1",
+        "topic": "time",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_time_and_schedule_03",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "lemma": "분",
+        "display_lemma": "분",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "counter",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_bun"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_time_and_schedule_03",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "lexeme_ref": "lx_time_and_schedule_03",
+        "surface_form": "분",
+        "display_form": "분",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_time_and_schedule_04",
+      "data": {
+        "slug": "ko_a1_time_and_schedule_oneul",
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "ko": "오늘"
+        },
+        "translations": {
+          "fa": "امروز"
+        },
+        "cefr": "A1",
+        "topic": "time",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_time_and_schedule_04",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "lemma": "오늘",
+        "display_lemma": "오늘",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_oneul"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_time_and_schedule_04",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "lexeme_ref": "lx_time_and_schedule_04",
+        "surface_form": "오늘",
+        "display_form": "오늘",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_time_and_schedule_05",
+      "data": {
+        "slug": "ko_a1_time_and_schedule_naeil",
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "ko": "내일"
+        },
+        "translations": {
+          "fa": "فردا"
+        },
+        "cefr": "A1",
+        "topic": "time",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_time_and_schedule_05",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "lemma": "내일",
+        "display_lemma": "내일",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_naeil"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_time_and_schedule_05",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "lexeme_ref": "lx_time_and_schedule_05",
+        "surface_form": "내일",
+        "display_form": "내일",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_time_and_schedule_06",
+      "data": {
+        "slug": "ko_a1_time_and_schedule_mannada",
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "만나다"
+        },
+        "translations": {
+          "fa": "ملاقات کردن"
+        },
+        "cefr": "A1",
+        "topic": "time",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_time_and_schedule_06",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "lemma": "만나다",
+        "display_lemma": "만나다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_mannada"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_time_and_schedule_06",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "lexeme_ref": "lx_time_and_schedule_06",
+        "surface_form": "만나다",
+        "display_form": "만나다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_time_and_schedule_01",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "text": {
+          "ko": "지금 세 시예요."
+        },
+        "translations": {
+          "fa": "الان ساعت سه است."
+        },
+        "intent": "tell_time",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_si"
+        ],
+        "cefr": "A1",
+        "topic": "time",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_time_and_schedule_02",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "text": {
+          "ko": "세 시 반이에요."
+        },
+        "translations": {
+          "fa": "ساعت سه و نیم است."
+        },
+        "intent": "tell_time",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_si"
+        ],
+        "cefr": "A1",
+        "topic": "time",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_time_and_schedule_03",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "text": {
+          "ko": "내일 두 시에 만나요."
+        },
+        "translations": {
+          "fa": "فردا ساعت دو همدیگر را می‌بینیم."
+        },
+        "intent": "arrange_meeting",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_naeil",
+          "ko_a1_time_and_schedule_si",
+          "ko_a1_time_and_schedule_mannada"
+        ],
+        "cefr": "A1",
+        "topic": "time",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_time_and_schedule_04",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "text": {
+          "ko": "오늘은 시간이 없어요."
+        },
+        "translations": {
+          "fa": "امروز وقت ندارم."
+        },
+        "intent": "state_availability",
+        "concept_refs": [
+          "ko_a1_time_and_schedule_oneul"
+        ],
+        "cefr": "A1",
+        "topic": "time",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_time_and_schedule_core",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "slug": "a1-ko-time-and-schedule-grammar",
+        "title": "시간 + 에",
+        "rule_summary": "Use 에 after a clock time to mark when an event happens. Korean typically uses native-Korean numerals for the hour and Sino-Korean numerals for minutes.",
+        "explanation": {
+          "fa": "برای گفتن زمان انجام کار، بعد از ساعت 에 می‌آید: 두 시에 만나요. برای ساعت معمولاً عدد بومی کره‌ای و برای دقیقه عدد چینی-کره‌ای به‌کار می‌رود."
+        },
+        "examples": [
+          {
+            "ko": "두 시에 만나요.",
+            "fa": "ساعت دو همدیگر را می‌بینیم."
+          },
+          {
+            "ko": "세 시 반이에요.",
+            "fa": "ساعت سه و نیم است."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_time_and_schedule_01",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "title": "약속 시간",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "time",
+        "characters": [
+          "민수",
+          "태호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "민수",
+            "text": "내일 몇 시에 만나요?",
+            "translation_fa": "فردا ساعت چند همدیگر را ببینیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "태호",
+            "text": "두 시에 만나요.",
+            "translation_fa": "ساعت دو."
+          },
+          {
+            "order": 3,
+            "speaker": "민수",
+            "text": "두 시 괜찮아요.",
+            "translation_fa": "دو خوب است."
+          },
+          {
+            "order": 4,
+            "speaker": "태호",
+            "text": "좋아요. 내일 봐요.",
+            "translation_fa": "خوبه. فردا می‌بینمت."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_time_and_schedule_02",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "title": "지금 몇 시예요?",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "time",
+        "characters": [
+          "유나",
+          "준호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "유나",
+            "text": "지금 몇 시예요?",
+            "translation_fa": "الان ساعت چنده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "준호",
+            "text": "세 시 반이에요.",
+            "translation_fa": "سه و نیم است."
+          },
+          {
+            "order": 3,
+            "speaker": "유나",
+            "text": "아, 벌써요?",
+            "translation_fa": "آه، به این زودی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "준호",
+            "text": "네, 시간이 빨라요.",
+            "translation_fa": "بله، وقت زود می‌گذرد."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_01_meaning",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "지금 세 시예요."
+        },
+        "answer": {
+          "value": "الان ساعت سه است."
+        },
+        "options": [
+          "الان ساعت سه است.",
+          "ساعت سه و نیم است.",
+          "فردا ساعت دو همدیگر را می‌بینیم.",
+          "امروز وقت ندارم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 지금 세 시예요. — الان ساعت سه است.",
+          "model_answer": "지금 세 시예요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_01_listen",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "세 시 반이에요."
+        },
+        "answer": {
+          "value": "세 시 반이에요."
+        },
+        "options": [
+          "세 시 반이에요.",
+          "지금 세 시예요.",
+          "내일 두 시에 만나요.",
+          "오늘은 시간이 없어요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 세 시 반이에요. — ساعت سه و نیم است.",
+          "model_answer": "세 시 반이에요.",
+          "transcript_ko": "세 시 반이에요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_01_speak",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "지금 세 시예요."
+        },
+        "answer": {
+          "expected_text": "지금 세 시예요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 지금 세 시예요. — الان ساعت سه است.",
+          "model_answer": "지금 세 시예요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_01_build",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "시",
+            "반이에요.",
+            "세"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "세",
+            "시",
+            "반이에요."
+          ],
+          "value": "세 시 반이에요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 세 시 반이에요. — ساعت سه و نیم است.",
+          "model_answer": "세 시 반이에요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_01_dialogue",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_time_and_schedule_01",
+          "question_fa": "کدام گزینه با معنی «الان ساعت سه است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "지금 세 시예요."
+        },
+        "options": [
+          "지금 세 시예요.",
+          "세 시 반이에요.",
+          "내일 두 시에 만나요.",
+          "오늘은 시간이 없어요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 지금 세 시예요. — الان ساعت سه است.",
+          "model_answer": "지금 세 시예요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_02_meaning",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "내일 두 시에 만나요."
+        },
+        "answer": {
+          "value": "فردا ساعت دو همدیگر را می‌بینیم."
+        },
+        "options": [
+          "فردا ساعت دو همدیگر را می‌بینیم.",
+          "الان ساعت سه است.",
+          "ساعت سه و نیم است.",
+          "امروز وقت ندارم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 내일 두 시에 만나요. — فردا ساعت دو همدیگر را می‌بینیم.",
+          "model_answer": "내일 두 시에 만나요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_02_listen",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "오늘은 시간이 없어요."
+        },
+        "answer": {
+          "value": "오늘은 시간이 없어요."
+        },
+        "options": [
+          "오늘은 시간이 없어요.",
+          "내일 두 시에 만나요.",
+          "지금 세 시예요.",
+          "세 시 반이에요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오늘은 시간이 없어요. — امروز وقت ندارم.",
+          "model_answer": "오늘은 시간이 없어요.",
+          "transcript_ko": "오늘은 시간이 없어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_02_speak",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "내일 두 시에 만나요."
+        },
+        "answer": {
+          "expected_text": "내일 두 시에 만나요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 내일 두 시에 만나요. — فردا ساعت دو همدیگر را می‌بینیم.",
+          "model_answer": "내일 두 시에 만나요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_02_build",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "시간이",
+            "없어요.",
+            "오늘은"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "오늘은",
+            "시간이",
+            "없어요."
+          ],
+          "value": "오늘은 시간이 없어요."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오늘은 시간이 없어요. — امروز وقت ندارم.",
+          "model_answer": "오늘은 시간이 없어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_time_and_schedule_02_dialogue",
+      "data": {
+        "lesson_key": "a1-ko-time-and-schedule-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_time_and_schedule_02",
+          "question_fa": "کدام گزینه با معنی «فردا ساعت دو همدیگر را می‌بینیم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "내일 두 시에 만나요."
+        },
+        "options": [
+          "내일 두 시에 만나요.",
+          "지금 세 시예요.",
+          "세 시 반이에요.",
+          "오늘은 시간이 없어요."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 내일 두 시에 만나요. — فردا ساعت دو همدیگر را می‌بینیم.",
+          "model_answer": "내일 두 시에 만나요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
