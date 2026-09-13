@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "583b1ddb676754a94143af7003a9c00b1ac8e55ca5f9d07cd6cc81163ae24730",
+  "voice_id": "v3V1d2rk6528UrLKRuy8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "11e8242a55a63c8d8c8961df9ba8f06ed0fa41cb7b1b8f29e7e50d49cd41700d",
+  "voice_key": "de-de.sentence.native-clear",
+  "voice_name": "Susi - Effortless and Confident",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "db53bd2858afe0350944d99b12c12dc3504ecff98dc4e3c03445f4f9846ea7c9",
+  "duration_ms": 5146,
+  "generated_at": "2026-09-13T08:16:53.684890+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "f0554cac-d6f4-5bf1-9d5a-66f23816b287",
+      "entity_key": "u_projects_deadlines_risks_01"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "81edc7e9-d7e1-540d-bcf6-f816a1cc7a39",
+      "entity_key": "ex_projects_deadlines_risks_01_listen"
+    }
+  ]
+}

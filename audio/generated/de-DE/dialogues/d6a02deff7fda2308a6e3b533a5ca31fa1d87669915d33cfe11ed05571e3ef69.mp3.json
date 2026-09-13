@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "e381cb8ef1d5fe70437fb9aefb1fce7fb68a837cc0b21b2c560d6c3e1b938297",
+  "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d6a02deff7fda2308a6e3b533a5ca31fa1d87669915d33cfe11ed05571e3ef69",
+  "voice_key": "character:mia:female_bright",
+  "voice_name": "Ela - Cheerful and Happy",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "88623cd242977066c2bec666315207a4678d384b8125aaeaa869851c81dff6dd",
+  "duration_ms": 4545,
+  "generated_at": "2026-09-13T08:16:17.067474+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7c01e14f-dab2-5de0-90b8-36989555383d",
+      "entity_key": "d_job_interviews_achievements_02:1"
+    }
+  ]
+}
