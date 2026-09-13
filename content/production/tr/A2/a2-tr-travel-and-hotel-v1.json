@@ -1,0 +1,852 @@
+{
+  "batch_id": "tr-tr-a2-travel-and-hotel-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A2",
+  "curriculum_unit": "a2-tr-travel-and-hotel",
+  "generator": "gpt-5.6-sol:turkish-a2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_01",
+      "data": {
+        "slug": "tr_a2_travel_and_hotel_rezervasyon",
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "rezervasyon"
+        },
+        "translations": {
+          "fa": "رزرو"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "lemma": "rezervasyon",
+        "display_lemma": "rezervasyon",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_rezervasyon"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_01",
+        "surface_form": "rezervasyon",
+        "display_form": "rezervasyon",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_02",
+      "data": {
+        "slug": "tr_a2_travel_and_hotel_oda",
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "oda"
+        },
+        "translations": {
+          "fa": "اتاق"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "lemma": "oda",
+        "display_lemma": "oda",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_oda"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_02",
+        "surface_form": "oda",
+        "display_form": "oda",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_03",
+      "data": {
+        "slug": "tr_a2_travel_and_hotel_kimlik",
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "kimlik"
+        },
+        "translations": {
+          "fa": "مدرک شناسایی"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "lemma": "kimlik",
+        "display_lemma": "kimlik",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_kimlik"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_03",
+        "surface_form": "kimlik",
+        "display_form": "kimlik",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_04",
+      "data": {
+        "slug": "tr_a2_travel_and_hotel_anahtar",
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "anahtar"
+        },
+        "translations": {
+          "fa": "کلید"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "lemma": "anahtar",
+        "display_lemma": "anahtar",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_anahtar"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_04",
+        "surface_form": "anahtar",
+        "display_form": "anahtar",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_05",
+      "data": {
+        "slug": "tr_a2_travel_and_hotel_gece",
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "gece"
+        },
+        "translations": {
+          "fa": "شب"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_05",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "lemma": "gece",
+        "display_lemma": "gece",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_gece"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_05",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_05",
+        "surface_form": "gece",
+        "display_form": "gece",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_06",
+      "data": {
+        "slug": "tr_a2_travel_and_hotel_kalmak",
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "kalmak"
+        },
+        "translations": {
+          "fa": "ماندن"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_06",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "lemma": "kalmak",
+        "display_lemma": "kalmak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_kalmak"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_06",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_06",
+        "surface_form": "kalmak",
+        "display_form": "kalmak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "text": {
+          "tr": "Rezervasyonum var."
+        },
+        "translations": {
+          "fa": "رزرو دارم."
+        },
+        "intent": "state_reservation",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_rezervasyon"
+        ],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "text": {
+          "tr": "İki gece kalacağım."
+        },
+        "translations": {
+          "fa": "دو شب می‌مانم."
+        },
+        "intent": "state_future_stay",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_gece",
+          "tr_a2_travel_and_hotel_kalmak"
+        ],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "text": {
+          "tr": "Kimliğinizi görebilir miyim?"
+        },
+        "translations": {
+          "fa": "می‌توانم مدرک شناسایی‌تان را ببینم؟"
+        },
+        "intent": "request_document",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_kimlik"
+        ],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "text": {
+          "tr": "Oda anahtarınız burada."
+        },
+        "translations": {
+          "fa": "کلید اتاقتان اینجاست."
+        },
+        "intent": "hand_over_item",
+        "concept_refs": [
+          "tr_a2_travel_and_hotel_oda",
+          "tr_a2_travel_and_hotel_anahtar"
+        ],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_travel_and_hotel_core",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "slug": "a2-tr-travel-and-hotel-grammar",
+        "title": "İyelik + durum ekleri",
+        "rule_summary": "Turkish can stack possessive and case endings; travel phrases often combine them.",
+        "explanation": {
+          "fa": "در ترکی پسوندها می‌توانند پشت سر هم بیایند. در موقعیت‌های سفر، مالکیت و حالت دستوری زیاد با هم می‌آیند؛ مثلاً rezervasyonum «رزروِ من»."
+        },
+        "examples": [
+          {
+            "tr": "Rezervasyonum var.",
+            "fa": "رزرو دارم."
+          },
+          {
+            "tr": "Odanız hazır.",
+            "fa": "اتاقتان آماده است."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "title": "Otele giriş",
+        "setting": "",
+        "cefr": "A2",
+        "topic": "travel",
+        "characters": [
+          "Deniz",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Merhaba, rezervasyonum var.",
+            "translation_fa": "سلام، رزرو دارم."
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Adınız nedir?",
+            "translation_fa": "نامتان چیست؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Deniz Kaya.",
+            "translation_fa": "دنیز کایا."
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Evet, odanız hazır.",
+            "translation_fa": "بله، اتاقتان آماده است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "title": "Oda sorunu",
+        "setting": "",
+        "cefr": "A2",
+        "topic": "travel",
+        "characters": [
+          "Burak",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Burak",
+            "text": "Affedersiniz, oda anahtarım çalışmıyor.",
+            "translation_fa": "ببخشید، کلید اتاقم کار نمی‌کند."
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Kontrol edeyim.",
+            "translation_fa": "بگذارید بررسی کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Burak",
+            "text": "Teşekkür ederim.",
+            "translation_fa": "ممنونم."
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Yeni anahtarınız burada.",
+            "translation_fa": "کلید جدیدتان اینجاست."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_meaning",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Rezervasyonum var."
+        },
+        "answer": {
+          "value": "رزرو دارم."
+        },
+        "options": [
+          "رزرو دارم.",
+          "دو شب می‌مانم.",
+          "می‌توانم مدرک شناسایی‌تان را ببینم؟",
+          "کلید اتاقتان اینجاست."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Rezervasyonum var. — رزرو دارم.",
+          "model_answer": "Rezervasyonum var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_listen",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "İki gece kalacağım."
+        },
+        "answer": {
+          "value": "İki gece kalacağım."
+        },
+        "options": [
+          "İki gece kalacağım.",
+          "Rezervasyonum var.",
+          "Kimliğinizi görebilir miyim?",
+          "Oda anahtarınız burada."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki gece kalacağım. — دو شب می‌مانم.",
+          "model_answer": "İki gece kalacağım.",
+          "transcript_tr": "İki gece kalacağım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_speak",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Rezervasyonum var."
+        },
+        "answer": {
+          "expected_text": "Rezervasyonum var."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Rezervasyonum var. — رزرو دارم.",
+          "model_answer": "Rezervasyonum var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_build",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "gece",
+            "kalacağım.",
+            "İki"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "İki",
+            "gece",
+            "kalacağım."
+          ],
+          "value": "İki gece kalacağım."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki gece kalacağım. — دو شب می‌مانم.",
+          "model_answer": "İki gece kalacağım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travel_and_hotel_01",
+          "question_fa": "کدام گزینه با معنی «رزرو دارم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Rezervasyonum var."
+        },
+        "options": [
+          "Rezervasyonum var.",
+          "İki gece kalacağım.",
+          "Kimliğinizi görebilir miyim?",
+          "Oda anahtarınız burada."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Rezervasyonum var. — رزرو دارم.",
+          "model_answer": "Rezervasyonum var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_meaning",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Kimliğinizi görebilir miyim?"
+        },
+        "answer": {
+          "value": "می‌توانم مدرک شناسایی‌تان را ببینم؟"
+        },
+        "options": [
+          "می‌توانم مدرک شناسایی‌تان را ببینم؟",
+          "رزرو دارم.",
+          "دو شب می‌مانم.",
+          "کلید اتاقتان اینجاست."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Kimliğinizi görebilir miyim? — می‌توانم مدرک شناسایی‌تان را ببینم؟",
+          "model_answer": "Kimliğinizi görebilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_listen",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Oda anahtarınız burada."
+        },
+        "answer": {
+          "value": "Oda anahtarınız burada."
+        },
+        "options": [
+          "Oda anahtarınız burada.",
+          "Kimliğinizi görebilir miyim?",
+          "Rezervasyonum var.",
+          "İki gece kalacağım."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Oda anahtarınız burada. — کلید اتاقتان اینجاست.",
+          "model_answer": "Oda anahtarınız burada.",
+          "transcript_tr": "Oda anahtarınız burada."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_speak",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Kimliğinizi görebilir miyim?"
+        },
+        "answer": {
+          "expected_text": "Kimliğinizi görebilir miyim?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Kimliğinizi görebilir miyim? — می‌توانم مدرک شناسایی‌تان را ببینم؟",
+          "model_answer": "Kimliğinizi görebilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_build",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "anahtarınız",
+            "burada.",
+            "Oda"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Oda",
+            "anahtarınız",
+            "burada."
+          ],
+          "value": "Oda anahtarınız burada."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Oda anahtarınız burada. — کلید اتاقتان اینجاست.",
+          "model_answer": "Oda anahtarınız burada."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travel_and_hotel_02",
+          "question_fa": "کدام گزینه با معنی «می‌توانم مدرک شناسایی‌تان را ببینم؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Kimliğinizi görebilir miyim?"
+        },
+        "options": [
+          "Kimliğinizi görebilir miyim?",
+          "Rezervasyonum var.",
+          "İki gece kalacağım.",
+          "Oda anahtarınız burada."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Kimliğinizi görebilir miyim? — می‌توانم مدرک شناسایی‌تان را ببینم؟",
+          "model_answer": "Kimliğinizi görebilir miyim?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

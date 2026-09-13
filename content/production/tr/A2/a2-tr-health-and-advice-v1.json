@@ -1,0 +1,851 @@
+{
+  "batch_id": "tr-tr-a2-health-and-advice-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A2",
+  "curriculum_unit": "a2-tr-health-and-advice",
+  "generator": "gpt-5.6-sol:turkish-a2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_01",
+      "data": {
+        "slug": "tr_a2_health_and_advice_bas",
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "baş"
+        },
+        "translations": {
+          "fa": "سر"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_01",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "lemma": "baş",
+        "display_lemma": "baş",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_health_and_advice_bas"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_01",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "lexeme_ref": "lx_health_and_advice_01",
+        "surface_form": "baş",
+        "display_form": "baş",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_02",
+      "data": {
+        "slug": "tr_a2_health_and_advice_agri",
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ağrı"
+        },
+        "translations": {
+          "fa": "درد"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_02",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "lemma": "ağrı",
+        "display_lemma": "ağrı",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_health_and_advice_agri"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_02",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "lexeme_ref": "lx_health_and_advice_02",
+        "surface_form": "ağrı",
+        "display_form": "ağrı",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_03",
+      "data": {
+        "slug": "tr_a2_health_and_advice_dinlenmek",
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "dinlenmek"
+        },
+        "translations": {
+          "fa": "استراحت کردن"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_03",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "lemma": "dinlenmek",
+        "display_lemma": "dinlenmek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a2_health_and_advice_dinlenmek"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_03",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "lexeme_ref": "lx_health_and_advice_03",
+        "surface_form": "dinlenmek",
+        "display_form": "dinlenmek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_04",
+      "data": {
+        "slug": "tr_a2_health_and_advice_ilac",
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ilaç"
+        },
+        "translations": {
+          "fa": "دارو"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_04",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "lemma": "ilaç",
+        "display_lemma": "ilaç",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_health_and_advice_ilac"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_04",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "lexeme_ref": "lx_health_and_advice_04",
+        "surface_form": "ilaç",
+        "display_form": "ilaç",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_05",
+      "data": {
+        "slug": "tr_a2_health_and_advice_doktor",
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "doktor"
+        },
+        "translations": {
+          "fa": "پزشک"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_05",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "lemma": "doktor",
+        "display_lemma": "doktor",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_health_and_advice_doktor"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_05",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "lexeme_ref": "lx_health_and_advice_05",
+        "surface_form": "doktor",
+        "display_form": "doktor",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_06",
+      "data": {
+        "slug": "tr_a2_health_and_advice_iyi",
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "iyi"
+        },
+        "translations": {
+          "fa": "خوب"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_06",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "lemma": "iyi",
+        "display_lemma": "iyi",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a2_health_and_advice_iyi"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_06",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "lexeme_ref": "lx_health_and_advice_06",
+        "surface_form": "iyi",
+        "display_form": "iyi",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_01",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "text": {
+          "tr": "Başım ağrıyor."
+        },
+        "translations": {
+          "fa": "سرم درد می‌کند."
+        },
+        "intent": "state_symptom",
+        "concept_refs": [
+          "tr_a2_health_and_advice_bas",
+          "tr_a2_health_and_advice_agri"
+        ],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_02",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "text": {
+          "tr": "Biraz dinlenmelisin."
+        },
+        "translations": {
+          "fa": "باید کمی استراحت کنی."
+        },
+        "intent": "give_advice",
+        "concept_refs": [
+          "tr_a2_health_and_advice_dinlenmek"
+        ],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_03",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "text": {
+          "tr": "Doktora gitmelisin."
+        },
+        "translations": {
+          "fa": "باید پیش پزشک بروی."
+        },
+        "intent": "give_advice",
+        "concept_refs": [
+          "tr_a2_health_and_advice_doktor"
+        ],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_04",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "text": {
+          "tr": "Bu ilacı yemekle almalısın."
+        },
+        "translations": {
+          "fa": "باید این دارو را همراه غذا بخوری."
+        },
+        "intent": "give_instruction",
+        "concept_refs": [
+          "tr_a2_health_and_advice_ilac"
+        ],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_health_and_advice_core",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "slug": "a2-tr-health-and-advice-grammar",
+        "title": "Gereklilik: -meli / -malı",
+        "rule_summary": "Use -meli/-malı for necessity and common advice.",
+        "explanation": {
+          "fa": "برای «باید» و توصیهٔ نسبتاً مستقیم از -meli/-malı استفاده می‌شود: dinlenmelisin یعنی «باید استراحت کنی»."
+        },
+        "examples": [
+          {
+            "tr": "Su içmelisin.",
+            "fa": "باید آب بنوشی."
+          },
+          {
+            "tr": "Doktora gitmelisin.",
+            "fa": "باید پیش پزشک بروی."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_and_advice_01",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "title": "Kendini iyi hissetmiyorum",
+        "setting": "",
+        "cefr": "A2",
+        "topic": "health",
+        "characters": [
+          "Deniz",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "İyi misin?",
+            "translation_fa": "خوبی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Pek değil. Başım ağrıyor.",
+            "translation_fa": "نه خیلی. سرم درد می‌کند."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Biraz dinlenmelisin.",
+            "translation_fa": "باید کمی استراحت کنی."
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Haklısın.",
+            "translation_fa": "حق با توست."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_and_advice_02",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "title": "Eczanede",
+        "setting": "",
+        "cefr": "A2",
+        "topic": "health",
+        "characters": [
+          "Selin",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Bu ilacı ne zaman almalıyım?",
+            "translation_fa": "این دارو را چه زمانی باید بخورم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Yemekten sonra almalısınız.",
+            "translation_fa": "باید بعد از غذا بخورید."
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "Günde kaç kez?",
+            "translation_fa": "روزی چند بار؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "İki kez.",
+            "translation_fa": "دو بار."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_meaning",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Başım ağrıyor."
+        },
+        "answer": {
+          "value": "سرم درد می‌کند."
+        },
+        "options": [
+          "سرم درد می‌کند.",
+          "باید کمی استراحت کنی.",
+          "باید پیش پزشک بروی.",
+          "باید این دارو را همراه غذا بخوری."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Başım ağrıyor. — سرم درد می‌کند.",
+          "model_answer": "Başım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_listen",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Biraz dinlenmelisin."
+        },
+        "answer": {
+          "value": "Biraz dinlenmelisin."
+        },
+        "options": [
+          "Biraz dinlenmelisin.",
+          "Başım ağrıyor.",
+          "Doktora gitmelisin.",
+          "Bu ilacı yemekle almalısın."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Biraz dinlenmelisin. — باید کمی استراحت کنی.",
+          "model_answer": "Biraz dinlenmelisin.",
+          "transcript_tr": "Biraz dinlenmelisin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_speak",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Başım ağrıyor."
+        },
+        "answer": {
+          "expected_text": "Başım ağrıyor."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Başım ağrıyor. — سرم درد می‌کند.",
+          "model_answer": "Başım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_build",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "dinlenmelisin.",
+            "Biraz"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Biraz",
+            "dinlenmelisin."
+          ],
+          "value": "Biraz dinlenmelisin."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Biraz dinlenmelisin. — باید کمی استراحت کنی.",
+          "model_answer": "Biraz dinlenmelisin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_health_and_advice_01",
+          "question_fa": "کدام گزینه با معنی «سرم درد می‌کند.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Başım ağrıyor."
+        },
+        "options": [
+          "Başım ağrıyor.",
+          "Biraz dinlenmelisin.",
+          "Doktora gitmelisin.",
+          "Bu ilacı yemekle almalısın."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Başım ağrıyor. — سرم درد می‌کند.",
+          "model_answer": "Başım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_meaning",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Doktora gitmelisin."
+        },
+        "answer": {
+          "value": "باید پیش پزشک بروی."
+        },
+        "options": [
+          "باید پیش پزشک بروی.",
+          "سرم درد می‌کند.",
+          "باید کمی استراحت کنی.",
+          "باید این دارو را همراه غذا بخوری."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Doktora gitmelisin. — باید پیش پزشک بروی.",
+          "model_answer": "Doktora gitmelisin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_listen",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bu ilacı yemekle almalısın."
+        },
+        "answer": {
+          "value": "Bu ilacı yemekle almalısın."
+        },
+        "options": [
+          "Bu ilacı yemekle almalısın.",
+          "Doktora gitmelisin.",
+          "Başım ağrıyor.",
+          "Biraz dinlenmelisin."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ilacı yemekle almalısın. — باید این دارو را همراه غذا بخوری.",
+          "model_answer": "Bu ilacı yemekle almalısın.",
+          "transcript_tr": "Bu ilacı yemekle almalısın."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_speak",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Doktora gitmelisin."
+        },
+        "answer": {
+          "expected_text": "Doktora gitmelisin."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Doktora gitmelisin. — باید پیش پزشک بروی.",
+          "model_answer": "Doktora gitmelisin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_build",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "ilacı",
+            "yemekle",
+            "almalısın.",
+            "Bu"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bu",
+            "ilacı",
+            "yemekle",
+            "almalısın."
+          ],
+          "value": "Bu ilacı yemekle almalısın."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ilacı yemekle almalısın. — باید این دارو را همراه غذا بخوری.",
+          "model_answer": "Bu ilacı yemekle almalısın."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_health_and_advice_02",
+          "question_fa": "کدام گزینه با معنی «باید پیش پزشک بروی.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Doktora gitmelisin."
+        },
+        "options": [
+          "Doktora gitmelisin.",
+          "Başım ağrıyor.",
+          "Biraz dinlenmelisin.",
+          "Bu ilacı yemekle almalısın."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Doktora gitmelisin. — باید پیش پزشک بروی.",
+          "model_answer": "Doktora gitmelisin."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
