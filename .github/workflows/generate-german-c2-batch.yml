@@ -1,0 +1,86 @@
+name: Generate German C2 Batch
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/german-c2-batch-trigger'
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: 'C2 batch number (1-10 units; final batch may be smaller)'
+        required: true
+        default: '1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: german-c2-content-generation-v1
+  cancel-in-progress: false
+
+jobs:
+  generate-batch:
+    runs-on: ubuntu-latest
+    env:
+      BATCH: ${{ github.event.inputs.batch || '1' }}
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Resolve batch from push trigger
+        if: github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          batch=$(sed -n 's/^batch=//p' .github/german-c2-batch-trigger | head -n1)
+          test -n "$batch"
+          echo "BATCH=$batch" >> "$GITHUB_ENV"
+          echo "Resolved German C2 batch: $batch"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate up to ten C2 units
+        run: python scripts/generate_german_c2_batch.py --batch "$BATCH"
+      - name: Validate cumulative C2 production
+        run: |
+          set -euo pipefail
+          for f in content/production/de/C2/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+          python scripts/audit_german_advanced_content.py --level C2 --batch "$BATCH"
+          python database/import/de/c2.py --dry-run
+      - name: Batch summary
+        run: |
+          python - <<'PY'
+          import json, pathlib, collections, os
+          root=pathlib.Path('content/production/de/C2')
+          files=sorted(root.glob('*.json'))
+          counts=collections.Counter(); lessons=set()
+          for p in files:
+              b=json.loads(p.read_text())
+              for i in b['items']:
+                  counts[i['kind']]+=1
+                  lk=i.get('data',{}).get('lesson_key')
+                  if lk: lessons.add(lk)
+          print(json.dumps({'batch':int(os.environ['BATCH']),'units':len(files),'lessons':len(lessons),'items':sum(counts.values()),'counts':dict(counts)},ensure_ascii=False,indent=2))
+          PY
+      - name: Commit German C2 source specs and production content
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/specs/de/C2 content/production/de/C2
+          if git diff --cached --quiet; then
+            echo 'No generated content changes.'
+          else
+            git commit -m "Generate German C2 batch ${BATCH} production content [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
