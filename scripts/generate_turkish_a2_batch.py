@@ -3,7 +3,7 @@
 from __future__ import annotations
 import argparse, json
 from pathlib import Path
-from scripts import generate_turkish_a1_batch as base
+import generate_turkish_a1_batch as base
 
 ROOT = Path(__file__).resolve().parents[1]
 LEVEL = "A2"
