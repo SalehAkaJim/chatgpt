@@ -9,9 +9,9 @@ on:
   workflow_dispatch:
     inputs:
       batch:
-        description: 'B1 batch number (10 units per batch)'
+        description: 'B1 batch number (1-10 units; final batch may be smaller)'
         required: true
-        default: '4'
+        default: '5'
 
 permissions:
   contents: write
@@ -24,7 +24,7 @@ jobs:
   generate-batch:
     runs-on: ubuntu-latest
     env:
-      BATCH: ${{ github.event.inputs.batch || '4' }}
+      BATCH: ${{ github.event.inputs.batch || '5' }}
     steps:
       - name: Checkout main branch
         uses: actions/checkout@v4
@@ -37,17 +37,15 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Generate exactly ten B1 units
-        run: python scripts/generate_german_b1_batch.py --batch "$BATCH"
+      - name: Generate up to ten B1 units
+        run: python scripts/generate_german_b1_batch_flexible.py --batch "$BATCH"
       - name: Validate cumulative B1 production
         run: |
           set -euo pipefail
-          expected=$((BATCH * 10))
-          test "$(find content/production/de/B1 -maxdepth 1 -name '*.json' | wc -l)" = "$expected"
           for f in content/production/de/B1/*.json; do
             python scripts/validate_content.py "$f"
           done
-          python scripts/audit_german_b1_content.py --batch "$BATCH"
+          python scripts/audit_german_b1_content_flexible.py --batch "$BATCH"
           python database/import/de/b1.py --dry-run
       - name: Batch summary
         run: |
