@@ -1,0 +1,861 @@
+{
+  "batch_id": "ko-kr-b1-storytelling-sequence-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "B1",
+  "curriculum_unit": "b1-ko-storytelling-sequence",
+  "generator": "gpt-5.6-sol:korean-b1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_storytelling_sequence_01",
+      "data": {
+        "slug": "ko_b1_storytelling_sequence_sanghwang",
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "상황"
+        },
+        "translations": {
+          "fa": "موقعیت"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_storytelling_sequence_01",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "lemma": "상황",
+        "display_lemma": "상황",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_sanghwang"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_storytelling_sequence_01",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "lexeme_ref": "lx_storytelling_sequence_01",
+        "surface_form": "상황",
+        "display_form": "상황",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_storytelling_sequence_02",
+      "data": {
+        "slug": "ko_b1_storytelling_sequence_sungan",
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "순간"
+        },
+        "translations": {
+          "fa": "لحظه"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_storytelling_sequence_02",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "lemma": "순간",
+        "display_lemma": "순간",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_sungan"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_storytelling_sequence_02",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "lexeme_ref": "lx_storytelling_sequence_02",
+        "surface_form": "순간",
+        "display_form": "순간",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_storytelling_sequence_03",
+      "data": {
+        "slug": "ko_b1_storytelling_sequence_gapjagi",
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "ko": "갑자기"
+        },
+        "translations": {
+          "fa": "ناگهان"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_storytelling_sequence_03",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "lemma": "갑자기",
+        "display_lemma": "갑자기",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_gapjagi"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_storytelling_sequence_03",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "lexeme_ref": "lx_storytelling_sequence_03",
+        "surface_form": "갑자기",
+        "display_form": "갑자기",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_storytelling_sequence_04",
+      "data": {
+        "slug": "ko_b1_storytelling_sequence_gyesokdoeda",
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "계속되다"
+        },
+        "translations": {
+          "fa": "ادامه داشتن"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_storytelling_sequence_04",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "lemma": "계속되다",
+        "display_lemma": "계속되다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_gyesokdoeda"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_storytelling_sequence_04",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "lexeme_ref": "lx_storytelling_sequence_04",
+        "surface_form": "계속되다",
+        "display_form": "계속되다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_storytelling_sequence_05",
+      "data": {
+        "slug": "ko_b1_storytelling_sequence_meomchuda",
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "멈추다"
+        },
+        "translations": {
+          "fa": "متوقف شدن"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_storytelling_sequence_05",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "lemma": "멈추다",
+        "display_lemma": "멈추다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_meomchuda"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_storytelling_sequence_05",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "lexeme_ref": "lx_storytelling_sequence_05",
+        "surface_form": "멈추다",
+        "display_form": "멈추다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_storytelling_sequence_06",
+      "data": {
+        "slug": "ko_b1_storytelling_sequence_gyeolguk",
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "ko": "결국"
+        },
+        "translations": {
+          "fa": "در نهایت"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_storytelling_sequence_06",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "lemma": "결국",
+        "display_lemma": "결국",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_gyeolguk"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_storytelling_sequence_06",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "lexeme_ref": "lx_storytelling_sequence_06",
+        "surface_form": "결국",
+        "display_form": "결국",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_storytelling_sequence_01",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "text": {
+          "ko": "문을 열었더니 아무도 없었어요."
+        },
+        "translations": {
+          "fa": "در را که باز کردم، دیدم هیچ‌کس نیست."
+        },
+        "intent": "report_result",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_storytelling_sequence_02",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "text": {
+          "ko": "집에 가다가 갑자기 비가 왔어요."
+        },
+        "translations": {
+          "fa": "در راه خانه ناگهان باران گرفت."
+        },
+        "intent": "narrate_interruption",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_gapjagi"
+        ],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_storytelling_sequence_03",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "text": {
+          "ko": "전화가 계속 울리더니 갑자기 멈췄어요."
+        },
+        "translations": {
+          "fa": "تلفن مدام زنگ می‌خورد و بعد ناگهان قطع شد."
+        },
+        "intent": "narrate_change",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_gyesokdoeda",
+          "ko_b1_storytelling_sequence_meomchuda"
+        ],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_storytelling_sequence_04",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "text": {
+          "ko": "결국 우리는 다음 날 다시 만나기로 했어요."
+        },
+        "translations": {
+          "fa": "در نهایت تصمیم گرفتیم روز بعد دوباره همدیگر را ببینیم."
+        },
+        "intent": "close_story",
+        "concept_refs": [
+          "ko_b1_storytelling_sequence_gyeolguk"
+        ],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_storytelling_sequence_core",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "slug": "b1-ko-storytelling-sequence-grammar",
+        "title": "-더니 / -다가",
+        "rule_summary": "-더니 links an observed situation to a later result; -다가 marks an action interrupted midway.",
+        "explanation": {
+          "fa": "-더니 یک وضعیت مشاهده‌شده را به نتیجهٔ بعدی وصل می‌کند و -다가 برای کاری است که وسط انجامش اتفاق دیگری رخ می‌دهد."
+        },
+        "examples": [
+          {
+            "ko": "날씨가 흐리더니 비가 왔어요.",
+            "fa": "هوا ابری شد و بعد باران آمد."
+          },
+          {
+            "ko": "공부하다가 잠들었어요.",
+            "fa": "وسط درس خواندن خوابم برد."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_storytelling_sequence_01",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "title": "이상한 아침",
+        "setting": "office",
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "characters": [
+          "준호",
+          "유나"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "준호",
+            "text": "오늘 아침에 무슨 일이 있었어요?",
+            "translation_fa": "امروز صبح چه اتفاقی افتاد؟"
+          },
+          {
+            "order": 2,
+            "speaker": "유나",
+            "text": "회사에 왔더니 문이 잠겨 있었어요.",
+            "translation_fa": "وقتی به شرکت رسیدم دیدم در قفل است."
+          },
+          {
+            "order": 3,
+            "speaker": "준호",
+            "text": "그래서 어떻게 했어요?",
+            "translation_fa": "پس چه کار کردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "유나",
+            "text": "기다리다가 경비실에 전화했어요.",
+            "translation_fa": "کمی منتظر ماندم و بعد به نگهبانی زنگ زدم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_storytelling_sequence_02",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "title": "길에서 생긴 일",
+        "setting": "station",
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "characters": [
+          "민수",
+          "서연"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "민수",
+            "text": "왜 이렇게 늦었어요?",
+            "translation_fa": "چرا این‌قدر دیر کردی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "서연",
+            "text": "오다가 버스가 갑자기 멈췄어요.",
+            "translation_fa": "در راه اتوبوس ناگهان توقف کرد."
+          },
+          {
+            "order": 3,
+            "speaker": "민수",
+            "text": "많이 기다렸어요?",
+            "translation_fa": "خیلی منتظر ماندی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "서연",
+            "text": "네, 결국 지하철로 갈아탔어요.",
+            "translation_fa": "بله، در نهایت مترو سوار شدم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_01_meaning",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "문을 열었더니 아무도 없었어요."
+        },
+        "answer": {
+          "value": "در را که باز کردم، دیدم هیچ‌کس نیست."
+        },
+        "options": [
+          "در را که باز کردم، دیدم هیچ‌کس نیست.",
+          "در راه خانه ناگهان باران گرفت.",
+          "تلفن مدام زنگ می‌خورد و بعد ناگهان قطع شد.",
+          "در نهایت تصمیم گرفتیم روز بعد دوباره همدیگر را ببینیم."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 문을 열었더니 아무도 없었어요. — در را که باز کردم، دیدم هیچ‌کس نیست.",
+          "model_answer": "문을 열었더니 아무도 없었어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_01_listen",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "집에 가다가 갑자기 비가 왔어요."
+        },
+        "answer": {
+          "value": "집에 가다가 갑자기 비가 왔어요."
+        },
+        "options": [
+          "집에 가다가 갑자기 비가 왔어요.",
+          "문을 열었더니 아무도 없었어요.",
+          "전화가 계속 울리더니 갑자기 멈췄어요.",
+          "결국 우리는 다음 날 다시 만나기로 했어요."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 집에 가다가 갑자기 비가 왔어요. — در راه خانه ناگهان باران گرفت.",
+          "model_answer": "집에 가다가 갑자기 비가 왔어요.",
+          "transcript_ko": "집에 가다가 갑자기 비가 왔어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_01_speak",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "문을 열었더니 아무도 없었어요."
+        },
+        "answer": {
+          "expected_text": "문을 열었더니 아무도 없었어요."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 문을 열었더니 아무도 없었어요. — در را که باز کردم، دیدم هیچ‌کس نیست.",
+          "model_answer": "문을 열었더니 아무도 없었어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_01_build",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "가다가",
+            "갑자기",
+            "비가",
+            "왔어요.",
+            "집에"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "집에",
+            "가다가",
+            "갑자기",
+            "비가",
+            "왔어요."
+          ],
+          "value": "집에 가다가 갑자기 비가 왔어요."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 집에 가다가 갑자기 비가 왔어요. — در راه خانه ناگهان باران گرفت.",
+          "model_answer": "집에 가다가 갑자기 비가 왔어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_01_dialogue",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_storytelling_sequence_01",
+          "question_fa": "کدام گزینه با معنی «در را که باز کردم، دیدم هیچ‌کس نیست.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "문을 열었더니 아무도 없었어요."
+        },
+        "options": [
+          "문을 열었더니 아무도 없었어요.",
+          "집에 가다가 갑자기 비가 왔어요.",
+          "전화가 계속 울리더니 갑자기 멈췄어요.",
+          "결국 우리는 다음 날 다시 만나기로 했어요."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 문을 열었더니 아무도 없었어요. — در را که باز کردم، دیدم هیچ‌کس نیست.",
+          "model_answer": "문을 열었더니 아무도 없었어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_02_meaning",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "전화가 계속 울리더니 갑자기 멈췄어요."
+        },
+        "answer": {
+          "value": "تلفن مدام زنگ می‌خورد و بعد ناگهان قطع شد."
+        },
+        "options": [
+          "تلفن مدام زنگ می‌خورد و بعد ناگهان قطع شد.",
+          "در را که باز کردم، دیدم هیچ‌کس نیست.",
+          "در راه خانه ناگهان باران گرفت.",
+          "در نهایت تصمیم گرفتیم روز بعد دوباره همدیگر را ببینیم."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 전화가 계속 울리더니 갑자기 멈췄어요. — تلفن مدام زنگ می‌خورد و بعد ناگهان قطع شد.",
+          "model_answer": "전화가 계속 울리더니 갑자기 멈췄어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_02_listen",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "결국 우리는 다음 날 다시 만나기로 했어요."
+        },
+        "answer": {
+          "value": "결국 우리는 다음 날 다시 만나기로 했어요."
+        },
+        "options": [
+          "결국 우리는 다음 날 다시 만나기로 했어요.",
+          "전화가 계속 울리더니 갑자기 멈췄어요.",
+          "문을 열었더니 아무도 없었어요.",
+          "집에 가다가 갑자기 비가 왔어요."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 결국 우리는 다음 날 다시 만나기로 했어요. — در نهایت تصمیم گرفتیم روز بعد دوباره همدیگر را ببینیم.",
+          "model_answer": "결국 우리는 다음 날 다시 만나기로 했어요.",
+          "transcript_ko": "결국 우리는 다음 날 다시 만나기로 했어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_02_speak",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "전화가 계속 울리더니 갑자기 멈췄어요."
+        },
+        "answer": {
+          "expected_text": "전화가 계속 울리더니 갑자기 멈췄어요."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 전화가 계속 울리더니 갑자기 멈췄어요. — تلفن مدام زنگ می‌خورد و بعد ناگهان قطع شد.",
+          "model_answer": "전화가 계속 울리더니 갑자기 멈췄어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_02_build",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "우리는",
+            "다음",
+            "날",
+            "다시",
+            "만나기로",
+            "했어요.",
+            "결국"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "결국",
+            "우리는",
+            "다음",
+            "날",
+            "다시",
+            "만나기로",
+            "했어요."
+          ],
+          "value": "결국 우리는 다음 날 다시 만나기로 했어요."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 결국 우리는 다음 날 다시 만나기로 했어요. — در نهایت تصمیم گرفتیم روز بعد دوباره همدیگر را ببینیم.",
+          "model_answer": "결국 우리는 다음 날 다시 만나기로 했어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_02_dialogue",
+      "data": {
+        "lesson_key": "b1-ko-storytelling-sequence-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_storytelling_sequence_02",
+          "question_fa": "کدام گزینه با معنی «تلفن مدام زنگ می‌خورد و بعد ناگهان قطع شد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "전화가 계속 울리더니 갑자기 멈췄어요."
+        },
+        "options": [
+          "전화가 계속 울리더니 갑자기 멈췄어요.",
+          "문을 열었더니 아무도 없었어요.",
+          "집에 가다가 갑자기 비가 왔어요.",
+          "결국 우리는 다음 날 다시 만나기로 했어요."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 전화가 계속 울리더니 갑자기 멈췄어요. — تلفن مدام زنگ می‌خورد و بعد ناگهان قطع شد.",
+          "model_answer": "전화가 계속 울리더니 갑자기 멈췄어요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
