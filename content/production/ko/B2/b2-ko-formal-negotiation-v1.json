@@ -1,0 +1,874 @@
+{
+  "batch_id": "ko-kr-b2-formal-negotiation-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "B2",
+  "curriculum_unit": "b2-ko-formal-negotiation",
+  "generator": "gpt-5.6-sol:korean-b2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_formal_negotiation_01",
+      "data": {
+        "slug": "ko_b2_formal_negotiation_jogeon",
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "조건"
+        },
+        "translations": {
+          "fa": "شرط"
+        },
+        "cefr": "B2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_formal_negotiation_01",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "lemma": "조건",
+        "display_lemma": "조건",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_jogeon"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_formal_negotiation_01",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "lexeme_ref": "lx_formal_negotiation_01",
+        "surface_form": "조건",
+        "display_form": "조건",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_formal_negotiation_02",
+      "data": {
+        "slug": "ko_b2_formal_negotiation_hyeopsang",
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "협상"
+        },
+        "translations": {
+          "fa": "مذاکره"
+        },
+        "cefr": "B2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_formal_negotiation_02",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "lemma": "협상",
+        "display_lemma": "협상",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_hyeopsang"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_formal_negotiation_02",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "lexeme_ref": "lx_formal_negotiation_02",
+        "surface_form": "협상",
+        "display_form": "협상",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_formal_negotiation_03",
+      "data": {
+        "slug": "ko_b2_formal_negotiation_joyeong",
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "조정"
+        },
+        "translations": {
+          "fa": "تنظیم / تعدیل"
+        },
+        "cefr": "B2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_formal_negotiation_03",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "lemma": "조정",
+        "display_lemma": "조정",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_joyeong"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_formal_negotiation_03",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "lexeme_ref": "lx_formal_negotiation_03",
+        "surface_form": "조정",
+        "display_form": "조정",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_formal_negotiation_04",
+      "data": {
+        "slug": "ko_b2_formal_negotiation_yangbo",
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "양보"
+        },
+        "translations": {
+          "fa": "امتیاز دادن / کوتاه آمدن"
+        },
+        "cefr": "B2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_formal_negotiation_04",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "lemma": "양보",
+        "display_lemma": "양보",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_yangbo"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_formal_negotiation_04",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "lexeme_ref": "lx_formal_negotiation_04",
+        "surface_form": "양보",
+        "display_form": "양보",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_formal_negotiation_05",
+      "data": {
+        "slug": "ko_b2_formal_negotiation_hapui",
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "합의"
+        },
+        "translations": {
+          "fa": "توافق"
+        },
+        "cefr": "B2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_formal_negotiation_05",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "lemma": "합의",
+        "display_lemma": "합의",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_hapui"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_formal_negotiation_05",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "lexeme_ref": "lx_formal_negotiation_05",
+        "surface_form": "합의",
+        "display_form": "합의",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_formal_negotiation_06",
+      "data": {
+        "slug": "ko_b2_formal_negotiation_geomto",
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "검토하다"
+        },
+        "translations": {
+          "fa": "بررسی کردن"
+        },
+        "cefr": "B2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_formal_negotiation_06",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "lemma": "검토하다",
+        "display_lemma": "검토하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_geomto"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_formal_negotiation_06",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "lexeme_ref": "lx_formal_negotiation_06",
+        "surface_form": "검토하다",
+        "display_form": "검토하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_formal_negotiation_01",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "text": {
+          "ko": "일정을 일주일 조정해 주시면 감사하겠습니다."
+        },
+        "translations": {
+          "fa": "ممنون می‌شویم اگر برنامه را یک هفته جابه‌جا کنید."
+        },
+        "intent": "formal_request",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_joyeong"
+        ],
+        "cefr": "B2",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_formal_negotiation_02",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "text": {
+          "ko": "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다."
+        },
+        "translations": {
+          "fa": "اگر شرط این باشد که هزینه اضافی نداشته باشد، می‌توانیم پیشنهاد را بررسی کنیم."
+        },
+        "intent": "conditional_offer",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_jogeon",
+          "ko_b2_formal_negotiation_geomto"
+        ],
+        "cefr": "B2",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_formal_negotiation_03",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "text": {
+          "ko": "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?"
+        },
+        "translations": {
+          "fa": "می‌توانیم در جهتی توافق کنیم که هر طرف در یک مورد کوتاه بیاید؟"
+        },
+        "intent": "compromise",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_yangbo",
+          "ko_b2_formal_negotiation_hapui"
+        ],
+        "cefr": "B2",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_formal_negotiation_04",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "text": {
+          "ko": "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        },
+        "translations": {
+          "fa": "این بخش به مذاکره داخلی بیشتری نیاز دارد و امروز نمی‌توانم پاسخ قطعی بدهم."
+        },
+        "intent": "negotiation_limit",
+        "concept_refs": [
+          "ko_b2_formal_negotiation_hyeopsang"
+        ],
+        "cefr": "B2",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_formal_negotiation_core",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "slug": "b2-ko-formal-negotiation-grammar",
+        "title": "격식을 갖춘 요청과 조건",
+        "rule_summary": "Use honorific request forms and explicit condition markers to negotiate politely without weakening the content.",
+        "explanation": {
+          "fa": "در مذاکره رسمی، درخواست را با شکل‌های مؤدبانه بیان می‌کنیم و شرط را صریح نگه می‌داریم تا احترام باعث مبهم شدن موضع نشود."
+        },
+        "examples": [
+          {
+            "ko": "자료를 오늘 안에 보내 주시면 감사하겠습니다.",
+            "fa": "ممنون می‌شویم اگر مدارک را تا امروز بفرستید."
+          },
+          {
+            "ko": "품질이 보장되는 조건으로 계약을 연장하겠습니다.",
+            "fa": "به شرط تضمین کیفیت قرارداد را تمدید می‌کنیم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_formal_negotiation_01",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "title": "납기 조정",
+        "setting": "item",
+        "cefr": "B2",
+        "topic": "requests",
+        "characters": [
+          "하나",
+          "도윤"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "하나",
+            "text": "현재 일정으로는 품질을 보장하기 어렵습니다.",
+            "translation_fa": "با برنامه فعلی تضمین کیفیت دشوار است."
+          },
+          {
+            "order": 2,
+            "speaker": "도윤",
+            "text": "어느 정도 조정이 필요합니까?",
+            "translation_fa": "چه میزان تغییر لازم است؟"
+          },
+          {
+            "order": 3,
+            "speaker": "하나",
+            "text": "최소 일주일 연장해 주시면 좋겠습니다.",
+            "translation_fa": "بهتر است حداقل یک هفته تمدید شود."
+          },
+          {
+            "order": 4,
+            "speaker": "도윤",
+            "text": "추가 비용이 없다면 내부 검토 후 답드리겠습니다.",
+            "translation_fa": "اگر هزینه اضافی نباشد، بعد از بررسی داخلی پاسخ می‌دهم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_formal_negotiation_02",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "title": "서로의 조건",
+        "setting": "item",
+        "cefr": "B2",
+        "topic": "requests",
+        "characters": [
+          "민수",
+          "유나"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "민수",
+            "text": "가격을 유지하는 대신 수량을 늘리는 건 어떨까요?",
+            "translation_fa": "چطور است در عوض ثابت نگه داشتن قیمت، تعداد را بیشتر کنیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "유나",
+            "text": "배송 일정을 앞당길 수 있다면 검토해 볼 수 있어요.",
+            "translation_fa": "اگر بتوانید تحویل را جلو بیندازید، می‌توانیم بررسی کنیم."
+          },
+          {
+            "order": 3,
+            "speaker": "민수",
+            "text": "그 조건이면 저희도 한 번 양보할 수 있습니다.",
+            "translation_fa": "با آن شرط ما هم می‌توانیم یک امتیاز بدهیم."
+          },
+          {
+            "order": 4,
+            "speaker": "유나",
+            "text": "좋습니다. 합의 내용을 문서로 정리하죠.",
+            "translation_fa": "خوب است. توافق را مکتوب کنیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_01_meaning",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "일정을 일주일 조정해 주시면 감사하겠습니다."
+        },
+        "answer": {
+          "value": "ممنون می‌شویم اگر برنامه را یک هفته جابه‌جا کنید."
+        },
+        "options": [
+          "ممنون می‌شویم اگر برنامه را یک هفته جابه‌جا کنید.",
+          "اگر شرط این باشد که هزینه اضافی نداشته باشد، می‌توانیم پیشنهاد را بررسی کنیم.",
+          "می‌توانیم در جهتی توافق کنیم که هر طرف در یک مورد کوتاه بیاید؟",
+          "این بخش به مذاکره داخلی بیشتری نیاز دارد و امروز نمی‌توانم پاسخ قطعی بدهم."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 일정을 일주일 조정해 주시면 감사하겠습니다. — ممنون می‌شویم اگر برنامه را یک هفته جابه‌جا کنید.",
+          "model_answer": "일정을 일주일 조정해 주시면 감사하겠습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_01_listen",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다."
+        },
+        "answer": {
+          "value": "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다."
+        },
+        "options": [
+          "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다.",
+          "일정을 일주일 조정해 주시면 감사하겠습니다.",
+          "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?",
+          "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다. — اگر شرط این باشد که هزینه اضافی نداشته باشد، می‌توانیم پیشنهاد را بررسی کنیم.",
+          "model_answer": "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다.",
+          "transcript_ko": "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_01_speak",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "일정을 일주일 조정해 주시면 감사하겠습니다."
+        },
+        "answer": {
+          "expected_text": "일정을 일주일 조정해 주시면 감사하겠습니다."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 일정을 일주일 조정해 주시면 감사하겠습니다. — ممنون می‌شویم اگر برنامه را یک هفته جابه‌جا کنید.",
+          "model_answer": "일정을 일주일 조정해 주시면 감사하겠습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_01_build",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "비용이",
+            "없는",
+            "조건이라면",
+            "제안을",
+            "검토할",
+            "수",
+            "있습니다.",
+            "추가"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "추가",
+            "비용이",
+            "없는",
+            "조건이라면",
+            "제안을",
+            "검토할",
+            "수",
+            "있습니다."
+          ],
+          "value": "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다. — اگر شرط این باشد که هزینه اضافی نداشته باشد، می‌توانیم پیشنهاد را بررسی کنیم.",
+          "model_answer": "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_01_dialogue",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_formal_negotiation_01",
+          "question_fa": "کدام گزینه با معنی «ممنون می‌شویم اگر برنامه را یک هفته جابه‌جا کنید.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "일정을 일주일 조정해 주시면 감사하겠습니다."
+        },
+        "options": [
+          "일정을 일주일 조정해 주시면 감사하겠습니다.",
+          "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다.",
+          "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?",
+          "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 일정을 일주일 조정해 주시면 감사하겠습니다. — ممنون می‌شویم اگر برنامه را یک هفته جابه‌جا کنید.",
+          "model_answer": "일정을 일주일 조정해 주시면 감사하겠습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_02_meaning",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?"
+        },
+        "answer": {
+          "value": "می‌توانیم در جهتی توافق کنیم که هر طرف در یک مورد کوتاه بیاید؟"
+        },
+        "options": [
+          "می‌توانیم در جهتی توافق کنیم که هر طرف در یک مورد کوتاه بیاید؟",
+          "ممنون می‌شویم اگر برنامه را یک هفته جابه‌جا کنید.",
+          "اگر شرط این باشد که هزینه اضافی نداشته باشد، می‌توانیم پیشنهاد را بررسی کنیم.",
+          "این بخش به مذاکره داخلی بیشتری نیاز دارد و امروز نمی‌توانم پاسخ قطعی بدهم."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요? — می‌توانیم در جهتی توافق کنیم که هر طرف در یک مورد کوتاه بیاید؟",
+          "model_answer": "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_02_listen",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        },
+        "answer": {
+          "value": "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        },
+        "options": [
+          "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다.",
+          "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?",
+          "일정을 일주일 조정해 주시면 감사하겠습니다.",
+          "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다. — این بخش به مذاکره داخلی بیشتری نیاز دارد و امروز نمی‌توانم پاسخ قطعی بدهم.",
+          "model_answer": "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다.",
+          "transcript_ko": "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_02_speak",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?"
+        },
+        "answer": {
+          "expected_text": "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?"
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요? — می‌توانیم در جهتی توافق کنیم که هر طرف در یک مورد کوتاه بیاید؟",
+          "model_answer": "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_02_build",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "부분은",
+            "내부",
+            "협상이",
+            "더",
+            "필요해서",
+            "오늘",
+            "확답드리기",
+            "어렵습니다.",
+            "이"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "이",
+            "부분은",
+            "내부",
+            "협상이",
+            "더",
+            "필요해서",
+            "오늘",
+            "확답드리기",
+            "어렵습니다."
+          ],
+          "value": "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다. — این بخش به مذاکره داخلی بیشتری نیاز دارد و امروز نمی‌توانم پاسخ قطعی بدهم.",
+          "model_answer": "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_formal_negotiation_02_dialogue",
+      "data": {
+        "lesson_key": "b2-ko-formal-negotiation-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_formal_negotiation_02",
+          "question_fa": "کدام گزینه با معنی «می‌توانیم در جهتی توافق کنیم که هر طرف در یک مورد کوتاه بیاید؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?"
+        },
+        "options": [
+          "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?",
+          "일정을 일주일 조정해 주시면 감사하겠습니다.",
+          "추가 비용이 없는 조건이라면 제안을 검토할 수 있습니다.",
+          "이 부분은 내부 협상이 더 필요해서 오늘 확답드리기 어렵습니다."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요? — می‌توانیم در جهتی توافق کنیم که هر طرف در یک مورد کوتاه بیاید؟",
+          "model_answer": "서로 한 가지씩 양보하는 방향으로 합의할 수 있을까요?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

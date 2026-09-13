@@ -1,0 +1,867 @@
+{
+  "batch_id": "ko-kr-b2-evidence-and-inference-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "B2",
+  "curriculum_unit": "b2-ko-evidence-and-inference",
+  "generator": "gpt-5.6-sol:korean-b2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_evidence_and_inference_01",
+      "data": {
+        "slug": "ko_b2_evidence_and_inference_geungeo",
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "근거"
+        },
+        "translations": {
+          "fa": "مدرک / مبنا"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_evidence_and_inference_01",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "lemma": "근거",
+        "display_lemma": "근거",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_geungeo"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_evidence_and_inference_01",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "lexeme_ref": "lx_evidence_and_inference_01",
+        "surface_form": "근거",
+        "display_form": "근거",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_evidence_and_inference_02",
+      "data": {
+        "slug": "ko_b2_evidence_and_inference_jeonghwang",
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "정황"
+        },
+        "translations": {
+          "fa": "قرائن / شرایط"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_evidence_and_inference_02",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "lemma": "정황",
+        "display_lemma": "정황",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_jeonghwang"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_evidence_and_inference_02",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "lexeme_ref": "lx_evidence_and_inference_02",
+        "surface_form": "정황",
+        "display_form": "정황",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_evidence_and_inference_03",
+      "data": {
+        "slug": "ko_b2_evidence_and_inference_chucheuk",
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "추측"
+        },
+        "translations": {
+          "fa": "حدس"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_evidence_and_inference_03",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "lemma": "추측",
+        "display_lemma": "추측",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_chucheuk"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_evidence_and_inference_03",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "lexeme_ref": "lx_evidence_and_inference_03",
+        "surface_form": "추측",
+        "display_form": "추측",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_evidence_and_inference_04",
+      "data": {
+        "slug": "ko_b2_evidence_and_inference_ganeungseong",
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "가능성"
+        },
+        "translations": {
+          "fa": "احتمال"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_evidence_and_inference_04",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "lemma": "가능성",
+        "display_lemma": "가능성",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_ganeungseong"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_evidence_and_inference_04",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "lexeme_ref": "lx_evidence_and_inference_04",
+        "surface_form": "가능성",
+        "display_form": "가능성",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_evidence_and_inference_05",
+      "data": {
+        "slug": "ko_b2_evidence_and_inference_hwagin",
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "확인되다"
+        },
+        "translations": {
+          "fa": "تأیید شدن"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_evidence_and_inference_05",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "lemma": "확인되다",
+        "display_lemma": "확인되다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_hwagin"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_evidence_and_inference_05",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "lexeme_ref": "lx_evidence_and_inference_05",
+        "surface_form": "확인되다",
+        "display_form": "확인되다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_evidence_and_inference_06",
+      "data": {
+        "slug": "ko_b2_evidence_and_inference_danjeong",
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "단정하다"
+        },
+        "translations": {
+          "fa": "قطعی حکم دادن"
+        },
+        "cefr": "B2",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_evidence_and_inference_06",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "lemma": "단정하다",
+        "display_lemma": "단정하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_danjeong"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_evidence_and_inference_06",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "lexeme_ref": "lx_evidence_and_inference_06",
+        "surface_form": "단정하다",
+        "display_form": "단정하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_evidence_and_inference_01",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "text": {
+          "ko": "현재 정황만 보면 일정이 더 늦어질 가능성이 커요."
+        },
+        "translations": {
+          "fa": "با توجه به شرایط فعلی، احتمال تأخیر بیشتر بالاست."
+        },
+        "intent": "inference",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_jeonghwang",
+          "ko_b2_evidence_and_inference_ganeungseong"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_evidence_and_inference_02",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "text": {
+          "ko": "공식적으로 확인된 사실과 추측은 구분해야 합니다."
+        },
+        "translations": {
+          "fa": "باید میان واقعیتِ رسماً تأییدشده و حدس تفاوت بگذاریم."
+        },
+        "intent": "source_distinction",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_hwagin",
+          "ko_b2_evidence_and_inference_chucheuk"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_evidence_and_inference_03",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "text": {
+          "ko": "자료상으로는 수요가 조금씩 회복되는 것으로 보여요."
+        },
+        "translations": {
+          "fa": "طبق داده‌ها به نظر می‌رسد تقاضا کم‌کم در حال برگشت است."
+        },
+        "intent": "evidence_based_inference",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_geungeo"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_evidence_and_inference_04",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "text": {
+          "ko": "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        },
+        "translations": {
+          "fa": "وقتی مدرک کافی نیست نباید نتیجه را قطعی اعلام کرد."
+        },
+        "intent": "caution",
+        "concept_refs": [
+          "ko_b2_evidence_and_inference_geungeo",
+          "ko_b2_evidence_and_inference_danjeong"
+        ],
+        "cefr": "B2",
+        "topic": "questions",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_evidence_and_inference_core",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "slug": "b2-ko-evidence-and-inference-grammar",
+        "title": "근거에 따른 추론",
+        "rule_summary": "Use -는 것으로 보이다 and -(으)ㄹ 가능성이 있다 to mark conclusions as evidence-based but not absolute.",
+        "explanation": {
+          "fa": "برای نتیجه‌گیری مبتنی بر شواهد بدون قطعیت کامل از -는 것으로 보이다 و -(으)ㄹ 가능성이 있다 استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "ko": "참여율이 다시 높아지는 것으로 보입니다.",
+            "fa": "به نظر می‌رسد نرخ مشارکت دوباره در حال افزایش است."
+          },
+          {
+            "ko": "추가 비용이 발생할 가능성이 있어요.",
+            "fa": "احتمال ایجاد هزینه اضافی وجود دارد."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_evidence_and_inference_01",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "title": "확인된 것과 추정",
+        "setting": "item",
+        "cefr": "B2",
+        "topic": "questions",
+        "characters": [
+          "하나",
+          "태호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "하나",
+            "text": "원인이 밝혀졌다는 보도가 맞아요?",
+            "translation_fa": "خبر درست است که علت مشخص شده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "태호",
+            "text": "아직 공식 확인은 없고 몇 가지 정황만 나온 상태예요.",
+            "translation_fa": "هنوز تأیید رسمی نیست و فقط چند قرینه منتشر شده."
+          },
+          {
+            "order": 3,
+            "speaker": "하나",
+            "text": "그럼 제목을 확정적으로 쓰면 안 되겠네요.",
+            "translation_fa": "پس نباید تیتر را قطعی بنویسیم."
+          },
+          {
+            "order": 4,
+            "speaker": "태호",
+            "text": "네, 가능성으로 표현하는 게 맞아요.",
+            "translation_fa": "بله، بهتر است آن را به‌صورت احتمال بیان کنیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_evidence_and_inference_02",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "title": "자료 해석",
+        "setting": "item",
+        "cefr": "B2",
+        "topic": "questions",
+        "characters": [
+          "유나",
+          "도윤"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "유나",
+            "text": "지난달 수치가 올랐는데 회복세라고 봐도 될까요?",
+            "translation_fa": "عدد ماه قبل بالا رفته؛ می‌شود آن را روند بهبود دانست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "도윤",
+            "text": "한 달 자료만으로 단정하기는 어려워요.",
+            "translation_fa": "با داده یک ماه نمی‌شود قطعی حکم داد."
+          },
+          {
+            "order": 3,
+            "speaker": "유나",
+            "text": "어떤 근거가 더 필요하죠?",
+            "translation_fa": "چه شواهد دیگری لازم است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "도윤",
+            "text": "최소 몇 달의 추세와 외부 요인을 함께 봐야 합니다.",
+            "translation_fa": "حداقل باید روند چند ماه و عوامل بیرونی را با هم ببینیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_01_meaning",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "현재 정황만 보면 일정이 더 늦어질 가능성이 커요."
+        },
+        "answer": {
+          "value": "با توجه به شرایط فعلی، احتمال تأخیر بیشتر بالاست."
+        },
+        "options": [
+          "با توجه به شرایط فعلی، احتمال تأخیر بیشتر بالاست.",
+          "باید میان واقعیتِ رسماً تأییدشده و حدس تفاوت بگذاریم.",
+          "طبق داده‌ها به نظر می‌رسد تقاضا کم‌کم در حال برگشت است.",
+          "وقتی مدرک کافی نیست نباید نتیجه را قطعی اعلام کرد."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 현재 정황만 보면 일정이 더 늦어질 가능성이 커요. — با توجه به شرایط فعلی، احتمال تأخیر بیشتر بالاست.",
+          "model_answer": "현재 정황만 보면 일정이 더 늦어질 가능성이 커요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_01_listen",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "공식적으로 확인된 사실과 추측은 구분해야 합니다."
+        },
+        "answer": {
+          "value": "공식적으로 확인된 사실과 추측은 구분해야 합니다."
+        },
+        "options": [
+          "공식적으로 확인된 사실과 추측은 구분해야 합니다.",
+          "현재 정황만 보면 일정이 더 늦어질 가능성이 커요.",
+          "자료상으로는 수요가 조금씩 회복되는 것으로 보여요.",
+          "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 공식적으로 확인된 사실과 추측은 구분해야 합니다. — باید میان واقعیتِ رسماً تأییدشده و حدس تفاوت بگذاریم.",
+          "model_answer": "공식적으로 확인된 사실과 추측은 구분해야 합니다.",
+          "transcript_ko": "공식적으로 확인된 사실과 추측은 구분해야 합니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_01_speak",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "현재 정황만 보면 일정이 더 늦어질 가능성이 커요."
+        },
+        "answer": {
+          "expected_text": "현재 정황만 보면 일정이 더 늦어질 가능성이 커요."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 현재 정황만 보면 일정이 더 늦어질 가능성이 커요. — با توجه به شرایط فعلی، احتمال تأخیر بیشتر بالاست.",
+          "model_answer": "현재 정황만 보면 일정이 더 늦어질 가능성이 커요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_01_build",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "확인된",
+            "사실과",
+            "추측은",
+            "구분해야",
+            "합니다.",
+            "공식적으로"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "공식적으로",
+            "확인된",
+            "사실과",
+            "추측은",
+            "구분해야",
+            "합니다."
+          ],
+          "value": "공식적으로 확인된 사실과 추측은 구분해야 합니다."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 공식적으로 확인된 사실과 추측은 구분해야 합니다. — باید میان واقعیتِ رسماً تأییدشده و حدس تفاوت بگذاریم.",
+          "model_answer": "공식적으로 확인된 사실과 추측은 구분해야 합니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_01_dialogue",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_evidence_and_inference_01",
+          "question_fa": "کدام گزینه با معنی «با توجه به شرایط فعلی، احتمال تأخیر بیشتر بالاست.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "현재 정황만 보면 일정이 더 늦어질 가능성이 커요."
+        },
+        "options": [
+          "현재 정황만 보면 일정이 더 늦어질 가능성이 커요.",
+          "공식적으로 확인된 사실과 추측은 구분해야 합니다.",
+          "자료상으로는 수요가 조금씩 회복되는 것으로 보여요.",
+          "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 현재 정황만 보면 일정이 더 늦어질 가능성이 커요. — با توجه به شرایط فعلی، احتمال تأخیر بیشتر بالاست.",
+          "model_answer": "현재 정황만 보면 일정이 더 늦어질 가능성이 커요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_02_meaning",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "자료상으로는 수요가 조금씩 회복되는 것으로 보여요."
+        },
+        "answer": {
+          "value": "طبق داده‌ها به نظر می‌رسد تقاضا کم‌کم در حال برگشت است."
+        },
+        "options": [
+          "طبق داده‌ها به نظر می‌رسد تقاضا کم‌کم در حال برگشت است.",
+          "با توجه به شرایط فعلی، احتمال تأخیر بیشتر بالاست.",
+          "باید میان واقعیتِ رسماً تأییدشده و حدس تفاوت بگذاریم.",
+          "وقتی مدرک کافی نیست نباید نتیجه را قطعی اعلام کرد."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 자료상으로는 수요가 조금씩 회복되는 것으로 보여요. — طبق داده‌ها به نظر می‌رسد تقاضا کم‌کم در حال برگشت است.",
+          "model_answer": "자료상으로는 수요가 조금씩 회복되는 것으로 보여요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_02_listen",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        },
+        "answer": {
+          "value": "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        },
+        "options": [
+          "근거가 충분하지 않은데 결과를 단정하면 안 돼요.",
+          "자료상으로는 수요가 조금씩 회복되는 것으로 보여요.",
+          "현재 정황만 보면 일정이 더 늦어질 가능성이 커요.",
+          "공식적으로 확인된 사실과 추측은 구분해야 합니다."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 근거가 충분하지 않은데 결과를 단정하면 안 돼요. — وقتی مدرک کافی نیست نباید نتیجه را قطعی اعلام کرد.",
+          "model_answer": "근거가 충분하지 않은데 결과를 단정하면 안 돼요.",
+          "transcript_ko": "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_02_speak",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "자료상으로는 수요가 조금씩 회복되는 것으로 보여요."
+        },
+        "answer": {
+          "expected_text": "자료상으로는 수요가 조금씩 회복되는 것으로 보여요."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 자료상으로는 수요가 조금씩 회복되는 것으로 보여요. — طبق داده‌ها به نظر می‌رسد تقاضا کم‌کم در حال برگشت است.",
+          "model_answer": "자료상으로는 수요가 조금씩 회복되는 것으로 보여요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_02_build",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "충분하지",
+            "않은데",
+            "결과를",
+            "단정하면",
+            "안",
+            "돼요.",
+            "근거가"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "근거가",
+            "충분하지",
+            "않은데",
+            "결과를",
+            "단정하면",
+            "안",
+            "돼요."
+          ],
+          "value": "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 근거가 충분하지 않은데 결과를 단정하면 안 돼요. — وقتی مدرک کافی نیست نباید نتیجه را قطعی اعلام کرد.",
+          "model_answer": "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_evidence_and_inference_02_dialogue",
+      "data": {
+        "lesson_key": "b2-ko-evidence-and-inference-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_evidence_and_inference_02",
+          "question_fa": "کدام گزینه با معنی «طبق داده‌ها به نظر می‌رسد تقاضا کم‌کم در حال برگشت است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "자료상으로는 수요가 조금씩 회복되는 것으로 보여요."
+        },
+        "options": [
+          "자료상으로는 수요가 조금씩 회복되는 것으로 보여요.",
+          "현재 정황만 보면 일정이 더 늦어질 가능성이 커요.",
+          "공식적으로 확인된 사실과 추측은 구분해야 합니다.",
+          "근거가 충분하지 않은데 결과를 단정하면 안 돼요."
+        ],
+        "difficulty": 4,
+        "cefr": "B2",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 자료상으로는 수요가 조금씩 회복되는 것으로 보여요. — طبق داده‌ها به نظر می‌رسد تقاضا کم‌کم در حال برگشت است.",
+          "model_answer": "자료상으로는 수요가 조금씩 회복되는 것으로 보여요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
