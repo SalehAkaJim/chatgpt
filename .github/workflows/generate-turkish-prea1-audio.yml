@@ -47,7 +47,7 @@ jobs:
           set -euo pipefail
           test "$(find content/production/tr/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
           for f in content/production/tr/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
-          python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json --content-dir content/production/tr/Pre-A1
+          python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/pre_a1.py --dry-run
       - name: Build strict Turkish Pre-A1 manifest
         run: |
