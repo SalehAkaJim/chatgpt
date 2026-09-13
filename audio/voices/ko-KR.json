@@ -1,54 +1,21 @@
 {
   "locale": "ko-KR",
   "provider": "elevenlabs",
-  "lexical": {
-    "voice_key": "ko-kr.lexical.native-clear",
-    "voice_name": null,
-    "require_exact_name": false,
-    "allow_named_fallback": false,
-    "description": "Native-quality Standard Seoul Korean female adult narrator for isolated vocabulary, calm, crisp and highly intelligible for beginners.",
-    "prefer_high_quality": true,
-    "required_language": "ko",
-    "preferred_accent": "korean",
-    "required_labels": {"gender": "female"},
-    "settings": {"stability": 0.72, "similarity_boost": 0.88, "style": 0.0, "use_speaker_boost": true, "speed": 0.92}
-  },
-  "sentence_narrator": {
-    "voice_key": "ko-kr.sentence.native-clear",
-    "voice_name": null,
-    "require_exact_name": false,
-    "allow_named_fallback": false,
-    "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
-    "prefer_high_quality": true,
-    "required_language": "ko",
-    "preferred_accent": "korean",
-    "required_labels": {"gender": "female"},
-    "settings": {"stability": 0.68, "similarity_boost": 0.88, "style": 0.0, "use_speaker_boost": true, "speed": 0.95}
-  },
+  "lexical": {"voice_key":"ko-kr.lexical.native-clear","voice_name":null,"require_exact_name":false,"allow_named_fallback":false,"description":"Native-quality Standard Seoul Korean female adult narrator for isolated vocabulary, calm, crisp and highly intelligible for beginners.","prefer_high_quality":true,"required_language":"ko","preferred_accent":"korean","required_labels":{"gender":"female"},"settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92}},
+  "sentence_narrator": {"voice_key":"ko-kr.sentence.native-clear","voice_name":null,"require_exact_name":false,"allow_named_fallback":false,"description":"Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.","prefer_high_quality":true,"required_language":"ko","preferred_accent":"korean","required_labels":{"gender":"female"},"settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95}},
   "dialogue": {
-    "require_explicit_character_profile": true,
-    "require_distinct_character_voices": true,
-    "default_model_env": "ELEVENLABS_DIALOGUE_MODEL_ID",
+    "require_explicit_character_profile":true,"require_distinct_character_voices":true,"default_model_env":"ELEVENLABS_DIALOGUE_MODEL_ID",
     "profiles": {
-      "female_warm": {"voice_name": null, "description": "Warm natural female adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.", "required_language": "ko", "preferred_accent": "korean", "prefer_high_quality": true, "required_labels": {"gender": "female"}, "distinct_character": true, "settings": {"stability": 0.58, "similarity_boost": 0.87, "style": 0.14, "use_speaker_boost": true, "speed": 0.97}},
-      "male_warm": {"voice_name": null, "description": "Warm natural male adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.", "required_language": "ko", "preferred_accent": "korean", "prefer_high_quality": true, "required_labels": {"gender": "male"}, "distinct_character": true, "settings": {"stability": 0.58, "similarity_boost": 0.87, "style": 0.14, "use_speaker_boost": true, "speed": 0.97}},
-      "female_calm": {"voice_name": null, "description": "Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.", "required_language": "ko", "preferred_accent": "korean", "prefer_high_quality": true, "required_labels": {"gender": "female"}, "distinct_character": true, "settings": {"stability": 0.68, "similarity_boost": 0.89, "style": 0.06, "use_speaker_boost": true, "speed": 0.95}},
-      "male_calm": {"voice_name": null, "description": "Calm precise male adult Standard Seoul Korean voice, grounded, natural and highly intelligible.", "required_language": "ko", "preferred_accent": "korean", "prefer_high_quality": true, "required_labels": {"gender": "male"}, "distinct_character": true, "settings": {"stability": 0.68, "similarity_boost": 0.89, "style": 0.06, "use_speaker_boost": true, "speed": 0.95}},
-      "female_bright": {"voice_name": null, "description": "Bright lively female young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.", "required_language": "ko", "preferred_accent": "korean", "prefer_high_quality": true, "required_labels": {"gender": "female"}, "distinct_character": true, "settings": {"stability": 0.52, "similarity_boost": 0.86, "style": 0.20, "use_speaker_boost": true, "speed": 0.99}},
-      "male_bright": {"voice_name": null, "description": "Bright lively male young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.", "required_language": "ko", "preferred_accent": "korean", "prefer_high_quality": true, "required_labels": {"gender": "male"}, "distinct_character": true, "settings": {"stability": 0.52, "similarity_boost": 0.86, "style": 0.20, "use_speaker_boost": true, "speed": 0.99}},
-      "female_professional": {"voice_name": null, "description": "Neutral professional female adult Standard Seoul Korean voice, confident, clean and highly intelligible.", "required_language": "ko", "preferred_accent": "korean", "prefer_high_quality": true, "required_labels": {"gender": "female"}, "distinct_character": true, "settings": {"stability": 0.71, "similarity_boost": 0.90, "style": 0.05, "use_speaker_boost": true, "speed": 0.96}},
-      "male_professional": {"voice_name": null, "description": "Neutral professional male adult Standard Seoul Korean voice, confident, clean and highly intelligible.", "required_language": "ko", "preferred_accent": "korean", "prefer_high_quality": true, "required_labels": {"gender": "male"}, "distinct_character": true, "settings": {"stability": 0.71, "similarity_boost": 0.90, "style": 0.05, "use_speaker_boost": true, "speed": 0.96}}
+      "female_warm":{"voice_name":null,"description":"Warm natural female adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.","required_language":"ko","preferred_accent":"korean","prefer_high_quality":true,"required_labels":{"gender":"female"},"distinct_character":true,"settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97}},
+      "male_warm":{"voice_name":null,"description":"Warm natural male adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.","required_language":"ko","preferred_accent":"korean","prefer_high_quality":true,"required_labels":{"gender":"male"},"distinct_character":true,"settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97}},
+      "female_calm":{"voice_name":null,"description":"Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.","required_language":"ko","preferred_accent":"korean","prefer_high_quality":true,"required_labels":{"gender":"female"},"distinct_character":true,"settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95}},
+      "male_calm":{"voice_name":null,"description":"Calm precise male adult Standard Seoul Korean voice, grounded, natural and highly intelligible.","required_language":"ko","preferred_accent":"korean","prefer_high_quality":true,"required_labels":{"gender":"male"},"distinct_character":true,"settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95}},
+      "female_bright":{"voice_name":null,"description":"Bright lively female young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.","required_language":"ko","preferred_accent":"korean","prefer_high_quality":true,"required_labels":{"gender":"female"},"distinct_character":true,"settings":{"stability":0.52,"similarity_boost":0.86,"style":0.20,"use_speaker_boost":true,"speed":0.99}},
+      "male_bright":{"voice_name":null,"description":"Bright lively male young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.","required_language":"ko","preferred_accent":"korean","prefer_high_quality":true,"required_labels":{"gender":"male"},"distinct_character":true,"settings":{"stability":0.52,"similarity_boost":0.86,"style":0.20,"use_speaker_boost":true,"speed":0.99}},
+      "female_professional":{"voice_name":null,"description":"Neutral professional female adult Standard Seoul Korean voice, confident, clean and highly intelligible.","required_language":"ko","preferred_accent":"korean","prefer_high_quality":true,"required_labels":{"gender":"female"},"distinct_character":true,"settings":{"stability":0.71,"similarity_boost":0.90,"style":0.05,"use_speaker_boost":true,"speed":0.96}},
+      "male_professional":{"voice_name":null,"description":"Neutral professional male adult Standard Seoul Korean voice, confident, clean and highly intelligible.","required_language":"ko","preferred_accent":"korean","prefer_high_quality":true,"required_labels":{"gender":"male"},"distinct_character":true,"settings":{"stability":0.71,"similarity_boost":0.90,"style":0.05,"use_speaker_boost":true,"speed":0.96}}
     },
-    "character_assignments": {
-      "jimin": "female_warm",
-      "minsu": "male_warm",
-      "seoyeon": "female_bright",
-      "junho": "male_bright",
-      "hana": "female_calm",
-      "taeho": "male_calm",
-      "yuna": "female_professional",
-      "doyun": "male_professional"
-    }
+    "character_assignments":{"지민":"female_warm","민수":"male_warm","서연":"female_bright","준호":"male_bright","하나":"female_calm","태호":"male_calm","유나":"female_professional","도윤":"male_professional"}
   },
-  "generation": {"model_id": "eleven_multilingual_v2", "preferred_output_format": "mp3_44100_192", "fallback_output_format": "mp3_44100_128", "concurrency": 2}
+  "generation":{"model_id":"eleven_multilingual_v2","preferred_output_format":"mp3_44100_192","fallback_output_format":"mp3_44100_128","concurrency":2}
 }
