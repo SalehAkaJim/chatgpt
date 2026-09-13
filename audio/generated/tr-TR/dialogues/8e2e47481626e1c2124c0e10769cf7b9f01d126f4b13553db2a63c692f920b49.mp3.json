@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "484fd5a563bdc08bcf2ea86e89d75f154657aaf1863ff5f68c5c55a864969bf2",
+  "voice_id": "4XsbOSxQHw4NUVaEeo2o",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "8e2e47481626e1c2124c0e10769cf7b9f01d126f4b13553db2a63c692f920b49",
+  "voice_key": "character:zeynep:female_professional",
+  "voice_name": "Elif - Calm & Natural",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "d865b0c445f55c286e5303eca648f58cb93c7253a6426fa556438c3ff2f991e2",
+  "duration_ms": 1149,
+  "generated_at": "2026-09-13T17:07:56.926028+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5f98a5c4-d7ee-5bfa-9cdb-e3589aaaa8e5",
+      "entity_key": "d_travel_and_hotel_01:2"
+    }
+  ]
+}

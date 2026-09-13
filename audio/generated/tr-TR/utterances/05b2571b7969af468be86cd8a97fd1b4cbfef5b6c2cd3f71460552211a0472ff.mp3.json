@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "ffacd7a9823ce5dc2d8f34e5d88389f6de4e8baea9909420a7777ec978232d11",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "05b2571b7969af468be86cd8a97fd1b4cbfef5b6c2cd3f71460552211a0472ff",
+  "voice_key": "tr-tr.sentence.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "9624a4b959721a4f793deca6f02e2ab7cdbe66352f41750f864648070f3698e6",
+  "duration_ms": 1697,
+  "generated_at": "2026-09-13T17:08:42.762099+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "260fe349-e35c-5928-8099-e337619ce931",
+      "entity_key": "u_travel_and_hotel_04"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "87e72495-844f-5f26-8f3b-28c42522feef",
+      "entity_key": "e_travel_and_hotel_02_listen"
+    }
+  ]
+}
