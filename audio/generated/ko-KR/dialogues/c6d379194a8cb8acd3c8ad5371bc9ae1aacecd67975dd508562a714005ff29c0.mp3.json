@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "af6ef3c95b301f066767fb5872baa2de40f6727c8aa1e90be5190cc464897ff4",
+  "voice_id": "7oLyBHyhxAjrctX6ZQlw",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "c6d379194a8cb8acd3c8ad5371bc9ae1aacecd67975dd508562a714005ff29c0",
+  "voice_key": "character:하나:female_calm",
+  "voice_name": "Bomisori - Warm and Clear",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "narrative_story",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "36fcdbf4237ee03b9ec1091600bbe311559267d21cfdacc41c5202c5f92d1f4c",
+  "duration_ms": 4911,
+  "generated_at": "2026-09-13T23:58:21.355200+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "ffe819da-a18e-5ae7-b84f-36c6205be334",
+      "entity_key": "d_register_and_social_distance_01:2"
+    }
+  ]
+}
