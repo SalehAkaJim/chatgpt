@@ -9,6 +9,7 @@ FROM (
   SELECT 'en' AS language_code, 'en-US' AS code, 'American English' AS name, 'American English' AS native_name, 'standard' AS variant_type, 'Latin' AS script, 'ltr' AS direction, TRUE AS is_default
   UNION ALL SELECT 'en','en-GB','British English','British English','regional','Latin','ltr',FALSE
   UNION ALL SELECT 'de','de-DE','Standard German','Standarddeutsch','standard','Latin','ltr',TRUE
+  UNION ALL SELECT 'tr','tr-TR','Istanbul Turkish','İstanbul Türkçesi','standard','Latin','ltr',TRUE
   UNION ALL SELECT 'fr','fr-FR','Standard French','français standard','standard','Latin','ltr',TRUE
   UNION ALL SELECT 'es','es-ES','European Spanish','español de España','standard','Latin','ltr',TRUE
   UNION ALL SELECT 'es','es-MX','Mexican Spanish','español de México','regional','Latin','ltr',FALSE
@@ -31,6 +32,7 @@ FROM (
   SELECT 'en-US' AS variant_code, 'en-US-latin' AS code, 'English Latin' AS name, 'Latin' AS script, TRUE AS uses_case, FALSE AS uses_diacritics, 'none' AS diacritics_policy, JSON_OBJECT() AS metadata
   UNION ALL SELECT 'en-GB','en-GB-latin','English Latin','Latin',TRUE,FALSE,'none',JSON_OBJECT()
   UNION ALL SELECT 'de-DE','de-DE-latin','German Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT('preserve_sharp_s', TRUE, 'noun_capitalization', TRUE)
+  UNION ALL SELECT 'tr-TR','tr-TR-latin','Turkish Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT('turkish_i_casefold', TRUE, 'preserve_dotted_dotless_i', TRUE, 'preserve_cedilla_breve_diaeresis', TRUE)
   UNION ALL SELECT 'fr-FR','fr-FR-latin','French Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT()
   UNION ALL SELECT 'es-ES','es-ES-latin','Spanish Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT()
   UNION ALL SELECT 'es-MX','es-MX-latin','Spanish Latin','Latin',TRUE,TRUE,'required',JSON_OBJECT()
@@ -74,6 +76,11 @@ FROM (
          'German for Persian speakers',
          'Standard German course localized for Persian-speaking learners.',
          JSON_OBJECT('curriculum_family','german','default_variant','de-DE')
+  UNION ALL
+  SELECT 'fa-tr-tr', 'fa', 'fa-IR', 'tr', 'tr-TR',
+         'Turkish for Persian speakers',
+         'Istanbul Turkish course localized for Persian-speaking learners.',
+         JSON_OBJECT('curriculum_family','turkish','default_variant','tr-TR','standard','istanbul')
   UNION ALL
   SELECT 'fa-ar-msa', 'fa', 'fa-IR', 'ar', 'ar-MSA',
          'Modern Standard Arabic for Persian speakers',
