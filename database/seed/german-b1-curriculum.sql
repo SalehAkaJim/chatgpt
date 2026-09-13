@@ -33,7 +33,7 @@ FROM (
   UNION ALL SELECT 170,'shopping-money','prices','b1-de-money-budget','Geld & Budget','Ausgaben planen, Sparziele erklären und alltägliche finanzielle Entscheidungen begründen.',3,'damit; je ... desto; weder ... noch / sowohl ... als auch'
   UNION ALL SELECT 180,'social','polite-language','b1-de-relationships-conflict','Beziehungen & Konflikte','Missverständnisse und Gefühle erklären, sich entschuldigen und einen Kompromiss aushandeln.',3,'weil / dass; reflexive Verben mit Präpositionen; Relativsatz mit Präposition'
   UNION ALL SELECT 190,'social','hobbies','b1-de-culture-events','Kultur & Veranstaltungen','Kulturelle Erlebnisse beschreiben, differenziert bewerten und praktische Veranstaltungsinformationen austauschen.',3,'Relativsätze mit Präpositionen; obwohl; Passiv Präteritum'
-  UNION ALL SELECT 200,'time-plans','future-plans','b1-de-decisions-consequences','Möglichkeiten abwägen, mögliche Folgen einschätzen und Entscheidungen nachvollziehbar begründen.',3,'falls + Konjunktiv II; solange; sich entscheiden für/gegen'
+  UNION ALL SELECT 200,'time-plans','future-plans','b1-de-decisions-consequences','Entscheidungen & Folgen','Möglichkeiten abwägen, mögliche Folgen einschätzen und Entscheidungen nachvollziehbar begründen.',3,'falls + Konjunktiv II; solange; sich entscheiden für/gegen'
 ) u
 JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B1'
