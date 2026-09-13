@@ -11,7 +11,7 @@ on:
       batch:
         description: 'B1 batch number (10 units per batch)'
         required: true
-        default: '1'
+        default: '2'
 
 permissions:
   contents: write
@@ -29,7 +29,7 @@ jobs:
       CONTENT_TTS_CONCURRENCY: '2'
       ELEVENLABS_MODEL_ID: eleven_multilingual_v2
       ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
-      BATCH: ${{ github.event.inputs.batch || '1' }}
+      BATCH: ${{ github.event.inputs.batch || '2' }}
 
     steps:
       - name: Checkout German B1 branch
@@ -53,23 +53,28 @@ jobs:
             exit 2
           fi
 
-      - name: Select exactly ten B1 units for this batch
+      - name: Select exactly ten B1 units from this batch specs
         run: |
           set -euo pipefail
           rm -rf build/b1-audio-batch
           mkdir -p build/b1-audio-batch
           python - <<'PY'
-          import os, pathlib, shutil
+          import json, os, pathlib, shutil
           batch=int(os.environ['BATCH'])
-          files=sorted(pathlib.Path('content/production/de/B1').glob('*.json'))
-          start=(batch-1)*10
-          selected=files[start:start+10]
-          if len(selected) != 10:
-              raise SystemExit(f'Batch {batch} needs exactly 10 units, found {len(selected)}')
+          spec_dir=pathlib.Path(f'content/specs/de/B1/batch-{batch:02d}')
+          specs=sorted(spec_dir.glob('*.json'))
+          if len(specs) != 10:
+              raise SystemExit(f'Batch {batch} needs exactly 10 specs, found {len(specs)}')
           out=pathlib.Path('build/b1-audio-batch')
-          for p in selected:
-              shutil.copy2(p, out/p.name)
-          print({'batch':batch,'selected':[p.name for p in selected]})
+          selected=[]
+          for spec_path in specs:
+              slug=json.loads(spec_path.read_text(encoding='utf-8'))['slug']
+              prod=pathlib.Path('content/production/de/B1') / f'b1-de-{slug}-v1.json'
+              if not prod.exists():
+                  raise SystemExit(f'Missing production unit for batch {batch}: {prod}')
+              shutil.copy2(prod, out/prod.name)
+              selected.append(prod.name)
+          print({'batch':batch,'selected':selected})
           PY
 
       - name: Final B1 batch validation before paid generation
