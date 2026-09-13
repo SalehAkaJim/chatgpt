@@ -18,3 +18,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German B2 curriculum, batch 2 (units 11-20).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',2)
+FROM (
+  SELECT 110 AS sort_order,'social' AS skill_slug,'polite-language' AS topic_slug,'b2-de-relationships-misunderstandings' AS slug,'Missverständnisse klären' AS title,'Zwischenmenschliche Missverständnisse sachlich klären, unterschiedliche Wahrnehmungen benennen und die Kommunikation konstruktiv reparieren.' AS objective,3 AS expected_lessons,'offenbar/anscheinend; nicht als ... gemeint sein; bevor-Sätze' AS grammar_focus
+  UNION ALL SELECT 120,'communication','polite-language','b2-de-feedback-critique','Feedback differenziert geben','Konstruktives Feedback geben, Beobachtung und Bewertung trennen, Verbesserungen priorisieren und deren erwartete Wirkung erklären.',3,'allerdings; Konjunktiv II für Vorschläge; dadurch würde'
+  UNION ALL SELECT 130,'work-study','jobs','b2-de-work-priorities-blockers','Prioritäten & Blocker kommunizieren','Prioritäten, Zuständigkeiten, Blocker und Abhängigkeiten transparent kommunizieren und realistische Liefererwartungen ableiten.',3,'Zuständigkeit liegt bei; derzeit + Präsens; unter diesen Bedingungen'
+  UNION ALL SELECT 140,'work-study','jobs','b2-de-projects-deadlines-risks','Projektrisiken & Termine','Projektrisiken nach Wahrscheinlichkeit und Auswirkung bewerten, Verzögerungen erklären und konkrete Maßnahmen zur Absicherung planen.',3,'darin, dass; sollte als Konditionalsatz; deshalb/außerdem'
+  UNION ALL SELECT 150,'work-study','jobs','b2-de-job-interviews-achievements','Erfahrung & Erfolge im Interview','Berufserfahrung und Erfolge mit konkreten Beispielen darstellen, den eigenen Beitrag benennen und die Relevanz für eine neue Stelle erklären.',3,'bestand darin, ... zu; dadurch konnten wir; sich übertragen lassen'
+  UNION ALL SELECT 160,'work-study','school-study','b2-de-study-challenges-feedback','Lernprobleme & Fortschritt','Lernschwierigkeiten präzise benennen, Rückstände realistisch aufholen und Lernstrategien anhand überprüfbarer Fortschritte anpassen.',3,'nicht ... sondern; durch + Akkusativ; überprüfen, ob'
+  UNION ALL SELECT 170,'communication','requests','b2-de-complaints-service-resolution','Beschwerden lösungsorientiert klären','Eine detaillierte Beschwerde sachlich begründen, bisherige Lösungsversuche dokumentieren, konkrete Abhilfe verlangen und angebotene Lösungen bewerten.',3,'trotz; formelle Bitte + sollte; für angemessen halten'
+  UNION ALL SELECT 180,'shopping-money','shopping','b2-de-product-research-decisions','Produkte fundiert vergleichen','Produktinformationen, Bewertungen, Zuverlässigkeit, Garantie und Preis anhand transparenter Kriterien vergleichen und eine begründete Kaufentscheidung treffen.',3,'nicht ... sondern; zwar ... aber; wenn-Kriterien'
+  UNION ALL SELECT 190,'travel-transport','transport','b2-de-travel-disruptions','Reisestörungen bewältigen','Eine Reisestörung chronologisch erklären, bestätigte Informationen von Vermutungen trennen, Alternativen vergleichen und die Weiterreise verbindlich klären.',3,'wegen; falls; bestätigen, ob'
+  UNION ALL SELECT 200,'travel-transport','places-town','b2-de-accommodation-issues','Probleme mit der Unterkunft klären','Abweichungen von einer Buchung präzise benennen, frühere Zusagen einbeziehen, Alternativen verhandeln und die endgültige Lösung verbindlich festhalten.',3,'von ... abweichen; falls + Konjunktiv II; schriftlich festhalten'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
