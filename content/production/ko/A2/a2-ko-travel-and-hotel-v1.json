@@ -1,0 +1,856 @@
+{
+  "batch_id": "ko-kr-a2-travel-and-hotel-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "A2",
+  "curriculum_unit": "a2-ko-travel-and-hotel",
+  "generator": "gpt-5.6-sol:korean-a2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_01",
+      "data": {
+        "slug": "ko_a2_travel_and_hotel_yeyak",
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "예약"
+        },
+        "translations": {
+          "fa": "رزرو"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "lemma": "예약",
+        "display_lemma": "예약",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_yeyak"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_01",
+        "surface_form": "예약",
+        "display_form": "예약",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_02",
+      "data": {
+        "slug": "ko_a2_travel_and_hotel_hwaginhada",
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "확인하다"
+        },
+        "translations": {
+          "fa": "بررسی / تأیید کردن"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "lemma": "확인하다",
+        "display_lemma": "확인하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_hwaginhada"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_02",
+        "surface_form": "확인하다",
+        "display_form": "확인하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_03",
+      "data": {
+        "slug": "ko_a2_travel_and_hotel_bang",
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "방"
+        },
+        "translations": {
+          "fa": "اتاق"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "lemma": "방",
+        "display_lemma": "방",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_bang"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_03",
+        "surface_form": "방",
+        "display_form": "방",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_04",
+      "data": {
+        "slug": "ko_a2_travel_and_hotel_sugeon",
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "수건"
+        },
+        "translations": {
+          "fa": "حوله"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "lemma": "수건",
+        "display_lemma": "수건",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_sugeon"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_04",
+        "surface_form": "수건",
+        "display_form": "수건",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_05",
+      "data": {
+        "slug": "ko_a2_travel_and_hotel_chekeuin",
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "체크인"
+        },
+        "translations": {
+          "fa": "چک‌این"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_05",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "lemma": "체크인",
+        "display_lemma": "체크인",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_chekeuin"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_05",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_05",
+        "surface_form": "체크인",
+        "display_form": "체크인",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_06",
+      "data": {
+        "slug": "ko_a2_travel_and_hotel_jim",
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "짐"
+        },
+        "translations": {
+          "fa": "بار / چمدان"
+        },
+        "cefr": "A2",
+        "topic": "travel",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_06",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "lemma": "짐",
+        "display_lemma": "짐",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_jim"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_06",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_06",
+        "surface_form": "짐",
+        "display_form": "짐",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "text": {
+          "ko": "예약을 확인하고 싶어요."
+        },
+        "translations": {
+          "fa": "می‌خواهم رزرو را بررسی کنم."
+        },
+        "intent": "service_request",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_yeyak",
+          "ko_a2_travel_and_hotel_hwaginhada"
+        ],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "text": {
+          "ko": "지금 체크인할 수 있어요?"
+        },
+        "translations": {
+          "fa": "الان می‌توانم چک‌این کنم؟"
+        },
+        "intent": "ask_checkin",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_chekeuin"
+        ],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "text": {
+          "ko": "수건을 하나 더 받을 수 있을까요?"
+        },
+        "translations": {
+          "fa": "می‌شود یک حولهٔ دیگر بگیرم؟"
+        },
+        "intent": "polite_request",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_sugeon"
+        ],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "text": {
+          "ko": "짐을 방에 두고 싶어요."
+        },
+        "translations": {
+          "fa": "می‌خواهم چمدان را در اتاق بگذارم."
+        },
+        "intent": "state_wish",
+        "concept_refs": [
+          "ko_a2_travel_and_hotel_jim",
+          "ko_a2_travel_and_hotel_bang"
+        ],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_travel_and_hotel_core",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "slug": "a2-ko-travel-and-hotel-grammar",
+        "title": "-고 싶어요",
+        "rule_summary": "Use -고 싶어요 to express what you want to do; combine with polite questions for service situations.",
+        "explanation": {
+          "fa": "برای بیان «می‌خواهم کاری انجام بدهم» از -고 싶어요 استفاده می‌کنیم؛ در موقعیت خدماتی آن را با سؤال‌های مؤدبانه ترکیب می‌کنیم."
+        },
+        "examples": [
+          {
+            "ko": "예약을 확인하고 싶어요.",
+            "fa": "می‌خواهم رزرو را بررسی کنم."
+          },
+          {
+            "ko": "좀 쉬고 싶어요.",
+            "fa": "می‌خواهم کمی استراحت کنم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "title": "체크인",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "travel",
+        "characters": [
+          "서연",
+          "민수"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "서연",
+            "text": "안녕하세요. 예약을 확인하고 싶어요.",
+            "translation_fa": "سلام. می‌خواهم رزرو را بررسی کنم."
+          },
+          {
+            "order": 2,
+            "speaker": "민수",
+            "text": "성함이 어떻게 되세요?",
+            "translation_fa": "نامتان چیست؟"
+          },
+          {
+            "order": 3,
+            "speaker": "서연",
+            "text": "서연이에요.",
+            "translation_fa": "سویون هستم."
+          },
+          {
+            "order": 4,
+            "speaker": "민수",
+            "text": "네, 예약이 확인됐습니다.",
+            "translation_fa": "بله، رزرو تأیید شد."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "title": "추가 수건",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "travel",
+        "characters": [
+          "하나",
+          "준호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "하나",
+            "text": "죄송하지만 수건을 하나 더 받을 수 있을까요?",
+            "translation_fa": "ببخشید، می‌شود یک حولهٔ دیگر بگیرم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "준호",
+            "text": "네, 바로 가져다드릴게요.",
+            "translation_fa": "بله، همین حالا می‌آورم."
+          },
+          {
+            "order": 3,
+            "speaker": "하나",
+            "text": "감사합니다.",
+            "translation_fa": "ممنونم."
+          },
+          {
+            "order": 4,
+            "speaker": "준호",
+            "text": "천만에요.",
+            "translation_fa": "خواهش می‌کنم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_meaning",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "예약을 확인하고 싶어요."
+        },
+        "answer": {
+          "value": "می‌خواهم رزرو را بررسی کنم."
+        },
+        "options": [
+          "می‌خواهم رزرو را بررسی کنم.",
+          "الان می‌توانم چک‌این کنم؟",
+          "می‌شود یک حولهٔ دیگر بگیرم؟",
+          "می‌خواهم چمدان را در اتاق بگذارم."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 예약을 확인하고 싶어요. — می‌خواهم رزرو را بررسی کنم.",
+          "model_answer": "예약을 확인하고 싶어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_listen",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "지금 체크인할 수 있어요?"
+        },
+        "answer": {
+          "value": "지금 체크인할 수 있어요?"
+        },
+        "options": [
+          "지금 체크인할 수 있어요?",
+          "예약을 확인하고 싶어요.",
+          "수건을 하나 더 받을 수 있을까요?",
+          "짐을 방에 두고 싶어요."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 지금 체크인할 수 있어요? — الان می‌توانم چک‌این کنم؟",
+          "model_answer": "지금 체크인할 수 있어요?",
+          "transcript_ko": "지금 체크인할 수 있어요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_speak",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "예약을 확인하고 싶어요."
+        },
+        "answer": {
+          "expected_text": "예약을 확인하고 싶어요."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 예약을 확인하고 싶어요. — می‌خواهم رزرو را بررسی کنم.",
+          "model_answer": "예약을 확인하고 싶어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_build",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "체크인할",
+            "수",
+            "있어요?",
+            "지금"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "지금",
+            "체크인할",
+            "수",
+            "있어요?"
+          ],
+          "value": "지금 체크인할 수 있어요?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 지금 체크인할 수 있어요? — الان می‌توانم چک‌این کنم؟",
+          "model_answer": "지금 체크인할 수 있어요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_dialogue",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travel_and_hotel_01",
+          "question_fa": "کدام گزینه با معنی «می‌خواهم رزرو را بررسی کنم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "예약을 확인하고 싶어요."
+        },
+        "options": [
+          "예약을 확인하고 싶어요.",
+          "지금 체크인할 수 있어요?",
+          "수건을 하나 더 받을 수 있을까요?",
+          "짐을 방에 두고 싶어요."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 예약을 확인하고 싶어요. — می‌خواهم رزرو را بررسی کنم.",
+          "model_answer": "예약을 확인하고 싶어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_meaning",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "수건을 하나 더 받을 수 있을까요?"
+        },
+        "answer": {
+          "value": "می‌شود یک حولهٔ دیگر بگیرم؟"
+        },
+        "options": [
+          "می‌شود یک حولهٔ دیگر بگیرم؟",
+          "می‌خواهم رزرو را بررسی کنم.",
+          "الان می‌توانم چک‌این کنم؟",
+          "می‌خواهم چمدان را در اتاق بگذارم."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 수건을 하나 더 받을 수 있을까요? — می‌شود یک حولهٔ دیگر بگیرم؟",
+          "model_answer": "수건을 하나 더 받을 수 있을까요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_listen",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "짐을 방에 두고 싶어요."
+        },
+        "answer": {
+          "value": "짐을 방에 두고 싶어요."
+        },
+        "options": [
+          "짐을 방에 두고 싶어요.",
+          "수건을 하나 더 받을 수 있을까요?",
+          "예약을 확인하고 싶어요.",
+          "지금 체크인할 수 있어요?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 짐을 방에 두고 싶어요. — می‌خواهم چمدان را در اتاق بگذارم.",
+          "model_answer": "짐을 방에 두고 싶어요.",
+          "transcript_ko": "짐을 방에 두고 싶어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_speak",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "수건을 하나 더 받을 수 있을까요?"
+        },
+        "answer": {
+          "expected_text": "수건을 하나 더 받을 수 있을까요?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 수건을 하나 더 받을 수 있을까요? — می‌شود یک حولهٔ دیگر بگیرم؟",
+          "model_answer": "수건을 하나 더 받을 수 있을까요?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_build",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "방에",
+            "두고",
+            "싶어요.",
+            "짐을"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "짐을",
+            "방에",
+            "두고",
+            "싶어요."
+          ],
+          "value": "짐을 방에 두고 싶어요."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 짐을 방에 두고 싶어요. — می‌خواهم چمدان را در اتاق بگذارم.",
+          "model_answer": "짐을 방에 두고 싶어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_dialogue",
+      "data": {
+        "lesson_key": "a2-ko-travel-and-hotel-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travel_and_hotel_02",
+          "question_fa": "کدام گزینه با معنی «می‌شود یک حولهٔ دیگر بگیرم؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "수건을 하나 더 받을 수 있을까요?"
+        },
+        "options": [
+          "수건을 하나 더 받을 수 있을까요?",
+          "예약을 확인하고 싶어요.",
+          "지금 체크인할 수 있어요?",
+          "짐을 방에 두고 싶어요."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 수건을 하나 더 받을 수 있을까요? — می‌شود یک حولهٔ دیگر بگیرم؟",
+          "model_answer": "수건을 하나 더 받을 수 있을까요?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

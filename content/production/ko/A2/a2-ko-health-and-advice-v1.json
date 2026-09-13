@@ -1,0 +1,857 @@
+{
+  "batch_id": "ko-kr-a2-health-and-advice-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "A2",
+  "curriculum_unit": "a2-ko-health-and-advice",
+  "generator": "gpt-5.6-sol:korean-a2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_01",
+      "data": {
+        "slug": "ko_a2_health_and_advice_apuda",
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "ko": "아프다"
+        },
+        "translations": {
+          "fa": "درد داشتن / بیمار بودن"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_01",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "lemma": "아프다",
+        "display_lemma": "아프다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "ko_a2_health_and_advice_apuda"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_01",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "lexeme_ref": "lx_health_and_advice_01",
+        "surface_form": "아프다",
+        "display_form": "아프다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_02",
+      "data": {
+        "slug": "ko_a2_health_and_advice_meori",
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "머리"
+        },
+        "translations": {
+          "fa": "سر"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_02",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "lemma": "머리",
+        "display_lemma": "머리",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a2_health_and_advice_meori"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_02",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "lexeme_ref": "lx_health_and_advice_02",
+        "surface_form": "머리",
+        "display_form": "머리",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_03",
+      "data": {
+        "slug": "ko_a2_health_and_advice_yak",
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "약"
+        },
+        "translations": {
+          "fa": "دارو"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_03",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "lemma": "약",
+        "display_lemma": "약",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a2_health_and_advice_yak"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_03",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "lexeme_ref": "lx_health_and_advice_03",
+        "surface_form": "약",
+        "display_form": "약",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_04",
+      "data": {
+        "slug": "ko_a2_health_and_advice_mashida",
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "마시다"
+        },
+        "translations": {
+          "fa": "نوشیدن"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_04",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "lemma": "마시다",
+        "display_lemma": "마시다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_a2_health_and_advice_mashida"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_04",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "lexeme_ref": "lx_health_and_advice_04",
+        "surface_form": "마시다",
+        "display_form": "마시다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_05",
+      "data": {
+        "slug": "ko_a2_health_and_advice_swida",
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "쉬다"
+        },
+        "translations": {
+          "fa": "استراحت کردن"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_05",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "lemma": "쉬다",
+        "display_lemma": "쉬다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_a2_health_and_advice_swida"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_05",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "lexeme_ref": "lx_health_and_advice_05",
+        "surface_form": "쉬다",
+        "display_form": "쉬다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_advice_06",
+      "data": {
+        "slug": "ko_a2_health_and_advice_byeongwon",
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "병원"
+        },
+        "translations": {
+          "fa": "بیمارستان / درمانگاه"
+        },
+        "cefr": "A2",
+        "topic": "health",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_advice_06",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "lemma": "병원",
+        "display_lemma": "병원",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_a2_health_and_advice_byeongwon"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_advice_06",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "lexeme_ref": "lx_health_and_advice_06",
+        "surface_form": "병원",
+        "display_form": "병원",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_01",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "text": {
+          "ko": "머리가 아파요."
+        },
+        "translations": {
+          "fa": "سرم درد می‌کند."
+        },
+        "intent": "state_symptom",
+        "concept_refs": [
+          "ko_a2_health_and_advice_meori",
+          "ko_a2_health_and_advice_apuda"
+        ],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_02",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "text": {
+          "ko": "물을 많이 마셔야 해요."
+        },
+        "translations": {
+          "fa": "باید آب زیادی بنوشی."
+        },
+        "intent": "give_advice",
+        "concept_refs": [
+          "ko_a2_health_and_advice_mashida"
+        ],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_03",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "text": {
+          "ko": "오늘은 집에서 쉬어야 해요."
+        },
+        "translations": {
+          "fa": "امروز باید در خانه استراحت کنی."
+        },
+        "intent": "give_advice",
+        "concept_refs": [
+          "ko_a2_health_and_advice_swida"
+        ],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_04",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "text": {
+          "ko": "계속 아프면 병원에 가야 해요."
+        },
+        "translations": {
+          "fa": "اگر درد ادامه داشت باید به درمانگاه بروی."
+        },
+        "intent": "give_advice",
+        "concept_refs": [
+          "ko_a2_health_and_advice_byeongwon"
+        ],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_health_and_advice_core",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "slug": "a2-ko-health-and-advice-grammar",
+        "title": "-아/어야 해요",
+        "rule_summary": "Use -아/어야 해요 to express necessity or strong practical advice.",
+        "explanation": {
+          "fa": "برای گفتن «باید» و توصیهٔ نسبتاً قوی از -아/어야 해요 استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "ko": "약을 먹어야 해요.",
+            "fa": "باید دارو بخوری."
+          },
+          {
+            "ko": "일찍 자야 해요.",
+            "fa": "باید زود بخوابی."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_and_advice_01",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "title": "머리가 아파요",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "health",
+        "characters": [
+          "준호",
+          "하나"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "준호",
+            "text": "오늘 왜 이렇게 조용해요?",
+            "translation_fa": "امروز چرا این‌قدر ساکتی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "하나",
+            "text": "머리가 좀 아파요.",
+            "translation_fa": "سرم کمی درد می‌کند."
+          },
+          {
+            "order": 3,
+            "speaker": "준호",
+            "text": "그럼 물을 많이 마시고 쉬어야 해요.",
+            "translation_fa": "پس باید آب زیاد بنوشی و استراحت کنی."
+          },
+          {
+            "order": 4,
+            "speaker": "하나",
+            "text": "네, 일찍 잘게요.",
+            "translation_fa": "بله، زود می‌خوابم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_and_advice_02",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "title": "병원에 갈까요?",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "health",
+        "characters": [
+          "유나",
+          "지민"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "유나",
+            "text": "아직도 아파요?",
+            "translation_fa": "هنوز درد داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "지민",
+            "text": "네, 어제보다 더 아파요.",
+            "translation_fa": "بله، از دیروز بیشتر درد دارم."
+          },
+          {
+            "order": 3,
+            "speaker": "유나",
+            "text": "그럼 병원에 가야 해요.",
+            "translation_fa": "پس باید به درمانگاه بروی."
+          },
+          {
+            "order": 4,
+            "speaker": "지민",
+            "text": "점심시간에 가려고 해요.",
+            "translation_fa": "می‌خواهم وقت ناهار بروم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_meaning",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "머리가 아파요."
+        },
+        "answer": {
+          "value": "سرم درد می‌کند."
+        },
+        "options": [
+          "سرم درد می‌کند.",
+          "باید آب زیادی بنوشی.",
+          "امروز باید در خانه استراحت کنی.",
+          "اگر درد ادامه داشت باید به درمانگاه بروی."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 머리가 아파요. — سرم درد می‌کند.",
+          "model_answer": "머리가 아파요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_listen",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "물을 많이 마셔야 해요."
+        },
+        "answer": {
+          "value": "물을 많이 마셔야 해요."
+        },
+        "options": [
+          "물을 많이 마셔야 해요.",
+          "머리가 아파요.",
+          "오늘은 집에서 쉬어야 해요.",
+          "계속 아프면 병원에 가야 해요."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 물을 많이 마셔야 해요. — باید آب زیادی بنوشی.",
+          "model_answer": "물을 많이 마셔야 해요.",
+          "transcript_ko": "물을 많이 마셔야 해요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_speak",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "머리가 아파요."
+        },
+        "answer": {
+          "expected_text": "머리가 아파요."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 머리가 아파요. — سرم درد می‌کند.",
+          "model_answer": "머리가 아파요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_build",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "많이",
+            "마셔야",
+            "해요.",
+            "물을"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "물을",
+            "많이",
+            "마셔야",
+            "해요."
+          ],
+          "value": "물을 많이 마셔야 해요."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 물을 많이 마셔야 해요. — باید آب زیادی بنوشی.",
+          "model_answer": "물을 많이 마셔야 해요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_01_dialogue",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_health_and_advice_01",
+          "question_fa": "کدام گزینه با معنی «سرم درد می‌کند.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "머리가 아파요."
+        },
+        "options": [
+          "머리가 아파요.",
+          "물을 많이 마셔야 해요.",
+          "오늘은 집에서 쉬어야 해요.",
+          "계속 아프면 병원에 가야 해요."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 머리가 아파요. — سرم درد می‌کند.",
+          "model_answer": "머리가 아파요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_meaning",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "오늘은 집에서 쉬어야 해요."
+        },
+        "answer": {
+          "value": "امروز باید در خانه استراحت کنی."
+        },
+        "options": [
+          "امروز باید در خانه استراحت کنی.",
+          "سرم درد می‌کند.",
+          "باید آب زیادی بنوشی.",
+          "اگر درد ادامه داشت باید به درمانگاه بروی."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오늘은 집에서 쉬어야 해요. — امروز باید در خانه استراحت کنی.",
+          "model_answer": "오늘은 집에서 쉬어야 해요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_listen",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "계속 아프면 병원에 가야 해요."
+        },
+        "answer": {
+          "value": "계속 아프면 병원에 가야 해요."
+        },
+        "options": [
+          "계속 아프면 병원에 가야 해요.",
+          "오늘은 집에서 쉬어야 해요.",
+          "머리가 아파요.",
+          "물을 많이 마셔야 해요."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 계속 아프면 병원에 가야 해요. — اگر درد ادامه داشت باید به درمانگاه بروی.",
+          "model_answer": "계속 아프면 병원에 가야 해요.",
+          "transcript_ko": "계속 아프면 병원에 가야 해요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_speak",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "오늘은 집에서 쉬어야 해요."
+        },
+        "answer": {
+          "expected_text": "오늘은 집에서 쉬어야 해요."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오늘은 집에서 쉬어야 해요. — امروز باید در خانه استراحت کنی.",
+          "model_answer": "오늘은 집에서 쉬어야 해요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_build",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "아프면",
+            "병원에",
+            "가야",
+            "해요.",
+            "계속"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "계속",
+            "아프면",
+            "병원에",
+            "가야",
+            "해요."
+          ],
+          "value": "계속 아프면 병원에 가야 해요."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 계속 아프면 병원에 가야 해요. — اگر درد ادامه داشت باید به درمانگاه بروی.",
+          "model_answer": "계속 아프면 병원에 가야 해요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_02_dialogue",
+      "data": {
+        "lesson_key": "a2-ko-health-and-advice-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_health_and_advice_02",
+          "question_fa": "کدام گزینه با معنی «امروز باید در خانه استراحت کنی.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "오늘은 집에서 쉬어야 해요."
+        },
+        "options": [
+          "오늘은 집에서 쉬어야 해요.",
+          "머리가 아파요.",
+          "물을 많이 마셔야 해요.",
+          "계속 아프면 병원에 가야 해요."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오늘은 집에서 쉬어야 해요. — امروز باید در خانه استراحت کنی.",
+          "model_answer": "오늘은 집에서 쉬어야 해요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
