@@ -37,6 +37,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Resolve batch from push trigger
+        if: github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          batch=$(sed -n 's/^batch=//p' .github/german-b2-mysql-trigger | head -n1)
+          test -n "$batch"
+          echo "BATCH=$batch" >> "$GITHUB_ENV"
+          echo "Resolved German B2 batch: $batch"
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
