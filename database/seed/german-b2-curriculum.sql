@@ -81,3 +81,19 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German B2 curriculum, batch 5 (units 41-45).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',5)
+FROM (
+  SELECT 410 AS sort_order,'work-study' AS skill_slug,'jobs' AS topic_slug,'b2-de-change-proposals' AS slug,'Änderungen überzeugend vorschlagen' AS title,'Änderungsvorschläge an konkreten Problemen ausrichten, Aufwand und Nutzen ausgewogen bewerten, kurz- und langfristige Auswirkungen erklären und reversible Pilotphasen mit klaren Erfolgskriterien vorschlagen.' AS objective,3 AS expected_lessons,'nicht ... sondern auch; kurzfristig/langfristig; bevor' AS grammar_focus
+  UNION ALL SELECT 420,'social','polite-language','b2-de-integrating-viewpoints','Unterschiedliche Sichtweisen zusammenführen','Mehrere Sichtweisen fair wiedergeben, Gemeinsamkeiten und zentrale Unterschiede präzise identifizieren, Anliegen beider Seiten berücksichtigen und Positionen zu tragfähigen Lösungen verknüpfen.',3,'weniger ... als; statt ... zu; worin/was in eingebetteten Sätzen'
+  UNION ALL SELECT 430,'communication','simple-messages','b2-de-formal-decision-writing','Entscheidungen schriftlich begründen','Formelle Entscheidungen strukturiert begründen, Kriterien und Abwägungen sichtbar machen, verworfene Alternativen differenziert erklären und Vorbehalte sowie nächste Schritte transparent dokumentieren.',3,'nach welchen Kriterien; nicht weil ... sondern weil; unter dem Vorbehalt, dass'
+  UNION ALL SELECT 440,'communication','requests','b2-de-process-guidance','Abläufe mit Ausnahmen erklären','Mehrstufige Abläufe klar erklären, Voraussetzungen und Reihenfolge sichtbar machen, Regelfälle von Ausnahmen trennen und Folgen bei abweichendem Vorgehen verständlich formulieren.',3,'bevor; im Regelfall ... jedoch; andernfalls'
+  UNION ALL SELECT 450,'daily-life','common-actions','b2-de-integrated-capstone','B2-Capstone: Gemeinsam zu einer belastbaren Lösung','Informationen und Einschränkungen in einem mehrstufigen Szenario zusammenführen, Positionen abwägen, einen testbaren Kompromiss entwickeln, Bedingungen vereinbaren und eine begründete Entscheidung mit Zuständigkeiten sowie nächstem Prüfschritt dokumentieren.',3,'mehr für ... sprechen als für; ohne ... zu; Voraussetzung ist, dass'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
