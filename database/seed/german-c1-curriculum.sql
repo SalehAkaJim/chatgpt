@@ -81,3 +81,19 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='C1'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German C1 curriculum, batch 5 (units 41-45).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',5)
+FROM (
+  SELECT 410 AS sort_order,'communication' AS skill_slug,'simple-messages' AS topic_slug,'c1-de-causal-reasoning-counterfactuals' AS slug,'Kausale Zusammenhänge kritisch prüfen' AS title,'Korrelation und Kausalität trennen, Alternativerklärungen und Störfaktoren prüfen und kausale Schlussfolgerungen mit kontrafaktischen Tests proportional zur Evidenz formulieren.' AS objective,3 AS expected_lessons,'nur weil ... folgt daraus nicht; wenn ... ursächlich wäre, müsste; umso plausibler, je' AS grammar_focus
+  UNION ALL SELECT 420,'communication','simple-messages','c1-de-risk-assessment-communication','Risiken differenziert bewerten und kommunizieren','Eintrittswahrscheinlichkeit und Schadensausmaß getrennt bewerten, Restrisiken transparent benennen und Frühwarnsignale sowie Eskalationsschwellen für kontrolliertes Handeln definieren.',3,'selbst bei geringer Wahrscheinlichkeit; ohne das Restrisiko vollständig auszuschließen; sollte ... wäre'
+  UNION ALL SELECT 430,'work-study','jobs','c1-de-decision-review-revision','Entscheidungen fair überprüfen und revidieren','Entscheidungsqualität vom Ergebnis trennen, Rückschaufehler vermeiden, veränderte Annahmen sichtbar machen und Revisionen in konkrete Lernerkenntnisse und Nachsteuerung überführen.',3,'unter den damaligen Annahmen; da sich ... nicht bestätigt hat; nicht nur ... sondern'
+  UNION ALL SELECT 440,'work-study','jobs','c1-de-professional-boundaries-judgment','Fachliche Grenzen und Verantwortung souverän steuern','Die Grenzen des eigenen Fachurteils präzise markieren, mögliche Interessenkonflikte transparent behandeln und Rücksprache sowie Verantwortungsübergaben professionell steuern.',3,'soweit es ... betrifft; da ich an ... beteiligt war; bevor ... ist sicherzustellen, dass'
+  UNION ALL SELECT 450,'communication','simple-messages','c1-de-integrated-judgment-capstone','C1-Capstone: Urteilskraft unter Unsicherheit zeigen','Evidenz, Kausalität, Risiko, Annahmen, fachliche Grenzen und Revisionsfähigkeit zu einem transparenten Gesamturteil und einer überprüfbaren, verantwortbaren Empfehlung verbinden.',3,'nicht allein deshalb, weil ...; trotz Unsicherheit vertretbar, sofern; unter dem Vorbehalt, dass'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='C1'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
