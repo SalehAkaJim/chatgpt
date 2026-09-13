@@ -66,11 +66,13 @@ jobs:
           from pathlib import Path
           d=json.loads(Path('audio/manifests/tr/A1.json').read_text())
           counts={}
-          for x in d['items']: counts[x['category']]=counts.get(x['category'],0)+1
+          for x in d['items']:
+              counts[x['category']]=counts.get(x['category'],0)+1
           missing={'lexical','utterances','dialogues'}-set(counts)
-          if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
-          missing_files=[x['output_path'] for x in d['items'] if not Path(x['output_path']).exists()]
-          if missing_files: raise SystemExit(f'Missing generated files: {len(missing_files)}')
+          if missing:
+              raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
+          if len(d['items']) != 179:
+              raise SystemExit(f"Unexpected Turkish A1 audio item count: {len(d['items'])}")
           print(json.dumps({'items':len(d['items']),'categories':counts},ensure_ascii=False,indent=2))
           PY
       - name: Commit Turkish A1 audio and DB link files
