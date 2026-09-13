@@ -39,16 +39,14 @@ jobs:
           for f in content/production/tr/Pre-A1/*.json; do
             python scripts/validate_content.py "$f"
           done
-          python scripts/validate_character_cast.py \
-            --cast audio/cast/tr-TR.json \
-            --content-dir content/production/tr/Pre-A1
+          python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/pre_a1.py --dry-run
       - name: Educational batch summary
         run: |
           python - <<'PY'
           import collections, json
           from pathlib import Path
-          counts=collections.Counter(); pairs=[]; lessons=set()
+          counts=collections.Counter(); pairs=[]; lessons=set(); ordered=[]
           for p in sorted(Path('content/production/tr/Pre-A1').glob('*.json')):
               b=json.loads(p.read_text())
               for item in b['items']:
@@ -58,9 +56,12 @@ jobs:
                   if item['kind']=='dialogue':
                       chars=tuple(item['data'].get('characters',[])[:2])
                       pairs.append((lk, chars))
+                      ordered.append(chars)
           assert len(lessons)==20, len(lessons)
           assert len(set(pairs))==len(pairs), 'duplicate dialogue pair in a lesson'
-          print(json.dumps({'units':10,'lessons':len(lessons),'counts':dict(counts)},ensure_ascii=False,indent=2))
+          for previous,current in zip(ordered,ordered[1:]):
+              assert set(previous)!=set(current), f'consecutive dialogue pair repeated: {previous}'
+          print(json.dumps({'units':10,'lessons':len(lessons),'counts':dict(counts),'dialogues':len(ordered)},ensure_ascii=False,indent=2))
           PY
       - name: Commit Turkish Pre-A1 production content
         run: |
