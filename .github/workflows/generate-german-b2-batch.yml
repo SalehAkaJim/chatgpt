@@ -31,6 +31,14 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+      - name: Resolve batch from push trigger
+        if: github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          batch=$(sed -n 's/^batch=//p' .github/german-b2-batch-trigger | head -n1)
+          test -n "$batch"
+          echo "BATCH=$batch" >> "$GITHUB_ENV"
+          echo "Resolved German B2 batch: $batch"
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
