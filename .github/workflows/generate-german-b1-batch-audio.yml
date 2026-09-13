@@ -3,7 +3,7 @@ name: Generate German B1 Batch Audio
 on:
   push:
     branches:
-      - language/german-b1
+      - main
     paths:
       - '.github/german-b1-batch-audio-trigger'
   workflow_dispatch:
@@ -32,10 +32,10 @@ jobs:
       BATCH: ${{ github.event.inputs.batch || '4' }}
 
     steps:
-      - name: Checkout German B1 branch
+      - name: Checkout main branch
         uses: actions/checkout@v4
         with:
-          ref: language/german-b1
+          ref: main
           fetch-depth: 0
 
       - name: Set up Python
@@ -160,6 +160,6 @@ jobs:
             exit 0
           fi
           git commit -m "Generate German B1 batch ${BATCH} production audio [skip ci]"
-          git fetch origin language/german-b1
-          git rebase origin/language/german-b1
-          git push origin HEAD:language/german-b1
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
