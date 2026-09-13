@@ -1,0 +1,58 @@
+name: Generate Turkish C2 Batch
+on:
+  push:
+    branches: [main]
+    paths: ['.github/turkish-c2-batch-trigger']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: turkish-c2-content-generation-v1
+  cancel-in-progress: false
+jobs:
+  generate-batch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main, fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Generate Turkish C2 batch 1
+        run: python scripts/generate_turkish_c2_batch.py
+      - name: Validate complete Turkish C2 batch
+        run: |
+          set -euo pipefail
+          test "$(find content/production/tr/C2 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/tr/C2/*.json; do python scripts/validate_content.py "$f"; done
+          python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
+          python database/import/tr/c2.py --dry-run
+      - name: Educational batch summary
+        run: |
+          python - <<'PY'
+          import collections,json
+          from pathlib import Path
+          counts=collections.Counter(); lessons=set(); ordered=[]; pairs=[]
+          units=json.loads(Path('content/specs/tr/C2/batch-01.json').read_text())['units']
+          for unit in units:
+              b=json.loads((Path('content/production/tr/C2')/f"c2-tr-{unit['slug']}-v1.json").read_text()); dialogues=[]
+              for item in b['items']:
+                  counts[item['kind']]+=1; lk=item.get('data',{}).get('lesson_key')
+                  if lk: lessons.add(lk)
+                  if item['kind']=='dialogue': dialogues.append(item)
+              for item in sorted(dialogues,key=lambda x:x['data']['lesson_key']):
+                  chars=tuple(item['data'].get('characters',[])[:2]); pairs.append((item['data']['lesson_key'],chars)); ordered.append(chars)
+          assert len(lessons)==20, len(lessons)
+          assert len(set(pairs))==len(pairs)
+          for previous,current in zip(ordered,ordered[1:]): assert set(previous)!=set(current), f'consecutive dialogue pair repeated: {previous}'
+          assert counts['concept']==60 and counts['utterance']==40 and counts['dialogue']==20 and counts['exercise']==100, counts
+          print({'units':10,'lessons':len(lessons),'counts':dict(counts)})
+          PY
+      - name: Commit Turkish C2 production content
+        run: |
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/production/tr/C2
+          if git diff --cached --quiet; then echo 'No generated content changes.'; else
+            git commit -m 'Generate Turkish C2 batch 1 production content [skip ci]'
+            git fetch origin main; git rebase origin/main; git push origin HEAD:main
+          fi
