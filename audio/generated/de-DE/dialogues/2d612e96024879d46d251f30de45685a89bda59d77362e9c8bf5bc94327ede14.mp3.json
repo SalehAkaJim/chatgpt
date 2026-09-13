@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "04032a5cfa0d59870a94a2ce124552871c11ef1f38a3f55f4dd47bf94802e2f6",
+  "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "2d612e96024879d46d251f30de45685a89bda59d77362e9c8bf5bc94327ede14",
+  "voice_key": "character:mia:female_bright",
+  "voice_name": "Ela - Cheerful and Happy",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8d08df15ac7b10cd01fce9f05cd582a9480ac8aa091fae0bc82267180dc9310b",
+  "duration_ms": 3186,
+  "generated_at": "2026-09-13T09:59:56.919006+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5be0daef-f04f-57fa-aba9-d22c98f940ef",
+      "entity_key": "d_formal_escalation_03:1"
+    }
+  ]
+}
