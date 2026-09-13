@@ -1,0 +1,94 @@
+name: Turkish Pre-A1 MySQL Integration
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/turkish-prea1-mysql-trigger'
+
+jobs:
+  mysql-9-import:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env:
+          MYSQL_ROOT_PASSWORD: rootpass
+          MYSQL_DATABASE: language_learning
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -prootpass"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+    env:
+      DATABASE_URL: mysql://root:rootpass@127.0.0.1:3306/language_learning
+      MYSQL_PWD: rootpass
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y default-mysql-client
+      - name: Bootstrap multilingual schema and Turkish Pre-A1 curriculum
+        run: |
+          set -euo pipefail
+          DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
+          $DB < database/schema.sql
+          $DB < database/migrations/001_curriculum.sql
+          $DB < database/migrations/002_multilingual_core.sql
+          $DB < database/migrations/003_lesson_item_lexemes.sql
+          $DB < database/migrations/004_level_import_audio.sql
+          $DB < database/migrations/005_writing_exercises.sql
+          $DB < database/seed/cefr.sql
+          $DB < database/seed/languages.sql
+          $DB < database/seed/skills-topics.sql
+          $DB < database/seed/english-a1-curriculum.sql
+          $DB < database/seed/language-variants-courses.sql
+          $DB < database/seed/turkish-prea1-curriculum.sql
+      - name: Validate Turkish content and dry-run import
+        run: |
+          set -euo pipefail
+          test "$(find content/production/tr/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/tr/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
+          python database/import/tr/pre_a1.py --dry-run
+      - name: Import Turkish Pre-A1
+        run: python database/import/tr/pre_a1.py --allow-unreviewed
+      - name: Verify canonical counts and course isolation
+        run: |
+          set -euo pipefail
+          units=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';")
+          lessons=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM lessons l JOIN courses c ON c.id=l.course_id AND c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.id=l.cefr_level_id AND lvl.code='Pre-A1';")
+          test "$units" = "10"
+          test "$lessons" = "20"
+          mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
+            SELECT c.slug, lvl.code, COUNT(DISTINCT le.id) AS lessons,
+                   COUNT(DISTINCT co.id) AS concepts,
+                   COUNT(DISTINCT u.id) AS utterances,
+                   COUNT(DISTINCT d.id) AS dialogues
+            FROM courses c
+            JOIN lessons le ON le.course_id=c.id
+            JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id
+            LEFT JOIN concepts co ON co.course_id=c.id
+            LEFT JOIN utterances u ON u.course_id=c.id
+            LEFT JOIN dialogues d ON d.course_id=c.id
+            WHERE c.slug='fa-tr-tr' AND lvl.code='Pre-A1'
+            GROUP BY c.slug,lvl.code;
+          "
+      - name: Verify Turkish Pre-A1 idempotency
+        run: |
+          set -euo pipefail
+          before=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT CONCAT((SELECT COUNT(*) FROM lessons l JOIN courses c ON c.id=l.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM concepts co JOIN courses c ON c.id=co.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM utterances u JOIN courses c ON c.id=u.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM dialogues d JOIN courses c ON c.id=d.course_id WHERE c.slug='fa-tr-tr'));" )
+          python database/import/tr/pre_a1.py --allow-unreviewed
+          after=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT CONCAT((SELECT COUNT(*) FROM lessons l JOIN courses c ON c.id=l.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM concepts co JOIN courses c ON c.id=co.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM utterances u JOIN courses c ON c.id=u.course_id WHERE c.slug='fa-tr-tr'),'|',(SELECT COUNT(*) FROM dialogues d JOIN courses c ON c.id=d.course_id WHERE c.slug='fa-tr-tr'));" )
+          echo "before=$before after=$after"
+          test "$before" = "$after"
