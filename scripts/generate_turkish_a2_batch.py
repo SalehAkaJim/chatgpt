@@ -19,6 +19,8 @@ base.LEVEL = LEVEL
 
 def rename_level_ids(value):
     if isinstance(value, str):
+        if value == "a1":
+            return "a2"
         return value.replace("a1-tr-", "a2-tr-").replace("tr_a1_", "tr_a2_")
     if isinstance(value, list):
         return [rename_level_ids(x) for x in value]
@@ -47,6 +49,10 @@ def main():
         batch["cefr"]=LEVEL
         batch["curriculum_unit"]=f"a2-tr-{spec['slug']}"
         batch["generator"]="gpt-5.6-sol:turkish-a2-batch-v1"
+        for item in batch["items"]:
+            data=item.get("data",{})
+            if item.get("kind") == "exercise":
+                data["difficulty"] = max(2, int(data.get("difficulty", 2)))
         p=out/f"a2-tr-{spec['slug']}-v1.json"
         p.write_text(json.dumps(batch,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         written.append(p.name)
