@@ -1,0 +1,83 @@
+name: Generate Korean Pre-A1 Batch
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/korean-prea1-batch-trigger'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: korean-prea1-content-generation-v1
+  cancel-in-progress: false
+
+jobs:
+  generate-batch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate all Korean Pre-A1 units
+        run: python scripts/generate_korean_prea1_batch.py
+      - name: Validate complete Korean Pre-A1 production
+        run: |
+          set -euo pipefail
+          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/ko/Pre-A1/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+          python scripts/validate_character_cast.py --cast audio/cast/ko-KR.json
+          python database/import/ko/pre_a1.py --dry-run
+      - name: Educational batch summary
+        run: |
+          python - <<'PY'
+          import collections, json
+          from pathlib import Path
+          counts=collections.Counter(); pairs=[]; lessons=set(); ordered=[]
+          for p in sorted(Path('content/production/ko/Pre-A1').glob('*.json')):
+              b=json.loads(p.read_text())
+              for item in b['items']:
+                  counts[item['kind']]+=1
+                  lk=item.get('data',{}).get('lesson_key')
+                  if lk: lessons.add(lk)
+                  if item['kind']=='dialogue':
+                      chars=tuple(item['data'].get('characters',[])[:2])
+                      pairs.append((lk, chars))
+                      ordered.append(chars)
+          assert len(lessons)==20, len(lessons)
+          assert len(set(pairs))==len(pairs), 'duplicate dialogue pair in a lesson'
+          for previous,current in zip(ordered,ordered[1:]):
+              assert set(previous)!=set(current), f'consecutive dialogue pair repeated: {previous}'
+          assert counts['concept']==60, counts
+          assert counts['utterance']==40, counts
+          assert counts['dialogue']==20, counts
+          assert counts['exercise']==100, counts
+          print(json.dumps({'units':10,'lessons':len(lessons),'counts':dict(counts),'dialogues':len(ordered)},ensure_ascii=False,indent=2))
+          PY
+      - name: Commit Korean Pre-A1 production content
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/specs/ko/Pre-A1/batch-01.json content/production/ko/Pre-A1
+          if git diff --cached --quiet; then
+            echo 'No generated content changes.'
+          else
+            git commit -m 'Generate Korean Pre-A1 batch 1 production content [skip ci]'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
