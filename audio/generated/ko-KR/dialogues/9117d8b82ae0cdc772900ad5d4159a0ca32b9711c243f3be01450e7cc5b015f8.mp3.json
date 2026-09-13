@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "94bccd2d62f46d6ce7bf39a637d7f782e2167ce64e819b0d34e31e43c261881c",
+  "voice_id": "lcMyyd2HUfFzxdCaC4Ta",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "9117d8b82ae0cdc772900ad5d4159a0ca32b9711c243f3be01450e7cc5b015f8",
+  "voice_key": "character:서연:female_bright",
+  "voice_name": "Lucy - Fresh & Casual",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "british",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "b6c89079d13aac6cf962f9fef978901386300298df6d49c9cdd921cd1a91b0d2",
+  "duration_ms": 1671,
+  "generated_at": "2026-09-13T21:04:55.861306+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "22cf72ae-c64f-5e53-b5cc-03ec0125e71f",
+      "entity_key": "d_first_greetings_02:1"
+    }
+  ]
+}

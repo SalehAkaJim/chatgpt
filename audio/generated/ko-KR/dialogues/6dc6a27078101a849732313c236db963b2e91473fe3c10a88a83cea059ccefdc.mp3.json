@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "9a6ab84994d8deea8e8daf7c360f885b644ba723f1c36a13a6e3b18627ad6f63",
+  "voice_id": "JguuvPsf0F2TNXefsblh",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "6dc6a27078101a849732313c236db963b2e91473fe3c10a88a83cea059ccefdc",
+  "voice_key": "character:유나:female_professional",
+  "voice_name": "Yuna Kim - Warm, Trustworthy Korean",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "informative_educational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "9f1ec031d9118981e779d49238474a29779bfdbf4cf6015ee4f151cc372862ad",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-13T21:04:48.923645+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "96095bb5-e4e9-5d9d-9733-558622206f3e",
+      "entity_key": "d_first_conversation_02:2"
+    }
+  ]
+}

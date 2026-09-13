@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "677e6e2306a162f4a95a487f04936ce25aa5512b17439570c5ed7440b264c857",
+  "voice_id": "QAuCXfOpYxbxOasYze98",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e7acf6de0d74dde8b41d6c398367c73452097134a784d4754581b287dc4d58db",
+  "voice_key": "character:태호:male_calm",
+  "voice_name": "Sein - Sweet & Gentle Korean\t",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "narrative_story",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "d6d98b01657fca578442f9900733c4be8c3b9cb09e0e0858c76c734c0b271940",
+  "duration_ms": 2533,
+  "generated_at": "2026-09-13T21:05:11.776634+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c5a352cd-d753-5ab3-91a4-3f0ff8313d10",
+      "entity_key": "d_first_conversation_01:1"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "6b966ad5-59b0-5ed9-9ce3-31a8bde4260d",
+      "entity_key": "d_my_name_01:2"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "262161281aabff06df61c5a9ca4974f77a6b4ec70d509e4220822cf391842a91",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "db937b4bb615c0169e770dab5afbda28dd110ef0db49f37ba43275d02ee1ab92",
+  "voice_key": "ko-kr.lexical.native-clear",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "c0d0fcd7fc8fe721163abc16029ac123cab5c1aa46ca9509020f43e425d1a99b",
+  "duration_ms": 1201,
+  "generated_at": "2026-09-13T21:05:42.729133+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "6cf0dca7-fbcb-5902-9ffc-7c028fee9a59",
+      "entity_key": "lx_survival_words_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "4a9cc3ba-929c-5dfb-b2b2-90e55a83eb29",
+      "entity_key": "wf_survival_words_02"
+    }
+  ]
+}

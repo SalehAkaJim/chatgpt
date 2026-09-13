@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "3ba1d18fcd6f6dc95ce9b88ac38d701b1903db772715cd737334a9aa45a7bfc2",
+  "voice_id": "MkyWvsz7jzJkip0vi9E6",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d976907029734fb9a62ee9480a510d4e74e75b378b879eede58e1207a715bc13",
+  "voice_key": "character:도윤:male_professional",
+  "voice_name": "Sung - Tender, Calm & Clear",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "c8df548b29bf44ba0d2ab33842d2a4918b7a4c3e5f610889edc036d942693676",
+  "duration_ms": 1280,
+  "generated_at": "2026-09-13T21:05:09.872734+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4d3e38bf-d872-5e2a-bb5a-316eacb7c760",
+      "entity_key": "d_polite_words_02:4"
+    }
+  ]
+}
