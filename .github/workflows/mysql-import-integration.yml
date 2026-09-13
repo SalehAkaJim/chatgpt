@@ -56,7 +56,7 @@ jobs:
           pip install -r requirements.txt
           sudo apt-get update -qq
           sudo apt-get install -y default-mysql-client
-      - name: Bootstrap MySQL 9.0.1 schema and English curricula through C2
+      - name: Bootstrap MySQL 9.0.1 schema and curricula
         env:
           MYSQL_PWD: rootpass
         run: |
@@ -78,6 +78,23 @@ jobs:
           $DB < database/seed/english-b2-curriculum.sql
           $DB < database/seed/english-c1-curriculum.sql
           $DB < database/seed/english-c2-curriculum.sql
+          $DB < database/seed/turkish-prea1-curriculum.sql
+      - name: Verify Turkish course foundation
+        env:
+          MYSQL_PWD: rootpass
+        run: |
+          mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
+            SELECT l.code, lv.code AS variant_code, c.slug
+            FROM languages l
+            JOIN language_variants lv ON lv.language_id=l.id AND lv.code='tr-TR'
+            JOIN courses c ON c.target_language_id=l.id AND c.target_variant_id=lv.id AND c.slug='fa-tr-tr'
+            WHERE l.code='tr';
+            SELECT COUNT(*) AS turkish_prea1_units
+            FROM curriculum_units cu
+            JOIN courses c ON c.id=cu.course_id AND c.slug='fa-tr-tr'
+            JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';
+          "
+          test "$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';")" = "10"
       - name: Import complete English Pre-A1 through C2
         run: |
           python database/import/en/pre_a1.py --allow-unreviewed
