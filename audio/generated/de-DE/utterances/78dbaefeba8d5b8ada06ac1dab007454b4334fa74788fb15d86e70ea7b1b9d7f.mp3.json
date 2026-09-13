@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "fc0885b0df3f676770f4dcb05d7c7429f2d911ecdd85254fc05fc53872ecda0e",
+  "voice_id": "v3V1d2rk6528UrLKRuy8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "78dbaefeba8d5b8ada06ac1dab007454b4334fa74788fb15d86e70ea7b1b9d7f",
+  "voice_key": "de-de.sentence.native-clear",
+  "voice_name": "Susi - Effortless and Confident",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "524b306996b01ca53fe90edb266ffd72c697965aad2c2a25e4591f5759900abf",
+  "duration_ms": 4675,
+  "generated_at": "2026-09-13T09:41:32.624786+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "21ea6976-56d8-55cf-8a66-939ff6a3949d",
+      "entity_key": "u_reported_speech_attribution_05"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "10f1898c-614f-5336-8577-4719400e80aa",
+      "entity_key": "ex_reported_speech_attribution_03_listen"
+    }
+  ]
+}

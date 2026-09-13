@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "11f7fb8f7135313a6b14e4d98fde0c02740cb59ce75213003621e9e391eb1763",
+  "voice_id": "K5ZVtkkBnuPY6YqXs70E",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "34e7b36da49e74905bd6c487f0d56cd8c7c4110f7bd844c6ded676c8ee54d95c",
+  "voice_key": "character:jonas:male_bright",
+  "voice_name": "Simon - Relatable and Normal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "chill"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "1431a2cf835323a9e49dbdca31c15a917def876879874a52a42a60c1cf4f9510",
+  "duration_ms": 4022,
+  "generated_at": "2026-09-13T09:39:46.503851+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f0f343d9-f909-5c52-909e-306f29182195",
+      "entity_key": "d_multi_source_synthesis_02:2"
+    }
+  ]
+}
