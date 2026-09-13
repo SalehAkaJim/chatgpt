@@ -1,0 +1,75 @@
+name: Prepare German A2 Audio
+
+on:
+  push:
+    branches:
+      - language/german-a2
+    paths:
+      - 'content/production/de/A2/**'
+      - 'audio/cast/de-DE.json'
+      - 'audio/voices/de-DE.json'
+      - 'audio/voices/de-DE.lock.json'
+      - 'scripts/build_audio_manifest.py'
+      - 'scripts/audit_voice_lock.py'
+      - '.github/workflows/prepare-german-a2-audio.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: language/german-a2
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Revalidate A2 content
+        run: |
+          python scripts/audit_german_a2_content.py
+          python database/import/de/a2.py --dry-run
+      - name: Build strict A2 audio manifest
+        run: |
+          mkdir -p audio/manifests/de
+          python scripts/build_audio_manifest.py content/production/de/A2 \
+            --level A2 --locale de-DE --strict-characters \
+            --output audio/manifests/de/A2.json
+      - name: Validate locked German voices without TTS
+        run: |
+          python scripts/audit_voice_lock.py \
+            --lock audio/voices/de-DE.lock.json \
+            --registry audio/voices/de-DE.json \
+            --strict
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          manifest=json.loads(Path('audio/manifests/de/A2.json').read_text())
+          locks=json.loads(Path('audio/voices/de-DE.lock.json').read_text())
+          needed=sorted({x['voice_key'] for x in manifest['items']})
+          missing=[k for k in needed if k not in locks]
+          categories=Counter(x['category'] for x in manifest['items'])
+          chars=sorted({x.get('metadata',{}).get('character') for x in manifest['items'] if x.get('metadata',{}).get('character')})
+          print(json.dumps({'items':len(manifest['items']),'categories':categories,'voice_keys':len(needed),'characters':len(chars),'missing_voice_locks':missing},ensure_ascii=False,default=dict))
+          if missing:
+              raise SystemExit('A2 manifest needs unresolved voice locks: '+', '.join(missing))
+          PY
+      - name: Commit deterministic A2 manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audio/manifests/de/A2.json
+          if git diff --cached --quiet; then
+            echo 'A2 manifest already current.'
+            exit 0
+          fi
+          git commit -m 'Prepare German A2 audio manifest [skip ci]'
+          git fetch origin language/german-a2
+          git rebase origin/language/german-a2
+          git push origin HEAD:language/german-a2
