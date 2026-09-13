@@ -60,3 +60,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='B1'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German B1 curriculum, batch 4 (units 31-40).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',4)
+FROM (
+  SELECT 310 AS sort_order,'family-home' AS skill_slug,'home' AS topic_slug,'b1-de-moving-relocation' AS slug,'Umzug & Wohnungswechsel' AS title,'Einen Umzug planen, Verpackung und Transport organisieren sowie Adressänderungen koordinieren.' AS objective,3 AS expected_lessons,'Perfekt mit sein; damit; Passiv Präsens' AS grammar_focus
+  UNION ALL SELECT 320,'daily-life','common-actions','b1-de-home-repairs','Reparaturen & Handwerker','Haushaltsprobleme genau beschreiben, Reparaturtermine vereinbaren, Kosten erfragen und Ergebnisse prüfen.',3,'obwohl; indirekte höfliche Fragen; Passiv Präteritum'
+  UNION ALL SELECT 330,'shopping-money','prices','b1-de-contracts-subscriptions','Verträge & Abos','Vertragsbedingungen, Laufzeiten und Gebühren verstehen und über Verlängerung oder Kündigung entscheiden.',3,'bevor / danach; Passiv Präsens; nur wenn'
+  UNION ALL SELECT 340,'communication','simple-messages','b1-de-online-accounts-privacy','Online-Konten & Datenschutz','Online-Konten schützen, Datenschutzeinstellungen besprechen und bewusste Entscheidungen über Datenfreigaben treffen.',3,'damit; indirekte Fragewörter; nur wenn / je ... desto'
+  UNION ALL SELECT 350,'work-study','jobs','b1-de-work-feedback-teamwork','Feedback & Zusammenarbeit','Konstruktives Feedback geben und annehmen, Zuständigkeiten klären und Verbesserungen im Team besprechen.',3,'solange; indem; Passiv mit Modalverb'
+  UNION ALL SELECT 360,'work-study','school-study','b1-de-exams-learning-stress','Prüfungen & Lernstress','Prüfungsvorbereitung, Lernstress und realistische Lernstrategien reflektieren.',3,'seit + Präsens; damit; je ... desto'
+  UNION ALL SELECT 370,'social','polite-language','b1-de-invitations-hosting','Einladungen & Gastgeber sein','Einladungen aussprechen, Details abstimmen, Hilfe anbieten und Änderungen höflich kommunizieren.',3,'ob-Fragen; damit; falls / je ... desto'
+  UNION ALL SELECT 380,'travel-transport','places-town','b1-de-city-services-public-places','Stadtservice & öffentliche Orte','Informationen zu öffentlichen Einrichtungen einholen, Probleme melden und passende Anlaufstellen finden.',3,'bevor + ob; Passiv mit können; müssen im Passiv'
+  UNION ALL SELECT 390,'health-body','basic-health','b1-de-doctor-visit-followup','Arztbesuch & Nachsorge','Beschwerden zeitlich beschreiben, den Ablauf eines Arztbesuchs verstehen und Nachsorge organisieren.',3,'seit / vor; Passiv Präteritum; falls + sollen'
+  UNION ALL SELECT 400,'time-plans','future-plans','b1-de-goals-priorities','Ziele & Prioritäten','Persönliche Ziele formulieren, Prioritäten abwägen und realistische Schritte planen.',3,'Komparativ mit als; damit; statt ... zu'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='B1'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
