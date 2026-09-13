@@ -2,6 +2,7 @@ INSERT IGNORE INTO languages (code, name, native_name, script, direction) VALUES
 ('en', 'English', 'English', 'Latin', 'ltr'),
 ('de', 'German', 'Deutsch', 'Latin', 'ltr'),
 ('tr', 'Turkish', 'Türkçe', 'Latin', 'ltr'),
+('ko', 'Korean', '한국어', 'Hangul', 'ltr'),
 ('fr', 'French', 'Français', 'Latin', 'ltr'),
 ('es', 'Spanish', 'Español', 'Latin', 'ltr'),
 ('it', 'Italian', 'Italiano', 'Latin', 'ltr'),
