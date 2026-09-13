@@ -60,3 +60,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='C1'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German C1 curriculum, batch 4 (units 31-40).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',4)
+FROM (
+  SELECT 310 AS sort_order,'communication' AS skill_slug,'simple-messages' AS topic_slug,'c1-de-academic-seminar-discussion' AS slug,'In Seminaren kritisch und präzise diskutieren' AS title,'Thesen und Belege trennen, Einwände fair aufnehmen, Reichweiten begrenzen und die eigene Position ohne Überzeichnung weiterentwickeln.' AS objective,3 AS expected_lessons,'zwar ... allerdings; daraus folgt nicht zwingend, dass; unter der Annahme, dass' AS grammar_focus
+  UNION ALL SELECT 320,'communication','simple-messages','c1-de-source-evaluation','Quellen kritisch prüfen und Aussagen einordnen','Quellen nach Herkunft, Methode, Transparenz und Bestätigbarkeit beurteilen und den Status von Aussagen präzise zwischen bestätigt, unbestätigt und widerlegt unterscheiden.',3,'nur weil ... heißt das nicht, dass; nach allem, was sich belegen lässt; weder ... noch ... reicht aus'
+  UNION ALL SELECT 330,'social','polite-language','c1-de-public-debate-value-conflicts','In öffentlichen Debatten Wertkonflikte fair verhandeln','Fakten-, Prioritäts- und Wertkonflikte auseinanderhalten, Gegenpositionen fair rekonstruieren, Gemeinsamkeiten benennen und echten Dissens sachlich sichtbar machen.',3,'nicht darüber, ob ... sondern darüber, wie; selbst wenn ... bleibt die Frage, ob; so weit gehe ich mit, dass'
+  UNION ALL SELECT 340,'communication','simple-messages','c1-de-media-interviews-public-statements','Medieninterviews und öffentliche Aussagen souverän führen','Kernbotschaften halten, bestätigte Fakten von offenen Punkten trennen, Vorannahmen in Fragen korrigieren und Wissensgrenzen transparent kommunizieren.',3,'was ich bestätigen kann, ist; die Frage setzt voraus, dass; sobald ... werden wir'
+  UNION ALL SELECT 350,'communication','requests','c1-de-administrative-appeals','Komplexe Verwaltungsentscheidungen anfechten','Bescheide systematisch prüfen, Begründungslücken dokumentieren und formelle Überprüfungsanträge mit klarer Bitte, relevanten Nachweisen und professionellem Ton formulieren.',3,'unter Bezugnahme auf; soweit aus dem Bescheid hervorgeht; ich bitte um Prüfung, ob'
+  UNION ALL SELECT 360,'social','polite-language','c1-de-community-conflict-mediation','Konflikte in Nachbarschaft und Gemeinschaft moderieren','Unterschiedliche Wahrnehmungen in konkrete Beobachtungen übersetzen, legitime Interessen vermitteln und überprüfbare, anpassbare Vereinbarungen entwickeln.',3,'für die eine Seite ... für die andere; damit ... zugleich; falls sich zeigt, dass'
+  UNION ALL SELECT 370,'work-study','jobs','c1-de-interdisciplinary-collaboration','Fachübergreifend präzise zusammenarbeiten','Zwischen Fachperspektiven gemeinsame Begriffe schaffen, abstrakte Ziele operationalisieren und Zielkonflikte so sichtbar machen, dass gemeinsame Entscheidungen möglich werden.',3,'wenn wir unter X dasselbe verstehen; aus fachlicher Sicht ... aus Umsetzungssicht; erst wenn ... lässt sich'
+  UNION ALL SELECT 380,'social','polite-language','c1-de-ethical-tradeoffs','Ethische Zielkonflikte differenziert abwägen','Grundsätze, Betroffenengruppen und Folgewirkungen sichtbar machen, legitime Werte gegeneinander abwägen und unvollkommene Entscheidungen transparent begründen.',3,'je nachdem, welchen Grundsatz man höher gewichtet; auch wenn ... ist zu berücksichtigen; vertretbar wäre X nur dann, wenn'
+  UNION ALL SELECT 390,'work-study','jobs','c1-de-influence-without-authority','Ohne formale Autorität wirksam Einfluss nehmen','Interessenlagen verstehen, freiwillige Unterstützung aufbauen, gegenseitigen Nutzen sichtbar machen und Widerstand in verhandelbare Bedingungen übersetzen.',3,'für euch wäre der Vorteil, dass; ich kann X anbieten, wenn ihr Y übernehmt; was müsste gegeben sein, damit'
+  UNION ALL SELECT 400,'communication','simple-messages','c1-de-civic-decision-capstone','C1-Capstone: Öffentliche Entscheidung verantwortungsvoll begründen','Evidenzqualität, Wertkonflikte, Betroffenengruppen, Umsetzbarkeit und öffentliche Rechenschaft zu einer transparenten, verhältnismäßigen und revidierbaren Entscheidung verbinden.',3,'angesichts der Tatsache, dass; den Ausschlag gibt; wir entscheiden uns für X, behalten uns jedoch vor'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='C1'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
