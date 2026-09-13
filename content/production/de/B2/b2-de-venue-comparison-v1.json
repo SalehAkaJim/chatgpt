@@ -1,0 +1,1141 @@
+{
+  "batch_id": "de-de-b2-venue-comparison-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "B2",
+  "curriculum_unit": "b2-de-venue-comparison",
+  "generator": "gpt-5.6-sol:german-b2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_venue_comparison_01",
+      "data": {
+        "slug": "de_b2_venue_comparison_veranstaltungsort",
+        "lesson_key": "b2-de-venue-comparison-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Veranstaltungsort"
+        },
+        "translations": {
+          "fa": "محل برگزاری"
+        },
+        "cefr": "B2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_venue_comparison_01",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "lemma": "Veranstaltungsort",
+        "display_lemma": "Veranstaltungsort",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_venue_comparison_veranstaltungsort"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_venue_comparison_01",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "lexeme_ref": "lx_venue_comparison_01",
+        "surface_form": "Veranstaltungsort",
+        "display_form": "Veranstaltungsort",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_venue_comparison_02",
+      "data": {
+        "slug": "de_b2_venue_comparison_kapazit_t",
+        "lesson_key": "b2-de-venue-comparison-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Kapazität"
+        },
+        "translations": {
+          "fa": "ظرفیت"
+        },
+        "cefr": "B2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_venue_comparison_02",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "lemma": "Kapazität",
+        "display_lemma": "Kapazität",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_venue_comparison_kapazit_t"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_venue_comparison_02",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "lexeme_ref": "lx_venue_comparison_02",
+        "surface_form": "Kapazität",
+        "display_form": "Kapazität",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_venue_comparison_03",
+      "data": {
+        "slug": "de_b2_venue_comparison_ausstattung",
+        "lesson_key": "b2-de-venue-comparison-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Ausstattung"
+        },
+        "translations": {
+          "fa": "امکانات"
+        },
+        "cefr": "B2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_venue_comparison_03",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "lemma": "Ausstattung",
+        "display_lemma": "Ausstattung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_venue_comparison_ausstattung"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_venue_comparison_03",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "lexeme_ref": "lx_venue_comparison_03",
+        "surface_form": "Ausstattung",
+        "display_form": "Ausstattung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_venue_comparison_04",
+      "data": {
+        "slug": "de_b2_venue_comparison_erreichbarkeit",
+        "lesson_key": "b2-de-venue-comparison-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Erreichbarkeit"
+        },
+        "translations": {
+          "fa": "دسترسی"
+        },
+        "cefr": "B2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_venue_comparison_04",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "lemma": "Erreichbarkeit",
+        "display_lemma": "Erreichbarkeit",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_venue_comparison_erreichbarkeit"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_venue_comparison_04",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "lexeme_ref": "lx_venue_comparison_04",
+        "surface_form": "Erreichbarkeit",
+        "display_form": "Erreichbarkeit",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_venue_comparison_05",
+      "data": {
+        "slug": "de_b2_venue_comparison_nebenkosten",
+        "lesson_key": "b2-de-venue-comparison-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Nebenkosten"
+        },
+        "translations": {
+          "fa": "هزینه‌های جانبی"
+        },
+        "cefr": "B2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_venue_comparison_05",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "lemma": "Nebenkosten",
+        "display_lemma": "Nebenkosten",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b2_venue_comparison_nebenkosten"
+        ],
+        "cefr": "B2",
+        "grammatical_gender": "plural",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_venue_comparison_05",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "lexeme_ref": "lx_venue_comparison_05",
+        "surface_form": "Nebenkosten",
+        "display_form": "Nebenkosten",
+        "grammatical_features": {
+          "gender": "plural"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_venue_comparison_06",
+      "data": {
+        "slug": "de_b2_venue_comparison_geeignet",
+        "lesson_key": "b2-de-venue-comparison-03",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "geeignet"
+        },
+        "translations": {
+          "fa": "مناسب"
+        },
+        "cefr": "B2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "b2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_venue_comparison_06",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "lemma": "geeignet",
+        "display_lemma": "geeignet",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_b2_venue_comparison_geeignet"
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_venue_comparison_06",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "lexeme_ref": "lx_venue_comparison_06",
+        "surface_form": "geeignet",
+        "display_form": "geeignet",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_venue_comparison_01",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "text": {
+          "de": "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet."
+        },
+        "translations": {
+          "fa": "بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست."
+        },
+        "intent": "avoid_simple_choice",
+        "concept_refs": [
+          "de_b2_venue_comparison_veranstaltungsort",
+          "de_b2_venue_comparison_geeignet"
+        ],
+        "cefr": "B2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_venue_comparison_02",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "text": {
+          "de": "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen."
+        },
+        "translations": {
+          "fa": "باید ظرفیت و دسترسی را جداگانه مقایسه کنیم."
+        },
+        "intent": "compare_criteria",
+        "concept_refs": [
+          "de_b2_venue_comparison_kapazit_t",
+          "de_b2_venue_comparison_erreichbarkeit"
+        ],
+        "cefr": "B2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_venue_comparison_03",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "text": {
+          "de": "Bei Ort B ist die technische Ausstattung bereits vorhanden."
+        },
+        "translations": {
+          "fa": "در محل B امکانات فنی از قبل موجود است."
+        },
+        "intent": "check_equipment",
+        "concept_refs": [
+          "de_b2_venue_comparison_ausstattung"
+        ],
+        "cefr": "B2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_venue_comparison_04",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "text": {
+          "de": "Ort A ist günstiger, verursacht aber höhere Nebenkosten."
+        },
+        "translations": {
+          "fa": "محل A ارزان‌تر است، اما هزینه‌های جانبی بیشتری ایجاد می‌کند."
+        },
+        "intent": "check_extra_costs",
+        "concept_refs": [
+          "de_b2_venue_comparison_nebenkosten"
+        ],
+        "cefr": "B2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_venue_comparison_05",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "text": {
+          "de": "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend."
+        },
+        "translations": {
+          "fa": "برای اندازه گروه ما ظرفیت هشتاد نفر کافی است."
+        },
+        "intent": "assess_capacity",
+        "concept_refs": [
+          "de_b2_venue_comparison_kapazit_t"
+        ],
+        "cefr": "B2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_venue_comparison_06",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "text": {
+          "de": "Geeignet ist der Ort erst dann, wenn Größe, Ausstattung und Erreichbarkeit zusammenpassen."
+        },
+        "translations": {
+          "fa": "محل فقط وقتی مناسب است که اندازه، امکانات و دسترسی با هم جور باشند."
+        },
+        "intent": "make_balanced_choice",
+        "concept_refs": [
+          "de_b2_venue_comparison_geeignet",
+          "de_b2_venue_comparison_ausstattung",
+          "de_b2_venue_comparison_erreichbarkeit"
+        ],
+        "cefr": "B2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_venue_comparison_01",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "slug": "b2-de-venue-comparison-g1",
+        "title": "nicht automatisch ...",
+        "rule_summary": "Use nicht automatisch to reject a simplistic conclusion.",
+        "explanation": {
+          "fa": "برای رد نتیجه‌گیری ساده از nicht automatisch استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Größer ist nicht automatisch besser.",
+            "fa": "بزرگ‌تر بودن لزوماً بهتر نیست."
+          },
+          {
+            "de": "Nähe ist nicht automatisch wichtiger als Ausstattung.",
+            "fa": "نزدیکی لزوماً مهم‌تر از امکانات نیست."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_venue_comparison_02",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "slug": "b2-de-venue-comparison-g2",
+        "title": "zwar ..., aber ...",
+        "rule_summary": "Use zwar ... aber to balance two criteria.",
+        "explanation": {
+          "fa": "برای سنجیدن دو معیار در برابر هم از zwar ... aber استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Ort A ist zwar günstiger, aber schlechter erreichbar.",
+            "fa": "محل A ارزان‌تر است، اما دسترسی بدتری دارد."
+          },
+          {
+            "de": "Ort B ist zwar kleiner, aber besser ausgestattet.",
+            "fa": "محل B کوچک‌تر است، اما امکانات بهتری دارد."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_venue_comparison_03",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "slug": "b2-de-venue-comparison-g3",
+        "title": "erst dann, wenn ...",
+        "rule_summary": "Use erst dann, wenn to state the full condition for a choice.",
+        "explanation": {
+          "fa": "برای بیان شرط کامل یک انتخاب از erst dann, wenn استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Der Ort passt erst dann, wenn alle Kriterien erfüllt sind.",
+            "fa": "محل فقط وقتی مناسب است که همه معیارها برآورده شوند."
+          },
+          {
+            "de": "Wir entscheiden erst dann, wenn die Nebenkosten klar sind.",
+            "fa": "فقط وقتی هزینه‌های جانبی روشن باشند تصمیم می‌گیریم."
+          }
+        ],
+        "cefr": "B2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_venue_comparison_01",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "title": "Groß oder passend?",
+        "setting": "Ortswahl",
+        "cefr": "B2",
+        "topic": "places-town",
+        "characters": [
+          "Clara",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Saal A hat Platz für zweihundert Personen.",
+            "translation_fa": "سالن A برای دویست نفر جا دارد."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Wir erwarten aber nur siebzig Gäste.",
+            "translation_fa": "اما فقط حدود هفتاد مهمان داریم."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Dann ist die große Kapazität kein entscheidender Vorteil.",
+            "translation_fa": "پس ظرفیت زیاد مزیت تعیین‌کننده‌ای نیست."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Genau, wir sollten die anderen Kriterien stärker gewichten.",
+            "translation_fa": "دقیقاً، بهتر است معیارهای دیگر را بیشتر در نظر بگیریم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_venue_comparison_02",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "title": "Ausstattung vergleichen",
+        "setting": "Planung",
+        "cefr": "B2",
+        "topic": "places-town",
+        "characters": [
+          "Anna",
+          "Mia"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Ort B kostet etwas mehr, hat aber die gesamte Technik vor Ort.",
+            "translation_fa": "محل B کمی گران‌تر است، اما همه تجهیزات فنی را دارد."
+          },
+          {
+            "order": 2,
+            "speaker": "Mia",
+            "text": "Bei Ort A müssten wir vieles zusätzlich organisieren.",
+            "translation_fa": "در محل A باید خیلی چیزها را جداگانه فراهم کنیم."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Dann sollten wir die Nebenkosten mitrechnen.",
+            "translation_fa": "پس باید هزینه‌های جانبی را هم حساب کنیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Mia",
+            "text": "Sonst vergleichen wir nicht fair.",
+            "translation_fa": "وگرنه مقایسه منصفانه نیست."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_venue_comparison_03",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "title": "Erreichbarkeit zählt",
+        "setting": "Entscheidung",
+        "cefr": "B2",
+        "topic": "places-town",
+        "characters": [
+          "Lukas",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lukas",
+            "text": "Ort C ist zentral und mit öffentlichen Verkehrsmitteln gut erreichbar.",
+            "translation_fa": "محل C مرکزی است و با حمل‌ونقل عمومی دسترسی خوبی دارد."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Das ist für unsere Gruppe wichtiger als ein größerer Raum.",
+            "translation_fa": "برای گروه ما این مهم‌تر از یک فضای بزرگ‌تر است."
+          },
+          {
+            "order": 3,
+            "speaker": "Lukas",
+            "text": "Dann passt C insgesamt besser zu unseren Kriterien.",
+            "translation_fa": "پس در مجموع C بهتر با معیارهای ما جور است."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Ja, obwohl er etwas kleiner ist.",
+            "translation_fa": "بله، با اینکه کمی کوچک‌تر است."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_01_mc",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست.»؟"
+        },
+        "options": [
+          "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet.",
+          "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen.",
+          "Bei Ort B ist die technische Ausstattung bereits vorhanden.",
+          "Ort A ist günstiger, verursacht aber höhere Nebenkosten."
+        ],
+        "answer": {
+          "value": "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der größte Veranstaltungsort ist nicht automatisch am besten geeignet. — بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست.",
+          "model_answer": "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_01_listen",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet."
+        },
+        "options": [
+          "بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست.",
+          "باید ظرفیت و دسترسی را جداگانه مقایسه کنیم.",
+          "در محل B امکانات فنی از قبل موجود است.",
+          "محل A ارزان‌تر است، اما هزینه‌های جانبی بیشتری ایجاد می‌کند."
+        ],
+        "answer": {
+          "value": "بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der größte Veranstaltungsort ist nicht automatisch am besten geeignet. — بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست.",
+          "model_answer": "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet.",
+          "transcript_de": "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_01_speak",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen."
+        },
+        "answer": {
+          "expected_text": "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen. — باید ظرفیت و دسترسی را جداگانه مقایسه کنیم.",
+          "model_answer": "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_01_trans",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "باید ظرفیت و دسترسی را جداگانه مقایسه کنیم.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen. — باید ظرفیت و دسترسی را جداگانه مقایسه کنیم.",
+          "model_answer": "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_01_build",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "größte",
+            "Veranstaltungsort",
+            "ist",
+            "nicht",
+            "automatisch",
+            "am",
+            "besten",
+            "geeignet.",
+            "Der"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Der",
+            "größte",
+            "Veranstaltungsort",
+            "ist",
+            "nicht",
+            "automatisch",
+            "am",
+            "besten",
+            "geeignet."
+          ],
+          "value": "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der größte Veranstaltungsort ist nicht automatisch am besten geeignet. — بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست.",
+          "model_answer": "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_02_mc",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «در محل B امکانات فنی از قبل موجود است.»؟"
+        },
+        "options": [
+          "Bei Ort B ist die technische Ausstattung bereits vorhanden.",
+          "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet.",
+          "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen.",
+          "Ort A ist günstiger, verursacht aber höhere Nebenkosten."
+        ],
+        "answer": {
+          "value": "Bei Ort B ist die technische Ausstattung bereits vorhanden."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bei Ort B ist die technische Ausstattung bereits vorhanden. — در محل B امکانات فنی از قبل موجود است.",
+          "model_answer": "Bei Ort B ist die technische Ausstattung bereits vorhanden."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_02_listen",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Bei Ort B ist die technische Ausstattung bereits vorhanden."
+        },
+        "options": [
+          "در محل B امکانات فنی از قبل موجود است.",
+          "بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست.",
+          "باید ظرفیت و دسترسی را جداگانه مقایسه کنیم.",
+          "محل A ارزان‌تر است، اما هزینه‌های جانبی بیشتری ایجاد می‌کند."
+        ],
+        "answer": {
+          "value": "در محل B امکانات فنی از قبل موجود است."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bei Ort B ist die technische Ausstattung bereits vorhanden. — در محل B امکانات فنی از قبل موجود است.",
+          "model_answer": "Bei Ort B ist die technische Ausstattung bereits vorhanden.",
+          "transcript_de": "Bei Ort B ist die technische Ausstattung bereits vorhanden."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_02_speak",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Ort A ist günstiger, verursacht aber höhere Nebenkosten."
+        },
+        "answer": {
+          "expected_text": "Ort A ist günstiger, verursacht aber höhere Nebenkosten."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ort A ist günstiger, verursacht aber höhere Nebenkosten. — محل A ارزان‌تر است، اما هزینه‌های جانبی بیشتری ایجاد می‌کند.",
+          "model_answer": "Ort A ist günstiger, verursacht aber höhere Nebenkosten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_02_trans",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "محل A ارزان‌تر است، اما هزینه‌های جانبی بیشتری ایجاد می‌کند.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ort A ist günstiger, verursacht aber höhere Nebenkosten."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ort A ist günstiger, verursacht aber höhere Nebenkosten. — محل A ارزان‌تر است، اما هزینه‌های جانبی بیشتری ایجاد می‌کند.",
+          "model_answer": "Ort A ist günstiger, verursacht aber höhere Nebenkosten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_02_build",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Ort",
+            "B",
+            "ist",
+            "die",
+            "technische",
+            "Ausstattung",
+            "bereits",
+            "vorhanden.",
+            "Bei"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bei",
+            "Ort",
+            "B",
+            "ist",
+            "die",
+            "technische",
+            "Ausstattung",
+            "bereits",
+            "vorhanden."
+          ],
+          "value": "Bei Ort B ist die technische Ausstattung bereits vorhanden."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bei Ort B ist die technische Ausstattung bereits vorhanden. — در محل B امکانات فنی از قبل موجود است.",
+          "model_answer": "Bei Ort B ist die technische Ausstattung bereits vorhanden."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_03_mc",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «برای اندازه گروه ما ظرفیت هشتاد نفر کافی است.»؟"
+        },
+        "options": [
+          "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend.",
+          "Der größte Veranstaltungsort ist nicht automatisch am besten geeignet.",
+          "Wir sollten Kapazität und Erreichbarkeit getrennt vergleichen.",
+          "Bei Ort B ist die technische Ausstattung bereits vorhanden."
+        ],
+        "answer": {
+          "value": "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend. — برای اندازه گروه ما ظرفیت هشتاد نفر کافی است.",
+          "model_answer": "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_03_listen",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend."
+        },
+        "options": [
+          "برای اندازه گروه ما ظرفیت هشتاد نفر کافی است.",
+          "بزرگ‌ترین محل برگزاری لزوماً مناسب‌ترین گزینه نیست.",
+          "باید ظرفیت و دسترسی را جداگانه مقایسه کنیم.",
+          "در محل B امکانات فنی از قبل موجود است."
+        ],
+        "answer": {
+          "value": "برای اندازه گروه ما ظرفیت هشتاد نفر کافی است."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend. — برای اندازه گروه ما ظرفیت هشتاد نفر کافی است.",
+          "model_answer": "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend.",
+          "transcript_de": "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_03_speak",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Geeignet ist der Ort erst dann, wenn Größe, Ausstattung und Erreichbarkeit zusammenpassen."
+        },
+        "answer": {
+          "expected_text": "Geeignet ist der Ort erst dann, wenn Größe, Ausstattung und Erreichbarkeit zusammenpassen."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Geeignet ist der Ort erst dann, wenn Größe, Ausstattung und Erreichbarkeit zusammenpassen. — محل فقط وقتی مناسب است که اندازه، امکانات و دسترسی با هم جور باشند.",
+          "model_answer": "Geeignet ist der Ort erst dann, wenn Größe, Ausstattung und Erreichbarkeit zusammenpassen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_03_trans",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "محل فقط وقتی مناسب است که اندازه، امکانات و دسترسی با هم جور باشند.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Geeignet ist der Ort erst dann, wenn Größe, Ausstattung und Erreichbarkeit zusammenpassen."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Geeignet ist der Ort erst dann, wenn Größe, Ausstattung und Erreichbarkeit zusammenpassen. — محل فقط وقتی مناسب است که اندازه، امکانات و دسترسی با هم جور باشند.",
+          "model_answer": "Geeignet ist der Ort erst dann, wenn Größe, Ausstattung und Erreichbarkeit zusammenpassen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_venue_comparison_03_build",
+      "data": {
+        "lesson_key": "b2-de-venue-comparison-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "unsere",
+            "Gruppengröße",
+            "wäre",
+            "eine",
+            "Kapazität",
+            "von",
+            "achtzig",
+            "Personen",
+            "ausreichend.",
+            "Für"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Für",
+            "unsere",
+            "Gruppengröße",
+            "wäre",
+            "eine",
+            "Kapazität",
+            "von",
+            "achtzig",
+            "Personen",
+            "ausreichend."
+          ],
+          "value": "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend."
+        },
+        "difficulty": 4,
+        "cefr": "B2",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend. — برای اندازه گروه ما ظرفیت هشتاد نفر کافی است.",
+          "model_answer": "Für unsere Gruppengröße wäre eine Kapazität von achtzig Personen ausreichend."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
