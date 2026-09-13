@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "2b723d6998f107e7e001ce0ec2b22c50f62a7c777d5d050bf5ba3accf5100570",
+  "voice_id": "HLL5Lh99l3pwG8HZW1N5",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "86e4f4016656d5338ef43349c4f9026f3b18617174cda0c60c7cfadbb82ec4f7",
+  "voice_key": "character:leon:male_bright",
+  "voice_name": "Pascal R – Warm Medical Customer Care Agent",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "c87a912641c236d5b53dd1df1e1b5a9a43d369b35f21df4266c51573e0c7e3b3",
+  "duration_ms": 5381,
+  "generated_at": "2026-09-13T11:32:17.276523+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "be4045c7-ca12-5038-98a6-c01d08ef6db5",
+      "entity_key": "d_terminology_negotiation_concept_boundaries_02:2"
+    }
+  ]
+}

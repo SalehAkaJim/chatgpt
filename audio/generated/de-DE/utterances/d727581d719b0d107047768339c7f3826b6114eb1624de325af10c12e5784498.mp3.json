@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "f9c2cb5b060345e25e37135ade6eedb931ffef0a77353d102bba1e68fde2b2eb",
+  "voice_id": "v3V1d2rk6528UrLKRuy8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d727581d719b0d107047768339c7f3826b6114eb1624de325af10c12e5784498",
+  "voice_key": "de-de.sentence.native-clear",
+  "voice_name": "Susi - Effortless and Confident",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e564d91216763c5ff70478e750cc4b3a0bf0a588ebbc67feb7f176778e801b31",
+  "duration_ms": 6086,
+  "generated_at": "2026-09-13T11:33:40.338533+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "619cefba-a2b7-5af5-aed7-cf7856fbddd1",
+      "entity_key": "u_terminology_negotiation_concept_boundaries_01"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "7d31c92f-515e-5f2e-9256-8ef26ac352a0",
+      "entity_key": "ex_terminology_negotiation_concept_boundaries_01_listen"
+    }
+  ]
+}
