@@ -22,7 +22,12 @@ def sha(text):
 
 
 def slugify(value):
-    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")[:170] or "item"
+    # Keep Unicode letters/digits so character identifiers in non-Latin
+    # scripts (e.g. Korean Hangul) remain distinct instead of collapsing to
+    # the legacy fallback "item". Underscores are normalized to hyphens.
+    value = re.sub(r"[^\w]+", "-", value.lower(), flags=re.UNICODE)
+    value = value.replace("_", "-").strip("-")[:170]
+    return value or "item"
 
 
 def norm(value):
@@ -128,8 +133,6 @@ def main():
                     add("utterances", text, "utterance", eid, ext,
                         registry["sentence_narrator"]["voice_key"], registry["sentence_narrator"])
             elif kind == "exercise" and data.get("exercise_type") == "listening":
-                # An exercise-only sentence/letter still needs a real asset. The
-                # same text/voice identity deduplicates it with an utterance.
                 text = (data.get("prompt") or {}).get("audio_text")
                 if text:
                     eid = stable("exercise", f"{bid}:{ext}")
@@ -147,9 +150,6 @@ def main():
                             f"{ext}:source:{source['id']}", narrator["voice_key"], narrator,
                             {"usage": "source", "provenance": source["provenance"]})
             elif kind == "grammar_point" and data.get("audio_examples"):
-                # Pronunciation and corrected grammar examples are also models
-                # learners should be able to hear. Multiple examples share the
-                # point UUID and are distinguished by key and source hash.
                 for index, example in enumerate(data.get("examples", []), 1):
                     text = example.get(target_lang)
                     if text:
