@@ -1,0 +1,886 @@
+{
+  "batch_id": "de-de-prea1-alphabet-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-de-alphabet",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_01",
+      "data": {
+        "slug": "de_pre_a1_alphabet_01",
+        "lesson_key": "prea1-de-alphabet-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "de": "A"
+        },
+        "translations": {
+          "fa": "حرف A"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_01",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "lemma": "A",
+        "display_lemma": "A",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "de_pre_a1_alphabet_01"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_01",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "lexeme_ref": "lx_alphabet_01",
+        "surface_form": "A",
+        "display_form": "A",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_01",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "text": {
+          "de": "A"
+        },
+        "translations": {
+          "fa": "حرف A"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_alphabet_01"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_02",
+      "data": {
+        "slug": "de_pre_a1_alphabet_02",
+        "lesson_key": "prea1-de-alphabet-02",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "de": "B"
+        },
+        "translations": {
+          "fa": "حرف B"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_02",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "lemma": "B",
+        "display_lemma": "B",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "de_pre_a1_alphabet_02"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_02",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "lexeme_ref": "lx_alphabet_02",
+        "surface_form": "B",
+        "display_form": "B",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_02",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "text": {
+          "de": "B"
+        },
+        "translations": {
+          "fa": "حرف B"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_alphabet_02"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_03",
+      "data": {
+        "slug": "de_pre_a1_alphabet_03",
+        "lesson_key": "prea1-de-alphabet-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "de": "M"
+        },
+        "translations": {
+          "fa": "حرف M"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_03",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "lemma": "M",
+        "display_lemma": "M",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "de_pre_a1_alphabet_03"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_03",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "lexeme_ref": "lx_alphabet_03",
+        "surface_form": "M",
+        "display_form": "M",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_03",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "text": {
+          "de": "M"
+        },
+        "translations": {
+          "fa": "حرف M"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_alphabet_03"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_04",
+      "data": {
+        "slug": "de_pre_a1_alphabet_04",
+        "lesson_key": "prea1-de-alphabet-02",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "de": "S"
+        },
+        "translations": {
+          "fa": "حرف S"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_04",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "lemma": "S",
+        "display_lemma": "S",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "de_pre_a1_alphabet_04"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_04",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "lexeme_ref": "lx_alphabet_04",
+        "surface_form": "S",
+        "display_form": "S",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_04",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "text": {
+          "de": "S"
+        },
+        "translations": {
+          "fa": "حرف S"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_alphabet_04"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_05",
+      "data": {
+        "slug": "de_pre_a1_alphabet_05",
+        "lesson_key": "prea1-de-alphabet-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "de": "Ü"
+        },
+        "translations": {
+          "fa": "حرف Ü"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_05",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "lemma": "Ü",
+        "display_lemma": "Ü",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "de_pre_a1_alphabet_05"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_05",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "lexeme_ref": "lx_alphabet_05",
+        "surface_form": "Ü",
+        "display_form": "Ü",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_05",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "text": {
+          "de": "Ü"
+        },
+        "translations": {
+          "fa": "حرف Ü"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_alphabet_05"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_06",
+      "data": {
+        "slug": "de_pre_a1_alphabet_06",
+        "lesson_key": "prea1-de-alphabet-02",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "de": "ß"
+        },
+        "translations": {
+          "fa": "حرف ß"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_06",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "lemma": "ß",
+        "display_lemma": "ß",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "de_pre_a1_alphabet_06"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_06",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "lexeme_ref": "lx_alphabet_06",
+        "surface_form": "ß",
+        "display_form": "ß",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_06",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "text": {
+          "de": "ß"
+        },
+        "translations": {
+          "fa": "حرف ß"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_alphabet_06"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_alphabet_core",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "slug": "prea1-de-alphabet-grammar",
+        "title": "Das Alphabet",
+        "rule_summary": "German uses the Latin alphabet plus Ä/ä, Ö/ö, Ü/ü and ß; these spellings are meaningful.",
+        "explanation": {
+          "fa": "اوملاوت‌ها و ß تزئینی نیستند و می‌توانند شکل و معنی واژه را عوض کنند؛ آن‌ها را بخشی از املای کلمه ببین."
+        },
+        "examples": [
+          {
+            "de": "A",
+            "fa": "حرف A"
+          },
+          {
+            "de": "ß",
+            "fa": "حرف ß"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_alphabet_01",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "title": "Buchstaben sehen",
+        "setting": "buchstaben_sehen",
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "characters": [
+          "Anna",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Das ist A.",
+            "translation_fa": "این A است."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Das ist B.",
+            "translation_fa": "این B است."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Und das?",
+            "translation_fa": "و این؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Das ist Ü.",
+            "translation_fa": "این Ü است."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_alphabet_02",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "title": "Sonderzeichen",
+        "setting": "sonderzeichen",
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "characters": [
+          "Mia",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Ä, Ö, Ü.",
+            "translation_fa": "Ä، Ö، Ü."
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Und ß.",
+            "translation_fa": "و ß."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Ist ß ein B?",
+            "translation_fa": "آیا ß یک B است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Nein.",
+            "translation_fa": "نه."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_meaning",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "A"
+        },
+        "answer": {
+          "value": "حرف A"
+        },
+        "options": [
+          "حرف A",
+          "حرف B",
+          "حرف M",
+          "حرف S"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«A» یعنی «حرف A».",
+          "model_answer": "حرف A",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_listen",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Ü"
+        },
+        "answer": {
+          "value": "Ü"
+        },
+        "options": [
+          "Ü",
+          "A",
+          "B",
+          "M"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Ü» است.",
+          "model_answer": "Ü",
+          "transcript_de": "Ü",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_speak",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "A"
+        },
+        "answer": {
+          "expected_text": "A"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "A",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_translate",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Ü",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "حرف Ü"
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «حرف Ü».",
+          "model_answer": "حرف Ü",
+          "source_de": "Ü",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_01_build",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "ist",
+            "A.",
+            "Das"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Das",
+            "ist",
+            "A."
+          ],
+          "text": "Das ist A."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Das ist A.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_meaning",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "B"
+        },
+        "answer": {
+          "value": "حرف B"
+        },
+        "options": [
+          "حرف B",
+          "حرف A",
+          "حرف M",
+          "حرف S"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«B» یعنی «حرف B».",
+          "model_answer": "حرف B",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_listen",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "ß"
+        },
+        "answer": {
+          "value": "ß"
+        },
+        "options": [
+          "ß",
+          "A",
+          "B",
+          "M"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «ß» است.",
+          "model_answer": "ß",
+          "transcript_de": "ß",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_speak",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "B"
+        },
+        "answer": {
+          "expected_text": "B"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "B",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_translate",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "ß",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "حرف ß"
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «حرف ß».",
+          "model_answer": "حرف ß",
+          "source_de": "ß",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_02_build",
+      "data": {
+        "lesson_key": "prea1-de-alphabet-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "Ö",
+            "Ü.",
+            "Ä"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ä",
+            "Ö",
+            "Ü."
+          ],
+          "text": "Ä, Ö, Ü."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Ä, Ö, Ü.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}

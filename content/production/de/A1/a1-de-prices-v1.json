@@ -1,0 +1,890 @@
+{
+  "batch_id": "de-de-a1-prices-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A1",
+  "curriculum_unit": "a1-de-prices",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_prices_01",
+      "data": {
+        "slug": "de_a1_prices_01",
+        "lesson_key": "a1-de-prices-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Wie viel kostet das?"
+        },
+        "translations": {
+          "fa": "این چقدر قیمت دارد؟"
+        },
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_prices_01",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "lemma": "Wie viel kostet das?",
+        "display_lemma": "Wie viel kostet das?",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_prices_01"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_prices_01",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "lexeme_ref": "lx_prices_01",
+        "surface_form": "Wie viel kostet das?",
+        "display_form": "Wie viel kostet das?",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_prices_01",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "text": {
+          "de": "Wie viel kostet das?"
+        },
+        "translations": {
+          "fa": "این چقدر قیمت دارد؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_prices_01"
+        ],
+        "cefr": "A1",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_prices_02",
+      "data": {
+        "slug": "de_a1_prices_02",
+        "lesson_key": "a1-de-prices-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Das kostet fünf Euro."
+        },
+        "translations": {
+          "fa": "این پنج یورو قیمت دارد."
+        },
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_prices_02",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "lemma": "Das kostet fünf Euro.",
+        "display_lemma": "Das kostet fünf Euro.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_prices_02"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_prices_02",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "lexeme_ref": "lx_prices_02",
+        "surface_form": "Das kostet fünf Euro.",
+        "display_form": "Das kostet fünf Euro.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_prices_02",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "text": {
+          "de": "Das kostet fünf Euro."
+        },
+        "translations": {
+          "fa": "این پنج یورو قیمت دارد."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_prices_02"
+        ],
+        "cefr": "A1",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_prices_03",
+      "data": {
+        "slug": "de_a1_prices_03",
+        "lesson_key": "a1-de-prices-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Was kosten die Äpfel?"
+        },
+        "translations": {
+          "fa": "سیب‌ها چقدرند؟"
+        },
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_prices_03",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "lemma": "Was kosten die Äpfel?",
+        "display_lemma": "Was kosten die Äpfel?",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_prices_03"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_prices_03",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "lexeme_ref": "lx_prices_03",
+        "surface_form": "Was kosten die Äpfel?",
+        "display_form": "Was kosten die Äpfel?",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_prices_03",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "text": {
+          "de": "Was kosten die Äpfel?"
+        },
+        "translations": {
+          "fa": "سیب‌ها چقدرند؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_prices_03"
+        ],
+        "cefr": "A1",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_prices_04",
+      "data": {
+        "slug": "de_a1_prices_04",
+        "lesson_key": "a1-de-prices-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "zwei Euro fünfzig"
+        },
+        "translations": {
+          "fa": "دو یورو و پنجاه سنت"
+        },
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_prices_04",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "lemma": "zwei Euro fünfzig",
+        "display_lemma": "zwei Euro fünfzig",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_prices_04"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_prices_04",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "lexeme_ref": "lx_prices_04",
+        "surface_form": "zwei Euro fünfzig",
+        "display_form": "zwei Euro fünfzig",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_prices_04",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "text": {
+          "de": "zwei Euro fünfzig"
+        },
+        "translations": {
+          "fa": "دو یورو و پنجاه سنت"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_prices_04"
+        ],
+        "cefr": "A1",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_prices_05",
+      "data": {
+        "slug": "de_a1_prices_05",
+        "lesson_key": "a1-de-prices-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Das ist günstig."
+        },
+        "translations": {
+          "fa": "این ارزان / به‌صرفه است."
+        },
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_prices_05",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "lemma": "Das ist günstig.",
+        "display_lemma": "Das ist günstig.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_prices_05"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_prices_05",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "lexeme_ref": "lx_prices_05",
+        "surface_form": "Das ist günstig.",
+        "display_form": "Das ist günstig.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_prices_05",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "text": {
+          "de": "Das ist günstig."
+        },
+        "translations": {
+          "fa": "این ارزان / به‌صرفه است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_prices_05"
+        ],
+        "cefr": "A1",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_prices_06",
+      "data": {
+        "slug": "de_a1_prices_06",
+        "lesson_key": "a1-de-prices-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Das ist zu teuer."
+        },
+        "translations": {
+          "fa": "این خیلی گران است."
+        },
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_prices_06",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "lemma": "Das ist zu teuer.",
+        "display_lemma": "Das ist zu teuer.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_prices_06"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_prices_06",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "lexeme_ref": "lx_prices_06",
+        "surface_form": "Das ist zu teuer.",
+        "display_form": "Das ist zu teuer.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_prices_06",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "text": {
+          "de": "Das ist zu teuer."
+        },
+        "translations": {
+          "fa": "این خیلی گران است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_prices_06"
+        ],
+        "cefr": "A1",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_prices_core",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "slug": "a1-de-prices-grammar",
+        "title": "Wie viel kostet das?",
+        "rule_summary": "Use Wie viel kostet …? for one item and Wie viel kosten …? for plural items.",
+        "explanation": {
+          "fa": "فعل «kosten» با مفرد و جمع تغییر می‌کند: «Was kostet das?» ولی «Was kosten die Äpfel?»"
+        },
+        "examples": [
+          {
+            "de": "Wie viel kostet das?",
+            "fa": "این چقدر قیمت دارد؟"
+          },
+          {
+            "de": "Das ist zu teuer.",
+            "fa": "این خیلی گران است."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_prices_01",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "title": "Im Laden",
+        "setting": "im_laden",
+        "cefr": "A1",
+        "topic": "prices",
+        "characters": [
+          "Anna",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Wie viel kostet das?",
+            "translation_fa": "این چقدر است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Fünf Euro neunzig.",
+            "translation_fa": "پنج یورو و نود سنت."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Okay, ich nehme es.",
+            "translation_fa": "باشه، می‌خرمش."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Gern.",
+            "translation_fa": "حتماً."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_prices_02",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "title": "Auf dem Markt",
+        "setting": "auf_dem_markt",
+        "cefr": "A1",
+        "topic": "prices",
+        "characters": [
+          "Mia",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Was kosten die Äpfel?",
+            "translation_fa": "سیب‌ها چقدرند؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Drei Euro das Kilo.",
+            "translation_fa": "کیلویی سه یورو."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Das ist okay.",
+            "translation_fa": "خوبه."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Ein Kilo, bitte.",
+            "translation_fa": "یک کیلو لطفاً."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_01_meaning",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Wie viel kostet das?"
+        },
+        "answer": {
+          "value": "این چقدر قیمت دارد؟"
+        },
+        "options": [
+          "این چقدر قیمت دارد؟",
+          "این پنج یورو قیمت دارد.",
+          "سیب‌ها چقدرند؟",
+          "دو یورو و پنجاه سنت"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Wie viel kostet das?» یعنی «این چقدر قیمت دارد؟».",
+          "model_answer": "این چقدر قیمت دارد؟",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_01_listen",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Das ist günstig."
+        },
+        "answer": {
+          "value": "Das ist günstig."
+        },
+        "options": [
+          "Das ist günstig.",
+          "Wie viel kostet das?",
+          "Das kostet fünf Euro.",
+          "Was kosten die Äpfel?"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Das ist günstig.» است.",
+          "model_answer": "Das ist günstig.",
+          "transcript_de": "Das ist günstig.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_01_speak",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Wie viel kostet das?"
+        },
+        "answer": {
+          "expected_text": "Wie viel kostet das?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Wie viel kostet das?",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_01_translate",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Das ist günstig.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "این ارزان / به‌صرفه است."
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «این ارزان / به‌صرفه است.».",
+          "model_answer": "این ارزان / به‌صرفه است.",
+          "source_de": "Das ist günstig.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_01_build",
+      "data": {
+        "lesson_key": "a1-de-prices-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "viel",
+            "kostet",
+            "das",
+            "Wie"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Wie",
+            "viel",
+            "kostet",
+            "das"
+          ],
+          "text": "Wie viel kostet das?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Wie viel kostet das?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_02_meaning",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Das kostet fünf Euro."
+        },
+        "answer": {
+          "value": "این پنج یورو قیمت دارد."
+        },
+        "options": [
+          "این پنج یورو قیمت دارد.",
+          "این چقدر قیمت دارد؟",
+          "سیب‌ها چقدرند؟",
+          "دو یورو و پنجاه سنت"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Das kostet fünf Euro.» یعنی «این پنج یورو قیمت دارد.».",
+          "model_answer": "این پنج یورو قیمت دارد.",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_02_listen",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Das ist zu teuer."
+        },
+        "answer": {
+          "value": "Das ist zu teuer."
+        },
+        "options": [
+          "Das ist zu teuer.",
+          "Wie viel kostet das?",
+          "Das kostet fünf Euro.",
+          "Was kosten die Äpfel?"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Das ist zu teuer.» است.",
+          "model_answer": "Das ist zu teuer.",
+          "transcript_de": "Das ist zu teuer.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_02_speak",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Das kostet fünf Euro."
+        },
+        "answer": {
+          "expected_text": "Das kostet fünf Euro."
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Das kostet fünf Euro.",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_02_translate",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Das ist zu teuer.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "این خیلی گران است."
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «این خیلی گران است.».",
+          "model_answer": "این خیلی گران است.",
+          "source_de": "Das ist zu teuer.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_prices_02_build",
+      "data": {
+        "lesson_key": "a1-de-prices-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "kosten",
+            "die",
+            "Äpfel",
+            "Was"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Was",
+            "kosten",
+            "die",
+            "Äpfel"
+          ],
+          "text": "Was kosten die Äpfel?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "prices",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Was kosten die Äpfel?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,903 @@
+{
+  "batch_id": "de-de-a1-transport-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A1",
+  "curriculum_unit": "a1-de-transport",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_transport_01",
+      "data": {
+        "slug": "de_a1_transport_01",
+        "lesson_key": "a1-de-transport-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Bus"
+        },
+        "translations": {
+          "fa": "اتوبوس"
+        },
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_transport_01",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "lemma": "Bus",
+        "display_lemma": "Bus",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a1_transport_01"
+        ],
+        "cefr": "A1",
+        "status": "validated",
+        "grammatical_gender": "masculine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_transport_01",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "lexeme_ref": "lx_transport_01",
+        "surface_form": "Bus",
+        "display_form": "Bus",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_transport_01",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "text": {
+          "de": "der Bus"
+        },
+        "translations": {
+          "fa": "اتوبوس"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_transport_01"
+        ],
+        "cefr": "A1",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_transport_02",
+      "data": {
+        "slug": "de_a1_transport_02",
+        "lesson_key": "a1-de-transport-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Bahn"
+        },
+        "translations": {
+          "fa": "قطار شهری / راه‌آهن"
+        },
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_transport_02",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "lemma": "Bahn",
+        "display_lemma": "Bahn",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a1_transport_02"
+        ],
+        "cefr": "A1",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_transport_02",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "lexeme_ref": "lx_transport_02",
+        "surface_form": "Bahn",
+        "display_form": "Bahn",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_transport_02",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "text": {
+          "de": "die Bahn"
+        },
+        "translations": {
+          "fa": "قطار شهری / راه‌آهن"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_transport_02"
+        ],
+        "cefr": "A1",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_transport_03",
+      "data": {
+        "slug": "de_a1_transport_03",
+        "lesson_key": "a1-de-transport-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Fahrrad"
+        },
+        "translations": {
+          "fa": "دوچرخه"
+        },
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_transport_03",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "lemma": "Fahrrad",
+        "display_lemma": "Fahrrad",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a1_transport_03"
+        ],
+        "cefr": "A1",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_transport_03",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "lexeme_ref": "lx_transport_03",
+        "surface_form": "Fahrrad",
+        "display_form": "Fahrrad",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_transport_03",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "text": {
+          "de": "das Fahrrad"
+        },
+        "translations": {
+          "fa": "دوچرخه"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_transport_03"
+        ],
+        "cefr": "A1",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_transport_04",
+      "data": {
+        "slug": "de_a1_transport_04",
+        "lesson_key": "a1-de-transport-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ich fahre mit dem Bus."
+        },
+        "translations": {
+          "fa": "با اتوبوس می‌روم."
+        },
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_transport_04",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "lemma": "Ich fahre mit dem Bus.",
+        "display_lemma": "Ich fahre mit dem Bus.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_transport_04"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_transport_04",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "lexeme_ref": "lx_transport_04",
+        "surface_form": "Ich fahre mit dem Bus.",
+        "display_form": "Ich fahre mit dem Bus.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_transport_04",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "text": {
+          "de": "Ich fahre mit dem Bus."
+        },
+        "translations": {
+          "fa": "با اتوبوس می‌روم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_transport_04"
+        ],
+        "cefr": "A1",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_transport_05",
+      "data": {
+        "slug": "de_a1_transport_05",
+        "lesson_key": "a1-de-transport-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ich nehme die Bahn."
+        },
+        "translations": {
+          "fa": "قطار را می‌گیرم / با قطار می‌روم."
+        },
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_transport_05",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "lemma": "Ich nehme die Bahn.",
+        "display_lemma": "Ich nehme die Bahn.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_transport_05"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_transport_05",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "lexeme_ref": "lx_transport_05",
+        "surface_form": "Ich nehme die Bahn.",
+        "display_form": "Ich nehme die Bahn.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_transport_05",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "text": {
+          "de": "Ich nehme die Bahn."
+        },
+        "translations": {
+          "fa": "قطار را می‌گیرم / با قطار می‌روم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_transport_05"
+        ],
+        "cefr": "A1",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_transport_06",
+      "data": {
+        "slug": "de_a1_transport_06",
+        "lesson_key": "a1-de-transport-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Der Bus kommt um acht."
+        },
+        "translations": {
+          "fa": "اتوبوس ساعت هشت می‌آید."
+        },
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_transport_06",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "lemma": "Der Bus kommt um acht.",
+        "display_lemma": "Der Bus kommt um acht.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_transport_06"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_transport_06",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "lexeme_ref": "lx_transport_06",
+        "surface_form": "Der Bus kommt um acht.",
+        "display_form": "Der Bus kommt um acht.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_transport_06",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "text": {
+          "de": "Der Bus kommt um acht."
+        },
+        "translations": {
+          "fa": "اتوبوس ساعت هشت می‌آید."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_transport_06"
+        ],
+        "cefr": "A1",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_transport_core",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "slug": "a1-de-transport-grammar",
+        "title": "Unterwegs",
+        "rule_summary": "Use mit + dative chunks for transport: mit dem Bus, mit der Bahn; fahren is a common movement verb.",
+        "explanation": {
+          "fa": "وسیلهٔ نقلیه معمولاً با «mit» می‌آید: «mit dem Bus / mit der Bahn». این ترکیب‌ها را یکجا حفظ کن."
+        },
+        "examples": [
+          {
+            "de": "der Bus",
+            "fa": "اتوبوس"
+          },
+          {
+            "de": "Der Bus kommt um acht.",
+            "fa": "اتوبوس ساعت هشت می‌آید."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_transport_01",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "title": "Zur Arbeit",
+        "setting": "zur_arbeit",
+        "cefr": "A1",
+        "topic": "transport",
+        "characters": [
+          "Mia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Wie fährst du zur Arbeit?",
+            "translation_fa": "چطور می‌ری سر کار؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Mit dem Bus.",
+            "translation_fa": "با اتوبوس."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Jeden Tag?",
+            "translation_fa": "هر روز؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Ja, fast jeden Tag.",
+            "translation_fa": "بله، تقریباً هر روز."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_transport_02",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "title": "Die Bahn",
+        "setting": "die_bahn",
+        "cefr": "A1",
+        "topic": "transport",
+        "characters": [
+          "Lea",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Nimmst du heute die Bahn?",
+            "translation_fa": "امروز با قطار می‌ری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Ja. Der Bus ist zu spät.",
+            "translation_fa": "بله. اتوبوس خیلی دیر کرده."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Wann kommt die Bahn?",
+            "translation_fa": "قطار کی می‌رسد؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "In fünf Minuten.",
+            "translation_fa": "پنج دقیقه دیگر."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_01_meaning",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "der Bus"
+        },
+        "answer": {
+          "value": "اتوبوس"
+        },
+        "options": [
+          "اتوبوس",
+          "قطار شهری / راه‌آهن",
+          "دوچرخه",
+          "با اتوبوس می‌روم."
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«der Bus» یعنی «اتوبوس».",
+          "model_answer": "اتوبوس",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_01_listen",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Ich nehme die Bahn."
+        },
+        "answer": {
+          "value": "Ich nehme die Bahn."
+        },
+        "options": [
+          "Ich nehme die Bahn.",
+          "der Bus",
+          "die Bahn",
+          "das Fahrrad"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Ich nehme die Bahn.» است.",
+          "model_answer": "Ich nehme die Bahn.",
+          "transcript_de": "Ich nehme die Bahn.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_01_speak",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "der Bus"
+        },
+        "answer": {
+          "expected_text": "der Bus"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "der Bus",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_01_translate",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Ich nehme die Bahn.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "قطار را می‌گیرم / با قطار می‌روم."
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «قطار را می‌گیرم / با قطار می‌روم.».",
+          "model_answer": "قطار را می‌گیرم / با قطار می‌روم.",
+          "source_de": "Ich nehme die Bahn.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_01_build",
+      "data": {
+        "lesson_key": "a1-de-transport-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "fährst",
+            "du",
+            "zur",
+            "Arbeit",
+            "Wie"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Wie",
+            "fährst",
+            "du",
+            "zur",
+            "Arbeit"
+          ],
+          "text": "Wie fährst du zur Arbeit?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Wie fährst du zur Arbeit?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_02_meaning",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "die Bahn"
+        },
+        "answer": {
+          "value": "قطار شهری / راه‌آهن"
+        },
+        "options": [
+          "قطار شهری / راه‌آهن",
+          "اتوبوس",
+          "دوچرخه",
+          "با اتوبوس می‌روم."
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«die Bahn» یعنی «قطار شهری / راه‌آهن».",
+          "model_answer": "قطار شهری / راه‌آهن",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_02_listen",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Der Bus kommt um acht."
+        },
+        "answer": {
+          "value": "Der Bus kommt um acht."
+        },
+        "options": [
+          "Der Bus kommt um acht.",
+          "der Bus",
+          "die Bahn",
+          "das Fahrrad"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Der Bus kommt um acht.» است.",
+          "model_answer": "Der Bus kommt um acht.",
+          "transcript_de": "Der Bus kommt um acht.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_02_speak",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "die Bahn"
+        },
+        "answer": {
+          "expected_text": "die Bahn"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "die Bahn",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_02_translate",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Der Bus kommt um acht.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "اتوبوس ساعت هشت می‌آید."
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «اتوبوس ساعت هشت می‌آید.».",
+          "model_answer": "اتوبوس ساعت هشت می‌آید.",
+          "source_de": "Der Bus kommt um acht.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_transport_02_build",
+      "data": {
+        "lesson_key": "a1-de-transport-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "du",
+            "heute",
+            "die",
+            "Bahn",
+            "Nimmst"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Nimmst",
+            "du",
+            "heute",
+            "die",
+            "Bahn"
+          ],
+          "text": "Nimmst du heute die Bahn?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "transport",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Nimmst du heute die Bahn?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}

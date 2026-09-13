@@ -1,0 +1,884 @@
+{
+  "batch_id": "de-de-prea1-classroom-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-de-classroom",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_classroom_01",
+      "data": {
+        "slug": "de_pre_a1_classroom_01",
+        "lesson_key": "prea1-de-classroom-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Bitte."
+        },
+        "translations": {
+          "fa": "لطفاً / خواهش می‌کنم."
+        },
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_classroom_01",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "lemma": "Bitte.",
+        "display_lemma": "Bitte.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_classroom_01"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_classroom_01",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "lexeme_ref": "lx_classroom_01",
+        "surface_form": "Bitte.",
+        "display_form": "Bitte.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_classroom_01",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "text": {
+          "de": "Bitte."
+        },
+        "translations": {
+          "fa": "لطفاً / خواهش می‌کنم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_classroom_01"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_classroom_02",
+      "data": {
+        "slug": "de_pre_a1_classroom_02",
+        "lesson_key": "prea1-de-classroom-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Danke."
+        },
+        "translations": {
+          "fa": "ممنون."
+        },
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_classroom_02",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "lemma": "Danke.",
+        "display_lemma": "Danke.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_classroom_02"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_classroom_02",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "lexeme_ref": "lx_classroom_02",
+        "surface_form": "Danke.",
+        "display_form": "Danke.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_classroom_02",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "text": {
+          "de": "Danke."
+        },
+        "translations": {
+          "fa": "ممنون."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_classroom_02"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_classroom_03",
+      "data": {
+        "slug": "de_pre_a1_classroom_03",
+        "lesson_key": "prea1-de-classroom-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Noch einmal, bitte."
+        },
+        "translations": {
+          "fa": "یک بار دیگر، لطفاً."
+        },
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_classroom_03",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "lemma": "Noch einmal, bitte.",
+        "display_lemma": "Noch einmal, bitte.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_classroom_03"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_classroom_03",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "lexeme_ref": "lx_classroom_03",
+        "surface_form": "Noch einmal, bitte.",
+        "display_form": "Noch einmal, bitte.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_classroom_03",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "text": {
+          "de": "Noch einmal, bitte."
+        },
+        "translations": {
+          "fa": "یک بار دیگر، لطفاً."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_classroom_03"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_classroom_04",
+      "data": {
+        "slug": "de_pre_a1_classroom_04",
+        "lesson_key": "prea1-de-classroom-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Langsam, bitte."
+        },
+        "translations": {
+          "fa": "آهسته‌تر، لطفاً."
+        },
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_classroom_04",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "lemma": "Langsam, bitte.",
+        "display_lemma": "Langsam, bitte.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_classroom_04"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_classroom_04",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "lexeme_ref": "lx_classroom_04",
+        "surface_form": "Langsam, bitte.",
+        "display_form": "Langsam, bitte.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_classroom_04",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "text": {
+          "de": "Langsam, bitte."
+        },
+        "translations": {
+          "fa": "آهسته‌تر، لطفاً."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_classroom_04"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_classroom_05",
+      "data": {
+        "slug": "de_pre_a1_classroom_05",
+        "lesson_key": "prea1-de-classroom-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ich verstehe nicht."
+        },
+        "translations": {
+          "fa": "متوجه نمی‌شوم."
+        },
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_classroom_05",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "lemma": "Ich verstehe nicht.",
+        "display_lemma": "Ich verstehe nicht.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_classroom_05"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_classroom_05",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "lexeme_ref": "lx_classroom_05",
+        "surface_form": "Ich verstehe nicht.",
+        "display_form": "Ich verstehe nicht.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_classroom_05",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "text": {
+          "de": "Ich verstehe nicht."
+        },
+        "translations": {
+          "fa": "متوجه نمی‌شوم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_classroom_05"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_classroom_06",
+      "data": {
+        "slug": "de_pre_a1_classroom_06",
+        "lesson_key": "prea1-de-classroom-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ja, genau."
+        },
+        "translations": {
+          "fa": "بله، دقیقاً."
+        },
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_classroom_06",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "lemma": "Ja, genau.",
+        "display_lemma": "Ja, genau.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_pre_a1_classroom_06"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_classroom_06",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "lexeme_ref": "lx_classroom_06",
+        "surface_form": "Ja, genau.",
+        "display_form": "Ja, genau.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_classroom_06",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "text": {
+          "de": "Ja, genau."
+        },
+        "translations": {
+          "fa": "بله، دقیقاً."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_classroom_06"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_classroom_core",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "slug": "prea1-de-classroom-grammar",
+        "title": "Im Kurs",
+        "rule_summary": "Polite classroom phrases can be learned as complete chunks before grammar analysis.",
+        "explanation": {
+          "fa": "عبارت‌هایی مثل «Noch einmal, bitte» را یک تکه حفظ کن؛ برای شروع لازم نیست ساختارشان را تجزیه کنی."
+        },
+        "examples": [
+          {
+            "de": "Bitte.",
+            "fa": "لطفاً / خواهش می‌کنم."
+          },
+          {
+            "de": "Ja, genau.",
+            "fa": "بله، دقیقاً."
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_classroom_01",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "title": "Nicht verstanden",
+        "setting": "nicht_verstanden",
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "characters": [
+          "Lea",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Ich verstehe nicht.",
+            "translation_fa": "متوجه نمی‌شوم."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Noch einmal?",
+            "translation_fa": "یک بار دیگر؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Ja, bitte.",
+            "translation_fa": "بله، لطفاً."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Natürlich.",
+            "translation_fa": "حتماً."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_classroom_02",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "title": "Zu schnell",
+        "setting": "zu_schnell",
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "characters": [
+          "Sofia",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Langsam, bitte.",
+            "translation_fa": "آهسته‌تر، لطفاً."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "So?",
+            "translation_fa": "این‌طور؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Ja, genau.",
+            "translation_fa": "بله، دقیقاً."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Danke.",
+            "translation_fa": "ممنون."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_01_meaning",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Bitte."
+        },
+        "answer": {
+          "value": "لطفاً / خواهش می‌کنم."
+        },
+        "options": [
+          "لطفاً / خواهش می‌کنم.",
+          "ممنون.",
+          "یک بار دیگر، لطفاً.",
+          "آهسته‌تر، لطفاً."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Bitte.» یعنی «لطفاً / خواهش می‌کنم.».",
+          "model_answer": "لطفاً / خواهش می‌کنم.",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_01_listen",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Ich verstehe nicht."
+        },
+        "answer": {
+          "value": "Ich verstehe nicht."
+        },
+        "options": [
+          "Ich verstehe nicht.",
+          "Bitte.",
+          "Danke.",
+          "Noch einmal, bitte."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Ich verstehe nicht.» است.",
+          "model_answer": "Ich verstehe nicht.",
+          "transcript_de": "Ich verstehe nicht.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_01_speak",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Bitte."
+        },
+        "answer": {
+          "expected_text": "Bitte."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Bitte.",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_01_translate",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Ich verstehe nicht.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "متوجه نمی‌شوم."
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «متوجه نمی‌شوم.».",
+          "model_answer": "متوجه نمی‌شوم.",
+          "source_de": "Ich verstehe nicht.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_01_build",
+      "data": {
+        "lesson_key": "prea1-de-classroom-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "verstehe",
+            "nicht.",
+            "Ich"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ich",
+            "verstehe",
+            "nicht."
+          ],
+          "text": "Ich verstehe nicht."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Ich verstehe nicht.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_02_meaning",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Danke."
+        },
+        "answer": {
+          "value": "ممنون."
+        },
+        "options": [
+          "ممنون.",
+          "لطفاً / خواهش می‌کنم.",
+          "یک بار دیگر، لطفاً.",
+          "آهسته‌تر، لطفاً."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Danke.» یعنی «ممنون.».",
+          "model_answer": "ممنون.",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_02_listen",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Ja, genau."
+        },
+        "answer": {
+          "value": "Ja, genau."
+        },
+        "options": [
+          "Ja, genau.",
+          "Bitte.",
+          "Danke.",
+          "Noch einmal, bitte."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Ja, genau.» است.",
+          "model_answer": "Ja, genau.",
+          "transcript_de": "Ja, genau.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_02_speak",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Danke."
+        },
+        "answer": {
+          "expected_text": "Danke."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Danke.",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_02_translate",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Ja, genau.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "بله، دقیقاً."
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «بله، دقیقاً.».",
+          "model_answer": "بله، دقیقاً.",
+          "source_de": "Ja, genau.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_classroom_02_build",
+      "data": {
+        "lesson_key": "prea1-de-classroom-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "bitte.",
+            "Langsam"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Langsam",
+            "bitte."
+          ],
+          "text": "Langsam, bitte."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "polite-language",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Langsam, bitte.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}

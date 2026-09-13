@@ -1,0 +1,895 @@
+{
+  "batch_id": "de-de-prea1-first-sounds-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-de-first-sounds",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_01",
+      "data": {
+        "slug": "de_pre_a1_first_sounds_01",
+        "lesson_key": "prea1-de-first-sounds-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "Schule"
+        },
+        "translations": {
+          "fa": "مدرسه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_01",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "lemma": "Schule",
+        "display_lemma": "Schule",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_01"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_01",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "lexeme_ref": "lx_first_sounds_01",
+        "surface_form": "Schule",
+        "display_form": "Schule",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_01",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "text": {
+          "de": "Schule"
+        },
+        "translations": {
+          "fa": "مدرسه"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_01"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_02",
+      "data": {
+        "slug": "de_pre_a1_first_sounds_02",
+        "lesson_key": "prea1-de-first-sounds-02",
+        "concept_type": "lexical",
+        "part_of_speech": "determiner",
+        "forms": {
+          "de": "mein"
+        },
+        "translations": {
+          "fa": "مال من / ـم"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_02",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "lemma": "mein",
+        "display_lemma": "mein",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "determiner",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_02"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_02",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "lexeme_ref": "lx_first_sounds_02",
+        "surface_form": "mein",
+        "display_form": "mein",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_02",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "text": {
+          "de": "mein"
+        },
+        "translations": {
+          "fa": "مال من / ـم"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_02"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_03",
+      "data": {
+        "slug": "de_pre_a1_first_sounds_03",
+        "lesson_key": "prea1-de-first-sounds-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "Liebe"
+        },
+        "translations": {
+          "fa": "عشق / علاقه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_03",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "lemma": "Liebe",
+        "display_lemma": "Liebe",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_03"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_03",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "lexeme_ref": "lx_first_sounds_03",
+        "surface_form": "Liebe",
+        "display_form": "Liebe",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_03",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "text": {
+          "de": "Liebe"
+        },
+        "translations": {
+          "fa": "عشق / علاقه"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_03"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_04",
+      "data": {
+        "slug": "de_pre_a1_first_sounds_04",
+        "lesson_key": "prea1-de-first-sounds-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "de": "heute"
+        },
+        "translations": {
+          "fa": "امروز"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_04",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "lemma": "heute",
+        "display_lemma": "heute",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_04"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_04",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "lexeme_ref": "lx_first_sounds_04",
+        "surface_form": "heute",
+        "display_form": "heute",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_04",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "text": {
+          "de": "heute"
+        },
+        "translations": {
+          "fa": "امروز"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_04"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_05",
+      "data": {
+        "slug": "de_pre_a1_first_sounds_05",
+        "lesson_key": "prea1-de-first-sounds-01",
+        "concept_type": "lexical",
+        "part_of_speech": "numeral",
+        "forms": {
+          "de": "zwei"
+        },
+        "translations": {
+          "fa": "دو"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_05",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "lemma": "zwei",
+        "display_lemma": "zwei",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "numeral",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_05"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_05",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "lexeme_ref": "lx_first_sounds_05",
+        "surface_form": "zwei",
+        "display_form": "zwei",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_05",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "text": {
+          "de": "zwei"
+        },
+        "translations": {
+          "fa": "دو"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_05"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_sounds_06",
+      "data": {
+        "slug": "de_pre_a1_first_sounds_06",
+        "lesson_key": "prea1-de-first-sounds-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "Wasser"
+        },
+        "translations": {
+          "fa": "آب"
+        },
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_sounds_06",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "lemma": "Wasser",
+        "display_lemma": "Wasser",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_06"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_sounds_06",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "lexeme_ref": "lx_first_sounds_06",
+        "surface_form": "Wasser",
+        "display_form": "Wasser",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_sounds_06",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "text": {
+          "de": "Wasser"
+        },
+        "translations": {
+          "fa": "آب"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_pre_a1_first_sounds_06"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_first_sounds_core",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "slug": "prea1-de-first-sounds-grammar",
+        "title": "Erste Laute",
+        "rule_summary": "Common beginner sound patterns include sch, ei, ie, eu, z and w.",
+        "explanation": {
+          "fa": "در آلمانی «ei» معمولاً شبیه «آی» و «ie» معمولاً صدای کشیدهٔ «ای» دارد؛ w هم معمولاً شبیه v انگلیسی شنیده می‌شود."
+        },
+        "examples": [
+          {
+            "de": "Schule",
+            "fa": "مدرسه"
+          },
+          {
+            "de": "Wasser",
+            "fa": "آب"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_first_sounds_01",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "title": "Laute vergleichen",
+        "setting": "laute_vergleichen",
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "characters": [
+          "Nina",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Schule beginnt mit sch.",
+            "translation_fa": "Schule با sch شروع می‌شود."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Sch.",
+            "translation_fa": "sch."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Zwei beginnt mit z.",
+            "translation_fa": "Zwei با z شروع می‌شود."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Zwei.",
+            "translation_fa": "دو."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_first_sounds_02",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "title": "Ei oder ie?",
+        "setting": "ei_oder_ie",
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "characters": [
+          "Clara",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Mein: ei.",
+            "translation_fa": "Mein: ei."
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Liebe: ie.",
+            "translation_fa": "Liebe: ie."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Heute: eu.",
+            "translation_fa": "Heute: eu."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Gut gehört!",
+            "translation_fa": "خوب شنیدی!"
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_meaning",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Schule"
+        },
+        "answer": {
+          "value": "مدرسه"
+        },
+        "options": [
+          "مدرسه",
+          "مال من / ـم",
+          "عشق / علاقه",
+          "امروز"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Schule» یعنی «مدرسه».",
+          "model_answer": "مدرسه",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_listen",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "zwei"
+        },
+        "answer": {
+          "value": "zwei"
+        },
+        "options": [
+          "zwei",
+          "Schule",
+          "mein",
+          "Liebe"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «zwei» است.",
+          "model_answer": "zwei",
+          "transcript_de": "zwei",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_speak",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Schule"
+        },
+        "answer": {
+          "expected_text": "Schule"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Schule",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_translate",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "zwei",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "دو"
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «دو».",
+          "model_answer": "دو",
+          "source_de": "zwei",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_01_build",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "beginnt",
+            "mit",
+            "sch.",
+            "Schule"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Schule",
+            "beginnt",
+            "mit",
+            "sch."
+          ],
+          "text": "Schule beginnt mit sch."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Schule beginnt mit sch.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_meaning",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "mein"
+        },
+        "answer": {
+          "value": "مال من / ـم"
+        },
+        "options": [
+          "مال من / ـم",
+          "مدرسه",
+          "عشق / علاقه",
+          "امروز"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«mein» یعنی «مال من / ـم».",
+          "model_answer": "مال من / ـم",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_listen",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Wasser"
+        },
+        "answer": {
+          "value": "Wasser"
+        },
+        "options": [
+          "Wasser",
+          "Schule",
+          "mein",
+          "Liebe"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Wasser» است.",
+          "model_answer": "Wasser",
+          "transcript_de": "Wasser",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_speak",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "mein"
+        },
+        "answer": {
+          "expected_text": "mein"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "mein",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_translate",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Wasser",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "آب"
+          ]
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «آب».",
+          "model_answer": "آب",
+          "source_de": "Wasser",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_sounds_02_build",
+      "data": {
+        "lesson_key": "prea1-de-first-sounds-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "ei.",
+            "Mein:"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Mein:",
+            "ei."
+          ],
+          "text": "Mein: ei."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "sound-letter-mapping",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Mein: ei.",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}

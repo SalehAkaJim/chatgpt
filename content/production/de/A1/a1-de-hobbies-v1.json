@@ -1,0 +1,896 @@
+{
+  "batch_id": "de-de-a1-hobbies-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A1",
+  "curriculum_unit": "a1-de-hobbies",
+  "generator": "gpt-5.6-sol:german-beginner-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_hobbies_01",
+      "data": {
+        "slug": "de_a1_hobbies_01",
+        "lesson_key": "a1-de-hobbies-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "Fußball spielen"
+        },
+        "translations": {
+          "fa": "فوتبال بازی کردن"
+        },
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hobbies_01",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "lemma": "spielen",
+        "display_lemma": "spielen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a1_hobbies_01"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hobbies_01",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "lexeme_ref": "lx_hobbies_01",
+        "surface_form": "spielen",
+        "display_form": "spielen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hobbies_01",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "text": {
+          "de": "Fußball spielen"
+        },
+        "translations": {
+          "fa": "فوتبال بازی کردن"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_hobbies_01"
+        ],
+        "cefr": "A1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hobbies_02",
+      "data": {
+        "slug": "de_a1_hobbies_02",
+        "lesson_key": "a1-de-hobbies-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "Sport machen"
+        },
+        "translations": {
+          "fa": "ورزش کردن"
+        },
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hobbies_02",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "lemma": "machen",
+        "display_lemma": "machen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a1_hobbies_02"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hobbies_02",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "lexeme_ref": "lx_hobbies_02",
+        "surface_form": "machen",
+        "display_form": "machen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hobbies_02",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "text": {
+          "de": "Sport machen"
+        },
+        "translations": {
+          "fa": "ورزش کردن"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_hobbies_02"
+        ],
+        "cefr": "A1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hobbies_03",
+      "data": {
+        "slug": "de_a1_hobbies_03",
+        "lesson_key": "a1-de-hobbies-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "spazieren gehen"
+        },
+        "translations": {
+          "fa": "پیاده‌روی کردن"
+        },
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hobbies_03",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "lemma": "gehen",
+        "display_lemma": "gehen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a1_hobbies_03"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hobbies_03",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "lexeme_ref": "lx_hobbies_03",
+        "surface_form": "gehen",
+        "display_form": "gehen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hobbies_03",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "text": {
+          "de": "spazieren gehen"
+        },
+        "translations": {
+          "fa": "پیاده‌روی کردن"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_hobbies_03"
+        ],
+        "cefr": "A1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hobbies_04",
+      "data": {
+        "slug": "de_a1_hobbies_04",
+        "lesson_key": "a1-de-hobbies-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "lesen"
+        },
+        "translations": {
+          "fa": "کتاب خواندن"
+        },
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hobbies_04",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "lemma": "lesen",
+        "display_lemma": "lesen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a1_hobbies_04"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hobbies_04",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "lexeme_ref": "lx_hobbies_04",
+        "surface_form": "lesen",
+        "display_form": "lesen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hobbies_04",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "text": {
+          "de": "lesen"
+        },
+        "translations": {
+          "fa": "کتاب خواندن"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_hobbies_04"
+        ],
+        "cefr": "A1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hobbies_05",
+      "data": {
+        "slug": "de_a1_hobbies_05",
+        "lesson_key": "a1-de-hobbies-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Ich koche gern."
+        },
+        "translations": {
+          "fa": "من آشپزی را دوست دارم."
+        },
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hobbies_05",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "lemma": "Ich koche gern.",
+        "display_lemma": "Ich koche gern.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_hobbies_05"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hobbies_05",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "lexeme_ref": "lx_hobbies_05",
+        "surface_form": "Ich koche gern.",
+        "display_form": "Ich koche gern.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hobbies_05",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "text": {
+          "de": "Ich koche gern."
+        },
+        "translations": {
+          "fa": "من آشپزی را دوست دارم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_hobbies_05"
+        ],
+        "cefr": "A1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hobbies_06",
+      "data": {
+        "slug": "de_a1_hobbies_06",
+        "lesson_key": "a1-de-hobbies-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "Am Wochenende spiele ich Fußball."
+        },
+        "translations": {
+          "fa": "آخر هفته فوتبال بازی می‌کنم."
+        },
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ]
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hobbies_06",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "lemma": "Am Wochenende spiele ich Fußball.",
+        "display_lemma": "Am Wochenende spiele ich Fußball.",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a1_hobbies_06"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hobbies_06",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "lexeme_ref": "lx_hobbies_06",
+        "surface_form": "Am Wochenende spiele ich Fußball.",
+        "display_form": "Am Wochenende spiele ich Fußball.",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hobbies_06",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "text": {
+          "de": "Am Wochenende spiele ich Fußball."
+        },
+        "translations": {
+          "fa": "آخر هفته فوتبال بازی می‌کنم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a1_hobbies_06"
+        ],
+        "cefr": "A1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_hobbies_core",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "slug": "a1-de-hobbies-grammar",
+        "title": "Freizeit",
+        "rule_summary": "Common hobby patterns use spielen, machen, gehen and gern in the present tense.",
+        "explanation": {
+          "fa": "برای سرگرمی‌ها به فعل طبیعی همان فعالیت دقت کن: «Fußball spielen»، «Sport machen»، «spazieren gehen»."
+        },
+        "examples": [
+          {
+            "de": "Fußball spielen",
+            "fa": "فوتبال بازی کردن"
+          },
+          {
+            "de": "Am Wochenende spiele ich Fußball.",
+            "fa": "آخر هفته فوتبال بازی می‌کنم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_hobbies_01",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "title": "Nach der Arbeit",
+        "setting": "nach_der_arbeit",
+        "cefr": "A1",
+        "topic": "hobbies",
+        "characters": [
+          "Clara",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Was machst du in deiner Freizeit?",
+            "translation_fa": "در وقت آزادت چه کار می‌کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Ich lese gern.",
+            "translation_fa": "کتاب خواندن دوست دارم."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Und Sport?",
+            "translation_fa": "و ورزش؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Ja, ich gehe oft spazieren.",
+            "translation_fa": "بله، زیاد پیاده‌روی می‌کنم."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_hobbies_02",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "title": "Wochenende",
+        "setting": "wochenende",
+        "cefr": "A1",
+        "topic": "hobbies",
+        "characters": [
+          "Anna",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Was machst du am Wochenende?",
+            "translation_fa": "آخر هفته چه کار می‌کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Ich spiele Fußball.",
+            "translation_fa": "فوتبال بازی می‌کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Mit Freunden?",
+            "translation_fa": "با دوستان؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Ja, meistens.",
+            "translation_fa": "بله، بیشتر وقت‌ها."
+          }
+        ],
+        "status": "validated",
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_01_meaning",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Fußball spielen"
+        },
+        "answer": {
+          "value": "فوتبال بازی کردن"
+        },
+        "options": [
+          "فوتبال بازی کردن",
+          "ورزش کردن",
+          "پیاده‌روی کردن",
+          "کتاب خواندن"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Fußball spielen» یعنی «فوتبال بازی کردن».",
+          "model_answer": "فوتبال بازی کردن",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_01_listen",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Ich koche gern."
+        },
+        "answer": {
+          "value": "Ich koche gern."
+        },
+        "options": [
+          "Ich koche gern.",
+          "Fußball spielen",
+          "Sport machen",
+          "spazieren gehen"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Ich koche gern.» است.",
+          "model_answer": "Ich koche gern.",
+          "transcript_de": "Ich koche gern.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_01_speak",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Fußball spielen"
+        },
+        "answer": {
+          "expected_text": "Fußball spielen"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Fußball spielen",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_01_translate",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Ich koche gern.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "من آشپزی را دوست دارم."
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «من آشپزی را دوست دارم.».",
+          "model_answer": "من آشپزی را دوست دارم.",
+          "source_de": "Ich koche gern.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_01_build",
+      "data": {
+        "lesson_key": "a1-de-hobbies-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "machst",
+            "du",
+            "in",
+            "deiner",
+            "Freizeit",
+            "Was"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Was",
+            "machst",
+            "du",
+            "in",
+            "deiner",
+            "Freizeit"
+          ],
+          "text": "Was machst du in deiner Freizeit?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Was machst du in deiner Freizeit?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_02_meaning",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت را انتخاب کن.",
+          "value": "Sport machen"
+        },
+        "answer": {
+          "value": "ورزش کردن"
+        },
+        "options": [
+          "ورزش کردن",
+          "فوتبال بازی کردن",
+          "پیاده‌روی کردن",
+          "کتاب خواندن"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "«Sport machen» یعنی «ورزش کردن».",
+          "model_answer": "ورزش کردن",
+          "retry_tip_fa": "به معنی کاربردی عبارت در همین موقعیت دقت کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_02_listen",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Am Wochenende spiele ich Fußball."
+        },
+        "answer": {
+          "value": "Am Wochenende spiele ich Fußball."
+        },
+        "options": [
+          "Am Wochenende spiele ich Fußball.",
+          "Fußball spielen",
+          "Sport machen",
+          "spazieren gehen"
+        ],
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "عبارت شنیده‌شده «Am Wochenende spiele ich Fußball.» است.",
+          "model_answer": "Am Wochenende spiele ich Fußball.",
+          "transcript_de": "Am Wochenende spiele ich Fußball.",
+          "retry_tip_fa": "یک بار دیگر گوش کن و روی کلمات کلیدی تمرکز کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_02_speak",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند تکرار کن.",
+          "value": "Sport machen"
+        },
+        "answer": {
+          "expected_text": "Sport machen"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "روی ریتم طبیعی و واضح‌بودن کلمات تمرکز کن.",
+          "model_answer": "Sport machen",
+          "retry_tip_fa": "آرام‌تر بگو و سپس با سرعت طبیعی تکرار کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_02_translate",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "de": "Am Wochenende spiele ich Fußball.",
+          "direction": "de_to_fa",
+          "instruction_fa": "ترجمهٔ طبیعی فارسی را بنویس."
+        },
+        "answer": {
+          "accepted": [
+            "آخر هفته فوتبال بازی می‌کنم."
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "ترجمهٔ پیشنهادی: «آخر هفته فوتبال بازی می‌کنم.».",
+          "model_answer": "آخر هفته فوتبال بازی می‌کنم.",
+          "source_de": "Am Wochenende spiele ich Fußball.",
+          "retry_tip_fa": "معنی طبیعی جمله را بنویس، نه ترجمهٔ کلمه‌به‌کلمه."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hobbies_02_build",
+      "data": {
+        "lesson_key": "a1-de-hobbies-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را به ترتیب درست بچین.",
+          "tokens": [
+            "machst",
+            "du",
+            "am",
+            "Wochenende",
+            "Was"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Was",
+            "machst",
+            "du",
+            "am",
+            "Wochenende"
+          ],
+          "text": "Was machst du am Wochenende?"
+        },
+        "difficulty": 2,
+        "cefr": "A1",
+        "topic": "hobbies",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "در جملهٔ آلمانی به جای فعل و ترتیب اجزای جمله دقت کن.",
+          "model_answer": "Was machst du am Wochenende?",
+          "retry_tip_fa": "اول فعل صرف‌شده را پیدا کن."
+        }
+      }
+    }
+  ]
+}
