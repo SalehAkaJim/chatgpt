@@ -1,0 +1,1154 @@
+{
+  "batch_id": "de-de-c1-administrative-appeals-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "C1",
+  "curriculum_unit": "c1-de-administrative-appeals",
+  "generator": "gpt-5.6-sol:german-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_administrative_appeals_01",
+      "data": {
+        "slug": "de_c1_administrative_appeals_bescheid",
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Bescheid"
+        },
+        "translations": {
+          "fa": "تصمیم / ابلاغ رسمی اداری"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_administrative_appeals_01",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "lemma": "Bescheid",
+        "display_lemma": "Bescheid",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_administrative_appeals_bescheid"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_administrative_appeals_01",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "lexeme_ref": "lx_administrative_appeals_01",
+        "surface_form": "Bescheid",
+        "display_form": "Bescheid",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_administrative_appeals_02",
+      "data": {
+        "slug": "de_c1_administrative_appeals_begruendung",
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Begründung"
+        },
+        "translations": {
+          "fa": "استدلال / دلیل رسمی"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_administrative_appeals_02",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "lemma": "Begründung",
+        "display_lemma": "Begründung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_administrative_appeals_begruendung"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_administrative_appeals_02",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "lexeme_ref": "lx_administrative_appeals_02",
+        "surface_form": "Begründung",
+        "display_form": "Begründung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_administrative_appeals_03",
+      "data": {
+        "slug": "de_c1_administrative_appeals_frist",
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Frist"
+        },
+        "translations": {
+          "fa": "مهلت"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_administrative_appeals_03",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "lemma": "Frist",
+        "display_lemma": "Frist",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_administrative_appeals_frist"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_administrative_appeals_03",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "lexeme_ref": "lx_administrative_appeals_03",
+        "surface_form": "Frist",
+        "display_form": "Frist",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_administrative_appeals_04",
+      "data": {
+        "slug": "de_c1_administrative_appeals_widerspruch",
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Widerspruch"
+        },
+        "translations": {
+          "fa": "اعتراض رسمی"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_administrative_appeals_04",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "lemma": "Widerspruch",
+        "display_lemma": "Widerspruch",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_administrative_appeals_widerspruch"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_administrative_appeals_04",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "lexeme_ref": "lx_administrative_appeals_04",
+        "surface_form": "Widerspruch",
+        "display_form": "Widerspruch",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_administrative_appeals_05",
+      "data": {
+        "slug": "de_c1_administrative_appeals_nachreichen",
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "nachreichen"
+        },
+        "translations": {
+          "fa": "بعداً تکمیل و ارسال کردن"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_administrative_appeals_05",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "lemma": "nachreichen",
+        "display_lemma": "nachreichen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_c1_administrative_appeals_nachreichen"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_administrative_appeals_05",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "lexeme_ref": "lx_administrative_appeals_05",
+        "surface_form": "nachreichen",
+        "display_form": "nachreichen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_administrative_appeals_06",
+      "data": {
+        "slug": "de_c1_administrative_appeals_ermessensspielraum",
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Ermessensspielraum"
+        },
+        "translations": {
+          "fa": "حیطه اختیار تصمیم‌گیر"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_administrative_appeals_06",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "lemma": "Ermessensspielraum",
+        "display_lemma": "Ermessensspielraum",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_c1_administrative_appeals_ermessensspielraum"
+        ],
+        "cefr": "C1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_administrative_appeals_06",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "lexeme_ref": "lx_administrative_appeals_06",
+        "surface_form": "Ermessensspielraum",
+        "display_form": "Ermessensspielraum",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_administrative_appeals_01",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "text": {
+          "de": "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar."
+        },
+        "translations": {
+          "fa": "ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند."
+        },
+        "intent": "identify_gap",
+        "concept_refs": [
+          "de_c1_administrative_appeals_bescheid",
+          "de_c1_administrative_appeals_begruendung"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_administrative_appeals_02",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "text": {
+          "de": "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen."
+        },
+        "translations": {
+          "fa": "قبل از اعتراض رسمی باید مهلت و راهنمای حقوق اعتراض را بررسی کنیم."
+        },
+        "intent": "check_procedure",
+        "concept_refs": [
+          "de_c1_administrative_appeals_widerspruch",
+          "de_c1_administrative_appeals_frist"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_administrative_appeals_03",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "text": {
+          "de": "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen."
+        },
+        "translations": {
+          "fa": "می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم."
+        },
+        "intent": "submit_evidence",
+        "concept_refs": [
+          "de_c1_administrative_appeals_nachreichen",
+          "de_c1_administrative_appeals_frist"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_administrative_appeals_04",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "text": {
+          "de": "Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll."
+        },
+        "translations": {
+          "fa": "اعتراض باید دقیق بگوید کدام بخش استدلال باید بازبینی شود."
+        },
+        "intent": "focus_appeal",
+        "concept_refs": [
+          "de_c1_administrative_appeals_widerspruch",
+          "de_c1_administrative_appeals_begruendung"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_administrative_appeals_05",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "text": {
+          "de": "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig."
+        },
+        "translations": {
+          "fa": "جایی که اختیار تصمیم وجود دارد، توضیح نحوه سنجش اهمیت ویژه دارد."
+        },
+        "intent": "assess_discretion",
+        "concept_refs": [
+          "de_c1_administrative_appeals_ermessensspielraum",
+          "de_c1_administrative_appeals_begruendung"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_administrative_appeals_06",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "text": {
+          "de": "Eine sachliche Anfechtung trennt Verfahrensfehler, Tatsachenfragen und Bewertung voneinander."
+        },
+        "translations": {
+          "fa": "یک اعتراض حرفه‌ای خطای فرایندی، واقعیت و ارزیابی را از هم جدا می‌کند."
+        },
+        "intent": "structure_appeal",
+        "concept_refs": [],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_administrative_appeals_01",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "slug": "c1-de-administrative-appeals-g1",
+        "title": "unter Bezugnahme auf ...",
+        "rule_summary": "Use formal reference language to anchor a request or appeal to a specific document.",
+        "explanation": {
+          "fa": "برای ارجاع رسمی به سند مشخص در اعتراض یا درخواست."
+        },
+        "examples": [
+          {
+            "de": "Unter Bezugnahme auf Ihren Bescheid vom 4. September bitte ich um Überprüfung der Begründung.",
+            "fa": "با ارجاع به ابلاغ چهار سپتامبر، درخواست بازبینی استدلال را دارم."
+          },
+          {
+            "de": "Unter Bezugnahme auf die genannte Frist reiche ich den Nachweis fristgerecht nach.",
+            "fa": "با ارجاع به مهلت ذکرشده، مدرک را در زمان مقرر تکمیل می‌کنم."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_administrative_appeals_02",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "slug": "c1-de-administrative-appeals-g2",
+        "title": "soweit aus dem Bescheid hervorgeht ...",
+        "rule_summary": "Use cautious document-based inference when the administrative text is incomplete.",
+        "explanation": {
+          "fa": "برای استنتاج محتاطانه از سند اداری ناقص."
+        },
+        "examples": [
+          {
+            "de": "Soweit aus dem Bescheid hervorgeht, wurde der zweite Nachweis nicht berücksichtigt.",
+            "fa": "تا جایی که از ابلاغ برمی‌آید، مدرک دوم لحاظ نشده است."
+          },
+          {
+            "de": "Soweit aus dem Bescheid hervorgeht, beruht die Entscheidung auf einer einzigen Voraussetzung.",
+            "fa": "تا جایی که از ابلاغ برمی‌آید، تصمیم بر یک شرط استوار است."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_administrative_appeals_03",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "slug": "c1-de-administrative-appeals-g3",
+        "title": "ich bitte um Prüfung, ob ...",
+        "rule_summary": "Use a formal embedded question to request review without asserting more than the record supports.",
+        "explanation": {
+          "fa": "برای درخواست رسمی بازبینی بدون ادعای بیش از اسناد موجود."
+        },
+        "examples": [
+          {
+            "de": "Ich bitte um Prüfung, ob die nachgereichten Unterlagen berücksichtigt werden können.",
+            "fa": "درخواست بررسی دارم که آیا مدارک تکمیلی قابل لحاظ هستند."
+          },
+          {
+            "de": "Ich bitte um Prüfung, ob der Ermessensspielraum vollständig ausgeübt wurde.",
+            "fa": "درخواست بررسی دارم که آیا اختیار تصمیم کامل اعمال شده است."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_administrative_appeals_01",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "title": "Bescheid systematisch lesen",
+        "setting": "Verwaltung – Prüfung",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Sofia",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Der Antrag wurde abgelehnt, aber ich verstehe nicht, welcher Nachweis genau fehlt.",
+            "translation_fa": "درخواست رد شده، اما نمی‌فهمم دقیقاً کدام مدرک کم است."
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Schau zuerst auf Begründung, Frist und Rechtsbehelfsbelehrung.",
+            "translation_fa": "اول دلیل، مهلت و راهنمای اعتراض را ببین."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Die Begründung verweist nur allgemein auf unvollständige Unterlagen.",
+            "translation_fa": "دلیل فقط کلی به ناقص بودن مدارک اشاره می‌کند."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Dann kannst du konkret um Benennung des fehlenden Nachweises bitten.",
+            "translation_fa": "پس می‌توانی مشخصاً درخواست کنی مدرک کمبود را نام ببرند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_administrative_appeals_02",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "title": "Widerspruch eingrenzen",
+        "setting": "Verwaltung – Argument",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Anna",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Ich möchte nicht den ganzen Bescheid angreifen, nur die Bewertung dieses Nachweises.",
+            "translation_fa": "نمی‌خواهم کل ابلاغ را زیر سؤال ببرم، فقط ارزیابی این مدرک را."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Das macht den Widerspruch klarer und leichter prüfbar.",
+            "translation_fa": "این اعتراض را روشن‌تر و قابل بررسی‌تر می‌کند."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Ich zitiere die betreffende Passage und lege die ergänzende Bescheinigung bei.",
+            "translation_fa": "بخش مربوط را نقل می‌کنم و گواهی تکمیلی را پیوست می‌کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Gut. Dann ist klar, welche Entscheidung du geändert haben möchtest.",
+            "translation_fa": "خوب است. آن‌وقت روشن است کدام تصمیم را می‌خواهی تغییر دهند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_administrative_appeals_03",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "title": "Ermessensentscheidung hinterfragen",
+        "setting": "Verwaltung – Abwägung",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "Nina",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Die Behörde durfte mehrere Faktoren gewichten, nennt aber nur einen davon.",
+            "translation_fa": "اداره اجازه داشته چند عامل را وزن بدهد اما فقط یکی را نام برده است."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Dann wäre die Frage, ob die Abwägung vollständig dokumentiert ist.",
+            "translation_fa": "پس سؤال این است که آیا سنجش کامل مستند شده یا نه."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Ich bitte um Prüfung, welche weiteren Kriterien berücksichtigt wurden.",
+            "translation_fa": "درخواست می‌کنم بررسی شود چه معیارهای دیگری لحاظ شده‌اند."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Das ist präziser als pauschal zu behaupten, die Entscheidung sei willkürlich.",
+            "translation_fa": "این دقیق‌تر از این است که کلی بگویی تصمیم خودسرانه بوده است."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_01_mc",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند.»؟"
+        },
+        "options": [
+          "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar.",
+          "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen.",
+          "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen.",
+          "Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll."
+        ],
+        "answer": {
+          "value": "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar. — ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند.",
+          "model_answer": "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_01_listen",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar."
+        },
+        "options": [
+          "ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند.",
+          "قبل از اعتراض رسمی باید مهلت و راهنمای حقوق اعتراض را بررسی کنیم.",
+          "می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم.",
+          "اعتراض باید دقیق بگوید کدام بخش استدلال باید بازبینی شود."
+        ],
+        "answer": {
+          "value": "ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar. — ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند.",
+          "model_answer": "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar.",
+          "transcript_de": "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_01_speak",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen."
+        },
+        "answer": {
+          "expected_text": "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen. — قبل از اعتراض رسمی باید مهلت و راهنمای حقوق اعتراض را بررسی کنیم.",
+          "model_answer": "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_01_trans",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "قبل از اعتراض رسمی باید مهلت و راهنمای حقوق اعتراض را بررسی کنیم.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen. — قبل از اعتراض رسمی باید مهلت و راهنمای حقوق اعتراض را بررسی کنیم.",
+          "model_answer": "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_01_build",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Bescheid",
+            "nennt",
+            "das",
+            "Ergebnis,",
+            "aber",
+            "die",
+            "Begründung",
+            "bleibt",
+            "an",
+            "einem",
+            "entscheidenden",
+            "Punkt",
+            "unklar.",
+            "Der"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Der",
+            "Bescheid",
+            "nennt",
+            "das",
+            "Ergebnis,",
+            "aber",
+            "die",
+            "Begründung",
+            "bleibt",
+            "an",
+            "einem",
+            "entscheidenden",
+            "Punkt",
+            "unklar."
+          ],
+          "value": "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar. — ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند.",
+          "model_answer": "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_02_mc",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم.»؟"
+        },
+        "options": [
+          "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen.",
+          "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar.",
+          "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen.",
+          "Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll."
+        ],
+        "answer": {
+          "value": "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen. — می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم.",
+          "model_answer": "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_02_listen",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen."
+        },
+        "options": [
+          "می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم.",
+          "ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند.",
+          "قبل از اعتراض رسمی باید مهلت و راهنمای حقوق اعتراض را بررسی کنیم.",
+          "اعتراض باید دقیق بگوید کدام بخش استدلال باید بازبینی شود."
+        ],
+        "answer": {
+          "value": "می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen. — می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم.",
+          "model_answer": "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen.",
+          "transcript_de": "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_02_speak",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll."
+        },
+        "answer": {
+          "expected_text": "Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll. — اعتراض باید دقیق بگوید کدام بخش استدلال باید بازبینی شود.",
+          "model_answer": "Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_02_trans",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "اعتراض باید دقیق بگوید کدام بخش استدلال باید بازبینی شود.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll. — اعتراض باید دقیق بگوید کدام بخش استدلال باید بازبینی شود.",
+          "model_answer": "Unser Widerspruch sollte genau benennen, welcher Teil der Begründung überprüft werden soll."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_02_build",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "fehlenden",
+            "Nachweis",
+            "kann",
+            "ich",
+            "innerhalb",
+            "der",
+            "gesetzten",
+            "Frist",
+            "nachreichen.",
+            "Den"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Den",
+            "fehlenden",
+            "Nachweis",
+            "kann",
+            "ich",
+            "innerhalb",
+            "der",
+            "gesetzten",
+            "Frist",
+            "nachreichen."
+          ],
+          "value": "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen. — می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم.",
+          "model_answer": "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_03_mc",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «جایی که اختیار تصمیم وجود دارد، توضیح نحوه سنجش اهمیت ویژه دارد.»؟"
+        },
+        "options": [
+          "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig.",
+          "Der Bescheid nennt das Ergebnis, aber die Begründung bleibt an einem entscheidenden Punkt unklar.",
+          "Bevor wir Widerspruch einlegen, sollten wir Frist und Rechtsbehelfsbelehrung prüfen.",
+          "Den fehlenden Nachweis kann ich innerhalb der gesetzten Frist nachreichen."
+        ],
+        "answer": {
+          "value": "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig. — جایی که اختیار تصمیم وجود دارد، توضیح نحوه سنجش اهمیت ویژه دارد.",
+          "model_answer": "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_03_listen",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig."
+        },
+        "options": [
+          "جایی که اختیار تصمیم وجود دارد، توضیح نحوه سنجش اهمیت ویژه دارد.",
+          "ابلاغ نتیجه را می‌گوید، اما دلیل در یک نقطه تعیین‌کننده مبهم می‌ماند.",
+          "قبل از اعتراض رسمی باید مهلت و راهنمای حقوق اعتراض را بررسی کنیم.",
+          "می‌توانم مدرک کمبود را در مهلت تعیین‌شده بعداً تکمیل کنم."
+        ],
+        "answer": {
+          "value": "جایی که اختیار تصمیم وجود دارد، توضیح نحوه سنجش اهمیت ویژه دارد."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig. — جایی که اختیار تصمیم وجود دارد، توضیح نحوه سنجش اهمیت ویژه دارد.",
+          "model_answer": "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig.",
+          "transcript_de": "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_03_speak",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند، روان و با لحن طبیعی بگو.",
+          "value": "Eine sachliche Anfechtung trennt Verfahrensfehler, Tatsachenfragen und Bewertung voneinander."
+        },
+        "answer": {
+          "expected_text": "Eine sachliche Anfechtung trennt Verfahrensfehler, Tatsachenfragen und Bewertung voneinander."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine sachliche Anfechtung trennt Verfahrensfehler, Tatsachenfragen und Bewertung voneinander. — یک اعتراض حرفه‌ای خطای فرایندی، واقعیت و ارزیابی را از هم جدا می‌کند.",
+          "model_answer": "Eine sachliche Anfechtung trennt Verfahrensfehler, Tatsachenfragen und Bewertung voneinander."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_03_trans",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "یک اعتراض حرفه‌ای خطای فرایندی، واقعیت و ارزیابی را از هم جدا می‌کند.",
+          "instruction_fa": "این جمله را با لحن طبیعی به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Eine sachliche Anfechtung trennt Verfahrensfehler, Tatsachenfragen und Bewertung voneinander."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eine sachliche Anfechtung trennt Verfahrensfehler, Tatsachenfragen und Bewertung voneinander. — یک اعتراض حرفه‌ای خطای فرایندی، واقعیت و ارزیابی را از هم جدا می‌کند.",
+          "model_answer": "Eine sachliche Anfechtung trennt Verfahrensfehler, Tatsachenfragen und Bewertung voneinander."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_administrative_appeals_03_build",
+      "data": {
+        "lesson_key": "c1-de-administrative-appeals-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "ein",
+            "Ermessensspielraum",
+            "besteht,",
+            "ist",
+            "die",
+            "Begründung",
+            "der",
+            "Abwägung",
+            "besonders",
+            "wichtig.",
+            "Wo"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Wo",
+            "ein",
+            "Ermessensspielraum",
+            "besteht,",
+            "ist",
+            "die",
+            "Begründung",
+            "der",
+            "Abwägung",
+            "besonders",
+            "wichtig."
+          ],
+          "value": "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "feedback": {
+          "retry_tip_fa": "به معنی، لحن و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig. — جایی که اختیار تصمیم وجود دارد، توضیح نحوه سنجش اهمیت ویژه دارد.",
+          "model_answer": "Wo ein Ermessensspielraum besteht, ist die Begründung der Abwägung besonders wichtig."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
