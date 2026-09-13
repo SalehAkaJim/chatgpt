@@ -9,9 +9,9 @@ on:
   workflow_dispatch:
     inputs:
       batch:
-        description: 'B1 batch number (10 units per batch)'
+        description: 'B1 batch number (1-10 units; final batch may be smaller)'
         required: true
-        default: '4'
+        default: '5'
 
 permissions:
   contents: write
@@ -29,7 +29,7 @@ jobs:
       CONTENT_TTS_CONCURRENCY: '2'
       ELEVENLABS_MODEL_ID: eleven_multilingual_v2
       ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
-      BATCH: ${{ github.event.inputs.batch || '4' }}
+      BATCH: ${{ github.event.inputs.batch || '5' }}
 
     steps:
       - name: Checkout main branch
@@ -53,7 +53,7 @@ jobs:
             exit 2
           fi
 
-      - name: Select exactly ten B1 units from this batch specs
+      - name: Select up to ten B1 units from this batch specs
         run: |
           set -euo pipefail
           rm -rf build/b1-audio-batch
@@ -63,8 +63,8 @@ jobs:
           batch=int(os.environ['BATCH'])
           spec_dir=pathlib.Path(f'content/specs/de/B1/batch-{batch:02d}')
           specs=sorted(spec_dir.glob('*.json'))
-          if len(specs) != 10:
-              raise SystemExit(f'Batch {batch} needs exactly 10 specs, found {len(specs)}')
+          if not 1 <= len(specs) <= 10:
+              raise SystemExit(f'Batch {batch} needs 1-10 specs, found {len(specs)}')
           out=pathlib.Path('build/b1-audio-batch')
           selected=[]
           for spec_path in specs:
@@ -74,13 +74,13 @@ jobs:
                   raise SystemExit(f'Missing production unit for batch {batch}: {prod}')
               shutil.copy2(prod, out/prod.name)
               selected.append(prod.name)
-          print({'batch':batch,'selected':selected})
+          print({'batch':batch,'batch_units':len(specs),'selected':selected})
           PY
 
       - name: Final B1 batch validation before paid generation
         run: |
           set -euo pipefail
-          python scripts/audit_german_b1_content.py --batch "$BATCH"
+          python scripts/audit_german_b1_content_flexible.py --batch "$BATCH"
           for f in build/b1-audio-batch/*.json; do
             python scripts/validate_content.py "$f"
           done
