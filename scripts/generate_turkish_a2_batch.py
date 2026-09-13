@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate Istanbul Turkish A2 batch 1 from the authored Turkish-specific spec."""
 from __future__ import annotations
-import argparse, json
+import argparse, copy, json
 from pathlib import Path
 import generate_turkish_a1_batch as base
 
@@ -29,6 +29,18 @@ def rename_level_ids(value):
     return value
 
 
+def rotate_health_dialogue(spec):
+    """Avoid repeating the Elif/Mert pair across the appointments→health lesson boundary."""
+    spec = copy.deepcopy(spec)
+    if spec.get("slug") != "health-and-advice":
+        return spec
+    turns = spec["dialogues"][0][2]
+    mapping = {"Mert": "Deniz", "Elif": "Zeynep"}
+    for turn in turns:
+        turn[0] = mapping.get(turn[0], turn[0])
+    return spec
+
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--spec",type=Path,default=ROOT/"content/specs/tr/A2/batch-01.json")
@@ -43,7 +55,8 @@ def main():
     out=ROOT/"content/production/tr/A2"
     out.mkdir(parents=True,exist_ok=True)
     written=[]
-    for spec in units:
+    for raw_spec in units:
+        spec=rotate_health_dialogue(raw_spec)
         batch=rename_level_ids(base.build_unit(spec))
         batch["batch_id"]=f"tr-tr-a2-{spec['slug']}-v1"
         batch["cefr"]=LEVEL
