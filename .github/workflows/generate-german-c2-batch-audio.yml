@@ -97,6 +97,15 @@ jobs:
           python scripts/build_audio_manifest.py build/c2-audio-batch \
             --level C2 --locale de-DE --strict-characters \
             --output "audio/manifests/de/C2-batch-${BATCH}.json"
+      - name: Resolve and lock any new C2 character voices
+        run: |
+          set -euo pipefail
+          python scripts/resolve_audio_voices.py "audio/manifests/de/C2-batch-${BATCH}.json" \
+            --lock-file audio/voices/de-DE.lock.json --write-lock
+          python -m scripts.audit_voice_lock \
+            --lock audio/voices/de-DE.lock.json \
+            --registry audio/voices/de-DE.json \
+            --strict
       - name: Confirm every C2 batch voice key is locked
         run: |
           python - <<'PY'
