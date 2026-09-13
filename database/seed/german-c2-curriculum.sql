@@ -18,3 +18,24 @@ JOIN courses c ON c.slug='fa-de-de'
 JOIN cefr_levels l ON l.code='C2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug;
+
+-- German C2 curriculum, batch 2 (units 11-20).
+INSERT IGNORE INTO curriculum_units(course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,l.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,u.expected_lessons,'approved',
+JSON_OBJECT('language_specific',TRUE,'target_variant','de-DE','grammar_focus',u.grammar_focus,'batch',2)
+FROM (
+  SELECT 110 AS sort_order,'communication' AS skill_slug,'simple-messages' AS topic_slug,'c2-de-evidentiality-epistemic-calibration' AS slug,'Evidenz gewichten und epistemische Sicherheit kalibrieren' AS title,'Quelle, Evidenzgrad und Sicherheit einer Aussage getrennt bewerten und Schlussfolgerungen exakt an die Stärke der Belege anpassen.' AS objective,3 AS expected_lessons,'dürfte + Infinitiv; demnach; soweit sich ... beurteilen lässt' AS grammar_focus
+  UNION ALL SELECT 120,'communication','simple-messages','c2-de-modal-commitment-precision','Modalität und Verpflichtungsgrad präzise steuern','Zwischen Möglichkeit, Wahrscheinlichkeit, Notwendigkeit, Empfehlung und Verpflichtung differenzieren und den Grad des Commitments sprachlich kontrollieren.',3,'nicht zwingend ... wohl aber; es ist nicht auszuschließen, dass; unter dem Vorbehalt, dass'
+  UNION ALL SELECT 130,'communication','simple-messages','c2-de-semantic-scope-ambiguity','Semantischen Geltungsbereich und Mehrdeutigkeit auflösen','Geltungsbereiche von Negation, Quantoren und Referenzen präzise bestimmen, konkurrierende Lesarten vergleichen und unbeabsichtigte Ambiguität auflösen.',3,'nicht alle / alle nicht; je nachdem, worauf; insofern ... als'
+  UNION ALL SELECT 140,'communication','simple-messages','c2-de-cohesion-reference-dense-texts','Kohäsion und Referenzketten in dichten Texten verfolgen','Referenzketten, Rückverweise, Anschlussstellen und Gedankensprünge in komplexen Texten verfolgen und sprachliche Kohäsion von argumentativer Kohärenz unterscheiden.',3,'wobei; dessen/deren; dadurch, dass'
+  UNION ALL SELECT 150,'communication','simple-messages','c2-de-lossless-compression-summarization','Komplexe Inhalte verdichten, ohne Nuancen zu verlieren','Komplexe Texte so verdichten, dass Kernthese, Einschränkungen, Gegenpositionen und Unsicherheitsgrade erhalten bleiben.',3,'unter Beibehaltung von; ohne ... zu; insofern ... als'
+  UNION ALL SELECT 160,'social','polite-language','c2-de-audience-reformulation-technical-public','Fachliche Inhalte adressatengerecht reformulieren','Fachinhalte für nichtfachliche Zielgruppen verständlich reformulieren, ohne Präzision, Unsicherheiten oder zentrale Bedingungen zu verlieren.',3,'statt ... zu; so ..., dass; ohne dabei ... zu'
+  UNION ALL SELECT 170,'social','polite-language','c2-de-metacommunication-misunderstanding-repair','Missverständnisse metakommunikativ reparieren','Missverständnisse diagnostizieren, Bezugspunkte explizit machen, Formulierungen präzisieren und Gespräche ohne unnötige Eskalation reparieren.',3,'Was ich meinte, war; nicht ... sondern vielmehr; falls das anders angekommen ist'
+  UNION ALL SELECT 180,'communication','simple-messages','c2-de-terminology-negotiation-concept-boundaries','Begriffe aushandeln und Konzeptgrenzen trennscharf setzen','Arbeitsdefinitionen explizit aushandeln, Begriffsgrenzen prüfen und stille Begriffsverschiebungen in Fachargumentationen erkennen.',3,'Unter X verstehe ich; sofern wir X als Y verstehen; einerseits ... andererseits'
+  UNION ALL SELECT 190,'social','polite-language','c2-de-live-debate-interruption-reframing','In Live-Debatten unter Zeitdruck präzise reagieren','Unterbrechungen und Einwürfe unter Zeitdruck aufnehmen, fair reframen und knapp reagieren, ohne die argumentative Linie oder wichtige Bedingungen zu verlieren.',3,'bevor wir ... möchte ich; wenn ich daran anknüpfen darf; selbst wenn ... bleibt'
+  UNION ALL SELECT 200,'communication','simple-messages','c2-de-expert-public-precision-capstone','C2-Capstone: Fachliche Präzision öffentlich vermitteln','Komplexe Evidenz, Unsicherheit, Zielgruppenbezug und Zeitdruck zugleich steuern und daraus klare, differenzierte öffentliche Antworten entwickeln.',3,'unter der Voraussetzung, dass; einerseits ... andererseits; weder ... noch ... sondern vielmehr'
+) u
+JOIN courses c ON c.slug='fa-de-de'
+JOIN cefr_levels l ON l.code='C2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug;
