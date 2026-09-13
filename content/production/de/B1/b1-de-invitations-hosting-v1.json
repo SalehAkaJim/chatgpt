@@ -1,0 +1,1147 @@
+{
+  "batch_id": "de-de-b1-invitations-hosting-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "B1",
+  "curriculum_unit": "b1-de-invitations-hosting",
+  "generator": "gpt-5.6-sol:german-b1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_invitations_hosting_01",
+      "data": {
+        "slug": "de_b1_invitations_hosting_einladung",
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Einladung"
+        },
+        "translations": {
+          "fa": "دعوت"
+        },
+        "cefr": "B1",
+        "topic": "polite-language",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_invitations_hosting_01",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "lemma": "Einladung",
+        "display_lemma": "Einladung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_invitations_hosting_einladung"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_invitations_hosting_01",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "lexeme_ref": "lx_invitations_hosting_01",
+        "surface_form": "Einladung",
+        "display_form": "Einladung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_invitations_hosting_02",
+      "data": {
+        "slug": "de_b1_invitations_hosting_einladen",
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "einladen"
+        },
+        "translations": {
+          "fa": "دعوت کردن"
+        },
+        "cefr": "B1",
+        "topic": "polite-language",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_invitations_hosting_02",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "lemma": "einladen",
+        "display_lemma": "einladen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_invitations_hosting_einladen"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_invitations_hosting_02",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "lexeme_ref": "lx_invitations_hosting_02",
+        "surface_form": "einladen",
+        "display_form": "einladen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_invitations_hosting_03",
+      "data": {
+        "slug": "de_b1_invitations_hosting_gastgeber",
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Gastgeber"
+        },
+        "translations": {
+          "fa": "میزبان"
+        },
+        "cefr": "B1",
+        "topic": "polite-language",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_invitations_hosting_03",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "lemma": "Gastgeber",
+        "display_lemma": "Gastgeber",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_invitations_hosting_gastgeber"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_invitations_hosting_03",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "lexeme_ref": "lx_invitations_hosting_03",
+        "surface_form": "Gastgeber",
+        "display_form": "Gastgeber",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_invitations_hosting_04",
+      "data": {
+        "slug": "de_b1_invitations_hosting_mitbringen",
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "mitbringen"
+        },
+        "translations": {
+          "fa": "همراه آوردن"
+        },
+        "cefr": "B1",
+        "topic": "polite-language",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_invitations_hosting_04",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "lemma": "mitbringen",
+        "display_lemma": "mitbringen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_invitations_hosting_mitbringen"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_invitations_hosting_04",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "lexeme_ref": "lx_invitations_hosting_04",
+        "surface_form": "mitbringen",
+        "display_form": "mitbringen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_invitations_hosting_05",
+      "data": {
+        "slug": "de_b1_invitations_hosting_absagen",
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "absagen"
+        },
+        "translations": {
+          "fa": "لغو کردن / رد کردن دعوت"
+        },
+        "cefr": "B1",
+        "topic": "polite-language",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_invitations_hosting_05",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "lemma": "absagen",
+        "display_lemma": "absagen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_invitations_hosting_absagen"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_invitations_hosting_05",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "lexeme_ref": "lx_invitations_hosting_05",
+        "surface_form": "absagen",
+        "display_form": "absagen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_invitations_hosting_06",
+      "data": {
+        "slug": "de_b1_invitations_hosting_bescheid_geben",
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "Bescheid geben"
+        },
+        "translations": {
+          "fa": "خبر دادن"
+        },
+        "cefr": "B1",
+        "topic": "polite-language",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_invitations_hosting_06",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "lemma": "Bescheid geben",
+        "display_lemma": "Bescheid geben",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_invitations_hosting_bescheid_geben"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_invitations_hosting_06",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "lexeme_ref": "lx_invitations_hosting_06",
+        "surface_form": "Bescheid geben",
+        "display_form": "Bescheid geben",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_invitations_hosting_01",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "text": {
+          "de": "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten."
+        },
+        "translations": {
+          "fa": "می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم."
+        },
+        "intent": "invite_friends",
+        "concept_refs": [
+          "de_b1_invitations_hosting_einladen",
+          "de_b1_invitations_hosting_einladung"
+        ],
+        "cefr": "B1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_invitations_hosting_02",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "text": {
+          "de": "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll."
+        },
+        "translations": {
+          "fa": "در دعوت‌نامه همان اول می‌نویسم چه ساعتی شروع می‌کنیم و آیا لازم است کسی چیزی همراه بیاورد."
+        },
+        "intent": "give_details",
+        "concept_refs": [
+          "de_b1_invitations_hosting_einladung",
+          "de_b1_invitations_hosting_mitbringen"
+        ],
+        "cefr": "B1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_invitations_hosting_03",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "text": {
+          "de": "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen."
+        },
+        "translations": {
+          "fa": "به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم."
+        },
+        "intent": "hosting_preference",
+        "concept_refs": [
+          "de_b1_invitations_hosting_gastgeber"
+        ],
+        "cefr": "B1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_invitations_hosting_04",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "text": {
+          "de": "Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst."
+        },
+        "translations": {
+          "fa": "اگر بخواهی می‌توانم سالاد بیاورم تا کمتر مجبور باشی آماده‌سازی کنی."
+        },
+        "intent": "offer_help",
+        "concept_refs": [
+          "de_b1_invitations_hosting_mitbringen"
+        ],
+        "cefr": "B1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_invitations_hosting_05",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "text": {
+          "de": "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid."
+        },
+        "translations": {
+          "fa": "اگر مجبور شوم در لحظهٔ آخر لغو کنم، فوراً به تو خبر می‌دهم."
+        },
+        "intent": "cancel_politely",
+        "concept_refs": [
+          "de_b1_invitations_hosting_absagen",
+          "de_b1_invitations_hosting_bescheid_geben"
+        ],
+        "cefr": "B1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_invitations_hosting_06",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "text": {
+          "de": "Je früher alle Bescheid geben, desto leichter kann ich Essen und Plätze planen."
+        },
+        "translations": {
+          "fa": "هرچه همه زودتر خبر بدهند، راحت‌تر می‌توانم غذا و جا را برنامه‌ریزی کنم."
+        },
+        "intent": "plan_guests",
+        "concept_refs": [
+          "de_b1_invitations_hosting_bescheid_geben"
+        ],
+        "cefr": "B1",
+        "topic": "polite-language",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_invitations_hosting_01",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "slug": "b1-de-invitations-hosting-g1",
+        "title": "ob in eingebetteten Fragen",
+        "rule_summary": "Use ob to include a yes/no question inside another sentence.",
+        "explanation": {
+          "fa": "برای آوردن یک سؤال بله/خیر داخل جملهٔ دیگر از ob استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Ich frage, ob jemand etwas mitbringen möchte.",
+            "fa": "می‌پرسم آیا کسی می‌خواهد چیزی همراه بیاورد."
+          },
+          {
+            "de": "Sag mir bitte, ob du kommen kannst.",
+            "fa": "لطفاً بگو آیا می‌توانی بیایی."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_invitations_hosting_02",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "slug": "b1-de-invitations-hosting-g2",
+        "title": "damit zur Entlastung",
+        "rule_summary": "Use damit to explain why someone offers practical help.",
+        "explanation": {
+          "fa": "برای توضیح اینکه پیشنهاد کمک چه هدفی دارد، از damit استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Ich bringe etwas mit, damit du weniger Arbeit hast.",
+            "fa": "چیزی می‌آورم تا تو کار کمتری داشته باشی."
+          },
+          {
+            "de": "Wir decken schon den Tisch, damit du fertig kochen kannst.",
+            "fa": "میز را می‌چینیم تا تو بتوانی آشپزی را تمام کنی."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_invitations_hosting_03",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "slug": "b1-de-invitations-hosting-g3",
+        "title": "falls + je ... desto",
+        "rule_summary": "Use falls for possible last-minute changes and je ... desto for planning advantages.",
+        "explanation": {
+          "fa": "برای تغییر احتمالی در لحظهٔ آخر از falls و برای رابطهٔ دو عامل برنامه‌ریزی از je ... desto استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Falls ich später komme, gebe ich dir Bescheid.",
+            "fa": "اگر دیرتر بیایم خبر می‌دهم."
+          },
+          {
+            "de": "Je früher du antwortest, desto besser kann ich planen.",
+            "fa": "هرچه زودتر جواب بدهی، بهتر می‌توانم برنامه‌ریزی کنم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_invitations_hosting_01",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "title": "Samstagabend",
+        "setting": "Wohnzimmer",
+        "cefr": "B1",
+        "topic": "polite-language",
+        "characters": [
+          "Anna",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Wir laden am Samstag ein paar Leute ein. Hast du Zeit?",
+            "translation_fa": "شنبه چند نفر را دعوت می‌کنیم. وقت داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Ja, gern. Wann fangt ihr an?",
+            "translation_fa": "بله، با کمال میل. چه ساعتی شروع می‌کنید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Gegen sieben. Ganz ohne großes Programm.",
+            "translation_fa": "حدود هفت. بدون برنامهٔ خاصی."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Perfekt, dann bin ich dabei.",
+            "translation_fa": "عالی، پس می‌آیم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_invitations_hosting_02",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "title": "Soll ich etwas mitbringen?",
+        "setting": "Telefon",
+        "cefr": "B1",
+        "topic": "polite-language",
+        "characters": [
+          "Mia",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Soll ich am Samstag etwas mitbringen?",
+            "translation_fa": "شنبه چیزی همراه بیاورم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Wenn du möchtest, vielleicht einen Salat.",
+            "translation_fa": "اگر خواستی، شاید یک سالاد."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Gern. Dann hast du ein bisschen weniger Arbeit.",
+            "translation_fa": "حتماً. آن‌وقت تو کمی کار کمتری داری."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Danke, das hilft wirklich.",
+            "translation_fa": "ممنون، واقعاً کمک می‌کند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_invitations_hosting_03",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "title": "Kurzfristige Änderung",
+        "setting": "Unterwegs",
+        "cefr": "B1",
+        "topic": "polite-language",
+        "characters": [
+          "Lea",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Ich hoffe, ich schaffe es am Samstag pünktlich.",
+            "translation_fa": "امیدوارم شنبه به‌موقع برسم."
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Kein Problem. Gib einfach Bescheid, falls sich etwas ändert.",
+            "translation_fa": "مشکلی نیست. اگر چیزی عوض شد فقط خبر بده."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Mache ich. Absagen möchte ich eigentlich nicht.",
+            "translation_fa": "حتماً. در واقع نمی‌خواهم لغو کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Dann sehen wir uns hoffentlich am Samstag.",
+            "translation_fa": "پس امیدوارم شنبه همدیگر را ببینیم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_01_mc",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم.»؟"
+        },
+        "options": [
+          "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten.",
+          "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll.",
+          "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen.",
+          "Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst."
+        ],
+        "answer": {
+          "value": "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten. — می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم.",
+          "model_answer": "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_01_listen",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten."
+        },
+        "options": [
+          "می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم.",
+          "در دعوت‌نامه همان اول می‌نویسم چه ساعتی شروع می‌کنیم و آیا لازم است کسی چیزی همراه بیاورد.",
+          "به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم.",
+          "اگر بخواهی می‌توانم سالاد بیاورم تا کمتر مجبور باشی آماده‌سازی کنی."
+        ],
+        "answer": {
+          "value": "می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten. — می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم.",
+          "model_answer": "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten.",
+          "transcript_de": "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_01_speak",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll."
+        },
+        "answer": {
+          "expected_text": "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll. — در دعوت‌نامه همان اول می‌نویسم چه ساعتی شروع می‌کنیم و آیا لازم است کسی چیزی همراه بیاورد.",
+          "model_answer": "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_01_trans",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "در دعوت‌نامه همان اول می‌نویسم چه ساعتی شروع می‌کنیم و آیا لازم است کسی چیزی همراه بیاورد.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll. — در دعوت‌نامه همان اول می‌نویسم چه ساعتی شروع می‌کنیم و آیا لازم است کسی چیزی همراه بیاورد.",
+          "model_answer": "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_01_build",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "möchten",
+            "am",
+            "Samstag",
+            "ein",
+            "paar",
+            "Freunde",
+            "einladen",
+            "und",
+            "den",
+            "Abend",
+            "ganz",
+            "entspannt",
+            "halten.",
+            "Wir"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Wir",
+            "möchten",
+            "am",
+            "Samstag",
+            "ein",
+            "paar",
+            "Freunde",
+            "einladen",
+            "und",
+            "den",
+            "Abend",
+            "ganz",
+            "entspannt",
+            "halten."
+          ],
+          "value": "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten. — می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم.",
+          "model_answer": "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_02_mc",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم.»؟"
+        },
+        "options": [
+          "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen.",
+          "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten.",
+          "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll.",
+          "Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst."
+        ],
+        "answer": {
+          "value": "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen. — به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم.",
+          "model_answer": "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_02_listen",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen."
+        },
+        "options": [
+          "به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم.",
+          "می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم.",
+          "در دعوت‌نامه همان اول می‌نویسم چه ساعتی شروع می‌کنیم و آیا لازم است کسی چیزی همراه بیاورد.",
+          "اگر بخواهی می‌توانم سالاد بیاورم تا کمتر مجبور باشی آماده‌سازی کنی."
+        ],
+        "answer": {
+          "value": "به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen. — به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم.",
+          "model_answer": "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen.",
+          "transcript_de": "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_02_speak",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst."
+        },
+        "answer": {
+          "expected_text": "Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst. — اگر بخواهی می‌توانم سالاد بیاورم تا کمتر مجبور باشی آماده‌سازی کنی.",
+          "model_answer": "Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_02_trans",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "اگر بخواهی می‌توانم سالاد بیاورم تا کمتر مجبور باشی آماده‌سازی کنی.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst. — اگر بخواهی می‌توانم سالاد بیاورم تا کمتر مجبور باشی آماده‌سازی کنی.",
+          "model_answer": "Wenn du möchtest, kann ich einen Salat mitbringen, damit du weniger vorbereiten musst."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_02_build",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Gastgeber",
+            "möchte",
+            "ich",
+            "nicht",
+            "den",
+            "ganzen",
+            "Abend",
+            "in",
+            "der",
+            "Küche",
+            "stehen.",
+            "Als"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Als",
+            "Gastgeber",
+            "möchte",
+            "ich",
+            "nicht",
+            "den",
+            "ganzen",
+            "Abend",
+            "in",
+            "der",
+            "Küche",
+            "stehen."
+          ],
+          "value": "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen. — به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم.",
+          "model_answer": "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_03_mc",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «اگر مجبور شوم در لحظهٔ آخر لغو کنم، فوراً به تو خبر می‌دهم.»؟"
+        },
+        "options": [
+          "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid.",
+          "Wir möchten am Samstag ein paar Freunde einladen und den Abend ganz entspannt halten.",
+          "In der Einladung schreibe ich gleich dazu, wann wir anfangen und ob man etwas mitbringen soll.",
+          "Als Gastgeber möchte ich nicht den ganzen Abend in der Küche stehen."
+        ],
+        "answer": {
+          "value": "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid. — اگر مجبور شوم در لحظهٔ آخر لغو کنم، فوراً به تو خبر می‌دهم.",
+          "model_answer": "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_03_listen",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid."
+        },
+        "options": [
+          "اگر مجبور شوم در لحظهٔ آخر لغو کنم، فوراً به تو خبر می‌دهم.",
+          "می‌خواهیم شنبه چند دوست را دعوت کنیم و شب را خیلی راحت و خودمانی برگزار کنیم.",
+          "در دعوت‌نامه همان اول می‌نویسم چه ساعتی شروع می‌کنیم و آیا لازم است کسی چیزی همراه بیاورد.",
+          "به‌عنوان میزبان نمی‌خواهم تمام شب در آشپزخانه باشم."
+        ],
+        "answer": {
+          "value": "اگر مجبور شوم در لحظهٔ آخر لغو کنم، فوراً به تو خبر می‌دهم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid. — اگر مجبور شوم در لحظهٔ آخر لغو کنم، فوراً به تو خبر می‌دهم.",
+          "model_answer": "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid.",
+          "transcript_de": "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_03_speak",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Je früher alle Bescheid geben, desto leichter kann ich Essen und Plätze planen."
+        },
+        "answer": {
+          "expected_text": "Je früher alle Bescheid geben, desto leichter kann ich Essen und Plätze planen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je früher alle Bescheid geben, desto leichter kann ich Essen und Plätze planen. — هرچه همه زودتر خبر بدهند، راحت‌تر می‌توانم غذا و جا را برنامه‌ریزی کنم.",
+          "model_answer": "Je früher alle Bescheid geben, desto leichter kann ich Essen und Plätze planen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_03_trans",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "هرچه همه زودتر خبر بدهند، راحت‌تر می‌توانم غذا و جا را برنامه‌ریزی کنم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Je früher alle Bescheid geben, desto leichter kann ich Essen und Plätze planen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je früher alle Bescheid geben, desto leichter kann ich Essen und Plätze planen. — هرچه همه زودتر خبر بدهند، راحت‌تر می‌توانم غذا و جا را برنامه‌ریزی کنم.",
+          "model_answer": "Je früher alle Bescheid geben, desto leichter kann ich Essen und Plätze planen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_invitations_hosting_03_build",
+      "data": {
+        "lesson_key": "b1-de-invitations-hosting-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "ich",
+            "kurzfristig",
+            "absagen",
+            "muss,",
+            "gebe",
+            "ich",
+            "dir",
+            "sofort",
+            "Bescheid.",
+            "Falls"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Falls",
+            "ich",
+            "kurzfristig",
+            "absagen",
+            "muss,",
+            "gebe",
+            "ich",
+            "dir",
+            "sofort",
+            "Bescheid."
+          ],
+          "value": "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid. — اگر مجبور شوم در لحظهٔ آخر لغو کنم، فوراً به تو خبر می‌دهم.",
+          "model_answer": "Falls ich kurzfristig absagen muss, gebe ich dir sofort Bescheid."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "ff2d3e383b11e48a0158bb1abd37c4b554f77dabb8d53d67b89dc86960e73726",
+  "voice_id": "HLL5Lh99l3pwG8HZW1N5",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "96c0153b40d5b12d79ecb6074bd7fa1253ef545ac67b684a02ee96fdefcd492c",
+  "voice_key": "character:leon:male_bright",
+  "voice_name": "Pascal R – Warm Medical Customer Care Agent",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "392e0a9bbbd72930e0296796ff48d02b4490468912727aaaf292da1c8faa0ac8",
+  "duration_ms": 1515,
+  "generated_at": "2026-09-13T05:28:01.714805+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a4cb6265-4178-5e8f-89cb-03c96717e837",
+      "entity_key": "d_cooking_recipes_02:2"
+    }
+  ]
+}

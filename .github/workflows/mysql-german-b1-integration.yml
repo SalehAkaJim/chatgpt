@@ -1,0 +1,107 @@
+name: MySQL German B1 Integration
+
+on:
+  push:
+    branches:
+      - language/german-b1
+    paths:
+      - '.github/german-b1-mysql-trigger'
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: 'Latest completed B1 batch number'
+        required: true
+        default: '4'
+
+jobs:
+  german-b1-mysql-9:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: mysql://root:rootpass@127.0.0.1:3306/language_learning
+      MYSQL_PWD: rootpass
+      BATCH: ${{ github.event.inputs.batch || '4' }}
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env:
+          MYSQL_ROOT_PASSWORD: rootpass
+          MYSQL_DATABASE: language_learning
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -prootpass"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: language/german-b1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -qq
+          sudo apt-get install -y default-mysql-client
+      - name: Verify MySQL 9.0.1
+        run: |
+          v=$(mysql -h127.0.0.1 -P3306 -uroot -Nse 'SELECT VERSION();')
+          echo "Server version: $v"
+          [[ "$v" == 9.0.1* ]]
+      - name: Bootstrap German curriculum through selected B1 batch
+        run: |
+          set -euo pipefail
+          DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
+          $DB < database/schema.sql
+          $DB < database/migrations/001_curriculum.sql
+          $DB < database/migrations/002_multilingual_core.sql
+          $DB < database/migrations/003_lesson_item_lexemes.sql
+          $DB < database/migrations/004_level_import_audio.sql
+          $DB < database/migrations/005_writing_exercises.sql
+          $DB < database/seed/cefr.sql
+          $DB < database/seed/languages.sql
+          $DB < database/seed/skills-topics.sql
+          $DB < database/seed/language-variants-courses.sql
+          $DB < database/seed/german-prea1-curriculum.sql
+          $DB < database/seed/german-a1-curriculum.sql
+          $DB < database/seed/german-a2-curriculum.sql
+          $DB < database/seed/german-b1-curriculum.sql
+          expected=$((BATCH * 10))
+          b1=$($DB -Nse "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id JOIN cefr_levels l ON l.id=cu.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='B1'")
+          echo "German B1 units: $b1 expected=$expected"
+          test "$b1" = "$expected"
+      - name: Validate cumulative German B1 production
+        run: |
+          set -euo pipefail
+          python scripts/audit_german_b1_content.py --batch "$BATCH"
+          for f in content/production/de/B1/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+          python database/import/de/b1.py --dry-run
+      - name: Confirm educational release gate remains active
+        run: |
+          set +e
+          python database/import/de/b1.py --dry-run --require-approved
+          rc=$?
+          set -e
+          test "$rc" -ne 0
+      - name: Import German B1 review build
+        run: python database/import/de/b1.py --allow-unreviewed
+      - name: Verify canonical counts and idempotency
+        run: |
+          set -euo pipefail
+          DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
+          expected_lessons=$((BATCH * 30))
+          expected_exercises=$((BATCH * 150))
+          lessons=$($DB -Nse "SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id JOIN cefr_levels l ON l.id=le.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='B1'")
+          exercises=$($DB -Nse "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels l ON l.id=le.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='B1'")
+          echo "German B1 lessons=$lessons/$expected_lessons exercises=$exercises/$expected_exercises"
+          test "$lessons" = "$expected_lessons"
+          test "$exercises" = "$expected_exercises"
+          before="$lessons:$exercises"
+          python database/import/de/b1.py --allow-unreviewed
+          after=$($DB -Nse "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id JOIN cefr_levels l ON l.id=le.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='B1'),':',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels l ON l.id=le.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='B1'))")
+          echo "before=$before after=$after"
+          test "$before" = "$after"

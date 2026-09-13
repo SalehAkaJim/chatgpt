@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "39087c0c91c5bb4a0f361091686d0ec5c8ccc7e05381876970b8fe525330000b",
+  "voice_id": "v3V1d2rk6528UrLKRuy8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "2930a16881b84fe9201b19a4a247941cdf33f5584b15fcb525332eb6acf2c9e6",
+  "voice_key": "de-de.lexical.native-clear",
+  "voice_name": "Susi - Effortless and Confident",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "4ab8f26219fa1c87f1202ccd819c00e6fc2beb164ed397f70a9676ac4f6c2637",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-13T05:29:47.770879+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "d4ebf9a6-236b-524b-8564-36f61945b886",
+      "entity_key": "lx_seasons_weather_plans_04"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "3df4d4fe-542b-5d93-980d-e4316bb256e9",
+      "entity_key": "wf_seasons_weather_plans_04"
+    }
+  ]
+}

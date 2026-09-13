@@ -1,0 +1,975 @@
+{
+  "batch_id": "de-de-a2-trip-planning-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-trip-planning",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_trip_planning_01",
+      "data": {
+        "slug": "de_a2_trip_planning_01",
+        "lesson_key": "a2-de-trip-planning-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Reiseziel"
+        },
+        "translations": {
+          "fa": "مقصد سفر"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_trip_planning_01",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "lemma": "Reiseziel",
+        "display_lemma": "Reiseziel",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_trip_planning_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_trip_planning_01",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "lexeme_ref": "lx_trip_planning_01",
+        "surface_form": "Reiseziel",
+        "display_form": "Reiseziel",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_trip_planning_02",
+      "data": {
+        "slug": "de_a2_trip_planning_02",
+        "lesson_key": "a2-de-trip-planning-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "buchen"
+        },
+        "translations": {
+          "fa": "رزرو کردن"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_trip_planning_02",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "lemma": "buchen",
+        "display_lemma": "buchen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_trip_planning_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_trip_planning_02",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "lexeme_ref": "lx_trip_planning_02",
+        "surface_form": "buchen",
+        "display_form": "buchen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_trip_planning_03",
+      "data": {
+        "slug": "de_a2_trip_planning_03",
+        "lesson_key": "a2-de-trip-planning-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Budget"
+        },
+        "translations": {
+          "fa": "بودجه"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_trip_planning_03",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "lemma": "Budget",
+        "display_lemma": "Budget",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_trip_planning_03"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_trip_planning_03",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "lexeme_ref": "lx_trip_planning_03",
+        "surface_form": "Budget",
+        "display_form": "Budget",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_trip_planning_04",
+      "data": {
+        "slug": "de_a2_trip_planning_04",
+        "lesson_key": "a2-de-trip-planning-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Unterkunft"
+        },
+        "translations": {
+          "fa": "اقامتگاه"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_trip_planning_04",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "lemma": "Unterkunft",
+        "display_lemma": "Unterkunft",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_trip_planning_04"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_trip_planning_04",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "lexeme_ref": "lx_trip_planning_04",
+        "surface_form": "Unterkunft",
+        "display_form": "Unterkunft",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_trip_planning_05",
+      "data": {
+        "slug": "de_a2_trip_planning_05",
+        "lesson_key": "a2-de-trip-planning-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Fahrt"
+        },
+        "translations": {
+          "fa": "مسیر / سفر"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_trip_planning_05",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "lemma": "Fahrt",
+        "display_lemma": "Fahrt",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_trip_planning_05"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_trip_planning_05",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "lexeme_ref": "lx_trip_planning_05",
+        "surface_form": "Fahrt",
+        "display_form": "Fahrt",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_trip_planning_06",
+      "data": {
+        "slug": "de_a2_trip_planning_06",
+        "lesson_key": "a2-de-trip-planning-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "übernachten"
+        },
+        "translations": {
+          "fa": "شب ماندن"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_trip_planning_06",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "lemma": "übernachten",
+        "display_lemma": "übernachten",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_trip_planning_06"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_trip_planning_06",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "lexeme_ref": "lx_trip_planning_06",
+        "surface_form": "übernachten",
+        "display_form": "übernachten",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_trip_planning_01",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "text": {
+          "de": "Wohin möchtest du im Sommer reisen?"
+        },
+        "translations": {
+          "fa": "تابستان دوست داری کجا سفر کنی؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_trip_planning_01"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_trip_planning_02",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "text": {
+          "de": "Wir haben ein Budget von ungefähr fünfhundert Euro."
+        },
+        "translations": {
+          "fa": "حدود پانصد یورو بودجه داریم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_trip_planning_02"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_trip_planning_03",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "text": {
+          "de": "Die Zugfahrt ist günstiger als der Flug."
+        },
+        "translations": {
+          "fa": "سفر با قطار از پرواز ارزان‌تر است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_trip_planning_03"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_trip_planning_04",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "text": {
+          "de": "Lass uns die Unterkunft heute buchen."
+        },
+        "translations": {
+          "fa": "بیا امروز اقامتگاه را رزرو کنیم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_trip_planning_04"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_trip_planning_05",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "text": {
+          "de": "Wir wollen drei Nächte dort übernachten."
+        },
+        "translations": {
+          "fa": "می‌خواهیم سه شب آنجا بمانیم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_trip_planning_05"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_trip_planning_06",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "text": {
+          "de": "Ich würde lieber mit dem Zug fahren."
+        },
+        "translations": {
+          "fa": "ترجیح می‌دهم با قطار بروم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_trip_planning_06"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_trip_planning_01",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "slug": "a2-de-trip_planning-grammar-01",
+        "title": "möchten / wollen für Reisepläne",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: möchten / wollen für Reisepläne.",
+        "explanation": {
+          "fa": "در این درس ساختار «möchten / wollen für Reisepläne» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Wohin möchtest du im Sommer reisen?",
+            "fa": "تابستان دوست داری کجا سفر کنی؟"
+          },
+          {
+            "de": "Wir haben ein Budget von ungefähr fünfhundert Euro.",
+            "fa": "حدود پانصد یورو بودجه داریم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_trip_planning_02",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "slug": "a2-de-trip_planning-grammar-02",
+        "title": "mit + Dativ und nach/in + Ort",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: mit + Dativ und nach/in + Ort.",
+        "explanation": {
+          "fa": "در این درس ساختار «mit + Dativ und nach/in + Ort» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Die Zugfahrt ist günstiger als der Flug.",
+            "fa": "سفر با قطار از پرواز ارزان‌تر است."
+          },
+          {
+            "de": "Lass uns die Unterkunft heute buchen.",
+            "fa": "بیا امروز اقامتگاه را رزرو کنیم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_trip_planning_01",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "title": "Eine Reise planen · 1",
+        "setting": "transport",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "Sofia",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Wohin möchtest du im Sommer reisen?",
+            "translation_fa": "تابستان دوست داری کجا سفر کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Wir haben ein Budget von ungefähr fünfhundert Euro.",
+            "translation_fa": "حدود پانصد یورو بودجه داریم."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_01_mc",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «تابستان دوست داری کجا سفر کنی؟»؟"
+        },
+        "options": [
+          "Wohin möchtest du im Sommer reisen?",
+          "Wir haben ein Budget von ungefähr fünfhundert Euro.",
+          "Die Zugfahrt ist günstiger als der Flug.",
+          "Lass uns die Unterkunft heute buchen."
+        ],
+        "answer": {
+          "value": "Wohin möchtest du im Sommer reisen?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Wohin möchtest du im Sommer reisen?» یعنی «تابستان دوست داری کجا سفر کنی؟».",
+          "model_answer": "Wohin möchtest du im Sommer reisen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_01_listen",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wohin möchtest du im Sommer reisen?"
+        },
+        "options": [
+          "تابستان دوست داری کجا سفر کنی؟",
+          "حدود پانصد یورو بودجه داریم.",
+          "سفر با قطار از پرواز ارزان‌تر است.",
+          "بیا امروز اقامتگاه را رزرو کنیم."
+        ],
+        "answer": {
+          "value": "تابستان دوست داری کجا سفر کنی؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: تابستان دوست داری کجا سفر کنی؟",
+          "model_answer": "Wohin möchtest du im Sommer reisen?",
+          "transcript_de": "Wohin möchtest du im Sommer reisen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_01_speak",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Wir haben ein Budget von ungefähr fünfhundert Euro."
+        },
+        "answer": {
+          "expected_text": "Wir haben ein Budget von ungefähr fünfhundert Euro."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: حدود پانصد یورو بودجه داریم.",
+          "model_answer": "Wir haben ein Budget von ungefähr fünfhundert Euro."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_01_trans",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "حدود پانصد یورو بودجه داریم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Wir haben ein Budget von ungefähr fünfhundert Euro."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Wir haben ein Budget von ungefähr fünfhundert Euro.",
+          "model_answer": "Wir haben ein Budget von ungefähr fünfhundert Euro."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_trip_planning_02",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "title": "Eine Reise planen · 2",
+        "setting": "transport",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "Nina",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Die Zugfahrt ist günstiger als der Flug.",
+            "translation_fa": "سفر با قطار از پرواز ارزان‌تر است."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Lass uns die Unterkunft heute buchen.",
+            "translation_fa": "بیا امروز اقامتگاه را رزرو کنیم."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_02_mc",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «سفر با قطار از پرواز ارزان‌تر است.»؟"
+        },
+        "options": [
+          "Die Zugfahrt ist günstiger als der Flug.",
+          "Wohin möchtest du im Sommer reisen?",
+          "Wir haben ein Budget von ungefähr fünfhundert Euro.",
+          "Lass uns die Unterkunft heute buchen."
+        ],
+        "answer": {
+          "value": "Die Zugfahrt ist günstiger als der Flug."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Die Zugfahrt ist günstiger als der Flug.» یعنی «سفر با قطار از پرواز ارزان‌تر است.».",
+          "model_answer": "Die Zugfahrt ist günstiger als der Flug."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_02_listen",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Die Zugfahrt ist günstiger als der Flug."
+        },
+        "options": [
+          "سفر با قطار از پرواز ارزان‌تر است.",
+          "تابستان دوست داری کجا سفر کنی؟",
+          "حدود پانصد یورو بودجه داریم.",
+          "بیا امروز اقامتگاه را رزرو کنیم."
+        ],
+        "answer": {
+          "value": "سفر با قطار از پرواز ارزان‌تر است."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: سفر با قطار از پرواز ارزان‌تر است.",
+          "model_answer": "Die Zugfahrt ist günstiger als der Flug.",
+          "transcript_de": "Die Zugfahrt ist günstiger als der Flug."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_02_speak",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Lass uns die Unterkunft heute buchen."
+        },
+        "answer": {
+          "expected_text": "Lass uns die Unterkunft heute buchen."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: بیا امروز اقامتگاه را رزرو کنیم.",
+          "model_answer": "Lass uns die Unterkunft heute buchen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_02_trans",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "بیا امروز اقامتگاه را رزرو کنیم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Lass uns die Unterkunft heute buchen."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Lass uns die Unterkunft heute buchen.",
+          "model_answer": "Lass uns die Unterkunft heute buchen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_trip_planning_03",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "title": "Eine Reise planen · 3",
+        "setting": "transport",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "Clara",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Wir wollen drei Nächte dort übernachten.",
+            "translation_fa": "می‌خواهیم سه شب آنجا بمانیم."
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Ich würde lieber mit dem Zug fahren.",
+            "translation_fa": "ترجیح می‌دهم با قطار بروم."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_03_mc",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «می‌خواهیم سه شب آنجا بمانیم.»؟"
+        },
+        "options": [
+          "Wir wollen drei Nächte dort übernachten.",
+          "Wohin möchtest du im Sommer reisen?",
+          "Wir haben ein Budget von ungefähr fünfhundert Euro.",
+          "Die Zugfahrt ist günstiger als der Flug."
+        ],
+        "answer": {
+          "value": "Wir wollen drei Nächte dort übernachten."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Wir wollen drei Nächte dort übernachten.» یعنی «می‌خواهیم سه شب آنجا بمانیم.».",
+          "model_answer": "Wir wollen drei Nächte dort übernachten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_03_listen",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wir wollen drei Nächte dort übernachten."
+        },
+        "options": [
+          "می‌خواهیم سه شب آنجا بمانیم.",
+          "تابستان دوست داری کجا سفر کنی؟",
+          "حدود پانصد یورو بودجه داریم.",
+          "سفر با قطار از پرواز ارزان‌تر است."
+        ],
+        "answer": {
+          "value": "می‌خواهیم سه شب آنجا بمانیم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: می‌خواهیم سه شب آنجا بمانیم.",
+          "model_answer": "Wir wollen drei Nächte dort übernachten.",
+          "transcript_de": "Wir wollen drei Nächte dort übernachten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_03_speak",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Ich würde lieber mit dem Zug fahren."
+        },
+        "answer": {
+          "expected_text": "Ich würde lieber mit dem Zug fahren."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: ترجیح می‌دهم با قطار بروم.",
+          "model_answer": "Ich würde lieber mit dem Zug fahren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_trip_planning_03_trans",
+      "data": {
+        "lesson_key": "a2-de-trip-planning-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "ترجیح می‌دهم با قطار بروم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ich würde lieber mit dem Zug fahren."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Ich würde lieber mit dem Zug fahren.",
+          "model_answer": "Ich würde lieber mit dem Zug fahren."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

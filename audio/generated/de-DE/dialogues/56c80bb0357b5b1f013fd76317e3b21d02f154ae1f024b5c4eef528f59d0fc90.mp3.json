@@ -1,0 +1,46 @@
+{
+  "source_text_hash": "378f3ae9fe5246db2a5c3027e195641ef4372cdbef0d2476184e4870c10ca307",
+  "voice_id": "SiMvlSW9cKKHDYT4BzOp",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "56c80bb0357b5b1f013fd76317e3b21d02f154ae1f024b5c4eef528f59d0fc90",
+  "voice_key": "character:clara:female_bright",
+  "voice_name": "Lola - Fresh & Dynamic",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "053cbf4b3d8fa46af2e1e54f1f38f1e8fea30967b0b68837fea4b9809c0d2849",
+  "duration_ms": 2507,
+  "generated_at": "2026-09-13T05:27:08.351001+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "27d2e8df-066c-5ccc-be2f-85f05a5d7e78",
+      "entity_key": "d_accommodation_03:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5be4f24c-269c-5512-b207-eb2509600b09",
+      "entity_key": "d_detailed_directions_03:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "d4b09595-5462-51a3-8ec4-4f10fc906655",
+      "entity_key": "d_trip_planning_03:3"
+    }
+  ]
+}

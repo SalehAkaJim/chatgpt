@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "5ae0717789157b3373883593aed676885cabfc76e0836a2d5221f0cbb0141211",
+  "voice_id": "SiMvlSW9cKKHDYT4BzOp",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "f34cdd4f854859be9602601046d99129609056a6cec86d166c7666b3c7fbd4bb",
+  "voice_key": "character:clara:female_bright",
+  "voice_name": "Lola - Fresh & Dynamic",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "acb77860750c4c868ad241a5a752fa27d993aeef95f5cc2286f666fc892db6f5",
+  "duration_ms": 3422,
+  "generated_at": "2026-09-13T06:42:52.835887+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "04ad8bda-a959-5638-8d91-d2c69f525563",
+      "entity_key": "d_food_nutrition_03:1"
+    }
+  ]
+}

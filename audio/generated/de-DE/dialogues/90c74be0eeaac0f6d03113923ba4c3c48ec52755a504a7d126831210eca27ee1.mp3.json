@@ -1,0 +1,46 @@
+{
+  "source_text_hash": "d692d61dd41d4974e292219cc3bdcfbae38350559f5164aaac3499da2b24de65",
+  "voice_id": "z1EhmmPwF0ENGYE8dBE6",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "90c74be0eeaac0f6d03113923ba4c3c48ec52755a504a7d126831210eca27ee1",
+  "voice_key": "character:max:male_warm",
+  "voice_name": "Christian Plasa - Soft and Mild",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": ""
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "780541eef5a2061468f8cc63daa476f5245bfb6056f2ef7fcbe314a7d8304315",
+  "duration_ms": 1933,
+  "generated_at": "2026-09-13T05:27:59.077474+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5e6fa8ad-17ce-585b-928f-d2c288bba13a",
+      "entity_key": "d_describe_places_01:4"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "3094a4cd-f858-5f57-b8a8-5c4c3481db14",
+      "entity_key": "d_tickets_timetables_03:4"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "75843975-b355-5980-a5bc-894f5d515b4a",
+      "entity_key": "d_trip_planning_01:4"
+    }
+  ]
+}

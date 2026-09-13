@@ -1,0 +1,823 @@
+{
+  "batch_id": "de-de-a2-appointments-advice-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-appointments-advice",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_appointments_advice_01",
+      "data": {
+        "slug": "de_a2_appointments_advice_01",
+        "lesson_key": "a2-de-appointments-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Sprechstunde"
+        },
+        "translations": {
+          "fa": "ساعت ویزیت"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_appointments_advice_01",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "lemma": "Sprechstunde",
+        "display_lemma": "Sprechstunde",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_appointments_advice_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_appointments_advice_01",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "lexeme_ref": "lx_appointments_advice_01",
+        "surface_form": "Sprechstunde",
+        "display_form": "Sprechstunde",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_appointments_advice_02",
+      "data": {
+        "slug": "de_a2_appointments_advice_02",
+        "lesson_key": "a2-de-appointments-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "vereinbaren"
+        },
+        "translations": {
+          "fa": "وقت گرفتن"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_appointments_advice_02",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "lemma": "vereinbaren",
+        "display_lemma": "vereinbaren",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_appointments_advice_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_appointments_advice_02",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "lexeme_ref": "lx_appointments_advice_02",
+        "surface_form": "vereinbaren",
+        "display_form": "vereinbaren",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_appointments_advice_03",
+      "data": {
+        "slug": "de_a2_appointments_advice_03",
+        "lesson_key": "a2-de-appointments-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "verschieben"
+        },
+        "translations": {
+          "fa": "تغییر دادن"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_appointments_advice_03",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "lemma": "verschieben",
+        "display_lemma": "verschieben",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_appointments_advice_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_appointments_advice_03",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "lexeme_ref": "lx_appointments_advice_03",
+        "surface_form": "verschieben",
+        "display_form": "verschieben",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_appointments_advice_04",
+      "data": {
+        "slug": "de_a2_appointments_advice_04",
+        "lesson_key": "a2-de-appointments-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "dringend"
+        },
+        "translations": {
+          "fa": "فوری"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_appointments_advice_04",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "lemma": "dringend",
+        "display_lemma": "dringend",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_appointments_advice_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_appointments_advice_04",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "lexeme_ref": "lx_appointments_advice_04",
+        "surface_form": "dringend",
+        "display_form": "dringend",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_appointments_advice_05",
+      "data": {
+        "slug": "de_a2_appointments_advice_05",
+        "lesson_key": "a2-de-appointments-advice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Rat"
+        },
+        "translations": {
+          "fa": "توصیه"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_appointments_advice_05",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "lemma": "Rat",
+        "display_lemma": "Rat",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_appointments_advice_05"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "masculine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_appointments_advice_05",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "lexeme_ref": "lx_appointments_advice_05",
+        "surface_form": "Rat",
+        "display_form": "Rat",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_appointments_advice_06",
+      "data": {
+        "slug": "de_a2_appointments_advice_06",
+        "lesson_key": "a2-de-appointments-advice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "sich ausruhen"
+        },
+        "translations": {
+          "fa": "استراحت کردن"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_appointments_advice_06",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "lemma": "sich ausruhen",
+        "display_lemma": "sich ausruhen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_appointments_advice_06"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_appointments_advice_06",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "lexeme_ref": "lx_appointments_advice_06",
+        "surface_form": "sich ausruhen",
+        "display_form": "sich ausruhen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_appointments_advice_01",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "text": {
+          "de": "Ich möchte gern einen Termin vereinbaren."
+        },
+        "translations": {
+          "fa": "می‌خواهم یک وقت ویزیت بگیرم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_appointments_advice_01"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_appointments_advice_02",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "text": {
+          "de": "Könnte ich morgen Vormittag kommen?"
+        },
+        "translations": {
+          "fa": "می‌توانم فردا صبح بیایم؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_appointments_advice_02"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_appointments_advice_03",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "text": {
+          "de": "Leider muss ich meinen Termin verschieben."
+        },
+        "translations": {
+          "fa": "متأسفانه باید وقتم را عوض کنم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_appointments_advice_03"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_appointments_advice_04",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "text": {
+          "de": "Ist es dringend?"
+        },
+        "translations": {
+          "fa": "فوری است؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_appointments_advice_04"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_appointments_advice_05",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "text": {
+          "de": "Du solltest dich heute ausruhen."
+        },
+        "translations": {
+          "fa": "امروز بهتر است استراحت کنی."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_appointments_advice_05"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_appointments_advice_06",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "text": {
+          "de": "Wenn es schlimmer wird, geh bitte zum Arzt."
+        },
+        "translations": {
+          "fa": "اگر بدتر شد لطفاً برو دکتر."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_appointments_advice_06"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_appointments_advice_01",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "slug": "a2-de-appointments_advice-grammar-01",
+        "title": "könnte ich für höfliche Terminfragen",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: könnte ich für höfliche Terminfragen.",
+        "explanation": {
+          "fa": "در این درس ساختار «könnte ich für höfliche Terminfragen» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Ich möchte gern einen Termin vereinbaren.",
+            "fa": "می‌خواهم یک وقت ویزیت بگیرم."
+          },
+          {
+            "de": "Könnte ich morgen Vormittag kommen?",
+            "fa": "می‌توانم فردا صبح بیایم؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_appointments_advice_02",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "slug": "a2-de-appointments_advice-grammar-02",
+        "title": "sollte / müsste für Rat und Notwendigkeit",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: sollte / müsste für Rat und Notwendigkeit.",
+        "explanation": {
+          "fa": "در این درس ساختار «sollte / müsste für Rat und Notwendigkeit» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Leider muss ich meinen Termin verschieben.",
+            "fa": "متأسفانه باید وقتم را عوض کنم."
+          },
+          {
+            "de": "Ist es dringend?",
+            "fa": "فوری است؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_appointments_advice_01",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "title": "Termine & Rat · 1",
+        "setting": "basic-health",
+        "cefr": "A2",
+        "topic": "basic-health",
+        "characters": [
+          "Clara",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Ich möchte gern einen Termin vereinbaren.",
+            "translation_fa": "می‌خواهم یک وقت ویزیت بگیرم."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Könnte ich morgen Vormittag kommen?",
+            "translation_fa": "می‌توانم فردا صبح بیایم؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Verstanden, danke für den Rat.",
+            "translation_fa": "متوجه شدم، ممنون از توصیه."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Gut, das mache ich.",
+            "translation_fa": "خوب، همین کار را می‌کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_appointments_advice_01_mc",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «می‌خواهم یک وقت ویزیت بگیرم.»؟"
+        },
+        "options": [
+          "Ich möchte gern einen Termin vereinbaren.",
+          "Könnte ich morgen Vormittag kommen?",
+          "Leider muss ich meinen Termin verschieben.",
+          "Ist es dringend?"
+        ],
+        "answer": {
+          "value": "Ich möchte gern einen Termin vereinbaren."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Ich möchte gern einen Termin vereinbaren.» یعنی «می‌خواهم یک وقت ویزیت بگیرم.».",
+          "model_answer": "Ich möchte gern einen Termin vereinbaren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_appointments_advice_01_listen",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich möchte gern einen Termin vereinbaren."
+        },
+        "options": [
+          "می‌خواهم یک وقت ویزیت بگیرم.",
+          "می‌توانم فردا صبح بیایم؟",
+          "متأسفانه باید وقتم را عوض کنم.",
+          "فوری است؟"
+        ],
+        "answer": {
+          "value": "می‌خواهم یک وقت ویزیت بگیرم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: می‌خواهم یک وقت ویزیت بگیرم.",
+          "model_answer": "Ich möchte gern einen Termin vereinbaren.",
+          "transcript_de": "Ich möchte gern einen Termin vereinbaren."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_appointments_advice_01_speak",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Könnte ich morgen Vormittag kommen?"
+        },
+        "answer": {
+          "expected_text": "Könnte ich morgen Vormittag kommen?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: می‌توانم فردا صبح بیایم؟",
+          "model_answer": "Könnte ich morgen Vormittag kommen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_appointments_advice_01_trans",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "می‌توانم فردا صبح بیایم؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Könnte ich morgen Vormittag kommen?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Könnte ich morgen Vormittag kommen?",
+          "model_answer": "Könnte ich morgen Vormittag kommen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_appointments_advice_02",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "title": "Termine & Rat · 2",
+        "setting": "basic-health",
+        "cefr": "A2",
+        "topic": "basic-health",
+        "characters": [
+          "Anna",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Leider muss ich meinen Termin verschieben.",
+            "translation_fa": "متأسفانه باید وقتم را عوض کنم."
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Ist es dringend?",
+            "translation_fa": "فوری است؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Gut, das mache ich.",
+            "translation_fa": "خوب، همین کار را می‌کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Verstanden, danke für den Rat.",
+            "translation_fa": "متوجه شدم، ممنون از توصیه."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_appointments_advice_02_mc",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «متأسفانه باید وقتم را عوض کنم.»؟"
+        },
+        "options": [
+          "Leider muss ich meinen Termin verschieben.",
+          "Ich möchte gern einen Termin vereinbaren.",
+          "Könnte ich morgen Vormittag kommen?",
+          "Ist es dringend?"
+        ],
+        "answer": {
+          "value": "Leider muss ich meinen Termin verschieben."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Leider muss ich meinen Termin verschieben.» یعنی «متأسفانه باید وقتم را عوض کنم.».",
+          "model_answer": "Leider muss ich meinen Termin verschieben."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_appointments_advice_02_listen",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Leider muss ich meinen Termin verschieben."
+        },
+        "options": [
+          "متأسفانه باید وقتم را عوض کنم.",
+          "می‌خواهم یک وقت ویزیت بگیرم.",
+          "می‌توانم فردا صبح بیایم؟",
+          "فوری است؟"
+        ],
+        "answer": {
+          "value": "متأسفانه باید وقتم را عوض کنم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: متأسفانه باید وقتم را عوض کنم.",
+          "model_answer": "Leider muss ich meinen Termin verschieben.",
+          "transcript_de": "Leider muss ich meinen Termin verschieben."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_appointments_advice_02_speak",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Ist es dringend?"
+        },
+        "answer": {
+          "expected_text": "Ist es dringend?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: فوری است؟",
+          "model_answer": "Ist es dringend?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_appointments_advice_02_trans",
+      "data": {
+        "lesson_key": "a2-de-appointments-advice-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "فوری است؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ist es dringend?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Ist es dringend?",
+          "model_answer": "Ist es dringend?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

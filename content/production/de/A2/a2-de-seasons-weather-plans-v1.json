@@ -1,0 +1,826 @@
+{
+  "batch_id": "de-de-a2-seasons-weather-plans-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-seasons-weather-plans",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_seasons_weather_plans_01",
+      "data": {
+        "slug": "de_a2_seasons_weather_plans_01",
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Jahreszeit"
+        },
+        "translations": {
+          "fa": "فصل"
+        },
+        "cefr": "A2",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_seasons_weather_plans_01",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "lemma": "Jahreszeit",
+        "display_lemma": "Jahreszeit",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_seasons_weather_plans_01",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "lexeme_ref": "lx_seasons_weather_plans_01",
+        "surface_form": "Jahreszeit",
+        "display_form": "Jahreszeit",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_seasons_weather_plans_02",
+      "data": {
+        "slug": "de_a2_seasons_weather_plans_02",
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "mild"
+        },
+        "translations": {
+          "fa": "ملایم"
+        },
+        "cefr": "A2",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_seasons_weather_plans_02",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "lemma": "mild",
+        "display_lemma": "mild",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_seasons_weather_plans_02",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "lexeme_ref": "lx_seasons_weather_plans_02",
+        "surface_form": "mild",
+        "display_form": "mild",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_seasons_weather_plans_03",
+      "data": {
+        "slug": "de_a2_seasons_weather_plans_03",
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "windig"
+        },
+        "translations": {
+          "fa": "بادخیز"
+        },
+        "cefr": "A2",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_seasons_weather_plans_03",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "lemma": "windig",
+        "display_lemma": "windig",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_seasons_weather_plans_03",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "lexeme_ref": "lx_seasons_weather_plans_03",
+        "surface_form": "windig",
+        "display_form": "windig",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_seasons_weather_plans_04",
+      "data": {
+        "slug": "de_a2_seasons_weather_plans_04",
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Vorhersage"
+        },
+        "translations": {
+          "fa": "پیش‌بینی هوا"
+        },
+        "cefr": "A2",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_seasons_weather_plans_04",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "lemma": "Vorhersage",
+        "display_lemma": "Vorhersage",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_04"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_seasons_weather_plans_04",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "lexeme_ref": "lx_seasons_weather_plans_04",
+        "surface_form": "Vorhersage",
+        "display_form": "Vorhersage",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_seasons_weather_plans_05",
+      "data": {
+        "slug": "de_a2_seasons_weather_plans_05",
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "trocken"
+        },
+        "translations": {
+          "fa": "خشک"
+        },
+        "cefr": "A2",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_seasons_weather_plans_05",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "lemma": "trocken",
+        "display_lemma": "trocken",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_05"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_seasons_weather_plans_05",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "lexeme_ref": "lx_seasons_weather_plans_05",
+        "surface_form": "trocken",
+        "display_form": "trocken",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_seasons_weather_plans_06",
+      "data": {
+        "slug": "de_a2_seasons_weather_plans_06",
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Temperatur"
+        },
+        "translations": {
+          "fa": "دما"
+        },
+        "cefr": "A2",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_seasons_weather_plans_06",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "lemma": "Temperatur",
+        "display_lemma": "Temperatur",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_06"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_seasons_weather_plans_06",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "lexeme_ref": "lx_seasons_weather_plans_06",
+        "surface_form": "Temperatur",
+        "display_form": "Temperatur",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_seasons_weather_plans_01",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "text": {
+          "de": "Im Frühling ist es meistens milder als im Winter."
+        },
+        "translations": {
+          "fa": "بهار معمولاً از زمستان ملایم‌تر است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_01"
+        ],
+        "cefr": "A2",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_seasons_weather_plans_02",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "text": {
+          "de": "Laut Vorhersage wird es morgen windig."
+        },
+        "translations": {
+          "fa": "طبق پیش‌بینی فردا هوا بادی می‌شود."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_02"
+        ],
+        "cefr": "A2",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_seasons_weather_plans_03",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "text": {
+          "de": "Wenn es trocken bleibt, fahren wir ans Meer."
+        },
+        "translations": {
+          "fa": "اگر هوا خشک بماند، به کنار دریا می‌رویم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_03"
+        ],
+        "cefr": "A2",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_seasons_weather_plans_04",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "text": {
+          "de": "Welche Jahreszeit magst du am liebsten?"
+        },
+        "translations": {
+          "fa": "کدام فصل را بیشتر دوست داری؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_04"
+        ],
+        "cefr": "A2",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_seasons_weather_plans_05",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "text": {
+          "de": "Heute sind die Temperaturen deutlich höher."
+        },
+        "translations": {
+          "fa": "امروز دماها خیلی بالاترند."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_05"
+        ],
+        "cefr": "A2",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_seasons_weather_plans_06",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "text": {
+          "de": "Nimm lieber eine Jacke mit."
+        },
+        "translations": {
+          "fa": "بهتره یک کت همراهت ببری."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_seasons_weather_plans_06"
+        ],
+        "cefr": "A2",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_seasons_weather_plans_01",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "slug": "a2-de-seasons_weather_plans-grammar-01",
+        "title": "wenn-Sätze für Bedingungen",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: wenn-Sätze für Bedingungen.",
+        "explanation": {
+          "fa": "در این درس ساختار «wenn-Sätze für Bedingungen» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Im Frühling ist es meistens milder als im Winter.",
+            "fa": "بهار معمولاً از زمستان ملایم‌تر است."
+          },
+          {
+            "de": "Laut Vorhersage wird es morgen windig.",
+            "fa": "طبق پیش‌بینی فردا هوا بادی می‌شود."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_seasons_weather_plans_02",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "slug": "a2-de-seasons_weather_plans-grammar-02",
+        "title": "Komparativ bei Wetterbeschreibungen",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: Komparativ bei Wetterbeschreibungen.",
+        "explanation": {
+          "fa": "در این درس ساختار «Komparativ bei Wetterbeschreibungen» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Wenn es trocken bleibt, fahren wir ans Meer.",
+            "fa": "اگر هوا خشک بماند، به کنار دریا می‌رویم."
+          },
+          {
+            "de": "Welche Jahreszeit magst du am liebsten?",
+            "fa": "کدام فصل را بیشتر دوست داری؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_seasons_weather_plans_01",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "title": "Wetter & Jahreszeiten · 1",
+        "setting": "weather",
+        "cefr": "A2",
+        "topic": "weather",
+        "characters": [
+          "Sofia",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Im Frühling ist es meistens milder als im Winter.",
+            "translation_fa": "بهار معمولاً از زمستان ملایم‌تر است."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Laut Vorhersage wird es morgen windig.",
+            "translation_fa": "طبق پیش‌بینی فردا هوا بادی می‌شود."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Ja, das passt gut zur Beschreibung.",
+            "translation_fa": "بله، با این توصیف جور است."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Interessant, das merke ich mir.",
+            "translation_fa": "جالبه، یادم می‌ماند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_seasons_weather_plans_01_mc",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بهار معمولاً از زمستان ملایم‌تر است.»؟"
+        },
+        "options": [
+          "Im Frühling ist es meistens milder als im Winter.",
+          "Laut Vorhersage wird es morgen windig.",
+          "Wenn es trocken bleibt, fahren wir ans Meer.",
+          "Welche Jahreszeit magst du am liebsten?"
+        ],
+        "answer": {
+          "value": "Im Frühling ist es meistens milder als im Winter."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Im Frühling ist es meistens milder als im Winter.» یعنی «بهار معمولاً از زمستان ملایم‌تر است.».",
+          "model_answer": "Im Frühling ist es meistens milder als im Winter."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_seasons_weather_plans_01_listen",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Im Frühling ist es meistens milder als im Winter."
+        },
+        "options": [
+          "بهار معمولاً از زمستان ملایم‌تر است.",
+          "طبق پیش‌بینی فردا هوا بادی می‌شود.",
+          "اگر هوا خشک بماند، به کنار دریا می‌رویم.",
+          "کدام فصل را بیشتر دوست داری؟"
+        ],
+        "answer": {
+          "value": "بهار معمولاً از زمستان ملایم‌تر است."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: بهار معمولاً از زمستان ملایم‌تر است.",
+          "model_answer": "Im Frühling ist es meistens milder als im Winter.",
+          "transcript_de": "Im Frühling ist es meistens milder als im Winter."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_seasons_weather_plans_01_speak",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Laut Vorhersage wird es morgen windig."
+        },
+        "answer": {
+          "expected_text": "Laut Vorhersage wird es morgen windig."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: طبق پیش‌بینی فردا هوا بادی می‌شود.",
+          "model_answer": "Laut Vorhersage wird es morgen windig."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_seasons_weather_plans_01_trans",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "طبق پیش‌بینی فردا هوا بادی می‌شود.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Laut Vorhersage wird es morgen windig."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Laut Vorhersage wird es morgen windig.",
+          "model_answer": "Laut Vorhersage wird es morgen windig."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_seasons_weather_plans_02",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "title": "Wetter & Jahreszeiten · 2",
+        "setting": "weather",
+        "cefr": "A2",
+        "topic": "weather",
+        "characters": [
+          "Nina",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Wenn es trocken bleibt, fahren wir ans Meer.",
+            "translation_fa": "اگر هوا خشک بماند، به کنار دریا می‌رویم."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Welche Jahreszeit magst du am liebsten?",
+            "translation_fa": "کدام فصل را بیشتر دوست داری؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Interessant, das merke ich mir.",
+            "translation_fa": "جالبه، یادم می‌ماند."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Ja, das passt gut zur Beschreibung.",
+            "translation_fa": "بله، با این توصیف جور است."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_seasons_weather_plans_02_mc",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «اگر هوا خشک بماند، به کنار دریا می‌رویم.»؟"
+        },
+        "options": [
+          "Wenn es trocken bleibt, fahren wir ans Meer.",
+          "Im Frühling ist es meistens milder als im Winter.",
+          "Laut Vorhersage wird es morgen windig.",
+          "Welche Jahreszeit magst du am liebsten?"
+        ],
+        "answer": {
+          "value": "Wenn es trocken bleibt, fahren wir ans Meer."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Wenn es trocken bleibt, fahren wir ans Meer.» یعنی «اگر هوا خشک بماند، به کنار دریا می‌رویم.».",
+          "model_answer": "Wenn es trocken bleibt, fahren wir ans Meer."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_seasons_weather_plans_02_listen",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wenn es trocken bleibt, fahren wir ans Meer."
+        },
+        "options": [
+          "اگر هوا خشک بماند، به کنار دریا می‌رویم.",
+          "بهار معمولاً از زمستان ملایم‌تر است.",
+          "طبق پیش‌بینی فردا هوا بادی می‌شود.",
+          "کدام فصل را بیشتر دوست داری؟"
+        ],
+        "answer": {
+          "value": "اگر هوا خشک بماند، به کنار دریا می‌رویم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: اگر هوا خشک بماند، به کنار دریا می‌رویم.",
+          "model_answer": "Wenn es trocken bleibt, fahren wir ans Meer.",
+          "transcript_de": "Wenn es trocken bleibt, fahren wir ans Meer."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_seasons_weather_plans_02_speak",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Welche Jahreszeit magst du am liebsten?"
+        },
+        "answer": {
+          "expected_text": "Welche Jahreszeit magst du am liebsten?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: کدام فصل را بیشتر دوست داری؟",
+          "model_answer": "Welche Jahreszeit magst du am liebsten?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_seasons_weather_plans_02_trans",
+      "data": {
+        "lesson_key": "a2-de-seasons-weather-plans-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "کدام فصل را بیشتر دوست داری؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Welche Jahreszeit magst du am liebsten?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Welche Jahreszeit magst du am liebsten?",
+          "model_answer": "Welche Jahreszeit magst du am liebsten?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

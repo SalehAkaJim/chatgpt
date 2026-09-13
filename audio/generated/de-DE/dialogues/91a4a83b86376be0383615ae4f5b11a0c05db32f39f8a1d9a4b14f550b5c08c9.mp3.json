@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "1d2b3713995639d47936b322e5cecfc5c1676c71e60fa5b43b3b1821bb92a77c",
+  "voice_id": "MTTjXkEpZepLTqO0xH0f",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "91a4a83b86376be0383615ae4f5b11a0c05db32f39f8a1d9a4b14f550b5c08c9",
+  "voice_key": "character:sofia:female_professional",
+  "voice_name": "Marlena Lark – Warm German Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "880d20492107bbeaf4f0dca3f52dfe123493175c503e32be2cfcc173a9e08a70",
+  "duration_ms": 1697,
+  "generated_at": "2026-09-13T06:58:53.701975+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "8621c924-6120-5d6b-845f-40818df2ae74",
+      "entity_key": "d_home_repairs_01:1"
+    }
+  ]
+}

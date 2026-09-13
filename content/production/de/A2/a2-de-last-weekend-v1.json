@@ -1,0 +1,966 @@
+{
+  "batch_id": "de-de-a2-last-weekend-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-last-weekend",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_last_weekend_01",
+      "data": {
+        "slug": "de_a2_last_weekend_01",
+        "lesson_key": "a2-de-last-weekend-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "besuchen"
+        },
+        "translations": {
+          "fa": "دیدن / سر زدن"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_last_weekend_01",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "lemma": "besuchen",
+        "display_lemma": "besuchen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_last_weekend_01"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_last_weekend_01",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "lexeme_ref": "lx_last_weekend_01",
+        "surface_form": "besuchen",
+        "display_form": "besuchen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_last_weekend_02",
+      "data": {
+        "slug": "de_a2_last_weekend_02",
+        "lesson_key": "a2-de-last-weekend-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "unternehmen"
+        },
+        "translations": {
+          "fa": "کاری تفریحی انجام دادن"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_last_weekend_02",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "lemma": "unternehmen",
+        "display_lemma": "unternehmen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_last_weekend_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_last_weekend_02",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "lexeme_ref": "lx_last_weekend_02",
+        "surface_form": "unternehmen",
+        "display_form": "unternehmen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_last_weekend_03",
+      "data": {
+        "slug": "de_a2_last_weekend_03",
+        "lesson_key": "a2-de-last-weekend-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "spazieren gehen"
+        },
+        "translations": {
+          "fa": "پیاده‌روی کردن"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_last_weekend_03",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "lemma": "spazieren gehen",
+        "display_lemma": "spazieren gehen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_last_weekend_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_last_weekend_03",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "lexeme_ref": "lx_last_weekend_03",
+        "surface_form": "spazieren gehen",
+        "display_form": "spazieren gehen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_last_weekend_04",
+      "data": {
+        "slug": "de_a2_last_weekend_04",
+        "lesson_key": "a2-de-last-weekend-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Ausflug"
+        },
+        "translations": {
+          "fa": "گردش"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_last_weekend_04",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "lemma": "Ausflug",
+        "display_lemma": "Ausflug",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_last_weekend_04"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "masculine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_last_weekend_04",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "lexeme_ref": "lx_last_weekend_04",
+        "surface_form": "Ausflug",
+        "display_form": "Ausflug",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_last_weekend_05",
+      "data": {
+        "slug": "de_a2_last_weekend_05",
+        "lesson_key": "a2-de-last-weekend-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "de": "gestern"
+        },
+        "translations": {
+          "fa": "دیروز"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_last_weekend_05",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "lemma": "gestern",
+        "display_lemma": "gestern",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "de_a2_last_weekend_05"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_last_weekend_05",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "lexeme_ref": "lx_last_weekend_05",
+        "surface_form": "gestern",
+        "display_form": "gestern",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_last_weekend_06",
+      "data": {
+        "slug": "de_a2_last_weekend_06",
+        "lesson_key": "a2-de-last-weekend-03",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "letztes Wochenende"
+        },
+        "translations": {
+          "fa": "آخر هفته قبل"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_last_weekend_06",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "lemma": "letztes Wochenende",
+        "display_lemma": "letztes Wochenende",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a2_last_weekend_06"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_last_weekend_06",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "lexeme_ref": "lx_last_weekend_06",
+        "surface_form": "letztes Wochenende",
+        "display_form": "letztes Wochenende",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_last_weekend_01",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "text": {
+          "de": "Was hast du letztes Wochenende gemacht?"
+        },
+        "translations": {
+          "fa": "آخر هفته قبل چه کار کردی؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_last_weekend_01"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_last_weekend_02",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "text": {
+          "de": "Ich habe Freunde besucht."
+        },
+        "translations": {
+          "fa": "به دیدن دوستانم رفتم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_last_weekend_02"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_last_weekend_03",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "text": {
+          "de": "Wir sind am See spazieren gegangen."
+        },
+        "translations": {
+          "fa": "کنار دریاچه پیاده‌روی کردیم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_last_weekend_03"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_last_weekend_04",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "text": {
+          "de": "Am Sonntag habe ich einfach zu Hause entspannt."
+        },
+        "translations": {
+          "fa": "یکشنبه فقط در خانه استراحت کردم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_last_weekend_04"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_last_weekend_05",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "text": {
+          "de": "Seid ihr mit dem Zug gefahren?"
+        },
+        "translations": {
+          "fa": "با قطار رفتید؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_last_weekend_05"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_last_weekend_06",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "text": {
+          "de": "Der Ausflug hat richtig Spaß gemacht."
+        },
+        "translations": {
+          "fa": "گردش واقعاً خوش گذشت."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_last_weekend_06"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_last_weekend_01",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "slug": "a2-de-last_weekend-grammar-01",
+        "title": "Perfekt mit haben und sein",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: Perfekt mit haben und sein.",
+        "explanation": {
+          "fa": "در این درس ساختار «Perfekt mit haben und sein» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Was hast du letztes Wochenende gemacht?",
+            "fa": "آخر هفته قبل چه کار کردی؟"
+          },
+          {
+            "de": "Ich habe Freunde besucht.",
+            "fa": "به دیدن دوستانم رفتم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_last_weekend_02",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "slug": "a2-de-last_weekend-grammar-02",
+        "title": "Partizip II häufiger Verben",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: Partizip II häufiger Verben.",
+        "explanation": {
+          "fa": "در این درس ساختار «Partizip II häufiger Verben» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Wir sind am See spazieren gegangen.",
+            "fa": "کنار دریاچه پیاده‌روی کردیم."
+          },
+          {
+            "de": "Am Sonntag habe ich einfach zu Hause entspannt.",
+            "fa": "یکشنبه فقط در خانه استراحت کردم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_last_weekend_01",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "title": "Letztes Wochenende · 1",
+        "setting": "common-actions",
+        "cefr": "A2",
+        "topic": "common-actions",
+        "characters": [
+          "Clara",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Was hast du letztes Wochenende gemacht?",
+            "translation_fa": "آخر هفته قبل چه کار کردی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Ich habe Freunde besucht.",
+            "translation_fa": "به دیدن دوستانم رفتم."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Das kenne ich auch.",
+            "translation_fa": "من هم این را تجربه کرده‌ام."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Dann war ja einiges los.",
+            "translation_fa": "پس حسابی اتفاق افتاده."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_01_mc",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «آخر هفته قبل چه کار کردی؟»؟"
+        },
+        "options": [
+          "Was hast du letztes Wochenende gemacht?",
+          "Ich habe Freunde besucht.",
+          "Wir sind am See spazieren gegangen.",
+          "Am Sonntag habe ich einfach zu Hause entspannt."
+        ],
+        "answer": {
+          "value": "Was hast du letztes Wochenende gemacht?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Was hast du letztes Wochenende gemacht?» یعنی «آخر هفته قبل چه کار کردی؟».",
+          "model_answer": "Was hast du letztes Wochenende gemacht?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_01_listen",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Was hast du letztes Wochenende gemacht?"
+        },
+        "options": [
+          "آخر هفته قبل چه کار کردی؟",
+          "به دیدن دوستانم رفتم.",
+          "کنار دریاچه پیاده‌روی کردیم.",
+          "یکشنبه فقط در خانه استراحت کردم."
+        ],
+        "answer": {
+          "value": "آخر هفته قبل چه کار کردی؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: آخر هفته قبل چه کار کردی؟",
+          "model_answer": "Was hast du letztes Wochenende gemacht?",
+          "transcript_de": "Was hast du letztes Wochenende gemacht?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_01_speak",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Ich habe Freunde besucht."
+        },
+        "answer": {
+          "expected_text": "Ich habe Freunde besucht."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: به دیدن دوستانم رفتم.",
+          "model_answer": "Ich habe Freunde besucht."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_01_trans",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "به دیدن دوستانم رفتم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ich habe Freunde besucht."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Ich habe Freunde besucht.",
+          "model_answer": "Ich habe Freunde besucht."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_last_weekend_02",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "title": "Letztes Wochenende · 2",
+        "setting": "common-actions",
+        "cefr": "A2",
+        "topic": "common-actions",
+        "characters": [
+          "Anna",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Wir sind am See spazieren gegangen.",
+            "translation_fa": "کنار دریاچه پیاده‌روی کردیم."
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Am Sonntag habe ich einfach zu Hause entspannt.",
+            "translation_fa": "یکشنبه فقط در خانه استراحت کردم."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Dann war ja einiges los.",
+            "translation_fa": "پس حسابی اتفاق افتاده."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Das kenne ich auch.",
+            "translation_fa": "من هم این را تجربه کرده‌ام."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_02_mc",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «کنار دریاچه پیاده‌روی کردیم.»؟"
+        },
+        "options": [
+          "Wir sind am See spazieren gegangen.",
+          "Was hast du letztes Wochenende gemacht?",
+          "Ich habe Freunde besucht.",
+          "Am Sonntag habe ich einfach zu Hause entspannt."
+        ],
+        "answer": {
+          "value": "Wir sind am See spazieren gegangen."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Wir sind am See spazieren gegangen.» یعنی «کنار دریاچه پیاده‌روی کردیم.».",
+          "model_answer": "Wir sind am See spazieren gegangen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_02_listen",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wir sind am See spazieren gegangen."
+        },
+        "options": [
+          "کنار دریاچه پیاده‌روی کردیم.",
+          "آخر هفته قبل چه کار کردی؟",
+          "به دیدن دوستانم رفتم.",
+          "یکشنبه فقط در خانه استراحت کردم."
+        ],
+        "answer": {
+          "value": "کنار دریاچه پیاده‌روی کردیم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: کنار دریاچه پیاده‌روی کردیم.",
+          "model_answer": "Wir sind am See spazieren gegangen.",
+          "transcript_de": "Wir sind am See spazieren gegangen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_02_speak",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Am Sonntag habe ich einfach zu Hause entspannt."
+        },
+        "answer": {
+          "expected_text": "Am Sonntag habe ich einfach zu Hause entspannt."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: یکشنبه فقط در خانه استراحت کردم.",
+          "model_answer": "Am Sonntag habe ich einfach zu Hause entspannt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_02_trans",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "یکشنبه فقط در خانه استراحت کردم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Am Sonntag habe ich einfach zu Hause entspannt."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Am Sonntag habe ich einfach zu Hause entspannt.",
+          "model_answer": "Am Sonntag habe ich einfach zu Hause entspannt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_last_weekend_03",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "title": "Letztes Wochenende · 3",
+        "setting": "common-actions",
+        "cefr": "A2",
+        "topic": "common-actions",
+        "characters": [
+          "Mia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Seid ihr mit dem Zug gefahren?",
+            "translation_fa": "با قطار رفتید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Der Ausflug hat richtig Spaß gemacht.",
+            "translation_fa": "گردش واقعاً خوش گذشت."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Das kenne ich auch.",
+            "translation_fa": "من هم این را تجربه کرده‌ام."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Dann war ja einiges los.",
+            "translation_fa": "پس حسابی اتفاق افتاده."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_03_mc",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «با قطار رفتید؟»؟"
+        },
+        "options": [
+          "Seid ihr mit dem Zug gefahren?",
+          "Was hast du letztes Wochenende gemacht?",
+          "Ich habe Freunde besucht.",
+          "Wir sind am See spazieren gegangen."
+        ],
+        "answer": {
+          "value": "Seid ihr mit dem Zug gefahren?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Seid ihr mit dem Zug gefahren?» یعنی «با قطار رفتید؟».",
+          "model_answer": "Seid ihr mit dem Zug gefahren?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_03_listen",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Seid ihr mit dem Zug gefahren?"
+        },
+        "options": [
+          "با قطار رفتید؟",
+          "آخر هفته قبل چه کار کردی؟",
+          "به دیدن دوستانم رفتم.",
+          "کنار دریاچه پیاده‌روی کردیم."
+        ],
+        "answer": {
+          "value": "با قطار رفتید؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: با قطار رفتید؟",
+          "model_answer": "Seid ihr mit dem Zug gefahren?",
+          "transcript_de": "Seid ihr mit dem Zug gefahren?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_03_speak",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Der Ausflug hat richtig Spaß gemacht."
+        },
+        "answer": {
+          "expected_text": "Der Ausflug hat richtig Spaß gemacht."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: گردش واقعاً خوش گذشت.",
+          "model_answer": "Der Ausflug hat richtig Spaß gemacht."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_last_weekend_03_trans",
+      "data": {
+        "lesson_key": "a2-de-last-weekend-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "گردش واقعاً خوش گذشت.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Der Ausflug hat richtig Spaß gemacht."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Der Ausflug hat richtig Spaß gemacht.",
+          "model_answer": "Der Ausflug hat richtig Spaß gemacht."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

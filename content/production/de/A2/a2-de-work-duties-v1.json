@@ -1,0 +1,972 @@
+{
+  "batch_id": "de-de-a2-work-duties-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-work-duties",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_work_duties_01",
+      "data": {
+        "slug": "de_a2_work_duties_01",
+        "lesson_key": "a2-de-work-duties-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Aufgabe"
+        },
+        "translations": {
+          "fa": "وظیفه"
+        },
+        "cefr": "A2",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_work_duties_01",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "lemma": "Aufgabe",
+        "display_lemma": "Aufgabe",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_work_duties_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_work_duties_01",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "lexeme_ref": "lx_work_duties_01",
+        "surface_form": "Aufgabe",
+        "display_form": "Aufgabe",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_work_duties_02",
+      "data": {
+        "slug": "de_a2_work_duties_02",
+        "lesson_key": "a2-de-work-duties-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "zuständig"
+        },
+        "translations": {
+          "fa": "مسئول"
+        },
+        "cefr": "A2",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_work_duties_02",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "lemma": "zuständig",
+        "display_lemma": "zuständig",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_work_duties_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_work_duties_02",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "lexeme_ref": "lx_work_duties_02",
+        "surface_form": "zuständig",
+        "display_form": "zuständig",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_work_duties_03",
+      "data": {
+        "slug": "de_a2_work_duties_03",
+        "lesson_key": "a2-de-work-duties-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Schicht"
+        },
+        "translations": {
+          "fa": "شیفت"
+        },
+        "cefr": "A2",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_work_duties_03",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "lemma": "Schicht",
+        "display_lemma": "Schicht",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_work_duties_03"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_work_duties_03",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "lexeme_ref": "lx_work_duties_03",
+        "surface_form": "Schicht",
+        "display_form": "Schicht",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_work_duties_04",
+      "data": {
+        "slug": "de_a2_work_duties_04",
+        "lesson_key": "a2-de-work-duties-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "pünktlich"
+        },
+        "translations": {
+          "fa": "سر وقت"
+        },
+        "cefr": "A2",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_work_duties_04",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "lemma": "pünktlich",
+        "display_lemma": "pünktlich",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_work_duties_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_work_duties_04",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "lexeme_ref": "lx_work_duties_04",
+        "surface_form": "pünktlich",
+        "display_form": "pünktlich",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_work_duties_05",
+      "data": {
+        "slug": "de_a2_work_duties_05",
+        "lesson_key": "a2-de-work-duties-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "erlaubt"
+        },
+        "translations": {
+          "fa": "مجاز"
+        },
+        "cefr": "A2",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_work_duties_05",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "lemma": "erlaubt",
+        "display_lemma": "erlaubt",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_work_duties_05"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_work_duties_05",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "lexeme_ref": "lx_work_duties_05",
+        "surface_form": "erlaubt",
+        "display_form": "erlaubt",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_work_duties_06",
+      "data": {
+        "slug": "de_a2_work_duties_06",
+        "lesson_key": "a2-de-work-duties-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Pause"
+        },
+        "translations": {
+          "fa": "استراحت"
+        },
+        "cefr": "A2",
+        "topic": "jobs",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_work_duties_06",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "lemma": "Pause",
+        "display_lemma": "Pause",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_work_duties_06"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_work_duties_06",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "lexeme_ref": "lx_work_duties_06",
+        "surface_form": "Pause",
+        "display_form": "Pause",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_work_duties_01",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "text": {
+          "de": "Ich bin für Kundenanfragen zuständig."
+        },
+        "translations": {
+          "fa": "مسئول درخواست‌های مشتریان هستم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_work_duties_01"
+        ],
+        "cefr": "A2",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_work_duties_02",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "text": {
+          "de": "Meine Schicht beginnt um acht Uhr."
+        },
+        "translations": {
+          "fa": "شیفتم ساعت هشت شروع می‌شود."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_work_duties_02"
+        ],
+        "cefr": "A2",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_work_duties_03",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "text": {
+          "de": "Wir müssen pünktlich anfangen."
+        },
+        "translations": {
+          "fa": "باید سر وقت شروع کنیم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_work_duties_03"
+        ],
+        "cefr": "A2",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_work_duties_04",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "text": {
+          "de": "Im Lager darf man keine privaten Telefonate führen."
+        },
+        "translations": {
+          "fa": "در انبار اجازه تماس شخصی نداریم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_work_duties_04"
+        ],
+        "cefr": "A2",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_work_duties_05",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "text": {
+          "de": "Wann machst du normalerweise Pause?"
+        },
+        "translations": {
+          "fa": "معمولاً چه زمانی استراحت می‌کنی؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_work_duties_05"
+        ],
+        "cefr": "A2",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_work_duties_06",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "text": {
+          "de": "Ich arbeite gern hier, weil das Team nett ist."
+        },
+        "translations": {
+          "fa": "اینجا را دوست دارم چون تیم خوب است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_work_duties_06"
+        ],
+        "cefr": "A2",
+        "topic": "jobs",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_work_duties_01",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "slug": "a2-de-work_duties-grammar-01",
+        "title": "müssen / dürfen / nicht dürfen",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: müssen / dürfen / nicht dürfen.",
+        "explanation": {
+          "fa": "در این درس ساختار «müssen / dürfen / nicht dürfen» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Ich bin für Kundenanfragen zuständig.",
+            "fa": "مسئول درخواست‌های مشتریان هستم."
+          },
+          {
+            "de": "Meine Schicht beginnt um acht Uhr.",
+            "fa": "شیفتم ساعت هشت شروع می‌شود."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_work_duties_02",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "slug": "a2-de-work_duties-grammar-02",
+        "title": "weil bei Begründungen",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: weil bei Begründungen.",
+        "explanation": {
+          "fa": "در این درس ساختار «weil bei Begründungen» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Wir müssen pünktlich anfangen.",
+            "fa": "باید سر وقت شروع کنیم."
+          },
+          {
+            "de": "Im Lager darf man keine privaten Telefonate führen.",
+            "fa": "در انبار اجازه تماس شخصی نداریم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_work_duties_01",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "title": "Aufgaben bei der Arbeit · 1",
+        "setting": "jobs",
+        "cefr": "A2",
+        "topic": "jobs",
+        "characters": [
+          "Anna",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Ich bin für Kundenanfragen zuständig.",
+            "translation_fa": "مسئول درخواست‌های مشتریان هستم."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Meine Schicht beginnt um acht Uhr.",
+            "translation_fa": "شیفتم ساعت هشت شروع می‌شود."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Das klingt sinnvoll.",
+            "translation_fa": "منطقی به نظر می‌رسد."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Gut, das probiere ich aus.",
+            "translation_fa": "خوب، امتحانش می‌کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_01_mc",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «مسئول درخواست‌های مشتریان هستم.»؟"
+        },
+        "options": [
+          "Ich bin für Kundenanfragen zuständig.",
+          "Meine Schicht beginnt um acht Uhr.",
+          "Wir müssen pünktlich anfangen.",
+          "Im Lager darf man keine privaten Telefonate führen."
+        ],
+        "answer": {
+          "value": "Ich bin für Kundenanfragen zuständig."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Ich bin für Kundenanfragen zuständig.» یعنی «مسئول درخواست‌های مشتریان هستم.».",
+          "model_answer": "Ich bin für Kundenanfragen zuständig."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_01_listen",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich bin für Kundenanfragen zuständig."
+        },
+        "options": [
+          "مسئول درخواست‌های مشتریان هستم.",
+          "شیفتم ساعت هشت شروع می‌شود.",
+          "باید سر وقت شروع کنیم.",
+          "در انبار اجازه تماس شخصی نداریم."
+        ],
+        "answer": {
+          "value": "مسئول درخواست‌های مشتریان هستم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: مسئول درخواست‌های مشتریان هستم.",
+          "model_answer": "Ich bin für Kundenanfragen zuständig.",
+          "transcript_de": "Ich bin für Kundenanfragen zuständig."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_01_speak",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Meine Schicht beginnt um acht Uhr."
+        },
+        "answer": {
+          "expected_text": "Meine Schicht beginnt um acht Uhr."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: شیفتم ساعت هشت شروع می‌شود.",
+          "model_answer": "Meine Schicht beginnt um acht Uhr."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_01_trans",
+      "data": {
+        "lesson_key": "a2-de-work-duties-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "شیفتم ساعت هشت شروع می‌شود.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Meine Schicht beginnt um acht Uhr."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Meine Schicht beginnt um acht Uhr.",
+          "model_answer": "Meine Schicht beginnt um acht Uhr."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_work_duties_02",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "title": "Aufgaben bei der Arbeit · 2",
+        "setting": "jobs",
+        "cefr": "A2",
+        "topic": "jobs",
+        "characters": [
+          "Mia",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Wir müssen pünktlich anfangen.",
+            "translation_fa": "باید سر وقت شروع کنیم."
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Im Lager darf man keine privaten Telefonate führen.",
+            "translation_fa": "در انبار اجازه تماس شخصی نداریم."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Gut, das probiere ich aus.",
+            "translation_fa": "خوب، امتحانش می‌کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Das klingt sinnvoll.",
+            "translation_fa": "منطقی به نظر می‌رسد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_02_mc",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «باید سر وقت شروع کنیم.»؟"
+        },
+        "options": [
+          "Wir müssen pünktlich anfangen.",
+          "Ich bin für Kundenanfragen zuständig.",
+          "Meine Schicht beginnt um acht Uhr.",
+          "Im Lager darf man keine privaten Telefonate führen."
+        ],
+        "answer": {
+          "value": "Wir müssen pünktlich anfangen."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Wir müssen pünktlich anfangen.» یعنی «باید سر وقت شروع کنیم.».",
+          "model_answer": "Wir müssen pünktlich anfangen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_02_listen",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wir müssen pünktlich anfangen."
+        },
+        "options": [
+          "باید سر وقت شروع کنیم.",
+          "مسئول درخواست‌های مشتریان هستم.",
+          "شیفتم ساعت هشت شروع می‌شود.",
+          "در انبار اجازه تماس شخصی نداریم."
+        ],
+        "answer": {
+          "value": "باید سر وقت شروع کنیم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: باید سر وقت شروع کنیم.",
+          "model_answer": "Wir müssen pünktlich anfangen.",
+          "transcript_de": "Wir müssen pünktlich anfangen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_02_speak",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Im Lager darf man keine privaten Telefonate führen."
+        },
+        "answer": {
+          "expected_text": "Im Lager darf man keine privaten Telefonate führen."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: در انبار اجازه تماس شخصی نداریم.",
+          "model_answer": "Im Lager darf man keine privaten Telefonate führen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_02_trans",
+      "data": {
+        "lesson_key": "a2-de-work-duties-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "در انبار اجازه تماس شخصی نداریم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Im Lager darf man keine privaten Telefonate führen."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Im Lager darf man keine privaten Telefonate führen.",
+          "model_answer": "Im Lager darf man keine privaten Telefonate führen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_work_duties_03",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "title": "Aufgaben bei der Arbeit · 3",
+        "setting": "jobs",
+        "cefr": "A2",
+        "topic": "jobs",
+        "characters": [
+          "Lea",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Wann machst du normalerweise Pause?",
+            "translation_fa": "معمولاً چه زمانی استراحت می‌کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Ich arbeite gern hier, weil das Team nett ist.",
+            "translation_fa": "اینجا را دوست دارم چون تیم خوب است."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Das klingt sinnvoll.",
+            "translation_fa": "منطقی به نظر می‌رسد."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Gut, das probiere ich aus.",
+            "translation_fa": "خوب، امتحانش می‌کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_03_mc",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «معمولاً چه زمانی استراحت می‌کنی؟»؟"
+        },
+        "options": [
+          "Wann machst du normalerweise Pause?",
+          "Ich bin für Kundenanfragen zuständig.",
+          "Meine Schicht beginnt um acht Uhr.",
+          "Wir müssen pünktlich anfangen."
+        ],
+        "answer": {
+          "value": "Wann machst du normalerweise Pause?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Wann machst du normalerweise Pause?» یعنی «معمولاً چه زمانی استراحت می‌کنی؟».",
+          "model_answer": "Wann machst du normalerweise Pause?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_03_listen",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wann machst du normalerweise Pause?"
+        },
+        "options": [
+          "معمولاً چه زمانی استراحت می‌کنی؟",
+          "مسئول درخواست‌های مشتریان هستم.",
+          "شیفتم ساعت هشت شروع می‌شود.",
+          "باید سر وقت شروع کنیم."
+        ],
+        "answer": {
+          "value": "معمولاً چه زمانی استراحت می‌کنی؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: معمولاً چه زمانی استراحت می‌کنی؟",
+          "model_answer": "Wann machst du normalerweise Pause?",
+          "transcript_de": "Wann machst du normalerweise Pause?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_03_speak",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Ich arbeite gern hier, weil das Team nett ist."
+        },
+        "answer": {
+          "expected_text": "Ich arbeite gern hier, weil das Team nett ist."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: اینجا را دوست دارم چون تیم خوب است.",
+          "model_answer": "Ich arbeite gern hier, weil das Team nett ist."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_work_duties_03_trans",
+      "data": {
+        "lesson_key": "a2-de-work-duties-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "اینجا را دوست دارم چون تیم خوب است.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ich arbeite gern hier, weil das Team nett ist."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Ich arbeite gern hier, weil das Team nett ist.",
+          "model_answer": "Ich arbeite gern hier, weil das Team nett ist."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

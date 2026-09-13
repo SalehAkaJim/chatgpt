@@ -1,0 +1,966 @@
+{
+  "batch_id": "de-de-a2-experiences-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-experiences",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_experiences_01",
+      "data": {
+        "slug": "de_a2_experiences_01",
+        "lesson_key": "a2-de-experiences-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Erfahrung"
+        },
+        "translations": {
+          "fa": "تجربه"
+        },
+        "cefr": "A2",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_experiences_01",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "lemma": "Erfahrung",
+        "display_lemma": "Erfahrung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_experiences_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_experiences_01",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "lexeme_ref": "lx_experiences_01",
+        "surface_form": "Erfahrung",
+        "display_form": "Erfahrung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_experiences_02",
+      "data": {
+        "slug": "de_a2_experiences_02",
+        "lesson_key": "a2-de-experiences-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "schon einmal"
+        },
+        "translations": {
+          "fa": "تا حالا"
+        },
+        "cefr": "A2",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_experiences_02",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "lemma": "schon einmal",
+        "display_lemma": "schon einmal",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a2_experiences_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_experiences_02",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "lexeme_ref": "lx_experiences_02",
+        "surface_form": "schon einmal",
+        "display_form": "schon einmal",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_experiences_03",
+      "data": {
+        "slug": "de_a2_experiences_03",
+        "lesson_key": "a2-de-experiences-03",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "noch nie"
+        },
+        "translations": {
+          "fa": "هرگز تا حالا"
+        },
+        "cefr": "A2",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_experiences_03",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "lemma": "noch nie",
+        "display_lemma": "noch nie",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a2_experiences_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_experiences_03",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "lexeme_ref": "lx_experiences_03",
+        "surface_form": "noch nie",
+        "display_form": "noch nie",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_experiences_04",
+      "data": {
+        "slug": "de_a2_experiences_04",
+        "lesson_key": "a2-de-experiences-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "ausprobieren"
+        },
+        "translations": {
+          "fa": "امتحان کردن"
+        },
+        "cefr": "A2",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_experiences_04",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "lemma": "ausprobieren",
+        "display_lemma": "ausprobieren",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_experiences_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_experiences_04",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "lexeme_ref": "lx_experiences_04",
+        "surface_form": "ausprobieren",
+        "display_form": "ausprobieren",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_experiences_05",
+      "data": {
+        "slug": "de_a2_experiences_05",
+        "lesson_key": "a2-de-experiences-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "reisen"
+        },
+        "translations": {
+          "fa": "سفر کردن"
+        },
+        "cefr": "A2",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_experiences_05",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "lemma": "reisen",
+        "display_lemma": "reisen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_experiences_05"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_experiences_05",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "lexeme_ref": "lx_experiences_05",
+        "surface_form": "reisen",
+        "display_form": "reisen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_experiences_06",
+      "data": {
+        "slug": "de_a2_experiences_06",
+        "lesson_key": "a2-de-experiences-03",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "besonders"
+        },
+        "translations": {
+          "fa": "خاص"
+        },
+        "cefr": "A2",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_experiences_06",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "lemma": "besonders",
+        "display_lemma": "besonders",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_experiences_06"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_experiences_06",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "lexeme_ref": "lx_experiences_06",
+        "surface_form": "besonders",
+        "display_form": "besonders",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_experiences_01",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "text": {
+          "de": "Warst du schon einmal in Österreich?"
+        },
+        "translations": {
+          "fa": "تا حالا اتریش بوده‌ای؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_experiences_01"
+        ],
+        "cefr": "A2",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_experiences_02",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "text": {
+          "de": "Nein, dort war ich noch nie."
+        },
+        "translations": {
+          "fa": "نه، تا حالا آنجا نبوده‌ام."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_experiences_02"
+        ],
+        "cefr": "A2",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_experiences_03",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "text": {
+          "de": "Ich habe schon einmal Ski ausprobiert."
+        },
+        "translations": {
+          "fa": "یک بار اسکی را امتحان کرده‌ام."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_experiences_03"
+        ],
+        "cefr": "A2",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_experiences_04",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "text": {
+          "de": "Wie hat es dir gefallen?"
+        },
+        "translations": {
+          "fa": "خوشت آمد؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_experiences_04"
+        ],
+        "cefr": "A2",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_experiences_05",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "text": {
+          "de": "Das war eine besondere Erfahrung."
+        },
+        "translations": {
+          "fa": "تجربه خاصی بود."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_experiences_05"
+        ],
+        "cefr": "A2",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_experiences_06",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "text": {
+          "de": "Welches Land möchtest du noch besuchen?"
+        },
+        "translations": {
+          "fa": "دوست داری هنوز کدام کشور را ببینی؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_experiences_06"
+        ],
+        "cefr": "A2",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_experiences_01",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "slug": "a2-de-experiences-grammar-01",
+        "title": "Perfekt mit schon / noch nie",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: Perfekt mit schon / noch nie.",
+        "explanation": {
+          "fa": "در این درس ساختار «Perfekt mit schon / noch nie» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Warst du schon einmal in Österreich?",
+            "fa": "تا حالا اتریش بوده‌ای؟"
+          },
+          {
+            "de": "Nein, dort war ich noch nie.",
+            "fa": "نه، تا حالا آنجا نبوده‌ام."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_experiences_02",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "slug": "a2-de-experiences-grammar-02",
+        "title": "warst du schon ...?",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: warst du schon ...?.",
+        "explanation": {
+          "fa": "در این درس ساختار «warst du schon ...?» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Ich habe schon einmal Ski ausprobiert.",
+            "fa": "یک بار اسکی را امتحان کرده‌ام."
+          },
+          {
+            "de": "Wie hat es dir gefallen?",
+            "fa": "خوشت آمد؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_experiences_01",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "title": "Erfahrungen im Leben · 1",
+        "setting": "hobbies",
+        "cefr": "A2",
+        "topic": "hobbies",
+        "characters": [
+          "Mia",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Warst du schon einmal in Österreich?",
+            "translation_fa": "تا حالا اتریش بوده‌ای؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Nein, dort war ich noch nie.",
+            "translation_fa": "نه، تا حالا آنجا نبوده‌ام."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Das klingt gut.",
+            "translation_fa": "خوب به نظر می‌رسد."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Dann machen wir das so.",
+            "translation_fa": "پس همین کار را می‌کنیم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_01_mc",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «تا حالا اتریش بوده‌ای؟»؟"
+        },
+        "options": [
+          "Warst du schon einmal in Österreich?",
+          "Nein, dort war ich noch nie.",
+          "Ich habe schon einmal Ski ausprobiert.",
+          "Wie hat es dir gefallen?"
+        ],
+        "answer": {
+          "value": "Warst du schon einmal in Österreich?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Warst du schon einmal in Österreich?» یعنی «تا حالا اتریش بوده‌ای؟».",
+          "model_answer": "Warst du schon einmal in Österreich?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_01_listen",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Warst du schon einmal in Österreich?"
+        },
+        "options": [
+          "تا حالا اتریش بوده‌ای؟",
+          "نه، تا حالا آنجا نبوده‌ام.",
+          "یک بار اسکی را امتحان کرده‌ام.",
+          "خوشت آمد؟"
+        ],
+        "answer": {
+          "value": "تا حالا اتریش بوده‌ای؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: تا حالا اتریش بوده‌ای؟",
+          "model_answer": "Warst du schon einmal in Österreich?",
+          "transcript_de": "Warst du schon einmal in Österreich?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_01_speak",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Nein, dort war ich noch nie."
+        },
+        "answer": {
+          "expected_text": "Nein, dort war ich noch nie."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: نه، تا حالا آنجا نبوده‌ام.",
+          "model_answer": "Nein, dort war ich noch nie."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_01_trans",
+      "data": {
+        "lesson_key": "a2-de-experiences-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "نه، تا حالا آنجا نبوده‌ام.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Nein, dort war ich noch nie."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Nein, dort war ich noch nie.",
+          "model_answer": "Nein, dort war ich noch nie."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_experiences_02",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "title": "Erfahrungen im Leben · 2",
+        "setting": "hobbies",
+        "cefr": "A2",
+        "topic": "hobbies",
+        "characters": [
+          "Lea",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Ich habe schon einmal Ski ausprobiert.",
+            "translation_fa": "یک بار اسکی را امتحان کرده‌ام."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Wie hat es dir gefallen?",
+            "translation_fa": "خوشت آمد؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Dann machen wir das so.",
+            "translation_fa": "پس همین کار را می‌کنیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Das klingt gut.",
+            "translation_fa": "خوب به نظر می‌رسد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_02_mc",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «یک بار اسکی را امتحان کرده‌ام.»؟"
+        },
+        "options": [
+          "Ich habe schon einmal Ski ausprobiert.",
+          "Warst du schon einmal in Österreich?",
+          "Nein, dort war ich noch nie.",
+          "Wie hat es dir gefallen?"
+        ],
+        "answer": {
+          "value": "Ich habe schon einmal Ski ausprobiert."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Ich habe schon einmal Ski ausprobiert.» یعنی «یک بار اسکی را امتحان کرده‌ام.».",
+          "model_answer": "Ich habe schon einmal Ski ausprobiert."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_02_listen",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich habe schon einmal Ski ausprobiert."
+        },
+        "options": [
+          "یک بار اسکی را امتحان کرده‌ام.",
+          "تا حالا اتریش بوده‌ای؟",
+          "نه، تا حالا آنجا نبوده‌ام.",
+          "خوشت آمد؟"
+        ],
+        "answer": {
+          "value": "یک بار اسکی را امتحان کرده‌ام."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: یک بار اسکی را امتحان کرده‌ام.",
+          "model_answer": "Ich habe schon einmal Ski ausprobiert.",
+          "transcript_de": "Ich habe schon einmal Ski ausprobiert."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_02_speak",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Wie hat es dir gefallen?"
+        },
+        "answer": {
+          "expected_text": "Wie hat es dir gefallen?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: خوشت آمد؟",
+          "model_answer": "Wie hat es dir gefallen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_02_trans",
+      "data": {
+        "lesson_key": "a2-de-experiences-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "خوشت آمد؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Wie hat es dir gefallen?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Wie hat es dir gefallen?",
+          "model_answer": "Wie hat es dir gefallen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_experiences_03",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "title": "Erfahrungen im Leben · 3",
+        "setting": "hobbies",
+        "cefr": "A2",
+        "topic": "hobbies",
+        "characters": [
+          "Sofia",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Das war eine besondere Erfahrung.",
+            "translation_fa": "تجربه خاصی بود."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Welches Land möchtest du noch besuchen?",
+            "translation_fa": "دوست داری هنوز کدام کشور را ببینی؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Das klingt gut.",
+            "translation_fa": "خوب به نظر می‌رسد."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Dann machen wir das so.",
+            "translation_fa": "پس همین کار را می‌کنیم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_03_mc",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «تجربه خاصی بود.»؟"
+        },
+        "options": [
+          "Das war eine besondere Erfahrung.",
+          "Warst du schon einmal in Österreich?",
+          "Nein, dort war ich noch nie.",
+          "Ich habe schon einmal Ski ausprobiert."
+        ],
+        "answer": {
+          "value": "Das war eine besondere Erfahrung."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Das war eine besondere Erfahrung.» یعنی «تجربه خاصی بود.».",
+          "model_answer": "Das war eine besondere Erfahrung."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_03_listen",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Das war eine besondere Erfahrung."
+        },
+        "options": [
+          "تجربه خاصی بود.",
+          "تا حالا اتریش بوده‌ای؟",
+          "نه، تا حالا آنجا نبوده‌ام.",
+          "یک بار اسکی را امتحان کرده‌ام."
+        ],
+        "answer": {
+          "value": "تجربه خاصی بود."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: تجربه خاصی بود.",
+          "model_answer": "Das war eine besondere Erfahrung.",
+          "transcript_de": "Das war eine besondere Erfahrung."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_03_speak",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Welches Land möchtest du noch besuchen?"
+        },
+        "answer": {
+          "expected_text": "Welches Land möchtest du noch besuchen?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: دوست داری هنوز کدام کشور را ببینی؟",
+          "model_answer": "Welches Land möchtest du noch besuchen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_experiences_03_trans",
+      "data": {
+        "lesson_key": "a2-de-experiences-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "دوست داری هنوز کدام کشور را ببینی؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Welches Land möchtest du noch besuchen?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Welches Land möchtest du noch besuchen?",
+          "model_answer": "Welches Land möchtest du noch besuchen?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

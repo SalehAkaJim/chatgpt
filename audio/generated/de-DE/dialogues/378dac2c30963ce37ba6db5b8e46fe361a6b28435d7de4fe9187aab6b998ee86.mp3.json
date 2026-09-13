@@ -1,0 +1,46 @@
+{
+  "source_text_hash": "d692d61dd41d4974e292219cc3bdcfbae38350559f5164aaac3499da2b24de65",
+  "voice_id": "NkMe1eztMQReztnhYfeX",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "378dac2c30963ce37ba6db5b8e46fe361a6b28435d7de4fe9187aab6b998ee86",
+  "voice_key": "character:nina:female_warm",
+  "voice_name": "Irene - Friendly and Approachable",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "bcbe6e2f4031596ea0b6cf7ebdbafbd8915ebb310ce0a8537434bf69581cbd7f",
+  "duration_ms": 2403,
+  "generated_at": "2026-09-13T05:26:45.364518+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "dac4141f-2e5b-5983-aba0-07d786aca441",
+      "entity_key": "d_accommodation_02:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "1a35e017-c603-59ef-b929-1e6ccf639411",
+      "entity_key": "d_detailed_directions_02:3"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "abe60d1d-1c92-56bc-95cf-1aa258371b3d",
+      "entity_key": "d_trip_planning_02:3"
+    }
+  ]
+}

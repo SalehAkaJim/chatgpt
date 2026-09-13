@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "54e668cb30ff137d400305dbcc0378d8486b28dd6b416944148a0c316e449067",
+  "voice_id": "fmj9wTxZg3ta4xR75kgB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d480d6e472543edb4fc36cf7e37ba60f58aa8ad10f6beac5c8a06a9e28813fa1",
+  "voice_key": "character:lukas:male_warm",
+  "voice_name": "Peter Stern – Friendly Agent",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "81bc139fc904306fe8b50c3f43b3c371ff3171ba190374f4328ebb272961882f",
+  "duration_ms": 3369,
+  "generated_at": "2026-09-13T06:17:13.013460+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "43efa6bb-e884-577a-9475-a77c89295455",
+      "entity_key": "d_housing_renting_01:4"
+    }
+  ]
+}

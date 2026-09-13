@@ -1,0 +1,1143 @@
+{
+  "batch_id": "de-de-b1-clubs-volunteering-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "B1",
+  "curriculum_unit": "b1-de-clubs-volunteering",
+  "generator": "gpt-5.6-sol:german-b1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_clubs_volunteering_01",
+      "data": {
+        "slug": "de_b1_clubs_volunteering_verein",
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Verein"
+        },
+        "translations": {
+          "fa": "انجمن / باشگاه"
+        },
+        "cefr": "B1",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_clubs_volunteering_01",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "lemma": "Verein",
+        "display_lemma": "Verein",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_verein"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_clubs_volunteering_01",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "lexeme_ref": "lx_clubs_volunteering_01",
+        "surface_form": "Verein",
+        "display_form": "Verein",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_clubs_volunteering_02",
+      "data": {
+        "slug": "de_b1_clubs_volunteering_mitglied",
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Mitglied"
+        },
+        "translations": {
+          "fa": "عضو"
+        },
+        "cefr": "B1",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_clubs_volunteering_02",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "lemma": "Mitglied",
+        "display_lemma": "Mitglied",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_mitglied"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "neuter",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_clubs_volunteering_02",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "lexeme_ref": "lx_clubs_volunteering_02",
+        "surface_form": "Mitglied",
+        "display_form": "Mitglied",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_clubs_volunteering_03",
+      "data": {
+        "slug": "de_b1_clubs_volunteering_ehrenamtlich",
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "de": "ehrenamtlich"
+        },
+        "translations": {
+          "fa": "داوطلبانه"
+        },
+        "cefr": "B1",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_clubs_volunteering_03",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "lemma": "ehrenamtlich",
+        "display_lemma": "ehrenamtlich",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_ehrenamtlich"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_clubs_volunteering_03",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "lexeme_ref": "lx_clubs_volunteering_03",
+        "surface_form": "ehrenamtlich",
+        "display_form": "ehrenamtlich",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_clubs_volunteering_04",
+      "data": {
+        "slug": "de_b1_clubs_volunteering_aufgabe",
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Aufgabe"
+        },
+        "translations": {
+          "fa": "وظیفه"
+        },
+        "cefr": "B1",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_clubs_volunteering_04",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "lemma": "Aufgabe",
+        "display_lemma": "Aufgabe",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_aufgabe"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "feminine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_clubs_volunteering_04",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "lexeme_ref": "lx_clubs_volunteering_04",
+        "surface_form": "Aufgabe",
+        "display_form": "Aufgabe",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_clubs_volunteering_05",
+      "data": {
+        "slug": "de_b1_clubs_volunteering_mitmachen",
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "mitmachen"
+        },
+        "translations": {
+          "fa": "شرکت کردن"
+        },
+        "cefr": "B1",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_clubs_volunteering_05",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "lemma": "mitmachen",
+        "display_lemma": "mitmachen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_mitmachen"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_clubs_volunteering_05",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "lexeme_ref": "lx_clubs_volunteering_05",
+        "surface_form": "mitmachen",
+        "display_form": "mitmachen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_clubs_volunteering_06",
+      "data": {
+        "slug": "de_b1_clubs_volunteering_beitrag",
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Beitrag"
+        },
+        "translations": {
+          "fa": "حق عضویت / سهم"
+        },
+        "cefr": "B1",
+        "topic": "hobbies",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_clubs_volunteering_06",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "lemma": "Beitrag",
+        "display_lemma": "Beitrag",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_beitrag"
+        ],
+        "cefr": "B1",
+        "grammatical_gender": "masculine",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_clubs_volunteering_06",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "lexeme_ref": "lx_clubs_volunteering_06",
+        "surface_form": "Beitrag",
+        "display_form": "Beitrag",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_clubs_volunteering_01",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "text": {
+          "de": "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein."
+        },
+        "translations": {
+          "fa": "یک سال است عضو یک باشگاه ورزشی کوچک هستم."
+        },
+        "intent": "describe_membership",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_verein",
+          "de_b1_clubs_volunteering_mitglied"
+        ],
+        "cefr": "B1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_clubs_volunteering_02",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "text": {
+          "de": "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen."
+        },
+        "translations": {
+          "fa": "انجمن دنبال اعضای جدیدی است که مرتب در برنامه‌ها کمک کنند."
+        },
+        "intent": "recruit_members",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_verein",
+          "de_b1_clubs_volunteering_mitglied"
+        ],
+        "cefr": "B1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_clubs_volunteering_03",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "text": {
+          "de": "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen."
+        },
+        "translations": {
+          "fa": "بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند."
+        },
+        "intent": "describe_volunteering",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_ehrenamtlich",
+          "de_b1_clubs_volunteering_aufgabe"
+        ],
+        "cefr": "B1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_clubs_volunteering_04",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "text": {
+          "de": "Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet."
+        },
+        "translations": {
+          "fa": "می‌توانم یک وظیفه را قبول کنم تا وقتی که هر شب وقت نگیرد."
+        },
+        "intent": "set_limit",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_aufgabe"
+        ],
+        "cefr": "B1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_clubs_volunteering_05",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "text": {
+          "de": "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen."
+        },
+        "translations": {
+          "fa": "اگر می‌خواهی اول فقط شرکت کنی، می‌توانی به یک جلسهٔ آزاد بیایی."
+        },
+        "intent": "invite_participation",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_mitmachen"
+        ],
+        "cefr": "B1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_clubs_volunteering_06",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "text": {
+          "de": "Der monatliche Beitrag ist niedrig, weil ein großer Teil der Arbeit freiwillig gemacht wird."
+        },
+        "translations": {
+          "fa": "حق عضویت ماهانه پایین است چون بخش بزرگی از کار داوطلبانه انجام می‌شود."
+        },
+        "intent": "explain_fee",
+        "concept_refs": [
+          "de_b1_clubs_volunteering_beitrag"
+        ],
+        "cefr": "B1",
+        "topic": "hobbies",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_clubs_volunteering_01",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "slug": "b1-de-clubs-volunteering-g1",
+        "title": "Relativsätze mit die/der/das",
+        "rule_summary": "Use relative clauses to describe members, groups or activities more precisely.",
+        "explanation": {
+          "fa": "برای توضیح دقیق‌تر اعضا، گروه‌ها یا فعالیت‌ها از جملهٔ موصولی استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Wir suchen Leute, die gern organisieren.",
+            "fa": "دنبال افرادی هستیم که از برنامه‌ریزی لذت می‌برند."
+          },
+          {
+            "de": "Das ist der Verein, der das Fest organisiert.",
+            "fa": "این همان انجمنی است که جشن را برگزار می‌کند."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_clubs_volunteering_02",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "slug": "b1-de-clubs-volunteering-g2",
+        "title": "Passiv für Aufgabenverteilung",
+        "rule_summary": "Use passive structures when the task is more important than the person doing it.",
+        "explanation": {
+          "fa": "وقتی خود وظیفه مهم‌تر از انجام‌دهنده است از ساختار مجهول استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Die Aufgaben werden im Team verteilt.",
+            "fa": "وظایف در تیم تقسیم می‌شوند."
+          },
+          {
+            "de": "Das Essen wird von Freiwilligen vorbereitet.",
+            "fa": "غذا توسط داوطلبان آماده می‌شود."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_clubs_volunteering_03",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "slug": "b1-de-clubs-volunteering-g3",
+        "title": "solange für Grenzen",
+        "rule_summary": "Use solange to say that something is possible only while a condition remains true.",
+        "explanation": {
+          "fa": "برای بیان اینکه چیزی تا وقتی یک شرط برقرار است ممکن می‌ماند از solange استفاده می‌کنیم."
+        },
+        "examples": [
+          {
+            "de": "Ich helfe mit, solange es zeitlich passt.",
+            "fa": "تا وقتی از نظر زمانی مناسب باشد کمک می‌کنم."
+          },
+          {
+            "de": "Du kannst teilnehmen, solange noch Plätze frei sind.",
+            "fa": "تا وقتی جا خالی هست می‌توانی شرکت کنی."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_clubs_volunteering_01",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "title": "Ein neuer Verein",
+        "setting": "Sporthalle",
+        "cefr": "B1",
+        "topic": "hobbies",
+        "characters": [
+          "Anna",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Du bist doch in diesem Sportverein, oder?",
+            "translation_fa": "تو عضو این باشگاه ورزشی هستی، درست است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Ja, seit letztem Jahr.",
+            "translation_fa": "بله، از سال گذشته."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Kann man einfach mal zu einem Training kommen?",
+            "translation_fa": "می‌شود فقط برای امتحان به یک تمرین آمد؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Klar, neue Mitglieder können zweimal kostenlos mitmachen.",
+            "translation_fa": "حتماً، اعضای جدید دو بار می‌توانند رایگان شرکت کنند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_clubs_volunteering_02",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "title": "Eine Aufgabe übernehmen",
+        "setting": "Vereinsraum",
+        "cefr": "B1",
+        "topic": "hobbies",
+        "characters": [
+          "Mia",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Für das Sommerfest brauchen wir noch jemanden für die Anmeldung.",
+            "translation_fa": "برای جشن تابستانی هنوز کسی را برای ثبت‌نام لازم داریم."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Ich könnte das übernehmen, wenn es nur am Samstag ist.",
+            "translation_fa": "اگر فقط شنبه باشد می‌توانم قبولش کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Ja, die anderen Aufgaben sind schon verteilt.",
+            "translation_fa": "بله، بقیه وظایف از قبل تقسیم شده‌اند."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Dann helfe ich gern ehrenamtlich mit.",
+            "translation_fa": "پس با کمال میل داوطلبانه کمک می‌کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_clubs_volunteering_03",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "title": "Wie viel kostet es?",
+        "setting": "Café",
+        "cefr": "B1",
+        "topic": "hobbies",
+        "characters": [
+          "Lea",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Wie hoch ist eigentlich der Mitgliedsbeitrag?",
+            "translation_fa": "حق عضویت چقدر است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Zwölf Euro im Monat.",
+            "translation_fa": "ماهانه دوازده یورو."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Das ist weniger, als ich erwartet hatte.",
+            "translation_fa": "کمتر از چیزی است که انتظار داشتم."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Viele Leute arbeiten ehrenamtlich, deshalb bleibt der Beitrag niedrig.",
+            "translation_fa": "خیلی‌ها داوطلبانه کار می‌کنند، برای همین حق عضویت پایین می‌ماند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_01_mc",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «یک سال است عضو یک باشگاه ورزشی کوچک هستم.»؟"
+        },
+        "options": [
+          "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein.",
+          "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen.",
+          "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen.",
+          "Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet."
+        ],
+        "answer": {
+          "value": "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein. — یک سال است عضو یک باشگاه ورزشی کوچک هستم.",
+          "model_answer": "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_01_listen",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein."
+        },
+        "options": [
+          "یک سال است عضو یک باشگاه ورزشی کوچک هستم.",
+          "انجمن دنبال اعضای جدیدی است که مرتب در برنامه‌ها کمک کنند.",
+          "بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند.",
+          "می‌توانم یک وظیفه را قبول کنم تا وقتی که هر شب وقت نگیرد."
+        ],
+        "answer": {
+          "value": "یک سال است عضو یک باشگاه ورزشی کوچک هستم."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein. — یک سال است عضو یک باشگاه ورزشی کوچک هستم.",
+          "model_answer": "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein.",
+          "transcript_de": "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_01_speak",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen."
+        },
+        "answer": {
+          "expected_text": "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen. — انجمن دنبال اعضای جدیدی است که مرتب در برنامه‌ها کمک کنند.",
+          "model_answer": "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_01_trans",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "انجمن دنبال اعضای جدیدی است که مرتب در برنامه‌ها کمک کنند.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen. — انجمن دنبال اعضای جدیدی است که مرتب در برنامه‌ها کمک کنند.",
+          "model_answer": "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_01_build",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "bin",
+            "seit",
+            "einem",
+            "Jahr",
+            "Mitglied",
+            "in",
+            "einem",
+            "kleinen",
+            "Sportverein.",
+            "Ich"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ich",
+            "bin",
+            "seit",
+            "einem",
+            "Jahr",
+            "Mitglied",
+            "in",
+            "einem",
+            "kleinen",
+            "Sportverein."
+          ],
+          "value": "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein. — یک سال است عضو یک باشگاه ورزشی کوچک هستم.",
+          "model_answer": "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_02_mc",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند.»؟"
+        },
+        "options": [
+          "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen.",
+          "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein.",
+          "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen.",
+          "Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet."
+        ],
+        "answer": {
+          "value": "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen. — بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند.",
+          "model_answer": "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_02_listen",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen."
+        },
+        "options": [
+          "بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند.",
+          "یک سال است عضو یک باشگاه ورزشی کوچک هستم.",
+          "انجمن دنبال اعضای جدیدی است که مرتب در برنامه‌ها کمک کنند.",
+          "می‌توانم یک وظیفه را قبول کنم تا وقتی که هر شب وقت نگیرد."
+        ],
+        "answer": {
+          "value": "بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen. — بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند.",
+          "model_answer": "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen.",
+          "transcript_de": "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_02_speak",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet."
+        },
+        "answer": {
+          "expected_text": "Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet. — می‌توانم یک وظیفه را قبول کنم تا وقتی که هر شب وقت نگیرد.",
+          "model_answer": "Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_02_trans",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "می‌توانم یک وظیفه را قبول کنم تا وقتی که هر شب وقت نگیرد.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet. — می‌توانم یک وظیفه را قبول کنم تا وقتی که هر شب وقت نگیرد.",
+          "model_answer": "Ich kann eine Aufgabe übernehmen, solange sie nicht jeden Abend Zeit kostet."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_02_build",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "Aufgaben",
+            "werden",
+            "ehrenamtlich",
+            "von",
+            "den",
+            "Mitgliedern",
+            "übernommen.",
+            "Viele"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Viele",
+            "Aufgaben",
+            "werden",
+            "ehrenamtlich",
+            "von",
+            "den",
+            "Mitgliedern",
+            "übernommen."
+          ],
+          "value": "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen. — بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند.",
+          "model_answer": "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_03_mc",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «اگر می‌خواهی اول فقط شرکت کنی، می‌توانی به یک جلسهٔ آزاد بیایی.»؟"
+        },
+        "options": [
+          "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen.",
+          "Ich bin seit einem Jahr Mitglied in einem kleinen Sportverein.",
+          "Der Verein sucht neue Mitglieder, die regelmäßig bei Veranstaltungen helfen.",
+          "Viele Aufgaben werden ehrenamtlich von den Mitgliedern übernommen."
+        ],
+        "answer": {
+          "value": "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen. — اگر می‌خواهی اول فقط شرکت کنی، می‌توانی به یک جلسهٔ آزاد بیایی.",
+          "model_answer": "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_03_listen",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen."
+        },
+        "options": [
+          "اگر می‌خواهی اول فقط شرکت کنی، می‌توانی به یک جلسهٔ آزاد بیایی.",
+          "یک سال است عضو یک باشگاه ورزشی کوچک هستم.",
+          "انجمن دنبال اعضای جدیدی است که مرتب در برنامه‌ها کمک کنند.",
+          "بسیاری از وظایف به‌صورت داوطلبانه توسط اعضا انجام می‌شوند."
+        ],
+        "answer": {
+          "value": "اگر می‌خواهی اول فقط شرکت کنی، می‌توانی به یک جلسهٔ آزاد بیایی."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen. — اگر می‌خواهی اول فقط شرکت کنی، می‌توانی به یک جلسهٔ آزاد بیایی.",
+          "model_answer": "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen.",
+          "transcript_de": "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_03_speak",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند و طبیعی بگو.",
+          "value": "Der monatliche Beitrag ist niedrig, weil ein großer Teil der Arbeit freiwillig gemacht wird."
+        },
+        "answer": {
+          "expected_text": "Der monatliche Beitrag ist niedrig, weil ein großer Teil der Arbeit freiwillig gemacht wird."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der monatliche Beitrag ist niedrig, weil ein großer Teil der Arbeit freiwillig gemacht wird. — حق عضویت ماهانه پایین است چون بخش بزرگی از کار داوطلبانه انجام می‌شود.",
+          "model_answer": "Der monatliche Beitrag ist niedrig, weil ein großer Teil der Arbeit freiwillig gemacht wird."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_03_trans",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "حق عضویت ماهانه پایین است چون بخش بزرگی از کار داوطلبانه انجام می‌شود.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Der monatliche Beitrag ist niedrig, weil ein großer Teil der Arbeit freiwillig gemacht wird."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Der monatliche Beitrag ist niedrig, weil ein großer Teil der Arbeit freiwillig gemacht wird. — حق عضویت ماهانه پایین است چون بخش بزرگی از کار داوطلبانه انجام می‌شود.",
+          "model_answer": "Der monatliche Beitrag ist niedrig, weil ein großer Teil der Arbeit freiwillig gemacht wird."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_clubs_volunteering_03_build",
+      "data": {
+        "lesson_key": "b1-de-clubs-volunteering-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمات را مرتب کن تا جملهٔ درست ساخته شود.",
+          "tokens": [
+            "du",
+            "erst",
+            "einmal",
+            "mitmachen",
+            "möchtest,",
+            "kannst",
+            "du",
+            "zu",
+            "einem",
+            "offenen",
+            "Treffen",
+            "kommen.",
+            "Wenn"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Wenn",
+            "du",
+            "erst",
+            "einmal",
+            "mitmachen",
+            "möchtest,",
+            "kannst",
+            "du",
+            "zu",
+            "einem",
+            "offenen",
+            "Treffen",
+            "kommen."
+          ],
+          "value": "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "feedback": {
+          "retry_tip_fa": "به معنی و ساختار جمله دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen. — اگر می‌خواهی اول فقط شرکت کنی، می‌توانی به یک جلسهٔ آزاد بیایی.",
+          "model_answer": "Wenn du erst einmal mitmachen möchtest, kannst du zu einem offenen Treffen kommen."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

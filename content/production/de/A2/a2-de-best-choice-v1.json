@@ -1,0 +1,826 @@
+{
+  "batch_id": "de-de-a2-best-choice-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-best-choice",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_best_choice_01",
+      "data": {
+        "slug": "de_a2_best_choice_01",
+        "lesson_key": "a2-de-best-choice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Wahl"
+        },
+        "translations": {
+          "fa": "انتخاب"
+        },
+        "cefr": "A2",
+        "topic": "prices",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_best_choice_01",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "lemma": "Wahl",
+        "display_lemma": "Wahl",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_best_choice_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_best_choice_01",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "lexeme_ref": "lx_best_choice_01",
+        "surface_form": "Wahl",
+        "display_form": "Wahl",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_best_choice_02",
+      "data": {
+        "slug": "de_a2_best_choice_02",
+        "lesson_key": "a2-de-best-choice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "empfehlen"
+        },
+        "translations": {
+          "fa": "پیشنهاد کردن"
+        },
+        "cefr": "A2",
+        "topic": "prices",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_best_choice_02",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "lemma": "empfehlen",
+        "display_lemma": "empfehlen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_best_choice_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_best_choice_02",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "lexeme_ref": "lx_best_choice_02",
+        "surface_form": "empfehlen",
+        "display_form": "empfehlen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_best_choice_03",
+      "data": {
+        "slug": "de_a2_best_choice_03",
+        "lesson_key": "a2-de-best-choice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "de": "am besten"
+        },
+        "translations": {
+          "fa": "بهترین"
+        },
+        "cefr": "A2",
+        "topic": "prices",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_best_choice_03",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "lemma": "am besten",
+        "display_lemma": "am besten",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "de_a2_best_choice_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_best_choice_03",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "lexeme_ref": "lx_best_choice_03",
+        "surface_form": "am besten",
+        "display_form": "am besten",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_best_choice_04",
+      "data": {
+        "slug": "de_a2_best_choice_04",
+        "lesson_key": "a2-de-best-choice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "praktisch"
+        },
+        "translations": {
+          "fa": "کاربردی"
+        },
+        "cefr": "A2",
+        "topic": "prices",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_best_choice_04",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "lemma": "praktisch",
+        "display_lemma": "praktisch",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_best_choice_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_best_choice_04",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "lexeme_ref": "lx_best_choice_04",
+        "surface_form": "praktisch",
+        "display_form": "praktisch",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_best_choice_05",
+      "data": {
+        "slug": "de_a2_best_choice_05",
+        "lesson_key": "a2-de-best-choice-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Vorteil"
+        },
+        "translations": {
+          "fa": "مزیت"
+        },
+        "cefr": "A2",
+        "topic": "prices",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_best_choice_05",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "lemma": "Vorteil",
+        "display_lemma": "Vorteil",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_best_choice_05"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "masculine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_best_choice_05",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "lexeme_ref": "lx_best_choice_05",
+        "surface_form": "Vorteil",
+        "display_form": "Vorteil",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_best_choice_06",
+      "data": {
+        "slug": "de_a2_best_choice_06",
+        "lesson_key": "a2-de-best-choice-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Preis-Leistungs-Verhältnis"
+        },
+        "translations": {
+          "fa": "ارزش نسبت به قیمت"
+        },
+        "cefr": "A2",
+        "topic": "prices",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_best_choice_06",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "lemma": "Preis-Leistungs-Verhältnis",
+        "display_lemma": "Preis-Leistungs-Verhältnis",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_best_choice_06"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_best_choice_06",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "lexeme_ref": "lx_best_choice_06",
+        "surface_form": "Preis-Leistungs-Verhältnis",
+        "display_form": "Preis-Leistungs-Verhältnis",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_best_choice_01",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "text": {
+          "de": "Welche Option ist am günstigsten?"
+        },
+        "translations": {
+          "fa": "کدام گزینه از همه ارزان‌تر است؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_best_choice_01"
+        ],
+        "cefr": "A2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_best_choice_02",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "text": {
+          "de": "Ich würde das mittlere Modell empfehlen."
+        },
+        "translations": {
+          "fa": "من مدل وسط را پیشنهاد می‌کنم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_best_choice_02"
+        ],
+        "cefr": "A2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_best_choice_03",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "text": {
+          "de": "Es hat das beste Preis-Leistungs-Verhältnis."
+        },
+        "translations": {
+          "fa": "بهترین ارزش نسبت به قیمت را دارد."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_best_choice_03"
+        ],
+        "cefr": "A2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_best_choice_04",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "text": {
+          "de": "Für eine kleine Wohnung ist dieses am praktischsten."
+        },
+        "translations": {
+          "fa": "برای خانه کوچک این یکی کاربردی‌ترین است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_best_choice_04"
+        ],
+        "cefr": "A2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_best_choice_05",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "text": {
+          "de": "Der größte Vorteil ist die lange Garantie."
+        },
+        "translations": {
+          "fa": "بزرگ‌ترین مزیت ضمانت طولانی است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_best_choice_05"
+        ],
+        "cefr": "A2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_best_choice_06",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "text": {
+          "de": "Ich nehme dieses, weil es leichter ist."
+        },
+        "translations": {
+          "fa": "این را می‌گیرم چون سبک‌تر است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_best_choice_06"
+        ],
+        "cefr": "A2",
+        "topic": "prices",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_best_choice_01",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "slug": "a2-de-best_choice-grammar-01",
+        "title": "Superlativ: am besten / der beste",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: Superlativ: am besten / der beste.",
+        "explanation": {
+          "fa": "در این درس ساختار «Superlativ: am besten / der beste» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Welche Option ist am günstigsten?",
+            "fa": "کدام گزینه از همه ارزان‌تر است؟"
+          },
+          {
+            "de": "Ich würde das mittlere Modell empfehlen.",
+            "fa": "من مدل وسط را پیشنهاد می‌کنم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_best_choice_02",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "slug": "a2-de-best_choice-grammar-02",
+        "title": "weil-Satz zur Begründung",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: weil-Satz zur Begründung.",
+        "explanation": {
+          "fa": "در این درس ساختار «weil-Satz zur Begründung» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Es hat das beste Preis-Leistungs-Verhältnis.",
+            "fa": "بهترین ارزش نسبت به قیمت را دارد."
+          },
+          {
+            "de": "Für eine kleine Wohnung ist dieses am praktischsten.",
+            "fa": "برای خانه کوچک این یکی کاربردی‌ترین است."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_best_choice_01",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "title": "Die beste Wahl · 1",
+        "setting": "prices",
+        "cefr": "A2",
+        "topic": "prices",
+        "characters": [
+          "Mia",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mia",
+            "text": "Welche Option ist am günstigsten?",
+            "translation_fa": "کدام گزینه از همه ارزان‌تر است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Ich würde das mittlere Modell empfehlen.",
+            "translation_fa": "من مدل وسط را پیشنهاد می‌کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Mia",
+            "text": "Dann nehme ich diese Variante.",
+            "translation_fa": "پس همین مدل را می‌گیرم."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Danke, das hilft mir bei der Entscheidung.",
+            "translation_fa": "ممنون، برای تصمیم‌گیری کمکم می‌کند."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_best_choice_01_mc",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «کدام گزینه از همه ارزان‌تر است؟»؟"
+        },
+        "options": [
+          "Welche Option ist am günstigsten?",
+          "Ich würde das mittlere Modell empfehlen.",
+          "Es hat das beste Preis-Leistungs-Verhältnis.",
+          "Für eine kleine Wohnung ist dieses am praktischsten."
+        ],
+        "answer": {
+          "value": "Welche Option ist am günstigsten?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Welche Option ist am günstigsten?» یعنی «کدام گزینه از همه ارزان‌تر است؟».",
+          "model_answer": "Welche Option ist am günstigsten?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_best_choice_01_listen",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Welche Option ist am günstigsten?"
+        },
+        "options": [
+          "کدام گزینه از همه ارزان‌تر است؟",
+          "من مدل وسط را پیشنهاد می‌کنم.",
+          "بهترین ارزش نسبت به قیمت را دارد.",
+          "برای خانه کوچک این یکی کاربردی‌ترین است."
+        ],
+        "answer": {
+          "value": "کدام گزینه از همه ارزان‌تر است؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: کدام گزینه از همه ارزان‌تر است؟",
+          "model_answer": "Welche Option ist am günstigsten?",
+          "transcript_de": "Welche Option ist am günstigsten?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_best_choice_01_speak",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Ich würde das mittlere Modell empfehlen."
+        },
+        "answer": {
+          "expected_text": "Ich würde das mittlere Modell empfehlen."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: من مدل وسط را پیشنهاد می‌کنم.",
+          "model_answer": "Ich würde das mittlere Modell empfehlen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_best_choice_01_trans",
+      "data": {
+        "lesson_key": "a2-de-best-choice-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "من مدل وسط را پیشنهاد می‌کنم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ich würde das mittlere Modell empfehlen."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Ich würde das mittlere Modell empfehlen.",
+          "model_answer": "Ich würde das mittlere Modell empfehlen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_best_choice_02",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "title": "Die beste Wahl · 2",
+        "setting": "prices",
+        "cefr": "A2",
+        "topic": "prices",
+        "characters": [
+          "Lea",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Es hat das beste Preis-Leistungs-Verhältnis.",
+            "translation_fa": "بهترین ارزش نسبت به قیمت را دارد."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Für eine kleine Wohnung ist dieses am praktischsten.",
+            "translation_fa": "برای خانه کوچک این یکی کاربردی‌ترین است."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Danke, das hilft mir bei der Entscheidung.",
+            "translation_fa": "ممنون، برای تصمیم‌گیری کمکم می‌کند."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Dann nehme ich diese Variante.",
+            "translation_fa": "پس همین مدل را می‌گیرم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_best_choice_02_mc",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بهترین ارزش نسبت به قیمت را دارد.»؟"
+        },
+        "options": [
+          "Es hat das beste Preis-Leistungs-Verhältnis.",
+          "Welche Option ist am günstigsten?",
+          "Ich würde das mittlere Modell empfehlen.",
+          "Für eine kleine Wohnung ist dieses am praktischsten."
+        ],
+        "answer": {
+          "value": "Es hat das beste Preis-Leistungs-Verhältnis."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Es hat das beste Preis-Leistungs-Verhältnis.» یعنی «بهترین ارزش نسبت به قیمت را دارد.».",
+          "model_answer": "Es hat das beste Preis-Leistungs-Verhältnis."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_best_choice_02_listen",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Es hat das beste Preis-Leistungs-Verhältnis."
+        },
+        "options": [
+          "بهترین ارزش نسبت به قیمت را دارد.",
+          "کدام گزینه از همه ارزان‌تر است؟",
+          "من مدل وسط را پیشنهاد می‌کنم.",
+          "برای خانه کوچک این یکی کاربردی‌ترین است."
+        ],
+        "answer": {
+          "value": "بهترین ارزش نسبت به قیمت را دارد."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: بهترین ارزش نسبت به قیمت را دارد.",
+          "model_answer": "Es hat das beste Preis-Leistungs-Verhältnis.",
+          "transcript_de": "Es hat das beste Preis-Leistungs-Verhältnis."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_best_choice_02_speak",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Für eine kleine Wohnung ist dieses am praktischsten."
+        },
+        "answer": {
+          "expected_text": "Für eine kleine Wohnung ist dieses am praktischsten."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: برای خانه کوچک این یکی کاربردی‌ترین است.",
+          "model_answer": "Für eine kleine Wohnung ist dieses am praktischsten."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_best_choice_02_trans",
+      "data": {
+        "lesson_key": "a2-de-best-choice-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "برای خانه کوچک این یکی کاربردی‌ترین است.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Für eine kleine Wohnung ist dieses am praktischsten."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Für eine kleine Wohnung ist dieses am praktischsten.",
+          "model_answer": "Für eine kleine Wohnung ist dieses am praktischsten."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

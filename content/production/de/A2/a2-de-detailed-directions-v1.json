@@ -1,0 +1,972 @@
+{
+  "batch_id": "de-de-a2-detailed-directions-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-detailed-directions",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_detailed_directions_01",
+      "data": {
+        "slug": "de_a2_detailed_directions_01",
+        "lesson_key": "a2-de-detailed-directions-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Kreuzung"
+        },
+        "translations": {
+          "fa": "تقاطع"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_detailed_directions_01",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "lemma": "Kreuzung",
+        "display_lemma": "Kreuzung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_detailed_directions_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_detailed_directions_01",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "lexeme_ref": "lx_detailed_directions_01",
+        "surface_form": "Kreuzung",
+        "display_form": "Kreuzung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_detailed_directions_02",
+      "data": {
+        "slug": "de_a2_detailed_directions_02",
+        "lesson_key": "a2-de-detailed-directions-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "vorbeigehen"
+        },
+        "translations": {
+          "fa": "از کنار رد شدن"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_detailed_directions_02",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "lemma": "vorbeigehen",
+        "display_lemma": "vorbeigehen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_detailed_directions_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_detailed_directions_02",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "lexeme_ref": "lx_detailed_directions_02",
+        "surface_form": "vorbeigehen",
+        "display_form": "vorbeigehen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_detailed_directions_03",
+      "data": {
+        "slug": "de_a2_detailed_directions_03",
+        "lesson_key": "a2-de-detailed-directions-03",
+        "concept_type": "lexical",
+        "part_of_speech": "preposition",
+        "forms": {
+          "de": "gegenüber"
+        },
+        "translations": {
+          "fa": "روبروی"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_detailed_directions_03",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "lemma": "gegenüber",
+        "display_lemma": "gegenüber",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "preposition",
+        "concept_refs": [
+          "de_a2_detailed_directions_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_detailed_directions_03",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "lexeme_ref": "lx_detailed_directions_03",
+        "surface_form": "gegenüber",
+        "display_form": "gegenüber",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_detailed_directions_04",
+      "data": {
+        "slug": "de_a2_detailed_directions_04",
+        "lesson_key": "a2-de-detailed-directions-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "de": "überqueren"
+        },
+        "translations": {
+          "fa": "عبور کردن"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_detailed_directions_04",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "lemma": "überqueren",
+        "display_lemma": "überqueren",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "de_a2_detailed_directions_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_detailed_directions_04",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "lexeme_ref": "lx_detailed_directions_04",
+        "surface_form": "überqueren",
+        "display_form": "überqueren",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_detailed_directions_05",
+      "data": {
+        "slug": "de_a2_detailed_directions_05",
+        "lesson_key": "a2-de-detailed-directions-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Ampel"
+        },
+        "translations": {
+          "fa": "چراغ راهنمایی"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_detailed_directions_05",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "lemma": "Ampel",
+        "display_lemma": "Ampel",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_detailed_directions_05"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_detailed_directions_05",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "lexeme_ref": "lx_detailed_directions_05",
+        "surface_form": "Ampel",
+        "display_form": "Ampel",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_detailed_directions_06",
+      "data": {
+        "slug": "de_a2_detailed_directions_06",
+        "lesson_key": "a2-de-detailed-directions-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Ecke"
+        },
+        "translations": {
+          "fa": "گوشه"
+        },
+        "cefr": "A2",
+        "topic": "directions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_detailed_directions_06",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "lemma": "Ecke",
+        "display_lemma": "Ecke",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_detailed_directions_06"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_detailed_directions_06",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "lexeme_ref": "lx_detailed_directions_06",
+        "surface_form": "Ecke",
+        "display_form": "Ecke",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_detailed_directions_01",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "text": {
+          "de": "Gehen Sie bis zur nächsten Kreuzung geradeaus."
+        },
+        "translations": {
+          "fa": "تا تقاطع بعدی مستقیم بروید."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_detailed_directions_01"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_detailed_directions_02",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "text": {
+          "de": "Dann gehen Sie an der Apotheke vorbei."
+        },
+        "translations": {
+          "fa": "بعد از کنار داروخانه رد شوید."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_detailed_directions_02"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_detailed_directions_03",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "text": {
+          "de": "Überqueren Sie die Straße an der Ampel."
+        },
+        "translations": {
+          "fa": "از خیابان در چراغ راهنمایی عبور کنید."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_detailed_directions_03"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_detailed_directions_04",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "text": {
+          "de": "Das Museum liegt gegenüber dem Park."
+        },
+        "translations": {
+          "fa": "موزه روبروی پارک است."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_detailed_directions_04"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_detailed_directions_05",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "text": {
+          "de": "Biegen Sie an der zweiten Ecke links ab."
+        },
+        "translations": {
+          "fa": "سر دومین کوچه به چپ بپیچید."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_detailed_directions_05"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_detailed_directions_06",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "text": {
+          "de": "Ist es von hier weit zu Fuß?"
+        },
+        "translations": {
+          "fa": "از اینجا پیاده خیلی دور است؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_detailed_directions_06"
+        ],
+        "cefr": "A2",
+        "topic": "directions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_detailed_directions_01",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "slug": "a2-de-detailed_directions-grammar-01",
+        "title": "bis zu / an ... vorbei / über",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: bis zu / an ... vorbei / über.",
+        "explanation": {
+          "fa": "در این درس ساختار «bis zu / an ... vorbei / über» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Gehen Sie bis zur nächsten Kreuzung geradeaus.",
+            "fa": "تا تقاطع بعدی مستقیم بروید."
+          },
+          {
+            "de": "Dann gehen Sie an der Apotheke vorbei.",
+            "fa": "بعد از کنار داروخانه رد شوید."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_detailed_directions_02",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "slug": "a2-de-detailed_directions-grammar-02",
+        "title": "wohin + Akkusativ bei Richtung",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: wohin + Akkusativ bei Richtung.",
+        "explanation": {
+          "fa": "در این درس ساختار «wohin + Akkusativ bei Richtung» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Überqueren Sie die Straße an der Ampel.",
+            "fa": "از خیابان در چراغ راهنمایی عبور کنید."
+          },
+          {
+            "de": "Das Museum liegt gegenüber dem Park.",
+            "fa": "موزه روبروی پارک است."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_detailed_directions_01",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "title": "Genauere Wegbeschreibung · 1",
+        "setting": "directions",
+        "cefr": "A2",
+        "topic": "directions",
+        "characters": [
+          "Sofia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Gehen Sie bis zur nächsten Kreuzung geradeaus.",
+            "translation_fa": "تا تقاطع بعدی مستقیم بروید."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Dann gehen Sie an der Apotheke vorbei.",
+            "translation_fa": "بعد از کنار داروخانه رد شوید."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_01_mc",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «تا تقاطع بعدی مستقیم بروید.»؟"
+        },
+        "options": [
+          "Gehen Sie bis zur nächsten Kreuzung geradeaus.",
+          "Dann gehen Sie an der Apotheke vorbei.",
+          "Überqueren Sie die Straße an der Ampel.",
+          "Das Museum liegt gegenüber dem Park."
+        ],
+        "answer": {
+          "value": "Gehen Sie bis zur nächsten Kreuzung geradeaus."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Gehen Sie bis zur nächsten Kreuzung geradeaus.» یعنی «تا تقاطع بعدی مستقیم بروید.».",
+          "model_answer": "Gehen Sie bis zur nächsten Kreuzung geradeaus."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_01_listen",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Gehen Sie bis zur nächsten Kreuzung geradeaus."
+        },
+        "options": [
+          "تا تقاطع بعدی مستقیم بروید.",
+          "بعد از کنار داروخانه رد شوید.",
+          "از خیابان در چراغ راهنمایی عبور کنید.",
+          "موزه روبروی پارک است."
+        ],
+        "answer": {
+          "value": "تا تقاطع بعدی مستقیم بروید."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: تا تقاطع بعدی مستقیم بروید.",
+          "model_answer": "Gehen Sie bis zur nächsten Kreuzung geradeaus.",
+          "transcript_de": "Gehen Sie bis zur nächsten Kreuzung geradeaus."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_01_speak",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Dann gehen Sie an der Apotheke vorbei."
+        },
+        "answer": {
+          "expected_text": "Dann gehen Sie an der Apotheke vorbei."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: بعد از کنار داروخانه رد شوید.",
+          "model_answer": "Dann gehen Sie an der Apotheke vorbei."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_01_trans",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "بعد از کنار داروخانه رد شوید.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Dann gehen Sie an der Apotheke vorbei."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Dann gehen Sie an der Apotheke vorbei.",
+          "model_answer": "Dann gehen Sie an der Apotheke vorbei."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_detailed_directions_02",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "title": "Genauere Wegbeschreibung · 2",
+        "setting": "directions",
+        "cefr": "A2",
+        "topic": "directions",
+        "characters": [
+          "Nina",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Überqueren Sie die Straße an der Ampel.",
+            "translation_fa": "از خیابان در چراغ راهنمایی عبور کنید."
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Das Museum liegt gegenüber dem Park.",
+            "translation_fa": "موزه روبروی پارک است."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_02_mc",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «از خیابان در چراغ راهنمایی عبور کنید.»؟"
+        },
+        "options": [
+          "Überqueren Sie die Straße an der Ampel.",
+          "Gehen Sie bis zur nächsten Kreuzung geradeaus.",
+          "Dann gehen Sie an der Apotheke vorbei.",
+          "Das Museum liegt gegenüber dem Park."
+        ],
+        "answer": {
+          "value": "Überqueren Sie die Straße an der Ampel."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Überqueren Sie die Straße an der Ampel.» یعنی «از خیابان در چراغ راهنمایی عبور کنید.».",
+          "model_answer": "Überqueren Sie die Straße an der Ampel."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_02_listen",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Überqueren Sie die Straße an der Ampel."
+        },
+        "options": [
+          "از خیابان در چراغ راهنمایی عبور کنید.",
+          "تا تقاطع بعدی مستقیم بروید.",
+          "بعد از کنار داروخانه رد شوید.",
+          "موزه روبروی پارک است."
+        ],
+        "answer": {
+          "value": "از خیابان در چراغ راهنمایی عبور کنید."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: از خیابان در چراغ راهنمایی عبور کنید.",
+          "model_answer": "Überqueren Sie die Straße an der Ampel.",
+          "transcript_de": "Überqueren Sie die Straße an der Ampel."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_02_speak",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Das Museum liegt gegenüber dem Park."
+        },
+        "answer": {
+          "expected_text": "Das Museum liegt gegenüber dem Park."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: موزه روبروی پارک است.",
+          "model_answer": "Das Museum liegt gegenüber dem Park."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_02_trans",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "موزه روبروی پارک است.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Das Museum liegt gegenüber dem Park."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Das Museum liegt gegenüber dem Park.",
+          "model_answer": "Das Museum liegt gegenüber dem Park."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_detailed_directions_03",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "title": "Genauere Wegbeschreibung · 3",
+        "setting": "directions",
+        "cefr": "A2",
+        "topic": "directions",
+        "characters": [
+          "Clara",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Biegen Sie an der zweiten Ecke links ab.",
+            "translation_fa": "سر دومین کوچه به چپ بپیچید."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Ist es von hier weit zu Fuß?",
+            "translation_fa": "از اینجا پیاده خیلی دور است؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_03_mc",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «سر دومین کوچه به چپ بپیچید.»؟"
+        },
+        "options": [
+          "Biegen Sie an der zweiten Ecke links ab.",
+          "Gehen Sie bis zur nächsten Kreuzung geradeaus.",
+          "Dann gehen Sie an der Apotheke vorbei.",
+          "Überqueren Sie die Straße an der Ampel."
+        ],
+        "answer": {
+          "value": "Biegen Sie an der zweiten Ecke links ab."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Biegen Sie an der zweiten Ecke links ab.» یعنی «سر دومین کوچه به چپ بپیچید.».",
+          "model_answer": "Biegen Sie an der zweiten Ecke links ab."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_03_listen",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Biegen Sie an der zweiten Ecke links ab."
+        },
+        "options": [
+          "سر دومین کوچه به چپ بپیچید.",
+          "تا تقاطع بعدی مستقیم بروید.",
+          "بعد از کنار داروخانه رد شوید.",
+          "از خیابان در چراغ راهنمایی عبور کنید."
+        ],
+        "answer": {
+          "value": "سر دومین کوچه به چپ بپیچید."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: سر دومین کوچه به چپ بپیچید.",
+          "model_answer": "Biegen Sie an der zweiten Ecke links ab.",
+          "transcript_de": "Biegen Sie an der zweiten Ecke links ab."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_03_speak",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Ist es von hier weit zu Fuß?"
+        },
+        "answer": {
+          "expected_text": "Ist es von hier weit zu Fuß?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: از اینجا پیاده خیلی دور است؟",
+          "model_answer": "Ist es von hier weit zu Fuß?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_detailed_directions_03_trans",
+      "data": {
+        "lesson_key": "a2-de-detailed-directions-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "از اینجا پیاده خیلی دور است؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ist es von hier weit zu Fuß?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Ist es von hier weit zu Fuß?",
+          "model_answer": "Ist es von hier weit zu Fuß?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "batch_id": "de-de-a2-sequencing-time-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-sequencing-time",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_sequencing_time_01",
+      "data": {
+        "slug": "de_a2_sequencing_time_01",
+        "lesson_key": "a2-de-sequencing-time-01",
+        "concept_type": "lexical",
+        "part_of_speech": "conjunction",
+        "forms": {
+          "de": "bevor"
+        },
+        "translations": {
+          "fa": "قبل از اینکه"
+        },
+        "cefr": "A2",
+        "topic": "time",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_sequencing_time_01",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "lemma": "bevor",
+        "display_lemma": "bevor",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "conjunction",
+        "concept_refs": [
+          "de_a2_sequencing_time_01"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_sequencing_time_01",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "lexeme_ref": "lx_sequencing_time_01",
+        "surface_form": "bevor",
+        "display_form": "bevor",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_sequencing_time_02",
+      "data": {
+        "slug": "de_a2_sequencing_time_02",
+        "lesson_key": "a2-de-sequencing-time-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "de": "danach"
+        },
+        "translations": {
+          "fa": "بعد از آن"
+        },
+        "cefr": "A2",
+        "topic": "time",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_sequencing_time_02",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "lemma": "danach",
+        "display_lemma": "danach",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "de_a2_sequencing_time_02"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_sequencing_time_02",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "lexeme_ref": "lx_sequencing_time_02",
+        "surface_form": "danach",
+        "display_form": "danach",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_sequencing_time_03",
+      "data": {
+        "slug": "de_a2_sequencing_time_03",
+        "lesson_key": "a2-de-sequencing-time-01",
+        "concept_type": "lexical",
+        "part_of_speech": "preposition",
+        "forms": {
+          "de": "während"
+        },
+        "translations": {
+          "fa": "در طول"
+        },
+        "cefr": "A2",
+        "topic": "time",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_sequencing_time_03",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "lemma": "während",
+        "display_lemma": "während",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "preposition",
+        "concept_refs": [
+          "de_a2_sequencing_time_03"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_sequencing_time_03",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "lexeme_ref": "lx_sequencing_time_03",
+        "surface_form": "während",
+        "display_form": "während",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_sequencing_time_04",
+      "data": {
+        "slug": "de_a2_sequencing_time_04",
+        "lesson_key": "a2-de-sequencing-time-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "de": "später"
+        },
+        "translations": {
+          "fa": "بعدتر"
+        },
+        "cefr": "A2",
+        "topic": "time",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_sequencing_time_04",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "lemma": "später",
+        "display_lemma": "später",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "de_a2_sequencing_time_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_sequencing_time_04",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "lexeme_ref": "lx_sequencing_time_04",
+        "surface_form": "später",
+        "display_form": "später",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_sequencing_time_05",
+      "data": {
+        "slug": "de_a2_sequencing_time_05",
+        "lesson_key": "a2-de-sequencing-time-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "de": "rechtzeitig"
+        },
+        "translations": {
+          "fa": "به‌موقع"
+        },
+        "cefr": "A2",
+        "topic": "time",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_sequencing_time_05",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "lemma": "rechtzeitig",
+        "display_lemma": "rechtzeitig",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "de_a2_sequencing_time_05"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_sequencing_time_05",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "lexeme_ref": "lx_sequencing_time_05",
+        "surface_form": "rechtzeitig",
+        "display_form": "rechtzeitig",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_sequencing_time_06",
+      "data": {
+        "slug": "de_a2_sequencing_time_06",
+        "lesson_key": "a2-de-sequencing-time-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Reihenfolge"
+        },
+        "translations": {
+          "fa": "ترتیب"
+        },
+        "cefr": "A2",
+        "topic": "time",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_sequencing_time_06",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "lemma": "Reihenfolge",
+        "display_lemma": "Reihenfolge",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_sequencing_time_06"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_sequencing_time_06",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "lexeme_ref": "lx_sequencing_time_06",
+        "surface_form": "Reihenfolge",
+        "display_form": "Reihenfolge",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_sequencing_time_01",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "text": {
+          "de": "Bevor ich zur Arbeit gehe, trinke ich Kaffee."
+        },
+        "translations": {
+          "fa": "قبل از رفتن به سر کار قهوه می‌خورم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_sequencing_time_01"
+        ],
+        "cefr": "A2",
+        "topic": "time",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_sequencing_time_02",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "text": {
+          "de": "Danach fahre ich mit der U-Bahn."
+        },
+        "translations": {
+          "fa": "بعدش با مترو می‌روم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_sequencing_time_02"
+        ],
+        "cefr": "A2",
+        "topic": "time",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_sequencing_time_03",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "text": {
+          "de": "Später treffe ich eine Freundin."
+        },
+        "translations": {
+          "fa": "بعدتر یکی از دوستانم را می‌بینم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_sequencing_time_03"
+        ],
+        "cefr": "A2",
+        "topic": "time",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_sequencing_time_04",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "text": {
+          "de": "Bitte komm zehn Minuten früher."
+        },
+        "translations": {
+          "fa": "لطفاً ده دقیقه زودتر بیا."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_sequencing_time_04"
+        ],
+        "cefr": "A2",
+        "topic": "time",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_sequencing_time_05",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "text": {
+          "de": "Wir müssen rechtzeitig am Bahnhof sein."
+        },
+        "translations": {
+          "fa": "باید به‌موقع ایستگاه قطار باشیم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_sequencing_time_05"
+        ],
+        "cefr": "A2",
+        "topic": "time",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_sequencing_time_06",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "text": {
+          "de": "Am Ende des Tages bin ich oft müde."
+        },
+        "translations": {
+          "fa": "آخر روز معمولاً خسته‌ام."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_sequencing_time_06"
+        ],
+        "cefr": "A2",
+        "topic": "time",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_sequencing_time_01",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "slug": "a2-de-sequencing_time-grammar-01",
+        "title": "bevor / nachdem als Zeitverknüpfung",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: bevor / nachdem als Zeitverknüpfung.",
+        "explanation": {
+          "fa": "در این درس ساختار «bevor / nachdem als Zeitverknüpfung» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Bevor ich zur Arbeit gehe, trinke ich Kaffee.",
+            "fa": "قبل از رفتن به سر کار قهوه می‌خورم."
+          },
+          {
+            "de": "Danach fahre ich mit der U-Bahn.",
+            "fa": "بعدش با مترو می‌روم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_sequencing_time_02",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "slug": "a2-de-sequencing_time-grammar-02",
+        "title": "zuerst, dann, später, am Ende",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: zuerst, dann, später, am Ende.",
+        "explanation": {
+          "fa": "در این درس ساختار «zuerst, dann, später, am Ende» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Später treffe ich eine Freundin.",
+            "fa": "بعدتر یکی از دوستانم را می‌بینم."
+          },
+          {
+            "de": "Bitte komm zehn Minuten früher.",
+            "fa": "لطفاً ده دقیقه زودتر بیا."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_sequencing_time_01",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "title": "Reihenfolge & Zeit · 1",
+        "setting": "time",
+        "cefr": "A2",
+        "topic": "time",
+        "characters": [
+          "Clara",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Bevor ich zur Arbeit gehe, trinke ich Kaffee.",
+            "translation_fa": "قبل از رفتن به سر کار قهوه می‌خورم."
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Danach fahre ich mit der U-Bahn.",
+            "translation_fa": "بعدش با مترو می‌روم."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Gut, dann ist das geklärt.",
+            "translation_fa": "خوب، پس هماهنگ شد."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Perfekt, ich trage es ein.",
+            "translation_fa": "عالی، یادداشتش می‌کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_sequencing_time_01_mc",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «قبل از رفتن به سر کار قهوه می‌خورم.»؟"
+        },
+        "options": [
+          "Bevor ich zur Arbeit gehe, trinke ich Kaffee.",
+          "Danach fahre ich mit der U-Bahn.",
+          "Später treffe ich eine Freundin.",
+          "Bitte komm zehn Minuten früher."
+        ],
+        "answer": {
+          "value": "Bevor ich zur Arbeit gehe, trinke ich Kaffee."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Bevor ich zur Arbeit gehe, trinke ich Kaffee.» یعنی «قبل از رفتن به سر کار قهوه می‌خورم.».",
+          "model_answer": "Bevor ich zur Arbeit gehe, trinke ich Kaffee."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_sequencing_time_01_listen",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Bevor ich zur Arbeit gehe, trinke ich Kaffee."
+        },
+        "options": [
+          "قبل از رفتن به سر کار قهوه می‌خورم.",
+          "بعدش با مترو می‌روم.",
+          "بعدتر یکی از دوستانم را می‌بینم.",
+          "لطفاً ده دقیقه زودتر بیا."
+        ],
+        "answer": {
+          "value": "قبل از رفتن به سر کار قهوه می‌خورم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: قبل از رفتن به سر کار قهوه می‌خورم.",
+          "model_answer": "Bevor ich zur Arbeit gehe, trinke ich Kaffee.",
+          "transcript_de": "Bevor ich zur Arbeit gehe, trinke ich Kaffee."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_sequencing_time_01_speak",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Danach fahre ich mit der U-Bahn."
+        },
+        "answer": {
+          "expected_text": "Danach fahre ich mit der U-Bahn."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: بعدش با مترو می‌روم.",
+          "model_answer": "Danach fahre ich mit der U-Bahn."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_sequencing_time_01_trans",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "بعدش با مترو می‌روم.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Danach fahre ich mit der U-Bahn."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Danach fahre ich mit der U-Bahn.",
+          "model_answer": "Danach fahre ich mit der U-Bahn."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_sequencing_time_02",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "title": "Reihenfolge & Zeit · 2",
+        "setting": "time",
+        "cefr": "A2",
+        "topic": "time",
+        "characters": [
+          "Anna",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Anna",
+            "text": "Später treffe ich eine Freundin.",
+            "translation_fa": "بعدتر یکی از دوستانم را می‌بینم."
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Bitte komm zehn Minuten früher.",
+            "translation_fa": "لطفاً ده دقیقه زودتر بیا."
+          },
+          {
+            "order": 3,
+            "speaker": "Anna",
+            "text": "Perfekt, ich trage es ein.",
+            "translation_fa": "عالی، یادداشتش می‌کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Gut, dann ist das geklärt.",
+            "translation_fa": "خوب، پس هماهنگ شد."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_sequencing_time_02_mc",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «بعدتر یکی از دوستانم را می‌بینم.»؟"
+        },
+        "options": [
+          "Später treffe ich eine Freundin.",
+          "Bevor ich zur Arbeit gehe, trinke ich Kaffee.",
+          "Danach fahre ich mit der U-Bahn.",
+          "Bitte komm zehn Minuten früher."
+        ],
+        "answer": {
+          "value": "Später treffe ich eine Freundin."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Später treffe ich eine Freundin.» یعنی «بعدتر یکی از دوستانم را می‌بینم.».",
+          "model_answer": "Später treffe ich eine Freundin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_sequencing_time_02_listen",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Später treffe ich eine Freundin."
+        },
+        "options": [
+          "بعدتر یکی از دوستانم را می‌بینم.",
+          "قبل از رفتن به سر کار قهوه می‌خورم.",
+          "بعدش با مترو می‌روم.",
+          "لطفاً ده دقیقه زودتر بیا."
+        ],
+        "answer": {
+          "value": "بعدتر یکی از دوستانم را می‌بینم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: بعدتر یکی از دوستانم را می‌بینم.",
+          "model_answer": "Später treffe ich eine Freundin.",
+          "transcript_de": "Später treffe ich eine Freundin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_sequencing_time_02_speak",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Bitte komm zehn Minuten früher."
+        },
+        "answer": {
+          "expected_text": "Bitte komm zehn Minuten früher."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: لطفاً ده دقیقه زودتر بیا.",
+          "model_answer": "Bitte komm zehn Minuten früher."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_sequencing_time_02_trans",
+      "data": {
+        "lesson_key": "a2-de-sequencing-time-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "لطفاً ده دقیقه زودتر بیا.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Bitte komm zehn Minuten früher."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Bitte komm zehn Minuten früher.",
+          "model_answer": "Bitte komm zehn Minuten früher."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

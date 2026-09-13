@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "0f443e19460c6f616606f634957552678f3225b35a0bb44cbe8c4bb78852a419",
+  "voice_id": "MbbPUteESkJWr4IAaW35",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1c6b17a993df7ad09ca6cd2b89b48b8ca9c106471c42762c06e2ed3ca6fff9af",
+  "voice_key": "character:noah:male_professional",
+  "voice_name": "Felix - Direct and Clear",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "professional"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "1ed4669a018cd87300930e6918a34e2eab7a3a64b365541b6116bf40d740d604",
+  "duration_ms": 2115,
+  "generated_at": "2026-09-13T06:58:25.647071+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f91e7fb3-c834-5c59-9ef3-c13226bee17c",
+      "entity_key": "d_home_repairs_01:4"
+    }
+  ]
+}

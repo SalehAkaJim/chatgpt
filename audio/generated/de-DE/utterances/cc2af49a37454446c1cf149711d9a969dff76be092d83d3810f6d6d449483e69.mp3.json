@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "623c4e34fabe94f921424f69d4d1c7539e63fca8e10f35dae831e411d0f118a2",
+  "voice_id": "v3V1d2rk6528UrLKRuy8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "cc2af49a37454446c1cf149711d9a969dff76be092d83d3810f6d6d449483e69",
+  "voice_key": "de-de.sentence.native-clear",
+  "voice_name": "Susi - Effortless and Confident",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "6849c49065e4eb8a106ef63f5a96f232194e58d8d25c2e31e24a72bbf8df7b9e",
+  "duration_ms": 3709,
+  "generated_at": "2026-09-13T05:55:19.375967+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "16e09d19-a1d5-5644-a70c-4e7168174e0f",
+      "entity_key": "u_health_habits_05"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "b1b98cf9-bf0e-53ea-b0fa-85f95d5e0bed",
+      "entity_key": "ex_health_habits_03_listen"
+    }
+  ]
+}

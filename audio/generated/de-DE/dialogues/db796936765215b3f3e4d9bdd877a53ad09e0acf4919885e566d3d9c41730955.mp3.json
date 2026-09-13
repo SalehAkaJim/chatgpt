@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "a197b24e7d3a26947dc337d52c286df917ae99af048faff8ab511767a6ffc17b",
+  "voice_id": "NE7AIW5DoJ7lUosXV2KR",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "db796936765215b3f3e4d9bdd877a53ad09e0acf4919885e566d3d9c41730955",
+  "voice_key": "character:mia:female_bright",
+  "voice_name": "Ela - Cheerful and Happy",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "90a35f793321226f7a1f9a6cc0294b9e4ffbd4e4721e123548f3fbe375fd5489",
+  "duration_ms": 3369,
+  "generated_at": "2026-09-13T06:17:15.355528+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "246e46a1-1df6-52bb-b629-f4b89c252a7f",
+      "entity_key": "d_housing_renting_02:1"
+    }
+  ]
+}

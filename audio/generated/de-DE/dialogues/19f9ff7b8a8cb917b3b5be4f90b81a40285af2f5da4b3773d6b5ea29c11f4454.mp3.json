@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "f5773ca651f1711519257bebea1c4cc5cc21c420556a7ffb3ef97b432f8a5903",
+  "voice_id": "K5ZVtkkBnuPY6YqXs70E",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "19f9ff7b8a8cb917b3b5be4f90b81a40285af2f5da4b3773d6b5ea29c11f4454",
+  "voice_key": "character:jonas:male_bright",
+  "voice_name": "Simon - Relatable and Normal",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "chill"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "53ff7b070ae2e57ede19c01a97016e6710d76a086530a7b255bd1b4d94641389",
+  "duration_ms": 1515,
+  "generated_at": "2026-09-13T05:26:25.901623+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "d592ba1c-52c9-5455-a347-34e6f3c6ffdb",
+      "entity_key": "d_restaurant_service_01:4"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a4b6bb60-7540-5632-af32-5f78fce116a6",
+      "entity_key": "d_restaurant_service_03:4"
+    }
+  ]
+}

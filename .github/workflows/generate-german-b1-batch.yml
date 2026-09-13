@@ -1,0 +1,80 @@
+name: Generate German B1 Batch
+
+on:
+  push:
+    branches:
+      - language/german-b1
+    paths:
+      - '.github/german-b1-batch-trigger'
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: 'B1 batch number (10 units per batch)'
+        required: true
+        default: '4'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: german-b1-content-generation
+  cancel-in-progress: false
+
+jobs:
+  generate-batch:
+    runs-on: ubuntu-latest
+    env:
+      BATCH: ${{ github.event.inputs.batch || '4' }}
+    steps:
+      - name: Checkout German B1 branch
+        uses: actions/checkout@v4
+        with:
+          ref: language/german-b1
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate exactly ten B1 units
+        run: python scripts/generate_german_b1_batch.py --batch "$BATCH"
+      - name: Validate cumulative B1 production
+        run: |
+          set -euo pipefail
+          expected=$((BATCH * 10))
+          test "$(find content/production/de/B1 -maxdepth 1 -name '*.json' | wc -l)" = "$expected"
+          for f in content/production/de/B1/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+          python scripts/audit_german_b1_content.py --batch "$BATCH"
+          python database/import/de/b1.py --dry-run
+      - name: Batch summary
+        run: |
+          python - <<'PY'
+          import json, pathlib, collections, os
+          root=pathlib.Path('content/production/de/B1')
+          files=sorted(root.glob('*.json'))
+          counts=collections.Counter(); lessons=set()
+          for p in files:
+              b=json.loads(p.read_text())
+              for i in b['items']:
+                  counts[i['kind']]+=1
+                  lk=i.get('data',{}).get('lesson_key')
+                  if lk: lessons.add(lk)
+          print(json.dumps({'batch':int(os.environ['BATCH']),'units':len(files),'lessons':len(lessons),'items':sum(counts.values()),'counts':dict(counts)},ensure_ascii=False,indent=2))
+          PY
+      - name: Commit German B1 production content
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/production/de/B1
+          if git diff --cached --quiet; then
+            echo 'No generated content changes.'
+          else
+            git commit -m "Generate German B1 batch ${BATCH} production content [skip ci]"
+            git fetch origin language/german-b1
+            git rebase origin/language/german-b1
+            git push origin HEAD:language/german-b1
+          fi

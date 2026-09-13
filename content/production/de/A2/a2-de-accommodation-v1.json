@@ -1,0 +1,978 @@
+{
+  "batch_id": "de-de-a2-accommodation-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "A2",
+  "curriculum_unit": "a2-de-accommodation",
+  "generator": "gpt-5.6-sol:german-a2-complete-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_accommodation_01",
+      "data": {
+        "slug": "de_a2_accommodation_01",
+        "lesson_key": "a2-de-accommodation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Rezeption"
+        },
+        "translations": {
+          "fa": "پذیرش"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_accommodation_01",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "lemma": "Rezeption",
+        "display_lemma": "Rezeption",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_accommodation_01"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_accommodation_01",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "lexeme_ref": "lx_accommodation_01",
+        "surface_form": "Rezeption",
+        "display_form": "Rezeption",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_accommodation_02",
+      "data": {
+        "slug": "de_a2_accommodation_02",
+        "lesson_key": "a2-de-accommodation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Einzelzimmer"
+        },
+        "translations": {
+          "fa": "اتاق یک‌نفره"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_accommodation_02",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "lemma": "Einzelzimmer",
+        "display_lemma": "Einzelzimmer",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_accommodation_02"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_accommodation_02",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "lexeme_ref": "lx_accommodation_02",
+        "surface_form": "Einzelzimmer",
+        "display_form": "Einzelzimmer",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_accommodation_03",
+      "data": {
+        "slug": "de_a2_accommodation_03",
+        "lesson_key": "a2-de-accommodation-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "das Frühstück"
+        },
+        "translations": {
+          "fa": "صبحانه"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_accommodation_03",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "lemma": "Frühstück",
+        "display_lemma": "Frühstück",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_accommodation_03"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "neuter"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_accommodation_03",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "lexeme_ref": "lx_accommodation_03",
+        "surface_form": "Frühstück",
+        "display_form": "Frühstück",
+        "grammatical_features": {
+          "gender": "neuter"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_accommodation_04",
+      "data": {
+        "slug": "de_a2_accommodation_04",
+        "lesson_key": "a2-de-accommodation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "de": "inbegriffen"
+        },
+        "translations": {
+          "fa": "شامل"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_accommodation_04",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "lemma": "inbegriffen",
+        "display_lemma": "inbegriffen",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "de_a2_accommodation_04"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_accommodation_04",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "lexeme_ref": "lx_accommodation_04",
+        "surface_form": "inbegriffen",
+        "display_form": "inbegriffen",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_accommodation_05",
+      "data": {
+        "slug": "de_a2_accommodation_05",
+        "lesson_key": "a2-de-accommodation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "der Schlüssel"
+        },
+        "translations": {
+          "fa": "کلید"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_accommodation_05",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "lemma": "Schlüssel",
+        "display_lemma": "Schlüssel",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_accommodation_05"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "masculine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_accommodation_05",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "lexeme_ref": "lx_accommodation_05",
+        "surface_form": "Schlüssel",
+        "display_form": "Schlüssel",
+        "grammatical_features": {
+          "gender": "masculine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_accommodation_06",
+      "data": {
+        "slug": "de_a2_accommodation_06",
+        "lesson_key": "a2-de-accommodation-03",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "de": "die Reservierung"
+        },
+        "translations": {
+          "fa": "رزرو"
+        },
+        "cefr": "A2",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_accommodation_06",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "lemma": "Reservierung",
+        "display_lemma": "Reservierung",
+        "language": "de",
+        "language_variant": "de-DE",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "de_a2_accommodation_06"
+        ],
+        "cefr": "A2",
+        "status": "validated",
+        "grammatical_gender": "feminine"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_accommodation_06",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "lexeme_ref": "lx_accommodation_06",
+        "surface_form": "Reservierung",
+        "display_form": "Reservierung",
+        "grammatical_features": {
+          "gender": "feminine"
+        },
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_accommodation_01",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "text": {
+          "de": "Ich habe eine Reservierung auf den Namen Rahimi."
+        },
+        "translations": {
+          "fa": "به نام رحیمی رزرو دارم."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_accommodation_01"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_accommodation_02",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "text": {
+          "de": "Ist das Frühstück im Preis inbegriffen?"
+        },
+        "translations": {
+          "fa": "صبحانه در قیمت حساب شده؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_accommodation_02"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_accommodation_03",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "text": {
+          "de": "Könnte ich bitte den WLAN-Code bekommen?"
+        },
+        "translations": {
+          "fa": "می‌توانم لطفاً رمز وای‌فای را بگیرم؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_accommodation_03"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_accommodation_04",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "text": {
+          "de": "Mein Zimmer ist noch nicht fertig."
+        },
+        "translations": {
+          "fa": "اتاقم هنوز آماده نیست."
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_accommodation_04"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_accommodation_05",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "text": {
+          "de": "Bis wann muss ich auschecken?"
+        },
+        "translations": {
+          "fa": "تا چه ساعتی باید اتاق را تحویل بدهم؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_accommodation_05"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_accommodation_06",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "text": {
+          "de": "Können Sie meinen Koffer kurz aufbewahren?"
+        },
+        "translations": {
+          "fa": "می‌توانید چمدانم را کمی نگه دارید؟"
+        },
+        "intent": "practice_target",
+        "concept_refs": [
+          "de_a2_accommodation_06"
+        ],
+        "cefr": "A2",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_accommodation_01",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "slug": "a2-de-accommodation-grammar-01",
+        "title": "ist ... im Preis inbegriffen?",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: ist ... im Preis inbegriffen?.",
+        "explanation": {
+          "fa": "در این درس ساختار «ist ... im Preis inbegriffen?» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Ich habe eine Reservierung auf den Namen Rahimi.",
+            "fa": "به نام رحیمی رزرو دارم."
+          },
+          {
+            "de": "Ist das Frühstück im Preis inbegriffen?",
+            "fa": "صبحانه در قیمت حساب شده؟"
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_accommodation_02",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "slug": "a2-de-accommodation-grammar-02",
+        "title": "höfliche Bitte mit könnte ich",
+        "rule_summary": "Use and recognize this A2 German pattern in everyday contexts: höfliche Bitte mit könnte ich.",
+        "explanation": {
+          "fa": "در این درس ساختار «höfliche Bitte mit könnte ich» را در جمله‌های روزمره تمرین می‌کنی و جای فعل و اجزای جمله را در نمونه‌های واقعی می‌بینی."
+        },
+        "examples": [
+          {
+            "de": "Könnte ich bitte den WLAN-Code bekommen?",
+            "fa": "می‌توانم لطفاً رمز وای‌فای را بگیرم؟"
+          },
+          {
+            "de": "Mein Zimmer ist noch nicht fertig.",
+            "fa": "اتاقم هنوز آماده نیست."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_accommodation_01",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "title": "Hotel & Unterkunft · 1",
+        "setting": "places-town",
+        "cefr": "A2",
+        "topic": "places-town",
+        "characters": [
+          "Sofia",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Ich habe eine Reservierung auf den Namen Rahimi.",
+            "translation_fa": "به نام رحیمی رزرو دارم."
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Ist das Frühstück im Preis inbegriffen?",
+            "translation_fa": "صبحانه در قیمت حساب شده؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_01_mc",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «به نام رحیمی رزرو دارم.»؟"
+        },
+        "options": [
+          "Ich habe eine Reservierung auf den Namen Rahimi.",
+          "Ist das Frühstück im Preis inbegriffen?",
+          "Könnte ich bitte den WLAN-Code bekommen?",
+          "Mein Zimmer ist noch nicht fertig."
+        ],
+        "answer": {
+          "value": "Ich habe eine Reservierung auf den Namen Rahimi."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Ich habe eine Reservierung auf den Namen Rahimi.» یعنی «به نام رحیمی رزرو دارم.».",
+          "model_answer": "Ich habe eine Reservierung auf den Namen Rahimi."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_01_listen",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Ich habe eine Reservierung auf den Namen Rahimi."
+        },
+        "options": [
+          "به نام رحیمی رزرو دارم.",
+          "صبحانه در قیمت حساب شده؟",
+          "می‌توانم لطفاً رمز وای‌فای را بگیرم؟",
+          "اتاقم هنوز آماده نیست."
+        ],
+        "answer": {
+          "value": "به نام رحیمی رزرو دارم."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: به نام رحیمی رزرو دارم.",
+          "model_answer": "Ich habe eine Reservierung auf den Namen Rahimi.",
+          "transcript_de": "Ich habe eine Reservierung auf den Namen Rahimi."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_01_speak",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Ist das Frühstück im Preis inbegriffen?"
+        },
+        "answer": {
+          "expected_text": "Ist das Frühstück im Preis inbegriffen?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: صبحانه در قیمت حساب شده؟",
+          "model_answer": "Ist das Frühstück im Preis inbegriffen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_01_trans",
+      "data": {
+        "lesson_key": "a2-de-accommodation-01",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "صبحانه در قیمت حساب شده؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Ist das Frühstück im Preis inbegriffen?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Ist das Frühstück im Preis inbegriffen?",
+          "model_answer": "Ist das Frühstück im Preis inbegriffen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_accommodation_02",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "title": "Hotel & Unterkunft · 2",
+        "setting": "places-town",
+        "cefr": "A2",
+        "topic": "places-town",
+        "characters": [
+          "Nina",
+          "Lukas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Könnte ich bitte den WLAN-Code bekommen?",
+            "translation_fa": "می‌توانم لطفاً رمز وای‌فای را بگیرم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Lukas",
+            "text": "Mein Zimmer ist noch nicht fertig.",
+            "translation_fa": "اتاقم هنوز آماده نیست."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Lukas",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_02_mc",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «می‌توانم لطفاً رمز وای‌فای را بگیرم؟»؟"
+        },
+        "options": [
+          "Könnte ich bitte den WLAN-Code bekommen?",
+          "Ich habe eine Reservierung auf den Namen Rahimi.",
+          "Ist das Frühstück im Preis inbegriffen?",
+          "Mein Zimmer ist noch nicht fertig."
+        ],
+        "answer": {
+          "value": "Könnte ich bitte den WLAN-Code bekommen?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Könnte ich bitte den WLAN-Code bekommen?» یعنی «می‌توانم لطفاً رمز وای‌فای را بگیرم؟».",
+          "model_answer": "Könnte ich bitte den WLAN-Code bekommen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_02_listen",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Könnte ich bitte den WLAN-Code bekommen?"
+        },
+        "options": [
+          "می‌توانم لطفاً رمز وای‌فای را بگیرم؟",
+          "به نام رحیمی رزرو دارم.",
+          "صبحانه در قیمت حساب شده؟",
+          "اتاقم هنوز آماده نیست."
+        ],
+        "answer": {
+          "value": "می‌توانم لطفاً رمز وای‌فای را بگیرم؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: می‌توانم لطفاً رمز وای‌فای را بگیرم؟",
+          "model_answer": "Könnte ich bitte den WLAN-Code bekommen?",
+          "transcript_de": "Könnte ich bitte den WLAN-Code bekommen?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_02_speak",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Mein Zimmer ist noch nicht fertig."
+        },
+        "answer": {
+          "expected_text": "Mein Zimmer ist noch nicht fertig."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: اتاقم هنوز آماده نیست.",
+          "model_answer": "Mein Zimmer ist noch nicht fertig."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_02_trans",
+      "data": {
+        "lesson_key": "a2-de-accommodation-02",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "اتاقم هنوز آماده نیست.",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Mein Zimmer ist noch nicht fertig."
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Mein Zimmer ist noch nicht fertig.",
+          "model_answer": "Mein Zimmer ist noch nicht fertig."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_accommodation_03",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "title": "Hotel & Unterkunft · 3",
+        "setting": "places-town",
+        "cefr": "A2",
+        "topic": "places-town",
+        "characters": [
+          "Clara",
+          "Jonas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Bis wann muss ich auschecken?",
+            "translation_fa": "تا چه ساعتی باید اتاق را تحویل بدهم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Jonas",
+            "text": "Können Sie meinen Koffer kurz aufbewahren?",
+            "translation_fa": "می‌توانید چمدانم را کمی نگه دارید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Alles klar, danke für die Information.",
+            "translation_fa": "متوجه شدم، ممنون از اطلاعات."
+          },
+          {
+            "order": 4,
+            "speaker": "Jonas",
+            "text": "Gut, dann weiß ich, was ich tun muss.",
+            "translation_fa": "خوب، پس می‌دانم باید چه کار کنم."
+          }
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_03_mc",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "fa": "کدام جملهٔ آلمانی یعنی «تا چه ساعتی باید اتاق را تحویل بدهم؟»؟"
+        },
+        "options": [
+          "Bis wann muss ich auschecken?",
+          "Ich habe eine Reservierung auf den Namen Rahimi.",
+          "Ist das Frühstück im Preis inbegriffen?",
+          "Könnte ich bitte den WLAN-Code bekommen?"
+        ],
+        "answer": {
+          "value": "Bis wann muss ich auschecken?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "جملهٔ درست «Bis wann muss ich auschecken?» یعنی «تا چه ساعتی باید اتاق را تحویل بدهم؟».",
+          "model_answer": "Bis wann muss ich auschecken?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_03_listen",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و نزدیک‌ترین معنی را انتخاب کن.",
+          "audio_text": "Bis wann muss ich auschecken?"
+        },
+        "options": [
+          "تا چه ساعتی باید اتاق را تحویل بدهم؟",
+          "به نام رحیمی رزرو دارم.",
+          "صبحانه در قیمت حساب شده؟",
+          "می‌توانم لطفاً رمز وای‌فای را بگیرم؟"
+        ],
+        "answer": {
+          "value": "تا چه ساعتی باید اتاق را تحویل بدهم؟"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: تا چه ساعتی باید اتاق را تحویل بدهم؟",
+          "model_answer": "Bis wann muss ich auschecken?",
+          "transcript_de": "Bis wann muss ich auschecken?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_03_speak",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "جمله را با صدای بلند بگو.",
+          "value": "Können Sie meinen Koffer kurz aufbewahren?"
+        },
+        "answer": {
+          "expected_text": "Können Sie meinen Koffer kurz aufbewahren?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "معنی جمله: می‌توانید چمدانم را کمی نگه دارید؟",
+          "model_answer": "Können Sie meinen Koffer kurz aufbewahren?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_accommodation_03_trans",
+      "data": {
+        "lesson_key": "a2-de-accommodation-03",
+        "exercise_type": "translation",
+        "prompt": {
+          "fa": "می‌توانید چمدانم را کمی نگه دارید؟",
+          "instruction_fa": "این جمله را به آلمانی ترجمه کن."
+        },
+        "answer": {
+          "value": "Können Sie meinen Koffer kurz aufbewahren?"
+        },
+        "difficulty": 3,
+        "cefr": "A2",
+        "feedback": {
+          "retry_tip_fa": "معنی کلی جمله را مرور کن و دوباره پاسخ بده.",
+          "explanation_fa": "مدل طبیعی این درس: Können Sie meinen Koffer kurz aufbewahren?",
+          "model_answer": "Können Sie meinen Koffer kurz aufbewahren?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
