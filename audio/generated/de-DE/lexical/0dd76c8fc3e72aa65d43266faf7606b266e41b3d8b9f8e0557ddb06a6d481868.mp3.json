@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "c0bff47bac9450d8573abc77fb25a05d518b3ee95218222e6f69a10b58cf0841",
+  "voice_id": "v3V1d2rk6528UrLKRuy8",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "0dd76c8fc3e72aa65d43266faf7606b266e41b3d8b9f8e0557ddb06a6d481868",
+  "voice_key": "de-de.lexical.native-clear",
+  "voice_name": "Susi - Effortless and Confident",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "38a765ef6e59fb9aaa8e2b91aeef16fc0cca3cf63c5a254155434dd97dc060e6",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-13T08:32:22.488290+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "65bf212c-252c-52a5-ac3a-884492b1f973",
+      "entity_key": "lx_bureaucracy_appointments_06"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "fd975826-d084-5c29-b7e3-d6e2a6220cfd",
+      "entity_key": "wf_bureaucracy_appointments_06"
+    }
+  ]
+}

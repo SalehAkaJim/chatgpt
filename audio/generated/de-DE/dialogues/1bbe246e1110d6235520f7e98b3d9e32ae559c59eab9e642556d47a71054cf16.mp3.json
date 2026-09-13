@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "035e673cb3a65373075bd88560a3e46fd7fafecc6cd96ad00ca4b73d92f1a6ea",
+  "voice_id": "MMwckqU477oQxnAk1SgA",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1bbe246e1110d6235520f7e98b3d9e32ae559c59eab9e642556d47a71054cf16",
+  "voice_key": "character:emil:male_calm",
+  "voice_name": "Ben - Conversational Voice",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e52caeb133b61bfe59c04145d240da2b91806ed44049401451a937e7dccb381f",
+  "duration_ms": 2586,
+  "generated_at": "2026-09-13T08:31:11.984485+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "23b2a58f-5e23-576c-962b-582838f291b4",
+      "entity_key": "d_contracts_subscriptions_02:4"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "a8d370160ae78e0c0ef87b7603a36f3a7616204c5034711d75dca19583ebd860",
+  "voice_id": "SiMvlSW9cKKHDYT4BzOp",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "282cb61a6a040d56d3eb75c7c41274839726027d301e4d589980d17241f4366e",
+  "voice_key": "character:clara:female_bright",
+  "voice_name": "Lola - Fresh & Dynamic",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "f0603162e4319475ace1b4e958388d9a073cd0e965c3ff758400c9658e67ce3b",
+  "duration_ms": 5381,
+  "generated_at": "2026-09-13T08:31:15.024531+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "080a666c-f55c-5e5a-9a8c-b3dd1d657eae",
+      "entity_key": "d_bureaucracy_appointments_03:3"
+    }
+  ]
+}
