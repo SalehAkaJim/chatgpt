@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "36a0622e8f13c3e35d80d29d8d2f9e4c9af9f9de326bf5f91d61c6bcff8e7a8e",
+  "voice_id": "fmj9wTxZg3ta4xR75kgB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e59e633b9f1ea95cc7a47be0d1b71ff1e7fadb86fd284c1b009ef024980c3f8d",
+  "voice_key": "character:lukas:male_warm",
+  "voice_name": "Peter Stern – Friendly Agent",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "9af2424a7ac2b0c16ba87c9f65a0bacf73818050f791f540f5044904e9ae53aa",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-13T04:07:57.964200+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "ccd4595d-d58c-5c3e-95fa-ff7d8176ab8d",
+      "entity_key": "d_home_02:4"
+    }
+  ]
+}
