@@ -77,7 +77,7 @@ jobs:
           test "$(find content/production/tr/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 14
           python scripts/audit_turkish_prea1_content.py
           for f in content/production/tr/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
-          python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json --content-dir content/production/tr/Pre-A1
+          python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/pre_a1.py --dry-run
       - name: Confirm educational release gate remains active
         run: |
