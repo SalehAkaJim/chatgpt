@@ -1,0 +1,856 @@
+{
+  "batch_id": "fr-fr-a1-shopping-and-prices-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-fr-shopping-and-prices",
+  "generator": "gpt-5.6-sol:french-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_and_prices_01",
+      "data": {
+        "slug": "fr_a1_shopping_and_prices_euro",
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "euro"
+        },
+        "translations": {
+          "fa": "یورو"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_and_prices_01",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "lemma": "euro",
+        "display_lemma": "euro",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_euro"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_and_prices_01",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "lexeme_ref": "lx_shopping_and_prices_01",
+        "surface_form": "euro",
+        "display_form": "euro",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_and_prices_02",
+      "data": {
+        "slug": "fr_a1_shopping_and_prices_prix",
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "prix"
+        },
+        "translations": {
+          "fa": "قیمت"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_and_prices_02",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "lemma": "prix",
+        "display_lemma": "prix",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_prix"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_and_prices_02",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "lexeme_ref": "lx_shopping_and_prices_02",
+        "surface_form": "prix",
+        "display_form": "prix",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_and_prices_03",
+      "data": {
+        "slug": "fr_a1_shopping_and_prices_combien",
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "concept_type": "lexical",
+        "part_of_speech": "question_word",
+        "forms": {
+          "fr": "combien"
+        },
+        "translations": {
+          "fa": "چقدر / چند"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_and_prices_03",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "lemma": "combien",
+        "display_lemma": "combien",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "question_word",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_combien"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_and_prices_03",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "lexeme_ref": "lx_shopping_and_prices_03",
+        "surface_form": "combien",
+        "display_form": "combien",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_and_prices_04",
+      "data": {
+        "slug": "fr_a1_shopping_and_prices_cher",
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "fr": "cher / chère"
+        },
+        "translations": {
+          "fa": "گران"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_and_prices_04",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "lemma": "cher / chère",
+        "display_lemma": "cher / chère",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_cher"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_and_prices_04",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "lexeme_ref": "lx_shopping_and_prices_04",
+        "surface_form": "cher / chère",
+        "display_form": "cher / chère",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_and_prices_05",
+      "data": {
+        "slug": "fr_a1_shopping_and_prices_prendre",
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "prendre"
+        },
+        "translations": {
+          "fa": "گرفتن / انتخاب کردن"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_and_prices_05",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "lemma": "prendre",
+        "display_lemma": "prendre",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_prendre"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_and_prices_05",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "lexeme_ref": "lx_shopping_and_prices_05",
+        "surface_form": "prendre",
+        "display_form": "prendre",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_shopping_and_prices_06",
+      "data": {
+        "slug": "fr_a1_shopping_and_prices_taille",
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "taille"
+        },
+        "translations": {
+          "fa": "اندازه / سایز"
+        },
+        "cefr": "A1",
+        "topic": "shopping",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_shopping_and_prices_06",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "lemma": "taille",
+        "display_lemma": "taille",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_taille"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_shopping_and_prices_06",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "lexeme_ref": "lx_shopping_and_prices_06",
+        "surface_form": "taille",
+        "display_form": "taille",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_and_prices_01",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "text": {
+          "fr": "Ça coûte combien ?"
+        },
+        "translations": {
+          "fa": "این چنده؟"
+        },
+        "intent": "ask_price",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_combien",
+          "fr_a1_shopping_and_prices_prix"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_and_prices_02",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "text": {
+          "fr": "Ça coûte dix euros."
+        },
+        "translations": {
+          "fa": "این ده یورو قیمت دارد."
+        },
+        "intent": "state_price",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_euro"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_and_prices_03",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "text": {
+          "fr": "C'est trop cher."
+        },
+        "translations": {
+          "fa": "خیلی گرونه."
+        },
+        "intent": "react_price",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_cher"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_shopping_and_prices_04",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "text": {
+          "fr": "Je prends cette taille."
+        },
+        "translations": {
+          "fa": "این سایز را برمی‌دارم."
+        },
+        "intent": "choose_item",
+        "concept_refs": [
+          "fr_a1_shopping_and_prices_prendre",
+          "fr_a1_shopping_and_prices_taille"
+        ],
+        "cefr": "A1",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_shopping_and_prices_core",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "slug": "a1-fr-shopping-and-prices-grammar",
+        "title": "Ça coûte combien ?",
+        "rule_summary": "Use coûter for prices and prendre as a common shopping choice verb.",
+        "explanation": {
+          "fa": "برای پرسیدن قیمت، Ça coûte combien ? بسیار رایج است. برای انتخاب کالا هم je prends… طبیعی است."
+        },
+        "examples": [
+          {
+            "fr": "Ça coûte cinq euros.",
+            "fa": "پنج یورو قیمت دارد."
+          },
+          {
+            "fr": "Je prends celui-ci.",
+            "fa": "این یکی را برمی‌دارم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_shopping_and_prices_01",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "title": "Le prix",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "shopping",
+        "characters": [
+          "hugo",
+          "inès"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "hugo",
+            "text": "Ça coûte combien ?",
+            "translation_fa": "این چنده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "inès",
+            "text": "Douze euros.",
+            "translation_fa": "دوازده یورو."
+          },
+          {
+            "order": 3,
+            "speaker": "hugo",
+            "text": "D'accord, je le prends.",
+            "translation_fa": "باشه، برش می‌دارم."
+          },
+          {
+            "order": 4,
+            "speaker": "inès",
+            "text": "Très bien.",
+            "translation_fa": "خیلی خوب."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_shopping_and_prices_02",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "title": "La bonne taille",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "shopping",
+        "characters": [
+          "claire",
+          "julien"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "claire",
+            "text": "Vous avez cette taille ?",
+            "translation_fa": "این سایز را دارید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "julien",
+            "text": "Oui, en bleu aussi.",
+            "translation_fa": "بله، آبی هم داریم."
+          },
+          {
+            "order": 3,
+            "speaker": "claire",
+            "text": "Parfait. Je prends le bleu.",
+            "translation_fa": "عالیه. آبی را برمی‌دارم."
+          },
+          {
+            "order": 4,
+            "speaker": "julien",
+            "text": "Très bien.",
+            "translation_fa": "خیلی خوب."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_01_meaning",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Ça coûte combien ?"
+        },
+        "answer": {
+          "value": "این چنده؟"
+        },
+        "options": [
+          "این چنده؟",
+          "این ده یورو قیمت دارد.",
+          "خیلی گرونه.",
+          "این سایز را برمی‌دارم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça coûte combien ? — این چنده؟",
+          "model_answer": "Ça coûte combien ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_01_listen",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ça coûte dix euros."
+        },
+        "answer": {
+          "value": "Ça coûte dix euros."
+        },
+        "options": [
+          "Ça coûte dix euros.",
+          "Ça coûte combien ?",
+          "C'est trop cher.",
+          "Je prends cette taille."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça coûte dix euros. — این ده یورو قیمت دارد.",
+          "model_answer": "Ça coûte dix euros.",
+          "transcript_fr": "Ça coûte dix euros."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_01_speak",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Ça coûte combien ?"
+        },
+        "answer": {
+          "expected_text": "Ça coûte combien ?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça coûte combien ? — این چنده؟",
+          "model_answer": "Ça coûte combien ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_01_build",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "coûte",
+            "dix",
+            "euros.",
+            "Ça"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ça",
+            "coûte",
+            "dix",
+            "euros."
+          ],
+          "value": "Ça coûte dix euros."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça coûte dix euros. — این ده یورو قیمت دارد.",
+          "model_answer": "Ça coûte dix euros."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_01_dialogue",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_shopping_and_prices_01",
+          "question_fa": "کدام گزینه با معنی «این چنده؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Ça coûte combien ?"
+        },
+        "options": [
+          "Ça coûte combien ?",
+          "Ça coûte dix euros.",
+          "C'est trop cher.",
+          "Je prends cette taille."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça coûte combien ? — این چنده؟",
+          "model_answer": "Ça coûte combien ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_02_meaning",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "C'est trop cher."
+        },
+        "answer": {
+          "value": "خیلی گرونه."
+        },
+        "options": [
+          "خیلی گرونه.",
+          "این چنده؟",
+          "این ده یورو قیمت دارد.",
+          "این سایز را برمی‌دارم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est trop cher. — خیلی گرونه.",
+          "model_answer": "C'est trop cher."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_02_listen",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Je prends cette taille."
+        },
+        "answer": {
+          "value": "Je prends cette taille."
+        },
+        "options": [
+          "Je prends cette taille.",
+          "C'est trop cher.",
+          "Ça coûte combien ?",
+          "Ça coûte dix euros."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je prends cette taille. — این سایز را برمی‌دارم.",
+          "model_answer": "Je prends cette taille.",
+          "transcript_fr": "Je prends cette taille."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_02_speak",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "C'est trop cher."
+        },
+        "answer": {
+          "expected_text": "C'est trop cher."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est trop cher. — خیلی گرونه.",
+          "model_answer": "C'est trop cher."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_02_build",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "prends",
+            "cette",
+            "taille.",
+            "Je"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Je",
+            "prends",
+            "cette",
+            "taille."
+          ],
+          "value": "Je prends cette taille."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je prends cette taille. — این سایز را برمی‌دارم.",
+          "model_answer": "Je prends cette taille."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_shopping_and_prices_02_dialogue",
+      "data": {
+        "lesson_key": "a1-fr-shopping-and-prices-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_shopping_and_prices_02",
+          "question_fa": "کدام گزینه با معنی «خیلی گرونه.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "C'est trop cher."
+        },
+        "options": [
+          "C'est trop cher.",
+          "Ça coûte combien ?",
+          "Ça coûte dix euros.",
+          "Je prends cette taille."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est trop cher. — خیلی گرونه.",
+          "model_answer": "C'est trop cher."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

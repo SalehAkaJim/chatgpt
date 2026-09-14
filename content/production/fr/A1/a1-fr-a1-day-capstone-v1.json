@@ -1,0 +1,860 @@
+{
+  "batch_id": "fr-fr-a1-a1-day-capstone-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-fr-a1-day-capstone",
+  "generator": "gpt-5.6-sol:french-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a1_day_capstone_01",
+      "data": {
+        "slug": "fr_a1_a1_day_capstone_se_lever",
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "se lever"
+        },
+        "translations": {
+          "fa": "بیدار شدن / از خواب بلند شدن"
+        },
+        "cefr": "A1",
+        "topic": "daily-life",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_day_capstone_01",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "lemma": "se lever",
+        "display_lemma": "se lever",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_se_lever"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_day_capstone_01",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "lexeme_ref": "lx_a1_day_capstone_01",
+        "surface_form": "se lever",
+        "display_form": "se lever",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_day_capstone_02",
+      "data": {
+        "slug": "fr_a1_a1_day_capstone_aller",
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "aller"
+        },
+        "translations": {
+          "fa": "رفتن"
+        },
+        "cefr": "A1",
+        "topic": "daily-life",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_day_capstone_02",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "lemma": "aller",
+        "display_lemma": "aller",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_aller"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_day_capstone_02",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "lexeme_ref": "lx_a1_day_capstone_02",
+        "surface_form": "aller",
+        "display_form": "aller",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_day_capstone_03",
+      "data": {
+        "slug": "fr_a1_a1_day_capstone_rentrer",
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "rentrer"
+        },
+        "translations": {
+          "fa": "برگشتن به خانه"
+        },
+        "cefr": "A1",
+        "topic": "daily-life",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_day_capstone_03",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "lemma": "rentrer",
+        "display_lemma": "rentrer",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_rentrer"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_day_capstone_03",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "lexeme_ref": "lx_a1_day_capstone_03",
+        "surface_form": "rentrer",
+        "display_form": "rentrer",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_day_capstone_04",
+      "data": {
+        "slug": "fr_a1_a1_day_capstone_ami",
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "ami / amie"
+        },
+        "translations": {
+          "fa": "دوست"
+        },
+        "cefr": "A1",
+        "topic": "daily-life",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_day_capstone_04",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "lemma": "ami / amie",
+        "display_lemma": "ami / amie",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_ami"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_day_capstone_04",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "lexeme_ref": "lx_a1_day_capstone_04",
+        "surface_form": "ami / amie",
+        "display_form": "ami / amie",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_day_capstone_05",
+      "data": {
+        "slug": "fr_a1_a1_day_capstone_ensemble",
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "fr": "ensemble"
+        },
+        "translations": {
+          "fa": "با هم"
+        },
+        "cefr": "A1",
+        "topic": "daily-life",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_day_capstone_05",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "lemma": "ensemble",
+        "display_lemma": "ensemble",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_ensemble"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_day_capstone_05",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "lexeme_ref": "lx_a1_day_capstone_05",
+        "surface_form": "ensemble",
+        "display_form": "ensemble",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_day_capstone_06",
+      "data": {
+        "slug": "fr_a1_a1_day_capstone_soir",
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "soir"
+        },
+        "translations": {
+          "fa": "شب / عصر"
+        },
+        "cefr": "A1",
+        "topic": "daily-life",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_day_capstone_06",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "lemma": "soir",
+        "display_lemma": "soir",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_soir"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_day_capstone_06",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "lexeme_ref": "lx_a1_day_capstone_06",
+        "surface_form": "soir",
+        "display_form": "soir",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a1_day_capstone_01",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "text": {
+          "fr": "Je me lève à sept heures."
+        },
+        "translations": {
+          "fa": "ساعت هفت بیدار می‌شوم."
+        },
+        "intent": "state_routine",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_se_lever"
+        ],
+        "cefr": "A1",
+        "topic": "daily-life",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a1_day_capstone_02",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "text": {
+          "fr": "Je vais au travail."
+        },
+        "translations": {
+          "fa": "به سر کار می‌روم."
+        },
+        "intent": "state_movement",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_aller"
+        ],
+        "cefr": "A1",
+        "topic": "daily-life",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a1_day_capstone_03",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "text": {
+          "fr": "Je rentre le soir."
+        },
+        "translations": {
+          "fa": "شب برمی‌گردم."
+        },
+        "intent": "state_routine",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_rentrer",
+          "fr_a1_a1_day_capstone_soir"
+        ],
+        "cefr": "A1",
+        "topic": "daily-life",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a1_day_capstone_04",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "text": {
+          "fr": "On mange ensemble avec des amis."
+        },
+        "translations": {
+          "fa": "با دوستان با هم غذا می‌خوریم."
+        },
+        "intent": "state_social_plan",
+        "concept_refs": [
+          "fr_a1_a1_day_capstone_ensemble",
+          "fr_a1_a1_day_capstone_ami"
+        ],
+        "cefr": "A1",
+        "topic": "daily-life",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a1_day_capstone_core",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "slug": "a1-fr-a1-day-capstone-grammar",
+        "title": "Aller et routines simples",
+        "rule_summary": "Use aller for movement and keep routine descriptions in the present at A1.",
+        "explanation": {
+          "fa": "برای حرکت از aller استفاده می‌شود. در A1 برنامه روزانه را بیشتر با زمان حال ساده بیان می‌کنیم."
+        },
+        "examples": [
+          {
+            "fr": "Je vais au travail.",
+            "fa": "به سر کار می‌روم."
+          },
+          {
+            "fr": "Je rentre le soir.",
+            "fa": "شب برمی‌گردم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a1_day_capstone_01",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "title": "Ma journée",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "daily-life",
+        "characters": [
+          "inès",
+          "hugo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "inès",
+            "text": "Tu te lèves à quelle heure ?",
+            "translation_fa": "چه ساعتی بیدار می‌شی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "hugo",
+            "text": "À sept heures. Après, je vais au travail.",
+            "translation_fa": "ساعت هفت. بعدش می‌رم سر کار."
+          },
+          {
+            "order": 3,
+            "speaker": "inès",
+            "text": "Tu rentres tard ?",
+            "translation_fa": "دیر برمی‌گردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "hugo",
+            "text": "Non, vers six heures.",
+            "translation_fa": "نه، حدود شش."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a1_day_capstone_02",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "title": "Ce soir",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "daily-life",
+        "characters": [
+          "julien",
+          "claire"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "julien",
+            "text": "Tu fais quoi ce soir ?",
+            "translation_fa": "امشب چیکار می‌کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "claire",
+            "text": "Je mange avec des amis.",
+            "translation_fa": "با دوست‌هام غذا می‌خورم."
+          },
+          {
+            "order": 3,
+            "speaker": "julien",
+            "text": "Vous allez où ?",
+            "translation_fa": "کجا می‌رید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "claire",
+            "text": "Dans un petit restaurant.",
+            "translation_fa": "یه رستوران کوچیک."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_01_meaning",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Je me lève à sept heures."
+        },
+        "answer": {
+          "value": "ساعت هفت بیدار می‌شوم."
+        },
+        "options": [
+          "ساعت هفت بیدار می‌شوم.",
+          "به سر کار می‌روم.",
+          "شب برمی‌گردم.",
+          "با دوستان با هم غذا می‌خوریم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je me lève à sept heures. — ساعت هفت بیدار می‌شوم.",
+          "model_answer": "Je me lève à sept heures."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_01_listen",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Je vais au travail."
+        },
+        "answer": {
+          "value": "Je vais au travail."
+        },
+        "options": [
+          "Je vais au travail.",
+          "Je me lève à sept heures.",
+          "Je rentre le soir.",
+          "On mange ensemble avec des amis."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je vais au travail. — به سر کار می‌روم.",
+          "model_answer": "Je vais au travail.",
+          "transcript_fr": "Je vais au travail."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_01_speak",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Je me lève à sept heures."
+        },
+        "answer": {
+          "expected_text": "Je me lève à sept heures."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je me lève à sept heures. — ساعت هفت بیدار می‌شوم.",
+          "model_answer": "Je me lève à sept heures."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_01_build",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "vais",
+            "au",
+            "travail.",
+            "Je"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Je",
+            "vais",
+            "au",
+            "travail."
+          ],
+          "value": "Je vais au travail."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je vais au travail. — به سر کار می‌روم.",
+          "model_answer": "Je vais au travail."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_01_dialogue",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_a1_day_capstone_01",
+          "question_fa": "کدام گزینه با معنی «ساعت هفت بیدار می‌شوم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Je me lève à sept heures."
+        },
+        "options": [
+          "Je me lève à sept heures.",
+          "Je vais au travail.",
+          "Je rentre le soir.",
+          "On mange ensemble avec des amis."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je me lève à sept heures. — ساعت هفت بیدار می‌شوم.",
+          "model_answer": "Je me lève à sept heures."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_02_meaning",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Je rentre le soir."
+        },
+        "answer": {
+          "value": "شب برمی‌گردم."
+        },
+        "options": [
+          "شب برمی‌گردم.",
+          "ساعت هفت بیدار می‌شوم.",
+          "به سر کار می‌روم.",
+          "با دوستان با هم غذا می‌خوریم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je rentre le soir. — شب برمی‌گردم.",
+          "model_answer": "Je rentre le soir."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_02_listen",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "On mange ensemble avec des amis."
+        },
+        "answer": {
+          "value": "On mange ensemble avec des amis."
+        },
+        "options": [
+          "On mange ensemble avec des amis.",
+          "Je rentre le soir.",
+          "Je me lève à sept heures.",
+          "Je vais au travail."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: On mange ensemble avec des amis. — با دوستان با هم غذا می‌خوریم.",
+          "model_answer": "On mange ensemble avec des amis.",
+          "transcript_fr": "On mange ensemble avec des amis."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_02_speak",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Je rentre le soir."
+        },
+        "answer": {
+          "expected_text": "Je rentre le soir."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je rentre le soir. — شب برمی‌گردم.",
+          "model_answer": "Je rentre le soir."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_02_build",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "mange",
+            "ensemble",
+            "avec",
+            "des",
+            "amis.",
+            "On"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "On",
+            "mange",
+            "ensemble",
+            "avec",
+            "des",
+            "amis."
+          ],
+          "value": "On mange ensemble avec des amis."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: On mange ensemble avec des amis. — با دوستان با هم غذا می‌خوریم.",
+          "model_answer": "On mange ensemble avec des amis."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_day_capstone_02_dialogue",
+      "data": {
+        "lesson_key": "a1-fr-a1-day-capstone-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_a1_day_capstone_02",
+          "question_fa": "کدام گزینه با معنی «شب برمی‌گردم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Je rentre le soir."
+        },
+        "options": [
+          "Je rentre le soir.",
+          "Je me lève à sept heures.",
+          "Je vais au travail.",
+          "On mange ensemble avec des amis."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "daily-life",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je rentre le soir. — شب برمی‌گردم.",
+          "model_answer": "Je rentre le soir."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

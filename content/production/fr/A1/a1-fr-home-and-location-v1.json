@@ -1,0 +1,862 @@
+{
+  "batch_id": "fr-fr-a1-home-and-location-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-fr-home-and-location",
+  "generator": "gpt-5.6-sol:french-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_home_and_location_01",
+      "data": {
+        "slug": "fr_a1_home_and_location_maison",
+        "lesson_key": "a1-fr-home-and-location-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "maison"
+        },
+        "translations": {
+          "fa": "خانه"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_and_location_01",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "lemma": "maison",
+        "display_lemma": "maison",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_home_and_location_maison"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_home_and_location_01",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "lexeme_ref": "lx_home_and_location_01",
+        "surface_form": "maison",
+        "display_form": "maison",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_and_location_02",
+      "data": {
+        "slug": "fr_a1_home_and_location_chambre",
+        "lesson_key": "a1-fr-home-and-location-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "chambre"
+        },
+        "translations": {
+          "fa": "اتاق خواب"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_and_location_02",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "lemma": "chambre",
+        "display_lemma": "chambre",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_home_and_location_chambre"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_home_and_location_02",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "lexeme_ref": "lx_home_and_location_02",
+        "surface_form": "chambre",
+        "display_form": "chambre",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_and_location_03",
+      "data": {
+        "slug": "fr_a1_home_and_location_cuisine",
+        "lesson_key": "a1-fr-home-and-location-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "cuisine"
+        },
+        "translations": {
+          "fa": "آشپزخانه"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_and_location_03",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "lemma": "cuisine",
+        "display_lemma": "cuisine",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_home_and_location_cuisine"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_home_and_location_03",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "lexeme_ref": "lx_home_and_location_03",
+        "surface_form": "cuisine",
+        "display_form": "cuisine",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_and_location_04",
+      "data": {
+        "slug": "fr_a1_home_and_location_salle_de_bains",
+        "lesson_key": "a1-fr-home-and-location-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "salle de bains"
+        },
+        "translations": {
+          "fa": "حمام"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_and_location_04",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "lemma": "salle de bains",
+        "display_lemma": "salle de bains",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a1_home_and_location_salle_de_bains"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_home_and_location_04",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "lexeme_ref": "lx_home_and_location_04",
+        "surface_form": "salle de bains",
+        "display_form": "salle de bains",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_and_location_05",
+      "data": {
+        "slug": "fr_a1_home_and_location_ou",
+        "lesson_key": "a1-fr-home-and-location-02",
+        "concept_type": "lexical",
+        "part_of_speech": "question_word",
+        "forms": {
+          "fr": "où"
+        },
+        "translations": {
+          "fa": "کجا"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_and_location_05",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "lemma": "où",
+        "display_lemma": "où",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "question_word",
+        "concept_refs": [
+          "fr_a1_home_and_location_ou"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_home_and_location_05",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "lexeme_ref": "lx_home_and_location_05",
+        "surface_form": "où",
+        "display_form": "où",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_home_and_location_06",
+      "data": {
+        "slug": "fr_a1_home_and_location_ici",
+        "lesson_key": "a1-fr-home-and-location-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "fr": "ici"
+        },
+        "translations": {
+          "fa": "اینجا"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_home_and_location_06",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "lemma": "ici",
+        "display_lemma": "ici",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "fr_a1_home_and_location_ici"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_home_and_location_06",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "lexeme_ref": "lx_home_and_location_06",
+        "surface_form": "ici",
+        "display_form": "ici",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_home_and_location_01",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "text": {
+          "fr": "Il y a une cuisine."
+        },
+        "translations": {
+          "fa": "یک آشپزخانه هست."
+        },
+        "intent": "state_presence",
+        "concept_refs": [
+          "fr_a1_home_and_location_cuisine"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_home_and_location_02",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "text": {
+          "fr": "Il y a deux chambres."
+        },
+        "translations": {
+          "fa": "دو اتاق خواب هست."
+        },
+        "intent": "state_presence_plural",
+        "concept_refs": [
+          "fr_a1_home_and_location_chambre"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_home_and_location_03",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "text": {
+          "fr": "Où est la salle de bains ?"
+        },
+        "translations": {
+          "fa": "حمام کجاست؟"
+        },
+        "intent": "ask_location",
+        "concept_refs": [
+          "fr_a1_home_and_location_ou",
+          "fr_a1_home_and_location_salle_de_bains"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_home_and_location_04",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "text": {
+          "fr": "La salle de bains est ici."
+        },
+        "translations": {
+          "fa": "حمام اینجاست."
+        },
+        "intent": "state_location",
+        "concept_refs": [
+          "fr_a1_home_and_location_salle_de_bains",
+          "fr_a1_home_and_location_ici"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_home_and_location_core",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "slug": "a1-fr-home-and-location-grammar",
+        "title": "Il y a",
+        "rule_summary": "Use il y a for both singular and plural existence.",
+        "explanation": {
+          "fa": "برای گفتن «هست / هستند» از il y a استفاده می‌شود و برای مفرد و جمع تغییر نمی‌کند."
+        },
+        "examples": [
+          {
+            "fr": "Il y a une cuisine.",
+            "fa": "یک آشپزخانه هست."
+          },
+          {
+            "fr": "Il y a deux chambres.",
+            "fa": "دو اتاق خواب هست."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_home_and_location_01",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "title": "Le nouvel appartement",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "home",
+        "characters": [
+          "hugo",
+          "inès"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "hugo",
+            "text": "Il y a combien de chambres ?",
+            "translation_fa": "چند اتاق خواب هست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "inès",
+            "text": "Il y a deux chambres.",
+            "translation_fa": "دو اتاق خواب هست."
+          },
+          {
+            "order": 3,
+            "speaker": "hugo",
+            "text": "Et une cuisine ?",
+            "translation_fa": "آشپزخانه هم هست؟"
+          },
+          {
+            "order": 4,
+            "speaker": "inès",
+            "text": "Oui, juste ici.",
+            "translation_fa": "بله، همین‌جاست."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_home_and_location_02",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "title": "Je cherche la salle de bains",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "home",
+        "characters": [
+          "claire",
+          "julien"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "claire",
+            "text": "Excusez-moi, où est la salle de bains ?",
+            "translation_fa": "ببخشید، حمام کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "julien",
+            "text": "Elle est là, à droite.",
+            "translation_fa": "آنجاست، سمت راست."
+          },
+          {
+            "order": 3,
+            "speaker": "claire",
+            "text": "Merci beaucoup.",
+            "translation_fa": "خیلی ممنون."
+          },
+          {
+            "order": 4,
+            "speaker": "julien",
+            "text": "Je vous en prie.",
+            "translation_fa": "خواهش می‌کنم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_01_meaning",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Il y a une cuisine."
+        },
+        "answer": {
+          "value": "یک آشپزخانه هست."
+        },
+        "options": [
+          "یک آشپزخانه هست.",
+          "دو اتاق خواب هست.",
+          "حمام کجاست؟",
+          "حمام اینجاست."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il y a une cuisine. — یک آشپزخانه هست.",
+          "model_answer": "Il y a une cuisine."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_01_listen",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Il y a deux chambres."
+        },
+        "answer": {
+          "value": "Il y a deux chambres."
+        },
+        "options": [
+          "Il y a deux chambres.",
+          "Il y a une cuisine.",
+          "Où est la salle de bains ?",
+          "La salle de bains est ici."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il y a deux chambres. — دو اتاق خواب هست.",
+          "model_answer": "Il y a deux chambres.",
+          "transcript_fr": "Il y a deux chambres."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_01_speak",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Il y a une cuisine."
+        },
+        "answer": {
+          "expected_text": "Il y a une cuisine."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il y a une cuisine. — یک آشپزخانه هست.",
+          "model_answer": "Il y a une cuisine."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_01_build",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "y",
+            "a",
+            "deux",
+            "chambres.",
+            "Il"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Il",
+            "y",
+            "a",
+            "deux",
+            "chambres."
+          ],
+          "value": "Il y a deux chambres."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il y a deux chambres. — دو اتاق خواب هست.",
+          "model_answer": "Il y a deux chambres."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_01_dialogue",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_home_and_location_01",
+          "question_fa": "کدام گزینه با معنی «یک آشپزخانه هست.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Il y a une cuisine."
+        },
+        "options": [
+          "Il y a une cuisine.",
+          "Il y a deux chambres.",
+          "Où est la salle de bains ?",
+          "La salle de bains est ici."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il y a une cuisine. — یک آشپزخانه هست.",
+          "model_answer": "Il y a une cuisine."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_02_meaning",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Où est la salle de bains ?"
+        },
+        "answer": {
+          "value": "حمام کجاست؟"
+        },
+        "options": [
+          "حمام کجاست؟",
+          "یک آشپزخانه هست.",
+          "دو اتاق خواب هست.",
+          "حمام اینجاست."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Où est la salle de bains ? — حمام کجاست؟",
+          "model_answer": "Où est la salle de bains ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_02_listen",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "La salle de bains est ici."
+        },
+        "answer": {
+          "value": "La salle de bains est ici."
+        },
+        "options": [
+          "La salle de bains est ici.",
+          "Où est la salle de bains ?",
+          "Il y a une cuisine.",
+          "Il y a deux chambres."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: La salle de bains est ici. — حمام اینجاست.",
+          "model_answer": "La salle de bains est ici.",
+          "transcript_fr": "La salle de bains est ici."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_02_speak",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Où est la salle de bains ?"
+        },
+        "answer": {
+          "expected_text": "Où est la salle de bains ?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Où est la salle de bains ? — حمام کجاست؟",
+          "model_answer": "Où est la salle de bains ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_02_build",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "salle",
+            "de",
+            "bains",
+            "est",
+            "ici.",
+            "La"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "La",
+            "salle",
+            "de",
+            "bains",
+            "est",
+            "ici."
+          ],
+          "value": "La salle de bains est ici."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: La salle de bains est ici. — حمام اینجاست.",
+          "model_answer": "La salle de bains est ici."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_home_and_location_02_dialogue",
+      "data": {
+        "lesson_key": "a1-fr-home-and-location-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_home_and_location_02",
+          "question_fa": "کدام گزینه با معنی «حمام کجاست؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Où est la salle de bains ?"
+        },
+        "options": [
+          "Où est la salle de bains ?",
+          "Il y a une cuisine.",
+          "Il y a deux chambres.",
+          "La salle de bains est ici."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Où est la salle de bains ? — حمام کجاست؟",
+          "model_answer": "Où est la salle de bains ?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
