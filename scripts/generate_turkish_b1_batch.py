@@ -88,6 +88,30 @@ def load_retrofits() -> dict[str, dict]:
     return by_slug
 
 
+def apply_fixes(retrofits: dict[str, dict]) -> dict[str, dict]:
+    payload = json.loads((SPEC_DIR / "retrofit-batch-01-fixes.json").read_text(encoding="utf-8"))
+    if payload.get("level") != LEVEL or payload.get("variant") != "tr-TR":
+        raise SystemExit("Unexpected Turkish B1 retrofit-fix metadata")
+    fixed = copy.deepcopy(retrofits)
+    for slug, correction in payload.get("replacements", {}).items():
+        if slug not in fixed:
+            raise SystemExit(f"Unknown retrofit correction unit: {slug}")
+        if "dialogue" in correction:
+            rows = fixed[slug].get("dialogues", [])
+            if len(rows) != 1 or int(rows[0][-1]) != 3:
+                raise SystemExit(f"{slug}: expected exactly one lesson-3 retrofit dialogue")
+            fixed[slug]["dialogues"] = [copy.deepcopy(correction["dialogue"])]
+        if "utterance_u5" in correction:
+            rows = fixed[slug].get("utterances", [])
+            replaced = False
+            for i, row in enumerate(rows):
+                if row and row[0] == "u5":
+                    rows[i] = copy.deepcopy(correction["utterance_u5"]); replaced = True
+            if not replaced:
+                raise SystemExit(f"{slug}: u5 correction target missing")
+    return fixed
+
+
 def merge_unit(unit: dict, retrofit: dict) -> dict:
     merged = copy.deepcopy(unit)
     merged["utterances"] = list(merged.get("utterances", [])) + copy.deepcopy(retrofit["utterances"])
@@ -108,7 +132,7 @@ def main() -> None:
     engine.LEVEL = LEVEL
     engine.rubric_assessment = b1_rubric
     units = load_units()
-    retrofits = load_retrofits()
+    retrofits = apply_fixes(load_retrofits())
     out = ROOT / "content/production/tr/B1"
     out.mkdir(parents=True, exist_ok=True)
     written = []
