@@ -44,7 +44,7 @@
           {
             "order": 4,
             "speaker": "Emil",
-            "text": "Ich komme aus Iran.",
+            "text": "Ich komme aus dem Iran.",
             "translation_fa": "من از ایران می‌آیم."
           },
           {
@@ -131,7 +131,7 @@
         },
         "answer": {
           "evaluation_mode": "rubric",
-          "model_text": "Ich heiße Sara. Ich komme aus Iran. Mir geht's gut.",
+          "model_text": "Ich heiße Sara. Ich komme aus dem Iran. Mir geht's gut.",
           "required_points_fa": [
             "نام خودت",
             "کشور یا مبدأ",
@@ -170,7 +170,7 @@
         "status": "validated",
         "feedback": {
           "explanation_fa": "پاسخ شخصی تو لازم نیست عین نمونه باشد؛ مهم انتقال اطلاعات خواسته‌شده و قابل‌فهم بودن است.",
-          "model_answer": "Ich heiße Sara. Ich komme aus Iran. Mir geht's gut.",
+          "model_answer": "Ich heiße Sara. Ich komme aus dem Iran. Mir geht's gut.",
           "retry_tip_fa": "از الگو کمک بگیر اما اطلاعات واقعی خودت را جایگزین کن."
         }
       }
@@ -361,7 +361,7 @@
         },
         "examples": [
           {
-            "de": "Ich heiße Sara. Ich komme aus Iran. Mir geht's gut.",
+            "de": "Ich heiße Sara. Ich komme aus dem Iran. Mir geht's gut.",
             "fa": "نمونهٔ معرفی شخصی"
           },
           {

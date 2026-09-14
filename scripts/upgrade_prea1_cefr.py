@@ -54,7 +54,7 @@ LANGS = {
         "name_q": "Wie heißt du?", "name_q_fa": "اسمت چیه؟",
         "name_a": "Ich heiße Sara.", "name_a_fa": "اسم من ساراست.",
         "origin_q": "Woher kommst du?", "origin_q_fa": "اهل کجایی؟",
-        "origin_a": "Ich komme aus Iran.", "origin_a_fa": "من از ایران می‌آیم.",
+        "origin_a": "Ich komme aus dem Iran.", "origin_a_fa": "من از ایران می‌آیم.",
         "age_q": "Wie alt bist du?", "age_q_fa": "چند سالته؟",
         "age_a": "Ich bin zwanzig Jahre alt.", "age_a_fa": "بیست سالمه.",
         "feel_q": "Wie geht's?", "feel_q_fa": "حالت چطوره؟",
@@ -70,7 +70,7 @@ LANGS = {
         "exit": "AUSGANG", "exit_fa": "خروج", "open": "OFFEN", "open_fa": "باز",
         "exit_q": "Wo ist der Ausgang?", "exit_q_fa": "خروج کجاست؟", "exit_a": "Dort.", "exit_a_fa": "آنجاست.",
         "repeat": "Noch einmal, bitte.", "repeat_fa": "یک بار دیگر، لطفاً.",
-        "self_model": "Ich heiße Sara. Ich komme aus Iran. Mir geht's gut.",
+        "self_model": "Ich heiße Sara. Ich komme aus dem Iran. Mir geht's gut.",
         "form_model": "Name: Sara\nLand: Iran\nTelefon: 0912 345 6789",
     },
     "tr": {
@@ -78,7 +78,7 @@ LANGS = {
         "dir": "tr", "cast": [("Elif", "Mert"), ("Selin", "Kaan"), ("Deniz", "Emre"), ("Zeynep", "Burak"), ("Elif", "Kaan"), ("Selin", "Mert"), ("Deniz", "Burak"), ("Zeynep", "Emre")],
         "greet": "Merhaba!", "greet_fa": "سلام!",
         "name_q": "Adın ne?", "name_q_fa": "اسمت چیه؟",
-        "name_a": "Ben Sara.", "name_a_fa": "من سارا هستم.",
+        "name_a": "Benim adım Sara.", "name_a_fa": "من سارا هستم.",
         "origin_q": "Nerelisin?", "origin_q_fa": "اهل کجایی؟",
         "origin_a": "İranlıyım.", "origin_a_fa": "ایرانی‌ام.",
         "age_q": "Kaç yaşındasın?", "age_q_fa": "چند سالته؟",
@@ -96,7 +96,7 @@ LANGS = {
         "exit": "ÇIKIŞ", "exit_fa": "خروج", "open": "AÇIK", "open_fa": "باز",
         "exit_q": "Çıkış nerede?", "exit_q_fa": "خروج کجاست؟", "exit_a": "Orada.", "exit_a_fa": "آنجاست.",
         "repeat": "Tekrar eder misiniz?", "repeat_fa": "دوباره می‌گویید؟",
-        "self_model": "Ben Sara. İranlıyım. İyiyim.",
+        "self_model": "Benim adım Sara. İranlıyım. İyiyim.",
         "form_model": "Ad: Sara\nÜlke: İran\nTelefon: 0912 345 6789",
     },
     "ko": {
@@ -123,7 +123,7 @@ LANGS = {
         "exit_q": "출구가 어디예요?", "exit_q_fa": "خروج کجاست؟", "exit_a": "저기예요.", "exit_a_fa": "آنجاست.",
         "repeat": "다시 말해 주세요.", "repeat_fa": "لطفاً دوباره بگویید.",
         "self_model": "저는 사라예요. 이란에서 왔어요. 잘 지내요.",
-        "form_model": "이름: 사라\n나라: 이란\n전화번호: 0912 345 6789",
+        "form_model": "이름: 사라\n나라: 이란\n전화번호: 010 1234 5678",
     },
 }
 
