@@ -45,7 +45,8 @@ jobs:
       - name: Final Turkish content validation before paid generation
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          test "$(find content/production/tr/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 14
+          python scripts/audit_turkish_prea1_content.py
           for f in content/production/tr/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/pre_a1.py --dry-run
@@ -111,6 +112,14 @@ jobs:
             exit 0
           fi
           git commit -m 'Generate Turkish Pre-A1 production audio [skip ci]'
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt ${attempt}/5"
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to push generated Turkish audio after 5 attempts.' >&2
+          exit 1
