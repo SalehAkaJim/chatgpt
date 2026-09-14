@@ -1,8 +1,8 @@
-name: Italian B2 MySQL Integration
+name: Italian C1 MySQL Integration
 on:
   push:
     branches: [main]
-    paths: ['.github/italian-b2-mysql-trigger']
+    paths: ['.github/italian-c1-mysql-trigger']
   workflow_dispatch:
 jobs:
   mysql-9-import:
@@ -23,39 +23,40 @@ jobs:
       - run: |
           pip install -r requirements.txt
           sudo apt-get update -qq && sudo apt-get install -y default-mysql-client
-      - name: Bootstrap schema and Italian curriculum through B2
+      - name: Bootstrap schema and Italian curriculum through C1
         run: |
           set -euo pipefail; DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
           $DB < database/schema.sql; $DB < database/migrations/001_curriculum.sql; $DB < database/migrations/002_multilingual_core.sql; $DB < database/migrations/003_lesson_item_lexemes.sql; $DB < database/migrations/004_level_import_audio.sql; $DB < database/migrations/005_writing_exercises.sql
-          $DB < database/seed/cefr.sql; $DB < database/seed/languages.sql; $DB < database/seed/skills-topics.sql; $DB < database/seed/english-a1-curriculum.sql; $DB < database/seed/language-variants-courses.sql; $DB < database/seed/italian-prea1-curriculum.sql; $DB < database/seed/italian-a1-curriculum.sql; $DB < database/seed/italian-a2-curriculum.sql; $DB < database/seed/italian-b1-curriculum.sql; $DB < database/seed/italian-b2-curriculum.sql
-      - name: Validate and dry-run Italian B2
+          $DB < database/seed/cefr.sql; $DB < database/seed/languages.sql; $DB < database/seed/skills-topics.sql; $DB < database/seed/english-a1-curriculum.sql; $DB < database/seed/language-variants-courses.sql; $DB < database/seed/italian-prea1-curriculum.sql; $DB < database/seed/italian-a1-curriculum.sql; $DB < database/seed/italian-a2-curriculum.sql; $DB < database/seed/italian-b1-curriculum.sql; $DB < database/seed/italian-b2-curriculum.sql; $DB < database/seed/italian-c1-curriculum.sql
+      - name: Validate and dry-run Italian C1
         run: |
-          set -euo pipefail; test "$(find content/production/it/B2 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
-          for f in content/production/it/B2/*.json; do python scripts/validate_content.py "$f"; done
-          python database/import/it/b2.py --dry-run
-      - name: Import Italian Pre-A1 through B2
+          set -euo pipefail; test "$(find content/production/it/C1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/it/C1/*.json; do python scripts/validate_content.py "$f"; done
+          python database/import/it/c1.py --dry-run
+      - name: Import Italian Pre-A1 through C1
         run: |
           python database/import/it/pre_a1.py --allow-unreviewed
           python database/import/it/a1.py --allow-unreviewed
           python database/import/it/a2.py --allow-unreviewed
           python database/import/it/b1.py --allow-unreviewed
           python database/import/it/b2.py --allow-unreviewed
-      - name: Verify Italian B2 canonical counts
+          python database/import/it/c1.py --allow-unreviewed
+      - name: Verify Italian C1 canonical counts
         run: |
           set -euo pipefail
           q(){ mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "$1"; }
-          units=$(q "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-it-it' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='B2';")
-          lessons=$(q "SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id AND c.slug='fa-it-it' JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id AND lvl.code='B2';")
-          concepts=$(q "SELECT COUNT(DISTINCT li.concept_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='B2' AND li.concept_id IS NOT NULL;")
-          lexemes=$(q "SELECT COUNT(DISTINCT li.lexeme_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='B2' AND li.lexeme_id IS NOT NULL;")
-          utterances=$(q "SELECT COUNT(DISTINCT li.utterance_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='B2' AND li.utterance_id IS NOT NULL;")
-          dialogues=$(q "SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='B2' AND li.dialogue_id IS NOT NULL;")
-          exercises=$(q "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='B2';")
+          units=$(q "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-it-it' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='C1';")
+          lessons=$(q "SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id AND c.slug='fa-it-it' JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id AND lvl.code='C1';")
+          concepts=$(q "SELECT COUNT(DISTINCT li.concept_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='C1' AND li.concept_id IS NOT NULL;")
+          lexemes=$(q "SELECT COUNT(DISTINCT li.lexeme_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='C1' AND li.lexeme_id IS NOT NULL;")
+          utterances=$(q "SELECT COUNT(DISTINCT li.utterance_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='C1' AND li.utterance_id IS NOT NULL;")
+          dialogues=$(q "SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='C1' AND li.dialogue_id IS NOT NULL;")
+          exercises=$(q "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-it-it' AND lvl.code='C1';")
           echo "units=$units lessons=$lessons concepts=$concepts lexemes=$lexemes utterances=$utterances dialogues=$dialogues exercises=$exercises"
           test "$units" = 10; test "$lessons" = 20; test "$concepts" = 60; test "$lexemes" = 60; test "$utterances" = 40; test "$dialogues" = 20; test "$exercises" = 100
-      - name: Verify B2 idempotency
+      - name: Verify C1 idempotency
         run: |
           set -euo pipefail
           q(){ mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "$1"; }
           snap(){ q "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-it-it'),'|',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-it-it'),'|',(SELECT COUNT(*) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-it-it'));"; }
-          before=$(snap); python database/import/it/b2.py --allow-unreviewed; after=$(snap); echo "before=$before after=$after"; test "$before" = "$after"
+          before=$(snap); python database/import/it/c1.py --allow-unreviewed; after=$(snap); echo "before=$before after=$after"; test "$before" = "$after"
