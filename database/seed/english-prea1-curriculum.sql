@@ -1,5 +1,5 @@
 -- English (en-US) Pre-A1 curriculum for Persian-speaking learners
--- Short bridge into A1; deliberately course-specific rather than a generic translation.
+-- Zero-learner bridge into A1; deliberately course-specific rather than a generic translation.
 -- Requires schema.sql, migrations 001-003, CEFR/language/skills seeds, and language-variants-courses seed.
 
 INSERT IGNORE INTO curriculum_units (
@@ -38,6 +38,9 @@ FROM (
   UNION ALL SELECT 20,'literacy','sound-letter-mapping','prea1-en-letter-names','Letter Names & Spelling',
          'Understand common English letter names and spell a very short name or word aloud.',2,
          JSON_OBJECT('focus','letter_names','spelling',TRUE)
+  UNION ALL SELECT 25,'literacy','sound-letter-mapping','prea1-en-letter-sound-bridge','Letters Become Sounds',
+         'Hear the full alphabet in manageable groups, distinguish letter names from sounds in words, and recognize the five main vowel letters without assuming English spelling is perfectly regular.',2,
+         JSON_OBJECT('focus','zero_learner_sound_bridge','letter_names',TRUE,'vowel_awareness',TRUE,'persian_transfer',TRUE)
   UNION ALL SELECT 30,'literacy','sound-letter-mapping','prea1-en-first-sounds','First English Sounds',
          'Connect a small set of high-frequency letters and letter groups to beginner-friendly English sounds.',2,
          JSON_OBJECT('focus','phonology','persian_transfer',TRUE)
@@ -47,6 +50,9 @@ FROM (
   UNION ALL SELECT 50,'social','polite-language','prea1-en-survival-words','Yes, No, Please & Thanks',
          'Understand and use yes, no, please, thank you, and sorry in highly predictable situations.',1,
          JSON_OBJECT('focus','survival_language','high_frequency',TRUE)
+  UNION ALL SELECT 55,'communication','requests','prea1-en-learning-survival','I Don''t Understand Yet',
+         'Keep a beginner interaction alive by saying that you do not understand and asking for repetition, slower speech, or a meaning.',2,
+         JSON_OBJECT('focus','communication_repair','zero_learner',TRUE,'chunk_first',TRUE)
   UNION ALL SELECT 60,'foundations','introductions','prea1-en-my-name','My Name',
          'Say a name, ask another person’s name, and understand the two most common beginner name patterns.',2,
          JSON_OBJECT('focus','introductions','patterns',JSON_ARRAY("I'm …","My name is …"))
@@ -62,6 +68,9 @@ FROM (
   UNION ALL SELECT 100,'communication','simple-messages','prea1-en-first-conversation','Your First Conversation',
          'Follow and take part in a very short supported exchange combining greetings, names, yes/no, and a farewell.',1,
          JSON_OBJECT('focus','integration','capstone',TRUE)
+  UNION ALL SELECT 110,'communication','simple-messages','prea1-en-ready-for-a1','Ready for A1',
+         'Demonstrate zero-learner readiness by recognizing basic script, following very short supported audio, using survival chunks, introducing yourself, and repairing a simple misunderstanding.',2,
+         JSON_OBJECT('focus','prea1_exit_gate','zero_learner',TRUE,'script',TRUE,'listening',TRUE,'repair',TRUE,'speaking',TRUE)
 ) AS u
 JOIN courses c ON c.slug = 'fa-en-us'
 JOIN cefr_levels lvl ON lvl.code = 'Pre-A1'
