@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Generate cumulative legacy Turkish B1 with authored third-lesson retrofits.
+"""Generate cumulative Turkish B1 production from legacy + expansion specs.
 
-The initial B1 curriculum was authored as two lessons per unit. Current course
-policy requires a substantive third B1 production/mediation lesson. We reuse the
-size-agnostic A2 materializer only as infrastructure, then rewrite identifiers
-and B1 assessment language; authored Turkish B1 content remains the source.
+The initial B1 curriculum was authored as two lessons per unit. Those legacy
+units receive authored third-lesson retrofits. New B1 expansion batches are
+already authored as three substantive lessons and are discovered dynamically.
+The size-agnostic A2 materializer is reused only as infrastructure; Turkish B1
+authored content remains the source of truth.
 """
 from __future__ import annotations
 
 import copy
 import json
+import re
 from pathlib import Path
 
 import generate_turkish_a2_curriculum as engine
@@ -17,7 +19,7 @@ import generate_turkish_a2_curriculum as engine
 ROOT = Path(__file__).resolve().parents[1]
 SPEC_DIR = ROOT / "content/specs/tr/B1"
 LEVEL = "B1"
-EXPECTED = [
+LEGACY_EXPECTED = [
     "experiences-and-change", "storytelling-sequence", "opinions-and-evidence",
     "reported-information", "conditions-and-consequences", "goals-and-effort",
     "problems-and-solutions", "media-and-sources", "social-nuance",
@@ -64,7 +66,7 @@ def rename_b1(value):
     return value
 
 
-def load_units() -> list[dict]:
+def load_legacy_units() -> list[dict]:
     units: list[dict] = []
     for name in ("batch-01a.json", "batch-01b.json"):
         payload = json.loads((SPEC_DIR / name).read_text(encoding="utf-8"))
@@ -72,9 +74,32 @@ def load_units() -> list[dict]:
             raise SystemExit(f"{name}: unexpected Turkish B1 metadata")
         units.extend(payload.get("units", []))
     actual = [u.get("slug") for u in units]
-    if actual != EXPECTED:
+    if actual != LEGACY_EXPECTED:
         raise SystemExit(f"Unexpected Turkish B1 legacy sequence: {actual}")
     return units
+
+
+def load_expansion_units() -> list[tuple[dict, Path, int]]:
+    rows: list[tuple[dict, Path, int]] = []
+    seen = set(LEGACY_EXPECTED)
+    for path in sorted(SPEC_DIR.glob("batch-*.json")):
+        if path.name in {"batch-01a.json", "batch-01b.json"}:
+            continue
+        match = re.fullmatch(r"batch-(\d+)\.json", path.name)
+        if not match:
+            continue
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if payload.get("level") != LEVEL or payload.get("variant") != "tr-TR":
+            raise SystemExit(f"{path.name}: unexpected Turkish B1 metadata")
+        batch_number = int(payload.get("batch", int(match.group(1))))
+        for unit in payload.get("units", []):
+            slug = unit.get("slug")
+            if not slug or slug in seen:
+                raise SystemExit(f"{path.name}: duplicate/invalid Turkish B1 slug: {slug}")
+            engine.validate_unit_spec(unit, path)
+            seen.add(slug)
+            rows.append((unit, path, batch_number))
+    return rows
 
 
 def load_retrofits() -> dict[str, dict]:
@@ -83,7 +108,7 @@ def load_retrofits() -> dict[str, dict]:
         raise SystemExit("Unexpected Turkish B1 retrofit metadata")
     rows = payload.get("retrofits", [])
     by_slug = {r.get("slug"): r for r in rows}
-    if None in by_slug or len(by_slug) != len(rows) or set(by_slug) != set(EXPECTED):
+    if None in by_slug or len(by_slug) != len(rows) or set(by_slug) != set(LEGACY_EXPECTED):
         raise SystemExit("Every legacy Turkish B1 unit needs exactly one third-lesson retrofit")
     return by_slug
 
@@ -128,31 +153,48 @@ def merge_unit(unit: dict, retrofit: dict) -> dict:
     return merged
 
 
+def materialize(spec: dict, batch_number: int, out: Path) -> str:
+    batch = rename_b1(engine.build_unit(spec, batch_number))
+    slug = spec["slug"]
+    batch["batch_id"] = f"tr-tr-b1-{slug}-v1"
+    batch["cefr"] = LEVEL
+    batch["curriculum_unit"] = f"b1-tr-{slug}"
+    batch["generator"] = "gpt-5.6-sol:turkish-b1-batch-v3"
+    for item in batch["items"]:
+        data = item.get("data", {})
+        data["cefr"] = LEVEL
+        if item.get("kind") == "exercise":
+            data["difficulty"] = max(3, int(data.get("difficulty", 3)))
+    target = out / f"b1-tr-{slug}-v1.json"
+    target.write_text(json.dumps(batch, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return target.name
+
+
 def main() -> None:
     engine.LEVEL = LEVEL
     engine.rubric_assessment = b1_rubric
-    units = load_units()
+    legacy = load_legacy_units()
     retrofits = apply_fixes(load_retrofits())
+    expansions = load_expansion_units()
     out = ROOT / "content/production/tr/B1"
     out.mkdir(parents=True, exist_ok=True)
-    written = []
-    for unit in units:
+    expected_files: set[str] = set()
+    for unit in legacy:
         spec = merge_unit(unit, retrofits[unit["slug"]])
-        batch = rename_b1(engine.build_unit(spec, 1))
-        slug = unit["slug"]
-        batch["batch_id"] = f"tr-tr-b1-{slug}-v1"
-        batch["cefr"] = LEVEL
-        batch["curriculum_unit"] = f"b1-tr-{slug}"
-        batch["generator"] = "gpt-5.6-sol:turkish-b1-batch-v2"
-        for item in batch["items"]:
-            data = item.get("data", {})
-            data["cefr"] = LEVEL
-            if item.get("kind") == "exercise":
-                data["difficulty"] = max(3, int(data.get("difficulty", 3)))
-        target = out / f"b1-tr-{slug}-v1.json"
-        target.write_text(json.dumps(batch, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        written.append(target.name)
-    print(json.dumps({"level": LEVEL, "legacy_units_retrofitted": len(written), "lessons": len(written) * 3, "files": written}, ensure_ascii=False, indent=2))
+        expected_files.add(materialize(spec, 1, out))
+    for unit, _source, batch_number in expansions:
+        expected_files.add(materialize(unit, batch_number, out))
+    for path in out.glob("*.json"):
+        if path.name not in expected_files:
+            path.unlink()
+    print(json.dumps({
+        "level": LEVEL,
+        "legacy_units_retrofitted": len(legacy),
+        "expansion_units": len(expansions),
+        "total_units": len(expected_files),
+        "lessons": len(expected_files) * 3,
+        "files": sorted(expected_files),
+    }, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
