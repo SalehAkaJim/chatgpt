@@ -36,16 +36,21 @@ jobs:
           python - <<'PY'
           import collections,json
           from pathlib import Path
+          sequence=['first-greetings','my-name','numbers-0-10','alphabet','first-sounds','how-are-you','first-objects','polite-words','survival-words','first-conversation']
+          paths=[Path('content/production/it/Pre-A1')/f'prea1-it-{slug}-v1.json' for slug in sequence]
           counts=collections.Counter(); pairs=[]; lessons=set(); ordered=[]
-          for p in sorted(Path('content/production/it/Pre-A1').glob('*.json')):
+          for p in paths:
               b=json.loads(p.read_text())
+              dialogues=[]
               for item in b['items']:
                   counts[item['kind']]+=1
                   lk=item.get('data',{}).get('lesson_key')
                   if lk: lessons.add(lk)
-                  if item['kind']=='dialogue':
-                      chars=tuple(item['data'].get('characters',[])[:2])
-                      pairs.append((lk,chars)); ordered.append(chars)
+                  if item['kind']=='dialogue': dialogues.append(item)
+              dialogues.sort(key=lambda x:x['data']['lesson_key'])
+              for item in dialogues:
+                  lk=item['data']['lesson_key']; chars=tuple(item['data'].get('characters',[])[:2])
+                  pairs.append((lk,chars)); ordered.append(chars)
           assert len(lessons)==20,len(lessons)
           assert len(set(pairs))==len(pairs),'duplicate dialogue pair in a lesson'
           for previous,current in zip(ordered,ordered[1:]):
