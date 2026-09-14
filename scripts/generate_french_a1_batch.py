@@ -5,6 +5,7 @@ import argparse, json, re, unicodedata
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 LEVEL='A1'; COURSE='fa-fr-fr'; VARIANT='fr-FR'
+SPEAKER_MAP={'emma':'inès','lea':'léa','lucas':'nicolas','nora':'claire'}
 def safe(value:str)->str:
     n=unicodedata.normalize('NFKD',value); s=''.join(c for c in n if not unicodedata.combining(c))
     return re.sub(r'[^a-z0-9]+','_',s.lower()).strip('_') or 'item'
@@ -30,6 +31,7 @@ def build_unit(spec:dict)->dict:
     for i,row in enumerate(spec['dialogues'],1):
         title,setting,turns,lesson=row; chars=[]; turn_rows=[]
         for order,(speaker,fr,fa) in enumerate(turns,1):
+            speaker=SPEAKER_MAP.get(speaker,speaker)
             if speaker not in chars: chars.append(speaker)
             turn_rows.append({'order':order,'speaker':speaker,'text':fr,'translation_fa':fa})
         did=f'd_{prefix}_{i:02d}'; dialogue_ids[lesson]=did
