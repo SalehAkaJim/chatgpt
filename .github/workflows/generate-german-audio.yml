@@ -3,7 +3,7 @@ name: Generate German Pre-A1 and A1 Audio
 on:
   push:
     branches:
-      - language/german-a1
+      - main
     paths:
       - '.github/german-audio-generation-trigger'
   workflow_dispatch:
@@ -26,10 +26,10 @@ jobs:
       ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
 
     steps:
-      - name: Checkout German branch
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
-          ref: language/german-a1
+          ref: main
           fetch-depth: 0
 
       - name: Set up Python
@@ -127,6 +127,14 @@ jobs:
             exit 0
           fi
           git commit -m 'Generate German Pre-A1 and A1 production audio [skip ci]'
-          git fetch origin language/german-a1
-          git rebase origin/language/german-a1
-          git push origin HEAD:language/german-a1
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt ${attempt}/5"
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to push generated German audio after 5 attempts.' >&2
+          exit 1
