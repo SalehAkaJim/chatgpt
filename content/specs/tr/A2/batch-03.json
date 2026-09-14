@@ -1,0 +1,95 @@
+{
+  "batch": 3,
+  "level": "A2",
+  "variant": "tr-TR",
+  "pedagogy": {
+    "learner_language": "fa-IR",
+    "standard": "contemporary Istanbul Turkish",
+    "principles": [
+      "stay inside concrete A2 domains and short linked sentences",
+      "use three substantive lessons per unit ending in personalized production",
+      "recycle simple past, habits, polite requests, comparisons, plans and reasons without B1 morphology",
+      "keep Persian support contrastive, concise and action-oriented"
+    ]
+  },
+  "units": [
+    {
+      "slug": "transport-delays",
+      "topic": "transport",
+      "title": "Otobüs gecikti",
+      "objective": "Handle routine public-transport delays, ask about another route and explain a short delay.",
+      "grammar_focus": "simple delay language, route alternatives and because/result links",
+      "curriculum": {"skill_slug": "travel-transport", "topic_slug": "transport", "sort_order": 370},
+      "vocab": [["gecikmek","gecikmek","دیر رسیدن / تأخیر داشتن","verb",1],["durak","durak","ایستگاه","noun",1],["aktarma","aktarma","تعویض خط / وسیله","noun",2],["hat","hat","خط","noun",2],["trafik","trafik","ترافیک","noun",3],["gecikme","gecikme","تأخیر","noun",3]],
+      "utterances": [["u1","Otobüs on dakika gecikti.","اتوبوس ده دقیقه تأخیر داشت.","state_delay",["gecikmek"],1],["u2","Bu duraktan hangi otobüs geçiyor?","از این ایستگاه کدام اتوبوس رد می‌شود؟","ask_route",["durak"],1],["u3","Bir aktarma yapmam gerekiyor.","باید یک بار خط عوض کنم.","state_transfer",["aktarma"],2],["u4","Bu hat şehir merkezine gidiyor.","این خط به مرکز شهر می‌رود.","state_route",["hat"],2],["u5","Trafik çok yoğundu, bu yüzden geç kaldım.","ترافیک خیلی سنگین بود، برای همین دیر رسیدم.","explain_delay",["trafik"],3],["u6","Gecikme için özür dilerim.","برای تأخیر عذر می‌خواهم.","apologize_delay",["gecikme"],3]],
+      "grammar": ["Basit neden ve sonuç","Use short clauses with çünkü or bu yüzden to explain a routine travel delay.","برای توضیح سادهٔ علت و نتیجه می‌توانیم از çünkü یا bu yüzden استفاده کنیم. جمله‌ها را کوتاه و روشن نگه می‌داریم.",[["Otobüs gecikti. Bu yüzden geç kaldım.","اتوبوس تأخیر داشت. برای همین دیر رسیدم."],["Geç kaldım çünkü trafik yoğundu.","دیر رسیدم چون ترافیک سنگین بود."]]],
+      "dialogues": [["Geciken otobüs","ایستگاه",[["Elif","Otobüs yine gecikti mi?","اتوبوس دوباره تأخیر داشت؟"],["Mert","Evet, on dakika gecikti.","بله، ده دقیقه تأخیر داشت."],["Elif","Başka bir otobüs var mı?","اتوبوس دیگری هست؟"],["Mert","Evet, karşı duraktan geçiyor.","بله، از ایستگاه روبه‌رو رد می‌شود."]],1],["Aktarma","مترو",[["Selin","Merkeze nasıl gideceksin?","چطور به مرکز می‌روی؟"],["Kaan","Bu hatla gidiyorum ama bir aktarma var.","با این خط می‌روم ولی یک تعویض خط دارد."],["Selin","Nerede aktarma yapacaksın?","کجا خط عوض می‌کنی؟"],["Kaan","Taksim'de.","در تکسیم."]],2],["Geç kaldım","قرار",[["Deniz","Biraz geç kaldın.","کمی دیر رسیدی."],["Zeynep","Evet, trafik çok yoğundu.","بله، ترافیک خیلی سنگین بود."],["Deniz","Sorun değil.","اشکالی ندارد."],["Zeynep","Teşekkürler, gecikme için özür dilerim.","ممنون، برای تأخیر عذر می‌خواهم."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۴ جمله کوتاه بنویس امروز چطور جابه‌جا شدی، چه مشکل ساده‌ای پیش آمد و نتیجه چه شد.","speaking_prompt_fa":"یک تأخیر یا مشکل ساده در رفت‌وآمد را در چند جمله توضیح بده و اگر لازم است یک مسیر جایگزین بگو.","model_text":"Otobüs bugün gecikti. Trafik çok yoğundu. Bu yüzden işe geç geldim. Yarın metroya bineceğim.","required_points_fa":["وسیله یا مسیر","یک مشکل ساده","نتیجه یا برنامه بعدی"]}
+    },
+    {
+      "slug": "returns-exchanges",
+      "topic": "shopping",
+      "title": "Bunu değiştirmek istiyorum",
+      "objective": "Return or exchange a simple purchase, explain a concrete problem and ask for an available option.",
+      "grammar_focus": "polite return/exchange requests with istemek and simple descriptive reasons",
+      "curriculum": {"skill_slug": "shopping-money", "topic_slug": "shopping", "sort_order": 380},
+      "vocab": [["degistirmek","değiştirmek","تعویض کردن","verb",1],["iade","iade etmek","پس دادن / مرجوع کردن","verb",1],["beden","beden","سایز لباس","noun",2],["fis","fiş","رسید خرید","noun",2],["kusurlu","kusurlu","معیوب","adjective",3],["uygun","uygun","مناسب","adjective",3]],
+      "utterances": [["u1","Bunu değiştirmek istiyorum.","می‌خواهم این را تعویض کنم.","request_exchange",["degistirmek"],1],["u2","Bu ürünü iade edebilir miyim?","می‌توانم این کالا را پس بدهم؟","request_return",["iade"],1],["u3","Bu beden bana küçük geldi.","این سایز برایم کوچک بود.","state_size_problem",["beden"],2],["u4","Fişim yanımda.","رسید خریدم همراهم است.","state_receipt",["fis"],2],["u5","Bu ürün biraz kusurlu.","این کالا کمی معیوب است.","state_product_problem",["kusurlu"],3],["u6","Başka bir renk daha uygun.","یک رنگ دیگر مناسب‌تر است.","state_preference",["uygun"],3]],
+      "grammar": ["Kibar değişim ve iade isteği","Use istemek or -ebilir miyim to make a short, polite return or exchange request.","برای درخواست مؤدبانهٔ تعویض یا مرجوعی می‌توانیم از istiyorum یا -ebilir miyim استفاده کنیم و دلیل را در یک جمله ساده بگوییم.",[["Bunu değiştirmek istiyorum.","می‌خواهم این را تعویض کنم."],["Başka bir beden alabilir miyim?","می‌توانم یک سایز دیگر بگیرم؟"]]],
+      "dialogues": [["Değişim","فروشگاه",[["Burak","Merhaba, bunu değiştirmek istiyorum.","سلام، می‌خواهم این را تعویض کنم."],["Emre","Tabii. Sorun nedir?","حتماً. مشکل چیست؟"],["Burak","Beden bana küçük geldi.","سایزش برایم کوچک بود."],["Emre","Bir beden büyüğü var.","یک سایز بزرگ‌تر داریم."]],1],["Fişiniz var mı?","صندوق",[["Elif","Bu ürünü iade edebilir miyim?","می‌توانم این کالا را پس بدهم؟"],["Kaan","Fişiniz var mı?","رسید دارید؟"],["Elif","Evet, yanımda.","بله، همراهم است."],["Kaan","Tamam, yardımcı olayım.","باشه، کمکتان می‌کنم."]],2],["Başka renk","فروشگاه",[["Selin","Bu üründe küçük bir sorun var.","این کالا یک مشکل کوچک دارد."],["Deniz","İsterseniz başka bir tane göstereyim.","اگر بخواهید یکی دیگر نشان بدهم."],["Selin","Evet, mavi renk daha uygun.","بله، رنگ آبی مناسب‌تر است."],["Deniz","Hemen getireyim.","الان می‌آورم."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۴ جمله کوتاه یک پیام برای فروشگاه بنویس: چه چیزی خریدی، مشکل چیست و چه می‌خواهی.","speaking_prompt_fa":"نقش مشتری را بازی کن و یک تعویض یا مرجوعی ساده را مؤدبانه توضیح بده.","model_text":"Dün bir gömlek aldım. Beden bana küçük geldi. Fişim yanımda. Bunu değiştirmek istiyorum.","required_points_fa":["کالای خریداری‌شده","مشکل مشخص","درخواست مؤدبانه"]}
+    },
+    {
+      "slug": "service-appointments",
+      "topic": "appointments",
+      "title": "Randevuyu değiştirebilir miyiz?",
+      "objective": "Book, confirm or move a routine service appointment and give a simple reason.",
+      "grammar_focus": "clock/date review, polite availability questions and simple scheduling",
+      "curriculum": {"skill_slug": "time-plans", "topic_slug": "future-plans", "sort_order": 390},
+      "vocab": [["randevu","randevu","وقت / نوبت","noun",1],["musait","müsait","آزاد / وقت‌دار","adjective",1],["ertelemek","ertelemek","عقب انداختن","verb",2],["saat","saat","ساعت","noun",2],["uygun","uygun","مناسب","adjective",3],["onaylamak","onaylamak","تأیید کردن","verb",3]],
+      "utterances": [["u1","Yarın için randevu almak istiyorum.","می‌خواهم برای فردا وقت بگیرم.","request_appointment",["randevu"],1],["u2","Saat üçte müsait misiniz?","ساعت سه وقت دارید؟","ask_availability",["musait"],1],["u3","Randevuyu bir saat erteleyebilir miyiz?","می‌توانیم وقت را یک ساعت عقب بیندازیم؟","request_reschedule",["ertelemek"],2],["u4","Saat dört benim için daha iyi.","ساعت چهار برای من بهتر است.","state_time_preference",["saat"],2],["u5","Cuma günü benim için uygun.","روز جمعه برای من مناسب است.","confirm_suitable_time",["uygun"],3],["u6","Randevuyu şimdi onaylayabiliriz.","می‌توانیم الان وقت را تأیید کنیم.","confirm_appointment",["onaylamak"],3]],
+      "grammar": ["Randevu düzenleme","Use familiar time expressions and polite -ebilir forms to arrange or change a routine appointment.","برای گرفتن یا تغییر نوبت، زمان را روشن می‌گوییم و با -ebilir miyiz / müsait misiniz درخواست مؤدبانه می‌سازیم.",[["Yarın saat üçte müsait misiniz?","فردا ساعت سه وقت دارید؟"],["Randevuyu bir saat erteleyebilir miyiz?","می‌توانیم نوبت را یک ساعت عقب بیندازیم؟"]]],
+      "dialogues": [["Yeni randevu","تلفن",[["Zeynep","Yarın için randevu almak istiyorum.","می‌خواهم برای فردا وقت بگیرم."],["Burak","Saat üçte müsaitiz.","ساعت سه وقت داریم."],["Zeynep","Saat üç uygun.","ساعت سه مناسب است."],["Burak","Tamam, kaydediyorum.","باشه، ثبت می‌کنم."]],1],["Saati değiştirmek","پیام",[["Mert","Randevuyu değiştirebilir miyiz?","می‌توانیم وقت را تغییر بدهیم؟"],["Selin","Tabii. Hangi saat uygun?","حتماً. چه ساعتی مناسب است؟"],["Mert","Saat dört daha iyi.","ساعت چهار بهتر است."],["Selin","Tamam, dörde aldım.","باشه، گذاشتم ساعت چهار."]],2],["Onay","مطب",[["Emre","Cuma günü saat on uygun mu?","جمعه ساعت ده مناسب است؟"],["Elif","Evet, uygun.","بله، مناسب است."],["Emre","Randevuyu onaylıyorum.","وقت را تأیید می‌کنم."],["Elif","Teşekkür ederim.","ممنونم."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"یک پیام ۳ جمله‌ای برای گرفتن یا تغییر نوبت بنویس و یک زمان پیشنهادی بده.","speaking_prompt_fa":"در نقش مشتری یا مراجعه‌کننده، یک نوبت بگیر یا زمان آن را تغییر بده و زمان مناسب خودت را بگو.","model_text":"Yarın bir randevum var. Saat üç benim için zor. Randevuyu saat dörde alabilir miyiz?","required_points_fa":["نوع درخواست","زمان فعلی یا پیشنهادی","درخواست مؤدبانه"]}
+    },
+    {
+      "slug": "weather-plans",
+      "topic": "plans",
+      "title": "Bugün hava yağmurlu",
+      "objective": "Understand a simple weather forecast, choose suitable plans and explain a practical change.",
+      "grammar_focus": "weather expressions, future plans and simple cause/result",
+      "curriculum": {"skill_slug": "time-plans", "topic_slug": "future-plans", "sort_order": 400},
+      "vocab": [["yagmurlu","yağmurlu","بارانی","adjective",1],["gunesli","güneşli","آفتابی","adjective",1],["serin","serin","خنک","adjective",2],["semsiye","şemsiye","چتر","noun",2],["plan","plan","برنامه","noun",3],["iceride","içeride","داخل","adverb",3]],
+      "utterances": [["u1","Bugün hava yağmurlu.","امروز هوا بارانی است.","state_weather",["yagmurlu"],1],["u2","Yarın daha güneşli olacak.","فردا آفتابی‌تر می‌شود.","state_forecast",["gunesli"],1],["u3","Akşam biraz serin olacak.","عصر کمی خنک می‌شود.","state_temperature",["serin"],2],["u4","Şemsiyemi yanıma alacağım.","چترم را با خودم می‌برم.","state_preparation",["semsiye"],2],["u5","Planımızı değiştirdik.","برنامه‌مان را عوض کردیم.","state_plan_change",["plan"],3],["u6","Bugün içeride oturacağız.","امروز داخل می‌نشینیم.","state_indoor_plan",["iceride"],3]],
+      "grammar": ["Hava ve plan","Use short weather statements plus bu yüzden to make or change a familiar plan.","برای تغییر یک برنامه به خاطر هوا، اول وضعیت را ساده می‌گوییم و بعد با bu yüzden نتیجه یا برنامهٔ تازه را اضافه می‌کنیم.",[["Bugün yağmur var. Bu yüzden içeride oturacağız.","امروز باران می‌آید. برای همین داخل می‌نشینیم."],["Akşam serin olacak. Ceketimi alacağım.","عصر خنک می‌شود. کاپشنم را می‌برم."]]],
+      "dialogues": [["Yağmur","خانه",[["Kaan","Bugün hava nasıl?","امروز هوا چطور است؟"],["Deniz","Yağmurlu.","بارانی است."],["Kaan","O zaman şemsiyemi alacağım.","پس چترم را می‌برم."],["Deniz","İyi fikir.","فکر خوبی است."]],1],["Akşam planı","پیام",[["Elif","Akşam hava serin olacak.","عصر هوا خنک می‌شود."],["Burak","Ceket alalım mı?","کاپشن ببریم؟"],["Elif","Evet, iyi olur.","بله، خوب است."],["Burak","Tamam.","باشه."]],2],["Plan değişti","کافه",[["Zeynep","Parkta buluşacak mıyız?","در پارک همدیگر را می‌بینیم؟"],["Emre","Bugün çok yağmur var.","امروز خیلی باران می‌آید."],["Zeynep","Bu yüzden kafede buluşalım.","برای همین در کافه همدیگر را ببینیم."],["Emre","Tamam, saat beşte.","باشه، ساعت پنج."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۴ جمله دربارهٔ هوای امروز یا فردا و یک برنامهٔ مناسب بنویس؛ اگر برنامه عوض می‌شود دلیل ساده‌اش را بگو.","speaking_prompt_fa":"یک پیش‌بینی سادهٔ هوا بگو و توضیح بده امروز یا فردا چه برنامه‌ای داری.","model_text":"Yarın hava yağmurlu olacak. Şemsiyemi alacağım. Parka gitmeyeceğim. Bu yüzden arkadaşlarımla kafede buluşacağım.","required_points_fa":["وضعیت هوا","یک آمادگی یا انتخاب","برنامه نهایی"]}
+    },
+    {
+      "slug": "fitness-routines",
+      "topic": "health",
+      "title": "Haftada üç gün yürürüm",
+      "objective": "Describe a simple exercise routine, body state and practical beginner health choices.",
+      "grammar_focus": "habitual geniş zaman, frequency and -meli advice recycling",
+      "curriculum": {"skill_slug": "health-body", "topic_slug": "basic-health", "sort_order": 410},
+      "vocab": [["yuruyus","yürüyüş","پیاده‌روی","noun",1],["egzersiz","egzersiz","ورزش / تمرین","noun",1],["yorulmak","yorulmak","خسته شدن","verb",2],["su","su","آب","noun",2],["dinlenmek","dinlenmek","استراحت کردن","verb",3],["duzenli","düzenli","منظم","adjective",3]],
+      "utterances": [["u1","Haftada üç gün yürüyüş yaparım.","هفته‌ای سه روز پیاده‌روی می‌کنم.","state_exercise_habit",["yuruyus"],1],["u2","Evde kısa egzersizler yapıyorum.","در خانه تمرین‌های کوتاه انجام می‌دهم.","state_exercise",["egzersiz"],1],["u3","Uzun yürüyüşten sonra yoruluyorum.","بعد از پیاده‌روی طولانی خسته می‌شوم.","state_body_feeling",["yorulmak"],2],["u4","Daha çok su içmeliyim.","باید آب بیشتری بخورم.","state_health_choice",["su"],2],["u5","Bugün biraz dinlenmeliyim.","امروز باید کمی استراحت کنم.","give_self_advice",["dinlenmek"],3],["u6","Düzenli hareket etmek iyi geliyor.","تحرک منظم حالم را بهتر می‌کند.","state_benefit",["duzenli"],3]],
+      "grammar": ["Alışkanlık ve basit tavsiye","Recycle habitual geniş zaman and -meli to describe a routine and one simple practical health choice.","برای گفتن عادت از geniş zaman و برای یک توصیهٔ ساده از -meli/-malı استفاده می‌کنیم. در A2 توصیه را کوتاه و عملی نگه می‌داریم.",[["Her akşam kısa bir yürüyüş yaparım.","هر شب یک پیاده‌روی کوتاه می‌کنم."],["Bugün biraz dinlenmelisin.","امروز باید کمی استراحت کنی."]]],
+      "dialogues": [["Rutin","پارک",[["Selin","Ne kadar sık yürüyüş yaparsın?","هر چند وقت یک بار پیاده‌روی می‌کنی؟"],["Mert","Haftada üç gün.","هفته‌ای سه روز."],["Selin","Uzun mu yürürsün?","زیاد راه می‌روی؟"],["Mert","Hayır, genelde yarım saat.","نه، معمولاً نیم ساعت."]],1],["Yorgunum","خانه",[["Deniz","Bugün çok yoruldum.","امروز خیلی خسته شدم."],["Elif","Biraz su iç.","کمی آب بخور."],["Deniz","Evet, daha çok su içmeliyim.","بله، باید آب بیشتری بخورم."],["Elif","Sonra biraz dinlen.","بعد کمی استراحت کن."]],2],["Basit plan","باشگاه",[["Burak","Bu hafta çok yoğunum.","این هفته خیلی سرم شلوغ است."],["Zeynep","Kısa egzersiz yapabilirsin.","می‌توانی ورزش کوتاه انجام بدهی."],["Burak","Evet, düzenli olmak istiyorum.","بله، می‌خواهم منظم باشم."],["Zeynep","On dakika da yeter.","ده دقیقه هم کافی است."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۴ جمله دربارهٔ یک عادت حرکتی یا سلامتی خودت بنویس و یک انتخاب یا توصیهٔ ساده اضافه کن.","speaking_prompt_fa":"روتین سادهٔ ورزش یا سلامتی خودت را توضیح بده: چند وقت یک‌بار، چه کاری و بعدش چه حسی داری.","model_text":"Haftada üç gün yürüyüş yaparım. Genelde yarım saat yürürüm. Sonra biraz yoruluyorum. Daha çok su içmeliyim.","required_points_fa":["دفعات یا زمان","فعالیت","احساس یا انتخاب ساده"]}
+    },
+    {
+      "slug": "simple-event-messages",
+      "topic": "messages",
+      "title": "Biraz geç geleceğim",
+      "objective": "Send and understand short practical messages about arrival time, meeting place and simple changes.",
+      "grammar_focus": "short future/present messages, because/result and polite confirmation",
+      "curriculum": {"skill_slug": "communication", "topic_slug": "simple-messages", "sort_order": 420},
+      "vocab": [["mesaj","mesaj","پیام","noun",1],["gec","geç","دیر","adverb",1],["yer","yer","محل","noun",2],["haber","haber vermek","خبر دادن","verb",2],["beklemek","beklemek","منتظر ماندن","verb",3],["degisiklik","değişiklik","تغییر","noun",3]],
+      "utterances": [["u1","Sana kısa bir mesaj gönderdim.","یک پیام کوتاه برایت فرستادم.","state_message",["mesaj"],1],["u2","Bugün biraz geç geleceğim.","امروز کمی دیر می‌آیم.","announce_late_arrival",["gec"],1],["u3","Buluşma yeri aynı.","محل قرار همان است.","confirm_place",["yer"],2],["u4","Çıkınca sana haber vereceğim.","وقتی راه افتادم به تو خبر می‌دهم.","promise_update",["haber"],2],["u5","Beni on dakika bekleyebilir misin?","می‌توانی ده دقیقه منتظرم بمانی؟","request_wait",["beklemek"],3],["u6","Küçük bir değişiklik var.","یک تغییر کوچک هست.","announce_change",["degisiklik"],3]],
+      "grammar": ["Kısa pratik mesajlar","Keep practical messages short: say the change, the concrete time/place and one simple next action.","برای پیام‌های روزمره، تغییر را کوتاه می‌گوییم، زمان یا مکان را مشخص می‌کنیم و یک کار بعدی ساده اضافه می‌کنیم.",[["Biraz geç geleceğim. Saat altıda oradayım.","کمی دیر می‌آیم. ساعت شش آنجا هستم."],["Buluşma yeri aynı. Çıkınca haber vereceğim.","محل قرار همان است. وقتی راه افتادم خبر می‌دهم."]]],
+      "dialogues": [["Geç kalıyorum","چت",[["Emre","Neredesin?","کجایی؟"],["Kaan","Biraz geç geleceğim.","کمی دیر می‌آیم."],["Emre","Saat kaçta buradasın?","چه ساعتی اینجایی؟"],["Kaan","Saat altıda.","ساعت شش."]],1],["Yer aynı","پیام",[["Zeynep","Buluşma yeri değişti mi?","محل قرار عوض شد؟"],["Deniz","Hayır, yer aynı.","نه، محل همان است."],["Zeynep","Tamam, çıkınca haber ver.","باشه، وقتی راه افتادی خبر بده."],["Deniz","Tabii.","حتماً."]],2],["On dakika","چت",[["Mert","Küçük bir değişiklik var.","یک تغییر کوچک هست."],["Elif","Ne oldu?","چه شد؟"],["Mert","Beni on dakika bekleyebilir misin?","می‌توانی ده دقیقه منتظرم بمانی؟"],["Elif","Tabii, sorun değil.","حتماً، مشکلی نیست."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"یک پیام ۳ جمله‌ای برای یک قرار بنویس: زمان یا مکان را بگو، یک تغییر کوچک را توضیح بده و کار بعدی را مشخص کن.","speaking_prompt_fa":"فرض کن کمی دیر می‌رسی. یک پیام صوتی کوتاه بگو و زمان رسیدن یا درخواست ساده‌ات را مشخص کن.","model_text":"Biraz geç geleceğim. Saat altıda oradayım. Beni on dakika bekleyebilir misin?","required_points_fa":["تغییر مشخص","زمان یا مکان","درخواست یا کار بعدی"]}
+    }
+  ]
+}

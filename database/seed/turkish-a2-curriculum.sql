@@ -55,3 +55,37 @@ JOIN courses c ON c.slug='fa-tr-tr'
 JOIN cefr_levels lvl ON lvl.code='A2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
+
+-- Coverage-driven expansion batch 3: concrete A2 service, transport, health, planning and message tasks.
+INSERT IGNORE INTO curriculum_units (
+  course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,
+  learning_objective,sort_order,expected_lessons,status,metadata
+)
+SELECT c.id,c.target_language_id,lvl.id,s.id,t.id,u.slug,u.title,u.objective,
+       u.sort_order,u.expected_lessons,'approved',
+       JSON_OBJECT('language_specific',TRUE,'target_variant','tr-TR','batch',3,'grammar_focus',u.grammar_focus)
+FROM (
+ SELECT 370 sort_order,3 expected_lessons,'travel-transport' skill_slug,'transport' topic_slug,
+        'a2-tr-transport-delays' slug,'Otobüs gecikti' title,
+        'Handle routine public-transport delays, ask about another route and explain a short delay.' objective,
+        'simple delay language, route alternatives and because/result links' grammar_focus
+ UNION ALL SELECT 380,3,'shopping-money','shopping','a2-tr-returns-exchanges','Bunu değiştirmek istiyorum',
+        'Return or exchange a simple purchase, explain a concrete problem and ask for an available option.',
+        'polite return/exchange requests with istemek and simple descriptive reasons'
+ UNION ALL SELECT 390,3,'time-plans','future-plans','a2-tr-service-appointments','Randevuyu değiştirebilir miyiz?',
+        'Book, confirm or move a routine service appointment and give a simple reason.',
+        'clock/date review, polite availability questions and simple scheduling'
+ UNION ALL SELECT 400,3,'time-plans','future-plans','a2-tr-weather-plans','Bugün hava yağmurlu',
+        'Understand a simple weather forecast, choose suitable plans and explain a practical change.',
+        'weather expressions, future plans and simple cause/result'
+ UNION ALL SELECT 410,3,'health-body','basic-health','a2-tr-fitness-routines','Haftada üç gün yürürüm',
+        'Describe a simple exercise routine, body state and practical beginner health choices.',
+        'habitual geniş zaman, frequency and -meli advice recycling'
+ UNION ALL SELECT 420,3,'communication','simple-messages','a2-tr-simple-event-messages','Biraz geç geleceğim',
+        'Send and understand short practical messages about arrival time, meeting place and simple changes.',
+        'short future/present messages, because/result and polite confirmation'
+) u
+JOIN courses c ON c.slug='fa-tr-tr'
+JOIN cefr_levels lvl ON lvl.code='A2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
