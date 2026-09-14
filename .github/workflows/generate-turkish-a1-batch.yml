@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: turkish-a1-content-generation-v1
+  group: turkish-a1-content-generation-v2
   cancel-in-progress: false
 
 jobs:
@@ -27,49 +27,53 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Generate Turkish A1 batch 1
-        run: python scripts/generate_turkish_a1_batch.py
-      - name: Validate complete Turkish A1 batch
+      - name: Generate Turkish A1 batch 2
+        run: python scripts/generate_turkish_a1_batch.py --spec content/specs/tr/A1/batch-02.json
+      - name: Validate cumulative Turkish A1 production
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          test "$(find content/production/tr/A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 20
           for f in content/production/tr/A1/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/a1.py --dry-run
-      - name: Educational batch summary
+      - name: Cumulative educational QA
         run: |
           python - <<'PY'
           import collections,json
           from pathlib import Path
-          counts=collections.Counter(); lessons=set(); ordered=[]; pairs=[]
-          spec=json.loads(Path('content/specs/tr/A1/batch-01.json').read_text())
-          for unit in spec['units']:
-              p=Path('content/production/tr/A1') / f"a1-tr-{unit['slug']}-v1.json"
-              b=json.loads(p.read_text())
-              dialogues=[]
-              for item in b['items']:
-                  counts[item['kind']]+=1
-                  lk=item.get('data',{}).get('lesson_key')
-                  if lk: lessons.add(lk)
-                  if item['kind']=='dialogue': dialogues.append(item)
-              for item in sorted(dialogues,key=lambda x:x['data']['lesson_key']):
-                  lk=item['data']['lesson_key']; chars=tuple(item['data'].get('characters',[])[:2])
-                  pairs.append((lk,chars)); ordered.append(chars)
-          assert len(lessons)==20, len(lessons)
-          assert len(set(pairs))==len(pairs), 'duplicate dialogue pair in a lesson'
-          for previous,current in zip(ordered,ordered[1:]):
-              assert set(previous)!=set(current), f'consecutive dialogue pair repeated: {previous}'
-          assert counts['concept']==60 and counts['utterance']==40 and counts['dialogue']==20 and counts['exercise']==100, counts
-          print(json.dumps({'units':10,'lessons':len(lessons),'counts':dict(counts),'dialogues':len(ordered)},ensure_ascii=False,indent=2))
+          counts=collections.Counter(); lessons=set(); ordered=[]; seen_lesson_pairs=set(); unit_count=0
+          for spec_path in sorted(Path('content/specs/tr/A1').glob('batch-*.json')):
+              spec=json.loads(spec_path.read_text())
+              for unit in spec['units']:
+                  unit_count += 1
+                  p=Path('content/production/tr/A1') / f"a1-tr-{unit['slug']}-v1.json"
+                  b=json.loads(p.read_text())
+                  dialogues=[]
+                  for item in b['items']:
+                      counts[item['kind']]+=1
+                      lk=item.get('data',{}).get('lesson_key')
+                      if lk: lessons.add(lk)
+                      if item['kind']=='dialogue': dialogues.append(item)
+                  for item in sorted(dialogues,key=lambda x:x['data']['lesson_key']):
+                      lk=item['data']['lesson_key']; chars=tuple(item['data'].get('characters',[])[:2])
+                      key=(lk,frozenset(chars))
+                      assert key not in seen_lesson_pairs, f'duplicate dialogue pair in lesson: {lk} {chars}'
+                      seen_lesson_pairs.add(key); ordered.append((lk,chars))
+          assert unit_count==20, unit_count
+          assert len(lessons)==40, len(lessons)
+          for (plk,previous),(clk,current) in zip(ordered,ordered[1:]):
+              assert set(previous)!=set(current), f'consecutive dialogue pair repeated: {plk} -> {clk}: {previous}'
+          assert counts['concept']==120 and counts['utterance']==80 and counts['dialogue']==40 and counts['exercise']==200, counts
+          print(json.dumps({'units':unit_count,'lessons':len(lessons),'counts':dict(counts),'dialogues':len(ordered)},ensure_ascii=False,indent=2))
           PY
-      - name: Commit Turkish A1 production content
+      - name: Commit Turkish A1 batch 2 production content
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content/specs/tr/A1/batch-01.json content/production/tr/A1
+          git add content/specs/tr/A1/batch-02.json content/production/tr/A1
           if git diff --cached --quiet; then echo 'No generated content changes.'; else
-            git commit -m 'Generate Turkish A1 batch 1 production content [skip ci]'
+            git commit -m 'Generate Turkish A1 batch 2 production content [skip ci]'
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
