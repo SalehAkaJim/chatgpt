@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Normalize known Turkish A2 CEFR boundary leaks
+        run: python scripts/repair_turkish_a2_cefr_boundary.py
+
       - name: Generate all authored Turkish A2 batches with legacy retrofits
         run: python scripts/generate_turkish_a2_with_retrofits.py
 
@@ -39,6 +42,7 @@ jobs:
           done
           python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/a2.py --dry-run
+          python scripts/validate_turkish_a2_cefr_boundary.py
 
       - name: Coverage-driven educational checks
         run: |
@@ -121,11 +125,11 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content/production/tr/A2
+          git add content/specs/tr/A2 content/production/tr/A2
           if git diff --cached --quiet; then
             echo 'No generated content changes.'
           else
-            git commit -m 'Generate cumulative Turkish A2 production content [skip ci]'
+            git commit -m 'Repair Turkish A2 CEFR boundary and regenerate production [skip ci]'
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
