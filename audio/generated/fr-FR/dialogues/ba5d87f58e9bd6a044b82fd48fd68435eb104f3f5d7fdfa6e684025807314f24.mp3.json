@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "0e74e501dbfebc671d8ddd7e95611cc77130318979185e78ff583f6a99f51eaa",
+  "voice_id": "mNu8EQcIlFZdOJs7yfhe",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "ba5d87f58e9bd6a044b82fd48fd68435eb104f3f5d7fdfa6e684025807314f24",
+  "voice_key": "character:inès:female_calm",
+  "voice_name": "Julia - Warm French Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "narrative_story",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "9c6661e78bdc0525bfbf901ce6439b4d9350530c384dab3d2e0c01a590b7fd47",
+  "duration_ms": 2507,
+  "generated_at": "2026-09-14T11:00:20.639320+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "354be15b-a521-5271-a211-fedd99b5a44e",
+      "entity_key": "d_projets_et_avenir_01:1"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "43543a5c386f91bf65da754a9904aad76c8f7c4700c164d09db4e431b4ef0370",
+  "voice_id": "mNu8EQcIlFZdOJs7yfhe",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "f17fea21d00165b2529aedc01125aa4d3bbb4f66d4051d4801185dcbb33f6646",
+  "voice_key": "character:inès:female_calm",
+  "voice_name": "Julia - Warm French Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "narrative_story",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "405fd803d07f86bfd06367445bcac896e0f8b2135f95f3e18f6fd88ccf2b0b1e",
+  "duration_ms": 2768,
+  "generated_at": "2026-09-14T11:00:33.115736+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7cb83322-370b-5c57-9ef5-5e23739ccf55",
+      "entity_key": "d_relations_et_conseils_01:1"
+    }
+  ]
+}

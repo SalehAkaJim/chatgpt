@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "feea9fc79c8c4523f6d270cd05993759b72f4cf69593c01580fc4b9810a192be",
+  "voice_id": "FRY6vOtGqwamgAf39SwP",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "ebbf66386bda08906b763235ae429677357d25924c4a57f95fde3103d9d2af6c",
+  "voice_key": "character:hugo:male_bright",
+  "voice_name": "Yanis",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "071c977be06051ada0400553eb8cd887ef6174c0a13bb5e8ef8f797bed325fca",
+  "duration_ms": 3186,
+  "generated_at": "2026-09-14T11:00:30.708204+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "20d96063-da80-5bc8-8f6d-27dd2e455037",
+      "entity_key": "d_sante_et_bien_etre_02:2"
+    }
+  ]
+}

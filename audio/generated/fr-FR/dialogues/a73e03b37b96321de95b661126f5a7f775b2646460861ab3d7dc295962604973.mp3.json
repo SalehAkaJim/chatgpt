@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "fd11e4eaa3559a19b70690dd93d5c31b6c751402fe889239600ed905751698de",
+  "voice_id": "yatuMX0k4Dh41R64sbGj",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a73e03b37b96321de95b661126f5a7f775b2646460861ab3d7dc295962604973",
+  "voice_key": "character:claire:female_professional",
+  "voice_name": "Cécile - Interactive Customer Support",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "0a697c6909222c5eb6603ef47292e68bf8c461e0a89d0a8fdc90be52b3a7c437",
+  "duration_ms": 2272,
+  "generated_at": "2026-09-14T11:00:15.191310+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c3d89ba8-17bb-56d4-a4fd-b6b7d8a2a410",
+      "entity_key": "d_sante_et_bien_etre_02:1"
+    }
+  ]
+}

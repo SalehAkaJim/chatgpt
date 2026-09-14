@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "18733289b8d0b1946bba377581c946409ba1000353536246060475364e7004b4",
+  "voice_id": "FRY6vOtGqwamgAf39SwP",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "ffc8396fb4452c050ad8bc6d2bb3c875871a90b4326d9d54f3739e6477e69830",
+  "voice_key": "character:hugo:male_bright",
+  "voice_name": "Yanis",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8b134c1475b3f21f4fb76e7de38d5ab91651497be80ccb3b753f8d3d7b1dd29b",
+  "duration_ms": 1985,
+  "generated_at": "2026-09-14T11:00:35.256088+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "42c3ee84-a32e-580c-9977-141a5bb341cd",
+      "entity_key": "d_souvenirs_et_recits_02:2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "16eff3d89676b5dc8daa0e10dc9b2ba401020bb6e9117350a7790aa996049dc7",
+  "voice_id": "mNu8EQcIlFZdOJs7yfhe",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "4a9b18643476fcf2b000f4a9f37fbea3031b1ccd5f97c98ea98367096eb65897",
+  "voice_key": "character:inès:female_calm",
+  "voice_name": "Julia - Warm French Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "narrative_story",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "5a2dd78710c7a4baeebfcc92c89516cb61d39a2be0cd34b073db1d3eff8dcf1b",
+  "duration_ms": 2324,
+  "generated_at": "2026-09-14T11:00:03.730019+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "8b76ae4e-6032-58ea-b6d0-3261ce272a34",
+      "entity_key": "d_voyages_et_imprevus_01:1"
+    }
+  ]
+}

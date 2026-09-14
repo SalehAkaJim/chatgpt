@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "0d8a915a94867c52c025c32d1e3cc8eb0c1c786cb54ad56054f4e213d415627f",
+  "voice_id": "yatuMX0k4Dh41R64sbGj",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "c6ca1c7fbff8b5b8fe3d0491eb3c213dd60a65775cdbe7f3d8da5d695f46f12d",
+  "voice_key": "character:claire:female_professional",
+  "voice_name": "Cécile - Interactive Customer Support",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "d416ffe66ebd5e58e9482973d3309a5ee3427ad9c3cb3ea14cd88d4c8e87c43b",
+  "duration_ms": 2324,
+  "generated_at": "2026-09-14T11:00:22.730376+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "eb8138b7-39a4-5ad2-8e9a-4b3a225efd50",
+      "entity_key": "d_voyages_et_imprevus_02:1"
+    }
+  ]
+}

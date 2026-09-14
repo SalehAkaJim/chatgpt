@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "1bdb6b75f6ab60c867a6d5ea6c3f7b95f25f9ad2ff4d58d228c9f2e30eb0a598",
+  "voice_id": "yatuMX0k4Dh41R64sbGj",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "114a520bb155dac9a8075d8dd2e61eb36d6cf55a9349162e681903a1a6d4a744",
+  "voice_key": "character:claire:female_professional",
+  "voice_name": "Cécile - Interactive Customer Support",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "4f4d2d9c4683ffd37ebd218167688a803edb25086dd1e2cb4fcd3d759175231b",
+  "duration_ms": 2220,
+  "generated_at": "2026-09-14T10:59:53.454988+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c4baf412-423d-50ec-ba00-4a437bd65f5f",
+      "entity_key": "d_projets_et_avenir_02:1"
+    }
+  ]
+}

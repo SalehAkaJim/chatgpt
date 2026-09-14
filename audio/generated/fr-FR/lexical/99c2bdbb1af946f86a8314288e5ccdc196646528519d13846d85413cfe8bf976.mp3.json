@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "6e0facd7a44462b2e39f88124a74b831ccdb9f01d77f5bf549c35995b182b26a",
+  "voice_id": "6FXyooAOTqUK8m2HWm32",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "99c2bdbb1af946f86a8314288e5ccdc196646528519d13846d85413cfe8bf976",
+  "voice_key": "fr-fr.lexical.native-clear",
+  "voice_name": "Marine - Premium Conversational AI",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "382c3e902090c0b5e00b3c445225f08d61598a804ca2233a838b156a1c38b33b",
+  "duration_ms": 1097,
+  "generated_at": "2026-09-14T11:00:51.275452+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "7d815783-c146-5f13-ba8a-8d3c5d748113",
+      "entity_key": "lx_logement_et_reclamations_04"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "025bd6f1-3593-5cb9-a36d-cdf828db6fa8",
+      "entity_key": "wf_logement_et_reclamations_04"
+    }
+  ]
+}
