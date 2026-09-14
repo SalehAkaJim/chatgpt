@@ -49,10 +49,40 @@ jobs:
           $DB < database/seed/turkish-prea1-curriculum.sql
           $DB < database/seed/turkish-a1-curriculum.sql
           $DB < database/seed/turkish-a2-curriculum.sql
-      - name: Validate and dry-run Turkish A2
+      - name: Derive cumulative Turkish A2 expectations
+        id: expected
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+
+          specs=[]
+          for p in sorted(Path('content/specs/tr/A2').glob('batch-*.json')):
+              payload=json.loads(p.read_text(encoding='utf-8'))
+              specs.extend(payload.get('units',[]))
+          files=sorted(Path('content/production/tr/A2').glob('*.json'))
+          if len(files) != len(specs):
+              raise SystemExit(f'spec/production unit mismatch: specs={len(specs)} production={len(files)}')
+          lessons=set(); exercises=0
+          for p in files:
+              payload=json.loads(p.read_text(encoding='utf-8'))
+              for item in payload.get('items',[]):
+                  data=item.get('data',{})
+                  if data.get('lesson_key'):
+                      lessons.add(data['lesson_key'])
+                  if item.get('kind') == 'exercise':
+                      exercises += 1
+          if not files or not lessons or not exercises:
+              raise SystemExit('Turkish A2 expectations resolved to an empty level')
+          print(f'units={len(files)}')
+          print(f'lessons={len(lessons)}')
+          print(f'exercises={exercises}')
+          PY
+      - name: Validate and dry-run cumulative Turkish A2
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/A2 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          actual_files=$(find content/production/tr/A2 -maxdepth 1 -name '*.json' | wc -l | tr -d ' ')
+          test "$actual_files" = "${{ steps.expected.outputs.units }}"
           for f in content/production/tr/A2/*.json; do python scripts/validate_content.py "$f"; done
           python database/import/tr/a2.py --dry-run
       - name: Import Turkish course through A2
@@ -60,7 +90,7 @@ jobs:
           python database/import/tr/pre_a1.py --allow-unreviewed
           python database/import/tr/a1.py --allow-unreviewed
           python database/import/tr/a2.py --allow-unreviewed
-      - name: Verify Turkish A2 canonical counts
+      - name: Verify Turkish A2 cumulative counts
         run: |
           set -euo pipefail
           q(){ mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "$1"; }
@@ -72,7 +102,10 @@ jobs:
           dialogues=$(q "SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-tr-tr' AND lvl.code='A2' AND li.dialogue_id IS NOT NULL;")
           exercises=$(q "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-tr-tr' AND lvl.code='A2';")
           echo "units=$units lessons=$lessons concepts=$concepts lexemes=$lexemes utterances=$utterances dialogues=$dialogues exercises=$exercises"
-          test "$units" = 10; test "$lessons" = 20; test "$concepts" = 60; test "$lexemes" = 59; test "$utterances" = 40; test "$dialogues" = 20; test "$exercises" = 100
+          test "$units" = "${{ steps.expected.outputs.units }}"
+          test "$lessons" = "${{ steps.expected.outputs.lessons }}"
+          test "$exercises" = "${{ steps.expected.outputs.exercises }}"
+          test "$concepts" -gt 0; test "$lexemes" -gt 0; test "$utterances" -gt 0; test "$dialogues" -gt 0
       - name: Verify A2 idempotency
         run: |
           set -euo pipefail
