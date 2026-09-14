@@ -1,0 +1,61 @@
+name: French B1 MySQL Integration
+on:
+  push:
+    branches: [main]
+    paths: ['.github/french-b1-mysql-trigger']
+  workflow_dispatch:
+jobs:
+  mysql-9-import:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env: {MYSQL_ROOT_PASSWORD: rootpass, MYSQL_DATABASE: language_learning}
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -prootpass" --health-interval=10s --health-timeout=5s --health-retries=10
+    env: {DATABASE_URL: 'mysql://root:rootpass@127.0.0.1:3306/language_learning', MYSQL_PWD: rootpass}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: |
+          pip install -r requirements.txt
+          sudo apt-get update -qq && sudo apt-get install -y default-mysql-client
+      - name: Bootstrap schema and French curriculum through B1
+        run: |
+          set -euo pipefail; DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
+          $DB < database/schema.sql; $DB < database/migrations/001_curriculum.sql; $DB < database/migrations/002_multilingual_core.sql; $DB < database/migrations/003_lesson_item_lexemes.sql; $DB < database/migrations/004_level_import_audio.sql; $DB < database/migrations/005_writing_exercises.sql
+          $DB < database/seed/cefr.sql; $DB < database/seed/languages.sql; $DB < database/seed/skills-topics.sql; $DB < database/seed/english-a1-curriculum.sql; $DB < database/seed/language-variants-courses.sql; $DB < database/seed/french-course.sql; $DB < database/seed/french-prea1-curriculum.sql; $DB < database/seed/french-a1-curriculum.sql; $DB < database/seed/french-a2-curriculum.sql; $DB < database/seed/french-b1-curriculum.sql
+      - name: Validate and dry-run French B1
+        run: |
+          set -euo pipefail
+          test "$(find content/production/fr/B1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/fr/B1/*.json; do python scripts/validate_content.py "$f"; done
+          python database/import/fr/b1.py --dry-run
+      - name: Import French Pre-A1 through B1
+        run: |
+          python database/import/fr/pre_a1.py --allow-unreviewed
+          python database/import/fr/a1.py --allow-unreviewed
+          python database/import/fr/a2.py --allow-unreviewed
+          python database/import/fr/b1.py --allow-unreviewed
+      - name: Verify French B1 canonical counts
+        run: |
+          set -euo pipefail
+          q(){ mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "$1"; }
+          units=$(q "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-fr-fr' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='B1';")
+          lessons=$(q "SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id AND c.slug='fa-fr-fr' JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id AND lvl.code='B1';")
+          concepts=$(q "SELECT COUNT(DISTINCT li.concept_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-fr-fr' AND lvl.code='B1' AND li.concept_id IS NOT NULL;")
+          lexemes=$(q "SELECT COUNT(DISTINCT li.lexeme_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-fr-fr' AND lvl.code='B1' AND li.lexeme_id IS NOT NULL;")
+          utterances=$(q "SELECT COUNT(DISTINCT li.utterance_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-fr-fr' AND lvl.code='B1' AND li.utterance_id IS NOT NULL;")
+          dialogues=$(q "SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-fr-fr' AND lvl.code='B1' AND li.dialogue_id IS NOT NULL;")
+          exercises=$(q "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-fr-fr' AND lvl.code='B1';")
+          echo "units=$units lessons=$lessons concepts=$concepts lexemes=$lexemes utterances=$utterances dialogues=$dialogues exercises=$exercises"
+          test "$units" = 10; test "$lessons" = 20; test "$concepts" = 60; test "$lexemes" = 60; test "$utterances" = 40; test "$dialogues" = 20; test "$exercises" = 100
+      - name: Verify B1 idempotency
+        run: |
+          set -euo pipefail
+          q(){ mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "$1"; }
+          snap(){ q "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-fr-fr'),'|',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-fr-fr'),'|',(SELECT COUNT(*) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-fr-fr'));"; }
+          before=$(snap); python database/import/fr/b1.py --allow-unreviewed; after=$(snap); echo "before=$before after=$after"; test "$before" = "$after"
