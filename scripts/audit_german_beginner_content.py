@@ -7,9 +7,26 @@ from collections import Counter
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {
-    "Pre-A1": {"prea1-de-first-greetings": 2, "prea1-de-my-name": 2, "prea1-de-numbers-0-10": 2, "prea1-de-alphabet": 2, "prea1-de-letter-names": 2, "prea1-de-first-sounds": 2, "prea1-de-first-objects": 2, "prea1-de-classroom": 2, "prea1-de-survival-words": 2, "prea1-de-first-conversation": 2},
+    "Pre-A1": {
+        "prea1-de-first-greetings": 2,
+        "prea1-de-my-name": 2,
+        "prea1-de-numbers-0-10": 2,
+        "prea1-de-alphabet": 2,
+        "prea1-de-letter-names": 2,
+        "prea1-de-script-sound-bridge": 2,
+        "prea1-de-first-sounds": 2,
+        "prea1-de-first-objects": 2,
+        "prea1-de-classroom": 2,
+        "prea1-de-meaning-help": 1,
+        "prea1-de-survival-words": 2,
+        "prea1-de-first-conversation": 2,
+        "prea1-de-ready-for-a1": 2,
+    },
     "A1": {"a1-de-greetings": 2, "a1-de-introductions": 2, "a1-de-spelling": 2, "a1-de-numbers": 2, "a1-de-countries": 2, "a1-de-polite": 2, "a1-de-family": 2, "a1-de-articles": 2, "a1-de-possessions": 2, "a1-de-routine": 3, "a1-de-time": 2, "a1-de-separable-verbs": 2, "a1-de-food": 3, "a1-de-cafe": 3, "a1-de-accusative": 2, "a1-de-home": 3, "a1-de-locations": 2, "a1-de-shopping": 2, "a1-de-prices": 2, "a1-de-town": 2, "a1-de-directions": 3, "a1-de-transport": 2, "a1-de-likes": 2, "a1-de-hobbies": 2, "a1-de-modal-verbs": 3, "a1-de-work-study": 2, "a1-de-describing": 2, "a1-de-weather": 2, "a1-de-health": 2, "a1-de-plans": 3},
 }
+
+# Pure literacy/phonics lessons can be pedagogically complete without a dialogue.
+DIALOGUE_OPTIONAL_UNITS = {"prea1-de-script-sound-bridge"}
 
 errors = []
 summary = {}
@@ -57,7 +74,7 @@ for level, units in EXPECTED.items():
                 exercises[d.get("exercise_type")] += 1
         if len(lessons) != expected_lessons:
             errors.append(f"{p} expected {expected_lessons} lessons, found {len(lessons)}: {lessons}")
-        if dialogues < expected_lessons:
+        if unit not in DIALOGUE_OPTIONAL_UNITS and dialogues < expected_lessons:
             errors.append(f"{p} needs >=1 dialogue per lesson; found {dialogues}")
         if exercises["listening"] < 1:
             errors.append(f"{p} needs listening coverage")
