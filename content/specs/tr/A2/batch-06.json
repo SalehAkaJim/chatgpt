@@ -1,0 +1,122 @@
+{
+  "batch": 6,
+  "level": "A2",
+  "variant": "tr-TR",
+  "pedagogy": {
+    "learner_language": "fa-IR",
+    "standard": "contemporary Istanbul Turkish",
+    "principles": [
+      "keep tasks in familiar concrete A2 domains",
+      "use three substantive lessons per unit ending in short personalized production",
+      "limit production to 3–5 simple connected sentences with familiar connectors",
+      "avoid productive -ken, conditional -sa/-se, evidential/past-perfect combinations and B1-style narration or argumentation",
+      "recycle practical interaction, short mediation and supported independent output"
+    ]
+  },
+  "units": [
+    {
+      "slug": "pharmacy-basics",
+      "topic": "basic-health",
+      "title": "Boğazım ağrıyor",
+      "objective": "Describe a common minor symptom at a pharmacy, ask for a simple product and understand basic use instructions.",
+      "grammar_focus": "body/symptom language, polite requests and simple frequency instructions",
+      "curriculum": {"skill_slug": "health-body", "topic_slug": "basic-health", "sort_order": 490},
+      "vocab": [["bogaz","boğaz","گلو","noun",1],["agrimak","ağrımak","درد کردن","verb",1],["surup","şurup","شربت","noun",2],["tablet","tablet","قرص","noun",2],["gunde","günde","در روز","adverb",3],["kullanmak","kullanmak","استفاده کردن","verb",3]],
+      "utterances": [["u1","Boğazım ağrıyor.","گلویم درد می‌کند.","state_symptom",["bogaz","agrimak"],1],["u2","Biraz da öksürüyorum.","کمی هم سرفه می‌کنم.","add_symptom",["agrimak"],1],["u3","Bir şurup alabilir miyim?","می‌توانم یک شربت بگیرم؟","request_medicine",["surup"],2],["u4","Tablet istemiyorum.","قرص نمی‌خواهم.","state_preference",["tablet"],2],["u5","Bunu günde iki kez kullanın.","این را روزی دو بار استفاده کنید.","understand_frequency",["gunde","kullanmak"],3],["u6","Yemekten sonra kullanabilirsiniz.","می‌توانید بعد از غذا استفاده کنید.","understand_use",["kullanmak"],3]],
+      "grammar": ["Eczanede basit sağlık ihtiyacı","State one or two familiar symptoms, make a polite request and understand a simple use frequency.","در داروخانه نشانهٔ ساده را کوتاه می‌گوییم، یک درخواست روشن می‌کنیم و دستور مصرف ساده را می‌فهمیم.",[["Boğazım ağrıyor. Bir şurup alabilir miyim?","گلویم درد می‌کند. می‌توانم یک شربت بگیرم؟"],["Bunu günde iki kez kullanın.","این را روزی دو بار استفاده کنید."]]],
+      "dialogues": [["Belirti","داروخانه",[["Elif","Neyiniz var?","چه مشکلی دارید؟"],["Kaan","Boğazım ağrıyor.","گلویم درد می‌کند."],["Elif","Öksürük var mı?","سرفه دارید؟"],["Kaan","Evet, biraz.","بله، کمی."]],1],["Şurup isteği","داروخانه",[["Mert","Size nasıl yardımcı olayım?","چطور کمکتان کنم؟"],["Zeynep","Bir şurup alabilir miyim?","می‌توانم یک شربت بگیرم؟"],["Mert","Tabii.","حتماً."],["Zeynep","Tablet istemiyorum.","قرص نمی‌خواهم."]],2],["Kullanım","داروخانه",[["Burak","Bunu nasıl kullanacağım?","این را چطور استفاده کنم؟"],["Selin","Günde iki kez kullanın.","روزی دو بار استفاده کنید."],["Burak","Yemekten sonra mı?","بعد از غذا؟"],["Selin","Evet, yemekten sonra.","بله، بعد از غذا."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۴ جملهٔ کوتاه یک مشکل سادهٔ جسمی را بگو، چیزی از داروخانه بخواه و یک دستور مصرف ساده را تکرار کن.","speaking_prompt_fa":"یک گفت‌وگوی کوتاه داروخانه اجرا کن: نشانه، درخواست و دستور مصرف.","model_text":"Boğazım ağrıyor. Bir şurup alabilir miyim? Tablet istemiyorum. Bunu günde iki kez kullanacağım.","required_points_fa":["یک نشانهٔ ساده","یک درخواست","یک دستور مصرف"]}
+    },
+    {
+      "slug": "parcel-delivery",
+      "topic": "simple-messages",
+      "title": "Paketim bugün gelecek",
+      "objective": "Understand a simple delivery message, give a practical location detail and arrange receipt of a parcel.",
+      "grammar_focus": "future arrival, location details and simple coordination",
+      "curriculum": {"skill_slug": "communication", "topic_slug": "simple-messages", "sort_order": 500},
+      "vocab": [["paket","paket","بسته","noun",1],["teslimat","teslimat","تحویل","noun",1],["adres","adres","آدرس","noun",2],["kat","kat","طبقه","noun",2],["komsu","komşu","همسایه","noun",3],["birakmak","bırakmak","گذاشتن / تحویل گذاشتن","verb",3]],
+      "utterances": [["u1","Paketim bugün gelecek.","بسته‌ام امروز می‌رسد.","state_delivery",["paket"],1],["u2","Teslimat saat dörtte.","تحویل ساعت چهار است.","state_delivery_time",["teslimat"],1],["u3","Adres doğru.","آدرس درست است.","confirm_address",["adres"],2],["u4","Üçüncü katta oturuyorum.","در طبقهٔ سوم زندگی می‌کنم.","give_floor",["kat"],2],["u5","Evde değilim, komşum evde.","خانه نیستم، همسایه‌ام خانه است.","coordinate_receipt",["komsu"],3],["u6","Paketi komşuma bırakabilirsiniz.","می‌توانید بسته را پیش همسایه‌ام بگذارید.","request_dropoff",["birakmak"],3]],
+      "grammar": ["Teslimatı koordine etmek","Use short future/time and location statements to coordinate a routine delivery.","برای تحویل بسته، زمان و مکان را کوتاه و روشن می‌گوییم و در صورت نیاز یک گزینهٔ ساده پیشنهاد می‌دهیم.",[["Paketim bugün gelecek. Teslimat saat dörtte.","بسته‌ام امروز می‌رسد. تحویل ساعت چهار است."],["Evde değilim. Paketi komşuma bırakabilirsiniz.","خانه نیستم. می‌توانید بسته را پیش همسایه‌ام بگذارید."]]],
+      "dialogues": [["Teslimat saati","پیام تحویل",[["Emre","Paketiniz bugün gelecek.","بسته‌تان امروز می‌رسد."],["Deniz","Saat kaçta?","ساعت چند؟"],["Emre","Saat dörtte.","ساعت چهار."],["Deniz","Tamam, teşekkürler.","باشه، ممنون."]],1],["Adres detayı","تلفن",[["Elif","Adresiniz doğru mu?","آدرستان درست است؟"],["Zeynep","Evet, doğru.","بله، درست است."],["Elif","Hangi kattasınız?","کدام طبقه هستید؟"],["Zeynep","Üçüncü kattayım.","طبقهٔ سوم هستم."]],2],["Komşuya bırakın","تلفن",[["Kaan","Evde misiniz?","خانه هستید؟"],["Mert","Hayır, değilim.","نه، نیستم."],["Kaan","Paketi ne yapalım?","بسته را چه کنیم؟"],["Mert","Komşuma bırakabilirsiniz.","می‌توانید پیش همسایه‌ام بگذارید."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۴ جملهٔ ساده برای تحویل یک بسته زمان، طبقه یا محل و یک راه‌حل عملی بنویس.","speaking_prompt_fa":"یک تماس کوتاه تحویل بسته اجرا کن و زمان و محل تحویل را هماهنگ کن.","model_text":"Paketim bugün gelecek. Üçüncü katta oturuyorum. Saat dörtte evde değilim. Paketi komşuma bırakabilirsiniz.","required_points_fa":["زمان تحویل","یک جزئیات مکانی","یک راه‌حل"]}
+    },
+    {
+      "slug": "lost-property",
+      "topic": "places-town",
+      "title": "Çantamı bulamıyorum",
+      "objective": "Report a lost everyday item, describe it simply and ask where to check for it.",
+      "grammar_focus": "object description, simple past location and polite questions",
+      "curriculum": {"skill_slug": "travel-transport", "topic_slug": "places-town", "sort_order": 510},
+      "vocab": [["canta","çanta","کیف","noun",1],["kayip","kayıp","گمشده","adjective",1],["siyah","siyah","مشکی","adjective",2],["kucuk","küçük","کوچک","adjective",2],["danisma","danışma","اطلاعات / میز راهنما","noun",3],["sormak","sormak","پرسیدن","verb",3]],
+      "utterances": [["u1","Çantamı bulamıyorum.","کیفم را پیدا نمی‌کنم.","report_lost_item",["canta"],1],["u2","Çantam kayıp.","کیفم گم شده است.","state_lost",["kayip"],1],["u3","Çanta siyah ve küçük.","کیف مشکی و کوچک است.","describe_item",["siyah","kucuk"],2],["u4","Dün otobüste yanımdaydı.","دیروز در اتوبوس کنارم بود.","state_last_location",["canta"],2],["u5","Danışma nerede?","میز اطلاعات کجاست؟","ask_information_desk",["danisma"],3],["u6","Orada sorabilir miyim?","می‌توانم آنجا بپرسم؟","ask_where_to_check",["sormak"],3]],
+      "grammar": ["Kayıp eşya bildirmek","Report a familiar lost object, give two simple identifying details and ask where to check.","برای وسیلهٔ گمشده نام وسیله، دو ویژگی ساده و آخرین جای معلوم را می‌گوییم و بعد محل پیگیری را می‌پرسیم.",[["Çantam kayıp. Siyah ve küçük.","کیفم گم شده. مشکی و کوچک است."],["Dün otobüste yanımdaydı. Danışmada sorabilir miyim?","دیروز در اتوبوس کنارم بود. می‌توانم در اطلاعات بپرسم؟"]]],
+      "dialogues": [["Kayıp çanta","ایستگاه",[["Burak","Bir sorun mu var?","مشکلی هست؟"],["Deniz","Çantamı bulamıyorum.","کیفم را پیدا نمی‌کنم."],["Burak","Kayıp mı?","گم شده؟"],["Deniz","Evet.","بله."]],1],["Nasıl bir çanta?","ایستگاه",[["Elif","Çanta nasıl?","کیف چه شکلی است؟"],["Selin","Siyah ve küçük.","مشکی و کوچک است."],["Elif","Dün neredeydi?","دیروز کجا بود؟"],["Selin","Otobüste yanımdaydı.","در اتوبوس کنارم بود."]],2],["Danışma","ایستگاه",[["Emre","Danışma nerede?","اطلاعات کجاست؟"],["Zeynep","Girişin yanında.","کنار ورودی است."],["Emre","Orada sorabilir miyim?","می‌توانم آنجا بپرسم؟"],["Zeynep","Evet, tabii.","بله، حتماً."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۵ جملهٔ ساده یک وسیلهٔ گمشده را معرفی کن، دو ویژگی‌اش را بگو و بپرس کجا باید پیگیری کنی.","speaking_prompt_fa":"گم‌شدن یک وسیله را در ایستگاه گزارش کن و مشخصات و محل پیگیری را بگو.","model_text":"Çantam kayıp. Siyah ve küçük. Dün otobüste yanımdaydı. Danışma nerede? Orada sorabilir miyim?","required_points_fa":["نام وسیله","دو ویژگی ساده","محل پیگیری"]}
+    },
+    {
+      "slug": "simple-forms",
+      "topic": "introductions",
+      "title": "Bu formu dolduracağım",
+      "objective": "Give and check routine personal information on a simple form and ask about one unclear field.",
+      "grammar_focus": "personal information review, spelling/numbers and simple clarification questions",
+      "curriculum": {"skill_slug": "foundations", "topic_slug": "introductions", "sort_order": 520},
+      "vocab": [["form","form","فرم","noun",1],["doldurmak","doldurmak","پر کردن","verb",1],["soyad","soyad","نام خانوادگی","noun",2],["telefon","telefon","تلفن","noun",2],["alan","alan","فیلد / بخش","noun",3],["anlam","anlam","معنی","noun",3]],
+      "utterances": [["u1","Bu formu dolduracağım.","این فرم را پر می‌کنم.","state_form_task",["form","doldurmak"],1],["u2","Adımı buraya yazıyorum.","اسمم را اینجا می‌نویسم.","fill_name",["form"],1],["u3","Soyadım Demir.","نام خانوادگی‌ام دمیر است.","give_surname",["soyad"],2],["u4","Telefon numaramı da yazacağım.","شماره تلفنم را هم می‌نویسم.","give_phone",["telefon"],2],["u5","Bu alanı anlamıyorum.","این فیلد را نمی‌فهمم.","signal_form_problem",["alan"],3],["u6","Bu kelimenin anlamı ne?","معنی این کلمه چیست؟","ask_meaning",["anlam"],3]],
+      "grammar": ["Basit form doldurmak","Give routine personal details and use a direct clarification question for one unclear field.","در فرم ساده اطلاعات آشنا را وارد می‌کنیم و اگر یک بخش نامشخص بود، مستقیم معنی آن را می‌پرسیم.",[["Soyadım Demir. Telefon numaramı da yazacağım.","نام خانوادگی‌ام دمیر است. شماره تلفنم را هم می‌نویسم."],["Bu alanı anlamıyorum. Bu kelimenin anlamı ne?","این فیلد را نمی‌فهمم. معنی این کلمه چیست؟"]]],
+      "dialogues": [["Form","پذیرش",[["Kaan","Bu formu doldurabilir misiniz?","می‌توانید این فرم را پر کنید؟"],["Burak","Evet, tabii.","بله، حتماً."],["Kaan","Adınızı buraya yazın.","اسمتان را اینجا بنویسید."],["Burak","Tamam.","باشه."]],1],["Telefon","پذیرش",[["Deniz","Soyadınız ne?","نام خانوادگی‌تان چیست؟"],["Mert","Demir.","دمیر."],["Deniz","Telefon numaranız?","شماره تلفن؟"],["Mert","Beş yüz otuz...","پانصد و سی..."]],2],["Anlamadım","پذیرش",[["Elif","Form hazır mı?","فرم آماده است؟"],["Emre","Bir alanı anlamıyorum.","یک بخش را نمی‌فهمم."],["Elif","Hangisi?","کدام؟"],["Emre","Bu kelimenin anlamı ne?","معنی این کلمه چیست؟"]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"یک فرم فرضی را با ۳ تا ۴ جملهٔ ساده توضیح بده: نام/نام خانوادگی یا تلفن را بده و دربارهٔ یک فیلد سؤال کن.","speaking_prompt_fa":"در پذیرش اطلاعات شخصی ساده بده و دربارهٔ یک بخش نامفهوم سؤال کن.","model_text":"Soyadım Demir. Telefon numaramı yazacağım. Bu alanı anlamıyorum. Bu kelimenin anlamı ne?","required_points_fa":["یک اطلاعات شخصی","یک شماره یا نام خانوادگی","یک سؤال برای روشن‌سازی"]}
+    },
+    {
+      "slug": "hosting-guest",
+      "topic": "polite-language",
+      "title": "Bir şey içer misin?",
+      "objective": "Welcome a familiar guest, offer simple food or drink and respond politely to preferences.",
+      "grammar_focus": "offers, preferences and polite acceptance/refusal",
+      "curriculum": {"skill_slug": "social", "topic_slug": "polite-language", "sort_order": 530},
+      "vocab": [["misafir","misafir","مهمان","noun",1],["hosgelmek","hoş gelmek","خوش آمدن","verb",1],["ikram","ikram","پذیرایی","noun",2],["cay","çay","چای","noun",2],["seker","şeker","شکر","noun",3],["istemek","istemek","خواستن","verb",3]],
+      "utterances": [["u1","Hoş geldin.","خوش آمدی.","welcome_guest",["hosgelmek"],1],["u2","Bugün bir misafirim var.","امروز یک مهمان دارم.","state_guest",["misafir"],1],["u3","Bir şey ikram edeyim.","بگذار چیزی تعارفت کنم.","offer_refreshment",["ikram"],2],["u4","Çay içer misin?","چای می‌خوری؟","offer_tea",["cay"],2],["u5","Şeker istemiyorum.","شکر نمی‌خواهم.","decline_sugar",["seker","istemek"],3],["u6","Bir bardak çay istiyorum.","یک لیوان چای می‌خواهم.","accept_offer",["cay","istemek"],3]],
+      "grammar": ["Misafire ikram","Use short familiar offers and polite preference responses without extended social negotiation.","در مهمانی دوستانه با جمله‌های کوتاه خوشامد می‌گوییم، نوشیدنی یا خوراکی پیشنهاد می‌کنیم و ترجیح را ساده بیان می‌کنیم.",[["Hoş geldin. Çay içer misin?","خوش آمدی. چای می‌خوری؟"],["Şeker istemiyorum. Bir bardak çay istiyorum.","شکر نمی‌خواهم. یک لیوان چای می‌خواهم."]]],
+      "dialogues": [["Hoş geldin","خانه",[["Selin","Hoş geldin!","خوش آمدی!"],["Zeynep","Hoş bulduk.","ممنون."],["Selin","Nasılsın?","چطوری؟"],["Zeynep","İyiyim, sağ ol.","خوبم، ممنون."]],1],["Çay","خانه",[["Burak","Bir şey ikram edeyim.","بگذار چیزی تعارفت کنم."],["Mert","Teşekkürler.","ممنون."],["Burak","Çay içer misin?","چای می‌خوری؟"],["Mert","Evet, lütfen.","بله، لطفاً."]],2],["Şekersiz","خانه",[["Deniz","Çaya şeker ister misin?","برای چای شکر می‌خواهی؟"],["Kaan","Hayır, istemiyorum.","نه، نمی‌خواهم."],["Deniz","Bir bardak yeter mi?","یک لیوان کافی است؟"],["Kaan","Evet, teşekkürler.","بله، ممنون."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۴ جملهٔ ساده از یک مهمان استقبال کن، چیزی پیشنهاد بده و یک ترجیح غذایی یا نوشیدنی را بنویس.","speaking_prompt_fa":"یک گفت‌وگوی کوتاه میزبان و مهمان اجرا کن: خوشامد، پیشنهاد و پاسخ.","model_text":"Hoş geldin. Bir şey ikram edeyim. Çay içer misin? Şeker istemezsen şekersiz çay da var.","required_points_fa":["خوشامد","یک پیشنهاد","یک ترجیح یا پاسخ"]}
+    },
+    {
+      "slug": "object-description",
+      "topic": "objects",
+      "title": "Mavi olan daha hafif",
+      "objective": "Describe and compare familiar everyday objects by color, size, weight and practical use.",
+      "grammar_focus": "adjective review, daha comparisons and simple preference",
+      "curriculum": {"skill_slug": "describing", "topic_slug": "objects", "sort_order": 540},
+      "vocab": [["hafif","hafif","سبک","adjective",1],["agir","ağır","سنگین","adjective",1],["renk","renk","رنگ","noun",2],["boyut","boyut","اندازه","noun",2],["kullanmak","kullanmak","استفاده کردن","verb",3],["tercih","tercih","ترجیح","noun",3]],
+      "utterances": [["u1","Mavi çanta daha hafif.","کیف آبی سبک‌تر است.","compare_weight",["hafif"],1],["u2","Siyah çanta biraz ağır.","کیف مشکی کمی سنگین است.","describe_weight",["agir"],1],["u3","Bu renk daha güzel.","این رنگ زیباتر است.","compare_color",["renk"],2],["u4","İki çantanın boyutu aynı.","اندازهٔ دو کیف یکسان است.","compare_size",["boyut"],2],["u5","Bunu her gün kullanabilirim.","می‌توانم هر روز از این استفاده کنم.","state_use",["kullanmak"],3],["u6","Ben maviyi tercih ederim.","من آبی را ترجیح می‌دهم.","state_preference",["tercih"],3]],
+      "grammar": ["Nesneleri karşılaştırmak","Compare familiar objects with one or two concrete features and state a simple practical preference.","برای مقایسهٔ وسیله‌ها یک یا دو ویژگی ملموس مثل وزن، رنگ یا اندازه را می‌گوییم و ترجیح کوتاه می‌دهیم.",[["Mavi çanta daha hafif. Siyah çanta biraz ağır.","کیف آبی سبک‌تر است. کیف مشکی کمی سنگین است."],["Boyutları aynı. Ben maviyi tercih ederim.","اندازه‌هایشان یکسان است. من آبی را ترجیح می‌دهم."]]],
+      "dialogues": [["Hangisi hafif?","فروشگاه",[["Elif","Hangi çanta daha hafif?","کدام کیف سبک‌تر است؟"],["Mert","Mavi olan daha hafif.","آبی سبک‌تر است."],["Elif","Siyah nasıl?","مشکی چطور؟"],["Mert","Biraz ağır.","کمی سنگین است."]],1],["Renk ve boyut","فروشگاه",[["Emre","Renkleri farklı mı?","رنگ‌هایشان فرق دارد؟"],["Selin","Evet, biri mavi biri siyah.","بله، یکی آبی و یکی مشکی است."],["Emre","Boyutları?","اندازه‌ها؟"],["Selin","Aynı.","یکسان است."]],2],["Tercihim","فروشگاه",[["Burak","Hangisini tercih edersin?","کدام را ترجیح می‌دهی؟"],["Zeynep","Maviyi tercih ederim.","آبی را ترجیح می‌دهم."],["Burak","Neden?","چرا؟"],["Zeynep","Çünkü daha hafif.","چون سبک‌تر است."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۵ جملهٔ ساده دو وسیلهٔ آشنا را با دو ویژگی مقایسه کن و ترجیحت را با یک دلیل کوتاه بگو.","speaking_prompt_fa":"دو وسیله را از نظر رنگ، اندازه یا وزن مقایسه کن و یکی را انتخاب کن.","model_text":"Mavi çanta daha hafif. İki çantanın boyutu aynı. Ben maviyi tercih ederim çünkü her gün kullanabilirim.","required_points_fa":["دو ویژگی ملموس","یک مقایسه","یک ترجیح با دلیل کوتاه"]}
+    },
+    {
+      "slug": "calendar-reminders",
+      "topic": "dates-calendar",
+      "title": "Toplantı perşembe günü",
+      "objective": "Understand and create simple calendar reminders with dates, times and one practical preparation detail.",
+      "grammar_focus": "date/time review, future preparation and short reminder messages",
+      "curriculum": {"skill_slug": "time-plans", "topic_slug": "dates-calendar", "sort_order": 550},
+      "vocab": [["takvim","takvim","تقویم","noun",1],["toplanti","toplantı","جلسه","noun",1],["persembe","perşembe","پنجشنبه","noun",2],["saat","saat","ساعت","noun",2],["hatirlatmak","hatırlatmak","یادآوری کردن","verb",3],["hazirlamak","hazırlamak","آماده کردن","verb",3]],
+      "utterances": [["u1","Takvimimde bir toplantı var.","در تقویمم یک جلسه دارم.","state_calendar_event",["takvim","toplanti"],1],["u2","Toplantı bu hafta.","جلسه این هفته است.","state_event_week",["toplanti"],1],["u3","Toplantı perşembe günü.","جلسه پنجشنبه است.","state_event_day",["persembe"],2],["u4","Saat onda başlayacak.","ساعت ده شروع می‌شود.","state_event_time",["saat"],2],["u5","Bana akşam hatırlatır mısın?","شب به من یادآوری می‌کنی؟","request_reminder",["hatirlatmak"],3],["u6","Belgeleri akşam hazırlayacağım.","مدارک را شب آماده می‌کنم.","state_preparation",["hazirlamak"],3]],
+      "grammar": ["Takvim ve hatırlatma","Combine a familiar day/time with one simple reminder or preparation action.","برای یادآوری تقویم، روز و ساعت را روشن می‌گوییم و یک کار آماده‌سازی کوتاه اضافه می‌کنیم.",[["Toplantı perşembe günü. Saat onda başlayacak.","جلسه پنجشنبه است. ساعت ده شروع می‌شود."],["Bana akşam hatırlatır mısın? Belgeleri hazırlayacağım.","شب به من یادآوری می‌کنی؟ مدارک را آماده می‌کنم."]]],
+      "dialogues": [["Takvim","دفتر",[["Deniz","Takviminde ne var?","در تقویمت چه داری؟"],["Elif","Bir toplantı var.","یک جلسه دارم."],["Deniz","Bu hafta mı?","این هفته؟"],["Elif","Evet.","بله."]],1],["Perşembe","دفتر",[["Kaan","Toplantı hangi gün?","جلسه چه روزی است؟"],["Selin","Perşembe günü.","پنجشنبه."],["Kaan","Saat kaçta?","ساعت چند؟"],["Selin","Saat onda.","ساعت ده."]],2],["Hatırlatma","پیام",[["Mert","Toplantıyı unutma.","جلسه را فراموش نکن."],["Emre","Bana akşam hatırlatır mısın?","شب به من یادآوری می‌کنی؟"],["Mert","Tabii.","حتماً."],["Emre","Belgeleri de hazırlayacağım.","مدارک را هم آماده می‌کنم."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۳ تا ۴ جملهٔ ساده یک رویداد تقویم را با روز و ساعت بنویس و یک یادآوری یا کار آماده‌سازی اضافه کن.","speaking_prompt_fa":"یک قرار یا جلسه را با روز، ساعت و یک کار قبل از آن توضیح بده.","model_text":"Toplantı perşembe günü. Saat onda başlayacak. Bana akşam hatırlatır mısın? Belgeleri hazırlayacağım.","required_points_fa":["روز","ساعت","یک یادآوری یا آماده‌سازی"]}
+    },
+    {
+      "slug": "a2-practical-day-capstone",
+      "topic": "common-actions",
+      "title": "Bugün birkaç işim var",
+      "objective": "Integrate familiar A2 skills in a practical day: plan tasks, solve one routine problem, communicate a change and complete a short personalized action outcome.",
+      "grammar_focus": "A2 recycling: sequencing, simple past/future, polite requests, reasons and preferences",
+      "curriculum": {"skill_slug": "daily-life", "topic_slug": "common-actions", "sort_order": 560},
+      "vocab": [["is","iş","کار / کار روزمره","noun",1],["liste","liste","فهرست","noun",1],["once","önce","اول / قبل","adverb",2],["sonra","sonra","بعد","adverb",2],["mesaj","mesaj","پیام","noun",3],["bitirmek","bitirmek","تمام کردن","verb",3]],
+      "utterances": [["u1","Bugün birkaç işim var.","امروز چند کار دارم.","state_tasks",["is"],1],["u2","Kısa bir liste yaptım.","یک فهرست کوتاه درست کردم.","state_list",["liste"],1],["u3","Önce eczaneye gideceğim.","اول به داروخانه می‌روم.","sequence_plan",["once"],2],["u4","Sonra paketimi alacağım.","بعد بسته‌ام را می‌گیرم.","sequence_next",["sonra"],2],["u5","Biraz geç kalacağım diye kısa bir mesaj yazdım.","یک پیام کوتاه نوشتم که کمی دیر می‌رسم.","send_simple_message",["mesaj"],3],["u6","Akşam işlerimi bitireceğim.","عصر کارهایم را تمام می‌کنم.","finish_tasks",["bitirmek"],3]],
+      "grammar": ["A2 günlük görevleri birleştirmek","Link a few familiar concrete tasks with simple sequencing, one routine problem and a short practical message.","در جمع‌بندی A2 چند کار آشنا را با «اول/بعد»، یک درخواست یا مشکل روزمره و یک پیام کوتاه کنار هم می‌گذاریم؛ روایت پیچیده لازم نیست.",[["Bugün birkaç işim var. Önce eczaneye gideceğim.","امروز چند کار دارم. اول به داروخانه می‌روم."],["Sonra paketimi alacağım. Akşam işlerimi bitireceğim.","بعد بسته‌ام را می‌گیرم. عصر کارهایم را تمام می‌کنم."]]],
+      "dialogues": [["Günün işleri","خانه",[["Burak","Bugün ne yapacaksın?","امروز چه کار می‌کنی؟"],["Elif","Birkaç işim var.","چند کار دارم."],["Burak","Liste yaptın mı?","فهرست درست کردی؟"],["Elif","Evet, kısa bir liste yaptım.","بله، یک فهرست کوتاه درست کردم."]],1],["Önce sonra","خیابان",[["Zeynep","Önce nereye gideceksin?","اول کجا می‌روی؟"],["Deniz","Önce eczaneye.","اول داروخانه."],["Zeynep","Sonra?","بعد؟"],["Deniz","Sonra paketimi alacağım.","بعد بسته‌ام را می‌گیرم."]],2],["Kısa mesaj","پیام",[["Kaan","Biraz geç mi kalacaksın?","کمی دیر می‌رسی؟"],["Emre","Evet, kısa bir mesaj yazdım.","بله، یک پیام کوتاه نوشتم."],["Kaan","Akşam işlerin bitecek mi?","عصر کارهایت تمام می‌شود؟"],["Emre","Evet, akşam bitireceğim.","بله، عصر تمام می‌کنم."]],3]],
+      "production": {"lesson":3,"writing_prompt_fa":"در ۴ تا ۵ جملهٔ ساده یک روز عملی خودت را بنویس: دو کار را به ترتیب بگو، یک مشکل یا تغییر کوچک را مدیریت کن و یک پیام کوتاه اضافه کن.","speaking_prompt_fa":"برنامهٔ یک روز واقعی را کوتاه تعریف کن: اول/بعد، یک کار خدماتی یا خرید، و یک پیام یا هماهنگی ساده.","model_text":"Bugün birkaç işim var. Önce eczaneye gideceğim. Sonra paketimi alacağım. Biraz geç kalacağım için kısa bir mesaj yazacağım. Akşam işlerimi bitireceğim.","required_points_fa":["دو کار به ترتیب","یک مشکل یا تغییر عملی","یک پیام یا هماهنگی"]}
+    }
+  ]
+}
