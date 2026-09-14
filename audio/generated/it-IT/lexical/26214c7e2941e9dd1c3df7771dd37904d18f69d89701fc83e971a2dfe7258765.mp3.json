@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "0b9c8acadd9f05997432738a1e38fa9561a0e781c39aba14fac7adee104559b1",
+  "voice_id": "litDcG1avVppv4R90BLu",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "26214c7e2941e9dd1c3df7771dd37904d18f69d89701fc83e971a2dfe7258765",
+  "voice_key": "it-it.lexical.native-clear",
+  "voice_name": "Carla - Natural, Reflective & Narrative",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "it",
+    "use_case": "conversational",
+    "descriptive": "crisp"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "c8f247b174401f13be848313e411214a4b24eaa39cf88961e4fb09beeb639117",
+  "duration_ms": 1018,
+  "generated_at": "2026-09-14T03:26:43.101057+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "a9979c20-4de4-5444-9d8a-029c3a41701e",
+      "entity_key": "lx_weather_and_change_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "bb8c8e6c-47d9-59f5-b7ec-86ec0b7d24cb",
+      "entity_key": "wf_weather_and_change_02"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "3a8bcca10f1c4fbbd2cc515dbacb1033e42b0f376a982c3932351fc80fde1953",
+  "voice_id": "o4b57JYAECRMJyCEXyIE",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "be9bd6ae4e557fa716549c0cec82ebc6f2c957993a0449338f9eddeb0ae034e6",
+  "voice_key": "character:marco:male_warm",
+  "voice_name": "Brando Vox – Natural Customer Care",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "it",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "9aef5be4457352859f3eea4fe697a03b3fae048d6b74421813ed3284ef709bf5",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-14T03:26:30.028128+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "56d29e40-dd61-53bd-abbb-5ef103046191",
+      "entity_key": "d_health_and_advice_01:4"
+    }
+  ]
+}

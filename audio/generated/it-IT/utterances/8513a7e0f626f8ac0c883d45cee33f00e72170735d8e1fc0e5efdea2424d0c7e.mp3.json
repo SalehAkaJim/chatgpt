@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "fbb05936fbbf2b5742ff6c7af29c83e764fd2face30af184934fc0d78e468ded",
+  "voice_id": "litDcG1avVppv4R90BLu",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "8513a7e0f626f8ac0c883d45cee33f00e72170735d8e1fc0e5efdea2424d0c7e",
+  "voice_key": "it-it.sentence.native-clear",
+  "voice_name": "Carla - Natural, Reflective & Narrative",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "it",
+    "use_case": "conversational",
+    "descriptive": "crisp"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "f734b76e1e75ff0053edbac51f86bd0c50c45b9c0c350d25eacdff0a6a85daf9",
+  "duration_ms": 1567,
+  "generated_at": "2026-09-14T03:27:18.998848+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "ea6788e0-2f3e-5d00-9d8e-45e2f4fb9336",
+      "entity_key": "u_travel_and_hotel_02"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "d7d39d3a-7dff-51ba-aa05-cbce0e3297b0",
+      "entity_key": "e_travel_and_hotel_01_listen"
+    }
+  ]
+}

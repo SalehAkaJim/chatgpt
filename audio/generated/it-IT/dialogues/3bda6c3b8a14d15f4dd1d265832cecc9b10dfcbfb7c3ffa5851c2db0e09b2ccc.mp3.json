@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "1ee2ec1ef270fda1cafb6a81415c4ef294c201cf15c8571c1c190f3872f2c015",
+  "voice_id": "DTGwzA4YLrWB1FAT6Uas",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "3bda6c3b8a14d15f4dd1d265832cecc9b10dfcbfb7c3ffa5851c2db0e09b2ccc",
+  "voice_key": "character:luca:male_bright",
+  "voice_name": "Lorenzo - Youthful, Expressive & Inspiring",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "it",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "21b111499f7f3bb349c9935abbb8d96662b713fa2e6ef93027599510285d202a",
+  "duration_ms": 1018,
+  "generated_at": "2026-09-14T03:26:08.755885+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "b349dda0-06db-54d6-bad8-37c36880572b",
+      "entity_key": "d_plans_and_intentions_01:4"
+    }
+  ]
+}
