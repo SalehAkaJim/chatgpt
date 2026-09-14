@@ -13,6 +13,10 @@ def safe(value: str) -> str:
     return re.sub(r'[^a-z0-9]+', '_', asciiish.lower()).strip('_') or 'item'
 
 
+def unique(values):
+    return list(dict.fromkeys(values))
+
+
 def status(data: dict) -> dict:
     data['status'] = 'validated'
     return data
@@ -51,13 +55,20 @@ def build_unit(spec: dict) -> dict:
             trs.append({'order':order,'speaker':speaker,'text':fr,'translation_fa':fa})
         did=f'd_{prefix}_{idx:02d}'; dialogue_ids[lesson]=did
         items.append({'kind':'dialogue','external_id':did,'data':status({'lesson_key':f'{unit_slug}-{lesson:02d}','title':title,'setting':safe(setting),'cefr':'Pre-A1','topic':topic,'characters':chars,'turns':trs,'qa':{'character_pair_unique_within_unit':True,'naturalness':'passed','single_situation':True}})})
+    vocab_fr=[row[1] for row in spec['vocab']]; vocab_fa=[row[2] for row in spec['vocab']]
     for lesson in (1,2):
         lu=[u for u in utterances if u['lesson']==lesson]
         if len(lu)<2: raise ValueError(f'{slug}: lesson {lesson} needs at least two utterances')
-        a,b=lu[:2]; other_fr=[u['fr'] for u in utterances if u['fr']!=a['fr']]; other_fa=[u['fa'] for u in utterances if u['fa']!=a['fa']]
-        fr_opts=[a['fr']]+other_fr[:3]; fa_opts=[a['fa']]+other_fa[:3]; lk=f'{unit_slug}-{lesson:02d}'; base=f'e_{prefix}_{lesson:02d}'
+        a,b=lu[:2]
+        fr_pool=unique([u['fr'] for u in utterances] + vocab_fr)
+        fa_pool=unique([u['fa'] for u in utterances] + vocab_fa)
+        fr_opts=unique([a['fr']] + [x for x in fr_pool if x!=a['fr']])[:4]
+        fa_opts=unique([a['fa']] + [x for x in fa_pool if x!=a['fa']])[:4]
+        if len(fr_opts)<2 or len(fa_opts)<2: raise ValueError(f'{slug}: insufficient unique exercise options')
+        lk=f'{unit_slug}-{lesson:02d}'; base=f'e_{prefix}_{lesson:02d}'
         items.append({'kind':'exercise','external_id':base+'_meaning','data':status({'lesson_key':lk,'exercise_type':'multiple_choice','prompt':{'instruction_fa':'معنی درست این عبارت فرانسوی را انتخاب کن.','value':a['fr']},'answer':{'value':a['fa']},'options':fa_opts,'difficulty':1,'cefr':'Pre-A1','topic':topic,'feedback':feedback(a['fa'],a['fr'])})})
-        items.append({'kind':'exercise','external_id':base+'_listen','data':status({'lesson_key':lk,'exercise_type':'listening','prompt':{'instruction_fa':'گوش کن و عبارتی را که شنیدی انتخاب کن.','audio_text':b['fr']},'answer':{'value':b['fr']},'options':[b['fr']]+[x for x in fr_opts if x!=b['fr']][:3],'difficulty':1,'cefr':'Pre-A1','topic':topic,'feedback':{**feedback(b['fa'],b['fr']),'transcript_fr':b['fr']}})})
+        listen_opts=unique([b['fr']] + [x for x in fr_pool if x!=b['fr']])[:4]
+        items.append({'kind':'exercise','external_id':base+'_listen','data':status({'lesson_key':lk,'exercise_type':'listening','prompt':{'instruction_fa':'گوش کن و عبارتی را که شنیدی انتخاب کن.','audio_text':b['fr']},'answer':{'value':b['fr']},'options':listen_opts,'difficulty':1,'cefr':'Pre-A1','topic':topic,'feedback':{**feedback(b['fa'],b['fr']),'transcript_fr':b['fr']}})})
         items.append({'kind':'exercise','external_id':base+'_speak','data':status({'lesson_key':lk,'exercise_type':'speaking','prompt':{'instruction_fa':'عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.','value':a['fr']},'answer':{'expected_text':a['fr']},'difficulty':1,'cefr':'Pre-A1','topic':topic,'feedback':feedback(a['fa'],a['fr'])})})
         tokens=b['fr'].split(); shuffled=tokens[1:]+tokens[:1] if len(tokens)>1 else tokens
         items.append({'kind':'exercise','external_id':base+'_build','data':status({'lesson_key':lk,'exercise_type':'sentence_building','prompt':{'instruction_fa':'کلمه‌ها را لمس کن تا عبارت درست ساخته شود.','tokens':shuffled},'answer':{'tokens':tokens,'value':b['fr']},'difficulty':1,'cefr':'Pre-A1','topic':topic,'feedback':feedback(b['fa'],b['fr'])})})
