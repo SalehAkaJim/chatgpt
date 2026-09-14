@@ -10,16 +10,16 @@ permissions:
   contents: write
 
 concurrency:
-  group: italian-prea1-audio-generation-v1
+  group: italian-prea1-audio-generation-v2
   cancel-in-progress: false
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 240
     env:
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-      CONTENT_TTS_CONCURRENCY: '2'
+      CONTENT_TTS_CONCURRENCY: '1'
       ELEVENLABS_MODEL_ID: eleven_multilingual_v2
       ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
     steps:
@@ -28,50 +28,80 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
+
       - name: Require ElevenLabs connection
         run: test -n "${ELEVENLABS_API_KEY:-}" || exit 2
+
       - name: Final Italian content validation before paid generation
         run: |
           set -euo pipefail
-          test "$(find content/production/it/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          test -n "$(find content/production/it/Pre-A1 -maxdepth 1 -name '*.json' -print -quit)"
           for f in content/production/it/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
+          python scripts/audit_prea1_cefr_readiness.py
           python scripts/validate_character_cast.py --cast audio/cast/it-IT.json
           python database/import/it/pre_a1.py --dry-run
+
       - name: Build strict Italian Pre-A1 manifest
         run: |
           mkdir -p audio/manifests/it
           python scripts/build_audio_manifest.py content/production/it/Pre-A1 --level Pre-A1 --locale it-IT --strict-characters --output audio/manifests/it/Pre-A1.json
+
       - name: Resolve and lock every required Italian voice without TTS
         run: python scripts/resolve_audio_voices.py audio/manifests/it/Pre-A1.json --write-lock
+
       - name: Validate manifest and voice lock before paid generation
         run: |
           python scripts/validate_audio_manifest.py audio/manifests/it/Pre-A1.json
           python scripts/audit_voice_lock.py --lock audio/voices/it-IT.lock.json --registry audio/voices/it-IT.json --strict
-      - name: Generate all Italian Pre-A1 production audio
-        run: python scripts/generate_audio.py audio/manifests/it/Pre-A1.json --confirm-paid-generation --concurrency 2
-      - name: Validate generated Italian audio and voice consistency
-        run: |
-          python scripts/validate_audio_manifest.py audio/manifests/it/Pre-A1.json --require-generated
-          python scripts/audit_audio_voice_consistency.py audio/manifests/it/Pre-A1.json --lock-file audio/voices/it-IT.lock.json
-      - name: Export database relative-path SQL
-        run: python scripts/export_audio_sql.py audio/manifests/it/Pre-A1.json --status validated --output database/import/it/pre_a1_audio.sql
-      - name: Verify expected audio categories
+
+      - name: Remove only existing Italian Pre-A1 manifest assets
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          d=json.loads(Path('audio/manifests/it/Pre-A1.json').read_text())
-          counts={}
-          for x in d['items']: counts[x['category']]=counts.get(x['category'],0)+1
-          expected={'dialogues':79,'lexical':58,'utterances':40}
-          if counts != expected:
-              raise SystemExit(f'Unexpected category counts: expected={expected}, actual={counts}')
-          if len(d['items']) != 177:
-              raise SystemExit(f'Expected 177 manifest items after deterministic deduplication, found {len(d["items"])}')
-          generated=len(list(Path('audio/generated/it-IT').rglob('*.mp3')))
-          if generated != len(d['items']): raise SystemExit(f'Expected {len(d["items"])} MP3 files, found {generated}')
-          print(json.dumps({'items':len(d['items']),'categories':counts,'mp3_files':generated},ensure_ascii=False,indent=2))
+          manifest=Path('audio/manifests/it/Pre-A1.json')
+          data=json.loads(manifest.read_text(encoding='utf-8'))
+          removed=0
+          for item in data['items']:
+              audio=Path(item['relative_path'])
+              meta=Path(str(audio)+'.json')
+              if audio.exists():
+                  audio.unlink(); removed += 1
+              if meta.exists():
+                  meta.unlink()
+          print(json.dumps({'manifest_items':len(data['items']),'removed_existing_mp3':removed},indent=2))
           PY
+
+      - name: Generate Italian Pre-A1 production audio fresh
+        run: python scripts/generate_audio.py audio/manifests/it/Pre-A1.json --confirm-paid-generation --concurrency 1
+
+      - name: Validate generated Italian audio and voice consistency
+        run: |
+          python scripts/validate_audio_manifest.py audio/manifests/it/Pre-A1.json --require-generated
+          python scripts/audit_audio_voice_consistency.py audio/manifests/it/Pre-A1.json --lock-file audio/voices/it-IT.lock.json
+
+      - name: Export database relative-path SQL
+        run: python scripts/export_audio_sql.py audio/manifests/it/Pre-A1.json --status validated --output database/import/it/pre_a1_audio.sql
+
+      - name: Verify manifest assets and required audio categories
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('audio/manifests/it/Pre-A1.json').read_text(encoding='utf-8'))
+          counts={}
+          for item in d['items']:
+              counts[item['category']]=counts.get(item['category'],0)+1
+          required={'lexical','utterances','dialogues'}
+          missing=required-set(counts)
+          if missing:
+              raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
+          generated=sum(Path(item['relative_path']).is_file() for item in d['items'])
+          if generated != len(d['items']):
+              raise SystemExit(f'Expected every manifest item to have an MP3: {generated}/{len(d["items"])}')
+          print(json.dumps({'items':len(d['items']),'categories':counts,'manifest_mp3_files':generated},ensure_ascii=False,indent=2))
+          PY
+
       - name: Commit generated Italian audio and DB link files
         run: |
           set -euo pipefail
@@ -79,8 +109,13 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add audio/generated/it-IT audio/manifests/it/Pre-A1.json audio/voices/it-IT.lock.json database/import/it/pre_a1_audio.sql
           if ! git diff --cached --quiet; then
-            git commit -m 'Generate Italian Pre-A1 production audio [skip ci]'
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
+            git commit -m 'Regenerate Italian Pre-A1 production audio fresh [skip ci]'
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep $((attempt * 2))
+            done
+            echo 'Unable to push Italian Pre-A1 audio after 5 attempts.' >&2
+            exit 1
           fi

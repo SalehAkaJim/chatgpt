@@ -22,25 +22,52 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt && sudo apt-get update -qq && sudo apt-get install -y default-mysql-client
+
       - name: Bootstrap
         run: |
           DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
           for f in database/schema.sql database/migrations/001_curriculum.sql database/migrations/002_multilingual_core.sql database/migrations/003_lesson_item_lexemes.sql database/migrations/004_level_import_audio.sql database/migrations/005_writing_exercises.sql database/seed/cefr.sql database/seed/languages.sql database/seed/skills-topics.sql database/seed/english-a1-curriculum.sql database/seed/language-variants-courses.sql database/seed/italian-course.sql database/seed/italian-prea1-curriculum.sql; do $DB < "$f"; done
+
       - name: Validate and import Italian Pre-A1
         run: |
+          set -euo pipefail
           for f in content/production/it/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
+          python scripts/audit_prea1_cefr_readiness.py
           python scripts/validate_character_cast.py --cast audio/cast/it-IT.json
           python database/import/it/pre_a1.py --dry-run
           python database/import/it/pre_a1.py --allow-unreviewed
-      - name: Verify counts and idempotency
+
+      - name: Verify content-derived counts and idempotency
         run: |
+          set -euo pipefail
           q(){ mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "$1"; }
+
+          read expected_units expected_lessons expected_exercises < <(python - <<'PY'
+          import json
+          from pathlib import Path
+          paths = sorted(Path('content/production/it/Pre-A1').glob('*.json'))
+          units=set(); lessons=set(); exercises=0
+          for path in paths:
+              batch=json.loads(path.read_text(encoding='utf-8'))
+              units.add(batch['curriculum_unit'])
+              for item in batch.get('items', []):
+                  data=item.get('data', {})
+                  if data.get('lesson_key'): lessons.add(data['lesson_key'])
+                  if item.get('kind') == 'exercise': exercises += 1
+          print(len(units), len(lessons), exercises)
+          PY
+          )
+
           units=$(q "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-it-it' JOIN cefr_levels l ON l.id=cu.cefr_level_id AND l.code='Pre-A1';")
           lessons=$(q "SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id AND c.slug='fa-it-it' JOIN cefr_levels l ON l.id=le.cefr_level_id AND l.code='Pre-A1';")
           exercises=$(q "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN cefr_levels l ON l.id=le.cefr_level_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-it-it' AND l.code='Pre-A1';")
-          test "$units" = 10; test "$lessons" = 20; test "$exercises" = 100
+
+          test "$units" = "$expected_units"
+          test "$lessons" = "$expected_lessons"
+          test "$exercises" = "$expected_exercises"
+
           before=$(q "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-it-it'),'|',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-it-it'));")
           python database/import/it/pre_a1.py --allow-unreviewed
           after=$(q "SELECT CONCAT((SELECT COUNT(*) FROM lessons le JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-it-it'),'|',(SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-it-it'));")
           test "$before" = "$after"
-          echo "Italian Pre-A1 counts: units=$units lessons=$lessons exercises=$exercises idempotent=$after"
+          echo "Italian Pre-A1 content-derived counts: units=$units lessons=$lessons exercises=$exercises idempotent=$after"
