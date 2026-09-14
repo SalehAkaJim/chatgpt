@@ -10,22 +10,25 @@ EXPECTED = {
     "Pre-A1": {
         "prea1-de-first-greetings": 2,
         "prea1-de-my-name": 2,
+        "prea1-de-about-me": 2,
         "prea1-de-numbers-0-10": 2,
+        "prea1-de-real-life-numbers": 2,
         "prea1-de-alphabet": 2,
         "prea1-de-letter-names": 2,
         "prea1-de-script-sound-bridge": 2,
         "prea1-de-first-sounds": 2,
         "prea1-de-first-objects": 2,
+        "prea1-de-forms-signs": 2,
         "prea1-de-classroom": 2,
         "prea1-de-meaning-help": 1,
         "prea1-de-survival-words": 2,
         "prea1-de-first-conversation": 2,
         "prea1-de-ready-for-a1": 2,
+        "prea1-de-real-world-gate": 2,
     },
     "A1": {"a1-de-greetings": 2, "a1-de-introductions": 2, "a1-de-spelling": 2, "a1-de-numbers": 2, "a1-de-countries": 2, "a1-de-polite": 2, "a1-de-family": 2, "a1-de-articles": 2, "a1-de-possessions": 2, "a1-de-routine": 3, "a1-de-time": 2, "a1-de-separable-verbs": 2, "a1-de-food": 3, "a1-de-cafe": 3, "a1-de-accusative": 2, "a1-de-home": 3, "a1-de-locations": 2, "a1-de-shopping": 2, "a1-de-prices": 2, "a1-de-town": 2, "a1-de-directions": 3, "a1-de-transport": 2, "a1-de-likes": 2, "a1-de-hobbies": 2, "a1-de-modal-verbs": 3, "a1-de-work-study": 2, "a1-de-describing": 2, "a1-de-weather": 2, "a1-de-health": 2, "a1-de-plans": 3},
 }
 
-# Pure literacy/phonics lessons can be pedagogically complete without a dialogue.
 DIALOGUE_OPTIONAL_UNITS = {"prea1-de-script-sound-bridge"}
 
 errors = []
@@ -53,6 +56,9 @@ for level, units in EXPECTED.items():
         lessons=[]
         dialogues=0
         exercises=Counter()
+        open_writing=0
+        personalized_speaking=0
+        visual_tasks=0
         for item in b.get("items",[]):
             d=item.get("data",{})
             lk=d.get("lesson_key")
@@ -71,7 +77,11 @@ for level, units in EXPECTED.items():
                     if not turn.get("translation_fa"):
                         errors.append(f"{p} dialogue turn missing Persian translation")
             if item.get("kind")=="exercise":
-                exercises[d.get("exercise_type")] += 1
+                typ=d.get("exercise_type")
+                exercises[typ] += 1
+                if typ=="writing" and (d.get("answer") or {}).get("evaluation_mode")=="rubric": open_writing += 1
+                if typ=="speaking" and (d.get("prompt") or {}).get("personalized") is True: personalized_speaking += 1
+                if (d.get("prompt") or {}).get("visual_asset"): visual_tasks += 1
         if len(lessons) != expected_lessons:
             errors.append(f"{p} expected {expected_lessons} lessons, found {len(lessons)}: {lessons}")
         if unit not in DIALOGUE_OPTIONAL_UNITS and dialogues < expected_lessons:
@@ -80,6 +90,8 @@ for level, units in EXPECTED.items():
             errors.append(f"{p} needs listening coverage")
         if exercises["speaking"] < 1:
             errors.append(f"{p} needs speaking coverage")
+        if unit=="prea1-de-real-world-gate" and (open_writing < 1 or personalized_speaking < 1 or visual_tasks < 1):
+            errors.append(f"{p} final gate must include open writing, personalized speaking and visual reading")
         all_batches.append((level,p,b))
     summary[level]={"files":len(paths),"units":len(by_unit),"items":sum(len(b.get("items",[])) for b in batches)}
 
@@ -99,7 +111,6 @@ for prev,cur in zip(sequence,sequence[1:]):
     if prev[2]==cur[2]:
         errors.append(f"consecutive lessons reuse pair {prev[2]}: {prev[1]} -> {cur[1]}")
 
-print(json.dumps({"summary":summary,"batches":len(all_batches),"errors":errors,"valid":not errors},
-                 ensure_ascii=False, indent=2))
+print(json.dumps({"summary":summary,"batches":len(all_batches),"errors":errors,"valid":not errors}, ensure_ascii=False, indent=2))
 if errors:
     raise SystemExit(1)
