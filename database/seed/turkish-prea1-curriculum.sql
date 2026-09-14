@@ -29,6 +29,14 @@ FROM (
          'Recognize the Turkish Latin alphabet and the letters ç, ğ, ı, İ, ö, ş and ü.',2,
          'Turkish spelling is highly regular; dotted i/İ and dotless ı/I are different letters and must remain distinct.',
          'مهم‌ترین نکته برای فارسی‌زبان: i و ı دو حرف متفاوت‌اند؛ نقطه را بخشی از خود حرف بدان.'
+  UNION ALL SELECT 45,'literacy','sound-letter-mapping','prea1-tr-letter-names','Harflerin adları',
+         'Hear high-value Turkish letter names and spell a very short name without relying on English letter names.',2,
+         'Turkish letter names follow Turkish conventions; I/ı and İ/i are distinct, and Ğ is commonly called yumuşak ge.',
+         'اسم حروف را با صدای ترکی یاد بگیر؛ مخصوصاً I/ı و İ/i را قاطی نکن و Ğ را «yumuşak ge» بشناس.'
+  UNION ALL SELECT 47,'literacy','sound-letter-mapping','prea1-tr-script-sound-bridge','Harflerden seslere',
+         'Connect distinctive Turkish letters to their most useful beginner sounds before relying on whole-word memorization.',2,
+         'Explicitly distinguish c/ç, s/ş, i/ı, ö/ü and notice that ğ often lengthens or links the preceding vowel rather than acting like a strong consonant.',
+         'برای فارسی‌زبان، تفاوت c/ç و i/ı کلیدی است؛ ğ را هم مثل یک صامت پررنگ و مستقل تلفظ نکن.'
   UNION ALL SELECT 50,'literacy','sound-letter-mapping','prea1-tr-first-sounds','İlk sesler',
          'Hear and produce high-value Turkish sound-letter correspondences in familiar words.',2,
          'Focus on ç, ş, c, ğ, ö, ü and dotless ı; Turkish orthography is more phonemic than English.',
@@ -45,6 +53,10 @@ FROM (
          'Use essential polite expressions for thanks, requests and apologies.',2,
          'Learn lütfen, teşekkürler/teşekkür ederim, rica ederim and özür dilerim as pragmatic chunks.',
          'این عبارت‌ها را بر اساس موقعیت یاد بگیر؛ «Rica ederim» پاسخ طبیعی به تشکر است.'
+  UNION ALL SELECT 85,'communication','requests','prea1-tr-meaning-help','Bu ne demek?',
+         'Ask what something means and request repetition or slower speech with short survival chunks.',1,
+         'Bu ne demek?, Tekrar eder misiniz? and Daha yavaş, lütfen. are taught as complete repair expressions.',
+         'این عبارت‌ها را فعلاً یک‌تکه یاد بگیر: «Bu ne demek?» یعنی «این یعنی چه؟» و «Tekrar eder misiniz?» یعنی «دوباره می‌گویید؟».'
   UNION ALL SELECT 90,'social','polite-language','prea1-tr-survival-words','Gerekli sözler',
          'Recognize and use essential yes/no, help and repair expressions.',2,
          'Use evet, hayır, tamam, yardım, anlamadım and tekrar as fast survival language.',
@@ -53,6 +65,10 @@ FROM (
          'Combine greetings, names, wellbeing, thanks and a farewell in a tiny natural conversation.',2,
          'Build a first conversation from memorized chunks while noticing Turkish person endings and natural omission of pronouns.',
          'هدف این واحد ترکیب تکه‌های آشنا در یک گفت‌وگوی واقعی کوتاه است؛ فعلاً لازم نیست همهٔ پسوندها را تجزیه کنی.'
+  UNION ALL SELECT 110,'communication','simple-messages','prea1-tr-ready-for-a1','A1’e hazırım',
+         'Demonstrate readiness for A1 by recognizing distinctive Turkish letters, following tiny supported audio, introducing yourself and repairing a misunderstanding.',2,
+         'The exit gate checks functional readiness rather than suffix analysis or perfect pronunciation.',
+         'برای ورود به A1 لازم نیست پسوندهای ترکی را تحلیل کنی؛ باید حروف مهم را بشناسی، چند عبارت کوتاه را بفهمی، خودت را معرفی کنی و اگر گیر کردی درخواست تکرار یا معنی کنی.'
 ) AS u
 JOIN courses c ON c.slug='fa-tr-tr'
 JOIN cefr_levels lvl ON lvl.code='Pre-A1'
