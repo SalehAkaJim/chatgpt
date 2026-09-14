@@ -65,6 +65,23 @@ FROM (
          'Combine greetings, names, wellbeing, thanks and a farewell in a tiny natural conversation.',2,
          'Build a first conversation from memorized chunks while noticing Turkish person endings and natural omission of pronouns.',
          'هدف این واحد ترکیب تکه‌های آشنا در یک گفت‌وگوی واقعی کوتاه است؛ فعلاً لازم نیست همهٔ پسوندها را تجزیه کنی.'
+  UNION ALL SELECT 25,'foundations','introductions','prea1-tr-about-me','Benim hakkımda',
+         'Give very basic personal information about origin, age, feelings and family with short Turkish chunks.',2,
+         'Personal-information chunks are learned before suffix analysis.',
+         'نام، مبدأ، سن و حال ساده را با تکه‌های آماده و کاربردی یاد بگیر.'
+  UNION ALL SELECT 35,'foundations','numbers','prea1-tr-real-life-numbers','Günlük sayılar',
+         'Recognize and use small numbers in phone numbers, prices, days and simple dates.',2,
+         'Use transparent Turkish number forms inside real information.',
+         'عددها را در شماره تلفن، قیمت، روز و تاریخ به کار ببر.'
+  UNION ALL SELECT 75,'communication','simple-messages','prea1-tr-forms-signs','Formlar ve tabelalar',
+         'Read a few highly familiar form labels and public signs and fill a three-field form.',2,
+         'Functional reading uses highly transparent labels and signs.',
+         'فیلدهای سادهٔ فرم و تابلوهای کاربردی را برای انجام کار واقعی بخوان.'
+  UNION ALL SELECT 120,'communication','simple-messages','prea1-tr-real-world-gate','Gerçek hayat kontrolü',
+         'Complete tiny real-world tasks with personal speaking, form writing, listening, visual reading and repair.',2,
+         'The final gate checks successful communication, not suffix analysis.',
+         'در خروجی نهایی باید با اطلاعات خودت صحبت و نوشتن خیلی ساده انجام بدهی و اگر گیر کردی مکالمه را تعمیر کنی.'
+
   UNION ALL SELECT 110,'communication','simple-messages','prea1-tr-ready-for-a1','A1’e hazırım',
          'Demonstrate readiness for A1 by recognizing distinctive Turkish letters, following tiny supported audio, introducing yourself and repairing a misunderstanding.',2,
          'The exit gate checks functional readiness rather than suffix analysis or perfect pronunciation.',

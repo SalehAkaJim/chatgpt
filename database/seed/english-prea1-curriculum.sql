@@ -68,6 +68,19 @@ FROM (
   UNION ALL SELECT 100,'communication','simple-messages','prea1-en-first-conversation','Your First Conversation',
          'Follow and take part in a very short supported exchange combining greetings, names, yes/no, and a farewell.',1,
          JSON_OBJECT('focus','integration','capstone',TRUE)
+  UNION ALL SELECT 65,'foundations','introductions','prea1-en-about-me','About Me',
+         'Give very basic personal information about origin, age, feelings and family with short supported chunks.',2,
+         JSON_OBJECT('focus','personal_information','cefr_can_do',TRUE,'personalized',TRUE)
+  UNION ALL SELECT 75,'foundations','numbers','prea1-en-real-life-numbers','Numbers in Real Life',
+         'Use and recognize small numbers in phone numbers, prices, days and simple dates.',2,
+         JSON_OBJECT('focus','real_world_numbers','phone',TRUE,'prices',TRUE,'dates',TRUE)
+  UNION ALL SELECT 95,'communication','simple-messages','prea1-en-forms-signs','Forms & Signs',
+         'Read a few highly familiar form labels and public signs and fill a three-field personal-information form.',2,
+         JSON_OBJECT('focus','functional_reading_writing','visual_support',TRUE,'writing',TRUE)
+  UNION ALL SELECT 120,'communication','simple-messages','prea1-en-real-world-gate','Real-World Pre-A1 Check',
+         'Complete tiny real-world tasks with personal speaking, form writing, listening, visual reading and communication repair.',2,
+         JSON_OBJECT('focus','prea1_real_world_exit','personalized',TRUE,'writing',TRUE,'visual',TRUE,'repair',TRUE)
+
   UNION ALL SELECT 110,'communication','simple-messages','prea1-en-ready-for-a1','Ready for A1',
          'Demonstrate zero-learner readiness by recognizing basic script, following very short supported audio, using survival chunks, introducing yourself, and repairing a simple misunderstanding.',2,
          JSON_OBJECT('focus','prea1_exit_gate','zero_learner',TRUE,'script',TRUE,'listening',TRUE,'repair',TRUE,'speaking',TRUE)

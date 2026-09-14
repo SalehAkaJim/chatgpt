@@ -20,6 +20,23 @@ FROM (
   UNION ALL SELECT 85,'communication','requests','prea1-ko-meaning-help','무슨 뜻이에요?','Ask what something means and combine that with repeat or slow-down requests.',1,'무슨 뜻이에요?, 다시 말해 주세요 and 천천히 말해 주세요 are taught as complete repair chunks.','برای شروع ساخت دستوری را تجزیه نکن؛ این سه عبارت را ابزار نجات مکالمه بدان.'
   UNION ALL SELECT 90,'social','polite-language','prea1-ko-survival-words','다시 말해 주세요','Repair communication with repeat, slow-down and help requests.',2,'다시/천천히 + 말해 주세요.','از همان ابتدا ابزار مدیریت مکالمه داشته باش.'
   UNION ALL SELECT 100,'foundations','introductions','prea1-ko-first-conversation','첫 한국어 대화','Combine greetings, identity, origin and farewells in one short conversation.',2,'X에서 왔어요 as a useful origin chunk.','هدف ترکیب تکه‌های آشنا در یک گفت‌وگوی واقعی کوتاه است.'
+  UNION ALL SELECT 25,'foundations','introductions','prea1-ko-about-me','나에 대해',
+         'Give very basic personal information about origin, age, feelings and family with polite Korean chunks.',2,
+         'Use polite personal-information chunks without requiring particle analysis.',
+         'اطلاعات خیلی پایهٔ شخصی را با تکه‌های مؤدبانه و آماده بیان کن.'
+  UNION ALL SELECT 35,'foundations','numbers','prea1-ko-real-life-numbers','생활 속 숫자',
+         'Recognize useful Sino-Korean numbers in phone numbers, prices, days and simple dates, plus one age chunk.',2,
+         'Keep the two Korean number systems explicit; this unit focuses on useful fixed patterns rather than full mastery.',
+         'کره‌ای دو دستگاه عددی دارد؛ اینجا فقط الگوهای ضروری شماره، قیمت و تاریخ را کاربردی تمرین کن.'
+  UNION ALL SELECT 75,'communication','simple-messages','prea1-ko-forms-signs','양식과 표지판',
+         'Read a few highly familiar form labels and public signs and fill a three-field form.',2,
+         'Functional Hangul reading moves from decoding blocks to completing a real task.',
+         'خواندن هانگول را به کار واقعی وصل کن: عنوان فرم، خروج و ورودی را تشخیص بده.'
+  UNION ALL SELECT 120,'communication','simple-messages','prea1-ko-real-world-gate','실생활 Pre-A1 확인',
+         'Complete tiny real-world tasks with personal speaking, form writing, listening, visual reading and repair.',2,
+         'The final gate checks task completion, not complete Hangul or grammar mastery.',
+         'در خروجی نهایی باید اطلاعات خودت را بگویی/بنویسی، اطلاعات کوتاه را بشنوی، نشانه را بخوانی و در صورت مشکل درخواست کمک کنی.'
+
   UNION ALL SELECT 110,'communication','simple-messages','prea1-ko-ready-for-a1','A1 준비 완료','Demonstrate A1 readiness by decoding simple Hangul, following tiny supported audio, introducing yourself and repairing a misunderstanding.',2,'The exit gate checks functional readiness and script decoding, not complete Hangul mastery or grammar analysis.','برای ورود به A1 لازم نیست همهٔ قواعد آوایی هانگول را بلد باشی؛ باید بلوک‌های ساده را بخوانی، عبارت‌های پایه را بفهمی و وقتی گیر کردی درخواست معنی یا تکرار کنی.'
 ) u
 JOIN courses c ON c.slug='fa-ko-kr'

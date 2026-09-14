@@ -1,0 +1,515 @@
+{
+  "batch_id": "de-de-prea1-de-real-life-numbers-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-de-real-life-numbers",
+  "generator": "gpt-5.6-sol:cefr-prea1-real-world-upgrade-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-real-life-numbers_n11",
+      "data": {
+        "slug": "prea1_de_de-real-life-numbers_n11",
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "elf"
+        },
+        "translations": {
+          "fa": "یازده"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-real-life-numbers_n15",
+      "data": {
+        "slug": "prea1_de_de-real-life-numbers_n15",
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "fünfzehn"
+        },
+        "translations": {
+          "fa": "پانزده"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-real-life-numbers_n20",
+      "data": {
+        "slug": "prea1_de_de-real-life-numbers_n20",
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "zwanzig"
+        },
+        "translations": {
+          "fa": "بیست"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-real-life-numbers_phone_q",
+      "data": {
+        "slug": "prea1_de_de-real-life-numbers_phone_q",
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "Wie ist deine Telefonnummer?"
+        },
+        "translations": {
+          "fa": "شماره تلفنت چنده؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-real-life-numbers_price_q",
+      "data": {
+        "slug": "prea1_de_de-real-life-numbers_price_q",
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "de": "Wie viel kostet das?"
+        },
+        "translations": {
+          "fa": "این چقدر قیمت دارد؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-real-life-numbers_day",
+      "data": {
+        "slug": "prea1_de_de-real-life-numbers_day",
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "de": "Montag"
+        },
+        "translations": {
+          "fa": "دوشنبه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-real-life-numbers_date",
+      "data": {
+        "slug": "prea1_de_de-real-life-numbers_date",
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "de": "fünfter Mai"
+        },
+        "translations": {
+          "fa": "پنجم مه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-real-life-numbers_n11",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "text": {
+          "de": "elf"
+        },
+        "translations": {
+          "fa": "یازده"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-real-life-numbers_n15",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "text": {
+          "de": "fünfzehn"
+        },
+        "translations": {
+          "fa": "پانزده"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-real-life-numbers_n20",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "text": {
+          "de": "zwanzig"
+        },
+        "translations": {
+          "fa": "بیست"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-real-life-numbers_phone",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "text": {
+          "de": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun."
+        },
+        "translations": {
+          "fa": "۰۹۱۲، ۳۴۵، ۶۷۸۹."
+        },
+        "intent": "give_phone_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-real-life-numbers_price",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "text": {
+          "de": "Fünf Euro."
+        },
+        "translations": {
+          "fa": "پنج یورو."
+        },
+        "intent": "state_price",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-real-life-numbers_day",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "text": {
+          "de": "Montag"
+        },
+        "translations": {
+          "fa": "دوشنبه"
+        },
+        "intent": "state_day",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-real-life-numbers_date",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "text": {
+          "de": "fünfter Mai"
+        },
+        "translations": {
+          "fa": "پنجم مه"
+        },
+        "intent": "state_date",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_de_de-real-life-numbers_phone",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "title": "A phone number",
+        "setting": "registration_desk",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Lea",
+          "Emil"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Lea",
+            "text": "Wie ist deine Telefonnummer?",
+            "translation_fa": "شماره تلفنت چنده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emil",
+            "text": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun.",
+            "translation_fa": "۰۹۱۲، ۳۴۵، ۶۷۸۹."
+          },
+          {
+            "order": 3,
+            "speaker": "Lea",
+            "text": "Noch einmal, bitte.",
+            "translation_fa": "یک بار دیگر، لطفاً."
+          },
+          {
+            "order": 4,
+            "speaker": "Emil",
+            "text": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun.",
+            "translation_fa": "۰۹۱۲، ۳۴۵، ۶۷۸۹."
+          }
+        ],
+        "communication_outcome": "information_exchanged",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_de_de-real-life-numbers_price_day",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "title": "Price and day",
+        "setting": "shop",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Sofia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Wie viel kostet das?",
+            "translation_fa": "این چقدر قیمت دارد؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Fünf Euro.",
+            "translation_fa": "پنج یورو."
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Montag",
+            "translation_fa": "دوشنبه"
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "fünfter Mai",
+            "translation_fa": "پنجم مه"
+          }
+        ],
+        "communication_outcome": "information_exchanged",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-real-life-numbers_number_listen",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عدد را شنیدی؟",
+          "audio_text": "fünfzehn"
+        },
+        "options": [
+          "elf",
+          "fünfzehn",
+          "zwanzig",
+          "Montag"
+        ],
+        "answer": {
+          "value": "fünfzehn"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این شکل گفتاری عدد پانزده است.",
+          "model_answer": "fünfzehn",
+          "retry_tip_fa": "دوباره گوش کن و فقط اطلاعات هدف را پیدا کن.",
+          "transcript_en": "fünfzehn"
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-real-life-numbers_phone_speak",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "شمارهٔ نمونه را شمرده و واضح بگو.",
+          "value": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun."
+        },
+        "answer": {
+          "expected_text": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "شماره تلفن در مکالمه واقعی معمولاً رقم‌به‌رقم یا در گروه‌های کوتاه گفته می‌شود.",
+          "model_answer": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun.",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-real-life-numbers_price_choice",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "کدام پاسخ یک قیمت است؟",
+          "value": "Fünf Euro."
+        },
+        "options": [
+          "Fünf Euro.",
+          "Montag",
+          "fünfter Mai",
+          "Ich komme aus Iran."
+        ],
+        "answer": {
+          "value": "Fünf Euro."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این عبارت قیمت را بیان می‌کند.",
+          "model_answer": "Fünf Euro.",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-real-life-numbers_day_choice",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "کدام گزینه نام یک روز است؟",
+          "value": "Montag"
+        },
+        "options": [
+          "Montag",
+          "fünfzehn",
+          "Fünf Euro.",
+          "AUSGANG"
+        ],
+        "answer": {
+          "value": "Montag"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این واژه نام روز هفته است.",
+          "model_answer": "Montag",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-real-life-numbers_price_speak",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "قیمت نمونه را با صدای بلند بگو.",
+          "value": "Fünf Euro."
+        },
+        "answer": {
+          "expected_text": "Fünf Euro."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "هدف، گرفتن و گفتن یک قیمت خیلی ساده است.",
+          "model_answer": "Fünf Euro.",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_de_de-real-life-numbers",
+      "data": {
+        "lesson_key": "prea1-de-de-real-life-numbers-02",
+        "slug": "g-de-prea1-de-real-life-numbers",
+        "title": "Numbers as information",
+        "rule_summary": "At Pre-A1, numbers are practiced inside useful information such as phone numbers, prices and dates.",
+        "explanation": {
+          "fa": "عددها را فقط فهرست حفظ نکن؛ آن‌ها را داخل شماره تلفن، قیمت، روز و تاریخ تشخیص بده و استفاده کن."
+        },
+        "examples": [
+          {
+            "de": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun.",
+            "fa": "۰۹۱۲، ۳۴۵، ۶۷۸۹."
+          },
+          {
+            "de": "Fünf Euro.",
+            "fa": "پنج یورو."
+          },
+          {
+            "de": "fünfter Mai",
+            "fa": "پنجم مه"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "audio_examples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "batch_id": "ko-kr-prea1-ko-real-world-gate-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-ko-real-world-gate",
+  "generator": "gpt-5.6-sol:cefr-prea1-real-world-upgrade-v1",
+  "items": [
+    {
+      "kind": "dialogue",
+      "external_id": "d_ko_ko-real-world-gate_meet",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-01",
+        "title": "Meet and give real information",
+        "setting": "community",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "하나",
+          "도윤"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "하나",
+            "text": "이름이 뭐예요?",
+            "translation_fa": "اسمتان چیست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "도윤",
+            "text": "저는 사라예요.",
+            "translation_fa": "من سارا هستم."
+          },
+          {
+            "order": 3,
+            "speaker": "하나",
+            "text": "어디에서 왔어요?",
+            "translation_fa": "از کجا آمده‌اید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "도윤",
+            "text": "저는 이란에서 왔어요.",
+            "translation_fa": "من از ایران آمده‌ام."
+          },
+          {
+            "order": 5,
+            "speaker": "하나",
+            "text": "잘 지내요?",
+            "translation_fa": "خوب هستید؟"
+          },
+          {
+            "order": 6,
+            "speaker": "도윤",
+            "text": "네, 잘 지내요.",
+            "translation_fa": "بله، خوبم."
+          }
+        ],
+        "communication_outcome": "personal_information_exchanged",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_ko_ko-real-world-gate_public_task",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-02",
+        "title": "Complete a tiny public task",
+        "setting": "service_desk",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "유나",
+          "태호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "유나",
+            "text": "전화번호가 뭐예요?",
+            "translation_fa": "شماره تلفنتان چیست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "태호",
+            "text": "공일공, 일이삼사, 오육칠팔이에요.",
+            "translation_fa": "۰۱۰، ۱۲۳۴، ۵۶۷۸ است."
+          },
+          {
+            "order": 3,
+            "speaker": "유나",
+            "text": "얼마예요?",
+            "translation_fa": "چقدر است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "태호",
+            "text": "오천 원이에요.",
+            "translation_fa": "پنج هزار وون است."
+          },
+          {
+            "order": 5,
+            "speaker": "태호",
+            "text": "출구가 어디예요?",
+            "translation_fa": "خروج کجاست؟"
+          },
+          {
+            "order": 6,
+            "speaker": "유나",
+            "text": "저기예요.",
+            "translation_fa": "آنجاست."
+          }
+        ],
+        "communication_outcome": "service_task_completed",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ko_ko-real-world-gate_personal_speaking",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "بدون نقشِ کاراکتر، با اطلاعات خودت خیلی کوتاه معرفی شو: نام، کشور/مبدأ، و حالت. لازم نیست عین نمونه بگویی.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "저는 사라예요. 이란에서 왔어요. 잘 지내요.",
+          "required_points_fa": [
+            "نام خودت",
+            "کشور یا مبدأ",
+            "یک حالت ساده"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 60,
+              "descriptors_fa": {
+                "0": "اطلاعات خواسته‌شده را منتقل نمی‌کند.",
+                "1": "فقط یک بخش را منتقل می‌کند.",
+                "2": "بیشتر بخش‌ها را به‌صورت قابل‌فهم منتقل می‌کند.",
+                "3": "همهٔ بخش‌های اصلی را کوتاه و قابل‌فهم منتقل می‌کند."
+              }
+            },
+            {
+              "id": "clarity",
+              "label_fa": "قابل‌فهم بودن",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "فقط بخش کوچکی قابل‌فهم است.",
+                "2": "با چند خطای ساده همچنان قابل‌فهم است.",
+                "3": "برای سطح Pre-A1 روشن و قابل‌فهم است."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "پاسخ شخصی تو لازم نیست عین نمونه باشد؛ مهم انتقال اطلاعات خواسته‌شده و قابل‌فهم بودن است.",
+          "model_answer": "저는 사라예요. 이란에서 왔어요. 잘 지내요.",
+          "retry_tip_fa": "از الگو کمک بگیر اما اطلاعات واقعی خودت را جایگزین کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ko_ko-real-world-gate_personal_form",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-02",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "فرم کوتاه را با اطلاعات خودت پر کن: نام، کشور و شماره تلفن. پاسخ آزاد است و exact-match نیست.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "이름: 사라\n나라: 이란\n전화번호: 0912 345 6789",
+          "required_points_fa": [
+            "نام",
+            "کشور",
+            "شماره تلفن"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 60,
+              "descriptors_fa": {
+                "0": "اطلاعات خواسته‌شده را منتقل نمی‌کند.",
+                "1": "فقط یک بخش را منتقل می‌کند.",
+                "2": "بیشتر بخش‌ها را به‌صورت قابل‌فهم منتقل می‌کند.",
+                "3": "همهٔ بخش‌های اصلی را کوتاه و قابل‌فهم منتقل می‌کند."
+              }
+            },
+            {
+              "id": "clarity",
+              "label_fa": "قابل‌فهم بودن",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "فقط بخش کوچکی قابل‌فهم است.",
+                "2": "با چند خطای ساده همچنان قابل‌فهم است.",
+                "3": "برای سطح Pre-A1 روشن و قابل‌فهم است."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "پاسخ شخصی تو لازم نیست عین نمونه باشد؛ مهم انتقال اطلاعات خواسته‌شده و قابل‌فهم بودن است.",
+          "model_answer": "이름: 사라\n나라: 이란\n전화번호: 0912 345 6789",
+          "retry_tip_fa": "از الگو کمک بگیر اما اطلاعات واقعی خودت را جایگزین کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ko_ko-real-world-gate_phone_listen",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "از صوت، شماره تلفن را تشخیص بده.",
+          "audio_text": "공일공, 일이삼사, 오육칠팔이에요."
+        },
+        "options": [
+          "공일공, 일이삼사, 오육칠팔이에요.",
+          "오천 원이에요.",
+          "스무 살이에요.",
+          "오월 오일"
+        ],
+        "answer": {
+          "value": "공일공, 일이삼사, 오육칠팔이에요."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این پاسخ یک شماره تلفن را منتقل می‌کند.",
+          "model_answer": "공일공, 일이삼사, 오육칠팔이에요.",
+          "retry_tip_fa": "دوباره گوش کن و فقط اطلاعات هدف را پیدا کن.",
+          "transcript_en": "공일공, 일이삼사, 오육칠팔이에요."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ko_ko-real-world-gate_visual_gate",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "در یک ساختمان این نشانه را می‌بینی. برای خروج دنبال کدام واژه می‌گردی؟",
+          "value": "출구",
+          "visual_asset": {
+            "kind": "icon",
+            "semantic": "exit",
+            "fallback": "🚪➡️"
+          },
+          "requires_visual_support": true
+        },
+        "options": [
+          "출구",
+          "입구",
+          "월요일",
+          "이름"
+        ],
+        "answer": {
+          "value": "출구"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "هدف، استفاده از خواندن برای انجام یک کار واقعی است.",
+          "model_answer": "출구",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ko_ko-real-world-gate_repair_choice",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "اگر جمله را نفهمیدی، کدام درخواست کمک می‌کند مکالمه ادامه پیدا کند؟",
+          "value": "다시 말해 주세요."
+        },
+        "options": [
+          "다시 말해 주세요.",
+          "안녕하세요!",
+          "오천 원이에요.",
+          "월요일"
+        ],
+        "answer": {
+          "value": "다시 말해 주세요."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "درخواست تکرار یک راهبرد ارتباطی واقعی است.",
+          "model_answer": "다시 말해 주세요.",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_ko_ko-real-world-gate_repair_speak",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "اگر نفهمیدی، درخواست تکرار را با صدای بلند بگو.",
+          "value": "다시 말해 주세요."
+        },
+        "answer": {
+          "expected_text": "다시 말해 주세요."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "هدف این است که بتوانی هنگام مشکل، مکالمه را زنده نگه داری.",
+          "model_answer": "다시 말해 주세요.",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_ko_ko-real-world-gate",
+      "data": {
+        "lesson_key": "prea1-ko-ko-real-world-gate-02",
+        "slug": "g-ko-prea1-ko-real-world-gate",
+        "title": "A real Pre-A1 exit",
+        "rule_summary": "The final gate checks task completion with personal information, listening, visual reading, writing and repair rather than imitation alone.",
+        "explanation": {
+          "fa": "این خروجی نهایی فقط حفظ‌کردن جمله نیست. باید با اطلاعات خودت چیزی بگویی/بنویسی، یک اطلاعات شنیداری را بگیری، از نشانه استفاده کنی و اگر نفهمیدی درخواست کمک کنی."
+        },
+        "examples": [
+          {
+            "ko": "저는 사라예요. 이란에서 왔어요. 잘 지내요.",
+            "fa": "نمونهٔ معرفی شخصی"
+          },
+          {
+            "ko": "다시 말해 주세요.",
+            "fa": "لطفاً دوباره بگویید."
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "audio_examples": true
+      }
+    }
+  ]
+}

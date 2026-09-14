@@ -1,0 +1,515 @@
+{
+  "batch_id": "tr-tr-prea1-tr-real-life-numbers-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-tr-real-life-numbers",
+  "generator": "gpt-5.6-sol:cefr-prea1-real-world-upgrade-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_tr_tr-real-life-numbers_n11",
+      "data": {
+        "slug": "prea1_tr_tr-real-life-numbers_n11",
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "tr": "on bir"
+        },
+        "translations": {
+          "fa": "یازده"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_tr_tr-real-life-numbers_n15",
+      "data": {
+        "slug": "prea1_tr_tr-real-life-numbers_n15",
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "tr": "on beş"
+        },
+        "translations": {
+          "fa": "پانزده"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_tr_tr-real-life-numbers_n20",
+      "data": {
+        "slug": "prea1_tr_tr-real-life-numbers_n20",
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "tr": "yirmi"
+        },
+        "translations": {
+          "fa": "بیست"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_tr_tr-real-life-numbers_phone_q",
+      "data": {
+        "slug": "prea1_tr_tr-real-life-numbers_phone_q",
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "tr": "Telefon numaran ne?"
+        },
+        "translations": {
+          "fa": "شماره تلفنت چنده؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_tr_tr-real-life-numbers_price_q",
+      "data": {
+        "slug": "prea1_tr_tr-real-life-numbers_price_q",
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "tr": "Bu ne kadar?"
+        },
+        "translations": {
+          "fa": "این چنده؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_tr_tr-real-life-numbers_day",
+      "data": {
+        "slug": "prea1_tr_tr-real-life-numbers_day",
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "tr": "Pazartesi"
+        },
+        "translations": {
+          "fa": "دوشنبه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_tr_tr-real-life-numbers_date",
+      "data": {
+        "slug": "prea1_tr_tr-real-life-numbers_date",
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "tr": "beş Mayıs"
+        },
+        "translations": {
+          "fa": "پنجم مه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_tr_tr-real-life-numbers_n11",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "text": {
+          "tr": "on bir"
+        },
+        "translations": {
+          "fa": "یازده"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_tr_tr-real-life-numbers_n15",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "text": {
+          "tr": "on beş"
+        },
+        "translations": {
+          "fa": "پانزده"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_tr_tr-real-life-numbers_n20",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "text": {
+          "tr": "yirmi"
+        },
+        "translations": {
+          "fa": "بیست"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_tr_tr-real-life-numbers_phone",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "text": {
+          "tr": "Sıfır dokuz bir iki, üç dört beş, altı yedi sekiz dokuz."
+        },
+        "translations": {
+          "fa": "۰۹۱۲، ۳۴۵، ۶۷۸۹."
+        },
+        "intent": "give_phone_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_tr_tr-real-life-numbers_price",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "text": {
+          "tr": "Beş lira."
+        },
+        "translations": {
+          "fa": "پنج لیر."
+        },
+        "intent": "state_price",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_tr_tr-real-life-numbers_day",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "text": {
+          "tr": "Pazartesi"
+        },
+        "translations": {
+          "fa": "دوشنبه"
+        },
+        "intent": "state_day",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_tr_tr-real-life-numbers_date",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "text": {
+          "tr": "beş Mayıs"
+        },
+        "translations": {
+          "fa": "پنجم مه"
+        },
+        "intent": "state_date",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_tr_tr-real-life-numbers_phone",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "title": "A phone number",
+        "setting": "registration_desk",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Deniz",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Telefon numaran ne?",
+            "translation_fa": "شماره تلفنت چنده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Sıfır dokuz bir iki, üç dört beş, altı yedi sekiz dokuz.",
+            "translation_fa": "۰۹۱۲، ۳۴۵، ۶۷۸۹."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Tekrar eder misiniz?",
+            "translation_fa": "دوباره می‌گویید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Sıfır dokuz bir iki, üç dört beş, altı yedi sekiz dokuz.",
+            "translation_fa": "۰۹۱۲، ۳۴۵، ۶۷۸۹."
+          }
+        ],
+        "communication_outcome": "information_exchanged",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_tr_tr-real-life-numbers_price_day",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "title": "Price and day",
+        "setting": "shop",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Zeynep",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Zeynep",
+            "text": "Bu ne kadar?",
+            "translation_fa": "این چنده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Beş lira.",
+            "translation_fa": "پنج لیر."
+          },
+          {
+            "order": 3,
+            "speaker": "Zeynep",
+            "text": "Pazartesi",
+            "translation_fa": "دوشنبه"
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "beş Mayıs",
+            "translation_fa": "پنجم مه"
+          }
+        ],
+        "communication_outcome": "information_exchanged",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_tr_tr-real-life-numbers_number_listen",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عدد را شنیدی؟",
+          "audio_text": "on beş"
+        },
+        "options": [
+          "on bir",
+          "on beş",
+          "yirmi",
+          "Pazartesi"
+        ],
+        "answer": {
+          "value": "on beş"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این شکل گفتاری عدد پانزده است.",
+          "model_answer": "on beş",
+          "retry_tip_fa": "دوباره گوش کن و فقط اطلاعات هدف را پیدا کن.",
+          "transcript_en": "on beş"
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_tr_tr-real-life-numbers_phone_speak",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "شمارهٔ نمونه را شمرده و واضح بگو.",
+          "value": "Sıfır dokuz bir iki, üç dört beş, altı yedi sekiz dokuz."
+        },
+        "answer": {
+          "expected_text": "Sıfır dokuz bir iki, üç dört beş, altı yedi sekiz dokuz."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "شماره تلفن در مکالمه واقعی معمولاً رقم‌به‌رقم یا در گروه‌های کوتاه گفته می‌شود.",
+          "model_answer": "Sıfır dokuz bir iki, üç dört beş, altı yedi sekiz dokuz.",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_tr_tr-real-life-numbers_price_choice",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "کدام پاسخ یک قیمت است؟",
+          "value": "Beş lira."
+        },
+        "options": [
+          "Beş lira.",
+          "Pazartesi",
+          "beş Mayıs",
+          "İranlıyım."
+        ],
+        "answer": {
+          "value": "Beş lira."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این عبارت قیمت را بیان می‌کند.",
+          "model_answer": "Beş lira.",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_tr_tr-real-life-numbers_day_choice",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "کدام گزینه نام یک روز است؟",
+          "value": "Pazartesi"
+        },
+        "options": [
+          "Pazartesi",
+          "on beş",
+          "Beş lira.",
+          "ÇIKIŞ"
+        ],
+        "answer": {
+          "value": "Pazartesi"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این واژه نام روز هفته است.",
+          "model_answer": "Pazartesi",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_tr_tr-real-life-numbers_price_speak",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "قیمت نمونه را با صدای بلند بگو.",
+          "value": "Beş lira."
+        },
+        "answer": {
+          "expected_text": "Beş lira."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "هدف، گرفتن و گفتن یک قیمت خیلی ساده است.",
+          "model_answer": "Beş lira.",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_tr_tr-real-life-numbers",
+      "data": {
+        "lesson_key": "prea1-tr-tr-real-life-numbers-02",
+        "slug": "g-tr-prea1-tr-real-life-numbers",
+        "title": "Numbers as information",
+        "rule_summary": "At Pre-A1, numbers are practiced inside useful information such as phone numbers, prices and dates.",
+        "explanation": {
+          "fa": "عددها را فقط فهرست حفظ نکن؛ آن‌ها را داخل شماره تلفن، قیمت، روز و تاریخ تشخیص بده و استفاده کن."
+        },
+        "examples": [
+          {
+            "tr": "Sıfır dokuz bir iki, üç dört beş, altı yedi sekiz dokuz.",
+            "fa": "۰۹۱۲، ۳۴۵، ۶۷۸۹."
+          },
+          {
+            "tr": "Beş lira.",
+            "fa": "پنج لیر."
+          },
+          {
+            "tr": "beş Mayıs",
+            "fa": "پنجم مه"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "audio_examples": true
+      }
+    }
+  ]
+}

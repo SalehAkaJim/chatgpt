@@ -1,21 +1,228 @@
 {
-  "batch_id":"de-de-prea1-meaning-help-v1",
-  "course":"fa-de-de",
-  "learner_language":"fa",
-  "learner_variant":"fa-IR",
-  "target_language":"de",
-  "target_variant":"de-DE",
-  "cefr":"Pre-A1",
-  "curriculum_unit":"prea1-de-meaning-help",
-  "generator":"gpt-5.6-sol:zero-learner-foundation-v1",
-  "items":[
-    {"kind":"concept","external_id":"c_de_was_bedeutet_das","data":{"slug":"prea1_de_was_bedeutet_das","lesson_key":"prea1-de-meaning-help-01","concept_type":"functional","forms":{"de":"Was bedeutet das?"},"translations":{"fa":"این یعنی چه؟"},"cefr":"Pre-A1","topic":"requests","status":"validated"}},
-    {"kind":"utterance","external_id":"u_de_was_bedeutet_das","data":{"lesson_key":"prea1-de-meaning-help-01","text":{"de":"Was bedeutet das?"},"translations":{"fa":"این یعنی چه؟"},"intent":"ask_meaning","concept_refs":["prea1_de_was_bedeutet_das"],"cefr":"Pre-A1","topic":"requests","register":"polite","status":"validated"}},
-    {"kind":"concept","external_id":"c_de_wie_bitte","data":{"slug":"prea1_de_wie_bitte","lesson_key":"prea1-de-meaning-help-01","concept_type":"functional","forms":{"de":"Wie bitte?"},"translations":{"fa":"ببخشید؟ / دوباره می‌گویید؟"},"cefr":"Pre-A1","topic":"requests","status":"validated"}},
-    {"kind":"utterance","external_id":"u_de_wie_bitte","data":{"lesson_key":"prea1-de-meaning-help-01","text":{"de":"Wie bitte?"},"translations":{"fa":"ببخشید؟ / دوباره می‌گویید؟"},"intent":"ask_repeat_short","concept_refs":["prea1_de_wie_bitte"],"cefr":"Pre-A1","topic":"requests","register":"polite","status":"validated"}},
-    {"kind":"dialogue","external_id":"d_de_meaning_help","data":{"lesson_key":"prea1-de-meaning-help-01","title":"Ein neues Wort","setting":"language_class","cefr":"Pre-A1","topic":"requests","characters":["Sofia","Noah"],"turns":[{"order":1,"speaker":"Sofia","text":"Das ist ein Buch.","translation_fa":"این یک کتاب است."},{"order":2,"speaker":"Noah","text":"Wie bitte?","translation_fa":"ببخشید؟"},{"order":3,"speaker":"Sofia","text":"Ein Buch.","translation_fa":"یک کتاب."},{"order":4,"speaker":"Noah","text":"Was bedeutet das?","translation_fa":"این یعنی چه؟"}],"status":"validated"}},
-    {"kind":"exercise","external_id":"ex_de_meaning_choice","data":{"lesson_key":"prea1-de-meaning-help-01","exercise_type":"multiple_choice","prompt":{"instruction_fa":"اگر معنی چیزی را نمی‌دانی، کدام عبارت مناسب است؟","value":"meaning"},"options":["Was bedeutet das?","Danke.","Guten Morgen.","Tschüs."],"answer":{"value":"Was bedeutet das?"},"difficulty":1,"cefr":"Pre-A1","status":"validated","feedback":{"explanation_fa":"Was bedeutet das? یعنی «این یعنی چه؟».","model_answer":"Was bedeutet das?","retry_tip_fa":"عبارت پرسیدن معنی را انتخاب کن."}}},
-    {"kind":"exercise","external_id":"ex_de_wie_bitte_listen","data":{"lesson_key":"prea1-de-meaning-help-01","exercise_type":"listening","prompt":{"instruction_fa":"کدام عبارت را شنیدی؟","audio_text":"Wie bitte?"},"options":["Wie bitte?","Danke.","Hallo.","Nein."],"answer":{"value":"Wie bitte?"},"difficulty":1,"cefr":"Pre-A1","status":"validated","feedback":{"explanation_fa":"Wie bitte? یک درخواست کوتاه و مؤدبانه برای تکرار است.","model_answer":"Wie bitte?","retry_tip_fa":"دوباره گوش کن.","transcript_en":"Wie bitte?"}}},
-    {"kind":"exercise","external_id":"ex_de_meaning_speak","data":{"lesson_key":"prea1-de-meaning-help-01","exercise_type":"speaking","prompt":{"instruction_fa":"بگو: این یعنی چه؟","value":"Was bedeutet das?"},"answer":{"expected_text":"Was bedeutet das?"},"difficulty":1,"cefr":"Pre-A1","status":"validated","feedback":{"explanation_fa":"فعلاً این جمله را یک تکهٔ آماده یاد بگیر.","model_answer":"Was bedeutet das?","retry_tip_fa":"کل عبارت را پیوسته تکرار کن."}}}
+  "batch_id": "de-de-prea1-meaning-help-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-de-meaning-help",
+  "generator": "gpt-5.6-sol:zero-learner-foundation-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_de_was_bedeutet_das",
+      "data": {
+        "slug": "prea1_de_was_bedeutet_das",
+        "lesson_key": "prea1-de-meaning-help-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "Was bedeutet das?"
+        },
+        "translations": {
+          "fa": "این یعنی چه؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "requests",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_was_bedeutet_das",
+      "data": {
+        "lesson_key": "prea1-de-meaning-help-01",
+        "text": {
+          "de": "Was bedeutet das?"
+        },
+        "translations": {
+          "fa": "این یعنی چه؟"
+        },
+        "intent": "ask_meaning",
+        "concept_refs": [
+          "prea1_de_was_bedeutet_das"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_wie_bitte",
+      "data": {
+        "slug": "prea1_de_wie_bitte",
+        "lesson_key": "prea1-de-meaning-help-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "Wie bitte?"
+        },
+        "translations": {
+          "fa": "ببخشید؟ / دوباره می‌گویید؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "requests",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_wie_bitte",
+      "data": {
+        "lesson_key": "prea1-de-meaning-help-01",
+        "text": {
+          "de": "Wie bitte?"
+        },
+        "translations": {
+          "fa": "ببخشید؟ / دوباره می‌گویید؟"
+        },
+        "intent": "ask_repeat_short",
+        "concept_refs": [
+          "prea1_de_wie_bitte"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_de_meaning_help",
+      "data": {
+        "lesson_key": "prea1-de-meaning-help-01",
+        "title": "Ein neues Wort",
+        "setting": "language_class",
+        "cefr": "Pre-A1",
+        "topic": "requests",
+        "characters": [
+          "Sofia",
+          "Noah"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Das ist ein Buch.",
+            "translation_fa": "این یک کتاب است."
+          },
+          {
+            "order": 2,
+            "speaker": "Noah",
+            "text": "Wie bitte?",
+            "translation_fa": "ببخشید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Sofia",
+            "text": "Ein Buch.",
+            "translation_fa": "یک کتاب."
+          },
+          {
+            "order": 4,
+            "speaker": "Noah",
+            "text": "Was bedeutet das?",
+            "translation_fa": "این یعنی چه؟"
+          },
+          {
+            "order": 5,
+            "speaker": "Sofia",
+            "text": "Buch. Das hier.",
+            "translation_fa": "Buch یعنی کتاب؛ همین چیزی که اینجاست."
+          },
+          {
+            "order": 6,
+            "speaker": "Noah",
+            "text": "Ah, ein Buch. Danke.",
+            "translation_fa": "آها، یک کتاب. ممنون."
+          }
+        ],
+        "status": "validated",
+        "communication_outcome": "meaning_resolved"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_meaning_choice",
+      "data": {
+        "lesson_key": "prea1-de-meaning-help-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "اگر معنی چیزی را نمی‌دانی، کدام عبارت مناسب است؟",
+          "value": "meaning"
+        },
+        "options": [
+          "Was bedeutet das?",
+          "Danke.",
+          "Guten Morgen.",
+          "Tschüs."
+        ],
+        "answer": {
+          "value": "Was bedeutet das?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "Was bedeutet das? یعنی «این یعنی چه؟».",
+          "model_answer": "Was bedeutet das?",
+          "retry_tip_fa": "عبارت پرسیدن معنی را انتخاب کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_wie_bitte_listen",
+      "data": {
+        "lesson_key": "prea1-de-meaning-help-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عبارت را شنیدی؟",
+          "audio_text": "Wie bitte?"
+        },
+        "options": [
+          "Wie bitte?",
+          "Danke.",
+          "Hallo.",
+          "Nein."
+        ],
+        "answer": {
+          "value": "Wie bitte?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "Wie bitte? یک درخواست کوتاه و مؤدبانه برای تکرار است.",
+          "model_answer": "Wie bitte?",
+          "retry_tip_fa": "دوباره گوش کن.",
+          "transcript_en": "Wie bitte?"
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_meaning_speak",
+      "data": {
+        "lesson_key": "prea1-de-meaning-help-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "بگو: این یعنی چه؟",
+          "value": "Was bedeutet das?"
+        },
+        "answer": {
+          "expected_text": "Was bedeutet das?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "فعلاً این جمله را یک تکهٔ آماده یاد بگیر.",
+          "model_answer": "Was bedeutet das?",
+          "retry_tip_fa": "کل عبارت را پیوسته تکرار کن."
+        }
+      }
+    }
   ]
 }

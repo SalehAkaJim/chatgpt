@@ -1,0 +1,448 @@
+{
+  "batch_id": "de-de-prea1-de-forms-signs-v1",
+  "course": "fa-de-de",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-de-forms-signs",
+  "generator": "gpt-5.6-sol:cefr-prea1-real-world-upgrade-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-forms-signs_field1",
+      "data": {
+        "slug": "prea1_de_de-forms-signs_field1",
+        "lesson_key": "prea1-de-de-forms-signs-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "Name"
+        },
+        "translations": {
+          "fa": "نام"
+        },
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-forms-signs_field2",
+      "data": {
+        "slug": "prea1_de_de-forms-signs_field2",
+        "lesson_key": "prea1-de-de-forms-signs-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "Land"
+        },
+        "translations": {
+          "fa": "کشور"
+        },
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-forms-signs_field3",
+      "data": {
+        "slug": "prea1_de_de-forms-signs_field3",
+        "lesson_key": "prea1-de-de-forms-signs-01",
+        "concept_type": "functional",
+        "forms": {
+          "de": "Telefon"
+        },
+        "translations": {
+          "fa": "تلفن"
+        },
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-forms-signs_exit",
+      "data": {
+        "slug": "prea1_de_de-forms-signs_exit",
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "concept_type": "functional",
+        "forms": {
+          "de": "AUSGANG"
+        },
+        "translations": {
+          "fa": "خروج"
+        },
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_de_de-forms-signs_open",
+      "data": {
+        "slug": "prea1_de_de-forms-signs_open",
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "concept_type": "functional",
+        "forms": {
+          "de": "OFFEN"
+        },
+        "translations": {
+          "fa": "باز"
+        },
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-forms-signs_name_field",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-01",
+        "text": {
+          "de": "Name"
+        },
+        "translations": {
+          "fa": "نام"
+        },
+        "intent": "read_form_field",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-forms-signs_exit_q",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "text": {
+          "de": "Wo ist der Ausgang?"
+        },
+        "translations": {
+          "fa": "خروج کجاست؟"
+        },
+        "intent": "ask_exit",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_de_de-forms-signs_exit_a",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "text": {
+          "de": "Dort."
+        },
+        "translations": {
+          "fa": "آنجاست."
+        },
+        "intent": "point_exit",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_de_de-forms-signs_form",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-01",
+        "title": "A very short form",
+        "setting": "registration_desk",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Nina",
+          "Max"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nina",
+            "text": "Name?",
+            "translation_fa": "نام؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Max",
+            "text": "Ich heiße Sara.",
+            "translation_fa": "اسم من ساراست."
+          },
+          {
+            "order": 3,
+            "speaker": "Nina",
+            "text": "Land?",
+            "translation_fa": "کشور؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Max",
+            "text": "Ich komme aus Iran.",
+            "translation_fa": "من از ایران می‌آیم."
+          }
+        ],
+        "communication_outcome": "form_information_supplied",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_de_de-forms-signs_sign",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "title": "Find the exit",
+        "setting": "public_building",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Clara",
+          "Leon"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Clara",
+            "text": "Wo ist der Ausgang?",
+            "translation_fa": "خروج کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Leon",
+            "text": "Dort.",
+            "translation_fa": "آنجاست."
+          },
+          {
+            "order": 3,
+            "speaker": "Clara",
+            "text": "Noch einmal, bitte.",
+            "translation_fa": "یک بار دیگر، لطفاً."
+          },
+          {
+            "order": 4,
+            "speaker": "Leon",
+            "text": "Dort.",
+            "translation_fa": "آنجاست."
+          }
+        ],
+        "communication_outcome": "destination_found",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-forms-signs_visual_exit",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "به نشانه نگاه کن. کدام واژه/عبارت مفهوم «خروج» را می‌دهد؟",
+          "value": "AUSGANG",
+          "visual_asset": {
+            "kind": "icon",
+            "semantic": "exit",
+            "fallback": "🚪➡️"
+          },
+          "requires_visual_support": true
+        },
+        "options": [
+          "AUSGANG",
+          "OFFEN",
+          "Name",
+          "Montag"
+        ],
+        "answer": {
+          "value": "AUSGANG"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این نشانه خروج را نشان می‌دهد.",
+          "model_answer": "AUSGANG",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-forms-signs_field_listen",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عنوان فرم را شنیدی؟",
+          "audio_text": "Telefon"
+        },
+        "options": [
+          "Name",
+          "Land",
+          "Telefon",
+          "AUSGANG"
+        ],
+        "answer": {
+          "value": "Telefon"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این عنوان مربوط به شماره تلفن است.",
+          "model_answer": "Telefon",
+          "retry_tip_fa": "دوباره گوش کن و فقط اطلاعات هدف را پیدا کن.",
+          "transcript_en": "Telefon"
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-forms-signs_exit_speak",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "در یک ساختمان بپرس خروج کجاست.",
+          "value": "Wo ist der Ausgang?"
+        },
+        "answer": {
+          "expected_text": "Wo ist der Ausgang?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این سؤال در یک موقعیت واقعی مسیر‌یابی کاربرد دارد.",
+          "model_answer": "Wo ist der Ausgang?",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-forms-signs_form_write",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-01",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک فرم سه‌فیلدی را با اطلاعات خودت پر کن: نام، کشور، و شماره تلفن نمونه یا واقعی. لازم نیست قالب دقیق نمونه را کپی کنی.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Name: Sara\nLand: Iran\nTelefon: 0912 345 6789",
+          "required_points_fa": [
+            "نام",
+            "کشور",
+            "شماره تلفن"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 60,
+              "descriptors_fa": {
+                "0": "اطلاعات خواسته‌شده را منتقل نمی‌کند.",
+                "1": "فقط یک بخش را منتقل می‌کند.",
+                "2": "بیشتر بخش‌ها را به‌صورت قابل‌فهم منتقل می‌کند.",
+                "3": "همهٔ بخش‌های اصلی را کوتاه و قابل‌فهم منتقل می‌کند."
+              }
+            },
+            {
+              "id": "clarity",
+              "label_fa": "قابل‌فهم بودن",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "فقط بخش کوچکی قابل‌فهم است.",
+                "2": "با چند خطای ساده همچنان قابل‌فهم است.",
+                "3": "برای سطح Pre-A1 روشن و قابل‌فهم است."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "پاسخ شخصی تو لازم نیست عین نمونه باشد؛ مهم انتقال اطلاعات خواسته‌شده و قابل‌فهم بودن است.",
+          "model_answer": "Name: Sara\nLand: Iran\nTelefon: 0912 345 6789",
+          "retry_tip_fa": "از الگو کمک بگیر اما اطلاعات واقعی خودت را جایگزین کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_de_de-forms-signs_visual_open",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "این نشانه چه اطلاعاتی می‌دهد؟",
+          "value": "OFFEN",
+          "visual_asset": {
+            "kind": "sign",
+            "semantic": "open_or_entry",
+            "fallback": "🟢"
+          },
+          "requires_visual_support": true
+        },
+        "options": [
+          "OFFEN",
+          "AUSGANG",
+          "Montag",
+          "Land"
+        ],
+        "answer": {
+          "value": "OFFEN"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این واژه/نشانه وضعیت ورودی یا بازبودن را نشان می‌دهد.",
+          "model_answer": "OFFEN",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_de_de-forms-signs",
+      "data": {
+        "lesson_key": "prea1-de-de-forms-signs-02",
+        "slug": "g-de-prea1-de-forms-signs",
+        "title": "Read for a purpose",
+        "rule_summary": "Pre-A1 reading should help the learner do something simple: fill a field, recognize a sign or find a place.",
+        "explanation": {
+          "fa": "در این سطح لازم نیست متن بلند بخوانی؛ هدف این است که یک عنوان فرم یا نشانهٔ کاربردی را ببینی و کار درست را انجام بدهی."
+        },
+        "examples": [
+          {
+            "de": "AUSGANG",
+            "fa": "خروج"
+          },
+          {
+            "de": "Name",
+            "fa": "نام"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "audio_examples": true
+      }
+    }
+  ]
+}

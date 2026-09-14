@@ -61,6 +61,23 @@ FROM (
          'Combine greetings, names, a wellbeing phrase and a farewell in a tiny real conversation.',2,
          'A first conversation can be built from memorized chunks while preserving German word order.',
          'هدف این واحد روان‌کردن چند تکهٔ آشناست؛ هنوز لازم نیست همهٔ قواعد پشت جمله‌ها را توضیح بدهی.'
+  UNION ALL SELECT 25,'foundations','introductions','prea1-de-about-me','Über mich',
+         'Give very basic personal information about origin, age, feelings and family with short German chunks.',2,
+         'Personal-information chunks are used before case or verb analysis.',
+         'نام، مبدأ، سن و حال ساده را با تکه‌های آماده و قابل‌استفاده یاد بگیر.'
+  UNION ALL SELECT 35,'foundations','numbers','prea1-de-real-life-numbers','Zahlen im Alltag',
+         'Recognize and use small numbers in phone numbers, prices, days and simple dates.',2,
+         'Numbers are practiced as useful information, not only as a list.',
+         'عددها را داخل شماره تلفن، قیمت و تاریخ تمرین کن.'
+  UNION ALL SELECT 75,'communication','simple-messages','prea1-de-forms-signs','Formulare und Schilder',
+         'Read a few highly familiar form labels and public signs and fill a three-field form.',2,
+         'Functional reading and writing stay short and visually supported.',
+         'هدف خواندن برای انجام کار است: فیلد فرم را پیدا کن، علامت خروج را بشناس و اطلاعات پایه را بنویس.'
+  UNION ALL SELECT 120,'communication','simple-messages','prea1-de-real-world-gate','Pre-A1 im Alltag',
+         'Complete tiny real-world tasks with personal speaking, form writing, listening, visual reading and repair.',2,
+         'The final gate is task-based rather than imitation-only.',
+         'در آزمون نهایی باید با اطلاعات خودت کار واقعی خیلی کوچکی انجام بدهی، نه فقط جملهٔ نمونه را تکرار کنی.'
+
   UNION ALL SELECT 110,'communication','simple-messages','prea1-de-ready-for-a1','Bereit für A1',
          'Demonstrate readiness for A1 by recognizing core German script features, following tiny supported audio, introducing yourself and repairing a misunderstanding.',2,
          'The exit gate checks functional readiness rather than grammar analysis or perfect pronunciation.',
