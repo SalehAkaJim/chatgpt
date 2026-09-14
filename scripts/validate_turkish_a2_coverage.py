@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Validate cumulative Turkish A2 CEFR breadth from authored evidence and production.
 
-This is deliberately coverage-driven rather than count-driven. The human-authored
-coverage map identifies independent units that provide evidence for each CEFR
-communicative dimension; production checks verify those units really exist and
-that the level repeatedly exercises reception and independent output.
+Counts are evidence, never completion targets. The authored coverage map identifies
+independent units supporting each CEFR communicative dimension; production checks
+verify repeated reception and genuine rubric-based output across the level.
 """
 from __future__ import annotations
 
@@ -18,16 +17,8 @@ PROD_DIR = ROOT / "content/production/tr/A2"
 MAP_PATH = SPEC_DIR / "coverage-map.json"
 
 REQUIRED_DIMENSIONS = {
-    "reception",
-    "production",
-    "interaction",
-    "mediation",
-    "pragmatic_register",
-    "reading",
-    "listening",
-    "speaking",
-    "writing",
-    "recycling_review",
+    "reception", "production", "interaction", "mediation", "pragmatic_register",
+    "reading", "listening", "speaking", "writing", "recycling_review",
     "action_oriented_capstone",
 }
 
@@ -50,7 +41,7 @@ def main() -> None:
 
     production: dict[str, dict] = {}
     exercise_counts = collections.Counter()
-    rubric_units = set()
+    rubric_units: set[str] = set()
     for path in PROD_DIR.glob("*.json"):
         payload = json.loads(path.read_text(encoding="utf-8"))
         unit = str(payload.get("curriculum_unit", ""))
@@ -62,8 +53,7 @@ def main() -> None:
             if item.get("kind") != "exercise":
                 continue
             data = item.get("data", {})
-            typ = data.get("exercise_type")
-            exercise_counts[typ] += 1
+            exercise_counts[data.get("exercise_type")] += 1
             if data.get("answer", {}).get("evaluation_mode") == "rubric":
                 rubric_units.add(slug)
 
@@ -73,7 +63,7 @@ def main() -> None:
             f"extra={sorted(set(production)-set(authored))}"
         )
 
-    evidence_report = {}
+    evidence_report: dict[str, list[str]] = {}
     for dim, slugs in dims.items():
         if not isinstance(slugs, list) or not slugs:
             raise SystemExit(f"Turkish A2 coverage dimension {dim!r} has no evidence")
@@ -86,14 +76,10 @@ def main() -> None:
             raise SystemExit(f"Turkish A2 coverage dimension {dim!r} needs repeated evidence from >= {minimum} units")
         evidence_report[dim] = unique
 
-    # Independent production must be repeated across the whole level, not isolated
-    # in capstones. Current A2 contract authors lesson-3 rubric writing + speaking
-    # for every unit; verify the resulting production rather than trusting metadata.
+    # Every unit must culminate in independently evaluated learner output.
     if rubric_units != set(authored):
         raise SystemExit(f"Turkish A2 units without rubric-based independent output: {sorted(set(authored)-rubric_units)}")
 
-    # Reception is repeatedly exercised across the level. Dialogue comprehension is
-    # the project's short reading-in-context task; listening is separately audio-led.
     unit_count = len(authored)
     if exercise_counts["listening"] < unit_count * 3:
         raise SystemExit("Turkish A2 does not provide repeated listening across all three lessons")
@@ -104,9 +90,13 @@ def main() -> None:
     if exercise_counts["speaking"] < unit_count * 4:
         raise SystemExit("Turkish A2 does not provide repeated speaking plus personalized output across the level")
 
-    # Breadth should span the concrete A2 life domains already authored, without
-    # using a round unit total as a completion rule.
-    skills = {u.get("curriculum", {}).get("skill_slug") for u in authored.values()}
+    # Newer expansion specs carry explicit curriculum taxonomy. Legacy batches do not;
+    # omit missing metadata rather than treating it as a skill or weakening evidence.
+    skills = {
+        skill
+        for unit in authored.values()
+        if (skill := unit.get("curriculum", {}).get("skill_slug")) is not None
+    }
     required_skills = {
         "foundations", "social", "daily-life", "family-home", "food-drink",
         "shopping-money", "travel-transport", "work-study", "health-body",
@@ -120,7 +110,7 @@ def main() -> None:
         "variant": "tr-TR",
         "units": unit_count,
         "skills_covered": sorted(skills),
-        "exercise_counts": dict(sorted(exercise_counts.items())),
+        "exercise_counts": {str(k): v for k, v in sorted(exercise_counts.items(), key=lambda pair: str(pair[0]))},
         "rubric_output_units": len(rubric_units),
         "dimensions": evidence_report,
         "status": "breadth-complete",
