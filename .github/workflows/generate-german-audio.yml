@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 180
     env:
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-      CONTENT_TTS_CONCURRENCY: '2'
+      CONTENT_TTS_CONCURRENCY: '1'
       ELEVENLABS_MODEL_ID: eleven_multilingual_v2
       ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
 
@@ -91,10 +91,10 @@ jobs:
           PY
 
       - name: Generate all German Pre-A1 audio fresh
-        run: python scripts/generate_audio.py audio/manifests/de/Pre-A1.json --confirm-paid-generation --concurrency 2
+        run: python scripts/generate_audio.py audio/manifests/de/Pre-A1.json --confirm-paid-generation --concurrency 1
 
       - name: Generate or reuse unchanged German A1 audio
-        run: python scripts/generate_audio.py audio/manifests/de/A1.json --confirm-paid-generation --concurrency 2
+        run: python scripts/generate_audio.py audio/manifests/de/A1.json --confirm-paid-generation --concurrency 1
 
       - name: Validate generated German audio
         run: |
