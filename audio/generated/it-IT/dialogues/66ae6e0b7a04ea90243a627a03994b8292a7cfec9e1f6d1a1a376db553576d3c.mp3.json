@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "f9c232f72e49b852f12e0f3e4855e847ff0a66bb0f76d21692c57763021246b1",
+  "voice_id": "UnOINkXZ3yK4vVg3Iayj",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "66ae6e0b7a04ea90243a627a03994b8292a7cfec9e1f6d1a1a376db553576d3c",
+  "voice_key": "character:chiara:female_calm",
+  "voice_name": "Beatrice - AI Agent",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "it",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8167cab1cf1cff1d89a27c8677512a4fc76d587e0747224010b19124209ffd32",
+  "duration_ms": 1671,
+  "generated_at": "2026-09-14T04:00:43.657580+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "d5c2564f-bb31-53be-9749-344dc2a5d77f",
+      "entity_key": "d_media_and_sources_01:1"
+    }
+  ]
+}
