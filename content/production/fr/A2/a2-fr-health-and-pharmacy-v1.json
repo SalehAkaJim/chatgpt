@@ -1,0 +1,860 @@
+{
+  "batch_id": "fr-fr-a2-health-and-pharmacy-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "A2",
+  "curriculum_unit": "a2-fr-health-and-pharmacy",
+  "generator": "gpt-5.6-sol:french-a2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_pharmacy_01",
+      "data": {
+        "slug": "fr_a2_health_and_pharmacy_gorge",
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "gorge"
+        },
+        "translations": {
+          "fa": "گلو"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_pharmacy_01",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "lemma": "gorge",
+        "display_lemma": "gorge",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_gorge"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_pharmacy_01",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "lexeme_ref": "lx_health_and_pharmacy_01",
+        "surface_form": "gorge",
+        "display_form": "gorge",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_pharmacy_02",
+      "data": {
+        "slug": "fr_a2_health_and_pharmacy_fievre",
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "fièvre"
+        },
+        "translations": {
+          "fa": "تب"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_pharmacy_02",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "lemma": "fièvre",
+        "display_lemma": "fièvre",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_fievre"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_pharmacy_02",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "lexeme_ref": "lx_health_and_pharmacy_02",
+        "surface_form": "fièvre",
+        "display_form": "fièvre",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_pharmacy_03",
+      "data": {
+        "slug": "fr_a2_health_and_pharmacy_medicament",
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "médicament"
+        },
+        "translations": {
+          "fa": "دارو"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_pharmacy_03",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "lemma": "médicament",
+        "display_lemma": "médicament",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_medicament"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_pharmacy_03",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "lexeme_ref": "lx_health_and_pharmacy_03",
+        "surface_form": "médicament",
+        "display_form": "médicament",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_pharmacy_04",
+      "data": {
+        "slug": "fr_a2_health_and_pharmacy_ordonnance",
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "ordonnance"
+        },
+        "translations": {
+          "fa": "نسخه پزشک"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_pharmacy_04",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "lemma": "ordonnance",
+        "display_lemma": "ordonnance",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_ordonnance"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_pharmacy_04",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "lexeme_ref": "lx_health_and_pharmacy_04",
+        "surface_form": "ordonnance",
+        "display_form": "ordonnance",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_pharmacy_05",
+      "data": {
+        "slug": "fr_a2_health_and_pharmacy_se_reposer",
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "se reposer"
+        },
+        "translations": {
+          "fa": "استراحت کردن"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_pharmacy_05",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "lemma": "se reposer",
+        "display_lemma": "se reposer",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_se_reposer"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_pharmacy_05",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "lexeme_ref": "lx_health_and_pharmacy_05",
+        "surface_form": "se reposer",
+        "display_form": "se reposer",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_health_and_pharmacy_06",
+      "data": {
+        "slug": "fr_a2_health_and_pharmacy_depuis",
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "concept_type": "lexical",
+        "part_of_speech": "preposition",
+        "forms": {
+          "fr": "depuis"
+        },
+        "translations": {
+          "fa": "از / به مدت (تا حالا)"
+        },
+        "cefr": "A2",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_health_and_pharmacy_06",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "lemma": "depuis",
+        "display_lemma": "depuis",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "preposition",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_depuis"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_health_and_pharmacy_06",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "lexeme_ref": "lx_health_and_pharmacy_06",
+        "surface_form": "depuis",
+        "display_form": "depuis",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_pharmacy_01",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "text": {
+          "fr": "J'ai mal à la gorge depuis hier."
+        },
+        "translations": {
+          "fa": "از دیروز گلودرد دارم."
+        },
+        "intent": "describe_symptom",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_gorge",
+          "fr_a2_health_and_pharmacy_depuis"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_pharmacy_02",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "text": {
+          "fr": "J'ai un peu de fièvre."
+        },
+        "translations": {
+          "fa": "کمی تب دارم."
+        },
+        "intent": "describe_symptom",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_fievre"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_pharmacy_03",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "text": {
+          "fr": "Ce médicament est sans ordonnance ?"
+        },
+        "translations": {
+          "fa": "این دارو بدون نسخه است؟"
+        },
+        "intent": "ask_medication",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_medicament",
+          "fr_a2_health_and_pharmacy_ordonnance"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_pharmacy_04",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "text": {
+          "fr": "Vous devriez vous reposer aujourd'hui."
+        },
+        "translations": {
+          "fa": "بهتر است امروز استراحت کنید."
+        },
+        "intent": "give_health_advice",
+        "concept_refs": [
+          "fr_a2_health_and_pharmacy_se_reposer"
+        ],
+        "cefr": "A2",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_health_and_pharmacy_core",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "slug": "a2-fr-health-and-pharmacy-grammar",
+        "title": "Depuis et les conseils avec devoir au conditionnel",
+        "rule_summary": "Use depuis with a present state that began earlier and still continues. Vous devriez + infinitive gives mild advice.",
+        "explanation": {
+          "fa": "برای حالتی که از گذشته شروع شده و هنوز ادامه دارد، depuis با زمان حال می‌آید. vous devriez + مصدر برای توصیه ملایم و مؤدبانه است."
+        },
+        "examples": [
+          {
+            "fr": "J'ai mal depuis hier.",
+            "fa": "از دیروز درد دارم."
+          },
+          {
+            "fr": "Vous devriez vous reposer.",
+            "fa": "بهتر است استراحت کنید."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_and_pharmacy_01",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "title": "À la pharmacie",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "common-actions",
+        "characters": [
+          "inès",
+          "julien"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "inès",
+            "text": "Bonjour, j'ai mal à la gorge depuis deux jours.",
+            "translation_fa": "سلام، دو روز است گلودرد دارم."
+          },
+          {
+            "order": 2,
+            "speaker": "julien",
+            "text": "Vous avez de la fièvre ?",
+            "translation_fa": "تب دارید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "inès",
+            "text": "Un peu, surtout le soir.",
+            "translation_fa": "کمی، بیشتر شب‌ها."
+          },
+          {
+            "order": 4,
+            "speaker": "julien",
+            "text": "Je vais vous montrer un médicament adapté.",
+            "translation_fa": "یک داروی مناسب به شما نشان می‌دهم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_and_pharmacy_02",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "title": "Un conseil",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "common-actions",
+        "characters": [
+          "claire",
+          "thomas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "claire",
+            "text": "Tu n'as pas l'air en forme.",
+            "translation_fa": "به نظر سرحال نمی‌آیی."
+          },
+          {
+            "order": 2,
+            "speaker": "thomas",
+            "text": "Je suis fatigué depuis ce matin.",
+            "translation_fa": "از صبح خسته‌ام."
+          },
+          {
+            "order": 3,
+            "speaker": "claire",
+            "text": "Tu devrais rentrer et te reposer.",
+            "translation_fa": "بهتره برگردی و استراحت کنی."
+          },
+          {
+            "order": 4,
+            "speaker": "thomas",
+            "text": "Oui, je crois que tu as raison.",
+            "translation_fa": "بله، فکر کنم حق با توست."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_01_meaning",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "J'ai mal à la gorge depuis hier."
+        },
+        "answer": {
+          "value": "از دیروز گلودرد دارم."
+        },
+        "options": [
+          "از دیروز گلودرد دارم.",
+          "کمی تب دارم.",
+          "این دارو بدون نسخه است؟",
+          "بهتر است امروز استراحت کنید."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: J'ai mal à la gorge depuis hier. — از دیروز گلودرد دارم.",
+          "model_answer": "J'ai mal à la gorge depuis hier."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_01_listen",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "J'ai un peu de fièvre."
+        },
+        "answer": {
+          "value": "J'ai un peu de fièvre."
+        },
+        "options": [
+          "J'ai un peu de fièvre.",
+          "J'ai mal à la gorge depuis hier.",
+          "Ce médicament est sans ordonnance ?",
+          "Vous devriez vous reposer aujourd'hui."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: J'ai un peu de fièvre. — کمی تب دارم.",
+          "model_answer": "J'ai un peu de fièvre.",
+          "transcript_fr": "J'ai un peu de fièvre."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_01_speak",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "J'ai mal à la gorge depuis hier."
+        },
+        "answer": {
+          "expected_text": "J'ai mal à la gorge depuis hier."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: J'ai mal à la gorge depuis hier. — از دیروز گلودرد دارم.",
+          "model_answer": "J'ai mal à la gorge depuis hier."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_01_build",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "un",
+            "peu",
+            "de",
+            "fièvre.",
+            "J'ai"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "J'ai",
+            "un",
+            "peu",
+            "de",
+            "fièvre."
+          ],
+          "value": "J'ai un peu de fièvre."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: J'ai un peu de fièvre. — کمی تب دارم.",
+          "model_answer": "J'ai un peu de fièvre."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_01_dialogue",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_health_and_pharmacy_01",
+          "question_fa": "کدام گزینه با معنی «از دیروز گلودرد دارم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "J'ai mal à la gorge depuis hier."
+        },
+        "options": [
+          "J'ai mal à la gorge depuis hier.",
+          "J'ai un peu de fièvre.",
+          "Ce médicament est sans ordonnance ?",
+          "Vous devriez vous reposer aujourd'hui."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: J'ai mal à la gorge depuis hier. — از دیروز گلودرد دارم.",
+          "model_answer": "J'ai mal à la gorge depuis hier."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_02_meaning",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Ce médicament est sans ordonnance ?"
+        },
+        "answer": {
+          "value": "این دارو بدون نسخه است؟"
+        },
+        "options": [
+          "این دارو بدون نسخه است؟",
+          "از دیروز گلودرد دارم.",
+          "کمی تب دارم.",
+          "بهتر است امروز استراحت کنید."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ce médicament est sans ordonnance ? — این دارو بدون نسخه است؟",
+          "model_answer": "Ce médicament est sans ordonnance ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_02_listen",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Vous devriez vous reposer aujourd'hui."
+        },
+        "answer": {
+          "value": "Vous devriez vous reposer aujourd'hui."
+        },
+        "options": [
+          "Vous devriez vous reposer aujourd'hui.",
+          "Ce médicament est sans ordonnance ?",
+          "J'ai mal à la gorge depuis hier.",
+          "J'ai un peu de fièvre."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Vous devriez vous reposer aujourd'hui. — بهتر است امروز استراحت کنید.",
+          "model_answer": "Vous devriez vous reposer aujourd'hui.",
+          "transcript_fr": "Vous devriez vous reposer aujourd'hui."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_02_speak",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Ce médicament est sans ordonnance ?"
+        },
+        "answer": {
+          "expected_text": "Ce médicament est sans ordonnance ?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ce médicament est sans ordonnance ? — این دارو بدون نسخه است؟",
+          "model_answer": "Ce médicament est sans ordonnance ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_02_build",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "devriez",
+            "vous",
+            "reposer",
+            "aujourd'hui.",
+            "Vous"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Vous",
+            "devriez",
+            "vous",
+            "reposer",
+            "aujourd'hui."
+          ],
+          "value": "Vous devriez vous reposer aujourd'hui."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Vous devriez vous reposer aujourd'hui. — بهتر است امروز استراحت کنید.",
+          "model_answer": "Vous devriez vous reposer aujourd'hui."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_pharmacy_02_dialogue",
+      "data": {
+        "lesson_key": "a2-fr-health-and-pharmacy-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_health_and_pharmacy_02",
+          "question_fa": "کدام گزینه با معنی «این دارو بدون نسخه است؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Ce médicament est sans ordonnance ?"
+        },
+        "options": [
+          "Ce médicament est sans ordonnance ?",
+          "J'ai mal à la gorge depuis hier.",
+          "J'ai un peu de fièvre.",
+          "Vous devriez vous reposer aujourd'hui."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ce médicament est sans ordonnance ? — این دارو بدون نسخه است؟",
+          "model_answer": "Ce médicament est sans ordonnance ?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

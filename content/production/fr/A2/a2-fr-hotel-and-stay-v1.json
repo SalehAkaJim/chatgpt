@@ -1,0 +1,867 @@
+{
+  "batch_id": "fr-fr-a2-hotel-and-stay-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "A2",
+  "curriculum_unit": "a2-fr-hotel-and-stay",
+  "generator": "gpt-5.6-sol:french-a2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_hotel_and_stay_01",
+      "data": {
+        "slug": "fr_a2_hotel_and_stay_chambre_double",
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "chambre double"
+        },
+        "translations": {
+          "fa": "اتاق دو نفره"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hotel_and_stay_01",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "lemma": "chambre double",
+        "display_lemma": "chambre double",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_chambre_double"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hotel_and_stay_01",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "lexeme_ref": "lx_hotel_and_stay_01",
+        "surface_form": "chambre double",
+        "display_form": "chambre double",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hotel_and_stay_02",
+      "data": {
+        "slug": "fr_a2_hotel_and_stay_reception",
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "réception"
+        },
+        "translations": {
+          "fa": "پذیرش"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hotel_and_stay_02",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "lemma": "réception",
+        "display_lemma": "réception",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_reception"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hotel_and_stay_02",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "lexeme_ref": "lx_hotel_and_stay_02",
+        "surface_form": "réception",
+        "display_form": "réception",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hotel_and_stay_03",
+      "data": {
+        "slug": "fr_a2_hotel_and_stay_ascenseur",
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "ascenseur"
+        },
+        "translations": {
+          "fa": "آسانسور"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hotel_and_stay_03",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "lemma": "ascenseur",
+        "display_lemma": "ascenseur",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_ascenseur"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hotel_and_stay_03",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "lexeme_ref": "lx_hotel_and_stay_03",
+        "surface_form": "ascenseur",
+        "display_form": "ascenseur",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hotel_and_stay_04",
+      "data": {
+        "slug": "fr_a2_hotel_and_stay_confirmer",
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "confirmer"
+        },
+        "translations": {
+          "fa": "تأیید کردن"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hotel_and_stay_04",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "lemma": "confirmer",
+        "display_lemma": "confirmer",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_confirmer"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hotel_and_stay_04",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "lexeme_ref": "lx_hotel_and_stay_04",
+        "surface_form": "confirmer",
+        "display_form": "confirmer",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hotel_and_stay_05",
+      "data": {
+        "slug": "fr_a2_hotel_and_stay_passeport",
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "passeport"
+        },
+        "translations": {
+          "fa": "گذرنامه"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hotel_and_stay_05",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "lemma": "passeport",
+        "display_lemma": "passeport",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_passeport"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hotel_and_stay_05",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "lexeme_ref": "lx_hotel_and_stay_05",
+        "surface_form": "passeport",
+        "display_form": "passeport",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_hotel_and_stay_06",
+      "data": {
+        "slug": "fr_a2_hotel_and_stay_sejour",
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "séjour"
+        },
+        "translations": {
+          "fa": "اقامت"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_hotel_and_stay_06",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "lemma": "séjour",
+        "display_lemma": "séjour",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_sejour"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_hotel_and_stay_06",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "lexeme_ref": "lx_hotel_and_stay_06",
+        "surface_form": "séjour",
+        "display_form": "séjour",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hotel_and_stay_01",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "text": {
+          "fr": "J'ai réservé une chambre double."
+        },
+        "translations": {
+          "fa": "یک اتاق دو نفره رزرو کرده‌ام."
+        },
+        "intent": "state_booking",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_chambre_double"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hotel_and_stay_02",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "text": {
+          "fr": "La réception est ouverte toute la nuit."
+        },
+        "translations": {
+          "fa": "پذیرش تمام شب باز است."
+        },
+        "intent": "state_hotel_info",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_reception"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hotel_and_stay_03",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "text": {
+          "fr": "Pouvez-vous confirmer mon séjour ?"
+        },
+        "translations": {
+          "fa": "می‌توانید اقامتم را تأیید کنید؟"
+        },
+        "intent": "request_confirmation",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_confirmer",
+          "fr_a2_hotel_and_stay_sejour"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_hotel_and_stay_04",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "text": {
+          "fr": "Je dois montrer mon passeport à l'arrivée."
+        },
+        "translations": {
+          "fa": "هنگام رسیدن باید گذرنامه‌ام را نشان بدهم."
+        },
+        "intent": "state_requirement",
+        "concept_refs": [
+          "fr_a2_hotel_and_stay_passeport"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_hotel_and_stay_core",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "slug": "a2-fr-hotel-and-stay-grammar",
+        "title": "Demander poliment avec pouvoir et devoir",
+        "rule_summary": "Use pouvez-vous + infinitive for polite service requests and devoir + infinitive for obligations or requirements.",
+        "explanation": {
+          "fa": "برای درخواست مؤدبانه در خدمات می‌توان از pouvez-vous + مصدر استفاده کرد. devoir + مصدر هم برای الزام یا کاری که باید انجام شود به کار می‌رود."
+        },
+        "examples": [
+          {
+            "fr": "Pouvez-vous confirmer ma réservation ?",
+            "fa": "می‌توانید رزرو من را تأیید کنید؟"
+          },
+          {
+            "fr": "Je dois montrer mon passeport.",
+            "fa": "باید گذرنامه‌ام را نشان بدهم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_hotel_and_stay_01",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "title": "À la réception",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "camille",
+          "hugo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "camille",
+            "text": "Bonjour, j'ai une réservation au nom de Martin.",
+            "translation_fa": "سلام، به نام مارتن رزرو دارم."
+          },
+          {
+            "order": 2,
+            "speaker": "hugo",
+            "text": "Oui, une chambre double pour deux nuits.",
+            "translation_fa": "بله، یک اتاق دو نفره برای دو شب."
+          },
+          {
+            "order": 3,
+            "speaker": "camille",
+            "text": "C'est bien ça.",
+            "translation_fa": "درست است."
+          },
+          {
+            "order": 4,
+            "speaker": "hugo",
+            "text": "Je peux voir votre passeport ?",
+            "translation_fa": "می‌توانم گذرنامه‌تان را ببینم؟"
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_hotel_and_stay_02",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "title": "Dans l'hôtel",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "léa",
+          "nicolas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "léa",
+            "text": "Excusez-moi, où est l'ascenseur ?",
+            "translation_fa": "ببخشید، آسانسور کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "nicolas",
+            "text": "À côté de la réception.",
+            "translation_fa": "کنار پذیرش است."
+          },
+          {
+            "order": 3,
+            "speaker": "léa",
+            "text": "Et le petit-déjeuner commence à quelle heure ?",
+            "translation_fa": "و صبحانه چه ساعتی شروع می‌شود؟"
+          },
+          {
+            "order": 4,
+            "speaker": "nicolas",
+            "text": "À partir de sept heures.",
+            "translation_fa": "از ساعت هفت."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_01_meaning",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "J'ai réservé une chambre double."
+        },
+        "answer": {
+          "value": "یک اتاق دو نفره رزرو کرده‌ام."
+        },
+        "options": [
+          "یک اتاق دو نفره رزرو کرده‌ام.",
+          "پذیرش تمام شب باز است.",
+          "می‌توانید اقامتم را تأیید کنید؟",
+          "هنگام رسیدن باید گذرنامه‌ام را نشان بدهم."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: J'ai réservé une chambre double. — یک اتاق دو نفره رزرو کرده‌ام.",
+          "model_answer": "J'ai réservé une chambre double."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_01_listen",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "La réception est ouverte toute la nuit."
+        },
+        "answer": {
+          "value": "La réception est ouverte toute la nuit."
+        },
+        "options": [
+          "La réception est ouverte toute la nuit.",
+          "J'ai réservé une chambre double.",
+          "Pouvez-vous confirmer mon séjour ?",
+          "Je dois montrer mon passeport à l'arrivée."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: La réception est ouverte toute la nuit. — پذیرش تمام شب باز است.",
+          "model_answer": "La réception est ouverte toute la nuit.",
+          "transcript_fr": "La réception est ouverte toute la nuit."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_01_speak",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "J'ai réservé une chambre double."
+        },
+        "answer": {
+          "expected_text": "J'ai réservé une chambre double."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: J'ai réservé une chambre double. — یک اتاق دو نفره رزرو کرده‌ام.",
+          "model_answer": "J'ai réservé une chambre double."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_01_build",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "réception",
+            "est",
+            "ouverte",
+            "toute",
+            "la",
+            "nuit.",
+            "La"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "La",
+            "réception",
+            "est",
+            "ouverte",
+            "toute",
+            "la",
+            "nuit."
+          ],
+          "value": "La réception est ouverte toute la nuit."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: La réception est ouverte toute la nuit. — پذیرش تمام شب باز است.",
+          "model_answer": "La réception est ouverte toute la nuit."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_01_dialogue",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_hotel_and_stay_01",
+          "question_fa": "کدام گزینه با معنی «یک اتاق دو نفره رزرو کرده‌ام.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "J'ai réservé une chambre double."
+        },
+        "options": [
+          "J'ai réservé une chambre double.",
+          "La réception est ouverte toute la nuit.",
+          "Pouvez-vous confirmer mon séjour ?",
+          "Je dois montrer mon passeport à l'arrivée."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: J'ai réservé une chambre double. — یک اتاق دو نفره رزرو کرده‌ام.",
+          "model_answer": "J'ai réservé une chambre double."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_02_meaning",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Pouvez-vous confirmer mon séjour ?"
+        },
+        "answer": {
+          "value": "می‌توانید اقامتم را تأیید کنید؟"
+        },
+        "options": [
+          "می‌توانید اقامتم را تأیید کنید؟",
+          "یک اتاق دو نفره رزرو کرده‌ام.",
+          "پذیرش تمام شب باز است.",
+          "هنگام رسیدن باید گذرنامه‌ام را نشان بدهم."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Pouvez-vous confirmer mon séjour ? — می‌توانید اقامتم را تأیید کنید؟",
+          "model_answer": "Pouvez-vous confirmer mon séjour ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_02_listen",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Je dois montrer mon passeport à l'arrivée."
+        },
+        "answer": {
+          "value": "Je dois montrer mon passeport à l'arrivée."
+        },
+        "options": [
+          "Je dois montrer mon passeport à l'arrivée.",
+          "Pouvez-vous confirmer mon séjour ?",
+          "J'ai réservé une chambre double.",
+          "La réception est ouverte toute la nuit."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je dois montrer mon passeport à l'arrivée. — هنگام رسیدن باید گذرنامه‌ام را نشان بدهم.",
+          "model_answer": "Je dois montrer mon passeport à l'arrivée.",
+          "transcript_fr": "Je dois montrer mon passeport à l'arrivée."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_02_speak",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Pouvez-vous confirmer mon séjour ?"
+        },
+        "answer": {
+          "expected_text": "Pouvez-vous confirmer mon séjour ?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Pouvez-vous confirmer mon séjour ? — می‌توانید اقامتم را تأیید کنید؟",
+          "model_answer": "Pouvez-vous confirmer mon séjour ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_02_build",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "dois",
+            "montrer",
+            "mon",
+            "passeport",
+            "à",
+            "l'arrivée.",
+            "Je"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Je",
+            "dois",
+            "montrer",
+            "mon",
+            "passeport",
+            "à",
+            "l'arrivée."
+          ],
+          "value": "Je dois montrer mon passeport à l'arrivée."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je dois montrer mon passeport à l'arrivée. — هنگام رسیدن باید گذرنامه‌ام را نشان بدهم.",
+          "model_answer": "Je dois montrer mon passeport à l'arrivée."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_hotel_and_stay_02_dialogue",
+      "data": {
+        "lesson_key": "a2-fr-hotel-and-stay-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_hotel_and_stay_02",
+          "question_fa": "کدام گزینه با معنی «می‌توانید اقامتم را تأیید کنید؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Pouvez-vous confirmer mon séjour ?"
+        },
+        "options": [
+          "Pouvez-vous confirmer mon séjour ?",
+          "J'ai réservé une chambre double.",
+          "La réception est ouverte toute la nuit.",
+          "Je dois montrer mon passeport à l'arrivée."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و ساختار دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Pouvez-vous confirmer mon séjour ? — می‌توانید اقامتم را تأیید کنید؟",
+          "model_answer": "Pouvez-vous confirmer mon séjour ?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
